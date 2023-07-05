@@ -2,12 +2,13 @@
 title: Integración con Adobe Analytics mediante IMS
 description: AEM Obtenga información acerca de la integración de la con Adobe Analytics mediante IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 5789954afea2d42444b6f6f9f185d7926624e7f0
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 66%
+source-wordcount: '1056'
+ht-degree: 65%
 
 ---
+
 
 # Integración con Adobe Analytics mediante IMS {#integration-with-adobe-analytics-using-ims}
 
@@ -51,7 +52,7 @@ El primer paso de la configuración es crear una configuración de IMS en AEM y 
 1. Active **Crear nuevo certificado** e introduzca un nuevo alias.
 1. Confirme con **Crear certificado**.
 
-   ![](assets/integrate-analytics-io-01.png)
+   ![Asistente de configuración de cuenta técnica de IMS de Adobe](assets/integrate-analytics-io-01.png)
 
 1. Seleccione **Descargar** (o **Descargar clave pública**) para descargar el archivo en la unidad local, de modo que esté listo para usarse cuando [configure IMS para la integración de Adobe Analytics con AEM](#configuring-ims-for-adobe-analytics-integration-with-aem).
 
@@ -59,7 +60,7 @@ El primer paso de la configuración es crear una configuración de IMS en AEM y 
    >
    >Mantenga esta configuración abierta, será necesaria de nuevo cuando [complete la configuración de IMS en AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-analytics-io-02.png)
+   ![Cuadro de diálogo de información para añadir la clave al Adobe I/O](assets/integrate-analytics-io-02.png)
 
 ## Configuración de IMS para la integración de Adobe Analytics con AEM {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
@@ -76,9 +77,9 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Analytics que usar
 1. Se mostrarán todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
 
    * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** estará en el centro, abajo.
-      ![Creación de un nuevo proyecto: primer proyecto](assets/integration-analytics-io-02.png)
+     ![Creación de un nuevo proyecto: primer proyecto](assets/integration-analytics-io-02.png)
    * Si ya tiene proyectos, estos se enumerarán y **Crear nuevo proyecto** estará en la parte superior derecha.
-      ![Creación de un nuevo proyecto: varios proyectos](assets/integration-analytics-io-03.png)
+     ![Creación de un nuevo proyecto: varios proyectos](assets/integration-analytics-io-03.png)
 
 
 1. Seleccione **Añadir a proyecto** seguido de **API**:
@@ -177,7 +178,6 @@ Para confirmar que la configuración funciona según lo esperado:
    Por ejemplo:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. Seleccione la configuración.
 1. Seleccione **Comprobar estado** en la barra de herramientas, seguido de **Comprobar**.

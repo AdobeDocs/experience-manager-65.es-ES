@@ -10,12 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 2%
+source-wordcount: '629'
+ht-degree: 1%
 
 ---
+
 
 # Campaign Management{#campaign-management}
 
@@ -36,62 +37,58 @@ Este documento describe los distintos elementos que componen las campañas. Enco
 La administración de campañas se compone de varios elementos:
 
 * **Marcas**
-AEM En la práctica, las marcas son la unidad de nivel superior y forman una colección de 
-**Campañas**.
+AEM En la práctica, las marcas son la unidad de nivel superior y forman una colección de **Campañas**.
 
 * **Campañas**
-Una campaña es una colección de individuos 
-**Experiencias**.
+Una campaña es una colección de individuos **Experiencias**.
 
 * **Experiencias**
-El contenido centrado forma las distintas experiencias, presentadas al visitante en 
-**Puntos de contacto**. Hay varios tipos de experiencia disponibles:
+El contenido centrado forma las distintas experiencias, presentadas al visitante en **Touchpoints**. Hay varios tipos de experiencia disponibles:
 
    * **Teasers**
-      [Páginas teaser/párrafos](#teasers) se utilizan para dirigir a visitantes específicos **Segmentos** al contenido que se centra en sus intereses.
+     [Páginas teaser/párrafos](#teasers) se utilizan para dirigir a visitantes específicos **Segmentos** al contenido que se centra en sus intereses.
 
-      Las páginas teaser pueden:
+     Las páginas teaser pueden:
 
       * presentar una serie de opciones para que el visitante elija entre ellas
       * mostrar solo un párrafo de teaser basado en el segmento de visitante específico; por ejemplo, el párrafo de teaser que se muestra puede depender de la edad del visitante.
 
-      Normalmente, una página teaser es una acción temporal que dura un período de tiempo específico, hasta que se reemplaza por la siguiente página de teaser.
+     Normalmente, una página teaser es una acción temporal que dura un período de tiempo específico, hasta que se reemplaza por la siguiente página de teaser.
 
    * **Newsletters**
 
-      [Comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Normalmente se envían en forma de newsletter a su **Posibles clientes** (que generalmente se agrupan en **Listas**). **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad. La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+     [Comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Normalmente se envían en forma de newsletter a su **Posibles clientes** (que generalmente se agrupan en **Listas**). **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad. La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
-      Esto permite la integración con Adobe Target (anteriormente Test&amp;Target), que proporciona a los especialistas en mercadotecnia una herramienta de optimización de sitios web de conversión con las funciones necesarias para garantizar que el contenido y las ofertas en línea sean relevantes para sus clientes, lo que resultará en la buena conversión. Adobe Target proporciona una interfaz intuitiva para diseñar y ejecutar pruebas, crear segmentos de audiencia y segmentar contenido, todo desde una sola aplicación.
-
+     Esto permite la integración con Adobe Target (anteriormente Test&amp;Target), que proporciona a los especialistas en mercadotecnia una herramienta de optimización de sitios web de conversión con las funciones necesarias para garantizar que el contenido y las ofertas en línea sean relevantes para las buenas conversiones que produzcan los clientes. Adobe Target proporciona una interfaz intuitiva para diseñar y ejecutar pruebas, crear segmentos de audiencia y segmentar contenido desde una sola aplicación.
 
 * **Puntos de contacto**
 
-   Estos son los puntos de contacto entre el visitante y la campaña. Los puntos de contacto están conectados a las experiencias que ha creado.
+  Estos son los puntos de contacto entre el visitante y la campaña. Los puntos de contacto están conectados a las experiencias que ha creado.
 
-   Por ejemplo, para los teasers, es la página de contenido donde se encuentra el párrafo de teaser; para un boletín, es la lista de correo.
+  Por ejemplo, para los teasers, es la página de contenido donde se encuentra el párrafo de teaser; para un boletín, es la lista de correo.
 
 * **posibles clientes**
 
-   La información que ha recopilado sobre sus visitantes y cómo ponerse en contacto con ellos forma la base de sus posibles clientes. **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
+  La información que ha recopilado sobre sus visitantes y cómo ponerse en contacto con ellos forma la base de sus posibles clientes. **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
 
-   La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+  La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
 
 * **Listas**
 
-   Los posibles clientes suelen agruparse en listas para que se pueda llevar a cabo una acción colectiva al respecto. Nota: **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
+  Los posibles clientes suelen agruparse en listas para que se pueda llevar a cabo una acción colectiva al respecto. Nota: **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
 
-   La recomendación es [aproveche Adobe Campaign AEM y la integración para crear un entorno de trabajo con la.](/help/sites-administering/campaign.md)
+  La recomendación es [aproveche Adobe Campaign AEM y la integración para crear un entorno de trabajo con la.](/help/sites-administering/campaign.md)
 
 * **Segmentos**
 
-   Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Analizar esto según factores como la actividad en el sitio web, la información de perfil registrada y la actividad en otros sitios web, le ayuda a definir segmentos. El contenido puede personalizarse específicamente para satisfacer las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
+  Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Analizar esto según factores como la actividad en el sitio web, la información de perfil registrada y la actividad en otros sitios web, le ayuda a definir segmentos. El contenido puede personalizarse específicamente para satisfacer las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
 
 * **MCM**
 
-   El Administrador de campañas de marketing (MCM) es una consola que le permite acceder a toda la funcionalidad que necesita para crear y controlar campañas, marcas, experiencias, puntos de contacto, posibles clientes, listas, segmentos e informes.
+  El Administrador de campañas de marketing (MCM) es una consola que le permite acceder a toda la funcionalidad que necesita para crear y controlar campañas, marcas, experiencias, puntos de contacto, posibles clientes, listas, segmentos e informes.
 
-   Se puede acceder a él desde varias ubicaciones (etiquetadas como **Campañas**) o, por ejemplo, con la dirección URL:
+  Se puede acceder a él desde varias ubicaciones (etiquetadas como **Campañas**) o, por ejemplo, con la dirección URL:
 
-   `http://localhost:4502/libs/mcm/content/admin.html`
+  `http://localhost:4502/libs/mcm/content/admin.html`

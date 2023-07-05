@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 1%
+source-wordcount: '448'
+ht-degree: 2%
 
 ---
+
 
 # Analytics con proveedores externos {#analytics-with-external-providers}
 
@@ -70,15 +71,15 @@ Para la configuración básica:
 1. En el panel izquierdo, expanda **Configuraciones de Cloud Services**.
 1. Haga doble clic en **Fragmento de análisis genérico** para abrir la página:
 
-   ![](assets/analytics_genericoverview.png)
+   ![Fragmento de análisis genérico](assets/analytics_genericoverview.png)
 
 1. Haga clic en + para añadir una nueva configuración mediante el cuadro de diálogo; como mínimo, asigne un nombre, por ejemplo, Google Analytics:
 
-   ![](assets/analytics_addconfig.png)
+   ![Crear configuración](assets/analytics_addconfig.png)
 
 1. Clic **Crear**, el cuadro de diálogo de fragmento se abrirá inmediatamente: pegue el fragmento de javascript correspondiente en el campo:
 
-   ![](assets/analytics_snippet.png)
+   ![Edición del componente](assets/analytics_snippet.png)
 
 1. Clic **OK** para guardar.
 
@@ -90,12 +91,12 @@ Una vez creada la configuración del servicio, ahora debe configurar las página
 1. Abra el **Propiedades de página** de la barra de tareas, luego el **Cloud Services** pestaña.
 1. Clic **Añadir servicio** y, a continuación, seleccione el servicio necesario; por ejemplo, el **Fragmento de análisis genérico**:
 
-   ![](assets/analytics_selectservice.png)
+   ![Añadir un servicio en la nube](assets/analytics_selectservice.png)
 
 1. Clic **OK** para guardar.
 1. Se le devolverá a la **Cloud Services** pestaña. El **Fragmento de análisis genérico** ahora aparece con el mensaje `Configuration reference missing`. Utilice la lista desplegable para seleccionar su instancia de servicio específica; por ejemplo, google-analytics:
 
-   ![](assets/analytics_selectspecificservice.png)
+   ![Adición de la configuración de Cloud Service](assets/analytics_selectspecificservice.png)
 
 1. Clic **OK** para guardar.
 

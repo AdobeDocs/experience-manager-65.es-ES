@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '958'
 ht-degree: 4%
 
 ---
+
 
 # Operaciones de Granite: administración de usuarios y grupos{#granite-operations-user-and-group-administration}
 
@@ -26,7 +27,7 @@ Estas cuentas son la base subyacente de la [AEM cuentas de](/help/sites-administ
 
 Las consolas de administración de grupos y usuarios de Granite están disponibles en el **[Herramientas](/help/sites-administering/tools-consoles.md)** consola de la IU táctil optimizada:
 
-![chlimage_1-72](assets/chlimage_1-72a.png)
+![Consola Herramientas](assets/chlimage_1-72a.png)
 
 Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abrirá la consola adecuada. En ambos, puede realizar acciones utilizando el cuadro de clic y luego las acciones de la barra de herramientas, o abriendo los detalles de la cuenta mediante el vínculo en **Nombre**.
 
@@ -42,7 +43,7 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
 
 * [Administración de grupos](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![Consola de administración de usuarios](assets/chlimage_1-74a.png)
 
   El **Grupos** listas de la consola:
 
@@ -56,11 +57,11 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
 
 1. Utilice el **Añadir usuario** icono:
 
-   ![Añadir usuario](do-not-localize/chlimage_1-1.png)
+   ![Icono Agregar usuario](do-not-localize/chlimage_1-1.png)
 
 1. El **Crear usuario** se abrirá el formulario:
 
-   ![chlimage_1-75](assets/chlimage_1-75a.png)
+   ![Formulario de detalles del usuario](assets/chlimage_1-75a.png)
 
    Aquí puede introducir los detalles del usuario de la cuenta (la mayoría son estándar y explicativos):
 
@@ -132,11 +133,11 @@ Puede marcar la cuenta como **activo** o **inactivo**.
 
 1. Ahora puede editar los detalles como en [Adición de un nuevo usuario](#adding-a-new-user). En **Configuración de cuenta** hay un vínculo para **Cambiar contraseña**.
 
-   ![chlimage_1-76](assets/chlimage_1-76a.png)
+   ![Cuadro de diálogo Configuración de cuenta](assets/chlimage_1-76a.png)
 
 1. El **Cambiar contraseña** se abrirá. Introduzca y vuelva a escribir la nueva contraseña, junto con la suya. Uso **OK** para confirmar los cambios.
 
-   ![chlimage_1-77](assets/chlimage_1-77a.png)
+   ![Cuadro de diálogo Cambiar contraseña](assets/chlimage_1-77a.png)
 
    Un mensaje confirmará que la contraseña se ha cambiado.
 
@@ -149,7 +150,7 @@ Puede marcar la cuenta como **activo** o **inactivo**.
 
    Para abrir la lista desplegable de selección de grupo:
 
-   ![chlimage_1-78](assets/chlimage_1-78a.png)
+   ![Selector de grupos](assets/chlimage_1-78a.png)
 
 1. En el cuadro de selección puede seleccionar o anular la selección de los grupos a los que debe pertenecer la cuenta de usuario.
 
@@ -177,7 +178,7 @@ Puede marcar la cuenta como **activo** o **inactivo**.
 
 1. El **Crear grupo** se abrirá el formulario:
 
-   ![chlimage_1-79](assets/chlimage_1-79a.png)
+   ![Formulario Detalles del grupo](assets/chlimage_1-79a.png)
 
    Aquí puede introducir los detalles del grupo:
 

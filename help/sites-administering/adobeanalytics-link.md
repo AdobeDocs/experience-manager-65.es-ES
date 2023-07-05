@@ -10,12 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
+
 
 # Configuración de Seguimiento de vínculos para Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -28,7 +29,7 @@ Cuando los usuarios hacen clic en vínculos en páginas del sitio web, puede cap
 1. Uso de **Mostrar configuraciones**, abra el marco de trabajo de Adobe Analytics necesario.
 1. Expanda el **Configuración de seguimiento de vínculos** y configúrelo según sea necesario (esta página proporciona más detalles):
 
-   ![aa-08](assets/aa-08.png)
+   ![Marco de Analytics](assets/aa-08.png)
 
 ## Descargas de archivos de seguimiento {#tracking-file-downloads}
 
@@ -80,19 +81,19 @@ Habilita el seguimiento de vínculos externos.
 * **Filtros externos**
 (Opcional) Define filtros para hacer coincidir las direcciones URL externas de los destinos del vínculo. Cuando los destinos del vínculo coinciden con el filtro, se realiza el seguimiento del vínculo. Los filtros externos solo son útiles para rastrear algunos de los vínculos externos de las páginas.
 
-   Para especificar los vínculos externos que se van a rastrear, escriba la dirección URL del destino del vínculo o parte de ella. Separe varios filtros con una coma. Escriba los literales de cadena entre comillas simples. Sin valor (el valor predeterminado de `''`, dos comillas simples) hace que se rastreen todos los vínculos externos.
+  Para especificar los vínculos externos que se van a rastrear, escriba la dirección URL del destino del vínculo o parte de ella. Separe varios filtros con una coma. Escriba los literales de cadena entre comillas simples. Sin valor (el valor predeterminado de `''`, dos comillas simples) hace que se rastreen todos los vínculos externos.
 
 * **Filtros internos**
 Define filtros para hacer coincidir las direcciones URL de los vínculos internos. Cuando el vínculo se dirige a direcciones URL que coinciden con este filtro, no se realiza el seguimiento del vínculo. El valor predeterminado es un comando de javascript que devuelve el nombre de host de la dirección URL de la dirección de la ventana actual.
 
-   Para especificar los vínculos internos de los que no se realiza un seguimiento, escriba la dirección URL interna del destino del vínculo o parte de ella. Separe varios filtros con una coma. Escriba los literales de cadena entre comillas simples.
+  Para especificar los vínculos internos de los que no se realiza un seguimiento, escriba la dirección URL interna del destino del vínculo o parte de ella. Separe varios filtros con una coma. Escriba los literales de cadena entre comillas simples.
 
-   El valor predeterminado es `'javascript:,'+window.location.hostname`
+  El valor predeterminado es `'javascript:,'+window.location.hostname`
 
 * **Dejar cadena de consulta**
 Incluye parámetros de URL al evaluar coincidencias con filtros internos y externos.
 
-   Habilite la opción para incluir parámetros de URL al evaluar direcciones URL de destino de vínculo con filtros externos e internos.
+  Habilite la opción para incluir parámetros de URL al evaluar direcciones URL de destino de vínculo con filtros externos e internos.
 
 Las propiedades de seguimiento de vínculos externos se implementan como código en la variable `analytics.sitecatalyst.js` que se genera para una página. El siguiente código de ejemplo se genera para una página asociada a un marco de trabajo que ha habilitado el seguimiento de vínculos externos con la siguiente configuración:
 
@@ -123,14 +124,14 @@ Propiedades para enviar datos de variables con clics en vínculos:
 * **Eventos de seguimiento de vínculos**
 Introduzca las variables de evento de Adobe Analytics que desee utilizar para contar los clics en vínculos.
 
-   Separe los nombres de varias variables con una coma.
+  Separe los nombres de varias variables con una coma.
 
-   El valor predeterminado de `None` no provoca ningún seguimiento de eventos.
+  El valor predeterminado de `None` no provoca ningún seguimiento de eventos.
 
 * **Variables de seguimiento de vínculos**
 Introduzca las variables de Adobe Analytics que desee enviar a Adobe Analytics cuando se haga clic en un vínculo. Separe los nombres de varias variables con una coma.
 
-   El valor predeterminado de `None` no hace que se envíen datos de variables.
+  El valor predeterminado de `None` no hace que se envíen datos de variables.
 
 Cuando especifica los eventos y las variables que se van a enviar, la configuración se implementa como código en la variable `analytics.sitecatalyst.js` que se genera para una página. El siguiente código de ejemplo se genera para una página cuando el marco de trabajo realiza el seguimiento de `event10` y el `prop4` propiedad:
 
@@ -148,7 +149,7 @@ Realice los siguientes procedimientos para explorar el comportamiento de seguimi
 Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimiento y el depurador:
 
 1. Abra el marco de trabajo asociado a una página web.
-1. Arrastre el **Página** al área de asignaciones del marco de trabajo. El **Página** El componente pertenece a **General** grupo de componentes en la barra de tareas.
+1. Arrastre el **Página** al área de asignaciones del marco de trabajo. El **Página** El componente pertenece a **General** grupo de componentes en el Sidekick.
 
    >[!NOTE]
    >
@@ -178,7 +179,7 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
  </tbody>
 </table>
 
-1. Arrastre el componente Buscar al área de asignaciones del marco de trabajo. El componente Buscar pertenece al grupo de componentes General de la barra de tareas. Configure la asignación según la tabla siguiente arrastrando la variable de Analytics (SiteCatalyst) desde el panel lateral izquierdo:
+1. Arrastre el componente Buscar al área de asignaciones del marco de trabajo. El componente Buscar pertenece al grupo de componentes General de Sidekick. Configure la asignación según la tabla siguiente arrastrando la variable de Analytics (SiteCatalyst) desde el panel lateral izquierdo:
 
 <table>
  <tbody>
@@ -236,7 +237,7 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
 
 La llamada realizada tendrá este aspecto cuando se visualice con Adobe Marketing Cloud Debugger:
 
-![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
+![Adobe Marketing Cloud Debugger](assets/aa-leavequerysearch-blank.png)
 
 >[!NOTE]
 >
@@ -250,7 +251,7 @@ La llamada realizada tendrá este aspecto cuando se visualice con Adobe Marketin
 
 Los detalles de la llamada que aparecen en Adobe Marketing Cloud Debugger son similares al siguiente ejemplo:
 
-![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
+![Adobe Marketing Cloud Debugger de nuevo](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -323,7 +324,7 @@ Utilice el siguiente procedimiento para configurar el seguimiento de vínculos p
 
 1. Seleccione el texto que desee utilizar como hipertexto y haga clic en el botón Hipervínculo.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Icono de vínculo](do-not-localize/chlimage_1.png)
 
 1. Añada la dirección URL de destino en el cuadro Vincular a y, a continuación, expanda el área Seguimiento de vínculos.
 
@@ -333,7 +334,7 @@ Utilice el siguiente procedimiento para configurar el seguimiento de vínculos p
    >
    >Solo se activará cuando haya seleccionado un vínculo válido en RTE.
 
-   ![aa-17](assets/aa-17.png)
+   ![Habilitación del seguimiento de vínculos](assets/aa-17.png)
 
 1. Activar **Seguimiento de vínculos personalizados** para anular la configuración de seguimiento de vínculos del marco de trabajo de Adobe Analytics y habilitar el seguimiento de vínculos para el vínculo actual.
 

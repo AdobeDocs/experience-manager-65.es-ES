@@ -6,12 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
+
 
 # Configurar formularios de búsqueda{#configuring-search-forms}
 
@@ -29,7 +30,7 @@ Puede [configuración de los formularios de búsqueda](#configuring-your-search-
 
 Cuando acceda por primera vez a esta consola, verá que todas las configuraciones tienen un símbolo de candado. Esto indica que la configuración adecuada es la predeterminada (predeterminada) y no se puede eliminar. Una vez que haya personalizado la configuración, el bloqueo desaparecerá, a menos que [elimine la configuración personalizada](#deleting-a-configuration-to-reinstate-the-default), en cuyo caso se restablecerá el valor predeterminado (y el indicador de candado).
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![Ventana Buscar formularios](assets/chlimage_1-374.png)
 
 ## Configuraciones {#configurations}
 
@@ -37,63 +38,63 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
 * **Editor de páginas (búsqueda de documentos):**
 
-   Esta configuración define las opciones disponibles al buscar documentos en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar documentos en el explorador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de imágenes):**
 
-   Esta configuración define las opciones disponibles al buscar imágenes en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar imágenes en el explorador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de manuscritos):**
 
-   Esta configuración define las opciones disponibles al buscar manuscritos en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar manuscritos en el explorador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de páginas):**
 
-   Esta configuración define las opciones disponibles al buscar páginas en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar páginas en el explorador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de párrafos):**
 
-   Esta configuración define las opciones disponibles al buscar párrafos en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar párrafos en el explorador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de productos):**
 
-   Esta configuración define las opciones disponibles al buscar productos en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar productos en el explorador de recursos (al editar una página).
 
 * **Editor de páginas (Dynamic Media Classic) [anteriormente Scene7] search)**:
 
-   Esta configuración define las opciones disponibles al buscar recursos de Scene7 en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar recursos de Scene7 en el explorador de recursos (al editar una página).
 
 * **Carril de búsqueda de administración de sitios**:
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar el carril de búsqueda de la consola Sitios.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar el carril de búsqueda de la consola Sitios.
 
 * **Editor de páginas (búsqueda de vídeos):**
 
-   Esta configuración define las opciones disponibles al buscar vídeos en el explorador de recursos (al editar una página).
+  Esta configuración define las opciones disponibles al buscar vídeos en el explorador de recursos (al editar una página).
 
 * **Carril de búsqueda de administración de recursos:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar la consola Recursos.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar la consola Recursos.
 
 * **Carril de búsqueda de administración de catálogos:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar en un catálogo comercial.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar en un catálogo comercial.
 
 * **Carril de búsqueda de administración de pedidos:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar pedidos comerciales.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar pedidos comerciales.
 
 * **Carril de búsqueda de administración de las colecciones de productos:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar colecciones de productos de comercio.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar colecciones de productos de comercio.
 
 * **Carril de búsqueda de administración de productos:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar productos de comercio.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar productos de comercio.
 
 * **Carril de búsqueda de administración de proyecto:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar proyectos.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar proyectos.
 
 ## Predicados y su configuración {#predicates-and-their-settings}
 
@@ -329,11 +330,11 @@ Los siguientes predicados están disponibles, según la configuración:
 >[!NOTE]
 >
 >* Los predicados de búsqueda comunes se definen en:
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Los predicados de búsqueda relacionados únicamente con siteadmin (IU clásica) se encuentran en:
-   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Están en desuso y solo están disponibles para la compatibilidad con versiones anteriores.
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>   * Están en desuso y solo están disponibles para la compatibilidad con versiones anteriores.
 >
 >Esta información es solo para referencia, no debe realizar cambios en `/libs`.
 
@@ -343,47 +344,46 @@ En función del predicado, hay una selección de opciones disponibles para la co
 
 * **Etiqueta de campo**
 
-   La etiqueta que aparecerá como encabezado contraíble o como etiqueta de campo del predicado.
+  La etiqueta que aparecerá como encabezado contraíble o como etiqueta de campo del predicado.
 
 * **Descripción**
 
-   Detalles descriptivos del usuario.
+  Detalles descriptivos del usuario.
 
 * **Marcador de posición**
 
-   Texto vacío o el marcador de posición del predicado en caso de que no se introduzca ningún texto de filtrado.
+  Texto vacío o el marcador de posición del predicado en caso de que no se introduzca ningún texto de filtrado.
 
 * **Nombre de propiedad**
 
-   Propiedad en la que se va a buscar. Utiliza una ruta relativa y los comodines `*/*/*` especifique la profundidad de la propiedad en relación con `jcr:content` nodo (cada asterisco representa un nivel de nodo).
+  Propiedad en la que se va a buscar. Utiliza una ruta relativa y los comodines `*/*/*` especifique la profundidad de la propiedad en relación con `jcr:content` nodo (cada asterisco representa un nivel de nodo).
 
-   Si desea buscar únicamente en un nodo secundario de primer nivel del recurso que tiene la variable `x` propiedad en el `jcr:content` uso de nodo `*/jcr:content/x`
+  Si desea buscar únicamente en un nodo secundario de primer nivel del recurso que tiene la variable `x` propiedad en el `jcr:content` uso de nodo `*/jcr:content/x`
 
 * **Profundidad de la propiedad**
 
-   Profundidad máxima para buscar esa propiedad dentro de los recursos. Por lo tanto, se puede realizar una búsqueda de esa propiedad en un recurso y en elementos secundarios recursivos hasta que el nivel de los elementos secundarios sea igual a la profundidad especificada.
+  Profundidad máxima para buscar esa propiedad dentro de los recursos. Por lo tanto, se puede realizar una búsqueda de esa propiedad en un recurso y en elementos secundarios recursivos hasta que el nivel de los elementos secundarios sea igual a la profundidad especificada.
 
 * **Valor de propiedad**
 
-   El valor de la propiedad como cadena absoluta o como lenguaje de expresión; por ejemplo, `cq:Page` o
+  El valor de la propiedad como cadena absoluta o como lenguaje de expresión; por ejemplo, `cq:Page` o
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Texto de intervalo**
 
-   La etiqueta del campo de rango en la variable **Intervalo de fechas** predicado.
+  La etiqueta del campo de rango en la variable **Intervalo de fechas** predicado.
 
 * **Ruta de opción**
 
-   El usuario puede seleccionar la ruta mediante el Explorador de rutas en la pestaña de configuración de predicado. Después de seleccionar el **+** se utiliza para añadir la selección a la lista de opciones válidas (a continuación, el icono **-** para eliminar si es necesario).
+  El usuario puede seleccionar la ruta mediante el Explorador de rutas en la pestaña de configuración de predicado. Después de seleccionar el **+** se utiliza para añadir la selección a la lista de opciones válidas (a continuación, el icono **-** para eliminar si es necesario).
 
-   Las opciones son nodos de contenido creados por el usuario que tienen la siguiente estructura:
+  Las opciones son nodos de contenido creados por el usuario que tienen la siguiente estructura:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Ruta del nodo de opciones**
-Efectivamente igual que el 
-**Ruta de opciones**, solo esto se encuentra en el campo de predicado común, el otro es específico para los recursos.
+Efectivamente igual que el **Ruta de opciones**, solo esto se encuentra en el campo de predicado común, el otro es específico para los recursos.
 
 * **Selección única**
 Si se selecciona, las opciones se representan como casillas de verificación que permiten solo una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
@@ -411,7 +411,6 @@ Las etiquetas de las casillas de verificación de publicación y Live Copy para 
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Adición o edición de un campo de predicado y definición de la configuración del campo {#add-edit-a-predicate-field-and-define-field-settings}
 
 Puede añadir o editar campos y definir o actualizar su configuración:
@@ -419,20 +418,21 @@ Puede añadir o editar campos y definir o actualizar su configuración:
 1. [Abra la configuración personalizada](#creating-opening-a-customized-configuration) para actualizar.
 1. Si desea agregar un nuevo campo, abra el **Seleccionar predicado** y arrastre el predicado necesario a la ubicación requerida. Por ejemplo, la variable **Predicado de intervalo de fechas**:
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![Edición de un formulario de búsqueda](assets/chlimage_1-375.png)
 
 1. En función de si:
 
    * Va a añadir un nuevo campo:
 
-      Después de agregar el predicado, **Configuración** se abrirá y mostrará las propiedades que se pueden definir.
+     Después de agregar el predicado, **Configuración** se abrirá y mostrará las propiedades que se pueden definir.
 
    * Desea actualizar un predicado existente:
 
-      Seleccione el campo de predicado (a la derecha) y abra la variable **Configuración** pestaña.
+     Seleccione el campo de predicado (a la derecha) y abra la variable **Configuración** pestaña.
+
    Por ejemplo, la configuración de **Predicado de intervalo de fechas**:
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![Propiedades del predicado de intervalo de fechas](assets/chlimage_1-376.png)
 
 1. Realice los cambios necesarios y confirme con **Listo**.
 
@@ -440,11 +440,11 @@ Puede añadir o editar campos y definir o actualizar su configuración:
 
 1. Seleccione el icono Vista previa:
 
-   ![](do-not-localize/chlimage_1-31.png)
+   ![Icono de previsualización](do-not-localize/chlimage_1-31.png)
 
 1. Esto mostrará los formularios de búsqueda tal como se mostrarán (completamente expandidos) en la columna Buscar de la consola adecuada.
 
-   ![chlimage_1-377](assets/chlimage_1-377.png)
+   ![Vista previa del formulario de búsqueda](assets/chlimage_1-377.png)
 
 1. **Cerrar** Seleccione la previsualización para devolver y finalizar la configuración.
 
@@ -453,7 +453,7 @@ Puede añadir o editar campos y definir o actualizar su configuración:
 1. [Abra la configuración personalizada](#creating-opening-a-customized-configuration) para actualizar.
 1. Seleccione el campo de predicado (a la derecha) y abra el **Configuración** y, a continuación, seleccione **Eliminar** (abajo a la izquierda).
 
-   ![](do-not-localize/chlimage_1-32.png)
+   ![Icono Eliminar](do-not-localize/chlimage_1-32.png)
 
 1. Un cuadro de diálogo solicitará confirmación de la acción de eliminación.
 
@@ -471,7 +471,7 @@ La eliminación de una configuración personalizada se realiza desde la consola:
 
 1. Seleccione la configuración necesaria (por ejemplo, **Editor de páginas (búsqueda de párrafos)**) y luego el **Eliminar** en la barra de herramientas:
 
-   ![chlimage_1-378](assets/chlimage_1-378.png)
+   ![Eliminación de un formulario](assets/chlimage_1-378.png)
 
 1. La configuración personalizada se eliminará y se restablecerá la predeterminada (esto se indica con la reaparición del símbolo de candado en la consola).
 
@@ -490,7 +490,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
    * `jcr:title` - la etiqueta del campo que se mostrará en el carril de búsqueda
    * `value` : el valor de propiedad en el que se va a buscar
 
-   ![chlimage_1-379](assets/chlimage_1-379.png)
+   ![Agregar opciones en CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,6 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Realice cualquier cambio en `/apps.`
 
-
 1. Abra el **Buscar Forms** y seleccione la configuración que desee actualizar. Por ejemplo, **Carril de búsqueda de administración de sitios**.
 
    A continuación, toque o haga clic en **Editar formularios de búsqueda** icono.
@@ -514,21 +513,22 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
    * **Nombre de propiedad**
 
-      Especifica la propiedad del nodo que se va a buscar en los nodos de destino. Por ejemplo:
+     Especifica la propiedad del nodo que se va a buscar en los nodos de destino. Por ejemplo:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Ruta del nodo de opción**
 
-      Seleccione la ruta donde se guardan las opciones. Por ejemplo:
+     Seleccione la ruta donde se guardan las opciones. Por ejemplo:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![chlimage_1-380](assets/chlimage_1-380.png)
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
+   ![Agregando ruta de propiedad](assets/chlimage_1-380.png)
 
 1. Seleccionar **Listo** para guardar la configuración.
 1. Vaya a la consola adecuada (en este ejemplo, **Sites**) y abra el **Buscar** carril. Los formularios de búsqueda recién definidos, junto con las distintas opciones, serán visibles. Seleccione la opción necesaria para ver los resultados de la búsqueda:
 
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![Los resultados finales](assets/chlimage_1-381.png)
 
 ## Permisos de usuario {#user-permissions}
 

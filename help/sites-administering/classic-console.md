@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
+
 
 # Consola de etiquetado de IU clásica{#classic-ui-tagging-console}
 
@@ -30,7 +31,7 @@ Para acceder a la consola de etiquetado de IU clásica:
 * iniciar sesión con privilegios administrativos
 * vaya a la consola, por ejemplo: [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-![](assets/managing_tags_usingthetagasministrationconsole.png)
+![Ventana de consola clásica](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Creación de etiquetas y espacios de nombre {#creating-tags-and-namespaces}
 
@@ -38,33 +39,29 @@ Para acceder a la consola de etiquetado de IU clásica:
 
    Si selecciona **Etiquetas** puede crear un área de nombres:
 
-   ![](assets/creating_tags_andnamespaces.png)
+   ![Creación de un cuadro de diálogo de espacio de nombres](assets/creating_tags_andnamespaces.png)
 
    Si selecciona un área de nombres (por ejemplo, **Demostración**) puede crear una etiqueta dentro de ese área de nombres:
 
-   ![](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![Creación de un cuadro de diálogo de etiquetas](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. En ambos casos, introduzca
 
    * **Título**
-(
-*Requerido*) El título para mostrar de la etiqueta. Aunque se puede introducir cualquier carácter, se recomienda no utilizar estos caracteres especiales:
+(*Requerido*) El título para mostrar de la etiqueta. Aunque se puede introducir cualquier carácter, se recomienda no utilizar estos caracteres especiales:
 
       * `colon (:)` - delimitador de área de nombres
       * `forward slash (/)` - delimitador de subetiqueta
 
-      Estos caracteres no se mostrarán si se introducen.
+     Estos caracteres no se mostrarán si se introducen.
 
    * **Nombre**
-(
-*Requerido*) El nombre del nodo de la etiqueta.
+(*Requerido*) El nombre del nodo de la etiqueta.
 
    * **Descripción**
-(
-*Opcional*) Una descripción para la etiqueta.
+(*Opcional*) Una descripción para la etiqueta.
 
    * select **Crear**
-
 
 ## Edición de etiquetas {#editing-tags}
 
@@ -90,7 +87,7 @@ Para acceder a la consola de etiquetado de IU clásica:
 
 **Lista** abre una nueva ventana que muestra las rutas de todas las páginas que utilizan la etiqueta resaltada:
 
-![](assets/list_showing_wheretagsarereferenced.png)
+![Búsqueda de lugares donde se hace referencia a las etiquetas](assets/list_showing_wheretagsarereferenced.png)
 
 ## Mover etiquetas {#moving-tags}
 
@@ -107,7 +104,7 @@ Para ayudar a los administradores y desarrolladores de etiquetas a limpiar la ta
 
 El **Mover etiqueta** tiene el siguiente aspecto:
 
-![](assets/move_tag.png)
+![Mover una etiqueta](assets/move_tag.png)
 
 >[!NOTE]
 >
@@ -129,7 +126,7 @@ Para combinar una etiqueta en otra:
 
 El **Combinar etiqueta** tiene el siguiente aspecto:
 
-![](assets/mergetag.png)
+![Combinación de una etiqueta](assets/mergetag.png)
 
 ## Recuento del uso de etiquetas {#counting-usage-of-tags}
 
@@ -158,7 +155,7 @@ El siguiente procedimiento muestra cómo traducir el `title`de la etiqueta **Ani
 
 El cuadro de diálogo tiene el siguiente aspecto:
 
-![](assets/edit_tag.png)
+![Edición de una etiqueta](assets/edit_tag.png)
 
 La consola de etiquetado utiliza la configuración de idioma del usuario, por lo que para la etiqueta Animal, se muestra &quot;Animaux&quot; para un usuario que establece el idioma en francés en las propiedades del usuario.
 
@@ -175,11 +172,11 @@ De forma predeterminada, la etiqueta `titles`en la página, las propiedades se m
 
    Seleccione el **Animales** (**Animaux**) y seleccione fuera del cuadro de diálogo para cerrarlo y añadir la etiqueta a las propiedades de página.
 
-   ![](assets/french_tag.png)
+   ![Edición de otra etiqueta](assets/french_tag.png)
 
 De forma predeterminada, el cuadro de diálogo Propiedades de página muestra la etiqueta `titles`según el idioma de la página.
 
-En general, el idioma de la etiqueta se toma del idioma de la página si este está disponible. Si la variable [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) se utiliza en otros casos (por ejemplo, en formularios o cuadros de diálogo), el idioma de la etiqueta depende del contexto.
+En general, el idioma de la etiqueta se toma del idioma de la página si este está disponible. Si la variable [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) se utiliza en otros casos (por ejemplo, en formularios o cuadros de diálogo), el idioma de la etiqueta depende del contexto.
 
 >[!NOTE]
 >

@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '961'
 ht-degree: 4%
 
 ---
+
 
 # Consolas de administración de miembros y grupos {#members-groups-management-consoles}
 
@@ -47,7 +48,7 @@ En el entorno de creación, para llegar a la consola Miembros para administrar m
 >
 >No será posible utilizar la consola Miembros si la variable [servicio túnel](deploy-communities.md#tunnel-service-on-author) no está activada.
 
-![member-console1](assets/member-console1.png)
+![La consola de miembros](assets/member-console1.png)
 
 ### Búsqueda {#search-features}
 
@@ -56,7 +57,7 @@ Seleccione el icono del panel lateral en el lado izquierdo del `Members` encabez
 ![Icono Buscar en el panel lateral.](assets/leftpanel-icon.png)
 
 
-![member-console2](assets/member-console2.png)
+![Opciones de filtro para la consola de miembros](assets/member-console2.png)
 
 Seleccione el icono de búsqueda en la parte izquierda de la `Members` encabezado para alternar el panel lateral de búsqueda cerrado.
 
@@ -76,7 +77,7 @@ Los encabezados de columna son
 
 Seleccionar `Create Member` para crear un usuario en el entorno de publicación.
 
-![create-member1](assets/create-member1.png)
+![La ventana Crear nuevo miembro](assets/create-member1.png)
 
 ### GENERAL: detalles del miembro {#general-member-details}
 
@@ -150,7 +151,7 @@ El `BADGES` el panel permite asignar insignias manualmente y revocarlas. Las ins
 
 Consulte también [Puntuación y distintivos](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![La ventana Editar configuración de pertenencia](assets/create-member2.png)
 
 * **[!UICONTROL Añadir insignias]**
    * Empiece a escribir para seleccionar [insignias disponibles](badges.md). Una vez seleccionado un distintivo, elija cada sitio, o todos los sitios, en los que el distintivo debe mostrarse junto con el avatar del miembro.
@@ -173,7 +174,7 @@ Para acceder a la consola de grupos:
 
 Seleccionar `Add Group` para crear un grupo en el entorno de publicación.
 
-![group-console1](assets/group-console1.png)
+![La ventana Crear nuevo grupo](assets/group-console1.png)
 
 Los campos obligatorios para crear un nuevo grupo de miembros del lado de publicación son:
 

@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
+source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1973'
 ht-degree: 0%
 
 ---
+
 
 # Client Context{#client-context}
 
@@ -26,9 +27,9 @@ ht-degree: 0%
 
 Client Context es un mecanismo que proporciona determinada información sobre la página y el visitante actuales. Se puede abrir utilizando **Ctrl-Alt-c** (Windows) o **control-option-c** (Mac):
 
-![](assets/clientcontext_alisonparker.png)
+![Ejemplo de la ventana Client Context](assets/clientcontext_alisonparker.png)
 
-En ambos [entorno de publicación y creación muestra información](#propertiesavailableintheclientcontext) acerca de:
+Tanto en el entorno de publicación como de creación muestra información sobre:
 
 * El visitante; según la instancia, se solicita o se deriva cierta información.
 * Etiquetas de página y el número de veces que el visitante actual ha accedido a estas etiquetas (esto se muestra cuando mueve el ratón sobre una etiqueta específica)
@@ -38,7 +39,7 @@ En ambos [entorno de publicación y creación muestra información](#propertiesa
 
 Los iconos (solo disponibles en el entorno de creación) permiten configurar los detalles del contexto del cliente:
 
-![](do-not-localize/clientcontext_icons.png)
+![Los iconos Editar, Cargar y Restablecer de la ventana Client Context.](do-not-localize/clientcontext_icons.png)
 
 * **Editar**
 Se abrirá una nueva página para permitirle lo siguiente [edición, adición o eliminación de una propiedad de perfil](#editingprofiledetails).
@@ -116,6 +117,7 @@ Por ejemplo, si el ratón se encuentra actualmente sobre la parte izquierda o de
 **Nube de etiquetas** Muestra las etiquetas configuradas en la página actual y las recopiladas al navegar por el sitio. Al mover el ratón sobre una etiqueta, se muestra el número de veces que el usuario actual ha accedido a páginas que contienen esa etiqueta específica.
 
 >[!NOTE]
+>
 Las etiquetas configuradas en recursos DAM que se muestran en las páginas visitadas no se contarán.
 
 **Almacenamiento tecnográfico** Este componente depende de la instalación.
@@ -127,6 +129,7 @@ Este almacén de sesión no tiene ningún componente de contexto de cliente pred
 Para obtener más información, consulte [Client Context en detalle](/help/sites-developing/client-context.md).
 
 >[!NOTE]
+>
 Los datos de página ya no están en el contexto de cliente como componente predeterminado. Si es necesario, puede agregarlo editando el contexto de cliente y agregando el **Propiedades de almacenamiento genérico** y, a continuación, configure para definir el componente **Almacenar** as `pagedata`.
 
 ## Cambio del perfil de ClientContext {#changing-the-client-context-profile}
@@ -149,11 +152,11 @@ Cuando termine, puede [restablecimiento del perfil](#resetting-the-profile-to-th
 
 1. Haga clic en el icono Cargar perfil:
 
-   ![](do-not-localize/clientcontext_loadprofile.png)
+   ![El icono Cargar perfil de Client Context](do-not-localize/clientcontext_loadprofile.png)
 
 1. Se abrirá el cuadro de diálogo, donde puede seleccionar el perfil que desea cargar:
 
-   ![](assets/clientcontext_profileloader.png)
+   ![El cuadro de diálogo Cargador de perfiles muestra la lista desplegable para seleccionar un perfil](assets/clientcontext_profileloader.png)
 
 1. Clic **OK** para cargar.
 
@@ -163,7 +166,7 @@ También puede seleccionar un perfil con el control deslizante de selección:
 
 1. Haga doble clic en el icono que representa al usuario actual. Se abrirá el selector, utilice las flechas para navegar y ver los perfiles disponibles:
 
-   ![](assets/clientcontext_profileselector.png)
+   ![El selector de usuario](assets/clientcontext_profileselector.png)
 
 1. Haga clic en el perfil que desee cargar. Una vez cargados los detalles, haga clic fuera del selector para cerrar.
 
@@ -171,13 +174,13 @@ También puede seleccionar un perfil con el control deslizante de selección:
 
 1. Utilice el icono de restablecimiento para devolver el perfil de Client Context al del usuario actual:
 
-   ![](do-not-localize/clientcontext_resetprofile.png)
+   ![El icono de restablecimiento](do-not-localize/clientcontext_resetprofile.png)
 
 ### Cambio de la plataforma del explorador {#changing-the-browser-platform}
 
 1. Haga doble clic en el icono que representa la plataforma del explorador. Se abrirá el selector, utilice las flechas para navegar y ver las plataformas o exploradores disponibles:
 
-   ![](assets/clientcontext_browserplatform.png)
+   ![Selector de plataforma del explorador](assets/clientcontext_browserplatform.png)
 
 1. Haga clic en el explorador de la plataforma que desee cargar. Una vez cargados los detalles, haga clic fuera del selector para cerrar.
 
@@ -185,7 +188,7 @@ También puede seleccionar un perfil con el control deslizante de selección:
 
 1. Haga doble clic en el icono de geolocalización. Se abrirá un mapa expandido, donde puede arrastrar el marcador a una nueva ubicación:
 
-   ![](assets/clientcontext_geomocationrelocate.png)
+   ![Detalles de geolocalización](assets/clientcontext_geomocationrelocate.png)
 
 1. Haga clic fuera del mapa para cerrar.
 
@@ -193,7 +196,7 @@ También puede seleccionar un perfil con el control deslizante de selección:
 
 1. Haga doble clic en la sección Nube de etiquetas de Client Context. Se abrirá el cuadro de diálogo, donde puede seleccionar las etiquetas:
 
-   ![](assets/clientcontext_tagselection.png)
+   ![Cuadro de diálogo Nube de etiquetas](assets/clientcontext_tagselection.png)
 
 1. Haga clic en Aceptar para cargar en Client Context.
 
@@ -205,13 +208,13 @@ La edición de un contexto de cliente se puede utilizar para establecer (o resta
 
 La edición de un contexto de cliente se puede utilizar para establecer (o restablecer) los valores de determinadas propiedades. Esto le permite probar escenarios específicos (especialmente útiles para [segmentación](/help/sites-administering/campaign-segmentation.md) y [campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
-![](assets/clientcontext_alisonparker_edit.png)
+![Edición de Client Context](assets/clientcontext_alisonparker_edit.png)
 
 ### Añadir un componente de propiedad {#adding-a-property-component}
 
 Después de abrir el **página de diseño del ClientContext**, también puede **Añadir** una propiedad completamente nueva que utilice los componentes disponibles (los componentes se enumeran en la barra de tareas o en el **Insertar nuevo componente** que se abre después de hacer doble clic en el **Arrastre componentes o recursos aquí** cuadro):
 
-![](assets/clientcontext_alisonparker_new.png)
+![Adición de una propiedad a la ventana Client Context](assets/clientcontext_alisonparker_new.png)
 
 ### Eliminación de un componente de propiedad {#removing-a-property-component}
 
@@ -231,11 +234,11 @@ Agregue el componente Almacenamiento JSONP a Client Context y utilícelo para re
 1. Para abrir Client Context, pulse Ctrl-Alt-c (Windows) o control-opción-c (Mac).
 1. Haga clic en el icono de edición en la parte superior de Client Context para abrir el Diseñador de Client Context.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Icono de vínculo](do-not-localize/chlimage_1.png)
 
 1. Arrastre el componente Almacenamiento JSONP a Client Context.
 
-   ![](assets/chlimage_1-4.jpeg)
+   ![Arrastrar y soltar el componente Almacenamiento JSONP en Client Context](assets/chlimage_1-4.jpeg)
 
 1. Haga doble clic en el componente para abrir el cuadro de diálogo de edición.
 1. En el cuadro URL del servicio JSONP, escriba la siguiente dirección URL y, a continuación, haga clic en Recuperar almacén:
@@ -244,12 +247,12 @@ Agregue el componente Almacenamiento JSONP a Client Context y utilícelo para re
 
    El componente llama al servicio JSONP y enumera todas las propiedades que contienen los datos devueltos. Las propiedades de la lista son las que estarán disponibles en Client Context.
 
-   ![](assets/chlimage_1-40.png)
+   ![Las propiedades del servicio JSONP](assets/chlimage_1-40.png)
 
 1. Haga clic en Aceptar.
 1. Vuelva a la página principal de los Geometrixx Outdoors y actualice la página. Client Context ahora incluye la información del componente Tienda JSONP.
 
-   ![](assets/chlimage_1-41.png)
+   ![Ejemplo del componente JSONP rellenado con datos](assets/chlimage_1-41.png)
 
 ### Creación del segmento {#create-the-segment}
 
@@ -270,7 +273,7 @@ Utilice los datos del almacén de sesiones que ha creado con el componente de al
 1. Haga clic con el botón derecho en el segmento Invierno y haga clic en Abrir.
 1. Arrastre la Propiedad de almacenamiento genérico al contenedor AND predeterminado.
 
-   ![](assets/chlimage_1-5.jpeg)
+   ![Añadir un componente al editor de segmentos](assets/chlimage_1-5.jpeg)
 
 1. Haga doble clic en el componente para abrir el cuadro de diálogo de edición, especifique los siguientes valores de propiedad y, a continuación, haga clic en Aceptar:
 

@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
+
 
 # Editor por lotes{#the-bulk-editor}
 
@@ -46,11 +47,11 @@ En el sitio web del Geometrixx se incluye un ejemplo que ilustra un caso de uso 
 1. Vaya a **Asistencia** y luego a la página **Satisfacción del servicio al cliente** encuesta.
 1. **Editar** el **Inicio de formulario** párrafo. En el cuadro de diálogo, haga clic en **Avanzadas** , expanda la pestaña **Configuración de acción**, luego haga clic en **Ver datos...**.
 
-   ![](assets/custsatsurvey.png)
+   ![Ejemplo de encuesta de satisfacción del cliente](assets/custsatsurvey.png)
 
 1. El editor en bloque es totalmente personalizable, aunque en este ejemplo el editor en bloque no permite a los usuarios editar el contenido, sino que solo les permite exportar la información a una hoja de cálculo.
 
-   ![](assets/bulkeditor.png)
+   ![Consola de editor en lotes](assets/bulkeditor.png)
 
 ## Cómo utilizar el editor en masa {#how-to-use-the-bulk-editor}
 
@@ -100,16 +101,16 @@ Para utilizar el editor en bloque para editar varios elementos simultáneamente:
 
 Por ejemplo:
 
-![](assets/searchfilter.png)
+![Opciones de filtro del editor en lotes](assets/searchfilter.png)
 
 1. Clic **Buscar**. El Editor por lotes muestra los resultados.
 En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqueda se devuelven y se muestran con las columnas solicitadas.
 
-   ![](assets/chlimage_1-39.png)
+   ![Resultados del editor en lotes](assets/chlimage_1-39.png)
 
 1. Realice los cambios que necesite haciendo doble clic en una celda.
 
-   ![](assets/srchresultedit.png)
+   ![Edición en lotes](assets/srchresultedit.png)
 
 1. Clic **Guardar** para guardar los cambios (la variable **Guardar** se activará una vez que haya editado una celda).
 
@@ -137,12 +138,12 @@ Para exportar contenido:
    >
    >De forma predeterminada, los cambios se codifican en [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (también conocido como CP-1252). Puede marcar UTF-8 para exportar los cambios en UTF-8.
 
-   ![](assets/srchrsesultexport.png)
+   ![Exportación de resultados](assets/srchrsesultexport.png)
 
 1. Seleccione la ubicación y confirme que desea descargar el archivo.
 1. Después de descargar el archivo, puede abrirlo desde el programa de hoja de cálculo, por ejemplo, Microsoft Excel. El programa de hoja de cálculo importa el archivo y lo convierte a un formato de hoja de cálculo.
 
-   ![](assets/exportinexcel.png)
+   ![Resultados exportados en una hoja de cálculo](assets/exportinexcel.png)
 
 ### Importación de contenido {#importing-content}
 
