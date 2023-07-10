@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: ddd908ed8287d77d9009633399c1e0bc1a12fe1b
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Los privilegios se pueden añadir buscando en el campo de texto y seleccionando 
 >
 >Para obtener una lista completa de privilegios y descripciones, consulte [esta página](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Permiso de búsqueda para una ruta determinada](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Permiso de búsqueda para una ruta determinada.](assets/image2019-3-21_0-5-47.png) ![Añada una nueva entrada para &quot;dam-users&quot; como se muestra en una ruta seleccionada en columnas verticales.](assets/image2019-3-21_0-6-53.png)
 
 Una vez seleccionada la lista de privilegios, el usuario puede elegir el Tipo de permiso : Denegar o Permitir, como se muestra a continuación.
 

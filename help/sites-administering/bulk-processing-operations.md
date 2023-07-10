@@ -8,9 +8,9 @@ uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
 discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -43,42 +43,42 @@ A continuación, elija una de las vistas, como se muestra a continuación:
 
 ### Vista de tarjeta {#card-view}
 
-![](assets/unu.png)
+![Vista de tarjeta que muestra imágenes en miniatura de diversos recursos de imagen.](assets/unu.png)
 
 ### Selección masiva en la vista de tarjeta {#bulk-selection-in-card-view}
 
 Los recursos o las páginas se pueden seleccionar de forma masiva mediante las opciones **Seleccionar todo** botón en la parte superior derecha:
 
-![](assets/doi.png) ![](assets/trei.png)
+![Seleccione el botón Todos que aparece en la esquina superior derecha de la vista de tarjeta.](assets/doi.png) ![Todas las imágenes en miniatura de los recursos de imagen en la vista de tarjeta se muestran como seleccionadas con marcas de verificación.](assets/trei.png)
 
 ### Vista de lista    {#list-view}
 
 Lo mismo ocurre con la vista de lista:
 
-![](assets/patru_modified.png)
+![La opción Seleccionar todo está resaltada en la esquina superior derecha de la vista de lista.](assets/patru_modified.png)
 
 ### Selección masiva en la vista de lista {#bulk-selection-in-list-view}
 
 En la vista de lista, utilice la variable **Seleccionar todo** o utilice la casilla de verificación de la izquierda para la selección masiva.
 
-![](assets/cinci.png) ![](assets/sase.png)
+![La vista en vivo que muestra miniaturas de imágenes de recursos de imagen se muestra en filas horizontales.](assets/cinci.png) ![Cuadro de lista que muestra miniaturas de imágenes de recursos de imagen y una casilla de verificación a la izquierda de Nombre.](assets/sase.png)
 
 ### Vista de columna {#column-view}
 
-![](assets/sapte.png)
+![Vista de columna que muestra imágenes en miniatura de recursos de imágenes mostrados en columnas verticales.](assets/sapte.png)
 
 ### Selección masiva en la vista de columna {#bulk-selection-in-column-view}
 
-![](assets/opt.png)
+![Todas las imágenes en miniatura de los recursos de imagen en la vista de columna se muestran como seleccionadas con marcas de verificación.](assets/opt.png)
 
 ## Operaciones habilitadas por lotes {#bulk-enabled-operations}
 
-Tras la selección, se puede realizar una de las tres acciones activadas de forma masiva: **Mover**, **Copiar** o **Eliminar**.
+Después de la selección, se puede realizar una de las tres acciones activadas de forma masiva: **Mover**, **Copiar** o **Eliminar**.
 
 Aquí, **Mover** Esta operación se realiza en los recursos seleccionados anteriormente. En cualquiera de las vistas, esto hará que todos los recursos se muevan a la ubicación elegida y no solo a los que se cargan en la pantalla.
 
-![](assets/noua.png)
+![Mueva los recursos que muestran una carpeta seleccionada en la Vista de columna.](assets/noua.png)
 
 Para otras operaciones que no se activan por lotes, como **Descargar,** aparecerá una advertencia que indica que solo se incluirán en la operación los elementos cargados en el explorador.
 
-![](assets/zece.png)
+![Vista de recursos que muestra los recursos de imagen seleccionados y el cuadro de diálogo emergente &quot;Acción masiva no admitida&quot;.](assets/zece.png)

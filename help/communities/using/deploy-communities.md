@@ -5,9 +5,9 @@ description: Cómo implementar AEM Communities
 seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1755'
 ht-degree: 3%
 
 ---
@@ -53,27 +53,27 @@ ht-degree: 3%
       * [Instalación y configuración de MongoDB](/help/communities/msrp.md#mongodb-configuration)
       * [Configurar Solr](/help/communities/solr.md)
       * [Seleccionar MSRP](/help/communities/srp-config.md)
+
    * Si la base de datos relacional SRP [(DSRP)](/help/communities/dsrp.md)
 
       * [Instalar el controlador JDBC para MySQL](#jdbc-driver-for-mysql)
       * [Instalar y configurar MySQL para DSRP](/help/communities/dsrp-mysql.md)
       * [Configurar Solr](/help/communities/solr.md)
       * [Seleccionar DSRP](/help/communities/srp-config.md)
+
    * Si Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
       * Póngase en contacto con su representante de cuentas para el aprovisionamiento.
       * [Seleccionar ASRP](/help/communities/srp-config.md)
+
    * Si JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
       * No es un almacén UGC compartido:
 
          * UGC nunca se replica.
          * AEM UGC solo es visible en la instancia o clúster de la instancia o clúster en el que se ha introducido.
+
       * El valor predeterminado es JSRP
-
-
-
-
 
 
 ## Últimas versiones {#latest-releases}
@@ -124,7 +124,7 @@ Encontrará más información sobre la instalación de paquetes en la [Consola w
 
 #### Ejemplo : Paquete de conector MySQL instalado {#example-installed-mysql-connector-bundle}
 
-![](../assets/mysql-connector.png)
+![Paquete de conector MySQL de la consola web Adobe Experience Manager](../assets/mysql-connector.png)
 
 ### AEM MLS avanzado de {#aem-advanced-mls}
 
@@ -186,7 +186,7 @@ De forma predeterminada, la variable `AEM Communities Publisher Configuration` L
 
 Por lo tanto, es necesario **editar la configuración en todas las instancias de publicación secundarias** para desmarcar **`Primary Publisher`** casilla de verificación.
 
-![](../assets/primary-publisher.png)
+![Cuadro de diálogo Configuración de AEM Communities Publisher que muestra la casilla Publicador principal](../assets/primary-publisher.png)
 
 Para todas las demás instancias de publicación (secundarias) de un conjunto de servidores de publicación:
 
@@ -234,7 +234,7 @@ Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 
 
 #### Agente de replicación inversa (publicación inversa) {#reverse-replication-agent-publish-reverse}
 
-![](../assets/reverse-replication-agent.png)
+![Agente de replicación inversa (publicación inversa) que muestra que está activado o habilitado.](../assets/reverse-replication-agent.png)
 
 ### Servicio de túnel de autor {#tunnel-service-on-author}
 
@@ -256,7 +256,7 @@ Para habilitar el servicio de túnel:
 * Seleccione el **habilitar** casilla de verificación
 * select **Guardar**
 
-![](../assets/tunnel-service.png)
+![Servicio de túnel de publicación de AEM Communities que muestra la casilla &quot;habilitar&quot; activada o marcada.](../assets/tunnel-service.png)
 
 ### Replicar la clave criptográfica {#replicate-the-crypto-key}
 
@@ -270,25 +270,25 @@ Para copiar el material clave del autor a todas las demás instancias, es necesa
 
    * Busque el `com.adobe.granite.crypto.file` paquete en el sistema de archivos local
 
-      Por ejemplo,
+     Por ejemplo,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * El `bundle.info` identificará el paquete
+
    * Navegue hasta la carpeta de datos, por ejemplo,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * Copie los archivos hmac y del nodo principal.
-
-
 
 * AEM Para cada instancia de destino de la
 
    * Navegue hasta la carpeta de datos, por ejemplo,
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * Pegue los 2 archivos copiados anteriormente
    * Es necesario lo siguiente [actualice el paquete Granite Crypto](#refresh-the-granite-crypto-bundle) AEM si la instancia de destino de la se está ejecutando.
-
 
 >[!CAUTION]
 >
@@ -315,7 +315,7 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [actualice el paquete Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](../assets/replicare-repository.png)
+![CRXDE Lite que muestra la ruta /etc/key en el panel izquierdo y la pestaña Replicación seleccionada en el panel inferior derecho.](../assets/replicare-repository.png)
 
 #### Actualizar el paquete de cifrado de Granite {#refresh-the-granite-crypto-bundle}
 
@@ -326,10 +326,10 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Localizar `Adobe Granite Crypto Support` paquete (com.adobe.granite.crypto)
 * Seleccionar **Actualizar**
 
-![](../assets/refresh-granite-bundle.png)
+![Actualizando el paquete de compatibilidad con cifrado de Granite de Adobe.](../assets/refresh-granite-bundle.png)
 
 * Después de un momento, un **Correcto** debe aparecer:
-   `Operation completed successfully.`
+  `Operation completed successfully.`
 
 ### Servidor HTTP Apache {#apache-http-server}
 

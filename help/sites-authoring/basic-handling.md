@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 3802eb71dc6d17db4b1158d8d433ba1c516e54f2
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '3011'
+source-wordcount: '3024'
 ht-degree: 42%
 
 ---
@@ -178,7 +178,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 * [Selector de raíl](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![La lista del selector de carril que se muestra en la parte izquierda de la pantalla de Adobe Experience Manager.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   Las opciones presentadas dependen de la consola actual. Por ejemplo, en **Sites** puede seleccionar contenido solamente (el valor predeterminado), la cronología, las referencias o el panel lateral de filtro.
 
