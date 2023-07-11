@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | **[⇐ aspectos básicos de funciones](essentials.md)** | **[⇒ de personalización del lado del servidor](server-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers ⇒](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers ⇒](handlebars-helpers.md)** |
 
 Existen varios métodos para personalizar el aspecto o el comportamiento de un componente de AEM Communities en el lado del cliente.
 
@@ -55,7 +55,7 @@ Para ver un ejemplo rápido de cómo ampliar el componente de comentarios, prueb
 
 ## Enlace de JavaScript {#javascript-binding}
 
-La secuencia de comandos HBS para el componente debe estar enlazada a los objetos, modelos y vistas JavaScript que implementan esta función.
+El script HBS para el componente debe estar enlazado a los objetos, modelos y vistas de JavaScript que implementan esta función.
 
 El valor del `data-scf-component` El atributo puede ser el predeterminado, como **`social/tally/components/hbs/rating`** o un componente ampliado (personalizado) para funcionalidades personalizadas, como **weretail/components/hbs/rating**.
 
@@ -63,7 +63,7 @@ Para enlazar un componente, todo el script del componente debe incluirse dentro 
 
 * `data-component-id`=&quot;{{id}}&quot;
 
-   se resuelve en la propiedad id desde el contexto
+  se resuelve en la propiedad id desde el contexto
 
 * `data-scf-component`=&quot;*&lt;resourcetype>*
 
@@ -95,8 +95,8 @@ Para despellejar un componente:
 
 1. Identifique los elementos que desee cambiar (por ejemplo, el área de composición, los botones de la barra de herramientas, la fuente del mensaje, etc.).
 1. Identifique las clases o reglas CSS que afectan a estos elementos.
-1. Cree un archivo de hoja de estilo (.css).
-1. Incluir la hoja de estilo en una carpeta de biblioteca de cliente ([clientlibs](#clientlibs-for-scf)) para su sitio y asegúrese de que se incluye desde sus plantillas y páginas con [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Cree un archivo de hoja de estilos (.css).
+1. Incluya la hoja de estilos en una carpeta de biblioteca de cliente ([clientlibs](#clientlibs-for-scf)) para su sitio y asegúrese de que se incluye desde sus plantillas y páginas con [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Redefina las clases y reglas CSS que ha identificado (#2) en la hoja de estilos y agregue estilos.
 
@@ -104,17 +104,17 @@ Los estilos personalizados ahora anularán los estilos de marco de trabajo prede
 
 >[!CAUTION]
 >
->Cualquier nombre de clase CSS con el prefijo `scf-js` tiene un uso específico en el código javascript. Estas clases afectan al estado de un componente (por ejemplo, cambia de oculto a visible) y no se deben anular ni eliminar.
+>Cualquier nombre de clase CSS con el prefijo `scf-js` tiene un uso específico en el código JavaScript. Estas clases afectan al estado de un componente (por ejemplo, cambia de oculto a visible) y no se deben anular ni eliminar.
 >
->Mientras que el `scf-js` las clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, como controlan el estado de los elementos, puede haber efectos secundarios.
+>Mientras que el `scf-js` las clases no afectan a los estilos, los nombres de clase pueden utilizarse en hojas de estilo con la advertencia de que, al controlar los estados de los elementos, pueden producirse efectos secundarios.
 
-## Ampliación de Javascript {#extending-javascript}
+## Ampliación de JavaScript {#extending-javascript}
 
 Para ampliar una implementación de JavaScript de componentes, debe:
 
 1. Cree un componente para su aplicación con un jcr:resourceSuperType establecido en el valor del jcr:resourceType del componente ampliado, por ejemplo: social/forum/components/hbs/forum.
 1. Examine el JavaScript del componente SCF predeterminado para determinar qué métodos deben registrarse con SCF.registerComponent().
-1. Copie el Javascript del componente ampliado o comience desde cero.
+1. Copie el JavaScript del componente ampliado o comience desde cero.
 1. Amplíe el método.
 1. Utilice SCF.registerComponent() para registrar todos los métodos con los valores predeterminados o con los objetos y vistas personalizados.
 
@@ -151,7 +151,7 @@ Las etiquetas de script en los scripts SCF no deben eliminarse al superponer o a
 
 ## Clientlibs para SCF {#clientlibs-for-scf}
 
-El uso de [bibliotecas del lado del cliente](../../help/sites-developing/clientlibs.md) (clientlibs) proporciona un medio para organizar y optimizar el JavaScript y el CSS utilizados para representar contenido en el cliente.
+El uso de [bibliotecas del lado del cliente](../../help/sites-developing/clientlibs.md) (clientlibs) proporciona un medio para organizar y optimizar el JavaScript y CSS utilizados para representar contenido en el cliente.
 
 Los clientlibs para SCF siguen un patrón de nomenclatura muy específico para dos variantes, que varían solo por la presencia de &quot;author&quot; en el nombre de la categoría:
 
@@ -200,10 +200,10 @@ Los clientlibs de autor requeridos se pueden identificar insertando &quot;author
 
 Cada sitio es diferente en la forma en que administra las bibliotecas de cliente. Varios factores incluyen:
 
-* Velocidad general: Tal vez el deseo es que el sitio sea adaptable, pero es aceptable que la primera página sea un poco lenta de cargar. Si muchas de las páginas utilizan el mismo JavaScript, los distintos JavaScript se pueden incrustar en una clientlib y se puede hacer referencia a ellos desde la primera página que se cargue. El JavaScript de esta descarga única permanece en la caché, lo que minimiza la cantidad de datos que se deben descargar para las páginas siguientes.
-* Breve tiempo hasta la primera página: tal vez lo que se desea es que la primera página se cargue rápidamente. En este caso, se puede hacer referencia al Javascript en varios archivos pequeños solo cuando sea necesario.
+* Velocidad general: Tal vez el deseo es que el sitio sea adaptable, pero es aceptable que la primera página sea un poco lenta de cargar. Si muchas de las páginas utilizan el mismo JavaScript, los distintos JavaScript se pueden incrustar en una clientlib y se puede hacer referencia a ellos desde la primera página que se cargue. El JavaScript de esta descarga única permanece en la caché, lo que minimiza la cantidad de datos que se descargarán para las páginas siguientes.
+* Breve tiempo hasta la primera página: tal vez lo que se desea es que la primera página se cargue rápidamente. En este caso, se hace referencia al JavaScript en varios archivos pequeños solo cuando es necesario.
 * Un equilibrio entre la primera carga de página y las descargas posteriores.
 
 | **[⇐ aspectos básicos de funciones](essentials.md)** | **[⇒ de personalización del lado del servidor](server-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers ⇒](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers ⇒](handlebars-helpers.md)** |

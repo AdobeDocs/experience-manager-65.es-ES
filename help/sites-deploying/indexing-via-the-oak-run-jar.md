@@ -1,17 +1,13 @@
 ---
 title: Indexación mediante el Jar de Oak-run
-seo-title: Indexing via the Oak-run Jar
 description: Aprenda a realizar la indexación mediante el Jar de Oak-run.
-seo-description: Learn how to perform indexing via the Oak-run Jar.
-uuid: 09a83ab9-92ec-4b55-8d24-2302f28fc2e4
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
 exl-id: dcec8c1b-13cc-486c-b1a4-62e6eb3184ad
-source-git-commit: c61bf629e35db848c3f2f88c6c7e1dd3b7074b1c
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -23,9 +19,9 @@ Oak-run admite todos los casos de uso de indexación en la línea de comandos si
 1. AEM Es un nuevo conjunto de herramientas de indexación para la versión 6.4 de
 1. Reduce el tiempo de reindexación, lo que afecta negativamente a los tiempos de reindexación en repositorios más grandes
 1. AEM AEM Está reduciendo el consumo de recursos durante la reindexación, lo que da como resultado un mejor rendimiento del sistema para otras actividades de la
-1. Oak-run proporciona compatibilidad fuera de banda: Si las condiciones de producción no permiten ejecutar un reíndice en instancias de producción, se puede utilizar un entorno clonado para la reindexación a fin de evitar un impacto crítico en el rendimiento.
+1. Oak-run proporciona compatibilidad fuera de banda: Si las condiciones de producción no le permiten ejecutar reindexaciones en instancias de producción, se puede utilizar un entorno clonado para reindexar a fin de evitar un impacto crítico en el rendimiento.
 
-A continuación, encontrará una lista de casos de uso que se pueden aprovechar al realizar operaciones de indexación a través de la `oak-run` herramienta.
+A continuación se muestra una lista de casos de uso que se pueden utilizar al realizar operaciones de indexación mediante el `oak-run` herramienta.
 
 ## Comprobaciones de coherencia de índice {#indexconsistencychecks}
 
@@ -33,7 +29,7 @@ A continuación, encontrará una lista de casos de uso que se pueden aprovechar 
 >
 >Para obtener información más detallada sobre este escenario, consulte [Caso de uso 1: Comprobación de la coherencia del índice](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
-* `oak-run.jar`determina rápidamente si los índices de Lucene oak están dañados.
+* `oak-run.jar`determina rápidamente si los índices de Lucene Oak están dañados.
 * AEM Es seguro ejecutarse en una instancia de prueba en uso para los niveles de comprobación de coherencia 1 y 2.
 
 ![Comprobaciones de coherencia de índice](assets/screen_shot_2017-12-14at135758.png)
@@ -63,9 +59,9 @@ Este diagrama es un árbol de decisión para saber cuándo utilizar los distinto
 
 ### Extracción previa de texto para SegmentNodeStore y DocumentNodeStore {#textpre-extraction}
 
-[Preextracción de texto](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) AEM (una función que ha existido con la versión 6.3 de) se puede utilizar para reducir el tiempo de reindexación. La preextracción de texto se puede utilizar junto con todos los enfoques de reindexación.
+[Preextracción de texto](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) AEM (una función que ha existido con la versión 6.3 de) se puede utilizar para reducir el tiempo de reindexación. La preextracción de texto se puede utilizar con todos los enfoques de reindexación.
 
-Según la variable `oak-run.jar` enfoque de indexación habrá varios pasos a cada lado del paso Realizar reindexación en el diagrama siguiente.
+Según la variable `oak-run.jar` enfoque de indexación, habrá varios pasos a cada lado del paso Realizar reindexación en el diagrama siguiente.
 
 ![Extracción previa de texto para SegmentNodeStore y DocumentNodeStore](assets/4.png)
 
@@ -81,7 +77,7 @@ Según la variable `oak-run.jar` enfoque de indexación habrá varios pasos a ca
 
 AEM Este es el método recomendado para volver a indexar instalaciones de MongoMK (y RDBMK) en el mercado de la distribución de datos (RDBMK). No se debe utilizar ningún otro método.
 
-AEM Este proceso sólo debe ejecutarse con una única instancia de en el clúster.
+AEM Ejecute este proceso sólo con una instancia de la instancia de la instancia de la instancia de la base de datos del clúster.
 
 ![Reindexación en línea para MongoMK o RDBMK con oak-run.jar](assets/5.png)
 
@@ -93,7 +89,7 @@ AEM Este proceso sólo debe ejecutarse con una única instancia de en el clúste
 
 * **Consideraciones sobre el modo de espera en frío (TarMK)**
 
-   * No hay ninguna consideración especial para el modo de espera en frío; las instancias de modo de espera en frío sincronizarán los cambios de la forma habitual.
+   * No hay consideraciones especiales para el modo de espera en frío; las instancias de espera en frío se sincronizan como de costumbre.
 
 * **Publicar granjas AEM (las granjas de publicación AEM siempre deben ser TarMK)**
 
@@ -105,7 +101,7 @@ AEM Este proceso sólo debe ejecutarse con una única instancia de en el clúste
 >
 >Para obtener información más detallada sobre este escenario, consulte [Reindexación en línea - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-Este es el método utilizado antes de la introducción de las nuevas capacidades de indexación de oak-run.jar. Se puede hacer configurando la variable `reindex=true` en el índice Oak.
+Este es el método utilizado antes de la introducción de las nuevas capacidades de indexación de oak-run.jar. Se realiza mediante la configuración de la variable `reindex=true` en el índice Oak.
 
 Este método se puede utilizar si el cliente acepta los efectos de tiempo y rendimiento que se van a indexar. AEM Este suele ser el caso de las instalaciones de pequeñas y medianas dimensiones en el sector de la.
 
@@ -171,12 +167,12 @@ Para obtener más información, consulte la [Documentación de índice seguro de
 
 ### Creación y actualización de definiciones de índice en TarMK mediante oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-Si el tiempo o el impacto en el rendimiento de la reindexación mediante no `oak-run.jar` métodos es demasiado alto, los siguientes `oak-run.jar` AEM Este método basado en puede utilizarse para importar y reindexar definiciones de índice de Lucene en una instalación basada en TarMK de la base de la base de datos de la base de datos de la base de datos de.
+Si el tiempo o el impacto en el rendimiento de la reindexación mediante`oak-run.jar` métodos es demasiado alto, los siguientes `oak-run.jar` AEM Este método basado en puede utilizarse para importar y reindexar definiciones de índice de Lucene en una instalación basada en TarMK de la base de la base de datos de la base de datos de la base de datos de.
 
 ![Creación y actualización de definiciones de índice en TarMK mediante oak-run.jar](assets/10.png)
 
 ### Creación y actualización de definiciones de índice en MonogMK con oak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-Si el tiempo o el impacto en el rendimiento de la reindexación mediante no `oak-run.jar` métodos es demasiado alto, los siguientes `oak-run.jar` AEM Este método basado en puede utilizarse para importar y reindexar definiciones de índice de Lucene en instalaciones basadas en MongoMK, en el que se utilizan diferentes tipos de instalaciones basadas en el índice de Lucene.
+Si el tiempo o el impacto en el rendimiento de la reindexación mediante`oak-run.jar` métodos es demasiado alto, los siguientes `oak-run.jar` AEM Este método basado en puede utilizarse para importar y reindexar definiciones de índice de Lucene en instalaciones basadas en MongoMK, en el que se utilizan diferentes tipos de instalaciones basadas en el índice de Lucene.
 
 ![Creación y actualización de definiciones de índice en MonogMK con oak-run.jar](assets/11.png)

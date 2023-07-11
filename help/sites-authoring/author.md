@@ -1,24 +1,20 @@
 ---
 title: Creación
-seo-title: Authoring
-description: Conceptos sobre la creación de contenido en AEM
-seo-description: Concepts of authoring in AEM
-uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
+description: Conceptos sobre la creación de contenido en Adobe Experience Manager
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 32%
+source-wordcount: '551'
+ht-degree: 20%
 
 ---
 
-# Creación  {#authoring}
+# Creación{#authoring}
 
 ## Concepto de creación (y publicación) {#concept-of-authoring-and-publishing}
 
@@ -29,24 +25,24 @@ AEM La aplicación le proporciona dos entornos:
 
 Interactúan para permitirle ofrecer contenido en su sitio web, de modo que los visitantes puedan leerlo.
 
-El entorno de creación proporciona los mecanismos para crear, actualizar y revisar este contenido antes de publicarlo:
+El entorno de creación ofrece mecanismos para crear, actualizar y revisar el contenido antes de publicarlo:
 
 * Un autor crea y revisa el contenido (que puede ser de varios tipos; por ejemplo, páginas, recursos, publicaciones, etc.)
 * que, en algún momento, se publicará en su sitio web.
 
 ![Información general sobre entornos](assets/chlimage_1-132.png)
 
-AEM En el entorno de creación, la funcionalidad de la creación de informes está disponible a través de dos IU de. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
+AEM En el entorno de creación, la funcionalidad de la creación de informes está disponible a través de dos interfaces de usuario. En el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
 
 ### Entorno de creación {#author-environment}
 
-El creador trabaja en lo que se conoce como **entorno de creación**. Esto proporciona una interfaz fácil de usar (interfaz gráfica de usuario (GUI o IU)) para crear el contenido. Normalmente se encuentra detrás del cortafuegos de una empresa que proporciona protección total y requiere que el autor inicie sesión con una cuenta a la que se le han asignado los derechos de acceso correspondientes.
+El creador trabaja en lo que se conoce como **entorno de creación**. Esto proporciona una interfaz fácil de usar (interfaz gráfica de usuario (GUI o IU)) para crear el contenido. Se encuentra detrás del cortafuegos de una empresa que proporciona protección total y requiere que el autor inicie sesión con una cuenta a la que se le hayan asignado los derechos de acceso correspondientes.
 
 >[!NOTE]
 >
 >Su cuenta necesita los derechos de acceso adecuados para crear, editar o publicar contenido.
 
-Según la configuración de su instancia y sus derechos de acceso personales, puede realizar muchas tareas en el contenido, incluidas (entre otras):
+Según la configuración de la instancia y los derechos de acceso personales, puede realizar muchas tareas en el contenido, entre otras:
 
 * generar contenido nuevo o editar contenido existente en una página
 * usar plantillas predefinidas para crear páginas de contenido nuevo
@@ -57,9 +53,9 @@ Según la configuración de su instancia y sus derechos de acceso personales, pu
 * mover, copiar o eliminar páginas de contenido, recursos, etc
 * publicar (o cancelar la publicación) de páginas, recursos, etc
 
-Asimismo, hay tareas administrativas que le ayudan a administrar su contenido:
+Además, hay tareas administrativas que le ayudan a administrar su contenido:
 
-* flujos de trabajo que controlan cómo se administran los cambios; por ejemplo. aplicación de una revisión antes de la publicación
+* flujos de trabajo que controlan cómo se administran los cambios; por ejemplo, aplicar una revisión antes de la publicación
 * proyectos que coordinan tareas individuales
 
 >[!NOTE]
@@ -85,9 +81,9 @@ AEM Cuando el sitio de la es un [sitio comunitario](/help/communities/overview.m
 >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
->  Son los términos técnicos utilizados para indicar el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
+>  Son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
 >
 
 #### Dispatcher {#dispatcher}
 
-A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) implementa almacenamiento en caché y equilibrio de carga.**
+Para optimizar el rendimiento de los visitantes del sitio web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)** implementa almacenamiento en caché y equilibrio de carga.

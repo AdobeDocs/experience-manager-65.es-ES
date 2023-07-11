@@ -1,17 +1,13 @@
 ---
 title: Recorrido por el sitio de referencia de contratación de empleados
-seo-title: Employee recruitment
 description: El sitio de referencia de AEM Forms muestra cómo las organizaciones pueden utilizar las funciones de AEM Forms para implementar el flujo de trabajo de contratación de empleados.
-seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
-uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -86,13 +82,13 @@ La página de inicio de We.Finance y la página Empleo son páginas de AEM Sites
 
 ### Puede verlo usted mismo {#see-it-yourself}
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` y haga clic en **[!UICONTROL Empleo]**. Haga clic en **[!UICONTROL Buscar]** para rellenar la lista de trabajos y, a continuación, haga clic en **[!UICONTROL Solicitar]** en un trabajo. Rellene los detalles del formulario y envíe la solicitud.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` y haga clic en **[!UICONTROL Empleo]**. Clic **[!UICONTROL Buscar]** para rellenar la lista de trabajos y, a continuación, haga clic en **[!UICONTROL Aplicar]** para un trabajo. Rellene los detalles del formulario y envíe la solicitud.
 
 Asegúrese de especificar un correo electrónico válido en la solicitud, ya que cualquier comunicación a través de este tutorial se enviará al ID de correo electrónico especificado.
 
 ## John Jacobs selecciona el perfil de Sarah Rose como candidata para el administrador de contrataciones {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-La organización recibe la solicitud de empleo presentada por Sarah. A John Jacobs, el reclutador, se le asigna la tarea de revisar el perfil de Sarah. Revisa la tarea en su Bandeja de entrada de AEM, encuentra el perfil que coincide con el requisito del trabajo y hace clic en Seleccionar. El perfil de Sarah se reenvía a Gloria Rios, la administradora de contrataciones, para su aprobación.
+La organización recibe la solicitud de empleo presentada por Sarah. A John Jacobs, el reclutador, se le asigna la tarea de revisar el perfil de Sarah. AEM John revisa la tarea en su bandeja de entrada de la bandeja de entrada de la, encuentra el perfil que coincide con el requisito del trabajo y hace clic en Seleccionar. El perfil de Sarah se reenvía a Gloria Rios, la administradora de contrataciones, para su aprobación.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -116,7 +112,7 @@ Gloria, la administradora de contratación, recibe el perfil preseleccionado com
 
 ![gloriainbox](assets/gloriainbox.png)
 
-Bandeja de entrada de AEM de Gloria
+AEM Bandeja de entrada de de Gloria
 
 ![gloriaschedulesinterview](assets/gloriaschedulesinterview.png)
 
@@ -146,7 +142,7 @@ John Doe programa la entrevista y envía los detalles a Sarah Rose
 
 ## Sarah Rose recibe el correo electrónico con la programación de la entrevista {#sarah-rose-receives-the-email-with-interview-schedule}
 
-Sarah Rose recibe el correo electrónico con la programación de la entrevista, el lugar de celebración y otros detalles. Hace clic en Aceptar para indicar que está de acuerdo con el horario y el lugar de la entrevista. Según la información, Sarah llegará a las entrevistas.
+Sarah Rose recibe el correo electrónico con la programación de la entrevista, el lugar de celebración y otros detalles. Sarah hace clic en Aceptar para indicar que está de acuerdo con el horario y el lugar de la entrevista. Según la información, Sarah llegará a las entrevistas.
 
 ![sarahroseinterviewemail](assets/sarahroseinterviewemail.png)
 
@@ -158,7 +154,7 @@ Después de que Sarah Rose revise las entrevistas y las borre, Gloria Rios, la a
 
 ![gloriariosinboxoffer](assets/gloriariosinboxoffer.png)
 
-Bandeja de entrada de AEM de Gloria
+AEM Bandeja de entrada de de Gloria
 
 ![gloriariosselectcandidate](assets/gloriariosselectcandidate.png)
 
@@ -166,7 +162,7 @@ Gloria Rios selecciona a Sarah Rose después de las entrevistas
 
 ## John Doe solicita más información {#john-doe-requests-more-information}
 
-Antes de pedir a una candidata que se una a la organización, sus antecedentes deben comprobarse. John Doe abre y revisa los detalles de la candidata seleccionada y ve que algunos de sus detalles de empleo y educación todavía no están completos. John Doe hace clic en Necesito más información.
+Antes de pedir a un candidato que se una a la organización, se deben comprobar los antecedentes de Sarah. John Doe abre y revisa los detalles de la candidata seleccionada y ve que algunos de sus detalles de empleo y educación todavía no están completos. John Doe hace clic en Necesito más información.
 
 ![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
@@ -208,7 +204,7 @@ John Jacobs ve la solicitud de comprobación de antecedentes en su bandeja de en
 
 ![johnjacobsbackgroundcheckinbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-Bandeja de entrada de AEM de John Jacobs
+AEM Bandeja de entrada de la página de entrada de de John Jacobs
 
 ![johnjacobsbackgroundcheckgoahead](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -216,7 +212,7 @@ Después de realizar la comprobación de antecedentes, John Jacobs hace clic en 
 
 ## John Doe envía la carta de unión a Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe recibe una solicitud en su Bandeja de entrada de AEM para enviar la carta de unión. John abre la solicitud y ve los detalles. John Doe adjunta el PDF la carta de unión y, a continuación, hace clic en Adjuntar y enviar carta de unión.
+AEM John Doe recibe una solicitud en su Bandeja de entrada de la Bandeja de entrada de para enviar la carta de unión. John abre la solicitud y ve los detalles. John Doe adjunta el PDF la carta de unión y, a continuación, hace clic en Adjuntar y enviar carta de unión.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 

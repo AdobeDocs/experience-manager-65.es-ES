@@ -4,9 +4,9 @@ description: La prueba de Día difícil simula la carga diaria de unos 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 1b92b973209fdbd2509b1c644c1064a1e9224a9e
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1824'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 ## Qué es el Día Duro 2 {#what-is-tough-day}
 
-AEM &quot;Tough Day 2&quot; es una aplicación que te permite probar los límites de tu instancia de. Se puede ejecutar de forma predeterminada con el grupo de pruebas predeterminado o se puede configurar para adaptarse a sus necesidades de prueba. Puedes mirar [esta grabación](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) para una presentación de la solicitud.
+AEM &quot;Tough Day 2&quot; es una aplicación que te permite probar los límites de tu instancia de. Se puede ejecutar de forma predeterminada con el grupo de pruebas predeterminado o se puede configurar para adaptarse a sus necesidades de prueba. Puedes mirar [esta grabación](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) para una presentación de la solicitud.
 
 >[!CAUTION]
 >
->El día 2 difícil requiere Java 8.
+>El día 2 difícil requiere Java™ 8.
 
 ## Cómo correr duro día 2 {#how-to-run-tough-day}
 
@@ -49,7 +49,8 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
->El Día 2 difícil no tiene una etapa de limpieza. Como resultado, se recomienda ejecutar Día difícil 2 en una instancia de ensayo clonada y no en la instancia de producción principal. La instancia de ensayo debe eliminarse después de las pruebas.
+El Día 2 difícil no tiene una etapa de limpieza. Como resultado, se recomienda ejecutar Día difícil 2 en una instancia de ensayo clonada y no en la instancia de producción principal. La instancia de ensayo debe eliminarse después de las pruebas.
+>
 
 ### Obtención de ayuda {#getting-help}
 
@@ -91,22 +92,22 @@ En la tabla siguiente, puede encontrar los parámetros de ayuda relevantes.
   <tr>
    <td> —help —runmode/publishmode type=&lt;mode&gt;</td>
    <td>Muestra información acerca del modo de ejecución o publicación especificado.</td>
-   <td><p>java -jar toughday2.jar —help —runmode type=constantload</p> <p>java -jar toughday2.jar —help —publishmode type=interval</p> </td>
+   <td><p>Java™ -jar toughday2.jar —help —runmode type=constantload</p> <p>Java™ -jar toughday2.jar —help —publishmode type=interval</p> </td>
   </tr>
   <tr>
    <td>—help —suite=&lt;suitename&gt;</td>
    <td>Enumera todas las pruebas de un grupo determinado y sus propiedades configurables respectivas.</td>
-   <td><br /> java -jar toughday2.jar —help —suite=get_tests</td>
+   <td><br /> Java™ -jar toughday2.jar —help —suite=get_tests</td>
   </tr>
   <tr>
    <td> —help —tag=&lt;tag&gt;</td>
    <td><br /> Enumera todos los elementos que tienen la etiqueta especificada.</td>
-   <td>java -jar toughday2.jar —help —tag=publish</td>
+   <td>Java™ -jar toughday2.jar —help —tag=publish</td>
   </tr>
   <tr>
    <td>—help &lt;testclass publisherclass=""&gt;</td>
    <td><br /> Enumera todas las propiedades configurables para la prueba o el publicador determinados.</td>
-   <td><p>java -jar toughday2.jar —help UploadPDFTest</p> <p>java -jar toughday2.jar —help CSVPubpublisher</p> </td>
+   <td><p>Java™ -jar toughday2.jar —help UploadPDFTest</p> <p>Java™ -jar toughday2.jar —help CSVPublisher</p> </td>
   </tr>
  </tbody>
 </table>
@@ -139,7 +140,7 @@ Puede encontrar los parámetros relevantes en la siguiente lista:
 
 ## Personalización {#customizing}
 
-La personalización se puede lograr de dos maneras: parámetros de línea de comandos o archivos de configuración yaml. **Los archivos de configuración generalmente se utilizan para grupos de informes personalizados grandes y anularán los parámetros predeterminados del Día difícil 2. Los parámetros de línea de comandos anulan los archivos de configuración y los parámetros predeterminados.**
+La personalización se puede lograr de dos maneras: parámetros de línea de comandos o archivos de configuración yaml. **Los archivos de configuración se utilizan para grupos de informes personalizados grandes y anulan los parámetros predeterminados de Día difícil 2. Los parámetros de la línea de comandos anulan tanto los archivos de configuración como los parámetros predeterminados.**
 
 La única manera de guardar una configuración de prueba es copiarla en formato yaml.
 
@@ -147,7 +148,7 @@ La única manera de guardar una configuración de prueba es copiarla en formato 
 
 Si no desea utilizar el valor predeterminado `toughday` grupo puede agregar una prueba de su elección utilizando el `add` parámetro. Los ejemplos siguientes muestran cómo añadir la variable `CreateAssetTreeTest` realice pruebas utilizando parámetros de línea de comandos o un archivo de configuración yaml.
 
-Mediante parámetros de línea de comandos:
+Mediante parámetros de la línea de comandos:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest
@@ -166,7 +167,7 @@ tests:
 
 También puede agregar y ejecutar varias instancias de la misma prueba, pero cada una debe tener un nombre único. Los ejemplos siguientes muestran cómo agregar dos instancias de la misma prueba mediante parámetros de línea de comandos o un archivo de configuración yaml.
 
-Mediante parámetros de línea de comandos:
+Mediante parámetros de la línea de comandos:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest name=FirstAssetTree --add CreateAssetTreeTest name=SecondAssetTree
@@ -196,9 +197,9 @@ java -jar toughday2.jar --help CreatePageTreeTest
 
 Tenga en cuenta que los archivos de configuración yaml sobrescribirán los parámetros predeterminados del Día difícil 2 y los parámetros de línea de comandos anularán tanto los archivos de configuración como los valores predeterminados.
 
-Los ejemplos siguientes muestran cómo cambiar el `template` propiedad para `CreatePageTreeTest` realice la prueba utilizando los parámetros de la línea de comandos o un archivo de configuración yaml.
+Los ejemplos siguientes muestran cómo cambiar el `template` propiedad para `CreatePageTreeTest` realice la prueba utilizando parámetros de línea de comandos o un archivo de configuración yaml.
 
-Mediante parámetros de línea de comandos:
+Mediante parámetros de la línea de comandos:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreatePageTreeTest template=/conf/toughday-templates/settings/wcm/templates/toughday-template
@@ -221,7 +222,7 @@ Los ejemplos siguientes muestran cómo añadir una prueba a un grupo predefinido
 
 Puede agregar una nueva prueba a un grupo predefinido utilizando `add` y especificando el grupo de informes predefinido de destino.
 
-Mediante parámetros de línea de comandos:
+Mediante parámetros de la línea de comandos:
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTest
@@ -237,11 +238,11 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Las pruebas existentes en un grupo determinado también se pueden reconfigurar mediante la variable `config`* *parámetro. Tenga en cuenta que también debe especificar el nombre del grupo de informes y el nombre real de la prueba (no el nombre de la clase de prueba). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase Test. Para obtener más información sobre cómo buscar propiedades de prueba, lea la [Cambiar propiedades de prueba](/help/sites-developing/tough-day.md#changing-the-test-properties) sección.
+Las pruebas existentes en un grupo determinado también se pueden reconfigurar mediante la variable `config`* *parámetro. También debe especificar el nombre del grupo de informes y el nombre real de la prueba (no el nombre de la clase de prueba). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase Test. Para obtener más información sobre cómo buscar propiedades de prueba, lea la [Cambiar propiedades de prueba](/help/sites-developing/tough-day.md#changing-the-test-properties) sección.
 
 En el ejemplo siguiente, el título de recurso predeterminado de la variable `CreatePageTreeTest` (denominado `UploadAsset`) se cambia a &quot;Nuevo recurso&quot;.
 
-Mediante parámetros de línea de comandos:
+Mediante parámetros de la línea de comandos:
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --config UploadAsset title=NewAsset
@@ -259,9 +260,9 @@ tests:
       title : NewAsset
 ```
 
-Además, también puede quitar pruebas de grupos de informes predefinidos o editores de la configuración predeterminada con el uso de `exclude` parámetro. Tenga en cuenta que también debe especificar el nombre del grupo de informes y el nombre real de la prueba (no el Test C `lass` nombre). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase test. En el ejemplo siguiente, la variable `CreatePageTreeTest` (denominado `UploadAsset`) la prueba se ha eliminado del grupo toughday.
+Además, también puede quitar pruebas de grupos de informes predefinidos o editores de la configuración predeterminada con el uso de `exclude` parámetro. También debe especificar el nombre del grupo de informes y el nombre real de la prueba (no la prueba C) `lass` nombre). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase test. En el ejemplo siguiente, la variable `CreatePageTreeTest` (denominado `UploadAsset`) la prueba se ha eliminado del grupo toughday.
 
-Mediante parámetros de línea de comandos:
+Mediante parámetros de la línea de comandos:
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --exclude UploadAsset
@@ -306,7 +307,7 @@ El **carga constante** el modo de ejecución difiere del modo de ejecución norm
 
 ### Selección de prueba {#test-selection}
 
-El proceso de selección de pruebas es el mismo para ambos modos de ejecución y funciona de la siguiente manera: todas las pruebas tienen un `weight` , que determina la probabilidad de ejecución en un subproceso. Por ejemplo, si tenemos dos pruebas, una con un peso de 5 y otra con un peso de 10, la última tiene dos veces más probabilidades de ejecutarse que la primera.
+El proceso de selección de pruebas es el mismo para ambos modos de ejecución y funciona de la siguiente manera: todas las pruebas tienen un `weight` , que determina la probabilidad de ejecución en un subproceso. Por ejemplo, si tiene dos pruebas, una con un peso de 5 y otra con un peso de 10, la última tiene dos veces más probabilidades de ejecutarse que la primera.
 
 Además, las pruebas pueden tener un `count` , que limita el número de ejecuciones a un número determinado. Una vez pasado este número, no se producirán más ejecuciones de la prueba. Todas las instancias de prueba que ya se están ejecutando finalizarán la ejecución según lo configurado. El siguiente ejemplo muestra cómo agregar estos parámetros en la línea de comandos o mediante un archivo de configuración yaml.
 
@@ -329,7 +330,7 @@ o
 
 >[!NOTE]
 >
->Debido a las ejecuciones paralelas, el número real de ejecuciones de prueba no será exactamente la cantidad configurada en la `count` parámetro. Esperar una desviación proporcional al número de hilos en ejecución (controlado por el `concurrency parameter`).
+Debido a las ejecuciones paralelas, el número real de ejecuciones de prueba no será exactamente la cantidad configurada en la `count` parámetro. Esperar una desviación proporcional al número de hilos en ejecución (controlado por el `concurrency parameter`).
 
 ### Simulacro {#dry-run}
 
@@ -345,7 +346,7 @@ El Día 2 difícil genera tanto métricas de prueba como registros. Para obtener
 
 ### Métricas de prueba {#test-metrics}
 
-Actualmente, el Día 2 difícil informa de 9 métricas de prueba que puede evaluar. Métricas con el **&#42;** Los símbolos de solo se registran después de ejecuciones correctas:
+Actualmente, el Día 2 difícil informa de nueve métricas de prueba que puede evaluar. Métricas con el **&#42;** Los símbolos de solo se registran después de ejecuciones correctas:
 
 | **Nombre** | **Descripción** |
 |---|---|
@@ -369,14 +370,14 @@ Estas métricas se escriben con la ayuda de editores que se pueden agregar con l
 
 De forma predeterminada, ambos editores están habilitados.
 
-Además, hay dos modos en los que se generan los informes de las métricas:
+Además, hay dos modos en los que se crean los informes de las métricas:
 
 * El **simple** modo de publicación: informa de los resultados desde el principio de la ejecución hasta el momento de la publicación.
 * El **intervalos** modo de publicación: informa de los resultados en un lapso de tiempo determinado. Puede establecer el lapso de tiempo con **intervalo** parámetro de modo de publicación.
 
 El siguiente ejemplo muestra cómo configurar la variable `intervals` parámetro en la línea de comandos o utilizando un archivo de configuración yaml.
 
-Mediante parámetros de línea de comandos:
+Mediante parámetros de la línea de comandos:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreatePageTreeTest --publishmode type=intervals interval=10s
@@ -399,7 +400,7 @@ Día difícil 2 crea una carpeta de registros en el mismo directorio en el que e
 * **toughday.log**: contiene mensajes relacionados con el estado de la aplicación, la información de depuración y los mensajes globales.
 * **toughday_&lt;testname>.log**: mensajes relacionados con la prueba especificada.
 
-Los registros no se sobrescriben, las ejecuciones posteriores adjuntarán mensajes a los registros existentes. Los registros tienen varios niveles. Para obtener más información, consulte la ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+Los registros no se sobrescriben, las ejecuciones posteriores anexan mensajes a los registros existentes. Los registros tienen varios niveles. Para obtener más información, consulte la ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
 <!--
 #### Example Usage {#example-usage}

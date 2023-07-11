@@ -1,18 +1,14 @@
 ---
 title: 'Modelado de datos: el modelo de David Nuescheler'
-seo-title: Data Modeling - David Nuescheler's Model
 description: Recomendaciones de modelado de contenido de David Nuescheler
-seo-description: David Nuescheler's content modelling recommendations
-uuid: acb27e81-9143-4e0d-a37a-ba26491a841f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -23,17 +19,17 @@ ht-degree: 0%
 
 Los siguientes detalles son ideas y comentarios expresados por David Nuescheler.
 
-David fue cofundador y director de tecnología de Day Software AG, un proveedor líder de software de gestión de contenido global e infraestructura de contenido, adquirido por Adobe en 2010. Ahora es miembro y vicepresidente de tecnología empresarial en Adobe y también dirige el desarrollo de JSR-170, la interfaz de programación de aplicaciones (API) del repositorio de contenido Java (JCR), el estándar tecnológico para la administración de contenido.
+David fue cofundador y director de tecnología de Day Software AG, un proveedor líder de software de gestión de contenido global e infraestructura de contenido, que fue adquirido por Adobe en 2010. Ahora es miembro y vicepresidente de tecnología empresarial en Adobe y también dirige el desarrollo de JSR-170, la interfaz de programación de aplicaciones (API) del repositorio de contenido Java™ (JCR), el estándar tecnológico para la administración de contenido.
 
 También se pueden ver más actualizaciones en [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Introducción de David {#introduction-from-david}
 
-En varias discusiones encontré que los desarrolladores están un poco incómodos con las características y funcionalidades presentadas por JCR cuando se trata de modelado de contenido. Todavía no hay ninguna guía y poca experiencia sobre cómo modelar contenido en un repositorio y por qué un modelo de contenido es mejor que otro.
+En varias discusiones, descubrí que los desarrolladores están un poco incómodos con las características y funcionalidades presentadas por JCR al modelar contenido. Todavía no hay ninguna guía y poca experiencia sobre cómo modelar contenido en un repositorio y por qué un modelo de contenido es mejor que otro.
 
-Mientras que en el mundo relacional la industria del software tiene mucha experiencia en cómo modelar datos, todavía estamos en las primeras etapas para el espacio del repositorio de contenido.
+Mientras que en el mundo relacional, la industria del software tiene mucha experiencia en cómo modelar datos, todavía estamos en las primeras etapas para el espacio del repositorio de contenido.
 
-Me gustaría empezar a llenar este vacío expresando mis opiniones personales sobre cómo se debe modelar el contenido, con la esperanza de que esto algún día podría graduarse en algo más significativo para la comunidad de desarrolladores, que no es solo &quot;mi opinión&quot;, sino algo que es más aplicable en general. Así que consideremos esto como mi primera puñalada que evoluciona rápidamente.
+Me gustaría empezar a llenar este vacío expresando mis opiniones sobre cómo se debe modelar el contenido, con la esperanza de que esto algún día podría graduarse en algo más significativo para la comunidad de desarrolladores, que no es solo &quot;mi opinión&quot;, sino algo que es más aplicable en general. Así que consideremos esto como mi primera puñalada que evoluciona rápidamente.
 
 >[!NOTE]
 >
@@ -51,7 +47,7 @@ Aprende a amar a nt:unstructured (&amp; amigos) en el desarrollo.
 
 Creo que Stefano lo resume todo.
 
-Mi conclusión: La estructura es costosa y en muchos casos es totalmente innecesario declarar explícitamente la estructura al almacenamiento subyacente.
+Mi conclusión: La estructura es costosa y a menudo es totalmente innecesario declarar explícitamente la estructura al almacenamiento subyacente.
 
 Existe un contrato implícito sobre la estructura que la aplicación utiliza de forma inherente. Supongamos que almacenamos la fecha de modificación de una publicación de blog en una propiedad lastModified. Mi aplicación sabrá automáticamente volver a leer la fecha de modificación de esa misma propiedad, no es necesario declararla explícitamente.
 
@@ -65,9 +61,9 @@ El ejemplo anterior de uso de una `lastModified` La propiedad de fecha en, por e
 
 #### Explicación {#explanation-2}
 
-La jerarquía de contenido es un recurso muy valioso. Así que no dejes que suceda, diseña. Si no tiene un nombre &quot;bueno&quot; y legible en lenguaje natural para un nodo, probablemente sea algo que debería reconsiderar. Los números arbitrarios rara vez son un &quot;buen nombre&quot;.
+La jerarquía de contenido es un recurso valioso. Así que no dejes que suceda, diseña. Si no tiene un nombre &quot;bueno&quot; y legible en lenguaje natural para un nodo, probablemente sea algo que debería reconsiderar. Los números arbitrarios rara vez son un &quot;buen nombre&quot;.
 
-Si bien puede ser extremadamente fácil poner rápidamente un modelo relacional existente en un modelo jerárquico, uno debe poner algo de pensamiento en ese proceso.
+Si bien puede ser fácil poner rápidamente un modelo relacional existente en un modelo jerárquico, uno debe poner algo de pensamiento en ese proceso.
 
 En mi experiencia, si se piensa en el control de acceso y la contención, normalmente son buenos controladores para la jerarquía de contenido. Piense en ello como si fuera su sistema de archivos. Puede incluso utilizar archivos y carpetas para modelarlo en el disco local.
 
@@ -75,13 +71,13 @@ Personalmente, prefiero las convenciones de jerarquía sobre el sistema de escri
 
 >[!CAUTION]
 >
->La forma en que se estructura un repositorio de contenido también puede afectar al rendimiento. Para obtener el mejor rendimiento, el número de nodos secundarios adjuntos a nodos individuales en un repositorio de contenido no debe exceder generalmente de 1000.
+>La forma en que se estructura un repositorio de contenido también puede afectar al rendimiento. Para obtener el mejor rendimiento, el número de nodos secundarios adjuntos a nodos individuales en un repositorio de contenido no debe superar 1000.
 >
 >Consulte [¿Cuántos datos puede gestionar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) para obtener más información.
 
 #### Ejemplos {#example-2}
 
-Yo modelaría un sistema simple de blogueo de la siguiente manera. Tenga en cuenta que al principio ni siquiera me importan los tipos de nodos respectivos que utilizo en este punto.
+Yo modelaría un sistema simple de blogueo de la siguiente manera. Tenga en cuenta que inicialmente no me importan los tipos de nodos respectivos que utilizo en este punto.
 
 ```xml
 /content/myblog
@@ -107,13 +103,13 @@ Si no utiliza el `clone()`, `merge()` o `update()` en su aplicación, un solo es
 
 &quot;Nodos correspondientes&quot; es un concepto definido en la especificación JCR. Básicamente, se reduce a nodos que representan el mismo contenido, en diferentes espacios de trabajo.
 
-JCR introduce el concepto muy abstracto de espacios de trabajo, lo que deja a muchos desarrolladores sin saber qué hacer con ellos. Me gustaría proponer poner su uso de espacios de trabajo a lo siguiente para probar.
+JCR introduce el concepto abstracto de espacios de trabajo, lo que deja a muchos desarrolladores sin saber qué hacer con ellos. Me gustaría proponer poner su uso de espacios de trabajo a lo siguiente para probar.
 
 Si tiene una superposición considerable de nodos &quot;correspondientes&quot; (esencialmente los nodos con el mismo UUID) en varios espacios de trabajo, probablemente haga un buen uso de los espacios de trabajo.
 
 Si no hay superposición de nodos con el mismo UUID, probablemente esté abusando de los espacios de trabajo.
 
-Los espacios de trabajo no deben utilizarse para el control de acceso. La visibilidad del contenido para un grupo particular de usuarios no es un buen argumento para separar cosas en diferentes espacios de trabajo. JCR incluye &quot;Control de acceso&quot; en el repositorio de contenido para proporcionarlo.
+No utilice espacios de trabajo para el control de acceso. La visibilidad del contenido para un grupo particular de usuarios no es un buen argumento para separar cosas en diferentes espacios de trabajo. JCR incluye &quot;Control de acceso&quot; en el repositorio de contenido para proporcionarlo.
 
 Los espacios de trabajo son el límite para referencias y consultas.
 
@@ -134,7 +130,7 @@ No utilice espacios de trabajo para tareas como las siguientes:
 
 #### Explicación {#explanation-4}
 
-Aunque se han introducido los hermanos del mismo nombre (SNS) en las especificaciones para permitir la compatibilidad con estructuras de datos diseñadas y expresadas a través de XML y, por lo tanto, son extremadamente valiosas para JCR, los SNS incluyen una carga y complejidad sustanciales para el repositorio.
+Aunque se han introducido los hermanos del mismo nombre (SNS) en las especificaciones para permitir la compatibilidad con estructuras de datos diseñadas y expresadas a través de XML y que, por lo tanto, son valiosas para JCR, SNS viene con una sobrecarga y complejidad sustanciales para el repositorio.
 
 Cualquier ruta al repositorio de contenido que contenga un SNS en uno de sus segmentos de ruta se vuelve mucho menos estable; si se elimina o reordena un SNS, afecta a las rutas de todos los demás SNS y sus elementos secundarios.
 
@@ -149,7 +145,7 @@ Uso
 /content/myblog/posts/iphone_shipping
 ```
 
-en lugar de
+En lugar de
 
 ```xml
 /content/blog[1]/post[1]
@@ -160,7 +156,7 @@ en lugar de
 
 #### Explicación {#explanation-5}
 
-Las referencias implican integridad referencial. Considero importante comprender que las referencias no solo añaden un coste adicional para el repositorio que gestiona la integridad referencial, sino que también son costosas desde el punto de vista de la flexibilidad del contenido.
+Las referencias implican integridad referencial. Considero importante comprender que las referencias no solo añaden un coste adicional para el repositorio que administra la integridad referencial, sino que también son costosas desde la perspectiva de la flexibilidad del contenido.
 
 Personalmente, me aseguro de usar solo referencias cuando realmente no puedo lidiar con una referencia colgada y, de lo contrario, uso una ruta, un nombre o un UUID de cadena para hacer referencia a otro nodo.
 
@@ -176,13 +172,13 @@ Creo que hay casos de uso en los que un sistema no puede funcionar si una refere
 
 #### Explicación {#explanation-6}
 
-Si un modelo de contenido expone algo que incluso de forma remota *olores* como un archivo o una carpeta que intento usar (o ampliar desde) `nt:file`, `nt:folder` y `nt:resource`.
+Si un modelo de contenido expone algo que incluso huele remotamente como un archivo o una carpeta, intento usar (o ampliar desde) `nt:file`, `nt:folder`, y `nt:resource`.
 
-En mi experiencia, muchas aplicaciones genéricas permiten la interacción con nt:folder y nt:files implícitamente y saben cómo manejar y mostrar esos eventos si están enriquecidos con metainformación adicional. Por ejemplo, una interacción directa con implementaciones de servidor de archivos como CIFS o WebDAV ubicadas encima de JCR quedan implícitas.
+En mi experiencia, muchas aplicaciones genéricas permiten la interacción con nt:folder y nt:files implícitamente y saben cómo manejar y mostrar esos eventos si están enriquecidos con metainformación adicional. Por ejemplo, una interacción directa con implementaciones de servidor de archivos como CIFS o WebDAV ubicadas encima de JCR se vuelve implícita.
 
-Creo que como buena regla general se podría utilizar lo siguiente: Si necesita almacenar el nombre de archivo y el tipo MIME, entonces `nt:file`/ `nt:resource` es un muy buen partido. Si puede tener varios &quot;archivos&quot;, nt:folder es un buen lugar para almacenarlos.
+Creo que como buena regla general se podría utilizar lo siguiente: Si debe almacenar el nombre de archivo y el tipo MIME, entonces `nt:file`/ `nt:resource` es una buena coincidencia. Si puede tener varios &quot;archivos&quot;, nt:folder es un buen lugar para almacenarlos.
 
-Si necesita añadir información meta para el recurso, por ejemplo, una propiedad &quot;author&quot; o &quot;description&quot;, amplíe `nt:resource` no el `nt:file`. Rara vez extiendo nt:file y con frecuencia extiendo `nt:resource`.
+Si debe añadir información meta para el recurso, por ejemplo, una propiedad &quot;author&quot; o &quot;description&quot;, amplíe `nt:resource` no el `nt:file`. Rara vez extiendo nt:file y con frecuencia extiendo `nt:resource`.
 
 #### Ejemplos {#example-6}
 
@@ -192,9 +188,9 @@ Supongamos que alguien desea cargar una imagen en una entrada de blog en:
 /content/myblog/posts/iphone_shipping
 ```
 
-y tal vez la reacción intestinal inicial sería agregar una propiedad binaria que contenga la imagen.
+Y tal vez la reacción intestinal inicial sería agregar una propiedad binaria que contenga la imagen.
 
-Aunque ciertamente hay buenos casos de uso para utilizar solo una propiedad binaria (digamos que el nombre es irrelevante y el tipo MIME está implícito) en este caso recomendaría la siguiente estructura para mi ejemplo de blog.
+Aunque ciertamente hay buenos casos de uso para utilizar solo una propiedad binaria (digamos que el nombre es irrelevante y el tipo MIME está implícito), en este caso recomiendo la siguiente estructura para mi ejemplo de blog.
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments [nt:folder]
@@ -208,13 +204,13 @@ Aunque ciertamente hay buenos casos de uso para utilizar solo una propiedad bina
 
 En las bases de datos relacionales, los ID son un medio necesario para expresar relaciones, por lo que las personas también tienden a utilizarlos en modelos de contenido. Principalmente por las razones equivocadas a través de.
 
-Si el modelo de contenido está lleno de propiedades que terminan en &quot;Id&quot;, probablemente no esté aprovechando la jerarquía correctamente.
+Si el modelo de contenido está lleno de propiedades que terminan en &quot;Id&quot;, es probable que no esté utilizando la jerarquía correctamente.
 
 Es cierto que algunos nodos necesitan una identificación estable a lo largo de su ciclo de vida. Mucho menos de lo que se podría pensar. mix: referenciable proporciona un mecanismo de este tipo integrado en el repositorio, por lo que no es necesario idear un medio adicional para identificar un nodo de forma estable.
 
-Tenga también en cuenta que los elementos se pueden identificar por ruta, y tanto como los &quot;enlaces simbólicos&quot; tienen más sentido para la mayoría de los usuarios que los enlaces duros en un sistema de archivos unix, una ruta tiene sentido para la mayoría de las aplicaciones para hacer referencia a un nodo de destino.
+Tenga en cuenta también que los elementos se pueden identificar por ruta. Y, a pesar de que los &quot;enlaces simbólicos&quot; tienen mucho más sentido para la mayoría de los usuarios que los enlaces duros en un sistema de archivos UNIX®, una ruta tiene sentido para la mayoría de las aplicaciones para referirse a un nodo de destino.
 
-Más importante aún, lo es **mezclar**: referenciable, lo que significa que se puede aplicar a un nodo en el momento en que realmente necesita hacer referencia a él.
+Más importante aún, lo es **mezclar**: referenciable, lo que significa que se puede aplicar a un nodo en el momento en que realmente debe hacer referencia a él.
 
 Por lo tanto, supongamos que simplemente porque desee poder hacer referencia a un nodo de tipo &quot;Documento&quot; no significa que el tipo de nodo &quot;Documento&quot; tenga que extenderse desde mix:referenceable de forma estática, ya que se puede agregar dinámicamente a cualquier instancia del &quot;Documento&quot;.
 
@@ -226,7 +222,7 @@ Uso:
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
 ```
 
-en lugar de:
+En lugar de:
 
 ```xml
 [Blog]
