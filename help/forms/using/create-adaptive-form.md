@@ -8,10 +8,10 @@ uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 100%
+source-wordcount: '1380'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Cuando se sigue un proceso adecuado, es más fácil crear y administrar formular
 * [Previsualizar y enviar un formulario adaptable](/help/forms/using/create-adaptive-form.md)
 
 Al final del artículo tendrá un formulario similar al siguiente:\
-[![](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
+[![Vista previa de formulario en dispositivos móviles](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
 
 ## Paso 1: Crear el formulario adaptable {#step-create-the-adaptive-form}
 

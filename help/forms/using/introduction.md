@@ -10,10 +10,10 @@ discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Los formularios HTML5 son una nueva capacidad del software Adobe Experience Ma
 
 Los formularios HTML5 generan documentos basados en construcciones HTML5 estándares. Puede ver los formularios HTML5 en todos los navegadores modernos compatibles con HTML5. No es necesario instalar ningún complemento de explorador adicional en los exploradores. Para obtener más información sobre los exploradores compatibles, consulte [Plataformas de cliente compatibles](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
-![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![Previsualización de formulario de HTML5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Capacidades clave de los formularios HTML5 {#key-capabilities-of-html-forms-br}
 

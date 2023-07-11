@@ -10,10 +10,10 @@ discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -93,6 +93,7 @@ Ejecute los siguientes pasos para crear una plantilla XDP para el canal Imprimir
 
       * Gastos
       * Gráficos
+
    * ItemisedCalls
    * PayNow
    * ValueAddedServices
@@ -162,6 +163,7 @@ Para crear un fragmento de diseño para el canal Imprimir de la comunicación in
    1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo**.
 
    1. Pulse **Guardar**.
+
    Una vez creada una plantilla XDP para el fragmento de diseño con Forms Designer, debe [cargarla](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) en el servidor de AEM Forms para que la plantilla esté disponible para usarla durante la creación de fragmentos de diseño.
 
 ## Crear una plantilla para el canal Web {#create-template-for-web-channel}
@@ -231,7 +233,7 @@ Siga estos pasos para crear una plantilla para el canal Web en la carpeta **Crea
    1. Especifique **Detalles de la factura** en el campo Título.
    1. Seleccione **1** de la lista desplegable **Número de columnas**.
 
-   1. Pulse ![](/help/forms/using/assets/done_icon.png) para guardar las propiedades.
+   1. Pulse ![Guardar](/help/forms/using/assets/done_icon.png) para guardar las propiedades.
 
    El nombre del panel se actualiza a **Detalles de la factura** en el árbol de contenido.
 
@@ -275,4 +277,4 @@ En función del caso de uso, debe incluir los botones **Pagar ahora** y **Suscri
 
    ![Componentes permitidos](assets/allowed_components_af_new.png)
 
-1. Pulse ![done_icon](assets/done_icon.png) para guardar las propiedades.
+1. Tocar ![guardar](assets/done_icon.png) para guardar las propiedades.

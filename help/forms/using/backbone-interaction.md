@@ -10,10 +10,10 @@ topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '438'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ En la vista de Backbone, hay un mapa de eventos que asigna los distintos eventos
 
 Cuando se inicializa una vista, esta llama a su modelo correspondiente para recuperar datos del servidor. Una vez que todos los datos requeridos por una vista estén disponibles, la vista procesará los datos en el formato especificado por la plantilla HTML. Varias vistas pueden compartir el mismo modelo para la comunicación.
 
-![](do-not-localize/aem_forms_workflow.png)
+![AEM vista de Backbone de formularios](do-not-localize/aem_forms_workflow.png)
 
 Un ejemplo:
 

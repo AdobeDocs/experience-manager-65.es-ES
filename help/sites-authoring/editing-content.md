@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3082'
-ht-degree: 42%
+source-wordcount: '3080'
+ht-degree: 43%
 
 ---
 
@@ -40,7 +40,7 @@ El contenido se añade mediante [componentes](/help/sites-authoring/default-comp
 
 La barra de herramientas de página ofrece acceso a las funciones correspondientes, en función de la configuración de la página.
 
-![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
+![Barra de herramientas de página](assets/screen_shot_2018-03-22at111338.png)
 
 La barra de herramientas ofrece acceso a numerosas opciones. Según el contexto y la configuración actuales, algunas opciones pueden no estar disponibles.
 
@@ -66,25 +66,25 @@ La barra de herramientas ofrece acceso a numerosas opciones. Según el contexto 
 
   Abre el [Context Hub](/help/sites-authoring/ch-previewing.md). Solo está disponible en el modo de vista previa.
 
-  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![Context Hub](assets/screen_shot_2018-03-22at111543.png)
 
 * **Título de página**
 
   Esto es puramente informativo.
 
-  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![Título de página](assets/screen_shot_2018-03-22at111554.png)
 
 * **Selector de modo**
 
   Muestra el actual [modo](/help/sites-authoring/author-environment-tools.md#page-modes) y permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
 
-  ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![Selector de modo](assets/chlimage_1-120.png)
 
 * **Vista previa**
 
   Habilita [modo de previsualización](/help/sites-authoring/editing-content.md#preview-mode). Esto muestra la página tal como aparecerá cuando se publique.
 
-  ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![Modo de vista previa](assets/chlimage_1-121.png)
 
 * **Anotar**
 
@@ -96,7 +96,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. Según el contexto 
 
 Si una página es parte de uno o varios [flujos de trabajo](/help/sites-authoring/workflows.md), esta información se muestra en una barra de notificación situada en la parte superior de la pantalla cuando edita la página.
 
-![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
+![notificación de flujos de trabajo](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Completar y delegar los pasos del flujo de trabajo mediante la barra de notifica
 
 Si la página está sujeta a varios flujos de trabajo, el número de los mismos se muestra en el extremo derecho de la notificación, junto a dos botones de flecha que permiten desplazarse por los flujos de trabajo.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![Notificación del número de flujos de trabajo](assets/chlimage_1-122.png)
 
 ## Marcador de posición de componente {#component-placeholder}
 
@@ -122,11 +122,11 @@ El marcador de posición de componente es un indicador que muestra dónde se col
 
 * Al añadir un componente nuevo a la página (arrastrando desde el explorador de componentes):
 
-  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![adición de un nuevo componente](assets/screen_shot_2018-03-22at111928.png)
 
 * Al mover un componente existente:
 
-  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![mover un componente existente](assets/screen_shot_2018-03-22at112445.png)
 
 ## Insertar un componente {#inserting-a-component}
 
@@ -153,13 +153,13 @@ Puede agregar un componente nuevo mediante el cuadro **Arrastrar componentes aqu
 
    * Seleccione el **Insertar componente** opción (+) de la barra de herramientas de un componente existente o de la **Arrastre los componentes aquí** cuadro.
 
-   ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
+   ![Insertar selección de componentes](assets/screen_shot_2018-03-22at112536.png)
 
    * En un dispositivo de escritorio puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
 
    Se abrirá el cuadro de diálogo **Insertar nuevo componente** para que pueda seleccionar el componente requerido: 
 
-   ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
+   ![Insertar nuevo componente](assets/screen_shot_2018-03-22at112650.png)
 
 1. El componente seleccionado se agregará a la parte inferior de la página. [Editar](#editmovecopypastedelete) Seleccione el componente según sea necesario.
 
@@ -218,7 +218,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 Si al examinar los recursos descubre que necesita realizar algún cambio rápido en alguno de ellos, puede iniciar el [editor de recursos](/help/assets/manage-assets.md) directamente desde el explorador, haciendo clic en el icono de edición situado junto al nombre del recurso.
 
-![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
+![icono de edición](assets/screen_shot_2018-03-22at112735.png)
 
 ## Editar/Configurar/Copiar/Cortar/Eliminar/Pegar {#edit-configure-copy-cut-delete-paste}
 
@@ -226,7 +226,7 @@ Si se selecciona un componente, se abrirá la barra de herramientas, que proporc
 
 Las acciones disponibles para el usuario se mostrarán según corresponda y es posible que no todas las acciones se describan aquí.
 
-![screen_shot_2018-03-22at112909](assets/screen_shot_2018-03-22at112909.png)
+![opciones de barra de herramientas de componentes](assets/screen_shot_2018-03-22at112909.png)
 
 * **Editar**
 
@@ -250,7 +250,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
   Esto copiará el componente en el portapapeles. Después de la acción de pegar, se eliminará el componente original.
 
-  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![Cortar](assets/screen_shot_2018-03-22at113007.png)
 
 * **Eliminar**
 
@@ -272,7 +272,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
    * El elemento pegado se pegará encima del elemento donde seleccione la acción de pegado.
    * La acción Pegar solo se mostrará si hay contenido en el portapapeles.
 
-  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![Pegar](assets/screen_shot_2018-03-22at113553.png)
 
   >[!NOTE]
   >
@@ -288,7 +288,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
   Permite seleccionar el componente principal del componente seleccionado.
 
-  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![Principal](assets/screen_shot_2018-03-22at113028.png)
 
 * **Diseño**
 
@@ -317,11 +317,11 @@ Las opciones de edición exactas dependerán del componente. Para algunos compon
 
 * [Componente de texto](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![Componente de texto](assets/screen_shot_2018-03-22at120215.png)
 
 * Componente de imagen
 
-  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![Componente de imagen](assets/screen_shot_2018-03-22at120252.png)
 
   >[!NOTE]
   >
@@ -334,11 +334,11 @@ Las opciones de edición exactas dependerán del componente. Para algunos compon
 
   [La introducción del modo de pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para el componente de imagen permite disponer de más espacio para editar la imagen y mostrar opciones de edición adicionales como **Iniciar mapa** y **Restablecer zoom**. Además, la pantalla completa permite seleccionar ajustes preestablecidos de recorte.
 
-  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![Pantalla completa de componente de imagen](assets/screen_shot_2018-03-22at120529.png)
 
 * Componentes construidos a partir de más de un componente básico, como [Componente de base Texto e imagen](/help/sites-authoring/default-components-foundation.md#text-image), primero pídale que confirme qué conjunto de opciones de edición desea utilizar:
 
-  ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![Opciones de edición de componentes](assets/chlimage_1-123.png)
 
 ### Arrastrar y colocar recursos en un componente {#drag-and-drop-assets-into-component}
 
@@ -360,7 +360,7 @@ Se puede acceder y salir del modo de pantalla completa de todos los componentes 
 
 Por ejemplo, el componente **Texto**:
 
-![screen_shot_2018-03-22at121616](assets/screen_shot_2018-03-22at121616.png)
+![Editor de texto](assets/screen_shot_2018-03-22at121616.png)
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ Para mover un componente de párrafo:
 1. Seleccione el párrafo que desea mover pulsando y manteniendo pulsado o pulsando y manteniendo pulsado.
 1. Arrastre el párrafo a la nueva ubicación. AEM Indica dónde se puede depositar el párrafo. Colóquelo en la ubicación que desee.
 
-   ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
+   ![mover componente de párrafo](assets/screen_shot_2018-03-22at121821.png)
 
 1. Se mueve el párrafo.
 
@@ -387,7 +387,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-au
 
 1. En el modo de **edición** de la consola del sitio, si se selecciona un componente, aparece su barra de herramientas.
 
-   ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
+   ![Modo de edición en el formulario](assets/screen_shot_2018-03-22at133756.png)
 
    Pulse o haga clic en la acción **Diseño** para ajustar el diseño del componente.
 
@@ -399,7 +399,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-au
    * La barra de herramientas del emulador se muestra en la parte superior de la pantalla.
    * Las acciones de diseño en lugar de las acciones de edición estándar se muestran en la barra de herramientas de componentes.
 
-   ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
+   ![Vista previa de formularios en varios dispositivos](assets/screen_shot_2018-03-22at133843.png)
 
    Ahora puede modificar el diseño del componente como haría en el [modo de diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -427,7 +427,7 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
   La barra de herramientas de componentes, si el componente se encuentra en una página que forma parte de una Live Copy o Launch (basado en una Live Copy). Por ejemplo:
 
-  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy   ](assets/screen_shot_2018-03-22at134339.png)
 
   La opción Cancelar herencia está disponible:
 
@@ -445,7 +445,7 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
   El cuadro de diálogo Configuración. Por ejemplo, como con el sistema de párrafos heredados:
 
-  ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![Sistema de párrafos heredado](assets/chlimage_1-124.png)
 
 ## Edición de las plantilla de página {#editing-the-page-template}
 
@@ -464,7 +464,7 @@ El [Modo de página Estado de Live Copy](/help/sites-authoring/author-environmen
 
 Por ejemplo:
 
-![screen_shot_2018-03-22at134820](assets/screen_shot_2018-03-22at134820.png)
+![Estado de herencia de Live Copy](assets/screen_shot_2018-03-22at134820.png)
 
 ## Agregar anotaciones {#adding-annotations}
 
@@ -499,7 +499,7 @@ Al editar contenido, puede obtener una vista previa de la página mediante la vi
 
 Durante la creación, el modo de vista previa está disponible mediante el icono situado en la parte superior derecha del editor de páginas:
 
-![chlimage_1-125](assets/chlimage_1-125.png)
+![Vista previa](assets/chlimage_1-125.png)
 
 ### Ver como aparece publicado {#view-as-published}
 
@@ -516,7 +516,7 @@ Las páginas se pueden bloquear desde las ubicaciones siguientes:
    1. Seleccione la página con [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Seleccione el icono de bloqueo.
 
-  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![Icono de bloqueo](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
@@ -525,7 +525,7 @@ Las páginas se pueden bloquear desde las ubicaciones siguientes:
 
 Una vez bloqueada, se actualiza la información de la vista de la consola y, al editar, se muestra un símbolo de bloqueo en la barra de herramientas.
 
-![screen_shot_2018-03-22at135010](assets/screen_shot_2018-03-22at135010.png)
+![Símbolo de bloqueo](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
@@ -539,7 +539,7 @@ Desbloquear una página es muy similar a [bloquearla](#locking-a-page). Cuando u
 
 El menú Información de página muestra la opción **Desbloquear** y el icono Bloquear de la consola Sitios se reemplaza con el icono **Desbloquear**.
 
-![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
+![Desbloquear](assets/screen_shot_2018-03-22at134942.png)
 
 >[!CAUTION]
 >

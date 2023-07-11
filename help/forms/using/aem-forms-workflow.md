@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3681'
-ht-degree: 100%
+source-wordcount: '3682'
+ht-degree: 99%
 
 ---
 
 # Flujo de trabajo centrado en Forms en OSGi{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![imagen de héroe](do-not-localize/header.png)
 
 Las empresas recopilan datos de cientos y miles de formularios, varios sistemas back-end y fuentes de datos en línea o sin conexión. También tienen un conjunto dinámico de usuarios para tomar decisiones sobre los datos, lo que implica procesos de revisión y aprobación iterativos.
 
@@ -236,7 +236,7 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
   </tr>
   <tr>
    <td><span class="uicontrol">Procesar archivos mediante</code></td>
-   <td>Seleccione la opción <span class="uicontrol">Flujo de trabajo </code>. </code></td>
+   <td>Seleccione el <span class="uicontrol">Flujo de trabajo </code>JVM. </td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modelo de flujo de trabajo</code></td>

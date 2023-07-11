@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 100%
+source-wordcount: '1718'
+ht-degree: 84%
 
 ---
 
@@ -393,163 +393,163 @@ Debe ser miembro del grupo [forms-power-user](forms-groups-privileges-tasks.md) 
   </tr>
   <tr>
    <td>Campo de texto</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Campo numérico</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Stepper numérico</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Botón de opción</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Teléfono</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Interruptor</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Botón</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
   </tr>
   <tr>
    <td>Casilla de verificación</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Lista desplegable</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Opción de imagen</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Campo de introducción de fecha</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Selector de fecha</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Correo electrónico</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Archivo adjunto</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Imagen</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -558,9 +558,9 @@ Debe ser miembro del grupo [forms-power-user](forms-groups-privileges-tasks.md) 
   </tr>
   <tr>
    <td>Dibujo</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -569,9 +569,9 @@ Debe ser miembro del grupo [forms-power-user](forms-groups-privileges-tasks.md) 
   </tr>
   <tr>
    <td>Panel</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Icono de verificación Sí" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>

@@ -10,16 +10,16 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 99%
 
 ---
 
 # Tutorial: Publicar un formulario adaptable {#tutorial-publish-your-adaptive-form}
 
-![](do-not-localize/13-publish-your-adaptive-form-small.png)
+![Hero-image](do-not-localize/13-publish-your-adaptive-form-small.png)
 
 Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Se recomienda seguir la serie en orden cronológico para comprender, realizar y mostrar el caso de uso del tutorial completo.
 
@@ -69,7 +69,8 @@ AEM [!DNL Forms] proporciona un componente, el Contenedor de AEM [!DNL Forms],
    * Si ha modificado únicamente el formulario incrustado en una página de Sites ya publicada, publique el formulario original, y los cambios se reflejarán en la página de Sites publicada. La página de Sites publicada contiene una referencia al formulario, y no es necesario que vuelva a publicarla.
    * Si modifica la página de [!DNL Sites] y el formulario incrustado, vuelva a publicar la página de [!DNL Sites] y el formulario.
 
-      ![incrustado-en-aem-sites](assets/embed-in-aem-sites.png)
+     ![incrustado-en-aem-sites](assets/embed-in-aem-sites.png)
+
    Formulario Cambio de la dirección de envío y facturación añadido a una página de AEM [!DNL Sites].
 
 ## Incrustar el formulario adaptable en una página web externa {#embed-the-adaptive-form-in-an-external-webpage}

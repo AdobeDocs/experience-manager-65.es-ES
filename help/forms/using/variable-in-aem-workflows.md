@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2208'
-ht-degree: 95%
+source-wordcount: '2209'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ Necesita el [Paquete de complementos para AEM Forms](https://helpx.adobe.com/es/
 
 Siga estos pasos para crear una variable:
 
-1. En una instancia de AEM, navegue hasta Herramientas ![](/help/forms/using/assets/hammer.png) > Flujo de trabajo > Modelos.
+1. AEM En una instancia de, vaya a Herramientas ![Herramientas](/help/forms/using/assets/hammer.png) > Flujo de trabajo > Modelos.
 1. Pulse **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y pulse **[!UICONTROL Editar]**.
 1. Pulse el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y pulse **[!UICONTROL Agregar variable]**.
 

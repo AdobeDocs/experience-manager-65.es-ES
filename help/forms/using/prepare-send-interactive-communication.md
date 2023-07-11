@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 100%
+source-wordcount: '2022'
+ht-degree: 99%
 
 ---
 
@@ -75,6 +75,7 @@ En la pestaña Contenido, administre el contenido de la comunicación interactiv
 
       * [Copiar y pegar texto con formato de otras aplicaciones](#pasteformattedtext)
       * [Resaltar fragmentos del texto](#highlightemphasize)
+
    * [Caracteres especiales](#specialcharacters)
    * [Métodos abreviados de teclado](/help/forms/using/keyboard-shortcuts.md)
 
@@ -147,7 +148,7 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 cara
 
 ### Fragmentos de documento {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![document-fragments-ui-operations](do-not-localize/contentoptionsdocfragments.png)
 
 * **Flechas arriba/abajo**: permiten mover fragmentos de documento hacia arriba o hacia abajo en la comunicación interactiva.
 * **Eliminar**: si dispone de los permisos necesarios, elimina el fragmento del documento de la comunicación interactiva.
@@ -324,20 +325,20 @@ La siguiente tabla explica la implementación de ejemplo de la SPI de `ccrDocume
   <td><p><strong>Ejemplos del servicio de base de datos</strong></p></td> 
    </tr>
   <tr>
-   <td><p>Puede crear el borrador de una comunicación interactiva o enviarla directamente. La API para la operación de guardado comprueba si la comunicación interactiva se envía como borrador y si incluye un nombre de borrador. A continuación, llama al servicio mySQLDataBaseServiceCRUD con Guardar como método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Guardar como método de entrada, genera de forma automática un ID de borrador y lo devuelve a AEM. La lógica para generar un ID de borrador puede variar según la base de datos.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Puede crear el borrador de una comunicación interactiva o enviarla directamente. La API para la operación de guardado comprueba si la comunicación interactiva se envía como borrador y si incluye un nombre de borrador. A continuación, llama al servicio mySQLDataBaseServiceCRUD con Guardar como método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Guardar como método de entrada, genera de forma automática un ID de borrador y lo devuelve a AEM. La lógica para generar un ID de borrador puede variar según la base de datos.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
-   <td><p>La API para la operación de actualización recupera el estado del borrador de la comunicación interactiva y comprueba si esta contiene un nombre de borrador. La API llama al servicio mySQLDataBaseServiceCRUD para actualizar ese estado en la base de datos.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>La API para la operación de actualización recupera el estado del borrador de la comunicación interactiva y comprueba si esta contiene un nombre de borrador. La API llama al servicio mySQLDataBaseServiceCRUD para actualizar ese estado en la base de datos.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
    <td><p>El servicio mySQLDataBaseServiceCRUD verifica Actualizar como método de entrada y guarda el estado del borrador de la comunicación en la base de datos.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>La API para la operación GET comprueba si la comunicación interactiva contiene un ID de borrador. A continuación, llama al servicio mySQLDataBaseServiceCRUD con Get como método de entrada para recuperar los datos de la comunicación.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Get como método de entrada y recupera los datos de la comunicación interactiva en función del ID de borrador.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Get como método de entrada y recupera los datos de la comunicación interactiva en función del ID de borrador.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>La API para la operación getAll llama al servicio mySQLGetALLData para recuperar los datos de todas las comunicaciones interactivas guardadas en la base de datos.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>El servicio mySQLGetALLData recupera los datos de todas las comunicaciones interactivas guardadas en la base de datos.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>El servicio mySQLGetALLData recupera los datos de todas las comunicaciones interactivas guardadas en la base de datos.</p></br><img src="assets/getall-operation-service.png"/></td>
    </tr>
   </tbody>
 </table>
