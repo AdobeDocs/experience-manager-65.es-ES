@@ -1,32 +1,28 @@
 ---
 title: Marco de trabajo de etiquetado de AEM
-seo-title: AEM Tagging Framework
-description: AEM Etiquetado de contenido y aprovechamiento de la infraestructura de etiquetado de
-seo-description: Tag content and leverage the AEM Tagging infrastructure
-uuid: f80a2cb1-359f-41dd-a70b-626d92cc3d4c
+description: AEM Etiquetado de contenido y uso de la infraestructura de etiquetado de
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
 
 # Marco de trabajo de etiquetado de AEM {#aem-tagging-framework}
 
-AEM Para etiquetar contenido y aprovechar la infraestructura de etiquetado de la:
+AEM Para etiquetar contenido y utilizar la infraestructura de etiquetado de:
 
 * La etiqueta debe existir como nodo de tipo ` [cq:Tag](#tags-cq-tag-node-type)` en el [nodo raíz de taxonomía](#taxonomy-root-node)
 
-* El NodeType del nodo de contenido etiquetado debe incluir el [ `cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin
-* El [TagID](#tagid) se añade al nodo de contenido [ `cq:tags`](#tagged-content-cq-tags-property) y se resuelve en un nodo de tipo ` [cq:Tag](#tags-cq-tag-node-type)`
+* El NodeType del nodo de contenido etiquetado debe incluir el [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin
+* El [TagID](#tagid) se añade al nodo de contenido [`cq:tags`](#tagged-content-cq-tags-property) y se resuelve en un nodo de tipo ` [cq:Tag](#tags-cq-tag-node-type)`
 
 ## Etiquetas : cq:Tipo de nodo de etiqueta  {#tags-cq-tag-node-type}
 
@@ -71,7 +67,7 @@ AEM En el caso de los usuarios, la ruta base es `/content/  cq   :tags` y el nod
 
 ### Área de nombres de etiqueta {#tag-namespace}
 
-Las áreas de nombres permiten agrupar cosas. El caso de uso más habitual es tener un área de nombres por sitio (web) (por ejemplo, público, interno y portal) o por aplicación más grande (por ejemplo, WCM, Assets, Communities), pero las áreas de nombres se pueden utilizar para otras necesidades. Los espacios de nombres se utilizan en la interfaz de usuario de para mostrar únicamente el subconjunto de etiquetas (es decir, las etiquetas de un determinado espacio de nombres) que se aplica al contenido actual.
+Las áreas de nombres permiten agrupar cosas. El caso de uso más habitual es tener un área de nombres por sitio (web) (por ejemplo, público, interno y portal) o por aplicación más grande (por ejemplo, WCM, Assets, Communities), pero las áreas de nombres se pueden utilizar para otras necesidades. Los espacios de nombres se utilizan en la interfaz de usuario para mostrar únicamente el subconjunto de etiquetas (es decir, las etiquetas de un determinado espacio de nombres) que se aplica al contenido actual.
 
 El área de nombres de la etiqueta es el primer nivel del subárbol de taxonomía, que es el nodo situado inmediatamente debajo de [nodo raíz de taxonomía](#taxonomy-root-node). Un área de nombres es un nodo de tipo `cq:Tag` cuyo elemento principal no es un `cq:Tag`tipo de nodo.
 
@@ -81,7 +77,7 @@ Todas las etiquetas tienen un área de nombres. Si no se especifica ningún áre
 
 Una etiqueta contenedora es un nodo de tipo `cq:Tag` que contenga cualquier número y tipo de nodos secundarios, lo que permite mejorar el modelo de etiquetas con metadatos personalizados.
 
-Además, las etiquetas de contenedor (o superetiquetas) en una taxonomía sirven como subsuma de todas las subetiquetas: por ejemplo, el contenido etiquetado con fruta/manzana se considera etiquetado con fruta también, es decir, la búsqueda de contenido etiquetado con fruta también encontraría el contenido etiquetado con fruta/manzana.
+Además, las etiquetas de contenedor (o superetiquetas) en una taxonomía sirven como subsuma de todas las subetiquetas. Por ejemplo, el contenido etiquetado con fruta/manzana se considera etiquetado con fruta también. Es decir, buscar contenido etiquetado con frutas también encontraría el contenido etiquetado con frutas/manzanas.
 
 ### Resolver TagID {#resolving-tagids}
 
@@ -101,7 +97,7 @@ En la tabla siguiente se muestran algunos ejemplos de TagID, sus elementos y có
    <td><strong>ID de etiqueta<br /> </strong></td>
    <td><strong>Espacio de nombres</strong></td>
    <td><strong>ID local</strong></td>
-   <td><strong>Etiqueta(s) de contenedor</strong></td>
+   <td><strong>Etiquetas de contenedor</strong></td>
    <td><strong>Etiqueta de hoja</strong></td>
    <td><strong>Repositorio<br /> Ruta de etiqueta absoluta</strong></td>
   </tr>
@@ -159,9 +155,9 @@ Para obtener más información, consulte
 
 ### Control de acceso {#access-control}
 
-Las etiquetas existen como nodos en el repositorio en la variable [nodo raíz de taxonomía](#taxonomy-root-node). Permitir o denegar a los autores y visitantes del sitio la creación de etiquetas en un área de nombres determinada se puede lograr estableciendo las ACL adecuadas en el repositorio.
+Las etiquetas existen como nodos en el repositorio en la variable [nodo raíz de taxonomía](#taxonomy-root-node). Permitir o denegar a los autores y visitantes del sitio la creación de etiquetas en un área de nombres determinada se puede lograr estableciendo ACL adecuados en el repositorio.
 
-Además, la denegación de permisos de lectura para determinadas etiquetas o áreas de nombres controlará la capacidad de aplicar etiquetas a contenido específico.
+Además, la denegación de permisos de lectura para determinadas etiquetas o áreas de nombres controla la capacidad de aplicar etiquetas a contenido específico.
 
 Una práctica típica incluye:
 
@@ -172,7 +168,7 @@ Una práctica típica incluye:
 
 ## Contenido etiquetable : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
-Para que los desarrolladores de aplicaciones adjunten el etiquetado a un tipo de contenido, el registro del nodo ([CND](https://jackrabbit.apache.org/node-type-notation.html)) debe incluir el `cq:Taggable` mixin o el `cq:OwnerTaggable` mixin.
+Para que los desarrolladores de aplicaciones adjunten el etiquetado a un tipo de contenido, el registro del nodo ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) debe incluir el `cq:Taggable` mixin o el `cq:OwnerTaggable` mixin.
 
 El `cq:OwnerTaggable` mixin, que hereda de `cq:Taggable`, tiene la intención de indicar que el propietario/autor puede clasificar el contenido. AEM En el caso de los informes, solo es un atributo de la variable `cq:PageContent` nodo. El `cq:OwnerTaggable` El marco de etiquetado no requiere el mixin.
 
@@ -185,10 +181,9 @@ El `cq:OwnerTaggable` mixin, que hereda de `cq:Taggable`, tiene la intención de
 >* recursos ( `cq:Asset`) donde la variable `jcr:content/metadata` El nodo siempre tiene el `cq:Taggable` mixin.
 >
 
-
 ### Notación de tipo de nodo (CND) {#node-type-notation-cnd}
 
-Las definiciones del tipo de nodo existen en el repositorio como archivos CDN. La notación CDN se define como parte de la documentación JCR [aquí](https://jackrabbit.apache.org/node-type-notation.html).
+Las definiciones del tipo de nodo existen en el repositorio como archivos CDN. La notación CDN se define como parte de la documentación JCR [aquí](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 AEM Las definiciones esenciales para los tipos de nodo incluidos en la lista de nombres de dominio son las siguientes:
 
@@ -213,7 +208,7 @@ El `cq:tags` La propiedad es una matriz de cadenas que se utiliza para almacenar
 
 >[!NOTE]
 >
->AEM Para aprovechar la funcionalidad de etiquetado de etiquetas, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiquetas distintas de `cq:tags`.
+>AEM Para utilizar la funcionalidad de etiquetado de etiquetas, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiquetas distintas de `cq:tags`.
 
 ## Mover y combinar etiquetas {#moving-and-merging-tags}
 
@@ -222,28 +217,26 @@ A continuación se describen los efectos del repositorio al mover o combinar eti
 * Cuando una etiqueta A se mueve o se combina con la etiqueta B en `/content/cq:tags`:
 
    * La etiqueta A no se elimina y obtiene un `cq:movedTo` propiedad.
-   * La etiqueta B se crea (en caso de movimiento) y obtiene un `cq:backlinks` propiedad.
+   * La etiqueta B se crea (si se ha producido un movimiento) y obtiene un `cq:backlinks` propiedad.
 
-* `cq:movedTo` apunta a la etiqueta B. Esta propiedad significa que la etiqueta A se ha movido o combinado en la etiqueta B. Al mover la etiqueta B, se actualizará esta propiedad en consecuencia. Por lo tanto, la etiqueta A está oculta y solo se mantiene en el repositorio para resolver los ID de etiqueta en los nodos de contenido que apuntan a la etiqueta A. El recolector de elementos no utilizados de etiquetas elimina las etiquetas como la etiqueta A una vez que los nodos de contenido no las señalan.
+* `cq:movedTo` apunta a la etiqueta B. Esta propiedad significa que la etiqueta A se ha movido o combinado en la etiqueta B. Al mover la etiqueta B, se actualiza esta propiedad en consecuencia. Por lo tanto, la etiqueta A está oculta y solo se mantiene en el repositorio para resolver los ID de etiqueta en los nodos de contenido que apuntan a la etiqueta A. El recolector de elementos no utilizados de etiquetas elimina las etiquetas como la etiqueta A una vez que los nodos de contenido no las señalan.
 Un valor especial para `cq:movedTo` la propiedad es `nirvana`: se aplica cuando se elimina la etiqueta, pero no se puede eliminar del repositorio porque hay subetiquetas con un `cq:movedTo` eso debe mantenerse.
 
-   >[!NOTE]
-   >
-   >El `cq:movedTo` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
-   >
-   >1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia) O
-   >1. La etiqueta tiene elementos secundarios que ya se han movido.
+  >[!NOTE]
+  >
+  >El `cq:movedTo` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
+  >
+  >1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia) O
+  >1. La etiqueta tiene elementos secundarios que ya se han movido.
 
+* `cq:backlinks` mantiene las referencias en la otra dirección. Es decir, mantiene una lista de todas las etiquetas que se han movido o combinado con la etiqueta B. Esto es necesario principalmente para mantener `cq:movedTo`propiedades actualizadas cuando la etiqueta B se mueve, combina o elimina, o cuando la etiqueta B está activada, en cuyo caso todas sus etiquetas de backlinks deben activarse también.
 
-* `cq:backlinks` mantiene las referencias en la otra dirección, es decir, conserva una lista de todas las etiquetas que se han movido o combinado con la etiqueta B. Esto es necesario principalmente para mantener `cq:movedTo`propiedades actualizadas cuando la etiqueta B se mueve, combina o elimina, o cuando la etiqueta B está activada, en cuyo caso todas sus etiquetas de backlinks deben activarse también.
-
-   >[!NOTE]
-   >
-   >El `cq:backlinks` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
-   >
-   >1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia) O
-   >1. La etiqueta tiene elementos secundarios que ya se han movido.
-
+  >[!NOTE]
+  >
+  >El `cq:backlinks` La propiedad solo se añade a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
+  >
+  >1. La etiqueta se utiliza en el contenido (lo que significa que tiene una referencia) O
+  >1. La etiqueta tiene elementos secundarios que ya se han movido.
 
 * Leer un `cq:tags` La propiedad de un nodo de contenido implica la siguiente resolución:
 
@@ -255,7 +248,7 @@ Este paso se repite siempre que la etiqueta seguida tenga un `cq:movedTo` propie
 
 * Para publicar el cambio cuando se haya movido o combinado una etiqueta, la variable `cq:Tag` el nodo y todos sus backlinks deben replicarse: esto se hace automáticamente cuando la etiqueta se activa en la consola de administración de etiquetas.
 
-* Actualizaciones posteriores en la página `cq:tags` limpie automáticamente las referencias &quot;antiguas&quot;. Esto se activa porque la resolución de una etiqueta desplazada a través de la API devuelve la etiqueta de destino, proporcionando así el ID de etiqueta de destino.
+* Actualizaciones posteriores en la página `cq:tags` limpia automáticamente las referencias &quot;antiguas&quot;. Esto se activa porque la resolución de una etiqueta desplazada a través de la API devuelve la etiqueta de destino, proporcionando así el ID de etiqueta de destino.
 
 >[!NOTE]
 >
@@ -263,7 +256,7 @@ Este paso se repite siempre que la etiqueta seguida tenga un `cq:movedTo` propie
 
 ## Migración de etiquetas {#tags-migration}
 
-Las etiquetas de Experience Manager 6.4 y posteriores se almacenan en `/content/cq:tags`, que anteriormente se almacenaban en `/etc/tags`. Sin embargo, en los casos en los que Adobe Experience Manager se ha actualizado desde la versión anterior, las etiquetas siguen estando presentes en la ubicación antigua `/etc/tags`. En los sistemas actualizados, las etiquetas deben migrarse a `/content/cq:tags`.
+Las etiquetas de Experience Manager 6.4 y posteriores se almacenan en `/content/cq:tags`, que anteriormente se almacenaban en `/etc/tags`. Sin embargo, en los casos en los que Adobe Experience Manager se ha actualizado desde la versión anterior, las etiquetas siguen estando presentes en la ubicación antigua `/etc/tags`. En los sistemas actualizados, las etiquetas deben migrarse en `/content/cq:tags`.
 
 >[!NOTE]
 >
@@ -341,9 +334,9 @@ El script recupera todas las etiquetas que tienen `/etc/tags` en el valor de `cq
 
 >[!NOTE]
 >
->La IU clásica no es compatible con el tiempo de inactividad cero y no admite la nueva ruta base de etiquetas. Si desea utilizar la IU clásica de `/etc/tags` debe crearse seguido de `cq-tagging` reinicio del componente.
+>La IU clásica no es compatible con el tiempo de inactividad cero y no admite la nueva ruta base de etiquetas. Si desea utilizar la IU clásica, haga lo siguiente `/etc/tags` debe crearse seguido de `cq-tagging` reinicio del componente.
 
-AEM En el caso de instancias actualizadas de la aplicación admitidas por la API de TagManager y que se ejecuten en la IU clásica, haga lo siguiente:
+AEM Si la API de TagManager admite instancias actualizadas y se ejecutan en la IU clásica, haga lo siguiente:
 
 1. Una vez referencias a la ruta base de etiqueta antigua `/etc/tags` se reemplazan con tagId o la nueva ubicación de la etiqueta `/content/cq:tags`, puede migrar etiquetas a la nueva ubicación `/content/cq:tags` en CRX seguido del reinicio del componente.
 

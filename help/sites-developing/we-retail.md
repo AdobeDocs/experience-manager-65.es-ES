@@ -1,18 +1,14 @@
 ---
 title: Implementación de referencia de We.Retail
-seo-title: We.Retail Reference Implementation
 description: AEM We.Retail es una previsualización tecnológica de una implementación de referencia que ilustra la forma recomendada de configurar una presencia en línea con las soluciones de
-seo-description: We.Retail is a technology preview of a reference implementation that illustrates the recommended way of setting up an online presence with AEM
-uuid: d8833192-b592-4812-bf9b-bd882e8ee7f0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '749'
 ht-degree: 9%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 9%
 
 We.Retail es una implementación de referencia y contenido de muestra que ilustra la forma recomendada de configurar una presencia en línea con Adobe Experience Manager.
 
-AEM We.Retail utiliza las últimas tecnologías en materia de diseño, como HTL, los diseños adaptables, las plantillas editables, los componentes principales y mucho más, entre otras.
+AEM We.Retail utiliza las últimas tecnologías en materia de diseño, como HTL, los diseños adaptables, las plantillas editables, los componentes principales y mucho más.
 
 Aunque ilustra un vertical minorista, la forma en que se configura el sitio se puede aplicar a cualquier vertical y solo las funciones del catálogo de productos y del carro de compras son específicas del minorista.
 
@@ -45,11 +41,11 @@ AEM AEM Como implementación de referencia estándar de, We.Retail muestra algun
 
 ## Introducción {#getting-started}
 
-AEM We.Retail se entrega como contenido de muestra de la. Para utilizar, simplemente [AEM Empiece como lo haría normalmente.](/help/sites-deploying/deploy.md#getting-started), asegurándose de que el contenido de la muestra no esté deshabilitado.
+AEM We.Retail se entrega como contenido de muestra de la. Para usar, simplemente [AEM Empiece como lo haría normalmente.](/help/sites-deploying/deploy.md#getting-started), asegurándose de que el contenido de la muestra no esté deshabilitado.
 
 >[!CAUTION]
 >
->We.Retail no debe instalarse en instancias de producción. Las instancias de producción deben iniciarse en `nosamplecontent` [modo de ejecución](/help/sites-deploying/configure-runmodes.md).
+>No instale We.Retail en instancias de producción. Las instancias de producción deben iniciarse en `nosamplecontent` [modo de ejecución](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
@@ -62,7 +58,7 @@ AEM Aunque We.Retail se distribuye con el lanzamiento de la versión de la, es p
 ### Primeros pasos {#first-steps}
 
 1. AEM Una vez que se haya iniciado la aplicación de la versión (y/o se haya instalado We.Retail), el sitio web se abrirá en la siguiente ubicación: **We.Retail** está disponible en la [consola sitios](/help/sites-authoring/basic-handling.md#global-navigation).
-1. Por ejemplo, la siguiente página se puede abrir y debe tener el aspecto que se muestra en la [apéndice](#appendix) a continuación:
+1. Por ejemplo, se puede abrir la siguiente página y debería tener el aspecto que se muestra en la [apéndice](#appendix) a continuación:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
@@ -109,11 +105,11 @@ CÓDIGO EN GITHUB
 Puede encontrar el código de esta página en GitHub
 
 * [Abra el proyecto aem-sample-we-retail en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip)
+* Descargue el proyecto como [un archivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
-La última versión también puede ser [descargado directamente](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) como paquete instalable.
+La última versión también puede ser [descargado directamente](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) como paquete instalable.
 
-Si tiene problemas, presente un [Problemas de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Si tiene problemas, presente un [Problema de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 Siéntase libre de ramificar o contribuir con [solicitudes de extracción](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 

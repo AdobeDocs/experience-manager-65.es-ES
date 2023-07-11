@@ -1,18 +1,14 @@
 ---
 title: AEM Ejecución en modo listo para la producción
-seo-title: Running AEM in Production Ready Mode
 description: AEM Obtenga información sobre cómo ejecutar la en el modo Producción lista.
-seo-description: Learn how to run AEM in Production Ready Mode.
-uuid: f48c8bae-c72f-4772-967e-f1526f096399
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '378'
 ht-degree: 3%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 3%
 
 AEM Con la versión 6.1, Adobe presenta la nueva `"nosamplecontent"` AEM modo de ejecución para automatizar los pasos necesarios para preparar una instancia de para su implementación en un entorno de producción.
 
-El nuevo modo de ejecución no solo configurará automáticamente la instancia para adherirse a las prácticas recomendadas de seguridad descritas en la lista de comprobación de seguridad, sino que también eliminará todas las aplicaciones y configuraciones de geometrixx de ejemplo en el proceso.
+El nuevo modo de ejecución no solo configurará automáticamente la instancia para que se adhiera a las prácticas recomendadas de seguridad descritas en la lista de comprobación de seguridad, sino que también eliminará todas las aplicaciones y configuraciones de Geometrixx de ejemplo en el proceso.
 
 >[!NOTE]
 >
@@ -31,7 +27,7 @@ El nuevo modo de ejecución no solo configurará automáticamente la instancia p
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-AEM Para ejecutar la ejecución en modo listo para la producción, todo lo que debe hacer es agregar el `nosamplecontent` a través de `-r` modo de ejecución cambie a los argumentos de inicio existentes:
+AEM Para ejecutar la ejecución en modo listo para la producción, lo único que debe hacer es añadir la variable `nosamplecontent` a través de `-r` el modo de ejecución cambia a los argumentos de inicio existentes:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -45,14 +41,14 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 ## Cambia parte del modo Producción lista {#changes-part-of-the-production-ready-mode}
 
-AEM Más específicamente, se realizarán los siguientes cambios de configuración cuando se ejecute en modo de producción lista:
+AEM Más específicamente, los siguientes cambios de configuración se realizan cuando se ejecuta la en modo listo para la producción:
 
 1. El **Paquete de soporte de CRXDE** ( `com.adobe.granite.crxde-support`) está desactivado de forma predeterminada en el modo listo para la producción. Se puede instalar en cualquier momento desde el repositorio Maven público de Adobe. AEM Se requiere la versión 3.0.0 para la versión 6.1 de.
 
 1. El **Acceso simple de Apache Sling WebDAV a repositorios** ( `org.apache.sling.jcr.webdav`) paquete solo estará disponible en **autor** instancias.
 
-1. Los usuarios recién creados deberán cambiar la contraseña la primera vez que inicien sesión. Esto no se aplica al usuario administrador.
-1. **Generar información de depuración** está deshabilitado para **Apache Sling Java Script Handler**.
+1. Los usuarios recién creados deben cambiar la contraseña la primera vez que inicien sesión. Esto no se aplica al usuario administrador.
+1. **Generar información de depuración** está deshabilitado para **Apache Sling JavaScript Handler**.
 
 1. **Contenido asignado** y **Generar información de depuración** están desactivadas para la **Apache Sling JSP Script Handler**.
 

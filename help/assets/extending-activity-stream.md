@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Esta integración podría consumir CPU y espacio en disco, por ejemplo, al reali
 
 ## Eventos de acción admitidos {#supported-action-events}
 
-Se pueden configurar los siguientes eventos para registrarlos:
+Puede configurar los siguientes eventos para que se registren:
 
 * Licencia aceptada (ACEPTADA)
 * Recurso creado (ASSET_CREATED)
@@ -37,8 +37,8 @@ Se pueden configurar los siguientes eventos para registrarlos:
 * Actualización del original del recurso (ORIGINAL_UPDATED)
 * Representación de recursos actualizada (RENDITION_UPDATED)
 * Representación de recursos eliminada (RENDITION_REMOVED)
-* Subrecurso actualizado (SUBASSET_UPDATED)
-* Subrecurso eliminado (SUBASSET_REMOVED)
+* Subactivo actualizado (SUBASSET_UPDATED)
+* Subactivo eliminado (SUBASSET_REMOVED)
 
 ## Configurar [!DNL Assets] grabación de eventos {#configuring-aem-assets-events-recording}
 
@@ -52,10 +52,10 @@ El [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 1. Marque **[!UICONTROL Habilita este servicio]**.
 
-1. Compruebe qué **[!UICONTROL Tipos de eventos]** desea que se registre en el flujo de actividad del usuario.
+1. Compruebe qué **[!UICONTROL Tipos de eventos]** que desea que se registre en el flujo de actividad del usuario.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 ## Leer eventos grabados {#reading-recorded-events}
 
-Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación utilizando el [API de Activity Manager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación utilizando el [API de Activity Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

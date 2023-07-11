@@ -1,19 +1,15 @@
 ---
 title: Desarrollo y diferencia de página
-seo-title: Developing and Page Diff
 description: Desarrollo y diferencia de página
-seo-description: null
-uuid: 06f27bc2-f42a-4176-ab94-255e721c6933
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 85895215904b8706830d20f7714de5512b2c3ec2
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -28,9 +24,9 @@ La diferencia de página permite al usuario comparar la página actual con lanza
 
 ## Detalles de operación {#operation-details}
 
-AEM Al comparar versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear en segundo plano para facilitar la comparación de diferencias. La comparación de versiones de una página se realiza de nuevo en segundo plano para facilitar la comparación de diferencias. Esto es necesario para poder procesar el contenido [para una comparación en paralelo](/help/sites-developing/pagediff.md#operation-details).
+AEM Cuando se comparan versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear en segundo plano para facilitar la comparación con otras versiones de una página. Se puede acceder a esta versión desde el segundo plano, lo que permite la comparación con otras versiones de una página. Esto es necesario para poder procesar el contenido [para una comparación en paralelo](/help/sites-developing/pagediff.md#operation-details).
 
-AEM Esta operación de recreación se realiza por parte de los usuarios de forma interna, es transparente para el usuario y no requiere intervención alguna. Sin embargo, un administrador que visualice el repositorio, por ejemplo, en CRX DE Lite, vería estas versiones recreadas dentro de la estructura de contenido.
+AEM Esta operación de recreación se realiza por parte de los usuarios de forma interna, es transparente para el usuario y no requiere intervención alguna. Sin embargo, un administrador que visualice el repositorio, por ejemplo, en CRXDE Lite, vería estas versiones recreadas dentro de la estructura de contenido.
 
 Cuando se compara contenido, todo el árbol hasta la página para comparar se vuelve a crear en la siguiente ubicación:
 
@@ -42,9 +38,9 @@ Se ejecuta automáticamente una tarea de limpieza para limpiar este contenido te
 
 AEM Anteriormente, en la IU clásica, se tenía que tener especial consideración en el desarrollo para facilitar la diferenciación de los recursos (por ejemplo, el uso de ) `cq:text` biblioteca de etiquetas o integración personalizada de `DiffService` servicio OSGi en componentes). Esto ya no es necesario para la nueva función de diferencia, ya que la diferencia se produce en el lado del cliente mediante la comparación DOM.
 
-Sin embargo, el desarrollador debe tener en cuenta una serie de limitaciones.
+Sin embargo, hay algunas limitaciones que el desarrollador debe tener en cuenta.
 
-* AEM Esta función utiliza clases CSS a las que no se les asigna un nombre entre espacios para el producto de. Si se incluyen en la página otras clases CSS personalizadas o clases CSS de terceros con los mismos nombres, la visualización de la diferencia puede verse afectada.
+* AEM Esta función utiliza clases CSS a las que no se les asigna un espacio de nombres para el producto de. Si se incluyen en la página otras clases CSS personalizadas o clases CSS de terceros con los mismos nombres, la visualización de la diferencia puede verse afectada.
 
    * `html-added`
    * `html-removed`
@@ -61,4 +57,4 @@ Sin embargo, el desarrollador debe tener en cuenta una serie de limitaciones.
 
 >[!NOTE]
 >
->La comparación de diferencias de página solo funcionará para los componentes que tengan nodos cq:editConfig válidos.
+>La comparación de diferencias de página solo funciona para los componentes que tienen nodos cq:editConfig válidos.
