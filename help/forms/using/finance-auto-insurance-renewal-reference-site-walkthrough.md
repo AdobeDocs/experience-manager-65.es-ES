@@ -1,18 +1,15 @@
 ---
 title: Tutorial del sitio de referencia para la renovación de seguros de coche de We.Finance
-seo-title: We.Finance Auto Insurance Renewal reference site walkthrough
 description: Tutorial del sitio de referencia para la renovación de seguros de coche de We.Finance
-uuid: c749a6f7-71f1-4f47-b824-9c7b699072c7
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
-discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 100%
+source-wordcount: '743'
+ht-degree: 83%
 
 ---
 
@@ -22,11 +19,11 @@ ht-degree: 100%
 
 El sitio de We.Finance es un sitio de servicios financieros diseñado para ayudarle a aprender a utilizar las capacidades de Interactive Communications de AEM Forms.
 
-Lea el tutorial detallado del caso de uso de We.Finance Auto Insurance, que muestra cómo AEM Forms y su integración con Microsoft Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
+AEM Lea el tutorial detallado del caso de uso de We.Finance Auto Insurance, que muestra cómo los formularios de la y su integración con Microsoft® Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
 
 **El recorrido comienza con el caso de uso:**
 
-Sarah Rose es una clienta existente de We.Finance y ha adquirido una póliza de seguro del coche. Se acerca la fecha de renovación de la póliza de su seguro. Gloria Ríos, una agente de seguros de We.Finance, envía un recordatorio a Sarah sobre la renovación de su póliza. Sarah sigue las instrucciones proporcionadas en el correo electrónico y completa correctamente el proceso.
+Sarah Rose es una clienta existente de We.Finance y ha adquirido una póliza de seguro del coche. Ahora es el momento del año para renovar la póliza de seguro de Sarah. Gloria Ríos, una agente de seguros de We.Finance, envía un recordatorio a Sarah sobre la renovación de su póliza. Sarah sigue las instrucciones proporcionadas en el correo electrónico y completa correctamente el proceso.
 
 ## Tutorial de la solicitud de un seguro de coche {#auto-insurance-application-walkthrough}
 
@@ -45,15 +42,15 @@ Sarah recibe un correo electrónico con el asunto &quot;Renovación del seguro d
 
 #### Puede verlo usted mismo {#see-it-yourself}
 
-Vaya a **Adobe Experience Manager** > **Forms** > **Formularios y documentos** > **We.Finance** > **Seguros de coche**. Seleccione la **comunicación interactiva** Renovación del seguro del coche y haga clic en **Abrir la interfaz de usuario del agente**. La comunicación interactiva se abre en la interfaz de usuario del agente. Introduzca una dirección de correo electrónico válida para recibir el correo electrónico con el documento de la póliza adjunto y haga clic en Enviar.
+Vaya a **Adobe Experience Manager** > **Forms** > **Formularios y documentos** > **We.Finance** > **Seguros de coche**. Seleccione la **comunicación interactiva** Renovación del seguro del coche y haga clic en **Abrir la interfaz de usuario del agente**. La comunicación interactiva se abre en la interfaz de usuario del agente. Introduzca una dirección de correo electrónico válida para que puedan recibir el correo electrónico con el documento de la póliza adjunto y haga clic en Enviar.
 
 Puede acceder a la comunicación interactiva Renovación del seguro del coche y revisarla directamente desde `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah recibe una comunicación sobre la renovación de su póliza de seguro de We.Finance y decide renovarla {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah recibe un correo electrónico con un archivo adjunto de We.Finance que le recuerda que la póliza de su seguro del coche está a punto de caducar. El archivo adjunto es la versión impresa de la póliza de su seguro del coche.
+Sarah recibe un correo electrónico con un archivo adjunto de We.Finance, en el que se le recuerda que la póliza de su seguro del coche está a punto de caducar. El archivo adjunto es la versión impresa de la póliza de seguro del coche de Sarah.
 
-Sarah hace clic en **Renovar ahora** y es redirigida a la versión web de la póliza de su seguro del coche. Además de la póliza, Sarah puede ver el número de días que faltan para que su póliza caduque. La página proporciona a Sarah una descripción general básica de los datos de la póliza de su seguro, como el número de póliza, el importe adeudado y otra información, como ofertas de descuento y recompensas de fidelización. Sarah vuelve a hacer clic **Renovar ahora** en la parte inferior de la póliza.
+Sarah hace clic en **Renovar ahora** y es redirigida a la versión web de la póliza de su seguro del coche. Además de esta carta, Sarah encuentra la cantidad de tiempo que le queda para su póliza antes de que caduque. La página proporciona a Sarah una descripción general básica de los datos de la póliza de su seguro, como el número de póliza, el importe adeudado y otra información, como ofertas de descuento y recompensas de fidelización. Sarah vuelve a hacer clic **Renovar ahora** en la parte inferior de la póliza.
 
 ![ref1](assets/ref1.png)
 
@@ -67,7 +64,7 @@ El botón Renovar ahora del correo electrónico está vinculado a la solicitud R
 
 Debería haber recibido un correo electrónico con un PDF adjunto. El PDF es una versión impresa de la póliza de su seguro del coche. Haga clic en **Renovar ahora** para acceder a la versión web de la póliza. Compruebe sus datos personales y los datos de la póliza y haga clic en la opción **Renovar ahora**, la cual le redirigirá a otra comunicación interactiva.
 
-El botón **Renovar ahora** que aparece en el correo electrónico lleva a Sarah a la versión web de la póliza. Puede visitar la siguiente URL:
+El **Renovar ahora** en el correo electrónico dirige a Sarah a la póliza de la web. Puede visitar la siguiente URL:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 

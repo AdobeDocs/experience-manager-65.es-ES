@@ -1,17 +1,15 @@
 ---
 title: Su bandeja de entrada
 description: AEM Puede recibir notificaciones de varias áreas de la, como notificaciones sobre elementos de trabajo o tareas que representan acciones que debe realizar en el contenido de la página.
-uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -29,7 +27,7 @@ Estas notificaciones se reciben en dos bandejas de entrada, separadas por el tip
 
 Para ver las notificaciones:
 
-1. Abra la bandeja de entrada de notificaciones: en **Sitios web** , haga clic en el botón de usuario en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
+1. Abra la bandeja de entrada de notificaciones: en **Sitios web** , haga clic en el botón user en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -40,7 +38,7 @@ Para ver las notificaciones:
    >
    >` https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Se enumerarán sus notificaciones. Puede realizar las acciones necesarias:
+1. Se muestran sus notificaciones. Puede realizar las acciones necesarias:
 
    * [Suscripción a notificaciones](#subscribing-to-notifications)
    * [Procesamiento de notificaciones](#processing-your-notifications)
@@ -51,7 +49,7 @@ Para ver las notificaciones:
 
 Para suscribirse a las notificaciones:
 
-1. Abra la bandeja de entrada de notificaciones: en **Sitios web** , haga clic en el botón de usuario en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
+1. Abra la bandeja de entrada de notificaciones: en **Sitios web** , haga clic en el botón user en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
@@ -68,12 +66,12 @@ Para suscribirse a las notificaciones:
 
 1. Seleccione el canal de notificación:
 
-   * **Bandeja de entrada** AEM : las notificaciones se mostrarán en la bandeja de entrada de su.
-   * **Correo electrónico**: las notificaciones se enviarán por correo electrónico a la dirección de correo electrónico definida en el perfil de usuario.
+   * **Bandeja de entrada** AEM : las notificaciones se muestran en la bandeja de entrada de la.
+   * **Correo electrónico**: las notificaciones se envían por correo electrónico a la dirección de correo electrónico definida en el perfil de usuario.
 
    >[!NOTE]
    >
-   >Es necesario configurar algunos ajustes para recibir notificaciones por correo electrónico. También es posible personalizar la plantilla de correo electrónico o añadir una plantilla de correo electrónico para un nuevo idioma. Consulte la [Configuración de notificaciones por correo electrónico](/help/sites-administering/notification.md#configuringemailnotification) AEM para configurar las notificaciones por correo electrónico en la.
+   >Se deben configurar algunos ajustes para recibir notificaciones por correo electrónico. También es posible personalizar la plantilla de correo electrónico o añadir una plantilla de correo electrónico para un nuevo idioma. Consulte [Configuración de notificaciones por correo electrónico](/help/sites-administering/notification.md#configuringemailnotification) AEM para configurar las notificaciones por correo electrónico en la.
 
 1. Seleccione las acciones de página para las que desea recibir notificaciones:
 
@@ -90,7 +88,7 @@ Cuando se elimina o mueve una página, se replica automáticamente una acción d
 1. Defina las rutas de las páginas para las que se le notificará:
 
    * Clic **Añadir** para agregar una nueva fila a la tabla.
-   * Haga clic en **Ruta** celda de la tabla e introduzca la ruta, p. ej., `/content/docs`.
+   * Haga clic en **Ruta** y escriba la ruta, por ejemplo, `/content/docs`.
 
    * Para recibir notificaciones de todas las páginas que pertenecen al subárbol, establezca **¿Exacto?** hasta **No**.
 Para recibir notificaciones solo para acciones en la página definida por la ruta, establezca **¿Exacto?** hasta **Sí**.
@@ -103,7 +101,7 @@ Para recibir notificaciones solo para acciones en la página definida por la rut
 
 ## Procesamiento de notificaciones {#processing-your-notifications}
 
-AEM Si ha elegido recibir notificaciones en su bandeja de entrada de la, esta se rellenará con notificaciones. Puede [ver las notificaciones](#viewing-your-notifications) a continuación, seleccione las notificaciones necesarias para:
+AEM Si ha elegido recibir notificaciones en la bandeja de entrada de la bandeja de entrada de la, esta se rellenará con notificaciones. Puede [ver las notificaciones](#viewing-your-notifications), luego seleccione las notificaciones necesarias para:
 
 * Apruébelo haciendo clic en **Aprobar**: el valor en la variable **Leer** se establece en **true**.
 

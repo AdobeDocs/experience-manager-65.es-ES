@@ -1,19 +1,15 @@
 ---
 title: Añadir Clientlibs
-seo-title: Add Clientlibs
 description: Agregar una ClientLibraryFolder
-seo-description: Add a ClientLibraryFolder
-uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 6%
 
 ---
@@ -45,7 +41,7 @@ En el **Propiedades** para el nuevo `clientlibs` , introduzca el **categorías**
 * Clic **Añadir**
 * Haga clic en **Guardar todo**
 
-Nota: Se debe anteponer el valor de categorías con &quot;apps&quot;. es una convención para identificar la &quot;aplicación propietaria&quot; como en la carpeta /apps, no /libs.  IMPORTANTE: Añadir marcador de posición `js.tx`t y **`css.txt`** archivos. (No es oficialmente una cq:ClientLibraryFolder sin ellas).
+Nota: anteponga el valor de categorías con &quot;apps&quot;. es una convención para identificar la &quot;aplicación propietaria&quot; como en la carpeta /apps, no /libs. IMPORTANTE: Agregar marcador de posición `js.tx`t y **`css.txt`** archivos. (No es oficialmente una cq:ClientLibraryFolder sin ellas).
 
 1. Clic con el botón derecho **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Seleccionar **Crear archivo...**
@@ -75,9 +71,9 @@ A continuación, cree un archivo en clientlibs denominado style.css y establezca
 
 ### Incrustar Clientlibs SCF {#embed-scf-clientlibs}
 
-En el **Propiedades** para la pestaña `clientlibs` , introduzca la propiedad de cadena de varios valores **incrustar**. Esto incrusta lo necesario [bibliotecas del lado del cliente (clientlibs) para componentes de SCF](/help/communities/client-customize.md#clientlibs-for-scf). Para este tutorial se añaden muchos de los clientlibs necesarios para los componentes de Communities.
+En el **Propiedades** para la pestaña `clientlibs` , introduzca la propiedad de cadena de varios valores **incrustar**. Esto incrusta lo necesario [bibliotecas del lado del cliente (clientlibs) para componentes de SCF](/help/communities/client-customize.md#clientlibs-for-scf). Para este tutorial, se agregan muchos de los clientlibs necesarios para los componentes de Communities.
 
-**Nota** que este puede ser o no el enfoque deseado para utilizar en un sitio de producción, ya que hay consideraciones de comodidad en comparación con el tamaño y la velocidad de los clientlibs descargados para cada página.
+Este puede ser o no el enfoque deseado para utilizar en un sitio de producción, ya que hay consideraciones de comodidad en comparación con el tamaño y la velocidad de los clientlibs descargados para cada página.
 
 Si solo utiliza una función en una página, puede incluir la clientlib completa de esa función directamente en la página, por ejemplo,
 
@@ -110,7 +106,7 @@ Así es como `/etc/designs/an-scf-sandbox/clientlibs` debería aparecer en el re
 
 ### Incluir Clientlibs en la plantilla de PlayPage {#include-clientlibs-in-playpage-template}
 
-Sin incluir el `apps.an-scf-sandbox` En la categoría ClientLibraryFolder de la página, los componentes de SCF no funcionarán ni tendrán estilo, ya que los JavaScript y estilos necesarios no estarán disponibles.
+Sin incluir el `apps.an-scf-sandbox` En la categoría ClientLibraryFolder de la página, los componentes de SCF no funcionan ni tienen estilo, ya que el JavaScript necesario y los estilos no están disponibles.
 
 Por ejemplo, sin incluir los clientlibs, el componente Comentarios de SCF aparece sin estilo :
 
@@ -153,9 +149,9 @@ Cargue el sitio web en el explorador y compruebe si el fondo no es azul.
 
 ### Guardar El Trabajo Hasta El Momento {#saving-your-work-so-far}
 
-En este punto, existe una zona protegida minimalista, y podría valer la pena guardarla como paquete para que, mientras se reproduce, si el repositorio se daña y desea volver a empezar, pueda desactivar el servidor, cambiar el nombre de la carpeta crx-quickstart/ o eliminarla, activar el servidor, cargar e instalar este paquete guardado y no tenga que repetir estos pasos más básicos.
+En este punto, existe una zona protegida minimalista, y podría valer la pena guardarla como paquete para que, mientras se reproduce, si el repositorio se daña y desea volver a empezar, pueda desactivar el servidor, cambiar el nombre de la carpeta crx-quickstart/ o eliminarla, activar el servidor, cargar e instalar este paquete guardado y no tener que repetir estos pasos más básicos.
 
-Este paquete existe en [Crear una página de muestra](/help/communities/create-sample-page.md) tutorial para aquellos que no pueden esperar para simplemente saltar y empezar a jugar!...
+Este paquete existe en [Crear una página de muestra](/help/communities/create-sample-page.md) tutorial para aquellos que no pueden esperar para saltar en y empezar a jugar!...
 
 Para crear un paquete:
 
@@ -180,9 +176,9 @@ Para crear un paquete:
       * Clic **Añadir filtro**
       * Ruta raíz: buscar `/content/an-scf-sandbox**`
       * Haga clic en **Listo**
-   * Haga clic en **Guardar**
 
+   * Haga clic en **Guardar**
 
 * Clic **Generar**
 
-Ahora puede seleccionar **Descargar** para guardarlo en el disco y **Cargar paquete** en otra parte, así como seleccione **Más > Replicar** para insertar la zona protegida en una instancia de publicación localhost para expandir el dominio de la zona protegida.
+Ahora puede seleccionar **Descargar** para guardarlo en el disco y **Cargar paquete** en otra parte y seleccione **Más > Replicar** para insertar la zona protegida en una instancia de publicación localhost para expandir el dominio de la zona protegida.

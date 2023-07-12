@@ -1,24 +1,19 @@
 ---
 title: Creación de una zona protegida SCF
-seo-title: Create An SCF Sandbox
-description: AEM Este tutorial es principalmente para desarrolladores, nuevos en el ámbito de la aplicación, que están interesados en utilizar componentes de SCF.  Recorre la creación de un sitio de espacio aislado de SCF
-seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
+description: AEM Este tutorial es principalmente para desarrolladores, nuevos en el ámbito de la aplicación, que están interesados en utilizar componentes de SCF. Recorre la creación de un sitio de espacio aislado de SCF
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # Creación de una zona protegida SCF  {#create-an-scf-sandbox}
-
 
 AEM A partir de comunidades de 6.1, la forma más sencilla de crear rápidamente una zona protegida es crear un sitio de comunidad. Consulte [Introducción a AEM Communities](getting-started.md).
 
@@ -26,7 +21,7 @@ Otra herramienta útil para los desarrolladores es la [Guía de componentes de l
 
 AEM El ejercicio de crear un sitio web puede ser útil para comprender la estructura de un sitio web de la comunidad que puede incluir características de la comunidad, al tiempo que proporciona páginas sencillas en las que explorar y trabajar con la comunidad [marco de componentes sociales (SCF)](scf.md).
 
-AEM Este tutorial es principalmente para desarrolladores, nuevos en el ámbito de la aplicación, que están interesados en utilizar componentes de SCF. Recorre la creación de un sitio de espacio aislado de SCF, similar al tutorial de [Cómo crear un sitio web de Internet con todas las funciones](../../help/sites-developing/website.md) que se centra en las estructuras del sitio, como la navegación, el logotipo, la búsqueda, la barra de herramientas y la lista de páginas secundarias.
+AEM Este tutorial es principalmente para desarrolladores, nuevos en el ámbito de la aplicación, que están interesados en utilizar componentes de SCF. Recorre la creación de un sitio de espacio aislado de SCF, similar al tutorial de [Cómo crear un sitio web de Internet con todas las funciones](../../help/sites-developing/website.md) que se centra en estructuras del sitio, como la navegación, el logotipo, la búsqueda, la barra de herramientas y la lista de páginas secundarias.
 
 El desarrollo se produce en una instancia de autor, mientras que la experimentación con el sitio es mejor en una instancia de publicación.
 
@@ -80,7 +75,7 @@ Para trabajar con CRXDE Lite, debe iniciar sesión con privilegios de desarrolla
 * `password: admin`
 
 
-**Tenga en cuenta** Tenga en cuenta que este inicio de sesión agotará el tiempo de espera y deberá volver a iniciarlo periódicamente mediante la lista desplegable situada en el extremo derecho de la barra de herramientas de CRXDe Lite.
+Este inicio de sesión agota el tiempo de espera y debe volver a iniciarlo periódicamente mediante la lista desplegable situada en el extremo derecho de la barra de herramientas del CRXDE Lite.
 
 Si no ha iniciado sesión, no podrá navegar por el repositorio JCR ni realizar operaciones de edición/guardado.
 

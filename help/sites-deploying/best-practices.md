@@ -1,29 +1,25 @@
 ---
 title: Implementación de prácticas recomendadas
-seo-title: Deploying Best Practices
 description: Implementación y mantenimiento de prácticas recomendadas.
-seo-description: Deploying and maintaining best practices.
-uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 9%
+source-wordcount: '434'
+ht-degree: 11%
 
 ---
 
 # Implementación de prácticas recomendadas{#deploying-best-practices}
 
-AEM Las prácticas recomendadas sobre la implementación describen cómo implementar o mantener los recursos de la manera más eficiente y eficaz posible. AEM Esta creciente lista de temas incluye una variedad de áreas en el área de la.
+En las prácticas recomendadas de implementación se describe cómo implementar o mantener Adobe Experience Manager AEM () de la forma más eficiente y eficaz posible. AEM Esta lista cada vez más extensa de temas incluye diversas áreas en la práctica de la.
 
 Las siguientes áreas tienen documentación disponible sobre la implementación y el mantenimiento de las prácticas recomendadas y recomendaciones:
 
-* [OAK](#oak)
+* [Oak](#oak)
 * [Communities](#communities)
 * [IU](#ui)
 * [Rendimiento](#performance)
@@ -36,7 +32,7 @@ Para conocer las prácticas recomendadas sobre la administración, el desarrollo
 
 En las tablas siguientes se describen y vinculan documentos específicos.
 
-## OAK {#oak}
+## Oak {#oak}
 
 [Oak](/help/sites-deploying/platform.md) AEM es un repositorio de contenido jerárquico escalable y con buen rendimiento que es la base de la creación de informes de contenido de tipo
 
@@ -48,7 +44,7 @@ En las tablas siguientes se describen y vinculan documentos específicos.
    <td>Proporciona un documento técnico en el que se describen las características técnicas de agilidad, alto rendimiento y recuperación ante desastres con sonido</td>
   </tr>
   <tr>
-   <td>Implementaciones OAK recomendadas</td>
+   <td>Implementaciones de Oak recomendadas</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Implementaciones recomendadas</a></td>
    <td>Describe escenarios de implementación</td>
   </tr>
@@ -63,7 +59,7 @@ En las tablas siguientes se describen y vinculan documentos específicos.
    <td>En este documento se explican las prácticas recomendadas sobre el almacenamiento de datos binarios y nodos de contenido. Incluye información sobre el uso del almacén de datos de Amazon S3.</td>
   </tr>
   <tr>
-   <td>Buscar en OAK</td>
+   <td>Buscar en Oak</td>
    <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Prácticas recomendadas para consultas e indexación</a><br /> </td>
    <td>Describe las prácticas recomendadas sobre cómo indexar contenido.</td>
   </tr>
@@ -99,7 +95,7 @@ Las prácticas recomendadas en cuanto a rendimiento se enumeran a continuación:
   </tr>
   <tr>
    <td>Utilizar Dispatcher con una CDN</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilizar Dispatcher con una CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn">Utilizar Dispatcher con una CDN</a></td>
    <td>Una red de entrega de contenido (CDN), como Akamai Edge Delivery o Amazon Cloud Front, ofrece contenido desde una ubicación cercana al usuario final.</td>
   </tr>
   <tr>

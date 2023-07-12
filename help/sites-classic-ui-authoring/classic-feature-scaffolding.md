@@ -1,26 +1,24 @@
 ---
 title: Andamiaje
-description: A veces, es posible que tenga que crear un gran conjunto de páginas que compartan la misma estructura pero que tengan contenido diferente. Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.
-uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
+description: A veces, es posible que tenga que crear un gran conjunto de páginas que compartan estructura pero que tengan contenido diferente. Con el andamiaje, puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
 
 # Andamiaje{#scaffolding}
 
-A veces, es posible que tenga que crear un gran conjunto de páginas que compartan la misma estructura pero que tengan contenido diferente. AEM A través de la interfaz de usuario estándar, tendría que crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
+A veces, es posible que tenga que crear un gran conjunto de páginas que compartan estructura pero que tengan contenido diferente. A través de la interfaz estándar de Adobe Experience Manager AEM (), debe crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
 
-Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.
+Con el andamiaje, puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.
 
 >[!NOTE]
 >
@@ -31,8 +29,8 @@ Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen 
 Los andamios se almacenan en **Herramientas** consola del administrador del sitio.
 
 * Abra el **Herramientas** y haga clic en **Andamiaje de página predeterminada**.
-* Bajo este clic en **geometrixx**.
-* En **geometrixx** encontrará un... *página de andamio* llamado **Noticias**. Haga doble clic para abrir esta página.
+* En, haga clic en **Geometrixx**.
+* En **Geometrixx**, encontrará un *página de andamio* llamado **Noticias**. Haga doble clic para abrir esta página.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
@@ -42,10 +40,10 @@ El andamiaje consiste en un formulario con un campo para cada parte de contenido
 
 Las propiedades de la página de andamiaje son:
 
-* **Texto del título**: Este es el nombre de la propia página de andamiaje. En este ejemplo se llama &quot;News&quot;.
+* **Texto del título**: Este es el nombre de la propia página de andamiaje. En este ejemplo, se llama &quot;News&quot;.
 * **Descripción**: Aparece debajo del título en la página de andamiaje.
-* **Plantilla de destino**: Esta es la plantilla que utilizará este andamio cuando cree una nueva página. En este ejemplo es un *Página de contenido de Geometrixx* plantilla.
-* **Ruta de destino**: Esta es la ruta de la página principal por debajo de la cual este andamio creará nuevas páginas. En este ejemplo, la ruta es */content/geometrixx/en/news*.
+* **Plantilla de destino**: Esta es la plantilla que utilizará este andamio cuando cree una página. En este ejemplo, es un *Página de contenido de Geometrixx* plantilla.
+* **Ruta de destino**: Esta es la ruta de la página principal por debajo de la cual este andamio creará páginas. En este ejemplo, la ruta es */content/geometrixx/en/news*.
 
 El cuerpo del andamio es la forma. Cuando un usuario desea crear una página con el andamio, rellena el formulario y hace clic en *Crear*, en la parte inferior. En el **Noticias** Un ejemplo sobre el formulario tiene los siguientes campos:
 
@@ -60,15 +58,15 @@ El cuerpo del andamio es la forma. Cuando un usuario desea crear una página con
 
 ### Creación de un andamio {#creating-a-scaffold}
 
-Para crear un nuevo andamio, vaya al **Herramientas** consola, entonces **Andamiaje de página predeterminada** y cree una nueva página. Estará disponible un solo tipo de plantilla de página, el *Plantilla de andamiaje.*
+Para crear un nuevo andamio, vaya al **Herramientas** consola, entonces **Andamiaje de página predeterminada** y cree una página. Hay disponible un tipo de plantilla de una sola página, la variable *Plantilla de andamiaje.*
 
-Vaya a la **Propiedades de página** de la nueva página y configure el *Texto del título*, *Descripción*, *Plantilla de destino* y *Ruta de destino*, tal como se ha descrito anteriormente.
+Vaya a la **Propiedades de página** de la nueva página y configure el *Texto del título*, *Descripción*, *Plantilla de destino*, y *Ruta de destino*, tal como se ha descrito anteriormente.
 
 A continuación, debe definir la estructura de la página que creará este andamio. Para ello, vaya a **[modo de diseño](/help/sites-authoring/page-authoring.md#sidekick)** en la página andamiaje. Aparecerá un enlace que le permitirá editar el andamio en la **editor de diálogos**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-Con el editor de diálogos puede especificar las propiedades que se crearán cada vez que se cree una nueva página con este andamio.
+Con el editor de diálogos, se especifican las propiedades que se crearán cada vez que se cree una nueva página con este andamio.
 
 La definición del cuadro de diálogo de un andamio funciona de manera similar a la de un componente (consulte [Componentes](/help/sites-developing/components.md)). Sin embargo, se aplican algunas diferencias importantes:
 
@@ -82,7 +80,7 @@ Ahora, haga clic en el campo de diálogo **Cuadro de diálogo > Panel de pestañ
 
 ![textedit](assets/textedit.png)
 
-La lista de propiedades de este campo aparecerá en la parte derecha del editor de diálogos de esta manera:
+La lista de propiedades de este campo aparece a la derecha del editor de diálogos, de esta manera:
 
 ![list_of_properties](assets/list_of_properties.png)
 
@@ -97,7 +95,7 @@ Define la ubicación del almacenamiento de contenido para el texto que se introd
 * El hecho de que la cadena que se almacena aquí debe interpretarse como *texto enriquecido*, y
 * qué componente debe utilizarse para procesar este contenido en la página resultante.
 
-Tenga en cuenta que en un cuadro de diálogo de componente normal no tendría que especificar esta información porque está implícita en el hecho de que el cuadro de diálogo ya está enlazado a un componente específico.
+En un cuadro de diálogo de componente normal no tendría que especificar esta información porque está implícita en el hecho de que el cuadro de diálogo ya está enlazado a un componente específico.
 
 Para especificar estos dos fragmentos de información, se utilizan campos ocultos. Haga clic en el primer campo oculto **Cuadro de diálogo > Panel de pestañas > Texto > Oculto**, así:
 
@@ -113,11 +111,11 @@ La propiedad name de este campo oculto es
 
 Es una propiedad booleana que se utiliza para interpretar la cadena de texto almacenada en `./jcr:content/par/text/text`.
 
-Como sabemos que el texto debe interpretarse como texto enriquecido, especificamos el `value` propiedad de este campo como `true`.
+Como sabemos que el texto debe interpretarse como texto enriquecido, vamos a especificar el `value` propiedad de este campo como `true`.
 
 >[!CAUTION]
 >
->El editor de diálogos permite al usuario cambiar los valores de *existente* propiedades en la definición del cuadro de diálogo. Para agregar una nueva propiedad, el usuario debe utilizar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, cuando se agrega un nuevo campo oculto a una definición de cuadro de diálogo con el editor de diálogos, no tiene un *valor* propiedad (es decir, una propiedad con el nombre &quot;value&quot;). Si el campo oculto en cuestión requiere un valor predeterminado *valor* propiedad que se va a establecer, esta propiedad debe agregarse manualmente con una de las herramientas CRX. El valor no se puede agregar con el propio editor de diálogos. Sin embargo, una vez que la propiedad está presente, su valor se puede editar con el editor de diálogos.
+>El editor de diálogos permite al usuario cambiar los valores de *existente* propiedades en la definición del cuadro de diálogo. Para agregar una nueva propiedad, el usuario debe utilizar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, cuando se agrega un nuevo campo oculto a una definición de cuadro de diálogo con el editor de diálogos, no tiene un *valor* propiedad (es decir, una propiedad con el nombre &quot;value&quot;). Si el campo oculto en cuestión requiere que se establezca una propiedad de valor predeterminada, esta propiedad debe agregarse manualmente con una de las herramientas CRX. El valor no se puede agregar con el propio editor de diálogos. Sin embargo, una vez que la propiedad está presente, su valor se puede editar con el editor de diálogos.
 
 El segundo campo oculto se puede ver haciendo clic en él de esta manera:
 
@@ -131,7 +129,7 @@ La propiedad name de este campo oculto es
 
 `./jcr:content/par/text/sling:resourceType`
 
-y el valor fijo especificado para esta propiedad es
+Y el valor fijo especificado para esta propiedad es
 
 `foundation/components/textimage`
 
@@ -156,7 +154,7 @@ Estos muestran que el componente no se puede editar hasta que se cancele la here
 
 Al hacer clic en el símbolo de bloqueo o en el icono de imagen, puede interrumpir la herencia:
 
-* el símbolo cambiará a un candado abierto.
+* el símbolo cambia a un candado abierto.
 * una vez desbloqueado, puede editar el contenido.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
