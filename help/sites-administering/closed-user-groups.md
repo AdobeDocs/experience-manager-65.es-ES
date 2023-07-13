@@ -1,20 +1,16 @@
 ---
 title: AEM Grupos de usuarios cerrados en el
-seo-title: Closed User Groups in AEM
 description: AEM Obtenga información acerca de los grupos de usuarios cerrados en la.
-seo-description: Learn about Closed User Groups in AEM.
-uuid: 83396163-86ce-406b-b797-2457ed975ccd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6845'
 ht-degree: 0%
 
 ---
@@ -66,7 +62,7 @@ Este nuevo tipo de directiva tiene las siguientes características:
 La implementación de PrincipalSetPolicy utilizada para representar CUG además define lo siguiente:
 
 * Las políticas de CUG solo conceden acceso de lectura a los elementos JCR normales (por ejemplo, se excluye el contenido de control de acceso).
-* El ámbito se define mediante el nodo controlado de acceso que contiene la directiva CUG;
+* El ámbito se define mediante el nodo controlado por acceso que contiene la directiva CUG;
 * Las políticas de CUG se pueden anidar, un CUG anidado inicia un nuevo CUG sin heredar el conjunto principal del CUG &quot;principal&quot;.
 * El efecto de la directiva, si la evaluación está habilitada, se hereda a todo el subárbol hasta el siguiente CUG anidado.
 
@@ -78,7 +74,7 @@ A diferencia de la implementación anterior, las nuevas políticas de CUG siempr
 
 #### Evaluación de permisos de políticas de CUG {#permission-evaluation-of-cug-policies}
 
-Aparte de una gestión específica del control de acceso para los CUG, el nuevo modelo de autorización permite permitir condicionalmente la evaluación de permisos para sus políticas. Esto permite configurar las políticas de CUG en un entorno de ensayo y permitir la evaluación de los permisos efectivos solo una vez duplicados en el entorno de producción.
+Además de una administración de control de acceso dedicada para los CUG, el nuevo modelo de autorización permite habilitar de forma condicional la evaluación de permisos para sus directivas. Esto permite configurar las políticas de CUG en un entorno de ensayo y habilitar solo la evaluación de los permisos efectivos una vez duplicados en el entorno de producción.
 
 La evaluación de permisos para políticas de CUG y la interacción con el modelo de autorización predeterminado o cualquier modelo de autorización adicional sigue el patrón diseñado para varios mecanismos de autorización en Apache Jackrabbit Oak: un conjunto determinado de permisos se concede si y solo si todos los modelos conceden acceso. Consulte [esta página](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) para obtener más información.
 
@@ -90,18 +86,18 @@ Las siguientes características se aplican a la evaluación de permisos asociada
 El efecto de una única política de CUG sobre la evaluación de permisos se puede resumir de la siguiente manera:
 
 * Se deniega el acceso de lectura a todas las personas, excepto a los sujetos que contienen entidades principales excluidas o entidades principales enumeradas en la directiva.
-* La directiva tiene efecto en el nodo controlado de acceso que contiene la directiva y sus propiedades;
-* El efecto se hereda adicionalmente en la jerarquía, es decir, el árbol de elementos definido por el nodo controlado de acceso;
-* Sin embargo, no afecta a los hermanos ni a los antecesores del nodo controlado de acceso;
+* La directiva tiene efecto en el nodo controlado por acceso que contiene la directiva y sus propiedades;
+* El efecto se hereda adicionalmente en la jerarquía, es decir, el árbol de elementos definido por el nodo controlado por acceso;
+* Sin embargo, no afecta a los hermanos ni a los antecesores del nodo controlado por acceso;
 * La herencia de un CUG determinado se detiene en un CUG anidado.
 
 #### Prácticas recomendadas {#best-practices}
 
 Se deben tener en cuenta las siguientes prácticas recomendadas para definir el acceso de lectura restringido a través de CUG:
 
-* Tome una decisión consciente sobre si su necesidad de un CUG se trata de restringir el acceso de lectura o de un requisito de autenticación. En caso de esto último o si hay necesidad de ambos, consulte la sección sobre Prácticas recomendadas para obtener más información sobre el requisito de autenticación
+* Tome una decisión consciente sobre si su necesidad de un CUG se trata de restringir el acceso de lectura o de un requisito de autenticación. Si esto último sucede, o si es necesario hacerlo, consulte la sección sobre Prácticas recomendadas para obtener más información sobre el requisito de autenticación
 * Cree un modelo de amenazas para los datos o el contenido que debe protegerse para identificar los límites de las amenazas y tener una idea clara de la confidencialidad de los datos y las funciones asociadas con el acceso autorizado
-* Modele el contenido del repositorio y los CUG teniendo en cuenta los aspectos y las prácticas recomendadas generales relacionados con la autorización:
+* Modele el contenido del repositorio y los CUG teniendo en cuenta los aspectos generales relacionados con la autorización y las prácticas recomendadas:
 
    * Recuerde que el permiso de lectura solo se concederá si un CUG determinado y la evaluación de otros módulos implementados en la concesión de configuración permiten que un sujeto determinado lea un elemento de repositorio determinado
    * Evite crear CUG redundantes en los que el acceso de lectura ya está restringido por otros módulos de autorización
@@ -113,7 +109,7 @@ Se deben tener en cuenta las siguientes prácticas recomendadas para definir el 
 
 ### Autenticación: Definición del requisito de autenticación {#authentication-defining-the-auth-requirement}
 
-Las partes relacionadas con la autenticación de la función CUG permiten marcar árboles que requieran autenticación y, opcionalmente, especificar una página de inicio de sesión dedicada. De acuerdo con la versión anterior, la nueva implementación permite marcar árboles que requieran autenticación en el repositorio de contenido y habilitar condicionalmente la sincronización con `Sling org.apache.sling.api.auth.Authenticator`responsable de aplicar finalmente el requisito y redirigir a un recurso de inicio de sesión.
+Las partes relacionadas con la autenticación de la función CUG permiten marcar árboles que requieren autenticación y, opcionalmente, especificar una página de inicio de sesión dedicada. De acuerdo con la versión anterior, la nueva implementación permite marcar los árboles que requieren autenticación en el repositorio de contenido y habilitar de forma condicional la sincronización con `Sling org.apache.sling.api.auth.Authenticator`responsable de aplicar finalmente el requisito y redirigir a un recurso de inicio de sesión.
 
 Estos requisitos se registran con el autenticador mediante un servicio OSGi que proporciona el `sling.auth.requirements` propiedad de registro. A continuación, estas propiedades se utilizan para ampliar dinámicamente los requisitos de autenticación. Para obtener más información, consulte la [Documentación de Sling](https://sling.apache.org/apidocs/sling7/org/apache/sling/auth/core/AuthConstants.html#AUTH_REQUIREMENTS).
 
@@ -146,19 +142,19 @@ La evaluación de la ruta de inicio de sesión y el redireccionamiento al recurs
 Al llamar `AuthenticationHandler.requestCredentials` este controlador intenta determinar la página de inicio de sesión de asignación a la que se redirigirá al usuario. Esto incluye los siguientes pasos:
 
 * Distinguir entre contraseña caducada y necesidad de inicio de sesión regular como motivo para la redirección;
-* En el caso de un inicio de sesión normal, comprueba si una ruta de inicio de sesión se puede obtener en el siguiente orden:
+* Si es un inicio de sesión normal, comprueba si se puede obtener una ruta de inicio de sesión en el siguiente orden:
 
    * desde LoginPathProvider tal como lo implementa el nuevo `com.adobe.granite.auth.requirement.impl.RequirementService`,
    * de la implementación antigua y obsoleta de CUG,
    * de las Asignaciones de páginas de inicio de sesión, tal como se definen con la variable `LoginSelectorHandler`,
-   * y, por último, vuelva a la página de inicio de sesión predeterminada, tal como se define en la variable `LoginSelectorHandler`.
+   * y, por último, vuelva a la página de inicio de sesión predeterminada, tal como se define en la `LoginSelectorHandler`.
 
 * Tan pronto como se obtenga una ruta de inicio de sesión válida a través de las llamadas enumeradas anteriormente, la solicitud del usuario se redirigirá a esa página.
 
 El objetivo de esta documentación es la evaluación de la ruta de inicio de sesión expuesta por el `LoginPathProvider` interfaz. AEM La implementación enviada desde la versión 6.3 se comporta de la siguiente manera:
 
 * El registro de las rutas de inicio de sesión depende de la distinción entre la contraseña caducada y la necesidad de iniciar sesión de forma regular como motivo para la redirección
-* En el caso del inicio de sesión normal, comprueba si una ruta de inicio de sesión se puede obtener en el siguiente orden:
+* Si el inicio de sesión es regular, comprueba si la ruta de inicio de sesión se puede obtener en el siguiente orden:
 
    * desde el `LoginPathProvider` según lo implementado por el nuevo `com.adobe.granite.auth.requirement.impl.RequirementService`,
    * de la implementación antigua y obsoleta de CUG,
@@ -178,7 +174,7 @@ El `LoginPathProvider` según se haya implementado mediante la nueva compatibili
 Se deben tener en cuenta las siguientes prácticas recomendadas al definir los requisitos de autenticación:
 
 * Evite anidar requisitos de autenticación: colocar un solo marcador de requisito de autenticación al principio de un árbol debe ser suficiente y se hereda a todo el subárbol definido por el nodo de destino. Los requisitos de autenticación adicionales dentro de ese árbol deben considerarse redundantes y pueden provocar problemas de rendimiento al evaluar el requisito de autenticación dentro de Apache Sling. Con la separación de las áreas de CUG relacionadas con la autorización y la autenticación, es posible restringir el acceso de lectura mediante CUG u otro tipo de políticas, al mismo tiempo que se aplica la autenticación para todo el árbol.
-* Contenido del repositorio de modelo tal que los requisitos de autenticación se apliquen a todo el árbol sin necesidad de excluir de nuevo los subárboles anidados del requisito.
+* Contenido del repositorio de modelo tal que los requisitos de autenticación se apliquen a todo el árbol sin necesidad de excluir de nuevo los subárboles anidados de los requisitos.
 * Para evitar especificar y, posteriormente, registrar rutas de inicio de sesión redundantes:
 
    * basarse en la herencia y evitar definir rutas de inicio de sesión anidadas,
@@ -281,7 +277,7 @@ if (cugPolicy.addPrincipals(toAdd1, toAdd2) || cugPolicy.removePrincipals(toRemo
 
 ### Recuperar políticas de CUG efectivas {#retrieve-effective-cug-policies}
 
-La administración de control de acceso JCR define un método de mejor esfuerzo para recuperar las políticas que surten efecto en una ruta determinada. Debido a que la evaluación de las políticas de CUG es condicional y depende de la configuración correspondiente para habilitarse, llame a `getEffectivePolicies` es una forma cómoda de comprobar si una directiva CUG determinada está surtiendo efecto en una instalación determinada.
+La administración de control de acceso JCR define un método de mejor esfuerzo para recuperar las políticas que surten efecto en una ruta determinada. Dado que la evaluación de las políticas de CUG es condicional y depende de la configuración correspondiente para habilitarse, llame a `getEffectivePolicies` es una forma cómoda de comprobar si una directiva CUG determinada está surtiendo efecto en una instalación determinada.
 
 >[!NOTE]
 >
@@ -324,7 +320,7 @@ while (isSupportedPath(path)) {
 }
 ```
 
-#### Administración de directivas de CUG por entidad principal {#managing-cug-policies-by-pincipal}
+#### Administración de directivas de CUG por principal {#managing-cug-policies-by-pincipal}
 
 Las extensiones definidas por `JackrabbitAccessControlManager` que permiten editar directivas de control de acceso por principal no se implementan con la administración de control de acceso de CUG, ya que por definición una directiva de CUG siempre afecta a todas las principales: las enumeradas con la variable `PrincipalSetPolicy` se les concede acceso de lectura, mientras que a todos los demás principales se les impedirá leer el contenido en el árbol definido por el nodo de destino.
 
@@ -476,7 +472,7 @@ AEM En la tabla siguiente se enumeran las combinaciones válidas de directivas C
 | Sí | No | Sí | Un usuario determinado solo podrá ver el subárbol marcado con la directiva CUG si la evaluación efectiva de permisos concede acceso. Se redirigirá a un usuario no autenticado a una página de inicio de sesión predeterminada heredada. |
 | Sí | Sí | No | Se redirigirá a un usuario no autenticado a la página de inicio de sesión especificada. El hecho de que se permita o no ver el árbol marcado con el requisito de autenticación depende de los permisos efectivos de los elementos individuales contenidos en ese subárbol. No hay ningún CUG dedicado que restrinja el acceso de lectura. |
 | Sí | No | No | Se redirigirá a un usuario no autenticado a una página de inicio de sesión predeterminada heredada. El hecho de que se permita o no ver el árbol marcado con el requisito de autenticación depende de los permisos efectivos de los elementos individuales contenidos en ese subárbol. No hay ningún CUG dedicado que restrinja el acceso de lectura. |
-| No | No | Sí | Un usuario autenticado o no autenticado determinado solo podrá ver el subárbol marcado con la directiva CUG si la evaluación de permisos efectiva concede acceso. Un usuario no autenticado recibirá el mismo trato y no se le redirigirá al inicio de sesión. |
+| No | No | Sí | Un usuario autenticado o no autenticado determinado solo podrá ver el subárbol marcado con la directiva CUG si la evaluación de permisos efectiva concede acceso. Un usuario no autenticado recibirá el mismo trato y no se le redirigirá para que inicie sesión. |
 
 >[!NOTE]
 >
@@ -490,7 +486,7 @@ Consulte también la documentación de asignación de CUG para una asignación c
 
 ### Autorización: instalación y configuración {#authorization-setup-and-configuration}
 
-Las nuevas partes relacionadas con la autorización se incluyen en el **Autorización de Oak CUG** paquete ( `org.apache.jackrabbit.oak-authorization-cug`AEM ), que forma parte de la instalación predeterminada de la. El paquete define un modelo de autorización separado que se va a implementar como una forma adicional de administrar el acceso de lectura.
+Las partes nuevas relacionadas con la autorización se incluyen en el **Autorización de Oak CUG** paquete ( `org.apache.jackrabbit.oak-authorization-cug`AEM ), que forma parte de la instalación predeterminada de la. El paquete define un modelo de autorización separado que se va a implementar como una forma adicional de administrar el acceso de lectura.
 
 #### Configuración de la autorización de CUG {#setting-up-cug-authorization}
 
@@ -555,7 +551,7 @@ Se han introducido los dos componentes OSGi siguientes para definir los requisit
   </tr>
   <tr>
    <td>Descripción</td>
-   <td>Permite excluir de la evaluación de CUG las entidades de seguridad con los nombres configurados.</td>
+   <td>Permite excluir de la evaluación de CUG entidades de seguridad con los nombres configurados.</td>
   </tr>
   <tr>
    <td>Propiedades de configuración</td>
@@ -602,17 +598,17 @@ Como alternativa, es posible proporcionar e implementar una implementación pers
 
 ### Autenticación: instalación y configuración {#authentication-setup-and-configuration}
 
-Las partes nuevas relacionadas con la autenticación se encuentran en **Controlador de autenticación de Adobe Granite** paquete ( `com.adobe.granite.auth.authhandler` versión 5.6.48). AEM Este paquete forma parte de la instalación predeterminada de la.
+Las partes nuevas relacionadas con la autenticación se encuentran en la variable **Controlador de autenticación de Adobe Granite** paquete ( `com.adobe.granite.auth.authhandler` versión 5.6.48). AEM Este paquete forma parte de la instalación predeterminada de la.
 
 AEM Para configurar el reemplazo del requisito de autenticación para la compatibilidad con CUG obsoleta, algunos componentes OSGi deben estar presentes y activos en una instalación de determinada. Para obtener más información, consulte **Características de los componentes OSGi** más abajo.
 
 >[!NOTE]
 >
->Debido a la opción de configuración obligatoria con RequirementHandler, las partes relacionadas con la autenticación solo estarán activas si la función se ha habilitado especificando un conjunto de rutas admitidas. AEM Con una instalación estándar, la característica se deshabilita en el modo de ejecución de autor y se habilita para /content en el modo de ejecución de publicación.
+>Debido a la opción de configuración obligatoria con RequirementHandler, las partes relacionadas con la autenticación solo estarán activas si la función se ha habilitado al especificar un conjunto de rutas admitidas. AEM Con una instalación estándar, la característica se deshabilita en el modo de ejecución de autor y se habilita para /content en el modo de ejecución de publicación.
 
 **Características de los componentes OSGi**
 
-Se han introducido los dos componentes OSGi siguientes para definir los requisitos de autenticación y especificar rutas de inicio de sesión dedicadas:
+Se han introducido los dos componentes OSGi siguientes para definir los requisitos de autenticación y especificar las rutas de inicio de sesión dedicadas:
 
 * `com.adobe.granite.auth.requirement.impl.RequirementService`
 * `com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler`
@@ -784,7 +780,7 @@ El componente OSGi obsoleto **Soporte de Adobe Granite Closed User Group (CUG)**
 
 ## Diferencias en la gestión de CUG en el contenido del repositorio {#differences-in-managing-cugs-in-the-repository-content}
 
-Las secciones siguientes describen las diferencias entre las implementaciones antiguas y nuevas desde el punto de vista de la implementación y la seguridad. Aunque la nueva implementación pretende proporcionar la misma funcionalidad, hay cambios sutiles que son importantes conocer al utilizar el nuevo CUG.
+En las secciones siguientes se describen las diferencias entre las implementaciones antiguas y nuevas desde el punto de vista de la implementación y la seguridad. Aunque la nueva implementación pretende proporcionar la misma funcionalidad, hay cambios sutiles que son importantes conocer al utilizar el nuevo CUG.
 
 ### Diferencias Con Respecto A La Autorización {#differences-with-regards-to-authorization}
 
@@ -812,7 +808,7 @@ Al pasar de la antigua compatibilidad con CUG a un modelo de autorización adici
 
 En otras palabras, para la evaluación de los permisos efectivos, tanto la `CUGPolicy` y se tendrán en cuenta las entradas de control de acceso predeterminadas, y el acceso de lectura al contenido de CUG solo se concederá si lo conceden ambos tipos de directivas. AEM En una instalación predeterminada de publicación en la que el acceso de lectura a la `/content` El árbol se concede a todos, el efecto de las políticas de CUG será el mismo que con la implementación antigua.
 
-**Evaluación a petición**
+**Evaluación bajo demanda**
 
 El modelo de autorización de CUG permite activar individualmente la gestión del control de acceso y la evaluación de permisos:
 
@@ -877,7 +873,7 @@ AEM Para la instalación actualizada de la, es importante asegurarse de que solo
 El Adobe proporciona una herramienta para migrar a la nueva implementación de CUG. Para utilizarlo, realice los siguientes pasos:
 
 1. Ir a `https://<serveraddress>:<serverport>/system/console/cug-migration` para acceder a la herramienta.
-1. Introduzca la ruta raíz para la que desea comprobar los CUG y pulse el botón **Realizar ejecución en seco** botón. Esto buscará los CUG aptos para la conversión en la ubicación seleccionada.
+1. Introduzca la ruta raíz para la que desea comprobar los CUG y pulse el botón **Realizar simulacro** botón. Esto buscará los CUG aptos para la conversión en la ubicación seleccionada.
 1. Después de revisar los resultados, presione la tecla **Realización de migración** para migrar a la nueva implementación.
 
 >[!NOTE]

@@ -1,41 +1,37 @@
 ---
 title: Creación de un Cloud Service personalizado
-seo-title: Creating a Custom Cloud Service
 description: El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados
-seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
-uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 14%
+source-wordcount: '406'
+ht-degree: 15%
 
 ---
 
 # Creación de un Cloud Service personalizado{#creating-a-custom-cloud-service}
 
-El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto le permite insertar marcado personalizado en la página de forma estructurada. Esto será principalmente útil para proveedores de análisis de terceros, por ejemplo, Google Analytics, Chartbeat, etc. Los Cloud Services se heredan de las páginas principales a las secundarias, con la capacidad de interrumpir la herencia en cualquier nivel.
+El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto le permite insertar marcado personalizado en la página de forma estructurada. Esto es principalmente útil para proveedores de análisis de terceros, como Google Analytics, Chartbeat, etc. Los Cloud Services se heredan de las páginas principales a las secundarias, con la capacidad de interrumpir la herencia en cualquier nivel.
 
 >[!NOTE]
 >
->Esta guía paso a paso para crear un nuevo Cloud Service es un ejemplo con Google Analytics. Es posible que no todo se aplique a su caso de uso.
+>Esta guía paso a paso para crear un Cloud Service es un ejemplo con Google Analytics. Es posible que no todo se aplique a su caso de uso.
 
-1. En CRXDE Lite, cree un nuevo nodo en `/apps`:
+1. En CRXDE Lite, cree un nodo en `/apps`:
 
    * **Nombre**: `acs`
    * **Tipo**: `nt:folder`
 
-1. Cree un nuevo nodo en `/apps/acs`:
+1. Cree un nodo en `/apps/acs`:
 
    * **Nombre**: `analytics`
    * **Tipo**: `sling:Folder`
 
-1. Cree dos nodos nuevos en `/apps/acs/analytics`:
+1. Cree dos nodos en `/apps/acs/analytics`:
 
    * **Nombre**: componentes
    * **Tipo**: `sling:Folder`
@@ -45,8 +41,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Nombre**: plantillas
    * **Tipo**: `sling:Folder`
 
-
-1. Clic derecho en `/apps/acs/analytics/components`. Seleccionar **Crear...** seguido de **Crear componente...** El cuadro de diálogo que se abre le permite especificar lo siguiente:
+1. Clic con el botón derecho en `/apps/acs/analytics/components`. Seleccionar **Crear...** seguido de **Crear componente...** El cuadro de diálogo que se abre le permite especificar lo siguiente:
 
    * **Etiqueta**: `googleanalyticspage`
    * **Título**: `Google Analytics Page`
@@ -64,7 +59,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Nombre:** `cq:defaultView`
    * **Valor:** `html`
 
-1. Cree un nuevo archivo llamado `content.jsp` bajo `/apps/acs/analytics/components/googleanalyticspage`, con el siguiente contenido:
+1. Cree un archivo llamado `content.jsp` bajo `/apps/acs/analytics/components/googleanalyticspage`, con el siguiente contenido:
 
    ```xml
    <%@page contentType="text/html"
@@ -79,7 +74,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    </div>
    ```
 
-1. Cree un nuevo nodo en `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/`:
 
    * **Nombre**: `dialog`
    * **Tipo**: `cq:Dialog`
@@ -92,7 +87,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
       * **Tipo**: `String`
       * **Valor**: `dialog`
 
-1. Cree un nuevo nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
    * **Nombre**: `items`
    * **Tipo**: `cq:Widget`
@@ -102,12 +97,12 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
       * **Tipo**: `String`
       * **Valor**: `tabpanel`
 
-1. Cree un nuevo nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
    * **Nombre**: `items`
    * **Tipo**: `cq:WidgetCollection`
 
-1. Cree un nuevo nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
    * **Nombre**: pestaña1
    * **Tipo**: `cq:Panel`
@@ -117,7 +112,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
       * **Tipo**: `String`
       * **Valor**: `Config`
 
-1. Cree un nuevo nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Cree un nodo en `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
    * **Nombre**: elementos
    * **Tipo**: `nt:unstructured`
@@ -142,7 +137,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
       * **Valor**: `textfield`
 
 1. Copiar `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` hasta `/apps/acs/analytics/components/googleanalyticspage/body.jsp` y cambiar `libs` hasta `apps` en la línea 34 y haga de la referencia de la secuencia de comandos en la línea 79 una ruta totalmente cualificada.
-1. Cree una nueva plantilla en `/apps/acs/analytics/templates/`:
+1. Cree una plantilla en `/apps/acs/analytics/templates/`:
 
    * con **Tipo de medio** = `acs/analytics/components/googleanalyticspage`
    * con **Etiqueta** = `googleanalytics`
@@ -152,7 +147,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * con **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (en el nodo de plantilla, no en el nodo jcr:content)
    * con **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (en jcr:content)
 
-1. Crear nuevo componente: `/apps/acs/analytics/components/googleanalytics`.
+1. Crear un componente: `/apps/acs/analytics/components/googleanalytics`.
 
    Añada el siguiente contenido a `googleanalytics.jsp`:
 
@@ -195,7 +190,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
 
    Esto debería generar el marcado personalizado en función de las propiedades de configuración.
 
-1. Vaya a `http://localhost:4502/miscadmin#/etc/cloudservices` y cree una nueva página:
+1. Vaya a `http://localhost:4502/miscadmin#/etc/cloudservices` y cree una página:
 
    * **Título**: `Google Analytics`
    * **Nombre**: `googleanalytics`
@@ -206,8 +201,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Tipo**: `String`
    * **Valor**: `acs/analytics/components/googleanalytics`
 
-
-1. Vaya a la página de servicio recién creada ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) y haga clic en **+** para crear una nueva configuración:
+1. Vaya a la página de servicio recién creada ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) y haga clic en **+** para crear una configuración:
 
    * **Configuración principal**: `/etc/cloudservices/googleanalytics`
    * **Título:**  `My First GA Config`

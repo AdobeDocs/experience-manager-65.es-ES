@@ -1,25 +1,21 @@
 ---
 title: Cómo utilizar la herramienta de servidor proxy
-seo-title: How to use the Proxy Server Tool
 description: El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor
-seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
-uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
 
 # Cómo utilizar la herramienta de servidor proxy{#how-to-use-the-proxy-server-tool}
 
-El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto le permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
+El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
 
 AEM Puede encontrar el servidor proxy en su instalación de la aquí:
 
@@ -32,7 +28,7 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 * SMTP para mensajes de correo electrónico
 * LDAP para la administración de usuarios
 
-AEM Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones que se comunican a través de una red TCP/IP; por ejemplo, un explorador web y un servidor de correo electrónico de la red de red de la red de red de la red de Internet (). Esto le permite monitorizar exactamente lo que sucede cuando solicita una página CQ.
+AEM Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualquiera que se comuniquen a través de una red TCP/IP; por ejemplo, un explorador web y un servidor de correo electrónico de la red de red (). Esto le permite monitorizar exactamente lo que sucede cuando solicita una página CQ.
 
 ## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
@@ -44,7 +40,7 @@ Inicie el servidor en la línea de comandos:
 
 `<host>`
 
-Esta es la dirección de host de la instancia CRX a la que desea conectarse. Si la instancia está en el equipo local, el estado será `localhost`.
+Esta es la dirección de host de la instancia CRX a la que desea conectarse. Si la instancia está en el equipo local, este es `localhost`.
 
 `<remoteport>`
 
@@ -106,11 +102,11 @@ Por ejemplo, considere una página que produzca el siguiente código cuando se s
 
 ### Ejemplos {#example}
 
-Por ejemplo, considere un documento HTML muy sencillo ubicado en el repositorio en
+Por ejemplo, considere un documento HTML simple en el repositorio en
 
 `/content/test.html`
 
-junto a un archivo de imagen ubicado en
+Junto a un archivo de imagen en
 
 `/content/test.jpg`
 
@@ -128,13 +124,13 @@ El contenido de `test.html` es:
 </html>
 ```
 
-AEM Suponiendo que la instancia de se esté ejecutando en `localhost:4502` iniciamos el proxy de esta manera:
+AEM Suponiendo que la instancia de se esté ejecutando en `localhost:4502`, el proxy se inicia de esta manera:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y toda la comunicación a través de este puerto se registra en `test.log`.
+Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y todas las comunicaciones a través de este puerto se registran en `test.log`.
 
-AEM Si ahora vemos la salida del proxy, veremos la interacción entre el explorador y la instancia de la.
+AEM Si ahora observa la salida del proxy, verá la interacción entre el explorador y la instancia de la.
 
 Al inicio, el proxy genera lo siguiente:
 
@@ -143,11 +139,11 @@ starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-A continuación, abrimos un explorador y accedemos a la página de prueba:
+A continuación, abra un explorador y acceda a la página de prueba:
 
 `http://localhost:4444/content/test.html`
 
-y vemos que el navegador hace una `GET` solicitud de la página:
+Y se ve que el navegador hace una `GET` solicitud de la página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -219,7 +215,7 @@ Para comprobar si la conexión persistente funciona:
 
 **Búsqueda de solicitudes perdidas**
 
-Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un cortafuegos y un distribuidor, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. En el caso de un cortafuegos:
+Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un cortafuegos y un Dispatcher, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. Si hay un cortafuegos:
 
 * Iniciar un proxy antes de un cortafuegos
 * Iniciar otro proxy después de un cortafuegos
@@ -231,4 +227,4 @@ Si sufre solicitudes que se bloquean de vez en cuando:
 
 * Inicie el proxy.
 * Espere o escriba el registro de acceso en un archivo en el que cada entrada tenga una marca de tiempo.
-* Cuando la solicitud comienza a bloquearse, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
+* Cuando la solicitud empieza a cambiar, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
