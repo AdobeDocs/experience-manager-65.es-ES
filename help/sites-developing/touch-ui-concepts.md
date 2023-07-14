@@ -1,26 +1,22 @@
 ---
-title: AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la
-seo-title: Concepts of the AEM Touch-Enabled UI
-description: AEM Con el Adobe de la versión 5.6 de se ha introducido una nueva interfaz de usuario táctil optimizada con diseño interactivo para el entorno de creación.
-seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
-uuid: 401c5a65-6ddc-4942-ab8e-395016f9c629
+title: Conceptos de la IU táctil de Adobe Experience Manager
+description: Con Adobe Experience Manager 5.6, Adobe introdujo una nueva interfaz de usuario táctil optimizada con diseño interactivo para el entorno de creación
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2167'
 ht-degree: 1%
 
 ---
 
-# AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la{#concepts-of-the-aem-touch-enabled-ui}
+# Conceptos de la IU táctil de Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
-AEM cuenta con una interfaz de usuario táctil con [diseño interactivo](/help/sites-authoring/responsive-layout.md) para el entorno de creación diseñado para funcionar tanto en dispositivos táctiles como de escritorio.
+Adobe Experience Manager AEM () cuenta con una interfaz de usuario táctil con [diseño interactivo](/help/sites-authoring/responsive-layout.md) para el entorno de creación diseñado para funcionar tanto en dispositivos táctiles como de escritorio.
 
 >[!NOTE]
 >
@@ -31,20 +27,20 @@ La IU táctil incluye lo siguiente:
 * El encabezado de grupo indica que:
    * Muestra el logotipo
    * Proporciona un vínculo a la navegación global
-   * Proporciona un vínculo a otras acciones genéricas, como Buscar, Ayuda, Soluciones de Marketing Cloud, Notificaciones y Configuración de usuario.
+   * Proporciona un vínculo a otras acciones genéricas, como Buscar, Ayuda, Soluciones de Experience Cloud, Notificaciones y Configuración de usuario.
 * El carril izquierdo (se muestra cuando es necesario y se puede ocultar), que puede mostrar:
    * Escala de cronología
    * Referencias
    * Filtros
 * El encabezado de navegación, que de nuevo distingue entre contextos y puede mostrar:
-   * Indica la consola que está utilizando actualmente o su ubicación dentro de esa consola
+   * Indica la consola que está utilizando actualmente, su ubicación o ambas dentro de esa consola
    * Selección para el carril izquierdo
    * Rutas de exploración
    * Acceso a los **Crear** acciones
    * Ver selecciones
 * El área de contenido que:
    * Enumera los elementos de contenido (ya sean páginas, recursos, publicaciones en foros, etc.)
-   * Se puede formatear como se solicita, por ejemplo: columna, tarjeta o lista
+   * Puede tener el formato solicitado, por ejemplo, columna, tarjeta o lista
    * Utiliza un diseño interactivo (la pantalla cambia de tamaño automáticamente según el tamaño del dispositivo o la ventana)
    * Utiliza desplazamiento infinito (no más paginación, todos los elementos se muestran en una ventana)
 
@@ -52,7 +48,7 @@ La IU táctil incluye lo siguiente:
 
 >[!NOTE]
 >
->AEM Casi toda la funcionalidad de la se ha trasladado a la interfaz de usuario táctil. Sin embargo, en algunos casos limitados, la funcionalidad volverá a la IU clásica. Consulte [Estado de función de IU táctil](/help/release-notes/touch-ui-features-status.md) para obtener más información.
+>AEM Casi toda la funcionalidad de la se ha trasladado a la interfaz de usuario táctil. Sin embargo, en algunos casos limitados, la funcionalidad vuelve a la IU clásica. Consulte [Estado de función de IU táctil](/help/release-notes/touch-ui-features-status.md) para obtener más información.
 
 La IU táctil ha sido diseñada por Adobe para proporcionar coherencia en la experiencia del usuario en varios productos. Se basa en:
 
@@ -69,11 +65,11 @@ Los principios básicos de la IU táctil son los siguientes:
 * Incluir pruebas incrustadas
 * Diseño ascendente para garantizar que estos principios se apliquen a cada elemento y componente
 
-Para obtener más información general sobre la estructura de la IU táctil, consulte el artículo [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md).
+Para obtener más información general sobre la estructura de la IU táctil, consulte [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM Pila de tecnología {#aem-technology-stack}
 
-AEM Utiliza la plataforma Granite como base y la plataforma Granite incluye, entre otras cosas, el repositorio de contenido Java.
+AEM Utiliza la plataforma Granite como base y la plataforma Granite incluye, entre otras cosas, el repositorio de contenido Java™.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -121,7 +117,7 @@ La IU de Granite:
 * Proporciona una interfaz de usuario predeterminada y estandarizada
 * Es extensible
 * Está diseñado tanto para dispositivos móviles como de escritorio (respeta primero el móvil)
-* AEM Se puede utilizar en cualquier plataforma/producto/proyecto basado en Granite; p. ej., se puede usar en cualquier proyecto de
+* AEM Se puede utilizar en cualquier plataforma/producto/proyecto basado en Granite; por ejemplo,
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -158,7 +154,7 @@ Se entregan como parte del paquete de contenido:
 
 Se forma mediante una colección de componentes de sling que permiten al autor *componer* una aplicación web rápida. Cuando el desarrollador desarrolla componentes, el autor los monta para que sean una aplicación web. La función del lado del servidor es proporcionar la asequibilidad de los hipermedios (marcado) al cliente.
 
-Actualmente, los componentes se encuentran en el repositorio de Granite en:
+Actualmente, los componentes están en el repositorio de Granite en:
 
 `/libs/granite/ui/components/foundation`
 
@@ -201,7 +197,7 @@ Las diferencias entre la interfaz de usuario de Granite y ExtJS (utilizadas para
 
 ### Componentes de Granite UI Foundation {#granite-ui-foundation-components}
 
-El [Componentes de base de Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
+El [Componentes de base de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
 
 * Botón
 * Hipervínculo
@@ -221,8 +217,8 @@ Función:
 
 Implementación:
 
-* Composición y configuración basadas en repositorio
-* Aprovechamiento de las instalaciones de prueba proporcionadas por la plataforma Granite
+* Composición y configuración basadas en repositorios
+* Uso de las instalaciones de prueba proporcionadas por la plataforma Granite
 * Creación de plantillas JSP
 
 Otras bibliotecas pueden utilizar o ampliar esta biblioteca de componentes de base.
@@ -258,7 +254,7 @@ Al actualizar el código ExtJS para utilizar la interfaz de usuario de Granite, 
 
 ### Componentes de administración de Granite UI {#granite-ui-administration-components}
 
-El [Componentes de administración de Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) generar componentes de base para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Entre ellos se incluyen:
+El [Componentes de administración de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) generar componentes de base para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Estas incluyen, entre otras:
 
 * Barra de navegación global
 * Carril (esqueleto)
@@ -279,7 +275,7 @@ Implementación:
 CoralUI.pdf
 
 [Obtener archivo](assets/coralui.pdf)
-La IU de Coral (CUI) es una implementación del estilo visual de Adobe para la IU táctil, que se ha diseñado para proporcionar coherencia en la experiencia del usuario en varios productos. La interfaz de usuario de Coral proporciona todo lo necesario para adoptar el estilo visual utilizado en el entorno de creación.
+La IU de Coral (CUI) es una implementación del estilo visual de Adobe para la IU táctil diseñada para proporcionar coherencia en la experiencia del usuario en varios productos. La interfaz de usuario de Coral proporciona todo lo necesario para adoptar el estilo visual utilizado en el entorno de creación.
 
 >[!CAUTION]
 >
@@ -301,22 +297,21 @@ La IU de Coral (CUI) es una implementación del estilo visual de Adobe para la I
 >* Aplicaciones/componentes/páginas web que no están claramente conectadas al Adobe.
 >
 
-
 La interfaz de usuario de Coral es una colección de componentes básicos para el desarrollo de aplicaciones web.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
 Diseñado para ser modular desde el principio, cada módulo forma una capa distinta en función de su función principal. Aunque las capas se han diseñado para que se admitan entre sí, también se pueden utilizar de forma independiente si es necesario. Esto permite implementar la experiencia del usuario de Coral en cualquier entorno compatible con el HTML.
 
-Con la interfaz de usuario de Coral no es obligatorio utilizar un modelo o una plataforma de desarrollo en particular. El objetivo principal de Coral es proporcionar un marcado HTML 5 unificado y limpio, independiente del método real utilizado para emitir este marcado. Esto puede utilizarse para el procesamiento en el lado del cliente o del servidor, plantillas, JSP, PHP o incluso aplicaciones RIA de Flash de Adobe, por nombrar solo algunas.
+Con la interfaz de usuario de Coral, no es obligatorio utilizar un modelo o una plataforma de desarrollo en particular. El objetivo principal de Coral es proporcionar un marcado HTML 5 unificado y limpio, independiente del método real utilizado para emitir este marcado. Esto puede utilizarse para el procesamiento en el lado del cliente o del servidor, plantillas, JSP, PHP o incluso aplicaciones RIA de Flash de Adobe, por nombrar solo algunas.
 
 ### Elementos de HTML: la capa de marcado {#html-elements-the-markup-layer}
 
-Los elementos del HTML proporcionan una apariencia común para todos los elementos de la interfaz de usuario base (incluida la barra de navegación, el botón, el menú, el carril, entre otros).
+Los elementos del HTML proporcionan una apariencia común para todos los elementos de la interfaz de usuario base (incluida la barra de navegación, el botón, el menú, el carril, etc.).
 
 En el nivel más básico, un elemento HTML es una etiqueta HTML con un nombre de clase específico. Los elementos más complejos pueden estar compuestos por varias etiquetas, anidadas entre sí (de una manera específica).
 
-El CSS se utiliza para proporcionar la apariencia real. Para que sea posible personalizar fácilmente el aspecto (por ejemplo, para el caso de la promoción de la marca), los valores de estilo reales se declaran como variables que se expanden mediante la variable [MENOS](https://lesscss.org/) preprocesador durante la ejecución.
+El CSS se utiliza para proporcionar la apariencia real. Para que sea posible personalizar fácilmente el aspecto (por ejemplo, en el caso de la promoción de la marca), los valores de estilo reales se declaran como variables que se expanden mediante la variable [MENOS](https://lesscss.org/) preprocesador durante la ejecución.
 
 Función:
 
@@ -325,7 +320,7 @@ Función:
 
 Implementación:
 
-* Etiquetas de HTML con estilos inspirados en [correa](https://twitter.github.com/bootstrap/)
+* Etiquetas de HTML con estilos inspirados en [Bootstrap](https://twitter.github.com/bootstrap/)
 * Las clases se definen en archivos LESS
 * Los iconos se definen como sprites de fuente
 
@@ -362,7 +357,7 @@ Los valores reales se definen en un archivo de variables LESS (el siguiente extr
 
 ### Complementos de elementos {#element-plugins}
 
-Muchos de los elementos del HTML tendrán que mostrar algún tipo de comportamiento dinámico, como abrir y cerrar menús emergentes. Esta es la función de los complementos de elementos, que realizan estas tareas manipulando el DOM mediante JavaScript.
+Muchos de los elementos del HTML deben mostrar algún tipo de comportamiento dinámico, como abrir y cerrar menús emergentes. Esta es la función de los complementos de elementos, que realizan estas tareas manipulando el DOM mediante JavaScript.
 
 Un complemento puede ser:
 
@@ -371,7 +366,7 @@ Un complemento puede ser:
 
 El comportamiento del complemento se puede personalizar con parámetros mediante lo siguiente:
 
-* Paso de los parámetros mediante una llamada de javascript
+* Paso de los parámetros con una llamada de JavaScript
 * Uso de dedicados `data-*` atributos vinculados al marcado del HTML
 
 Aunque el desarrollador puede seleccionar el mejor enfoque para cualquier complemento, la regla general es utilizar:
@@ -424,10 +419,10 @@ Un extracto de marcado de ejemplo (observe las opciones especificadas como data-
 La llamada al complemento jQuery:
 
 ```
-$(‘.cards’).cardlayout ();
+$('.cards').cardlayout ();
 ```
 
-Se mostrará como:
+Esto se muestra como:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
@@ -435,19 +430,19 @@ El `cardLayout` El complemento presenta los `UL` elementos en función de sus al
 
 ### Widgets de elementos HTML {#html-elements-widgets}
 
-Un widget combina uno o más elementos básicos con un complemento de JavaScript para formar elementos de interfaz de usuario de &quot;nivel superior&quot;. Estos pueden implementar un comportamiento más complejo y también una apariencia más compleja de lo que un solo elemento podría ofrecer. Buenos ejemplos son el selector de etiquetas o los widgets de carril.
+Un widget combina uno o más elementos básicos con un complemento de JavaScript para formar elementos de IU de &quot;nivel superior&quot;. Estos pueden implementar un comportamiento más complejo y también una apariencia más compleja de lo que un solo elemento podría ofrecer. Buenos ejemplos son el selector de etiquetas o los widgets de carril.
 
-Un widget puede almacenar en déclencheur y escuchar eventos personalizados para cooperar con otros widgets de la página. Algunos widgets son en realidad widgets nativos de jQuery que utilizan los elementos HTML de Coral.
+Un widget puede almacenar en déclencheur y escuchar eventos personalizados para cooperar con otros widgets de la página. Algunos widgets son widgets nativos de jQuery que utilizan los elementos HTML de Coral.
 
 Función:
 
-* Implementar elementos de interfaz de usuario de nivel superior que muestren un comportamiento complejo
+* Implementar elementos de IU de nivel superior que muestren un comportamiento complejo
 * Activación y gestión de eventos
 
 Implementación:
 
 * Complemento jQuery + marcado de HTML
-* Puede utilizar plantillas del lado del cliente/servidor
+* Puede utilizar plantillas de cliente/servidor
 
 Ejemplo de marcado es:
 
@@ -478,13 +473,13 @@ El complemento emite un marcado HTML (este marcado utiliza elementos básicos, q
        autocomplete="off">
 ```
 
-Se mostrará como:
+Esto se muestra como:
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ### Biblioteca de utilidades {#utility-library}
 
-Esta biblioteca es una colección de complementos o funciones de ayuda de javascript que son:
+Esta biblioteca es una colección de complementos o funciones de ayuda de JavaScript que son:
 
 * Independiente de IU
 * Sin embargo, es crucial para crear aplicaciones web completas

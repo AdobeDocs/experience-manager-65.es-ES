@@ -1,18 +1,14 @@
 ---
 title: Referencia del proceso de flujo de trabajo
-seo-title: Workflow Process Reference
 description: Referencia del proceso de flujo de trabajo
-seo-description: null
-uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: cf3b739fd774bc860d9906b9884d22fd532fd5dd
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -25,12 +21,12 @@ AEM proporciona varios pasos de proceso que se pueden utilizar para crear modelo
 
 Para cada paso del proceso, se describen las siguientes características.
 
-### Clase Java o ruta ECMA {#java-class-or-ecma-path}
+### Ruta de clase Java™ o ECMA {#java-class-or-ecma-path}
 
-Los pasos del proceso se definen mediante una clase Java o un ECMAScript.
+Los pasos del proceso se definen mediante una clase Java™ o ECMAScript.
 
-* Para los procesos de clase Java, se proporciona el nombre de clase completo.
-* Se proporciona la ruta de acceso al script para los procesos ECMAScript.
+* Para los procesos de clase Java™, se proporciona el nombre de clase completo.
+* Para los procesos ECMAScript, se proporciona la ruta de acceso al script.
 
 ### Carga útil {#payload}
 
@@ -38,7 +34,7 @@ La carga útil es la entidad en la que actúa una instancia de flujo de trabajo.
 
 AEM Por ejemplo, si se aplica un flujo de trabajo a una página de la *P* entonces *P* se pasa de un paso a otro a medida que avanza el flujo de trabajo, y cada paso actúa de forma opcional en consecuencia *P* de alguna manera.
 
-AEM En el caso más común, la carga útil es un nodo JCR en el repositorio (por ejemplo, una página o un recurso de). La carga útil de un nodo JCR se pasa como una cadena que es una ruta JCR o un identificador JCR (UUID). En algunos casos, la carga útil puede ser una propiedad JCR (pasada como ruta JCR), una URL, un objeto binario o un objeto Java genérico. Los pasos de proceso individuales que sí actúan en la carga útil generalmente esperan una carga útil de un tipo determinado o actúan de forma diferente según el tipo de carga útil. Para cada proceso descrito a continuación, se describe el tipo de carga útil esperado, de haber.
+AEM En el caso más común, la carga útil es un nodo JCR en el repositorio (por ejemplo, una página o un recurso de la página o el recurso). La carga útil de un nodo JCR se pasa como una cadena que es una ruta JCR o un identificador JCR (UUID). A veces, la carga útil puede ser una propiedad JCR (pasada como ruta JCR), una URL, un objeto binario o un objeto Java™ genérico. Los pasos de proceso individuales que sí actúan en la carga útil generalmente esperan una carga útil de un tipo determinado o actúan de forma diferente según el tipo de carga útil. Para cada proceso descrito a continuación, se describe el tipo de carga útil esperado, de haber.
 
 ### Argumentos {#arguments}
 
@@ -85,7 +81,7 @@ La manera recomendada de hacerlo es utilizar un usuario de servicio creado con e
 >
 >* habilite el **Modo heredado de proceso de flujo de trabajo**
 >
->Esto volverá al antiguo comportamiento de proporcionar una sesión de administración a `WorkflowProcess` y proporcionan acceso sin restricciones a la totalidad del repositorio una vez más.
+>Esto vuelve al antiguo comportamiento de proporcionar una sesión de administración a `WorkflowProcess` y proporcionan acceso sin restricciones a la totalidad del repositorio una vez más.
 
 ## Procesos de control de flujo {#workflow-control-processes}
 
@@ -95,7 +91,7 @@ Los siguientes procesos no realizan ninguna acción en el contenido. Sirven para
 
 El `AbsoluteTimeAutoAdvancer` (Absolute Time Auto Advancer) se comporta de forma idéntica a **AutoAdvancer**, excepto que se agota el tiempo de espera en una fecha y hora determinadas, en lugar de después de un periodo determinado.
 
-* **Clase Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Clase Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Carga útil**: Ninguno.
 * **Argumentos**: Ninguno.
 * **Tiempo de espera**: El proceso agota el tiempo de espera cuando se llega a la hora y fecha establecidas.
@@ -104,7 +100,7 @@ El `AbsoluteTimeAutoAdvancer` (Absolute Time Auto Advancer) se comporta de forma
 
 El `AutoAdvancer` process avanza automáticamente el flujo de trabajo al siguiente paso. Si hay más de un paso siguiente posible (por ejemplo, si hay una división O), este proceso impulsará el flujo de trabajo a lo largo del *ruta predeterminada*, si se ha especificado uno, de lo contrario el flujo de trabajo no avanzará.
 
-* **Clase Java**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Clase Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Carga útil**: Ninguno.
 * **Argumentos**: Ninguno.
@@ -114,9 +110,9 @@ El `AutoAdvancer` process avanza automáticamente el flujo de trabajo al siguien
 
 El `ProcessAssembler` process ejecuta varios subprocesos secuencialmente en un solo paso del flujo de trabajo. Para usar la variable `ProcessAssembler`, cree un solo paso de este tipo en el flujo de trabajo y defina sus argumentos para indicar los nombres y argumentos de los subprocesos que desea ejecutar.
 
-* **Clase Java**: `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Clase Java™**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Carga útil** AEM : un recurso DAM, página de la página de la aplicación o sin carga útil (depende de los requisitos de los subprocesos).
+* **Carga útil** AEM : un recurso DAM, una página de la página de la página o ninguna carga útil (depende de los requisitos de los subprocesos).
 * **Argumentos**:
 
 ```
@@ -136,7 +132,7 @@ Por ejemplo:
 
 * Extraiga los metadatos del recurso.
 * Cree tres miniaturas de los tres tamaños especificados.
-* Cree una imagen de JPEG a partir del recurso, suponiendo que este no sea originalmente ni un GIF ni un PNG (en cuyo caso no se crea ningún JPEG).
+* Cree una imagen de JPEG a partir del recurso, suponiendo que este no sea originalmente un GIF o un PNG (en cuyo caso no se crea ningún JPEG).
 * Establezca la fecha de la última modificación del recurso.
 
 ```shell
@@ -152,7 +148,7 @@ Los siguientes procesos realizan tareas sencillas o sirven como ejemplos.
 
 >[!CAUTION]
 >
->Usted ***debe*** no cambie nada en el `/libs` ruta.
+>No cambie nada en el `/libs` ruta.
 >
 >Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una revisión o un paquete de funciones).
 
@@ -200,7 +196,7 @@ Este es un ejemplo de proceso ECMAScript.
 
 Bloquea la carga útil del flujo de trabajo.
 
-* **Clase Java:** `com.day.cq.workflow.impl.process.LockProcess`
+* **Clase Java™:** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Carga útil:** JCR_PATH y JCR_UUID
 * **Argumentos:** Ninguno
@@ -215,7 +211,7 @@ El paso no tiene efecto en las siguientes circunstancias:
 
 Desbloquea la carga útil del flujo de trabajo.
 
-* **Clase Java:** `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Clase Java™:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Carga útil:** JCR_PATH y JCR_UUID
 * **Argumentos:** Ninguno
@@ -232,9 +228,9 @@ El siguiente proceso realiza una tarea relacionada con la versión.
 
 ### CreateVersionProcess {#createversionprocess}
 
-AEM Crea una nueva versión de la carga útil del flujo de trabajo (página de trabajo o recurso de DAM).
+AEM Crea una versión de la carga útil del flujo de trabajo (página de o recurso DAM).
 
-* **clase Java**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* **clase Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
 * **Carga útil**: una ruta JCR o UUID que hace referencia a una página o recurso DAM
 * **Argumentos**: Ninguno

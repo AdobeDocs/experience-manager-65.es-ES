@@ -1,34 +1,30 @@
 ---
 title: Prueba de la estructura del sitio globalizada en We.Retail
-seo-title: Trying out the Globalized Site Structure in We.Retail
 description: Prueba de la estructura del sitio globalizada en We.Retail
-seo-description: null
-uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
 # Prueba de la estructura del sitio globalizada en We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
-We.Retail se ha creado con una estructura de sitio globalizada que ofrece formatos de idioma que se pueden copiar en directo en sitios web específicos de cada país. Todo está configurado de forma predeterminada para permitirle experimentar con esta estructura y las capacidades de traducción integradas.
+We.Retail se ha creado con una estructura de sitio globalizada que ofrece un formato de idioma que se puede copiar en directo en sitios web específicos de cada país. Todo está configurado de forma predeterminada para permitirle experimentar con esta estructura y las capacidades de traducción integradas.
 
 ## Probando a cabo {#trying-it-out}
 
 1. Abra la consola Sitios desde **Navegación global -> Sitios**.
-1. Cambie a la vista de columna (si no está activa) y seleccione We.Retail. Observe la estructura de país de ejemplo con Suiza, Estados Unidos, Francia, etc., junto con los idiomas principales.
+1. Cambie a la vista de columna (si no está activa) y seleccione We.Retail. Observe la estructura de país de ejemplo con Suiza, Estados Unidos, Francia, etc., junto al Idioma principal.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
-1. Seleccione Suiza y vea las raíces lingüísticas de los idiomas de ese país. Tenga en cuenta que aún no hay ningún contenido debajo de estas raíces.
+1. Seleccione Suiza y vea las raíces lingüísticas de los idiomas de ese país. Todavía no hay ningún contenido debajo de estas raíces.
 
    ![chlimage_1-88](assets/chlimage_1-88a.png)
 
@@ -36,7 +32,7 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece format
 
    ![chlimage_1-89](assets/chlimage_1-89a.png)
 
-1. Vuelva a la vista de columna y haga clic en el Maestro de idioma y vea las raíces maestras de idioma con contenido. Tenga en cuenta que solo el inglés tiene contenido.
+1. Vuelva a la vista de columna, haga clic en el Patrón de idioma y vea las raíces maestras de idioma con contenido. Solo el inglés tiene contenido.
 
    We.Retail no incluye ningún contenido traducido, pero la estructura y la configuración están configuradas para permitirle demostrar los servicios de traducción.
 
@@ -54,7 +50,7 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece format
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Haga clic en Alemán para ver los detalles del proyecto de traducción. Tenga en cuenta que el estado es **Borrador**. Para iniciar la traducción con el servicio de traducción de Microsoft, haga clic en las comillas angulares junto al **Trabajo de traducción** encabezado y seleccione **Inicio**.
+1. Haga clic en alemán para ver los detalles del proyecto de traducción. El estado es **Borrador**. Para iniciar la traducción con el servicio de traducción de Microsoft®, haga clic en las comillas angulares junto al icono **Trabajo de traducción** encabezado y seleccione **Inicio**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -68,7 +64,7 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece format
 
 >[!NOTE]
 >
->Este procedimiento demostró la integración integrada con la traducción automática de Microsoft. Uso del [AEM Marco de integración de traducción](/help/sites-administering/translation.md)AEM , puede integrarlo con muchos servicios de traducción estándar para organizar la traducción de los recursos de traducción de la manera más rápida y sencilla
+>Este procedimiento demostró la integración integrada con la traducción automática de Microsoft®. Uso del [AEM Marco de integración de traducción](/help/sites-administering/translation.md)AEM , puede integrarlo con muchos servicios de traducción estándar para organizar la traducción de los recursos de traducción de la manera más rápida y sencilla
 
 ## Información adicional {#further-information}
 
