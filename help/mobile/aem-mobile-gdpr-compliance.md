@@ -3,11 +3,10 @@ title: 'Adobe Experience Manager Mobile: Preparación para el RGPD'
 description: 'Adobe Experience Manager Mobile: Preparación para el RGPD'
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
-discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '688'
 ht-degree: 1%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad; como el RGPD, la CCPA, etc.
+>El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad; como el RGPD y la CCPA.
 
 ## Compatibilidad con RGPD de AEM Mobile {#aem-mobile-gdpr-support}
 
@@ -26,15 +25,15 @@ AEM Mobile está preparado para ayudar a los clientes con sus obligaciones de cu
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-El producto de publicación digital de Adobe (que precede a AEM Mobile) es compatible con las iniciativas de preparación para el RGPD de Adobe. Consulte lo siguiente [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). A continuación se ofrecen detalles específicos sobre la compatibilidad con las funciones relevantes en el marco del RGPD en el producto Digital Publishing Suite, incluido cómo trabajar con el Adobe para iniciar solicitudes de RGPD.
+El producto de publicación digital de Adobe (que precede a AEM Mobile) es compatible con las iniciativas de preparación para el RGPD de Adobe. Consulte [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). A continuación se proporcionan detalles específicos sobre la compatibilidad con las funciones relevantes del RGPD en el producto de Digital Publishing Suite, incluido cómo trabajar con Adobe para iniciar solicitudes de RGPD.
 
-Para asegurarse de que no confunde AEM Mobile con el producto anterior de Digital Publishing Suite, puede iniciar sesión en el producto de Digital Publishing Suite aquí:
+Para asegurarse de que no confunde AEM Mobile con el producto de Digital Publishing Suite anterior, puede iniciar sesión en el producto de Digital Publishing Suite aquí:
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/es/es/)
 
 ### Inicio de una solicitud de RGPD {#initiating-a-gdpr-request}
 
-Póngase en contacto con el Servicio de atención al cliente de Adobe para iniciar una solicitud de RGPD para Digital Publishing Suite.
+Póngase en contacto con el Servicio de atención al cliente de Adobe para poder iniciar una solicitud de RGPD para el Digital Publishing Suite.
 
 Se requieren los siguientes ID para localizar los datos del cliente. Cualquier subconjunto recibido implicará que los demás ID no eran aplicables a este usuario.
 
@@ -52,11 +51,11 @@ Proporcione al menos una de las siguientes opciones:
 
 **¿Eliminará el Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
 
-El Adobe eliminará la información que tenga de las compras en la tienda de aplicaciones (suscripciones, etc.) pero las compras seguirán registrándose en las tiendas de aplicaciones. Si la aplicación (usuario final) inicia sesión en la tienda de aplicaciones, los recibos se recogerán de nuevo y se enviarán al Adobe, y posteriormente, se considerarán como nuevas compras y la aplicación los restaurará para volver a tener acceso.
+El Adobe elimina la información que tiene sobre las compras en la tienda de aplicaciones (suscripciones, etc.), pero las compras siguen registradas en las tiendas de aplicaciones. Si la aplicación (usuario final) ha iniciado sesión en la tienda de aplicaciones, esos recibos se recogen de nuevo y se envían al Adobe y más tarde, esos recibos se consideran nuevas compras y la aplicación restaura el acceso para volver a tenerlos.
 
 **¿Eliminará el Adobe los derechos proporcionados por el cliente al iniciar una solicitud de DELETE?**
 
-El Adobe eliminará la información que tenga sobre las asignaciones de derechos directos adicionales del cliente. Si la aplicación (usuario final) inicia sesión en el mecanismo de OAuth que el cliente ha utilizado, enviará información al Adobe y los servicios volverán a recoger los derechos adicionales.
+El Adobe elimina la información que tiene de las asignaciones de derechos directos adicionales del cliente. Si la aplicación (usuario final) inicia sesión en el mecanismo de OAuth que el cliente ha utilizado, envía información al Adobe y los servicios vuelven a recoger los derechos adicionales.
 
 **¿Qué se espera del usuario final?**
 
@@ -64,7 +63,7 @@ Dado que la clave para asignar derechos a la aplicación reside en el dispositiv
 
 **¿Qué sucede cuando una aplicación se comparte entre personas en un dispositivo?**
 
-El Adobe tiene muy poca información que se asocia directamente con un usuario específico. Asocia los datos mediante un UUID creado aleatoriamente que se almacena en los datos de la aplicación y se pasa en cada solicitud que inicia la aplicación. Esto significa que los usuarios finales que compartan la aplicación en el mismo dispositivo utilizarán el mismo UUID y que todos los datos se considerarán propiedad de la persona que realice la solicitud de RGPD. Tanto para las solicitudes de acceso como para las de eliminación, DPSC considerará como una sola persona a las personas que compartan una aplicación.
+El Adobe tiene una información mínima que se asocia directamente con un usuario específico. Asocia los datos mediante un UUID creado aleatoriamente que se almacena en los datos de la aplicación y se pasa en cada solicitud que inicia la aplicación. Esto significa que los usuarios finales que comparten la aplicación en el mismo dispositivo utilizan el mismo UUID y que todos los datos se consideran propiedad de la persona que realiza la solicitud de RGPD. Tanto para las solicitudes de acceso como para las de eliminación, DPSC considera que las personas que comparten una aplicación son una sola persona.
 
 **¿Qué datos personales se rastrean con Analytics?**
 
@@ -72,13 +71,13 @@ Ninguna. Hay datos de los que se está realizando un seguimiento, pero es a nive
 
 **El usuario final proporcionó su información, pero no se encontró nada. ¿Por qué no?**
 
-A medida que evolucionaba el producto Digital Publishing Suite, las implementaciones del servicio cambiaban y se ocultaban más datos. Si no se encontraron datos utilizando los datos proporcionados por el usuario, significa que los datos del usuario no se pueden rastrear hasta esa persona.
+A medida que evolucionaba el producto de Digital Publishing Suite, las implementaciones de servicios cambiaban y se ofuscaban más datos. Si no se encontraron datos utilizando los datos proporcionados por el usuario, significa que los datos del usuario no se pueden rastrear hasta esa persona.
 
 ### Ejemplos {#example}
 
 Póngase en contacto con el Servicio de atención al cliente de Adobe para iniciar una solicitud de RGPD.
 
-A continuación, se muestra un ejemplo de las entradas y las salidas resultantes de una solicitud de RGPD de Digital Publishing Suite:
+Este es un ejemplo de las entradas y las salidas resultantes de una solicitud de RGPD de Digital Publishing Suite:
 
 #### Entradas: {#inputs}
 

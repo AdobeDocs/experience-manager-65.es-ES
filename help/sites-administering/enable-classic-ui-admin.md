@@ -1,17 +1,13 @@
 ---
 title: Admin Console
-seo-title: Admin Consoles
 description: Aprenda a utilizar los Admin Console AEM disponibles en la.
-seo-description: Lear how to use the Admin Consoles available in AEM.
-uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: 729e5eb99b0c14f3d2fd8c3f4ec636f7fb52124f
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -27,7 +23,7 @@ Todas las consolas que tienen una versión de IU clásica en `/libs/cq/core/cont
 
 En este ejemplo, volvemos a habilitar la IU clásica para la consola Sitios.
 
-1. Con el CRXDE Lite, busque el nodo correspondiente a Admin Console para el que desea volver a habilitar la IU clásica. Se encuentran en:
+1. Con CRXDE Lite, busque el nodo correspondiente al Admin Console para el que desea volver a habilitar la IU clásica. Se encuentran en:
 
    `/libs/cq/core/content/nav`
 
@@ -49,7 +45,7 @@ En este ejemplo, volvemos a habilitar la IU clásica para la consola Sitios.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. El **IU clásica** La opción está disponible de nuevo como una opción emergente en admin console.
+1. El **IU clásica** está disponible de nuevo como una opción emergente en el Admin Console.
 
    ![opción emergente de IU clásica](assets/syui-01-2019-02-27-15-16-55.png)
 

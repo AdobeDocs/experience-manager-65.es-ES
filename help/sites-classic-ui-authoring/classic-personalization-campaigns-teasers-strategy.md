@@ -1,19 +1,15 @@
 ---
 title: Teasers and Strategies
-seo-title: Teasers and Strategies
 description: Las campañas suelen utilizar teasers como mecanismo para atraer a un segmento específico de la población de visitantes a contenido centrado en sus intereses. Uno o más teasers están definidos para una campaña específica.
-seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
-uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1196'
 ht-degree: 5%
 
 ---
@@ -24,17 +20,17 @@ Las campañas suelen utilizar teasers como mecanismo para atraer a un segmento e
 
 >[!NOTE]
 >
->AEM El componente Teaser ha quedado obsoleto en la versión 6.2 de. Utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md) en su lugar.
+>AEM El componente Teaser ya no se utiliza en la versión 6.2 de. En su lugar, utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
 
 * **Páginas de marca** se almacenan en la sección Campañas del sitio web. Una marca contiene las campañas individuales.
 * **Páginas de Campaign** se almacenan en la sección Campañas del sitio web. Cada campaña tiene una página individual, en la que se muestran las definiciones del teaser. El contenedor, o página de información general, también contiene cierta información y estadísticas relacionadas con las páginas de teaser individuales.
 
-AEM Los teasers dentro de los recursos de la biblioteca de recursos de la red están compuestos por varias partes:
+AEM Los teasers dentro de los recursos de la biblioteca están compuestos por varias partes:
 
 * **Páginas de teaser** se almacenan en la página de campaña adecuada y contienen las definiciones de los párrafos de teaser disponibles para cada campaña específica. Estas definiciones se utilizan para mostrar los párrafos de teaser; incluidas las variaciones de contenido, el segmento que se utilizará para seleccionar una variación y el factor de ampliación.
-* El **Componente Teaser** está disponible de forma predeterminada y le permite crear una instancia del párrafo de teaser específico en una página de contenido. Puede arrastrar el componente Teaser de la barra de tareas y, a continuación, especificar la definición del teaser para crear su propio párrafo de teaser. **Nota:** AEM El componente Teaser ha quedado obsoleto en la versión 6.2 de. Utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md) en su lugar.
+* El **Componente Teaser** está disponible de forma predeterminada y le permite crear una instancia del párrafo de teaser específico en una página de contenido. Puede arrastrar el componente Teaser de la barra de tareas y, a continuación, especificar la definición del teaser para crear su propio párrafo de teaser. **Nota:** AEM El componente Teaser ya no se utiliza en la versión 6.2 de. En su lugar, utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
 * **Párrafos de teaser** son instancias reales del teaser dentro de una página de contenido. Esto atrae a un segmento de visitantes a través del contenido centrado en sus intereses.
-* Páginas que contienen contenido de la campaña centrado en un segmento de visitante específico. Normalmente, los párrafos de teaser llevan al visitante a dichas páginas.
+* Páginas que contienen contenido de la campaña centrado en un segmento de visitante específico. Normalmente, los párrafos de teaser dirigen al visitante a dichas páginas.
 
 ## Estrategias {#strategies}
 
@@ -112,10 +108,10 @@ Y usamos las siguientes definiciones de teaser:
 
 Entonces, si aplicamos esto a un visitante donde:
 
-* **S1**, **S2** y **S6** resolver correctamente
+* **S1**, **S2 y **S6** resolver correctamente
 
-* la etiqueta **marketing** tiene 3 visitas
-* la etiqueta **negocio** tiene 6 visitas
+* la etiqueta **marketing** tiene tres visitas
+* la etiqueta **negocio** tiene seis visitas
 
 Podemos ver el resultado:
 
@@ -193,7 +189,7 @@ que se calculan antes de aplicar la estrategia adecuada:
  </tbody>
 </table>
 
-Estos valores se utilizan para determinar los teaser que verá el visitante, según el **Estrategia** se aplica al párrafo de teaser:
+Estos valores se utilizan para determinar los teasers que verá el visitante, según la variable **Estrategia** se aplica al párrafo de teaser:
 
 <table>
  <tbody>
@@ -224,11 +220,11 @@ Estos valores se utilizan para determinar los teaser que verá el visitante, seg
 >
 >Si, después de las técnicas de resolución anteriores, hay varios teasers disponibles para seleccionarlos, una selección interna (aleatoria) seleccionará un único teaser para mostrarlo.
 >
->Por ejemplo, si la estrategia era Puntuación del flujo de navegación y T5 tenía la misma puntuación del flujo de navegación que T6 (es decir, 6 en lugar de 3), se utilizaría la selección interna (aleatoria) para seleccionar uno de estos dos.
+>Por ejemplo, si la estrategia era Puntuación del flujo de navegación y T5 tenía la misma puntuación del flujo de navegación que T6 (es decir, seis en lugar de tres), se utilizaría la selección interna (aleatoria) para seleccionar uno de estos dos.
 
-Las páginas teaser o los párrafos se utilizan para dirigir segmentos específicos de visitantes a contenido centrado en sus intereses. Pueden presentar una serie de opciones entre las que elegir los visitantes o mostrar solo un párrafo de teaser basado en el segmento específico del visitante; por ejemplo, el párrafo de teaser que se muestra puede depender de la edad del visitante.
+Las páginas teaser o los párrafos se utilizan para dirigir segmentos específicos de visitantes a contenido centrado en sus intereses. Pueden presentar una serie de opciones para que el visitante elija, o mostrar solo un párrafo de teaser basado en el segmento del visitante específico. Por ejemplo, el párrafo de teaser que se muestra puede depender de la edad del visitante.
 
-Normalmente, una página teaser es una acción temporal que dura un período de tiempo específico, hasta que se reemplaza por la siguiente página de teaser.
+Normalmente, una página de teaser es una acción temporal que dura un período de tiempo específico, hasta que se reemplaza por la siguiente página de teaser.
 
 Después de crear la marca y la campaña, puede crear y configurar la experiencia de teaser.
 
@@ -236,7 +232,7 @@ Después de crear la marca y la campaña, puede crear y configurar la experienci
 
 >[!NOTE]
 >
->AEM El componente Teaser ha quedado obsoleto en la versión 6.2 de. Utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md) en su lugar.
+>AEM El componente Teaser ya no se utiliza en la versión 6.2 de. En su lugar, utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
 
 1. Vaya a la página de contenido en la que desee colocar el párrafo de teaser que lleva a la página de la campaña.
 1. Añadir un **Teaser** componente (disponible en el **Personalización** sección de la barra de tareas) en la posición requerida. Cuando se cree por primera vez, mostrará que la ruta de campaña aún no está configurada:
@@ -250,6 +246,7 @@ Ruta a la página de campaña que contiene la página de teaser individual; los 
 
    * **[Estrategia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
 Método utilizado para la selección cuando varios segmentos se resuelven correctamente.
+
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Clic **OK** para guardar. Según los segmentos que haya configurado en el teaser y el perfil del usuario con el que haya iniciado sesión, se mostrará el contenido apropiado:

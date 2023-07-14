@@ -1,35 +1,31 @@
 ---
 title: 'Administración de proyectos: lista de comprobación de prácticas recomendadas'
-seo-title: Managing Projects - Best Practices Checklist
-description: La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la entrega de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y proporcionan un alto nivel de monitorización de su estado actual.
-seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
-uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
+description: La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la entrega de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una monitorización de alto nivel de su estado actual.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
-discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3252'
 ht-degree: 1%
 
 ---
 
 # Administración de proyectos: lista de comprobación de prácticas recomendadas{#managing-projects-best-practices-checklist}
 
-La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión para garantizar que está al tanto de los problemas y las decisiones (relacionadas) que debe tomar (tanto antes como durante la implementación del proyecto).
+La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión para garantizar que está al tanto de los problemas y las decisiones (relacionadas) que debe realizar, antes y durante la implementación del proyecto.
 
 Para ayudarle, las prácticas recomendadas consisten en:
 
 * Un [lista de comprobación interactiva](/help/managing/best-practices-checklist.md) que le permite realizar un seguimiento y supervisar su progreso con estas prácticas recomendadas.
 
-   * Define entradas y entregas según la fase, el hito y el personaje.
+   * Define entradas y entregas según la fase, el hito y el perfil.
    * Proporciona descripciones generales automatizadas (calidad, estado y integridad) para indicar el progreso y el estado del proyecto.
 
-* Documentación, basada directamente en el [lista de comprobación](/help/managing/best-practices-checklist.md), que detalla lo siguiente:
+* Documentación basada en el [lista de comprobación](/help/managing/best-practices-checklist.md), que detalla lo siguiente:
 
    * [Latido del proyecto](#projectheartbeat) análisis.
    * [Estado por rol](#status-by-role) información general.
@@ -57,7 +53,7 @@ El **Latido del proyecto** Esta hoja de cálculo proporciona información genera
 
 ## Estado por rol {#status-by-role}
 
-El **Estado por rol** La hoja de cálculo muestra el desglose detallado de [**Salud**, **Calidad** y **Integridad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** y **[Persona](#persona)**.
+El **Estado por rol** La hoja de cálculo muestra el desglose detallado de [**Salud**, **Calidad y **Integridad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** y **[Persona](#persona)**.
 
 ## Fases e hitos {#phases-and-milestones}
 
@@ -71,7 +67,7 @@ Cada fase contiene sus propios hitos. Para cada [persona](#persona) (o función)
 
 ### Preparación {#preparation}
 
-La preparación del proyecto forma la base de todo el proyecto. Debe definir los requisitos clave junto con objetivos y expectativas claros para lo siguiente:
+La preparación del proyecto forma la base de todo el proyecto. Defina los requisitos clave junto con objetivos y expectativas claros para:
 
 * **Razones comerciales**
 
@@ -81,9 +77,9 @@ La preparación del proyecto forma la base de todo el proyecto. Debe definir los
 
    * Debe haber disponible un ámbito básico y una programación aproximada para definir qué se necesita y en qué plazo; si ayuda a aclarar la situación, también puede definir qué se encuentra fuera del ámbito.
 
-La forma en que prepare, planifique y ejecute el proyecto y la implementación de la solución se verán afectadas por las restricciones que opera, por ejemplo, en términos de presupuesto fijo, calendario fijo, cantidad de contenido y calidad requerida.
+La forma de preparar, planificar y ejecutar el proyecto e implementar la solución se ve afectada por las restricciones en las que está operando. Por ejemplo, presupuesto fijo, calendario fijo, cantidad de contenido, calidad requerida.
 
-Como siempre, ajustar cualquiera de los factores afectará a los demás. Por ejemplo, reducir el tiempo, pero requerir el mismo nivel de calidad probablemente aumente el precio y reduzca la cantidad de contenido que puede satisfacer. El presupuesto es a menudo un factor clave por lo que tales relaciones no se pueden olvidar.
+Como siempre, ajustar cualquiera de los factores afecta a los demás. Por ejemplo, si reduce el tiempo, pero requiere el mismo nivel de calidad, probablemente aumente el precio y reduzca la cantidad de contenido que puede satisfacer. El presupuesto es a menudo un factor clave por lo que tales relaciones no se pueden olvidar.
 
 Los Cuatro Factores:
 
@@ -93,31 +89,31 @@ Los Cuatro Factores:
 
 * **Validación**
 
-   En esta fase debe validar y confirmar los objetivos del proyecto; por ejemplo:
+  En esta fase, debe validar y confirmar los objetivos del proyecto; por ejemplo:
 
    * ¿Qué desea lograr/proporcionar?
-   * ¿Quién se beneficiará?
+   * ¿Quién se beneficia?
    * ¿Cuál es el ámbito?
 
       * Si ayuda a aclarar la situación, también puede definir qué se encuentra fuera del ámbito.
-   * ¿Cómo definirá el éxito?
-   * ¿Cómo medirá el éxito?
+
+   * ¿Cómo se define el éxito?
+   * ¿Cómo se mide el éxito?
    * ¿Cuáles son los requisitos, empresariales y técnicos?
    * ¿Hay sistemas heredados que reemplazar y, si es así, hay datos que migrar?
-   * ¿Quién estará involucrado?
-   * ¿Cómo medirá el progreso?
-   * ¿Con qué frecuencia revisará el progreso durante la duración del proyecto?
-
+   * ¿Quién está involucrado?
+   * ¿Cómo se mide el progreso?
+   * ¿Con qué frecuencia revisa el progreso durante la duración del proyecto?
 
 * **Presupuesto**
 
-   Antes de comenzar cualquier proyecto, necesita una estimación fiable y realista de su coste de implementación:
+  Antes de comenzar cualquier proyecto, necesita una estimación fiable y realista de lo que cuesta implementar:
 
    * Utilice la información del hito de validación como base para las estimaciones.
    * Sea realista en sus estimaciones.
-   * Considere y respete las directrices, los procesos o las restricciones de los clientes a los que pueda estar sujeto.
-   * Considerar los procesos de contingencia y revisión en caso de que se requiera una revisión, o refinamiento, del presupuesto en una etapa posterior.
-   * Recuerde que los costos vienen en muchas formas; compras, uso de recursos y tarifas entre otros.
+   * Considere y respete las directrices, los procesos o las restricciones de los clientes a los que esté sujeto.
+   * Considere los procesos de contingencia y revisión si más adelante se requiere una revisión o un ajuste del presupuesto.
+   * Recuerde que los costos vienen en muchas formas, tales como compras, uso de recursos y tarifas, entre otras.
 
 ### Planificación {#planning}
 
@@ -127,19 +123,19 @@ La planificación del proyecto consolida la preparación. Aquí necesita comenza
 
 * **Entrega**
 
-   Un traspaso limpio garantiza que las personas/grupos adecuados sean conscientes de sus responsabilidades dentro del proyecto.
+  Un traspaso limpio garantiza que las personas/grupos adecuados sean conscientes de sus responsabilidades dentro del proyecto.
 
-   Se deben proporcionar/generar todos los detalles para garantizar que se comprendan plenamente todos los aspectos relevantes, incluida la hoja de ruta, el alcance, los objetivos, los requisitos y los KPI.
+  Se deben proporcionar/generar detalles completos para garantizar que tengan una comprensión completa de todos los aspectos relevantes, incluida la hoja de ruta, el alcance, los objetivos, los requisitos y los KPI.
 
 * **Evaluación de riesgos**
 
-   Para evitar sorpresas desagradables, utilice la evaluación de riesgos para identificar y cuantificar cualquier riesgo potencial junto con su impacto y probabilidad.
+  Para evitar sorpresas desagradables, utilice la evaluación de riesgos para identificar y cuantificar cualquier riesgo potencial junto con su impacto y probabilidad.
 
-   Esto debe hacerse al principio del ciclo de vida del proyecto para garantizar que se identifiquen y evalúen las vulnerabilidades. En función de los resultados, puede informar a las partes interesadas de si se pueden implementar todos los requisitos y, si es necesario, si es posible planificar las acciones adecuadas que se deben tomar y rastrear.
+  Esto debe hacerse al principio del ciclo de vida del proyecto para garantizar que se identifiquen y evalúen las vulnerabilidades. En función de los resultados, puede informar a las partes interesadas de si se pueden implementar todos los requisitos y, si es necesario, si es posible planificar las acciones adecuadas que se deben tomar y rastrear.
 
 * **Comunicación**
 
-   La comunicación siempre es clave para el éxito de cualquier proyecto. Debe comunicarse de forma clara y eficaz para garantizar que todos:
+  La comunicación siempre es clave para el éxito de cualquier proyecto. Debe comunicarse de forma clara y eficaz para garantizar que todos:
 
    * Trabajar para lograr los mismos objetivos básicos
    * Desde la misma base de información
@@ -147,7 +143,7 @@ La planificación del proyecto consolida la preparación. Aquí necesita comenza
 
 * **Comenzar**
 
-   La reunión de inicio se utiliza para concienciar sobre el inicio del proyecto. Es una buena oportunidad para:
+  La reunión de inicio se utiliza para concienciar sobre el inicio del proyecto. Es una buena oportunidad para:
 
    * Invitar a todas las partes interesadas (o al menos a los representantes del grupo).
    * Presente datos clave sobre el proyecto.
@@ -165,11 +161,11 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
 * **Equipo de desarrollo con personal y formación**
 
-   Antes de comenzar cualquier proyecto, debe asegurarse de que el equipo de desarrollo tenga el personal adecuado y de que todos los miembros del equipo estén formados para la tarea en cuestión.
+  Antes de comenzar cualquier proyecto, debe asegurarse de que el equipo de desarrollo tenga el personal adecuado y de que todos los miembros del equipo estén formados para la tarea en cuestión.
 
 * **Arquitectura de contenido**
 
-   La arquitectura de contenido define y describe la arquitectura futura del contenido, lo que incluye:
+  La arquitectura de contenido define y describe la arquitectura futura del contenido, lo que incluye:
 
    * El árbol de contenido; incluidos los recursos
    * Estructuras básicas; incluidas campañas, etc.
@@ -179,7 +175,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
 * **Arquitectura del sistema**
 
-   La arquitectura del sistema define la vista conceptual del sistema, que incluye, entre otra información:
+  La arquitectura del sistema define la vista conceptual del sistema, que incluye (entre otra información):
 
    * [Estructura del sistema](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) para todos los entornos necesarios
    * Subsistemas
@@ -188,42 +184,41 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
    * Servidores para cada entorno; consulte la [Requisitos técnicos](/help/sites-deploying/technical-requirements.md) y [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
 
    * Procesos para cada entorno; por ejemplo, requisitos de implementación y mantenimiento
-   * Actividades de mantenimiento (optimización de la GC del almacén de datos, TarPM, etc.)
-   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Almacenamiento en caché de Dispatcher
+   * Actividades de mantenimiento (optimización del almacén de datos, TarPM, etc.)
+   * [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)Almacenamiento en caché de Dispatcher
    * [Clúster](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * Rendimiento del lado del cliente (minificación de JS, concat, sprites css, número total de solicitudes http, etc.)
 
 * **Arquitectura de aplicación**
 
-   La arquitectura de la aplicación define y describe el comportamiento de las aplicaciones propuestas.
+  La arquitectura de la aplicación define y describe el comportamiento de las aplicaciones propuestas.
 
-   Se centra en:
+  Se centra en:
 
    * Cómo interactuarán entre sí y con los usuarios.
    * Los datos que deben consumir y producir las aplicaciones, en lugar de su estructura interna.
 
-   Las definiciones deben abarcar:
+  Las definiciones deben abarcar:
 
    * Estructura de código básica del proyecto
    * Artículos de código (paquetes, paquetes, etc.)
    * Desglose de las plantillas/componentes y sus relaciones
    * Detalles de alto nivel de las personalizaciones necesarias (más adelante se mostrarán superposiciones específicas)
-   * Diseño de flujos de trabajo requeridos por la solución (por ejemplo, creación de contenido, aprobación, publicación, transformaciones, importaciones, exportaciones, etc.)
+   * Diseño de los flujos de trabajo requeridos por la solución (por ejemplo, creación de contenido, aprobación, publicación, transformaciones, importaciones y exportaciones)
    * Consideración especial para cualquier módulo complejo, como MSM, Commerce e integración de terceros
-
 
 * **Integración del sistema**
 
-   La integración del sistema requiere que planifique (y luego implemente):
+  La integración del sistema requiere que planifique (y luego implemente):
 
    * Cómo todos los subsistemas y [integraciones de soluciones](/help/sites-administering/integration.md) se reunirán para funcionar como un sistema coherente
-   * Cómo se integrarán los sistemas de terceros, junto con cualquier consideración especial, como la gestión sin conexión/en línea, del lado del cliente/del lado del navegador o de la caída de un sistema de terceros cuando este no está operativo
+   * Cómo se integrarán los sistemas de terceros, junto con cualquier consideración especial, como la gestión sin conexión/en línea, del lado del cliente/del lado del explorador o de la caída de un sistema de terceros cuando este no está operativo
 
 * **Concepto de prueba**
 
-   Antes de comenzar el desarrollo, debe elaborar un concepto profundo y completo de todos los [prueba](/help/sites-developing/planning.md) requisitos para el proyecto.
+  Antes de comenzar el desarrollo, debe elaborar un concepto profundo y completo de todos los [prueba](/help/sites-developing/planning.md) requisitos para el proyecto.
 
-   Esto debería incluir (entre otros):
+  Esto debe incluir (entre otros):
 
    * Detalles de todas las pruebas a realizar
    * Preparación del contenido necesario para esas pruebas
@@ -233,15 +228,15 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
 * **Diseño de experiencia**
 
-   XD Experience Design () implica diseñar la experiencia del usuario para la solución.
+  XD Experience Design () implica diseñar la experiencia del usuario para la solución.
 
-   La experiencia del usuario debe analizarse y desarrollarse tanto para los autores como para los usuarios finales del sitio web.
+  La experiencia del usuario debe analizarse y desarrollarse tanto para los autores como para los usuarios finales del sitio web.
 
 * **Configuración de soporte**
 
-   Antes del desarrollo, deben establecerse todos los procesos de soporte necesarios para implementar, publicar, probar e informar sobre problemas.
+  Antes del desarrollo, deben establecerse todos los procesos de compatibilidad necesarios para implementar, publicar, probar e informar de problemas.
 
-   Consulte también la [Portal de asistencia de Adobe](https://helpx.adobe.com/es/marketing-cloud/contact-support.html).
+  Consulte también la [Portal de asistencia de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support).
 
 ### Planificación de operaciones y operaciones {#operations-planning-and-operations}
 
@@ -251,9 +246,9 @@ Del mismo modo, las operaciones deben planificarse correctamente para garantizar
 
 * **Permisos**
 
-   Debe planificar y, a continuación, implementar un concepto de funciones y derechos para todos los usuarios/grupos que utilizarán la solución.
+  Debe planificar y, a continuación, implementar un concepto de funciones y derechos para todos los usuarios/grupos que utilizarán la solución.
 
-   Por ejemplo:
+  Por ejemplo:
 
    * Una lista de funciones (es decir, grupos) con `read`/ `write` acceder a las definiciones de cada
 
@@ -261,24 +256,24 @@ Del mismo modo, las operaciones deben planificarse correctamente para garantizar
    * Para los usuarios con privilegios mínimos, se deben definir los flujos de trabajo
    * Usuarios en `editor` el grupo no debería tener `admin` ni formar parte de la `administrators` grupo
 
-   Para obtener más información, consulte [Administración de usuarios y seguridad](/help/sites-administering/security.md).
+  Para obtener más información, consulte [Administración de usuarios y seguridad](/help/sites-administering/security.md).
 
 * **Monitorización y mantenimiento**
 
-   La monitorización y el mantenimiento son aspectos clave para garantizar el funcionamiento sin problemas de la solución una vez que se ponga en marcha. Para ello, debe definir lo siguiente:
+  La monitorización y el mantenimiento son aspectos clave para garantizar el funcionamiento sin problemas de la solución una vez que se ponga en marcha. Para ello, debe definir lo siguiente:
 
    * Qué necesita monitorización
    * Tareas de mantenimiento; tanto regulares como para casos especiales
 
-   Consulte también [Monitorización y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
+  Consulte también [Monitorización y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
 
 * **Migración**
 
-   Cualquier contenido del sistema heredado debe revisarse y validarse para la migración.
+  Cualquier contenido del sistema heredado debe revisarse y validarse para la migración.
 
 * **Plan de recuperación**
 
-   Asegúrese de que dispone de un plan de recuperación. AEM En una situación de emergencia, esto debe estar disponible para asegurar el uso de la producción de los productos de la industria de la construcción de la industria de la construcción de la. Esto debe cubrir situaciones como copia de seguridad, restauración, caída de memoria y otras.
+  Asegúrese de que dispone de un plan de recuperación. AEM En una situación de emergencia, esto debe estar disponible para asegurar el uso de la producción de los productos de la industria de la construcción de la industria de la construcción de la industria de la industria de la construcción de la. Esto debe cubrir situaciones como copias de seguridad, restauración, visitas en orden previsto y otras.
 
 ### Desarrollo {#development}
 
@@ -288,7 +283,7 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
 
 * **Entorno de desarrollo**
 
-   Planifique y documente su entorno de desarrollo, lo que incluye:
+  Planifique y documente su entorno de desarrollo, lo que incluye:
 
    * Arquitectura
    * [Herramientas de desarrollo](/help/sites-developing/dev-tools.md)
@@ -301,14 +296,14 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
          * una herramienta para la integración continua; como Jenkins
          * una herramienta para el control de versiones; como GIT/SVN
          * un administrador de repositorios de artefactos de compilación; como Archiva/Nexus
-   * Integraciones y dependencias de software de terceros
+
+   * Integración/dependencias de software de terceros
    * [Integración/dependencias de la solución](/help/sites-administering/integration.md)
    * Cadencia de implementación
 
-
 * **Sistema de prueba**
 
-   Planifique y documente su entorno de prueba, lo que incluye:
+  Planifique y documente su entorno de prueba, lo que incluye:
 
    * Arquitectura
    * Dependencias de las compilaciones de desarrollo, incluidas las compilaciones nocturnas
@@ -318,18 +313,18 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
 
 * **Sistema de producción**
 
-   Planifique y documente su entorno de producción, lo que incluye:
+  Planifique y documente su entorno de producción, lo que incluye:
 
    * Arquitectura
    * Cadencia de implementación
-   * Integraciones y dependencias de software de terceros
+   * Integración/dependencias de software de terceros
    * Configuración de seguridad
    * Rendimiento de línea de base verificado ejecutando [Pruebas dificiles](/help/sites-developing/tough-day.md) en la configuración de producción
    * Requisitos para las pruebas de rendimiento; consulte [Prácticas recomendadas para el control de calidad](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integración**
 
-   Planifique, documente y pruebe todos los aspectos del sistema y [integración de soluciones](/help/sites-administering/integration.md), incluidos:
+  Planifique, documente y pruebe todos los aspectos del sistema y [integración de soluciones](/help/sites-administering/integration.md), incluidos:
 
    * Una estrategia de pruebas automatizadas
    * Procesos automatizados para [mover aplicaciones de desarrollo a prueba y después a producción](/help/managing/enterprise-devops.md#code-movement)
@@ -337,18 +332,18 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
 
 * **Migración**
 
-   Planifique, documente y pruebe todos los aspectos de la migración de contenido, incluidos los siguientes:
+  Planifique, documente y pruebe todos los aspectos de la migración de contenido, incluidos los siguientes:
 
    * Arquitectura de contenido
    * Estrategia de migración
 
 * **Comunicación**
 
-   Asegúrese de que todos los miembros del equipo y el personal del proyecto se mantienen actualizados según sea necesario.
+  Asegúrese de que todos los miembros del equipo y el personal del proyecto se mantienen actualizados según sea necesario.
 
 * **Documentación**.
 
-   Documente la solución completamente; incluyendo:
+  Documente la solución completamente; incluyendo:
 
    * Manual de operaciones
    * Cualquier personalización que pueda afectar a las actualizaciones
@@ -368,26 +363,27 @@ Una vez que la nueva aplicación esté disponible, deberá someterse a rigurosas
 
 * **Prueba de aceptación de usuario final**
 
-   [Pruebas de aceptación del usuario](/help/sites-developing/acceptance-signoff.md) (UAT) es crucial para garantizar que:
+  [Pruebas de aceptación del usuario](/help/sites-developing/acceptance-signoff.md) (UAT) es crucial para garantizar que:
 
    * La solución satisface los requisitos del usuario/cliente
    * El cliente o los usuarios aceptan la solución (función, diseño y rendimiento)
 
-   Debe haber una lista de comprobación formalizada para el traspaso de clientes; idealmente automatizada y ejecutada todas las noches con una instantánea. Los resultados deben enviarse al jefe de proyecto y al equipo de desarrollo
+  Debe haber una lista de comprobación formalizada para el traspaso de clientes; idealmente automatizada y ejecutada todas las noches con una instantánea. Los resultados deben enviarse al jefe de proyecto y al equipo de desarrollo
 
 * **Pruebas de rendimiento y carga**
 
-   Las pruebas de rendimiento y carga se utilizan para garantizar que la solución cumpla los niveles de rendimiento requeridos, con cargas medias y máximas.
+  Las pruebas de rendimiento y carga se utilizan para garantizar que la solución cumpla los niveles de rendimiento requeridos, con cargas medias y máximas.
 
-   Para obtener más información sobre las pruebas de rendimiento, consulte:
+  Para obtener más información sobre las pruebas de rendimiento, consulte:
 
    * [Pruebas de rendimiento](/help/sites-deploying/configuring-performance.md)
    * [Planificación y ejecución de pruebas](/help/sites-developing/planning.md)
 
    * [Directrices básicas de rendimiento](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
-   >[!NOTE]
-   >
-   >AEM Este proceso tendrá que continuarse durante el uso normal de la, pero estas etapas iniciales son las más cruciales.
+
+  >[!NOTE]
+  >
+  >AEM Este proceso debe continuarse durante el uso normal de la, pero estas etapas iniciales son las más cruciales.
 
 ### Despliegue {#rollout}
 
@@ -397,17 +393,17 @@ El despliegue de la nueva aplicación requiere una planificación cuidadosa para
 
 * **Preparación**
 
-   La preparación y la planificación ayudarán a garantizar un despliegue sin problemas.
+  La preparación y la planificación ayudarán a garantizar un despliegue sin problemas.
 
 * **Formación**
 
-   Asegurarse de que todo el personal involucrado haya recibido formación.
+  Asegurarse de que todo el personal involucrado haya recibido formación.
 
-   Consulte [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) en el catálogo de cursos.
+  Consulte [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) en el catálogo de cursos.
 
 * **Administradores formados**
 
-   Asegúrese de que los administradores de su solución tengan:
+  Asegúrese de que los administradores de su solución tengan:
 
    * Se ha entrenado
    * Se recibió el material de capacitación apropiado
@@ -415,7 +411,7 @@ El despliegue de la nueva aplicación requiere una planificación cuidadosa para
 
 * **Usuarios formados**
 
-   Asegúrese de que los autores tengan:
+  Asegúrese de que los autores tengan:
 
    * Se ha entrenado
    * Se recibió el material de capacitación apropiado
@@ -423,43 +419,43 @@ El despliegue de la nueva aplicación requiere una planificación cuidadosa para
 
 * **Pruebas de penetración**
 
-   Las pruebas de penetración simulan un ataque a un sistema informático para identificar posibles deficiencias de seguridad.
+  Las pruebas de penetración simulan un ataque a un sistema informático para identificar posibles deficiencias de seguridad.
 
 * **Pruebas de penetración/seguridad**
 
-   Para garantizar la seguridad de su solución, realice pruebas de penetración específicas, junto con una gama más amplia de pruebas de seguridad.
+  Para garantizar la seguridad de su solución, realice pruebas de penetración específicas, junto con una gama más amplia de pruebas de seguridad.
 
-   Consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) para obtener más información.
+  Consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) para obtener más información.
 
 ### Lanzamiento {#go-live}
 
-Desea que el lanzamiento sea lo más fluido posible. De nuevo, los pasos finales necesitan planificación para una ejecución limpia.
+Desea que el lanzamiento sea lo más fluido posible. De nuevo, los pasos finales deben planificar para una ejecución limpia.
 
 #### Hitos {#milestones-7}
 
 * **Preparación**
 
-   La preparación y planificación ayudarán a garantizar un lanzamiento sin problemas.
+  La preparación y planificación ayudarán a garantizar un lanzamiento sin problemas.
 
 * **Seguridad**
 
-   Confirme la seguridad de su solución tanto para usuarios internos como externos, así como para su contenido.
+  Confirme la seguridad de su solución tanto para usuarios internos como externos, así como para su contenido.
 
 * **Abandono**
 
-   Asegúrese de que todos los sistemas, procedimientos y mecanismos necesarios para la reserva estén implementados antes de activarse.
+  Asegúrese de que todos los sistemas, procedimientos y mecanismos necesarios para la reserva estén implementados antes de activarse.
 
 * **Asistencia**
 
-   Asegúrese de que los servicios de asistencia estén implementados y listos.
+  Asegúrese de que los servicios de asistencia estén implementados y listos.
 
 * **Transición**
 
-   Planifique y ejecute la transición a su entorno de producción y a los usuarios.
+  Planifique y ejecute la transición a su entorno de producción y a los usuarios.
 
 * **Desplegar**
 
-   Prepara y ejecuta tus pruebas de humo.
+  Prepara y ejecuta tus pruebas de humo.
 
 ## Grupo de usuarios {#persona}
 
@@ -483,7 +479,7 @@ El patrocinador del proyecto es:
 
 El jefe de proyecto es:
 
-* Responsable de la entrega general del proyecto en función de los requisitos (por ejemplo, alcance, indicadores clave de rendimiento (KPI), criterios de éxito y definición) proporcionados por el patrocinador del proyecto.
+* Responsable de la entrega general del proyecto en función de los requisitos (por ejemplo, alcance, KPI, criterios de éxito y definición) proporcionados por el patrocinador del proyecto.
 * Responsable de definir el presupuesto y dotar de recursos al proyecto en función de dicho presupuesto.
 * El principal punto de comunicación para todas las personas involucradas en el proyecto.
 
@@ -566,7 +562,7 @@ El posible cliente de seguridad:
 
 * Escritores técnicos
 
-   * Según la escala y la naturaleza del proyecto, se pueden utilizar redactores técnicos especializados para escribir directrices y manuales para grupos específicos; por ejemplo, un manual de mantenimiento para administradores de sistemas o una guía del usuario para los autores.
+   * Dependiendo de la escala y la naturaleza del proyecto, se pueden utilizar redactores técnicos especializados para escribir directrices y manuales para grupos específicos. Por ejemplo, un manual de mantenimiento para administradores del sistema o una guía del usuario para autores.
 
 * Administradores del sistema
 
@@ -587,7 +583,7 @@ Las listas de comprobación cubren lo siguiente **Documentos requeridos** y **En
 
 El **Documentos requeridos** son necesarios para el usuario adecuado al producir sus entregables.
 
-Para cada **Documento obligatorio** la persona debe indicar:
+Para cada **Documento obligatorio**, la persona debe indicar:
 
 * **S/N**: si se ha recibido.
 * **1-3**: una indicación de la calidad del documento recibido.
@@ -596,7 +592,7 @@ Para cada **Documento obligatorio** la persona debe indicar:
 
 Para cada hito, las personas adecuadas son responsables de entregar documentos específicos y, por lo tanto, de cumplir con sus responsabilidades en un hito específico.
 
-Para cada **Entregable** la persona debe indicar:
+Para cada **Entregable**, la persona debe indicar:
 
 * **S/N**: si se ha completado.
 
@@ -632,4 +628,4 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
 * Documentación relacionada
 
-   * ADOBE EXPERIENCE CLOUD - [Planificación de Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * ADOBE EXPERIENCE CLOUD - [Planificación de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

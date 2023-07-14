@@ -1,18 +1,16 @@
 ---
 title: Uso de versiones de página
 description: El control de versiones crea una "captura de pantalla" de una página en un momento específico.
-uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 21%
+source-wordcount: '1353'
+ht-degree: 16%
 
 ---
 
@@ -29,7 +27,7 @@ El control de versiones crea una &quot;captura de pantalla&quot; de una página 
 Para crear una nueva versión de una página:
 
 1. En el explorador, abra la página para la que desea crear una nueva versión.
-1. En la barra de tareas, seleccione **Versiones** y, a continuación, **Crear versión** subpestaña.
+1. En el Sidekick, seleccione **Versiones** y, a continuación, **Crear versión** subpestaña.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -41,7 +39,7 @@ Para crear una nueva versión de una página:
 >
 >Se crea automáticamente una versión cuando se activa la página.
 
-## Restablecer una versión de página desde la barra de tareas {#restoring-a-page-version-from-sidekick}
+## Restablecer una versión de página desde el Sidekick {#restoring-a-page-version-from-sidekick}
 
 Para restaurar la página a una versión anterior:
 
@@ -50,7 +48,7 @@ Para restaurar la página a una versión anterior:
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Seleccione la versión que desee restaurar y seleccione **Restaurar**.
+1. Seleccione la versión que desea restaurar y seleccione **Restaurar**.
 
 ## Restablecer una versión de página desde la consola {#restoring-a-page-version-from-the-console}
 
@@ -61,11 +59,11 @@ Este método se puede utilizar para restaurar una versión de la página. Tambi�
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Seleccionar **Restaurar versión...** enumera las versiones de los documentos de la carpeta actual. Aunque se haya eliminado una página, se mostrará la última versión:
+1. Seleccionar **Restaurar versión...** enumera las versiones de los documentos de la carpeta actual. Aunque se haya eliminado una página, se muestra la última versión:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Seleccione la versión que desee restaurar y haga clic en **Restaurar**. AEM restaura las versiones (o árboles) que ha seleccionado.
+1. Seleccione la versión que desee restaurar y haga clic en **Restaurar**. AEM restaura las versiones (o árboles) que seleccione.
 
 ### Restauración de un árbol desde la consola {#restoring-a-tree-from-the-console}
 
@@ -84,11 +82,11 @@ Este método se puede utilizar para restaurar una versión de la página. Tambi�
 Para comparar la versión actual de la página con una versión anterior:
 
 1. En el explorador, abra la página para la que desea comparar con una versión anterior.
-1. En la barra de tareas, seleccione **Versiones** y, a continuación, **Restaurar versión** En la subpestaña.
+1. En el Sidekick, seleccione **Versiones** y, a continuación, **Restaurar versión** En la subpestaña.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Seleccione la versión que desee comparar y haga clic en **Diferencia** botón.
+1. Seleccione la versión que desee comparar y haga clic en el icono **Diferencia** botón.
 1. Las diferencias entre la versión actual y la seleccionada se muestran de la siguiente manera:
 
    * El texto que se ha eliminado está en rojo y tachado.
@@ -97,7 +95,7 @@ Para comparar la versión actual de la página con una versión anterior:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. En la barra de tareas, seleccione **Restaurar versión** y haga clic en el icono **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> para mostrar la versión actual.**
+1. En el Sidekick, seleccione **Restaurar versión** y haga clic en el icono **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> para mostrar la versión actual.**
 
 ## Deformación de tiempo   {#timewarp}
 
@@ -114,7 +112,7 @@ Para ello:
 
 >[!NOTE]
 >
->Si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar la vista correcta. Además, si los elementos (como código, css, imágenes, etc.) para procesar el sitio web han cambiado, la vista diferirá de lo que era originalmente, ya que esos elementos no tienen versiones en el repositorio.
+>Si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar la vista correcta. Además, si los elementos para procesar el sitio web (código, css e imágenes) han cambiado, la vista difiere de la original, ya que no hay versiones de esos elementos en el repositorio.
 
 ### Uso del calendario de Deformación de tiempo {#using-the-timewarp-calendar}
 
@@ -122,7 +120,7 @@ Deformación de tiempo está disponible en la barra de tareas.
 
 La versión del calendario se utiliza si tiene un día específico para ver:
 
-1. Abra el **Versiones** y luego haga clic en **Deformación de tiempo** (cerca del final de la barra de tareas). Se mostrará el siguiente cuadro de diálogo:
+1. Abra el **Versiones** y luego haga clic en **Deformación de tiempo** (cerca del final de la barra de tareas). Se muestra el siguiente cuadro de diálogo:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -140,7 +138,7 @@ La versión del calendario se utiliza si tiene un día específico para ver:
 
    >[!NOTE]
    >
-   >No puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, deberá hacerlo manualmente mediante la [restauración](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >No puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, hágalo manualmente mediante [restaurar](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Cuando haya terminado de ver la página, haga clic en:
 
@@ -155,13 +153,13 @@ La versión de la cronología se utiliza si desea ver una descripción general d
 
 Si desea ver la cronología del documento:
 
-1. Para mostrar la cronología, puede hacer lo siguiente:
+1. Para mostrar la cronología, siga uno de estos procedimientos:
 
-   1. Abra el **Versiones** y luego haga clic en **Deformación de tiempo** (cerca del final de la barra de tareas).
+   1. Abra el **Versiones** y haga clic en **Deformación de tiempo** (cerca del final de la barra de tareas).
 
    1. Utilice el cuadro de diálogo de la barra de tareas que aparece después [uso del calendario de Deformación de tiempo](#using-the-timewarp-calendar).
 
-1. Haga clic en **Mostrar cronograma** - aparecerá la línea de tiempo del documento; por ejemplo:
+1. Clic **Mostrar cronograma** - aparece la cronología del documento; por ejemplo:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -186,10 +184,10 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 * **Deformación de tiempo emplea las versiones de página**: si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página en el repositorio.
 * **Las versiones eliminadas afectan a la función Deformación de tiempo**: si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar resultados correctos.
 
-* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, deberá hacerlo manualmente mediante la [restauración](#main-pars-title-1).
+* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, hágalo manualmente mediante [restaurar](#main-pars-title-1).
 
-* **Deformación de tiempo se basa únicamente en el contenido de la página**: si los elementos para procesar el sitio web (código, CSS, recursos e imágenes, etc.) cambian, la vista será diferente de la original, ya que no hay versiones de dichos elementos en el repositorio.
+* **Deformación de tiempo solo se basa en el contenido de la página** : Si los elementos (como código, css y recursos de imagen) para procesar el sitio web han cambiado, la vista difiere de la que era originalmente, ya que esos elementos no tienen versiones en el repositorio.
 
 >[!CAUTION]
 >
->Deformación de tiempo está diseñada como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.
+>Deformación de tiempo está diseñada para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.

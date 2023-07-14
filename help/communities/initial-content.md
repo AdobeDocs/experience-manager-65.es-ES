@@ -1,18 +1,14 @@
 ---
 title: Contenido inicial de zona protegida
-seo-title: Initial Sandbox Content
 description: Crear contenido
-seo-description: Create content
-uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '462'
 ht-degree: 4%
 
 ---
@@ -21,17 +17,17 @@ ht-degree: 4%
 
 En esta sección, cree las siguientes páginas, que utilizan la variable [plantilla de página](initial-app.md#createthepagetemplate):
 
-* Sitio de zona protegida de SCF, que redireccionará a la versión en inglés de la página principal.
+* Sitio de zona protegida de SCF, que redirige a la versión en inglés de la página principal.
 
    * Zona protegida de SCF: página principal de la versión en inglés del sitio.
 
    * Reproducción SCF: elemento secundario de la página principal en la que se va a reproducir.
 
-Aunque este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md), está diseñado para que la página raíz pueda implementar la detección del idioma preferido del usuario a través del encabezado del HTML y redirigir a la página principal adecuada para el idioma. La convención consiste en utilizar el código de país de dos letras para el nombre del nodo de la página, por ejemplo, &quot;en&quot; para inglés, &quot;fr&quot; para francés, etc.
+Aunque este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md), está diseñado para que la página raíz pueda implementar la detección del idioma preferido del usuario a través del encabezado del HTML y redirigir a la página principal adecuada para el idioma. La convención es utilizar el código de país de dos letras para el nombre del nodo de la página como, por ejemplo, &quot;en&quot; para inglés y &quot;fr&quot; para francés.
 
 ## Crear primeras páginas {#create-first-pages}
 
-Ahora que hay un [plantilla de página](initial-app.md#createthepagetemplate), podemos establecer la página raíz del sitio web en el directorio /content.
+Ahora que hay un [plantilla de página](initial-app.md#createthepagetemplate), puede establecer la página raíz del sitio web en el directorio /content.
 
 1. Actualmente, la IU estándar proporciona modelos para la creación de sitios. Como este tutorial crea un sitio simple, la IU clásica resulta útil.
 
@@ -58,14 +54,14 @@ Ahora que hay un [plantilla de página](initial-app.md#createthepagetemplate), p
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. En el panel del explorador, seleccione la página que acaba de crear, `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**:
+1. En el panel del explorador, seleccione la página que ha creado, `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**:
 
    * Título: `SCF Sandbox`
    * Nombre: `en`
    * Seleccionar **[!UICONTROL Una plantilla de reproducción de zona protegida SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
-1. En el panel del explorador, seleccione la página que acaba de crear, `/Websites/SCF Sandbox Site/SCF Sandbox`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**
+1. En el panel del explorador, seleccione la página que ha creado, `/Websites/SCF Sandbox Site/SCF Sandbox`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**
 
    * Título: `SCF Play`
    * Nombre: `play`
@@ -86,7 +82,7 @@ Cuándo ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcde
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-se definió, lo que proporciona la capacidad opcional de hacer referencia a los recursos de diseño en una secuencia de comandos utilizando `currentDesign.getPath()`. Por ejemplo
+Se definió, lo que proporciona la capacidad opcional de hacer referencia a los recursos de diseño en una secuencia de comandos utilizando `currentDesign.getPath()`. Por ejemplo
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -103,8 +99,8 @@ El repositorio debe aparecer de la siguiente manera:
 
 * Haga clic en **[!UICONTROL Guardar todo]**
 
-Si tiene algún problema para guardar la configuración, vuelva a iniciar sesión y configure de nuevo.
+Si hay algún problema al guardar la configuración, vuelva a iniciar sesión y configure de nuevo.
 
 >[!NOTE]
 >
->El uso de `cq:designPath` es opcional y no está relacionado con el [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que son esencialmente necesarios, ya que los componentes de SCF utilizan [clientlibs](client-customize.md#clientlibs-for-scf) para administrar su JS y CSS.
+>El uso de `cq:designPath` es opcional y no está relacionado con el [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que son necesarios, ya que los componentes de SCF utilizan [clientlibs](client-customize.md#clientlibs-for-scf) para administrar su JS y CSS.

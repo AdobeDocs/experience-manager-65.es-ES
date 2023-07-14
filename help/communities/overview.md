@@ -1,33 +1,29 @@
 ---
 title: Información general de AEM Communities
-seo-title: AEM Communities Overview
 description: Información general sobre las funciones y la configuración de AEM Communities
-seo-description: An overview of AEM Communities features and setup
-uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1265'
 ht-degree: 2%
 
 ---
 
 # Información general de AEM Communities {#aem-communities-overview}
 
-Las comunidades de Adobe Experience Manager AEM () proporcionan la capacidad de crear rápidamente un sitio de comunidad local que mejore el rendimiento, la administración del sitio y fomente la conversión de los visitantes del sitio en miembros de la comunidad más valiosos.
+Las comunidades de Adobe Experience Manager AEM () proporcionan la capacidad de crear rápidamente un sitio de comunidad local que haya mejorado el rendimiento, mejorado la administración del sitio y fomente la conversión de los visitantes del sitio en miembros de la comunidad más valiosos.
 
 ## Características de Communities {#communities-features}
 
 AEM Communities permite desarrollar una relación con los visitantes del sitio que:
 
 * **Informa** a través de blogs, preguntas y respuestas y calendarios de eventos,
-* While **obtención de perspectivas** a través de foros, comentarios y otros contenidos de la comunidad, a menudo denominados contenido generado por el usuario (UGC).
+* While **obtención de perspectivas** a través de foros, comentarios y otro contenido de la comunidad, a menudo denominado contenido generado por el usuario (UGC).
 * Permite **moderación** por miembros de confianza en el entorno de publicación,
 * **Inicio de sesión social** con Twitter y Facebook,
 * **Traducción en línea** del contenido de la comunidad,
@@ -62,7 +58,7 @@ El [asistente de creación de sitios](/help/communities/sites-console.md):
 
    * Inicio de sesión : registro automático, [inicio de sesión social](/help/communities/social-login.md), perfiles de usuario
 
-      * Notificaciones: los miembros ven eventos de relevancia para ellos y el contenido generado por el usuario donde se encuentran [@mentioned](/help/communities/overview.md#mentionssupport).
+      * Notificaciones: los miembros ven eventos de relevancia para ellos y contenido generado por el usuario donde se encuentran [@mentioned](/help/communities/overview.md#mentionssupport).
 
       * Mensajes: los miembros pueden enviar o recibir mensajes dentro del sitio de la comunidad.
       * Buscar: capacidad de buscar en el sitio de la comunidad.
@@ -75,19 +71,19 @@ El [asistente de creación de sitios](/help/communities/sites-console.md):
    * Personalización de marca: carga opcional de una imagen de titular para mostrarla en todas las páginas del sitio de la comunidad.
    * Menú de navegación: se proporcionan vínculos de navegación para las funciones incluidas en la plantilla del sitio de la comunidad.
 
-Para experimentar la facilidad de crear rápidamente un nuevo sitio de comunidad, visite [Introducción a AEM Communities](/help/communities/getting-started.md).
+Para experimentar la facilidad de crear rápidamente un sitio de la comunidad, visite [Introducción a AEM Communities](/help/communities/getting-started.md).
 
 ## Persistencia del contenido de comunidad {#community-content-persistence}
 
-Para mejorar el rendimiento y la sincronización del contenido de la comunidad, AEM Communities AEM requiere un almacén común específico para el contenido generado por el usuario (UGC) compartido entre todas las instancias (de autor y publicación) de la.
+Para mejorar el rendimiento y la sincronización del contenido de la comunidad, AEM Communities AEM requiere un almacén común específico para el contenido generado por el usuario (UGC) compartido entre todas las instancias (de autor y publicación) de los.
 
 Se puede acceder fácilmente al contenido de la comunidad a través del proveedor de recursos de almacenamiento (SRP), que proporciona una capa para separar el acceso de la topología subyacente y admite un almacén común para UGC.
 
 Para obtener más información acerca de la persistencia del contenido de la comunidad y las implementaciones recomendadas, consulte:
 
-* [Almacenamiento de contenido de comunidad](/help/communities/working-with-srp.md), que analiza las opciones de almacenamiento SRP disponibles para UGC.
-* [Topologías recomendadas](/help/communities/topologies.md), que analiza topologías basadas en casos de uso y opciones de SRP.
-* [AEM Actualización a comunidades de 6.5](/help/communities/upgrade.md)AEM , que proporciona información útil sobre UGC al pasar a la versión 6.5 del.
+* [Almacenamiento de contenido de comunidad](/help/communities/working-with-srp.md): analiza las opciones de almacenamiento SRP disponibles para UGC.
+* [Topologías recomendadas](/help/communities/topologies.md): permite discutir topologías basadas en casos de uso y opciones de SRP.
+* [AEM Actualización a comunidades de 6.5](/help/communities/upgrade.md)AEM : proporciona información útil sobre el CGU al pasar a la versión 6.5 de la.
 
 ## Consolas de Communities {#communities-consoles}
 
@@ -135,7 +131,7 @@ La consola de herramientas globales proporciona acceso a las siguientes herramie
 
 * [Guía de componentes](/help/communities/components-guide.md)
 
-   * Un sitio de muestra, [Componentes de la comunidad](https://localhost:4502/editor.html/content/community-components/en.html), que proporciona una muestra de todos los componentes de Communities con su configuración predeterminada y la capacidad de experimentar con ellos.
+   * Un sitio de muestra, [Componentes de la comunidad](https://localhost:4502/editor.html/content/community-components/en.html) proporciona una muestra de todos los componentes de Communities con su configuración predeterminada y la capacidad de experimentar con ellos.
 
 ## Plantillas de sitio de la comunidad {#community-site-templates}
 
@@ -159,7 +155,7 @@ La función de grupos de comunidad permite que usuarios autorizados y miembros d
 
 Desde el entorno de creación, los grupos de comunidad (subcomunidades) pueden crearse dentro de un sitio de comunidad existente o anidarse dentro de un grupo existente, cuando la estructura de la plantilla contenga la variable [Función Grupos](/help/communities/functions.md#groups-function).
 
-La creación de un grupo de comunidad requiere la selección de una plantilla de grupo de comunidad que proporcione el diseño de las páginas de grupo de comunidad. Cuando se agrega una función Grupos a una estructura de plantilla, se configura para especificar una plantilla de grupo o para proporcionar una opción de plantillas en el momento en que se crea un nuevo grupo de comunidad.
+La creación de un grupo de comunidad requiere la selección de una plantilla de grupo de comunidad que proporcione el diseño de las páginas del grupo de comunidad. Cuando se agrega una función Grupos a una estructura de plantilla, se configura para especificar una plantilla de grupo o para proporcionar una opción de plantillas en el momento en que se crea un nuevo grupo de comunidad.
 
 Consulte también lo siguiente:
 
@@ -195,7 +191,7 @@ Las funciones de una comunidad de participación pueden incluir:
 * Puntuación y distintivos
 * Informes de Analytics
 
-Para experimentar la facilidad de crear rápidamente una nueva comunidad de participación, visite [Introducción a AEM Communities](/help/communities/getting-started.md).
+Para experimentar la facilidad de crear rápidamente una comunidad de participación, visite [Introducción a AEM Communities](/help/communities/getting-started.md).
 
 ## AEM Máquina de demostración {#aem-demo-machine}
 
@@ -208,7 +204,7 @@ AEM La máquina de demostración de la incluye:
 
 * Paquetes para instalar.
 
-AEM AEM AEM AEM AEM AEM La máquina de demostración de la se probó con éxito con CQ 5.5, CQ 5.6.1, 6.0, 6.1, 6.2, 6.3 y 6.4 en Windows, MacOS y Linux.
+AEM AEM AEM AEM AEM AEM La máquina de demostración de la se probó con éxito con CQ 5.5, CQ 5.6.1, 6.0, 6.1, 6.2, 6.3 y 6.4 en Windows, MacOS y Linux®.
 
 AEM AEM La máquina de demostración de la requiere una licencia válida de la misma.
 

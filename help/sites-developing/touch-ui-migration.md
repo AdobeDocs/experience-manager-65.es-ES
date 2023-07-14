@@ -1,28 +1,24 @@
 ---
 title: Migración a la IU táctil
-seo-title: Migration to the Touch UI
 description: Migración a la IU táctil
-seo-description: Migration to the Touch UI
-uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 5%
+source-wordcount: '659'
+ht-degree: 6%
 
 ---
 
 # Migración a la IU táctil{#migration-to-the-touch-ui}
 
-A partir de la versión 6.0, Adobe Experience Manager AEM () introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocido simplemente como *IU táctil*). Se alinea con Adobe Marketing Cloud y con las directrices generales de la interfaz de usuario de Adobe. AEM Esta se ha convertido en la interfaz de usuario estándar en la interfaz heredada y orientada al escritorio, a la que se hace referencia como la interfaz de usuario de, *IU clásica*.
+A partir de la versión 6.0, Adobe Experience Manager AEM () introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocido simplemente como *IU táctil*). Se alinea con Adobe Experience Cloud y con las directrices generales de la interfaz de usuario de Adobe. AEM Esta se ha convertido en la interfaz de usuario estándar en la interfaz heredada y orientada al escritorio, a la que se hace referencia como la interfaz de usuario de, *IU clásica*.
 
-AEM Si ha estado utilizando la interfaz de usuario clásica de la interfaz de usuario de, tendrá que realizar alguna acción para migrar su instancia. Esta página está diseñada para actuar como un trampolín al proporcionar vínculos a recursos individuales.
+AEM Si ha estado utilizando la interfaz de usuario clásica de, tome medidas para migrar la instancia. Esta página está diseñada para actuar como un trampolín al proporcionar vínculos a recursos individuales.
 
 >[!NOTE]
 >
@@ -30,7 +26,7 @@ AEM Si ha estado utilizando la interfaz de usuario clásica de la interfaz de us
 
 ## Conceptos básicos {#the-basics}
 
-Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre la IU clásica y la táctil:
+Al migrar, tenga en cuenta las siguientes diferencias principales entre la IU clásica y la táctil:
 
 <table>
  <tbody>
@@ -66,11 +62,11 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Ubicación de Javascript:</p>
+   <td><p>Ubicación de JavaScript:</p>
     <ul>
      <li>Las partes imperativas se incrustan directamente mediante oyentes o se administran en clientlibs.</li>
     </ul> </td>
-   <td><p>Ubicación de Javascript:</p>
+   <td><p>Ubicación de JavaScript:</p>
     <ul>
      <li>Las partes imperativas no pueden incorporarse en la definición del diálogo; separación de responsabilidades.</li>
     </ul> </td>
@@ -78,11 +74,11 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
   <tr>
    <td><p>Gestión de eventos:</p>
     <ul>
-     <li>Los widgets de diálogo hacen referencia directamente al código Javascript.</li>
+     <li>Los widgets de diálogo hacen referencia directamente al código JavaScript.</li>
     </ul> </td>
    <td><p>Gestión de eventos:</p>
     <ul>
-     <li>Javascript observa eventos de diálogo.</li>
+     <li>JavaScript observa eventos de diálogo.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -107,7 +103,7 @@ Antes de empezar, compruebe el estado y las recomendaciones relacionadas:
 * [Estado de funciones de IU táctil](/help/release-notes/touch-ui-features-status.md)
 * [Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
 
-Los conceptos básicos del desarrollo de la IU táctil proporcionarán una base sólida:
+Los conceptos básicos del desarrollo de la IU táctil proporcionan una base sólida:
 
 * [AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la](/help/sites-developing/touch-ui-concepts.md)
 * [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md)
@@ -149,12 +145,12 @@ Aunque no están directamente relacionados con una migración a la interfaz de u
 AEM Para obtener información completa sobre el desarrollo de los recursos, consulte la recopilación de recursos en:
 
 * [Guía del usuario sobre desarrollo](/help/sites-developing/home.md)
-* [Documentación de Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM Tutorials y vídeos de 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems de](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
+* [AEM Gems de](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
 * [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->AEM Las herramientas de modernización de la comunidad son un esfuerzo de la comunidad y no son compatibles ni están garantizadas por el Adobe de.
+>AEM Las herramientas de modernización son un esfuerzo de la comunidad y no son compatibles ni están garantizadas por el Adobe.

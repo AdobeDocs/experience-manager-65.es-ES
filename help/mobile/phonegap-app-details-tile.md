@@ -1,18 +1,14 @@
 ---
 title: Administrar mosaico de aplicación
-seo-title: Manage App Tile
 description: Siga esta página para obtener más información sobre Administrar mosaico de aplicación en el panel de aplicaciones, que permite modificar los detalles de la aplicación.
-seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
-uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1252'
 ht-degree: 1%
 
 ---
@@ -21,15 +17,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El **Administrar aplicación** El mosaico del tablero de la aplicación permite modificar los detalles de la aplicación. Para abrir la página Detalles, haga clic en el vínculo de detalles del mosaico Administrar aplicación. Desde la página Administrar aplicación puede editar la configuración de la aplicación PhoneGap (config.xml) y preparar la aplicación para su envío a las distintas tiendas de aplicaciones.
+El **Administrar aplicación** El mosaico del tablero de la aplicación permite modificar los detalles de la aplicación. Para abrir la página Detalles, haga clic en el vínculo de detalles del mosaico Administrar aplicación. Desde la página Administrar aplicación, puede editar la configuración de la aplicación PhoneGap (config.xml) y preparar la aplicación para su envío a las distintas tiendas de aplicaciones.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 ## Explicación del mosaico Administrar aplicación {#understanding-the-manage-app-tile}
 
-Puede explorar en profundidad cada mosaico del **Administrar aplicación** mosaico para ver o editar detalles haciendo clic en &quot;...&quot; en la esquina inferior derecha.
+Puede explorar en profundidad cada mosaico del **Administrar aplicación** mosaico para ver o editar detalles haciendo clic en &#39;...&#39; en la esquina inferior derecha.
 
 ### La pestaña Básico {#the-basic-tab}
 
@@ -41,7 +37,7 @@ Puede editar la variable **Nombre**, **Autor**, **Descripción breve**, y el **D
 
 Cada plataforma de aplicación móvil describe qué datos se recopilan y se dirigen específicamente a cada almacén de aplicaciones.
 
-Las plataformas mostradas dependen del contenido config.xml de PhoneGap:
+Las plataformas mostradas se rigen por el contenido config.xml de PhoneGap:
 
 ```xml
 <widget>
@@ -50,7 +46,7 @@ Las plataformas mostradas dependen del contenido config.xml de PhoneGap:
 </widget>
 ```
 
-Cada tienda de aplicaciones de proveedores, como Apple App Store o Google Play Store, por ejemplo, requiere una o más capturas de pantalla de la aplicación móvil para mostrar los detalles de la aplicación a los clientes. Estas capturas de pantalla pueden tener requisitos estrictos en cuanto a dimensiones y contenido (básicamente, deben representar realmente la aplicación). AEM Las aplicaciones de AppMeasurement proporcionan asistencia para seleccionar y administrar estas capturas de pantalla para las plataformas admitidas y ver las dimensiones de puerto según lo requerido por la tienda de aplicaciones de cada proveedor.
+Cada tienda de aplicaciones de proveedores (por ejemplo, Apple App Store o Google Play Store) necesita una o más capturas de pantalla de su aplicación móvil para mostrar los detalles de su aplicación a los clientes. Estas capturas de pantalla pueden tener requisitos estrictos en cuanto a dimensiones y contenido (básicamente, deben representar realmente la aplicación). AEM Las aplicaciones de AppMeasurement proporcionan asistencia para seleccionar y administrar estas capturas de pantalla para las plataformas admitidas y ver las dimensiones de puerto según lo requerido por la tienda de aplicaciones de cada proveedor.
 
 >[!NOTE]
 >
@@ -78,7 +74,7 @@ En esta sección puede definir la URL de Content Update Server, la página de at
 
 **Versión de PhoneGap** es la versión en la que se desea compilar la aplicación con PhoneGap. La práctica recomendada es mantenerse al día con la versión actual para asegurarse de obtener las últimas y buenas funciones y correcciones de errores.
 
-**URL del servidor de actualización de contenido** es la dirección URL que la aplicación utilizará para solicitar actualizaciones de ContentSync. Se debe establecer en la dirección URL de Dispatcher o, si no utiliza un Dispatcher, en una de las instancias de publicación que se utilizará para publicar actualizaciones de ContentSync en la aplicación.
+**URL del servidor de actualización de contenido** es la dirección URL que la aplicación utilizará para solicitar actualizaciones de ContentSync. Se debe establecer en la dirección URL de Dispatcher o, si no se utiliza Dispatcher, en una de las instancias de publicación que se utilizará para publicar actualizaciones de ContentSync en la aplicación.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -112,9 +108,9 @@ La funcionalidad de exportación se utiliza para proporcionar una forma cómoda 
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Metadatos de Android {#android-metadata}
+#### Metadatos de Android™ {#android-metadata}
 
-Al seleccionar la plataforma de Android, no hay metadatos personalizados en este punto que se puedan configurar. Al hacer clic en el botón de descarga como archivo zip, se generará un archivo de propiedades que contiene todos los metadatos y las capturas de pantalla asociadas.
+Al seleccionar la plataforma de Android™, no hay metadatos personalizados en este momento que se puedan configurar. Al hacer clic en el botón de descarga, se genera un archivo zip con un archivo de propiedades que contiene todos los metadatos y las capturas de pantalla asociadas.
 
 La funcionalidad de exportación se utiliza para proporcionar una forma cómoda de recopilar las capturas de pantalla y los metadatos que se pueden pasar al editor de la aplicación para su entrada en el almacén de aplicaciones específico del proveedor.
 
@@ -150,7 +146,7 @@ El **Capturas de pantalla** La pestaña muestra las resoluciones de captura de p
 
 ### La pestaña Autenticación {#the-authentication-tab}
 
-El **Autenticación** permite seleccionar un cliente de OAuth asociado a la aplicación y permite al desarrollador utilizar la autenticación OAuth de Adobe Experience Manager.
+El **Autenticación** La pestaña permite seleccionar un cliente de OAuth para asociarlo a la aplicación y permite a un desarrollador utilizar la autenticación OAuth de Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

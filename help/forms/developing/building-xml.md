@@ -2,10 +2,10 @@
 title: ¿Cómo se utiliza el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML?
 description: Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 2%
+source-wordcount: '993'
+ht-degree: 3%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 Hay mucho XML relacionado con los flujos de trabajo de AEM Forms en JEE Process Management, por ejemplo: la información XML se puede crear en un proceso y enviarse a una aplicación de Flex en AEM Forms en JEE Workspace, utilizarse para la configuración de sistemas o pasar información desde y hacia formularios. Hay muchos casos en los que un desarrollador de AEM Forms en JEE necesita administrar XML y muchas veces esto requiere que el XML se administre a través de un proceso de AEM Forms en JEE.
 
-Cuando se trata de una configuración XML simple, se puede utilizar la variable `Set Value` , que es un servicio predeterminado de AEM Forms en JEE. Este servicio establece el valor de uno o más elementos de datos en el modelo de datos de proceso. Para una lógica condicional muy simple, los escenarios &quot;si esto es así, entonces es así&quot;, este servicio puede adaptarse al propósito.
+Cuando se trata de una configuración XML simple, se puede utilizar la variable `Set Value` , que es un servicio predeterminado de AEM Forms en JEE. Este servicio establece el valor de uno o más elementos de datos en el modelo de datos de proceso. Para una lógica condicional simple, los escenarios &quot;si es esto, entonces es lo&quot;, este servicio puede adaptarse al propósito.
 
-Sin embargo, en situaciones más complejas, el servicio Establecer valor no es tan eficaz. En estas situaciones, es necesario confiar en un conjunto más robusto de comandos de programación, como los que proporciona un lenguaje de programación como Java. El uso de Java para generar XML complejo puede ser mucho más fácil y claro que la creación de un documento XML a partir de texto simple dentro del servicio Establecer valor. Además, es más fácil incluir la programación condicional en Java que dentro de un servicio Set Value.
+Sin embargo, en situaciones más complejas, el servicio Establecer valor no es tan eficaz. En estas situaciones, se debe confiar en un conjunto más robusto de comandos de programación, como los que proporciona un lenguaje de programación como Java™. El uso de Java™ para generar XML complejo puede ser mucho más fácil y claro que la creación de un documento XML a partir de texto simple dentro del servicio Establecer valor. Además, es más fácil incluir la programación condicional en Java™ que dentro de un servicio Set Value.
 
 ## Uso del servicio Ejecutar script en un proceso {#using-execute-script-service-in-process}
 
@@ -23,9 +23,9 @@ Dentro del conjunto de servicios estándar de AEM Forms en JEE disponibles en AE
 
 ### Crear una aplicación y un proceso con el servicio &quot;Ejecutar script&quot; definido como actividad {#create-an-application}
 
-La creación general de aplicaciones y procesos está fuera de ámbito para este tutorial, pero para esta instrucción, hemos creado una aplicación denominada &quot;DemoApplication02&quot;. Suponiendo que ya se ha creado una aplicación, es necesario crear un proceso en esta aplicación para llamar al servicio executeScript. Para agregar un proceso a la aplicación que incluye `Execute Script` servicio:
+La creación general de aplicaciones y procesos está fuera del ámbito de este tutorial, pero para esta instrucción, se ha creado una aplicación denominada DemoApplication02. Suponiendo que ya se ha creado una aplicación, debe crear un proceso en esta aplicación para llamar al servicio executeScript. Para agregar un proceso a la aplicación que incluye `Execute Script` servicio:
 
-1. Haga clic con el botón derecho en la aplicación y seleccione [!UICONTROL Nuevo]. Entrada [!UICONTROL Nuevo] menú deslizable, seleccionar [!UICONTROL Proceso]. Asigne un nombre al proceso, añada una descripción si es necesario y seleccione el icono que desea que represente este proceso. Para los fines de este tutorial, hemos creado un proceso y lo hemos denominado  `executeScriptDemoProcess`.
+1. Haga clic con el botón derecho en la aplicación y seleccione **[!UICONTROL Nuevo]**. Entrada **[!UICONTROL Nuevo]** menú deslizable, seleccionar **[!UICONTROL Proceso]**. Asigne un nombre al proceso, añada una descripción, si es necesario, y seleccione el icono que desea que represente este proceso. Para los fines de este tutorial, hemos creado un proceso y lo hemos denominado  `executeScriptDemoProcess`.
 1. Defina sus puntos de inicio o simplemente opte por añadir sus puntos de inicio más adelante.
 1. El proceso se creará y se abrirá automáticamente en [!UICONTROL Diseño de procesos] ventana. En esta ventana, haga clic en el icono Selector de actividad en la parte superior de la ventana Diseño del proceso y arrastre la nueva actividad a la pista de natación. En este punto, la variable [!UICONTROL Ventana Definición de Actividad] (consulte la figura siguiente).
    ![Definir actividad](assets/define-activity.jpg)
@@ -38,7 +38,7 @@ Una vez creado el proceso con la actividad del servicio &quot;Ejecutar script&qu
 
 1. Vaya a [!UICONTROL Propiedades del proceso] paleta. Dentro de esta paleta, expanda el [!UICONTROL Entrada] y haga clic en el icono &quot;...&quot;.
 
-1. En el cuadro de texto que aparece, escriba el script. Cuando se haya escrito el script, pulse OK (ver la figura siguiente).
+1. En el cuadro de texto que aparece, escriba el script. Una vez escrito el script, presione Aceptar (consulte la figura siguiente).
    ![Ejecutar script](assets/execute-script.jpg)
 
 ## Crear XML mediante el servicio Ejecutar script {#create-xml-execute-script-service}
@@ -47,9 +47,9 @@ Una vez creado un proceso con el servicio Ejecutar script incluido, se puede uti
 
 **Acerca de la tecnología del servicio Ejecutar script**
 
-Para saber cuáles son las capacidades y limitaciones del servicio Ejecutar Script, es necesario conocer los fundamentos tecnológicos del servicio. AEM Forms en JEE utiliza el analizador del modelo de objetos de documento (DOM) de Apache Xerces para crear y almacenar variables XML en procesos. Xerces es una implementación Java de la especificación del Modelo de objetos de documento de W3C; definici ó n [aquí](https://dom.spec.whatwg.org/). La especificación DOM es una forma estándar de manipular XML que existe desde 1998. La implementación Java de Xerces, Xerces-J, es compatible con DOM Nivel 2 versión 1.0.
+Para saber cuáles son las capacidades y limitaciones del servicio Ejecutar Script, es necesario conocer los fundamentos tecnológicos del servicio. AEM Forms en JEE utiliza el analizador del modelo de objetos de documento (DOM) de Apache Xerces para crear y almacenar variables XML en procesos. Xerces es una implementación Java™ de la especificación del Modelo de objetos de documento de W3C; definici ó n [aquí](https://dom.spec.whatwg.org/). La especificación DOM es una forma estándar de manipular XML que existe desde 1998. La implementación Java™ de Xerces, Xerces-J, es compatible con la versión 1.0 del nivel 2 del DOM.
 
-Las clases Java utilizadas para almacenar variables XML son:
+Las clases Java™ utilizadas para almacenar variables XML son:
 
 * org.apache.xerces.dom.NodeImpl y
 
@@ -59,9 +59,9 @@ DocumentImpl es una subclase de NodeImpl, por lo que se puede suponer que cualqu
 
 **Creación de XML de ejemplo mediante el servicio Ejecutar script**
 
-Este es un ejemplo de creación de XML, dentro de un servicio Ejecutar script. El proceso tiene una variable, node, que es de tipo XML. El resultado final de esta actividad será un documento XML. Lo que hace ese documento, o cómo se aplica al proceso general, está fuera de ámbito para este tutorial; en última instancia, se reduce a lo que el XML debe hacer en la aplicación general. Como se mencionó en la introducción, el XML se puede utilizar para muchos fines en AEM Forms en formularios y procesos JEE; esta es simplemente una explicación de cómo codificar la actividad Ejecutar script para generar un documento XML simple.
+Este es un ejemplo de creación de XML, dentro de un servicio Ejecutar script. El proceso tiene un nodo de variable que es de tipo XML. El resultado de esta actividad es un documento XML. Lo que hace ese documento, o cómo se aplica al proceso general, está fuera de ámbito para este tutorial; en última instancia, se reduce a lo que el XML debe hacer en la aplicación general. Como se mencionó en la introducción, el XML se puede utilizar para muchos fines en AEM Forms en formularios y procesos JEE; esta es simplemente una explicación de cómo codificar la actividad Ejecutar script para generar un documento XML simple.
 
-Un script Java simple para generar XML tendría este aspecto:
+Un JavaScript simple para generar XML tendría este aspecto:
 
 ```xml
 import org.apache.xerces.dom.DocumentImpl;
@@ -91,7 +91,7 @@ patExecContext.setProcessDataValue("/process_data/node", document);
 
 >[!NOTE]
 >
->que los objetos DOM mencionados deben importarse en la secuencia de comandos.
+>Los objetos DOM mencionados anteriormente deben importarse en la secuencia de comandos.
 
 El resultado de este script simple es un nuevo documento XML con un nodo de variable establecido en:
 
@@ -105,7 +105,7 @@ El resultado de este script simple es un nuevo documento XML con un nodo de vari
 
 **Uso de un bucle iterativo para agregar nodos al XML**
 
-Los nodos también se pueden agregar a una variable XML existente dentro del proceso. La variable, node, contiene el objeto XML que acabamos de crear.
+Los nodos también se pueden agregar a una variable XML existente dentro del proceso. La variable, node, contiene el objeto XML que acaba de crear.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

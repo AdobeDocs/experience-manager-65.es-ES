@@ -1,18 +1,14 @@
 ---
 title: AEM Iniciando PhoneGap
-seo-title: Starting AEM PhoneGap
-description: Siga esta página para obtener más información sobre el Starterkit para desarrolladores.
-seo-description: Follow this page to learn about the starterkit for developers.
-uuid: 952bf9f9-5c79-4212-91b7-1d3850ec2402
+description: Obtenga información acerca del Starterkit para desarrolladores.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '396'
 ht-degree: 1%
 
 ---
@@ -21,20 +17,20 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Para los desarrolladores, el mejor lugar para empezar es echar un vistazo al Starterkit de Adobe Experience Manager Mobile en github
+Para los desarrolladores, el mejor lugar para empezar es consultar Adobe Experience Manager Mobile Starterkit en github
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-El Starterkit le ayudará a empezar rápidamente explicándole los conceptos básicos del desarrollo de AEM Mobile, empezando por la creación y el control de proyectos, la instalación de las herramientas necesarias, la definición de un arquetipo de Maven, la creación, la implementación y, por último, la creación de su propia experiencia.
+El Starterkit le permite avanzar rápidamente explicándole los conceptos básicos del desarrollo de AEM Mobile, empezando por la creación y el control de proyectos, la instalación de las herramientas necesarias, la definición de un arquetipo de Maven, la creación, la implementación y, a continuación, la creación de su propia experiencia.
 
-Los desarrolladores pueden utilizar este ejemplo como punto de partida para probar una aplicación de AEM Mobile con PhoneGap. Al ejecutar el starterkit y la aplicación de referencia, obtendrá una comprensión sólida de los conceptos básicos para crear aplicaciones móviles enriquecidas.
+Los desarrolladores pueden utilizar este ejemplo como punto de partida para probar una aplicación de AEM Mobile con PhoneGap. Al ejecutar el Starterkit y la aplicación de referencia, se comprenden bien los conceptos básicos para crear aplicaciones móviles enriquecidas.
 
 * Utilice el [AEM Kit de inicio de PhoneGap](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) para crear aplicaciones adecuadas para el catálogo de AEM Mobile.
 * A [aplicación de referencia](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) se ha creado un código fuente completo que muestra muchas de las nuevas funciones de AEM Mobile, tanto si migra una aplicación existente a AEM Mobile como si comienza a utilizarla de nuevo.
-* Todas nuestras muestras se pueden encontrar aquí en github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) e incluya el arranque del proyecto con Maven.
-* La mayoría de las conferencias aprovecharán la [Tutorial del fregadero de cocina](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que también puede encontrar en Github y se centra en el uso de la extensibilidad nativa de Apache Cordova.
+* Todas las muestras se encuentran en github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) e incluya el arranque del proyecto con Maven.
+* La mayoría de las charlas utilizan el [Tutorial del fregadero de cocina](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que también puede encontrar en GitHub y se centra en el uso de la extensibilidad nativa de Apache Cordova.
 
 >[!NOTE]
 >
@@ -42,7 +38,7 @@ Los desarrolladores pueden utilizar este ejemplo como punto de partida para prob
 
 ## Plantillas y componentes {#templates-and-components}
 
-AEM *Plantillas* y *Componentes* habilite a los propietarios de línea de negocios para crear experiencias personalizadas. Ambos *Plantillas *y *Componentes* están disponibles de forma predeterminada o puede desarrollarlas usted, el desarrollador, ampliando los componentes existentes o creando greenfield (avanzado). *Plantillas* y *Componentes* Son los que permiten al autor de AEM arrastrar y soltar para crear experiencias atractivas y relevantes.
+AEM *Plantillas* y *Componentes* habilite a los propietarios de la línea de negocios para crear experiencias personalizadas. Ambos *Plantillas *y *Componentes* están disponibles de forma predeterminada o puede desarrollarlas usted, el desarrollador, ampliando los componentes existentes o creando greenfield (avanzado). *Plantillas* y *Componentes* Estas son las opciones que permiten al autor de AEM arrastrar y soltar para crear experiencias atractivas y relevantes.
 
 1. [Creación de componentes](/help/sites-developing/components.md)
 1. [Creación de plantillas](/help/sites-developing/templates.md)

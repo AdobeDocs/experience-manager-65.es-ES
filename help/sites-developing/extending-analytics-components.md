@@ -1,16 +1,14 @@
 ---
 title: Añadir el seguimiento de Adobe Analytics a los componentes
 description: Añadir el seguimiento de Adobe Analytics a los componentes
-uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
@@ -170,13 +168,13 @@ Configure el componente de navegación superior y edite el archivo JSP para defi
    * Nombre: `analytics`
    * Tipo: `nt:unstructured`
 
-1. Agregue la siguiente propiedad al nodo de análisis para asignar un nombre al evento de seguimiento:
+1. Agregue la siguiente propiedad al nodo de análisis para poder asignar un nombre al evento de seguimiento:
 
    * Nombre: cq:trackevents
    * Tipo: cadena
    * Valor: topnavClick
 
-1. Agregue la siguiente propiedad al nodo de Analytics para asignar un nombre a las variables de datos:
+1. Agregue la siguiente propiedad al nodo de Analytics para poder asignar un nombre a las variables de datos:
 
    * Nombre: cq:trackvars
    * Tipo: cadena
@@ -196,7 +194,7 @@ Configure el componente de navegación superior y edite el archivo JSP para defi
 
 1. Haga clic en Guardar todo.
 1. Abra el `topnav.jsp` archivo.
-1. En el elemento a, agregue el atributo siguiente:
+1. En el elemento, agregue el atributo siguiente:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -291,10 +289,10 @@ El contenido del `topnav.jsp` el archivo debe aparecer de la siguiente manera:
 
 #### Adición del componente de seguimiento al Sidekick {#adding-the-tracking-component-to-sidekick}
 
-Agregue a la barra de tareas los componentes que estén habilitados para el seguimiento con Adobe Analytics para que pueda agregarlos a su marco de trabajo.
+Agregue componentes que estén habilitados para el seguimiento con Adobe Analytics a Sidekick para poder agregarlos al marco de trabajo.
 
 1. Abra el marco de trabajo de Adobe Analytics desde la configuración de Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
-1. En Barra de tareas, haga clic en el botón Diseño.
+1. En Sidekick, haga clic en el botón Diseño.
 
    ![Botón Diseño con un cuadrado en ángulo recto.](assets/chlimage_1a.png)
 
@@ -362,7 +360,7 @@ El `analytics` del componente debe exponer los nombres de las variables mediante
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-El módulo de comercio electrónico proporciona varios componentes que generan datos de variables s.products. Por ejemplo, el componente de envío ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genera JavaScript que es similar al siguiente ejemplo:
+El módulo de comercio electrónico proporciona varios componentes que generan datos de variables s.products. Por ejemplo, la variable `submitorder` componente ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genera JavaScript que es similar al siguiente ejemplo:
 
 ```
 <script type="text/javascript">
@@ -438,6 +436,6 @@ El módulo de comercio electrónico proporciona varios componentes que generan d
 
 #### Limitación del tamaño de las llamadas de seguimiento {#limiting-the-size-of-tracking-calls}
 
-Por lo general, los exploradores web limitan el tamaño de las solicitudes de GET. Dado que los valores de producto y SKU de CQ son rutas de repositorio, las matrices de productos que incluyen varios valores pueden superar el límite de tamaño de solicitud. Por lo tanto, los componentes deben limitar el número de elementos en la variable `product` matriz de cada `CQ_Analytics.record function`. Cree varias funciones si el número de elementos que necesita rastrear puede superar el límite.
+Por lo general, los exploradores web limitan el tamaño de las solicitudes de GET. Dado que los valores de producto y SKU de CQ son rutas de repositorio, las matrices de productos que incluyen varios valores pueden superar el límite de tamaño de solicitud. Por lo tanto, los componentes deben limitar el número de elementos en la variable `product` matriz de cada `CQ_Analytics.record function`. Cree varias funciones si el número de elementos que debe rastrear puede superar el límite.
 
-Por ejemplo, el componente de envío de comercio electrónico limita el número de `product` elementos en una llamada a cuatro. Cuando el carro de compras contiene más de cuatro productos, genera múltiples `CQ_Analytics.record` funciones.
+Por ejemplo, el comercio electrónico `submitorder` El componente limita el número de `product` elementos en una llamada a cuatro. Cuando el carro de compras contiene más de cuatro productos, genera múltiples `CQ_Analytics.record` funciones.

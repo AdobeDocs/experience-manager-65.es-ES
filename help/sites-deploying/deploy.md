@@ -1,19 +1,15 @@
 ---
 title: Implementación y mantenimiento
-seo-title: Deploying and Maintaining
 description: AEM Obtenga información sobre cómo empezar con la instalación de la.
-seo-description: Learn how to get started with the AEM installation.
-uuid: 4429ac4d-abd7-47d8-b19d-773accb7cc7a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1766'
 ht-degree: 5%
 
 ---
@@ -64,15 +60,15 @@ Una vez que se haya familiarizado con estos conceptos básicos, encontrará info
 
 ### AEM ¿Qué es la? {#what-is-aem}
 
-Adobe Experience Manager es un sistema cliente-servidor basado en la web para crear, administrar e implementar sitios web comerciales y servicios relacionados. Combina una serie de funciones de nivel de infraestructura y de nivel de aplicación en un único paquete integrado.
+Adobe Experience Manager es un sistema cliente-servidor basado en la web para crear, administrar e implementar sitios web comerciales y servicios relacionados. Combina varias funciones de nivel de infraestructura y de nivel de aplicación en un único paquete integrado.
 
 AEM A nivel de infraestructura, proporciona lo siguiente:
 
 * **Servidor de aplicaciones web** AEM : se puede implementar en modo independiente (incluye un servidor web Jetty integrado) o como aplicación web dentro de un servidor de aplicaciones de terceros.
 * **Marco de aplicación web** AEM : incorpora el marco de trabajo de la aplicación web Sling, que simplifica la escritura de aplicaciones web RESTful orientadas a contenido.
-* **Repositorio de contenido** AEM : incluye un repositorio de contenido Java (JCR), un tipo de base de datos jerárquica diseñada específicamente para datos no estructurados y semiestructurados. El repositorio almacena no solo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación.
+* **Repositorio de contenido** AEM : incluye un repositorio de contenido Java™ (JCR), un tipo de base de datos jerárquica diseñada específicamente para datos no estructurados y semiestructurados. El repositorio almacena no solo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación.
 
-AEM Partiendo de esta base, también ofrece una serie de funciones de nivel de aplicación para la gestión de:
+AEM Partiendo de esta base, también ofrece varias funciones de nivel de aplicación para la gestión de:
 
 * **Sitios web**
 * **Aplicaciones móviles**
@@ -88,16 +84,16 @@ AEM El servidor de la es **Basado en Java** y se ejecuta en la mayoría de los s
 
 ### Escenarios de implementación habituales {#typical-deployment-scenarios}
 
-AEM AEM En la terminología de la, una &quot;instancia&quot; es una copia de la ejecución de una instancia en un servidor. AEM Las instalaciones suelen incluir al menos dos instancias, que suelen ejecutarse en equipos separados:
+AEM AEM En la terminología de la, una &quot;instancia&quot; es una copia de la que se ejecuta en un servidor. AEM Las instalaciones suelen incluir al menos dos instancias, que suelen ejecutarse en equipos separados:
 
-* **Autor** AEM : Instancia de utilizada para crear, cargar y editar contenido y administrar el sitio web. Una vez que el contenido está listo para su publicación, se replica en la instancia de publicación.
+* **Autor**: la instancia de AEM utilizada para crear, cargar y editar contenido y administrar el sitio web. Una vez que el contenido está listo para su publicación, se replica en la instancia de publicación.
 * **Publish** AEM : Instancia de que sirve el contenido publicado al público.
 
 Estas instancias son idénticas en términos de software instalado. Solo se diferencian por la configuración. Además, la mayoría de las instalaciones utilizan un Dispatcher:
 
-* **Dispatcher**: Un servidor web estático (Apache httpd, Microsoft IIS, etc.) AEM se ha ampliado con el módulo de Dispatcher de. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
+* **Dispatcher**: Un servidor web estático (Apache httpd, MicrosoftAEM ® IIS, etc.) ampliado con el módulo de Dispatcher de. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
-Existen muchas opciones y elaboraciones avanzadas de esta configuración, pero el patrón básico de creación, publicación y Dispatcher es el núcleo de la mayoría de las implementaciones. Empezaremos por centrarnos en una configuración relativamente sencilla. A continuación se analizarán las opciones de implementación avanzadas.
+Existen muchas opciones y elaboraciones avanzadas de esta configuración, pero el patrón básico de creación, publicación y Dispatcher es el núcleo de la mayoría de las implementaciones. Empecemos por centrarnos en una configuración simple. A continuación se describen las opciones de implementación avanzadas.
 
 Las secciones siguientes describen ambos casos:
 
@@ -107,13 +103,13 @@ Las secciones siguientes describen ambos casos:
 
 ### On-Premise {#on-premise}
 
-AEM Puede instalar los servidores de en su entorno corporativo de. Las instancias de instalación habituales incluyen: entornos de desarrollo, prueba y publicación. Consulte la [Primeros pasos](/help/sites-deploying/deploy.md#getting%20started) AEM para obtener detalles básicos sobre cómo obtener el software de la para instalarlo localmente.
+AEM Puede instalar los servidores de en su entorno corporativo de. Las instancias de instalación habituales incluyen: entornos de desarrollo, pruebas y publicación. Consulte [Primeros pasos](/help/sites-deploying/deploy.md#getting%20started) AEM para obtener detalles básicos sobre cómo obtener el software de la para instalarlo localmente.
 
 Para obtener más información sobre las implementaciones locales típicas, consulte [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services con Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia desde el Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la TI.
+AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia desde el Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la tecnología informática.
 
 AEM Con Managed Services, los clientes pueden obtener las siguientes ventajas:
 
@@ -133,19 +129,19 @@ Para obtener más información sobre Cloud Manager y sus recursos, consulte [**G
 
 ### Requisitos previos {#prerequisites}
 
-Mientras que las instancias de producción generalmente se ejecutan en equipos dedicados que ejecutan un sistema operativo oficialmente admitido (consulte [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)), el servidor de Experience Manager se ejecutará en cualquier sistema que admita [**Java Standard Edition 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Mientras que las instancias de producción se ejecutan en equipos dedicados que ejecutan un sistema operativo oficialmente admitido (consulte [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)), el servidor de Experience Manager se ejecutará en cualquier sistema que admita [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8).
 
-AEM Con fines de familiarización y para desarrollar en el tiempo, es bastante común usar una instancia instalada en su equipo local que ejecute Apple OS X o versiones de escritorio de Microsoft Windows o Linux.
+AEM Con fines de familiarización y para desarrollar en el tiempo de ejecución, es común utilizar una instancia instalada en su equipo local que ejecute Apple OS X o versiones de escritorio de Microsoft® Windows o Linux®.
 
-AEM En el lado del cliente, funciona con todos los exploradores modernos (**Microsoft Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) en sistemas operativos de escritorio y tableta. Consulte [Plataformas de cliente compatibles](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obtener más información.
+AEM En el lado del cliente, funciona con todos los exploradores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) en sistemas operativos de escritorio y tableta. Consulte [Plataformas de cliente compatibles](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obtener más información.
 
 ### Obtención del software {#getting-the-software}
 
 AEM Los clientes con un contrato de mantenimiento y asistencia válido deberían haber recibido una notificación por correo electrónico con un código y poder descargar los datos de la aplicación de forma gratuita desde el sitio web de [**Sitio web de licencias de Adobe**](https://licensing.adobe.com/). Los socios comerciales pueden solicitar acceso de descarga desde [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
-AEM El paquete de software de la está disponible en dos formatos:
+AEM El paquete de software de la está disponible de dos formas:
 
-* **cq-quickstart-6.5.0.jar:** Un ejecutable independiente *jarra* que incluye todo lo necesario para ponerse en marcha.
+* **cq-quickstart-6.5.0.jar:** Un ejecutable independiente *jarra* que incluye todo lo que necesita para ponerse en marcha.
 
 * **cq-quickstart-6.5.0.war:** A *guerra* para su implementación en un servidor de aplicaciones de terceros.
 
@@ -155,15 +151,15 @@ En la siguiente sección describimos el **instalación independiente**. AEM Para
 
 1. Cree un directorio de instalación en el equipo local. Por ejemplo:
 
-   Ubicación de instalación de UNIX: **/opt/aem**
+   Ubicación de instalación de UNIX®: **/opt/aem**
 
    Ubicación de instalación de Windows: **`C:\Program Files\aem`**
 
-   Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, nos referiremos a esta ubicación genéricamente como:
+   Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, nos referimos a esta ubicación genéricamente como:
 
    `<aem-install>`
 
-   *Tenga en cuenta que la ruta del directorio de archivos debe constar únicamente de caracteres ASCII de EE. UU.*
+   *La ruta del directorio de archivos sólo debe contener caracteres ASCII de EE.UU.*
 
 1. Coloque el **jarra** y **licencia** archivos de este directorio:
 
@@ -173,7 +169,7 @@ En la siguiente sección describimos el **instalación independiente**. AEM Para
        license.properties
    ```
 
-   Si no proporciona un `license.properties` AEM , redirigirá el explorador a un archivo de, el cual se redirigirá a un **Bienvenido** pantalla al inicio, donde puede introducir una clave de licencia. Si todavía no dispone de una clave de licencia válida, deberá solicitarla al Adobe.
+   Si no proporciona un `license.properties` AEM , redirecciona el explorador a un archivo de **Bienvenido** pantalla al inicio, donde puede introducir una clave de licencia. Debe solicitar una clave de licencia válida desde el Adobe si todavía no la tiene.
 
 1. Para iniciar la instancia en un entorno GUI, haga doble clic en **`cq-quickstart-6.5.0.jar`** archivo.
 
@@ -183,7 +179,7 @@ En la siguiente sección describimos el **instalación independiente**. AEM Para
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
-AEM El archivo jar tardará unos minutos en desempaquetarse, instalarse y ponerse en marcha. El procedimiento anterior resulta en lo siguiente:
+AEM El archivo jar tarda unos minutos en desempaquetarse, instalarse e iniciarse. El procedimiento anterior resulta en lo siguiente:
 
 * un **AEM autor de la** instancia
 * ejecución en **localhost**
@@ -205,13 +201,13 @@ Por ejemplo, cambiar el nombre del archivo a
 
 **`cq-author-p4502.jar`**
 
-y al iniciarlo, se ejecutará una instancia de autor en **`localhost:4502`**.
+Al iniciarlo, se ejecuta una instancia de autor en **`localhost:4502`**.
 
 Del mismo modo, cambiar el nombre del archivo e iniciarlo
 
 **`cq-publish-p4503.jar`**
 
-dará como resultado que se ejecute una instancia de publicación en **`localhost:4503`**.
+Se ejecuta una instancia de publicación en **`localhost:4503`**.
 
 Instalaría estas dos instancias en, por ejemplo
 
@@ -226,7 +222,7 @@ Para obtener más información sobre cómo personalizar la instalación, consult
 
 ### Directorio de instalación desempaquetado {#unpacked-install-directory}
 
-Cuando se inicia quickstart jar por primera vez, se desempaquetará en el mismo directorio bajo un nuevo subdirectorio llamado `crx-quickstart`. Debe terminar con lo siguiente:
+Cuando se inicia quickstart jar por primera vez, se desempaqueta en el mismo directorio bajo un nuevo subdirectorio llamado `crx-quickstart`. Debe tener lo siguiente:
 
 ```xml
 <aem-install>/
@@ -250,7 +246,7 @@ Cuando se inicia quickstart jar por primera vez, se desempaquetará en el mismo 
         readme.txt
 ```
 
-Si la instancia se instaló desde la interfaz de usuario, se abrirá automáticamente una ventana del explorador y también se abrirá una ventana de la aplicación de escritorio que mostrará el host y el puerto de la instancia y un conmutador de activación/desactivación:
+Si la instancia se instaló desde la interfaz de usuario de, se abrirá automáticamente una ventana del explorador y una ventana de aplicación de escritorio que también mostrará el host y el puerto de la instancia y un conmutador de activación/desactivación:
 
 ![pantalla de inicio](assets/screen_shot_.png)
 
@@ -260,15 +256,15 @@ Si la instancia se instaló desde la interfaz de usuario, se abrirá automática
 
 ### Inicio y detención {#starting-and-stopping}
 
-AEM Una vez que se ha desempaquetado y se ha iniciado por primera vez, hacer doble clic en el archivo jar en el directorio de instalación simplemente inicia la instancia, no la reinstala.
+AEM Una vez que se ha desempaquetado a sí mismo y se ha iniciado por primera vez, al hacer doble clic en el archivo jar en el directorio de instalación simplemente se inicia la instancia, no se vuelve a instalar.
 
-Para detener la instancia desde la GUI, simplemente haga clic en **activado/desactivado** encienda la ventana de la aplicación de escritorio.
+Para detener la instancia desde la GUI, haga clic en **activado/desactivado** encienda la ventana de la aplicación de escritorio.
 
-AEM También puede detener e iniciar la ejecución de los comandos desde la línea de comandos de. Si ya ha instalado la instancia por primera vez, la variable **scripts de línea de comandos** se encuentran aquí:
+AEM También puede detener e iniciar la ejecución de los comandos desde la línea de comandos de. Si ya ha instalado la instancia por primera vez, la variable **scripts de línea de comandos** están aquí:
 
 **`<aem-install>/crx-quickstart/bin/`**
 
-Esta carpeta contiene los siguientes scripts de shell de Unix bash:
+Esta carpeta contiene los siguientes scripts de shell bash de UNIX®:
 
 * **`start`**: inicia la instancia
 * `stop`: detiene la instancia
@@ -285,7 +281,7 @@ AEM Se inicia la sesión y redirige automáticamente el explorador web a la pág
 
 ![pantalla de inicio de sesión](assets/screen_shot_2019-04-08at83533am.png)
 
-AEM Una vez que haya iniciado sesión, tendrá acceso a la interfaz de usuario de. Para obtener más información, según la función que tenga, consulte lo siguiente:
+AEM Una vez que haya iniciado sesión, tendrá acceso a la interfaz de usuario de. Para obtener más información, según la función, consulte lo siguiente:
 
 * [Creación](/help/sites-authoring/home.md)
 * [Administración](/help/sites-administering/home.md)

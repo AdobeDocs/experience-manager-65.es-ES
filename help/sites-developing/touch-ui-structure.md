@@ -1,25 +1,21 @@
 ---
-title: AEM Estructura de la interfaz de usuario táctil de la
-seo-title: Structure of the AEM Touch-Enabled UI
-description: AEM La interfaz de usuario táctil optimizada, tal como se implementa en la implementación de, tiene varios principios subyacentes y se compone de varios elementos clave
-seo-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
-uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
+title: Estructura de la IU táctil de Adobe Experience Manager
+description: La IU táctil optimizada, tal como se implementa en Adobe Experience Manager, tiene varios principios subyacentes y se compone de varios elementos clave
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
 
-# AEM Estructura de la interfaz de usuario táctil de la{#structure-of-the-aem-touch-enabled-ui}
+# Estructura de la IU táctil de Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
 
-AEM La interfaz de usuario táctil tiene varios principios subyacentes y consta de varios elementos clave:
+La IU táctil de Adobe Experience Manager AEM () tiene varios principios subyacentes y consta de varios elementos clave:
 
 ## Consolas {#consoles}
 
@@ -33,7 +29,7 @@ AEM Todos los módulos utilizan el mismo diseño básico, en el que, en la prác
 
 El diseño se adhiere a un estilo de diseño interactivo y se adaptará al tamaño del dispositivo o la ventana que utilice.
 
-Por ejemplo, cuando la resolución es inferior a 1024 px (como en un dispositivo móvil), la pantalla se ajusta en consecuencia:
+Por ejemplo, cuando la resolución es inferior a 1024 píxeles (como en un dispositivo móvil), la pantalla se ajusta en consecuencia:
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -58,7 +54,7 @@ En cualquier ubicación, la barra de herramientas muestra las acciones disponibl
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-También depende de si hay un recurso seleccionado actualmente:
+También depende de si se selecciona un recurso:
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -80,7 +76,7 @@ Al crear páginas, las áreas estructurales son las siguientes.
 
 ### Marco de contenido {#content-frame}
 
-El contenido de la página se representa en el marco de contenido. El marco de contenido es completamente independiente del editor para garantizar que no haya conflictos debidos a CSS o javascript.
+El contenido de la página se representa en el marco de contenido. El marco de contenido es independiente del editor para garantizar que no haya conflictos debidos a CSS o JavaScript.
 
 El marco de contenido se encuentra en la sección derecha de la ventana, debajo de la barra de herramientas.
 
@@ -101,7 +97,7 @@ El marco del editor es un contenedor (abstracto) para todas las *elementos de cr
 
 ### Panel lateral {#side-panel}
 
-Contiene dos pestañas predeterminadas que permiten seleccionar recursos y componentes; se pueden arrastrar desde aquí y soltar en la página.
+Contiene dos pestañas predeterminadas que permiten seleccionar recursos y componentes. Se pueden arrastrar desde aquí y soltar en la página.
 
 El panel lateral está oculto de forma predeterminada. Cuando se selecciona, se muestra en el lado izquierdo o se desliza para cubrir toda la ventana (cuando el tamaño de la ventana es inferior a una anchura de 1024 píxeles; como, por ejemplo, en un dispositivo móvil).
 
@@ -115,7 +111,7 @@ En la pestaña Recursos puede seleccionar entre el rango de recursos. También p
 
 ### Panel lateral: Grupos de recursos {#side-panel-asset-groups}
 
-En la pestaña Recurso hay una lista desplegable que puede utilizar para seleccionar los grupos de recursos específicos.
+En la pestaña Recurso, hay una lista desplegable que puede utilizar para seleccionar los grupos de recursos específicos.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -127,7 +123,7 @@ En la pestaña Componentes, puede seleccionar entre el rango de componentes. Tam
 
 ### Superposiciones {#overlays}
 
-Se superponen al marco de contenido y los utiliza el [capas](#layer) para comprender la mecánica de cómo puede interactuar (de forma completamente transparente) con los componentes y su contenido.
+Se superponen al marco de contenido y los utiliza el [capas](#layer) para comprender la mecánica de cómo puede interactuar (de forma transparente) con los componentes y su contenido.
 
 Las superposiciones se encuentran en el marco del editor (con todos los demás elementos de creación de páginas), aunque en realidad se superponen a los componentes adecuados en el marco de contenido.
 
@@ -158,7 +154,7 @@ El selector de capas está disponible como una lista desplegable en la barra de 
 
 ### Barra de herramientas del componente {#component-toolbar}
 
-Cada instancia de un componente mostrará su barra de herramientas cuando se haga clic (una vez o con un doble clic lento). La barra de herramientas contiene las acciones específicas (por ejemplo, copiar, pegar, abrir editor) disponibles para la instancia de componente (editable) en la página.
+Cada instancia de un componente muestra su barra de herramientas cuando se hace clic (una vez o con un doble clic lento). La barra de herramientas contiene las acciones específicas (por ejemplo, copiar, pegar, abrir editor) disponibles para la instancia de componente (Editable) en la página.
 
 Según el espacio disponible, las barras de herramientas de los componentes se colocan en la esquina superior o inferior derecha del componente correspondiente.
 
@@ -166,6 +162,6 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 
 ## Información adicional {#further-information}
 
-Para obtener más información acerca de los conceptos relacionados con la IU táctil, consulte el artículo [AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la](/help/sites-developing/touch-ui-concepts.md).
+Para obtener más información sobre los conceptos relacionados con la IU táctil, lea [AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la](/help/sites-developing/touch-ui-concepts.md).
 
-Para obtener más información técnica, consulte la [Conjunto de documentación JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.
+Para obtener más información técnica, consulte [Conjunto de documentación JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.

@@ -1,25 +1,23 @@
 ---
 title: Componentes predeterminados
-description: Adobe Experience Manager incluye una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web.
-uuid: 55caeec3-add7-4d05-a620-07e33901adb7
+description: Adobe Experience Manager incluye varios componentes listos para usar que proporcionan una amplia funcionalidad para creadores de sitios web.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 21%
+source-wordcount: '425'
+ht-degree: 18%
 
 ---
 
 # Componentes{#components}
 
-Adobe Experience Manager AEM () viene con una variedad de componentes listos para usar que proporcionan una funcionalidad completa para los autores de sitios web. Están disponibles durante [la edición de una página](/help/sites-authoring/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
+Adobe Experience Manager AEM () viene con varios componentes listos para usar que proporcionan una funcionalidad completa para los autores de sitios web. Están disponibles durante [la edición de una página](/help/sites-authoring/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
 
-Los componentes están disponibles cuando [edición de una página](/help/sites-authoring/editing-content.md). Para facilitar el filtrado, los componentes se agrupan por áreas funcionales principales (es decir, grupo de componentes).
+Los componentes están disponibles cuando [edición de una página](/help/sites-authoring/editing-content.md). Para ayudar en el filtrado, los componentes se agrupan por área funcional principal (es decir, grupo de componentes).
 
 >[!NOTE]
 >
@@ -38,7 +36,7 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 
 * [Editar contenido: modo pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obtener más información sobre la adición de componentes a una página, consulte el artículo [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
+Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de página](/help/sites-authoring/editing-content.md).
 Los componentes se ordenan según varias categorías denominadas grupos de componentes. Algunos ejemplos de estos grupos de componentes son:
 
 * **We.Retail**: incluye los componentes principales procesados como proxy para su uso con [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md).
@@ -49,7 +47,7 @@ Los componentes se ordenan según varias categorías denominadas grupos de compo
 
 ## Introducción a todos los componentes {#overview-of-all-components}
 
-El [Consola Componentes](/help/sites-authoring/default-components-console.md) AEM ofrece información general sobre los grupos de componentes y los componentes que proporciona la instalación de la aplicación de la instalación de la. Puede ver información clave sobre cada uno de los componentes y su uso.
+El [Consola Componentes](/help/sites-authoring/default-components-console.md) AEM ofrece información general sobre los grupos de componentes y los componentes que proporciona la instalación de la instalación de la. Puede ver información clave sobre cada uno de los componentes y su uso.
 
 ## Componentes: áreas principales {#components-major-areas}
 

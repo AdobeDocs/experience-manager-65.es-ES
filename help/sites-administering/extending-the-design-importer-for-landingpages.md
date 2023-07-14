@@ -1,19 +1,15 @@
 ---
 title: Ampliación y configuración del importador de diseños para páginas de destino
-seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Obtenga información sobre cómo configurar el Importador de diseños para páginas de aterrizaje.
-seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '3503'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -127,15 +123,15 @@ Los navegadores que admiten el &quot;arrastre y suelte&quot; del zip de diseño 
 
 ### El moderador no es compatible {#modernizr-is-not-supported}
 
-`Modernizr.js` es una herramienta basada en javascript que detecta las capacidades nativas de los navegadores y si son adecuadas para los elementos html5 o no. Los diseños que utilizan Modernizador para mejorar la compatibilidad con versiones anteriores de distintos exploradores pueden causar problemas de importación en la solución de página de aterrizaje. `Modernizr.js` no se admiten secuencias de comandos con el importador de diseños.
+`Modernizr.js` es una herramienta basada en JavaScript que detecta las capacidades nativas de los navegadores y si son adecuadas para elementos html5 o no. Los diseños que utilizan Modernizador para mejorar la compatibilidad con versiones anteriores de distintos exploradores pueden causar problemas de importación en la solución de página de aterrizaje. `Modernizr.js` no se admiten secuencias de comandos con el importador de diseños.
 
 ### Las propiedades de página no se conservan al importar el paquete de diseño {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-Cualquier propiedad de página (por ejemplo, dominio personalizado, aplicación de HTTPS, etc.) Las configuraciones para una página (que utiliza la plantilla Página de aterrizaje en blanco) antes de importar el paquete de diseño se pierden después de importar el diseño. Por lo tanto, la práctica recomendada es establecer las propiedades de la página después de importar el paquete de diseño.
+Cualquier propiedad de página (por ejemplo, Dominio personalizado, Aplicación de HTTPS, etc.) establecida para una página (que utiliza la plantilla Página de aterrizaje en blanco) antes de importar el paquete de diseño se pierde después de importar el diseño. Por lo tanto, la práctica recomendada es establecer las propiedades de la página después de importar el paquete de diseño.
 
 ### Se supone un marcado solo de HTML {#html-only-markup-assumed}
 
-Al importar, el marcado se sanea por motivos de seguridad y para evitar la importación y publicación de marcado no válido. Esto supone un marcado solo de HTML y que se filtrarán todas las demás formas de elementos, como SVG en línea o componentes web.
+En la importación, el marcado se sanea por motivos de seguridad y para evitar la importación y publicación de marcado no válido. Esto supone un marcado solo de HTML y que se filtrarán todas las demás formas de elementos, como SVG en línea o componentes web.
 
 ### Texto {#text}
 
@@ -191,7 +187,7 @@ Si se incluye el marcado anterior en el HTML, se hace lo siguiente:
 * Establece el `jcr:title` propiedad del componente de título creado en el texto de la etiqueta de encabezado dentro de div.
 * Establece el `type` a la etiqueta de encabezado, en este caso `h1`.
 
-El componente de título admite 7 tipos: `h1, h2, h3, h4, h5, h6` y `default`.
+El componente de título admite siete tipos: `h1, h2, h3, h4, h5, h6` y `default`.
 
 **Declaración de etiqueta de componente abreviada**:
 
@@ -249,9 +245,9 @@ Este componente de CTA se puede utilizar para agregar un vínculo de texto en la
 
 Propiedades compatibles
 
-* Etiqueta, con opciones de negrita, cursiva y subrayado
+* Etiquetar con negrita, cursiva y opciones de subrayado
 * AEM URL de destino, admite URL de terceros y de la
-* Opciones de procesamiento de página (misma ventana, nueva ventana, etc.)
+* Opciones de procesamiento de páginas (misma ventana, nueva ventana, etc.)
 
 HTML para incluir el componente de pulsaciones en el zip importado. Aquí href se asigna a la dirección URL de destino, &quot;Ver detalles del producto&quot; se asigna a la etiqueta, etc.
 
@@ -277,16 +273,16 @@ Este componente se puede utilizar en cualquier aplicación independiente o se pu
 
 #### Vínculo gráfico {#graphical-link}
 
-Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Cuando se hace clic en la imagen, se lleva al usuario a la dirección URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Llamada a la acción&quot;.
+Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Llamada a la acción&quot;.
 
 Propiedades compatibles
 
 * Recorte, rotación de imágenes
 * Texto, descripción y tamaño de desplazamiento en píxeles
 * AEM URL de destino, admite URL de terceros y de la
-* Opciones de procesamiento de página (misma ventana, nueva ventana, etc.)
+* Opciones de procesamiento de páginas (misma ventana, nueva ventana, etc.)
 
-HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí href se asignará a la dirección URL de destino, img src será la imagen de renderización, &quot;título&quot; se tomará como texto de desplazamiento, etc.
+HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí href se asigna a la URL de destino, img src es la imagen de renderización, &quot;título&quot; se toma como texto de desplazamiento, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -304,9 +300,9 @@ HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí 
 >
 >Para crear un vínculo gráfico de pulsaciones, debe envolver una etiqueta de anclaje y la etiqueta de imagen dentro de un div con `data-cq-component="clickthroughgraphicallink"` atributo.
 >
->p. ej. `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Por ejemplo, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
->Otras formas de asociar una imagen con una etiqueta de anclaje mediante CSS no son compatibles. Por ejemplo, el siguiente marcado no funcionará:
+>No se admiten otras formas de asociar una imagen con una etiqueta de anclaje mediante CSS. Por ejemplo, el marcado siguiente no funciona:
 >
 >`<div data-cq-component="clickthroughgraphicallink">`
 >
@@ -315,6 +311,7 @@ HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí 
 >`</div>`
 >
 >con un asociado `css .hasbackground { background-image: pathtoimage }`
+>
 
 ### Formulario de posibles clientes {#lead-form}
 
@@ -323,19 +320,19 @@ Un formulario de posible cliente es un formulario que se utiliza para recopilar 
 **Funciones admitidas**
 
 * Campos de posibles clientes predefinidos: nombre, apellido, dirección, dob, sexo, acerca de, userId, emailId, botón de envío están disponibles en la barra de tareas. Basta con arrastrar y soltar el componente necesario en el formulario de posible cliente.
-* Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede añadir campos adicionales utilizando los campos cq:form o cta del formulario de posibles clientes, ponerles nombres y diseñarlos según los requisitos.
+* Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede añadir campos adicionales utilizando los campos cq:form o cta del formulario de posibles clientes, asignarles un nombre y diseñarlos según los requisitos.
 * Asigne campos de formulario de posibles clientes con nombres predefinidos específicos de formularios de posibles clientes de CTA, por ejemplo: firstName para el nombre en el formulario de posibles clientes, etc.
-* Los campos que no estén asignados al formulario principal se asignarán a los componentes cq:form: texto, radio, casilla de verificación, lista desplegable, oculto, contraseña.
+* Los campos que no están asignados al formulario principal se asignan a los componentes cq:form: texto, radio, casilla de verificación, lista desplegable, oculto, contraseña.
 * El usuario puede proporcionar el título con la etiqueta &quot;label&quot; y puede proporcionar estilo utilizando el atributo de estilo &quot;class&quot; (solo disponible para componentes de formulario de posibles clientes de CTA).
 * La página de agradecimiento y la lista de suscripción se pueden proporcionar como un parámetro oculto del formulario (presente en el index.htm) o se pueden agregar o editar desde la barra de edición de Inicio del formulario de posibles clientes
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
 * Las restricciones como - obligatorio se pueden proporcionar desde la configuración de edición de cada uno de los componentes.
 
-HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí, &quot;firstName&quot; se asigna al nombre del formulario principal y así sucesivamente, excepto para las casillas de verificación: estas dos casillas de verificación se asignan al componente desplegable cq:form.
+HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí, &quot;firstName&quot; está asignado al nombre del formulario principal, y así sucesivamente, excepto para las casillas de verificación: estas dos casillas de verificación se asignan al componente desplegable cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -447,7 +444,7 @@ AEM Se explican los pasos para crear una nueva plantilla en la creación de plan
 
 ### Referencia a un componente desde la página de aterrizaje {#referring-a-component-from-landing-page}
 
-Supongamos que tiene un componente al que desea hacer referencia en el HTML mediante el atributo data-cq-component tal que el importador de diseños procesa un componente incluido en este lugar. por ejemplo, desea hacer referencia al componente de tabla ( `resourceType = /libs/foundation/components/table`). Se debe añadir lo siguiente en el HTML:
+Supongamos que tiene un componente al que desea hacer referencia en el HTML mediante el atributo data-cq-component tal que el importador de diseños procesa un componente incluido en este lugar. Por ejemplo, desea hacer referencia al componente de tabla ( `resourceType = /libs/foundation/components/table`). Se debe añadir lo siguiente en el HTML:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -467,7 +464,7 @@ No se recomienda el uso de selectores CSS similares a los siguientes para elemen
 | E:nth-of-type(n) | un elemento E, el número n del mismo nivel de su tipo | [Pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) | un elemento E, el número n del mismo nivel de su tipo, contando desde el último | [Pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-Esto se debe al hecho de que los elementos HTML adicionales como &lt;div> se añaden al HTML generado después de la importación.
+Esto se debe a elementos html adicionales como &lt;div> se añaden al HTML generado después de la importación.
 
 * AEM Tampoco se recomiendan los scripts que dependen de una estructura similar a la anterior para usarlos con elementos marcados para la conversión a componentes de la.
 * Uso de estilos en las etiquetas de marcado para la conversión de componentes como &lt;div data-cq-component=&quot;&amp;ast;&quot;> no se recomienda.
@@ -530,10 +527,12 @@ En la tabla siguiente se describen brevemente las propiedades:
 >Si necesita realizar cambios en el patrón de búsqueda, al abrir el editor de propiedades felix, debe agregar manualmente caracteres de barra invertida para escapar de los metacaracteres regex. Si no agrega manualmente caracteres de barra invertida, la regex se considera no válida y no reemplazará a la anterior.
 >
 >Por ejemplo, si la configuración predeterminada es
->`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->Y usted necesita reemplazar >`CQ_DESIGN_PATH` con `VIPURL` en el patrón de búsqueda, el patrón de búsqueda debería tener este aspecto:
-`/\* *VIPURL *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>
+>Y usted necesita reemplazar `CQ_DESIGN_PATH` con `VIPURL` en el patrón de búsqueda, el patrón de búsqueda debería tener este aspecto:
+>
+>`/\* *VIPURL *\*/ *(['"])`
 
 ## Solución de problemas {#troubleshooting}
 
@@ -545,14 +544,14 @@ Si el paquete de diseño contiene un marcado de componente parsys, después de l
 
 ### Mensajes de error mostrados durante la importación {#error-messages-displayed-during-import}
 
-En caso de errores (por ejemplo, el paquete importado no es un zip válido), la importación de diseño no importará el paquete y, en su lugar, mostrará un mensaje de error en la parte superior de la página justo encima del cuadro de arrastre y suelte. Aquí se indican ejemplos de escenarios de error. Después de corregir el error, puede volver a importar el zip actualizado en la misma página de aterrizaje en blanco. Los diferentes escenarios en los que se generan errores son los siguientes:
+Si hay algún error (por ejemplo, el paquete importado no es un zip válido), la importación de diseño no importa el paquete. En su lugar, se muestra un mensaje de error en la parte superior de la página justo encima del cuadro de arrastrar y soltar. Aquí se indican ejemplos de escenarios de error. Después de corregir el error, puede volver a importar el zip actualizado en la misma página de aterrizaje en blanco. Los diferentes escenarios en los que se generan errores son los siguientes:
 
 * El paquete de diseño importado no es un archivo zip válido.
 * El paquete de diseño importado no contiene un index.html en el nivel superior.
 
 ### Advertencias mostradas tras la importación {#warnings-displayed-after-import}
 
-En caso de advertencias (por ejemplo, HTML se refiere a imágenes que no existen dentro del paquete), el importador de diseños importará el zip, pero al mismo tiempo mostrará una lista de problemas/advertencias en el panel de resultados. Al hacer clic en el vínculo de problemas, se mostrará una lista de advertencias que señalan cualquier problema dentro del paquete de diseño. Los distintos escenarios en los que el importador de diseños captura y muestra advertencias son los siguientes:
+Si hay advertencias (por ejemplo, HTML se refiere a imágenes que no existen dentro del paquete), el importador de diseños importa el zip pero al mismo tiempo muestra una lista de problemas/advertencias en el panel de resultados. Al hacer clic en el vínculo de problemas, se muestra una lista de advertencias que señalan cualquier problema dentro del paquete de diseño. Los distintos escenarios en los que el importador de diseños captura y muestra advertencias son los siguientes:
 
 * El HTML hace referencia a imágenes que no existen dentro del paquete.
 * El HTML hace referencia a scripts que no existen dentro del paquete.
@@ -560,7 +559,7 @@ En caso de advertencias (por ejemplo, HTML se refiere a imágenes que no existen
 
 ### AEM ¿Dónde se almacenan los archivos del archivo ZIP en el que se ha guardado el archivo {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-Una vez importada la página de aterrizaje, los archivos (imágenes, CSS, JS, etc.) AEM dentro del paquete de diseño se almacenan en la siguiente ubicación en la siguiente ubicación de la:
+AEM Una vez importada la página de aterrizaje, los archivos (imágenes, css, js, etc.) del paquete de diseño se almacenan en la siguiente ubicación de:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
@@ -589,7 +588,7 @@ con un CSS aplicado a la clase `box` como sigue:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Entonces `box img` se utiliza en el importador de diseños, la página de aterrizaje resultante parece no haber conservado el formato. AEM Para solucionar esto, tenga en cuenta que agrega etiquetas div en el CSS y reescribe el código en consecuencia. De lo contrario, algunas reglas CSS no serán válidas.
+Entonces `box img` se utiliza en el importador de diseños, la página de aterrizaje resultante no parece haber conservado el formato. AEM Para solucionar esto, agrega etiquetas div en el CSS y, en consecuencia, reescribe el código. De lo contrario, algunas reglas CSS no serán válidas.
 
 ```xml
 .box img
@@ -598,4 +597,5 @@ Entonces `box img` se utiliza en el importador de diseños, la página de aterri
 ```
 
 >[!NOTE]
-Además, los diseñadores deben tener en cuenta que solo el código dentro de **id=cqcanvas** el importador reconoce la etiqueta; de lo contrario, el diseño no se conserva.
+>
+>Además, los diseñadores deben tener en cuenta que solo el código dentro de **id=cqcanvas** el importador reconoce la etiqueta; de lo contrario, el diseño no se conserva.

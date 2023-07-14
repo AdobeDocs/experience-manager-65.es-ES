@@ -1,18 +1,14 @@
 ---
 title: Configuraciones de Cloud Service
-seo-title: Cloud Service Configurations
 description: Puede ampliar las instancias existentes para crear sus propias configuraciones
-seo-description: You can extend the existing instances to create your own configurations
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '563'
 ht-degree: 4%
 
 ---
@@ -32,7 +28,7 @@ Los principios utilizados para desarrollar las configuraciones se han basado en 
 * Referido desde nodos de análisis por ruta.
 * Fácilmente extensible.
 * Tiene la flexibilidad de adaptarse a configuraciones más complejas, como [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Compatibilidad con dependencias (p. ej. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Los complementos necesitan un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuración).
+* Compatibilidad con dependencias (por ejemplo, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Los complementos de necesitan un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuración).
 
 ## Estructura {#structure}
 
@@ -40,15 +36,15 @@ La ruta base de las configuraciones es:
 
 `/etc/cloudservices`.
 
-Para cada tipo de configuración se proporcionará una plantilla y un componente. Esto permite tener plantillas de configuración que pueden satisfacer la mayoría de las necesidades después de personalizarse.
+Para cada tipo de configuración, se proporciona una plantilla y un componente. Esto permite tener plantillas de configuración que pueden satisfacer la mayoría de las necesidades después de personalizarse.
 
-Para proporcionar una configuración para un nuevo servicio, debe:
+Para proporcionar una configuración para nuevos servicios, haga lo siguiente:
 
-* crear una página de servicio en
+* Creación de una página de servicio en
 
-   `/etc/cloudservices`
+  `/etc/cloudservices`
 
-* en esta sección:
+* En esta sección:
 
    * una plantilla de configuración
    * un componente de configuración
@@ -57,7 +53,7 @@ La plantilla y el componente deben heredar la variable `sling:resourceSuperType`
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-o componente base, respectivamente
+O componente base respectivamente
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -67,11 +63,11 @@ El proveedor de servicios también debe proporcionar la página de servicio:
 
 ### Plantilla {#template}
 
-La plantilla ampliará la plantilla base:
+La plantilla amplía la plantilla base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-y defina una `resourceType` que señala al componente personalizado.
+Y defina una `resourceType` que señala al componente personalizado.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -137,7 +133,7 @@ propertyname
 
 ### API {#api}
 
-Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM Integración de {#aem-integration}
 
@@ -152,7 +148,7 @@ La pestaña también proporciona lo siguiente:
 
 Al almacenar las credenciales de usuario del servicio, se deben cifrar todas las contraseñas.
 
-Puede conseguirlo si agrega un campo de formulario oculto. Este campo debe tener la anotación `@Encrypted` en el nombre de la propiedad; es decir, para `password` campo el nombre se escribiría de la siguiente manera:
+Puede conseguirlo si agrega un campo de formulario oculto. Este campo debe tener la anotación `@Encrypted` en el nombre de la propiedad; es decir, para el `password` campo el nombre se escribiría de la siguiente manera:
 
 `password@Encrypted`
 
@@ -176,7 +172,7 @@ La propiedad se cifrará automáticamente (con el `CryptoSupport` servicio) por 
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br /> Se utiliza para funcionalidades adicionales e inclusiones de JS.<br /> Esto incluye el componente de la página donde<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> se incluye (normalmente antes de que <code>body</code> ).<br /> En caso de que el uso de Analytics y Target sea menor, se utiliza para incluir funciones adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
+   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br /> Se utiliza para funcionalidades adicionales e inclusiones de JS.<br /> Esto incluye el componente de la página donde<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> se incluye (normalmente antes de que <code>body</code> ).<br /> En caso de que se publique Adobe Analytics y Adobe Target, se usa para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
   </tr>
   <tr>
    <td>descripción</td>
@@ -220,7 +216,6 @@ Estos servicios se proporcionan de forma predeterminada:
 * [Fragmentos de rastreador](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
 * [API de Rest](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 

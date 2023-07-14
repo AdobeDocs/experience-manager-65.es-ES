@@ -1,20 +1,16 @@
 ---
-title: Autenticación IMS de Adobe y [!DNL Admin Console] AEM Compatibilidad con Managed Services de la
-seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
-description: Aprenda a utilizar el [!DNL Admin Console] AEM en la.
-seo-description: Learn how to use the [!DNL Admin Console] in AEM.
-uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
+title: Autenticación IMS de Adobe y [!DNL Admin Console] Compatibilidad con Adobe Experience Manager Managed Services
+description: Aprenda a utilizar el [!DNL Admin Console] en Adobe Experience Manager.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: fff35031eaf55b185870da56a0b66f9145b1ec41
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 10%
+source-wordcount: '1669'
+ht-degree: 9%
 
 ---
 
@@ -22,11 +18,11 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->Tenga en cuenta que esta función solo está disponible para los clientes de Adobe Managed Services.
+>Esta función solo está disponible para los clientes de Adobe Managed Services.
 
 >[!NOTE]
 >
->AEM no admite la asignación de grupos a perfiles.  Los usuarios deben añadirse individualmente en su lugar.
+>Actualmente, Adobe Experience Manager AEM () no admite la asignación de grupos a perfiles. Los usuarios deben añadirse individualmente en su lugar.
 
 ## Introducción {#introduction}
 
@@ -90,9 +86,9 @@ Existen tres formas de incorporar usuarios en función del tamaño del cliente y
 
 #### Adición manual mediante [!DNL Admin Console] IU {#manual-addition-through-admin-console-ui}
 
-Los usuarios y grupos se pueden crear manualmente en la [!DNL Admin Console] IU. Este método se puede utilizar si no hay un gran número de usuarios que administrar. AEM Por ejemplo, un número de usuarios inferior a 5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Los usuarios y grupos se pueden crear manualmente en la [!DNL Admin Console] IU. Este método se puede utilizar si no tienen muchos usuarios que administrar. AEM Por ejemplo, menos de 50 usuarios de la.
 
-Los usuarios también se pueden crear manualmente si el cliente ya está utilizando este método para administrar otros productos de Adobe como Analytics, Target o aplicaciones de Creative Cloud.
+Los usuarios también se pueden crear manualmente si el cliente ya está utilizando este método para administrar otros productos de Adobe como aplicaciones de Adobe Analytics, Adobe Target o Adobe Creative Cloud.
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
@@ -104,7 +100,7 @@ Para facilitar la gestión de la creación de usuarios, se puede cargar un archi
 
 #### Herramienta de sincronización de usuarios {#user-sync-tool}
 
-La herramienta de sincronización de usuarios (o UST abreviada) permite a los clientes empresariales crear o administrar usuarios de Adobe mediante Active Directory u otros servicios de directorio OpenLDAP probados. Los usuarios de destino son administradores de identidad de TI (Enterprise Directory y administradores del sistema) que pueden instalar y configurar la herramienta. La herramienta de código abierto es personalizable para que los clientes puedan hacer que un desarrollador la modifique para adaptarla a sus propios requisitos particulares.
+La herramienta de sincronización de usuarios (o UST abreviada) permite a los clientes empresariales crear o administrar usuarios de Adobe que utilizan Active Directory u otros servicios de directorio OpenLDAP probados. Los usuarios de destino son administradores de identidad de TI (Enterprise Directory y administradores del sistema) que pueden instalar y configurar la herramienta. La herramienta de código abierto es personalizable para que los clientes puedan hacer que un desarrollador la modifique para adaptarla a sus propios requisitos particulares.
 
 Cuando se ejecuta la sincronización de usuarios, se obtiene una lista de usuarios de Active Directory de la organización (o de cualquier otro origen de datos compatible) y se compara con la lista de usuarios de [!DNL Admin Console]. Luego llama al Adobe [!DNL User Management] API para que el [!DNL Admin Console] se sincroniza con el directorio de la organización. El flujo de cambios es totalmente unidireccional; cualquier edición realizada en la variable [!DNL Admin Console] no se inserten en el directorio.
 
@@ -176,7 +172,7 @@ AEM Los usuarios administradores pueden seguir admitiendo inicios de sesión loc
 
 #### Inicio de sesión basado en IMS {#ims-based-login}
 
-Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una vez que IMS esté configurado en la instancia. El usuario primero debe hacer clic en **Iniciar sesión con el Adobe** como se muestra a continuación:
+Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una vez que IMS esté configurado en la instancia. El usuario primero hace clic en **Iniciar sesión con el Adobe** como se muestra a continuación:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -208,7 +204,7 @@ AEM AEM El control de acceso y los permisos se seguirán administrando en la pr�
 
 En el ejemplo siguiente, se añaden grupos sincronizados al grupo local *Dam_Users* como ejemplo.
 
-En este caso, también se ha asignado un usuario a algunos grupos de la [!DNL Admin Console]. ( Tenga en cuenta que los usuarios y grupos se pueden sincronizar desde LDAP mediante la herramienta de sincronización de usuarios o crearse localmente; consulte la sección **Incorporación de usuarios a[!DNL Admin Console]** arriba).
+En este caso, también se ha asignado un usuario a algunos grupos de la [!DNL Admin Console]. (Los usuarios y grupos se pueden sincronizar desde LDAP mediante la herramienta de sincronización de usuarios o crearse localmente. Consulte **Incorporación de usuarios a[!DNL Admin Console]** anterior).
 
 >[!NOTE]
 >
@@ -224,7 +220,7 @@ Cuando el usuario inicia sesión, se sincronizan las suscripciones al grupo, com
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 
-AEM En la práctica, los grupos de usuarios sincronizados con IMS se pueden añadir como miembros a grupos locales existentes, por ejemplo, usuarios de DAM.
+AEM En la práctica, los grupos de usuarios sincronizados con IMS se pueden agregar como miembros a grupos locales existentes, por ejemplo, usuarios de DAM.
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 

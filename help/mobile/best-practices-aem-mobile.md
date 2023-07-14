@@ -1,16 +1,14 @@
 ---
 title: Prácticas recomendadas para AEM Mobile On-demand Services
 description: AEM Conozca las prácticas recomendadas y las directrices que ayudan a los desarrolladores de sitios con experiencia en la creación de plantillas y componentes de aplicaciones móviles, y que tienen mucho experiencia en la creación de sitios web.
-uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '592'
 ht-degree: 1%
 
 ---
@@ -19,11 +17,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Crear una aplicación de AEM Mobile On-demand Services es diferente a crear una aplicación que se ejecute directamente en el shell de Cordova (o PhoneGap). Los desarrolladores deben estar familiarizados con lo siguiente:
 
-* Complementos admitidos de forma predeterminada, así como los complementos específicos de AEM Mobile.
+* Complementos compatibles de forma predeterminada y los complementos específicos de AEM Mobile.
 
 >[!NOTE]
 >
@@ -33,14 +31,13 @@ Crear una aplicación de AEM Mobile On-demand Services es diferente a crear una 
 >* [Uso de complementos específicos de AEM Mobile habilitados para Cordova](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
-
 * Las plantillas que utilizan la funcionalidad del complemento deben escribirse de tal manera que se puedan crear en el explorador, sin que esté presente el puente del complemento.
 
    * Por ejemplo, asegúrese de esperar a que *dispositivo preparado* antes de intentar acceder a la API de un complemento.
 
 ## AEM Directrices para desarrolladores de {#guidelines-for-aem-developers}
 
-AEM Las siguientes directrices ayudarán a los desarrolladores de sitios con experiencia en la creación de plantillas y componentes de aplicaciones móviles, que ya tienen experiencia en la creación de sitios:
+AEM Las siguientes directrices ayudan a los desarrolladores experimentados en la creación de sitios web, que desean crear plantillas y componentes de aplicaciones móviles:
 
 **AEM Estructura de plantillas de sitios para fomentar la reutilización y la extensibilidad**
 
@@ -55,8 +52,8 @@ AEM Las siguientes directrices ayudarán a los desarrolladores de sitios con exp
 
 **Optimización del rendimiento en el dispositivo**
 
-* La secuencia de comandos específica del artículo y las hojas de estilo deben incluirse en la carga útil del artículo mediante la plantilla dps-article-contentsync
-* Las secuencias de comandos y las hojas de estilo compartidas por más de un artículo se deben incluir en los recursos compartidos mediante la plantilla contentsync dps-HTMLResources
+* La secuencia de comandos específica del artículo y las hojas de estilo deben incluirse en la carga útil del artículo mediante la plantilla dps-article contentsync
+* Las hojas de estilo y los scripts compartidos por más de un artículo se deben incluir en los recursos compartidos mediante la plantilla contentsync dps-HTMLResources
 * No haga referencia a ningún script externo que bloquee el procesamiento
 
 >[!NOTE]
@@ -66,7 +63,7 @@ AEM Las siguientes directrices ayudarán a los desarrolladores de sitios con exp
 **Preferir bibliotecas JS y CSS del lado del cliente y específicas de la aplicación sobre las específicas de la web**
 
 * Para evitar sobrecargas en bibliotecas como jQuery Mobile para gestionar una gran cantidad de dispositivos y navegadores
-* Cuando se ejecuta una plantilla en la vista web de una aplicación, usted tiene control sobre las plataformas y versiones que esa aplicación va a admitir, así como sobre la presencia de compatibilidad con JavaScript. Por ejemplo, prefiera Ionic (quizás solo el CSS) sobre jQuery Mobile y la interfaz de usuario de Onsen sobre Bootstrap.
+* Cuando se ejecuta una plantilla en la vista web de una aplicación, usted tiene control sobre las plataformas y versiones que la aplicación va a admitir y sabe que la compatibilidad con JavaScript estará presente. Por ejemplo, prefiera Ionic (quizás solo el CSS) sobre jQuery Mobile y la interfaz de usuario de Onsen sobre Bootstrap.
 
 >[!NOTE]
 >
