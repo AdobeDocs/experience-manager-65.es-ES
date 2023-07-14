@@ -1,5 +1,5 @@
 ---
-title: Uso de etiquetas para clasificar contenido en un sitio web
+title: Uso de etiquetas
 description: Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
@@ -9,14 +9,15 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 66%
+source-wordcount: '569'
+ht-degree: 67%
 
 ---
 
-# Uso de etiquetas{#using-tags}
+
+# Uso de etiquetas {#using-tags}
 
 Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas se pueden considerar palabras clave o etiquetas que se pueden adjuntar a una página, un recurso u otro contenido para permitir las búsquedas y encontrar ese contenido y el contenido relacionado.
 
@@ -54,7 +55,7 @@ Al igual que con las páginas, puede realizar lo siguiente en etiquetas y áreas
 
 * Activar etiquetas individuales.
 
-   Al igual que con las páginas, las nuevas etiquetas que se creen deberán activarse antes de que estén disponibles en el entorno de publicación.
+  Al igual que con las páginas, las nuevas etiquetas que se creen deberán activarse antes de que estén disponibles en el entorno de publicación.
 
 >[!NOTE]
 >
