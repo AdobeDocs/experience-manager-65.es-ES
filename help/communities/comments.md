@@ -1,17 +1,13 @@
 ---
 title: Uso de comentarios
-seo-title: Using Comments
 description: La función Comentarios permite a los visitantes del sitio iniciar sesión compartir sus opiniones y conocimientos
-seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
-uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 6%
@@ -65,43 +61,43 @@ En el **Comentarios** , especifique cómo los visitantes introducen los comentar
 
 * **Permitir respuestas**
 
-   Si se selecciona esta opción, los miembros podrán responder a los comentarios existentes. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, los miembros podrán responder a los comentarios existentes. La opción predeterminada no está seleccionada.
 
 * **Comentarios por página**
 
-   Limita el número de comentarios que se muestran por página y el número de respuestas que se muestran. El valor predeterminado es 10.
+  Limita el número de comentarios que se muestran por página y el número de respuestas que se muestran. El valor predeterminado es 10.
 
 * **Permitir cargas de archivos**
 
-   Si se selecciona, la opción para cargar un archivo se presenta con la casilla de entrada de texto. La opción predeterminada no está seleccionada.
+  Si se selecciona, la opción para cargar un archivo se presenta con la casilla de entrada de texto. La opción predeterminada no está seleccionada.
 
 * **Tamaño máximo de archivo**
 
-   Solo es relevante si está marcada la opción Permitir cargas de archivos. Este valor limita el tamaño del archivo cargado. El límite predeterminado es 10 MB.
+  Solo es relevante si está marcada la opción Permitir cargas de archivos. Este valor limita el tamaño del archivo cargado. El límite predeterminado es 10 MB.
 
 * **Longitud máxima del mensaje**
 
-   Número máximo de caracteres que pueden introducirse en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
+  Número máximo de caracteres que pueden introducirse en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
 
 * **Tipos de archivo permitidos**
 
-   Solo es relevante si está marcada la opción Permitir cargas de archivos. Lista separada por comas de las extensiones de nombre de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Solo es relevante si está marcada la opción Permitir cargas de archivos. Lista separada por comas de las extensiones de nombre de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **Editor de texto enriquecido**
 
-   Si se selecciona, los comentarios se introducen con marcado. La opción predeterminada no está seleccionada.
+  Si se selecciona, los comentarios se introducen con marcado. La opción predeterminada no está seleccionada.
 
 * **Habilitar la votación**
 
-   Si se selecciona, la opción para votar hacia arriba o hacia abajo se presenta con el cuadro de entrada de texto. La opción predeterminada no está seleccionada.
+  Si se selecciona, la opción para votar hacia arriba o hacia abajo se presenta con el cuadro de entrada de texto. La opción predeterminada no está seleccionada.
 
 * **Permitir seguimiento**
 
-   Si se selecciona esta opción, se permite que los miembros sigan los comentarios. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, se permite que los miembros sigan los comentarios. La opción predeterminada no está seleccionada.
 
 * **Mostrar insignias**
 
-   Si se selecciona esta opción, se muestran las insignias obtenidas y concedidas. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, se muestran las insignias obtenidas y concedidas. La opción predeterminada no está seleccionada.
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
@@ -109,39 +105,39 @@ En el **Moderación de usuario** , especifique cómo se administran los comentar
 
 * **Moderación previa**
 
-   Si se selecciona, los comentarios deben aprobarse antes de aparecer en un sitio de publicación. La opción predeterminada no está seleccionada.
+  Si se selecciona, los comentarios deben aprobarse antes de aparecer en un sitio de publicación. La opción predeterminada no está seleccionada.
 
 * **Eliminar comentarios**
 
-   Si se selecciona, el miembro que publicó el comentario tiene la capacidad de eliminarlo. La opción predeterminada no está seleccionada.
+  Si se selecciona, el miembro que publicó el comentario tiene la capacidad de eliminarlo. La opción predeterminada no está seleccionada.
 
 * **Denegar comentarios**
 
-   Si se selecciona, permite que los moderadores denieguen comentarios. La opción predeterminada no está seleccionada.
+  Si se selecciona, permite que los moderadores denieguen comentarios. La opción predeterminada no está seleccionada.
 
 * **Cerrar/abrir de nuevo los comentarios**
 
-   Si se selecciona esta opción, los moderadores pueden cerrar y volver a abrir los comentarios. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, los moderadores pueden cerrar y volver a abrir los comentarios. La opción predeterminada no está seleccionada.
 
 * **Marcar comentarios**
 
-   Si se selecciona esta opción, se permite a los miembros marcar comentarios como inadecuados. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, se permite a los miembros marcar comentarios como inadecuados. La opción predeterminada no está seleccionada.
 
 * **Lista de motivos de indicación**
 
-   Si se selecciona esta opción, permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. La opción predeterminada no está seleccionada.
 
 * **Motivo de indicación personalizado**
 
-   Si se selecciona esta opción, permite que los miembros especifiquen su propio motivo para marcar un comentario como inapropiado. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, permite que los miembros especifiquen su propio motivo para marcar un comentario como inapropiado. La opción predeterminada no está seleccionada.
 
 * **Umbral de moderación**
 
-   Introduzca el número de veces que los miembros deben marcar un comentario antes de notificarlo a los moderadores. El valor predeterminado es una vez (1).
+  Introduzca el número de veces que los miembros deben marcar un comentario antes de notificarlo a los moderadores. El valor predeterminado es una vez (1).
 
 * **Límite de indicación**
 
-   Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser bueno o igual que **Umbral de moderación**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser bueno o igual que **Umbral de moderación**. El valor predeterminado es 5.
 
 #### Pestaña Configuración de ordenación {#sort-settings-tab}
 
@@ -149,11 +145,11 @@ En el **Configuración de orden** , especifique cómo se ordenan los comentarios
 
 * **Campo de ordenación**
 
-   Tire hacia abajo para seleccionar una de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`.
+  Tire hacia abajo para seleccionar una de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`.
 
 * **Orden**
 
-   Tire hacia abajo para seleccionar una de `Ascending` o `Descending`.
+  Tire hacia abajo para seleccionar una de `Ascending` o `Descending`.
 
 ### Cambio a un tipo de comentario personalizado {#changing-to-a-custom-comment-type}
 
@@ -167,19 +163,19 @@ En el **Tipos de recursos** pestaña, especifique el resourceType personalizado 
 
 * **Tipo de medio de comentario**
 
-   Navegue hasta el resourceType de un `comment` componente (comentario único) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`. 
+  Navegue hasta el resourceType de un `comment` componente (comentario único) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
 
-   Este recurso identifica el resourceType del UGC creado cuando un visitante publica un comentario.
+  Este recurso identifica el resourceType del UGC creado cuando un visitante publica un comentario.
 
 * **Tipo de medio de votación**
 
-   Navegue hasta el resourceType de un `voting` en /apps. Por ejemplo, `/apps/social/components/hbs/voting`. 
+  Navegue hasta el resourceType de un `voting` en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
 
-   Este recurso identifica el tipo de recurso de UGC creado cuando un visitante publica un voto.
+  Este recurso identifica el tipo de recurso de UGC creado cuando un visitante publica un voto.
 
 * **Tipo de medio de sistema de comentario**
 
-   Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](/help/communities/scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [{{include}} ayudante](/help/communities/handlebars-helpers.md#include).
+  Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](/help/communities/scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [{{include}} ayudante](/help/communities/handlebars-helpers.md#include).
 
 ### Experiencia del visitante del sitio {#site-visitor-experience}
 

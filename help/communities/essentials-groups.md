@@ -1,25 +1,21 @@
 ---
 title: Elementos esenciales del grupo de comunidad
-seo-title: Community Group Essentials
 description: Creación dinámica de sitios de la comunidad
-seo-description: Creating community sites dynamically
-uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
 
 # Elementos esenciales del grupo de comunidad  {#community-group-essentials}
 
-La función de grupos de comunidad permite que usuarios autorizados de los entornos de publicación y creación creen dinámicamente una subcomunidad dentro de un sitio de la comunidad.
+La función de grupos de comunidad es la capacidad de una subcomunidad para que los usuarios autorizados de los entornos de publicación y creación la creen dinámicamente dentro de un sitio de comunidad.
 
 A partir de comunidades [paquete de funciones 1](deploy-communities.md#latestfeaturepack), es posible anidar grupos dentro de otros grupos
 
@@ -79,23 +75,23 @@ A partir de comunidades [paquete de funciones 1](deploy-communities.md#latestfea
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API del grupo de comunidad](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [API del grupo de comunidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Puntos finales de grupo de comunidad](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Puntos finales de grupo de comunidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Función Grupos {#groups-function}
 
-Una estructura de sitio de la comunidad que incluye un [Función Grupos](functions.md#groups-function) apoyará la creación de nuevos `community groups` desde los entornos de publicación y creación. El grupo de comunidad creado incluirá un `community groups member list` componente que enumerará los miembros del grupo.
+Una estructura de sitio de la comunidad que incluye un [Función Grupos](functions.md#groups-function) admite la creación de nuevos `community groups` desde los entornos de publicación y creación. El grupo de comunidad creado incluye un `community groups member list` componente que enumera los miembros del grupo.
 
-Uno o más [plantillas de grupo de comunidad](tools-groups.md), que proporcionan el diseño de las páginas de grupo de la comunidad, se pueden configurar para la función Grupos cuando se añade la función a un [plantilla del sitio de la comunidad](sites.md) o anidados dentro de una plantilla de grupo de la comunidad.
+Uno o más [plantillas de grupo de comunidad](tools-groups.md), que proporcionan el diseño de las páginas del grupo de la comunidad, se pueden configurar para la función Grupos cuando la función se agrega a un [plantilla del sitio de la comunidad](sites.md) o anidados dentro de una plantilla de grupo de la comunidad.
 
 La inclusión de varias plantillas de grupo de comunidad resulta en la presentación de una opción de diseño al usuario autorizado en el momento en que se crea un nuevo grupo de comunidad para el sitio de comunidad, como se muestra en la sección sobre [grupos comunitarios](creating-groups.md) para autores.
 
 ### Grupos anidados {#nested-groups}
 
-A partir de comunidades [FP1](deploy-communities.md#latestfeaturepack), es posible incluir una función Grupos dentro de una plantilla de grupo, lo que permite grupos anidados (subcomunidades).
+A partir de comunidades [FP1](deploy-communities.md#latestfeaturepack), es posible incluir una función Grupos dentro de una plantilla de grupo, lo que permite anidar grupos (subcomunidades).
 
 Cuando un sitio de comunidad o una plantilla de grupo incluye la función Grupos, es posible:
 
@@ -103,7 +99,7 @@ Cuando un sitio de comunidad o una plantilla de grupo incluye la función Grupos
 
 * Cree un grupo en el entorno de publicación, cuando esté configurado para permitirlo.
 
-Al crear un grupo en el entorno de creación, es necesario publicar primero el sitio de la comunidad y, a continuación, publicar el grupo. La publicación del sitio de la comunidad publicará las páginas del grupo, sin crear los grupos de miembros de la subcomunidad en los que se establecen las ACL. Por lo tanto, un grupo restringido (secreto) puede ser visible hasta que se publique explícitamente el grupo.
+Al crear un grupo en el entorno de creación, es necesario publicar primero el sitio de la comunidad y, a continuación, publicar el grupo. Al publicar el sitio de la comunidad, se publican las páginas del grupo, sin crear los grupos de miembros de la subcomunidad en los que se establecen las ACL. Por lo tanto, un grupo restringido (secreto) puede ser visible hasta que se publique explícitamente el grupo.
 
 ## Vínculos e información relacionada {#links-and-related-information}
 

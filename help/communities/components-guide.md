@@ -1,25 +1,21 @@
 ---
 title: Guía de componentes de la comunidad
-seo-title: Community Components Guide
 description: Una herramienta de desarrollo interactiva para empezar a usar el marco de componente social (SCF)
-seo-description: An interactive development tool to get started with the social component framework (SCF)
-uuid: 120e56d1-b93c-4f92-bab4-6bb5e40e0ddf
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1181'
 ht-degree: 2%
 
 ---
 
 # Guía de componentes de la comunidad  {#community-components-guide}
 
-La guía de componentes de la comunidad es una herramienta de desarrollo interactiva para [marco de componentes sociales (SCF)](scf.md). Proporciona una lista de los componentes de AEM Communities disponibles o las funciones más complejas creadas de varios componentes.
+La guía de componentes de la comunidad es una herramienta de desarrollo interactiva para [marco de componentes sociales (SCF)](scf.md). Proporciona una lista de los componentes de comunidades de Adobe Experience Manager AEM () disponibles o las funciones más complejas creadas de varios componentes.
 
 Junto con la información básica de cada componente, la guía permite experimentar cómo funcionan los componentes o funciones de SCF y cómo se pueden configurar o personalizar.
 
@@ -27,28 +23,28 @@ Para obtener información sobre los aspectos básicos del desarrollo relacionado
 
 ## Introducción {#getting-started}
 
-La guía está diseñada para utilizarse en instalaciones de desarrollo de instancias de autor (localhost:4502) y publicación (localhost:4503).
+La guía está diseñada para utilizarse en instalaciones de desarrollo de instancias de autor (localhost:4502) e instancias de publicación (localhost:4503).
 
 Para acceder al sitio de componentes de la comunidad, vaya a
 
 * [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
-Las interacciones con los componentes de las comunidades variarán en función de lo siguiente:
+Las interacciones con los componentes de las comunidades varían en función de:
 
 * El servidor (autor o publicación).
-* Indica si el visitante del sitio ha iniciado sesión o no.
+* Si el visitante del sitio ha iniciado sesión o no.
 * Si ha iniciado sesión, los privilegios asignados al miembro.
-* Si el SRP predeterminado es o no, [JSRP](jsrp.md), está en uso.
+* Si el SRP predeterminado, [JSRP](jsrp.md), está en uso.
 
 En Autor, para entrar en el modo de edición, inserte una de las siguientes opciones `editor.html` o `cf#` como el primer segmento de ruta después del nombre del servidor:
 
 * IU estándar:
 
-   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * IU clásica:
 
-   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -106,15 +102,15 @@ En el **Plantillas** pestaña:
 
 * **Incluir el componente secundario con sling:include**
 
-   Si no se selecciona, la Guía de componentes utilizará el recurso existente en el repositorio (un nodo jcr que es secundario de un nodo par).
+  Si no se selecciona, la Guía de componentes utiliza el recurso existente en el repositorio (un nodo jcr que es secundario de un nodo par).
 
    * El texto mostrado es: &quot;Este componente se incluye a través de su nodo de par&quot;.
 
-   Si se selecciona, la Guía de componentes utilizará sling para incluir dinámicamente un componente del resourceType del nodo secundario (recurso no existente).
+  Si se selecciona, la Guía de componentes utiliza sling para incluir dinámicamente un componente del resourceType del nodo secundario (recurso no existente).
 
    * El texto mostrado es: &quot;Este componente se incluye dinámicamente&quot;.
 
-   El valor predeterminado está desmarcado.
+  El valor predeterminado está desmarcado.
 
 ### Interacciones de publicación {#publish-interactions}
 
@@ -126,7 +122,7 @@ Al utilizar la guía en una instancia de publicación, es posible experimentar l
 
 ## Bibliotecas de cliente {#client-side-libraries}
 
-Las bibliotecas de cliente (clientlibs) enumeradas para cada componente son las siguientes *obligatorio* se debe hacer referencia a él cuando el componente se coloca en una página. Los clientlibs proporcionan un medio para administrar y optimizar la descarga de JavaScript y CSS utilizados para representar el componente en el explorador.
+Las bibliotecas de cliente (clientlibs) enumeradas para cada componente son las siguientes *obligatorio* se debe hacer referencia a él cuando el componente se coloca en una página. Los clientlibs proporcionan un medio para administrar y optimizar la descarga de JavaScript y CSS utilizados para procesar el componente en el explorador.
 
 Para obtener más información, visite [Componentes de Clientlibs para Communities](clientlibs.md).
 
@@ -156,7 +152,7 @@ Con el componente Comentarios como ejemplo, en la instancia de autor o publicaci
 
 1. Seleccione el de `jcr:content` nodo
 
-   Por ejemplo, `/content/community-components/en/comments/jcr:content`. 
+   Por ejemplo, `/content/community-components/en/comments/jcr:content`
 
 1. Añadir una propiedad
 
@@ -169,7 +165,7 @@ Con el componente Comentarios como ejemplo, en la instancia de autor o publicaci
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
-1. Tenga en cuenta que ahora hay 3 pestañas para plantillas, CSS y datos.
+1. Tenga en cuenta que ahora hay tres pestañas para plantillas, CSS y datos.
 
 ![community-component5](assets/community-component5.png)
 
