@@ -11,10 +11,10 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 99%
+source-wordcount: '898'
+ht-degree: 97%
 
 ---
 
@@ -96,7 +96,7 @@ Capturar los datos sin conexión y sincronizarlos la próxima vez que vuelva a e
 * Paneles personalizables para obtener información en tiempo real sobre las operaciones empresariales
 * API para conectarse con herramientas de informes de terceros
 
-![](do-not-localize/3rd-draft.gif)
+![Tercer borrador](do-not-localize/3rd-draft.gif)
 
 ## Comunicación personalizada {#personalized-communication}
 
@@ -115,6 +115,6 @@ Los documentos personalizados, como los recibos, los kits de bienvenida y los ex
 * Compatibilidad con firmas digitales para validar la integridad del contenido y la identidad del firmante
 * Complemento Document Security de AEM Forms, que incluye cifrado, políticas de uso, seguimiento y auditoría
 
-![](do-not-localize/layout-02.png)
+![Diseño dos](do-not-localize/layout-02.png)
 
 Flujo de trabajo de comunicación personalizado y optimizado

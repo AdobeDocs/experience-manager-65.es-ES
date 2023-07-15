@@ -1,18 +1,14 @@
 ---
 title: Elementos esenciales del sitio de comunidad
-seo-title: Community Site Essentials
 description: Exportar y eliminar sitios de la comunidad y crear plantillas de sitio personalizadas
-seo-description: Exporting and deleting community sites and creating custom site templates
-uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '497'
 ht-degree: 2%
 
 ---
@@ -56,7 +52,7 @@ Por ejemplo: `/content/sites/engage/en/configuration`
 
 >[!CAUTION]
 >
->Si a la plantilla personalizada se le asigna el nombre *sitepage.hbs*, se personalizarán todos los sitios de la comunidad.
+>Si a la plantilla personalizada se le asigna el nombre *sitepage.hbs*, todos los sitios de la comunidad se personalizan.
 
 ### Ejemplo de plantilla de sitio personalizada {#custom-site-template-example}
 
@@ -73,19 +69,19 @@ Identificar la plantilla personalizada agregando un `page-template` al nodo de c
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Asegúrese de **Guardar todo** AEM y replicar el código personalizado en todas las instancias de la comunidad (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
+Asegúrese de **Guardar todo** y replicar código personalizado en todas las instancias de Adobe Experience Manager AEM () (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
 
 La práctica recomendada para replicar código personalizado es [creación de un paquete](../../help/sites-administering/package-manager.md#creating-a-new-package) e implementarlo en todas las instancias.
 
 ## Exportar un sitio de la comunidad {#exporting-a-community-site}
 
-AEM Una vez creado un sitio de la comunidad, es posible exportar el sitio como un paquete de almacenado en el administrador de paquetes y disponible para descargar y cargar.
+AEM Una vez creado un sitio de la comunidad, es posible exportar el sitio como un paquete de almacenado en el Administrador de paquetes y disponible para descargar y cargar.
 
 Esta opción está disponible en [Consola Sitios de Communities](sites-console.md#exporting-the-site).
 
-Tenga en cuenta que UGC y el código personalizado no se incluyen en el paquete del sitio de la comunidad.
+El código UGC y el código personalizado no se incluyen en el paquete del sitio de la comunidad.
 
-Para exportar UGC, utilice el [Herramienta de migración de UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), una herramienta de migración de código abierto disponible en GitHub.
+Para exportar UGC, utilice el [Herramienta de migración de UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), una herramienta de migración de código abierto disponible en GitHub.
 
 ## Eliminar un sitio de la comunidad {#deleting-a-community-site}
 
@@ -105,7 +101,7 @@ Para identificar el ID único del sitio asociado al sitio de la comunidad median
 
 * El ID del sitio es el tercer componente de `rep:principalName`
 
-   Por ejemplo, si `rep:principalName = community-enable-nrh9h-members`
+  Por ejemplo, si `rep:principalName = community-enable-nrh9h-members`
 
    * **nombre del sitio** = *habilitar*
    * **ID del sitio** = *nrh9h*
@@ -113,9 +109,9 @@ Para identificar el ID único del sitio asociado al sitio de la comunidad median
 
 ### Contenido generado por el usuario {#user-generated-content}
 
-Obtenga el proyecto communities-srp-tools de Github:
+Obtenga el proyecto communities-srp-tools de GitHub:
 
-* [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
+* [https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Contiene un servlet para eliminar todos los UGC de cualquier SRP.
 
@@ -127,7 +123,7 @@ Esto solo elimina el contenido generado por el usuario (introducido al publicar)
 
 ### Grupos de usuarios de la comunidad {#community-user-groups}
 
-En todas las instancias de autor y publicación, desde el [consola de seguridad](../../help/sites-administering/security.md), busque y elimine el [grupos de usuarios](users.md) que son:
+En todas las instancias de autor y publicación, desde el [consola de seguridad](../../help/sites-administering/security.md), busque y quite el [grupos de usuarios](users.md) que son:
 
 * Con el prefijo `community`
 * Seguido de [id de sitio único](#community-unique-site-id)

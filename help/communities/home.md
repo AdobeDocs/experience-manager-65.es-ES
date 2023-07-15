@@ -1,25 +1,23 @@
 ---
 title: Guía de Adobe Experience Manager 6.5 Communities
-seo-title: Adobe Experience Manager 6.5 Communities Guide
-description: Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine nuestra guía que explica cómo implementar, administrar, desarrollar y crear comunidades.
-seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
+description: Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine esta guía que explica cómo implementar, administrar, desarrollar y crear comunidades.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 89%
+source-wordcount: '352'
+ht-degree: 84%
 
 ---
 
-# Guía de Adobe Experience Manager 6.5 Communities
+# Guía de Adobe Experience Manager AEM () 6.5 Communities
 
-Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine nuestra guía que explica cómo implementar, administrar, desarrollar y crear comunidades.
+Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine esta guía que explica cómo implementar, administrar, desarrollar y crear comunidades.
 
 ## Artículos clave de AEM
 
 * [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
 * [Notas de la versión 6.5 de AEM](/help/release-notes/home.md)
-* [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
+* [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
 ## AEM Guías del usuario de.5
@@ -42,11 +40,11 @@ Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendiz
 
 ## Recursos clave de AEM
 
-* [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriales de AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
-* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
+* [Experience League](https://experienceleague.adobe.com/#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
