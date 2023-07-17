@@ -1,51 +1,48 @@
 ---
 title: Inicio rápido (SOAP) de Application Manager Client JavaAPI
-seo-title: Application Manager Client JavaAPI Quick Start(SOAP)
 description: Inicio rápido (SOAP) de Application Manager Client JavaAPI
-uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '429'
 ht-degree: 4%
 
 ---
 
 # Inicio rápido (SOAP) de Application Manager Client JavaAPI {#application-manager-client-javaapi-quick-start-soap}
 
-El siguiente Inicio rápido (SOAP) de la API de Java está disponible para el cliente de Application Manager.
+El siguiente Inicio rápido (SOAP) de la API de Java™ está disponible para el cliente de Application Manager.
 
-[Inicio rápido (modo SOAP): Creación de la versión de la aplicación mediante la API de Java](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[Inicio rápido (modo SOAP): Creación de la versión de la aplicación mediante Java](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Exportación de aplicaciones mediante la API de Java](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[Inicio rápido (modo SOAP): Exportación de aplicaciones mediante Java](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Importación de aplicaciones mediante la API de Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[Inicio rápido (modo SOAP): Importación de aplicaciones mediante Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Obtención de una aplicación de AEM Forms mediante la API de Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Inicio rápido (modo SOAP): Obtención de una aplicación de AEM Forms mediante Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Obtención de las aplicaciones mediante la API de Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Inicio rápido (modo SOAP): Obtención de las aplicaciones mediante Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Obtención del estado de las aplicaciones mediante la API de Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[Inicio rápido (modo SOAP): Obtención del estado de las aplicaciones mediante Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Inicio rápido (modo SOAP): Previsualización del archivo de aplicaciones de AEM Forms y posterior mediante la API de Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Inicio rápido (modo SOAP): Vista previa del archivo de aplicaciones de AEM Forms y posterior mediante Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Eliminación del archivo de la aplicación AEM Forms mediante la API de Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Inicio rápido (modo SOAP): Eliminación del archivo de la aplicación AEM Forms mediante Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos ubicados en Programación con AEM Forms se basan en el servidor de Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>El inicio rápido en Programación con AEM Forms se basa en el servidor de Forms que se implementa en JBoss® y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Creación de la versión de la aplicación mediante la API de Java {#quick-start-soap-mode-creating-application-version-using-the-java-api}
+## Inicio rápido (modo SOAP): Creación de la versión de la aplicación mediante la API de Java™ {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
-En el siguiente ejemplo de código Java se crea una aplicación con la API de JAVA.
+En el siguiente ejemplo de código Java™ se crea una aplicación mediante la API de Java™.
 
 ```java
 /*
@@ -142,9 +139,9 @@ public class CreateApplicationVersion_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Exportación de aplicaciones mediante la API de Java {#quick-start-soap-mode-exporting-applications-using-the-java-api}
+## Inicio rápido (modo SOAP): Exportación de aplicaciones mediante la API de Java™ {#quick-start-soap-mode-exporting-applications-using-the-java-api}
 
-El siguiente ejemplo de código Java exporta una aplicación mediante la API de JAVA.
+El siguiente ejemplo de código Java™ exporta una aplicación mediante la API de Java™.
 
 ```java
 /*
@@ -245,13 +242,13 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Importación de aplicaciones mediante la API de Java {#quick-start-soap-mode-importing-applications-using-the-java-api}
+## Inicio rápido (modo SOAP): Importación de aplicaciones mediante la API de Java™ {#quick-start-soap-mode-importing-applications-using-the-java-api}
 
-El siguiente ejemplo de código Java importa una aplicación mediante la API de JAVA.
+El siguiente ejemplo de código Java™ importa una aplicación mediante la API de Java™.
 
 >[!NOTE]
 >
->La API de Java importApplication() reemplaza las aplicaciones existentes del mismo nombre con una aplicación más reciente. Para actualizar una aplicación existente, utilice API importApplication() en lugar de API updateApplication().
+La API de Java™ importApplication() reemplaza las aplicaciones existentes del mismo nombre con una aplicación más reciente. Para actualizar una aplicación existente, utilice API importApplication() en lugar de API updateApplication().
 
 ```java
 /*
@@ -332,9 +329,9 @@ public class ImportLCA_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Obtención de una aplicación mediante la API de Java {#quick-start-soap-mode-getting-a-application-using-the-java-api}
+## Inicio rápido (modo SOAP): Obtención de una aplicación mediante la API de Java™ {#quick-start-soap-mode-getting-a-application-using-the-java-api}
 
-El siguiente ejemplo de código Java obtiene una aplicación mediante la API de Java.
+El siguiente ejemplo de código Java™ obtiene una aplicación mediante la API de Java™.
 
 ```java
 /*
@@ -439,11 +436,11 @@ public class GetApplication_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Obtención de las aplicaciones mediante la API de Java {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## Inicio rápido (modo SOAP): Obtención de las aplicaciones mediante la API de Java™ {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
-El siguiente ejemplo de código Java obtiene las aplicaciones mediante la API de Java.
+El siguiente ejemplo de código Java™ obtiene las aplicaciones mediante la API de Java™.
 
-**nota**: Al obtener la API de aplicación de AEM Forms, getApplications(), solo se devuelven aplicaciones implementadas.
+**Nota**: Al obtener la API de aplicación de AEM Forms, getApplications(), solo se devuelven aplicaciones implementadas.
 
 ```java
 /*
@@ -538,7 +535,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Obtención del estado de las aplicaciones mediante la API de Java {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
+## Inicio rápido (modo SOAP): Obtención del estado de las aplicaciones mediante la API de Java™ {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
 ```java
 /*
@@ -643,9 +640,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Vista previa del archivo de aplicaciones de LiveCycle ES2 y posterior mediante la API de Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Inicio rápido (modo SOAP): Vista previa del archivo de aplicaciones de LiveCycle ES2 y posterior mediante la API de Java™ {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-El siguiente ejemplo de código Java es para previsualizar el archivo de aplicaciones de AEM Forms y posterior mediante la API de Java.
+El siguiente ejemplo de código Java™ sirve para obtener una vista previa del archivo de aplicaciones de AEM Forms y posterior mediante la API de Java™.
 
 ```java
 /*
@@ -722,9 +719,9 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP): Eliminación del archivo de la aplicación mediante la API de Java {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Inicio rápido (modo SOAP): Eliminación del archivo de la aplicación mediante la API de Java™ {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
-El siguiente ejemplo de código Java sirve para eliminar un archivo de aplicación.
+El siguiente ejemplo de código Java™ sirve para eliminar un archivo de aplicación.
 
 ```java
 /*

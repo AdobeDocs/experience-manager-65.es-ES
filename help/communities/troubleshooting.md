@@ -1,16 +1,14 @@
 ---
 title: Solución de problemas de comunidad
 description: Solución de problemas de la comunidad, incluidos problemas conocidos
-uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -42,14 +40,14 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 El problema es que la cadena de formato para com.day.cq.commons.date.RelativeTimeFormat se cambió entre 5.4 y 5.5, de modo que ya no se acepta la &quot;a&quot; para &quot;ago&quot;.
 
-Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() tendría que cambiar:
+Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() debe cambiar:
 
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 El error es diferente en creación y publicación. En el autor, falla silenciosamente y simplemente no muestra los temas del foro. En la publicación, genera el error de la página.
 
-Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obtener más información.
+Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obtener más información.
 
 ## Inquietudes comunes {#common-concerns}
 
@@ -59,11 +57,11 @@ Durante el inicio (no el primero, sino todos los posteriores), se puede ver la s
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` se ha reemplazado por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Esta advertencia se puede ignorar de forma segura como `jknack.handlebars.Handlebars`, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. AEM En el inicio, se reemplaza con un específico de la [i18n helper](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
+Esta advertencia se puede ignorar de forma segura como `jknack.handlebars.Handlebars`, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. AEM Al inicio, se reemplaza con un específico de la [i18n helper](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
 
 ### Advertencia en registros: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-La publicación de una serie de temas de foros de comunidades sociales puede dar como resultado enormes cantidades de registros de advertencia e información de OakResourceListener processOsgiEventQueue.
+La publicación de varios temas de foros de comunidades sociales puede dar como resultado enormes cantidades de registros de advertencia e información de OakResourceListener processOsgiEventQueue.
 
 Estas advertencias se pueden ignorar sin problemas.
 
