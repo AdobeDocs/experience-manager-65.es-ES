@@ -1,18 +1,14 @@
 ---
 title: Configuración del Cloud Service de Adobe Target
-seo-title: Configuring Adobe Target Cloud Service
 description: Siga esta página para comprender cómo obtener el conjunto correcto de permisos para usuarios y grupos, crear servicios en la nube, configurar la aplicación para la actividad y, finalmente, generar el contenido.
-seo-description: Follow this page to understand how to get right set of permissions for users and groups, creating cloud services, configuring the application for the activity, and finally generating the content.
-uuid: 569f9c6d-f521-488a-9e51-f43b7a214dd9
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 8cd6480f-cb4f-40dd-a444-8ba463b78604
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -21,13 +17,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Este documento forma parte del [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guía, un punto de partida recomendado para referencia de AEM Mobile.
+>Este documento forma parte del [Introducción a Adobe Experience Manager AEM () Mobile](/help/mobile/getting-started-aem-mobile.md) Guía, un punto de partida recomendado para referencia de AEM Mobile.
 
-Es necesario realizar una serie de pasos antes de que los autores de contenido puedan empezar a generar contenido de destino para aplicaciones móviles: se obtiene el conjunto adecuado de permisos para usuarios y grupos, se crean servicios en la nube, se configura la aplicación para la actividad y, finalmente, se genera el contenido.
+Existen varios pasos que deben cumplirse para que los autores de contenido puedan empezar a generar contenido de destino para aplicaciones móviles: Obtención del conjunto adecuado de permisos para usuarios y grupos, creación de servicios en la nube, configuración de la aplicación para la actividad y, finalmente, generación del contenido.
 
 El supuesto a partir de ahora es que la [Aplicación de referencia híbrida de AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) se ha implementado correctamente y se puede acceder a él mediante el panel de AEM Mobile.
 
@@ -35,11 +31,11 @@ El supuesto a partir de ahora es que la [Aplicación de referencia híbrida de A
 
 Los usuarios que necesitan acceder a la consola de personalización deben formar parte de `target-activity-authors` grupo. Se sugiere que, como parte de la configuración de usuarios y grupos, el grupo de actividad de destinatario se agregue al grupo de administradores de aplicaciones. Al agregar el grupo target-activity-authors, esto permite a los usuarios ver la entrada del menú de navegación Personalización.
 
-Si se olvida agregar los usuarios o grupos a los que desea tener acceso a Admin Console de personalización al grupo target-activity-authors, los usuarios no podrán ver la consola de personalización.
+Si se olvida agregar los usuarios o grupos a los que desea tener acceso con el Admin Console de personalización al grupo target-activity-authors, los usuarios no podrán ver la consola de personalización.
 
 ## Cloud Services {#cloud-services}
 
-Para que el contenido de destino funcione para aplicaciones móviles, hay dos servicios que deben configurarse: el servicio Adobe Target y el servicio Adobe Mobile Services. El servicio Adobe Target proporciona el motor para procesar las solicitudes de los clientes y devolver el contenido personalizado. El servicio de Adobe Mobile Services proporciona la conexión entre los servicios de Adobe y la aplicación móvil a través del archivo ADBMobileConfig.json, que consume el complemento AMS Cordova. Desde AEM Mobile Dashboard puede configurar la aplicación agregando los dos servicios.
+Para que el contenido de destino funcione para aplicaciones móviles, hay dos servicios que deben configurarse: el servicio Adobe Target y el servicio Adobe Mobile Services. El servicio Adobe Target proporciona el motor para procesar las solicitudes de los clientes y devolver el contenido personalizado. El servicio de Adobe Mobile Services proporciona la conexión entre los servicios de Adobe y la aplicación móvil a través del archivo ADBMobileConfig.json, que consume el complemento AMS Cordova. Desde el panel de control de AEM Mobile, puede configurar la aplicación añadiendo los dos servicios.
 
 ## Cloud Service de Adobe Target {#adobe-target-cloud-service}
 
@@ -47,15 +43,15 @@ En el panel de AEM Mobile, busque Administrar Cloud Services y haga clic en el b
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-En el asistente Agregar Cloud Service, seleccione la tarjeta de servicio en la nube &quot;Adobe Target&quot; y haga clic en Siguiente.
+En el asistente Agregar Cloud Service, seleccione la tarjeta de servicio en la nube Adobe Target y haga clic en Siguiente.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-En el menú desplegable Seleccionar una configuración, puede crear una configuración nueva o seleccionar una existente. Para crear una nueva configuración, seleccione &quot;Crear configuración&quot; en el menú desplegable. Introduzca un título para la configuración de Target. Introduzca el código de cliente, el correo electrónico y la contraseña asociados a su cuenta de Target. Si no conoce los valores de estos campos, póngase en contacto con el servicio de asistencia de Adobe Target. Haga clic en el botón &quot;Verificar&quot; para validar las credenciales. Una vez verificado, haga clic en el botón Enviar para crear el servicio en la nube.
+En la lista desplegable Seleccionar una configuración, puede crear una configuración o seleccionar una de las existentes. Para crear una configuración, seleccione &quot;Crear configuración&quot; en la lista desplegable. Introduzca un título para la configuración de Target. Introduzca el código de cliente, el correo electrónico y la contraseña asociados a su cuenta de Target. Si no conoce los valores de estos campos, póngase en contacto con el servicio de asistencia de Adobe Target. Haga clic en el botón &quot;Verificar&quot; para validar las credenciales. Una vez verificado, haga clic en el botón Enviar para crear el servicio en la nube.
 
-El servicio en la nube que se crea se asocia automáticamente a la aplicación móvil mediante el asistente. El valor de la propiedad cq:cloudserviceconfigs se establece en el nodo jcr:content del nodo de grupo de aplicaciones. Para el ejemplo de aplicación híbrida, se establece en /content/mobileapps/hybrid-reference-app/jcr:content con el valor que señala al nodo de marco de trabajo generado automáticamente ubicado en /etc/cloudservices/testandtarget/adobe-target-aem-apps/framework. El nodo de marco de trabajo tiene dos propiedades establecidas de forma predeterminada: sexo y edad. AEM El marco de trabajo solo se utiliza con la vista previa de la vista previa de la y no tiene ningún impacto en el dispositivo.
+El servicio en la nube que se crea se asocia automáticamente a la aplicación móvil mediante el asistente. El valor de la propiedad cq:cloudserviceconfigs se establece en el nodo jcr:content del nodo de grupo de aplicaciones. Para el ejemplo de aplicación híbrida, se establece en /content/mobileapps/hybrid-reference-app/jcr:content con el valor que señala al nodo de marco de trabajo generado automáticamente en /etc/cloudservices/testandtarget/adobe-target-aem-apps/framework. El nodo de marco de trabajo tiene dos propiedades establecidas de forma predeterminada: sexo y edad. AEM El marco de trabajo solo se utiliza con la vista previa de la vista previa de la y no tiene ningún impacto en el dispositivo.
 
-Una vez completado el asistente, el mosaico Administrar Cloud Service contendrá el servicio en la nube de Target, pero contiene una advertencia sobre la falta de una cuenta de Adobe Mobile Service.
+Una vez completado el asistente, el mosaico Administrar Cloud Service contiene el servicio en la nube de Target, pero contiene una advertencia sobre la falta de una cuenta de Adobe Mobile Service.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -81,27 +77,27 @@ Seleccione la tarjeta de Adobe Mobile Services y haga clic en Siguiente.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-En el paso del asistente Crear o Seleccionar, seleccione la lista desplegable Mobile Service y la entrada Crear configuración. Proporcione un título, una empresa, un nombre de usuario y una contraseña, y seleccione el centro de datos adecuado. Si no conoce estos valores, póngase en contacto con el administrador de Adobe Mobile Services para obtenerlos. Una vez rellenados todos los campos, haga clic en el botón Verificar. El proceso de verificación va a AMS y verifica las credenciales de la cuenta. Una vez validada correctamente, se rellenará una lista de aplicaciones móviles en la que se seleccionará la aplicación móvil asociada en el menú desplegable. Haga clic en el botón Enviar para completar el asistente. El proceso puede tardar un poco en obtener los datos de configuración y cualquier análisis asociado con la aplicación. Una vez completado el proceso, haga clic en el botón Listo del modal para volver al panel de Adobe Mobile.
+En el paso del asistente Crear o Seleccionar, seleccione la lista desplegable Mobile Services y la entrada Crear configuración. Proporcione un título, una empresa, un nombre de usuario y una contraseña, y seleccione el centro de datos adecuado. Si no conoce estos valores, póngase en contacto con el administrador de Adobe Mobile Services para obtenerlos. Una vez rellenados todos los campos, haga clic en **Verificar**. El proceso de verificación va a AMS y verifica las credenciales de la cuenta. Una vez validada correctamente, se rellenará una lista de aplicaciones móviles en la que se seleccionará la aplicación móvil asociada en el menú desplegable. Haga clic en el botón Enviar para completar el asistente. El proceso puede tardar un poco en obtener los datos de configuración y cualquier análisis asociado con la aplicación. Una vez completado el proceso, haga clic en **Listo** del modal para volver al Panel de control móvil de Adobe.
 
-Si vuelve al panel móvil, el mosaico Administrar Cloud Services contendrá el servicio en la nube de AMS. También tendrá en cuenta que el mosaico Analizar métricas se rellenará con informes de ciclo vital.
+Al volver al panel móvil, el mosaico Administrar Cloud Services contiene el servicio en la nube de AMS. Tenga en cuenta también que el mosaico Analizar métricas se rellena con informes de ciclo vital.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
 ## Controladores de sincronización de contenido de Target {#target-content-sync-handlers}
 
-AEM Para enviar contenido al dispositivo del usuario, el contenido se genera procesando las ofertas creadas por los autores de contenido de la lista de distribución de contenido Para gestionar la renderización de ofertas de destino, hay un nuevo controlador de sincronización de contenido que procesará las ofertas. Utilizando la aplicación de referencia híbrida como ejemplo, el paquete de contenido en (inglés) contiene ContentSyncConfig con un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) controlador. El siguiente paso es crucial para procesar ofertas en el dispositivo. El controlador de ofertas móviles tiene una propiedad path que identifica la ruta a la actividad de personalización que se va a utilizar para la aplicación.
+AEM Para enviar contenido al dispositivo del usuario, el contenido se genera procesando las ofertas creadas por los autores de contenido Para gestionar la renderización de ofertas de destino, hay un nuevo controlador de sincronización de contenido que procesa las ofertas. Utilizando la aplicación de referencia híbrida como ejemplo, el paquete de contenido en (inglés) contiene ContentSyncConfig con un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) controlador. El siguiente paso es crucial para procesar ofertas en el dispositivo. El controlador de ofertas móviles tiene una propiedad path que identifica la ruta a la actividad de personalización que se utiliza para la aplicación.
 
-Por ejemplo, si hay una actividad ubicada en */content/campaigns/hybridref* copie esta ruta y péguela como el valor en *ruta* propiedad del controlador mobileapps.
+Por ejemplo, si hay una actividad en */content/campaigns/hybridref*, copie esta ruta y péguela como el valor en *ruta* propiedad del controlador mobileapps.
 
-Para la aplicación de referencia híbrida hay dos controladores de ofertas móviles, uno para desarrollo y otro para producciones.
+Para la aplicación de referencia híbrida, hay dos controladores de ofertas móviles, uno para desarrollo y otro para producciones.
 
-Una vez establecida la ruta de las actividades en la propiedad path del controlador de ofertas móviles, guarde el controlador. El controlador ahora estará listo para iniciar la representación de ofertas para nuestros dispositivos móviles.
+Una vez establecida la ruta de las actividades en la propiedad path del controlador de ofertas móviles, guarde el controlador. El controlador ya está listo para iniciar las ofertas de procesamiento para dispositivos móviles.
 
 ### Modo de procesamiento {#render-mode}
 
-El controlador mobileapps está configurado de forma diferente para las configuraciones de publicación y desarrollo. Para las configuraciones de publicación hay una propiedad llamada *renderMode* con un valor de *publicar* se establece en el nodo cq:ContentSyncConfig. El controlador mobileapps hace referencia a renderMode y, si se establece en publish, modifica el ID de mbox que se crea. AEM De forma predeterminada, los mboxes que crea el usuario tienen el valor —author anexado al id de mbox. Esto identifica que la actividad no se ha publicado y debe utilizar la campaña sin publicar para las resoluciones de oferta.
+El controlador mobileapps está configurado de forma diferente para las configuraciones de publicación y desarrollo. Para las configuraciones de publicación hay una propiedad llamada *renderMode* con un valor de *publicar* se establece en el nodo cq:ContentSyncConfig. El controlador mobileapps hace referencia a renderMode y, si se establece en publish, edita el id de mbox que se crea. AEM De forma predeterminada, los mboxes que crea el usuario tienen el valor —author anexado al id de mbox. Esto identifica que la actividad no se ha publicado y debe utilizar la campaña sin publicar para las resoluciones de oferta.
 
-Cuando el contenido se almacena en zona intermedia mediante el panel de Adobe Mobile, el contenido almacenado en zona intermedia se considera contenido listo para la producción y se procesa mediante la configuración de sincronización de contenido no desarrollada. Procesar de esta manera hará que —author se elimine de todos los id de mbox y espere que una actividad publicada esté disponible en el servidor de Target. Antes de probar el contenido ensayado, asegúrese de que la actividad se ha publicado.
+Cuando el contenido se almacena en zona intermedia mediante el panel de Adobe Mobile, el contenido almacenado en zona intermedia se considera contenido listo para la producción y se procesa mediante la configuración de sincronización de contenido no desarrollada. Procesar de esta manera hace que —author se elimine de todos los id de mbox y espere que una actividad publicada esté disponible en el servidor de Target. Antes de probar el contenido ensayado, asegúrese de que la actividad se publique.
 
 ## Creación de contenido {#creating-content}
 

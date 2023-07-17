@@ -1,16 +1,14 @@
 ---
 title: Móvil con sincronización de contenido
-description: Siga esta página para obtener más información sobre la sincronización de contenido. AEM Las páginas creadas en la aplicación se pueden usar como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. AEM Además, dado que las páginas de la se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier envoltorio nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
-uuid: 11f74cc5-99a5-4186-9b60-b19351305432
+description: Siga esta página para obtener más información sobre la sincronización de contenido. Las páginas creadas en Adobe Experience Manager AEM () pueden utilizarse como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. AEM Además, dado que las páginas de la se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier envoltorio nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '2995'
+source-wordcount: '2976'
 ht-degree: 0%
 
 ---
@@ -19,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Utilice la sincronización de contenido para empaquetar contenido de modo que se pueda utilizar en aplicaciones móviles nativas. AEM Las páginas creadas en la aplicación se pueden usar como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. AEM Además, dado que las páginas de la se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier envoltorio nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
+Utilice la sincronización de contenido para empaquetar contenido de modo que se pueda utilizar en aplicaciones móviles nativas. Las páginas creadas en Adobe Experience Manager AEM () pueden utilizarse como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. AEM Además, dado que las páginas de la se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier envoltorio nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
 
 El marco de trabajo de sincronización de contenido crea un archivo de almacenamiento que contiene el contenido web. El contenido puede ser desde páginas simples, imágenes y archivos de PDF, o aplicaciones web completas. La API de sincronización de contenido proporciona acceso al archivo desde aplicaciones móviles o procesos de compilación para que el contenido se pueda recuperar e incluir en la aplicación.
 
@@ -40,8 +38,8 @@ Algunas de las directrices para desarrollar controladores de sincronización de 
 
 * Los controladores deben implementar *com.day.cq.contentsync.handler.ContentUpdateHandler* (directamente o ampliando una clase que sí lo hace)
 * Los controladores pueden ampliar *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* El controlador solo debe informar de true si actualiza la caché de ContentSync. AEM Informar de forma incorrecta sobre true tendrá que crear una actualización cuando en realidad no se haya producido.
-* El controlador solo debe actualizar la caché si el contenido ha cambiado. No escriba en la caché si no es necesario un blanco. Esto da como resultado la creación de una actualización innecesaria.
+* El controlador solo debe informar de true si actualiza la caché de ContentSync. AEM Informar de forma incorrecta sobre true ha creado una actualización cuando realmente no se ha producido.
+* El controlador solo debe actualizar la caché si ha cambiado el contenido. No escriba en la caché si no es necesario un blanco. Esto da como resultado la creación de una actualización innecesaria.
 
 >[!NOTE]
 >
@@ -70,7 +68,7 @@ Después de crear la configuración de sincronización de contenido, esta aparec
 
 Especifique un usuario o grupo que pueda descargar desde Sincronización de contenido. Puede configurar el usuario o grupo predeterminado que puede descargar de todas las cachés de sincronización de contenido, así como anular el valor predeterminado y configurar el acceso para una configuración de sincronización de contenido específica.
 
-AEM Cuando se instala la opción, los miembros del grupo de administradores pueden descargar desde Sincronización de contenido de forma predeterminada.
+AEM Cuando se instala la sincronización de contenido, los miembros del grupo del administrador pueden descargar desde Sincronización de contenido de forma predeterminada.
 
 #### Configuración del acceso predeterminado para descargas de sincronización de contenido {#setting-the-default-access-for-content-sync-downloads}
 
@@ -113,7 +111,7 @@ Si la variable `cq:ContentSyncConfig` el nodo no tiene `updateuser` propiedad, e
 
 El procesamiento puede abarcar desde el procesamiento de JSON simple hasta el procesamiento completo de páginas, incluidos los recursos a los que se hace referencia. En esta sección se enumeran los tipos de configuración disponibles y sus parámetros específicos:
 
-**copia** Simplemente copie archivos y carpetas.
+**copia** - Copiar archivos y carpetas.
 
 * **ruta** : Si la ruta apunta a un solo archivo, solo se copia el archivo. Si apunta a una carpeta (incluidos los nodos de página), se copiarán todos los archivos y carpetas siguientes.
 
@@ -124,7 +122,7 @@ El procesamiento puede abarcar desde el procesamiento de JSON simple hasta el pr
 
 * **selector** : selectores opcionales separados por puntos. Algunos ejemplos comunes son *touch* para procesar versiones móviles de una página o *infinito* para la salida JSON.
 
-**clientlib** Empaquete una biblioteca de cliente JavaScript o CSS.
+**clientlib** - Empaquete una biblioteca de cliente JavaScript o CSS.
 
 * **ruta** - Ruta a la raíz de la biblioteca del cliente.
 * **extensión** - Tipo de biblioteca de cliente. Debe configurarse como lo siguiente *js* o *css* en este momento.
@@ -135,13 +133,13 @@ Recopilar representaciones originales de recursos.
 
 * **ruta** - Ruta a una carpeta de recursos debajo de /content/dam.
 
-**imagen** Recopile una imagen.
+**imagen** - Recopile una imagen.
 
 * **ruta** - Ruta a un recurso de imagen.
 
 El tipo de imagen se utiliza para incluir el logotipo de We Retail en el archivo zip.
 
-**páginas** AEM Procesar páginas de la y recopilar recursos referenciados.
+**páginas** AEM : procese páginas de y recopile recursos a los que se hace referencia.
 
 * **ruta** - Ruta a una página.
 * **extensión** : extensión que debe utilizarse en la solicitud. Para páginas esto es casi siempre *html*, pero otras todavía son posibles.
@@ -152,11 +150,11 @@ El tipo de imagen se utiliza para incluir el logotipo de We Retail en el archivo
 
 * **includeImages** : propiedad booleana opcional que determina si se deben incluir imágenes. El valor predeterminado es *true*.
 
-   De forma predeterminada, solo se tienen en cuenta para la inclusión los componentes de imagen con un tipo de recurso de foundation/components/image. Puede agregar más tipos de recursos configurando la variable **Controlador de actualización de páginas de CQ WCM por día** en la consola web.
+  De forma predeterminada, solo se tienen en cuenta para la inclusión los componentes de imagen con un tipo de recurso de foundation/components/image. Puede agregar más tipos de recursos configurando la variable **Controlador de actualización de páginas de CQ WCM por día** en la consola web.
 
-**reescribir** El nodo de reescritura define cómo se reescriben los vínculos en la página exportada. Los vínculos reescritos pueden apuntar a los archivos incluidos en el archivo zip o a los recursos del servidor.
+**reescribir** : el nodo de reescritura define cómo se reescriben los vínculos en la página exportada. Los vínculos reescritos pueden apuntar a los archivos incluidos en el archivo zip o a los recursos del servidor.
 
-El `rewrite` El nodo debe encontrarse debajo de `page` nodo.
+El `rewrite` El nodo debe estar situado debajo de `page` nodo.
 
 El `rewrite` El nodo puede tener una o varias de las siguientes propiedades:
 
@@ -171,7 +169,7 @@ Cada propiedad puede tener uno de los siguientes valores:
 
 * `REWRITE_EXTERNAL`AEM : reescribe la ruta señalando al recurso en el servidor, utilizando la función de búsqueda de recursos de la [Servicio externalizador](/help/sites-developing/externalizer.md).
 
-AEM El servicio llamó a **PathRewriterTransformerFactory** permite configurar los atributos html específicos que se van a reescribir. El servicio se puede configurar en la consola web y tiene una configuración para cada propiedad del `rewrite` nodo: `clientlibs`, `images` y `links`.
+AEM El servicio llamó a **PathRewriterTransformerFactory** permite configurar los atributos html específicos que se van a reescribir. El servicio se puede configurar en la consola web y tiene una configuración para cada propiedad del `rewrite` nodo: `clientlibs`, `images`, y `links`.
 
 AEM Esta función se añadió en la versión 5.5 de.
 
@@ -213,19 +211,19 @@ La lista siguiente muestra un ejemplo de configuración para la sincronización 
   + ...
 ```
 
-**etc.designs.default y etc.designs.mobile** Las dos primeras entradas de la configuración deberían ser bastante obvias. Como vamos a incluir varias páginas móviles, necesitamos los archivos de diseño relacionados debajo de /etc/designs. Y como no se requiere ningún procesamiento adicional, la copia es suficiente.
+**etc.designs.default y etc.designs.mobile** - Las dos primeras entradas de la configuración son obvias. Como va a incluir varias páginas móviles, necesita los archivos de diseño relacionados debajo de /etc/designs. Y como no se requiere ningún procesamiento adicional, la copia es suficiente.
 
-**events.plist** Esta entrada es un poco especial. Como se mencionó en la introducción, la aplicación debe proporcionar una vista de mapa con marcadores de las ubicaciones de los eventos. Vamos a proporcionar la información de ubicación necesaria como un archivo independiente en formato PLIST. Para que esto funcione, el componente de lista de eventos que se utiliza en la página de índice tiene un script llamado plist.jsp. Este script se ejecuta cuando se solicita el recurso del componente con la extensión .plist. Como de costumbre, la ruta de los componentes se da en la propiedad de ruta y el tipo se establece en contenido, porque queremos aprovechar [Procesamiento de solicitudes de Sling](/help/sites-developing/the-basics.md#sling-request-processing).
+**events.plist** - Esta entrada es un poco especial. Como se mencionó en la introducción, la aplicación debe proporcionar una vista de mapa con marcadores de las ubicaciones de los eventos. La información de ubicación necesaria se proporcionará como un archivo independiente en formato PLIST. Para que esto funcione, el componente de lista de eventos que se utiliza en la página de índice tiene un script llamado plist.jsp. Este script se ejecuta cuando se solicita el recurso del componente con el `.plist` extensión. Como de costumbre, la ruta de los componentes se da en la propiedad path y el tipo se establece en content, porque desea utilizar [Procesamiento de solicitudes de Sling](/help/sites-developing/the-basics.md#sling-request-processing).
 
-**events.touch.html** A continuación, aparecen las páginas que se mostrarán en la aplicación. La propiedad path se establece en la página raíz de los eventos. También se incluirán todas las páginas de evento debajo de esa página, ya que la propiedad deep tiene el valor predeterminado true. Utilizamos páginas como tipo de configuración, de modo que se incluya cualquier imagen u otro archivo al que se pueda hacer referencia desde un componente de imagen o descarga de una página. Además, configurar el selector táctil nos da una versión móvil de las páginas. La configuración del paquete de funciones contiene más entradas de este tipo, pero se omiten por simplicidad.
+**events.touch.html** : A continuación, aparecen las páginas reales que se mostrarán en la aplicación. La propiedad path se establece en la página raíz de los eventos. También se incluirán todas las páginas de evento debajo de esa página, ya que la propiedad deep tiene el valor predeterminado true. Las páginas se utilizan como tipo de configuración para que se incluya cualquier imagen u otro archivo al que se pueda hacer referencia desde un componente de imagen o descarga de una página. Además, configurar el selector táctil nos da una versión móvil de las páginas. La configuración del paquete de funciones contiene más entradas de este tipo, pero se omiten por simplicidad.
 
-**logo** El tipo de configuración de logotipo no se ha mencionado hasta ahora y no es ninguno de los tipos integrados. Sin embargo, el marco de trabajo de sincronización de contenido es extensible hasta cierto punto y este es un ejemplo de ello, que se tratará en la siguiente sección.
+**logo** - El tipo de configuración del logotipo no se ha mencionado hasta ahora y no es ninguno de los tipos integrados. Sin embargo, el marco de trabajo de sincronización de contenido es extensible hasta cierto punto y este es un ejemplo de ello, que se tratará en la siguiente sección.
 
-**manifestar** A menudo es deseable incluir algún tipo de metadatos en el archivo zip, como la página de inicio del contenido, por ejemplo. Sin embargo, codificar dicha información impide cambiarla fácilmente más adelante. El marco de trabajo de sincronización de contenido es compatible con este caso de uso al buscar un nodo de manifiesto en la configuración, que se identifica simplemente por el nombre y no requiere un tipo de configuración. Todas las propiedades definidas en ese nodo en particular se agregan a un archivo, que también se denomina manifest y reside en la raíz del archivo zip.
+**manifestar** - A menudo es deseable incluir algún tipo de metadatos en el archivo zip, como la página de inicio del contenido, por ejemplo. Sin embargo, codificar dicha información impide cambiarla fácilmente más adelante. El marco de trabajo de sincronización de contenido admite este caso de uso al buscar un nodo de manifiesto en la configuración, que se identifica con el nombre y no requiere un tipo de configuración. Todas las propiedades definidas en ese nodo en particular se agregan a un archivo, que también se denomina manifest y reside en la raíz del archivo zip.
 
-En el ejemplo, se supone que la página de lista de eventos es la página inicial. Esta información se proporciona en la **indexPage** propiedad y, por lo tanto, se pueden cambiar fácilmente en cualquier momento. Una segunda propiedad define la ruta del *events.plist* archivo. Como veremos más adelante, la aplicación cliente ahora puede leer el manifiesto y actuar según él.
+En el ejemplo, se supone que la página con la lista de eventos es la página inicial. Esta información se proporciona en la **indexPage** propiedad y, por lo tanto, se pueden cambiar fácilmente en cualquier momento. Una segunda propiedad define la ruta del *events.plist* archivo. Como verá más adelante, la aplicación cliente ahora puede leer el manifiesto y actuar según él.
 
-Tan pronto como se establezca la configuración, el contenido se puede descargar con un explorador o con cualquier otro cliente HTTP, o si está desarrollando para iOS, puede utilizar la biblioteca de cliente de WAppKitSync dedicada. La ubicación de descarga está formada por la ruta de la configuración y la variable *.zip* AEM , p. ej., al trabajar con una instancia local de la instancia de la: *http://localhost:4502/content/weretail_go.zip*
+Cuando se establece la configuración, el contenido se puede descargar con un explorador o con cualquier otro cliente HTTP, o si está desarrollando para iOS, puede utilizar la biblioteca de cliente de WAppKitSync dedicada. La ubicación de descarga está formada por la ruta de la configuración y la variable *.zip* AEM extensión, por ejemplo, al trabajar con una instancia de la instancia local de la: *http://localhost:4502/content/weretail_go.zip*
 
 ### La consola de sincronización de contenido {#the-content-sync-console}
 
@@ -248,11 +246,11 @@ Tiene el siguiente aspecto:
 
 ### Ampliación del marco de sincronización de contenido {#extending-the-content-sync-framework}
 
-Aunque el número de opciones de configuración ya es bastante amplio, es posible que no cubra todos los requisitos de su caso de uso específico. En esta sección se describen los puntos de extensión del marco de trabajo de sincronización de contenido y cómo crear tipos de configuración personalizados.
+Aunque la cantidad de opciones de configuración ya es extensa, es posible que no cubra todos los requisitos de su caso de uso específico. En esta sección se describen los puntos de extensión del marco de trabajo de sincronización de contenido y cómo crear tipos de configuración personalizados.
 
 Para cada tipo de configuración, hay un *Controlador de actualización de contenido*, que es una fábrica de componentes OSGi registrada para ese tipo específico. Estos controladores recopilan contenido, lo procesan y lo agregan a una caché que mantiene el marco de trabajo de sincronización de contenido. Implemente la siguiente interfaz o clase base abstracta:
 
-* `com.day.cq.contentsync.handler.ContentUpdateHandler` : Interfaz que todos los controladores de actualizaciones deben implementar
+* `com.day.cq.contentsync.handler.ContentUpdateHandler` : interfaz que todos los controladores de actualización deben implementar
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` : Una clase abstracta que simplifica la representación de recursos mediante Sling
 
 Registre su clase como fábrica de componentes OSGi e impleméntelo en el contenedor OSGi en un paquete. Esto se puede hacer con la variable [Complemento Maven SCR](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) mediante etiquetas JavaDoc o anotaciones. El siguiente ejemplo muestra la versión de JavaDoc:
@@ -283,7 +281,7 @@ Observe que la variable *fábrica* La definición de contiene la interfaz común
 
 ### Implementar un controlador de actualización personalizado {#implementing-a-custom-update-handler}
 
-Cada página de We.Retail Mobile contiene un logotipo en la esquina superior izquierda que queremos incluir en el archivo zip, por supuesto. AEM Sin embargo, para la optimización de la caché, no hace referencia a la ubicación real del archivo de imagen en el repositorio, lo que nos impide simplemente utilizar la variable **copia** tipo de configuración. Lo que tenemos que hacer en su lugar es proporcionar el nuestro **logo** AEM tipo de configuración que hace que la imagen esté disponible en la ubicación solicitada por el usuario de. La siguiente lista de códigos muestra la implementación completa del controlador de actualización de logotipos:
+Cada página de We.Retail Mobile contiene un logotipo en la esquina superior izquierda que debe incluirse en el archivo zip. AEM Sin embargo, para la optimización de la caché, no hace referencia a la ubicación real del archivo de imagen en el repositorio, lo que nos impide simplemente utilizar la variable **copia** tipo de configuración. Lo que debe hacer en su lugar es proporcionar el nuestro **logo** AEM tipo de configuración que hace que la imagen esté disponible en la ubicación solicitada por el usuario de. La siguiente lista de códigos muestra la implementación completa del controlador de actualización de logotipos:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -349,7 +347,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-El `LogoUpdateHandler` implementa la clase `ContentUpdateHandler` de la interfaz `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` , que toma una serie de argumentos:
+El `LogoUpdateHandler` implementa la clase `ContentUpdateHandler` de la interfaz `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` método, que toma varios argumentos:
 
 * A `ConfigEntry` instancia que proporciona acceso a la entrada de configuración, para la que se llama a este controlador, y sus propiedades.
 * A `lastUpdated` marca de tiempo que indica la última vez que la sincronización de contenido actualizó su caché. El controlador no debe actualizar el contenido que no se haya modificado después de esa marca de tiempo.
@@ -357,17 +355,17 @@ El `LogoUpdateHandler` implementa la clase `ContentUpdateHandler` de la interfaz
 * Una sesión administrativa que debe utilizarse para todas las operaciones de repositorio relacionadas con la caché.
 * Una sesión de usuario que se puede utilizar para actualizar contenido en el contexto de un usuario determinado y, por lo tanto, para proporcionar un tipo de contenido personalizado.
 
-Para implementar el controlador personalizado, cree primero una instancia de la clase Image basada en el recurso proporcionado en la entrada de configuración. Este es básicamente el mismo procedimiento que el componente de logotipo real en nuestras páginas. Se asegura de que la ruta de destino de la imagen sea la misma que la referenciada desde una página.
+Para implementar el controlador personalizado, cree primero una instancia de la clase Image basada en el recurso proporcionado en la entrada de configuración. Este es el mismo procedimiento que el componente de logotipo real en nuestras páginas. Se asegura de que la ruta de destino de la imagen sea la misma que la referenciada desde una página.
 
 A continuación, compruebe si el recurso se ha modificado desde la última actualización. Las implementaciones personalizadas deben evitar actualizaciones innecesarias de la caché y devolver &quot;false&quot; si no cambia nada. Si se ha modificado el recurso, copie la imagen en la ubicación de destino esperada en relación con la raíz de la caché. Finalmente, `true` se devuelve para indicar al marco de trabajo que la caché se ha actualizado.
 
 ## Uso del contenido en el cliente {#using-the-content-on-the-client}
 
-Para utilizar contenido en una aplicación móvil proporcionada por la sincronización de contenido, debe solicitar contenido a través de una conexión HTTP o HTTPS. Como resultado, el contenido recuperado (empaquetado en un archivo ZIP) se puede extraer y almacenar localmente en el dispositivo móvil. Tenga en cuenta que el contenido no solo hace referencia a datos, sino también a lógica, es decir, aplicaciones web completas; esto permite al usuario móvil ejecutar aplicaciones web recuperadas y los datos correspondientes, incluso sin conectividad de red.
+Para utilizar contenido en una aplicación móvil proporcionada por la sincronización de contenido, debe solicitar contenido mediante una conexión HTTP o HTTPS. Como resultado, el contenido recuperado (empaquetado en un archivo ZIP) se puede extraer y almacenar localmente en el dispositivo móvil. El contenido no solo se refiere a los datos, sino también a la lógica, es decir, a las aplicaciones web completas; por lo tanto, permite al usuario móvil ejecutar aplicaciones web recuperadas y los datos correspondientes, incluso sin conectividad de red.
 
-La sincronización de contenido ofrece el contenido de forma inteligente: solo se entregan los cambios de datos desde la última sincronización de datos correcta, lo que reduce el tiempo necesario para la transferencia de datos. En la primera ejecución de una aplicación, se solicitan cambios de datos desde el 1 de enero de 1970, mientras que posteriormente solo se solicitan los datos que han cambiado desde la última sincronización correcta. AEM utiliza un marco de comunicación de cliente para iOS a fin de simplificar la comunicación y transferencia de datos, de modo que se requiera una cantidad mínima de código nativo para habilitar una aplicación web basada en iOS.
+La sincronización de contenido ofrece el contenido de forma inteligente: solo cambian los datos desde que se entregó una última sincronización de datos correcta, lo que reduce el tiempo necesario para la transferencia de datos. En la primera ejecución de una aplicación, se solicitan cambios de datos desde el 1 de enero de 1970, mientras que más adelante sólo se solicitan los datos que han cambiado desde la última sincronización correcta. AEM utiliza un marco de comunicación de cliente para iOS para simplificar la comunicación y transferencia de datos, de modo que se requiera una cantidad mínima de código nativo para habilitar una aplicación web basada en iOS.
 
-Todos los datos transferidos se pueden extraer en la misma estructura de directorio, no se requieren pasos adicionales (por ejemplo, comprobaciones de dependencia) al extraer datos. En el caso de iOS, todos los datos se almacenan en una subcarpeta dentro de la carpeta Documents de la aplicación de iOS.
+Todos los datos transferidos se pueden extraer en la misma estructura de directorio, no se requieren pasos adicionales (por ejemplo, comprobaciones de dependencia) al extraer datos. Si hay iOS, todos los datos se almacenan en una subcarpeta de la carpeta Documents de la aplicación de iOS.
 
 Ruta de ejecución típica de una aplicación de AEM Mobile basada en iOS:
 
@@ -377,7 +375,7 @@ Ruta de ejecución típica de una aplicación de AEM Mobile basada en iOS:
 * Los datos se devuelven al dispositivo cliente, donde se extraen en la carpeta de documentos.
 * Se inicia/actualiza el componente UIWebView.
 
-Si no se ha podido establecer una conexión, se mostrarán los datos descargados anteriormente.
+Si no se ha podido establecer una conexión anteriormente, se muestran los datos descargados.
 
 ### Recursos adicionales {#additional-resources}
 

@@ -1,17 +1,13 @@
 ---
 title: Procesamiento y entrega
-seo-title: Rendering and Delivery
 description: Procesamiento y entrega
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 6%
 
 ---
@@ -20,13 +16,13 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-AEM El contenido se puede representar fácilmente mediante [Servlets predeterminados de Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
+El contenido de Adobe Experience Manager AEM () se puede representar fácilmente mediante [Servlets predeterminados de Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
 
 Estos procesamientos listos para usar suelen recorrer el repositorio y devolver el contenido tal cual.
 
-AEM A través de Sling, también admite el desarrollo y la implementación de procesadores sling personalizados para tener un control total del esquema y el contenido procesados.
+AEM A través de Sling, también admite el desarrollo y la implementación de procesadores sling personalizados para tomar el control total del esquema y el contenido procesados.
 
 Los procesadores predeterminados de Content Services llenan el vacío entre los valores predeterminados de Sling y el desarrollo personalizado, lo que permite la personalización y el control de muchos aspectos del contenido procesado sin necesidad de desarrollo.
 
@@ -120,14 +116,14 @@ En la tabla siguiente se muestran las propiedades de las configuraciones de expo
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>Cadena[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>no excluir nada</td>
    <td>nombres secundarios</td>
    <td>incluir solo los elementos secundarios especificados de la exportación JSON, excluir otros</td>
   </tr>
   <tr>
    <td>nameProperties</td>
-   <td>Cadena[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>cambiar nombre nada</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>cambiar el nombre de propiedades mediante reemplazos</td>
@@ -159,7 +155,7 @@ En la tabla siguiente se muestran las propiedades:
    <td>Cadena[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Para los siguientes tipos de recursos de sling, no devuelva la exportación json predeterminada de CaaS.<br /> Devolver una exportación de json de cliente procesando el recurso como;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Para los siguientes tipos de recursos de sling, no devuelva la exportación JSON de CaaS predeterminada.<br /> Devolver una exportación de json de cliente procesando el recurso como;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -173,7 +169,7 @@ Los servicios de contenido incluyen dos configuraciones de exportación:
 
 #### Configuración de exportación predeterminada {#default-export-configuration}
 
-La configuración de exportación predeterminada de los servicios de contenido se aplicará si se especifica una configuración en el URI solicitado.
+La configuración de exportación predeterminada de Content Services se aplica si se especifica una configuración en el URI solicitado.
 
 &lt;resource>.caas[.&lt;depth-int>].json
 

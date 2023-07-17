@@ -1,17 +1,13 @@
 ---
 title: Operaciones de procesamiento masivo
-seo-title: Bulk Processing Operations
-description: nulo
-seo-description: null
+description: Nulo
 page-status-flag: never-activated
-uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
-discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 2%
+source-wordcount: '503'
+ht-degree: 1%
 
 ---
 
@@ -20,15 +16,15 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-AEM Con la versión más reciente de la aplicación, el botón Seleccionar todo se ha ampliado a todas las vistas: Lista, Columna y Vista de tarjeta. El botón Seleccionar todo ahora selecciona todo el contenido de una carpeta o colección determinada, y no solo los recursos y las páginas cargados y visibles en el explorador del cliente.
+Con la versión más reciente de Adobe Experience Manager AEM (), el botón Seleccionar todo se ha ampliado a todas las vistas: Lista, Columna y Vista de tarjeta. El botón Seleccionar todo ahora selecciona todo el contenido de una carpeta o colección determinada, y no solo los recursos y las páginas cargados y visibles en el explorador del cliente.
 
-Se han habilitado acciones clave para la operación masiva: **Mover**, **Eliminar** y **Copiar**. Un nuevo cuadro de diálogo permitirá a los clientes saber cuáles son las acciones para las que no está disponible el procesamiento masivo.
+Se han habilitado acciones clave para la operación masiva: **Mover**, **Eliminar**, y **Copiar**. Un nuevo cuadro de diálogo permite a los clientes saber cuáles son las acciones para las que no está disponible el procesamiento masivo.
 
 ## Cómo Usar {#how-to-use}
 
 Un nuevo botón llamado **Seleccionar todo** se ha agregado a las vistas Tarjeta, Lista o Columna. Este botón se puede utilizar en cualquiera de las vistas para seleccionar todos los elementos del conjunto de datos.
 
-AEM En las versiones anteriores de la aplicación, la selección estaba limitada a lo que se cargaba en el explorador del cliente. Estos nuevos cambios se han introducido para evitar confusiones con respecto al número de elementos en los que se realiza una operación masiva.
+AEM En las versiones anteriores de la aplicación, la selección estaba limitada a lo que se cargaba en el explorador del cliente. Este nuevo cambio se introdujo para evitar confusiones con respecto al número de elementos en los que se realiza una operación masiva.
 
 Por ahora, se han añadido tres operaciones al procesamiento masivo:
 
@@ -37,7 +33,7 @@ Por ahora, se han añadido tres operaciones al procesamiento masivo:
 * Eliminar
 
 En el futuro se agregará compatibilidad con más operaciones.
-Para utilizar esta función, debe desplazarse a la carpeta o colección en la que desea realizar una operación masiva en páginas o recursos.
+Para utilizar esta función, vaya a la carpeta o colección donde desee realizar una operación masiva en páginas o recursos.
 
 A continuación, elija una de las vistas, como se muestra a continuación:
 
@@ -75,10 +71,10 @@ En la vista de lista, utilice la variable **Seleccionar todo** o utilice la casi
 
 Después de la selección, se puede realizar una de las tres acciones activadas de forma masiva: **Mover**, **Copiar** o **Eliminar**.
 
-Aquí, **Mover** Esta operación se realiza en los recursos seleccionados anteriormente. En cualquiera de las vistas, esto hará que todos los recursos se muevan a la ubicación elegida y no solo a los que se cargan en la pantalla.
+Aquí, **Mover** Esta operación se realiza en los recursos seleccionados anteriormente. En cualquiera de las vistas, esto hace que todos los recursos se muevan a la ubicación elegida y no solo a los que se cargan en la pantalla.
 
 ![Mueva los recursos que muestran una carpeta seleccionada en la Vista de columna.](assets/noua.png)
 
-Para otras operaciones que no se activan por lotes, como **Descargar,** aparecerá una advertencia que indica que solo se incluirán en la operación los elementos cargados en el explorador.
+Para otras operaciones que no se activan por lotes, como **Descargar,** aparece una advertencia que indica que solo se incluyen en la operación los elementos cargados en el explorador.
 
 ![Vista de recursos que muestra los recursos de imagen seleccionados y el cuadro de diálogo emergente &quot;Acción masiva no admitida&quot;.](assets/zece.png)

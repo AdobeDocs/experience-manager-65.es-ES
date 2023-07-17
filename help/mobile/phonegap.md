@@ -1,13 +1,11 @@
 ---
-title: Creación para Adobe PhoneGap AEM Enterprise en
+title: Creación para Adobe PhoneGap Enterprise en Adobe Experience Manager
 description: PhoneGap
-uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 4%
@@ -18,11 +16,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager AEM AEM () Mobile es solo uno de los pilares que conforman la plataforma completa de la plataforma de la.
 
-El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. Las siguientes funciones proporcionan un punto de partida para crear una nueva aplicación de AEM Mobile:
+El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. Las siguientes funciones proporcionan un punto de partida para crear una aplicación de AEM Mobile:
 
 * **Administrador**
 * **Desarrollador**
@@ -30,7 +28,7 @@ El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una coh
 
 ## Creación de aplicaciones de PhoneGap {#authoring-phonegap-applications}
 
-Un ***AEM Author* (o *Especialista en marketing*)**puede utilizar las plantillas y los componentes predeterminados para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
+Un ***AEM Author* (o *Especialista en marketing*)**puede utilizar las plantillas y los componentes predeterminados para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todos los tipos desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
 
 Consulte los siguientes recursos para empezar:
 
@@ -39,7 +37,7 @@ Consulte los siguientes recursos para empezar:
 * [Administrar mosaico de aplicación](/help/mobile/phonegap-app-details-tile.md)
 * [Edición de metadatos de aplicación](/help/mobile/phonegap-editmetadata.md)
 * [Definiciones de aplicaciones](/help/mobile/phonegap-app-definitions.md)
-* [Creación de una nueva aplicación de AEM Mobile mediante el asistente de creación](/help/mobile/phonegap-create-new-app.md)
+* [Creación de una aplicación de AEM Mobile mediante el asistente de creación](/help/mobile/phonegap-create-new-app.md)
 * [Importación de una aplicación híbrida existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 Para obtener más información **Servicios de contenido**, consulte [Información general de servicios de contenido](/help/mobile/develop-content-as-a-service.md) para empezar.

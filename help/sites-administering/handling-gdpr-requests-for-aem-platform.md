@@ -1,20 +1,16 @@
 ---
-title: AEM Gestión de solicitudes de RGPD para la Fundación de la
-seo-title: Handling GDPR Requests for the AEM Foundation
-description: AEM Gestión de solicitudes de RGPD para la Fundación de la
-seo-description: null
-uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
+title: Gestión de solicitudes de RGPD para Adobe Experience Manager Foundation
+description: Gestión de solicitudes de RGPD para Adobe Experience Manager Foundation
 contentOwner: sarchiz
-discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 55%
+source-wordcount: '436'
+ht-degree: 43%
 
 ---
 
-# AEM Gestión de solicitudes de RGPD para la Fundación de la{#handling-gdpr-requests-for-the-aem-foundation}
+# Tratamiento de solicitudes de RGPD para Adobe Experience Manager AEM (Base de datos de la){#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -42,7 +38,7 @@ AEM En el nivel de base de datos de usuario, los datos personales almacenados so
 
 ### API HTTP {#http-api}
 
-Como ya se ha mencionado, Adobe proporciona API para acceder a los datos de usuario, con el fin de facilitar la automatización. Existen varios tipos de API que puede utilizar:
+Como ya se ha mencionado, Adobe proporciona API para acceder a los datos de usuario y facilitar la automatización. Existen varios tipos de API que puede utilizar:
 
 **API UserProperties**
 
@@ -76,7 +72,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Desactivación de un usuario {#disable-user}
 
 1. Abra la consola Administración de usuarios y busque el usuario en cuestión, tal como se ha descrito anteriormente.
-1. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil cambiará a gris para indicar que está seleccionado.
+1. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil se vuelve gris para indicar que está seleccionado.
 
 1. Pulse el botón Desactivar en el menú superior para desactivar el usuario:
 
@@ -86,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   La interfaz de usuario indicará que el usuario se ha desactivado atenuando y añadiendo un candado a la tarjeta del perfil:
+   La interfaz de usuario indica que el usuario está desactivado atenuando y añadiendo un candado a la tarjeta del perfil:
 
    ![disableduser](assets/disableduser.png)
 
@@ -109,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP {#http-api-1}
 
-Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL captura]** `userId` y eliminación de sus perfiles disponibles en la ubicación predeterminada.
+Los siguientes procedimientos utilizan el `curl` herramienta de línea de comandos para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL escrutinio]** `userId` y eliminar perfiles de `cavery` que están disponibles en la ubicación predeterminada.
 
 * *Descubrimiento del inicio del usuario*
 

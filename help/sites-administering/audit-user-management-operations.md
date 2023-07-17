@@ -1,31 +1,27 @@
 ---
-title: AEM Cómo auditar las operaciones de administración de usuarios en el
-seo-title: How to Audit User Management Operations in AEM
-description: AEM Obtenga información sobre cómo auditar las operaciones de administración de usuarios en la.
-seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+title: Cómo auditar las operaciones de administración de usuarios en Adobe Experience Manager
+description: Obtenga información sobre cómo auditar las operaciones de administración de usuarios en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
-# AEM Cómo auditar las operaciones de administración de usuarios en el{#how-to-audit-user-management-operations-in-aem}
+# Cómo auditar las operaciones de administración de usuarios en Adobe Experience Manager AEM () {#how-to-audit-user-management-operations-in-aem}
 
 ## Introducción {#introduction}
 
-AEM ha introducido la capacidad de registrar cambios de permisos para que se puedan auditar más adelante.
+AEM ha introducido la capacidad de registrar cambios de permisos para que pueda auditarlos más adelante.
 
-La mejora permite auditar las acciones CRUD (Crear, Leer, Actualizar, Eliminar) en permisos y asignaciones de grupos de usuarios. Más específicamente, registrará:
+La mejora permite auditar las acciones CRUD (Crear, Leer, Actualizar, Eliminar) en permisos y asignaciones de grupos de usuarios. Más específicamente, registra:
 
 * Se está creando un nuevo usuario
 * Se está agregando un usuario a un grupo
@@ -35,10 +31,10 @@ De forma predeterminada, las entradas se escriben en `error.log` archivo. Para f
 
 ## Redirigir la salida a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirigir el resultado del registro a un archivo de registro independiente, deberá crear un nuevo **Registrador de registro de Apache Sling** configuración. Vamos a usar `useraudit.log` como el nombre del archivo independiente en el ejemplo siguiente.
+Para redirigir el resultado del registro a un archivo de registro independiente, cree un **Registrador de registro de Apache Sling** configuración. Vamos a usar `useraudit.log` como el nombre del archivo independiente en el ejemplo siguiente.
 
 1. Vaya a la consola web navegando hasta *https://serveraddress:serverport/system/console/configMgr*
-1. Buscar por **Configuración del registrador de Apache Sling**. A continuación, pulse el signo + en el lado derecho de la entrada para crear una nueva configuración de fábrica.
+1. Buscar por **Configuración del registrador de Apache Sling**. A continuación, pulse el signo + en el lado derecho de la entrada para crear una configuración de fábrica.
 1. Cree la siguiente configuración:
 
    * **Nivel de registro:** Información
@@ -46,9 +42,9 @@ Para redirigir el resultado del registro a un archivo de registro independiente,
    * **Patrón de mensaje:** nivel predeterminado
    * **Registrador:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para introducir ambos registradores en la variable **Logger** , debe introducir el nombre del primer campo y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
+   Para introducir ambos registradores en **Logger** , debe introducir el nombre del primer campo y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
 
-## Salida de ejemplo {#example-output}
+## Ejemplo de salida {#example-output}
 
 Si se configura correctamente, el resultado debería ser similar al siguiente:
 
