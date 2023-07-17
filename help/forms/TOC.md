@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '3870'
+source-wordcount: '3881'
 ht-degree: 97%
 
 ---
@@ -127,14 +127,17 @@ ht-degree: 97%
    + [Introducción a la integración de datos de AEM Forms](using/data-integration.md)
    + [Configurar fuentes de datos](using/configure-data-sources.md)
    + [Configurar OData de Microsoft Dynamics](using/ms-dynamics-odata-configuration.md)
-   + [Integración de Salesforce con el flujo de credenciales de cliente de OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Crear un modelo de datos de formulario](using/create-form-data-models.md)
    + [Trabajar con el modelo de datos de formulario](using/work-with-form-data-model.md)
    + [Usar el modelo de datos de formulario](using/using-form-data-model.md)
++ Forms adaptable: componentes principales {#adaptive-forms-core-components}
+   + [Habilitar los componentes principales para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md)
+   + [Crear un formulario adaptable basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
+   + [Crear temáticas para componentes principales basados en Forms adaptable](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Formularios adaptables: creación básica {#adaptive-forms-basic-authoring}
    + [Prácticas recomendadas para usar formularios adaptables ](using/adaptive-forms-best-practices.md)
    + [Crear un formulario adaptable](using/creating-adaptive-form.md)
-   + [Crear o agregar un formulario adaptable a la página de AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+   + [Crear o agregar un formulario adaptable mediante la página de AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Fragmentos de formularios adaptables](using/adaptive-form-fragments.md)
    + [Configurar la acción de envío](using/configuring-submit-actions.md)
    + [Usar CAPTCHA en formularios adaptables](using/captcha-adaptive-forms.md)
@@ -692,7 +695,6 @@ ht-degree: 97%
    + [No se puede restaurar el repositorio CRX](/help/forms/using/restore-crx-repository.md)
    + [AEM Errores de servicio no disponible después de instalar el paquete de servicio 6.5.15.0 de](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problema de instalación del Service Pack de AEM Forms JEE 6.5.15.0 en el entorno JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [Error en la implementación EAR en el servidor JEE WebLogic](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Documentación heredada {#legacy-documentation}
    + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
    + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)

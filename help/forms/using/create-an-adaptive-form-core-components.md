@@ -9,7 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 54%
@@ -30,13 +30,13 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 * [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es): son componentes estandarizados de captura de datos. Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital. Un desarrollador puede personalizar y aplicar estilo fácilmente a estos componentes. Adobe recomienda aprovechar estos componentes modernos y ampliables para desarrollar formularios adaptables.
 
-* [Componentes de base de formularios adaptables](creating-adaptive-form.md): estos son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios, Adobe recomienda utilizar  [Componentes principales de Forms adaptable](creating-adaptive-form-core-components.md) para crear un Forms adaptable.
+* [Componentes de base de formularios adaptables](creating-adaptive-form.md): estos son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios, Adobe recomienda utilizar  [Componentes principales de Forms adaptable](/help/forms/using/create-adaptive-form.md) para crear un Forms adaptable.
 
 ## Requisitos previos
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
-* **Habilitar los componentes principales de Forms adaptables para su entorno** AEM : Se requiere la versión 41 o posterior del proyecto de tipo de archivo para lo siguiente: [Habilitar los componentes principales para su entorno](/help/forms/using/installing-core-components.md). Al habilitar los componentes principales para su entorno, la variable **Forms adaptable (componente principal)** La plantilla y la temática Lienzo se añaden al entorno.
+* **Habilitar los componentes principales de Forms adaptables para su entorno** AEM : Se requiere la versión 41 o posterior del proyecto de tipo de archivo para lo siguiente: [Habilitar los componentes principales para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la variable **Forms adaptable (componente principal)** La plantilla y la temática Lienzo se añaden al entorno.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. Por ejemplo, enviar los datos recopilados a una fuente de datos. La plantilla denominada `blank` es compatible con OOTB:
 
@@ -46,7 +46,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
   >[!NOTE]
   >
-  > Si no tiene la plantilla de **Formularios adaptables (componente principal)** en su entorno, [Habilite los componentes principales de formularios adaptables para su entorno](/help/forms/using/installing-core-components.md). Al habilitar los componentes principales para su entorno, la plantilla de **Formularios adaptables (componente principal)** se agrega al entorno.
+  > Si no tiene la plantilla de **Formularios adaptables (componente principal)** en su entorno, [Habilite los componentes principales de formularios adaptables para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la plantilla de **Formularios adaptables (componente principal)** se agrega al entorno.
 
 * **Una temática de formulario adaptable**: Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes.  El `Canvas` La temática se añade de forma predeterminada al habilitar los componentes principales para su entorno. También puede [descargar y personalizar las temáticas de referencia](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
@@ -91,7 +91,7 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 
    ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Seleccione y configure un **[!UICONTROL Acción de envío]**, según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/configuring-submit-actions.md)
+1. Seleccione y configure un **[!UICONTROL Acción de envío]**, según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -117,8 +117,8 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
 
 Puede utilizar el modelo de datos del formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. En función del requisito, conecte el formulario a un esquema JSON o a un modelo de datos de formulario:
 
-* [Crear un esquema JSON y cargarlo en su entorno](/help/forms/adaptive-form-json-schema-form-model.md)
-* [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
+* [Crear un esquema JSON y cargarlo en su entorno](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md)
 
 ### Configurar un esquema JSON o un modelo de datos de formulario para el formulario
 
@@ -141,7 +141,7 @@ Para configurar un esquema JSON o un modelo de datos de formulario para su formu
 
 Puede utilizar el servicio de cumplimentación previa para rellenar automáticamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos ya han sido rellenados. Puede hacer lo siguiente:
 
-* [Crear un servicio de rellenado previo personalizado](/help/forms/prepopulate-adaptive-form-fields.md)
+* [Crear un servicio de rellenado previo personalizado](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Servicio de rellenado previo de modelo de datos de formulario](#fdm-prefill-service)
 
 ### Utilice el servicio de prerrellenado del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable {#fdm-prefill-service}
@@ -171,6 +171,6 @@ Puede utilizar el servicio de prerrellenado del modelo de datos de formulario pa
 
 ## Consulte también
 
-* [Crear un formulario adaptable basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
+* [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

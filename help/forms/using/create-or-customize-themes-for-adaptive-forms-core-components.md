@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '2072'
 ht-degree: 12%
 
 ---
@@ -68,7 +68,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 ### Requisitos previos para personalizar una temática {#prerequisites}
 
-* [Habilitar los componentes principales de formularios adaptables para su entorno.](/help/forms/using/installing-core-components.md)
+* [Habilitar los componentes principales de formularios adaptables para su entorno.](/help/forms/using/enable-adaptive-forms-core-components.md)
 
 * Instale la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
@@ -145,20 +145,17 @@ El `variable.scss` contiene las variables globales de la temática. Al actualiza
 
 1. Abra el archivo `<your-theme-sources>/src/site/_variables.scss` para editarlo.
 1. Cambie el valor de cualquier propiedad. Por ejemplo, el color de error predeterminado es rojo. Para cambiar el color del error de rojo a azul, cambie el código hexadecimal de color del `$error`variable. Por ejemplo, `$error: #196ee5`.
+
+   ![Ejemplo: Color de error establecido en azul](/help/forms/using/assets/theme-level-changes.png)
+
 1. Guarde y cierre el archivo.
 
-<!--
-
-![Example: Error color set to blue](/help/forms/using/assets/variable-customization.png)
-
--->
 
 Del mismo modo, puede utilizar la variable `variable.scss` archivo para establecer la familia y el tipo de fuente, los colores de la temática y la fuente, el tamaño de fuente, el espaciado del tema, el icono de error, los estilos de borde del tema y más variables que afectan a varios componentes del formulario adaptable.
 
 ##### Definir estilos de nivel de componente {#component-based-customization}
 
 También tiene la opción de personalizar la fuente, el color, el tamaño y otras propiedades CSS de componentes principales específicos del formulario adaptable, como botones, casillas de verificación, contenedores, pies de página, etc. Al editar el archivo CSS asociado al componente específico, puede alinear su estilo con la marca de su organización. Para personalizar el estilo de un componente, siga estos pasos:
-
 
 1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editar. Por ejemplo, para cambiar el color de fuente del componente Botón, abra el `<your-theme-sources>/src/components/button/button.scss`, archivo .
 1. Cambie el valor de cualquiera según sus necesidades. Por ejemplo, para cambiar el color del componente Botón al pasar el ratón por encima a Verde, cambie el valor del `color: $white` propiedad en el `cmp-adaptiveform-button__widget:hover` de clase a código hexadecimal #12b453 o cualquier otro tono de verde. El código final tiene el siguiente aspecto:
@@ -326,9 +323,9 @@ Para eliminar temas no utilizados o no deseados:
 
 ## Consulte también
 
-* [Crear un formulario adaptable basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Utilice el editor de reglas para agregar un comportamiento dinámico al formulario](rule-editor.md)
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
-* [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
