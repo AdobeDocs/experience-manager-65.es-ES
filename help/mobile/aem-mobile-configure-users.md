@@ -1,16 +1,14 @@
 ---
 title: Configuración de usuarios y grupos de usuarios
 description: Siga esta página para comprender las funciones de usuario y cómo configurar los usuarios y grupos para que admitan la creación y administración de la aplicación de Mobile On-Demand Services.
-uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -19,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 En este capítulo se describen las funciones de usuario y cómo configurar los usuarios y grupos para que admitan la creación y administración de sus aplicaciones móviles.
 
@@ -31,7 +29,7 @@ AEM Los miembros del grupo de creación de aplicaciones son responsables de la c
 
 #### Configuración de grupo: app-authors {#group-configuration-app-authors}
 
-1. Cree un nuevo grupo de usuarios llamado &quot;autores de aplicaciones&quot;:
+1. Cree un grupo de usuarios llamado &quot;autores de aplicaciones&quot;:
 
    Vaya al Admin Console de usuario: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
@@ -66,11 +64,11 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 >
 >AEM Los permisos determinan la disponibilidad de algunas acciones del usuario en el Centro de comandos de la aplicación de.
 >
->Verá que algunas opciones no están disponibles para los autores de aplicaciones que están disponibles para los administradores de aplicaciones.
+>Tenga en cuenta que algunas opciones no están disponibles para los autores de aplicaciones que están disponibles para los administradores de aplicaciones.
 
 ### Configuración de grupo: administradores de aplicaciones {#group-configuration-app-admins}
 
-1. Cree un nuevo grupo llamado administradores de aplicaciones.
+1. Cree un grupo llamado administradores de aplicaciones.
 1. Añada los siguientes grupos al nuevo grupo de administradores de aplicaciones:
 
    * content-authors
@@ -104,8 +102,8 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 1. Agregar miembros a este grupo según sea necesario
 1. Para exportar contenido o cargar
 
-   * (Lectura) en /etc/contentsync a para acceder a las plantillas de exportación
-   * (Lectura) en /var a para recorrido de ruta en lecturas
+   * (Lectura) en /etc/contentsync para acceder a las plantillas de exportación
+   * (Lectura) en /var a recorrido de ruta en lecturas
    * (Leer, Escribir, Modificar, Eliminar) en /var/contentsync para escribir, leer y limpiar contenido de exportación en caché de ContentSync
 
 ### Recursos adicionales {#additional-resources}
