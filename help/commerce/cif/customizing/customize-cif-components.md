@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 1d914b12c3279bacaf5cabb3b1953e927c04bad1
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2571'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ El [Proyecto Venia del CIF](https://github.com/adobe/aem-cif-guides-venia) es un
 
 ## Qué va a generar
 
-La marca Venia ha empezado recientemente a fabricar algunos productos con materiales sostenibles y la empresa desea mostrar un **Respetuoso con el medio ambiente** como parte del teaser de productos. Se creará un nuevo atributo personalizado en Adobe Commerce para indicar si un producto utiliza el **Respetuoso con el medio ambiente** material. A continuación, este atributo personalizado se agregará como parte de la consulta de GraphQL y se mostrará en el teaser de productos para productos especificados.
+La marca Venia ha empezado recientemente a fabricar algunos productos con materiales sostenibles y la empresa desea mostrar un **Respetuoso con el medio ambiente** como parte del teaser de productos. Se crea un nuevo atributo personalizado en Adobe Commerce para indicar si un producto utiliza el **Respetuoso con el medio ambiente** material. Este atributo personalizado se agrega como parte de la consulta de GraphQL y se muestra en el teaser de productos para productos especificados.
 
 ![Implementación final de distintivo ecológico](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ Se clonará el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y
 
 ## Creación del teaser de productos {#author-product-teaser}
 
-El componente teaser de productos se amplía a través de este tutorial. Como primer paso, añada una nueva instancia del teaser de productos a la página de inicio para comprender la funcionalidad de línea de base.
+El componente teaser de productos se amplía a través de este tutorial. Como primer paso, añada una instancia del teaser de productos a la página de inicio para comprender la funcionalidad de línea de base.
 
 1. Vaya hasta la **Página de inicio** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -178,11 +178,11 @@ A continuación, utilice un IDE de GraphQL para comprobar que la variable `eco_f
 
    ![Ejemplo de respuesta de GraphQL](../assets/customize-cif-components/sample-graphql-query.png)
 
-   El valor de **Sí** es un número entero de **1**. Será útil cuando escriba la consulta de GraphQL en Java™.
+El valor de **Sí** es un número entero de **1**. Será útil cuando escriba la consulta de GraphQL en Java™.
 
-   >[!TIP]
-   >
-   >Documentación más detallada sobre [Adobe Commerce GraphQL se puede encontrar aquí](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+>[!TIP]
+>
+>Documentación más detallada sobre [Adobe Commerce GraphQL se puede encontrar aquí](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Actualización del modelo de Sling para el teaser de productos {#updating-sling-model-product-teaser}
 
@@ -213,7 +213,7 @@ Uso [el IDE de su elección](https://experienceleague.adobe.com/docs/experience-
    }
    ```
 
-   Este es un nuevo método para encapsular la lógica e indicar si el producto tiene el `eco_friendly` atributo establecido en **Sí** o **No**.
+Este es un nuevo método para encapsular la lógica e indicar si el producto tiene el `eco_friendly` atributo establecido en **Sí** o **No**.
 
 1. A continuación, inspeccione el `MyProductTeaserImpl.java` en `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 
@@ -486,11 +486,11 @@ En este punto, la lógica de cuándo mostrar la variable **Respetuoso con el med
 
 ## Felicitaciones {#congratulations}
 
-AEM Ha terminado de personalizar su primer componente del CIF de la. Descargue la [archivos de solución finalizados aquí](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+AEM Ha personalizado su primer componente del CIF de la. Descargue la [archivos de solución finalizados aquí](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Desafío para una bonificación {#bonus-challenge}
 
-Revise la funcionalidad de **Nuevo** que ya se ha implementado en el teaser de productos. Intente añadir una casilla de verificación adicional para que los autores controlen cuándo se **Respetuoso con el medio ambiente** debe mostrarse el distintivo. Deberá actualizar el cuadro de diálogo del componente en `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Revise la funcionalidad de **Nuevo** que ya se ha implementado en el teaser de productos. Intente añadir una casilla de verificación adicional para que los autores controlen cuándo se **Respetuoso con el medio ambiente** debe mostrarse el distintivo. Debe actualizar el cuadro de diálogo del componente en `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![Nuevo desafío de implementación de distintivos](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
