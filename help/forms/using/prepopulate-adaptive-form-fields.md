@@ -10,14 +10,19 @@ discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2169'
-ht-degree: 100%
+source-wordcount: '2191'
+ht-degree: 99%
 
 ---
 
 # Rellenar previamente los campos de un formulario adaptable{#prefill-adaptive-form-fields}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=es) |
+| AEM 6.5 | Este artículo |
 
 ## Introducción {#introduction}
 
@@ -244,6 +249,7 @@ Para habilitar el servicio de relleno previo, especifique la configuración pred
 
    * file:///C:/Users/public/Document/Prefill/.&#42;
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >De forma predeterminada, se permite el relleno previo mediante archivos crx para todos los tipos de formularios adaptables (XSD, XDP, JSON, FDM y sin modelo de formulario). El relleno previo solo se permite con archivos JSON y XML.
@@ -384,8 +390,9 @@ Puede configurar el servidor de AEM Forms para que realice la acción de combin
    1. Habilite la opción Configuration.af.clientside.datamerge.enabled.name.
 * Para habilitar o deshabilitar esta opción desde la línea de comandos:
    * Para habilitarla, ejecute el siguiente comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * Para deshabilitarla, ejecute el siguiente comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Para aprovechar al máximo los datos de relleno previo en la opción de cliente, actualice el servicio de relleno previo para que devuelva [FileAttachmentMap](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) y [CustomContext](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html).
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+  Para aprovechar al máximo los datos de relleno previo en la opción de cliente, actualice el servicio de relleno previo para que devuelva [FileAttachmentMap](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) y [CustomContext](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html).

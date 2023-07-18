@@ -11,21 +11,27 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3138'
-ht-degree: 100%
+source-wordcount: '3161'
+ht-degree: 98%
 
 ---
 
 # Introducción a la creación de formularios adaptables {#introduction-to-authoring-adaptive-forms}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
+| AEM 6.5 | Este artículo |
+
 
 ## Información general {#overview}
 
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y recursos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
 * **Uso del modelo de datos de formulario**
-   La [integración de datos](../../forms/using/data-integration.md) permite integrar entidades y servicios de diferentes fuentes de datos en un modelo de datos de formulario que puede utilizar para crear formularios adaptables. Elija un modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
+  La [integración de datos](../../forms/using/data-integration.md) permite integrar entidades y servicios de diferentes fuentes de datos en un modelo de datos de formulario que puede utilizar para crear formularios adaptables. Elija un modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
 * **Usar una plantilla de formulario XDP**
 Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
@@ -88,17 +94,17 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
 
 * **Explorador de propiedades**
 
-   Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Para ver las propiedades del contenedor de formulario adaptable, haga lo siguiente:
+  Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Para ver las propiedades del contenedor de formulario adaptable, haga lo siguiente:
 
-   Seleccione un componente y, a continuación, pulse ![nivel de campo](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse ![cmppr](assets/cmppr.png).
+  Seleccione un componente y, a continuación, pulse ![nivel de campo](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse ![cmppr](assets/cmppr.png).
 
 * **Explorador de recursos**
 
-   Segmenta contenido de distintos tipos, como imágenes, documentos, páginas, películas, etc.
+  Segmenta contenido de distintos tipos, como imágenes, documentos, páginas, películas, etc.
 
 * **Explorador de componentes**
 
-   Incluye componentes que puede utilizar para crear un formulario adaptable. Puede arrastrar componentes desde y hasta el formulario adaptable para agregar elementos de formulario y configurar los elementos agregados según los requisitos. En la siguiente tabla se describen los componentes enumerados en el explorador de componentes.
+  Incluye componentes que puede utilizar para crear un formulario adaptable. Puede arrastrar componentes desde y hasta el formulario adaptable para agregar elementos de formulario y configurar los elementos agregados según los requisitos. En la siguiente tabla se describen los componentes enumerados en el explorador de componentes.
 
 <table>
  <tbody>
@@ -188,7 +194,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Panel</td>
-   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante el botón <span class="uicontrol">Agregar panel secundario</code>. Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante el botón <span class="uicontrol">Agregar barra de herramientas del panel</code>. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</code></code></p> </td>
+   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante la variable <span class="uicontrol">Agregar panel secundario</code> botón. Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante la variable <span class="uicontrol">Agregar barra de herramientas del panel</code> botón. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</p> </td>
   </tr>
   <tr>
    <td>Cuadro de contraseña</td>
@@ -328,8 +334,8 @@ La barra de herramientas de la parte superior de la página ofrece opciones que 
 
       * Descubrir de qué se componen los formularios.
       * Depurar lo que sucede, dónde y cuándo, lo que a su vez ayuda a resolver problemas.
-   * **Diseño**. Permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
 
+   * **Diseño**. Permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
 
 * **Vista previa**: Permite obtener una vista previa del aspecto del formulario cuando se publica.
 

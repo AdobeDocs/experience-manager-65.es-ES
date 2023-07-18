@@ -10,14 +10,19 @@ discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 100%
+source-wordcount: '1227'
+ht-degree: 97%
 
 ---
 
 # Configuración de OData de Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6.5 | Este artículo |
 
 ![integración de datos](assets/data-integeration.png)
 
@@ -25,7 +30,7 @@ Microsoft Dynamics es un software de gestión de relaciones con el cliente (CR
 
 * Consultar el servidor de Microsoft Dynamics para obtener datos y rellenar previamente formularios adaptables
 * Escribir datos en Microsoft Dynamics durante el envío de formularios adaptables
-* Escribir datos en Microsoft Dynamics mediante entidades personalizadas definidas en el modelo de datos de formulario y viceversa
+* escribir datos en Microsoft Dynamics mediante entidades personalizadas definidas en el modelo de datos de formulario y a la inversa;
 
 El paquete de complementos de AEM Forms también incluye la configuración de OData de referencia, que puede aprovechar para integrar rápidamente Microsoft Dynamics con AEM Forms.
 
@@ -100,7 +105,7 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
    * `redirect-uri` es la dirección URL del servicio en la nube de OData de Microsoft Dynamics en AEM Forms. El servicio en la nube predeterminado instalado con el paquete de AEM Forms se implementa en la siguiente URL:
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Ejecute el siguiente comando para conceder acceso desde el equipo AD FS:
 

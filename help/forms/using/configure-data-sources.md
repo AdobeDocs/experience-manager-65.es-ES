@@ -10,14 +10,20 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 87%
+source-wordcount: '2112'
+ht-degree: 90%
 
 ---
 
 # Configurar fuentes de datos{#configure-data-sources}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM 6.5 | Este artículo |
+
 
 ![Integración de datos](do-not-localize/data-integeration.png)
 
@@ -29,7 +35,7 @@ La integración de datos de AEM Forms le permite configurar y conectarse a fuent
 * Servicios web basados en SOAP
 * Servicios OData
 
-La integración de datos es compatible con OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica y Tipos de autenticación de clave de API predeterminados, y permite implementar la autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, SOAP y OData están configurados en AEM Cloud Services, JDBC para bases de datos relacionales y conector para el perfil de usuario de AEM están configurados en la consola web de AEM.
+La integración de datos es compatible con los tipos de autenticación OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales de cliente](https://oauth.net/2/grant-types/client-credentials/)), autenticación básica y clave de la API predeterminados, y permite implementar la autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, SOAP y OData están configurados en AEM Cloud Services, JDBC para bases de datos relacionales y conector para el perfil de usuario de AEM están configurados en la consola web de AEM.
 
 ## Configuración de la base de datos relacional {#configure-relational-database}
 
@@ -51,7 +57,6 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    >
    > 1. Vaya a https://&#39;[server]:[port]&#39;/system/console/crypto.
    > 1. En el campo **[!UICONTROL Texto sin formato]**, especifique la contraseña o cualquier cadena que desee cifrar y pulse **[!UICONTROL Proteger]**.
-
    >
    >El texto cifrado aparece en el campo Texto protegido que puede especificar en la configuración.
 
@@ -131,7 +136,8 @@ Haga lo siguiente para configurar los servicios RESTful:
       * Esquema: Los protocolos de transferencia utilizados por la API REST. El número de tipos de esquema que se muestran en la lista desplegable depende de los esquemas definidos en la fuente Swagger.
       * Host: El nombre de dominio o la dirección IP del host que sirve la API de REST. Es un campo obligatorio.
       * Ruta base: El prefijo URL de todas las rutas de API. Es un campo opcional.\
-         Si es necesario, edite los valores rellenados previamente para estos campos.
+        Si es necesario, edite los valores rellenados previamente para estos campos.
+
    * Seleccione el tipo de autenticación — Ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Clave de API, Autenticación personalizada o Autenticación mutua: para acceder al servicio RESTful y facilitar los detalles correspondientes para la autenticación.
 
    Si selecciona **[!UICONTROL clave de la API]** como tipo de autenticación, especifique el valor de la clave de la API. La clave de la API se puede enviar como encabezado de solicitud o como parámetro de consulta. Seleccione una de estas opciones en la lista desplegable **[!UICONTROL Ubicación]** y especifique el nombre del encabezado o el parámetro de consulta en el campo **[!UICONTROL Nombre del parámetro]**.
@@ -176,10 +182,10 @@ Los servicios web basados en SOAP se describen utilizando [Especificaciones del 
    * Punto final de servicio. Especifique un valor en este campo para anular el punto final de servicio mencionado en WSDL.
    * Seleccione el tipo de autenticación — Ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Autenticación personalizada, Token X509 o Autenticación mutua: para acceder al servicio SOAP y facilitar los detalles correspondientes para la autenticación.
 
-      Si selecciona **[!UICONTROL Token X509]** como tipo de autenticación, configure el certificado X509. Para obtener más información, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     Si selecciona **[!UICONTROL Token X509]** como tipo de autenticación, configure el certificado X509. Para obtener más información, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Especifique el alias de KeyStore para el certificado X509 en el campo **[!UICONTROL Alias de la clave]**. Especifique el tiempo, en segundos, durante los que la solicitud de autenticación será válida en el campo **[!UICONTROL Tiempo de vida]**. De forma opcional, seleccione para firmar el cuerpo del mensaje, el encabezado de la marca de tiempo o ambos.
 
-      Si selecciona **[!UICONTROL Autenticación mutua]** como tipo de autenticación, consulte [Autenticación mutua basada en certificados para servicios web RESTful y SOAP](#mutual-authentication).
+     Si selecciona **[!UICONTROL Autenticación mutua]** como tipo de autenticación, consulte [Autenticación mutua basada en certificados para servicios web RESTful y SOAP](#mutual-authentication).
 
 1. Pulse **[!UICONTROL Crear]** para crear la configuración de la nube para el servicio web SOAP.
 

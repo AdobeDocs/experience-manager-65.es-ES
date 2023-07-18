@@ -11,14 +11,19 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 97%
+source-wordcount: '919'
+ht-degree: 96%
 
 ---
 
 # Introducción a AEM Forms{#introduction-to-aem-forms}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
+| AEM 6.5 | Este artículo |
 
 Para obtener información sobre las últimas funciones y mejoras de AEM Forms, consulte [Novedades de AEM Forms](../../forms/using/whats-new.md).
 

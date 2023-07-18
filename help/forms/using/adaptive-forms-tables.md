@@ -10,14 +10,20 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2398'
-ht-degree: 100%
+source-wordcount: '2421'
+ht-degree: 99%
 
 ---
 
 # Tablas en formularios adaptables{#tables-in-adaptive-forms}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html) |
+| AEM 6.5 | Este artículo |
+
 
 El uso de tablas es una forma eficaz, simple y organizada de presentar datos complejos. Ayuda a los usuarios a identificar la información fácilmente y a proporcionar entradas en una disposición ordenada de filas y columnas. La mayoría de formularios de los servicios financieros y las organizaciones gubernamentales requieren tablas de datos grandes para poner números y realizar cálculos.
 
@@ -312,4 +318,4 @@ Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD par
 * Si mueve filas hacia arriba y hacia abajo mientras crea una tabla basada en XSD, observará cierta pérdida de datos de las filas de la tabla en el XML de datos generado al enviar el formulario.
 * Cada celda del cuerpo de una tabla predeterminada tiene asociado un nombre de elemento predefinido. Si agrega otra tabla al formulario adaptable, las celdas predeterminadas del cuerpo de la tabla nueva tendrán el mismo nombre de elemento que en la primera tabla. En este caso, los datos generados al enviar el formulario incluirán datos en las celdas predeterminadas del cuerpo de solo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos de las celdas predeterminadas del cuerpo para que sean únicos en todas las tablas y evitar la pérdida de datos.
 
-   Tenga en cuenta que esto solo es aplicable a las celdas predeterminadas del cuerpo. Si agrega más filas o columnas a una tabla, se generarán automáticamente nombres de elementos únicos para las celdas no predeterminadas del cuerpo.
+  Tenga en cuenta que esto solo es aplicable a las celdas predeterminadas del cuerpo. Si agrega más filas o columnas a una tabla, se generarán automáticamente nombres de elementos únicos para las celdas no predeterminadas del cuerpo.

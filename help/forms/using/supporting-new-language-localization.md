@@ -12,14 +12,19 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 100%
+source-wordcount: '815'
+ht-degree: 96%
 
 ---
 
 # Compatibilidad con configuraciones regionales nuevas para la localización de formularios adaptables{#supporting-new-locales-for-adaptive-forms-localization}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM 6.5 | Este artículo |
 
 ## Acerca de los diccionarios de configuración regional {#about-locale-dictionaries}
 
@@ -37,9 +42,8 @@ Existen dos métodos para identificar la configuración regional del formulario 
 
 * observando los siguientes parámetros en el orden especificado:
 
-   * El parámetro de solicitud `afAcceptLang`. Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud 
-`afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligará a representar el formulario en la configuración regional Japonés:
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   * El parámetro de solicitud `afAcceptLang`. Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligará a representar el formulario en la configuración regional Japonés:
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * La configuración regional del explorador establecida para el usuario, que se especifica en la solicitud utilizando el encabezado `Accept-Language`.
 
@@ -94,7 +98,7 @@ I18N.js
 
 ### Agregue la biblioteca de cliente del formulario adaptable para una configuración regional. {#add-adaptive-form-client-library-for-a-locale-br}
 
-Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>` con la categoría `guides.I18N.<locale>` y las dependencias `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`.
+Creación de un nodo de tipo `cq:ClientLibraryFolder` bajo `etc/<folderHierarchy>`, con la categoría como `guides.I18N.<locale>` y dependencias como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`. &quot;
 
 Agregue los siguientes archivos a la biblioteca de cliente:
 

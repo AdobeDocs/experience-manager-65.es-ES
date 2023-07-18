@@ -3,15 +3,21 @@ title: Integración de Salesforce con AEM Forms mediante el flujo de credenciale
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Pasos para integrar la integración de Salesforce con AEM Forms mediante el flujo de credenciales de cliente de OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
+exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
-
 # Integración de Salesforce con el flujo de credenciales de cliente de OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM 6.5 | Este artículo |
+
 
 Para integrar AEM Forms con la aplicación Salesforce, se utiliza el flujo de credenciales de cliente de OAuth 2.0. Es un método estandarizado y seguro para la comunicación directa sin la participación del usuario. AEM En este flujo, la aplicación cliente (formulario de la aplicación de cliente) intercambia las credenciales del cliente, definidas en la aplicación conectada de Salesforce, para obtener un token de acceso. Las credenciales de cliente requeridas incluyen la clave de consumidor y el secreto de consumidor.
 
@@ -74,5 +80,3 @@ Swagger es un conjunto de reglas, especificaciones y herramientas de código abi
 1. Si la conexión se realiza correctamente, haga clic en **[!UICONTROL Crear]** botón.
 
 Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) para integrar la fuente de datos configurada con el formulario adaptable.
-
-

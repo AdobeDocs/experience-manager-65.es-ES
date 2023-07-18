@@ -11,14 +11,19 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 100%
+source-wordcount: '2481'
+ht-degree: 99%
 
 ---
 
 # Arquitectura y topologías de implementación para AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html) |
+| AEM 6.5 | Este artículo |
 
 ## Arquitectura {#architecture}
 
@@ -74,9 +79,9 @@ La siguiente imagen muestra varias configuraciones del servidor de AEM Forms y s
 * **Procesar los datos de formulario sin procesar procedentes de una instancia de publicación:** esto se logra principalmente en una instancia de procesamiento a través de flujos de trabajo de AEM que se activan cuando llegan los datos. Los flujos de trabajo pueden utilizar el paso Modelo de datos de formulario que se proporciona de forma predeterminada para archivar los datos o el documento en un almacén de datos adecuado.
 * **Almacenamiento seguro de datos de formulario**: el procesamiento proporciona un repositorio detrás del firewall para los datos de formulario sin procesar que están aislados de los usuarios. Ni los diseñadores de formularios de la instancia de autor ni los usuarios finales de la instancia de publicación pueden acceder a este repositorio.
 
-   >[!NOTE]
-   >
-   >Adobe recomienda utilizar un repositorio de datos de terceros para guardar los datos procesados finales en lugar de utilizar el repositorio de AEM.
+  >[!NOTE]
+  >
+  >Adobe recomienda utilizar un repositorio de datos de terceros para guardar los datos procesados finales en lugar de utilizar el repositorio de AEM.
 
 * **Almacenar y posprocesar los datos de correspondencia que llegan desde una instancia de publicación:** los flujos de trabajo de AEM realizan el posprocesamiento opcional de las definiciones de cartas correspondientes. Estos flujos de trabajo pueden guardar los datos procesados finales en un repositorio de datos externo adecuado.
 

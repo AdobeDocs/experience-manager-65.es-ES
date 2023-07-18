@@ -11,14 +11,19 @@ discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '6026'
-ht-degree: 100%
+source-wordcount: '6049'
+ht-degree: 99%
 
 ---
 
 # Crear y usar temáticas {#creating-and-using-themes}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=es) |
+| AEM 6.5 | Este artículo |
 
 ## Introducción {#introduction}
 
@@ -207,15 +212,15 @@ El editor de temáticas se divide en dos paneles:
 
    * **Selector:** muestra el componente seleccionado para el estilo y sus propiedades que puede aplicar. El selector representa todos los componentes de un tipo. Si selecciona un componente de cuadro de texto en una temática para el estilo, todos los cuadros de texto del formulario o la comunicación interactiva heredarán dicho estilo. Los selectores permiten seleccionar un componente genérico o un componente específico para el estilo. Por ejemplo, un componente de campo es un componente genérico y un cuadro de texto es un componente específico.
 
-      **Estilo del componente genérico:**
+     **Estilo del componente genérico:**
 un campo puede ser un campo de cuadro numérico, como la edad, o un campo de cuadro de texto, como la dirección. 
 Al aplicar estilo a un campo, se aplica a todos los campos, como edad, nombre y dirección.
 
-      **Estilo de un componente específico**: un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
+     **Estilo de un componente específico**: un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
 
-      Por ejemplo, un campo de cuadro de texto como una dirección es más largo y un campo de cuadro numérico como la edad es más corto. Puede seleccionar un campo de cuadro numérico, reducir su longitud y aplicarlo al formulario. La anchura de todos los campos numéricos de cuadro se reduce en el formulario.
+     Por ejemplo, un campo de cuadro de texto como una dirección es más largo y un campo de cuadro numérico como la edad es más corto. Puede seleccionar un campo de cuadro numérico, reducir su longitud y aplicarlo al formulario. La anchura de todos los campos numéricos de cuadro se reduce en el formulario.
 
-      Al personalizar todos los componentes de campo con un color de fondo específico, todos los campos, como edad, nombre y dirección, heredan el color de fondo. Al seleccionar un cuadro numérico, como la edad, y reducir su anchura, se reduce la anchura de todos los cuadros numéricos, como la edad o el número de personas de una familia. La anchura de los cuadros de texto no cambia.
+     Al personalizar todos los componentes de campo con un color de fondo específico, todos los campos, como edad, nombre y dirección, heredan el color de fondo. Al seleccionar un cuadro numérico, como la edad, y reducir su anchura, se reduce la anchura de todos los cuadros numéricos, como la edad o el número de personas de una familia. La anchura de los cuadros de texto no cambia.
 
    * **Estado:** permite personalizar estilos de un objeto en un estado específico. Por ejemplo, se puede especificar la apariencia de un objeto cuando está en estado predeterminado, de enfoque, deshabilitado, de desplazamiento o de error.
    * **Categorías de las propiedades:** las propiedades de estilo se dividen en varias categorías. Por ejemplo, Dimensión y posición, Texto, Fondo, Borde y Efectos. En cada categoría, se proporciona información sobre el estilo. Por ejemplo, en Fondo, puede proporcionar Color de fondo e Imagen y degradado.
@@ -223,9 +228,10 @@ Al aplicar estilo a un campo, se aplica a todos los campos, como edad, nombre y 
    * **Avanzado:** permite agregar CSS personalizado a un objeto, que anula las propiedades que los controles visuales definen si hay una superposición.
 
    * **Ver CSS**: permite ver el CSS del componente seleccionado
-   Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, aparecen dos opciones más: **Simular éxito** y **Simular error.** Estas opciones, junto con las opciones descritas anteriormente, se examinan en detalle [a continuación](../../forms/using/themes.md#using-rail).
 
-[ ![Editor de temáticas con carril y lienzo resaltados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
+  Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, aparecen dos opciones más: **Simular éxito** y **Simular error.** Estas opciones, junto con las opciones descritas anteriormente, se examinan en detalle [a continuación](../../forms/using/themes.md#using-rail).
+
+[![Editor de temáticas con carril y lienzo resaltados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
 
 ### Estilo de componentes {#styling-components}
 
@@ -629,14 +635,14 @@ Puede ver el CSS generado mediante las siguientes opciones:
 
 * **Evitar recursos de otra temática**
 
-   Al editar una temática, puede examinar y agregar recursos (como imágenes) de otras temáticas. Por ejemplo, quiere editar el fondo de una página. Al seleccionar **Página** ![edit-button](assets/edit-button.png) > **Fondo** > **Agregar** > **Imagen**, verá un cuadro de diálogo que le permite examinar y agregar imágenes en otras temáticas.
+  Al editar una temática, puede examinar y agregar recursos (como imágenes) de otras temáticas. Por ejemplo, quiere editar el fondo de una página. Al seleccionar **Página** ![edit-button](assets/edit-button.png) > **Fondo** > **Agregar** > **Imagen**, verá un cuadro de diálogo que le permite examinar y agregar imágenes en otras temáticas.
 
 * Puede tener problemas con la temática actual si se agrega un recurso desde otra y esta se mueve o se elimina. Se recomienda evitar explorar y agregar recursos de otras temáticas.
 * **Usar clientlib base, editor de temáticas y aplicar estilo dentro de la línea**
 
    * **Clientlib base**:
 
-      La biblioteca de cliente base contiene información de estilo. Utilizar información de estilo en bibliotecas de cliente en temáticas.
+     La biblioteca de cliente base contiene información de estilo. Utilizar información de estilo en bibliotecas de cliente en temáticas.
 
       1. Navegue hasta **Experience Manager > Forms > Temáticas**.
       1. En la página Temáticas seleccione una temática y haga clic en **Ver propiedades**.
@@ -644,28 +650,27 @@ Puede ver el CSS generado mediante las siguientes opciones:
       1. En la pestaña Avanzadas, en el campo Ubicación de Clientlib, busque y seleccione la biblioteca de cliente que desee utilizar.
       1. Haga clic en **Guardar**.
 
-      El estilo que especifique en la biblioteca de cliente se importa en la temática que lo utiliza. Por ejemplo, puede especificar estilo para el cuadro de texto, el cuadro numérico y el interruptor de la biblioteca de cliente. Cuando se importa la biblioteca de cliente en la temática, se importa el estilo del cuadro de texto, el cuadro numérico y el interruptor. A continuación, puede aplicar estilo a otros componentes mediante el editor de temáticas.
+     El estilo que especifique en la biblioteca de cliente se importa en la temática que lo utiliza. Por ejemplo, puede especificar estilo para el cuadro de texto, el cuadro numérico y el interruptor de la biblioteca de cliente. Cuando se importa la biblioteca de cliente en la temática, se importa el estilo del cuadro de texto, el cuadro numérico y el interruptor. A continuación, puede aplicar estilo a otros componentes mediante el editor de temáticas.
 También puede crear una temática, crear copias de la misma y, a continuación, modificar el estilo proporcionado en las temáticas copiadas para casos de uso similares.
 [ Consulte Obtener una apariencia específica mediante Temáticas](#specific-af-appearance)
 
    * **Editor de temáticas:**
 
-      El editor de temáticas permite crear temáticas para aplicar estilo al formulario o a la comunicación interactiva. Puede especificar el estilo de los componentes de una temática, que permite mantener la coherencia en la apariencia y la presentación de varios formularios o comunicaciones interactivas. Se recomienda especificar información de estilo en una temática y, a continuación, aplicarla a un formulario.
+     El editor de temáticas permite crear temáticas para aplicar estilo al formulario o a la comunicación interactiva. Puede especificar el estilo de los componentes de una temática, que permite mantener la coherencia en la apariencia y la presentación de varios formularios o comunicaciones interactivas. Se recomienda especificar información de estilo en una temática y, a continuación, aplicarla a un formulario.
 
    * **Estilo dentro de la línea:**
 
-      Los componentes de estilo se pueden aplicar con el modo Estilo del editor multicanal de comunicaciones interactivas o de formularios cuando se trabaja con un formulario. Si se utiliza el modo de estilo para cambiar el estilo de los componentes del formulario, se anulará el estilo especificado en la temática. Si desea cambiar el estilo de ciertos componentes de un formulario concreto, consulte [Aplicar estilo a componentes dentro de la línea](../../forms/using/inline-style-adaptive-forms.md).
-
+     Los componentes de estilo se pueden aplicar con el modo Estilo del editor multicanal de comunicaciones interactivas o de formularios cuando se trabaja con un formulario. Si se utiliza el modo de estilo para cambiar el estilo de los componentes del formulario, se anulará el estilo especificado en la temática. Si desea cambiar el estilo de ciertos componentes de un formulario concreto, consulte [Aplicar estilo a componentes dentro de la línea](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Usar bibliotecas del lado del cliente**
 
-   Si desea crear bibliotecas de cliente para importar información de estilo, consulte [Usar bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md). Después de crear una biblioteca de cliente, puede importarla en su tema al seguir los pasos mencionados anteriormente.
+  Si desea crear bibliotecas de cliente para importar información de estilo, consulte [Usar bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md). Después de crear una biblioteca de cliente, puede importarla en su tema al seguir los pasos mencionados anteriormente.
 
 * **Cambio de la anchura de diseño del panel contenedor**
 
-   No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
+  No se recomienda cambiar la anchura del diseño del panel contenedor. Cuando se especifica la anchura de un panel contenedor, este se vuelve estático y no se adapta a distintas pantallas.
 
 * **Utilización del editor de formularios o del editor de temáticas para trabajar con encabezado y pie de página**
 
-   Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
+  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
 Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.

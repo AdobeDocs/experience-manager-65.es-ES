@@ -10,14 +10,19 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '6888'
-ht-degree: 99%
+source-wordcount: '6884'
+ht-degree: 98%
 
 ---
 
 # Editor de reglas de formularios adaptables{#adaptive-forms-rule-editor}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
+| AEM 6.5 | Este artículo |
 
 ## Información general {#overview}
 
@@ -51,7 +56,7 @@ En el editor de reglas, el tipo de regla **When** aplica la construcción de con
 
 **Acción-condición**. En esta construcción, una regla primero define una acción que activar seguida de condiciones para la evaluación. Otra variación de esta construcción es acción-condición-acción alternativa, que también define una acción alternativa que activar si la condición devuelve un valor False.
 
-Los tipos de reglas Show, Hide, Enable, Disable, Set Value Of y Validate del editor de reglas aplican la construcción de reglas acción-condición. De forma predeterminada, la acción alternativa para Mostrar es Ocultar y para Habilitar es Deshabilitar y viceversa. No se puede cambiar la acción alternativa predeterminada.
+Los tipos de reglas Show, Hide, Enable, Disable, Set Value Of y Validate del editor de reglas aplican la construcción de reglas acción-condición. De forma predeterminada, la acción alternativa para Mostrar es Ocultar y para Habilitar es Deshabilitar y, a la inversa. No se puede cambiar la acción alternativa predeterminada.
 
 >[!NOTE]
 >
@@ -65,11 +70,11 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 
 * Una regla general típica al crear una regla es pensarla en el contexto del objeto en el que quiere escribirla. Tenga en cuenta que desea ocultar o mostrar el campo B en función del valor que un usuario especifique en el campo A. En este caso, quiere evaluar una condición en el campo A y, en función del valor que se devuelva, se debe activar una acción en el campo B.
 
-   Por lo tanto, si está escribiendo una regla en el campo B (el objeto sobre el que se evalúa una condición), utilice la construcción condición-acción o el tipo de regla When. Del mismo modo, utilice la construcción acción-condición o el tipo de regla Show o Hide en el campo A.
+  Por lo tanto, si está escribiendo una regla en el campo B (el objeto sobre el que se evalúa una condición), utilice la construcción condición-acción o el tipo de regla When. Del mismo modo, utilice la construcción acción-condición o el tipo de regla Show o Hide en el campo A.
 
 * A veces, debe realizar varias acciones en función de una condición. En estos casos, se recomienda utilizar la construcción condición-acción. En esta construcción, puede evaluar una condición una vez y especificar varias instrucciones de acción.
 
-   Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor que un usuario especifica en el campo A, escriba una regla con la estructura condición-acción o el tipo de regla When en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesitará tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo respectivo. En este ejemplo, es más eficaz escribir el tipo de regla When en un objeto, en lugar de Show o Hide en tres objetos.
+  Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor que un usuario especifica en el campo A, escriba una regla con la estructura condición-acción o el tipo de regla When en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesitará tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo respectivo. En este ejemplo, es más eficaz escribir el tipo de regla When en un objeto, en lugar de Show o Hide en tres objetos.
 
 * Para activar una acción basada en varias condiciones, se recomienda utilizar la construcción acción-condición. Por ejemplo, para mostrar y ocultar el campo A mediante la evaluación de condiciones en los campos B, C y D, utilice los tipos de reglas Show o Hide en el campo A.
 * Utilice la construcción condición-acción o acción-condición si la regla contiene una acción para una condición.
@@ -378,7 +383,7 @@ Para obtener más información sobre el uso del editor de reglas visuales, consu
 
 ### E. Interruptor de editores de código visual {#e-visual-code-editors-switcher}
 
-Los usuarios del grupo forms-power-users pueden acceder al editor de código. Para otros usuarios, el editor de código no está disponible. Si tiene los derechos, puede cambiar del modo de editor visual al modo de editor de código del editor de reglas y viceversa, mediante el interruptor situado justo encima del editor de reglas. Cuando se inicia el editor de reglas por primera vez, se abrirá en el modo de editor visual. Puede escribir reglas en el modo de editor visual o cambiar al modo de editor de código para escribir un script de regla. Sin embargo, si escribe o modifica una regla en el editor de código, no puede cambiar al editor visual para esa regla a menos que borre el editor de código.
+Los usuarios del grupo forms-power-users pueden acceder al editor de código. Para otros usuarios, el editor de código no está disponible. Si tiene los derechos, puede cambiar del modo de editor visual al modo de editor de código del editor de reglas y, a la inversa, utilizar el conmutador situado justo encima del editor de reglas. Cuando se inicia el editor de reglas por primera vez, se abrirá en el modo de editor visual. Puede escribir reglas en el modo de editor visual o cambiar al modo de editor de código para escribir un script de regla. Sin embargo, si escribe o modifica una regla en el editor de código, no puede cambiar al editor visual para esa regla a menos que borre el editor de código.
 
 AEM Forms rastrea el modo de editor de reglas que utilizó por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Pero también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
 
@@ -555,42 +560,38 @@ Para obtener más información, consulte [usejsdoc.org](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:
 
-* Sintaxis
-**privada**: 
-una función privada no se incluye como función personalizada.`@private`
+* **Privado**
+Sintaxis: `@private`
 Una función privada no se incluye como función personalizada.
 
-* Sintaxis 
-**de nombre**:
-También `@name funcName <Function Name>`
-También `,` puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
-   `funcName` es el nombre de la función (no se permiten espacios).
-   `<Function Name>` es el nombre para mostrar de la función.
+* **Nombre**
+Sintaxis: `@name funcName <Function Name>`
+Alternativamente `,` puede utilizar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
+  `funcName` es el nombre de la función (no se permiten espacios).
+  `<Function Name>` es el nombre para mostrar de la función.
 
-* Sintaxis
-**de abonados**: 
-adjunta un área de nombres a la función.`@memberof namespace`
+* **Miembro**
+Sintaxis: `@memberof namespace`
 Adjunta un área de nombres a la función.
 
-* Sintaxis
-**de parámetro**: También puede usar: `@param {type} name <Parameter Description>`
-También puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`. 
+* **Parámetro**
+Sintaxis: `@param {type} name <Parameter Description>`
+Como alternativa, puede utilizar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
-   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
+  `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
    1. cadena
    1. número
    1. booleano
    1. ámbito
 
-   El ámbito se utiliza para hacer referencia a los campos de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
+  El ámbito se utiliza para hacer referencia a los campos de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
 
-   Todos los demás tipos de parámetro se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Todos los demás tipos de parámetro se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* Sintaxis
-**de tipo de valor devuelto**: 
-También puede usar `@return {type}`
-También puede usar `@returns {type}`. 
+* **Tipo de devolución**
+Sintaxis: `@return {type}`
+Como alternativa, puede utilizar `@returns {type}`.
 Agrega información sobre la función, como su objetivo. 
 {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
@@ -598,30 +599,29 @@ Agrega información sobre la función, como su objetivo.
    1. número
    1. booleano
 
-   Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de devolución no distinguen entre mayúsculas y minúsculas.
+  Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de devolución no distinguen entre mayúsculas y minúsculas.
 
-* Sintaxis
-**This** 
-`@this currentComponent`
+* **Esta**
+Sintaxis: `@this currentComponent`
 
-   Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
+  Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
 
-   El siguiente ejemplo se basa en el valor de campo. En el ejemplo siguiente, la regla oculta un campo del formulario. La porción `this` de `this.value` hace referencia al componente de formulario adaptable subyacente, en el que se escribe la regla.
+  El siguiente ejemplo se basa en el valor de campo. En el ejemplo siguiente, la regla oculta un campo del formulario. La porción `this` de `this.value` hace referencia al componente de formulario adaptable subyacente, en el que se escribe la regla.
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function will be executed.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
 
 >[!NOTE]
 >
@@ -651,7 +651,7 @@ Para abrir un formulario en modo de edición, seleccione un formulario y pulse *
 
 1. Seleccione el cuadro numérico de entrada y pulse ![edit-rules](assets/edit-rules.png) para abrir el editor de reglas.
 1. Pulse **Crear regla**. Con las opciones que se muestran a continuación, cree una regla para guardar el valor al cuadrado de la entrada en el campo Salida del formulario.
-   [ ![Usar funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Pulsar **Listo**. Se agrega la función personalizada.
+   [![Uso de funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Pulse **Listo**. Se agrega la función personalizada.
 
 #### Tipos admitidos para la declaración de funciones {#function-declaration-supported-types}
 

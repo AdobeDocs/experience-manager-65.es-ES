@@ -9,14 +9,20 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 100%
+source-wordcount: '1893'
+ht-degree: 99%
 
 ---
 
 # Configurar la acción de envío{#configuring-the-submit-action}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=es) |
+| AEM 6.5 | Este artículo |
+
 
 ## Introducción al envío de acciones {#introduction-to-submit-actions}
 
@@ -68,7 +74,8 @@ También puede **Habilitar la petición POST** y proporcionar una URL para publi
 Configurar la acción de envío del punto final de REST.
 
 >[!NOTE]
->Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
+>
+Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
 
 ### Publicar datos enviados en un recurso o punto final REST externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -98,14 +105,16 @@ En este ejemplo, `data` almacena los datos XML y `att` almacena datos adjuntos.
 Puede usar la acción de envío **Enviar correo electrónico** para enviar un correo electrónico a uno o varios destinatarios cuando el formulario se haya enviado correctamente. El correo electrónico generado puede contener datos de formulario en un formato predefinido.
 
 >[!NOTE]
->Todos los campos del formulario deben tener nombres de elemento diferentes, incluso si se colocan en paneles diferentes), para incluir los datos del formulario en un mensaje de correo electrónico.
+>
+Todos los campos del formulario deben tener nombres de elemento diferentes, incluso si se colocan en paneles diferentes), para incluir los datos del formulario en un mensaje de correo electrónico.
 
 ## Enviar PDF por correo electrónico {#send-pdf-via-email}
 
 La acción de envío **Enviar PDF por correo electrónico** envía un mensaje de correo electrónico con un PDF que contiene datos del formulario a uno o varios destinatarios cuando el formulario se envía correctamente.
 
 >[!NOTE]
->Esta acción de envío está disponible para formularios adaptables basados en XFA y en XSD que tienen la plantilla Documento de registro.
+>
+Esta acción de envío está disponible para formularios adaptables basados en XFA y en XSD que tienen la plantilla Documento de registro.
 
 ## Invocar un flujo de trabajo de formularios {#invoke-a-forms-workflow}
 
@@ -138,7 +147,8 @@ La acción de envío coloca lo siguiente en la ubicación de carga útil del flu
 * **Archivo de datos**: Contiene datos enviados al formulario adaptable. Puede usar la opción **[!UICONTROL Ruta del archivo de datos]** para especificar el nombre y la ruta del archivo en relación con la carga útil. Por ejemplo, la ruta `/addresschange/data.xml` crea una carpeta llamada `addresschange` y la coloca en relación a la carga útil. También puede especificar únicamente `data.xml` para enviar solo los datos enviados sin crear una jerarquía de carpetas. Utilice la opción Variable y seleccione la variable de la lista de variables disponibles para el modelo de flujo de trabajo.
 
 >[!NOTE]
->Se pueden utilizar variables tanto si el modelo de flujo de trabajo está marcado para almacenar datos externo como si no.
+>
+Se pueden utilizar variables tanto si el modelo de flujo de trabajo está marcado para almacenar datos externo como si no.
 
 * **Archivos adjuntos**: Puede usar la opción **[!UICONTROL Ruta de archivos adjuntos]** para especificar el nombre de la carpeta en la que se almacenarán los archivos adjuntos cargados en el formulario adaptable. La carpeta se creará en relación con la carga útil. Si el flujo de trabajo está marcado para el almacenamiento de datos externos, utilice la opción de variable y seleccione la variable de la lista de variables disponibles para el modelo de flujo de trabajo.
 
@@ -169,7 +179,8 @@ Habilitar la validación del lado del servidor
 Si el usuario final omite esas validaciones y envía los formularios, el servidor volverá a realizar la validación. Si la validación falla al final del servidor, se detendrá la transacción del envío. Al usuario final se le volverá a presentar el formulario original. Los datos capturados y enviados se presentarán al usuario como un error.
 
 >[!NOTE]
->La validación del lado del servidor valida el modelo de formulario. Se recomienda crear una biblioteca de cliente independiente para las validaciones y no mezclarla con otras cosas como el estilo del HTML y la manipulación DOM en la misma biblioteca de cliente.
+>
+La validación del lado del servidor valida el modelo de formulario. Se recomienda crear una biblioteca de cliente independiente para las validaciones y no mezclarla con otras cosas como el estilo del HTML y la manipulación DOM en la misma biblioteca de cliente.
 
 ### Compatibilidad con funciones personalizadas en expresiones de validación {#supporting-custom-functions-in-validation-expressions-br}
 

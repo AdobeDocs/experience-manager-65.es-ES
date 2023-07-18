@@ -9,16 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 100%
+source-wordcount: '1245'
+ht-degree: 99%
 
 ---
 
 # Resumen de las nuevas funciones | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 ## Informes de transacciones {#transaction-reports}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
+| AEM 6.5 | Este artículo |
+
 
 Los informes de transacciones le permiten capturar y realizar un seguimiento de la cantidad de formularios enviados y documentos representados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Algunos ejemplos de transacciones son:
 

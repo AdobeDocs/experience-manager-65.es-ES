@@ -9,14 +9,19 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '7575'
-ht-degree: 100%
+source-wordcount: '7594'
+ht-degree: 99%
 
 ---
 
 # Flujo de trabajo centrado en Forms en OSGi: referencia de los pasos {#forms-centric-workflow-on-osgi-step-reference}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es) |
+| AEM 6.5 | Este artículo |
 
 Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -51,7 +56,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Resaltar la acción y el comentario de la última tarea en Detalles de la tarea:** seleccione esta opción para mostrar la última acción realizada y el comentario recibido en la sección de detalles de una tarea.
 * **Tipo:** elija el tipo de documento que desea rellenar al iniciar el flujo de trabajo. Puede elegir un formulario adaptable, un formulario adaptable de solo lectura, un documento PDF no interactivo, una interfaz de usuario de agente de comunicación interactiva o un documento del canal Web de comunicación interactiva.
 * **Utilizar formulario adaptable:** especifica el método para localizar el formulario adaptable de entrada. Esta opción está disponible si selecciona Formulario adaptable o Formulario adaptable de solo lectura en la lista desplegable Tipo. Puede utilizar el formulario adaptable enviado al flujo de trabajo, disponible en una ruta de acceso absoluta o disponible en una ruta de acceso de una variable. Puede utilizar una variable de tipo cadena para especificar la ruta.\
-   Puede asociar varios formularios adaptables a un flujo de trabajo. Como resultado, puede especificar un formulario adaptable en tiempo de ejecución mediante los métodos de entrada disponibles.
+  Puede asociar varios formularios adaptables a un flujo de trabajo. Como resultado, puede especificar un formulario adaptable en tiempo de ejecución mediante los métodos de entrada disponibles.
 
 * **Utilizar comunicación interactiva:** especifica el método para localizar la comunicación interactiva de entrada. Puede utilizar el formulario adaptable enviado al flujo de trabajo, disponible en una ruta de acceso absoluta o disponible en una ruta de acceso de una variable. Puede utilizar una variable de tipo cadena para especificar la ruta. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
 
@@ -72,7 +77,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
       * **Elegir un servicio de rellenado previo personalizado:** selecciona el servicio de rellenado previo para recuperar los datos y rellenar previamente el documento del canal Web de comunicación interactiva o la interfaz de usuario de agente.
       * **Utilizar el servicio de rellenado previo de la comunicación interactiva seleccionada arriba:** utilice esta opción para utilizar el servicio de rellenado previo de la comunicación interactiva definida en la lista desplegable Usar comunicación interactiva.
       * **Asignar atributos de solicitud:** utilice la sección Asignar atributos de solicitud para definir el [nombre y el valor del atributo de solicitud](../../forms/using/work-with-form-data-model.md#bindargument). Recupere los detalles de la fuente de datos en función del nombre del atributo y el valor especificados en la solicitud. Puede definir un valor de atributo de solicitud utilizando un valor literal o una variable de tipo de datos de cadena.\
-         Las opciones de asignación de atributos de solicitud y servicio de prellenado solo estarán disponibles si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento de canal Web de comunicación interactiva en la lista desplegable Tipo.
+        Las opciones de asignación de atributos de solicitud y servicio de prellenado solo estarán disponibles si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento de canal Web de comunicación interactiva en la lista desplegable Tipo.
 
 * **Información enviada:** los siguientes campos sirven como ubicaciones de salida para la tarea:
 
@@ -94,7 +99,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Argumentos:** el campo estará disponible cuando se seleccione un script que no sea RandomParticipantChoose en el campo Selector de participantes. El campo permite proporcionar una lista de un argumento separado por comas para el script seleccionado en el campo Selector de participantes.
 
 * **Usuario o grupo:** la tarea se asigna al usuario o grupo seleccionado. La opción estará disponible cuando la opción **Para un usuario o grupo específico** esté seleccionada en el campo **Asignar opciones**. El campo enumera todos los usuarios y grupos del grupo de usuarios del flujo de trabajo.\
-   La lista **Usuario o grupo** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo **usuarios** en el repositorio CRX para ese usuario en particular.
+  La lista **Usuario o grupo** en el menú desplegable enumera los usuarios y grupos a los que el usuario que ha iniciado sesión tiene acceso. La visualización del nombre de usuario depende de si tiene permisos de acceso en el nodo **usuarios** en el repositorio CRX para ese usuario en particular.
 
 * **[!UICONTROL Enviar correo electrónico de notificación]**: seleccione esta opción para enviar notificaciones por correo electrónico al usuario asignado. Estas notificaciones se envían cuando se asigna una tarea a un usuario o a un grupo. Puede usar la variable **[!UICONTROL Dirección de correo electrónico del destinatario]** para especificar el mecanismo para recuperar la dirección de correo electrónico.
 
@@ -134,7 +139,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 ## Paso para enviar correo electrónico {#send-email-step}
 
-Utilice este paso para enviar un correo electrónico, por ejemplo, con un documento de registro, un vínculo de un formulario adaptable o con un documento PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla HTML de correo electrónico para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
+Utilice este paso para enviar un correo electrónico, por ejemplo, con un documento de registro, un vínculo de un formulario adaptable o con un documento PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
 
 El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el [servicio de correo electrónico ](../../forms/using/aem-forms-workflow.md)esté configurado. El paso de correo electrónico tiene las siguientes propiedades:
 
@@ -158,7 +163,7 @@ El paso de correo electrónico utiliza el servicio de correo de Day CQ para envi
 * **Dirección URL del recurso:** utilice la opción para incrustar un vínculo web de una comunicación interactiva al correo electrónico. Después de seleccionar la opción, busque y elija la comunicación interactiva que desea incrustar. El recurso puede residir en el autor o en el servidor de publicación.
 * **Imagen:** utilice esta opción para incrustar una imagen en el correo electrónico. Después de seleccionar la opción, busque y elija la imagen. La opción de imagen solo está disponible para las etiquetas de imagen (&lt;img src=&quot;&#42;&quot;/>) en la plantilla de correo electrónico.
 
-**Dirección de correo electrónico del remitente/destinatario:** seleccione la opción **Literal** para especificar manualmente una dirección de correo electrónico o seleccione la opción **Recuperar a partir de metadatos del flujo de trabajo** para recuperar la dirección de correo electrónico de una propiedad de metadatos. También puede especificar una lista de matrices de propiedades de metadatos para la opción **Recuperar a partir de metadatos del flujo de trabajo**. Seleccione la opción **Variable** para recuperar la dirección de correo electrónico a partir valor almacenado en una variable de tipo de datos de cadena.
+**Correo electrónico del remitente/destinatario:** Seleccione el **Literal** para especificar manualmente una dirección de correo electrónico o seleccionar la **Recuperar de metadatos de flujo de trabajo** para recuperar la dirección de correo electrónico de una propiedad de metadatos. También puede especificar una lista de matrices de propiedades de metadatos para la opción **Recuperar a partir de metadatos del flujo de trabajo**. Seleccione la opción **Variable** para recuperar la dirección de correo electrónico a partir valor almacenado en una variable de tipo de datos de cadena.
 
 **Archivo adjunto:** el recurso disponible en la ubicación especificada se adjunta al correo electrónico. La ruta del recurso puede ser relativa a la carga útil o a la ruta de acceso absoluta. Una ruta de ejemplo es [Payload_Directory]/attachments/.
 
@@ -259,7 +264,7 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los sigu
    * **Recuperar a partir de metadatos de flujo de trabajo:** utilice la opción cuando el valor que desea utilizar se guarde en una propiedad de metadatos de flujo de trabajo. Por ejemplo, emailAddress.
    * **[!UICONTROL Relativo a la carga útil]**: utilice la opción para recuperar el archivo adjunto guardado en una ruta relativa a la carga útil. Seleccione la opción y especifique el nombre de la carpeta que incluye el archivo adjunto o especifique el nombre del archivo adjunto en el cuadro de texto.
 
-      Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
+     Por ejemplo, si la carpeta Relativo a la carga útil en el repositorio CRX incluye un archivo adjunto en la ubicación `attachment\attachment-folder`, especifique `attachment\attachment-folder` en el cuadro de texto después de seleccionar la variable **[!UICONTROL Relativo a la carga útil]**.
    * **Notación de puntos JSON:** utiliza la opción cuando el valor que desea utilizar esté en un archivo JSON. Por ejemplo, insurance.customerDetails.emailAddress. La opción de notación de puntos JSON solo estará disponible si se selecciona la opción Asignar campos de entrada desde la entrada JSON.
    * **Asignar campos de entrada desde la entrada JSON:** especifica la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario.
 
@@ -288,7 +293,7 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 * **Seleccionar ruta de acceso de los datos adjuntos de entrada mediante:** ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el documento de firma. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los archivos adjuntos o recuperar los archivos adjuntos almacenados en una variable de matriz de tipo Doc.
 
 
-   Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos los archivos disponibles directamente en la carpeta se adjuntarán al documento de firma. Si hay archivos disponibles en las carpetas accesibles directamente en la ruta de datos de los archivos adjuntos especificada, los archivos se incluirán en el documento de firma como archivos adjuntos. Si hay carpetas en carpetas accesibles directamente, esas carpetas se omiten.
+  Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos los archivos disponibles directamente en la carpeta se adjuntarán al documento de firma. Si hay archivos disponibles en las carpetas accesibles directamente en la ruta de datos de los archivos adjuntos especificada, los archivos se incluirán en el documento de firma como archivos adjuntos. Si hay carpetas en carpetas accesibles directamente, esas carpetas se omiten.
 
 * **Días hasta la fecha límite:** un documento se marca como vencido (fecha límite superada) después de que no haya actividad en la tarea durante el número de días especificado en el campo **Días hasta la fecha límite**. El número de días se cuenta después de que el documento se asigne a un usuario para su firma.
 * **Frecuencia del correo electrónico de recordatorio:** puede enviar un correo electrónico de recordatorio a intervalos diarios o semanales. La semana se cuenta desde el día en que se asigna el documento a un usuario para su firma.
@@ -437,7 +442,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Seleccionar la ubicación raíz del contenido mediante]**: la raíz del contenido es un valor de cadena que especifica el URI, la referencia absoluta o la ubicación en el repositorio para recuperar los recursos relativos que utiliza el diseño de formulario. Por ejemplo, si el diseño de formulario hace referencia a una imagen de forma relativa, como ../myImage.gif, myImage.gif debe estar ubicado en repository://. El valor predeterminado es repository://, que apunta al nivel raíz del repositorio.
 
-   Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en SampleApp/1.0/forms/Test.xdp, el URI de raíz de contenido debe especificarse como repository://administrator@password/Applications/SampleApp/1.0/forms/ o repositorio:/Applications/SampleApp/1.0/forms/ (cuando la autoridad sea nula). Cuando se especifica el URI de raíz de contenido de esta forma, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
+  Cuando elige un recurso de la aplicación, la ruta del URI raíz del contenido debe tener la estructura correcta. Por ejemplo, si se selecciona un formulario de una aplicación denominada SampleApp y se coloca en SampleApp/1.0/forms/Test.xdp, el URI de raíz de contenido debe especificarse como repository://administrator@password/Applications/SampleApp/1.0/forms/ o repositorio:/Applications/SampleApp/1.0/forms/ (cuando la autoridad sea nula). Cuando se especifica el URI de raíz de contenido de esta forma, las rutas de todos los recursos a los que se hace referencia en el formulario se resuelven en relación con este URI.
 
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 

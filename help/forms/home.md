@@ -4,14 +4,20 @@ seo-title: AEM 6.5 Forms Guide
 description: Utilice esta guía de AEM 6.5 para crear, administrar, publicar y actualizar formularios digitales. Obtenga ayuda para instalarlos, actualizarlos y configurarlos, y aprenda a crear formularios adaptables.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '369'
+ht-degree: 96%
 
 ---
 
 # Guía de Adobe Experience Manager 6.5 de Forms
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html) |
+| AEM 6.5 | Este artículo |
+
 
 Utilice esta guía de AEM 6.5 para crear, administrar, publicar y actualizar formularios digitales. Obtenga ayuda para instalarlos, actualizarlos y configurarlos, y aprenda a crear formularios adaptables.
 

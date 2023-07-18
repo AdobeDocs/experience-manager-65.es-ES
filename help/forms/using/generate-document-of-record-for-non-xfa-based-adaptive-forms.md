@@ -11,14 +11,20 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3488'
 ht-degree: 99%
 
 ---
 
 # Generar documento de registro para formularios adaptables{#generate-document-of-record-for-adaptive-forms}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=es) |
+| AEM 6.5 | Este artículo |
+
 
 ## Información general {#overview}
 
@@ -288,7 +294,8 @@ También puede seleccionar un modelo de formulario al crear un formulario.
    >
    >    * El formulario adaptable se basa en esquemas.
    >    * Utiliza la opción **Asociar plantilla de formulario como plantilla de documento de registro** para el documento de registro.
-
+   >
+   >
 
 1. Haga clic en **Listo.**
 
