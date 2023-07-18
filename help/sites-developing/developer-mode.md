@@ -1,26 +1,22 @@
 ---
 title: Modo de desarrollador
-seo-title: Developer Mode
-description: El modo de desarrollador abre un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual
-seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
-uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
+description: El modo de desarrollador abre un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 1%
 
 ---
 
 # Modo de desarrollador{#developer-mode}
 
-AEM Al editar páginas en la lista de direcciones, se muestran varias: [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) están disponibles, incluido el modo de desarrollador. Se abrirá un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual. Las tres pestañas son:
+Al editar páginas en Adobe Experience Manager AEM (), varias [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) están disponibles, incluido el modo de desarrollador. Se abrirá un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual. Las tres pestañas son:
 
 * **[Componentes](#components)** para ver información de estructura y rendimiento.
 * **[Pruebas](#tests)** para ejecutar pruebas y analizar los resultados.
@@ -38,10 +34,9 @@ Esto ayuda a un desarrollador a lo siguiente:
 >
 >* Solo está disponible en la IU táctil (al editar páginas).
 >* No está disponible en dispositivos móviles ni en ventanas pequeñas en equipos de escritorio (debido a restricciones de espacio).
-   >
-   >   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
+>
+>   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
 >* Solo está disponible para los usuarios que son miembros de `administrators` grupo.
-
 
 >[!CAUTION]
 >
@@ -59,9 +54,8 @@ Esto ayuda a un desarrollador a lo siguiente:
 >Consulte:
 >
 >* Artículo de Knowledge Base, [AEM Solución de problemas de IU táctil](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
->* AEM Sesión de Gems sobre [AEM Modo de desarrollador de.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+>* AEM Sesión de Gems sobre [AEM Modo de desarrollador de.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
 >
-
 
 ## Abriendo modo de desarrollador {#opening-developer-mode}
 
@@ -82,13 +76,13 @@ El panel se divide en dos pestañas:
 Muestra un árbol de componentes que:
 
 * Describe la cadena de componentes y plantillas procesados en la página (SLY, JSP, etc.). El árbol se puede expandir para mostrar el contexto dentro de la jerarquía.
-* Muestra el tiempo de cálculo del lado del servidor necesario para procesar el componente.
+* Muestra el tiempo de cálculo del lado del servidor para procesar el componente.
 * Permite expandir el árbol y seleccionar componentes específicos dentro de él. La selección proporciona acceso a los detalles del componente, como:
 
    * Ruta del repositorio
    * Vínculos a scripts (a los que se accede en el CRXDE Lite)
 
-* Los componentes seleccionados (en el flujo de contenido, indicados por un borde azul) se resaltan en el árbol de contenido (y viceversa).
+* Los componentes seleccionados (en el flujo de contenido, indicados por un borde azul) se resaltarán en el árbol de contenido (y a la inversa).
 
 Esto puede ayudar a:
 
@@ -105,7 +99,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
    * todos los scripts de componente utilizados para procesar el componente.
    * la ruta de contenido del repositorio para este componente específico.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Editar script**: un vínculo que:
 
@@ -116,11 +110,11 @@ Cada entrada de componente puede mostrar (por ejemplo):
    * La jerarquía dentro del componente seleccionado.
    * Tiempos de procesamiento para el componente seleccionado de forma aislada, cualquier componente individual anidado en él y el total combinado.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Algunos vínculos dirigen a scripts en `/libs`. Sin embargo, solo son para referencia, **no debe** editar cualquier elemento en `/libs`, ya que cualquier cambio que realice podría perderse. Esto se debe a que esta rama puede cambiar cada vez que actualice o aplique un paquete de funciones o revisiones. Los cambios que necesite se deben realizar en `/apps`, consulte [Superposiciones y anulaciones](/help/sites-developing/overlays.md).
+>Algunos vínculos dirigen a scripts en `/libs`. Sin embargo, solo son para referencia, **no debe** editar cualquier elemento en `/libs`, ya que cualquier cambio que realice podría perderse. Esto se debe a que esta rama puede sufrir cambios cada vez que actualice o aplique una revisión o un paquete de funciones. Realice los cambios que necesite en `/apps`. Consulte [Superposiciones y anulaciones](/help/sites-developing/overlays.md).
 
 ### Errores {#errors}
 
@@ -131,7 +125,7 @@ Espero que el **Errores** La pestaña siempre estará vacía (como se muestra ar
 * Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código adecuado dentro de CRXDE Lite.
 * Advertencia si el componente abre una sesión de administración.
 
-Por ejemplo, en una situación en la que se llama a un método indefinido, el error resultante se mostrará en la variable **Errores** pestaña:
+Por ejemplo, en una situación en la que se llama a un método indefinido, el error resultante se muestra en la variable **Errores** pestaña:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -143,4 +137,4 @@ La entrada del componente en el árbol de la pestaña Componentes también se ma
 >
 >AEM En la versión 6.2, las funciones de prueba del modo de desarrollador se volvieron a implementar como una aplicación de herramientas independiente.
 >
->Para obtener información detallada, consulte [Prueba de la IU](/help/sites-developing/hobbes.md).
+>Para obtener más información, consulte [Prueba de la IU](/help/sites-developing/hobbes.md).

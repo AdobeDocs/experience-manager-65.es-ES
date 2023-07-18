@@ -1,17 +1,15 @@
 ---
-title: Fragmentos de experiencias en el desarrollo de AEM Sites
+title: Fragmentos de experiencias en el desarrollo de Adobe Experience Manager Sites
 description: Obtenga información sobre cómo personalizar fragmentos de experiencias.
-uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1777'
 ht-degree: 1%
 
 ---
@@ -36,7 +34,7 @@ Uso del `.plain.` en la dirección URL, puede acceder a la representación del H
 
 Está disponible desde el explorador, pero su propósito principal es permitir que otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) accedan al contenido del fragmento de experiencia directamente, únicamente mediante la dirección URL.
 
-La representación de HTML sin formato agrega las rutas de protocolo, host y contexto a las rutas siguientes:
+La representación de HTML sin formato agrega el protocolo, el host y la ruta de contexto a las rutas que son:
 
 * del tipo: `src`, `href`, o `action`
 
@@ -71,7 +69,7 @@ Se recomienda configurar la reescritura mediante una superposición. Consulte [S
 
 ## Variaciones sociales {#social-variations}
 
-Las variantes sociales se pueden publicar en las redes sociales (texto e imagen). AEM En estos casos, las variantes sociales pueden contener componentes como, por ejemplo, componentes de texto o componentes de imagen.
+Las variantes sociales se pueden publicar en las redes sociales (texto e imagen). En Adobe Experience Manager AEM (), estas variantes sociales pueden contener componentes como, por ejemplo, componentes de texto o componentes de imagen.
 
 La imagen y el texto de la publicación social se pueden tomar de cualquier tipo de recurso de imagen o de texto con cualquier nivel de profundidad (en el bloque de creación o en el contenedor de diseño).
 
@@ -109,11 +107,9 @@ Para crear una plantilla de fragmento de experiencia que detecte el **Crear frag
 
    1. Y el nombre de la plantilla debe comenzar por:
       `experience-fragments`
-Esto permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como 
-`cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
+Esto permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments como `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
 
 1. [Plantillas permitidas](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) se puede configurar en la consola Fragmentos de experiencias.
-
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
@@ -148,7 +144,7 @@ Uso del [Exportar a Target](/help/sites-administering/experience-fragments-targe
 
 Esta función puede ser [AEM habilitado en una instancia de autor de](/help/sites-administering/experience-fragments-target.md#Prerequisites). Requiere una configuración de Adobe Target válida y configuraciones para el externalizador de vínculos.
 
-El externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión de HTML de la oferta de Target, que se envía posteriormente a Adobe Target. Esto es necesario, ya que Adobe Target requiere que se pueda acceder públicamente a todos los vínculos dentro de la oferta de HTML de Target; esto significa que cualquier recurso al que hagan referencia los vínculos y el propio fragmento de experiencia deben publicarse antes de poder utilizarse.
+El externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión de HTML de la oferta de Target, que luego se envía a Adobe Target. Esto es necesario, ya que Adobe Target requiere que se pueda acceder públicamente a todos los vínculos dentro de la oferta de HTML de Target; esto significa que cualquier recurso al que hagan referencia los vínculos y el propio fragmento de experiencia deben publicarse antes de poder utilizarse.
 
 De forma predeterminada, al crear una oferta de HTML AEM de Target, se envía una solicitud a un selector de Sling personalizado en, que se encuentra en el menú de configuración de la. Este selector se llama `.nocloudconfigs.html`. Como su nombre indica, crea una representación HTML sin formato de un fragmento de experiencia, pero no incluye configuraciones de nube (lo que sería información superflua).
 
@@ -165,11 +161,11 @@ Después de generar la página HTML, la canalización Sling Rewriter realiza mod
    1. `src` atributos
    1. `href` atributos
    1. `*-src` atributos (como data-src, custom-src, etc.)
-   1. `*-href` atributos (como `data-href`, `custom-href`, `img-href`, etc)
+   1. `*-href` atributos (como `data-href`, `custom-href`, `img-href`, etc.)
 
    >[!NOTE]
    >
-   >En la mayoría de los casos, los vínculos internos del HTML son vínculos relativos, pero puede haber casos en los que los componentes personalizados proporcionen direcciones URL completas en el HTML. AEM De forma predeterminada, no tiene en cuenta estas direcciones URL completas y no realiza ninguna modificación.
+   >Normalmente, los vínculos internos del HTML son vínculos relativos, pero puede haber casos en los que los componentes personalizados proporcionen direcciones URL completas en el HTML. AEM De forma predeterminada, no tiene en cuenta estas direcciones URL completas y no realiza ninguna modificación.
 
    AEM Los vínculos de estos atributos se ejecutan a través del Externalizador de vínculos de `publishLink()` para volver a crear la dirección URL como si estuviera en una instancia publicada y, como tal, disponible públicamente.
 
@@ -216,7 +212,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Para utilizar la interfaz, primero debe crear un paquete que contenga un nuevo componente de servicio que implemente la interfaz del proveedor de reescritura de vínculos.
 
-Este servicio se utilizará para conectar con la reescritura de Exportación de fragmentos de experiencias a Target para tener acceso a los distintos vínculos.
+Este servicio se utiliza para conectarse a la reescritura de Exportación de fragmentos de experiencias a Target para tener acceso a los distintos vínculos.
 
 Por ejemplo, `ComponentService`:
 
@@ -281,7 +277,7 @@ En el ejemplo anterior, nos gustaría reescribir:
 * `href` solo atributos
 
 * para un fragmento de experiencia específico:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Cualquier otro fragmento de experiencia que pase por el sistema Exportar a destino se ignorará y no se verá afectado por los cambios implementados en este servicio.
 
@@ -294,16 +290,15 @@ Para la variación del fragmento de experiencia afectada por el proceso de reesc
 Como entrada, el método recibe los parámetros:
 
 * `link`
-El 
-`String` representación del vínculo que se está procesando actualmente. Suele ser una dirección URL relativa que señala al recurso en la instancia de autor.
+El `String` representación del vínculo que se está procesando. Suele ser una dirección URL relativa que señala al recurso en la instancia de autor.
 
 * `tag`
-Nombre del elemento HTML que se está procesando actualmente.
+Nombre del elemento HTML que se está procesando.
 
 * `attribute`
 El nombre exacto del atributo.
 
-Si, por ejemplo, el sistema Exportar a Target está procesando actualmente este elemento, puede definir lo siguiente `CSSInclude` como:
+Por ejemplo, si el sistema Exportar a destino está procesando este elemento, puede definir lo siguiente `CSSInclude` como:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -350,7 +345,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->Si el método anterior devuelve `null`, el sistema Exportar a Target dejará el vínculo tal cual, un vínculo relativo a un recurso.
+>Si el método anterior devuelve `null`, el sistema Exportar a Target deja el vínculo tal cual, un vínculo relativo a un recurso.
 
 #### Prioridades: getPriority {#priorities-getpriority}
 

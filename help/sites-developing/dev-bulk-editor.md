@@ -1,37 +1,33 @@
 ---
 title: Desarrollo del editor en bloque
-seo-title: Developing the Bulk Editor
 description: El etiquetado permite clasificar y organizar el contenido
-seo-description: Tagging allows content to be categorized and organized
-uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 2%
 
 ---
 
 # Desarrollo del editor en bloque{#developing-the-bulk-editor}
 
-En esta sección se describe cómo desarrollar la herramienta de edición masiva y cómo ampliar el componente Lista de productos, que se basa en el editor masivo.
+En esta sección se describe cómo desarrollar la herramienta Editor por lotes y cómo ampliar el componente Lista de productos, que se basa en el Editor por lotes.
 
 ## Parámetros de consulta del editor en lotes {#bulk-editor-query-parameters}
 
-Al trabajar con el editor en bloque, hay varios parámetros de consulta que puede agregar a la URL para llamar al editor en bloque con una configuración específica. Si desea que el editor en bloque se utilice siempre con una configuración determinada, por ejemplo, como en el componente Lista de productos, debe modificar bulkeditor.jsp (ubicado en /libs/wcm/core/components/bulkeditor) o crear un componente con la configuración específica. Los cambios realizados con los parámetros de consulta no son permanentes.
+Al trabajar con el Editor por lotes, puede añadir varios parámetros de consulta a la URL para llamar al Editor por lotes con una configuración específica. Si desea utilizar siempre el Editor por lotes con una configuración determinada, por ejemplo, como en el componente Lista de productos, debe editar `bulkeditor.jsp` (en /libs/wcm/core/components/bulkeditor) o cree un componente con la configuración específica. Los cambios realizados con los parámetros de consulta no son permanentes.
 
 Por ejemplo, si escribe lo siguiente en la dirección URL del explorador:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-el editor por lotes se muestra sin la variable **Ruta raíz** field como hrp=true oculta el campo. Con el parámetro hrp=false, se muestra el campo (el valor predeterminado).
+El editor en masa se muestra sin la variable **Ruta raíz** field como hrp=true oculta el campo. Con el parámetro hrp=false, se muestra el campo (el valor predeterminado).
 
-A continuación se muestra una lista de los parámetros de consulta del editor en masa:
+A continuación se muestra una lista de los parámetros de consulta del Editor por lotes:
 
 >[!NOTE]
 >
@@ -164,16 +160,16 @@ A continuación se muestra una lista de los parámetros de consulta del editor e
 
 ### Desarrollo de un componente basado en el editor por lotes: el componente Lista de productos {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Esta sección proporciona información general sobre cómo utilizar el editor en bloque y ofrece una descripción del componente de Geometrixx existente basado en el editor en bloque: el componente Lista de productos.
+Esta sección proporciona información general sobre cómo utilizar el Editor por lotes y ofrece una descripción del componente de Geometrixx existente basado en el Editor por lotes: el componente Lista de productos.
 
-El componente Lista de productos permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista de productos para representar los productos en un catálogo. La información se presenta en una tabla de HTML estándar y las ediciones se realizan en la **Editar** , que contiene un widget de Editor en lotes. (Este editor en bloque es exactamente el mismo al que se puede acceder desde /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista de productos se ha configurado para una funcionalidad de editor en bloque específica y limitada. Se pueden configurar todas las partes del editor en bloque (o los componentes derivados del editor en bloque).
+El componente Lista de productos permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista de productos para representar los productos en un catálogo. La información se presenta en una tabla de HTML estándar y las ediciones se realizan en la **Editar** , que contiene un widget de Editor en lotes. (Este editor en bloque es el mismo al que se puede acceder en /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista de productos se ha configurado para funciones específicas y limitadas del Editor por lotes. Se pueden configurar todas las partes del editor en bloque (o los componentes derivados del editor en bloque).
 
 Con el editor en bloque, puede añadir, modificar, eliminar, filtrar y exportar las filas, guardar modificaciones e importar un conjunto de filas. Cada fila se almacena como un nodo en la propia instancia del componente Lista de productos. Cada celda es una propiedad de cada nodo. Esta es una opción de diseño y se puede cambiar fácilmente, por ejemplo, puede almacenar nodos en otro lugar del repositorio. La función del servlet de consulta es devolver la lista de los nodos que se van a mostrar; la ruta de búsqueda se define como una instancia de lista de productos.
 
-AEM El código fuente del componente Lista de productos está disponible en el repositorio en /apps/geometrixx/components/productlist y se compone de varias partes, como todos los componentes de la:
+El código fuente del componente Lista de productos está disponible en el repositorio en /apps/geometrixx/components/productlist y se compone de varias partes, como todos los componentes de Adobe Experience Manager AEM ():
 
 * Procesamiento de HTML: el procesamiento se realiza en un archivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). El JSP lee los subnodos del componente de lista de productos actual y muestra cada uno de ellos como una fila de una tabla de HTML.
-* Cuadro de diálogo Editar, que es donde se define la configuración del Editor por lotes. Configure el cuadro de diálogo para que coincida con las necesidades del componente: columnas disponibles y posibles acciones realizadas en la cuadrícula o en la búsqueda. Consulte [propiedades de configuración del editor en lotes](#bulk-editor-configuration-properties) para obtener información sobre todas las propiedades de configuración.
+* Cuadro de diálogo Editar, que es donde se define la configuración del Editor por lotes. Configure el cuadro de diálogo para que coincida con las necesidades del componente: columnas disponibles y posibles acciones realizadas en la cuadrícula o en la búsqueda. Consulte [Propiedades de configuración del Editor por lotes](#bulk-editor-configuration-properties) para obtener información sobre todas las propiedades de configuración.
 
 Esta es una representación XML de los subnodos del cuadro de diálogo:
 
@@ -268,7 +264,7 @@ Esta es una representación XML de los subnodos del cuadro de diálogo:
 
 ### Propiedades de configuración del editor en lotes {#bulk-editor-configuration-properties}
 
-Se pueden configurar todas las partes del editor en bloque. En la tabla siguiente se enumeran todas las propiedades de configuración del editor en masa.
+Se pueden configurar todas las partes del editor en bloque. En la tabla siguiente se enumeran todas las propiedades de configuración del Editor por lotes.
 
 <table>
  <tbody>
@@ -294,7 +290,7 @@ Se pueden configurar todas las partes del editor en bloque. En la tabla siguient
   </tr>
   <tr>
    <td>extraCols</td>
-   <td>Propiedades buscadas adicionales (mostradas en un campo de texto separados por comas)</td>
+   <td>Propiedades buscadas adicionales (mostradas en un campo de texto separadas por comas)</td>
   </tr>
   <tr>
    <td>initialSearch</td>
@@ -526,14 +522,14 @@ En el ejemplo anterior, la columna de selección es la primera columna como forc
 
 De forma predeterminada, el servlet de consulta se encuentra en `/libs/wcm/core/components/bulkeditor/json.java`. Puede configurar otra ruta para recuperar los datos.
 
-El servlet de consulta funciona de la siguiente manera: recibe una consulta GQL y las columnas que se van a devolver, calcula los resultados y devuelve los resultados al editor en bloque como un flujo JSON.
+El servlet de consulta funciona de la siguiente manera: recibe una consulta GQL y las columnas que se van a devolver, calcula los resultados y devuelve los resultados al Editor por lotes como un flujo JSON.
 
 En el caso del componente Lista de productos, los dos parámetros enviados al servlet de Consulta son los siguientes:
 
 * query: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
-y la secuencia JSON devuelta es la siguiente:
+Y la secuencia JSON se devuelve de la siguiente manera:
 
 ```
 {
@@ -556,7 +552,7 @@ Puede ampliar el servlet de consulta para devolver un modelo de herencia complej
 
 ### Guardar servlet {#save-servlet}
 
-En la configuración predeterminada del editor en bloque, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El editor en bloque mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se crea una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta del POST a cada ruta con los valores de propiedades actualizados. Esta es la base del concepto de Sling y funciona bien si cada celda es una propiedad del nodo. Sin embargo, si el servlet de consulta está implementado para realizar el cálculo de herencia, este modelo no puede funcionar porque una propiedad devuelta por el servlet de consulta se puede heredar de otro nodo.
+En la configuración predeterminada del Editor por lotes, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El Editor por lotes mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se crea una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta del POST a cada ruta con los valores de propiedades actualizados. Esta es la base del concepto de Sling y funciona bien si cada celda es una propiedad del nodo. Sin embargo, si el servlet de consulta está implementado para realizar el cálculo de herencia, este modelo no puede funcionar porque una propiedad devuelta por el servlet de consulta se puede heredar de otro nodo.
 
 El concepto Guardar servlet implica que las modificaciones no se publican directamente en cada nodo, sino que se publican en un servlet que realiza el trabajo de guardado. Esto ofrece a este servlet la posibilidad de analizar las modificaciones y guardar las propiedades en el nodo derecho.
 
@@ -564,14 +560,14 @@ Cada propiedad actualizada se envía al servlet en el siguiente formato:
 
 * Nombre del parámetro: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
-   Ejemplo: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
+  Ejemplo: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * Valor: &lt;value>
 
-   Ejemplo: 12123
+  Ejemplo: 12123
 
 El servlet debe saber dónde se almacena la propiedad catalogCode.
 
 Una implementación predeterminada del servlet Guardar está disponible en /libs/wcm/bulkeditor/save/POST.jsp y se utiliza en el componente Lista de productos. Toma todos los parámetros de la solicitud (con un &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> ) y escribe propiedades en los nodos mediante la API JCR. También crea un nodo si no existen (filas insertadas en la cuadrícula).
 
-El código predeterminado no debe utilizarse tal cual, ya que reimplementa lo que hace el servidor de forma nativa (un POST en &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) y, por lo tanto, solo es un buen punto de partida para crear un servlet Save que administre un modelo de herencia de propiedades.
+El código predeterminado no debe utilizarse tal cual, ya que reimplementa lo que hace el servidor de forma nativa (un POST en &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) y, por lo tanto, solo es un buen punto de partida para crear un servlet Save que pueda administrar un modelo de herencia de propiedades.

@@ -1,8 +1,6 @@
 ---
-title: AEM Actualización a 6.5
-seo-title: Upgrading to AEM 6.5
-description: AEM AEM Obtenga información acerca de los conceptos básicos para actualizar una instalación de una versión más antigua de la a la versión 6.5 de la aplicación.
-seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
+title: Actualización a Adobe Experience Manager 6.5
+description: Obtenga información acerca de los conceptos básicos para actualizar una instalación de Adobe Experience Manager AEM AEM () anterior a la versión 6.5 de la versión de.
 contentOwner: sarchiz
 topic-tags: upgrading
 content-type: reference
@@ -10,22 +8,21 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
-# AEM Actualización a 6.5 {#upgrading-to-aem}
+# Actualización a Adobe Experience Manager AEM () 6.5 {#upgrading-to-aem}
 
-AEM AEM En esta sección, explicamos la actualización de una instalación de a la versión 6.5 de:
+AEM AEM Esta sección trata sobre la actualización de una instalación de a la versión 6.5 de:
 
 * [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md)
 * [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md)
 * [AEM Compatibilidad con versiones anteriores en 6.5](/help/sites-deploying/backward-compatibility.md)
-
-   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+  <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Procedimiento de actualización](/help/sites-deploying/upgrade-procedure.md)
 * [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
@@ -48,13 +45,13 @@ AEM Para facilitar la referencia a las instancias de involucradas en estos proce
 
 AEM A continuación se indican algunos cambios importantes que se han producido en las últimas versiones de la aplicación de:
 
-AEM.0 presentó el nuevo repositorio Jackrabbit Oak. Los administradores de persistencia se han sustituido por [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4). A partir de la versión 6.1, CRX2 ya no es compatible. Es necesario ejecutar una herramienta de migración llamada crx2oak para migrar repositorios CRX2 de instancias 5.6.1. Para obtener más información, consulte [Uso de la herramienta de migración CRX2OAK](/help/sites-deploying/using-crx2oak.md).
+AEM.0 presentó el nuevo repositorio Jackrabbit Oak. Los administradores de persistencia se han sustituido por [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4). A partir de la versión 6.1, CRX2 ya no es compatible. Se debe ejecutar una herramienta de migración llamada crx2oak para migrar repositorios CRX2 de instancias 5.6.1. Para obtener más información, consulte [Uso de la herramienta de migración CRX2OAK](/help/sites-deploying/using-crx2oak.md).
 
-AEM Si se va a utilizar Assets Insights y está actualizando desde una versión anterior a la 6.2, los recursos deben migrarse y deben tener ID generados a través de un bean JMX. En nuestras pruebas internas, se migraron 125.000 recursos en un entorno TarMK en una hora, pero los resultados pueden variar.
+AEM Si se está utilizando Assets Insights y está actualizando desde una versión anterior a la 6.2, los recursos deben migrarse y deben tener ID generados a través de un bean JMX. Para las pruebas internas de Adobe, se migraron 125 000 recursos en un entorno TarMK en una hora, pero los resultados pueden variar.
 
-6.3 introdujo un nuevo formato para `SegmentNodeStore`, que es la base de la implementación de TarMK. AEM Si está actualizando desde una versión anterior a la 6.3, se requerirá una migración del repositorio como parte de la actualización, lo que implica un tiempo de inactividad en el sistema.
+6.3 introdujo un nuevo formato para `SegmentNodeStore`, que es la base de la implementación de TarMK. AEM Si está actualizando desde una versión anterior a la 6.3, requiere una migración del repositorio como parte de la actualización, lo que implica un tiempo de inactividad en el sistema.
 
-Ingeniería de Adobe estima que esto es alrededor de 20 minutos. Tenga en cuenta que no es necesario volver a indexar. Además, se ha lanzado una nueva versión de la herramienta crx2oak para que funcione con el nuevo formato de repositorio.
+Ingeniería de Adobe estima que esto es alrededor de 20 minutos. No es necesaria la reindexación. Además, se ha lanzado una nueva versión de la herramienta crx2oak para que funcione con el nuevo formato de repositorio.
 
 **AEM AEM Esta migración no es necesaria si se actualiza de la versión 6.3 a la versión 6.5 de la de datos.**
 
@@ -80,9 +77,9 @@ AEM La actualización de los recursos es un proceso de varios pasos, que a veces
 
 ## Flujo de actualización {#upgrade-overview-1}
 
-El diagrama siguiente muestra el flujo recomendado general y resalta el enfoque de actualización. Tenga en cuenta la referencia a las nuevas funciones que hemos introducido. La actualización debe comenzar con Pattern Detector (consulte [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md)AEM ), lo que le permitirá decidir la ruta que desea seguir para mantener la compatibilidad con la versión 6.4 de la aplicación en función de los patrones que aparezcan en el informe generado.
+El diagrama siguiente muestra el flujo recomendado general y resalta el enfoque de actualización. Tenga en cuenta la referencia a las nuevas funciones que ha introducido el Adobe. La actualización debe comenzar con Pattern Detector (consulte [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md)AEM ), lo que le permitirá decidir la ruta que desea seguir para mantener la compatibilidad con la versión 6.4 de la aplicación en función de los patrones que aparezcan en el informe generado.
 
-En 6.5 se centró especialmente en mantener todas las nuevas funciones compatibles con versiones anteriores, pero en los casos en que aún observara algunos problemas de compatibilidad con versiones anteriores, el modo de compatibilidad le permite retrasar temporalmente el desarrollo para mantener su código personalizado compatible con 6.5. Este método le ayuda a evitar los esfuerzos de desarrollo inmediatamente después de la actualización (consulte [AEM Compatibilidad con versiones anteriores en 6.5](/help/sites-deploying/backward-compatibility.md)).
+En 6.5 se ha hecho un hincapié importante en mantener todas las nuevas funciones compatibles con versiones anteriores, pero en los casos en que siga viendo algunos problemas de compatibilidad con versiones anteriores, el modo de compatibilidad le permite retrasar temporalmente el desarrollo para mantener su código personalizado compatible con 6.5. Este método le ayuda a evitar los esfuerzos de desarrollo inmediatamente después de la actualización (consulte [AEM Compatibilidad con versiones anteriores en 6.5](/help/sites-deploying/backward-compatibility.md)).
 
 Por último, en el ciclo de desarrollo de 6.5, las funciones introducidas en Actualizaciones sostenibles (consulte [Actualizaciones sostenibles](/help/sites-deploying/sustainable-upgrades.md)) le ayuda a seguir las prácticas recomendadas para que las futuras actualizaciones sean aún más eficientes y sin problemas.
 
