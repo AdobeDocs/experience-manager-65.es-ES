@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1866'
 ht-degree: 9%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 9%
 
 Dado que Adobe Experience Manager AEM () se basa en Sling y utiliza un repositorio JCR, los tipos de nodo que ofrecen ambos están disponibles para su uso:
 
-* [Tipos de nodos JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de nodos JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipos de nodos de Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Además de estos. AEM proporciona una amplia gama de tipos de nodos personalizados.
+AEM Además de estos tipos de nodos, proporciona una serie de tipos de nodos personalizados.
 
 ## Auditoría {#audit}
 
@@ -145,7 +145,7 @@ Define la página de CQ predeterminada.
 
 **Descripción**
 
-Define un tipo de mezcla que marca los nodos como pseudopáginas. Esto significa que se pueden adaptar para admitir la edición de páginas y WCM.
+Define un tipo de mezcla que marca los nodos como pseudopáginas. En otras palabras, significa que se pueden adaptar para admitir la edición de páginas y WCM.
 
 **Definición**
 
@@ -160,9 +160,9 @@ Define el nodo predeterminado para el contenido de la página, con las propiedad
 * `@prop jcr:title` : título de la página.
 * `@prop jcr:description` - Descripción de esta página.
 * `@prop cq:template` - Ruta a la plantilla utilizada para crear la página.
-* `@prop cq:allowedTemplates` - Lista de expresiones regulares utilizadas para determinar la(s) ruta(s) a la plantilla permitida.
-* `@prop pageTitle` - Título mostrado normalmente en `<title>` etiqueta.
-* `@prop navTitle` - Título utilizado generalmente en la navegación.
+* `@prop cq:allowedTemplates` : lista de expresiones regulares utilizadas para determinar las rutas a la plantilla permitida.
+* `@prop pageTitle` - Título mostrado en `<title>` etiqueta.
+* `@prop navTitle` : título utilizado en la navegación.
 * `@prop hideInNav` : especifica si la página debe ocultarse en la navegación.
 * `@prop onTime` - Hora a la que esta página pasa a ser válida.
 * `@prop offTime` - Hora a la que esta página deja de ser válida.
@@ -202,8 +202,8 @@ Define una plantilla de CQ.
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` : Patrones de expresión regular para determinar la(s) ruta(s) a las plantillas permitidas como plantillas principales.
-* `@prop allowedChildren` : Patrones de expresión regular para determinar la ruta o rutas a las plantillas permitidas como plantillas secundarias.
+* `@prop allowedParents` : patrones de expresión regular para determinar las rutas a las plantillas permitidas como plantillas principales.
+* `@prop allowedChildren` : Patrones de expresión regular para determinar las rutas a las plantillas permitidas como plantillas secundarias.
 * `@prop ranking` - Colocar dentro de la lista de plantillas en el cuadro de diálogo Crear página.
 
 **Definición**
@@ -232,15 +232,15 @@ Define un componente CQ.
 * `@prop dialogPath` - Ruta del cuadro de diálogo principal (alternativa al cuadro de diálogo).
 * `@node design_dialog` - Cuadro de diálogo de diseño.
 * `@prop cq:cellName` - Nombre de la celda de diseño.
-* `@prop cq:isContainer` - Indica si se trata de un componente contenedor. Esto fuerza a que se utilicen los nombres de celda de los componentes secundarios en lugar de los nombres de ruta. Por ejemplo, la variable `parsys` es un componente contenedor. Si no se define este valor, la comprobación se realiza en función de la existencia de un `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indica si es un componente contenedor. Fuerza el uso de nombres de celda de componentes secundarios en lugar de nombres de ruta. Por ejemplo, la variable `parsys` es un componente contenedor. Si no se define este valor, la comprobación se realiza en función de la existencia de un `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Si es verdad, sin decoración `div` las etiquetas se dibujan al incluir este componente.
 * `@node cq:editConfig` - La configuración que define los parámetros de la barra de edición.
 * `@node cq:childEditConfig` : la configuración de edición que heredan los componentes secundarios.
 * `@node cq:htmlTag` : define atributos de etiqueta adicionales que se añaden al &quot;entorno&quot; `div` cuando se incluye el componente.
 * `@node icon.png`: archivo que contiene un icono característico.
 * `@node thumbnail.png` : archivo que contiene una imagen en miniatura característica.
-* `@prop allowedParents` : patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes principales.
-* `@prop allowedChildren` : Patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes secundarios.
+* `@prop allowedParents` : patrones de expresión regular para determinar las rutas de los componentes permitidos como componentes principales.
+* `@prop allowedChildren` : Patrones de expresión regular para determinar las rutas de los componentes que se permiten como componentes secundarios.
 * `@node virtual` : contiene subnodos que reflejan los componentes virtuales utilizados para arrastrar y soltar el componente.
 * `@prop componentGroup` : nombre del grupo de componentes, utilizado para arrastrar y soltar el componente.
 * `@node cq:infoProviders` : contiene subnodos, cada uno de los cuales tiene una propiedad `className` que hace referencia a un `PageInfoProvider`.
@@ -314,9 +314,9 @@ Define la configuración de la &quot;barra de edición&quot;.
 
 **Descripción**
 
-Configura un destino de colocación de un componente. El nombre de este nodo se utilizará como ID para arrastrar y soltar.
+Configura un destino de colocación de un componente. El nombre de este nodo se utiliza como ID para arrastrar y soltar.
 
-* `@prop accept` - Lista de tipos MIME aceptados por este destino de colocación; p. ej., `["image/*"]`
+* `@prop accept` - Lista de tipos MIME aceptados por este destino de colocación; por ejemplo, `["image/*"]`
 * `@prop groups` - Lista de grupos de arrastrar y soltar que aceptan una fuente.
 * `@prop propertyName` : nombre de la propiedad utilizado para almacenar la referencia.
 
@@ -332,7 +332,7 @@ Configura un destino de colocación de un componente. El nombre de este nodo se 
 
 **Descripción**
 
-Define un componente CQ virtual. Actualmente solo se utilizan para el nuevo asistente de arrastrar y soltar componentes.
+Define un componente CQ virtual. Actualmente solo se utiliza para el nuevo asistente de arrastrar y soltar componentes.
 
 * `@prop jcr:title` : título de este componente.
 * `@prop jcr:description` : descripción de este componente.
@@ -340,8 +340,8 @@ Define un componente CQ virtual. Actualmente solo se utilizan para el nuevo asis
 * `@node cq:childEditConfig`: edite la configuración que heredan los componentes secundarios.
 * `@node icon.png` : archivo que contiene un icono característico.
 * `@node thumbnail.png` : archivo que contiene una imagen en miniatura característica.
-* `@prop allowedParents` : patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes principales.
-* `@prop allowedChildren` : patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes secundarios.
+* `@prop allowedParents` : patrones de expresión regular para determinar las rutas de los componentes permitidos como componentes principales.
+* `@prop allowedChildren` : patrones de expresión regular para determinar las rutas de los componentes permitidos como componentes secundarios.
 * `@prop componentGroup` : nombre del grupo de componentes para el componente de arrastrar y soltar.
 
 **Definición**
@@ -361,7 +361,7 @@ Define un componente CQ virtual. Actualmente solo se utilizan para el nuevo asis
 
 **Descripción**
 
-Define los oyentes (del lado del cliente) que se ejecutan en un evento de edición. Los valores deben hacer referencia a una función de escucha del lado del cliente válida o contener un acceso directo predefinido:
+Define los oyentes (del lado del cliente) que se ejecutan en un evento de edición. Los valores deben hacer referencia a una función de escucha válida del lado del cliente o contener un acceso directo predefinido:
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -444,7 +444,7 @@ Lista de contenedores.
 
 **Descripción**
 
-`cq:attributes` es el tipo de nodo de las etiquetas de versión de ContentBus. Este nodo solo tiene una serie de propiedades, de las cuales tres son predefinidas como &quot;created&quot;, &quot;csd&quot; y &quot;timestampe&quot;.
+El tipo de nodo `cq:attributes` es para las etiquetas de versión de ContentBus. Este nodo solo tiene una serie de propiedades, de las cuales tres son predefinidas como &quot;created&quot;, &quot;csd&quot; y &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Marca de tiempo de la creación de la información de versión, generalmente la hora de registro de la versión anterior o la hora de creación de la página.
 * `@prop csd (string) mandatory copy` : atributo estándar de csd, copia de la propiedad cq:csd del nodo de página
@@ -485,9 +485,9 @@ Los elementos de una `cq:Cq4ContentPage` son:
 
 Configuración de encuesta.
 
-* `@prop source (String) mandatory` : URI de fuente de datos, esto es obligatorio y no debe estar vacío
-* `@prop target (String)` : ubicación de destino en la que se almacenan los datos recuperados de la fuente de datos. Es opcional y toma el valor predeterminado del nodo cq:PollConfig.
-* `@prop interval (Long)` : intervalo en segundos durante el cual se sondearán los datos nuevos o actualizados de la fuente de datos. Es opcional y el valor predeterminado es de 30 minutos (1800 segundos).
+* `@prop source (String) mandatory` - URI de fuente de datos. Requerido y no debe estar vacío.
+* `@prop target (String)` : ubicación de destino en la que se almacenan los datos recuperados de la fuente de datos. Opcional y toma el valor predeterminado del nodo cq:PollConfig.
+* `@prop interval (Long)` : intervalo en segundos durante el cual se sondearán los datos nuevos o actualizados de la fuente de datos. Opcional y el valor predeterminado es de 30 minutos (1800 segundos).
 * [Crear servicios de importador de datos personalizados para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definición**
@@ -814,7 +814,7 @@ Cualquier usuario/sitio web público puede etiquetar el contenido (estilo Web2.0
 
 **Descripción**
 
-Agrega un `cq:userContent` subnodo que los usuarios pueden modificar. Cada usuario tendrá su propio `cq:userContent/<userid>` subnodo, que generalmente tiene el mixin `cq:UserTaggable`.
+Agrega un `cq:userContent` subnodo que los usuarios pueden modificar. Cada usuario tiene su propio `cq:userContent/<userid>` subnodo, que generalmente tiene el mixin `cq:UserTaggable`.
 
 **Definición**
 
@@ -1062,7 +1062,7 @@ Datos de flujo de trabajo
 
 **Descripción**
 
-Asignar automáticamente la configuración del flujo de trabajo. La configuración sigue esta estructura:
+Asignar automáticamente la configuración del flujo de trabajo. La configuración sigue esta estructura a continuación:
 * `workflows`
    * `+ name1`
       * `- cq:path`

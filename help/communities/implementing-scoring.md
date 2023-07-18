@@ -1,21 +1,17 @@
 ---
 title: Puntuación y distintivos de comunidades
-seo-title: Communities Scoring and Badges
 description: La puntuación y las insignias de AEM Communities le permiten identificar y recompensar a los miembros de la comunidad
-seo-description: AEM Communities scoring and badges lets you identify and reward community members
-uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2853'
 ht-degree: 2%
 
 ---
@@ -44,17 +40,17 @@ Los principales aspectos de la puntuación y las insignias son:
 
 Las insignias se colocan bajo el nombre de un miembro para indicar su rol o su posición en la comunidad. Las insignias pueden mostrarse como una imagen o como un nombre. Cuando se muestra como una imagen, el nombre se incluye como texto alternativo para fines de accesibilidad.
 
-De forma predeterminada, los distintivos se encuentran en el repositorio en
+De forma predeterminada, los distintivos se encuentran en el repositorio en las siguientes ubicaciones:
 
 * `/libs/settings/community/badging/images`
 
 Si se almacenan en una ubicación diferente, todos deben poder acceder a ellas.
 
-Las insignias se diferencian en UGC en cuanto a si se asignaron o se obtuvieron según las reglas. Actualmente, las insignias asignadas aparecen como texto y las insignias obtenidas aparecen como una imagen.
+Las insignias se diferencian en UGC si se asignaron o se obtuvieron según las reglas. Actualmente, las insignias asignadas aparecen como texto y las insignias obtenidas aparecen como una imagen.
 
 ### IU de administración de distintivos {#badge-management-ui}
 
-Las Comunidades [Consola Insignias](/help/communities/badges.md) permite añadir insignias personalizadas que se pueden mostrar para un miembro cuando se ganan (se otorgan) o cuando asumen un rol específico en la comunidad (se asignan).
+Las Comunidades [Consola Insignias](/help/communities/badges.md) le permite añadir insignias personalizadas que se pueden mostrar para un miembro cuando se ganan (se otorgan) o cuando asumen un rol específico en la comunidad (se asignan).
 
 ### Insignias asignadas {#assigned-badges}
 
@@ -65,24 +61,21 @@ Las insignias asignadas (y las otorgadas) se almacenan en el [SRP](/help/communi
 En la versión se incluyen tres distintivos basados en funciones:
 
 * **moderador**
-
-   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
+  `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **administrador de grupo**
-
-   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
+  `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **miembro privilegiado**
+  `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
-
-   ![assigned-badges](assets/assigned-badges.png)
+  ![assigned-badges](assets/assigned-badges.png)
 
 ### Insignias premiadas {#awarded-badges}
 
 El servicio de puntuación otorga insignias basadas en recompensas a los miembros de la comunidad según las reglas aplicadas a su actividad en la comunidad.
 
-Para que las insignias aparezcan como una recompensa por la actividad, hay dos cosas que deben suceder:
+Para que las insignias aparezcan como recompensa por la actividad, hay dos cosas que deben suceder:
 
 * El distintivo debe ser [activado](#enableforcomponent) para el componente de función.
 * Las reglas de puntuación e insignias deben ser [aplicado](#applytopage) a la página (o antecesor) en la que se coloca el componente.
@@ -90,18 +83,15 @@ Para que las insignias aparezcan como una recompensa por la actividad, hay dos c
 En la versión se incluyen tres insignias basadas en recompensas:
 
 * **oro**
-
-   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
+  `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **plata**
-
-   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
+  `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **bronce**
+  `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
-
-   ![insignias otorgadas](assets/awarded-badges.png)
+  ![insignias otorgadas](assets/awarded-badges.png)
 
 >[!NOTE]
 >
@@ -162,18 +152,18 @@ Una propiedad booleana, `allowBadges`, activa/desactiva la visualización de dis
 
 ## Reglas de puntuación {#scoring-rules}
 
-Las reglas de puntuación son la base de la puntuación con el fin de conceder insignias.
+Las reglas de puntuación son la base de la puntuación para la concesión de insignias.
 
-De forma muy sencilla, cada regla de puntuación es una lista de una o más subreglas. Las reglas de puntuación se aplican al contenido del sitio de la comunidad para identificar las reglas que se aplican cuando se habilitan las insignias.
+Cada regla de puntuación es una lista de una o más subreglas. Las reglas de puntuación se aplican al contenido del sitio de la comunidad para identificar las reglas que se aplican cuando se habilitan las insignias.
 
 Las reglas de puntuación se heredan, pero no son aditivas. Por ejemplo:
 
 * Si la página 2 contiene la regla de puntuación2 y su página antecesora, la página 1 contiene la regla de puntuación1.
-* Una acción en un componente de página 2 invocará rule1 y rule2.
+* Una acción en un componente de página 2 invoca rule1 y rule2.
 * Si ambas reglas contienen subreglas aplicables para el mismo `topic/verb`:
 
-   * Solo la subregla de la regla 2 afectará a la puntuación.
-   * Las puntuaciones de ambas subreglas no se suman.
+   * Solo la subregla de rule2 afecta a la puntuación.
+   * No se añaden las puntuaciones de ambas subreglas.
 
 Cuando hay más de una regla de puntuación, las puntuaciones se mantienen por separado para cada regla.
 
@@ -206,7 +196,7 @@ De forma predeterminada, los puntos se otorgan al miembro que realiza la acción
 
 Cada subregla puede incluirse en una o más reglas de puntuación.
 
-El nombre de la subregla suele seguir el patrón de uso de una *sujeto* , *objeto* y *verbo*. Por ejemplo:
+El nombre de la subregla suele seguir el patrón de uso de una *sujeto*, *objeto*, y *verbo*. Por ejemplo:
 
 * member-comment-create
 * miembro-recibir-voto
@@ -242,7 +232,7 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`que
      <li>opcional; restringe la subregla a los componentes de la comunidad identificados por los temas de evento</li>
      <li>si se especifica : el valor es una cadena de varios valores de temas de eventos</li>
      <li>una lista de temas de la versión se encuentra en <a href="#topics-and-verbs">Temas y verbos</a> sección</li>
-     <li>el valor predeterminado es aplicar a todos los temas asociados con los verbos</li>
+     <li>El valor predeterminado es aplicar a todos los temas asociados con los verbos</li>
     </ul> </td>
   </tr>
   <tr>
@@ -268,7 +258,7 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`que
       </ul> </li>
      <li>si es "avanzado", especifica el motor de puntuación en función de la calidad y la cantidad.
       <ul>
-       <li>requiere un <a href="/help/communities/advanced.md">paquete adicional</a></li>
+       <li>requiere un <a href="/help/communities/advanced.md">paquete extra</a></li>
       </ul> </li>
      <li>el valor predeterminado es "básico"</li>
     </ul> </td>
@@ -316,7 +306,7 @@ Las reglas para el distintivo consisten en una `thresholds` propiedad que es una
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * Se otorga una insignia de bronce por obtener 1 punto.
+   * Se otorga una insignia de bronce por ganar un punto.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
@@ -377,7 +367,7 @@ En la versión se incluyen dos reglas de identificación que corresponden a las 
 **Notas:**
 
 * `rules` Los nodos son de tipo cq:Page.
-* `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
+* `rules` debe estar en una ubicación de repositorio con permiso de lectura para todos.
 
    * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
@@ -412,7 +402,6 @@ cURL -i -X POST -H *encabezado* -u *firma* -F *operación* -F *distintivo* *memb
 >* Puede hacer referencia a una instancia de autor si [Servicio de túnel](/help/communities/users.md#tunnel-service) está activada.
 >* Puede ser un nombre oscuro y aleatorio, consulte [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) con respecto al ID autorizado.
 
-
 ### Por ejemplo: {#examples}
 
 #### Asignar un distintivo de moderador {#assign-a-moderator-badge}
@@ -445,7 +434,7 @@ Para los componentes de comunidades entregados, las siguientes tablas describen 
 
 >[!NOTE]
 >
->Una nueva propiedad booleana, `allowBadges`, activa/desactiva la visualización de distintivos para una instancia de componente. Se puede configurar en actualizado [cuadros de diálogo de edición de componentes](/help/communities/author-communities.md) mediante una casilla de verificación etiquetada como **Mostrar distintivos**.
+>Una nueva propiedad booleana, `allowBadges`, activa/desactiva la visualización de distintivos para una instancia de componente. Se puede configurar en [cuadros de diálogo de edición de componentes](/help/communities/author-communities.md) mediante una casilla de verificación etiquetada como **Mostrar distintivos**.
 
 **[Componente de calendario](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
@@ -544,19 +533,19 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 | NO MARCAR COMO INAPROPIADO | el contenido del miembro no está marcado |
 | ACEPTAR | el moderador aprueba el contenido del miembro |
 | CERRAR | el miembro cierra el comentario a las ediciones y respuestas |
-| ABRIR | el miembro vuelve a abrir el comentario |
+| ABRIR | miembro reabre comentario |
 
 ### Eventos de componentes personalizados {#custom-component-events}
 
 Para un componente personalizado, se crea una instancia de un SocialEvent para registrar los eventos del componente como `actions` que se producen para una `topic`.
 
-Para admitir la puntuación, SocialEvent tendría que anular el método `getVerb()` para que un adecuado `verb` se devuelve para cada `action`. El `verb` devuelto por una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Hay un *n-1* relación entre `actions` y `verbs`.
+Para admitir la puntuación, SocialEvent debe anular el método `getVerb()` para que un adecuado `verb` se devuelve para cada `action`. El `verb` devuelto por una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Hay un *n-1* relación entre `actions` y `verbs`.
 
 ## Solución de problemas {#troubleshooting}
 
 ### Las insignias no aparecen {#badges-are-not-appearing}
 
-Si se han aplicado reglas de puntuación e insignias al contenido del sitio web, pero no se conceden insignias para ninguna actividad, asegúrese de que se hayan habilitado insignias para la instancia de ese componente.
+Si se han aplicado reglas de puntuación e insignias al contenido del sitio web, pero no se otorgan insignias para ninguna actividad, asegúrese de que las insignias se hayan habilitado para la instancia de ese componente.
 
 Consulte [Habilitar insignias para el componente](#enable-badges-for-component).
 
@@ -607,7 +596,7 @@ Es posible probar rápidamente la puntuación y el distintivo con la variable [T
 
 ![test-scoring-badging](assets/test-scoring-badging.png)
 
-A continuación, asegúrese de que los componentes foro y comentarios permitan que se muestren los distintivos:
+A continuación, asegúrese de que los componentes foro y comentarios permiten que se muestren insignias:
 
 * Otra vez con el CRXDE Lite.
 * Navegación al componente del foro

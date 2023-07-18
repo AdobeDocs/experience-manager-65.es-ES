@@ -1,14 +1,12 @@
 ---
 title: Notificaciones push
 description: Siga esta página para aprender a utilizar las notificaciones push en una aplicación de Adobe Experience Manager Mobile.
-uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
 source-wordcount: '3280'
 ht-degree: 1%
@@ -19,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Poder alertar instantáneamente a los usuarios de la aplicación de AEM Mobile con notificaciones importantes es crucial para el valor de una aplicación móvil y sus campañas de marketing. A continuación, se describen los pasos que se deben seguir para permitir que la aplicación reciba notificaciones push, y cómo configurar y enviar notificaciones push desde AEM Mobile a la aplicación instalada en el teléfono. Además, en esta sección se describe cómo configurar el [Vinculación profunda](#deeplinking) a sus notificaciones push.
 
