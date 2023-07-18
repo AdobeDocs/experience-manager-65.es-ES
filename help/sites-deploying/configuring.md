@@ -1,30 +1,26 @@
 ---
 title: Conceptos básicos de configuración
-seo-title: Basic Configuration Concepts
-description: AEM Obtenga información sobre cómo configurar los.
-seo-description: Learn how to configure AEM.
-uuid: edcdd4bd-5917-417e-8913-40d488383ea9
+description: Obtenga información sobre cómo configurar Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 2%
+source-wordcount: '2112'
+ht-degree: 1%
 
 ---
 
 # Conceptos básicos de configuración{#basic-configuration-concepts}
 
-Adobe Experience Manager AEM () se instala con la configuración predeterminada para todos los parámetros, lo que le permite ejecutarse de forma predeterminada. AEM Sin embargo, puede configurar los parámetros para sus propios requisitos específicos.
+Adobe Experience Manager AEM () se instala con la configuración predeterminada de todos los parámetros que le permiten ejecutarse de forma predeterminada. AEM Sin embargo, puede configurar los parámetros para sus propios requisitos específicos.
 
 AEM Se pueden configurar muchos aspectos de la:
 
-* Algunos son [se configura normalmente para cada instalación de proyecto](#primary-configuration-considerations) y deben revisarse para confirmar si son aplicables o no a su proyecto.
+* Algunos son [se configura normalmente para cada instalación de proyecto](#primary-configuration-considerations) y deben revisarse para confirmar si son aplicables a su proyecto.
 * [Configuraciones adicionales](#further-configuration-considerations) puede ser común aunque no imperativo; relacionado con las características o el rendimiento y la estabilidad del sistema.
 * AEM Otras solo son necesarias para determinadas funciones opcionales de la (estas se documentan junto con la función adecuada).
 
@@ -32,23 +28,23 @@ Según la configuración específica, estos cambios se pueden realizar mediante 
 
 * **Consola web de Adobe CQ**
 
-   Esta es una ubicación estándar para configurar paquetes y servicios de OSGi.
+  Esta es una ubicación estándar para configurar paquetes y servicios de OSGi.
 
-   Consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y prácticas recomendadas.
+  Consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y prácticas recomendadas.
 
 * **Repositorio**
 
-   Hay un subconjunto de configuraciones de OSGi disponibles en el repositorio. Esto garantiza que al copiar o replicar el contenido del repositorio se vuelvan a crear configuraciones idénticas. También puede agregar sus propias configuraciones, según el modo de ejecución, al repositorio.
+  Hay un subconjunto de configuraciones de OSGi disponibles en el repositorio. Esto garantiza que al copiar o replicar el contenido del repositorio se vuelvan a crear configuraciones idénticas. También puede agregar sus propias configuraciones, según el modo de ejecución, al repositorio.
 
-   Consulte [Configuración de OSGi en el repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) y, en particular [Adición de una nueva configuración al repositorio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) para obtener más información.
+  Consulte [Configuración de OSGi en el repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) y, en particular [Adición de una nueva configuración al repositorio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) para obtener más información.
 
 * **Sistema de archivos**
 
-   Algunos archivos de configuración residen en el sistema de archivos.
+  Algunos archivos de configuración residen en el sistema de archivos.
 
 * **WCM AEM**
 
-   AEM Se pueden configurar varios aspectos dentro del propio WCM, muchos de los cuales utilizan el parámetro de configuración de la variable de configuración de la variable [Herramientas](/help/sites-administering/tools-consoles.md) consola; por ejemplo, agentes de replicación.
+  AEM Se pueden configurar varios aspectos dentro del propio WCM, muchos de los cuales utilizan el parámetro de configuración de la variable de configuración de la variable [Herramientas](/help/sites-administering/tools-consoles.md) consola; por ejemplo, agentes de replicación.
 
 >[!NOTE]
 >
@@ -58,9 +54,7 @@ Según la configuración específica, estos cambios se pueden realizar mediante 
 
 >[!NOTE]
 >
->AEM La configuración de la aplicación es sencilla, pero debe tener en cuenta lo siguiente:
->
->Ciertos cambios pueden tener un impacto importante en las aplicaciones. AEM Por este motivo, asegúrese de que tiene la experiencia y los conocimientos necesarios antes de empezar a configurar la configuración de la aplicación y realice solo los cambios que sepa que son necesarios. Cualquier cambio realizado a través de la consola OSGi es **inmediatamente** aplicado al sistema en ejecución (no es necesario reiniciar).
+>AEM La configuración de la es sencilla. Sin embargo, tenga en cuenta que ciertos cambios pueden tener un impacto importante en las aplicaciones. AEM Por este motivo, asegúrese de que tiene la experiencia y los conocimientos necesarios antes de empezar a configurar la configuración de la aplicación y realice solo los cambios que sepa que son necesarios. Cualquier cambio realizado a través de la consola OSGi es **inmediatamente** aplicado al sistema en ejecución (no es necesario reiniciar).
 
 ## Consideraciones de configuración principal {#primary-configuration-considerations}
 
@@ -87,33 +81,33 @@ Puede configurar la interfaz de usuario que necesite mediante [Asignación raíz
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
-AEM Todos los elementos de la (por ejemplo, el repositorio, Dispatcher, etc.) se pueden instalar en redes IPv4 e IPv6.
+AEM Todos los elementos de la (por ejemplo, el repositorio y Dispatcher) se pueden instalar en redes IPv4 e IPv6.
 
 El funcionamiento es fluido, ya que no se requiere ninguna configuración especial; cuando sea necesario, simplemente puede especificar una dirección IP utilizando el formato adecuado para su tipo de red.
 
-Esto significa que cuando se necesita especificar una dirección IP, se puede seleccionar (según sea necesario) entre:
+Esto significa que cuando se debe especificar una dirección IP, se puede seleccionar (según sea necesario) entre:
 
 * una dirección IPv6
 
-   por ejemplo `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  por ejemplo `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * una dirección IPv4
 
-   por ejemplo `https://123.1.1.4:4502`
+  por ejemplo `https://123.1.1.4:4502`
 
 * un nombre de servidor
 
-   por ejemplo, `https://www.yourserver.com:4502`
+  por ejemplo, `https://www.yourserver.com:4502`
 
 * el caso predeterminado de `localhost` se interpretará para instalaciones de red IPv4 e IPv6
 
-   por ejemplo, `http://localhost:4502`
+  por ejemplo, `http://localhost:4502`
 
 ### Depuración de versiones {#version-purging}
 
-AEM En una instalación estándar, crea una nueva versión de una página o nodo cada vez que activa una página (después de actualizar el contenido). También puede crear versiones adicionales si lo solicita utilizando **Versiones** pestaña de la barra de tareas. Todas estas versiones se almacenan en el repositorio y se pueden restaurar si es necesario.
+AEM En una instalación estándar, crea una versión de una página o nodo cada vez que activa una página (después de actualizar el contenido). También puede crear versiones adicionales si lo desea utilizando **Versiones** pestaña de la barra de tareas. Todas estas versiones se almacenan en el repositorio y se pueden restaurar, si es necesario.
 
-Estas versiones nunca se depuran, por lo que el tamaño del repositorio aumentará con el tiempo y, por lo tanto, debe administrarse.
+Estas versiones nunca se depuran, por lo que el tamaño del repositorio aumenta con el tiempo y, por lo tanto, debe administrarse.
 
 Consulte [Depuración de versiones](/help/sites-deploying/version-purging.md) para obtener información detallada, en particular [Administrador de versiones](/help/sites-deploying/version-purging.md#version-manager) AEM para obtener más información sobre cómo configurar la depuración de versiones anteriores cuando se crea una versión nueva, haga lo siguiente:
 
@@ -129,7 +123,7 @@ Consulte [Registro](/help/sites-deploying/configure-logging.md) para obtener inf
 
 ### Ejecutar modos {#run-modes}
 
-AEM Los modos de ejecución permiten ajustar la instancia de la para un propósito específico; por ejemplo, crear o publicar, probar, desarrollar o intranet, etc.
+AEM Los modos de ejecución permiten ajustar la instancia de la para un propósito específico. Por ejemplo, crear o publicar, probar, desarrollar o intranet, etc.
 
 Esto se realiza definiendo colecciones de parámetros de configuración para cada modo de ejecución. Se aplica un conjunto básico de parámetros de configuración para todos los modos de ejecución y, a continuación, puede ajustar conjuntos adicionales para el propósito de su entorno específico. A continuación, se aplican según sea necesario.
 
@@ -145,7 +139,7 @@ Consulte [Inicio de sesión único](/help/sites-deploying/single-sign-on.md) par
 
 ### Asignación de recursos {#resource-mapping}
 
-AEM La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para los usuarios de la red de distribución de recursos
+AEM La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para los usuarios de la red de distribución de recursos ().
 
 Por ejemplo, puede utilizar estas asignaciones para lo siguiente:
 
@@ -170,7 +164,7 @@ Para obtener más información, consulte [Replicación](/help/sites-deploying/re
 
 Consulte [Ajustes de configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obtener una lista de los distintos paquetes relevantes para la implementación del proyecto (enumerados según el paquete). AEM No es necesario ajustar todos los ajustes enumerados, algunos se mencionan para ayudarle a comprender cómo funciona la configuración de la lista de la manera en que funciona la.
 
-AEM Al trabajar con los servicios de correo electrónico, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ### Configuración de LDAP {#configuring-ldap}
 
@@ -182,13 +176,13 @@ AEM Para obtener información sobre la administración de usuarios dentro de la 
 
 ### Configuración de Dispatcher {#configuring-the-dispatcher}
 
-Dispatcher es una herramienta de equilibrio de carga o almacenamiento en caché de Adobe Experience Manager que se puede utilizar junto con un servidor web de clase empresarial.
+Dispatcher es una herramienta de Adobe Experience Manager para el almacenamiento en caché, el equilibrio de carga o ambos. Se puede utilizar con un servidor web de clase empresarial.
 
-Consulte [Dispatcher](https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher.html) para obtener información detallada, en particular [Configuración de Dispatcher](https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher-configuration.html) para obtener más información sobre la configuración.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener información detallada, en particular [Configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es) para obtener más información sobre la configuración.
 
 ### AEM Configuración del conector de LiveCycle {#configuring-aem-livecycle-connector}
 
-AEM AEM Con el lanzamiento de los servicios de documentos de la y la seguridad de documentos de la, ahora tenemos la capacidad de invocar los servicios de documentos de la LiveCycle para procesar un formulario XFA, convertir un documento en PDF y proteger un documento mediante políticas. Por favor, lea [AEM Conector de LiveCycle de](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obtener más información.
+AEM AEM AEM Con el lanzamiento de los servicios de documentos de la y de seguridad de documentos de la, ahora tiene la capacidad de invocar los servicios de documentos de la LiveCycle para procesar un formulario XFA, convertir un documento en PDF y proteger un documento mediante políticas. Consulte [AEM Conector de LiveCycle de](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obtener más información.
 
 ### Administración de topologías y descarga de trabajos {#job-offloading-and-topology-administration}
 
@@ -234,7 +228,7 @@ Consulte [Habilitar HTTP sobre SSL](/help/sites-administering/ssl-by-default.md)
 
 ### AEM Portals y portlets de la red {#aem-portals-and-portlets}
 
-Un portal es una aplicación web que proporciona personalización, inicio de sesión único, integración de contenido de diferentes fuentes y aloja la capa de presentación de los sistemas de información. El componente portlet también permite incrustar un portlet en la página. Para acceder al contenido proporcionado por el WCM CQ5, el servidor de portales puede equiparse con el portlet Director de portal CQ5. Para ello, instale, configure y agregue el portlet a la página del portal.
+Un portal es una aplicación web que proporciona personalización, inicio de sesión único, integración de contenido desde diferentes fuentes y aloja la capa de presentación de los sistemas de información. El componente portlet también permite incrustar un portlet en la página. Para acceder al contenido proporcionado por el WCM CQ5, el servidor de portales puede acoplarse al portlet Director de portal CQ5. Para ello, instale, configure y agregue el portlet a la página del portal.
 
 Consulte [Portal y portlets](/help/sites-administering/aem-as-portal.md) para obtener más información.
 
@@ -244,17 +238,17 @@ Los objetos estáticos (por ejemplo, los iconos) no cambian. Por lo tanto, el si
 
 Consulte [Caducidad de objetos estáticos](/help/sites-deploying/expiration-static-objects.md) para obtener más información.
 
-### Abrir archivos en el proceso de Java {#open-files-in-the-java-process}
+### Abrir archivos en el proceso de Java™ {#open-files-in-the-java-process}
 
-Cada proceso java puede acceder a los archivos; esto requiere recursos del sistema. Por este motivo, se define un límite superior en cuanto a la cantidad de archivos a los que puede acceder cada proceso de forma simultánea. Si se supera este límite, puede producirse un error de excepción.
+Cada proceso de Java™ puede acceder a los archivos; esto requiere recursos del sistema. Por este motivo, se define un límite superior en cuanto a la cantidad de archivos a los que puede acceder cada proceso de forma simultánea. Si se supera este límite, puede producirse un error de excepción.
 
-AEM Si el proceso de la supera este máximo, el mensaje &quot; `too many open files`&quot; se verá en `error.log`.
+AEM Si el proceso de la supera este máximo, el mensaje &quot; `too many open files`&quot; se ve en `error.log`.
 
-Para evitar estas excepciones, debe hacer lo siguiente:
+Para evitar estas excepciones, haga lo siguiente:
 
-1. AEM Compruebe cuántos archivos abiertos está usando su proceso de.
+1. AEM Compruebe cuántos archivos abiertos está usando el proceso de la.
 
-   La forma en que realice esta comprobación dependerá de la plataforma en la que se ejecute la instancia. Se pueden utilizar utilidades como lsof (Unix) o Process Explorer (Windows).
+   Esta comprobación depende de la plataforma en la que se esté ejecutando la instancia. Se pueden utilizar utilidades como lsof (UNIX®) o Process Explorer (Windows).
 
    Este valor debe controlarse durante el desarrollo y las pruebas para:
 
@@ -281,7 +275,7 @@ Existen varias propiedades que controlan el comportamiento de los comandos Desha
 
 El [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) le permite colocar un elemento de vídeo predefinido y listo para usar en la página.
 
-Para que se produzca la transcodificación adecuada, su administrador debe [Instalar FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) por separado. También pueden [Configurar los perfiles de vídeo](/help/sites-administering/config-video.md#configure-video-profiles) para su uso con elementos html5.
+Para que se produzca la transcodificación adecuada, el administrador debe [Instalar FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) por separado. También pueden [Configurar los perfiles de vídeo](/help/sites-administering/config-video.md#configure-video-profiles) para su uso con elementos html5.
 
 ### Configuración y personalización de informes {#configuring-and-customizing-reports}
 
@@ -301,7 +295,7 @@ Consulte [Configuración de notificaciones por correo electrónico](/help/sites-
 
 ### Habilitando impresiones de página {#enabling-page-impressions}
 
-Las impresiones de página se muestran en la **Impresiones** de la consola siteadmin de la IU clásica. Para habilitar la captura de impresiones de página, debe configurar lo siguiente:
+Las impresiones de página se muestran en la **Impresiones** de la consola siteadmin de la IU clásica. Para habilitar la captura de impresiones de página, configure lo siguiente:
 
 * En la instancia de publicación:
 
@@ -309,8 +303,8 @@ Las impresiones de página se muestran en la **Impresiones** de la consola sitea
 
 * En la instancia de autor:
 
-   * [Seguimiento de impresiones de página Adobe](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Rastreador de impresiones de página de Adobe](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->La configuración del Rastreador de impresiones de páginas de Adobe en el entorno de creación permitirá solicitudes anónimas al servicio de seguimiento.
+>La configuración del Rastreador de impresiones de páginas de Adobe en el entorno de creación permite las solicitudes anónimas al servicio de seguimiento.

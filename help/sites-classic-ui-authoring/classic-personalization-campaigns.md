@@ -1,18 +1,14 @@
 ---
 title: Campaign Management
-seo-title: Campaign Management
-description: La administración de campañas ofrece a los especialistas en marketing digital la oportunidad de ofrecer contenido personalizado y, por lo tanto, crear experiencias dedicadas para los visitantes. Le permite organizar sus campañas de marketing en la web, el correo electrónico y los servicios móviles para atraer a sus visitantes.
-seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
-uuid: 202d614b-a607-45de-8c24-1ee66b230315
+description: La administración de campañas ofrece a los especialistas en marketing digital la oportunidad de ofrecer contenido personalizado y, por lo tanto, crear experiencias dedicadas para los visitantes. Le permite organizar sus campañas de marketing en la web, el correo electrónico y los servicios móviles, y así atraer a sus visitantes.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 1%
 
 La administración de campañas ofrece a los especialistas en marketing digital la oportunidad de ofrecer contenido personalizado y, por lo tanto, crear experiencias dedicadas para los visitantes.
 
-Le permite organizar sus campañas de marketing en la web, el correo electrónico y los servicios móviles para atraer a sus visitantes. Puede crear contenido, segmentar visitantes, insertar y promocionar contenido segmentado para perfiles de usuario específicos y administrar campañas en varios canales.
+Le permite organizar sus campañas de marketing en la web, el correo electrónico y los servicios móviles, y así atraer a sus visitantes. Puede crear contenido, segmentar visitantes, insertar y promocionar contenido segmentado para perfiles de usuario específicos y administrar campañas en varios canales.
 
 Este documento describe los distintos elementos que componen las campañas. Encontrará información más detallada en los siguientes documentos:
 
@@ -37,7 +33,7 @@ Este documento describe los distintos elementos que componen las campañas. Enco
 La administración de campañas se compone de varios elementos:
 
 * **Marcas**
-AEM En la práctica, las marcas son la unidad de nivel superior y forman una colección de **Campañas**.
+En Adobe Experience Manager AEM (), las marcas son la unidad de nivel superior y forman una colección de **Campañas**.
 
 * **Campañas**
 Una campaña es una colección de individuos **Experiencias**.
@@ -51,13 +47,13 @@ El contenido centrado forma las distintas experiencias, presentadas al visitante
      Las páginas teaser pueden:
 
       * presentar una serie de opciones para que el visitante elija entre ellas
-      * mostrar solo un párrafo de teaser basado en el segmento de visitante específico; por ejemplo, el párrafo de teaser que se muestra puede depender de la edad del visitante.
+      * mostrar solo un párrafo de teaser basado en el segmento específico del visitante. Por ejemplo, el párrafo de teaser que se muestra puede depender de la edad del visitante.
 
      Normalmente, una página teaser es una acción temporal que dura un período de tiempo específico, hasta que se reemplaza por la siguiente página de teaser.
 
    * **Newsletters**
 
-     [Comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Normalmente se envían en forma de newsletter a su **Posibles clientes** (que generalmente se agrupan en **Listas**). **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad. La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+     [Comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Normalmente se envían en forma de newsletter a su **Posibles clientes** (agrupadas en **Listas**). **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad. La recomendación es [uso de Adobe Campaign AEM y la integración para la creación de informes de](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -73,17 +69,17 @@ El contenido centrado forma las distintas experiencias, presentadas al visitante
 
   La información que ha recopilado sobre sus visitantes y cómo ponerse en contacto con ellos forma la base de sus posibles clientes. **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
 
-  La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+  La recomendación es [uso de Adobe Campaign AEM y la integración para la creación de informes de](/help/sites-administering/campaign.md).
 
 * **Listas**
 
-  Los posibles clientes suelen agruparse en listas para que se pueda llevar a cabo una acción colectiva al respecto. Nota: **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
+  Los posibles clientes se agrupan en listas para que pueda realizar acciones colectivas en consecuencia. Nota: **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
 
-  La recomendación es [aproveche Adobe Campaign AEM y la integración para crear un entorno de trabajo con la.](/help/sites-administering/campaign.md)
+  La recomendación es [utilice Adobe Campaign AEM y la integración para.](/help/sites-administering/campaign.md)
 
 * **Segmentos**
 
-  Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Analizar esto según factores como la actividad en el sitio web, la información de perfil registrada y la actividad en otros sitios web, le ayuda a definir segmentos. El contenido puede personalizarse específicamente para satisfacer las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
+  Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Analizar esto según factores como la actividad en el sitio web, la información de perfil registrada y la actividad en otros sitios web, le ayuda a definir segmentos. El contenido puede personalizarse según las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
 
 * **MCM**
 

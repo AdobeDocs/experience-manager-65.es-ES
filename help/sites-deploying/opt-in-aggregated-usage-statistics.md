@@ -1,19 +1,15 @@
 ---
 title: Inclusión En La Recopilación De Estadísticas De Uso Agregadas
-seo-title: Opting Into Aggregated Usage Statistics Collection
 description: Obtenga información sobre cómo incluirse en estadísticas de uso agregadas.
-seo-description: Learn how to opt into aggregated usage statistics.
-uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 2%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-Puede ayudar a mejorar Adobe Marketing Cloud enviando estadísticas de Adobe AEM sobre cómo interactúa con los. Esta información no contiene datos sobre los visitantes del sitio de su empresa y solo se utilizará para ayudar al Adobe a ofrecer, apoyar y mejorar su experiencia de usuario.
+Puede ayudar a mejorar Adobe Experience Cloud enviando estadísticas de Adobe sobre cómo interactúa con Adobe Experience Manager AEM (). Esta información no contiene datos sobre los usuarios que visitan el sitio de su empresa y solo se utiliza para ayudar al Adobe a ofrecer asistencia técnica y mejorar la experiencia del usuario.
 
 Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario táctil o la consola web.
 
@@ -34,7 +30,7 @@ Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario t
 
 >[!NOTE]
 >
->También puede optar por no participar en cualquier momento utilizando la variable [Consola web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) AEM o no seleccionando la opción de inclusión en la pantalla de inclusión de la lista de permitidos de la pantalla de inclusión de la lista de permitidos de.
+>Puede optar por no participar en cualquier momento mediante el [Consola web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) AEM o no seleccionando la opción de inclusión en la pantalla de inclusión de la lista de permitidos de la pantalla de inclusión de la lista de permitidos de.
 
 ## Inclusión mediante la interfaz de usuario táctil {#opt-in-by-using-the-touch-ui}
 

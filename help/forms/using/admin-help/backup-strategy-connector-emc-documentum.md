@@ -6,16 +6,16 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b759b936-5907-4311-a5cc-60f321476368
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
 # Estrategia de copia de seguridad para usuarios de Connector para Documentum® de EMC {#backup-strategy-for-connector-for-emc-documentum-users}
 
-Si tiene instalado Connector para EMC Documentum®, además de las instrucciones de este capítulo, la estrategia de copia de seguridad y recuperación debe incluir la copia de seguridad (o recuperación) del equipo en el que está instalado el sistema ECM correspondiente. (Consulte la documentación de ECM Documentum®).
+Si tiene instalado Connector para EMC Documentum®, además de las instrucciones de este capítulo, la estrategia de copia de seguridad y recuperación debe incluir la copia de seguridad (o recuperación) del equipo en el que está instalado el sistema ECM. (Consulte la documentación de ECM Documentum®).
 
 AEM Haga una copia de seguridad del entorno de formularios de la utilizando el repositorio de ECM y realizando las siguientes tareas:
 

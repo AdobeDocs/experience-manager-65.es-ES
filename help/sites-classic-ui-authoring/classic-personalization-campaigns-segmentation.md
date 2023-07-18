@@ -1,23 +1,21 @@
 ---
 title: Información acerca de la segmentación
-description: La segmentación es una consideración clave al crear una campaña. En la mayoría de los casos, deberá tener los segmentos ya definidos antes de iniciar la campaña.
-uuid: 609d83b3-df0e-44ad-8e27-90b676d2666b
+description: La segmentación es una consideración clave al crear una campaña. Normalmente, debe tener los segmentos ya definidos antes de iniciar la campaña.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: c67aaef1bbda80f355f8a6f23eac4d9e471fd510
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 30%
+source-wordcount: '555'
+ht-degree: 57%
 
 ---
 
 # Información acerca de la segmentación{#understanding-segmentation}
 
-La segmentación es una consideración clave al crear una campaña. En la mayoría de los casos, deberá tener los segmentos ya definidos antes de iniciar la campaña.
+La segmentación es una consideración clave al crear una campaña. Normalmente, debe tener los segmentos ya definidos antes de iniciar la campaña.
 
 Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Comprender estos objetivos y cumplir las expectativas es un factor de éxito importante para el marketing en línea.
 
@@ -27,7 +25,7 @@ La segmentación ayuda a conseguirlo al analizar y caracterizar el comportamient
 * perfil
 * actividad en otros sitios web
 
-El contenido puede personalizarse específicamente para satisfacer las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
+El contenido puede personalizarse según las necesidades y los intereses del visitante, según los segmentos con los que coincidan.
 
 ## Uso de la segmentación {#using-segmentation}
 
@@ -37,22 +35,22 @@ Los segmentos se definen en [Configuración de segmentación](/help/sites-admini
 
 Al analizar la segmentación, se emplea la siguiente terminología:
 
-**Visitante** Un visitante es una persona que visita un sitio web. La visita de esa persona suele comenzar desde una página de referencia y luego pasa a una o más vistas de página del sitio web. Se puede crear un perfil de comportamiento a partir de los detalles de la visita de esa persona.
+**Visitante**: Un visitante es una persona que visita un sitio web. La visita de esa persona suele comenzar desde una página de referencia y luego pasa a una o más vistas de página del sitio web. Se puede crear un perfil de comportamiento a partir de los detalles de la visita de esa persona.
 
-**Usuario** Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan una identificación adicional, como una dirección de correo electrónico y el sexo, entre otros. También se puede recopilar información adicional, como actividad de la comunidad y patrones de compra, entre otros. A partir de la información proporcionada en el perfil, se puede crear un perfil demográfico.
+**Usuario**: Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan una identificación adicional, como una dirección de correo electrónico y el sexo, entre otros. También se puede recopilar información adicional, como actividad de la comunidad y patrones de compra, entre otros. A partir de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 
-**Rasgo** Un rasgo es una característica o propiedad de un visitante que se puede utilizar para determinar la pertenencia en un segmento específico.
+**Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar la pertenencia en un segmento específico.
 
-**Segmento** Un segmento es un conjunto de visitantes que comparten determinadas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
+**Segmento**: Un segmento es un conjunto de visitantes que comparten determinadas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 
-**Características de comportamiento** Los rasgos de comportamiento son los que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
+**Características de comportamiento**: Las características de comportamiento son las que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
 
 * Interés en el sitio web, incluyendo las páginas y los productos comprados.
-* Interés en el sitio web de referencia, incluyendo los términos de búsqueda utilizados o los anuncios en los que se ha hecho clic.
+* Interés en el sitio web de referencia, incluidos los términos de búsqueda utilizados o los anuncios en los que se hizo clic.
 * Interés en otros sitios; se determina con herramientas como Spyjax.
-* Lealtad del visitante; duración de la visita, frecuencia de las visitas.
+* Fidelidad del visitante; duración de la visita, frecuencia de las visitas.
 
-**Características demográficas** Se trata de características de población seleccionadas, entre ellas:
+**Características demográficas** - Son características de población seleccionadas, incluidas:
 
 * Edad
 * Ingresos
@@ -67,16 +65,16 @@ Algunos rasgos demográficos son difíciles de determinar sin registro, pero pue
 
 Por ejemplo, la combinación de la dirección URL de referencia (como característica de comportamiento) con datos demográficos (adquiridos con herramientas como [Google Ad Planner](https://www.google.com/adplanner/)) permite que los propietarios del sitio obtengan características demográficas de los visitantes.
 
-**Subsegmento** Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
+**Subsegmentos**: Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
 
-**Página teaser** Una página de teaser se dirige a una audiencia específica. Incluye contenido reutilizable que se puede emplear en el párrafo de teaser.
+**Página teaser**: Una página de teaser se dirige a una audiencia específica. Contiene contenido reutilizable que se puede utilizar en el párrafo de teaser.
 
-**Campaign** Una campaña es una colección de páginas de teaser y páginas de marketing por correo electrónico, como boletines informativos o invitaciones. Normalmente una campaña se ejecuta durante un período limitado y está precedida por otra campaña.
+**Campaña**: Una campaña es una colección de páginas de teaser y de páginas de marketing por correo electrónico como, por ejemplo, newsletters o invitaciones. Una campaña se suele llevar a cabo durante un período limitado y está precedida de otra campaña.
 
-**Párrafo de teaser** Se trata de un párrafo que extrae contenido de otra página que depende de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
+**Párrafo teaser**: Se trata de un párrafo que extrae el contenido de otra página que depende de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
 
-**Lista** Se extrae una lista de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
+**Lista**: Una lista se extrae de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
 
 >[!NOTE]
 >
->Consulte lo siguiente [Segmentación](/help/sites-administering/campaign-segmentation.md) AEM para obtener más información sobre los segmentos de en la.
+>Consulte [Segmentación](/help/sites-administering/campaign-segmentation.md) para obtener más información sobre los segmentos en Adobe Experience Manager.
