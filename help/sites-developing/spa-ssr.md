@@ -1,20 +1,16 @@
 ---
 title: SPA Procesamiento del lado del servidor y de
-seo-title: SPA and Server-Side Rendering
 description: SPA "Procesamiento del lado del servidor y de la"
-seo-description: null
-uuid: 27e26e3f-65d4-4069-b570-58b8b9e2a1ae
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: f923a3b7d6821f63d059f310de783b11bf3e8ec3
+source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
 workflow-type: tm+mt
-source-wordcount: '1751'
-ht-degree: 2%
+source-wordcount: '1718'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +18,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 >[!NOTE]
 >
->AEM SPA Se requiere la versión 6.5.1.0 o posterior para utilizar las funciones de renderización del lado del servidor de como se describe en este documento.
+>Se requiere Adobe Experience Manager AEM SPA () 6.5.1.0 o posterior para utilizar las funciones de renderización del lado del servidor de la tal como se describe en este documento.
 
 ## Información general {#overview}
 
@@ -38,11 +34,11 @@ SPA Sin embargo, esto puede conllevar tiempos de carga inicial más largos, espe
 
 No se requiere SSR en todos los proyectos. AEM SPA Aunque admite totalmente la SR de JS para la, Adobe no recomienda implementarla sistemáticamente en todos los proyectos.
 
-Al decidir implementar SSR primero debe estimar qué complejidad adicional, esfuerzo y costo adicional representa SSR de manera realista para el proyecto, incluido el mantenimiento a largo plazo. Sólo debe elegirse una arquitectura SSR cuando el valor añadido supere claramente los costes estimados.
+Al decidir implementar SSR, primero debe estimar qué complejidad, esfuerzo y costo adicionales representan SSR de manera realista para el proyecto, incluido el mantenimiento a largo plazo. Sólo debe elegirse una arquitectura SSR cuando el valor añadido supere claramente los costes estimados.
 
 SSR generalmente proporciona algún valor cuando hay un claro &quot;sí&quot; a cualquiera de las siguientes preguntas:
 
-* **SEO:** ¿Se sigue necesitando SSR para que los motores de búsqueda que generan tráfico indexen correctamente su sitio? Tenga en cuenta que los rastreadores del motor de búsqueda principal ahora evalúan JS.
+* **SEO:** ¿Sigue siendo necesaria la SSR para que los motores de búsqueda que generan tráfico indexen correctamente su sitio? Tenga en cuenta que los rastreadores del motor de búsqueda principal ahora evalúan JS.
 * **Velocidad de página:** ¿Proporciona la SSR una mejora de velocidad mensurable en entornos de la vida real y aumenta la experiencia general del usuario?
 
 Solo cuando al menos una de estas dos preguntas se responda con un claro &quot;sí&quot; para su proyecto, el Adobe recomienda implementar SSR. En las secciones siguientes se describe cómo hacerlo con Adobe I/O Runtime.
@@ -51,10 +47,10 @@ Solo cuando al menos una de estas dos preguntas se responda con un claro &quot;s
 
 Si usted [está seguro de que su proyecto requiere la implementación de la SSR](/help/sites-developing/spa-ssr.md#when-to-use-ssr), la solución recomendada por Adobe es utilizar Adobe I/O Runtime.
 
-Para obtener más información sobre Adobe I/O Runtime, consulte
+Para obtener más información sobre Adobe I/O Runtime, consulte lo siguiente:
 
-* [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - para obtener una descripción general del servicio
-* [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - para obtener documentación detallada sobre la plataforma
+* [https://developer.adobe.com/runtime/](https://developer.adobe.com/runtime/) - para obtener una descripción general del servicio
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs/) - para obtener documentación detallada sobre la plataforma
 
 Las siguientes secciones detallan cómo se puede utilizar Adobe I/O Runtime SPA para implementar SSR para su en dos modelos diferentes:
 
@@ -69,7 +65,7 @@ Las siguientes secciones detallan cómo se puede utilizar Adobe I/O Runtime SPA 
 
 ## Configuración del procesador remoto {#remote-renderer-configuration}
 
-AEM Debe saber dónde se puede recuperar el contenido procesado de forma remota. Independientemente de [qué modelo decide implementar para SSR,](#adobe-i-o-runtime) AEM deberá especificar cómo acceder a este servicio de procesamiento remoto para obtener acceso a los datos de la aplicación.
+AEM Debe saber dónde se puede recuperar el contenido procesado de forma remota. Independientemente de [qué modelo decide implementar para SSR,](#adobe-i-o-runtime)AEM , debe especificar cómo acceder a este servicio de procesamiento remoto para acceder a la.
 
 Esto se realiza mediante la variable **RemoteContentRenderer: servicio OSGi de fábrica de configuración**. Busque la cadena &quot;RemoteContentRenderer&quot; en la consola de configuración de la consola web en `http://<host>:<port>/system/console/configMgr`.
 
@@ -92,7 +88,7 @@ Los campos siguientes están disponibles para la configuración:
 
 >[!NOTE]
 >
->Esta configuración aprovecha las [Procesador de contenido remoto,](#remote-content-renderer) que tiene opciones de extensión y personalización adicionales disponibles.
+>Esta configuración utiliza el [Procesador de contenido remoto,](#remote-content-renderer) que tiene opciones de extensión y personalización adicionales disponibles.
 
 ## AEM Flujo de comunicación impulsado por el {#aem-driven-communication-flow}
 
@@ -110,7 +106,7 @@ Cuando se utiliza SSR, la variable [flujo de trabajo de interacción](/help/site
 
 ## Flujo de comunicación impulsado por Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
-SPA AEM AEM En la sección anterior se describe la implementación estándar y recomendada del procesamiento en el servidor con respecto a la en la que el usuario realiza el arranque y la entrega de contenido en el lado del servidor, en el que el usuario realiza el procesamiento de manera predeterminada y de manera predeterminada, en el lado del servidor, en lo que respecta a la en la que se realiza el procesamiento y la entrega de contenido.
+SPA AEM AEM En la sección anterior se describe la implementación estándar y recomendada del procesamiento del lado del servidor con respecto a la en la que el usuario realiza el arranque y la entrega de contenido de manera independiente, y se realiza una prueba de ello con el fin de obtener un resultado más eficaz en el.
 
 Como alternativa, SSR se puede implementar de modo que Adobe I/O Runtime sea responsable del arranque, lo que invierte de forma eficaz el flujo de comunicación.
 
@@ -124,11 +120,11 @@ AEM Ambos modelos son válidos y compatibles con el servicio de asistencia de la
    <th><strong>Desventajas</strong></th>
   </tr>
   <tr>
-   <th><strong>AEM vía de la</strong><br /> </th>
+   <th><strong>AEM a modo de</strong><br /> </th>
    <td>
     <ul>
      <li>AEM administra la inyección de bibliotecas donde sea necesario</li>
-     <li>AEM Solo es necesario mantener los recursos en el área de la<br /> </li>
+     <li>AEM Mantener recursos solo en el momento de la<br /> </li>
     </ul> </td>
    <td>
     <ul>
@@ -143,7 +139,7 @@ AEM Ambos modelos son válidos y compatibles con el servicio de asistencia de la
     </ul> </td>
    <td>
     <ul>
-     <li>AEM Los recursos de Clientlib requeridos por la aplicación, como CSS y JavaScript, los deberá poner a disposición el desarrollador de la aplicación a través de la interfaz de usuario de la biblioteca de cliente de la aplicación de desarrollador de. <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code> propiedad<br /> </li>
+     <li>AEM El desarrollador debe poner a disposición de los recursos de Clientlib requeridos por la aplicación, como CSS y JavaScript, mediante el método <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code> propiedad<br /> </li>
      <li>AEM Los recursos deben sincronizarse entre la aplicación y la aplicación de Adobe I/O Runtime<br /> </li>
      <li>SPA Para habilitar la creación de la, puede ser necesario un servidor proxy para Adobe I/O Runtime</li>
     </ul> </td>
@@ -153,26 +149,26 @@ AEM Ambos modelos son válidos y compatibles con el servicio de asistencia de la
 
 ## Planificación de la SSR {#planning-for-ssr}
 
-Por lo general, solo parte de una aplicación debe procesarse en el servidor. El ejemplo común es el contenido que se muestra encima del pliegue en la carga inicial de la página y que se procesa en el servidor. Esto ahorra tiempo al enviar al cliente contenido ya procesado. SPA A medida que el usuario interactúa con el usuario, el cliente procesa el contenido adicional.
+Solo una parte de una aplicación debe procesarse en el servidor. El ejemplo más común es el contenido que se muestra encima del pliegue en la carga inicial de la página y que se procesa en el servidor. Esto ahorra tiempo al enviar al cliente contenido ya procesado. SPA A medida que el usuario interactúa con el usuario, el cliente procesa el contenido adicional.
 
-SPA A medida que considere la posibilidad de implementar el procesamiento en el servidor para su, deberá revisar qué partes de la aplicación serán necesarias.
+SPA A medida que considere la posibilidad de implementar el procesamiento en el lado del servidor para su, revise qué partes de la aplicación son necesarias.
 
 ## SPA Desarrollo de una mediante SSR {#developing-an-spa-using-ssr}
 
 SPA El cliente (en el explorador) o el servidor pueden procesar los componentes de la. Cuando se representan en el servidor, las propiedades del explorador como el tamaño y la ubicación de la ventana no están presentes. SPA Por lo tanto, los componentes de la deben ser isomórficos, sin dar por hecho dónde se procesarán.
 
-AEM Para aprovechar la SSR, deberá implementar su código tanto en el servidor como en el Adobe I/O Runtime, que es responsable del procesamiento del lado del servidor. La mayoría del código será el mismo, aunque las tareas específicas del servidor diferirán.
+AEM Para utilizar SSR, implemente su código en y en Adobe I/O Runtime, que es responsable del procesamiento en el servidor. La mayoría del código será el mismo, pero las tareas específicas del servidor diferirán.
 
 ## SPA AEM SSR para la en el {#ssr-for-spas-in-aem}
 
 SPA AEM SSR para la en la práctica requiere Adobe I/O Runtime, que es necesario para el procesamiento del lado del servidor de contenido de la aplicación. Dentro del HTL de la aplicación, se llama a un recurso en Adobe I/O Runtime para procesar el contenido.
 
-AEM Del mismo modo que admite los módulos Angular SPA y React de forma predeterminada, el procesamiento en el servidor también es compatible con las aplicaciones de Angular y React. Consulte la documentación de NPM para ambos marcos para obtener más información.
+AEM Del mismo modo que admite los módulos Angular SPA y React de forma predeterminada, el procesamiento del lado del servidor también es compatible con las aplicaciones de Angular y React. Consulte la documentación de NPM para ambos marcos para obtener más información.
 
 * Reaccionar: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Para ver un ejemplo simplista, consulte la [Aplicación de diario We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Procesa todo el servidor de aplicaciones. Aunque este no es un ejemplo real, ilustra lo que se necesita para implementar la SSR.
+Para ver un ejemplo simplista, consulte [Aplicación de diario We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Procesa todo el servidor de aplicaciones. Aunque este no es un ejemplo real, ilustra lo que se necesita para implementar la SSR.
 
 >[!CAUTION]
 >
@@ -180,7 +176,7 @@ Para ver un ejemplo simplista, consulte la [Aplicación de diario We.Retail](htt
 
 >[!NOTE]
 >
->Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
+>AEM Cualquier proyecto debe utilizar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA y utiliza el SDK de.
 
 ## Uso de Node.js {#using-node-js}
 
@@ -210,7 +206,7 @@ Este servicio lo utiliza internamente el [RemoteContentRendererRequestHandlerSer
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-El `RemoteContentRendererRequestHandlerServlet` se puede utilizar para establecer mediante programación la configuración de la solicitud. `DefaultRemoteContentRendererRequestHandlerImpl`, la implementación del controlador de solicitudes predeterminada proporcionada, le permite crear varias configuraciones de OSGi para asignar una ubicación en la estructura de contenido a un extremo remoto.
+El `RemoteContentRendererRequestHandlerServlet` se puede utilizar para establecer mediante programación la configuración de la solicitud. `DefaultRemoteContentRendererRequestHandlerImpl`, la implementación del controlador de solicitudes predeterminada proporcionada, permite crear varias configuraciones de OSGi para asignar una ubicación en la estructura de contenido a un extremo remoto.
 
 Para agregar un controlador de solicitud personalizado, implemente la variable `RemoteContentRendererRequestHandler` interfaz. Asegúrese de configurar el `Constants.SERVICE_RANKING` propiedad de componente a un entero superior a 100, que es la clasificación del `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -244,4 +240,4 @@ Normalmente, la plantilla HTL de un componente de página es el destinatario pri
 
 ### Requisitos  {#requirements}
 
-Los servlets aprovechan el exportador de modelos Sling para serializar los datos del componente. De forma predeterminada, tanto la variable `com.adobe.cq.export.json.ContainerExporter` y `com.adobe.cq.export.json.ComponentExporter` se admiten como adaptadores del modelo Sling. Si es necesario, puede agregar clases a las que se debe adaptar la solicitud utilizando `RemoteContentRendererServlet` y la implementación de `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Las clases adicionales deben ampliar el `ComponentExporter`.
+Los servlets utilizan el Exportador del modelo Sling para serializar los datos del componente. De forma predeterminada, tanto la variable `com.adobe.cq.export.json.ContainerExporter` y `com.adobe.cq.export.json.ComponentExporter` se admiten como adaptadores del modelo Sling. Si es necesario, puede agregar clases a las que se debe adaptar la solicitud utilizando `RemoteContentRendererServlet` y la implementación de `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. Las clases adicionales deben ampliar el `ComponentExporter`.
