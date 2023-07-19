@@ -8,17 +8,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1968'
 ht-degree: 9%
 
 ---
 
 
 # Crear o personalizar una temática de formulario adaptable {#introduction-to-theme}
-
-<span class="preview"> El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -290,6 +288,7 @@ Los pasos para aplicar una temática a un formulario adaptable son los siguiente
 1. Haga clic en **Crear** > **Formularios adaptables**.
 1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. El **Añadir propiedades** aparece
 1. Especifique el **Nombre** para su formulario adaptable.
+
 
    >[!NOTE]
    >

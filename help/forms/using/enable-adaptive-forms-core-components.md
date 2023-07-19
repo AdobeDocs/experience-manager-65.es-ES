@@ -8,17 +8,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 19%
+source-wordcount: '891'
+ht-degree: 20%
 
 ---
 
 
 # Habilitación de los componentes principales de Forms AEM adaptable en Forms de la versión 6.5 de {#enable-adaptive-forms-core-components}
-
-<span class="preview"> El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
