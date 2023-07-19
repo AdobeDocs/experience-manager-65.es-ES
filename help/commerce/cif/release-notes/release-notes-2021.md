@@ -1,10 +1,10 @@
 ---
-title: AEM Notas de la versión de Content and Commerce de 2021
-description: AEM Notas de la versión de Content and Commerce de 2021
+title: Notas de la versión de Adobe Experience Manager Content and Commerce de 2021
+description: Notas de la versión de Adobe Experience Manager Content and Commerce de 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1318'
 ht-degree: 13%
 
 ---
@@ -17,7 +17,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 | Componente | Requisitos del sistema |
 |:-------|:-----:|
-| Complemento CIF | AEM Mínimo: 6.5.7, Adobe Commerce 2.3.5 Esquemas de GraphQL |
+| Complemento CIF | Mínimo: Adobe Experience Manager AEM () 6.5.7, Adobe Commerce 2.3.5 Esquemas de GraphQL |
 | Componentes principales del CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM. | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -51,7 +51,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * El complemento CIF es compatible con la versión 2.4.3 más reciente de Commerce con nuevas API y esquemas de GraphQL
 
-* Los autores pueden añadir vínculos a páginas de productos y catálogos en campos de texto mediante el editor de texto enriquecido (RTE). Se ha añadido un icono de CIF a la barra de herramientas de RTE que abrirá los selectores para buscar y seleccionar rápidamente el producto o la categoría sin salir del contexto.
+* Los autores pueden añadir vínculos a páginas de productos y catálogos en campos de texto mediante el editor de texto enriquecido (RTE). Se ha añadido un icono de CIF a la barra de herramientas de RTE que abre los selectores para buscar y seleccionar rápidamente el producto o la categoría sin salir del contexto.
 
 * AEM El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas al carro de compras y al cierre de compra de la. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Adobe Commerce
 
@@ -71,11 +71,11 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * AEM La nueva pestaña &quot;Contenido de comercio asociado&quot; del editor de Sites aumenta la eficacia del autor al obtener acceso rápidamente al contenido de producto relevante para el contexto actual
 
-   ![Contenido de comercio asociado](/help/assets/CIF/associated-commerce-content.png)
+  ![Contenido de comercio asociado](/help/assets/CIF/associated-commerce-content.png)
 
 * Se ha mejorado la interfaz de usuario del selector de productos para mejorar la experiencia del usuario, aumentar la eficacia y admitir catálogos de productos complejos
 
-   ![Nuevo selector de productos](/help/assets/CIF/product-picker.png)
+  ![Nuevo selector de productos](/help/assets/CIF/product-picker.png)
 
 * Respetar la propiedad &quot;include_in_menu&quot; en el componente de navegación
 
@@ -83,7 +83,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * El vaciado de caché del menú no funciona como se esperaba
 
-* AEM Errores de JS durante el paso de implementación de CS y durante el uso de componentes del lado del cliente
+* AEM Errores de JS durante el paso de implementación de CS y cuando no se utilizan componentes del lado del cliente
 
 * No se puede crear la configuración de nube del CIF en carpetas que tengan un nodo sling:configs
 
@@ -99,7 +99,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * Nueva interfaz de usuario del selector de categorías para mejorar la experiencia del usuario, aumentar la eficacia y ofrecer una mejor compatibilidad con catálogos de productos complejos
 
-   ![Selector de nueva categoría](/help/assets/CIF/category-picker.png)
+  ![Selector de nueva categoría](/help/assets/CIF/category-picker.png)
 
 * Mejor compatibilidad con A11Y para los componentes principales del CIF
 
