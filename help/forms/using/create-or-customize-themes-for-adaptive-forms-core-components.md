@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
+source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1961'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 En AEM Forms AEM 6.5, una temática es una biblioteca de cliente de que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. Una temática se administra de forma independiente sin hacer referencia a un formulario adaptable y se puede reutilizar en varios formularios adaptables de Forms.
 
-## Temas disponibles {#available-standard-theme}
+## Temas disponibles {#available-theme}
 
 AEM entorno de 6.5 proporciona los temas siguientes para los componentes principales basados en Forms adaptable:
 
@@ -51,13 +51,13 @@ Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript 
 
 ## Crear una temática
 
-AEM Forms 6.5 proporciona las siguientes temáticas estándar para componentes principales basados en Forms adaptable.
+AEM Forms 6.5 proporciona los temas siguientes para los componentes principales basados en Forms adaptable.
 
 * [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Puede [personalice cualquiera de estas temáticas estándar para crear una temática](#customize-a-theme-core-components).
+Puede [personalice cualquiera de estas temáticas para crear una temática](#customize-a-theme-core-components).
 
 ## Personalizar una temática {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -92,7 +92,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 Crear o personalizar una temática es un proceso de varios pasos. Realice los pasos en el orden indicado para crear o personalizar la temática:
 
-1. [Clonar una temática estándar](#clone-git-repo-of-theme)
+1. [Clonar una temática](#clone-git-repo-of-theme)
 1. [Personalizar el aspecto de la temática](#customize-the-theme)
 1. [Preparar el tema para la implementación local](#generate-the-clientlib)
 1. [Implementar el tema en un entorno local](#deploy-the-theme-on-a-local-environment)
@@ -102,17 +102,17 @@ Crear o personalizar una temática es un proceso de varios pasos. Realice los pa
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** tema, pero puede clonar cualquier tema estándar y personalizarlo con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
+Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** tema, pero puede clonar cualquier tema y personalizarlo con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
 
 #### 1. Clone el repositorio Git de la temática {#clone-git-repo-of-theme}
 
-Para clonar una temática estándar para componentes principales basados en Forms adaptable, elija una de las siguientes temáticas estándar:
+Para clonar una temática para componentes principales basados en Forms adaptable, elija una de las siguientes temáticas:
 
 * [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Siga estas instrucciones para clonar una temática estándar:
+Siga estas instrucciones para clonar una temática:
 
 1. Abra el símbolo del sistema o la ventana de terminal en su entorno de desarrollo local.
 
