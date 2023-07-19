@@ -8,26 +8,30 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 12%
+source-wordcount: '1988'
+ht-degree: 9%
 
 ---
 
 
-# Introducción al tema {#introduction-to-theme}
+# Crear o personalizar una temática de formulario adaptable {#introduction-to-theme}
+
+<span class="preview"> El Adobe recomienda utilizar los componentes principales para [Añadir Forms adaptable a una página de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o a [crear Forms adaptable independiente](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | Este artículo |
 | AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
+**Se aplica a:** ❎ de componentes principales de formulario adaptable ✅ [Componentes de base de formulario adaptable](/help/forms/using/themes.md).
+
 En AEM Forms AEM 6.5, una temática es una biblioteca de cliente de que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. Una temática se administra de forma independiente sin hacer referencia a un formulario adaptable y se puede reutilizar en varios formularios adaptables de Forms.
 
-## Temas de referencia disponibles {#available-reference-theme}
+## Temas disponibles {#available-standard-theme}
 
-AEM entorno de 6.5 proporciona los siguientes temas de referencia para los componentes principales basados en Forms adaptable:
+AEM entorno de 6.5 proporciona los temas siguientes para los componentes principales basados en Forms adaptable:
 
 * [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -49,13 +53,13 @@ Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript 
 
 ## Crear una temática
 
-AEM Forms 6.5 proporciona los siguientes temas de referencia para componentes principales basados en Forms adaptable.
+AEM Forms 6.5 proporciona las siguientes temáticas estándar para componentes principales basados en Forms adaptable.
 
 * [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Puede [personalice cualquiera de estas temáticas de referencia para crear una temática](#customize-a-theme-core-components).
+Puede [personalice cualquiera de estas temáticas estándar para crear una temática](#customize-a-theme-core-components).
 
 ## Personalizar una temática {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -90,26 +94,27 @@ La personalización de una temática hace referencia al proceso de modificación
 
 Crear o personalizar una temática es un proceso de varios pasos. Realice los pasos en el orden indicado para crear o personalizar la temática:
 
-1. [Clonar una temática de referencia](#clone-git-repo-of-theme)
+1. [Clonar una temática estándar](#clone-git-repo-of-theme)
 1. [Personalizar el aspecto de la temática](#customize-the-theme)
 1. [Preparar el tema para la implementación local](#generate-the-clientlib)
-1. [Implementar el tema en un entorno de prueba local](#deploy-the-theme-on-a-local-testing-environment)
-1. [Prueba de la temática con un formulario adaptable local](#test-the-theme-with-a-local-adaptive-form)
-1. Implementar el tema en el entorno de producción
+1. [Implementar el tema en un entorno local](#deploy-the-theme-on-a-local-environment)
+1. [Implementar el tema en el entorno de producción](#5-deploy-a-theme-on-your-production-environment)
 
-![Flujo de trabajo Personalización de temas](/help/forms/using/assets/custom-theme-steps.png)
+<!--
+ ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
+-->
 
-Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** tema, pero puede clonar cualquier tema de referencia y personalizarlo con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
+Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** tema, pero puede clonar cualquier tema estándar y personalizarlo con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
 
 #### 1. Clone el repositorio Git de la temática {#clone-git-repo-of-theme}
 
-Para clonar un tema de referencia para componentes principales basados en Forms adaptable, elija uno de los siguientes temas de referencia:
+Para clonar una temática estándar para componentes principales basados en Forms adaptable, elija una de las siguientes temáticas estándar:
 
 * [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Siga estas instrucciones para clonar un tema de referencia:
+Siga estas instrucciones para clonar una temática estándar:
 
 1. Abra el símbolo del sistema o la ventana de terminal en su entorno de desarrollo local.
 
@@ -206,7 +211,7 @@ AEM Para implementar una temática en una instancia de, debe convertirse en una 
 
    ![Ubicación de la biblioteca de cliente](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Implementar el tema en un entorno de prueba local {#deploy-the-theme-on-a-local-testing-environment}
+#### 4. Implementar el tema en un entorno local {#deploy-the-theme-on-a-local-environment}
 
 Para implementar el tema en el entorno de desarrollo o prueba local, siga estos pasos:
 
@@ -222,38 +227,40 @@ Para implementar el tema en el entorno de desarrollo o prueba local, siga estos 
 
    ![Compilación de biblioteca de cliente](/help/forms/using/assets/mvndeploy.png)
 
-#### 5. Probar la temática con un formulario adaptable local {#test-the-theme-with-a-local-adaptive-form}
+<!--
 
-Para aplicar y probar la temática personalizada con un formulario adaptable:
+#### 5. Test the theme with a local Adaptive Form {#test-the-theme-with-a-local-adaptive-form}
 
-**Aplicar una temática al crear un formulario adaptable**
+To apply and test the customized theme with an Adaptive Form:
 
-1. Inicie sesión en la instancia de creación de AEM Forms.
+**Apply theme while creating an Adaptive Form**
 
-1. Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
+1. Log in to your AEM Forms author instance. 
 
-1. Haga clic en **Crear** > **Formularios adaptables**. Se abre el asistente para crear formularios adaptables.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Seleccione la plantilla del componente principal en la pestaña **Fuente**.
-1. Seleccione la temática en la **Estilo** pestaña.
-1. Haga clic en **Crear**.
+1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
-Se crea un formulario adaptable con la temática seleccionada.
+1. Select the core component template in the **Source** tab.
+1. Select the theme in the **Style** tab.
+1. Click **Create**.
 
-**Aplicar temática a un formulario adaptable existente**
+An Adaptive Form with the selected theme is created. 
 
-1. Inicie sesión en la instancia de creación de AEM Forms.
+**Apply theme to an existing Adaptive Form**
 
-1. Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
+1. Log in to your AEM Forms author instance. 
 
-1. Seleccione un formulario adaptable y haga clic en Propiedades.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Para el **Biblioteca de cliente de temas** , seleccione la temática.
+1. Select an Adaptive Form and click Properties. 
 
-1. Haga clic en **Guardar y cerrar**.
+1. For the **Theme Client Library** option, select the theme. 
 
-La temática seleccionada se aplicará al formulario adaptable.
+1. Click **Save & Close**.
 
+The selected theme is applied to the Adaptive Form. 
+-->
 
 #### 5. Implementar un tema en el entorno de producción {#deploy-theme}
 
@@ -278,14 +285,17 @@ Una vez instalado el paquete, la temática está disponible para su selección.
 
 Los pasos para aplicar una temática a un formulario adaptable son los siguientes:
 
-1. Inicie sesión en la instancia de creación de AEM Forms.
+1. AEM Inicie sesión en la instancia local de autor de la.
+1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
+1. Haga clic en **Crear** > **Formularios adaptables**.
+1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. El **Añadir propiedades** aparece
+1. Especifique el **Nombre** para su formulario adaptable.
 
-1. Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
+   >[!NOTE]
+   >
+   > * De forma predeterminada, la variable `adaptiveform.theme.canvas3` tema está seleccionado.
+   > * Puede elegir una temática diferente de la siguiente **Biblioteca de cliente de temas** menú desplegable.
 
-1. Haga clic en **Crear** > **Formularios adaptables**. Se abre el asistente para crear formularios adaptables.
-
-1. Seleccione la plantilla del componente principal en la pestaña **Fuente**.
-1. Seleccione la temática en la **Estilo** pestaña.
 1. Haga clic en **Crear**.
 
 Las temáticas se utilizan como parte de una plantilla de formulario adaptable para definir el estilo al crear un formulario adaptable.
