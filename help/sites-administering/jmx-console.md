@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4957'
+source-wordcount: '4956'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
    * model: ID del modelo que se va a consultar. Para ver un recuento de instancias de flujo de trabajo con errores para todos los modelos de flujo de trabajo, especifique sin valor. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo con errores.
 
@@ -101,7 +101,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
    * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
    * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias fallidas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: Datos de tabla sobre las instancias que han finalizado, que contienen las columnas siguientes:
 
@@ -119,7 +119,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
    * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
    * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a los elementos de trabajo con errores de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: datos de tabla sobre los elementos de trabajo con errores que se vuelven a intentar, incluidas las columnas siguientes:
 
@@ -136,7 +136,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
    * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Número de días desde que se inició el flujo de trabajo: antigüedad de las instancias de flujo de trabajo que se van a depurar, en días.
    * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
@@ -155,7 +155,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
    * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo antiguas.
 
@@ -165,7 +165,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
    * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias antiguas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
 * Valor devuelto: lista de instancias de flujo de trabajo que se reinician.
@@ -181,7 +181,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
    * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias en ejecución. No especificar ningún modelo para devolver el número de instancias en ejecución de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo en ejecución.
 
@@ -191,7 +191,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
    * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias completadas. No especificar ningún modelo para devolver el número de instancias completadas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valor devuelto: número de instancias de flujo de trabajo completadas.
 
@@ -201,7 +201,7 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
    * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Número de días transcurridos desde que se completó el flujo de trabajo: número de días durante los cuales las instancias del flujo de trabajo quedaron en el estado completado.
    * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
@@ -556,11 +556,11 @@ Solo lectura.
 
    * `target`: (Opcional) A `String` valor que representa el nombre del archivo ZIP o del directorio en el que se archivan los datos del repositorio. Para utilizar un archivo ZIP, incluya la extensión del nombre del archivo ZIP. Para utilizar un directorio, no incluya ninguna extensión de nombre de archivo.
 
-      Para realizar una copia de seguridad incremental, especifique el directorio que se utilizó anteriormente para la copia de seguridad.
+     Para realizar una copia de seguridad incremental, especifique el directorio que se utilizó anteriormente para la copia de seguridad.
 
-      Puede especificar una ruta absoluta o relativa. Las rutas relativas son relativas al elemento principal del directorio crx-quickstart.
+     Puede especificar una ruta absoluta o relativa. Las rutas relativas son relativas al elemento principal del directorio crx-quickstart.
 
-      Cuando no se especifica ningún valor, el valor predeterminado de `backup-currentdate.zip` se utiliza, donde `currentdate` tiene el formato `yyyyMMdd-HHmm`.
+     Cuando no se especifica ningún valor, el valor predeterminado de `backup-currentdate.zip` se utiliza, donde `currentdate` tiene el formato `yyyyMMdd-HHmm`.
 
 * Valor devuelto: ninguno
 

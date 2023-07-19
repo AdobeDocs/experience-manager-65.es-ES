@@ -12,9 +12,9 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2729'
 ht-degree: 0%
 
 ---
@@ -163,11 +163,13 @@ A continuación se muestra el procedimiento que debe seguirse para crear una con
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
+
    1. Cree una nueva carpeta llamada `crx3` bajo `aem-standby/crx-quickstart/install`
 
    1. Cree la configuración del almacén de datos y colóquela en `aem-standby/crx-quickstart/install/crx3`. Para este ejemplo, el archivo que debe crear es:
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
+
    1. Edite los archivos y cree las configuraciones necesarias.
 
    A continuación se muestran archivos de configuración de ejemplo para una instancia de espera típica:

@@ -10,10 +10,10 @@ discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 100%
+source-wordcount: '418'
+ht-degree: 94%
 
 ---
 
@@ -42,4 +42,4 @@ La aplicación de escritorio de AEM utiliza el protocolo WebDAV en Microsoft Win
 1. Reinicie el servidor de AEM Forms. Después reiniciarlo, el servidor de AEM Forms estará habilitado para aceptar y compartir contenido con la aplicación de escritorio de AEM.
 1. Abra la aplicación y conéctese al servidor de AEM Forms.
 
-   Si la conexión se realiza correctamente, la aplicación rellenará las carpetas `content/dam` y `content/dam/formsanddocuments`. Junto con Mover archivos de carpetas anteriores a carpetas locales y viceversa, puede utilizar la aplicación para mover contenido entre carpetas rellenadas automáticamente.
+   Si la conexión se realiza correctamente, la aplicación rellenará las carpetas `content/dam` y `content/dam/formsanddocuments`. Además de mover archivos de carpetas anteriores a carpetas locales y a la inversa, puede utilizar la aplicación para mover contenido entre carpetas rellenadas automáticamente.

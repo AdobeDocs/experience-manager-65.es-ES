@@ -10,16 +10,16 @@ topic-tags: operations
 content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
 exl-id: e25f0b7f-5f12-4363-b302-e51c81035c7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '85'
 ht-degree: 1%
 
 ---
 
 # Habilitar el acceso a la IU clásica{#enabling-access-to-classic-ui}
 
-AEM Con la funcionalidad táctil que alcanza la paridad con y y que de hecho supera la de la IU clásica en muchas áreas de la interfaz de usuario, el acceso a la interfaz clásica a través de la interfaz táctil ahora está deshabilitado de forma predeterminada. En las siguientes páginas se explica cómo volver a habilitar este acceso si es necesario.
+AEM Con la funcionalidad táctil que alcanza la paridad con la IU clásica y que, de hecho, supera a la de muchas áreas de la interfaz táctil, el acceso a la interfaz clásica a través de la interfaz táctil ahora está deshabilitado de forma predeterminada. En las siguientes páginas se explica cómo volver a habilitar este acceso si es necesario.
 
 * [Editor](/help/sites-administering/enable-classic-ui-editor.md)
 * [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)

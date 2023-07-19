@@ -11,10 +11,10 @@ discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 100%
+source-wordcount: '1880'
+ht-degree: 99%
 
 ---
 
@@ -323,7 +323,7 @@ La administración de la acción/botón al hacer clic en la acción/botón inclu
       '</div>';
       ```
 
-### Agregar el proceso de LiveCycle para habilitar la acción <span class="acrolinxCursorMarker"></code>administrar {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Agregar el proceso de LiveCycle para habilitar la acción <span class="acrolinxCursorMarker"></code>manejo {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 En esta situación, habilite los siguientes componentes, que forman parte del archivo adjunto components.zip:
 

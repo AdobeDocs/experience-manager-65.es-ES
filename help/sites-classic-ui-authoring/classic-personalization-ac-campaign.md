@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Las instrucciones detalladas se describen en este documento.
 >[!NOTE]
 >
 >Al añadir plantillas de correo electrónico, asegúrese de añadirlas en **/content/campaigns** para que estén disponibles.
+>
 
 1. AEM En, seleccione la opción **Sitios web** a continuación, examine el explorador para encontrar dónde se administran las campañas de correo electrónico. En el ejemplo siguiente, el nodo correspondiente es **Sitios web** > **Campañas** > **Geometrixx Outdoors** > **Campañas de correo electrónico**.
 
@@ -124,7 +125,6 @@ Consulte [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classi
 >* Solo los campos de Adobe Campaign **Perfiles** se tienen en cuenta las dimensiones de segmentación.
 >* Al ver las propiedades de **Sites**, no tiene acceso a los campos de contexto de Adobe Campaign. Puede acceder a ellas directamente desde el correo electrónico mientras edita.
 >
-
 
 1. Insertar un nuevo **Newsletter** > **Texto y personalización (Campaign)** componente.
 1. Abra el componente haciendo doble clic en él. El **Editar** tiene una funcionalidad que permite insertar los elementos personalizados.

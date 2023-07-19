@@ -2,9 +2,9 @@
 title: Integración con Adobe Target mediante IMS
 description: AEM Obtenga información acerca de la integración de la con Adobe Target mediante IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1549'
 ht-degree: 54%
 
 ---
@@ -162,7 +162,7 @@ AEM Al volver a la configuración de la consola de Adobe Developer para Target, 
 1. Aquí puede usar los [detalles de la configuración del proyecto en Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
    * **Título**: el texto.
-   * **Servidor de autorización**: copie/pegue esto desde la línea `aud` de la sección **Carga útil** a continuación, p. ej., `https://ims-na1.adobelogin.com` en el ejemplo siguiente
+   * **Servidor de autorización**: copie/pegue esto desde la línea `aud` de la sección **Carga útil** a continuación, por ejemplo, `https://ims-na1.adobelogin.com` en el ejemplo siguiente
    * **Clave de API**: copie esto desde el [Información general](#details-stored-for-the-ims-integration-project) sección
    * **Secreto del cliente**: genere esto en la [Información general](#details-stored-for-the-ims-integration-project) sección, y copiar
    * **Carga útil**: copie esto desde la sección [Generar JWT](#details-stored-for-the-ims-integration-project)

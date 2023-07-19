@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '748'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Puede hacer lo siguiente:
 
 * [Definir colecciones de parámetros de configuración para cada modo de ejecución](#defining-configuration-properties-for-a-run-mode).
 
-   Se aplica un conjunto básico de parámetros de configuración para todos los modos de ejecución y, a continuación, puede ajustar conjuntos adicionales para el propósito de su entorno específico. Se aplican según sea necesario.
+  Se aplica un conjunto básico de parámetros de configuración para todos los modos de ejecución y, a continuación, puede ajustar conjuntos adicionales para el propósito de su entorno específico. Se aplican según sea necesario.
 
 * [Defina paquetes adicionales para instalarlos en un modo concreto](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
@@ -89,19 +89,19 @@ El modo de ejecución se indica con un sufijo en el nombre de la carpeta. Esto l
 
 * `config`
 
-   Aplicable a todos los modos de ejecución
+  Aplicable a todos los modos de ejecución
 
 * `config.author`
 
-   Se utiliza para el modo de ejecución de autor
+  Se utiliza para el modo de ejecución de autor
 
 * `config.publish`
 
-   Se utiliza para el modo de ejecución de publicación
+  Se utiliza para el modo de ejecución de publicación
 
 * `config.<run-mode>`
 
-   Se utiliza para el modo de ejecución aplicable; por ejemplo, config
+  Se utiliza para el modo de ejecución aplicable; por ejemplo, config
 
 Consulte [Configuración de OSGi en el repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) para obtener más información sobre la definición de los nodos de configuración individuales dentro de estas carpetas y para crear configuraciones para combinaciones de varios modos de ejecución.
 
@@ -123,8 +123,8 @@ Estas carpetas son del tipo `nt:folder` y deben contener el paquete adecuado.
 Si ha definido configuraciones para varios modos de ejecución, debe definir cuál se utilizará al iniciar. Existen varios métodos para especificar qué modo de ejecución utilizar; el orden de resolución es el siguiente:
 
 1. [propiedades del sistema (](#using-a-system-property-in-the-start-script)
-1. [ ](#using-the-sling-properties-file)
-1. [ ](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [Detección de nombres de archivo](#filename-detection-renaming-the-jar-file)
 
 Cuando utiliza un servidor de aplicaciones, también puede [defina el modo de ejecución en web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -155,7 +155,7 @@ Se puede utilizar una propiedad del sistema en el script de inicio para especifi
 
 * Por ejemplo, utilice lo siguiente para iniciar una instancia como instancia de publicación de producción ubicada en Estados Unidos:
 
-   `-Dsling.run.modes=publish,prod,us`
+  `-Dsling.run.modes=publish,prod,us`
 
 ### Detección de nombres de archivo: cambiando el nombre del archivo jar {#filename-detection-renaming-the-jar-file}
 

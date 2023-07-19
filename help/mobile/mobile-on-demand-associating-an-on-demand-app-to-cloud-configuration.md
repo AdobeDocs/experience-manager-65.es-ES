@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager AEM () comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. AEM Al vincular la aplicación a un proyecto de Mobile On-Demand, podrá crear contenido, como artículos, titulares y colecciones, dentro de la aplicación, pero también podrá servir ese contenido a Mobile On-Demand.
 

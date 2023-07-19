@@ -4,10 +4,10 @@ description: AEM Comprenda de qué forma las variaciones pueden hacer que el con
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2426'
-ht-degree: 87%
+source-wordcount: '2428'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ En la pestaña **Variaciones** puede hacer lo siguiente:
 * [Introducir el contenido](#authoring-your-content) para el fragmento,
 * [Crear y administrar variaciones](#managing-variations) del contenido **Principal**,
 
-Realizar una serie de otras acciones en función del tipo de datos que se esté editando; por ejemplo:
+Realizar una serie de acciones diferentes en función del tipo de datos que se esté editando; por ejemplo:
 
 * [Insertar recursos visuales en el fragmento](#inserting-assets-into-your-fragment) (imágenes)
 
@@ -48,15 +48,15 @@ Por ejemplo:
 
 Puede hacer lo siguiente:
 
-* Edite el contenido directamente en la pestaña **Variaciones** pestaña; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
+* Edite el contenido directamente en la pestaña de **Variaciones**; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
 
    * para los campos **Texto de varias líneas** también puede abrir los campos [editor de pantalla completa](#full-screen-editor) a:
 
       * seleccione el [Formato](#formats)
       * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
       * acceder a una amplia gama de [acciones](#actions)
-   * Para los campos **Referencia a fragmento** la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, dependiendo de la definición del modelo.
 
+   * Para los campos **Referencia a fragmento** la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, dependiendo de la definición del modelo.
 
 * Asignar **Etiquetas** a la variación actual; las etiquetas se pueden añadir, actualizar y eliminar
 
@@ -65,10 +65,11 @@ Puede hacer lo siguiente:
       * Si busca una etiqueta, se devolverá el fragmento con la variación etiquetada resaltada.
       * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
 
-      Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
-   >[!NOTE]
-   >
-   >**Etiquetas** también se puede añadir (a la **Principal** variación) como parte de la [Metadatos](/help/assets/content-fragments/content-fragments-metadata.md)
+     Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+
+  >[!NOTE]
+  >
+  >**Etiquetas** también se puede añadir (a la variación **Principal**) como parte de los [Metadatos](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [Crear y administrar variaciones](#managing-variations) del contenido **Principal.**
 
@@ -232,14 +233,16 @@ El texto de resumen está diseñado para ayudar a los usuarios a reducir la long
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
+>
 El inglés está disponible de forma predeterminada.
+>
 Otros idiomas están disponibles como Paquetes de modelo de idioma desde Uso compartido de paquetes:
+>
 * [Francés(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [Alemán(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italiano(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Español(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
-
 
 1. Seleccione **Principal** o la variación requerida.
 1. Abra el editor de pantalla completa.
@@ -305,14 +308,15 @@ Anotaciones:
 
 * Se indican mediante el resaltado en el texto, tanto en pantalla completa como en modo normal del editor. Los detalles completos de una anotación se pueden ver, editar o eliminar haciendo clic en el texto resaltado, que reabrirá el cuadro de diálogo.
 
-   >[!NOTE]
-   Se proporciona un selector desplegable si se han aplicado varias anotaciones a un texto.
+  >[!NOTE]
+  >
+  Se proporciona un selector desplegable si se han aplicado varias anotaciones a un texto.
 
 * Cuando se elimina todo el texto al que se aplicó la anotación, también se elimina la anotación.
 
 * Se puede enumerar y eliminar seleccionando la pestaña **Anotaciones** en el editor de fragmentos.
 
-   ![anotaciones](assets/cfm-variations-08.png)
+  ![anotaciones](assets/cfm-variations-08.png)
 
 * Se puede ver y eliminar en [Cronología](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) para el fragmento seleccionado.
 
@@ -323,10 +327,13 @@ Para facilitar el proceso de creación de fragmentos de contenido, puede agregar
 Se agregarán a la secuencia de párrafo del fragmento sin ningún formato; el formato se puede realizar cuando [se utiliza/se hace referencia al fragmento en una página](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
+>
 Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe hacerse en el editor de fragmentos.
-Sin embargo, el formato del recurso (p. ej., su tamaño) debe realizarse en el [editor de páginas](/help/sites-authoring/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
+>
+Sin embargo, el formato del recurso (por ejemplo, su tamaño) debe realizarse en el [editor de páginas](/help/sites-authoring/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
 
 >[!NOTE]
+>
 Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
 1. Coloque el cursor en la posición en la que desee agregar la imagen.
@@ -344,10 +351,10 @@ Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/cont
 1. Utilice **Seleccionar** para agregar el recurso al sistema de párrafos del fragmento de contenido en la ubicación actual.
 
    >[!CAUTION]
+   >
    Si, después de agregar un recurso, cambia el formato a:
    * **Texto sin formato**: El recurso se perderá completamente del fragmento.
    * **Marcado**: El recurso no estará visible, pero permanecerá allí cuando vuelva a **Texto enriquecido**.
-
 
 ### Inserción de un fragmento de contenido en el fragmento {#inserting-content-fragment-into-your-fragment}
 
@@ -356,13 +363,17 @@ Para facilitar el proceso de creación de fragmentos de contenido, también pued
 Se agregan como referencia en la ubicación actual del fragmento.
 
 >[!NOTE]
+>
 Esta opción está disponible cuando su **Texto de varias líneas** está configurado con **Permitir referencia a fragmento**.
 
 >[!CAUTION]
+>
 Estos recursos no se pueden mover ni eliminar en una página de referencia; esto debe hacerse en el editor de fragmentos.
-Sin embargo, el formato del recurso (p. ej., su tamaño) debe realizarse en el [editor de páginas](/help/sites-authoring/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
+>
+Sin embargo, el formato del recurso (por ejemplo, su tamaño) debe realizarse en el [editor de páginas](/help/sites-authoring/content-fragments.md). La representación del recurso en el editor de fragmentos se realiza exclusivamente para crear el flujo de contenido.
 
 >[!NOTE]
+>
 Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
 1. Coloque el cursor en la posición en la que desee agregar el fragmento.
@@ -380,10 +391,10 @@ Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/cont
 1. Use **Seleccionar** para agregar una referencia al fragmento de contenido seleccionado al fragmento de contenido actual (en la ubicación actual).
 
    >[!CAUTION]
-   Si, después de agregar una referencia a otro fragmento, cambia el formato a
+   >
+   Si, después de agregar una referencia a otro fragmento, cambia el formato a:
    * **Texto sin formato**: la referencia se perderá completamente del fragmento.
    * **Markdown**: la referencia se mantendrá.
-
 
 ## Administración de variaciones {#managing-variations}
 
@@ -400,10 +411,12 @@ Para crear una nueva variación, haga lo siguiente:
 1. Seleccione **Agregar**; el fragmento **principal** se copiará en la nueva variación, que ahora estará abierta para [edición](#editing-a-variation).
 
    >[!NOTE]
+   >
    Al crear una variación nueva, siempre es **Principal** que se copia, no la variación que está abierta actualmente.
 
    >[!NOTE]
-   Al crear una nueva variación, todas las variables **Etiquetas** asignado actualmente a **Principal** se copian en la nueva variación.
+   >
+   Al crear una nueva variación, todas las **Etiquetas** asignadas actualmente a la variación **Principal** se copian en la nueva variación.
 
 ### Edición de una variación {#editing-a-variation}
 
@@ -427,6 +440,7 @@ Para cambiar el nombre de una variación existente:
 1. Confirme la acción **Cambiar nombre**.
 
 >[!NOTE]
+>
 Esto solo afecta a la variación **Título**.
 
 ### Eliminación de una variación {#deleting-a-variation}
@@ -440,6 +454,7 @@ Para eliminar una variación existente, haga esto:
 1. Confirme la acción **Eliminar** en el cuadro de diálogo.
 
 >[!NOTE]
+>
 No puede eliminar **Principal**.
 
 ### Sincronización con Principal {#synchronizing-with-master}
@@ -449,9 +464,13 @@ No puede eliminar **Principal**.
 Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto le permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
 
 >[!CAUTION]
+>
 La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
+>
 Solo se sincronizará el elemento actual de la variación.
-La sincronización solo funciona en **Texto de varias líneas** tipo de datos.
+>
+La sincronización solo funciona en el tipo de datos de **texto de varias líneas**.
+>
 No está disponible como opción la transferencia de cambios *de una variación **a Principal***.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -462,11 +481,11 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
    * el selector desplegable **Acciones**, **Sincronizar elemento actual con principal**
 
-      ![sincronización con principal](assets/cfm-variations-11a.png)
+     ![sincronización con principal](assets/cfm-variations-11a.png)
 
    * la barra de herramientas del editor de pantalla completa: **Sincronizar con principal**
 
-      ![sincronización con principal](assets/cfm-variations-11b.png)
+     ![sincronización con principal](assets/cfm-variations-11b.png)
 
 1. Principal y la variación se mostrarán en paralelo:
 
@@ -476,4 +495,4 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
    ![sincronización con principal](assets/cfm-variations-11c.png)
 
-1. Seleccionar **Sincronizar**, la variación se actualizará y se mostrará.
+1. Seleccione **Sincronizar**, la variación se actualizará y se mostrará.

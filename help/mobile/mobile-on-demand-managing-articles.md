@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Las acciones de Content Management son los componentes básicos que ayudan a crear y administrar artículos dentro de una aplicación. Las siguientes acciones se realizan en artículos dentro de la aplicación.
 
@@ -37,7 +37,6 @@ Los artículos representan el texto basado junto con el arte para transmitir inf
 >
 >* [Administrar artículos](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
-
 
 ## Creación de un artículo {#creating-an-article}
 

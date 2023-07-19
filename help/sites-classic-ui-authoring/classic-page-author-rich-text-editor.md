@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1843'
 ht-degree: 2%
 
 ---
@@ -168,7 +168,7 @@ Puede hacer lo siguiente:
 
 * Escriba un URI directamente
 * Utilice el mapa del sitio para seleccionar una página del sitio web
-* Introduzca el URI y, a continuación, añada el anclaje de destino; p. ej., `www.TargetUri.org#AnchorName`
+* Introduzca el URI y, a continuación, añada el anclaje de destino; por ejemplo, `www.TargetUri.org#AnchorName`
 * Introducir solo un anclaje (para hacer referencia a &quot;la página actual&quot;); por ejemplo, `#anchor`
 * Busque una página en el buscador de contenido y arrastre y suelte el icono de página en el cuadro de diálogo Hipervínculo
 

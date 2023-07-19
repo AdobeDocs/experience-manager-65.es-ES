@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 1%
@@ -48,7 +48,6 @@ or
 >* `/libs/settings/cloudsettings`
 >* `/conf/global/settings/cloudsettings`
 >* `/conf/<tenant>/settings/cloudsettings`
-
 
 ## Mostrar y ocultar la interfaz de usuario de ContextHub {#showing-and-hiding-the-contexthub-ui}
 
@@ -199,21 +198,21 @@ Para guardar datos del servicio MD5 del sitio jsontest.com, utilice el procedimi
 * **Habilitado:** Seleccionar
 * **Configuración detallada (JSON):**
 
-   ```xml
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```xml
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Adición de un módulo de IU para los datos md5 {#adding-a-ui-module-for-the-md-data}
 
@@ -227,15 +226,15 @@ Utilice el procedimiento de [Adición de un módulo de IU](#adding-a-ui-module) 
 * **Tipo de módulo:** contexthub.base
 * **Configuración detallada (JSON):**
 
-   ```xml
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Converstion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```xml
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Converstion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Depuración de ContextHub {#debugging-contexthub}
 

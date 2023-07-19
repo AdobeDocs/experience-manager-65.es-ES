@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
@@ -286,7 +286,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -548,7 +548,7 @@ El punto de entrada para la API de búsqueda es `CommerceService#search` método
 
 ### Integración de usuarios {#user-integration}
 
-AEM La integración se proporciona entre los sistemas de comercio electrónico de los distintos sistemas de comercio electrónico y de los que se puede acceder. AEM AEM Esto requiere una estrategia para sincronizar a los compradores entre los distintos sistemas, de modo que el código específico de los usuarios solo tenga que saber sobre los sistemas de compra y viceversa
+AEM La integración se proporciona entre los sistemas de comercio electrónico de los distintos sistemas de comercio electrónico y de los que se puede acceder. AEM AEM Esto requiere una estrategia para sincronizar a los compradores entre los distintos sistemas, de modo que el código específico de los clientes solo tenga que saber sobre los puntos de venta y, a la inversa, solo tenga que saber sobre los puntos de venta:
 
 * Autenticación
 

@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4872'
+source-wordcount: '4871'
 ht-degree: 50%
 
 ---
@@ -80,14 +80,14 @@ La creación de una nueva plantilla mediante la **consola Plantillas** y el **Ed
    * Se trata de un autor determinado que es miembro del grupo `template-authors`.
 
       * Esto le asigna los privilegios y los permisos necesarios.
+
    * Puede configurar el uso de componentes y otros detalles de alto nivel que requieran:
 
       * Algunos conocimientos técnicos
 
          * Por ejemplo, el uso de patrones al definir rutas.
+
       * Información técnica del desarrollador.
-
-
 
 Debido a la naturaleza de algunas tareas, como crear una carpeta, es necesario un entorno de desarrollo, y esto requiere conocimiento/experiencia.
 
@@ -265,7 +265,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
 
 1. Abra la pestaña **Avanzadas**.
 
-1. En **Configuración de la plantilla**, utilice **Agregar campo** para especificar la(s) ruta(s) a su(s) plantilla(s).
+1. En **Configuración de plantilla** use **Añadir campo** para especificar las rutas a las plantillas.
 
    La ruta puede ser explícita o utilizar patrones. Por ejemplo:
 
@@ -304,35 +304,35 @@ Los siguientes aspectos de una plantilla se pueden editar:
 
 * [Estructura](#editingatemplatestructure)
 
-   Los autores de la página no pueden mover/eliminar de las páginas resultantes los componentes añadidos aquí. Si desea que los autores de páginas puedan añadir y quitar componentes a las páginas resultantes, debe añadir un sistema de párrafos a la plantilla.
+  Los autores de la página no pueden mover/eliminar de las páginas resultantes los componentes añadidos aquí. Si desea que los autores de páginas puedan añadir y quitar componentes a las páginas resultantes, debe añadir un sistema de párrafos a la plantilla.
 
-   Cuando los componentes están bloqueados, puede agregar contenido, que los autores de la página no pueden editar. Puede desbloquear componentes para definir lo siguiente [Contenido inicial](#editingatemplateinitialcontent).
+  Cuando los componentes están bloqueados, puede agregar contenido, que los autores de la página no pueden editar. Puede desbloquear componentes para definir lo siguiente [Contenido inicial](#editingatemplateinitialcontent).
 
-   >[!NOTE]
-   >
-   >En el modo de estructura, cualquier componente que sea el padre de un componente desbloqueado no se puede mover, cortar ni eliminar.
+  >[!NOTE]
+  >
+  >En el modo de estructura, cualquier componente que sea el padre de un componente desbloqueado no se puede mover, cortar ni eliminar.
 
 * [Contenido inicial](#editingatemplateinitialcontent)
 
-   Cuando un componente se ha desbloqueado, puede definir el contenido inicial que se copiará a las páginas resultantes, creadas a partir de la plantilla. Estos componentes desbloqueados se pueden editar en las páginas resultantes.
+  Cuando un componente se ha desbloqueado, puede definir el contenido inicial que se copiará a las páginas resultantes, creadas a partir de la plantilla. Estos componentes desbloqueados se pueden editar en las páginas resultantes.
 
-   >[!NOTE]
-   >
-   >En el modo de **Contenido inicial**, así como en las páginas resultantes, cualquier componente desbloqueado que tenga una raíz accesible (es decir, componentes dentro de un contenedor de diseño) se puede eliminar.
+  >[!NOTE]
+  >
+  >En el modo de **Contenido inicial**, así como en las páginas resultantes, cualquier componente desbloqueado que tenga una raíz accesible (es decir, componentes dentro de un contenedor de diseño) se puede eliminar.
 
 * [Diseño](#editingatemplatelayout)
 
-   Aquí puede predefinir el diseño de la plantilla para los formatos de dispositivo necesarios. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de [**Diseño** para la creación de páginas](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+  Aquí puede predefinir el diseño de la plantilla para los formatos de dispositivo necesarios. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de [**Diseño** para la creación de páginas](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
 * [Políticas de la página](#editingatemplatepagepolicies)
 
-   En directivas de página puede conectar directivas de página predefinidas a la página. Estas políticas de la página definen las diversas configuraciones de diseño.
+  En directivas de página puede conectar directivas de página predefinidas a la página. Estas políticas de la página definen las diversas configuraciones de diseño.
 
 * [Estilos](/help/sites-authoring/style-system.md)
 
-   El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
+  El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 
-   Consulte la [documentación del sistema de estilos](/help/sites-authoring/style-system.md) para obtener más información.
+  Consulte la [documentación del sistema de estilos](/help/sites-authoring/style-system.md) para obtener más información.
 
 El selector **Modo** de la barra de herramientas le permite seleccionar y editar la proporción adecuada de la plantilla:
 
@@ -366,160 +366,160 @@ Entrada **Estructura** modo del editor de plantillas:
 
 * **Añadir componentes**
 
-   Existen varios mecanismos para añadir componentes a la plantilla:
+  Existen varios mecanismos para añadir componentes a la plantilla:
 
    * Desde el **Componentes** explorador en el panel lateral.
    * Mediante el uso de **Insertar componente** opción (**+** ) disponibles en la barra de herramientas de los componentes que ya están en la plantilla o en el **Arrastre los componentes aquí** cuadro.
 
    * Al arrastrar un recurso (desde el **Assets** explorador en el panel lateral) directamente en la plantilla para generar el componente adecuado in situ.
 
-   Una vez añadido, cada componente se marca con:
+  Una vez añadido, cada componente se marca con:
 
    * Un borde
    * Un marcador para mostrar el tipo de componente
    * Un marcador que se mostrará cuando se haya desbloqueado el componente
 
-   >[!NOTE]
-   >
-   >Al añadir un componente **Título** predefinido a la plantilla, contendrá la **estructura** de texto predeterminado.
-   >
-   >
-   >Si lo cambia, y añade su propio texto, este texto actualizado se utilizará cuando se cree una página a partir de la plantilla.
-   >
-   >
-   >Si deja el texto predeterminado (estructura), el título tendrá de manera predeterminada el nombre de la página siguiente.
+  >[!NOTE]
+  >
+  >Al añadir un componente **Título** predefinido a la plantilla, contendrá la **estructura** de texto predeterminado.
+  >
+  >
+  >Si lo cambia, y añade su propio texto, este texto actualizado se utilizará cuando se cree una página a partir de la plantilla.
+  >
+  >
+  >Si deja el texto predeterminado (estructura), el título tendrá de manera predeterminada el nombre de la página siguiente.
 
-   >[!NOTE]
-   >
-   >Aunque no sea una operación idéntica, la adición de componentes y recursos a una plantilla tiene muchas similitudes con acciones similares que se llevan a cabo al [crear páginas](/help/sites-authoring/editing-content.md).
+  >[!NOTE]
+  >
+  >Aunque no sea una operación idéntica, la adición de componentes y recursos a una plantilla tiene muchas similitudes con acciones similares que se llevan a cabo al [crear páginas](/help/sites-authoring/editing-content.md).
 
 * **Acciones de componente**
 
-   Realice acciones en los componentes una vez añadidos a la plantilla. Cada instancia individual tiene una barra de herramientas que le permite acceder a las acciones disponibles, la barra de herramientas depende del tipo de componente.
+  Realice acciones en los componentes una vez añadidos a la plantilla. Cada instancia individual tiene una barra de herramientas que le permite acceder a las acciones disponibles, la barra de herramientas depende del tipo de componente.
 
-   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
+  ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
-   También puede depender de las acciones realizadas, por ejemplo, cuando se ha asociado una política al componente, el icono de configuración de diseño está disponible.
+  También puede depender de las acciones realizadas, por ejemplo, cuando se ha asociado una política al componente, el icono de configuración de diseño está disponible.
 
 * **Editar y configurar**
 
-   Con estas dos acciones, puede añadir contenido a los componentes.
+  Con estas dos acciones, puede añadir contenido a los componentes.
 
 * **Borde para indicar la estructura**
 
-   Al trabajar en **Estructura** mode un borde naranja indica el componente seleccionado actualmente. Una línea de puntos también indica el componente principal.
+  Al trabajar en **Estructura** mode un borde naranja indica el componente seleccionado actualmente. Una línea de puntos también indica el componente principal.
 
-   Por ejemplo, en la captura de pantalla que aparece debajo de **Texto** El componente está seleccionado, dentro de un **Contenedor de diseño** (cuadrícula adaptable).
+  Por ejemplo, en la captura de pantalla que aparece debajo de **Texto** El componente está seleccionado, dentro de un **Contenedor de diseño** (cuadrícula adaptable).
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 * **Política y propiedades (general)**
 
-   Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
+  Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
-   Cree una política de contenido, o seleccione una existente, para un componente. Esto le permite definir los detalles del diseño.
+  Cree una política de contenido, o seleccione una existente, para un componente. Esto le permite definir los detalles del diseño.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
+  ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
-   La ventana de configuración se divide en dos.
+  La ventana de configuración se divide en dos.
 
    * En la parte izquierda del cuadro de diálogo, debajo de la sección **Política**, puede seleccionar una política existente.
    * En el lado derecho del cuadro de diálogo, debajo de la sección **Propiedades**, puede establecer las propiedades específicas del tipo de componente.
 
-   Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, para un componente de texto, las propiedades definen las opciones de copia y pegado, las opciones de formato y el estilo de párrafo, entre otras opciones.
+  Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, para un componente de texto, las propiedades definen las opciones de copia y pegado, las opciones de formato y el estilo de párrafo, entre otras opciones.
 
-   ***Directiva***
+  ***Directiva***
 
-   Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
+  Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
-   En **Política**, puede seleccionar una política existente para aplicarla al componente a través de la lista desplegable.
+  En **Política**, puede seleccionar una política existente para aplicarla al componente a través de la lista desplegable.
 
-   ![chlimage_1-137](assets/chlimage_1-137.png)
+  ![chlimage_1-137](assets/chlimage_1-137.png)
 
-   Para añadir una política nueva, seleccione el botón de adición situado junto a la lista desplegable **Seleccionar política.** Se debe proporcionar un título nuevo en el campo **Título de la política**.
+  Para añadir una política nueva, seleccione el botón de adición situado junto a la lista desplegable **Seleccionar política.** Se debe proporcionar un título nuevo en el campo **Título de la política**.
 
-   ![chlimage_1-138](assets/chlimage_1-138.png)
+  ![chlimage_1-138](assets/chlimage_1-138.png)
 
-   La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
+  La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
 
-   ![chlimage_1-139](assets/chlimage_1-139.png)
+  ![chlimage_1-139](assets/chlimage_1-139.png)
 
-   En el campo **Descripción de la política**, se ofrece de manera opcional una descripción de la política.
+  En el campo **Descripción de la política**, se ofrece de manera opcional una descripción de la política.
 
-   En la sección **Otras plantillas que también usan la política seleccionada**, puede ver con facilidad las otras plantillas que usan la política seleccionada en la lista desplegable **Seleccionar política**.
+  En la sección **Otras plantillas que también usan la política seleccionada**, puede ver con facilidad las otras plantillas que usan la política seleccionada en la lista desplegable **Seleccionar política**.
 
-   ![chlimage_1-140](assets/chlimage_1-140.png)
+  ![chlimage_1-140](assets/chlimage_1-140.png)
 
-   >[!NOTE]
-   >
-   >Si se añaden diversos componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja la misma restricción en [**Modo de diseño** para plantillas estáticas](/help/sites-authoring/default-components-designmode.md).
+  >[!NOTE]
+  >
+  >Si se añaden diversos componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja la misma restricción en [**Modo de diseño** para plantillas estáticas](/help/sites-authoring/default-components-designmode.md).
 
-   ***Propiedades***
+  ***Propiedades***
 
-   En el **Propiedades** encabezado puede definir la configuración del componente. El encabezado tiene dos pestañas:
+  En el **Propiedades** encabezado puede definir la configuración del componente. El encabezado tiene dos pestañas:
 
    * Principal
    * Características
 
-   *Principal*
+  *Principal*
 
-   En el **Principal** pestaña, se definen los ajustes más importantes del componente.
+  En el **Principal** pestaña, se definen los ajustes más importantes del componente.
 
-   Por ejemplo, para un componente de imagen se pueden definir los anchos permitidos junto con la activación de la carga diferida.
+  Por ejemplo, para un componente de imagen se pueden definir los anchos permitidos junto con la activación de la carga diferida.
 
-   Si una configuración permite varias configuraciones, toque o haga clic en **Añadir** para añadir otra configuración.
+  Si una configuración permite varias configuraciones, toque o haga clic en **Añadir** para añadir otra configuración.
 
-   ![chlimage_1-141](assets/chlimage_1-141.png)
+  ![chlimage_1-141](assets/chlimage_1-141.png)
 
-   Para quitar una configuración, toque o haga clic en el botón **Eliminar** situado a la derecha de la configuración.
+  Para quitar una configuración, toque o haga clic en el botón **Eliminar** situado a la derecha de la configuración.
 
-   Para quitar una configuración, toque o haga clic en el botón** Eliminar**.
+  Para quitar una configuración, toque o haga clic en el botón** Eliminar**.
 
-   ![chlimage_1-142](assets/chlimage_1-142.png)
+  ![chlimage_1-142](assets/chlimage_1-142.png)
 
-   *Características*
+  *Características*
 
-   El **Funciones** permite activar o desactivar funciones adicionales del componente.
+  El **Funciones** permite activar o desactivar funciones adicionales del componente.
 
-   Por ejemplo, para un componente de imagen puede definir las proporciones de recorte, las orientaciones de imagen permitidas y si se permiten las cargas.
+  Por ejemplo, para un componente de imagen puede definir las proporciones de recorte, las orientaciones de imagen permitidas y si se permiten las cargas.
 
-   ![chlimage_1-143](assets/chlimage_1-143.png)
+  ![chlimage_1-143](assets/chlimage_1-143.png)
 
-   >[!CAUTION]
-   >
-   >Tenga en cuenta que, en AEM, las proporciones de recorte se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
+  >[!CAUTION]
+  >
+  >Tenga en cuenta que, en AEM, las proporciones de recorte se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
 
-   >[!NOTE]
-   >
-   >[Las políticas de contenido para componentes que implementan el editor de texto](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) enriquecido solo se pueden definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[!NOTE]
+  >
+  >[Las políticas de contenido para componentes que implementan el editor de texto](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) enriquecido solo se pueden definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política y propiedades (contenedor de diseño)**
 
-   La configuración de directiva y propiedades de un contenedor de diseño es similar al uso general, pero con algunas diferencias.
+  La configuración de directiva y propiedades de un contenedor de diseño es similar al uso general, pero con algunas diferencias.
 
-   >[!NOTE]
-   >
-   >La configuración de una directiva es obligatoria para los componentes del contenedor, ya que le permite definir los componentes que estarán disponibles en el contenedor.
+  >[!NOTE]
+  >
+  >La configuración de una directiva es obligatoria para los componentes del contenedor, ya que le permite definir los componentes que estarán disponibles en el contenedor.
 
-   La ventana de configuración se divide en dos, al igual que en el uso general de la ventana.
+  La ventana de configuración se divide en dos, al igual que en el uso general de la ventana.
 
-   ***Directiva***
+  ***Directiva***
 
-   Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
+  Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
-   En **Política**, puede seleccionar una política existente para aplicarla al componente a través de la lista desplegable. Esto funciona igual que en el uso general de la ventana.
+  En **Política**, puede seleccionar una política existente para aplicarla al componente a través de la lista desplegable. Esto funciona igual que en el uso general de la ventana.
 
-   ***Propiedades***
+  ***Propiedades***
 
-   En el **Propiedades** encabezado puede elegir qué componentes están disponibles para el contenedor de diseño y definir su configuración. El encabezado tiene tres pestañas:
+  En el **Propiedades** encabezado puede elegir qué componentes están disponibles para el contenedor de diseño y definir su configuración. El encabezado tiene tres pestañas:
 
    * Componentes permitidos
    * Componentes predeterminados
    * Configuración adaptable
 
-   *Componentes permitidos*
+  *Componentes permitidos*
 
-   En el **Componentes permitidos** , se definen qué componentes están disponibles para el contenedor de diseño.
+  En el **Componentes permitidos** , se definen qué componentes están disponibles para el contenedor de diseño.
 
    * Los componentes se agrupan por sus grupos de componentes, que se pueden expandir y contraer.
    * Se puede seleccionar un grupo completo marcando el nombre del grupo y se puede anular la selección de todos desmarcando.
@@ -527,52 +527,53 @@ Entrada **Estructura** modo del editor de plantillas:
    * Hay disponible una búsqueda para filtrar un componente por nombre.
    * Los recuentos enumerados a la derecha del nombre del grupo de componentes representan el número total de componentes seleccionados en esos grupos, independientemente del filtro.
 
-   ![chlimage_1-144](assets/chlimage_1-144.png)
+  ![chlimage_1-144](assets/chlimage_1-144.png)
 
-   *Componentes predeterminados*
+  *Componentes predeterminados*
 
-   En el **Componentes predeterminados** AEM pestaña, puede definir qué componentes se asocian automáticamente a determinados tipos de medios para que cuando un autor arrastre un recurso desde el explorador de recursos, sepa con qué componente lo asociará. Tenga en cuenta que solo los componentes con zonas de colocación están disponibles para esta configuración.
+  En el **Componentes predeterminados** AEM pestaña, puede definir qué componentes se asocian automáticamente a determinados tipos de medios para que cuando un autor arrastre un recurso desde el explorador de recursos, sepa con qué componente lo asociará. Tenga en cuenta que solo los componentes con zonas de colocación están disponibles para esta configuración.
 
-   Haga clic o toque **Agregar asignación** para agregar un componente completamente nuevo y una asignación de tipo MIME.
+  Haga clic o toque **Agregar asignación** para agregar un componente completamente nuevo y una asignación de tipo MIME.
 
-   Seleccione un componente en la lista y pulse o haga clic en **Agregar tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
+  Seleccione un componente en la lista y pulse o haga clic en **Agregar tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
 
-   ![chlimage_1-145](assets/chlimage_1-145.png)
+  ![chlimage_1-145](assets/chlimage_1-145.png)
 
-   *Configuración adaptable*
+  *Configuración adaptable*
 
-   En la pestaña **Configuración adaptable**, puede configurar el número de columnas de la cuadrícula resultante del contenedor de diseño.
+  En la pestaña **Configuración adaptable**, puede configurar el número de columnas de la cuadrícula resultante del contenedor de diseño.
 
 * **Desbloquear/bloquear componentes**
 
-   Los componentes se desbloquean o bloquean para definir si el contenido está disponible para cambiar en **Contenido inicial** modo.
+  Los componentes se desbloquean o bloquean para definir si el contenido está disponible para cambiar en **Contenido inicial** modo.
 
-   Cuando se ha desbloqueado un componente:
+  Cuando se ha desbloqueado un componente:
 
    * Se muestra un indicador de candado abierto en el borde.
    * La barra de herramientas de componentes se ajustará en consecuencia.
    * El contenido introducido ya no se mostrará en **Estructura** modo.
 
       * El contenido que ya haya introducido se considera contenido inicial y solo es visible en el modo de **Contenido inicial**.
+
    * Los componentes raíz del componente desbloqueado no se pueden mover, cortar ni eliminar.
 
-   ![chlimage_1-146](assets/chlimage_1-146.png)
+  ![chlimage_1-146](assets/chlimage_1-146.png)
 
-   Esto incluye el desbloqueo de componentes de contenedor para que se puedan añadir más componentes, ya sea en el modo **Contenido inicial** o en las páginas resultantes. Si ya ha agregado componentes o contenido al contenedor antes de desbloquearlo, estos ya no se mostrarán en el modo **Estructura**, pero se mostrarán en el modo **Contenido inicial**. En el **modo de Estructura**, solo el propio componente de contenedor se mostrará con su lista de **Componentes permitidos**.
+  Esto incluye el desbloqueo de componentes de contenedor para que se puedan añadir más componentes, ya sea en el modo **Contenido inicial** o en las páginas resultantes. Si ya ha agregado componentes o contenido al contenedor antes de desbloquearlo, estos ya no se mostrarán en el modo **Estructura**, pero se mostrarán en el modo **Contenido inicial**. En el **modo de Estructura**, solo el propio componente de contenedor se mostrará con su lista de **Componentes permitidos**.
 
-   ![chlimage_1-147](assets/chlimage_1-147.png)
+  ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Para ahorrar espacio, el contenedor de diseño no aumenta para dar cabida a la lista de componentes permitidos. En su lugar, el contenedor se convierte en una lista desplazable.
+  Para ahorrar espacio, el contenedor de diseño no aumenta para dar cabida a la lista de componentes permitidos. En su lugar, el contenedor se convierte en una lista desplazable.
 
-   Los componentes que se pueden configurar se muestran con un icono de **directiva**, que se puede pulsar o hacer clic para editar la política y las propiedades de ese componente.
+  Los componentes que se pueden configurar se muestran con un icono de **directiva**, que se puede pulsar o hacer clic para editar la política y las propiedades de ese componente.
 
-   ![chlimage_1-148](assets/chlimage_1-148.png)
+  ![chlimage_1-148](assets/chlimage_1-148.png)
 
 * **Relación con las páginas existentes**
 
-   Si la estructura se actualiza después de crear páginas basadas en la plantilla, esas páginas reflejarán los cambios realizados en la plantilla. Se muestra una advertencia en la barra de herramientas para recordarle este hecho junto con los cuadros de diálogo de confirmación.
+  Si la estructura se actualiza después de crear páginas basadas en la plantilla, esas páginas reflejarán los cambios realizados en la plantilla. Se muestra una advertencia en la barra de herramientas para recordarle este hecho junto con los cuadros de diálogo de confirmación.
 
-   ![chlimage_1-149](assets/chlimage_1-149.png)
+  ![chlimage_1-149](assets/chlimage_1-149.png)
 
 ### Edición de una plantilla: contenido inicial, autor {#editing-a-template-initial-content-author}
 
@@ -586,17 +587,17 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 
 * Los componentes desbloqueados que están disponibles para la edición están marcados. Cuando se seleccionan, tienen un borde azul:
 
-   ![chlimage_1-150](assets/chlimage_1-150.png)
+  ![chlimage_1-150](assets/chlimage_1-150.png)
 
 * Los componentes desbloqueados tienen una barra de herramientas que le permite editar y configurar el contenido:
 
-   ![chlimage_1-151](assets/chlimage_1-151.png)
+  ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * Si un componente de contenedor se ha desbloqueado (en el modo de **Estructura**), puede añadir componentes nuevos al contenedor (en el modo de **Contenido inicial**). Los componentes añadidos en el modo de **Contenido inicial** se pueden mover o eliminar de las páginas resultantes.
 
-   Puede añadir un componente mediante el área **Arrastrar componentes aquí** o la opción **Insertar nuevo componente** de la barra de herramientas del contenedor adecuado.
+  Puede añadir un componente mediante el área **Arrastrar componentes aquí** o la opción **Insertar nuevo componente** de la barra de herramientas del contenedor adecuado.
 
-   ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
+  ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
 
 * Si el contenido inicial de la plantilla se actualiza después de que se creen las páginas a partir de esta, esas páginas no se verán afectadas por los cambios del contenido inicial en la plantilla.
 
@@ -638,24 +639,24 @@ Puede aplicar una política de contenido a la plantilla o a las páginas resulta
 
 * Puede seleccionar una política existente para la página en el menú desplegable **Seleccionar política**.
 
-   ![chlimage_1-157](assets/chlimage_1-157.png)
+  ![chlimage_1-157](assets/chlimage_1-157.png)
 
-   Para añadir una política nueva, seleccione el botón de adición situado junto a la lista desplegable **Seleccionar política.** Se debe proporcionar un título nuevo en el campo **Título de la política**.
+  Para añadir una política nueva, seleccione el botón de adición situado junto a la lista desplegable **Seleccionar política.** Se debe proporcionar un título nuevo en el campo **Título de la política**.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
+  ![chlimage_1-158](assets/chlimage_1-158.png)
 
-   La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
+  La política existente seleccionada en la lista desplegable **Seleccionar política** se puede copiar como una política nueva mediante el botón de copia situado al lado de la lista desplegable. Se debe proporcionar un título nuevo en el campo **Título de la política**. De forma predeterminada, la política copiada tendrá el título **Copia de X**, en que X es el título de la política copiada.
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+  ![chlimage_1-159](assets/chlimage_1-159.png)
 
 * Defina un título para la política en el campo **Título de la política**. Es necesario que una política tenga un título para que se pueda seleccionar fácilmente en la lista desplegable **Seleccionar política**.
 
-   ![chlimage_1-160](assets/chlimage_1-160.png)
+  ![chlimage_1-160](assets/chlimage_1-160.png)
 
 * En el campo **Descripción de la política**, se ofrece de manera opcional una descripción de la política.
 * En la sección **Otras plantillas que también usan la política seleccionada**, puede ver con facilidad las otras plantillas que usan la política seleccionada en la lista desplegable **Seleccionar política**.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+  ![chlimage_1-161](assets/chlimage_1-161.png)
 
 #### Propiedades de página {#page-properties}
 
@@ -665,19 +666,19 @@ Con las propiedades de página, puede definir las bibliotecas del cliente necesa
 
 * Especifique las bibliotecas del lado del cliente que desea aplicar a las páginas creadas con esta plantilla. Al introducir el nombre de una biblioteca en el campo de texto del **Bibliotecas del cliente** sección.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+  ![chlimage_1-163](assets/chlimage_1-163.png)
 
 * Si son necesarias diversas bibliotecas, haga clic en el botón Añadir para añadir un campo de texto adicional para el nombre de la biblioteca.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+  ![chlimage_1-164](assets/chlimage_1-164.png)
 
-   Añada tantos campos de texto como sea necesario para las bibliotecas del cliente.
+  Añada tantos campos de texto como sea necesario para las bibliotecas del cliente.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![chlimage_1-165](assets/chlimage_1-165.png)
 
 * Defina la posición relativa de las bibliotecas según sea necesario arrastrando los campos con el control de arrastre.
 
-   ![chlimage_1-166](assets/chlimage_1-166.png)
+  ![chlimage_1-166](assets/chlimage_1-166.png)
 
 >[!NOTE]
 >
@@ -707,13 +708,16 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
 
       * Se aplican inmediatamente a las páginas resultantes.
       * La publicación de la plantilla modificada sigue siendo necesaria para que los visitantes vean los cambios.
+
    * Cambios en las políticas de contenido y configuraciones de diseño:
 
       * Se aplican inmediatamente a las páginas resultantes.
       * Es necesaria la publicación de los cambios para que los visitantes puedan ver los cambios.
+
    * Cambios en el contenido inicial:
 
       * Esto solo se aplica a las páginas creadas después de los cambios en la plantilla.
+
    * Los cambios en el diseño dependen de si el componente modificado forma parte de:
 
       * Solo de estructura: aplicado inmediatamente

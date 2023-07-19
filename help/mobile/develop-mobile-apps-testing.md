@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Dada la amplia gama de dispositivos en el mercado y los dispositivos que se están lanzando, probar sus aplicaciones se ha vuelto extremadamente importante. Esta es un área en la que la funcionalidad y la facilidad de uso pueden recibir pocas críticas en una tienda de aplicaciones, pero un solo defecto puede provocar que se desinstale la aplicación. Debe prestarse especial atención a sus planes de pruebas y a la garantía de calidad. El siguiente vínculo abarca muchos de los temas que deben abordarse en general, como, identificar el entorno, definir casos de prueba, tipos de pruebas, suposiciones, participación del cliente, etc. También se analizan las herramientas que ayudan en el esfuerzo de prueba. Herramientas internas, como [Hobbes](/help/sites-developing/hobbes.md), puede ayudar con las pruebas de IU basadas en la web. [Día difícil](/help/sites-developing/tough-day.md) puede sobrecargar las instancias con una carga simulada. Si el entorno de prueba ya tiene experiencia con herramientas de terceros, como Selenium, también se pueden utilizar.
 

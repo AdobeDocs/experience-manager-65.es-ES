@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 93%
+source-wordcount: '1141'
+ht-degree: 91%
 
 ---
 
@@ -74,6 +74,7 @@ Los fragmentos de contenido permiten lo siguiente:
    * Abra el navegador **Recursos** y filtre por **Fragmentos de contenido** (el valor predeterminado es Imágenes). A continuación, arrastre el fragmento requerido a la instancia del componente.
 
    * Seleccione el componente de fragmento de contenido y, a continuación, **Configurar** en la barra de herramientas. En el cuadro de diálogo, puede abrir el cuadro de diálogo de selección para buscar y seleccionar el **fragmento de contenido** requerido.
+
    >[!NOTE]
    >
    >Otra posibilidad es arrastrar un fragmento de contenido específico directamente a la página. Esto creará automáticamente el componente asociado (fragmento de contenido).
@@ -90,7 +91,8 @@ Los fragmentos de contenido permiten lo siguiente:
    >
    >    * [Diseño adaptable](/help/sites-authoring/responsive-layout.md)
    >    * [Edición del contenido de una página](/help/sites-authoring/editing-content.md)
-
+   >
+   >
 
 ### Selección del elemento o la variación {#selecting-the-element-or-variation}
 
@@ -100,7 +102,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **Fragmento de contenido**
 
-   Especifique el fragmento que se va a utilizar.
+  Especifique el fragmento que se va a utilizar.
 
 * **Modo de visualización**:
 
@@ -113,9 +115,9 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
    * El valor predeterminado **Principal** siempre estará disponible.
    * Habrá disponible una selección si el fragmento se creó con una plantilla adecuada.
 
-   >[!NOTE]
-   >
-   >Los elementos disponibles dependen de la plantilla utilizada.
+  >[!NOTE]
+  >
+  >Los elementos disponibles dependen de la plantilla utilizada.
 
 * **Variación**
 
@@ -175,14 +177,13 @@ Para el contenido intermedio puede hacer lo siguiente:
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
 >
 
-
 ### Uso de contenido asociado       {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](#adding-in-between-content).
 
 >[!NOTE]
 >
->Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
+>Existen varios métodos para añadir [recursos visuales (por ejemplo, imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o la página.
 
 >[!NOTE]
 >
@@ -196,7 +197,7 @@ Desde aquí podrá arrastrar los recursos a la ubicación requerida (en un compo
 
 ### Recursos insertados en el fragmento {#assets-inserted-into-the-fragment}
 
-Si se insertan recursos (p. ej. imágenes) en el propio fragmento, las opciones para editarlos en el editor de páginas son limitadas. <!-- Removed link as it was a 404 on helpx -->
+Si se insertan recursos (por ejemplo, imágenes) en el propio fragmento, las opciones para editarlos en el editor de páginas son limitadas. <!-- Removed link as it was a 404 on helpx -->
 
 Por ejemplo, para una imagen puede
 

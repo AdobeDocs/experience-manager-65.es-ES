@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1048'
 ht-degree: 1%
 
 ---
@@ -176,7 +176,7 @@ Configure WebLogic de modo que utilice el repositorio de claves de identidad per
 1. En Entorno, en Configuraciones de dominio, haga clic en **Servidores > [*Servidor administrado*] > Configuración > General**.
 1. En General, en Configuración, seleccione **Almacenes de claves**.
 1. En el Centro de cambios, haga clic en **Bloquear y editar** para modificar selecciones y valores.
-1. Clic **Cambiar** a para obtener la lista de almacén de claves como lista desplegable y seleccione **Identidad Personalizada Y Confianza Personalizada**.
+1. Clic **Cambiar** para obtener la lista de almacén de claves como lista desplegable y seleccione **Identidad Personalizada Y Confianza Personalizada**.
 1. En Identidad, especifique los siguientes valores:
 
    **Almacén de claves de identidad personalizado**: *[appserverdomain]*/adobe/*[nombre del servidor]*/ads-credentials.jks, donde *[appserverdomain] * es la ruta real y *[nombre del servidor]* es el nombre del servidor de aplicaciones.

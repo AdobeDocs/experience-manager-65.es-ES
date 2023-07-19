@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ AEM Para las aplicaciones de una sola página en la, la aplicación es responsab
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 ## Enrutamiento de proyectos {#project-routing}
 
@@ -63,7 +63,7 @@ De forma predeterminada, este comportamiento se habilita automáticamente. SPA P
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-SPA AEM Tenga en cuenta que cada ruta de la debe corresponder a un recurso accesible en la práctica (por ejemplo, &quot; `/content/mysite/mypage"`), ya que `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. SPA Sin embargo, si es necesario, el también puede definir una &quot;lista de bloqueados&quot; de rutas que el `PageModelManager`:
+SPA AEM Tenga en cuenta que cada ruta de la debe corresponder a un recurso accesible en la (por ejemplo, &quot; `/content/mysite/mypage"`), ya que `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. SPA Sin embargo, si es necesario, el también puede definir una &quot;lista de bloqueados&quot; de rutas que el `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

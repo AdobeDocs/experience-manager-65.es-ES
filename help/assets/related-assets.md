@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Al utilizar esta función, tiene la flexibilidad de compartir un archivo de PDF 
 
 1. Para anular la relación de un recurso, haga clic en **[!UICONTROL Desrelacionar]** ![recursos no relacionados](assets/do-not-localize/link-unrelate-icon.png) en la barra de herramientas.
 
-1. Seleccione los recursos que desea anular la relación de la **[!UICONTROL Quitar relaciones]** y haga clic en **[!UICONTROL Desrelacionar]**.
+1. Seleccione los recursos que desea anular la relación en **[!UICONTROL Quitar relaciones]** y haga clic en **[!UICONTROL Desrelacionar]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 

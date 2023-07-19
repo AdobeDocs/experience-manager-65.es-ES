@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 90%
+source-wordcount: '1659'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ El Editor de SPA ofrece una solución completa para admitir las SPA dentro de AE
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 ## Introducción {#introduction}
 
@@ -102,7 +102,6 @@ Teniendo en cuenta los elementos clave del Editor de SPA, el flujo de trabajo de
 >* El editor de SPA está aislado de la propia SPA.
 >* En producción (publicación), el editor de SPA nunca se carga.
 >
-
 
 ### Flujo de trabajo de edición de páginas cliente-servidor {#client-server-page-editing-workflow}
 
@@ -184,7 +183,7 @@ Se pueden definir y utilizar selectores personalizados adicionales como parte de
 Si desea utilizar el editor in situ de un componente de texto creado en la SPA, se requiere una configuración adicional.
 
 1. Establezca un atributo (puede ser cualquiera) en el elemento contenedor que encierra el texto HTML. En el caso del contenido de muestra del WKND Journal, es un `<div>` y el selector que se ha utilizado es `data-rte-editelement`.
-1. Establecer la configuración `editElementQuery` AEM en el componente de texto de la correspondiente `cq:InplaceEditingConfig` que apunta a ese selector, p. ej., `data-rte-editelement`. Esto permite al editor saber qué elemento de HTML ajusta el texto HTML.
+1. Establezca la configuración `editElementQuery` en el componente de texto de AEM correspondiente `cq:InplaceEditingConfig` que apunte a ese selector, por ejemplo, `data-rte-editelement`. Esto permite al editor saber qué elemento de HTML ajusta el texto HTML.
 
 Para ver un ejemplo de cómo se hace, consulte la [Contenido de muestra del WKND Journal.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 

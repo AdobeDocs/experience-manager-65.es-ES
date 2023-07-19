@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6088'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ El portlet se puede configurar con las siguientes preferencias:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Esta es la ruta de inicio del portlet: define el contenido que se muestra inicialmente.</p> <p><strong>Importante</strong>AEM : Si el portlet está configurado para conectarse a instancias de autor y publicación de la red que se ejecutan en una ruta de contexto diferente a la que se muestra en el cuadro de diálogo.<strong> /</strong>, debe habilitar la fuerza <strong>CQUrlInfo</strong> AEM en la configuración Html Library Manager de estas instancias de (por ejemplo, a través de Felix Webconsole) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.</p> </td>
+   <td><p>Esta es la ruta de inicio del portlet: define el contenido que se muestra inicialmente.</p> <p><strong>Importante</strong>AEM : Si el portlet está configurado para conectarse a instancias de autor y publicación de la red que se ejecutan en una ruta de contexto diferente a la que se muestra en el cuadro de diálogo.<strong> /</strong>, debe habilitar la fuerza <strong>CQUrlInfo</strong> AEM en la configuración del Administrador de bibliotecas Html de estas instancias de (por ejemplo, a través de la consola web de Felix) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -333,7 +333,7 @@ AEM AEM Para habilitar SSO en WCM, acceda a la entrada de configuración corresp
 1. Acceda a la consola a través de su URI en https://&lt;aem-host>:&lt;port>/system/console.
 1. En el menú Configuración, seleccione Controlador de autenticación SSO. AEM En este ejemplo, el controlador SSO acepta solicitudes SSO para todas las rutas en función de la cookie proporcionada por el portlet de la. La configuración puede variar.
 
-   | Ruta  | / | Habilita el controlador SSO para todas las solicitudes |
+   | Ruta | / | Habilita el controlador SSO para todas las solicitudes |
    |---|---|---|
    | Nombres de cookies | cqpsso | Nombre de la cookie proporcionada por el portlet tal como se configura en la consola OSGi del portlet. |
 
@@ -509,7 +509,7 @@ En el HTML, puede utilizar los siguientes marcadores de posición, que se sustit
 | {id} | ID de CSS del botón. |
 | {url} | URL del destino del botón. |
 | {text} | Etiqueta del botón. |
-| {onclick} | Javascript **onclick** función (contiene {url}). |
+| {onclick} | JavaScript **onclick** función (contiene {url}). |
 
 Ejemplo de archivo button.html:
 
@@ -590,7 +590,7 @@ Se pueden implementar servicios OSGi opcionales para personalizar varias partes 
   </tr>
   <tr>
    <td>TextMapper</td>
-   <td>Permite publicar archivos de HTML de procesos, CSS y Javascript.</td>
+   <td>Permite publicar archivos de HTML de procesos, CSS y JavaScript.</td>
   </tr>
   <tr>
    <td>ToolbarButton</td>
@@ -664,11 +664,11 @@ AEM El archivo JAR de Quickstart de contiene los archivos de componente del port
 1. Copie cq-portlet-director-sharedlibs-x.x.x.x.jar en el disco duro. Utilice cualquier medio para obtener el archivo, por ejemplo, FileVault o un cliente WebDAV.
 1. Mueva el archivo cq-portlet-director-sharedlibs.x.x.x.jar a la carpeta de biblioteca compartida del servidor de aplicaciones para que las clases estén disponibles para las aplicaciones de portlet implementadas.
 
-### Adición del componente Portlet a la barra de tareas {#adding-the-portlet-component-to-sidekick}
+### Adición del componente Portlet al Sidekick {#adding-the-portlet-component-to-sidekick}
 
 Agregue el componente portlet al sistema de párrafos para que esté disponible para los autores.
 
-1. En la barra de tareas, haga clic en el icono de regla para entrar en el modo Diseño.
+1. En Sidekick, haga clic en el icono de regla para acceder al modo Diseño.
 1. Junto al `Design of par` Encabezado sobre el primer párrafo, haga clic en **Editar**.
 
 1. En el **General** categoría de componente, seleccione la casilla de verificación situada junto al componente Portlet y haga clic en Aceptar.
@@ -708,7 +708,7 @@ Implemente los portlets en el contenedor web del servidor de aplicaciones para q
 
 Utilice el componente Portal para añadir una ventana de portlet a la página web. Utilice las propiedades del componente para especificar el portlet que se va a mostrar.
 
-1. En la página web, arrastre el **Portlet** Componente del grupo General en la barra de tareas de la página.
+1. En la página web, arrastre el **Portlet** del grupo General en Sidekick a la página.
 
    >[!NOTE]
    >
@@ -766,7 +766,7 @@ Para configurar el portlet:
 
    >[!NOTE]
    >
-   >AEM Si el portlet está configurado para conectarse a instancias de autor y publicación de que se ejecutan en una ruta de contexto diferente a** /**, debe habilitar la fuerza **CQUrlInfo** AEM en la configuración Html Library Manager de estas instancias de (por ejemplo, a través de Felix Webconsole) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.
+   >AEM Si el portlet está configurado para conectarse a instancias de autor y publicación de que se ejecutan en una ruta de contexto diferente a** /**, debe habilitar la fuerza **CQUrlInfo** AEM en la configuración del Administrador de bibliotecas Html de estas instancias de (por ejemplo, a través de la consola web de Felix) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.
 
 1. Guarde los cambios de configuración en el servidor de aplicaciones.
 

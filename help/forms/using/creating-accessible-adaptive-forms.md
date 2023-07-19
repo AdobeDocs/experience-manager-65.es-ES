@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 100%
+source-wordcount: '2054'
+ht-degree: 99%
 
 ---
 
@@ -127,7 +127,6 @@ Para utilizar la opción Accesibilidad, haga lo siguiente:
 >* El botón de opción y la casilla de verificación solo pueden tener dos opciones para la accesibilidad, a saber, Texto personalizado y Título.
 >* Para los formularios adaptables basados en XFA, la opción de accesibilidad se hereda de las opciones de accesibilidad establecidas en el XDP. La información del objeto de XDP se asigna a la descripción breve y el pie de ilustración se asigna al título. Las otras opciones funcionan tal cual.
 
-
 ### 3. Proporcione equivalentes de texto para las imágenes {#provide-text-equivalents-for-images}
 
 Las imágenes pueden ayudar a mejorar la comprensión de algunos usuarios. Sin embargo, para los usuarios que utilizan lectores de pantalla, las imágenes reducen la accesibilidad del formulario. Si decide utilizar imágenes, proporcione descripciones de texto para todas las imágenes.
@@ -144,7 +143,7 @@ El diseño de accesibilidad implica considerar directrices adicionales para el u
 
 Los usuarios con deficiencias visuales dependen del alto contraste entre el texto y el fondo para poder leer el contenido digital. Sin un contraste suficiente, una forma puede resultar difícil, si no imposible, de leer para algunos usuarios.
 
-Se recomienda utilizar la fuente y los colores de fondo predeterminados, contenido en color negro sobre fondo blanco. Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o viceversa.
+Se recomienda utilizar la fuente y los colores de fondo predeterminados, contenido en color negro sobre fondo blanco. Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o a la inversa.
 
 Consulte [Crear temáticas personalizados para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md), para obtener más información sobre cómo cambiar el contraste de color y la temática para los formularios adaptables.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 4%
 
 ---
@@ -71,15 +71,15 @@ Continúe con los otros paneles con esta configuración:
    * **[!UICONTROL Moderación]**
 
       * Dejar vacío (heredar del sitio principal).
+
    * **[!UICONTROL Suscripción]**
 
       * Usar valor predeterminado `Optional Membership.`
 
       * **[!UICONTROL Miniatura]**
          * `optional.*`
+
       * **[!UICONTROL Seleccione Siguiente]**.
-
-
 
 * Seleccione **[!UICONTROL Crear]**.
 

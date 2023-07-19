@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2716'
 ht-degree: 2%
 
 ---
@@ -781,7 +781,7 @@ Los códigos de estado utilizados por VLT son:
 
 ## Configuración de la sincronización de FileVault {#setting-up-filevault-sync}
 
-El servicio de sincronización de Vault se utiliza para sincronizar el contenido del repositorio con una representación del sistema de archivos local y viceversa. Esto se logra instalando un servicio OSGi que escuchará los cambios del repositorio y analizará el contenido del sistema de archivos periódicamente. Utiliza el mismo formato de serialización que el Vault para asignar el contenido del repositorio al disco.
+El servicio de sincronización de Vault se utiliza para sincronizar el contenido del repositorio con una representación del sistema de archivos local y a la inversa. Esto se logra instalando un servicio OSGi que escuchará los cambios del repositorio y analizará el contenido del sistema de archivos periódicamente. Utiliza el mismo formato de serialización que el Vault para asignar el contenido del repositorio al disco.
 
 >[!NOTE]
 >
@@ -944,7 +944,7 @@ Para configurar un entorno de desarrollo basado en una carpeta de sincronizació
    ***
    ```
 
-La carpeta local se sincronizará con el repositorio. La sincronización es bidireccional, por lo que la modificación del repositorio se aplicará a la carpeta de sincronización local y viceversa.
+La carpeta local se sincronizará con el repositorio. La sincronización es bidireccional, por lo que la modificación del repositorio se aplicará a la carpeta de sincronización local y a la inversa.
 
 >[!NOTE]
 >

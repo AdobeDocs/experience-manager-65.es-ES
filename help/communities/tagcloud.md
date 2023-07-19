@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -57,19 +57,19 @@ Identifique las etiquetas UGC que desea mostrar. Las opciones desplegables son:
    * `From page and child pages`
    * `All tags`
 
-   El valor predeterminado es `From page and child pages`, donde &quot;página&quot; hace referencia a **Página** configuración a continuación.
+  El valor predeterminado es `From page and child pages`, donde &quot;página&quot; hace referencia a **Página** configuración a continuación.
 
 * **[!UICONTROL Página]**
 
-   (Obligatorio si no `All tags)` La ruta al UGC para una página. Si se deja en blanco, la página actual es la predeterminada.
+  (Obligatorio si no `All tags)` La ruta al UGC para una página. Si se deja en blanco, la página actual es la predeterminada.
 
 * **[!UICONTROL Sin vínculos ni etiquetas]**
 
-   Si se selecciona, las etiquetas se muestran en la nube de etiquetas como texto sin formato. Si no se selecciona, las etiquetas se muestran como vínculos activos que buscan todo el contenido al que se aplica esa etiqueta. El valor predeterminado está desmarcado y requiere **[!UICONTROL Ruta de resultados de búsqueda]** que se va a establecer.
+  Si se selecciona, las etiquetas se muestran en la nube de etiquetas como texto sin formato. Si no se selecciona, las etiquetas se muestran como vínculos activos que buscan todo el contenido al que se aplica esa etiqueta. El valor predeterminado está desmarcado y requiere **[!UICONTROL Ruta de resultados de búsqueda]** que se va a establecer.
 
 * **[!UICONTROL Ruta de resultados de búsqueda]**
 
-   La ruta a una página en la que `Search Result` El componente se ha colocado, configurado para hacer referencia a UGC que incluye la ruta UGC especificada por el **Página** configuración.
+  La ruta a una página en la que `Search Result` El componente se ha colocado, configurado para hacer referencia a UGC que incluye la ruta UGC especificada por el **Página** configuración.
 
 ## Cambiar la visualización de Nube de etiquetas social {#change-display-of-social-tag-cloud}
 
@@ -81,43 +81,43 @@ Uso del **[!UICONTROL Nube de etiquetas social (Diseño)]** , especifique cómo 
 
 * **[!UICONTROL Mostrar rutas de título completas]**
 
-   Si se selecciona, muestra los títulos de las etiquetas principales y el área de nombres de cada etiqueta aplicada.
+  Si se selecciona, muestra los títulos de las etiquetas principales y el área de nombres de cada etiqueta aplicada.
 
-   Por ejemplo:
+  Por ejemplo:
 
    * Comprobado: `Geometrixx Media: Gadgets / Cars`
    * Desactivado: `Cars`
 
-   No hay diferencia para una etiqueta simple.
+  No hay diferencia para una etiqueta simple.
 
-   El valor predeterminado está desmarcado.
+  El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Mostrar solo etiquetas de hoja]**
 
-   Si se selecciona esta opción, solo se muestran las etiquetas aplicadas que no contienen otras etiquetas.
+  Si se selecciona esta opción, solo se muestran las etiquetas aplicadas que no contienen otras etiquetas.
 
-   Por ejemplo, dado el TagID de:
+  Por ejemplo, dado el TagID de:
 
-   `Geometrixx Media: Gadgets / Cars`
+  `Geometrixx Media: Gadgets / Cars`
 
-   Se pueden aplicar tres etiquetas:
+  Se pueden aplicar tres etiquetas:
 
-   `Geometrixx Media (the namespace)`, `Gadgets`, y `Cars`
+  `Geometrixx Media (the namespace)`, `Gadgets`, y `Cars`
 
    * Activado: solo `Cars` se mostrará, si se aplica.
    * Desactivado: `Geometrixx Media` y `Gadgets`así como `Cars` se mostrará, si se aplica.
 
-   Una etiqueta simple es una etiqueta de hoja.
+  Una etiqueta simple es una etiqueta de hoja.
 
-   El valor predeterminado está desmarcado.
+  El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Plantilla de vínculo]**
 
-   Una plantilla, que no es una predeterminada, utilizada para mostrar los vínculos en una nube de etiquetas cuando los vínculos están habilitados a través del cuadro de diálogo de edición de componentes.
+  Una plantilla, que no es una predeterminada, utilizada para mostrar los vínculos en una nube de etiquetas cuando los vínculos están habilitados a través del cuadro de diálogo de edición de componentes.
 
 * **[!UICONTROL Mismo tamaño para todas las etiquetas]**
 
-   Si se selecciona, todas las palabras de la nube de etiquetas tienen el mismo estilo. Si no se selecciona, las palabras tienen un estilo diferente según su uso. El valor predeterminado está desmarcado.
+  Si se selecciona, todas las palabras de la nube de etiquetas tienen el mismo estilo. Si no se selecciona, las palabras tienen un estilo diferente según su uso. El valor predeterminado está desmarcado.
 
 ## Información adicional {#additional-information}
 

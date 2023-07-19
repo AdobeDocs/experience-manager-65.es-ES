@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5903'
+source-wordcount: '5902'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ En algunos casos, la alternancia entre los modos cola y compactación completa r
   </tr>
   <tr>
    <td><strong>¿Qué sucede si ejecuto accidentalmente con el formato de repositorio incorrecto?</strong></td>
-   <td>Si intenta ejecutar el módulo oak-segment en un repositorio oak-segment-tar (o viceversa), el inicio fallará con un <em>IllegalStateException</em> con el mensaje "Formato de segmento no válido". No se dañarán los datos.</td>
+   <td>Si intenta ejecutar el módulo oak-segment en un repositorio oak-segment-tar (o a la inversa), el inicio fallará con un <em>IllegalStateException</em> con el mensaje "Formato de segmento no válido". No se dañarán los datos.</td>
    <td> </td>
   </tr>
   <tr>
@@ -234,7 +234,7 @@ En algunos casos, la alternancia entre los modos cola y compactación completa r
   </tr>
   <tr>
    <td><strong>¿Por qué Online Revision Cleanup no recupera ningún espacio cuando se ejecuta por primera vez?</strong></td>
-   <td>Limpieza de revisiones en línea recupera las revisiones antiguas realizadas por las generaciones. Se genera una nueva generación cada vez que se ejecuta la limpieza de revisión. Solo se recupera el contenido que tiene al menos dos generaciones, lo que significa que en una primera ejecución no hay nada que recuperar.</td>
+   <td>Limpieza de revisiones en línea recupera las revisiones antiguas realizadas por las generaciones. Se genera una nueva generación cada vez que se ejecuta la limpieza de revisión. Solo se recupera el contenido que tenga al menos dos generaciones, lo que significa que en una primera ejecución no hay nada que recuperar.</td>
    <td> </td>
   </tr>
   <tr>
@@ -400,7 +400,7 @@ En algunos casos, la alternancia entre los modos cola y compactación completa r
       </ul> </li>
      <li>Espacio en disco obtenido por la limpieza de revisión
       <ul>
-       <li>El espacio solo se recupera cuando finaliza la fase de limpieza. La finalización de la fase de limpieza se marca con el mensaje de registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". El tamaño de la limpieza posterior es de {} ({} bytes) y el espacio reclamado es de {} ({} bytes). La profundidad/peso del mapa de compactación es de {}/{} ({} bytes/{}).".</li>
+       <li>El espacio solo se recupera cuando finaliza la fase de limpieza. La finalización de la fase de limpieza se marca con el mensaje de registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". El tamaño de la limpieza posterior es {} ({} bytes) y espacio reclamado {} ({} bytes). La profundidad/peso del mapa de compactación es {}/{} ({} bytes/{}).".</li>
       </ul> </li>
      <li>Se ha producido un problema durante la limpieza de revisión
       <ul>
@@ -534,7 +534,7 @@ El error.log será detallado si hay incidentes durante el proceso de limpieza de
   </tr>
   <tr>
     <td>N/D</td>
-    <td>#2 de GC TarMK: estimación interrumpida: ${REASON}. Omitiendo la compactación.</td>
+    <td>TarMK GC #2: estimación interrumpida: ${REASON}. Omitiendo la compactación.</td>
     <td>La fase de estimación terminó prematuramente. Algunos ejemplos de eventos que podrían interrumpir la fase de estimación: no hay suficiente memoria o espacio en disco en el sistema host.</td>
     <td>Depende de la razón dada.</td>
   </td>
@@ -548,7 +548,7 @@ El error.log será detallado si hay incidentes durante el proceso de limpieza de
   </tr>
    <tr>
     <td>N/D</td>
-    <td>#2 de GC TarMK: compactación cancelada: ${REASON}.</td>
+    <td>#2 de TarMK GC: compactación cancelada: ${REASON}.</td>
     <td>La fase de compactación terminó prematuramente. Algunos ejemplos de eventos que podrían interrumpir la fase de compactación: no hay suficiente memoria o espacio en disco en el sistema host. Además, la compactación también se puede cancelar apagando el sistema o cancelándolo explícitamente a través de interfaces administrativas como la ventana de mantenimiento dentro del tablero de operaciones.</td>
     <td>Depende de la razón dada.</td>
   </td>

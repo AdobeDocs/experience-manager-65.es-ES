@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1805'
-ht-degree: 55%
+source-wordcount: '1806'
+ht-degree: 56%
 
 ---
 
@@ -24,7 +24,7 @@ Proporciona un sistema de párrafos que le permite colocar componentes en una cu
 El contenedor de diseño:
 
 * Proporciona un ajuste horizontal a la cuadrícula, junto con la capacidad de colocar componentes en la cuadrícula en paralelo y definir cuándo deben contraerse o redistribuirse.
-* Utiliza puntos de interrupción predefinidos (por ejemplo, para teléfono, tableta, etc.) para permitirle definir el comportamiento requerido del contenido para los dispositivos o la orientación relacionados.
+* Usa puntos de interrupción predefinidos (por ejemplo, para un teléfono, una tableta, etc.) para permitirle definir el comportamiento requerido del contenido para los dispositivos o la orientación relacionados.
 
    * Por ejemplo, puede personalizar el tamaño del componente o si el componente se puede ver en dispositivos específicos.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,6 @@ Observe que la página de calendario es la página principal porque la Plantilla
 >
 >* [Componentes de Communities](/help/communities/author-communities.md) (para autores)
 >* [Aspectos básicos de componentes, funciones y funciones](/help/communities/essentials.md) (para desarrolladores)
-
 
 ### Vínculo de foro {#forum-link}
 

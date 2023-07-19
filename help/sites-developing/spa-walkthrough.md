@@ -4,10 +4,10 @@ description: Este artículo presenta los conceptos de un SPA y explica cómo usa
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 73%
+source-wordcount: '1967'
+ht-degree: 70%
 
 ---
 
@@ -20,7 +20,7 @@ El Editor de SPA ofrece una solución completa para admitir las SPA dentro de AE
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 ## Introducción {#introduction}
 
@@ -50,7 +50,7 @@ El tutorial se basa en la funcionalidad AEM estándar y en la aplicación de pro
 
 ### ¿Qué es una SPA? {#what-is-a-spa}
 
-Una aplicación de una sola página (SPA) difiere de una página convencional en que se procesa en el lado del cliente y principalmente está dirigida por JavaScript, y se basa en llamadas Ajax para cargar datos y actualizar la página de forma dinámica. La mayoría o todo el contenido se recupera una vez en una carga de una sola página con recursos adicionales cargados asincrónicamente según sea necesario en función de la interacción del usuario con la página.
+SPA Una aplicación de una sola página () se diferencia de una página convencional en que se procesa en el lado del cliente y se basa principalmente en JavaScript, y depende de llamadas de Ajax para cargar datos y actualizar la página de forma dinámica. La mayoría o todo el contenido se recupera una vez en una carga de una sola página con recursos adicionales cargados asincrónicamente según sea necesario en función de la interacción del usuario con la página.
 
 Esto reduce la necesidad de actualizaciones de la página y presenta al usuario una experiencia que es fluida, rápida y se parece más a una experiencia nativa de la aplicación.
 
@@ -183,7 +183,7 @@ La siguiente sección, [SPA Carga de una aplicación de,](#loading-an-spa-applic
 
 1. Cambie a la **Red** de las herramientas para desarrolladores y vuelva a cargar la página.
 
-   Ignorando las solicitudes de imagen, note que los recursos principales cargados para la página son la página en sí, CSS, React Javascript, sus dependencias, así como los datos JSON de la página.
+   Ignorando las solicitudes de imagen, tenga en cuenta que los recursos principales cargados para la página son la propia página, CSS, el JavaScript de React, sus dependencias, así como los datos JSON para la página.
 
    ![Paso 5](assets/spa-walkthrough-step-1-5.png)
 

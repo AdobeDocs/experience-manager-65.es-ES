@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Este procedimiento es similar al siguiente [adición de recursos digitales como 
 
 ## [!DNL Adobe Photoshop]: Agregar recursos digitales como referencias {#refps}
 
-1. Uso [!DNL Experience Manager] aplicación de escritorio para acceder a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Utilice la variable [!UICONTROL Colocar elemento vinculado] funcionalidad en [!DNL Adobe Photoshop]. Consulte [colocar recursos en la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Uso [!DNL Experience Manager] aplicación de escritorio para acceder a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Utilice el [!UICONTROL Colocar elemento vinculado] funcionalidad en [!DNL Adobe Photoshop]. Consulte [colocar recursos en la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
 1. Guardar en [!DNL Photoshop] a la unidad montada o [cargar](/help/assets/manage-assets.md#uploading-assets) a la [!DNL Experience Manager] repositorio.
 1. Una vez finalizado el flujo de trabajo, las referencias a los campos existentes [!DNL Experience Manager] los recursos se muestran en la página detalles del recurso.
@@ -144,4 +144,3 @@ Las siguientes opciones están disponibles en la barra de herramientas, en el ca
 >* [Configuración de acciones de escritorio en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Crear objetos inteligentes vinculados en Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Colocar gráficos en Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
-

@@ -3,9 +3,9 @@ title: Configure el Editor de texto enriquecido para crear páginas web y sitios
 description: Configure el Editor de texto enriquecido para crear páginas web y sitios accesibles.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '932'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ AEM Con los elementos estructurales disponibles en RTE a través de las opciones
 
 ## Uso de la función de edición de origen {#use-of-the-source-edit-feature}
 
-En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente del HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir un marcado adicional para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la variable [edición de origen](/help/sites-administering/rich-text-editor.md#aboutplugins) de RTE. Puede especificar la variable [ `sourceedit` función en la `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
+En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente del HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir un marcado adicional para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la variable [edición de origen](/help/sites-administering/rich-text-editor.md#aboutplugins) de RTE. Puede especificar la variable [`sourceedit` función en la `misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -193,9 +193,7 @@ RTE puede utilizar `strong` y `em` etiquetas en lugar de `b` y `i`. Agregue el s
 >* El `itemId` para cada campo correspondiente se establece en el nombre del atributo DOM correspondiente (`TablePropertiesDialog`).
 >* El atributo se establece o se elimina explícitamente en el elemento DOM (`Table`).
 
-
 >[!MORELIKETHIS]
 >
 >* [Guía rápida de WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Crear contenido accesible (conformidad con WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
-

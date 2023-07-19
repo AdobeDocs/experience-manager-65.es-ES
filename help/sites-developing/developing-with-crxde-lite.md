@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2139'
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Pestaña Control de acceso</td>
-   <td><p>Mostrar permisos basados en la ruta actual, el nivel de repositorio o el principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Política de control de acceso aplicable</strong>: políticas que se pueden aplicar a la selección actual.</p> <p>- <strong>Políticas de control de acceso local</strong>: Las políticas actuales se aplican localmente a la selección actual.</p> <p>- <strong>Políticas de control de acceso efectivas</strong>: las directivas actuales aplicadas a la selección actual pueden configurarse localmente o heredarse de los nodos principales.</p> <p>Nota. Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer las entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada. Inicie sesión como, por ejemplo, administrador para ver la información.</p> </td>
+   <td><p>Mostrar permisos basados en la ruta actual, el nivel de repositorio o el principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Política de control de acceso aplicable</strong>: políticas que se pueden aplicar a la selección actual.</p> <p>- <strong>Políticas de control de acceso local</strong>: Las políticas actuales se aplican localmente a la selección actual.</p> <p>- <strong>Políticas de control de acceso efectivas</strong>: las directivas actuales aplicadas a la selección actual pueden configurarse localmente o heredarse de los nodos principales.</p> <p>Nota. Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos para leer las entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada; inicie sesión, por ejemplo, como administrador para ver la información.</p> </td>
   </tr>
   <tr>
    <td>Pestaña Replicación</td>
@@ -137,7 +137,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Widget de inicio de sesión<br /> </td>
-   <td><p>Muestra los usuarios que han iniciado sesión y el espacio de trabajo en el que han iniciado sesión, por ejemplo, admin@crx.default.</p> <p>Haga clic en él para iniciar sesión o volver a iniciar sesión como un usuario específico. Si no especifica un espacio de trabajo en el que iniciar sesión, se iniciará la sesión en el espacio de trabajo predeterminado, crx.default.</p> <p>Si desea examinar el repositorio como usuario anónimo, utilice <strong>anónimo</strong> como nombre de inicio de sesión y cualquier contraseña (por ejemplo, un espacio o un punto).<br /> </p> <p>Si la autorización ya no es válida (por ejemplo, ha caducado), se muestra el widget de inicio de sesión "<strong>Sin autorización; inicio de sesión...</strong>". Haga clic en él para volver a iniciar sesión.</p> </td>
+   <td><p>Muestra los usuarios que han iniciado sesión actualmente y el espacio de trabajo en el que han iniciado sesión, por ejemplo, admin@crx.default.</p> <p>Haga clic en él para iniciar sesión o volver a iniciar sesión como un usuario específico. Si no especifica un espacio de trabajo en el que iniciar sesión, se iniciará la sesión en el espacio de trabajo predeterminado, crx.default.</p> <p>Si desea examinar el repositorio como usuario anónimo, utilice <strong>anónimo</strong> como nombre de inicio de sesión y cualquier contraseña (por ejemplo, un espacio o un punto).<br /> </p> <p>Si la autorización ya no es válida (por ejemplo, si ha caducado), se muestra el widget de inicio de sesión "<strong>Sin autorización; inicio de sesión...</strong>". Haga clic en él para volver a iniciar sesión.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -220,7 +220,7 @@ Crea un cuadro de diálogo con la siguiente estructura:
 
 Ahora puede adaptar el cuadro de diálogo a sus necesidades modificando propiedades o creando nuevos nodos.
 
-También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer doble clic en el nodo de diálogo en el CRXDE Lite, se abrirá el editor. Encontrará más información sobre el Editor de diálogos [aquí](/help/sites-developing/dialog-editor.md).
+También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer doble clic en el nodo de diálogo en el CRXDE Lite, se abre el editor. Encontrará más información sobre el Editor de diálogos [aquí](/help/sites-developing/dialog-editor.md).
 
 ## Creación de un nodo {#creating-a-node}
 

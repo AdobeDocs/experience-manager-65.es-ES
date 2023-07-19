@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1293'
 ht-degree: 4%
 
 ---
@@ -49,11 +49,11 @@ En el **[!UICONTROL Clasificaciones permitidas]** , especifique la lista complet
 
 * **[!UICONTROL Clasificaciones permitidas]**
 
-   Lista de clasificaciones entre las que puede elegir un miembro.
+  Lista de clasificaciones entre las que puede elegir un miembro.
 
-   Utilice los botones de flecha arriba, flecha abajo y eliminar para modificar las selecciones visibles.
+  Utilice los botones de flecha arriba, flecha abajo y eliminar para modificar las selecciones visibles.
 
-   Clic **[!UICONTROL Agregar elemento]** para añadir otra opción de clasificación.
+  Clic **[!UICONTROL Agregar elemento]** para añadir otra opción de clasificación.
 
 En el **[!UICONTROL Clasificaciones obligatorias]** pestaña, vuelva a introducir elementos de la lista de **[!UICONTROL Clasificaciones permitidas]** que deben tener una calificación. Si un elemento solo se especifica en la ficha Clasificaciones permitidas, puede dejarse sin marcar cuando el miembro lo envíe.
 
@@ -63,11 +63,11 @@ En el sitio web, las clasificaciones requeridas se marcan con un asterisco. Si u
 
 * **[!UICONTROL Clasificaciones obligatorias]**
 
-   Un subconjunto de clasificaciones permitidas, que indica qué clasificaciones son necesarias.
+  Un subconjunto de clasificaciones permitidas, que indica qué clasificaciones son necesarias.
 
-   Utilice los botones de flecha arriba, flecha abajo y eliminar para modificar las selecciones visibles.
+  Utilice los botones de flecha arriba, flecha abajo y eliminar para modificar las selecciones visibles.
 
-   Clic **[!UICONTROL Agregar elemento]** para añadir otra opción de respuesta.
+  Clic **[!UICONTROL Agregar elemento]** para añadir otra opción de respuesta.
 
 >[!NOTE]
 >
@@ -79,35 +79,35 @@ En el **[!UICONTROL Críticas]** , especifique cómo se gestionan las revisiones
 
 * **[!UICONTROL Permitir respuestas]**
 
-   Si se selecciona, permitir respuestas a críticas. El valor predeterminado está desmarcado.
+  Si se selecciona, permitir respuestas a críticas. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Cerrado]**
 
-   Si se selecciona, la revisión se cierra a nuevas críticas y respuestas. El valor predeterminado está desmarcado.
+  Si se selecciona, la revisión se cierra a nuevas críticas y respuestas. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Permitir cargas de archivos]**
 
-   Si se selecciona, permite que los archivos adjuntos se carguen para la revisión. El valor predeterminado está desmarcado.
+  Si se selecciona, permite que los archivos adjuntos se carguen para la revisión. El valor predeterminado está desmarcado.
 
 * **Tamaño máximo de archivo**
 
-   Relevante solo si **[!UICONTROL Permitir cargas de archivos]** está marcada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 10 MB.
+  Relevante solo si **[!UICONTROL Permitir cargas de archivos]** está marcada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 10 MB.
 
 * **[!UICONTROL Longitud máxima del mensaje]**
 
-   Número máximo de caracteres que pueden introducirse en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
+  Número máximo de caracteres que pueden introducirse en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-   Relevante solo si **[!UICONTROL Permitir cargas de archivos]** está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los que no se especifiquen. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Relevante solo si **[!UICONTROL Permitir cargas de archivos]** está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los que no se especifiquen. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **[!UICONTROL Editor de texto enriquecido]**
 
-   Si se selecciona, las publicaciones pueden introducirse con marcado. El valor predeterminado está desmarcado.
+  Si se selecciona, las publicaciones pueden introducirse con marcado. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Habilitar la votación]**
 
-   Si se selecciona esta opción, se debe incluir la función de votación para un tema. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se debe incluir la función de votación para un tema. El valor predeterminado está desmarcado.
 
 En el **[!UICONTROL Moderación de usuario]** pestaña, especifique cómo se administran las críticas publicadas. Para obtener más información, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
@@ -115,39 +115,39 @@ En el **[!UICONTROL Moderación de usuario]** pestaña, especifique cómo se adm
 
 * **[!UICONTROL Moderación previa]**
 
-   Si se selecciona, las revisiones deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado está desmarcado.
+  Si se selecciona, las revisiones deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Eliminar críticas]**
 
-   Si se selecciona, el miembro que publicó la revisión tiene la capacidad de eliminarla. El valor predeterminado está desmarcado.
+  Si se selecciona, el miembro que publicó la revisión tiene la capacidad de eliminarla. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Denegar críticas]**
 
-   Si se selecciona, permite que los moderadores denieguen críticas. El valor predeterminado está desmarcado.
+  Si se selecciona, permite que los moderadores denieguen críticas. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Cerrar/abrir de nuevo las críticas]**
 
-   Si se selecciona, permite que los moderadores cierren y abran de nuevo las críticas. El valor predeterminado está desmarcado.
+  Si se selecciona, permite que los moderadores cierren y abran de nuevo las críticas. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Marcar críticas]**
 
-   Si se selecciona esta opción, se permite que los miembros marquen las revisiones como inadecuadas. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite que los miembros marquen las revisiones como inadecuadas. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Lista de motivos de indicación]**
 
-   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan una revisión como inadecuada. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan una revisión como inadecuada. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Motivo de indicación personalizado]**
 
-   Si se selecciona esta opción, se permite que los miembros especifiquen su propio motivo para señalar una revisión como inadecuada. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite que los miembros especifiquen su propio motivo para señalar una revisión como inadecuada. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Umbral de moderación]**
 
-   Introduzca el número de veces que los miembros deben marcar una revisión antes de notificarlo a los moderadores. El valor predeterminado es una vez (1).
+  Introduzca el número de veces que los miembros deben marcar una revisión antes de notificarlo a los moderadores. El valor predeterminado es una vez (1).
 
 * **[!UICONTROL Límite de indicación]**
 
-   Introduzca el número de veces que se debe marcar una revisión antes de ocultarla de la vista pública. Este número debe ser bueno o igual que **[!UICONTROL Umbral de moderación]**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar una revisión antes de ocultarla de la vista pública. Este número debe ser bueno o igual que **[!UICONTROL Umbral de moderación]**. El valor predeterminado es 5.
 
 ### Adición de un resumen de críticas (visualización) a una página {#adding-a-review-summary-display-to-a-page}
 
@@ -179,13 +179,13 @@ En el **[!UICONTROL Resumen de críticas]** pestaña
 
 * `Review Path`
 
-   introduzca o examine la instancia colocada del `reviews`para resumir, por ejemplo, si se añade a la página web del [Sitio de Geometrixx Engage,](getting-started.md) la ruta sería:
+  introduzca o examine la instancia colocada del `reviews`para resumir, por ejemplo, si se añade a la página web del [Sitio de Geometrixx Engage,](getting-started.md) la ruta sería:
 
-   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
+  `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-   Si se selecciona, se debe incluir la visualización de un gráfico de barras que indique el número de cada clasificación por estrellas que hay en las revisiones que se resumen. El valor predeterminado está desmarcado.
+  Si se selecciona, se debe incluir la visualización de un gráfico de barras que indique el número de cada clasificación por estrellas que hay en las revisiones que se resumen. El valor predeterminado está desmarcado.
 
 ### Cambio a un tipo de revisión personalizado {#changing-to-a-custom-review-type}
 
@@ -201,19 +201,19 @@ En el **[!UICONTROL Tipos de recursos]** pestaña, especifique el resourceType p
 
 * **[!UICONTROL Tipo de medio de comentario]**
 
-   Navegue hasta el resourceType de un `comment`componente (comentario único) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`.
+  Navegue hasta el resourceType de un `comment`componente (comentario único) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`.
 
-   Este recurso identificará el resourceType del UGC creado cuando un visitante publica un comentario.
+  Este recurso identificará el resourceType del UGC creado cuando un visitante publica un comentario.
 
 * **[!UICONTROL Tipo de medio de votación]**
 
-   Navegue hasta el resourceType de un `voting`en /apps. Por ejemplo, `/apps/social/components/hbs/voting`.
+  Navegue hasta el resourceType de un `voting`en /apps. Por ejemplo, `/apps/social/components/hbs/voting`.
 
-   Este recurso identificará el tipo de recurso de UGC creado cuando un visitante publica un voto.
+  Este recurso identificará el tipo de recurso de UGC creado cuando un visitante publica un voto.
 
 * **[!UICONTROL Tipo de medio de sistema de comentario]**
 
-   Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [{{include}} ayudante](handlebars-helpers.md#include).
+  Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [{{include}} ayudante](handlebars-helpers.md#include).
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 

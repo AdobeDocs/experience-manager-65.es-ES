@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1747'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Utilice el siguiente procedimiento para configurar un marco de trabajo para el s
    * Los ejemplos de las secciones siguientes utilizan el nombre **my-sc-configuration** para la configuración y **videofw** para el marco de trabajo.
 
 1. En la página marco de trabajo, seleccione un RSID y establezca el uso en todo. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. Desde la categoría Componente general de la barra de tareas, arrastre el componente Vídeo al marco de trabajo.
+1. En la categoría General, en Sidekick, arrastre el componente Vídeo al módulo.
 1. Seleccione un método de seguimiento:
 
    * [Hitos](/help/sites-administering/adobeanalytics.md)
@@ -97,7 +97,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Cada vez que se activa un hito, se envía junto con este evento el número de segundos que el usuario ha invertido en ver un segmento determinado. p. ej. eventX=21<br /> </td>
+   <td>Cada vez que se activa un hito, se envía junto con este evento el número de segundos que el usuario ha invertido en ver un segmento determinado. por ejemplo, eventX=21<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
@@ -121,7 +121,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Contiene información sobre el segmento que se ha visto, p. ej. 2:O:4-8 </td>
+   <td>Contiene información sobre el segmento que se ha visto, por ejemplo, 2:O:4-8 </td>
   </tr>
  </tbody>
 </table>
@@ -290,7 +290,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
 1. Defina el desplazamiento de pista.
 
-   * e.g.10,50,75,100
+   * por ejemplo,10,50,75,100
 
    Además, la información enviada a Adobe Analytics es menos personalizable; solo hay 3 variables disponibles para la asignación:
 
@@ -343,7 +343,8 @@ Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se a
 
 1. Establezca el desplazamiento de pista en cualquier número de segundos,
 
-   * p. ej. 6
+   * por ejemplo, 6
+
    >[!NOTE]
    >
    >El campo Desplazamiento de seguimiento solo acepta números enteros superiores a 0

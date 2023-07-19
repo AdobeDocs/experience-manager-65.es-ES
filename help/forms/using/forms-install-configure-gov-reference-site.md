@@ -4,9 +4,9 @@ description: Instale, configure y personalice un paquete de demostración de AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4626'
 ht-degree: 66%
 
 ---
@@ -155,8 +155,8 @@ Esta sección contiene detalles e instrucciones sobre la configuración posterio
 
 1. Configure el servicio para conectarse al servidor SMTP de su elección:
 
-   1. **Nombre de host del servidor SMTP**: por ejemplo, (smtp.gmail.com).
-   1. **Puerto del servidor**: p. ej., (465) para Gmail usando SSL.
+   1. **Nombre de host del servidor SMTP**: por ejemplo, (smtp.gmail.com)
+   1. **Puerto del servidor**: por ejemplo, (465) para gmail con SSL
    1. **Nombre de usuario de SMTP:** demo@ &lt;companyname> .com.
    1. **Dirección de origen**: aemformsdemo@adobe.com.
 
@@ -240,7 +240,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración en la nu
 1. Vaya a la pestaña &quot;Configuración de autenticación&quot;.
 1. Introduzca la siguiente información:
 
-   1. **Raíz del servicio:** p. ej., `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`.
+   1. **Raíz de servicio:** por ejemplo, `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Tipo de autenticación:** OAuth 2.0.
    1. **Configuración de autenticación** (consulte [Configuración en la nube de MS® Dynamics](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) para recopilar esta información):
 
@@ -251,7 +251,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración en la nu
       1. URL del token de acceso: por ejemplo, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Ámbito de autorización: **openid**.
       1. Encabezado de autenticación: **Portador de autorización**.
-      1. Recurso: p. ej., `https://msdynamicsserver.api.crm3.dynamics.com`.
+      1. Recurso: por ejemplo, `https://msdynamicsserver.api.crm3.dynamics.com`
 
    1. Haga clic en &quot;Conectarse a OAuth&quot;.
 
@@ -277,7 +277,7 @@ Los pasos detallados en esta sección se incluyen para ayudarle a localizar el I
 1. Para localizar la URL del recurso o la URL raíz del servicio, vaya al panel de instancias de MS® Dynamics.
 1. En la barra de navegación superior, haga clic en &quot;Ventas&quot; o en su propio tipo de instancia y luego en &quot;Seleccionar configuración&quot;.
 1. Haga clic en &quot;Personalizaciones&quot; y &quot;Recursos para desarrolladores&quot; cerca de la parte inferior derecha.
-1. Ahí encontrará la URL raíz del servicio: p. ej.,.
+1. Ahí se encuentra la URL raíz del servicio: por ejemplo,
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`.
 
@@ -751,7 +751,7 @@ Esta sección contiene información sobre las funciones de la demostración y la
 
 Para realizar pruebas de accesibilidad, instale el complemento de Chrome que se encuentra aquí en `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Una vez instalado, cargue la página que desee probar en el explorador Chrome (Nota: Si tiene varias pestañas abiertas, puede que la puntuación se vea afectada; por eso, es preferible tener una sola pestaña abierta). Una vez cargada la página, **clic derecho** en la página y seleccione **Auditorías** pestaña. Los desarrolladores pueden seleccionar el tipo de auditoría que debe realizar el complemento de accesibilidad. Una vez seleccionadas todas las opciones deseadas, el usuario puede hacer clic en el botón Generar informe. Esto genera un documento PDF que muestra la clasificación general de accesibilidad y qué se puede utilizar para aumentar esta clasificación.
+Una vez instalado, cargue la página que desee probar en el explorador Chrome (Nota: Si tiene varias pestañas abiertas, puede que la puntuación se vea afectada; por eso, es preferible tener una sola pestaña abierta). Una vez cargada la página, **clic con el botón derecho** en la página y seleccione **Auditorías** pestaña. Los desarrolladores pueden seleccionar el tipo de auditoría que debe realizar el complemento de accesibilidad. Una vez seleccionadas todas las opciones deseadas, el usuario puede hacer clic en el botón Generar informe. Esto genera un documento PDF que muestra la clasificación general de accesibilidad y qué se puede utilizar para aumentar esta clasificación.
 
 Una vez ejecutado el informe, los usuarios podrán ver lo siguiente:
 

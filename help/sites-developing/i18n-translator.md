@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2327'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Cree un diccionario para administrar las cadenas de IU localizadas. Después de 
 
    ` /apps/<projectName>/i18n`
 
-   Por ejemplo, `/apps/myProject/i18n`. 
+   Por ejemplo, `/apps/myProject/i18n`
 
 1. Añada la estructura de idioma necesaria debajo de esta raíz. Por ejemplo:
 
@@ -85,11 +85,11 @@ Cree un diccionario para administrar las cadenas de IU localizadas. Después de 
    >
    >Esta es la estructura del [Módulo Sling i18n](https://sling.apache.org/site/internationalization-support.html).
 
-1. Vuelva a cargar el traductor y la ruta del diccionario (p. ej. `/apps/myProject/i18n`) estará disponible en el selector desplegable de la barra de herramientas. Seleccione esta opción para empezar a añadir cadenas y sus traducciones.
+1. Vuelva a cargar el traductor y la ruta del diccionario (por ejemplo, `/apps/myProject/i18n`) estará disponible en el selector desplegable de la barra de herramientas. Seleccione esta opción para empezar a añadir cadenas y sus traducciones.
 
    >[!NOTE]
    >
-   >El traductor solo guardará traducciones para idiomas que estén realmente presentes debajo de la ruta (p. ej. `/apps/myProject/i18n`).
+   >El traductor solo guardará las traducciones para idiomas que estén realmente presentes debajo de la ruta (por ejemplo, `/apps/myProject/i18n`).
    >
    >Asegúrese de que se corresponden con los idiomas mostrados en la cuadrícula.
 
@@ -353,17 +353,18 @@ Para cambiar las definiciones predeterminadas:
 
    `/apps/wcm/core/resources/languages`
 
-   A continuación, cambie o amplíe la lista allí. La propiedad `defaultCountry` en un nodo de idioma (p. ej. `ja`) debe contener el código completo, como `ja_jp`, que definiría `jp` como país predeterminado para el idioma `ja`.
+   A continuación, cambie o amplíe la lista allí. La propiedad `defaultCountry` en un nodo de idioma (por ejemplo, `ja`) debe contener el código completo, como `ja_jp`, que definiría `jp` como país predeterminado para el idioma `ja`.
 
 1. Actualice el **Administrador de idiomas de CQ WCM**.
 
    * **Lista de idiomas**:
 
-      La ruta a la lista de idiomas en el repositorio. Configure esto en la ubicación utilizada para la superposición:
+     La ruta a la lista de idiomas en el repositorio. Configure esto en la ubicación utilizada para la superposición:
 
-      ```
-             /apps/wcm/core/resources/languages
-      ```
+     ```
+            /apps/wcm/core/resources/languages
+     ```
+
    Puede hacerlo mediante la consola web de OSGi:
 
    ```shell

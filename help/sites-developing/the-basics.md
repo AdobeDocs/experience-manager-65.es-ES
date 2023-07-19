@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3324'
+source-wordcount: '3327'
 ht-degree: 1%
 
 ---
@@ -137,8 +137,8 @@ Con Sling, puede especificar qué secuencia de comandos procesa una entidad dete
 
 La solicitud se desglosa y se extrae la información necesaria. Se busca el recurso solicitado en el repositorio (nodo de contenido):
 
-* primer Sling comprueba si existe un nodo en la ubicación especificada en la solicitud; p. ej., `../content/corporate/jobs/developer.html`
-* si no se encuentra ningún nodo, la extensión se suelta y la búsqueda se repite; p. ej.,. `../content/corporate/jobs/developer`
+* first Sling comprueba si existe un nodo en la ubicación especificada en la solicitud; por ejemplo, `../content/corporate/jobs/developer.html`
+* si no se encuentra ningún nodo, la extensión se suelta y la búsqueda se repite; por ejemplo, `../content/corporate/jobs/developer`
 * si no se encuentra ningún nodo, Sling devolverá el código http 404 (no encontrado).
 
 Sling también permite que otras cosas que no sean nodos JCR sean recursos, pero esta es una función avanzada.
@@ -152,7 +152,7 @@ La ruta especificada por el `sling:resourceType` puede ser:
 * absoluto
 * relativo, a un parámetro de configuración
 
-   El Adobe recomienda las rutas relativas a medida que aumentan la portabilidad.
+  El Adobe recomienda las rutas relativas a medida que aumentan la portabilidad.
 
 Todos los scripts de Sling se almacenan en subcarpetas de `/apps` o `/libs`, que se buscarán en este orden (consulte [Personalizar componentes y otros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -175,39 +175,39 @@ En el ejemplo anterior, si la variable `sling:resourceType` es `hr/jobs` y luego
 
 * Solicitudes de GET/HEAD y direcciones URL que terminan en .html (tipos de solicitud predeterminados, formato predeterminado)
 
-   La secuencia de comandos es /apps/hr/jobs/jobs.esp; la última sección de sling:resourceType forma el nombre del archivo.
+  La secuencia de comandos es /apps/hr/jobs/jobs.esp; la última sección de sling:resourceType forma el nombre del archivo.
 
 * Solicitudes de POST (todos los tipos de solicitud excepto GET/HEAD, el nombre del método debe estar en mayúsculas)
 
-   Se utiliza el POST en el nombre del script.
+  Se utiliza el POST en el nombre del script.
 
-   El script es `/apps/hr/jobs/jobs.POST.esp`.
+  El script es `/apps/hr/jobs/jobs.POST.esp`.
 
 * Direcciones URL en otros formatos que no terminan con .html
 
-   Por ejemplo, `../content/corporate/jobs/developer.pdf`. 
+  Por ejemplo, `../content/corporate/jobs/developer.pdf`
 
-   El script será `/apps/hr/jobs/jobs.pdf.esp`; el sufijo se agrega al nombre del script.
+  El script será `/apps/hr/jobs/jobs.pdf.esp`; el sufijo se agrega al nombre del script.
 
 * URL con selectores
 
-   Los selectores se pueden utilizar para mostrar el mismo contenido en un formato alternativo. Por ejemplo, una versión compatible con la impresora, una fuente RSS o un resumen.
+  Los selectores se pueden utilizar para mostrar el mismo contenido en un formato alternativo. Por ejemplo, una versión compatible con la impresora, una fuente RSS o un resumen.
 
-   Si miramos una versión compatible con la impresora donde el selector podría ser *imprimir*; como en `../content/corporate/jobs/developer.print.html`
+  Si miramos una versión compatible con la impresora donde el selector podría ser *imprimir*; como en `../content/corporate/jobs/developer.print.html`
 
-   El script será `/apps/hr/jobs/jobs.print.esp`; el selector se añade al nombre del script.
+  El script será `/apps/hr/jobs/jobs.print.esp`; el selector se añade al nombre del script.
 
 * Si no se ha definido sling:resourceType:
 
    * la ruta de contenido se utilizará para buscar un script adecuado (si el ResourceTypeProvider basado en la ruta está activo).
 
-      Por ejemplo, la secuencia de comandos para `../content/corporate/jobs/developer.html` generaría una búsqueda en `/apps/content/corporate/jobs/`.
+     Por ejemplo, la secuencia de comandos para `../content/corporate/jobs/developer.html` generaría una búsqueda en `/apps/content/corporate/jobs/`.
 
    * se utilizará el tipo de nodo principal.
 
 * Si no se encuentra ninguna secuencia de comandos, se utilizará la predeterminada.
 
-   Actualmente, la representación predeterminada es compatible con texto sin formato (.txt), HTML (.html) y JSON (.json), todos los cuales enumeran las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res o las solicitudes sin extensión de solicitud es poner en cola el recurso (cuando sea posible).
+  Actualmente, la representación predeterminada es compatible con texto sin formato (.txt), HTML (.html) y JSON (.json), todos los cuales enumeran las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res o las solicitudes sin extensión de solicitud es poner en cola el recurso (cuando sea posible).
 * Para la gestión de errores http (códigos 403 o 404), Sling buscará un script en:
 
    * la ubicación /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -248,19 +248,19 @@ Por ejemplo:
    * b
 
       * sling:resourceSuperType = a
+
    * c
 
       * sling:resourceSuperType = b
+
    * x
 
       * sling:resourceType = c
+
    * y
 
       * sling:resourceType = c
       * sling:resourceSuperType = a
-
-
-
 
 La jerarquía de tipo de:
 
@@ -418,29 +418,29 @@ La siguiente lista ofrece información general sobre la estructura que se ve den
 
 * `/apps`
 
-   Relacionado con la aplicación; incluye definiciones de componentes específicas del sitio web. Los componentes que desarrolle se pueden basar en los componentes predeterminados disponibles en `/libs/foundation/components`.
+  Relacionado con la aplicación; incluye definiciones de componentes específicas del sitio web. Los componentes que desarrolle se pueden basar en los componentes predeterminados disponibles en `/libs/foundation/components`.
 
 * `/content`
 
-   Contenido creado para su sitio web.
+  Contenido creado para su sitio web.
 
 * `/etc`
 
 * `/home`
 
-   Información de usuario y grupo.
+  Información de usuario y grupo.
 
 * `/libs`
 
-   AEM Bibliotecas y definiciones que pertenecen al núcleo de la. Las subcarpetas de `/libs` AEM representan las funciones de administración de listas para usar, como la búsqueda o la replicación, de forma predeterminada. El contenido de `/libs` AEM no debe modificarse, ya que afecta al modo en que funciona la. Las funciones específicas del sitio web deben desarrollarse en `/apps` (consulte [Personalizar componentes y otros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  AEM Bibliotecas y definiciones que pertenecen al núcleo de la. Las subcarpetas de `/libs` AEM representan las funciones de administración de listas para usar, como la búsqueda o la replicación, de forma predeterminada. El contenido de `/libs` AEM no debe modificarse, ya que afecta al modo en que funciona la. Las funciones específicas del sitio web deben desarrollarse en `/apps` (consulte [Personalizar componentes y otros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
-   Zona de trabajo temporal.
+  Zona de trabajo temporal.
 
 * `/var`
 
-   Archivos que cambian y son actualizados por el sistema; como registros de auditoría, estadísticas y control de eventos.
+  Archivos que cambian y son actualizados por el sistema; como registros de auditoría, estadísticas y control de eventos.
 
 ## Entornos {#environments}
 

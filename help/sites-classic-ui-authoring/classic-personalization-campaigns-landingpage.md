@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3335'
 ht-degree: 1%
@@ -304,10 +304,10 @@ Es un campo opcional que especifica la ruta a un nodo del repositorio. Cuando es
 Si está validando el formulario completo, incluya también una de las siguientes opciones:
 
 * Una secuencia de comandos para la validación del cliente:
-   ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
 * Una secuencia de comandos para la validación en el servidor:
-   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
 **Configuración de acción** Según la selección en Opciones de publicación, la Configuración de la acción cambia. Por ejemplo, al seleccionar Crear posible cliente, puede configurar a qué lista se agrega el posible cliente.
 

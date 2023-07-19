@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3024'
-ht-degree: 42%
+source-wordcount: '3025'
+ht-degree: 43%
 
 ---
 
@@ -269,7 +269,7 @@ Recursos y descargas para desarrolladores
 
 ## Barra de herramientas Acciones {#actions-toolbar}
 
-Siempre que se selecciona un recurso (por ejemplo, una página o un recurso), varias acciones se indican mediante iconos con texto explicativo en la barra de herramientas. Estas acciones dependen de lo siguiente:
+Siempre que se selecciona un recurso (por ejemplo, una página o un recurso), varias acciones aparecen indicadas en la barra de herramientas mediante iconos acompañados por un texto explicativo. Estas acciones dependen de lo siguiente:
 
 * La consola actual.
 * El contexto actual.
@@ -293,7 +293,7 @@ Entrada [Vista de tarjeta](#cardviewquickactions) algunas acciones están dispon
 
 Las acciones rápidas están visibles al pasar el ratón (dispositivo de escritorio) por una tarjeta de recursos. Las acciones rápidas disponibles pueden depender de la consola y del contexto. Por ejemplo, estas son las acciones rápidas para una página de la consola **Sitios**:
 
-![Acciones rápidas   ](assets/bh-13.png)
+![Acciones rápidas](assets/bh-13.png)
 
 ## Visualización y selección de los recursos {#viewing-and-selecting-resources}
 

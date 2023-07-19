@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 6%
@@ -24,7 +24,6 @@ ht-degree: 6%
 >* Algunas funcionalidades no están disponibles en todas las consolas o hay funcionalidades adicionales disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se tratará con más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [al editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
-
 
 ## La pantalla de bienvenida {#the-welcome-screen}
 
@@ -87,13 +86,13 @@ El **Sitios web** La consola de proporciona dos paneles para que navegue y admin
 
 * Panel izquierdo
 
-   Esto muestra la estructura de árbol de los sitios web y las páginas dentro de esos sitios web.
+  Esto muestra la estructura de árbol de los sitios web y las páginas dentro de esos sitios web.
 
-   AEM También muestra información sobre otros aspectos o recursos, incluidos proyectos, modelos y recursos.
+  AEM También muestra información sobre otros aspectos o recursos, incluidos proyectos, modelos y recursos.
 
 * Panel derecho
 
-   Esto muestra las páginas (en la ubicación seleccionada en el panel izquierdo) y se puede utilizar para realizar acciones.
+  Esto muestra las páginas (en la ubicación seleccionada en el panel izquierdo) y se puede utilizar para realizar acciones.
 
 Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-pages.md) mediante la barra de herramientas, un menú contextual o abriendo una página para realizar más acciones.
 
@@ -105,7 +104,7 @@ Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-page
 
 ## Acceso a la Ayuda   {#accessing-help}
 
-En varias consolas (p. ej., sitios web) también hay **Ayuda** está disponible, se abrirá Package Share o el sitio de documentación.
+En varias consolas (por ejemplo, sitios web) también hay **Ayuda** está disponible, se abrirá Package Share o el sitio de documentación.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -120,7 +119,7 @@ El **Sitios web** La consola de enumera las páginas de contenido en una estruct
    * Enumeración de las páginas secundarias en el panel derecho
    * Expanda también la estructura en el panel izquierdo.
 
-      Por motivos de rendimiento, esta acción depende del número de nodos secundarios. Con una instalación estándar, este método de expansión funciona cuando hay `30` o menos nodos secundarios.
+     Por motivos de rendimiento, esta acción depende del número de nodos secundarios. Con una instalación estándar, este método de expansión funciona cuando hay `30` o menos nodos secundarios.
 
 * Un doble clic en el nombre de la página (panel izquierdo) también expandirá el árbol, aunque como la página se abre al mismo tiempo este efecto no es tan obvio.
 
@@ -202,7 +201,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
    <td>Muestra cuándo se ha bloqueado una página y la cuenta de usuario que la ha bloqueado.</td>
   </tr>
   <tr>
-   <td>Live Copy   </td>
+   <td>Live Copy</td>
    <td>Indica cuándo la página es parte de una Live Copy.</td>
   </tr>
  </tbody>

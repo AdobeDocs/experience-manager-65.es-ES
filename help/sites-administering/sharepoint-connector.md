@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1563'
 ht-degree: 3%
 
 ---
@@ -37,6 +37,7 @@ Todas las funcionalidades se implementan utilizando los servicios web nativos de
 >El conector de SharePoint AEM también es compatible con el paquete de servicio 2 de 6.1. El conector ya no admite el montaje del repositorio virtual y, por lo tanto, no se puede montar. Si desea acceder al repositorio de Sharepoint mediante las API de Java, utilice la implementación del repositorio JCR del conector de Sharepoint en su proyecto.
 >
 >La instalación, configuración, administración y operaciones de TI del servidor de SharePoint y la infraestructura de TI relacionada están fuera del ámbito de este documento. Consulte la documentación del proveedor sobre [SharePoint](https://www.microsoft.com/sharepoint) para obtener información acerca de estos temas. El conector requiere que estas partes de la infraestructura se instalen, configuren y operen correctamente.
+>
 
 ## Primeros pasos {#getting-started}
 
@@ -221,7 +222,7 @@ Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syste
 
 AEM Solo un usuario autenticado tanto en el usuario como en el SharePoint puede acceder al contenido de SharePoint a través del conector.
 
-AEM También puede utilizar la extensión del conector para la autenticación con el fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de a usuarios específicos de SharePoint. AEM Cree los usuarios correspondientes de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia del conector.
+AEM También puede utilizar la extensión del conector para la autenticación con el fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de la a usuarios específicos de SharePoint. AEM Cree los usuarios correspondientes de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia del conector.
 
 AEM Para crear un usuario en el entorno de trabajo de:
 

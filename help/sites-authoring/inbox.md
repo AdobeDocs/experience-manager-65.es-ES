@@ -8,9 +8,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 28%
 
 ---
@@ -29,8 +29,8 @@ AEM Puede recibir notificaciones de varias áreas de la, incluidos flujos de tra
    * elementos de trabajo que representan acciones que debe realizar en el contenido de la página;
 
       * estos son el producto del flujo de trabajo **Participante** pasos
-   * elementos de error, para permitir que los administradores reintenten el paso con errores.
 
+   * elementos de error, para permitir que los administradores reintenten el paso con errores.
 
 Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá verlas y realizar acciones.
 
@@ -47,7 +47,6 @@ Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá ver
 >* [Flujos de trabajo](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
 >
-
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}
 
@@ -114,22 +113,22 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
 * **Vista de calendario**
 
-   Para **Vista de calendario** puede configurar lo siguiente:
+  Para **Vista de calendario** puede configurar lo siguiente:
 
    * **Agrupar por**
    * **Programa** o **Ninguno**
    * **Tamaño de la tarjeta**
 
-   ![wf-92](assets/wf-92.png)
+  ![wf-92](assets/wf-92.png)
 
 * **Vista de lista**
 
-   Para **Vista de lista** puede configurar el mecanismo de ordenación:
+  Para **Vista de lista** puede configurar el mecanismo de ordenación:
 
    * **Campo de ordenación**
    * **Orden**
 
-   ![wf-83](assets/inbox-settings.png)
+  ![wf-83](assets/inbox-settings.png)
 
 ### Bandeja de entrada - Control de administración {#inbox-admin-control}
 
@@ -149,7 +148,7 @@ La opción Control de administración solo está visible para los miembros del `
    * **Eliminar columna**: pulse el botón ![eliminar](assets/delete_updated.svg) AEM para eliminar la columna de la bandeja de entrada de la.
    * **Mover columna**: arrastre el ![mover](assets/move_updated.svg) AEM para mover una columna a una nueva posición en la bandeja de entrada de la bandeja de entrada de la.
 
-   ![admin-control](assets/admin-control-column-customize.png)
+  ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalizar la promoción de la marca**
 
@@ -181,6 +180,7 @@ La opción Control de administración solo está visible para los miembros del `
       * mostrar las propiedades del elemento
       * abra un tablero o un asistente apropiado para realizar más acciones
       * abrir documentación relacionada
+
    * **Retroceder** a una etapa anterior.
    * Consultar la carga útil de un flujo de trabajo.
    * Crear un proyecto a partir de un elemento.
@@ -190,7 +190,6 @@ La opción Control de administración solo está visible para los miembros del `
    >Para obtener más información, consulte lo siguiente:
    >
    >* Elementos de flujo de trabajo - [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
-
 
 1. En función del elemento seleccionado, se inicia una acción; por ejemplo:
 
@@ -207,7 +206,6 @@ La opción Control de administración solo está visible para los miembros del `
    * Confirme la acción adecuada; por ejemplo, Reasignar.
    * Cancelar la acción.
    * Flecha hacia atrás; por ejemplo, si se ha abierto un asistente de acciones o una página de documentación, puede volver a la Bandeja de entrada.
-
 
 ## Creación de una tarea {#creating-a-task}
 
@@ -260,9 +258,11 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projec
       * **Fecha inicial**
       * **Fecha de vencimiento**
       * **Usuario** Función y
+
    * **Avanzado**
 
       * **Nombre**
+
    >[!NOTE]
    >
    >Consulte [Creación de un proyecto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obtener información completa.

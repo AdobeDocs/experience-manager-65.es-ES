@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 80%
+source-wordcount: '219'
+ht-degree: 68%
 
 ---
 
@@ -27,12 +27,12 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 | Lugar de residencia | Acceso directo | Descripción |
 |---|---|---|
-| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista preliminar** y el [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> seleccionado actualmente (p. ej., **Editar**, **Diseño**, etc.).* |
+| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista previa** y el [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).* |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |
-|  | `Ctrl-c` | Copiar párrafos seleccionados |
-|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecen en la interfaz de usuario hasta que se pegue el copiado) |
+|  | `Ctrl-c` | Copiar los párrafos seleccionados |
+|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecen en la interfaz de usuario hasta que se pegue) |
 |  | `Ctrl-v` | Pegar párrafos previamente cortados o copiados |
 |  | `Ctrl-Backspace` | Eliminar párrafos seleccionados |
 | **Modo de edición:** editor de texto enriquecido | `Ctrl-b` | Negrita |

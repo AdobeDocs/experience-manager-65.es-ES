@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '837'
 ht-degree: 97%
 
 ---
@@ -41,7 +41,7 @@ La creación o ampliación de una presencia web global puede ser un proceso comp
 * Determine cómo se distribuye el contenido por regiones y países. Considere qué países comparten idiomas. Se recomienda crear formatos de idiomas, una capa de páginas no activadas, donde el contenido traducido puede revisarse y modificarse, luego ser transferido o llevado a un sitio de un país que comparta ese idioma.
 * Existen dos métodos para crear formatos de idiomas: usando copias de idioma y usando MSM/Live Copies.
 
-   * El enfoque de copia de idioma es el que utiliza el marco de trabajo de integración de traducción predeterminado de AEM y, por lo tanto, es la forma más sencilla de empezar. El marco de trabajo proporciona una interfaz de usuario que facilita inicialmente la propagación y traducción de los cambios de contenido del formato de idioma principal (p. ej. inglés) a los otros formatos de idioma. Sin embargo, a medida que el proyecto crece, la automatización del flujo de trabajo se hace cada vez más necesaria para administrar la traducción del mayor número de páginas o idiomas.
+   * El enfoque de copia de idioma es el que utiliza el marco de trabajo de integración de traducción predeterminado de AEM y, por lo tanto, es la forma más sencilla de empezar. El marco de trabajo proporciona una interfaz de usuario que facilita inicialmente la propagación y traducción de los cambios de contenido del formato de idioma principal (por ejemplo, inglés) a los otros formatos de idioma. Sin embargo, a medida que el proyecto crece, la automatización del flujo de trabajo se hace cada vez más necesaria para administrar la traducción del mayor número de páginas o idiomas.
    * El método MSM/Live Copy puede ser una alternativa para casos de uso avanzados, donde los sitios son más grandes y complejos. Es necesario contar con una buena gobernanza y una automatización del flujo de trabajo desde el principio para gestionar las complejas relaciones de herencia entre los formatos de inglés y de otros idiomas, así como para reducir el riesgo de sobrescribir traducciones existentes. Esta gestión se puede realizar con la ayuda de algunos conectores de traducción. Consulte [MSM y sitios multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) para obtener más información.
 
 * Si el idioma principal tiene variaciones globales, una opción es usar MSM para crear una Live Copy del formato global y utilizarla para la traducción. Por ejemplo, si la creación global se realiza en un formato de inglés de EE. UU., cree un formato de inglés internacional como Live Copy y base para la traducción a otros idiomas.

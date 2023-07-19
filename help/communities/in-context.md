@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,11 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
    * Seleccionar nueva publicación
    * Introduzca el asunto
 
-      Cuándo cambiar el néctar en Humming Bird Feeder
+     Cuándo cambiar el néctar en Humming Bird Feeder
 
    * Escriba el texto del cuerpo
 
-      No he tenido mucho éxito cuando cuelgo un alimentador de colibrí todos los años. Parece que vienen un día o dos, entonces eso es todo. Lo cambio una vez a la semana, ¿es demasiado largo? ¿Tengo que cambiarlo antes?
+     No he tenido mucho éxito cuando cuelgo un alimentador de colibrí todos los años. Parece que vienen un día o dos, entonces eso es todo. Lo cambio una vez a la semana, ¿es demasiado largo? ¿Tengo que cambiarlo antes?
 
    * Seleccionar publicación
    * Seleccione Cerrar sesión
@@ -71,7 +71,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
    * Para el tema de Hummingbird, seleccione Leer más
    * Escriba el comentario para la respuesta de publicación
 
-      Me cambio la mía una vez a la semana y las recibo de mayo a octubre.
+     Me cambio la mía una vez a la semana y las recibo de mayo a octubre.
 
    * Seleccionar respuesta
    * Seleccione Cerrar sesión
@@ -82,7 +82,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
    * Para el tema de Hummingbird, seleccione Leer más
    * Escriba el comentario para la respuesta de publicación
 
-      Vendo néctar y alimentadores - visita https://my.viral.url/
+     Vendo néctar y alimentadores - visita https://my.viral.url/
 
    * Seleccionar respuesta
    * Seleccione Cerrar sesión

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 20a0b2a8-7347-4875-a202-9cedd8e187ff
 legacypath: /content/docs/en/aem/6-0/develop/mobile
 exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '204'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 AEM proporciona varias herramientas que le permiten desarrollar sitios para dispositivos móviles e integrar el contenido en aplicaciones móviles.
 

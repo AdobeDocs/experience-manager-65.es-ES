@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '460'
 ht-degree: 7%
 
 ---
@@ -76,22 +76,22 @@ La configuración de OSGi es:
   <tr>
    <td><strong>Tipo de medio</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>El tipo de recurso que se va a registrar; p. ej., <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>El tipo de recurso que se va a registrar; por ejemplo, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Propiedad de referencia</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Nombre de la propiedad que contiene la referencia al fragmento; p. ej.,. <code>fragmentPath</code> o <code>fileReference</code></td>
+   <td>Nombre de la propiedad que contiene la referencia al fragmento; por ejemplo, <code>fragmentPath</code> o <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Propiedad de elemento(s)</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>Nombre de la propiedad que contiene los nombres de los elementos que se van a procesar; p. ej.,.<code>elementName</code></td>
+   <td>Nombre de la propiedad que contiene los nombres de los elementos que se van a representar; por ejemplo,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Propiedad de variación</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>Nombre de la propiedad que contiene el nombre de la variación que se va a procesar; p. ej.,.<code>variationName</code></td>
+   <td>Nombre de la propiedad que contiene el nombre de la variación que se va a procesar; por ejemplo,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>

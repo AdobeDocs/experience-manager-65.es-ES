@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 3%
 
 ---
@@ -29,15 +29,14 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
 >* **Publicar o cancelar la publicación**
-   >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar o desactivar**
-   >  Estos términos son sinónimos de publicar y cancelar la publicación.
+>  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
-   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
+>  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 >
-
 
 >[!NOTE]
 >
@@ -46,7 +45,6 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >* Se activará un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
 >* Se mostrará un mensaje (durante un corto periodo de tiempo) para notificarle esto.
 >
-
 
 ## Publicación de una página {#publishing-a-page}
 
@@ -73,6 +71,8 @@ Puede activar páginas en la consola Sitios web. Después de abrir una página y
    >[!NOTE]
    >
    >AEM Si es necesario, solicita que se active o se reactive cualquier recurso vinculado a la página. Puede activar o desactivar las casillas de verificación para activar esos recursos.
+   >
+   >
 
 1. AEM Si es necesario, solicita que se active o se reactive cualquier recurso vinculado a la página. Puede activar o desactivar las casillas de verificación para activar esos recursos.
 
@@ -82,13 +82,13 @@ Puede activar páginas en la consola Sitios web. Después de abrir una página y
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Activar una página de la barra de tareas {#activating-a-page-from-sidekick}
+### Activar una página desde el Sidekick {#activating-a-page-from-sidekick}
 
 También puede activar una página cuando la tenga abierta para editarla.
 
 Después de abrir la página y modificar su contenido, debe hacer lo siguiente:
 
-1. Seleccione el **Página** Ficha de la barra de tareas.
+1. Seleccione el **Página** en el Sidekick.
 1. Clic **Activar página**.
 Aparece un mensaje en la parte superior derecha de la ventana que confirma que la página se ha activado.
 

@@ -2,9 +2,9 @@
 title: AEM Creación y organización de páginas con la función de
 description: AEM Creación y administración de páginas con la función de administración de
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2526'
 ht-degree: 59%
 
 ---
@@ -34,13 +34,13 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como una estructura de árbol que contiene las páginas de contenido. Los nombres de estas páginas de contenido se utilizan para formar las direcciones URL, mientras que el título se muestra cuando se visualiza el contenido de la página.
 
-A continuación, se muestra un ejemplo del sitio de We.Retail, donde una página de shorts de senderismo ( `desert-sky-shorts`) se accede a:
+A continuación, se muestra un ejemplo del sitio de We.Retail, donde una página de shorts de senderismo ( `desert-sky-shorts`se accede a ):
 
 * Entorno de creación
-   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Entorno de publicación
-   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Según la configuración de la instancia, utilice `/content` puede ser opcional en el entorno de publicación.
 
@@ -102,7 +102,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Al definir un nombre de página, se recomienda que sea lo más corto y expresivo posible para que el lector pueda entenderlo con facilidad. Para obtener más información, consulte la [guía de estilo W3C](https://www.w3.org/Provider/Style/TITLE.html) para el elemento de `title`.
 >
->Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
+>Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos. 
 
 Al crear una página nueva, AEM [valida su nombre según las convenciones](/help/sites-developing/naming-conventions.md) que establecen tanto AEM como JCR.
 
@@ -206,12 +206,14 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    * **Título**:
 
       * Se muestra al usuario y es obligatorio.
+
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
       * Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
       * Usted **no se pueden enviar caracteres no válidos** en el **Nombre** field. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+
    >[!NOTE]
    >
    >Consulte [Convenciones de nomenclatura de páginas](#page-naming-conventions).
@@ -338,6 +340,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
       * Seleccione el destino haciendo clic en la miniatura de destino.
       * Haga clic en **Siguiente** para continuar.
+
    * Uso **Atrás** para volver a la especificación del nombre de página.
 
    >[!NOTE]
@@ -383,7 +386,7 @@ Sin embargo, si el número de páginas afectadas supera un límite definido, la 
       * **Ahora** comienza la ejecución del trabajo asincrónico de inmediato.
       * **Más tarde** permite al usuario definir cuándo se iniciará el trabajo asincrónico.
 
-         ![Movimiento asincrónico de página](assets/asynchronous-page-move.png)
+        ![Movimiento asincrónico de página](assets/asynchronous-page-move.png)
 
 El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado de los trabajos asincrónicos** ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**
 
@@ -438,7 +441,6 @@ Puede crear carpetas para organizar archivos y páginas.
 >* Las acciones estándar mover, copiar, pegar, eliminar, publicar, cancelar publicación y las propiedades de ver/editar se pueden ejecutar en una carpeta.
 >* Las carpetas no están disponibles para la selección en una Live Copy.
 >
-
 
 1. Abra la consola **Sitios** y vaya hasta la ubicación deseada.
 1. Para abrir la lista de opciones, seleccione **Crear** en la barra de herramientas

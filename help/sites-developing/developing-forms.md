@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -128,13 +128,13 @@ Puede agregar su propia acción en `/apps` como sigue:
 1. En la carpeta, cree lo siguiente:
 
    1. Un guion post.
-El nombre del script es `post.POST.<extension>`, p. ej. `post.POST.jsp`
-El script posterior se invoca cuando se envía un formulario para procesarlo y contiene el código que administra los datos que llegan del formulario 
-`POST`.
+El nombre del script es `post.POST.<extension>`, por ejemplo, `post.POST.jsp`
+El script posterior se invoca cuando se envía un formulario para procesarlo y contiene el código que administra los datos que llegan del formulario `POST`.
 
    1. Agregue un script de reenvío que se invoque cuando se envíe el formulario.
-El nombre del script es `forward.<extension`>, p. ej. `forward.jsp`
+El nombre del script es `forward.<extension`>, por ejemplo, `forward.jsp`
 Esta secuencia de comandos puede definir una ruta. La solicitud actual se reenvía a la ruta especificada.
+
    La llamada necesaria es `FormsHelper#setForwardPath` (2 variantes). Un caso típico es realizar alguna validación, o lógica, para encontrar la ruta de destino y luego reenviar a esa ruta, dejando que el servlet predeterminado del POST Sling realice el almacenamiento real en JCR.
 
    También puede haber otro servlet que realice el procesamiento real, en tal caso la acción del formulario y la acción `forward.jsp` solo actuaría como código de &quot;pegado&quot;. Un ejemplo de esto es la acción de correo en `/libs/foundation/components/form/actions/mail`, que reenvía detalles a `<currentpath>.mail.html`donde se encuentra un servlet de correo.
@@ -153,6 +153,7 @@ Esta secuencia de comandos puede definir una ruta. La solicitud actual se reenv�
       1. RT de validación del formulario: `clientvalidation.jsp`
       1. el formulario se carga mediante el recurso de carga si está configurado
       1. `addfields.jsp` mientras está en el procesamiento `<form></form>`
+
    * al gestionar un formulario `POST`:
 
       1. `init.jsp`
@@ -163,22 +164,18 @@ Esta secuencia de comandos puede definir una ruta. La solicitud actual se reenv�
 
       1. si no se estableció ninguna ruta de reenvío, llame a `post.POST.jsp` (termina aquí, no `cleanup.jsp` llamado)
 
-
-
-
 1. De nuevo en la carpeta, agregue lo siguiente de forma opcional:
 
    1. Script para agregar campos.
-El nombre del script es `addfields.<extension>`, p. ej. `addfields.jsp`
-Un 
-`addfields` se invoca inmediatamente después de escribir el HTML para el inicio del formulario. Esto permite a la acción agregar campos de entrada personalizados u otro HTML de este tipo dentro del formulario.
+El nombre del script es `addfields.<extension>`, por ejemplo, `addfields.jsp`
+Un `addfields` se invoca inmediatamente después de escribir el HTML para el inicio del formulario. Esto permite a la acción agregar campos de entrada personalizados u otro HTML de este tipo dentro del formulario.
 
    1. Un script de inicialización.
-El nombre del script es `init.<extension>`, p. ej. `init.jsp`
+El nombre del script es `init.<extension>`, por ejemplo, `init.jsp`
 Este script se invoca cuando se procesa el formulario. Se puede utilizar para inicializar acciones específicas.
 
    1. Un script de limpieza.
-El nombre del script es `cleanup.<extension>`, p. ej. `cleanup.jsp`
+El nombre del script es `cleanup.<extension>`, por ejemplo, `cleanup.jsp`
 Esta secuencia de comandos se puede utilizar para realizar la limpieza.
 
 1. Utilice el **Forms** en un parsys. El **Tipo de acción** La lista desplegable ahora incluye la nueva acción.
@@ -220,10 +217,10 @@ Puede añadir sus propias restricciones para un campo individual (en `/apps`) co
 
 1. Dentro de esta carpeta, puede necesitar los siguientes scripts:
 
-   * Un script de validación de cliente: el nombre del script es `clientvalidation.<extension>`, p. ej. `clientvalidation.jsp`
+   * Un script de validación de cliente: el nombre del script es `clientvalidation.<extension>`, por ejemplo, `clientvalidation.jsp`
 Se invocará cuando se represente el campo de formulario. Se puede utilizar para crear el javascript del cliente para validar el campo en el cliente.
 
-   * Un script de validación del servidor: el nombre del script es `servervalidation.<extension>`, p. ej. `servervalidation.jsp`
+   * Un script de validación del servidor: el nombre del script es `servervalidation.<extension>`, por ejemplo, `servervalidation.jsp`
 Se invocará cuando se envíe el formulario. Se puede utilizar para validar el campo en el servidor después de enviarlo.
 
 >[!NOTE]
@@ -268,7 +265,7 @@ Por ejemplo, un componente de grupo de radio con el título `Receive email notif
 
 ![showhidecondition](assets/showhidecondition.png)
 
-En JavaScript, las condiciones utilizan el valor de la propiedad Nombre del elemento para hacer referencia a los campos. En el ejemplo anterior, la propiedad Nombre del elemento del componente Grupo de radio es `contact`. El siguiente código es el código Javascript equivalente para ese ejemplo:
+En JavaScript, las condiciones utilizan el valor de la propiedad Nombre del elemento para hacer referencia a los campos. En el ejemplo anterior, la propiedad Nombre del elemento del componente Grupo de radio es `contact`. El siguiente código es el código JavaScript equivalente para ese ejemplo:
 
 `((contact == "Yes"))`
 
@@ -284,6 +281,7 @@ En JavaScript, las condiciones utilizan el valor de la propiedad Nombre del elem
 
       * **todo** : si todas las condiciones deben ser verdaderas para mostrar u ocultar el componente
       * **cualquiera** : si solo una o más condiciones deben ser verdaderas para mostrar u ocultar el componente
+
    * En la línea de condición (se presenta una como predeterminada), seleccione un componente, un operador y, a continuación, especifique un valor.
    * Añada más condiciones si es necesario haciendo clic en **Agregar condición**.
 
@@ -306,7 +304,6 @@ En JavaScript, las condiciones utilizan el valor de la propiedad Nombre del elem
    >* in **Previsualizar** en el entorno de creación (necesita volver a cargar la página la primera vez que se cambia a vista previa)
    >
    >* en el entorno de publicación
-
 
 #### Gestión de referencias de componentes rotos {#handling-broken-component-references}
 

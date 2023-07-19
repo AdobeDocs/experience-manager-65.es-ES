@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, Javascript, PNG y de GIF durante un máximo de un mes, hasta que caduquen. AEM Esto significa que no es necesario solicitarlas desde o desde el servidor web, pero pueden permanecer en la caché del explorador.
+   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, JavaScript, PNG y GIF durante un máximo de un mes, hasta que caduquen. AEM Esto significa que no es necesario solicitarlas desde o desde el servidor web, pero pueden permanecer en la caché del explorador.
 
    Otras secciones del sitio no deben almacenarse en caché en una instancia de autor, ya que están sujetas a cambios en cualquier momento.
 
@@ -75,7 +75,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, Javascript, PNG y de GIF durante un máximo de un día en las cachés de cliente. Aunque este ejemplo ilustra la configuración global de todo lo siguiente `/content` y `/etc/designs`, debe hacerlo más granular.
+   Esto permite que la caché intermedia (por ejemplo, la caché del explorador) almacene archivos CSS, JavaScript, PNG y GIF durante un máximo de un día en las cachés de cliente. Aunque este ejemplo ilustra la configuración global de todo lo siguiente `/content` y `/etc/designs`, debe hacerlo más granular.
 
    Dependiendo de la frecuencia con la que se actualice el sitio, también puede considerar el almacenamiento en caché de las páginas del HTML. Un período de tiempo razonable sería de 1 hora:
 

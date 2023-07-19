@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-Demand proporciona una plantilla de aplicación completamente configurada, una plantilla de artículo y componentes de artículo.
 
@@ -62,6 +62,7 @@ Una vez creada una aplicación con esta plantilla, puede agregar artículos, tit
 >El ***redirectTarget*** se calcula como parte de la operación crear aplicación e intenta resolver una ruta si hay una propiedad redirectTarget disponible como parte de la plantilla de aplicación y el valor de redirectTarget se define como relativo. Cuando el proceso Crear aplicación encuentra un valor relativo para redirectTarget en la plantilla de aplicación, el valor se anexa a la ubicación resuelta de donde se creó la aplicación.
 >
 >Por ejemplo, si una plantilla de aplicación define una ***redirectTarget*** con un valor de &quot;*language-masters/es*&quot;, y la aplicación se creó en &quot;*/content/mobileapps/fooApp*&quot;, el valor final para redirectTarget después de crear la aplicación será &quot;*/content/mobileapps/fooApp/language-masters/es*&quot;.
+>
 
 ## Creación de plantillas de contenido {#creating-content-templates}
 
@@ -124,6 +125,7 @@ AEM En el repositorio de código se incluye un componente simple, cuyo origen se
 >[!NOTE]
 >
 >Actualmente no hay componentes listos para usar proporcionados para AEM Mobile.
+>
 
 Puede añadir componentes a la página. Cualquier componente se puede utilizar en una aplicación de AEM Mobile, pero cuando se aplica, es posible que no se represente correctamente.
 

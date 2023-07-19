@@ -9,7 +9,7 @@ content-type: reference
 docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 3%
@@ -22,10 +22,10 @@ AEM El comercio electrónico genérico está disponible como parte de una instal
 
 Adobe ofrece dos versiones del complemento Commerce Integration Framework:
 
-|  | CIF local | CIF Cloud |
+|                         | CIF local | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versiones de AEM compatibles | AEM local o AMS 6.x | AEM AMS 6.4 y 6.5 |
-| Back-end | AEM -, Java <br> : Integración monolítica, asignación previa a la compilación (plantilla)<br> - Repositorio JCR | - ADOBE COMMERCE <br>- Java y Javascript <br>- No hay datos de comercio almacenados en el repositorio JCR |
+| Back-end | AEM -, Java <br> : Integración monolítica, asignación previa a la compilación (plantilla)<br> - Repositorio JCR | - ADOBE COMMERCE <br>- Java y JavaScript <br>- No hay datos de comercio almacenados en el repositorio JCR |
 | Front-end | AEM Páginas procesadas del lado del servidor de | Aplicación de página mixta (procesamiento híbrido) |
 | Catálogo de productos | AEM - Importador de productos, editor, almacenamiento en caché en la <br>AEM - Catálogos normales con páginas de proxy o de la red de distribución de contenido | - No hay importación de productos <br>- Plantillas genéricas <br>- Datos a petición mediante conector |
 | Escalabilidad | - Puede admitir hasta unos pocos millones de productos (depende del caso de uso) <br> - Almacenamiento en caché en Dispatcher | - Sin limitación de volumen <br>- Almacenamiento en caché en Dispatcher o CDN |

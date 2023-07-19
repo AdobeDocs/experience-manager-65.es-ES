@@ -10,10 +10,10 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 32%
+source-wordcount: '774'
+ht-degree: 33%
 
 ---
 
@@ -56,7 +56,7 @@ Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
 
       1. Abra el [carril de referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Todas las referencias se mostrarán.
 
-      1. Seleccionar **Lanzamientos** (por ejemplo, Lanzamientos (1)) para mostrar una lista de los lanzamientos específicos.
+      1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos (1)) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
 

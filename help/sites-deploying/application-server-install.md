@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Si se implementa, lo siguiente ocurre de forma predeterminada:
 * el modo de ejecución es `author`
 * la instancia (Repositorio, entorno Felix OSGI, paquetes, etc.) está instalada en `${user.dir}/crx-quickstart`donde `${user.dir}` es el directorio de trabajo actual, se llama a esta ruta de acceso a crx-quickstart `sling.home`
 
-* la raíz de contexto es el nombre del archivo war, por ejemplo : `aem-6`
+* la raíz de contexto es el nombre del archivo war, por ejemplo: `aem-6`
 
 #### Configuración {#configuration}
 
@@ -241,7 +241,7 @@ Antes de una implementación, lea la [Descripción general](#general-description
       * elimine los comentarios del parámetro inicial sling.home y establezca esta ruta como necesite
       * Reempaquetar archivo web.xml
 
-   * AEM Cambie el nombre del archivo de guerra a ROOT.war si desea implementarlo como aplicación web raíz, cambie el nombre a, por ejemplo, aemauthor.war si desea tener aemauthor como raíz de contexto
+   * AEM Cambie el nombre del archivo de guerra a RAÍZ.war si desea implementarlo como aplicación web raíz, cambie el nombre a por ejemplo, aemauthor.war si desea tener aemauthor como raíz de contexto
    * cópielo en la carpeta de aplicaciones web de tomcat
    * AEM esperar hasta que se instale el
 

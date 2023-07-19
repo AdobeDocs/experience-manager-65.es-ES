@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 3%
@@ -112,7 +112,6 @@ El **Herramientas de correo electrónico** para ExactTarget puede agregar más f
 >* Se requieren dos herramientas de correo electrónico: **Dirección física de envío (obligatoria)** y **Centro de perfiles (obligatorio)**. Cuando el correo electrónico se publica en ExactTarget, estas dos herramientas de correo electrónico se agregan al final de cada correo de forma predeterminada.
 >
 
-
 ### Agregar la herramienta Texto y personalización al correo electrónico {#adding-text-and-personalization-tool-to-your-e-mail}
 
 Puede añadir campos personalizados en un correo electrónico añadiendo la variable **Texto y personalización** a la página:
@@ -160,6 +159,7 @@ Los correos electrónicos/boletines se pueden publicar en el servicio de correo 
 >Si se publica un correo electrónico/newsletter con el mismo nombre que el de un correo electrónico/newsletter ya publicado, el correo electrónico/newsletter anterior no se reemplaza. En su lugar, se crea un nuevo correo electrónico/boletín con el mismo nombre (los ID de dos boletines son, sin embargo, diferentes).
 >
 >AEM Al publicar el correo electrónico/newsletter en el proveedor de servicios de correo electrónico, también se publica el correo electrónico/newsletter en la instancia de publicación de la.
+>
 
 ### Actualizar Un Correo Electrónico Publicado {#updating-a-published-e-mail}
 

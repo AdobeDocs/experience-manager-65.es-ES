@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1663'
 ht-degree: 59%
 
 ---
@@ -29,15 +29,14 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
 >* **Publicar o cancelar la publicación**
-   >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar o desactivar**
-   >  Estos términos son sinónimos de publicar y cancelar la publicación.
+>  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
-   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
+>  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 >
-
 
 >[!NOTE]
 >
@@ -47,7 +46,6 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >* Esta [el flujo de trabajo puede haberse personalizado](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) por parte de su equipo de desarrollo.
 >* Se mostrará brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
 >
-
 
 ## Publicar páginas {#publishing-pages-1}
 
@@ -270,14 +268,14 @@ Puede determinar el estado de publicación de una página:
 
 * En la [información general de recursos de la consola Sitios](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
+  ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 
-   El estado de publicación se indica en las vistas de [tarjeta](/help/sites-authoring/basic-handling.md#card-view), [columna](/help/sites-authoring/basic-handling.md#column-view) y [lista](/help/sites-authoring/basic-handling.md#list-view) de la consola Sitios.
+  El estado de publicación se indica en las vistas de [tarjeta](/help/sites-authoring/basic-handling.md#card-view), [columna](/help/sites-authoring/basic-handling.md#column-view) y [lista](/help/sites-authoring/basic-handling.md#list-view) de la consola Sitios.
 
 * En la [cronología](/help/sites-authoring/basic-handling.md#timeline)
 
-   ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
+  ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
 * En el [menú Información de página](/help/sites-authoring/author-environment-tools.md#page-information) cuando se edita una página.
 
-   ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
+  ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)

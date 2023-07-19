@@ -1,8 +1,8 @@
 ---
 title: Internacionalización de cadenas de IU
 seo-title: Internationalizing UI Strings
-description: Las API de Java y Javascript permiten internacionalizar cadenas
-seo-description: Java and Javascript APIs enable you to internationalize strings
+description: Las API de Java y JavaScript permiten internacionalizar cadenas
+seo-description: Java and JavaScript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Internacionalización de cadenas de IU {#internationalizing-ui-strings}
 
-Las API de Java y Javascript permiten internacionalizar cadenas en los siguientes tipos de recursos:
+Las API de Java y JavaScript permiten internacionalizar cadenas en los siguientes tipos de recursos:
 
 * Archivos de origen Java.
 * Scripts JSP.
-* JavaScript en bibliotecas del lado del cliente o en código fuente de página.
+* JavaScript en bibliotecas del lado del cliente o en origen de página.
 * Valores de propiedad del nodo JCR utilizados en cuadros de diálogo y propiedades de configuración de componentes.
 
 Para ver una descripción general del proceso de internacionalización y localización, consulte [Internacionalización de componentes](/help/sites-developing/i18n.md).
@@ -110,16 +110,16 @@ El `I18N` define una clase estática `get` que resulta útil cuando necesita loc
 
 * Utilice la preferencia de idioma del usuario: Proporcione SlingHttpRequest como el primer parámetro.
 
-   `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 * Utilice el idioma de la página: Proporcione el ResourceBundle como primer parámetro.
 
-   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
-### Internacionalizar cadenas en código JavaScript {#internationalizing-strings-in-javascript-code}
+### Internacionalización de cadenas en código JavaScript {#internationalizing-strings-in-javascript-code}
 
-La API de JavaScript permite localizar cadenas en el cliente. Al igual que con [Java y JSP](#internationalizing-strings-in-java-and-jsp-code) En cuanto a su código, la API de Javascript le permite identificar cadenas para localizar, proporcionar sugerencias de localización e incluir variables en las cadenas localizadas.
+La API de JavaScript permite localizar cadenas en el cliente. Al igual que con [Java y JSP](#internationalizing-strings-in-java-and-jsp-code) , la API de JavaScript permite identificar cadenas para localizar, proporcionar sugerencias de localización e incluir variables en las cadenas localizadas.
 
-El `granite.utils` [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md) proporciona la API de Javascript. Para utilizar la API, incluya esta carpeta de biblioteca de cliente en su página. Las funciones de localización utilizan `Granite.I18n` namespace.
+El `granite.utils` [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md) proporciona la API de JavaScript. Para utilizar la API, incluya esta carpeta de biblioteca de cliente en su página. Las funciones de localización utilizan `Granite.I18n` namespace.
 
 Antes de presentar cadenas localizadas, debe establecer la configuración regional utilizando `Granite.I18n.setLocale` función. La función requiere el código de idioma de la configuración regional como argumento:
 

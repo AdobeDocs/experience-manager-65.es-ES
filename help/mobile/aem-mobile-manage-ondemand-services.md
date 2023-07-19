@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Esta página explica la vista previa con la aplicación de comprobaciones.
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Las siguientes acciones se realizan en la aplicación en su conjunto.
 
@@ -46,6 +46,7 @@ Con la aplicación Mobile On Demand Preflight, puede ver todos los proyectos a l
 >[!NOTE]
 >
 >AEM La aplicación Preflight se utiliza para obtener una vista previa del contenido y examinar páginas. Para obtener información detallada sobre la aplicación de comprobaciones, haga clic en [aquí](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>
 
 ### Primeros pasos {#getting-ahead}
 

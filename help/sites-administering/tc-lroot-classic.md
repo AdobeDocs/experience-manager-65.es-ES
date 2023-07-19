@@ -12,9 +12,9 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ El siguiente procedimiento utiliza la IU clásica para crear una raíz de idioma
 
       * El código de idioma admitido es un código de dos letras en minúsculas tal como se define en la norma ISO-639-1
       * El código de país admitido es un código de dos letras en minúsculas o mayúsculas, tal como se define en la norma ISO 3166
+
    1. Seleccione la plantilla y haga clic en Crear.
 
    ![newpagefr](assets/newpagefr.png)

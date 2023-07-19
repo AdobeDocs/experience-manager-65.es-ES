@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '753'
+ht-degree: 2%
 
 ---
 
@@ -90,7 +90,7 @@ Adobe ofrece dos versiones del complemento Commerce Integration Framework:
   </tr>
   <tr>
    <td>Cuándo se usa</td>
-   <td>Casos de uso limitados: por ejemplo, en casos en los que sea necesario importar catálogos estáticos pequeños</td>
+   <td>Casos de uso limitados: por ejemplo, escenarios en los que puede ser necesario importar catálogos estáticos pequeños</td>
    <td>Solución preferida en la mayoría de los casos de uso</td>
   </tr>
  </tbody>

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Cada página tiene un conjunto de [propiedades](/help/sites-authoring/editing-pa
 
 El estado predeterminado de cada propiedad de página es:
 
-* oculto en la vista crear (p. ej., **Crear página** wizard)
+* oculto en la vista crear (por ejemplo, **Crear página** wizard)
 
-* disponible en la vista de edición (p. ej., **Ver propiedades**)
+* disponibles en la vista de edición (por ejemplo, **Ver propiedades**)
 
 Los campos deben configurarse específicamente si se requiere algún cambio. Esto se realiza mediante las propiedades de nodo adecuadas:
 
@@ -71,12 +71,15 @@ Por ejemplo, de forma predeterminada la variable [**Crear página** asistente](/
    >Como referencia, consulte:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
+   >
    Sin embargo, usted ***debe*** no cambie nada en el `/libs` ruta.
+   >
    Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+   >
    El método recomendado para la configuración y otros cambios es:
+   >
    1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
    1. Realice cualquier cambio en `/apps`
-
 
 1. Configure las variables `path` propiedad en `basic` para señalar a la anulación de la pestaña básica (consulte el paso siguiente también). Por ejemplo:
 
@@ -99,6 +102,7 @@ Por ejemplo, de forma predeterminada la variable [**Crear página** asistente](/
    El **Más títulos y descripciones** ya no se mostrará en la sección **Crear página** asistente.
 
 >[!NOTE]
+>
 Al configurar las propiedades de página para usarlas con Live Copies, consulte [Configurar los bloqueos MSM en las propiedades de página](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) para obtener más información.
 
 ## Configuración de muestra de las propiedades de página {#sample-configuration-of-page-properties}

@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 La administración de modelos implica la creación y administración de modelos con el fin de asociarlos con objetos de datos posibles. Cada modelo incluirá todas las propiedades y definiciones de campo necesarias para facilitar la creación y la renderización de objetos.
 
@@ -49,6 +49,7 @@ Los modelos se utilizan para determinar cómo se crean las entidades. AEM Define
 >[!NOTE]
 >
 >Existe un modelo fuera de una aplicación, ya que más de una aplicación puede utilizarlo.
+>
 
 Consulte **[Modelos](/help/mobile/administer-mobile-apps.md)** para crear y administrar modelos en el tablero y el repositorio.
 
@@ -65,6 +66,7 @@ Consulte **[Uso de entidades](/help/mobile/spaces-and-entities.md)** para crear 
 >[!NOTE]
 >
 >AEM Si el modelo no se corresponde con un contenido existente, como el cliente ha creado un nuevo modelo, entonces habrá una interfaz de usuario para que un cliente pueda crear una nueva entidad.
+>
 
 ### Espacios en el modelo de contenido {#spaces-in-content-model}
 

@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2482'
 ht-degree: 2%
 
 ---
@@ -53,11 +53,11 @@ Para obtener instrucciones detalladas paso a paso sobre cómo habilitar la sincr
 
 * **paquete vlt**
 
-   Es un archivo zip de todos los cambios realizados en un editor que deben distribuirse entre los editores. Los cambios en un editor generan eventos seleccionados por el oyente de eventos de cambio. Esto crea un paquete vlt que contiene todos los cambios.
+  Es un archivo zip de todos los cambios realizados en un editor que deben distribuirse entre los editores. Los cambios en un editor generan eventos seleccionados por el oyente de eventos de cambio. Esto crea un paquete vlt que contiene todos los cambios.
 
 * **paquete de distribución**
 
-   Contiene información de distribución de Sling. Esta es información sobre dónde debe distribuirse el contenido y cuándo se distribuyó por última vez.
+  Contiene información de distribución de Sling. Esta es información sobre dónde debe distribuirse el contenido y cuándo se distribuyó por última vez.
 
 ## ¿Qué sucede cuando...? {#what-happens-when}
 
@@ -79,7 +79,7 @@ Como parte del proceso, las nuevas páginas del sitio se replican en todas las i
 
 ### Los usuarios o grupos de usuarios se crean mediante la consola de seguridad {#users-or-user-groups-are-created-using-security-console}
 
-Por diseño, los datos de usuario creados en el entorno de publicación no aparecen en el entorno de creación y viceversa.
+Por diseño, los datos de usuario creados en el entorno de publicación no aparecen en el entorno de creación y a la inversa.
 
 Si la variable [Administración de usuarios y seguridad](/help/sites-administering/security.md) La consola de se utiliza para agregar nuevos usuarios en el entorno de publicación, la sincronización de usuarios sincronizará a los nuevos usuarios y su pertenencia a grupos con otras instancias de publicación, si es necesario. La sincronización de usuarios también sincronizará los grupos de usuarios creados mediante la consola de seguridad.
 
@@ -124,13 +124,14 @@ Para configurar los agentes de sincronización de Apache Sling:
 
    * Seleccione la configuración existente para abrirla y editarla (icono de lápiz).
 
-      Comprobar nombre: **socialpubsync.**
+     Comprobar nombre: **socialpubsync.**
 
    * Seleccione el **Habilitado** casilla de verificación
    * Seleccionar **Utilice Varias colas.**
    * Especificar **Extremos del exportador** y **Extremos del importador** (puede agregar más extremos de exportador e importador).
 
-      Estos extremos definen desde dónde desea obtener el contenido y dónde desea insertarlo. El autor recupera el contenido del extremo del exportador especificado y lo envía a los editores (que no sean el editor desde el que obtuvo el contenido).
+     Estos extremos definen desde dónde desea obtener el contenido y dónde desea insertarlo. El autor recupera el contenido del extremo del exportador especificado y lo envía a los editores (que no sean el editor desde el que obtuvo el contenido).
+
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
 ### Adobe Granite Distribution - Proveedor secreto de transporte con contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
@@ -216,7 +217,7 @@ Para modificar el intervalo de sondeo:
 
    * Seleccione la configuración existente para abrirla y editarla (icono de lápiz).
 
-      Verificar **socialpubsync -scheduled-déclencheur**
+     Verificar **socialpubsync -scheduled-déclencheur**
 
    * Establezca el intervalo en segundos con el intervalo deseado y guarde los cambios.
 

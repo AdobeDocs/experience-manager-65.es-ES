@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: f0acb130e1c68b927356c4e0ea625bbd88a6fc19
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2526'
 ht-degree: 5%
 
 ---
@@ -404,7 +404,7 @@ Cuando la topología es un [publicar conjunto de servidores](/help/sites-deployi
 
 ### Los usuarios o grupos de usuarios se crean mediante la consola de seguridad {#users-or-user-groups-are-created-using-security-console}
 
-Por diseño, los datos de usuario creados en el entorno de publicación no aparecen en el entorno de creación y viceversa.
+Por diseño, los datos de usuario creados en el entorno de publicación no aparecen en el entorno de creación y a la inversa.
 
 Si la variable [Administración de usuarios y seguridad](/help/sites-administering/security.md) La consola de se utiliza para agregar nuevos usuarios en el entorno de publicación, la sincronización de usuarios sincronizará a los nuevos usuarios y su pertenencia a grupos con otras instancias de publicación, si es necesario. La sincronización de usuarios también sincronizará los grupos de usuarios creados mediante la consola de seguridad.
 

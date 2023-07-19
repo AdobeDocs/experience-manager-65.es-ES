@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2393'
 ht-degree: 2%
 
 ---
@@ -192,7 +192,7 @@ AEM AEM Para desarrollar nuevos componentes para la creación de informes basado
 
    * `cq:dialog` - cuadro de diálogo para la IU táctil
    * `dialog` - Cuadro de diálogo para la IU clásica
-   * `cq:editConfig` - cómo se comportan los componentes en el entorno de edición (por ejemplo, arrastrar y soltar)
+   * `cq:editConfig` : cómo se comportan los componentes en el entorno de edición (por ejemplo, arrastrar y soltar)
    * `design_dialog` - cuadro de diálogo para el modo de diseño (solo IU clásica)
 
 1. Active el nuevo componente en el sistema de párrafos mediante:

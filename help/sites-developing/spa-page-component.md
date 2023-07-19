@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 9%
 
 ---
@@ -24,7 +24,7 @@ En un recurso, el componente de página no proporciona los elementos HTML SPA de
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 ## Introducción {#introduction}
 
@@ -32,7 +32,7 @@ SPA El componente de página de un recurso no proporciona los elementos HTML de 
 
 ## Administración de modelos de página {#page-model-management}
 
-La resolución y la administración del modelo de página se delegan a un [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) módulo. SPA El usuario debe interactuar con la variable `PageModelManager` Cuando se inicializa para recuperar el modelo de página inicial y registrarse para las actualizaciones de modelo, producido principalmente cuando el autor está editando la página a través del Editor de páginas. El `PageModelManager` SPA es accesible para el proyecto de como paquete npm. AEM SPA Siendo intérprete entre la y la, la `PageModelManager` SPA está pensado para acompañar a los.
+La resolución y la administración del modelo de página se delegan a un [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) módulo. SPA El usuario debe interactuar con la variable `PageModelManager` Cuando se inicializa para recuperar el modelo de página inicial y registrarse para las actualizaciones de modelo, producido principalmente cuando el autor está editando la página a través del Editor de páginas. El `PageModelManager` SPA es accesible para el proyecto de como paquete npm. AEM SPA Siendo intérprete entre la y la, la `PageModelManager` SPA está pensado para acompañar a los.
 
 Para permitir la creación de la página, una biblioteca de cliente denominada `cq.authoring.pagemodel.messaging` SPA debe añadirse para proporcionar un canal de comunicación entre el editor de páginas y el editor de páginas de la. SPA Si el componente de página de la página de la hereda del componente wcm/core de la página, existen las siguientes opciones para realizar la variable `cq.authoring.pagemodel.messaging` categoría de biblioteca de cliente disponible:
 

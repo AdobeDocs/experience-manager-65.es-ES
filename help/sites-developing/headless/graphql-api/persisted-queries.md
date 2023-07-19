@@ -1,11 +1,11 @@
 ---
 title: Consultas persistentes de GraphQL
-description: Aprenda a mantener las consultas de GraphQL en Adobe Experience Manager para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método de GET HTTP y la respuesta se puede almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de las aplicaciones cliente.
+description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método de GET HTTP y la respuesta se puede almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 91%
+source-wordcount: '1423'
+ht-degree: 90%
 
 ---
 
@@ -40,9 +40,9 @@ Por ejemplo, para crear una consulta persistente específica para la configuraci
 Por ejemplo, si hay una consulta en particular llamada `my-query`, que utiliza un modelo `my-model` desde la configuración de Sites `my-conf`:
 
 * Puede crear una consulta utilizando el punto de conexión `my-conf` específico, y luego la consulta se guardará de la siguiente manera:
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * Puede crear la misma consulta utilizando el punto de conexión `global`, pero la consulta se guardará de la siguiente manera:
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >

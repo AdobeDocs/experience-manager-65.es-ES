@@ -2,10 +2,10 @@
 title: Traducir contenido
 description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2174'
-ht-degree: 95%
+source-wordcount: '2173'
+ht-degree: 94%
 
 ---
 
@@ -93,7 +93,7 @@ Para los gestores de proyectos de traducción, a menudo es necesario seleccionar
 
    ![Pestaña Básico del proyecto](assets/project-basic-tab.png)
 
-1. En la pestaña **Avanzadas**, utilice el desplegable **Idioma de destinatario** para seleccionar los idiomas a los que se debe traducir el contenido. Haga clic o pulse en **Crear**.
+1. En el **Avanzadas** , utilice la pestaña **Idioma de destino** para seleccionar los idiomas a los que se debe traducir el contenido. Haga clic o pulse en **Crear**.
 
    ![Pestaña Avanzadas del proyecto](assets/project-advanced-tab.png)
 

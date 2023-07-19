@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '547'
 ht-degree: 12%
 
 ---
@@ -26,11 +26,11 @@ SPA SPA AEM La función de creación de ofrece una solución completa para la as
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 ## Introducción {#introduction}
 
-AEM SPA SPA SPA AEM Gracias al contrato sencillo y ligero que requiere la aplicación y que se establece entre el Editor de Javascript y el Editor de Javascript, la adopción de una aplicación JavaScript existente y su adaptación para su uso con una aplicación de Javascript en el Editor de Javascript es un asunto sencillo y directo.
+AEM SPA SPA SPA AEM Gracias al contrato sencillo y ligero que requiere la aplicación y que se establece entre el Editor de la y el Editor de la, tomar una aplicación JavaScript existente y adaptarla para usarla con un en la es una cuestión sencilla.
 
 SPA Este artículo ilustra el ejemplo del componente meteorológico en la muestra de We.Retail Journal.
 

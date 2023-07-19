@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2525'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ AEM Se pueden incluir las siguientes funciones predeterminadas adicionales, en f
 
 **Administrador de salida:** Puede ver y modificar la configuración desde la página Salida en la consola de administración
 
-**Administrador de PDFG:** Puede ver y modificar la configuración desde la página Generador de PDF en la consola de administración
+**Administrador de PDFG:** Puede ver y modificar la configuración desde la página PDF Generator en la consola de administración
 
 **Usuario de PDFG:** Puede acceder a todas las funciones no administrativas de PDF Generator
 
@@ -140,7 +140,7 @@ AEM Se pueden incluir las siguientes funciones predeterminadas adicionales, en f
 
 ## Eliminar un rol {#delete-a-role}
 
-AEM Puede eliminar cualquiera de las funciones que ha creado, pero no las funciones predeterminadas de los formularios de la aplicación de forma de formulario que se incluyen en el producto.
+AEM Puede eliminar cualquiera de las funciones que ha creado, pero no las funciones predeterminadas de los formularios de la aplicación que se incluyen en el producto.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de funciones y, a continuación, haga clic en Nombre de la función.
 
@@ -291,7 +291,7 @@ Puede cambiar los permisos de cualquiera de las funciones que ha creado. AEM No 
 
 **Conjunto de directivas de Rights Management Agregar coordinador:** Agregar, quitar y cambiar permisos para coordinadores de conjuntos de directivas
 
-**Conjunto de directivas de Rights Management Crear directiva:** Crear una nueva directiva para un conjunto de directivas
+**Conjunto de directivas de Rights Management Crear directiva:** Crear una directiva nueva para un conjunto de directivas
 
 **Directiva de Rights Management Establecer directiva de eliminación:** Quitar una directiva de un conjunto de directivas
 

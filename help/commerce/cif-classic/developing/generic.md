@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ AEM AEM El marco de comercio electrónico se puede utilizar con cualquier soluci
 
       * Si se encuentra, el valor se utiliza para filtrar la búsqueda del servicio de comercio.
       * Si no se encuentra, se utiliza el servicio de comercio de mayor clasificación.
-   * A `cq:Commerce` mixin se usa para que el `cq:commerceProvider` se puede agregar a recursos con establecimiento inflexible de tipos.
 
+   * A `cq:Commerce` mixin se usa para que el `cq:commerceProvider` se puede agregar a recursos con establecimiento inflexible de tipos.
 
 * El `cq:commerceProvider` también se utiliza para hacer referencia a la definición de commerce factory adecuada.
 
@@ -97,11 +97,11 @@ El **CommerceSession**:
    * realiza operaciones add/remove/etc.
    * realiza los distintos cálculos en el carro de compras;
 
-      `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
+     `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
 * Posee persistencia de **pedido** datos:
 
-   `CommerceSession.getUserContext()`
+  `CommerceSession.getUserContext()`
 
 * Puede recuperar o actualizar los detalles de envío utilizando `updateOrder(Map<String, Object> delta)`
 * También posee el **pago** conexión de procesamiento
@@ -129,7 +129,6 @@ Cualquier recurso de producto puede representarse mediante una `Product API`. La
 >
 >1. `size`
 >1. más uno más
-
 >
 >   Esta variante adicional se selecciona mediante la variable `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
 
@@ -197,7 +196,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -249,11 +248,11 @@ public class AxisFilter implements VariantFilter {
          * Las referencias de producto contienen un `productData` , que apunta a los datos del producto (normalmente en `/etc/commerce/products`).
          * Los datos del producto son jerárquicos; los atributos del producto se heredan de los antecesores de un nodo de datos del producto.
          * Las referencias de producto también pueden contener propiedades locales, que anulan las especificadas en sus datos de producto.
+
       * Un producto en sí:
 
          * Sin un `productData` propiedad.
          * Un nodo de producto que contiene todas las propiedades localmente (y no contiene una propiedad productData) hereda directamente los atributos de producto de sus propios antecesores.
-
 
 * **AEM Estructura de producto genérica de**
 
@@ -321,11 +320,11 @@ public class AxisFilter implements VariantFilter {
       * Descuentos por cantidad.
       * Diferentes monedas.
       * Deudor de IVA y exento de IVA.
+
    * Los modificadores son completamente abiertos con la siguiente interfaz:
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
-
 
 **Almacenamiento**
 
@@ -432,36 +431,37 @@ El punto de entrada para la API de búsqueda es `CommerceService#search` método
 
    * Un cupón es un componente basado en páginas que se crea/edita con la consola Sitios web y se almacena en:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Suministro de cupones:
 
       * Un código de cupón (que el comprador debe escribir en el carro de compras).
       * Una etiqueta de cupón (que se mostrará después de que el comprador la haya introducido en el carro de compras).
       * Una ruta de promoción (que define la acción que aplica el cupón).
+
    * Los cupones no tienen sus propias fechas u horas de activación y desactivación, sino que utilizan las de sus campañas principales.
    * Los motores de comercio externo también pueden proporcionar cupones, que requieren un mínimo de:
 
       * Un código de cupón
       * Un `isValid()` método
+
    * El **Cupón** componente ( `/libs/commerce/components/voucher`) proporciona:
 
       * Un procesador para la administración de cupones; muestra todos los cupones que hay actualmente en el carro de compras.
       * Los cuadros de diálogo de edición (formulario) para administrar (añadir/eliminar) los cupones.
       * Las acciones necesarias para agregar o eliminar cupones en el carro de compras.
 
-
-
 * Promociones:
 
    * Una promoción es un componente basado en páginas que se crea/edita con la consola Sitios web y se almacena en:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Oferta de promociones:
 
       * Una prioridad
       * Una ruta del controlador de promoción
+
    * Puede conectar las promociones a una campaña para definir su fecha/hora de activación/desactivación.
    * Puede conectar las promociones a una experiencia para definir sus segmentos.
    * Las promociones que no estén conectadas a una experiencia no se activarán por sí solas, sino que se podrán activar mediante un cupón.
@@ -469,17 +469,16 @@ El punto de entrada para la API de búsqueda es `CommerceService#search` método
 
       * procesadores y cuadros de diálogo para la administración de promociones
       * subcomponentes para procesar y editar parámetros de configuración específicos de los controladores de promoción
+
    * Se proporcionan dos controladores de promoción predeterminados:
 
       * `DiscountPromotionHandler`, que aplica un descuento absoluto o porcentual a todo el carro de compras
       * `PerfectPartnerPromotionHandler`, que aplica un descuento absoluto o porcentual del producto si el producto del socio también está en el carro de compras
+
    * El ClientContext `SegmentMgr` resuelve los segmentos y el ClientContext `CartMgr` resuelve las promociones. Se activará cada promoción sujeta al menos a un segmento resuelto.
 
       * AJAX Las promociones activadas se envían de vuelta al servidor a través de una llamada de para volver a calcular el carro de compras.
       * Las promociones activadas (y los cupones añadidos) también se muestran en el panel ClientContext.
-
-
-
 
 La adición o eliminación de un cupón de un carro de compras se realiza mediante las `CommerceSession` API:
 
@@ -522,7 +521,7 @@ El `AbstractJcrCommerceSession` siempre que pueda aplicar cupones. Los cupones d
 
 * `jcr:title` (Cadena): para la descripción del cupón
 * `code` (Cadena): el código que el usuario debe introducir para aplicar este cupón
-* `promotion` (Cadena): la promoción que se va a aplicar; por ejemplo,. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (Cadena): la promoción que se va a aplicar; por ejemplo, `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Los controladores de promociones son servicios OSGi que modifican el carro de compras. El carro de compras admitirá varios enlaces que se definirán en la `PromotionHandler` interfaz.
 

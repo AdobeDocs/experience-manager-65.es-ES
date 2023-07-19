@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 El **Administrar aplicación** El mosaico y la página &quot;Administrar aplicación&quot; proporcionan un medio para ver y editar los metadatos de la aplicación. Los metadatos de la aplicación son detalles necesarios para lanzar una aplicación en la tienda de un proveedor. Esto puede incluir metadatos comunes, metadatos de iOS y capturas de pantalla. Consulte la [Administrar mosaico de aplicación](/help/mobile/phonegap-app-details-tile.md) para obtener más información sobre metadatos comunes y de iOS.
 

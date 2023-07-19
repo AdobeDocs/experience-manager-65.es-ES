@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
@@ -27,14 +27,14 @@ AEM proporciona varios mecanismos para permitirle personalizar la funcionalidad 
 
 * Clientlibs
 
-   Clientlibs le permite ampliar la implementación predeterminada para obtener nuevas funcionalidades, mientras reutiliza las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.` La nueva clientlib debe:
+  Clientlibs le permite ampliar la implementación predeterminada para obtener nuevas funcionalidades, mientras reutiliza las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.` La nueva clientlib debe:
 
    * dependen de la clientlib de creación `cq.authoring.editor.sites.page`
    * formar parte de la `cq.authoring.editor.sites.page.hook` categoría
 
 * Superposiciones
 
-   Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no es necesaria una copia 1:1 del original, ya que la variable [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
+  Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no es necesaria una copia 1:1 del original, ya que la variable [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
 
 >[!NOTE]
 >
@@ -53,7 +53,6 @@ AEM Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creaci
 >
 
 
-
 >[!CAUTION]
 >
 >Usted ***debe*** no cambie nada en el `/libs` ruta.
@@ -64,7 +63,6 @@ AEM Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creaci
 >
 >1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
 >1. Realice cualquier cambio en `/apps`
-
 
 ## Añadir nueva capa (modo) {#add-new-layer-mode}
 
@@ -108,7 +106,7 @@ Puede encontrar el código de esta página en GitHub
 
 ## Filtrado de recursos {#filtering-resources}
 
-Al crear páginas, el usuario debe seleccionar a menudo entre recursos (p. ej. páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
+Al crear páginas, el usuario debe seleccionar a menudo entre recursos (por ejemplo, páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
 
 Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Por ejemplo, si la variable [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) se utiliza para permitir al usuario seleccionar la ruta a un recurso concreto, las rutas presentadas se pueden filtrar de la siguiente manera:
 
@@ -152,14 +150,14 @@ En una instalación estándar de AEM:
 
    * `cq:inplaceEditing`
 
-      por ejemplo:
+     por ejemplo:
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
 
          * propiedad: `editorType`
 
-            Define el tipo de editor en línea que se utilizará cuando se active la edición in situ para ese componente; p. ej., `text`, `textimage`, `image`, `title`.
+           Define el tipo de editor en línea que se utilizará cuando se active la edición in situ para ese componente; por ejemplo, `text`, `textimage`, `image`, `title`.
 
 1. Se pueden configurar detalles de configuración adicionales del editor mediante una `config` nodo que contiene configuraciones, así como un `plugin` para contener los detalles de configuración del complemento necesarios.
 
@@ -260,4 +258,4 @@ Para tener un comportamiento personalizado tras dicha activación, puede superpo
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Actualice el [modelo de flujo de trabajo](/help/sites-developing/workflows-models.md) y configuraciones/scripts relacionados según sea necesario.
-1. Retire el derecho a la [ `replicate` acción](/help/sites-administering/security.md#actions) de todos los usuarios adecuados para todas las páginas relevantes; para que este flujo de trabajo se active como una acción predeterminada cuando cualquiera de los usuarios intente publicar (o replicar) una página.
+1. Retire el derecho a la [`replicate` acción](/help/sites-administering/security.md#actions) de todos los usuarios adecuados para todas las páginas relevantes; para que este flujo de trabajo se active como una acción predeterminada cuando cualquiera de los usuarios intente publicar (o replicar) una página.

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '356'
 ht-degree: 21%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 AEM Los artículos, titulares y colecciones se representan como cq:Pages en la sección de artículos de la página de la página de la página de.
 
@@ -50,9 +50,9 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 | dps-shortAbstract | Cadena |  |
 | dps-department | Cadena |  |
 | dps-category | Cadena |  |
-| dps-keywords | Cadena[] |  |
-| dps-internalKeywords | Cadena[] |  |
-| dps-important | Cadena[] | Importancia desde {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-keywords | String[] |  |
+| dps-internalKeywords | String[] |  |
+| dps-important | String[] | Importancia desde {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artículos {#articles}
 
@@ -71,7 +71,7 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | **Nombre de propiedad** | **Tipo** | **Valores predeterminados o valores esperados** |
 |---|---|---|
-| dps-tapAction |  | Pulse Acción desde {webLink} |
+| dps-tapAction |  | Tocar acción desde {webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Colecciones {#collections}

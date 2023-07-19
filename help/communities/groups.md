@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
@@ -60,15 +60,15 @@ Para acceder a la consola de grupos:
    * La estructura del sitio de la comunidad debe incluir una función de grupos.
    * Estas capturas de pantalla son del tutorial Introducción después de [creación de grupos al publicar](/help/communities/published-site.md).
 
-   ![create-group](assets/create-group.png)
+  ![create-group](assets/create-group.png)
 
 * Seleccione el **Carpeta de grupos** para abrirlo.
 
-   Cuando se abren, se muestran todos los grupos existentes, independientemente de si se crearon en el autor o en la publicación.
+  Cuando se abren, se muestran todos los grupos existentes, independientemente de si se crearon en el autor o en la publicación.
 
-   Desde esta consola de grupos, es posible crear nuevos grupos.
+  Desde esta consola de grupos, es posible crear nuevos grupos.
 
-   ![create-new-group](assets/create-new-group.png)
+  ![create-new-group](assets/create-new-group.png)
 
 * Seleccione el **Crear grupo** botón.
 
@@ -78,34 +78,34 @@ Para acceder a la consola de grupos:
 
 * **Título del grupo de la comunidad**
 
-   Título para mostrar del grupo.
+  Título para mostrar del grupo.
 El título aparece en el sitio publicado para el grupo.
 
 * **Descripción del grupo de la comunidad**
 
-   Una descripción del grupo.
+  Una descripción del grupo.
 
 * **Raíz de grupo de la comunidad**
 
-   Ruta de acceso raíz del grupo.
+  Ruta de acceso raíz del grupo.
 La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cualquier ubicación del sitio web. No se recomienda cambiarlo.
 
 * **Idiomas de grupo de la comunidad adicionales disponibles** menú
 
-   Utilice la lista desplegable para seleccionar los idiomas de grupo de la comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de la comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los sitios de la comunidad correspondientes.
+  Utilice la lista desplegable para seleccionar los idiomas de grupo de la comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de la comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los sitios de la comunidad correspondientes.
 
 * **Nombre del grupo de la comunidad**
 
-   Nombre de la página raíz del grupo que aparece en la dirección URL. Evite utilizar caracteres de subrayado (_) y palabras clave como recursos y configuración en el nombre del grupo.
+  Nombre de la página raíz del grupo que aparece en la dirección URL. Evite utilizar caracteres de subrayado (_) y palabras clave como recursos y configuración en el nombre del grupo.
 
    * Compruebe el nombre, ya que no se cambia fácilmente después de crear el grupo.
    * La dirección URL base se muestra debajo de `Community Group Name`.
    * Para una URL válida, añada &quot;.html&quot;
-      *por ejemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+     *por ejemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Plantilla de grupo de comunidad** menú
 
-   Utilice la lista desplegable para elegir un disponible [plantilla de grupo de comunidad](/help/communities/tools.md).
+  Utilice la lista desplegable para elegir un disponible [plantilla de grupo de comunidad](/help/communities/tools.md).
 
 ### Paso 2: Diseño {#step-design}
 
@@ -166,17 +166,17 @@ La configuración de pertenencia permite seleccionar una de las tres formas de p
 
 * **Suscripción opcional**
 
-   Si se selecciona, el grupo de comunidad es un grupo público. Los miembros del sitio pueden participar en el grupo y publicar sin unirse explícitamente al grupo. La opción predeterminada está seleccionada.
+  Si se selecciona, el grupo de comunidad es un grupo público. Los miembros del sitio pueden participar en el grupo y publicar sin unirse explícitamente al grupo. La opción predeterminada está seleccionada.
 
 * **Suscripción requerida**
 
-   Si se selecciona, el grupo de comunidad es un grupo abierto. Los miembros del sitio de la comunidad pueden ver el contenido del grupo, pero deben unirse al grupo para publicar contenido. Para unirse a los miembros, seleccione `Join` en el entorno de publicación. No se ha seleccionado la opción predeterminada.
+  Si se selecciona, el grupo de comunidad es un grupo abierto. Los miembros del sitio de la comunidad pueden ver el contenido del grupo, pero deben unirse al grupo para publicar contenido. Para unirse a los miembros, seleccione `Join` en el entorno de publicación. No se ha seleccionado la opción predeterminada.
 
 * **Suscripción restringida**
 
-   Si se selecciona, el grupo de comunidad es un grupo secreto. Se debe invitar explícitamente a los miembros de la comunidad. Los miembros invitados se introducen en el cuadro de búsqueda. Los miembros se pueden agregar más adelante mediante la variable [Consolas de miembros y grupos](/help/communities/members.md) el entorno de creación. No se ha seleccionado la opción predeterminada.
+  Si se selecciona, el grupo de comunidad es un grupo secreto. Se debe invitar explícitamente a los miembros de la comunidad. Los miembros invitados se introducen en el cuadro de búsqueda. Los miembros se pueden agregar más adelante mediante la variable [Consolas de miembros y grupos](/help/communities/members.md) el entorno de creación. No se ha seleccionado la opción predeterminada.
 
-**THUMBNAIL**
+**MINIATURA**
 
 ![community-group-thumbnail](assets/community-group-thumbnail.png)
 

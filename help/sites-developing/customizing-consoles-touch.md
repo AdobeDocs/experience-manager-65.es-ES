@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,6 @@ AEM Se pueden utilizar de muchas maneras para ampliar las consolas de la. Una pe
 >
 
 
-
 >[!CAUTION]
 >
 >Usted ***debe*** no cambie nada en el `/libs` ruta.
@@ -54,9 +53,7 @@ AEM Se pueden utilizar de muchas maneras para ampliar las consolas de la. Una pe
 >1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
 >
 >1. Realice cualquier cambio en `/apps`
-
 >
-
 
 Por ejemplo, la siguiente ubicación dentro de `/libs` La estructura se puede superponer:
 
@@ -142,17 +139,18 @@ Para personalizar las columnas en la vista de lista:
 
    * En el nodo:
 
-      ```
-             /apps/wcm/core/content/common/availablecolumns
-      ```
+     ```
+            /apps/wcm/core/content/common/availablecolumns
+     ```
 
    * Añada las columnas nuevas o elimine las existentes.
+
    Consulte [Uso de superposiciones (y la fusión de recursos de Sling)](/help/sites-developing/overlays.md) para obtener más información.
 
 1. Opcionalmente:
 
    * Si desea conectar datos adicionales, debe escribir un [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-      `pageInfoProviderType` propiedad.
+     `pageInfoProviderType` propiedad.
 
    Por ejemplo, consulte la clase/paquete adjunto (de GitHub) a continuación.
 
@@ -160,6 +158,6 @@ Para personalizar las columnas en la vista de lista:
 
 ### Filtrado de recursos {#filtering-resources}
 
-Al utilizar una consola, un caso de uso común es cuando el usuario debe seleccionar entre recursos (p. ej. páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
+Al utilizar una consola, un caso de uso común es cuando el usuario debe seleccionar entre recursos (por ejemplo, páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
 
 Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Consulte [este artículo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obtener más información.

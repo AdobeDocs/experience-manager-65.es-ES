@@ -10,16 +10,16 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '839'
 ht-degree: 3%
 
 ---
 
 # Tableros{#dashboards}
 
-AEM Al utilizar la aplicación, puede administrar una gran cantidad de contenido de diferentes tipos (p. ej., páginas o recursos). AEM Los paneles de DTM ofrecen una forma fácil de usar y personalizable de definir páginas que muestren datos consolidados.
+AEM Al utilizar la opción, puede administrar una gran cantidad de contenido de diferentes tipos (por ejemplo, páginas o recursos). AEM Los paneles de DTM ofrecen una forma fácil de usar y personalizable de definir páginas que muestren datos consolidados.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Para crear un nuevo panel, siga estos pasos:
 1. En el **Herramientas** , haga clic en **Consola de configuración**.
 1. En el árbol, haga doble clic **Tablero**.
 1. Clic **Nuevo panel**.
-1. Escriba el **Título** (p. ej., Mi panel) y el **Nombre**.
+1. Escriba el **Título** (por ejemplo, Mi tablero) y **Nombre**.
 1. Haga clic en **Crear**.
 
 ### Clonación De Un Tablero {#cloning-a-dashboard}
@@ -73,7 +73,7 @@ Los componentes del panel no son más que normales [AEM componentes de](/help/si
 
 ### Componentes de informes de análisis web {#web-analytics-reporting-components}
 
-AEM se envía con un conjunto de componentes que procesan varias métricas de su [SiteCatalyst](/help/sites-administering/adobeanalytics.md) datos. Estos componentes se enumeran en la barra de tareas debajo de **Tablero** sección.
+AEM se envía con un conjunto de componentes que procesan varias métricas de su [SiteCatalyst](/help/sites-administering/adobeanalytics.md) datos. Estos componentes se enumeran en el Sidekick en la **Tablero** sección.
 
 Cada componente del sistema de informes proporciona al menos tres pestañas:
 

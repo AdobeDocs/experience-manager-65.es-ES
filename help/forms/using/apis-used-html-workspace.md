@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Las siguientes API se utilizan en AEM Forms Workspace.
 <table>
  <tbody>
   <tr>
-   <td><strong>Método Javascript</strong></td>
+   <td><strong>Método JavaScript</strong></td>
    <td><strong>Nombre del servicio</strong></td>
    <td><strong>Nombre de la API</strong></td>
    <td><strong>Comentarios</strong></td>
@@ -308,7 +308,7 @@ Las siguientes API se utilizan en AEM Forms Workspace.
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>Obtiene todas las asignaciones para una tarea. Por ejemplo: si el usuario reenvía o consulta una tarea con otro usuario, entonces es una asignación para una tarea.</td>
+   <td>Obtiene todas las asignaciones para una tarea. Por ejemplo: :- Si el usuario reenvía o consulta una tarea con otro usuario, entonces es una asignación para una tarea.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>

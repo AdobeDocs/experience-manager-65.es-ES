@@ -11,9 +11,9 @@ topic-tags: spa
 discoiquuid: 6c320633-ce0b-4eb1-bb54-05e1a514d139
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Platform Launch es la forma recomendada de implementar Analytic
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 ## Tutorial {#tutorial}
 
@@ -34,4 +34,4 @@ SPA Para comprender cómo integrar su con Adobe Experience Platform Launch, cons
 >
 >La base de conocimientos a la que se hace referencia se creó para habilitar la integración de Adobe Experience Platform Launch SPA AEM SPA con los que no aprovechan el Editor de la. Estos métodos también deben permitir que la integración de Adobe Experience Platform Launch SPA SPA coexista con los creados para utilizar el Editor de.
 >
->SPA No se ha explorado completamente el uso de Redux junto con las bibliotecas de Javascript de la aplicación de la aplicación de la. SPA La compatibilidad con Redux está prevista en una versión futura del Editor de la.
+>SPA No se ha explorado completamente el uso de Redux junto con las bibliotecas de JavaScript. SPA La compatibilidad con Redux está prevista en una versión futura del Editor de la.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ Para definir una asignación de dominio para **Externalizador** servicio:
 
       * utilice https para aplicar vínculos https si lo desea
       * se utiliza si el código de cliente no anula el esquema al solicitar la externalización de una dirección URL.
+
    * **server** es el nombre de host (puede ser un nombre de dominio o una dirección ip).
    * **puerto** (opcional) es el número de puerto.
    * **contextpath** AEM (opcional) solo se establece si se instala la aplicación web como una aplicación web en una ruta de contexto diferente.
@@ -100,7 +101,6 @@ En esta sección se muestran algunos ejemplos de cómo se puede usar la función
 
    * `https://www.website.com/contextpath/my/page.html`
 
-
 1. **Para externalizar una ruta con el dominio &quot;author&quot;:**
 
    ```java
@@ -115,7 +115,6 @@ En esta sección se muestran algunos ejemplos de cómo se puede usar la función
 
    * `https://author.website.com/contextpath/my/page.html`
 
-
 1. **Para externalizar una ruta con el dominio &quot;local&quot;:**
 
    ```java
@@ -129,6 +128,5 @@ En esta sección se muestran algunos ejemplos de cómo se puede usar la función
    `myExternalizedUrl` termina con el valor:
 
    * `https://publish-3.internal/contextpath/my/page.html`
-
 
 1. Puede encontrar más ejemplos en la [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).

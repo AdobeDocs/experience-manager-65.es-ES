@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 16%
+source-wordcount: '1870'
+ht-degree: 15%
 
 ---
 
@@ -24,7 +24,6 @@ Para crear una copia de idioma, almacene en déclencheur uno de los siguientes f
 >
 >* Los usuarios que crean proyectos de traducción son miembros del grupo `projects-administrators`.
 >* El proveedor de servicios de traducción admite la traducción de binarios.
-
 
 ## Crear y traducir flujo de trabajo {#create-and-translate-workflow}
 
@@ -67,7 +66,7 @@ Si utiliza esta opción, los recursos que desea traducir se copian en la raíz d
 
 1. Clic **[!UICONTROL Crear y traducir]** en la parte inferior.
 
-1. En la lista **[!UICONTROL Idiomas de destino]**, seleccione los idiomas para los que desea crear una estructura de carpetas.
+1. Desde el **[!UICONTROL Idiomas de destino]** , seleccione los idiomas para los que desea crear una estructura de carpetas.
 
 1. Desde el **[!UICONTROL Proyecto]** , seleccione **[!UICONTROL Creación de un nuevo proyecto de traducción]**.
 
@@ -118,7 +117,7 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 1. Clic **[!UICONTROL Copias de idioma]** bajo **[!UICONTROL Copias]**. Se muestra una lista de las traducciones disponibles.
 1. Clic **[!UICONTROL Crear y traducir]** en la parte inferior.
 
-1. En la lista **[!UICONTROL Idiomas de destino]**, seleccione los idiomas para los que desea crear una estructura de carpetas.
+1. Desde el **[!UICONTROL Idiomas de destino]** , seleccione los idiomas para los que desea crear una estructura de carpetas.
 
 1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Agregar a proyecto de traducción]** existente para ejecutar el flujo de trabajo de traducción en la carpeta.
 
@@ -235,7 +234,7 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
 
 ## Creación de copias de idioma temporales {#creating-temporary-language-copies}
 
-Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia de idioma con versiones editadas de los recursos originales, la copia de idioma existente se conserva hasta que se aprueban los recursos traducidos. [!DNL Adobe Experience Manager Assets] almacena los recursos recién traducidos en una ubicación temporal y actualiza la copia de idioma existente después de aprobar explícitamente los recursos. Si rechaza los recursos, la copia de idioma no cambiará.
+Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia de idioma con versiones editadas de los recursos originales, la copia de idioma existente se conserva hasta que se aprueban los recursos traducidos. [!DNL Adobe Experience Manager Assets] almacena los recursos recién traducidos en una ubicación temporal y actualiza la copia de idioma existente después de aprobar explícitamente los recursos. Si rechaza los recursos, la copia de idioma no se cambiará.
 
 1. Haga clic en la carpeta raíz de origen en **[!UICONTROL Copias de idioma]** para el que ya ha creado una copia de idioma y, a continuación, haga clic en **[!UICONTROL Mostrar en Assets]** para abrir la carpeta en [!DNL Experience Manager Assets].
 

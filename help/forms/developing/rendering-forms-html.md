@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '4150'
 ht-degree: 1%
@@ -94,6 +94,7 @@ Al procesar formularios de HTML que contienen funcionalidad de navegación de p�
 Los scripts de formulario ubicados en el evento form:ready se ejecutan solo una vez durante la representación inicial del formulario y no se ejecutan para las recuperaciones de páginas posteriores. Por el contrario, el evento form: calculate se ejecuta para cada navegación de página en la que se procesa el formulario.
 
 >[!NOTE]
+>
 En un formulario de varias páginas, los cambios realizados por JavaScript en una página no se conservan si se mueve a una página diferente.
 
 Puede invocar scripts personalizados antes de enviar un formulario. Esta función funciona en todos los navegadores disponibles. Sin embargo, solo se puede utilizar cuando los usuarios procesan el formulario de HTML que tiene su `Output Type` propiedad establecida en `Form Body`. No funcionará cuando la variable `Output Type` es `Full HTML`. Consulte Configuración de formularios en la ayuda de administración para ver los pasos necesarios para configurar esta función.
@@ -167,6 +168,7 @@ La siguiente secuencia de comandos mantiene el `fillColor` de un campo basado en
 ```
 
 >[!NOTE]
+>
 Los objetos estáticos no se muestran en un formulario de HTML procesado cuando están anidados dentro de una celda de tabla. Por ejemplo, un círculo y un rectángulo anidados dentro de una celda de tabla no se muestran dentro de un formulario de HTML de procesamiento. Sin embargo, estos mismos objetos estáticos se muestran correctamente cuando se encuentran fuera de la tabla.
 
 ## Firma digital de formularios de HTML {#digitally-signing-html-forms}
@@ -189,6 +191,7 @@ Puede procesar un formulario de HTML completo que cumpla con las directrices de 
 Se recomienda limitar el uso de reglas de validación para los campos de formulario al procesar el formulario como un formulario de HTML. Es posible que algunas reglas de validación no sean compatibles con los formularios de HTML. Por ejemplo, cuando se aplica un patrón de validación de DD-MM-AAAA a una `Date/Time` que se encuentra en un diseño de formulario que se representa como un formulario de HTML, no funciona correctamente, aunque la fecha se escriba correctamente. Sin embargo, este patrón de validación funciona correctamente para formularios procesados como PDF.
 
 >[!NOTE]
+>
 Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
@@ -224,9 +227,11 @@ Al procesar un formulario como HTML, puede especificar un valor de usuario-agent
 Las direcciones URL HTTP donde se publican los datos del formulario se pueden especificar estableciendo la dirección URL de destino mediante la API del cliente de servicio de Forms o en el botón Enviar incluido en el diseño de formulario XDP. Si la dirección URL de destino se especifica en el diseño de formulario, no establezca ningún valor mediante la API de cliente de servicio de Forms.
 
 >[!NOTE]
+>
 La representación de un formulario de HTML con una barra de herramientas es opcional.
 
 >[!NOTE]
+>
 Si procesa un formulario AHTML, se recomienda no agregar una barra de herramientas al formulario.
 
 **Procesar un formulario de HTML**
@@ -278,6 +283,7 @@ Procesar un formulario de HTML mediante la API de Forms (Java):
    * Para procesar el formulario de HTML con las etiquetas de HTML completas, invoque el `HTMLRenderSpec` del objeto `setOutputType` método y pase `OutputType.FullHTMLTags`. (Es una configuración opcional).
 
    >[!NOTE]
+   >
    Forms no se representan correctamente en HTML cuando el `StandAlone` La opción es `true` y el `ApplicationWebRoot` hace referencia a un servidor que no es el servidor de aplicaciones J2EE que aloja AEM Forms (el `ApplicationWebRoot` El valor se especifica utilizando `URLSpec` objeto que se pasa al `FormsServiceClient` del objeto `(Deprecated) renderHTMLForm` método). Si la variable `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI raíz de la web en la consola de administración debe establecerse como el valor del URI de la aplicación web del formulario. Esto se puede hacer iniciando sesión en la consola de administración, haciendo clic en Servicios > Forms y estableciendo el URI de la raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
 
 1. Procesar un formulario de HTML
@@ -335,6 +341,7 @@ Procesar un formulario de HTML mediante la API de Forms (servicio web):
    * Para procesar el formulario de HTML con las etiquetas de HTML completas, invoque el `HTMLRenderSpec` del objeto `setOutputType` método y pase `OutputType.FullHTMLTags`.
 
    >[!NOTE]
+   >
    Forms no se representan correctamente en HTML cuando el `StandAlone` La opción es `true` y el `ApplicationWebRoot` hace referencia a un servidor que no es el servidor de aplicaciones J2EE que aloja AEM Forms (el `ApplicationWebRoot` El valor se especifica utilizando `URLSpec` objeto que se pasa al `FormsServiceClient` del objeto `(Deprecated) renderHTMLForm` método). Si la variable `ApplicationWebRoot` es otro servidor del que aloja AEM Forms, el valor del URI raíz de la web en la consola de administración debe establecerse como el valor del URI de la aplicación web del formulario. Esto se puede hacer iniciando sesión en la consola de administración, haciendo clic en Servicios > Forms y estableciendo el URI de la raíz web como https://server-name:port/FormServer. A continuación, guarde la configuración.
 
 1. Procesar un formulario de HTML

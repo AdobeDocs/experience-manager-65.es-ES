@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 420b7f83939aef548501b4676ddca1ec9fc2aa03
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '5530'
 ht-degree: 94%
@@ -44,7 +44,7 @@ AEM Forms proporciona un conjunto de servicios OSGi para realizar distintas oper
    * El servidor de AEM valida una firma que se ha agregado a un formulario mediante Acrobat o Adobe Reader.
    * El servidor de AEM firma un formulario en nombre de un notario público.
 
-   El servicio Signature accede a los certificados y credenciales almacenados en el almacén de confianza. Para obtener más información, consulte [Servicio Signature](/help/forms/using/aem-document-services-programmatically.md).
+  El servicio Signature accede a los certificados y credenciales almacenados en el almacén de confianza. Para obtener más información, consulte [Servicio Signature](/help/forms/using/aem-document-services-programmatically.md).
 
 AEM Forms es una potente plataforma de clase empresarial, y Document Services es solo una de sus capacidades. Para obtener la lista completa de capacidades, consulte [Introducción a AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
@@ -85,7 +85,6 @@ Antes de empezar a instalar y configurar AEM Forms Document Services, asegúr
 >* En Microsoft® Windows, PDF Generator admite las rutas de conversión WebKit, Acrobat WebCapture y PhantomJS para convertir archivos HTML en documentos PDF.
 >* En sistemas operativos basados en UNIX, PDF Generator admite las rutas de conversión WebKit y PhantomJS para convertir archivos HTML en documentos PDF.
 >
-
 
 ### Requisitos adicionales para sistemas operativos basados en UNIX {#extrarequirements}
 
@@ -204,7 +203,6 @@ Si va a usar el servicio PDF Generator para convertir formatos de archivo nativ
 >* Descarte todos los cuadros de diálogo que se muestran después de instalar Adobe Acrobat y el software de terceros en todos los usuarios configurados para utilizar el servicio PDF Generator.
 >* Inicie todo el software instalado al menos una vez. Descarte todos los cuadros de diálogo de todos los usuarios configurados para utilizar el servicio PDF Generator.
 >* [Compruebe la fecha de caducidad de los números de serie de Adobe Acrobat](https://helpx.adobe.com/es/enterprise/kb/volume-license-expiration-check.html) y establezca una fecha para actualizar la licencia o [migrar su número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) en función de la fecha de caducidad.
-
 
 Después de instalar Acrobat, abra Microsoft® Word. En la pestaña **Acrobat**, haga clic en **Crear PDF** y convierta un archivo .doc o .docx disponible en su equipo en un documento PDF. Si la conversión se realiza correctamente, AEM Forms está listo para usar Acrobat con el servicio PDF Generator.
 
@@ -366,7 +364,6 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 >* Reinicie la instancia de AEM Forms siempre que instale fuentes nuevas en la carpeta de fuentes.
 >
 
-
 ## Instalación del paquete de complementos de AEM Forms {#install-aem-forms-add-on-package}
 
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras capacidades de AEM Forms. Realice los siguientes pasos para instalar el paquete:
@@ -415,6 +412,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
    >
    >Su derecho a utilizar fuentes de terceros distintos de Adobe se rige por los acuerdos de licencia que estos terceros le proporcionen junto con las fuentes, y no está cubierto por la licencia para utilizar el software de Adobe. Adobe recomienda revisar y asegurarse de que cumple todos los acuerdos de licencia aplicables que no sean de Adobe antes de utilizar fuentes que no sean de Adobe con el software de Adobe, especialmente en lo que respecta al uso de fuentes en un entorno de servidor.
    >Cuando instale nuevas fuentes en la carpeta de fuentes, reinicie la instancia de AEM Forms.
+   >
 
 ### Configuración de una cuenta de usuario local para ejecutar el servicio PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
@@ -510,7 +508,7 @@ Antes de configurar los certificados, asegúrese de que dispone de lo siguiente:
 * La contraseña de la clave privada proporcionada con el certificado.
 
 * El alias de la clave privada. Puede ejecutar el comando keytool de Java para ver el alias de la clave privada:
-   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+  `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * La contraseña del archivo del almacén de claves. Si utiliza el certificado de Extensiones de Reader de Adobe, la contraseña del archivo del almacén de claves siempre es la misma que la contraseña de la clave privada.
 
@@ -583,7 +581,7 @@ El servicio Assembler depende del servicio Extensiones de Reader, del servicio S
 
 ## Herramienta de preparación del sistema (SRT) {#SRT}
 
-El [Herramienta Preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones de PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
+El [Herramienta Preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones del PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
 
 1. Abra el Símbolo del sistema y navegue hasta la carpeta `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
@@ -597,7 +595,6 @@ El [Herramienta Preparación del sistema](#srt-configuration) comprueba si el eq
    >
    >* Si la Herramienta de preparación del sistema informa de que el archivo pdfgen.api no está disponible en la carpeta de complementos de Acrobat, copie el archivo pdfgen.api del directorio `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` al directorio `[Acrobat_root]\Acrobat\plug_ins`.
 
-
 1. Navegue hasta `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html. Compruebe el informe y corrija los problemas mencionados.
 
 ### Configuración de las opciones de la herramienta SRT {#srt-configuration}
@@ -609,7 +606,7 @@ Puede utilizar el archivo srt_config.yaml para configurar varias opciones de la 
    # SRT Configuration
    # =================================================================
    #Note - follow correct format to avoid parsing failures
-   #e.g. <param name>:<space><param value> 
+   #for example, <param name>:<space><param value> 
    #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
    locale: en
    
@@ -686,9 +683,9 @@ Problemas de conversión de ++HTML a PDF
 
 * Ejecute el siguiente comando para ver una lista de las bibliotecas que faltan para phantomjs:
 
-   ```
-   ldd phantomjs | grep not
-   ```
+  ```
+  ldd phantomjs | grep not
+  ```
 
 * Asegúrese de que la variable de entorno JAVA_HOME_32 apunta a la ubicación correcta.
 
@@ -696,11 +693,11 @@ Problemas de conversión de ++HTML a PDF
 
 * Asegúrese de que los directorios `/usr/lib/X11/fonts` y `/usr/share/fonts` existen. Si los directorios no existen, cree un vínculo simbólico desde `/usr/share/X11/fonts` a `/usr/lib/X11/fonts` y otro vínculo simbólico de `/usr/share/fonts` a `/usr/share/X11/fonts`.
 
-   ```
-   ln -s /usr/share/fonts /usr/share/X11/fonts
-   
-   ln -s /usr/share/X11/fonts /usr/lib/X11/fonts
-   ```
+  ```
+  ln -s /usr/share/fonts /usr/share/X11/fonts
+  
+  ln -s /usr/share/X11/fonts /usr/lib/X11/fonts
+  ```
 
 * Asegúrese de que las fuentes de IBM se copien en usr/share/fonts.
 * Asegúrese de que la corrección de vulnerabilidades fantasma glibc esté disponible en el equipo. Utilice su gestor de paquetes predeterminado para actualizar a la última versión de glibc. Incluye corrección de vulnerabilidades fantasma.
@@ -767,19 +764,19 @@ Problemas de conversión de ++HTML a PDF
 
    * Utilice los siguientes comandos para generar el archivo prov.xml y vuelva a serializar la instalación existente usando este en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo de número.
 
-          ```
-          
-          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=lista de configuraciones regionales en formato xx_XX format o ALL>] [--provfile=&lt;Ruta absoluta de prov.xml>]
-          
-          ```
-      
+         ```
+         
+         adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=lista de configuraciones regionales en formato xx_XX format o ALL>] [--provfile=&lt;Ruta absoluta de prov.xml>]
+         
+         ```
+     
    * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): ejecute el siguiente comando desde la carpeta de instalación PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
 
-          ```
-          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
-          
-          ```
-      
+         ```
+         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
+         
+         ```
+     
 * Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
 
 +++

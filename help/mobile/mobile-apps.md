@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: eda55579-4140-477b-b4d0-a87d14ec3237
 exl-id: 0a98881d-08f3-47e7-bae1-5500d1fe6514
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '119'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager AEM () Mobile forma parte de la plataforma digital multicanal de Adobe Experience Manager que también aprovecha AEM Assets, Sites, Screens, Workflow, User Manager, Commerce y Forms. AEM Mobile ofrece una notable flexibilidad de implementación, lo que permite a las empresas utilizar una variedad de fuentes de contenido.
 

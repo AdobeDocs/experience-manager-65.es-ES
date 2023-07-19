@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2654'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 ## Plantillas de página para aplicaciones móviles {#page-templates-for-mobile-apps-1}
 
@@ -61,7 +61,7 @@ El cuerpo de una página Angular se representa de forma diferente en función de
 
 En el modo Autor, cada página individual se procesa por separado. El angular no gestiona el enrutamiento entre páginas ni se utiliza una vista ng para cargar una plantilla parcial que contenga los componentes de la página. En su lugar, el contenido de la plantilla de página (template.jsp) se incluye en el servidor a través de `cq:include` etiqueta.
 
-Esta estrategia permite al autor funciones (como añadir y editar componentes en el sistema de párrafos, barra de tareas, modo de diseño, etc.) para funcionar sin modificaciones. AEM Las páginas que dependen del procesamiento del lado del cliente, como las de las aplicaciones, no funcionan bien en el modo de autor de la.
+Esta estrategia permite al autor funciones (como añadir y editar componentes en el sistema de párrafos, Sidekick, modo de diseño, etc.) para funcionar sin modificaciones. AEM Las páginas que dependen del procesamiento del lado del cliente, como las de las aplicaciones, no funcionan bien en el modo de autor de la.
 
 Tenga en cuenta que la inclusión de template.jsp está envuelta en una `div` que contiene el elemento `ng-controller` Directiva. Esta estructura permite vincular el contenido DOM con el controlador. Por lo tanto, aunque las páginas que se representan en el lado del cliente fallan, los componentes individuales que lo hacen funcionan bien (consulte la sección sobre Componentes a continuación).
 

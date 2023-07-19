@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2080'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ AEM SPA SPA SPA Para permitir que el autor use el Editor de de trabajo para edit
 
 >[!NOTE]
 >
->SPA SPA El editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el marco de trabajo del cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular).
+>SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
 
 ## Introducción {#introduction}
 
@@ -61,7 +61,7 @@ Cada elemento presente en el modelo contiene un `:type` AEM campo que expone un 
 
 #### Asignación de modelos dinámicos a componentes {#dynamic-model-to-component-mapping}
 
-SPA AEM Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en el SDK de la aplicación de JavaScript para la creación de componentes, consulte el artículo SDK para la creación de componentes de Javascript para la creación de informes en el SDK de la aplicación de Javascript. [SPA Asignación de modelos dinámicos a componentes para la creación de](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+SPA AEM Para obtener más información acerca de cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript para la, consulte el artículo [SPA Asignación de modelos dinámicos a componentes para la creación de](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Capa específica del marco de trabajo {#framework-specific-layer}
 
@@ -118,7 +118,7 @@ Las siguientes entidades deben aplicarse de conformidad con las directrices espe
 
 Los componentes de proyecto deben delegar el acceso a los fragmentos de un modelo a un proveedor de modelos. El proveedor de modelos se encarga de escuchar los cambios realizados en el fragmento especificado del modelo y devolver el modelo actualizado al componente de delegación.
 
-Para ello, el proveedor de modelos debe registrarse en ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. A continuación, cuando se produce un cambio, recibe y transfiere los datos actualizados al componente de delegación. De forma predeterminada, la propiedad disponible para el componente delegado que llevará el fragmento de modelo se denomina `cqModel`. La implementación es libre de proporcionar esta propiedad al componente, pero debe tener en cuenta aspectos como la integración con la arquitectura del marco de trabajo, la capacidad de detección y la facilidad de uso.
+Para ello, el proveedor de modelos debe registrarse en ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. A continuación, cuando se produce un cambio, recibe y pasa los datos actualizados al componente que delega. De forma predeterminada, la propiedad disponible para el componente delegado que llevará el fragmento de modelo se denomina `cqModel`. La implementación es libre de proporcionar esta propiedad al componente, pero debe tener en cuenta aspectos como la integración con la arquitectura del marco de trabajo, la capacidad de detección y la facilidad de uso.
 
 ### El decorador del HTML de componentes {#the-component-html-decorator}
 
@@ -185,7 +185,6 @@ Por ejemplo:
 >* `"aem-Grid-newComponent"`: normaliza el componente para la creación de diseños
 >
 
-
 #### Asignación de componentes {#component-mapping}
 
 El subyacente [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca y sus `MapTo` se puede encapsular y ampliar para proporcionar las funcionalidades relativas a la configuración de edición proporcionada junto con la clase de componente actual.
@@ -237,7 +236,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Los componentes del proyecto deben generar como mínimo los siguientes atributos de datos para permitir que el editor interactúe con ellos.
 
-* `data-cq-data-path`: Ruta relativa del componente proporcionada por el `PageModel` (por ejemplo, `"root/responsivegrid/image"`). Este atributo no debe añadirse a las páginas.
+* `data-cq-data-path`: Ruta relativa del componente proporcionada por el `PageModel` (por ejemplo,, `"root/responsivegrid/image"`). Este atributo no debe añadirse a las páginas.
 
 En resumen, para que el editor de páginas lo interprete como editable, un componente de proyecto debe respetar el siguiente contrato:
 
@@ -272,7 +271,7 @@ El siguiente fragmento ilustra la representación típica del HTML de una estruc
 
 La aplicación es propietaria del enrutamiento. AEM El desarrollador front-end debe implementar primero un componente de navegación (asignado a un componente de navegación de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de). Este componente procesaría vínculos de URL para usarlos junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
 
-El subyacente [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca y sus ` [ModelRouter](/help/sites-developing/spa-routing.md)` Los módulos de (habilitados de forma predeterminada) son responsables de la recuperación previa y de proporcionar acceso al modelo asociado a una ruta de recurso determinada.
+El subyacente [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) biblioteca y sus ` [ModelRouter](/help/sites-developing/spa-routing.md)` Los módulos de (habilitados de forma predeterminada) son responsables de la recuperación previa y de proporcionar acceso al modelo asociado a una ruta de recurso determinada.
 
 Las dos entidades se refieren a la noción de ruta, pero ` [ModelRouter](/help/sites-developing/spa-routing.md)` solo es responsable de tener el ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` cargado con un modelo de datos estructurado en sincronización con el estado de la aplicación actual.
 

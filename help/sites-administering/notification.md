@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 93dfac20bbb761abd580a004741ade20dc4ee2fe
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 12%
 
 ---
@@ -234,7 +234,7 @@ Se pueden utilizar las siguientes variables dentro de la plantilla de correo ele
 
 * `${payload.type}`, el tipo de carga útil
 * `${payload.path}`, ruta de la carga útil
-* `${host.prefix}`, prefijo de host, p. ej.: `http://localhost:4502`
+* `${host.prefix}`, prefijo de host, por ejemplo,: `http://localhost:4502`
 
 ### Adición de una plantilla de correo electrónico para un nuevo idioma {#adding-an-email-template-for-a-new-language}
 

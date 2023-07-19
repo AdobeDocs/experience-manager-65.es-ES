@@ -2,9 +2,9 @@
 title: Configurar y solucionar problemas de AEM Forms en un clúster de servidores JEE
 description: Obtenga información sobre cómo configurar y solucionar problemas de AEM Forms en un clúster de servidores JEE
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4033'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ Ahora, si por alguna razón el montaje no tiene éxito, el punto de montaje vac�
 
 **¿Cómo puedo verificar que todos los nodos ven el mismo GDS y tienen permisos?**
 
-La comprobación del acceso y uso compartido de GDS se realiza mejor accediendo a cada uno de los nodos como un usuario interactivo, ya sea a través de SSH o telnet a nodos UNIX, o a través del escritorio remoto a sistemas Windows. Debe poder navegar al directorio o sistema de archivos GDS configurado en cada nodo y crear archivos de prueba a partir de cada nodo que esté visible en todos los demás nodos.
+La verificación del acceso y uso compartido de GDS se realiza mejor accediendo a cada uno de los nodos como un usuario interactivo, ya sea a través de SSH o telnet a nodos UNIX, o a través del escritorio remoto a sistemas Windows. Debe poder navegar al directorio o sistema de archivos GDS configurado en cada nodo y crear archivos de prueba a partir de cada nodo que esté visible en todos los demás nodos.
 
 Preste atención al ID de usuario con el que funciona AEM Forms en JEE. En instalaciones llave en mano de Windows, se trata de un administrador local. En UNIX, puede ser como un usuario de servicio específico configurado en el script de inicio o en la configuración del servidor de aplicaciones. Es importante que este ID de usuario pueda crear y manipular archivos GDS de forma equitativa en todos los nodos.
 

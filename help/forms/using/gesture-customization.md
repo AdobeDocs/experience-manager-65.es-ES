@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -47,27 +47,27 @@ En la aplicación AEM Forms, el gesto de deslizar el dedo hacia la izquierda ab
 
    `"EventName Selector": "Function"`
 
-   Cuando se activa un evento de Javascript con el nombre `EventName` en un elemento HTML especificado por `Selector`, se llama a `Function`.
+   Al almacenar en déclencheur un evento de JavaScript denominado `EventName`en un elemento de HTML especificado por `Selector`, el `Function`se llama.
 
 1. Busque
 
    * &quot;tap .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .task-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
+
    y reemplácelo por
 
    * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
-
+     &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 1. Guarde y cierre el archivo `task.js`.
 1. Genere y ejecute la aplicación AEM Forms. Ahora puede realizar la acción Abrir deslizando el dedo a la izquierda y a la derecha.

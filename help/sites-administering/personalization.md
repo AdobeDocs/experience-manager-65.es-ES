@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: d6b595b6b5477b5cad662e219f1abd483491897f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1687'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ Sin embargo, el control de acceso se puede utilizar para crear una forma de pers
 
 AEM Se proporcionan varios componentes con funciones para la personalización de la aplicación Algunos permiten a los usuarios iniciar sesión y editar sus perfiles, mientras que otros (como Mis gadgets) permiten a los usuarios configurar una página específica:
 
-| Título en Sidekick | Función |
+| Título en el Sidekick | Función |
 |---|---|
 | Campo de contraseña activado | Solicita la contraseña y la confirmación de la misma. |
 | Registro de inicio de sesión combinado | Permite al usuario iniciar sesión en una cuenta existente o registrarse para obtener una nueva cuenta. |

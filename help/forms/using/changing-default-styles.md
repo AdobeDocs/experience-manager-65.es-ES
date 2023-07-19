@@ -11,10 +11,10 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 100%
+source-wordcount: '367'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
    Navegue hasta la carpeta en la que ha creado el procesador de perfiles y cree un archivo de hoja de estilo CSS. Los pasos a seguir son los siguientes:
 
-   1. Haga clic con el botón derecho en la carpeta y seleccione **crear** > **crear archivo** del menú
+   1. Haga clic con el botón derecho en la carpeta y seleccione **crear** > **crear archivo** en el menú
 
    1. En el cuadro de diálogo Crear archivo, escriba el nombre de la hoja de estilo. Asegúrese de utilizar la extensión .css (por ejemplo, stylesheet.css)
    1. En el panel de navegación, abra el archivo CSS que ha creado.

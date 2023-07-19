@@ -12,7 +12,7 @@ discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3425'
 ht-degree: 4%
@@ -100,8 +100,7 @@ Esta replicación la lleva a cabo desde el entorno de creación el:
 * **Agente predeterminado (publicar)**
 Este agente replica el contenido en la instancia de publicación predeterminada.
 Se puede acceder a los detalles de esto (configuración y registros) desde la consola Herramientas del entorno de creación o:
-
-   `https://localhost:4502/etc/replication/agents.author/publish.html`.
+  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agentes de replicación: predefinidos {#replication-agents-out-of-the-box}
 
@@ -127,17 +126,17 @@ Al configurar un agente de replicación desde la consola Herramientas, hay cuatr
 
 * **Nombre**
 
-   Un nombre único para el agente de replicación.
+  Un nombre único para el agente de replicación.
 
 * **Descripción**
 
-   Una descripción del propósito que tendrá este agente de replicación.
+  Una descripción del propósito que tendrá este agente de replicación.
 
 * **Habilitado**
 
-   Indica si el agente de replicación está habilitado actualmente.
+  Indica si el agente de replicación está habilitado actualmente.
 
-   Cuando el agente está **activado** la cola se mostrará de la siguiente manera:
+  Cuando el agente está **activado** la cola se mostrará de la siguiente manera:
 
    * **Activo** cuando se están procesando artículos.
    * **Inactivo** cuando la cola está vacía.
@@ -145,94 +144,94 @@ Al configurar un agente de replicación desde la consola Herramientas, hay cuatr
 
 * **Tipo de serialización**
 
-   El tipo de serialización:
+  El tipo de serialización:
 
    * **Predeterminado**: configure si el agente se va a seleccionar automáticamente.
    * **Vaciado de Dispatcher**: seleccione esta opción si el agente se va a utilizar para vaciar la caché de Dispatcher.
 
 * **Intervalo entre reintentos**
 
-   El retraso (tiempo de espera en milisegundos) entre dos reintentos, si se produce un problema.
+  El retraso (tiempo de espera en milisegundos) entre dos reintentos, si se produce un problema.
 
-   Predeterminado: `60000`
+  Predeterminado: `60000`
 
 * **ID de usuario agente**
 
-   Según el entorno, el agente utilizará esta cuenta de usuario para lo siguiente:
+  Según el entorno, el agente utilizará esta cuenta de usuario para lo siguiente:
 
    * recopilar y empaquetar el contenido del entorno de creación;
    * crear y escribir el contenido en el entorno de publicación
 
-   Deje este campo vacío para utilizar la cuenta de usuario del sistema (la cuenta definida en sling como usuario administrador; de forma predeterminada es `admin`).
+  Deje este campo vacío para utilizar la cuenta de usuario del sistema (la cuenta definida en sling como usuario administrador; de forma predeterminada es `admin`).
 
-   >[!CAUTION]
-   >
-   >Para un agente en el entorno de creación, utilice esta cuenta *debe* tiene acceso de lectura a todas las rutas que desea replicar.
+  >[!CAUTION]
+  >
+  >Para un agente en el entorno de creación, utilice esta cuenta *debe* tiene acceso de lectura a todas las rutas que desea replicar.
 
-   >[!CAUTION]
-   >
-   >Para un agente en el entorno de publicación, utilice esta cuenta *debe* Tener el acceso de creación y escritura necesario para replicar el contenido.
+  >[!CAUTION]
+  >
+  >Para un agente en el entorno de publicación, utilice esta cuenta *debe* Tener el acceso de creación y escritura necesario para replicar el contenido.
 
-   >[!NOTE]
-   >
-   >Esto se puede utilizar como mecanismo para seleccionar contenido específico para la replicación.
+  >[!NOTE]
+  >
+  >Esto se puede utilizar como mecanismo para seleccionar contenido específico para la replicación.
 
 * **Nivel de registro**
 
-   Especifica el nivel de detalle que se utilizará para los mensajes de registro.
+  Especifica el nivel de detalle que se utilizará para los mensajes de registro.
 
    * `Error`: solo se registrarán los errores
    * `Info`: se registrarán errores, advertencias y otros mensajes informativos
    * `Debug`: se utilizará un alto nivel de detalle en los mensajes, principalmente con fines de depuración
 
-   Predeterminado: `Info`
+  Predeterminado: `Info`
 
 * **Utilizar para replicación inversa**
 
-   Indica si este agente se utilizará para la replicación inversa; devuelve los datos introducidos por el usuario desde el entorno de publicación al de creación.
+  Indica si este agente se utilizará para la replicación inversa; devuelve los datos introducidos por el usuario desde el entorno de publicación al de creación.
 
 * **Actualización de alias**
 
-   Al seleccionar esta opción, se habilitan las solicitudes de invalidación de alias o de rutas de vanidad para Dispatcher. Consulte también [Configuración de un agente de vaciado de Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+  Al seleccionar esta opción, se habilitan las solicitudes de invalidación de alias o de rutas de vanidad para Dispatcher. Consulte también [Configuración de un agente de vaciado de Dispatcher](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 #### Transporte {#transport}
 
 * **URI**
 
-   Esto especifica el servlet de recepción en la ubicación de destino. En particular, puede especificar el nombre de host (o alias) y la ruta de contexto a la instancia de destino aquí.
+  Esto especifica el servlet de recepción en la ubicación de destino. En particular, puede especificar el nombre de host (o alias) y la ruta de contexto a la instancia de destino aquí.
 
-   Por ejemplo:
+  Por ejemplo:
 
    * Un agente predeterminado puede replicar en `https://localhost:4503/bin/receive`
    * Un agente de vaciado de Dispatcher puede replicarse en `https://localhost:8000/dispatcher/invalidate.cache`
 
-   El protocolo especificado aquí (HTTP o HTTPS) determinará el método de transporte.
+  El protocolo especificado aquí (HTTP o HTTPS) determinará el método de transporte.
 
-   Para los agentes de vaciado de Dispatcher, la propiedad URI solo se utiliza si utiliza entradas de host virtual basadas en rutas para diferenciar entre granjas, utilice este campo para dirigirse a la granja para invalidarla. Por ejemplo, la granja n.º 1 tiene un host virtual de `www.mysite.com/path1/*` y la granja n.º 2 lo tiene de `www.mysite.com/path2/*`. Puede utilizar una URL de `/path1/invalidate.cache` para dirigirse a la primera granja de servidores y `/path2/invalidate.cache` para dirigirse a la segunda.
+  Para los agentes de vaciado de Dispatcher, la propiedad URI solo se utiliza si utiliza entradas de host virtual basadas en rutas para diferenciar entre granjas, utilice este campo para dirigirse a la granja para invalidarla. Por ejemplo, la granja n.º 1 tiene un host virtual de `www.mysite.com/path1/*` y la granja n.º 2 lo tiene de `www.mysite.com/path2/*`. Puede utilizar una URL de `/path1/invalidate.cache` para dirigirse a la primera granja de servidores y `/path2/invalidate.cache` para dirigirse a la segunda.
 
 * **Usuario**
 
-   Nombre de usuario de la cuenta que se utilizará para acceder al destinatario.
+  Nombre de usuario de la cuenta que se utilizará para acceder al destinatario.
 
 * **Contraseña**
 
-   Contraseña de la cuenta que se utilizará para acceder al destino.
+  Contraseña de la cuenta que se utilizará para acceder al destino.
 
 * **Dominio NTLM**
 
-   Dominio para autenticación NTML.
+  Dominio para autenticación NTML.
 
 * **Host NTLM**
 
-   Host para autenticación NTML.
+  Host para autenticación NTML.
 
 * **Habilitar SSL relajado**
 
-   Habilite esta opción si desea que se acepten certificados SSL de certificación propia.
+  Habilite esta opción si desea que se acepten certificados SSL de certificación propia.
 
 * **Permitir certificados caducados**
 
-   Habilite esta opción si desea que se acepten certificados SSL caducados.
+  Habilite esta opción si desea que se acepten certificados SSL caducados.
 
 #### Proxy {#proxy}
 
@@ -240,80 +239,80 @@ La siguiente configuración solo es necesaria si se necesita un proxy:
 
 * **Host de proxy**
 
-   Nombre de host del proxy utilizado para el transporte.
+  Nombre de host del proxy utilizado para el transporte.
 
 * **Puerto de proxy**
 
-   Puerto del proxy.
+  Puerto del proxy.
 
 * **Usuario de proxy**
 
-   Nombre de usuario de la cuenta que se va a utilizar.
+  Nombre de usuario de la cuenta que se va a utilizar.
 
 * **Contraseña de proxy**
 
-   Contraseña de la cuenta que se va a utilizar.
+  Contraseña de la cuenta que se va a utilizar.
 
 * **Dominio NTLM de proxy**
 
-   El dominio NTLM de proxy.
+  El dominio NTLM de proxy.
 
 * **Host NTLM de proxy**
 
-   El dominio NTLM de proxy.
+  El dominio NTLM de proxy.
 
 #### Ampliado {#extended}
 
 * **Interfaz**
 
-   Aquí puede definir la interfaz de socket a la que desea enlazarse.
+  Aquí puede definir la interfaz de socket a la que desea enlazarse.
 
-   Esto establece la dirección local que se utilizará al crear conexiones. Si no se establece, se utilizará la dirección predeterminada. Esto resulta útil para especificar la interfaz que se va a utilizar en sistemas de hosts múltiples o agrupados.
+  Esto establece la dirección local que se utilizará al crear conexiones. Si no se establece, se utilizará la dirección predeterminada. Esto resulta útil para especificar la interfaz que se va a utilizar en sistemas de hosts múltiples o agrupados.
 
 * **Método HTTP**
 
-   El método HTTP que se va a utilizar.
+  El método HTTP que se va a utilizar.
 
-   Para un agente de vaciado de Dispatcher, esto es casi siempre GET y no debe cambiarse (el POST sería otro valor posible).
+  Para un agente de vaciado de Dispatcher, esto es casi siempre GET y no debe cambiarse (el POST sería otro valor posible).
 
 * **Encabezados HTTP**
 
-   Se utilizan para los agentes de vaciado de Dispatcher y especifican los elementos que se deben vaciar.
+  Se utilizan para los agentes de vaciado de Dispatcher y especifican los elementos que se deben vaciar.
 
-   Para un agente de vaciado de Dispatcher, no debería ser necesario cambiar las tres entradas estándar:
+  Para un agente de vaciado de Dispatcher, no debería ser necesario cambiar las tres entradas estándar:
 
    * `CQ-Action:{action}`
    * `CQ-Handle:{path}`
    * `CQ-Path:{path}`
 
-   Se utilizan, según corresponda, para indicar la acción que se utilizará al vaciar el controlador o la ruta de acceso. Los subparámetros son dinámicos:
+  Se utilizan, según corresponda, para indicar la acción que se utilizará al vaciar el controlador o la ruta de acceso. Los subparámetros son dinámicos:
 
    * `{action}` indica una acción de replicación
 
    * `{path}` indica una ruta
 
-   Se sustituyen por la ruta/acción relevante para la solicitud y, por lo tanto, no necesitan estar &quot;codificadas&quot;:
+  Se sustituyen por la ruta/acción relevante para la solicitud y, por lo tanto, no necesitan estar &quot;codificadas&quot;:
 
-   >[!NOTE]
-   >
-   >AEM Si ha instalado el en un contexto distinto del contexto predeterminado recomendado, deberá registrar el contexto en los encabezados HTTP. Por ejemplo:
-   >`CQ-Handle:/<*yourContext*>{path}`
+  >[!NOTE]
+  >
+  >AEM Si ha instalado el en un contexto distinto del contexto predeterminado recomendado, deberá registrar el contexto en los encabezados HTTP. Por ejemplo:
+  >`CQ-Handle:/<*yourContext*>{path}`
 
 * **Cerrar conexión**
 
-   Habilitar para cerrar la conexión después de cada solicitud.
+  Habilitar para cerrar la conexión después de cada solicitud.
 
 * **Tiempo de espera de conexión**
 
-   Tiempo de espera (en milisegundos) que se aplicará al intentar establecer una conexión.
+  Tiempo de espera (en milisegundos) que se aplicará al intentar establecer una conexión.
 
 * **Tiempo de espera de socket**
 
-   Tiempo de espera (en milisegundos) que se aplicará mientras se espera el tráfico una vez establecida la conexión.
+  Tiempo de espera (en milisegundos) que se aplicará mientras se espera el tráfico una vez establecida la conexión.
 
 * **Versión del protocolo**
 
-   Versión del protocolo; por ejemplo `1.0` para HTTP/1.0.
+  Versión del protocolo; por ejemplo `1.0` para HTTP/1.0.
 
 #### Desencadenadores {#triggers}
 
@@ -321,31 +320,31 @@ Esta configuración se utiliza para definir déclencheur para la replicación au
 
 * **Omitir predeterminado**
 
-   Si se selecciona, el agente se excluye de la replicación predeterminada; esto significa que no se utilizará si un autor de contenido emite una acción de replicación.
+  Si se selecciona, el agente se excluye de la replicación predeterminada; esto significa que no se utilizará si un autor de contenido emite una acción de replicación.
 
 * **En la modificación**
 
-   Aquí se activará automáticamente una replicación de este agente cuando se modifique una página. Se utiliza principalmente para agentes de vaciado de Dispatcher, pero también para la replicación inversa.
+  Aquí se activará automáticamente una replicación de este agente cuando se modifique una página. Se utiliza principalmente para agentes de vaciado de Dispatcher, pero también para la replicación inversa.
 
 * **En distribución**
 
-   Si se selecciona, el agente replicará automáticamente cualquier contenido que esté marcado para su distribución cuando se modifique.
+  Si se selecciona, el agente replicará automáticamente cualquier contenido que esté marcado para su distribución cuando se modifique.
 
 * **Tiempo de activación/desactivación alcanzado**
 
-   Esto almacenará en déclencheur la replicación automática (para activar o desactivar una página según corresponda) cuando se produzcan los tiempos de activación o desactivación definidos para una página. Se utiliza principalmente para agentes de vaciado de Dispatcher.
+  Esto almacenará en déclencheur la replicación automática (para activar o desactivar una página según corresponda) cuando se produzcan los tiempos de activación o desactivación definidos para una página. Se utiliza principalmente para agentes de vaciado de Dispatcher.
 
 * **En estado de recepción**
 
-   Si se selecciona, el agente replicará en cadena cada vez que reciba eventos de replicación.
+  Si se selecciona, el agente replicará en cadena cada vez que reciba eventos de replicación.
 
 * **No hay actualización de estado**
 
-   Cuando se selecciona, el agente no fuerza una actualización de estado de replicación.
+  Cuando se selecciona, el agente no fuerza una actualización de estado de replicación.
 
 * **No hay asignación de versiones**
 
-   Cuando se selecciona, el agente no fuerza la creación de versiones de páginas activadas.
+  Cuando se selecciona, el agente no fuerza la creación de versiones de páginas activadas.
 
 ## Configuración de los agentes de replicación {#configuring-your-replication-agents}
 
@@ -358,6 +357,7 @@ Desde la pestaña Herramientas del entorno de creación, puede configurar los ag
 >[!NOTE]
 >
 >Cuando un despachante administra solicitudes HTTP para instancias de autor o publicación, la solicitud HTTP del agente de replicación debe incluir el encabezado PATH. Además del siguiente procedimiento, debe agregar el encabezado PATH a la lista de encabezados de cliente de Dispatcher. (Consulte [/clientheaders (Encabezados de cliente)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+>
 
 1. Acceda a la **Herramientas** AEM pestaña en la lista de.
 1. Clic **Replicación** (panel izquierdo para abrir la carpeta).
@@ -429,14 +429,14 @@ Para configurar la replicación de contenido para una instancia de publicación 
       * Configure las variables **Retraso de reintento** hasta `60000`.
 
       * Deje el **Tipo de serialización** as `Default`.
+
    * En el **Transporte** pestaña:
 
       * Introduzca el URI requerido para la nueva instancia de publicación; por ejemplo,
-         `https://localhost:4504/bin/receive`.
+        `https://localhost:4504/bin/receive`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.
       * Puede configurar otros parámetros según sea necesario.
-
 
 1. Clic **OK** para guardar la configuración.
 
@@ -453,9 +453,7 @@ Si tiene algún problema, puede comprobar los registros en la instancia de autor
 >1. Configure un agente de replicación para replicar en ese entorno de publicación.
 >1. Configure una cuenta de usuario con los derechos de acceso necesarios para leer el contenido que se va a replicar en ese entorno de publicación específico.
 >1. Asigne la cuenta de usuario como **ID de usuario agente** para el agente de replicación.
-
 >
-
 
 ### Configuración de un agente de vaciado de Dispatcher {#configuring-a-dispatcher-flush-agent}
 
@@ -474,10 +472,11 @@ Los agentes predeterminados se incluyen en la instalación. Sin embargo, cierta 
       * Deje el **Tipo de serialización** as `Dispatcher Flush`o configúrelo como tal si crea un nuevo agente.
 
       * (opcional) Seleccione **Actualización de alias** para habilitar las solicitudes de invalidación de alias o de rutas personales en Dispatcher.
+
    * En el **Transporte** pestaña:
 
       * Introduzca el URI requerido para la nueva instancia de publicación; por ejemplo,
-         `https://localhost:80/dispatcher/invalidate.cache`.
+        `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.
       * Puede configurar otros parámetros según sea necesario.

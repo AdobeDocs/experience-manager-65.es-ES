@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 4%
 
 ---
@@ -62,39 +62,39 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
 * **Tipo**
 
-   Especifique si desea mostrar datos sobre los miembros de la comunidad o sobre el contenido generado por el usuario (UGC).
+  Especifique si desea mostrar datos sobre los miembros de la comunidad o sobre el contenido generado por el usuario (UGC).
 
-   Seleccionar de:
+  Seleccionar de:
 
    * `Members`
    * `Content`
 
-   El valor predeterminado es `Members`.
+  El valor predeterminado es `Members`.
 
 * **Título que se mostrará**
 
-   Título descriptivo que se mostrará sobre los datos, como `Trending Content`.
+  Título descriptivo que se mostrará sobre los datos, como `Trending Content`.
 El valor predeterminado es sin título.
 
 * **Número de de visualizaciones**
 
-   Número de elementos que se van a enumerar.
+  Número de elementos que se van a enumerar.
 El valor predeterminado es 10.
 
 * **Tipo de actividad**
 
-   Seleccione una de las siguientes opciones:
+  Seleccione una de las siguientes opciones:
 
    * `Views`(visitas a la página)
    * `Posts`(creación de UGC)
    * `Follows`
    * `Likes`
 
-   El valor predeterminado es Vistas.
+  El valor predeterminado es Vistas.
 
 * **Período de tiempo**
 
-   Seleccione una de las siguientes opciones:
+  Seleccione una de las siguientes opciones:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -103,16 +103,16 @@ El valor predeterminado es 10.
    * `This year (since Jan 1st)`
    * `Total`
 
-   El valor predeterminado es `Total`.
+  El valor predeterminado es `Total`.
 
 * **Ruta de contexto**
 
-   Proporciona la capacidad de asignar el ámbito de la actividad a un subconjunto del sitio, como un blog específico.
+  Proporciona la capacidad de asignar el ámbito de la actividad a un subconjunto del sitio, como un blog específico.
 De forma predeterminada, se muestra todo el sitio de la comunidad.
 
 * **Suma de recuento de miembros**
 
-   Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
+  Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
 La opción predeterminada está activada.
 
 ### Página de ejemplo con 4 componentes {#example-page-with-components}

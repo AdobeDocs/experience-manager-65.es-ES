@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ Debido a la posibilidad de que existan diferentes valores, las propiedades de p�
 * Algunos campos suelen ser únicos; por ejemplo, un título de página. Debe decidir si es significativo habilitar estos campos para la edición masiva, cuando se aplica un valor.
 * Algunos campos pueden tener varios valores; esto necesita una representación significativa al procesar.
 
-   Por ejemplo, una casilla de verificación que indique &quot;Listo para publicación&quot;. Esto puede tener varios valores antes de la edición por lotes (por ejemplo, listo, en revisión o en curso).
+  Por ejemplo, una casilla de verificación que indique &quot;Listo para publicación&quot;. Esto puede tener varios valores antes de la edición por lotes (por ejemplo, listo, en revisión o en curso).
 
 >[!CAUTION]
 >
@@ -36,7 +36,6 @@ Debido a la posibilidad de que existan diferentes valores, las propiedades de p�
 >* No disponible para páginas dentro de una Live Copy.
 >* Solo está disponible para páginas con el mismo tipo de recurso.
 >
-
 
 >[!NOTE]
 >
@@ -55,7 +54,6 @@ Debido a la posibilidad de que existan diferentes valores, las propiedades de p�
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
-
 
 Los campos están habilitados en el componente de página (*no* en la plantilla):
 
@@ -92,6 +90,5 @@ Los campos están habilitados en el componente de página (*no* en la plantilla)
    >
    >    1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
    >    1. Realice cualquier cambio en `/apps`
-
 
 1. Seleccionar **Guardar todo** para mantener las actualizaciones.

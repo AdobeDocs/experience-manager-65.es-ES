@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ A continuación se muestra una lista de recomendaciones de Administración de pr
     </ol> </td>
   </tr>
   <tr>
-   <td><p>AEM Ha usado CQ/durante muchos años.</p> <p>Ha ampliado la interfaz de usuario del producto (p. ej., el administrador del sitio) y ha creado componentes con numerosos cuadros de diálogo de edición.</p> </td>
+   <td><p>AEM Ha usado CQ/durante muchos años.</p> <p>Ha ampliado la interfaz de usuario del producto (por ejemplo, Administración del sitio) y ha creado componentes con numerosos cuadros de diálogo de edición.</p> </td>
    <td><p>Actualice a 6.5 y configure la IU clásica como la predeterminada para la creación de páginas para todos los usuarios. Consulte <a href="#selecting-your-ui">Selección de la IU</a>.</p> <p>A continuación, inicie un proyecto para aplicar la personalización y optimizar los cuadros de diálogo de componentes en formato Coral 3. Consulte <a href="#resources-to-help">Recursos de ayuda</a>.<br /> </p> </td>
   </tr>
  </tbody>

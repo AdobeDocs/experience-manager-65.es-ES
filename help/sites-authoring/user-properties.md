@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 57%
+source-wordcount: '519'
+ht-degree: 63%
 
 ---
 
@@ -54,38 +54,38 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Idioma**
 
-   Define el idioma que se utilizará para la interfaz de usuario del entorno de creación. Seleccione el idioma en la lista disponible.
+  Define el idioma que se utilizará para la interfaz de usuario del entorno de creación. Seleccione el idioma en la lista disponible.
 
-   Esta configuración también se utiliza para la IU clásica.
+  Esta configuración también se utiliza para la IU clásica.
 
 * **Gestión de ventanas**
 
-   Define el comportamiento para abrir ventanas. Seleccione:
+  Define el comportamiento para abrir ventanas. Seleccione:
 
    * **Varias ventanas** (Predeterminado)
 
       * Las páginas se abrirán en una nueva ventana.
+
    * **Ventana única**
 
       * Las páginas se abrirán en la ventana actual.
 
-
 * **Mostrar las acciones del escritorio para Assets**
 
-   AEM Esta opción requiere que utilice la aplicación de escritorio de la.
+  AEM Esta opción requiere que utilice la aplicación de escritorio de la.
 
 * **Color de anotación**
 
-   Define el color predeterminado que se utiliza para realizar anotaciones.
+  Define el color predeterminado que se utiliza para realizar anotaciones.
 
    * Haga clic en el bloque de colores para abrir el selector de muestras y seleccionar un color.
    * Como alternativa, introduzca el código hexadecimal del color deseado en el campo. 
 
 * **Presentación de fecha relativa**
 
-   AEM Para mejorar la legibilidad, las fechas procesadas dentro de los últimos siete días se procesarán como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
+  Para mejorar la legibilidad, AEM procesará las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
 
-   Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
+  Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
    * **Mostrar siempre la fecha exacta**: se muestra siempre la fecha exacta (nunca una fecha relativa).
    * **1 día**: se muestra la fecha relativa para las fechas dentro de un día; de lo contrario, se muestra una fecha exacta. 
@@ -100,21 +100,21 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Habilitar métodos abreviados**
 
-   AEM admite varios métodos abreviados del teclado para mejorar la eficiencia de la creación de contenido.
+  AEM admite varios métodos abreviados del teclado para mejorar la eficiencia de la creación de contenido.
 
    * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Esta opción habilita los métodos abreviados de teclado. De forma predeterminada están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
+  Esta opción habilita los métodos abreviados de teclado. De forma predeterminada están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
 
 * **Usar experiencia de autoría clásica**
 
-   Esta opción habilita [IU clásica](/help/sites-classic-ui-authoring/home.md)Creación de páginas basada en. De forma predeterminada, se utiliza la interfaz de usuario estándar.
+  Esta opción habilita [IU clásica](/help/sites-classic-ui-authoring/home.md)Creación de páginas basada en. De forma predeterminada, se utiliza la interfaz de usuario estándar.
 
 * **Activar la página principal de los recursos**
 
-   Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de los recursos para toda la organización.
+  Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de los recursos para toda la organización.
 
 * **Configuración de Stock**
 
-   Esta opción permite especificar la configuración preferida de Adobe Stock y solo estará disponible si el administrador del sistema ha activado [Integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Esta opción permite especificar la configuración preferida de Adobe Stock y solo estará disponible si el administrador del sistema ha activado [Integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

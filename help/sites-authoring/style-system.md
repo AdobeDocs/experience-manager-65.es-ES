@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 62%
+ht-degree: 60%
 
 ---
 
@@ -53,7 +53,7 @@ Por lo general, el uso del sistema de estilos se realiza de la siguiente manera.
 
 1. El autor de páginas de AEM puede seleccionar los estilos diseñados en el editor de página a través del menú Estilo de la barra de herramientas del componente.
 
-AEM Tenga en cuenta que solo los tres últimos pasos se llevan a cabo en la práctica en el ámbito de la. AEM Esto significa que todo el desarrollo del CSS y el Javascript necesarios se puede realizar sin necesidad de tener que realizar ninguna tarea de la aplicación de la aplicación de la manera más sencilla y sencilla
+AEM Tenga en cuenta que solo los tres últimos pasos se llevan a cabo en la práctica en el ámbito de la. AEM Esto significa que todo el desarrollo del CSS y el JavaScript necesarios se puede realizar sin tener que realizar ninguna acción de la manera de hacer un seguimiento de la configuración de la aplicación.
 
 AEM En realidad, la implementación de los estilos solo requiere la implementación de la selección y la selección en los componentes de las plantillas deseadas.
 
@@ -111,7 +111,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 >[!CAUTION]
 >
->Las clases CSS (así como cualquier código Javascript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [bibliotecas de cliente](/help/sites-developing/clientlibs.md) para que funcionen.
+>Las clases CSS (así como cualquier código JavaScript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/sites-developing/clientlibs.md) para poder trabajar.
 
 ## Configuración {#setup}
 
@@ -156,9 +156,7 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 >1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
 >1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
 >1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
-
 >
-
 
 Esta capacidad para definir nombres de estilo resulta útil para los componentes muy genéricos, como el contenedor de diseño o el componente Fragmento de contenido, a fin de complementar su significado.
 

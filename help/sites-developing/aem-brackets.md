@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '930'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ El proyecto debe contener al menos:
 
 1. a `jcr_root` carpeta (por ejemplo, `myproject/jcr_root`)
 
-1. a `filter.xml` archivo (p. ej., `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del `filter.xml` por favor, consulte el [Definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` (por ejemplo, `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del `filter.xml` por favor, consulte el [Definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html).
 
 Entre paréntesis **Archivo** menú, elija **Abrir carpeta...** y elija la `jcr_root` o la carpeta del proyecto principal.
 
@@ -89,10 +89,10 @@ AEM Para sincronizar el contenido con y desde una instancia de desarrollo de, de
 
 La Configuración del proyecto permite definir lo siguiente:
 
-1. La URL del servidor (p. ej. `http://localhost:4502`)
+1. La URL del servidor (por ejemplo, `http://localhost:4502`)
 1. Si se toleran los servidores que no tienen un certificado HTTPS válido (no marcar, a menos que sea necesario)
-1. El nombre de usuario utilizado para sincronizar contenido (p. ej. `admin`)
-1. La contraseña del usuario (p. ej. `admin`)
+1. El nombre de usuario utilizado para sincronizar contenido (por ejemplo, `admin`)
+1. La contraseña del usuario (por ejemplo, `admin`)
 
 ## Sincronización de contenido {#synchronizing-content}
 

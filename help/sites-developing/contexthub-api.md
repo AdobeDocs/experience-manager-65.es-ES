@@ -1,8 +1,8 @@
 ---
 title: Referencia de la API de JavaScript de ContextHub
-seo-title: ContextHub Javascript API Reference
+seo-title: ContextHub JavaScript API Reference
 description: La API de JavaScript de ContextHub está disponible para los scripts cuando se agrega el componente ContextHub a la página
-seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
+seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5006'
+source-wordcount: '5007'
 ht-degree: 2%
 
 ---
@@ -98,7 +98,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(nombre) {#getstore-name}
 
-Recupera un almacén como un objeto Javascript.
+Recupera un almacén como un objeto JavaScript.
 
 **Parámetros**
 
@@ -391,9 +391,9 @@ A `boolean` valor:
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Un almacén que contiene datos JSON. Los datos se recuperan de un servicio JSONP externo o, opcionalmente, de un servicio que devuelve datos JSON. Especifique los detalles del servicio mediante la variable [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) cuando se crea una instancia de esta clase.
+Un almacén que contiene datos JSON. Los datos se recuperan de un servicio JSONP externo o, opcionalmente, de un servicio que devuelve datos JSON. Especifique los detalles del servicio mediante la variable [`init`](/help/sites-developing/contexthub-api.md#init-name-config) cuando se crea una instancia de esta clase.
 
-El almacén utiliza persistencia en memoria (variable Javascript). Los datos de almacenamiento solo están disponibles durante la duración de la página.
+El almacén utiliza persistencia en memoria (variable JavaScript). Los datos de almacenamiento solo están disponibles durante la duración de la página.
 
 ContextHub.Store.JSONPStore extiende [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) y hereda las funciones de esa clase.
 
@@ -471,7 +471,7 @@ inicializa el objeto ContextHub.Store.JSONPStore.
 
    * eventDeferring: 32.
    * Evento: el objeto ContextHub.Utils.Eventing de este almacén. El valor predeterminado es `ContextHub.eventing` objeto.
-   * persistence: el objeto ContextHub.Utils.Persistence de este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto Javascript).
+   * persistence: el objeto ContextHub.Utils.Persistence de este almacén. De forma predeterminada, se utiliza la persistencia de la memoria (objeto JavaScript).
    * service: (objeto)
 
       * host: (cadena) nombre del servidor o dirección IP.
@@ -484,9 +484,9 @@ inicializa el objeto ContextHub.Store.JSONPStore.
          * auto: //
          * true: https://
          * false: https://
+
       * timeout: (número) cantidad de tiempo de espera para que el servicio JSONP responda antes de que se agote el tiempo de espera, en milisegundos.
       * ttl: Cantidad mínima de tiempo en milisegundos que transcurre entre llamadas al servicio JSONP. (Consulte la [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) función).
-
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -522,7 +522,7 @@ ContextHub.Store.PersistedStore amplía [ContextHub.Store.Core](/help/sites-deve
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-Extensiones de ContextHub.Store.SessionStore [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) por lo tanto, hereda todas las funciones de esa clase. Los datos de este almacén se conservan utilizando la persistencia en memoria (objeto Javascript).
+Extensiones de ContextHub.Store.SessionStore [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) por lo tanto, hereda todas las funciones de esa clase. Los datos de este almacén se conservan utilizando la persistencia en memoria (objeto JavaScript).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -832,7 +832,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializa valores y objetos Javascript en valores de cadena en formato JSON.
+Serializa valores y objetos JavaScript en valores de cadena en formato JSON.
 
 **Parámetros**
 
@@ -900,7 +900,7 @@ El valor que corresponde a la clave. Cuando la clave tiene claves secundarias, e
 
 **Ejemplo**
 
-Considere el siguiente objeto Javascript:
+Considere el siguiente objeto JavaScript:
 
 ```
 myObject {
@@ -1109,7 +1109,7 @@ Devuelve los tipos de almacén que están registrados como candidatos de almacé
 
 **Parámetros**
 
-* **storeType:** (Cadena) Nombre del tipo de almacén. Consulte la `storeType` parámetro del [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) función.
+* **storeType:** (Cadena) Nombre del tipo de almacén. Consulte la `storeType` parámetro del [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) función.
 
 **Devuelve**
 
@@ -1121,7 +1121,7 @@ Devuelve un tipo de almacén de los candidatos registrados. Si se registra más 
 
 **Parámetros**
 
-* storeType: (String) nombre del candidato de la tienda. Consulte la `storeType` parámetro del [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) función.
+* storeType: (String) nombre del candidato de la tienda. Consulte la `storeType` parámetro del [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) función.
 
 **Devuelve**
 
@@ -1133,7 +1133,7 @@ Devuelve los nombres de los tipos de almacén que están registrados como candid
 
 **Devuelve**
 
-Una matriz de valores de cadena, donde cada cadena es el tipo de tienda con el que se registró un candidato a tienda. Consulte la `storeType` parámetro del [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) función.
+Una matriz de valores de cadena, donde cada cadena es el tipo de tienda con el que se registró un candidato a tienda. Consulte la `storeType` parámetro del [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) función.
 
 #### registerStoreCandidate(store, storeType, priority, applies) {#registerstorecandidate-store-storetype-priority-applies}
 

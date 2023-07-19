@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
@@ -63,8 +63,8 @@ La sección Direcciones URL contiene vínculos a funciones de ContextHub:
 
 * **Editor de configuración:** Abre el [Página Configuración de ContextHub](ch-configuring.md) donde puede configurar tiendas, modos de interfaz de usuario y módulos de interfaz de usuario.
 
-* **Configuración de los módulos de ContextHub:** Abre el archivo /etc/cloudsettings/default/contexthub.config.kernel.js, que contiene la representación de objeto JavaScript de las configuraciones de almacén de ContextHub.
-* **Configuración de la IU de ContextHub:** Abre el archivo /etc/cloudsettings/default/contexthub.config.ui.js, que contiene la representación de objeto JavaScript de las configuraciones del modo de interfaz de usuario de ContextHub.
+* **Configuración de los módulos de ContextHub:** Abre el archivo /etc/cloudsettings/default/contexthub.config.kernel.js, que contiene la representación de objeto JavaScript de las configuraciones del almacén de ContextHub.
+* **Configuración de la IU de ContextHub:** Abre el archivo /etc/cloudsettings/default/contexthub.config.ui.js, que contiene la representación de objeto JavaScript de las configuraciones del modo IU de ContextHub.
 * **kernel.js:** Abre el archivo /etc/cloudsettings/default/contexthub.kernel.js, que contiene el código fuente de las bibliotecas de cliente que implementan el marco de trabajo de ContextHub, el motor de segmentos y los tipos de almacén.
 * **ui.js:** Abre el archivo /etc/cloudsettings/default/contexthub.ui.js, que contiene el código fuente de las bibliotecas de cliente que implementan los tipos de módulos de IU e IU de ContextHub.
 * **style.css:** Abre el archivo /etc/cloudsettings/default/contexthub.styles.css, que contiene los estilos CSS para los módulos de IU e IU de ContextHub.

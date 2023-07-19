@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 Consulte las siguientes directrices para desarrollar controladores de sincronización de contenido:
 
@@ -52,7 +52,7 @@ A continuación se enumeran los controladores de aplicación predeterminados:
 
 * ***includeModifiedPagesOnly - Booleano*** : Si es false o se omite, procese todas las páginas y compruebe las actualizaciones en el procesamiento. Si el valor es True, la base difiere en los cambios realizados en una página lastModified.
 * ***+ reescribir (nodo)***
-   ***- relativeParentPath - Cadena*** : la ruta para escribir todas las demás rutas relativas a.
+  ***- relativeParentPath - Cadena*** : la ruta para escribir todas las demás rutas relativas a.
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '9905'
+source-wordcount: '9902'
 ht-degree: 0%
 
 ---
@@ -231,7 +231,7 @@ El protocolo de transmisión para el devuelto `BLOB` depende de varios factores,
 
    * El protocolo predeterminado del parámetro de extremo SOAP del servicio para los objetos del blob de salida está establecido en Inteligente.
 
-      Para cada servicio con un extremo SOAP, la consola de administración le permite especificar el protocolo de transmisión para cualquier blob devuelto. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
+     Para cada servicio con un extremo SOAP, la consola de administración le permite especificar el protocolo de transmisión para cualquier blob devuelto. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
 
    * El servicio AEM Forms toma uno o más documentos como entrada.
 
@@ -685,7 +685,7 @@ Puede invocar un servicio de AEM Forms mediante las clases de proxy Java y Base6
 
    * Asigne el punto final WSDL y el tipo de codificación al `javax.xml.ws.BindingProvider` del objeto `ENDPOINT_ADDRESS_PROPERTY` field. Para invocar el `MyApplication/EncryptDocument` mediante la codificación Base64, especifique el siguiente valor de URL:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
    * AEM Asigne el usuario de formularios de la a `javax.xml.ws.BindingProvider` del objeto `USERNAME_PROPERTY` field.
    * Asigne el valor de contraseña correspondiente al `javax.xml.ws.BindingProvider` del objeto `PASSWORD_PROPERTY` field.
@@ -880,7 +880,7 @@ Para invocar el `MyApplication/EncryptDocument` Para procesar mediante archivos 
 
    * Asigne el punto final WSDL y el tipo de codificación al `javax.xml.ws.BindingProvider` del objeto `ENDPOINT_ADDRESS_PROPERTY` field. Para invocar el `MyApplication/EncryptDocument` mediante la codificación SwaRef, especifique el siguiente valor de URL:
 
-      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
+     ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
    * AEM Asigne el usuario de formularios de la a `javax.xml.ws.BindingProvider` del objeto `USERNAME_PROPERTY` field.
    * Asigne el valor de contraseña correspondiente al `javax.xml.ws.BindingProvider` del objeto `PASSWORD_PROPERTY` field.
@@ -1003,7 +1003,7 @@ Puede invocar un servicio de AEM Forms utilizando clases de proxy Java y datos B
 
    * Asigne el punto final WSDL y el tipo de codificación al `javax.xml.ws.BindingProvider` del objeto `ENDPOINT_ADDRESS_PROPERTY` field. Para invocar el `MyApplication/EncryptDocument` mediante la codificación BLOB sobre HTTP, especifique el siguiente valor de URL:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
    * AEM Asigne el usuario de formularios de la a `javax.xml.ws.BindingProvider` del objeto `USERNAME_PROPERTY` field.
    * Asigne el valor de contraseña correspondiente al `javax.xml.ws.BindingProvider` del objeto `PASSWORD_PROPERTY` field.

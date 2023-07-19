@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2245'
 ht-degree: 44%
 
 ---
@@ -252,7 +252,7 @@ Por ejemplo, se puede corregir una referencia rota dentro de un componente Refer
 
 ## Eventos: línea de tiempo {#events-timeline}
 
-Para obtener los recursos adecuados (p. ej. páginas de la consola **Sitios** o recursos de la consola **Recursos**) se puede utilizar la [cronología para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-authoring/basic-handling.md#timeline).
+Para obtener los recursos adecuados (por ejemplo, páginas de la consola **Sitios** o activos de la consola **Activos**) se [puede utilizar la cronología para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-authoring/basic-handling.md#timeline).
 
 Abra la consola en cuestión, desplácese hasta el recurso y abra **Cronología** con el procedimiento siguiente:
 
@@ -317,7 +317,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* Según las características de la página, es posible que algunos modos no estén disponibles.
 >* El acceso a algunos modos requiere los permisos o privilegios adecuados.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a restricciones de espacio.
->* Existe un [atajo de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
+>* Existe un [método abreviado de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
 >
 
 ## Selección de la ruta {#path-selection}

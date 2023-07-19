@@ -4,9 +4,9 @@ description: Descubra cómo solucionar los problemas más comunes relacionados c
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -27,13 +27,13 @@ MSM registra varios servlets que se pueden solicitar con selectores en las direc
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilícelo en una página de modelo para recuperar la lista de todas las Live Copies vinculadas a ella, con información del estado de Live Copy adicional.
    * por ejemplo:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilícelo en páginas de Live Copy para recuperar información avanzada sobre su conexión con sus páginas de modelo. Si la página no es una Live Copy, no se devuelve nada.
    * por ejemplo:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Estos servlets generan mensajes de registro de depuración a través del registrador `com.day.cq.wcm.msm` que también puede ser útil.
 
@@ -64,7 +64,7 @@ Conocer esas propiedades también puede ser útil para consultar el repositorio 
 
 Estas son algunas de las preguntas más frecuentes relacionadas con MSM y Live Copy.
 
-### ¿Por qué algunas propiedades (p. ej., título, anotaciones) no se actualizan durante un despliegue de MSM? {#missing-properties}
+### ¿Por qué algunas propiedades (por ejemplo, título, anotaciones) no se actualizan durante un despliegue de MSM? {#missing-properties}
 
 Las acciones de sincronización de MSM son altamente configurables. Las propiedades o los componentes que se modifican durante las implementaciones dependen directamente de las propiedades de dichas configuraciones.
 

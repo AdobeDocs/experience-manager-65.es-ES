@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: b138bc434ecad849b2c588864868cab6666d50c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5741'
+source-wordcount: '5739'
 ht-degree: 6%
 
 ---
@@ -33,10 +33,10 @@ ht-degree: 6%
 | [Comprender los resultados de búsqueda y el comportamiento](#searchbehavior) | [Modificar facetas de búsqueda](#searchfacets) | [Actualizaciones masivas de metadatos](#metadataupdates) |
 | [Rango de búsqueda y aumento](#searchrank) | [Extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
 | [Búsqueda avanzada: filtrado y ámbito de la búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprensión y solución de problemas de resultados inesperados](#unexpected-results) |
-| [Buscar desde otras soluciones y aplicaciones](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicación de escritorio de Experience Manager](#desktop-app)</li><li>[Imágenes de Adobe Stock](#adobe-stock)</li><li>[Recursos de Dynamic Media](#dynamic-media)</li></ul> |  |  |
-| [Selector de recursos](#asset-picker) |  |  |
-| [Limitaciones](#limitations) y [Sugerencias](#tips) |  |  |
-| [Ejemplos ilustrados](#samples) |  |  |
+| [Buscar desde otras soluciones y aplicaciones](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicación de escritorio de Experience Manager](#desktop-app)</li><li>[Imágenes de Adobe Stock](#adobe-stock)</li><li>[Recursos de Dynamic Media](#dynamic-media)</li></ul> | | |
+| [Selector de recursos](#asset-picker) | | |
+| [Limitaciones](#limitations) y [Sugerencias](#tips) | | |
+| [Ejemplos ilustrados](#samples) | | |
 
 Busque recursos digitales mediante el campo Omnisearch de la parte superior de la [!DNL Experience Manager] interfaz web. Ir a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]** in [!DNL Experience Manager], haga clic en ![search_icon](assets/do-not-localize/search_icon.png) en la barra superior, introduzca palabra clave de búsqueda y seleccione `Return`. También puede utilizar el método abreviado de palabra clave `/` (barra diagonal) para abrir el campo Omnisearch. `Location:Assets` está preseleccionada para limitar las búsquedas a recursos DAM. [!DNL Experience Manager] proporciona sugerencias cuando empiece a escribir una palabra clave de búsqueda.
 
@@ -176,7 +176,7 @@ Puede buscar recursos digitales en función de los valores exactos de los campos
 | A tiempo | ontime:AAAA-MM-DDTHH |
 | Tiempo de inactividad | tiempo de inactividad:AAAA-MM-DDTHH |
 | Intervalo de tiempo (caduca dateontime,offtime) | campo faceta : límite inferior.límite superior |
-| Ruta  | /content/dam/&lt;folder name=&quot;&quot;> |
+| Ruta | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título del PDF | pdftitle:&quot;Documento de Adobe&quot; |
 | Asunto | asunto: &quot;Formación&quot; |
 | Etiquetas | tags:&quot;Ubicación y viaje&quot; |
@@ -252,7 +252,7 @@ Pase los siguientes parámetros de solicitud en una URL para iniciar el selector
 | `mode` | individual, múltiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En el modo múltiple, puede seleccionar varios recursos simultáneamente mediante el selector de recursos. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilice estos parámetros para abrir el selector de recursos como cuadro de diálogo de Granite. Esta opción solo es aplicable cuando se inicia el selector de recursos a través del campo Granite Path y se configura como URL de pickerSrc. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilice esta opción para especificar la carpeta raíz del selector de recursos. En este caso, el selector de recursos le permite seleccionar solo recursos secundarios (directos/indirectos) en la carpeta raíz. |
-| `viewmode` | buscar |  | Para iniciar el selector de recursos en modo de búsqueda, con `assettype` y `mimetype` parámetros. |
+| `viewmode` | buscar | | Para iniciar el selector de recursos en modo de búsqueda, con `assettype` y `mimetype` parámetros. |
 | `assettype` | Imágenes, documentos, multimedia, archivos. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Utilice la opción para filtrar los tipos de recursos en función del valor proporcionado. |
 | `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) de un recurso (también se admite el comodín ). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Utilícelo para filtrar recursos en función del tipo MIME. |
 
@@ -467,7 +467,7 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 
 Cree una versión para los recursos que se muestran en los resultados de búsqueda. Seleccione el recurso y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Versión]**. Añada una etiqueta opcional o un comentario y haga clic en **[!UICONTROL Crear]**. También puede seleccionar varios recursos y crear versiones para ellos simultáneamente.
 
-### Creación de un flujo de trabajo {#create-workflow}
+### Crear un flujo de trabajo {#create-workflow}
 
 De forma similar a la capacidad Crear versión, también puede crear un flujo de trabajo para los recursos que se muestran en los resultados de búsqueda. Seleccione los recursos y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Flujo de trabajo]**. Seleccione el modelo del flujo de trabajo, especifique un título para el flujo de trabajo y haga clic en **[!UICONTROL Inicio]**.
 
@@ -487,11 +487,10 @@ Relacionar y desrelacionar recursos que se muestran en los resultados de búsque
 | El filtro de búsqueda o un predicado no están disponibles. | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no se personalizan en la implementación que está utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene los privilegios y permisos para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para [!DNL Assets] implementación que está utilizando.</li></ul> |
 | Al buscar imágenes visualmente similares, falta una imagen esperada. | <ul><li>La imagen no está disponible en [!DNL Experience Manager].</li><li>La imagen no está indexada. Normalmente, cuando se carga recientemente.</li><li>La imagen no está etiquetada de forma inteligente.</li></ul> | <ul><li>Añadir la imagen a [!DNL Assets].</li><li>Póngase en contacto con el administrador para volver a indexar el repositorio. Además, asegúrese de que está utilizando el índice adecuado.</li><li>Póngase en contacto con el administrador para etiquetar de forma inteligente los recursos relevantes.</li></ul> |
 | Al buscar imágenes visualmente similares, se muestra una imagen irrelevante. | Comportamiento visual de búsqueda. | [!DNL Experience Manager] muestra tantos recursos relevantes como sea posible. Las imágenes menos relevantes, si las hay, se añaden a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen al desplazarse hacia abajo en los resultados de búsqueda. |
-| Al seleccionar y operar en los resultados de búsqueda, todos los recursos buscados no se operan. | El [!UICONTROL Seleccionar todo] La opción solo selecciona los primeros 100 resultados de búsqueda en la vista de tarjeta y los primeros 200 resultados de búsqueda en la vista de lista. |  |
+| Al seleccionar y operar en los resultados de búsqueda, todos los recursos buscados no se operan. | El [!UICONTROL Seleccionar todo] La opción solo selecciona los primeros 100 resultados de búsqueda en la vista de tarjeta y los primeros 200 resultados de búsqueda en la vista de lista. | |
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] guía de implementación de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuración avanzada para mejorar los resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configuración de la búsqueda de traducción inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
-

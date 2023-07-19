@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2348'
 ht-degree: 3%
 
 ---
@@ -70,16 +70,16 @@ Consulte [CLOUD SERVICES ConfigurE DE DYNAMIC MEDIA](/help/assets/config-dms7.md
       * [Organización de recursos digitales](/help/assets/organize-assets.md#organize-digital-assets).
       * [Búsqueda de recursos 3D](/help/assets/search-assets.md).
       * [Uso de predicados personalizados para filtrar los resultados de búsqueda](/help/assets/search-assets.md#custompredicates).
+
    * Ver recursos 3D
 
       * [Visualización e interacción con recursos 3D](#viewing-three-d-assets).
       * [Administrar el ajuste preestablecido de visualizador dimensional](/help/assets/managing-viewer-presets.md).
+
    * Trabajo con metadatos de recursos 3D
 
       * [Administración de metadatos para recursos digitales](/help/assets/metadata.md).
       * [Esquemas de metadatos](/help/assets/metadata-schemas.md).
-
-
 
 1. **Publicación de recursos 3D**
 
@@ -125,11 +125,11 @@ Consulte también [Vista previa de recursos mediante la interfaz de software](/h
    | Ver | Descripción | Acción del ratón | Acción de pantalla táctil |
    | --- | --- | --- | --- |
    | **Gire la cámara** | Haga girar la vista alrededor de la escena 3D y de los objetos. | Haga clic con el botón izquierdo + arrastre. | Presione con un solo dedo + arrastre. |
-   | **Panorámica de la cámara** | Mueva la vista de forma panorámica a la izquierda, a la derecha, arriba o abajo. | Haga clic con el botón derecho + arrastre. | Presione con dos dedos + arrastre. |
+   | **Panorámica de la cámara** | Mueva la vista de forma panorámica a la izquierda, a la derecha, arriba o abajo. | Haga clic con el botón derecho y arrastre. | Presione con dos dedos + arrastre. |
    | **Zoom de la cámara** | Desplazarse dentro y fuera de las áreas de la escena 3D. | Rueda de desplazamiento. | Pellizco de dos dedos. |
    | **Vuelva a centrar su cámara** | Vuelva a centrar la cámara en un punto de un objeto de la escena 3D. | Haga doble clic en. | Pulse dos veces. |
-   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |  |  |
-   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |  |  |
+   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |   |   |
+   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |   |   |
 
 1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Cerrar]** para volver a la página Assets.
 
@@ -150,7 +150,7 @@ Consulte también [Vista previa de recursos mediante la interfaz de software](/h
    * Cerca de la parte superior derecha de la página, seleccione **[!UICONTROL Previsualizar]** para entrar **[!UICONTROL Previsualizar]** modo.
    * Eliminar `/editor.html` desde la dirección URL de la página en el explorador.
 
-Un recurso 3D completamente interactivo, como se muestra en    ![Recurso 3D que se muestra dentro del componente de medios 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+   ![Recurso 3D que se muestra dentro del componente de medios 3D](/help/assets/assets-dm/3d-asset-in-3d-media.png)
 Un recurso 3D completamente interactivo, como se muestra en **[!UICONTROL Previsualizar]** modo.
 
 1. Mientras está en **[!UICONTROL Previsualizar]** modo, realice una de las siguientes acciones:
@@ -158,11 +158,11 @@ Un recurso 3D completamente interactivo, como se muestra en **[!UICONTROL Previs
    | Ver | Descripción | Acción del ratón | Acción de pantalla táctil |
    | --- | --- | --- | --- |
    | **Gire la cámara** | Haga girar la vista alrededor de la escena 3D y de los objetos. | Haga clic con el botón izquierdo + arrastre. | Presione con un solo dedo + arrastre. |
-   | **Panorámica de la cámara** | Mueva la vista de forma panorámica a la izquierda, a la derecha, arriba o abajo. | Haga clic con el botón derecho + arrastre. | Presione con dos dedos + arrastre. |
+   | **Panorámica de la cámara** | Mueva la vista de forma panorámica a la izquierda, a la derecha, arriba o abajo. | Haga clic con el botón derecho y arrastre. | Presione con dos dedos + arrastre. |
    | **Zoom de la cámara** | Desplazarse dentro y fuera de las áreas de la escena 3D. | Rueda de desplazamiento. | Pellizco de dos dedos. |
    | **Vuelva a centrar su cámara** | Vuelva a centrar la cámara en un punto de un objeto de la escena 3D. | Haga doble clic en. | Pulse dos veces. |
-   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |  |  |
-   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |  |  |
+   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |   |   |
+   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |   |   |
 
 ## Acerca del trabajo con el componente de medios en 3D {#working-with-three-d-media-component}
 
@@ -287,8 +287,8 @@ Utilice los dos métodos siguientes para publicar recursos de Dynamic Media 3D s
 
 * **[!UICONTROL URL]** - Uso **[!UICONTROL URL]** si utiliza un sistema de administración de contenido web de terceros y desea vincular recursos de Dynamic Media 3D a sus páginas web mediante el visualizador dimensional.
 
-   Consulte [Vinculación de URL en la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+  Consulte [Vinculación de URL en la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
 * **[!UICONTROL Incrustar]** - Uso **[!UICONTROL Incrustar]** si desea ver un recurso de Dynamic Media 3D incrustado en una página web mediante el visualizador dimensional. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en **[!UICONTROL Incrustar]** Cuadro de diálogo.
 
-   Consulte [Incrustar Dynamic Media Video, el visualizador de imágenes o el visualizador dimensional en una página web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  Consulte [Incrustar Dynamic Media Video, el visualizador de imágenes o el visualizador dimensional en una página web](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

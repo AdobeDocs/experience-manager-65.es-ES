@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2667'
+source-wordcount: '2668'
 ht-degree: 34%
 
 ---
@@ -174,7 +174,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
    <td>Sinónimo de páginas de modelos o modelos.</td>
   </tr>
   <tr>
-   <td><strong>Live Copy   </strong></td>
+   <td><strong>Live Copy</strong></td>
    <td>La copia (del origen), mantenida mediante acciones de sincronización definidas según las configuraciones de despliegue. </td>
    <td> </td>
   </tr>
@@ -444,6 +444,6 @@ MSM proporciona herramientas para que su implementación se pueda adaptar a las 
 * **Acciones de sincronización personalizadas**
   [Crear una acción de sincronización personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) cuando las acciones instaladas no cumplen los requisitos específicos de la aplicación. MSM proporciona una API de Java para crear acciones de sincronización personalizadas.
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas {#best-practices}
 
 La página [Prácticas recomendadas de MSM](/help/sites-administering/msm-best-practices.md) contiene información importante sobre la implementación.
