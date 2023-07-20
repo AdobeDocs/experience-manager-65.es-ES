@@ -1,16 +1,12 @@
 ---
 title: Agregar dominios
-seo-title: Adding domains
 description: Obtenga información sobre cómo agregar un dominio empresarial, local o híbrido mediante la configuración de Administración de dominios y consideraciones generales para nombres de dominio e ID.
-seo-description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.
-uuid: 3ae1e5d4-ea5b-4e0b-be97-3957c3702d5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%

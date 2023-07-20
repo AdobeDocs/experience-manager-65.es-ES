@@ -1,17 +1,15 @@
 ---
 title: Gestión básica
-description: AEM Información general sobre la administración básica al utilizar el entorno de autor de la. Utiliza la consola Sitios como base.
-uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
+description: Información general sobre la administración básica al utilizar el entorno de creación de Adobe Experience Manager. Utiliza la consola Sitios como base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 6%
+source-wordcount: '1167'
+ht-degree: 7%
 
 ---
 
@@ -19,17 +17,17 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->* AEM Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de. Utiliza la consola **Sitios** como base. 
+>* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager AEM (). Utiliza la consola **Sitios** como base. 
 >
->* Algunas funcionalidades no están disponibles en todas las consolas o hay funcionalidades adicionales disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se tratará con más detalle en otras páginas.
+>* Algunas funcionalidades no están disponibles en todas las consolas y otras adicionales en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [al editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## La pantalla de bienvenida {#the-welcome-screen}
 
-La IU clásica proporciona una selección de consolas, con mecanismos conocidos para navegar e iniciar acciones, como clics, doble clic y [menús contextuales](#context-menus).
+La IU clásica proporciona una selección de consolas mediante mecanismos conocidos para navegar e iniciar acciones, como hacer clic, hacer doble clic y [menús contextuales](#context-menus).
 
-Al iniciar sesión, se mostrará la pantalla de bienvenida, que proporciona una lista de vínculos a consolas y servicios:
+Después del inicio de sesión, se muestra la pantalla de bienvenida. Proporciona una lista de vínculos a consolas y servicios:
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -57,7 +55,7 @@ Las consolas principales son:
   </tr>
   <tr>
    <td><strong>Bandeja de entrada </strong></td>
-   <td>En muchos casos, varias personas participan en las subtareas de un flujo de trabajo y cada persona debe completar su paso antes de entregar el trabajo a la siguiente persona. La bandeja de entrada le permite ver las notificaciones relacionadas con dichas tareas. Consulte <a href="/help/sites-administering/workflows.md">Uso de flujos de trabajo</a>. <br /> </td>
+   <td>A menudo, varias personas participan en las subtareas de un flujo de trabajo y cada persona debe completar su paso antes de entregar el trabajo a la siguiente persona. La bandeja de entrada le permite ver las notificaciones relacionadas con dichas tareas. Consulte <a href="/help/sites-administering/workflows.md">Uso de flujos de trabajo</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Etiquetado</strong></td>
@@ -65,19 +63,19 @@ Las consolas principales son:
   </tr>
   <tr>
    <td><strong>Herramientas</strong></td>
-   <td>El <a href="/help/sites-administering/tools-consoles.md">Herramientas consolas</a> proporciona acceso a una serie de herramientas y consolas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.</td>
+   <td>El <a href="/help/sites-administering/tools-consoles.md">Herramientas consolas</a> proporciona acceso a varias herramientas y consolas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.</td>
   </tr>
   <tr>
    <td><strong>Usuarios</strong></td>
-   <td>Estas consolas le permiten administrar los derechos de acceso de usuarios y grupos. Para obtener información detallada, consulte <a href="/help/sites-administering/security.md">Administración de usuarios y seguridad</a>.<br /> </td>
+   <td>Estas consolas le permiten administrar los derechos de acceso de usuarios y grupos. Para obtener más información, consulte <a href="/help/sites-administering/security.md">Administración de usuarios y seguridad</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Sitios web</strong></td>
-   <td>Las consolas Sitios web le permiten <a href="/help/sites-classic-ui-authoring/classic-page-author.md">creación, visualización y administración de sitios web</a> AEM ejecución en la instancia de la. A través de estas consolas puede crear, copiar, mover y eliminar páginas del sitio web, iniciar flujos de trabajo y activar (publicar) páginas. También puede abrir una página para editarla.<br /> </td>
+   <td>Las consolas Sitios web le permiten <a href="/help/sites-classic-ui-authoring/classic-page-author.md">crear, ver y administrar sitios web</a> AEM ejecución en la instancia de la. A través de estas consolas puede crear, copiar, mover y eliminar páginas del sitio web, iniciar flujos de trabajo y activar (publicar) páginas. También puede abrir una página para editarla.<br /> </td>
   </tr>
   <tr>
    <td><strong>Flujos de trabajo</strong></td>
-   <td>Un flujo de trabajo es una serie definida de pasos que describe el proceso de completar una tarea. En muchos casos, varias personas participan en una tarea y cada persona debe completar su paso antes de entregar el trabajo a la siguiente persona. La consola Flujo de trabajo permite crear modelos de flujo de trabajo y administrar las instancias de flujo de trabajo en ejecución. Consulte <a href="/help/sites-administering/workflows.md">Uso de flujos de trabajo</a>.<br /> </td>
+   <td>Un flujo de trabajo es una serie definida de pasos que describe el proceso de completar una tarea. A menudo, varias personas participan en una tarea y cada persona debe completar su paso antes de entregar el trabajo a la siguiente persona. La consola Flujo de trabajo permite crear modelos de flujo de trabajo y administrar las instancias de flujo de trabajo en ejecución. Consulte <a href="/help/sites-administering/workflows.md">Uso de flujos de trabajo</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -104,7 +102,7 @@ Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-page
 
 ## Acceso a la Ayuda   {#accessing-help}
 
-En varias consolas (por ejemplo, sitios web) también hay **Ayuda** está disponible, se abrirá Package Share o el sitio de documentación.
+En varias consolas (por ejemplo, sitios web), una **Ayuda** está disponible. Clic **Ayuda** abre Package Share o el sitio de documentación.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -114,14 +112,14 @@ Al editar una página, la variable [la barra de tareas también tiene un botón 
 
 El **Sitios web** La consola de enumera las páginas de contenido en una estructura de árbol (panel izquierdo). Para facilitar la navegación, las secciones de la estructura de árbol se pueden expandir (+) o contraer (-) según sea necesario:
 
-* Un solo clic en el nombre de la página (en el panel izquierdo):
+* Al hacer clic en el nombre de página en el panel izquierdo, se hace lo siguiente:
 
-   * Enumeración de las páginas secundarias en el panel derecho
-   * Expanda también la estructura en el panel izquierdo.
+   * Muestra las páginas secundarias del panel derecho
+   * Expande la estructura en el panel izquierdo.
 
      Por motivos de rendimiento, esta acción depende del número de nodos secundarios. Con una instalación estándar, este método de expansión funciona cuando hay `30` o menos nodos secundarios.
 
-* Un doble clic en el nombre de la página (panel izquierdo) también expandirá el árbol, aunque como la página se abre al mismo tiempo este efecto no es tan obvio.
+* Al hacer doble clic en el nombre de la página (panel izquierdo), se expande el árbol, aunque este efecto no es tan obvio cuando se abre la página al mismo tiempo.
 
 >[!NOTE]
 >
@@ -140,7 +138,7 @@ El **Sitios web** La consola de enumera las páginas de contenido en una estruct
 >en:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulte [SiteAdmin en la API del widget CQ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obtener más información.
+>Consulte [SiteAdmin en la API del widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obtener más información.
 
 ## Información de página en la consola Sitios web {#page-information-on-the-websites-console}
 
@@ -182,7 +180,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
   </tr>
   <tr>
    <td>Estado</td>
-   <td>Indica el estado actual de la página; por ejemplo, si la página forma parte de un flujo de trabajo o Live Copy, o si una página está bloqueada en ese momento.</td>
+   <td>Indica el estado de la página, como si forma parte de un flujo de trabajo o Live Copy, o si está bloqueada.</td>
   </tr>
   <tr>
    <td>Impresiones</td>
@@ -209,7 +207,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
 
 >[!NOTE]
 >
->Para seleccionar las columnas visibles, pase el ratón sobre el título de una columna. Se mostrará un menú desplegable, desde donde puede utilizar la variable **Columnas** opción.
+>Para seleccionar las columnas visibles, pase el ratón sobre un título de columna. Se muestra un menú desplegable y, desde aquí, puede utilizar la variable **Columnas** opción.
 
 Los colores que aparecen junto a las páginas del **Publicado** y **Modificado** Las columnas indican el estado de publicación:
 
@@ -224,6 +222,6 @@ Los colores que aparecen junto a las páginas del **Publicado** y **Modificado**
 
 ## Menús contextuales {#context-menus}
 
-La IU clásica utiliza mecanismos bien conocidos para navegar e iniciar acciones, como hacer clic y hacer doble clic. Dependiendo de la situación actual, también están disponibles una serie de menús contextuales (generalmente abiertos con el botón derecho del ratón):
+La IU clásica utiliza mecanismos bien conocidos para navegar e iniciar acciones, como hacer clic y hacer doble clic. Dependiendo de la situación actual, también están disponibles una serie de menús contextuales (abiertos con el botón derecho del ratón):
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)

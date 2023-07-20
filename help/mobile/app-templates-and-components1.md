@@ -1,18 +1,14 @@
 ---
 title: Plantillas y componentes de aplicación
-seo-title: App Templates and Components
 description: Siga esta página para obtener más información sobre las plantillas y los componentes de la aplicación. Proporciona información detallada sobre la estructura de las plantillas.
-seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
@@ -25,14 +21,14 @@ ht-degree: 1%
 
 Se utiliza una plantilla para crear una página y define qué componentes se pueden utilizar dentro del ámbito seleccionado. Una plantilla es una jerarquía de nodos que tiene la misma estructura que la página que se va a crear, pero sin contenido real.
 
-Cada plantilla le presentará una selección de componentes disponibles para su uso.
+Cada plantilla le presenta una selección de componentes disponibles para su uso.
 
 * Las plantillas están compuestas por [Componentes](/help/sites-developing/components.md);
 * Los componentes utilizan los widgets y permiten el acceso a ellos, y se utilizan para procesar el contenido.
 
 >[!NOTE]
 >
->AEM Para obtener información sobre cómo desarrollar la aplicación de con CRXDE Lite, consulte [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Para obtener información sobre cómo desarrollar la aplicación de Adobe Experience Manager AEM () mediante CRXDE Lite, consulte [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Una plantilla es la base de una página.
 
@@ -54,7 +50,7 @@ Se pueden configurar varias propiedades, en particular:
 * **jcr:título** - título de la plantilla; aparece en el cuadro de diálogo al crear una página.
 * **jcr:description** - descripción de la plantilla; aparece en el cuadro de diálogo al crear una página.
 
-Este nodo contiene *a.jcr:content (cq:PageContent)* nodo que se utilizará como base para el nodo de contenido de las páginas resultantes; esto hace referencia a, mediante *sling:resourceType*, el componente que se utilizará para procesar el contenido real de una nueva página.
+Este nodo contiene *a.jcr:content (cq:PageContent)* que se utiliza como base para el nodo de contenido de las páginas resultantes. Esto hace referencia a, mediante *sling:resourceType*, el componente que se utilizará para procesar el contenido real de una nueva página.
 
 >[!NOTE]
 >

@@ -1,27 +1,24 @@
 ---
-title: Aplicación de escritorio para AEM Forms
-seo-title: AEM desktop app for AEM Forms
-description: Aplicación de escritorio para AEM Forms
-uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
+title: Aplicación de escritorio de Adobe Experience Manager AEM () para AEM Forms
+description: Aplicación de escritorio de Adobe Experience Manager AEM () para AEM Forms
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: manage
-discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 94%
+source-wordcount: '430'
+ht-degree: 86%
 
 ---
 
-# Aplicación de escritorio para AEM Forms {#aem-desktop-app-for-aem-forms}
+# Aplicación de escritorio de Adobe Experience Manager AEM () para AEM Forms {#aem-desktop-app-for-aem-forms}
 
 La aplicación de escritorio de AEM le permite asignar el repositorio de recursos de Adobe Experience Manager (AEM) y los archivos binarios de AEM Forms a un directorio de red del sistema. Puede ver los recursos sincronizados y los archivos binarios en un explorador de archivos y usar varias aplicaciones para editar los archivos como desee. Además de ver los archivos, también puede crear, cargar y eliminar los archivos binarios. También puede abrir, editar y guardar archivos directamente desde el software. Por ejemplo, puede abrir y editar directamente un archivo XDP desde Designer. Los cambios que realice en los recursos localmente se reflejarán en el repositorio de AEM Assets y en la interfaz de usuario de AEM Forms.
 
-Puede descargar la aplicación desde una instancia de AEM. Para obtener información detallada sobre cómo descargar la aplicación, consulte [Notas de la versión de la aplicación de escritorio de AEM](https://helpx.adobe.com/es/experience-manager/desktop-app/release-notes.html).
+Puede descargar la aplicación desde una instancia de AEM. Para obtener información detallada sobre cómo descargar la aplicación, consulte [Notas de la versión de la aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
 
 ## Recursos de AEM Forms compatibles con la aplicación de escritorio de AEM {#aem-forms-assets-supported-in-aem-desktop-app}
 
