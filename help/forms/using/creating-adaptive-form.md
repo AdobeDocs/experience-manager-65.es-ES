@@ -5,16 +5,18 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 6ab2538dd8095304a55433c15c8c3d095499d92c
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 100%
+source-wordcount: '1898'
+ht-degree: 98%
 
 ---
 
 # Crear un formulario adaptable {#creating-an-adaptive-form}
 
-## <strong>Crear un formulario adaptable</strong> {#strong-create-an-adaptive-form-strong}
+<span class="preview"> En este artículo se describe un enfoque antiguo de Forms adaptable. Adobe recomienda utilizar [Componentes principales de Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) para crear formularios nuevos. Estos componentes representan un [avance significativo en la creación de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es), lo que garantiza una experiencia de usuario impresionante.</span>
+
+## Crear un formulario adaptable {#strong-create-an-adaptive-form-strong}
 
 Siga estos pasos para crear un formulario adaptable.
 
