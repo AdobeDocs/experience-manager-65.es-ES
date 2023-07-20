@@ -4,7 +4,7 @@ seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credenti
 description: Pasos para integrar la integración de Salesforce con AEM Forms mediante el flujo de credenciales de cliente de OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 2%
@@ -79,4 +79,4 @@ Swagger es un conjunto de reglas, especificaciones y herramientas de código abi
 1. Clic **[!UICONTROL Probar conexión]**.
 1. Si la conexión se realiza correctamente, haga clic en **[!UICONTROL Crear]** botón.
 
-Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) para integrar la fuente de datos configurada con el formulario adaptable.
+Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) para integrar la fuente de datos configurada con su Forms adaptable.
