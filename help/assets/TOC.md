@@ -6,10 +6,12 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+role: User
+feature: Asset Management
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -110,7 +112,7 @@ ht-degree: 46%
    + [Esquemas de metadatos](metadata-schemas.md)
    + [XMP respuesta de escritura a las representaciones de](xmp-writeback.md)
    + [Uso compartido de vínculos de recursos](link-sharing.md)
-   + [Informes de Asset](asset-reports.md)
+   + [Informes de recurso](asset-reports.md)
    + [Configuración del servicio de contenido inteligente para etiquetado](config-smart-tagging.md)
    + [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md)
    + [Crear y configurar páginas del Editor de recursos](assets-finder-editor.md)
@@ -137,7 +139,7 @@ ht-degree: 46%
    + [Filigrana tus recursos](watermarking.md)
    + [Plantillas de recursos](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configuración de  [!DNL Assets]  con  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicación de recursos en  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar carpetas en [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicación de colecciones en [!DNL Brand Portal]](brand-portal-publish-collection.md)
