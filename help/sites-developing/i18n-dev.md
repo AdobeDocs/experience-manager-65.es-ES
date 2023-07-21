@@ -1,36 +1,32 @@
 ---
 title: Internacionalización de cadenas de IU
-seo-title: Internationalizing UI Strings
-description: Las API de Java y JavaScript permiten internacionalizar cadenas
-seo-description: Java and JavaScript APIs enable you to internationalize strings
-uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
+description: Las API de Java&trade; y JavaScript permiten internacionalizar cadenas
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
 
 # Internacionalización de cadenas de IU {#internationalizing-ui-strings}
 
-Las API de Java y JavaScript permiten internacionalizar cadenas en los siguientes tipos de recursos:
+Las API de Java™ y JavaScript permiten internacionalizar cadenas en los siguientes tipos de recursos:
 
-* Archivos de origen Java.
+* Archivos de origen Java™.
 * Scripts JSP.
 * JavaScript en bibliotecas del lado del cliente o en origen de página.
 * Valores de propiedad del nodo JCR utilizados en cuadros de diálogo y propiedades de configuración de componentes.
 
 Para ver una descripción general del proceso de internacionalización y localización, consulte [Internacionalización de componentes](/help/sites-developing/i18n.md).
 
-## Internacionalización de cadenas en código Java y JSP {#internationalizing-strings-in-java-and-jsp-code}
+## Internacionalización de cadenas en código Java™ y JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-El `com.day.cq.i18n` El paquete Java permite mostrar cadenas localizadas en la interfaz de usuario. El `I18n` proporciona la clase `get` AEM método que recupera cadenas localizadas del diccionario de recursos de la. El único parámetro requerido del `get` El método es el literal de cadena en inglés. El idioma predeterminado de la interfaz de usuario es inglés. En el siguiente ejemplo, se localiza la palabra `Search`:
+El `com.day.cq.i18n` El paquete Java™ le permite mostrar cadenas localizadas en la interfaz de usuario. El `I18n` proporciona la clase `get` método que recupera cadenas localizadas del diccionario de Adobe Experience Manager AEM (). El único parámetro requerido del `get` El método es el literal de cadena en inglés. El idioma predeterminado de la interfaz de usuario es inglés. En el siguiente ejemplo, se localiza la palabra `Search`:
 
 `i18n.get("Search");`
 
@@ -48,7 +44,7 @@ Existen dos formas de determinar el idioma que prefiere el usuario:
 
 La propiedad language de la cuenta de usuario es el método preferido porque es más confiable. Sin embargo, el usuario debe haber iniciado sesión para utilizar este método.
 
-#### Creación del objeto Java I18n {#creating-the-i-n-java-object}
+#### Creación del objeto Java™ I18n {#creating-the-i-n-java-object}
 
 La clase I18n proporciona dos constructores. La forma de determinar el idioma preferido del usuario determina el constructor que se va a utilizar.
 
@@ -60,7 +56,7 @@ I18n i18n = new I18n(slingRequest);
 
 El constructor utiliza el `SlingHTTPRequest` para recuperar la configuración de idioma del usuario.
 
-Para utilizar la configuración regional de la página para determinar el idioma, primero debe obtener el ResourceBundle para el idioma de la página solicitada:
+Para utilizar la configuración regional de la página para determinar el idioma, obtenga primero el ResourceBundle del idioma de la página solicitada:
 
 ```java
 Locale pageLang = currentPage.getLanguage(false);
@@ -106,7 +102,7 @@ La cadena internacionalizada y la sugerencia de traducción deben coincidir exac
 
 #### Uso del método Get estático {#using-the-static-get-method}
 
-El `I18N` define una clase estática `get` que resulta útil cuando necesita localizar un pequeño número de cadenas. Además de los parámetros de un objeto `get` método, el método estático requiere lo siguiente `SlingHttpRequest` objeto o el `ResourceBundle` que utilice, según cómo vaya a determinar el idioma preferido del usuario:
+El `I18N` define una clase estática `get` que resulta útil cuando se deben localizar unas pocas cadenas. Además de los parámetros de un objeto `get` método, el método estático requiere lo siguiente `SlingHttpRequest` objeto o el `ResourceBundle` que utilice, según cómo vaya a determinar el idioma preferido del usuario:
 
 * Utilice la preferencia de idioma del usuario: Proporcione SlingHttpRequest como el primer parámetro.
 
@@ -117,11 +113,11 @@ El `I18N` define una clase estática `get` que resulta útil cuando necesita loc
 
 ### Internacionalización de cadenas en código JavaScript {#internationalizing-strings-in-javascript-code}
 
-La API de JavaScript permite localizar cadenas en el cliente. Al igual que con [Java y JSP](#internationalizing-strings-in-java-and-jsp-code) , la API de JavaScript permite identificar cadenas para localizar, proporcionar sugerencias de localización e incluir variables en las cadenas localizadas.
+La API de JavaScript permite localizar cadenas en el cliente. Al igual que con [Java™ y JSP](#internationalizing-strings-in-java-and-jsp-code) , la API de JavaScript permite identificar cadenas para localizar, proporcionar sugerencias de localización e incluir variables en las cadenas localizadas.
 
 El `granite.utils` [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md) proporciona la API de JavaScript. Para utilizar la API, incluya esta carpeta de biblioteca de cliente en su página. Las funciones de localización utilizan `Granite.I18n` namespace.
 
-Antes de presentar cadenas localizadas, debe establecer la configuración regional utilizando `Granite.I18n.setLocale` función. La función requiere el código de idioma de la configuración regional como argumento:
+Antes de presentar cadenas localizadas, establezca la configuración regional utilizando `Granite.I18n.setLocale` función. La función requiere el código de idioma de la configuración regional como argumento:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -140,7 +136,7 @@ Granite.I18n.setLocale("fr");
 Granite.I18n.get("string to localize", [variables], "localization hint");
 ```
 
-Los parámetros de función son diferentes al método Java I18n.get:
+Los parámetros de función son diferentes del método Java™ I18n.get:
 
 * El primer parámetro es el literal de cadena que se va a localizar.
 * El segundo parámetro es una matriz de valores que se van a insertar en el literal de cadena.
@@ -166,7 +162,7 @@ El siguiente ejemplo de script JSP recupera la variable `jcr:title` del reposito
 
 #### Especificar sugerencias de traducción para nodos JCR {#specifying-translation-hints-for-jcr-nodes}
 
-Similar a [sugerencias de traducción en la API de Java](#using-translation-hints), puede proporcionar sugerencias de traducción para distinguir cadenas duplicadas en el diccionario. Proporcione la sugerencia de traducción como una propiedad del nodo que contiene la propiedad internacionalizada. El nombre de la propiedad hint consta del nombre de la propiedad internacionalizada con el nombre `_commentI18n` sufijo:
+Similar a [sugerencias de traducción en la API de Java™](#using-translation-hints), puede proporcionar sugerencias de traducción para distinguir cadenas duplicadas en el diccionario. Proporcione la sugerencia de traducción como una propiedad del nodo que contiene la propiedad internacionalizada. El nombre de la propiedad hint está compuesto por el nombre de la propiedad internacionalizada con el nombre `_commentI18n` sufijo:
 
 `${prop}_commentI18n`
 

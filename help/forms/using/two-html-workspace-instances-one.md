@@ -1,26 +1,22 @@
 ---
 title: Alojar dos instancias de espacio de trabajo de AEM Forms en un servidor
-seo-title: Hosting two AEM Forms workspace instances on one server
 description: Cómo los administradores de LC pueden personalizar HTML WS para alojar dos instancias en un único servidor accesible mediante distintas URL.
-seo-description: How LC administrators can customize HTML WS to host two instances on a single server accessible via different URLs.
-uuid: 0584f512-6b92-4418-b71c-93605cfa1927
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 82%
 
 ---
 
 # Alojar dos instancias de espacio de trabajo de AEM Forms en un servidor {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
-La instalación y configuración predeterminadas de AEM Forms permiten que solo haya un espacio de trabajo de AEM Forms disponible en el servidor. Sin embargo, puede que necesite alojar dos instancias diferentes de AEM Forms Workspace en un único servidor de AEM Forms. Las dos instancias son accesibles desde direcciones URL diferentes.
+La instalación y configuración predeterminadas de AEM Forms permiten que solo haya un espacio de trabajo de AEM Forms disponible en el servidor. Sin embargo, es posible que necesite alojar dos instancias diferentes de AEM Forms Workspace en un único servidor de AEM Forms. Se puede acceder a las dos instancias desde direcciones URL diferentes.
 
-Los administradores de AEM Forms personalizan el espacio de trabajo para crear dos direcciones URL diferentes y hacer que dos espacios de trabajo estén disponibles en el mismo servidor. En este artículo de personalización, asumimos que los dos espacios de trabajo son accesibles en `https://'[server]:[port]'/lc/ws` y `https://'[server]:[port]':/lc/ws2`.
+Los administradores de AEM Forms personalizan el espacio de trabajo para crear dos direcciones URL diferentes y hacer que dos espacios de trabajo estén disponibles en el mismo servidor. En este artículo de personalización, puede suponer que los dos espacios de trabajo son accesibles en `https://'[server]:[port]'/lc/ws` y `https://'[server]:[port]':/lc/ws2`.
 
 Siga estos pasos para configurar AEM Forms Workspace.
 

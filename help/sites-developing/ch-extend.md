@@ -1,18 +1,14 @@
 ---
 title: Ampliación de ContextHub
-seo-title: Extending ContextHub
 description: Defina nuevos tipos de módulos y tiendas de ContextHub cuando los que se proporcionan no cumplan con los requisitos de su solución
-seo-description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
-uuid: 1d80c01d-ec5d-4e76-849d-bec0e1c3941a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -23,9 +19,9 @@ Defina nuevos tipos de módulos y tiendas de ContextHub cuando los que se propor
 
 ## Crear candidatos de tienda personalizados {#creating-custom-store-candidates}
 
-Las tiendas de ContextHub se crean a partir de candidatos de tiendas registradas. Para crear un almacén personalizado, debe crear y registrar un candidato de almacén.
+Las tiendas de ContextHub se crean a partir de candidatos de tiendas registradas. Para crear un almacén personalizado, cree y registre un candidato de almacén.
 
-El archivo javascript que incluye el código que crea y registra el candidato al almacén debe incluirse en un [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md#creating-client-library-folders). La categoría de la carpeta debe coincidir con el siguiente patrón:
+El archivo JavaScript que incluye el código que crea y registra el candidato de tienda debe incluirse en un [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md#creating-client-library-folders). La categoría de la carpeta debe coincidir con el siguiente patrón:
 
 ```xml
 contexthub.store.[storeType]
@@ -42,7 +38,7 @@ Para crear un candidato de tienda, se utiliza el [`ContextHub.Utils.inheritance.
 * [`ContextHub.Store.JSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Tenga en cuenta que cada almacén base amplía la variable [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) tienda.
+Cada almacén base amplía el [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) tienda.
 
 En el siguiente ejemplo se crea la extensión más sencilla del `ContextHub.Store.PersistedStore` candidato de tienda:
 
@@ -51,7 +47,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-De forma realista, los candidatos de la tienda personalizada definirán funciones adicionales o anularán la configuración inicial de la tienda. Varios [candidatos de tienda de muestra](/help/sites-developing/ch-samplestores.md) están instalados en el repositorio a continuación `/libs/granite/contexthub/components/stores`. Para aprender de estos ejemplos, utilice CRXDE Lite para abrir los archivos javascript.
+De forma realista, los candidatos de la tienda personalizada definen funciones adicionales o anulan la configuración inicial de la tienda. Varios [candidatos de tienda de muestra](/help/sites-developing/ch-samplestores.md) están instalados en el repositorio a continuación `/libs/granite/contexthub/components/stores`. Para aprender de estos ejemplos, utilice CRXDE Lite para abrir los archivos JavaScript.
 
 ### Registro de un candidato de tienda de ContextHub {#registering-a-contexthub-store-candidate}
 
@@ -66,19 +62,19 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-En la mayoría de los casos, solo es necesario un candidato y la prioridad se puede establecer en `0`, pero si está interesado, puede obtener más información sobre [registros más avanzados,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) lo que permite elegir una de las pocas implementaciones de la tienda en función de la condición de javascript (`applies`) y prioridad de los candidatos.
+Por lo general, solo es necesario un candidato y la prioridad se puede establecer en `0`. Pero si está interesado, puede aprender acerca de [registros más avanzados,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) , que permite elegir una de las pocas implementaciones de la tienda en función de la condición de JavaScript (`applies`) y prioridad de los candidatos.
 
 ## Creación de tipos de módulos de IU de ContextHub {#creating-contexthub-ui-module-types}
 
-Cree tipos de módulos de IU personalizados cuando los que están [instalado con ContextHub](/help/sites-developing/ch-samplemodules.md) no cumpla con sus requisitos. Para crear un tipo de módulo de interfaz de usuario, cree un nuevo procesador de módulos de interfaz de usuario ampliando `ContextHub.UI.BaseModuleRenderer` y, a continuación, registrarla con `ContextHub.UI`.
+Cree tipos de módulos de IU personalizados cuando los que están [instalado con ContextHub](/help/sites-developing/ch-samplemodules.md) no cumpla con sus requisitos. Para crear un tipo de módulo de interfaz de usuario, cree un procesador de módulos de interfaz de usuario ampliando el `ContextHub.UI.BaseModuleRenderer` y, a continuación, registrarla con `ContextHub.UI`.
 
-Para crear un procesador de módulos de interfaz de usuario, cree un `Class` que contiene la lógica que procesa el módulo de interfaz de usuario. Como mínimo, la clase debe realizar las siguientes acciones:
+Para crear un procesador de módulos de IU, cree un `Class` que contiene la lógica que procesa el módulo de interfaz de usuario. Como mínimo, la clase debe realizar las siguientes acciones:
 
 * Ampliación de la `ContextHub.UI.BaseModuleRenderer` clase. Esta clase es la implementación base para todos los procesadores de módulos de IU. El `Class` define una propiedad denominada `extend` que se utiliza para asignar a esta clase el nombre que se está extendiendo.
 
 * Proporcione una configuración predeterminada. Crear un `defaultConfig` propiedad. Esta propiedad es un objeto que incluye las propiedades definidas para la variable [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) Módulo de interfaz de usuario y otras propiedades que necesite.
 
-La fuente de `ContextHub.UI.BaseModuleRenderer` se encuentra en /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.  Para registrar el procesador, utilice el [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) método del `ContextHub.UI` clase. Debe proporcionar un nombre para el tipo de módulo. Cuando los administradores crean un módulo de interfaz de usuario basado en este procesador, especifican este nombre.
+La fuente de `ContextHub.UI.BaseModuleRenderer` se encuentra en /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Para registrar el procesador, utilice el [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) método del `ContextHub.UI` clase. Proporcione un nombre para el tipo de módulo. Cuando los administradores crean un módulo de interfaz de usuario basado en este procesador, especifican este nombre.
 
 Cree y registre la clase de procesador en una función anónima de ejecución automática. El siguiente ejemplo se basa en el código fuente del módulo de interfaz de usuario contexthub.browserinfo. Este módulo de interfaz de usuario es una simple extensión del `ContextHub.UI.BaseModuleRenderer` clase.
 
@@ -107,7 +103,7 @@ Cree y registre la clase de procesador en una función anónima de ejecución au
 }());
 ```
 
-El archivo javascript que incluye el código que crea y registra el procesador debe incluirse en un [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md#creating-client-library-folders). La categoría de la carpeta debe coincidir con el siguiente patrón:
+El archivo JavaScript que incluye el código que crea y registra el procesador debe incluirse en un [carpeta de biblioteca de cliente](/help/sites-developing/clientlibs.md#creating-client-library-folders). La categoría de la carpeta debe coincidir con el siguiente patrón:
 
 ```xml
 contexthub.module.[moduleType]

@@ -1,16 +1,12 @@
 ---
 title: Exportador JSON para servicios de contenido
-seo-title: JSON Exporter for Content Services
 description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web de AEM tradicionales, mediante métodos estandarizados que cualquier cliente puede consumir.
-seo-description: AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages. They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client.
-uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 36%
@@ -61,29 +57,29 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
 * Por ejemplo, una dirección URL como:
 
-   ```shell
-   http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
+  ```
 
 * Ofrece contenido como:
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+  ![chlimage_1-193](assets/chlimage_1-193.png)
 
-   >[!NOTE]
-   >
-   >Puede [adaptar sus propios componentes](/help/sites-developing/json-exporter-components.md) para acceder y utilizar estos datos.
+  >[!NOTE]
+  >
+  >Puede [adaptar sus propios componentes](/help/sites-developing/json-exporter-components.md) para acceder y utilizar estos datos.
 
-   >[!NOTE]
-   >
-   >Aunque no es una implementación estándar, [se admiten varios selectores,](json-exporter-components.md#multiple-selectors) pero `model` debe ser el primero.
+  >[!NOTE]
+  >
+  >Aunque no es una implementación estándar, [se admiten varios selectores,](json-exporter-components.md#multiple-selectors) pero `model` debe ser el primero.
 
 ### Información adicional {#further-information}
 
 Consulte también lo siguiente:
 
-* API HTTP de Recursos
+* API HTTP de recursos
 
-   * [API HTTP de Recursos](/help/assets/mac-api-assets.md)
+   * [API HTTP de recursos](/help/assets/mac-api-assets.md)
 
 * Modelos Sling:
 

@@ -1,17 +1,15 @@
 ---
 title: Creación de un sitio web con todas las funciones (JSP)
-description: AEM Este tutorial le permite crear un sitio web completo con funciones de acceso a la página de inicio de sesión
-uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
+description: Este tutorial le enseña a crear un sitio web con todas las funciones con Adobe Experience Manager AEM ().
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '4935'
+source-wordcount: '4941'
 ht-degree: 3%
 
 ---
@@ -20,9 +18,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Este artículo describe cómo crear un sitio web con JSP y en función de la IU clásica. El Adobe AEM recomienda aprovechar las últimas tecnologías de la para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
+>Este artículo describe cómo crear un sitio web con JSP y en función de la IU clásica. El Adobe recomienda utilizar las últimas tecnologías de Adobe Experience Manager AEM () para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
 
-Este tutorial le permite crear un sitio web con todas las funciones con Adobe Experience Manager AEM (). El sitio web se basará en un sitio web genérico y está dirigido principalmente a los desarrolladores web. Todo el desarrollo se realiza dentro de un entorno de creación.
+AEM Este tutorial le permite crear un sitio web completo con la ayuda de la herramienta de creación de sitios web de. El sitio web se basará en un sitio web genérico y está dirigido principalmente a los desarrolladores web. Todo el desarrollo se realiza dentro de un entorno de creación.
 
 Este tutorial describe cómo:
 
@@ -42,7 +40,7 @@ Este tutorial describe cómo:
 
 1. Incluir varios componentes de base.
 
-Después de realizar todos los pasos, las páginas lucirán de la siguiente manera:
+Después de realizar todos los pasos, las páginas deben tener el siguiente aspecto:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -50,7 +48,7 @@ Después de realizar todos los pasos, las páginas lucirán de la siguiente mane
 
 Para seguir junto con el tutorial en lugar de realizar los ejercicios, descargue website-1.0.zip. AEM Este archivo es un paquete de contenido que contiene los resultados de este tutorial. Uso [Administrador de paquetes](/help/sites-administering/package-manager.md) para instalar el paquete en la instancia de autor.
 
-**NOTA:** La instalación de este paquete sobrescribirá cualquier recurso de la instancia de creación que haya creado con este tutorial.
+**NOTA:** La instalación de este paquete sobrescribe los recursos de la instancia de creación que haya creado con este tutorial.
 
 Paquete de contenido del sitio web
 
@@ -110,9 +108,9 @@ Archivo static.css de muestra e imágenes
 
 En esta sección, cree lo siguiente:
 
-* Plantilla de página de contenido que se utilizará para crear páginas de contenido en el sitio web de ejemplo
-* Componente de página de contenido que se utilizará para procesar páginas de contenido
-* El script de la página de contenido
+* Plantilla de página de contenido que se utiliza para crear páginas de contenido en el sitio web de ejemplo.
+* Componente de página de contenido que se utiliza para procesar páginas de contenido.
+* El script de la página de contenido.
 
 #### Creación de la plantilla de página de contenido {#creating-the-contentpage-template}
 
@@ -139,7 +137,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   El valor de la propiedad de ruta permitida es un *expresión regular.* Las páginas que tienen una ruta que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta del parámetro **/content** y todas las subpáginas.
+   El valor de la propiedad de ruta permitida es un *expresión regular.* Las páginas que tienen una ruta que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta del **/content** y todas las subpáginas.
 
    Cuando un autor crea una página debajo de /content, la variable **contentpage** La plantilla aparece en una lista de plantillas disponibles para usar.
 
@@ -229,7 +227,7 @@ En esta sección, crea las siguientes páginas que utilizan la plantilla de pág
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
 1. Haga clic en **Crear**. En el árbol de carpetas, seleccione **/Sitios web/Mi sitio web** y haga clic en **Nuevo** > **Nueva página**.
-1. En el cuadro de diálogo Crear página, introduzca los siguientes valores de propiedad y haga clic en Crear:
+1. En el cuadro de diálogo Crear página, escriba los siguientes valores de propiedad y haga clic en Crear:
 
    * Título: Español
    * Nombre: en
@@ -273,7 +271,7 @@ En esta sección, crea las siguientes páginas que utilizan la plantilla de pág
 
 AEM En esta sección se describe cómo mejorar el script de la página de contenido mediante los scripts de componente de base de datos de la y escribiendo sus propios scripts.
 
-El **Productos** La página tendrá el siguiente aspecto:
+Cuando haya terminado, la variable **Productos** La página debe tener el siguiente aspecto:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -311,7 +309,7 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a los scri
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Abra el origen de la página para ver los elementos de javascript y HTML que generaron los scripts head.jsp y body.jsp. El siguiente fragmento de script abre el Sidekick cuando abre la página:
+   Abra el origen de la página para ver los elementos JavaScript y HTML que generaron los scripts head.jsp y body.jsp. El siguiente fragmento de script abre la barra de tareas al abrir la página:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -407,9 +405,9 @@ En esta sección se crean varios scripts que generan una parte del cuerpo de la 
 
 En esta sección, se crea un componente que muestra vínculos a todas las páginas de nivel superior del sitio web para facilitar la navegación. Este contenido de componente aparece en la parte superior de todas las páginas que se crean con la plantilla de página de contenido.
 
-En la primera versión del componente de navegación superior (navegación superior), los elementos de navegación solo son vínculos de texto. En la segunda versión se implementa la navegación superior con vínculos de navegación de imágenes.
+En la primera versión del componente de navegación superior (navegación superior), los elementos de navegación solo son vínculos de texto. En la segunda versión, se implementa la navegación superior con vínculos de navegación de imágenes.
 
-La navegación superior será la siguiente:
+Cuando haya terminado, la navegación superior debería tener el siguiente aspecto:
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -479,7 +477,7 @@ Para incluir la navegación superior en el componente de página de contenido:
 El componente Página define las propiedades que permiten proporcionar subtítulos para las páginas. Añada subtítulos que proporcionen información sobre el contenido de la página.
 
 1. En el explorador, abra el **Productos** página.
-1. En el Sidekick **Página** pestaña, haga clic en **Propiedades de página**.
+1. En la barra de tareas **Página** pestaña, haga clic en **Propiedades de página**.
 1. En la pestaña Básico del cuadro de diálogo, expanda **Más títulos y descripciones,** y para el **Subtítulo** propiedad, tipo **lo que hacemos**. Haga clic en **Aceptar**.
 1. Repita los pasos anteriores para agregar el subtítulo **sobre nuestros servicios** a la **Servicios** página.
 1. Repita los pasos anteriores para agregar el subtítulo **la confianza que ganamos** a la **Clientes** página.
@@ -518,7 +516,7 @@ En este ejercicio, Sling hace coincidir estas direcciones URL con el script /app
 1. Haga clic con el botón derecho en `/apps/mywebsite/components/contentpage` y haga clic en **Crear** > **Crear archivo**.
 1. En el **Crear archivo** ventana, como **Nombre**, tipo `navimage.png.java`.
 
-   La extensión de nombre de archivo .java indica a Sling que la compatibilidad con Java de Apache Sling Scripting debe utilizarse para compilar el script y crear un servlet.
+   La extensión de nombre de archivo .java indica a Sling que la compatibilidad con Apache Sling Scripting Java™ debe utilizarse para compilar el script y crear un servlet.
 
 1. Copie el siguiente código en `navimage.png.java.`El código amplía la clase AbstractImageServlet:
 
@@ -844,9 +842,9 @@ Cree un componente que muestre el logotipo de la empresa y proporcione un víncu
 * Los valores de propiedad se aplican a todas las instancias del componente que se agregan a las páginas que utilizan el diseño.
 * Las propiedades se pueden configurar con cualquier instancia del componente que se encuentre en una página que utilice el diseño.
 
-El cuadro de diálogo en modo de diseño contiene propiedades para configurar la imagen y la ruta del vínculo. El componente de logotipo se colocará en la parte superior izquierda de todas las páginas del sitio web.
+El cuadro de diálogo en modo de diseño contiene propiedades para configurar la imagen y la ruta del vínculo. El componente de logotipo se coloca en la parte superior izquierda de todas las páginas del sitio web.
 
-Tendrá el siguiente aspecto:
+Cuando haya terminado, debería tener el siguiente aspecto:
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -921,7 +919,7 @@ Cree el cuadro de diálogo para configurar el componente de logotipo en el modo 
       * **Título:** `Logo (Design)`
 
 1. Haga clic con el botón derecho en el nodo tab1 de la rama design_dialog y haga clic en Eliminar. Haga clic en Guardar todo.
-1. En el `design_dialog/items/items`, cree un nuevo nodo llamado `img` de tipo `cq:Widget`. Agregue las siguientes propiedades y haga clic en Guardar todo:
+1. En el `design_dialog/items/items`, cree un nodo llamado `img` de tipo `cq:Widget`. Agregue las siguientes propiedades y haga clic en Guardar todo:
 
    | Nombre | Tipo | Valor  |
    |---|---|---|
@@ -1029,7 +1027,7 @@ public class img_GET extends AbstractImageServlet {
 
 En esta sección se describe cómo establecer una imagen como logotipo mediante el cuadro de diálogo de modo de diseño.
 
-1. Con la página Productos abierta en el explorador, haga clic en el botón Diseño en la parte inferior de la barra de tareas para entrar en el modo de diseño.
+1. Con la página Productos abierta en el explorador, haga clic en el botón Diseño en la parte inferior del Sidekick para entrar en el modo de diseño.
 
    ![Botón Diseño indicado por un cuadrado derecho.](do-not-localize/chlimage_1-1.png)
 
@@ -1050,7 +1048,7 @@ En esta sección se describe cómo establecer una imagen como logotipo mediante 
 
 En esta sección, se incluye el componente Ruta de exploración (pista), que es uno de los componentes de base.
 
-1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `center.jsp` y reemplace:
+1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `center.jsp`y reemplace:
 
    ```java
    <div>trail</div>
@@ -1071,7 +1069,7 @@ En esta sección, se incluye el componente Ruta de exploración (pista), que es 
 
 En esta sección, se incluye el componente de título, que es uno de los componentes de base.
 
-1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `center.jsp` y reemplace:
+1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `center.jsp`y reemplace:
 
    ```xml
    <div>title</div>
@@ -1096,7 +1094,7 @@ El sistema de párrafos (parsys) es una parte significativa de un sitio web, ya 
 
 Agregue el componente parsys (uno de los componentes de base) al componente contentpage.
 
-1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `center.jsp` y busque la siguiente línea de código:
+1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `center.jsp`y busque la siguiente línea de código:
 
    ```xml
    <div>parsys</div>
@@ -1177,17 +1175,17 @@ El `cq:editConfig` el tipo de nodo permite configurar ciertos comportamientos de
 
 En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recursos desde el Buscador de contenido al componente de imagen.
 
-1. En CRXDE Lite, en el nodo /apps/mywebsite/components/image, cree un nuevo nodo de la siguiente manera:
+1. En CRXDE Lite, en el nodo /apps/mywebsite/components/image, cree un nodo de la siguiente manera:
 
    * Nombre: cq:editConfig.
    * Tipo: cq:EditConfig.
 
-1. En el nodo cq:editConfig, cree un nuevo nodo como se indica a continuación:
+1. En el nodo cq:editConfig, cree un nodo como se indica a continuación:
 
    * Nombre: cq:dropTargets.
    * Tipo: cq:DropTargetConfig.
 
-1. En el nodo cq:dropTargets, cree un nuevo nodo como se indica a continuación:
+1. En el nodo cq:dropTargets, cree un nodo como se indica a continuación:
 
    * Nombre: image.
    * Tipo: nt:unstructured.
@@ -1226,7 +1224,7 @@ En esta sección, verá el **Productos** y agregue el componente de imagen al si
 
 En esta sección, se incluye el componente barra de herramientas, que es uno de los componentes base.
 
-Tiene varias opciones, tanto en modo de edición como en modo de diseño.
+Tiene varias opciones en los modos de edición y diseño.
 
 1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el `body.jsp` y busque el siguiente código:
 
@@ -1264,7 +1262,7 @@ Tiene varias opciones, tanto en modo de edición como en modo de diseño.
 
 En esta sección, se crea el componente para buscar contenido en el sitio web. Este componente de búsqueda se puede colocar en el sistema de párrafos de cualquier página (por ejemplo, en una página de resultados de búsqueda especializada).
 
-El cuadro de entrada de búsqueda tendrá el siguiente aspecto en la **Inglés** página:
+Cuando haya terminado, el cuadro de entrada de búsqueda debería tener el siguiente aspecto en la **Inglés** página:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -1498,7 +1496,7 @@ Para incluir un cuadro de entrada de búsqueda en la sección izquierda de la p�
 En esta sección, agregará el componente de búsqueda al sistema de párrafos.
 
 1. En el explorador, abra la página Buscar.
-1. En la barra de tareas, haga clic en el icono de modo de diseño.
+1. En el Sidekick, haga clic en el icono del modo de diseño.
 1. En el bloque Diseño de la parte (debajo del título Buscar), haga clic en Editar.
 1. En el cuadro de diálogo, desplácese hacia abajo hasta el  **Mis sitios web** grupo, seleccione **Mi componente de búsqueda** y haga clic en **OK**.
 1. En Sidekick, haga clic en el triángulo para volver al modo de edición.
@@ -1514,9 +1512,9 @@ En esta sección, agregará el componente de búsqueda al sistema de párrafos.
 
 En esta sección, se incluye el componente Sistema de párrafos de herencia (iparsys), que es uno de los componentes de base. Este componente permite crear una estructura de párrafos en una página principal y hacer que las páginas secundarias hereden los párrafos.
 
-Para este componente, puede definir varios parámetros tanto en el modo de edición como en el modo de diseño.
+Para este componente, puede establecer varios parámetros tanto en el modo de edición como en el modo de diseño.
 
-1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `right.jsp` y reemplace:
+1. En CRXDE Lite, vaya a `/apps/mywebsite/components/contentpage`, abra el archivo `right.jsp`y reemplace:
 
    ```java
    <div>iparsys</div>

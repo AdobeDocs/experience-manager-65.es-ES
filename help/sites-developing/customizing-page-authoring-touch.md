@@ -1,19 +1,15 @@
 ---
 title: Personalización de la creación de páginas
-seo-title: Customizing Page Authoring
-description: AEM La ofrece varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas
-seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
-uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
+description: Adobe Experience Manager AEM () proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 1%
+source-wordcount: '1340'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 1%
 >
 >Este documento describe cómo personalizar la creación de páginas en la IU moderna y táctil, y no se aplica a la IU clásica.
 
-AEM proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas (y la variable [consolas](/help/sites-developing/customizing-consoles-touch.md)) de la instancia de creación.
+Adobe Experience Manager AEM () proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas (y la [consolas](/help/sites-developing/customizing-consoles-touch.md)) de la instancia de creación.
 
 * Clientlibs
 
@@ -38,26 +34,26 @@ AEM proporciona varios mecanismos para permitirle personalizar la funcionalidad 
 
 >[!NOTE]
 >
->Para obtener más información, consulte la [Conjunto de documentación JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>Para obtener más información, consulte [Conjunto de documentación JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-AEM Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación de páginas en la instancia de. A continuación se describen algunas opciones (en un nivel superior).
+AEM Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación de páginas en la instancia de. A continuación se cubre una selección (en un nivel superior).
 
 >[!NOTE]
 >
->Para obtener más información, consulte lo siguiente:
+>Para obtener más información, consulte:
 >
 >* Uso y creación de [clientlibs](/help/sites-developing/clientlibs.md).
 >* Uso y creación de [superposiciones](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md) para obtener más información sobre las áreas estructurales utilizadas para la creación de páginas.
 >
 
 
 >[!CAUTION]
 >
->Usted ***debe*** no cambie nada en el `/libs` ruta.
+>***No hacer*** cambiar cualquier cosa en `/libs` ruta.
 >
->Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>El motivo es que el contenido de `/libs` se sobrescribe, la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
 >
 >El método recomendado para la configuración y otros cambios es:
 >
@@ -80,7 +76,7 @@ Puede encontrar la definición de capa de MSM (para referencia) en:
 
 ### Ejemplo de código {#code-sample}
 
-Este es un paquete de muestra que muestra cómo crear una nueva capa (modo), que es una nueva capa para la vista MSM.
+Este es un paquete de muestra que muestra cómo crear una capa (modo), que es una nueva capa para la vista MSM.
 
 CÓDIGO EN GITHUB
 
@@ -91,11 +87,11 @@ Puede encontrar el código de esta página en GitHub
 
 ## Añadir nueva categoría de selección al navegador de recursos {#add-new-selection-category-to-asset-browser}
 
-El explorador de recursos muestra recursos de varios tipos o categorías (por ejemplo, imágenes, documentos, etc.). Los recursos también se pueden filtrar por estas categorías de recursos.
+El explorador de recursos muestra recursos de varios tipos o categorías (por ejemplo, imágenes y documentos). Los recursos también se pueden filtrar por estas categorías de recursos.
 
 ### Ejemplo de código {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` es un paquete de muestra que muestra cómo agregar un nuevo grupo al buscador de recursos. Este ejemplo conecta con [Flickr](https://www.flickr.com)El flujo público de y los muestra en el panel lateral.
+`aem-authoring-extension-assetfinder-flickr` es un paquete de muestra que muestra cómo agregar un grupo al buscador de recursos. Este ejemplo conecta con [Flickr](https://www.flickr.com)La emisión pública de y las muestra en el panel lateral.
 
 CÓDIGO EN GITHUB
 
@@ -106,11 +102,11 @@ Puede encontrar el código de esta página en GitHub
 
 ## Filtrado de recursos {#filtering-resources}
 
-Al crear páginas, el usuario debe seleccionar a menudo entre recursos (por ejemplo, páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
+Al crear páginas, el usuario debe seleccionar a menudo entre recursos (por ejemplo, páginas, componentes y recursos). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
 
-Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Por ejemplo, si la variable [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) se utiliza para permitir al usuario seleccionar la ruta a un recurso concreto, las rutas presentadas se pueden filtrar de la siguiente manera:
+Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Por ejemplo, si la variable [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) se utiliza para permitir al usuario seleccionar la ruta a un recurso concreto, las rutas presentadas se pueden filtrar de la siguiente manera:
 
-* Implementar el predicado personalizado implementando [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) interfaz.
+* Implementar el predicado personalizado implementando [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) interfaz.
 * Especifique un nombre para el predicado y haga referencia a ese nombre cuando utilice la variable `pathbrowser`.
 
 Para obtener más información sobre la creación de un predicado personalizado, consulte [este artículo](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -157,11 +153,11 @@ En una instalación estándar de AEM:
 
          * propiedad: `editorType`
 
-           Define el tipo de editor en línea que se utilizará cuando se active la edición in situ para ese componente; por ejemplo, `text`, `textimage`, `image`, `title`.
+           Define el tipo de editor en línea que se utiliza cuando se activa la edición in situ para ese componente; por ejemplo, `text`, `textimage`, `image`, `title`.
 
-1. Se pueden configurar detalles de configuración adicionales del editor mediante una `config` nodo que contiene configuraciones, así como un `plugin` para contener los detalles de configuración del complemento necesarios.
+1. Se pueden configurar detalles de configuración adicionales del editor mediante una `config` nodo que contiene configuraciones y un `plugin` para contener los detalles de configuración del complemento necesarios.
 
-   A continuación se muestra un ejemplo de definición de relaciones de aspecto para el complemento de recorte de imágenes del componente de imagen. Tenga en cuenta que debido al potencial del tamaño de pantalla muy limitado, las relaciones de aspecto de recorte se trasladaron al editor de pantalla completa y solo se pueden ver allí.
+   A continuación se muestra un ejemplo de definición de relaciones de aspecto para el complemento de recorte de imágenes del componente de imagen. Debido al potencial del tamaño de pantalla limitado, las relaciones de aspecto de recorte se trasladaron al editor de pantalla completa y solo se pueden ver allí.
 
    ```xml
    <cq:inplaceEditing
@@ -185,7 +181,7 @@ En una instalación estándar de AEM:
 
    >[!CAUTION]
    >
-   >AEM Tenga en cuenta que en las proporciones de recorte de la, según lo establecido por la variable `ratio` , se definen como **alto/ancho**. Esto difiere de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios autores no notarán ninguna diferencia siempre que defina la variable `name` claramente, ya que esto es lo que se muestra en la interfaz de usuario.
+   >AEM proporciones de recorte, según lo establecido por el `ratio` , se definen como **alto/ancho**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios autores no notarán ninguna diferencia siempre que defina la variable `name` claramente, ya que esto es lo que se muestra en la interfaz de usuario.
 
 #### Creación de un nuevo editor in situ {#creating-a-new-in-place-editor}
 
@@ -209,7 +205,7 @@ Para implementar un nuevo editor in situ (dentro de la clientlib):
 
 #### Ejemplo de código para crear un nuevo editor en contexto {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` AEM es un paquete de muestra que muestra cómo crear un nuevo editor in situ en el entorno de trabajo de.
+`aem-authoring-extension-inplace-editor` AEM es un paquete de muestra que muestra cómo crear un editor in situ en el entorno de trabajo de la.
 
 CÓDIGO EN GITHUB
 
@@ -243,9 +239,9 @@ El flujo de trabajo listo para usar, **Solicitud de activación**:
 
 * Aparecerá automáticamente en el menú apropiado cuando un autor de contenido **no tiene** los derechos de replicación adecuados, pero **tiene** Pertenencia a DAM-Users y Authors.
 
-* De lo contrario, no se mostrará nada, ya que se han eliminado los derechos de replicación.
+* De lo contrario, no se muestra nada, ya que se han eliminado los derechos de replicación.
 
-Para tener un comportamiento personalizado tras dicha activación, puede superponer la variable **Solicitud de activación** flujo de trabajo:
+Para tener un comportamiento personalizado en dicha activación, puede superponer la variable **Solicitud de activación** flujo de trabajo:
 
 1. Entrada `/apps` superponga el **Sites** asistente:
 
