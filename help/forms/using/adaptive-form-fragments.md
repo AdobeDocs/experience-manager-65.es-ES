@@ -10,14 +10,16 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 100%
+source-wordcount: '2112'
+ht-degree: 97%
 
 ---
 
 # Fragmentos de formularios adaptables{#adaptive-form-fragments}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de las formas, como para proporcionar detalles personales como nombre y dirección, detalles familiares, detalles de ingresos, etc. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario.
 
@@ -76,9 +78,9 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 1. En el cuadro de diálogo Creación de fragmentos, especifique la siguiente información:
 
    * **Nombre**: Nombre del fragmento. El valor predeterminado es el nombre de elemento del panel. Es un campo obligatorio.
-      >[!NOTE]
-      >
-      >Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
+     >[!NOTE]
+     >
+     >Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
 
    * **Título**: Título del fragmento. El valor predeterminado es el título del panel.
 
@@ -241,7 +243,7 @@ Para localizar un formulario adaptable que contenga fragmentos de formularios ad
 * Cuando vuelva a publicar un fragmento de formulario adaptable actualizado, los cambios se reflejarán en las instancias publicadas del formulario adaptable en el que se utilice el fragmento.
 * El formulario adaptable que contenga el componente Verificar no admitirá usuarios anónimos. Además, no se recomienda utilizar el componente Verificar en un fragmento de formulario adaptable.
 * (**Solo Mac**) Para asegurarse de que la funcionalidad de los fragmentos del formulario funciona perfectamente en todas las situaciones, agregue la siguiente entrada al archivo /private/etc/hosts:
-   `127.0.0.1 <Host machine>` **Equipo host**: el equipo Mac de Apple en el que está implementado AEM Forms.
+  `127.0.0.1 <Host machine>` **Equipo host**: el equipo Mac de Apple en el que está implementado AEM Forms.
 
 ## Fragmentos de referencia {#reference-fragments}
 

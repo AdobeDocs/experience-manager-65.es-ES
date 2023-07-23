@@ -10,14 +10,16 @@ discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '626'
+ht-degree: 92%
 
 ---
 
 # Crear un formulario adaptable mediante un conjunto de formularios adaptables{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 ## Información general {#overview}
 
@@ -141,7 +143,7 @@ Realice los siguientes pasos para agregar un formulario adaptable como formulari
 
 1. Abra el formulario principal en modo de edición.
 1. En la barra lateral, haga clic en **Recursos** ![assets-browser](assets/assets-browser.png). En Recursos, seleccione **Formulario adaptable** de la lista desplegable.
-   [ ![Seleccionar un formulario adaptable en Recursos](assets/asset.png)](assets/asset-1.png)
+   [![Seleccionar un formulario adaptable en Recursos](assets/asset.png)](assets/asset-1.png)
 
 1. Arrastre y suelte el formulario adaptable que desee agregar como formulario secundario.
-   [ ![Arrastre y suelte el formulario adaptable en el sitio](assets/drag-drop.png)](assets/drag-drop-1.png)El formulario adaptable que suelte se agregará como formulario secundario.
+   [![Arrastre y suelte el formulario adaptable en el sitio](assets/drag-drop.png)](assets/drag-drop-1.png)El formulario adaptable que suelte se agregará como formulario secundario.

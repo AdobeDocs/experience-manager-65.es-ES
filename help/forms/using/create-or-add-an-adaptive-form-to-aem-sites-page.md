@@ -3,14 +3,16 @@ title: Crear o agregar un formulario adaptable mediante la página de AEM Sites
 description: Descubra cómo crear o agregar fácilmente un formulario adaptable a su página de AEM Sites. Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios dinámicos y personalizables en su sitio web, optimizando las experiencias digitales para lograr el máximo impacto.
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '2913'
-ht-degree: 96%
+source-wordcount: '2970'
+ht-degree: 95%
 
 ---
 
 # Crear o agregar un formulario adaptable mediante la página de AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -78,42 +80,42 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customheaderlibs.html` y añada el siguiente código al archivo:
 
        ```
-              //Customheaderlibs.html
-              &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-              &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
-              &lt;/sly>
+     //Customheaderlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
+     &lt;/sly>
      
-       ```
+     ```
    
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` y añada el siguiente código al archivo:
 
        ```
      
-              //customfooterlibs.html
-              &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-              &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
-              &lt;/sly>
-       ```
+     //customfooterlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
+     &lt;/sly>
+     ```
    
 1. Abra el archivo `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` y añada el siguiente código al archivo:
 
        ```
-              //Customheaderlibs.html
-              &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-              &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
-              &lt;/sly>
+     //Customheaderlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
+     &lt;/sly>
      
-       ```
+     ```
    
 1. Abra el archivo `/apps/[your-sites-project]/components/customfooterlibs.html` y añada el siguiente código al archivo:
 
        ```
      
-              //customfooterlibs.html
-              &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
-              &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
-              &lt;/sly>
-       ```
+     //customfooterlibs.html
+     &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
+     &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
+     &lt;/sly>
+     ```
    
 1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
 

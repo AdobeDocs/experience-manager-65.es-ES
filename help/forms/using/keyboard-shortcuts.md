@@ -10,14 +10,16 @@ topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 100%
+source-wordcount: '1204'
+ht-degree: 95%
 
 ---
 
 # Métodos abreviados de teclado de AEM Forms {#aem-forms-keyboard-shortcuts}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 En este artículo se enumeran los métodos abreviados de teclado que se pueden usar con el Editor de formularios adaptables, el Editor de temas, el Explorador de contenido y Administración de correspondencia en los sistemas operativos Windows y Macintosh.
 
@@ -53,7 +55,6 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 >* Windows: Ctrl + clic en los componentes necesarios.
 >* MAC OS: Comando + clic en los componentes necesarios.
 >
-
 
 ## Editor de temas  {#themeeditor}
 

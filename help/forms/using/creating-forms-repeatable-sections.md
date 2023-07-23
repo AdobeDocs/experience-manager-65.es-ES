@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 96%
+source-wordcount: '1176'
+ht-degree: 92%
 
 ---
 
 # Crear formularios con secciones repetibles {#creating-forms-with-repeatable-sections}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 Las secciones repetibles son paneles que se pueden añadir o quitar dinámicamente a un formulario.
 
@@ -93,8 +95,6 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
       >[!NOTE]
       >
       >Cuando todas las instancias de un panel se quiten de un formulario adaptable, para agregar una instancia del panel quitado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance de Instance Manager para agregar la instancia eliminada. Por ejemplo, _panelName.addInstance(). Añade una instancia del panel eliminado.
-
-
 
 ## Usar el diseño de acordeón para el panel principal   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 

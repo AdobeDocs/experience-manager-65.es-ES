@@ -10,14 +10,16 @@ discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 feature: Adaptive Forms
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '810'
+ht-degree: 93%
 
 ---
 
 # Usar el flujo de trabajo de traducción de AEM para localizar formularios adaptables y documentos de registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 Los formularios localizados le ayudan a llegar a una audiencia más amplia en todas las regiones geográficas. El flujo de trabajo de traducción de Adobe Experience Manager le ayuda a localizar formularios adaptables y sus documentos de registro. Puede usar la **traducción automática** o **traductores humanos** para localizar un formulario adaptable.
 
@@ -41,7 +43,6 @@ El servicio de traducción automática traduce inmediatamente el contenido de lo
    >
    >* Antes de abrir la versión localizada del formulario en la ventana del explorador, asegúrese de que la configuración regional del explorador esté establecida de forma que coincida con la configuración regional del formulario. Por ejemplo, si el formulario se traduce al alemán (de), establezca la configuración regional del explorador en alemán (de).
    >* Los componentes de un formulario adaptable no admiten los lenguajes de derecha a izquierda (RTL), por ejemplo, hebreo.
-
 
    Junto con el formulario adaptable, también se localiza el documento de registro generado automáticamente.
 
@@ -78,4 +79,3 @@ Realice los siguientes pasos para localizar un formulario y su documento de regi
 >
 >* Los componentes de un formulario adaptable no admiten los lenguajes de derecha a izquierda (RTL), por ejemplo, hebreo.
 >
-

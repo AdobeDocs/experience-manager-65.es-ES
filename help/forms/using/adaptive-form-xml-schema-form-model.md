@@ -5,14 +5,16 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
+source-wordcount: '1130'
+ht-degree: 93%
 
 ---
 
 # Crear formularios adaptables mediante el esquema XML {#creating-adaptive-forms-using-xml-schema}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 ## Requisitos previos {#prerequisites}
 
@@ -290,7 +292,7 @@ Al hacer doble clic en un elemento del Buscador de contenido, una ventana emerge
 
 ![Campo bindref de un elemento de esquema XML](assets/dblclick.png)
 
-bindRef</code> El campo muestra la asociación entre un elemento del árbol y un elemento o atributo de un esquema.
+El <code>bindRef</code> Este campo muestra la asociación entre un elemento de árbol y un elemento o atributo de un esquema.
 
 >[!NOTE]
 >

@@ -10,14 +10,16 @@ discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 100%
+source-wordcount: '1145'
+ht-degree: 95%
 
 ---
 
 # Incrustar un formulario adaptable o una comunicación interactiva en una aplicación de una sola página de AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 ## Información general {#overview}
 

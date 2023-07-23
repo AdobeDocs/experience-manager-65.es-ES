@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '4529'
-ht-degree: 100%
+source-wordcount: '4586'
+ht-degree: 98%
 
 ---
 
 # Prácticas recomendadas para usar formularios adaptables  {#best-practices-for-working-with-adaptive-forms}
+
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 ## Información general {#overview}
 
@@ -259,7 +261,7 @@ Algunas prácticas recomendadas al localizar formularios adaptables son las sigu
 * Las modificaciones como agregar un componente nuevo o aplicar un script en un formulario localizado no se localizan automáticamente. Por lo tanto, debe finalizar un formulario antes de localizarlo para evitar varios ciclos de localización.
 * Use el parámetro de solicitud`afAcceptLang` para anular la configuración regional del explorador y procesar el formulario en la configuración regional especificada. Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa, independientemente de la configuración regional especificada en la configuración del explorador:
 
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * AEM Forms admite actualmente la localización del contenido de los formularios adaptables en las configuraciones regionales de Inglés (en), Español (es), Francés (fr), Italiano (it), Alemán (de), Japonés (ja), Portugués brasileño (pt-BR), Chino (zh-CN), Chino taiwanés (zh-TW) y Coreano (ko-KR). Sin embargo, se puede agregar compatibilidad con nuevas configuraciones regionales para formularios adaptables en el tiempo de ejecución. Para obtener más información, consulte [Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables](/help/forms/using/supporting-new-language-localization.md).
 
@@ -312,7 +314,7 @@ En un entorno de producción, se recomienda no almacenar datos de formularios en
 
 * **Almacenar datos de envío**: si utiliza el repositorio de envío del portal de formularios, debe implementar un SPI personalizado para almacenar los datos de envío en una base de datos. Consulte [Ejemplo para integrar el componente Borradores y envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md) para una integración de ejemplo.
 
-   También puede escribir una acción de envío personalizada que almacene datos de formulario y los datos adjuntos en un almacenamiento seguro. Consulte [Escribir una acción de envío personalizada para formularios adaptables](/help/forms/using/custom-submit-action-form.md) para obtener más información.
+  También puede escribir una acción de envío personalizada que almacene datos de formulario y los datos adjuntos en un almacenamiento seguro. Consulte [Escribir una acción de envío personalizada para formularios adaptables](/help/forms/using/custom-submit-action-form.md) para obtener más información.
 
 * **Longitud del ID del borrador**: al guardar un formulario adaptable como borrador, se genera un ID de borrador para identificar el borrador de forma exclusiva. El valor mínimo de la longitud del campo de ID de borrador es de 26 caracteres. Adobe recomienda establecer la longitud de ID de borrador en 26 caracteres o más.
 
