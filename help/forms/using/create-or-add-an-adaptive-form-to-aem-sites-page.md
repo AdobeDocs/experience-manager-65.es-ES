@@ -79,17 +79,17 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
 
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customheaderlibs.html` y añada el siguiente código al archivo:
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
      &lt;/sly>
      
      ```
-   
+
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` y añada el siguiente código al archivo:
 
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -99,7 +99,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
    
 1. Abra el archivo `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` y añada el siguiente código al archivo:
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -109,14 +109,14 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
    
 1. Abra el archivo `/apps/[your-sites-project]/components/customfooterlibs.html` y añada el siguiente código al archivo:
 
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
      &lt;/sly>
      ```
-   
+
 1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
 
 +++
