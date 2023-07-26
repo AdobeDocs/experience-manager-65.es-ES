@@ -1,11 +1,11 @@
 ---
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: ea0f4096ac76ed11ee84a3769725f527c13fb461
 workflow-type: tm+mt
-source-wordcount: '3777'
+source-wordcount: '3786'
 ht-degree: 8%
 
 ---
@@ -50,7 +50,9 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * **Streaming DASH con Dynamic Media** - Se ha lanzado la compatibilidad con el nuevo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) para el streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado). Disponible ahora para todas las regiones, [habilitado mediante un ticket de asistencia](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
 * **Integración de Experience Manager Sites y fragmentos de contenido con Dynamic Media de próxima generación de recursos** : Los usuarios de Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media ahora pueden utilizar esos recursos alojados en la nube para la creación y el envío con instancias on-premise o Managed Services de Experience Manager Sites 6.5.
 
-**AEM Forms**
+## Mejoras en el Service Pack 17 {#enhancements-sp17}
+
+### Forms{#aem-forms-6517}
 
 * **[Formularios adaptables en el editor de páginas de AEM](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: ahora puede utilizar el editor de páginas de AEM para crear y agregar rápidamente varios formularios a sus páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante el uso de la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización del proceso empresarial. Puede hacer lo siguiente:
    * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente contenedor de formularios adaptables en el editor de AEM Sites o en los fragmentos de experiencias.
@@ -64,7 +66,47 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets]{#assets-6517}
+## Se han corregido problemas en Service Pack 17 {#fixed-issues}
+
+### [!DNL Sites]{#sites-6517}
+
+* Disminución de rendimiento en LinkCheckerTransformer. (SITES-11661)
+* Las copias de idioma de una página no se actualizaban según lo esperado. (SITES-11191)
+* Llamada para abrir páginas que no sean de campaña `targeteditor.html` innecesariamente. Retire el `targeteditor` llame a cuando no sea necesario. (SITES-12469)
+* No se pueden crear Live Copies para páginas con anotaciones. (SITES-12154)
+* El despliegue de páginas no funciona en Experience Manager 6.5.16. (SITES-12008)
+* Memoria insuficiente; alta actividad de recolección de elementos no utilizados debido a `NotificationManagerImpl`. `NotificationManager` actualización del paquete a Experience Manager 6.5. (SITES-11440)
+* Se han corregido las pruebas de TI de WCM que bloqueaban el Service Pack 17. (SITES-13089)
+* La recuperación de referencias de sitios falla en el servlet. (SITES-10901)
+
+#### Interfaz de usuario de administrador{#sites-adminui-6517}
+
+* No se puede cerrar la ventana de vista previa del selector de imágenes en miniatura. (SITES-10459)
+
+#### [!DNL Content Fragments]{#sites-contentfragments-6517}
+
+* Configuración para conectarse al objeto del servicio Polaris (URL, credenciales, devolución de llamada, etc.). (SITES-12149)
+* Uso de `SemanticDataType.REFERENCE` debe admitir &quot;Remote-Asset-IDs&quot;. (SITES-12127)
+* Integre el Selector de recursos de Polaris en el editor de fragmentos de contenido. (SITES-12125)
+* Se necesitaba un encabezado http obligatorio para acceder al extremo del servicio de metadatos. (SITES-13068)
+* La implementación de GraphQL de 6.5 no estaba a la par con el Cloud Service (principal); se solucionaron los problemas identificados. (SITES-13096)
+* La paginación/ordenación y el filtrado híbrido de GraphQL deberían estar disponibles en Experience Manager 6.5/AMS. (SITES-9154)
+
+#### Componentes principales{#sites-core-components-6517}
+
+* La propiedad `cq-msm-lockable` tiene el valor de redirección incorrecto en el componente de página de base. (SITES-10904)
+* El Selector de recursos remoto siempre redirige al entorno de ensayo de IMS. (SITES-13433)
+
+#### [!DNL Experience Fragments]{#sites-experiencefragments-6517}
+
+* Al seleccionar una configuración de externalizador en un fragmento de experiencia al exportar a Adobe Target, se envía la URL externalizada incorrecta. (SITES-12402)
+* Eliminar términos no inclusivos; aplicar directrices de términos inclusivos. (SITES-11244)
+
+#### Editor de página{#sites-pageeditor-6517}
+
+* No se muestra ninguna miniatura para un carrusel establecido en el carril lateral del buscador de contenido de Experience Manager. (SITES-8593)
+
+### [!DNL Assets]{#assets-6517}
 
 * Cuando publica más de 40 PDF simultáneamente, [!DNL Experience Manager] deja de responder y deja de estar disponible durante un tiempo. (ASSETS-21789)
 * Si ha iniciado sesión como usuario de prueba, no puede ver los recursos relacionados con un recurso concreto al hacer clic en las propiedades de un recurso. (ASSETS-21648)
@@ -92,7 +134,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
 * When you navigate to `Smart Crop` option, the screen reader does not announce the expand or collapse state of the button. (ASSETS-17335)-->
 
-## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
+#### [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
 * La conexión con Dynamic Media se interrumpe cuando ya existe una configuración de nube de Dynamic Media. (ASSETS-23057)
 * Rendimiento mejorado al examinar las carpetas con muchos vídeos de Dynamic Media y problema resuelto que no se puede cargar en la vista de la tarjeta de carpetas. (ASSETS-23016)
@@ -104,11 +146,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * Interfaz de usuario de perfil de imagen restringida para cultivos inteligentes con el mismo nombre, la misma dimensión o ambos. (ASSETS-16997)
 * La anchura y altura predeterminadas ahora se establecen en 50 píxeles para los recortes inteligentes en la interfaz de usuario del perfil de imagen. (ASSETS-16997)
 
-## [!DNL Commerce]{#commerce-6517}
-
-* Las etiquetas que se mueven son residuos recogidos pero los productos siguen haciendo referencia a ellas en `/var`. (CQ-4351337)
-
-## [!DNL Forms]{#forms-6517}
+### [!DNL Forms]{#forms-6517}
 
 * AEM Después de actualizar a Paquete de servicio de 6.5.15.0, los formularios de HTML5 no funcionan o no se cargan correctamente en el explorador Edge con el modo de compatibilidad con IE. (FORMS-8526, FORMS-8523)
 * AEM Cuando un usuario aplica el paquete de servicio 6.5.16.0 de, el editor de reglas no se abre. (FORMS-8290)
@@ -146,14 +184,19 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * Cuando un usuario intenta invocar un proceso LCA con un PDF que incluye el `Chinese Full Width Characters`, se produce un problema con el `ValidateForm` proceso. (FORMS-7464)
 * En Experience Manager Forms Designer, XMLFM genera una salida ZPL con diferentes tamaños de papel, como carta, A4 y A5, para plantillas basadas en XDP. (FORMS-7898)
 
+### [!DNL Commerce]{#commerce-6517}
 
-## Integraciones{#integrations-6517}
+* Las etiquetas que se mueven son residuos recogidos pero los productos siguen haciendo referencia a ellas en `/var`. (CQ-4351337)
+
+### Foundation{#foundation-6517}
+
+#### Integraciones{#integrations-6517}
 
 * Al convertir una configuración de Adobe Target IMS a una credencial de usuario en configuraciones de nube heredadas, la variable `connectedWhen` La propiedad no cambia. Este problema hace que todas las llamadas pasen como si la configuración aún estuviera basada en IMS. (CQ-4352810)
 * Agregando `modifyProperties` permiso para `fd-cloudservice` usuario del sistema para la configuración de Adobe Sign. (FORMS-6164)
 * Con Experience Manager integrado con Adobe Target, al crear una actividad de prueba A/B, no se sincronizan las audiencias asociadas con ella, sino con Target. (NPR-40085)
 
-## Oak{#oak-6517}
+#### Oak{#oak-6517}
 
 En Service Pack 13 y versiones posteriores, ha comenzado a aparecer el siguiente registro de errores que afecta a la caché de persistencia:
 
@@ -183,59 +226,21 @@ Para resolver esta excepción, haga lo siguiente:
 1. Instale el Service Pack o reinicie el Experience Manager as a Cloud Service.
 Nuevas carpetas de `cache` y `diff-cache` se crean automáticamente y ya no experimenta una excepción relacionada con lo siguiente `mvstore` en el `error.log`.
 
-## Plataforma{#platform-6517}
+#### Plataforma{#platform-6517}
 
 * En la interfaz de usuario de Experience Manager Tag Management (/aem/tags/), los espacios de nombres y las etiquetas aparecen en el orden en que se crean. Sin embargo, cuando hay muchas áreas de nombres y etiquetas, la capacidad de verlas y administrarlas es difícil. Este problema se debe a que no se pueden ordenar de ninguna otra manera. (NPR-39620)
 * Se necesita la actualización de la versión del cierre de Google porque Minification js no funciona para algunas bibliotecas de cliente. (NPR-40043)
 
-## [!DNL Sites]{#sites-6517}
-
-* Disminución de rendimiento en LinkCheckerTransformer. (SITES-11661)
-* Las copias de idioma de una página no se actualizaban según lo esperado. (SITES-11191)
-* Llamada para abrir páginas que no sean de campaña `targeteditor.html` innecesariamente. Retire el `targeteditor` llame a cuando no sea necesario. (SITES-12469)
-* No se pueden crear Live Copies para páginas con anotaciones. (SITES-12154)
-* El despliegue de páginas no funciona en Experience Manager 6.5.16. (SITES-12008)
-* Memoria insuficiente; alta actividad de recolección de elementos no utilizados debido a `NotificationManagerImpl`. `NotificationManager` actualización del paquete a Experience Manager 6.5. (SITES-11440)
-* Se han corregido las pruebas de TI de WCM que bloqueaban el Service Pack 17. (SITES-13089)
-* La recuperación de referencias de sitios falla en el servlet. (SITES-10901)
-
-### [!DNL Sites] - Interfaz de usuario de administrador{#sites-adminui-6517}
-
-* No se puede cerrar la ventana de vista previa del selector de imágenes en miniatura. (SITES-10459)
-
-### [!DNL Sites] - [!DNL Content Fragments]{#sites-contentfragments-6517}
-
-* Configuración para conectarse al objeto del servicio Polaris (URL, credenciales, devolución de llamada, etc.). (SITES-12149)
-* Uso de `SemanticDataType.REFERENCE` debe admitir &quot;Remote-Asset-IDs&quot;. (SITES-12127)
-* Integre el Selector de recursos de Polaris en el editor de fragmentos de contenido. (SITES-12125)
-* Se necesitaba un encabezado http obligatorio para acceder al extremo del servicio de metadatos. (SITES-13068)
-* La implementación de GraphQL de 6.5 no estaba a la par con el Cloud Service (principal); se solucionaron los problemas identificados. (SITES-13096)
-* La paginación/ordenación y el filtrado híbrido de GraphQL deberían estar disponibles en Experience Manager 6.5/AMS. (SITES-9154)
-
-### [!DNL Sites] - Componentes principales{#sites-core-components-6517}
-
-* La propiedad `cq-msm-lockable` tiene el valor de redirección incorrecto en el componente de página de base. (SITES-10904)
-* El Selector de recursos remoto siempre redirige al entorno de ensayo de IMS. (SITES-13433)
-
-### [!DNL Sites] - [!DNL Experience Fragments]{#sites-experiencefragments-6517}
-
-* Al seleccionar una configuración de externalizador en un fragmento de experiencia al exportar a Adobe Target, se envía la URL externalizada incorrecta. (SITES-12402)
-* Eliminar términos no inclusivos; aplicar directrices de términos inclusivos. (SITES-11244)
-
-### [!DNL Sites] - Editor de página{#sites-pageeditor-6517}
-
-* No se muestra ninguna miniatura para un carrusel establecido en el carril lateral del buscador de contenido de Experience Manager. (SITES-8593)
-
-## Sling{#sling-6517}
+#### Sling{#sling-6517}
 
 * Sling `ResourceMerger` consume una gran cantidad de CPU cuando se le proporciona una ruta ficticia, lo que provoca una denegación de servicio. (NPR-40338)
 
-## Proyectos de traducción{#translation-6517}
+#### Proyectos de traducción{#translation-6517}
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST * The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431) -->
 * La copia de idioma no se crea cuando el usuario no está configurando campos no obligatorios. (NPR-40036)
 
-## Interfaz de usuario{#ui-6517}
+#### Interfaz de usuario{#ui-6517}
 
 * El botón Cancelar de Propiedades de página está inactivo; debería llevar a la interfaz de usuario de Administración del sitio. (NPR-40501)
 
@@ -243,7 +248,7 @@ Nuevas carpetas de `cache` y `diff-cache` se crean automáticamente y ya no expe
 
 * TEXT -->
 
-## Flujo de trabajo{#workflow-6517}
+#### Flujo de trabajo{#workflow-6517}
 
 * Cambios de la consola de flujo de trabajo. (NPR-40502)
 * `SegmentNotfound errors` en los registros de una instancia de creación de producción, provocada por una resolución de recursos sin cerrar en la clase `com.day.cq.workflow.impl.email.EMailNotificationServic`. (NPR-40187)
@@ -396,12 +401,12 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: No se han encontrado ventanas de mantenimiento en granite/operations/maintenance.
    * La validación del lado del servidor de formularios adaptables falla cuando se utilizan funciones de agregado como SUM, MAX y MIN (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - No hay ventanas de mantenimiento en granite/operations/maintenance.
-   * El punto interactivo de una imagen interactiva de Dynamic Media no está visible al obtener una vista previa del recurso mediante el visor de titulares de ventas.
+   * El punto interactivo de una imagen interactiva de Dynamic Media no está visible al obtener una vista previa del recurso mediante el visualizador de titulares de ventas.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : tiempo de espera hasta que se completó el cambio de registro sin registrar.
 
 * En la plataforma JBoss® 7.1.4, cuando el usuario instala el Service Pack de Experience Manager 6.5.16.0 o posterior, `adobe-livecycle-jboss.ear` la implementación falla.
 * La versión de JDK superior a 1.8.0_281 no es compatible con el servidor JEE de WebLogic.
-* AEM A partir de la versión 6.5.15, el motor JavaScript de Rhino proporcionado por el ```org.apache.servicemix.bundles.rhino``` El paquete tiene un nuevo comportamiento de elevación. Scripts que utilizan el modo estricto (```use strict;```) deben declarar correctamente sus variables, de lo contrario, no se ejecutarán, lo que generará un error de tiempo de ejecución.
+* AEM A partir de la versión 6.5.15, el motor JavaScript de Rhino proporcionado por el ```org.apache.servicemix.bundles.rhino``` El paquete tiene un nuevo comportamiento de elevación. Scripts que utilizan el modo estricto (```use strict;```) deben declarar correctamente sus variables; de lo contrario, no se ejecutan, lo que genera un error de tiempo de ejecución.
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
