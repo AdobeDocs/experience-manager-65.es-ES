@@ -10,7 +10,7 @@ discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: f114456d5571620772341cba9bd8203d91d0b053
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 95%
@@ -56,8 +56,8 @@ Para incrustar el formulario adaptable, haga lo siguiente:
     var loadAdaptiveForm = function(options){
     //alert(options.path);
        if(options.path) {
-           // options.path refers to the publish URL of the adaptive form
-           // For Example: https:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+           // options.path refers to the path of the adaptive form
+           // For Example: /content/forms/af/ABC, where ABC is the adaptive form
            // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path
            var path = options.path;
            path += "/jcr:content/guideContainer.html";
