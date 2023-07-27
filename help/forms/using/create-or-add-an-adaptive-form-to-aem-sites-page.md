@@ -1,9 +1,10 @@
 ---
 title: Crear o agregar un formulario adaptable mediante la página de AEM Sites
 description: Descubra cómo crear o agregar fácilmente un formulario adaptable a su página de AEM Sites. Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios dinámicos y personalizables en su sitio web, optimizando las experiencias digitales para lograr el máximo impacto.
+Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 95%
@@ -79,17 +80,17 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
 
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customheaderlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
      &lt;/sly>
      
      ```
-
+   
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -99,7 +100,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
    
 1. Abra el archivo `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -109,14 +110,14 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
    
 1. Abra el archivo `/apps/[your-sites-project]/components/customfooterlibs.html` y añada el siguiente código al archivo:
 
-     ```
+       ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
      &lt;/sly>
      ```
-
+   
 1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
 
 +++
