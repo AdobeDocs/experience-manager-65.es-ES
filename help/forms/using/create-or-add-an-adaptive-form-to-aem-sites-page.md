@@ -4,7 +4,7 @@ description: Descubra cómo crear o agregar fácilmente un formulario adaptable 
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
+source-git-commit: 600dcc52829ff2c5e54176bda7631845ef24f986
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 95%
@@ -45,17 +45,17 @@ El uso del contenedor de formulario adaptable en el editor de páginas de AEM le
 
 Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
-* **Agregar un formulario adaptable personalizado a una página de AEM Sites:** Cree un formulario nuevo desde cero y adáptelo específicamente a sus necesidades y preferencias de diseño.
+* **[Agregar un formulario adaptable personalizado a una página de AEM Sites:](#create-an-adaptive-form-in-sites-editor)** Cree un formulario nuevo desde cero y adáptelo específicamente a sus necesidades y preferencias de diseño.
 
-* **Agregar un formulario adaptable personalizado a un fragmento de experiencia:** Amplíe el alcance de los formularios añadiéndolos a los fragmentos de experiencias de la AEM, lo que permite una reutilización perfecta en varias páginas o sitios.
+* **[Agregar un formulario adaptable personalizado a un fragmento de experiencia:](#create-an-adaptive-form-in-experience-fragment)** Amplíe el alcance de los formularios añadiéndolos a los fragmentos de experiencias de la AEM, lo que permite una reutilización perfecta en varias páginas o sitios.
 
-* **Agregar varios formularios a una página de AEM Sites o a un fragmento de experiencia:**  Agregue varios formularios a una página para proporcionar varias opciones a los usuarios en función de sus preferencias y requisitos. Pueden ser una combinación de formularios nuevos desde cero y formularios existentes.
-
-* **Convertir un formulario adaptable en fragmento de experiencia:** Convertir un formulario adaptable agregado a una página de AEM Sites en un fragmento de experiencia para reutilizar el formulario en varias páginas de AEM Sites.
+* **[Convertir un formulario adaptable en fragmento de experiencia:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Convertir un formulario adaptable agregado a una página de AEM Sites en un fragmento de experiencia para reutilizar el formulario en varias páginas de AEM Sites.
 
 * **Cree y agregue formularios basados en plantillas aprobadas a una página de AEM Sites:** Aproveche las plantillas aprobadas previamente para crear rápidamente formularios que se ajusten a las directrices de promoción de la marca y a los estándares de diseño de su organización. La opción solo está disponible para los formularios adaptables creados con el Editor de formularios adaptables o Formularios adaptables: componente incrustado.
 
 * **Añada formularios existentes a una página de AEM Sites:** integre fácilmente formularios que ya haya creado en sus sitios web, lo que permite a los visitantes interactuar con ellos directamente. La opción solo está disponible para los formularios adaptables creados con el Editor de formularios adaptables o Formularios adaptables: componente incrustado.
+
+* **Agregar varios formularios a una página de AEM Sites o a un fragmento de experiencia:**  Agregue varios formularios a una página para proporcionar varias opciones a los usuarios en función de sus preferencias y requisitos. Pueden ser una combinación de formularios nuevos desde cero y formularios existentes.
 
 ## Consideraciones {#consideration}
 
