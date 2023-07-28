@@ -7,12 +7,13 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
+
 
 # Usuarios de servicio en Adobe Experience Manager AEM () {#service-users-in-aem}
 
@@ -79,7 +80,12 @@ Tanto si aplica el control de acceso al reestructurar el contenido como si lo ha
 
 ## Usuarios de servicio y asignaciones {#service-users-and-mappings}
 
-Si lo anterior falla, Sling 7 ofrece un servicio de asignación de usuarios de servicio, que permite configurar una asignación de paquete a usuario y dos métodos de API correspondientes: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` y ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` que devuelven un solucionador de sesión/recurso con los privilegios de un usuario configurado solamente. Estos métodos tienen las siguientes características:
+Si lo anterior falla, Sling 7 ofrece un servicio de asignación de usuarios de servicio, que permite configurar una asignación de paquete a usuario y dos métodos de API correspondientes:
+
+* [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
+* [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
+
+Los métodos devuelven un solucionador de sesión/recurso con los privilegios de un usuario configurado solamente. Estos métodos tienen las siguientes características:
 
 * Permiten asignar servicios a los usuarios
 * Permiten definir a los usuarios de subservicios
@@ -145,7 +151,7 @@ Al agregar el archivo .content.xml correspondiente al contenido del paquete, ase
 
 ## Agregar una modificación de configuración a la configuración de ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Para añadir una asignación desde el servicio a los usuarios del sistema correspondientes, cree una configuración de fábrica para ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` servicio. Para mantener esta configuración modular, se puede proporcionar dicha configuración utilizando la variable [Mecanismo de modificación de Sling](https://issues.apache.org/jira/browse/SLING-3578). La forma recomendada de instalar estas configuraciones con el paquete es mediante [Cargando contenido inicial de Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Para añadir una asignación desde el servicio a los usuarios del sistema correspondientes, cree una configuración de fábrica para [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) servicio. Para mantener esta configuración modular, se puede proporcionar dicha configuración utilizando la variable [Mecanismo de modificación de Sling](https://issues.apache.org/jira/browse/SLING-3578). La forma recomendada de instalar estas configuraciones con el paquete es mediante [Cargando contenido inicial de Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Cree una subcarpeta SLING-INF/content debajo de la carpeta src/main/resources del paquete
 1. En esta carpeta, cree un archivo llamado org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml con el contenido de la configuración de fábrica (incluidas todas las asignaciones de usuario de subservicio). Ejemplo:
@@ -240,4 +246,4 @@ Para solucionar estos problemas, se recomienda que los mismos enfoques mencionad
 
 ## Procesadores de POST Sling y páginas eliminadas {#sling-post-processors-and-deleted-pages}
 
-Hay un par de sesiones administrativas que se utilizan en las implementaciones de POST de Sling. Normalmente, las sesiones administrativas se utilizan para acceder a nodos cuya eliminación está pendiente dentro del POST que se está procesando. En consecuencia, ya no están disponibles a través de la sesión de solicitud. Se puede acceder a un nodo pendiente de eliminación para revelar la metáfora que, de lo contrario, no debería ser accesible.
+Hay un par de sesiones administrativas que se utilizan en las implementaciones de POST de Sling. Normalmente, las sesiones administrativas se utilizan para acceder a nodos cuya eliminación está pendiente dentro del POST que se está procesando. En consecuencia, ya no están disponibles a través de la sesión de solicitud. Se puede acceder a un nodo cuya eliminación está pendiente para revelar metadatos que, de lo contrario, no deberían estar accesibles.
