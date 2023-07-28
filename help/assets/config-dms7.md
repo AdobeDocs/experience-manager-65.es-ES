@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
+source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6491'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,6 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 >* [Entrega de contenido HTTP/2](/help/assets/http2.md)
 >* Redireccionamiento de URL en el nivel de CDN
 >* Akamai ChinaCDN (para una entrega óptima en China)
-
 
 ## Habilitar Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
@@ -120,12 +119,13 @@ Consulte [Instalación del paquete de funciones 18912 para la migración masiva 
 1. Cuando la conexión se realice correctamente, configure lo siguiente. Los encabezados con asterisco (*) son obligatorios:
 
    * **[!UICONTROL Compañía]** : nombre de la cuenta de Dynamic Media.
-      >[!IMPORTANT]
-      Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Hay varias configuraciones de Dynamic Media en una instancia de Experience Manager _no_ compatible o recomendado por el Adobe.
+     >[!IMPORTANT]
+     >
+     Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Hay varias configuraciones de Dynamic Media en una instancia de Experience Manager _no_ compatible o recomendado por el Adobe.
 
-      <!-- CQDOC-19579 and CQDOC-19612 -->
+     <!-- CQDOC-19579 and CQDOC-19612 -->
 
-      Consulte también [Configuración de la cuenta de alias de empresa de Dynamic Media](/help/assets/dm-alias-account.md).
+     Consulte también [Configuración de la cuenta de alias de empresa de Dynamic Media](/help/assets/dm-alias-account.md).
 
    * **[!UICONTROL Ruta de carpeta raíz de la empresa]**
 
@@ -133,9 +133,10 @@ Consulte [Instalación del paquete de funciones 18912 para la migración masiva 
       * **[!UICONTROL Inmediata]** significa que, cuando se cargan recursos, el sistema los incorpora y proporciona instantáneamente la dirección URL o la incrustación. No es necesaria la intervención del usuario para publicar los recursos.
       * **[!UICONTROL Tras la activación]** significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/incrustado.<br><!-- CQDOC-17478, Added March 9, 2021-->A partir de Experience Manager 6.5.8, la instancia de publicación de Experience Manager refleja valores de metadatos de Dynamic Media precisos, como `dam:scene7Domain` y `dam:scene7FileStatus` in **[!UICONTROL Tras la activación]** solo modo de publicación. Para habilitar esta funcionalidad, instale el Service Pack 8 y, a continuación, reinicie Experience Manager. Vaya al Administrador de configuración de Sling. Buscar la configuración de `Scene7ActivationJobConsumer Component` o cree uno nuevo). Seleccione la casilla de verificación **[!UICONTROL Replicar metadatos después de la publicación en Dynamic Media]**, luego seleccione **[!UICONTROL Guardar]**.
 
-         ![Casilla Replicar metadatos después de publicar en Dynamic Media](assets-dm/replicate-metadata-setting.png)
+        ![Casilla Replicar metadatos después de publicar en Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
       * **[!UICONTROL Publicación selectiva]** Esta opción permite controlar qué carpetas se publican en Dynamic Media. Permite utilizar funciones como Recorte inteligente o representaciones dinámicas, o determinar qué carpetas se publican exclusivamente en Experience Manager para su previsualización. Esos mismos activos son *no* publicado en Dynamic Media para su envío de dominio público.<br>Puede establecer esta opción aquí en la **[!UICONTROL Configuración de nube de Dynamic Media]** o, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en el **[!UICONTROL Propiedades]**.<br>Consulte [Trabajo con Publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).<br>Si cambia esta configuración más adelante, o más tarde a nivel de carpeta, esos cambios solo afectarán a los nuevos recursos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta permanece tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación rápida]** o el **[!UICONTROL Administrar publicación]** Cuadro de diálogo.
+
    * **[!UICONTROL Servidor de previsualización segura]** : permite especificar la ruta URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se envían binarios de vuelta a la instancia del Experience Manager).
 A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe recomienda dejar esta configuración como se ha especificado.
 
@@ -150,7 +151,9 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
          * **[!UICONTROL Deshabilitado para subcarpetas]** - Excluya todo el contenido de este subárbol de la sincronización con Dynamic Media.
 
    >[!NOTE]
+   >
    No se admite el control de versiones en el modo Dynamic Media - Scene7. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]** y, a continuación, solo hasta la primera vez que se activa el recurso.
+   >
    Una vez activado un recurso, las actualizaciones se publican inmediatamente en la entrega de S7.
 
 1. Seleccione **[!UICONTROL Guardar]**.
@@ -193,7 +196,7 @@ La contraseña modificada se guarda al seleccionar **[!UICONTROL Guardar]** en l
 
    * En el **[!UICONTROL Nueva contraseña]** , introduzca una nueva contraseña.
 
-      El **[!UICONTROL Contraseña actual]** El campo se rellena previamente de forma intencionada y se oculta de la interacción.
+     El **[!UICONTROL Contraseña actual]** El campo se rellena previamente de forma intencionada y se oculta de la interacción.
 
    * En el **[!UICONTROL Repetir contraseña]** , vuelva a escribir la nueva contraseña y, a continuación, seleccione **[!UICONTROL Listo]**.
 
@@ -233,7 +236,7 @@ Cuando se ejecuta el modo Dynamic Media - Scene7 AEM en el modo de, actualmente 
 
 1. En el **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** , active la casilla de verificación de las dos opciones de configuración siguientes:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` : cuando está habilitada, esta configuración almacena en caché los resultados de los permisos durante dos minutos (predeterminado) para guardarlos.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` : cuando está habilitada, esta configuración almacena en caché los resultados de los permisos durante 120 segundos o dos minutos (predeterminado) para guardarlos.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` : cuando se habilita, esta configuración valida el acceso de un usuario mientras previsualiza los recursos mediante Dynamic Media Image Server.
 
    ![Habilitar la configuración de la Lista de control de acceso en Dynamic Media - Modo Scene7](/help/assets/assets-dm/acl.png)
@@ -250,12 +253,13 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 * Esta función de carga de gran tamaño solo es compatible para [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) clientes.
 * Asegúrese de que la instancia de Experience Manager esté configurada con Amazon S3 o Microsoft® Azure Blob Storage.
 
-   >[!NOTE]
-   Configure el almacenamiento del blob de Azure con una clave de acceso y una clave secreta, ya que esta función de carga de gran tamaño no es compatible con AzureSas en la configuración del almacenamiento del blob.
+  >[!NOTE]
+  >
+  Configure el almacenamiento del blob de Azure con una clave de acceso y una clave secreta, ya que esta función de carga de gran tamaño no es compatible con AzureSas en la configuración del almacenamiento del blob.
 
 * Oak&#39;s [Descarga de acceso binario directo](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) está habilitado (Oak) *Carga de acceso binario directo* no es obligatorio).
 
-   Para habilitar la descarga de acceso binario directo, establezca la propiedad `presignedHttpDownloadURIExpirySeconds > 0` en la configuración del almacén de datos. El valor debe ser lo suficientemente largo como para descargar binarios más grandes y posiblemente volver a intentarlo.
+  Para habilitar la descarga de acceso binario directo, establezca la propiedad `presignedHttpDownloadURIExpirySeconds > 0` en la configuración del almacén de datos. El valor debe ser lo suficientemente largo como para descargar binarios más grandes y posiblemente volver a intentarlo.
 
 * Los recursos de más de 15 GB no se cargan. (El límite de tamaño se establece en el paso 8 a continuación).
 * Si la variable **[!UICONTROL Reprocesar Dynamic Media]** el flujo de trabajo de recursos se activa en una carpeta y reprocesa cualquier recurso grande que ya esté sincronizado con la empresa de Dynamic Media. Sin embargo, si hay recursos grandes que aún no se han sincronizado en la carpeta, no se cargarán. Por lo tanto, para sincronizar recursos grandes existentes en Dynamic Media, puede ejecutar **[!UICONTROL Reprocesar Dynamic Media]** flujo de trabajo de recursos en recursos individuales.
@@ -268,7 +272,7 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 
    * En el carril izquierdo, vaya a la siguiente ruta:
 
-      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+     `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
    * Copie y pegue la ruta de acceso anterior en el campo de ruta del CRXDE Lite debajo de la barra de herramientas y, a continuación, pulse `Enter`.
 
@@ -284,7 +288,7 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 
    * En el carril izquierdo, vaya a la siguiente ruta del nodo de superposición:
 
-      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+     `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
    * Copie y pegue la ruta de acceso anterior en el campo de ruta del CRXDE Lite debajo de la barra de herramientas y, a continuación, pulse `Enter`.
 
@@ -304,11 +308,11 @@ Puede introducir un valor de hasta 15 GB (`2013265920` bytes). En este caso, los
 
    * Vaya a la siguiente ruta de URL:
 
-      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+     `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
 
    * Copie y pegue la ruta de acceso anterior en el campo URL del explorador. Asegúrese de reemplazar `localhost:4502` con su propia instancia de Experience Manager.
 
-1. En el **[!UICONTROL Controlador de trabajos de proceso externo de Adobe Granite Workflow]** , en el **[!UICONTROL Tiempo de espera máximo]** , establezca el valor en `18000` minutos (cinco horas). El valor predeterminado es de 10800 minutos (tres horas).
+1. En el **[!UICONTROL Controlador de trabajos de proceso externo de Adobe Granite Workflow]** , en el **[!UICONTROL Tiempo de espera máximo]** , establezca el valor en `18000` segundos (cinco horas). El valor predeterminado es de 10800 segundos (tres horas).
 
    ![Valor de tiempo de espera máximo](/help/assets/assets-dm/uploadassets15gb_d.png)
 
@@ -321,7 +325,7 @@ Puede introducir un valor de hasta 15 GB (`2013265920` bytes). En este caso, los
 1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Codificar vídeo Dynamic Media]**.
 1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 1. En la página de flujo de trabajo, haga doble clic en **[!UICONTROL Carga binaria directa de Scene7]** paso del proceso.
-1. En el **[!UICONTROL Propiedades del paso]** , debajo de la etiqueta **[!UICONTROL Común]** , en la pestaña **[!UICONTROL Configuración avanzada]** encabezado, en el **[!UICONTROL Tiempo de espera]** , introduzca un valor de `18000` minutos (cinco horas). El valor predeterminado es `3600` minutos (una hora).
+1. En el **[!UICONTROL Propiedades del paso]** , debajo de la etiqueta **[!UICONTROL Común]** , en la pestaña **[!UICONTROL Configuración avanzada]** encabezado, en el **[!UICONTROL Tiempo de espera]** , introduzca un valor de `18000` segundos (cinco horas). El valor predeterminado es `3600` segundos (una hora).
 1. Seleccionar **[!UICONTROL OK]**.
 1. Seleccionar **[!UICONTROL Sincronización]**.
 1. Repita los pasos 14-21 para **[!UICONTROL Recurso de actualización DAM]** modelo de flujo de trabajo y **[!UICONTROL Reprocesar Dynamic Media]** modelo de flujo de trabajo.
@@ -356,6 +360,7 @@ La administración de color de Dynamic Media le permite corregir el color de los
 Consulte [Configurar ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
 >[!NOTE]
+>
 De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visor al seleccionar **[!UICONTROL Espectadores]** en la Vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumente el número de ajustes preestablecidos de imagen que se muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumente el número de ajustes preestablecidos de visor que se muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Editar tipos MIME para formatos compatibles {#editing-mime-types-for-supported-formats}
@@ -460,7 +465,7 @@ Aunque no es necesario configurar una convención de nombres predeterminada para
 
 Como alternativa, puede utilizar **[!UICONTROL Ver código]** sin campos de formulario disponibles. En esta vista, puede crear las definiciones de convención de nombres completamente utilizando expresiones regulares.
 
-Hay dos elementos disponibles para la definición, Coincidencia y Nombre base. Estos campos permiten definir todos los elementos de una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. La convención de nombres individual de una empresa suele utilizar una o más líneas de definición para cada uno de estos elementos. Puede utilizar tantas líneas para la definición única y agruparlas en elementos distintos, como para la imagen principal, el elemento Color, el elemento de vista alternativo y el elemento Muestra.
+Hay dos elementos disponibles para la definición, Coincidencia y Nombre base. Estos campos permiten definir todos los elementos de una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. La convención de nombres individual de una compañía suele utilizar una o más líneas de definición para cada uno de estos elementos. Puede utilizar tantas líneas para la definición única y agruparlas en elementos distintos, como para la imagen principal, el elemento Color, el elemento de vista alternativo y el elemento Muestra.
 
 **Para configurar la nomenclatura predeterminada:**
 
@@ -474,6 +479,7 @@ Hay dos elementos disponibles para la definición, Coincidencia y Nombre base. E
    Puede seleccionar el **[!UICONTROL Ver código]** casilla de verificación para ver la creación del valor de expresión regular junto con las selecciones de formulario. Puede introducir o modificar estos valores para ayudar a definir los elementos de la convención de nombres, si la vista del formulario lo limita por cualquier motivo. Si los valores no se pueden analizar en la vista del formulario, los campos del formulario quedan inactivos.
 
    >[!NOTE]
+   >
    Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares sean correctas. Verá los resultados de la expresión regular que está creando para cada elemento después de la línea Result. La expresión regular completa se puede ver en la parte inferior de la página.
 
 1. Expanda cada elemento según sea necesario e introduzca las convenciones de nomenclatura que desee utilizar.
@@ -595,6 +601,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
    Las muestras anteriores son solo para fines de demostración. Puede crear su expresión regular como desee para adaptarla a sus necesidades.
 
    >[!NOTE]
+   >
    Si la combinación de expresiones regulares de fila y columna no puede determinar la posición del recurso dentro de la matriz de conjuntos de giros multidimensionales, el recurso no se agregará al conjunto. También se registra un error.
 
 1. Para la convención de creación y nomenclatura de conjuntos, especifique el sufijo o prefijo del nombre base definido en la convención de nomenclatura de activos.
@@ -650,6 +657,7 @@ La cola de flujo de trabajo de Granite Transit se utiliza para **[!UICONTROL Rec
 1. Vaya a [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) y buscar **Cola: Cola de flujo de trabajo transitorio de Granite**.
 
    >[!NOTE]
+   >
    Es necesario realizar una búsqueda de texto en lugar de una dirección URL directa porque el PID de OSGi se genera dinámicamente.
 
 1. En el **[!UICONTROL Máximo de trabajos paralelos]** , cambie el número al valor deseado.
@@ -673,6 +681,7 @@ La cola de flujo de trabajo de Granite se utiliza para flujos de trabajo no tran
 1. Vaya a `https://<server>/system/console/configMgr` y buscar **Cola: Cola de flujo de trabajo de Granite**.
 
    >[!NOTE]
+   >
    Es necesario realizar una búsqueda de texto en lugar de una dirección URL directa porque el PID de OSGi se genera dinámicamente.
 
 1. En el **[!UICONTROL Máximo de trabajos paralelos]** , cambie el número al valor deseado.
@@ -714,12 +723,13 @@ Los filtros proporcionan una forma de *excluir* los recursos no se replicarán e
 
 Si utiliza Dynamic Media para la creación de imágenes, vídeo o ambos, puede utilizar los filtros predeterminados que proporciona el Adobe tal cual. Los siguientes filtros están activos de forma predeterminada:
 
-|  | Filter | Tipo MIME | Representaciones |
+|   | Filter | Tipo MIME | Representaciones |
 | --- | --- | --- | --- |
 | Entrega de imágenes de Dynamic Media | filter-image<br>conjuntos de filtros | Comienza por **image/**<br> Contains **applications/** y finalizará con **set**. | Los &quot;filter-images&quot; predeterminados (se aplica a recursos de imágenes únicas, incluidas imágenes interactivas) y &quot;filter-sets&quot; (se aplica a conjuntos de giros, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de carrusel):<br>· Excluir de la replicación la imagen original y las representaciones de imágenes estáticas. |
 | Entrega de vídeo en Dynamic Media | filter-video | Comienza por **video/** | El &quot;vídeo de filtro&quot; incorporado hará lo siguiente:<br>· Excluir de la replicación el vídeo original y las representaciones de miniaturas estáticas. |
 
 >[!NOTE]
+>
 Los filtros se aplican a los tipos MIME y no pueden ser específicos de la ruta.
 
 #### Personalizar filtros de recursos para la replicación {#customizing-asset-filters-for-replication}
