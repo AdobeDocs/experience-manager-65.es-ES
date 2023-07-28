@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: cd797b1a5edd05715761f5914ebc64fdb64745af
+source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
 workflow-type: tm+mt
-source-wordcount: '6631'
+source-wordcount: '6622'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ Para obtener más información sobre las extensiones de Adobe o las extensiones 
 * La integración de etiquetas de Experience Platform para los visualizadores de Dynamic Media no funciona en el nodo de creación de Experience Manager. No puede ver ningún seguimiento desde una página WCM hasta que se publique.
 * La integración de etiquetas de Experience Platform para los visualizadores de Dynamic Media no es compatible con el modo de operación &quot;emergente&quot;, en el que la URL del visualizador se obtiene mediante el botón &quot;URL&quot; en la página Detalles del recurso.
 * La integración de etiquetas de Experience Platform no se puede usar de forma simultánea con la integración de visores heredados de Analytics (mediante el `config2=` parámetro).
-* La compatibilidad con el seguimiento de vídeo se limita únicamente al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Resumen de seguimiento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). En particular, no se admite QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
+* La compatibilidad con el seguimiento de vídeo se limita únicamente al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Resumen de seguimiento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). En particular, no se admite QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
 * La configuración de duración del almacenamiento para elementos de datos no es compatible con elementos de datos que utilizan el *Visores de Dynamic Media* extensión. La duración del almacenamiento debe establecerse en **[!UICONTROL Ninguno]**.
 
 ### Casos de uso para la integración {#use-cases-for-the-integration}
@@ -133,7 +133,7 @@ Cuando se suscribe una cuenta de Experience Cloud para utilizar Adobe Analytics 
 
 Consulte [Instalación y configuración de extensiones](#installing-and-setup-of-extensions).
 
-Actualmente, la compatibilidad con el seguimiento de vídeo se limita solo al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Resumen de seguimiento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). En particular, no se admite QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
+Actualmente, la compatibilidad con el seguimiento de vídeo se limita solo al seguimiento de &quot;reproducción principal&quot;, tal como se describe en [Resumen de seguimiento](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). En particular, no se admite QoS, anuncios, capítulos o segmentos ni el seguimiento de errores.
 
 ## Uso de la extensión Visualizadores de Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -301,7 +301,7 @@ En la tabla siguiente se enumeran los eventos de visualizador de Dynamic Media y
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -425,7 +425,7 @@ Además, si esta solución de integración se utiliza con Experience Manager Sit
 * [!DNL Adobe Developer Console] : la integración se crea para las etiquetas de Experience Platform.
 * Nodo de creación de Experience Manager: configuración de IMS y configuración de nube de etiquetas de Experience Platform.
 
-Como parte de la configuración de, asegúrese de que tiene acceso a una empresa de Adobe Experience Cloud que ya tiene habilitadas las etiquetas de Adobe Analytics y Experience Platform.
+Como parte de la configuración de, asegúrese de que tiene acceso a una empresa de Adobe Experience Cloud que ya tiene habilitadas las etiquetas de Adobe Analytics y de Experience Platform.
 
 ## Configuración de Adobe Analytics para la integración {#configuring-adobe-analytics-for-the-integration}
 
@@ -518,7 +518,7 @@ Una propiedad de Etiquetas de Experience Platform es una configuración con nomb
 Consulte también [Creación de una propiedad de etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 1. En Etiquetas de Experience Platform, seleccione **[!UICONTROL Nueva propiedad]**.
-1. En el cuadro de diálogo **[!UICONTROL Crear propiedad]**, dentro del campo **[!UICONTROL Nombre]**, escriba un nombre descriptivo, como el título del sitio web. Por ejemplo, `DynamicMediaViewersProp.`. 
+1. En el cuadro de diálogo **[!UICONTROL Crear propiedad]**, dentro del campo **[!UICONTROL Nombre]**, escriba un nombre descriptivo, como el título del sitio web. Por ejemplo, `DynamicMediaViewersProp.`
 1. En el **[!UICONTROL Domains]** , introduzca el dominio del sitio web.
 1. En el **[!UICONTROL Opciones avanzadas]** lista desplegable, habilitar **[!UICONTROL Configure para el desarrollo de extensiones (no se puede modificar más adelante)]** en caso de que la extensión desee utilizar, en este caso, *Visores de Dynamic Media*: aún no se ha liberado.
 
@@ -756,7 +756,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
    * **[!UICONTROL Título]** : introduzca un título descriptivo para la cuenta.
    * **[!UICONTROL Servidor de autorización]** - Vuelva a la página de detalles de integración que abrió anteriormente. Seleccione el **[!UICONTROL JWT]** pestaña. Copie el nombre del servidor (sin la ruta) como se indica a continuación.
 
-(el nombre del servidor es solo un ejemplo)   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
+   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
 Por ejemplo, `https://ims-na1.adobelogin.com/`
 (el nombre del servidor es solo un ejemplo)
 
@@ -816,6 +816,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
    * **[!UICONTROL Compañía]** - Desde el **[!UICONTROL Compañía]** , seleccione su empresa de Experience Cloud. La lista se rellena automáticamente.
 
    * **[!UICONTROL Propiedad]** : En la lista desplegable Propiedad, seleccione la propiedad Etiquetas de Experience Platform que creó anteriormente. La lista se rellena automáticamente.
+
    Después de completar todos los campos, su **[!UICONTROL General]** La página será similar a la siguiente:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)

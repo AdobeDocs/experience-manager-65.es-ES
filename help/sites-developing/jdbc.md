@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ El complemento determina automáticamente qué paquetes importar y los enumera e
 
 * Indique en el POM que los paquetes son opcionales. Utilice esta solución cuando la conexión JDBC realmente no requiera los miembros del paquete. Utilice el elemento Import-Package para indicar paquetes opcionales como en el siguiente ejemplo:
 
-   `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
+  `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
 * Ajuste los archivos JAR que contienen los paquetes en un paquete OSGi que exporta los paquetes e implemente el paquete. Utilice esta solución cuando los miembros del paquete sean necesarios durante la ejecución del código.
 
 El conocimiento del código fuente le permite decidir qué solución utilizar. También puede probar cualquiera de las soluciones y realizar pruebas para validar la solución.
@@ -86,7 +86,7 @@ El conocimiento del código fuente le permite decidir qué solución utilizar. T
 
 Los siguientes vínculos abren las páginas de descarga de algunos productos de base de datos populares:
 
-* [Microsoft® SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
@@ -170,6 +170,7 @@ El siguiente código JSP de ejemplo obtiene una instancia del origen de datos hs
 >[!NOTE]
 >
 >Si el método getDataSource produce una excepción porque no se encuentra el origen de datos, asegúrese de que la configuración del servicio Pool de Conexiones es correcta. Compruebe los nombres de las propiedades, los valores y los tipos de datos.
+>
 
 <!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]

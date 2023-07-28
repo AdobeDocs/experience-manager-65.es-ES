@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
+source-git-commit: 78842fb50d5aa5e5c22801389713cb3c69cac4bf
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6489'
 ht-degree: 3%
 
 ---
@@ -236,7 +236,7 @@ Cuando se ejecuta el modo Dynamic Media - Scene7 AEM en el modo de, actualmente 
 
 1. En el **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** , active la casilla de verificación de las dos opciones de configuración siguientes:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` : cuando está habilitada, esta configuración almacena en caché los resultados de los permisos durante 120 segundos o dos minutos (predeterminado) para guardarlos.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` : cuando está habilitada, esta configuración almacena en caché los resultados de los permisos durante 120 segundos (dos minutos) (predeterminado) para guardarlos.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` : cuando se habilita, esta configuración valida el acceso de un usuario mientras previsualiza los recursos mediante Dynamic Media Image Server.
 
    ![Habilitar la configuración de la Lista de control de acceso en Dynamic Media - Modo Scene7](/help/assets/assets-dm/acl.png)
@@ -703,7 +703,7 @@ La configuración de Conexión de carga de Scene7 sincroniza los recursos del Ex
 
    El **[!UICONTROL Número de conexiones]** Esta opción controla el número máximo de conexiones HTTP permitidas para la carga de Experience Manager a Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.
 
-   El **[!UICONTROL Tiempo de espera del trabajo activo]** determina el tiempo de espera para que los recursos de Dynamic Media cargados se publiquen en el servidor de entrega. De forma predeterminada, este valor es 2100 segundos o 35 minutos.
+   El **[!UICONTROL Tiempo de espera del trabajo activo]** determina el tiempo de espera para que los recursos de Dynamic Media cargados se publiquen en el servidor de entrega. Este valor es de 2100 segundos (35 minutos) de forma predeterminada.
 
    Para la mayoría de los casos de uso, el ajuste 2100 es suficiente.
 
