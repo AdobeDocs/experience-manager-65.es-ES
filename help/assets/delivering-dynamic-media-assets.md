@@ -1,6 +1,6 @@
 ---
 title: Entrega de recursos de Dynamic Media
-description: Obtenga información sobre cómo entregar recursos de Dynamic Media
+description: Obtenga información sobre cómo enviar recursos de Dynamic Media, como vídeos e imágenes, a sus páginas web.
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '319'
 ht-degree: 13%
 
 ---

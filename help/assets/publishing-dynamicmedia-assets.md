@@ -1,6 +1,6 @@
 ---
 title: Publicación de recursos de Dynamic Media
-description: Cómo publicar recursos de Dynamic Media
+description: Obtenga información sobre cómo publicar recursos de Dynamic Media, como vídeos e imágenes, incluido el envío HTTP/2 de dichos recursos.
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '474'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,6 @@ Consulte también [Incrustar el visualizador de imágenes o vídeos de Dynamic M
 >* Los recursos deben publicarse para poder usar la dirección URL. Si los recursos no se publican, no funcionará copiar y pegar la dirección URL en un explorador web.
 >* Los ajustes preestablecidos de imagen y de visualizador se deben activar y publicar para la entrega en directo.
 >
-
 
 Para obtener información detallada sobre cómo publicar un conjunto o un recurso, consulte [Publicar recursos](manage-assets.md).
 

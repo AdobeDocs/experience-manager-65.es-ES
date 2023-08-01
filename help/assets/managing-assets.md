@@ -1,6 +1,6 @@
 ---
 title: Acerca de la administración de recursos Dynamic Media
-description: Aprenda a trabajar con recursos de Dynamic Media
+description: Aprenda a trabajar con recursos de Dynamic Media, como vídeos e imágenes, una vez cargados. Puede obtener una vista previa, descargar o publicar recursos.
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Asset Management
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 14%
+source-wordcount: '128'
+ht-degree: 12%
 
 ---
 

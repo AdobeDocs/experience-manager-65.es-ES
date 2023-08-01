@@ -1,6 +1,6 @@
 ---
 title: Solución de problemas de Dynamic Media - Modo Scene7
-description: Solucione los problemas de Dynamic Media cuando se ejecuta en el modo Scene7.
+description: Obtenga información sobre cómo solucionar y resolver problemas generales, de configuración y de instalación en Dynamic Media cuando se ejecuta en modo Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 9c3df2491f99fe31e4b64b47442dd583af06974e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1397'
 ht-degree: 1%
 
 ---
@@ -31,12 +31,12 @@ Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo sigu
 * Primero se ha instalado cualquier paquete de correcciones acumulativas (CFP) de Adobe Experience Manager 6.4 *antes* cualquier paquete de funciones de Dynamic Media disponible.
 * El paquete de funciones opcional 18912 está instalado.
 
-   Este paquete de funciones opcional es compatible con FTP o si migra recursos a Dynamic Media desde Dynamic Media Classic.
+  Este paquete de funciones opcional es compatible con FTP o si migra recursos a Dynamic Media desde Dynamic Media Classic.
 
 * Vaya a la interfaz de usuario de Cloud Services y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles]**.
 * Asegúrese de que la variable `Dynamic Media Asset Activation (scene7)` el agente de replicación está habilitado.
 
-   Este agente de replicación se encuentra en Agentes de autor.
+  Este agente de replicación se encuentra en Agentes de autor.
 
 ## General (todos los recursos) {#general-all-assets}
 
@@ -69,7 +69,7 @@ Antes de realizar una operación de mover, copiar o eliminar, haga lo siguiente:
 
 Al reemplazar un recurso de Dynamic Media existente (mismo nombre y ubicación), puede mantener ambos recursos o reemplazar o crear una versión:
 
-* Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso recién cargado.
+* Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso que acaba de cargar.
 
 * La creación de una versión no es compatible con el modo Dynamic Media - Scene7. La nueva versión reemplaza el recurso existente en la entrega.
 
@@ -244,8 +244,7 @@ En CRXDE Lite, haga lo siguiente:
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Ejemplo: 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+Ejemplo: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solución**
 
