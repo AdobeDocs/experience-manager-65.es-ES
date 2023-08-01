@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -61,7 +61,7 @@ El valor del `data-scf-component` El atributo puede ser el predeterminado, como 
 
 Para enlazar un componente, todo el script del componente debe incluirse dentro de un &lt;div> con los atributos siguientes:
 
-* `data-component-id`=&quot;{{id}}&quot;
+* `data-component-id`=&quot;`{{id}}`&quot;
 
   se resuelve en la propiedad id desde el contexto
 
@@ -70,7 +70,7 @@ Para enlazar un componente, todo el script del componente debe incluirse dentro 
 Por ejemplo, desde `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
-<div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
+<div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
 
      <!-- HTML with HBS accessing the rating component -->
 
@@ -198,7 +198,7 @@ Los clientlibs de autor requeridos se pueden identificar insertando &quot;author
 
 ### Consideraciones de uso {#usage-considerations}
 
-Cada sitio es diferente en la forma en que administra las bibliotecas de cliente. Varios factores incluyen:
+Cada sitio es diferente en la forma en que administran las bibliotecas de cliente. Varios factores incluyen:
 
 * Velocidad general: Tal vez el deseo es que el sitio sea adaptable, pero es aceptable que la primera página sea un poco lenta de cargar. Si muchas de las páginas utilizan el mismo JavaScript, los distintos JavaScript se pueden incrustar en una clientlib y se puede hacer referencia a ellos desde la primera página que se cargue. El JavaScript de esta descarga única permanece en la caché, lo que minimiza la cantidad de datos que se descargarán para las páginas siguientes.
 * Breve tiempo hasta la primera página: tal vez lo que se desea es que la primera página se cargue rápidamente. En este caso, se hace referencia al JavaScript en varios archivos pequeños solo cuando es necesario.

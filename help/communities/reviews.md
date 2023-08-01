@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 4%
@@ -213,7 +213,7 @@ En el **[!UICONTROL Tipos de recursos]** pestaña, especifique el resourceType p
 
 * **[!UICONTROL Tipo de medio de sistema de comentario]**
 
-  Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [{{include}} ayudante](handlebars-helpers.md#include).
+  Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [`{{include}}` ayudante](handlebars-helpers.md#include).
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 

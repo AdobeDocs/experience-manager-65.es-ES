@@ -7,7 +7,7 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 6%
@@ -175,7 +175,7 @@ En el **Tipos de recursos** pestaña, especifique el resourceType personalizado 
 
 * **Tipo de medio de sistema de comentario**
 
-  Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](/help/communities/scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [{{include}} ayudante](/help/communities/handlebars-helpers.md#include).
+  Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](/help/communities/scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [`{{include}}` ayudante](/help/communities/handlebars-helpers.md#include).
 
 ### Experiencia del visitante del sitio {#site-visitor-experience}
 
