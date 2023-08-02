@@ -2,9 +2,9 @@
 title: Comprimir y descomprimir archivos con un AEM Forms en una DSC personalizada JEE
 description: Aprenda a comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '483'
 ht-degree: 2%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 2%
 
 ## Conocimientos previos requeridos {#prerequisites}
 
-Experiencia con AEM Forms en la administración de procesos JEE, la programación básica de Java y la creación de componentes personalizados.
+Experiencia con AEM Forms en la administración de procesos JEE, la programación básica de Java™ y la creación de componentes personalizados.
 
 **Otros productos adicionales necesarios**
 
-Editor Java como [Eclipse](https://www.eclipse.org/) o [Netbeans IDE](https://netbeans.apache.org/)
+Editor Java™ como [Eclipse](https://www.eclipse.org/) o [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Nivel de usuario {#user-level}
 
@@ -187,7 +187,7 @@ El archivo component.xml se muestra aquí:
 
 ## Empaquetado e implementación del componente {#packaging-deploying-component}
 
-1. Compile el proyecto java y cree un archivo .JAR.
+1. Compile el proyecto Java™ y cree un archivo .JAR.
 1. Implemente el componente (archivo .JAR) en el tiempo de ejecución de AEM Forms en JEE a través de Workbench.
 1. Inicie el servicio desde Workbench (consulte la figura siguiente).
 
@@ -213,7 +213,7 @@ Puede utilizar este servicio ZIP para los siguientes casos de uso:
 
 * Busque todos los archivos de una carpeta determinada y devuélvalos como un documento comprimido.
 
-* Suministre un archivo ZIP que contenga una serie de documentos de PDF que se puedan leer y extender después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
+* Suministre un archivo ZIP que contenga varios documentos del PDF que se puedan ampliar después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
 
 * Proporcione un archivo ZIP que contenga un tipo heterogéneo de documento que se pueda descomprimir y convertir como documento de PDF mediante el servicio Generate PDF.
 

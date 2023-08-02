@@ -1,19 +1,15 @@
 ---
 title: Acceder y cumplimentar formularios publicados
-seo-title: Accessing and filling published forms
 description: El portal de formularios proporciona a los desarrolladores web componentes para crear y personalizar un portal de formularios en sitios web creados con Adobe Experience Manager (AEM).
-seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '927'
+ht-degree: 90%
 
 ---
 
@@ -60,7 +56,7 @@ La búsqueda de texto completo permite encontrar y enumerar formularios en funci
 
 Cuadro de diálogo de búsqueda avanzada
 
-La búsqueda avanzada permite buscar formularios en función de las propiedades especificadas del formulario. Esto proporciona resultados más específicos que la búsqueda de texto completo. La búsqueda avanzada incluye la búsqueda basada en etiquetas, propiedades (como autor, descripción y título), fecha de modificación y texto completo.
+La búsqueda avanzada permite buscar formularios en función de las propiedades especificadas del formulario. Esto proporciona un resultado más específico que la búsqueda de texto completo. La búsqueda avanzada incluye la búsqueda basada en etiquetas, propiedades (como autor, descripción y título), fecha de modificación y texto completo.
 
 La lista muestra los formularios en función de los parámetros de búsqueda. Cada formulario del resultado de la búsqueda se muestra con un icono que es un hipervínculo al formulario asociado. Puede hacer clic en el icono para abrir y trabajar con el formulario asociado.
 
@@ -76,7 +72,7 @@ Cada formulario contiene información de ayuda que permite al usuario rellenarlo
 
 #### Borradores y envíos {#drafts-and-submission}
 
-Un usuario tiene la opción de guardar un borrador de un formulario si hace clic en el botón Guardar. Esto permite al usuario trabajar en un formulario durante un periodo de tiempo antes de enviarlo.
+Si lo desea, el usuario puede guardar el borrador de un formulario haciendo clic en **Guardar**. Esto permite al usuario trabajar en un formulario durante un periodo de tiempo antes de enviarlo.
 
 Los datos rellenados en el formulario (incluidos los archivos adjuntos) se guardarán como borrador en el servidor. El borrador de un formulario se puede guardar cualquier número de veces. El formulario guardado aparecerá en la pestaña Borradores del componente Borradores y envíos de la página.
 
@@ -92,9 +88,9 @@ Componente Borradores y envíos
 
 ## Inicie un formulario nuevo con los datos de un formulario enviado {#start-a-new-form-using-submitted-form-data}
 
-Algunos formularios que debe rellenarlos y enviarlos con bastante frecuencia. Por ejemplo, el formulario para presentar la declaración de impuestos individual se envía cada año. En estos casos, mientras que parte de la información cambia cada vez que se rellena el formulario, la mayoría de ella, como los detalles personales y familiares, no cambia. Sin embargo, debe rellenar todo el formulario de nuevo, desde cero.
+Algunos formularios que debe rellenarlos y enviarlos con frecuencia. Por ejemplo, el formulario para presentar la declaración de impuestos individual se envía cada año. En estos casos, mientras que parte de la información cambia cada vez que se rellena el formulario, la mayoría de ella, como los detalles personales y familiares, no cambia. Sin embargo, debe rellenar todo el formulario de nuevo, desde cero.
 
-AEM Forms puede ayudar a optimizar la experiencia de cumplimentación de formularios y reducir significativamente el tiempo para rellenar y enviar un formulario de nuevo. Los usuarios finales pueden iniciar un nuevo formulario con los datos de un formulario enviado. Esta funcionalidad está integrada en el [Componente Borradores y envíos](../../forms/using/draft-submission-component.md). Al agregar el componente Borradores y envíos a la página del portal de formularios y publicarlo, los usuarios finales encontrarán una opción en las pestañas Envío de formularios y Borradores para iniciar un nuevo formulario con los datos de un formulario enviado. La siguiente imagen resalta esa opción.
+AEM Forms puede ayudar a optimizar la experiencia de cumplimentación de formularios y reducir significativamente el tiempo para rellenar y enviar un formulario de nuevo. Los usuarios finales pueden iniciar un nuevo formulario con los datos de un formulario enviado. Esta funcionalidad está integrada en el [Componente Borradores y envíos](../../forms/using/draft-submission-component.md). Cuando se agrega el componente Borradores y envíos a la página del portal de formularios y se publica, los usuarios finales ven una opción en las pestañas Enviado Forms y Borrador Forms para iniciar un nuevo formulario con los datos de un formulario enviado. La siguiente imagen resalta esa opción.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 

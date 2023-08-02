@@ -1,19 +1,15 @@
 ---
 title: 'DSRP: proveedor de recursos de almacenamiento de base de datos relacional'
-seo-title: DSRP - Relational Database Storage Resource Provider
 description: Configure AEM Communities para que utilice una base de datos relacional como almacén común
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '617'
 ht-degree: 3%
 
 ---
@@ -33,7 +29,7 @@ Consulte también [Características de las opciones de SRP](working-with-srp.md#
 
 >[!NOTE]
 >
->La configuración de almacenamiento predeterminada ahora se almacena en conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) en lugar de la ruta etc (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga las [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
+>La configuración de almacenamiento predeterminada ahora se almacena en conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) en lugar de `etc` ruta (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga las [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
 
 ## Configuración de base de datos relacional {#relational-database-configuration}
 
@@ -67,53 +63,55 @@ En autor, para acceder a la consola Configuración de almacenamiento
    * Seleccionar **[!UICONTROL Configuración de almacenamiento]**
 
       * Por ejemplo, la ubicación resultante es: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
-      >[!NOTE]
-      >
-      >La configuración de almacenamiento predeterminada ahora se almacena en conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) en lugar de la ruta etc (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga las [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
-   ![dsrp-config](assets/dsrp-config.png)
+
+     >[!NOTE]
+     >
+     >La configuración de almacenamiento predeterminada ahora se almacena en conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) en lugar de `etc` ruta (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga las [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
+
+  ![dsrp-config](assets/dsrp-config.png)
 
 * Seleccionar **[!UICONTROL Proveedor de recursos de almacenamiento de bases de datos (DSRP)]**
 * **Configuración de la base de datos**
 
    * **[!UICONTROL Nombre de la fuente de datos JDBC]**
 
-      El nombre dado a la conexión MySQL debe ser el mismo que se introdujo en [Configuración OSGi de JDBC](dsrp-mysql.md#configurejdbcconnections)
+     El nombre dado a la conexión MySQL debe ser el mismo que se introdujo en [Configuración OSGi de JDBC](dsrp-mysql.md#configurejdbcconnections)
 
-      *predeterminado*: comunidades
+     *predeterminado*: comunidades
 
    * **[!UICONTROL Nombre de la base de datos]**
 
-      Nombre dado al esquema en [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
+     Nombre dado al esquema en [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
-      *predeterminado*: comunidades
+     *predeterminado*: comunidades
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host de Zookeeper**
+   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Host de Zookeeper**
 
-      Deje este valor en blanco si ejecuta Solr con el ZooKeeper interno. De lo contrario, al correr [Modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en el URI del ZooKeeper, como *my.server.com:80*
+     Deje este valor en blanco si ejecuta Solr con el ZooKeeper interno. De lo contrario, al correr [Modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en el URI del ZooKeeper, como *my.server.com:80*
 
-      *predeterminado*: *&lt;blank>*
+     *predeterminado*: *&lt;blank>*
 
    * **[!UICONTROL URL de Solr]**
 
-      *predeterminado*: https://127.0.0.1:8983/solr/
+     *predeterminado*: https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Colección Solr]**
 
-      *predeterminado*: colección1
+     *predeterminado*: colección1
 
 * Seleccione **[!UICONTROL Enviar]**.
 
 ### Pasos de migración sin tiempo de inactividad para defaultsrp {#zerodt-migration-steps}
 
-Siga estos pasos para asegurarse de que la página predeterminada es [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funciona según lo esperado:
+Para asegurarse de que la página predeterminada es [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) funciona según lo esperado, siga estos pasos:
 
 1. Cambie el nombre de la ruta en `/etc/socialconfig` hasta `/etc/socialconfig_old`, para que la configuración del sistema vuelva a jsrp (valor predeterminado).
 1. Ir a la página defaultsrp [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), donde jsrp está configurado. Haga clic en **[!UICONTROL enviar]** para que se cree el nuevo nodo de configuración predeterminado en `/conf/global/settings/community/srpc`.
 1. Eliminar la configuración predeterminada creada `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. Copiar la configuración antigua `/etc/socialconfig_old/srpc/defaultconfiguration` en lugar del nodo eliminado (`/conf/global/settings/community/srpc/defaultconfiguration`) en el paso anterior.
-1. Eliminar el nodo etc. anterior `/etc/socialconfig_old`.
+1. Eliminar el antiguo `etc` nodo `/etc/socialconfig_old`.
 
 ## Publicación de la configuración {#publishing-the-configuration}
 
@@ -128,9 +126,9 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
    * **Ruta de inicio**:
 
       * Navegar a `/etc/socialconfig/srpc/`
+
    * Asegurar `Only Modified` no está seleccionado.
    * Seleccionar **[!UICONTROL Activar]**.
-
 
 ## Administración de datos de usuario {#managing-user-data}
 
