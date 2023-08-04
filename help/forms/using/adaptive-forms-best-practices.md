@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
 workflow-type: tm+mt
-source-wordcount: '4586'
-ht-degree: 98%
+source-wordcount: '4738'
+ht-degree: 95%
 
 ---
 
@@ -103,6 +103,7 @@ Para obtener más información, consulte [Crear un formulario adaptable](/help/f
 Puede crear un formulario adaptable con las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Crear una plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=es).
 
 Las plantillas de formulario también se pueden cargar desde paquetes de formularios adaptables creados en otro equipo de creación. Las plantillas de formulario están disponibles mediante al instalar [paquetes aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). Algunas de las prácticas recomendadas son las siguientes:
+
 * El modo de ejecución **nosamplecontent** solo se recomienda para el autor y no para los nodos de publicación.
 * La creación de recursos, como formularios adaptables, temáticas, plantillas o configuraciones de nube, se realiza solo sobre nodos de autor, que se pueden publicar en los nodos configurados de publicación.
 Para obtener más información, consulte [Publicar y cancelar la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=es)
@@ -154,6 +155,39 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
 
 * Es posible que los autores de formularios adaptables tengan que escribir código JavaScript para crear lógica empresarial en un formulario. Aunque JavaScript es potente y eficaz, es probable que pueda comprometer las expectativas de seguridad. Por lo tanto, debe asegurarse de que el autor del formulario sea una persona de confianza y de que haya procesos para revisar y aprobar el código JavaScript antes de que se ponga en producción un formulario. El administrador puede restringir el acceso al editor de reglas a los grupos de usuarios en base a su rol o función. Consulte [Conceder acceso al Editor de reglas a determinados grupos de usuarios.](/help/forms/using/rule-editor-access-user-groups.md).
 * Puede utilizar expresiones en reglas para hacer dinámicos los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener más información sobre las expresiones y las prácticas recomendadas que las rodean, consulte [Expresiones de formulario adaptables](/help/forms/using/adaptive-form-expressions.md).
+
+* Adobe recomienda utilizar operaciones sincrónicas de JavaScript sobre las asincrónicas al crear reglas con el Editor de reglas. Se desaconseja el uso de operaciones asincrónicas. Sin embargo, si se encuentra en una situación en la que las operaciones asincrónicas son inevitables, es esencial implementar las funciones de cierre de JavaScript. Al hacerlo, puede proteger de forma eficaz contra cualquier posible condición de carrera, lo que garantiza que las implementaciones de reglas ofrezcan un rendimiento óptimo y mantengan la estabilidad en todo.
+
+  Por ejemplo, supongamos que necesitamos recuperar datos de una API externa y luego aplicar algunas reglas basadas en esos datos. Utilizamos un cierre para gestionar la llamada asincrónica a la API y garantizar que las reglas se apliquen después de recuperar los datos. Este es un ejemplo de código:
+
+  ```JavaScript
+       function fetchDataFromAPI(apiEndpoint, callback) {
+        // Simulate asynchronous API call with setTimeout
+        setTimeout(() => {
+          // Assuming the API call is successful, we receive some data
+          const data = {
+            someValue: 42,
+          };
+          // Invoke the callback with the fetched data
+          callback(data);
+        }, 2000); // Simulate a 2-second delay for the API call
+      }
+      // Rule implementation using Closure
+      function ruleImplementation(apiEndpoint) {
+        // Using a closure to handle the asynchronous API call and rule application
+        // say you have set this value in street field inside address panel
+        var streetField = address.street;
+        fetchDataFromAPI(apiEndpoint, (data) => {
+          streetField.value = data.someValue;
+        });
+      }
+      // Example usage of the rule implementation
+      const apiEndpoint = "https://example-api.com/data";
+      ruleImplementation(apiEndpoint);
+  ```
+
+  En este ejemplo, `fetchDataFromAPI` simula una llamada de API asincrónica mediante `setTimeout`. Una vez recuperados los datos, invoca la función de llamada de retorno proporcionada, que es el cierre para administrar la aplicación de reglas posterior. El `ruleImplementation` contiene la lógica de la regla.
+
 
 ### Trabajar con temáticas {#working-with-themes}
 
