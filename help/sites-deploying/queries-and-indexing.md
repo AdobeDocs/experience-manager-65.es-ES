@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
 workflow-type: tm+mt
-source-wordcount: '2619'
+source-wordcount: '3033'
 ht-degree: 2%
 
 ---
@@ -131,6 +131,84 @@ El índice Lucene tiene las siguientes opciones de configuración:
 * El **includePropertyTypes** propiedad, que define qué subconjunto de tipos de propiedad se incluye en el índice.
 * El **excludePropertyNames** propiedad que define una lista de nombres de propiedades: propiedades que deben excluirse del índice.
 * El **reindexar** indicador que, cuando se establece en **true**, déclencheur un reíndice de contenido completo.
+
+### Explicación de la búsqueda de texto completo {#understanding-fulltext-search}
+
+La documentación de esta sección se aplica a Apache Lucene, Elasticsearch, así como a índices de texto completo de, por ejemplo, PostgreSQL, SQLite, MySQL. AEM El siguiente ejemplo es para el caso de la aplicación de la combinación de: Oak / Lucene.
+
+<b>Datos que indexar</b>
+
+El punto de partida son los datos que deben indexarse. Veamos los siguientes documentos, por ejemplo:
+
+| <b>ID de documento</b> | <b>Ruta</b> | <b>Texto completo</b> |
+| --- | --- | --- |
+| 100 | /content/rubik | &quot;Rubik es una marca finlandesa&quot;. |
+| 200 | /content/rubiksCube | &quot;El cubo de Rubik fue inventado en 1974&quot;. |
+| 300 | /content/cube | &quot;Un cubo es un objeto tridimensional.&quot; |
+
+
+<b>Índice invertido</b>
+
+El mecanismo de indexación divide el texto completo en palabras denominadas &quot;tokens&quot; y crea un índice denominado &quot;índice invertido&quot;. Este índice contiene la lista de documentos donde aparece para cada palabra.
+
+Las palabras comunes muy cortas (también llamadas &quot;palabras de parada&quot;) no están indexadas. Todos los tokens se convierten a minúsculas y se aplica la derivación.
+
+Observe los caracteres especiales como *&quot;-&quot;* no están indexados.
+
+| <b>Token</b> | <b>Identificadores de documento</b> |
+| --- | --- |
+| 194 | ..., 200,... |
+| marca | ..., 100,... |
+| cubo | ..., 200, 300,... |
+| dimensión | 300 |
+| finés | ..., 100,... |
+| inventar | 200 |
+| objeto | ..., 300,... |
+| rubí | .., 100, 200,... |
+
+La lista de documentos está ordenada. Esto resulta útil cuando se realiza una consulta.
+
+<b>Buscando</b>
+
+A continuación se muestra un ejemplo de consulta. Tenga en cuenta que todos los caracteres especiales (como *&#39;*) se han reemplazado por un espacio:
+
+```
+/jcr:root/content//element(\*; cq:Page)`[` jcr:contains('Rubik s Cube')`]`
+```
+
+Las palabras se identifican mediante token y se filtran del mismo modo que al indexar (por ejemplo, se eliminan las palabras de un solo carácter). Por lo tanto, en este caso, la búsqueda es para:
+
+```
++:fulltext:rubik +:fulltext:cube
+```
+
+A continuación, el índice consultará la lista de documentos para esas palabras. Si hay muchos documentos, las listas pueden ser muy grandes. Por ejemplo, supongamos que contienen lo siguiente:
+
+
+| <b>Token</b> | <b>Identificadores de documento</b> |
+| --- | --- |
+| rubí | 10, 100, 200, 1000 |
+| cubo | 30, 200, 300, 2000 |
+
+
+Lucene cambiará de una lista a otra (o round-robin) `n` listas, al buscar `n` palabras):
+
+* Leído en el &quot;rubik&quot; obtiene la primera entrada: encuentra 10
+* Leído en el &quot;cubo&quot; obtiene la primera entrada `>` = 10. 10 no se encuentra, el siguiente es 30.
+* Leer en el &quot;rubik&quot; obtiene la primera entrada `>` = 30: encuentra 100.
+* Leído en el &quot;cubo&quot; obtiene la primera entrada `>` = 100: encuentra 200.
+* Leer en el &quot;rubik&quot; obtiene la primera entrada `>` = 200. 200 se ha encontrado. Así que el documento 200 coincide para ambos términos. Esto se recuerda.
+* Leer en el &quot;rubik&quot; obtiene la siguiente entrada: 1000.
+* Leído en el &quot;cubo&quot; obtiene la primera entrada `>` = 1000: encuentra 2000.
+* Leer en el &quot;rubik&quot; obtiene la primera entrada `>` = 2000: final de la lista.
+* Finalmente, podemos dejar de buscar.
+
+El único documento encontrado que contiene ambos términos es 200, como en el ejemplo siguiente:
+
+| 200 | /content/rubiksCube | &quot;El cubo de Rubik fue inventado en 1974&quot;. |
+| --- | --- | --- |
+
+Cuando se encuentran varias entradas, se ordenan por puntuación.
 
 ### Índice de propiedades de Lucene {#the-lucene-property-index}
 
