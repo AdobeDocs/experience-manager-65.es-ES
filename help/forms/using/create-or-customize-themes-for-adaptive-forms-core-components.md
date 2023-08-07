@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1975'
 ht-degree: 9%
 
 ---
@@ -20,8 +20,9 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | Este artículo |
 | AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM 6.5 | Este artículo |
+
 
 **Se aplica a:** ❎ de componentes principales de formulario adaptable ✅ [Componentes de base de formulario adaptable](/help/forms/using/themes.md).
 
@@ -51,7 +52,7 @@ Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript 
 
 ## Crear una temática
 
-AEM Forms 6.5 proporciona los temas siguientes para los componentes principales basados en Forms adaptable.
+AEM Forms 6.5 proporciona los temas que se enumeran a continuación para los componentes principales basados en Forms adaptable.
 
 * [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -337,4 +338,5 @@ Para eliminar temas no utilizados o no deseados:
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
