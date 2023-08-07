@@ -9,7 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 50%
@@ -24,11 +24,10 @@ ht-degree: 50%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM 6.5 | Este artículo |
 | AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es) |
+| AEM 6.5 | Este artículo |
 
 **Se aplica a:** ❎ de componentes principales de formulario adaptable ✅ [Componentes de base de formulario adaptable](/help/forms/using/create-adaptive-form.md).
-
 
 Los formularios adaptables le permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario fácil de usar para las empresas que crea rápidamente Forms adaptable. La IU de ofrece una navegación rápida por las pestañas para seleccionar fácilmente plantillas, estilos, campos y opciones de envío preconfiguradas para crear un formulario adaptable.
 
