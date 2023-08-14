@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Para utilizar APNS, necesita un **Certificado** archivo (un archivo .cer), una n
 
 >[!NOTE]
 >
->Google está reemplazando GCM con un servicio similar llamado Firebase Cloud Messaging (FCM). Para obtener más información sobre FCM, haga clic en [aquí](https://developers.google.com/cloud-messaging/faq).
+>Google está reemplazando GCM con un servicio similar llamado Firebase Cloud Messaging (FCM). Para obtener más información sobre FCM, haga clic en [aquí](https://firebase.google.com/docs/cloud-messaging/).
 
 Vaya a la página de Google. [aquí](https://developer.android.com/google/gcm/index.html) para familiarizarse con Google Cloud Messaging para Android™.
 
@@ -257,12 +257,12 @@ Para instalar la aplicación en un teléfono Android™ mediante CLI (consulte l
 Antes de crear e implementar en el dispositivo móvil configurado, debe configurar los ajustes de notificación del servicio de mensajería que decidió utilizar.
 
 1. Cree los grupos de autorización adecuados para las notificaciones push.
-1. AEM Inicie sesión en la pestaña Aplicaciones, haga clic en la pestaña Aplicaciones, que es la que más le convenga.
+1. AEM Inicie sesión en la pestaña Aplicaciones, haga clic en la pestaña Aplicaciones, que es el usuario adecuado.
 1. Haga clic en la aplicación.
-1. Busque el mosaico Administrar Cloud Services y haga clic en el lápiz para modificar las configuraciones de la nube.
+1. Busque el mosaico Administrar Cloud Service y haga clic en el lápiz para modificar las configuraciones de la nube.
 1. Seleccione Conexión de Amazon SNS, Conexión Pushwoosh o Adobe Mobile Services como la configuración de notificación.
 1. Introduzca las propiedades del proveedor y haga clic en Enviar para guardarlas y en Listo. No se verifican a distancia en esta fase, excepto si hay AMS.
-1. Ahora debería ver la configuración que acaba de introducir en el mosaico Administrar Cloud Services.
+1. Ahora debería ver la configuración que acaba de introducir en el mosaico Administrar Cloud Service.
 
 ### Paso 6: Creación e implementación de la aplicación {#step-build-and-deploy-the-app}
 
@@ -321,7 +321,7 @@ Cree la notificación, añada un texto de botón y una ruta de vínculo para el 
 >
 >Para acceder al mosaico Notificación push en el panel, siga los pasos a continuación.
 
-1. Haga clic en la edición en la esquina superior derecha de la **Administración de Cloud Services** mosaico.
+1. Haga clic en la edición en la esquina superior derecha de la **Administración de Cloud Service** mosaico.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
