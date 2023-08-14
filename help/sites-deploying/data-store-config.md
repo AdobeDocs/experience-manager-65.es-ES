@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3550'
 ht-degree: 2%
 
 ---
@@ -139,6 +139,10 @@ Estas opciones de configuración están disponibles:
 
 AEM Se puede configurar el almacenamiento de datos en el servicio de almacenamiento simple (S3) de Amazon. Utiliza el `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID para la configuración.
 
+>[!NOTE]
+>
+>AEM 6.5 admite el almacenamiento de datos en la versión S3 de Amazon; sin embargo, la compatibilidad no se amplía al almacenamiento de datos en otras plataformas, cuyos proveedores pueden tener sus propias implementaciones de las API S3 de Amazon.
+
 Para habilitar la funcionalidad del almacén de datos S3, se debe descargar e instalar un paquete de funciones que contenga el conector del almacén de datos S3. Vaya a la [Repositorio de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) y descargue la versión más reciente de las versiones 1.10.x del paquete de funciones (por ejemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). AEM Además, debe descargar e instalar el paquete de servicio más reciente, tal y como se indica en la lista de [AEM Notas de la versión de 6.5](/help/release-notes/release-notes.md) página.
 
 >[!NOTE]
@@ -230,8 +234,8 @@ Puede utilizar el archivo de configuración con las opciones detalladas a contin
 
 | Clave | Descripción | Predeterminado | Requerido |
 | --- | --- | --- | --- |
-| accessKey | ID de clave de acceso para el usuario de IAM con acceso al bloque. |  | Sí, cuando no se usan los roles de IAM. |
-| secretKey | Clave de acceso secreta del usuario de IAM con acceso al bloque. |  | Sí, cuando no se usan los roles de IAM. |
+| accessKey | ID de clave de acceso para el usuario de IAM con acceso al bloque. | | Sí, cuando no se usan los roles de IAM. |
+| secretKey | Clave de acceso secreta del usuario de IAM con acceso al bloque. | | Sí, cuando no se usan los roles de IAM. |
 | cacheSize | El tamaño (en bytes) de la caché local. | 64GB | No. |
 | connectionTimeout | Establezca la cantidad de tiempo de espera (en milisegundos) antes de que se agote el tiempo de espera al establecer inicialmente una conexión. | 10 000 | No. |
 | maxCachedBinarySize | Los binarios con un tamaño inferior o igual a este valor (en bytes) se almacenan en la memoria caché. | 17408 (17 KB) | No. |
@@ -239,10 +243,10 @@ Puede utilizar el archivo de configuración con las opciones detalladas a contin
 | maxErrorRetry | Establezca el número máximo de intentos de reintento para solicitudes fallidas (recuperables). | 3 | No. |
 | minRecordLength | El tamaño mínimo de un objeto (en bytes) que debe almacenarse en el almacén de datos. | 16384 | No. |
 | path | AEM Ruta de acceso local del almacén de datos de. | `crx-quickstart/repository/datastore` | No. |
-| proxyHost | Establezca el host proxy opcional mediante el que se conecta el cliente. |  | No. |
-| proxyPort | Configure el puerto proxy opcional mediante el que se conecta el cliente. |  | No. |
-| s3Bucket | Nombre del contenedor de S3. |  | Sí |
-| s3EndPoint | Extremo de API de REST S3. |  | No. |
+| proxyHost | Establezca el host proxy opcional mediante el que se conecta el cliente. | | No. |
+| proxyPort | Configure el puerto proxy opcional mediante el que se conecta el cliente. | | No. |
+| s3Bucket | Nombre del contenedor de S3. | | Sí |
+| s3EndPoint | Extremo de API de REST S3. | | No. |
 | s3Region | Región donde reside el bloque. Ver esto [página](https://docs.aws.amazon.com/general/latest/gr/s3.html) para obtener más información. | Región donde se está ejecutando la instancia de AWS. | No. |
 | socketTimeout | Establezca la cantidad de tiempo de espera (en milisegundos) para que los datos se transfieran a través de una conexión abierta establecida antes de que se agote el tiempo de espera de la conexión y se cierre. | 50000 | No. |
 | stagingPurgeInterval | El intervalo (en segundos) para purgar las cargas finalizadas de la caché de ensayo. | 300 | No. |
@@ -391,7 +395,8 @@ Para configurar la replicación binaria con S3, se requieren los siguientes paso
    >
    >    * Para versiones de Oak **1.2.x** use el Oak-run **1.2.12 o posterior**
    >    * Para versiones de Oak **más reciente que el anterior** AEM , use la versión de Oak-run que coincida con el núcleo de Oak de su instalación de la.
-
+   >
+   >
 
 1. Por último, valide la configuración. Para validarlo, busque un archivo único agregado al almacén de datos por cada repositorio que lo comparta. El formato de los archivos es el siguiente `repository-[UUID]`, donde UUID es un identificador único de cada repositorio individual.
 
@@ -500,7 +505,6 @@ Para ejecutar la recolección de elementos no utilizados del almacén de datos:
 >2. Añada el `blobTrackSnapshotIntervalInSecs=L"0"` en el campo `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` archivo. Este parámetro requiere Oak 1.12.0, 1.10.2 o posterior.
 >3. AEM Vuelva a iniciar la instancia de.
 
-
 AEM Con las versiones más recientes de la aplicación, la recolección de elementos no utilizados del almacén de datos también se puede ejecutar en almacenes de datos compartidos por más de un repositorio. Para poder ejecutar la recolección de elementos no utilizados del almacén de datos en un almacén de datos compartido, siga estos pasos:
 
 1. Asegúrese de que todas las tareas de mantenimiento configuradas para la recopilación de residuos del almacén de datos estén desactivadas en todas las instancias del repositorio que compartan el almacén de datos.
@@ -513,4 +517,5 @@ AEM Con las versiones más recientes de la aplicación, la recolección de eleme
    1. Vaya a la consola JMX y seleccione el MBean Repository Manager.
    1. Haga clic en **Haga clic en startDataStoreGC(boolean markOnly)** vínculo.
    1. En el siguiente cuadro de diálogo, escriba `false` para el `markOnly` parámetro de nuevo.
+
    Todos los archivos encontrados se recopilan utilizando la fase de marcado utilizada anteriormente y eliminando el resto que no se utilicen del almacén de datos.
