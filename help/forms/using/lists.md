@@ -8,10 +8,10 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '6908'
-ht-degree: 97%
+source-wordcount: '6913'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 1. Pulse **Crear** > **Texto**. También puede seleccionar un recurso de texto y pulsar **Editar**.
 1. Especifique la siguiente información para el texto:
 
-   * **Título: (Opcional)** introduzca el título del recurso de texto. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. Se hace referencia a los textos por sus títulos (cuando están disponibles); por ejemplo en las miniaturas y las propiedades de recursos.
+   * **Título: (Opcional)** introduzca el título del recurso de texto. Los títulos no tienen por qué ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. Se hace referencia a los textos por sus títulos (cuando están disponibles); por ejemplo en las miniaturas y las propiedades de recursos.
    * **Nombre:** el nombre único del recurso de texto. No pueden existir dos recursos (texto, condición o lista) con el mismo nombre en ningún estado. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
    * **Descripción**: escriba una descripción para el recurso.
    * **Diccionario de datos**: si lo desea, puede seleccionar el diccionario de datos que desea asignar al texto. Este atributo permite agregar referencias a elementos de diccionario de datos en el recurso de texto.
@@ -76,7 +76,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
    ![Barra de herramientas Párrafo](assets/fonteditingtoolbar.png)
 
    Barra de herramientas Párrafo
-   [ ![Barra de herramientas Alineación](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de herramientas Alineación
+   [![Barra de herramientas de alineación ](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de herramientas de alineación
 
    ![Barra de herramientas de lista ](assets/bulleteditingtoolbar.png)
 
@@ -527,7 +527,7 @@ Para obtener más información sobre la creación de diseños, consulte [Ayuda d
 1. Cree un fragmento de diseño basado en el XDP estático. La ficha Tabla de las propiedades muestra que la tabla es estática (campo Configuración para ). El número de filas (1) y columnas (3) se deriva del fragmento de diseño o XDP.
 
    Aquí puede cambiar el número de columnas y filas. Según lo que elija en esta pantalla, el número de filas y columnas de la tabla estática permanecerán fijos en la carta que se crea con este diseño.
-   [ ![Pantalla Creación de un fragmento de diseño](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [![Pantalla Creación de un fragmento de diseño](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Cree una carta utilizando ambos fragmentos de diseño. Cuando inserte el XDP dinámico en la carta, establezca el enlace de sus campos en los elementos de colección del diccionario de datos.
 

@@ -7,16 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '721'
 ht-degree: 1%
 
 ---
 
 # Consola web{#web-console}
 
-AEM La consola web en la que se ejecuta (Adobe Experience Manager) se basa en el elemento de configuración de la variable [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
+AEM La consola web en la que se ejecuta (Adobe Experience Manager) se basa en la variable [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
 
 >[!NOTE]
 >
@@ -48,11 +48,11 @@ El **Configuración** se puede acceder a la pestaña mediante:
 
 * El menú desplegable:
 
-   **OSGi >**
+  **OSGi >**
 
 * La dirección URL; por ejemplo:
 
-   `http://localhost:4502/system/console/configMgr`
+  `http://localhost:4502/system/console/configMgr`
 
 Se mostrará una lista de configuraciones:
 
@@ -62,16 +62,16 @@ Hay dos tipos de configuraciones disponibles en las listas desplegables de esta 
 
 * **Configuraciones**
 
-   Permite actualizar las configuraciones existentes. Tienen una identidad persistente (PID) y pueden ser las siguientes:
+  Permite actualizar las configuraciones existentes. Tienen una identidad persistente (PID) y pueden ser las siguientes:
 
    * AEM estándar e integral para la; estos son obligatorios; si se eliminan, los valores vuelven a la configuración predeterminada.
    * instancias creadas a partir de Configuraciones de fábrica; estas instancias las crea el usuario, la eliminación elimina la instancia.
 
 * **Configuraciones de fábrica**
 
-   Permite crear una instancia del objeto de funcionalidad requerido.
+  Permite crear una instancia del objeto de funcionalidad requerido.
 
-   Se le asignará una identidad persistente y, a continuación, se enumerará en la lista desplegable Configuraciones.
+  Se le asignará una identidad persistente y, a continuación, se enumerará en la lista desplegable Configuraciones.
 
 Al seleccionar cualquier entrada de las listas, se muestran los parámetros relacionados con esa configuración:
 
@@ -81,25 +81,25 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
 * **Guardar**
 
-   Guarde los cambios realizados.
+  Guarde los cambios realizados.
 
-   Para una configuración de fábrica, se creará una nueva instancia con una identidad persistente. La nueva instancia se enumerará en Configuraciones.
+  Para una configuración de fábrica, se creará una nueva instancia con una identidad persistente. La nueva instancia se enumerará en Configuraciones.
 
 * **Restablecer**
 
-   Restablezca los parámetros mostrados en pantalla a los guardados en último lugar.
+  Restablezca los parámetros mostrados en pantalla a los guardados en último lugar.
 
 * **Eliminar**
 
-   Eliminar la configuración actual. Si son estándar, los parámetros se devuelven a la configuración predeterminada. Si se crea a partir de una configuración de fábrica, se elimina la instancia específica.
+  Eliminar la configuración actual. Si son estándar, los parámetros se devuelven a la configuración predeterminada. Si se crea a partir de una configuración de fábrica, se elimina la instancia específica.
 
 * **Desenlazar**
 
-   Desenlace la configuración actual del paquete.
+  Desenlace la configuración actual del paquete.
 
 * **Cancelar**
 
-   Cancelar los cambios actuales.
+  Cancelar los cambios actuales.
 
 ## Paquetes {#bundles}
 
@@ -107,11 +107,11 @@ El **Paquetes** AEM es el mecanismo para instalar los paquetes OSGi necesarios p
 
 * El menú desplegable:
 
-   **OSGi >**
+  **OSGi >**
 
 * La dirección URL; por ejemplo:
 
-   `http://localhost:4502/system/console/bundles`
+  `http://localhost:4502/system/console/bundles`
 
 Se mostrará una lista de paquetes:
 
@@ -121,33 +121,33 @@ Con esta pestaña puede:
 
 * **Instalar o actualizar**
 
-   Puede **Examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en el cual **Nivel de inicio**.
+  Puede **Examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en el cual **Nivel de inicio**.
 
 * **Volver a cargar**
 
-   Actualiza la lista mostrada.
+  Actualiza la lista mostrada.
 
 * **Actualizar paquetes**
 
-   Esto comprobará las referencias de todos los paquetes y se actualizará según sea necesario.
+  Esto comprobará las referencias de todos los paquetes y se actualizará según sea necesario.
 
-   Por ejemplo, después de una actualización, es posible que tanto la versión antigua como la nueva se sigan ejecutando debido a referencias anteriores. Esta opción comprobará y moverá todas las referencias a la nueva versión, permitiendo que se detenga la versión antigua.
+  Por ejemplo, después de una actualización, es posible que tanto la versión antigua como la nueva se sigan ejecutando debido a referencias anteriores. Esta opción comprobará y moverá todas las referencias a la nueva versión, permitiendo que se detenga la versión antigua.
 
 * **Inicial**
 
-   Inicia un paquete según el nivel de inicio especificado.
+  Inicia un paquete según el nivel de inicio especificado.
 
 * **Detener**
 
-   Detiene el paquete.
+  Detiene el paquete.
 
 * **Desinstalar**
 
-   Desinstala el paquete del sistema.
+  Desinstala el paquete del sistema.
 
 * **ver el estado**
 
-   La lista especifica el estado actual del paquete; al hacer clic en el nombre de un paquete específico se muestra más información.
+  La lista especifica el estado actual del paquete; al hacer clic en el nombre de un paquete específico se muestra más información.
 
 >[!NOTE]
 >
@@ -155,15 +155,15 @@ Con esta pestaña puede:
 
 ## Componentes {#components}
 
-El **Componentes** permite activar o desactivar los distintos componentes de. Se puede acceder a ella mediante:
+El **Componentes** La pestaña permite activar o desactivar los distintos componentes. Se puede acceder a ella mediante:
 
 * El menú desplegable:
 
-   **Principal >**
+  **Principal >**
 
 * La dirección URL; por ejemplo:
 
-   `http://localhost:4502/system/console/components`
+  `http://localhost:4502/system/console/components`
 
 Se mostrará una lista de componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir los detalles de configuración de un componente específico.
 

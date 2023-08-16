@@ -10,10 +10,10 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6178'
-ht-degree: 99%
+source-wordcount: '6169'
+ht-degree: 98%
 
 ---
 
@@ -89,7 +89,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
    | **Componente** | **Funcionalidad** |
    |---|---|
    | Gráfico | Agrega un gráfico que puede usar en comunicaciones interactivas para la representación visual de datos bidimensionales recuperados de una colección de modelos de datos de formulario. Para obtener más información, consulte [Usar gráficos en comunicaciones interactivas](/help/forms/using/chart-component-interactive-communications.md). |
-   | Fragmento de documento | Permite agregar un componente reutilizable, como texto, listas o condiciones, a una comunicación interactiva. El componente agregado puede estar basado en el modelo de datos de formulario o no. |
+   | Fragmento de documento | Permite agregar un componente reutilizable, como texto, lista o condición, a una comunicación interactiva. El componente agregado puede estar basado en el modelo de datos de formulario o no. |
    | Imagen | Permite insertar una imagen. |
 
    Arrastre y suelte los componentes en la comunicación interactiva y configúrelos según sea necesario.
@@ -176,10 +176,10 @@ Pulse el fragmento de documento, pulse ![configure_icon](assets/configure_icon.p
       * Cancelar herencia
       * Volver a habilitar la herencia
       * Sincronizar
+
    * [Archivos adjuntos y acceso a la biblioteca](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [Propiedades del campo XDP/Diseño](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
    * [Agregar reglas a los componentes](../../forms/using/create-interactive-communication.md#rules)
-
 
 1. Cambie a **[!UICONTROL Canal web]**. El canal Web aparecerá en el editor de comunicaciones interactivas. Cuando cambie del canal Imprimir al canal Web por primera vez, se producirá la sincronización automática. Para obtener más información, consulte [Sincronizar el canal Web desde el canal Imprimir](../../forms/using/create-interactive-communication.md#synchronize).
 
@@ -194,13 +194,13 @@ Pulse el fragmento de documento, pulse ![configure_icon](assets/configure_icon.p
    | Componentes | Funcionalidad |
    |---|---|
    | Gráfico | Agrega un gráfico que se puede usar en comunicaciones interactivas para la representación visual de datos bidimensionales recuperados de una colección de modelos de datos de formulario. Para obtener más información, consulte [Usar el componente de gráfico](../../forms/using/chart-component-interactive-communications.md). |
-   | Fragmento de documento | Permite añadir un componente, texto, lista o condición reutilizables a una comunicación interactiva. El componente reutilizable que agregue a una comunicación interactiva puede estar basado en el modelo de datos de formulario o carecer de él. |
+   | Fragmento de documento | Permite agregar un componente, un texto, una lista o una condición reutilizables a una comunicación interactiva. El componente reutilizable que agregue a una comunicación interactiva puede estar basado en el modelo de datos de formulario o carecer de él. |
    | Imagen | Permite insertar una imagen. |
-   | Panel | Permite agregar un [panel](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) a la comunicación interactiva. |
+   | Panel | Le permite agregar un [Panel](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) a la comunicación interactiva. |
    | Tabla | Agrega una tabla que le permite organizar los datos en filas y columnas. |
    | Área de destino | Inserta un área de destino en un canal web para organizar los componentes específicos de ese canal. El área de destino es un contenedor sin formato que le permite agrupar componentes específicos de canales web. |
    | Texto | Agrega texto enriquecido al canal Web de una comunicación interactiva. El texto también puede utilizar objetos del modelo de datos de formulario para hacer que el contenido sea dinámico. |
-   | Botón | Permite agregar un [botón](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) a la comunicación interactiva. Puede utilizar el componente Botón para navegar hasta otras comunicaciones interactivas, formularios adaptables, otros recursos como imágenes o fragmentos de documento o una URL externa. |
+   | Botón | Le permite agregar un [Botón](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) a la comunicación interactiva. Puede utilizar el componente Botón para navegar hasta otras comunicaciones interactivas, formularios adaptables, otros recursos como imágenes o fragmentos de documento o una URL externa. |
    | Separador | Permite insertar una línea horizontal dentro de una comunicación interactiva. Utilice este componente para distinguir entre secciones de una correspondencia. Por ejemplo, puede utilizar el componente Separador para distinguir entre las secciones Detalles del cliente y Detalles de la tarjeta de crédito en una instrucción de tarjeta de crédito. |
 
 1. Si es necesario, inserte recursos en el canal Web.
@@ -268,6 +268,7 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
       * Ninguno: el agente rellenará el valor de la propiedad.
       * Fragmento de texto: si está seleccionado, puede buscar y seleccionar un fragmento de documento de texto cuyo contenido se procese en el campo. También puede arrastrar y soltar el fragmento de documento de texto en el nombre del campo para configurar el enlace entre ellos. El fragmento del documento de texto no debe contener ninguna variable.
       * Objeto del modelo de datos: seleccione una propiedad del modelo de datos de formulario cuyo valor se rellene en el campo. Como alternativa, seleccione la pestaña **Fuentes de datos** y arrastre y suelte la propiedad en el campo.
+
    * **[!UICONTROL Valores predeterminados]**: el valor predeterminado garantiza que el campo no esté vacío cuando no haya ningún valor proporcionado por el objeto del modelo de datos especificado o el fragmento de texto. Si el tipo de enlace de datos es Ninguno, el valor predeterminado se rellenará previamente en el campo.
    * **[!UICONTROL Patrón de visualización]**: también puede definir un formato de visualización para un campo. Seleccione cualquiera de las opciones predefinidas en la lista desplegable **Tipo** para aplicar un formato de visualización a un campo. Seleccione **Personalizar** para definir un patrón de visualización que no esté disponible en la lista. Para obtener más información, consulte [Patrones de visualización de datos](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
 
@@ -276,7 +277,6 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
    * **[!UICONTROL Información del objeto]**: escriba una cadena de texto que sea visible al pasar el ratón por encima del agente en la interfaz de usuario de Agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
    * **[!UICONTROL Obligatorio]**: seleccione esta opción para que el campo sea obligatorio para el agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
    * **[!UICONTROL Permitir varias líneas]**: seleccione este campo para permitir varias líneas de texto como entrada en el campo. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
-
 
 1. Pulse ![done_icon](assets/done_icon.png).
 
@@ -350,13 +350,13 @@ Puede agregar tablas dinámicas en la comunicación interactiva mediante fragmen
 
          * **[!UICONTROL Ninguno]**
          * **[!UICONTROL Objeto del modelo de datos]**: el valor de una propiedad del modelo de datos de formulario se rellena en el campo. Como alternativa, seleccione la pestaña **Fuentes de datos** y arrastre y suelte la propiedad en el campo.
+
       * **[!UICONTROL Objeto de modelo de datos]**: propiedad del modelo de datos de formulario cuyo valor se rellena en el campo.
       * **[!UICONTROL Valor predeterminado]**: el valor predeterminado garantiza que el campo no esté vacío cuando el objeto del modelo de datos especificado no proporcione ningún valor. El valor predeterminado se rellena previamente en el campo.
 
       * **[!UICONTROL Editable por el agente]**: seleccione esta opción para permitir que el agente edite el valor en el campo de la interfaz de usuario de Agente.
+
    1. Pulse ![done_icon](assets/done_icon.png).
-
-
 
 1. Previsualice la comunicación interactiva para ver la tabla representada con los datos.
 
@@ -495,7 +495,7 @@ Para agregar un botón y definir las reglas que contiene, haga lo siguiente:
 
 ## Agregar el componente Panel al canal Web {#add-panel-component-to-the-web-channel}
 
-El componente Panel es un marcador de posición para agrupar otros componentes y controla cómo se coloca un grupo de componentes, como acordeón y pestañas, en la comunicación interactiva. El componente Panel también le permite hacer que un grupo de componentes se repita para el usuario final, por ejemplo, en varias entradas obligatorias para rellenar credenciales educativas.
+El componente Panel es un marcador de posición para agrupar otros componentes y controla cómo se coloca un grupo de componentes, como acordeón y pestañas, en la comunicación interactiva. Un componente de panel también le permite hacer que un grupo de componentes se repita para el usuario final, por ejemplo, en varias entradas obligatorias para rellenar credenciales educativas.
 
 Siga los siguientes pasos para agregar un componente Panel al canal Web:
 

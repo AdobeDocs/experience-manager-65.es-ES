@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1662'
 ht-degree: 59%
 
 ---
@@ -126,7 +126,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. Se inicia el asistente **Administrar publicación**. El primer paso, **Opciones**, le permite:
+1. Se inicia el asistente **Administrar publicación**. El primer paso, **Opciones**, le permite:
 
    * Elija si publica o cancela la publicación de las páginas seleccionadas.
    * Elija realizar esa acción ahora o en una fecha posterior.

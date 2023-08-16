@@ -2,10 +2,10 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, aprenderá a modelar el contenido para la entrega de contenido sin encabezado de AEM utilizando el Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 99%
+source-wordcount: '1821'
+ht-degree: 94%
 
 ---
 
@@ -147,13 +147,13 @@ La estructura del modelo de contenido:
 >
 >Los modelos de fragmento de contenido también se utilizan como base de los esquemas AEM GraphQL, que se utilizan para recuperar el contenido; más información al respecto en una sesión posterior.
 
-Las solicitudes de contenido se realizan mediante la API de AEM, GraphQL, una implementación personalizada de la API de GraphQL estándar. La API de AEM GraphQL permite realizar consultas (complejas) en los fragmentos de contenido, y cada consulta se realiza de acuerdo con un tipo de modelo específico.
+Las solicitudes de contenido se realizan mediante la API de AEM, GraphQL, una implementación personalizada de la API de GraphQL estándar. AEM La API de GraphQL le permite realizar consultas (complejas) en los fragmentos de contenido, estando cada consulta según un tipo de modelo específico.
 
 Las aplicaciones pueden utilizar el contenido devuelto.
 
 ## Creación de la estructura con modelos de fragmento de contenido {#create-structure-content-fragment-models}
 
-Los modelos de fragmento de contenido proporcionan varios mecanismos que permiten definir la estructura del contenido.
+Los modelos de fragmentos de contenido proporcionan varios mecanismos que le permiten definir la estructura del contenido.
 
 Un modelo de fragmento de contenido describe una entidad.
 
@@ -166,10 +166,10 @@ Un modelo de fragmento de contenido describe una entidad.
 
 Dentro de un modelo:
 
-1. Los **Tipos de datos** permiten definir los atributos individuales.
+1. **Tipos de datos** permite definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
-1. Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** permiten crear relaciones con otro contenido dentro de AEM.
-1. El tipo de datos de **Referencia de fragmento** permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
+1. Los tipos de datos **Referencia de contenido** y **Referencia a fragmento** AEM permite crear relaciones con otro contenido dentro de los recursos de la aplicación de contenido de la.
+1. El **Referencia a fragmento** El tipo de datos permite realizar varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
 ![Modelado de contenido con fragmentos de contenido](assets/headless-modeling-01.png "Modelado de contenido con fragmentos de contenido")

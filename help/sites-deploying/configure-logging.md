@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ AEM Además de la configuración del registro global, le permite configurar opci
 * el formato que se utilizará al escribir los mensajes de registro
 * el registrador (el servicio OSGi que suministra los mensajes de registro)
 
-Esto le permite canalizar mensajes de registro para un único servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o las pruebas; por ejemplo, cuando necesita aumentar el nivel de registro para un servicio específico.
+Esto permite canalizar los mensajes de registro de un solo servicio a un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o las pruebas; por ejemplo, cuando necesita aumentar el nivel de registro para un servicio específico.
 
 AEM Utiliza lo siguiente para escribir mensajes de registro en el archivo:
 
@@ -69,19 +69,19 @@ Estos elementos están vinculados por los siguientes parámetros para los elemen
 
 * **Registrador (Registrador)**
 
-   Defina los servicios que generan los mensajes.
+  Defina los servicios que generan los mensajes.
 
 * **Archivo de registro (registrador de registros)**
 
-   Defina el archivo físico para almacenar los mensajes de registro.
+  Defina el archivo físico para almacenar los mensajes de registro.
 
-   Se utiliza para vincular un registrador con un registrador. El valor debe ser idéntico al mismo parámetro en la configuración de Escritor de registro para que se realice la conexión.
+  Se utiliza para vincular un registrador con un registrador. El valor debe ser idéntico al mismo parámetro en la configuración de Escritor de registro para que se realice la conexión.
 
 * **Archivo de registro (Escritor de registro)**
 
-   Defina el archivo físico en el que se escribirán los mensajes de registro.
+  Defina el archivo físico en el que se escribirán los mensajes de registro.
 
-   Debe ser idéntico al mismo parámetro en la configuración de Escritor de registro; de lo contrario, no se realizará la coincidencia. Si no hay coincidencia, se creará un objeto Writer implícito con la configuración predeterminada (rotación diaria del registro).
+  Debe ser idéntico al mismo parámetro en la configuración de Escritor de registro; de lo contrario, no se realizará la coincidencia. Si no hay coincidencia, se creará un objeto Writer implícito con la configuración predeterminada (rotación diaria del registro).
 
 ### Registradores y escritores estándar {#standard-loggers-and-writers}
 
@@ -93,7 +93,7 @@ El primero es un caso especial, ya que controla tanto la `request.log` y `access
 
    * Registrador de datos de solicitud personalizable de Apache Sling
 
-      (org.apache.sling.engine.impl.log.RequestLoggerService)
+     (org.apache.sling.engine.impl.log.RequestLoggerService)
 
    * Escribir mensajes sobre el contenido de la solicitud en `request.log`.
 
@@ -101,7 +101,7 @@ El primero es un caso especial, ya que controla tanto la `request.log` y `access
 
    * Registrador de solicitudes de Apache Sling
 
-      (org.apache.sling.engine.impl.log.RequestLogger)
+     (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Escribe los mensajes en `request.log` o `access.log`.
 
@@ -113,7 +113,7 @@ Los otros pares siguen la configuración estándar:
 
    * Configuración del registrador de Apache Sling
 
-      (org.apache.sling.commons.log.LogManager.factory.config)
+     (org.apache.sling.commons.log.LogManager.factory.config)
 
    * Escribe `Information` mensajes a `logs/error.log`.
 
@@ -121,7 +121,7 @@ Los otros pares siguen la configuración estándar:
 
    * Configuración del escritor de registro de Apache Sling
 
-      (org.apache.sling.commons.log.LogManager.factory.writer)
+     (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * El registrador:
 

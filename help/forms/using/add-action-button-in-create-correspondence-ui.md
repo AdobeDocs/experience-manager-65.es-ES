@@ -1,20 +1,16 @@
 ---
 title: Agregar acción/botón personalizado en la interfaz de usuario de Crear correspondencia
-seo-title: Add custom action/button in Create Correspondence UI
 description: Aprenda a agregar acciones/botones personalizados en la interfaz de usuario Crear correspondencia
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1880'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 99%
 
 ## Información general {#overview}
 
-La solución de Administración de correspondencia le permite agregar acciones personalizadas a la interfaz de usuario Crear Correspondencia.
+La solución Administración de correspondencia le permite agregar acciones personalizadas a la interfaz de usuario Crear correspondencia.
 
 El escenario de este documento explica cómo puede crear un botón en la interfaz de usuario Crear correspondencia para compartir una carta como PDF de revisión adjunto a un correo electrónico.
 

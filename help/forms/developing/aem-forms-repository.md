@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '9117'
+source-wordcount: '9113'
 ht-degree: 1%
 
 ---
@@ -154,7 +154,6 @@ Cree una carpeta mediante la API de servicio de repositorio (Java):
    Defina la descripción de la carpeta utilizando `setDescription` y pase el siguiente parámetro:
 
    * A `String` que describe la colección de recursos. En este ejemplo, `"test Folder"` se utiliza `.`
-
 
 1. Escribir la carpeta en el repositorio
 
@@ -480,8 +479,8 @@ Puede recuperar recursos de una ubicación determinada en el repositorio para le
 El repositorio tiene los siguientes cuatro tipos de permisos:
 
 * **recorrer**: permite enumerar recursos; es decir, leer metadatos de recursos, pero no contenido de recursos
-* **leer**: le permite leer el contenido de los recursos
-* **escribir**: le permite escribir contenido de recursos
+* **leer**: permite leer el contenido del recurso
+* **escribir**: permite escribir contenido de recursos
 * **administración de listas de control de acceso (ACL)**: permite manipular las ACL en los recursos
 
 Los usuarios solo pueden ejecutar procesos cuando tienen permiso para ejecutar el proceso. Los usuarios del IDE necesitan permisos de recorrido y lectura para sincronizarse con el repositorio. Las ACL se aplican solo en tiempo de diseño porque el tiempo de ejecución se produce dentro del contexto del sistema.

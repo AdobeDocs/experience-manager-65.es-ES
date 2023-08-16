@@ -12,9 +12,9 @@ discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '213'
 ht-degree: 35%
 
 ---
@@ -37,7 +37,7 @@ Para acceder a este asistente:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. El **Seleccionar origen** Este paso del asistente le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas.
+1. El **Seleccionar origen** Este paso del asistente le permite añadir o quitar páginas. También tiene la opción de incluir o excluir las subpáginas.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 

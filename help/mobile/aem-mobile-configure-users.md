@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ AEM Los miembros del grupo de creación de aplicaciones son responsables de la c
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. AEM Lo siguiente le permite agregar al grupo Autores de contenido de la página de inicio de la aplicación de contenido de:
+1. AEM Lo siguiente le permite agregar al grupo Autores de contenido de la página de inicio de:
 
    (Lectura) el
 

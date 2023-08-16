@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Workflow, Renditions
 role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '960'
 ht-degree: 3%
 
 ---
@@ -107,4 +107,3 @@ Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de fl
 >* [Creación de modelos de flujo de trabajo y ampliación de funcionalidad de flujo de trabajo](/help/sites-developing/workflows.md)
 >* [Métodos para ejecutar flujos de trabajo](/help/sites-administering/workflows-starting.md)
 >* [Prácticas recomendadas de flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
-

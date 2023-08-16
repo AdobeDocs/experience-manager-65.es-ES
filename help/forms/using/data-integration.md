@@ -11,10 +11,10 @@ discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 99%
+source-wordcount: '520'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Si bien un sistema modular y distribuido tiene sus propias ventajas, el desafío
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-La integración de datos de [!DNL AEM Forms] permite configurar y conectar diferentes fuentes de datos con [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades y servicios empresariales a través de fuentes de datos conectadas. La representación unificada se conoce como modelo de datos de formulario, una extensión del esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos de modelo de datos. Un modelo de datos de formulario le permite lo siguiente:
+La integración de datos de [!DNL AEM Forms] permite configurar y conectar diferentes fuentes de datos con [!DNL AEM Forms]. Proporciona una interfaz de usuario intuitiva para crear un esquema de representación de datos unificado de entidades y servicios empresariales a través de fuentes de datos conectadas. La representación unificada se conoce como modelo de datos de formulario, una extensión del esquema JSON. Las entidades de un modelo de datos de formulario se denominan objetos de modelo de datos. Un modelo de datos de formulario le permite:
 
 * acceder a los objetos, las propiedades y los servicios de modelo de datos desde las fuentes de datos conectadas;
 * crear objetos y propiedades personalizadas para el modelo de datos;

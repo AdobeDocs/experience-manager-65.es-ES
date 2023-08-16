@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >[Documentación de API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) también está disponible.
 
-El marco de integración incluye una capa de integración con una API. AEM Esto le permite crear componentes de para las capacidades de comercio electrónico (independientemente de su motor de comercio electrónico específico). AEM También le permite utilizar la base de datos CRX interna o conectar un sistema de comercio electrónico y extraer datos de productos en la base de datos de.
+El marco de integración incluye una capa de integración con una API. AEM Esto le permite crear componentes de para las capacidades de comercio electrónico (independientemente del motor específico de comercio electrónico). AEM También le permite utilizar la base de datos CRX interna o conectar un sistema de comercio electrónico y extraer datos de productos en la base de datos de.
 
 AEM Se proporcionan una serie de componentes listos para usar para usar de la capa de integración de, que son: Actualmente son:
 
@@ -33,7 +33,7 @@ AEM Se proporcionan una serie de componentes listos para usar para usar de la ca
 * Fecha de salida
 * Búsqueda
 
-AEM Para la búsqueda se proporciona un gancho de integración que le permite utilizar la búsqueda de, una búsqueda de terceros o una combinación de estos.
+AEM Para la búsqueda se proporciona un gancho de integración que le permite utilizar la búsqueda de la, una búsqueda de terceros o una combinación de estos.
 
 ## Selección de motor de comercio electrónico {#ecommerce-engine-selection}
 
@@ -507,7 +507,7 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-Por aquí, el `CommerceSession` es responsable de comprobar si existe un cupón y si se puede aplicar o no. Esto puede ser para cupones que solo se pueden aplicar si se cumple una determinada condición; por ejemplo, cuando el precio total del carro de compras es bueno a 100 dólares). Si no se puede aplicar un cupón por cualquier motivo, la `addVoucher` El método generará una excepción. Además, la variable `CommerceSession` es responsable de actualizar los precios del carro de compras después de añadir o eliminar un cupón.
+Por aquí, el `CommerceSession` es responsable de comprobar si existe un cupón y si se puede aplicar o no. Esto podría aplicarse a los cupones que solo se pueden aplicar si se cumple una determinada condición; por ejemplo, cuando el precio total del carro de compras es mayor de 100 dólares). Si no se puede aplicar un cupón por cualquier motivo, la `addVoucher` El método generará una excepción. Además, la variable `CommerceSession` es responsable de actualizar los precios del carro de compras después de añadir o eliminar un cupón.
 
 El `Voucher` es una clase similar a un bean que contiene campos para:
 

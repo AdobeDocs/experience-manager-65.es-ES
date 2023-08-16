@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2872'
+source-wordcount: '2871'
 ht-degree: 26%
 
 ---
@@ -58,7 +58,6 @@ Un sitio o Live Copy vincula un área que contiene las actividades que deben est
 >* Cuando se utiliza la sincronización con Adobe Target, se requiere una licencia de Adobe Target.
 >
 
-
 ## Casos de uso {#use-cases}
 
 Puede configurar la compatibilidad de varios sitios para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo funcionaría teóricamente con una marca. Además, en [Ejemplo: Segmentación de contenido según la geografía](#example-targeting-content-based-on-geography), puede ver una aplicación real de contenido de segmentación en varios sitios.
@@ -97,14 +96,14 @@ El uso de varios sitios para el contenido de destino le permite compartir, despl
 Existen cuatro versiones del mismo sitio según la ubicación geográfica:
 
 * El **Estados Unidos** el sitio se encuentra en la esquina superior izquierda y es el sitio maestro. En este ejemplo, está abierto en el modo de Orientación.
-* Las otras tres versiones de este sitio son **Canadá**, **Buena Bretaña**, y **Australia**, que son todas Live Copies. Estos sitios están abiertos en el modo de vista previa.
+* Las otras tres versiones de este sitio son **Canadá**, **Gran Bretaña**, y **Australia**, que son todas Live Copies. Estos sitios están abiertos en el modo de vista previa.
 
 ![chlimage_1-271](assets/chlimage_1-271.png)
 
 Cada sitio comparte contenido personalizado en regiones geográficas:
 
 * Canadá comparte el área principal con Estados Unidos.
-* La buena Bretaña está vinculada al área europea y hereda del área principal.
+* Gran Bretaña está vinculada al área europea y hereda del área principal.
 * Australia, porque se encuentra en el hemisferio sur y los productos de temporada no se aplicarían; además, tiene su propio contenido personalizado.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
@@ -113,17 +112,17 @@ Para el hemisferio norte, contamos con una actividad de invierno que se creó pa
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
-Después de actualizar la pestaña, el sitio canadiense cambia a la nueva imagen sin ninguna acción por nuestra parte. Lo hace porque comparte el área principal con Estados Unidos. En los Buenos sitios británicos y australianos, la imagen no cambia.
+Después de actualizar la pestaña, el sitio canadiense cambia a la nueva imagen sin ninguna acción por nuestra parte. Lo hace porque comparte el área principal con Estados Unidos. En los sitios Gran Bretaña y Australia, la imagen no cambia.
 
 ![chlimage_1-274](assets/chlimage_1-274.png)
 
-El experto en marketing desea implementar estos cambios en la región europea y [despliega la live copy](/help/sites-administering/msm-livecopy.md) al tocar o hacer clic en **Desplegar página**. Después de actualizar la pestaña, el sitio de Buena Bretaña tiene la nueva imagen, ya que el área de Europa hereda del área principal (después del despliegue).
+El experto en marketing desea implementar estos cambios en la región europea y [despliega la live copy](/help/sites-administering/msm-livecopy.md) al tocar o hacer clic en **Desplegar página**. Después de actualizar la pestaña, el sitio de Gran Bretaña tiene la nueva imagen, ya que el área de Europa hereda del área principal (después del despliegue).
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
 La imagen en el sitio de Australia permanece sin cambios, que es el comportamiento deseado, ya que es verano en Australia y el experto en marketing no desea cambiar ese contenido. El sitio de Australia no cambia porque no comparte un área con ninguna otra región ni es una Live Copy de otra región. El experto en marketing nunca tiene que preocuparse de que el contenido dirigido del sitio australiano se sobrescriba.
 
-Además, para la Buena Gran Bretaña, cuyo área es una Live Copy del área principal, puede ver el estado de la herencia mediante el indicador verde junto al nombre de la actividad. Si se hereda una actividad, no puede modificarla a menos que suspenda o desasocie la Live Copy.
+Además, para Gran Bretaña, cuyo área es una Live Copy del área principal, puede ver el estado de la herencia mediante el indicador verde junto al nombre de la actividad. Si se hereda una actividad, no puede modificarla a menos que suspenda o desasocie la Live Copy.
 
 En cualquier momento, puede suspender la herencia o desasociar la herencia por completo. También puede agregar siempre experiencias locales que solo estén disponibles para esa experiencia sin suspender la herencia.
 
@@ -248,7 +247,6 @@ Una actividad que hereda de otro sitio se marca en verde junto al nombre de la a
 >* Solo puede suspender o desasociar Live Copies en una actividad.
 >* No es necesario suspender ni desasociar Live Copies para ampliar una actividad heredada. Siempre puede crear **nuevo** experiencias y ofertas locales para esa actividad. Si desea modificar una actividad existente, debe suspender la herencia.
 >
-
 
 ### Suspender herencia {#suspending-inheritance}
 

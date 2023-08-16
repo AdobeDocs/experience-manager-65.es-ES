@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 91%
+source-wordcount: '1138'
+ht-degree: 87%
 
 ---
 
@@ -135,7 +135,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 ### Conexión rápida con el editor de fragmentos  {#quick-connection-to-fragment-editor}
 
-Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md).
+Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [edición y administración del fragmento de contenido](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -145,7 +145,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 
 Cuando se agrega un fragmento de contenido específico a la página, aparece un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
-Esto le permite añadir contenido adicional [intermedio (es decir, entre contenido)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) en el contenido del fragmento (en cualquiera de los puntos disponibles), sin tener que cambiar el fragmento raíz.
+Esto permite añadir contenido adicional [intermedio (es decir, contenido intermedio)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) el contenido del fragmento (en cualquiera de los puntos disponibles), sin tener que cambiar el fragmento raíz.
 
 Para el contenido intermedio puede hacer lo siguiente:
 

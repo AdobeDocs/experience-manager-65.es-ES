@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1969'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Los datos de página ya no están en el contexto de cliente como componente pred
 
 ## Cambio del perfil de ClientContext {#changing-the-client-context-profile}
 
-Client Context le permite cambiar los detalles de forma interactiva:
+Client Context permite cambiar los detalles de forma interactiva:
 
 * Cambiar el perfil que se utiliza en Client Context le permite ver las diferentes experiencias que los distintos usuarios verán para la página actual.
 * Además de cambiar el perfil de usuario, puede cambiar algunos detalles del perfil para ver cómo difiere la experiencia de la página en diversas condiciones.
@@ -206,7 +206,7 @@ La edición de un contexto de cliente se puede utilizar para establecer (o resta
 
 ### Edición de detalles de propiedad {#editing-property-details}
 
-La edición de un contexto de cliente se puede utilizar para establecer (o restablecer) los valores de determinadas propiedades. Esto le permite probar escenarios específicos (especialmente útiles para [segmentación](/help/sites-administering/campaign-segmentation.md) y [campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+La edición de un contexto de cliente se puede utilizar para establecer (o restablecer) los valores de determinadas propiedades. Esto permite probar escenarios específicos (especialmente útiles para [segmentación](/help/sites-administering/campaign-segmentation.md) y [campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![Edición de Client Context](assets/clientcontext_alisonparker_edit.png)
 
@@ -279,7 +279,7 @@ Utilice los datos del almacén de sesiones que ha creado con el componente de al
 
    * Tienda: wipmania
    * Nombre de la propiedad: latitude
-   * Operador: es bueno que
+   * Operador: is greater than
    * Valor de la propiedad: 30
 
 1. Arrastre el componente Script al mismo contenedor AND y abra su cuadro de diálogo de edición. Añada la siguiente secuencia de comandos y haga clic en Aceptar:

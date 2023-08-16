@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3221'
 ht-degree: 5%
 
 ---
@@ -73,8 +73,9 @@ Al crear una nueva plantilla editable:
    * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
 
       * Si está creando una plantilla en una carpeta personalizada fuera de `We.Retail` Contenido de ejemplo, puede elegir Componentes de base o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es).
+
    * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
-   * Los componentes pueden volver a desbloquearse y bloquearse para que pueda definir el contenido inicial.
+   * Los componentes se pueden volver a desbloquear y bloquear para que pueda definir el contenido inicial.
 
    Para obtener más información sobre cómo define la estructura un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
@@ -85,6 +86,7 @@ Al crear una nueva plantilla editable:
    * Las políticas de contenido definen las propiedades de diseño de un componente.
 
       * Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas.
+
    * Estas políticas se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
    Para obtener más información sobre cómo define las directivas un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
@@ -253,7 +255,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
 <table>
  <tbody>
   <tr>
-   <th>Ruta </th>
+   <th>Ruta</th>
    <th>Rol/grupo</th>
    <th>Permisos<br /> </th>
    <th>Descripción</th>
@@ -313,7 +315,7 @@ No almacenar plantillas en `/conf/global`. Sin embargo, para algunas instalacion
 <table>
  <tbody>
   <tr>
-   <th>Ruta </th>
+   <th>Ruta</th>
    <th>Rol/grupo</th>
    <th>Permisos<br /> </th>
    <th>Descripción</th>
@@ -540,13 +542,13 @@ Cuándo [Al editar una plantilla, puede definir el diseño](/help/sites-authorin
 Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente, como su disponibilidad o las dimensiones mínimas/máximas. Estas políticas se aplican a la plantilla (y a las páginas creadas con la plantilla). Las políticas de contenido se pueden crear y seleccionar en el editor de plantillas.
 
 * La propiedad `cq:policy`, en el `root` nodo
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Proporciona una referencia relativa a la directiva de contenido para el sistema de párrafos de la página.
 
 * La propiedad `cq:policy`, en los nodos explícitos de componente en `root`, proporcione vínculos a las directivas para los componentes individuales.
 
 * Las definiciones de directivas reales se almacenan en:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -564,7 +566,7 @@ Proporciona una referencia relativa a la directiva de contenido para el sistema 
 
 ### Políticas de la página {#page-policies}
 
-Las políticas de página permiten definir la variable [política de contenido](#content-policies) para la página (parsys principal), en la plantilla o en las páginas resultantes.
+Las políticas de la página permiten definir lo siguiente [política de contenido](#content-policies) para la página (parsys principal), en la plantilla o en las páginas resultantes.
 
 ### Habilitar y permitir el uso de una plantilla {#enabling-and-allowing-a-template-for-use}
 
@@ -577,7 +579,7 @@ Las políticas de página permiten definir la variable [política de contenido](
    * Estableciendo la propiedad status en `jcr:content` nodo.
 
       * Por ejemplo, en:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Defina la propiedad:
 
@@ -589,9 +591,9 @@ Las políticas de página permiten definir la variable [política de contenido](
 
    * [Defina las rutas de plantilla permitidas en la variable **Propiedades de página**](/help/sites-authoring/templates.md#allowing-a-template-author) de la página adecuada o de la página raíz de una subrama.
    * Establezca la propiedad:
-      `cq:allowedTemplates`
-En el 
-`jcr:content` de la rama requerida.
+     `cq:allowedTemplates`
+En el `jcr:content` de la rama requerida.
+
    Por ejemplo, con un valor de:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`

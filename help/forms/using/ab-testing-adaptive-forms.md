@@ -10,10 +10,10 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 294d12e7d1b5293f165a164ff1fcc624f7b2b648
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 98%
+source-wordcount: '1567'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 Es probable que los clientes abandonen un formulario si la experiencia que ofrece no es atractiva. A pesar de que para ellos resulta frustrante, también puede aumentar el volumen y el coste de la asistencia en su organización. Identificar y ofrecer una experiencia del cliente correcta que aumente la tasa de conversión es fundamental, además de un desafío. Adobe Experience Manager Forms es la clave para solucionar este problema.
 
-AEM Forms se integra con Adobe Target, una solución de Adobe Marketing Cloud, para ofrecer experiencias personalizadas y atractivas a través de varios canales digitales. Una de las capacidades clave de Target es la prueba A/B que le permite configurar rápidamente pruebas A/B simultáneas, presentar contenido relevante para los usuarios objetivo e identificar la experiencia que aporta una tasa de conversión mejor.
+AEM Forms se integra con Adobe Target, una solución de Adobe Marketing Cloud, para ofrecer experiencias personalizadas y atractivas a través de varios canales digitales. Una de las funciones clave de Target es la prueba A/B que le permite configurar rápidamente pruebas A/B simultáneas, presentar contenido relevante para los usuarios objetivo e identificar la experiencia que aporta una tasa de conversión mejor.
 
 Con AEM Forms, puede configurar y ejecutar pruebas A/B en formularios adaptables en tiempo real. Además, ofrece capacidades para generar informes listas para usar y personalizables para visualizar el rendimiento en tiempo real de las experiencias de los formularios e identificar la que maximiza el compromiso y la conversión de los usuarios.
 
@@ -84,6 +84,7 @@ Además del servidor jboss, puede agregar el argumento -Dabtesting.enabled=true 
 >[!NOTE]
 >
 >Si actualiza las direcciones URL de Target configuradas más adelante, asegúrese de actualizar todas las pruebas A/B que se ejecuten para que apunten a las direcciones URL actuales. Para obtener información sobre la actualización de pruebas A/B, consulte [Actualizar la prueba A/B](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>
 
 ## Crear audiencias dentro de AEM {#create-audiences-within-aem}
 
@@ -113,7 +114,7 @@ Realice los siguientes pasos para crear una prueba A/B para un formulario adapta
 1. Haga clic en la herramienta **Seleccionar** en la barra de herramientas y seleccione el formulario adaptable.
 1. Haga clic en **Más** en la barra de herramientas y seleccione **Configurar pruebas A/B**. Se abrirá la página Configurar prueba A/B.
 
-[ ](assets/ab-test-configure-1.png)
+[](assets/ab-test-configure-1.png)
 
 1. Especifique un **Nombre de la actividad** para la prueba A/B.
 
@@ -134,7 +135,7 @@ Realice los siguientes pasos para crear una prueba A/B para un formulario adapta
 
 1. Vaya a la interfaz de usuario de Formularios y documentos, seleccione el formulario adaptable, haga clic en **Más** y seleccione **Iniciar pruebas A/B**.
 
-La prueba A/B se ejecutará y la audiencia especificada recibirá aleatoriamente las experiencias en función de la distribución especificada.
+La prueba A/B se está ejecutando y la audiencia especificada recibirá aleatoriamente las experiencias en función de la distribución especificada.
 
 ## Actualizar la prueba A/B {#update-a-b-test}
 
@@ -153,7 +154,7 @@ Una vez que haya permitido que la prueba A/B se ejecute durante el período dese
 
 1. Seleccione el formulario adaptable, haga clic en **Más** y, a continuación, haga clic en **Informe de prueba A/B**. Se mostrará el informe.
 
-[ ](assets/ab-test-report-3.png)
+[](assets/ab-test-report-3.png)
 
 1. Analice el informe y compruebe si tiene suficientes datos para declarar como ganadora a la experiencia con mejor rendimiento. Puede optar por continuar con la misma prueba A/B durante más tiempo o declarar un ganador y finalizarla.
 1. Para declarar un ganador y finalizar la prueba A/B, haga clic en el botón **Finalizar prueba A/B** en el panel de informes. Un cuadro de diálogo le pedirá que declare una de las dos experiencias como ganadoras. Elija un ganador y confirme que desea finalizar la prueba A/B.

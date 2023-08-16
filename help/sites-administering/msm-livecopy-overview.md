@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 33%
 
 ---
@@ -119,7 +119,7 @@ Al seleccionar una página de Live Copy, están disponibles las siguientes accio
 
 * [Reanudar](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Reanudar le permite restablecer una relación suspendida.
+   * Reanudar permite restablecer una relación suspendida.
 
 * [Desasociar](/help/sites-administering/msm.md#detaching-a-live-copy)
 
@@ -140,6 +140,6 @@ Esta pestaña proporciona información detallada sobre el estado de la relación
 
 ### Información de Live Copy {#live-copy-information}
 
-Esta pestaña le permite ver y editar la configuración de Live Copy:
+Esta pestaña le permite ver y editar la configuración de la Live Copy:
 
 ![Información de Live Copy](assets/chlimage_1-364.png)

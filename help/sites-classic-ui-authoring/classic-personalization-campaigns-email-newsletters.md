@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ El **Herramientas de correo electrónico** para ExactTarget puede agregar más f
   </tr>
   <tr>
    <td>Seguimiento de aperturas de correo electrónico</td>
-   <td>Componente oculto que le permite utilizar la función de seguimiento ExactTarget.<br /> </td>
+   <td>Componente oculto que permite utilizar la función de seguimiento ExactTarget.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -132,7 +132,7 @@ Para aplicar la configuración del servicio de correo electrónico a un boletín
 1. Cree una configuración de servicio de correo electrónico.
 1. Abra el correo electrónico o la newsletter.
 1. Abra la configuración del correo electrónico/newsletter haciendo clic en **Configuración** o haciendo clic en **Propiedades de página en** la compañera.
-1. Clic **Añadir servicio** in **Cloud Services** pestaña. Verá la lista de servicios. Seleccione la configuración necesaria: **ExactTarget** o **Silverpop** - de la lista de la lista desplegable.
+1. Clic **Añadir servicio** in **Cloud Service** pestaña. Verá la lista de servicios. Seleccione la configuración necesaria: **ExactTarget** o **Silverpop** - de la lista de la lista desplegable.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 

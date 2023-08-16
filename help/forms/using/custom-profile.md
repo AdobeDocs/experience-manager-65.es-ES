@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 100%
+source-wordcount: '659'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Al principio, el formulario HTML5 solo procesará la primera página del formula
 
 ## footer.jsp {#footer-jsp}
 
-El módulo footer.jsp está vacío. Permite agregar scripts que solo se utilizan para la interacción del usuario.
+El módulo footer.jsp está vacío. Permite añadir scripts que solo se utilizan para la interacción del usuario.
 
 ## Crear perfiles personalizados {#creating-custom-profiles}
 

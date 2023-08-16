@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 3%
 
 ---
@@ -30,11 +30,11 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
 * Componente [**Contenedor de diseño**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Este componente proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes en una cuadrícula adaptable. Se puede utilizar como parsys predeterminado para la página o estar disponible para los autores en el explorador de componentes.
+  Este componente proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes en una cuadrícula adaptable. Se puede utilizar como parsys predeterminado para la página o estar disponible para los autores en el explorador de componentes.
 
    * El valor predeterminado **Contenedor de diseño** el componente se define en:
 
-      /libs/wcm/foundation/components/responsivegrid
+     /libs/wcm/foundation/components/responsivegrid
 
    * Puede definir contenedores de diseño:
 
@@ -42,14 +42,13 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
       * Como parsys predeterminado para la página.
       * Ambas.
 
-         Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esta página; por ejemplo, para lograr el control de columna.
+        Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esta página; por ejemplo, para lograr el control de columna.
 
 * **[Modo de diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Una vez que el contenedor de diseño esté colocado en la página, puede utilizar el 
-**Diseño** modo para colocar contenido en la cuadrícula adaptable.
+Una vez que el contenedor de diseño esté colocado en la página, puede utilizar el **Diseño** modo para colocar contenido en la cuadrícula adaptable.
 
 * [**Emulador**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Esto le permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
+Esto permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
 
 >[!CAUTION]
 >
@@ -68,7 +67,7 @@ Con estos mecanismos de cuadrícula adaptable puede:
 
 ## Configuración del emulador interactivo {#configuring-the-responsive-emulator}
 
-Estas tareas le permiten ver el **Emulador** en el sitio.
+Esta tarea le permite ver la respuesta **Emulador** en el sitio.
 
 ### Registre los componentes de la página para su emulación {#register-your-page-components-for-emulation}
 
@@ -188,15 +187,15 @@ Los dos ejemplos siguientes ilustran la definición:
 
 * **HTL:**
 
-   ```xml
-   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
-   ```
+  ```xml
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
+  ```
 
 * **JSP:**
 
-   ```
-   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
-   ```
+  ```
+  <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
+  ```
 
 ### Incluir CSS interactivo {#include-the-responsive-css}
 
@@ -282,11 +281,11 @@ Para permitir que los autores agreguen más cuadrículas adaptables a las págin
 
 * **Entorno de creación**
 
-   Uso [Modo de diseño](/help/sites-authoring/default-components-designmode.md) para activar el **Contenedor de capa** para una página.
+  Uso [Modo de diseño](/help/sites-authoring/default-components-designmode.md) para activar el **Contenedor de capa** para una página.
 
 * **Definición del componente**
 
-   Uso `allowedComponent` o una inclusión estática al definir el componente.
+  Uso `allowedComponent` o una inclusión estática al definir el componente.
 
 ### Configuración de la cuadrícula del contenedor de diseño {#configure-the-grid-of-the-layout-container}
 
@@ -309,6 +308,7 @@ Puede configurar el número de columnas disponibles para cada instancia específ
    * Número de columnas disponibles:
 
       * `columns="{String}8"`
+
    * Componentes que se pueden añadir al componente actual:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`

@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4738'
-ht-degree: 95%
+source-wordcount: '4734'
+ht-degree: 94%
 
 ---
 
@@ -126,7 +126,7 @@ Consulte también las descripciones de los componentes y las prácticas recomend
 
 ### Usar reglas en formularios adaptables {#using-rules-in-adaptive-forms}
 
-AEM Forms proporciona un [editor de reglas](/help/forms/using/rule-editor.md) que le permite crear reglas para agregar un comportamiento dinámico a los componentes del formulario adaptable. Con estas reglas, se pueden evaluar condiciones y acciones del activador en componentes como mostrar u ocultar campos, calcular valores, cambiar listas desplegables de forma dinámica, etc.
+AEM Forms proporciona un [editor de reglas](/help/forms/using/rule-editor.md) Esto permite crear reglas para agregar un comportamiento dinámico a los componentes del formulario adaptable. Con estas reglas, se pueden evaluar condiciones y acciones del activador en componentes como mostrar u ocultar campos, calcular valores, cambiar listas desplegables de forma dinámica, etc.
 
 El editor de reglas proporciona un editor visual y un editor de código para escribir reglas. Tenga en cuenta lo siguiente al escribir reglas mediante el modo de editor de código:
 
@@ -191,7 +191,7 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
 
 ### Trabajar con temáticas {#working-with-themes}
 
-La adaptación para las temáticas le permite crear estilos reutilizables que se pueden aplicar en todos los formularios para conseguir un aspecto y un estilo coherentes. Se recomienda utilizar Temáticas para definir el estilo de los componentes y paneles del formulario. Algunas prácticas recomendadas relacionadas con los temáticas son las siguientes:
+La adaptación para las temáticas le permite crear estilos reutilizables que se pueden aplicar en todos los formularios para lograr un aspecto y un estilo coherentes. Se recomienda utilizar Temáticas para definir el estilo de los componentes y paneles del formulario. Algunas prácticas recomendadas relacionadas con los temáticas son las siguientes:
 
 * Utilizar la biblioteca de recursos para aplicar rápidamente estilos de texto, fondo e imágenes. Cuando se agrega un estilo en la biblioteca de recursos, estará disponible para otras temáticas y para el modo de estilo de la interfaz de usuario del editor de formularios.
 * Aplique la configuración global como fuente y fondo de página mediante el selector de nivel de página.

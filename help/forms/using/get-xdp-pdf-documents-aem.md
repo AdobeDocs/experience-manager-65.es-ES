@@ -1,8 +1,8 @@
 ---
 title: Obtener documentos XDP y PDF en AEM Forms
 seo-title: Getting XDP and PDF documents in AEM Forms
-description: AEM Forms permite cargar formularios y recursos compatibles para utilizarlos con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
-seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
+description: AEM Forms permite cargar formularios y recursos compatibles para utilizarlos con formularios adaptables. También puede cargar formularios de forma masiva y recursos relacionados como ZIP.
+seo-description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
+source-wordcount: '671'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Una vez finalizada la carga, un flujo de trabajo en segundo plano genera miniatu
 
 ### Modo protegido {#protected-mode}
 
-El servidor de AEM Forms le permite ejecutar código JavaScript. Un código JavaScript malintencionado puede dañar un entorno de AEM Forms. El modo protegido restringe AEM Forms de forma que ejecute archivos XDP únicamente desde recursos y ubicaciones de confianza. Todos los XDP disponibles en la interfaz de usuario de AEM Forms se consideran recursos de confianza.
+El servidor de AEM Forms permite ejecutar código JavaScript. Un código JavaScript malintencionado puede dañar un entorno de AEM Forms. El modo protegido restringe AEM Forms de forma que ejecute archivos XDP únicamente desde recursos y ubicaciones de confianza. Todos los XDP disponibles en la interfaz de usuario de AEM Forms se consideran recursos de confianza.
 
 El modo protegido está activado de forma predeterminada. Si es necesario, puede desactivar el modo protegido:
 
@@ -82,7 +82,7 @@ Un formulario adaptable que hace referencia a un XFA tiene sus campos enlazados 
 Al quitar una plantilla de formulario, se corrompe el formulario adaptable o la plantilla de formulario dependientes. Algunas veces, a este tipo de formularios adaptables se les denomina informalmente &quot;formularios sucios&quot;. Puede buscar formularios sucios en la interfaz de usuario de AEM Forms de las dos formas siguientes.
 
 * Se muestra un icono de advertencia en la miniatura del formulario adaptable de la lista de recursos, y al situar el puntero sobre él, aparece el siguiente mensaje.\
-   `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
 
 ![Advertencia para un formulario adaptable sin sincronizar después de actualizar el XFA asociado](assets/dirtyaf.png)
 

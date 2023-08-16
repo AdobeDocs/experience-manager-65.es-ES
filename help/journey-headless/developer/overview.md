@@ -2,10 +2,10 @@
 title: Recorrido para desarrolladores de AEM sin encabezado
 description: AEM Documentación de CMS sin encabezado de. Comience aquí para obtener un recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -54,7 +54,7 @@ Por supuesto, la información de este recorrido puede ser útil para todas las p
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre los contenidos sin encabezado en AEM y acercan la documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en el contenido sin encabezado en AEM, le recomendamos que comience por el principio y avance en orden secuencialmente.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en el uso sin encabezado en la, Adobe recomienda comenzar por el principio y avanzar secuencialmente.
 
 | # | Artículo | Descripción |
 |---|---|---|

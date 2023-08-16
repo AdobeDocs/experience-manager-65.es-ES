@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ En primer lugar, compruebe la conexión entre las instancias de autor y publicac
 >[!NOTE]
 >
 >Asegúrese de que la **acMapping** propiedad en la página **jcr:contenido** El nodo está configurado en **mapRecipient** o **perfil** al usar Adobe Campaign Classic o Adobe Campaign Standard, respectivamente
+>
 
 1. AEM En, en Sitios, desplácese hasta donde desee crear una nueva página.
 1. Cree una página y seleccione **Perfil de Adobe Campaign Classic** o **Perfil de Adobe Campaign Standard** y haga clic en **Siguiente**.
@@ -64,7 +65,7 @@ En primer lugar, compruebe la conexión entre las instancias de autor y publicac
 
 1. En el **Nombre** , añada el nombre de la página. Debe ser un nombre JCR válido.
 1. En el **Título** , introduzca un título y haga clic en **Crear**.
-1. Abra la página y seleccione **Abrir propiedades** y en Cloud Services, añada la configuración de Adobe Campaign y seleccione la marca de verificación para guardar los cambios.
+1. Abra la página y seleccione **Abrir propiedades** y en Cloud Service, añada la configuración de Adobe Campaign y seleccione la marca de verificación para guardar los cambios.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -72,7 +73,7 @@ En primer lugar, compruebe la conexión entre las instancias de autor y publicac
 
 ## Edición del contenido del formulario {#editing-form-content}
 
-Forms dedicado a Adobe Campaign tiene componentes específicos. Estos componentes tienen una opción que le permite vincular cada campo del formulario a un campo de la base de datos de Adobe Campaign.
+Forms dedicado a Adobe Campaign tiene componentes específicos. Estos componentes tienen una opción para permitirle vincular cada campo del formulario a un campo de la base de datos de Adobe Campaign.
 
 >[!NOTE]
 >
@@ -80,7 +81,7 @@ Forms dedicado a Adobe Campaign tiene componentes específicos. Estos componente
 
 Esta sección solo detalla los vínculos específicos a Adobe Campaign. Para obtener más información sobre una descripción general más general del uso de los formularios en Adobe Experience Manager, consulte [Componentes del modo de edición](/help/sites-authoring/default-components-foundation.md).
 
-1. Seleccionar **Abrir propiedades** y en Cloud Services, añada la configuración de Adobe Campaign y seleccione la marca de verificación para guardar los cambios.
+1. Seleccionar **Abrir propiedades** y en Cloud Service, añada la configuración de Adobe Campaign y seleccione la marca de verificación para guardar los cambios.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 

@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5530'
-ht-degree: 94%
+source-wordcount: '5529'
+ht-degree: 93%
 
 ---
 
@@ -56,7 +56,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
 
 >[!NOTE]
 >
->Aunque AEM Forms permite configurar y ejecutar todas las funcionalidades desde un solo servidor, debe planificar la capacidad y el equilibrio de carga y configurar servidores dedicados para las capacidades específicas en entornos de producción. Por ejemplo, en el caso de un entorno que utiliza el servicio PDF Generator para convertir miles de páginas al día y varios formularios adaptables para capturar datos, deberá configurar servidores de AEM Forms independientes para el servicio PDF Generator y las capacidades relacionadas con los formularios adaptables. Esto permite proporcionar un rendimiento óptimo y escalar los servidores de forma independiente entre sí.
+>Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un solo servidor, debe planificar la capacidad, equilibrar la carga y configurar servidores dedicados para funcionalidades específicas en un entorno de producción. Por ejemplo, en el caso de un entorno que utiliza el servicio PDF Generator para convertir miles de páginas al día y varios formularios adaptables para capturar datos, deberá configurar servidores de AEM Forms independientes para el servicio PDF Generator y las capacidades relacionadas con los formularios adaptables. Esto permite proporcionar un rendimiento óptimo y escalar los servidores de forma independiente entre sí.
 
 ## Requisitos del sistema {#system-requirements}
 

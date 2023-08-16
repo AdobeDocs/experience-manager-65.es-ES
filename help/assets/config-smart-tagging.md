@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
-ht-degree: 25%
+source-wordcount: '2244'
+ht-degree: 24%
 
 ---
 
@@ -21,7 +21,6 @@ Antes de empezar a etiquetar recursos mediante Smart Content Services, integre [
 >* Smart Content Services ya no está disponible para los nuevos [!DNL Experience Manager Assets] Clientes locales. Los clientes locales existentes, que ya tienen esta capacidad habilitada, pueden seguir utilizando los servicios de contenido inteligente.
 >* Smart Content Services está disponible para los [!DNL Experience Manager Assets] Clientes de Managed Services que ya tienen esta capacidad habilitada.
 >* Nuevo [!DNL Experience Manager Assets] Los clientes de Managed Services pueden seguir las instrucciones mencionadas en este artículo para configurar Smart Content Services.
-
 
 Antes de usar el servicio de contenido inteligente, asegúrese de lo siguiente:
 
@@ -48,11 +47,11 @@ Para configurar el servicio de contenido inteligente, siga estos pasos de nivel 
 
 ### Obtenga un certificado público creando la configuración del servicio de contenido inteligente {#obtain-public-certificate}
 
-El certificado público permite autenticar el perfil en Adobe Developer Console.
+Un certificado público permite autenticar el perfil en la consola de Adobe Developer.
 
-1. En el [!DNL Experience Manager] interfaz de usuario, acceso **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Cloud Services heredados]**.
+1. En el [!DNL Experience Manager] interfaz de usuario, acceso **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service heredados]**.
 
-1. En la página Cloud Services, haga clic en **[!UICONTROL Configurar ahora]** bajo **[!UICONTROL Etiquetas inteligentes de recursos]**.
+1. En la página Cloud Service, haga clic en **[!UICONTROL Configurar ahora]** bajo **[!UICONTROL Etiquetas inteligentes de recursos]**.
 
 1. En el **[!UICONTROL Crear configuración]** , especifique un título y un nombre para la configuración de Etiquetas inteligentes. Haga clic en **[!UICONTROL Crear]**.
 
@@ -137,7 +136,7 @@ Para utilizar las API del servicio de contenido inteligente, cree una integraci�
 
 Para configurar la integración, utilice los valores de [!UICONTROL ID DE CUENTA TÉCNICA], [!UICONTROL ID DE ORGANIZACIÓN], [!UICONTROL SECRETO DEL CLIENTE], y [!UICONTROL ID DE CLIENTE] desde la integración de la consola de Adobe Developer. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde el [!DNL Experience Manager] implementación.
 
-1. Entrada [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services heredados]** para abrir [!UICONTROL Cloud Services] consola.
+1. Entrada [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service heredados]** para abrir [!UICONTROL Cloud Service] consola.
 
 1. En el **[!UICONTROL Etiquetas inteligentes de recursos]**, abra la configuración creada anteriormente. En la página de configuración del servicio, haga clic en **[!UICONTROL Editar]**.
 
@@ -301,4 +300,3 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 >
 >* [Información general sobre y cómo formar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
-

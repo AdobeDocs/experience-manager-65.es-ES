@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '845'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ El [Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/
 Con Adobe Experience Manager AEM (), puede integrarse fácilmente con los siguientes productos de Adobe Experience Cloud:
 
 * Adobe Analytics proporciona a los especialistas en marketing información práctica en tiempo real sobre las estrategias en línea y las iniciativas de marketing.
-* Adobe Target ofrece a los especialistas en marketing la capacidad de aumentar continuamente la relevancia de su contenido en línea para sus clientes, lo que resulta en una buena conversión.
+* Adobe Target ofrece a los especialistas en marketing la capacidad de mejorar continuamente la relevancia de su contenido en línea para sus clientes, lo que resulta en una mayor conversión.
 * Adobe Dynamic Media Classic automatiza la administración de medios, optimiza la publicación web y mejora las experiencias web, todo en un entorno alojado.
 * Adobe Dynamic Tag Management ofrece a los especialistas en marketing herramientas intuitivas para administrar de forma rápida y sencilla un número ilimitado de etiquetas de Adobe y de terceros.
 <!-- Search&Promote is end of life as of September 1, 2022 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites. -->
@@ -34,7 +34,7 @@ Además, puede [AEM integrar con Creative Cloud](/help/assets/aem-cc-integration
 
 Puede utilizar Adobe Analytics para analizar los datos de sus sitios.
 
-La integración con Adobe Analytics le permite hacer lo siguiente:
+Al integrar con Adobe Analytics, puede hacer lo siguiente:
 
 * Habilite el seguimiento de usuarios de Analytics.
 * Asigne los modos de ejecución (por ejemplo, creación y publicación) a diferentes grupos de informes.

@@ -1,8 +1,8 @@
 ---
 title: Medir y mejorar la eficacia y la conversión de formularios
 seo-title: Measure and improve effectiveness and conversion of forms
-description: AEM Forms se integra con las soluciones Adobe Target y Adobe Analytics, las cuales le permiten medir y mejorar el rendimiento y la tasa de conversión de los formularios.
-seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
+description: AEM Forms se integra con las soluciones Adobe Target y Adobe Analytics, lo que le permite medir y mejorar el rendimiento y la tasa de conversión de los formularios.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that lets you measure and improve the performance and conversion rate of your forms.
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +10,10 @@ topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 98%
 
 ---
 

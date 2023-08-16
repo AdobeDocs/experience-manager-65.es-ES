@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6036'
+source-wordcount: '6026'
 ht-degree: 8%
 
 ---
@@ -95,7 +95,7 @@ Si la imagen es de JPEG, el tamaño de la ventanilla también puede influir en l
 
 #### Propiedades {#properties}
 
-El cuadro de diálogo le permite editar las propiedades de la instancia del componente Imagen adaptable, muchas de las cuales son comunes con el componente de imagen en el que se basa. Las propiedades están disponibles en dos pestañas:
+El cuadro de diálogo permite editar las propiedades de la instancia del componente de imagen adaptable, muchas de las cuales son comunes con el componente de imagen en el que se basa. Las propiedades están disponibles en dos pestañas:
 
 * **Imagen**
 
@@ -338,7 +338,7 @@ Puede arrastrar y soltar una imagen desde el [Buscador de contenido](/help/sites
 >
 >Los usuarios de Internet Explorer deben cargar la imagen y hacer clic en **Ok**, luego vuelva a abrir la imagen para ver el archivo cargado en la vista previa y poder realizar modificaciones (es decir, recortar).
 >
->Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML AEM 5 utilizadas por los usuarios de la sección de, haga lo siguiente.
+>Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML AEM 5 utilizadas por los usuarios de la sección de, haga lo siguiente
 
 Cuando se carga una imagen, puede configurar lo siguiente:
 
@@ -1070,7 +1070,7 @@ Especifique la lista de posibles clientes necesaria.
 
          * **Grupo inicial**
 
-           Grupo al que asignar un nuevo usuario.
+           Grupo al que asignar el nuevo usuario.
 
          * **Página principal**
 
@@ -1292,7 +1292,7 @@ Puede especificar el nombre del elemento junto con un título y una descripción
 
 ### Botón Enviar {#submit-button}
 
-Este componente le permite crear un botón de envío, con el texto predeterminado:
+Este componente permite crear un botón de envío, con el texto predeterminado:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 

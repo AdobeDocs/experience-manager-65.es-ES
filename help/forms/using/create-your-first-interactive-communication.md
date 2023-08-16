@@ -10,10 +10,10 @@ topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 100%
+source-wordcount: '980'
+ht-degree: 98%
 
 ---
 
@@ -70,13 +70,13 @@ Crear una anatomía para la comunicación interactiva con los siguientes modos d
 * Datos condicionales
 * Imágenes
 
-[ ](/help/forms/using/planning-interactive-communications.md)
+[](/help/forms/using/planning-interactive-communications.md)
 
 ## Paso 2: Crear un modelo de datos de formulario {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modelo de datos de formulario le permite conectar una comunicación interactiva a distintas fuentes de datos. Por ejemplo, un perfil de usuario de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Un modelo de datos de formulario es un esquema de representación de datos unificado de entidades y servicios empresariales disponibles en fuentes de datos conectadas. Puede utilizar el modelo de datos de formulario con una comunicación interactiva para recuperar datos de fuentes de datos conectadas. Para obtener información sobre el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
+Un modelo de datos de formulario permite conectar una comunicación interactiva a distintas fuentes de datos. Por ejemplo, un perfil de usuario de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Un modelo de datos de formulario es un esquema de representación de datos unificado de entidades y servicios empresariales disponibles en fuentes de datos conectadas. Puede utilizar el modelo de datos de formulario con una comunicación interactiva para recuperar datos de fuentes de datos conectadas. Para obtener información sobre el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
 **Objetivos:**
 
@@ -89,7 +89,7 @@ Un modelo de datos de formulario le permite conectar una comunicación interacti
 * Editar datos de muestra
 * Probar el modelo de datos de formulario y los servicios configurados con datos de prueba
 
-[ ](/help/forms/using/create-form-data-model0.md)
+[](/help/forms/using/create-form-data-model0.md)
 
 ## Paso 3: Crear fragmentos de documento {#step-create-document-fragments}
 
@@ -103,7 +103,7 @@ Los fragmentos de documento son componentes reutilizables de una correspondencia
 * Crear variables
 * Crear y aplicar reglas
 
-[ ](/help/forms/using/create-document-fragments.md)
+[](/help/forms/using/create-document-fragments.md)
 
 ## Paso 4: Crear plantillas {#step-create-templates}
 
@@ -121,7 +121,7 @@ Las plantillas del canal Web se crean en AEM. Los autores y administradores de p
 * Cargar las plantillas XDP al servidor de AEM Forms
 * Crear y habilitar plantillas para el canal Web
 
-[ ](/help/forms/using/create-templates-print-web.md)
+[](/help/forms/using/create-templates-print-web.md)
 
 ## Paso 5: Crear una comunicación interactiva {#step-create-an-interactive-communication}
 
@@ -140,7 +140,7 @@ Las comunicaciones interactivas se pueden entregar a través de dos canales: Imp
 * Crear un gráfico en la versión web de la comunicación interactiva
 * Crear hipervínculos en la versión web de la comunicación interactiva
 
-[ ](/help/forms/using/create-interactive-communication0.md)
+[](/help/forms/using/create-interactive-communication0.md)
 
 ## Paso 6: Publicar la comunicación interactiva {#step-publish-your-interactive-communication}
 

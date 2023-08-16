@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1909'
 ht-degree: 12%
 
 ---
@@ -40,13 +40,13 @@ A continuación se muestra un extracto del sitio de Geometrixx; donde, por ejemp
 
 * Entorno de creación
 
-   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
 * Entorno de publicación
 
-   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Según la configuración de la instancia, utilice `/content` puede ser opcional en el entorno de publicación.
+  Según la configuración de la instancia, utilice `/content` puede ser opcional en el entorno de publicación.
 
 ```xml
   /content
@@ -171,9 +171,11 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
       * Si proporciona una página **Nombre** AEM al crear una página nueva, se le mostrará lo siguiente [valide el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por los JCR y los de la.
       * En la IU clásica puede: **no puede introducir caracteres no válidos** en el **Nombre** field.
+
    * Haga clic en la plantilla que desee utilizar para crear la nueva página.
 
-      La plantilla se utiliza como base para la nueva página; por ejemplo, para determinar el diseño básico de una página de contenido.
+     La plantilla se utiliza como base para la nueva página; por ejemplo, para determinar el diseño básico de una página de contenido.
+
    >[!NOTE]
    >
    >Consulte [Convenciones de nomenclatura de páginas](#page-naming-conventions).
@@ -266,27 +268,28 @@ Para mover o cambiar el nombre de una página:
 
    * **Destino**
 
-      Utilice el mapa del sitio (disponible a través del selector desplegable) para seleccionar la ubicación a la que se debe mover la página.
+     Utilice el mapa del sitio (disponible a través del selector desplegable) para seleccionar la ubicación a la que se debe mover la página.
 
-      Si solo va a cambiar el nombre de la página, ignore este campo.
+     Si solo va a cambiar el nombre de la página, ignore este campo.
 
    * **Mover**
 
-      Especifique la página que desea mover: normalmente se rellena de forma predeterminada, según cómo y dónde haya iniciado la acción de mover.
+     Especifique la página que desea mover: normalmente se rellena de forma predeterminada, según cómo y dónde haya iniciado la acción de mover.
 
    * **Cambiar nombre a**
 
-      La etiqueta de la página actual se muestra de forma predeterminada. Especifique la nueva etiqueta de página, si es necesario.
+     La etiqueta de la página actual se muestra de forma predeterminada. Especifique la nueva etiqueta de página, si es necesario.
 
    * **Ajustar**
 
-      AEM Actualice los vínculos de la página enumerada que apunten a la página desplazada: por ejemplo, si la página A tiene vínculos a la página B, ajusta los vínculos de la página A en caso de que mueva la página B, por ejemplo, para la página B.
+     AEM Actualice los vínculos de la página enumerada que apunten a la página desplazada: por ejemplo, si la página A tiene vínculos a la página B, ajusta los vínculos de la página A en caso de que mueva la página B, por ejemplo, para la página B.
 
-      Se puede seleccionar o deseleccionar para cada página de referencia individual.
+     Se puede seleccionar o deseleccionar para cada página de referencia individual.
 
    * **Volver a publicar el formulario**
 
-      Volver a publicar la página de referencia; de nuevo, esto se puede seleccionar para cada página individual.
+     Volver a publicar la página de referencia; de nuevo, esto se puede seleccionar para cada página individual.
+
    >[!NOTE]
    >
    >Si la página ya estaba activada, al mover la página se desactivará automáticamente. De forma predeterminada, se reactivará cuando se complete el movimiento, pero esto puede cambiar desmarcando la opción **Volver a publicar** para la página en el **Mover** ventana.

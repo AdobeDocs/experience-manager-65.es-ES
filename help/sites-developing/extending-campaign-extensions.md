@@ -8,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ AEM En este ejemplo, se creó un nuevo archivo JSSP personalizado y llama a que 
    * AEM Tiene la conexión funcionando entre y Campaign
    * El servicio Campaign Cloud está configurado en **/content/geometrixx-outdoors**
 
-   El objeto más importante de este ejemplo es el **GenericCampaignConnector**, que le permite llamar (obtener y publicar) archivos jssp en Adobe Campaign.
+   El objeto más importante de este ejemplo es el **GenericCampaignConnector**, que permite invocar (obtener y publicar) archivos jssp en Adobe Campaign.
 
    Este es un pequeño fragmento de código:
 

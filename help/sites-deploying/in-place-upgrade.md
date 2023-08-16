@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo realizar una actualización in sit
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 0%
@@ -53,7 +53,6 @@ AEM La migración real se realiza mediante el archivo jar estándar de inicio r�
 >
 >* `--promote-runmode nosamplecontent`
 >
-
 
 Para determinar el comando que debe ejecutar, utilice el siguiente comando:
 
@@ -104,7 +103,7 @@ Donde `<<YOUR_PROFILE>>` y `<<ADDITIONAL_FLAGS>>` se sustituyen por el perfil y 
  </tbody>
 </table>
 
-**donde:**
+**Donde:**
 
 * `mongo-host` es la IP del servidor MongoDB (por ejemplo, 127.0.0.1)
 
@@ -124,7 +123,7 @@ Compruebe los archivos de configuración debajo de `crx-quickstart/install` carp
 
 **Una nota sobre los almacenes de datos:**
 
-While `FileDataStore` AEM es el nuevo valor predeterminado para instalaciones de 6.3; no se requiere el uso de un almacén de datos externo. Aunque se recomienda utilizar un almacén de datos externo como práctica recomendada para implementaciones de producción, no es un requisito previo para la actualización. AEM Debido a la complejidad que ya existe en la actualización de los datos, se recomienda realizar la actualización sin realizar una migración del almacén de datos. Si lo desea, se puede ejecutar posteriormente una migración del almacén de datos como un esfuerzo independiente.
+While `FileDataStore` AEM es el nuevo valor predeterminado para instalaciones de 6.3; no se requiere el uso de un almacén de datos externo. Aunque se recomienda utilizar un almacén de datos externo como práctica recomendada para implementaciones de producción, no es un requisito previo para la actualización. AEM Debido a la complejidad que ya existe en la actualización de los datos, Adobe recomienda realizar la actualización sin realizar una migración del almacén de datos. Si lo desea, se puede ejecutar posteriormente una migración del almacén de datos como un esfuerzo independiente.
 
 ## Solución de problemas de migración {#troubleshooting-migration-issues}
 
@@ -168,7 +167,7 @@ AEM Para ejecutar la actualización, es importante empezar a utilizar el archivo
 >
 >Si está ejecutando Java 11 de Oracle AEM (o, por lo general, versiones de Java más recientes que la 8), se deberán agregar modificadores adicionales a la línea de comandos al iniciar la ejecución de un comando de. Para obtener más información, consulte [Consideraciones sobre Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-AEM Tenga en cuenta que iniciar la actualización desde la secuencia de comandos de inicio no iniciará la actualización. AEM La mayoría de los clientes empiezan a utilizar la secuencia de comandos de inicio y la han personalizado para incluir modificadores para configuraciones de entorno como, por ejemplo, configuraciones de memoria, certificados de seguridad, etc. Por este motivo, recomendamos seguir este procedimiento para determinar el comando de actualización adecuado:
+AEM Tenga en cuenta que iniciar la actualización desde la secuencia de comandos de inicio no iniciará la actualización. AEM La mayoría de los clientes empiezan a utilizar la secuencia de comandos de inicio y la han personalizado para incluir modificadores para configuraciones de entorno como, por ejemplo, configuraciones de memoria, certificados de seguridad, etc. Por este motivo, Adobe recomienda seguir este procedimiento para determinar el comando de actualización adecuado:
 
 1. AEM En una instancia de en ejecución, ejecute lo siguiente desde la línea de comandos:
 

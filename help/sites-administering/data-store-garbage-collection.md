@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1889'
 ht-degree: 0%
 
 ---
 
 # Recolección de papelera del almacén de datos {#data-store-garbage-collection}
 
-Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia pasa a ser &quot;basura&quot; y no es necesario conservarlo. En los casos en los que existen una serie de activos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento de la copia de seguridad y el mantenimiento del sistema de archivos.
+Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia se convierte en &quot;basura&quot; que no necesita conservarse. En los casos en los que existen una serie de activos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento de la copia de seguridad y el mantenimiento del sistema de archivos.
 
 En su mayor parte, una aplicación WCM tiende a recopilar información, pero no a eliminarla casi con la misma frecuencia. Aunque se añaden nuevas imágenes, incluso sustituyendo a las versiones antiguas, el sistema de control de versiones conserva la antigua y admite la reversión a ella si es necesario. Por lo tanto, la mayor parte del contenido que pensamos que se añade al sistema se almacena de forma efectiva de forma permanente. Entonces, ¿cuál es la fuente típica de &quot;basura&quot; en el repositorio que podríamos querer limpiar?
 
@@ -187,7 +187,7 @@ La comprobación de coherencia del almacén de datos informará de cualquier bin
 1. Busque la variable **BlobGarbageCollection** Mbean y haga clic en él.
 1. Haga clic en `checkConsistency()` vínculo.
 
-Una vez completada la comprobación de coherencia, un mensaje mostrará el número de binarios notificados como faltantes. Si el número es bueno que 0, compruebe el `error.log` para obtener más información sobre los binarios que faltan.
+Una vez completada la comprobación de coherencia, un mensaje mostrará el número de binarios notificados como faltantes. Si el número es mayor que 0, compruebe el `error.log` para obtener más información sobre los binarios que faltan.
 
 A continuación, se muestra un ejemplo de cómo se informan los binarios que faltan en los registros:
 

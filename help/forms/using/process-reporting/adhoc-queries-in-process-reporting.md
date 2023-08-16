@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 100%
+source-wordcount: '1672'
+ht-degree: 98%
 
 ---
 
@@ -155,6 +155,7 @@ Utilice las opciones del panel **Mis filtros** para **Agregar** ![lc_pr_add_filt
    * **Actualizar**: actualiza el informe con los datos más recientes disponibles en el almacenamiento.
 
    * **Exportar a CSV**: exporte los datos del informe a un archivo separado por comas.
+
    >[!NOTE]
    >
    >Al exportar un informe, el resultado de la búsqueda se exportará a un archivo CSV y no solo a la página actual
@@ -248,11 +249,6 @@ Puede ver los detalles de un proceso o tarea específico de AEM Forms:
    * Propietario de la tarea
    * Hora de creación de la asignación de tareas
    * Hora de la actualización de la tarea
-
-
-
-
-
 
 1. Haga clic en **Volver a la búsqueda de procesos/tareas** para volver al resultado de la búsqueda desde el que se profundizaron los detalles del proceso/tarea.
 

@@ -10,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 38%
+source-wordcount: '523'
+ht-degree: 42%
 
 ---
 
@@ -32,7 +32,6 @@ Cuando se ha creado un lanzamiento para una página (o conjunto de páginas), pu
 >
 >* Advertencia: Esta página es el origen de un lanzamiento. No se permite mover la página.
 
-
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 Si el lanzamiento se basa en una [live copy](/help/sites-administering/msm.md) a continuación, hará lo siguiente:
@@ -44,7 +43,7 @@ Se utiliza una Live Copy para sincronizar contenido *desde* la rama de origen *a
 
 Puede realizar cambios de la misma manera que puede editar una Live Copy estándar; por ejemplo:
 
-* Al hacer clic en un candado cerrado, se interrumpirá esta sincronización y se le permitirá realizar nuevas actualizaciones del contenido en el lanzamiento. Una vez desbloqueados (candado abierto), los cambios no se sobrescribirán con ningún cambio realizado en la misma ubicación dentro de la rama de origen.
+* Al hacer clic en un candado cerrado, se interrumpe esta sincronización y se le permite realizar nuevas actualizaciones del contenido en el lanzamiento. Una vez desbloqueados (candado abierto), los cambios no se sobrescribirán con ningún cambio realizado en la misma ubicación dentro de la rama de origen.
 * **Suspender** (y **reanudar**) la herencia de una página específica.
 
 Consulte [Cambio del contenido de Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para obtener más información.
@@ -59,9 +58,9 @@ Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias*
 
    ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
-1. Las dos páginas (inicio y origen) se abrirán en paralelo.
+1. Las dos páginas (inicio y origen) se abrirán una junto a la otra.
 
-   Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
+   Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
 
 ## Cambio de las páginas de origen utilizadas {#changing-the-source-pages-used}
 
@@ -72,6 +71,7 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
    * el [Consola de lanzamientos](/help/sites-authoring/launches.md#the-launches-console):
 
       * Seleccione **Editar**.
+
    * [Referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
 
       * Seleccione **Editar lanzamiento**. 
@@ -93,6 +93,7 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
    * el [Consola de lanzamientos](/help/sites-authoring/launches.md#the-launches-console):
 
       * Seleccionar **Propiedades**.
+
    * [Referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
 
       * Seleccione **Editar propiedades**. 

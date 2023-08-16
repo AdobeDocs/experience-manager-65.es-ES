@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3501'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ A continuación se muestra un fragmento de ejemplo del HTML de la página de ate
 
 AEM AEM Al importar una página de aterrizaje, tiene la opción de importar la página tal cual, lo que significa que después de importar la página de aterrizaje no puede editar ninguno de los elementos importados en (aún puede agregar componentes de adicionales en la página).
 
-AEM Antes de importar la página de aterrizaje, es posible que desee convertir algunas partes de la página de aterrizaje para que sean componentes editables de la página de aterrizaje, por lo que es posible que no se puedan editar en la página de aterrizaje. Esto le permite editar rápidamente partes de la página de aterrizaje incluso después de importar el diseño de esta.
+AEM Antes de importar la página de aterrizaje, es posible que desee convertir algunas partes de la página de aterrizaje para que sean componentes editables de la página de aterrizaje, por lo que es posible que no se puedan editar en la página de aterrizaje. Esto permite editar rápidamente partes de la página de aterrizaje incluso después de importar el diseño de esta.
 
 Para ello, agregue la variable `data-cq-component` al componente correspondiente del archivo de HTML que se importa.
 
@@ -466,7 +466,7 @@ No se recomienda el uso de selectores CSS similares a los siguientes para elemen
 
 Esto se debe a elementos html adicionales como &lt;div> se añaden al HTML generado después de la importación.
 
-* AEM Tampoco se recomiendan los scripts que dependen de una estructura similar a la anterior para usarlos con elementos marcados para la conversión a componentes de la.
+* AEM Tampoco se recomiendan los scripts que dependen de la estructura similar a la anterior para usarlos con elementos marcados para la conversión a componentes de la.
 * Uso de estilos en las etiquetas de marcado para la conversión de componentes como &lt;div data-cq-component=&quot;&amp;ast;&quot;> no se recomienda.
 * El diseño debe seguir las prácticas recomendadas de las plantillas de HTML5. Más información sobre: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 

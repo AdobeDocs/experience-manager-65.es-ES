@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3582'
 ht-degree: 2%
 
 ---
@@ -892,7 +892,7 @@ Después [Creación del paso básico](#creating-the-basic-step), defina la etapa
 
 1. Configure las propiedades en el nodo `cq:listeners`.
 
-   El `cq:listener` El nodo y sus propiedades permiten establecer controladores de eventos que reaccionan a los eventos en el editor de modelos de interfaz de usuario táctil; como arrastrar un paso a una página de modelo o editar propiedades de un paso.
+   El `cq:listener` El nodo y sus propiedades permiten establecer controladores de eventos que reaccionan a los eventos en el editor del modelo de interfaz de usuario táctil; como arrastrar un paso a una página de modelo o editar las propiedades de un paso.
 
    **Propiedades de interés:**
 

@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7149'
-ht-degree: 100%
+source-wordcount: '7148'
+ht-degree: 98%
 
 ---
 
@@ -26,8 +26,7 @@ Un administrador puede configurar una carpeta de red, conocida como carpeta insp
 Puede utilizar uno de los siguientes métodos para crear una carpeta inspeccionada en el sistema de archivos:
 
 * Al configurar las propiedades de un nodo de configuración de carpeta inspeccionada, escriba la ruta completa del directorio principal en la propiedad folderPath y agregue el nombre de la carpeta inspeccionada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`
-La carpeta 
-`MyWatchedFolder` no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
+La carpeta `MyWatchedFolder` no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta inspeccionada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte [Propiedades de la carpeta inspeccionada](#watchedfolderproperties).
 
@@ -143,9 +142,9 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
    * %R = número aleatorio (entre 0 y 9)
    * %P = ID del proceso o trabajo
 
-   Por ejemplo, si son las 20:00 del 17 de julio de 2009 y especifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la carpeta de resultados es C:/Test/WF0/failure/2009/07/17/20
+  Por ejemplo, si son las 20:00 del 17 de julio de 2009 y especifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la carpeta de resultados es C:/Test/WF0/failure/2009/07/17/20
 
-   Si la ruta de acceso no es absoluta sino relativa, la carpeta se crea dentro de la carpeta inspeccionada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Resultado dentro de la carpeta inspeccionada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  Si la ruta de acceso no es absoluta sino relativa, la carpeta se crea dentro de la carpeta inspeccionada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Resultado dentro de la carpeta inspeccionada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
@@ -155,11 +154,11 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 * **preserveFolderName (String):** Ubicación en la que se almacenan los archivos después de procesarlos correctamente. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. El valor predeterminado es preserve/%Y/%M/%D/.
 * **batchSize (Long)**: Número de archivos o carpetas que se van a recoger por análisis. Utilizar para evitar sobrecargas en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
 
-   La configuración Intervalo de encuesta y Tamaño de lote determina cuántos archivos recoge la carpeta inspeccionada en cada análisis. La carpeta inspeccionada utiliza un grupo de hilos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, deberá reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
+  La configuración Intervalo de encuesta y Tamaño de lote determina cuántos archivos recoge la carpeta inspeccionada en cada análisis. La carpeta inspeccionada utiliza un grupo de hilos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, deberá reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
-   Si se pierde un gran volumen de archivos, aumente el tamaño del lote. Por ejemplo, si el servicio iniciado por el punto final de la carpeta inspeccionada puede procesar 700 archivos por minuto y los usuarios pueden soltar archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de encuesta en 30 segundos, ayuda al rendimiento de la carpeta inspeccionada sin incurrir en el coste de analizar la carpeta inspeccionada con demasiada frecuencia.
+  Si se pierde un gran volumen de archivos, aumente el tamaño del lote. Por ejemplo, si el servicio iniciado por el punto final de la carpeta inspeccionada puede procesar 700 archivos por minuto y los usuarios pueden soltar archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de encuesta en 30 segundos, ayuda al rendimiento de la carpeta inspeccionada sin incurrir en el coste de analizar la carpeta inspeccionada con demasiada frecuencia.
 
-   Cuando se sueltan los archivos en la carpeta inspeccionada, se enumeran los archivos en la entrada, lo que puede reducir el rendimiento si la exploración se realiza cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y el intervalo de encuesta en consecuencia. Por ejemplo, si se sueltan 10 archivos cada segundo, intente establecer el intervalo de encuesta en 1 segundo y el tamaño del lote en 10
+  Cuando se sueltan los archivos en la carpeta inspeccionada, se enumeran los archivos en la entrada, lo que puede reducir el rendimiento si la exploración se realiza cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y el intervalo de encuesta en consecuencia. Por ejemplo, si se sueltan 10 archivos cada segundo, intente establecer el intervalo de encuesta en 1 segundo y el tamaño del lote en 10
 
 * **throttleOn (Boolean)**: Cuando se selecciona esta opción, limita el número de trabajos de carpeta inspeccionada que procesa AEM Forms en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. El valor predeterminado es True. (Consulte [Acerca de la restricción](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
@@ -235,7 +234,7 @@ contexto. ProcessorContext tiene las siguientes API:
 los parámetros de configuración de una carpeta inspeccionada.
 
 * **setResult**: La implementación ContentProcessor
-utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. El API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
+utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. La API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
 
 Por ejemplo, el siguiente código es una implementación personalizada de la interfaz ContentProcessor con una propiedad personalizada foo=bar.
 
@@ -273,7 +272,7 @@ Los scripts son el código personalizado de queja de ECMAScript que se escribe p
 * **getWatchFolderId**: Devuelve el ID de la carpeta inspeccionada.
 * **getInputMap**: Devuelve un mapa del tipo Map. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
 * **getConfigParameters**: Devuelve un mapa inmutable de tipo Map. El mapa contiene los parámetros de configuración de una carpeta inspeccionada.
-* **setResult**: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. El API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
+* **setResult**: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. La API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
 
 El siguiente código es un ejemplo de ECMAScript. Acepta archivos de entrada, los copia en una ubicación temporal y devuelve un objeto de documento con el contenido del archivo. El contenido del objeto de documento se guarda en la carpeta de resultados. La ruta física de la carpeta de resultados se configura en el [nodo de configuración de la carpeta inspeccionada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
@@ -345,7 +344,7 @@ Las siguientes API de ProcessorContext también están disponibles:
 * getWatchFolderId: Devuelve el ID de la carpeta inspeccionada.
 * getInputMap: Devuelve un mapa del tipo Map&lt;String, Document>. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
 * getConfigParameters: Devuelve un mapa inmutable de tipo Map&lt;String, Object>. El mapa contiene los parámetros de configuración de una carpeta inspeccionada.
-* setResult: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. El API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo
+* setResult: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. La API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo
 
 Consideración de la API setResult cuando se utiliza en flujos de trabajo:
 
@@ -607,7 +606,7 @@ Realice los siguientes pasos para configurar una carpeta inspeccionada con el ge
 
 ### Crear un ECMAScript {#create-an-ecmascript}
 
-ECMAScript utilizaría la API createPDF del Generador de PDF para convertir documentos de Microsoft Word (.docx) en documentos PDF. Siga estos pasos para crear el script:
+ECMAScript utilizaría la API createPDF de PDF Generator para convertir documentos de Microsoft Word (.docx) en documentos de PDF. Siga estos pasos para crear el script:
 
 1. Abra CRXDE lite en una ventana del explorador. La dirección URL es https://&#39;[server]:[port]&#39;/crx/de.
 
@@ -677,6 +676,7 @@ inputProcessorType (String): Tipo de proceso que se va a iniciar. En este tutori
    * inputProcessorId (String): El comportamiento de la propiedad inputProcessorId se basa en el valor especificado para la propiedad inputProcessorType. En este ejemplo, el valor de la propiedad inputProcessorType es flujo de trabajo. Por lo tanto, para la propiedad inputProcessorId especifique la siguiente ruta del flujo de trabajo PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivo. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
+
    Además de las propiedades obligatorias mencionadas anteriormente, las carpetas inspeccionadas también admiten algunas propiedades opcionales. Para obtener una lista y una descripción completas de las propiedades opcionales, consulte [Propiedades de la carpeta inspeccionada](#watchedfolderproperties).
 
 ## Problemas conocidos {#watched-folder-known-issues}

@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5402'
+source-wordcount: '5401'
 ht-degree: 1%
 
 ---
@@ -413,7 +413,7 @@ Las pestañas proporcionan acceso a varias configuraciones:
 | Ocultar usuarios | Conmutador que oculta todos los usuarios de la lista y deja sólo grupos. Consulte [Ocultar usuarios y grupos](#hiding-users-and-groups). |
 | Ocultar grupos | Conmutador que oculta todos los grupos enumerados y deja solamente usuarios. Consulte [Ocultar usuarios y grupos](#hiding-users-and-groups). |
 | Editar | Un menú que le permite crear y eliminar, así como activar y desactivar usuarios o grupos. Consulte [Creación de usuarios y grupos](#creating-users-and-groups) y [Eliminación de usuarios y grupos](#deleting-users-and-groups). |
-| Propiedades | Enumera información sobre el usuario o grupo que puede incluir información de correo electrónico, una descripción e información de nombres. También le permite cambiar la contraseña de un usuario. Consulte [Creación de usuarios y grupos](#creating-users-and-groups), [Modificación de las propiedades de usuario y grupo](#modifying-user-and-group-properties) y [Cambiar una contraseña de usuario](#changing-a-user-password). |
+| Propiedades | Enumera información sobre el usuario o grupo que puede incluir información de correo electrónico, una descripción e información de nombres. También permite cambiar la contraseña de un usuario. Consulte [Creación de usuarios y grupos](#creating-users-and-groups), [Modificación de las propiedades de usuario y grupo](#modifying-user-and-group-properties) y [Cambiar una contraseña de usuario](#changing-a-user-password). |
 | Grupos | Enumera todos los grupos a los que pertenece el usuario o grupo seleccionado. Puede asignar el usuario o grupos seleccionados a grupos adicionales o eliminarlos de grupos. Consulte [Grupos](#adding-users-or-groups-to-a-group). |
 | Miembros | Disponible solo para grupos. Enumera los miembros de un grupo determinado. Consulte [Miembros](#members-adding-users-or-groups-to-a-group). |
 | Permisos | Puede asignar permisos a un usuario o grupo. Permite controlar lo siguiente:<ul><li>Permisos relacionados con páginas o nodos concretos. Consulte [Configuración de permisos](#setting-permissions). </li><li>Permisos relacionados con la creación y eliminación de páginas y la modificación de la jerarquía. ??? le permite [asignación de privilegios](#settingprivileges), como la modificación de jerarquías, que permite crear y eliminar páginas,</li><li>Permisos relacionados con [privilegios de replicación](#setting-replication-privileges) (normalmente de autor a publicación) según una ruta.</li></ul> |

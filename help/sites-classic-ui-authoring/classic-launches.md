@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 29%
+source-wordcount: '182'
+ht-degree: 19%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 29%
 
 Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura.
 
-Un lanzamiento se crea para permitir que se realicen cambios preparados para una publicación futura (a la vez que se mantienen las páginas actuales). Después de editar y actualizar las páginas de lanzamiento, estas se vuelven a promocionar al origen y luego se activan las páginas de origen (nivel superior). La promoción duplica el contenido de lanzamiento de nuevo en las páginas de origen y se puede realizar manualmente o automáticamente (según los campos establecidos al crear y editar el lanzamiento).
+Se crea un lanzamiento para permitirle realizar cambios listos para su publicación futura (sin perder de vista las páginas actuales). Después de editar y actualizar las páginas de lanzamiento, estas se vuelven a promocionar al origen y luego se activan las páginas de origen (nivel superior). La promoción duplica el contenido de lanzamiento de nuevo en las páginas de origen y se puede realizar manualmente o automáticamente (según los campos establecidos al crear y editar el lanzamiento).
 
 >[!NOTE]
 >

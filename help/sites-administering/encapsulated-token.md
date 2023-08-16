@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: ed2cb35593780cd627c15f493e58d3b68c55519b
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -39,7 +39,7 @@ En caso de que una instancia de publicación deje de estar disponible, todos los
 
 AEM La solución para la escalabilidad horizontal es la autenticación sin estado con el uso de la nueva compatibilidad con token encapsulado en el sistema de autenticación de la base de datos (ENcapsulated Token) de la base de datos de.
 
-AEM El token encapsulado es un fragmento de criptografía que permite a los usuarios crear y validar de forma segura la información de autenticación sin conexión, sin acceder al repositorio. De este modo, se puede realizar una solicitud de autenticación en todas las instancias de publicación sin necesidad de conexiones fijas. También tiene la ventaja de mejorar el rendimiento de la autenticación, ya que no es necesario acceder al repositorio de para cada solicitud de autenticación.
+AEM El token encapsulado es un fragmento de criptografía que permite a los usuarios crear y validar de forma segura la información de autenticación sin conexión, sin acceder al repositorio. De este modo, se puede realizar una solicitud de autenticación en todas las instancias de publicación sin necesidad de conexiones fijas. También tiene la ventaja de mejorar el rendimiento de la autenticación porque no es necesario acceder al repositorio de para cada solicitud de autenticación.
 
 Puede ver cómo funciona esto en una implementación distribuida geográficamente con autores MongoMK e instancias de publicación TarMK a continuación:
 
@@ -50,6 +50,7 @@ Puede ver cómo funciona esto en una implementación distribuida geográficament
 >Tenga en cuenta que el token encapsulado trata sobre la autenticación. Garantiza que la cookie se pueda validar sin tener que acceder al repositorio. Sin embargo, sigue siendo necesario que el usuario exista en todas las instancias y que se pueda acceder a la información almacenada bajo ese usuario en cada instancia.
 >
 >Por ejemplo, si se crea un nuevo usuario en la instancia de publicación número uno, debido al modo en que funciona el token encapsulado, se autenticará correctamente en la instancia de publicación número dos. Si el usuario no existe en la segunda instancia de publicación, la solicitud sigue sin tener éxito.
+>
 
 ## Configuración del token encapsulado {#configuring-the-encapsulated-token}
 
@@ -59,7 +60,6 @@ Puede ver cómo funciona esto en una implementación distribuida geográficament
 >* Las sesiones duraderas están habilitadas, o
 >
 >* AEM Los usuarios ya se han creado en la cuando se inicia la sincronización. Esto significa que no se admitirán tokens encapsulados en situaciones en las que los controladores **crear** usuarios durante el proceso de sincronización.
-
 
 Hay algunas cosas que debe tener en cuenta al configurar el token encapsulado:
 

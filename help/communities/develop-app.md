@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '572'
 ht-degree: 7%
 
 ---
@@ -88,7 +88,7 @@ Uso del CRXDE Lite:
    </html>
    ```
 
-1. El script de base `head.jsp` no es necesario superponer, sino la secuencia de comandos foundation `body.jsp` está vacío.
+1. El script de base `head.jsp` no necesita superponerse, pero el script de base `body.jsp` está vacío.
 
    Para configurar la creación, haga clic en Superponer `body.jsp` con una secuencia de comandos local e incluya un sistema de párrafos (parsys) en el cuerpo:
 
@@ -97,6 +97,7 @@ Uso del CRXDE Lite:
    1. Haga clic con el botón derecho y seleccione `Create > Create File...`
 
       * Nombre: **body.jsp**
+
    1. Haga clic en **[!UICONTROL Guardar todo]**.
 
    Abrir `/apps/an-scf-sandbox/components/playpage/body.jsp` y pegue el texto siguiente:

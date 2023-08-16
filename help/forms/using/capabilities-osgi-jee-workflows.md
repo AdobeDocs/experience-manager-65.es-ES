@@ -3,10 +3,10 @@ title: Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms
 description: Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en los flujos de trabajo de OSGi y JEE de AEM Forms
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '927'
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ## Bandeja de entrada de AEM y espacio de trabajo HTML  {#aem-inbox-and-html-workspace}
 
-Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujos de trabajo de AEM centrados en Forms en OSGi. Por su parte, el espacio de trabajo HTML le permite ejecutar y supervisar flujos de trabajo JEE de AEM Forms. La siguiente tabla le ayuda a comprender varias acciones importantes disponibles en la bandeja de entrada de AEM para flujos de trabajo de AEM centrados en Forms en OSGi y en el espacio de trabajo HTML para flujos de trabajo JEE de AEM Forms.
+Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujos de trabajo de AEM centrados en Forms en OSGi. Por su parte, HTML Workspace permite ejecutar y supervisar flujos de trabajo JEE de AEM Forms. La siguiente tabla le ayuda a comprender varias acciones importantes disponibles en la bandeja de entrada de AEM para flujos de trabajo de AEM centrados en Forms en OSGi y en el espacio de trabajo HTML para flujos de trabajo JEE de AEM Forms.
 
 <table>
  <tbody>

@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 18%
+source-wordcount: '797'
+ht-degree: 16%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 18%
 
 Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen lo siguiente:
 
-* **Flujo de trabajo de aprobación del proyecto**: este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Flujo de trabajo de aprobación** : Este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Solicitar lanzamiento**: un flujo de trabajo solicita un lanzamiento.
 * **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
@@ -31,7 +31,7 @@ Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen l
 
 Según la plantilla de proyecto que seleccione, tendrá disponibles ciertos flujos de trabajo:
 
-|  | **Proyecto simple** | **Proyecto de medios** | **Proyecto de sesión fotográfica del producto** | **Proyecto de traducción** |
+|   | **Proyecto simple** | **Proyecto de medios** | **Proyecto de sesión fotográfica del producto** | **Proyecto de traducción** |
 |---|:-:|:-:|:-:|:-:|
 | Solicitar copia |  | x |  |  |
 | Sesión fotográfica del producto |  | x | x |  |

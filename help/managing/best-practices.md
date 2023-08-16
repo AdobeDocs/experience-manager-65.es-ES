@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3251'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ La preparación del proyecto forma la base de todo el proyecto. Defina los requi
 
    * Debe haber disponible un ámbito básico y una programación aproximada para definir qué se necesita y en qué plazo; si ayuda a aclarar la situación, también puede definir qué se encuentra fuera del ámbito.
 
-La forma de preparar, planificar y ejecutar el proyecto e implementar la solución se ve afectada por las restricciones en las que está operando. Por ejemplo, presupuesto fijo, calendario fijo, cantidad de contenido, calidad requerida.
+La forma de preparar, planificar y ejecutar el proyecto e implementar la solución se ve afectada por las restricciones en las que está operando. Por ejemplo, presupuesto fijo, plazos fijos, cantidad de contenido, calidad requerida.
 
 Como siempre, ajustar cualquiera de los factores afecta a los demás. Por ejemplo, si reduce el tiempo, pero requiere el mismo nivel de calidad, probablemente aumente el precio y reduzca la cantidad de contenido que puede satisfacer. El presupuesto es a menudo un factor clave por lo que tales relaciones no se pueden olvidar.
 
@@ -341,7 +341,7 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
 
   Asegúrese de que todos los miembros del equipo y el personal del proyecto se mantienen actualizados según sea necesario.
 
-* **Documentación**.
+* **Documentación**
 
   Documente la solución completamente; incluyendo:
 

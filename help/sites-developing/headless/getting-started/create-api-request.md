@@ -2,10 +2,10 @@
 title: Acceso y entrega de fragmentos de contenido Guía de inicio rápido sin encabezado
 description: AEM Aprenda a utilizar la API de REST de Recursos de la aplicación para administrar fragmentos de contenido y la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 32%
+source-wordcount: '555'
+ht-degree: 26%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Aprenda a utilizar la API de REST de Recursos de la aplicación para adminis
 
 * [La API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permite crear solicitudes para acceder a fragmentos de contenido y enviarlos.
    * Para usar esto, [AEM los puntos de conexión deben definirse y habilitarse en el modo de administración de la](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)y, si es necesario, el [Interfaz de GraphiQL instalada](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
-* La [API de REST de Assets](/help/assets/assets-api-content-fragments.md) permite crear y modificar fragmentos de contenido (y otros recursos).
+* [La API de REST de Assets](/help/assets/assets-api-content-fragments.md) permite crear y modificar fragmentos de contenido (y otros recursos).
 
 El resto de esta guía se centra en el acceso a GraphQL y la entrega de fragmentos de contenido.
 
@@ -31,7 +31,7 @@ Los arquitectos de la información deben diseñar consultas para sus extremos de
    * Por ejemplo: `http://<host>:<port>/aem/graphiql.html`.
 
 1. El de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para generar consultas, recuperar fragmentos de contenido y entregarlos sin problemas como JSON.
-   * El panel izquierdo le permite crear la consulta.
+   * El panel izquierdo le permite generar la consulta.
    * El panel derecho muestra los resultados.
    * El editor de consultas incluye la finalización del código y teclas de función para ejecutar fácilmente la consulta.
      ![Editor de GraphiQL](assets/graphiql.png)

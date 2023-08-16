@@ -3,9 +3,9 @@ title: Configure el Editor de texto enriquecido para crear contenido en Adobe Ex
 description: Aprenda a configurar el Editor de texto enriquecido de Adobe Experience Manager para que cree contenido en Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2923'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,6 @@ La IU táctil es la interfaz de usuario estándar para Experience Manager. El Ad
 >* Acerca de la desaprobación de la IU clásica, consulte [Notas de la versión de Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Para ver las diferencias entre las IU, consulte [IU táctil e IU clásica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
 >* Para comprender en detalle la IU táctil, consulte [Conceptos de la IU táctil del Experience Manager](/help/sites-developing/touch-ui-concepts.md)
-
 
 ## Varios modos de edición {#editingmodes}
 
@@ -114,7 +113,7 @@ En la tabla siguiente se enumeran los complementos actuales, mostrando:
 | image | image | Compatibilidad con imágenes básica (arrastre desde contenido o Buscador de contenido). Según el explorador, la compatibilidad tiene comportamientos diferentes para los autores |
 | teclas |  | Para definir este valor, consulte [tamaño de ficha](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
 | justificar | justifyleft justifycenter justifcopyright | Alineación de párrafo. |
-| vínculos | modificar delimitador de desvinculación de vínculo | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| links | modificar delimitador de desvinculación de vínculo | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | listas | anulación de sangría ordenada sin ordenar | Este complemento controla ambos [sangría y listas](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); incluyendo listas anidadas. |
 | herramientas diversas | specialchars sourceedit | Varias herramientas permiten a los autores introducir [caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o editar el origen del HTML. Además, puede agregar un todo [intervalo de caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
 | Paraformato | paraformato | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>`, y `<h3>`). Puede [agregar más formatos de párrafo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) o ampliar la lista. |
@@ -152,9 +151,9 @@ Configure las siguientes propiedades que se aplican en el modo de edición del c
 
 * `useFixedInlineToolbar`: establezca esta propiedad booleana definida en el nodo RTE (una con sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) a `True`, para que la barra de herramientas RTE sea fija en lugar de flotante.
 
-   Cuando esta propiedad es true, la edición de Richtext se inicia de forma predeterminada en el evento &quot;foundation-contentloaded&quot;.
+  Cuando esta propiedad es true, la edición de Richtext se inicia de forma predeterminada en el evento &quot;foundation-contentloaded&quot;.
 
-   Para evitarlo, establezca la propiedad `customStart` hasta `True`y déclencheur el evento &quot;rte-start&quot; para iniciar la edición de RTE. Cuando esta propiedad tiene el valor &quot;true&quot;, el comportamiento predeterminado, iniciar al hacer clic, no funciona.
+  Para evitarlo, establezca la propiedad `customStart` hasta `True`y déclencheur el evento &quot;rte-start&quot; para iniciar la edición de RTE. Cuando esta propiedad tiene el valor &quot;true&quot;, el comportamiento predeterminado, iniciar al hacer clic, no funciona.
 
 * `customStart`: establezca esta propiedad booleana definida en el nodo RTE en `True`, para controlar cuándo iniciar RTE activando el evento `rte-start`.
 
@@ -196,7 +195,7 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [Cómo
 
 ## Configuración de la barra de herramientas RTE {#dialogfullscreen}
 
-AEM le permite configurar la interfaz del Editor de texto enriquecido de forma diferente para los distintos modos de edición. A continuación se proporcionan los ajustes predeterminados. Puede sustituir estos valores predeterminados según sus necesidades. Puede personalizar únicamente las características de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
+AEM La interfaz del Editor de texto enriquecido se puede configurar de forma diferente para cada modo de edición, según el modo en que se use. A continuación se proporcionan los ajustes predeterminados. Puede sustituir estos valores predeterminados según sus necesidades. Puede personalizar únicamente las características de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
 
 Para configurar la barra de herramientas para `dialogFullScreen`, utilice la siguiente configuración de ejemplo.
 
@@ -311,7 +310,7 @@ En una página, puede incluir CoralUI 2 RTE clientlib o CoralUI 3 RTE clientlib.
 
 1. Superponer los nodos `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` y `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` bajo `/apps`.
 
-   Quitar categoría `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` y añadirlo a `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
+   Quitar categoría `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` y agréguelo a `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
 
 1. Cambie cualquier otra dependencia que se incluya en la página de `rte.coralui3` hasta `rte.coralui2`. Por ejemplo, después de superponer el nodo `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` bajo `/apps`, cambie cualquier dependencia de ella de `rte.coralui3` hasta `rte.coralui2`.
 
@@ -398,4 +397,3 @@ Si las actualizaciones de las configuraciones de interfaz se reflejan para los a
 >* [Configuración de RTE para sitios accesibles](rte-accessible-content.md)
 >* [Paridad de características de IU táctil e IU clásica](../release-notes/touch-ui-features-status.md)
 >* [Muestra de tutorial para crear un componente compuesto de varios campos](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)
-

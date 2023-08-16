@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1149'
 ht-degree: 66%
 
 ---
@@ -163,7 +163,7 @@ Para acceder a ella:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-Desde aquí, puede **Agregar contexto**. Esto le permite añadir una ruta.
+Desde aquí, puede **Agregar contexto**. Esto permite añadir una ruta.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 

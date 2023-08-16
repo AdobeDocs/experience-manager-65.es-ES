@@ -2,16 +2,16 @@
 title: El exportador de página
 description: AEM Aprenda a utilizar el Exportador de páginas de.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
 
 # El exportador de página{#the-page-exporter}
 
-AEM le permite exportar una página como una página web completa que incluye imágenes, `.js` y `.css` archivos.
+AEM le permite exportar una página como una página web completa, incluidas imágenes, `.js` y `.css` archivos.
 
 Una vez configurada, puede solicitar una exportación de página desde el explorador reemplazando `html` con `export.zip` en la dirección URL. Esto genera un archivo (zip) que contiene la página procesada en formato html, junto con los recursos a los que se hace referencia. Todas las rutas de la página (por ejemplo, las rutas a imágenes) se vuelven a escribir para que apunten a los archivos incluidos en el archivo o a los recursos del servidor. A continuación, se puede descargar el archivo (zip) desde el explorador.
 
@@ -20,7 +20,6 @@ Una vez configurada, puede solicitar una exportación de página desde el explor
 >Según el explorador y la configuración, la descarga puede ser:
 >* un archivo (`<page-name>.export.zip`)
 >* una carpeta (`<page-name>`); efectivamente el archivo ya está expandido
-
 
 ## Exportar una página {#exporting-a-page}
 
@@ -47,7 +46,6 @@ Seleccione la plantilla necesaria para el sitio y confirme con **OK**.
    Se accede a través de:
    * localhost:4502/content/we-retail/language-masters/en.export.zip
 
-
 1. Descargue el archivo en su sistema de archivos.
 
 1. En el sistema de archivos, descomprima el archivo si es necesario. Una vez expandida, aparecerá una carpeta con el mismo nombre que la página seleccionada. Esta carpeta contiene:
@@ -55,8 +53,8 @@ Seleccione la plantilla necesaria para el sitio y confirme con **OK**.
    * la subcarpeta `content`, que es la raíz de una serie de subcarpetas que reflejan la ruta a la página en el repositorio
 
       * dentro de esta estructura está el archivo html de la página seleccionada (`<page-name>.html`)
-   * otros recursos (`.js` archivos, `.css` archivos, imágenes, etc.) se encuentran según la configuración de la plantilla de exportación
 
+   * otros recursos (`.js` archivos, `.css` archivos, imágenes, etc.) se encuentran según la configuración de la plantilla de exportación
 
 1. Abra el archivo html de la página (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) en el explorador para comprobar la renderización.
 
@@ -73,7 +71,7 @@ AEM Una instalación predeterminada de incluye una plantilla predeterminada en, 
 * El `default` La plantilla muestra cómo se puede configurar una exportación de página, de modo que puede servir de base para una nueva plantilla de exportación.
 
 * Para ver la estructura de nodos de la plantilla en el explorador como formato JSON, solicite la siguiente URL:
-   `http://localhost:4502/etc/contentsync/templates/default.json`
+  `http://localhost:4502/etc/contentsync/templates/default.json`
 
 El método más sencillo para crear una nueva plantilla de exportador de página es:
 
@@ -121,19 +119,18 @@ El nodo de página se utiliza para copiar el HTML de página en el archivo zip. 
    * Se define con la propiedad `Name`establezca en `page`.
    * El tipo de nodo es `nt:unstructured`
 
-   El `page` tiene las siguientes propiedades:
+  El `page` tiene las siguientes propiedades:
 
    * A `type` propiedad establecida con el valor `pages`.
 
    * No tiene un. `path` como la ruta de la página actual se copia dinámicamente en la configuración.
-
-   <!--
+  <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
 
 * `rewrite`
 El nodo de reescritura define cómo se reescriben los vínculos en la página exportada. Los vínculos reescritos pueden apuntar a los archivos incluidos en el archivo zip o a los recursos del servidor.
-   <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 El nodo de diseño se utiliza para copiar el diseño utilizado para la página exportada. Tiene las siguientes características:
@@ -143,16 +140,14 @@ El nodo de diseño se utiliza para copiar el diseño utilizado para la página e
    * Se define con la propiedad `Name` establezca en `design`.
    * El tipo de nodo es `nt:unstructured`.
 
-   El `design` tiene las siguientes propiedades:
+  El `design` tiene las siguientes propiedades:
 
    * A `type` propiedad establecida en el valor `copy`.
 
    * No tiene un. `path` , ya que la ruta de la página actual se copia dinámicamente en la configuración.
 
-
 * `generic`
-Se utiliza un nodo genérico para copiar recursos como clientlibs 
-`.js` o `.css` al archivo zip. Tiene las siguientes características:
+Se utiliza un nodo genérico para copiar recursos como clientlibs `.js` o `.css` al archivo zip. Tiene las siguientes características:
 
    * Es opcional.
    * Se encuentra debajo de `/etc/contentsync/templates/<mysite>`.
@@ -160,16 +155,16 @@ Se utiliza un nodo genérico para copiar recursos como clientlibs
    * El tipo de nodo es `nt:unstructured`.
    * Tiene un `type` propiedad y `type` propiedades relacionadas. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-   Por ejemplo, el siguiente nodo de configuración copia el `mysite.clientlibs.js` archivos en el archivo zip:
+  Por ejemplo, el siguiente nodo de configuración copia el `mysite.clientlibs.js` archivos en el archivo zip:
 
-   ```xml
-   "mysite.clientlibs.js": {
-       "extension": "js",
-       "type": "clientlib",
-       "path": "/etc/designs/mysite/clientlibs",
-       "jcr:primaryType": "nt:unstructured"
-   }
-   ```
+  ```xml
+  "mysite.clientlibs.js": {
+      "extension": "js",
+      "type": "clientlib",
+      "path": "/etc/designs/mysite/clientlibs",
+      "jcr:primaryType": "nt:unstructured"
+  }
+  ```
 
 **Implementación de una configuración personalizada**
 

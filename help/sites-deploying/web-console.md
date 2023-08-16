@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
@@ -52,11 +52,11 @@ El **Configuración** se puede acceder a la pestaña mediante:
 
 * El menú desplegable:
 
-   **OSGi >**
+  **OSGi >**
 
 * La dirección URL; por ejemplo:
 
-   `http://localhost:4502/system/console/configMgr`
+  `http://localhost:4502/system/console/configMgr`
 
 Se mostrará una lista de configuraciones:
 
@@ -73,7 +73,7 @@ Permite actualizar las configuraciones existentes. Tienen una identidad persiste
 * **Configuraciones de fábrica**
 Permite crear una instancia del objeto de funcionalidad requerido.
 
-   Se le asignará una identidad persistente y, a continuación, se enumerará en la lista desplegable Configuraciones.
+  Se le asignará una identidad persistente y, a continuación, se enumerará en la lista desplegable Configuraciones.
 
 Al seleccionar cualquier entrada de las listas, se muestran los parámetros relacionados con esa configuración:
 
@@ -83,25 +83,25 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
 * **Guardar**
 
-   Guarde los cambios realizados.
+  Guarde los cambios realizados.
 
-   Para una configuración de fábrica, se creará una nueva instancia con una identidad persistente. La nueva instancia se enumerará en Configuraciones.
+  Para una configuración de fábrica, se creará una nueva instancia con una identidad persistente. La nueva instancia se enumerará en Configuraciones.
 
 * **Restablecer**
 
-   Restablezca los parámetros mostrados en pantalla a los guardados en último lugar.
+  Restablezca los parámetros mostrados en pantalla a los guardados en último lugar.
 
 * **Eliminar**
 
-   Eliminar la configuración actual. Si son estándar, los parámetros se devuelven a la configuración predeterminada. Si se crea a partir de una configuración de fábrica, se elimina la instancia específica.
+  Eliminar la configuración actual. Si son estándar, los parámetros se devuelven a la configuración predeterminada. Si se crea a partir de una configuración de fábrica, se elimina la instancia específica.
 
 * **Desenlazar**
 
-   Desenlace la configuración actual del paquete.
+  Desenlace la configuración actual del paquete.
 
 * **Cancelar**
 
-   Cancelar los cambios actuales.
+  Cancelar los cambios actuales.
 
 ## Paquetes {#bundles}
 
@@ -109,11 +109,11 @@ El **Paquetes** AEM es el mecanismo para instalar los paquetes OSGi necesarios p
 
 * El menú desplegable:
 
-   **OSGi >**
+  **OSGi >**
 
 * La dirección URL; por ejemplo:
 
-   `http://localhost:4502/system/console/bundles`
+  `http://localhost:4502/system/console/bundles`
 
 Se mostrará una lista de paquetes:
 
@@ -123,33 +123,33 @@ Con esta pestaña puede:
 
 * **Instalar o actualizar**
 
-   Puede **Examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en el cual **Nivel de inicio**.
+  Puede **Examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en el cual **Nivel de inicio**.
 
 * **Volver a cargar**
 
-   Actualiza la lista mostrada.
+  Actualiza la lista mostrada.
 
 * **Actualizar paquetes**
 
-   Esto comprobará las referencias de todos los paquetes y se actualizará según sea necesario.
+  Esto comprobará las referencias de todos los paquetes y se actualizará según sea necesario.
 
-   Por ejemplo, después de una actualización, es posible que tanto la versión antigua como la nueva se sigan ejecutando debido a referencias anteriores. Esta opción comprobará y moverá todas las referencias a la nueva versión, permitiendo que se detenga la versión antigua.
+  Por ejemplo, después de una actualización, es posible que tanto la versión antigua como la nueva se sigan ejecutando debido a referencias anteriores. Esta opción comprobará y moverá todas las referencias a la nueva versión, permitiendo que se detenga la versión antigua.
 
 * **Inicial**
 
-   Inicia un paquete según el nivel de inicio especificado.
+  Inicia un paquete según el nivel de inicio especificado.
 
 * **Detener**
 
-   Detiene el paquete.
+  Detiene el paquete.
 
 * **Desinstalar**
 
-   Desinstala el paquete del sistema.
+  Desinstala el paquete del sistema.
 
 * **ver el estado**
 
-   La lista especifica el estado actual del paquete; al hacer clic en el nombre de un paquete específico se muestra más información.
+  La lista especifica el estado actual del paquete; al hacer clic en el nombre de un paquete específico se muestra más información.
 
 >[!NOTE]
 >
@@ -157,15 +157,15 @@ Con esta pestaña puede:
 
 ## Componentes {#components}
 
-El **Componentes** permite activar o desactivar los distintos componentes de. Se puede acceder a ella mediante:
+El **Componentes** La pestaña permite activar o desactivar los distintos componentes. Se puede acceder a ella mediante:
 
 * El menú desplegable:
 
-   **Principal >**
+  **Principal >**
 
 * La dirección URL; por ejemplo:
 
-   `http://localhost:4502/system/console/components`
+  `http://localhost:4502/system/console/components`
 
 Se mostrará una lista de componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir los detalles de configuración de un componente específico.
 

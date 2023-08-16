@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager
 
 ### AEM Configuración del conector de LiveCycle {#configuring-aem-livecycle-connector}
 
-AEM AEM AEM Con el lanzamiento de los servicios de documentos de la y de seguridad de documentos de la, ahora tiene la capacidad de invocar los servicios de documentos de la LiveCycle para procesar un formulario XFA, convertir un documento en PDF y proteger un documento mediante políticas. Consulte [AEM Conector de LiveCycle de](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obtener más información.
+AEM AEM AEM Con el lanzamiento de los servicios de documentos de la y la seguridad de documentos de la, ahora tiene la capacidad de invocar los servicios de documentos de la LiveCycle para procesar un formulario XFA, convertir un documento en PDF y proteger un documento mediante políticas. Consulte [AEM Conector de LiveCycle de](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obtener más información.
 
 ### Administración de topologías y descarga de trabajos {#job-offloading-and-topology-administration}
 
@@ -273,7 +273,7 @@ Existen varias propiedades que controlan el comportamiento de los comandos Desha
 
 ### Configuración del componente de vídeo {#configuring-the-video-component}
 
-El [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) le permite colocar un elemento de vídeo predefinido y listo para usar en la página.
+El [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) permite colocar un elemento de vídeo predefinido y listo para usar en la página.
 
 Para que se produzca la transcodificación adecuada, el administrador debe [Instalar FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) por separado. También pueden [Configurar los perfiles de vídeo](/help/sites-administering/config-video.md#configure-video-profiles) para su uso con elementos html5.
 

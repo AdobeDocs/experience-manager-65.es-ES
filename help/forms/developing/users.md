@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6228'
+source-wordcount: '6226'
 ht-degree: 1%
 
 ---
@@ -519,7 +519,7 @@ Para poder realizar mediante programación una operación de servicio de Directo
 
 **Invocar las operaciones de usuario o grupo apropiadas**
 
-Una vez creado el cliente de servicios, puede invocar las operaciones de administración de usuarios o grupos. El cliente de servicio le permite asignar, quitar y consultar dominios, usuarios y grupos. Tenga en cuenta que es posible agregar un principal de directorio o un principal local a un grupo local, pero no es posible agregar un principal local a un grupo de directorios.
+Una vez creado el cliente de servicios, puede invocar las operaciones de administración de usuarios o grupos. El cliente de servicio permite asignar, quitar y consultar dominios, usuarios y grupos. Tenga en cuenta que es posible agregar un principal de directorio o un principal local a un grupo local, pero no es posible agregar un principal local a un grupo de directorios.
 
 **Consulte también**
 
@@ -628,7 +628,7 @@ Antes de poder realizar mediante programación una operación AuthorizationManag
 
 **Invocar las operaciones de rol o permiso adecuadas**
 
-Una vez creado el cliente de servicios, puede invocar las operaciones de rol o permiso. El cliente de servicio le permite asignar, quitar y determinar funciones y permisos.
+Una vez creado el cliente de servicios, puede invocar las operaciones de rol o permiso. El cliente de servicio permite asignar, quitar y determinar funciones y permisos.
 
 **Consulte también**
 
@@ -665,7 +665,6 @@ Para administrar roles y permisos mediante la API del servicio Administrador de 
 
    * A `java.lang.String` que contiene el identificador de rol.
    * Una matriz de `java.lang.String` objetos que contienen los identificadores principales.
-
 
 **Consulte también**
 
@@ -713,7 +712,6 @@ Administre funciones y permisos mediante la API del servicio Administrador de au
 
    * A `string` que contiene el identificador de rol.
    * Una matriz de `string` objetos que contienen los identificadores principales.
-
 
 **Consulte también**
 

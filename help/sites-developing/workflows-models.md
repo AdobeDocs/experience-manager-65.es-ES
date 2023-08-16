@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2463'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ Para crear un nuevo flujo de trabajo con el editor:
 >
 >`/var/workflow/models`
 >
->Por ejemplo, `/var/workflow/models/prototypes`. 
+>Por ejemplo, `/var/workflow/models/prototypes`
 >
 >Esta carpeta se puede utilizar para lo siguiente [administrar el acceso a los modelos de esa carpeta](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
@@ -88,8 +88,7 @@ Al abrir un [Modelo predeterminado o heredado](/help/sites-developing/workflows.
 * Inicialmente, el modelo y sus propiedades se presentan en modo de solo lectura como:
    * Los flujos de trabajo predeterminados se encuentran en `/libs`
    * Los flujos de trabajo heredados se encuentran en `/etc`
-Seleccionar 
-**Editar** hará:
+Seleccionar **Editar** hará:
 * realice una copia del flujo de trabajo en `/conf`
 * Hacer que el explorador de Pasos esté disponible
 * permite realizar cambios
@@ -152,6 +151,7 @@ Puede **Configurar** y personalizar el comportamiento de un paso del flujo de tr
    * Pulse o haga clic en el paso * * del modelo de flujo de trabajo y seleccione **Configurar** en la barra de herramientas de componentes.
 
    * Haga doble clic en el paso.
+
    >[!NOTE]
    >
    >AEM Para obtener información sobre los componentes de paso principales que se instalan con, consulte la sección sobre componentes de paso de la interfaz de usuario de, que se encuentra en la sección [Referencia de pasos del flujo de trabajo](/help/sites-developing/workflows-step-ref.md).
@@ -398,7 +398,7 @@ Para ilustrar algunas de las posibilidades de creación de un flujo de trabajo, 
 
 ### Ejemplo: Definición de una regla para una división O mediante un script ECMA {#defineruleecmascript}
 
-**División O** Los pasos le permiten introducir rutas de procesamiento condicionales en el flujo de trabajo.
+**División O** Los pasos permiten introducir rutas de procesamiento condicionales en el flujo de trabajo.
 
 Para definir una regla OR, siga este procedimiento:
 
@@ -416,7 +416,8 @@ Para definir una regla OR, siga este procedimiento:
    * Defina esto como el **Ruta predeterminada** mediante la configuración de **Valor** hasta `true`.
 
    * Como **Regla**, establezca la ruta en el script. Por ejemplo:
-      `/apps/myapp/workflow/scripts/myscript1.ecma`
+     `/apps/myapp/workflow/scripts/myscript1.ecma`
+
    >[!NOTE]
    >
    >Si es necesario, puede cambiar el orden de las sucursales.
@@ -424,7 +425,7 @@ Para definir una regla OR, siga este procedimiento:
 1. Edite las propiedades del **Rama 2** de la **División O**.
 
    * Como **Regla**, establezca la ruta al otro script. Por ejemplo:
-      `/apps/myapp/workflow/scripts/myscript2.ecma`
+     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Establezca las propiedades de los pasos individuales en cada rama. Asegúrese de que la **Usuario/grupo** está configurado.
 1. Clic **Sincronización** (barra de herramientas del editor) para mantener los cambios en el modelo de tiempo de ejecución.

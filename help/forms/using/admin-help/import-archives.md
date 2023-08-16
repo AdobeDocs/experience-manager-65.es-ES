@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1456'
 ht-degree: 1%
 
 ---
@@ -55,41 +55,41 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 
    * **Requerir que los llamadores se autentiquen:** Esta configuración indica si el servicio se puede invocar con o sin credenciales.
 
-      If *Actualmente, se requiere la autenticación de los llamadores* se muestra, el llamador del servicio debe estar autenticado y el principal de usuario de ese llamador debe estar autorizado para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
+     If *Actualmente, se requiere la autenticación de los llamadores* se muestra, el llamador del servicio debe estar autenticado y el principal de usuario de ese llamador debe estar autorizado para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
 
-      If *No es necesario que los llamadores se autentiquen* , no es necesario autenticar al llamador del servicio. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
+     If *No es necesario que los llamadores se autentiquen* se muestra, no es necesario autenticar al llamador del servicio. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
 
    * **Ejecutar como:** Especifica la identidad en tiempo de ejecución utilizada por un servicio después de invocarlo. Para cambiar esta opción, haga clic en Cambiar. Elija entre las siguientes opciones:
 
-      **No especificado:** Se utiliza el comportamiento predeterminado.
+     **No especificado:** Se utiliza el comportamiento predeterminado.
 
-      **Invocador:** Utiliza la misma identidad que el usuario que invocó el servicio.
+     **Invocador:** Utiliza la misma identidad que el usuario que invocó el servicio.
 
-      **Sistema:** Ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
+     **Sistema:** Ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
 
-      **Usuario designado:** Permite ejecutar el servicio como un usuario específico. Esta es la configuración predeterminada para procesos de corta duración. Cuando seleccione esta opción, haga clic en Seleccionar usuario para mostrar la página Seleccionar principal, donde puede buscar y seleccionar al usuario.
+     **Usuario designado:** Permite ejecutar el servicio como un usuario específico. Esta es la configuración predeterminada para procesos de corta duración. Cuando seleccione esta opción, haga clic en Seleccionar usuario para mostrar la página Seleccionar principal, donde puede buscar y seleccionar al usuario.
 
    * Para agregar un principal al perfil de seguridad, haga clic en Agregar principal y seleccione el usuario o grupo que desee agregar como principal. Haga clic en Siguiente y, a continuación, seleccione los permisos que desee asignar a esta entidad de seguridad:
 
-      **INVOKE_PERM:** Para invocar todas las operaciones del servicio
+     **INVOKE_PERM:** Para invocar todas las operaciones del servicio
 
-      **MODIFY_CONFIG_PERM:** Para modificar la configuración de un servicio
+     **MODIFY_CONFIG_PERM:** Para modificar la configuración de un servicio
 
-      **SUPERVISOR_PERM:** Para ver los datos de instancia de proceso de un servicio creado a partir de un proceso
+     **SUPERVISOR_PERM:** Para ver los datos de instancia de proceso de un servicio creado a partir de un proceso
 
-      **START_STOP_PERM:** Para iniciar y detener un servicio
+     **START_STOP_PERM:** Para iniciar y detener un servicio
 
-      **ADD_REMOVE_ENDPOINTS_PERM:** Para agregar, quitar y modificar extremos de un servicio
+     **ADD_REMOVE_ENDPOINTS_PERM:** Para agregar, quitar y modificar extremos de un servicio
 
-      **CREATE_VERSION_PERM:** Para crear una nueva versión del servicio
+     **CREATE_VERSION_PERM:** Para crear una nueva versión del servicio
 
-      **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
+     **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
 
-      **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
+     **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
 
-      **READ_PERM:** Para ver el servicio
+     **READ_PERM:** Para ver el servicio
 
-      Haga clic en Finalizado para agregar el principal al perfil de seguridad.
+     Haga clic en Finalizado para agregar el principal al perfil de seguridad.
 
 1. Haga clic en Finalizado para completar la configuración.
 
@@ -122,41 +122,41 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 
    * **Requerir que los llamadores se autentiquen:** Esta configuración indica si el servicio se puede invocar con o sin credenciales.
 
-      If *Actualmente, se requiere la autenticación de los llamadores* se muestra, el llamador del servicio debe estar autenticado y el principal de usuario de ese llamador debe estar autorizado para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
+     If *Actualmente, se requiere la autenticación de los llamadores* se muestra, el llamador del servicio debe estar autenticado y el principal de usuario de ese llamador debe estar autorizado para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
 
-      If *No es necesario que los llamadores se autentiquen* se muestra, el llamador del servicio puede o no estar autenticado. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
+     If *No es necesario que los llamadores se autentiquen* se muestra, el llamador del servicio puede o no estar autenticado. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
 
    * **Ejecutar como:** Especifica la identidad en tiempo de ejecución utilizada por un servicio después de invocarlo. Para cambiar esta opción, haga clic en Cambiar. Elija entre las siguientes opciones:
 
-      **No especificado:** Se utiliza el comportamiento predeterminado.
+     **No especificado:** Se utiliza el comportamiento predeterminado.
 
-      **Invocador:** Utiliza la misma identidad que el usuario que invocó el servicio.
+     **Invocador:** Utiliza la misma identidad que el usuario que invocó el servicio.
 
-      **Sistema:** Ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
+     **Sistema:** Ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
 
-      **Usuario designado:** Permite ejecutar el servicio como un usuario específico. Esta es la configuración predeterminada para procesos de corta duración. Cuando seleccione esta opción, haga clic en Seleccionar usuario para mostrar la página Seleccionar principal, donde puede buscar y seleccionar al usuario.
+     **Usuario designado:** Permite ejecutar el servicio como un usuario específico. Esta es la configuración predeterminada para procesos de corta duración. Cuando seleccione esta opción, haga clic en Seleccionar usuario para mostrar la página Seleccionar principal, donde puede buscar y seleccionar al usuario.
 
    * Para agregar un principal al perfil de seguridad, haga clic en Agregar principal y seleccione el usuario o grupo que desee agregar como principal. Haga clic en Siguiente y, a continuación, seleccione los permisos que desee asignar a esta entidad de seguridad:
 
-      **INVOKE_PERM:** Para invocar todas las operaciones del servicio
+     **INVOKE_PERM:** Para invocar todas las operaciones del servicio
 
-      **MODIFY_CONFIG_PERM:** Para modificar la configuración de un servicio
+     **MODIFY_CONFIG_PERM:** Para modificar la configuración de un servicio
 
-      **SUPERVISOR_PERM:** Para ver los datos de instancia de proceso de un servicio creado a partir de un proceso
+     **SUPERVISOR_PERM:** Para ver los datos de instancia de proceso de un servicio creado a partir de un proceso
 
-      **START_STOP_PERM:** Para iniciar y detener un servicio
+     **START_STOP_PERM:** Para iniciar y detener un servicio
 
-      **ADD_REMOVE_ENDPOINTS_PERM:** Para agregar, quitar y modificar extremos de un servicio
+     **ADD_REMOVE_ENDPOINTS_PERM:** Para agregar, quitar y modificar extremos de un servicio
 
-      **CREATE_VERSION_PERM:** Para crear una nueva versión del servicio
+     **CREATE_VERSION_PERM:** Para crear una nueva versión del servicio
 
-      **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
+     **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
 
-      **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
+     **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
 
-      **READ_PERM:** Para ver el servicio
+     **READ_PERM:** Para ver el servicio
 
-      Haga clic en Finalizado para agregar el principal al perfil de seguridad.
+     Haga clic en Finalizado para agregar el principal al perfil de seguridad.
 
 ## Eliminación de un archivo {#remove-an-archive}
 

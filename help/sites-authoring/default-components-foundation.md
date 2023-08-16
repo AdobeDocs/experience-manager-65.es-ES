@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7210'
+source-wordcount: '7198'
 ht-degree: 9%
 
 ---
@@ -51,7 +51,7 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 
 * [Editar contenido: modo pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Los componentes se ordenan según varias categorías denominadas grupos de componentes, que incluyen:
+Los componentes se ordenan según varias categorías denominadas grupos de componentes, entre las que se incluyen:
 
 * [General](#general): incluye componentes básicos como texto, imágenes, tablas y gráficos.
 * [Columnas](#columns): incluye los componentes necesarios para organizar el diseño del contenido.
@@ -120,7 +120,7 @@ Si la imagen es de JPEG, el tamaño de la ventanilla también puede influir en l
 
 #### Propiedades {#properties}
 
-El cuadro de diálogo le permite editar las propiedades de la instancia del componente Imagen adaptable, muchas de las cuales son comunes con el componente de imagen en el que se basa. Las propiedades están disponibles en dos pestañas:
+El cuadro de diálogo permite editar las propiedades de la instancia del componente de imagen adaptable, muchas de las cuales son comunes con el componente de imagen en el que se basa. Las propiedades están disponibles en dos pestañas:
 
 * **Imagen**
 
@@ -406,7 +406,7 @@ Hay varias opciones adicionales disponibles en el modo de edición de pantalla c
 >
 >Los usuarios de Internet Explorer deben cargar la imagen y hacer clic en **Ok**, luego vuelva a abrir la imagen para ver el archivo cargado en la vista previa y poder realizar modificaciones (es decir, recortar).
 >
->Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML AEM 5 utilizadas por los usuarios de la sección de, haga lo siguiente.
+>Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML AEM 5 utilizadas por los usuarios de la sección de, haga lo siguiente
 
 Cuando se carga una imagen, puede configurar lo siguiente:
 
@@ -456,7 +456,7 @@ La imagen final (con **Título** y **Descripción**) puede mostrarse como:
 
 ### Contenedor de diseño {#layout-container}
 
-Este componente proporciona un sistema de párrafos de cuadrícula para permitirle añadir y colocar componentes dentro de un [cuadrícula adaptable](/help/sites-authoring/responsive-layout.md). Puede definir diferentes diseños de contenido en función de la anchura de los dispositivos de destino, incluidos una amplia gama de teléfonos, tabletas y equipos de escritorio.
+Este componente proporciona un sistema de párrafos de cuadrícula para que pueda añadir y colocar componentes dentro de un [cuadrícula adaptable](/help/sites-authoring/responsive-layout.md). Puede definir diferentes diseños de contenido en función de la anchura de los dispositivos de destino, incluidos una amplia gama de teléfonos, tabletas y equipos de escritorio.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -735,7 +735,7 @@ Si es necesario, puede configurar lo siguiente:
 >
 >Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización en el nivel de proyecto.
 
-Este componente le permite cargar una serie de imágenes para mostrarlas como una presentación en la página. Puede añadir o quitar imágenes y asignar a cada una un título. En Avanzadas, también puede especificar el tamaño del área de visualización.
+Este componente permite cargar una serie de imágenes para mostrarlas como una presentación en la página. Puede añadir o quitar imágenes y asignar a cada una un título. En Avanzadas, también puede especificar el tamaño del área de visualización.
 
 Puede configurar lo siguiente:
 
@@ -1229,7 +1229,7 @@ AEM En una instalación estándar de la aplicación se incluye una selección de
 
          * **Grupo inicial**
 
-           Grupo al que asignar un nuevo usuario.
+           Grupo al que asignar el nuevo usuario.
 
          * **Página principal**
 
@@ -1442,7 +1442,7 @@ Permite crear un campo oculto. Estos campos ocultos se pueden utilizar para vari
 >
 >Este componente de base está obsoleto. El Adobe recomienda utilizar la variable [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) en su lugar.
 
-Un botón de imagen le permite crear un botón con su propia imagen y texto:
+Un botón de imagen permite crear un botón con su propia imagen y texto:
 
 ![dc_form_imagebutton](assets/dc_form_imagebutton.png)
 
@@ -1517,7 +1517,7 @@ Puede especificar el nombre del elemento junto con un título y una descripción
 >
 >Este componente de base está obsoleto. El Adobe recomienda utilizar la variable [Componente principal Botón de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) en su lugar.
 
-Este componente le permite crear un botón de envío, con el texto predeterminado:
+Este componente permite crear un botón de envío, con el texto predeterminado:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 

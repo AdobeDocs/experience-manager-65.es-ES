@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 31%
+source-wordcount: '843'
+ht-degree: 29%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 31%
 
 Los lanzamientos le permiten desarrollar contenido de forma eficaz para una versión futura.
 
-Un lanzamiento se crea para permitir que se realicen cambios preparados para una publicación futura (a la vez que se mantienen las páginas actuales). Después de editar y actualizar las páginas de lanzamiento, estas se vuelven a promocionar al origen y luego se activan las páginas de origen (nivel superior). La promoción duplica el contenido de lanzamiento de nuevo en las páginas de origen y se puede realizar manualmente o automáticamente (según los campos establecidos al crear y editar el lanzamiento).
+Se crea un lanzamiento para permitirle realizar cambios listos para su publicación futura (sin perder de vista las páginas actuales). Después de editar y actualizar las páginas de lanzamiento, estas se vuelven a promocionar al origen y luego se activan las páginas de origen (nivel superior). La promoción duplica el contenido de lanzamiento de nuevo en las páginas de origen y se puede realizar manualmente o automáticamente (según los campos establecidos al crear y editar el lanzamiento).
 
 Por ejemplo, las páginas de productos de temporada de su tienda en línea se actualizan trimestralmente para que los productos destacados se correspondan con la temporada actual. Para prepararse para la siguiente actualización trimestral, puede crear un lanzamiento de las páginas web correspondientes. Durante el trimestre, los siguientes cambios se acumulan en la copia de lanzamiento:
 
@@ -44,7 +44,7 @@ En esta sección se describe cómo crear, editar y promocionar (y, si es necesar
 
 Los lanzamientos permiten desarrollar contenido de forma eficaz para una versión futura de una o más páginas web activadas.
 
-Los lanzamientos le permiten lo siguiente:
+Los lanzamientos le permiten:
 
 * Cree una copia de las páginas de origen:
 

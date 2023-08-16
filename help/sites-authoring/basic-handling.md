@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 43%
+source-wordcount: '3017'
+ht-degree: 41%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 43%
 
 ### Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
-AEM Se ha habilitado la interfaz de usuario para el contacto con el usuario. Una interfaz con capacidad táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón secundario y pasar el ratón por encima.
+AEM Se ha habilitado la interfaz de usuario para el contacto con el usuario. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón secundario y pasar el ratón por encima.
 
 AEM Como la interfaz de usuario de la pantalla es táctil, puede utilizar los gestos táctiles en sus dispositivos táctiles (por ejemplo, móviles o tabletas) y las acciones del ratón en un dispositivo de escritorio tradicional.
 
@@ -485,7 +485,7 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
   ![Configuración de vista - Configurar columnas](assets/bh-21.png)
 
-  De forma predeterminada se muestra la columna **Nombre**, que es parte de la dirección URL de la página. En algunos casos, el autor puede tener que acceder a páginas en un idioma diferente y ver el nombre de la página (que no suele variar) puede ser de buena ayuda si no conoce el idioma de la página.
+  De forma predeterminada se muestra la columna **Nombre**, que es parte de la dirección URL de la página. En algunos casos, el autor puede tener que acceder a páginas en un idioma diferente y ver el nombre de la página (que no suele variar) puede ser de gran ayuda si no conoce el idioma de la página.
 
 * Cambie el orden de los elementos mediante la barra vertical de puntos en la parte más a la derecha de cada elemento en la lista.
 
@@ -537,7 +537,7 @@ Con el panel lateral del árbol de contenido junto con una vista de lista o una 
 
 La cronología puede utilizarse para ver o iniciar eventos que se hayan producido en el recurso seleccionado. Para abrir la columna de cronología, utilice el selector del raíl:
 
-La columna de línea de tiempo le permite:
+La columna de cronología le permite:
 
 * [Ver varios eventos relacionados con el elemento seleccionado.](#timelineviewevents)
 

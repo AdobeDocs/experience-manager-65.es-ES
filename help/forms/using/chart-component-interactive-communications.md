@@ -11,10 +11,10 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2613'
-ht-degree: 100%
+source-wordcount: '2612'
+ht-degree: 92%
 
 ---
 
@@ -153,7 +153,7 @@ Configurar las siguientes propiedades al crear gráficos para imprimir o para ca
   </tr>
   <tr>
    <td>Información del objeto</td>
-   <td><p>Formato en el que aparece la información del objeto al pasar el ratón sobre un punto de datos del gráfico en el canal Web. El valor predeterminado es ${x}(${y}). Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables ${x} y ${y} se reemplazarán dinámicamente con los valores correspondientes del eje X y del eje Y y se mostrarán en la información del objeto.</p> <p>Para deshabilitar la información del objeto, deje en blanco el campo <span class="uicontrol">Información del objeto</code>. Esta opción no se aplica a los gráficos de líneas y áreas. Por ejemplo, consulte <a href="#chartoutputprintweb">Ejemplo 1: Salida de gráfico en imprimir y web</a>.</code></p> </td>
+   <td><p>Formato en el que aparece la información del objeto al pasar el ratón sobre un punto de datos del gráfico en el canal Web. El valor predeterminado es ${x}(${y}). Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables ${x} y ${y} se reemplazarán dinámicamente con los valores correspondientes del eje X y del eje Y y se mostrarán en la información del objeto.</p> <p>Para deshabilitar la información del objeto, deje <span class="uicontrol">Sugerencia</code> en blanco. Esta opción no se aplica a los gráficos de líneas y áreas. Por ejemplo, consulte <a href="#chartoutputprintweb">Ejemplo 1: Salida de gráfico en imprimir y web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -167,12 +167,12 @@ Configurar las siguientes propiedades al crear gráficos para imprimir o para ca
      <li><strong>Color de punto</strong>: disponible para gráficos de puntos y líneas y puntos para especificar el color de los puntos del gráfico.<br /> </li>
      <li><strong>Color de área</strong>: disponible para gráficos de área para especificar el color del área bajo la línea del gráfico.</li>
      <li><strong>Punto de referencia &gt; Tipo de enlace: </strong>disponible para gráficos de cuadrante para<strong> </strong>especificar el tipo de enlace para el punto de referencia. Utilice la propiedad de objeto de texto estático o modelo de datos para definir el valor del punto de referencia.</li>
-     <li><strong>Punto de referencia &gt; Eje X: </strong>disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje X para el punto de referencia.</code></li>
-     <li><strong>Punto de referencia &gt; Eje Y: </strong>disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje Y para el punto de referencia.</code></li>
-     <li><strong>Punto de referencia &gt; Objeto del modelo de datos para series: </strong>disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina la propiedad del objeto del modelo de datos de formulario para identificar la serie del punto de referencia. </code></li>
-     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para series: </strong>disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario de la serie y el valor definidos en este campo para identificar la serie del punto de referencia.</code></li>
-     <li><strong>Punto de referencia &gt; Objeto del modelo de datos para punto de referencia: </strong>disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina una propiedad de objeto del modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto del modelo de datos que sea una entidad secundaria de la propiedad de objeto del modelo de datos definida para la serie.</code></li>
-     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia: </strong>disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario para el punto de referencia y el valor definido en este campo para identificar el punto de referencia del gráfico.<br /> <strong>Etiquetas de cuadrantes &gt; Superior izquierdo:</strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</code></li>
+     <li><strong>Punto de referencia &gt; Eje X: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje X para el punto de referencia.</li>
+     <li><strong>Punto de referencia &gt; Eje Y: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje Y para el punto de referencia.</li>
+     <li><strong>Punto de referencia &gt; Objeto del modelo de datos para la serie: </strong>Disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina la propiedad del objeto del modelo de datos de formulario para identificar la serie del punto de referencia. </li>
+     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para la serie: </strong>Disponible para varias series de Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario de la serie y el valor definidos en este campo para identificar la serie del punto de referencia.</li>
+     <li><strong>Punto de referencia &gt; Objeto del modelo de datos para el punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Defina una propiedad de objeto del modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto del modelo de datos que sea una entidad secundaria de la propiedad de objeto del modelo de datos definida para la serie.</li>
+     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto del modelo de datos</code> en la lista desplegable Tipo de enlace. Utilice la propiedad del objeto del modelo de datos de formulario para el punto de referencia y el valor definido en este campo para identificar el punto de referencia del gráfico.<br /> <strong>Etiquetas de cuadrantes &gt; Superior izquierdo:</strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</li>
      <li><strong>Etiquetas de cuadrantes &gt; Superior derecho:</strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior derecho.</li>
      <li><strong>Etiquetas de cuadrantes &gt; Inferior derecho: </strong>disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior derecho.</li>
      <li><strong>Etiquetas de cuadrantes &gt; Inferior izquierdo: </strong>disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior izquierdo.</li>

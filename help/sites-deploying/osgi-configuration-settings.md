@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3430'
+source-wordcount: '3429'
 ht-degree: 0%
 
 ---
@@ -318,15 +318,15 @@ AEM Con la asignación de raíz puede configurar la interfaz de usuario que dese
 
 * Para que la IU táctil sea la IU predeterminada, la variable **Ruta de destino** debe señalar lo siguiente:
 
-   ```shell
-      /projects.html
-   ```
+  ```shell
+     /projects.html
+  ```
 
 * Para que la IU clásica sea la IU predeterminada, la variable **Ruta de destino** debe señalar lo siguiente:
 
-   ```shell
-      /welcome.html
-   ```
+  ```shell
+     /welcome.html
+  ```
 
 >[!NOTE]
 >
@@ -340,8 +340,7 @@ Hay varias propiedades de configuración disponibles:
 Ruta de acceso para la que está activo este controlador de autenticación. Si este parámetro se deja vacío, el controlador de autenticación se desactiva. Por ejemplo, la ruta / hace que el controlador de autenticación se utilice para todo el repositorio.
 
 * **Clasificación de servicios**
-El valor de clasificación del servicio marco OSGi se utiliza para indicar el orden utilizado para llamar a este servicio. Este valor es un 
-`int` valor en el que los valores más altos designan una prioridad mayor.
+El valor de clasificación del servicio marco OSGi se utiliza para indicar el orden utilizado para llamar a este servicio. Este valor es un `int` valor en el que los valores más altos designan una prioridad mayor.
 El valor predeterminado es `0`.
 
 * **Nombres de encabezado**
@@ -354,8 +353,7 @@ Nombres de cookies que podrían contener un ID de usuario.
 Nombres de los parámetros de solicitud que pueden proporcionar el ID de usuario.
 
 * **Mapa del usuario**
-Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud HTTP se puede reemplazar por uno diferente en el objeto de credenciales. La asignación se define aquí. Si el nombre de usuario 
-`admin` aparece a ambos lados del mapa y se ignora la asignación. El carácter &quot;=&quot; debe tener un carácter de escape &quot;\&quot; inicial.
+Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud HTTP se puede reemplazar por uno diferente en el objeto de credenciales. La asignación se define aquí. Si el nombre de usuario `admin` aparece a ambos lados del mapa y se ignora la asignación. El carácter &quot;=&quot; debe tener un carácter de escape &quot;\&quot; inicial.
 
 * **Formato**
 Indica el formato en el que se proporciona el ID de usuario. Uso:

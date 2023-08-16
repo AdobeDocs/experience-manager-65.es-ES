@@ -2,10 +2,10 @@
 title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 96%
+source-wordcount: '788'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,7 @@ Hay una implementación del IDE de [GraphiQL](https://graphql.org/learn/serving-
 >[!NOTE]
 >Debe tener [configurados los puntos de conexión](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md) antes de utilizar el IDE de GraphiQL.
 
-La herramienta **GraphiQL** permite probar y depurar las consultas de GraphQL permitiéndole lo siguiente:
+El **GraphiQL** Esta herramienta permite probar y depurar las consultas de GraphQL permitiéndole lo siguiente:
 
 * seleccionar el **punto de conexión** adecuado para la configuración de sitios que desee utilizar en sus consultas
 * introducir directamente nuevas consultas
@@ -89,7 +89,7 @@ En cualquier caso, la consulta que se muestra en el panel Editor es la que se ej
 
 <!-- more details needed here? -->
 
-El IDE de GraphiQL también le permite administrar sus [variables de consulta](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+El IDE de GraphiQL también le permite administrar sus [Variables de consulta](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 Por ejemplo:
 
@@ -140,7 +140,7 @@ Una vez que haya seleccionado su [consulta persistente](/help/sites-developing/h
 
 ## Copia de una URL para acceder directamente a la consulta {#copy-url}
 
-La opción **Copiar URL** permite simular una consulta copiando la URL utilizada para acceder directamente a la consulta persistente y ver los resultados. Esto se puede utilizar para hacer pruebas; por ejemplo, accediendo en un explorador:
+El **Copiar URL** Esta opción permite simular una consulta copiando la URL utilizada para acceder directamente a la consulta persistente y ver los resultados. Esto se puede utilizar para hacer pruebas; por ejemplo, accediendo en un explorador:
 
 <!--
   >[!NOTE]

@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager AEM AEM () con la API de GraphQL de la para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4479'
-ht-degree: 55%
+source-wordcount: '4477'
+ht-degree: 57%
 
 ---
 
@@ -29,7 +29,6 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce/cif/integrating/magento.md).
 >* Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones.
 
-
 ## Requisitos previos {#prerequisites}
 
 Los clientes que utilizan GraphQL AEM deben instalar el fragmento de contenido de la aplicación con el paquete de índice 1.0.5 de GraphQL. Consulte la [Notas de versión](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obtener más información.
@@ -40,15 +39,15 @@ GraphQL es:
 
 * “*...un idioma de consulta para API y un tiempo de ejecución para cumplir esas consultas con los datos existentes. GraphQL proporciona una descripción completa y comprensible de los datos de su API. Ofrece a los clientes la posibilidad de preguntar exactamente lo que necesitan y nada más, facilita la evolución de las API con el paso del tiempo y habilita potentes herramientas para desarrolladores.*&quot;.
 
-   Consulte [GraphQL.org](https://graphql.org)
+  Consulte [GraphQL.org](https://graphql.org)
 
 * “*...una especificación abierta para una capa de API flexible. Coloque GraphQL sobre los backends existentes para poder crear productos más rápido que nunca....*&quot;.
 
-   Consulte [Exploración de GraphQL](https://graphql.com/).
+  Consulte [Exploración de GraphQL](https://graphql.com/).
 
 * *&quot;...una especificación y lenguaje de consulta de datos desarrollado internamente por Facebook en 2012, antes de pasar a ser de código abierto público en 2015. Proporciona una alternativa a las arquitecturas basadas en REST con el propósito de aumentar la productividad del desarrollador y minimizar las cantidades de datos transferidos. Cientos de organizaciones de todos los tamaños utilizan GraphQL en producción...”*
 
-   Consulte [Fundamentos de GraphQL](https://graphql.org/foundation).
+  Consulte [Fundamentos de GraphQL](https://graphql.org/foundation).
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -236,13 +235,13 @@ Dentro del esquema, hay campos individuales, de dos categorías básicas:
 
 * Campos que genera usted.
 
-   Una selección de [Tipos de datos](#data-types) se utiliza para crear campos en función de cómo configure el modelo de fragmentos de contenido. Los nombres de campo se toman del campo **Nombre de propiedad** del **Tipo de datos**.
+  Una selección de [Tipos de datos](#data-types) se utiliza para crear campos en función de cómo configure el modelo de fragmentos de contenido. Los nombres de campo se toman del campo **Nombre de propiedad** del **Tipo de datos**.
 
    * También está el **Procesar como** configuración que se debe tener en cuenta, ya que los usuarios pueden configurar ciertos tipos de datos. Por ejemplo, un campo de texto de una sola línea se puede configurar para que contenga varios textos de una sola línea eligiendo `multifield` en el menú desplegable.
 
 * GraphQL AEM para la creación de informes también genera varios [campos de ayuda](#helper-fields).
 
-   Estos campos se utilizan para identificar un fragmento de contenido o para obtener más información sobre uno.
+  Estos campos se utilizan para identificar un fragmento de contenido o para obtener más información sobre uno.
 
 ### Tipos de datos {#data-types}
 
@@ -258,7 +257,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada |  `String` |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 |  Etiquetas |  `[String]` |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido |  `String` |  Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado directamente <br><br>Multicampo, con un tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos referenciados: `[AllFragmentModels]` : matriz de todos los tipos de modelo, a la que se hace referencia desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos de referencia: `[AllFragmentModels]`: matriz de todos los tipos de modelo, referenciada desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
 {style="table-layout:auto"}
 
@@ -268,7 +267,7 @@ Además de los tipos de datos de los campos generados por el usuario, GraphQL AE
 
 Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
 
-#### Ruta  {#path}
+#### Ruta {#path}
 
 El campo de ruta se utiliza como identificador en AEM GraphQL. Representa la ruta del recurso de fragmento de contenido dentro del repositorio de AEM. Esta ruta se elige como identificador de un fragmento de contenido, porque:
 
@@ -614,7 +613,7 @@ query {
 >
 >Para obtener el mejor rendimiento, tenga en cuenta [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-Esta funcionalidad le permite paginar en tipos de consulta que devuelven una lista. Se proporcionan dos métodos:
+Esta función permite realizar paginación en los tipos de consulta que devuelven una lista. Se proporcionan dos métodos:
 
 * `offset` y `limit` en una consulta `List`
 * `first` y `after` en una consulta `Paginated`
@@ -650,7 +649,6 @@ query {
 >* La paginación requiere un orden de clasificación estable para funcionar correctamente en varias consultas que soliciten diferentes páginas del mismo conjunto de resultados. De forma predeterminada, utiliza la ruta del repositorio de cada elemento del conjunto de resultados para asegurarse de que el orden sea siempre el mismo. Si se utiliza un criterio de ordenación diferente y esa ordenación no se puede realizar en el nivel de consulta JCR, el rendimiento se verá afectado negativamente. El motivo es que todo el conjunto de resultados debe cargarse en memoria antes de determinar las páginas.
 >
 >* Cuanto mayor sea el desplazamiento, más tiempo se tarda en omitir los elementos del conjunto de resultados de la consulta JCR completo. Una solución alternativa para grandes conjuntos de resultados es utilizar la consulta paginada con el método `first` y `after`.
-
 
 ### Consulta paginada: primero y después {#paginated-first-after}
 
@@ -689,7 +687,6 @@ query {
 >
 >* Debido a restricciones técnicas internas, el rendimiento se degrada si se aplican la ordenación y el filtrado en los campos anidados. Por lo tanto, utilice los campos de filtro/ordenación almacenados en el nivel raíz. Esta técnica también es la recomendada si desea consultar conjuntos de resultados paginados grandes.
 
-
 ## GraphQL para AEM: resumen de extensiones {#graphql-extensions}
 
 El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la especificación estándar de GraphQL. Para las consultas de GraphQL AEM con, hay algunas extensiones
@@ -701,24 +698,23 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
    * añada `List` al nombre del modelo; por ejemplo, `cityList`
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
 
-   Podrá hacer lo siguiente:
+  Podrá hacer lo siguiente:
 
    * [Clasificación de los resultados](#sorting)
 
       * `ASC`: ascendente
       * `DESC`: descendente
+
    * Devuelva una página de resultados utilizando lo siguiente:
 
       * [Una consulta de lista con desplazamiento y límite](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#list-offset-limit)
       * [Una consulta paginada con primero y después](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#paginated-first-after)
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
 
-
-
 * El filtro `includeVariations` está incluido en el `List` tipo de consulta. Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, la variable `includeVariations` el filtro debe establecerse en `true`.
 
-   >[!CAUTION]
-   >El filtro `includeVariations` no se puede usar junto con el campo generado por el sistema `_variation`.
+  >[!CAUTION]
+  >El filtro `includeVariations` no se puede usar junto con el campo generado por el sistema `_variation`.
 
 * Si desea utilizar un OR lógico:
    * use ` _logOp: OR`
@@ -735,51 +731,50 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
       * `_locale`: para revelar el idioma; basado en el Administrador de idiomas
          * Consulte [Consulta de muestra para varios fragmentos de contenido de una configuración regional determinada](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
+
       * `_metadata`: para mostrar los metadatos del fragmento
          * Consulte [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+
       * `_model`: permitir la consulta de un modelo de fragmento de contenido (ruta y título)
          * Consulte [Consulta de muestra para un modelo de fragmento de contenido de un modelo](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
+
       * `_path`: la ruta al fragmento de contenido dentro del repositorio
          * Consulte [Consulta de muestra: un solo fragmento de ciudad específico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+
       * `_reference`: para revelar referencias, incluyendo referencias en línea en el Editor de texto enriquecido
          * Consulte [Consulta de muestra para varios fragmentos de contenido con referencias recuperadas previamente](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
+
       * `_variation`: para mostrar variaciones específicas dentro del fragmento de contenido
 
-         >[!NOTE]
-         >
-         >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devuelve como una predeterminada (alternativa).
+        >[!NOTE]
+        >
+        >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devuelve como una predeterminada (alternativa).
 
-         >[!CAUTION]
-         >El campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
+        >[!CAUTION]
+        >El campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
 
          * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
+
       * `_tags` : para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; esta lista es una matriz de `cq:tags` identificadores.
 
          * Consulte [Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
          * Consulte [Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
 
-         >[!NOTE]
-         >
-         >Las etiquetas también se pueden consultar enumerando los metadatos de un fragmento de contenido.
+        >[!NOTE]
+        >
+        >Las etiquetas también se pueden consultar enumerando los metadatos de un fragmento de contenido.
+
    * Y operaciones:
 
       * `_operator`: aplicar operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Consulte [Consulta de muestra: todas las personas que no tienen el apellido “Jobs”](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
          * Consulte [Consulta de muestra: todas las aventuras en las que la `_path` comienza con un prefijo específico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
+
       * `_apply`: para aplicar condiciones específicas; por ejemplo, `AT_LEAST_ONCE`
          * Consulte [Consulta de muestra: filtre en una matriz con un elemento que deba producirse al menos una vez](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
+
       * `_ignoreCase`: para ignorar el caso al consultar
          * Consulte [Consulta de muestra: todas las ciudades con SAN en el nombre, sin importar las mayúsculas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
 
 * Se admiten los tipos de unión de GraphQL:
 
@@ -877,7 +872,6 @@ Por ejemplo, para conceder acceso a solicitudes con el referente `my.domain` pue
 >* solo conceder acceso a dominios de confianza
 >* asegúrese de que no se expone ninguna información confidencial
 >* no utilizar un comodín [*] sintaxis; esta funcionalidad deshabilita el acceso autenticado al extremo de GraphQL y también lo expone a todo el mundo.
-
 
 >[!CAUTION]
 >

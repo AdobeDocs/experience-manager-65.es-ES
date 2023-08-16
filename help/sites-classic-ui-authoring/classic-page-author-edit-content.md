@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1832'
 ht-degree: 13%
 
 ---
@@ -28,7 +28,7 @@ El contenido se añade mediante [componentes](/help/sites-classic-ui-authoring/c
 >
 >Si se producen problemas, le sugerimos que se ponga en contacto con el administrador del sistema.
 
-## Compañero {#sidekick}
+## Sidekick {#sidekick}
 
 La barra de tareas es una herramienta clave al crear páginas. Flota al crear una página, por lo que siempre es visible.
 
@@ -83,7 +83,7 @@ Para insertar un componente nuevo:
 
    Según el entorno de producción, estas opciones pueden diferir. Para obtener información detallada sobre los componentes, consulte [Componentes predeterminados](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
-1. Inserte el componente que desee en la página. A continuación, haga doble clic en el párrafo y se abrirá una ventana que le permitirá configurar el párrafo y agregar contenido.
+1. Inserte el componente que desee en la página. A continuación, haga doble clic en el párrafo y se abrirá una ventana que le permitirá configurar el párrafo y añadir contenido.
 
 ### Inserción de un componente mediante el buscador de contenido {#inserting-a-component-using-the-content-finder}
 
@@ -227,7 +227,7 @@ Para ediciones a mayor escala de la misma frase a **[Buscar y reemplazar](/help/
 
 ## Bloquear una página   {#locking-a-page}
 
-AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
+AEM permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
 
 >[!CAUTION]
 >

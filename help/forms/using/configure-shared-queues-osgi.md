@@ -7,10 +7,10 @@ topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 100%
+source-wordcount: '840'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ El usuario que ha iniciado sesión debe ser miembro del grupo `workflow-users`. 
 
 ## Compartir uno o todos los elementos de la Bandeja de entrada con otro usuario
 
-La Bandeja de entrada de AEM permite compartir un solo elemento o todos los elementos de la Bandeja de entrada con otro usuario.
+AEM La Bandeja de entrada de permite compartir un solo elemento o todos los elementos de la Bandeja de entrada con otro usuario.
 
 ### Compartir todos los elementos de la Bandeja de entrada
 

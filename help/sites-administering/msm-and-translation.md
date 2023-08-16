@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '350'
 ht-degree: 41%
 
 ---
@@ -25,7 +25,7 @@ Las siguientes herramientas de administración están disponibles para administr
 
    * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)
 
-* La traducción le permite automatizar la traducción del contenido de la página, los activos y el contenido generado por el usuario para crear y mantener sitios web multilingües:
+* La traducción permite automatizar la traducción del contenido de la página, los activos y el contenido generado por el usuario para crear y mantener sitios web multilingües:
 
    * [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md)
 

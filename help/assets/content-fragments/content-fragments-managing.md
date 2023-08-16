@@ -4,10 +4,10 @@ description: AEM Aprenda a utilizar la consola Recursos para administrar los fra
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 81%
+source-wordcount: '1724'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,6 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 >
 >* al crear páginas; consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
 >* para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-
 
 >[!NOTE]
 >
@@ -67,21 +66,21 @@ El método para crear un fragmento de contenido es el siguiente:
 
       * **Título**
 
-         El título del fragmento.
+        El título del fragmento.
 
-         Obligatorio.
+        Obligatorio.
 
       * **Descripción**
 
       * **Etiquetas**
+
    * **Avanzado**
 
       * **Nombre**
 
-         El nombre; se utilizará para formar la dirección URL.
+        El nombre; se utilizará para formar la dirección URL.
 
-         Obligatorio; se derivará automáticamente del título, pero se puede actualizar.
-
+        Obligatorio; se derivará automáticamente del título, pero se puede actualizar.
 
 1. Seleccione **Crear** para completar la acción y, a continuación, **Abra** el fragmento para editarlo o vuelva a la consola pulsando **Listo**.
 
@@ -226,23 +225,23 @@ El editor tiene varias opciones:
    * **Guardar** guardará los cambios más recientes y permanecerá en el editor.
    * **Guardar y cerrar** guardará los cambios más recientes y cerrará el editor.
 
-   >[!CAUTION]
-   >
-   >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
+  >[!CAUTION]
+  >
+  >Para editar un fragmento de contenido, son necesarios [los permisos adecuados](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
-   >[!NOTE]
-   >
-   >Es posible permanecer en el editor, realizando una serie de cambios, antes de guardar.
+  >[!NOTE]
+  >
+  >Es posible permanecer en el editor, realizando una serie de cambios, antes de guardar.
 
-   >[!CAUTION]
-   >
-   >Además de guardar los cambios, las acciones actualizan también las referencias y garantizan que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a esto, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
-   >
-   >Tenga esto en cuenta al utilizar **Guardar y cerrar** y, a continuación, reintroduciendo rápidamente el editor de fragmentos para realizar y guardar más cambios.
+  >[!CAUTION]
+  >
+  >Además de guardar los cambios, las acciones actualizan también las referencias y garantizan que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a esto, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
+  >
+  >Tenga esto en cuenta al utilizar **Guardar y cerrar** y, a continuación, reintroduciendo rápidamente el editor de fragmentos para realizar y guardar más cambios.
 
 * **Cerrar**
 
-   Saldrá del editor sin guardar los cambios más recientes (es decir, realizados desde el último **Guardar**).
+  Saldrá del editor sin guardar los cambios más recientes (es decir, realizados desde el último **Guardar**).
 
 Al editar el fragmento de contenido, AEM crea automáticamente versiones para garantizar que el contenido anterior se pueda restaurar si cancela los cambios (mediante **Cerrar** sin guardar):
 
@@ -299,16 +298,18 @@ Además de las opciones estándar, [Cronología](/help/assets/manage-assets.md#t
    * **Eliminar**
 
 >[!NOTE]
+>
 Los comentarios son lo siguiente:
+>
 * De funcionalidad estándar para todos los recursos
 * Realizados en la cronología
 * Relacionados con el recurso de fragmento
 >
 Las anotaciones (para fragmentos de contenido) son lo siguiente:
+>
 * Introducidas en el editor de fragmentos
 * Específicas para un segmento seleccionado de texto dentro del fragmento
 >
-
 
 Por ejemplo:
 
@@ -332,11 +333,12 @@ Se mostrarán una al lado de la otra, donde:
    * Texto insertado en verde
    * Texto reemplazado en azul
 
-* El icono de pantalla completa le permite abrir cualquiera de las versiones por su cuenta; a continuación, vuelva a la vista paralela
+* El icono de pantalla completa permite abrir cualquiera de las versiones por su cuenta; a continuación, vuelva a la vista paralela
 * Puede **Revertir** a la versión específica
 * **Listo** le devolverá a la consola
 
 >[!NOTE]
+>
 No se puede editar el contenido del fragmento al comparar fragmentos.
 
 ![comparación](assets/cfm-managing-06.png)
@@ -347,14 +349,16 @@ Puede volver a una versión específica del fragmento:
 
 * Directamente desde la [Cronología](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Seleccione la versión requerida y, a continuación, la acción **Revertir a esta versión**.
+  Seleccione la versión requerida y, a continuación, la acción **Revertir a esta versión**.
 
 * Mientras [compara una versión con la versión actual](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) puede **Revertir** a la versión seleccionada.
 
 ## Publicación y referencia de un fragmento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
+>
 Si el fragmento se basa en un modelo, debe asegurarse de que [el modelo se ha publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>
 Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indicará y el modelo se publicará con el fragmento.
 
 Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Se pueden publicar:
@@ -364,6 +368,7 @@ Los fragmentos de contenido deben publicarse para su uso en el entorno de public
 * Cuando usted [publicar una página que use el fragmento](/help/sites-authoring/content-fragments.md#publishing); el fragmento se enumerará en las referencias de página.
 
 >[!CAUTION]
+>
 Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
@@ -374,10 +379,12 @@ Para eliminar un fragmento:
 2. Seleccione el fragmento.
 
    >[!NOTE]
+   >
    La acción **Eliminar** no se encuentra disponible como Acción rápida.
 
 3. En la barra de herramientas, seleccione **Eliminar**.
 4. Confirme la acción **Eliminar**.
 
    >[!CAUTION]
+   >
    Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.

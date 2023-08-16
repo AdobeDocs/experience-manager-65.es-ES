@@ -8,16 +8,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 100%
+source-wordcount: '947'
+ht-degree: 98%
 
 ---
 
 # Seguridad de los documentos | Administrar datos de usuario {#document-security-handling-user-data}
 
-La seguridad de documentos de AEM Forms le permite crear, almacenar y aplicar configuraciones de seguridad predefinidas a sus documentos. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Puede proteger los documentos mediante políticas. Una directiva es una recopilación de información que incluye configuraciones de seguridad y una lista de usuarios autorizados. Puede aplicar una directiva a uno o varios documentos y autorizar a los usuarios que se agregan en la administración de usuarios JEE de AEM Forms.
+AEM Forms Document Security permite crear, almacenar y aplicar configuraciones de seguridad predefinidas a los documentos. Garantiza que solo los usuarios autorizados puedan utilizar los documentos. Puede proteger los documentos mediante políticas. Una directiva es una recopilación de información que incluye configuraciones de seguridad y una lista de usuarios autorizados. Puede aplicar una directiva a uno o varios documentos y autorizar a los usuarios que se agregan en la administración de usuarios JEE de AEM Forms.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -70,7 +70,7 @@ La siguiente tabla muestra cómo la seguridad de documentos organiza los datos e
    <td>Almacena información sobre directivas archivadas. Una directiva archivada contiene su XML de directiva almacenado como objeto Blob.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code>  (Bases de datos de Oracle y MS SQL)</p> </td>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br />  (Bases de datos de Oracle y MS SQL)</p> </td>
    <td>Almacena la asignación entre el conjunto de directivas y los usuarios.</td>
   </tr>
   <tr>

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2232'
-ht-degree: 74%
+source-wordcount: '2231'
+ht-degree: 73%
 
 ---
 
@@ -121,7 +121,7 @@ En el mismo sistema pueden coexistir distintas versiones de Designer; por ejempl
   </tr>
   <tr>
    <td><p>Designer (independiente)</p> </td>
-   <td><p>Ninguna. <br />La versión de Designer incluida con Workbench solo está disponible en inglés. <br />El instalador de Workbench no reinstala una nueva versión de Designer. En su lugar, se instalará un parche con una versión actualizada integrada en el programa de instalación de Workbench. Esto le permite asimismo utilizar una versión localizada de Designer en Workbench.<br /> </p> </td>
+   <td><p>Ninguna. <br />La versión de Designer incluida con Workbench solo está disponible en inglés. <br />El instalador de Workbench no reinstala una nueva versión de Designer. En su lugar, se instalará un parche con una versión actualizada integrada en el programa de instalación de Workbench. Esto también le permite utilizar una versión localizada de Designer en Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -159,11 +159,13 @@ Antes de instalar Workbench, debe asegurarse de que su entorno incluye el softwa
 1. (Opcional) Seleccione Instalar Adobe Designer si necesita esta herramienta para crear y modificar formularios.
 
    >[!NOTE]
+   >
    Puede seguir utilizando la versión de Designer instalada con Acrobat 10 sin seleccionar esta opción.
 
 1. Acepte el directorio predeterminado como se muestra o haga clic en Elegir y vaya al directorio en el que desea instalar Workbench y, a continuación, haga clic en Siguiente.
 
    >[!NOTE]
+   >
    La ruta del directorio de instalación no debe contener los caracteres # (libras) y $ (dólares).
 
 1. Revise el resumen a la instalación y haga clic en Instalar. El programa de instalación muestra el progreso de la instalación.
@@ -183,6 +185,7 @@ Los procesos de AEM Forms en JEE se pueden actualizar a aplicaciones de AEM Fo
 Para utilizar Workbench, debe tener una instancia de AEM Forms en ejecución, normalmente en un equipo independiente. Debe tener un nombre de usuario y una contraseña para iniciar sesión en AEM Forms, así como detalles sobre la ubicación del servidor.
 
 >[!NOTE]
+>
 Si configuró AEM Forms para utilizar el proveedor de repositorios EMC Documentum® o IBMAEM ® FileNet y desea iniciar sesión en un repositorio que no sea el repositorio configurado como predeterminado en la consola de administración de formularios de forma predeterminada, proporcione el nombre de usuario username@Repository.
 
 ### Configuración del tiempo de espera {#configuring-timeout-settings}
@@ -194,6 +197,7 @@ De forma predeterminada, el valor del tiempo de espera de Workbench es de dos ho
 Para conectar Workbench a un servidor de AEM Forms a través de HTTPS, debe asegurarse de que Workbench reconozca la autoridad de certificación (CA) que emitió la clave pública como de confianza. Si no se reconoce que el certificado proviene de una fuente de confianza, debe actualizar el archivo cacert en el [Workbench_HOME]directorio /workbench/jre/lib/security.
 
 >[!NOTE]
+>
 [Workbench_HOME] representa el directorio donde instaló Workbench. La ubicación predeterminada es C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certificado. Normalmente, este nombre es el nombre de host completo.
@@ -202,6 +206,7 @@ Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certifi
 1. Asegúrese de disponer de una copia del certificado Secure Sockets Layer (SSL). Póngase en contacto con el administrador que configuró el servidor SSL o exporte el certificado utilizando un explorador web.
 
    >[!NOTE]
+   >
    Para exportar el certificado, abra un explorador web e inicie sesión en la consola de administración, instale el certificado en el explorador y, a continuación, exporte el certificado desde el explorador a una ubicación de almacenamiento temporal (o directamente al directorio [Workbench_HOME]/workbench/jre/lib/security).
 
 1. Copie el certificado en el directorio [Workbench_HOME]/workbench/jre/lib/security.
@@ -227,8 +232,8 @@ Cuando Forms Generator o Output buscan, o actualizan, las entradas en la caché
 * **Marca de tiempo**: el archivo de plantilla contiene una marca de tiempo que se utiliza para determinar la hora a la que el formulario se actualizó por última vez.
 * **UUID de plantilla**: Designer inserta en cada plantilla un identificador único (UUID) para el formulario y su versión. Cada vez que se actualiza el formulario, se actualiza el UUID incrustado. Por ejemplo, una plantilla XDP puede mostrar el siguiente contenido:
 
-   `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
+  `<?xml version="1.0" encoding="UTF-8"?>`
+  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Opciones de procesamiento**: en la caché de los formularios procesados, el contenido de la caché se almacena de forma independiente para cada conjunto de opciones de procesamiento únicas.
 

@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4478'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ El marco de trabajo le permite acceder a funciones como las siguientes:
 
 AEM eCommerce se implementa con un motor de comercio electrónico:
 
-* AEM El marco de trabajo de integración de comercio electrónico se ha creado para permitirle integrar fácilmente un motor de comercio electrónico con las soluciones de comercio electrónico de la manera más sencilla y con más facilidad AEM El motor de comercio electrónico creado específicamente controla los datos de los productos, los carros de compras, el cierre de compra y el cumplimiento de los pedidos, mientras que el control de la visualización de datos y las campañas de marketing se realiza de forma independiente.
+* AEM El marco de trabajo de integración de comercio electrónico se ha creado para permitirle integrar fácilmente un motor de comercio electrónico con las soluciones de comercio electrónico de forma más sencilla y con más de un. AEM El motor de comercio electrónico creado específicamente controla los datos de los productos, los carros de compras, el cierre de compra y el cumplimiento de los pedidos, mientras que el control de la visualización de datos y las campañas de marketing se realiza de forma independiente.
 
 
 >[!NOTE]
@@ -198,7 +198,7 @@ Aunque la ubicación real puede depender de la implementación; por ejemplo, gen
 
 #### Categorías estructurales frente a categorías de marketing {#structural-versus-marketing-categories}
 
-Si se pueden diferenciar las dos categorías siguientes, esto le permite establecer direcciones URL claras con una estructura significativa (árboles de `cq:Page` AEM nodos) y, por lo tanto, muy cerca de la gestión de contenido clásica de la):
+Si se pueden diferenciar las dos categorías siguientes, esto permite establecer direcciones URL claras con una estructura significativa (árboles de `cq:Page` AEM nodos) y, por lo tanto, muy cerca de la gestión de contenido clásica de la):
 
 * *Estructurales *categorías
 
@@ -642,7 +642,7 @@ Hay una página que le permite administrar fácilmente la información de su cue
 
 El sitio debe almacenar una selección de direcciones, incluidas las direcciones de envío, facturación y alternativas. AEM Esto se puede implementar mediante formularios basados en el formato de dirección predeterminado o puede utilizar el componente Libreta de direcciones proporcionado por el administrador de direcciones de la.
 
-Este componente Libreta de direcciones le permite:
+Este componente de Libreta de direcciones le permite:
 
 * editar direcciones en el libro
 * seleccionar una dirección de la libreta de direcciones de envío

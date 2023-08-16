@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 70%
+source-wordcount: '1050'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ AEM Forms proporciona componentes del portal que reducen los gastos generales de
 
 ![Portal de AEM Forms](assets/aem-forms-portal.png)
 
-Los componentes de portal de formularios le permiten agregar las siguientes funcionalidades:
+Los componentes del portal de formularios le permiten agregar las siguientes funcionalidades:
 
 * Muestre una lista de formularios en diseños personalizados. Se proporcionan los diseños Vista de lista, Vista de tarjeta y Vista de panel. Puede crear sus propios diseños personalizados.
 * Permite mostrar metadatos y acciones personalizados en forma de lista.
@@ -50,7 +50,7 @@ AEM Forms proporciona los siguientes componentes de portal predeterminados, agru
 
 ### Búsqueda y lista {#search-amp-lister}
 
-El componente Búsqueda y lista permite mostrar una lista de los formularios del repositorio de formularios en la página del portal y proporciona opciones de configuración para mostrar una lista de los formularios en función de criterios específicos. También le permite especificar criterios de búsqueda para permitir que los usuarios del portal busquen en la lista de formularios.
+El componente Buscar y listar permite mostrar una lista de los formularios del repositorio de formularios en la página del portal y proporciona opciones de configuración para mostrar una lista de los formularios en función de criterios específicos. También permite especificar criterios de búsqueda para permitir que los usuarios del portal busquen en la lista de formularios.
 
 ### Borradores y envíos {#drafts-amp-submissions}
 
@@ -58,7 +58,7 @@ Mientras que el componente Búsqueda y lista muestra los formularios que publica
 
 ### Vínculo {#link}
 
-Vínculo: este componente le permite crear un vínculo a un formulario en cualquier parte de la página. Imagine un escenario en el que ofrece un programa de formación y desea que los usuarios envíen un formulario para registrarse en él. Ha publicado los detalles del programa en su sitio web. Debajo de estos, desea proporcionar un vínculo al formulario de registro. El componente Vínculo puede ayudarle a crear ese vínculo.
+El componente Vínculo permite crear un vínculo a un formulario en cualquier parte de la página. Imagine un escenario en el que ofrece un programa de formación y desea que los usuarios envíen un formulario para registrarse en él. Ha publicado los detalles del programa en su sitio web. Debajo de estos, desea proporcionar un vínculo al formulario de registro. El componente Vínculo puede ayudarle a crear ese vínculo.
 
 ## Flujo de trabajo del portal de formularios {#forms-portal-workflow}
 

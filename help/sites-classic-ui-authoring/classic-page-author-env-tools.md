@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '897'
 ht-degree: 6%
 
 ---
@@ -22,7 +22,7 @@ El entorno de creación AEM ofrece varios mecanismos para organizar y editar el 
 
 ## Administración del sitio {#site-administration}
 
-El **Sitios web** La consola de le permite administrar y navegar por su sitio web. Mediante los dos paneles, se puede expandir la estructura del sitio web y realizar acciones en el elemento requerido:
+El **Sitios web** La consola de le permite administrar y navegar por el sitio web. Mediante los dos paneles, se puede expandir la estructura del sitio web y realizar acciones en el elemento requerido:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -44,7 +44,7 @@ Además de acceder a [ayuda de las barras de herramientas de la consola](/help/s
 
 O utilizando el **Ayuda** en el cuadro de diálogo de edición de componentes específicos; esto mostrará la ayuda contextual.
 
-## Compañero {#sidekick}
+## Sidekick {#sidekick}
 
 El **Componentes** de la barra de tareas le permite examinar los componentes disponibles para añadirlos a la página actual. El grupo requerido se puede expandir y, a continuación, un componente se arrastra a la ubicación requerida en la página.
 
@@ -193,10 +193,10 @@ Al editar una página con la IU clásica, hay varios modos a los que se puede ac
 La fila de iconos de la parte inferior del Sidekick se utiliza para cambiar los modos de trabajo de las páginas:
 
 * [Editar](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-Este es el modo predeterminado y le permite editar la página, añadir o eliminar componentes y realizar otros cambios.
+Este es el modo predeterminado y permite editar la página, añadir o eliminar componentes y realizar otros cambios.
 
 * [Previsualizar](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-Este modo le permite obtener una vista previa de la página como si apareciera en el sitio web en su forma final.
+Este modo permite obtener una vista previa de la página como si apareciera en el sitio web en su forma final.
 
 * [Diseño](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 En este modo, puede editar el diseño de la página configurando los componentes accesibles.

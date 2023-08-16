@@ -10,10 +10,10 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3838'
-ht-degree: 100%
+source-wordcount: '3840'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 1. Pulse **Crear diccionario de datos**.
 1. En la pantalla Propiedades, agregue lo siguiente:
 
-   * **Título:** (Opcional) escriba el título del diccionario de datos. El título no tiene que ser único y puede tener caracteres especiales y caracteres que no sean ingleses. A las cartas y otros fragmentos de documento se refieren mediante su título (cuando están disponibles), como en miniaturas y propiedades de recursos. Se hace referencia a los diccionarios de datos con sus nombres y no títulos.
+   * **Título:** (Opcional) escriba el título del diccionario de datos. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. A las cartas y otros fragmentos de documento se refieren mediante su título (cuando están disponibles), como en miniaturas y propiedades de recursos. Se hace referencia a los diccionarios de datos con sus nombres y no títulos.
    * **Nombre:** nombre exclusivo del diccionario de datos. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título y los caracteres especiales, espacios, números y caracteres que no sean ingleses introducidos en el campo Título se sustituirán por guiones. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
 
    * **Descripción**: (Opcional) descripción del diccionario de datos.

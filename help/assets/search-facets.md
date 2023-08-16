@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 17%
+source-wordcount: '2416'
+ht-degree: 18%
 
 ---
 
@@ -46,7 +46,6 @@ Para las búsquedas de texto completo, agregue **[!UICONTROL Texto completo]** p
    >1. Desde la ruta `/libs/settings/dam/search/facets/assets/jcr:content/items`, copie los nodos `asset`, `directory`, `typeor`, `excludepaths`, y `searchtype` a la ruta mencionada en el paso 1.
    >1. Guarde los cambios.
 
-
 1. En el [!UICONTROL Editar Forms de búsqueda] , arrastre un predicado desde la página **[!UICONTROL Seleccionar predicado]** al panel principal. Por ejemplo, arrastre **[!UICONTROL Predicado de propiedad]**.
 
    ![Seleccione y mueva un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
@@ -71,7 +70,7 @@ Para las búsquedas de texto completo, agregue **[!UICONTROL Texto completo]** p
    Previsualice el formulario de búsqueda antes de enviar los cambios
 
 1. Para cerrar la vista previa, haga clic en **[!UICONTROL Cerrar]** ![close](assets/do-not-localize/close.png) en la esquina superior derecha de la vista previa.
-1. Clic **[!UICONTROL Listo]** para guardar la configuración.
+1. Haga clic en **[!UICONTROL Listo]** para guardar los cambios.
 1. Vaya al panel Buscar de la [!DNL Assets] interfaz de usuario. El predicado Propiedad se agrega al panel.
 1. Escriba una descripción del recurso que se va a buscar en el cuadro de texto. Por ejemplo, introduzca `Adobe`. Al realizar una búsqueda, los recursos con descripción coinciden `Adobe` se enumeran en los resultados de búsqueda.
 
@@ -144,7 +143,7 @@ El predicado Propiedad de varios valores permite buscar recursos para varios val
 
 ## Añadir un predicado de etiquetas {#adding-a-tags-predicate}
 
-El predicado de etiquetas permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Assets] busca recursos para una o varias coincidencias de etiquetas en función de las etiquetas especificadas. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción Coincidir con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
+El predicado Etiqueta permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Assets] busca recursos para una o varias coincidencias de etiquetas en función de las etiquetas especificadas. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción Coincidir con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
 1. Haga clic en [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
 1. En la página Buscar Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y luego haga clic en **[!UICONTROL Editar]** ![icono de edición](assets/do-not-localize/aemassets_edit.png).
@@ -167,13 +166,13 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
 |---|---|---|
 | [!UICONTROL Texto completo] | Predicado de búsqueda para realizar una búsqueda de texto completo en todo un nodo de recursos. Se asigna con el operador jcr:contains. Puede especificar una ruta relativa si desea realizar una búsqueda de texto completo en una parte específica del nodo del recurso. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Navegador de rutas] | Predicado de búsqueda para buscar recursos en carpetas y subcarpetas en una ruta raíz preconfigurada | <ul><li>Marcador de posición</li><li>Ruta raíz</li><li>Descripción</li></ul> |
-| [!UICONTROL Ruta] | Utilícelo para filtrar los resultados según la ubicación. Puede especificar diferentes rutas como opciones. | <ul><li>Etiqueta</li><li>Ruta </li><li>Descripción</li></ul> |
+| [!UICONTROL Ruta] | Utilícelo para filtrar los resultados según la ubicación. Puede especificar diferentes rutas como opciones. | <ul><li>Etiqueta</li><li>Ruta</li><li>Descripción</li></ul> |
 | [!UICONTROL Estado de publicación] | Predicado de búsqueda para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Fecha relativa] | Predicado de búsqueda para buscar recursos en función de la fecha relativa de su creación. Por ejemplo, puede configurar opciones, como hace 2 meses, hace 3 semanas, etc. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Fecha relativa</li></ul> |
 | [!UICONTROL Intervalo] | Predicado de búsqueda para buscar recursos que se encuentren dentro de un rango especificado. En el panel Buscar, puede especificar los valores mínimo y máximo del rango. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Intervalo de fechas] | Predicado de búsqueda para buscar recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización mediante selectores de fechas. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad</li><li>Texto de intervalo (desde)</li><li>Texto de intervalo (hasta)</li><li>Descripción</li></ul> |
 | [!UICONTROL Fecha] | Predicado de búsqueda para una búsqueda de recursos basada en un control deslizante y basada en una propiedad de fecha. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
-| [!UICONTROL Tamaño del archivo] | Predicado de búsqueda para buscar recursos en función de su tamaño. Es un predicado basado en deslizadores en el que se seleccionan las opciones del deslizador desde un nodo configurable. Las opciones predeterminadas se definen en /libs/dam/options/predicates/filesize en el repositorio CRXDE. El tamaño de archivo se proporciona en bytes. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta </li><li>Descripción</li></ul> |
+| [!UICONTROL Tamaño del archivo] | Predicado de búsqueda para buscar recursos en función de su tamaño. Es un predicado basado en deslizadores en el que se seleccionan las opciones del deslizador desde un nodo configurable. Las opciones predeterminadas se definen en /libs/dam/options/predicates/filesize en el repositorio CRXDE. El tamaño de archivo se proporciona en bytes. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta</li><li>Descripción</li></ul> |
 | [!UICONTROL Última modificación del recurso] | Predicado de búsqueda para buscar recursos modificados recientemente | <ul><li>Nombre de la propiedad</li><li>Valor de propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Estado de publicación] | Predicado de búsqueda para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Clasificación] | Predicado de búsqueda para buscar recursos en función de su clasificación promedio | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta de opción</li><li>Descripción</li></ul> |
@@ -208,4 +207,3 @@ Si no se le ha asignado una función de administrador, aquí encontrará una lis
 >
 >* [Ampliar capacidad de búsqueda de recursos](searchx.md)
 >* [Buscar recursos](search-assets.md)
-

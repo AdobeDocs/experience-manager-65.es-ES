@@ -2,7 +2,7 @@
 title: Editor de reglas de formularios adaptables
 seo-title: Adaptive forms rule editor
 description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
-seo-description: Adaptive forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
+seo-description: Adaptive forms rule editor lets you add dynamic behavior and build complex logic into forms without coding or scripting.
 uuid: c1b3d6e4-6f36-4352-ab57-9850d718e47c
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +10,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6941'
-ht-degree: 97%
+source-wordcount: '6929'
+ht-degree: 94%
 
 ---
 
@@ -151,7 +151,7 @@ Para obtener más información sobre la configuración de servicios en el modelo
 
 Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
-El tipo de regla **Establecer propiedad** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
+El **Establecer propiedad** tipo de regla permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
 
 Permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar una función personalizada, un objeto de formulario o una propiedad de objeto para definir una regla.
 
@@ -161,7 +161,7 @@ Para definir una regla basada en una función personalizada, seleccione **Salida
 
 Para definir una regla basada en un objeto de formulario, seleccione **Objeto de formulario** en la lista desplegable y arrastre y suelte un objeto de formulario desde la pestaña **Objetos de formulario**. Si se cumple la acción de la condición, el número de casillas de verificación definidas en el objeto de formulario se agregará al formulario adaptable.
 
-La regla Establecer propiedad basada en una propiedad de objeto permite agregar el número de casillas de verificación en un formulario adaptable basándose en otra propiedad de objeto incluida en el formulario adaptable.
+La regla Set Property basada en una propiedad de objeto permite agregar el número de casillas de verificación en un formulario adaptable basándose en otra propiedad de objeto incluida en el formulario adaptable.
 
 En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verificación de forma dinámica en función del número de listas desplegables del formulario adaptable:
 
@@ -187,7 +187,7 @@ En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verifi
 
 ### Establecer valor de {#set-value-of}
 
-El tipo de regla **[!UICONTROL Establecer valor de]** le permite definir el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio de modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
+El **[!UICONTROL Configurar el valor de]** el tipo de regla permite establecer el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio de modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
 
 Nota: El tipo de regla Establecer valor de no está disponible para todos los objetos de formulario, como paneles y botones de la barra de herramientas. Una regla de valor definido estándar tiene la siguiente estructura:
 
@@ -279,7 +279,7 @@ Una regla Enable típica se estructura de la siguiente manera:
 
 ### Disable {#disable}
 
-Similar al tipo de regla Enable, el tipo de regla **Disable** permite habilitar o deshabilitar un objeto de formulario en función de si se cumple o no una condición. El tipo de regla Disable también activa la acción Enable (habilitar) en caso de que la condición no se cumpla o devuelva un valor `False`.
+Similar al tipo de regla Enable, la variable **Deshabilitar** el tipo de regla permite habilitar o deshabilitar un objeto de formulario en función de si se cumple o no una condición. El tipo de regla Disable también activa la acción Enable (habilitar) en caso de que la condición no se cumpla o devuelva un valor `False`.
 
 Una regla Disable típica se estructura de la siguiente manera:
 
@@ -777,7 +777,7 @@ También puede arrastrar y soltar condiciones dentro de una regla para editarla.
 
 ## Condiciones de expresión de fecha {#dateexpression}
 
-El editor de reglas permite usar comparaciones de fechas para crear condiciones.
+El editor de reglas permite utilizar comparaciones de fechas para crear condiciones.
 
 A continuación verá una condición de ejemplo que muestra un objeto de texto estático si la hipoteca de la casa ya está cogida, lo que el usuario indica rellenando el campo de la fecha.
 

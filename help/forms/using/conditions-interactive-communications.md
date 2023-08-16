@@ -10,10 +10,10 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1497'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
 1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Condición]**.
 1. Especifique la siguiente información:
 
-   * **[!UICONTROL Título]**: (Opcional) Escriba el título de la condición. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. Las condiciones son referidas mediante sus títulos (cuando están disponibles), como en miniaturas y propiedades.
+   * **[!UICONTROL Título]**: (Opcional) Escriba el título de la condición. Los títulos no tienen por qué ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. Las condiciones son referidas mediante sus títulos (cuando están disponibles), como en miniaturas y propiedades.
    * **[!UICONTROL Nombre]**: nombre exclusivo de la condición, dentro de una carpeta. No pueden existir dos fragmentos de documento (texto, condición o lista) con el mismo nombre dentro de una carpeta. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
 
    * **[!UICONTROL Descripción]**: escriba una descripción del fragmento del documento.

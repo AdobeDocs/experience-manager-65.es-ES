@@ -1,10 +1,10 @@
 ---
 title: El componente RemotePage
-description: SPA AEM El componente RemotePage es un componente de página personalizado para editar el grupo de informes de React de forma remota dentro de los grupos de informes de la.
+description: SPA AEM El componente RemotePage es un componente de página personalizado para editar el grupo de informes de React de forma remota dentro de los grupos de informes de.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ SPA AEM SPA AEM A la hora de decidir qué nivel de integración desea tener entr
 
 El componente RemotePage obtiene todos los recursos necesarios del contenido generado por la aplicación `asset-manifest.json` SPA AEM y utiliza esto para procesar los dentro de la.
 
-* SPA AEM RemotePage permite insertar los scripts y las hojas de estilo de una página en el cuerpo de un componente Página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la aplicación
+* SPA AEM RemotePage permite insertar los scripts y las hojas de estilo de una página en el cuerpo de un componente de página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la aplicación.
 * AEM SPA Los componentes de front-end virtuales permiten marcar secciones como editables en el editor de.
 * SPA AEM Juntos, un alojado en un dominio diferente se puede convertir en editable en el espacio de trabajo de la aplicación de la versión de.
 
-Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de informes](spa-edit-external.md) SPA AEM para obtener más información sobre las funciones editables y externas, haga clic en la opción de la.
+Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de informes](spa-edit-external.md) SPA AEM para obtener más información sobre las funciones editables y externas, haga clic en.
 
 ## Requisitos  {#requirements}
 
@@ -33,7 +33,7 @@ Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de inf
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-   ![Puntos de entrada](assets/asset-manifest-entrypoints.png)
+  ![Puntos de entrada](assets/asset-manifest-entrypoints.png)
 
 * La aplicación debe poder inicializarse en un `<div id="root"></div>` debajo del elemento de cuerpo. Si se espera un marcado diferente para que la aplicación cree una instancia, esto debe ajustarse en consecuencia en los scripts HTL del componente proxy que tenga un `sling:resourceSuperType="spa-project-core/components/remotepage`.
 

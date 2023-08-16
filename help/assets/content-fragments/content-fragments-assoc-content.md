@@ -4,10 +4,10 @@ description: AEM Comprenda cómo la función de contenido asociada proporciona l
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 60%
+ht-degree: 57%
 
 ---
 
@@ -30,7 +30,7 @@ Para realizar la asociación, primero debe [agregar los recursos multimedia a un
 1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione:
 
    * **Asociar contenido**: esta será la primera colección asociada
-   * **Asociar colección**: las colecciones asociadas ya están configuradas
+   * **Asociar colección** - colecciones asociadas que ya están configuradas
 
 1. Seleccione la colección requerida.
 

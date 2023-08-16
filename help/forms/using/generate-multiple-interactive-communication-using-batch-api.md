@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 100%
+source-wordcount: '2206'
+ht-degree: 98%
 
 ---
 
@@ -171,7 +171,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
 
 ## Invocar la API por lotes utilizando solicitudes REST
 
-Puede invocar [la API por lotes](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/index.html) mediante solicitudes de transferencia de estado representacional (REST). Esto le permite proporcionar un extremo REST a otros usuarios para que accedan a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. Puede desarrollar su propio servlet Java personalizado para implementar la API en la instancia de AEM.
+Puede invocar [la API por lotes](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/index.html) mediante solicitudes de transferencia de estado representacional (REST). Permite proporcionar un extremo REST a otros usuarios para que accedan a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. Puede desarrollar su propio servlet Java personalizado para implementar la API en la instancia de AEM.
 
 Antes de implementar el servlet Java, asegúrese de que tiene una comunicación interactiva y de que los archivos de datos correspondientes están listos. Siga los siguientes pasos para crear e implementar el servlet Java:
 
@@ -346,24 +346,20 @@ Después, la siguiente URL del nodo de publicación muestra el canal web de la c
 Además de guardar los datos en el sistema de archivos, los archivos JSON se almacenan en el repositorio CRX, el sistema de archivos o el servidor web. También es posible acceder a los datos mediante el servicio de relleno previo OSGI. La sintaxis para combinar datos mediante varios protocolos es:
 
 * **Protocolo CRX**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocolo de archivo**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Protocolo del servicio de relleno previo**
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
+  SERVICE_NAME hace referencia al nombre del servicio de relleno previo de OSGI. Consulte Crear y ejecutar un servicio de relleno previo.
 
-   SERVICE_NAME hace referencia al nombre del servicio de relleno previo de OSGI. Consulte Crear y ejecutar un servicio de relleno previo.
-
-   IDENTIFIER se refiere a cualquier metadato que requiera el servicio de relleno previo OSGI para recuperar los datos. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
+  IDENTIFIER se refiere a cualquier metadato que requiera el servicio de relleno previo OSGI para recuperar los datos. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
 
 * **Protocolo HTTP**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
 >

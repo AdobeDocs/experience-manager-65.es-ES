@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2531'
 ht-degree: 5%
 
 ---
@@ -112,6 +112,7 @@ Establece la altura y la anchura de la imagen.
 >Debe introducir información en la variable **Texto alternativo** en el campo **Avanzadas** o la imagen no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 El siguiente ejemplo muestra un componente de imagen (Campaign).
 
@@ -132,8 +133,7 @@ El pie de ilustración del vínculo. Este es el texto que ven los usuarios.
 Agrega información adicional sobre cómo utilizar el vínculo.
 
 * **LinkType**
-En la lista desplegable, seleccione entre una 
-**URL personalizada** y un **Documento adaptable**. Este campo es obligatorio. Si selecciona Dirección URL personalizada, puede proporcionar la Dirección URL del vínculo. Si selecciona Documento adaptable, puede proporcionar la ruta del documento.
+En la lista desplegable, seleccione entre una **URL personalizada** y un **Documento adaptable**. Este campo es obligatorio. Si selecciona Dirección URL personalizada, puede proporcionar la Dirección URL del vínculo. Si selecciona Documento adaptable, puede proporcionar la ruta del documento.
 
 * **Parámetro de URL adicional**
 Añada cualquier parámetro de URL adicional. Haga clic en Agregar elemento para agregar varios elementos.
@@ -143,6 +143,7 @@ Añada cualquier parámetro de URL adicional. Haga clic en Agregar elemento para
 >Debe introducir información en la variable **Tipo de vínculo** en el campo **Información de URL** o el componente no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 El siguiente ejemplo muestra un componente Vínculo (campaña).
 
@@ -192,6 +193,7 @@ Establece la altura y anchura de la imagen.
 >El **Texto alternativo** en el campo **Avanzadas** es obligatorio o el componente no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 El siguiente ejemplo muestra un componente Texto e imagen (Campaign).
 
@@ -247,7 +249,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Casilla (Campaign)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Ya no se puede contactar (por ningún canal)</p> </td>
+   <td><p>No contacto más largo (por cualquier canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de fecha (Campaign)</p> <p>Campo de fecha/HTML 5 (Campaign)</p> </td>

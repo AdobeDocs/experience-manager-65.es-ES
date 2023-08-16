@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '313'
 ht-degree: 73%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 73%
 | AEM 6.5 | Este artículo |
 
 
-La integración de Adobe Analytics AEM y el uso de la le permite realizar un seguimiento de la actividad de la página web:
+La integración de Adobe Analytics AEM y la integración de le permite realizar un seguimiento de la actividad de la página web:
 
 * Una configuración de Adobe Analytics permite a AEM autenticarse con Adobe Analytics.
 * Un marco de trabajo identifica los datos que se envían al grupo de informes de Adobe Analytics.

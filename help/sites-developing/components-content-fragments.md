@@ -12,10 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 4%
+source-wordcount: '960'
+ht-degree: 3%
 
 ---
 
@@ -124,7 +124,6 @@ Internamente, la reescritura de Sling se utiliza para esa renderización. La con
 >a continuación, el `serializerType` **debe** se actualizará a:
 >
 >* `serializerType="html5-serializer"`
-
 
 La configuración predeterminada utiliza los siguientes transformadores:
 

@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '7850'
 ht-degree: 0%
@@ -40,13 +40,13 @@ El servicio Generate PDF utiliza aplicaciones nativas para convertir los siguien
 
 >[!NOTE]
 >
->El servicio Generar PDF no es compatible con las versiones de 64 bits de OpenOffice.
+El servicio Generar PDF no es compatible con las versiones de 64 bits de OpenOffice.
 
 * Adobe Photoshop® CS2 para convertir el PSD (sólo Windows)
 
 >[!NOTE]
 >
->Photoshop CS3 y CS4 no son compatibles porque no son compatibles con Windows Server 2003 o Windows Server 2008.
+Photoshop CS3 y CS4 no son compatibles porque no son compatibles con Windows Server 2003 o Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 y 8 para convertir FM (sólo Windows)
 * PageMaker de Adobe ® 7.0 para convertir PMD, PM6, P65 y PM (sólo Windows)
@@ -86,7 +86,7 @@ Puede realizar estas tareas mediante el servicio Generate PDF:
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Convertir documentos de Word en documentos de PDF {#converting-word-documents-to-pdf-documents}
 
@@ -94,11 +94,11 @@ En esta sección se describe cómo puede utilizar la API Generate PDF para conve
 
 >[!NOTE]
 >
->Para obtener más información sobre formatos de archivo adicionales, consulte [Añadir compatibilidad con formatos de archivo nativos adicionales](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+Para obtener más información sobre formatos de archivo adicionales, consulte [Añadir compatibilidad con formatos de archivo nativos adicionales](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary-of-steps}
 
@@ -186,7 +186,6 @@ Convierta un documento de Microsoft Word en un documento de PDF mediante la API 
    * Invoque el `CreatePDFResult` del objeto `getLogDocument` método. Esto devuelve un `com.adobe.idp.Document` objeto.
    * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el documento de registro.
 
-
 **Consulte también**
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
@@ -207,7 +206,7 @@ Conversión de un documento de Microsoft Word en un documento de PDF mediante la
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
 
 1. Cree un cliente Generate PDF.
 
@@ -265,7 +264,7 @@ En esta sección se describe cómo puede utilizar la API Generate PDF para conve
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
@@ -364,7 +363,7 @@ Conversión del contenido de un HTML en un documento de un PDF mediante la API d
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
 
 1. Cree un cliente Generate PDF.
 
@@ -415,7 +414,7 @@ En esta sección se describe cómo puede utilizar la API Generate PDF Java y la 
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obtener más información sobre el servicio Generate PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-2}
 
@@ -515,7 +514,7 @@ Conversión de un documento de PDF en un archivo RTF mediante la API Generate PD
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
 
 1. Cree un cliente Generar PDF.
 
@@ -654,7 +653,7 @@ Cuando esta sección y la siguiente describen los cuadros de diálogo y sus comp
 
 Cuando esta sección y la siguiente describen los cuadros de diálogo y sus componentes desde la perspectiva de su representación interna, el término *elemento window* se utiliza. La representación interna de los elementos de ventana es una jerarquía, donde cada instancia del elemento de ventana se identifica con etiquetas. La instancia del elemento window también describe sus características físicas y su comportamiento.
 
-Desde la perspectiva del usuario, los cuadros de diálogo y sus componentes muestran comportamientos diferentes, donde algunos elementos de cuadro de diálogo se ocultan hasta que se activan. Desde la perspectiva de la representación interna, no existe tal cuestión de comportamiento. Por ejemplo, la representación interna de un cuadro de diálogo tiene un aspecto similar al de los componentes que contiene, con la excepción de que los componentes están anidados en el cuadro de diálogo.
+Desde la perspectiva de un usuario, los cuadros de diálogo y sus componentes muestran comportamientos diferentes, donde algunos elementos del cuadro de diálogo se ocultan hasta que se activan. Desde la perspectiva de la representación interna, no existe tal cuestión de comportamiento. Por ejemplo, la representación interna de un cuadro de diálogo tiene un aspecto similar al de los componentes que contiene, con la excepción de que los componentes están anidados en el cuadro de diálogo.
 
 En esta sección se describen los elementos XML que proporcionan instrucciones a AppMon. Estos elementos tienen nombres como `dialog` y el elemento `window` Elemento. Este documento utiliza una fuente monoespaciada para distinguir los elementos XML. El `dialog` identifica un cuadro de diálogo que un archivo de secuencia de comandos XML puede hacer que se muestre, ya sea intencionada o involuntariamente. El `window` identifica un elemento de ventana (cuadro de diálogo o los componentes de un cuadro de diálogo).
 
@@ -676,7 +675,7 @@ Los pasos de un archivo XML de script se ejecutan en orden, sin ninguna oportuni
 
 Además de los pasos que son secuenciales, las instrucciones dentro de un paso también se ejecutan en orden. Debe asegurarse de que los pasos e instrucciones reflejen el orden en que un usuario realizaría esos mismos pasos.
 
-Cada paso del archivo XML de secuencia de comandos identifica el elemento window que se espera que aparezca si las instrucciones del paso se realizan correctamente. Si aparece un cuadro de diálogo inesperado al ejecutar un paso de script, el servicio Generate PDF busca los archivos XML de diálogo como se describe en la siguiente sección.
+Cada paso de un archivo XML de secuencia de comandos identifica el elemento window que se espera que aparezca si las instrucciones del paso se realizan correctamente. Si aparece un cuadro de diálogo inesperado al ejecutar un paso de script, el servicio Generate PDF busca los archivos XML de diálogo como se describe en la siguiente sección.
 
 #### Archivos XML de diálogo {#dialog-xml-files}
 
@@ -702,7 +701,7 @@ Antes de agregar o modificar la compatibilidad, debe completar las tareas siguie
 
 #### Selección de una herramienta para identificar los elementos de la ventana {#choosing-a-tool-for-identifying-window-elements}
 
-Los archivos XML de cuadro de diálogo y secuencia de comandos requieren que identifique el elemento window (cuadro de diálogo, campo u otro componente de cuadro de diálogo) al que responde el elemento dialog o script. Por ejemplo, después de que un script invoque un menú para una aplicación nativa, el script debe identificar el elemento window de ese menú al que se deben aplicar las pulsaciones de teclas o una acción.
+Los archivos XML de diálogo y script requieren que identifique el elemento window (cuadro de diálogo, campo u otro componente de diálogo) al que responde el elemento dialog o script. Por ejemplo, después de que un script invoque un menú para una aplicación nativa, el script debe identificar el elemento window de ese menú al que se deben aplicar las pulsaciones de teclas o una acción.
 
 Puede identificar fácilmente un cuadro de diálogo por el título que muestra en su barra de título. Sin embargo, debe utilizar una herramienta como Microsoft Spy++ para identificar los elementos de ventana de nivel inferior. Los elementos de ventana de nivel inferior se pueden identificar mediante una variedad de atributos, que no son obvios. Además, cada aplicación nativa puede identificar su elemento de ventana de forma diferente. Como resultado, hay varias formas de identificar un elemento window. Este es el orden sugerido para considerar la identificación de elementos de ventana:
 
@@ -718,7 +717,7 @@ Tenga en cuenta los siguientes problemas:
 
 * Microsoft Spy++ muestra los subtítulos utilizando un signo &amp; para identificar la tecla de acceso directo del subtítulo. Por ejemplo, Spy++ muestra el título de un cuadro de diálogo Imprimir como `Pri&nt`, que indica que la tecla de acceso directo es *n*. Los títulos de los títulos de los archivos XML de script y diálogo deben omitir el símbolo et.
 * Algunos subtítulos incluyen saltos de línea. el servicio Generar PDF no puede identificar saltos de línea. Si un pie de ilustración incluye un salto de línea, incluya suficiente para diferenciarlo de los demás elementos de menú y, a continuación, utilice expresiones regulares para el fragmento omitido. Un ejemplo es ( `^Long caption title$`). (Consulte [Uso de expresiones regulares en atributos de rótulo](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
-* Utilice entidades de caracteres (también denominadas secuencias de escape) para caracteres XML reservados. Por ejemplo, use `&` para el símbolo et, `<` y `>` para los símbolos menor que y bueno que, `&apos;` para apóstrofos, y `&quot;` para las comillas.
+* Utilice entidades de caracteres (también denominadas secuencias de escape) para caracteres XML reservados. Por ejemplo, use `&` para el símbolo et, `<` y `>` para símbolos menor que y mayor que, `&apos;` para apóstrofos, y `&quot;` para las comillas.
 
 Si planea trabajar en archivos XML de cuadros de diálogo o secuencias de comandos, debe instalar la aplicación Microsoft Spy++.
 
@@ -755,7 +754,7 @@ Después de agregar estos archivos XML al archivo adobe-appmondata.jar, debe vol
 
 Si desea dirigir los archivos a una nueva aplicación nativa, debe crear un archivo XML de secuencia de comandos para esa aplicación. Si desea modificar la forma en que el servicio Generate PDF interactúa con una aplicación nativa ya admitida, deberá modificar el script de dicha aplicación.
 
-La secuencia de comandos contiene instrucciones que navegan por los elementos window de la aplicación nativa y que proporcionan respuestas específicas a esos elementos. El archivo que contiene esta información es `appmon.`[appname]&quot; `.script.`[locale]`.xml`. Un ejemplo es appmon.notepad.script.en_US.xml.
+La secuencia de comandos contiene instrucciones que permiten navegar por los elementos window de la aplicación nativa y proporcionar respuestas específicas a dichos elementos. El archivo que contiene esta información es `appmon.`[appname]&quot; `.script.`[locale]`.xml`. Un ejemplo es appmon.notepad.script.en_US.xml.
 
 #### Identificación de los pasos que debe ejecutar el script {#identifying-steps-the-script-must-execute}
 
@@ -850,7 +849,7 @@ Si crea una secuencia de comandos para una aplicación nativa que no era compati
 
 >[!NOTE]
 >
->En este contexto, el término adicional significa el contenido de la `appmon.[applicationname].addition.[locale].xml` archivo. Este archivo especifica las anulaciones y adiciones al archivo XML de diálogo.
+En este contexto, el término adicional significa el contenido de la `appmon.[applicationname].addition.[locale].xml` archivo. Este archivo especifica las anulaciones y adiciones al archivo XML de diálogo.
 
 También puede modificar el archivo XML de diálogo adicional para una aplicación nativa con estos fines:
 
@@ -863,7 +862,7 @@ El nombre del fichero XML de diálogo adicional debe utilizar el formato `appmon
 
 >[!NOTE]
 >
->Ninguna de las aplicaciones genéricas especificadas en el archivo de configuración native2pdfconfig.xml tiene un archivo XML de diálogo principal. La sección [Agregar o modificar la compatibilidad con un formato de archivo nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) describe dichas especificaciones.
+Ninguna de las aplicaciones genéricas especificadas en el archivo de configuración native2pdfconfig.xml tiene un archivo XML de diálogo principal. La sección [Agregar o modificar la compatibilidad con un formato de archivo nativo](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) describe dichas especificaciones.
 
 Debe pedir `windowList` elementos que aparecen como elementos secundarios en una `window` Elemento. (Consulte [Ordenación de los elementos window y windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -883,7 +882,7 @@ En este procedimiento se explica cómo actualizar el archivo de configuración d
 
 >[!NOTE]
 >
->El nombre de la aplicación se especifica como el valor del `GenericApp` del elemento `name` atributo. Este valor debe coincidir exactamente con el nombre correspondiente especificado en el script que desarrolle para esa aplicación. Del mismo modo, la variable `GenericApp` del elemento `displayName` debe coincidir exactamente con el atributo de la secuencia de comandos correspondiente `expectedWindow` pie de ilustración de ventana. Esta equivalencia se evalúa después de resolver cualquier expresión regular que aparezca en el `displayName` o `caption` atributos.
+El nombre de la aplicación se especifica como el valor del `GenericApp` del elemento `name` atributo. Este valor debe coincidir exactamente con el nombre correspondiente especificado en el script que desarrolle para esa aplicación. Del mismo modo, la variable `GenericApp` del elemento `displayName` debe coincidir exactamente con el atributo del script correspondiente `expectedWindow` pie de ilustración de ventana. Esta equivalencia se evalúa después de resolver cualquier expresión regular que aparezca en el `displayName` o `caption` atributos.
 
 En este ejemplo, los datos de configuración predeterminados suministrados con el servicio Generate PDF se modificaron para especificar que se debe utilizar Notepad (no Microsoft Word) para procesar archivos con la extensión de nombre de archivo .txt. Antes de esta modificación, se especificó Microsoft Word como la aplicación nativa que debe procesar dichos archivos.
 
@@ -983,7 +982,7 @@ En este ejemplo se especifica cómo debe interactuar el servicio Generate PDF co
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy we recommend using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

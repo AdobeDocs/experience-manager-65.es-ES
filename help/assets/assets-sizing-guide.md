@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Es difícil obtener cifras de tamaño precisas para un NodeStore o DocumentStore
 
 Dado que los binarios se almacenan en el almacén de datos, cada binario ocupa cierto espacio. La mayoría de los repositorios tienen menos de 100 GB. Sin embargo, puede haber repositorios más grandes de hasta 1 TB de tamaño. Además, para realizar la compactación sin conexión, necesita suficiente espacio libre en el volumen para reescribir el repositorio compactado junto con la versión precompactada. Una buena regla general es cambiar el tamaño del disco a 1,5 veces el tamaño esperado para el repositorio.
 
-Para el repositorio, utilice discos SSD o discos con un nivel de IOPS bueno a 3000. Para eliminar las posibilidades de que las IOPS introduzcan cuellos de botella de rendimiento, monitorice los niveles de espera de E/S de la CPU para detectar signos tempranos de problemas.
+Para el repositorio, utilice SSD o discos con un nivel de IOPS mayor que 3000. Para eliminar las posibilidades de que las IOPS introduzcan cuellos de botella de rendimiento, monitorice los niveles de espera de E/S de la CPU para detectar signos tempranos de problemas.
 
 [Obtener archivo](assets/aem_environment_sizingtool.xlsx)
 
@@ -111,16 +111,16 @@ Al cambiar el tamaño de una implementación, es importante tener en cuenta las 
 
 El tamaño del archivo no es el único factor que contribuye a los problemas de falta de memoria (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas de OM si proporciona un tamaño de pila más alto al iniciar [!DNL Experience Manager].
 
-Además, puede editar la propiedad de tamaño de umbral de `com.day.cq.dam.commons.handler.StandardImageHandler` en el Administrador de configuración para utilizar un archivo temporal intermedio bueno a cero.
+Además, puede editar la propiedad de tamaño de umbral de `com.day.cq.dam.commons.handler.StandardImageHandler` en el Administrador de configuración para utilizar un archivo temporal intermedio mayor que cero.
 
 ## Número máximo de recursos {#maximum-number-of-assets}
 
 El límite del número de archivos que pueden existir en un almacén de datos puede ser de 2100 millones debido a las limitaciones del sistema de archivos. Es probable que el repositorio encuentre problemas debido a un gran número de nodos mucho antes de alcanzar el límite del almacén de datos.
 
-Si las representaciones se generan incorrectamente, utilice la biblioteca Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser bueno a 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 x 1024 x 1024 píxeles). El tamaño del recurso no importa.
+Si las representaciones se generan incorrectamente, utilice la biblioteca Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser mayor de 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 x 1024 x 1024 píxeles). El tamaño del recurso no importa.
 
 Es difícil calcular con precisión el tamaño del archivo TIFF compatible de forma predeterminada con un montón específico para [!DNL Experience Manager] porque factores adicionales, como el tamaño de los píxeles, influyen en el procesamiento. Es posible que [!DNL Experience Manager] puede procesar un archivo de tamaño de 255 MB de forma predeterminada, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número de píxeles inusualmente mayor en comparación con el primero.
 
 ## Tamaño de los recursos {#size-of-assets}
 
-De forma predeterminada, [!DNL Experience Manager] le permite cargar recursos con un tamaño de archivo de hasta 2 GB. Para cargar recursos muy grandes en [!DNL Experience Manager], consulte [Configuración para cargar recursos muy grandes](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+De forma predeterminada, [!DNL Experience Manager] permite cargar recursos con un tamaño de archivo de hasta 2 GB. Para cargar recursos muy grandes en [!DNL Experience Manager], consulte [Configuración para cargar recursos muy grandes](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

@@ -12,9 +12,9 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2693'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Además, el análisis es necesario para lo siguiente:
    * Visualización de los datos de participación en [consola de administración de miembros](/help/communities/members.md) (vistas, publicaciones, seguimientos, me gusta)
    * Resumen de tendencias, latido de vídeo y dispositivo de vídeo para el recurso de habilitación [informes](/help/communities/reports.md)
 
-Las funciones de comunidades admitidas incluyen:
+Entre las funciones compatibles de Communities se incluyen:
 
 * [Foro](/help/communities/forum.md)
 * [P y R](/help/communities/working-with-qna.md)
@@ -68,23 +68,23 @@ Para configurar las funciones de Analytics para Communities, es necesario trabaj
 
 * **Nombre de la compañía**
 
-   La compañía asociada a la cuenta de Adobe Analytics.
+  La compañía asociada a la cuenta de Adobe Analytics.
 
 * **Nombre de usuario**
 
-   El nombre de usuario de inicio de sesión del usuario autorizado para administrar la cuenta de Analytics (debe incluir privilegios de acceso al servicio web).
+  El nombre de usuario de inicio de sesión del usuario autorizado para administrar la cuenta de Analytics (debe incluir privilegios de acceso al servicio web).
 
 * **Contraseña**
 
-   La contraseña de inicio de sesión del usuario autorizado.
+  La contraseña de inicio de sesión del usuario autorizado.
 
 * **Centro de datos de Analytics**
 
-   La URL del centro de datos de Analytics de la cuenta.
+  La URL del centro de datos de Analytics de la cuenta.
 
 * **Grupo de informes**
 
-   Nombre del grupo de informes de Analytics que se va a utilizar.
+  Nombre del grupo de informes de Analytics que se va a utilizar.
 
 ## Grupo de informes de Adobe Analytics para informes de vídeo {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -105,8 +105,8 @@ Iniciando sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com
    * type **`Counter`**
 
       * no **`Counter (no subrelations)`**
-   * Puede cambiar el propósito (cambiar el nombre) de eventos existentes o crear otros nuevos para usarlos para las funciones de Communities
 
+   * Puede cambiar el propósito (cambiar el nombre) de eventos existentes o crear otros nuevos para usarlos para las funciones de Communities
 
 * [Administración de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
@@ -114,11 +114,11 @@ Iniciando sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com
 
       * Habilitar `Video Core`
       * Seleccione Guardar
+
    * Consola de medición de Video Core
 
       * Seleccionar `Use Solution Variables`
       * Seleccione Guardar
-
 
 Si se usa un **nuevo grupo de informes** Sin embargo, tenga en cuenta que un nuevo grupo de informes solo puede tener 4 evars y 6 variables de evento, mientras que se requieren 11 evars y 7 variables de evento para las comunidades.
 
@@ -148,7 +148,7 @@ Para habilitar los informes de Video Heartbeat después de [configuración del g
 
 * Crear un [Analytics Cloud Service](#aem-analytics-cloud-service-configuration)
 * Activar [Analytics para un sitio de la comunidad](#enable-analytics-for-a-community-site)
-* Asociar el `Marketing Cloud Org Id` con el sitio de la comunidad
+* Asocie el `Marketing Cloud Org Id` con el sitio de la comunidad
 
 El `Marketing Cloud Org Id` puede introducirse en el momento de [creación de sitios de la comunidad](/help/communities/sites-console.md) o más tarde por [modificación](/help/communities/sites-console.md#modifying-site-properties) las propiedades del sitio de la comunidad.
 
@@ -162,7 +162,7 @@ Si no está habilitado, el código de latido de vídeo nunca se crea una instanc
 
 Para crear una nueva integración de Analytics, que integre Adobe Analytics AEM con el sitio de la comunidad de, mediante la interfaz de usuario estándar en la instancia de autor:
 
-* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services]**
+* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Service]**
 * Desplazarse hacia abajo hasta **[!UICONTROL Adobe Analytics]**
 * Seleccionar **[!UICONTROL Configurar ahora]** o **[!UICONTROL Mostrar configuraciones]**
 
@@ -178,17 +178,17 @@ En el cuadro de diálogo Crear configuración, los valores que se van a introduc
 
 * **Título**
 
-   (Obligatorio) Un título para mostrar para la configuración.
+  (Obligatorio) Un título para mostrar para la configuración.
 Por ejemplo, introduzca *Análisis de comunidad*
 
 * **Nombre**
 
-   (Opcional) Si no se especifica, el nombre tendrá de forma predeterminada un nombre de nodo válido derivado del título.
+  (Opcional) Si no se especifica, el nombre tendrá de forma predeterminada un nombre de nodo válido derivado del título.
 Por ejemplo, introduzca *comunidades*
 
 * **Plantilla**
 
-   Seleccionar `Adobe Analytics Configuration`
+  Seleccionar `Adobe Analytics Configuration`
 
 * Seleccione **Crear**
 
@@ -202,35 +202,35 @@ La creación inicial de una nueva configuración de Analytics da como resultado 
 
 * **Compañía**
 
-   La compañía asociada a la cuenta de Adobe Analytics.
+  La compañía asociada a la cuenta de Adobe Analytics.
 
 * **Nombre de usuario**
 
-   El nombre de usuario de inicio de sesión del usuario autorizado para administrar la cuenta de Analytics.
+  El nombre de usuario de inicio de sesión del usuario autorizado para administrar la cuenta de Analytics.
 
 * **Contraseña**
 
-   La contraseña de inicio de sesión del usuario autorizado.
+  La contraseña de inicio de sesión del usuario autorizado.
 
 * **Centro de datos**
 
-   Seleccione el centro de datos de Analytics que aloja el grupo de informes.
+  Seleccione el centro de datos de Analytics que aloja el grupo de informes.
 
 * **No añadir etiqueta de seguimiento a la página**
 
-   Dejar como predeterminado (sin seleccionar).
+  Dejar como predeterminado (sin seleccionar).
 
 * **Utilizar AppMeasurement**
 
-   Dejar como predeterminado (sin seleccionar).
+  Dejar como predeterminado (sin seleccionar).
 
 * **No importar las impresiones de la página cada noche (Author)**
 
-   Dejar como predeterminado (sin seleccionar).
+  Dejar como predeterminado (sin seleccionar).
 
 * **No importar las impresiones de la página cada noche (Publish)**
 
-   Dejar como predeterminado (sin seleccionar).
+  Dejar como predeterminado (sin seleccionar).
 
 Para guardar la configuración:
 
@@ -243,7 +243,7 @@ Para guardar la configuración:
 
 * Seleccionar **OK**.
 
-   ![analytics-settings](assets/analytics-settings1.png)
+  ![analytics-settings](assets/analytics-settings1.png)
 
 ### Crear módulo {#create-framework}
 
@@ -251,20 +251,20 @@ Después de configurar correctamente la conexión básica a Adobe Analytics, es 
 
 * Seleccionar `[+]` junto a **[!UICONTROL Módulos disponibles]** para crear un nuevo marco
 
-   ![analytics-framework](assets/analytics-framework.png)
+  ![analytics-framework](assets/analytics-framework.png)
 
 * **Título**
 
-   (Obligatorio) Un título para mostrar para el marco de trabajo. Por ejemplo, escriba *Community Framework*.
+  (Obligatorio) Un título para mostrar para el marco de trabajo. Por ejemplo, escriba *Community Framework*.
 
 * **Nombre**
 
-   (Opcional) Si no se especifica, el nombre tendrá de forma predeterminada un nombre de nodo válido derivado del título.
+  (Opcional) Si no se especifica, el nombre tendrá de forma predeterminada un nombre de nodo válido derivado del título.
 Por ejemplo, introduzca *comunidades*.
 
 * *Plantilla*
 
-   Seleccionar `Adobe Analytics Framework`.
+  Seleccionar `Adobe Analytics Framework`.
 
 * Seleccione **Crear**.
 
@@ -283,7 +283,7 @@ Seleccione el grupo de informes que se ha configurado para los informes de víde
 Si aún no se ha creado o configurado correctamente un grupo de informes, consulte la sección anterior:
 [Grupo de informes de Adobe Analytics para informes de vídeo](#adobe-analytics-report-suite-for-video-reporting)
 
-La barra de tareas no es necesaria y puede minimizarse para que no obstruya el acceso a la configuración del grupo de informes.
+El Sidekick no es necesario y puede minimizarse para que no obstruya el acceso a la configuración del grupo de informes.
 
 #### Cuadro de diálogo Grupos de informes antes y después de seleccionar &quot;Agregar elemento&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
 
@@ -527,8 +527,7 @@ A continuación se muestra un ejemplo de asignaciones predeterminadas:
 * *Título del componente UGC*: Temas de Senderismo
 * *inicio de sesión (authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *Ruta de SRP a UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-o 
-*ruta del componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+o *ruta del componente a seguir*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *ruta al contenido del sitio de la comunidad*: `/content/sites/<site name>/en`
 
@@ -639,7 +638,7 @@ El tema del foro es actualmente el único ejemplo de esta personalización:
 * Vaya a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * En el nodo jcr:content de la raíz del idioma (por ejemplo, `/content/sites/engage/en/jcr:content),`vaya al componente configurado para los informes de Analytics.
-Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**. 
+Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Observe los periodos de tiempo creados:
 

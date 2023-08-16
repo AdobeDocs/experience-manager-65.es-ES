@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 31%
+source-wordcount: '906'
+ht-degree: 28%
 
 ---
 
@@ -34,21 +34,21 @@ Para garantizar que el despliegue no esté bloqueado, las definiciones posibles 
 * qué páginas se cambiarán de nombre (y cómo),
 * cómo afectará esto a cualquier contenido publicado.
 
-   AEM El comportamiento predeterminado de los recursos (de forma predeterminada) es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, ese contenido se publicará después de la gestión y el despliegue del conflicto.
+  AEM El comportamiento predeterminado de los recursos (de forma predeterminada) es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, ese contenido se publicará después de la gestión y el despliegue del conflicto.
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflicto personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
 ### Escenario de ejemplo {#example-scenario}
 
-En las siguientes secciones utilizamos el ejemplo de una nueva página `b`, creado tanto en el modelo como en la rama de live copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
+En las siguientes secciones utilizamos el ejemplo de una nueva página `b`, creada tanto en el modelo como en la rama de live copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
 
 * modelo: `/b`
 
-   Una página maestra; con 1 página secundaria, bp-level-1.
+  Una página maestra; con 1 página secundaria, bp-level-1.
 
 * live copy: `/b`
 
-   Una página creada manualmente en la rama de Live Copy; con 1 página secundaria, `lc-level-1`.
+  Una página creada manualmente en la rama de Live Copy; con 1 página secundaria, `lc-level-1`.
 
    * Se activa durante la publicación como `/b`, junto con la página secundaria.
 
@@ -62,14 +62,14 @@ En las siguientes secciones utilizamos el ejemplo de una nueva página `b`, crea
    <td><strong>publicar antes del despliegue</strong></td>
   </tr>
   <tr>
-   <td><code>b</code> <br /> (creado en la rama del modelo, listo para su despliegue)<br /> </td>
-   <td><code>b</code> <br /> (creado manualmente en la rama de live copy)<br /> </td>
-   <td><code>b</code> <br /> (contiene el contenido de la página b que se creó manualmente en la rama de live copy)</td>
+   <td><code>b</code><br /> <br /> (creado en la rama del modelo, listo para su despliegue)<br /> </td>
+   <td><code>b</code><br /> <br /> (creado manualmente en la rama de live copy)<br /> </td>
+   <td><code>b</code><br /> <br /> (contiene el contenido de la página b que se creó manualmente en la rama de live copy)</td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (creado manualmente en la rama de live copy)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (contiene el contenido de la página<br /> child-level-1 (que se creó manualmente en la rama de live copy)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (creado manualmente en la rama de live copy)<br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (contiene el contenido de la página<br /> child-level-1 (que se creó manualmente en la rama de live copy)</td>
   </tr>
  </tbody>
 </table>
@@ -82,9 +82,9 @@ Esto se realiza mediante la [configuración OSGi](/help/sites-deploying/configur
 
 * **Controlar el conflicto con las páginas creadas manualmente**:
 
-   ( `rolloutmgr.conflicthandling.enabled`)
+  ( `rolloutmgr.conflicthandling.enabled`)
 
-   Se establece en true si el administrador de despliegue debe gestionar los conflictos de una página creada en Live Copy con un nombre que exista en el modelo.
+  Se establece en true si el administrador de despliegue debe gestionar los conflictos de una página creada en Live Copy con un nombre que exista en el modelo.
 
 AEM tiene [comportamiento predefinido cuando la administración de conflictos se ha desactivado](#behavior-when-conflict-handling-deactivated).
 
@@ -99,7 +99,7 @@ AEM proporciona lo siguiente:
    * `ResourceNameRolloutConflictHandler`
 
 * La posibilidad de implementar un [controlador personalizado](#customized-handlers).
-* El mecanismo de clasificación de servicios que le permite establecer la prioridad de cada controlador individual. Se utiliza el servicio con la clasificación más alta.
+* Mecanismo de clasificación de servicios que permite establecer la prioridad de cada controlador individual. Se utiliza el servicio con la clasificación más alta.
 
 ### Controlador de conflictos predeterminado {#default-conflict-handler}
 
@@ -114,13 +114,13 @@ Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b`
 
 * live copy: `/b`
 
-   Se mueve (dentro de la Live Copy) a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
+  Se mueve (dentro de la Live Copy) a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
 
    * `lc-level-1` no se mueve.
 
 * modelo: `/b`
 
-   Se despliega en la página de live copy `/b`.
+  Se despliega en la página de live copy `/b`.
 
    * `bp-level-1` se despliega en la Live Copy.
 
@@ -137,17 +137,17 @@ Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b`
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (tiene el contenido de la página de modelo b que se desplegó)<br /> </td>
+   <td><code>b</code><br /> <br /> (tiene el contenido de la página de modelo b que se desplegó)<br /> </td>
    <td></td>
-   <td><code>b_msm_moved</code> <br /> (tiene el contenido de la página b que se creó manualmente en la rama de live copy)</td>
-   <td><code>b</code> <br /> (sin cambios; contiene el contenido de la página original b que se creó manualmente en la rama de live copy y ahora se llama b_msm_move)<br /> </td>
+   <td><code>b_msm_moved</code><br /> <br /> (tiene el contenido de la página b que se creó manualmente en la rama de live copy)</td>
+   <td><code>b</code><br /> <br /> (sin cambios; contiene el contenido de la página original b que se creó manualmente en la rama de live copy y ahora se llama b_msm_move)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code class="code"> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (sin cambios)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (sin cambios)</td>
    <td><code> </code></td>
-   <td><code> /lc-level-1</code> <br /> (sin cambios)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (sin cambios)</td>
   </tr>
  </tbody>
 </table>
@@ -164,9 +164,9 @@ Los controladores de conflictos personalizados pueden hacer lo siguiente:
 
    * **Clasificación de servicios**:
 
-      Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
+     Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
 
-      El valor predeterminado es 0.
+     El valor predeterminado es 0.
 
 ### Comportamiento Cuando Se Desactiva La Gestión De Conflictos {#behavior-when-conflict-handling-deactivated}
 
@@ -180,11 +180,11 @@ En este caso, la Live Copy tiene prioridad. La página de modelo `/b` no se copi
 
 * modelo: `/b`
 
-   No se copia en absoluto y se ignora.
+  No se copia en absoluto y se ignora.
 
 * live copy: `/b`
 
-   Permanece igual.
+  Permanece igual.
 
 <table>
  <caption>
@@ -198,13 +198,13 @@ En este caso, la Live Copy tiene prioridad. La página de modelo `/b` no se copi
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (sin cambios; tiene el contenido de la página b que se creó manualmente en la rama de live copy)</td>
-   <td><code>b</code> <br /> (sin cambios; contiene el contenido de la página b que se creó manualmente en la rama de live copy)<br /> </td>
+   <td><code>b</code><br /> <br /> (sin cambios; tiene el contenido de la página b que se creó manualmente en la rama de live copy)</td>
+   <td><code>b</code><br /> <br /> (sin cambios; contiene el contenido de la página b que se creó manualmente en la rama de live copy)<br /> </td>
   </tr>
   <tr>
-   <td><code> /bp-level-1</code> </td>
-   <td><code> /lc-level-1</code> <br /> (sin cambios)</td>
-   <td><code> /lc-level-1</code> <br /> (sin cambios)</td>
+   <td><code> /bp-level-1</code><br /> </td>
+   <td><code> /lc-level-1</code><br /> <br /> (sin cambios)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (sin cambios)</td>
   </tr>
  </tbody>
 </table>

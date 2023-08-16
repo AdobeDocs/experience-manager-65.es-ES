@@ -10,10 +10,10 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 90%
+source-wordcount: '549'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 90%
 
 Cuando crea un formulario, puede especificar usuarios que revisen los envíos del formulario a través del portal de formularios y proporcionen comentarios. Su organización puede recopilar comentarios y volver a diseñar los formularios enviados.
 
-AEM Forms le permite asociar un grupo de revisores con un formulario. Los usuarios agregados al grupo de revisión de un formulario ven los envíos de este formulario y proporcionan comentarios.
+AEM Forms permite asociar un grupo de revisores con un formulario. Los usuarios agregados al grupo de revisión de un formulario ven los envíos de este formulario y proporcionan comentarios.
 
 Los grupos de revisores asignados a un formulario solo pueden revisar los envíos del formulario especificado.
 

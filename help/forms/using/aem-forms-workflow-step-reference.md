@@ -1,18 +1,14 @@
 ---
 title: 'Flujo de trabajo centrado en Forms en OSGi: referencia de los pasos'
-seo-title: Forms-centric workflow on OSGi - Step Reference
 description: El flujo de trabajo centrado en Forms sobre los pasos de OSGi le permite crear rápidamente flujos de trabajo basados en formularios adaptables.
-seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '7594'
-ht-degree: 99%
+source-wordcount: '7589'
+ht-degree: 97%
 
 ---
 
@@ -27,9 +23,9 @@ Los modelos de flujo de trabajo se utilizan para convertir una lógica empresari
 
 ## Pasos de Forms Workflow {#forms-workflow-steps}
 
-Los pasos de AEM Forms Workflow realizan operaciones específicas en un flujo de trabajo de AEM. Estos pasos le permiten generar rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede utilizar Forms Workflow para iniciar servicios de documentos, integrar con el flujo de trabajo de la firma de Adobe Sign y realizar otras operaciones de AEM Forms. Necesita el [complemento de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para utilizar estos pasos en un flujo de trabajo.
+Los pasos de AEM Forms Workflow realizan operaciones específicas en un flujo de trabajo de AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede utilizar Forms Workflow para iniciar servicios de documentos, integrar con el flujo de trabajo de la firma de Adobe Sign y realizar otras operaciones de AEM Forms. Necesita el [complemento de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para utilizar estos pasos en un flujo de trabajo.
 
-Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones específicas en un flujo de trabajo AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall.
+Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones específicas en un flujo de trabajo AEM. Estos pasos le permiten generar rápidamente un flujo de trabajo adaptable basado en Forms y centrado en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall.
 
 >[!NOTE]
 >
@@ -194,7 +190,7 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 
 ## Paso para invocar el servicio de modelo de datos de formulario {#invoke-form-data-model-service-step}
 
-Puede usar la [integración de datos de AEM Forms](../../forms/using/data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser una base de datos, un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de AEM Forms le permite crear un modelo de datos de formulario que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **paso para invocar el servicio de modelo de datos** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios del FDM para recuperar, actualizar o agregar datos a distintas fuentes de datos.
+Puede usar la [integración de datos de AEM Forms](../../forms/using/data-integration.md) para configurar y conectarse a fuentes de datos dispares. Estas fuentes de datos pueden ser una base de datos, un servicio web, un servicio REST, un servicio OData y una solución CRM. La integración de datos de AEM Forms permite crear un modelo de datos de formulario que incluya varios servicios para realizar operaciones de recuperación, adición y actualización de datos en la base de datos configurada. Puede usar el **paso para invocar el servicio de modelo de datos** para seleccionar un modelo de datos de formulario (FDM) y utilizar los servicios del FDM para recuperar, actualizar o agregar datos a distintas fuentes de datos.
 
 Para explicar las entradas de los campos del paso, se utilizan como ejemplo la siguiente tabla de base de datos y el archivo JSON:
 

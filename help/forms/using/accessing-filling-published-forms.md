@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 90%
+source-wordcount: '924'
+ht-degree: 86%
 
 ---
 
@@ -50,7 +50,7 @@ Puede buscar formularios en la página del portal de formularios mediante las si
 * Búsqueda de texto completo
 * Búsqueda avanzada
 
-La búsqueda de texto completo permite encontrar y enumerar formularios en función de las palabras clave especificadas.
+La búsqueda de texto completo permite buscar y enumerar formularios en función de las palabras clave especificadas.
 
 ![Cuadro de diálogo de búsqueda avanzada](assets/search-panel.png)
 

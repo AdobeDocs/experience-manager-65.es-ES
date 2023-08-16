@@ -12,9 +12,9 @@ discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM Esta función le permite comprobar las instancias de la existentes para ver si se pueden actualizar detectando patrones en uso que:
+AEM Esta función le permite comprobar la posibilidad de actualización de las instancias de existentes mediante la detección de patrones en uso que:
 
 1. Infringen ciertas reglas y se realizan en áreas que se verán afectadas o sobrescritas por la actualización
 1. AEM AEM Utilice una función de 6.x o una API que no sea compatible con versiones anteriores en la versión 6.5 y que pueda romperse después de la actualización.
@@ -32,7 +32,7 @@ AEM Esto podría servir como evaluación de las actividades de desarrollo que se
 
 ## Configuración {#how-to-set-up}
 
-Pattern Detector se libera por separado como [un paquete](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) AEM AEM trabajar con cualquier versión de origen de la versión 6.1 a la versión 6.5 con segmentación a partir de la actualización a la versión 6.5 de la versión 6.10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Se puede instalar utilizando el complemento [Administrador de paquetes](/help/sites-administering/package-manager.md).
+Pattern Detector se libera por separado como [un paquete](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) AEM AEM trabajar con cualquier versión de origen de la versión 6.1 a la versión 6.5 con segmentación a partir de la actualización a la versión 6.5 de la versión 6.100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Se puede instalar utilizando el complemento [Administrador de paquetes](/help/sites-administering/package-manager.md).
 
 ## Usos {#how-to-use}
 

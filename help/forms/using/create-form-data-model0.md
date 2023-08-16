@@ -8,10 +8,10 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2739'
-ht-degree: 99%
+source-wordcount: '2737'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Este tutorial es un paso en la serie [Crear su primera comunicación interactiva
 
 ## Información sobre el tutorial {#about-the-tutorial}
 
-El módulo de integración de datos de AEM Forms le permite crear un modelo de datos de formulario a partir de fuentes de datos backend dispares, como un perfil de usuario de AEM, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Puede configurar objetos y servicios del modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto del modelo de datos.
+El módulo de integración de datos de AEM Forms AEM le permite crear un modelo de datos de formulario a partir de fuentes de datos backend dispares, como un perfil de usuario, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Puede configurar objetos y servicios del modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto del modelo de datos.
 
 Para obtener más información sobre la integración y el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -146,6 +146,7 @@ Haga lo siguiente para configurar la base de datos MySQL:
       * **Consulta de validación:** especifica una consulta SQL SELECT para validar conexiones desde el grupo. La consulta debe devolver al menos una fila. Por ejemplo, **seleccione &#42; del cliente**.
 
       * **Aislamiento de transacciones**: establezca el valor en **READ_COMMITTED**.
+
    Deje las demás propiedades con los [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) predeterminados  y pulse **Guardar**.
 
    Se creará una configuración similar a la siguiente.
@@ -193,6 +194,7 @@ La configuración del modelo de datos de formulario incluye lo siguiente:
       * facturas
       * llamadas
       * cliente
+
    * **Servicios:**
 
       * conseguir

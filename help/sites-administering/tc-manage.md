@@ -2,10 +2,10 @@
 title: Administración de proyectos de traducción
 description: AEM Obtenga información sobre cómo administrar proyectos de traducción en.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 55%
+source-wordcount: '3586'
+ht-degree: 56%
 
 ---
 
@@ -31,7 +31,7 @@ Los proyectos y trabajos de traducción se crean con los flujos de trabajo de pr
 
 >[!NOTE]
 >
->La opción 3 no está relacionada con el trabajo o proyecto de traducción. Le permite copiar contenido y cambios estructurales en el idioma principal a copias de idioma (no traducidas). Puede usar esto para mantener a los maestros de idiomas sincronizados, incluso sin traducción.
+>La opción 3 no está relacionada con el trabajo o proyecto de traducción. Permite copiar el contenido y los cambios estructurales del idioma principal en copias de idioma (no traducidas). Puede usar esto para mantener a los maestros de idiomas sincronizados, incluso sin traducción.
 
 ## Realización de traducciones iniciales y actualización de traducciones existentes {#performing-initial-translations-and-updating-existing-translations}
 
@@ -374,9 +374,9 @@ Para comparar las copias de idioma con el idioma principal:
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
-1. Las dos páginas (inicio y origen) se abrirán en paralelo.
+1. Las dos páginas (inicio y origen) se abrirán una junto a la otra.
 
-   Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
+   Para obtener información completa sobre el uso de esta funcionalidad, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
 
 ## Finalización y archivado de trabajos de traducción {#completing-and-archiving-translation-jobs}
 

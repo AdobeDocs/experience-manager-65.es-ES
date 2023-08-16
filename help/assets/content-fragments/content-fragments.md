@@ -4,16 +4,16 @@ description: Descubra cómo los fragmentos de contenido en Adobe Experience Mana
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 93%
+source-wordcount: '1986'
+ht-degree: 92%
 
 ---
 
 # Trabajar con fragmentos de contenido {#working-with-content-fragments}
 
-Con Adobe Experience Manager AEM (), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-authoring/content-fragments.md) Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para la entrega sin encabezado.
+Con Adobe Experience Manager AEM (), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-authoring/content-fragments.md) Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para una entrega sin encabezado.
 
 Los fragmentos de contenido incluyen contenido estructurado:
 
@@ -62,7 +62,7 @@ El número de canales de comunicación aumenta de forma anual. Normalmente, los 
 
 Sin embargo, probablemente no desea utilizar exactamente el mismo contenido para todos los canales y necesita optimizar su contenido según el canal específico.
 
-Los fragmentos de contenido le permiten lo siguiente:
+Los fragmentos de contenido le permiten:
 
 * Pensar en cómo llegar a las audiencias de destino de forma eficaz en todos los canales.
 * Crear y administrar contenido editorial neutro para el canal.

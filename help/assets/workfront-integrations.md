@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1154'
 ht-degree: 5%
 
 ---
@@ -81,4 +81,4 @@ A continuación se describen las funcionalidades disponibles a través de varios
 | **Flujos de trabajo (predeterminados)** |
 | Crear nueva versión de prueba en recursos vinculados | Al vincular un recurso en Workfront, se puede generar una prueba automáticamente. | No | Personalizado | No |
 | Definir estado en objetos de Workfront | Definición de estados de objetos de Workfront AEM basados en condiciones configurables mediante flujos de trabajo de | No | ✓ | Próximamente |
-| Publicar recursos en el entorno de publicación de AEM o Brand Portal | Dé a los usuarios de Workfront la opción de publicar automáticamente los recursos vinculados en un entorno de publicación de AEM o Brand Portal. | No | ✓ | Próximamente |
+| AEM Publicar recursos en el entorno de publicación de la o Brand Portal | Dé a los usuarios de Workfront AEM la opción de publicar automáticamente los recursos vinculados en un entorno de publicación de o Brand Portal. | No | ✓ | Próximamente |

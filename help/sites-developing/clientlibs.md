@@ -1,19 +1,15 @@
 ---
 title: Uso de bibliotecas del lado del cliente
-seo-title: Using Client-Side Libraries
-description: AEM proporciona Carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
-seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
+description: AEM proporciona carpetas de biblioteca del lado del cliente, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2860'
 ht-degree: 4%
 
 ---
@@ -323,7 +319,7 @@ Por ejemplo, la siguiente tabla enumera el valor de la variable `channels` para 
 
 ## Uso de preprocesadores {#using-preprocessors}
 
-AEM permite el uso de preprocesadores y barcos conectables con soporte para [Compresor YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS y JavaScript y [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) AEM para JavaScript con la interfaz de usuario de establecida como preprocesador predeterminado de la interfaz de usuario de.
+AEM permite el uso de preprocesadores y naves conectables con soporte para [Compresor YUI](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) para CSS y JavaScript y [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) AEM para JavaScript con la interfaz de usuario de establecida como preprocesador predeterminado de la interfaz de usuario de.
 
 Los preprocesadores conectables permiten un uso flexible que incluye:
 

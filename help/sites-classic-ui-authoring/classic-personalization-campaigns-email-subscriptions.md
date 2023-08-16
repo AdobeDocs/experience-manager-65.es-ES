@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ AEM Para configurar una página de:
 1. Vaya a **Sitios web** pestaña.
 1. Seleccione la página que debe configurarse para el servicio. Haga clic con el botón derecho en la página y seleccione **Propiedades**.
 
-1. Seleccionar **Cloud Services** entonces **Añadir servicio**. Seleccione una configuración de la lista de configuraciones disponibles.
+1. Seleccionar **Cloud Service** entonces **Añadir servicio**. Seleccione una configuración de la lista de configuraciones disponibles.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -49,7 +49,7 @@ Para crear un formulario de registro y configurarlo para suscripciones a las lis
 1. Añadir un **Form** a la página arrastrando el componente desde la barra de tareas. Si el componente no está disponible, cambie al modo de diseño y habilite **Form** grupo.
 1. Clic **Editar** en el **Inicio de formulario** y vaya a la **Avanzadas** pestaña.
 1. En el **Form** menú desplegable, seleccione **Servicio de correo electrónico: crear suscriptor** y añadir a la lista.
-1. En la parte inferior del cuadro de diálogo, abra el **Configuración de acción** , que le permite seleccionar una o más listas de suscripción.
+1. En la parte inferior del cuadro de diálogo, abra el **Configuración de acción** , que permite seleccionar una o varias listas de suscripción.
 1. En el **Seleccionar lista**, seleccione la lista a la que desea que se suscriban los usuarios. Puede agregar varias listas utilizando el botón &quot;+&quot; (**Agregar elemento**).
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)

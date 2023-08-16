@@ -8,18 +8,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 56%
+source-wordcount: '1796'
+ht-degree: 50%
 
 ---
 
 # Diseño adaptable{#responsive-layout}
 
-AEM le permite tener un diseño adaptable para las páginas mediante el uso del **Contenedor de diseño** componente.
+AEM le permite tener un diseño adaptable para las páginas mediante el uso de la variable **Contenedor de diseño** componente.
 
-Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. Este componente se utiliza en combinación con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar el diseño interactivo en función del dispositivo.
+Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se utiliza junto con el [**Diseño** modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 El contenedor de diseño:
 
@@ -40,13 +40,14 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
 * Componente [**Contenedor de diseño**](#adding-a-layout-container-and-its-content-edit-mode)
 
-  Este componente está disponible en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
+  Este componente está disponible en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) y proporciona un sistema de párrafos de cuadrícula que le permite agregar y colocar componentes en una cuadrícula adaptable. También se puede establecer como sistema de párrafos predeterminado en la página.
 
 * [**Modo de diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
   Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
 
-* [**Emulador**](#selecting-a-device-to-emulate) Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
+* [**Emulador**](#selecting-a-device-to-emulate)
+Esto permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representará el contenido mediante el emulador.
 
 Con estos mecanismos de cuadrícula adaptable puede:
 
@@ -70,7 +71,7 @@ En función del proyecto, el contenedor de diseño se puede utilizar como sistem
 
 Al crear el contenido de su sitio web desea asegurarse de que el contenido se muestre correctamente según el dispositivo utilizado para ello.
 
-AEM le permite definir diseños según la anchura del dispositivo:
+AEM definir diseños según la anchura del dispositivo:
 
 * El emulador permite emular estos diseños en una amplia gama de dispositivos. Además del tipo de dispositivo, la orientación, que se selecciona mediante la opción **Rotar dispositivo**, puede afectar al punto de interrupción seleccionado a medida que cambia la anchura.
 * Los puntos de interrupción son puntos que separan las definiciones de diseño.
@@ -108,7 +109,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
+   * **Rotar dispositivo** : permite girar un dispositivo desde la orientación vertical (vertical) a la orientación horizontal (horizontal) y viceversa.
 
      ![Rotar dispositivo](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotar dispositivo](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -215,7 +216,7 @@ En el modo Diseño, se pueden realizar varias acciones en una cuadrícula:
   >
   >Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
 
-* Haga clic o toque un componente de contenido. La barra de herramientas le permite efectuar las siguientes acciones:
+* Haga clic o toque un componente de contenido. La barra de herramientas le permite:
 
    * **Principal**
 

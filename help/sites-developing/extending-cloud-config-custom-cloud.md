@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '404'
 ht-degree: 15%
 
 ---
 
 # Creación de un Cloud Service personalizado{#creating-a-custom-cloud-service}
 
-El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto le permite insertar marcado personalizado en la página de forma estructurada. Esto es principalmente útil para proveedores de análisis de terceros, como Google Analytics, Chartbeat, etc. Los Cloud Services se heredan de las páginas principales a las secundarias, con la capacidad de interrumpir la herencia en cualquier nivel.
+El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto permite insertar marcado personalizado en la página de forma estructurada. Esto es principalmente útil para proveedores de análisis de terceros, como Google Analytics, Chartbeat, etc. Los Cloud Service se heredan de las páginas principales a las secundarias, con la capacidad de interrumpir la herencia en cualquier nivel.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    * **Nombre**: plantillas
    * **Tipo**: `sling:Folder`
 
-1. Clic con el botón derecho en `/apps/acs/analytics/components`. Seleccionar **Crear...** seguido de **Crear componente...** El cuadro de diálogo que se abre le permite especificar lo siguiente:
+1. Clic con el botón derecho en `/apps/acs/analytics/components`. Seleccionar **Crear...** seguido de **Crear componente...** El cuadro de diálogo que se abre permite especificar lo siguiente:
 
    * **Etiqueta**: `googleanalyticspage`
    * **Título**: `Google Analytics Page`
@@ -209,5 +209,5 @@ El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud
    Elegir **Configuración de Google Analytics** y haga clic en **Crear**.
 
 1. Introduzca una **ID de cuenta**, por ejemplo `AA-11111111-1`. Haga clic en **Aceptar**.
-1. Vaya a una página y añada la configuración recién creada en las propiedades de página, en la **Cloud Services** pestaña.
+1. Vaya a una página y añada la configuración recién creada en las propiedades de página, en la **Cloud Service** pestaña.
 1. Se agregará a la página el marcado personalizado.

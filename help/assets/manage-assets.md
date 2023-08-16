@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10068'
+source-wordcount: '10067'
 ht-degree: 3%
 
 ---
@@ -60,7 +60,7 @@ Puede cargar varios tipos de recursos (incluidas imágenes, archivos de PDF, arc
 
 >[!IMPORTANT]
 >
->Los recursos que cargue en Experience Manager buena y que tengan un nombre de archivo de más de 100 caracteres, tienen un nombre abreviado cuando se utilizan en Dynamic Media.
+>Los recursos que carga en Experience Manager y que tienen un nombre de archivo de más de 100 caracteres tienen un nombre abreviado cuando se utilizan en Dynamic Media.
 >
 >Los 100 primeros caracteres del nombre de archivo se utilizan tal cual; los caracteres restantes se sustituyen por una cadena alfanumérica. Este método de cambio de nombre garantiza un nombre único cuando el recurso se utiliza en Dynamic Media. También está diseñado para dar cabida a la longitud máxima de nombre de archivo de recursos permitida en Dynamic Media.
 
@@ -80,13 +80,13 @@ Antes de cargar un recurso, asegúrese de que esté en una [formato](/help/asset
 
    Para seleccionar varios archivos, seleccione la `Ctrl` o `Command` y seleccione los recursos en el cuadro de diálogo selector de archivos. Al utilizar una iPad, solo puede seleccionar un archivo a la vez.
 
-   Puede pausar la carga de recursos grandes (buenos a 500 MB) y reanudarla más tarde desde la misma página. Clic **[!UICONTROL Pausar]** junto a la barra de progreso que aparece cuando se inicia una carga.
+   Puede pausar la carga de recursos grandes (superiores a 500 MB) y reanudarla más tarde desde la misma página. Clic **[!UICONTROL Pausar]** junto a la barra de progreso que aparece cuando se inicia una carga.
 
    ![Barra de progreso de carga de recursos](assets/upload-progress-bar.png)
 
-El tamaño por encima del cual un recurso se considera un recurso grande es configurable. Por ejemplo, puede configurar el sistema para que considere los recursos superiores a 1000 MB (en lugar de los 500 MB) como recursos grandes. En este caso, **[!UICONTROL Pausar]** aparece en la barra de progreso cuando se cargan recursos de tamaño bueno a 1000 MB.
+El tamaño por encima del cual un recurso se considera un recurso grande es configurable. Por ejemplo, puede configurar el sistema para que considere los recursos superiores a 1000 MB (en lugar de los 500 MB) como recursos grandes. En este caso, **[!UICONTROL Pausar]** aparece en la barra de progreso cuando se cargan recursos de tamaño superior a 1000 MB.
 
-El [!UICONTROL Pausar] buena La opción no muestra si un archivo de más de 1000 MB se ha cargado con un archivo de menos de 1000 MB. Sin embargo, si cancela la carga del archivo de menos de 1000 MB, la variable **[!UICONTROL Pausar]** aparece la opción.
+El [!UICONTROL Pausar] La opción no muestra si se carga un archivo de más de 1000 MB con un archivo de menos de 1000 MB. Sin embargo, si cancela la carga del archivo de menos de 1000 MB, la variable **[!UICONTROL Pausar]** aparece la opción.
 
 Para modificar el límite de tamaño, configure el `chunkUploadMinFileSize` propiedad del `fileupload` nodo en el repositorio CRX disponible en `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`.
 

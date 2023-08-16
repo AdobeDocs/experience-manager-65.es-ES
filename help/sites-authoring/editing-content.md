@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3080'
-ht-degree: 43%
+source-wordcount: '3067'
+ht-degree: 38%
 
 ---
 
@@ -88,7 +88,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. Según el contexto 
 
 * **Anotar**
 
-  Permite agregar [anotaciones](/help/sites-authoring/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones en la página.
+  Le permite agregar [anotaciones](/help/sites-authoring/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones en la página.
 
   ![Anotar](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -112,7 +112,7 @@ La notificación enumera el flujo de trabajo que se ejecuta en la página. Si el
 
 Completar y delegar los pasos del flujo de trabajo mediante la barra de notificaciones funciona igual que al [participar en flujos de trabajo](/help/sites-authoring/workflows-participating.md) desde la bandeja de entrada de notificaciones.
 
-Si la página está sujeta a varios flujos de trabajo, el número de los mismos se muestra en el extremo derecho de la notificación, junto a dos botones de flecha que permiten desplazarse por los flujos de trabajo.
+Si la página está sujeta a varios flujos de trabajo, el número de los mismos se muestra en el extremo derecho de la notificación, junto con botones de flecha que permiten desplazarse por los flujos de trabajo.
 
 ![Notificación del número de flujos de trabajo](assets/chlimage_1-122.png)
 
@@ -157,7 +157,7 @@ Puede agregar un componente nuevo mediante el cuadro **Arrastrar componentes aqu
 
    * En un dispositivo de escritorio puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
 
-   Se abrirá el cuadro de diálogo **Insertar nuevo componente** para que pueda seleccionar el componente requerido: 
+   El **Insertar nuevo componente** se abrirá un cuadro de diálogo para que pueda seleccionar el componente requerido:
 
    ![Insertar nuevo componente](assets/screen_shot_2018-03-22at112650.png)
 
@@ -230,13 +230,13 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
 * **Editar**
 
-  [En función del tipo de componente](/help/sites-authoring/default-components.md), esta opción le permite [editar el contenido del componente](#edit-content). Normalmente se mostrará una barra de herramientas.
+  [Depende del tipo de componente](/help/sites-authoring/default-components.md) esto le permitirá [editar el contenido del componente](#edit-content). Normalmente se mostrará una barra de herramientas.
 
   ![Editar](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurar**
 
-  [En función del tipo de componente](/help/sites-authoring/default-components.md), esta opción le permite editar y configurar las propiedades del componente. A menudo, se abrirá un cuadro de diálogo.
+  [Depende del tipo de componente](/help/sites-authoring/default-components.md) esto permite editar y configurar las propiedades del componente. A menudo, se abrirá un cuadro de diálogo.
 
   ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -280,7 +280,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
 * **Grupo**
 
-  Esto le permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
+  Esto permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
 
   ![Grupo](do-not-localize/screen_shot_2018-03-22at113240.png)
 
@@ -292,13 +292,13 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
 * **Diseño**
 
-  Esto le permite modificar el [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente seleccionado. Esto solo se aplica al componente seleccionado y no activa el [Modo Diseño](/help/sites-authoring/author-environment-tools.md#page-modes) para toda la página.
+  Esto permite modificar la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente seleccionado. Esto solo se aplica al componente seleccionado y no activa el [Modo Diseño](/help/sites-authoring/author-environment-tools.md#page-modes) para toda la página.
 
   ![Diseño](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Conversión en una variación de fragmento de experiencia**
 
-  Esto permite crear un nuevo [fragmento de experiencia](/help/sites-authoring/experience-fragments.md) a partir del componente seleccionado o añadirlo a un fragmento de experiencia. 
+  Esto permite crear una nueva [fragmento de experiencias](/help/sites-authoring/experience-fragments.md) del componente seleccionado o añadirlo a un fragmento de experiencia existente.
 
   ![Convertir en variación de fragmento de experiencia](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -427,7 +427,7 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
   La barra de herramientas de componentes, si el componente se encuentra en una página que forma parte de una Live Copy o Launch (basado en una Live Copy). Por ejemplo:
 
-  ![Live Copy   ](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 
   La opción Cancelar herencia está disponible:
 
@@ -494,7 +494,7 @@ Existen dos métodos para visualizar la vista previa de una página:
 Al editar contenido, puede obtener una vista previa de la página mediante la vista previa [modo](/help/sites-authoring/author-environment-tools.md#page-modes). Este modo:
 
 * Oculta los distintos mecanismos de edición para ofrecerle una vista rápida del aspecto que tendrá la página cuando se publique.
-* Permite utilizar vínculos para navegar.
+* Permite utilizar vínculos para desplazarse.
 * Does **no** actualice el contenido de la página.
 
 Durante la creación, el modo de vista previa está disponible mediante el icono situado en la parte superior derecha del editor de páginas:
@@ -549,7 +549,7 @@ El menú Información de página muestra la opción **Desbloquear** y el icono B
 
 ## Deshacer y rehacer modificaciones de páginas {#undoing-and-redoing-page-edits}
 
-Los iconos siguientes le permiten deshacer o rehacer una acción. Se muestran en la barra de herramientas cuando corresponde:
+Los iconos siguientes permiten deshacer o rehacer una acción. Se muestran en la barra de herramientas cuando corresponde:
 
 ![Deshacer y rehacer](do-not-localize/screen_shot_2018-03-23at093614.png)
 

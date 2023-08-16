@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1442'
 ht-degree: 68%
 
 ---
@@ -43,6 +43,7 @@ Puede utilizar los fragmentos de experiencias:
 >La escritura de acceso para fragmentos de experiencias requiere que la cuenta de usuario se registre en el grupo:
 >
 >    `experience-fragments-editors`
+>
 Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 ## ¿Cuándo se deben utilizar los fragmentos de experiencias?   {#when-should-you-use-experience-fragments}
@@ -79,13 +80,15 @@ La creación de carpetas permite:
 
 * crear una estructura significativa para los fragmentos de experiencias; por ejemplo, según la clasificación.
 
-   >[!NOTE]
-   No es necesario alinear la estructura de los fragmentos de experiencias con la estructura de página del sitio.
+  >[!NOTE]
+  >
+  No es necesario alinear la estructura de los fragmentos de experiencias con la estructura de página del sitio.
 
 * [asignar las plantillas permitidas en el nivel de carpeta](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   Puede utilizar el [editor de plantillas](/help/sites-authoring/templates.md) para crear su propia plantilla.
+  >[!NOTE]
+  >
+  Puede utilizar el [editor de plantillas](/help/sites-authoring/templates.md) para crear su propia plantilla.
 
 El proyecto WKND estructura algunos fragmentos de experiencias según `Contributors`. La estructura utilizada también ilustra cómo se pueden utilizar otras funciones, como la Administración de varios sitios (incluidas las copias de idiomas).
 
@@ -104,11 +107,13 @@ Para crear y configurar una carpeta para los fragmentos de experiencias, se reco
 1. [Configurar las plantillas de fragmento de experiencia permitidas para esa carpeta](#configure-allowed-templates-folder).
 
 >[!NOTE]
+>
 También es posible configurar las plantillas [permitidas para su instancia](#configure-allowed-templates-instance), pero este método **no se recomienda**, ya que los valores se pueden sobrescribir tras la actualización.
 
 ### Configurar las plantillas permitidas para la carpeta {#configure-allowed-templates-folder}
 
 >[!NOTE]
+>
 Este es el método recomendado para especificar las **plantillas permitidas**, ya que los valores no se sobrescriben tras la actualización.
 
 1. Vaya a la carpeta de **fragmentos de experiencias** necesaria.
@@ -126,6 +131,7 @@ Este es el método recomendado para especificar las **plantillas permitidas**, y
    ![Propiedades de fragmentos de experiencias: plantillas permitidas](/help/sites-authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
+   >
    Para obtener más información, consulte [Plantillas para fragmentos de experiencias](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Seleccione **Guardar y cerrar**.
@@ -133,7 +139,9 @@ Este es el método recomendado para especificar las **plantillas permitidas**, y
 ### Configure las plantillas permitidas para la instancia {#configure-allowed-templates-instance}
 
 >[!CAUTION]
+>
 No se recomienda cambiar las **plantillas permitidas** por este método, ya que las plantillas especificadas se pueden sobrescribir tras la actualización.
+>
 Utilice este cuadro de diálogo únicamente con fines informativos.
 
 1. Vaya a la consola de **fragmentos de experiencias** indicada.
@@ -147,6 +155,7 @@ Utilice este cuadro de diálogo únicamente con fines informativos.
    ![Configurar Fragmentos de experiencias](assets/ef-01.png)
 
    >[!NOTE]
+   >
    Para obtener más información, consulte [Plantillas para fragmentos de experiencias](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Seleccione **Guardar**.
@@ -176,7 +185,9 @@ Para crear un fragmento de experiencia:
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
+   >
    Las etiquetas de la plantilla de Fragmento de experiencia no se combinarán con etiquetas en esta página raíz del Fragmento de experiencia.
+   >
    Son totalmente independientes.
 
 1. Haga clic en **Crear**.
@@ -192,6 +203,7 @@ Para crear un fragmento de experiencia:
 El editor de fragmentos de experiencias ofrece funcionalidades similares a las del editor de páginas.
 
 >[!NOTE]
+>
 Consulte [Edición del contenido de página](/help/sites-authoring/editing-content.md) para obtener más información sobre cómo utilizar el editor de páginas.
 
 El siguiente procedimiento de ejemplo ilustra cómo crear un teaser para un producto:
@@ -214,7 +226,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Crear** le permite crear:
+1. **Crear** permite crear:
 
    * **Variación**
    * **[Variación como Live Copy](/help/sites-administering/msm.md#live-copies)**.
@@ -253,6 +265,7 @@ Ahora puede utilizar el fragmento de experiencia para crear páginas:
    ![xf-09](assets/xf-09.png)
 
    >[!NOTE]
+   >
    La opción Editar, en la barra de herramientas del componente, funciona como un método abreviado para abrir el fragmento en el editor de fragmentos.
 
 ## Componentes {#building-blocks}
@@ -308,7 +321,10 @@ Se pueden ver los detalles del fragmento:
    Las propiedades están disponibles en varias pestañas:
 
    >[!CAUTION]
+   >
    Estas pestañas se muestran al abrir **Propiedades** desde la consola fragmentos de experiencias.
+   >
+   >
    Si se selecciona **Abrir propiedades** al editar un fragmento de experiencia, se muestran las [propiedades de página](/help/sites-authoring/editing-page-properties.md) correspondientes.
 
    ![ef-05](assets/ef-05.png)
@@ -325,27 +341,28 @@ Se pueden ver los detalles del fragmento:
       * **Número de variantes no web** - inf **Solo formación**
 
       * **Número de páginas que utilizan este fragmento** - solo información
+
    * **Cloud Services**
 
       * **Configuración de nube**
       * **Configuraciones de Cloud Service**
       * **ID de página de Facebook**
       * **Tablero de Pinterest**
+
    * **Referencias**
 
       * Una lista de referencias.
+
    * **Estado de medios sociales**
 
       * Detalles de las variaciones de las redes sociales.
-
-
-
 
 ## Representación HTML sin formato {#the-plain-html-rendition}
 
 Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML sin formato desde el explorador.
 
 >[!NOTE]
+>
 Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}

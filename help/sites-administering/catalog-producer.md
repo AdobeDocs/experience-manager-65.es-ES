@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 description: Productor de catálogos
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Catalog Producer utiliza datos de administración de la información del product
    >
    >Para cambiar los metadatos de un producto al que se hace referencia, vaya a la consola Productos (**AEM Logotipo de** > **Comercio** > **Productos**) y seleccione el producto. A continuación, toque o haga clic en **Ver propiedades** en la barra de herramientas y edite los metadatos en la página Propiedades del recurso.
 
-1. Para reorganizar las páginas del catálogo, pulse o haga clic en **Crear** en la barra de herramientas y, a continuación, elija **Combinar** en el menú. En el asistente, el carrusel en la parte superior le permite reordenar las páginas arrastrándolas. También puede quitar páginas.
+1. Para reorganizar las páginas del catálogo, pulse o haga clic en **Crear** en la barra de herramientas y, a continuación, elija **Combinar** en el menú. En el asistente, el carrusel de la parte superior permite reordenar las páginas arrastrándolas. También puede quitar páginas.
 
 1. Pulse o haga clic en **Siguiente**. Para agregar un archivo de InDesign existente como portada, pulse o haga clic en **Examinar** al lado del **Elegir portada** y especifique la ruta de acceso para la plantilla de portada.
 1. Pulse o haga clic en **Guardar** y, a continuación, toque o haga clic en **Listo** para cerrar el cuadro de diálogo de confirmación.

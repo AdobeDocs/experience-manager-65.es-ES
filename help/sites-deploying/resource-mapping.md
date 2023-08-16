@@ -8,16 +8,16 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '521'
 ht-degree: 4%
 
 ---
 
 # Asignación de recursos{#resource-mapping}
 
-La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para Adobe Experience Manager AEM ().
+La asignación de recursos se utiliza para definir redirecciones, URL personalizadas y hosts virtuales para Adobe Experience Manager AEM ().
 
 Por ejemplo, puede utilizar estas asignaciones para lo siguiente:
 
@@ -50,7 +50,7 @@ Estas listas se pueden ver (junto con la información de configuración) en la *
 
 * Configuración Muestra la configuración actual (tal como se define para la variable [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)).
 
-* Prueba de configuración Permite introducir una dirección URL o una ruta de recursos. Clic **Resolver** o **Mapa** para confirmar cómo transformará el sistema la entrada.
+* Prueba de configuración Permite introducir una dirección URL o una ruta de recurso. Clic **Resolver** o **Mapa** para confirmar cómo transformará el sistema la entrada.
 
 * **Entradas de mapa de resolución**
 La lista de entradas utilizadas por los métodos ResourceResolver.resolve para asignar direcciones URL a recursos.

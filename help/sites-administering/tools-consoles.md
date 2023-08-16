@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 33%
+source-wordcount: '604'
+ht-degree: 34%
 
 ---
 
@@ -394,7 +394,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Tableros</td>
-   <td>Permite crear paneles de creación de informes, que proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
+   <td>Permite crear paneles de informes, que proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
   </tr>
   <tr>
    <td>Documentación personalizada</td>
@@ -430,7 +430,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Informes</td>
-   <td>AEM proporciona una serie de informes personalizados, le permite crear informes personalizados o desarrollar los suyos propios.</td>
+   <td>AEM proporciona una gama de informes personalizados, le permite crear informes personalizados o desarrollar los suyos propios.</td>
   </tr>
   <tr>
    <td>Andamiaje de página predeterminada</td>

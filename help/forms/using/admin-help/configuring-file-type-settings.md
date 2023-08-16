@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
 workflow-type: tm+mt
 source-wordcount: '6158'
 ht-degree: 0%
@@ -24,7 +24,7 @@ En PDF Generator, puede establecer la configuración de la aplicación para los 
 En la página Configuración de tipo de archivo, puede realizar estas tareas:
 
 * [Crear o editar una configuración de Tipo de archivo](#create-or-edit-file-type-settings)
-* Especifique qué configuración de tipo de archivo utilizar de forma predeterminada (consulte [Importar y exportar archivos de configuración de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
+* Especifique qué configuración de tipo de archivo utilizar de forma predeterminada (consulte [Importar y exportar archivos de configuración del PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
 * [Cambiar la configuración predeterminada](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [Habilitar compatibilidad con PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
 * [Eliminar una configuración de tipo de archivo](/help/forms/using/admin-help/enable-pdf-a-support.md)
@@ -37,7 +37,7 @@ En la página Configuración de tipo de archivo, puede realizar estas tareas:
 
 Cree o edite una configuración de tipo de archivo para especificar cómo administra la aplicación la conversión de los tipos de archivo admitidos. En Windows, puede establecer la configuración de la aplicación para cada tipo de archivo compatible. En UNIX y Linux, puede configurar los ajustes de la aplicación para HTML a PDF y OpenOffice.
 
-1. En la consola de administración, haga clic en **[!UICONTROL Servicios]** > **[!UICONTROL Generador de PDF]** > **[!UICONTROL Configuración de tipo de archivo]**.
+1. En la consola de administración, haga clic en **[!UICONTROL Servicios]** > **[!UICONTROL PDF Generator]** > **[!UICONTROL Configuración de tipo de archivo]**.
 1. Haga clic en Nuevo o haga clic en el nombre de una configuración.
 1. En el cuadro Extensiones de nombre de archivo, escriba las extensiones de nombre de archivo, separadas por comas, para los tipos de archivo aceptados para esta aplicación. No incluya el punto anterior o un espacio entre las extensiones. El valor predeterminado es `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Opcional) Para utilizar el reconocimiento óptico de código (OCR) de texto en gráficos o imágenes, seleccione Usar OCR y defina las siguientes opciones:
@@ -78,7 +78,7 @@ Cree o edite una configuración de tipo de archivo para especificar cómo admini
 
 [Configuración de OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Configuración de otras aplicaciones (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+[Configuración de otras aplicaciones (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Para ir a otra sección, haga clic en su vínculo en la página web o utilice el **[!UICONTROL Siguiente]** o **[!UICONTROL Anterior]** botones.
 
@@ -90,7 +90,7 @@ Se puede personalizar la compatibilidad con varios tipos de archivo. (Consulte &
 
 Puede cambiar el valor predeterminado de la configuración de Adobe PDF, la configuración de seguridad y la configuración de tipo de archivo que se aplican a los orígenes recién creados. Cambiar los valores predeterminados no afecta a la configuración de los orígenes existentes.
 
-1. En la consola de administración, haga clic en **[!UICONTROL Servicios > Generador de PDF]**.
+1. En la consola de administración, haga clic en **[!UICONTROL Servicios > PDF Generator]**.
 1. En el **[!UICONTROL Configuración de Adobe PDF]**, **[!UICONTROL Configuración de tipo de archivo]**, o **[!UICONTROL Configuración de seguridad]** página, haga clic en **[!UICONTROL Establecer configuración predeterminada]**.
 1. Seleccione la configuración predeterminada que prefiera. En la página Establecer configuración predeterminada están disponibles una o varias de las opciones siguientes:
 
@@ -218,7 +218,7 @@ Active estas opciones para especificar el aspecto de la ventana:
 
 ## Configuración de vídeos de Flash a PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator admite la capacidad de enviar un vídeo para Flash de Adobe (archivo SWF o FLV) y crear un archivo PDF con un vídeo para Flash de Adobe incrustado en él. Esta conversión no requiere que el Flash Player del Adobe esté instalado en el servidor de Forms. Para obtener instrucciones sobre cómo acceder a esta opción, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator admite la capacidad de enviar un vídeo para el Flash de Adobe (archivo SWF o FLV) y crear un archivo PDF con un vídeo para el Flash de Adobe incrustado en él. Esta conversión no requiere que el Flash Player del Adobe esté instalado en el servidor de Forms. Para obtener instrucciones sobre cómo acceder a esta opción, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensiones de nombre de archivo:** Lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
 
@@ -440,7 +440,7 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft Excel. P
 
 Estas opciones determinan cómo se convierten los archivos de Microsoft PowerPoint. Para obtener instrucciones sobre el acceso a estas opciones, consulte [Crear o editar la configuración de tipo de archivo](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Pruebe OpenOffice como conversor de reserva]**: cuando se selecciona esta opción y una conversión que utiliza Microsoft PowerPoint falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
+**[!UICONTROL Pruebe OpenOffice como conversor de reserva]**: Cuando se selecciona esta opción y una conversión que utiliza Microsoft PowerPoint falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
 **[!UICONTROL Extensiones de nombre de archivo]**: especifica las extensiones de nombre de archivo para los tipos de archivo, separados por comas, que se aceptan en esta aplicación. El valor predeterminado es ppt,pptx. No incluya un punto antes o un espacio entre las extensiones.
 
@@ -575,7 +575,7 @@ Estas opciones determinan cómo se convierten los archivos de AutoCAD. Para obte
 
 **[!UICONTROL Crear archivo compatible con PDF/A-1b]**: Fuerza el uso de la configuración de Adobe PDF PDF/A-1b.
 
-**[!UICONTROL Convertir todas las capas]**: De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de archivos de AutoCAD en PDF, en lugar de todas las capas del archivo. Seleccione esta opción para convertir todas las capas del archivo.
+**[!UICONTROL Convertir todas las capas]**: De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de archivos de AutoCAD en PDF en lugar de todas las capas del archivo. Seleccione esta opción para convertir todas las capas del archivo.
 
 **[!UICONTROL Incrustar información de escala]**: conserva la información de escala de dibujo.
 
@@ -587,7 +587,7 @@ Estas opciones determinan cómo se convierten los archivos de AutoCAD. Para obte
 
 Estas opciones determinan cómo se convierten los archivos de OpenOffice. Para obtener instrucciones sobre el acceso a estas opciones, consulte [Crear o editar la configuración de tipo de archivo](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Pruebe PDFMaker como convertidor de reserva**: cuando se selecciona esta opción y una conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante PDFMaker. Si la conversión mediante PDFMaker falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
+**Pruebe PDFMaker como convertidor de reserva**: cuando se selecciona esta opción y una conversión que utiliza OpenOffice falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante PDFMaker. Si la conversión mediante PDFMaker falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
 **Extensiones de nombre de archivo**: especifique las extensiones de nombre de archivo para los tipos de archivo, separados por comas, que se aceptan para esta aplicación. El valor predeterminado es `odt,odp,ods,odg,odf,sxw,sxi,sxd`. No incluya un punto antes o un espacio entre las extensiones.
 

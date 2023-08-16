@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 100%
+source-wordcount: '858'
+ht-degree: 98%
 
 ---
 
 # Ver y comprender los informes de transacciones{#viewing-and-understanding-transaction-reports}
 
-Los informes de transacciones le permiten capturar y realizar un seguimiento de la cantidad de formularios enviados y documentos representados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Para obtener más información, consulte [Información general sobre los informes de transacciones de AEM Forms](../../forms/using/transaction-reports-overview.md).
+Los informes de transacciones permiten capturar y realizar un seguimiento de la cantidad de formularios enviados, documentos procesados y documentos representados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Para obtener más información, consulte [Información general sobre los informes de transacciones de AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 ## Configurar informes de transacciones  {#setting-up-transaction-reports}
 
@@ -35,7 +35,6 @@ La función de informes de transacciones está disponible como parte del paquete
 >* Antes de usar informes de transacciones, asegúrese de que la replicación inversa esté habilitada para todas las instancias de publicación.
 >* Los datos de transacción se replican de forma inversa de una instancia de publicación a la instancia de autor o procesamiento correspondiente. El autor o la instancia de procesamiento no pueden replicar más datos en otra instancia.
 >
-
 
 ### Habilite la replicación inversa en todas las instancias de publicación {#enable-reverse-replication-on-all-the-publish-instances}
 

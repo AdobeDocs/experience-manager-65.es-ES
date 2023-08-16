@@ -4,10 +4,10 @@ description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 6b9eb1a6df7cc4a8afab1c83d93d8a53bd94f6f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2332'
-ht-degree: 95%
+source-wordcount: '2328'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +55,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
    Una vez abierto, el editor de modelos muestra lo siguiente:
 
    * A la izquierda: los campos ya definidos.
-   * A la derecha: los **Tipos de datos** disponibles para crear campos (y **Propiedades** para su uso una vez creados los campos).
+   * A la derecha: los **Tipos de datos** disponibles para crear campos (y **Propiedades** para su uso una vez creados los campos)
 
    >[!NOTE]
    >
@@ -67,22 +67,22 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
    * Arrastre un tipo de datos requerido a la ubicación requerida para un campo.
 
-      ![Tipo de datos para el campo](assets/cfm-models-04.png)
+     ![Tipo de datos para el campo](assets/cfm-models-04.png)
 
    * Una vez añadido un campo al modelo, el panel derecho mostrará las **Propiedades** que se pueden definir para ese tipo de datos en particular. Aquí puede definir lo que se requiere para ese campo.
 
       * Muchas propiedades se explican por sí mismas; para obtener más información, consulte [Propiedades](#properties).
       * Escribir una **Etiqueta de campo** autocompletará el **Nombre de propiedad** si está vacío, y se puede actualizar de forma manual más tarde.
 
-         >[!CAUTION]
-         >
-         >Al actualizar de forma manual la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
-         >
-         >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
-      Por ejemplo:
+        >[!CAUTION]
+        >
+        >Al actualizar de forma manual la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
+        >
+        >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
-      ![Propiedades de campo](assets/cfm-models-05.png)
+     Por ejemplo:
 
+     ![Propiedades de campo](assets/cfm-models-05.png)
 
 1. **Eliminación de un campo**
 
@@ -131,10 +131,9 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Permite la introducción de pestañas para utilizarlas al editar el contenido del fragmento de contenido.
 Esto se mostrará como un divisor en el editor de modelos, que separa las secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
 En el editor de fragmentos, cada instancia aparecerá como una pestaña.
-
-      >[!NOTE]
-      >
-      >Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
+     >[!NOTE]
+     >
+     >Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
 
 ## Propiedades {#properties}
 
@@ -143,18 +142,17 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 
 * **Nombre de propiedad**
 
-   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **deben** contener *solo* caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
+  Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **deben** contener *solo* caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
 
-   >[!CAUTION]
-   >
-   >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
+  >[!CAUTION]
+  >
+  >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
 * **Representar como**
 Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
 
 * **Etiqueta de campo**
-Introducir una 
-**Etiqueta de campo** generará automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
+Introducción de una **Etiqueta de campo** generará automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
 
 * **Validación**
 La validación básica está disponible mediante mecanismos como la propiedad **Requerido**. Algunos tipos de datos tienen campos de validación adicionales. Consulte [Validación](#validation) para obtener más información.
@@ -165,24 +163,24 @@ La validación básica está disponible mediante mecanismos como la propiedad **
    * **Markdown**
    * **Texto sin formato**
 
-   Si no se especifica, el valor predeterminado **Texto enriquecido** es el empleado para este campo.
+  Si no se especifica, el valor predeterminado **Texto enriquecido** es el empleado para este campo.
 
-   Cambiar el **tipo predeterminado** en un modelo de fragmento de contenido solo surtirá efecto en un fragmento de contenido existente relacionado después de que dicho fragmento se abra en el editor y se guarde.
+  Cambiar el **tipo predeterminado** en un modelo de fragmento de contenido solo surtirá efecto en un fragmento de contenido existente relacionado después de que dicho fragmento se abra en el editor y se guarde.
 
 * **Único**
 El contenido (para el campo específico) debe ser único en todos los fragmentos de contenido creados a partir del modelo actual.
 
-   Se utiliza para garantizar que los autores de contenido no puedan repetir el contenido ya añadido en otro fragmento del mismo modelo.
+  Se utiliza para garantizar que los autores de contenido no puedan repetir el contenido ya añadido en otro fragmento del mismo modelo.
 
-   Por ejemplo, un campo de **Texto de una sola línea** llamado `Country` en el modelo de fragmentos de contenido no puede tener el valor `Japan` en dos fragmentos de contenido dependientes. Se emitirá una advertencia cuando se intente la segunda instancia.
+  Por ejemplo, un campo de **Texto de una sola línea** llamado `Country` en el modelo de fragmentos de contenido no puede tener el valor `Japan` en dos fragmentos de contenido dependientes. Se emitirá una advertencia cuando se intente la segunda instancia.
 
-   >[!NOTE]
-   >
-   >La unicidad se garantiza por cada raíz de idioma.
+  >[!NOTE]
+  >
+  >La unicidad se garantiza por cada raíz de idioma.
 
-   >[!NOTE]
-   >
-   >Las variaciones pueden tener el mismo valor *único* como variaciones del mismo fragmento, pero no del mismo valor que se utiliza en cualquier variación de otros fragmentos.
+  >[!NOTE]
+  >
+  >Las variaciones pueden tener el mismo valor *único* como variaciones del mismo fragmento, pero no del mismo valor que se utiliza en cualquier variación de otros fragmentos.
 
 * Consulte **[Referencia de contenido](#content-reference)** para obtener más información acerca de ese tipo de datos específico y sus propiedades.
 
@@ -222,10 +220,9 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 * **[Referencia a fragmento](#fragment-reference-nested-fragments)** (fragmentos anidados)
    * Hace referencia a otros fragmentos, según los modelos específicos definidos.
    * Permite incluir o recuperar datos estructurados.
-
-      >[!NOTE]
-      >
-      >Este método reviste especial interés en conjunción con la [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     >[!NOTE]
+     >
+     >Este método reviste especial interés en conjunción con la [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Se puede configurar para una o varias referencias (en el fragmento resultante).
 
 >[!NOTE]
@@ -233,15 +230,14 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 >AEM tiene una protección contra recurrencias para lo siguiente:
 >
 >* Referencias de contenido
-   >  Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
+>  Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
 >* Referencias a fragmento en GraphQL
-   >  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
-
+>  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 ### Referencia de contenido {#content-reference}
 
-La referencia de contenido le permite procesar contenido de otra fuente; por ejemplo, imagen o fragmento de contenido.
+La referencia de contenido permite procesar contenido de otra fuente; por ejemplo, imagen o fragmento de contenido.
 
 Además de las propiedades estándar, puede especificar las siguentes:
 
@@ -297,11 +293,11 @@ Esto especifica una ruta raíz para los fragmentos a los que se hace referencia.
 
 * **Permitir creación de fragmentos**
 
-   Esto permitirá al autor del fragmento crear un nuevo fragmento basado en el modelo adecuado.
+  Esto permitirá al autor del fragmento crear un nuevo fragmento basado en el modelo adecuado.
 
    * **fragmentreferencecomposite**: permite al autor del fragmento crear un compuesto seleccionando varios fragmentos.
 
-   ![Referencia a fragmento](assets/cfm-fragment-reference.png)
+  ![Referencia a fragmento](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -366,15 +362,16 @@ Para configurar las **Directivas** para **Modelos de fragmento de contenido perm
 
    * **Heredado de`<folder>`**
 
-      Las directivas se heredan automáticamente al crear nuevas carpetas secundarias; la directiva se puede reconfigurar (y la herencia se rompe) si las subcarpetas necesitan permitir modelos diferentes de la carpeta principal.
+     Las directivas se heredan automáticamente al crear nuevas carpetas secundarias; la directiva se puede reconfigurar (y la herencia se rompe) si las subcarpetas necesitan permitir modelos diferentes de la carpeta principal.
 
    * **Modelos de fragmento de contenido permitidos por ruta**
 
-      Se pueden permitir varios modelos.
+     Se pueden permitir varios modelos.
 
    * **Modelos de fragmento de contenido permitidos por etiquetas**
 
-      Se pueden permitir varios modelos.
+     Se pueden permitir varios modelos.
+
    ![Directiva del modelo de fragmento de contenido](assets/cfm-model-policy-assets-folder.png)
 
 1. **Guardar** cualquier cambio.

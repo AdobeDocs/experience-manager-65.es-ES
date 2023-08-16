@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 59%
+source-wordcount: '263'
+ht-degree: 55%
 
 ---
 
@@ -36,7 +36,7 @@ Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo seleccion
 
 Esta barra de herramientas ofrece las opciones siguientes:
 
-* **Formato**: esta opción le permite utilizar negrita, cursiva y subrayado.
+* **Formato**: esto permite establecer Negrita, Cursiva y Subrayado.
 * **Listas**: con esta opción puede crear listas con viñetas o números, o establecer la sangría.
 * **Hipervínculo**
 * **Desvincular**

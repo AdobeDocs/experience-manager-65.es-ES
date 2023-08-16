@@ -11,10 +11,10 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 99%
+source-wordcount: '2511'
+ht-degree: 97%
 
 ---
 
@@ -27,10 +27,9 @@ Puede mover formularios y recursos relacionados, temas, diccionarios de datos, f
 >* En AEM 6.4 Forms, la estructura y las rutas del repositorio CRX han cambiado. Si importa recursos de una versión anterior a AEM 6.4 Forms, y el formulario tiene dependencias con la estructura anterior, deberá exportarlas manualmente. Para obtener más detalles sobre los cambios en la estructura y las rutas del repositorio, consulte [Reestructuración del repositorio en AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
-
 ## Descargar o cargar recursos de formularios y documentos {#download-or-upload-forms-amp-documents-assets}
 
-La interfaz de usuario de AEM Forms le permite exportar recursos desde una instancia de AEM descargándolos como un paquete CRX de AEM o como archivos binarios. A continuación, puede importar el paquete CRX de AEM descargado o el archivo binario en otra instancia de AEM.
+La interfaz de usuario de AEM Forms AEM AEM permite exportar recursos desde una instancia de descargándolos como un paquete CRX o como archivos binarios de la interfaz de usuario de CRX de la aplicación. A continuación, puede importar el paquete CRX de AEM descargado o el archivo binario en otra instancia de AEM.
 
 Todos los recursos admiten la exportación y la importación mediante la interfaz de usuario de AEM Forms, excepto las plantillas de formulario adaptable y las directivas de contenido de formulario adaptable. Por lo tanto, al exportar un formulario adaptable desde la interfaz de usuario de AEM Forms, la plantilla del formulario adaptable y las directivas de contenido relacionadas no se exportan automáticamente como el resto de recursos relacionados.
 
@@ -238,9 +237,9 @@ Complete los siguientes pasos para crear copias de recursos y cartas:
 
 ## Búsqueda {#search-forms}
 
-La interfaz de usuario de AEM Forms le permite buscar contenido. Con la barra superior, puede pulsar Buscar **[A]** para buscar recursos como recursos y documentos en el contenido.
+La interfaz de usuario de AEM Forms le permite buscar contenido. Con la barra superior, puede pulsar Buscar **[A]** para buscar recursos como recursos y documentos en el contenido.
 
-Al buscar recursos, AEM Forms muestra el panel lateral. También puede tocar ![recursos-explorar-solo-contenido](assets/assets-browser-content-only.png) > Filtro **[B]** para invocar el panel lateral. Puede limitar la búsqueda con los distintos filtros del panel. Este panel también le permite guardar sus búsquedas.
+Al buscar recursos, AEM Forms muestra el panel lateral. También puede tocar ![recursos-explorar-solo-contenido](assets/assets-browser-content-only.png) > Filtro **[B]** para invocar el panel lateral. Puede limitar la búsqueda con los distintos filtros del panel. El panel lateral también permite guardar las búsquedas.
 
 ![barra_superior_búsqueda](assets/search_topbar.png)
 

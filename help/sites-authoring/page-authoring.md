@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AEM A continuación se proporcionan dos tipos de información general para la cr
 
 ## Información general rápida sobre las funciones utilizadas para crear páginas {#quick-overview-of-features-used-for-authoring-pages}
 
-Para ayudarle a crear páginas, el entorno de creación ofrece funciones como las siguientes:
+Para ayudarle a crear páginas, el entorno de creación incluye funciones como las siguientes:
 
 * **Arrastrar y soltar**
 Los componentes (como texto e imagen) y los recursos digitales (como imágenes) se pueden colocar en la página simplemente arrastrándolos y soltándolos en la ubicación deseada.

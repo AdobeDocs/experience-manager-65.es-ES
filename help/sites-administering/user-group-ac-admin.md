@@ -11,9 +11,9 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3118'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ En CRX, cada cuenta de usuario es un nodo en el espacio de trabajo. Una cuenta d
 
 * Puede especificar derechos de acceso para la cuenta de usuario.
 
-   Sin embargo, para simplificar la administración, le recomendamos que (en la mayoría de los casos) asigne derechos de acceso a las cuentas de grupo. La asignación de derechos de acceso a cada usuario individual se vuelve rápidamente muy difícil de administrar (las excepciones son determinados usuarios del sistema cuando solo existen una o dos instancias).
+  Sin embargo, para simplificar el Adobe de administración, recomienda que (en la mayoría de los casos) asigne derechos de acceso a las cuentas de grupo. La asignación de derechos de acceso a cada usuario individual se vuelve rápidamente muy difícil de administrar (las excepciones son determinados usuarios del sistema cuando solo existen una o dos instancias).
 
 **Cuentas de grupo** Las cuentas de grupo son colecciones de usuarios u otros grupos. Se utilizan para simplificar la administración, ya que un cambio en los derechos de acceso asignados a un grupo se aplica automáticamente a todos los usuarios de ese grupo. Un usuario no tiene que pertenecer a ningún grupo, pero a menudo pertenece a varios.
 
@@ -56,7 +56,7 @@ En CRX, un grupo tiene las siguientes propiedades:
 
 Esto se realiza asignando privilegios para permitir o denegar el acceso a un recurso (nodo o ruta) en el repositorio. Dado que se pueden asignar varios privilegios, estos deben evaluarse para determinar qué combinación es aplicable a la solicitud actual.
 
-CRX le permite configurar los derechos de acceso para las cuentas de usuario y de grupo. Los mismos principios básicos de evaluación se aplican a ambos.
+CRX permite configurar los derechos de acceso para las cuentas de usuario y de grupo. Los mismos principios básicos de evaluación se aplican a ambos.
 
 ## Cómo se evalúan los derechos de acceso {#how-access-rights-are-evaluated}
 
@@ -75,20 +75,21 @@ CRX utiliza dos conceptos clave al evaluar los derechos de acceso:
    * Una cuenta de usuario
    * Una cuenta de grupo
 
-      Si una cuenta de usuario pertenece a uno o más grupos, también se asocia a cada una de esas entidades de seguridad de grupo.
+     Si una cuenta de usuario pertenece a uno o más grupos, también se asocia a cada una de esas entidades de seguridad de grupo.
 
 * A **sujeto** se utiliza para representar el origen de una solicitud.
 
-   Se utiliza para consolidar los derechos de acceso aplicables a esa solicitud. Estas se toman de:
+  Se utiliza para consolidar los derechos de acceso aplicables a esa solicitud. Estas se toman de:
 
    * Principal de usuario
 
-      Los derechos que asigna directamente a la cuenta de usuario.
+     Los derechos que asigna directamente a la cuenta de usuario.
 
    * Todas las entidades de seguridad de grupo asociadas a ese usuario
 
-      Todos los derechos asignados a cualquiera de los grupos a los que pertenece el usuario.
-   A continuación, el resultado se utiliza para permitir o denegar el acceso al recurso solicitado.
+     Todos los derechos asignados a cualquiera de los grupos a los que pertenece el usuario.
+
+  A continuación, el resultado se utiliza para permitir o denegar el acceso al recurso solicitado.
 
 #### Compilación de la lista de derechos de acceso para un asunto {#compiling-the-list-of-access-rights-for-a-subject}
 
@@ -110,7 +111,6 @@ La lista de derechos de acceso aplicables al sujeto de ensayo se elabora a parti
 >* CRX utiliza una jerarquía de grupo solo cuando se incluye un grupo como miembro de otro grupo. No hay herencia automática de permisos de grupo.
 >* El orden en que se especifican los grupos no afecta a los derechos de acceso.
 >
-
 
 ### Resolver solicitudes y derechos de acceso {#resolving-request-and-access-rights}
 
@@ -223,19 +223,19 @@ Debe haber iniciado sesión en el espacio de trabajo adecuado. A continuación, 
 
 * **UserID**
 
-   Nombre corto de la cuenta, que se utiliza al acceder a CRX.
+  Nombre corto de la cuenta, que se utiliza al acceder a CRX.
 
 * **Nombre principal**
 
-   Un nombre de texto completo para la cuenta.
+  Un nombre de texto completo para la cuenta.
 
 * **Contraseña**
 
-   Necesario al acceder a CRX con esta cuenta.
+  Necesario al acceder a CRX con esta cuenta.
 
 * **ntlmhash**
 
-   Se asigna automáticamente a cada cuenta nueva y se actualiza cuando se cambia la contraseña.
+  Se asigna automáticamente a cada cuenta nueva y se actualiza cuando se cambia la contraseña.
 
 * Puede agregar nuevas propiedades definiendo un nombre, tipo y valor. Haga clic en Guardar (símbolo de verificación verde) para cada nueva propiedad.
 
@@ -275,12 +275,11 @@ Si una cuenta suplanta a otra es muy difícil de ver. Los archivos de registro n
 
 >[!NOTE]
 >
->A veces, se puede observar una pérdida de rendimiento al registrar nuevos usuarios en instalaciones que tienen un número elevado de ambos:
+>A veces se puede observar una pérdida de rendimiento al registrar nuevos usuarios en instalaciones que tienen un número elevado de ambos:
 >
 >* usuarios
 >* grupos con muchos miembros
 >
-
 
 ### Actualización de una cuenta de usuario {#updating-a-user-account}
 
@@ -348,17 +347,17 @@ Debe haber iniciado sesión en el espacio de trabajo adecuado. A continuación, 
 
 * **GroupID**
 
-   Nombre abreviado de la cuenta de grupo.
+  Nombre abreviado de la cuenta de grupo.
 
 * **Nombre principal**
 
-   Un nombre de texto completo para la cuenta de grupo.
+  Un nombre de texto completo para la cuenta de grupo.
 
 * Puede agregar nuevas propiedades definiendo un nombre, tipo y valor. Haga clic en Guardar (símbolo de verificación verde) para cada nueva propiedad.
 
 * **Miembros**
 
-   Puede agregar usuarios u otros grupos como miembros de este grupo.
+  Puede agregar usuarios u otros grupos como miembros de este grupo.
 
 **Miembros del grupo**
 
@@ -450,19 +449,19 @@ Las directivas se clasifican de acuerdo con:
 
 * **Políticas de control de acceso aplicables**
 
-   Estas políticas se pueden aplicar.
+  Estas políticas se pueden aplicar.
 
-   Son directivas que están disponibles para crear una directiva local. Una vez seleccionada y agregada una directiva aplicable, se convierte en una directiva local.
+  Son directivas que están disponibles para crear una directiva local. Una vez seleccionada y agregada una directiva aplicable, se convierte en una directiva local.
 
 * **Políticas de control de acceso local**
 
-   Son directivas de control de acceso que ha aplicado. A continuación, puede actualizarlas, pedirlas o eliminarlas.
+  Son directivas de control de acceso que ha aplicado. A continuación, puede actualizarlas, pedirlas o eliminarlas.
 
-   Una directiva local anulará cualquier directiva heredada del elemento principal.
+  Una directiva local anulará cualquier directiva heredada del elemento principal.
 
 * **Políticas de control de acceso efectivas**
 
-   Estas son las políticas de control de acceso que ahora están en vigor para cualquier solicitud de acceso. Muestran las directivas agregadas derivadas tanto de las directivas locales como de las heredadas del elemento principal.
+  Estas son las políticas de control de acceso que ahora están en vigor para cualquier solicitud de acceso. Muestran las directivas agregadas derivadas tanto de las directivas locales como de las heredadas del elemento principal.
 
 ### Selección de directiva {#policy-selection}
 
@@ -470,25 +469,25 @@ Se pueden seleccionar las políticas para:
 
 * **Ruta actual**
 
-   Como en el ejemplo anterior, seleccione un recurso dentro del repositorio. Se mostrarán las políticas para esta &quot;ruta actual&quot;.
+  Como en el ejemplo anterior, seleccione un recurso dentro del repositorio. Se mostrarán las políticas para esta &quot;ruta actual&quot;.
 
 * **Repositorio**
 
-   Selecciona el control de acceso de nivel de repositorio. Por ejemplo, al configurar la variable `jcr:namespaceManagement` , que solo es relevante para el repositorio, no para un nodo.
+  Selecciona el control de acceso de nivel de repositorio. Por ejemplo, al configurar la variable `jcr:namespaceManagement` , que solo es relevante para el repositorio, no para un nodo.
 
 * **Principal**
 
-   Un principal registrado en el repositorio.
+  Un principal registrado en el repositorio.
 
-   Puede escribir en el campo **Principal** nombre o haga clic en el icono a la derecha del campo para abrir **Seleccionar principal** diálogo.
+  Puede escribir en el campo **Principal** nombre o haga clic en el icono a la derecha del campo para abrir **Seleccionar principal** diálogo.
 
-   Esto le permite **Buscar** para un **Usuario** o **Grupo**. Seleccione el principal requerido de la lista resultante y haga clic en **OK** para volver a llevar el valor al cuadro de diálogo anterior.
+  Esto le permite **Buscar** para un **Usuario** o **Grupo**. Seleccione el principal requerido de la lista resultante y haga clic en **OK** para volver a llevar el valor al cuadro de diálogo anterior.
 
 ![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
->Para simplificar la administración, le recomendamos que asigne derechos de acceso a las cuentas de grupo, no a las cuentas de usuario individuales.
+>Para simplificar el Adobe de administración, recomienda que asigne derechos de acceso a las cuentas de grupo, no a las cuentas de usuario individuales.
 >
 >Es más fácil administrar algunos grupos que varias cuentas de usuario.
 

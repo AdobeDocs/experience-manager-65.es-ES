@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Introduzca los detalles necesarios y haga clic en **Guardar todo** - ahora puede
 
 ### Uso del Editor de cuadros de diálogo para andamios {#using-the-dialog-editor-for-scaffolds}
 
-Un andamio es una página especial que contiene un formulario que se puede rellenar y enviar en un solo paso. Esto le permite crear rápidamente una página utilizando el contenido introducido.
+Un andamio es una página especial que contiene un formulario que se puede rellenar y enviar en un solo paso. Esto permite crear rápidamente una página utilizando el contenido introducido.
 
 El formulario que constituye un andamio se define mediante una definición de cuadro de diálogo, como un cuadro de diálogo normal, aunque aparece en la página de andamiaje de un formulario diferente. Dado que las definiciones de cuadros de diálogo se utilizan para definir andamios, estos se pueden diseñar con el editor de cuadros de diálogo. Tenga en cuenta que cuando utilice el editor de diálogos de esta manera, el panel de procesamiento seguirá mostrando la definición del cuadro de diálogo en forma de cuadro de diálogo, no como un andamio.
 

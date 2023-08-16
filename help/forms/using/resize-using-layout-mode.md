@@ -3,10 +3,10 @@ title: Utilice el modo Diseño para cambiar el tamaño de los componentes para l
 description: Defina la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 94%
+source-wordcount: '1124'
+ht-degree: 92%
 
 ---
 

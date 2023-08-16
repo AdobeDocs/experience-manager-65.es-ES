@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Tiene los atributos siguientes:
 ¿Debe utilizar `<cq:include>` o `<sling:include>`?
 
 * AEM A la hora de desarrollar componentes de la, Adobe recomienda utilizar `<cq:include>`.
-* `<cq:include>` permite incluir directamente archivos de script por su nombre cuando se utiliza el atributo script. Esto tiene en cuenta la herencia de componentes y tipos de recursos, y a menudo es más sencillo que el cumplimiento estricto de la resolución de scripts de Sling mediante selectores y extensiones.
+* `<cq:include>` permite incluir directamente los archivos de script por su nombre cuando se utiliza el atributo script. Esto tiene en cuenta la herencia de componentes y tipos de recursos, y a menudo es más sencillo que el cumplimiento estricto de la resolución de scripts de Sling mediante selectores y extensiones.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
@@ -316,7 +316,7 @@ El `<cq:defineObjects>` expone los siguientes objetos de script, que se utilizan
 
 **currentStyle**
 
-* el objeto style actual de la celda actual (com.day.cq.wcm.api.designer.Style interfaz).
+* el objeto style actual de la celda actual (interfaz com.day.cq.wcm.api.designer.Style).
 
 **diseñador**
 

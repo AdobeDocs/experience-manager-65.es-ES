@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4614'
+source-wordcount: '4613'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ AEM escribir consultas de una de las tres maneras siguientes:
 * Uso de XPath (recomendado)
 * Uso de SQL2
 
-Aunque todas las consultas se convierten a SQL2 antes de ejecutarse, la sobrecarga de la conversión de consultas es mínima y, por lo tanto, la preocupación más buena al elegir un idioma de consulta será la legibilidad y el nivel de comodidad del equipo de desarrollo.
+Aunque todas las consultas se convierten a SQL2 antes de ejecutarse, la sobrecarga de la conversión de consultas es mínima y, por lo tanto, la mayor preocupación al elegir un idioma de consulta será la legibilidad y el nivel de comodidad del equipo de desarrollo.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ La primera pregunta que se debe hacer al crear o optimizar índices es si son ne
 
 Después de crear un índice, cada vez que se actualicen los datos indexados, también se debe actualizar el índice. Dado que esto tiene implicaciones de rendimiento para el sistema, los índices solo deben crearse cuando sean necesarios.
 
-Además, los índices solo son útiles si los datos contenidos en ellos son lo suficientemente únicos como para justificarlos. Considere un índice en un libro y los temas que cubre. Al indexar un conjunto de temas en un texto, normalmente habrá cientos o miles de entradas, lo que le permite saltar rápidamente a un subconjunto de páginas para encontrar rápidamente la información que está buscando. Si ese índice solo tuviera dos o tres entradas, cada una de las cuales indicara varios cientos de páginas, no sería útil. Este mismo concepto se aplica a los índices de base de datos. Si solo hay un par de valores únicos, el índice no será útil. Dicho esto, un índice también puede llegar a ser demasiado grande para ser útil. Para ver las estadísticas de índice, consulte [Estadísticas de índice](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) arriba.
+Además, los índices solo son útiles si los datos contenidos en ellos son lo suficientemente únicos como para justificarlos. Considere un índice en un libro y los temas que cubre. Al indexar un conjunto de temas en un texto, normalmente habrá cientos o miles de entradas, lo que le permite ir rápidamente a un subconjunto de páginas para encontrar rápidamente la información que está buscando. Si ese índice solo tuviera dos o tres entradas, cada una de las cuales indicara varios cientos de páginas, no sería útil. Este mismo concepto se aplica a los índices de base de datos. Si solo hay un par de valores únicos, el índice no será útil. Dicho esto, un índice también puede llegar a ser demasiado grande para ser útil. Para ver las estadísticas de índice, consulte [Estadísticas de índice](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) arriba.
 
 ### ¿Lucene o índices de propiedades? {#lucene-or-property-indexes}
 
@@ -453,7 +453,7 @@ AEM AEM En el funcionamiento normal de los recursos, por ejemplo, la carga de re
 
 *Ejecute el paso 1(a-b) durante un período de ventana de mantenimiento/poco uso a medida que el almacén de nodos se atraviesa durante esta operación, lo que puede incurrir en una carga significativa en el sistema.*
 
-1a. Ejecutar `oak-run.jar --generate` para crear una lista de nodos a los que se les extraerá previamente el texto.
+1a. Ejecutar `oak-run.jar --generate` para crear una lista de nodos a los que se extraerá previamente el texto.
 
 1b. La lista de nodos (1a) se almacena en el sistema de archivos como archivo CSV
 
@@ -469,7 +469,7 @@ Todo el almacén de nodos se atraviesa (como especifican las rutas en el comando
 
 2 quater. El texto extraído se almacena en el sistema de archivos en un formato ingerible por el proceso de reindexación de Oak (3a)
 
-El texto extraído previamente se identifica en el CSV mediante la huella digital binaria. AEM Si el archivo binario es el mismo, se puede utilizar el mismo texto extraído previamente en todas las instancias de la. Dado que AEM Publish suele ser un subconjunto de AEM Author, el texto preextraído de AEM Author también se puede utilizar a menudo para reindexar AEM Publish (suponiendo que AEM Publish tenga acceso del sistema de archivos a los archivos de texto extraídos).
+El texto extraído previamente se identifica en el CSV mediante la huella digital binaria. AEM Si el archivo binario es el mismo, se puede utilizar el mismo texto extraído previamente en todas las instancias de la. AEM AEM AEM AEM AEM Dado que Publicación de datos suele ser un subconjunto de Autor de la, el texto extraído previamente de Autor también se puede utilizar para reindexar también el texto extraído de la publicación (suponiendo que el sistema de archivos de texto extraído también tenga acceso a los archivos de texto extraídos, en el caso de que el sistema de archivos de Publicación de la tenga acceso a ellos).
 
 El texto extraído previamente se puede añadir gradualmente a a lo largo del tiempo. La preextracción de texto impedirá la extracción de binarios extraídos anteriormente, por lo que es recomendable mantener el texto preextraído en caso de que la reindexación deba volver a ocurrir en el futuro (suponiendo que el contenido extraído no sea prohibitivamente grande). Si es así, evalúe comprimir el contenido de forma provisional, ya que el texto se comprime bien).
 

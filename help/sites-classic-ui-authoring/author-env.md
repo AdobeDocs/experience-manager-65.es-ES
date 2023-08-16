@@ -1,8 +1,8 @@
 ---
 title: Uso del entorno de creación
 seo-title: Working with the Author Environment
-description: El entorno de creación le permite realizar tareas relacionadas con la creación (incluida la creación de páginas y la administración de recursos) y las tareas de administración que necesite al generar y mantener el contenido del sitio web.
-seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
+description: El entorno de creación permite realizar tareas relacionadas con la creación (incluida la creación de páginas y la administración de recursos) y las tareas de administración que necesite al generar y mantener el contenido del sitio web.
+seo-description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
 uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >La siguiente documentación se centra en la IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [Documentación de creación estándar](/help/assets/assets.md).
 
-El entorno de creación le permite realizar tareas relacionadas con lo siguiente:
+El entorno de creación permite realizar tareas relacionadas con lo siguiente:
 
 * [Creación](/help/sites-authoring/author.md) (incluido [creación de páginas](/help/sites-authoring/qg-page-authoring.md) y [administrar recursos](/help/assets/assets.md))
 
@@ -38,6 +38,7 @@ Se proporcionan dos interfaces gráficas de usuario para conseguirlo, a las que 
    * Fue diseñado para su uso en dispositivos de escritorio.
    * Ya no se mantiene.
    * La siguiente documentación se centra en esta IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [Documentación de creación estándar](/help/sites-authoring/author.md).
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. IU táctil.
@@ -48,7 +49,9 @@ Se proporcionan dos interfaces gráficas de usuario para conseguirlo, a las que 
    * Consulte la [Documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información sobre cómo crear contenido con la IU táctil. La siguiente documentación se centra en la IU clásica.
 
    * Escritorio:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Dispositivos Tablet (o equipos de escritorio de menos de 1024 píxeles de ancho):
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)

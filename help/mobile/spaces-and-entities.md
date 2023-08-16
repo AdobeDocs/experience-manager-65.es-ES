@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Una vez configurados los espacios en el panel, siga estos pasos para crear espac
 
 Una vez creado un espacio, haga clic en a la izquierda para administrar el espacio en la lista.
 
-AEM Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su contenido en una instancia de publicación de la publicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de publicación de la aplicación.
+AEM Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su contenido en una instancia de publicación de la publicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de publicación de la aplicación.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -194,7 +194,7 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
    >
    >Según la plantilla que elija para crear la entidad, la interfaz de usuario será diferente para ambos, para editar y ver las propiedades de la entidad. Consulte los pasos a continuación para obtener más información.
 
-   ***Si elige la plantilla para crear la entidad como modelos de recursos***, haciendo clic en **Editar** le permite agregar recursos como se muestra en la figura siguiente:
+   ***Si elige la plantilla para crear la entidad como modelos de recursos***, haciendo clic en **Editar** permite agregar recursos como se muestra en la figura siguiente:
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -202,7 +202,7 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Si elige la plantilla para crear la entidad como modelos de páginas***, haciendo clic en **Editar** le permite agregar recursos como se muestra en la figura siguiente:
+   ***Si elige la plantilla para crear la entidad como modelos de páginas***, haciendo clic en **Editar** permite agregar recursos como se muestra en la figura siguiente:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 

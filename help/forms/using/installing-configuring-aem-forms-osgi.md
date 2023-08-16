@@ -10,10 +10,10 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 100%
+source-wordcount: '1881'
+ht-degree: 98%
 
 ---
 
@@ -99,7 +99,6 @@ Antes de empezar a instalar y configurar la capacidad Data Capture de AEM Form
 >* Si OpenSSL ya está instalado en el servidor, actualícelo a la versión más reciente.
 >* Cree los enlaces simbólicos libcurl.so, libcrypto.so y libssl.so y asegúrese de que apunten a la última versión de las bibliotecas libcurl, libcrypto y libssl, respectivamente.
 >
-
 
 * Instale el siguiente paquete de 64 bits desde los medios de instalación:
 
@@ -226,7 +225,7 @@ Para usar Adobe Sign con AEM Forms, consulte [Integración de Adobe Sign con 
 
 #### Configuración de Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms se integra con Adobe Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y los documentos que ha publicado. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
+AEM Forms se integra con Adobe Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
 Para usar Adobe Analytics con AEM Forms, consulte [Configuración de análisis e informes](/help/forms/using/configure-analytics-forms-documents.md).
 

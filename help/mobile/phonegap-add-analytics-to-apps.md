@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Después de realizar estos pasos, la aplicación podrá crear informes de todas 
 
 Hay varias API de seguimiento en la variable [API de complemento de PhoneGap de AMS.](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
 
-Esto le permitirá realizar un seguimiento de estados y acciones, como adónde van los usuarios en la aplicación y qué controles se utilizan más. La forma más sencilla de instrumentar la aplicación para el seguimiento es utilizar las API de Analytics proporcionadas por el complemento de AMS.
+Esto le permitirá realizar un seguimiento de estados y acciones, como adónde van los usuarios a las páginas en la aplicación y qué controles se utilizan más. La forma más sencilla de instrumentar la aplicación para el seguimiento es utilizar las API de Analytics proporcionadas por el complemento de AMS.
 
 * ADB.trackState()
 * ADB.trackAction()

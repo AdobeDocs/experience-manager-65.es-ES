@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 99%
+source-wordcount: '1243'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 | AEM 6.5 | Este artículo |
 
 
-Los informes de transacciones le permiten capturar y realizar un seguimiento de la cantidad de formularios enviados y documentos representados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Algunos ejemplos de transacciones son:
+Los informes de transacciones permiten capturar y realizar un seguimiento de la cantidad de formularios enviados, documentos procesados y documentos representados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Algunos ejemplos de transacciones son:
 
 * Envío de un formulario adaptable, un formulario HTML5 o un conjunto de formularios
 * Representación de una versión impresa o web de una comunicación interactiva
@@ -84,7 +84,7 @@ Hay varias mejoras en el diseño del canal web generado automáticamente mediant
 
 #### Incrustar un formulario adaptable o una comunicación interactiva en aplicaciones de una sola página de AEM Sites {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-AEM Forms le permite [incrustar sin problemas un formulario adaptable](../../forms/using/embed-adaptive-form-aem-sites-spa.md) o comunicación interactiva en una aplicación de una sola página de AEM Sites (SPA). El formulario adaptable incrustado y la comunicación interactiva son completamente funcionales, y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
+AEM Forms le permite [incrustar fácilmente un formulario adaptable](../../forms/using/embed-adaptive-form-aem-sites-spa.md) o comunicación interactiva en una aplicación de una sola página de AEM Sites SPA (). El formulario adaptable incrustado y la comunicación interactiva son completamente funcionales, y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
 
 #### Ordenar columnas de tablas de formularios adaptables {#sort-columns-of-adaptive-form-tables}
 

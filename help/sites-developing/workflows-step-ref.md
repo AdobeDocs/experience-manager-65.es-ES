@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3242'
 ht-degree: 7%
 
 ---
@@ -29,13 +29,12 @@ Los modelos de flujo de trabajo constan de una serie de pasos de varios tipos. S
 >Para ver los pasos específicos del módulo, consulte lo siguiente:
 >
 >* [Referencia de pasos de flujo de trabajo AEM Forms](/help/forms/using/aem-forms-workflow-step-reference.md)
->* [Processing Assets Using Media Handlers and Workflows](/help/assets/media-handlers.md)
+>* [Procesamiento de recursos mediante controladores de medios y flujos de trabajo](/help/assets/media-handlers.md)
 >
-
 
 ## Propiedades de la etapa {#step-properties}
 
-Cada componente de paso tiene un **Propiedades del paso** que le permite definir y editar las propiedades necesarias.
+Cada componente de paso tiene un **Propiedades del paso** que permite definir y editar las propiedades necesarias.
 
 ### Propiedades del paso: pestaña Común {#step-properties-common-tab}
 
@@ -49,20 +48,20 @@ Una descripción de la etapa.
 
 * **Fase del flujo de trabajo**
 
-   Un selector desplegable para aplicar una variable [Fase](/help/sites-developing/workflows.md#workflow-stages) al paso.
+  Un selector desplegable para aplicar una variable [Fase](/help/sites-developing/workflows.md#workflow-stages) al paso.
 
 * **Tiempo de espera**
 
-   Período después del cual se agota el tiempo de espera del paso.
+  Período después del cual se agota el tiempo de espera del paso.
 Puede seleccionar entre: **Desactivado**, **Inmediato**, **1 h**, **6 h**, **12 h**, **24 h**.
 
 * **Controlador de tiempo de espera**
 
-   Controlador que controla el flujo de trabajo cuando se agota el tiempo de espera del paso. Por ejemplo, `Auto Advancer`. 
+  Controlador que controla el flujo de trabajo cuando se agota el tiempo de espera del paso. Por ejemplo, `Auto Advancer`
 
 * **Avance de controlador**
 
-   Seleccione esta opción para avanzar automáticamente el flujo de trabajo al siguiente paso después de la ejecución. Si no se selecciona, el script de implementación debe gestionar el avance del flujo de trabajo.
+  Seleccione esta opción para avanzar automáticamente el flujo de trabajo al siguiente paso después de la ejecución. Si no se selecciona, el script de implementación debe gestionar el avance del flujo de trabajo.
 
 ### Propiedades del paso: pestaña Usuario/grupo {#step-properties-user-group-tab}
 
@@ -97,7 +96,7 @@ Para configurar la división:
 
 * Añada los pasos del flujo de trabajo a las ramas según sea necesario.
 
-   ![wf-27](assets/wf-27.png)
+  ![wf-27](assets/wf-27.png)
 
 ## Etapa del contenedor {#container-step}
 
@@ -203,6 +202,7 @@ Para configurar la división:
    * **Común**
 
       * Especifique el nombre de la división.
+
    * **Ramas (*x)***
 
       * **Agregar rama:** Añada más ramas al paso.
@@ -212,17 +212,18 @@ Para configurar la división:
       * **Script**: Añada el script en el cuadro para evaluar la rama activa si selecciona **Script ECMA** como la expresión de enrutamiento.
       * **Ruta predeterminada**: Se sigue la rama predeterminada si hay varias ramas. Solo se puede especificar una rama como predeterminada.
 
-   >[!NOTE]
-   >
-   >    * Se evalúa una rama a la vez en función de la expresión de enrutamiento.
-   >    * Las ramas se evalúan de arriba a abajo.
-   >    * Se ejecuta el primer script que se evalúa como true.
-   >    * Si ninguna rama se evalúa como verdadera, el flujo de trabajo no avanza.
+  >[!NOTE]
+  >
+  >    * Se evalúa una rama a la vez en función de la expresión de enrutamiento.
+  >    * Las ramas se evalúan de arriba a abajo.
+  >    * Se ejecuta el primer script que se evalúa como true.
+  >    * Si ninguna rama se evalúa como verdadera, el flujo de trabajo no avanza.
+  >
+  >
 
-
-   >[!NOTE]
-   >
-   >Consulte [Definición de una regla para una división O](/help/sites-developing/workflows-models.md#defineruleecmascript).
+  >[!NOTE]
+  >
+  >Consulte [Definición de una regla para una división O](/help/sites-developing/workflows-models.md#defineruleecmascript).
 
 * Añada los pasos del flujo de trabajo a las ramas según sea necesario.
 
@@ -248,7 +249,6 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 >* El flujo de trabajo se ha completado (finalizado).
 >* El flujo de trabajo se interrumpe (finaliza).
 >
-
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Puede almacenar datos de widget en la carga útil de flujo de trabajo o en los m
 * **Almacenar datos con la carga útil**
 
    * Para almacenar datos de widget como una propiedad de la carga útil del flujo de trabajo, utilice el siguiente formato para el valor de la propiedad name del nodo de widget:
-      `./jcr:content/nodename`
+     `./jcr:content/nodename`
 
    * Los datos se almacenan en `nodename` del nodo de carga útil. Si el nodo no contiene esa propiedad, se crea la propiedad.
    * Cuando se almacena con la carga útil, los usos posteriores del cuadro de diálogo con la misma carga útil sobrescriben el valor de la propiedad.
@@ -294,7 +294,7 @@ Puede almacenar datos de widget en la carga útil de flujo de trabajo o en los m
 * **Almacenar datos con el elemento de trabajo**
 
    * Para almacenar los datos del widget como una propiedad de los metadatos del elemento de trabajo, utilice el siguiente formato para el valor de la propiedad name:
-      `nodename`
+     `nodename`
 
    * Los datos se almacenan en `nodename` propiedad del elemento de trabajo `metadata`. Los datos se conservan si el cuadro de diálogo se utiliza posteriormente con la misma carga útil.
 
@@ -402,50 +402,51 @@ Cree un servicio OSGi o un ECMAScript que seleccione un usuario al que asignar e
 
 * **ECMAscript**
 
-   Los scripts deben incluir una función denominada getParticipant que devuelva un ID de usuario como `String` valor. Almacene sus scripts personalizados en, por ejemplo, la `/apps/myapp/workflow/scripts` o una subcarpeta.
+  Los scripts deben incluir una función denominada getParticipant que devuelva un ID de usuario como `String` valor. Almacene sus scripts personalizados en, por ejemplo, la `/apps/myapp/workflow/scripts` o una subcarpeta.
 
-   AEM Se incluye un script de ejemplo en una instancia de estándar:
+  AEM Se incluye un script de ejemplo en una instancia de estándar:
 
-   `/libs/workflow/scripts/initiator-participant-chooser.ecma`
+  `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
-   >[!CAUTION]
-   >
-   >No cambie nada en el `/libs` ruta.
-   >
-   >
-   >El motivo es que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una revisión o un paquete de funciones).
+  >[!CAUTION]
+  >
+  >No cambie nada en el `/libs` ruta.
+  >
+  >
+  >El motivo es que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una revisión o un paquete de funciones).
 
-   Esta secuencia de comandos selecciona el iniciador del flujo de trabajo como participante:
+  Esta secuencia de comandos selecciona el iniciador del flujo de trabajo como participante:
 
-   ```
-   function getParticipant() {
-       return workItem.getWorkflow().getInitiator();
-   }
-   ```
+  ```
+  function getParticipant() {
+      return workItem.getWorkflow().getInitiator();
+  }
+  ```
 
-   >[!NOTE]
-   >
-   >El **Selector de participantes del iniciador de flujo de trabajo** El componente amplía el **Etapa de participante dinámica** y utiliza este script como implementación de la etapa.
+  >[!NOTE]
+  >
+  >El **Selector de participantes del iniciador de flujo de trabajo** El componente amplía el **Etapa de participante dinámica** y utiliza este script como implementación de la etapa.
 
 * **Servicio OSGi**
 
-   Los servicios deben implementar el [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interfaz. La interfaz define los siguientes miembros:
+  Los servicios deben implementar el [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interfaz. La interfaz define los siguientes miembros:
 
    * `SERVICE_PROPERTY_LABEL` field: utilice este campo para especificar el nombre del selector de participantes. El nombre aparece en una lista de selectores de participantes disponibles en la **Etapa de participante dinámica** propiedades.
 
    * `getParticipant` método: devuelve el ID principal resuelto dinámicamente como un `String` valor.
-   >[!CAUTION]
-   >
-   >El `getParticipant` devuelve el ID principal resuelto dinámicamente. Este ID puede ser un ID de grupo o un ID de usuario.
-   >
-   >
-   >Sin embargo, un ID de grupo solo se puede utilizar para una **Etapa de participante**, cuando se devuelve una lista de participantes. Para un **Etapa de participante dinámica**, se devuelve una lista vacía y no se puede utilizar para la delegación.
 
-   Para que la implementación esté disponible para **Etapa de participante dinámica** AEM componentes, agregue la clase Java™ a un paquete OSGi que exporte el servicio e implemente el paquete en el servidor de.
+  >[!CAUTION]
+  >
+  >El `getParticipant` devuelve el ID principal resuelto dinámicamente. Este ID puede ser un ID de grupo o un ID de usuario.
+  >
+  >
+  >Sin embargo, un ID de grupo solo se puede utilizar para una **Etapa de participante**, cuando se devuelve una lista de participantes. Para un **Etapa de participante dinámica**, se devuelve una lista vacía y no se puede utilizar para la delegación.
 
-   >[!NOTE]
-   >
-   >**Selector aleatorio de participantes** es un servicio de ejemplo que selecciona un usuario aleatorio ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). El **Selección aleatoria de participantes** La muestra de componente de paso r amplía la **Etapa de participante dinámica** y utiliza este servicio como implementación de la etapa.
+  Para que la implementación esté disponible para **Etapa de participante dinámica** AEM componentes, agregue la clase Java™ a un paquete OSGi que exporte el servicio e implemente el paquete en el servidor de.
+
+  >[!NOTE]
+  >
+  >**Selector aleatorio de participantes** es un servicio de ejemplo que selecciona un usuario aleatorio ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). El **Selección aleatoria de participantes** La muestra de componente de paso r amplía la **Etapa de participante dinámica** y utiliza este servicio como implementación de la etapa.
 
 #### Etapa de participante dinámica: ejemplo de servicio de selector de participantes {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -524,7 +525,7 @@ Crear un formulario para utilizarlo con una **Etapa de participante de formulari
 * El **Inicio de formulario** el componente debe tener un valor para `Form Identifier` propiedad.
 * Los componentes del formulario deben tener el **Nombre de elemento** propiedad se establece en la ruta del nodo donde se almacenan los datos del campo. La ruta debe localizar un nodo en el contenido de carga útil del flujo de trabajo. El valor utiliza el siguiente formato:
 
-   `./jcr:content/path_to_node`
+  `./jcr:content/path_to_node`
 
 * El formulario debe incluir un **Botón Enviar de flujo de trabajo** componente. No se configura ninguna propiedad del componente.
 
@@ -583,9 +584,9 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
       * Los servicios estándar ECMAScripts y OSGi, consulte [Procesos integrados para pasos del proceso](/help/sites-developing/workflows-process-ref.md).
       * Creación de ECMAScripts para un paso de proceso, consulte [Implementación de un paso del proceso con un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creación de servicios OSGi para un paso Proceso, consulte [Implementar un paso del proceso con una clase Java™](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+
    * **Avance del controlador**: seleccione esta opción para avanzar automáticamente el flujo de trabajo al siguiente paso después de la ejecución. Si no se selecciona, el script de implementación debe gestionar el avance del flujo de trabajo.
    * **Argumentos**: argumentos que se van a pasar al proceso.
-
 
 ## Establecer variable {#set-variable}
 
@@ -609,5 +610,6 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
       * **XPATH:** Utilice la opción para recuperar un valor de una variable de tipo XML.
       * **En relación con la carga útil:** Utilice la opción cuando el valor que se va a guardar en la variable esté disponible en una ruta relativa a la carga útil.
       * **Ruta absoluta:** Utilice la opción cuando el valor que se va a guardar en la variable esté disponible en una ruta absoluta.
+
    * **Especifique el valor:** Para asignar a la variable, especifique un valor. El valor que especifique en este campo depende del modo de asignación.
    * **Agregar asignación:** Utilice esta opción para agregar más asignaciones y establecer un valor para la variable.

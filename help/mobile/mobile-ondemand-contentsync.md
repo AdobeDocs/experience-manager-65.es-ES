@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2974'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ El procesamiento puede abarcar desde el procesamiento de JSON simple hasta el pr
 
 * **ruta** : Si la ruta apunta a un solo archivo, solo se copia el archivo. Si apunta a una carpeta (incluidos los nodos de página), se copiarán todos los archivos y carpetas siguientes.
 
-**content** Procesar contenido mediante estándar [Procesamiento de solicitudes de Sling](/help/sites-developing/the-basics.md#sling-request-processing).
+**content** Procesar contenido mediante estándares [Procesamiento de solicitudes de Sling](/help/sites-developing/the-basics.md#sling-request-processing).
 
 * **ruta** - Ruta al recurso que se debe generar.
 * **extensión** : extensión que debe utilizarse en la solicitud. Algunos ejemplos comunes son *html* y *json*, pero cualquier otra extensión es posible.

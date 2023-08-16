@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 100%
+source-wordcount: '1167'
+ht-degree: 95%
 
 ---
 
@@ -84,7 +84,7 @@ Especifique el origen del documento para convertirlo en un documento compatible 
 
 #### Opciones de conversión {#conversion-options}
 
-Las opciones de conversión permiten especificar opciones que modifican el proceso de conversión a PDF/A.
+Las opciones de conversión permiten especificar opciones que modifican el proceso de conversión de PDF/A.
 
 * *Cumplimiento*: especifica el estándar PDF/A que debe cumplir el PDF/A de salida.
 * *Nivel de resultado*: especifica el nivel de registro que se utilizará para los registros de conversión del PDF/A.

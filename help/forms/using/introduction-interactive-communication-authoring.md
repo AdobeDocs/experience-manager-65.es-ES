@@ -11,10 +11,10 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 100%
+source-wordcount: '1312'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ En el Explorador de contenido, puede ver la jerarquía de objetos del documento 
 
 * **Explorador de propiedades**
 
-   Permite editar las propiedades de un componente. Las propiedades cambian en función del componente. Por ejemplo, para ver las propiedades del contenedor de documentos, seleccione un componente, pulse ![nivel de campo](assets/field-level.png) > **Contenedor de documento** y, a continuación, pulse ![cmppr](assets/cmppr.png).
+  Permite editar las propiedades de un componente. Las propiedades cambian en función del componente. Por ejemplo, para ver las propiedades del contenedor de documentos, seleccione un componente, pulse ![nivel de campo](assets/field-level.png) > **Contenedor de documento** y, a continuación, pulse ![cmppr](assets/cmppr.png).
 
 * **Explorador de recursos**
 Segmenta distintos tipos de contenido, como fragmentos de diseño, imágenes, documentos, páginas o vídeos. El autor puede arrastrar y soltar recursos en la comunicación interactiva.
@@ -68,9 +68,9 @@ Incluye los componentes que puede utilizar para crear los canales impreso y web 
 | **Componente** | **Canal de impresión** | **Canal web** | **Funcionalidad** |
 |---|---|---|---|
 | Gráfico | ✓ | ✓ | Agrega un gráfico que puede usar en una comunicación interactiva para la representación visual de datos bidimensionales recuperados de un elemento de colección del modelo de datos de formulario. |
-| Fragmento de documento | ✓ | ✓ | Permite añadir un componente, texto, lista o condición reutilizables a una comunicación interactiva. El componente reutilizable que agregue a una comunicación interactiva puede estar basado en el modelo de datos de formulario o carecer de él. |
+| Fragmento de documento | ✓ | ✓ | Permite agregar un componente, un texto, una lista o una condición reutilizables a una comunicación interactiva. El componente reutilizable que agregue a una comunicación interactiva puede estar basado en el modelo de datos de formulario o carecer de él. |
 | Imagen | ✓ | ✓ | Permite insertar una imagen. |
-| Panel | - | ✓ | El componente Panel es un marcador de posición para agrupar otros componentes, y controla cómo se coloca un grupo de componentes en una comunicación interactiva. El componente Panel también le permite hacer que un grupo de componentes se repita para el usuario final, por ejemplo, en varias entradas obligatorias para rellenar credenciales educativas. También se recomienda utilizar un panel para cada una de las pestañas de una comunicación interactiva con varias pestañas. |
+| Panel | - | ✓ | El componente Panel es un marcador de posición para agrupar otros componentes, y controla cómo se coloca un grupo de componentes en una comunicación interactiva. Un componente de panel también le permite hacer que un grupo de componentes se repita para el usuario final, por ejemplo, en varias entradas obligatorias para rellenar credenciales educativas. También se recomienda utilizar un panel para cada una de las pestañas de una comunicación interactiva con varias pestañas. |
 | Tabla | &#42; | ✓ | Agrega una tabla que le permite organizar los datos en filas y columnas. |
 | Área de destino | &#42;&#42; | ✓ | Inserta un área de destino en un canal web para organizar los componentes específicos de ese canal. |
 | Texto | - | ✓ | Agrega texto al canal web de una comunicación interactiva. El texto puede utilizar objetos del modelo de datos de formulario para hacer que el contenido sea dinámico. |
@@ -144,7 +144,7 @@ La barra de herramientas Página de la parte superior proporciona opciones que l
 
       * Ver los componentes de la comunicación interactiva.
       * Depurar lo que sucede, dónde y cuándo, lo que a su vez ayuda a resolver problemas.
-   * Destino: permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
 
+   * Destino: permite habilitar o deshabilitar componentes personalizados o componentes integrados que no aparecen en la barra lateral.
 
 * Vista previa: permite obtener una vista previa del aspecto de la comunicación interactiva al publicarla.

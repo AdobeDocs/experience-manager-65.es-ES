@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 100%
+source-wordcount: '745'
+ht-degree: 95%
 
 ---
 
@@ -97,7 +97,7 @@ Siga estos pasos para agregar y configurar el componente Borradores y envíos:
 
 Cuando se utiliza la acción de envío del portal de formularios o se activa la opción Almacenar datos en el portal de formularios en formularios adaptables, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. En lugar de ello, debe integrar los borradores y el componente de envío con un almacenamiento seguro, como la base de datos empresarial, para almacenar borradores y datos de formularios enviados.
 
-El portal de formularios le permite almacenar datos en el repositorio local de AEM, en el repositorio remoto de AEM o en una base de datos. AEM Forms le permite personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Puede anular los métodos predeterminados para especificar cómo se almacenan los datos de borradores y envíos en el almacenamiento que elija. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
+El portal de Forms AEM AEM le permite almacenar datos en el repositorio local de la, en el repositorio remoto de la misma o en una base de datos. AEM Forms permite personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Puede anular los métodos predeterminados para especificar cómo se almacenan los datos de borradores y envíos en el almacenamiento que elija. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
 
 El portal de formularios proporciona servicios listos para usar (API) para almacenar datos en el repositorio crx de instancias de publicación locales y remotas de AEM Forms. Puede reemplazar las implementaciones predeterminadas que se describen en [Configurar servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md), con implementaciones personalizadas para reemplazar la funcionalidad predeterminada. Para obtener información detallada sobre los métodos necesarios en una implementación personalizada para almacenar contenido en una ubicación segura, consulte [Personalizar los servicios de datos de Borradores y envíos](/help/forms/using/custom-draft-submission-data-services.md) y [Almacenamiento personalizado para el componente Borradores y envíos.](/help/forms/using/adding-custom-storage-provider-forms.md)
 

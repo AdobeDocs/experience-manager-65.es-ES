@@ -12,9 +12,9 @@ discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
-source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ AEM En la mayoría de los casos, los clientes que ejecutan la versión 6.3 no de
 
 Para las excepciones en las que las funciones no se podían mantener compatibles con versiones anteriores, los problemas de incompatibilidad con versiones anteriores para paquetes y contenido se pueden mitigar instalando un paquete de compatibilidad para 6.4 (consulte cómo configurar a continuación para obtener detalles sobre dónde descargar). AEM Este paquete de compatibilidad ayudará a restaurar la compatibilidad en la mayoría de los casos para las aplicaciones compatibles con la versión 6.4 de la.
 
-AEM AEM El paquete de compatibilidad le permite ejecutar la compatibilidad en modo de compatibilidad y aplazar el desarrollo personalizado respecto a las nuevas características de la:
+AEM AEM El paquete de compatibilidad permite ejecutar la compatibilidad en modo de compatibilidad y diferir el desarrollo personalizado respecto a las nuevas funciones de la aplicación
 
 >[!NOTE]
 >

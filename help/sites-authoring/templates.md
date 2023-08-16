@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4871'
-ht-degree: 50%
+source-wordcount: '4864'
+ht-degree: 49%
 
 ---
 
@@ -306,7 +306,7 @@ Los siguientes aspectos de una plantilla se pueden editar:
 
   Los autores de la página no pueden mover/eliminar de las páginas resultantes los componentes añadidos aquí. Si desea que los autores de páginas puedan añadir y quitar componentes a las páginas resultantes, debe añadir un sistema de párrafos a la plantilla.
 
-  Cuando los componentes están bloqueados, puede agregar contenido, que los autores de la página no pueden editar. Puede desbloquear componentes para definir lo siguiente [Contenido inicial](#editingatemplateinitialcontent).
+  Cuando los componentes están bloqueados, puede agregar contenido, que los autores de la página no pueden editar. Puede desbloquear componentes para poder definir [Contenido inicial](#editingatemplateinitialcontent).
 
   >[!NOTE]
   >
@@ -334,7 +334,7 @@ Los siguientes aspectos de una plantilla se pueden editar:
 
   Consulte la [documentación del sistema de estilos](/help/sites-authoring/style-system.md) para obtener más información.
 
-El selector **Modo** de la barra de herramientas le permite seleccionar y editar la proporción adecuada de la plantilla:
+El **Modo** selector de en la barra de herramientas permite seleccionar y editar la proporción adecuada de la plantilla:
 
 * [Estructura](#editingatemplatestructure)
 * [Contenido inicial](#editingatemplateinitialcontent)
@@ -342,7 +342,7 @@ El selector **Modo** de la barra de herramientas le permite seleccionar y editar
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-Mientras que la opción **Política de la página** del menú **Información de página** le permite [seleccionar las políticas de la página requeridas](#editingatemplatepagepolicies):
+Mientras que el **Política de página** opción en la **Información de página** El menú permite [seleccionar las directivas de página requeridas](#editingatemplatepagepolicies):
 
 ![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
@@ -356,7 +356,7 @@ En el modo de **Estructura**, puede definir los componentes y el contenido de la
 
 * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
 * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
-* Los componentes pueden volver a desbloquearse y bloquearse para que pueda definir el [contenido inicial](#editingatemplateinitialcontent).
+* Los componentes se pueden volver a desbloquear y bloquear para que pueda definir [contenido inicial](#editingatemplateinitialcontent).
 
 * Se definen las políticas de diseño para los componentes y la página.
 
@@ -417,7 +417,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
-  Cree una política de contenido, o seleccione una existente, para un componente. Esto le permite definir los detalles del diseño.
+  Cree una política de contenido, o seleccione una existente, para un componente. Esto permite definir los detalles del diseño.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -479,7 +479,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   *Características*
 
-  El **Funciones** permite activar o desactivar funciones adicionales del componente.
+  El **Funciones** La pestaña permite activar o desactivar funciones adicionales del componente.
 
   Por ejemplo, para un componente de imagen puede definir las proporciones de recorte, las orientaciones de imagen permitidas y si se permiten las cargas.
 

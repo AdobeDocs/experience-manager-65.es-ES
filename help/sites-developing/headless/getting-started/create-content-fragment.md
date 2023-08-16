@@ -2,10 +2,10 @@
 title: Guía de inicio rápido Creación de fragmentos de contenido sin encabezado
 description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 91%
+source-wordcount: '385'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +17,7 @@ Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar 
 
 [Ahora que ha creado una carpeta de recursos](create-assets-folder.md) donde puede almacenar los fragmentos de contenido, puede crear los fragmentos.
 
-Los fragmentos de contenido permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Permiten preparar contenido listo para usarse en varias ubicaciones y en varios canales.
+Los fragmentos de contenido permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Permiten preparar contenido listo para su uso en varias ubicaciones y en varios canales.
 
 Los fragmentos de contenido contienen contenido estructurado y se pueden entregar en formato JSON.
 

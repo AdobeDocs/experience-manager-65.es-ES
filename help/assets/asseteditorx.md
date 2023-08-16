@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '687'
 ht-degree: 11%
 
 ---
@@ -64,7 +64,7 @@ Los componentes de página de muestra requieren que todos los selectores empiece
 
 ### FormChooser: Ajustes para los recursos cargados finalmente {#formchooser-adjustments-for-eventually-loaded-resources}
 
-El editor de recursos utiliza el selector de formularios, que le permite editar recursos, en este caso recursos, en la misma página de formulario simplemente añadiendo un selector de formulario y la ruta del formulario a la URL del recurso.
+El editor de recursos utiliza el selector de formularios, que permite editar recursos (en este caso recursos) en la misma página de formulario simplemente añadiendo un selector de formulario y la ruta del formulario a la URL del recurso.
 
 Por ejemplo:
 

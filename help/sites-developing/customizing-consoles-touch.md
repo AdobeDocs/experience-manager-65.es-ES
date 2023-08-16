@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '669'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ AEM proporciona varios mecanismos para permitirle personalizar las consolas (y l
 
 * Clientlibs Clientlibs le permite ampliar la implementación predeterminada para obtener nuevas funcionalidades, mientras reutiliza las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.` Por ejemplo, puede contener el código necesario para el componente personalizado.
 
-* Superposiciones Las superposiciones se basan en definiciones de nodo y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la fusión de recursos de sling permite la herencia.
+* Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la fusión de recursos de sling permite la herencia.
 
 AEM Se pueden utilizar de muchas maneras para ampliar las consolas de la. Una pequeña selección se cubren a continuación (en un nivel alto).
 
@@ -93,7 +93,7 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) de una cons
 
 ### Agregar nueva acción a la barra de herramientas {#add-new-action-to-the-toolbar}
 
-1. Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para las acciones personalizadas. Por ejemplo, una **Promocionar en Twitter** acción en:
+1. Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para las acciones personalizadas. Por ejemplo, una **Promocionar a Twitter** acción en:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 

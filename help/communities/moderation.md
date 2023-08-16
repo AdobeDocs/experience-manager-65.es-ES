@@ -12,9 +12,9 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2041'
 ht-degree: 4%
 
 ---
@@ -108,7 +108,7 @@ El área de contenido contiene información para el UGC publicado:
 
 >[!NOTE]
 > 
->El área de contenido incluye un *desplazamiento infinito*, lo que significa que le permite continuar desplazándose hasta que haya llegado al final del contenido. La barra de herramientas permanece en una posición fija y visible sobre el área de contenido, incluso mientras se desplaza.
+>El área de contenido incluye un *desplazamiento infinito*, lo que significa que le permitirá continuar desplazándose hasta que haya llegado al final del contenido. La barra de herramientas permanece en una posición fija y visible sobre el área de contenido, incluso mientras se desplaza.
 
 ### Carril de filtro {#ootbfilters}
 
@@ -186,8 +186,9 @@ Para añadir recursos adicionales sobre los que filtrar:
 
    * Por ejemplo, para filtrar los componentes de votación incluidos, introduzca:
 
-      `Voting=social/tally/components/hbs/voting`
-   ![additional-contenttype](assets/additional-contenttype.png)
+     `Voting=social/tally/components/hbs/voting`
+
+  ![additional-contenttype](assets/additional-contenttype.png)
 
 * Seleccione Guardar.
 * Actualice la consola Comunidades - Moderación.
@@ -242,11 +243,11 @@ El [proyecto de ejemplo](https://github.com/Adobe-Marketing-Cloud/aem-communitie
 
 Para instalar el ejemplo para el filtro Etiquetas:
 
-1. Abra el administrador de paquetes en AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) instancia y AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`) instancia.
+1. AEM Abra el administrador de paquetes en el Autor de la (`https://[aem-author]:4502/crx/packmgr/index.jsp`AEM ) instancia y publicación de la (`https://[aem-publish]:4503/crx/packmgr/index.jsp`) instancia.
 1. Genere el paquete `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` desde el código de Github e instale y habilite la misma.
-1. Abra la consola de paquetes en AEM Author ( `https://[aem-author]:4502/system/console/bundles`) instancia y AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`) instancia.
+1. AEM Abra la consola Paquetes en el Autor de la ( `https://[aem-author]:4502/system/console/bundles`AEM ) instancia y publicación de la ( `https://[aem-publish]:4503/system/console/bundles`) instancia.
 1. Cree el paquete (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) de Github, e instale y habilite la misma.
-1. Ir a **/apps/social/moderation/facets** nodo en AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) y AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) instancia.
+1. Ir a **/apps/social/moderation/facets** AEM nodo en el autor de la (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`AEM ) y Publicación de la (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) instancia.
 1. Añadir un usuario técnico **communities-utility-reader** con `jcr:read` permisos.
 
 Para exponer los filtros personalizados en sitios de la comunidad existentes:

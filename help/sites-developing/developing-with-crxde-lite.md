@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2137'
 ht-degree: 5%
 
 ---
@@ -65,7 +65,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Widget de ruta del nodo</td>
-   <td><p>Muestra la ruta al nodo seleccionado actualmente.</p> <p>También puede utilizarlo para saltar a un nodo, introduciendo la ruta a mano o pegándola desde otro lugar y pulsando Intro.</p> <p>También es compatible con la búsqueda de nodos con un nombre de nodo específico. Introduzca el nombre del nodo que desea encontrar y espere (o pulse el símbolo de búsqueda en el lado derecho). Puede intentar introducir, por ejemplo, la cadena <em>roble</em> en el widget para ver cómo funciona. Si se carga un nodo o nodos determinados en el panel del explorador, se mostrará la lista y podrá seleccionar la ruta y pulsar Intro para desplazarse hasta ella. Tenga en cuenta que solo funciona para los nodos cargados actualmente en la aplicación cliente CRXDE en el explorador. Si desea buscar en todo el repositorio, utilice Herramientas y luego Consulta.</p> </td>
+   <td><p>Muestra la ruta al nodo seleccionado actualmente.</p> <p>También puede utilizarlo para saltar a un nodo, introduciendo la ruta a mano o pegándola desde otro lugar, y pulsando Intro.</p> <p>También es compatible con la búsqueda de nodos con un nombre de nodo específico. Introduzca el nombre del nodo que desea encontrar y espere (o pulse el símbolo de búsqueda en el lado derecho). Puede intentar introducir, por ejemplo, la cadena <em>roble</em> en el widget para ver cómo funciona. Si se carga un nodo o nodos determinados en el panel del explorador, se mostrará la lista y podrá seleccionar la ruta y pulsar Intro para desplazarse hasta ella. Tenga en cuenta que solo funciona para los nodos cargados actualmente en la aplicación cliente CRXDE en el explorador. Si desea buscar en todo el repositorio, utilice Herramientas y luego Consulta.</p> </td>
   </tr>
   <tr>
    <td>Panel del explorador</td>

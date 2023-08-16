@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10683'
+source-wordcount: '10678'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ Las siguientes configuraciones están disponibles para el servicio de formulario
 
 ## Configuración del servicio de puente de migración central (obsoleto) {#central-migration-bridge-service-settings}
 
-El servicio del puente de migración central ( `CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. AEM Las operaciones del servicio de puente de migración central le permiten reutilizar los siguientes recursos centrales en formularios:
+El servicio del puente de migración central ( `CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. AEM Las operaciones del servicio Puente de migración central permiten reutilizar los siguientes recursos centrales en formularios de la:
 
 * diseño de plantilla (&amp;ast;.ifd)
 * plantillas de salida (&amp;ast;.mdf)
@@ -149,7 +149,7 @@ Las siguientes configuraciones están disponibles para el servicio Distiller.
 * Tamaño de archivo más pequeño
 * Estándar
 
-Se pueden crear nuevas configuraciones a través de la interfaz de usuario de PDF Generator.
+Se pueden crear nuevas configuraciones a través de la interfaz de usuario del PDF Generator.
 
 **Configuración de seguridad:** Configuración de seguridad preconfigurada que se aplica a documentos de PDF generados. El valor predeterminado es Sin seguridad. Debe crear la configuración de seguridad mediante PDF Generator y, a continuación, introduzca la configuración aquí.
 
@@ -249,11 +249,11 @@ El servicio Generar PDF ( `GeneratePDFService`) convierte archivos en varios for
 
 Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
-**Configuración de Adobe PDF:** Nombre de la configuración de Adobe PDF preconfigurada que se aplicará a un trabajo de conversión si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración de Adobe PDF se establece en la consola de administración, haciendo clic en Servicios > Generador de PDF > Configuración de Adobe PDF. Esta configuración solo es aplicable a las conversiones basadas en PDFMaker.
+**Configuración de Adobe PDF:** Nombre de la configuración de Adobe PDF preconfigurada que se aplicará a un trabajo de conversión si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración de Adobe PDF se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración de Adobe PDF. Esta configuración solo es aplicable a las conversiones basadas en PDFMaker.
 
 **Configuración de seguridad:** Nombre de la configuración de seguridad preconfigurada que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración de seguridad se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración de seguridad.
 
-**Configuración de tipo de archivo:** Nombre de la configuración de tipo de archivo preconfigurada que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración del tipo de archivo se establece en la consola de administración, haciendo clic en Servicios > Generador de PDF > Configuración del tipo de archivo.
+**Configuración de tipo de archivo:** Nombre de la configuración de tipo de archivo preconfigurada que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración del tipo de archivo se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración del tipo de archivo.
 
 **Utilizar Acrobat WebCapture (sólo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat X Pro para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos del PDF producidos a partir de HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
 
@@ -267,7 +267,7 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 **Tamaño del grupo de HTML a PDF:** El tamaño del grupo del convertidor HTML a PDF en el servicio Generar PDF. Esta opción controla el número máximo de conversiones simultáneas de HTML a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
 
-**Tamaño del grupo de OCR:** Tamaño del grupo de servidores de PaperCaptureService que utiliza PDF Generator para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
+**Tamaño del grupo de OCR:** Tamaño del grupo de PaperCaptureService que utiliza el PDF Generator para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
 
 **Familia De Fuentes De Reserva Para Conversiones De HTML A PDF:** Nombre de la familia de fuentes que se utilizará en los documentos del PDF cuando la fuente utilizada en el HTML AEM original no esté disponible para el servidor de formularios de la. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
 
@@ -283,13 +283,13 @@ Reintentar la conversión del PDF independientemente de si se ha alcanzado el um
 
 **Vuelva a intentar si el tiempo lo permite**
 
-Reintente la conversión del PDF si el tiempo empleado para el primer intento de conversión fue menor que el tiempo de espera especificado. Por ejemplo, si el tiempo de espera es de 270 segundos y el primer intento consume 200 segundos, PDF Generator volverá a intentar la conversión. Si el primer intento consumió 270 segundos, no se volverá a intentar la conversión.
+Reintente la conversión del PDF si el tiempo empleado para el primer intento de conversión fue menor que el tiempo de espera especificado. Por ejemplo, si la duración del tiempo de espera es de 270 segundos y el primer intento consumió 200 segundos, PDF Generator volverá a intentar la conversión. Si el primer intento consumió 270 segundos, no se volverá a intentar la conversión.
 
 ## Guías ES4 Utilidades configuración del servicio {#guides-es4-utilities-service-settings}
 
 Al crear una guía, algunos recursos, como la definición de la guía, están incrustados en la guía. AEM Los recursos también pueden existir como referencias a recursos de la aplicación almacenados localmente o en el servidor de formularios de la. La Guía no contiene datos, y los valores de la ubicación de envío y las entradas no son adecuados para todos los entornos externos.
 
-En la mayoría de los casos, los servicios de procesamiento predeterminados de las guías son suficientes para preparar una guía para usarla en Workspace u otros entornos externos. (En la vista Servicios, en Workbench, el servicio predeterminado es Guías (sistema)/Procesos/Guía de procesamiento - 1.0). El servicio Utilidades de guía ( `GuidesUtility`) le permite crear un proceso personalizado para procesar una guía, si es necesario.
+En la mayoría de los casos, los servicios de procesamiento predeterminados de las guías son suficientes para preparar una guía para usarla en Workspace u otros entornos externos. (En la vista Servicios, en Workbench, el servicio predeterminado es Guías (sistema)/Procesos/Guía de procesamiento - 1.0). El servicio Utilidades de guía ( `GuidesUtility`) permite crear un proceso personalizado para procesar una guía, si es necesario.
 
 Las operaciones de Utilidades de la guía permiten añadir las siguientes tareas de renderización de la guía a un proceso:
 
@@ -354,7 +354,7 @@ Configure el servicio JMS con propiedades predeterminadas para que las operacion
 
 Las siguientes configuraciones están disponibles para el servicio JMS.
 
-**URL del proveedor:** La URL del proveedor de servicios JNDI. El valor predeterminado se basa en el servidor de aplicaciones JBoss. AEM Las siguientes direcciones URL son valores predeterminados para los servidores de aplicaciones compatibles con formularios de la aplicación de la manera que se describe a continuación:
+**URL del proveedor:** La URL del proveedor de servicios JNDI. El valor predeterminado se basa en el servidor de aplicaciones JBoss. AEM Las siguientes direcciones URL son valores predeterminados para los servidores de aplicaciones compatibles con los formularios de:
 
 **JBoss:** `<server name>:1099`
 
@@ -520,7 +520,7 @@ AEM AEM La mayoría de los servicios están configurados para que pueda acceder 
 
 Los siguientes ajustes están disponibles para el servicio Remoting.
 
-**Método de autenticación de cliente de Flex:** Determina el tipo de respuesta que el servidor devuelve al cliente cuando el servicio invocado está habilitado para la seguridad, la operación invocada no admite invocaciones anónimas y el cliente pasa credenciales nulas o no válidas. Elija entre Personalizado o Básico. El valor predeterminado es Básico.
+**Método de autenticación de cliente de Flex:** Determina el tipo de respuesta que el servidor devuelve al cliente cuando el servicio invocado está habilitado para la seguridad, la operación invocada no admite invocaciones anónimas y el cliente pasa credenciales no válidas o no válidas. Elija entre Personalizado o Básico. El valor predeterminado es Básico.
 
 **Permitir La Serialización De Clases No Serializables:** AEM La mayoría de los extremos de formularios solo permiten que se utilicen clases serializables para la invocación. En versiones anteriores, el extremo remoto permitía que se utilizaran clases no serializables para la invocación desde clientes basados en Flex. Se ha cambiado para evitar una vulnerabilidad de seguridad descrita en APS11-15. Si desea seguir utilizando clases no serializables con el extremo de comunicación remota de Flex, active esta casilla de verificación.
 
@@ -572,7 +572,7 @@ Los siguientes ajustes están disponibles para el servicio Signature.
 
 **Máximo de sesiones de verificación anidadas permitidas:** Número máximo de sesiones de verificación anidadas permitidas. AEM Los formularios utilizan este valor para evitar un bucle infinito al verificar los certificados del firmante de OCSP o CRL cuando el certificado de OCSP o CRL no está configurado correctamente. El valor predeterminado es 10.
 
-**Desviación máxima del reloj para la verificación:** Tiempo máximo, en minutos, que puede ser el tiempo de firma después del tiempo de validación. Si el sesgo del reloj es bueno a este valor, la firma no será válida. El valor predeterminado es 65 minutos.
+**Desviación máxima del reloj para la verificación:** Tiempo máximo, en minutos, que puede ser el tiempo de firma después del tiempo de validación. Si la desviación del reloj es mayor que este valor, la firma no será válida. El valor predeterminado es 65 minutos.
 
 **Caché de duración de certificado:** Duración de un certificado, recuperado en línea o por otros medios, en la caché. El valor predeterminado es 1 día.
 

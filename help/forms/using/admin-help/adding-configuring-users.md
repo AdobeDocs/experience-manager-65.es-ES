@@ -1,16 +1,12 @@
 ---
 title: Agregar y configurar usuarios
-seo-title: Adding and configuring users
 description: La configuración de Administración de usuarios en la consola de administración le permite crear o eliminar usuarios y configurar otras opciones de configuración de usuario.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1733'
 ht-degree: 1%
 
 ---
@@ -74,7 +70,7 @@ Evite utilizar caracteres de guion bajo (_) en nombres canónicos, por ejemplo, 
 
 Si utiliza un dominio local o híbrido, la información sobre los usuarios se almacena únicamente en la base de datos de Administración de usuarios. Para estos usuarios, establezca la Clave del calendario empresarial en una cadena. A continuación, asigne la clave del calendario empresarial (la cadena) a un calendario empresarial en el flujo de trabajo de Forms.
 
-Si utiliza un dominio de empresa, la información sobre los usuarios reside en un sistema de almacenamiento de terceros, como un directorio LDAP. Administración de usuarios sincroniza la información de usuario del directorio con la base de datos de Administración de usuarios. Esta función le permite asignar una clave de calendario empresarial a un campo del directorio LDAP. Por ejemplo, imagine un escenario en el que cada registro de usuario del directorio contiene un campo de país y desea asignar calendarios comerciales basados en el país en el que se encuentra el usuario. En este caso, especifique el nombre del campo de país como valor para la configuración Clave del calendario empresarial. A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo de país en el directorio LDAP) a los calendarios empresariales en el flujo de trabajo de Forms.
+Si utiliza un dominio de empresa, la información sobre los usuarios reside en un sistema de almacenamiento de terceros, como un directorio LDAP. Administración de usuarios sincroniza la información de usuario del directorio con la base de datos de Administración de usuarios. Esta función permite asignar una clave de calendario empresarial a un campo del directorio LDAP. Por ejemplo, imagine un escenario en el que cada registro de usuario del directorio contiene un campo de país y desea asignar calendarios comerciales basados en el país en el que se encuentra el usuario. En este caso, especifique el nombre del campo de país como valor para la configuración Clave del calendario empresarial. A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo de país en el directorio LDAP) a los calendarios empresariales en el flujo de trabajo de Forms.
 
 Para obtener información adicional sobre los calendarios comerciales, incluido cómo asignar claves de calendario empresarial a calendarios comerciales, consulte [Configurar calendarios comerciales](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
@@ -136,7 +132,6 @@ Evite crear nombres de usuario que comiencen con un signo de número (#). Al rea
 
    * Para quitar el usuario de un grupo, marque la casilla del grupo y haga clic en **[!UICONTROL Eliminar]** y haga clic en **[!UICONTROL Guardar]**.
 
-
 1. Para editar las funciones del usuario, haga clic en **[!UICONTROL Asignaciones de roles]** y realice estas tareas:
 
    * Para mostrar una lista de funciones, haga clic en **[!UICONTROL Buscar roles]**.
@@ -166,7 +161,7 @@ AEM Si un usuario sin los formularios y los permisos de CQ necesarios intenta in
 * Solución de Administración de correspondencia
 * AEM Espacio de trabajo de formularios
 
-   ***nota **: Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado el.*
+  ***nota **: Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado el.*
 
 * administrador de formularios
 * Informes de procesos 

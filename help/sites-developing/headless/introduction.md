@@ -2,10 +2,10 @@
 title: AEM Desarrollo sin encabezado para sitios de 6.5
 description: AEM Descubra cómo las potentes funciones sin encabezado de la versión 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, trabajan juntas para permitirle administrar sus experiencias de forma centralizada y atenderlas en todos los canales.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 38%
+source-wordcount: '495'
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ La implementación sin encabezado renuncia a la administración de páginas y co
 
 ## Comparación entre con encabezado y sin encabezado {#headful-headless}
 
-AEM Este documento se centra en el modelo completo de implementación sin encabezado de la aplicación de la. Sin embargo, con encabezado o sin encabezado no tiene por qué ser una elección binaria en AEM. Las funciones sin encabezado se pueden utilizar para administrar y entregar el contenido a una variedad de puntos de conexión, al tiempo que permiten a los autores de contenido editar aplicaciones de una sola página. Todo en AEM.
+AEM Este documento se centra en el modelo completo de implementación sin encabezado de la aplicación de la. AEM Sin embargo, con encabezado o sin encabezado no tiene por qué ser una elección binaria en el caso de los archivos de tipo. Las funciones sin encabezado se pueden utilizar para administrar y entregar el contenido a una variedad de puntos de conexión, al tiempo que permiten a los autores de contenido editar aplicaciones de una sola página. Todo en AEM.
 
 >[!TIP]
 >

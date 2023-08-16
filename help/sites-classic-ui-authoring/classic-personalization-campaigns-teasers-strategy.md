@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Las campañas suelen utilizar teasers como mecanismo para atraer a un segmento e
 AEM Los teasers dentro de los recursos de la biblioteca están compuestos por varias partes:
 
 * **Páginas de teaser** se almacenan en la página de campaña adecuada y contienen las definiciones de los párrafos de teaser disponibles para cada campaña específica. Estas definiciones se utilizan para mostrar los párrafos de teaser; incluidas las variaciones de contenido, el segmento que se utilizará para seleccionar una variación y el factor de ampliación.
-* El **Componente Teaser** está disponible de forma predeterminada y le permite crear una instancia del párrafo de teaser específico en una página de contenido. Puede arrastrar el componente Teaser de la barra de tareas y, a continuación, especificar la definición del teaser para crear su propio párrafo de teaser. **Nota:** AEM El componente Teaser ya no se utiliza en la versión 6.2 de. En su lugar, utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
+* El **Componente Teaser** está disponible de forma predeterminada y permite crear una instancia del párrafo de teaser específico en una página de contenido. Puede arrastrar el componente Teaser de la barra de tareas y, a continuación, especificar la definición del teaser para crear su propio párrafo de teaser. **Nota:** AEM El componente Teaser ya no se utiliza en la versión 6.2 de. En su lugar, utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
 * **Párrafos de teaser** son instancias reales del teaser dentro de una página de contenido. Esto atrae a un segmento de visitantes a través del contenido centrado en sus intereses.
 * Páginas que contienen contenido de la campaña centrado en un segmento de visitante específico. Normalmente, los párrafos de teaser dirigen al visitante a dichas páginas.
 

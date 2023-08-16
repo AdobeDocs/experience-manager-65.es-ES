@@ -11,10 +11,10 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 100%
+source-wordcount: '1659'
+ht-degree: 94%
 
 ---
 
@@ -232,7 +232,7 @@ Del mismo modo, según sus necesidades, puede crear lo siguiente:
 
 ### Una condición vacía dentro de la línea {#empty-inline-condition}
 
-Es posible que deba insertar condiciones vacías dentro de la línea e incrustar texto y elementos DD más adelante. Administración de correspondencia le permite hacer eso.
+Es posible que deba insertar condiciones vacías dentro de la línea e incrustar texto y elementos DD más adelante. Administración de correspondencia le permite hacerlo.
 
 ![emptycondition](assets/emptycondition.png)
 

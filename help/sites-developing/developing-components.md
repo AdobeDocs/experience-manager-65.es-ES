@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3454'
 ht-degree: 2%
 
 ---
@@ -99,13 +99,13 @@ El mecanismo para separar la lógica de la apariencia ayuda a aclarar lo que se 
 
 ### Uso de JavaScript {#using-javascript}
 
-[La API de uso de JavaScript de HTL permite que un archivo HTL acceda al código de ayuda escrito en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Esto le permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
+[La API de uso de JavaScript de HTL permite que un archivo HTL acceda al código de ayuda escrito en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
 
 ### Uso de bibliotecas de HTML del lado del cliente {#using-client-side-html-libraries}
 
 Los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código complejo CSS y JavaScript. Organizar y optimizar el servicio de este código puede ser un problema complicado.
 
-AEM Para ayudar a resolver este problema, proporciona lo siguiente: **Carpetas de biblioteca del cliente**, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente. A continuación, el sistema de biblioteca del lado del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto.
+AEM Para ayudar a resolver este problema, proporciona lo siguiente: **Carpetas de biblioteca del cliente**, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente. A continuación, el sistema de biblioteca del lado del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto.
 
 Leer [Uso de bibliotecas de HTML del lado del cliente](/help/sites-developing/clientlibs.md) para obtener más información.
 
@@ -201,7 +201,6 @@ Para ver ejemplos, consulte:
 >* AEM la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 >* el código de muestra relacionado cubierto en [Ejemplo de código: cómo personalizar campos de diálogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
-
 
 #### Creación de un nuevo campo {#creating-a-new-field}
 
@@ -379,7 +378,6 @@ Se puede configurar este comportamiento y la relación de recurso a componente n
    * Nombre: `cq:authoring`
    * Tipo: `nt:unstructured`
 
-
 1. En esta sección, cree un nuevo nodo que contenga todas las asignaciones de recursos a componentes:
 
    * Nombre: `assetToComponentMapping`
@@ -396,27 +394,26 @@ Se puede configurar este comportamiento y la relación de recurso a componente n
 
       * Tipo: `String`
       * Valor: el grupo al que pertenece el recurso relacionado; por ejemplo, `media`
+
    * `assetMimetype`:
 
       * Tipo: `String`
       * Valor: el tipo MIME del recurso relacionado; por ejemplo `image/*`
+
    * `droptarget`:
 
       * Tipo: `String`
       * Valor: el destino de colocación; por ejemplo, `image`
+
    * `resourceType`:
 
       * Tipo: `String`
       * Valor: el recurso de componente relacionado; por ejemplo, `foundation/components/image`
+
    * `type`:
 
       * Tipo: `String`
       * Valor: el tipo, por ejemplo, `Images`
-
-
-
-
-
 
 Para ver ejemplos, consulte:
 
@@ -458,7 +455,7 @@ Al migrar un componente diseñado para utilizarlo con la IU clásica a un compon
 
 * Componentes
 
-   * Migrar [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) código que utiliza funciones específicas de la IU clásica
+   * Migrar [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) código que utiliza funciones específicas de la IU clásica
    * RTE, para obtener más información, consulte [Configuración del editor de texto enriquecido](/help/sites-administering/rich-text-editor.md).
    * [Migrar `cq:listener` código](#migrating-cq-listener-code) que utiliza funciones específicas de la IU clásica
 
@@ -501,7 +498,7 @@ Como desarrollador, desea acceder fácilmente a la documentación de los compone
 
 Por este motivo, es fácil hacer que cualquier Markdown de documentación existente que tenga disponible dentro del propio componente.
 
-Colocar una `README.md` en la estructura del componente. Esta marca se muestra en la variable [consola componentes](/help/sites-authoring/default-components-console.md).
+Colocar un `README.md` en la estructura del componente. Esta marca se muestra en la variable [consola componentes](/help/sites-authoring/default-components-console.md).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 

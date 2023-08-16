@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6088'
+source-wordcount: '6086'
 ht-degree: 0%
 
 ---
@@ -562,7 +562,7 @@ Se pueden implementar servicios OSGi opcionales para personalizar varias partes 
  <tbody>
   <tr>
    <td>RequestTracker</td>
-   <td>El rastreador de solicitudes recibe una notificación cada vez que el portlet muestra contenido. Esto le permite realizar un seguimiento de las invocaciones del portlet.</td>
+   <td>El rastreador de solicitudes recibe una notificación cada vez que el portlet muestra contenido. Esto permite realizar un seguimiento de las invocaciones del portlet.</td>
   </tr>
   <tr>
    <td>InvocationContextListener</td>
@@ -638,7 +638,7 @@ AEM Utilice el componente Portlet para agregar ventanas de portlet a las página
 AEM Para utilizar la aplicación de como portal, realice las siguientes tareas:
 
 1. Instale el componente Portlet y las bibliotecas compartidas.
-1. Agregue el componente Portlet a la barra de tareas.
+1. Agregue el componente Portlet al Sidekick.
 1. Configure e implemente la aplicación web que contiene los portlets que desea que aparezcan en el componente Portal.
 1. Agregue el componente Portlet a una página y seleccione el portlet que desea mostrar.
 

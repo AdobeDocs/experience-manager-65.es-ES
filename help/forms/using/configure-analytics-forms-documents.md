@@ -10,16 +10,16 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1532'
+ht-degree: 97%
 
 ---
 
 # Analytics con el marco de trabajo de Cloud Service {#analyticsusingcloudframework}
 
-AEM Forms se integra con Analytics para permitirle capturar y rastrear las métricas de rendimiento de sus formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
+AEM Forms se integra con Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Siga estos pasos para crear un grupo de informes.
 La configuración de Cloud Service es información sobre su cuenta de Adobe Analytics. La configuración permite que Adobe Experience Manager (AEM) se conecte a Adobe Analytics. Cree una configuración diferente para cada cuenta de Analytics que utilice.
 
 1. Inicie sesión en la instancia de autor de AEM como administrador.
-1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![icono de martillo](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services heredados**.
+1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![icono de martillo](/help/forms/using/assets/tools.png) > **Cloud Service** > **Cloud Service heredados**.
 1. Localice el icono de **Adobe Analytics**. Haga clic en **Mostrar configuraciones** y, a continuación, haga clic en **[+]** para agregar nueva configuración.
 
    Si es la primera vez que lo hace, haga clic en **Configurar ahora**.

@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3572'
 ht-degree: 2%
 
 ---
@@ -186,7 +186,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 ![Pestaña Dependencias](assets/dependencies.png)
 
-| Campo | Descripción | Ejemplo/Detalles |
+| Campo | Descripción | Ejemplos/Detalles |
 |---|---|---|
 | Probado con | El nombre y la versión del producto a los que se dirige este paquete o con los que es compatible. | `6.5` |
 | Problemas solucionados | Un campo de texto que permite enumerar los detalles de los errores corregidos con este paquete, un error por línea | - |
@@ -197,7 +197,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 ![Pestaña Configuración avanzada](assets/advanced-settings.png)
 
-| Campo | Descripción | Ejemplo/Detalles |
+| Campo | Descripción | Ejemplos/Detalles |
 |---|---|---|
 | Nombre | El nombre del proveedor del paquete | `WKND Media Group` |
 | URL | URL del proveedor | `https://wknd.site` |
@@ -492,9 +492,9 @@ Antes de la instalación del paquete, el Administrador de paquetes crea automát
 >[!CAUTION]
 >
 >* Si va a instalar recursos digitales, debe:
-   >  Primero, desactive WorkflowLauncher.
-   >  Utilice la opción de menú Componentes de la consola OSGi para desactivar
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  Primero, desactive WorkflowLauncher.
+>  Utilice la opción de menú Componentes de la consola OSGi para desactivar
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* A continuación, cuando finalice la instalación, reactive WorkflowLauncher.
 >
 >Al desactivar WorkflowLauncher, se garantiza que el marco del importador de recursos no manipule los recursos (de forma involuntaria) durante la instalación.

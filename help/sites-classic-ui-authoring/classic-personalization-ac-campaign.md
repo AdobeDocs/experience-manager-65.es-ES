@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Al crear contenido de Adobe Campaign AEM en la, debe vincular a un servicio de A
 
 Hay dos casos posibles:
 
-* El contenido se puede sincronizar con una entrega desde Adobe Campaign. AEM Esto le permite utilizar contenido de la en una entrega.
+* El contenido se puede sincronizar con una entrega desde Adobe Campaign. AEM Esto permite utilizar contenido de la en una entrega.
 * (Solo Adobe Campaign local) El contenido se puede enviar directamente a Adobe Campaign, que genera automáticamente un nuevo envío de correo electrónico. Este modo tiene limitaciones.
 
 Las instrucciones detalladas se describen en este documento.

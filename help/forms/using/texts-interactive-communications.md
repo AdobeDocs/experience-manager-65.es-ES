@@ -10,10 +10,10 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2477'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ El fragmento del documento de texto de la comunicación interactiva admite el si
 1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Texto]**.
 1. Especifique la siguiente información:
 
-   * **[!UICONTROL Título]**: (Opcional) escriba el título del fragmento del documento de texto. Los títulos no tienen que ser únicos y pueden tener caracteres especiales y que no sean de inglés. Los textos se refieren por sus títulos (cuando están disponibles), como en miniaturas y propiedades.
+   * **[!UICONTROL Título]**: (Opcional) escriba el título del fragmento del documento de texto. Los títulos no tienen que ser únicos, y pueden tener caracteres especiales y caracteres que no sean de inglés. Los textos se refieren por sus títulos (cuando están disponibles), como en miniaturas y propiedades.
    * **[!UICONTROL Nombre]**: nombre exclusivo del texto, dentro de una carpeta. No pueden existir dos fragmentos de documento (texto, condición o lista) con el mismo nombre en una misma carpeta. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
 
    * **[!UICONTROL Descripción]**: escriba una descripción del texto.
@@ -58,6 +58,7 @@ El fragmento del documento de texto de la comunicación interactiva admite el si
       * [Copiar y pegar texto con formato desde otras aplicaciones](#paste)
 
       * [Resaltar fragmentos del texto](#highlight)
+
    * [Repetir](/help/forms/using/cm-inline-condition.md)
    * [Caracteres especiales](#special)
    * [Buscar y reemplazar texto](#searching)

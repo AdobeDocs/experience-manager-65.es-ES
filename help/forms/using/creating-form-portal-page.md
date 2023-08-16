@@ -11,10 +11,10 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 99%
+source-wordcount: '1661'
+ht-degree: 97%
 
 ---
 
@@ -151,7 +151,7 @@ El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan las o
   <tr>
    <td><span class="uicontrol"><strong>Estilo</strong></code></td>
    <td>Tipo de estilo</td>
-   <td>Permite especificar <strong>Sin estilo, estilo predeterminado</strong> o <strong>estilo personalizado</strong> para listar los formularios.</td>
+   <td>Permite especificar <strong>Sin estilo, estilo predeterminado</strong>, o <strong>Estilo personalizado </strong>para enumerar los formularios.</td>
   </tr>
   <tr>
    <td> </td>

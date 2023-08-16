@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ En primer lugar, compruebe la conexión entre las instancias de autor y publicac
 
 ## Edición del contenido del formulario {#editing-form-content}
 
-Forms dedicado a Adobe Campaign tiene componentes específicos. Estos componentes tienen una opción que le permite vincular cada campo del formulario a un campo de la base de datos de Adobe Campaign.
+Forms dedicado a Adobe Campaign tiene componentes específicos. Estos componentes tienen una opción para permitirle vincular cada campo del formulario a un campo de la base de datos de Adobe Campaign.
 
 >[!NOTE]
 >
@@ -80,16 +80,16 @@ Forms dedicado a Adobe Campaign tiene componentes específicos. Estos componente
 Esta sección solo detalla los vínculos específicos a Adobe Campaign. Para obtener más información sobre una descripción general más general del uso de los formularios en Adobe Experience Manager, consulte [Componentes del modo de edición](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Desplácese hasta el formulario que desee editar.
-1. En el cuadro de herramientas, seleccione **Página** > **Propiedades de página...** a continuación, vaya a **Cloud Services** de la ventana emergente.
+1. En el cuadro de herramientas, seleccione **Página** > **Propiedades de página...** a continuación, vaya a **Cloud Service** de la ventana emergente.
 1. Agregue el servicio Adobe Campaign haciendo clic en **Añadir servicio** y, a continuación, en la lista desplegable del servicio, seleccione la configuración que corresponda a la instancia de Adobe Campaign. Esta configuración se realiza al configurar la conexión entre las instancias. Para obtener más información, consulte [AEM Conexión de la a Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
    >Si es necesario, desbloquee la configuración haciendo clic en el icono de candado para poder agregar el servicio de Adobe Campaign.
 
-1. Acceda a los parámetros generales del formulario con la variable **Editar** se encuentra al principio del formulario. El **Form** le permite seleccionar una página de agradecimiento a la que se redirigirá al usuario después de validar el formulario.
+1. Acceda a los parámetros generales del formulario con la variable **Editar** se encuentra al principio del formulario. El **Form** Esta pestaña le permite seleccionar una página de agradecimiento a la que se redirigirá al usuario después de validar el formulario.
 
-   El **Avanzadas** permite seleccionar el tipo de formulario. El **Opciones de publicación** Este campo permite elegir entre tres tipos de formularios Adobe Campaign:
+   El **Avanzadas** form permite seleccionar el tipo de formulario. El **Opciones de publicación** Este campo permite elegir entre tres tipos de formularios Adobe Campaign:
 
    * **Adobe Campaign: Guardar perfil**: permite crear o actualizar un destinatario en Adobe Campaign (valor predeterminado).
    * **Adobe Campaign: Suscribirse a servicios**: permite administrar las suscripciones de un destinatario en Adobe Campaign.

@@ -4,10 +4,10 @@ description: AEM Comprenda de qué forma las variaciones pueden hacer que el con
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 96%
+source-wordcount: '2422'
+ht-degree: 93%
 
 ---
 
@@ -151,7 +151,7 @@ El texto sin formato permite introducir rápidamente el contenido sin aplicar fo
 >
 >Para obtener información completa, consulte la documentación [Markdown](/help/assets/content-fragments/content-fragments-markdown.md).
 
-Esto le permite dar formato al texto mediante markdown. Puede definir lo siguiente:
+Esto permite dar formato al texto mediante markdown. Puede definir lo siguiente:
 
 * Encabezados
 * Párrafos y saltos de línea
@@ -192,7 +192,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### Fragmento de contenido nuevo {#fragment-references-new-content-fragment}
 
-La opción **Nuevo fragmento de contenido** le permite crear un fragmento completamente nuevo. Para conseguirlo, se abrirá en el editor una variación del asistente para crear fragmentos de contenido.
+La opción **Fragmento de contenido nuevo** le permitirá crear un fragmento completamente nuevo. Para conseguirlo, se abrirá en el editor una variación del asistente para crear fragmentos de contenido.
 
 A continuación, podrá crear un nuevo fragmento mediante lo siguiente:
 
@@ -400,7 +400,7 @@ Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/cont
 
 ### Creación de una variación {#creating-a-variation}
 
-Las variaciones le permiten tomar el contenido **principal** y variar según el propósito (si es necesario).
+Las variaciones permiten tomar la **Principal** y puede variar según el propósito (si es necesario).
 
 Para crear una nueva variación, haga lo siguiente:
 
@@ -461,7 +461,7 @@ No puede eliminar **Principal**.
 
 **Principal** es una parte integral de un fragmento de contenido y por definición contiene la copia principal del contenido, mientras que las variaciones contienen versiones individuales actualizadas y adaptadas de ese contenido. Cuando Principal se actualiza, es posible que estos cambios también sean relevantes para las variaciones y, por lo tanto, deban propagarse a ellas.
 
-Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto le permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
+Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Principal. Esto permite copiar automáticamente los cambios realizados en Principal en la variación requerida.
 
 >[!CAUTION]
 >

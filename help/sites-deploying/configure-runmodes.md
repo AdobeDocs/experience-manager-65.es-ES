@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
 
 # Ejecutar modos{#run-modes}
 
-AEM Los modos de ejecución le permiten ajustar la instancia de la para un propósito específico; por ejemplo, crear o publicar, probar, desarrollar, intranet u otros.
+AEM Los modos de ejecución permiten ajustar la instancia de la para un propósito específico; por ejemplo, crear o publicar, probar, desarrollar, intranet u otros.
 
 Puede hacer lo siguiente:
 
@@ -85,7 +85,7 @@ El modo de ejecución nosamplecontent está diseñado para instalaciones de prod
 
 Se puede guardar en el repositorio una colección de valores para las propiedades de configuración, utilizados para un modo de ejecución concreto.
 
-El modo de ejecución se indica con un sufijo en el nombre de la carpeta. Esto le permite almacenar todas las configuraciones en un repositorio como. Por ejemplo:
+El modo de ejecución se indica con un sufijo en el nombre de la carpeta. Esto permite almacenar todas las configuraciones en un repositorio como. Por ejemplo:
 
 * `config`
 

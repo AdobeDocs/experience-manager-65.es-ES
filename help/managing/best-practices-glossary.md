@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6949'
+source-wordcount: '6948'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Se pueden registrar detalles; por ejemplo, sobre las tecnologías y versiones im
 
 Formación del personal administrativo de la solución. Consulte la [Servicios de formación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
-### Formación de autor de AEM {#aem-author-training}
+### AEM Formación de autor de {#aem-author-training}
 
 Formación del personal que producirá (creará) el contenido de la solución. Consulte la [Servicios de formación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
@@ -1282,7 +1282,7 @@ El concepto de prueba es la descripción de alto nivel de las pruebas del proyec
 
 ### Planes de prueba {#testing-plans}
 
-Estos planes describen en bueno detalle la realización de pruebas para cada fase de desarrollo y se basan en la [Estrategia de prueba](#testing-strategy).
+Estos planes describen con mayor detalle la ejecución de pruebas para cada fase de desarrollo y se basan en la [Estrategia de prueba](#testing-strategy).
 
 ### Ámbito de prueba {#testing-scope}
 
@@ -1407,7 +1407,7 @@ La especificación de cada flujo de trabajo debe incluir (como mínimo):
 
 ### Concepto de flujos de trabajo {#workflows-concept}
 
-AEM Los flujos de trabajo le permiten automatizar las actividades de. El concepto Flujos de trabajo describe:
+AEM Los flujos de trabajo permiten automatizar las actividades de la. El concepto Flujos de trabajo describe:
 
 * los procesos que necesitan automatización
 * AEM los servicios y funciones en los que se verán afectados los servicios y las funciones de la

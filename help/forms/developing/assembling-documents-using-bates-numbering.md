@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1922'
 ht-degree: 3%
@@ -25,11 +25,11 @@ ht-degree: 3%
 
 Puede combinar documentos de PDF que contengan identificadores de página únicos mediante la numeración Bates. *Numeración Bates* es un método de aplicación de identificadores únicos a un lote de documentos relacionados. A cada página del documento (o conjunto de documentos) se le asigna un número Bates que identifica de forma exclusiva la página. Por ejemplo, los documentos de fabricación que contienen información de listas de materiales y están asociados con la producción de un conjunto pueden contener un identificador. Un número Bates contiene un valor numérico incrementado secuencialmente y un prefijo y sufijo opcionales. El prefijo + numérico + sufijo se denomina *patrón Bates*.
 
-La siguiente ilustración muestra un documento PDF que contiene un identificador único ubicado en el encabezado del documento.
+La siguiente ilustración muestra un documento de PDF que contiene un identificador único ubicado en el encabezado del documento.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 
-A los efectos de esta discusión, el identificador de página único se coloca en el encabezado de un documento. Supongamos que se utiliza el siguiente documento DDX.
+A los efectos de esta discusión, el identificador único de página se coloca en el encabezado de un documento. Supongamos que se utiliza el siguiente documento DDX.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -52,7 +52,7 @@ Este documento DDX combina dos documentos de PDF llamados *map.pdf* y *direction
 
 >[!NOTE]
 >
->Antes de leer esta sección, se recomienda estar familiarizado con el ensamblado de documentos de PDF mediante el servicio Assembler. En esta sección no se analizan los conceptos, como crear un objeto de colección que contenga documentos de entrada o extraer los resultados del objeto de colección devuelto. (Consulte [Agrupar documentos de PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Antes de leer esta sección, se recomienda que esté familiarizado con el ensamblado de documentos de PDF mediante el servicio Assembler. En esta sección no se analizan los conceptos, como crear un objeto de colección que contenga documentos de entrada o extraer los resultados del objeto de colección devuelto. (Consulte [Agrupar documentos de PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >

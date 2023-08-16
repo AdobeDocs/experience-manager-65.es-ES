@@ -2,10 +2,10 @@
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3031'
-ht-degree: 100%
+source-wordcount: '3024'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ Los Modelos de fragmento de contenido definen la estructura de los datos y el co
 
 ### Fragmentos de contenido {#content-fragments}
 
-Los fragmentos de contenido permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Permiten preparar contenido listo para usarse en varias ubicaciones y en varios canales.
+Los fragmentos de contenido permiten diseñar, crear, depurar y publicar contenido independiente de cualquier página. Permiten preparar contenido listo para su uso en varias ubicaciones y en varios canales.
 
 Los fragmentos de contenido contienen contenido estructurado y se pueden entregar en formato JSON.
 
@@ -139,9 +139,9 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 ### Ámbito {#scope}
 
-Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
+Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa los criterios de aceptación y le permite establecer una definición de listo.
 
-La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” La respuesta debe ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
+La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” AEM La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con las que no ha podido crear una aplicación de experiencia. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
 ### Funciones y responsabilidades {#roles-responsibilities}
 
@@ -156,7 +156,7 @@ Las funciones de cualquier proyecto individual varían, pero las importantes que
 
 El administrador es responsable de la configuración y configuración base de su sistema. Por ejemplo, el administrador configura su organización dentro del sistema de Adobe User Management, denominado Identity Management System (IMS). El administrador es el primer usuario de la organización que recibe una invitación por correo electrónico de Adobe una vez que su organización ha sido creada por Adobe dentro de IMS. El administrador puede iniciar sesión en IMS y agregar usuarios de otras personas.
 
-Una vez que el administrador ha configurado los usuarios, se les conceden los permisos para acceder a todos los recursos de AEM para realizar su trabajo como contribuyentes a la entrega de la aplicación de experiencia usando el contenido sin encabezado de AEM.
+AEM AEM Una vez que el administrador configura los usuarios, se les otorgan los permisos para acceder a todos los recursos de la para realizar su trabajo como colaboradores en el envío de la aplicación de experiencia mediante el uso de sin encabezado.
 
 El administrador debe ser el usuario que configura AEM y prepara el entorno de tiempo de ejecución para que los [autores de contenido](#content-author) puedan crear y actualizan contenido y que los [desarrolladores](#developer) utilicen las API que recuperan o modifican contenido para sus aplicaciones de experiencia.
 
@@ -255,7 +255,7 @@ Para comprender el tráfico y los patrones de tráfico, comience por reunir lo q
 
 #### Frecuencia de actualización {#update-frequency}
 
-A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Comprender esto es importante para poder ajustar las configuraciones de la red de distribución de contenido (CDN) y la caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
+A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Es importante comprender esto para poder ajustar las configuraciones de CDN y caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
 
 * ¿Deben caducar algunos tipos de contenido después de un período determinado?
 * ¿Hay elementos específicos del usuario que no se pueden almacenar en caché?

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2692'
 ht-degree: 0%
 
 ---
@@ -255,19 +255,19 @@ La página Productos no está disponible para los usuarios de la aplicación. La
 
 ### Página de críticas: aplicación móvil de Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
-Contiene un botón Atrás. El sistema de párrafos permite agregar componentes.
+Contiene un botón Atrás. El sistema de párrafos permite añadir componentes.
 
 Al utilizar la aplicación, la página Revisiones está disponible en el carrusel de la página en inglés.
 
 ### La página de noticias - Aplicación móvil de Geometrixx {#the-news-page-geometrixx-mobile-app}
 
-Contiene un botón Atrás. El sistema de párrafos permite agregar componentes.
+Contiene un botón Atrás. El sistema de párrafos permite añadir componentes.
 
 Al utilizar la aplicación, la página Noticias está disponible en el carrusel de la página en inglés.
 
 ### La página Acerca de nosotros - Aplicación móvil de Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
-La página Acerca de nosotros contiene varios componentes Fila de dos columnas. Cada columna contiene un componente Imagen o Texto. Los componentes son editables y el sistema de párrafos permite agregar componentes.
+La página Acerca de nosotros contiene varios componentes Fila de dos columnas. Cada columna contiene un componente Imagen o Texto. Los componentes son editables, y el sistema de párrafos permite añadir componentes.
 
 Al utilizar la aplicación, la página Acerca de nosotros está disponible en el carrusel de la página en inglés.
 

@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4033'
-ht-degree: 100%
+source-wordcount: '4032'
+ht-degree: 99%
 
 ---
 
@@ -284,7 +284,6 @@ Los mensajes de correo electrónico pueden contener un vínculo que abra la tare
 >* Para configurar el espacio de trabajo para que utilice las plantillas de correo electrónico adecuadas, consulte la [Guía del administrador de AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 >
 >* Si los borradores se reenvían después de enviar la tarea en AEM Forms Workspace, se enviarán notificaciones por correo electrónico. Si los borradores se reenvían desde el punto de partida de AEM Forms Workspace, no se enviarán notificaciones por correo electrónico.
-
 
 Cuando complete una tarea por correo electrónico, esta se eliminará de la lista de tareas pendientes en AEM Forms Workspace.
 

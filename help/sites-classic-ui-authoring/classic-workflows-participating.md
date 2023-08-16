@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '542'
 ht-degree: 9%
 
 ---
@@ -25,13 +25,13 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
 * **Completar**
 
-   Puede completar un elemento para permitir que el flujo de trabajo avance al siguiente paso.
+  Puede completar un elemento para permitir que el flujo de trabajo avance al siguiente paso.
 
 * **Delegar**
 
-   Si se le ha asignado un paso, pero por cualquier motivo no puede realizar ninguna acción, puede delegar el paso a otro usuario o grupo.
+  Si se le ha asignado un paso, pero por cualquier motivo no puede realizar ninguna acción, puede delegar el paso a otro usuario o grupo.
 
-   Los usuarios que están disponibles para la delegación dependen de quién haya sido asignado el elemento de trabajo:
+  Los usuarios que están disponibles para la delegación dependen de quién haya sido asignado el elemento de trabajo:
 
    * Si el elemento de trabajo se asignó a un grupo, los miembros del grupo están disponibles.
    * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
@@ -39,7 +39,7 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
 * **Retroceder**
 
-   Si descubre que un paso, o una serie de pasos, debe repetirse, puede retroceder. Esto le permite seleccionar un paso, que se produjo anteriormente en el flujo de trabajo, para volver a procesarlo. El flujo de trabajo vuelve al paso especificado y, a continuación, continúa desde allí.
+  Si descubre que un paso, o una serie de pasos, debe repetirse, puede retroceder. Esto permite seleccionar una etapa, que se produjo anteriormente en el flujo de trabajo, para volver a procesarla. El flujo de trabajo vuelve al paso especificado y, a continuación, continúa desde allí.
 
 ## Participar en un flujo de trabajo {#participating-in-a-workflow}
 
@@ -49,11 +49,11 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
 * El **Estado** de la consola Sitios web indica cuándo una página está en un flujo de trabajo:
 
-   ![workflowstatus-1](assets/workflowstatus-1.png)
+  ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * AEM Cuando a usted o a un grupo al que pertenezca se le asigna un elemento de trabajo como parte de un flujo de trabajo, este aparece en la Bandeja de entrada del flujo de trabajo de flujo de trabajo de la.
 
-   ![workflowinbox](assets/workflowinbox.png)
+  ![workflowinbox](assets/workflowinbox.png)
 
 ### Finalización de una etapa de participante {#completing-a-participant-step}
 

@@ -10,10 +10,10 @@ discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 97%
+source-wordcount: '2475'
+ht-degree: 93%
 
 ---
 
@@ -63,7 +63,7 @@ Para combinar dos o más celdas del cuerpo, seleccione las celdas que desee comb
 
 Puede agregar y eliminar una fila o columna, y mover una fila hacia arriba o hacia abajo en una tabla.
 
-Para agregar o eliminar una fila o columna o mover una fila, haga clic en cualquier celda de la fila o columna. Aparecerá un menú desplegable en la parte superior de la columna y en la parte izquierda de la fila. El menú de la parte superior ofrece opciones para agregar o eliminar la columna, mientras que el menú de la izquierda permite agregar, eliminar o mover la fila.
+Para agregar o eliminar una fila o columna o mover una fila, haga clic en cualquier celda de la fila o columna. Aparecerá un menú desplegable en la parte superior de la columna y en la parte izquierda de la fila. El menú de la parte superior proporciona opciones para agregar o eliminar la columna, mientras que el menú de la izquierda permite agregar, eliminar o mover la fila.
 
 * La operación Agregar agrega una fila debajo o una columna a la derecha de la fila o columna seleccionada.
 * La operación Eliminar elimina la fila o columna seleccionada.

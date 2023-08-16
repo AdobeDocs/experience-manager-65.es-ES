@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1211'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ La pestaña Administrador de trabajo muestra estadísticas relacionadas con los 
 
 **Completado:** Muestra todos los elementos de trabajo que se ejecutaron correctamente. Los elementos de trabajo persistentes permanecen en este estado y los elementos no persistentes se eliminan al finalizar las devoluciones de llamada a los controladores de devolución de llamada. Puede eliminar estos elementos mediante la operación Eliminar elementos. (Consulte Administrar los elementos de trabajo o los trabajos.)
 
-**Error:** Muestra todos los elementos de trabajo que no se completaron correctamente debido a una condición de error. Estos elementos de trabajo se pueden volver a intentar varias veces mediante la operación Reintentar elementos. (Consulte Administrar los elementos de trabajo o los trabajos.) Un vínculo Error en la columna Estado le permite acceder a los detalles del error.
+**Error:** Muestra todos los elementos de trabajo que no se completaron correctamente debido a una condición de error. Estos elementos de trabajo se pueden volver a intentar varias veces mediante la operación Reintentar elementos. (Consulte Administrar los elementos de trabajo o los trabajos.) Un vínculo Failure en la columna Status permite acceder a los detalles del error.
 
 **Desconocido:** Muestra todos los elementos de trabajo cuyo estado es desconocido.
 
@@ -60,7 +60,7 @@ La pestaña Administrador de trabajo muestra estadísticas relacionadas con los 
 
 **Error solicitado:** Muestra los trabajos para los que se ha realizado una solicitud de error.
 
-**Error:** Muestra los trabajos que no se completaron correctamente debido a una condición de error. Un vínculo Error en la columna Estado le permite acceder a los detalles del error.
+**Error:** Muestra los trabajos que no se completaron correctamente debido a una condición de error. Un vínculo Failure en la columna Status permite acceder a los detalles del error.
 
 **Finalización solicitada:** Muestra los trabajos para los que se ha realizado una solicitud de finalización.
 

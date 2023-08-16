@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
-ht-degree: 44%
+source-wordcount: '2240'
+ht-degree: 43%
 
 ---
 
@@ -292,17 +292,17 @@ Además, **Información de página** puede proporcionar acceso a analytics y rec
 Existen varios modos al editar una página que permiten realizar diferentes acciones:
 
 * [Editar](/help/sites-authoring/editing-content.md) : el modo que se utilizará al editar el contenido de la página.
-* [Diseño](/help/sites-authoring/responsive-layout.md): permite crear y editar su diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
+* [Diseño](/help/sites-authoring/responsive-layout.md) : permite crear y editar un diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
 
 * [Andamiaje](/help/sites-authoring/scaffolding.md) : le ayuda a crear un gran conjunto de páginas que comparten la misma estructura pero tienen contenido diferente.
-* [Desarrollador](/help/sites-developing/developer-mode.md) : le permite realizar varias acciones (requiere privilegios). Estos incluyen la inspección de los detalles técnicos de una página y sus componentes.
+* [Desarrollador](/help/sites-developing/developer-mode.md) : permite realizar varias acciones (requiere privilegios). Estos incluyen la inspección de los detalles técnicos de una página y sus componentes.
 
-* [Diseño](/help/sites-authoring/default-components-designmode.md) : permite habilitar/deshabilitar componentes para utilizarlos en una página y configurar el diseño del componente (si la página está basada en un [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates)).
+* [Diseño](/help/sites-authoring/default-components-designmode.md) : permite activar o desactivar componentes para utilizarlos en una página y configurar el diseño del componente (si la página está basada en un [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Segmentación:](/help/sites-authoring/content-targeting-touch.md) aumente la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) : muestra los datos de Analytics para la página.
 
-* [Deformación de tiempo](/help/sites-authoring/working-with-page-versions.md#timewarp) : le permite ver el estado de una página en un momento determinado.
+* [Deformación de tiempo](/help/sites-authoring/working-with-page-versions.md#timewarp) : permite ver el estado de una página en un momento determinado.
 * [Estado de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : permite obtener una descripción general rápida del estado de live copy y de los componentes que se heredan o no.
 * [Vista previa](/help/sites-authoring/editing-content.md#previewing-pages): se utiliza para ver la página tal como se mostrará en el entorno de publicación; o para navegar mediante vínculos en el contenido. 
 

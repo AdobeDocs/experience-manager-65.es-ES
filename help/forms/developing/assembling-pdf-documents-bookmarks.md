@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Cuando un usuario hace clic en *Abrir los detalles del préstamo* , se abre Loan
 
 >[!NOTE]
 >
->Antes de leer esta sección, se recomienda estar familiarizado con el ensamblado de documentos de PDF mediante el servicio Assembler. En esta sección no se tratan conceptos como, por ejemplo, la creación de un objeto de colección que contenga documentos de entrada o el aprendizaje de cómo extraer los resultados del objeto de colección devuelto. (Consulte [Agrupar documentos de PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+>Antes de leer esta sección, se recomienda que esté familiarizado con el ensamblado de documentos de PDF mediante el servicio Assembler. En esta sección no se tratan conceptos como, por ejemplo, la creación de un objeto de colección que contenga documentos de entrada o el aprendizaje de cómo extraer los resultados del objeto de colección devuelto. (Consulte [Agrupar documentos de PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
@@ -209,11 +209,11 @@ Ensamble un documento de PDF con marcadores mediante la API del servicio Assembl
 
       * Valor de cadena que representa el nombre de clave. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX.
       * A `com.adobe.idp.Document` que contiene el documento del PDF de entrada.
+
    * Agregue el documento XML de marcador invocando el `java.util.Map` del objeto `put` y pasando los siguientes argumentos:
 
       * Valor de cadena que representa el nombre de clave. Este valor debe coincidir con el valor del elemento de origen Bookmarks especificado en el documento DDX.
       * A `com.adobe.idp.Document` que contiene el documento XML de marcador.
-
 
 1. Establecer opciones en tiempo de ejecución.
 

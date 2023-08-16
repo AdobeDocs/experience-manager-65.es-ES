@@ -9,10 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 100%
+source-wordcount: '3983'
+ht-degree: 99%
 
 ---
 
@@ -251,7 +251,7 @@ Primero necesita lo siguiente para crear una correspondencia:
 
 1. Introduzca las propiedades de la correspondencia y pulse **Guardar:**
 
-   * **Título (opcional):** escriba el título de la carta. El título no tiene que ser único y puede tener caracteres especiales y caracteres que no sean de inglés.
+   * **Título (opcional):** escriba el título de la carta. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés.
    * **Nombre:** nombre único de la carta. No puede haber dos cartas en ningún estado con el mismo nombre. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
    * **Descripción (opcional):** describa la carta para su referencia.
    * **Diccionario de datos (opcional)**: el diccionario de datos se puede asociar a la correspondencia. Los recursos que inserte posteriormente en esta correspondencia deben tener el mismo diccionario de datos que el que elija para la correspondencia o ningún diccionario de datos.
@@ -278,7 +278,7 @@ Después de crear una correspondencia, si pulsa Abrir, Administración de corres
 
    ![Insertar módulos de datos y fragmentos de diseño](assets/insertdmandlf.png)
 
-1. Seleccione Módulo de datos o Fragmentos de diseño para estas opciones para cada uno de los subformularios y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño le permite insertar más módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
+1. Seleccione Módulo de datos o Fragmentos de diseño para estas opciones para cada uno de los subformularios y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño permite insertar más módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
 
    ![nestedlf](assets/nestedlf.png)
 
@@ -307,7 +307,6 @@ Después de crear una correspondencia, si pulsa Abrir, Administración de corres
    1. **Eliminar recursos**: pulse el icono Eliminar situado junto a un recurso para eliminarlo.
    1. **Previsualizar recursos**: pulse el icono Mostrar vista previa ( ![showpreview](assets/showpreview.png)) junto a un recurso.
 
-
 1. Pulse **Siguiente**.
 1. La página Datos detalla cómo se utilizan los campos de datos y las variables en la plantilla. Los datos se pueden vincular a fuentes de datos como un diccionario de datos o entradas del usuario. Cada campo define propiedades desde las que el diccionario de datos asigna datos o qué rótulo se muestra para los campos de entrada del usuario.
 
@@ -331,6 +330,7 @@ Después de crear una correspondencia, si pulsa Abrir, Administración de corres
    * **Validador de números**: utilice el validador de números para especificar el valor numérico mínimo y máximo introducido en un campo o variable. Cuando cree un validador de números, asegúrese de especificar parámetros de validación válidos. Escriba valores numéricos para los valores mínimo y máximo.
 
    * **Validador de expresiones regulares**: utilice el validador de expresiones regulares para definir una expresión regular que se utilice para validar el valor de un campo o variable. Además, puede personalizar el mensaje de error. Cuando cree un validador de expresiones regulares, asegúrese de especificar una expresión regular válida.
+
    >[!NOTE]
    >
    >Los validadores de campos y variables solo están disponibles en campos o variables con tipo de vínculo Usuario o Elementos de diccionario de datos no protegidos.
@@ -436,7 +436,7 @@ Los siguientes valores de la tabla
    <td>N/D</td> 
   </tr> 
   <tr> 
-   <td></strong>Texto sin<strong> <strong>formato</strong></strong></td> 
+   <td></strong>Texto sin<strong> <strong>formato</strong></td> 
    <td>Sí</td> 
    <td>solo texto</td> 
    <td>Sí</td> 

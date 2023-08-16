@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1158'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ En el sitio web del Geometrixx se incluye un ejemplo que ilustra un caso de uso 
 
 ## Cómo utilizar el editor en masa {#how-to-use-the-bulk-editor}
 
-El editor en bloque le permite:
+El Editor por lotes le permite:
 
 * [buscar contenido basado en parámetros de consulta, para mostrar propiedades especificadas de los resultados en columnas, para editar este contenido y guardar los cambios](#searching-and-editing-content)
 * [para exportar este contenido a una hoja de cálculo separada por tabulaciones](#exporting-content)

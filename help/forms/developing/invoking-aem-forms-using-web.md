@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '9902'
+source-wordcount: '9901'
 ht-degree: 0%
 
 ---
@@ -441,7 +441,7 @@ Puede utilizar JAX-WS para convertir un WSDL de servicio de Forms en clases de p
    * Seleccione el `com.adobe.idp.services` e importe los archivos JAVA de la carpeta adobe/idp/services en el paquete.
    * Si es necesario, cree un `org/apache/xml/xmlsoap` en la carpeta Origen.
    * Seleccione la carpeta de origen y, a continuación, importe los archivos JAVA desde la carpeta org/apache/xml/xml/xml/xmlsoap.
-   * Establezca el nivel de cumplimiento del compilador de Java en 5.0 o bueno.
+   * Establezca el nivel de cumplimiento del compilador de Java en 5.0 o superior.
    * Genere el proyecto.
    * Exporte el proyecto como archivo JAR.
    * Importe este archivo JAR en la ruta de clase de un proyecto cliente. Además, importe todos los archivos JAR ubicados en &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
@@ -516,7 +516,7 @@ Puede generar archivos de biblioteca Java de Axis realizando los siguientes paso
 
    Los archivos JAVA se escriben en la carpeta C:\JavaFiles según lo especificado por la variable `output` propiedad. Para invocar correctamente el servicio Forms, importe estos archivos JAVA en la ruta de clase.
 
-   De forma predeterminada, estos archivos pertenecen a un paquete Java denominado `com.adobe.idp.services`. Se recomienda colocar estos archivos JAVA en un archivo JAR. A continuación, importe el archivo JAR en la ruta de clase de su aplicación cliente.
+   De forma predeterminada, estos archivos pertenecen a un paquete Java denominado `com.adobe.idp.services`. Se recomienda colocar estos archivos JAVA en un archivo JAR. A continuación, importe el archivo JAR en la ruta de clase de la aplicación cliente.
 
    >[!NOTE]
    >
@@ -534,7 +534,7 @@ Puede generar archivos de biblioteca Java de Axis realizando los siguientes paso
     http://localhost:8080/soap/services/EncryptionService?blob=base64;
    ```
 
-1. Añada los siguientes archivos JAR de eje a la ruta de clase del proyecto Java:
+1. Agregue los siguientes archivos JAR de eje a la ruta de clase del proyecto Java:
 
    * activation.jar
    * axis.jar
@@ -932,7 +932,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 
 >[!NOTE]
 >
->Se recomienda estar familiarizado con la invocación de AEM Forms mediante SOAP. (Consulte [Invocar AEM Forms mediante servicios web](#invoking-aem-forms-using-web-services).)
+>Se recomienda que esté familiarizado con la invocación de AEM Forms mediante SOAP. (Consulte [Invocar AEM Forms mediante servicios web](#invoking-aem-forms-using-web-services).)
 
 ### Crear un ensamblado de cliente .NET que utilice datos a través de HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}
 

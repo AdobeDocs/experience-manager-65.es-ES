@@ -11,10 +11,10 @@ discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 feature: Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2814'
-ht-degree: 100%
+source-wordcount: '2813'
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ Una vez creado un conjunto de formularios, puede realizar las siguientes accione
 
 * Un solo clic: cuando se crea el conjunto de formularios y aparece en la página de recursos principal, puede hacer clic en él para verlo. Se abre el conjunto de formularios y se muestran todas las plantillas de formulario (XDP) de ese conjunto de formularios.
 * Editar: al hacer clic en Editar después de seleccionar un conjunto de formularios, aparece la pantalla Configurar formulario que se ha mostrado anteriormente en Pasos para crear un conjunto de formularios. Puede utilizar todas las funcionalidades que se describen en este punto.
-* Copiar y pegar: esta funcionalidad le permite copiar todo el conjunto de formularios desde una ubicación y pegarlo en la misma ubicación o en cualquier otra ubicación o carpeta.
+* Copiar y pegar: esto permite copiar todo el conjunto de formularios desde una ubicación y pegarlo en la misma ubicación o en cualquier otra ubicación o carpeta.
 * Descargar: puede descargar el conjunto de formularios con todas sus dependencias.
 * Iniciar/Administrar revisión: una vez creado el conjunto de formularios, puede configurar su revisión haciendo clic en Iniciar revisión. Una vez iniciada la revisión de un conjunto de formularios, se muestra al usuario la opción Administrar revisión. En la pantalla Administrar revisión, puede actualizar o finalizar la revisión. En el caso de las revisiones que ha agregado, puede comprobar la revisión y agregar comentarios, si es necesario.
 * Eliminar: elimina todo el conjunto de formularios. Los formularios del conjunto de formularios eliminado permanecen en el repositorio.

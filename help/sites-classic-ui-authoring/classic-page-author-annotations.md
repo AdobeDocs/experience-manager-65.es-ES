@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 8%
 
 ---
@@ -54,7 +54,7 @@ Para fines de seguimiento, la línea de pie de página indica el usuario que cre
 
 Se solicita confirmación cuando selecciona eliminar la anotación (al eliminar una anotación, también se eliminan los bocetos adjuntos a esa anotación).
 
-Los tres iconos de la parte superior izquierda le permiten minimizar la anotación (junto con cualquier boceto relacionado), cambiar el color y añadir bocetos.
+Los tres iconos de la parte superior izquierda permiten minimizar la anotación (junto con cualquier boceto relacionado), cambiar el color y añadir bocetos.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Los tres iconos de la parte superior izquierda le permiten minimizar la anotaci�
 >* los bocetos existentes, creados en otro navegador, no se mostrarán.
 >
 
-Los bocetos son una función de las anotaciones que le permiten crear gráficos de línea simples en cualquier parte de la ventana del explorador (parte visible):
+Los bocetos son una función de las anotaciones que permiten crear gráficos de líneas simples en cualquier parte de la ventana del explorador (parte visible):
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 

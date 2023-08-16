@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
 docset: aem65
 exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >Silverpop integration is **not** available out of the box. You must download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document. -->
 
-AEM AEM La integración de la con Silverpop Engage le permite administrar y enviar correos electrónicos creados en a través de Silverpop. AEM AEM También le permite utilizar las funciones de administración de posibles clientes de Silverpop a través de formularios en forma de.
+AEM AEM La integración de la con Silverpop Engage le permite administrar y enviar correos electrónicos creados en a través de Silverpop. AEM AEM También le permite utilizar las funciones de administración de posibles clientes de Silverpop a través de formularios en forma de en páginas de informes.
 
 La integración ofrece las siguientes funciones:
 
@@ -36,13 +36,13 @@ Una vez configurado Silverpop Engage, puede publicar boletines informativos o co
 
 ## Creación de una configuración de Silverpop {#creating-a-silverpop-configuration}
 
-Las configuraciones de Silverpop se pueden añadir mediante **Cloud Services**, **Herramientas**, o **Puntos finales de API**. Todos los métodos se describen en esta sección.
+Las configuraciones de Silverpop se pueden añadir mediante **Cloud Service**, **Herramientas**, o **Puntos finales de API**. Todos los métodos se describen en esta sección.
 
-### Configuración de Silverpop mediante Cloud Services {#configuring-silverpop-via-cloudservices}
+### Configuración de Silverpop mediante Cloud Service {#configuring-silverpop-via-cloudservices}
 
-Para crear una configuración de Silverpop en Cloud Services:
+Para crear una configuración de Silverpop en Cloud Service:
 
-1. AEM En, toque o haga clic en **Herramientas** > **Implementación** > **Cloud Services**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. AEM En, toque o haga clic en **Herramientas** > **Implementación** > **Cloud Service**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. En Servicios de terceros, haga clic en **Silverop Engage** y luego **Configurar**. Se abre la ventana de configuración de Silverpop.
 
    >[!NOTE]
@@ -61,8 +61,8 @@ Para crear una configuración de Silverpop en Cloud Services:
 
 Para crear una configuración de Silverpop en Herramientas:
 
-1. AEM En, toque o haga clic en **Herramientas** > **Implementación** > **Cloud Services**. O vaya directamente a la página `https://<hostname>:<port>/misadmin#/etc`.
-1. Seleccionar **Herramientas**, entonces **Configuraciones de Cloud Services,** entonces **Silverpop Engage**.
+1. AEM En, toque o haga clic en **Herramientas** > **Implementación** > **Cloud Service**. O vaya directamente a la página `https://<hostname>:<port>/misadmin#/etc`.
+1. Seleccionar **Herramientas**, entonces **Configuraciones de Cloud Service,** entonces **Silverpop Engage**.
 1. Clic **Nuevo**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
@@ -74,7 +74,7 @@ Para crear una configuración de Silverpop en Herramientas:
 
 Para agregar varias configuraciones:
 
-1. En la página de bienvenida, haga clic en **Cloud Services** y haga clic en **Silverpop Engage**. Clic **Mostrar configuraciones** que aparece si hay una o más configuraciones de Silverpop disponibles. Se muestran todas las configuraciones disponibles.
+1. En la página de bienvenida, haga clic en **Cloud Service** y haga clic en **Silverpop Engage**. Clic **Mostrar configuraciones** que aparece si hay una o más configuraciones de Silverpop disponibles. Se muestran todas las configuraciones disponibles.
 1. Haga clic en **+** junto a Configuraciones disponibles. Se abre el **Crear configuraciones** ventana. Siga el procedimiento de configuración anterior para poder crear una configuración.
 
 ### Configuración de puntos finales de API para conectarse a Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}

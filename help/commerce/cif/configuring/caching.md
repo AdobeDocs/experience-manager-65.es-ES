@@ -2,10 +2,10 @@
 title: Almacenamiento en caché y rendimiento
 description: Obtenga información sobre las diferentes configuraciones disponibles para habilitar GraphQL y el almacenamiento en caché de contenido para optimizar el rendimiento de su implementación comercial.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 67%
+ht-degree: 65%
 
 ---
 
@@ -27,7 +27,7 @@ Antes de que el cliente envíe una solicitud de GraphQL, comprueba si es así **
 
 ### Ejemplos
 
-Se recomienda configurar el almacenamiento en caché para el servicio de búsqueda que recoge todos los valores de acumulados y facetas disponibles que se muestran en las páginas de categoría y búsqueda de productos. Estos valores solo cambian normalmente cuando, por ejemplo, se añade un nuevo atributo a los productos, por lo que la duración de esta entrada de caché puede ser &quot;grande&quot; si el conjunto de atributos de producto no cambia con frecuencia. Aunque esto es específico para cada proyecto, recomendamos valores de unos minutos en las fases de desarrollo del proyecto y unas pocas horas en los sistemas de producción estables.
+Se recomienda configurar el almacenamiento en caché para el servicio de búsqueda que recoge todos los valores de acumulados y facetas disponibles que se muestran en las páginas de categoría y búsqueda de productos. Estos valores solo cambian normalmente cuando, por ejemplo, se añade un nuevo atributo a los productos, por lo que la duración de esta entrada de caché puede ser &quot;grande&quot; si el conjunto de atributos de producto no cambia con frecuencia. Aunque esto es específico para cada proyecto, el Adobe recomienda valores de unos minutos en las fases de desarrollo del proyecto y unas pocas horas en los sistemas de producción estables.
 
 Esto suele configurarse con la siguiente entrada de caché:
 

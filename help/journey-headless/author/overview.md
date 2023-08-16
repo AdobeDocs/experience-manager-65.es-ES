@@ -2,10 +2,10 @@
 title: Recorrido del autor de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles sin encabezado de AEM, sus funcionalidades, y cómo diseñar el contenido en su primer proyecto de contenido sin encabezado.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 91%
+source-wordcount: '848'
+ht-degree: 86%
 
 ---
 
@@ -49,14 +49,14 @@ Por supuesto, la información de este recorrido puede ser útil para otras perso
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre los contenidos sin encabezado en AEM y acercan la documentación técnica detallada.
 
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en el contenido sin encabezado en AEM, le recomendamos que comience por el principio y avance en orden secuencialmente.
+Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. AEM Por lo tanto, si es nuevo en el uso sin encabezado en la, Adobe recomienda comenzar por el principio y avanzar secuencialmente.
 
 | # | Artículo | Descripción |
 |---|---|---|
 | 0 | Recorrido del autor de contenido sin encabezado de AEM | Este documento |
 | 1 | [AEM Creación para usuarios sin encabezado una introducción](introduction.md) | Introducción a las funciones sin encabezado de Adobe Experience Manager y cómo crear contenido para el proyecto. |
 | 2 | [Conceptos básicos de creación para usuarios sin encabezado con AEM](basics.md) | Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido. |
-| 3 | [Obtenga información sobre el uso de referencias en fragmentos de contenido](references.md) | Obtenga información sobre cómo utilizar referencias en Fragmentos de contenido. También le permiten crear y administrar varios niveles de estructura para sus CMS sin periféricos mediante Fragmentos anidados. |
+| 3 | [Obtenga información sobre el uso de referencias en fragmentos de contenido](references.md) | Obtenga información sobre cómo utilizar referencias en Fragmentos de contenido. También le permiten crear y administrar varios niveles de estructura para su CMS sin encabezado mediante fragmentos anidados. |
 | 4 | [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](metadata-tagging.md) | Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido. |
 
 ## Siguientes pasos {#what-is-next}

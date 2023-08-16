@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2199'
 ht-degree: 30%
 
 ---
@@ -27,7 +27,7 @@ El [Asistente de inclusión](/help/sites-administering/opt-in.md) que [AEM se in
 
 También puede configurar Adobe Target para que utilice Adobe Target como fuente de informes al segmentar contenido. Para ello, configure la Configuración de Analytics Cloud de A4T.
 
-Para localizar la configuración de la nube y el marco de trabajo, vaya a **Cloud Services** mediante **Herramientas** > **Implementación** > **Nube**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Bajo Adobe Target, toque o haga clic en **Mostrar configuraciones**.
+Para localizar la configuración de la nube y el marco de trabajo, vaya a **Cloud Service** mediante **Herramientas** > **Implementación** > **Nube**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Bajo Adobe Target, toque o haga clic en **Mostrar configuraciones**.
 
 ### Propiedades de configuración de Target aprovisionadas {#provisioned-target-configuration-properties}
 
@@ -76,7 +76,7 @@ Puede configurar Adobe Target para que utilice Adobe Analytics como fuente de in
 
 Para ello, especifique con qué configuración de nube de A4T conectar su configuración de nube de Adobe Target:
 
-1. Vaya a **Cloud Services** a través de **AEM logotipo de la** > **Herramientas** > **Implementación** > **Cloud Services**.
+1. Vaya a **Cloud Service** a través de **AEM logotipo de la** > **Herramientas** > **Implementación** > **Cloud Service**.
 1. En la sección **Adobe Target**, haga clic en **Configurar ahora**.
 1. Vuelva a conectarse a la configuración de Adobe Target.
 1. En el **Configuración de A4T Analytics Cloud** , seleccione el marco de trabajo.
@@ -131,9 +131,9 @@ Puede configurar la configuración de nube para sincronizar segmentos desde Adob
 
 Utilice el siguiente procedimiento para crear una configuración de nube de Target en AEM:
 
-1. Vaya a **Cloud Services** a través de **AEM logotipo de la** > **Herramientas** > **Cloud Services** > **Cloud Services heredados**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Vaya a **Cloud Service** a través de **AEM logotipo de la** > **Herramientas** > **Cloud Service** > **Cloud Service heredados**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   El **Cloud Services** se abre la página información general.
+   El **Cloud Service** se abre la página información general.
 
 1. En la sección **Adobe Target**, haga clic en **Configurar ahora**.
 1. En el cuadro de diálogo **Crear configuración**:
@@ -259,7 +259,7 @@ Cuando asocia una página con el marco de trabajo, las páginas secundarias here
 
    >[!NOTE]
    >
-   Si el marco de trabajo adjunto a la página aún no se ha activado, se abre un asistente que le permite publicarlo también.
+   Si el marco de trabajo adjunto a la página aún no se ha activado, se abre un asistente que también le permite publicarlo.
 
 ## Solución de problemas de conexión de Target {#troubleshooting-target-connection-problems}
 

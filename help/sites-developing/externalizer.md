@@ -1,22 +1,22 @@
 ---
 title: Externalización de direcciones URL
-description: El externalizador es un servicio OSGI que le permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta
+description: El externalizador es un servicio OSGI que permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
 # Externalización de direcciones URL{#externalizing-urls}
 
-En Adobe Experience Manager AEM (), la variable **Externalizador** es un servicio OSGI que le permite transformar mediante programación una ruta de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) prefijando la ruta con un DNS preconfigurado.
+En Adobe Experience Manager AEM (), la variable **Externalizador** es un servicio OSGI que permite transformar mediante programación una ruta de recursos (por ejemplo, `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) prefijando la ruta con un DNS preconfigurado.
 
 Dado que una instancia no puede conocer su URL visible externamente si se ejecuta detrás de una capa web y que, a veces, se debe crear un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas URL externas y crearlas.
 
@@ -24,7 +24,7 @@ Esta página explica cómo configurar el **Externalizador** servicio y cómo uti
 
 ## Configuración del servicio externalizador {#configuring-the-externalizer-service}
 
-El **Externalizador** El servicio le permite definir de forma centralizada varios dominios que se pueden utilizar para prefijar mediante programación las rutas de recursos. Cada dominio se identifica con un nombre único que se utiliza para hacer referencia al dominio mediante programación.
+El **Externalizador** El servicio permite definir de forma centralizada varios dominios que se pueden utilizar para prefijar mediante programación las rutas de recursos. Cada dominio se identifica con un nombre único que se utiliza para hacer referencia al dominio mediante programación.
 
 Para definir una asignación de dominio para **Externalizador** servicio:
 

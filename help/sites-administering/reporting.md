@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2804'
 ht-degree: 5%
 
 ---
@@ -113,7 +113,7 @@ En las columnas adecuadas, también puede configurar **Configuración de filtro*
 
 #### Filtros {#filters}
 
-La configuración de filtro permite especificar los criterios para que se muestren las entradas. Los operadores disponibles son:
+La configuración de filtro permite especificar los criterios para mostrar las entradas. Los operadores disponibles son:
 
 * `contains`
 * `equals`
@@ -166,13 +166,13 @@ Una vez iniciada la recopilación de datos, puede seleccionar:
 
 * **Período**
 
-   Puede seleccionar las fechas inicial y final para mostrar los datos del informe.
+  Puede seleccionar las fechas inicial y final para mostrar los datos del informe.
 
 * **Intervalo**
 
-   Se puede seleccionar mes, semana, día y hora para la escala y la agregación del informe.
+  Se puede seleccionar mes, semana, día y hora para la escala y la agregación del informe.
 
-   Por ejemplo, si hay instantáneas diarias disponibles para febrero de 2011:
+  Por ejemplo, si hay instantáneas diarias disponibles para febrero de 2011:
 
    * Si el intervalo se establece en `Day`, cada instantánea se muestra como un valor único en el gráfico.
    * Si el intervalo se establece en `Month`, todas las instantáneas de febrero se acumulan en un solo valor (mostrado como un solo &quot;punto&quot; en el gráfico).
@@ -185,11 +185,11 @@ Cuando se recopilan instantáneas, puede:
 
 * Uso **Finalizar...** de nuevo para reiniciar la colección.
 
-   **Finalizar** &quot;congela&quot; la estructura del informe (es decir, las columnas asignadas al informe y que se agrupan, ordenan, filtran, etc.) y comienza a tomar instantáneas.
+  **Finalizar** &quot;congela&quot; la estructura del informe (es decir, las columnas asignadas al informe y que se agrupan, ordenan, filtran, etc.) y comienza a tomar instantáneas.
 
 * Abra el **Editar** diálogo para seleccionar **No hay instantáneas** para finalizar la colección hasta que sea necesario.
 
-   **Editar** sólo activa o desactiva la toma de instantáneas. Si se vuelve a activar la toma de instantáneas, se utiliza el estado del informe cuando se terminó por última vez para tomar más instantáneas.
+  **Editar** sólo activa o desactiva la toma de instantáneas. Si se vuelve a activar la toma de instantáneas, se utiliza el estado del informe cuando se terminó por última vez para tomar más instantáneas.
 
 >[!NOTE]
 >
@@ -239,29 +239,29 @@ Esta es una ubicación en la que el periodo para recopilar instantáneas de [Dat
 
 * **Título**
 
-   Puede definir su propio título.
+  Puede definir su propio título.
 
 * **Descripción**
 
-   Puede definir su propia descripción.
+  Puede definir su propia descripción.
 
 * **Ruta raíz** (*solo activo para determinados informes*)
 
-   Use esto para limitar el informe a una (sub) sección del repositorio.
+  Use esto para limitar el informe a una (sub) sección del repositorio.
 
 * **Procesamiento de informes**
 
    * **datos actualizados automáticamente**
 
-      Los datos del informe se actualizarán cada vez que actualice la definición del informe.
+     Los datos del informe se actualizarán cada vez que actualice la definición del informe.
 
    * **datos actualizados manualmente**
 
-      Esta opción se puede utilizar para evitar los retrasos causados por las operaciones de actualización automática cuando hay un gran volumen de datos.
+     Esta opción se puede utilizar para evitar los retrasos causados por las operaciones de actualización automática cuando hay un gran volumen de datos.
 
-      Si selecciona esta opción, los datos del informe deben actualizarse manualmente cuando haya habido cambios en algún aspecto de la configuración del informe. También significa que, en cuanto cambie cualquier aspecto de la configuración, la tabla del informe quedará en blanco.
+     Si selecciona esta opción, los datos del informe deben actualizarse manualmente cuando haya habido cambios en algún aspecto de la configuración del informe. También significa que, en cuanto cambie cualquier aspecto de la configuración, la tabla del informe quedará en blanco.
 
-      Cuando se selecciona esta opción, **[Carga de datos](#load-data)** se mostrará el botón (junto a **Editar** en el informe). **Carga de datos** cargará los datos y actualizará los datos del informe que se muestran.
+     Cuando se selecciona esta opción, **[Carga de datos](#load-data)** se mostrará el botón (junto a **Editar** en el informe). **Carga de datos** cargará los datos y actualizará los datos del informe que se muestran.
 
 * **Instantáneas**
 Puede definir la frecuencia con la que se crean las instantáneas, diariamente, por hora o en absoluto.
@@ -312,11 +312,11 @@ Significa que puede ver, por ejemplo:
 
 * Qué componentes se utilizan, dónde.
 
-   Útil, por ejemplo, al realizar pruebas.
+  Útil, por ejemplo, al realizar pruebas.
 
 * Cómo se distribuyen las instancias de un componente específico.
 
-   Esto puede resultar interesante si páginas específicas (por ejemplo, &quot;páginas pesadas&quot;) están experimentando problemas de rendimiento.
+  Esto puede resultar interesante si páginas específicas (por ejemplo, &quot;páginas pesadas&quot;) están experimentando problemas de rendimiento.
 
 * Identificar las partes del sitio con cambios frecuentes o menos frecuentes.
 * Consulte cómo se desarrolla el contenido de la página con el paso del tiempo.
@@ -344,33 +344,33 @@ Para generar el informe, puede especificar lo siguiente:
 
 * **Periodo (horas)**
 
-   El número de horas (pasadas) que se van a analizar.
+  El número de horas (pasadas) que se van a analizar.
 
-   Predeterminado: `24`
+  Predeterminado: `24`
 
 * **máx. Resultados**
 
-   Número máximo de líneas de salida.
+  Número máximo de líneas de salida.
 
-   Predeterminado: `50`
+  Predeterminado: `50`
 
 * **máx. Solicitudes**
 
-   Número máximo de solicitudes que analizar.
+  Número máximo de solicitudes que analizar.
 
-   Predeterminado: `-1` (todos)
+  Predeterminado: `-1` (todos)
 
 * **Dirección de correo electrónico**
 
-   Envíe los resultados a una dirección de correo electrónico.
+  Envíe los resultados a una dirección de correo electrónico.
 
-   Opcional; predeterminada: en blanco
+  Opcional; predeterminada: en blanco
 
 * **Ejecutar cada día a las (hh:mm)**
 
-   Especifique la hora a la que el informe se ejecutará automáticamente diariamente.
+  Especifique la hora a la que el informe se ejecutará automáticamente diariamente.
 
-   Opcional; predeterminada: en blanco
+  Opcional; predeterminada: en blanco
 
 ![reporthealth](assets/reporthealth.png)
 
@@ -460,25 +460,25 @@ Desde el **Definiciones** pestaña que puede definir:
 
 * **Título**
 
-   Su propio título para la columna genérica.
+  Su propio título para la columna genérica.
 
 * **Propiedad**
 
-   El nombre de la propiedad tal como se almacena en el repositorio, generalmente dentro del perfil del usuario.
+  El nombre de la propiedad tal como se almacena en el repositorio, generalmente dentro del perfil del usuario.
 
 * **Ruta**
 
-   Generalmente, la propiedad se toma de la `profile`.
+  Generalmente, la propiedad se toma de la `profile`.
 
 * **Tipo**
 
-   Seleccione el tipo de campo de `String`, `Number`, `Integer`, `Date`.
+  Seleccione el tipo de campo de `String`, `Number`, `Integer`, `Date`.
 
 * **Agregado predeterminado**
 
-   Define el agregado utilizado de forma predeterminada si la columna se desagrupa en un informe con al menos una columna agrupada. Seleccione el acumulado requerido de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+  Define el agregado utilizado de forma predeterminada si la columna se desagrupa en un informe con al menos una columna agrupada. Seleccione el acumulado requerido de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Por ejemplo, *Recuento* para un `String` field significa que el número de `String` se muestra para la columna en el estado agregado.
+  Por ejemplo, *Recuento* para un `String` field significa que el número de `String` se muestra para la columna en el estado agregado.
 
 En el **Extendido** pestaña también puede definir los agregados y filtros disponibles:
 
@@ -534,7 +534,7 @@ Como no se permite ninguna configuración de informe en el entorno de publicaci�
 
 >[!CAUTION]
 >
->El acceso a estos informes puede ser un problema de seguridad; por lo tanto, le recomendamos que configure Dispatcher para que `/etc/reports` no está disponible para visitantes externos. Consulte la [Lista de comprobación de seguridad](security-checklist.md) para obtener más información.
+>El acceso a estos informes puede ser un problema de seguridad; por lo tanto, Adobe recomienda configurar Dispatcher para que `/etc/reports` no está disponible para visitantes externos. Consulte la [Lista de comprobación de seguridad](security-checklist.md) para obtener más información.
 
 ## Permisos necesarios para ejecutar informes {#permissions-needed-for-running-reports}
 
@@ -547,22 +547,22 @@ AEM En una instalación estándar, los siguientes permisos están preestablecido
 
 * **Informe del usuario**
 
-   `user administrators` - leer y escribir
+  `user administrators` - leer y escribir
 
 * **Informe de actividad de la página**
 
-   `contributors` - leer y escribir
+  `contributors` - leer y escribir
 
 * **Informe sobre componentes**
 
-   `contributors` - leer y escribir
+  `contributors` - leer y escribir
 
 * **Informe de contenido generado por el usuario**
 
-   `contributors` - leer y escribir
+  `contributors` - leer y escribir
 
 * **Informe de instancia de flujo de trabajo**
 
-   `workflow-users` - leer y escribir
+  `workflow-users` - leer y escribir
 
 Todos los miembros del `administrators` tiene los derechos necesarios para crear nuevos informes.

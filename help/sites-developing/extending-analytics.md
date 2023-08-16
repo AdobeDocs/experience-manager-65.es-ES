@@ -1,8 +1,8 @@
 ---
 title: Ampliación del seguimiento de eventos
 seo-title: Extending Event Tracking
-description: AEM El análisis de datos le permite rastrear la interacción del usuario en el sitio web
-seo-description: AEM Analytics allows you to track user interaction on your website
+description: AEM Analytics permite rastrear la interacción del usuario en el sitio web
+seo-description: AEM Analytics lets you track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # Ampliación del seguimiento de eventos{#extending-event-tracking}
 
-AEM La interfaz de usuario de Analytics le permite realizar un seguimiento de la interacción del usuario en el sitio web. Como desarrollador, es posible que tenga que:
+AEM Analytics le permite realizar un seguimiento de la interacción del usuario con el sitio web. Como desarrollador, es posible que tenga que:
 
 * Rastree cómo los visitantes interactúan con los componentes. Esto se puede hacer con [Eventos personalizados.](#custom-events)
 * [Acceder a valores en ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).

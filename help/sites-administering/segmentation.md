@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 80%
+source-wordcount: '1783'
+ht-degree: 78%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 80%
 >[!NOTE]
 >
 >En esta sección se describe la configuración de la segmentación al utilizar ContextHub. Si utiliza la funcionalidad de Client Context, consulte la documentación pertinente de [configuración de la segmentación para Client Context](/help/sites-administering/campaign-segmentation.md).
+>
 
 La segmentación es una consideración clave al crear una campaña. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener información sobre cómo funciona la segmentación y los términos clave.
 
@@ -29,7 +30,7 @@ En función de la información que ya haya recopilado acerca de los visitantes d
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Personalización](/help/sites-authoring/personalization.md) de la página web. Las [Actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
-AEM le permite personalizar fácilmente la experiencia de sus usuarios. También le deja verificar los resultados de sus definiciones de segmento.
+AEM Le permite personalizar fácilmente la experiencia de sus usuarios. También le permite verificar los resultados de las definiciones de segmentos.
 
 ## Acceso a segmentos {#accessing-segments}
 
@@ -45,7 +46,7 @@ Seleccione la configuración para ver los segmentos, por ejemplo WKND Site:
 
 ## Editor de segmentos {#segment-editor}
 
-El **Editor de segmentos** le permite modificar con facilidad un segmento. Para editar un segmento, seleccione uno en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en **Editar** botón.
+El **Editor de segmentos** permite modificar fácilmente un segmento. Para editar un segmento, seleccione uno en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en **Editar** botón.
 
 ![segmenteditor](assets/segmenteditor.png)
 
@@ -59,7 +60,7 @@ Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelt
 
 ### Contenedores {#containers}
 
-Los siguientes contenedores están disponibles de forma predeterminada y le permiten agrupar comparaciones y referencias para llevar a cabo una evaluación boolean. Se pueden arrastrar desde el explorador de componentes al editor. Consulte la siguiente sección, [Uso de contenedores AND y OR](/help/sites-administering/segmentation.md#using-and-and-or-containers), para obtener más información.
+Los siguientes contenedores están disponibles de forma predeterminada y le permiten agrupar comparaciones y referencias para realizar una evaluación booleana. Se pueden arrastrar desde el explorador de componentes al editor. Consulte la siguiente sección, [Uso de contenedores AND y OR](/help/sites-administering/segmentation.md#using-and-and-or-containers), para obtener más información.
 
 <table>
  <tbody>
@@ -255,7 +256,7 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
    * Puede tocar o hacer clic en los encabezados de columna para ajustar la ordenación.
-      ![La nueva carpeta](assets/contexthub-folder.png)
+     ![La nueva carpeta](assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}
 

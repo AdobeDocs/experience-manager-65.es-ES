@@ -3,10 +3,10 @@ title: Integrar AEM Forms con Adobe Analytics
 description: AEM Forms se integra con Adobe Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios publicados.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 100%
+source-wordcount: '1805'
+ht-degree: 99%
 
 ---
 
@@ -143,7 +143,7 @@ Realice los siguientes pasos para crear reglas basadas en la extensión **[!UICO
 
    * **[!UICONTROL Borrar variables]**: Utilice este tipo de acción para borrar la pista de datos de modo que el evento se registre solo una vez en [!DNL Adobe Analytics].
 
-      El método recomendado es usar la acción **[!UICONTROL Establecer variables]** para configurar el evento y los elementos de datos y, a continuación, utilizar **[!UICONTROL Enviar señalización]** para enviar datos y, luego, usar **[!UICONTROL Borrar variables]** para borrar la pista de datos.
+     El método recomendado es usar la acción **[!UICONTROL Establecer variables]** para configurar el evento y los elementos de datos y, a continuación, utilizar **[!UICONTROL Enviar señalización]** para enviar datos y, luego, usar **[!UICONTROL Borrar variables]** para borrar la pista de datos.
 
 1. En la sección **[!UICONTROL Props]**, asigne las opciones del grupo de informes disponibles en la lista desplegable con los elementos de datos definidos mediante [Configurar elementos de datos](#configure-data-elements).
 
@@ -232,6 +232,7 @@ Tras habilitar [!DNL Adobe Analytics] para un formulario adaptable, puede [valid
 
 >[!NOTE]
 >En caso afirmativo, si las funciones [Analytics con Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) y **Analytics con Adobe Launch** se activan simultáneamente, **Analytics con Adobe Launch** tendrá prioridad.
+> 
 
 ### Crear reglas para capturar eventos personalizados (opcional) {#capture-custom-events}
 

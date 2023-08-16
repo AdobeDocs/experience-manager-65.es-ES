@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1136'
 ht-degree: 17%
 
 ---
@@ -33,7 +33,7 @@ Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido 
 
 AEM le permite crear y actualizar fácilmente segmentos, teasers y campañas. También le permite verificar los resultados de sus definiciones.
 
-El **Editor de segmentos** le permite definir fácilmente un segmento:
+El **Editor de segmentos** permite definir fácilmente un segmento:
 
 ![La ventana Editor de segmentos](assets/segmenteditor.png)
 
@@ -133,7 +133,7 @@ Para definir el nuevo segmento:
 
    ![El primer paso para crear un nuevo segmento en el Editor de segmentos](assets/screen_shot_2012-02-02at101726am.png)
 
-1. Utilice la barra de tareas o el menú contextual (normalmente, haga clic con el botón secundario del mouse y, a continuación, seleccione **Nuevo...** para abrir la ventana Insertar nuevo componente) y encontrar el rasgo del segmento que necesita. A continuación, arrástrela a **Editor de segmentos** aparecerá en la lista predeterminada **Y** contenedor.
+1. Utilice la barra de tareas o el menú contextual (por lo general, haga clic con el botón secundario del mouse y seleccione **Nuevo...** para abrir la ventana Insertar nuevo componente) y encontrar el rasgo del segmento que necesita. A continuación, arrástrela a **Editor de segmentos** aparecerá en la lista predeterminada **Y** contenedor.
 1. Haga doble clic en el nuevo rasgo para editar los parámetros específicos; por ejemplo, la posición del ratón:
 
    ![Edición de un componente en el Editor de segmentos](assets/screen_shot_2012-02-02at103135am.png)

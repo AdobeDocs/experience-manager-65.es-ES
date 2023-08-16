@@ -1,8 +1,8 @@
 ---
 title: Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM
 seo-title: Manage Forms applications and tasks in AEM Inbox
-description: Bandeja de entrada de AEM le permite iniciar flujos de trabajo centrados en Forms enviando aplicaciones y administrando tareas.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
+description: AEM La Bandeja de entrada de permite iniciar flujos de trabajo centrados en Forms enviando aplicaciones y administrando tareas.
+seo-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 89%
+source-wordcount: '1096'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ Además, Bandeja de entrada de AEM consolida las notificaciones y tareas de vari
 
 La interfaz de usuario de la bandeja de entrada ofrece vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar las tareas en función de varios parámetros. Para obtener más información sobre las vistas y los filtros, consulte [Su bandeja de entrada](/help/sites-authoring/inbox.md).
 
-En resumen, la bandeja de entrada le permite crear una nueva aplicación y administrar las tareas asignadas.
+En resumen, la bandeja de entrada permite crear una nueva aplicación y administrar las tareas asignadas.
 
 >[!NOTE]
 >
@@ -132,13 +132,13 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
 
    * Cree los siguientes nodos en CRX DE en `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` con las propiedades respectivas especificadas en la siguiente tabla:
 
-      | Nodo | Propiedad | Tipo |
-      |---|---|---|
-      | sharedWith | sharedWith | CADENA |
-      | bloqueado | bloqueado | BOOLEANO |
-      | devuelto | devuelto | BOOLEANO |
-      | allowInboxSharing | allowInboxSharing | BOOLEANO |
-      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
+     | Nodo | Propiedad | Tipo |
+     |---|---|---|
+     | sharedWith | sharedWith | CADENA |
+     | bloqueado | bloqueado | BOOLEANO |
+     | devuelto | devuelto | BOOLEANO |
+     | allowInboxSharing | allowInboxSharing | BOOLEANO |
+     | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
    * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:

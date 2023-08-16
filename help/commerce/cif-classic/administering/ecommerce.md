@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '749'
 ht-degree: 2%
 
 ---
@@ -141,7 +141,7 @@ AEM eCommerce proporciona lo siguiente:
 
   >[!NOTE]
   >
-  >AEM AEM El marco de trabajo de integración proporcionado por el usuario también le permite crear componentes de integración adicionales para las capacidades de comercio electrónico independientemente de su motor específico de comercio electrónico.
+  >AEM AEM El marco de trabajo de integración proporcionado por el usuario también le permite crear componentes de integración adicionales para las capacidades de comercio electrónico independientemente de su motor de comercio electrónico específico.
 
 * **Buscar** - usando:
 
@@ -160,10 +160,10 @@ AEM eCommerce proporciona lo siguiente:
 
   Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que su integración necesita. Cualquier implementación nueva puede utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
 
-* La posibilidad de desarrollar **comercio basado en la experiencia y en los datos de los compradores y la actividad**. Esto le permite realizar muchos escenarios:
+* La posibilidad de desarrollar **comercio basado en la experiencia y en los datos de los compradores y la actividad**. Esto permite realizar muchos escenarios:
 
    * Un ejemplo podría ser proporcionar reducciones en los costes de envío cuando el pedido total supera una cantidad específica.
-   * Otro podría permitirle proporcionar ofertas estacionales que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, nuevamente en función de otros factores cuando sea necesario.
+   * Otra opción podría permitirle proporcionar ofertas estacionales que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, nuevamente en función de otros factores cuando sea necesario.
 
   En el ejemplo siguiente, se muestra un teaser porque el contenido del carro de compras es inferior a 75 $:
 

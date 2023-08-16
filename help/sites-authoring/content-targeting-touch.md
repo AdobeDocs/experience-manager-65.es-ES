@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5390'
-ht-degree: 49%
+source-wordcount: '5388'
+ht-degree: 48%
 
 ---
 
@@ -398,9 +398,9 @@ Abra una oferta de la biblioteca de una experiencia en modo de Orientación para
 
 ## Target: Configuración de audiencias {#target-configuring-the-audiences}
 
-El paso Target del [proceso de orientación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la asignación de públicos a las experiencias con que ha trabajado en el paso Crear. En la página Target se muestran los públicos a que se orienta cada experiencia. Puede especificar o cambiar el público para cada experiencia. Si utiliza Adobe Target, también puede crear pruebas A/B que le permitan dirigir un porcentaje del tráfico de una audiencia a una experiencia concreta.
+El paso Target del [proceso de orientación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la asignación de públicos a las experiencias con que ha trabajado en el paso Crear. En la página Target se muestran los públicos a que se orienta cada experiencia. Puede especificar o cambiar el público para cada experiencia. Si utiliza Adobe Target, también puede crear pruebas A/B que le permitan asignar un porcentaje del tráfico de una audiencia a una experiencia concreta.
 
-### Si usa el direccionamiento de AEM o Adobe Target (segmentación de experiencias)… ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### AEM Si utiliza la segmentación de experiencias o Adobe Target (segmentación de experiencias) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Los públicos aparecen en el lado izquierdo del diagrama de asignación, y las experiencias en el lado derecho.
 
@@ -692,7 +692,7 @@ Si selecciona Adobe Target como motor:
   </tr>
   <tr>
    <td><strong>Incluir segmentos resueltos</strong></td>
-   <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco de trabajo.</p> <p>Esto solo funciona en situaciones con XML API en que sincroniza segmentos de AEM. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo.</p> </td>
+   <td><p>Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco de trabajo.</p> <p>Esto solo funciona en situaciones con XML API en que sincroniza segmentos de AEM. AEM Si tiene segmentos en el segmento que no son gestionados por Adobe Target AEM (como segmentos de script), esta opción le permite resolver el segmento en el que está activo y enviar información a Adobe Target en el que se indica que el segmento está activo.</p> </td>
   </tr>
   <tr>
    <td><strong>Parámetros heredados de contexto</strong></td>

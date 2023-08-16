@@ -11,16 +11,16 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 100%
+source-wordcount: '392'
+ht-degree: 96%
 
 ---
 
 # Integrar Form Bridge con el portal personalizado para formularios HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge es una API de Forms Bridge de HTML5 que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge es una API de Forms Bridge de HTML5 que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Puede utilizar la API de FormBridge para obtener o establecer los valores de los campos de formulario de la página HTML y enviar el formulario. Por ejemplo, puede utilizar la API para crear una experiencia similar a un asistente.
 
@@ -80,8 +80,12 @@ Una aplicación HTML existente puede aprovechar la API de FormBridge para intera
    >
    >
    >La etiqueta &lt;div id=&quot;rightdiv&quot;> de la **línea 18** contiene el fragmento de HTML del formulario XFA.
-   >La página tiene un estilo de dos contenedores: **left** y **right**. El contenedor derecho (right) contiene el formulario. El contenedor izquierdo (left) contiene dos campos de entrada y parte de la página HTML externa.
-   >La siguiente captura de pantalla muestra cómo se muestra el formulario en un explorador.
+   >
+   >
+   La página tiene un estilo de dos contenedores: **left** y **right**. El contenedor derecho (right) contiene el formulario. El contenedor izquierdo (left) contiene dos campos de entrada y parte de la página HTML externa.
+   >
+   >
+   La siguiente captura de pantalla muestra cómo se muestra el formulario en un explorador.
 
    ![portal](assets/portal.jpg)
 

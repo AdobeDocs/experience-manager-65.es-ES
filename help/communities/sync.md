@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2481'
 ht-degree: 2%
 
 ---
@@ -205,7 +205,7 @@ Para garantizar la sincronización de miembros:
 
 ### Déclencheur de distribución de Apache Sling: fábrica de Déclencheur programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-Esta configuración le permite configurar el intervalo de sondeo (después del cual el autor realiza un ping a los editores y extrae los cambios) para sincronizar los cambios entre los editores.
+Esta configuración le permite configurar el intervalo de sondeo (después del cual el autor hace ping a los editores y extrae los cambios) para sincronizar los cambios entre los editores.
 
 El autor sondea a los editores cada 30 segundos (valor predeterminado). Si hay algún paquete en la carpeta `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, entonces recuperará esos paquetes e los instalará en otros editores.
 
@@ -343,7 +343,7 @@ Si la distribución de Sling falla, intente los siguientes pasos de depuración:
    Asegúrese de que no se agregan ni editan varias configuraciones y, en su lugar, se deben editar las configuraciones predeterminadas existentes.
 1. **Comprobar configuraciones**
 
-   Asegúrese de que todas las [configuraciones](/help/communities/sync.md#bestpractices) están correctamente configuradas en la instancia de autor de AEM, como se menciona en la [Prácticas recomendadas](/help/communities/sync.md#main-pars-header-863110628).
+   Asegúrese de que todas las [configuraciones](/help/communities/sync.md#bestpractices) AEM están correctamente configuradas en la instancia de autor de la, como se menciona en la [Prácticas recomendadas](/help/communities/sync.md#main-pars-header-863110628).
 
 1. **Comprobar permisos de usuario autorizados**
 

@@ -11,9 +11,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '9153'
+source-wordcount: '9152'
 ht-degree: 61%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 61%
 >* [Guía rápida de WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Crear contenido accesible (Conformidad con WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
 
-
 WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades.
 
 >[!NOTE]
@@ -40,7 +39,6 @@ WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y c
 >* [Guía rápida de WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Configurar el Editor de texto enriquecido para producir contenido accesible](/help/sites-administering/rte-accessible-content.md)
 >
-
 
 Estas directrices se clasifican según tres niveles de conformidad: Nivel A (el más bajo), Nivel AA y Nivel AAA (el más alto). Brevemente, los niveles se definen de la siguiente manera:
 
@@ -63,7 +61,6 @@ La siguiente sección presenta las [directrices WCAG 2.0](https://www.w3.org/TR/
 >* Nombres abreviados para las [directrices WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines)
 >* Numeración utilizada en las [directrices WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) para apoyar las referencias cruzadas en la página web de WCAG
 >
-
 
 ## Principio 1: perceptible  {#principle-perceivable}
 
@@ -136,7 +133,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 * Fotos ilustrativas:
 
-Son imágenes de personas, objetos o lugares. Considere el papel que juega la foto en la página; un texto equivalente apropiado probablemente sea *Foto de [objeto]*, pero puede depender del texto que lo rodea.
+Son imágenes de personas, objetos o lugares. Considere el papel de la foto en la página; un texto equivalente apropiado probablemente sea *Foto de [objeto]*, pero puede depender del texto que lo rodea.
 
 * Iconos:
 
@@ -226,7 +223,7 @@ Proporcionar esta información en un formato diferente, como texto (o audio para
 
    * Proporcione un vínculo inmediatamente antes o después del contenido para obtener una transcripción textual del contenido del audio.
 
-   La transcripción debe ser una página de HTML con un texto equivalente a todo el contenido hablado y no hablado importante. También debe indicar quién está hablando, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
+  La transcripción debe ser una página de HTML con un texto equivalente a todo el contenido hablado y no hablado importante. También debe indicar quién está hablando, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
 
 * Si el contenido es una animación o un vídeo pregrabado sin audio:
 
@@ -256,7 +253,7 @@ La inserción de contenido multimedia, específicamente de Flash AEM, en las pá
 
 #### Objetivo: subtítulos (pregrabados) (1.2.2)  {#purpose-captions-pre-recorded}
 
-Las personas sordas o con dificultades auditivas no pueden acceder al contenido de audio o tienen dificultades buenas para hacerlo. Los subtítulos son equivalentes textuales para audio verbal y no verbal que se muestran en la pantalla en el momento adecuado durante el vídeo. Permiten entender lo que está sucediendo a las personas que no pueden oír el audio.
+Las personas sordas o con dificultades auditivas no pueden acceder o tienen grandes dificultades para acceder al contenido de audio. Los subtítulos son equivalentes textuales para audio verbal y no verbal que se muestran en la pantalla en el momento adecuado durante el vídeo. Permiten entender lo que está sucediendo a las personas que no pueden oír el audio.
 
 >[!NOTE]
 >
@@ -305,8 +302,8 @@ Se pueden adoptar dos enfoques para cumplir este criterio con éxito. Cualquiera
 
       * Los usuarios pueden cambiar entre la pista de audio existente (que *no tiene* contiene una descripción del audio) y la nueva pista de audio (que *hace* contiene una descripción del audio).
       * Este método evita interrupciones a los usuarios que no necesitan la descripción adicional.
-   * Creando una segunda versión del contenido de vídeo que permita descripciones de audio extendidas. Al hacerlo, se reducen las dificultades asociadas con la descripción detallada del audio dentro de los espacios entre los diálogos existentes, pausando temporalmente el audio y el vídeo en los puntos apropiados. El resultado es una descripción del audio mucho más larga antes de que se retome la acción. Como en el ejemplo anterior, se recomienda proporcionarla como pista de audio adicional opcional para evitar que los usuarios que no necesiten la descripción adicional sufran interrupciones.
 
+   * Creando una segunda versión del contenido de vídeo que permita descripciones de audio extendidas. Al hacerlo, se reducen las dificultades asociadas con la descripción detallada del audio dentro de los espacios entre los diálogos existentes, pausando temporalmente el audio y el vídeo en los puntos apropiados. El resultado es una descripción del audio mucho más larga antes de que se retome la acción. Como en el ejemplo anterior, se recomienda proporcionarla como pista de audio adicional opcional para evitar que los usuarios que no necesiten la descripción adicional sufran interrupciones.
 
 1. Proporcionar una transcripción del texto que sea adecuada al equivalente textual del audio y a los elementos visuales del vídeo o animación. Debe incluir, cuando proceda, una indicación de quién habla, una descripción del entorno y expresiones vocales. Según la longitud, se puede colocar la transcripción en la misma página del vídeo o de la animación o en una página aparte; si se elige esta última opción, se debe proporcionar un vínculo a la transcripción junto al vídeo o animación.
 
@@ -414,7 +411,7 @@ Utilice el elemento o para indicar énfasis. No utilice encabezados o texto enfa
 >
 >* &lt;b> para &lt;strong>
 * &lt;i> para &lt;em>
-  >
+>
 Aunque son igual de eficaces, y son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar y  (en lugar de y ) al desarrollar su instancia de proyecto.
 
 * **Utilizar listas**:
@@ -422,15 +419,16 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
    * El `<ul>` se utiliza para *desordenado* listas (listas con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`. 
 
-   en RTE, utilice el **Lista con viñetas** icono.
+  en RTE, utilice el **Lista con viñetas** icono.
 
    * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`. 
 
-   En RTE, utilice el icono **Lista numerada**.
+  En RTE, utilice el icono **Lista numerada**.
 
 Si desea cambiar contenido existente por un tipo de lista específico, resalte el texto correspondiente y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, que muestra cómo se introduce el texto del párrafo, los elementos de la lista correspondientes se añaden automáticamente al HTML, pero puede verlo en la vista de edición de código fuente.
 
 >[!NOTE]
+>
 El `<dl>` no es compatible con RTE.
 
 * **Uso de tablas**:
@@ -443,6 +441,7 @@ Las tablas de datos deben identificarse utilizando elementos de tablas de HTML:
     * a `&lt;td>` para cada celda de datos
 
 >[!NOTE]
+>
 Las tablas deben realizarse con la variable **Tabla** componente. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
 
 Además, las tablas accesibles utilizan los siguientes elementos y atributos:
@@ -452,6 +451,7 @@ Además, las tablas accesibles utilizan los siguientes elementos y atributos:
     * El atributo &quot;scope&quot; de &quot;&lt;th>` se utiliza para indicar si una celda representa el encabezado de una fila en particular o de una columna en particular. Un enfoque similar es el de utilizar el encabezado y los atributos de identificación en tablas complejas, donde las celdas de datos se pueden asociar con uno o más encabezados.
 
 >[!NOTE]
+>
 Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte [Agregar ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 Al añadir un **Tabla**, puede configurar **Propiedades de tabla** uso del cuadro de diálogo.
@@ -470,9 +470,11 @@ A continuación, puede utilizar la variable **Propiedades de celda** para elegir
 A veces, cuando hay tablas complejas con dos o más niveles de encabezados, las propiedades de tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas, se deben crear relaciones directas entre los encabezados y sus celdas relacionadas mediante **encabezado** y **id** atributos. Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
 
 >[!NOTE]
+>
 El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede activar configurando las normas HTML y el serializador en el RTE.
 
 >[!NOTE]
+>
 Las tablas deben realizarse con la variable **Tabla** componente. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
 
 ```xml
@@ -505,6 +507,7 @@ Las tablas deben realizarse con la variable **Tabla** componente. Aunque se pued
 AEM Para conseguirlo en la, debe añadir el marcado directamente utilizando el modo de edición de origen.
 
 >[!NOTE]
+>
 Esta funcionalidad no se encuentra disponible de inmediato en las instalaciones estándar. Requiere la configuración de RTE, reglas de HTML y serializador.
 
 #### Más información: Información y relaciones (1.3.1) {#more-information-info-and-relationships}
@@ -525,6 +528,7 @@ Los diseñadores normalmente se centran en características de diseño visuales 
 Del mismo modo, la información que requiere distinguir entre sonidos diferentes (por ejemplo, contenido cuya voz es masculina o femenina) presenta barreras de accesibilidad para las personas que sufren deficiencias auditivas si el contenido del audio no se refleja en un texto alternativo.
 
 >[!NOTE]
+>
 Para los requisitos relativos a las alternativas de color, consulte [Uso del color](#use-of-color).
 
 #### Cómo cumplir: Características sensoriales (1.3.3)     {#how-to-meet-sensory-characteristics}
@@ -535,6 +539,7 @@ Asegúrese de que cualquier información relativa a las características visuale
 * También es importante no basarse en el estilo del texto (por ejemplo, si se trata de texto en negrita o en cursiva) como la única manera de transmitir la información.
 
 >[!NOTE]
+>
 El uso de términos descriptivos es aceptable si se entiende que tienen significado en un contexto no visual. Por ejemplo, con *superior* y *abajo* sería generalmente aceptable, ya que implican respectivamente contenido antes y después de un elemento de contenido en particular. Aún tendría sentido cuando el contenido se hable en voz alta.
 
 #### Más información: Características sensoriales (1.3.3)     {#more-information-sensory-characteristics}
@@ -553,6 +558,7 @@ El uso de términos descriptivos es aceptable si se entiende que tienen signific
 * Uso del color: el color no es el único medio visual para transmitir información, indicar una acción, una respuesta o distinguir un elemento visual.
 
 >[!NOTE]
+>
 Este criterio de éxito se dirige específicamente a la percepción del color. Otras formas de percepción se tratan en [Adaptable (1.3)](#adaptable); incluyendo el acceso programático al color y otros códigos de presentación visual.
 
 #### Objetivo: Uso del color (1.4.1)     {#purpose-use-of-color}
@@ -616,6 +622,7 @@ Las personas con ciertas deficiencias visuales quizá no puedan distinguir entre
 * El código de color del texto (como el texto con vínculo y el texto sin vínculo) es importante para distinguir la información.
 
 >[!NOTE]
+>
 El texto que se utiliza con fines puramente decorativos se excluye de estos criterios de éxito.
 
 #### Cómo cumplir: Cumplir los criterios de contraste (Mínimo) (1.4.3)     {#how-to-meet-contrast-minimum}
@@ -647,6 +654,7 @@ Si no es posible alcanzar los niveles de contraste recomendados, proporcione un 
    * Esencial: una presentación de texto en concreto resulta esencial para que se transmita la información.
 
 >[!NOTE]
+>
 Los logotipos (texto que forma parte de un logotipo o de un nombre de marca) se consideran esenciales.
 
 #### Objetivo: Imágenes de texto (1.4.5)          {#purpose-images-of-text}
@@ -712,6 +720,7 @@ Según la naturaleza del contenido, se puede aplicar una o varias de las siguien
 * Tres parpadeos o Por debajo del umbral: las páginas web no contienen ningún elemento que parpadee más de tres veces en el intervalo de un segundo o que el parpadeo esté por debajo del umbral general de parpadeo y parpadeo en rojo.
 
 >[!NOTE]
+>
 Ya que cualquier contenido que no cumpla este criterio de éxito puede interferir en la capacidad de un usuario para utilizar toda la página, todo el contenido de la página web (tanto si se utiliza para cumplir otros criterios como si no) debe cumplir este criterio de éxito. Consulte [Requisito de conformidad 5: no interferencia](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Objetivo: Tres parpadeos o Por debajo de los límites (2.3.1) {#purpose-three-flashes-or-below-threshold}
@@ -744,7 +753,7 @@ Este criterio de éxito ayuda a todo el mundo, independientemente de cualquier d
 
 Al crear una página HTML nueva en AEM, se puede especificar el título de la página. Asegúrese de que el título describa adecuadamente el contenido de la página para que los visitantes puedan identificar rápidamente si el contenido es relevante para sus necesidades.
 
-También puede editar el título de la página al editarla. Puede acceder a ella desde **Compañero** - **Página** pestaña - **Propiedades de página...**
+También puede editar el título de la página al editarla. Puede acceder a ella desde **Sidekick** - **Página** pestaña - **Propiedades de página...**
 
 #### Más información: Página titulada (2.4.2) {#more-information-page-titled}
 
@@ -797,6 +806,7 @@ John Smith's publications
 ```
 
 >[!NOTE]
+>
 El fragmento anterior representa una ilustración; es recomendable utilizar el componente **Imagen**.
 
 Aunque se recomienda proporcionar un texto para el vínculo que identifique su objetivo sin necesidad de contexto adicional, no siempre es posible. Los vínculos de contexto libre se pueden utilizar en los casos siguientes, cuyos ejemplos HTML se pueden encontrar en [Cumplir los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
@@ -882,6 +892,7 @@ El atributo `lang` se puede utilizar para identificar los cambios en el idioma d
 ```
 
 >[!NOTE]
+>
 Los bloques de citas no funcionan con las instancias listas para usarse. Se podría desarrollar un componente personalizado para admitir la función.
 
 De manera similar, el navegador puede mostrar un préstamo poco común o una expresión correcta si el elemento `span` se utiliza de la manera siguiente:
@@ -891,6 +902,7 @@ De manera similar, el navegador puede mostrar un préstamo poco común o una exp
 ```
 
 >[!NOTE]
+>
 No es necesario seguir este criterio de éxito cuando se incluyen nombres o ciudades en distintos idiomas, o cuando se utilizan préstamos o expresiones que ya son comunes en el idioma por defecto (como *schadenfreude* en inglés).
 
 Para añadir el elemento “span” (extensión), con un idioma adecuado, puede editar manualmente sus especificaciones HTML en el modo de edición de la fuente de RTE para que se lea como puede ver arriba. Alternativamente, el atributo `lang` se puede incluir en RTE a través de un administrador del sistema (consulte [Añadir ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).

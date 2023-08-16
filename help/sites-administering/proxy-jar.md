@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
 
 # Herramienta Servidor Proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
-El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto le permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
+El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
 
 Puede encontrar el servidor proxy en la carpeta de instalación adecuada:
 
@@ -34,7 +34,7 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 * SMTP para mensajes de correo electrónico
 * LDAP para la administración de usuarios
 
-AEM Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualquiera que se comuniquen a través de una red TCP/IP; por ejemplo, un explorador web y un servidor de correo electrónico de la red de red (). AEM Esto le permite monitorizar exactamente lo que sucede cuando solicita una página de.
+AEM Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualquiera que se comuniquen a través de una red TCP/IP; por ejemplo, un explorador web y un servidor de correo electrónico de la red de red (). AEM Esto le permite monitorizar exactamente lo que sucede cuando solicita una página de la.
 
 ## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
