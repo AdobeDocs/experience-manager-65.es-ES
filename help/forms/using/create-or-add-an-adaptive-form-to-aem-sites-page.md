@@ -87,8 +87,8 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
      &lt;/sly>
      
      ```
-   
-1. Abra el archivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` y añada el siguiente código al archivo:
+
+   1. Abra el archivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` y añada el siguiente código al archivo:
 
        ```
      
@@ -97,8 +97,8 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
      &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
      &lt;/sly>
      ```
-   
-1. Abra el archivo `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` y añada el siguiente código al archivo:
+
+   1. Abra el archivo `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` y añada el siguiente código al archivo:
 
        ```
      //Customheaderlibs.html
@@ -107,8 +107,8 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
      &lt;/sly>
      
      ```
-   
-1. Abra el archivo `/apps/[your-sites-project]/components/customfooterlibs.html` y añada el siguiente código al archivo:
+
+   1. Abra el archivo `/apps/[your-sites-project]/components/customfooterlibs.html` y añada el siguiente código al archivo:
 
        ```
      
@@ -117,8 +117,8 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
      &lt;sly data-sly-test=&quot;${!wcmmode.edit}&quot; data-sly-call=&quot;${clientlib.js @ categories=&#39;core.forms.components.runtime.all&#39;, async=true}&quot;/>
      &lt;/sly>
      ```
-   
-1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
+
+   1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
 
 +++
 
