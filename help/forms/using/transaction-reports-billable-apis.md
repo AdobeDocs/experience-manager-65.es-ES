@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 100%
+source-wordcount: '2084'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 * **Formularios enviados:** Cuando los datos se envían desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio de almacenamiento de datos o base de datos, se considera envío de formulario. Por ejemplo, el envío de un formulario adaptable, un formulario HTML5, PDF Forms y un conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto de formularios, el servicio de informes de transacciones lo contabiliza como 5 envíos.
 
-* **Documentos representados:** Generar un documento mediante la combinación de una plantilla y datos, la firma o certificación digitalmente de un documento, el uso de las API de servicios de documentos facturables para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos representados.
+* **Documentos representados:** La generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digitalmente de un documento, el uso de una API de servicios de documentos facturables para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos representados.
 
 >[!NOTE]
 >
@@ -107,6 +107,26 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
  </tbody>
 </table>
+
+### Servicio DocAssurance {#DocAssurance-Service}
+
+<table>
+ <tbody>
+  <tr>
+   <td><p>API</p> </td>
+   <td>Descripción</td>
+   <td>Categoría del informe de transacción</td>
+   <td>Información adicional</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
+   <td>Esta API le permite proteger su documento. Puede utilizar la API para firmar, certificar, leer, extender o cifrar un documento de PDF.</td>
+   <td>Documentos procesados</td>
+   <td>Solo se factura la operación firmar y certificar del secureDocument.</td>
+  </tr>
+ </tbody>
+</table>
+
 
 ### Servicio Distiller {#distiller-service}
 
@@ -305,12 +325,16 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
  </tbody>
 </table>
 
+Invocar se considera una transacción que depende de la operación que se está realizando. Se considera una transacción cuando se realizan una o más de las siguientes operaciones:
+1. Conversión de formato de no PDF a formato de PDF. Por ejemplo, la conversión de formato XDP a formato PDF (para comunicaciones interactivas y no interactivas) y la conversión de Word a PDF.
+1. Conversión de formato PDF a formato PDF/A.
+1. Conversión de formato PDF a formato no PDF. Por ejemplo, conversión de formato PDF a formato de imagen, conversión de formato PDF a formato de texto.
+
+
 >[!NOTE]
 >
 >* El API de invocación del servicio de ensamblador puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
 >* Un documento PDF único producido mediante el servicio de ensamblador puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código DDX proporcionado.
->
-
 
 ### Servicio de utilidad de PDF  {#pdf-utility-service}
 
@@ -324,7 +348,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
-   <td>Convierte un documento PDF en un archivo XDP. Para que un documento PDF se convierta correctamente en un archivo XDP, el documento PDF debe contener un flujo XFA en el diccionario AcroForm.</td>
+   <td>Convierte un documento PDF en un archivo XDP. Para que un documento de PDF se convierta correctamente en un archivo XDP, el documento de PDF debe contener una secuencia XFA en el diccionario de AcroForm.</td>
    <td>Documentos procesados</td>
    <td> </td>
   </tr>
