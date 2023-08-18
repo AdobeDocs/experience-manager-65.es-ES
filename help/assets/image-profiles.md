@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
+source-git-commit: d4c2890b92678aff58119e76251b5d181c95a393
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 6%
@@ -23,8 +23,8 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargar aplican
 
 >[!IMPORTANT]
 >
->· El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
-· Los perfiles de imagen no son aplicables a archivos de PDF, GIF animado o INDD (Adobe InDesign).
+>* El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
+>* Los perfiles de imagen no son aplicables a archivos de PDF, GIF animado o INDD (Adobe InDesign).
 
 ## Opciones de recorte {#crop-options}
 
@@ -56,8 +56,9 @@ Para mantener bajo control el uso del recorte inteligente y optimizar el tiempo 
 Hay dos opciones de recorte de imagen entre las que elegir: Recorte de píxeles o Recorte inteligente. También puede optar por automatizar la creación de muestras de color e imagen.
 
 >[!IMPORTANT]
-· El Adobe recomienda revisar los cultivos y muestras que se generen para asegurarse de que son adecuados y relevantes para su marca y valores.
-· El formato de imagen CMYK no es compatible con el recorte inteligente.
+>
+>* El Adobe recomienda revisar los cultivos y las muestras que se hayan generado para asegurarse de que sean adecuados y relevantes para la marca y los valores.
+>* El formato de imagen CMYK no es compatible con el recorte inteligente.
 
 | Opción | Cuándo se usa | Descripción |
 | --- | --- | --- |
@@ -70,7 +71,8 @@ Hay dos opciones de recorte de imagen entre las que elegir: Recorte de píxeles 
 La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que Adobe Photoshop *Máscara de enfoque* filtro.
 
 >[!NOTE]
-La máscara de enfoque solo se aplica a representaciones a escala reducida dentro del PTIFF (tiff piramidal) con una disminución de resolución superior al 50 %. Esto significa que las representaciones de mayor tamaño dentro del objeto ptiff no se ven afectadas por la máscara de enfoque, mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
+>
+>La máscara de enfoque solo se aplica a representaciones a escala reducida dentro del PTIFF (tiff piramidal) con una disminución de resolución superior al 50 %. Esto significa que las representaciones de mayor tamaño dentro del objeto ptiff no se ven afectadas por la máscara de enfoque, mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
 
 Entrada **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtrado:
 
@@ -164,18 +166,19 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
    * Vaya a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y seleccione **[!UICONTROL Guardar]**.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Vaya al CRXDE Lite en el siguiente nodo: `/content/dam/jcr:content`.
 
-      Añadir la propiedad `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` y seleccione **[!UICONTROL Guardar todo]**.
+     Añadir la propiedad `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` y seleccione **[!UICONTROL Guardar todo]**.
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Editar el recorte inteligente o la muestra inteligente de una sola imagen {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-· El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
+>
+>* El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
 Puede realinear o cambiar manualmente el tamaño de la ventana de recorte inteligente de una imagen para restringir aún más su punto focal.
 
@@ -205,7 +208,8 @@ Consulte también [Editar el recorte inteligente o la muestra inteligente de var
 ## Editar el recorte inteligente o la muestra inteligente de varias imágenes {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-· El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
+>
+>* El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
 Después de aplicar un perfil de imagen (que contiene Recorte inteligente) a una carpeta, se les aplica un recorte a todas las imágenes de dicha carpeta. Si lo desea, puede *manualmente* realinee o cambie el tamaño de la ventana de recorte inteligente en varias imágenes para restringir aún más su punto focal.
 
@@ -222,37 +226,35 @@ Puede volver a ejecutar el recorte inteligente para generar los recortes adicion
 
    * Ajuste el tamaño de visualización de las imágenes en la página.
 
-      A la derecha de la lista desplegable de nombre del punto de interrupción, arrastre la barra deslizante a la izquierda o a la derecha para cambiar el tamaño de la visualización de la imagen visible.
+     A la derecha de la lista desplegable de nombre del punto de interrupción, arrastre la barra deslizante a la izquierda o a la derecha para cambiar el tamaño de la visualización de la imagen visible.
 
-      ![edit_smart_crop-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crop-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtre la lista de imágenes visibles en función de los nombres de los puntos de interrupción. En el ejemplo siguiente, las imágenes se filtran con el nombre de punto de interrupción &quot;Medium&quot;.
 
-      Cerca de la esquina superior derecha de la página, en la lista desplegable, seleccione un nombre de punto de interrupción para filtrar por las imágenes que ve. (Consulte la imagen anterior).
+     Cerca de la esquina superior derecha de la página, en la lista desplegable, seleccione un nombre de punto de interrupción para filtrar por las imágenes que ve. (Consulte la imagen anterior).
 
-      ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crop-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * Cambie el tamaño del cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
 
-      ![Cambiar el tamaño del recorte inteligente de una imagen](assets/edit_smart_crops-resize.png)
+     ![Cambiar el tamaño del recorte inteligente de una imagen](assets/edit_smart_crops-resize.png)
 
    * Mueva el cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, en la imagen, arrastre el cuadro de recorte a una nueva ubicación.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, en la imagen, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestra inteligente a una nueva ubicación.
 
-      ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crop-move](assets/edit_smart_crops-move.png)
 
    * Deshacer todas las ediciones y restaurar el recorte inteligente o la muestra inteligente original (solo se aplica a la sesión de edición actual).
 
-      Seleccionar **[!UICONTROL Revertir]** encima de la imagen.
+     Seleccionar **[!UICONTROL Revertir]** encima de la imagen.
 
-      ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
 
 1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**, luego seleccione **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
