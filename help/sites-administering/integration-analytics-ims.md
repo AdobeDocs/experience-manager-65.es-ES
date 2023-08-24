@@ -2,10 +2,10 @@
 title: Integración con Adobe Analytics mediante IMS
 description: AEM Obtenga información acerca de la integración de la con Adobe Analytics mediante IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 65%
+source-wordcount: '1085'
+ht-degree: 63%
 
 ---
 
@@ -69,6 +69,12 @@ Con Adobe Developer Console, debe crear un proyecto (integración) con Adobe Ana
 ### Creación del proyecto {#creating-the-project}
 
 Abra Adobe Developer Console para crear un proyecto con Adobe Analytics que usará AEM:
+
+>[!CAUTION]
+>
+>Actualmente, solo admitimos el de Adobe Developer Console **Cuenta de servicio (JWT)** tipo de credencial.
+>
+>No use el **Servidor a servidor OAuth** tipo de credencial, que se admitirá en el futuro.
 
 1. Abra Adobe Developer Console para proyectos:
 
@@ -190,7 +196,7 @@ Para confirmar que la configuración funciona según lo esperado:
 
 Ahora se puede hacer referencia a la configuración para que un Cloud Service utilice la API de Analytics Standard:
 
-1. Abra el **Herramientas** menú. A continuación, dentro de **Cloud Services** , seleccione **Cloud Services heredados**.
+1. Abra el **Herramientas** menú. A continuación, dentro de **Cloud Service** , seleccione **Cloud Service heredados**.
 1. Desplácese hacia abajo hasta **Adobe Analytics** y seleccione **Configurar ahora**.
 
    El **Crear configuración** se abrirá.
