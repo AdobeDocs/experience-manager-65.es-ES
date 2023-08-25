@@ -2,10 +2,10 @@
 title: Traducir contenido
 description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
-source-wordcount: '2173'
-ht-degree: 94%
+source-wordcount: '2163'
+ht-degree: 82%
 
 ---
 
@@ -27,7 +27,7 @@ Ahora que el conector y las reglas de traducción están configurados, este art�
 Este documento le ayuda a comprender cómo utilizar los proyectos de traducción de AEM junto con el conector y las reglas de traducción para traducir contenido. Después de leer este documento, debería poder hacer lo siguiente:
 
 * Comprender qué es un proyecto de traducción.
-* Poder crear nuevos proyectos de traducción.
+* Crear proyectos de traducción.
 * Utilice los proyectos de traducción para traducir el contenido sin encabezado.
 
 ## Creación de un proyecto de traducción {#creating-translation-project}
@@ -41,7 +41,7 @@ Los proyectos de traducción se pueden crear de dos formas:
 1. Seleccione la raíz de idioma del contenido y deje que AEM cree automáticamente el proyecto de traducción en función de la ruta de contenido.
 1. Cree un proyecto vacío y seleccione manualmente el contenido que desee añadir al proyecto de traducción
 
-Ambos son enfoques válidos que normalmente solo difieren según el usuario que realice la traducción:
+Ambos son enfoques válidos que solo difieren según el usuario que realice la traducción:
 
 * El gestor de proyectos de traducción (TPM) suele necesitar la flexibilidad de seleccionar manualmente el contenido del proyecto de traducción.
 * Si el propietario del contenido también es responsable de la traducción, dejar que AEM cree automáticamente el proyecto en función de la ruta de contenido seleccionada suele ser más fácil.
@@ -53,9 +53,9 @@ Ambos enfoques se analizan en las secciones siguientes.
 Para los propietarios de contenido que también son responsables de la traducción, a menudo es más fácil dejar que AEM cree automáticamente el proyecto de traducción. Para que AEM cree automáticamente un proyecto de traducción basado en la ruta de contenido:
 
 1. Vaya a **Navegación** -> **Recursos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
-1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/dam/wknd/en`.
+1. Seleccione la raíz de idioma del proyecto. En este caso, `/content/dam/wknd/en` está seleccionado.
 1. Toque o haga clic en el selector de carril y muestre el panel **Referencias**.
-1. Toque o haga clic en **Copias de idioma**.
+1. Haga clic o pulse **Copias de idioma**.
 1. Marque la casilla de verificación **Copias de idioma**.
 1. Expanda la sección **Actualizar copias de idioma** en la parte inferior del panel de referencias.
 1. En el menú desplegable **Proyecto**, seleccione **Crear proyecto(s) de traducción**.
@@ -117,7 +117,7 @@ Para ver el proyecto de traducción:
 El proyecto se divide en varias tarjetas.
 
 * **Resumen** - Esta tarjeta muestra la información básica del encabezado del proyecto, incluido el propietario, el idioma y el proveedor de traducción.
-* **Trabajo de traducción** - Esta tarjeta o estos programas de tarjetas proporcionan una visión general del trabajo de traducción real incluyendo el estado, el número de activos, etc. Generalmente, hay un trabajo por idioma con el código de idioma ISO-2 anexado al nombre del trabajo.
+* **Trabajo de traducción** : Esta tarjeta o estos programas de tarjetas proporcionan una visión general del trabajo de traducción real, incluido el estado, el número de recursos, etc. Generalmente, hay un trabajo por idioma con el código de idioma ISO-2 anexado al nombre del trabajo.
 * **Equipo** - Esta tarjeta muestra los usuarios que están colaborando en este proyecto de traducción. Este recorrido no cubre este tema.
 * **Tareas**: Tareas adicionales asociadas con la traducción del contenido, como hacer elementos o elementos de flujo de trabajo. Este recorrido no cubre este tema.
 
@@ -129,7 +129,7 @@ AEM Al crear automáticamente el proyecto de traducción, el contenido sin encab
 
 Para ver los detalles del contenido sin encabezado incluidos en este proyecto, haga lo siguiente:
 
-1. Toque o haga clic en el botón de puntos suspensivos en la parte inferior de la tarjeta **Trabajo de traducción**.
+1. Toque o haga clic en el botón de puntos suspensivos en la parte inferior de la **Trabajo de traducción** Tarjeta de.
 1. La ventana **Trabajo de traducción** lista todos los elementos del trabajo.
    ![Detalles del trabajo de traducción](assets/translation-job-detail.png)
 1. Toque o haga clic en una línea para ver el detalle de esa línea, teniendo en cuenta que una línea puede representar varios elementos de contenido para traducir.
@@ -150,7 +150,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 
 ### Uso de un proyecto de traducción creado manualmente {#using-manual-project}
 
-Al crear manualmente un proyecto de traducción, AEM crea los trabajos necesarios, pero no selecciona automáticamente ningún contenido para incluirlo. Esto permite al gestor del proyecto de traducción tener la flexibilidad de elegir qué contenido traducir.
+Al crear manualmente un proyecto de traducción, AEM crea los trabajos necesarios, pero no selecciona automáticamente ningún contenido para incluirlo. Al hacerlo, el administrador del proyecto de traducción tiene la flexibilidad de elegir qué contenido traducir.
 
 Para añadir contenido a un trabajo de traducción:
 
@@ -183,9 +183,9 @@ Para añadir contenido a un trabajo de traducción:
 >
 >Puede obtener más información sobre el navegador de rutas en la [sección de recursos adicionales.](#additional-resources)
 
-Puede utilizar los pasos anteriores para agregar el contenido necesario a todos los idiomas (trabajos) del proyecto. Una vez que haya seleccionado todo el contenido, puede iniciar la traducción.
+Puede utilizar los pasos anteriores para agregar el contenido necesario a todos los idiomas (trabajos) del proyecto. Una vez seleccionado todo el contenido, puede iniciar la traducción.
 
-Normalmente, el contenido del trabajo de traducción se inicia en el estado de **Borrador** tal como lo indica la columna **Estado** en la ventana **Trabajo de traducción**.
+Normalmente, el contenido del trabajo de traducción se inicia en el estado **Borrador** tal como indica la columna **Estado** en la ventana **Trabajo de traducción**.
 
 Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y toque o haga clic en el botón de comillas angulares en la parte superior de la tarjeta **Trabajo de traducción** y seleccione **Inicio**.
 
@@ -199,7 +199,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 
 ## Revisión del contenido traducido {#reviewing}
 
-[Como se ha visto anteriormente,](#using-translation-project) el contenido traducido por el equipo vuelve a AEM con el estado de **Aprobado** dado que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, por supuesto que todavía es posible revisar el contenido traducido.
+[Como se ha visto anteriormente,](#using-translation-project) AEM el contenido traducido por el equipo vuelve a los flujos de trabajo en el formato de la página con el estado de **Aprobado** dado que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, aún es posible revisar el contenido traducido.
 
 Simplemente, vaya al trabajo de traducción completado y seleccione un elemento de línea tocando o haciendo clic en la casilla de verificación. El icono **Revelar en Fragmento de contenido** se muestra en la barra de herramientas.
 
@@ -211,7 +211,7 @@ Pulse o haga clic en dicho icono para abrir el fragmento de contenido traducido 
 
 Puede modificar todavía más el contenido traducido necesario, siempre que tenga el permiso adecuado, pero la edición de fragmentos de contenido está fuera del ámbito de este recorrido. Consulte la sección [Recursos adicionales](#additional-resources) al final de este documento para obtener más información sobre este tema.
 
-El propósito del proyecto es reunir todos los recursos relacionados con una traducción en un solo lugar para facilitar el acceso y una visión general clara. Sin embargo, como puede ver al visualizar el detalle de un elemento traducido, las propias traducciones vuelven a la carpeta de recursos del idioma de traducción. En este ejemplo, la carpeta es la siguiente:
+El propósito del proyecto es reunir todos los recursos relacionados con una traducción en un solo lugar para facilitar el acceso y una visión general clara. Sin embargo, como puede ver al visualizar el detalle de un elemento traducido, las propias traducciones vuelven a la carpeta de recursos del idioma de traducción. En este ejemplo, la carpeta es:
 
 ```text
 /content/dam/wknd/es
@@ -223,7 +223,7 @@ Si se desplaza a esta carpeta mediante **Navegación** -> **Assets** -> **Archiv
 
 El marco de trabajo de traducción de AEM recibe las traducciones del conector de traducción y, a continuación, crea automáticamente la estructura de contenido en función de la raíz del idioma y utilizando las traducciones proporcionadas por el conector.
 
-Es importante comprender que este contenido no está publicado y, por consiguiente, no está disponible para los servicios sin encabezado. Aprenderemos sobre esta estructura de creación y publicación y veremos cómo publicar nuestro contenido traducido en el siguiente paso del recorrido de traducción.
+Es importante comprender que este contenido no está publicado y, por consiguiente, no está disponible para los servicios sin encabezado. Aprenderá sobre esta estructura de creación y publicación y verá cómo publicar el contenido traducido en el siguiente paso del recorrido de traducción.
 
 ## Traducción humana {#human-translation}
 
@@ -233,17 +233,17 @@ La traducción humana está fuera del alcance de este recorrido de localización
 
 ## Siguientes pasos {#what-is-next}
 
-Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debería lograr lo siguiente:
+Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debe poder hacer lo siguiente:
 
 * Comprender qué es un proyecto de traducción.
-* Poder crear nuevos proyectos de traducción.
+* Crear proyectos de traducción.
 * Utilice los proyectos de traducción para traducir el contenido sin encabezado.
 
-Amplíe este conocimiento y continúe con su recorrido de traducción sin encabezado de AEM revisando el documento [Publicar contenido traducido](publish-content.md) donde aprenderá a publicar su contenido traducido y a actualizar esas traducciones a medida que cambie el contenido raíz del idioma.
+AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Publicar contenido traducido](publish-content.md) donde aprenderá a publicar el contenido traducido y a actualizar esas traducciones a medida que cambie el contenido raíz del idioma.
 
 ## Recursos adicionales {#additional-resources}
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Publicar contenido traducido](publish-content.md), los siguientes son algunos recursos opcionales adicionales que profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar el recorrido sin encabezado.
 
 * [Administración de proyectos de traducción](/help/sites-administering/tc-manage.md): Conozca los detalles de los proyectos de traducción y las funciones adicionales, como flujos de trabajo de traducción humana y proyectos en varios idiomas.
-* [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md##path-selection): AEM ofrece varios mecanismos para organizar y editar el contenido, incluido un explorador de rutas robusto.
+* [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md#path-selection): AEM ofrece varios mecanismos para organizar y editar el contenido, incluido un explorador de rutas robusto.

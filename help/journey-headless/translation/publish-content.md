@@ -2,10 +2,10 @@
 title: Publicar contenido traducido
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
-source-wordcount: '1378'
-ht-degree: 97%
+source-wordcount: '1364'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ Aprenda a publicar el contenido traducido y a actualizar las traducciones como a
 En el documento anterior del recorrido de traducción sin encabezado AEM, [Traducir contenido,](configure-connector.md) ha aprendido a utilizar proyectos de traducción de AEM para traducir su contenido sin encabezado. Ahora debería hacer lo siguiente:
 
 * Comprender qué es un proyecto de traducción.
-* Poder crear nuevos proyectos de traducción.
+* Poder crear proyectos de traducción.
 * Utilice los proyectos de traducción para traducir el contenido sin encabezado.
 
 Ahora que la traducción inicial ha finalizado, este artículo le explica el siguiente paso para publicar ese contenido y qué hacer para actualizar sus traducciones como el contenido subyacente en los cambios de la raíz del idioma.
@@ -47,7 +47,7 @@ Una vez creado el contenido en la instancia de autor, debe transferirse a la ins
 
 ## Publicación del contenido traducido {#publishing}
 
-Una vez que esté satisfecho con el estado del contenido traducido, debe publicarse para que los servicios sin encabezados puedan consumirlo. Esta tarea no suele ser responsabilidad del especialista en traducción, pero se documenta aquí para ilustrar el flujo de trabajo completo.
+Una vez que esté satisfecho con el estado del contenido traducido, debe publicarse para que los servicios sin encabezados puedan consumirlo. Esta tarea no es responsabilidad del especialista en traducción, pero se documenta aquí para ilustrar el flujo de trabajo completo.
 
 >[!NOTE]
 >
@@ -84,18 +84,18 @@ Existen opciones adicionales al publicar el contenido que están fuera del ámbi
 
 ## Actualización del contenido traducido {#updating-translations}
 
-La traducción no suele ser una tarea de una sola vez. Normalmente, los autores siguen agregando y modificando el contenido en la raíz del idioma una vez completada la traducción inicial. Esto significa que también se debe actualizar el contenido traducido.
+La traducción no suele ser una tarea de una sola vez. Normalmente, los autores siguen agregando y modificando el contenido en la raíz del idioma una vez completada la traducción inicial. Esto significa que también debe actualizar el contenido traducido.
 
-Los requisitos específicos del proyecto definen la frecuencia con la que se deben actualizar las traducciones y qué proceso de decisión se sigue antes de realizar una actualización. Una vez que haya decidido actualizar sus traducciones, el proceso en AEM es muy sencillo. Como la traducción inicial se basó en un proyecto de traducción, también lo son las actualizaciones.
+Los requisitos específicos del proyecto definen la frecuencia con la que se deben actualizar las traducciones y qué proceso de decisión se sigue antes de realizar una actualización. AEM Una vez que haya decidido actualizar sus traducciones, el proceso en el que se realiza la traducción es muy sencillo, ya que el proceso en el que se realiza la traducción es muy sencillo. Como la traducción inicial se basó en un proyecto de traducción, también lo son las actualizaciones.
 
 Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el proyecto de traducción de forma automática o manual.
 
 ### Actualización de un proyecto de traducción creado automáticamente {#updating-automatic-project}
 
 1. Vaya a **Navegación** -> **Recursos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
-1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/dam/wknd/en`.
+1. Seleccione la raíz de idioma del proyecto. En este caso, `/content/dam/wknd/en` está seleccionado.
 1. Toque o haga clic en el selector de carril y muestre el panel **Referencias**.
-1. Toque o haga clic en **Copias de idioma**.
+1. Haga clic o pulse **Copias de idioma**.
 1. Marque la casilla de verificación **Copias de idioma**.
 1. Expanda la sección **Actualizar copias de idioma** en la parte inferior del panel de referencias.
 1. En el menú desplegable **Proyecto**, seleccione **Agregar a un proyecto de traducción existente**.
@@ -118,7 +118,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-Puede observar que las estadísticas que aparecen en la nueva tarjeta (número de recursos y fragmentos de contenido) son diferentes. Esto se debe a que AEM reconoce qué ha cambiado desde la última traducción y solo incluye el contenido que debe traducirse. Esto incluye una nueva traducción del contenido actualizado, así como la primera traducción del contenido nuevo.
+Puede observar que las estadísticas que aparecen en la nueva tarjeta (número de recursos y fragmentos de contenido) son diferentes. AEM Esto se debe a que reconoce lo que ha cambiado desde la última traducción y solo incluye el contenido que debe traducirse. Esto incluye una nueva traducción del contenido actualizado y la primera traducción del contenido nuevo.
 
 A partir de este punto, [inicie y administre su trabajo de traducción al igual que lo hizo con el original.](translate-content.md#using-translation-project)
 
@@ -141,8 +141,8 @@ Para actualizar una traducción, puede agregar un nuevo trabajo al proyecto exis
 
    ![Seleccionar idioma de destino](assets/select-target-language.png)
 
-1. Una vez configurado el idioma de destino del nuevo trabajo de traducción, toque o haga clic en el botón de puntos suspensivos en la parte inferior de la tarjeta de trabajo para ver los detalles del trabajo.
-1. El trabajo está vacío la primera vez que se crea. Agregue contenido al trabajo tocando o haciendo clic en el botón **Agregar** y utilizando el explorador de rutas [como hacía antes al crear originalmente el proyecto de traducción.](translate-content.md##manually-creating)
+1. Una vez establecido el idioma de destino del nuevo trabajo de traducción, toque o haga clic en los puntos suspensivos en la parte inferior de la tarjeta de trabajo para ver los detalles del trabajo.
+1. El trabajo está vacío la primera vez que se crea. Agregue contenido al trabajo tocando o haciendo clic en el botón **Agregar** y utilizando el explorador de rutas [como hacía antes al crear originalmente el proyecto de traducción.](translate-content.md#manually-creating)
 
 >[!TIP]
 >
@@ -168,4 +168,4 @@ Ya está listo para traducir su propio contenido sin encabezado en AEM. Aun así
 * [Administración de proyectos de traducción](/help/sites-administering/tc-manage.md): conozca los detalles de los proyectos de traducción y las funciones adicionales, como los flujos de trabajo de traducción humana y proyectos en varios idiomas.
 * [Conceptos de creación](/help/sites-authoring/author.md): obtenga más información sobre el modelo de autor y publicación de AEM en más detalle. Este documento se centra en la creación de páginas en lugar de en los fragmentos de contenido, pero la teoría sigue aplicándose.
 * [Publicación de páginas](/help/sites-authoring/publishing-pages.md): obtenga información sobre las funciones adicionales disponibles al publicar contenido. Este documento se centra en la creación de páginas en lugar de en los fragmentos de contenido, pero la teoría sigue aplicándose.
-* [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md##path-selection): AEM ofrece varios mecanismos para organizar y editar el contenido, incluido un explorador de rutas robusto.
+* [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md#path-selection): AEM ofrece varios mecanismos para organizar y editar el contenido, incluido un explorador de rutas robusto.
