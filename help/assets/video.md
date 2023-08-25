@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 6ef87e4f86181f83b7c340e4954e9e85e6bb9ab1
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
 source-wordcount: '11269'
 ht-degree: 2%
@@ -449,7 +449,7 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 
 >[!IMPORTANT]
 >
->Cualquier vídeo que haya cargado *previo* para habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md##reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
+>Cualquier vídeo que haya cargado *previo* para habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
 
 **Para habilitar la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media:**
 
@@ -625,7 +625,7 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 
 >[!IMPORTANT]
 >
->Cualquier vídeo que haya cargado *previo* para habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md##reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
+>Cualquier vídeo que haya cargado *previo* para habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
 
 **Para agregar varios subtítulos y pistas de audio al vídeo:**
 
@@ -693,7 +693,7 @@ En el caso de que haya configurado Dynamic Media para la publicación inmediata,
 
 >[!CAUTION]
 >
->Al cargar archivos de subtítulos o archivos de audio en un vídeo que ya se ha publicado, estos archivos se eliminan si [*reprocesar*](/help/assets/processing-profiles.md##reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de subtítulos y los archivos de pista de audio en el vídeo.
+>Al cargar archivos de subtítulos o archivos de audio en un vídeo que ya se ha publicado, estos archivos se eliminan si [*reprocesar*](/help/assets/processing-profiles.md#reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de subtítulos y los archivos de pista de audio en el vídeo.
 
 #### Añada varios subtítulos a un vídeo que tenga una URL existente con el modificador caption
 
