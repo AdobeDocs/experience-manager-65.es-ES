@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
 workflow-type: tm+mt
-source-wordcount: '11269'
+source-wordcount: '11363'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 >
 >* Consulte [Configuración de Cloud Service de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media: modo híbrido.
 >
->Problema de reproducción de vídeo conocido actualmente en Dynamic Media *solo en el Experience Manager 6.5.9.0*:
+>Problema actual de reproducción de vídeo conocido en Dynamic Media *solo en el Experience Manager 6.5.9.0*:
 >
 >* Si se actualiza un vídeo publicado, debe publicarse de nuevo para reflejar los cambios en la entrega.
 >
@@ -111,12 +111,12 @@ Más información sobre [Prácticas recomendadas para organizar los recursos dig
       * Integrar vídeo con URL:
         [Vinculación de URL en la aplicación web](linking-urls-to-yourwebapplication.md).
 
-      * Integración de vídeo mediante código incrustado en la página web:
+      * Integración de vídeo mediante código incrustado en una página web:
         [Incrustar el visor de vídeo en una página web](embed-code.md).
 
    * [Generación de informes de vídeo](#viewing-video-reports).
 
-   * [Agregar subtítulos a vídeo](#adding-captions-to-video).
+   * [Añadir subtítulos al vídeo](#adding-captions-to-video).
 
 ## Trabajo con vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
@@ -128,10 +128,10 @@ Además, la calidad de vídeo cambia automáticamente si las condiciones de red 
 
 La lógica que utiliza un reproductor de vídeo para determinar qué vídeo codificado se reproducirá o seleccionará durante la reproducción se basa en el siguiente algoritmo:
 
-1. El reproductor de vídeo carga el fragmento de vídeo inicial en función de la velocidad de bits más cercana al valor establecido para la &quot;velocidad de bits inicial&quot; en el propio reproductor.
+1. El reproductor de vídeo carga el fragmento de vídeo inicial en función de la velocidad de bits más cercana al valor establecido para &quot;velocidad de bits inicial&quot; en el propio reproductor.
 1. El reproductor de vídeo cambia según los cambios en la velocidad del ancho de banda según los siguientes criterios:
 
-   1. El jugador elige el flujo de ancho de banda más alto por debajo o igual al ancho de banda estimado.
+   1. El reproductor elige el flujo de ancho de banda más alto por debajo o igual al ancho de banda estimado.
    1. El reproductor considera solo el 80% del ancho de banda disponible. Sin embargo, si está subiendo, es más conservador en solo el 70% para evitar la sobreestimación y volver inmediatamente.
 
 Para obtener información técnica detallada sobre el algoritmo, consulte [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
@@ -145,7 +145,7 @@ Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admite lo 
 
 * Subtítulos de vídeo en todos los visores de vídeo de HTML5.
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
-* Ofrezca conjuntos de vídeos adaptables a la web, a equipos de escritorio y a dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
+* Ofrezca conjuntos de vídeos adaptables a la web y a equipos de escritorio y dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
 
 La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
@@ -449,7 +449,7 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 
 >[!IMPORTANT]
 >
->Cualquier vídeo que haya cargado *previo* para habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
+>Cualquier vídeo que haya cargado *antes* habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
 
 **Para habilitar la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media:**
 
@@ -625,7 +625,7 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 
 >[!IMPORTANT]
 >
->Cualquier vídeo que haya cargado *previo* para habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
+>Cualquier vídeo que haya cargado *antes* habilitar la compatibilidad con subtítulos múltiples y pistas de audio múltiple en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponible la capacidad de seguimiento de varios subtítulos y audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
 
 **Para agregar varios subtítulos y pistas de audio al vídeo:**
 
@@ -637,9 +637,14 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 1. En la página Propiedades del vídeo, seleccione la **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
 
    >[!TIP]
-   >Si no ve el **[!UICONTROL Subtítulos y pistas de audio]** pestaña, significa que la carpeta en la que reside el vídeo seleccionado no tiene un perfil de vídeo asignado. [Aplicar un perfil de vídeo a la carpeta](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders), y vuelva a estos pasos.
+   >Si no ve el **[!UICONTROL Subtítulos y pistas de audio]** significa una de estas dos cosas:
+   >
+   >* La carpeta en la que reside el vídeo seleccionado no tiene asignado un perfil de vídeo. En cuyo caso, consulte [Aplicar un perfil de vídeo a la carpeta](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
+   >* O bien, Dynamic Media debe volver a procesar el vídeo. En cuyo caso, consulte [Volver a procesar recursos en una carpeta](/help/assets/processing-profiles.md#reprocessing-assets).
+   >
+   >Cuando haya completado cualquiera de las tareas anteriores, vuelva a estos pasos.
 
-   ![Pestaña Subtítulos y pistas de audio de la página Propiedades.](assets-dm/msma-audiotracks.png)*Pestaña Subtítulos y pistas de audio de la página Propiedades del vídeo. Observe que no hay ninguna pista de audio original asociada al vídeo, tal como indica el cuadro de lista Pistas de audio vacío. Cuando termina el procesamiento de vídeo, aparece la pista.*
+   ![Pestaña Subtítulos y pistas de audio de la página Propiedades.](assets-dm/msma-audiotracks.png)*Pestaña Subtítulos y pistas de audio de la página Propiedades del vídeo.*
 
 1. (Opcional) Para agregar uno o más archivos de subtítulos (o subtítulos) a un vídeo, haga lo siguiente:
    * Seleccionar **[!UICONTROL Cargar subtítulos]**.
@@ -721,15 +726,15 @@ Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pi
 1. Vaya al recurso de vídeo cuyo estado de ciclo vital desee ver.
 1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
 1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
-1. En las páginas Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña. En la columna Estado, anote el estado de cada subtítulo o archivo de audio.
+1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña. En la columna Estado, anote el estado de cada subtítulo o archivo de audio.
 
 | Estado de subtítulo o pista de audio | Descripción |
 | --- | --- |
-| Procesamiento | El procesamiento está en curso. |
-| Procesado | Se ha completado el procesamiento. |
-| Publicado | Publicación en Dynamic Media. |
-| Error | No se ha completado el procesamiento. Elimine el archivo e inténtelo de nuevo. |
-| Una página sin publicar   | Procesando pero aún no publicado en Dynamic Media. |
+| Procesamiento | Cuando se agrega y guarda un nuevo subtítulo o archivo de pista de audio, pasa al estado &quot;Procesando&quot;. Dynamic Media procesa el archivo adjuntando el manifiesto de flujo continuo al vídeo principal. |
+| Procesado | Una vez completado el procesamiento, el subtítulo o el archivo de pista de audio aparece en estado &quot;Procesado&quot;. Puede previsualizar los archivos de subtítulos y pistas de audio que aparecen como &quot;Procesados&quot; *antes* el vídeo se publica en directo. |
+| Publicado | El estado &quot;Publicado&quot; representa un estado similar al estado &quot;Publicado&quot; de un vídeo principal. Los recursos se publican cuando se publica el vídeo principal y están disponibles en la URL pública de Dynamic Media. |
+| Error | El estado &quot;failed&quot; significa que no se ha completado el procesamiento de un subtítulo o archivo de pista de audio. Elimine el subtítulo o el archivo de pista de audio y vuelva a cargarlo. |
+| Una página sin publicar   | Cuando se cancela la publicación explícita de un vídeo principal publicado, también se cancela la publicación de cualquier subtítulo o archivo de pista de audio que haya agregado al vídeo. |
 
 ![Columna de estado resaltada para los campos Subtítulos y Pistas de audio.](assets-dm/msma-lifecycle-status.png)*Estado del ciclo vital de cada subtítulo y archivo de pista de audio cargados.*
 
@@ -751,7 +756,7 @@ Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
 1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
 1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
-1. En las páginas Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
+1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
 1. En el **Pistas de audio** encabezado, seleccione el archivo de pista de audio que desee establecer como predeterminado del vídeo.
 1. Seleccionar **[!UICONTROL Establecer como predeterminado]**.
 En el **Establecer como predeterminado** , seleccione **[!UICONTROL Reemplazar]**.
@@ -763,7 +768,7 @@ En el **Establecer como predeterminado** , seleccione **[!UICONTROL Reemplazar]*
 
 ### Previsualización de un vídeo con varios subtítulos y pistas de audio{#preview-video-audio-subtitle}
 
-Después de cargar los archivos de subtítulos y de pistas de audio en un vídeo y procesarlos, puede utilizar el visor de vídeo de Dynamic Media para previsualizar todas las pistas. Al hacerlo, puede ver el aspecto y el sonido que tiene el vídeo para los clientes y garantizar que se comporte según lo esperado.
+Después de cargar los archivos de subtítulos y de pistas de audio en un vídeo y procesarlos, puede utilizar el visor de vídeo de Dynamic Media (u otros tipos de visor, si lo desea) para previsualizar todas las pistas. La vista previa permite ver el aspecto y el sonido que tiene el vídeo para los clientes y garantiza que se comporte según lo esperado.
 
 Cuando esté satisfecho con el vídeo, puede [publicarlo](publishing-dynamicmedia-assets.md) mediante cualquiera de los métodos siguientes.
 
@@ -783,15 +788,15 @@ La pestaña de previsualización predeterminada del Experience Manager no muestr
 
    ![Lista desplegable que muestra la opción Visualizadores.](assets-dm/msma-selectviewers.png)
 
-1. En la lista Visualizadores, seleccione **[!UICONTROL Vídeo]**.
+1. En la lista Visualizadores, seleccione el visualizador que desee utilizar para la vista previa del vídeo. Por ejemplo, la siguiente captura de pantalla muestra el **[!UICONTROL Vídeo]** visualizador seleccionado.
 
    ![Selección del visualizador de vídeo en la lista desplegable Visualizadores.](assets-dm/msma-dmviewerselected.png)
 
-1. Cerca de la esquina inferior derecha, a la izquierda del icono de volumen, seleccione el icono de burbuja de voz y, a continuación, seleccione el audio o subtítulo que desee oír, ver o ambos. Si lo desea, en Subtítulos, puede seleccionar **[!UICONTROL Desactivado]** para no mostrar subtítulos ni subtítulos.
+1. Cerca de la esquina inferior derecha, a la izquierda del icono de volumen, seleccione el icono de burbuja de voz y, a continuación, seleccione el audio o subtítulo que desee oír, o ver o ambos. Si lo desea, en Subtítulos, puede seleccionar **[!UICONTROL Desactivado]** para no mostrar subtítulos ni subtítulos.
 
    ![La lista emergente Audio y subtítulos en el visor de vídeo.](assets-dm/msma-selectaudiosubtitle.png)*Simulación de un usuario que selecciona el audio y el subtítulo para la reproducción de vídeo.*
 
-1. Seleccione el del vídeo **[!UICONTROL Reproducir]** para iniciar la reproducción.
+1. Para comenzar la reproducción, seleccione el **[!UICONTROL Reproducir]** botón.
 Tenga en cuenta **[!UICONTROL URL]** y **[!UICONTROL Incrustar]** botones en la esquina inferior izquierda. Utilice estos botones para [vincular la URL del vídeo a la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md) o a [incrustar el vídeo en una página web](/help/assets/embed-code.md), respectivamente.
 1. Cerca de la esquina superior derecha de la página de vista previa, seleccione **[!UICONTROL Cerrar]**.
 
@@ -806,7 +811,7 @@ La pista de audio original extraída de un vídeo principal no se puede eliminar
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
 1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
 1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
-1. En las páginas Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
+1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
 1. Realice una de las siguientes acciones:
 
    * Subtítulos: debajo de **Subtítulos** encabezado, seleccione uno o varios archivos de subtítulo que desee eliminar del vídeo y, a continuación, seleccione **[!UICONTROL Eliminar]**.
@@ -826,7 +831,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 1. Vaya al recurso de vídeo cuya pista de audio predeterminada desee establecer.
 1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
 1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
-1. En las páginas Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
+1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
 1. Realice una de las siguientes acciones:
 
    * Subtítulos: debajo de **Subtítulos** encabezado, seleccione uno o varios archivos de subtítulo que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
@@ -915,11 +920,7 @@ Consulte [Proporcionar contenido estático (que no sea de imagen)](https://exper
 
 ## Añadir marcadores de capítulo al vídeo {#adding-chapter-markers-to-video}
 
->[!IMPORTANT]
->
-Este tema ya no se mantiene de forma activa. Se proporciona tal cual para los usuarios heredados de Dynamic Media. El Adobe recomienda que [habilitar la capacidad de pistas de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
-
-Puede facilitar la visualización y navegación de los vídeos de formulario largo añadiendo marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo de la cronología del vídeo (también conocida como selección manual de vídeo) para desplazarse fácilmente a su punto de interés. O bien, pueden ir inmediatamente a nuevo contenido, demostraciones y tutoriales.
+Puede facilitar la visualización y navegación de los vídeos de formato largo añadiendo marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo de la cronología del vídeo (también conocida como selección manual de vídeo) para desplazarse fácilmente a su punto de interés. O bien, pueden ir inmediatamente a nuevo contenido, demostraciones y tutoriales.
 
 >[!NOTE]
 >
