@@ -9,10 +9,10 @@ breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
 feature: Forms Service
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 97%
+source-wordcount: '3912'
+ht-degree: 96%
 
 ---
 
@@ -136,6 +136,7 @@ ht-degree: 97%
    + [Habilitar los componentes principales para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [Crear un formulario adaptable basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
    + [Crear temáticas para componentes principales basados en Forms adaptable](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [Cree y utilice un controlador de error personalizado para componentes principales basados en Forms adaptable](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Formularios adaptables: creación básica {#adaptive-forms-basic-authoring}
    + [Prácticas recomendadas para usar formularios adaptables ](using/adaptive-forms-best-practices.md)
    + [Crear un formulario adaptable](using/creating-adaptive-form.md)
@@ -188,7 +189,7 @@ ht-degree: 97%
    + [Integrar Adobe Sign con AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Crear y administrar revisiones para recursos de formularios](using/create-reviews-forms.md)
    + [Incrustar un formulario adaptable o una comunicación interactiva en una aplicación de una sola página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [Mensajes de error de validación estándar formularios adaptables](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [Crear y utilizar el controlador de error personalizado para Forms adaptable](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Comunicaciones interactivas {#interactive-communications}
    + [Introducción a la IU de creación de una comunicación interactiva](using/introduction-interactive-communication-authoring.md)
    + [Crear una comunicación interactiva](using/create-interactive-communication.md)

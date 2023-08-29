@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0985e591df83c7f1604bac37af771e8a7a21e691
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6983'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
 | AEM 6.5 | Este artículo |
 
 ## Información general {#overview}
@@ -151,7 +151,19 @@ Para obtener más información sobre la configuración de servicios en el modelo
 
 Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
-El **Establecer propiedad** tipo de regla permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
+El **[!UICONTROL Establecer propiedad]** tipo de regla permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición. Puede establecer la propiedad en una de las siguientes opciones:
+* visible (booleano)
+* dorExclusion (booleano)
+* chartType (String)
+* title (cadena)
+* enabled (booleano)
+* obligatorio (booleano)
+* validationsDisabled (booleano)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (lista)
+* válido (booleano)
+* errorMessage (String)
 
 Permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar una función personalizada, un objeto de formulario o una propiedad de objeto para definir una regla.
 
@@ -562,23 +574,23 @@ Para obtener más información, consulte [usejsdoc.org](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:
 
-* **Privado**
-Sintaxis: `@private`
-Una función privada no se incluye como función personalizada.
+* **Sintaxis**
+privada: `@private`
+una función privada no se incluye como función personalizada.
 
-* **Nombre**
-Sintaxis: `@name funcName <Function Name>`
-Alternativamente `,` puede utilizar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
+* **Sintaxis**
+de nombre: `@name funcName <Function Name>`
+O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
   `funcName` es el nombre de la función (no se permiten espacios).
   `<Function Name>` es el nombre para mostrar de la función.
 
-* **Miembro**
-Sintaxis: `@memberof namespace`
-Adjunta un área de nombres a la función.
+* **Sintaxis**
+de abonado: `@memberof namespace`
+adjunta un área de nombres a la función.
 
-* **Parámetro**
-Sintaxis: `@param {type} name <Parameter Description>`
-Como alternativa, puede utilizar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
+* **Sintaxis**
+de parámetro: `@param {type} name <Parameter Description>`
+O bien, puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
@@ -591,9 +603,9 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 
   Todos los demás tipos de parámetro se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Tipo de devolución**
-Sintaxis: `@return {type}`
-Como alternativa, puede utilizar `@returns {type}`.
+* **Sintaxis**
+de tipo de retorno: `@return {type}`
+O bien, puede usar `@returns {type}`.
 Agrega información sobre la función, como su objetivo. 
 {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
@@ -818,6 +830,10 @@ La siguiente regla muestra cómo configurar la acción Invocar servicio para que
 ![example-invoke-services](assets/example-invoke-services.png)
 
 Invocar el servicio de modelo de datos de formulario mediante la regla de formulario adaptable
+
+>[!NOTE]
+>
+>Si la entrada es de tipo matriz, los campos que admiten matrices se pueden ver en la sección desplegable Output.
 
 ### Activación de varias acciones mediante la regla When {#triggering-multiple-actions-using-the-when-rule}
 

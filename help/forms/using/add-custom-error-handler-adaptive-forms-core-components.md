@@ -1,31 +1,21 @@
 ---
-title: Mensajes de error de validación estándar para formularios adaptables
-seo-title: Standard validation error messages for adaptive forms
-description: Transformar los mensajes de error de validación para formularios adaptables al formato estándar mediante controladores de error personalizados
-seo-description: Transform the validation error messages for adaptive forms into standard format using custom error handlers
-uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
-contentOwner: anujkapo
+title: Añadir un controlador de error personalizado en Forms AEM adaptable basado en componentes principales para Forms adaptable de la
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
+description: AEM Forms proporciona controladores de éxitos y de errores predeterminados para un formulario mediante el punto final REST configurado para invocar un servicio externo. AEM Puede agregar un controlador de error predeterminado y un controlador de error personalizado en un formulario adaptable con un formato de formulario adaptable con un nombre de usuario.
+seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
+keywords: Añadir un controlador de errores personalizado, añadir un controlador de errores predeterminado, añadir un controlador de errores en el formulario, utilizar el servicio de invocación del editor de reglas para añadir un controlador de errores personalizado, configurar el editor de reglas para añadir un controlador de errores personalizado y añadir un controlador de errores personalizado mediante el editor de reglas
+contentOwner: Ruchita Srivastav
 content-type: reference
-geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
-exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 5a475d73ce88035c3f5db47c03b652f3d491420c
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '2346'
+source-wordcount: '2284'
 ht-degree: 74%
 
 ---
 
-# Controladores de errores en formularios adaptables {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
-
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
-| AEM 6.5 | Este artículo |
-
+# Controladores de errores en formularios adaptables (Componentes principales) {#error-handlers-in-adaptive-form}
 
 AEM Forms proporciona controladores de éxito y de error predeterminados para los envíos de formularios. También proporciona una función para personalizar las funciones del controlador de errores. Por ejemplo, puede invocar un flujo de trabajo personalizado en el back-end para códigos de error específicos o informar al cliente de que el servicio está inactivo. Los controladores son funciones del lado del cliente que se ejecutan en función de la respuesta del servidor. Cuando se invoca un servicio externo mediante las API, los datos se transmiten al servidor para su validación, lo que devuelve una respuesta al cliente con información sobre el evento de éxito o error del envío. La información se pasa en forma de parámetros al controlador correspondiente para ejecutar la función. Un controlador de errores ayuda a administrar y mostrar los errores o problemas de validación encontrados.
 
@@ -39,6 +29,7 @@ Si los valores de entrada cumplen los criterios de validación, los valores se e
 ## Usos de los controladores de errores {#uses-of-error-handler}
 
 Los controladores de errores se utilizan para varios fines. A continuación se enumeran algunos de los usos de las funciones del controlador de errores:
+
 * **Realizar validación**: la gestión de errores comienza con la validación de las entradas del usuario con reglas o criterios predefinidos. A medida que los usuarios rellenan un formulario adaptable, el controlador de errores valida la entrada para asegurarse de que cumple el formato, la longitud o cualquier otra restricción necesaria.
 
 * **Proporcionar comentarios en tiempo real**: cuando se detecta cualquier error, el controlador de errores muestra comentarios inmediatos al usuario, como mensajes de error en línea debajo de los campos de formulario correspondientes. Estos comentarios ayudan a los usuarios a identificar y corregir errores sin tener que enviar el formulario y esperar una respuesta.
@@ -59,7 +50,6 @@ El siguiente código ilustra la estructura de respuesta a errores existente:
     errorCausedBy : "SERVER_SIDE_VALIDATION/SERVICE_INVOCATION_FAILURE"
     errors : [
         {
-             somExpression  : <somexpr>
              errorMessage / errorMessages : <validationMsg> / [<validationMsg>, <validationMsg>]
         }
     ]
@@ -72,7 +62,7 @@ El siguiente código ilustra la estructura de respuesta a errores existente:
 Donde:
 
 * `errorCausedBy` describe el motivo del error.
-* `errors` menciona la expresión SOM de los campos en los que se han producido errores en los criterios de validación junto con el mensaje de error de validación.
+* `errors` mencione el nombre de campo completo de los campos en los que se han producido errores en los criterios de validación junto con el mensaje de error de validación.
 * El campo `originCode` añadido por AEM que contiene el código de estado HTTP devuelto por el servicio externo.
 * El campo `originMessage` añadido por AEM que contiene los datos de error sin procesar devueltos por el servicio externo.
 
@@ -86,7 +76,7 @@ Con las mejoras en las funciones y las actualizaciones posteriores en las versio
         "instance": "", (optional)
         "validationErrors" : [ (required)
             {
-                "fieldName":"<SOM expression of the field whose data sent is invalid>",
+                "fieldName":"<qualified fieldname of the field whose data sent is invalid>",
                 "dataRef":<JSONPath (or XPath) of the data element which is invalid>
                 "details": ["Error Message(s) for the field"] (required)
     
@@ -115,7 +105,7 @@ Donde:
 * `detail (optional)` proporciona detalles adicionales sobre el error si es necesario.
 * `instance (optional)` representa una instancia o identificador asociado con el error y ayuda a rastrear o identificar la incidencia específica del error.
 * `validationErrors (required)` contiene información sobre errores de validación. Incluye los siguientes campos:
-   * `fieldname` menciona la expresión SOM de los campos en los que se han producido errores en los criterios de validación.
+   * `fieldname` menciona el nombre de campo completo de los campos en los que se han producido errores en los criterios de validación.
    * `dataRef` representa la ruta JSON o XPath de los campos en los que se ha producido un error en la validación.
    * `details` contiene el mensaje de error de validación con el campo erróneo.
 * El campo `originCode (optional)` añadido por AEM contiene el código de estado HTTP devuelto por el servicio externo
@@ -136,7 +126,7 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
               "type": "VALIDATION_ERROR",
               "validationErrors": [
               {
-              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "fieldName": "$form.PetId",
               "dataRef": "",
               "details": [
               "Invalid ID supplied. Provided value is not correct!"
@@ -145,9 +135,6 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
           ]}
   ```
 
-  Puede ver la expresión SOM de cualquier campo en un formulario adaptable; para ello, pulse el campo y seleccione **[!UICONTROL Ver expresión SOM]**.
-
-  ![Expresión SOM de un campo de formulario adaptable para mostrar la respuesta de error en el controlador de errores personalizado](/help/forms/using/assets/custom-error-handler-somexpression.png)
 
 +++
 
@@ -163,7 +150,7 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
           "validationErrors": [
           {
               "fieldName": "",
-              "dataRef": "/Pet/id",
+              "dataRef": "$.Pet.id",
               "details": [
               "Invalid ID supplied. Provided value is not correct!"
               ]
@@ -171,19 +158,15 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
       ]}
   ```
 
-  ![Referencia de datos de un campo de formulario adaptable para mostrar la respuesta de error en el controlador de errores personalizado](/help/forms/using/assets/custom-errorhandler-dataref.png)
-
-Puede ver el valor de dataRef en la ventana **[!UICONTROL Propiedades]** de un componente del formulario.
-
 +++
 
 ## Requisitos previos {#prerequisites}
 
-Antes de usar el controlador de error personalizado en un Forms adaptable:
+Antes de utilizar el controlador de error en un Forms adaptable:
 
+* [Habilitar los componentes principales de formularios adaptables para su entorno de AEM Cloud Service](enable-adaptive-forms-core-components.md).
 * Conocimientos básicos para [crear una función personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Instale la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
-
 
 ## Adición de un controlador de error mediante el Editor de reglas {#add-error-handler-using-rule-editor}
 
@@ -228,7 +211,7 @@ Puede añadir una función del controlador de errores personalizado para realiza
 * enviar eventos de Analytics a cualquier plataforma de Analytics. Por ejemplo, Adobe Analytics.
 * mostrar cuadro de diálogo modal con mensajes de error.
 
-Además de las acciones mencionadas, los controladores de error personalizados se pueden utilizar para ejecutar funciones personalizadas que cumplan con los requisitos específicos del usuario.
+Además de las acciones mencionadas, los controladores de errores personalizados se pueden utilizar para ejecutar funciones personalizadas que cumplan con los requisitos específicos del usuario.
 
 El controlador de errores personalizado es una función (Biblioteca de cliente) diseñada para responder a los errores devueltos por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. Cualquier biblioteca de cliente con anotación `@errorHandler` se considera que es una función del controlador de errores personalizado. Esta anotación identifica la función de controlador de errores especificada en el archivo `.js`.
 
@@ -269,24 +252,24 @@ La estructura de carpetas creada tiene este aspecto:
 Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
 
    ```javascript
-       /**
-       * Custom Error handler
+       /** 
+       Custom Error handler
        * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
-       function customErrorHandler(response, headers)
+       function customErrorHandler(response, headers, globals)
        {
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
+           alert("CustomErrorHandler - Please enter valid PetId.")
+           globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }
    ```
 
    Para llamar al controlador de error predeterminado desde el controlador de error personalizado, se utiliza la siguiente línea del código de ejemplo:
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-
+   `globals.invoke('defaultErrorHandler',response, headers) `
 
 1. Guardar `function.js`.
 1. Vaya a `js.txt` y agregue el siguiente código:
@@ -304,7 +287,7 @@ Ahora, vamos a comprender cómo configurar y utilizar un controlador de errores 
 
 Antes de implementar el controlador de error personalizado en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente en la variable **[!UICONTROL Categoría de biblioteca de cliente]** se alinea con el nombre especificado en la opción categories de `.content.xml` archivo.
 
-![Agregar el nombre de la biblioteca de cliente en la configuración del contenedor del formulario adaptable](/help/forms/using/assets/client-library-category-name.png)
+![Agregar el nombre de la biblioteca de cliente en la configuración del contenedor del formulario adaptable](/help/forms/using/assets/client-library-category-name-core-component.png)
 
 En este caso, el nombre de la biblioteca de cliente se proporciona como `customfunctionsdemo` en el `.content.xml` archivo.
 
@@ -323,87 +306,8 @@ Para utilizar un controlador de errores personalizado utilizando la acción **[!
 
 Como resultado de esta regla, los valores introducidos para **ID de mascota** comprueban la validación de **Nombre de mascota** utilizando el servicio externo invocado por el punto final REST. Si los criterios de validación basados en la fuente de datos fallan, los mensajes de error se muestran en el nivel de campo.
 
-![añadir un controlador de error personalizado en un formulario para controlar las respuestas de error](/help/forms/using/assets/custom-error-handler-message.png)
+![añadir un controlador de error personalizado en un formulario para controlar las respuestas de error](/help/forms/using/assets/custom-error-handler-message-core-component.png)
 
 Abra la consola del explorador y compruebe la respuesta y el encabezado, recibidos del punto final de servicio REST, para el mensaje de error de validación.
 
 La función del controlador de errores personalizado es responsable de ejecutar acciones adicionales, como mostrar un cuadro de diálogo modal o enviar un evento de análisis, en función de la respuesta de error. Una función del controlador de errores personalizado proporciona la flexibilidad para adaptar la gestión de errores a los requisitos específicos del usuario.
-
-<!-- 
-
-## Configure Adaptive Form submission to add custom handlers {#configure-adaptive-form-submission}
-
-If the server validation error message does not display in the standard format, you can enable asynchronous submission and add a custom error handler on Adaptive Form submission to convert the message into a standard format.
-
-### Configure asynchronous Adaptive Form submission {#configure-asynchronous-adaptive-form-submission}
-
-Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
-
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
-1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
-1. Select the Submit Action:
-
-    * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
-
-    ![adaptive form submission properties](assets/af_submission_properties.png)
-
-1. Tap ![Save](assets/save_icon.png) to save the properties.
-
-### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
-
-AEM Forms provides out-of-the-box success and error handlers for form submissions. Handlers are client-side functions that execute based on the server response. When an Adaptive Form is submitted, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function.
-
-Execute the following steps to add custom error handler on Adaptive Form submission:
-
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
-1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
-
-The following is a sample code to convert a custom error structure to the standard error structure:
-
-```javascript
-var data = $event.data;
-var som_map = {
-    "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
-    "name": "guide[0].guide1[0].guideRootPanel[0].Pet[0].name_2[0]",
-    "status": "guide[0].guide1[0].guideRootPanel[0].Pet[0].status[0]"
-};
-
-var errorJson = {};
-errorJson.errors = [];
-
-if (data) {
-    if (data.originMessage) {
-        var errorData;
-        try {
-            errorData = JSON.parse(data.originMessage);
-        } catch (err) {
-            // not in json format
-        }
-
-        if (errorData) {
-            Object.keys(errorData).forEach(function(key) {
-                var som_key = som_map[key];
-                if (som_key) {
-                    var error = {};
-                    error.somExpression = som_key;
-                    error.errorMessage = errorData[key];
-                    errorJson.errors.push(error);
-                }
-            });
-        }
-        window.guideBridge.handleServerValidationError(errorJson);
-    } else {
-        window.guideBridge.handleServerValidationError(data);
-    }
-}
-```
-
-The `var som_map` lists the SOM expression of the Adaptive Form fields that you want to transform into the standard format. You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
-
-Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
-
- -->

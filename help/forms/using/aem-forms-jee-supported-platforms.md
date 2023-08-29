@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 25d7f93137e2410ecafc22dc4899e0ce5f654083
 workflow-type: tm+mt
-source-wordcount: '3684'
-ht-degree: 70%
+source-wordcount: '3639'
+ht-degree: 63%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 70%
 
 <div class="preview">
 
-Adobe ha lanzado un [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) con AEM 6.5 Forms Service Pack 12 (6.5.12.0) en JEE junto con los instaladores de parches. El instalador completo proporciona soporte para plataformas nuevas, mientras que el instalador de parches solo incluye correcciones de errores.
+Adobe ha lanzado un [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) con AEM 6.5 Forms Service Pack 18 (6.5.18.0) en JEE junto con los instaladores de parches. El instalador completo proporciona soporte para plataformas nuevas, mientras que el instalador de parches solo incluye correcciones de errores.
 
-Si realiza una instalación nueva o planea utilizar el software más reciente para su AEM Forms 6.5 en el entorno JEE, Adobe recomienda utilizar [AEM 6.5.12.0 Forms en el instalador completo de JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) lanzado el 3 de marzo de 2022, en lugar del instalador de AEM Forms 6.5 lanzado el 8 de abril de 2019.
+AEM Si está realizando una instalación nueva o planea utilizar el software más reciente para su Forms de la versión 6.5 de la en un entorno JEE, Adobe recomienda utilizar [AEM Instalador completo de Forms 6.5.18.0 en JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) AEM publicado el 29 de agosto de 2023 en lugar del instalador de Forms de la versión 6.5 de la versión de la versión de la versión de, publicado el 8 de abril de 2019.
 
 </div>
 
@@ -147,17 +147,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td><p>Compatible</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 4.0 (Obsoleto) </p> </td>
-   <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
-  </tr>
-  <tr>
-   <td><p>MongoDB Enterprise 4.2 </p> </td>
-   <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
-  </tr>
-  <tr>
-   <td><p>Base de datos Oracle 12c Release 2 (12.2.0.1.0) (Obsoleto)</p> </td>
+   <td><p> MongoDB Enterprise 4.4 </p> </td>
    <td><p>Repositorio Microkernel</p> </td>
    <td><p>Compatible</p> </td>
   </tr>
@@ -167,12 +157,11 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td>Compatible</td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2016 (Obsoleto)</p> </td>
    <td><p>Repositorio Microkernel</p> </td>
    <td><p>Compatible</p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2019</p> </td>
+   <td><p>Microsoft® SQL Server 2019 </p> </td>
    <td><p>Repositorio Microkernel</p> </td>
    <td><p>Compatible</p> </td>
   </tr>
@@ -182,10 +171,6 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td>R: Compatibilidad restringida</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 (Obsoleto) </td>
-   <td>-</td>
-   <td>R: Compatibilidad restringida</td>
-  </tr>
   <tr>
    <td>MySQL 8.0.27</td>
    <td>-</td>
@@ -197,13 +182,13 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
 - IBM® DB2® no es compatible con instalaciones nuevas. AEM Solo es compatible con los clientes existentes que actualizan a Forms de la versión 6.5 de.
 - MongoDB es software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte [Directiva de licencias de MongoDB](https://www.mongodb.org/about/licensing/).
 - AEM Para aprovechar al máximo su implementación, Adobe recomienda licenciar la versión de MongoDB Enterprise para beneficiarse del soporte profesional.
-- El Servicio de atención al cliente de Adobe ayudará a calificar los problemas relacionados con el uso de MongoDB con AEM. Para obtener más información, consulte la [Página MongoDB para Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- El Servicio de atención al cliente de Adobe AEM ayuda a calificar los problemas relacionados con el uso de MongoDB con el servicio de atención al cliente de. Para obtener más información, consulte la [Página MongoDB para Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - &quot;File System&quot; incluye almacenamiento en bloque compatible con POSIX. Esto incluye la tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. AEM Se recomienda cargar el archivo de prueba con el sistema de archivos de red/remoto.
 - Solo soporta el motor de almacenamiento MongoDB WiredTiger.
 - El uso compartido de MongoDB no es compatible con AEM.
 - AEM Forms en JEE no admite MySQL para persistencia RDBMK.
 - El módulo Seguridad de documentos no utiliza el Repositorio de contenido. Esto implica que, si solo utiliza la seguridad de los documentos y no planea utilizar el espacio de trabajo del HTML, los formularios del HTML5 o los formularios adaptables, no instale el repositorio de contenido.
-- AEM Forms en JEE no admite el uso de MySQL para mantener el repositorio de AEM (CRX-Repository).
+- AEM Forms AEM en JEE no es compatible con el uso de MySQL para mantener el repositorio de (CRX-Repository).
 
 ### Controladores de base de datos {#database-drivers}
 
@@ -218,16 +203,6 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td>MySQL</td>
    <td><p>Conector MySQL/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (versión 5.1.44)</p> </td>
    <td><p>Se suministra con AEM Forms en la instalación de JEE</p> </td>
-  </tr>
-  <tr>
-   <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Controlador JDBC del servidor Microsoft® SQL 6.2.1.0 (Obsoleto) <br /> </p> <p>sqljdbc6.jar</p> </td>
-   <td><p>Se suministra con AEM Forms en la instalación de JEE.</p> </td>
-  </tr>
-    <tr>
-   <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Controlador JDBC del servidor Microsoft® SQL 6.2.2.0 <br /> </p> <p>sqljdbc6.jar</p> </td>
-   <td><p>Se suministra con AEM Forms en la instalación de JEE.</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
@@ -252,7 +227,12 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td><p><strong>Definiciones de parches compatibles</strong></p> </td>
   </tr>
   <tr>
-   <td>Servidor Oracle WebLogic 12.2.1 (12c R2)</td>
+   <td>Servidor Oracle WebLogic 12.2.1 (12c R2) (Obsoleto)</td>
+   <td>A: Compatible</td>
+   <td>Service Pack y actualizaciones críticas</td>
+  </tr>
+  <tr>
+   <td>Oracle WebLogic Server 14c </td>
    <td>A: Compatible</td>
    <td>Service Pack y actualizaciones críticas</td>
   </tr>
@@ -260,11 +240,6 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td>Servidor de aplicaciones IBM® WebSphere® 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A: Compatible</td>
    <td>Service Pack y actualizaciones críticas</td>
-  </tr>
-  <tr>
-   <td><p>Plataforma de aplicaciones empresariales (EAP) JBoss® 7.1.4 <sup>[2] [3] [7]</sup> (Obsoleto) </p> </td>
-   <td><p>A: Compatible</p> </td>
-   <td><p>Parches y parches acumulativos para la versión EAP compatible</p> </td>
   </tr>
   <tr>
    <td><p>Plataforma de aplicaciones empresariales (EAP) JBoss® 7.4 <sup>[2] [3] [7]</sup> </p> </td>
@@ -290,17 +265,17 @@ Los clústeres IBM® WebSphere® solo son compatibles con las ediciones de imple
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
    <tr>
-   <td>Microsoft® Windows Server 2019 (64 bits)</td>
+   <td>Microsoft® Windows Server 2019 (64 bits)(Obsoleto)</td>
+   <td>A: Compatible</td>
+   <td>Service Packs y actualizaciones críticas</td>
+  </tr>
+     <tr>
+   <td>Microsoft® Windows Server 2022 (64 bits)</td>
    <td>A: Compatible</td>
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
   <tr>
    <td>Ubuntu 20.04</td>
-   <td>A: Compatible</td>
-   <td>Service Packs y actualizaciones críticas</td>
-  </tr>
-  <tr>
-   <td> Microsoft® Windows Server 2016 (64 bits) (Obsoleto)</td>
    <td>A: Compatible</td>
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
@@ -357,7 +332,7 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
 
 Tenga en cuenta las siguientes excepciones al elegir una plataforma para configurar AEM Forms en el servidor JEE.
 
-1. AEM Forms en JEE no es compatible con IBM® WebSphere® con MySQL.
+1. AEM Forms en JEE no admite IBM® WebSphere® con MySQL.
 1. AEM Forms en JEE no es compatible con JBoss® en SUSE® Linux® Enterprise Server 12. Solo IBM® WebSphere® es compatible con SUSE® Linux® Enterprise Server 12.
 1. AEM Forms en JEE no es compatible con ningún JDK con JBoss® excepto Oracle Java™ SE.
 1. AEM Forms en JEE no es compatible con ningún JDK con IBM® WebSphere® que no sea IBM® JDK.
@@ -386,7 +361,11 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
   <tr>
-   <td>Microsoft® Active Directory 2016</td>
+   <td>Microsoft® Active Directory 2016 (Obsoleto)</td>
+   <td>Versiones de mantenimiento y paquetes de correcciones</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Active Directory 2022</td>
    <td>Versiones de mantenimiento y paquetes de correcciones</td>
   </tr>
   <tr>
@@ -427,11 +406,6 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
    <td> Cliente de IBM® Content Manager (obsoleto)</td>
    <td>8.5 </td>
   </tr>
-  <tr>
-   <td>Microsoft® Sharepoint </td>
-   <td>2016 (Obsoleto)<br /> </td>
-  </tr>
-  <tr>
    <td>Microsoft® Sharepoint </td>
    <td>2019<br /> </td>
   </tr>
@@ -460,15 +434,7 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
    <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> versión más reciente (Obsoleto)</td>
-   <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, y DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (Obsoleto)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
   </tr>
   <tr>
@@ -476,29 +442,13 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (Obsoleto)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (Obsoleto)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (Obsoleto)<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (Obsoleto)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -506,18 +456,19 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 >
 El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
 >
-Además:
+Además,:
 >
-- El generador de PDF requiere una versión de 32 bits de [Acrobat 2020 Classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
+- PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) para realizar la conversión.
 - PDF Generator solo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
-- PDF Generator no es compatible con Microsoft® Office 365.
+- PDF Generator no admite Microsoft® Office 365.
 - Las conversiones del generador de PDF para OpenOffice solo son compatibles con Windows y Linux®.
 - Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
 - Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para usarlo con el generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([Local](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Servicios administrados](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
->
 - El servicio de PDF Generator no es compatible con Microsoft® Windows 10.
-- PDF Generator no puede convertir archivos con Microsoft® Visio 2019. Puede seguir utilizando Microsoft® Visio 2016 para convertir archivos .VSD y .VSDX.
+El PDF Generator no puede convertir archivos con Microsoft® Visio 2019. Puede seguir utilizando Microsoft® Visio 2016 para convertir archivos .VSD y .VSDX.
 - El PDF Generator no puede convertir archivos mediante Microsoft® Project 2019. Puede seguir utilizando Microsoft® Project 2016 para convertir archivos .MPP.
+- PDF Generator no puede convertir archivos con Microsoft® Visio 2019.
+- El PDF Generator no puede convertir archivos mediante Microsoft® Project 2019.
 >
 
 ### Excepciones a la compatibilidad con la accesibilidad {#exceptions-to-accessibility-support}
@@ -555,7 +506,7 @@ Los siguientes subsistemas de AEM Forms no son compatibles con [508](https://www
    <td>Requisitos de hardware para un entorno de producción pequeño</td>
    <td>
     <ul>
-     <li><strong>Entorno con tecnología Intel®</strong>: Intel Xeon® E5-2680, 2,4 GHz o bueno. El uso de un procesador de doble núcleo mejorará aún más el rendimiento</li>
+     <li><strong>Entorno con tecnología Intel®</strong>: Intel Xeon® E5-2680, 2,4 GHz o superior. El uso de un procesador de doble núcleo mejorará aún más el rendimiento</li>
      <li><strong>Memoria: </strong>4 GB <br /> </li>
     </ul> </td>
   </tr>
@@ -582,7 +533,11 @@ Para conocer los requisitos adicionales, consulte:
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
   <tr>
-   <td>Servidor Microsoft® Windows® 2016</td>
+   <td>Servidor Microsoft® Windows® 2019 (Obsoleto)</td>
+   <td>Service Packs y actualizaciones críticas</td>
+  </tr>
+  <tr>
+   <td>Servidor Microsoft® Windows® 2022</td>
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
  </tbody>
@@ -601,13 +556,14 @@ Para conocer los requisitos adicionales, consulte:
 - Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft® Windows® 10
 - Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
 - 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
-- 16 GB de espacio en disco para 32 bits o 20 GB de espacio en disco para el sistema operativo de 64 bits
+- 16 GB de espacio en disco para 32 bits o 20 GB de espacio en disco para SO de 64 bits;
 - Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB);
 - 2,35 GB de espacio disponible en disco duro;
 - 1024 X 768 píxeles de resolución de monitor o superior;
 - Aceleración de hardware de vídeo (opcional);
-- Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC;
-- Privilegios administrativos para instalar Designer.
+- Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
+- Privilegios administrativos para instalar Designer
+- Tiempo de ejecución de 32 bits de Microsoft® Visual C++ 2019 (VC 14.28 o superior)
 
 ### Adobe Acrobat y Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -620,10 +576,6 @@ Para conocer los requisitos adicionales, consulte:
   <tr>
    <td>Acrobat 2020 (Classic track)</td>
    <td>Versión 20.004.30006 o posterior<br /> </td>
-  </tr>
-  <tr>
-   <td>Acrobat 2017 (Classic track) (Obsoleto)</td>
-   <td>Versión 17.011.30078 o posterior<br /> </td>
   </tr>
 
 </tbody>
@@ -722,7 +674,7 @@ La aplicación de AEM Forms está disponible en las siguientes plataformas:
 | **Plataforma** | **Dispositivos compatibles** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS | Apple iPhone, iPad, iPad Air y iPad mini que ejecuten iOS 15.1 y versiones posteriores. |
-| Google Android™ | Android™ 5.1 y versiones posteriores. La aplicación de AEM Forms está certificada para tabletas Samsung Galaxy de 7 y 10 pulgadas y en teléfonos inteligentes populares. |
+| Google Android™ | Android™ 5.1 y versiones posteriores. La aplicación AEM Forms está certificada para tabletas Samsung Galaxy de 7 y 10 pulgadas y para teléfonos inteligentes populares. |
 | Microsoft® Windows | Dispositivos Microsoft® Surface, tabletas, portátiles y equipos de escritorio que ejecuten el sistema operativo Microsoft® Windows 10. |
 
 ### Extensión de Adobe Document Security para Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
@@ -751,13 +703,19 @@ Para obtener información adicional sobre parches de terceros, consulte los art�
 
 ## Actualizaciones de plataforma {#platform-updates}
 
-Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.13.0 de AEM Forms del 2 de junio de 2022:
+Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.18.0 de AEM Forms del 31 de agosto de 2023:
+
+- Microsoft® Windows Server 2019 (64 bits)
+- Microsoft® Active Directory 2016
+
+Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.18.0 de AEM Forms del 2 de junio de 2022:
 
 - Microsoft® SharePoint 2016
 
 Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.12.0 de AEM Forms del 3 de marzo de 2022:
 
 - MongoDB Enterprise 4.0
+- MongoDB Enterprise 4.2
 - IBM® DB2® 11.1
 - Base de datos de Oracle 12c Release 2
 - MySQL 5.7.35
@@ -770,16 +728,44 @@ Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.12
 Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10.0 de AEM Forms del 7 de septiembre de 2021:
 
 - Adobe Acrobat 2017: [La compatibilidad principal con Adobe Acrobat 2017 finaliza el 6 de junio de 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
-- Microsoft® Windows Server 2016 (64 bits)
 - Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits)
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
+<!--
 >[!NOTE]
 >
-Las plataformas marcadas como [obsoletas con AEM Forms 6.5.12.0 y 6.5.10.0 seguirán siendo compatibles hasta la versión de AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+>The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
+-->
 
 ## Historial de revisiones {#revision-history}
+
+- 31 de agosto de 2023
+   - **Actualizaciones de plataforma**: [!DNL Adobe Experience Manager Forms] en JEE se ha agregado compatibilidad con las siguientes plataformas:
+      - MongoDB Enterprise 4.4
+      - Oracle WebLogic Server 14c
+      - Conector JDBC de My SQL 8
+      - Active Directory 2022
+      - Microsoft® Windows Server 2022 (64 bits)
+
+   - **Actualizaciones de plataforma**: [!DNL Adobe Experience Manager Forms] en JEE ha eliminado la compatibilidad con las siguientes plataformas:
+      - Windows Server 2016 (64 bits)
+      - MongoDB Enterprise 4.0
+      - Base de datos de oracle 12c Release 2 (12.2.0.1.0)
+      - MySQL 5.7.35
+      - Microsoft® SQL Server 2016
+      - JBoss® EAP 7.1.4
+      - Conector JDBC de My SQL 5.1.44
+      - Controlador JDBC del servidor Microsoft® SQL 6.2.1.0
+      - Controlador JDBC del servidor Microsoft® SQL 6.2.2.0
+      - Controlador JDBC 8.x de Microsoft® para SQL Server
+      - Microsoft® Sharepoint 2016
+      - Microsoft® Office 2016
+      - Microsoft® Office Visio 2016
+      - Microsoft® Publisher 2016
+      - Microsoft® Project 2016
+      - OpenOffice 4.1.2
+      - Acrobat 2017 (Classic track) versión 17.011.30078 o posterior
 
 - 01 de septiembre de 2022
 
@@ -805,13 +791,13 @@ Las plataformas marcadas como [obsoletas con AEM Forms 6.5.12.0 y 6.5.10.0 segui
       - [!DNL Adobe Acrobat 2020]
       - [!DNL Ubuntu 20.04]
       - [!DNL Open Office 4.1.10]
-      - [!DNL Microsoft® Office 2019]
-      - [!DNL Microsoft® Windows Server 2019]
+      - [!DNL Microsoft®® Office 2016]
+      - [!DNL Microsoft®® Windows Server 2016]
       - [!DNL RHEL8]
 
 - 3 de diciembre de 2020
    - Se agregó compatibilidad con AEM Forms 6.5.7.0 o posterior para la siguiente plataforma:
-      - [!DNL Microsoft® SQL Server 2019]
+      - [!DNL Microsoft®® SQL Server 2019]
 
 - 9 de septiembre de 2020
 
