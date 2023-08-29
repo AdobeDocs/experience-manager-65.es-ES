@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 0985e591df83c7f1604bac37af771e8a7a21e691
+source-git-commit: 34be3b4695679a9b5e8001d28f05ed804f929e61
 workflow-type: tm+mt
-source-wordcount: '6983'
+source-wordcount: '6921'
 ht-degree: 94%
 
 ---
@@ -30,15 +30,16 @@ ht-degree: 94%
 
 La característica del editor de reglas en Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre los objetos del formulario adaptable. Estas reglas definen las acciones que se deben activar en los objetos del formulario en función de los ajustes preestablecidos, las entradas del usuario y las acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, lo que garantiza precisión y velocidad.
 
-El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas ofrece un editor visual para todos los usuarios. Además, solo para los usuarios avanzados de formularios, el editor de reglas proporciona un editor de código para escribir reglas y scripts. Algunas de las acciones clave que se pueden realizar en objetos de formulario adaptable mediante reglas son las siguientes:
+El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas ofrece un editor visual para todos los usuarios. Además, solo para los usuarios avanzados de formularios, el editor de reglas proporciona un editor de código para escribir reglas y scripts.
+<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
 
-* Mostrar u ocultar un objeto
-* Habilitar o deshabilitar un objeto
-* Establecer un valor para un objeto
-* Validar el valor de un objeto
-* Ejecutar funciones para calcular el valor de un objeto
-* Invocar un servicio del modelo de datos de formulario y realizar una operación
-* Establecer la propiedad de un objeto
+* Show or hide an object
+* Enable or disable an object
+* Set a value for an object
+* Validate the value of an object
+* Execute functions to compute the value of an object
+* Invoke a form data model service and perform an operation
+* Set property of an object -->
 
 El editor de reglas reemplaza las funciones de los scripts de AEM 6.1 Forms y versiones anteriores. Sin embargo, los scripts existentes se conservan en el nuevo editor de reglas. Para obtener más información sobre cómo trabajar con scripts existentes en el editor de reglas, consulte [Impacto del editor de reglas en scripts existentes](#impact-of-rule-editor-on-existing-scripts).
 
