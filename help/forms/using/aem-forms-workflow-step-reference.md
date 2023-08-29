@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
 workflow-type: tm+mt
-source-wordcount: '7589'
-ht-degree: 97%
+source-wordcount: '7690'
+ht-degree: 91%
 
 ---
 
@@ -16,20 +16,20 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](/help/sites-developing/workflows-models.md#extending-aem).
 
 ## Pasos de Forms Workflow {#forms-workflow-steps}
 
-Los pasos de AEM Forms Workflow realizan operaciones específicas en un flujo de trabajo de AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede utilizar Forms Workflow para iniciar servicios de documentos, integrar con el flujo de trabajo de la firma de Adobe Sign y realizar otras operaciones de AEM Forms. Necesita el [complemento de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para utilizar estos pasos en un flujo de trabajo.
+Los pasos del Forms Workflow realizan operaciones específicas de AEM Forms AEM en un flujo de trabajo de. Estos pasos le permiten crear rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede utilizar Forms Workflow para iniciar servicios de documentos, integrar con el flujo de trabajo de la firma de Adobe Sign y realizar otras operaciones de AEM Forms. Necesita el [complemento de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para utilizar estos pasos en un flujo de trabajo.
 
 Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones específicas en un flujo de trabajo AEM. Estos pasos le permiten generar rápidamente un flujo de trabajo adaptable basado en Forms y centrado en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall.
 
 >[!NOTE]
 >
->Si el modelo de flujo de trabajo está marcado para un almacenamiento externo, para todos los pasos del flujo de trabajo de Forms, puede seleccionar solo la opción de variable para almacenar o recuperar archivos de datos y archivos adjuntos.
+>Si el modelo de flujo de trabajo está marcado para un almacenamiento externo, para todos los pasos del Forms Workflow, puede seleccionar solo la opción de variable para almacenar o recuperar archivos de datos y archivos adjuntos.
 
 ## Paso de tarea de asignación {#assign-task-step}
 
@@ -58,7 +58,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 >[!NOTE]
 >
->Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de agente de comunicaciones interactivas en la bandeja de entrada de AEM.
+>AEM Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de agente de comunicaciones interactivas en la bandeja de entrada de la.
 
 * **Formulario adaptable o ruta de comunicación interactiva:** especifica la ruta del formulario adaptable o la comunicación interactiva. Puede utilizar el formulario adaptable o la comunicación interactiva que se envía al flujo de trabajo, que está disponible en una ruta absoluta, o recuperar el formulario adaptable de una ruta almacenada en una variable de tipo de datos de cadena.
 * **Seleccionar el PDF de entrada mediante:** especifica la ruta de un documento de PDF no interactivo. El campo está disponible cuando se elige un documento PDF no interactivo en el campo Tipo. Puede seleccionar el PDF de entrada utilizando la ruta relativa a la carga útil, guardada en una ruta de acceso absoluta o utilizando una variable de tipo Doc. Por ejemplo, [Payload_Directory]/Workflow/PDF/credit-card.pdf. La ruta no existe en el repositorio CRX. Un administrador crea la ruta antes de utilizarla. Se necesita habilitar una opción de documento de registro o formulario adaptable basado en plantillas de formulario para usar la opción Ruta del PDF.
@@ -268,7 +268,7 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los sigu
 * **Seleccionar el documento JSON de entrada mediante:** el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta del archivo JSON puede ser **relativa a la carga útil** o una **ruta de acceso absoluta.** También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario.
 
 * **Notación de puntos JSON:** deja el campo en blanco para utilizar todos los objetos del archivo JSON especificado como entrada para argumentos de servicio. Para leer un objeto JSON específico del archivo JSON especificado como entrada para los argumentos del servicio, especifique la notación de puntos para el objeto JSON. Por ejemplo, si tiene un archivo JSON similar al listado al principio de la sección, especifique insurance.customerDetails para proporcionar todos los detalles de un cliente como entrada al servicio.
-* **Resultados del servicio > Asignación y escritura de valores de salida en variables o metadatos:** selecciona la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia del flujo de trabajo en el repositorio CRX. Especifique el nombre de la propiedad de metadatos y seleccione el atributo de salida del servicio correspondiente que se va a asignar con la propiedad de metadatos. Por ejemplo, asigne el número de teléfono devuelto por el servicio de salida con la propiedad phone_number (número de teléfono) de los metadatos del flujo de trabajo. Del mismo modo, puede almacenar el resultado en una variable de tipo de datos Long. Al seleccionar una propiedad para la opción **[!UICONTROL Atributo de salida del servicio a asignar]**, solo se rellenarán las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar la salida en]** .
+* **Resultados del servicio > Asignación y escritura de valores de salida en variables o metadatos:** selecciona la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia del flujo de trabajo en el repositorio CRX. Especifique el nombre de la propiedad de metadatos y seleccione el atributo de salida del servicio correspondiente que se va a asignar con la propiedad de metadatos. Por ejemplo, asigne el número de teléfono devuelto por el servicio de salida con la propiedad phone_number (número de teléfono) de los metadatos del flujo de trabajo. Del mismo modo, se puede almacenar la salida en una variable de tipo de datos de registro. Al seleccionar una propiedad para la opción **[!UICONTROL Atributo de salida del servicio que se va a asignar]**, solo se rellenan las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar salida en]**.
 
 * **Resultados del servicio > Guardar resultados en una variable o un archivo JSON:** selecciona la opción para guardar los valores de salida en un archivo JSON en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
 * **Guardar documento JSON de salida con las siguientes opciones:** guarda el archivo JSON de salida. La ruta del archivo JSON de salida puede ser relativa a la carga útil o a una ruta de acceso absoluta. También puede guardar el archivo JSON de salida con una variable de tipo de datos JSON o un modelo de datos de formulario.
@@ -277,7 +277,7 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los sigu
 
 El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. El paso Firmar documento tiene las siguientes propiedades:
 
-* **Nombre del contrato:** especifica el título del contrato. El nombre del acuerdo forma parte del asunto y del texto del cuerpo del correo electrónico enviado a los firmantes. Puede almacenar el nombre en una variable de tipo de datos de cadena o seleccionar **Literal** para agregar el nombre manualmente.
+* **Nombre del contrato:** especifica el título del contrato. El nombre del acuerdo forma parte del asunto y del texto del cuerpo del correo electrónico enviado a los destinatarios. Puede almacenar el nombre en una variable de tipo de datos de cadena o seleccionar **Literal** para agregar el nombre manualmente.
 
 * **Configuración regional:** especifica el idioma para las opciones de correo electrónico y de verificación. Puede almacenar la configuración regional en una variable de tipo de datos de cadena o seleccionar **Literal** para elegir la configuración regional de la lista de opciones disponibles. Debe definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
 
@@ -293,20 +293,32 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 
 * **Días hasta la fecha límite:** un documento se marca como vencido (fecha límite superada) después de que no haya actividad en la tarea durante el número de días especificado en el campo **Días hasta la fecha límite**. El número de días se cuenta después de que el documento se asigne a un usuario para su firma.
 * **Frecuencia del correo electrónico de recordatorio:** puede enviar un correo electrónico de recordatorio a intervalos diarios o semanales. La semana se cuenta desde el día en que se asigna el documento a un usuario para su firma.
-* **Proceso de firma:** puede optar por firmar un documento en orden secuencial o paralelo. En orden secuencial, un solo firmante a la vez recibe el documento para su firma. Una vez que el primer firmante completa la firma del documento, el documento se envía al segundo firmante, y así sucesivamente. En orden paralelo, varios firmantes pueden firmar un documento a la vez.
+* **Proceso de firma:** puede optar por firmar un documento en orden secuencial o paralelo. En orden secuencial, un solo destinatario recibe el documento a la vez para su firma. Una vez que el primer destinatario completa la firma del documento, este se envía al segundo destinatario, y así sucesivamente. En orden paralelo, varios destinatarios pueden firmar un documento a la vez.
 * **URL de redireccionamiento:** especifica una URL de redireccionamiento. Una vez firmado el documento, puede redirigir al usuario asignado a una dirección URL. Normalmente, esta URL contiene un mensaje de agradecimiento o instrucciones adicionales.
 * **Fase del flujo de trabajo:** un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM. Puede definir estas fases en las propiedades del modelo (Barra de tareas > Página > Propiedades de la página > Fases).
-* **Seleccionar firmantes:** especifica el método para elegir firmantes para el documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un firmante.
-* **Script o servicio para seleccionar firmantes:** la opción solo estará disponible si la opción Dinámicamente está seleccionada en el campo Seleccionar firmantes. Puede especificar un ECMAScript o un servicio para elegir los firmantes y las opciones de verificación de un documento.
-* **Detalles del firmante:** la opción solo estará disponible si la opción Manualmente está seleccionada en el campo Seleccionar firmantes. Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para la cuenta configurada de Adobe Sign. Puede utilizar una variable del tipo de datos de cadena para los campos **[!UICONTROL Correo electrónico]**, **[!UICONTROL Código de país]** y **[!UICONTROL Número de teléfono]**. Los campos **[!UICONTROL Código de país]** y **[!UICONTROL Número de teléfono]** solo se mostrarán si selecciona **[!UICONTROL Verificación por teléfono]** de la lista desplegable **[!UICONTROL verificación en dos pasos]**.
+* **Seleccionar destinatarios:** Especifique el método para elegir el destinatario del documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un destinatario. Al seleccionar Manualmente en el menú desplegable, se agregan detalles del destinatario como Correo electrónico, Función y Método de autenticación.
+
+  >[!NOTE]
+  >
+  >* En la sección Función, puede especificar la función de destinatario como Firmante, Aprobador, Aceptante, Destinatario certificado, Rellenador de formulario y Delegador.
+  >* Si selecciona Delegador en la opción Función, el Delegado puede asignar la tarea de firma a otros destinatarios.
+  >* Si ha configurado un método de autenticación para [!DNL Adobe Sign], en función de su configuración, seleccionará un método de autenticación, como autenticación basada en el teléfono, autenticación basada en la identidad social, autenticación basada en el conocimiento o autenticación basada en la identidad oficial.
+* **Script o servicio para seleccionar destinatarios:** La opción solo estará disponible si selecciona la opción Dinámicamente en el campo Seleccionar destinatarios. Puede especificar un ECMAScript o un servicio para elegir destinatarios y opciones de verificación para un documento.
+* **Detalles del destinatario:** La opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar destinatarios. Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para la cuenta configurada de Adobe Sign. Puede utilizar una variable del tipo de datos de cadena para los campos **[!UICONTROL Correo electrónico]**, **[!UICONTROL Código de país]** y **[!UICONTROL Número de teléfono]**. Los campos **[!UICONTROL Código de país]** y **[!UICONTROL Número de teléfono]** solo se mostrarán si selecciona **[!UICONTROL Verificación por teléfono]** de la lista desplegable **[!UICONTROL verificación en dos pasos]**.
 * **Variable de estado:** un documento habilitado para Adobe Sign almacena el estado de la firma del documento en una variable de tipo de datos en cadena. Especifique el nombre de la variable de estado (adobeSignStatus). Una variable de estado de una instancia está disponible en CRXDE en /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData contiene el estado de una variable.
-* **Guardar documento firmado con las siguientes opciones:** especifica la ubicación para conservar los documentos firmados. Puede elegir entre sobrescribir el archivo de carga útil, colocar el documento firmado en una ubicación dentro del directorio de carga útil o almacenar el documento firmado en una variable de tipo Documento.
+* **[!UICONTROL Documento firmado]**: Puede guardar el estado del documento firmado en Variable. Para añadir una pista de auditoría de firma electrónica para una mayor seguridad y legalidad al documento firmado, puede Incluir informe de auditoría. Puede guardar el documento firmado mediante variable o carpeta de carga útil.
+  >[!NOTE]
+  >
+  > El informe de auditoría se anexa a la última página del documento firmado.
+<!--
+* **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
+-->
 
 ## Pasos de Servicios de documentos {#document-services-steps}
 
 Los Servicios de documentos de AEM son un conjunto de servicios para crear, combinar y asegurar documentos PDF. AEM Forms proporciona un paso de AEM Workflow independiente para cada servicio de documentos.
 
-Al igual que otros pasos del flujo de trabajo de AEM Forms, como Asignar tarea, Enviar correo electrónico y Firmar documento, puede utilizar variables en todos los pasos de los Servicios de documentos de AEM. Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](../../forms/using/variable-in-aem-workflows.md).
+Al igual que otros pasos del flujo de trabajo de AEM Forms AEM, como Asignar tarea, Enviar correo electrónico y Firmar documento, puede utilizar variables en todos los pasos de los servicios de documentos de. Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](../../forms/using/variable-in-aem-workflows.md).
 
 ### Paso Aplicar marca de fecha y hora a un documento {#apply-document-time-stamp-step}
 
@@ -408,7 +420,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Seleccionar el archivo de plantilla mediante:]** especifica la ruta del archivo de la plantilla. Puede seleccionar la plantilla mediante la ruta relativa a la carga útil, guardada en una ruta absoluta o mediante una variable de tipo de datos Doc. Por ejemplo, [Payload_Directory]/Workflow/data.xml. Si la ruta no existe en el repositorio crx, un administrador puede crear la ruta antes de utilizarla. Además, también puede aceptar la carga útil como archivo de datos de entrada.
 
-* **[!UICONTROL Seleccionar documento de datos mediante]**: especifica la ruta de un archivo de datos de entrada. Puede seleccionar los datos de entrada mediante la ruta relativa a la carga útil, guardada en una ruta absoluta o mediante una variable de tipo de datos Doc. Por ejemplo, [Payload_Directory]/Workflow/data.xml. Si la ruta no existe en el repositorio crx, un administrador puede crear la ruta antes de utilizarla.
+* **[!UICONTROL Seleccionar documento de datos mediante]**: especificar la ruta de un archivo de datos de entrada. Puede seleccionar los datos de entrada mediante la ruta relativa a la carga útil, guardada en una ruta absoluta o mediante una variable de tipo de datos Doc. Por ejemplo, [Payload_Directory]/Workflow/data.xml. Si la ruta no existe en el repositorio crx, un administrador puede crear la ruta antes de utilizarla.
 
 * **[!UICONTROL Formato de impresora]**: valor del formato de impresión que especifica el idioma de descripción de la página que se utilizará, cuando no se proporcione un archivo XDC, para generar el flujo de salida. Si proporciona un valor literal, seleccione uno de estos valores:
 
@@ -449,7 +461,7 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 
 * **[!UICONTROL Copias]**: valor entero que especifica el número de copias que se generarán para la salida. El valor predeterminado es 1.
 
-* **[!UICONTROL Impresión a doble cara]**: valor de Paginación que especifica si se utiliza la impresión a doble o a una sola cara. Las impresoras compatibles con PostScript y PCL utilizan este valor. Si proporciona un valor literal, seleccione uno de los siguientes valores:
+* **[!UICONTROL Impresión a doble cara]**: valor de Paginación que especifica si se utiliza la impresión a doble o a una sola cara. Las impresoras compatibles con PostScript y PCL utilizan este valor. Si proporciona un valor literal, seleccione uno de estos valores:
    * **[!UICONTROL Borde largo a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde largo.
    * **[!UICONTROL Borde corto a doble cara]**: utiliza la impresión a doble cara y la impresión mediante paginación de borde corto.
    * **[!UICONTROL Simple]**: utiliza la impresión a una sola cara.
