@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
+source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
 workflow-type: tm+mt
-source-wordcount: '11363'
+source-wordcount: '11313'
 ht-degree: 2%
 
 ---
@@ -702,11 +702,7 @@ En el caso de que haya configurado Dynamic Media para la publicación inmediata,
 
 #### Añada varios subtítulos a un vídeo que tenga una URL existente con el modificador caption
 
-Dynamic Media admite la adición de un solo pie de ilustración con vídeo mediante un modificador de URL (consulte [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
-
-<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
-
-Consulte [Proporcionar contenido estático (que no sea de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) en el *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre el uso de la función JSON en una dirección URL.
+Dynamic Media admite la adición de un solo pie de ilustración con vídeo mediante un modificador de URL. Consulte [Agregar subtítulos a vídeo](#adding-captions-to-video).
 
 Los cambios de varios subtítulos tienen prioridad sobre los subtítulos añadidos mediante un modificador URL para los vídeos publicados.
 
@@ -731,7 +727,7 @@ Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pi
 | Estado de subtítulo o pista de audio | Descripción |
 | --- | --- |
 | Procesamiento | Cuando se agrega y guarda un nuevo subtítulo o archivo de pista de audio, pasa al estado &quot;Procesando&quot;. Dynamic Media procesa el archivo adjuntando el manifiesto de flujo continuo al vídeo principal. |
-| Procesado | Una vez completado el procesamiento, el subtítulo o el archivo de pista de audio aparece en estado &quot;Procesado&quot;. Puede previsualizar los archivos de subtítulos y pistas de audio que aparecen como &quot;Procesados&quot; *antes* el vídeo se publica en directo. |
+| Procesado | Una vez completado el procesamiento, el subtítulo o el archivo de pista de audio, o la pista de audio original asociada con el vídeo principal, aparece en estado &quot;Procesado&quot;. Puede previsualizar los archivos de subtítulos y pistas de audio que aparecen como &quot;Procesados&quot; *antes* el vídeo se publica en directo. |
 | Publicado | El estado &quot;Publicado&quot; representa un estado similar al estado &quot;Publicado&quot; de un vídeo principal. Los recursos se publican cuando se publica el vídeo principal y están disponibles en la URL pública de Dynamic Media. |
 | Error | El estado &quot;failed&quot; significa que no se ha completado el procesamiento de un subtítulo o archivo de pista de audio. Elimine el subtítulo o el archivo de pista de audio y vuelva a cargarlo. |
 | Una página sin publicar   | Cuando se cancela la publicación explícita de un vídeo principal publicado, también se cancela la publicación de cualquier subtítulo o archivo de pista de audio que haya agregado al vídeo. |
@@ -857,7 +853,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 
 >[!IMPORTANT]
 >
-Este tema ya no se mantiene de forma activa. Se proporciona tal cual para los usuarios heredados de Dynamic Media. El Adobe recomienda que [habilitar la capacidad de pistas de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
+El Adobe recomienda que [habilitar la capacidad de pistas de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
 
 Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte del audio.
 
