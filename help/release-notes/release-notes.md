@@ -2,10 +2,10 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
+source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
 workflow-type: tm+mt
-source-wordcount: '4460'
-ht-degree: 2%
+source-wordcount: '4552'
+ht-degree: 3%
 
 ---
 
@@ -450,6 +450,8 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 #### Instalación
 
 * En la plataforma JBoss® 7.1.4, cuando el usuario instala el Service Pack de Experience Manager 6.5.16.0 o posterior, `adobe-livecycle-jboss.ear` la implementación falla. (CQ-4351522, CQDOC-20159)
+* AEM Después de instalar el programa de instalación completo del paquete de servicio 6.5.18.0 de, la implementación de EAR falla en JEE mediante JBoss Turnkey (CQDOC-20803).
+Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` archivar y actualizar `Adobe_Adobe_JAVA_HOME` hasta `Adobe_JAVA_HOME` para todas las ocurrencias antes de ejecutar el administrador de configuración.
 
 #### Formularios adaptables
 
@@ -459,7 +461,12 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
 #### Comunicaciones interactivas
 
-* AEM Después de actualizar al paquete de servicio 18 de, no es posible editar las cartas de comunicación interactivas. (FORMS-10578)
+* AEM Después de actualizar al paquete de servicio 18 de, no es posible editar las cartas de comunicación interactivas. (FORMS-10578) Para resolver el problema, realice los siguientes pasos:
+
+   1. Descargar [Revisión-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) desde el vínculo SD.
+   1. Extraiga el archivo de revisión para obtener un paquete de Experience Manager (.zip) y archivos de paquete (.jar).
+   1. Cargue e instale el paquete (.zip) mediante el Administrador de paquetes.
+   1. Abra los paquetes del administrador de configuración `https://server:host/system/console/bundles`, cargue e instale el paquete (.jar).
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
