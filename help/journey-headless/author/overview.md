@@ -2,10 +2,10 @@
 title: Recorrido del autor de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles sin encabezado de AEM, sus funcionalidades, y cómo diseñar el contenido en su primer proyecto de contenido sin encabezado.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 86%
+source-wordcount: '865'
+ht-degree: 85%
 
 ---
 
@@ -82,4 +82,6 @@ Ya que estos recorridos están diseñados para mantenerse por su cuenta. Sin emb
 * [Recorrido para desarrolladores de contenido sin encabezado de AEM](/help/journey-headless/developer/overview.md): empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones headless de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 * [Recorrido de arquitectos Headless](/help/journey-headless/architect/overview.md) : Empiece aquí para ver una introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y cómo diseñar contenido para su proyecto.
 * [Documentación técnica de AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es): si ya tiene una comprensión firme de las tecnologías AEM y headless, puede que desee consultar directamente nuestros documentos técnicos detallados.
+   * Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * [Tutoriales Headless de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): si prefiere aprender con la práctica y tiene interés por la tecnología, siga nuestros tutoriales prácticos organizados por API y el marco de trabajo, que exploran la creación y el uso de aplicaciones creadas en AEM Headless.
+* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

@@ -2,10 +2,10 @@
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
 description: AEM En esta parte del Recorrido para desarrolladores sin encabezado de, aprenda a implementar una aplicación sin encabezado en directo.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1846'
-ht-degree: 50%
+source-wordcount: '1873'
+ht-degree: 51%
 
 ---
 
@@ -88,7 +88,7 @@ Para ello, debe reunir todo: código, contenido y configuración, y probarlo en 
 
 El entorno de desarrollo local se compone de tres áreas principales:
 
-1. AEM AEM El proyecto de: contiene todo el código personalizado, la configuración y el contenido en el que van a trabajar los desarrolladores de la aplicación de la aplicación de la aplicación de código de la aplicación de la aplicación de código de la aplicación de la aplicación de usuario ().
+1. AEM AEM El proyecto de: contiene todo el código personalizado, la configuración y el contenido en el que van a trabajar los desarrolladores de la aplicación de la aplicación de la aplicación de código de la plataforma de datos de la plataforma de datos de.
 1. El tiempo de ejecución local de AEM: versiones locales de los servicios de publicación y autor de AEM que se utilizan para implementar código del proyecto de AEM.
 1. Tiempo de ejecución de Dispatcher local: una versión local del HTTPD del servidor web Apache que incluye el módulo de Dispatcher.
 
@@ -137,7 +137,7 @@ AEM Ahora es el momento de preparar su aplicación sin encabezado para el lanzam
 
 ## Implementación de la producción {#deploy-to-production}
 
-La implementación en producción puede depender de si tiene un *tradicional* AEM Instancia de que se implementa mediante Maven o que se encuentra en Adobe Managed Services (AMS) y, por lo tanto, utiliza Cloud Manager.
+La implementación en producción puede depender de si tiene un *tradicional* AEM Instancia de que se implementa mediante Maven o que se encuentran en Adobe Managed Services (AMS) y, por lo tanto, utilizan Cloud Manager.
 
 ## Implementación en producción mediante Maven {#deploy-to-production-maven}
 
@@ -225,3 +225,7 @@ Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe co
    * [Control de una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
    * Configuración de la [Reescritura CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*buscar reescritura de CDN*)
+
+* [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

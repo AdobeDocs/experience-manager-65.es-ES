@@ -2,10 +2,10 @@
 title: Recorrido de arquitectos de contenido de Adobe Experience Manager Headless
 description: Introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y a cómo diseñar contenido para su proyecto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 88%
+source-wordcount: '731'
+ht-degree: 86%
 
 ---
 
@@ -81,3 +81,6 @@ Ahora que ha aprendido los conceptos y la terminología, el siguiente paso consi
 * Recorrido para desarrolladores de AEM sin encabezado
    * [Obtenga más información acerca del desarrollo de CMS sin encabezado](/help/journey-headless/developer/learn-about.md)
    * [Aprenda cómo modelar el contenido](/help/journey-headless/developer/model-your-content.md)
+* [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

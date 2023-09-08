@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1594'
-ht-degree: 93%
+source-wordcount: '1612'
+ht-degree: 92%
 
 ---
 
@@ -126,4 +126,6 @@ Aproveche este conocimiento y continúe su recorrido de contenido sin encabezado
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [AEM Introducción a la tecnología sin encabezado de](getting-started.md)Sin embargo, los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar con el recorrido sin encabezado.
 
+* Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.

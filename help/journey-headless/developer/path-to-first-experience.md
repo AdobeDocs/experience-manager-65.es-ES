@@ -2,10 +2,10 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 99%
+source-wordcount: '1992'
+ht-degree: 98%
 
 ---
 
@@ -151,3 +151,4 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [Crear modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md): documentación técnica sobre los modelos de fragmentos de contenido.
 * [Crear fragmentos de contenido](/help/assets/content-fragments/content-fragments.md): documentación técnica sobre fragmentos de contenido.
 * [Consulta de contenido con GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentación técnica sobre la API de GraphQL.
+* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

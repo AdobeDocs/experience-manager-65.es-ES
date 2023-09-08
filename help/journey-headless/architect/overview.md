@@ -2,10 +2,10 @@
 title: Recorrido para arquitectos de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles del contenido de AEM sin encabezado, sus funcionalidades y cómo diseñar el contenido en su primer proyecto sin encabezado.
 exl-id: 44c58ece-225e-4361-929c-faa110fe2842
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 97%
+source-wordcount: '802'
+ht-degree: 96%
 
 ---
 
@@ -68,4 +68,6 @@ Ya que estos recorridos están diseñados para mantenerse por su cuenta. Sin emb
 * [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md). Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin encabezado.
 * [Recorrido para desarrolladores de contenido sin encabezado de AEM](/help/journey-headless/developer/overview.md): empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones headless de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 * [Documentación técnica de AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es): si ya tiene una comprensión firme de las tecnologías AEM y headless, puede que desee consultar directamente nuestros documentos técnicos detallados.
+   * [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * [Tutoriales Headless de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): si prefiere aprender con la práctica y tiene interés por la tecnología, siga nuestros tutoriales prácticos organizados por API y el marco de trabajo, que exploran la creación y el uso de aplicaciones creadas en AEM Headless.
+* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

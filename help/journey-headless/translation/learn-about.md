@@ -2,10 +2,10 @@
 title: Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM
 description: Aprenda conceptos sin encabezado, cómo se asignan a AEM y la teoría de la traducción de AEM.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 97%
 
 ---
 
@@ -78,3 +78,6 @@ Aproveche este conocimiento y continúe con su recorrido de traducción de AEM s
 Si bien se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado mediante la revisión del documento [Introducción a la traducción sin encabezado de AEM,](getting-started.md) los siguientes son algunos adicionales, recursos opcionales que hacen una inmersión más profunda en algunos conceptos mencionados en este documento, pero no están obligados a continuar en el recorrido sin encabezado.
 
 * [MSM y traducción](/help/sites-administering/msm-and-translation.md): los detalles de Multi-Site Manager de AEM y cómo funciona con sus herramientas de traducción
+* Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

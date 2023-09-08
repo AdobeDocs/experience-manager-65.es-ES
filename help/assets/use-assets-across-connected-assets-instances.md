@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 
@@ -92,7 +92,7 @@ Para configurar los recursos de red y locales [!DNL Sites] conectividad, siga es
 1. Acceder a un existente [!DNL Sites] o cree una implementación con el siguiente comando:
 
    1. En la carpeta del archivo JAR, ejecute el siguiente comando en un terminal para crear cada [!DNL Experience Manager] servidor.
-      `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+      `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. Después de unos minutos, el [!DNL Experience Manager] el servidor se inicia correctamente. Considere esto [!DNL Sites] implementación como equipo local para la creación de páginas web, por ejemplo, en `https://[local_sites]:4502`.
 

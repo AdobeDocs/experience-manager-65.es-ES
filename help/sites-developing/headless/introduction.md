@@ -2,10 +2,10 @@
 title: AEM Desarrollo sin encabezado para sitios de 6.5
 description: AEM Descubra cómo las potentes funciones sin encabezado de la versión 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, trabajan juntas para permitirle administrar sus experiencias de forma centralizada y atenderlas en todos los canales.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 36%
+source-wordcount: '520'
+ht-degree: 35%
 
 ---
 
@@ -55,3 +55,4 @@ AEM Hay una serie de recursos disponibles para que sus clientes empiecen a utili
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | **AEM Para usuarios nuevos en el mundo de la comunicación y sin encabezado** AEM tecnologías, empiece aquí para obtener una introducción completa a las características sin encabezado de la aplicación, desde la teoría de tecnologías sin encabezado hasta publicar su primer proyecto sin encabezado. | Guía  | Desarrolladores **nuevos en las tecnologías de AEM y sin encabezado** | 1 hora |
 | [Guía de introducción de Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuarios de AEM con experiencia** que necesiten un breve resumen de las funciones principales de AEM sin encabezado, se recomienda consultar esta descripción general de inicio rápido. | Inicio rápido | Desarrolladores, administradores **con experiencia en AEM** | 20 minutos |
 | [AEM Introducción al tutorial práctico sobre el uso de sin encabezado de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es) | **AEM Si prefiere un enfoque práctico y está familiarizado con la técnica de la** Sin embargo, este tutorial se adentra directamente en la creación de un proyecto simple sin encabezado. | Tutorial | Desarrolladores | 2 horas |
+| [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es) | Esta colección de recursos se proporciona para **nuevo** y **experimentado** desarrolladores. | Colección de recursos | Desarrolladores | |

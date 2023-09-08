@@ -2,10 +2,10 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 93%
+source-wordcount: '1495'
+ht-degree: 92%
 
 ---
 
@@ -190,3 +190,6 @@ Si bien se recomienda pasar a la siguiente parte del recorrido de traducción si
 * [Identificación del contenido para traducir](/help/sites-administering/tc-rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.
 * [Configuración del marco de integración de traducciones](/help/sites-administering/tc-tic.md): aprenda a configurar el marco de integración de traducciones para integrarlo con servicios de traducción de terceros.
 * [Administración de proyectos de traducción](/help/sites-administering/tc-manage.md): aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
+* Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

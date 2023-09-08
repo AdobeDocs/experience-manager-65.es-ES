@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
+source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
 workflow-type: tm+mt
-source-wordcount: '11313'
+source-wordcount: '11310'
 ht-degree: 2%
 
 ---
@@ -605,7 +605,6 @@ Algunos de los casos de uso que se deben tener en cuenta para agregar pistas de 
 | **Subtítulos** | Compatibilidad con varios idiomas |
 |  | Texto descriptivo para accesibilidad |
 | **Pistas de audio** | Compatibilidad con varios idiomas |
-|  | Estéreo frente a multicanal (sonido envolvente) |
 |  | Pistas de comentarios |
 |  | Audio descriptivo |
 
@@ -698,7 +697,7 @@ En el caso de que haya configurado Dynamic Media para la publicación inmediata,
 
 >[!CAUTION]
 >
->Al cargar archivos de subtítulos o archivos de audio en un vídeo que ya se ha publicado, estos archivos se eliminan si [*reprocesar*](/help/assets/processing-profiles.md#reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de subtítulos y los archivos de pista de audio en el vídeo.
+>Al cargar archivos de subtítulos o archivos de audio en un vídeo que se ha publicado o cancelado la publicación, los archivos se eliminan si [*reprocesar*](/help/assets/processing-profiles.md#reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de subtítulos y los archivos de pista de audio en el vídeo.
 
 #### Añada varios subtítulos a un vídeo que tenga una URL existente con el modificador caption
 
