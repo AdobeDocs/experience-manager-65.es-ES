@@ -12,7 +12,7 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
 workflow-type: tm+mt
 source-wordcount: '3454'
 ht-degree: 2%
@@ -228,7 +228,7 @@ Una vez creado el tipo de recurso, puede crear una instancia del campo añadiend
 
 Si desea definir el estilo y el comportamiento del componente, puede crear un [biblioteca de cliente](/help/sites-developing/clientlibs.md) que define su CSS/LESS personalizado y JS.
 
-Para que la biblioteca de cliente se cargue únicamente para el cuadro de diálogo del componente (es decir, no se cargará para otro componente), debe establecer la propiedad `extraClientlibs`** ** del cuadro de diálogo al nombre de la categoría de la biblioteca de cliente que acaba de crear. Esto es aconsejable si la biblioteca de cliente es bastante grande o si el campo es específico de ese cuadro de diálogo y no es necesario en otros cuadros de diálogo.
+Para que la biblioteca de cliente se cargue únicamente para el cuadro de diálogo del componente (es decir, no se cargará para otro componente), debe establecer la propiedad `extraClientlibs` del cuadro de diálogo al nombre de categoría de la biblioteca de cliente que acaba de crear. Esto es aconsejable si la biblioteca de cliente es bastante grande o si el campo es específico de ese cuadro de diálogo y no es necesario en otros cuadros de diálogo.
 
 Para que la biblioteca de cliente se cargue para todos los cuadros de diálogo, establezca la propiedad category de la biblioteca de cliente en `cq.authoring.dialog`. Es el nombre de categoría de la biblioteca de cliente que se incluye de forma predeterminada al procesar todos los cuadros de diálogo. Desea hacerlo si la biblioteca de cliente es pequeña o si el campo es genérico y se puede reutilizar en otros cuadros de diálogo.
 
