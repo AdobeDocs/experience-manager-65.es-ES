@@ -38,11 +38,11 @@ Se admite el uso de componentes de base, pero la mayoría han quedado obsoletos 
 
 >[!NOTE]
 >
->AEM En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación estándar de la instalación de la aplicación de la versión de la aplicación de la versión de la aplicación de.
+>En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación de AEM estándar.
 >
 >Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Estos componentes personalizados pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 
-Los componentes están disponibles en la **Componentes** del panel lateral del editor de páginas cuando [edición de una página](/help/sites-authoring/editing-content.md).
+Los componentes están disponibles en la pestaña **Componentes** del panel lateral del editor de página al [editar una página](/help/sites-authoring/editing-content.md).
 
 Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la página. A continuación, puede editarlo mediante:
 

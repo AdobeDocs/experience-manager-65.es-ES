@@ -9,7 +9,7 @@ exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 63%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
 | AEM 6.5 | Este artículo |
 
 

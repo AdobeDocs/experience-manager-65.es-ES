@@ -14,7 +14,7 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html) |
 | AEM 6.5 | Este artículo |
 
 

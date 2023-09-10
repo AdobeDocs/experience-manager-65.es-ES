@@ -13,7 +13,7 @@ exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 42%
+ht-degree: 75%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 42%
 Cuando se ha creado un lanzamiento para una página (o conjunto de páginas), puede editar el contenido en la copia de lanzamiento de las páginas.
 
 1. Acceda a [Lanzamiento desde las referencias (consola Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
-1. Seleccionar **Ir a la página** para abrir la página y editarla.
+1. Seleccione **Ir a la página** para abrir la página y editarla.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Consulte [Cambio del contenido de Live Copy](/help/sites-administering/msm-livec
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
 1. En el **Sites** consola, [vaya a la página de origen del lanzamiento y selecciónela](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Abra el **[Referencias](/help/sites-authoring/basic-handling.md#references)** panel y seleccione **Lanzamientos**.
+1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione el lanzamiento específico y luego **Comparar con el origen**:
 
    ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
@@ -68,11 +68,11 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
 
 1. Acceda y seleccione el lanzamiento de:
 
-   * el [Consola de lanzamientos](/help/sites-authoring/launches.md#the-launches-console):
+   * la [consola Lanzamientos](/help/sites-authoring/launches.md#the-launches-console):
 
       * Seleccione **Editar**.
 
-   * [Referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
+   * [Referencias (consola Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
 
       * Seleccione **Editar lanzamiento**. 
 
@@ -84,17 +84,17 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
    >
    >Para agregar páginas a un lanzamiento, deben estar debajo de una raíz de idioma común; es decir, dentro de un solo sitio.
 
-## Edición de una configuración de Launch {#editing-a-launch-configuration}
+## Edición de una configuración de lanzamiento {#editing-a-launch-configuration}
 
 Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
 1. Acceda y seleccione el lanzamiento de:
 
-   * el [Consola de lanzamientos](/help/sites-authoring/launches.md#the-launches-console):
+   * la [consola Lanzamientos](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Seleccionar **Propiedades**.
+      * Seleccione **Propiedades**.
 
-   * [Referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
+   * [Referencias (consola Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
 
       * Seleccione **Editar propiedades**. 
 
@@ -106,6 +106,6 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
 ## Descubrimiento del estado de lanzamiento de una página {#discovering-the-launch-status-of-a-page}
 
-El estado se muestra al seleccionar un lanzamiento específico en la pestaña Referencias (consulte [Lanzamientos en referencias (consola Sitios)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
+El estado se muestra al seleccionar un lanzamiento específico en la pestaña Referencias (consulte [Lanzamientos en referencias (consola Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)

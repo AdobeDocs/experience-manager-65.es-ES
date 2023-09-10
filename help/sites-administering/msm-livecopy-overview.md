@@ -1,5 +1,5 @@
 ---
-title: Información general de Live Copy
+title: Información general de la consola de Live Copy
 seo-title: Live Copy Overview Console
 description: Obtenga información acerca de los conceptos básicos de la consola de información general de Live Copy.
 seo-description: Learn about the basics of the Live Copy Overview Console.
@@ -18,7 +18,7 @@ ht-degree: 33%
 
 ---
 
-# Información general de Live Copy{#live-copy-overview-console}
+# Información general de la consola de Live Copy{#live-copy-overview-console}
 
 El **Información general de Live Copy** le permite:
 

@@ -1,6 +1,6 @@
 ---
 title: Participación en flujos de trabajo
-description: Los flujos de trabajo suelen incluir pasos que requieren que una persona realice una actividad en una página o recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
+description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,13 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 9%
+ht-degree: 52%
 
 ---
 
 # Participación en flujos de trabajo{#participating-in-workflows}
 
-Los flujos de trabajo suelen incluir pasos que requieren que una persona realice una actividad en una página o recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
+Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
 
 ## Procesamiento de elementos de trabajo {#processing-your-work-items}
 
@@ -25,7 +25,7 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
 * **Completar**
 
-  Puede completar un elemento para permitir que el flujo de trabajo avance al siguiente paso.
+  Puede completar un elemento para permitir que el flujo de trabajo vaya al paso siguiente.
 
 * **Delegar**
 
@@ -35,11 +35,11 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
    * Si el elemento de trabajo se asignó a un grupo, los miembros del grupo están disponibles.
    * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
-   * Si el elemento de trabajo se asignó a un único usuario, no se puede delegar.
+   * Si el elemento de trabajo se asignó a un único usuario, el elemento de trabajo no se puede delegar.
 
 * **Retroceder**
 
-  Si descubre que un paso, o una serie de pasos, debe repetirse, puede retroceder. Esto permite seleccionar una etapa, que se produjo anteriormente en el flujo de trabajo, para volver a procesarla. El flujo de trabajo vuelve al paso especificado y, a continuación, continúa desde allí.
+  Si descubre que un paso o una serie de pasos debe repetirse, puede retroceder. Esto permite seleccionar una etapa, que se produjo anteriormente en el flujo de trabajo, para volver a procesarla. El flujo de trabajo vuelve al paso especificado y continúa desde ahí.
 
 ## Participar en un flujo de trabajo {#participating-in-a-workflow}
 
@@ -68,7 +68,7 @@ Después de realizar la acción indicada, puede completar el elemento de trabajo
 
 1. Clic **OK** para confirmar la acción.
 
-### Delegación de una etapa de participante {#delegating-a-participant-step}
+### Delegación de una etapa de participante  {#delegating-a-participant-step}
 
 Utilice el siguiente procedimiento para delegar un elemento de trabajo.
 
@@ -79,7 +79,7 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo.
 
 1. Clic **OK** para confirmar la acción.
 
-### Realización de un Retroceso en un Paso de Participante {#performing-step-back-on-a-participant-step}
+### Realización de un paso hacia atrás durante el paso de participante {#performing-step-back-on-a-participant-step}
 
 Utilice el siguiente procedimiento para retroceder.
 

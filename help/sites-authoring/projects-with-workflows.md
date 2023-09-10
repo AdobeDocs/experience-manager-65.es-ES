@@ -13,7 +13,7 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '797'
-ht-degree: 16%
+ht-degree: 42%
 
 ---
 
@@ -27,9 +27,9 @@ Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen l
 * **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
 * **Sesión fotográfica del producto y Sesión fotográfica del producto (Commerce)** - Asigna recursos a productos
-* **Crear y traducir copia DAM y crear copia de idioma DAM** : crea archivos binarios, metadatos y etiquetas traducidos para recursos y carpetas.
+* **Crear y traducir copia DAM y crear copia de idioma DAM**: crea archivos binarios, metadatos y etiquetas traducidos para archivos y carpetas.
 
-Según la plantilla de proyecto que seleccione, tendrá disponibles ciertos flujos de trabajo:
+Según la plantilla Proyecto que seleccione, tendrá a su disposición determinados flujos de trabajo:
 
 |   | **Proyecto simple** | **Proyecto de medios** | **Proyecto de sesión fotográfica del producto** | **Proyecto de traducción** |
 |---|:-:|:-:|:-:|:-:|
@@ -45,11 +45,11 @@ Según la plantilla de proyecto que seleccione, tendrá disponibles ciertos fluj
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para los recursos.](/help/sites-administering/tc-manage.md)
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos.](/help/sites-administering/tc-manage.md)
 
-Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que elija. Solo cambian los pasos.
+Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que se elija. Solo cambian los pasos.
 
-Puede iniciar un flujo de trabajo directamente en los proyectos (excepto Crear copia de idioma DAM o Crear y traducir copia de idioma DAM). La información sobre cualquier tarea pendiente de un proyecto se enumera en la **Tareas** mosaico. Las notificaciones de las tareas que deben completarse aparecen junto al icono del usuario.
+Puede iniciar un flujo de trabajo directamente en los proyectos (excepto Crear copia de idioma DAM o Crear y traducir copia de idioma DAM). La información sobre cualquier tarea pendiente en un proyecto aparece en el mosaico **Tareas**. Las notificaciones de las tareas que se deben completar aparecen junto al icono del usuario.
 
 AEM Para obtener más información sobre cómo trabajar con flujos de trabajo en la creación de flujos de trabajo en la documentación de, consulte los siguientes documentos:
 
@@ -97,7 +97,7 @@ Este flujo de trabajo permite solicitar un lanzamiento.
 
 1. En un proyecto sencillo, toque o haga clic en las comillas angulares descendentes en la parte superior derecha de la **Flujos de trabajo** mosaico y selección **Iniciar flujo de trabajo**.
 1. En el asistente de flujo de trabajo seleccione **Solicitar flujo de trabajo de lanzamiento** y haga clic en **Siguiente**.
-1. Escriba un título para el lanzamiento y proporcione la ruta de origen del lanzamiento. También puede añadir una descripción y una fecha de lanzamiento, si procede. Seleccione Heredar datos activos de la página de origen o excluir páginas secundarias según cómo desee que se comporte el lanzamiento.
+1. Escriba un título para el lanzamiento y proporcione la ruta de origen del lanzamiento. También puede añadir una descripción y la fecha de lanzamiento, si procede. Seleccione Heredar datos en directo de la página de origen o excluir páginas secundarias según cómo desea que se comporte el lanzamiento.
 
    ![Solicitar flujo de trabajo de lanzamiento](assets/project-request-launch-workflow.png)
 

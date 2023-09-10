@@ -1,7 +1,7 @@
 ---
 title: Creación de contenido orientado mediante el modo de Orientación
 seo-title: Authoring Targeted Content Using Targeting Mode
-description: El modo Segmentación y el componente Target proporcionan herramientas para crear contenido para experiencias
+description: El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias
 seo-description: Targeting mode and the Target component provide tools for creating content for experiences
 uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
@@ -14,22 +14,22 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '5388'
-ht-degree: 48%
+ht-degree: 86%
 
 ---
 
 # Creación de contenido orientado mediante el modo de Orientación{#authoring-targeted-content-using-targeting-mode}
 
-Contenido orientado por el autor mediante el modo de segmentación de AEM. El modo Segmentación y el componente Target proporcionan herramientas para crear contenido para experiencias:
+Contenido orientado por el autor mediante el modo de segmentación de AEM. El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias:
 
-* Reconocer fácilmente el contenido de destino de la página. Una línea de puntos forma un borde alrededor de todo el contenido de destino.
+* Reconozca fácilmente el contenido de destino que se encuentra en la página. Una línea de puntos forma un borde alrededor de todo el contenido de destino.
 * Seleccione una marca y una actividad para ver las experiencias.
-* Agregue experiencias a una actividad o elimine experiencias.
-* Realizar pruebas A/B y convertir ganadores (solo Adobe Target).
-* Añadir ofertas a una experiencia creando ofertas o utilizando ofertas de una biblioteca.
+* Añada o elimine experiencias de una actividad.
+* Realice pruebas A/B y convierta a los ganadores (solo Adobe Target).
+* Añada ofertas a una experiencia creando ofertas o utilizando ofertas de una biblioteca.
 * Configure objetivos y supervise el rendimiento.
 * Simule la experiencia del usuario.
-* Para obtener más personalización, configure el componente Target.
+* Para obtener más personalización, configure el componente de Target.
 
 Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adobe Target, debe tener una cuenta de Adobe Target válida). Si utiliza Adobe Target, primero debe configurar la integración. Consulte [instrucciones para la integración con Adobe Target](/help/sites-administering/target.md).
 
@@ -37,8 +37,8 @@ Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adob
 
 Las actividades y experiencias que ve en el modo de Target reflejan la variable [Consola Actividades](/help/sites-authoring/activitylib.md):
 
-* Los cambios que realice en las actividades y experiencias mediante el modo de Orientación se reflejan en la consola Actividades.
-* Los cambios realizados en la consola Actividades se reflejan en el modo Segmentación.
+* Los cambios que realice en las actividades y experiencias mediante el modo de segmentación se reflejan en la consola Actividades.
+* Los cambios realizados en la consola Actividades se reflejan en el modo de segmentación.
 
 >[!NOTE]
 >
@@ -50,13 +50,13 @@ Las actividades y experiencias que ve en el modo de Target reflejan la variable 
 
 >[!NOTE]
 >
->Al segmentar, la combinación de marca y actividad se mantiene en el nivel de usuario, no de canal.
+>Cuando se selecciona el destino, la combinación de personalización de marca y actividad se mantiene en el nivel de usuario, no de canal.
 
 ## Cambio al modo de segmentación {#switching-to-targeting-mode}
 
-Cambie al modo de Target para acceder a las herramientas para crear contenido de destino.
+Cambie al modo de segmentación para acceder a las herramientas para crear contenido de destino.
 
-Para cambiar al modo de Target:
+Para cambiar al modo de segmentación, haga lo siguiente:
 
 1. Abra la página para la que desea crear contenido de destino.
 1. En la barra de herramientas situada en la parte superior de la página, toque o haga clic en el menú emergente de modo para mostrar los tipos de modo disponibles.
@@ -69,26 +69,26 @@ Para cambiar al modo de Target:
 
 ## Adición de una actividad mediante el modo de segmentación {#adding-an-activity-using-targeting-mode}
 
-Utilice el modo de Orientación para añadir una actividad a una marca. Al añadir una actividad, contiene la experiencia predeterminada. Después de agregar la actividad, se inicia el proceso de segmentación de contenido para la actividad.
+Utilice el modo de Orientación para añadir una actividad a una marca. Al añadir una actividad, contiene la experiencia predeterminada. Después de añadir la actividad, se inicia el proceso de segmentación de contenido para la actividad.
 
-También puede crear y administrar actividades de Adobe Target AEM AEM desde la opción de selección con la opción de seleccionar el motor de segmentación de experiencias o la prueba A/B, o bien mediante la opción de selección de la opción de motor de segmentación de experiencias o la opción de prueba de Adobe Target, o bien mediante la opción de segmentación de experiencias o la opción de segmentación de experiencias.
+También puede crear y administrar actividades de Adobe Target desde AEM con la opción de seleccionar el motor de destino, con AEM o Adobe Target y seleccionando el tipo actividad: segmentación de experiencias o prueba A/B.
 
-Además, puede administrar objetivos y métricas para todas las actividades de Adobe Target y administrar los públicos de Adobe Target. También se incluyen informes de actividad de Adobe Target, incluida la conversión de ganadores para pruebas A/B.
+Además, puede administrar objetivos y métricas para todas las actividades de Adobe Target y administrar los públicos de Adobe Target. También se incluye la creación de informes de actividad de Adobe Target, incluida la conversión de ganadores para pruebas A/B.
 
-Cuando se añade una actividad de, también aparece en el [Consola Actividades](/help/sites-authoring/activitylib.md).
+Cuando se añade una actividad, también aparece en la [consola Actividades](/help/sites-authoring/activitylib.md).
 
-Para añadir una actividad:
+Para añadir una actividad, haga lo siguiente:
 
-1. Utilice el **Marca** menú desplegable para seleccionar la marca para la que desea crear la actividad.
+1. Utilice el menú desplegable **Marca** para seleccionar la marca para la que desea crear la actividad.
 
    >[!NOTE]
    >
-   >Se recomienda lo siguiente [crear marcas a través de la consola actividades](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Se recomienda [crear marcas a través de la consola actividades](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Si crea una marca de cualquier otra manera, asegúrese de que el nodo `/campaigns/<brand>/master` existe o se producirá un error al intentar crear una actividad.
 
-1. Toque o haga clic en + junto a **Actividad** menú desplegable.
+1. Pulse o haga clic en + junto al menú desplegable **Actividad**.
 1. Escriba un nombre para la actividad.
 
    >[!NOTE]
@@ -103,48 +103,48 @@ Para añadir una actividad:
 
    * AEM Si está utilizando la integración de/Adobe Campaign y está enviando contenido de destino (boletines informativos), seleccione **Adobe Campaign**. Consulte [Integración con Adobe Campaign](/help/sites-administering/campaign.md) para obtener más información.
 
-1. En el menú Actividad, seleccione **Segmentación de experiencias** o **Prueba A/B**.
+1. En el menú Actividad, seleccione **Segmentación de experiencias** o **Pruebas A/B**.
 
-   * Segmentación de experiencias: administre las actividades de Adobe Target AEM desde el punto de vista de la.
-   * Prueba A/B: cree/administre actividades de prueba A/B en Adobe Target AEM desde el punto de vista de la aplicación de la prueba de.
+   * Segmentación de experiencias: administre las actividades de Adobe Target desde AEM.
+   * Pruebas A/B: cree/administre actividades de pruebas A/B en Adobe Target desde AEM.
 
-## El proceso de segmentación: Crear, Segmentar y Objetivos y configuración {#the-targeting-process-create-target-and-goals-settings}
+## El proceso de segmentación: crear, segmentar y objetivos y configuración {#the-targeting-process-create-target-and-goals-settings}
 
 El modo de Orientación le permite configurar diversas proporciones de una actividad. Utilice el siguiente proceso de tres pasos para crear contenido de destino para una actividad de marca:
 
-1. [Crear](#create-authoring-the-experiences): Añada o elimine experiencias, y agregue ofertas para cada experiencia.
-1. [Orientar](#diagramtargetconfiguringtheaudiences): especifique el público al que se orienta cada experiencia. Puede dirigirse a una audiencia específica y, si utiliza las pruebas A/B, decidir qué porcentaje del tráfico se destina a cada experiencia.
+1. [Crear](#create-authoring-the-experiences): añada o quite experiencias y añada ofertas para cada experiencia.
+1. [Orientar](#diagramtargetconfiguringtheaudiences): especifique el público al que se orienta cada experiencia. Puede dirigirse a un público específico y, si utiliza las pruebas A/B, decidir qué porcentaje del tráfico se destina a cada experiencia.
 1. [Objetivos y configuraciones](#settingsgoalssettingsconfiguringtheactivityandsettinggoals): programe la actividad y establezca la prioridad. También puede establecer objetivos de métricas de éxito.
 
-Utilice el siguiente procedimiento para iniciar el proceso de segmentación de contenido en una actividad.
+Utilice el siguiente procedimiento para iniciar el proceso de segmentación de contenido de una actividad.
 
 >[!NOTE]
 >
 >Para utilizar el proceso de direccionamiento, debe ser miembro del grupo de usuarios Autores de actividades de Target.
 
-Para añadir una actividad:
+Para añadir una actividad, haga lo siguiente:
 
-1. En el **Marca** , seleccione la marca que contiene la actividad en la que está trabajando.
-1. En el **Actividad** , seleccione la actividad para la que está creando contenido de destino.
-1. Para mostrar los controles que le guían a través del proceso de orientación, toque o haga clic en **Iniciar segmentación**.
+1. En el menú desplegable **Marca**, seleccione la marca que contiene la actividad en la que está trabajando.
+1. En el menú desplegable **Actividad**, seleccione la actividad para la que está creando contenido de destino.
+1. Para mostrar los controles que le guían a través del proceso de segmentación, pulse o haga clic en **Iniciar segmentación**.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    >[!NOTE]
    >
-   >Para cambiar la actividad con la que está trabajando, toque o haga clic en **Atrás**.
+   >Para cambiar la actividad con la que está trabajando, pulse o haga clic en **Atrás**.
 
-## Crear: Creación de experiencias {#create-authoring-the-experiences}
+## Crear: creación de las experiencias {#create-authoring-the-experiences}
 
-El paso Crear de la orientación del contenido implica la creación de experiencias. Durante este paso puede crear o eliminar las experiencias de la actividad y agregar ofertas a cada experiencia.
+El paso Crear de la orientación del contenido implica la creación de experiencias. Durante este paso puede crear o eliminar las experiencias de la actividad y añadir ofertas a cada experiencia.
 
-### Ver ofertas de experiencias en modo de segmentación {#seeing-experience-offers-in-targeting-mode}
+### Visualización de ofertas de experiencias en el modo de segmentación {#seeing-experience-offers-in-targeting-mode}
 
 Después de [iniciar el proceso de orientación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), seleccione una experiencia para ver las ofertas que se proporcionan para esa experiencia. Al seleccionar una experiencia, los componentes de destino de la página cambian para mostrar la oferta de dicha experiencia.
 
 >[!CAUTION]
 >
->Tenga cuidado al deshabilitar el direccionamiento para un componente que ya está segmentado en la instancia de autor. La actividad correspondiente también se eliminará automáticamente de la instancia de publicación.
+>Tenga cuidado al deshabilitar la segmentación de un componente que ya está segmentado en la instancia de autor. La actividad correspondiente también se eliminará automáticamente de la instancia de publicación.
 
 >[!NOTE]
 >
@@ -178,18 +178,18 @@ Puede guardar ofertas personalizadas en una biblioteca de ofertas si decide que 
 
 ### Adición y eliminación de experiencias mediante el modo de segmentación {#adding-and-removing-experiences-using-targeting-mode}
 
-Con el paso Crear del [proceso de orientación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), puede añadir y quitar experiencias. Además, puede duplicar una experiencia y cambiarle el nombre.
+Con el paso Crear del [proceso de orientación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), puede añadir y quitar experiencias. Además, puede duplicar una experiencia y también cambiarle el nombre.
 
-#### Adición De Experiencias Mediante El Modo De Segmentación {#adding-experiences-using-targeting-mode}
+#### Adición de experiencias con el modo de segmentación {#adding-experiences-using-targeting-mode}
 
-Para añadir una experiencia:
+Para añadir una experiencia, haga lo siguiente:
 
 1. Para agregar una experiencia, toque o haga clic en **+** **Agregar segmentación de experiencias** que aparece debajo de las experiencias existentes en el panel **Audiencias**.
 1. Seleccione un público. De forma predeterminada, ese nombre es el nombre de la experiencia. Puede escribir otro nombre, si lo desea. Toque o haga clic en **OK**.
 
 #### Eliminación de experiencias mediante el modo de segmentación {#removing-experiences-using-targeting-mode}
 
-Para eliminar una experiencia:
+Para eliminar una experiencia, haga lo siguiente:
 
 1. Toque o haga clic en la flecha situada junto al nombre de la experiencia.
 
@@ -197,9 +197,9 @@ Para eliminar una experiencia:
 
 1. Haga clic en **Eliminar**.
 
-#### Cambiar el nombre de las experiencias mediante el modo de segmentación {#renaming-experiences-using-targeting-mode}
+#### Cambiar el nombre de las experiencias mediante el modo de Orientación {#renaming-experiences-using-targeting-mode}
 
-Para cambiar el nombre de las experiencias mediante el modo de Orientación:
+Para cambiar el nombre de las experiencias mediante el modo de Orientación, haga lo siguiente:
 
 1. Toque o haga clic en la flecha situada junto al nombre de la experiencia.
 1. Haga clic en **Cambiar nombre de experiencia** y escriba el nombre nuevo.
@@ -207,7 +207,7 @@ Para cambiar el nombre de las experiencias mediante el modo de Orientación:
 
 #### Edición de audiencias mediante el modo de segmentación {#editing-audiences-using-targeting-mode}
 
-Para editar las audiencias mediante el Modo de segmentación:
+Para editar el público mediante el modo de segmentación:
 
 1. Toque o haga clic en la flecha situada junto al nombre de la experiencia.
 1. Haga clic en **Editar audiencia** y seleccione una audiencia nueva.
@@ -215,37 +215,37 @@ Para editar las audiencias mediante el Modo de segmentación:
 
 #### Duplicado de experiencias mediante el modo de segmentación {#duplicating-experiences-using-targeting-mode}
 
-Para copiar experiencias mediante el modo Segmentación:
+Para copiar experiencias mediante el modo de segmentación, haga lo siguiente:
 
 1. Toque o haga clic en la flecha situada junto al nombre de la experiencia.
 1. Haga clic en **Duplicar** y elija el público.
 1. Cambie el nombre de la experiencia si lo desea y haga clic en **OK**.
 
-### Creación De Ofertas Mediante El Modo De Segmentación {#creating-offers-using-targeting-mode}
+### Creación de ofertas mediante el modo de segmentación {#creating-offers-using-targeting-mode}
 
-Oriente un componente para crear ofertas para las experiencias. Los componentes dirigidos proporcionan el contenido que se utiliza como ofertas para las experiencias.
+Oriente un componente para crear ofertas para las experiencias. Los componentes segmentados proporcionan el contenido que se utiliza como ofertas para las experiencias.
 
 * [Oriente un componente existente](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component). El contenido se convierte en la oferta de la experiencia predeterminada.
 * [Agregue un componente Target](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component) y, a continuación, agregue contenido al componente.
 
 Una vez identificado un componente, puede agregar ofertas para cada experiencia:
 
-* [Añadir ofertas personalizadas](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer).
+* [Agregar ofertas personalizadas](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer).
 * [Agregar ofertas desde una biblioteca](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 Las siguientes herramientas están disponibles para trabajar con ofertas:
 
 * [Añadir una oferta personalizada a una biblioteca de ofertas](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library).
-* [Conversión de una oferta de la biblioteca en una oferta personalizada](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
-* [Abra una oferta de la biblioteca y edite el contenido](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
+* [Convertir la oferta de la biblioteca en una oferta personalizada](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
+* [Abrir una oferta de la biblioteca y editar el contenido](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
 
 #### Creación de una oferta predeterminada mediante la segmentación de un componente existente {#creating-a-default-offer-by-targeting-an-existing-component}
 
-Oriente un componente de la página para utilizarlo como la oferta para la experiencia predeterminada de la actividad. Al orientar un componente, se envuelve en un componente de Target y su contenido se convierte en la oferta para la experiencia predeterminada.
+Oriente un componente de la página para utilizarlo como la oferta para la experiencia predeterminada de la actividad. Al segmentar un componente, se envuelve en un componente de Target y su contenido se convierte en la oferta para la experiencia predeterminada.
 
-Al orientar un componente, solo ese componente se puede utilizar en la oferta. No se puede eliminar el componente de la oferta ni añadir otros componentes a la oferta.
+Al orientar un componente, solo ese componente se puede utilizar en la oferta. No se puede eliminar el componente de la oferta ni agregar otros componentes a la oferta.
 
-Realice el siguiente procedimiento después de [inicio del proceso de direccionamiento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
+Realice el siguiente procedimiento después de [iniciar el proceso de segmentación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
 
 1. Toque o haga clic en el componente que se va a orientar. Aparecerá la barra de herramientas del componente, de forma similar al siguiente ejemplo.
 
@@ -267,9 +267,9 @@ Consulte [Configurar las opciones del componente Target](/help/sites-authoring/
 >
 >Las ofertas que crea mediante la [consola Ofertas](/help/sites-authoring/offerlib.md) también pueden contener varios componentes. Estas ofertas pertenecen a una biblioteca de ofertas y pueden utilizarse para varias experiencias.
 
-Como el componente Target es un contenedor, aparece como un área de colocación para otros componentes.
+Como el componente de Target es un contenedor, aparece como un área de colocación para otros componentes.
 
-En el modo de Target, el componente Target tiene un borde azul y el mensaje de destino indica la naturaleza de destino.
+En el modo de segmentación, el componente segmentado tiene un borde azul y el mensaje de destino indica la naturaleza de la segmentación.
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -281,13 +281,13 @@ Los componentes que arrastra al componente Target son componentes orientados.
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
-Al añadir un componente al componente Target, proporciona contenido para una experiencia determinada. Para especificar la experiencia, debe seleccionar la experiencia antes de añadir los componentes.
+Al añadir un componente al componente Target, proporciona contenido para una experiencia determinada. Para especificar la experiencia, debe seleccionar la experiencia antes de agregar los componentes.
 
-Puede añadir un componente Target a la página en modo de Edición o en modo de Target. Puede añadir componentes al componente Target solo en modo de Target. El componente Target pertenece al grupo de componentes Personalización.
+Puede añadir un componente Target a la página en modo de Edición o en modo de Target. Puede añadir componentes al componente Target solo en modo de Target. El componente de Target pertenece al grupo de componentes Personalización.
 
 Antes de poder editar contenido orientado, debe tocar o hacer clic en **Iniciar orientación**.
 
-1. Arrastre el componente Target a la página donde desea que aparezca la oferta.
+1. Arrastre el componente de Target a la página donde desea que aparezca la oferta.
 1. De forma predeterminada, no se establece ningún identificador de ubicación. Toque o haga clic en la rueda dentada de configuración para definir la ubicación.
 
    >[!NOTE]
@@ -304,9 +304,9 @@ Antes de poder editar contenido orientado, debe tocar o hacer clic en **Iniciar 
 1. Cree la oferta:
 
    * Para la experiencia predeterminada, arrastre los componentes al área de colocación orientada y edite las propiedades de los componentes como de costumbre para crear el contenido de la oferta.
-   * Para las experiencias no predeterminadas, puede: [añadir una oferta personalizada](#adding-a-custom-offer) o [añadir una oferta de la biblioteca](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   * Para estas experiencias no predeterminadas, [agregue una oferta personalizada](#adding-a-custom-offer) o [una oferta de la biblioteca](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
-#### Adición de una oferta personalizada {#adding-a-custom-offer}
+#### Agregar una oferta personalizada {#adding-a-custom-offer}
 
 Para crear una oferta, cree el contenido de un componente orientado en modo de Orientación. Al crear una oferta personalizada, se utiliza como oferta para una experiencia única.
 
@@ -325,9 +325,9 @@ Si decide que la oferta se puede utilizar para otras experiencias, puede crear u
 
    ![Menú Oferta](do-not-localize/chlimage_1-2.png)
 
-1. Edite el contenido del componente.
+1. Edite el componente de la oferta.
 
-#### Adición de una oferta desde una biblioteca de ofertas {#adding-an-offer-from-an-offer-library}
+#### Agregar una oferta desde una biblioteca de ofertas {#adding-an-offer-from-an-offer-library}
 
 Agregue una oferta de la [biblioteca de ofertas](/help/sites-authoring/offerlib.md) a una experiencia. Puede agregar cualquier oferta de la biblioteca de la marca que está actualmente orientando.
 
@@ -352,7 +352,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-   * Toque o haga clic en **Filtrar** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Haga clic o toque **Filtrar** para cerrar el panel de filtrado.
+   * Toque o haga clic en **Filtrar** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Vuelva a tocar o hacer clic en **Filtrar** para cerrar el panel de filtrado.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -364,29 +364,29 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
-#### Adición de una oferta personalizada a una biblioteca {#adding-a-custom-offer-to-a-library}
+#### Añadir una oferta personalizada a una biblioteca {#adding-a-custom-offer-to-a-library}
 
-Añada una oferta personalizada a la [biblioteca de ofertas](/help/sites-authoring/offerlib.md) cuando desee volver a utilizarla como la oferta para experiencias múltiples. Puede añadir ofertas a la biblioteca de la marca actual a la que está dirigiendo.
+Añada una oferta personalizada a la [biblioteca de ofertas](/help/sites-authoring/offerlib.md) cuando desee volver a utilizarla como la oferta para experiencias múltiples. Puede añadir ofertas a la biblioteca de la marca actual a la cual se está direccionando.
 
 Para obtener información sobre el uso de la consola Ofertas para crear una oferta reutilizable, consulte [Agregar una oferta a una biblioteca de ofertas](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Seleccione la experiencia para mostrar la oferta personalizada.
-1. Pulse o haga clic en la oferta personalizada para mostrar el menú de oferta y, a continuación, pulse o haga clic en **Guardar Oferta En La Biblioteca De Ofertas** icono.
+1. Pulse o haga clic en la oferta personalizada para mostrar el menú de ofertas y, a continuación, pulse o haga clic en el icono **Guardar oferta en la biblioteca de ofertas**.
 
    ![Guardar oferta en la Biblioteca de ofertas](do-not-localize/chlimage_1-4.png)
 
 1. Escriba un nombre para la oferta, seleccione la biblioteca a la que está agregando la oferta y, a continuación, toque o haga clic en el icono de marca de verificación.
 
-#### Conversión de una oferta de la biblioteca en una biblioteca personalizada {#converting-a-library-offer-to-a-custom-library}
+#### Conversión de una oferta de la biblioteca en una personalizada {#converting-a-library-offer-to-a-custom-library}
 
-Convierta una oferta de la biblioteca en una oferta personalizada para cambiar la oferta por la experiencia actual y sin cambiar la oferta en otras experiencias.
+Convierta una oferta de la biblioteca en una personalizada para cambiar la oferta por la experiencia actual y sin cambiar la oferta en otras experiencias.
 
 1. Seleccione la experiencia para mostrar la oferta de la biblioteca.
 1. Pulse o haga clic en la oferta de la biblioteca para mostrar el menú de oferta y, a continuación, pulse o haga clic en el icono Convertir en oferta en línea.
 
    ![Convertir en oferta en línea](do-not-localize/chlimage_1-5.png)
 
-#### Edición de una oferta de la biblioteca {#editing-a-library-offer}
+#### Editar una oferta de la biblioteca {#editing-a-library-offer}
 
 Abra una oferta de la biblioteca de una experiencia en modo de Orientación para editar la oferta. Los cambios que realice aparecerán en todas las experiencias que utilicen la oferta.
 
@@ -396,7 +396,7 @@ Abra una oferta de la biblioteca de una experiencia en modo de Orientación para
 
 1. Vuelva a guardarlo en la biblioteca. Consulte [Adición de una oferta personalizada a una biblioteca](#adding-a-custom-offer-to-a-library).
 
-## Target: Configuración de audiencias {#target-configuring-the-audiences}
+## Target: configuración de públicos {#target-configuring-the-audiences}
 
 El paso Target del [proceso de orientación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la asignación de públicos a las experiencias con que ha trabajado en el paso Crear. En la página Target se muestran los públicos a que se orienta cada experiencia. Puede especificar o cambiar el público para cada experiencia. Si utiliza Adobe Target, también puede crear pruebas A/B que le permitan asignar un porcentaje del tráfico de una audiencia a una experiencia concreta.
 
@@ -408,45 +408,45 @@ Los públicos aparecen en el lado izquierdo del diagrama de asignación, y las e
 
 Defina un público con un segmento. La configuración de nube de la página determina los segmentos que están disponibles. Cuando la página no está asociada a una configuración de nube de Adobe Target, los segmentos de AEM están disponibles para definir públicos. Cuando la página está asociada a una configuración de nube de Adobe Target, se utilizan segmentos de Target.
 
-Para obtener información sobre los motores de segmentación, consulte [Motor de segmentación](/help/sites-authoring/personalization.md#targeting-engine).
+Para obtener información sobre los motores de segmentación, consulte el [Motor de segmentación](/help/sites-authoring/personalization.md#targeting-engine).
 
-Una experiencia no debe utilizar más de un público. Aparece un símbolo de advertencia junto a una experiencia cuando se asigna a una audiencia asignada a otra experiencia.
+Una experiencia no debe utilizar más de un público. Aparece un símbolo de advertencia junto a una experiencia cuando se asigna a un público asignado a otra experiencia.
 
 ![Símbolo de advertencia cuando se asigna a una audiencia asignada a otra experiencia](do-not-localize/chlimage_1-6.png)
 
-### AEM Asociación de experiencias con audiencias (o Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
+### Asociación de experiencias con públicos (AEM o Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
-AEM Utilice el siguiente procedimiento para asociar una experiencia con una audiencia al usar la segmentación de experiencias (o segmentación de experiencias de Adobe Target) de la:
+Utilice el siguiente procedimiento para asociar una experiencia con un público al usar la segmentación de experiencias de AEM (u segmentación de experiencias de Adobe Target):
 
-1. Toque o haga clic en la flecha desplegable situada junto al cuadro de audiencia asignado a la experiencia.
+1. Toque o haga clic en la flecha desplegable situada junto al cuadro de público asignado a la experiencia.
 1. De manera opcional, toque o haga clic en **Editar** y, a continuación, escriba una palabra clave para buscar el segmento que desee.
 1. En la lista de públicos, seleccione el público y toque o haga clic en **OK**.
 
 ### Si utiliza la prueba A/B (Adobe Target)… ... {#if-you-are-using-a-b-testing-adobe-target}
 
-Si tiene una actividad de prueba A/B, las audiencias están a la izquierda, el porcentaje de visualización de cada experiencia se encuentra en el medio y las experiencias a la derecha.
+Si tiene una actividad de pruebas A/B, los públicos están a la izquierda, el porcentaje de visualización de cada experiencia se encuentra en el medio y las experiencias a la derecha.
 
-Puede cambiar los porcentajes, siempre que sumen el cien por ciento. Varias experiencias pueden utilizar una audiencia en las pruebas A/B.
+Puede cambiar los porcentajes, siempre que sumen el cien por ciento. Varias experiencias pueden utilizar un público en las pruebas A/B.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-### Asociación de audiencias y porcentajes de tráfico con pruebas A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
+### Asociación de públicos y porcentajes de tráfico con pruebas A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
-1. Toque o haga clic en el cuadro desplegable situado junto a la audiencia asignada a la experiencia.
-1. (Opcional) Haga clic en **Editar** A continuación, escriba una palabra clave para buscar el segmento deseado.
+1. Toque o haga clic en el cuadro desplegable situado junto al público asignado a la experiencia.
+1. De manera opcional, haga clic en **Editar** y, a continuación, escriba una palabra clave para buscar el segmento que desee.
 1. Toque o haga clic en **OK.**
 1. Introduzca porcentajes para configurar la forma en que el tráfico del público se dirige a cada experiencia. El número total debe ser igual a 100.
 1. (Opcional) Edite el nombre de la experiencia haciendo clic en el menú desplegable situado junto al nombre de la experiencia.
 
-## Objetivos y configuración: Configuración de la actividad y configuración de los objetivos {#goals-settings-configuring-the-activity-and-setting-goals}
+## Objetivos y configuración: configuración de la actividad y configuración de los objetivos {#goals-settings-configuring-the-activity-and-setting-goals}
 
 El paso Objetivos y configuración del [proceso de direccionamiento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) consiste en configurar el comportamiento de la actividad de la marca. Especifique cuándo comienza y finaliza la actividad, así como la prioridad de la actividad. Además, realiza un seguimiento de los objetivos. Específicamente, puede decidir lo que desea medir con sus actividades.
 
-Las métricas de objetivo solo están disponibles si usa Adobe Target como motor de orientación. Debe definir al menos una métrica de objetivo. Si tiene Adobe Analytics configurado y tiene una configuración de nube de A4T Analytics, puede seleccionar si desea que la fuente de informes sea Adobe Target o Adobe Analytics.
+Las métricas de objetivo solo están disponibles si usa Adobe Target como motor de orientación. Debe definir al menos una métrica de objetivo. Si tiene Adobe Analytics configurado y una configuración de nube de A4T Analytics, puede seleccionar si desea que la fuente de informes sea Adobe Target o Adobe Analytics.
 
-Las métricas de objetivo solo se miden para la campaña publicada.
+Las métricas de la meta solo se miden para la campaña publicada.
 
-AEM Si utiliza la segmentación como motor de segmentación:
+Si utiliza Adobe Target como motor de segmentación, haga lo siguiente:
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -531,39 +531,39 @@ Use la configuración avanzada para determinar qué sucede **después** de que u
  </tbody>
 </table>
 
-Consulte [Documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=es) para obtener más información sobre las métricas de éxito.
+Consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=es) para obtener más información sobre las métricas de éxito.
 
-### AEM Configuración (segmentación de segmentos {#configuring-settings-aem-targeting}
+### Configuración (segmentación de AEM) {#configuring-settings-aem-targeting}
 
-AEM Para configurar las opciones de configuración si utiliza la segmentación por segmentos:
+Para configurar las opciones de configuración, si utiliza la segmentación de AEM, haga lo siguiente:
 
-1. Para especificar cuándo se inicia la actividad, utilice el **Inicio** para seleccionar uno de los siguientes valores:
+1. Para especificar cuándo se inicia la actividad, utilice el menú desplegable **Inicio** para seleccionar uno de los siguientes valores:
 
-   * **Cuando está activado**: la actividad se inicia cuando se activa la página que contiene el contenido de destino.
+   * **Cuando se activa**: la actividad se inicia cuando se activa la página que contiene el contenido segmentado.
    * **Fecha y hora especificadas**: una hora determinada. Cuando seleccione esta opción, pulse o haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea iniciar la actividad.
 
-1. Para especificar cuándo termina la actividad, utilice el **Fin** para seleccionar uno de los siguientes valores:
+1. Para especificar cuándo termina la actividad, utilice el menú desplegable **Finalización** para seleccionar uno de los siguientes valores:
 
-   * **Cuando está desactivado**: la actividad finaliza cuando se desactiva la página que contiene el contenido de destino.
-   * **Fecha y hora especificadas**: una hora determinada. Cuando seleccione esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea finalizar la actividad.
+   * **Cuando se desactiva**: la actividad finaliza cuando se desactiva la página que contiene el contenido segmentado.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
-1. Para especificar una prioridad para la actividad, utilice el regulador para seleccionar **Baja**, **Normal**, o **Alta**.
+1. Para especificar una prioridad para la actividad, utilice el regulador para seleccionar **Baja**, **Normal** o **Alta**.
 
-### Configuración de Objetivos y opciones (Adobe Target) {#configuring-goals-settings-adobe-target}
+### Configuración de metas y opciones (Adobe Target) {#configuring-goals-settings-adobe-target}
 
-Para establecer los objetivos y la configuración si utiliza Adobe Target:
+Para establecer las metas y la configuración, si utiliza Adobe Target, haga lo siguiente:
 
-1. Para especificar cuándo se inicia la actividad, utilice el **Inicio** para seleccionar uno de los siguientes valores:
+1. Para especificar cuándo se inicia la actividad, utilice el menú desplegable **Inicio** para seleccionar uno de los siguientes valores:
 
-   * **Cuando está activado**: la actividad se inicia cuando se activa la página que contiene el contenido de destino.
+   * **Cuando se activa**: la actividad se inicia cuando se activa la página que contiene el contenido segmentado.
    * **Fecha y hora especificadas**: una hora determinada. Cuando seleccione esta opción, pulse o haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea iniciar la actividad.
 
-1. Para especificar cuándo termina la actividad, utilice el **Fin** para seleccionar uno de los siguientes valores:
+1. Para especificar cuándo termina la actividad, utilice el menú desplegable **Finalización** para seleccionar uno de los siguientes valores:
 
-   * **Cuando está desactivado**: la actividad finaliza cuando se desactiva la página que contiene el contenido de destino.
-   * **Fecha y hora especificadas**: una hora determinada. Cuando seleccione esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea finalizar la actividad.
+   * **Cuando se desactiva**: la actividad finaliza cuando se desactiva la página que contiene el contenido segmentado.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
-1. Para especificar una prioridad para la actividad, utilice el regulador para seleccionar **Baja**, **Normal**, o **Alta**.
+1. Para especificar una prioridad para la actividad, utilice el regulador para seleccionar **Baja**, **Normal** o **Alta**.
 1. Si ha configurado Adobe Analytics con su cuenta de Adobe Target, verá el **Fuente de informes** menú desplegable. Seleccione **Adobe Target** o **Adobe Analytics** como fuente.
 
    Si selecciona **Adobe Analytics**, seleccione la empresa y el grupo de informes. Si selecciona **Adobe Target**, no se requiere ninguna acción.
@@ -586,20 +586,20 @@ Para establecer los objetivos y la configuración si utiliza Adobe Target:
 
    >[!NOTE]
    >
-   Si falta información en la métrica, una línea roja rodea la métrica.
+   Si falta información en la métrica, esta tiene un círculo en rojo.
 
-1. Clic **Añadir una nueva métrica** para configurar métricas de éxito adicionales.
+1. Haga clic en **Añadir una nueva métrica** para configurar las métricas de éxito adicionales.
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
    >
-   Para quitar los objetivos adicionales, toque o haga clic en los tres puntos y en **Eliminar**. AEM Para realizar esta acción, es necesario que haya definido al menos un objetivo.
+   Para quitar los objetivos adicionales, toque o haga clic en los tres puntos y en **Eliminar**. AEM requiere que haya definido al menos una meta.
 
 1. Si desea tener más control sobre cómo se contabilizan las métricas de éxito, toque o haga clic en **Configuraciones avanzadas** para acceder a las mismas.
 1. Haga clic en **Guardar**.
 
-Una vez configuradas, puede [ver el rendimiento de las actividades](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usan Adobe Target (orientación de la experiencia o de la prueba A/B). Además, con el direccionamiento de pruebas A/B, puede [convierte a los ganadores.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+Una vez configuradas, puede [ver el rendimiento de las actividades](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usan Adobe Target (orientación de la experiencia o de la prueba A/B). Además, con el direccionamiento de pruebas A/B, puede [convertir los ganadores.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
 
 ## Simulación de una experiencia {#simulating-an-experience}
 
@@ -608,10 +608,10 @@ Simule la experiencia de un visitante para comprobar que el contenido de la pág
 Los siguientes criterios determinan el contenido que aparece al simular la experiencia de un visitante:
 
 * Los datos en el almacén de sesiones del usuario (a través de ContextHub).
-* El [Actividades que están activadas](/help/sites-authoring/activitylib.md).
-* El [reglas que definen los segmentos](/help/sites-administering/campaign-segmentation.md).
+* Las [Actividades que están activadas](/help/sites-authoring/activitylib.md).
+* Las [reglas que definen los segmentos](/help/sites-administering/campaign-segmentation.md).
 * El contenido de las experiencias en los componentes de Target.
-* El [configuración del motor de Orientación](/help/sites-authoring/activitylib.md).
+* La [configuración del motor de segmentación](/help/sites-authoring/activitylib.md).
 
 Si aparece contenido inesperado en la página al cargar un perfil, compruebe la configuración de cada elemento de esta lista.
 
@@ -619,7 +619,7 @@ Si aparece contenido inesperado en la página al cargar un perfil, compruebe la 
 >
 Si utiliza la prueba A/B, al simular, las experiencias se muestran según el porcentaje de tráfico. Esto se controla mediante Adobe Target, lo que puede dar lugar a resultados inesperados para los autores. (La actividad del autor se sincroniza con las configuraciones específicas que permiten volver a evaluar durante la simulación). Es posible que los autores tengan que actualizar para ver las otras experiencias en función de su configuración de tráfico.
 
-Para simular la experiencia del visitante, utilice las siguientes herramientas:
+ Para simular la experiencia del visitante, utilice las siguientes herramientas:
 
 * La actividad Simulación en modo de Orientación: en la página se muestran las ofertas para el usuario seleccionado actualmente en ContextHub. Puede editar las ofertas dirigidas al usuario.
 * Modo de vista previa: utilice ContextHub para seleccionar a los usuarios y las ubicaciones que cumplen los criterios de los segmentos en que están basadas las experiencias. Cuando cambian las selecciones de Context Hub, el contenido de destino cambia en consecuencia.
@@ -637,9 +637,9 @@ Para simular la experiencia del visitante, utilice las siguientes herramientas:
 
 1. Para realizar cambios en las ofertas que se muestran, cambie al modo de Orientación. Con la actividad de simulación seleccionada, edite las ofertas para el contexto configurado en el modo de vista previa.
 
-## Configuración de opciones de componente de Target {#configuring-target-component-options}
+## Configuración de opciones del componente de Target {#configuring-target-component-options}
 
-Puede personalizar el componente Target accediendo a las opciones del componente de una de las dos maneras siguientes:
+Puede personalizar el componente de Target accediendo a las opciones del componente de una de las dos maneras siguientes:
 
 1. Una vez que haya orientado el componente, en el componente Target, toque o haga clic en el componente y, a continuación, en el icono de configuración (cog).
 
@@ -711,7 +711,7 @@ Si selecciona Adobe Target como motor:
 
 >[!NOTE]
 >
-Al seleccionar un componente y hacerlo orientable, AEM también reemplaza el componente e introduce un componente de Adobe Target. (El componente Adobe Target no solo se utiliza cuando se añade manualmente a la página, sino también cuando se marca como objetivo un componente existente).
+Al seleccionar un componente y hacerlo orientable, AEM también reemplaza el componente e introduce un componente de Adobe Target. (El componente de Adobe Target no solo se utiliza cuando se añade manualmente a la página, sino también cuando se marca como objetivo un componente existente).
 
 Si selecciona Client Context (lado del cliente) como motor:
 

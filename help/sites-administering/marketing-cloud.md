@@ -9,7 +9,7 @@ exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ También puede utilizar la variable [Asistente de inclusión](/help/sites-admini
 
 ## Integración con Adobe Target {#integrating-with-adobe-target}
 
-[Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar el direccionamiento del contenido y las experiencias en línea.](https://business.adobe.com/products/target/adobe-target.html)
+[Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar el direccionamiento del contenido y las experiencias en línea.](https://business.adobe.com/products/target/adobe-target.html?lang=es)
 
 Los consumidores en línea de hoy en día tienen necesidades en constante evolución y esperan contenido relevante, incluso personalizado, de la amplia variedad de sitios y fuentes de contenido que pueden elegir. Para atraer a una audiencia en línea, es fundamental que los especialistas en marketing en línea identifiquen rápidamente qué ofertas y contenido son relevantes y atractivos para sus audiencias. Armados con este conocimiento, los especialistas en marketing necesitan la capacidad de evolucionar continuamente sus sitios y dirigir el contenido adecuado a diferentes audiencias.
 

@@ -251,7 +251,7 @@ Panel lateral: Filtros
 
 Puede utilizar las siguientes opciones del panel lateral para reducir los resultados de búsqueda:
 
-* Buscar directorio
+* Directorio de búsqueda
 * Etiquetas
 * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy
 

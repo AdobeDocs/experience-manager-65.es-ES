@@ -11,7 +11,7 @@ role: Admin, Developer
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1973'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 
@@ -32,7 +32,7 @@ En AEM Forms AEM 6.5, una temática es una biblioteca de cliente de que se utili
 
 AEM entorno de 6.5 proporciona los temas siguientes para los componentes principales basados en Forms adaptable:
 
-* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -54,7 +54,7 @@ Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript 
 
 AEM Forms 6.5 proporciona los temas que se enumeran a continuación para los componentes principales basados en Forms adaptable.
 
-* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -109,7 +109,7 @@ Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** t
 
 Para clonar una temática para componentes principales basados en Forms adaptable, elija una de las siguientes temáticas:
 
-* [Tema de lienzo](https://github.com/adobe/aem-forms-theme-canvas)
+* [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -304,7 +304,7 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 
 Para eliminar temas no utilizados o no deseados:
 
-1. Inicie sesión en la instancia de autor.
+1. Inicie sesión en la instancia de autor de .
 1. Abra `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. Navegue hasta `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Elimine la carpeta de la temática y guarde los cambios.

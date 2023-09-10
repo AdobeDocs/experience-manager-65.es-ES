@@ -12,7 +12,7 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1662'
-ht-degree: 59%
+ht-degree: 72%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 59%
 
 Después de crear y revisar el contenido en el entorno de creación, [haga que esté disponible en su sitio web público](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (su entorno de publicación).
 
-Esto se conoce como publicación de una página. Cuando desee eliminar una página del entorno de publicación, se denomina cancelación de publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que la elimine.
+Es lo que se denomina publicar una página. Quitar una página del entorno de publicación, se denomina cancelar la publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que se elimine.
 
 También puede publicar una página (o cancelar su publicación) inmediatamente o en un momento posterior predefinido.
 
@@ -40,7 +40,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 
 >[!NOTE]
 >
->Si no tiene los privilegios necesarios para publicar una página específica:
+>Si no dispone de los privilegios necesarios para publicar una página específica:
 >
 >* Se activará un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
 >* Esta [el flujo de trabajo puede haberse personalizado](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) por parte de su equipo de desarrollo.
@@ -49,7 +49,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 
 ## Publicar páginas {#publishing-pages-1}
 
-Según su ubicación, puede publicar lo siguiente:
+En función de su ubicación, puede publicar lo siguiente:
 
 * [Desde el editor de páginas](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [Desde la consola Sitios](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
@@ -131,7 +131,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Elija si publica o cancela la publicación de las páginas seleccionadas.
    * Elija realizar esa acción ahora o en una fecha posterior.
 
-   La publicación inicia posteriormente un flujo de trabajo para publicar la página o páginas seleccionadas a la hora especificada. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
+   Posponer la publicación inicia un flujo de trabajo para publicar la página o páginas seleccionadas en el momento especificado. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
 
    Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows.md) para finalizar el flujo de trabajo correspondiente.
 
@@ -191,9 +191,9 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    >
    >El paso **Flujos de trabajo** se muestra o no en función de los derechos del usuario. Consulte la [nota anterior en esta página](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) sobre los privilegios de publicación, así como [Administración del acceso a los flujos de trabajo](/help/sites-administering/workflows-managing.md) y [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obtener más información.
 
-   Los recursos se agrupan por los flujos de trabajo activados y cada una de las opciones dadas para:
+   Los recursos se agrupan por los flujos de trabajo activados y a cada uno se le ofrecen opciones para:
 
-   * Defina el título del flujo de trabajo.
+   * Definir el título del flujo de trabajo.
    * Mantener el paquete del flujo de trabajo, siempre que este tenga [compatibilidad con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
 
@@ -235,13 +235,13 @@ Al igual que [utiliza la opción Administrar publicación para publicar](/help/s
 
 ## Publicar y cancelar la publicación de un árbol {#publishing-and-unpublishing-a-tree}
 
-Cuando ha introducido o actualizado un número considerable de páginas de contenido (todas ellas residentes en la misma página raíz), puede resultar más fácil publicar todo el árbol en una acción.
+Cuando haya introducido o actualizado un número considerable de páginas de contenido, todas ellas residentes dentro de la misma página raíz, puede resultar más fácil publicar todo el árbol en una acción.
 
 Para hacerlo, puede utilizar la opción [Administrar publicación](/help/sites-authoring/publishing-pages.md#manage-publication) de la consola Sitios.
 
 1. En la consola Sitios, seleccione la página raíz de árbol que desea publicar o dejar de publicar y seleccione **Administrar publicación**.
-1. Se inicia el asistente **Administrar publicación**. Elija si publica o cancela la publicación y cuándo debe producirse, y seleccione **Siguiente** para continuar.
-1. En el **Ámbito** , seleccione la página raíz y seleccione **Incluir elementos secundarios**.
+1. Se inicia el asistente **Administrar publicación**. Elija si desea publicar o cancelar la publicación y cuándo debe producirse, y seleccione **Siguiente** para continuar.
+1. En el paso **Ámbito**, seleccione la página raíz y seleccione **Incluir tareas secundarias**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 

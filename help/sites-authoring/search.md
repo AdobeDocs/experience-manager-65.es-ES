@@ -1,6 +1,6 @@
 ---
 title: Búsqueda completa
-description: Encuentre su contenido más rápido con una búsqueda completa.
+description: Encuentre su contenido más rápidamente con una búsqueda completa.
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 73%
+ht-degree: 84%
 
 ---
 
@@ -68,7 +68,7 @@ Para buscar y filtrar sus recursos:
    El panel lateral permite seleccionar:
 
    * Búsquedas guardadas
-   * Buscar directorio
+   * Directorio de búsqueda
    * Etiquetas
    * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy
 
@@ -78,7 +78,7 @@ Para buscar y filtrar sus recursos:
    >
    >
    >
-   >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Recursos y Comunidades son comprensiblemente especializados.
+   >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Assets y Comunidades son comprensiblemente especializados.
    >    * Su instancia como [Buscar Forms](/help/sites-administering/search-forms.md) AEM se puede personalizar (según la ubicación dentro de la ubicación de la).
    >
    >
@@ -93,7 +93,7 @@ Para buscar y filtrar sus recursos:
 
 >[!NOTE]
 >
->Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de búsqueda.
+>Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de la búsqueda.
 >
 >Cuando se selecciona un elemento en la página de resultados de la búsqueda, al volver a la página de búsqueda después de usar el botón Atrás del explorador, los criterios de búsqueda se mantienen. 
 
@@ -113,7 +113,7 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
    ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
-1. Una vez guardado, puede:
+1. Una vez guardada, puede hacer lo siguiente:
 
    * Use **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
    * Use la opción **Editar búsqueda guardada**, cambie las condiciones de búsqueda y luego utilice **Guardar** nuevamente.

@@ -1,7 +1,7 @@
 ---
 title: Diferencias de página
 seo-title: Page Diff
-description: La función de diferencia de página permite realizar una comparación en paralelo de dos páginas con sus diferencias resaltadas.
+description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '577'
-ht-degree: 31%
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 31%
 
 ## Introducción {#introduction}
 
-La creación de contenido es un proceso iterativo. Crear con eficacia requiere poder ver qué ha cambiado de una iteración a otra. Ver una versión de la página y luego la otra es ineficiente y propensa a errores. Un autor quiere poder comparar fácilmente la página actual en paralelo con otra versión.
+La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar la versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar fácilmente la página actual en paralelo con la otra versión.
 
-La función de diferencia de página permite realizar una comparación en paralelo de dos páginas con sus diferencias resaltadas.
+La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 
 >[!TIP]
 >
@@ -43,32 +43,32 @@ Consulte los temas respectivos sobre cómo iniciar la comparación de diferencia
 
 ### Presentación de diferencias   {#presentation-of-differences}
 
-Independientemente del contenido que se compare, la presentación de la comparación de diferencias sigue siendo la misma.
+Independientemente del contenido que se va a comparar, la presentación de las diferencias sigue siendo la misma.
 
-* El contenido seleccionado al iniciar la comparación de diferencias se muestra a la izquierda (el punto de entrada de diferencia).
-* El contenido comparativo se muestra a la derecha (con qué se compara el contenido seleccionado).
+* El contenido seleccionado al iniciar la comparación de diferencias se muestra a la izquierda (punto de entrada de las diferencias).
+* El contenido con el que se va a comparar se muestra a la derecha (elemento con el que se compara el contenido seleccionado).
 
 Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquierda y la anterior a la derecha.
 
-El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del explorador.
+El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del navegador.
 
 ![Origen mostrado en el encabezado](assets/chlimage_1-109.png)
 
-La comparación de diferencias detecta los cambios en los niveles de componente y HTML. Los elementos que se han cambiado se resaltan con colores diferentes.
+La comparación de diferencias detecta los cambios en el nivel de componente y de HTML. Los elementos modificados se resaltan con colores diferentes.
 
-**Cambios de componentes**
+**Cambios en los componentes**
 
 * Verde claro: componente añadido
 * Rosa: componente eliminado
 
-**Cambios del HTML**
+**Cambios en HTML**
 
 * Verde oscuro: HTML añadido
 * Rojo: HTML eliminado
 
 >[!NOTE]
 >
->Al comparar copias de idioma, se desactiva el resaltado, ya que en una traducción todo cambia y el resaltado no sería de ninguna utilidad.
+>Al comparar las copias de idioma, el resaltado está desactivado, ya que en una traducción todo cambia y el resaltado no proporcionará ninguna ventaja.
 
 ### Pantalla completa y salida   {#fullscreen-and-exiting}
 
@@ -84,17 +84,17 @@ También puede cerrar la vista de pantalla completa haciendo clic en el icono pa
 
 ![Cerrar pantalla completa](do-not-localize/chlimage_1-19.png)
 
-Puede salir de la comparación de diferencias en cualquier momento haciendo clic en el botón Close del encabezado.
+Puede salir de la comparación de diferencias en paralelo en cualquier momento haciendo clic en el botón Cerrar del encabezado.
 
 ## Restricciones   {#limitations}
 
-Hay algunas situaciones en las que la diferencia de página puede no detectarse según lo esperado.
+Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
-* Al diferenciar versiones y lanzamientos, la comparación de diferencias no tiene en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que dependen de la estructura del sitio para procesar su contenido).
+* Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
 * Para las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
-* Si se mueve una página, ya no se puede realizar una diferencia con las versiones realizadas antes del movimiento.
+* Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
 
-   * Si tiene problemas con una comparación de diferencias, consulte la [Cronología](/help/sites-authoring/basic-handling.md#timeline) para que la página vea si la página se ha movido.
+   * Si tiene problemas con una comparación de diferencias, consulte la [Cronología](/help/sites-authoring/basic-handling.md#timeline) de la página para ver si la página se ha movido.
 
 >[!NOTE]
 >

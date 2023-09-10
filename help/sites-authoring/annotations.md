@@ -11,7 +11,7 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -77,9 +77,9 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
-   Aquí puede utilizar el campo o icono apropiado para lo siguiente:
+   Aquí podrá utilizar el campo o icono apropiados para lo siguiente:
 
-   * Introduzca el texto de la anotación.
+   * Escribir el texto de anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
 
      El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.

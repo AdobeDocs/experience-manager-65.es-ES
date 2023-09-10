@@ -7,7 +7,7 @@ exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
 source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM 6.5 | Este artículo |
 
 Puede utilizar las credenciales de cliente de OAuth 2.0 para integrar AEM Forms con la aplicación Salesforce. Las credenciales de cliente de OAuth 2.0 son un método estándar y seguro para la comunicación directa sin la participación del usuario.
@@ -44,8 +44,8 @@ AEM Antes de establecer la comunicación entre una aplicación de Salesforce y u
 
 ## Pasos para configurar Salesforce con el flujo de credenciales del cliente {#steps-to-create-aem-datasource-configuration}
 
-1. Inicie sesión en la instancia de autor.
-1. Ir a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Fuentes de datos]**.
+1. Inicie sesión en la instancia de autor de .
+1. Ir a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fuentes de datos]**.
 1. Seleccione la carpeta de configuración.
 1. Clic **[!UICONTROL Crear]** y el **[!UICONTROL Crear configuración de fuente de datos]** aparece.
 1. Especifique el **[!UICONTROL Título]** y seleccione la **[!UICONTROL Tipo de servicio]** as **[!UICONTROL Servicio RESTful]**.

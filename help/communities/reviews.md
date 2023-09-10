@@ -147,7 +147,7 @@ En el **[!UICONTROL Moderación de usuario]** pestaña, especifique cómo se adm
 
 * **[!UICONTROL Límite de indicación]**
 
-  Introduzca el número de veces que se debe marcar una revisión antes de ocultarla de la vista pública. Este número debe ser bueno o igual que **[!UICONTROL Umbral de moderación]**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar una revisión antes de ocultarla de la vista pública. Este número debe ser mayor o igual que **[!UICONTROL Umbral de moderación]**. El valor predeterminado es 5.
 
 ### Adición de un resumen de críticas (visualización) a una página {#adding-a-review-summary-display-to-a-page}
 

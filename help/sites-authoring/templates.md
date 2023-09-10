@@ -1,7 +1,7 @@
 ---
 title: Creación de plantillas de página
 seo-title: Creating Page Templates
-description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores
+description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
 seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
 uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
@@ -14,7 +14,7 @@ exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '4864'
-ht-degree: 49%
+ht-degree: 80%
 
 ---
 
@@ -24,18 +24,18 @@ Al crear una página, debe seleccionar una plantilla, que se utilizará como bas
 
 Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores. También puede participar un tipo de usuario avanzado, que se denomina **autor de la plantilla**. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de la plantilla** tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
 
-El **Consola de plantillas** permite a los autores de plantillas:
+La **consola de plantillas** permite a los autores de plantillas lo siguiente:
 
 * Crear una plantilla nueva o copiar una plantilla existente.
 * Administrar el ciclo de vida de la plantilla.
 
-El **Editor de plantillas** permite a los autores de plantillas:
+El **editor de plantillas** permite a los autores de plantillas:
 
 * Agregue componentes a la plantilla y colóquelos en una cuadrícula adaptable.
 * Preconfigurar los componentes. 
 * Defina qué componentes se pueden editar en las páginas creadas con la plantilla.
 
-Este documento explica cómo **autor de plantillas** Puede utilizar la consola y el editor de plantillas para crear y administrar plantillas editables.
+Este documento explica cómo un **autor de plantillas** puede utilizar la consola y el editor de plantillas para crear y administrar plantillas editables.
 
 Para obtener información detallada sobre cómo funcionan las plantillas editables en un nivel técnico, consulte el documento para desarrolladores [Plantillas de página: editables](/help/sites-developing/page-templates-editable.md) para obtener más información.
 
@@ -81,7 +81,7 @@ La creación de una nueva plantilla mediante la **consola Plantillas** y el **Ed
 
       * Esto le asigna los privilegios y los permisos necesarios.
 
-   * Puede configurar el uso de componentes y otros detalles de alto nivel que requieran:
+   * Puede configurar el uso de componentes y otros detalles de alto nivel que requieran lo siguiente:
 
       * Algunos conocimientos técnicos
 
@@ -89,9 +89,9 @@ La creación de una nueva plantilla mediante la **consola Plantillas** y el **Ed
 
       * Información técnica del desarrollador.
 
-Debido a la naturaleza de algunas tareas, como crear una carpeta, es necesario un entorno de desarrollo, y esto requiere conocimiento/experiencia.
+Debido a la naturaleza de algunas tareas, como crear una carpeta, es necesario un entorno de desarrollo, y esto requiere conocimiento y experiencia.
 
-Las tareas detalladas en este documento se enumeran con la función responsable de llevarlas a cabo.
+Las tareas detalladas en este documento se enumeran con la función de la persona responsable de llevarlas a cabo.
 
 ### Plantillas editables y estáticas {#editable-and-static-templates}
 
@@ -120,26 +120,26 @@ Cuando se usa una plantilla para lo siguiente [crear una nueva página](/help/si
 
 ## Creación y gestión de plantillas {#creating-and-managing-templates}
 
-Al crear una nueva plantilla editable:
+Al crear una nueva plantilla editable, haga lo siguiente:
 
-* Utilice el **Plantilla** consola. Esta opción está disponible en el **General** de la sección **Herramientas** consola.
+* Utilice la consola de **Plantilla**. Esta opción está disponible en la sección **General** de la consola de **Herramientas**.
 
    * O directamente en: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Puede [crear una carpeta para las plantillas](#creating-a-template-folder-admin), si lo necesita.
 * [Crea una plantilla nueva](#creatinganewtemplateauthor), que inicialmente estará vacía.
 
-* [Definición de propiedades adicionales](#definingtemplatepropertiesauthor) para la plantilla, si es necesario
-* [Editar la plantilla](#editingtemplates) para definir el:
+* [Defina propiedades adicionales](#definingtemplatepropertiesauthor) para la plantilla, si es necesario
+* [Editar la plantilla](#editingtemplates) para definir lo siguiente:
 
    * [Estructura](#editingatemplatestructureauthor): contenido predefinido que no se puede cambiar en las páginas creadas con la plantilla.
    * [Contenido inicial](#editing-a-template-initial-content-author): contenido predefinido que se puede cambiar en las páginas creadas con la plantilla.
    * [Diseño](#editingatemplatelayoutauthor): para una amplia gama de dispositivos.
    * [Estilos](/help/sites-authoring/style-system.md): defina los estilos que se van a utilizar con la plantilla y sus componentes.
 
-* [Habilitar la plantilla](#enablingatemplateauthor) para usar al crear una página
-* [Permitir la plantilla](#allowing-a-template-author) para la página o rama requerida del sitio web
-* [Publicación de la plantilla](#publishingatemplateauthor) para que esté disponible en el entorno de publicación
+* [Habilitar la plantilla](#enablingatemplateauthor) para usarla al crear una página
+* [Permitir el uso de la plantilla](#allowing-a-template-author) para la página o rama requerida del sitio web
+* [Publicar la plantilla](#publishingatemplateauthor) para que esté disponible en el entorno de publicación
 
 >[!NOTE]
 >
@@ -162,17 +162,17 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >En una instancia estándar de AEM, la carpeta **Global** ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual.
    >
    >
-   >Una práctica recomendada es utilizar un [carpeta de plantillas creada para su proyecto](/help/sites-developing/page-templates-editable.md#template-folders).
+   >Una práctica recomendada es utilizar una [carpeta de plantillas creada para su proyecto](/help/sites-developing/page-templates-editable.md#template-folders).
 
 1. Seleccione **Crear** y, a continuación, **Crear plantilla** para abrir el asistente.
 
-1. Elija una **Tipo de plantilla**, luego seleccione **Siguiente**.
+1. Elija un **Tipo de plantilla**, luego seleccione **Siguiente**.
 
    >[!NOTE]
    >
-   >Los tipos de plantilla son diseños de plantilla predefinidos y se pueden considerar como plantillas para una plantilla. Los desarrolladores o el administrador del sistema las predefinen. Encontrará más información en el documento para desarrolladores [Plantillas de página: editables](/help/sites-developing/page-templates-editable.md#template-type).
+   >Los tipos de plantilla son diseños predefinidos y se pueden considerar como plantillas. Los desarrolladores o el administrador del sistema predefinen estas plantillas. Encontrará más información en el documento para desarrolladores [Plantillas de página: editables](/help/sites-developing/page-templates-editable.md#template-type).
 
-1. Complete la **Detalles de plantilla**:
+1. Complete los **Detalles de la plantilla**:
 
    * **Nombre de la plantilla**
    * **Descripción**
@@ -196,7 +196,7 @@ Una plantilla puede tener las siguientes propiedades:
 
 * Título
 
-   * Un título utilizado para identificar la plantilla, como en el **Crear página** asistente.
+   * Un título utilizado para identificar la plantilla, como en el asistente **Crear página**.
 
 * Descripción
 
@@ -220,9 +220,9 @@ Para ver o editar las propiedades:
 
 #### Imagen de miniatura de plantilla {#template-thumbnail-image}
 
-Para definir la miniatura de la plantilla:
+Para definir la miniatura de la plantilla, haga lo siguiente:
 
-1. Edite las propiedades de la plantilla.
+1. Editar las propiedades de la plantilla.
 1. Seleccione si desea cargar una miniatura o hacer que se genere a partir del contenido de la plantilla.
 
    * Si desea cargar una miniatura, toque o haga clic en **Cargar imagen**
@@ -243,7 +243,7 @@ Para poder utilizar una plantilla al crear una página, debe:
 
 #### Activación de una plantilla: autor de plantillas {#enabling-a-template-template-author}
 
-Una plantilla se puede habilitar o deshabilitar para que esté disponible o no disponible en el **Crear página** asistente.
+Una plantilla se puede habilitar o deshabilitar para que esté disponible o no en el asistente **Crear página**.
 
 >[!CAUTION]
 >
@@ -294,11 +294,11 @@ Puesto que la plantilla se toma como referencia cuando se representa la página,
 1. Seleccione **Publicar** en la barra de herramientas para abrir el asistente.
 1. Seleccione las **Políticas de contenido** que deben publicarse en combinación.
 
-1. Seleccionar **Publish** en la barra de herramientas para completar la acción.
+1. Seleccione **Publicar** en la barra de herramientas para abrir el asistente.
 
 ## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
 
-Al crear o editar una plantilla, hay varios aspectos que puede definir. Editar plantillas es similar a crear páginas.
+Al crear o editar una plantilla, hay distintos aspectos que el autor de plantillas pueden definir. Editar plantillas es similar a crear páginas.
 
 Los siguientes aspectos de una plantilla se pueden editar:
 
@@ -310,7 +310,7 @@ Los siguientes aspectos de una plantilla se pueden editar:
 
   >[!NOTE]
   >
-  >En el modo de estructura, cualquier componente que sea el padre de un componente desbloqueado no se puede mover, cortar ni eliminar.
+  >En el modo de estructura, no se puede mover, cortar ni eliminar cualquier componente que sea el principal de un componente desbloqueado.
 
 * [Contenido inicial](#editingatemplateinitialcontent)
 
@@ -366,14 +366,14 @@ Entrada **Estructura** modo del editor de plantillas:
 
 * **Añadir componentes**
 
-  Existen varios mecanismos para añadir componentes a la plantilla:
+  Los siguientes mecanismos sirven para añadir componentes a la plantilla:
 
-   * Desde el **Componentes** explorador en el panel lateral.
+   * Desde el explorador de **Componentes** en el panel lateral.
    * Mediante el uso de **Insertar componente** opción (**+** ) disponibles en la barra de herramientas de los componentes que ya están en la plantilla o en el **Arrastre los componentes aquí** cuadro.
 
    * Al arrastrar un recurso (desde el **Assets** explorador en el panel lateral) directamente en la plantilla para generar el componente adecuado in situ.
 
-  Una vez añadido, cada componente se marca con:
+  Una vez añadido, cada componente se marca con lo siguiente:
 
    * Un borde
    * Un marcador para mostrar el tipo de componente
@@ -407,7 +407,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
 * **Borde para indicar la estructura**
 
-  Al trabajar en **Estructura** mode un borde naranja indica el componente seleccionado actualmente. Una línea de puntos también indica el componente principal.
+  Cuando se trabaja en modo **Estructura**, un borde naranja indica el componente seleccionado actualmente. Una línea de puntos también indica el componente principal.
 
   Por ejemplo, en la captura de pantalla que aparece debajo de **Texto** El componente está seleccionado, dentro de un **Contenedor de diseño** (cuadrícula adaptable).
 
@@ -426,7 +426,7 @@ Entrada **Estructura** modo del editor de plantillas:
    * En la parte izquierda del cuadro de diálogo, debajo de la sección **Política**, puede seleccionar una política existente.
    * En el lado derecho del cuadro de diálogo, debajo de la sección **Propiedades**, puede establecer las propiedades específicas del tipo de componente.
 
-  Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, para un componente de texto, las propiedades definen las opciones de copia y pegado, las opciones de formato y el estilo de párrafo, entre otras opciones.
+  Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, para un componente de texto, las propiedades definen las opciones de copiar y pegar, las opciones de formato y el estilo de párrafo, entre otras opciones.
 
   ***Directiva***
 
@@ -456,18 +456,18 @@ Entrada **Estructura** modo del editor de plantillas:
 
   ***Propiedades***
 
-  En el **Propiedades** encabezado puede definir la configuración del componente. El encabezado tiene dos pestañas:
+  En el encabezado **Propiedades**, se puede definir la configuración del componente. El encabezado tiene las siguientes dos pestañas:
 
    * Principal
    * Características
 
   *Principal*
 
-  En el **Principal** pestaña, se definen los ajustes más importantes del componente.
+  En la pestaña **Principal**, se definen las opciones de configuración más importantes del componente.
 
   Por ejemplo, para un componente de imagen se pueden definir los anchos permitidos junto con la activación de la carga diferida.
 
-  Si una configuración permite varias configuraciones, toque o haga clic en **Añadir** para añadir otra configuración.
+  Si una configuración permite varias configuraciones, toque o haga clic en el botón **Añadir** para añadir otra configuración.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -495,7 +495,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
 * **Política y propiedades (contenedor de diseño)**
 
-  La configuración de directiva y propiedades de un contenedor de diseño es similar al uso general, pero con algunas diferencias.
+  La configuración de la política y de las propiedades de un contenedor de diseño es similar al uso general, pero con algunas diferencias.
 
   >[!NOTE]
   >
@@ -511,7 +511,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   ***Propiedades***
 
-  En el **Propiedades** encabezado puede elegir qué componentes están disponibles para el contenedor de diseño y definir su configuración. El encabezado tiene tres pestañas:
+  En el encabezado **Propiedades**, puede elegir los componentes disponibles para el contenedor de diseño y definir sus opciones de configuración. El encabezado tiene tres pestañas:
 
    * Componentes permitidos
    * Componentes predeterminados
@@ -519,21 +519,21 @@ Entrada **Estructura** modo del editor de plantillas:
 
   *Componentes permitidos*
 
-  En el **Componentes permitidos** , se definen qué componentes están disponibles para el contenedor de diseño.
+  En la pestaña **Componentes permitidos**, defina los componentes disponibles para el contenedor de diseño.
 
-   * Los componentes se agrupan por sus grupos de componentes, que se pueden expandir y contraer.
-   * Se puede seleccionar un grupo completo marcando el nombre del grupo y se puede anular la selección de todos desmarcando.
-   * Un signo menos representa al menos uno, pero no todos los elementos de un grupo están seleccionados.
-   * Hay disponible una búsqueda para filtrar un componente por nombre.
-   * Los recuentos enumerados a la derecha del nombre del grupo de componentes representan el número total de componentes seleccionados en esos grupos, independientemente del filtro.
+   * Los componentes se clasifican por grupos de componentes, que pueden ampliarse y contraerse.
+   * Es posible seleccionar un grupo completo al marcar la casilla del nombre del grupo, y se puede anular la selección de todo al desactivar la casilla de verificación.
+   * Un signo menos representa que se ha seleccionado al menos uno de los elementos de un grupo, pero no todos.
+   * Puede realizar búsquedas filtrando por el nombre de los componentes.
+   * Los recuentos que aparecen a la derecha del nombre del grupo de componentes representan el número total de componentes seleccionados de dichos grupos, independientemente del filtro.
 
   ![chlimage_1-144](assets/chlimage_1-144.png)
 
   *Componentes predeterminados*
 
-  En el **Componentes predeterminados** AEM pestaña, puede definir qué componentes se asocian automáticamente a determinados tipos de medios para que cuando un autor arrastre un recurso desde el explorador de recursos, sepa con qué componente lo asociará. Tenga en cuenta que solo los componentes con zonas de colocación están disponibles para esta configuración.
+  En la pestaña **Componentes predeterminados**, puede definir qué componentes se asocian automáticamente a determinados tipos de medios, de modo que cuando un autor arrastre un recurso desde el navegador de recursos, AEM sabe a qué componente debe asociarlo. Tenga en cuenta que solo los componentes con zonas desplegables están disponibles para esta configuración.
 
-  Haga clic o toque **Agregar asignación** para agregar un componente completamente nuevo y una asignación de tipo MIME.
+  Toque o haga clic en **Añadir asignación** para añadir un componente y una asignación de tipo MIME completamente nuevos.
 
   Seleccione un componente en la lista y pulse o haga clic en **Agregar tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
 
@@ -545,13 +545,13 @@ Entrada **Estructura** modo del editor de plantillas:
 
 * **Desbloquear/bloquear componentes**
 
-  Los componentes se desbloquean o bloquean para definir si el contenido está disponible para cambiar en **Contenido inicial** modo.
+  Puede desbloquear o bloquear componentes para definir si el contenido está disponible para el cambio en el modo de **Contenido inicial**.
 
-  Cuando se ha desbloqueado un componente:
+  Cuando se ha desbloqueado un componente, se observa lo siguiente:
 
-   * Se muestra un indicador de candado abierto en el borde.
+   * Se muestra un indicador en forma de candado abierto en el borde.
    * La barra de herramientas de componentes se ajustará en consecuencia.
-   * El contenido introducido ya no se mostrará en **Estructura** modo.
+   * Cualquier contenido que ya haya introducido dejará de mostrarse en el modo de **Estructura**.
 
       * El contenido que ya haya introducido se considera contenido inicial y solo es visible en el modo de **Contenido inicial**.
 
@@ -563,7 +563,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
-  Para ahorrar espacio, el contenedor de diseño no aumenta para dar cabida a la lista de componentes permitidos. En su lugar, el contenedor se convierte en una lista desplazable.
+  Para ahorrar espacio, el contenedor de diseño no aumenta para dar cabida a la lista de componentes permitidos. En su lugar, el contenedor se convierte en una lista por la que puede desplazarse.
 
   Los componentes que se pueden configurar se muestran con un icono de **directiva**, que se puede pulsar o hacer clic para editar la política y las propiedades de ese componente.
 
@@ -577,7 +577,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
 ### Edición de una plantilla: contenido inicial, autor {#editing-a-template-initial-content-author}
 
-**Contenido inicial** El modo se utiliza para definir el contenido que aparecerá cuando se cree una página por primera vez en función de la plantilla. Los autores de la página pueden editar el contenido inicial.
+El modo de **Contenido inicial** se utiliza con contenido definido que aparece cuando una página se crea por primera vez a partir de la plantilla. Los autores de la página pueden editar el contenido inicial.
 
 Aunque todo el contenido creado en el modo de **Estructura** sea visible en el **contenido inicial**, solo los componentes que se han desbloqueado se pueden seleccionar y editar.
 
@@ -585,7 +585,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 >
 >El modo de **Contenido inicial** puede considerarse un modo de edición para las páginas creadas con esa plantilla. Por tanto, las políticas no se definen en el modo de **Contenido inicial**, sino en el modo de [**Estructura**](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
-* Los componentes desbloqueados que están disponibles para la edición están marcados. Cuando se seleccionan, tienen un borde azul:
+* Se marcan los componentes desbloqueados que quedan disponibles para editarse. Cuando se seleccionan, tienen un borde azul:
 
   ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -603,7 +603,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 
 >[!NOTE]
 >
->El contenido inicial está diseñado para preparar componentes y el diseño de página que sirven como punto de partida para la creación del contenido. No se pretende que sea el contenido real el que permanezca tal cual. Por este motivo, el contenido inicial no se puede traducir.
+>El contenido inicial está diseñado para preparar componentes y el diseño de página, que sirven como punto de partida para la creación del contenido. No se prevé que el contenido real permanezca tal cual. Por este motivo, el contenido inicial no se puede traducir.
 >
 >Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es).
 
@@ -626,8 +626,8 @@ Para acceder a **Diseño de página** diálogo:
 1. Desde el **Editor de plantillas**, seleccione **Información de página** en la barra de herramientas, **Diseño de página** para abrir el cuadro de diálogo.
 1. El **Diseño de página** se abre y se divide en dos secciones:
 
-   * La mitad izquierda define el [políticas de página](/help/sites-authoring/templates.md#page-policies)
-   * La mitad derecha define el [propiedades de página](/help/sites-authoring/templates.md#page-properties)
+   * En la mitad izquierda, se definen las [políticas de la página](/help/sites-authoring/templates.md#page-policies)
+   * En la mitad derecha, se definen las [propiedades de página](/help/sites-authoring/templates.md#page-properties)
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -664,7 +664,7 @@ Con las propiedades de página, puede definir las bibliotecas del cliente necesa
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-* Especifique las bibliotecas del lado del cliente que desea aplicar a las páginas creadas con esta plantilla. Al introducir el nombre de una biblioteca en el campo de texto del **Bibliotecas del cliente** sección.
+* Especifique las bibliotecas del lado del cliente que desea aplicar a las páginas creadas con esta plantilla. Al introducir el nombre de una biblioteca en el campo de texto de la sección **Bibliotecas del cliente**.
 
   ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -700,7 +700,7 @@ Con la opción **Propiedades de la página inicial**, puede definir las [propied
 
 Al crear plantillas, debe tener en cuenta lo siguiente:
 
-1. Impacto de los cambios realizados en la plantilla una vez que se han creado páginas a partir de esa plantilla.
+1. El impacto de los cambios realizados en la plantilla una vez que se han creado páginas a partir de esa plantilla.
 
    Esta es una lista de las diferentes operaciones posibles en las plantillas, así como la forma en que afectan a las páginas creadas a partir de ellas:
 
@@ -709,24 +709,24 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
       * Se aplican inmediatamente a las páginas resultantes.
       * La publicación de la plantilla modificada sigue siendo necesaria para que los visitantes vean los cambios.
 
-   * Cambios en las políticas de contenido y configuraciones de diseño:
+   * Los cambios en las políticas de contenido y configuraciones de diseño:
 
       * Se aplican inmediatamente a las páginas resultantes.
       * Es necesaria la publicación de los cambios para que los visitantes puedan ver los cambios.
 
-   * Cambios en el contenido inicial:
+   * Los cambios en el contenido inicial:
 
-      * Esto solo se aplica a las páginas creadas después de los cambios en la plantilla.
+      * Estos solo se aplican a las páginas creadas después de los cambios en la plantilla.
 
-   * Los cambios en el diseño dependen de si el componente modificado forma parte de:
+   * Los cambios en el diseño dependen de si el componente modificado forma parte de lo siguiente:
 
       * Solo de estructura: aplicado inmediatamente
-      * Incluir contenido inicial: solo en las páginas creadas después del cambio
+      * Contiene contenido inicial: solo en las páginas creadas después del cambio
 
-   Tenga especial precaución cuando:
+   Tenga especial precaución cuando ocurra lo siguiente:
 
-   * Bloquear o desbloquear componentes en plantillas habilitadas.
-   * Esto puede tener efectos secundarios, ya que las páginas existentes ya pueden estar usándolo. Típicamente:
+   * Bloquee o desbloquee los componentes en las plantillas habilitadas.
+   * Esto puede tener efectos secundarios, ya que las páginas existentes pueden estar usándolo. Típicamente ocurre lo siguiente:
 
       * Desbloquear componentes (que estaban bloqueados) no aparecerá en las páginas existentes.
       * Bloquear componentes (que se podían editar) ocultará ese contenido para que no se muestre en las páginas.
@@ -736,4 +736,4 @@ Al crear plantillas, debe tener en cuenta lo siguiente:
    >AEM proporciona advertencias explícitas al cambiar el estado de bloqueo de los componentes de las plantillas que ya no son borradores.
 
 1. [Creación de sus propias carpetas](#creatingatemplatefolderdeveloper) para las plantillas específicas del sitio.
-1. [Publicación de plantillas](#publishingatemplateauthor) desde el **Plantillas** consola.
+1. [Publicación de sus plantillas](#publishingatemplateauthor) desde la consola **Plantillas**.

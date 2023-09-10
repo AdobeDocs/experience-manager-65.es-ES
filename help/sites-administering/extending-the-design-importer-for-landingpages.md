@@ -384,7 +384,7 @@ Incluir el marcado anterior en el HTML hace lo siguiente:
 * Inicializa la barra de tareas con componentes predeterminados. Se pueden añadir nuevos componentes a la página de aterrizaje arrastrando componentes de la barra de tareas al componente parsys.
 * Dos componentes de título también forman parte de parsys.
 
-### Destino {#target}
+### Público destinatario {#target}
 
 El componente de destino muestra el contenido de una experiencia en la página. Se pueden crear muchas experiencias en una campaña y el componente de destino puede mostrar dinámicamente contenido de diferentes experiencias a varios usuarios que visitan la página.
 

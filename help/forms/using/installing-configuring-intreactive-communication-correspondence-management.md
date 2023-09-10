@@ -99,14 +99,14 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
 1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
-   También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es? lang = en).
+   También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es?lang=en).
 
-1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor AEM Forms, espere hasta que el ServiceEvent registrado y ServiceEvent los mensajes no registrados dejen de aparecer en el [ archivo AEM-Installation-Directory ] /CRX-QuickStart/logs/error.log y el registro sea estable.
+1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el directorio] de instalación de AEM/crx-quickstart/logs/error.archivo de registro y el [registro sea estable.
 1. Repita los pasos del 1 al 7 en todas las instancias de autor y publicación.
 
 ## Configuraciones posteriores a la instalación {#post-installation-configurations}
 
-AEM Forms incluye algunas configuraciones obligatorias y otras opcionales. Entre las configuraciones obligatorias se incluyen la configuración de las bibliotecas BouncyCastle y el agente de serialización. Las configuraciones opcionales incluyen la configuración de Dispatcher y Adobe Target.
+AEM Forms incluye algunas configuraciones obligatorias y otras opcionales. Entre las configuraciones obligatorias se incluyen la configuración de las bibliotecas BouncyCastle y el agente de serialización. Las opciones de configuración incluyen la configuración de Dispatcher y Adobe Target.
 
 ### Configuraciones posteriores a la instalación obligatorias {#mandatory-post-installation-configurations}
 
@@ -117,7 +117,7 @@ Realice los siguientes pasos en todas las instancias de autor y publicación par
 1. Detenga la instancia de AEM subyacente.
 1. Abra el [directorio de instalación de AEM]\crx-quickstart\conf\sling.properties para editarlo.
 
-   Si ha utilizado [ AEM directorio ] de instalación \crx-quickstart\bin\start.bat para inicio AEM, edite la eslinga. properties en [ AEM_root ] \crx-quickstart\.
+   Si utilizó [AEM directorio] de instalación\crx-quickstart\bin\inicio.bat para inicio AEM, edite sling.properties en [AEM_root]\crx-quickstart\.
 
 1. Agregue las siguientes propiedades al archivo sling.properties:
 
@@ -143,7 +143,7 @@ Siga estos pasos en todas las instancias de autor y publicación para incluir el
 
 Interactive Communications es la forma predeterminada y recomendada de crear comunicaciones con los clientes en AEM 6.5 Forms. Si ha actualizado o migrado desde una versión anterior y piensa seguir utilizando cartas (Administración de correspondencia), instale el [paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-El paquete Compatibilidad AEMFD permite utilizar los siguientes activos de AEM 6,4 Forms, AEM 6,3 Forms y AEM 6,2 Forms en AEM 6,5 Forms:
+El paquete de Compatibilidad AEMFD le permite utilizar las siguientes activos desde AEM Forms 6.4 , AEM 6.3 Forms y AEM 6.2 Forms en AEM Forms 6.5:
 
 * Fragmentos de documento
 * Cartas
@@ -164,17 +164,17 @@ Dispatcher es una herramienta de equilibrio de carga o de almacenamiento en cach
 
 1. Configure el servicio del Filtro de referente:
 
-   Inicie sesión en el Administrador de configuración de Apache Felix como administrador. La URL predeterminada del Administrador de configuración es https://&#39;server&#39;:[port_number]/system/console/configMgr.  En el menú **Configuraciones**, seleccione la opción **Filtro de referente de Apache Sling**. En el campo permitir hosts, escriba host nombre del Dispatcher para permitirlo como remitente del reenvío y haga clic en **Guardar** . El formato de la entrada es https://&#39;[server]:[port]&#39;.
+   Inicie sesión en el Administrador de configuración de Apache Felix como administrador. La URL predeterminada del Administrador de configuración es https://&#39;server&#39;:[port_number]/system/console/configMgr.  En el menú **Configuraciones**, seleccione la opción **Filtro de referente de Apache Sling**. En el campo Permitir hosts, escriba host nombre de la Dispatcher para permitirla como remitente del reenvío y haga clic en **Guardar**. El formato de la entrada es https://&#39;[server]:[port]&#39;.
 
 #### Integración con Adobe Target {#integrate-adobe-target}
 
-Es probable que los clientes abandonen una comunicación interactiva si la experiencia que ofrece no es atractiva. Aunque es frustrante para los clientes, también reactiva el volumen de soporte y el coste de la organización. Identificar y ofrecer una experiencia del cliente correcta que aumente la tasa de conversión es fundamental, además de un desafío. AEM Forms es la solución a este problema.
+Es probable que los clientes abandonen una comunicación interactiva si la experiencia que ofrece no es atractiva. Si bien es frustrante para los clientes, también aumenta el volumen de soporte y el costo para su organización. Identificar y ofrecer una experiencia del cliente correcta que aumente la tasa de conversión es fundamental, además de un desafío. AEM Forms es la solución a este problema.
 
-AEM Forms se integra con Adobe Target, una solución de Adobe Experience Cloud, para ofrecer experiencias personalizadas y atractivas para los clientes en varios canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, consulte [Integración de Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms se integra con Adobe Target, una solución Adobe Experience Cloud, para ofrecer experiencias personalizadas y atractivas a los clientes a través de múltiples canales digitales. Para utilizar Adobe Target para personalizar una comunicación interactiva, consulte [Integración de Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
-#### Configurar la comunicación SSL para el modelo de datos de formulario  {#configure-ssl-communcation-for-form-data-model}
+#### Configuración de la comunicación SSL para el modelo de datos de formulario  {#configure-ssl-communcation-for-form-data-model}
 
-Puede activar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar cualquier AEM Forms instancia, agregue certificados a Java™ el almacén de confianza de todas las instancias. Puede ejecutar el siguiente comando para añadir los certificados:
+Puede activar la comunicación SSL para el modelo de datos de formulario. Para habilitar la comunicación SSL para el modelo de datos de formulario, antes de iniciar cualquier AEM Forms instancia, añada certificados a Java™ Trust Store de todas las instancias. Puede ejecutar el siguiente comando para añadir los certificados:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 

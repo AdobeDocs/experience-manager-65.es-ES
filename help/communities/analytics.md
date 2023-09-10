@@ -117,7 +117,7 @@ Iniciando sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com
 
    * Consola de medición de Video Core
 
-      * Seleccionar `Use Solution Variables`
+      * Seleccione lo siguiente `Use Solution Variables`
       * Seleccione Guardar
 
 Si se usa un **nuevo grupo de informes** Sin embargo, tenga en cuenta que un nuevo grupo de informes solo puede tener 4 evars y 6 variables de evento, mientras que se requieren 11 evars y 7 variables de evento para las comunidades.
@@ -188,7 +188,7 @@ Por ejemplo, introduzca *comunidades*
 
 * **Plantilla**
 
-  Seleccionar `Adobe Analytics Configuration`
+  Seleccione lo siguiente `Adobe Analytics Configuration`
 
 * Seleccione **Crear**
 
@@ -264,7 +264,7 @@ Por ejemplo, introduzca *comunidades*.
 
 * *Plantilla*
 
-  Seleccionar `Adobe Analytics Framework`.
+  Seleccione lo siguiente `Adobe Analytics Framework`.
 
 * Seleccione **Crear**.
 

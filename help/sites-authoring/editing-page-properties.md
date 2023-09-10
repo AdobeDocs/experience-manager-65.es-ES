@@ -139,7 +139,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
   Indica si la página se hereda. y de dónde.
 
-* **Configuración de nube**
+* **Configuración de la nube**
 
   La ruta a la configuración.
 

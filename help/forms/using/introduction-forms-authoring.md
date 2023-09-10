@@ -14,7 +14,7 @@ exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '3156'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
 | AEM 6.5 | Este artículo |
 
 
@@ -194,7 +194,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Panel</td>
-   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante la variable <span class="uicontrol">Agregar panel secundario</code> botón. Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante la variable <span class="uicontrol">Agregar barra de herramientas del panel</code> botón. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</p> </td>
+   <td><p>Agrega un panel o subpanel.</p> <p>También puede agregar un componente de panel desde la barra de herramientas del panel principal mediante el botón <span class="uicontrol">Agregar panel secundario</code> botón. |Del mismo modo, puede agregar una barra de herramientas específica de un panel mediante el botón <span class="uicontrol">Agregar barra de herramientas del panel</code> botón. Puede configurar la posición de la barra de herramientas del panel mediante el cuadro de diálogo Editar panel.</p> </td>
   </tr>
   <tr>
    <td>Cuadro de contraseña</td>

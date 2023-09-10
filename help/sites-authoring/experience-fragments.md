@@ -12,7 +12,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1442'
-ht-degree: 68%
+ht-degree: 81%
 
 ---
 
@@ -48,20 +48,20 @@ Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 ## ¿Cuándo se deben utilizar los fragmentos de experiencias?   {#when-should-you-use-experience-fragments}
 
-Los fragmentos de experiencias deben usarse:
+Los fragmentos de experiencias deben usarse en las siguientes situaciones:
 
 * Siempre que quiera reutilizar experiencias.
 
    * Experiencias que se reutilizarán con contenido igual o similar
 
-* AEM Cuando se utiliza la plataforma de envío de contenido para terceros, se utiliza la plataforma de entrega de contenido de.
+* Cuando se utiliza AEM como plataforma de envío de contenido para terceros.
 
-   * AEM Cualquier solución que desee utilizar como plataforma de envío de contenido
+   * Cualquier solución que desee utilizar AEM como plataforma de entrega de contenido
    * Incrustación de contenido en puntos de contacto de terceros
 
 * Si tiene una experiencia con diferentes variaciones o representaciones.
 
-   * Variaciones específicas de canal o contexto
+   * Variaciones específicas del canal o del contexto
    * Experiencias que tiene sentido agrupar (por ejemplo, una campaña con diferentes experiencias en diferentes canales)
 
 * Al utilizar el comercio omnicanal.
@@ -192,7 +192,7 @@ Para crear un fragmento de experiencia:
 
 1. Haga clic en **Crear**.
 
-   Se mostrará un mensaje. Seleccionar:
+   Se mostrará un mensaje. Seleccione lo siguiente:
 
    * **Listo** para volver a la consola
 
@@ -221,7 +221,7 @@ El siguiente procedimiento de ejemplo ilustra cómo crear un teaser para un prod
 
 Puede crear varias variaciones para este fragmento de experiencia en función de sus necesidades:
 
-1. Abra el fragmento para [edición](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
+1. Abra el fragmento a [editar](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Abra la pestaña **Variaciones**.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
@@ -249,7 +249,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
 Ahora puede utilizar el fragmento de experiencia para crear páginas:
 
-1. Abra cualquier página para editarla.
+1. Abra la página para editarla.
 
    Por ejemplo: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
@@ -274,7 +274,7 @@ Puede seleccionar uno o varios componentes para crear un bloque de creación y a
 
 ### Crear un bloque de creación {#creating-a-building-block}
 
-Para crear un nuevo bloque de creación:
+Para crear un componente nuevo, haga lo siguiente:
 
 1. En el editor de Fragmento de experiencia, seleccione los componentes que desea reutilizar:
 
@@ -340,11 +340,11 @@ Se pueden ver los detalles del fragmento:
       * **Número de variantes web**: solo información
       * **Número de variantes no web** - inf **Solo formación**
 
-      * **Número de páginas que utilizan este fragmento** - solo información
+      * **Número de páginas que utilizan este fragmento**: solo información
 
    * **Cloud Services**
 
-      * **Configuración de nube**
+      * **Configuración de la nube**
       * **Configuraciones de Cloud Service**
       * **ID de página de Facebook**
       * **Tablero de Pinterest**

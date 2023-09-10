@@ -112,7 +112,7 @@ Se puede acceder a las técnicas:
 
 Cada técnica tiene un número único, que se relaciona con su colección. Por ejemplo, una de las técnicas de ARIA es la [Técnica ARIA2: Identificar los campos obligatorios con la propiedad requerido por ARIA](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
-Las técnicas pueden ser suficientes, aconsejables o un error:
+Las técnicas pueden ser suficientes, aconsejables o tener un error:
 
 * Una *técnica suficiente* es la que, si se sigue, será suficiente para cumplir un criterio de éxito determinado.
 * Una *técnica aconsejable* es una que, de seguirse, tendrá un efecto positivo en la accesibilidad, pero puede que no sea suficiente por sí sola para garantizar que se cumple un criterio de éxito determinado.

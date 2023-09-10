@@ -12,7 +12,7 @@ role: Admin, Developer
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1794'
-ht-degree: 47%
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 47%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 **Se aplica a:** ❎ de componentes principales de formulario adaptable ✅ [Componentes de base de formulario adaptable](/help/forms/using/create-adaptive-form.md).
@@ -51,7 +51,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 * **Una temática de formulario adaptable**: Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes.  El `Canvas` La temática se añade de forma predeterminada al habilitar los componentes principales para su entorno. Puede  [descargar y personalizar las temáticas estándar](create-or-customize-themes-for-adaptive-forms-core-components.md). Para **de serie** temas que puede implementar [temas de muestra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) a su entorno. Esto le ayudará a dar estilo a los formularios y le proporcionará una estructura base para crear o personalizar una temática según sus necesidades empresariales.
 
-* **Permisos**: añada sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable. Para obtener una lista detallada de los grupos de usuarios específicos de los formularios, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
+* **Permisos**: añada sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable. Para obtener una lista detallada de los formularios y grupos de usuarios específicos, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
 
 <!--
 >[!NOTE]
@@ -86,20 +86,20 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 ## Utilice los componentes principales de Forms adaptable para crear el formulario
 
-Después de abrir el formulario para editarlo, puede utilizar los componentes principales adaptables de Forms disponibles para agregar campos de formulario al formulario. Puede arrastrar y soltar o utilizar el signo + [insertar componente] para agregar estos componentes a un formulario. AEM Consulte la documentación de componentes principales para obtener más información sobre los componentes disponibles [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components). También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
+Después de abrir el formulario para editarlo, puede utilizar los componentes principales adaptables de Forms disponibles para agregar campos de formulario al formulario. Puede arrastrar y soltar o utilizar el signo + [insertar componente] para agregar estos componentes a un formulario. AEM Consulte la documentación de componentes principales para obtener más información sobre los componentes disponibles [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#components). También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
 
-## Configurar la acción de envío para un formulario adaptable {#configure-submit-action-for-form}
+## Configuración de una acción de envío para un formulario adaptable {#configure-submit-action-for-form}
 
 Una acción de envío permite elegir el destino de los datos capturados mediante un formulario adaptable. Se activa una acción de envío cuando un usuario hace clic en el botón Enviar en un formulario adaptable. Los formularios adaptables incluyen algunas acciones de envío listas para usar. También puede ampliar las acciones de envío predeterminadas para crear su propia acción de envío personalizada. Para configurar una acción de envío para el formulario:
 
-1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
-1. Haga clic en las propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg) icono. Se abrirá el cuadro de diálogo Contenedor de formulario adaptable.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 
-1. Haga clic en  **[!UICONTROL Envío]** pestaña.
+1. Abra la pestaña **[!UICONTROL Envío]**.
 
    ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Seleccione y configure un **[!UICONTROL Acción de envío]**, según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/using/configuring-submit-actions.md)
+1. Seleccione y configure una **[!UICONTROL acción de envío]** según sus necesidades. Para obtener información detallada sobre las acciones de envío, consulte [Acción de envío del formulario adaptable](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -107,36 +107,36 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 
 -->
 
-## Redirigir al usuario a una página o mostrar un mensaje de agradecimiento al enviar el formulario
+## Redireccionamiento del usuario a una página o mostrar un mensaje de agradecimiento al enviar el formulario
 
 Al enviar un formulario, puede redirigir al usuario a otra página web o a un mensaje. Para redirigir al usuario o configurar el mensaje de agradecimiento:
 
-1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
-1. Haga clic en las propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg) icono. Se abrirá el cuadro de diálogo Contenedor de formulario adaptable.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Abra la pestaña **[!UICONTROL Envío]**.
 
-   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una página de redireccionamiento o un mensaje de agradecimiento](/help/forms/using/assets/adaptive-forms-submit-message.png)
+   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable para configurar una página de redireccionamiento o un mensaje de agradecimiento](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-   * Para configurar una URL de redireccionamiento, por ejemplo, en la opción Enviar, seleccione **[!UICONTROL Redirigir a URL]** y examine y seleccione una página de AEM Sites, o proporcione la URL de una página externa.
+   * Para configurar una URL de redireccionamiento, por ejemplo, en la opción Enviar, seleccione la opción **[!UICONTROL Redirigir a URL]** y examine y seleccione una página de AEM Sites, o proporcione una URL de una página externa.
 
-   * Para configurar un mensaje personalizado o de agradecimiento, para en la opción Enviar, seleccione **[!UICONTROL Mostrar mensaje]** y proporcione un mensaje en la **[!UICONTROL Contenido del mensaje]** cuadro. Es un cuadro de texto enriquecido, puede utilizar la opción de pantalla completa para ver todos los elementos de texto enriquecido disponibles.
+   * Para configurar un mensaje personalizado o de agradecimiento, por ejemplo, en la opción Enviar, seleccione la opción **[!UICONTROL Mostrar mensaje]** y proporcione un mensaje en la casilla **[!UICONTROL Contenido del mensaje.]** Es un cuadro de texto enriquecido, puede utilizar la opción de pantalla completa para ver todos los elementos de texto enriquecido disponibles.
 
-## Configurar un esquema o un modelo de datos de formulario para un formulario adaptable {#configure-schema-or-data-model-for-form}
+## Configuración de un esquema o un modelo de datos de formulario para un formulario adaptable {#configure-schema-or-data-model-for-form}
 
 Puede utilizar el modelo de datos del formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. En función del requisito, conecte el formulario a un esquema JSON o a un modelo de datos de formulario:
 
 * [Crear un esquema JSON y cargarlo en su entorno](/help/forms/using/adaptive-form-json-schema-form-model.md)
 * [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md)
 
-### Configurar un esquema JSON o un modelo de datos de formulario para el formulario
+### Configuración de un esquema JSON o un modelo de datos de formulario para su formulario
 
 Para configurar un esquema JSON o un modelo de datos de formulario para su formulario:
 
-1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
-1. Haga clic en las propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg) icono. Se abrirá el cuadro de diálogo Contenedor de formulario adaptable.
-1. Abra el **[!UICONTROL Modelo de datos]** pestaña.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
+1. Abra la pestaña **[!UICONTROL Modelo de datos]**.
 
-   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar un esquema JSON o un modelo de datos de formulario](/help/forms/using/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
+   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable para configurar un esquema JSON o un modelo de datos de formulario](/help/forms/using/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
 
 1. Seleccione y configure un esquema JSON o un modelo de datos de formulario según sus necesidades:
 
@@ -149,23 +149,23 @@ Para configurar un esquema JSON o un modelo de datos de formulario para su formu
 >
 > Puede editar el esquema JSON o el modelo de datos de formulario para un formulario adaptable mediante las propiedades del contenedor de la guía.
 
-## Configurar un servicio de rellenado previo  {#configure-prefill-service-for-form}
+## Configuración de un servicio de rellenado previo  {#configure-prefill-service-for-form}
 
 Puede utilizar el servicio de cumplimentación previa para rellenar automáticamente los campos de un formulario adaptable utilizando los datos existentes. Cuando un usuario abre un formulario, los valores de esos campos ya han sido rellenados. Puede hacer lo siguiente:
 
 * [Crear un servicio de rellenado previo personalizado](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Servicio de rellenado previo de modelo de datos de formulario](#fdm-prefill-service)
 
-### Utilice el servicio de prerrellenado del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable {#fdm-prefill-service}
+### Utilización del servicio de rellenado previo del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable {#fdm-prefill-service}
 
-Puede utilizar el servicio de prerrellenado del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable mediante un modelo de datos de formulario o un servicio de prerrellenado personalizado. El servicio de rellenado previo del modelo de datos de formulario utiliza el [Obtener servicio del modelo de datos de formulario configurado](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) para recuperar datos. Para utilizar el servicio de rellenado previo del modelo de datos de formulario de un formulario adaptable, haga lo siguiente:
+Puede utilizar el servicio de rellenado previo del modelo de datos de formulario para rellenar previamente los campos de un formulario adaptable mediante el uso de un modelo de datos de formulario o un servicio de rellenado previo personalizado. El servicio de rellenado previo del modelo de datos de formulario utiliza el [Obtener servicio del modelo de datos de formulario configurado](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) para recuperar datos. Para utilizar el servicio de rellenado previo del modelo de datos de formulario de un formulario adaptable, haga lo siguiente:
 
-1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
-1. Haga clic en las propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg) icono. Se abrirá el cuadro de diálogo Contenedor de formulario adaptable.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Haga clic en el icono de las ![Propiedades del contenedor del formulario adaptable](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
-   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una página de redireccionamiento o un mensaje de agradecimiento](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
-1. Seleccionar modelo de datos de formulario. Abra la pestaña **[!UICONTROL Básico]**. En el servicio de relleno previo, seleccione **[!UICONTROL Servicio de prerrellenado del modelo de datos de formulario]**.
-1. Haga clic en **[!UICONTROL Listo]**. El formulario adaptable ahora está configurado para utilizar el prerrellenado del modelo de datos de formulario. Ahora puede usar la variable [editor de reglas](rule-editor.md) para crear reglas para rellenar previamente los campos del formulario.
+   ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable para configurar una página de redireccionamiento o un mensaje de agradecimiento](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
+1. Seleccionar modelo de datos de formulario. Abra la pestaña **[!UICONTROL Básico]**. En el servicio de rellenado previo, seleccione **[!UICONTROL Servicio de rellenado previo del modelo de datos de formulario]**.
+1. Haga clic en **[!UICONTROL Listo]**. El formulario adaptable ahora está configurado para utilizar el rellenado previo del modelo de datos de formulario. Ahora puede usar el [editor de reglas](rule-editor.md) para crear reglas para rellenar previamente los campos del formulario.
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}

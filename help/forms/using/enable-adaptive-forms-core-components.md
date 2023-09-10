@@ -20,7 +20,7 @@ ht-degree: 22%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 **Se aplica a:** ✅ Componentes Principales Del Formulario Adaptable ❎ Componentes Básicos Del Formulario Adaptable.

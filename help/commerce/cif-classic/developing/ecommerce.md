@@ -22,7 +22,7 @@ El marco de integración incluye una capa de integración con una API. Esto le p
 * AEM conectar un sistema de comercio electrónico y extraer datos de productos en el sistema de
 * AEM crear componentes de para las capacidades de comercio independientemente del motor específico de comercio electrónico
 
-Para obtener más información, consulte:
+Para obtener más información, consulte lo siguiente:
 
 * [Desarrollo (genérico)](/help/commerce/cif-classic/developing/generic.md)
 * [Desarrollo con SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)

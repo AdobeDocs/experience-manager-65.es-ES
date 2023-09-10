@@ -425,7 +425,7 @@ Además, si esta solución de integración se utiliza con Experience Manager Sit
 * [!DNL Adobe Developer Console] : la integración se crea para las etiquetas de Experience Platform.
 * Nodo de creación de Experience Manager: configuración de IMS y configuración de nube de etiquetas de Experience Platform.
 
-Como parte de la configuración de, asegúrese de que tiene acceso a una empresa de Adobe Experience Cloud que ya tiene habilitadas las etiquetas de Adobe Analytics y de Experience Platform.
+Como parte de la configuración de, asegúrese de que tiene acceso a una empresa de Adobe Experience Cloud que ya tiene habilitadas las etiquetas de Adobe Analytics y Experience Platform.
 
 ## Configuración de Adobe Analytics para la integración {#configuring-adobe-analytics-for-the-integration}
 
@@ -796,7 +796,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
 ## Configuración de Experience Platform Tags Cloud para la integración {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. En Experience Manager Author, cerca de la esquina superior izquierda, seleccione la opción **[!UICONTROL Herramientas]** (martillo) y, a continuación, vaya a **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuraciones de etiquetas de Experience Platform]**.
+1. En Experience Manager Author, cerca de la esquina superior izquierda, seleccione la opción **[!UICONTROL Herramientas]** (martillo) y, a continuación, vaya a **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuraciones de etiquetas de Experience Platform]**.
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -855,4 +855,4 @@ Sin embargo, se admite en el nodo de publicación del Experience Manager. Con la
 
 Es posible solucionar esta limitación. Especifique la URL de desarrollo o ensayo de la biblioteca de etiquetas de Platform en la configuración de nube de etiquetas de Experience Platform para el nodo de publicación Experience Manager anterior. Al hacerlo, el nodo de publicación del Experience Manager utiliza la versión de desarrollo o ensayo de la biblioteca de etiquetas del Experience Platform.
 
-Consulte [Integrar Experience Manager con etiquetas de Experience Platform mediante [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) para obtener más información sobre la configuración de la nube de etiquetas de Experience Platform.
+Consulte [Integrar Experience Manager con etiquetas de Experience Platform mediante [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/experience-platform-data-collection-tags/overview.html?lang=es) para obtener más información sobre la configuración de la nube de etiquetas de Experience Platform.

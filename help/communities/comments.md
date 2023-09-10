@@ -137,7 +137,7 @@ En el **Moderación de usuario** , especifique cómo se administran los comentar
 
 * **Límite de indicación**
 
-  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser bueno o igual que **Umbral de moderación**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser mayor o igual que **Umbral de moderación**. El valor predeterminado es 5.
 
 #### Pestaña Configuración de ordenación {#sort-settings-tab}
 
@@ -147,7 +147,7 @@ En el **Configuración de orden** , especifique cómo se ordenan los comentarios
 
   Tire hacia abajo para seleccionar una de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`.
 
-* **Orden**
+* **Orden de clasificación**
 
   Tire hacia abajo para seleccionar una de `Ascending` o `Descending`.
 

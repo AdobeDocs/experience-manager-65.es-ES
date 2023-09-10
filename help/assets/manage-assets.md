@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Entrada [!DNL Adobe Experience Manager Assets], puede hacer más que almacenar y administrar sus recursos. [!DNL Experience Manager] ofrece funciones de administración de recursos de nivel empresarial. Puede editar y compartir recursos, ejecutar búsquedas avanzadas y crear varias representaciones de decenas de formatos de archivo compatibles. También puede administrar versiones y derechos digitales, automatizar el procesamiento de recursos, administrar y administrar metadatos, colaborar mediante anotaciones y mucho más.
@@ -251,7 +251,7 @@ Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede aplicarl
 
 | Opción | Subopción | Descripción |
 |---|---|---|
-| Procesando | | Elegir **[!UICONTROL Rasterizar]** para convertir gráficos vectoriales del archivo al formato de mapa de bits. |
+| Procesamiento | | Elegir **[!UICONTROL Rasterizar]** para convertir gráficos vectoriales del archivo al formato de mapa de bits. |
 | Mantener el fondo transparente en la imagen procesada | | Mantenga la transparencia en segundo plano del archivo. |
 | Resolución | | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo. |
 | Espacio color | | Seleccione el menú Espacio de color y elija entre las siguientes opciones de espacio de color: |
@@ -298,7 +298,7 @@ Elija entre las siguientes opciones:
 
 | Opción | Subopción | Descripción |
 |---|---|---|
-| Procesando | Rasterizar | (Predeterminado) Extrae las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Elija esta opción si desea crear un catálogo electrónico. |
+| Procesamiento | Rasterizar | (Predeterminado) Extrae las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Elija esta opción si desea crear un catálogo electrónico. |
 | Extraer | Palabras de búsqueda | Extrae palabras del archivo del PDF para que se pueda buscar en él por palabra clave en un visor de catálogos electrónicos. |
 | | Vínculos | Extrae vínculos de los archivos del PDF y los convierte a mapas de imágenes que se utilizan en un visor de catálogos electrónicos. |
 | Generar catálogo electrónico automáticamente a partir de un PDF de varias páginas | | Crea automáticamente un catálogo electrónico a partir del archivo del PDF. El catálogo electrónico recibe el nombre del archivo de PDF que ha cargado. (Esta opción solo está disponible si rasteriza el archivo de PDF a medida que lo carga). |

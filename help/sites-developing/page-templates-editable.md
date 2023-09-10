@@ -12,7 +12,7 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '3221'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -56,7 +56,7 @@ La creación de plantillas editables se realiza principalmente con [consola de p
 
 AEM Para obtener más información sobre cómo utilizar plantillas editables en un proyecto de, consulte [AEM Creación de un proyecto de con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Al crear una nueva plantilla editable:
+Al crear una nueva plantilla editable, haga lo siguiente:
 
 1. Crear un [carpeta para las plantillas](#template-folders). Esta carpeta no es obligatoria, pero se recomienda como práctica recomendada.
 1. Seleccione una [tipo de plantilla](#template-type). Este tipo se copia para crear el [definición de plantilla](#template-definitions).

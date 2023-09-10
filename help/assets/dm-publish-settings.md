@@ -21,7 +21,7 @@ ht-degree: 3%
 La configuración de Dynamic Media Publish solo está disponible si:
 
 * Está ejecutando Dynamic Media en modo Scene7. Consulte [Habilitar Dynamic Media en modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Tiene un *existente* **[!UICONTROL Configuración de Dynamic Media]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager 6.5.11 o superior. Consulte [Creación de una configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Tiene un *existente* **[!UICONTROL Configuración de Dynamic Media]** (en **[!UICONTROL Cloud Service]**) en Adobe Experience Manager 6.5.11 o superior. Consulte [Creación de una configuración de Dynamic Media en Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Es administrador del sistema Experience Manager con privilegios de administrador.
 
 El programa de instalación de publicación de Dynamic Media está diseñado para que lo utilicen programadores y desarrolladores de sitios web experimentados. Adobe Dynamic Media recomienda que los usuarios que cambien esta configuración de publicación estén familiarizados con el Dynamic Media de Adobe, las normas y convenciones del protocolo HTTP y la tecnología básica de creación de imágenes.

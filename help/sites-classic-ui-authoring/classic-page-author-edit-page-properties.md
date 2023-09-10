@@ -23,7 +23,7 @@ Puede definir las propiedades para una página. Estas pueden variar según la na
 
 Las propiedades se distribuyen entre varias pestañas:
 
-### Basic {#basic}
+### Básica {#basic}
 
 * **Título**
 

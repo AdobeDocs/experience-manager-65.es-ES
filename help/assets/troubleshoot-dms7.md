@@ -33,7 +33,7 @@ Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo sigu
 
   Este paquete de funciones opcional es compatible con FTP o si migra recursos a Dynamic Media desde Dynamic Media Classic.
 
-* Vaya a la interfaz de usuario de Cloud Services y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles]**.
+* Vaya a la interfaz de usuario de Cloud Service y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles]**.
 * Asegúrese de que la variable `Dynamic Media Asset Activation (scene7)` el agente de replicación está habilitado.
 
   Este agente de replicación se encuentra en Agentes de autor.
@@ -177,7 +177,7 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
    <td>
     <ol>
      <li>Compruebe la instancia de Experience Manager con <code>-r dynamicmedia_scene7</code></li>
-     <li>Compruebe que la Configuración de Dynamic Media en Cloud Services esté correctamente configurada.</li>
+     <li>Compruebe que la Configuración de Dynamic Media en Cloud Service esté correctamente configurada.</li>
      <li>Compruebe que la carpeta tenga un perfil de vídeo. Además, compruebe el perfil de vídeo.</li>
     </ol> </td>
   </tr>
@@ -255,7 +255,7 @@ Si los recursos de muestra o la ilustración preestablecida del visualizador no 
 1. Vaya al Administrador de paquetes CRX: `https://localhost:4502/crx/packmgr/`.
 1. Busque el paquete del visor en la lista; comienza con `cq-dam-scene7-viewers-content`.
 1. Seleccionar **Reinstalar**.
-1. En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración de la configuración de Dynamic Media - S7.
+1. En Cloud Service, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración de la configuración de Dynamic Media - S7.
 1. No realice cambios, seleccione **Guardar**.
 Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
 
@@ -276,4 +276,4 @@ Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear
 1. Elimine el `viewer` carpeta.
 1. Cerca de la esquina superior izquierda de la página de CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
 1. En la esquina superior izquierda de la página del CRXDE Lite, seleccione **Volver a inicio** icono.
-1. Vuelva a crear un [Configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+1. Vuelva a crear un [Configuración de Dynamic Media en Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

@@ -1,17 +1,17 @@
 ---
-title: Encabezado y sin encabezado en AEM
-description: AEM Los proyectos de se pueden implementar en un modelo con encabezado y sin encabezado, pero la opción no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
+title: Modelos con encabezado y sin encabezado en AEM
+description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1014'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
 # Encabezado y sin encabezado en AEM {#headful-headless}
 
-Los proyectos de Adobe Experience Manager se pueden implementar en modelos con encabezado y sin encabezado, pero la opción no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. SPA Este documento proporciona una visión general de los diferentes modelos y describe los niveles de integración de la.
+Los proyectos de Adobe Experience Manager se pueden implementar tanto en modelos con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. SPA Este documento proporciona una visión general de los diferentes modelos y describe los niveles de integración de la.
 
 ## Información general {#overview}
 

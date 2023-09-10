@@ -1,7 +1,7 @@
 ---
 title: Proyectos
 seo-title: Projects
-description: Los proyectos le permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
+description: Los proyectos permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
 seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,20 +13,20 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 14%
+ht-degree: 34%
 
 ---
 
 
 # Proyectos {#projects}
 
-Los proyectos permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de sus proyectos. AEM Los tipos de recursos que puede asociar a un proyecto se denominan en la sección Tipos de recursos (mosaicos), que se denominan en la sección Tipos de recursos (mosaicos) de los que se puede hacer referencia en la sección. Los mosaicos pueden incluir información sobre el proyecto y el equipo, los recursos, los flujos de trabajo y otro tipo de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
+Los proyectos permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de sus proyectos. Los tipos de recursos que puede asociar a un proyecto se denominan Mosaicos en AEM. Los mosaicos pueden incluir información sobre el proyecto y el equipo, los recursos, los flujos de trabajo y otro tipo de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
 
 Como usuario, puede:
 
 * Creación y eliminación de proyectos
-* Asociar carpetas de contenido y recursos a un proyecto
-* Eliminar vínculos de contenido del proyecto
+* Asociación de carpetas de contenido y recursos a un proyecto
+* Eliminación de vínculos de contenido del proyecto
 
 ## Requisitos de acceso {#access-requirements}
 
@@ -38,7 +38,7 @@ La forma más sencilla de hacerlo es dar el **projects-users** acceso de lectura
 
 ## Consola Proyectos {#projects-console}
 
-AEM En la consola Proyectos es donde puede acceder a sus proyectos y administrarlos dentro de su propio grupo de trabajo de proyectos de.
+La consola Proyectos es donde se accede a los proyectos y se administran dentro de AEM.
 
 ![La consola Proyectos](assets/screen-shot_2019-03-05at125110.png)
 
@@ -106,15 +106,15 @@ Haga clic en el botón de puntos suspensivos en la parte inferior derecha de cua
 
 ### Assets {#assets}
 
-En el **Assets** mosaico, puede recopilar todos los recursos que utiliza para un proyecto en particular.
+En el mosaico **Recursos**, puede recopilar todos los recursos que utilice para un proyecto en particular.
 
 ![Mosaico de recursos](assets/project-tile-assets.png)
 
-Puede cargar recursos directamente en el mosaico.
+Los recursos se cargan directamente en el mosaico.
 
 ### Colecciones de recursos {#asset-collections}
 
-De forma similar a los recursos, puede agregar [colecciones de recursos](/help/assets/manage-collections.md) directamente en el proyecto. Las colecciones se definen en Assets.
+Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/help/assets/manage-collections.md) directamente al proyecto. Las colecciones se definen en Recursos.
 
 ![Mosaico de colección de recursos](assets/project-tile-asset-collection.png)
 
@@ -141,7 +141,7 @@ Puede asignar al vínculo un nombre fácil de reconocer, así como cambiar la mi
 
 ### Información del proyecto {#project-info}
 
-El **Información del proyecto** El mosaico proporciona información general sobre el proyecto, incluida una descripción, el estado del proyecto (inactivo o activo), una fecha de vencimiento y los miembros. Además, puede agregar una miniatura de proyecto, que se mostrará en la página principal Proyectos.
+El **Información del proyecto** El mosaico proporciona información general sobre el proyecto, incluida una descripción, el estado del proyecto (inactivo o activo), una fecha de vencimiento y los miembros. Además, puede añadir una miniatura de proyecto, que se muestra en la página principal Proyectos.
 
 ![Mosaico de información del proyecto](assets/project-tile-info.png)
 
@@ -155,7 +155,7 @@ Para configurar la traducción, consulte el documento [Creación de proyectos de
 
 ### Equipo {#team}
 
-En este mosaico, puede especificar los miembros del equipo del proyecto. Al editar, puede introducir el nombre del miembro del equipo y asignar la función del usuario.
+En este mosaico, puede especificar los miembros del equipo del proyecto. Durante la edición, puede introducir el nombre del miembro del equipo y asignar la función de usuario.
 
 ![Mosaico de equipo](assets/project-tile-team.png)
 
@@ -185,7 +185,7 @@ Puede iniciar flujos de trabajo para el proyecto. Si se está ejecutando algún 
 
 En función del proyecto que cree, hay diferentes flujos de trabajo disponibles.
 
-Estas se describen en [Uso de flujos de trabajo de proyecto.](/help/sites-authoring/projects-with-workflows.md)
+Estos se describen en [Uso de flujos de trabajo de proyecto.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanzamientos {#launches}
 
@@ -210,7 +210,7 @@ Las plantillas sirven de base para iniciar el proyecto. AEM proporciona estas pl
 
 En función de la plantilla que seleccione, tendrá diferentes opciones disponibles dentro del proyecto, como las funciones de usuario y los flujos de trabajo proporcionados.
 
-## Funciones de usuario en un proyecto {#user-roles-in-a-project}
+## Funciones de un usuario en un proyecto {#user-roles-in-a-project}
 
 Las diferentes funciones de usuario se definen en la plantilla de proyecto y se utilizan por dos motivos principales:
 

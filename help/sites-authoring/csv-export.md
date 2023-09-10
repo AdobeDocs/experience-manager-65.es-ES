@@ -14,7 +14,7 @@ exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 71%
+ht-degree: 81%
 
 ---
 
@@ -48,7 +48,7 @@ El **Crear exportación de CSV** El asistente le permite seleccionar:
 * Profundidad
    * Ruta principal
    * Solo elementos secundarios directos
-   * Niveles adicionales de elementos secundarios
+   * Niveles adicionales de tareas secundarias
    * Niveles
 
 El archivo `export.csv` resultante se puede abrir en Excel o en cualquier otra aplicación compatible.

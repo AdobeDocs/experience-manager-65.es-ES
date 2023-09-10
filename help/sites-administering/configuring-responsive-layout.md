@@ -54,7 +54,7 @@ Esto permite crear y editar sitios web interactivos que reorganizan el diseño s
 >
 >Aunque la variable **Contenedor de diseño** está disponible en la IU clásica, su funcionalidad completa solo está disponible en la IU táctil.
 
-Con estos mecanismos de cuadrícula adaptable puede:
+Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
 * Utilice puntos de interrupción (que indican la agrupación del dispositivo) para definir un comportamiento de contenido diferente en función del diseño del dispositivo.
 * Ocultar componentes basados en grupos de dispositivos (defina en qué punto de interrupción se ocultará un componente).

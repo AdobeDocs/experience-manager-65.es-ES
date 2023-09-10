@@ -5,7 +5,7 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 26%
+ht-degree: 47%
 
 ---
 
@@ -36,7 +36,7 @@ Los arquitectos de la información deben diseñar consultas para sus extremos de
    * El editor de consultas incluye la finalización del código y teclas de función para ejecutar fácilmente la consulta.
      ![Editor de GraphiQL](assets/graphiql.png)
 
-1. Suponiendo que el modelo que ha creado se haya llamado `person` con campos `firstName`, `lastName`, y `position`, puede crear una consulta sencilla para recuperar el contenido del fragmento de contenido.
+1. Suponiendo que el modelo que hemos creado se llamara `person` con campos `firstName`, `lastName` y `position`, podemos generar una consulta sencilla para recuperar el contenido de nuestro fragmento de contenido.
 
    ```text
    query 

@@ -11,7 +11,7 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -91,11 +91,11 @@ Para habilitar o deshabilitar un componente:
 
    En el **Componentes permitidos** , se definen qué componentes están disponibles para parsys.
 
-   * Los componentes se agrupan por sus grupos de componentes, que se pueden expandir y contraer.
-   * Se puede seleccionar un grupo completo marcando el nombre del grupo y se puede anular la selección de todos desmarcando.
-   * Un signo menos representa al menos uno, pero no todos los elementos de un grupo están seleccionados.
-   * Hay disponible una búsqueda para filtrar un componente por nombre.
-   * Los recuentos enumerados a la derecha del nombre del grupo de componentes representan el número total de componentes seleccionados en esos grupos, independientemente del filtro.
+   * Los componentes se clasifican por grupos de componentes, que pueden ampliarse y contraerse.
+   * Es posible seleccionar un grupo completo al marcar la casilla del nombre del grupo, y se puede anular la selección de todo al desactivar la casilla de verificación.
+   * Un signo menos representa que se ha seleccionado al menos uno de los elementos de un grupo, pero no todos.
+   * Puede realizar búsquedas filtrando por el nombre de los componentes.
+   * Los recuentos que aparecen a la derecha del nombre del grupo de componentes representan el número total de componentes seleccionados de dichos grupos, independientemente del filtro.
 
    La configuración se define por componente de página. Si las páginas secundarias utilizan la misma plantilla o componente de página (normalmente alineado), se aplicará la misma configuración al sistema de párrafos correspondiente.
 

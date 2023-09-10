@@ -1,5 +1,5 @@
 ---
-title: Seguimiento y mantenimiento de la Adobe Experience Manager instancia
+title: Supervisión y mantenimiento de su Adobe Experience Manager instancia
 description: AEM Obtenga información sobre cómo monitorizar los.
 uuid: 14466552-5c92-4730-a427-85675a2b121c
 contentOwner: User
@@ -63,11 +63,11 @@ A menudo, se realiza una copia de seguridad completa a intervalos regulares (por
 >
 >Para obtener más información sobre el rendimiento de las copias de seguridad, lea la [Rendimiento de backup](/help/sites-deploying/configuring-performance.md#backup-performance) sección.
 
-### Copia de seguridad de la instalación de software {#backing-up-your-software-installation}
+### Copia de seguridad de la instalación del software {#backing-up-your-software-installation}
 
-Después de la instalación o cambios significativos en la configuración, cree una copia de seguridad de la instalación del software.
+Después de la instalación o cambios significativos en la configuración, cree un copia de seguridad de la instalación del software.
 
-Para ello tarea, [ realice una copia de seguridad de todo el repositorio ](#backing-up-your-repository) y, a continuación:
+Para llevar a cabo este tarea, [haga una copia de seguridad de todo su repositorio](#backing-up-your-repository) y luego:
 
 1. Parada AEM.
 1. Realizar copia de seguridad de todo `<cq-installation-dir>` desde el sistema de archivos.
@@ -178,13 +178,13 @@ El proceso enumera todos los nodos que se han procesado. Durante el proceso, un 
 Además, la consola proporciona información útil sobre las versiones:
 
 * `V 1.0`: el número de versión.
-* `V 1.0.1`&#42;: la estrella indica que la versión es la versión actual (base) y no se puede depurar.
+* `V 1.0.1`&#42;: la estrella indica que la versión es la versión actual (base) y que no se puede depurar.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la fecha de la versión.
 
-En el siguiente ejemplo:
+En el ejemplo siguiente:
 
-* Las **[!DNL Shirts]** versiones se depuran porque su antigüedad de versión es mayor que dos días.
+* Las **[!DNL Shirts]** versiones se depuran porque su antigüedad es superior a dos días.
 * El **[!DNL Tonga Fashions!]** las versiones se purgan porque su número de versiones es mayor que 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -300,9 +300,9 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    >[!NOTE]
    >
-   >Aunque no es un requisito técnico, es aconsejable `<identifier>` que sea único.
+   >Aunque no es un requisito técnico, es recomendable hacer `<identifier>` único.
 
-1. Configure las siguientes propiedades en este nodo:
+1. Establezca las siguientes propiedades en este nodo:
 
    * Nombre: `org.apache.sling.commons.log.file`
 
@@ -433,11 +433,11 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >para indicar cuándo se crea un nuevo archivo (y el nombre del archivo existente cambia según el patrón de nombre).
    >
    >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como número de bytes o puede agregar uno de los indicadores de tamaño: `KB`, `MB`, o `GB` (se ignora mayúsculas y minúsculas).
-   >* Se puede especificar una programación de fecha y hora como `java.util.SimpleDateFormat` patrón. Define la período de tiempo después de la cual se gira el archivo. Además, el sufijo adjuntado al archivo rotado (para la identificación).
+   >* Como patrón se puede especificar una programación de fecha/hora `java.util.SimpleDateFormat` . Define el período de tiempo tras el cual se rota el archivo. Además, el sufijo anexado al archivo girado (para su identificación).
    >
-   >El valor predeterminado es &#39;.&#39;DD-MM-AAAA (para la rotación diaria del registro).
+   >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria de registros).
    >
-   >Por ejemplo, a la medianoche del 20 de enero de 2010 (o al primer mensaje de registro después de esta fecha, para ser preciso),.. se ha cambiado el nombre de/logs/error.log a.. /logs/error.log.2010-01-20. El registro de 21 de enero es salida a (nuevo y vacío).. /logs/error.log hasta que se convierta en el siguiente cambio del día.
+   >Por ejemplo, a medianoche del 20 de enero de 2010 (o cuando se produce el primer mensaje de registro posterior a esta fecha para ser preciso), .. /logs/error.log se renombra a.. /logs/error.log.2010-01-20. El registro del 21 de enero se genera en (nuevo y vacío) .. /logs/error.log hasta que se transfiere al cambio de día.
    >
    >| `'.'yyyy-MM` | Rotación al comienzo de cada mes |
    >|---|---|
@@ -923,7 +923,7 @@ El comando herramienta `jconsole` está disponible con el JDK de.
 
    Ahora puede seleccionar otras opciones.
 
-### Monitorización del rendimiento mediante (J) VisualVM {#monitoring-performance-using-j-visualvm}
+### Supervisión del rendimiento mediante (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
 Para JDK 6-8, el comando tool `visualvm` está disponible. Después de instalar un JDK, puede hacer lo siguiente:
 
@@ -1134,13 +1134,13 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 * Si ha deshabilitado la recopilación de información de depuración, puede configurarse en varias ubicaciones, incluidas las siguientes:
 
    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Controlador de JavaScript de la eslinga de Apache](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Configuración de registro de la eslinga de Apache](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+   * [Controlador de JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Administrador de bibliotecas HTML de CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ Gestión de contenidos web depuración Filtrar](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Filtrar de depuración de CQ Gestión de contenidos web](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Si y cómo ha configurado [ versión de depuración](/help/sites-deploying/version-purging.md)
+* Si ha configurado Versión purga de y cómo lo ha hecho [](/help/sites-deploying/version-purging.md)
 * Base de conocimiento:
 
    * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es)

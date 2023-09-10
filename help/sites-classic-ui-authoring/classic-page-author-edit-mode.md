@@ -26,7 +26,7 @@ Algunos están disponibles inmediatamente a través de la barra de tareas, otros
 
 >[!CAUTION]
 >
->AEM En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación estándar de la instalación de la aplicación de la versión de la aplicación de la versión de la aplicación de.
+>En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación de AEM estándar.
 >
 >Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Estos componentes personalizados pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 

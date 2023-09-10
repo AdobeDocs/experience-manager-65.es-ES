@@ -165,7 +165,7 @@ Para gráficos que proporcionan datos espaciales (por ejemplo, para admitir la d
 
 * CAPTCHA:
 
-un Captcha es una *prueba de Turing pública completamente automatizada para distinguir entre equipos y humanos*. Se trata de una comprobación de seguridad que se utiliza en las páginas web para distinguir a los seres humanos de software malintencionado, pero que puede instaurar barreras de accesibilidad. Son imágenes que requieren que los usuarios describan lo que ven para pasar una prueba de seguridad. Como no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪
+un Captcha es una *prueba de Turing pública completamente automatizada para distinguir entre equipos y humanos*. Se trata de una comprobación de seguridad que se utiliza en las páginas web para distinguir a los seres humanos de software malintencionado, pero que puede instaurar barreras de accesibilidad. Son imágenes que requieren que se describa lo que se ve para pasar una prueba de seguridad. Como no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪
 
 El W3C proporciona varias sugerencias, como las siguientes. Cada uno de estos enfoques tiene sus propios méritos e inconvenientes.
 
@@ -303,7 +303,7 @@ Se pueden adoptar dos enfoques para cumplir este criterio con éxito. Cualquiera
       * Los usuarios pueden cambiar entre la pista de audio existente (que *no tiene* contiene una descripción del audio) y la nueva pista de audio (que *hace* contiene una descripción del audio).
       * Este método evita interrupciones a los usuarios que no necesitan la descripción adicional.
 
-   * Creando una segunda versión del contenido de vídeo que permita descripciones de audio extendidas. Al hacerlo, se reducen las dificultades asociadas con la descripción detallada del audio dentro de los espacios entre los diálogos existentes, pausando temporalmente el audio y el vídeo en los puntos apropiados. El resultado es una descripción del audio mucho más larga antes de que se retome la acción. Como en el ejemplo anterior, se recomienda proporcionarla como pista de audio adicional opcional para evitar que los usuarios que no necesiten la descripción adicional sufran interrupciones.
+   * Creando una segunda versión del contenido de vídeo que permita descripciones de audio extendidas. Al hacerlo, se reducen las dificultades asociadas con la descripción detallada del audio dentro de los espacios entre los diálogos existentes, pausando temporalmente el audio y el vídeo en los puntos apropiados. El resultado es una descripción del audio mucho más larga antes de que se retome la acción. Como en el ejemplo anterior, esta opción resulta mejor como una pista de audio adicional y opcional para prevenir interrupciones a los usuarios que no necesitan la descripción adicional.
 
 1. Proporcionar una transcripción del texto que sea adecuada al equivalente textual del audio y a los elementos visuales del vídeo o animación. Debe incluir, cuando proceda, una indicación de quién habla, una descripción del entorno y expresiones vocales. Según la longitud, se puede colocar la transcripción en la misma página del vídeo o de la animación o en una página aparte; si se elige esta última opción, se debe proporcionar un vínculo a la transcripción junto al vídeo o animación.
 

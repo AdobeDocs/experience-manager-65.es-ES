@@ -6,7 +6,7 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: 79fa58e63596301e1669903ce10dd8b2ba7d0a1b
 workflow-type: tm+mt
 source-wordcount: '4774'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -207,7 +207,7 @@ Por ejemplo, si:
 
 1. Instala un paquete que contenga `Content-Fragment-Model-1` y `Content-Fragment-Model-2`:
 
-   1. Tipos de GraphQL para `Model-1` y `Model-2` se generan.
+   1. Se generan tipos de GraphQL para `Model-1` y `Model-2`.
 
 1. A continuación, modifique `Content-Fragment-Model-2`:
 
@@ -1005,4 +1005,4 @@ AEM AEM En el futuro, el tiene previsto invertir en la API de GraphQL de la.*&qu
 
 ## Tutorial: Introducción a AEM Headless y GraphQL {#tutorial}
 
-¿Busca un tutorial práctico? Desproteger [AEM Introducción a las soluciones sin encabezado y de GraphQL de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) AEM Tutorial completo que ilustra cómo crear y exponer contenido mediante las API de GraphQL de la interfaz de usuario de, y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
+¿Busca un tutorial práctico? Consulte el tutorial completo [Introducción a AEM Headless y GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es), que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS sin encabezado.

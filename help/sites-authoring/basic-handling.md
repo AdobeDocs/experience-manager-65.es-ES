@@ -1,6 +1,6 @@
 ---
 title: AEM Gestión básica al utilizar el entorno de autor de la
-description: AEM Familiarícese con la navegación por el y su uso básico
+description: Familiarícese con la navegación por AEM y su uso básico
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '3017'
-ht-degree: 41%
+ht-degree: 64%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 41%
 >
 >* AEM Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de. Utiliza la consola **Sitios** como base. 
 >
->* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras funcionalidades adicionales estén disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se tratará con más detalle en otras páginas.
+>* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras adicionales estén disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se tratará con más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
@@ -36,7 +36,7 @@ AEM Como la interfaz de usuario de la pantalla es táctil, puede utilizar los ge
 
 ### Primeros pasos {#first-steps}
 
-Inmediatamente después de iniciar sesión, llegará a la [Panel de navegación](#navigation-panel). Al seleccionar una de las opciones, se abre la consola correspondiente.
+Inmediatamente después de iniciar sesión, llegará al [Panel de navegación](#navigation-panel). Al seleccionar una de las opciones, se abre la consola correspondiente.
 
 ![Navegación](assets/bh-01.png)
 
@@ -48,7 +48,7 @@ Inmediatamente después de iniciar sesión, llegará a la [Panel de navegación]
 
 ### Navegación de productos    {#product-navigation}
 
-Cada vez que un usuario accede por primera vez a una consola, se inicia un tutorial de navegación de productos. AEM Tómese un minuto para hacer clic o tocar para obtener una buena descripción general de la gestión básica de los problemas de la.
+Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. Tómese un minuto y haga clic o pulse para obtener una buena descripción general del funcionamiento básico de AEM.
 
 ![Navegación de productos   ](assets/bh-02.png)
 
@@ -71,7 +71,7 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
 * **[Navegación](/help/sites-authoring/basic-handling.md#navigation-panel)**: se representa mediante una brújula   
-* **[Herramientas](/help/sites-authoring/basic-handling.md#tools-panel)** - Representado por un martillo
+* **[Herramientas](/help/sites-authoring/basic-handling.md#tools-panel)**: se representan con un martillo
 
 A continuación, se describen las opciones disponibles en estos paneles.
 
@@ -138,7 +138,7 @@ En el panel Herramientas, cada opción del panel lateral contiene una serie de s
 
 ## Encabezado {#the-header}
 
-El encabezado de siempre está presente en la parte superior de la pantalla. Aunque la mayoría de las opciones del encabezado siguen siendo las mismas independientemente del lugar del sistema, algunas son específicas del contexto.
+El encabezado de siempre está presente en la parte superior de la pantalla. Aunque la mayoría de las opciones del encabezado no varían en todo el sistema, algunas dependen del contexto.
 
 ![Encabezado](assets/bh-03.png)
 
@@ -190,7 +190,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   Las rutas de exploración, que se encuentran en el centro del raíl y siempre muestran la descripción del elemento seleccionado, le permiten desplazarse dentro de una consola específica. Desde la consola Sitios puede desplazarse por los niveles de su sitio web.
 
-  Simplemente haga clic en el texto de la ruta de exploración para mostrar una lista desplegable con los niveles de la jerarquía del elemento seleccionado actualmente. Haga clic en una entrada para ir a esa ubicación.
+  Simplemente haga clic en el texto de la ruta de exploración para ver una lista desplegable con los niveles de la jerarquía del elemento seleccionado actualmente. Haga clic en una entrada para ir a esa ubicación.
 
   ![Niveles de jerarquía](assets/bh-06.png)
 
@@ -208,7 +208,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 * [Vistas](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-  El icono de vista se encuentra en el extremo derecho de la barra de herramientas de AEM. Como también indica la vista actual, cambia. Por ejemplo, en la vista predeterminada, la **vista de columna** muestra lo siguiente:
+  El icono de vista se encuentra en el extremo derecho de la barra de herramientas de AEM. Como indica también la vista actual, cambia. Por ejemplo, en la vista predeterminada, la **vista de columna** muestra lo siguiente:
 
   ![Vista de columna](assets/bh-07.png)
 
@@ -228,9 +228,9 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 Hay varios medios de ayuda disponibles:
 
-* **Barra de herramientas de consola**
+* **Barra de herramientas de la consola**
 
-  Según su ubicación, la variable **Ayuda** abrirá los recursos adecuados:
+  Según su ubicación, el icono **Ayuda** abrirá los recursos adecuados:
 
   ![Barra de herramientas de consola](assets/bh-10.png)
 
@@ -240,7 +240,7 @@ Hay varios medios de ayuda disponibles:
 
 * **Editor de página**
 
-  La primera vez que edita una página, se muestra una serie de diapositivas con el editor de páginas.
+  La primera vez que se edita una página, se muestra una serie de diapositivas de presentación del editor de páginas.
 
   ![Editor de página](assets/bh-11.png)
 
@@ -250,7 +250,7 @@ Hay varios medios de ayuda disponibles:
 
 * **Consola Herramientas**
 
-  Desde el **Herramientas** consola también puede acceder a la **Recursos**:
+  Desde la consola **Herramientas** también puede acceder a los **recursos externos**:
 
    * **Documentación**
 Ver la documentación de Web Experience Management.
@@ -262,7 +262,7 @@ Recursos y descargas para desarrolladores
   >
   >Puede acceder a una descripción general de las teclas de método abreviado disponibles en cualquier momento mediante la tecla de marcación rápida `?` (signo de interrogación) en una consola.
   >
-  >Para obtener una descripción general de todos los métodos abreviados de teclado, consulte la siguiente documentación:
+  >Para obtener información general de todos los métodos abreviados de teclado, consulte la siguiente documentación:
   >
   >* [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >* [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
@@ -289,9 +289,9 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 
 ## Acciones rápidas    {#quick-actions}
 
-Entrada [Vista de tarjeta](#cardviewquickactions) algunas acciones están disponibles como iconos de acción rápida y se encuentran en la barra de herramientas. Los iconos de acción rápida están disponibles para un solo elemento a la vez y eliminan la necesidad de preseleccionar.
+Entrada [Vista de tarjeta](#cardviewquickactions) algunas acciones están disponibles como iconos de acción rápida y se encuentran en la barra de herramientas. Los iconos de acción rápida están disponibles para un único elemento a la vez, con lo que no es necesario preseleccionarlos.
 
-Las acciones rápidas están visibles al pasar el ratón (dispositivo de escritorio) por una tarjeta de recursos. Las acciones rápidas disponibles pueden depender de la consola y del contexto. Por ejemplo, estas son las acciones rápidas para una página de la consola **Sitios**:
+Las acciones rápidas se pueden ver al pasar el ratón (dispositivo de escritorio) por encima de una tarjeta de recurso. Las acciones rápidas disponibles pueden depender de la consola y del contexto. Por ejemplo, estas son las acciones rápidas para una página de la consola **Sitios**:
 
 ![Acciones rápidas](assets/bh-13.png)
 
@@ -308,7 +308,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 
 >[!NOTE]
 >
->De forma predeterminada, AEM Assets no muestra las representaciones originales de los recursos en la interfaz de usuario como miniaturas en ninguna de las vistas. Si es administrador, puede utilizar superposiciones para configurar AEM Assets de modo que muestre las representaciones originales como miniaturas.
+>De forma predeterminada, AEM Assets no muestra las representaciones originales de los recursos de la IU como miniaturas en ninguna de las vistas. Si es administrador, puede utilizar superposiciones para configurar AEM Assets de modo que muestren las representaciones originales como miniaturas.
 
 ### Selección de recursos    {#selecting-resources}
 
@@ -318,7 +318,7 @@ La selección de un recurso específico depende de la vista y el dispositivo com
  <tbody>
   <tr>
    <td> </td>
-   <td>Seleccionar</td>
+   <td>Seleccione lo siguiente</td>
    <td>Deseleccionar</td>
   </tr>
   <tr>
@@ -365,9 +365,9 @@ La selección de un recurso específico depende de la vista y el dispositivo com
 
 #### Seleccionar todo {#select-all}
 
-Para seleccionar todos los elementos de cualquier vista, haga clic en el icono **Seleccionar todo** en la esquina superior derecha de la consola.
+Puede seleccionar todos los elementos de cualquier vista haciendo clic en la opción **Seleccionar todo** situada en el ángulo superior derecho de la consola.
 
-* Entrada **Vista de tarjeta** se seleccionan todas las tarjetas.
+* En la **Vista de tarjeta** se seleccionan todas las tarjetas.
 * Entrada **Vista de lista** se seleccionan todos los elementos de la lista.
 * En **Vista de columna**, se seleccionan todos los elementos de la columna situada más a la izquierda.
 
@@ -405,7 +405,7 @@ La vista de columna permite una navegación visual de un árbol de contenido a t
 
 Si se selecciona un recurso en la columna situada más a la izquierda, se muestran los recursos secundarios en una columna situada a la derecha. Si se selecciona un recurso en la columna derecha, se muestran los recursos secundarios en otra columna a la derecha, etc.
 
-* Puede desplazarse hacia arriba y hacia abajo en el árbol tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha del nombre del recurso.
+* Puede desplazarse hacia arriba y hacia abajo en el árbol, tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha del nombre del recurso.
 
    * El nombre del recurso y las comillas angulares se resaltarán cuando se pulse o haga clic en él.
 
@@ -424,8 +424,8 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
   Cuando se selecciona una página en la vista de columna, la página seleccionada se muestra en la última columna junto con los siguientes detalles:
 
-   * Título de página
-   * Nombre de página (parte de la dirección URL de la página)
+   * Título de la página
+   * Nombre de la página (parte de la dirección URL de la página)
    * Plantilla en la que se basa la página
    * Detalles de modificación
    * Idioma de la página
@@ -435,7 +435,7 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
 ![bh-15-1](assets/bh-15-1.png)
 
-* La vista de tarjeta muestra tarjetas de información para cada elemento del nivel actual. Proporcionan información como:
+* La vista de tarjeta muestra tarjetas de información para cada elemento del nivel actual. Proporcionan información como la siguiente:
 
    * Una representación visual del contenido de la página.
    * El título de la página.
@@ -445,7 +445,7 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
       * Los marcadores que indican las acciones requeridas pueden estar relacionados con las entradas de su [Bandeja de entrada](/help/sites-authoring/inbox.md).
 
-* [Acciones rápidas](#quick-actions) también están disponibles en esta vista, como la selección y acciones comunes como la edición.
+* Las [acciones rápidas](#quick-actions) también están disponibles en esta vista, como la selección y acciones comunes como la edición.
 
   ![Vista de tarjeta: acciones rápidas](assets/bh-13-1.png)
 
@@ -466,22 +466,22 @@ Si se selecciona un recurso en la columna situada más a la izquierda, se muestr
 
       * Toque o haga clic en la casilla de verificación para anular toda la selección.
 
-   * Cuando sólo se seleccionan algunos elementos, aparece con un signo menos.
+   * Cuando solo se seleccionan algunos elementos, aparece con un signo menos.
 
       * Toque o haga clic en la casilla de verificación para seleccionar todo.
       * Vuelva a tocar o hacer clic en la casilla de verificación para anular toda la selección.
 
 * Seleccione las columnas a mostrar mediante la opción **Ajustes de visualización**, que se encuentra debajo del botón Vistas. Las siguientes columnas están disponibles para su visualización:
 
-   * **Nombre** : Nombre de página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia independientemente del idioma
-   * **Modificado** - Fecha de la última modificación y última modificación del usuario
-   * **Publicado** - Estado de publicación
+   * **Nombre**: nombre de la página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia, independientemente del idioma
+   * **Modificado**: fecha de la última modificación y de la última modificación del usuario
+   * **Publicado**: estado de publicación
    * **Plantilla**: plantilla en la que se basa la página
-   * **Flujo de trabajo** - Flujo de trabajo aplicado actualmente a la página. Tiene más información disponible al pasar el ratón o abrir la línea de tiempo.
+   * **Flujo de trabajo**: flujo de trabajo aplicado actualmente a la página. Tiene más información disponible al pasar el ratón o abrir la línea de tiempo.
 
-   * **Análisis de página**
+   * **Análisis de la página**
    * **Visitantes únicos**
-   * **Tiempo en la página**
+   * **Tiempo empleado en la página**
 
   ![Configuración de vista - Configurar columnas](assets/bh-21.png)
 
@@ -529,7 +529,7 @@ Con el panel lateral del árbol de contenido junto con una vista de lista o una 
 
 >[!NOTE]
 >
->Una vez seleccionada una entrada en la vista de jerarquía, se pueden utilizar las teclas de flecha para desplazarse rápidamente por la jerarquía.
+>Una vez seleccionada una entrada en la vista de jerarquía, las teclas de flecha sirven para desplazarse rápidamente por la jerarquía.
 >
 >Consulte la [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) para obtener más información.
 
@@ -567,7 +567,7 @@ Se puede acceder a estas opciones mediante las comillas angulares que hay junto 
 
 ### Referencias {#references}
 
-**Referencias** muestra las conexiones con el recurso seleccionado. Por ejemplo, en la consola **Sitios**, [Referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) muestra lo siguiente para páginas:
+Las **referencias** muestran las conexiones con el recurso seleccionado. Por ejemplo, en la consola **Sitios**, [Referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) muestra lo siguiente para páginas:
 
 * [Lanzamientos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)

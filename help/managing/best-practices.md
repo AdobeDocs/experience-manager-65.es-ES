@@ -347,7 +347,7 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
 
    * Manual de operaciones
    * Cualquier personalización que pueda afectar a las actualizaciones
-   * Notas de versión
+   * Notas de la versión
 
 ### Rendimiento y pruebas {#performance-and-testing}
 
@@ -604,7 +604,7 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
 * AEM Otras prácticas recomendadas y directrices relacionadas con la administración de un proyecto de:
    * [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [Operaciones de desarrollo empresarial ](/help/managing/enterprise-devops.md)
+   * [Operaciones de desarrollo empresarial](/help/managing/enterprise-devops.md)
    * [Prácticas recomendadas para la optimización de los motores de búsqueda y administración URL](/help/managing/seo-and-url-management.md)
    * [AEM Directrices de accesibilidad web de y](/help/managing/web-accessibility.md)
    * [Reglamento general de protección de datos](/help/managing/data-protection-and-privacy.md)* [Implementación y mantenimiento de prácticas recomendadas](/help/sites-deploying/best-practices.md)
@@ -618,7 +618,7 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
    * [Seguridad](/help/sites-developing/security.md)
    * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
-   * [Operaciones de desarrollo empresarial ](/help/managing/enterprise-devops.md)
+   * [Operaciones de desarrollo empresarial](/help/managing/enterprise-devops.md)
    * [Tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
    * AEM Conceptos de la:
 

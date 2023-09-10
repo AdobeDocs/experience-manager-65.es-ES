@@ -11,7 +11,7 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1909'
-ht-degree: 12%
+ht-degree: 21%
 
 ---
 
@@ -84,7 +84,7 @@ Al crear una nueva página, hay dos campos de claves:
 * **[Nombre](#name)**:
 
    * Se usa para generar la URI.
-   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se deriva del título.
+   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título.
 
 AEM Al crear una página nueva, la opción de configuración de la página de inicio de sesión es: [valide el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
 
@@ -120,15 +120,15 @@ En la IU clásica puede **no puede introducir caracteres no válidos** en el **N
 >
 >Evite utilizar un código de dos letras como se define en la norma ISO-639-1, a menos que sea la raíz de un idioma.
 >
->Consulte [Preparación del contenido para su traducción](/help/sites-administering/tc-prep.md) para obtener más información.
+>Consulte [Preparación de contenido para su traducción](/help/sites-administering/tc-prep.md) para obtener más información.
 
 ### Plantillas {#templates}
 
-AEM En, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
+En AEM, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
-AEM Se incluye con varias plantillas listas para usar. Se proporciona de forma predeterminada. Las plantillas ofrecidas dependen del sitio web individual y la información que se proporcione (al crear la nueva página) depende de la interfaz de usuario que se utilice. Los campos principales son:
+AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas ofrecidas dependen del sitio web individual y la información que se proporcione (al crear la nueva página) depende de la interfaz de usuario que se utilice. Los campos principales son:
 
 * **Título** El título se muestra en la página web resultante.
 
@@ -178,7 +178,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
    >[!NOTE]
    >
-   >Consulte [Convenciones de nomenclatura de páginas](#page-naming-conventions).
+   >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
    La información mínima necesaria para crear una página nueva es la siguiente **Título** y la plantilla requerida.
 
@@ -240,7 +240,7 @@ Al copiar, puede copiar lo siguiente:
 
 >[!NOTE]
 >
->Cambiar el nombre de una página también está sujeto a la [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
+>Cambiar el nombre de una página también está sujeto a las [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
 
 El procedimiento para mover o cambiar el nombre de una página es el mismo. Con la misma acción puede:
 
@@ -326,7 +326,7 @@ Puede [bloquear/desbloquear una página](/help/sites-classic-ui-authoring/classi
 
 >[!NOTE]
 >
->Las carpetas también están sujetas al [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de carpeta.
+>Las carpetas también están sujetas a las [Convenciones de asignación de nombres a páginas](#page-naming-conventions) al especificar el nuevo nombre de carpeta.
 
 1. Abra el **Sitios web** y vaya a la ubicación requerida.
 1. En el **Nuevo...** (haga clic en la flecha situada junto a **Nuevo...**), seleccione **Nueva carpeta...**.

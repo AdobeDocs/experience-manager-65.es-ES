@@ -7,7 +7,7 @@ exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '2328'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -152,7 +152,7 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
 
 * **Etiqueta de campo**
-Introducción de una **Etiqueta de campo** generará automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
+Introducir una **Etiqueta de campo** generará automáticamente un **Nombre de propiedad**, que se puede actualizar de forma manual si es necesario.
 
 * **Validación**
 La validación básica está disponible mediante mecanismos como la propiedad **Requerido**. Algunos tipos de datos tienen campos de validación adicionales. Consulte [Validación](#validation) para obtener más información.

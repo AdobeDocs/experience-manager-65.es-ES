@@ -14,7 +14,7 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1557'
-ht-degree: 43%
+ht-degree: 72%
 
 ---
 
@@ -36,7 +36,7 @@ Para obtener más información sobre la creación con AEM, consulte:
 
 Antes de dar la descripción general de los detalles específicos, aquí hay una pequeña colección de sugerencias generales que vale la pena tener en cuenta.
 
-### Consola Sitios {#sites-console}
+### Consola Sites {#sites-console}
 
 * **Crear**
 
@@ -50,7 +50,7 @@ Antes de dar la descripción general de los detalles específicos, aquí hay una
 
 * Vínculos de navegación 
 
-   * ***Los vínculos no están disponibles para la navegación*** cuando esté en **Editar** modo. Para navegar con vínculos, debe hacer lo siguiente [previsualizar la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante:
+   * ***Los vínculos no están disponibles para la navegación*** cuando esté en el modo **Editar**. Para navegar con vínculos, debe hacer lo siguiente [previsualizar la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante:
 
       * [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode)
       * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
@@ -61,7 +61,7 @@ Antes de dar la descripción general de los detalles específicos, aquí hay una
 >
 >Existen varios métodos abreviados del teclado que pueden facilitar la experiencia de creación.
 >
->* [Atajos de teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+>* [Métodos abreviados del teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
 >
 
@@ -79,7 +79,7 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
    ![qgtap-01](assets/qgtap-01.png)
 
-1. También puede [Buscar](/help/sites-authoring/search.md) para una página. Puede seleccionar su página de entre los resultados mostrados.
+1. También puede [buscar](/help/sites-authoring/search.md) una página. Puede seleccionar la página en los resultados que se muestran.
 
    ![qgtap-03](assets/qgtap-03.png)
 
@@ -88,11 +88,11 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 Hasta [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
 1. [Vaya a la ubicación](#finding-your-page) donde desee crear la página.
-1. Utilice el **Crear** y luego seleccione **Página** de la lista:
+1. Utilice el icono **Crear** y luego seleccione **Página** en la lista:
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. Se abre el asistente que le guiará a través de la recopilación de la información necesaria cuando [creación de la nueva página](/help/sites-authoring/managing-pages.md#creating-a-new-page). Siga las instrucciones que aparecen en pantalla.
+1. Se abre el asistente que le guiará a través de la recopilación de la información necesaria cuando [cree su nueva página](/help/sites-authoring/managing-pages.md#creating-a-new-page). Siga las instrucciones que aparecen en pantalla.
 
 ### Seleccionar su página para ejecutar acciones adicionales   {#selecting-your-page-for-further-action}
 
@@ -158,19 +158,19 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Editar el contenido de un componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) en la página:
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el **Editar** (lápiz) para abrir el cuadro de diálogo.
-      * Abra el editor en contexto del componente pulsando y manteniendo pulsado o haciendo doble clic lentamente. Se muestran las acciones disponibles (para algunos componentes, es una selección limitada).
+      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
+      * Abra el editor del componente pulsando y manteniendo pulsado o haciendo doble clic lento. Se muestran las acciones disponibles (para algunos componentes se trata de una selección limitada).
       * Para ver todas las acciones disponibles, acceda al modo de pantalla completa mediante:
 
      ![Modo de pantalla completa](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar las propiedades de un componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
+      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el icono **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
 
-   * [Mover un componente](/help/sites-authoring/editing-content.md#moving-a-component) o bien:
+   * [Desplazar un componente](/help/sites-authoring/editing-content.md#moving-a-component) mediante las siguientes opciones:
 
-      * Arrastre el componente en cuestión a su nueva ubicación.
+      * Arrastre el componente en cuestión a la ubicación nueva.
       * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Cortar** y **Pegar** donde sea necesario.
 
    * [Copiar (y pegar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
@@ -187,13 +187,13 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Añadir anotaciones](/help/sites-authoring/annotations.md#annotations) a la página:
 
-      * Seleccione el **Anotar** modo (icono de burbuja de voz). Añadir anotaciones mediante el **Añadir anotación** Icono (más). Salga del modo Anotar utilizando la X en la parte superior derecha.
+      * Seleccione el modo **Anotar** (icono de burbuja de voz). Añada anotaciones utilizando el icono **Añadir anotación** (signo más). Salga del modo Anotar utilizando la X en la parte superior derecha.
 
      ![Anotar](do-not-localize/screen_shot_2018-03-21at160813.png)
 
-   * [Previsualización de una página](/help/sites-authoring/editing-content.md#preview-mode) (para ver cómo aparecerá en el entorno de publicación)
+   * [Vista previa de una página](/help/sites-authoring/editing-content.md#preview-mode) (para ver cómo aparecerá en el entorno de publicación)
 
-      * Seleccionar **Previsualizar** en la barra de herramientas.
+      * Seleccione **Vista previa** en la barra de herramientas.
 
    * Vuelva al modo de edición (o seleccione otro modo) utilizando **Editar** selector desplegable.
 
@@ -203,12 +203,12 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
 ### Editar las Propiedades de la página   {#editing-the-page-properties}
 
-Existen dos métodos (principales) de [editar propiedades de página](/help/sites-authoring/editing-page-properties.md):
+Existen dos métodos (principales) para [editar las propiedades de la página](/help/sites-authoring/editing-page-properties.md):
 
 * Desde la consola **Sitios**:
 
-   1. [Navegue hasta la página](#finding-your-page) que desea publicar.
-   1. Seleccione el **Propiedades** icono de:
+   1. [Desplácese hasta la página](#finding-your-page) que quiera publicar.
+   1. Seleccione el icono **Propiedades** desde:
 
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
       * La barra de herramientas cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
@@ -217,20 +217,20 @@ Existen dos métodos (principales) de [editar propiedades de página](/help/site
 
    1. Se mostrarán las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
 
-* Cuándo [editar su página](#editing-your-page-content):
+* Cuando [edite su página](#editing-your-page-content):
 
-   1. Abra el **Información de página** menú.
-   1. Seleccionar **Abrir propiedades** para abrir el cuadro de diálogo y editar las propiedades.
+   1. Abra el menú **Información de página**.
+   1. Seleccione **Abrir propiedades** para abrir el cuadro de diálogo y editar las propiedades.
 
   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Publicar su página (o eliminar la publicación) {#publishing-your-page-or-unpublishing}
 
-Existen dos métodos principales de [publicación de la página](/help/sites-authoring/publishing-pages.md) (y también de cancelar la publicación):
+Existen dos métodos principales para [publicar la página](/help/sites-authoring/publishing-pages.md) (y también para eliminar la publicación):
 
 * Desde la consola **Sitios**:
 
-   1. [Navegue hasta la página](#finding-your-page) que desea publicar.
+   1. [Desplácese hasta la página](#finding-your-page) que quiera editar.
    1. Seleccione el icono **Publicación rápida** desde:
 
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
@@ -238,16 +238,16 @@ Existen dos métodos principales de [publicación de la página](/help/sites-aut
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
-* Cuándo [editar su página](#editing-your-page-content):
+* Cuando [edite su página](#editing-your-page-content):
 
-   1. Abra el **Información de página** menú.
-   1. Seleccionar **Publicar página**.
+   1. Abra el menú **Información de página**.
+   1. Seleccione **Publicar página**.
 
   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * La cancelación de la publicación de una página desde la consola solo se puede realizar mediante la opción **Administrar publicación**, que solo está disponible en la barra de herramientas (no a través de las acciones rápidas).
 
-  El **Cancelar publicación de página** sigue estando disponible a través de la opción **Información de página** en el editor.
+  La opción **Cancelar la publicación de páginas** todavía está disponible en el menú **Información de página** en el editor.
 
   ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
@@ -255,9 +255,9 @@ Existen dos métodos principales de [publicación de la página](/help/sites-aut
 
 ### Mover, copiar y pegar o eliminar su página   {#move-copy-and-paste-or-delete-your-page}
 
-Todas estas acciones se pueden activar mediante:
+Todas estas acciones pueden activarse del siguiente modo:
 
-1. [Navegue hasta la página](#finding-your-page) desea mover, copiar y pegar o eliminar.
+1. [Desplácese hasta la página](#finding-your-page) que desea mover, copiar y pegar o eliminar.
 1. Seleccione el icono de copiar (y luego pegar), mover o eliminar según sea necesario mediante:
 
    * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso requerido.
@@ -275,7 +275,7 @@ Todas estas acciones se pueden activar mediante:
 
    * Eliminar:
 
-      * Se le pedirá que confirme la acción.
+      * Se le solicitará que confirme la acción.
 
    >[!NOTE]
    >
@@ -286,7 +286,7 @@ Todas estas acciones se pueden activar mediante:
 [Bloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) impide que otros autores trabajen en ella al mismo tiempo que usted. El icono/botón Bloquear (y Desbloquear) se encuentra en:
 
 * La barra de herramientas cuando su [página se haya seleccionado](#selecting-your-page-for-further-action).
-* El [Menú desplegable Información de la página](#editing-the-page-properties) al editar una página.
+* El menú desplegable [Información de página](#editing-the-page-properties) cuando edita la página.
 * Barra de herramientas de la página cuando edita la página (cuando está bloqueada).
 
 Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
@@ -329,7 +329,7 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   Si ya se ha guardado una versión de la página, aparecerá en la línea de tiempo.
+   Si ya se ha guardado una versión de su página, se indica en la cronología.
 
 1. Pulse o haga clic en la versión que desea restaurar. Esto mostrará botones de acción adicionales:
 

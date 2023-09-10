@@ -24,7 +24,7 @@ Este tutorial es un paso en la serie [Crear su primer formulario adaptable](../.
 
 ## Información sobre el tutorial {#about-the-tutorial}
 
-AEM [!DNL Forms] la módulo integración de datos permite crear un modelo de datos de formulario a partir de fuentes de datos de back-end diferentes, como AEM usuario perfil, servicios web RESTful, servicios web basados en SOAP, servicios de oData y bases de datos relacionales. Puede configurar objetos y servicios del modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto del modelo de datos.
+[!DNL Forms] AEM módulo de integración de datos permite crear un modelo de datos de formulario a partir de orígenes de datos back-end dispares, como AEM usuario perfil, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales. Puede configurar objetos y servicios del modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto del modelo de datos.
 
 Para obtener más información sobre la integración y el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](../../forms/using/data-integration.md).
 
@@ -57,7 +57,7 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 
 1. Instale el controlador JDBC para la base de datos [!DNL MySQL]como paquete OSGi:
 
-   1. Descargue [!DNL MySQL] el paquete OSGi del `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` controlador JDBC. <!-- This URL is an insecure link but using https is not possible -->
+   1. Descargar [!DNL MySQL] JDBC Driver OSGi Bundle desde `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Inicie sesión en la instancia de autor de AEM [!DNL Forms] como administrador y vaya a los paquetes de la consola web de AEM. La dirección URL predeterminada es [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Pulse **[!UICONTROL Instalar/actualizar]**. Aparecerá el cuadro de diálogo [!UICONTROL Cargar e instalar paquetes].
@@ -77,14 +77,14 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 
       >[!NOTE]
       >
-      > Cuando la base de datos está detrás de un servidor de seguridad, el nombre de host de la [!DNL MySQL] base de datos no es un DNS público. La dirección IP de la base de datos debe agregarse *al archivo/etc/hosts* de la máquina host AEM.
+      > Cuando la base de datos está detrás de un firewall, el nombre de host de la base de [!DNL MySQL] datos no es un DNS público. La dirección IP de la base de datos debe añadirse en el *archivo /etc/hosts* del equipo AEM host.
 
       * **Nombre de usuario:** nombre de usuario de la base de datos. Debe permitir que el controlador JDBC establezca una conexión con la base de datos.
       * **Contraseña:** contraseña de la base de datos. Debe permitir que el controlador JDBC establezca una conexión con la base de datos.
 
       >[!NOTE]
       >
-      >AEM Forms no admite NT Authentication [!DNL MySQL] . Vaya a AEM consola Web en [ https://localhost:4502/System/Console/configMgr ](https://localhost:4502/system/console/configMgr) y búsqueda &quot;Apache eslinga Connection pooled datasource&quot;. Para &quot;URI de conexión JDBC&quot; Propiedad establezca el valor &quot;integratedSecurity&quot; como falso y utilice el nombre de usuario y el contraseña creados para conectarse con [!DNL MySQL] la base de datos.
+      >AEM Forms no admite NT Authentication para [!DNL MySQL]. Vaya a AEM consola web en [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) y búsqueda &quot;Apache Sling Connection Pooled Datasource&quot;. Para &quot;URI de conexión JDBC&quot; Propiedad valor establecido de &quot;integratedSecurity&quot; como False y use nombre de usuario y contraseña creados para conectarse con [!DNL MySQL] la base de datos.
 
       * **Probar en el préstamo:** habilita la opción **[!UICONTROL Probar en el préstamo]**.
       * **Probar en la devolución:** habilita la opción **[!UICONTROL Probar en la devolución]**.

@@ -12,7 +12,7 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 13%
+ht-degree: 18%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 13%
 
 Después de crear una página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
 
-El contenido se añade mediante [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (apropiado para el tipo de contenido) que se puede arrastrar hasta la página. Después estos se pueden editar local, mover o eliminar.
+El contenido se añade empleando los [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (según el tipo de contenido) que pueden arrastrarse a la página. Después estos se pueden editar local, mover o eliminar.
 
 >[!NOTE]
 >
@@ -106,11 +106,11 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 1. Abra el [Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Arrastre el recurso en cuestión a la posición deseada. El [marcador de posición de componente](#componentplaceholder) le muestra dónde se colocará el componente.
+1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#componentplaceholder) le muestra dónde se colocará el componente.
 
    Se creará un componente, adecuado para el tipo de recurso, en la ubicación requerida; contendrá el recurso seleccionado.
 
-1. [Editar](#editmovecopypastedelete) el componente, si es necesario.
+1. [Edite](#editmovecopypastedelete) el componente, si es necesario.
 
 ## Edición de un componente (contenido y propiedades) {#editing-a-component-content-and-properties}
 
@@ -287,11 +287,11 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* también utilice [Métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para deshacer y rehacer.
 >
 
-Puede utilizar las funciones Deshacer y Rehacer para los siguientes tipos de cambios de página:
+Puede usar los comandos Deshacer y Rehacer para los siguientes tipos de cambios de página:
 
-* Adición, edición, eliminación y movimiento de párrafos
-* Edición in situ del contenido del párrafo
-* Copiar, cortar y pegar elementos dentro de una página
+* Añadir, editar, quitar y mover párrafos
+* Editar contenido de párrafos in-situ
+* Copiar, cortar y pegar elementos en una página
 * Copiar, cortar y pegar elementos en las páginas
 * Agregar, quitar y cambiar archivos e imágenes
 * Adición, eliminación y cambio de anotaciones y bocetos
@@ -303,4 +303,4 @@ Los campos de formulario que representan los componentes de formulario no están
 
 >[!NOTE]
 >
->Se necesitan permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. Sin embargo, más allá de este tiempo, no se garantiza la anulación de los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.
+>Se necesitan permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.

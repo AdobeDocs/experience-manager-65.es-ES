@@ -1,6 +1,6 @@
 ---
 title: Uso de versiones de página
-description: El control de versiones crea una "captura de pantalla" de una página en un momento específico.
+description: Al generar una versión, se crea una “instantánea” de una página en un momento determinado.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,15 +10,15 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 16%
+ht-degree: 20%
 
 ---
 
 # Uso de versiones de página  {#working-with-page-versions}
 
-El control de versiones crea una &quot;captura de pantalla&quot; de una página en un momento específico. Con el control de versiones, puede realizar las siguientes acciones:
+Al generar una versión, se crea una “instantánea” de una página en un momento determinado. Con las versiones, se pueden realizar las siguientes operaciones:
 
-* Cree una versión de una página.
+* Crear una versión de la página.
 * Restaurar una página a una versión anterior para deshacer un cambio realizado en una página, por ejemplo.
 * Comparar la versión actual de una página con una versión anterior con diferencias en el texto y las imágenes resaltadas.
 
