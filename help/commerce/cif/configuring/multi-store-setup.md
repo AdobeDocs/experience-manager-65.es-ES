@@ -1,6 +1,6 @@
 ---
 title: Configuración de varias tiendas de Commerce
-description: Obtenga información sobre cómo asignar varias vistas de tiendas de Adobe Commerce AEM a los. Esto permite que los proyectos admitan casos de uso de varios inquilinos y multilingües.
+description: Obtenga información sobre cómo asignar varias vistas de tiendas de Adobe Commerce AEM a la lista de vistas de la tienda de. Esto permite que los proyectos admitan casos de uso de varios inquilinos y multilingües.
 sub-product: Commerce
 doc-type: technical-video
 activity: setup
@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 44%
+source-wordcount: '384'
+ht-degree: 18%
 
 ---
 
@@ -24,25 +24,25 @@ Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Las funciones de administración de varios sitios de AEM de Live Copy y de copia de idioma se utilizan junto con Commerce Integration Framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
+AEM Las funciones de administración de varios sitios de Live Copy y de copia de idioma se utilizan con Commerce Integration Framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
 
-AEM La configuración recomendada es utilizar una relación 1:1 entre el sitio de la aplicación y la vista de la tienda de Adobe Commerce.
+AEM La configuración recomendada es utilizar una relación 1:1 entre el sitio de y la vista de la tienda de Adobe Commerce.
 
 AEM AEM Para conectar un sitio de y los componentes principales de CIF de manera que también se conecten a una vista de tienda dedicada, siga los pasos a continuación:
 
 ## Configuración {#configuration}
 
-1. Configure varias tiendas y vistas de las tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Configure varias tiendas y vistas de las tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. AEM Asegúrese de que funcione la conexión entre y Adobe Commerce.
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
    * AEM En el camino a Herramientas, vaya a Herramientas -> General -> [Explorador de configuración](/help/sites-administering/configurations.md#using-configuration-browser)
-   * Seleccione la configuración base que ha creado.
-   * Cree una nueva configuración siguiendo los pasos descritos en el punto 2 anterior.
+   * Seleccione la configuración base que ha creado
+   * Cree una configuración siguiendo los pasos descritos anteriormente en el punto 2
 
-   Esta nueva configuración se creará como una configuración secundaria de la base. Ahora puede ir a Herramientas -> General -> Explorador de configuración y crear los ajustes de configuración.
+   Esta nueva configuración se crea como una configuración secundaria de la base. Ahora puede ir a Herramientas -> General -> Explorador de configuración y crear los ajustes de configuración.
 
    >[!TIP]
    >
@@ -50,15 +50,15 @@ AEM AEM Para conectar un sitio de y los componentes principales de CIF de manera
 
 4. Asigne la configuración secundaria a un sitio de AEM.
 
-   * Vaya a la consola de AEM Sites.
+   * Vaya a la consola de AEM Sites
    * Navegue hasta la región o la raíz de idioma de la estructura del sitio, por ejemplo /content/venia/us _o_ /content/venia/us/es para la página de muestra de Venia
-   * Seleccione la página y abra las propiedades de la página.
+   * Seleccione la página y abra las propiedades de página
    * Seleccione la pestaña Avanzadas.
-   * En la sección `Configuration` seleccione la configuración que creó en el paso
+   * En el `Configuration` , seleccione la configuración que creó en el paso
 
 ## Recursos adicionales
 
-* [Sitios web, tiendas y vistas de Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-* [Componentes principales del CIF de AEM: configuración de varias tiendas y sitios](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Componentes principales del CIF de AEM: configuración de varias tiendas y sitios](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [Uso del administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)

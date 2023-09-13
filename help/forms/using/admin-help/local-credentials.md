@@ -1,19 +1,15 @@
 ---
 title: Administrar credenciales locales
-seo-title: Managing local credentials
 description: Obtenga información sobre cómo administrar las credenciales locales.
-seo-description: Learn how to manage local credentials.
-uuid: 3c4358e0-aaff-4e94-a6b2-04b463fca260
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 2%
 
 Las credenciales locales son credenciales de clave privada alojadas en Administración de almacén de confianza. A *credencial local* identifica dónde se almacenan las credenciales DES de un usuario. Con la administración de almacén de confianza, puede importar y administrar sus credenciales locales utilizando, por ejemplo, archivos PFX existentes, de modo que pueda importar, editar y eliminar credenciales locales.
 
-AEM Los formularios admiten credenciales RSA y DSA de hasta 4096 bits en formato PKCS12 estándar (archivos .pfx y .p12).
+AEM Los formularios de datos admiten credenciales RSA y DSA de hasta 4096 bits en formato PKCS12 estándar (archivos .pfx y .p12).
 
 Puede importar y exportar cualquier número de credenciales. Si desea reemplazar una credencial caducada con el mismo alias, elimine la credencial y, a continuación, importe la nueva con el mismo alias.
 
@@ -34,11 +30,11 @@ Para obtener información e instrucciones relacionadas con las extensiones de Ac
 
    * **Credencial de firma de documento:** Credencial utilizada para emitir una firma digital en un documento.
    * **Credenciales de extensiones de Acrobat Reader DC:** Certificado digital específico de las extensiones de Acrobat Reader DC que permite activar los derechos de uso de Adobe Reader en los documentos del PDF producidos.
-   * **Predeterminado:** Indica que esta es la credencial predeterminada para usar con extensiones de Acrobat Reader DC.
+   * **Predeterminado:** Indica que esta es la credencial predeterminada que se utiliza con las extensiones de Acrobat Reader DC.
 
-   Para obtener información sobre cómo obtener una credencial, consulte [AEM Preparación para la instalación de formularios](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_es).
+   Para obtener información sobre cómo obtener una credencial, consulte [AEM Preparación para la instalación de formularios](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de las credenciales de las extensiones de Acrobat Reader DC y del servicio Signature. AEM Este alias también se utiliza para acceder a las credenciales mediante programación a través del SDK de formularios de la aplicación de la plataforma de datos de.
+1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC y en el servicio Signature. AEM Este alias también se utiliza para acceder a las credenciales mediante programación a través del SDK de formularios de la aplicación de la plataforma de datos de.
 
    >[!NOTE]
    >
@@ -55,14 +51,14 @@ Las credenciales se exportan como archivos P12 en formato PKCS#12.
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales locales.
 1. Haga clic en el nombre de alias de la credencial que desea exportar y, a continuación, haga clic en Exportar.
 1. En el cuadro Contraseña, escriba la contraseña. Esta contraseña es nueva y se utiliza para cifrar las credenciales exportadas.
-1. Haga clic en Exportar, siga las instrucciones para exportar la credencial y, a continuación, haga clic en Aceptar.
+1. Haga clic en Exportar, siga las instrucciones para exportar las credenciales y, a continuación, haga clic en Aceptar.
 
 ## Editar el alias o el tipo de almacén de confianza de una credencial {#edit-a-credential-s-alias-or-trust-store-type}
 
 Una vez importadas las credenciales, puede editar el nombre de alias y el tipo de almacén de confianza.
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales locales.
-1. Haga clic en el nombre de alias de la credencial que desee editar.
+1. Haga clic en el nombre de alias de la credencial que desea editar.
 1. Haga clic en Actualizar credencial.
 1. Edite el nombre del alias y el tipo de almacén de confianza según sea necesario y haga clic en Aceptar.
 

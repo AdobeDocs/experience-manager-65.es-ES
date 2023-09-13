@@ -1,25 +1,21 @@
 ---
 title: Personalizar páginas mostradas por el controlador de error
-seo-title: Customizing Pages shown by the Error Handler
-description: AEM viene con un controlador de error estándar para administrar errores HTTP
-seo-description: AEM comes with a standard error handler for handling HTTP errors
-uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
+description: Adobe Experience Manager incluye un controlador de error estándar para administrar errores HTTP.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 2%
+source-wordcount: '525'
+ht-degree: 1%
 
 ---
 
 # Personalizar páginas mostradas por el controlador de error{#customizing-pages-shown-by-the-error-handler}
 
-AEM viene con un controlador de error estándar para la administración de errores HTTP; por ejemplo, mostrando:
+Adobe Experience Manager AEM () viene con un controlador de error estándar para administrar errores HTTP; por ejemplo, mostrando:
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
@@ -30,17 +26,17 @@ Existen secuencias de comandos proporcionadas por el sistema (en `/libs/sling/se
 
 >[!NOTE]
 >
->AEM Se basa en Apache Sling, por lo que consulte [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) para obtener información detallada sobre Sling Error Handling.
+>AEM Se basa en Apache Sling. Como tal, consulte [Control de errores](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) para obtener información detallada sobre la gestión de errores de Sling.
 
 >[!NOTE]
 >
->En una instancia de autor, [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
+>En una instancia de autor, la variable [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
 >En una instancia de publicación, el filtro de depuración de CQ WCM es *siempre* desactivado (incluso si está configurado como activado).
 
 ## Personalizar páginas mostradas por el controlador de error {#how-to-customize-pages-shown-by-the-error-handler}
 
-Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Sus páginas personalizadas se crearán en `/apps` y superponer las páginas predeterminadas (que se encuentran en `/libs`).
+Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Las páginas personalizadas se crean en `/apps` y superponer las páginas predeterminadas (que se encuentran en `/libs`).
 
 >[!NOTE]
 >
@@ -51,20 +47,20 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
    * de `/libs/sling/servlet/errorhandler/`
    * hasta `/apps/sling/servlet/errorhandler/`
 
-   Como la ruta de destino no existe de forma predeterminada, deberá crearla al hacerlo por primera vez.
+   Como la ruta de destino no existe de forma predeterminada, debe crearla al hacerlo por primera vez.
 
-1. Navegue hasta `/apps/sling/servlet/errorhandler`. Aquí puede hacer lo siguiente:
+1. Vaya a `/apps/sling/servlet/errorhandler` y realice una de las acciones siguientes:
 
-   * edite la secuencia de comandos existente adecuada para proporcionar la información necesaria.
+   * edite la secuencia de comandos existente adecuada para poder proporcionar la información necesaria.
    * cree y edite un nuevo script para el código requerido.
 
 1. Guarde los cambios y pruebe.
 
 >[!CAUTION]
 >
->Los controladores 404.jsp y 403.jsp se han diseñado específicamente para adaptarse a la autenticación CQ5; en particular, para permitir el inicio de sesión en el sistema en caso de estos errores.
+>Los controladores 404.jsp y 403.jsp se han diseñado para adaptarse a la autenticación CQ5; en particular, para permitir el inicio de sesión en el sistema si se producen estos errores.
 >
->Por lo tanto, la sustitución de estos dos controladores debe realizarse con bueno cuidado.
+>Por lo tanto, la sustitución de estos dos controladores debe realizarse con mucho cuidado.
 
 ### Personalización de la Respuesta a Errores HTTP 500 {#customizing-the-response-to-http-errors}
 
@@ -81,7 +77,7 @@ AEM Cuando el procesamiento de solicitudes resulta en una excepción, el marco d
    * el código de respuesta HTTP 500
    * el seguimiento de pila de excepciones
 
-   en el cuerpo de la respuesta.
+  en el cuerpo de la respuesta.
 
 Por [personalización de las páginas mostradas por el controlador de error](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` se puede crear el script. Sin embargo, solo se utiliza si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un receptor de excepciones.
 
@@ -91,8 +87,8 @@ Para controlar 500 errores, el nombre de archivo de la secuencia de comandos del
 
 >[!CAUTION]
 >
->En una instancia de autor, [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
+>En una instancia de autor, la variable [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->Para un controlador de error personalizado, se necesitan respuestas con código 500, por lo que la variable [El filtro de depuración de CQ WCM debe deshabilitarse](/help/sites-deploying/osgi-configuration-settings.md). Esto garantiza que se devuelva el código de respuesta 500, lo que a su vez déclencheur el controlador de error de Sling correcto.
+>Para un controlador de error personalizado, se necesitan respuestas con código 500, por lo que la variable [El filtro de depuración de CQ WCM debe estar desactivado](/help/sites-deploying/osgi-configuration-settings.md). Esto garantiza que se devuelva el código de respuesta 500, lo que a su vez déclencheur el controlador de error de Sling correcto.
 >
 >En una instancia de publicación, el filtro de depuración de CQ WCM es *siempre* desactivado (incluso si está configurado como activado).

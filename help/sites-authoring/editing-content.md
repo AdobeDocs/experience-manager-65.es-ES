@@ -1,24 +1,22 @@
 ---
 title: Edición del contenido de páginas
 description: Una vez creada la página, puede editar el contenido para realizar las actualizaciones que necesite.
-uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '3067'
-ht-degree: 69%
+source-wordcount: '3016'
+ht-degree: 48%
 
 ---
 
 # Edición del contenido de una página{#editing-page-content}
 
-Después de crear una página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
+Una vez creada la página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
 
 El contenido se añade empleando los [componentes](/help/sites-authoring/default-components-console.md) (según el tipo de contenido) que pueden arrastrarse a la página. Después estos se pueden editar local, mover o eliminar.
 
@@ -26,11 +24,11 @@ El contenido se añade empleando los [componentes](/help/sites-authoring/default
 >
 >Su cuenta necesita el [derechos de acceso adecuados](/help/sites-administering/security.md) y [permissions](/help/sites-administering/security.md#permissions) para editar páginas.
 >
->Si se producen problemas, le sugerimos que se ponga en contacto con el administrador del sistema.
+>Si encuentra algún problema, el Adobe le sugiere que se ponga en contacto con el administrador del sistema.
 
 >[!NOTE]
 >
->Si la página o plantilla se han configurado correctamente, podrá utilizar el [diseño interactivo](/help/sites-authoring/responsive-layout.md) cuando esté editando.
+>Si su página, plantilla o ambas están correctamente configuradas, puede utilizar un [diseño interactivo](/help/sites-authoring/responsive-layout.md) al editar.
 
 >[!NOTE]
 >
@@ -52,7 +50,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **Información de la página**
 
-  Proporciona acceso al menú [Información de página](/help/sites-authoring/author-environment-tools.md#page-information) que muestra los detalles de la página y las acciones que se pueden realizar en ella, como ver y editar su información, ver sus propiedades y publicar o cancelar su publicación.
+  Proporciona acceso al [Información de página](/help/sites-authoring/author-environment-tools.md#page-information) menú que incluye detalles de página y acciones que se pueden realizar en la página, incluida la visualización y edición de información de página, la visualización de propiedades de página y la publicación/cancelación de publicación de la página.
 
   ![Información de la página](do-not-localize/screen_shot_2018-03-22at111437.png)
 
@@ -82,13 +80,13 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **Vista previa**
 
-  Habilita el [modo de previsualización](/help/sites-authoring/editing-content.md#preview-mode). Este modo muestra la página tal como aparecerá cuando se publique.
+  Habilita el [modo de previsualización](/help/sites-authoring/editing-content.md#preview-mode). Esto muestra la página tal como aparece cuando se publica.
 
   ![Modo de vista previa](assets/chlimage_1-121.png)
 
 * **Anotar**
 
-  Le permite agregar [anotaciones](/help/sites-authoring/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones que tiene la página.
+  Le permite añadir [anotaciones](/help/sites-authoring/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones de la página.
 
   ![Anotar](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -104,13 +102,13 @@ Si una página es parte de uno o varios [flujos de trabajo](/help/sites-authorin
 
 La notificación enumera el flujo de trabajo que se ejecuta en la página. Si el usuario participa en el paso del flujo de trabajo actual, también dispondrá de opciones que [tengan efecto sobre el estado del flujo de trabajo](/help/sites-authoring/workflows-participating.md) y podrá obtener más información sobre el flujo de trabajo, como la siguiente:
 
-* **Completar** - Abre el **Completar elemento de trabajo** diálogo
+* **Completar** - Abre el **Completar elemento de trabajo** cuadro de diálogo
 
-* **Delegar** - Abre el **Completar elemento de trabajo** diálogo
+* **Delegar** - Abre el **Completar elemento de trabajo** cuadro de diálogo
 
 * **Ver detalles**: abre la ventana **Detalles** del flujo de trabajo.
 
-Completar y delegar los pasos del flujo de trabajo mediante la barra de notificaciones funciona igual que al [participar en flujos de trabajo](/help/sites-authoring/workflows-participating.md) desde la bandeja de entrada de notificaciones.
+Completar y delegar los pasos del flujo de trabajo mediante la barra de notificaciones funciona igual que cuando [participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md) de la bandeja de entrada Notificación.
 
 Si la página está sujeta a varios flujos de trabajo, el número de los mismos se muestra en el extremo derecho de la notificación, junto con botones de flecha que permiten desplazarse por los flujos de trabajo.
 
@@ -118,9 +116,9 @@ Si la página está sujeta a varios flujos de trabajo, el número de los mismos 
 
 ## Marcador de posición de componente {#component-placeholder}
 
-El marcador de posición de componente es un indicador que muestra dónde se colocará un componente cuando lo suelte, sobre el componente que está pasando el ratón por encima.
+El marcador de posición de componente es un indicador para mostrar la posición del componente cuando lo coloque (sobre el componente por el que pasa el ratón en ese momento).
 
-* Al añadir un componente nuevo a la página (arrastrándolo desde el navegador de componentes):
+* Al añadir un componente a la página (arrastrando desde el explorador de componentes):
 
   ![adición de un nuevo componente](assets/screen_shot_2018-03-22at111928.png)
 
@@ -132,7 +130,7 @@ El marcador de posición de componente es un indicador que muestra dónde se col
 
 ### Inserción de un componente desde el navegador de componentes {#inserting-a-component-from-the-components-browser}
 
-Puede seleccionar un componente nuevo mediante el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). El [marcador de posición de componente](#component-placeholder) le muestra dónde se colocará el componente:
+Puede añadir un componente mediante el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). El [marcador de posición de componente](#component-placeholder) le muestra dónde se coloca el componente:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Abra el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
@@ -142,32 +140,32 @@ Puede seleccionar un componente nuevo mediante el [navegador de componentes](/he
 
 >[!NOTE]
 >
->En un dispositivo móvil, el explorador de componentes llenará toda la pantalla. Cuando comience a arrastrar un componente, el explorador se cerrará para volver a mostrar la página, de modo que pueda colocarlo.
+>En un dispositivo móvil, el navegador de componentes ocupa toda la pantalla. Una vez que comience a arrastrar un componente, el explorador se cierra para mostrar de nuevo la página y así poder colocar el componente.
 
 ### Inserción de un componente desde el sistema de párrafos {#inserting-a-component-from-the-paragraph-system}
 
-Puede agregar un componente nuevo mediante el cuadro **Arrastrar componentes aquí** del sistema de párrafos:
+Puede añadir un componente mediante el **Arrastre los componentes aquí** del sistema de párrafos:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-authoring/author-environment-tools.md#page-modes)
-1. Existen dos formas de seleccionar y añadir un componente nuevo desde el sistema de párrafos:
+1. Existen dos formas de seleccionar y agregar un componente desde el sistema de párrafos:
 
    * Seleccione la opción **Insertar componente** (+) de la barra de herramientas de un componente existente o del cuadro **Arrastrar componentes aquí**.
 
    ![Insertar selección de componentes](assets/screen_shot_2018-03-22at112536.png)
 
-   * En un dispositivo de escritorio puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
+   * Si está en un dispositivo de escritorio, puede hacer doble clic en el **Arrastre los componentes aquí** cuadro.
 
-   El **Insertar nuevo componente** se abrirá un cuadro de diálogo para que pueda seleccionar el componente requerido:
+   El **Insertar nuevo componente** se abre el cuadro de diálogo para que pueda seleccionar el componente requerido:
 
    ![Insertar nuevo componente](assets/screen_shot_2018-03-22at112650.png)
 
-1. El componente seleccionado se agregará a la parte inferior de la página. [Edite](#editmovecopypastedelete) el componente como sea necesario.
+1. El componente seleccionado se añade en la parte inferior de la página. [Edite](#editmovecopypastedelete) el componente como sea necesario.
 
 ### Inserción de un componente mediante el navegador de recursos   {#inserting-a-component-using-the-assets-browser}
 
-También puede añadir un componente nuevo a la página arrastrando un recurso desde el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser). De este modo se crea automáticamente un componente nuevo del tipo correspondiente (que contiene el recurso).
+También puede agregar un componente a la página arrastrando un recurso desde el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser). Esto crea automáticamente un componente del tipo adecuado (y que contiene el recurso).
 
-Esto es válido para los siguientes tipos de recursos (algunos dependerán del sistema de páginas o párrafos):
+Esto es válido para los siguientes tipos de recursos (algunos dependen del sistema de páginas o párrafos):
 
 <table>
  <tbody>
@@ -206,71 +204,71 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Abra el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) le muestra dónde se colocará el componente.
+1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) le muestra dónde se coloca el componente.
 
-   Se creará un componente, adecuado para el tipo de recurso, en la ubicación requerida; contendrá el recurso seleccionado.
+   Se crea en la posición requerida un componente apropiado para el tipo de recurso y que contiene el recurso seleccionado.
 
-1. [Edite](#editmovecopypastedelete) el componente, si es necesario.
+1. [Editar](#editmovecopypastedelete) el componente, si es necesario.
 
 >[!NOTE]
 >
->En un dispositivo móvil, el navegador de recursos ocupará toda la pantalla. Una vez que comience a arrastrar un recurso, el explorador se cerrará para volver a mostrar la página y poder colocarlo.
+>En un dispositivo móvil, el explorador de recursos rellena toda la pantalla. Cuando comienza a arrastrar un recurso, el explorador se cierra para mostrar de nuevo la página y poder colocarlo.
 
-Si al examinar los recursos descubre que necesita realizar alguna modificación rápida en alguno de ellos, puede iniciar el [editor de recursos](/help/assets/manage-assets.md) directamente desde el explorador haciendo clic en el icono de edición que hay junto al nombre del recurso.
+Al examinar los recursos, si descubre que debe realizar algún cambio rápido en alguno de ellos, haga clic en el icono de edición que aparece junto al nombre del recurso para iniciar la acción [Editor de recursos](/help/assets/manage-assets.md).
 
 ![icono de edición](assets/screen_shot_2018-03-22at112735.png)
 
 ## Editar/Configurar/Copiar/Cortar/Eliminar/Pegar {#edit-configure-copy-cut-delete-paste}
 
-Si se selecciona un componente, se abrirá la barra de herramientas, que proporciona acceso a distintas acciones que se pueden realizar en el componente.
+Al seleccionar un componente, se abre la barra de herramientas. Esto proporciona acceso a varias acciones que se pueden realizar en el componente.
 
-Las acciones disponibles para el usuario se mostrarán según corresponda y es posible que no todas las acciones se describan aquí.
+Las acciones disponibles para el usuario se muestran según corresponda y es posible que no todas las acciones se describan aquí.
 
 ![opciones de barra de herramientas de componentes](assets/screen_shot_2018-03-22at112909.png)
 
 * **Editar**
 
-  [Depende del tipo de componente](/help/sites-authoring/default-components.md) esto le permitirá [editar el contenido del componente](#edit-content). Normalmente se mostrará una barra de herramientas.
+  [En función del tipo de componente](/help/sites-authoring/default-components.md), esta opción le permite [editar el contenido del componente](#edit-content). A menudo se proporciona una barra de herramientas.
 
   ![Editar](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurar**
 
-  [Depende del tipo de componente](/help/sites-authoring/default-components.md) esto permite editar y configurar las propiedades del componente. A menudo, se abrirá un cuadro de diálogo.
+  [Depende del tipo de componente](/help/sites-authoring/default-components.md) esto permite editar y configurar las propiedades del componente. A menudo se abre un cuadro de diálogo.
 
   ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copiar**
 
-  Esto copia el componente en el portapapeles. Después de la acción de pegar, se mantiene el componente original.
+  Esto copia el componente en el portapapeles. El componente original permanece después de pegarlo.
 
   ![Copiar](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Cortar**
 
-  Esto copia el componente en el portapapeles. Después de la acción de pegar, se eliminará el componente original.
+  Esto copia el componente en el portapapeles. Después de la acción de pegar, se quita el componente original.
 
   ![Cortar](assets/screen_shot_2018-03-22at113007.png)
 
 * **Eliminar**
 
-  Esto elimina el componente de la página con su confirmación.
+  Esto elimina el componente de la página con la confirmación.
 
   ![Eliminar](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Insertar componente**
 
-  Esto abre el cuadro de diálogo para [añadir un componente nuevo](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Esto abre el cuadro de diálogo para lo siguiente [añadir un componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
   ![Insertar componente](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Pegar**
 
-  Esto pega el componente del portapapeles en la página. El original se conserva o no dependiendo de si ha utilizado copiar o cortar.
+  Esto pega el componente del portapapeles en la página. El hecho de que el original permanezca depende de si ha utilizado copiar o cortar.
 
    * Puede pegar componentes en la misma página o en otra distinta.
-   * El elemento pegado se pegará encima del elemento donde seleccione la acción de pegado.
-   * La acción Pegar solo se mostrará si hay contenido en el portapapeles.
+   * El elemento se pegará sobre el elemento en el que seleccione la acción de pegar.
+   * La acción Pegar solo se muestra si hay contenido en el portapapeles.
 
   ![Pegar](assets/screen_shot_2018-03-22at113553.png)
 
@@ -286,7 +284,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
 * **Principal**
 
-  Permite seleccionar el componente principal del componente seleccionado.
+  Esto permite seleccionar el componente principal del componente seleccionado.
 
   ![Principal](assets/screen_shot_2018-03-22at113028.png)
 
@@ -296,15 +294,15 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
   ![Diseño](do-not-localize/screen_shot_2018-03-22at113044.png)
 
-* **Conversión en una variación de fragmento de experiencia**
+* **Conversión en una variación de Fragmento de experiencia**
 
-  Esto permite crear una nueva [fragmento de experiencias](/help/sites-authoring/experience-fragments.md) del componente seleccionado o añadirlo a un fragmento de experiencia existente.
+  Esto permite crear una [Fragmento de experiencia](/help/sites-authoring/experience-fragments.md) del componente seleccionado o añadirlo a un fragmento de experiencia existente.
 
   ![Convertir en variación de fragmento de experiencia](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Editar (contenido) {#edit-content}
 
-Hay dos métodos para añadir y/o editar contenido en los componentes:
+Existen dos métodos para añadir o editar contenido en los componentes:
 
 * Abra el [diálogo del componente para editarlo](#component-edit-dialog).
 * [Arrastre y coloque un recurso](#draganddropintocomponent) desde el explorador de recursos para añadir contenido directamente.
@@ -313,7 +311,7 @@ Hay dos métodos para añadir y/o editar contenido en los componentes:
 
 Puede abrir un componente para editar el contenido mediante el icono [Editar (lápiz) de la barra de herramientas](#edit-configure-copy-cut-delete-paste) del componente.
 
-Las opciones de edición exactas dependerán del componente. Para algunos componentes [todas las acciones solo estarán disponibles en modo de pantalla completa](#edit-content-full-screen-mode). Por ejemplo:
+Las opciones de edición exactas dependen del componente. Para algunos componentes, [todas las acciones solo están disponibles en el modo de pantalla completa](#edit-content-full-screen-mode). Por ejemplo:
 
 * [Componente de texto](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
@@ -328,7 +326,7 @@ Las opciones de edición exactas dependerán del componente. Para algunos compon
   >La edición no funciona con un componente de imagen vacío.
   >
   >
-  >Usted debe [arrastrar o cargar una imagen (con Configurar)](/help/sites-authoring/default-components-foundation.md#image) antes de empezar a editarlo.
+  >[Arrastre o cargue una imagen (con Configurar)](/help/sites-authoring/default-components-foundation.md#image) antes de empezar a editarlo.
 
 * Componente de imagen: pantalla completa
 
@@ -364,7 +362,7 @@ Por ejemplo, el componente **Texto**:
 
 >[!NOTE]
 >
->Para algunos componentes, el modo de pantalla completa tendrá más opciones disponibles que el editor local básico.
+>En algunos componentes, el modo de pantalla completa tiene más opciones disponibles que el editor local básico.
 
 ## Mover un componente {#moving-a-component}
 
@@ -383,13 +381,13 @@ Para mover un componente de párrafo:
 
 ## Editar diseño de componente {#edit-component-layout}
 
-En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-authoring/responsive-layout.md) para ajustar un componente, puede seleccionar la acción **Diseño** del mismo. Podrá cambiar su diseño sin tener que abandonar el modo de edición, por lo que ahorrará tiempo.
+En lugar de cambiar repetidamente de edición a [modo de diseño](/help/sites-authoring/responsive-layout.md) para ajustar un componente, puede seleccionar la opción **Diseño** acción para que un componente cambie el diseño de ese componente. Esto ahorra tiempo al no tener que salir del modo de edición.
 
-1. En el modo de **edición** de la consola del sitio, si se selecciona un componente, aparece su barra de herramientas.
+1. En el **Editar** modo de la consola sitios, al seleccionar un componente, se muestra su barra de herramientas.
 
    ![Modo de edición en el formulario](assets/screen_shot_2018-03-22at133756.png)
 
-   Pulse o haga clic en la acción **Diseño** para ajustar el diseño del componente.
+   Toque o haga clic en **Diseño** para que pueda ajustar el diseño del componente.
 
    ![Barra de herramientas de los componentes](do-not-localize/chlimage_1-21.png)
 
@@ -403,15 +401,15 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-au
 
    Ahora puede modificar el diseño del componente como haría en el [modo de diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
-1. Después de realizar los cambios necesarios, haga clic en el botón **Cerrar** del menú de acciones del componente para detener la edición del diseño. La barra de herramientas del componente recuperará su estado de edición normal.
+1. Después de realizar los cambios necesarios, haga clic en **Cerrar** en el menú de acciones del componente para detener la modificación del diseño del componente. La barra de herramientas del componente recuperará su estado de edición normal.
 
    ![Cerrar](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
->El ámbito de la acción Diseño se reduce al componente seleccionado. Por ejemplo, si está editando el diseño de un componente y hace clic en otro componente, se muestra la barra de herramientas de edición estándar del componente recién seleccionado (no la barra de herramientas de diseño) y desaparecen los controladores de cambio de tamaño y la barra de herramientas del emulador.
+>El ámbito de la acción Diseño se reduce al componente seleccionado. Por ejemplo, si está editando el diseño de un componente y, a continuación, selecciona otro componente, se mostrará la barra de herramientas de edición estándar del componente recién seleccionado (no la barra de herramientas de diseño). Los controladores de tamaño y la barra de herramientas del emulador desaparecen.
 >
->Si necesita editar el diseño general de la página y modificar múltiples componentes, cambie al [modo de diseño](/help/sites-authoring/responsive-layout.md).
+>Si debe editar el diseño general de la página y modificar varios componentes, cambie al [modo de diseño](/help/sites-authoring/responsive-layout.md).
 
 ## Componentes heredados {#inherited-components}
 
@@ -433,7 +431,7 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
   ![Cancelar herencia](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-  O volver a habilitar la herencia si ya se ha cancelado:
+  O bien, vuelva a habilitar la herencia si ya se ha cancelado:
 
   ![Volver a habilitar herencia](do-not-localize/screen_shot_2018-03-22at134417.png)
 
@@ -443,7 +441,7 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
 * **Un sistema de párrafos heredado**
 
-  El cuadro de diálogo Configuración. Por ejemplo, como con el sistema de párrafos heredados:
+  El cuadro de diálogo de configuración. Por ejemplo, como con el sistema de párrafos heredados:
 
   ![Sistema de párrafos heredado](assets/chlimage_1-124.png)
 
@@ -460,7 +458,7 @@ Puede ver fácilmente en qué plantilla se basa la página al seleccionar la pá
 El [modo de la página de estado de Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite echar un vistazo rápido al estado de Live Copy y a los componentes que se han heredado o no.
 
 * Borde verde: heredado
-* Borde rosa: se ha cancelado la herencia
+* Borde rosa: se cancela la herencia
 
 Por ejemplo:
 
@@ -491,11 +489,11 @@ Existen dos métodos para visualizar la vista previa de una página:
 
 ### Modo de vista previa {#preview-mode}
 
-Al editar contenido, puede obtener una vista previa de la página mediante el [modo de vista previa](/help/sites-authoring/author-environment-tools.md#page-modes). Este modo:
+Al editar contenido, puede obtener una vista previa de la página mediante la vista previa [modo](/help/sites-authoring/author-environment-tools.md#page-modes). Este modo le permite hacer lo siguiente:
 
-* Oculta los distintos mecanismos de edición para ofrecerle una vista rápida del aspecto que tendrá la página cuando se publique.
-* Permite utilizar vínculos para desplazarse.
-* **No** actualiza el contenido de la página.
+* Oculte los distintos mecanismos de edición para poder tener una vista rápida del aspecto de la página cuando se publique.
+* Utilice los vínculos para desplazarse.
+* Sí lo tiene **no** actualice el contenido de la página.
 
 Durante la creación, el modo de vista previa está disponible mediante el icono situado en la parte superior derecha del editor de páginas:
 
@@ -503,11 +501,11 @@ Durante la creación, el modo de vista previa está disponible mediante el icono
 
 ### Ver como aparece publicado {#view-as-published}
 
-La opción **Ver tal y como aparece publicado** está disponible en el menú [información de la página](/help/sites-authoring/author-environment-tools.md#page-information). Esta opción abre la página en una nueva pestaña, actualiza el contenido y muestra la página exactamente como aparecerá en el entorno de publicación.
+La opción **Ver tal y como aparece publicado** está disponible en el menú [información de la página](/help/sites-authoring/author-environment-tools.md#page-information). Esto abre la página en una nueva pestaña, actualiza el contenido y muestra la página exactamente como aparece cuando se publica.
 
 ## Bloquear una página   {#locking-a-page}
 
-AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esta función es útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
+AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando debe congelar una página durante un corto tiempo.
 
 Las páginas se pueden bloquear desde:
 
@@ -520,7 +518,7 @@ Las páginas se pueden bloquear desde:
 
 * **Editor de página**
 
-   1. Seleccione el icono **Información de la página** para abrir el menú.
+   1. Para abrir el menú, seleccione la **Información de página** icono.
    1. Seleccione la opción **bloquear página**.
 
 Una vez bloqueada, se actualiza la información de la vista de la consola y, al editar, se muestra un símbolo de bloqueo en la barra de herramientas.
@@ -535,7 +533,7 @@ Una vez bloqueada, se actualiza la información de la vista de la consola y, al 
 
 ## Desbloquear una página {#unlocking-a-page}
 
-Desbloquear una página es muy similar a [bloquearla](#locking-a-page). Cuando una página está bloqueada, las opciones de bloqueo se sustituyen con las acciones de desbloqueo.
+Desbloquear una página es similar a [bloquear la página](#locking-a-page). Cuando la página está bloqueada, las opciones de bloqueo se sustituyen por las acciones de desbloqueo.
 
 El menú Información de página muestra la opción **Desbloquear** y el icono Bloquear de la consola Sitios se reemplaza con el icono **Desbloquear**.
 
@@ -555,9 +553,9 @@ Los iconos siguientes permiten deshacer o rehacer una acción. Se muestran en la
 
 >[!NOTE]
 >
->El [atajo de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` también está disponible para deshacer las acciones de edición de página.
+>También dispone del [atajo de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` para deshacer las acciones de edición de página.
 >
->El método abreviado de teclado `Ctrl-Y` también está disponible para rehacer las acciones de edición de página.
+>También dispone del atajo de teclado `Ctrl-Y` para rehacer las acciones de edición de página.
 
 >[!NOTE]
 >
@@ -569,11 +567,11 @@ Los iconos siguientes permiten deshacer o rehacer una acción. Se muestran en la
 >
 >El administrador del sistema puede [configurar varios aspectos de las funciones de Deshacer/Rehacer](/help/sites-administering/config-undo.md) según los requisitos de su instancia.
 
-AEM almacena un historial de las acciones que realiza y la secuencia en que las realizó, de modo que puede deshacer varias acciones en el orden en que se realizaron, y también rehacerlas para volver a aplicar una o más acciones.
+AEM Almacena un historial de las acciones que realiza y la secuencia en que las realizó. Esta funcionalidad significa que puede deshacer varias acciones en el orden en que las realizó y rehacerlas para volver a aplicar una o más acciones, si es necesario.
 
 Si hay un elemento seleccionado en la página de contenido (por ejemplo, un componente de texto), el comando para deshacer o rehacer se aplica a dicho elemento.
 
-El comportamiento de los comandos Deshacer y Rehacer es similar al de otros programas de software. Utilice los comandos para restaurar el estado reciente de la página web a medida que toma decisiones sobre el contenido. Por ejemplo, si mueve un párrafo de texto a una ubicación diferente en la página, puede usar el comando Deshacer para mover el párrafo a la posición original. Si más tarde decide que la posición anterior era mejor, use el comando rehacer para “deshacer la acción”.
+El comportamiento de los comandos Deshacer y Rehacer es similar al de otros programas de software. Utilice los comandos para restaurar el estado reciente de la página web a medida que decide el contenido. Por ejemplo, si mueve un párrafo de texto a una ubicación diferente en la página, puede usar el comando Deshacer para mover el párrafo a la posición original. Si más tarde decide que la posición anterior era mejor, use el comando rehacer para “deshacer la acción”.
 
 >[!NOTE]
 >
@@ -584,7 +582,7 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* También utilice los [métodos abreviados del teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para deshacer y rehacer.
 >
 
-Puede usar los comandos Deshacer y Rehacer para los siguientes tipos de cambios de página:
+Puede utilizar Deshacer y Rehacer para los siguientes tipos de cambios de página:
 
 * Añadir, editar, quitar y mover párrafos
 * Editar contenido de párrafos in-situ
@@ -598,4 +596,4 @@ Los campos de formulario que representan los componentes de formulario no están
 
 >[!NOTE]
 >
->El historial de cambios en archivos e imágenes dura un mínimo de diez horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede modificar el plazo predeterminado de diez horas.
+>El historial de cambios en archivos e imágenes dura un mínimo de diez horas. Más allá de este tiempo, sin embargo, la inversión de los cambios no está garantizada. El administrador puede modificar el plazo predeterminado de diez horas.

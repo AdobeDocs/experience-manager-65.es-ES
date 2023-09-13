@@ -1,33 +1,29 @@
 ---
 title: Configurar AEM DS
-seo-title: Configuring AEM DS settings
-description: Debe especificar la URL del servidor de procesamiento antes de enviar un formulario.
-seo-description: You need to specify the processing server URL before you submit a form.
-uuid: 55a6d434-7352-48a8-8387-8a5c1a48fafc
+description: Obtenga información sobre cómo especificar la URL del servidor de procesamiento antes de enviar un formulario.
 contentOwner: amgoyal
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 role: Admin
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 63%
 
 ---
 
 # Configurar AEM DS{#configuring-aem-ds-settings}
 
-Este artículo describe cómo configurar el **Servicio de configuración de AEM DS**. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
+Este artículo describe cómo configurar el **AEM Servicio de configuración de DS**. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
 
 * En Administración de correspondencia
 
    * Para configurar el flujo de trabajo de AEM Forms
-   * Mientras se utiliza el portal de formularios para el guardado remoto del borrador/envío
+   * Al utilizar el portal de Forms para el guardado remoto del borrador/envío
 
-* En formularios adaptables para casos en los que el formulario adaptable se envía desde una instancia de publicación
+* En formularios adaptables, para casos en los que se envía un formulario adaptable desde una instancia de publicación
 
 A continuación se indican los pasos para establecer la **[!UICONTROL Configuración de AEM DS]**:
 
@@ -46,7 +42,7 @@ A continuación se indican los pasos para establecer la **[!UICONTROL Configurac
 
 1. Agregue la siguiente información en los campos respectivos:
 
-   **[!UICONTROL URL del servidor de procesamiento]**: el servidor de procesamiento es el servidor en el que se debe habilitar Forms o el flujo de trabajo de AEM. Puede ser la misma URL que la de la instancia de autor de AEM o que la otra URL del servidor (es decir, https://localhost:port/).
+   **[!UICONTROL URL del servidor de procesamiento]**: el servidor de procesamiento es el servidor en el que se debe activar el flujo de trabajo de Forms AEM o de la. AEM Puede ser la misma URL que la de la instancia de autor del o que la otra URL del servidor (es decir, https://localhost:port/).
 
    **[!UICONTROL Nombre de usuario del servidor de procesamiento]**: nombre de usuario del usuario del flujo de trabajo [en función de la URL del servidor que se utilice]
 
@@ -58,4 +54,5 @@ A continuación se indican los pasos para establecer la **[!UICONTROL Configurac
    >    
    >    
    >    * Al utilizar Forms o flujos de trabajo de AEM, antes de realizar cualquier envío desde el servidor de publicación, es necesario configurar el servicio de configuración de DS. De lo contrario, el envío del formulario fallará.
-
+   >    
+   >

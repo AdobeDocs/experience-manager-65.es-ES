@@ -4,16 +4,16 @@ description: Descubra cómo los fragmentos de contenido en Adobe Experience Mana
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 93%
+source-wordcount: '1972'
+ht-degree: 69%
 
 ---
 
 # Trabajar con fragmentos de contenido {#working-with-content-fragments}
 
-Con Adobe Experience Manager AEM (), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-authoring/content-fragments.md) Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para una entrega sin encabezado.
+Con Adobe Experience Manager AEM (), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-authoring/content-fragments.md). Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para una entrega sin encabezado.
 
 Los fragmentos de contenido incluyen contenido estructurado:
 
@@ -21,10 +21,10 @@ Los fragmentos de contenido incluyen contenido estructurado:
 * La estructura puede variar entre lo siguiente:
    * Básico
       * Por ejemplo, un campo de texto de varias líneas.
-      * Se puede utilizar para preparar contenido directo para su uso en la creación de páginas.
+      * Se utiliza para preparar contenido directo para su uso en la creación de páginas.
    * Complejo
-      * Una combinación de muchos campos de diferentes tipos de datos, incluyendo texto, número, booleano, datos y tiempo, entre otros.
-      * Se puede utilizar para preparar contenido más estructurado para la creación de páginas o para su entrega a la aplicación.
+      * Una combinación de muchos campos de diferentes tipos de datos, incluidos texto, número, booleano, datos y tiempo, entre otros.
+      * Se utiliza para preparar contenido más estructurado para la creación de páginas o para su entrega a la aplicación.
    * Anidado
       * Los tipos de datos de referencia disponibles le permiten anidar el contenido.
       * Tiende a utilizarse para su entrega a la aplicación.
@@ -37,8 +37,8 @@ Los fragmentos de contenido también se pueden entregar en formato JSON, utiliza
 Esta y las siguientes páginas tratan sobre las tareas para crear, configurar, mantener y utilizar sus fragmentos de contenido:
 
 * [Habilitación de la funcionalidad de fragmento de contenidos para la instancia](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md): activar, crear y definir sus modelos
-* [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md): cree sus fragmentos de contenido; a continuación, edite, publique y haga referencias.
+* [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) : activación, creación y definición de los modelos
+* [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) : cree sus fragmentos de contenido y, a continuación, edite, publique y haga referencias
 * [Variaciones, creación de contenido de fragmentos](/help/assets/content-fragments/content-fragments-variations.md): cree el contenido del fragmento y variaciones del principal
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): uso de la sintaxis de markdown para el fragmento
 * [Uso de contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md): añadir contenido asociado
@@ -47,7 +47,7 @@ Esta y las siguientes páginas tratan sobre las tareas para crear, configurar, m
 
 >[!NOTE]
 >
->Estas páginas pueden leerse junto con las siguientes:
+>Estas páginas se pueden leer con:
 >
 >* [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
 >* [Personalizar y ampliar fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md)
@@ -60,7 +60,7 @@ El número de canales de comunicación aumenta de forma anual. Normalmente, los 
 * Canal físico; por ejemplo, escritorio o móvil.
 * Forma de entrega en un canal físico; por ejemplo, la “página de detalles del producto”, la “página de categoría del producto” para escritorio o la “web móvil” o la “aplicación móvil” para móvil.
 
-Sin embargo, probablemente no desea utilizar exactamente el mismo contenido para todos los canales y necesita optimizar su contenido según el canal específico.
+Sin embargo, probablemente no desee utilizar el mismo contenido para todos los canales y debe optimizar su contenido según el canal específico.
 
 Los fragmentos de contenido le permiten:
 
@@ -69,23 +69,25 @@ Los fragmentos de contenido le permiten:
 * Creargrupos de contenido para una amplia gama de canales.
 * Diseñar variaciones de contenido para canales específicos.
 * Agregar imágenes al texto insertando recursos (fragmentos de medios mixtos).
-* Crear contenido anidado para reflejar la complejidad de sus datos.
+* Cree contenido anidado para poder reflejar la complejidad de sus datos.
 
-Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en una variedad de canales.
+Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en varios canales.
 
 >[!NOTE]
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)** son funciones distintas de AEM:
->* Los **Fragmentos de contenido** son contenidos de editorial que pueden utilizarse para acceder a datos estructurados, incluidos textos, números y fechas, entre otros. Son contenidos puros, con definición y estructura, pero sin diseño visual o adicional.
+>
+>* **Fragmentos de contenido** son contenidos editoriales que pueden ser utilizados para acceder a datos estructurados incluyendo textos, números y fechas, entre otros. Son contenidos puros, con definición y estructura, pero sin diseño visual o adicional.
+>
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 >
->Para obtener más información, consulte también [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
+>Para obtener más información, consulte [Explicación de los fragmentos de contenido y de experiencias en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments?lang=es).
 
 >[!NOTE]
 >
->AEM Antes de la versión 6.3, los fragmentos de contenido se creaban con el uso de plantillas en lugar de modelos. Las plantillas ya no están disponibles para crear nuevos fragmentos, pero todos los fragmentos creados con una plantilla de este tipo siguen siendo compatibles.
+>AEM Antes de la versión 6.3, los fragmentos de contenido se creaban con el uso de plantillas en lugar de modelos. Las plantillas ya no están disponibles para crear fragmentos, pero todos los fragmentos creados con una plantilla de este tipo siguen siendo compatibles.
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 
@@ -99,7 +101,7 @@ Proporcionan la entrega de contenido a canales que no son páginas web de AEM tr
 
 La entrega se ejecuta en formato JSON utilizando el exportador de JSON.
 
-Los fragmentos de contenido de AEM se pueden usar para describir y administrar el contenido estructurado. El contenido estructurado se define en modelos que pueden contener una variedad de tipos de contenido; incluido texto, datos numéricos, booleanos, fecha y hora, etc.
+Los fragmentos de contenido de AEM se pueden usar para describir y administrar el contenido estructurado. El contenido estructurado se define en modelos que pueden contener varios tipos de contenido; incluido texto, datos numéricos, booleanos, fecha y hora, etc.
 
 Junto con las capacidades de exportación de JSON de los componentes principales de AEM, este contenido estructurado se puede utilizar para entregar contenido de AEM a canales que no sean páginas de AEM.
 
@@ -128,7 +130,7 @@ Los fragmentos de contenido son lo siguiente:
    * Los fragmentos de contenido (y sus variaciones) se pueden crear y mantener desde **Assets** consola.
    * Se crean y editan en el editor de fragmentos de contenido.
 
-* Se usan en el [editor de páginas mediante el componente Fragmento de contenido](/help/sites-authoring/content-fragments.md) (componente de referencia):
+* Se utiliza en [Editor de páginas con el componente Fragmento de contenido](/help/sites-authoring/content-fragments.md) (componente de referencia):
 
    * El componente **Fragmento de contenido** está disponible para los autores de páginas. Les permite hacer referencia y entregar el fragmento de contenido requerido en formato HTML o JSON.
 
@@ -137,27 +139,26 @@ Los fragmentos de contenido son lo siguiente:
 Los fragmentos de contenido son una estructura de contenido que:
 
 * No tiene diseño (es posible aplicar algo de formato de texto en el modo Texto enriquecido).
-* Incluye una o más [partes constitutivas](#constituent-parts-of-a-content-fragment).
+* Tener uno o más [partes constitutivas](#constituent-parts-of-a-content-fragment).
 * Puede [contener imágenes o estar conectada a ellas](#fragments-with-visual-assets).
 * Puede usar [contenido intermedio](#in-between-content-when-page-authoring-with-content-fragments) cuando está referenciada en una página.
-
 * Es independiente del mecanismo de entrega (es decir, página, canal).
 
 ### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
 Para que los autores tengan un mayor control sobre su contenido, las imágenes se pueden añadir o integrar con un fragmento de contenido.
 
-Los recursos se pueden utilizar con un fragmento de contenido de varias formas, cada una con sus ventajas:
+Los recursos se pueden utilizar con un fragmento de contenido de varias formas, cada una con sus propias ventajas:
 
 * **Insertan recursos** en un fragmento (fragmentos de medios mixtos)
 
-   * Son una parte integral del fragmento (consulte [Partes constitutivas de un fragmento de contenido](#constituent-parts-of-a-content-fragment)).
+   * Son parte del fragmento (consulte [Partes constitutivas de un fragmento de contenido](#constituent-parts-of-a-content-fragment)).
    * Definen la posición del recurso.
    * Consulte [Inserción de recursos en el fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) en el editor de fragmentos para obtener más información.
 
   >[!NOTE]
   >
-  >Los recursos visuales insertados en el propio fragmento de contenido se adjuntan al párrafo anterior. Cuando se añade el fragmento a una página, estos recursos se mueven en relación con ese párrafo al agregarse contenido intermedio.
+  >Los recursos visuales insertados en el propio fragmento de contenido se adjuntan al párrafo anterior. Cuando se agrega el fragmento a una página, estos recursos se mueven en relación con ese párrafo al agregarse contenido intermedio.
 
 * **Contenido asociado**
 
@@ -187,7 +188,7 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
 
 * **Párrafos de fragmento**
 
-   * Bloques de texto, a menudo multilínea, que se delimitan como entidades individuales.
+   * Bloques de texto (a menudo multilínea) que se delimitan como entidades individuales.
 
    * En los modos [Texto enriquecido](/help/assets/content-fragments/content-fragments-variations.md#rich-text) y [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un párrafo se puede formatear como un encabezado, en cuyo caso, ese párrafo y el siguiente se unirán como una sola unidad.
 
@@ -199,7 +200,7 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
    * Están incrustados en el sistema de párrafos del fragmento.
    * Se les puede dar formato cuando el [fragmento se utiliza/referencia en una página](/help/sites-authoring/content-fragments.md).
    * Solo se pueden agregar, eliminar o mover dentro de un fragmento con el editor de fragmentos. Estas acciones no se pueden llevar a cabo en el editor de páginas.
-   * Solo se pueden agregar, eliminar o mover dentro de un fragmento mediante [Formato de texto enriquecido en el editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * Solo se pueden agregar, eliminar o mover dentro de un fragmento con la variable [Formato de texto enriquecido en el editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Solo se puede añadir a elementos de texto multilínea (cualquier tipo de fragmento).
    * Se adjuntan al texto anterior (párrafo).
 
@@ -238,7 +239,7 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
 
 * **Principal**
 
-   * Una parte integral del fragmento
+   * Una parte del fragmento
 
       * Cada fragmento de contenido tiene una instancia de Principal.
       * El Principal no se puede eliminar.
@@ -248,8 +249,8 @@ Los activos de fragmento de contenido están formados por las siguientes partes 
 
 * **Variaciones**
 
-   * Representaciones de texto de fragmento específicas para fines editoriales; pueden estar relacionadas con el canal, pero no es obligatorio, y también pueden ser para modificaciones locales específicas.
-   * Se crean como copias del **Principal**, pero se pueden editar según sea necesario; normalmente, el contenido se superpone entre las propias variaciones.
+   * Representaciones de texto de fragmento específicas para un propósito editorial; pueden estar relacionadas con el canal, pero no es obligatorio, y también pueden ser para modificaciones locales específicas.
+   * Se crean como copias de **Principal**, pero se puede editar según sea necesario; el contenido se superpone entre las propias variaciones.
    * Se pueden definir durante la creación de fragmentos.
    * Almacenadas en el fragmento para evitar la dispersión de copias de contenido.
    * Las variaciones se pueden [sincronizar](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) con el Principal si se actualizó el contenido principal.
@@ -272,7 +273,7 @@ Contenido intermedio:
 
 ### Requerido por fragmentos {#required-by-fragments}
 
-Para crear fragmentos de contenido necesita lo siguiente:
+Para crear fragmentos de contenido, tenga en cuenta lo siguiente:
 
 * **Modelo de contenido**
 
@@ -293,8 +294,8 @@ Para utilizar los fragmentos de contenido para la creación de páginas, tambié
    * Requerido para [hacer referencia al fragmento en una página](/help/sites-authoring/content-fragments.md).
    * Responsable del diseño y entrega de un fragmento; es decir, de los canales.
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y proporcionar algunos o todos los elementos/variaciones y el contenido asociado.
-   * Al arrastrar un fragmento a una página en la creación, se asociará automáticamente el componente requerido.
+   * Al arrastrar un fragmento a una página en la creación, se asocia automáticamente el componente requerido.
 
 ## Uso de ejemplo {#example-usage}
 
-Un fragmento, con sus elementos y variaciones, se puede utilizar para crear contenido coherente para varios canales. Al diseñar el fragmento, debe tener en cuenta qué se utilizará y dónde.
+Un fragmento, con sus elementos y variaciones, se puede utilizar para crear contenido coherente para varios canales. Al diseñar el fragmento, debe tener en cuenta qué se utiliza y dónde.

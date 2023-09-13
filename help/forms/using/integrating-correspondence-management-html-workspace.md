@@ -1,18 +1,14 @@
 ---
-title: Integración de aplicaciones de terceros en AEM Forms Workspace
-seo-title: Integrating third-party applications in AEM Forms workspace
-description: Integre aplicaciones de terceros como Administración de correspondencia en AEM Forms Workspace.
-seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
-uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
+title: Integración de aplicaciones de terceros en AEM Forms Workspace
+description: Integre aplicaciones de terceros como Administración de correspondencia en AEM Forms Workspace.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 100%
+source-wordcount: '633'
+ht-degree: 80%
 
 ---
 
@@ -20,17 +16,17 @@ ht-degree: 100%
 
 AEM Forms Workspace admite la administración de las actividades de asignación y finalización de tareas en formularios y documentos. Estos formularios y documentos pueden ser formularios XDP, formularios de Flex® o guías (obsoletos) que se han procesado en los formatos XDP, PDF, HTML o Flex.
 
-Estas capacidades se han mejorado aún más. AEM Forms admite ahora la colaboración con aplicaciones de terceros compatibles con funcionalidades similares a las de AEM Forms Workspace. Uno de los aspectos comunes de estas funcionalidades son los flujos de trabajo de asignación y posterior aprobación de tareas. AEM Forms proporciona una experiencia unificada única para los usuarios empresariales de AEM Forms, de forma que todas estas asignaciones de tareas o aprobaciones para las aplicaciones compatibles se puedan administrar a través de AEM Forms Workspace.
+Estas capacidades se han mejorado aún más. AEM Forms ahora admite la colaboración con aplicaciones de terceros compatibles con funciones similares a las de AEM Forms Workspace. Uno de los aspectos comunes de estas funcionalidades son los flujos de trabajo de asignación y posterior aprobación de tareas. AEM Forms proporciona una experiencia unificada única para los usuarios empresariales de AEM Forms, de modo que todas estas asignaciones de tareas o aprobaciones para las aplicaciones compatibles se puedan administrar a través de AEM Forms Workspace.
 
 Por ejemplo, consideremos Administración de correspondencia como el candidato de muestra para la integración con AEM Forms Workspace. Administración de correspondencia incluye el concepto de &quot;carta&quot;, la cual puede procesarse y permite realizar acciones.
 
 ## Crear recursos de Administración de correspondencia {#create-correspondence-management-assets}
 
-Comience creando una plantilla de Administración de correspondencia de ejemplo que se procese en AEM Forms Workspace. Para obtener más información, consulte [Creación de una plantilla de carta](../../forms/using/create-letter.md).
+Comience creando una plantilla de Administración de correspondencia de ejemplo que se procese en AEM Forms Workspace. Para obtener más información, consulte [Creación de una plantilla de carta](../../forms/using/create-letter.md).
 
 Acceda a la plantilla de Administración de correspondencia en su URL para comprobar que se puede procesar correctamente. La URL tiene un patrón similar al siguiente: `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`,
 
-donde `encodedLetterId` es el ID de carta con codificación URL. Especifique el mismo ID de carta a la hora de definir el proceso de representación para la tarea de Workspace en Workbench.
+Donde `encodedLetterId` es el ID de carta con codificación URL. Especifique el mismo ID de carta a la hora de definir el proceso de representación para la tarea de Workspace en Workbench.
 
 ## Creación de una tarea para procesar y enviar una carta en AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
@@ -61,7 +57,7 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM W
 1. Haga clic en Administrar perfiles de acción. Aparecerá el cuadro de diálogo Administrar perfil de acción. Asegúrese de que las opciones Procesar y Enviar procesos están correctamente seleccionadas.
 1. Para abrir la carta con un archivo XML de datos, busque y seleccione el archivo de datos correspondiente en el Proceso de preparación de datos.
 1. Haga clic en Aceptar.
-1. Defina las variables para la salida del punto de inicio y los archivos adjuntos de la tarea. Las variables definidas contendrán los datos de salida del punto de inicio y los datos de los archivos adjuntos de la tarea.
+1. Defina las variables para la salida del punto de inicio y los archivos adjuntos de la tarea. Las variables definidas contienen datos de salida del punto de inicio y datos adjuntos de la tarea.
 1. (Opcional) Para agregar otro usuario al flujo de trabajo, arrastre un selector de actividades, configúrelo y asígnelo a un usuario. Escriba un contenedor personalizado (a continuación se muestra un ejemplo) o descargue e instale el DSC (el cual aparece más abajo) para la plantilla de carta exacta, la salida del punto de inicio y los archivos adjuntos de la tarea.
 
    A continuación, se muestra un ejemplo de contenedor personalizado:
@@ -102,7 +98,7 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM W
    ```
 
    [Obtener archivo](assets/dscsample.zip)
-Descargar DSC: hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Para obtener más información, consulte [Configuración del servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+Descargar DSC: hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Consulte [Configuración del servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    En el cuadro de diálogo Definir actividad, seleccione la actividad adecuada, como getLetterInstanceInfo, y haga clic en **Aceptar**.
 

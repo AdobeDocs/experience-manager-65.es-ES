@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2112'
 ht-degree: 1%
 
 ---
@@ -28,11 +28,11 @@ Este documento describe lo siguiente:
 
 ## ¿Por qué crear y configurar páginas del Editor de recursos? {#why-create-and-configure-asset-editor-pages}
 
-La administración de activos digitales se utiliza cada vez más en situaciones diferentes. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios formados profesionalmente (por ejemplo, fotógrafos o taxónomos) a grupos de usuarios más grandes y diversos (por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.), la potente interfaz de usuario de [!DNL Adobe Experience Manager Assets] para los usuarios profesionales, puede proporcionar demasiada información y las partes interesadas empiezan a solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
+La administración de activos digitales se utiliza en más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios formados profesionalmente (por ejemplo, fotógrafos o taxónomos) a grupos de usuarios más grandes y diversos (por ejemplo, usuarios empresariales, autores de WCM y periodistas), la potente interfaz de usuario de [!DNL Adobe Experience Manager Assets] puede proporcionar demasiada información. Las partes interesadas empiezan a solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les interesan.
 
 Estas aplicaciones centradas en recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a ferias comerciales o de un centro de prensa en un sitio web público. Las aplicaciones centradas en recursos también se pueden ampliar a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
-La creación de una aplicación centrada en recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Aplicaciones centradas en recursos creadas con [!DNL Assets] son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
+La creación de una aplicación centrada en recursos se convierte en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, y conocimiento de los metadatos que se utilizan. Aplicaciones centradas en recursos creadas con [!DNL Assets] son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
 Una aplicación centrada en recursos en [!DNL Experience Manager] consta de una página Editor de recursos, que se puede utilizar para obtener una vista detallada de un recurso específico. Una página del Editor de recursos también permite editar metadatos, siempre que el usuario que acceda al recurso tenga los permisos necesarios.
 
@@ -192,11 +192,11 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 
 ## Crear y configurar una página del Editor de recursos {#creating-and-configuring-an-asset-editor-page}
 
-Puede personalizar el editor de recursos para determinar cómo pueden ver y editar los recursos digitales los usuarios. Para ello, cree una nueva página del Editor de recursos y, a continuación, personalice las vistas y las acciones que los usuarios pueden realizar en esa página.
+Puede personalizar el Editor de recursos para determinar cómo pueden ver y editar los recursos digitales los usuarios. Para ello, cree una página del Editor de recursos y, a continuación, personalice las vistas y las acciones que los usuarios pueden realizar en esa página.
 
 >[!NOTE]
 >
->Si desea agregar campos personalizados al editor de recursos DAM, agregue nuevos `cq:Widget` nodos a `/apps/dam/content/asseteditors.`
+>Si desea agregar campos personalizados al Editor de recursos DAM, agregue nuevos campos `cq:Widget` nodos a `/apps/dam/content/asseteditors.`
 
 ### Crear una página del editor de recursos {#creating-the-asset-editor-page}
 
@@ -204,7 +204,7 @@ Al crear la página del Editor de recursos, se recomienda crear la página direc
 
 Para crear una página del editor de recursos:
 
-1. En el **[!UICONTROL Sitios web]** , vaya al lugar en el que desea crear una página del editor de recursos y haga clic en **Nuevo**.
+1. En el **[!UICONTROL Sitios web]** , vaya al lugar en el que desea crear una página del Editor de recursos y haga clic en **Nuevo**.
 1. Seleccionar **Editor de recursos de Geometrixx** y haga clic en **Crear**. La nueva página se crea y la página se enumera en la **Sitios web** pestaña.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -219,7 +219,7 @@ Para personalizar la página del Editor de recursos, utilice los elementos de la
 
 #### Configurar un editor de recursos para que se abra desde una página de uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
-Después de crear la página del editor de recursos personalizado, debe asegurarse de que cuando haga doble clic en los recursos que el recurso compartido de recursos personalizado que ha creado abra los recursos en la página del editor personalizado.
+Después de crear la página del editor de recursos personalizado, asegúrese de que al hacer doble clic en los recursos que ha creado con el uso compartido de recursos personalizado, se abran los recursos en la página del editor personalizado.
 
 Para establecer la página Editor de recursos:
 
@@ -235,28 +235,28 @@ Para establecer la página Editor de recursos:
 
 #### Añadir componentes del Editor de recursos {#adding-asset-editor-components}
 
-Puede determinar qué funcionalidad tiene un editor de recursos añadiendo componentes a la página.
+Para determinar la funcionalidad que tiene un editor de recursos, agregue componentes a la página.
 
-Para agregar componentes del editor de recursos:
+Para agregar componentes del Editor de recursos:
 
-1. En la página Editor de recursos que desee personalizar, seleccione **Editor de recursos** en la barra. Se muestran todos los componentes del editor de recursos disponibles.
+1. En la página Editor de recursos que desee personalizar, seleccione **Editor de recursos** en la barra. Se muestran todos los componentes disponibles del Editor de recursos.
 
 >[!NOTE]
 >
 >Lo que se puede personalizar depende de los componentes disponibles. Para activar los componentes, vaya al modo Diseño y seleccione los componentes que necesita activar.
 
-1. Arrastre los componentes de la barra de tareas al editor de recursos y realice las modificaciones necesarias en los cuadros de diálogo de componentes. Los componentes se describen en la tabla siguiente y en las instrucciones detalladas que siguen.
+1. Arrastre los componentes de la barra de tareas al Editor de recursos y realice los cambios necesarios en los cuadros de diálogo de componentes. Los componentes se describen en la tabla siguiente y en las instrucciones detalladas que siguen.
 
 >[!NOTE]
 >
->Al diseñar la página del editor de recursos, crea componentes de solo lectura o editables. Los usuarios saben que un campo se puede editar si aparece una imagen de un lápiz en ese componente. De forma predeterminada, la mayoría de los componentes están configurados como de solo lectura.
+>Al diseñar la página del Editor de recursos, se crean componentes de solo lectura o editables. Los usuarios saben que un campo se puede editar si aparece una imagen de un lápiz en ese componente. De forma predeterminada, la mayoría de los componentes están configurados como de solo lectura.
 
 | Componente | Descripción |
 |---|---|
 | **[!UICONTROL Formulario de metadatos] y [!UICONTROL Campo de texto de metadatos]** | Permite agregar metadatos adicionales a un recurso y realizar una acción, como enviar, en ese recurso. |
 | **[!UICONTROL Subrecursos]** | Permite personalizar los subrecursos. |
 | **Etiquetas** | Permite que los usuarios seleccionen y agreguen etiquetas a un recurso. |
-| **[!UICONTROL Miniatura]** | Muestra una miniatura del recurso, su nombre de archivo y permite agregar un texto alternativo. Aquí también puede agregar acciones del editor de recursos. |
+| **[!UICONTROL Miniatura]** | Muestra una miniatura del recurso, su nombre de archivo y permite agregar un texto alternativo. Aquí también puede agregar acciones del Editor de recursos. |
 | **[!UICONTROL Título]** | Muestra el título del recurso, que se puede personalizar. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
@@ -265,7 +265,7 @@ Para agregar componentes del editor de recursos:
 
 El formulario de metadatos es un formulario que incluye una acción de inicio y otra de finalización. En el medio, se introduce **Texto** campos. Consulte [Forms](/help/sites-authoring/default-components-foundation.md#form-component) para obtener más información sobre cómo trabajar con formularios.
 
-1. Cree una acción de inicio haciendo clic en **Editar** en el área Inicio del formulario. Si lo desea, puede introducir un título de cuadro. De forma predeterminada, el título del cuadro es **Metadatos**. Active la casilla de verificación Validación del cliente si desea que se genere el código de cliente java-script para la validación.
+1. Cree una acción de inicio haciendo clic en **Editar** en el área Inicio del formulario. Si lo desea, puede introducir un título de cuadro. De forma predeterminada, el título del cuadro es **Metadatos**. Active la casilla de verificación Validación del cliente si desea que se genere el código de cliente JavaScript para la validación.
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
@@ -275,7 +275,7 @@ El formulario de metadatos es un formulario que incluye una acción de inicio y 
 
 1. Entre el **Inicio de formulario** y el **Fin de formulario**, arrastre Campos de texto de metadatos al formulario. Los usuarios rellenan los metadatos en estos campos de texto, sobre los que pueden enviar o completar otra acción.
 
-1. Haga doble clic en el nombre del campo, por ejemplo, **Título** para abrir el campo de metadatos y realizar cambios. En el **General** de la pestaña **Editar componente** , defina el área de nombres y la etiqueta del campo, así como el tipo, por ejemplo, `dc:title`.
+1. Haga doble clic en el nombre del campo, por ejemplo, **Título** para abrir el campo de metadatos y realizar cambios. En el **General** de la pestaña **Editar componente** , defina el área de nombres y la etiqueta de campo y el tipo, por ejemplo, `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
@@ -285,7 +285,7 @@ Consulte [Personalización y ampliación de recursos](/help/assets/extending-ass
 
 ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Haga clic en **Mostrar** pestaña. Aquí puede introducir una nueva anchura y número de filas para el campo de metadatos. Seleccione el **El campo es de solo lectura** casilla de verificación para permitir a los usuarios editar los metadatos.
+1. Haga clic en **Mostrar** pestaña. Aquí puede introducir una nueva anchura y número de filas para el campo de metadatos. Seleccione el **El campo es de solo lectura** para permitir que los usuarios editen los metadatos.
 
 ![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
@@ -299,7 +299,7 @@ En la página Editor de recursos, los usuarios pueden introducir valores en los 
 
 El componente Subrecursos es donde puede ver y seleccionar subrecursos. Puede determinar qué nombres aparecen bajo la etiqueta [recurso principal](/help/assets/assets.md#what-are-digital-assets) y recursos secundarios.
 
-Haga doble clic en el componente Subrecursos para abrir el cuadro de diálogo Subrecursos, donde puede cambiar los títulos del recurso principal y de los subrecursos. Los valores predeterminados aparecen debajo del campo correspondiente.
+Haga doble clic en el componente Subrecursos para poder abrir el cuadro de diálogo de subrecursos, donde puede cambiar los títulos del recurso principal y de los subrecursos. Los valores predeterminados aparecen debajo del campo correspondiente.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
@@ -317,7 +317,7 @@ El componente Etiquetas es un componente en el que los usuarios pueden asignar e
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Haga doble clic en el componente Etiquetas para abrir el cuadro de diálogo de etiquetas, donde puede cambiar el título de Etiquetas, si lo desea, y donde puede seleccionar las áreas de nombres asignadas. Para que este campo sea editable, borre la marca de la casilla **[!UICONTROL Ocultar edición]** casilla de verificación. De forma predeterminada, las etiquetas son editables.
+Haga doble clic en el componente Etiquetas para poder abrir el cuadro de diálogo de etiquetas, donde puede cambiar el título de Etiquetas, si lo desea, y donde puede seleccionar las áreas de nombres asignadas. Para que este campo sea editable, borre la marca de la casilla **[!UICONTROL Ocultar edición]** casilla de verificación. De forma predeterminada, las etiquetas son editables.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -335,7 +335,7 @@ El componente Miniatura es el lugar donde el recurso muestra la miniatura selecc
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Haga doble clic en el componente de miniatura para abrir el cuadro de diálogo de miniaturas, donde puede cambiar el texto alternativo. De forma predeterminada, el texto alternativo de la miniatura es **Haga clic para descargar** recurso.
+Haga doble clic en el componente de miniatura para poder abrir el cuadro de diálogo de miniaturas, donde podrá cambiar el texto alternativo. De forma predeterminada, el texto alternativo de la miniatura es **Haga clic para descargar** recurso.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -388,10 +388,7 @@ Estas son las acciones disponibles:
 
 ## Recursos de edición múltiple con la página Editor de recursos {#multi-editing-assets-with-the-asset-editor-page}
 
-Con [!DNL Experience Manager Assets] puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar simultáneamente sus:
-
-* Etiquetas
-* Metadatos
+Con [!DNL Experience Manager Assets], puede cambiar varios recursos a la vez. Después de seleccionar los recursos, puede cambiar simultáneamente las etiquetas y los metadatos.
 
 Para realizar varias ediciones de recursos con la página Editor de recursos:
 
@@ -408,7 +405,7 @@ Para realizar varias ediciones de recursos con la página Editor de recursos:
 1. Clic **Editar metadatos** en el **Acciones** (parte izquierda de la página).
 1. El Geometrixx **Editor de recursos del centro de prensa** página se abre en una nueva pestaña. Los metadatos de los recursos se muestran de la siguiente manera:
 
-   * Una etiqueta que no se aplique a todos los recursos, sino solo a algunos, se muestra en cursiva.
+   * Las etiquetas que no se apliquen a todos los recursos, sino solo a algunos, se muestran en cursiva.
    * Se muestra una etiqueta que se aplica a todos los recursos con una fuente normal.
    * Metadatos distintos de etiquetas: el valor del campo solo se muestra si es el mismo para todos los recursos seleccionados.
 

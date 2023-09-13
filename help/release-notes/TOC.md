@@ -7,19 +7,18 @@ breadcrumb-title: Notas de la versión
 user-guide-description: AEM Obtenga información acerca de las últimas funciones de la versión 6.5 de en las notas de la versión.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8a7ca99d896fd1ce2ace5b17a91987c6b8535615
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 48%
+ht-degree: 42%
 
 ---
 
 
 # Notas de la versión de Adobe Experience Manager 6.5 {#release-notes}
 
-+ [Notas de la versión 6.5 de AEM](home.md)
++ [Notas de la versión de AEM 6.5](home.md)
 + [Notas de la versión actual](release-notes.md)
-+ [Instrucciones de instalación del Service Pack de AEM Forms](aem-forms-current-service-pack-installation-instructions.md)
 + [Notas de la versión anterior]{#service-pack}
    + [6.5.17](previous/6.5.17.md)
    + [6.5.16](previous/6.5.16.md)
@@ -39,6 +38,7 @@ ht-degree: 48%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
++ [instrucciones de instalación del Service Pack de AEM Forms](aem-forms-current-service-pack-installation-instructions.md)
 + [Programa de instalación de parches de AEM Forms JEE](jee-patch-installer-65.md)
 + [Funciones en desuso y eliminadas](deprecated-removed-features.md)
-+ [Estado de la función de IU táctil](touch-ui-features-status.md)
++ [Estado de función de IU táctil](touch-ui-features-status.md)

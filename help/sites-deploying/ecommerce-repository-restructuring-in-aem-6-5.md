@@ -1,18 +1,14 @@
 ---
 title: AEM Reestructuración del repositorio de comercio electrónico en la versión 6.5 de
-seo-title: E-Commerce Repository Restructuring in AEM 6.5
-description: AEM Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.5 para el comercio electrónico de.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for E-Commerce.
-uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
+description: AEM Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.5 de la versión para el comercio electrónico de.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
 exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
@@ -32,7 +28,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
    <td><p><code>/etc/commerce/products</code></p> <p><code>/etc/commerce/orders</code></p> <p><code>/etc/commerce/collections</code></p> <p><code>/etc/commerce/classifications</code></p> <p><code>/etc/commerce/shipping-methods</code></p> <p><code>/etc/commerce/payment-methods</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nueva ubicación(es)</strong></td>
+   <td><strong>Nuevas ubicaciones</strong></td>
    <td><p><code>/var/commerce/products</code></p> <p><code>/var/commerce/orders</code></p> <p><code>/var/commerce/collections</code></p> <p><code>/var/commerce/classifications</code></p> <p><code>/var/commerce/shipping-methods</code></p> <p><code>/var/commerce/payment-methods</code></p> </td>
   </tr>
   <tr>
@@ -49,7 +45,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
      <li>/etc/commerce/orders<br /> </li>
      <li>/etc/commerce/payment-methods<br /> </li>
      <li>/etc/commerce/shipping-methods<br /> </li>
-    </ul> <p>AEM Para catálogos más grandes, se recomienda ejecutar la tarea de migración comercial de forma individual pasando la siguiente propiedad del sistema Java a la dirección de correo electrónico:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>AEM Después de la migración, es necesario reiniciar el.</p> </td>
+    </ul> <p>Para catálogos más grandes, Adobe AEM recomienda ejecutar la tarea de migración comercial de forma individual pasando la siguiente propiedad del sistema Java™ a la dirección de correo electrónico:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>AEM Después de la migración, reinicie el.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
