@@ -1,15 +1,15 @@
 ---
 title: Acceder y cumplimentar formularios publicados
-description: El portal de formularios proporciona a los desarrolladores web componentes para crear y personalizar un portal de formularios en sitios web creados con Adobe Experience Manager (AEM).
+description: El portal de Forms proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager AEM ().
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 86%
+source-wordcount: '935'
+ht-degree: 59%
 
 ---
 
@@ -17,25 +17,25 @@ ht-degree: 86%
 
 En una configuración de implementación del portal centrado en formularios, el desarrollo de los formularios y del portal son dos actividades distintas. Mientras los diseñadores de formularios diseñan y almacenan formularios en un repositorio, los desarrolladores web crean una aplicación web para enumerar formularios y controlar los envíos. Los formularios se copian en el nivel web, ya que no hay ninguna comunicación entre el repositorio de formularios y la aplicación web.
 
-Esto suele provocar problemas con la administración de los retrasos de configuración y producción. Por ejemplo, si hay una versión más reciente de un formulario en el repositorio, el diseñador reemplazará el formulario en el nivel web, modificará la aplicación web y volverá a implementar el formulario en el sitio público. Volver a implementar la aplicación web puede causar cierto tiempo de inactividad en el servidor. Dado que el tiempo de inactividad del servidor es una actividad planificada, los cambios no pueden ser enviados al sitio público inmediatamente.
+Esto suele provocar problemas con la administración de los retrasos de configuración y producción. Por ejemplo, si hay una versión más reciente de un formulario disponible en el repositorio, el diseñador de formularios reemplaza el formulario en el nivel web, modifica la aplicación web y vuelve a implementar el formulario en el sitio público. Volver a implementar la aplicación web puede causar cierto tiempo de inactividad en el servidor. Dado que el tiempo de inactividad del servidor es una actividad planificada, los cambios no pueden ser enviados al sitio público inmediatamente.
 
-El portal de formularios reduce los gastos generales de administración y los retrasos en la producción. Proporciona a los desarrolladores web componentes para crear y personalizar el portal de formularios en sitios web creados con Adobe Experience Manager (AEM).
+El portal de formularios reduce los gastos generales de administración y los retrasos en la producción. Proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager AEM ().
 
-Para obtener más información sobre el portal de formularios y sus características, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
+Para obtener más información sobre el portal de Forms y sus funciones, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
-## Introducción al portal de formularios {#getting-started-with-forms-portal}
+## Introducción al portal de Forms {#getting-started-with-forms-portal}
 
-Navegue hasta la página publicada del portal de formularios. Para obtener más información sobre cómo crear una página de portal de formularios, consulte [Crear una página de portal de formularios](../../forms/using/creating-form-portal-page.md).
+Navegue hasta la página publicada del portal de Forms. Para obtener más información sobre la creación de una página de portal de Forms, consulte [Creación de una página de portal de Forms](../../forms/using/creating-form-portal-page.md).
 
-El componente Buscar y listar del portal de formularios muestra los formularios disponibles en la instancia de publicación del servidor de AEM. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de formularios. Una página del portal de formularios tiene un aspecto similar al que se muestra en la siguiente imagen:
+El componente Buscar y listar del portal de Forms AEM muestra los formularios disponibles en la instancia de publicación del servidor de la. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
 
 ![Página de ejemplo del portal de formularios ](assets/forms-portal-page.png)
 
-Página de ejemplo del portal de formularios 
+Página de ejemplo del portal de Forms
 
 ### Buscar y listar {#search-and-lister}
 
-El componente Buscar y listar permite agregar la siguiente funcionalidad al portal de formularios:
+El componente Buscar y listar permite agregar la siguiente funcionalidad al portal de Forms:
 
 * Enumerar formularios en el panel, la tarjeta o la vista de cuadrícula que estén disponibles de forma predeterminada. También admite formularios personalizados templatesList de carpetas específicas en Forms Manager.
 * Especificar cómo se procesan los formularios: HTML5, PDF o ambos.
@@ -58,7 +58,7 @@ Cuadro de diálogo de búsqueda avanzada
 
 La búsqueda avanzada permite buscar formularios en función de las propiedades especificadas del formulario. Esto proporciona un resultado más específico que la búsqueda de texto completo. La búsqueda avanzada incluye la búsqueda basada en etiquetas, propiedades (como autor, descripción y título), fecha de modificación y texto completo.
 
-La lista muestra los formularios en función de los parámetros de búsqueda. Cada formulario del resultado de la búsqueda se muestra con un icono que es un hipervínculo al formulario asociado. Puede hacer clic en el icono para abrir y trabajar con el formulario asociado.
+La lista muestra formularios basados en los parámetros de búsqueda. Cada formulario del resultado de la búsqueda se muestra con un icono que es un hipervínculo al formulario asociado. Puede hacer clic en el icono para abrir y trabajar con el formulario asociado.
 
 ### Rellenar un formulario {#filling-a-form}
 
@@ -88,9 +88,9 @@ Componente Borradores y envíos
 
 ## Inicie un formulario nuevo con los datos de un formulario enviado {#start-a-new-form-using-submitted-form-data}
 
-Algunos formularios que debe rellenarlos y enviarlos con frecuencia. Por ejemplo, el formulario para presentar la declaración de impuestos individual se envía cada año. En estos casos, mientras que parte de la información cambia cada vez que se rellena el formulario, la mayoría de ella, como los detalles personales y familiares, no cambia. Sin embargo, debe rellenar todo el formulario de nuevo, desde cero.
+Algunos formularios que debe rellenar y enviar con frecuencia. Por ejemplo, el formulario para presentar una declaración de impuestos individual se envía cada año. En estos casos, mientras que parte de la información cambia cada vez que se rellena el formulario, la mayoría de ella, como los detalles personales y familiares, no cambia. Sin embargo, debe rellenar todo el formulario de nuevo, desde cero.
 
-AEM Forms puede ayudar a optimizar la experiencia de cumplimentación de formularios y reducir significativamente el tiempo para rellenar y enviar un formulario de nuevo. Los usuarios finales pueden iniciar un nuevo formulario con los datos de un formulario enviado. Esta funcionalidad está integrada en el [Componente Borradores y envíos](../../forms/using/draft-submission-component.md). Cuando se agrega el componente Borradores y envíos a la página del portal de formularios y se publica, los usuarios finales ven una opción en las pestañas Enviado Forms y Borrador Forms para iniciar un nuevo formulario con los datos de un formulario enviado. La siguiente imagen resalta esa opción.
+AEM Forms puede ayudar a optimizar la experiencia de cumplimentación de formularios y reducir significativamente el tiempo para rellenar y enviar un formulario de nuevo. Los usuarios finales pueden iniciar un nuevo formulario con los datos de un formulario enviado. Esta funcionalidad está integrada en el [Componente Borradores y envíos](../../forms/using/draft-submission-component.md). Cuando agregue el componente Borradores y envíos a la página del portal de Forms y lo publique, los usuarios finales verán una opción en las pestañas Enviado Forms y Borrador de Forms. La opción permite iniciar un nuevo formulario con los datos de un formulario enviado. La siguiente imagen resalta esa opción.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 
