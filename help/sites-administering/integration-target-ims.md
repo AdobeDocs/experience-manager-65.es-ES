@@ -1,11 +1,11 @@
 ---
 title: Integración con Adobe Target mediante IMS
-description: AEM Obtenga información acerca de la integración de la con Adobe Target mediante IMS
+description: AEM Obtenga información acerca de la integración de los con Adobe Target mediante IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 53%
+source-wordcount: '1557'
+ht-degree: 42%
 
 ---
 
@@ -27,17 +27,17 @@ AEM La integración de la con Adobe Target mediante la API de Target Standard re
 
 Antes de iniciar este procedimiento:
 
-* El [Soporte de Adobe](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) debe aprovisionar su cuenta para lo siguiente:
+* El [Soporte de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support) debe aprovisionar su cuenta para lo siguiente:
 
    * Adobe Console
    * Adobe Developer Console
    * Adobe Target y
    * Adobe IMS (Identity Management System)
 
-* El administrador del sistema de su organización debe utilizar el Admin Console para añadir los desarrolladores necesarios de su organización a los perfiles de producto relevantes.
+* El administrador del sistema de su organización debe utilizar Admin Console para añadir los desarrolladores necesarios de su organización a los perfiles de producto relevantes.
 
    * Esto proporciona a los desarrolladores específicos permisos para habilitar integraciones en Adobe Developer Console.
-   * Para obtener más información, consulte [Administración de desarrolladores](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Consulte [Administrar desarrolladores](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 
 
 ## Configuración de IMS: generación de una clave pública {#configuring-an-ims-configuration-generating-a-public-key}
@@ -45,7 +45,7 @@ Antes de iniciar este procedimiento:
 El primer paso de la configuración es crear una configuración de IMS en AEM y generar la clave pública.
 
 1. En AEM, abra el menú **Herramientas**.
-1. En la sección **Seguridad**, seleccione **Configuraciones de IMS de Adobe**.
+1. En el **Seguridad** , seleccione **Configuraciones de IMS de Adobe**.
 1. Seleccione **Crear** para abrir la **Configuración de cuenta técnica de Adobe IMS**.
 1. En la lista desplegable debajo de **Configuración de nube**, seleccione **Adobe Target**.
 1. Active **Crear nuevo certificado** e introduzca un nuevo alias.
@@ -57,21 +57,21 @@ El primer paso de la configuración es crear una configuración de IMS en AEM y 
 
    >[!CAUTION]
    >
-   >Mantenga esta configuración abierta, será necesaria de nuevo cuando [complete la configuración de IMS en AEM](#completing-the-ims-configuration-in-aem).
+   >Mantenga esta configuración abierta; es necesaria de nuevo cuando [AEM Finalización de la configuración de IMS en la](#completing-the-ims-configuration-in-aem).
 
    ![Mensaje de información para agregar un certificado en Adobe I/O](assets/integrate-target-io-02.png)
 
 ## Configuración de IMS para la integración de Adobe Target con AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
-Con la consola de Adobe Developer, debe crear un proyecto (integración) con Adobe Target AEM que vaya a utilizar y, a continuación, asignar los privilegios necesarios.
+Con la consola de Adobe Developer, cree un proyecto (integración) con Adobe Target AEM que pueda utilizar y, a continuación, asigne los privilegios necesarios.
 
 ### Creación del proyecto {#creating-the-project}
 
-Abra Adobe Developer Console para crear un proyecto con Adobe Target que utilizará AEM:
+Para crear un proyecto con Adobe Target AEM que pueda utilizar, abra la consola de Adobe Developer:
 
 >[!CAUTION]
 >
->Actualmente, solo admitimos el de Adobe Developer Console **Cuenta de servicio (JWT)** tipo de credencial.
+>Actualmente, Adobe solo admite el de la consola de Adobe Developer **Cuenta de servicio (JWT)** tipo de credencial.
 >
 >No use el **Servidor a servidor OAuth** tipo de credencial, que se admitirá en el futuro.
 
@@ -79,11 +79,11 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Target que utiliza
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Se mostrarán todos los proyectos que tenga. Seleccione **Crear nuevo proyecto**. La ubicación y el uso dependerán de lo siguiente:
+1. Se muestran todos los proyectos que tenga. Seleccionar **Crear nuevo proyecto** - la ubicación y el uso dependen de lo siguiente:
 
-   * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** estará en el centro, abajo.
+   * Si todavía no tiene ningún proyecto, **Crear nuevo proyecto** está en el centro, abajo.
      ![Creación de un nuevo proyecto: primer proyecto](assets/integration-target-io-02.png)
-   * Si ya tiene proyectos, estos se enumerarán y **Crear nuevo proyecto** estará en la parte superior derecha.
+   * Si ya tiene proyectos existentes, estos se enumeran y **Crear nuevo proyecto** está en la esquina superior derecha.
      ![Creación de un nuevo proyecto: varios proyectos](assets/integration-target-io-03.png)
 
 
@@ -95,7 +95,7 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Target que utiliza
 
    >[!NOTE]
    >
-   >Si está suscrito a Adobe Target, pero no lo ve en la lista, debe comprobar el [Requisitos previos](#prerequisites).
+   >Si se ha suscrito a Adobe Target, pero no lo ve en la lista, debe comprobar los [Requisitos previos](#prerequisites).
 
    ![Haga clic en siguiente](assets/integration-target-io-12.png)
 
@@ -118,17 +118,17 @@ Abra Adobe Developer Console para crear un proyecto con Adobe Target que utiliza
 
    ![Selección de una API para añadir](assets/integration-target-io-16.png)
 
-1. La creación se confirmará.
+1. La creación se ha confirmado.
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![integrate-target-io-07](assets/integrate-target-io-07.png)
 -->
 
 ### Asignación de privilegios a la integración {#assigning-privileges-to-the-integration}
 
-Ahora debe asignar los privilegios necesarios a la integración:
+Ahora asigne los privilegios necesarios a la integración:
 
 1. Abra la Adobe **Admin Console**:
 
@@ -145,7 +145,7 @@ Desde Adobe Developer Console y Proyectos, puede ver una lista de todos sus proy
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-Seleccione **Ver** (a la derecha de una entrada de proyecto específica) para mostrar más detalles acerca de la configuración. Entre estas características se incluyen:
+Para mostrar más detalles acerca de la configuración, seleccione **Ver** (a la derecha de una entrada de proyecto específica). Entre estas características se incluyen:
 
 * Información general del proyecto
 * Perspectivas
@@ -156,11 +156,11 @@ Seleccione **Ver** (a la derecha de una entrada de proyecto específica) para mo
 * API
    * Por ejemplo, Adobe Target
 
-En algunos de estos casos, deberá completar la integración de Adobe Target en AEM según IMS.
+En algunos de estos casos, debe completar la integración de Adobe Target AEM en basado en IMS y en el código de tiempo de la aplicación de la plataforma de datos de.
 
 ## Finalización de la configuración de IMS en AEM {#completing-the-ims-configuration-in-aem}
 
-AEM Al volver a la configuración de la consola de Adobe Developer para Target, puede completar la configuración de IMS añadiendo los valores necesarios:
+AEM Al volver a la configuración de, puede completar la configuración de IMS añadiendo los valores necesarios desde la integración de la consola de Adobe Developer para Target:
 
 1. Vuelva a la [Configuración de IMS abierta en AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Seleccione **Siguiente**.
@@ -177,7 +177,7 @@ AEM Al volver a la configuración de la consola de Adobe Developer para Target, 
 
 1. Confirme con **Crear**.
 
-1. La configuración de Adobe Target se mostrará en la consola de AEM.
+1. La configuración de Adobe Target se muestra en la consola de AEM.
 
    ![Configuración de cuenta técnica de IMS de Adobe](assets/integrate-target-io-11.png)
 
@@ -209,15 +209,15 @@ Ahora se puede hacer referencia a la configuración para que un Cloud Service ut
 1. Abra el **Herramientas** menú. A continuación, dentro de **Cloud Service** , seleccione **Cloud Service heredados**.
 1. Desplácese hacia abajo hasta **Adobe Target** y seleccione **Configurar ahora**.
 
-   El **Crear configuración** se abrirá.
+   El **Crear configuración** se abre el cuadro de diálogo.
 
-1. Introduzca una **Título** y, si lo desea, un **Nombre** (si se deja en blanco, se generará a partir del título).
+1. Introduzca una **Título** y, si lo desea, un **Nombre** (si se deja en blanco, se genera a partir del título).
 
    También puede seleccionar la plantilla requerida (si hay más de una disponible).
 
 1. Confirme con **Crear**.
 
-   El **Editar componente** se abrirá.
+   El **Editar componente** se abre el cuadro de diálogo.
 
 1. Introduzca los detalles en la **Configuración de Adobe Target** pestaña:
 
@@ -241,11 +241,11 @@ Ahora se puede hacer referencia a la configuración para que un Cloud Service ut
 
    * **Tipo de API**: REST
 
-   * **Configuración de A4T Analytics Cloud**: Seleccione la configuración de Analytics Cloud que se utiliza para las métricas y los objetivos de las actividades de Target. Lo necesita si utiliza Adobe Analytics como fuente de informes al segmentar contenido. Si no ve la configuración de nube, consulte la nota en [Configuración de A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+   * **Configuración de A4T Analytics Cloud**: seleccione la configuración de Analytics Cloud que se utiliza para los objetivos y las métricas de las actividades de Target. Lo necesita si utiliza Adobe Analytics como fuente de informes al segmentar contenido. Si no ve la configuración de nube, consulte la nota en [Configuración de A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
-   * **Usar objetivos precisos**: De forma predeterminada, esta casilla de verificación está seleccionada. Si se selecciona, la configuración del servicio en la nube esperará a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
+   * **Usar objetivos precisos**: De forma predeterminada, esta casilla de verificación está seleccionada. Si se selecciona, la configuración del servicio en la nube espera a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
 
-   * **Sincronizar segmentos de Adobe Target** AEM : seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en las listas de segmentos de la lista de segmentos que se van a usar en la. Debe seleccionar esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. (Tenga en cuenta que el término de AEM de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
+   * **Sincronizar segmentos de Adobe Target** AEM : seleccione esta opción para poder descargar segmentos definidos en Target y utilizarlos en el servicio de segmentos de la aplicación de la interfaz de usuario de. Seleccione esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre debe utilizar segmentos de Target. AEM (El término de de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
 
    * **Biblioteca de cliente**: Seleccione si desea la biblioteca de cliente AT.js o mbox.js (obsoleto).
 
@@ -261,9 +261,9 @@ Ahora se puede hacer referencia a la configuración para que un Cloud Service ut
 
    Si la conexión se realiza correctamente, aparecerá el mensaje **Conexión correcta.**
 
-1. Seleccionar **OK** en el mensaje, seguido de **OK** en el cuadro de diálogo para confirmar la configuración.
+1. Seleccionar **OK** en el mensaje, seguido de **OK** en el cuadro de diálogo para poder confirmar la configuración.
 
-1. Ahora puede continuar con [Agregar un marco de trabajo de Target](/help/sites-administering/target-configuring.md#adding-a-target-framework) para configurar ContextHub o los parámetros de ClientContext que se enviarán a Target. AEM Tenga en cuenta que esto puede no ser necesario para exportar fragmentos de experiencia de la a Target.
+1. Ahora puede continuar con [Agregar un marco de trabajo de Target](/help/sites-administering/target-configuring.md#adding-a-target-framework) para configurar ContextHub o los parámetros de ClientContext que se envían a Target. AEM Tenga en cuenta que esto puede no ser necesario para exportar fragmentos de experiencia de la a Target.
 
 ### ID de inquilino y código de cliente {#tenant-client}
 
@@ -274,13 +274,13 @@ Al configurar los campos ID de inquilino y Código de cliente, tenga en cuenta l
 1. Para la mayoría de los clientes, el ID de inquilino y el código de cliente son los mismos. Esto significa que ambos campos contienen la misma información y son idénticos. Asegúrese de introducir el ID de inquilino en ambos campos.
 2. Para fines heredados, también puede introducir valores diferentes en los campos ID de inquilino y Código de cliente.
 
-En ambos casos, tenga en cuenta que:
+En ambos casos, tenga en cuenta lo siguiente:
 
 * De forma predeterminada, el código de cliente (si se agrega primero) también se copia automáticamente en el campo ID de inquilino.
-* Tiene la opción de cambiar el conjunto de ID de inquilino predeterminado.
-* En consecuencia, las llamadas de servidor a Target se basarán en el ID de inquilino y las llamadas del lado del cliente a Target se basarán en el código del cliente.
+* Si lo desea, puede cambiar el conjunto de ID de inquilino predeterminado.
+* Por lo tanto, las llamadas de servidor a Target se basan en el ID de inquilino y las llamadas del lado del cliente a Target se basan en el código de cliente.
 
-AEM Como se ha indicado anteriormente, el primer caso es el más común para la versión 6.5 de la. De cualquier manera, asegúrate **ambos** Los campos contienen la información correcta según sus necesidades.
+AEM Como se ha indicado anteriormente, el primer caso es el más común para la versión 6.5 de la. De cualquier manera, asegúrate de que **ambos** Los campos contienen la información correcta según sus necesidades.
 
 >[!NOTE]
 >

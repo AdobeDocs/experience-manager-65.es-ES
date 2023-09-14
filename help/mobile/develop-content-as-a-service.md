@@ -1,17 +1,13 @@
 ---
 title: Entrega de contenido
-seo-title: Content Delivery
 description: Entrega de contenido
-seo-description: null
-uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -22,13 +18,13 @@ ht-degree: 0%
 >
 >Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-AEM Las aplicaciones móviles deben poder utilizar cualquier tipo de contenido en la aplicación según sea necesario para ofrecer la experiencia de la aplicación a la que van dirigidas.
+AEM Las aplicaciones móviles deben poder utilizar todo el contenido en los segmentos según sea necesario para ofrecer la experiencia de la aplicación a la que van dirigidas.
 
 Esto incluye el uso de recursos, contenido del sitio, contenido de CaaS (aéreo) y contenido personalizado que puede tener su propia estructura.
 
 >[!NOTE]
 >
->**Contenido en el aire** puede provenir de cualquiera de los anteriores a través de controladores ContentSync. Se puede utilizar para empaquetar y enviar por lotes a través de archivos zip, así como para mantener las actualizaciones de dichos paquetes.
+>**Contenido en el aire** puede provenir de cualquiera de los anteriores a través de controladores ContentSync. Se puede utilizar para empaquetar y enviar por lotes mediante archivos zip y mantener las actualizaciones de dichos paquetes.
 
 Existen tres tipos principales de material que los servicios de contenido ofrecen:
 
@@ -44,24 +40,24 @@ AEM Las colecciones de recursos son construcciones de recursos que contienen ref
 
 Una colección de recursos se puede exponer a través de Content Services. La llamada a una colección de recursos en una solicitud devuelve un objeto que es una lista de recursos, incluidas sus direcciones URL. Se accede a los recursos a través de una dirección URL. La dirección URL se proporciona en un objeto. Por ejemplo:
 
-* Una entidad de página devuelve JSON (objeto de página) que incluye una referencia de imagen. La referencia de imagen es una dirección URL que se utiliza para obtener el binario de recursos de la imagen.
-* Una solicitud de una lista de recursos en una carpeta devuelve JSON con detalles sobre todas las entidades de esa carpeta. Esa lista es un objeto. El JSON tiene referencias de URL que se utilizan para obtener el binario de recursos para cada recurso de esa carpeta.
+* Una entidad de página devuelve el JSON (objeto de página) que incluye una referencia de imagen. La referencia de imagen es una dirección URL que se utiliza para obtener el binario de recursos de la imagen.
+* Una solicitud de una lista de recursos en una carpeta devuelve el JSON con detalles sobre todas las entidades de esa carpeta. Esa lista es un objeto. El JSON tiene referencias de URL que se utilizan para obtener el binario de recursos para cada recurso de esa carpeta.
 
 ### Optimización de recursos {#asset-optimization}
 
 Un valor clave de Content Services es la capacidad de devolver recursos optimizados para el dispositivo. Esto reduce las necesidades de almacenamiento del dispositivo local y mejora el rendimiento de la aplicación.
 
-La optimización de recursos será una función del lado del servidor, basada en la información proporcionada en la solicitud de API. Siempre que sea posible, las representaciones de recursos deben almacenarse en caché para que solicitudes similares no requieran que se vuelva a generar la representación de recursos.
+La optimización de recursos es una función del lado del servidor, basada en la información proporcionada en la solicitud de API. Siempre que sea posible, las representaciones de recursos deben almacenarse en caché para que las solicitudes similares no requieran una regeneración de la representación de recursos.
 
 ### Flujo de trabajo de recursos {#assets-workflow}
 
 El flujo de trabajo de recursos es el siguiente:
 
 1. AEM Referencia de recursos disponible de forma predeterminada en el uso de la
-1. Crear entidad de referencia de recurso según su modelo
+1. Crear una entidad de referencia de recurso a partir de su modelo
 1. Editar entidad
 
-   1. Seleccionar activo o colección de activos
+   1. Elegir un recurso o una colección de recursos
    1. Personalizar el procesamiento de JSON
 
 El diagrama siguiente muestra la **Flujo de trabajo de referencia de recursos**:
@@ -70,13 +66,13 @@ El diagrama siguiente muestra la **Flujo de trabajo de referencia de recursos**:
 
 ### Administración de recursos {#managing-assets}
 
-AEM AEM Los servicios de contenido proporcionan acceso a recursos administrados a los que no se puede hacer referencia a través de otro contenido de.
+AEM AEM Los servicios de contenido proporcionan acceso a recursos administrados por el usuario a los que no se puede hacer referencia a través de otro contenido de la administración de la.
 
 #### Recursos administrados existentes {#existing-managed-assets}
 
-Un usuario existente de AEM Sites y Assets está utilizando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y necesitan utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo, iconos de botones, etc.
+Un usuario de AEM Sites y Assets está utilizando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y necesitan utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo e iconos de botón.
 
-Actualmente se distribuyen por todo el repositorio de Assets. Los archivos a los que la aplicación debe hacer referencia se encuentran en:
+Actualmente se distribuyen por todo el repositorio de Assets. Los archivos a los que la aplicación debe hacer referencia se encuentran en los siguientes:
 
 * /content/dam/geometrixx-outdoors/brand/logo_light.png
 * /content/dam/geometrixx-outdoors/brand/logo_dark.png
@@ -86,7 +82,7 @@ Actualmente se distribuyen por todo el repositorio de Assets. Los archivos a los
 
 #### Acceso a entidades de recursos CS {#accessing-cs-asset-entities}
 
-AEM Dejemos de lado los pasos de cómo la página está disponible a través de la API por ahora (estará cubierta por la descripción de la interfaz de usuario de) y supongamos que se ha hecho. Se han creado y agregado entidades de recursos al espacio &quot;appImages&quot;. Se han creado carpetas adicionales en el espacio con fines de organización. AEM Por lo tanto, las entidades de recursos se almacenan en el JCR de la como:
+AEM Dejemos de lado los pasos de cómo la página está disponible a través de la API por ahora (está cubierta por la descripción de la interfaz de usuario de) y supongamos que se ha hecho. Se han creado y agregado entidades de recursos al espacio &quot;appImages&quot;. Se han creado carpetas adicionales en el espacio con fines de organización. AEM Por lo tanto, las entidades de recursos se almacenan en el JCR de la como:
 
 * /content/entities/appImages/logos/logo_light
 * /content/entities/appImages/logos/logo_dark
@@ -104,7 +100,7 @@ El resultado sería un objeto en formato JSON que proporcionaría una lista de l
 
 #### Obtención de una imagen {#getting-an-image}
 
-El JSON proporciona una URL para cada imagen generada por los servicios de contenido para la imagen.
+El JSON proporciona una URL para cada imagen generada por los servicios de contenido a la imagen.
 
 Para obtener el binario de la imagen &quot;carrito&quot;, se vuelve a utilizar la biblioteca de cliente.
 
@@ -112,11 +108,11 @@ Para obtener el binario de la imagen &quot;carrito&quot;, se vuelve a utilizar l
 
 Se necesita contenido HTML para los clientes que necesitan mantener la presentación del contenido. Esto resulta útil para las aplicaciones nativas que utilizan un contenedor web (como una vista web de Cordova) para mostrar el contenido.
 
-AEM Los servicios de contenido podrán proporcionar contenido de HTML a la aplicación móvil a través de la API de. AEM Los clientes que deseen exponer el contenido de la como HTML crearán una entidad de página de HTML AEM que señale a la fuente de contenido de la.
+AEM Los servicios de contenido proporcionan contenido de HTML a la aplicación móvil mediante la API de. AEM Los clientes que deseen exponer el contenido de la como HTML pueden crear una entidad de página del HTML AEM que apunte a la fuente de contenido de la.
 
 Se tienen en cuenta las siguientes opciones:
 
-* **Archivo zip:** Para tener la mejor oportunidad de mostrarse correctamente en el dispositivo, todo el material de referencia de la página: css, JavaScript, recursos, etc. - se incluirá en un solo archivo comprimido con la respuesta. Las referencias en la página del HTML se ajustarán para utilizar una ruta relativa a estos archivos.
+* **Archivo zip:** Para tener la mejor oportunidad de mostrarse correctamente en el dispositivo, los recursos css de material, JavaScript, etc. a los que se hace referencia en la página se incluyen en un solo archivo comprimido con la respuesta. Las referencias de la página HTML se pueden ajustar para utilizar una ruta relativa a estos archivos.
 * **Transmisión:** AEM Obtención de un manifiesto de los archivos necesarios de la documentación de la administración de archivos de. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
@@ -125,7 +121,7 @@ Se tienen en cuenta las siguientes opciones:
 
 AEM El contenido independiente del canal es una forma de exponer construcciones de contenido de canal, como páginas, sin tener que preocuparse por el diseño, los componentes u otra información específica del canal.
 
-AEM Estas entidades de contenido se generan mediante un modelo de contenido para traducir las estructuras de la a un formato JSON. AEM Los datos JSON resultantes contienen información sobre los datos del contenido, que se disocian del repositorio de la. AEM Esto incluye la devolución de metadatos y vínculos de referencia a recursos, así como las relaciones entre estructuras de contenido, incluida la jerarquía de entidades.
+AEM Estas entidades de contenido se generan mediante un modelo de contenido para traducir las estructuras de la a un formato JSON. AEM Los datos JSON resultantes contienen información sobre los datos del contenido que se desliga del repositorio de la. AEM Esto incluye la devolución de metadatos y vínculos de referencia a recursos, así como las relaciones entre estructuras de contenido, incluida la jerarquía de entidades.
 
 ### Administración de contenido independiente del canal {#managing-channel-independent-content}
 

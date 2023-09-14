@@ -1,18 +1,16 @@
 ---
 title: 'AEM Creación: el entorno y las herramientas en la creación de recursos'
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido.
-uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 78%
+source-wordcount: '2210'
+ht-degree: 50%
 
 ---
 
@@ -38,7 +36,7 @@ Puede editar una página con el editor de páginas. Por ejemplo:
 
 >[!NOTE]
 >
->La primera vez que abra una página para editarla, una serie de diapositivas le proporcionarán un recorrido por las funciones.
+>La primera vez que abre una página para editarla, una serie de diapositivas le ofrecen un recorrido por las características.
 >
 >Si lo desea, puede omitir el recorrido y repetirlo en cualquier momento seleccionando una de las opciones del menú **Información de página**.
 
@@ -46,8 +44,8 @@ Puede editar una página con el editor de páginas. Por ejemplo:
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
-* el [**Información de página**](/help/sites-authoring/editing-page-properties.md#page-properties) selector; esto mostrará las diapositivas introductorias (tal y como se muestran la primera vez que acceda al editor).
-* el [configuración](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para componentes específicos (utilizando el icono ? en la barra de herramientas del cuadro de diálogo); esto mostrará la ayuda contextual.
+* el [**Información de página**](/help/sites-authoring/editing-page-properties.md#page-properties) selector; muestra las diapositivas introductorias (como se muestran la primera vez que se accede al editor).
+* el [configuración](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para componentes específicos (utilizando el signo de interrogación (?) en la barra de herramientas del cuadro de diálogo); esto muestra la Ayuda contextual.
 
 Encontrará [más recursos relacionados con la ayuda en las consolas](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -59,9 +57,9 @@ El navegador de componentes es una pestaña del panel lateral (junto con el [exp
 
 ![ateat-03](assets/ateat-03.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha (seleccione la pestaña **Componentes** si es necesario). Cuando se abra, podrá navegar por todos los componentes disponibles para su página.
+Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha (seleccione la opción **Componentes** pestaña si es necesario). Al abrirla, puede examinar todos los componentes disponibles para su página.
 
-El aspecto y el control dependerán del tipo de dispositivo que esté utilizando:
+El aspecto y el control dependerán del tipo de dispositivo que utilice:
 
 >[!NOTE]
 >
@@ -71,7 +69,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
   El explorador de componentes cubre completamente la página que se está editando.
 
-  Para añadir un componente a la página, toque y mantenga presionado el componente requerido y muévalo a la derecha; el explorador de componentes se cerrará para volver a mostrar la página, donde podrá colocar el componente.
+  Para añadir un componente a la página, pulse y mantenga pulsado el componente necesario y muévalo hacia la derecha (el navegador de componentes se cierra para volver a mostrar la página), donde podrá colocar el componente.
 
   ![ateat-04](assets/ateat-04.png)
 
@@ -79,7 +77,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
   El explorador de componentes se abre en la parte izquierda de la ventana.
 
-  Para añadir un componente a la página, haga clic en el componente requerido y arrástrelo a la ubicación que desee.
+  Para añadir un componente a la página, haga clic en el componente necesario y arrástrelo a la ubicación que desee.
 
   ![ateat-05](assets/ateat-05.png)
 
@@ -92,7 +90,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
       * Los iconos de los componentes estándar son monocromos.
       * Las abreviaturas siempre están formadas por los dos primeros caracteres del nombre del componente.
 
-  Desde la barra de herramientas superior del explorador de **componentes**, puede realizar las siguientes acciones:
+  En la barra de herramientas superior de la **Componentes** del explorador, puede hacer lo siguiente:
 
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
@@ -101,7 +99,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
   ![ateat-06](assets/ateat-06.png)
 
-  Para obtener más información sobre los componentes disponibles, consulte la [Consola de componentes](/help/sites-authoring/default-components-console.md).
+  Para obtener más información sobre los componentes disponibles, consulte [Consola de componente](/help/sites-authoring/default-components-console.md).
 
 ## Navegador de recursos {#assets-browser}
 
@@ -111,11 +109,11 @@ El explorador de recursos es una pestaña del panel lateral junto con la variabl
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione la pestaña **Recursos** si es necesario.
+Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione el **Assets** pestaña si es necesario.
 
 ![ateat-07](assets/ateat-07.png)
 
-Cuando se abre el explorador de recursos, puede examinar todos los recursos disponibles para su página. Si es necesario, puede utilizar el desplazamiento indefinido para ampliar la lista.
+Cuando se abre el explorador de recursos, puede examinar todos los recursos disponibles para la página. Si es necesario, puede utilizar el desplazamiento indefinido para ampliar la lista.
 
 ![ateat-08](assets/ateat-08.png)
 
@@ -125,7 +123,7 @@ Para añadir un recurso a la página, selecciónelo y arrástrelo a la ubicació
 
    * Por ejemplo, puede arrastrar un recurso de tipo imagen hacia un componente de imagen.
 
-* Un [marcador de posición](/help/sites-authoring/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente nuevo del tipo correspondiente.
+* A [placeholder](/help/sites-authoring/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente del tipo adecuado.
 
    * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente de imagen.
 
@@ -137,22 +135,22 @@ Desde la barra de herramientas superior del explorador de recursos, puede filtra
 
 * Nombre
 * Ruta
-* Tipos de recursos como imágenes, manuscritos, documentos, vídeos, páginas, párrafos y productos
+* Tipo de recurso, como imágenes, manuscritos, documentos, vídeos, páginas, párrafos y productos
 * Características del recurso como Orientación (vertical, horizontal, cuadrado) y Estilo (color, monocromo, escala de grises)
 
    * Disponible solo para determinados tipos de recursos
 
-El aspecto y el control dependerán del tipo de dispositivo que esté utilizando:
+El aspecto y el control dependerán del tipo de dispositivo que utilice:
 
 >[!NOTE]
 >
->Se detectará un dispositivo móvil cuando la anchura sea menor a 1024 píxeles; es decir, también cuando la ventana de escritorio sea pequeña.
+>Se detecta un dispositivo móvil cuando la anchura sea menor a 1024 píxeles; es decir, también cuando la ventana de escritorio sea pequeña.
 
 * **Dispositivo móvil como iPad**
 
   El explorador de recursos cubre completamente la página que se está editando.
 
-  Para añadir un recurso a su página, toque y mantenga presionado el recurso requerido y, a continuación, muévalo hacia la derecha; el explorador de recursos se cerrará para mostrar de nuevo la página, donde podrá añadir el recurso al componente deseado.
+  Para añadir un recurso a su página, toque y mantenga presionado el recurso necesario y, a continuación, muévalo hacia la derecha: el explorador de recursos se cerrará para mostrar de nuevo la página, donde puede añadir el recurso al componente requerido.
 
   ![Fate-09](assets/ateat-09.png)
 
@@ -160,31 +158,31 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
   El explorador de recursos se abre en la parte izquierda de la ventana.
 
-  Para añadir un recurso a la página, haga clic en el recurso en cuestión y arrástrelo al componente o a la ubicación correspondiente.
+  Para agregar un recurso a su página, haga clic en el recurso y arrástrelo a la ubicación o componente necesarios.
 
   ![ateat-10](assets/ateat-10.png)
 
-Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el [editor de recursos](/help/assets/manage-assets.md) directamente desde el explorador de recursos haciendo clic en el icono de edición que se muestra al lado del nombre del recurso.
+Si debe cambiar rápidamente un recurso, puede iniciar el [Editor de recursos](/help/assets/manage-assets.md) directamente desde el explorador de recursos haciendo clic en el icono de edición que se muestra junto al nombre del recurso.
 
 ![Dispositivo de escritorio del explorador de recursos](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Árbol de contenido {#content-tree}
 
-El **Árbol de contenido** ofrece información general de todos los componentes de la página en una jerarquía, para que pueda ver en general cómo está compuesta la página.
+El **Árbol de contenido** ofrece información general de todos los componentes de la página en una jerarquía para que pueda ver de un vistazo cómo está compuesta la página.
 
-El árbol de contenido es una pestaña del panel lateral (junto con el explorador de recursos y componentes). Para abrir (o cerrar) el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
+El árbol de contenido es una pestaña del panel lateral (junto con el explorador de recursos y componentes). Para abrir o cerrar el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
 ![Árbol de contenido](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando se abre, puede ver una representación en forma de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, hace que sea más fácil saltar de un componente de página a otro.
+Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando se abre, puede ver una representación en forma de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, resulta más fácil saltar entre los componentes de la página.
 
 ![ateat-11](assets/ateat-11.png)
 
 Una página puede estar compuesta fácilmente por muchos componentes del mismo tipo, por lo que el árbol de contenido (componentes) muestra un texto descriptivo (en gris) después del nombre del tipo de componente (en negro). El texto descriptivo viene de las propiedades comunes del componente, como el título o el texto.
 
-Los tipos de componente se mostrarán en el idioma del usuario, mientras que el texto de descripción del componente procede del idioma de la página.
+Los tipos de componente se muestran en el idioma del usuario, mientras que el texto de descripción del componente proviene del idioma de la página.
 
-Si hace clic en las comillas angulares que aparecen junto a un componente, se contraerá o expandirá ese nivel.
+Al hacer clic en las comillas angulares junto a un componente, se contrae o se expande ese nivel.
 
 ![screen_shot_2018-03-22at142559](assets/screen_shot_2018-03-22at142559.png)
 
@@ -192,7 +190,7 @@ Si hace clic en las comillas angulares que aparecen junto a un componente, se co
 >
 >Si edita una página en un dispositivo móvil, el árbol de contenido no está disponible (si el valor de la anchura del explorador es inferior a 1024 píxeles).
 
-Al hacer clic en el componente, se resaltará el componente en el editor de páginas. Las acciones disponibles dependerán del estado de la página.
+Al hacer clic en el componente, se resalta el componente en el editor de páginas. Las acciones disponibles dependen del estado de la página:
 
 * Por ejemplo, una página básica:
 
@@ -200,7 +198,7 @@ Al hacer clic en el componente, se resaltará el componente en el editor de pág
 
   ![ateat-12](assets/ateat-12.png)
 
-  Si el componente en el que hace clic en el árbol se puede editar, aparecerá un icono de llave inglesa a la derecha del nombre. Al hacer clic en este icono, se iniciará directamente el cuadro de diálogo de edición del componente.
+  Si el componente en el que hace clic en el árbol es editable, aparece un icono de llave inglesa a la derecha del nombre. Al hacer clic en este icono, se abre el cuadro de diálogo de edición del componente.
 
   ![Icono de llave inglesa - Editar](do-not-localize/screen_shot_2018-03-22at142725.png)
 
@@ -212,11 +210,11 @@ Al hacer clic en el componente, se resaltará el componente en el editor de pág
 
 ## Fragmentos: navegador de contenido asociado {#fragments-associated-content-browser}
 
-Si la página contiene fragmentos de contenido, también podrá acceder al [navegador de contenido asociado](/help/sites-authoring/content-fragments.md#using-associated-content). 
+Si la página contiene fragmentos de contenido, tendrá acceso a la variable [explorador de contenido asociado](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## Referencias {#references}
 
-**Referencias** muestra las conexiones a la página seleccionada:
+**Referencias** mostrar conexiones a la página seleccionada:
 
 * Planes
 * Lanzamientos
@@ -230,21 +228,21 @@ Abra la consola en cuestión, desplácese hasta el recurso y abra **Referencias*
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
-[Seleccione el recurso necesario](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para mostrar una lista de tipos de datos relevantes para ese recurso:
+[Seleccione el recurso necesario](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) muestra una lista de tipos de referencias relevantes para ese recurso:
 
 ![ateat-22](assets/ateat-22.png)
 
-Seleccione el tipo de referencia adecuado para obtener más información. En determinadas situaciones, hay disponibles acciones adicionales al seleccionar una referencia específica, como las siguientes:
+Seleccione el tipo de referencia adecuado para obtener más información. En determinadas situaciones, hay disponibles más acciones al seleccionar una referencia específica, como:
 
-* La opción **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como un acceso directo a la opción **Editar** de una de esas páginas, al seleccionar un vínculo específico
+* **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** Seleccione una de esas páginas cuando seleccione un vínculo específico
 
 * Instancias de contenido prestado mediante el componente de **referencia**; desde aquí puede navegar hasta la página de referencia o a la que se hace referencia
 
 * [Referencias a páginas de producto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponible en la consola Commerce-Products)
-* [Lanzamientos](/help/sites-authoring/launches.md), que proporciona acceso a lanzamientos relacionados.
+* [Lanzamientos](/help/sites-authoring/launches.md) proporciona acceso a lanzamientos relacionados.
 * [Live Copies](/help/sites-administering/msm.md) muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
-* [Modelo](/help/sites-administering/msm-best-practices.md), proporciona detalles y diversas acciones
-* [Copias de idiomas](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), proporciona detalles y diversas acciones
+* [Modelo](/help/sites-administering/msm-best-practices.md) proporciona detalles y diversas acciones.
+* [Copias de idiomas](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) proporciona detalles y diversas acciones.
 
 Por ejemplo, se puede corregir una referencia rota dentro de un componente Referencia:
 
@@ -282,8 +280,8 @@ El botón Información de página (icono de ecualizador) abre un menú que tambi
 
 Por ejemplo, cuando proceda, **Información de página** también tiene las siguientes opciones:
 
-* [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es un lanzamiento.
-* [Abrir en IU clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si esta opción se ha [activado por un administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es un lanzamiento
+* [Abrir en IU clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si esta opción era [activado por un administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones, cuando proceda.
 
@@ -291,10 +289,10 @@ Además, **Información de página** puede proporcionar acceso a análisis y rec
 
 Al editar una página existen varios modos que permiten realizar diferentes acciones:
 
-* [Editar](/help/sites-authoring/editing-content.md): el modo que se debe emplear al editar el contenido de la página.
-* [Diseño](/help/sites-authoring/responsive-layout.md) : permite crear y editar un diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
+* [Editar](/help/sites-authoring/editing-content.md) : utilice este modo al editar el contenido de la página.
+* [Diseño](/help/sites-authoring/responsive-layout.md) : permite crear y editar el diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
 
-* [Andamiaje](/help/sites-authoring/scaffolding.md) : le ayuda a crear un gran conjunto de páginas que comparten la misma estructura pero tienen contenido diferente.
+* [Andamiaje](/help/sites-authoring/scaffolding.md) : le ayuda a crear un gran conjunto de páginas que comparten estructura pero tienen contenido diferente.
 * [Desarrollador](/help/sites-developing/developer-mode.md) : permite realizar varias acciones (requiere privilegios). Estos incluyen la inspección de los detalles técnicos de una página y sus componentes.
 
 * [Diseño](/help/sites-authoring/default-components-designmode.md) : permite activar o desactivar componentes para utilizarlos en una página y configurar el diseño del componente (si la página está basada en un [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates)).
@@ -304,11 +302,11 @@ Al editar una página existen varios modos que permiten realizar diferentes acci
 
 * [Deformación de tiempo](/help/sites-authoring/working-with-page-versions.md#timewarp) : permite ver el estado de una página en un momento determinado.
 * [Estado de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): permite echar un vistazo rápido al estado de la Live Copy y de los componentes que se han heredado o no.
-* [Vista previa](/help/sites-authoring/editing-content.md#previewing-pages): se utiliza para ver la página tal como se mostrará en el entorno de publicación; o para navegar mediante vínculos en el contenido. 
+* [Vista previa](/help/sites-authoring/editing-content.md#previewing-pages): se utiliza para ver la página tal como se muestra en el entorno de publicación o para navegar mediante vínculos en el contenido. 
 
 * [Anotar:](/help/sites-authoring/annotations.md) se utiliza para añadir o ver anotaciones en la página.
 
-Puede acceder a estas opciones a través de los iconos de la esquina superior derecha; el icono cambiará para reflejar el modo que esté utilizando:
+Puede acceder a ellas mediante los iconos de la esquina superior derecha. El icono cambia para reflejar el modo que está utilizando actualmente:
 
 ![ateat-18](assets/ateat-18.png)
 
@@ -317,7 +315,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* Según las características de la página, es posible que algunos modos no estén disponibles.
 >* El acceso a algunos modos requiere los permisos o privilegios adecuados.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a las restricciones de espacio.
->* Existe un [método abreviado de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).
+>* Hay un [atajo de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Previsualizar** y el modo seleccionado actualmente (por ejemplo, **Editar**, y **Diseño**).
 >
 
 ## Selección de la ruta {#path-selection}
@@ -326,7 +324,7 @@ A menudo, durante la creación es necesario seleccionar otro recurso, como al de
 
 ### Campos de rutas   {#path-fields}
 
-El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre cómo utilizar y editar componentes, consulte [Componentes para la creación de páginas](/help/sites-authoring/default-components.md).
+El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre el uso y la edición de componentes, consulte [Componentes para la creación de páginas](/help/sites-authoring/default-components.md).
 
 Los campos de rutas de acceso disponen de las funciones de completado automático y de predicción de texto para que la localización de recursos resulte más sencilla.
 
@@ -334,7 +332,7 @@ Al hacer clic en el botón **Abrir cuadro de diálogo de selección**, en el cam
 
 ![Abrir cuadro de diálogo de selección](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-También puede empezar a escribir en el campo de rutas, y AEM le ofrecerá rutas coincidentes a medida que vaya escribiendo.
+AEM Como alternativa, puede empezar a escribir en el campo de ruta y ofrece rutas de acceso coincidentes a medida que escribe.
 
 ![ateat-19](assets/ateat-19.png)
 
@@ -345,9 +343,9 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-au
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
 * Una vez seleccionado un recurso, el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Pulse o haga clic para confirmar la selección o **Cancelar** para anular la operación.
-* Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Haga clic en la **X** junto al número para anular toda la selección.
+* Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Clic **X** junto al número para anular toda la selección.
 * Al navegar por el árbol, su ubicación se refleja en las rutas de exploración en la parte superior del cuadro de diálogo. Estas rutas de exploración también se pueden utilizar para saltar rápidamente dentro de la jerarquía de recursos.
-* Puede utilizar en cualquier momento el campo de búsqueda en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.
+* En cualquier momento, puede utilizar el campo de búsqueda en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.
 * Para limitar la búsqueda, puede mostrar las opciones de filtro y filtrar los resultados en función de una ruta determinada.
 
   ![ateat-21](assets/ateat-21.png)

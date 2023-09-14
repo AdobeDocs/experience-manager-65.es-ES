@@ -1,20 +1,16 @@
 ---
 title: Personalizar la interfaz de usuario de Crear correspondencia
-seo-title: Customize create correspondence UI
-description: Aprenda a personalizar la interfaz de usuario de Crear correspondencia.
-seo-description: Learn how to customize create correspondence UI.
-uuid: 9dee9b6f-4129-4560-9bf8-db48110b76f7
+description: Aprenda a personalizar la interfaz de usuario Crear correspondencia.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 96%
+source-wordcount: '1084'
+ht-degree: 62%
 
 ---
 
@@ -35,7 +31,7 @@ El icono personalizado en la interfaz de usuario de Crear correspondencia
 Para configurar una imagen de logotipo de su elección, haga lo siguiente:
 
 1. Cree la estructura de carpetas adecuada [en CRX](#creatingfolderstructure).
-1. [Cargue el nuevo archivo de logotipo](#uploadlogo) en la carpeta que ha creado en CRX.
+1. [Cargar el nuevo archivo de logotipo](#uploadlogo) en la carpeta que ha creado en CRX.
 
 1. [Configure la CSS](#createcss) en CRX para hacer referencia al nuevo logotipo.
 1. Borre el historial del explorador y [actualice la interfaz de usuario de Crear correspondencia](#refreshccrui).
@@ -46,16 +42,16 @@ Cree la estructura de carpetas, como se explica a continuación, para alojar la 
 
 Para cualquier personalización, cree una estructura de carpetas paralela, como se explica más abajo, en la rama /apps.
 
-La rama /apps (estructura de carpetas):
+El `/apps` rama (estructura de carpetas):
 
-* Garantiza que los archivos estén seguros en caso de una actualización del sistema. En caso de actualización, un paquete de características o una corrección, la rama /libs se actualizará y si aloja los cambios en la rama /libs, se sobrescribirán.
-* Ayuda a no alterar el sistema o rama actual, que podría desestabilizarse por error si utiliza las ubicaciones predeterminadas para almacenar los archivos personalizados.
-* Ayuda a que los recursos obtengan una prioridad mayor cuando AEM busca recursos. AEM está configurado para buscar primero la rama /apps y luego la rama /libs para encontrar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas).
+* Garantiza que los archivos estén seguros si hay una actualización del sistema. Si hay una actualización, un paquete de funciones o una corrección, la variable `/libs` La rama de se actualiza y si aloja los cambios en la `/libs` rama, se sobrescriben.
+* Ayuda a no alterar el sistema o rama actual, que posiblemente pueda desestabilizar por error si utiliza las ubicaciones predeterminadas para almacenar los archivos personalizados.
+* AEM Ayuda a que los recursos obtengan una prioridad mayor cuando se realiza una búsqueda de recursos en la búsqueda de recursos de la. AEM Se ha configurado la opción de búsqueda para la variable `/apps` primero la rama y, a continuación, el `/libs` bifurcación para buscar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas).
 
-Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps:
+Siga estos pasos para crear la estructura de carpetas necesaria en la `/apps` rama:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada `css` con una ruta/estructura similar a la carpeta css (ubicada en la carpeta ccrui).
+1. En la carpeta de aplicaciones, cree una carpeta llamada `css` con una ruta/estructura similar a la carpeta css (en la carpeta ccrui).
 
    Pasos para crear la carpeta css:
 
@@ -65,9 +61,9 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores:
 
-      **Ruta:**/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Ruta:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Ubicación de superposición:** /apps/
+      **Ubicación de la superposición:** `/apps/`
 
       **Coincidir tipos de nodo:** Comprobado
 
@@ -75,7 +71,7 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
       >[!NOTE]
       >
-      >No realice cambios en la rama /libs. Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
+      >No cambie el `/libs` Rama. Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
       >
       >    
       >    
@@ -87,7 +83,7 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la rama /apps
 
    1. Haga clic en **Aceptar**. La carpeta css se creará en la ruta de acceso especificada.
 
-1. En la carpeta de aplicaciones, cree una carpeta denominada `imgs` con una ruta/estructura similar a la carpeta imgs (ubicada en la carpeta ccrui).
+1. En la carpeta de aplicaciones, cree una carpeta llamada `imgs` con una ruta/estructura similar a la carpeta imgs (en la carpeta ccrui).
 
    1. Haga clic con el botón derecho en la carpeta **imgs** en la siguiente ruta y seleccione **Nodo de superposición**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores:
@@ -141,7 +137,7 @@ Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
    Aparecerá el cuadro de diálogo Editar jcr:data.
 
-   Ahora haga clic en la carpeta newlogo.png, haga doble clic en jcr:content (opción dim) y establezca el tipo nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
+   A continuación, haga clic en la carpeta newlogo.png, haga doble clic en jcr:content (opción dim) y establezca el tipo nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
 
 1. En el cuadro de diálogo Editar jcr:data, haga clic en **Examinar** y seleccione el archivo de imagen que desee utilizar como logotipo (aquí CustomLogo.png).
 
@@ -153,11 +149,11 @@ Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
 1. Haga clic en **Guardar todo**.
 
-## Cree el CSS para integrar el logotipo con la interfaz de usuario {#createcss}
+## Cree el CSS para representar el logotipo con la interfaz de usuario {#createcss}
 
 La imagen del logotipo personalizado requiere que se cargue una hoja de estilo adicional en el contexto de contenido.
 
-Siga estos pasos para configurar la hoja de estilo y procesar el logotipo:
+Siga estos pasos para crear la hoja de estilo y procesar el logotipo con la interfaz de usuario:
 
 1. Vaya a `https://'[server]:[port]'/[contextpath]/crx/de`. Si es necesario, inicie sesión como administrador.
 1. Cree un archivo llamado customcss.css (no puede usar un nombre de archivo diferente) en la siguiente ubicación:
@@ -178,9 +174,9 @@ Siga estos pasos para configurar la hoja de estilo y procesar el logotipo:
 
    1. Haga clic en **Guardar todo**.
 
-## Actualice la interfaz de usuario de Crear correspondencia para ver el logotipo personalizado {#refreshccrui}
+## Actualice la interfaz de usuario de Crear correspondencia para poder ver el logotipo personalizado {#refreshccrui}
 
-Borre la memoria caché del explorador y, a continuación, abra la instancia Interfaz de usuario de Crear correspondencia en el explorador. Debería ver su logotipo personalizado.
+Borre la caché del explorador y, a continuación, abra la instancia Interfaz de usuario de Crear correspondencia en el explorador para poder ver el logotipo personalizado.
 
 ![Interfaz de usuario de Crear correspondencia con el logotipo personalizado](assets/0_1_introscreenshot-1.png)
 

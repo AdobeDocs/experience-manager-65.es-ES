@@ -1,32 +1,28 @@
 ---
 title: Conceder acceso al Editor de reglas a determinados grupos de usuarios
-seo-title: Grant rule editor access to select user groups
 description: Conceder acceso restringido al editor de reglas para seleccionar grupos de usuarios.
-seo-description: Grant restricted access to rule editor to select user groups.
-uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 feature: Adaptive Forms
 exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 82%
+source-wordcount: '378'
+ht-degree: 51%
 
 ---
 
 # Conceder acceso al Editor de reglas a determinados grupos de usuarios{#grant-rule-editor-access-to-select-user-groups}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un método antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 ## Información general {#overview}
 
 Existen diferentes tipos de usuarios con diversas aptitudes que trabajan con formularios adaptables. Aunque es posible que los usuarios expertos tengan los conocimientos necesarios para trabajar con scripts y reglas complejas, puede haber usuarios de nivel básico que únicamente necesiten trabajar con el diseño y las propiedades básicas de los formularios adaptables.
 
-AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de los formularios adaptables, puede especificar los [grupos de usuarios](/help/sites-administering/security.md) que pueden ver y acceder al Editor de reglas.
+AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de Forms adaptable, puede especificar la variable [grupos de usuarios](/help/sites-administering/security.md) que pueden ver y acceder al editor de reglas.
 
 ## Especificar qué grupos de usuarios pueden acceder al Editor de reglas {#specify-user-groups-that-can-access-rule-editor}
 
@@ -35,7 +31,7 @@ AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en funci
 
    ![1-2](assets/1-2.png)
 
-1. En la ventana de la consola web, busque y haga clic en **[!UICONTROL Configuración del canal Web de comunicaciones interactivas y formularios adaptables]**. La **[!UICONTROL Configuración del canal Web de comunicaciones interactivas y formularios adaptables]** se abre. No cambie ningún valor y haga clic en **Guardar**.
+1. En la ventana Consola web, busque y haga clic en **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**. **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]** aparece el cuadro de diálogo. No cambie ningún valor y haga clic en **Guardar**.
 
    Crea el archivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config en el repositorio CRX.
 
@@ -50,7 +46,7 @@ AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en funci
 
    ![Crear usuario](assets/create_user_new.png)
 
-   Ahora, cuando un usuario que no forma parte del grupo de usuarios especificado (aquí RuleEditorsUserGroup) pulse un campo, el icono Editar regla ( ![edit-rules1](assets/edit-rules1.png)) no estará disponible en la barra de herramientas Componentes:
+   Ahora, cuando un usuario que no forma parte del grupo de usuarios especificado (aquí RuleEditorsUserGroup) pulse un campo, aparecerá el icono Editar regla ( ![edit-rules1](assets/edit-rules1.png)) no está disponible para ellos en la barra de herramientas de componentes:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 

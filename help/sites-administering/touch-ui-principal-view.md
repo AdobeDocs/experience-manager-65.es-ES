@@ -1,19 +1,15 @@
 ---
 title: Vista principal para la administración de permisos
-seo-title: Principal View for Permissions Management
 description: Obtenga información acerca de la nueva interfaz de usuario táctil que facilita la administración de permisos.
-seo-description: Learn about the new Touch UI interface that facilitates permissions management.
-uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
@@ -55,15 +51,15 @@ Al hacer clic en el nombre, se muestran los permisos asignados a la derecha. El 
 
 ### Agregar una nueva entrada de control de acceso para una entidad principal {#adding-new-access-control-entry-for-a-principal}
 
-Para agregar nuevos permisos, agregue una nueva Entrada de control de acceso haciendo clic en el botón Agregar ACE.
+Se pueden agregar nuevos permisos agregando una Entrada de control de acceso. Simplemente haga clic en el botón Agregar ACE.
 
 ![Agregar nueva ACL para un principal](assets/patru.png)
 
-Esto abre la ventana que se muestra a continuación. El siguiente paso es elegir una ruta en la que se deba configurar el permiso.
+Esto abre la ventana que se muestra a continuación. El siguiente paso es elegir una ruta en la que se debe configurar el permiso.
 
 ![Configuración de la ruta de permisos](assets/cinci-1.png)
 
-Aquí seleccionamos una ruta en la que queremos configurar un permiso para **dam-users**:
+Aquí se selecciona una ruta en la que se puede configurar un permiso para **dam-users**:
 
 ![Ejemplo de configuración para usuarios dam](assets/sase-1.png)
 
@@ -83,7 +79,7 @@ Una vez seleccionada la lista de privilegios, el usuario puede elegir el Tipo de
 
 ### Uso de restricciones {#using-restrictions}
 
-Además de la lista de privilegios y el Tipo de permiso en una ruta determinada, esta pantalla también permite agregar restricciones para el control de acceso de grano fino como se muestra a continuación:
+Además de la lista de privilegios y el Tipo de permiso en una ruta determinada, esta pantalla también le permite agregar restricciones para el control de acceso específico, como se muestra a continuación:
 
 ![Agregar restricciones](assets/image2019-3-21_1-4-14.png)
 
@@ -101,7 +97,7 @@ La nueva ACE se refleja en la Lista de control de acceso como se muestra a conti
 
 Las entradas de control de acceso se pueden editar seleccionando un principal y eligiendo el elemento ACE que desea editar.
 
-Por ejemplo, aquí podemos editar la siguiente entrada para **dam-users** haciendo clic en el icono de lápiz a la derecha:
+Por ejemplo, aquí puede editar la siguiente entrada para **dam-users** haciendo clic en el icono de lápiz a la derecha:
 
 ![Añadir restricción](assets/image2019-3-21_0-35-39.png)
 
@@ -109,11 +105,11 @@ La pantalla de edición se muestra con las entradas de control de acceso configu
 
 ![Editar entrada](assets/noua-1.png)
 
-Aquí se agrega el `addChildNodes` privilegio para **dam-users** en la ruta dada.
+Aquí el `addChildNodes` se agrega el privilegio para **dam-users** en la ruta dada.
 
 ![Privilegio Add](assets/image2019-3-21_0-45-35.png)
 
-Los cambios se pueden guardar haciendo clic en el **Guardar** en la parte superior derecha, y los cambios se reflejarán en los nuevos permisos para **dam-users** como se muestra a continuación:
+Los cambios se pueden guardar haciendo clic en el **Guardar** en la parte superior derecha, y los cambios se reflejan en los nuevos permisos para **dam-users** como se muestra a continuación:
 
 ![Guardar cambios](assets/zece-1.png)
 
@@ -125,7 +121,7 @@ Las entradas de control de acceso se pueden eliminar para eliminar todos los per
 
 ### Combinaciones de privilegios de IU clásica {#classic-ui-privilege-combinations}
 
-Tenga en cuenta que la nueva interfaz de usuario de permisos utiliza explícitamente el conjunto básico de privilegios en lugar de combinaciones predefinidas que no reflejaban realmente los privilegios subyacentes exactos que se concedieron.
+La nueva interfaz de usuario de permisos utiliza explícitamente el conjunto básico de privilegios en lugar de combinaciones predefinidas que no reflejan realmente los privilegios subyacentes exactos que se concedieron.
 
 Causó confusión sobre qué se está configurando exactamente. En la tabla siguiente se muestra la asignación entre las combinaciones de privilegios de la IU clásica a los privilegios reales que las constituyen:
 

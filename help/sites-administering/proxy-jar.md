@@ -1,19 +1,15 @@
 ---
 title: Herramienta Servidor Proxy (proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: AEM Obtenga información acerca de la herramienta de servidor proxy en la.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -47,9 +43,9 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Opciones {#options}
 
 * **q (modo silencioso)** No escribe las solicitudes en la ventana de la consola. Utilice esta opción si no desea ralentizar la conexión o si registra la salida en un archivo (consulte la opción -logfile ).
-* **b (modo binario)** Si está buscando combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contendrá la salida hexadecimal y de caracteres.
+* **b (modo binario)** Si está buscando combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contiene la salida hexadecimal y de caracteres.
 * **t (entradas de registro de marca de tiempo)** Agrega una marca de tiempo a cada salida de registro. La marca de tiempo está en segundos, por lo que es posible que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
-* **logfile &lt;filename> (escribir en el archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro funciona también en modo silencioso.
+* **logfile &lt;filename> (escribir en el archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
 * **i &lt;numindentions> (agregar sangría)** Cada conexión activa tiene una sangría para mejorar la legibilidad. El valor predeterminado es 16 niveles. (Nuevo en proxy.jar versión 1.16).
 
 ## Usos de la herramienta de servidor proxy {#uses-of-the-proxy-server-tool}
@@ -74,7 +70,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Comprobar si Keep-Alive funciona**
 
-**Keep-Alive** significa que un cliente vuelve a utilizar la conexión con el servidor para transportar varios archivos (código de página, imágenes, hojas de estilo, etc.). Sin la conexión persistente, el cliente debe establecer una nueva conexión para cada solicitud.
+**Keep-Alive** significa que un cliente reutiliza la conexión con el servidor para transportar varios archivos (código de página, imágenes, hojas de estilo, etc.). Sin la conexión persistente, el cliente debe establecer una nueva conexión para cada solicitud.
 
 Para comprobar si la conexión persistente funciona:
 
@@ -86,7 +82,7 @@ Para comprobar si la conexión persistente funciona:
 
 **Búsqueda de solicitudes perdidas**
 
-Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un cortafuegos y un distribuidor, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. En el caso de un cortafuegos:
+Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un cortafuegos y un Dispatcher, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. Si hay un cortafuegos:
 
 1. Iniciar un proxy antes de un cortafuegos
 1. Iniciar otro proxy después de un cortafuegos
@@ -98,7 +94,7 @@ Si sufre solicitudes que se bloquean de vez en cuando:
 
 1. Inicie un proxy.jar.
 1. Espere o escriba el registro de acceso en un archivo, y cada entrada tendrá una marca de tiempo.
-1. Cuando la solicitud comienza a bloquearse, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
+1. Cuando la solicitud comienza a bloquearse, puede ver cuántas conexiones se han abierto y qué solicitud está causando problemas.
 
 ## El formato de los mensajes de registro {#the-format-of-log-messages}
 
@@ -126,11 +122,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Muestra el número de bytes que pasaron entre el cliente y el servidor en la sexta conexión y a la velocidad media.
+Muestra el número de bytes que pasaron entre el cliente y el servidor en la sexta conexión y a la velocidad promedio.
 
 ## Ejemplo de salida de registro {#an-example-of-log-output}
 
-Revisaremos una plantilla simple que produce el siguiente código cuando se solicita:
+Revise una plantilla simple que produzca el siguiente código cuando se solicite:
 
 ```xml
 <html>
@@ -150,7 +146,7 @@ AEM Si se está ejecutando en localhost:4303, inicie el servidor proxy de la sig
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Puede acceder al servidor de (`localhost:4303`) sin el servidor proxy, pero si accede a él a través de `localhost:4444`, el servidor proxy registrará la comunicación. Abra un explorador y acceda a una página creada con la plantilla anterior. Después, observe el archivo de registro.
+Puede acceder al servidor de (`localhost:4303`) sin el servidor proxy, pero si accede a él a través de `localhost:4444`, el servidor proxy registra la comunicación. Abra un explorador y acceda a una página creada con la plantilla anterior. Después, observe el archivo de registro.
 
 >[!NOTE]
 >
@@ -181,7 +177,7 @@ El cliente solicita una conexión persistente, de modo que el servidor pueda env
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-El servidor proxy es una buena herramienta para comprobar si las cookies están configuradas correctamente o no. Aquí, vemos lo siguiente:
+El servidor proxy es una buena herramienta para comprobar si las cookies están configuradas correctamente o no. Aquí puede ver lo siguiente:
 
 * AEM cookie de cq3session generada por el usuario de
 * la cookie de cambio de modo de presentación generada por CFC
@@ -281,4 +277,4 @@ El ejemplo anterior es comparativamente sencillo, ya que las dos conexiones se p
 * en primer lugar, el servidor devuelve el código de HTML
 * a continuación, el explorador solicita la imagen y abre una nueva conexión
 
-En la práctica, una página puede generar muchas solicitudes paralelas de imágenes, hojas de estilo, archivos JavaScript, etc. Esto significa que los registros tienen entradas superpuestas de conexiones abiertas paralelas. En ese caso, recomendamos utilizar la opción -i para mejorar la legibilidad.
+En la práctica, una página puede generar muchas solicitudes paralelas de imágenes, hojas de estilo, archivos JavaScript, etc. Esto significa que los registros tienen entradas superpuestas de conexiones abiertas paralelas. En ese caso, Adobe recomienda utilizar la opción -i para mejorar la legibilidad.

@@ -1,26 +1,22 @@
 ---
 title: Consolas de herramientas
-seo-title: Tools Consoles
 description: Obtenga información sobre las distintas consolas de herramientas en AEM.
-seo-description: Learn about the different tools consoles throughout AEM.
-uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 34%
+source-wordcount: '594'
+ht-degree: 30%
 
 ---
 
 # Consolas de herramientas{#tools-consoles}
 
-Las consolas de **herramientas** permiten acceder a toda una serie de herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos sabores de la **Herramientas** La consola de depende de la interfaz de usuario que utilice:
+El **Herramientas** las consolas proporcionan acceso a varias herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos sabores de la **Herramientas** La consola de depende de la interfaz de usuario que utilice:
 
 * [Herramientas: IU táctil optimizada](#tools-touch-optimized-ui)
 * [Herramientas: IU clásica](#tools-classic-ui)
@@ -47,7 +43,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -378,7 +374,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Configuración de servicios de nube<br /> </td>
-   <td>Contiene configuraciones relacionadas con la integración con Adobe Marketing Cloud.</td>
+   <td>Contiene configuraciones relacionadas con la integración con Adobe Experience Cloud.</td>
   </tr>
   <tr>
    <td>Configuración de nube<br /> </td>
@@ -390,11 +386,11 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>DAM  </td>
-   <td>Proporciona acceso a varias opciones.</td>
+   <td>Acceso a varias opciones.</td>
   </tr>
   <tr>
    <td>Tableros</td>
-   <td>Permite crear paneles de informes, que proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
+   <td>Crear paneles de informes; proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
   </tr>
   <tr>
    <td>Documentación personalizada</td>
@@ -406,15 +402,15 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Envíos de formularios</td>
-   <td>Contiene la lista de los envíos de formularios recibidos.</td>
+   <td>La lista de envíos de formularios recibidos.</td>
   </tr>
   <tr>
    <td>importadores </td>
-   <td>Proporciona acceso a varias opciones.</td>
+   <td>Acceso a varias opciones.</td>
   </tr>
   <tr>
    <td>Comprobador de vínculos externos</td>
-   <td>Comprobador de vínculos externo.</td>
+   <td>Comprobador de vínculos externos.</td>
   </tr>
   <tr>
    <td>Móvil</td>
@@ -426,19 +422,19 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Replicación: agentes de replicación</td>
-   <td>Se utiliza para replicar datos de autor a publicación al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación a autor.</td>
+   <td>Se utiliza para replicar datos de la instancia de autor en Publicar al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación al autor.</td>
   </tr>
   <tr>
    <td>Informes</td>
-   <td>AEM proporciona una gama de informes personalizados, le permite crear informes personalizados o desarrollar los suyos propios.</td>
+   <td>AEM proporciona una serie de informes personalizados, lo que le permite crear informes personalizados o desarrollar los suyos propios.</td>
   </tr>
   <tr>
    <td>Andamiaje de página predeterminada</td>
-   <td>Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.</td>
+   <td>Con el andamiaje, puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.</td>
   </tr>
   <tr>
    <td>Seguridad: configuración de autoservicio </td>
-   <td>Permite configurar los mensajes de correo electrónico que los usuarios reciben automáticamente cuando crean una cuenta o restablecen una contraseña y confirmar una contraseña que se ha restablecido.</td>
+   <td>Configure los correos electrónicos que los usuarios reciben automáticamente cuando crean una cuenta o restablecen una contraseña y para confirmar una contraseña que se ha restablecido.</td>
   </tr>
   <tr>
    <td>Segmentación</td>
@@ -454,7 +450,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Versiones: Purgar versiones</td>
-   <td>Permite purgar las versiones de la página según sea necesario.</td>
+   <td>Purgue las versiones de la página según sea necesario.</td>
   </tr>
   <tr>
    <td>Flujo de trabajo</td>
