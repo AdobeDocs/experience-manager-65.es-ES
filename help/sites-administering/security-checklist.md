@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
+source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3005'
 ht-degree: 1%
 
 ---
@@ -57,11 +57,11 @@ Estas cuentas incluyen:
 
 * AEM El `admin` account
 
-   AEM Una vez que haya cambiado la contraseña de la cuenta de administrador de, utilice la nueva contraseña al acceder a CRX.
+  AEM Una vez que haya cambiado la contraseña de la cuenta de administrador de, utilice la nueva contraseña al acceder a CRX.
 
 * El `admin` contraseña para la consola web OSGi
 
-   Este cambio también se aplica a la cuenta de administrador utilizada para acceder a la consola web, por lo que debe utilizar la misma contraseña al acceder a ella.
+  Este cambio también se aplica a la cuenta de administrador utilizada para acceder a la consola web, por lo que debe utilizar la misma contraseña al acceder a ella.
 
 Estas dos cuentas utilizan credenciales independientes y tener una contraseña segura y distinta para cada una es vital para una implementación segura.
 
@@ -132,7 +132,7 @@ Por motivos de seguridad, ambos deben cambiarse para reflejar el caso de uso en 
 
 * El **usuario de transporte** no debe ser el usuario administrador. En su lugar, configure un usuario en el sistema de publicación que solo tenga derechos de acceso a las partes relevantes del sistema de publicación y utilice las credenciales de ese usuario para el transporte.
 
-   Puede comenzar desde el usuario receptor de replicación agrupado y configurar los derechos de acceso de este usuario para que coincidan con su situación
+  Puede comenzar desde el usuario receptor de replicación agrupado y configurar los derechos de acceso de este usuario para que coincidan con su situación
 
 * El **usuario de replicación** o **ID de usuario agente** tampoco debe ser el usuario administrador, sino un usuario que solo pueda ver el contenido replicado. El usuario de replicación se utiliza para recopilar el contenido que se va a replicar en el sistema de creación antes de enviarlo al editor.
 
@@ -182,7 +182,7 @@ El servicio de filtro de referente es un servicio OSGi que le permite configurar
 * si se permite un encabezado de referente vacío
 * y una lista de servidores que se permitirán además del host de servidor.
 
-   De forma predeterminada, todas las variaciones de localhost y los nombres de host actuales a los que está enlazado el servidor están en la lista.
+  De forma predeterminada, todas las variaciones de localhost y los nombres de host actuales a los que está enlazado el servidor están en la lista.
 
 Para configurar el servicio del filtro de referente:
 
@@ -262,17 +262,17 @@ Un ataque de denegación de servicio (DoS) es un intento de hacer que un recurso
 * Una avalancha de solicitudes desde una fuente externa.
 * Una solicitud de más información de la que el sistema puede entregar correctamente.
 
-   Por ejemplo, una representación JSON de todo el repositorio.
+  Por ejemplo, una representación JSON de todo el repositorio.
 
 * Al solicitar una página de contenido con un número ilimitado de URL, la URL puede incluir un identificador, algunos selectores, una extensión y un sufijo, cualquiera de los cuales se puede modificar.
 
-   Por ejemplo, `.../en.html` también se puede solicitar como:
+  Por ejemplo, `.../en.html` también se puede solicitar como:
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
 
-   Todas las variaciones válidas (por ejemplo, devolver un `200` Respuesta de y están configurados para almacenarse en caché) son almacenados en caché por Dispatcher, lo que finalmente conduce a un sistema de archivos completo y a la ausencia de servicio para más solicitudes.
+  Todas las variaciones válidas (por ejemplo, devolver un `200` Respuesta de y están configurados para almacenarse en caché) son almacenados en caché por Dispatcher, lo que finalmente conduce a un sistema de archivos completo y a la ausencia de servicio para más solicitudes.
 
 AEM Hay muchos puntos de configuración para prevenir tales ataques, pero solo se discuten aquellos puntos que se relacionan con los ataques de tipo de ataque de tipo de ataque de tipo de tipo de ataque de tipo de tipo de ataque de tipo de tipo de ataque de tipo de tipo de ataque de tipo de tipo de ataque de tipo de tipo de ataque de tipo de ataque.
 
@@ -300,17 +300,18 @@ Para ayudar a evitar el uso indebido de DoS, puede hacer lo siguiente:
 
    * En particular, el procesador JSON atraviesa la estructura de árbol en varios niveles.
 
-      Por ejemplo, la solicitud:
+     Por ejemplo, la solicitud:
 
-      `http://localhost:4502/.json`
+     `http://localhost:4502/.json`
 
-      podría volcar todo el repositorio en una representación JSON, lo que puede causar problemas significativos en el servidor. Por este motivo, Sling establece un límite en el número máximo de resultados. Para limitar la profundidad del procesamiento de JSON, establezca el valor para lo siguiente:
+     podría volcar todo el repositorio en una representación JSON, lo que puede causar problemas significativos en el servidor. Por este motivo, Sling establece un límite en el número máximo de resultados. Para limitar la profundidad del procesamiento de JSON, establezca el valor para lo siguiente:
 
-      **Resultados máximos de JSON** ( `json.maximumresults`)
+     **Resultados máximos de JSON** ( `json.maximumresults`)
 
-      en la configuración de [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Cuando se supera este límite, la renderización se contrae. AEM El valor predeterminado de Sling en el entorno de trabajo de es `1000`.
+     en la configuración de [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Cuando se supera este límite, la renderización se contrae. AEM El valor predeterminado de Sling en el entorno de trabajo de es `1000`.
 
    * Como medida preventiva, debe desactivar los demás procesadores predeterminados (HTML, texto sin formato, XML). De nuevo, configurando la variable [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
+
    >[!CAUTION]
    >
    >AEM No deshabilite el procesador JSON porque es necesario para el funcionamiento normal de la interfaz de usuario de.
@@ -449,12 +450,6 @@ Más específicamente, debe hacer lo siguiente:
 1. Pegue los dos archivos que ha copiado anteriormente.
 1. [Actualizar el paquete de cifrado](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) si la instancia de destino ya se está ejecutando.
 1. Repita los pasos anteriores para todas las instancias en las que desee replicar la clave.
-
->[!NOTE]
->
->AEM Puede volver al método de almacenamiento anterior a la versión 6.3 añadiendo el siguiente parámetro al instalar por primera vez las claves de la siguiente manera:
->
->`-Dcom.adobe.granite.crypto.file.disable=true`
 
 #### AEM Duplicación de claves para versiones anteriores y de la versión 6.2 de {#replicating-keys-for-aem-and-older-versions}
 
