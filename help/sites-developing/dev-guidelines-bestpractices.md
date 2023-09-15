@@ -1,18 +1,14 @@
 ---
 title: 'AEM Desarrollo: directrices y prácticas recomendadas'
-seo-title: AEM Development - Guidelines and Best Practices
 description: AEM Directrices y prácticas recomendadas para el desarrollo de soluciones en el área de la
-seo-description: Guidelines and best practices for developing on AEM
-uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Directrices para el uso de plantillas y componentes {#guidelines-for-using-templates-and-components}
 
-AEM Los componentes y las plantillas de forman un conjunto de herramientas muy potente. Los desarrolladores pueden utilizarlas para proporcionar a los usuarios, editores y administradores de sitios web la funcionalidad de adaptar sus sitios web a las cambiantes necesidades comerciales (agilidad de los contenidos), manteniendo al mismo tiempo el diseño uniforme de los sitios (protección de la marca).
+Los componentes y plantillas de Adobe Experience Manager AEM () conforman un potente conjunto de herramientas. Los desarrolladores pueden utilizarlas para proporcionar a los usuarios, editores y administradores de sitios web la funcionalidad de adaptar sus sitios web a las cambiantes necesidades comerciales (agilidad de contenido). Todo esto manteniendo el diseño uniforme de los sitios (protección de marca).
 
 Un desafío típico para una persona responsable de un sitio web o un conjunto de sitios web (por ejemplo, en una sucursal de una empresa global) es introducir un nuevo tipo de presentación de contenido en sus sitios web.
 
@@ -29,13 +25,13 @@ Supongamos que es necesario agregar una página de lista de noticias a los sitio
 
 La manera recomendada de abordar ese problema sería la siguiente:
 
-* Reutilice una plantilla existente para crear un nuevo tipo de página. La plantilla define aproximadamente la estructura de la página (elementos de navegación, paneles, etc.), que se ajusta aún más por su diseño (CSS, gráficos).
+* Reutilice una plantilla existente para poder crear un nuevo tipo de página. La plantilla define aproximadamente la estructura de la página (elementos de navegación, paneles, etc.), que se ajusta aún más por su diseño (CSS, gráficos).
 * Utilice el sistema de párrafos (parsys/iparsys) en las páginas nuevas.
 * Defina el derecho de acceso al modo Diseño de los sistemas de párrafos, de modo que solo las personas autorizadas (normalmente el administrador) puedan cambiarlas.
-* Defina los componentes permitidos en el sistema de párrafos determinado para que los editores puedan colocar los componentes necesarios en la página. En nuestro caso, podría ser un componente de lista, que puede atravesar un subárbol de páginas y extraer la información según reglas predefinidas.
-* Los editores agregan y configuran los componentes permitidos, en las páginas de las que son responsables, para entregar la funcionalidad solicitada (información) a la empresa.
+* Defina los componentes permitidos en el sistema de párrafos determinado para que los editores puedan colocar los componentes necesarios en la página. En este caso, podría ser un componente de lista, que puede atravesar un subárbol de páginas y extraer la información según reglas predefinidas.
+* Los editores agregan y configuran los componentes permitidos en las páginas de las que son responsables para entregar la funcionalidad solicitada (información) a la empresa.
 
-Esto ilustra cómo este enfoque permite a los usuarios y administradores colaboradores del sitio web responder a las necesidades comerciales rápidamente, sin requerir la participación de equipos de desarrollo. Los métodos alternativos, como la creación de una nueva plantilla, suelen ser un ejercicio costoso, que requiere un proceso de gestión del cambio y la participación del equipo de desarrollo. Esto hace que todo el proceso sea mucho más largo y costoso.
+Esto ilustra cómo este enfoque permite a los usuarios y administradores colaboradores del sitio web responder a las necesidades comerciales rápidamente, sin requerir la participación de equipos de desarrollo. Los métodos alternativos, como la creación de una plantilla, suelen ser un ejercicio costoso, que requiere un proceso de gestión del cambio y la participación del equipo de desarrollo. Esto hace que todo el proceso sea más largo y costoso.
 
 AEM Por lo tanto, los desarrolladores de sistemas basados en el uso de deben utilizar:
 
@@ -46,11 +42,11 @@ Las siguientes reglas generales para desarrolladores tienen sentido en la mayor�
 
 * Mantenga el número de plantillas bajo, tan bajo como el número de estructuras de página fundamentalmente diferentes en los sitios web.
 * Proporcione la flexibilidad y las capacidades de configuración necesarias a los componentes personalizados.
-* AEM Maximice el uso de la potencia y la flexibilidad del sistema de párrafos: los componentes parsys e iparsys.
+* AEM Maximice el uso de la potencia y la flexibilidad del sistema de párrafos de la: los componentes parsys e iparsys.
 
 ### Personalizar componentes y otros elementos {#customizing-components-and-other-elements}
 
-Al crear sus propios componentes o personalizar un componente existente, a menudo es más fácil (y seguro) reutilizar las definiciones existentes. AEM Los mismos principios también se aplican a otros elementos dentro de la, por ejemplo, el controlador de errores.
+Al crear sus propios componentes o personalizar un componente existente, a menudo es más fácil (y seguro) reutilizar las definiciones existentes. AEM Los mismos principios se aplican también a otros elementos dentro de la lista de elementos permitidos, por ejemplo, el controlador de errores.
 
 Esto se puede hacer copiando y superponiendo la definición existente. Es decir, copiar la definición de `/libs` hasta `/apps/<your-project>`. Esta nueva definición, en `/apps`, se puede actualizar según sus necesidades.
 
@@ -64,7 +60,7 @@ Por ejemplo:
 
   Esto implicaba superponer una definición de componente:
 
-   * Cree una nueva carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
+   * Creación de una carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
 
       * Por ejemplo, para personalizar la copia del componente Texto:
 
@@ -75,16 +71,16 @@ Por ejemplo:
 
   Este caso implica la superposición de un servlet:
 
-   * En el repositorio, copie los scripts predeterminados:
+   * En el repositorio, copie uno o más scripts predeterminados:
 
       * de `/libs/sling/servlet/errorhandler/`
       * hasta `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->Usted **no debe** cambiar cualquier cosa en `/libs` ruta.
+>**No hacer** cambiar cualquier cosa en `/libs` ruta.
 >
->Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>El motivo es que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
 >
 >Para cambios de configuración y de otro tipo:
 >
@@ -96,11 +92,11 @@ Por ejemplo:
 Las consultas JCR son una herramienta potente cuando se utilizan correctamente. Son adecuados para:
 
 * consultas reales del usuario final, como búsquedas de texto completo en el contenido.
-* ocasiones en las que es necesario encontrar contenido estructurado en todo el repositorio.
+* ocasiones en las que el contenido estructurado debe encontrarse en todo el repositorio.
 
-  En estos casos, asegúrese de que las consultas solo se ejecutan cuando son absolutamente necesarias, por ejemplo, al activar un componente o al invalidar la caché (en oposición a, por ejemplo, Pasos de flujos de trabajo, Controladores de eventos que almacenan en déclencheur las modificaciones del contenido, Filtros, etc.).
+  En estos casos, asegúrese de que las consultas solo se ejecuten cuando sea necesario. Por ejemplo, en la activación de componentes o la invalidación de caché (a diferencia de, por ejemplo, Pasos de flujos de trabajo, Controladores de eventos que almacenan en déclencheur las modificaciones de contenido y Filtros).
 
-Las consultas JCR nunca deben utilizarse para solicitudes de procesamiento puras. Por ejemplo, las consultas JCR no son apropiadas para
+Nunca utilice Consultas JCR para solicitudes de procesamiento puras. Por ejemplo, las consultas JCR no son adecuadas para lo siguiente:
 
 * navegación de procesamiento
 * información general sobre la creación de las 10 noticias más recientes
@@ -121,7 +117,7 @@ Para procesar contenido, utilice el acceso de navegación al árbol de contenido
 
 ### Sesiones JCR (repositorio) {#jcr-repository-sessions}
 
-Debe utilizar la sesión del usuario, no la sesión administrativa. Esto significa que debe utilizar:
+Utilice la sesión del usuario, no la sesión administrativa. Esto significa que debe utilizar:
 
 ```java
 slingRequest.getResourceResolver().adaptTo(Session.class);
@@ -139,7 +135,7 @@ Además, un cortafuegos de aplicaciones web, como [mod_security para Apache](htt
 >
 >AEM El código de ejemplo proporcionado con puede no protegerse contra estos ataques y, por lo general, se basa en el filtrado de solicitudes por un cortafuegos de aplicaciones web.
 
-AEM La hoja de trucos de la API XSS contiene información que necesita saber para utilizar la API XSS y hacer que una aplicación de la aplicación sea más segura. Puede descargarlo aquí:
+AEM La hoja de trucos de la API XSS contiene información que debe saber para utilizar la API XSS y hacer que una aplicación de sea más segura. Puede descargarlo aquí:
 
 La hoja de trucos de XSSAPI.
 
@@ -152,7 +148,7 @@ Como para cualquier aplicación de Internet, asegúrese de que al transportar in
 * el tráfico está protegido mediante SSL
 * Se utiliza el POST HTTP si corresponde
 
-Esto se aplica a la información que es confidencial para el sistema (como la configuración o el acceso administrativo), así como a la información confidencial para sus usuarios (como sus datos personales)
+Esto se aplica a la información que es confidencial para el sistema (como la configuración o el acceso administrativo) y a la información confidencial para sus usuarios (como sus datos personales)
 
 ## Tareas de desarrollo distintas {#distinct-development-tasks}
 
@@ -162,8 +158,8 @@ AEM Las páginas de error se pueden personalizar para la creación de informes d
 
 Consulte [Personalizar páginas de error mostradas por el controlador de error](/help/sites-developing/customizing-errorhandler-pages.md) para obtener información detallada.
 
-### Abrir archivos en el proceso de Java {#open-files-in-the-java-process}
+### Abrir archivos en el proceso de Java™ {#open-files-in-the-java-process}
 
-AEM Debido a que puede acceder a un gran número de archivos, se recomienda que el número de [abrir archivos para un proceso de Java](/help/sites-deploying/configuring.md#open-files-in-the-java-process) AEM se configurarán explícitamente para la configuración de la.
+AEM Debido a que puede acceder a muchos archivos, se recomienda que el número de [abrir archivos para un proceso de Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) AEM se configurarán explícitamente para la configuración de la.
 
-Para minimizar este problema, el desarrollo debe garantizar que cualquier archivo abierto se cierre correctamente lo antes posible (de forma significativa).
+Para minimizar este problema, el desarrollo debe garantizar que cualquier archivo abierto se cierre correctamente cuando (de forma significativa) sea posible.

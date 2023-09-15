@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '2343'
+source-wordcount: '2347'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Se puede utilizar con cualquier valor para comprobar fragmentos de contenido.
 
 ### dateComparison {#datecomparison}
 
-Compara dos propiedades JCR DATE entre sí. Puede comprobar si son iguales, desiguales, buenos o buenos que o iguales.
+Compara dos propiedades JCR DATE entre sí. Puede comprobar si son iguales, desiguales, mayores o mayores que o iguales.
 
 Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
@@ -104,11 +104,11 @@ Este es un predicado solo de filtrado y no puede utilizar un índice de búsqued
 
 * **operación**
 
-  &quot; `equals`&quot; para coincidencia exacta, &quot; `!=`&quot; para comparación de desigualdad, &quot; `greater`&quot; para la propiedad1 buena que la propiedad2, &quot; `>=`&quot; para la propiedad1 buena o igual a la propiedad2. El valor predeterminado es &quot; `equals`&quot;.
+  &quot; `equals`&quot; para coincidencia exacta, &quot; `!=`&quot; para comparación de desigualdad, &quot; `greater`&quot; para propiedad1 mayor que propiedad2, &quot; `>=`&quot; para propiedad1 mayor o igual que propiedad2. El valor predeterminado es &quot; `equals`&quot;.
 
 ### intervalo de fechas {#daterange}
 
-Hace coincidir las propiedades DATE de JCR con un intervalo de fecha y hora. Utiliza el formato ISO8601 para fechas y horas ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) y también permite representaciones parciales, como `YYYY-MM-DD`. Alternativamente, la marca de tiempo se puede proporcionar como número de milisegundos desde 1970 en la zona horaria UTC, el formato de hora UNIX®.
+Hace coincidir las propiedades DATE de JCR con un intervalo de fecha y hora. Utiliza el formato ISO8601 para fechas y horas ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) y también permite representaciones parciales, como `YYYY-MM-DD`. Alternativamente, la marca de tiempo se puede proporcionar como el número de milisegundos desde 1970 en la zona horaria UTC, el formato de hora UNIX®.
 
 Puede buscar cualquier cosa entre dos marcas de tiempo, cualquier cosa más reciente o anterior a una fecha determinada, y también elegir entre intervalos inclusivos y abiertos.
 
@@ -255,13 +255,13 @@ Comprueba si un nodo es un recurso principal DAM y no un subrecurso. Básicament
 
 Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda.
 
-Admite extracción de facetas. Proporciona dos bloques para los recursos principales y secundarios.
+Admite la extracción de facetas y proporciona dos contenedores para recursos principales y secundarios.
 
 #### Propiedades {#properties-9}
 
 * **recurso principal**
 
-  Booleano, &quot; `true`&quot; para recursos principales, &quot; `false`&quot; para recursos secundarios.
+  Booleano, &quot; `true`&quot; para recursos principales, &quot; `false`&quot; para subrecursos.
 
 ### memberOf {#memberof}
 
@@ -289,7 +289,7 @@ Admite extracción de facetas. Proporciona bloques para cada nombre de nodo úni
 
 ### notexpired {#notexpired}
 
-Coincide con los elementos comprobando si una propiedad JCR DATE es buena o igual a la hora actual del servidor. Se puede utilizar para comprobar un &quot; `expiresAt`&quot; gusta la propiedad fecha y limitar solo a las que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
+Coincide con los elementos comprobando si una propiedad JCR DATE es mayor o igual que la hora actual del servidor. Se puede utilizar para comprobar un &quot; `expiresAt`&quot; gusta la propiedad fecha y limitar solo a las que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
 
 No admite el filtrado.
 
@@ -307,7 +307,7 @@ Admite la extracción de facetas del mismo modo que el predicado daterange.
 
 ### orderby {#orderby}
 
-Permite ordenar el resultado. Si se requiere ordenar por varias propiedades, este predicado debe agregarse varias veces utilizando el prefijo numérico, como `1_orderby=first`, `2_oderby=second`.
+Permite ordenar los resultados. Si se requiere ordenar por varias propiedades, este predicado debe agregarse varias veces utilizando el prefijo numérico, como `1_orderby=first`, `2_oderby=second`.
 
 #### Propiedades {#properties-13}
 
@@ -321,7 +321,7 @@ Permite ordenar el resultado. Si se requiere ordenar por varias propiedades, est
 
 * **estuche**
 
-  Si se establece en `ignore`, no distingue entre mayúsculas y minúsculas, lo que significa que &quot;a&quot; va antes que &quot;B&quot;; si está vacío o se deja fuera, la ordenación distingue entre mayúsculas y minúsculas, lo que significa que &quot;B&quot; va antes que &quot;a&quot;
+  Si se establece en `ignore`, hace que la ordenación no distinga entre mayúsculas y minúsculas, lo que significa que &quot;a&quot; va antes que &quot;B&quot;; si está vacía o se deja de lado, la ordenación distingue entre mayúsculas y minúsculas, lo que significa que &quot;B&quot; va antes que &quot;a&quot;
 
 ### path {#path}
 
@@ -333,7 +333,7 @@ No admite la extracción de facetas.
 
 * **ruta**
 
-  Patrón de ruta; según el valor exacto, todo el subárbol coincide (como anexar) `//*` en xpath, pero tenga en cuenta que esto no incluye la ruta base) (exacto=false, predeterminado) o solo una coincidencia de ruta exacta, que puede incluir caracteres comodín ( `*`); si se establece self, se busca en todo el subárbol, incluido el nodo base.
+  Patrón de ruta. Dependiendo de lo exacto, todo el subárbol coincide (como anexar) `//*` en xpath, pero tenga en cuenta que esto no incluye la ruta base) (exacto=false, predeterminado) o solo una coincidencia de ruta exacta, que puede incluir caracteres comodín ( `*`); si se establece self, se busca en todo el subárbol, incluido el nodo base.
 
 * **exacto**
 
@@ -361,7 +361,7 @@ Admite extracción de facetas. Proporciona bloques para cada valor de propiedad 
 
 * **valor**
 
-  Valor de la propiedad check; sigue el tipo de propiedad JCR para las conversiones en cadena.
+  Valor para comprobar la propiedad; sigue el tipo de propiedad JCR a las conversiones de cadena.
 
 * **N_value**
 
@@ -383,7 +383,7 @@ Admite extracción de facetas. Proporciona bloques para cada valor de propiedad 
 
 Hace coincidir una propiedad JCR con un intervalo. Esto se aplica a las propiedades con tipos lineales como `LONG`, `DOUBLE`, y `DECIMAL`. Para `DATE`, consulte el predicado daterange que ha optimizado la entrada de formato de fecha.
 
-Puede definir un límite inferior y un límite superior o solo uno de ellos. La operación (por ejemplo, &quot;menor que&quot; o &quot;menor o igual que&quot;) también se puede especificar individualmente para los límites inferior y superior.
+Puede definir un límite inferior y un límite superior o solo uno de ellos. La operación (por ejemplo, &quot;menor que&quot; o &quot;menor o igual que&quot;) también se puede especificar para los límites inferior y superior, individualmente.
 
 No admite la extracción de facetas.
 
@@ -553,7 +553,7 @@ Admite extracción de facetas. Proporciona bloques para cada etiqueta única, ut
 
 ### tagsearch {#tagsearch}
 
-Busca contenido etiquetado con una o más etiquetas, especificando palabras clave. Primero se buscan etiquetas que contengan estas palabras clave en sus títulos y luego se restringe el resultado a solo elementos etiquetados con estas palabras clave.
+Busca contenido etiquetado con una o más etiquetas, especificando palabras clave. Primero busca las etiquetas que contienen estas palabras clave en sus títulos y luego restringe el resultado a solo los elementos etiquetados con estas palabras clave.
 
 No admite la extracción de facetas.
 
