@@ -2,9 +2,9 @@
 title: Product Cockpit
 description: Uso de Product Cockpit
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 1%
 
 ---
@@ -23,17 +23,17 @@ Los datos de productos clasificados incluyen cualquier mutación futura, como nu
 
 ## Configuración {#configuration}
 
-AEM Los catálogos de productos deben configurarse en la interfaz de usuario de. Consulte [configuración de tiendas y catálogos](/help/commerce/cif/getting-started.md#catalog) para obtener más información.
+AEM Los catálogos de productos deben configurarse en la opción de configuración de la. Consulte [configuración de tiendas y catálogos](/help/commerce/cif/getting-started.md#catalog) para obtener más información.
 
 La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Primeros pasos](/help/commerce/cif/getting-started.md) para obtener más información.
 
 >[!NOTE]
 >
->Las funciones de catálogo organizadas solo están disponibles con Adobe Commerce y conectores de terceros que admiten la autenticación basada en tokens.
+>Las funciones de catálogo organizadas solo están disponibles con Adobe Commerce y conectores de terceros que admitan la autenticación basada en tokens.
 
 ## Apertura de la cabina de productos {#opening-product-cockpit}
 
-AEM La forma más fácil de acceder a la cabina del producto es a través del menú &quot;Comercio&quot; en el menú principal de la barra de productos de la barra de herramientas, en el menú principal de la barra de herramientas. También es posible utilizar Omnisearch (búsqueda de Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
+AEM La forma más fácil de acceder a la cabina del producto es a través del menú &quot;Comercio&quot; en el menú principal de la barra de herramientas de la tienda de productos, el menú principal de la barra de herramientas. También es posible utilizar Omnisearch (búsqueda de Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM menú de](/help/commerce/cif/assets/aem-menu.png)
 
@@ -43,11 +43,11 @@ La cabina de productos está organizada de forma jerárquica siguiendo la estruc
 
 ![Catálogos configurados](/help/commerce/cif/assets/catalog-overview.png)
 
-Al hacer clic en una categoría, se cargarán los elementos secundarios de la categoría en la que se hizo clic.
+Al hacer clic en una categoría, se cargan los elementos secundarios de la categoría en la que se hizo clic.
 
 ![Categoría secundaria](/help/commerce/cif/assets/catalog-category-children.png)
 
-Al hacer clic en un producto, se cargarán las variaciones de productos si están disponibles.
+Al hacer clic en un producto, se cargan variaciones de productos si están disponibles.
 
 ![Variaciones de productos](/help/commerce/cif/assets/catalog-product-variation.png)
 
@@ -63,13 +63,13 @@ Se proporciona una búsqueda de texto completo sobre el catálogo de productos c
 
 ## Exploración del catálogo de productos escalonado {#staged-product-catalogs}
 
-De forma predeterminada, la cabina de productos muestra los datos del catálogo de productos en directo. El uso del &quot;CATÁLOGO CLASIFICADO&quot; en la pestaña del filtro izquierdo cargará el catálogo de productos para cualquier fecha seleccionada.
+De forma predeterminada, la cabina de productos muestra los datos del catálogo de productos en directo. El uso del &quot;CATÁLOGO CLASIFICADO&quot; en la pestaña del filtro izquierdo carga el catálogo de productos para cualquier fecha seleccionada.
 
 ![catálogo preconfigurado](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Propiedades del catálogo de productos {#catalog-properties}
 
-Al hacer clic en el icono de propiedades de un producto o categoría, se abrirá la vista de propiedades del objeto seleccionado. Abrir propiedades de una variante de producto es igual a abrir las propiedades de producto principales.
+Al hacer clic en el icono de propiedades de un producto o categoría, se abre la vista de propiedades del objeto seleccionado. Las propiedades abiertas de una variante de producto son iguales para abrir las propiedades de producto principales.
 
 ### Fichas de comercio {#tabs}
 
@@ -79,6 +79,6 @@ Las pestañas general y de variante muestran propiedades de comercio predefinida
 
 ### AEM Pestañas de contenido {#content-tabs}
 
-AEM AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Recursos asociados), muestran contenido de la lista de contenido asociado con el objeto de comercio, que se encuentra asociado con el contenido de la lista. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
+AEM AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Recursos asociados), muestran contenido de la lista de contenido asociado con el objeto de comercio, que se encuentra asociado con el contenido de la lista de distribución de contenido. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
 
 ![propiedades de contenido](/help/commerce/cif/assets/content-properties.png)

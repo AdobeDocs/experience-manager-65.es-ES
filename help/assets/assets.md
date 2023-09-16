@@ -5,24 +5,24 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
 
 # Acerca de [!DNL Adobe Experience Manager Assets] como solución DAM {#administering-assets}
 
-[!DNL Assets] es una herramienta de administración de activos digitales (DAM) que forma parte integral de [!DNL Experience Manager] y permite a su empresa gestionar y distribuir recursos digitales. Los usuarios de una organización pueden administrar, almacenar y acceder a muchos tipos de recursos digitales, como imágenes, vídeos, documentos, clips de audio, archivos 3D y medios enriquecidos, para usarlos en la web, en la impresión y para la distribución digital.
+AEM [!DNL Assets] es una herramienta de administración de activos digitales (DAM) que forma parte de [!DNL Experience Manager] y permite a su empresa gestionar y distribuir recursos digitales. Los usuarios de una organización pueden administrar, almacenar y acceder a muchos tipos de recursos digitales, como imágenes, vídeos, documentos, clips de audio, archivos 3D y medios enriquecidos, para usarlos en la web, en la impresión y para la distribución digital.
 
 ## ¿Qué es la administración de activos digitales? {#what-is-digital-asset-management}
 
-[!DNL Assets] permite compartir y distribuir en toda la empresa los recursos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta CIFS o WebDAV).
+[!DNL Assets] permite compartir y distribuir en toda la empresa los recursos digitales clave de la organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta CIFS o WebDAV).
 
 [!DNL Assets] capacidad de [!DNL Experience Manager] permite hacer lo siguiente:
 
-* Agregue y comparta imágenes, documentos, archivos de audio y archivos de vídeo en diversos formatos de archivo.
+* Agregue y comparta imágenes, documentos, archivos de audio y archivos de vídeo en varios formatos de archivo.
 * Administre los recursos agrupándolos por etiquetas, lightbox o estrellas (sus favoritos). Agregar anotaciones a recursos.
 * Busque recursos buscando nombres de archivo, el texto completo de los documentos y buscando fechas, tipo de documento y etiquetas.
 * Añada o edite la información de metadatos de los recursos. Las versiones de los metadatos se realizan automáticamente junto con el recurso correspondiente. Puede importar o exportar metadatos de recursos.
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### [!DNL Experience Manager Assets] está integrado con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-[!DNL Assets] se integra completamente con [!DNL Sites] y funciona perfectamente para todos los casos de uso. Por ejemplo, al crear páginas web, la variable [!DNL Sites] Los creadores pueden encontrar y utilizar los recursos digitales a través del buscador de contenido. La interfaz de usuario de [!DNL Assets] es igual que el de [!DNL Sites]. Consulte [descripción general de Sites](/help/sites-authoring/page-authoring.md) para obtener información detallada.
+[!DNL Assets] se integra completamente con [!DNL Sites] y funciona perfectamente para todos los casos de uso. Por ejemplo, al crear páginas web, la variable [!DNL Sites] Los creadores pueden encontrar y utilizar los recursos digitales a través del buscador de contenido. La interfaz de usuario de [!DNL Assets] es igual que el de [!DNL Sites]. Consulte un [descripción general de Sites](/help/sites-authoring/page-authoring.md) para obtener información detallada.
 
 La interfaz de usuario básica es la misma que la de [!DNL Sites]. Consulte [Información general de los sitios](/help/sites-authoring/page-authoring.md) para obtener información detallada.
 
@@ -44,7 +44,7 @@ Al determinar si colocar una imagen en el repositorio de DAM o utilizar un compo
 
 ## ¿Qué son los recursos digitales? {#what-are-digital-assets}
 
-Un recurso es un documento digital, una imagen, un vídeo o audio (o parte del mismo) que puede tener varias representaciones y subrecursos (por ejemplo, capas en un archivo de Photoshop, diapositivas en un archivo de PowerPoint, páginas en un PDF o archivos en un ZIP).
+Un recurso es un documento digital, una imagen, un vídeo o audio (o parte del mismo) que puede tener varias representaciones. También puede tener subrecursos, por ejemplo, capas en un archivo Photoshop, diapositivas en un archivo PowerPoint, páginas en un PDF o archivos en un ZIP.
 
 Un recurso es esencialmente un binario más metadatos más representaciones más recursos secundarios. Consulte la [Guía de rendimiento de DAM](/help/sites-deploying/assets-performance-sizing.md) para obtener información detallada.
 
@@ -54,11 +54,11 @@ Un recurso es esencialmente un binario más metadatos más representaciones más
 
 ### [!DNL Experience Manager Assets] terminología {#aem-assets-terminology}
 
-Cuando se trabaja con recursos digitales en [!DNL Experience Manager], debe comprender la siguiente terminología:
+Cuando se trabaja con recursos digitales en [!DNL Experience Manager], le resultará útil si comprende la siguiente terminología:
 
 * **Colección**: una colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección del usuario (carpetas Lightbox).
 
-* **Metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad, información de DRM (Digital Rights Management), etc. Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes predeterminados:
+* **Metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad e información de DRM (Digital Rights Management). Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes predeterminados:
 
    * Núcleo de Dublín: incluye autor, descripción, fecha, asunto, etc.
    * IPTC: incluye evento, modelo, ubicación, etc.
@@ -83,7 +83,7 @@ Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 * Generar representaciones y miniaturas del recurso, incluido el cambio de tamaño y el recorte automáticos cuando sea necesario.
 * Transcodifique el recurso donde sea necesario. Por ejemplo, el vídeo para uso móvil y web se transcodifica con 24 fotogramas por segundo y el vídeo de descarga con 30 fotogramas por segundo. El audio para uso móvil y web se transcodifica con 128 Kbps, el audio para descarga con 192 Kbps.
 
-Por supuesto, también puede aplicar flujos de trabajo manualmente. Consulte [Controladores de medios de recursos](media-handlers.md)para obtener una lista de flujos de trabajo predeterminados.
+También puede aplicar flujos de trabajo manualmente. Consulte [Controladores de medios de recursos](media-handlers.md)para obtener una lista de flujos de trabajo predeterminados.
 
 ## [!DNL Experience Manager Assets] y [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
@@ -93,4 +93,3 @@ Consulte [Assets y Media Library](medialibrary.md) para obtener información sob
 >
 >* [Introducción en vídeo: Experience Manager Assets as a modern DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 >* [Comprender los conceptos de metadatos](/help/assets/metadata-concepts.md)
-
