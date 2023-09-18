@@ -1,19 +1,15 @@
 ---
 title: Creación de grupos anidados
-seo-title: Authoring Nested Groups
 description: Creación de grupos anidados
-seo-description: Create nested groups
-uuid: b377dc1b-bbb6-41c9-b0fc-8281e1410685
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '590'
 ht-degree: 4%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 4%
 
 ## Creación de grupos en Autor {#creating-groups-on-author}
 
-En la instancia de autor de AEM, desde la navegación global:
+AEM En la instancia de autor de, en la navegación global:
 
 * Seleccionar **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 * Seleccionar **[!UICONTROL carpeta de participación]** para abrirlo.
@@ -35,7 +31,7 @@ El resultado es alcanzar el [Consola de grupos](/help/communities/groups.md):
 
 ![create-group](assets/create-group.png)
 
-La función de grupos se mostrará como una carpeta en la que se crean instancias de grupos. Seleccione la carpeta Grupos para abrirla. El grupo creado al publicar está visible.
+La función de grupos se muestra como una carpeta en la que se crean instancias de grupos. Para abrirla, seleccione la carpeta Groups. El grupo creado en Publicar es visible.
 
 ![create-new-group](assets/create-new-group.png)
 
@@ -99,7 +95,7 @@ Espere a que se confirme la publicación del grupo.
 
 ![publicado en grupo](assets/group-published.png)
 
-El `arts` el grupo también debe contener un `groups` carpeta, pero una que esté vacía y en la que se puedan crear nuevos grupos. Vaya a la carpeta de grupos de artes y cree 3 grupos anidados, cada uno con una configuración de pertenencia diferente:
+El `arts` el grupo también debe contener un `groups` carpeta, pero una que esté vacía y en la que se puedan crear nuevos grupos. Vaya a la carpeta de grupos de artes y cree tres grupos anidados, cada uno con una configuración de pertenencia diferente:
 
 1. **[!UICONTROL Visual]**
 
@@ -122,15 +118,15 @@ El `arts` el grupo también debe contener un `groups` carpeta, pero una que est�
    * Plantilla: `Reference Group`
    * Suscripción: seleccione `Restricted Membership`, un grupo secreto, visible solo para los miembros invitados. Por ejemplo, invite a [usuario de demostración](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
-Actualice la página para ver los tres grupos anidados (subcomunidades).
+Actualice la página para poder ver los tres grupos anidados (subcomunidades).
 
 Para desplazarse a los grupos anidados desde la consola Sitios de Communities:
 
-* Seleccionar **[!UICONTROL carpeta de participación]**
+* Seleccione el **[!UICONTROL carpeta de participación]**
 * Seleccionar **[!UICONTROL Tarjeta de tutorial de introducción]**
-* Seleccionar **[!UICONTROL Grupos]** carpeta
+* Seleccione el **[!UICONTROL Grupos]** carpeta
 * Seleccionar **[!UICONTROL tarjeta artística]**
-* Seleccionar **[!UICONTROL Grupos]** carpeta
+* Seleccione el **[!UICONTROL Grupos]** carpeta
 
 ![create-new-group2](assets/create-new-group2.png)
 
@@ -154,15 +150,15 @@ Después de publicar el sitio principal de la comunidad:
 
 Es posible experimentar los diferentes grupos cuando se inicia sesión, por ejemplo, con [usuarios de demostración](/help/communities/tutorials.md#demo-users) se usa para:
 
-* Miembro del grupo Art/History: emily.andrews@mailinator.com/password
+* Miembro del grupo Arte/Historia: `emily.andrews@mailinator.com/password`
    * El grupo restringido (secreto), artes/historia, es visible:
    * Puede ver grupos opcionales (públicos).
-   * Puede unirse a grupos restringidos (abiertos).
+   * Posibilidad de unirse a grupos restringidos (abiertos).
 
-* Administrador de grupos: aaron.mcdonald@mailinator.com/password
+* Administrador del grupo: `aaron.mcdonald@mailinator.com/password`
 
    * Puede ver grupos opcionales (públicos).
-   * Puede unirse a grupos restringidos (abiertos).
+   * Posibilidad de unirse a grupos restringidos (abiertos).
    * No se pueden ver los grupos restringidos (secretos).
 
 Acceso a las comunidades [Consolas de miembros y grupos](/help/communities/members.md) en autor para agregar otros usuarios a varios grupos de miembros que se correspondan con los grupos de la comunidad.

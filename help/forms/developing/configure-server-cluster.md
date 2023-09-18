@@ -1,10 +1,10 @@
 ---
-title: Configurar y solucionar problemas de AEM Forms en un clúster de servidores JEE
-description: Obtenga información sobre cómo configurar y solucionar problemas de AEM Forms en un clúster de servidores JEE
+title: Configuración y solución de problemas de AEM Forms en un clúster de servidores JEE
+description: Obtenga información sobre cómo configurar y solucionar problemas de Adobe Experience Manager AEM () Forms en un clúster de servidores JEE.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '4032'
+source-wordcount: '3959'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 ## Conocimientos previos requeridos {#prerequisites}
 
-Familiaridad con AEM Forms en servidores de aplicaciones JEE, JBoss, WebSphere y WebLogic, sistemas operativos Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX o Sun Solaris, Oracle, servidores de base de datos IBM DB2 o SQL Server y entornos web.
+Familiaridad con Adobe Experience Manager AEM () Forms en servidores de aplicaciones JEE, JBoss®, WebSphere® y WebLogic, servidores de bases de datos Red Hat® Linux®, SUSE® Linux®, Microsoft® Windows, IBM® AIX® o Sun Solaris™, Oracle, IBM® DB2® o SQL Server y entornos web.
 
 ## Nivel de usuario {#user-level}
 
 Avanzado 
 
-Un clúster de AEM Forms en JEE es una topología diseñada para permitir que AEM Forms en JEE sea resistente al error de un nodo de clúster y escalar la capacidad del sistema más allá de las capacidades de un solo nodo. Un clúster combina varios nodos en un único sistema lógico que comparte datos y permite que las transacciones abarquen varios nodos en su ejecución. Un clúster es la forma más general de escalar AEM Forms en JEE, ya que se puede admitir cualquier combinación de servicios que administren cualquier combinación de cargas de trabajo. Un clúster de AEM Forms en JEE no es necesariamente la mejor opción para todos los tipos de implementaciones y, en particular, una arquitectura de equilibrio de carga de servidor no agrupada puede ser adecuada en muchos casos.
+Un clúster de AEM Forms en JEE es una topología diseñada para permitir que AEM Forms en JEE sea resistente al error de un clúster. También permite a la topología escalar la capacidad del sistema más allá de las capacidades de un solo nodo. Un clúster combina varios nodos en un único sistema lógico que comparte datos y permite que las transacciones abarquen varios nodos en su ejecución. Un clúster es la forma más general de escalar AEM Forms en JEE, ya que se puede admitir cualquier combinación de servicios que administren cualquier combinación de cargas de trabajo. Un clúster de AEM Forms en JEE no es necesariamente la mejor opción para todos los tipos de implementaciones y, una arquitectura de equilibrio de carga de servidor no agrupada puede ser apropiada.
 
-El propósito de este documento es discutir los requisitos de configuración específicos y las áreas de problemas potenciales que puede encontrar con un clúster de AEM Forms en JEE.
+Este documento analiza los requisitos de configuración específicos y las posibles áreas problemáticas que puede encontrar con un AEM Forms en un clúster JEE.
 
 ## ¿Qué hay en un clúster? {#what-is-in-cluster}
 
@@ -31,19 +31,19 @@ Los nodos del clúster de AEM Forms en JEE se comunican entre sí y comparten in
 
 ### Clúster del servidor de aplicaciones {#application-server-cluster}
 
-Un clúster de AEM Forms en JEE se basa en las capacidades de agrupación en clúster del servidor de aplicaciones subyacente. Los clústeres de servidores de aplicaciones permiten que la configuración del clúster se administre como un todo y proporcionan servicios de clúster de bajo nivel como Java Naming and Directory Interface (JNDI) que permiten que los componentes de software se encuentren entre sí en el clúster. La sofisticación de los servicios de clúster y las dependencias técnicas subyacentes que tiene el servidor de aplicaciones dependen del servidor de aplicaciones. WebSphere y WebLogic tienen funcionalidades de administración sofisticadas para clústeres, mientras que JBoss tiene un enfoque muy básico.
+Un clúster de AEM Forms en JEE se basa en las capacidades de agrupación en clúster del servidor de aplicaciones subyacente. Los clústeres de servidores de aplicaciones permiten que la configuración del clúster se administre en su conjunto y proporcionan servicios de clúster de bajo nivel, como Java™ Naming and Directory Interface (JNDI), que permiten que los componentes de software se encuentren entre sí en el clúster. La sofisticación de los servicios de clúster y las dependencias técnicas subyacentes que tiene el servidor de aplicaciones dependen del servidor de aplicaciones. WebSphere® y WebLogic tienen funcionalidades de administración sofisticadas para clústeres, mientras que JBoss® tiene un enfoque básico.
 
 ### Caché de GemFire {#gemfire-cache}
 
-La caché de GemFire es un mecanismo de caché distribuida implementado en cada nodo de clúster. Los nodos se encuentran entre sí y crean una única caché lógica que se mantiene coherente entre los nodos. Los nodos que se encuentran se unen entre sí para mantener una única caché nocional que se muestra como una nube en la Figura 1. A diferencia del GDS y la base de datos, la caché es una entidad puramente conceptual. El contenido real en caché se almacena en la memoria y en el `LC_TEMP` en cada uno de los nodos del clúster.
+La caché de GemFire es un mecanismo de caché distribuida implementado en cada nodo de clúster. Los nodos se encuentran entre sí y crean una única caché lógica que se mantiene coherente entre los nodos. Los nodos que se encuentran entre sí se unen para mantener una sola caché nocional que se muestra como una nube en la Figura 1. A diferencia del GDS y la base de datos, la caché es una entidad puramente conceptual. El contenido real en caché se almacena en la memoria y en el `LC_TEMP` en cada uno de los nodos del clúster.
 
 ### Base de datos {#database}
 
-Todos los nodos del clúster comparten la base de datos AEM Forms en JEE, a la que se accede a través de las fuentes de datos JDBC IDP_DS, EDC_DS y otras. La mayoría de los datos persistentes sobre el estado de AEM Forms en JEE, como qué transacciones están en curso, los datos de usuario asociados con transacciones en curso, los datos sobre cómo se ha establecido la configuración del sistema, etc., se encuentran en esta base de datos.
+Todos los nodos del clúster comparten la base de datos AEM Forms en JEE, a la que se accede mediante las fuentes de datos JDBC IDP_DS, EDC_DS y otras. La mayoría de los datos persistentes sobre el estado de AEM Forms en JEE, como qué transacciones están en curso, los datos de usuario asociados con transacciones en curso y los datos sobre cómo se ha configurado el sistema, se encuentran en esta base de datos.
 
 ### Almacenamiento global de documentos {#global-document-storage}
 
-El almacenamiento global de documentos (GDS) es un área de almacenamiento basada en el sistema de archivos que utiliza Document Manager (clase IDPDocument) en AEM Forms en JEE. El GDS almacena archivos de corta y larga duración a los que deben tener acceso todos los nodos del clúster.
+El almacenamiento global de documentos (GDS) es un área de almacenamiento basada en el sistema de archivos que utiliza Document Manager (clase IDPDocument) en AEM Forms en JEE. El GDS almacena archivos de corta y larga duración a los que todos los nodos del clúster deben tener acceso.
 
 ### Otros elementos {#other-items}
 
@@ -51,11 +51,11 @@ Además de estos recursos compartidos principales, hay otros elementos que tiene
 
 ## Problemas comunes de configuración {#common-configuration}
 
-Una de las cosas más frustrantes sobre el mantenimiento o la solución de problemas de un AEM Forms en un clúster JEE es que no hay un solo lugar para confirmar de forma positiva que el clúster esté en buen estado. Para confirmar que todo está bien en el clúster se necesita un poco de investigación y análisis, y hay varios modos de error para el funcionamiento del clúster, dependiendo de lo que esté mal con la configuración del clúster. La figura siguiente ilustra un clúster mal configurado en el que varios de los recursos compartidos se comparten de forma incorrecta.
+Una de las cosas más frustrantes sobre el mantenimiento o la solución de problemas de una AEM Forms en un clúster JEE es que no hay un solo lugar para comprobar de forma positiva que el clúster esté en buen estado. Para confirmar que todo está bien en el clúster se necesita un poco de investigación y análisis, y hay varios modos de error para el funcionamiento del clúster, dependiendo de lo que esté mal con la configuración del clúster. La figura siguiente ilustra un clúster mal configurado en el que varios de los recursos compartidos se comparten de forma incorrecta.
 
 ![Clúster mal configurado](assets/bad-configuration-cluster.png)
 
-Un aspecto interesante e importante que debe tener en cuenta es que debe estar familiarizado con el funcionamiento de la agrupación en clúster y con el tipo de elementos que se deben buscar y comprobar en un clúster, incluso si no tiene intención de ejecutar AEM Forms en JEE en un clúster. Esto se debe a que algunas partes de AEM Forms en JEE pueden seguir sus indicaciones sobre cómo operar en un clúster incorrectamente y asumir un comportamiento de clúster que no espera.
+Comprenda el funcionamiento de la agrupación en clúster y los tipos de elementos que puede buscar y comprobar en un clúster, incluso si no tiene intención de ejecutar AEM Forms en JEE en un clúster. El motivo es que algunas partes de AEM Forms en JEE pueden seguir sus indicaciones sobre cómo operar en un clúster incorrectamente y asumir un comportamiento de clúster que no espera.
 
 Entonces, ¿qué hay de malo con la configuración para compartir de la figura anterior? Las secciones siguientes describen los problemas:
 
@@ -65,11 +65,11 @@ Hay varias cosas que pueden salir mal con el caché de Gemfire. Dos escenarios t
 
 * Los nodos que deberían poder encontrarse entre sí no pueden hacerlo.
 
-* Los nodos que no se supone que estén agrupados se encuentran entre sí y comparten una caché cuando no deberían.
+* Los nodos que están agrupados pueden encontrarse entre sí y compartir una caché cuando no deberían.
 
-Si tiene nodos que desea agrupar, es esencial que se encuentren en la red. De forma predeterminada, lo hacen mediante mensajes UDP de multidifusión. Cada nodo envía mensajes de difusión anunciando que está presente y cualquier nodo que reciba un mensaje de este tipo comienza a hablar con los demás nodos que encuentra. Este tipo de método de autodescubrimiento es muy común, y muchos tipos de software y dispositivos lo hacen.
+Si tiene nodos que desea agrupar, es necesario que se encuentren en la red. De forma predeterminada, lo hacen con mensajes UDP de multidifusión. Cada nodo envía mensajes de difusión anunciando que está presente y cualquier nodo que reciba un mensaje de este tipo comienza a hablar con los demás nodos que encuentra. Este tipo de método de autodescubrimiento es común, y muchos tipos de software y dispositivos lo hacen.
 
-Un problema común con la detección automática es que los mensajes de multidifusión pueden filtrarse por la red como parte de una directiva de red o debido a reglas de firewall de software, o simplemente no pueden enrutarse a través de la red que existe entre nodos. Debido a la dificultad general para que la detección automática de UDP funcione en redes complejas, es habitual que las implementaciones de producción utilicen un método de detección alternativo: localizadores TCP. Se puede encontrar una descripción general de los localizadores TCP en las referencias.
+Un problema común con la detección automática es que la red puede filtrar los mensajes de multidifusión. Esto puede ser parte de una directiva de red, debido a reglas de firewall de software o porque no pueden enrutarse a través de la red que existe entre nodos. Debido a la dificultad general para que la detección automática de UDP funcione en redes complejas, es habitual que las implementaciones de producción utilicen un método de detección alternativo: localizadores TCP. Se puede encontrar una descripción general de los localizadores TCP en las referencias.
 
 **¿Cómo sé si estoy usando localizadores o UDP?**
 
@@ -95,7 +95,7 @@ En primer lugar, si los localizadores TCP están en uso, debe tener los localiza
 
 `-Dadobe.cache.cluster-locators=aix01.adobe.com[22345],aix02.adobe.com[22345]`
 
-No es necesario ejecutar los localizadores en los nodos de clúster de AEM Forms en JEE; si lo desea, se pueden ejecutar en otros sistemas separados del clúster. Más de un sistema puede ejecutar localizadores y, por lo general, se considera una práctica recomendada que los localizadores se ejecuten en dos ubicaciones frente a la posibilidad de que un solo error de los localizadores pueda causar un problema al reiniciar el clúster. En cada uno de los sistemas que ejecutan localizadores, debe poder comprobar que se están ejecutando utilizando los siguientes comandos en esos equipos:
+No es necesario ejecutar los localizadores en los nodos de clúster de AEM Forms en JEE; si lo desea, se pueden ejecutar en otros sistemas separados del clúster. Más de un sistema puede ejecutar ubicaciones. Y, se considera una práctica recomendada tener localizadores funcionando en dos ubicaciones frente a la posibilidad de que un solo error de los localizadores pueda causar un problema con el reinicio del clúster. En cada uno de los sistemas que ejecutan localizadores, debe poder comprobar que se están ejecutando utilizando los siguientes comandos en esos equipos:
 
 `netstat -an | grep 22345`
 
@@ -149,9 +149,9 @@ En el otro nodo, AP-HP7:
 
 **¿Y si GemFire está encontrando nodos que no debería?**
 
-Cada clúster distinto que comparte una red corporativa debe utilizar un conjunto independiente de localizadores TCP, si se utilizan localizadores TCP, o un número de puerto UDP independiente si se utiliza la configuración UDP de multidifusión. Dado que la detección automática de UDP es la configuración predeterminada de AEM Forms en JEE y que el mismo puerto predeterminado, 33456, puede estar en uso por varios clústeres, es posible que los clústeres que no deberían intentar comunicarse lo estén haciendo inesperadamente; por ejemplo, los clústeres de producción y control de calidad deben permanecer separados, pero pueden conectarse entre sí a través de la multidifusión UDP.
+Cada clúster distinto que comparte una red corporativa debe utilizar un conjunto independiente de localizadores TCP, si se utilizan localizadores TCP, o un número de puerto UDP independiente si se utiliza la configuración UDP de multidifusión. Debido a que la detección automática de UDP es la configuración predeterminada para AEM Forms en JEE y que el mismo puerto predeterminado 33456 está siendo utilizado por varios clústeres, es posible que los clústeres que no deberían intentar comunicarse lo estén haciendo de forma inesperada. Por ejemplo, los clústeres de producción y control de calidad deben permanecer separados, pero pueden conectarse entre sí mediante multidifusión UDP.
 
-La situación más común en la que se pueden detectar puertos duplicados en una red en la que GemFire está creando clústeres incorrectamente es durante el arranque de un clúster. Lo que puede encontrar es que el proceso de bootstrap falla sin una causa clara. Normalmente, se ven errores como este:
+La situación más común en la que se pueden detectar puertos duplicados en una red en la que GemFire está creando clústeres incorrectamente es durante el Bootstrap de un clúster. Lo que puede encontrar es que el proceso de Bootstrap falla sin una causa clara. Normalmente, se ven errores como este:
 
 ```xml
 Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com.adobe.pof.schema.ObjectTypeNotFoundException: Object Type: dsc.sc_service_configuration not found.
@@ -163,25 +163,21 @@ Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com
                 at com.adobe.livecycle.bootstrap.bootstrappers.DSCBootstrapper.bootstrap(DSCBootstrapper.java:68)
 ```
 
-En este caso, el programa previo está trabajando con GemFire para acceder a las tablas requeridas, y hay una inconsistencia entre las tablas a las que se accede a través de JDBC y la información de tabla en caché devuelta por GemFire, que viene de un clúster diferente con una base de datos subyacente diferente.
+En este caso, el programa previo está trabajando con GemFire para acceder a las tablas requeridas. Además, existe una incoherencia entre las tablas a las que se accede a través de JDBC y la información de tablas en caché devuelta por GemFire, que proviene de un clúster diferente con una base de datos subyacente diferente.
 
-Aunque un puerto duplicado suele ser evidente durante el arranque, es posible que esta situación se muestre más tarde, cuando se reinicia un clúster después de estar inactivo cuando se produjo el arranque del otro clúster, o cuando se cambia la configuración de red para que los clústeres que antes estaban aislados, con fines de multidifusión, sean visibles entre sí.
+Aunque un puerto duplicado suele ser evidente durante el Bootstrap, es posible que esta situación se muestre más adelante. Esto puede ocurrir cuando se reinicia un clúster después de estar inactivo cuando se produjo el Bootstrap del otro clúster. O bien, cuando se cambia la configuración de red para que los clústeres que antes estaban aislados, con fines de multidifusión, sean visibles entre sí.
 
-Para diagnosticar estas situaciones, es mejor mirar los registros de GemFire y considerar cuidadosamente si solo se están encontrando los nodos esperados. Para corregir el problema, es necesario cambiar el
-
-`adobe.cache.multicast-port`
-
-a un valor diferente en uno o ambos clústeres.
+Para diagnosticar estas situaciones, observe los registros de GemFire y considere cuidadosamente si solo se encuentran los nodos esperados. Para corregir el problema, es necesario cambiar el `adobe.cache.multicast-port` a un valor diferente en uno o ambos clústeres.
 
 ### 2) Uso compartido de GDS {#gds-sharing}
 
-El uso compartido de GDS está configurado fuera de AEM Forms en JEE, en el nivel O/S, donde debe organizar que la misma estructura de directorios compartidos esté disponible para todos los nodos de clúster. En los sistemas de tipo Windows, esto se consigue normalmente mediante la configuración de un recurso compartido de archivos de un nodo a otro o de un sistema de archivos remoto como un dispositivo NAS a todos los nodos. En sistemas UNIX, el uso compartido de GDS se suele realizar mediante el uso compartido de archivos NFS, de nuevo, de un nodo al otro o desde un dispositivo NAS.
+El uso compartido de GDS está configurado fuera de AEM Forms en JEE, en el nivel O/S, donde debe organizar que la misma estructura de directorios compartidos esté disponible para todos los nodos de clúster. En sistemas del tipo Windows, esto se logra mediante la configuración de un recurso compartido de archivos de un nodo al otro, o de un sistema de archivos remoto como un dispositivo NAS a todos los nodos. En sistemas UNIX®, el uso compartido de GDS suele realizarse a través del uso compartido de archivos NFS, de nuevo, ya sea de un nodo a otro o desde un dispositivo NAS.
 
 Un posible modo de error para el clúster es si este recurso compartido de archivos remoto deja de estar disponible o tiene problemas sutiles. Un montaje remoto puede fallar debido a problemas de red, configuración de seguridad o configuración incorrecta. Un reinicio del sistema puede provocar cambios de configuración realizados días o semanas antes de que entren en vigor, y esto puede causar sorpresas.
 
 **¿Qué sucedería si un recurso compartido NFS no se monta?**
 
-En UNIX, la forma en que los montajes NFS se asignan a la estructura de directorios puede permitir que un directorio GDS aparentemente utilizable esté disponible, incluso si el montaje falla. Tenga en cuenta lo siguiente:
+En UNIX®, la forma en que los montajes NFS se asignan a la estructura de directorios puede permitir que un directorio GDS aparentemente utilizable esté disponible, incluso si el montaje falla. Tenga en cuenta lo siguiente:
 
 * Servidor NAS: carpeta compartida NFS /u01/iapply/livecycle_gds
 * Nodo 1: un punto de montaje en la carpeta compartida (alojada en el servidor DB) ubicada aquí: /u01/iapply/livecycle_gds
@@ -189,49 +185,49 @@ En UNIX, la forma en que los montajes NFS se asignan a la estructura de director
 
 * LCES especifica la ruta a GDS: /u01/iapply/livecycle_gds
 
-Si falla el montaje en el nodo 1, la estructura de directorio aún contendrá una ruta /u01/iapply/livecycle_gds al punto de montaje vacío, y el nodo parecerá ejecutarse correctamente. Sin embargo, dado que el contenido de GDS no se comparte realmente con el otro nodo, el clúster no funcionará correctamente. Esto puede ocurrir y sucede, y el resultado es que el clúster falla de maneras misteriosas.
+Si falla el montaje en el nodo 1, la estructura de directorios aún contiene una ruta `/u01/iapply/livecycle_gds` al punto de montaje vacío y el nodo parece ejecutarse correctamente. Sin embargo, como el contenido de GDS no se comparte realmente con el otro nodo, el clúster no funciona correctamente. Esto puede ocurrir y sucede, y el resultado es que el clúster falla de maneras misteriosas.
 
-La práctica recomendada es organizar las cosas para que el punto de montaje de Linux no se use como la raíz del GDS, sino que en su lugar se use algún directorio dentro de él como la raíz del GDS:
+La práctica recomendada es organizar las cosas para que el punto de montaje de Linux® no se use como raíz del GDS, sino que se use algún directorio dentro de él como raíz del GDS:
 
 * Si tiene un servidor NFS, puede tener un directorio: /some/storage/lc_cluster_dev/LC_GDS
 * Y en el nodo de clúster tiene un punto de montaje: /u01/iapply/shared
 * Monte nfs_server: /some/storage/lc_cluster_dev/u01/iapply/shared
 * Dirija su GDS a /u01/iapply/shared/LC_GDS
 
-Ahora, si por alguna razón el montaje no tiene éxito, el punto de montaje vacío no contiene un directorio LC_GDS y su clúster fallará de forma predecible, ya que no puede encontrar ningún GDS en absoluto.
+Ahora, si por alguna razón el montaje no tiene éxito, el punto de montaje no contiene un directorio LC_GDS y el clúster falla de forma predecible porque no puede encontrar ningún GDS.
 
 **¿Cómo puedo verificar que todos los nodos ven el mismo GDS y tienen permisos?**
 
-La verificación del acceso y uso compartido de GDS se realiza mejor accediendo a cada uno de los nodos como un usuario interactivo, ya sea a través de SSH o telnet a nodos UNIX, o a través del escritorio remoto a sistemas Windows. Debe poder navegar al directorio o sistema de archivos GDS configurado en cada nodo y crear archivos de prueba a partir de cada nodo que esté visible en todos los demás nodos.
+La verificación del acceso y el uso compartido de GDS se realiza mejor accediendo a cada uno de los nodos como un usuario interactivo. Puede hacerlo a través de SSH o telnet a nodos UNIX®, o a través del escritorio remoto a sistemas Windows. Debe poder navegar al directorio o sistema de archivos GDS configurado en cada nodo y crear archivos de prueba a partir de cada nodo que esté visible en todos los demás nodos.
 
-Preste atención al ID de usuario con el que funciona AEM Forms en JEE. En instalaciones llave en mano de Windows, se trata de un administrador local. En UNIX, puede ser como un usuario de servicio específico configurado en el script de inicio o en la configuración del servidor de aplicaciones. Es importante que este ID de usuario pueda crear y manipular archivos GDS de forma equitativa en todos los nodos.
+Preste atención al ID de usuario con el que funciona AEM Forms en JEE. En instalaciones llave en mano de Windows, se trata de un administrador local. En UNIX®, puede ser como un usuario de servicio específico configurado en el script de inicio o en la configuración del servidor de aplicaciones. Es importante que este ID de usuario pueda crear y manipular archivos GDS de forma equitativa en todos los nodos.
 
-En sistemas UNIX, las configuraciones NFS suelen ser predeterminadas para desconfiar de la propiedad raíz o de los derechos de acceso raíz a archivos y objetos. Si está ejecutando el servidor de aplicaciones como usuario raíz, debe especificar las opciones en el servidor NFS, el nodo que monta los archivos o ambos para permitir el acceso bilateral y el control de los archivos creados por un nodo y a los que se accede desde otro.
+En sistemas UNIX®, las configuraciones NFS suelen ser predeterminadas para desconfiar de la propiedad raíz o de los derechos de acceso raíz a archivos y objetos. Si está ejecutando el servidor de aplicaciones como usuario raíz, puede que necesite especificar opciones en el servidor NFS, en el nodo que monta los archivos o en ambos. Al hacerlo, se permite el acceso y control bilateral de los archivos creados por un nodo y a los que se accede desde otro.
 
 ### (3) Uso compartido de bases de datos {#database-sharing}
 
-Para que un clúster funcione correctamente, es esencial que todos sus miembros compartan la misma base de datos. El margen para equivocarse en esto es más o menos:
+Para que un clúster funcione correctamente, todos los miembros del clúster deben compartir la misma base de datos. El margen para equivocarse en esto es más o menos:
 
 * configurar accidentalmente IDP_DS, EDC_DS, AdobeDefaultSA_DS u otras fuentes de datos necesarias de forma diferente en nodos de clúster independientes, de modo que los nodos apunten a bases de datos diferentes.
 * configurar accidentalmente varios nodos independientes para compartir una base de datos cuando no deberían hacerlo.
 
-Según el servidor de aplicaciones, puede ser natural que la conexión JDBC se defina en un ámbito de clúster, por lo que no es posible utilizar definiciones diferentes en nodos diferentes. Sin embargo, en Jboss es totalmente posible configurar las cosas para que una fuente de datos, como IDP_DS, apunte a una base de datos en el nodo 1, pero apunte a otra cosa en el nodo 2.
+Según el servidor de aplicaciones, puede ser natural que la conexión JDBC se defina en un ámbito de clúster, por lo que no es posible utilizar definiciones diferentes en nodos diferentes. Sin embargo, en JBoss® es totalmente posible configurar cosas para que una fuente de datos, como IDP_DS, apunte a una base de datos en el nodo 1, pero apunte a otra cosa en el nodo 2.
 
-El problema inverso es en realidad más común, es decir, una situación en la que varios AEM Forms independientes (o de clúster) en nodos JEE apuntan accidentalmente al mismo esquema cuando no están pensados. Esto suele ocurrir cuando un DBA proporciona inadvertidamente una sola información de conexión de AEM Forms en la base de datos JEE a los equipos de configuración de DEV y QA, ninguno de los cuales se da cuenta de que las instancias de DEV y QA requieren bases de datos independientes.
+El problema de la marcha atrás es más común. Es decir, una situación en la que varios nodos independientes (o de clúster) de AEM Forms en nodos JEE apuntan accidentalmente al mismo esquema cuando no están pensados para hacerlo. Esto suele ocurrir cuando un DBA, sin saberlo, proporciona una sola información de conexión de AEM Forms en la base de datos JEE a los equipos de configuración de DEV y QA. Ninguno de los dos equipos se da cuenta de que las instancias de DEV y QA requieren bases de datos independientes.
 
 ## Clúster del servidor de aplicaciones {#application-server-cluster-1}
 
-Para tener un clúster de AEM Forms en JEE correcto, es esencial que el servidor de aplicaciones esté configurado y funcione correctamente como un clúster. En WebSphere y Weblogic, este es un proceso directo y bien documentado. En Jboss, la configuración del clúster es un poco más práctica, y garantizar que los nodos estén configurados para actuar como un clúster y que, de hecho, encuentren y se comuniquen entre sí puede ser un desafío. JBoss se basa internamente en JGroups, que utiliza la multidifusión UDP para buscar y coordinar con nodos del mismo nivel, y pueden producirse algunos de los problemas mencionados con GemFire, como nodos que no se encuentran el uno al otro cuando deberían, o que se encuentran el uno al otro cuando no deberían.
+Para tener un clúster de AEM Forms en JEE correcto, el servidor de aplicaciones debe configurarse y funcionar correctamente como un clúster. En WebSphere® y WebLogic, se trata de un proceso directo y bien documentado. En JBoss®, la configuración de clústeres es un poco más práctica, y garantizar que los nodos estén configurados para actuar como un clúster y que, de hecho, encuentren y se comuniquen entre sí puede ser un desafío. JBoss® se basa internamente en JGroups, que utiliza multidifusión UDP para buscar y coordinar con nodos del mismo nivel. Algunos de los problemas mencionados con GemFire pueden ocurrir, como los nodos que no se encuentran entre sí cuando deberían, o que se encuentran entre sí cuando no deberían.
 
 Referencias:
 
-* [Servicios empresariales de alta disponibilidad mediante clústeres JBoss](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [Servicios empresariales de alta disponibilidad mediante clústeres JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle de WebLogic Server: uso de clústeres](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle de clústeres que utilizan el servidor de WebLogic](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
-### ¿Cómo puedo comprobar si JBoss se está agrupando correctamente? {#check-jboss-clustering}
+### ¿Cómo puedo comprobar si JBoss® se está agrupando correctamente? {#check-jboss-clustering}
 
-Cuando se inicia JBoss, a medida que se descubren miembros del clúster, los mensajes de nivel INFO sobre el nodo que se une al clúster se registran en el archivo o la consola de registro.
+Cuando se inicia JBoss®, a medida que se detectan miembros del clúster, los mensajes de nivel INFO sobre el nodo que se une al clúster se registran en el archivo o la consola de registro.
 
 Si se especificó un nombre de clúster mediante la opción de línea de comandos -g durante la ejecución, verá mensajes similares a los siguientes:
 
@@ -248,7 +244,7 @@ and ones like:
 
 ### Planificador de cuarzo {#quartz-scheduler}
 
-En su mayor parte, AEM Forms en el uso de JEE del programador de cuarzo interno en un clúster está diseñado para seguir automáticamente la configuración de clúster global de AEM Forms en JEE en general. Sin embargo, hay un error, #2794033, que hace que la configuración automática de clúster de Quartz falle si se están utilizando localizadores TCP para Gemfire en lugar de la detección automática de multidifusión. En este caso, Quartz se ejecutará incorrectamente en un modo no agrupado. Esto creará interbloqueos y datos dañados en las tablas de Quartz. Los efectos secundarios son peores en la versión 8.2.x que en la 9.0, ya que el cuarzo no se usa tanto, pero sigue ahí.
+Por lo general, AEM Forms en el uso de JEE del programador Quartz interno en un clúster está diseñado para seguir automáticamente la configuración de clúster global de AEM Forms en JEE en general. Sin embargo, hay un error, #2794033, que hace que la configuración automática de clúster de Quartz falle si se están utilizando localizadores TCP para Gemfire en lugar de la detección automática de multidifusión. En este caso, Quartz se ejecuta incorrectamente en un modo no agrupado. Esto crea interbloqueos y datos dañados en las tablas de Quartz. Los efectos secundarios son peores en la versión 8.2.x que en la 9.0, ya que el cuarzo no se usa tanto, pero sigue ahí.
 
 Las correcciones están disponibles de la siguiente manera para este problema: 8.2.1.2 QF2.143 y 9.0.0.2 QF2.44.
 
@@ -258,22 +254,22 @@ También existe una solución alternativa, que es establecer estas dos propiedad
 
 * `-Dadobe.cache.cluster-locators=xxx`
 
-Tenga en cuenta que una configuración utiliza un punto entre &quot;cluster&quot; y &quot;locators&quot; y la otra utiliza un guión. Esto es fácil de implementar y menos riesgoso que aplicar un parche de software, pero implica crear artificialmente una configuración adicional confusa y con nombre incorrecto.
+Una configuración utiliza un punto entre &quot;cluster&quot; y &quot;locators&quot; y la otra utiliza un guión. Esto es fácil de implementar y menos riesgoso que aplicar un parche de software, pero implica crear artificialmente una configuración adicional confusa y con nombre incorrecto.
 
 ### ¿Cómo puedo comprobar que Quartz se está ejecutando como un solo nodo o clúster? {#check-quartz}
 
 Para determinar cómo se ha configurado Quartz, debe consultar los mensajes generados por el servicio Programador de AEM Forms en JEE durante el inicio. Estos mensajes se generan con una gravedad INFO y puede ser necesario ajustar el nivel de registro y reiniciar para obtener los mensajes. Dentro de la secuencia de inicio de AEM Forms en JEE, la inicialización de Quartz comienza con la siguiente línea:
 
-INFORMACIÓN  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad Es importante localizar esta primera línea en los registros porque algunos servidores de aplicaciones también utilizan Quartz y sus instancias de Quartz no deben confundirse con la instancia que utiliza AEM Forms en el servicio JEE Scheduler. Esta es la indicación de que el servicio Scheduler se está iniciando y las líneas que lo siguen le indicarán si se está iniciando o no correctamente en modo agrupado. Varios mensajes aparecen en esta secuencia, y es el último mensaje &quot;iniciado&quot; que revela cómo Quartz está configurado:
+INFORMACIÓN  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad Es importante localizar esta primera línea en los registros. El motivo es que algunos servidores de aplicaciones utilizan también Quartz y sus instancias de Quartz no deben confundirse con las instancias que utiliza el servicio Programador de AEM Forms en JEE. Esta es la indicación de que el servicio Planificador se está iniciando y las líneas que lo siguen le indican si se está iniciando correctamente en modo agrupado. Varios mensajes aparecen en esta secuencia, y es el último mensaje &quot;iniciado&quot; que revela cómo Quartz está configurado:
 
-Aquí se proporciona el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. El nombre de la instancia de Quartz del planificador siempre comenzará con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.adobe.com1312883903975`, indica que funciona en un clúster. Si funciona como un solo nodo, el identificador será un número de dos dígitos, &quot;20&quot;:
+Aquí se proporciona el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. El nombre de la instancia de Quartz del planificador siempre comienza con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.adobe.com1312883903975`, indica que funciona en un clúster. Si funciona como un solo nodo, el identificador es un número de dos dígitos, &quot;20&quot;:
 
 INFORMACIÓN  `[org.quartz.core.QuartzScheduler]` Planificador `IDPSchedulerService_$_20` iniciado.
 Esta comprobación debe realizarse en todos los nodos del clúster por separado, ya que el programador de cada nodo determina de forma independiente si se debe operar en modo de clúster.
 
 ### ¿Qué tipo de problemas se producen si Quartz se está ejecutando en el modo incorrecto? {#quartz-running-in-wrong-mode}
 
-Si Quartz está configurado para ejecutarse como un solo nodo, pero en realidad se está ejecutando en un clúster y compartiendo tablas de bases de datos de Quartz con otros nodos, el resultado será una operación no confiable del servicio Programador de AEM Forms en JEE y normalmente irá acompañada de interbloqueos de base de datos. Este es un seguimiento de pila bastante típico que podría ver en esta situación:
+Si Quartz está configurado para ejecutarse como un solo nodo, pero se está ejecutando en un clúster y comparte tablas de bases de datos de Quartz con otros nodos, el resultado es un funcionamiento poco fiable del servicio Programador de AEM Forms en JEE. Y a menudo va acompañado de interbloqueos en las bases de datos. Este es un seguimiento de pila bastante típico que podría ver en esta situación:
 
 ```xml
 [1/20/11 10:40:57:584 EST] 00000035 ErrorLogger   E org.quartz.core.ErrorLogger schedulerError An error occured while marking executed job complete. job= 'Asynchronous.TaskFormDataSaved:12955380518320.5650479324757354'
@@ -291,17 +287,17 @@ Si Quartz está configurado para ejecutarse como un solo nodo, pero en realidad 
 Caused by: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource
 ```
 
-### ¿Cómo se sincronizan los relojes del sistema en un clúster? {#ynchronize-system-clocks-cluster}
+### ¿Cómo se sincronizan los relojes del sistema en un clúster? {#synchronize-system-clocks-cluster}
 
-Para que un clúster funcione sin problemas, es esencial que los relojes de todos los nodos del clúster estén estrechamente sincronizados. Esto no se puede hacer de forma adecuada a mano y debe hacerse mediante algún tipo de servicio de sincronización de tiempo que se ejecute con mucha regularidad. Los relojes de todos los nodos deben estar separados por un segundo entre sí. La práctica recomendada dicta que no solo los nodos de clúster, sino también el equilibrador de carga, el servidor de base de datos, el servidor NAS de GDS y cualquier otro componente también se sincronicen.
+Para que un clúster funcione sin problemas, los relojes de todos los nodos del clúster deben estar estrechamente sincronizados. Esto no se puede hacer de forma adecuada a mano y debe hacerlo algún tipo de servicio de sincronización de tiempo que se ejecute regularmente. Los relojes de todos los nodos deben estar separados por un segundo entre sí. La práctica recomendada dicta que no solo se sincronicen los nodos de clúster, sino también el equilibrador de carga, el servidor de base de datos, el servidor NAS de GDS y cualquier otro componente.
 
-La sincronización horaria de Windows tiende a ser al controlador de dominio. Los sistemas UNIX pueden sincronizarse usando NTP a una fuente de tiempo diferente. Es mejor que todos los sistemas, tanto los nodos de AEM Forms en JEE como otros componentes del sistema, se sincronicen con el mismo origen, si es posible.
+La sincronización horaria de Windows tiende a ser al controlador de dominio. Los sistemas UNIX® pueden sincronizarse usando NTP a una fuente de tiempo diferente. Es mejor si todos los sistemas (tanto los nodos de AEM Forms en JEE como otros componentes del sistema) se sincronizan con el mismo origen, si es posible.
 
-No es suficiente, ni siquiera en los entornos de prueba más temporales, establecer manualmente los relojes en los nodos. La configuración manual de los relojes no dará una sincronización lo suficientemente precisa, y los relojes de los dos nodos inevitablemente se desplazarán en relación entre sí, incluso durante un período de solo un día. Un mecanismo de sincronización de tiempo activo es esencial para un funcionamiento fiable del clúster.
+No es suficiente, incluso en los entornos de prueba más temporales, configurar manualmente los relojes en los nodos. La configuración manual de los relojes no ofrece suficiente sincronización precisa, y los relojes de los dos nodos inevitablemente se desvían entre sí, incluso durante un período de solo un día. Un mecanismo de sincronización de tiempo activo es esencial para un funcionamiento fiable del clúster.
 
 ### Equilibrador de carga {#load-balancer}
 
-Un requisito típico de un clúster que proporciona servicios interactivos para el usuario es un equilibrador de carga HTTP que distribuirá las solicitudes HTTP en el clúster. El uso correcto de un equilibrador de carga con un AEM Forms en un clúster JEE requiere la configuración de lo siguiente:
+Un requisito típico de un clúster que proporciona servicios interactivos para el usuario es un equilibrador de carga HTTP que distribuye las solicitudes HTTP a través del clúster. El uso correcto de un equilibrador de carga con un AEM Forms en un clúster JEE requiere la configuración de lo siguiente:
 
 * permanencia de sesión
 
@@ -311,7 +307,7 @@ Un requisito típico de un clúster que proporciona servicios interactivos para 
 
 ### ¿Qué debo hacer con la función de comprobación de estado del equilibrador de carga? {#load-balancer-health-check}
 
-Algunos equilibradores de carga se pueden configurar para realizar una comprobación de estado periódica en los nodos que se equilibran de carga. Normalmente, es una URL a una función de la aplicación a la que el equilibrador de carga intentará acceder. Si la carga se realiza correctamente, se supone que el nodo está en buen estado y se mantiene en el conjunto de equilibrio de carga. Si la dirección URL no se puede cargar, se asume que el nodo es defectuoso y se elimina del conjunto. Normalmente, la URL de comprobación de estado simplemente se conecta a AEM Forms en la página de inicio de sesión de la IU del administrador de JEE. Esta no es una comprobación de estado ideal para un miembro del clúster y sería mejor implementar un proceso de corta duración y utilizar la URL de la API de REST como función de comprobación de estado.
+Algunos equilibradores de carga se pueden configurar para realizar una comprobación de estado periódica en los nodos que se equilibran de carga. Normalmente, es la dirección URL de una función de la aplicación a la que intenta acceder el equilibrador de carga. Si la carga se realiza correctamente, se supone que el nodo está en buen estado y se mantiene en el conjunto de equilibrio de carga. Si la dirección URL no se puede cargar, se asume que el nodo es defectuoso y se elimina del conjunto. Normalmente, la URL de comprobación de estado está conectada a AEM Forms en la página de inicio de sesión de la IU del administrador de JEE. Esta no es una comprobación de estado ideal para un miembro del clúster y sería mejor implementar un proceso de corta duración y utilizar la URL de la API de REST como función de comprobación de estado.
 
 ## Ruta de archivo temporal y configuración de clúster similar {#temporary-file-path-cluster-settings}
 
@@ -325,10 +321,10 @@ Se deben comprobar las siguientes configuraciones:
 1. Ubicación del directorio de fuentes del sistema
 1. Ubicación del archivo de configuración de los servicios de datos
 
-El clúster sólo tiene una única ruta de acceso para cada una de estas opciones de configuración. Por ejemplo, la ubicación del directorio Temp podría ser `/home/project/QA2/LC_TEMP`. En un clúster, es necesario que cada nodo tenga realmente esta ruta particular accesible. Si un nodo tiene la ruta de archivo temporal esperada y otro nodo no, el nodo que no funciona no funcionará correctamente.
+El clúster sólo tiene una única ruta de acceso para cada una de estas opciones de configuración. Por ejemplo, la ubicación del directorio Temp podría ser `/home/project/QA2/LC_TEMP`. En un clúster, es necesario que cada nodo tenga realmente esta ruta particular accesible. Si un nodo tiene la ruta de archivo temporal esperada y otro nodo no, el nodo que no la tiene funciona incorrectamente.
 
-Aunque estos archivos y rutas de acceso pueden compartirse entre los nodos o ubicarse por separado, o en sistemas de archivos remotos, se recomienda generalmente que sean copias locales en el almacenamiento en disco del nodo local.
+Aunque estos archivos y rutas de acceso pueden compartirse entre los nodos o ubicarse por separado, o en sistemas de archivos remotos, se recomienda que sean copias locales en el almacenamiento en disco del nodo local.
 
-La ruta del Directorio temporal, en particular, no debe compartirse entre nodos. Se debe utilizar un procedimiento similar al descrito para verificar el GDS con el fin de comprobar que el directorio temporal no se comparte: vaya a cada nodo, cree un archivo temporal en la ruta indicada por la configuración de ruta de acceso y, a continuación, compruebe que los demás nodos no comparten el archivo. La ruta del directorio temporal debe hacer referencia al almacenamiento en disco local en cada nodo, si es posible, y debe comprobarse.
+La ruta del Directorio temporal, en particular, no debe compartirse entre nodos. Un procedimiento similar al descrito para verificar que el GDS debe usarse para verificar que el directorio temporal no se está compartiendo. Vaya a cada nodo, cree un archivo temporal en la ruta indicada por la configuración de ruta y, a continuación, compruebe que los demás nodos no comparten el archivo. La ruta del directorio temporal debe hacer referencia al almacenamiento en disco local en cada nodo, si es posible, y debe comprobarse.
 
 Para cada una de las configuraciones de ruta, asegúrese de que la ruta realmente existe y es accesible desde cada nodo del clúster, utilizando la identidad de uso efectiva en la que se ejecuta AEM Forms en JEE. El contenido del directorio de fuentes debe ser legible. El directorio temporal debe permitir lectura, escritura y control.

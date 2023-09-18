@@ -1,38 +1,34 @@
 ---
 title: Personalizar la presentación y la colocación de los mensajes de error de un formulario adaptable
-seo-title: Customize layout and positioning of error messages of an adaptive form
 description: Puede personalizar el diseño y la posición de los mensajes de error de un formulario adaptable.
-seo-description: You can customize layout and positioning of the error messages of an adaptive for.
-uuid: 6d3490f6-c867-44c9-a527-55f6d7221f99
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 66%
 
 ---
 
 # Personalizar la presentación y la colocación de los mensajes de error de un formulario adaptable{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
-Se puede personalizar la presentación y la posición de los mensajes de error de un formulario adaptable. Puede realizar las siguientes personalizaciones:
+Puede personalizar la presentación y la posición de los mensajes de error de un formulario adaptable. Puede realizar las siguientes personalizaciones:
 
-* Personalizar la ubicación y el diseño del rótulo de un campo sin realizar ningún cambio en las propiedades CSS correspondientes
+* Personalizar la ubicación y el diseño del pie de ilustración de un campo sin cambiar las propiedades CSS correspondientes
 * Personalizar la posición de los mensajes de error en línea
 * Personalizar el contenido del indicador de ayuda dinámica
-* Personalizar la posición de los componentes del campo (rótulo, widget, descripción breve, descripción larga y componentes del indicador de ayuda) sin realizar ningún cambio en las propiedades CSS correspondientes
+* Personalice la posición de los componentes de campo (título, widget, descripción breve, descripción larga y componentes de indicador de ayuda) sin cambiar las propiedades CSS correspondientes
 
 ## Personalizar el diseño de los campos {#customize-layout-of-fields}
 
-Puede personalizar el diseño de un único campo o de todos los campos para cambiar la posición del rótulo y los mensajes de error. Siga los siguientes pasos para aplicar un diseño personalizado a un campo:
+Puede personalizar el diseño de un único campo o de todos los campos para cambiar la posición del rótulo y los mensajes de error.
+
+Para aplicar un diseño personalizado a un campo, haga lo siguiente:
 
 ### Personalizar el diseño de un solo campo {#customize-layout-of-a-single-field}
-
-Siga los siguientes pasos para aplicar un diseño personalizado a un solo campo:
 
 1. Abra el formulario en el modo **Estilo**. Para abrir el formulario en modo Estilo, en la barra de herramientas de la página, pulse ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
 1. En la barra lateral, debajo de **Objetos de formulario**, seleccione el campo y pulse el botón editar ![edit-button](assets/edit-button.png).
@@ -83,7 +79,7 @@ Cree una temática con el Editor de temáticas para personalizar la presentació
    ```
 
 1. Para mejorar el aspecto y el comportamiento, incluya la biblioteca de cliente creada en el archivo del diseño (errorOnRight.jsp).
-1. Abra el cuadro de diálogo de edición del campo y seleccione la pestaña **Estilo**. En el cuadro desplegable **Configuración del diseño del campo**, seleccione el diseño recién creado y haga clic en **Aceptar**.
+1. Abra el cuadro de diálogo de edición del campo y seleccione **Estilo** pestaña. En el cuadro desplegable **Configuración del diseño del campo**, seleccione el diseño recién creado y haga clic en **Aceptar**.
 
 El paquete ErrorOnRight.zip contiene código para mostrar mensajes de error en el lado derecho de los campos.
 

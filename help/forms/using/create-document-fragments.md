@@ -1,19 +1,15 @@
 ---
 title: '“Tutorial: Crear fragmentos de documento”'
-seo-title: Create document fragments for Interactive Communication
 description: Crear fragmentos de documento para la comunicación interactiva
-seo-description: Create document fragments for Interactive Communication
-uuid: 677d717e-e92e-434e-8266-6fbbf94f3867
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 100%
+source-wordcount: '1674'
+ht-degree: 80%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Este tutorial es un paso en la serie [Crear su primera comunicación interactiva](/help/forms/using/create-your-first-interactive-communication.md). Se recomienda seguir la serie en orden cronológico para comprender, realizar y mostrar el caso de uso del tutorial completo.
+Este tutorial es un paso en la serie [Crear su primera comunicación interactiva](/help/forms/using/create-your-first-interactive-communication.md). El Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 Los fragmentos de documento son componentes reutilizables de una correspondencia que se utilizan para componer una comunicación interactiva. Los fragmentos del documento son de los siguientes tipos:
 
@@ -29,7 +25,7 @@ Los fragmentos de documento son componentes reutilizables de una correspondencia
 * Lista: es un grupo de fragmentos de documento, que incluyen texto, listas, condiciones e imágenes.
 * Condición: las condiciones permiten definir qué contenido se incluye en la comunicación interactiva en función de los datos recibidos del modelo de datos de formulario.
 
-Este tutorial le guiará por los pasos para crear varios fragmentos de documento de texto basados en la anatomía proporcionada en la sección [Planificar la comunicación interactiva](/help/forms/using/planning-interactive-communications.md). Al final de este tutorial, podrá:
+Este tutorial le guiará por los pasos para crear varios fragmentos de documento de texto basados en la anatomía proporcionada en la sección [Planificar la comunicación interactiva](/help/forms/using/planning-interactive-communications.md). Al final de este tutorial, debería poder hacer lo siguiente:
 
 * Crear fragmentos de documento
 * Crear variables
@@ -61,7 +57,7 @@ El fragmento de documento Detalles de la factura incluye los siguientes campos:
 | Fecha de la factura | IU del Agente |
 | Su plan | Modelo de datos de formulario |
 
-Ejecute los siguientes pasos para crear variables para campos con la interfaz de usuario del agente como fuente de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
+Para crear variables para campos con la interfaz de usuario del agente como fuente de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento, haga lo siguiente:
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
 
@@ -80,7 +76,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
 1. En la sección **Crear variable**:
 
    1. Escriba **Invoicenumber** como nombre de la variable.
-   1. Seleccione **Cadena** como tipo.
+   1. Seleccionar **Cadena** como el tipo.
    1. Pulse **Crear**.
 
    ![Crear variable de tipo Cadena](assets/variable_create_string_new.png)
@@ -109,7 +105,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Haga clic en **Guardar** para crear el fragmento de documento Detalles de la factura.
+1. Clic **Guardar** para crear el fragmento de documento Detalles de la factura.
 
 ## Paso 2: Crear fragmento de documento Detalles del cliente {#step-create-customer-details-text-document-fragment}
 
@@ -126,7 +122,7 @@ El fragmento de documento Detalles del cliente incluye los siguientes campos:
 | Número de relación | Modelo de datos de formulario |
 | Número de conexiones | IU del Agente |
 
-Ejecute los siguientes pasos para crear variables para campos con la interfaz de usuario del agente como fuente de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
+Para crear variables para campos con la interfaz de usuario del agente como fuente de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento, haga lo siguiente:
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
 1. Seleccione **Crear** > **Texto**.
@@ -144,14 +140,13 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
 1. En la sección **Crear variable**:
 
    1. Escriba **Placesupply** como nombre de la variable.
-   1. Seleccione **Cadena** como tipo.
+   1. Seleccionar **Cadena** como el tipo.
    1. Pulse **Crear**.
 
    Repita los pasos 4 y 5 para crear las siguientes variables:
 
    * Código de estado: Tipo Número
    * Numberconnections: Tipo Número
-
 
 1. Seleccione la pestaña **Objetos del modelo de datos**, coloque el cursor en el panel derecho y haga doble clic en la propiedad **cliente** > **nombre**.
 1. Pulse Entrar para mover el cursor a la línea siguiente y haga doble clic en la propiedad **cliente** > **dirección**.
@@ -175,7 +170,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
 
    ![Detalles del cliente](assets/customer_details_df2_new.png)
 
-1. Haga clic en **Guardar** para crear el fragmento de documento de texto Detalles del cliente.
+1. Clic **Guardar** para crear el fragmento de documento Detalles del cliente.
 
 ## Paso 3: Crear fragmento de documento Resumen de la factura {#step-create-bill-summary-text-document-fragment}
 
@@ -190,7 +185,7 @@ El fragmento de documento Resumen de la factura incluye los siguientes campos:
 | Importe vencido | IU del Agente |
 | Fecha de vencimiento | IU del Agente |
 
-Ejecute los siguientes pasos para crear variables para campos con la interfaz de usuario del agente como fuente de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
+Para crear variables para campos con la interfaz de usuario del agente como fuente de datos, crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento, haga lo siguiente:
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
 1. Seleccione **Crear** > **Texto**.
@@ -218,7 +213,6 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    * Amountdue: Tipo Número
    * Duedate: Tipo Fecha
 
-
 1. Cree texto estático para los siguientes campos mediante el panel derecho:
 
    * Saldo anterior
@@ -227,7 +221,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
    * Cargos del período de facturación actual
    * Importe vencido
    * Fecha de vencimiento
-   * Los cargos por demora en el pago después de la Fecha de Vencimiento son de 20 dólares.
+   * Cargos por pago atrasado después de la fecha de vencimiento es de $ 20
 
    ![Texto estático de Resumen de la factura](assets/bill_summary_static_new.png)
 
@@ -240,7 +234,7 @@ Ejecute los siguientes pasos para crear variables para campos con la interfaz de
 
    ![Resumen de la factura](assets/bill_summary_static_variables_new.png)
 
-1. Haga clic en **Guardar** para crear el fragmento de documento de texto Detalles del cliente.
+1. Clic **Guardar** para crear el fragmento de documento Detalles del cliente.
 
 ## Paso 4: Crear fragmento de documento Resumen de gastos {#step-create-summary-of-charges-text-document-fragment}
 
@@ -258,7 +252,7 @@ El fragmento de documento Resumen de gastos incluye los siguientes campos:
 | Cargos totales | Modelo de datos de formulario |
 | TOTAL A PAGAR | Modelo de datos de formulario |
 
-Ejecute los siguientes pasos para crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento:
+Para crear texto estático y utilizar elementos del modelo de datos de formulario en el fragmento de documento, haga lo siguiente:
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
 1. Seleccione **Crear** > **Texto**.
@@ -311,4 +305,4 @@ Ejecute los siguientes pasos para crear texto estático y utilizar elementos del
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Haga clic en **Guardar** para crear el fragmento de documento Resumen de gastos.
+1. Clic **Guardar** para crear el fragmento de documento Resumen de gastos.

@@ -2,9 +2,9 @@
 title: AEM Notas de la versión de Content and Commerce 2019
 description: AEM Notas de la versión de Content and Commerce 2019
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '990'
 ht-degree: 10%
 
 ---
@@ -33,9 +33,9 @@ ht-degree: 10%
 
 * Los selectores de categorías/productos se mejoraron para respetar la vista de tienda de Adobe Commerce especificada en una configuración de varias tiendas.
 
-* Componentes basados en React disponibles como paquete npm. Esto permite a los desarrolladores utilizar el paquete de componentes de React como dependencia para un nuevo proyecto de React para permitir la personalización de componentes existentes o desarrollar nuevos componentes basados en React.
+* Los componentes basados en React están disponibles como paquete npm. Esto permite a los desarrolladores utilizar el paquete de componentes de React como dependencia para un nuevo proyecto de React para permitir la personalización de componentes existentes o desarrollar nuevos componentes basados en React.
 
-* Personalización de consultas de GraphQL simplificada. Esto permite a los desarrolladores personalizar los componentes principales del CIF con menos código.
+* La personalización de consultas de GraphQL está simplificada. Esto permite a los desarrolladores personalizar los componentes principales del CIF con menos código.
 
 ## Fecha de versión: octubre de 2019
 
@@ -47,11 +47,11 @@ ht-degree: 10%
 
 ### Novedades {#what-is-new-october}
 
-* Plantillas totalmente legibles para la página de detalles del producto y la página de lista del producto. Los autores ahora pueden crear nuevas plantillas y arrastrar y soltar componentes de lista de productos y detalles de productos en estas plantillas. Además de añadir otros componentes, los autores ahora pueden cambiar el diseño de estas plantillas también, lo que les da una libertad ilimitada para crear experiencias increíbles que combinen contenido de marketing y comercio.
+* Plantillas totalmente legibles para la página de detalles del producto y la página de lista del producto. Los autores ahora pueden crear plantillas y arrastrar y soltar componentes de lista de productos y detalles de productos en estas plantillas. Además de añadir otros componentes, los autores ahora pueden cambiar el diseño de estas plantillas también, lo que les da una libertad ilimitada para crear experiencias increíbles que combinen contenido de marketing y comercio.
 
-* Se han mejorado todos los componentes principales del CIF compatibles con el autor para que sean compatibles [AEM Sistema de estilos de](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Se han proporcionado estilos de ejemplo para el componente de lista de productos.
+* Se han mejorado todos los componentes principales del CIF compatibles con el autor para que sean compatibles [AEM Sistema de estilos de](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Se han proporcionado estilos de ejemplo para el componente de lista de productos.
 
-* Componentes del lado del cliente basados en React para la administración de cuentas. Esta versión admite las siguientes funcionalidades: Inicio de sesión, Olvidé la contraseña y Crear cuenta.
+* Componentes del lado del cliente basados en React para la administración de cuentas. Esta versión admite las siguientes funcionalidades: Inicio de sesión, Olvidé la contraseña y Crear una cuenta.
 
 ### Qué se ha mejorado {#what-is-improved-october}
 
@@ -69,13 +69,13 @@ ht-degree: 10%
 
 ### Novedades {#what-is-new-september}
 
-* Función de varias plantillas para permitir a los autores enriquecer una página de detalles de producto o una página de lista de productos específica. Los autores pueden crear fácilmente una página de detalles de producto personalizada o una página de lista de productos y utilizar el selector de productos o categorías para asignar la página personalizada a un producto o productos o categorías específicos.
+* La función de varias plantillas permite a los autores enriquecer una página de detalles de producto o una página de lista de productos específica. Los autores pueden crear fácilmente una página de detalles de producto personalizada o una página de lista de productos y utilizar el selector de productos o categorías para asignar la página personalizada a un producto o categoría específicos.
 
 * AEM Enlace de varios catálogos para permitir que los autores enlacen varios catálogos en la consola de producto de la. Los autores también pueden editar y ver las propiedades de enlace del catálogo después de crear el enlace.
 
 * React-based client-side Checkout and Mini Cart con GraphQL para ofrecer un recorrido de compra básico completo.
 
-* El componente Pago y envío incluye formularios de dirección, selección de pago y selección de método de envío.
+* El componente Pago y envío incluye formularios de dirección, selección de pago y selección de métodos de envío.
 
 ### Qué se ha mejorado {#what-is-improved-september}
 
@@ -91,7 +91,7 @@ ht-degree: 10%
 
 ### Novedades {#what-is-new-august}
 
-* La incrustación del conector CIF en el tipo de archivo CIF se ha hecho opcional para proporcionar a los desarrolladores más flexibilidad.
+* La incrustación del conector del CIF en el tipo de archivo del CIF se convierte en opcional para proporcionar a los desarrolladores más flexibilidad.
 
 * Los componentes del CIF se separan del estilo CSS específico de &quot;Venia&quot; para permitir que los desarrolladores apliquen el estilo CSS de su elección.
 
@@ -99,7 +99,7 @@ ht-degree: 10%
 
 * El almacenamiento en caché de GraphQL está habilitado para determinadas consultas de GraphQL a través de la GET HTTP para reducir el tiempo de respuesta.
 
-* AEM Vista de descripción del producto habilitada en la consola Productos de.
+* AEM La vista de descripción del producto está habilitada en la consola Productos de.
 
 * Commerce Teaser amplía el componente Teaser de WCM para permitir a los autores añadir también campos de CTA a una página de detalles de producto o a una página de lista de productos.
 
@@ -127,9 +127,9 @@ ht-degree: 10%
 
 * Representación del atributo de precio en el lado del cliente en los componentes Detalle del producto y Lista del producto para admitir la representación de atributos dinámicos.
 
-* Carrusel de productos del lado del servidor para mostrar la lista de productos destacados en un estilo de carrusel.
+* Carrusel de productos del lado del servidor para mostrar una lista de los productos destacados en un estilo de carrusel.
 
-* AEM Lista de categorías destacadas del lado del servidor para mostrar la lista de categorías en una página de la.
+* AEM Lista de categorías destacadas del lado del servidor para mostrar una lista de categorías en una página de la página de la.
 
 ### Qué se ha mejorado {#what-is-improved-july}
 

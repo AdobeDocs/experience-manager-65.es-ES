@@ -1,25 +1,21 @@
 ---
-title: Configurar valores de tiempo de espera para usarlos con extensiones de Acrobat Reader DC
-seo-title: Setting timeout values for use with Acrobat Reader DC extensions
+title: Configuración de valores de tiempo de espera para utilizarlos con extensiones de Acrobat Reader DC
 description: Obtenga información sobre cómo establecer valores de tiempo de espera para utilizarlos con extensiones de Acrobat Reader DC.
-seo-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.
-uuid: d6d072a0-0a30-417a-98b1-df8b4ff8f911
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
 exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 11%
+source-wordcount: '175'
+ht-degree: 0%
 
 ---
 
-# Configurar valores de tiempo de espera para usarlos con extensiones de Acrobat Reader DC  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+# Configuración de valores de tiempo de espera para utilizarlos con extensiones de Acrobat Reader DC  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
-Cuando trabaje con muchos archivos de PDF en extensiones de Acrobat Reader DC, asegúrese de que los siguientes valores de tiempo de espera estén correctamente configurados para evitar que los trabajos agoten el tiempo de espera y produzcan errores:
+Cuando trabaje con muchos archivos de PDF en Extensiones de Acrobat Reader DC, asegúrese de que los siguientes valores de tiempo de espera estén correctamente configurados para evitar que los trabajos agoten el tiempo de espera y produzcan errores:
 
 **Tiempo de espera de eliminación de documentos**
 

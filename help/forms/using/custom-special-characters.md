@@ -1,20 +1,16 @@
 ---
 title: Caracteres especiales personalizados en la Administración de correspondencia
-seo-title: Custom special characters in Correspondence Management
 description: Aprenda a agregar caracteres especiales personalizados en Administración de correspondencia.
-seo-description: Learn how to add custom special characters in Correspondence Management.
-uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '652'
+ht-degree: 63%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 100%
 
 ## Información general {#overview}
 
-Administración de correspondencia tiene soporte integrado y predeterminado para 210 caracteres especiales que puede insertar en cartas con facilidad.
+Administración de correspondencia tiene compatibilidad predeterminada integrada con 210 caracteres especiales que puede insertar en cartas con facilidad.
 
 Por ejemplo, puede insertar los siguientes caracteres especiales:
 
@@ -44,7 +40,7 @@ El administrador puede agregar compatibilidad para más caracteres especiales pe
 Siga estos pasos para agregar compatibilidad con caracteres especiales personalizados:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta llamada **[!UICONTROL specialcharacters]** con una ruta/estructura similar a la carpeta de caracteres especiales (ubicada en la carpeta textEditorConfig en libs):
+1. En la carpeta de aplicaciones, cree una carpeta llamada **[!UICONTROL specialcharacters]** con una ruta/estructura similar a la carpeta specialcharacters (en la carpeta textEditorConfig en libs):
 
    1. Haga clic con el botón derecho en la carpeta **specialcharacters** en la siguiente ruta y seleccione **Nodo de superposición**:
 
@@ -60,14 +56,15 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
 
       >[!NOTE]
       >
-      >No realice cambios en la rama /libs. Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
+      >No cambie la rama /libs. Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
       >
       >
       >
       >    * Actualice en su instancia
       >    * Aplique una corrección
       >    * Instale un paquete de características
-
+      >
+      >
 
    1. Haga clic en **Aceptar** y luego en **Guardar todo**. La carpeta de caracteres especiales se creará en la ruta de acceso especificada.
 
@@ -86,7 +83,7 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
 
 1. Actualice la página Editor de texto\Crear interfaz de usuario de correspondencia. El nodo que ha agregado es el último de la lista de caracteres especiales de la interfaz de usuario.
 1. Haga clic en **Guardar todo**.
-1. Realice los cambios necesarios en los caracteres especiales:
+1. Cambios en los caracteres especiales según sea necesario:
 
 <table>
  <tbody>
@@ -100,7 +97,7 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
     <ol>
      <li>Agregue un nodo secundario en “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” con propiedades obligatorias.</li>
      <li>Haga clic en Guardar todo</li>
-     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.</li>
+     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para poder ver los cambios.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -110,17 +107,17 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
      <li>Superponga el nodo que desea actualizar como se explica más arriba y compruebe las etiquetas y las clases.</li>
      <li>Cambie cualquier valor, como caption, value, endValue y multipleCaption. </li>
      <li>Haga clic en Guardar todo. </li>
-     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.</li>
+     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para poder ver los cambios.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Ocultar un caracter especial</td>
+   <td>Ocultar un carácter especial</td>
    <td>
     <ol>
      <li>Superponga el nodo que desea ocultar en “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”</li>
      <li>Agregue la propiedad sling:hideResource (booleano) al nodo (debajo de las aplicaciones) para que ocultarlo. </li>
      <li>Haga clic en Guardar todo. </li>
-     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.<br /> </li>
+     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para poder ver los cambios.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -128,9 +125,9 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
    <td>
     <ol>
      <li>Agregue la propiedad “sling:hideChildren (String or String[])” a “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”. </li>
-     <li>Agregue nombres de nodo (caracteres especiales que se ocultarán) como valores para la propiedad “sling:hideChildren” property. </li>
+     <li>Agregue nombres de nodo (caracteres especiales que se ocultarán) como valores para la propiedad "sling:hideChildren". </li>
      <li>Haga clic en Guardar todo. </li>
-     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.<br /> </li>
+     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para poder ver los cambios.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -138,10 +135,10 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
    <td>
     <ol>
      <li>Agregue un nodo secundario en “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” con propiedades obligatorias. </li>
-     <li>Agregue la propiedad “sling:orderBefore (String)” al nodo secundario recién creado. </li>
-     <li>Agregue el nombre del nodo como valor antes del cual se mostrará el carácter especial recién agregado. </li>
+     <li>Agregue la propiedad "sling:orderBefore (String)" al nodo secundario recién creado. </li>
+     <li>Agregue el nombre del nodo como el valor antes del cual se mostrará el carácter especial recién agregado. </li>
      <li>Haga clic en Guardar todo. </li>
-     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para ver los cambios.<br /> </li>
+     <li>Actualice el Editor de texto\Crear interfaz de usuario de correspondencia para poder ver los cambios.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

@@ -1,21 +1,17 @@
 ---
 title: Configurar correo electrónico
-seo-title: Configuring Email
 description: Configuración de correo electrónico para comunidades
-seo-description: Email configuration for Communities
-uuid: e8422cc2-1594-43b0-b587-82825636cec1
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 4%
+source-wordcount: '815'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +22,7 @@ AEM Communities utiliza el correo electrónico para:
 * [Notificaciones de Communities](notifications.md)
 * [Suscripciones de Communities](subscriptions.md)
 
-De forma predeterminada, la función de correo electrónico no funciona porque requiere la especificación de un servidor SMTP y un usuario SMTP.
+De forma predeterminada, la función de correo electrónico no funciona, ya que requiere la especificación de un servidor SMTP y un usuario SMTP.
 
 >[!CAUTION]
 >
@@ -51,35 +47,35 @@ Por ejemplo (rellenado con valores solo con fines ilustrativos):
 
 * **[!UICONTROL Nombre de host del servidor SMTP]**
 
-   *(Obligatorio)* Servidor SMTP que se va a utilizar.
+  *(Obligatorio)* Servidor SMTP que se va a utilizar.
 
 * **[!UICONTROL Puerto del servidor SMTP]**
 
-   *(Obligatorio)* El puerto del servidor SMTP debe ser 25 o superior.
+  *(Obligatorio)* El puerto del servidor SMTP debe ser 25 o superior.
 
 * **[!UICONTROL usuario de SMTP]**
 
-   *(Obligatorio)* El usuario SMTP.
+  *(Obligatorio)* El usuario SMTP.
 
 * **[!UICONTROL Contraseña SMTP]**
 
-   *(Obligatorio)* La contraseña del usuario SMTP.
+  *(Obligatorio)* La contraseña del usuario SMTP.
 
 * **[!UICONTROL Dirección &quot;De&quot;]**
 
-   Dejar vacío
+  Dejar vacío
 * **[!UICONTROL SMTP: usar SSL]**
 
-   Si se selecciona, enviará un correo electrónico seguro. Asegúrese de que el puerto está establecido en 465 o según sea necesario para el servidor SMTP.
+  Si se selecciona, envía un correo electrónico seguro. Asegúrese de que el puerto está establecido en 465 o como se requiere para un servidor SMTP.
 * **[!UICONTROL Depurar correo electrónico]**
 
-   Si se selecciona esta opción, se habilita el registro de interacciones del servidor SMTP.
+  Si se selecciona, se habilita el registro de interacciones del servidor SMTP.
 
 ## Configuración de correo electrónico de AEM Communities {#aem-communities-email-configuration}
 
 Una vez que [servicio de correo predeterminado](#default-mail-service-configuration) está configurada, las dos instancias existentes del `AEM Communities Email Reply Configuration` La configuración OSGi, incluida en la versión, se vuelve funcional.
 
-Solo es necesario configurar más la instancia de las suscripciones al permitir la respuesta por correo electrónico.
+Solo la instancia de las suscripciones debe configurarse aún más al permitir la respuesta por correo electrónico.
 
 1. [Correo electrónico](#configuration-for-notifications) instancia:
 
@@ -103,13 +99,13 @@ Para llegar a las instancias de configuración de correo electrónico de Communi
 
 La instancia de `AEM Communities Email Reply Configuration` La configuración OSGi con el nombre de correo electrónico es la función de notificaciones. Esta función no incluye respuesta de correo electrónico.
 
-Esta configuración no debe modificarse.
+No modifique esta configuración.
 
 * Busque el `AEM Communities Email Reply Configuration`.
 * Seleccione el icono de edición.
-* Compruebe el **Nombre** es `email`.
+* Compruebe que la variable **Nombre** es `email`.
 
-* Verificar **Crear entrada a partir del correo electrónico de respuesta** es `unchecked`.
+* Compruebe que **Crear entrada a partir del correo electrónico de respuesta** es `unchecked`.
 
 ![configure-email-reply](assets/configure-email-reply.png)
 
@@ -119,50 +115,50 @@ Para las suscripciones de Communities, es posible habilitar o deshabilitar la ca
 
 * Busque el `AEM Communities Email Reply Configuration`.
 * Seleccione el icono de edición.
-* Compruebe el **Nombre** es `subscriptions-email`.
+* Compruebe que la variable **Nombre** es `subscriptions-email`.
 
-   ![configure-email-subscription](assets/configure-email-subscriptions.png)
+  ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Nombre]**
 
-   *(Obligatorio)* `subscriptions-email`. No Editar.
+  *(Obligatorio)* `subscriptions-email`. No Editar.
 
 * **[!UICONTROL Crear entrada a partir del correo electrónico de respuesta]**
 
-   Si se selecciona, el destinatario del correo electrónico de suscripción puede publicar contenido enviando una respuesta. La opción predeterminada está activada.
+  Si se selecciona, el destinatario de un correo electrónico de suscripción puede publicar contenido enviando una respuesta. La opción predeterminada está activada.
 * **[!UICONTROL Añadir ID de seguimiento al encabezado]**
 
-   El valor predeterminado es `Reply-To`.
+  El valor predeterminado es `Reply-To`.
 
 * **[!UICONTROL Longitud máxima del asunto]**
 
-   Si se agrega un ID de rastreador a la línea de asunto, esta es la longitud máxima del asunto, excluido el ID rastreado, después de la cual se recortará. Tenga en cuenta que esto debe ser lo más pequeño posible para evitar que se pierda la información de ID rastreados. El valor predeterminado es 200.
+  Si se añade un ID de rastreador a la línea de asunto, esta es la longitud máxima del asunto, excluido el ID rastreado, tras la cual se recorta. Debe ser lo más pequeño posible para evitar que se pierda la información del ID rastreado. El valor predeterminado es 200.
 
 * **[!UICONTROL Dirección de correo electrónico de respuesta]**
 
-   Dirección que se utiliza como dirección de correo electrónico de &quot;Respuesta&quot;. El valor predeterminado es `no-reply@example.com`.
+  Dirección que se utiliza como dirección de correo electrónico de &quot;respuesta&quot;. El valor predeterminado es `no-reply@example.com`.
 
 * **[!UICONTROL Responder a delimitador]**
 
-   Si se añade un ID de rastreador al encabezado Responder a, se utilizará este delimitador. El valor predeterminado es `+` (signo más).
+  Si se añade un ID de rastreador al encabezado Responder a, se utiliza este delimitador. El valor predeterminado es `+` (signo más).
 
 * **[!UICONTROL Prefijo de ID de rastreador en el asunto]**
 
-   Si se añade un ID de rastreador a la línea de asunto, se utilizará este prefijo. El valor predeterminado es `post#`.
+  Si se añade un ID de rastreador a la línea de asunto, se utiliza este prefijo. El valor predeterminado es `post#`.
 
 * **[!UICONTROL Prefijo de ID de rastreador en el cuerpo del mensaje]**
 
-   Si se añade un ID de rastreador al cuerpo del mensaje, se utilizará este prefijo. El valor predeterminado es `Please do not remove this:`.
+  Si se añade un ID de rastreador al cuerpo del mensaje, se utiliza este prefijo. El valor predeterminado es `Please do not remove this:`.
 
-* **[!UICONTROL Correo electrónico como HTML]**: si se selecciona, el tipo de contenido de correo electrónico se establecerá como `"text/html;charset=utf-8"`. La opción predeterminada está activada.
+* **[!UICONTROL Correo electrónico como HTML]**: si se selecciona, el tipo de contenido de correo electrónico se establece como `"text/html;charset=utf-8"`. La opción predeterminada está activada.
 
 * **[!UICONTROL Nombre de usuario predeterminado]**
 
-   Este nombre se utilizará para los usuarios sin nombre. El valor predeterminado es `no-reply@example.com`.
+  Este nombre se utiliza para los usuarios sin nombre. El valor predeterminado es `no-reply@example.com`.
 
 * **[!UICONTROL Ruta raíz de plantillas]**
 
-   El correo electrónico se genera mediante la plantilla almacenada en esta ruta raíz. El valor predeterminado es `/etc/community/templates/subscriptions-email`.
+  El correo electrónico se crea mediante una plantilla almacenada en esta ruta raíz. El valor predeterminado es `/etc/community/templates/subscriptions-email`.
 
 ## Configurar el importador de encuestas {#configure-polling-importer}
 
@@ -172,36 +168,36 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 * Inicie sesión en el editor principal con privilegios de administrador y vaya a la consola del importador de encuestas:
 
-   Por ejemplo, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+  Por ejemplo, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
 * Seleccionar **[!UICONTROL Añadir]**
 
-   ![importador de encuestas](assets/polling-importer.png)
+  ![importador de encuestas](assets/polling-importer.png)
 
 * **[!UICONTROL Tipo]**
 
-   *(Obligatorio)* Tire hacia abajo para seleccionar `POP3 (over SSL)`.
+  *(Obligatorio)* Tire hacia abajo para seleccionar `POP3 (over SSL)`.
 
 * **[!UICONTROL URL]**
 
-   *(Obligatorio)* El servidor de correo saliente. Por ejemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Obligatorio)* El servidor de correo saliente. Por ejemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
 * **[!UICONTROL Importar a ruta]**&amp;ast;
 
-   *(Obligatorio)* Configure como. `/content/usergenerated/mailFolder/postEmails`
+  *(Obligatorio)* Configure como. `/content/usergenerated/mailFolder/postEmails`
 navegando hasta la `postEmails`carpeta y seleccione **OK**.
 
 * **[!UICONTROL Actualizar intervalo en segundos]**
 
-   *(Opcional)* El servidor de correo configurado para el servicio de correo predeterminado puede tener requisitos relativos al valor del intervalo de actualización. Por ejemplo, Gmail puede requerir un intervalo de `300`.
+  *(Opcional)* El servidor de correo configurado para el servicio de correo predeterminado puede tener requisitos relativos al valor del intervalo de actualización. Por ejemplo, Gmail puede requerir un intervalo de `300`.
 
 * **[!UICONTROL Inicio de sesión]**
 
-   *(Opcional)*
+  *(Opcional)*
 
 * **[!UICONTROL Contraseña]**
 
-   *(Opcional)*
+  *(Opcional)*
 
 * Seleccionar **[!UICONTROL OK]**.
 

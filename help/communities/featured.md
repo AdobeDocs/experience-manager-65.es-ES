@@ -1,18 +1,14 @@
 ---
 title: Función Contenido destacado
-seo-title: Featured Content Feature
 description: La función Contenido destacado permite a los visitantes del sitio conectados resaltar contenido
-seo-description: The Featured Content feature lets signed-in site visitors highlight content
-uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 5%
 
 ---
@@ -44,17 +40,17 @@ Para agregar un `Featured Content` a una página en modo de autor, utilice el na
 
 * `Communities / Featured Content`
 
-y arrástrelo a su lugar en una página en la que debería aparecer el contenido destacado.
+Y arrástrelo a su lugar en una página donde debería aparecer el contenido destacado.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](essentials-featured.md#essentials-for-client-side) están incluidos, así es como se `Featured Content` el componente aparecerá:
+Si la variable [bibliotecas requeridas del lado del cliente](essentials-featured.md#essentials-for-client-side) están incluidos, así es como se `Featured Content` el componente aparece:
 
 ![contenido destacado](assets/featuredcontent.png)
 
 ## Configuración del contenido destacado {#configuring-featured-content}
 
-Seleccione el colocado `Featured Content` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Featured Content` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
@@ -66,15 +62,15 @@ En el **[!UICONTROL Configuración]** pestaña, identifique el contenido que se 
 
 * **[!UICONTROL Nombre para mostrar]**
 
-   Título de la lista de contenido destacado. Por ejemplo `Featured Questions` o `Featured Ideas`. El valor predeterminado es `Featured Content` si se deja vacío.
+  Título de la lista de contenido destacado. Por ejemplo, `Featured Questions` o `Featured Ideas`. El valor predeterminado es `Featured Content` si se deja vacío.
 
 * **[!UICONTROL Ubicación del contenido destacado]**
 
-   *(Obligatorio)* Vaya a la página que contiene el contenido que puede ser útil (los componentes de esa página deben configurarse para Permitir contenido destacado). Por ejemplo, `/content/sites/engage/en/forum`.
+  *(Obligatorio)* Vaya a la página que contiene el contenido que se puede mostrar (los componentes de esa página deben configurarse para Permitir contenido destacado). Por ejemplo, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Límite de visualización]**
 
-   Número máximo de contenido destacado que se va a mostrar. El valor predeterminado es 5.
+  Número máximo de contenido destacado que se va a mostrar. El valor predeterminado es 5.
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 
@@ -84,13 +80,13 @@ Cuando un moderador ve el contenido publicado, tiene acceso a las marcas de mode
 
 ![site-visitor-experience](assets/site-visitor-experience.png)
 
-Una vez marcada como característica, la marca de moderación se convierte en `Unfeature`.
+Una vez marcada como característica, la marca de moderación pasa a llamarse `Unfeature`.
 
-La página que contiene el `Featured Content` componente, ahora incluirá esta publicación.
+La página que contiene el `Featured Content` componente, ahora incluye esta publicación.
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-`Read More` es un vínculo a la publicación real.
+El `Read More` vínculos a la publicación real.
 
 ## Información adicional {#additional-information}
 

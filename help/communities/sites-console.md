@@ -1,20 +1,16 @@
 ---
 title: Consola Sitios de comunidades
-seo-title: Communities Sites Console
 description: Cómo acceder a la consola Sitios de Communities
-seo-description: How to access the Communities Sites console
-uuid: 74134281-244c-40da-a941-7f2f3e706d4b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3082'
 ht-degree: 4%
 
 ---
@@ -28,11 +24,11 @@ La consola Sitios de Communities proporciona acceso a:
 * Administración del sitio
 * [Creación y edición de grupos anidados](/help/communities/groups.md) (subcomunidades)
 
-Consulte [Introducción a AEM Communities](/help/communities/getting-started.md) para experimentar la rapidez con la que se puede crear un sitio de comunidad en el entorno de creación, así como cómo crear grupos de comunidad a partir de los entornos de creación y publicación.
+Consulte [Introducción a AEM Communities](/help/communities/getting-started.md) dónde puede experimentar la rapidez con la que se puede crear un sitio de comunidad en el entorno de creación y cómo crear grupos de comunidad a partir de los entornos de creación y publicación.
 
 >[!NOTE]
 >
->Los principales menús de Communities para la creación de [sitios de la comunidad](/help/communities/sites-console.md), [plantillas de sitio de comunidad](/help/communities/sites.md), [plantillas de grupo de comunidad](/help/communities/tools-groups.md) y [funciones de comunidad](/help/communities/functions.md) solo se utilizan en el entorno de creación.
+>Los principales menús de Communities para la creación de [sitios de la comunidad](/help/communities/sites-console.md), [plantillas de sitio de comunidad](/help/communities/sites.md), [plantillas de grupo de comunidad](/help/communities/tools-groups.md), y [funciones de comunidad](/help/communities/functions.md) solo se utilizan en el entorno de creación.
 
 ## Requisitos previos {#prerequisites}
 
@@ -59,17 +55,17 @@ En el entorno de creación, para llegar a la consola Sitios de Communities:
 
 La consola Sitios de comunidades muestra todos los sitios de la comunidad existentes. Desde esta consola, se pueden crear, editar, administrar y eliminar sitios de la comunidad.
 
-Para crear un nuevo sitio de la comunidad, seleccione la **Crear** icono.
+Para crear un sitio de la comunidad, seleccione la **Crear** icono.
 
-Para acceder a un sitio de la comunidad existente con el fin de crear, modificar, publicar, exportar o agregar un grupo anidado, seleccione el icono de carpeta del sitio.
+Para acceder a un sitio de la comunidad existente para crear, modificar, publicar, exportar o agregar un grupo anidado, seleccione el icono de carpeta del sitio.
 
 ## Creación de sitios {#site-creation}
 
 La consola de creación de sitios proporciona un enfoque paso a paso para ensamblar las características del sitio en función de un elemento seleccionado [plantilla del sitio de la comunidad](/help/communities/sites.md) Configuración de y.
 
-Todos los sitios creados incluyen una función de inicio de sesión, ya que los visitantes del sitio deben iniciar sesión antes de poder publicar contenido, enviar mensajes o participar en un grupo. Otras funciones incluidas son perfiles de usuario, mensajería, notificaciones, menú del sitio, búsqueda, temas y marca.
+Todos los sitios creados incluyen una función de inicio de sesión, ya que los visitantes del sitio deben iniciar sesión antes de poder publicar contenido, enviar mensajes o participar en un grupo. Otras funciones incluidas son los perfiles de usuario, los mensajes, las notificaciones, el menú del sitio, la búsqueda, el establecimiento de temas y la marca.
 
-El proceso se inicia seleccionando la variable `Create` situado en la parte superior de la consola Sitios de Communities.
+El proceso se inicia seleccionando la variable `Create` en la parte superior de la consola Sitios de Communities.
 
 El proceso de creación es una serie de pasos presentados como paneles que contienen un conjunto de funciones que se van a configurar (presentadas como subpaneles). Es posible pasar a la sección **Siguiente** paso o **Atrás** Vaya al paso anterior antes de comprometer el sitio en el paso final.
 
@@ -81,46 +77,46 @@ En el panel Plantilla del sitio, se especifican el Título, la Descripción, la 
 
 * **Título del sitio de la comunidad**
 
-   Un título para mostrar para el sitio.
+  Un título para mostrar para el sitio.
 
-   El título aparece en el sitio publicado, así como en la IU de administración del sitio.
+  El título aparece en el sitio publicado y en la interfaz de usuario de administración del sitio.
 
 * **Descripción del sitio de la comunidad**
 
-   Una descripción del sitio.
+  Una descripción del sitio.
 
-   La descripción no aparece en el sitio publicado.
+  La descripción no aparece en el sitio publicado.
 
 * **Raíz del sitio de comunidad**
 
-   Ruta raíz al sitio.
+  Ruta raíz al sitio.
 
-   La raíz predeterminada es `/content/sites`, pero la raíz se puede mover a cualquier ubicación dentro del sitio web.
+  La raíz predeterminada es `/content/sites`, pero la raíz se puede mover a cualquier ubicación dentro del sitio web.
 
 * **Idioma de base del sitio de la comunidad**
 
-   (No tocar para un solo idioma: Inglés) Utilice el menú desplegable para elegir uno *o más* idiomas base de los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se creará un sitio de comunidad para cada idioma agregado y existirá dentro de la misma carpeta del sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contendrá una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
+  (No tocar para un solo idioma: Inglés) Utilice el menú desplegable para elegir uno *o más* idiomas base de los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se crea un sitio de comunidad para cada idioma agregado y existe en la misma carpeta de sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
 
 * **Nombre del sitio de la comunidad**:
 
-   Nombre de la página raíz del sitio que aparece en la dirección URL.
+  Nombre de la página raíz del sitio que aparece en la dirección URL.
 
    * Compruebe el nombre, ya que no se cambia fácilmente después de crear el sitio.
-   * La dirección URL base ( `https://server:port/site root/site name)` se mostrarán debajo de `Community Site Name`.
+   * La dirección URL base ( `https://server:port/site root/site name)` se muestra debajo de `Community Site Name`.
 
    * Para una URL válida, añada un código de idioma base + &quot;.html&quot;
 
-      *Por ejemplo*, `https://localhost:4502/content/sites/mysight/en.html`
+     *Por ejemplo*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * **Plantilla del sitio de comunidad** menú
 
-   Utilice el menú desplegable para elegir un disponible [plantilla del sitio de la comunidad](/help/communities/tools.md).
+  Utilice el menú desplegable para elegir un disponible [plantilla del sitio de la comunidad](/help/communities/tools.md).
 
 * Seleccione **Siguiente**.
 
 ### Paso 2: Diseño {#step-design}
 
-El panel Diseño contiene 2 subpaneles para seleccionar el tema y el titular de la marca:
+El panel Diseño contiene dos subpaneles para seleccionar el tema y el titular de la marca:
 
 #### TEMA DEL SITIO DE LA COMUNIDAD {#community-site-theme}
 
@@ -142,12 +138,12 @@ El tamaño de la imagen debe ser igual de ancho que la visualización esperada d
 
 Al crear o seleccionar una imagen, tenga en cuenta lo siguiente:
 
-* La altura de la imagen se recortará a 120 píxeles medidos desde el borde superior de la imagen.
+* La altura de la imagen se recorta a 120 píxeles medidos desde el borde superior de la imagen.
 * La imagen se fija al borde izquierdo de la ventana del explorador.
 * No se cambia el tamaño de la imagen, de modo que cuando el ancho de la imagen es...
 
-   * Menor que el ancho del explorador, la imagen se repetirá horizontalmente.
-   * En bueno lugar que la anchura del navegador, la imagen aparece recortada.
+   * Menor que el ancho del explorador, la imagen se repite horizontalmente.
+   * Con un ancho mayor que el del explorador, la imagen parece recortada.
 
 * Seleccione **Siguiente**.
 
@@ -180,31 +176,31 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
 
 * **Permitir el registro de usuarios**
 
-   Si se selecciona, los visitantes del sitio pueden convertirse en miembros de la comunidad mediante el registro automático.
+  Si se selecciona, los visitantes del sitio pueden convertirse en miembros de la comunidad mediante el registro automático.
 Si no se selecciona, el sitio de la comunidad es *restringido* y los visitantes del sitio deben estar asignados al grupo de miembros del sitio de la comunidad, realizar una solicitud o recibir una invitación por correo electrónico. Si no se selecciona, no se debe permitir el acceso anónimo.
 Desmarque para un *privado* sitio de la comunidad. La opción predeterminada está activada.
 
 * **Permitir acceso anónimo**
 
-   Si se selecciona, el sitio de la comunidad está *abierto *y cualquier visitante del sitio puede acceder al sitio.
+  Si se selecciona, el sitio de la comunidad es *open* y cualquier visitante del sitio puede acceder al sitio.
 Si no se selecciona, solo los miembros que han iniciado sesión pueden acceder al sitio.
-Desmarque para un sitio *privado *de la comunidad. La opción predeterminada está activada.
+Desmarque para un *privado* sitio de la comunidad. La opción predeterminada está activada.
 
 * **Permitir mensajes**
 
-   Si esta opción está activada, los miembros pueden enviarse mensajes entre sí y al grupo dentro del sitio de la comunidad.
-Si no se selecciona, la mensajería no se configura para la comunidad.
+  Si esta opción está activada, los miembros pueden enviarse mensajes entre sí y al grupo dentro del sitio de la comunidad.
+Si no se selecciona, la mensajería no está configurada para la comunidad.
 El valor predeterminado está desmarcado.
 
 * **Permitir inicios de sesión de redes sociales: Facebook**
 
-   Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. El seleccionado [Configuración de nube de facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
+  Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. El seleccionado [Configuración de nube de facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
 Si no se selecciona, no se muestra ningún inicio de sesión de Facebook.
 Dejar sin marcar para ver un *privado* sitio de la comunidad. El valor predeterminado está desmarcado.
 
 * **Permitir inicios de sesión de redes sociales: Twitter**
 
-   Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Twitter. El seleccionado [Configuración de nube de twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
+  Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Twitter. El seleccionado [configuración de nube de twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
 Si no se selecciona, no se muestra ningún inicio de sesión de Twitter.
 Dejar sin marcar para ver un *privado* sitio de la comunidad. El valor predeterminado está desmarcado.
 
@@ -212,13 +208,13 @@ Dejar sin marcar para ver un *privado* sitio de la comunidad. El valor predeterm
 >
 >**Permitir inicios de sesión sociales**
 >
->Aunque pueden existir configuraciones de Facebook y Twitter de ejemplo y seleccionables, para una [entorno de producción](/help/sites-administering/production-ready.md), es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
+>Aunque pueden existir configuraciones de Twitter y Facebook de muestra que se pueden seleccionar para una [entorno de producción](/help/sites-administering/production-ready.md), es necesario crear aplicaciones de Twitter y Facebook personalizadas. Consulte [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
 
 #### ETIQUETADO {#tagging}
 
 ![etiquetado de sitios](assets/site-tagging.png)
 
-Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando Espacios de nombres de etiquetas previamente definidos a través de la variable [Consola de etiquetado](/help/sites-administering/tags.md#tagging-console).
+Las etiquetas, que se pueden aplicar al contenido de la comunidad, se controlan seleccionando Espacios de nombres de etiqueta definidos anteriormente a través de la variable [Consola de etiquetado](/help/sites-administering/tags.md#tagging-console).
 
 Además, la selección de áreas de nombres de etiquetas para el sitio de la comunidad limita la selección presentada al definir catálogos y recursos.
 
@@ -234,19 +230,19 @@ Encontrar miembros de la comunidad es fácil mediante la búsqueda anticipada.
 
 * **Administradores de la comunidad**
 
-   Empiece a escribir para seleccionar uno o más miembros de la comunidad o grupos de miembros que puedan administrar miembros de la comunidad y grupos de miembros.
+  Empiece a escribir para seleccionar uno o más miembros de la comunidad o grupos de miembros que puedan administrar miembros de la comunidad y grupos de miembros.
 
 * **Moderadores de la comunidad**
 
-   Empiece a escribir para seleccionar uno o varios miembros de la comunidad o grupos de miembros en los que se debe confiar como moderadores del contenido generado por el usuario.
+  Empiece a escribir para seleccionar uno o varios miembros de la comunidad o grupos de miembros en los que se debe confiar como moderadores del contenido generado por el usuario.
 
 * **Miembros privilegiados de la comunidad**
 
-   Empiece a escribir para seleccionar uno o más miembros de la comunidad o grupos de miembros a los que se les dará la capacidad de crear contenido nuevo cuando `Allow Privileged Member` se ha seleccionado para una [función comunitaria](/help/communities/functions.md).
+  Empiece a escribir para seleccionar uno o varios miembros de la comunidad o grupos de miembros a los que se les dará la capacidad de crear contenido cuando `Allow Privileged Member` se ha seleccionado para una [función comunitaria](/help/communities/functions.md).
 
 * **Administradores de la comunidad**
 
-   Empiece a escribir para seleccionar uno o varios administradores del sitio que puedan administrar la estructura del sitio independientemente de otros administradores del sitio y del administrador de la comunidad predeterminado. Pueden crear un grupo en cualquier nivel de la jerarquía y convertirse en el administrador predeterminado de los grupos anidados (pero más tarde se pueden eliminar de la función de administrador de los grupos anidados).
+  Empiece a escribir para seleccionar uno o varios administradores del sitio que puedan administrar la estructura del sitio independientemente de otros administradores del sitio y del administrador de la comunidad predeterminado. Pueden crear grupos en cualquier nivel de la jerarquía y convertirse en el administrador predeterminado de los grupos anidados (pero más tarde se pueden eliminar de la función de administrador de los grupos anidados).
 
 #### MODERACIÓN {#moderation}
 
@@ -256,11 +252,11 @@ La configuración global para moderar el contenido generado por el usuario (UGC)
 
 * **Contenido con moderación previa**
 
-   Si se selecciona, el contenido publicado en la comunidad no aparecerá hasta que lo apruebe un moderador. El valor predeterminado está desmarcado. Para obtener más información, consulte [Moderar contenido de la comunidad](/help/communities/moderate-ugc.md#premoderation).
+  Si se selecciona, el contenido publicado en la comunidad no aparece hasta que lo apruebe un moderador. El valor predeterminado está desmarcado. Para obtener más información, consulte [Moderar contenido de la comunidad](/help/communities/moderate-ugc.md#premoderation).
 
 * **Umbral de indicación antes de ocultar el contenido**
 
-   Si es bueno que 0, el número de veces que se debe marcar un tema o una publicación antes de ocultarlo de la vista pública. Si se establece en -1, el tema o la publicación marcados nunca se ocultarán de la vista pública. El valor predeterminado es 5.
+  Si es mayor que 0, el número de veces que se debe marcar un tema o una publicación antes de ocultarlo de la vista pública. Si se establece en -1, el tema o la publicación marcados nunca se ocultarán de la vista pública. El valor predeterminado es 5.
 
 #### ANALYTICS {#analytics}
 
@@ -268,15 +264,15 @@ La configuración global para moderar el contenido generado por el usuario (UGC)
 
 * **Activar Analytics**
 
-   Solo está disponible cuando Adobe Analytics se ha [configurado](/help/communities/analytics.md) para las funciones de Communities.
+  Solo está disponible cuando Adobe Analytics se ha [configurado](/help/communities/analytics.md) para las funciones de Communities.
 El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú de selección adicional:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
 * **Referencia de la estructura de configuración de la nube**
 
-   En el menú desplegable, seleccione el marco del servicio de nube de Analytics configurado para este sitio de la comunidad.
-   `Communities` es el ejemplo de módulo de [Configuración de Analytics para funciones de Communities](/help/communities/analytics.md#aem-analytics-framework-configuration) documentación.
+  En el menú desplegable, seleccione el marco de servicio de Analytics Cloud configurado para este sitio de la comunidad.
+  `Communities` es el ejemplo de módulo de [Configuración de Analytics para funciones de Communities](/help/communities/analytics.md#aem-analytics-framework-configuration) documentación.
 
 #### TRADUCCIÓN {#translation}
 
@@ -284,37 +280,37 @@ El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú
 
 * **Permitir traducción automática**
 
-   Cuando se selecciona (la opción predeterminada está desactivada), la traducción automática está habilitada para UGC dentro del sitio. Esto no afecta a ningún otro contenido, como el contenido de la página, aunque el sitio esté configurado como sitio multilingüe. Consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md) para obtener información sobre la configuración de un servicio de traducción con licencia para AEM Communities. Consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) para obtener una descripción general completa.
+  Cuando se selecciona (la opción predeterminada está desactivada), la traducción automática está habilitada para UGC dentro del sitio. Esto no afecta a ningún otro contenido, como el contenido de la página, aunque el sitio esté configurado como multilingüe. Consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md) para obtener información sobre la configuración de un servicio de traducción con licencia para AEM Communities. Consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) para obtener una descripción general completa.
 
 ![allow-machine-translation](assets/allow-machine-translation.png)
 
 * **Activar la traducción automática para los idiomas seleccionados**
 
-   Los idiomas habilitados para la traducción automática tienen de forma predeterminada la configuración del sistema especificada por el [configuración de integración de traducción](/help/communities/translate-ugc.md#translation-integration-configuration). Esta configuración predeterminada se puede sobrescribir para este sitio eliminando los valores predeterminados o seleccionando otros idiomas en el menú desplegable.
+  Los idiomas habilitados para la traducción automática tienen de forma predeterminada la configuración del sistema especificada por el [configuración de integración de traducción](/help/communities/translate-ugc.md#translation-integration-configuration). Esta configuración predeterminada se puede sobrescribir para este sitio eliminando los valores predeterminados o seleccionando otros idiomas en el menú desplegable.
 
-* **Seleccione un proveedor de traducciones**
+* **Elija un proveedor de traducción**
 
-   De forma predeterminada, el proveedor de servicios es un servicio de prueba que utiliza `microsoft` solo para demostración. Si no hay ningún proveedor de servicios de traducción con licencia, **Permitir traducción automática** debe estar desmarcada.
+  De forma predeterminada, el proveedor de servicios es un servicio de prueba que utiliza `microsoft` solo para demostración. Si no hay ningún proveedor de servicios de traducción con licencia, **Permitir traducción automática** debe estar desmarcada.
 
-* **Elegir almacén compartido global**
+* **Elegir un almacén compartido global**
 
-   Para un sitio web con varias copias de idioma, un almacén compartido global proporciona un único hilo de conversación, visible desde cada copia de idioma. Esto se logra seleccionando uno de los idiomas incluidos como copia de idioma. El valor predeterminado es *No hay almacén compartido global*.
+  Para un sitio web con varias copias de idioma, un almacén compartido global proporciona un único hilo de conversación, visible desde cada copia de idioma. Esto se logra seleccionando uno de los idiomas incluidos como copia de idioma. El valor predeterminado es *No hay almacén compartido global*.
 
 * **Elija la configuración del proveedor de traducciones**
 
-   Elija una [marco de integración de traducción](/help/sites-administering/tc-tic.md) creado para el proveedor de traducción con licencia.
+  Elija una [marco de integración de traducción](/help/sites-administering/tc-tic.md) creado para el proveedor de traducción con licencia.
 
 * **Seleccione las opciones de traducción del sitio de la comunidad**
 
    * **Traducir toda la página**
 
-      Si se selecciona, todos los UGC de una página se traducen al idioma base de la página.
+     Si se selecciona, todos los UGC de una página se traducen al idioma base de la página.
 
-      El valor predeterminado es *no seleccionado*.
+     El valor predeterminado es *no seleccionado*.
 
    * **Traducir solo la selección**
 
-      Si se selecciona, aparece una opción de traducción junto a cada entrada que permite traducir entradas individuales al idioma base de la página.
+     Si se selecciona, aparece una opción de traducción junto a cada entrada que permite traducir entradas individuales al idioma base de la página.
 El valor predeterminado es *seleccionado*.
 
 * **Seleccione las opciones de persistencia**
@@ -322,19 +318,19 @@ El valor predeterminado es *seleccionado*.
    * **Traducir las contribuciones a petición del usuario y continuar posteriormente**
 Si se selecciona, el contenido no se traduce hasta que se realiza una solicitud. Una vez traducida, la traducción se almacena en el repositorio.
 
-      El valor predeterminado es *no seleccionado*.
+     El valor predeterminado es *no seleccionado*.
 
    * **No continuar traduciendo**
 
-      Si se selecciona, las traducciones no se almacenan en el repositorio.
+     Si se selecciona, las traducciones no se almacenan en el repositorio.
 
-      Si no se selecciona, las traducciones se mantienen.
+     Si no se selecciona, las traducciones se mantienen.
 
-      El valor predeterminado es *no seleccionado*.
+     El valor predeterminado es *no seleccionado*.
 
 * **Procesamiento inteligente**
 
-   Seleccione una de las siguientes opciones:
+  Seleccione una de las siguientes opciones:
 
    * `Always show contributions in the original language` (predeterminada)
    * `Always show contributions in user preferred language`
@@ -349,8 +345,8 @@ Una **Crear** está seleccionado e iniciado, el proceso de creación del sitio n
 Una vez creado el sitio:
 
 * No se admite el cambio de la dirección URL (nombre de nodo).
-* Los cambios futuros en la plantilla del sitio de la comunidad no afectarán al sitio de la comunidad creado.
-* Deshabilitar la plantilla del sitio de la comunidad no afectará al sitio de la comunidad creado.
+* Los cambios futuros en la plantilla del sitio de la comunidad no afectan al sitio de la comunidad creado.
+* La deshabilitación de la plantilla del sitio de la comunidad no afecta al sitio de la comunidad creado.
 * Es posible editar la variable [ESTRUCTURA](#modify-structure) de un sitio de la comunidad modificando sus propiedades.
 
 ![create-site](assets/create-site1.png)
@@ -359,15 +355,21 @@ Cuando finaliza el proceso, la carpeta del nuevo sitio se muestra en la consola 
 
 ![modify-site-property](assets/modify-site-property.png)
 
-Para modificar un sitio de la comunidad, seleccione su carpeta de proyecto para abrirlo:
+Para editar un sitio de la comunidad, seleccione su carpeta de proyecto para abrirlo:
 
 ![sitio-proyecto](assets/site-project.png)
 
-Al pasar el ratón por encima de un sitio o tocar una tarjeta del sitio, aparecen iconos que permiten [edición del sitio en modo de autor](#authoring-site-content), [abrir las propiedades del sitio para modificarlas](#modifying-site-properties), [publicación del sitio](#publishing-the-site), [exportación del sitio](#exporting-the-site), y [eliminar el sitio](#deleting-the-site).
+Al pasar el ratón por encima de un sitio o tocar una tarjeta del sitio, aparecen iconos que permiten lo siguiente:
+
+* [edición del sitio en modo de autor](#authoring-site-content)
+* [abrir las propiedades del sitio para modificarlas](#modifying-site-properties)
+* [publicación del sitio](#publishing-the-site)
+* [exportación del sitio](#exporting-the-site)
+* [eliminar el sitio](#deleting-the-site)
 
 ## Creación de contenido del sitio {#authoring-site-content}
 
-AEM El contenido de un sitio puede crearse con las mismas herramientas que cualquier otro sitio web de la. Para abrir el sitio para la creación, seleccione la `Open Site` que aparece al pasar el ratón por el sitio. El sitio se abrirá en una nueva ficha de forma que la consola Sitios de Communities permanezca accesible.
+AEM El contenido de un sitio puede crearse con las mismas herramientas que cualquier otro sitio web de la. Para abrir el sitio para la creación, seleccione la `Open Site` que aparece al pasar el ratón por el sitio. El sitio se abre en una nueva ficha de forma que la consola Sitios de Communities permanece accesible.
 
 ![site-content](assets/site-content.png)
 
@@ -407,25 +409,25 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
 
    * **`gear icon`**
 
-      Editar la configuración, incluidos el título para mostrar y el nombre de la URL*, así como [grupos de miembros privilegiados](/help/communities/users.md#privilegedmembersgroups).
+     Editar la configuración, incluidos el título para mostrar y el nombre de la URL, y [grupos de miembros privilegiados](/help/communities/users.md#privilegedmembersgroups).
 
    * **`trashcan icon`**
 
-      Quitar (eliminar) funciones de la estructura del sitio.
+     Quitar (eliminar) funciones de la estructura del sitio.
 
    * **`grid icon`**
 
-      Modifique el orden de las funciones tal como se muestran en la barra de navegación de nivel superior del sitio.
+     Modifique el orden de las funciones tal como se muestran en la barra de navegación de nivel superior del sitio.
 
 >[!NOTE]
 >
->Puede cambiar el orden de todas las funciones en la estructura del sitio a excepción de la función de la parte superior. Por lo tanto, la página de inicio del sitio de comunidades no se puede cambiar.
+>Puede cambiar el orden de todas las funciones en la estructura del sitio a excepción de la función de la parte superior. Por lo tanto, no se puede cambiar la página principal de un sitio de la comunidad.
 
 >[!CAUTION]
 >
 >* Aunque el título para mostrar se puede cambiar sin efectos secundarios, no se recomienda editar el nombre de la URL de una función de la comunidad que pertenece a un sitio de la comunidad.
 >
->Por ejemplo, al cambiar el nombre de la URL no se moverá el UGC existente, por lo que se &quot;perderá&quot; el UGC.
+>Por ejemplo, al cambiar el nombre de la URL no se mueve el UGC existente, por lo que se &quot;pierde&quot; el UGC.
 
 >[!CAUTION]
 >
@@ -444,7 +446,7 @@ El panel DISEÑO permite aplicar una nueva temática:
 * [Tema del sitio de la comunidad](#community-site-theme)
 * [Marca del sitio de la comunidad](#community-site-branding)
 
-   * Desplácese hasta la parte inferior del panel para cambiar la imagen de marca.
+   * Desplácese hasta la parte inferior del panel para poder cambiar la imagen de marca.
 
 ### Modificar configuración {#modify-settings}
 
@@ -467,7 +469,7 @@ Una vez que se ha creado o modificado un sitio de la comunidad, es posible publi
 
 ![publish-site](assets/publish-site.png)
 
-Habrá una indicación después de que el sitio se publique correctamente.
+Hay una indicación después de que el sitio se publique correctamente.
 
 ![publicado en el sitio](assets/site-published.png)
 
@@ -479,9 +481,9 @@ Después de publicar un sitio de comunidad, es necesario publicar individualment
 
 ![export-site](assets/export-site.png)
 
-Seleccione el icono de exportación, al pasar el ratón sobre el sitio, para crear un paquete del sitio de la comunidad que esté almacenado en [administrador de paquetes](/help/sites-administering/package-manager.md) y descargado.
+Seleccione el icono de exportación, al pasar el ratón sobre el sitio, para poder crear un paquete del sitio de la comunidad que esté almacenado en el [Administrador de paquetes](/help/sites-administering/package-manager.md) y descargado.
 
-Tenga en cuenta que UGC no se incluye en el paquete del sitio.
+UGC no está incluido en el paquete del sitio.
 
 ## Eliminación del sitio {#deleting-the-site}
 
@@ -493,28 +495,25 @@ Para eliminar el sitio de la comunidad, seleccione el icono Eliminar sitio que a
 
 Una vez publicado el nuevo sitio de la comunidad, se crean nuevos grupos de miembros (grupos de usuarios en el entorno de publicación) que tienen los permisos adecuados establecidos para diversas funciones administrativas y de miembro.
 
-El nombre creado para los grupos de miembros incluye el *site-name* dado el sitio en [Paso 1](#step13asitetemplate) (el nombre que aparece en la dirección URL), así como un ID único para evitar conflictos con los sitios y grupos de la comunidad que tienen el mismo nombre de sitio para diferentes raíces de sitio de la comunidad.
+El nombre creado para los grupos de miembros incluye el *site-name* dado en [Paso 1](#step13asitetemplate) (el nombre que aparece en la dirección URL). También incluye un ID único para evitar conflictos con los sitios y grupos de la comunidad que tienen el mismo nombre de sitio para diferentes raíces de sitio de la comunidad.
 
 Por ejemplo: si los nombres fueran &quot;participación&quot; para un sitio titulado &quot;Tutorial de introducción&quot;, el grupo de usuarios para moderadores sería:
 
 * title: Moderadores de participación de la comunidad
 * nombre: community-*enganchar-uid*-moderadores
 
-Tenga en cuenta que los miembros que tengan asignadas funciones como moderadores o administradores de grupos al crear el sitio, se asignarán al grupo apropiado y se asignarán al grupo de miembros. Estos grupos y asignaciones de miembros se crean al publicar el nuevo sitio.
+Los miembros que tengan asignadas funciones como moderadores o administradores de grupos al crear el sitio se asignan al grupo correspondiente y se asignan al grupo de miembros. Estos grupos y asignaciones de miembros se crean al publicar el nuevo sitio.
 
 Para obtener más información, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
 
 >[!NOTE]
 >
->If [Permitir inicio de sesión social: Facebook](#user-management) está habilitado, una vez que el grupo de usuarios
->
->* `community-<site-name>-<uid>-members`
->
+>If [Permitir inicio de sesión social: Facebook](#user-management) está habilitado, una vez que el grupo de usuarios `community-<site-name>-<uid>-members`
 >se crea, se aplica el [Facebook Cloud Service](/help/communities/social-login.md#createafacebookcloudservice) debe configurarse para agregar usuarios a este grupo.
 
 ## Configurar para error de autenticación {#configure-for-authentication-error}
 
-De forma predeterminada, un sitio de comunidad redireccionará a una página de inicio de sesión de ejemplo cuando el usuario introduzca las credenciales incorrectas y no pueda iniciar sesión. Este inicio de sesión de muestra no estará presente en un [servidor de producción](/help/sites-administering/production-ready.md).
+De forma predeterminada, un sitio de la comunidad redirige a una página de inicio de sesión de ejemplo cuando el usuario introduce credenciales incorrectas y no puede iniciar sesión. Este inicio de sesión de muestra no está presente en un [servidor de producción](/help/sites-administering/production-ready.md).
 
 Para redirigir correctamente, una vez que se ha configurado un sitio y se ha insertado para publicarlo, complete estos pasos para obtener el error de autenticación para redirigir al sitio de la comunidad:
 
@@ -525,13 +524,13 @@ Para redirigir correctamente, una vez que se ha configurado un sitio y se ha ins
    * Por ejemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
 * Localizar `Adobe Granite Login Selector Authentication Handler`.
-* Seleccione el `pencil` para abrir la configuración y editarla.
+* Seleccione el `pencil` para poder abrir la configuración y editarla.
 * Introduzca una **Asignaciones de página de inicio de sesión** como sigue:
 
-   `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
+  `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-   Por ejemplo:
-   `/content/sites/engage/en/signin:/content/sites/engage/en`
+  Por ejemplo:
+  `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 * Seleccione **Guardar**.
 
@@ -547,7 +546,7 @@ AEM En la misma instancia de publicación de configurada con una asignación de 
 
 * Seleccione Cerrar sesión.
 * Seleccione Iniciar sesión.
-* Introduzca credenciales obviamente incorrectas, como el nombre de usuario &quot;x&quot; y la contraseña &quot;x&quot;.
+* Introduzca credenciales incorrectas, como el nombre de usuario &quot;x&quot; y la contraseña &quot;x&quot;.
 * La página de inicio de sesión debe mostrarse con el error &quot;inicio de sesión no válido&quot;.
 
 ![test-authentication](assets/test-authentication.png)

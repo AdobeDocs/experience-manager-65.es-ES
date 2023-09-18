@@ -1,19 +1,15 @@
 ---
 title: Tendencias de actividades
-seo-title: Activity Trends
 description: Adición de un componente de lista de actividades de la comunidad a una página
-seo-description: Adding a Community Activity List component to a page
-uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 4%
 
 ---
@@ -38,11 +34,7 @@ Consulte [Configuración de Analytics para funciones de Communities](/help/commu
 
 ### Agregar una lista de actividades de la comunidad a una página {#adding-a-community-activity-list-to-a-page}
 
-Para agregar un `Community Activity List` a una página en modo de autor, busque el componente
-
-* `Communities / Community Activity List`
-
-y arrástrela a su lugar en una página.
+Para agregar un `Community Activity List` a una página en modo de autor, busque el componente `Communities / Community Activity List` y arrástrela a su lugar en una página.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
@@ -52,7 +44,7 @@ Cuando se coloca por primera vez en una página de un sitio de la comunidad, as�
 
 ### Configurar la lista de actividades de comunidad  {#configuring-community-activity-list}
 
-Seleccione el colocado `Community Activity List` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Community Activity List` y, a continuación, seleccione el componente `Configure` para abrir el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
@@ -107,15 +99,15 @@ El valor predeterminado es 10.
 
 * **Ruta de contexto**
 
-  Proporciona la capacidad de asignar el ámbito de la actividad a un subconjunto del sitio, como un blog específico.
+  Esto permite definir el ámbito de la actividad en un subconjunto del sitio, como un blog específico, por ejemplo.
 De forma predeterminada, se muestra todo el sitio de la comunidad.
 
 * **Suma de recuento de miembros**
 
-  Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
+  Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type` de `Posts` nunca muestra ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
 La opción predeterminada está activada.
 
-### Página de ejemplo con 4 componentes {#example-page-with-components}
+### Página de ejemplo con cuatro componentes {#example-page-with-components}
 
 **Visitantes principales** config: Tipo = Miembros, Tipo de actividad = Vistas
 
