@@ -1,15 +1,15 @@
 ---
 title: Tutorial del sitio de referencia para la renovación de seguros de coche de We.Finance
-description: Tutorial del sitio de referencia para la renovación de seguros de coche de We.Finance
+description: Obtenga información acerca del sitio de referencia Renovación del seguro del coche de We.Finance realizando un tutorial.
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 83%
+source-wordcount: '757'
+ht-degree: 70%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 83%
 
 ## Escenario del sitio de referencia de We.Finance  {#we-finance-reference-site-scenario}
 
-El sitio de We.Finance es un sitio de servicios financieros diseñado para ayudarle a aprender a utilizar las capacidades de Interactive Communications de AEM Forms.
+El sitio de We.Finance es un sitio de servicios financieros diseñado para ayudarle a conocer las capacidades de comunicaciones interactivas de AEM Forms.
 
-AEM Lea el tutorial detallado del caso de uso de We.Finance Auto Insurance, que muestra cómo los formularios de la y su integración con Microsoft® Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
+AEM Lea un tutorial detallado de un caso de uso de We.Finance Auto Insurance que muestra cómo los formularios de y su integración con Microsoft® Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
 
 **El recorrido comienza con el caso de uso:**
 
-Sarah Rose es una clienta existente de We.Finance y ha adquirido una póliza de seguro del coche. Ahora es el momento del año para renovar la póliza de seguro de Sarah. Gloria Ríos, una agente de seguros de We.Finance, envía un recordatorio a Sarah sobre la renovación de su póliza. Sarah sigue las instrucciones proporcionadas en el correo electrónico y completa correctamente el proceso.
+Sarah Rose es una clienta existente de We.Finance y ha adquirido una póliza de seguro del coche. Es esa época del año para que Sarah renueve su póliza de seguro. Gloria Ríos es su agente de seguros. We.Finance envía un recordatorio a Sarah sobre la renovación de su póliza. Sarah sigue las instrucciones proporcionadas en el correo electrónico y completa correctamente el proceso.
 
 ## Tutorial de la solicitud de un seguro de coche {#auto-insurance-application-walkthrough}
 
@@ -34,7 +34,7 @@ El escenario de la solicitud de un seguro de coche de We.Finance es una narraci�
 
 ### Gloria envía una comunicación sobre la renovación de la póliza del seguro desde We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria inicia sesión en una instancia de AEM, hace clic en **Renovación del seguro del coche** y luego en **Abrir la interfaz de usuario del agente.** El clic rellena previamente el documento del seguro que contiene los datos de la póliza de Sarah Rose. Gloria hace clic en **Enviar**. En la pantalla se muestra el mensaje &quot;Envío iniciado&quot; y, unos segundos después, el mensaje &quot;Enviado correctamente&quot;.
+Gloria inicia sesión en una instancia de AEM, hace clic en **Renovación del seguro del coche** y luego en **Abrir la interfaz de usuario del agente**. El clic rellena previamente el documento del seguro que contiene los datos de la póliza de Sarah Rose. Gloria hace clic **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y, a continuación, en unos segundos &quot;Enviado correctamente&quot;.
 
 Sarah recibe un correo electrónico con el asunto &quot;Renovación del seguro del coche&quot;.
 
@@ -72,7 +72,7 @@ Puede consultar el resumen detallado de la renovación de su seguro del coche y 
 
 ### Sarah llega a la página de pago {#sarah-reaches-the-payment-page}
 
-We.Finance lleva a Sarah a la página de pago. Sarah vuelve a comprobar su número de póliza y la fecha de caducidad de esta con sus registros. En el lado derecho de la página, comprueba que el resumen del pago de su renovación incluye un descuento del 10 % sobre el importe total.
+We.Finance lleva a Sarah a la página de pago. Sarah vuelve a comprobar su número de póliza y la fecha de caducidad de esta con sus registros. En el lado derecho de la página, Sarah comprueba que el resumen del pago de la renovación incluye un descuento del 10 % sobre el importe total.
 
 #### Funcionamiento {#how-it-works-1}
 
