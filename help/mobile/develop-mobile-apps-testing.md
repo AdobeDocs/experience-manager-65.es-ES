@@ -1,18 +1,14 @@
 ---
 title: Prueba de aplicaciones móviles
-seo-title: Testing Mobile Apps
 description: Prueba de aplicaciones móviles
-seo-description: null
-uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
-discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 >
 >Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Dada la amplia gama de dispositivos en el mercado y los dispositivos que se están lanzando, probar sus aplicaciones se ha vuelto extremadamente importante. Esta es un área en la que la funcionalidad y la facilidad de uso pueden recibir pocas críticas en una tienda de aplicaciones, pero un solo defecto puede provocar que se desinstale la aplicación. Debe prestarse especial atención a sus planes de pruebas y a la garantía de calidad. El siguiente vínculo abarca muchos de los temas que deben abordarse en general, como, identificar el entorno, definir casos de prueba, tipos de pruebas, suposiciones, participación del cliente, etc. También se analizan las herramientas que ayudan en el esfuerzo de prueba. Herramientas internas, como [Hobbes](/help/sites-developing/hobbes.md), puede ayudar con las pruebas de IU basadas en la web. [Día difícil](/help/sites-developing/tough-day.md) puede sobrecargar las instancias con una carga simulada. Si el entorno de prueba ya tiene experiencia con herramientas de terceros, como Selenium, también se pueden utilizar.
+Dada la amplia gama de dispositivos en el mercado y los dispositivos que se están lanzando, la prueba de sus aplicaciones se ha vuelto imprescindible. Esta es un área en la que la funcionalidad y la facilidad de uso pueden recibir pocas críticas en una tienda de aplicaciones, pero un solo defecto puede provocar que se desinstale la aplicación. Se debe prestar mucha atención a sus planes de pruebas y a la garantía de calidad. El siguiente vínculo abarca muchos de los temas que se deben abordar en general, como la identificación del entorno, la definición de casos de prueba, los tipos de pruebas, las suposiciones y la participación del cliente. También se analizan las herramientas que ayudan en el esfuerzo de prueba. Herramientas internas, como [Hobbes](/help/sites-developing/hobbes.md), puede ayudar con las pruebas de IU basadas en la web. [Día difícil](/help/sites-developing/tough-day.md) puede sobrecargar las instancias con una carga simulada. Si el entorno de prueba ya tiene experiencia con herramientas de terceros, como Selenium, también se pueden utilizar.
 
 Al desarrollar una aplicación móvil, hay muchas preocupaciones nuevas específicas de los dispositivos que deben abordarse junto con las de las pruebas tradicionales.
 
@@ -40,13 +36,13 @@ Estas preguntas deben responderse durante las pruebas automatizadas y manuales.
 
 ## Pruebas automatizadas {#automated-testing}
 
-Se debe realizar cierto grado de pruebas automatizadas para cubrir la variedad de tamaños de pantalla, restricciones de memoria, métodos de entrada y sistemas operativos. No solo cubre gran parte de los casos de prueba, sino que también puede acelerar las pruebas de regresión cuando se introducen nuevas funciones o dispositivos. Lo ideal es que sus herramientas de automatización reduzcan o limiten la duplicación de esfuerzos. Utilice herramientas o marcos de trabajo para que el esfuerzo de prueba sea aplicable a todas las plataformas. El siguiente gráfico muestra una estructura simplificada de un entorno de prueba tanto para las pruebas de interfaz de usuario basadas en la web como para las pruebas de aplicaciones móviles. La parte izquierda del gráfico muestra una serie de nodos de Selenium con exploradores. SeleniumGrid puede agrupar pruebas de IU comunes basadas en la web para cualquiera de estos nodos. Selenium hub también se puede conectar a Appium para realizar pruebas de aplicaciones en varias plataformas. Solo se muestran los simuladores, pero puede incorporar las utilidades ADB, para Android y Xcode para dispositivos iOS. Los vínculos se proporcionan más adelante en este documento, donde puede encontrar detalles específicos para las herramientas mencionadas.
+Se debe realizar cierto grado de pruebas automatizadas para cubrir la variedad de tamaños de pantalla, restricciones de memoria, métodos de entrada y sistemas operativos. No solo cubre muchos de los casos de prueba, sino que puede acelerar las pruebas de regresión cuando se introducen nuevas funciones o dispositivos. Lo ideal es que sus herramientas de automatización reduzcan o limiten la duplicación de esfuerzos. Utilice herramientas o marcos de trabajo para que el esfuerzo de prueba sea aplicable a todas las plataformas. El siguiente gráfico muestra una estructura simplificada de un entorno de prueba tanto para las pruebas de interfaz de usuario basadas en la web como para las pruebas de aplicaciones móviles. La parte izquierda del gráfico muestra una serie de nodos de Selenium con exploradores. SeleniumGrid puede agrupar pruebas de IU comunes basadas en la web para cualquiera de estos nodos. Selenium hub también se puede conectar a Appium para realizar pruebas de aplicaciones en varias plataformas. Solo se muestran simuladores, pero puede incorporar las utilidades ADB, para Android™ y Xcode para dispositivos iOS. Los vínculos se proporcionan más adelante en este documento, donde puede encontrar detalles específicos para las herramientas mencionadas.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
 ## Pruebas manuales {#manual-testing}
 
-Además de las pruebas automatizadas, la aplicación debe pasar por un ciclo de pruebas manuales. Los clientes que ejecuten la aplicación en un dispositivo real no se pueden duplicar mediante una secuencia de comandos. Aquí también tiene muchas opciones. Puede utilizar una plataforma, como HockeyApp, para definir quién tiene acceso y recopilar comentarios. O bien, puede subcontratar todo el proceso a un servicio como UTest, ElusiveStars o Testin. Si tiene un grupo de probadores internos, pero le falta variación de dispositivos, hay servicios en la nube donde puede realizar pruebas manuales en su grupo de dispositivos. Uno de estos servicios que proporciona esto es SauceLabs. También puede crear aplicaciones de forma remota en PhoneGap Enterprise e instalarlas en dispositivos locales como nivel de aceptación, prueba o degradación. Consulte PhoneGap (`https://phonegap.com/`) sitio web para sus últimas funciones y documentación. Sea cual sea el enfoque, las pruebas manuales deberían ser;
+Además de las pruebas automatizadas, la aplicación debe pasar por un ciclo de pruebas manuales. Los clientes que ejecuten la aplicación en un dispositivo real no se pueden duplicar mediante una secuencia de comandos. Aquí también tiene muchas opciones. Puede utilizar una plataforma, como HockeyApp, para definir quién tiene acceso y recopilar comentarios. O bien, puede subcontratar todo el proceso a un servicio como UTest, ElusiveStars o Testin. Si tiene un grupo de probadores internos, pero le falta variación de dispositivos, hay servicios en la nube donde puede realizar pruebas manuales en su grupo de dispositivos. Uno de estos servicios que proporciona esto es SauceLabs. También puede crear aplicaciones de forma remota en PhoneGap Enterprise e instalarlas en dispositivos locales como nivel de aceptación, prueba o degradación. Consulte PhoneGap (`https://phonegap.com/`) sitio web para sus últimas funciones y documentación. Sea cual sea el enfoque, las pruebas manuales deben hacer lo siguiente:
 
 * alcanzó un gran objetivo de probadores,
 * realizar pruebas con un gran grupo de dispositivos (idealmente, dispositivos reales, pero simuladores/emuladores si no hay dispositivos reales disponibles),
@@ -61,27 +57,27 @@ Además de las pruebas automatizadas, la aplicación debe pasar por un ciclo de 
 
 ## Herramientas {#tools}
 
-Hay una amplia gama de herramientas disponibles para probar aplicaciones móviles. La elección de los que se utilizarán dependerá de su situación específica: características, precio, asistencia, cobertura, etc. A continuación se ofrece una breve descripción de algunas de las herramientas y servicios disponibles.
+Hay una amplia gama de herramientas disponibles para probar aplicaciones móviles. La elección de los que se van a utilizar debe basarse en su situación específica: características, precio, asistencia, cobertura, etc. A continuación se ofrece una breve descripción de algunas de las herramientas y servicios disponibles.
 
 **Selenio**
 
 * Marco de trabajo que incluye una API para scripts de prueba para alimentar WebDriver y controlar varios exploradores.
-* Puede usar esto junto con Appium para hacer pruebas en dispositivos reales.
-* SeleniumGrid dirige las pruebas entre nodos para realizar pruebas en paralelo.
+* Puede utilizar esto con Appium para probar en dispositivos reales.
+* SeleniumGrid dirige las pruebas entre nodos para pruebas paralelas.
 * Selenium IDE ayuda a reducir la escritura de casos de prueba.
 
-Para obtener más información, consulte [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Para obtener más información, consulte [https://www.selenium.dev/](https://www.selenium.dev/).
 
 **Testdroid**
 
 * Un servicio de pruebas basado en la nube con enlaces de integración continua y pruebas reales de dispositivos.
-* Incluye un rastreador de aplicaciones que comprueba la compatibilidad del dispositivo, analiza los registros, atraviesa las vistas, toma capturas de pantalla y supervisa el rendimiento.
+* Se incluye un rastreador de aplicaciones que comprueba la compatibilidad del dispositivo, analiza los registros, atraviesa las vistas, toma capturas de pantalla y supervisa el rendimiento.
 
 Para obtener más información, consulte [https://testdroid.com/](https://testdroid.com/).
 
 **Apio**
 
-* Appium es un popular marco de trabajo multiplataforma para automatizar pruebas móviles.
+* Appium es un popular marco multiplataforma para automatizar pruebas móviles.
 * Además, se incluye un inspector con capacidades de registro para ayudar a codificar casos de prueba.
 
 Para obtener más información, consulte [https://appium.io/](https://appium.io/).
@@ -95,10 +91,10 @@ Para obtener más información, consulte [https://saucelabs.com/](https://saucel
 
 **AppTestNow**
 
-* Un servicio de subcontratación que probará sus aplicaciones móviles.
-* Incluye un gran grupo de dispositivos y ofrece una amplia gama de tipos de pruebas: rendimiento, calidad, funcionalidad, certificación, localización, consumo de datos, etc.
+* Servicio de subcontratación que prueba sus aplicaciones móviles.
+* Se incluye un gran grupo de dispositivos y ofrece una amplia gama de tipos de pruebas: rendimiento, calidad, funcionalidad, certificación, localización, consumo de datos, etc.
 
-Para obtener más información, consulte [https://www.apptestnow.com](https://www.apptestnow.com/).
+Para obtener más información, consulte [https://apptestnow.com/](https://apptestnow.com/).
 
 **HockeyApp**
 
@@ -108,6 +104,6 @@ Para obtener más información, consulte [https://hockeyapp.net/features/](https
 
 **Jenkins**
 
-* Aunque no es una herramienta de prueba, Jenkins es un marco de integración continua que proporciona la base para las pruebas automatizadas. Hay numerosos complementos de terceros disponibles para ampliar la funcionalidad. Por ejemplo, el complemento SeleniumGrid proporciona una interfaz de usuario para administrar el concentrador y los nodos de Selenium.
+* Aunque no es una herramienta de prueba, Jenkins es un marco de integración continua que proporciona la base para las pruebas automatizadas. Hay numerosos complementos de terceros disponibles para ampliar la funcionalidad. Por ejemplo, el complemento SeleniumGrid proporciona una interfaz de usuario para ayudar a administrar el concentrador y los nodos de Selenium.
 
-Para obtener más información, consulte [https://jenkins-ci.org/](https://jenkins-ci.org/) y [https://wiki.jenkins-ci.org/display/JENKINS/Plugins](https://wiki.jenkins-ci.org/display/JENKINS/Plugins).
+Para obtener más información, consulte [https://www.jenkins.io/](https://www.jenkins.io/) y [https://plugins.jenkins.io/](https://plugins.jenkins.io/).

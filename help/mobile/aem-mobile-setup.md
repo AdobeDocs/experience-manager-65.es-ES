@@ -1,18 +1,14 @@
 ---
 title: Configuración de AEM Mobile
-seo-title: AEM Mobile SetUp
-description: Siga esta página para configurar AEM Mobile AEM y, por lo tanto, permitir al usuario crear y administrar el contenido dentro de los elementos de la interfaz de usuario de la interfaz de usuario de. AEM Esta página proporciona información sobre la integración de la instancia de con la cuenta y los proyectos de AEM Mobile On-demand Services basados en la nube.
-seo-description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
-uuid: 03bf5b56-7750-4f76-b079-43761367655a
+description: Siga esta página para configurar AEM Mobile y permitir así al usuario crear y administrar el contenido dentro de Adobe Experience Manager AEM (). AEM Esta página proporciona información sobre la integración de la instancia de con la cuenta y los proyectos de AEM Mobile On-demand Services basados en la nube.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '928'
 ht-degree: 2%
 
 ---
@@ -25,9 +21,9 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Los clientes existentes de AEM Mobile AEM AEM Apps que migren de la versión 6.2 o 6.3 a la versión 6.5 de la versión, pueden seguir usando las aplicaciones de AEM Mobile si descargan un paquete de PackageShare. AEM Sin embargo, las nuevas instalaciones de 6.5 no admitirán la funcionalidad de las aplicaciones de AEM Mobile.
+>Los clientes existentes de Adobe Experience Manager AEM AEM AEM () Mobile Apps que migran de la versión 6.2 o 6.3 a la versión 6.5 de la aplicación de AEM Mobile pueden seguir usando este servicio descargando un paquete desde Uso compartido de paquetes. AEM Sin embargo, las nuevas instalaciones de 6.5 no admiten la funcionalidad de aplicaciones de AEM Mobile.
 
-AEM Para utilizar la para producir contenido para aplicaciones de AEM Mobile AEM, debe integrar la instancia de con la cuenta y los proyectos de AEM Mobile On-demand Services basados en la nube.
+AEM Para utilizar la para producir contenido para aplicaciones de AEM Mobile AEM, debe integrar la instancia de la instancia de la con la cuenta y los proyectos de AEM Mobile On-demand Services basados en la nube.
 
 Siga estos pasos para configurar AEM Mobile AEM y, por lo tanto, permitir al usuario crear y administrar el contenido dentro de los elementos de la interfaz de usuario de la interfaz de usuario de.
 
@@ -45,7 +41,7 @@ Para empezar a configurar AEM Mobile, debe hacer lo siguiente:
       * Administración > Administrar proyectos y usuarios
       * Contenido > Añadir y editar contenido, Eliminar contenido, Ver contenido, Publicar contenido
 
-Si se cumplen todas las condiciones, se generará un ID de dispositivo y un token de dispositivo.
+Si se cumplen todas las condiciones, se generan un ID de dispositivo y un token de dispositivo.
 
 >[!NOTE]
 >
@@ -53,7 +49,7 @@ Si se cumplen todas las condiciones, se generará un ID de dispositivo y un toke
 
 ## Creación de proyectos para AEM Mobile {#creating-projects-for-aem-mobile}
 
-Al crear un proyecto, se especifica la configuración de cualquier plataforma de destino: iOS, Android, Windows y Desktop Web Viewer. Muchos de los ajustes del proyecto que especifique afectan al comportamiento de la aplicación.
+Al crear un proyecto, se especifica la configuración de cualquier plataforma de destino: iOS, Android™, Windows y Desktop Web Viewer. Muchos de los ajustes del proyecto que especifique afectan al comportamiento de la aplicación.
 
 Para crear un proyecto es necesario iniciar sesión en el portal de On-Demand Services con un Adobe ID que tenga la función de administrador maestro. La edición de un proyecto requiere una función de administrador maestro o una función de usuario con un **Administrar proyectos y usuarios** permiso.
 
@@ -69,11 +65,11 @@ El conector AEM Mobile On-Demand se utiliza para enlazar el contenido administra
 
 >[!NOTE]
 >
->AEM Este es un paso de un solo paso para configurar la instancia de.
+>AEM Este es un paso de un solo uso para configurar la instancia de.
 
 ### Configuración del cliente de AEM Mobile On-demand Services {#configuring-aem-mobile-on-demand-services-client}
 
-Debe completar los pasos de configuración para que las integraciones de AEM Mobile funcionen correctamente.
+Complete los pasos de configuración para que las integraciones de AEM Mobile funcionen correctamente.
 
 1. Ir a la configuración del servicio OSGI
 
@@ -96,13 +92,13 @@ Debe completar los pasos de configuración para que las integraciones de AEM Mob
 
 ### Configuración de AEM Mobile On-demand Services Cloud Service {#configuring-aem-mobile-on-demand-services-cloudservice}
 
-1. Ir a Cloud Services
+1. Ve con los Cloud Service.
 
    1. AEM > Herramientas > Implementación > [CloudServices](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). Desplazarse o buscar ***Adobe Experience Manager Mobile On-demand Services***
 
-1. Seleccionar ***Configurar ahora*** o ***Mostrar configuraciones*** y seleccione el icono añadir nueva configuración
+1. Seleccionar ***Configurar ahora*** o ***Mostrar configuraciones*** y seleccione el icono añadir configuración.
 
-1. Crear una nueva configuración
+1. Crear una configuración
 
    1. Escriba un título y un nombre
    1. Introducir ID de dispositivo
@@ -112,7 +108,7 @@ Debe completar los pasos de configuración para que las integraciones de AEM Mob
 
 ## Adición de funciones de usuario de AEM Mobile y asignación de permisos {#adding-aem-mobile-user-roles-and-assigning-permissions}
 
-Después de crear un proyecto, debe crear las funciones y conceder acceso a los usuarios. Los administradores maestros son los únicos que pueden crear y editar funciones. Al crear una función, habilita las capacidades (o los permisos) para los usuarios a los que se asignan dichos permisos. Por ejemplo, puede crear una función que incluya permisos para la creación de aplicaciones y otra función que incluya permisos para la creación y publicación de contenido.
+Después de crear un proyecto, debe crear funciones y conceder acceso a los usuarios. Los administradores maestros son los únicos que pueden crear y editar funciones. Al crear una función, habilita las capacidades (o los permisos) para los usuarios a los que se asignan dichos permisos. Por ejemplo, puede crear una función que incluya permisos para la creación de aplicaciones y otra función que incluya permisos para la creación y publicación de contenido.
 
 En el desarrollo de aplicaciones de AEM Mobile, existen tres funciones diferentes:
 
@@ -124,11 +120,11 @@ Para obtener más información sobre la creación de funciones con diferentes pe
 
 >[!NOTE]
 >
->La administración del contenido de la aplicación requiere un esfuerzo colectivo por parte de los desarrolladores, autores de contenido y administradores. Los autores manipulan las páginas, que a su vez se basan en plantillas y componentes generados por los desarrolladores de aplicaciones. Por último, los administradores publican de forma estratégica el contenido actualizado de la aplicación. AEM La configuración de grupos de usuarios y permisos de la aplicación define sus funciones en el panel de aplicaciones o en el Centro de control de Campaign.
+>La administración del contenido de la aplicación requiere un esfuerzo colectivo por parte de los desarrolladores, los autores de contenido y los administradores. Los autores manipulan las páginas, que a su vez se basan en plantillas y componentes generados por los desarrolladores de aplicaciones. Por último, los administradores publican de forma estratégica el contenido actualizado de la aplicación. AEM La configuración de grupos de usuarios y permisos de la aplicación define sus funciones en el panel de aplicaciones o en el Centro de control de Campaign.
 >
->Para obtener más información sobre el panel de AEM Mobile, haga clic en [aquí](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Consulte [Panel de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Una vez que haya terminado de crear funciones con diferentes permisos, como para la creación de aplicaciones o para crear y publicar contenido, consulte [**Configuración de usuarios y grupos de usuarios**](/help/mobile/aem-mobile-configure-users.md) para configurar los usuarios y grupos de modo que admitan la creación y administración de sus aplicaciones móviles.
+Cuando haya terminado de crear funciones con diferentes permisos, como para la creación de aplicaciones o para crear y publicar contenido, consulte [**Configuración de usuarios y grupos de usuarios**](/help/mobile/aem-mobile-configure-users.md). Al hacerlo, puede configurar a los usuarios y grupos para que admitan la creación y administración de sus aplicaciones móviles.
 
 ### Recursos adicionales {#additional-resources}
 

@@ -1,41 +1,36 @@
 ---
 title: Aplicar estilo a un formulario adaptable
-seo-title: Style your adaptive form
-description: Aprenda a crear una temática personalizada, a aplicar estilo a componentes individuales y a utilizar fuentes web en una temática
-seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme
-page-status-flag: de-activated
-uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
+description: Aprenda a crear una temática personalizada, aplicar estilo a componentes individuales y utilizar Web Fonts en una temática.
 topic-tags: introduction
-discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 99%
+source-wordcount: '2054'
+ht-degree: 81%
 
 ---
 
 # Aplicar estilo a un formulario adaptable {#do-not-publish-style-your-adaptive-form}
 
-Aprenda a crear una temática personalizada, a aplicar estilo a componentes individuales y a utilizar fuentes web en una temática
+Aprenda a crear una temática personalizada, aplicar estilo a componentes individuales y utilizar Web Fonts en una temática.
 
 ![imagen de héroe](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Se recomienda seguir la serie en orden cronológico para comprender, realizar y mostrar el caso de uso del tutorial completo.
+Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). El Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 ## Información sobre el tutorial  {#about-the-tutorial}
 
 Puede utilizar temáticas para proporcionar una apariencia y un estilo únicos a un formulario adaptable. Puede aplicar temáticas predeterminadas con el editor de formularios adaptables o crear temáticas personalizadas propias. AEM [!DNL Forms] proporciona un [editor de temáticas](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/themes.html) para crear temáticas personalizadas. Una sola temática puede proporcionar una apariencia diferente al mismo formulario adaptable abierto en dispositivos móviles, tabletas o de escritorio. No es necesario tener conocimientos previos de CSS o LESS para utilizar el editor de temáticas, pero es preferible tenerlos.
 
-Al final del tutorial, aprenderá a hacer lo siguiente:
+Al final del tutorial, debería poder hacer lo siguiente:
 
 * Aplicar una temática predeterminada a un formulario adaptable
 * Crear una temática para un formulario adaptable mediante el editor de temáticas
 * Aplicar estilo a los componentes individuales
-* Sección Bonus: usar fuentes web en una temática personalizada
+* Sección bonus: usar Web Fonts en una temática personalizada
 
-El formulario será similar al siguiente después de completar el tutorial:
+El formulario debe ser similar al siguiente después de completar el tutorial:
 
 ![Formulario con una temática personalizada](assets/styled-adaptive-form.png)
 
@@ -49,14 +44,16 @@ Descargue las siguientes imágenes de estilo de encabezado y logotipo en su equi
 
 ## Paso 1: Aplicar una temática a un formulario adaptable {#step-apply-a-theme-to-your-adaptive-form}
 
-El editor de formularios adaptables proporciona varias temáticas predeterminadas. Si no pretende utilizar un estilo personalizado para el formulario adaptable, también puede publicar los formularios adaptables con una temática incorporada. Las temáticas son independientes de los formularios adaptables. Puede aplicar la misma temática a varios formularios adaptables. Para aplicar una temática a un formulario adaptable, haga lo siguiente:
+El editor de formularios adaptables proporciona varias temáticas predeterminadas. Si no pretende utilizar un estilo personalizado para el formulario adaptable, también puede publicar los formularios adaptables con una temática incorporada. Las temáticas son independientes de los formularios adaptables. Puede aplicar la misma temática a varios formularios adaptables.
+
+**Para aplicar una temática al formulario adaptable, haga lo siguiente:**
 
 1. Abra el formulario adaptable para editarlo.
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Abra las propiedades del **[!UICONTROL Contenedor de formularios adaptables]**. En el explorador de propiedades, navegue hasta **[!UICONTROL Básico]** > **[!UICONTROL Temática del formulario adaptable]**. El campo **[!UICONTROL Temática del formulario adaptable]** enumera todas las temáticas predeterminadas y personalizadas. De forma predeterminada, se aplica la temática Lienzo.
-1. Seleccione una temática del campo **[!UICONTROL Temática del formulario adaptable]**. Por ejemplo, **Temática de encuesta**. Pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para aplicar la temática seleccionada.
+1. Seleccione una temática del campo **[!UICONTROL Temática del formulario adaptable]**. Por ejemplo, **Temática de encuesta**. Tocar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para que pueda aplicar la temática seleccionada.
 
    ![Formulario adaptable con la temática predeterminada](assets/default-adaptive-form.png)
 
@@ -68,7 +65,9 @@ El editor de formularios adaptables proporciona varias temáticas predeterminada
 
 ## Paso 2: Actualizar el formulario adaptable {#step-update-your-adaptive-form}
 
-El diseño que se muestra más arriba requiere cambios en el texto del marcador de posición y en el logotipo de su formulario adaptable. Realice los siguientes pasos para realizar los cambios necesarios:
+El diseño que se muestra más arriba requiere cambios en el texto del marcador de posición y en el logotipo de su formulario adaptable.
+
+**Para actualizar el formulario adaptable, haga lo siguiente:**
 
 1. Cambie el logotipo y el texto existentes del encabezado. Para eliminar el logotipo, haga lo siguiente:
 
@@ -93,7 +92,7 @@ El diseño que se muestra más arriba requiere cambios en el texto del marcador 
 
 ## Paso 3: Crear una temática personalizada para el formulario adaptable {#step-create-a-custom-theme-for-your-adaptive-form}
 
-Puede usar el [Editor de temáticas](/help/forms/using/themes.md) para crear temáticas personalizadas. El editor de temáticas es un poderoso editor WYSIWYG. Es un método visual para aplicar CSS a varios componentes de un formulario adaptable. Proporciona controles más precisos para aplicar estilo a los componentes y los paneles de un formulario adaptable.
+Puede usar el complemento [editor de temáticas](/help/forms/using/themes.md) para crear temáticas personalizadas. El editor de temáticas es un poderoso editor WYSIWYG. Es un método visual para aplicar CSS a varios componentes de un formulario adaptable. Proporciona controles más precisos para aplicar estilo a los componentes y los paneles de un formulario adaptable.
 
 Una temática es una entidad independiente como los formularios adaptables. Contiene estilos (CSS) para los componentes y paneles de un formulario adaptable. Los estilos incluyen propiedades CSS como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se aplica a los componentes correspondientes de un formulario adaptable.
 
@@ -123,7 +122,7 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
 
 ### Aplicar estilo al encabezado y al pie de página {#style-header-and-footer}
 
-El encabezado y el pie de página proporcionan una apariencia coherente y distintiva a un formulario adaptable. Por lo general, el encabezado contiene el logotipo y el nombre de la organización, el pie de página contiene información sobre los derechos de autor y estos datos son idénticos en varias formas de organización. Para aplicar estilo al encabezado y al pie de página del formulario adaptable shipping-address-add-update-form, haga lo siguiente:
+El encabezado y el pie de página proporcionan una apariencia coherente y distintiva a un formulario adaptable. Por lo general, el encabezado contiene el logotipo y el nombre de la organización, el pie de página contiene información sobre los derechos de autor y estos datos son idénticos en varias formas de organización. Para aplicar estilo al encabezado y al pie de página del formulario adaptable Formulario-actualizar-agregar-dirección-envío:
 
 1. Navegue hasta la opción **[!UICONTROL Encabezado]** > **[!UICONTROL Texto]** en el panel Selectores. El panel Selectores se encuentra a la izquierda del editor de temáticas. Si el panel no está visible, pulse ![toggle-side-panel](assets/toggle-side-panel.png) Alternar panel lateral.
 
@@ -131,7 +130,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
 
    | Propiedad | Valor |
    |---|---|
-   | Familia de fuentes | Arial |
+   | Familia de fuentes | Arial® |
    | Color de fuente | FFFFFF |
    | Tamaño de fuente | 54 px |
 
@@ -161,7 +160,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
         <li>Superior: 1,5 rem</li> 
         <li>Inferior: -35 px</li> 
         <li>Izquierda: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Sugerencia:</strong> Pulse el icono de vínculo <img src="assets/link.png"> para proporcionar un valor diferente a cada campo.<br /> </p> </td> 
+       </ul> <p><strong>Sugerencia:</strong> Pulse el botón <img src="assets/link.png"> icono de vínculo para proporcionar un valor diferente a cada campo.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Altura</td> 
@@ -174,7 +173,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
 
 ### Aplicar un estilo al componente de captura de datos y un fondo al formulario adaptable {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Puede utilizar varios componentes en un formulario adaptable para capturar datos. Por ejemplo, cuadro de texto y cuadro numérico. Puede proporcionar un estilo idéntico a todos los componentes de captura de datos o a todos los estilos independientes para cada componente. En este tutorial, se aplica un estilo idéntico a los cuadros numéricos (ID de cliente, código postal) y los cuadros de texto (ID de cliente, nombre, dirección de envío, estado, correo electrónico). Para aplicar estilo a los componentes de captura de datos, haga lo siguiente:
+Puede utilizar varios componentes en un formulario adaptable para capturar datos. Por ejemplo, cuadro de texto y cuadro numérico. Puede proporcionar un estilo idéntico a todos los componentes de captura de datos o a uno independiente para cada componente. En este tutorial, se aplica un estilo idéntico a los cuadros numéricos (ID de cliente, código postal) y los cuadros de texto (ID de cliente, nombre, dirección de envío, estado, correo electrónico). Para aplicar estilo a los componentes de captura de datos, haga lo siguiente:
 
 1. Pulse **[!UICONTROL ID de cliente]** y pulse la opción **[!UICONTROL Widget de campo]**. Establezca las siguientes propiedades y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -204,7 +203,7 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
      <tr> 
       <td>Texto</td> 
       <td>Familia de fuentes</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -273,7 +272,7 @@ Puede utilizar una temática personalizada para aplicar un estilo idéntico a to
      <tr> 
       <td>Texto<br /> </td> 
       <td>Familia de fuentes</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -377,7 +376,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
      <tr> 
       <td>Texto</td> 
       <td>Familia de fuentes</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -438,21 +437,21 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Paso 5: Sección Bonus: usar fuentes web en una temática personalizada {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Paso 5: Sección Bonus: usar Web Fonts en una temática personalizada {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible que no todos los dispositivos en los que se visualiza el formulario adaptable tengan las fuentes utilizadas para diseñar el formulario adaptable. Puede utilizar un servicio de fuentes web para enviar las fuentes necesarias al dispositivo de destino.
 
-[!DNL Adobe Fonts] es un servicio de fuentes web. Puede configurar y utilizar el servicio con formularios adaptables. Para usar [!DNL Adobe Fonts] en un formulario adaptable, haga lo siguiente:
+[!DNL Adobe Fonts] es un servicio de Web Fonts. Puede configurar y utilizar el servicio con formularios adaptables. Para usar [!DNL Adobe Fonts] en un formulario adaptable, haga lo siguiente:
 
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] ahora se denomina Adobe Fonts y se incluye con Creative Cloud y otras suscripciones. [Más información](https://fonts.adobe.com/).
 
-1. Cree una cuenta de [Adobe Fonts](https://typekit.com/), cree un kit, agregue la fuente Myriad Pro al kit, publíquelo y obtenga su ID. Es necesario utilizar [!DNL Adobe Fonts] (Fuentes web) en un formulario adaptable.
-1. En el servidor de AEM [!DNL Forms], navegue hasta ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. A continuación, abra una carpeta de configuración. Si hay alguna configuración disponible, haga clic en el botón **[!UICONTROL Crear]** para crear una instancia nueva.
+1. Cree una cuenta de [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com), cree un kit, agregue la fuente Myriad Pro al kit, publíquelo y obtenga su ID. Es necesario utilizar [!DNL Adobe Fonts] (Web Fonts) en un formulario adaptable.
+1. AEM En el [!DNL Forms] Servidor, vaya a ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. A continuación, abra una carpeta de configuración. Si ya hay una configuración disponible, haga clic en el botón **[!UICONTROL Crear]** para crear una instancia.
 
    En el cuadro de diálogo Crear configuración, especifique un **título** para la configuración y haga clic en **[!UICONTROL Crear]**. Se le redirigirá a la página de configuración. En el cuadro de diálogo [!UICONTROL Editar componente] que aparece, proporcione el **ID del kit** y haga clic en **[!UICONTROL Aceptar]**.
 
-1. Configure la temática para que use la configuración [!DNL Adobe Fonts]. En la instancia de autor, abra la **[!UICONTROL Temática global]** en el editor de temáticas. En el editor de temáticas, vaya a **[!UICONTROL Opciones de temática]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. En el campo **[!UICONTROL Configurar Adobe Fonts]**, seleccione un kit y haga clic en **[!UICONTROL Guardar]**.
+1. Configure la temática para que use la configuración [!DNL Adobe Fonts]. En la instancia de autor, abra la **[!UICONTROL Temática global]** en el editor de temáticas. En el editor de temáticas, vaya a **[!UICONTROL Opciones de temática]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. En el **[!UICONTROL Configuración de Adobe Fonts]** , seleccione el kit y haga clic en **[!UICONTROL Guardar]**.
 
    Las fuentes agregadas a **[!UICONTROL Adobe Fonts]** están disponibles para seleccionarlas en el acordeón **[!UICONTROL Texto]** de todos los componentes.

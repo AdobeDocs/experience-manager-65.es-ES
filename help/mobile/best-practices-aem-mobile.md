@@ -1,14 +1,14 @@
 ---
 title: Prácticas recomendadas para AEM Mobile On-demand Services
-description: AEM Conozca las prácticas recomendadas y las directrices que ayudan a los desarrolladores de sitios con experiencia en la creación de plantillas y componentes de aplicaciones móviles, y que tienen mucho experiencia en la creación de sitios web.
+description: Conozca las prácticas recomendadas y las directrices que ayudan a los desarrolladores competentes de Adobe Experience Manager AEM () para sitios que desean crear plantillas y componentes de aplicaciones móviles.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Crear una aplicación de AEM Mobile On-demand Services es diferente a crear una aplicación que se ejecute directamente en el shell de Cordova (o PhoneGap). Los desarrolladores deben estar familiarizados con lo siguiente:
 
-* Complementos compatibles de forma predeterminada y los complementos específicos de AEM Mobile.
+* Complementos admitidos de forma predeterminada y los complementos específicos de Adobe Experience Manager AEM () Mobile.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Crear una aplicación de AEM Mobile On-demand Services es diferente a crear una 
 
 ## AEM Directrices para desarrolladores de {#guidelines-for-aem-developers}
 
-AEM Las siguientes directrices ayudan a los desarrolladores experimentados en la creación de sitios web, que desean crear plantillas y componentes de aplicaciones móviles:
+AEM Las siguientes directrices ayudan a los desarrolladores competentes de la aplicación para sitios que deseen crear plantillas y componentes de aplicaciones móviles:
 
 **AEM Estructura de plantillas de sitios para fomentar la reutilización y la extensibilidad**
 
@@ -60,10 +60,10 @@ AEM Las siguientes directrices ayudan a los desarrolladores experimentados en la
 >
 >Puede obtener más información en detalle sobre los scripts externos que bloquean el procesamiento [aquí](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Preferir bibliotecas JS y CSS del lado del cliente y específicas de la aplicación sobre las específicas de la web**
+**Preferir bibliotecas CSS y JS del lado del cliente y específicas de la aplicación sobre las específicas de la web**
 
 * Para evitar sobrecargas en bibliotecas como jQuery Mobile para gestionar una gran cantidad de dispositivos y navegadores
-* Cuando se ejecuta una plantilla en la vista web de una aplicación, usted tiene control sobre las plataformas y versiones que la aplicación va a admitir y sabe que la compatibilidad con JavaScript estará presente. Por ejemplo, prefiera Ionic (quizás solo el CSS) sobre jQuery Mobile y la interfaz de usuario de Onsen sobre Bootstrap.
+* Cuando se ejecuta una plantilla en la vista web de una aplicación, usted tiene control sobre las plataformas y versiones que la aplicación va a admitir y sabe que la compatibilidad con JavaScript estará presente. Por ejemplo, prefiera Ionic (solo el CSS) sobre jQuery Mobile y la interfaz de usuario de Onsen sobre Bootstrap.
 
 >[!NOTE]
 >
@@ -71,9 +71,9 @@ AEM Las siguientes directrices ayudan a los desarrolladores experimentados en la
 
 **Preferir las microbibliotecas en lugar de la pila completa**
 
-* El tiempo que se tarda en poner el contenido en el cristal del dispositivo se ralentizará con cada biblioteca de la que dependan los artículos. Esta ralentización se agrava cuando se utiliza una nueva vista web para procesar cada artículo, por lo que cada biblioteca debe inicializarse de nuevo desde cero
+* El tiempo que se tarda en poner el contenido en el cristal del dispositivo se ralentiza con cada biblioteca de la que dependen los artículos. Esta ralentización se agrava cuando se utiliza una nueva vista web para procesar cada artículo, por lo que cada biblioteca debe inicializarse de nuevo desde cero
 * SPA Si los artículos no están diseñados como tal (aplicaciones de una sola página), probablemente no necesite incluir una biblioteca de pila completa como Angular
-* Prefiera bibliotecas de un solo propósito más pequeñas para añadir la interactividad que requiere su página, como [Fastclick](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
+* Prefiera bibliotecas de un solo uso más pequeñas que ayuden a añadir la interactividad que requiere su página, como las siguientes [Fastclick](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
 
 **Minimizar el tamaño de la carga útil del artículo**
 
