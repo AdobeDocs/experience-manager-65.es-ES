@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
 workflow-type: tm+mt
-source-wordcount: '5529'
+source-wordcount: '5517'
 ht-degree: 93%
 
 ---
@@ -243,7 +243,7 @@ Establezca variables de entorno para el kit de desarrollo de Java de 32 y 64 b
 >[!NOTE]
 >
 >* Todas las variables de entorno y sus respectivas rutas distinguen entre mayúsculas y minúsculas.
->* JAVA_HOME, JAVA_HOME_32 y Acrobat_PATH (solo Windows) son variables de entorno obligatorias.
+>* JAVA_HOME y Acrobat_PATH (solo Windows) son variables de entorno obligatorias.
 >* La variable de entorno OpenOffice_PATH se establece en la carpeta de instalación en lugar de en la ruta del ejecutable.
 >* No configure variables de entorno para las aplicaciones de Microsoft® Office, como Word, PowerPoint, Excel y Project, ni para AutoCAD. Si estas aplicaciones están instaladas en el servidor, el servicio Generate PDF las inicia automáticamente.
 >* En plataformas basadas en UNIX, instale OpenOffice como /root. Si OpenOffice no está instalado como raíz, el servicio PDF Generator no convierte los documentos de OpenOffice en documentos PDF. Si necesita instalar y ejecutar OpenOffice como un usuario no raíz, proporcione derechos sudo al usuario no raíz.
@@ -686,8 +686,6 @@ Problemas de conversión de ++HTML a PDF
   ```
   ldd phantomjs | grep not
   ```
-
-* Asegúrese de que la variable de entorno JAVA_HOME_32 apunta a la ubicación correcta.
 
 **Linux® y Solaris™ (ruta de conversión WebKit)**
 
