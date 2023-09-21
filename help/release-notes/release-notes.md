@@ -2,7 +2,7 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
+source-git-commit: ffda4927ddc8555564f33697fa81d1f8a0cd2cdc
 workflow-type: tm+mt
 source-wordcount: '4548'
 ht-degree: 2%
@@ -371,7 +371,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * **La publicación de páginas no funciona en el Editor de páginas después de actualizar a Service Pack 18 (6.5.18.0)**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM AEM Después de actualizar una instancia de la versión 6.5.0.0—6.5.17.0 a la versión 6.5.18.0, al hacer clic en la opción de la versión 6.5.0.0, al hacer clic en **[!UICONTROL Publicar página]** dentro del Editor de páginas, se le redirige a una dirección URL que no existe.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> AEM AEM Después de actualizar una instancia de la versión 6.5.0.0—6.5.17.0 a la versión 6.5.18.0, al hacer clic en la opción de la versión 6.5.0.0, al hacer clic en **Publicar página** dentro del Editor de páginas, se le redirige a una dirección URL que no existe.
 
   Para solucionar este problema, realice una de las siguientes acciones:
 
