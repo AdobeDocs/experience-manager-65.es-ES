@@ -2,22 +2,22 @@
 title: Estado de la función de IU táctil
 description: Notas de versión específicas de [!DNL Adobe Experience Manager] IU táctil.
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1067'
 ht-degree: 15%
 
 ---
 
 # Estado de la función de IU táctil {#touch-ui-feature-status}
 
-AEM,4 en adelante [La IU clásica está obsoleta](../release-notes/deprecated-removed-features.md). Adobe no realizará más mejoras en la IU clásica y se recomienda a los usuarios aprovechar las nuevas y potentes funciones disponibles en la IU táctil.
+Adobe Experience Manager AEM () 6.4 en adelante [La IU clásica está obsoleta](../release-notes/deprecated-removed-features.md). El Adobe de no está realizando más mejoras en la IU clásica y se recomienda a los usuarios utilizar las potentes nuevas funciones disponibles en la IU táctil.
 
-AEM A partir de la versión 6.0 de, introdujo una nueva interfaz de usuario denominada &quot;IU táctil&quot; (denominada simplemente &quot;IU táctil&quot;) que se alinea con la [!DNL Adobe Experience Cloud] y a las directrices generales de la interfaz de usuario de Adobe. AEM Una vez alcanzada la paridad casi total de las características, esta se ha convertido en la interfaz de usuario estándar en comparación con la interfaz heredada y orientada al escritorio, denominada &quot;IU clásica&quot;.
+AEM A partir de la versión 6.0 de, introdujo una nueva interfaz de usuario denominada &quot;IU táctil&quot; (denominada &quot;IU táctil&quot;) que se alinea con la [!DNL Adobe Experience Cloud] y a las directrices generales de la interfaz de usuario de Adobe. AEM Una vez alcanzada la paridad casi total de las características, esta se ha convertido en la interfaz de usuario estándar en comparación con la interfaz heredada y orientada al escritorio, denominada &quot;IU clásica&quot;.
 
 Aunque la mayoría de las funciones están presentes en la interfaz de usuario táctil, hay funciones que aún no se han completado y que se añadirán en versiones futuras.
 
-AEM La siguiente lista muestra el estado actual de las funciones tal como se implementaron en la versión 6.5 de la.
+AEM La siguiente lista muestra el estado de las funciones tal como se implementaron en la versión 6.5 de la.
 
 AEM Para ver las recomendaciones para los clientes que actualizan a la versión 6.5 de, consulte [Recomendaciones de interfaz de usuario para clientes de](/help/sites-deploying/ui-recommendations.md).
 
@@ -53,7 +53,7 @@ Esta es una lista de funcionalidades que ofrece el clásico Administrador del si
 | Mostrar estado de publicación | Completar | AEM A partir de la versión 6.5, el estado del flujo de trabajo se muestra en la vista de lista. |
 | Búsqueda | Completar |  |
 | Copiar y pegar página (duplicado) | Completar |  |
-| Mover página(s) | Completar |  |
+| Mover páginas | Completar |  |
 | Publicar páginas | Completar |  |
 | Publicar páginas sin derechos de replicación | Completar |  |
 | Publicar posteriormente | Completar |  |
@@ -64,15 +64,15 @@ Esta es una lista de funcionalidades que ofrece el clásico Administrador del si
 | Eliminar | Completar |  |
 | Bloquear/Desbloquear | Completar |  |
 | Ver/Editar propiedades | Completar |  |
-| Definir permisos en las páginas | Completar |  |
+| Definición de permisos en páginas | Completar |  |
 | Historial de versiones | Completar |  |
 | Restaurar versión | Completar |  |
 | Restaurar árbol y restaurar páginas eliminadas | Falta | Utilice la IU clásica. |
 | Mostrar diferencia entre la versión antigua y la actual | Completar |  |
-| Acciones de LiveCopy (despliegue) | Completar |  |
+| Acciones de Live Copy (Despliegue) | Completar |  |
 | Consulte Copias de idioma | Completar |  |
 | Buscar y reemplazar | Falta | Utilice la IU clásica. |
-| Bandeja de entrada de notificaciones (eventos JCR) | Falta | Utilice la IU clásica. Se reemplazarán con una implementación diferente. |
+| Bandeja de entrada de notificaciones (eventos JCR) | Falta | Utilice la IU clásica. Se reemplazará con una implementación diferente en el futuro. |
 | Referencias | Completar | AEM Visualización de los vínculos de página entrante añadidos a la versión 6.5 de la. |
 
 ## Estado de la función: Editor de páginas {#feature-status-page-editor}
@@ -98,7 +98,7 @@ Esta es una lista de funcionalidades del editor de páginas de IU clásico (`/cf
 | Editar propiedades | Completar |  |
 | Desplegar página | Completar |  |
 | Iniciar y mostrar flujo de trabajo | Completar |  |
-| Administración de paquetes de flujo de trabajo | Principalmente | Totalmente accesible en la IU táctil. Varias cargas útiles de flujo de trabajo siguen presentándose en la IU clásica. |
+| Administración de paquetes de flujo de trabajo | Principalmente | Accesible en la interfaz de usuario táctil. Varias cargas útiles de flujo de trabajo siguen presentándose en la IU clásica. |
 | Bloquear/desbloquear página | Completar |  |
 | Publicar página | Completar |  |
 | Cancelar la publicación de la página | Completar |  |
@@ -111,7 +111,7 @@ Esta es una lista de funcionalidades del editor de páginas de IU clásico (`/cf
 | Restaurar versión | Eliminado | Use Administrador del sitio para [restaurar versiones](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
 | Cambiar inicios | Eliminado | Use Administrador del sitio para [cambiar entre lanzamientos](/help/sites-authoring/launches-promoting.md). |
 | Traducir página | Eliminado | Use Administrador del sitio para [añadir página a proyectos de traducción](/help/sites-administering/tc-manage.md). |
-| Deformación de tiempo (elija fecha/hora y explore el sitio tal y como estaba) | Completar |  |
+| Deformación de tiempo (elija la fecha y la hora y explore el sitio tal y como estaba) | Completar |  |
 | Definir permisos | Completar |  |
 | IU de Client Context | Reemplazado | Utilice el [ContextHub](/help/sites-authoring/ch-previewing.md) Interfaz de usuario en adelante. |
 | Buscador de contenido para los distintos tipos de medios | Completar |  |
@@ -134,7 +134,7 @@ Esta es una lista de funcionalidades que tienen la IU clásica del Editor de tex
 | Complemento RTE: Vínculos y anclajes | Completar |  |
 | Complemento RTE: mapa de caracteres | Completar |  |
 | Complemento RTE: copiar/pegar | Completar |  |
-| Complemento RTE: pegar desde Microsoft Word | Completar |  |
+| Complemento RTE: pegar desde Microsoft® Word | Completar |  |
 | Complemento RTE: buscar y reemplazar | Completar |  |
 | Complemento RTE: Formatos de texto (negrita, ...) | Completar |  |
 | Complemento RTE: subíndice y superíndice | Completar |  |
