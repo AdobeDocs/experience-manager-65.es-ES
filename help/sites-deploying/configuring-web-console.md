@@ -1,22 +1,20 @@
 ---
 title: AEM Consola web en el
-description: AEM Obtenga información sobre cómo utilizar la consola web en el uso de la plataforma de.
-uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
+description: Aprenda a utilizar la consola web en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
 
 # Consola web{#web-console}
 
-AEM La consola web en la que se ejecuta (Adobe Experience Manager) se basa en la variable [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
+La consola web de Adobe Experience Manager AEM () se basa en la variable [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
 
 >[!NOTE]
 >
@@ -54,7 +52,7 @@ El **Configuración** se puede acceder a la pestaña mediante:
 
   `http://localhost:4502/system/console/configMgr`
 
-Se mostrará una lista de configuraciones:
+Se muestra una lista de configuraciones:
 
 ![screen_shot_2012-02-15at52308pm-1](assets/screen_shot_2012-02-15at52308pm-1.png)
 
@@ -69,11 +67,11 @@ Hay dos tipos de configuraciones disponibles en las listas desplegables de esta 
 
 * **Configuraciones de fábrica**
 
-  Permite crear una instancia del objeto de funcionalidad requerido.
+  Cree una instancia del objeto de funcionalidad requerido.
 
-  Se le asignará una identidad persistente y, a continuación, se enumerará en la lista desplegable Configuraciones.
+  Se asigna a una identidad persistente y, a continuación, se enumera en la lista desplegable Configuraciones.
 
-Al seleccionar cualquier entrada de las listas, se muestran los parámetros relacionados con esa configuración:
+Al seleccionar cualquier entrada de la lista, se muestran los parámetros relacionados con esa configuración:
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -83,11 +81,11 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
   Guarde los cambios realizados.
 
-  Para una configuración de fábrica, se creará una nueva instancia con una identidad persistente. La nueva instancia se enumerará en Configuraciones.
+  Para una configuración de fábrica, se crea una instancia con una identidad persistente. La nueva instancia se muestra en Configuraciones.
 
 * **Restablecer**
 
-  Restablezca los parámetros mostrados en pantalla a los guardados en último lugar.
+  Restablezca los parámetros mostrados en la pantalla a los guardados en último lugar.
 
 * **Eliminar**
 
@@ -113,7 +111,7 @@ El **Paquetes** AEM es el mecanismo para instalar los paquetes OSGi necesarios p
 
   `http://localhost:4502/system/console/bundles`
 
-Se mostrará una lista de paquetes:
+Se muestra una lista de paquetes:
 
 ![screen_shot_2012-02-15at44740pm-1](assets/screen_shot_2012-02-15at44740pm-1.png)
 
@@ -129,9 +127,9 @@ Con esta pestaña puede:
 
 * **Actualizar paquetes**
 
-  Esto comprobará las referencias de todos los paquetes y se actualizará según sea necesario.
+  Esto comprueba las referencias de todos los paquetes y se actualiza según sea necesario.
 
-  Por ejemplo, después de una actualización, es posible que tanto la versión antigua como la nueva se sigan ejecutando debido a referencias anteriores. Esta opción comprobará y moverá todas las referencias a la nueva versión, permitiendo que se detenga la versión antigua.
+  Por ejemplo, después de una actualización, es posible que tanto la versión antigua como la nueva se sigan ejecutando debido a referencias anteriores. Esta opción comprueba y mueve todas las referencias a la nueva versión, lo que permite detener la versión antigua.
 
 * **Inicial**
 
@@ -147,11 +145,11 @@ Con esta pestaña puede:
 
 * **ver el estado**
 
-  La lista especifica el estado actual del paquete; al hacer clic en el nombre de un paquete específico se muestra más información.
+  La lista especifica el estado del paquete; al hacer clic en el nombre de un paquete específico con se muestra más información.
 
 >[!NOTE]
 >
->Después **Actualizar** se recomienda realizar una **Actualizar paquetes**.
+>Después **Actualizar**, el Adobe recomienda que realice una **Actualizar paquetes**.
 
 ## Componentes {#components}
 
@@ -165,16 +163,16 @@ El **Componentes** La pestaña permite activar o desactivar los distintos compon
 
   `http://localhost:4502/system/console/components`
 
-Se mostrará una lista de componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir los detalles de configuración de un componente específico.
+Se muestra una lista de componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir los detalles de configuración de un componente específico.
 
 ![screen_shot_2012-02-15at52144pm-1](assets/screen_shot_2012-02-15at52144pm-1.png)
 
-Al hacer clic en el nombre de un componente en particular, se mostrará más información sobre su estado. Aquí también puede habilitar, deshabilitar o volver a cargar el componente.
+Al hacer clic en el nombre de un componente en particular, se muestra más información sobre su estado. Aquí también puede habilitar, deshabilitar o volver a cargar el componente.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
 >[!NOTE]
 >
->AEM Al habilitar o deshabilitar un componente, solo se aplicará hasta que se reinicie CRX/.
+>AEM Habilitar o deshabilitar un componente solo se aplica hasta que se reinicia CRX/CRX
 >
 >El estado de inicio se define dentro del descriptor del componente, que se genera durante el desarrollo y se almacena en el paquete en el momento de la creación del paquete.

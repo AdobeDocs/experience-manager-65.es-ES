@@ -1,6 +1,6 @@
 ---
 title: Consultas e indexación de Oak
-description: AEM Obtenga información sobre cómo configurar índices en la.
+description: Obtenga información sobre cómo configurar índices en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,7 +8,7 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-A diferencia de Jackrabbit 2, Oak no indexa el contenido de forma predeterminada. Se deben crear índices personalizados cuando sea necesario, como con las bases de datos relacionales tradicionales. Si no hay ningún índice para una consulta específica, posiblemente se atravesarán muchos nodos. La consulta puede seguir funcionando, pero probablemente sea bastante lenta.
+A diferencia de Jackrabbit 2, Oak no indexa el contenido de forma predeterminada. Se deben crear índices personalizados cuando sea necesario, como con las bases de datos relacionales tradicionales. Si no hay ningún índice para una consulta específica, es posible que se atraviesen muchos nodos. La consulta puede seguir funcionando, pero es probable que sea lenta.
 
 Si Oak encuentra una consulta sin índice, se imprime un mensaje de registro de nivel WARN:
 
@@ -64,7 +64,7 @@ A continuación, se consulta cada índice para estimar el coste de la consulta. 
 
 >[!NOTE]
 >
->Para un repositorio grande, la creación de un índice es una operación que lleva mucho tiempo. Esto es así tanto para la creación inicial de un índice como para la reindexación (reconstrucción de un índice después de cambiar la definición). Consulte también [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) y [Prevención de la reindexación lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Para un repositorio grande, crear un índice es una operación que requiere mucho tiempo. Esto es así tanto para la creación inicial de un índice como para la reindexación (reconstrucción de un índice después de cambiar la definición). Consulte también [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) y [Prevención de la reindexación lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Si es necesario reindexar en repositorios grandes, especialmente cuando se utiliza MongoDB y para índices de texto completo, considere la preextracción de texto y el uso de oak-run para crear el índice inicial y reindexar.
 
@@ -84,7 +84,7 @@ El índice de propiedades es útil para consultas que tienen restricciones de pr
    * **tipo:**  `property` (de tipo cadena)
    * **propertyNames:**  `jcr:uuid` (de tipo Nombre)
 
-   Este ejemplo en particular indexará el `jcr:uuid` , cuyo trabajo es exponer el identificador único universal (UUID) del nodo al que está asociado.
+   Este ejemplo en particular indexa el `jcr:uuid` , cuyo trabajo es exponer el identificador único universal (UUID) del nodo al que está asociado.
 
 1. Guarde los cambios.
 
@@ -92,11 +92,11 @@ El índice de propiedades tiene las siguientes opciones de configuración:
 
 * El **type** especifica el tipo de índice y, en este caso, se debe establecer en **propiedad**
 
-* El **propertyNames** indica la lista de las propiedades que se almacenarán en el índice. En caso de que falte, el nombre del nodo se utiliza como valor de referencia del nombre de propiedad. En este ejemplo, la variable **jcr:uuid** La propiedad de cuyo trabajo es exponer el identificador único (UUID) de su nodo se agrega al índice.
+* El **propertyNames** indica la lista de las propiedades almacenadas en el índice. En caso de que falte, el nombre del nodo se utiliza como valor de referencia del nombre de propiedad. En este ejemplo, la variable **jcr:uuid** La propiedad de cuyo trabajo es exponer el identificador único (UUID) de su nodo se agrega al índice.
 
 * El **único** indicador que, si se establece en **true** agrega una restricción de unicidad al índice de propiedades.
 
-* El **declaringNodeTypes** La propiedad permite especificar un tipo de nodo determinado al que el índice solo se aplicará.
+* El **declaringNodeTypes** La propiedad permite especificar un tipo de nodo determinado al que el índice solo se aplica.
 * El **reindexar** indicador que si se establece en **true**, déclencheur un reíndice de contenido completo.
 
 ### El índice ordenado {#the-ordered-index}
@@ -109,9 +109,9 @@ AEM En la versión 6 de está disponible un indexador de texto completo basado e
 
 Si se configura un índice de texto completo, todas las consultas que tienen una condición de texto completo utilizan el índice de texto completo, independientemente de si hay otras condiciones que están indizadas y de si hay una restricción de ruta.
 
-Si no se configura ningún índice de texto completo, las consultas con condiciones de texto completo no funcionarán según lo esperado.
+Si no se configura ningún índice de texto completo, las consultas con condiciones de texto completo no funcionan según lo esperado.
 
-Debido a que el índice se actualiza a través de un subproceso asincrónico en segundo plano, algunas búsquedas de texto completo no están disponibles durante un breve período de tiempo hasta que finalizan los procesos en segundo plano.
+Dado que el índice se actualiza mediante un subproceso en segundo plano asincrónico, algunas búsquedas de texto completo no están disponibles durante un período de tiempo breve hasta que finalizan los procesos en segundo plano.
 
 Puede configurar un índice de texto completo de Lucene siguiendo el siguiente procedimiento:
 
@@ -134,7 +134,7 @@ El índice Lucene tiene las siguientes opciones de configuración:
 
 ### Explicación de la búsqueda de texto completo {#understanding-fulltext-search}
 
-La documentación de esta sección se aplica a Apache Lucene, Elasticsearch, así como a índices de texto completo de, por ejemplo, PostgreSQL, SQLite, MySQL. AEM El siguiente ejemplo es para el caso de la aplicación de la combinación de: Oak / Lucene.
+La documentación de esta sección se aplica a Apache Lucene, Elasticsearch e índices de texto completo de PostgreSQL, SQLite y MySQL, por ejemplo. AEM El siguiente ejemplo es para el caso de la aplicación de la combinación de: Oak / Lucene.
 
 <b>Datos que indexar</b>
 
@@ -151,9 +151,9 @@ El punto de partida son los datos que deben indexarse. Veamos los siguientes doc
 
 El mecanismo de indexación divide el texto completo en palabras denominadas &quot;tokens&quot; y crea un índice denominado &quot;índice invertido&quot;. Este índice contiene la lista de documentos donde aparece para cada palabra.
 
-Las palabras comunes muy cortas (también llamadas &quot;palabras de parada&quot;) no están indexadas. Todos los tokens se convierten a minúsculas y se aplica la derivación.
+Las palabras cortas y comunes (también denominadas &quot;palabras de parada&quot;) no se indexan. Todos los tokens se convierten a minúsculas y se aplica la derivación.
 
-Observe los caracteres especiales como *&quot;-&quot;* no están indexados.
+Caracteres especiales como *&quot;-&quot;* no están indexados.
 
 | <b>Token</b> | <b>Identificadores de documento</b> |
 | --- | --- |
@@ -161,10 +161,10 @@ Observe los caracteres especiales como *&quot;-&quot;* no están indexados.
 | marca | ..., 100,... |
 | cubo | ..., 200, 300,... |
 | dimensión | 300 |
-| finés | ..., 100,... |
+| terminar | ..., 100,... |
 | inventar | 200 |
 | objeto | ..., 300,... |
-| rubí | .., 100, 200,... |
+| rubí | ..., 100, 200,... |
 
 La lista de documentos está ordenada. Esto resulta útil cuando se realiza una consulta.
 
@@ -182,7 +182,7 @@ Las palabras se identifican mediante token y se filtran del mismo modo que al in
 +:fulltext:rubik +:fulltext:cube
 ```
 
-A continuación, el índice consultará la lista de documentos para esas palabras. Si hay muchos documentos, las listas pueden ser muy grandes. Por ejemplo, supongamos que contienen lo siguiente:
+El índice consulta la lista de documentos para esas palabras. Si hay muchos documentos, la lista puede ser grande. A modo de ejemplo, supongamos que contienen lo siguiente:
 
 
 | <b>Token</b> | <b>Identificadores de documento</b> |
@@ -191,7 +191,7 @@ A continuación, el índice consultará la lista de documentos para esas palabra
 | cubo | 30, 200, 300, 2000 |
 
 
-Lucene cambiará de una lista a otra (o round-robin) `n` listas, al buscar `n` palabras):
+Lucene gira hacia atrás y hacia adelante entre las dos listas (o round-robin) `n` listas, al buscar `n` palabras):
 
 * Leído en el &quot;rubik&quot; obtiene la primera entrada: encuentra 10
 * Leído en el &quot;cubo&quot; obtiene la primera entrada `>` = 10. 10 no se encuentra, el siguiente es 30.
@@ -201,7 +201,7 @@ Lucene cambiará de una lista a otra (o round-robin) `n` listas, al buscar `n` p
 * Leer en el &quot;rubik&quot; obtiene la siguiente entrada: 1000.
 * Leído en el &quot;cubo&quot; obtiene la primera entrada `>` = 1000: encuentra 2000.
 * Leer en el &quot;rubik&quot; obtiene la primera entrada `>` = 2000: final de la lista.
-* Finalmente, podemos dejar de buscar.
+* Por último, puede detener la búsqueda.
 
 El único documento encontrado que contiene ambos términos es 200, como en el ejemplo siguiente:
 
@@ -297,14 +297,14 @@ Si desea utilizar cualquier analizador predeterminado, puede configurarlo siguie
 
    If `luceneMatchVersion` no se proporciona, Oak utiliza la versión de Lucene con la que se envía.
 
-1. Si desea añadir un archivo de palabras de parada a las configuraciones del analizador, puede crear un nodo en `default` uno con las siguientes propiedades:
+1. Si desea añadir un archivo de palabras de detención a las configuraciones del analizador, puede crear un nodo en el `default` uno con las siguientes propiedades:
 
    * **Nombre:** `stopwords`
    * **Tipo:** `nt:file`
 
 #### Creación de analizadores mediante composición {#creating-analyzers-via-composition}
 
-Los analizadores también pueden estar compuestos por `Tokenizers`, `TokenFilters` y `CharFilters`. Para ello, especifique un analizador y cree nodos secundarios de sus tokenizers y filtros opcionales que se aplicarán en el orden indicado. Consulte también [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Los analizadores también pueden estar compuestos por `Tokenizers`, `TokenFilters`, y `CharFilters`. Para ello, especifique un analizador y cree nodos secundarios de sus tokenizers y filtros opcionales que se apliquen en el orden indicado. Consulte también [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Consideremos esta estructura de nodos como un ejemplo:
 
@@ -354,7 +354,7 @@ El nombre de los filtros, charFilters y tokenizers se forman eliminando los sufi
 
 Cualquier parámetro de configuración necesario para la fábrica se especifica como propiedad del nodo en cuestión.
 
-En casos como la carga de palabras de detención en las que es necesario cargar contenido de archivos externos, el contenido se puede proporcionar creando un nodo secundario de `nt:file` escriba para el archivo en cuestión.
+En casos como la carga de palabras de detención en las que se debe cargar contenido de archivos externos, el contenido se puede proporcionar creando un nodo secundario de `nt:file` escriba para el archivo en cuestión.
 
 ### El Índice Solr {#the-solr-index}
 
@@ -368,7 +368,7 @@ AEM Se puede configurar para que funcione como un servidor remoto con la instanc
 
 AEM También se puede configurar para que funcione con una instancia remota del servidor Solr:
 
-1. Descargue y extraiga la última versión de Solr. Para obtener más información sobre cómo hacerlo, consulte [Documentación de instalación de Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Descargue y extraiga la última versión de Solr. Para obtener más información sobre cómo hacerlo, consulte la [Documentación de instalación de Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Ahora, cree dos fragmentos de Solr. Para ello, cree carpetas para cada uso compartido de la carpeta en la que se ha desempaquetado Solr:
 
    * Para el primer uso compartido, cree la carpeta:
@@ -396,7 +396,7 @@ AEM También se puede configurar para que funcione con una instancia remota del 
 
    >[!NOTE]
    >
-   >Para obtener más información sobre la configuración de Solr y ZooKeeper, consulte la [Documentación de configuración de Solr](https://wiki.apache.org/solr/ConfiguringSolr) y el [Guía de introducción de ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Para obtener más información sobre la configuración de Solr y ZooKeeper, consulte la [Documentación de configuración de Solr](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) y el [Guía de introducción de ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
 1. Inicie el primer uso compartido con la asistencia de ZooKeeper yendo a `aemsolr1\node1` y ejecutar el siguiente comando:
 
@@ -431,7 +431,7 @@ AEM También se puede configurar para que funcione con una instancia remota del 
 
 A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. AEM Se adapta a los índices de propiedades dedicados que ya están presentes en la propiedad y que no deben usarse con otras aplicaciones.
 
-Para utilizarlo correctamente, debe colocar el contenido del archivo directamente en el Directorio principal de Solr. En el caso de implementaciones de varios nodos, debe ir directamente a la carpeta raíz de cada nodo.
+Para utilizarlo correctamente, debe colocar el contenido del archivo directamente en el Directorio principal de Solr. Si hay implementaciones de varios nodos, debe ir directamente a la carpeta raíz de cada nodo.
 
 Archivos de configuración de Solr recomendados
 
@@ -464,7 +464,7 @@ Esta sección presenta un conjunto de recomendaciones sobre lo que se debe hacer
 
 #### Preparar información de depuración para análisis {#preparing-debugging-info-for-analysis}
 
-La forma más sencilla de obtener la información necesaria para la consulta que se está ejecutando es mediante la variable [Herramienta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query). Esto permite recopilar la información precisa necesaria para depurar una consulta lenta sin necesidad de consultar la información de nivel de registro. Esto es deseable si conoce la consulta que se está depurando.
+La forma más sencilla de obtener la información necesaria para la consulta que se está ejecutando es mediante el [Herramienta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query). Esto permite recopilar la información precisa necesaria para depurar una consulta lenta sin necesidad de consultar la información de nivel de registro. Esto es deseable si conoce la consulta que se está depurando.
 
 Si no es posible por cualquier motivo, puede recopilar los registros de indexación en un solo archivo y utilizarlo para solucionar su problema concreto.
 
@@ -480,7 +480,7 @@ El **com.day.cq.search** AEM La categoría solo es aplicable si utiliza la utili
 
 >[!NOTE]
 >
->Es importante que los registros solo estén configurados en DEPURACIÓN mientras se esté ejecutando la consulta que desea solucionar. De lo contrario, se genera una gran cantidad de eventos en los registros a lo largo del tiempo. Debido a esto, una vez recopilados los registros necesarios, vuelva al registro de nivel INFO para las categorías mencionadas anteriormente.
+>Es importante que los registros solo estén configurados en DEPURACIÓN mientras se esté ejecutando la consulta que desea solucionar. De lo contrario, se generan muchos eventos en los registros a lo largo del tiempo. Debido a esto, una vez recopilados los registros necesarios, vuelva al registro de nivel INFO para las categorías mencionadas anteriormente.
 
 Puede habilitar el registro siguiendo este procedimiento:
 
@@ -516,7 +516,7 @@ A veces resulta útil proporcionar el resultado de los MBeans relacionados con �
    * Estadísticas de consulta de Oak
    * IndexStats
 
-1. Haga clic en cada uno de los MBeans para obtener las estadísticas de rendimiento. Cree una captura de pantalla o anótelas en caso de que sea necesario enviar al equipo de asistencia.
+1. Haga clic en cada uno de los MBean para obtener estadísticas de rendimiento. Cree una captura de pantalla o anótelas en caso de que sea necesario un envío de asistencia.
 
 También puede obtener la variante JSON de estas estadísticas en las siguientes URL:
 

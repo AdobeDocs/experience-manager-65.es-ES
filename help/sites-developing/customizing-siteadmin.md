@@ -1,19 +1,15 @@
 ---
 title: Personalización de la consola Sitios web (IU clásica)
-seo-title: Customizing the Websites Console (Classic UI)
 description: La consola Administración de sitios web se puede ampliar para mostrar columnas personalizadas
-seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -38,7 +34,6 @@ Este tutorial paso a paso explica cómo mostrar una nueva columna en la consola 
 >* la consola Comunidad
 >
 
-
 ### Creación del servicio OSGI {#creating-the-osgi-service}
 
 El `ListInfoProvider` La interfaz de define dos métodos:
@@ -52,7 +47,7 @@ Los argumentos para ambos métodos son:
 * `info`, el objeto JSON que se va a actualizar, que es respectivamente la lista global o el elemento de lista actual,
 * `resource`, un recurso de Sling.
 
-La implementación de ejemplo siguiente:
+La implementación de ejemplo es la siguiente:
 
 * Agrega un *estrellado* propiedad para cada elemento, que es `true` si el nombre de la página comienza con un *e*, y `false` de lo contrario.
 
@@ -109,13 +104,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* Su implementación debe decidir, en función de la solicitud o el recurso proporcionados, si debe agregar la información al objeto JSON o no.
->* Si su `ListInfoProvider` implementation define una propiedad que ya existe en el objeto response; el valor que proporcione sobrescribirá esta propiedad.
+>* Si su `ListInfoProvider` implementation define una propiedad que existe en el objeto response; el valor que proporciona la sobrescribe.
 >
->  Puede utilizar [clasificación de servicios](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) para administrar el orden de ejecución de varios `ListInfoProvider` implementaciones.
+>  Puede utilizar [clasificación de servicios](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) para administrar el orden de ejecución de varios `ListInfoProvider` implementaciones.
 
 ### Prueba del nuevo servicio {#testing-the-new-service}
 
-Cuando abre la consola de administración de sitios web y explora su sitio, el explorador emite una llamada ajax para obtener el objeto JSON utilizado para crear la consola. Por ejemplo, al navegar a `/content/geometrixx` AEM carpeta, se enviará la siguiente solicitud al servidor de para crear la consola:
+Cuando abre la consola de administración de sitios web y explora su sitio, el explorador emite una llamada Ajax para obtener el objeto JSON utilizado para crear la consola. Por ejemplo, al navegar a `/content/geometrixx` AEM carpeta, se enviará la siguiente solicitud al servidor de para crear la consola:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -141,7 +136,7 @@ El último paso consiste en adaptar la estructura de nodos de la consola de admi
    * Eliminar **pageText**
 
    * Establecer **pathRegex** hasta `/content/geometrixx(/.*)?`
-Esto hará que la configuración de cuadrícula esté activa para todos los sitios web de geometrixx.
+Esto activa la configuración de cuadrícula para todos los sitios web de Geometrixx.
 
    * Establecer **storeProxySuffix** hasta `.pages.json`
 
@@ -164,7 +159,7 @@ Esto hará que la configuración de cuadrícula esté activa para todos los siti
 1. (opcional) Suelte las columnas que no desee mostrar en `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` es una ruta de vanidad que, de forma predeterminada, apunta a `/libs/wcm/core/content/siteadmin`.
-Para redireccionar esto a su versión de siteadmin en `/apps/wcm/core/content/siteadmin` definir la propiedad `sling:vanityOrder` para tener un valor superior al definido en `/libs/wcm/core/content/siteadmin`. El valor predeterminado es 300, por lo que cualquier valor superior es adecuado.
+Para redireccionar esto a su versión de siteadmin en `/apps/wcm/core/content/siteadmin`, defina la propiedad `sling:vanityOrder` para tener un valor superior al definido en `/libs/wcm/core/content/siteadmin`. El valor predeterminado es 300, por lo que cualquier valor superior es adecuado.
 
 1. Vaya a la consola de administración de sitios web y navegue hasta el sitio de Geometrixx:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -175,7 +170,7 @@ Para redireccionar esto a su versión de siteadmin en `/apps/wcm/core/content/si
 
 >[!CAUTION]
 >
->Si varias configuraciones de cuadrícula coinciden con la ruta solicitada definida por el **pathRegex** , se utilizará la primera y no la más específica, lo que significa que el orden de las configuraciones es importante.
+>Si varias configuraciones de cuadrícula coinciden con la ruta solicitada definida por el **pathRegex** , se utiliza la primera y no la más específica, lo que significa que el orden de las configuraciones es importante.
 
 ### Paquete de muestra {#sample-package}
 

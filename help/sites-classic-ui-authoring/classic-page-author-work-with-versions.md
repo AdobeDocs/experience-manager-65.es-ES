@@ -1,16 +1,16 @@
 ---
 title: Uso de versiones de página
-description: Al generar una versión, se crea una “instantánea” de una página en un momento determinado.
+description: Obtenga información sobre el control de versiones y cómo crear una "captura de pantalla" de una página en un momento específico.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 20%
+source-wordcount: '1348'
+ht-degree: 19%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 20%
 Al generar una versión, se crea una “instantánea” de una página en un momento determinado. Con las versiones, se pueden realizar las siguientes operaciones:
 
 * Crear una versión de la página.
-* Restaurar una página a una versión anterior para deshacer un cambio realizado en una página, por ejemplo.
+* Restaurar una página a una versión anterior para poder deshacer los cambios realizados en una página.
 * Comparar la versión actual de una página con una versión anterior con diferencias en el texto y las imágenes resaltadas.
 
-## Creación de una nueva versión   {#creating-a-new-version}
+## Creación de una versión {#creating-a-new-version}
 
-Para crear una nueva versión de una página:
+Para crear una versión de una página:
 
-1. En el explorador, abra la página para la que desea crear una nueva versión.
+1. En el explorador, abra la página para la que desea crear una versión.
 1. En el Sidekick, seleccione **Versiones** y, a continuación, **Crear versión** subpestaña.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
@@ -82,7 +82,7 @@ Este método se puede utilizar para restaurar una versión de la página. Tambi�
 Para comparar la versión actual de la página con una versión anterior:
 
 1. En el explorador, abra la página para la que desea comparar con una versión anterior.
-1. En el Sidekick, seleccione **Versiones** y, a continuación, **Restaurar versión** En la subpestaña.
+1. En el Sidekick, seleccione **Versiones** y, a continuación, **Restaurar versión** en la subpestaña.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -95,7 +95,7 @@ Para comparar la versión actual de la página con una versión anterior:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. En el Sidekick, seleccione **Restaurar versión** y haga clic en el icono **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> para mostrar la versión actual.**
+1. En el Sidekick, seleccione **Restaurar versión** subpestaña y haga clic en **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> para mostrar la versión actual.**
 
 ## Deformación de tiempo   {#timewarp}
 
@@ -108,7 +108,7 @@ Para ello:
 * El sistema busca la versión de página que estaba activa en el momento seleccionado.
 * Esto significa que la versión mostrada se creó o activó *antes del* punto temporal seleccionado en Deformación de tiempo.
 * Al navegar a una página que se haya eliminado, esto también se procesa, siempre que las versiones anteriores de la página estén disponibles en el repositorio.
-* Si no se encuentra ninguna versión publicada, Deformación de tiempo volverá al estado actual de la página en el entorno de creación (para evitar una página de error/404, lo que significaría que ya no puede examinar).
+* Si no se encuentra ninguna versión publicada, Deformación de tiempo vuelve al estado actual de la página en el entorno de creación (para evitar una página de error/404, lo que significaría que ya no puede examinar).
 
 >[!NOTE]
 >
@@ -126,24 +126,24 @@ La versión del calendario se utiliza si tiene un día específico para ver:
 
 1. Mediante los selectores de fecha y hora, especifique la fecha y la hora que desee y haga clic en **Ir**.
 
-   Deformación de tiempo mostrará la página tal como estaba en estado publicado antes o en la fecha que haya elegido.
+   Deformación de tiempo muestra la página tal como estaba en su estado publicado antes o en la fecha que ha elegido.
 
    >[!NOTE]
    >
-   >Deformación de tiempo solo funciona a la perfección si ya ha publicado la página. En caso contrario, Deformación de tiempo mostrará la página actual en el entorno de creación.
+   >Deformación de tiempo solo funciona a la perfección si ya ha publicado la página. En caso contrario, Deformación de tiempo muestra la página actual en el entorno de creación.
 
    >[!NOTE]
    >
-   >Si se desplaza a una página que se ha eliminado del repositorio, se procesará correctamente si aún hay versiones antiguas de la página disponibles en el repositorio.
+   >Si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página disponibles en el repositorio.
 
    >[!NOTE]
    >
-   >No puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, hágalo manualmente mediante [restaurar](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >No puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, puede hacerlo manualmente mediante [restaurar](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Cuando haya terminado de ver la página, haga clic en:
 
    * **Salir de Deformación de tiempo** para salir y volver a la página de autor actual.
-   * [Mostrar cronograma](#using-the-timewarp-timeline) para ver la cronología.
+   * [Mostrar cronograma](#using-the-timewarp-timeline) para que pueda ver la cronología.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -167,7 +167,7 @@ Si desea ver la cronología del documento:
 
    * Todas las líneas indican versiones publicadas.
 Cuando se activa una página, se inicia una nueva línea. Cada vez que se edita el documento, aparece un nuevo color.
-En el ejemplo siguiente, la línea roja indica que la página se editó durante el periodo de tiempo de la versión inicial verde y la línea amarilla indica que la página se editó en algún momento durante la versión roja, etc.
+En el ejemplo siguiente, la línea roja indica que la página se editó durante el periodo de tiempo de la versión inicial verde. La línea amarilla indica que la página se editó en algún momento durante la versión roja, etc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -180,13 +180,13 @@ En el ejemplo siguiente, la línea roja indica que la página se editó durante 
 
 Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en un punto temporal seleccionado. Sin embargo, debido a las complejidades de la creación continua de contenido en AEM, esto no siempre es posible. Estas limitaciones deben tenerse en cuenta al utilizar Deformación de tiempo.
 
-* **Deformación de tiempo funciona dependiendo de las páginas publicadas**: Deformación de tiempo solo funciona a la perfección si ya ha publicado la página. En caso contrario, Deformación de tiempo mostrará la página actual en el entorno de creación.
+* **Deformación de tiempo funciona dependiendo de las páginas publicadas**: deformación de tiempo solo funciona a la perfección si ya ha publicado la página. En caso contrario, Deformación de tiempo muestra la página actual en el entorno de creación.
 * **Deformación de tiempo emplea las versiones de página**: si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página en el repositorio.
 * **Las versiones eliminadas afectan a la función Deformación de tiempo**: si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar resultados correctos.
 
-* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, hágalo manualmente mediante [restaurar](#main-pars-title-1).
+* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, puede hacerlo manualmente mediante [restaurar](#main-pars-title-1).
 
-* **Deformación de tiempo solo se basa en el contenido de la página** : Si los elementos (como código, css y recursos de imagen) para procesar el sitio web han cambiado, la vista difiere de la que era originalmente, ya que esos elementos no tienen versiones en el repositorio.
+* **Deformación de tiempo solo se basa en el contenido de la página** : Si los elementos para procesar el sitio web (como código, css y recursos de imagen) han cambiado, la vista difiere de la original. El motivo es que estos elementos no tienen versiones en el repositorio.
 
 >[!CAUTION]
 >
