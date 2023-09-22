@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '162'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Con el paquete de demostración, puede habilitar Adobe Assets Insights para capt
 ## [!DNL Use Experience Manager Assets] Perspectivas con la página web de muestra  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure Assets Insights siguiendo las instrucciones de [Configuración de Assets Insights](configure-asset-insights.md).
-1. Descargue el paquete de recursos de ejemplo desde abajo e instale el paquete desde el administrador de paquetes CRXDE.
+1. Descargue el paquete de recursos de ejemplo de abajo e instale el paquete desde el Administrador de paquetes CRXDE.
 
 [Obtener archivo](assets/insightsdemo.zip)
 
@@ -27,7 +27,7 @@ Con el paquete de demostración, puede habilitar Adobe Assets Insights para capt
 
 [Obtener archivo](assets/demosite.zip)
 
-1. Haga clic en la página web para abrirla en el explorador web.
+1. Haga clic en la página web que se abre en el explorador web.
 
    >[!CAUTION]
    >

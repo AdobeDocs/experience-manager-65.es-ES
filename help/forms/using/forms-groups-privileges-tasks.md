@@ -1,21 +1,17 @@
 ---
 title: AEM Forms en grupos y privilegios de OSGi
-seo-title: AEM Forms on OSGi Groups and Privileges
-description: Asignar usuarios a los grupos para administrar AEM Forms en OSGi
-seo-description: Assign users to the groups to manage AEM Forms on OSGi
-uuid: f269a206-356d-4cee-b449-05c5da87121a
+description: Asignar usuarios a grupos para administrar Adobe Experience Manager AEM () Forms en OSGi
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: Configuration
-discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 97%
+source-wordcount: '293'
+ht-degree: 57%
 
 ---
 
@@ -23,12 +19,12 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
-Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas políticas controlan los permisos de los usuarios que forman parte del grupo.
+Puede [creación de grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de Adobe Experience Manager AEM (). Estas políticas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez realizada la instalación del [paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como forms-users y forms-power-user, estarán disponibles automáticamente para su asignación. La siguiente tabla muestra una lista de las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Después de instalar el [Paquete de complemento de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como forms-users y forms-power-user, están disponibles automáticamente para su asignación. En la tabla siguiente se enumeran las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
@@ -52,7 +48,7 @@ Una vez realizada la instalación del [paquete de complementos de AEM Forms](..
     <ul> 
      <li>Crear, previsualizar, publicar y enviar formularios adaptables</li> 
      <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documentos</li> 
-     <li>Crear scripts para formularios adaptables mediante el editor de código</li> 
+     <li>Crear scripts para formularios adaptables mediante un editor de código</li> 
      <li>Cargar recursos, incluidos scripts</li> 
      <li>Crear temáticas</li> 
      <li>Importar paquetes que contengan XDP</li> 
@@ -99,7 +95,7 @@ Una vez realizada la instalación del [paquete de complementos de AEM Forms](..
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Usar aplicaciones de la Bandeja de entrada de AEM<br /> <strong>Nota:</strong> Debe tener asignaciones de los grupos cm-agent-users y workflow-users para acceder a la interfaz de usuario del agente de Interactive Communications en la Bandeja de entrada de AEM.</li> 
+     <li>AEM Usar aplicaciones de bandeja de entrada<br /> <strong>Nota: </strong>AEM Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de agente de comunicaciones interactivas en la bandeja de entrada de la.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>
@@ -108,7 +104,7 @@ Una vez realizada la instalación del [paquete de complementos de AEM Forms](..
    <td>
     <ul> 
      <li>Configurar PDF Generator</li> 
-     <li>Configurar carpetas inspeccionadas</li> 
+     <li>Configurar la carpeta inspeccionada</li> 
      <li>Administrar aplicaciones de flujo de trabajo</li> 
     </ul> </td> 
   </tr>

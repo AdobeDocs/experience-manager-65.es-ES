@@ -1,18 +1,15 @@
 ---
 title: Integración con Adobe Sign | Gestión de datos de usuario
-seo-title: Integration with Adobe Sign | Handling user data
 description: Integración con Adobe Sign | Gestión de datos de usuario
-uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 100%
+source-wordcount: '310'
+ht-degree: 63%
 
 ---
 
@@ -26,7 +23,7 @@ Para obtener más información acerca de la integración de [!DNL AEM Forms] con
 
 ## Almacenamiento de datos y datos de usuarios {#data}
 
-Un formulario adaptable habilitado de [!DNL Adobe Sign] contiene información sobre los firmantes y puede incluir otros datos de usuario recopilados por el formulario adaptable. El servicio [!DNL Adobe Sign] guarda los datos de usuario con la firma del acuerdo. El acuerdo se guarda en el servidor de [!DNL Adobe Sign] configurado en [!DNL AEM Forms] Cloud Service. Además, si el formulario adaptable está configurado para utilizar la acción de envío del portal de formularios, los datos del acuerdo se guardan en el almacén de datos del portal de formularios junto con los datos del formulario.
+Un formulario adaptable habilitado de [!DNL Adobe Sign] contiene información sobre los firmantes y puede incluir otros datos de usuario recopilados por el formulario adaptable. El servicio [!DNL Adobe Sign] guarda los datos de usuario con la firma del acuerdo. El acuerdo se guarda en un [!DNL Adobe Sign] servidor configurado en [!DNL AEM Forms] cloud services. Además, si el formulario adaptable está configurado para utilizar la acción de envío del portal de Forms, los datos del acuerdo se guardan en el almacén de datos del portal de Forms junto con los datos del formulario.
 
 ## Acceder y eliminar datos de usuario {#access-and-delete-user-data}
 
@@ -34,4 +31,4 @@ Los datos de usuario se recopilan en el acuerdo, pero no se guardan en ninguna d
 
 [!DNL Adobe Sign] ofrece una aplicación web que permite buscar acuerdos por parte de los participantes y, si es necesario, eliminarlos. Para obtener más información, consulte [Adobe Sign - Función: Eliminar información del usuario](https://helpx.adobe.com/es/sign/using/gdpr-compliance.html).
 
-Los datos de acuerdo de los formularios adaptables configurados para utilizar la acción de envío del portal de formularios también se guardan en el almacén de datos del portal de formularios. Para acceder y eliminar datos del almacén de datos del portal de formularios, consulte [Portal de Forms | Gestión de datos de usuario](/help/forms/using/forms-portal-handling-user-data.md).
+Los datos de acuerdo de los formularios adaptables configurados para utilizar la acción de envío del portal de Forms también se guardan en el almacén de datos del portal de Forms. Para acceder al almacén de datos del portal de Forms y eliminarlo, consulte [Portal de Forms | Gestión de datos de usuario](/help/forms/using/forms-portal-handling-user-data.md).

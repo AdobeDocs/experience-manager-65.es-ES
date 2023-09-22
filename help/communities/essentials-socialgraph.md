@@ -1,25 +1,21 @@
 ---
 title: Social Graph Essentials
-seo-title: Social Graph Essentials
-description: seguir el componente y la siguiente descripción general de componentes
-seo-description: follow component and following component overview
-uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
+description: Obtenga información acerca del siguiente componente y el componente Seguir.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 3%
 
 ---
 
 # Social Graph Essentials  {#social-graph-essentials}
 
-La capacidad de un miembro de la comunidad para seguir [actividades](essentials-activities.md) así como a seguirse se establece a través de dos componentes:
+La capacidad de un miembro de la comunidad para seguir [actividades](essentials-activities.md) y a seguir se establece a través de dos componentes:
 
 El `following` el componente debe estar asociado a otro recurso y esta asociación ya está establecida para los miembros y características existentes de Communities en un [sitio comunitario](overview.md#communitiessites).
 
@@ -63,10 +59,10 @@ El `following` El componente enumera los miembros que siguen al miembro actual o
      <li>Tipo: booleano</li>
      <li>Valor:<br />
       <ul>
-       <li><i>Verdadero </i>- El <code>following</code> El componente enumerará los miembros que el miembro conectado actualmente <code>follows</code></li>
-       <li><i>Falso </i>- El <code>following</code> componente enumerará los miembros que <code>follow </code>el miembro conectado actualmente</li>
+       <li><i>Verdadero </i>- El <code>following</code> Este componente enumera los miembros que han iniciado sesión como miembros <code>follows</code></li>
+       <li><i>Falso </i>- El <code>following</code> El componente enumera los miembros que <code>follow </code>el miembro conectado</li>
       </ul> </li>
-    </ul> <p>El valor predeterminado es <i>true</i> si falta la propiedad. Actualmente, no es posible establecer esta propiedad mediante el cuadro de diálogo de edición en modo de autor. La propiedad debe añadirse a una instancia de <code>following </code>nodo que utiliza <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>El valor predeterminado es <i>true</i> si falta la propiedad. No es posible establecer esta propiedad mediante el cuadro de diálogo de edición en el modo Autor. La propiedad debe añadirse a una instancia de <code>following</code> nodo que utiliza <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -83,8 +79,8 @@ El `following` El componente enumera los miembros que siguen al miembro actual o
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de gráfico social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [API de gráfico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Extremos de gráfico social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Extremos de gráfico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
