@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
+source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3694'
 ht-degree: 62%
 
 ---
@@ -707,7 +707,7 @@ Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.18
 - Microsoft® Windows Server 2019 (64 bits)
 - Microsoft® Active Directory 2016
 
-Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.18.0 de AEM Forms del 2 de junio de 2022:
+Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.17.0 de AEM Forms del 2 de junio de 2022:
 
 - Microsoft® SharePoint 2016
 
@@ -731,15 +731,14 @@ Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
-<!--
+
 >[!NOTE]
 >
->The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
--->
+Una plataforma obsoleta seguirá recibiendo asistencia hasta que se marque como eliminada o hasta que el soporte del proveedor de terceros para la plataforma alcance su fin de vida útil, lo que ocurra primero.
 
 ## Historial de revisiones {#revision-history}
 
-- 31 de agosto de 2023
+- 6.5.18.0 (31 de agosto de 2023)
    - **Actualizaciones de plataforma**: [!DNL Adobe Experience Manager Forms] en JEE se ha agregado compatibilidad con las siguientes plataformas:
       - MongoDB Enterprise 4.4
       - Oracle WebLogic Server 14c
@@ -768,7 +767,7 @@ Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10
       - OpenOffice 4.1.2
       - Acrobat 2017 (Classic track) versión 17.011.30078 o posterior
 
-- 01 de septiembre de 2022
+- 6.5.10.0 (1 de septiembre de 2022)
 
    - Se ha agregado compatibilidad con el SDK de Oracle Java™ SE 11 (64 bits) para el servidor de aplicaciones JBoss® EAP 7.4.
 
