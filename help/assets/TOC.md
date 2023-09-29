@@ -96,7 +96,7 @@ ht-degree: 47%
    + [Instalación y configuración [!DNL ImageMagick] para trabajar con [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integración de recursos con el flujo de actividad](extending-activity-stream.md)
    + [Ampliar editor de recursos](asseteditorx.md)
-   + [[!DNL Assets] API HTTP](mac-api-assets.md)
+   + [[!DNL Assets] API del HTTP](mac-api-assets.md)
    + [Compatibilidad con fragmentos de contenido en [!DNL Assets] API HTTP](assets-api-content-fragments.md)
    + [API de GraphQL para fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
    + [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)

@@ -8,7 +8,7 @@ user-guide-description: Aprenda a utilizar y administrar AEM Content and Commerc
 source-git-commit: b3c44f93c235b5daa7b6385a0c12841fcba767ff
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 69%
    + [Adobe Commerce](cif/integrating/magento.md)
    + [Solución de comercio de terceros](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
-   + [Primeros pasos](cif/getting-started.md)
+   + [Introducción](cif/getting-started.md)
    + Creación {#authoring}
       + [Experiencias de Commerce](cif/authoring/authoring-commerce-experiences.md)
       + [Product Cockpit](cif/authoring/product-cockpit.md)
@@ -38,7 +38,7 @@ ht-degree: 69%
       + [AEM Desarrollar con la](cif/develop.md)
       + [Diseño de componentes del CIF](cif/customizing/style-cif-component.md)
       + [Personalización de componentes CIF](cif/customizing/customize-cif-components.md)
-      + [Uso de selectores de catálogos CIF](cif/customizing/use-cif-pickers.md)
+      + [CIF Uso de selectores de catálogo](cif/customizing/use-cif-pickers.md)
 + [PWA Studio de Adobe Commerce](cif/pwa-studio/getting-started.md)
 + [Migración](cif/migration.md)
 + Notas de la versión {#release-notes}
@@ -47,7 +47,7 @@ ht-degree: 69%
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [Preguntas más frecuentes](cif/faq.md)
-+ AEM CIF Classic de {#classic}
++ AEM CIF Classic {#classic}
    + [Información general](/help/commerce/cif-classic/home.md)
    + Implementación {#deploying}
       + [Información general de eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)

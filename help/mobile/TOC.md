@@ -33,7 +33,7 @@ ht-degree: 10%
    + [Acciones de creación y configuración de aplicaciones](mobile-apps-ondemand-application-create-configure-action.md)
    + [Administrar artículos](mobile-on-demand-managing-articles.md)
    + [Carga de recursos compartidos](mobile-on-demand-shared-resources.md)
-   + [Configuración de nube](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
+   + [Configuración de la nube](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Administración de titulares](mobile-on-demand-managing-banners.md)
 + Desarrollo de la aplicación de On-Demand Services {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)

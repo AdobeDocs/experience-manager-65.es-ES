@@ -25,7 +25,7 @@ ht-degree: 51%
    + [La lista de comprobación: referencia adicional](best-practices-further-reference.md)
 + Gestión: referencia adicional {#managing-further-reference}
    + [Directrices de tamaño de hardware](hardware-sizing-guidelines.md)
-   + [Operaciones de desarrollo empresarial ](enterprise-devops.md)
+   + [Operaciones de desarrollo empresarial](enterprise-devops.md)
    + [Prácticas recomendadas para la optimización de los motores de búsqueda y administración URL](seo-and-url-management.md)
 + Accesibilidad {#accessibility}
    + [AEM Directrices de accesibilidad web de y](web-accessibility.md)

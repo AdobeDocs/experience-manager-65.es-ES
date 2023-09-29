@@ -42,7 +42,7 @@ ht-degree: 38%
    + [Bibliotecas de etiquetas](taglib.md)
    + Plantillas{#templates}
       + [Plantillas](templates.md)
-      + [Plantillas de página: editables ](page-templates-editable.md)
+      + [Plantillas de página: editables](page-templates-editable.md)
       + [Plantillas de página: estáticas](page-templates-static.md)
       + [Plantillas de fragmentos de contenido](content-fragment-templates.md)
       + [Representación de plantilla adaptable](templates-adaptive-rendering.md)
@@ -96,7 +96,7 @@ ht-degree: 38%
       + [Uso y ampliación de widgets (IU clásica)](widgets.md)
       + [Uso de xtypes (IU clásica)](xtypes.md)
       + [Desarrollo de Forms (IU clásica)](developing-forms.md)
-+ [Encabezado y sin encabezado en AEM](headful-headless.md)
++ [Modelos con encabezado y sin encabezado en AEM](headful-headless.md)
 + Administración de experiencias sin objetivos{#headless}
    + [Sin encabezado y AEM](headless/introduction.md)
    + Recorridos sin encabezado {#journeys}

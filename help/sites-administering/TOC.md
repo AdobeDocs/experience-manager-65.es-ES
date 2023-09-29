@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 36%
    + [Administración de sitios web](msm-and-translation.md)
    + [Trabajos asincrónicos](asynchronous-jobs.md)
    + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
-   + [Información general de Live Copy](msm-livecopy-overview.md)
+   + [Información general de la consola de Live Copy](msm-livecopy-overview.md)
    + [Configuración de la sincronización de Live Copy](msm-sync.md)
    + [Creación y sincronización de Live Copies](msm-livecopy.md)
    + [Conflictos de despliegue de MSM](msm-rollout-conflicts.md)
@@ -87,7 +87,7 @@ ht-degree: 36%
    + [AEM Cómo auditar las operaciones de administración de usuarios en el](audit-user-management-operations.md)
    + [SSL predeterminado](ssl-by-default.md)
    + [Controlador de autenticación SAML 2.0](saml-2-0-authenticationhandler.md)
-   + [AEM Grupos de usuarios cerrados en el](closed-user-groups.md)
+   + [Grupos de usuarios cerrados en AEM](closed-user-groups.md)
    + [Operaciones de Granite: administración de usuarios y grupos](granite-user-group-admin.md)
    + [Activación del CRXDE Lite AEM en la](enabling-crxde-lite.md)
    + [AEM Configuración de LDAP con 6](ldap-config.md)
