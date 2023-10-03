@@ -7,9 +7,9 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 8737c989927b1be148d440aa1944cf4cfb216b69
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2226'
 ht-degree: 50%
 
 ---
@@ -234,7 +234,9 @@ Abra la consola en cuestión, desplácese hasta el recurso y abra **Referencias*
 
 Seleccione el tipo de referencia adecuado para obtener más información. En determinadas situaciones, hay disponibles más acciones al seleccionar una referencia específica, como:
 
-* **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** Seleccione una de esas páginas cuando seleccione un vínculo específico
+* **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como acceso directo a **Editar** Seleccione una de esas páginas cuando seleccione un vínculo específico.
+
+   * Esto solo puede mostrar vínculos estáticos, no vínculos generados dinámicamente; por ejemplo, desde el componente Lista.
 
 * Instancias de contenido prestado mediante el componente de **referencia**; desde aquí puede navegar hasta la página de referencia o a la que se hace referencia
 
