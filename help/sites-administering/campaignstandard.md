@@ -1,17 +1,15 @@
 ---
 title: AEM Integración de 6.5 con Adobe Campaign Standard
 description: AEM Obtenga información sobre cómo integrar la versión 6.5 de con Adobe Campaign Standard.
-uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 0%
+source-wordcount: '1833'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +32,7 @@ AEM La configuración de la integración entre y Adobe Campaign Standard requier
 1. [Compruebe el ](#resource-type-filter)
 1. [AEM Creación de una plantilla de envíos de correo electrónico específica de un en Campaign](#aem-email-delivery-template)
 1. [AEM Configuración de la integración de Campaign en la](#campaign-integration)
-1. [Configurar replicación en la instancia de publicación de AEM](#replication)
+1. [AEM Configuración de replicación para publicar instancias de forma](#replication)
 1. [AEM Configuración del externalizador de](#externalizer)
 1. [Configure las variables ](#campaign-remote-user)
 1. [AEM Configuración de la cuenta externa de en Campaign](#acc-external-user)
@@ -61,7 +59,7 @@ Adobe Campaign Standard incluye de forma predeterminada un `aemserver` AEM usuar
 
    ![usuario de aemserver en Adobe Campaign](assets/acs-aemserver-user.png)
 
-1. Haga clic o pulse **Guardar** para guardar los cambios.
+1. Pulse o haga clic en **Guardar** para guardar los cambios.
 
 Su `aemserver` AEM El usuario de ahora tiene los derechos necesarios para que pueda utilizarla para comunicarse con el usuario de Adobe Campaign.
 
@@ -87,7 +85,7 @@ Esta opción está preconfigurada. AEM Sin embargo, es posible que tenga que act
 
    ![AEMResourceTypeFilter](assets/acs-aem-resource-type-filter.png)
 
-1. Haga clic o pulse **Guardar** para guardar los cambios.
+1. Pulse o haga clic en **Guardar** para guardar los cambios.
 
 Su `AEMResourceTypeFilter` AEM ahora está configurado para recuperar el contenido correcto de los recursos de la red de distribución de.
 
@@ -131,7 +129,7 @@ AEM Se comunica con Adobe Campaign mediante una integración integrada de y la `
 
 1. AEM Inicie sesión en la instancia de creación de la como administrador.
 
-1. En el carril lateral de navegación global, seleccione **Herramientas** > **Cloud Services** > **Cloud Services heredados** > **Adobe Campaign**, luego haga clic en **Configurar ahora**.
+1. En el carril lateral de navegación global, seleccione **Herramientas** > **Cloud Service** > **Cloud Service heredados** > **Adobe Campaign**, luego haga clic en **Configurar ahora**.
 
    ![Configuración de Adobe Campaign](assets/configure-campaign-service.png)
 
@@ -155,7 +153,7 @@ AEM Ahora se puede comunicar con Adobe Campaign.
 >
 >Asegúrese de que el servidor de Adobe Campaign esté accesible a través de Internet. AEM No se puede acceder a redes privadas.
 
-## Configurar replicación en la instancia de publicación de AEM {#replication}
+## AEM Configuración de replicación para publicar instancias de forma {#replication}
 
 AEM El contenido de la campaña lo crean los autores de contenido en la instancia de creación de la. Esta instancia solo suele estar disponible internamente en su organización. Para que el contenido, como las imágenes y los recursos, sea accesible a los destinatarios de la campaña, debe publicarlo.
 

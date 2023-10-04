@@ -1,19 +1,15 @@
 ---
 title: Firmar y certificar documentos digitalmente
-seo-title: Digitally Signing and Certifying Documents
 description: Utilice el servicio Signature para agregar y eliminar campos de firma digital en un documento de PDF, recuperar los nombres de los campos de firma ubicados en un documento de PDF, modificar los campos de firma, firmar digitalmente documentos de PDF, certificar documentos de PDF, validar firmas digitales ubicadas en un documento de PDF, validar todas las firmas digitales ubicadas en un documento de PDF y quitar una firma digital de un campo de firma.
-seo-description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
-uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '17046'
+source-wordcount: '17047'
 ht-degree: 4%
 
 ---
@@ -77,7 +73,7 @@ Para agregar un campo de firma a un documento de PDF, realice las siguientes tar
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -91,7 +87,7 @@ Para poder realizar mediante programación una operación del servicio Signature
 
 **Obtener un documento de PDF al que se agregue un campo de firma**
 
-Debe obtener un documento PDF al que se agregue un campo de firma.
+Debe obtener un documento de PDF al que se agregue un campo de firma.
 
 **Agregar un campo de firma**
 
@@ -138,9 +134,11 @@ Agregar un campo de firma mediante la API de firma (Java):
       * A `java.lang.Integer` valor que representa el número de página al que se agrega un campo de firma.
       * A `PositionRectangle` que especifica la ubicación del campo de firma.
       * A `FieldMDPOptions` que especifica los campos del documento de PDF que están bloqueados después de aplicar una firma digital al campo de firma. Este valor de parámetro es opcional y puede pasar `null`.
+
    * A `PDFSeedValueOptions` que especifica varios valores en tiempo de ejecución. Este valor de parámetro es opcional y puede pasar `null`.
 
-      El `addSignatureField` El método devuelve un valor `com.adobe.idp`. `Document` que representa un documento de PDF que contiene un campo de firma.
+     El `addSignatureField` El método devuelve un valor `com.adobe.idp`. `Document` que representa un documento de PDF que contiene un campo de firma.
+
    >[!NOTE]
    >
    >Puede invocar el `SignatureServiceClient` del objeto `addInvisibleSignatureField` para agregar un campo de firma invisible.
@@ -234,7 +232,7 @@ Para recuperar los nombres de los campos de firma, realice las siguientes tareas
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -376,7 +374,7 @@ Para modificar los campos de firma ubicados en un documento de PDF, realice las 
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente con Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -557,7 +555,7 @@ Modificar un campo de firma mediante la API de firma (servicio web):
 
 Las firmas digitales se pueden aplicar a documentos PDF para proporcionar cierto nivel de seguridad. Las firmas digitales, como las firmas manuscritas, proporcionan un medio para que los firmantes se identifiquen y hagan declaraciones sobre un documento. La tecnología utilizada para firmar documentos digitalmente ayuda a garantizar que tanto el firmante como los destinatarios tengan una idea clara de lo que se firmó y estén seguros de que el documento no se ha alterado desde que se firmó.
 
-Los documentos PDF se firman mediante tecnología de clave pública. Un firmante tiene dos claves: una clave pública y una clave privada. La clave privada se almacena en las credenciales de un usuario que deben estar disponibles en el momento de la firma. La clave pública se almacena en el certificado del usuario, que debe estar disponible para que los destinatarios validen la firma. La información sobre los certificados revocados se encuentra en las listas de revocación de certificados (CRL) y en las respuestas del Protocolo de estado de certificado en línea (OCSP) distribuidas por las autoridades de certificación (CA). La hora de la firma se puede obtener de una fuente de confianza conocida como Autoridad de marca de tiempo.
+Los documentos PDF se firman mediante tecnología de clave pública. Un firmante tiene dos claves: una clave pública y una clave privada. La clave privada se almacenará en las credenciales del usuario, que deberán estar disponibles a la hora de realizar la firma. La clave pública se almacenará en el certificado del usuario, que deberá estar disponible para que los destinatarios validen la firma. La información sobre los certificados revocados se encuentra en las listas de revocación de certificados (CRL) y en las respuestas del Protocolo de estado de certificado en línea (OCSP) distribuidas por las autoridades de certificación (CA). La hora de la firma se puede obtener de una fuente de confianza conocida como Autoridad de marca de tiempo.
 
 >[!NOTE]
 >
@@ -622,7 +620,7 @@ Para firmar digitalmente un documento de PDF, realice las siguientes tareas:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -719,7 +717,7 @@ Firmar digitalmente un documento de PDF mediante la API de firma (Java):
 
    * A `com.adobe.idp.Document` que representa el documento de PDF que se va a firmar.
    * Valor de cadena que representa el nombre del campo de firma que contendrá la firma digital.
-   * A `Credential` que representa la credencial que se utiliza para firmar digitalmente el documento de PDF. Crear un `Credential` invocando el objeto de `Credential` estático del objeto `getInstance` y pasando un valor de cadena que especifica el valor de alias que corresponde a la credencial de seguridad.
+   * A `Credential` que representa la credencial que se utiliza para firmar digitalmente el documento de PDF. Crear un `Credential` invocando el objeto de `Credential` objeto estático `getInstance` y pasando un valor de cadena que especifica el valor de alias que corresponde a la credencial de seguridad.
    * A `HashAlgorithm` que especifica un miembro de datos estáticos que representa el algoritmo hash que se utilizará para asimilar el documento de PDF. Por ejemplo, puede especificar `HashAlgorithm.SHA1` para utilizar el algoritmo SHA1.
    * Valor de cadena que representa el motivo por el que el documento del PDF se firmó digitalmente.
    * Valor de cadena que representa la información de contacto del firmante.
@@ -847,7 +845,7 @@ Para firmar digitalmente un formulario interactivo que devuelve el servicio Form
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -929,10 +927,9 @@ Firme digitalmente un formulario interactivo con Forms y la API de firma (Java):
       * A `URLSpec` que contiene valores de URI requeridos por el servicio de Forms. Puede especificar `null` para este valor de parámetro.
       * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
 
-      El `renderPDFForm2` El método devuelve un valor `FormsResult` objeto que contiene una secuencia de datos de formulario
+     El `renderPDFForm2` El método devuelve un valor `FormsResult` objeto que contiene una secuencia de datos de formulario
 
    * Recupere el formulario del PDF invocando el `FormsResult` del objeto `getOutputContent` método. Este método devuelve un `com.adobe.idp.Document` que representa el formulario interactivo.
-
 
 1. Firma del formulario interactivo
 
@@ -940,7 +937,7 @@ Firme digitalmente un formulario interactivo con Forms y la API de firma (Java):
 
    * A `com.adobe.idp.Document` que representa el documento de PDF que se va a firmar. Asegúrese de que este objeto es el `com.adobe.idp.Document` objeto obtenido del servicio Forms.
    * Valor de cadena que representa el nombre del campo de firma firmado.
-   * A `Credential` que representa la credencial que se utiliza para firmar digitalmente el documento de PDF. Crear un `Credential` invocando el objeto de `Credential` estático del objeto `getInstance` método. Pase un valor de cadena que especifique el valor de alias que corresponde a la credencial de seguridad.
+   * A `Credential` que representa la credencial que se utiliza para firmar digitalmente el documento de PDF. Crear un `Credential` invocando el objeto de `Credential` objeto estático `getInstance` método. Pase un valor de cadena que especifique el valor de alias que corresponde a la credencial de seguridad.
    * A `HashAlgorithm` que especifica un miembro de datos estáticos que representa el algoritmo hash que se utilizará para asimilar el documento de PDF. Por ejemplo, puede especificar `HashAlgorithm.SHA1` para utilizar el algoritmo SHA1.
    * Valor de cadena que representa el motivo por el que el documento del PDF se firmó digitalmente.
    * Valor de cadena que representa la información de contacto del firmante.
@@ -994,6 +991,7 @@ Firme digitalmente un formulario interactivo con Forms y la API de firma (servic
       * AEM Asigne el nombre de usuario del formulario de la al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -1023,8 +1021,8 @@ Firme digitalmente un formulario interactivo con Forms y la API de firma (servic
       * Un parámetro de salida largo utilizado para almacenar el número de páginas en el formulario.
       * Un parámetro de salida de cadena que se utiliza para el valor de configuración regional.
       * A `FormResult` valor que es un parámetro de salida que se utiliza para almacenar el formulario interactivo.
-   * Recupere el formulario de PDF invocando el `FormsResult` del objeto `outputContent` field. Este campo almacena un `BLOB` que representa el formulario interactivo.
 
+   * Recupere el formulario de PDF invocando el `FormsResult` del objeto `outputContent` field. Este campo almacena un `BLOB` que representa el formulario interactivo.
 
 1. Firma del formulario interactivo
 
@@ -1103,7 +1101,7 @@ Para certificar un documento de PDF, realice las siguientes tareas:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1180,7 +1178,7 @@ Certificar un documento de PDF mediante la API de firma (Java):
 
    * El `com.adobe.idp.Document` que representa el documento del PDF que se va a certificar.
    * Valor de cadena que representa el nombre del campo de firma que contendrá la firma.
-   * A `Credential` que representa la credencial utilizada para certificar el documento de PDF. Crear un `Credential` invocando el objeto de `Credential` estático del objeto `getInstance` y pasando un valor de cadena que especifica el valor de alias que corresponde a la credencial de seguridad.
+   * A `Credential` que representa la credencial utilizada para certificar el documento de PDF. Crear un `Credential` invocando el objeto de `Credential` objeto estático `getInstance` y pasando un valor de cadena que especifica el valor de alias que corresponde a la credencial de seguridad.
    * A `HashAlgorithm` que especifica un miembro de datos estáticos que representa el algoritmo hash utilizado para asimilar el documento de PDF. Por ejemplo, puede especificar `HashAlgorithm.SHA1` para utilizar el algoritmo SHA1.
    * Valor de cadena que representa el motivo por el que se certificó el documento de PDF.
    * Valor de cadena que representa la información de contacto del firmante.
@@ -1255,7 +1253,7 @@ Certificar un documento de PDF mediante la API de firma (servicio web):
    * Valor de cadena que representa el motivo por el que se certificó el documento de PDF.
    * Valor de cadena que representa la ubicación del firmante.
    * Valor de cadena que representa la información de contacto del firmante.
-   * Un `MDPPermissions` miembro de datos estáticos del objeto que especifica las acciones que se pueden realizar en el documento del PDF que invalidan la firma.
+   * Un `MDPPermissions` miembro de datos estáticos del objeto que especifica las acciones que se pueden realizar en el documento de PDF que invalidan la firma.
    * Un valor booleano que especifica si se va a utilizar la variable `MDPPermissions` objeto que se pasó como valor de parámetro anterior.
    * Valor de cadena que explica qué acciones invalidan la firma.
    * A `PDFSignatureAppearanceOptions` que controla el aspecto de la firma certificada. Crear un `PDFSignatureAppearanceOptions` mediante su constructor. Puede modificar el aspecto de la firma estableciendo uno de sus miembros de datos.
@@ -1287,11 +1285,11 @@ Certificar un documento de PDF mediante la API de firma (servicio web):
 
 Las firmas digitales se pueden verificar para garantizar que no se haya modificado un documento PDF firmado y que la firma digital sea válida. Al verificar una firma digital, puede comprobar el estado y las propiedades de la firma, como la identidad del firmante. Antes de confiar en una firma digital, se recomienda verificarla. Al verificar una firma digital, haga referencia a un documento de PDF que contenga una firma digital.
 
-Supongamos que se desconoce la identidad del firmante. Cuando se abre el documento del PDF en Acrobat, un mensaje de advertencia indica que la identidad del firmante es desconocida, como se muestra en la siguiente ilustración.
+Supongamos que se desconoce la identidad del firmante. Cuando se abre el documento del PDF en Acrobat, un mensaje de advertencia indica que se desconoce la identidad del firmante, como se muestra en la siguiente ilustración.
 
 ![vd_vd_verifying](assets/vd_vd_verifysig.png)
 
-Del mismo modo, cuando se verifica una firma digital mediante programación, se puede determinar el estado de la identidad del firmante. Por ejemplo, si verifica la firma digital en el documento mostrado en la ilustración anterior, el resultado sería que se desconoce la identidad del firmante.
+Del mismo modo, cuando se comprueba una firma digital mediante programación, se puede determinar el estado de la identidad del firmante. Por ejemplo, si comprueba la firma digital en el documento mostrado en la ilustración anterior, el resultado sería que se desconoce la identidad del firmante.
 
 >[!NOTE]
 >
@@ -1313,7 +1311,7 @@ Para comprobar una firma digital, realice las siguientes tareas:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, incluya los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1339,7 +1337,7 @@ Establezca estas opciones de tiempo de ejecución de PKI que utiliza el servicio
 * Comprobación de revocación
 * Valores de marca de tiempo
 
-Al configurar estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora del equipo del validador), que indica que se debe utilizar la hora actual. Para obtener información sobre los distintos valores de hora, consulte la `VerificationTime` valor de enumeración en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Al configurar estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora del equipo del validador), lo que indica que se debe utilizar la hora actual. Para obtener información sobre los distintos valores de hora, consulte la `VerificationTime` valor de enumeración en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 También puede especificar si desea realizar la comprobación de revocación como parte del proceso de verificación. Por ejemplo, puede realizar una comprobación de revocación para determinar si el certificado está revocado. Para obtener información acerca de las opciones de comprobación de revocación, consulte la `RevocationCheckStyle` valor de enumeración en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
@@ -1430,7 +1428,7 @@ Verificar una firma digital mediante la API del servicio de firma (Java):
 
 1. Determinar el estado de la firma
 
-   * Determine el estado de la firma invocando el `PDFSignatureVerificationInfo` del objeto `getStatus` método. Este método devuelve un `SignatureStatus` que especifica el estado de la firma. Por ejemplo, si no se modifica un documento de PDF firmado, este método devuelve `SignatureStatus.DocumentSigNoChanges`.
+   * Determinar el estado de la firma invocando la variable `PDFSignatureVerificationInfo` del objeto `getStatus` método. Este método devuelve un `SignatureStatus` que especifica el estado de la firma. Por ejemplo, si no se modifica un documento de PDF firmado, este método devuelve `SignatureStatus.DocumentSigNoChanges`.
 
 1. Determinar la identidad del firmante
 
@@ -1499,7 +1497,7 @@ Verificar una firma digital mediante la API del servicio de firma (servicio web)
 
 1. Determinar el estado de la firma
 
-   Determine el estado de la firma obteniendo el valor del `PDFSignatureVerificationInfo` del objeto `status` miembro de datos. Este miembro de datos almacena un `SignatureStatus` que especifica el estado de la firma. Por ejemplo, si se modifica un documento de PDF firmado, la variable `status` miembro de datos almacena el valor `SignatureStatus.DocumentSigNoChanges`.
+   Determinar el estado de la firma obteniendo el valor del `PDFSignatureVerificationInfo` del objeto `status` miembro de datos. Este miembro de datos almacena un `SignatureStatus` que especifica el estado de la firma. Por ejemplo, si se modifica un documento de PDF firmado, la variable `status` miembro de datos almacena el valor `SignatureStatus.DocumentSigNoChanges`.
 
 1. Determinar la identidad del firmante
 
@@ -1537,7 +1535,7 @@ Para comprobar varias firmas digitales, realice las siguientes tareas:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, incluya los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -1563,7 +1561,7 @@ Establezca estas opciones de tiempo de ejecución de PKI que utiliza el servicio
 * Comprobación de revocación
 * Valores de marca de tiempo
 
-Al configurar estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora del equipo del validador), que indica que se debe utilizar la hora actual. Para obtener información sobre los distintos valores de hora, consulte la `VerificationTime` valor de enumeración en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Al configurar estas opciones, puede especificar el tiempo de verificación. Por ejemplo, puede seleccionar la hora actual (la hora del equipo del validador), lo que indica que se debe utilizar la hora actual. Para obtener información sobre los distintos valores de hora, consulte la `VerificationTime` valor de enumeración en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 También puede especificar si desea realizar la comprobación de revocación como parte del proceso de verificación. Por ejemplo, puede realizar una comprobación de revocación para determinar si el certificado está revocado. Para obtener información acerca de las opciones de comprobación de revocación, consulte la `RevocationCheckStyle` valor de enumeración en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
@@ -1746,7 +1744,7 @@ Para quitar una firma digital de un campo de firma, realice las siguientes tarea
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar

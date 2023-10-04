@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2111'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -50,7 +50,7 @@ ANDI trabaja con los principales exploradores de Internet. Consulte la documenta
 
 ### Descargue e instale la temática Ultramarine-Accessible
 
-La temática Ultramarine-Accessible es de referencia. Muestra cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear una temática personalizada para el entorno de producción en función de los estilos aprobados por su organización. Para cargar la temática en la instancia de AEM, haga lo siguiente:
+La temática Ultramarine-Accessible es de referencia. Muestra cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. El Adobe recomienda crear una temática personalizada para el entorno de producción en función de los estilos aprobados por su organización. Para cargar la temática en la instancia de AEM, haga lo siguiente:
 
 1. Descargue el paquete de temáticas.
 1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** en la instancia de AEM.
@@ -93,7 +93,7 @@ Después de aplicar una temática accesible, realice las siguientes correcciones
 
 1. Establezca el texto de accesibilidad personalizado para el componente selector de fechas. Por ejemplo, introduzca la fecha de nacimiento. Los lectores de pantalla leen estos textos de accesibilidad personalizados.
 
-1. Utilice una descripción breve en lugar de una descripción larga para los componentes del formulario adaptable. Una descripción larga agrega el botón de ayuda. Asegúrese de que el formulario adaptable no tenga ningún botón de ayuda.
+1. Utilice una descripción breve en lugar de una descripción larga para los componentes del formulario adaptable. Una descripción larga agrega el botón de ayuda. Asegúrese de que el área adaptable no tenga ningún botón de ayuda.
 
 1. Agregue texto de accesibilidad personalizado a todas las celdas de solo lectura de las tablas. Además, deshabilite todas las celdas de solo lectura de las tablas.
 

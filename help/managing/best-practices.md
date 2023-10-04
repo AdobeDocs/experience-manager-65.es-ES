@@ -1,22 +1,22 @@
 ---
 title: 'Administración de proyectos: lista de comprobación de prácticas recomendadas'
-description: La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la entrega de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una monitorización de alto nivel de su estado actual.
+description: La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión. Las listas de comprobación de proyectos están pensadas como un conjunto de prácticas recomendadas para la entrega de proyectos. Le guían a través de todas las fases del ciclo de vida del proyecto y le proporcionan una monitorización de alto nivel de su estado.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3240'
 ht-degree: 1%
 
 ---
 
 # Administración de proyectos: lista de comprobación de prácticas recomendadas{#managing-projects-best-practices-checklist}
 
-La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión para garantizar que está al tanto de los problemas y las decisiones (relacionadas) que debe realizar, antes y durante la implementación del proyecto.
+La administración de un proyecto para implementar Adobe Experience Manager AEM () requiere planificación y comprensión para que esté al tanto de los problemas y las decisiones (relacionadas) que debe realizar, antes y durante la implementación del proyecto.
 
 Para ayudarle, las prácticas recomendadas consisten en:
 
@@ -25,7 +25,7 @@ Para ayudarle, las prácticas recomendadas consisten en:
    * Define entradas y entregas según la fase, el hito y el perfil.
    * Proporciona descripciones generales automatizadas (calidad, estado y integridad) para indicar el progreso y el estado del proyecto.
 
-* Documentación basada en el [lista de comprobación](/help/managing/best-practices-checklist.md), que detalla lo siguiente:
+* Documentación basada en el [lista de comprobación](/help/managing/best-practices-checklist.md) que detalla lo siguiente:
 
    * [Latido del proyecto](#projectheartbeat) análisis.
    * [Estado por rol](#status-by-role) información general.
@@ -117,7 +117,7 @@ Los Cuatro Factores:
 
 ### Planificación {#planning}
 
-La planificación del proyecto consolida la preparación. Aquí necesita comenzar a convertir los objetivos y expectativas en una hoja de ruta bien definida que consista en tareas concretas, unidas por una comunicación clara, con revisiones estrictas para medir el progreso.
+La planificación del proyecto consolida la preparación. Aquí debería empezar a convertir los objetivos y expectativas en una hoja de ruta bien definida que consista en tareas concretas, unidas por una comunicación clara, con revisiones estrictas para medir el progreso.
 
 #### Hitos {#milestones-1}
 
@@ -135,7 +135,7 @@ La planificación del proyecto consolida la preparación. Aquí necesita comenza
 
 * **Comunicación**
 
-  La comunicación siempre es clave para el éxito de cualquier proyecto. Debe comunicarse de forma clara y eficaz para garantizar que todos:
+  La comunicación siempre es clave para el éxito de cualquier proyecto. Comunique de forma clara y eficaz para garantizar que todos:
 
    * Trabajar para lograr los mismos objetivos básicos
    * Desde la misma base de información
@@ -169,7 +169,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
    * El árbol de contenido; incluidos los recursos
    * Estructuras básicas; incluidas campañas, etc.
-   * Estructuras de varios sitios y varios idiomas (MSM, traducción, etc.)
+   * Estructuras multisitio y en varios idiomas (MSM, traducción, etc.)
    * Contenido de soporte (incluidas etiquetas y conceptos de etiquetado)
    * Estrategias de almacenamiento en caché y reutilización de contenido
 
@@ -195,7 +195,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   Se centra en:
 
-   * Cómo interactuarán entre sí y con los usuarios.
+   * Cómo interactúan entre sí y con los usuarios.
    * Los datos que deben consumir y producir las aplicaciones, en lugar de su estructura interna.
 
   Las definiciones deben abarcar:
@@ -203,7 +203,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
    * Estructura de código básica del proyecto
    * Artículos de código (paquetes, paquetes, etc.)
    * Desglose de las plantillas/componentes y sus relaciones
-   * Detalles de alto nivel de las personalizaciones necesarias (más adelante se mostrarán superposiciones específicas)
+   * Detalles de alto nivel de las personalizaciones necesarias (a continuación se muestran superposiciones específicas)
    * Diseño de los flujos de trabajo requeridos por la solución (por ejemplo, creación de contenido, aprobación, publicación, transformaciones, importaciones y exportaciones)
    * Consideración especial para cualquier módulo complejo, como MSM, Commerce e integración de terceros
 
@@ -211,8 +211,8 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   La integración del sistema requiere que planifique (y luego implemente):
 
-   * Cómo todos los subsistemas y [integraciones de soluciones](/help/sites-administering/integration.md) se reunirán para funcionar como un sistema coherente
-   * Cómo se integrarán los sistemas de terceros, junto con cualquier consideración especial, como la gestión sin conexión/en línea, del lado del cliente/del lado del explorador o de la caída de un sistema de terceros cuando este no está operativo
+   * Cómo todos los subsistemas y [integraciones de soluciones](/help/sites-administering/integration.md) para funcionar como un sistema coherente
+   * Forma en que se integran los sistemas de terceros, junto con cualquier consideración especial, como la gestión sin conexión/en línea, del lado del cliente/del lado del explorador o de la caída de un sistema de terceros cuando éste no funciona
 
 * **Concepto de prueba**
 
@@ -570,7 +570,7 @@ El posible cliente de seguridad:
 
 * Autores y usuarios finales
 
-   * Las personas que utilizarán el sistema para crear y mantener el contenido del sitio web.
+   * Las personas que utilizan el sistema para crear y mantener el contenido del sitio web.
 
 ## Documentos y entregables requeridos {#required-documents-and-deliverables}
 

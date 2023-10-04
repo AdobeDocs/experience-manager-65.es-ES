@@ -1,18 +1,14 @@
 ---
 title: Procesar formularios PDF interactivos
-seo-title: Rendering Interactive PDF Forms
 description: Utilice el servicio Forms para representar PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Puede utilizar el servicio Forms para procesar formularios interactivos mediante la API de Java y la API de servicio web.
-seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
-uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2487'
 ht-degree: 1%
@@ -196,7 +192,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (Java):
 1. Especificar valores de URI
 
    * Crear un `URLSpec` que almacena los valores de URI mediante su constructor.
-   * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
+   * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pasar un valor de cadena que represente la raíz web de la aplicación.
    * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario esté ubicado en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
    * Invoque el `URLSpec` del objeto `setTargetURL` y pasan un valor de cadena que especifica el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
@@ -206,6 +202,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (Java):
    * Invoque el `java.util.HashMap` del objeto `put` para que cada archivo se adjunte al formulario procesado. Pase los siguientes valores a este método:
 
       * Valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión del nombre de archivo.
+
    * A `com.adobe.idp.Document` que contiene el archivo adjunto.
 
    >[!NOTE]
@@ -226,7 +223,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (Java):
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
    * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
    * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
@@ -250,7 +247,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (servicio web
 1. Especificar valores de URI
 
    * Crear un `URLSpec` que almacena los valores de URI mediante su constructor.
-   * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
+   * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pasar un valor de cadena que represente la raíz web de la aplicación.
    * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario esté ubicado en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
    * Invoque el `URLSpec` del objeto `setTargetURL` y pasan un valor de cadena que especifica el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
@@ -260,6 +257,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (servicio web
    * Invoque el `java.util.HashMap` del objeto `put` para que cada archivo se adjunte al formulario procesado. Pase los siguientes valores a este método:
 
       * Valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión del nombre de archivo
+
    * A `BLOB` objeto que contiene el archivo adjunto
 
    >[!NOTE]

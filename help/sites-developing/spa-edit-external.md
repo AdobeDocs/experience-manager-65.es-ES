@@ -2,7 +2,7 @@
 title: SPA Edición de un recurso externo en Adobe Experience Manager
 description: SPA En este documento se describen los pasos recomendados para cargar una instancia independiente en una instancia de Adobe Experience Manager, agregar secciones de contenido editables y habilitar la creación de instancias.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 1%
@@ -39,7 +39,7 @@ SPA AEM En primer lugar, debe cargar el recurso externo en el proyecto de.
 
 ## SPA Configuración del servidor remoto {#configure-remote-spa}
 
-SPA AEM AEM Ahora que la externa forma parte del proyecto de la, debe configurarse en la siguiente configuración de la aplicación de la forma de la aplicación de la manera de.
+SPA AEM AEM Ahora que la externa forma parte del proyecto de la, debe configurarse en la siguiente configuración de la interfaz de usuario de la interfaz de usuario de.
 
 ### Incluir paquetes de SDK de Adobe SPA {#include-spa-sdk-packages}
 
@@ -63,7 +63,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 Antes de que la aplicación se procese, la variable [`ModelManager`](spa-blueprint.md#pagemodelmanager) AEM debe inicializarse para gestionar la creación de la `ModelStore`.
 
-Esto debe hacerse dentro de la `src/index.js` de la aplicación o dondequiera que se represente la raíz de la aplicación.
+Esto debe hacerse dentro de la `src/index.js` de la aplicación o donde se represente la raíz de la aplicación.
 
 Para ello, utilice `initializationAsync` API proporcionada por el `ModelManager`.
 

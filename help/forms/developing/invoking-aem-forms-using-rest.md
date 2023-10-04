@@ -1,17 +1,13 @@
 ---
 title: Invocar AEM Forms mediante solicitudes REST
-seo-title: Invoking AEM Forms using REST Requests
 description: Invocar procesos creados en Workbench mediante solicitudes REST.
-seo-description: Invoke processes created in Workbench using REST requests.
-uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2506'
 ht-degree: 1%
@@ -49,45 +45,45 @@ Se admiten los siguientes tipos de datos al invocar servicios de AEM Forms media
 * Tipos de datos XML como `org.w3c.Document` y `org.w3c.Element`
 * Objetos de colección como `java.util.List` y `java.util.Map`
 
-   Estos tipos de datos se aceptan comúnmente como valores de entrada para los procesos creados en Workbench.
+  Estos tipos de datos se aceptan comúnmente como valores de entrada para los procesos creados en Workbench.
 
-   Si se invoca un servicio Forms con el método de POST HTTP, los argumentos se pasan dentro del cuerpo de la solicitud HTTP. Si la firma del servicio AEM Forms tiene un parámetro de entrada de cadena, el cuerpo de la solicitud puede contener el valor de texto del parámetro de entrada. Si la firma del servicio define varios parámetros de cadena, la solicitud puede seguir los parámetros de HTTP `application/x-www-form-urlencoded` con los nombres del parámetro utilizados como nombres de campo del formulario.
+  Si se invoca un servicio Forms con el método de POST HTTP, los argumentos se pasan dentro del cuerpo de la solicitud HTTP. Si la firma del servicio AEM Forms tiene un parámetro de entrada de cadena, el cuerpo de la solicitud puede contener el valor de texto del parámetro de entrada. Si la firma del servicio define varios parámetros de cadena, la solicitud puede seguir los parámetros de HTTP `application/x-www-form-urlencoded` con los nombres del parámetro utilizados como nombres de campo del formulario.
 
-   Si un servicio de Forms devuelve un parámetro de cadena, el resultado es una representación textual del parámetro de salida. Si un servicio devuelve varios parámetros de cadena, el resultado es un documento XML que codifica los parámetros de salida en el siguiente formato:
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+  Si un servicio de Forms devuelve un parámetro de cadena, el resultado es una representación textual del parámetro de salida. Si un servicio devuelve varios parámetros de cadena, el resultado es un documento XML que codifica los parámetros de salida en el siguiente formato:
+  ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
-   >[!NOTE]
-   >
-   >El `output-paramater1` value representa el nombre del parámetro de salida.
+  >[!NOTE]
+  >
+  >El `output-paramater1` value representa el nombre del parámetro de salida.
 
-   Si un servicio de Forms requiere un `com.adobe.idp.Document` , el servicio solo se puede invocar utilizando el método de POST HTTP. Si el servicio requiere uno `com.adobe.idp.Document` , el cuerpo de la solicitud HTTP se convierte en el contenido del objeto de documento de entrada.
+  Si un servicio de Forms requiere un `com.adobe.idp.Document` , el servicio solo se puede invocar utilizando el método de POST HTTP. Si el servicio requiere uno `com.adobe.idp.Document` , el cuerpo de la solicitud HTTP se convierte en el contenido del objeto de documento de entrada.
 
-   Si un servicio de AEM Forms requiere varios parámetros de entrada, el cuerpo de la solicitud HTTP debe ser un mensaje MIME de varias partes, tal como se define en RFC 1867. (RFC 1867 es un estándar que utilizan los exploradores web para cargar archivos en sitios web). Cada parámetro de entrada debe enviarse como una parte independiente del mensaje de varias partes y codificarse en la variable `multipart/form-data` formato. El nombre de cada artículo debe coincidir con el nombre del parámetro.
+  Si un servicio de AEM Forms requiere varios parámetros de entrada, el cuerpo de la solicitud HTTP debe ser un mensaje MIME de varias partes, tal como se define en RFC 1867. (RFC 1867 es un estándar que utilizan los exploradores web para cargar archivos en sitios web). Cada parámetro de entrada debe enviarse como una parte independiente del mensaje de varias partes y codificarse en la variable `multipart/form-data` formato. El nombre de cada artículo debe coincidir con el nombre del parámetro.
 
-   Las listas y los mapas también se utilizan como valores de entrada para los procesos de AEM Forms creados en Workbench. Como resultado, puede utilizar estos tipos de datos cuando utilice una solicitud REST. No se admiten matrices Java porque no se utilizan como valor de entrada para un proceso de AEM Forms.
+  Las listas y los mapas también se utilizan como valores de entrada para los procesos de AEM Forms creados en Workbench. Como resultado, puede utilizar estos tipos de datos cuando utilice una solicitud REST. No se admiten matrices Java porque no se utilizan como valor de entrada para un proceso de AEM Forms.
 
-   Si un parámetro de entrada es una lista, un cliente REST puede enviarla especificando el parámetro varias veces (una vez para cada elemento de la lista). Por ejemplo, si A es una lista de documentos, la entrada debe ser un mensaje de varias partes formado por varias partes denominadas A. En este caso, cada pieza denominada A se convierte en un elemento de la lista de entrada. Si B es una lista de cadenas, la entrada puede ser un `application/x-www-form-urlencoded` mensaje que consta de varios campos llamados B. En este caso, cada campo de formulario denominado B se convierte en un elemento de la lista de entrada.
+  Si un parámetro de entrada es una lista, un cliente REST puede enviarla especificando el parámetro varias veces (una vez para cada elemento de la lista). Por ejemplo, si A es una lista de documentos, la entrada debe ser un mensaje de varias partes formado por varias partes denominadas A. En este caso, cada pieza denominada A se convierte en un elemento de la lista de entrada. Si B es una lista de cadenas, la entrada puede ser un `application/x-www-form-urlencoded` mensaje que consta de varios campos llamados B. En este caso, cada campo de formulario denominado B se convierte en un elemento de la lista de entrada.
 
-   Si un parámetro de entrada es un mapa y es el parámetro de entrada solo de servicios, cada parte o campo del mensaje de entrada se convierte en un registro de clave o valor en el mapa. El nombre de cada parte/campo se convierte en la clave del registro. El contenido de cada parte/campo se convierte en el valor del registro.
+  Si un parámetro de entrada es un mapa y es el parámetro de entrada solo de servicios, cada parte o campo del mensaje de entrada se convierte en un registro de clave o valor en el mapa. El nombre de cada parte/campo se convierte en la clave del registro. El contenido de cada parte/campo se convierte en el valor del registro.
 
-   Si un mapa de entrada no es el parámetro de entrada solo de servicios, cada registro de clave/valor que pertenece al mapa se puede enviar utilizando un parámetro denominado como concatenación del nombre del parámetro y la clave del registro. Por ejemplo, un mapa de entrada llamado `attributes` se puede enviar con una lista de los siguientes pares clave/valores:
+  Si un mapa de entrada no es el parámetro de entrada solo de servicios, cada registro de clave/valor que pertenece al mapa se puede enviar utilizando un parámetro denominado como concatenación del nombre del parámetro y la clave del registro. Por ejemplo, un mapa de entrada llamado `attributes` se puede enviar con una lista de los siguientes pares clave/valores:
 
-   `attributesColor=red`
+  `attributesColor=red`
 
-   `attributesShape=box`
+  `attributesShape=box`
 
-   `attributesWidth=5`
+  `attributesWidth=5`
 
-   Esto se traduce en un mapa de tres registros: `Color=red`, `Shape=box`, y `Width=5`.
+  Esto se traduce en un mapa de tres registros: `Color=red`, `Shape=box`, y `Width=5`.
 
-   Los parámetros de salida de los tipos de lista y asignación pasan a formar parte del mensaje XML resultante. La lista de resultados se representa en XML como una serie de elementos XML con un elemento para cada elemento de la lista. A cada elemento se le asigna el mismo nombre que al parámetro de lista de salida. El valor de cada elemento XML es una de dos cosas:
+  Los parámetros de salida de los tipos de lista y asignación pasan a formar parte del mensaje XML resultante. La lista de resultados se representa en XML como una serie de elementos XML con un elemento para cada elemento de la lista. A cada elemento se le asigna el mismo nombre que al parámetro de lista de salida. El valor de cada elemento XML es una de dos cosas:
 
 * Una representación de texto del elemento de la lista (si la lista consta de tipos de cadena)
 * Una dirección URL que señala al contenido del documento (si la lista consta de `com.adobe.idp.Document` objetos)
 
-   El siguiente ejemplo es un mensaje XML devuelto por un servicio que tiene un único parámetro de salida denominado *lista*, que es una lista de números enteros.
-   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parámetro de mapa de salida se representa en el mensaje XML resultante como una serie de elementos XML con un elemento para cada registro de la asignación. A cada elemento se le asigna el mismo nombre que a la clave del registro de mapa. El valor de cada elemento es una representación de texto del valor del registro de mapa (si el mapa consiste en registros con un valor de cadena) o una dirección URL que señala al contenido del documento (si el mapa consiste en registros con la variable `com.adobe.idp.Document` valor). A continuación se muestra un ejemplo de un mensaje XML devuelto por un servicio que tiene un solo parámetro de salida denominado `map`. Este valor de parámetro es un mapa que consta de registros que asocian letras con `com.adobe.idp.Document` objetos.
-   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
+  El siguiente ejemplo es un mensaje XML devuelto por un servicio que tiene un único parámetro de salida denominado *lista*, que es una lista de números enteros.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un parámetro de mapa de salida se representa en el mensaje XML resultante como una serie de elementos XML con un elemento para cada registro de la asignación. A cada elemento se le asigna el mismo nombre que a la clave del registro de mapa. El valor de cada elemento es una representación textual del valor del registro del mapa (si el mapa consta de registros con un valor de cadena) o una dirección URL que señala al contenido del documento (si el mapa consta de registros con la variable `com.adobe.idp.Document` valor). A continuación se muestra un ejemplo de un mensaje XML devuelto por un servicio que tiene un solo parámetro de salida denominado `map`. Este valor de parámetro es un mapa que consta de registros que asocian letras con `com.adobe.idp.Document` objetos.
+  ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Invocaciones asincrónicas {#asynchronous-invocations}
 
@@ -183,7 +179,7 @@ Se proporcionan los siguientes ejemplos de invocación de REST:
 * Invocar el proceso MyApplication/EncryptDocument mediante REST
 * Invocar el proceso MyApplication/EncryptDocument desde Acrobat
 
-   En cada ejemplo se muestra cómo pasar distintos tipos de datos a un proceso de AEM Forms
+  En cada ejemplo se muestra cómo pasar distintos tipos de datos a un proceso de AEM Forms
 
 **Pasar valores booleanos a un proceso**
 
@@ -319,7 +315,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 
 Puede invocar un proceso de Forms desde Acrobat mediante una solicitud REST. Por ejemplo, puede invocar el *MyApplication/EncryptDocument* proceso. Para invocar un proceso de Forms desde Acrobat, coloque un botón de envío en un archivo XDP dentro de Designer. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63)).
 
-Especifique la URL para invocar el proceso dentro de la del botón *Enviar a URL* , como se muestra en la siguiente ilustración.
+Especifique la dirección URL para invocar el proceso en el campo del botón *Enviar a URL* , como se muestra en la siguiente ilustración.
 
 La dirección URL completa para invocar el proceso es https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 

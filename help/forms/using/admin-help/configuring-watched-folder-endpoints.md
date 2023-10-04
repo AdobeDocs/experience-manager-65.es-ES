@@ -1,16 +1,12 @@
 ---
 title: Configurar extremos de carpetas vigiladas
-seo-title: Configuring watched folder endpoints
 description: Obtenga información sobre cómo configurar puntos finales de carpetas vigiladas.
-seo-description: Learn how to configure watched folder endpoints.
-uuid: 01fb5ff8-2071-44bd-9241-7d5d41a5b26e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7163'
 ht-degree: 21%
@@ -35,7 +31,7 @@ Después de configurar el servicio de carpetas inspeccionadas, agregue un punto 
 Puede crear una carpeta vigilada de las dos maneras siguientes:
 
 * Al configurar los ajustes de un extremo de carpeta inspeccionada, escriba la ruta completa del directorio principal en el cuadro Ruta y anexe el nombre de la carpeta inspeccionada que se va a crear, como se muestra en este ejemplo:
-   `  C:\MyPDFs\MyWatchedFolder`AEM Debido a que la carpeta MyWatchedFolder no existe todavía, los formularios de la aplicación de formularios de la aplicación intenta crearla en esa ubicación.
+  `  C:\MyPDFs\MyWatchedFolder`AEM Debido a que la carpeta MyWatchedFolder no existe todavía, los formularios de la aplicación de formularios de la aplicación intenta crearla en esa ubicación.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta vigilada y, a continuación, escriba la ruta de acceso completa en el cuadro Ruta.
 
@@ -117,7 +113,7 @@ El proceso de invocar un servicio mediante carpetas vigiladas es el siguiente:
 
 Utilice la siguiente configuración para configurar un punto final de carpeta vigilada.
 
-**Nombre:** (Obligatorio) Identifica el punto final. No incluya un carácter &lt; porque truncará el nombre mostrado en Workspace. Si introduce una dirección URL como nombre del extremo, asegúrese de que se ajuste a las reglas de sintaxis especificadas en RFC1738.
+**Nombre:** (Obligatorio) Identifica el punto final. No incluya un carácter &lt; porque truncará el nombre mostrado en Workspace. Si va a introducir una dirección URL como nombre del extremo, asegúrese de que se ajusta a las reglas de sintaxis especificadas en RFC1738.
 
 **Descripción:** Una descripción del extremo. No incluya un carácter &lt; porque truncará la descripción mostrada en Workspace.
 
@@ -271,7 +267,7 @@ Las asignaciones de parámetros de salida también pueden especificar patrones a
 * %F = Nombre de archivo de origen
 * %E = Extensión de nombre de archivo de origen
 
-Si el patrón de asignación de parámetros de salida termina con “File.separator” (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con “File.separator”, el contenido (archivo o carpeta de resultados) se crea con ese nombre. Para obtener más información sobre las asignaciones de parámetros de salida, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Si el patrón de asignación de parámetros de salida termina con &quot;File.separator&quot; (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con “File.separator”, el contenido (archivo o carpeta de resultados) se crea con ese nombre. Para obtener más información sobre las asignaciones de parámetros de salida, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## Acerca de la restricción {#about-throttling}
 
@@ -352,6 +348,7 @@ Cuando la carpeta inspeccionada no puede procesar los archivos de origen en la c
 
    * En Aplicaciones y servicios, cambie el parámetro Patrón de archivo de inclusión del extremo de la carpeta vigilada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, escriba `NOMATCH`).
    * Suspenda el proceso que está creando nuevos archivos de entrada.
+
    AEM Espere hasta que los formularios de la recuperen y procesen todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera para que la carpeta inspeccionada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
 
 1. Determine qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y todavía quedan archivos sin procesar en la carpeta de fase, vaya al paso siguiente.
@@ -400,12 +397,12 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
       1. Especifique un patrón para Excluir patrón de archivo, como temp&amp;ast;.ps.
       1. Copie los archivos que comienzan por temp (por ejemplo, temp1.ps) en la carpeta vigilada.
       1. Una vez que el archivo se haya copiado completamente en la carpeta inspeccionada, cambie el nombre del archivo para que se corresponda con el patrón especificado para Patrón de archivo de inclusión. A continuación, la carpeta inspeccionada mueve el archivo completado al escenario.
+
    * Solución 2
 
-      Si conoce la cantidad máxima de tiempo que tardará en copiarse los archivos en una carpeta vigilada, especifique el tiempo en segundos para el Tiempo de espera. La carpeta inspeccionada espera el tiempo especificado antes de mover el archivo al escenario.
+     Si conoce la cantidad máxima de tiempo que tardará en copiarse los archivos en una carpeta vigilada, especifique el tiempo en segundos para el Tiempo de espera. La carpeta inspeccionada espera el tiempo especificado antes de mover el archivo al escenario.
 
-      Esto no es un problema para los archivos en Windows porque Windows bloquea un archivo cuando un subproceso está escribiendo. Sin embargo, este es un problema para las carpetas en Windows. Para las carpetas, debe seguir los pasos de la Solución 1.
-
+     Esto no es un problema para los archivos en Windows porque Windows bloquea un archivo cuando un subproceso está escribiendo. Sin embargo, este es un problema para las carpetas en Windows. Para las carpetas, debe seguir los pasos de la Solución 1.
 
 * Si el atributo de extremo Conservar nombre de carpeta para la carpeta inspeccionada se establece en una ruta de directorio nula, el directorio de ensayo no se limpia como debería. El directorio aún contiene el archivo procesado y la carpeta temporal.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ Sin embargo, una limitación conocida expone el contenido del sitio de la comuni
 
 Para proteger el contenido del sitio de su comunidad del acceso de usuarios anónimos a través del contenido jcr y json , siga estos pasos:
 
-1. En la instancia de autor de AEM, vaya a https:// hostname:port/editor.html/content/site/sitename.html.
+1. AEM En la instancia de autor de la, vaya a https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -79,7 +79,7 @@ Para proteger el contenido del sitio de su comunidad del acceso de usuarios anó
 
 Esta experiencia da por hecho [Aaron McDonald](/help/communities/tutorials.md#demo-users) se le asignaron las funciones de [administrador y moderador de la comunidad](/help/communities/create-site.md#roles). Si no es así, vuelva al entorno de creación en [modificar la configuración del sitio](/help/communities/sites-console.md#modifying-site-properties) y seleccione a Aaron McDonald como administrador y moderador de la comunidad.
 
-En la esquina superior derecha, seleccione `Log in`y firme con el nombre de usuario (aaron.mcdonald@mailinator.com) y la contraseña (contraseña). Observe la capacidad de iniciar sesión con las credenciales de Twitter o Facebook.
+En la esquina superior derecha, seleccione `Log in`y firme con el nombre de usuario (aaron.mcdonald@mailinator.com) y la contraseña (contraseña). Observe la capacidad de iniciar sesión con credenciales de Twitter o Facebook.
 
 ![login](assets/login.png)
 
@@ -212,8 +212,8 @@ Utilice el botón Atrás del explorador para volver al sitio publicado. La mayor
 
 Después de cerrar la sesión, es posible crear un nuevo registro de usuario.
 
-* Seleccionar `Log In`
-* Seleccionar `Sign up for a new account`
+* Seleccione lo siguiente `Log In`
+* Seleccione lo siguiente `Sign up for a new account`
 
 ![registro](assets/registration.png)
 

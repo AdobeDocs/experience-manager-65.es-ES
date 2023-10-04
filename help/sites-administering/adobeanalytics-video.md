@@ -1,17 +1,13 @@
 ---
 title: Configuración del seguimiento de vídeo para Adobe Analytics
-seo-title: Configuring Video Tracking for Adobe Analytics
 description: Obtenga información acerca de la configuración del seguimiento de vídeo para SiteCatalyst.
-seo-description: Learn about configuring video tracking for SiteCatalyst.
-uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 2%
@@ -85,11 +81,11 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Las variables asignadas a esto contendrán el nombre del archivo. Solo se envía junto con eventdata.events.a.media.view </td>
+   <td>Las variables asignadas a esta variable contienen el nombre del archivo. Solo se envía junto con eventdata.events.a.media.view </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Las variables asignadas a esto contendrán la ruta del archivo en el servidor. Solo se envía junto con eventdata.events.a.media.view </td>
+   <td>Las variables asignadas a esta variable contienen la ruta del archivo en el servidor. Solo se envía junto con eventdata.events.a.media.view </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
@@ -136,7 +132,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
    4,8,16,20,24
    ```
 
-   Los valores de desplazamiento deben ser enteros buenos a 0. El valor predeterminado es `10,25,50,75`.
+   Los valores de desplazamiento deben ser enteros mayores que 0. El valor predeterminado es `10,25,50,75`.
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
@@ -271,7 +267,7 @@ eventdata.events.milestoneXX
    10,25,50,75
    ```
 
-   Los valores de desplazamiento deben ser enteros buenos a 0.
+   Los valores de desplazamiento deben ser enteros mayores que 0.
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
@@ -302,11 +298,11 @@ Este método es similar al método Milestones con la diferencia de que los hitos
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Las variables asignadas a esto contendrán el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   <td>Las variables asignadas a esta variable contienen el nombre del archivo. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>La variable asignada a esta variable contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
   </tr>
  </tbody>
 </table>
@@ -363,7 +359,7 @@ Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se a
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>La variable asignada a esta variable contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   <td>La variable asignada a esta ruta contiene la ruta del archivo en el servidor. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
   </tr>
  </tbody>
 </table>

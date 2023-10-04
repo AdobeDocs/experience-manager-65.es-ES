@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 63%
+source-wordcount: '789'
+ht-degree: 57%
 
 ---
 
@@ -59,13 +59,13 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 
    * `less` carpeta: Contiene los archivos de la variable `less` en los que define las variables `less` y `less mixins` que se utilizan para administrar los estilos .css.
 
-     Esta carpeta consta de `less` archivos de variables, `less` archivos de mezcla, `less` archivos que definen estilos mediante mezclas y variables. Y todos estos archivos se importan en styles.less.
+     Esta carpeta consta de `less` archivos de variables, `less` archivos de mezcla, `less` archivos que definen estilos mediante mezclas y variables. Y todos estos `less` los archivos se importan en styles.less.
 
    * `css` carpeta: Contiene los archivos .css en los que se definen los estilos estáticos que se utilizarán en la temática.
 
    **Archivos de variables Less**: estos son los archivos donde se definen o anulan las variables que se utilizan para definir estilos CSS.
 
-   Los formularios adaptables proporcionan variables OOTB definidas en los siguientes archivos .less:
+   Los formularios adaptables proporcionan variables OOTB definidas en las siguientes `.less` archivos:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -74,7 +74,7 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Puede utilizar las variables Less que se proporcionan con los formularios adaptables, puede anular estas variables o crear nuevas.
+   Puede usar el complemento `less` que se proporcionan con los formularios adaptables, puede anular estas variables o crear nuevas `less` variables.
 
    >[!NOTE]
    >
@@ -131,11 +131,11 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
    }
    ```
 
-   **Archivo Styles.less:** Utilice este archivo para incluir todos los archivos Less (variables, mezclas, estilos) que debe utilizar en la biblioteca de cliente.
+   **Archivo Styles.less:** Utilice este archivo para incluir todos los `less` archivos (variables, mezclas, estilos) que debe utilizar en la biblioteca de cliente.
 
    En el siguiente archivo de ejemplo `styles.less`, la instrucción import se puede colocar en cualquier orden.
 
-   Las instrucciones para importar los siguientes archivos .less son obligatorias:
+   Instrucciones para importar lo siguiente `.less` Los archivos son obligatorios:
 
    * `globalvariables.less`
    * `layoutvariables.less`

@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2853'
+source-wordcount: '2852'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Las insignias se diferencian en UGC si se asignaron o se obtuvieron según las r
 
 ### IU de administración de distintivos {#badge-management-ui}
 
-Las Comunidades [Consola Insignias](/help/communities/badges.md) le permite añadir insignias personalizadas que se pueden mostrar para un miembro cuando se ganan (se otorgan) o cuando asumen un rol específico en la comunidad (se asignan).
+Las Comunidades [Consola Insignias](/help/communities/badges.md) permite añadir insignias personalizadas que se pueden mostrar para un miembro cuando se obtiene (se otorga) o cuando asume una función específica en la comunidad (se asigna).
 
 ### Insignias asignadas {#assigned-badges}
 
@@ -577,7 +577,7 @@ Es posible probar rápidamente la puntuación y el distintivo con la variable [T
    * Seleccionar **Múltiple**
    * Seleccionar **Añadir**
    * Entrar `/libs/settings/community/badging/rules/forums-badging`
-   * Seleccionar **+**
+   * Seleccione lo siguiente **+**
    * Entrar `/libs/settings/community/badging/rules/comments-badging`
    * Seleccionar **OK**
 
@@ -588,7 +588,7 @@ Es posible probar rápidamente la puntuación y el distintivo con la variable [T
    * Seleccionar **Múltiple**
    * Seleccionar **Añadir**
    * Entrar `/libs/settings/community/scoring/rules/forums-scoring`
-   * Seleccionar **+**
+   * Seleccione lo siguiente **+**
    * Entrar `/libs/settings/community/scoring/rules/comments-scoring`
    * Seleccionar **OK**
 

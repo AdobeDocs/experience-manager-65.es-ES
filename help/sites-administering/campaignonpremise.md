@@ -1,14 +1,12 @@
 ---
 title: AEM Integración de 6.5 con Adobe Campaign Classic
 description: AEM Obtenga información sobre cómo integrar 6.5 con Adobe Campaign Classic
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 3%
@@ -114,7 +112,7 @@ El paquete de integración crea automáticamente el `aemserver` AEM operador que
    >
    >De forma predeterminada, no hay ninguna zona de seguridad configurada para el operador. AEM Para conectarse a Adobe Campaign, debe seleccionar una zona tal como se detalla en los pasos anteriores.
    >
-   >El Adobe AEM recomienda encarecidamente crear una zona de seguridad específica para el área de seguridad con el fin de evitar cualquier problema de seguridad. Para obtener más información, consulte la [Documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >El Adobe AEM recomienda encarecidamente crear una zona de seguridad específica para el área de seguridad con el fin de evitar problemas de seguridad. Para obtener más información, consulte la [Documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. En el cliente de Campaign, vuelva a la `aemserver` y seleccione el **General** pestaña.
 
@@ -130,7 +128,7 @@ AEM usos de la [el operador ya configurado en Campaign.](#create-operator) para 
 
 1. AEM Inicie sesión en la instancia de creación de la como administrador.
 
-1. En el carril lateral de navegación global, seleccione **Herramientas** > **Cloud Services** > **Cloud Services heredados** > **Adobe Campaign**, luego haga clic en **Configurar ahora**.
+1. En el carril lateral de navegación global, seleccione **Herramientas** > **Cloud Service** > **Cloud Service heredados** > **Adobe Campaign**, luego haga clic en **Configurar ahora**.
 
    ![Configuración de Adobe Campaign](assets/configure-campaign-service.png)
 
@@ -154,7 +152,7 @@ AEM Ahora se puede comunicar con Adobe Campaign.
 >
 >Asegúrese de que el servidor de Adobe Campaign esté accesible a través de Internet. AEM No se puede acceder a redes privadas.
 
-## Configurar replicación en la instancia de publicación de AEM {#replication}
+## AEM Configuración de replicación para publicar instancias de forma {#replication}
 
 AEM El contenido de la campaña lo crean los autores de contenido en la instancia de creación de la. Esta instancia solo suele estar disponible internamente en su organización. Para que el contenido, como las imágenes y los recursos, sea accesible a los destinatarios de la campaña, debe publicarlo.
 

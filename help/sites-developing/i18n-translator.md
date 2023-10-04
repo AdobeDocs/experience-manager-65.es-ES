@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 0%
@@ -251,7 +251,7 @@ Utilice el siguiente procedimiento para exportar todas o algunas de las cadenas 
 
 1. Abra la herramienta de traducción. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Utilice el menú desplegable Diccionarios para seleccionar el diccionario que desea exportar.
-1. Si está exportando un subconjunto de las cadenas, seleccione los elementos del diccionario que desea exportar. Si no selecciona ningún elemento, se exportan todos los elementos.
+1. Si va a exportar un subconjunto de las cadenas, seleccione los elementos del diccionario que desea exportar. Si no selecciona ningún elemento, se exportan todos los elementos.
 1. Haga clic en Exportar > Exportar selección como Xliff (solo cadenas).
 1. En el cuadro de diálogo que aparece, copie el texto y péguelo en un archivo de texto.
 
@@ -341,7 +341,7 @@ Los países predeterminados se utilizan al mostrar los indicadores (por ejemplo,
 
 >[!NOTE]
 >
->Para las localizaciones administradas por el traductor anterior, solo funciona el idioma exacto. Si la lista desplegable de preferencias de idioma utiliza `en_uk`, debe haber un `en_uk` en el repositorio.
+>Para las localizaciones administradas por el traductor anterior, solo funciona el idioma exacto. Si la lista desplegable de preferencias de idioma utiliza `en_uk`, debe haber un `en_uk` diccionario en el repositorio.
 
 Para cambiar las definiciones predeterminadas:
 

@@ -1,16 +1,14 @@
 ---
 title: Plantillas de página para aplicaciones móviles
 description: Siga esta página para obtener más información sobre las plantillas de página. Los componentes de página que cree para su aplicación se basan en el componente /libs/mobileapps/components/angular/ng-page.
-uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---
@@ -316,7 +314,7 @@ El directorio after-platform_add contiene el `copy_AMS_Conifg.js` archivo. Este 
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-El directorio after-prepare contiene el `copy_resource_files.js` archivo. Este script copia una serie de imágenes de icono y de pantalla de inicio en ubicaciones específicas de la plataforma.
+El directorio after-prepare contiene el `copy_resource_files.js` archivo. Este script copia varias imágenes de icono y de pantalla de inicio en ubicaciones específicas de la plataforma.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 

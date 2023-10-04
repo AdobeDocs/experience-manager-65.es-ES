@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## Cómo funcionan los ataques CSRF {#how-csrf-attacks-work}
 
-La falsificación de solicitudes entre sitios (CSRF) es una vulnerabilidad del sitio web en la que se utiliza el explorador de un usuario válido para enviar una solicitud maliciosa, posiblemente a través de un iFrame. Dado que el explorador envía cookies por dominio, si el usuario inicia sesión en una aplicación, los datos del usuario pueden verse comprometidos.
+La falsificación de solicitudes entre sitios (CSRF) es una vulnerabilidad del sitio web en la que se utiliza el explorador de un usuario válido para enviar una solicitud maliciosa, posiblemente a través de un iFrame. Dado que el explorador envía cookies por dominio, si el usuario ha iniciado sesión en una aplicación, los datos del usuario pueden verse comprometidos.
 
 Por ejemplo, imagine un escenario en el que ha iniciado sesión en la consola de administración en un explorador. Recibirá un mensaje de correo electrónico que contiene un vínculo. Hace clic en el vínculo, que abre una nueva pestaña en el explorador. La página que ha abierto contiene un iFrame oculto que realiza una solicitud malintencionada al servidor de Forms AEM mediante la cookie de la sesión de formularios autenticados del usuario. Como Administración de usuarios recibe una cookie válida, pasa la solicitud.
 
@@ -30,7 +30,7 @@ Por ejemplo, imagine un escenario en el que ha iniciado sesión en la consola de
 **Referente nulo:** Al abrir una nueva ventana o pestaña del explorador, escribir una dirección y pulsar Intro, el referente es nulo. La solicitud es completamente nueva y no se origina desde una página web principal; por lo tanto, no hay ningún referente para la solicitud. El servidor de Forms puede recibir un referente nulo de:
 
 * solicitudes realizadas en puntos finales SOAP o REST desde Acrobat
-* AEM cualquier cliente de escritorio que realice una solicitud HTTP en un extremo SOAP o REST de formularios
+* AEM cualquier cliente de escritorio que realice una solicitud HTTP en un extremo SOAP o REST de formularios de la aplicación de datos de la plataforma de datos de
 * AEM cuando se abre una nueva ventana del explorador y se introduce la dirección URL de cualquier página de inicio de sesión de la aplicación web de formularios en la que se haya creado la aplicación de la aplicación
 
 Permitir un referente nulo en los extremos SOAP y REST. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus recursos asignados correspondientes. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debería ser una excepción de referente nulo. Esta excepción solo es necesaria si habilita el filtrado de GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [AEM Protección y seguridad para formularios de](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).

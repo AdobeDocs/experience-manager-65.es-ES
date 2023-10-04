@@ -1,19 +1,15 @@
 ---
 title: Proteger documentos mediante directivas
-seo-title: Protecting Documents with Policies
 description: Utilice el servicio Document Security para aplicar dinámicamente la configuración de confidencialidad a los documentos de Adobe PDF y mantener el control sobre los documentos. El servicio Document Security también permite a los usuarios mantener el control sobre cómo utilizan los destinatarios el documento de PDF protegido por políticas.
-seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
-uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '15514'
+source-wordcount: '15513'
 ht-degree: 0%
 
 ---
@@ -151,7 +147,7 @@ Para crear una directiva, realice los siguientes pasos:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-rightsmanagement-client.jar
 * namespace.jar (si AEM Forms está implementado en JBoss)
@@ -228,20 +224,20 @@ Cree una directiva mediante la API de seguridad de los documentos (Java):
 
 1. Establezca los atributos de la directiva.
 
-   * Crear un `Policy` invocando el objeto de `InfomodelObjectFactory` estático del objeto `createPolicy` método. Este método devuelve un `Policy` objeto.
+   * Crear un `Policy` invocando el objeto de `InfomodelObjectFactory` objeto estático `createPolicy` método. Este método devuelve un `Policy` objeto.
    * Establezca el atributo name de la directiva invocando el `Policy` del objeto `setName` y pasando un valor de cadena que especifica el nombre de la directiva.
-   * Establezca la descripción de la directiva invocando el `Policy` del objeto `setDescription` y pasando un valor de cadena que especifica la descripción de la directiva.
-   * Establezca el conjunto de directivas al que pertenece la nueva directiva invocando `Policy` del objeto `setPolicySetName` y pasando un valor de cadena que especifica el nombre del conjunto de directivas. (Puede especificar `null` para este valor de parámetro que da como resultado que la política se añada a *Mis directivas* conjunto de directivas.)
-   * Cree el periodo de validez de la política invocando el `InfomodelObjectFactory` estático del objeto `createValidityPeriod` método. Este método devuelve un `ValidityPeriod` objeto.
+   * Establezca la descripción de la directiva invocando la variable `Policy` del objeto `setDescription` y pasando un valor de cadena que especifica la descripción de la directiva.
+   * Especifique el conjunto de directivas al que pertenece la nueva directiva invocando `Policy` del objeto `setPolicySetName` y pasando un valor de cadena que especifica el nombre del conjunto de directivas. (Puede especificar `null` para este valor de parámetro que da como resultado que la política se añada a *Mis directivas* conjunto de directivas.)
+   * Cree el periodo de validez de la política invocando el `InfomodelObjectFactory` objeto estático `createValidityPeriod` método. Este método devuelve un `ValidityPeriod` objeto.
    * Establezca el número de días durante los cuales se puede acceder a un documento protegido por una directiva invocando el `ValidityPeriod` del objeto `setRelativeExpirationDays` y pasando un valor entero que especifica el número de días.
-   * Establezca el periodo de validez de la directiva invocando el `Policy` del objeto `setValidityPeriod` y pasando el `ValidityPeriod` objeto.
+   * Establezca el período de validez de la directiva invocando el `Policy` del objeto `setValidityPeriod` y pasando el `ValidityPeriod` objeto.
 
 1. Crear una entrada de directiva.
 
-   * Cree una entrada de directiva invocando el `InfomodelObjectFactory` estático del objeto `createPolicyEntry` método. Este método devuelve un `PolicyEntry` objeto.
-   * Especifique los permisos de la directiva invocando el `InfomodelObjectFactory` estático del objeto `createPermission` método. Pase un miembro de datos estáticos que pertenezca a `Permission` que representa el permiso. Este método devuelve un `Permission` objeto. Por ejemplo, para agregar el permiso que permite a los usuarios copiar datos de un documento de PDF protegido por una directiva, pase `Permission.COPY`. (Repita este paso para cada permiso que desee agregar).
+   * Cree una entrada de directiva invocando el `InfomodelObjectFactory` objeto estático `createPolicyEntry` método. Este método devuelve un `PolicyEntry` objeto.
+   * Especifique los permisos de la directiva invocando el `InfomodelObjectFactory` objeto estático `createPermission` método. Pase un miembro de datos estáticos que pertenezca a `Permission` que representa el permiso. Este método devuelve un `Permission` objeto. Por ejemplo, para agregar el permiso que permite a los usuarios copiar datos de un documento de PDF protegido por una directiva, pase `Permission.COPY`. (Repita este paso para cada permiso que desee agregar).
    * Agregue el permiso a la entrada de directiva invocando el `PolicyEntry` del objeto `addPermission` y pasando el `Permission` objeto. (Repita este paso para cada `Permission` objeto que ha creado).
-   * Cree el principal de la política invocando el `InfomodelObjectFactory` estático del objeto `createSpecialPrincipal` método. Pase un miembro de datos que pertenezca a `InfomodelObjectFactory` que representa el principal. Este método devuelve un `Principal` objeto. Por ejemplo, para agregar el editor del documento como principal, pase `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * Cree el principal de la política invocando el `InfomodelObjectFactory` objeto estático `createSpecialPrincipal` método. Pase un miembro de datos que pertenezca a `InfomodelObjectFactory` que representa el principal. Este método devuelve un `Principal` objeto. Por ejemplo, para agregar el editor del documento como principal, pase `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
    * Agregue el principal a la entrada de directiva invocando el `PolicyEntry` del objeto `setPrincipal`y pasando el `Principal` objeto.
    * Añada la entrada de directiva a la directiva invocando el `Policy` del objeto `addPolicyEntry` y pasando el `PolicyEntry` objeto.
 
@@ -251,6 +247,7 @@ Cree una directiva mediante la API de seguridad de los documentos (Java):
    * Registre la directiva invocando el `PolicyManager` del objeto `registerPolicy` y pasando los siguientes valores:
 
       * El `Policy` que representa la directiva que se va a registrar.
+
    * Valor de cadena que representa el conjunto de directivas al que pertenece la directiva.
 
    AEM Si utiliza una cuenta de administrador de formularios en la configuración de conexión para crear la cuenta de administrador de formularios en la aplicación de `DocumentSecurityClient` objeto y, a continuación, especifique el nombre del conjunto de directivas al invocar el `registerPolicy` método. Si pasa un `null` valor para el conjunto de directivas, la directiva se crea en los administradores *Mis directivas* conjunto de directivas.
@@ -288,15 +285,15 @@ Cree una directiva mediante la API de seguridad de los documentos (servicio web)
       * AEM Asigne el nombre de usuario del formulario de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Establezca los atributos de la directiva.
 
    * Crear un `PolicySpec` mediante su constructor.
    * Establezca el nombre de la directiva asignando un valor de cadena al `PolicySpec` del objeto `name` miembro de datos.
-   * Establezca la descripción de la directiva asignando un valor de cadena a `PolicySpec` del objeto `description` miembro de datos.
-   * Establezca el conjunto de directivas al que pertenecerá la directiva asignando un valor de cadena al `PolicySpec` del objeto `policySetName` miembro de datos. Debe especificar un nombre de conjunto de directivas existente. (Puede especificar `null` para este valor de parámetro que resulta en la directiva agregada a *Mis directivas*.)
+   * Establezca la descripción de la directiva asignando un valor de cadena al `PolicySpec` del objeto `description` miembro de datos.
+   * Especifique el conjunto de directivas al que pertenece la directiva asignando un valor de cadena al `PolicySpec` del objeto `policySetName` miembro de datos. Debe especificar un nombre de conjunto de directivas existente. (Puede especificar `null` para este valor de parámetro que resulta en la directiva agregada a *Mis directivas*.)
    * Establezca el período de concesión sin conexión de la directiva asignando un valor entero al `PolicySpec` del objeto `offlineLeasePeriod` miembro de datos.
    * Configure las variables `PolicySpec` del objeto `policyXml` miembro de datos con un valor de cadena que representa los datos XML de PDRL. Para realizar esta tarea, cree un archivo .NET `StreamReader` mediante su constructor. Pase la ubicación de un archivo XML de PDRL que represente la directiva a `StreamReader` constructor. A continuación, invoque el `StreamReader` del objeto `ReadLine` y asigne el valor devuelto a una variable de cadena. Itere a través de `StreamReader` objeto hasta que `ReadLine` el método devuelve null. Asigne la variable de cadena a `PolicySpec` del objeto `policyXml` miembro de datos.
 
@@ -360,7 +357,7 @@ Debe recuperar una directiva existente para poder modificarla. Para recuperar un
 
 **Establecer los atributos de la directiva**
 
-Para modificar una directiva, modifique el valor de sus atributos. El único atributo de directiva que no se puede cambiar es el atributo de nombre. Por ejemplo, para cambiar el período de préstamo sin conexión de la política, puede modificar el valor del atributo de período de préstamo sin conexión de la política.
+Para modificar una directiva, modifique el valor de sus atributos. El único atributo de directiva que no se puede cambiar es el atributo de nombre. Por ejemplo, para cambiar el período de concesión sin conexión de la política, puede modificar el valor del atributo de período de concesión sin conexión de la política.
 
 Al modificar el período de concesión sin conexión de una directiva mediante un servicio web, la variable `offlineLeasePeriod` en el campo `PolicySpec` se ignora la interfaz. Para actualizar el período de concesión sin conexión, modifique la `OfflineLeasePeriod` en el documento XML de PDRL. A continuación, haga referencia al documento XML PDRL actualizado utilizando la variable `PolicySpec` de la interfaz `policyXML` miembro de datos.
 
@@ -395,7 +392,7 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
 
 1. Establezca los atributos de la directiva.
 
-   Cambie los atributos de la directiva para satisfacer los requisitos empresariales. Por ejemplo, para cambiar el período de concesión sin conexión de la directiva, invoque el `Policy` del objeto `setOfflineLeasePeriod` método.
+   Cambie los atributos de la póliza para satisfacer sus necesidades comerciales. Por ejemplo, para cambiar el período de concesión sin conexión de la directiva, invoque el `Policy` del objeto `setOfflineLeasePeriod` método.
 
 1. Actualice la directiva.
 
@@ -428,8 +425,8 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
       * AEM Asigne el nombre de usuario del formulario de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperar una directiva existente.
 
@@ -440,7 +437,7 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
 
 1. Establezca los atributos de la directiva.
 
-   Cambie los atributos de la directiva para satisfacer los requisitos empresariales.
+   Cambie los atributos de la póliza para satisfacer sus necesidades comerciales.
 
 1. Actualice la directiva.
 
@@ -531,8 +528,8 @@ Eliminar una directiva mediante la API de Document Security (servicio web):
       * AEM Asigne el nombre de usuario del formulario de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Elimine la directiva.
 
@@ -629,8 +626,7 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
       * Valor de cadena que representa el nombre canónico del usuario administrador de usuarios que es el editor del documento. Este valor de parámetro es opcional y puede ser `null` (si este parámetro es nulo, el valor del parámetro anterior debe ser `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` que representa la configuración regional utilizada para seleccionar la plantilla de MS Office. Este valor de parámetro es opcional y no se utiliza para documentos de PDF. Para proteger un documento de PDF, especifique `null`.
 
-      El `protectDocument` El método devuelve un valor `RMSecureDocumentResult` que contiene el documento de PDF protegido por una directiva.
-
+     El `protectDocument` El método devuelve un valor `RMSecureDocumentResult` que contiene el documento de PDF protegido por una directiva.
 
 1. Guarde el documento del PDF.
 
@@ -674,8 +670,8 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
       * AEM Asigne el nombre de usuario del formulario de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere un documento de PDF.
 
@@ -819,8 +815,8 @@ Quitar una directiva de un documento de PDF protegido por una directiva mediante
       * AEM Asigne el nombre de usuario del formulario de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere un documento de PDF protegido por una directiva.
 
@@ -855,7 +851,7 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 
 ## Revocar acceso a documentos {#revoking-access-to-documents}
 
-Puede revocar el acceso a un documento PDF protegido por una directiva, lo que hace que todas las copias del documento sean inaccesibles para los usuarios. Cuando un usuario intenta abrir un documento de PDF revocado, se le redirige a una URL especificada donde se puede ver un documento revisado. La dirección URL a la que se redirige al usuario debe especificarse mediante programación. Cuando se anula el acceso a un documento, el cambio surte efecto la próxima vez que el usuario se sincronice con el servicio Document Security abriendo el documento protegido por políticas en línea.
+Puede revocar el acceso a un documento PDF protegido por una directiva, lo que hace que todas las copias del documento sean inaccesibles para los usuarios. Cuando un usuario intenta abrir un documento de PDF revocado, se le redirige a una URL especificada donde se puede ver un documento revisado. La dirección URL a la que se redirige al usuario debe especificarse mediante programación. Cuando se anula el acceso a un documento, el cambio surte efecto la próxima vez que el usuario se sincronice con el servicio de Document Security abriendo el documento protegido por políticas en línea.
 
 La capacidad de revocar el acceso a un documento proporciona seguridad adicional. Por ejemplo, supongamos que hay disponible una versión más reciente de un documento y que ya no desea que nadie vea la versión obsoleta. En este caso, el acceso al documento anterior se puede revocar y nadie puede ver el documento a menos que se restablezca el acceso.
 
@@ -962,8 +958,8 @@ Revocar acceso a un documento de PDF protegido por una directiva mediante la API
       * AEM Asigne el nombre de usuario del formulario de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperar un documento de PDF protegido por una directiva
 
@@ -1094,8 +1090,8 @@ Restablezca el acceso a un documento revocado mediante la API de seguridad de lo
       * AEM Asigne el nombre de usuario del formulario de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere el identificador de licencia del documento de PDF revocado.
 
@@ -1228,8 +1224,8 @@ Inspect crea un documento de PDF protegido por políticas mediante la API del se
       * AEM Asigne el nombre de usuario del formulario de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere un documento protegido por una directiva para inspeccionarlo.
 
@@ -1342,7 +1338,7 @@ En la tabla siguiente se enumeran los pares de clave y valor necesarios al crear
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
    <td><p>Si se especifica este valor, entonces <code>WaterBackCmd:IS_SIZE_ENABLED</code> debe estar presente y el valor debe ser verdadero. Si no se especifica este atributo, el comportamiento predeterminado se ajusta a la página.</p></td>
-   <td><p>Un valor bueno que 0,0 y menor o igual que 1,0.</p></td>
+   <td><p>Un valor mayor que 0,0 y menor o igual que 1,0.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:HORIZ_ALIGN</code></p></td>
@@ -1408,10 +1404,10 @@ Crear una marca de agua mediante la API de seguridad de los documentos (Java):
 
 1. Definir los atributos de filigrana
 
-   * Crear un `Watermark` invocando el objeto de `InfomodelObjectFactory` estático del objeto `createWatermark` método. Este método devuelve un `Watermark` objeto.
-   * Establezca el atributo name de la marca de agua invocando el `Watermark` del objeto `setName` y pasando un valor de cadena que especifica el nombre de la directiva.
-   * Establezca el atributo de fondo de la marca de agua invocando el `Watermark` del objeto `setBackground` método y paso `true`. Al establecer este atributo, la marca de agua aparece en segundo plano del documento.
-   * Establezca el atributo de texto personalizado de la marca de agua invocando el `Watermark` del objeto `setCustomText` y pasando un valor de cadena que representa el texto de la marca de agua.
+   * Crear un `Watermark` invocando el objeto de `InfomodelObjectFactory` objeto estático `createWatermark` método. Este método devuelve un `Watermark` objeto.
+   * Establezca el atributo name de la marca de agua invocando la variable `Watermark` del objeto `setName` y pasando un valor de cadena que especifica el nombre de la directiva.
+   * Establezca el atributo de fondo de la marca de agua invocando la variable `Watermark` del objeto `setBackground` método y paso `true`. Al establecer este atributo, la marca de agua aparece en segundo plano del documento.
+   * Establezca el atributo de texto personalizado de la marca de agua invocando la variable `Watermark` del objeto `setCustomText` y pasando un valor de cadena que representa el texto de la marca de agua.
    * Establezca el atributo de opacidad de la marca de agua invocando la variable `Watermark` del objeto `setOpacity` y pasando un valor entero que especifica el nivel de opacidad. El valor 100 indica que la marca de agua es completamente opaca y el valor 0 indica que es completamente transparente.
 
 1. Registre la marca de agua.
@@ -1448,8 +1444,8 @@ Crear una marca de agua mediante la API de Document Security (servicio web):
       * AEM Asigne el nombre de usuario del formulario de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Establezca los atributos de marca de agua.
 
@@ -1595,8 +1591,8 @@ Modificar una marca de agua mediante la API de seguridad de los documentos (serv
       * AEM Asigne el nombre de usuario del formulario de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere la marca de agua que desea modificar.
 
@@ -1723,8 +1719,8 @@ Busque eventos mediante la API de Rights Management (servicio web):
       * AEM Asigne el nombre de usuario del formulario de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Especifique los eventos que desea buscar
 
@@ -2030,8 +2026,7 @@ Aplicar una directiva a un documento de Word mediante la API de Document Securit
       * Valor de cadena que representa el nombre canónico del usuario administrador de usuarios que es el editor del documento. Este valor de parámetro es opcional y puede ser `null` (si este parámetro es `null`, el valor del parámetro anterior debe ser `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` que representa la configuración regional utilizada para seleccionar la plantilla de MS Office. Este valor de parámetro es opcional y puede especificar `null`.
 
-      El `protectDocument` El método devuelve un valor `RMSecureDocumentResult` que contiene el documento de Word protegido por una directiva.
-
+     El `protectDocument` El método devuelve un valor `RMSecureDocumentResult` que contiene el documento de Word protegido por una directiva.
 
 1. Guarde el documento de Word.
 
@@ -2068,8 +2063,8 @@ Aplicar una directiva a un documento de Word mediante la API de Document Securit
       * AEM Asigne el nombre de usuario del formulario de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere un documento de Word.
 
@@ -2212,8 +2207,8 @@ Quitar una directiva de un documento de Word protegido por una directiva mediant
       * AEM Asigne el nombre de usuario del formulario de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
+   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recuperar un documento de Word protegido por una directiva
 

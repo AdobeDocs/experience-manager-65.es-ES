@@ -2,10 +2,10 @@
 title: AEM Creación y organización de páginas con la función de
 description: AEM Creación y administración de páginas con la función de administración de
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 59%
+source-wordcount: '2523'
+ht-degree: 79%
 
 ---
 
@@ -34,7 +34,7 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como una estructura de árbol que contiene las páginas de contenido. Los nombres de estas páginas de contenido se utilizan para formar las direcciones URL, mientras que el título se muestra cuando se visualiza el contenido de la página.
 
-A continuación, se muestra un ejemplo del sitio de We.Retail, donde una página de shorts de senderismo ( `desert-sky-shorts`se accede a ):
+A continuación, se muestra un ejemplo del sitio de We.Retail, donde una página de shorts de senderismo ( `desert-sky-shorts`) se accede a:
 
 * Entorno de creación
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
@@ -88,13 +88,13 @@ Al crear una nueva página, hay dos campos de claves:
 * **[Nombre](#name)**:
 
    * Se usa para generar la URI.
-   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se deriva del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obtener más detalles.
+   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obtener más detalles.
 
 #### Restricciones de nombres de páginas y prácticas recomendadas {#page-name-restrictions-and-best-practices}
 
 El **título** y el **nombre** de la página se pueden crear por separado, pero están relacionados:
 
-* Al crear una página, solo aparece el **Título** Este campo es obligatorio. Si no **Nombre** AEM se proporciona al crear la página, generará un nombre a partir de los primeros 64 caracteres del título (observando la validación que se indica a continuación). Solo se utilizan los 64 primeros caracteres para ofrecer compatibilidad con la práctica recomendada de nombres de página cortos.
+* Al crear una página, solo se precisa el campo **Título**. Si no se proporciona ningún **nombre** durante la creación de la página, AEM genera un nombre a partir de los 64 primeros caracteres del título (observe el conjunto de validación a continuación). Solo se utilizan los 64 primeros caracteres para ofrecer compatibilidad con la práctica recomendada de nombres de página cortos.
 
 * Si el autor especifica manualmente un nombre de página, el límite de 64 caracteres no se aplica. Sin embargo, es posible que se produzcan otras limitaciones técnicas en la longitud del nombre de la página.
 
@@ -139,15 +139,15 @@ Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nom
 >
 >Evite utilizar un código de dos letras como nombre de página, tal como se indica en la norma ISO-639-1, a menos que sea la raíz de un idioma.
 >
->Consulte [Preparación del contenido para su traducción](/help/sites-administering/tc-prep.md) para obtener más información.
+>Consulte [Preparación de contenido para su traducción](/help/sites-administering/tc-prep.md) para obtener más información.
 
 ### Plantillas {#templates}
 
-AEM En, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
+En AEM, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
-AEM Se incluye con varias plantillas listas para usar. Se proporciona de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
+AEM incluye varias plantillas listas para usar de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
 
 * **Título** El título se muestra en la página web resultante.
 
@@ -169,7 +169,7 @@ Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de 
 * Vídeo
 * Y muchos más
 
-Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-authoring/editing-content.md#insertinganewparagraph), que están disponibles en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#componentbrowser).
+Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-authoring/editing-content.md#insertinganewparagraph) que están disponibles en el [explorador de componentes](/help/sites-authoring/author-environment-tools.md#componentbrowser).
 
 >[!NOTE]
 >
@@ -199,9 +199,9 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
    * Utilice las tres pestañas para especificar las [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página; a continuación, pulse o haga clic en **Crear** para crear la página.
 
-   * Uso **Atrás** para volver a la selección de plantilla.
+   * Utilice **Atrás** para volver a la selección de plantilla.
 
-   Los campos clave son:
+   Los campos clave son los siguientes:
 
    * **Título**:
 
@@ -209,16 +209,16 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
    * **Nombre**:
 
-      * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
+      * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
       * Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
-      * Usted **no se pueden enviar caracteres no válidos** en el **Nombre** field. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!NOTE]
    >
-   >Consulte [Convenciones de nomenclatura de páginas](#page-naming-conventions).
+   >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página nueva es la siguiente **Título**.
+   La información mínima necesaria para crear una página nueva es el **Título**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -264,12 +264,12 @@ Después de crear una página o desplazarse a una página existente (en la conso
 Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
 1. En la consola **Sitios**, desplácese hasta que encuentre la página que desea copiar.
-1. Seleccione la página mediante:
+1. Seleccione la página mediante lo siguiente:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) y la barra de herramientas
 
-   Y luego el **Copiar** icono de página:
+   Y luego el icono de página **Copiar**:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
@@ -288,13 +288,13 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
    >[!NOTE]
    >
-   >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema genera automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
 ### Mover una página o cambiarle el nombre {#moving-or-renaming-a-page}
 
 >[!NOTE]
 >
->Cambiar el nombre de una página también está sujeto a la [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
+>Cambiar el nombre de una página también está sujeto a las [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
 
 >[!NOTE]
 >
@@ -309,18 +309,18 @@ El procedimiento para mover o cambiar el nombre de una página es básicamente e
 AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga referencia a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
 
 1. Desplácese hasta que encuentre la página que desea mover.
-1. Seleccione la página mediante:
+1. Seleccione la página mediante lo siguiente:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) y la barra de herramientas
 
-   Y luego seleccione la **Mover** icono de página:
+   A continuación, seleccione el icono **Mover página**:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
    Se abrirá el asistente para mover páginas.
 
-1. Desde el **Cambiar nombre** fase del asistente puede realizar una de las acciones siguientes:
+1. En el paso **Cambiar nombre** del asistente puede realizar una de las acciones siguientes:
 
    * Especifique el nombre que desea que tenga la página cuando se haya desplazado y, a continuación, toque o haga clic en **Siguiente** para continuar.
 
@@ -328,20 +328,20 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    ![caop-07](assets/caop-07.png)
 
-   El nombre de página puede ser el mismo si sólo mueve la página.
+   El nombre de página puede ser el mismo si solo mueve la página.
 
    >[!NOTE]
    >
    >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
-1. Desde el **Seleccionar destino** fase del asistente puede realizar una de las acciones siguientes:
+1. En el paso **Seleccionar destino** del asistente puede realizar una de las acciones siguientes:
 
-   * Utilice el [vista de columna](/help/sites-authoring/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
+   * Utilice la [vista de columna](/help/sites-authoring/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
 
       * Seleccione el destino haciendo clic en la miniatura de destino.
       * Haga clic en **Siguiente** para continuar.
 
-   * Uso **Atrás** para volver a la especificación del nombre de página.
+   * Utilice **Volver** para volver al apartado para especificar el nombre de la página.
 
    >[!NOTE]
    >
@@ -363,7 +363,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    ![caop-09](assets/caop-09.png)
 
-1. Seleccionar **Mover** completará el proceso y moverá o cambiará el nombre de la página según corresponda.
+1. Si selecciona **Mover** se completará el proceso y moverá o cambiará el nombre de la página según corresponda.
 
 >[!NOTE]
 >
@@ -401,7 +401,7 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 ### Eliminar una página {#deleting-a-page}
 
 1. Desplácese hasta que vea la página que desea eliminar.
-1. Uso [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, utilice **Eliminar** en la barra de herramientas:
+1. Uso [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, luego utilice **Eliminar** en la barra de herramientas:
 
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
@@ -423,7 +423,7 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 
 ### Bloquear una página   {#locking-a-page}
 
-Puede [bloquear/desbloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) desde una consola o al editar una página individual. La información sobre si una página está bloqueada también se muestra en ambas ubicaciones.
+Puede [bloquear/desbloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) desde una consola o al editar una página individual. La información sobre las páginas bloqueadas también se muestra en ambas ubicaciones.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
@@ -433,7 +433,7 @@ Puede crear carpetas para organizar archivos y páginas.
 
 >[!NOTE]
 >
->Las carpetas también están sujetas al [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de carpeta.
+>Las carpetas también están sujetas a las [Convenciones de asignación de nombres a páginas](#page-naming-conventions) al especificar el nuevo nombre de carpeta.
 
 >[!CAUTION]
 >
@@ -444,7 +444,7 @@ Puede crear carpetas para organizar archivos y páginas.
 
 1. Abra la consola **Sitios** y vaya hasta la ubicación deseada.
 1. Para abrir la lista de opciones, seleccione **Crear** en la barra de herramientas
-1. Seleccionar **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
+1. Seleccione **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 

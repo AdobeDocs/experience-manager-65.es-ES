@@ -1,19 +1,15 @@
 ---
 title: Configurar las opciones de cliente y servidor
-seo-title: Configuring client and server optionsn
 description: Obtenga información sobre cómo configurar las distintas opciones de cliente y servidor, como las opciones de configuración del servidor, las funciones de seguridad de documentos y la auditoría de eventos.
-seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
-uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '10242'
+source-wordcount: '10243'
 ht-degree: 0%
 
 ---
@@ -212,7 +208,7 @@ Cuando se habilita la auditoría del servidor, se pueden ver los eventos auditad
    * Para auditar todos los eventos de la categoría, seleccione Todos.
    * Para auditar sólo algunos eventos, anule la selección de Todos y, a continuación, active las casillas de verificación situadas junto a los eventos que desee auditar.
 
-      (Consulte [Opciones de auditoría de eventos](configuring-client-server-options.md#event-auditing-options).)
+     (Consulte [Opciones de auditoría de eventos](configuring-client-server-options.md#event-auditing-options).)
 
 1. Haga clic en Aceptar.
 
@@ -421,7 +417,7 @@ Esta configuración controla el texto mostrado en el cuadro de diálogo de auten
 
 **Personalización para la visualización de certificados de cliente**
 
-**Mostrar solo los emisores de credenciales de confianza:** AEM Cuando se selecciona esta opción, la aplicación cliente presenta al usuario únicamente certificados de los emisores de credenciales en los que está configurado para confiar el formulario de las credenciales (consulte Administración de certificados y credenciales.) Cuando esta opción no está seleccionada, se presenta al usuario una lista de todos los certificados del sistema del usuario.
+**Mostrar solo los emisores de credenciales de confianza:** AEM Cuando se selecciona esta opción, la aplicación cliente presenta al usuario únicamente certificados de los emisores de credenciales en los que está configurado para confiar el formulario de las credenciales (consulte Administración de certificados y credenciales.) Cuando no se selecciona esta opción, se presenta al usuario una lista de todos los certificados del sistema del usuario.
 
 ## Configurar marcas de agua dinámicas {#configure-dynamic-watermarks}
 
@@ -493,7 +489,7 @@ Puede crear plantillas de marcas de agua dinámicas. Estas plantillas siguen est
    * Seleccione los tipos de marcas de agua que desea incluir. Si selecciona Texto personalizado, en el cuadro adyacente, escriba el texto que se mostrará para la marca de agua. Tenga en cuenta la longitud del texto que aparecerá como marca de agua.
    * Especifique las propiedades de formato de texto, como el nombre de la fuente, el tamaño de fuente, el color de primer plano y el color de fondo del contenido del texto de la marca de agua. Especifique el color de primer plano y de fondo como valores hexadecimales.
 
-      ***nota **: Si selecciona la opción de escalado como Ajustar a la página, la propiedad de tamaño de fuente no estará disponible para la edición.*
+     ***nota **: Si selecciona la opción de escalado como Ajustar a la página, la propiedad de tamaño de fuente no estará disponible para la edición.*
 
 1. Si seleccionó PDF para las opciones de marca de agua enriquecida, haga clic en **Examinar** junto a Seleccionar PDF de filigrana para seleccionar el documento de PDF que desea utilizar como filigrana.
 
@@ -810,7 +806,7 @@ Cuando Acrobat o Adobe Reader solicitan un servicio de Document Security, propor
 
 **Extensiones de Acrobat Reader DC para Microsoft Office**
 
-Extensiones de Acrobat Reader DC para Microsoft Office es un complemento utilizado con los productos de Microsoft Office Microsoft Word, Microsoft Excel y Microsoft PowerPoint. Cuando solicita un servicio, proporciona la siguiente información:
+Extensiones de Acrobat Reader DC para Microsoft Office es un complemento que se utiliza con los productos de Microsoft Office Microsoft Word, Microsoft Excel y Microsoft PowerPoint. Cuando solicita un servicio, proporciona la siguiente información:
 
 * **Integrador:** Adobe Systems Incorporated
 * **Versión de Integrator:** 8,2

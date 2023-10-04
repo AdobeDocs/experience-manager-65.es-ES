@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2479'
-ht-degree: 96%
+source-wordcount: '2478'
+ht-degree: 95%
 
 ---
 
@@ -66,7 +66,7 @@ La siguiente imagen muestra varias configuraciones del servidor de AEM Forms y s
 **Autor:** una instancia de autor es un servidor de AEM Forms que se ejecuta en el modo de ejecución estándar de Autor. Puede ser AEM Forms en JEE o AEM Forms en un entorno OSGi. Está dirigido a usuarios internos, diseñadores de formularios y de comunicaciones interactivas y desarrolladores. Habilita las siguientes funcionalidades:
 
 * **Crear y administrar formularios y comunicaciones interactivas:** los diseñadores y desarrolladores pueden crear y editar formularios adaptables y comunicaciones interactivas, cargar otros tipos de formularios creados externamente, por ejemplo, formularios creados en Adobe Forms Designer y administrar estos recursos mediante la consola de Forms Manager.
-* **Publicar formularios y comunicaciones interactivas:** los recursos alojados en una instancia de autor se pueden publicar en una instancia de publicación para realizar operaciones de tiempo de ejecución. La publicación de recursos utiliza las funciones de replicación de AEM. Adobe recomienda que se configure un agente de replicación en todas las instancias de autor para insertar manualmente los formularios publicados en las instancias de procesamiento y que se configure otro agente de replicación en las instancias de procesamiento con el activador *Recepción* habilitado para replicar automáticamente los formularios recibidos en las instancias de publicación.
+* **Publicar formularios y comunicaciones interactivas:** los recursos alojados en una instancia de autor se pueden publicar en una instancia de publicación para realizar operaciones de tiempo de ejecución. AEM La publicación de recursos utiliza funciones de replicación de. Adobe recomienda que se configure un agente de replicación en todas las instancias de autor para insertar manualmente los formularios publicados en las instancias de procesamiento y que se configure otro agente de replicación en las instancias de procesamiento con el activador *Recepción* habilitado para replicar automáticamente los formularios recibidos en las instancias de publicación.
 
 **Publicación:** una instancia de publicación es un servidor de AEM Forms que se ejecuta en el modo de ejecución de publicación estándar. Las instancias de publicación están destinadas a los usuarios finales de aplicaciones basadas en formularios como, por ejemplo, los usuarios que acceden a un sitio web público y envían formularios. Habilita las siguientes funcionalidades:
 
@@ -81,7 +81,7 @@ La siguiente imagen muestra varias configuraciones del servidor de AEM Forms y s
 
   >[!NOTE]
   >
-  >Adobe recomienda utilizar un repositorio de datos de terceros para guardar los datos procesados finales en lugar de utilizar el repositorio de AEM.
+  >El Adobe AEM recomienda utilizar un repositorio de datos de terceros para guardar los datos procesados finales en lugar de utilizar el repositorio de datos de la aplicación de la versión de.
 
 * **Almacenar y posprocesar los datos de correspondencia que llegan desde una instancia de publicación:** los flujos de trabajo de AEM realizan el posprocesamiento opcional de las definiciones de cartas correspondientes. Estos flujos de trabajo pueden guardar los datos procesados finales en un repositorio de datos externo adecuado.
 

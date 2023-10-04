@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 6%
+source-wordcount: '551'
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ SPA SPA AEM La función de creación de ofrece una solución completa para la as
 
 ## Introducción {#introduction}
 
-AEM SPA SPA SPA AEM Gracias al contrato sencillo y ligero que requiere la aplicación y que se establece entre el Editor de la y el Editor de la, tomar una aplicación JavaScript existente y adaptarla para usarla con un en la es una cuestión sencilla.
+AEM SPA SPA SPA AEM Gracias al contrato sencillo y ligero que requiere la aplicación y que se establece entre el Editor de la y el Editor de la, es sencillo tomar una aplicación JavaScript existente y adaptarla para usarla con un en el uso.
 
 SPA Este artículo ilustra el ejemplo del componente meteorológico en la muestra de We.Retail Journal.
 
@@ -35,7 +35,7 @@ Debe estar familiarizado con las [SPA AEM estructura de una aplicación de para 
 >[!CAUTION]
 >Este documento usa el [Aplicación de diario We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) únicamente con fines de demostración. No lo utilice para ningún trabajo de proyecto.
 >
->AEM Cualquier proyecto debe utilizar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA y utiliza el SDK de.
+>Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## El componente Meteorológico {#the-weather-component}
 

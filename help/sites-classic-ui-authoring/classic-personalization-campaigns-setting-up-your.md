@@ -1,17 +1,13 @@
 ---
 title: Configuración de la campaña
-seo-title: Setting up your campaign
 description: La configuración de una nueva campaña requiere la creación de una marca que contenga sus campañas, la creación de una campaña que incluya experiencias y la definición final de las propiedades de la nueva campaña.
-seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
-uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 0%
@@ -95,13 +91,13 @@ Configure las propiedades de la campaña que controlan el comportamiento:
 * **Prioridad:** La prioridad de esta campaña en relación con otras campañas. Cuando se activan varias campañas simultáneamente, la campaña que tiene la prioridad más alta controla la experiencia del visitante.
 * **Tiempo de activación y desactivación:** Estas propiedades controlan el periodo de tiempo en el que la campaña controla la experiencia del visitante. La propiedad On Time controla el momento en el que la campaña empieza a controlar la experiencia. La propiedad Tiempo de inactividad controla cuándo las campañas dejan de controlar la experiencia.
 * **Imagen:** AEM La imagen que representa la campaña en la que se ha realizado la.
-* **Cloud Services:** Las configuraciones de Cloud Service con las que se integra la campaña. (Consulte [Integración con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Cloud Service:** Las configuraciones de Cloud Service con las que se integra la campaña. (Consulte [Integración con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** Propiedades que configuran campañas integradas con Adobe Target. (Consulte [Integración con Adobe Target](/help/sites-administering/target.md).)
 
 1. Desde **Campañas**, seleccione su marca. En el panel derecho, seleccione la campaña y haga clic en **Propiedades**.
 
-   Puede introducir varias propiedades, incluida una **Título**, **Descripción** y cualquiera **Cloud Services** lo quieres.
+   Puede introducir varias propiedades, incluida una **Título**, **Descripción** y cualquiera **Cloud Service** lo quieres.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -224,7 +220,6 @@ Para importar posibles clientes de una lista separada por comas:
    >* En el panel, haga clic en **Importar posibles clientes** en el **Listas** cristal
    >* Clic **Listas** y en el **Herramientas** menú, seleccione **Importar posibles clientes**.
 
-
 1. En el **Herramientas** menú, seleccione **Importar** **Posibles clientes**.
 
 1. Introduzca la información tal como se describe en Datos de ejemplo. Se pueden importar los campos siguientes: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
@@ -235,6 +230,8 @@ Para importar posibles clientes de una lista separada por comas:
    >
    >
    >`email,givenName,familyName` - si se escribe como `givenname`, por ejemplo, el sistema no lo reconocerá.
+   >
+   >
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 

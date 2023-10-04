@@ -12,9 +12,9 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1515'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ La moderación de UGC es útil para reconocer las contribuciones positivas y lim
 
 * [Consola de moderación masiva](moderation.md)
 
-   Los administradores y pueden acceder a la consola de moderación [moderadores de la comunidad](/help/communities/users.md) en el entorno público, así como por los administradores del entorno de creación. Esto es posible cuando el contenido de la comunidad se almacena en una [almacén común](/help/communities/working-with-srp.md).
+  Los administradores y pueden acceder a la consola de moderación [moderadores de la comunidad](/help/communities/users.md) en el entorno público, así como por los administradores del entorno de creación. Esto es posible cuando el contenido de la comunidad se almacena en una [almacén común](/help/communities/working-with-srp.md).
 
 * [Moderación en contexto](in-context.md)
 
-   La moderación en el entorno de publicación la pueden realizar los administradores y los moderadores de la comunidad directamente en la página en la que se publicó el contenido.
+  La moderación en el entorno de publicación la pueden realizar los administradores y los moderadores de la comunidad directamente en la página en la que se publicó el contenido.
 
 ## Acciones de moderación {#moderation-actions}
 
@@ -52,23 +52,23 @@ Las acciones que se pueden realizar en el contenido publicado (UGC) varían seg�
 
 * `Admin`
 
-   Un usuario que es miembro de [community-administrators](users.md) grupo.
+  Un usuario que es miembro de [community-administrators](users.md) grupo.
 
 * `Moderator`
 
-   Un miembro de un [moderadores de la comunidad](users.md#publishenvironmentusersandgroups) grupo (tiene [permisos de moderador](in-context.md#moderatorpermissions)).
+  Un miembro de un [moderadores de la comunidad](users.md#publishenvironmentusersandgroups) grupo (tiene [permisos de moderador](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
-   El usuario que publicó el contenido.
+  El usuario que publicó el contenido.
 
 * `Member`
 
-   Un usuario que ha iniciado sesión sin permisos especiales.
+  Un usuario que ha iniciado sesión sin permisos especiales.
 
 * `Visitor`
 
-   Un usuario anónimo.
+  Un usuario anónimo.
 
 <table>
  <tbody>
@@ -183,7 +183,7 @@ La acción Cerrar/Volver a abrir puede ser realizada por administradores o moder
 
 ### Marcar/Anular marca {#flag-unflag}
 
-Marcar es un medio para que cualquier miembro que haya iniciado sesión, excepto el creador del contenido, indique que hay un problema con el contenido de una publicación. Una vez marcado, aparecerá un icono de desmarcar que permitirá al mismo miembro desmarcar el contenido.
+Marcar es un medio para que cualquier miembro que haya iniciado sesión, excepto el creador del contenido, indique que hay un problema con el contenido de una publicación. Una vez marcado, aparece un icono de desmarcar, que permite al mismo miembro desmarcar el contenido.
 
 La moderación en contexto se puede configurar para permitir que los miembros seleccionen un motivo al marcar una publicación. La lista de motivos de marca seleccionables se puede configurar, incluido si se puede introducir o no un motivo personalizado. El motivo del indicador se guarda con el UGC, pero el motivo no almacena en déclencheur ninguna acción en particular. Solo el número de indicadores déclencheur una notificación. El contenido marcado se anota como tal para que los moderadores puedan actuar en consecuencia.
 
@@ -276,19 +276,19 @@ Para configurar opiniones y palabras observadas:
 
 * **Observaciones positivas**
 
-   Una lista separada por comas de palabras que contribuyen a un sentimiento positivo que anula los valores predeterminados. La lista predeterminada está vacía.
+  Una lista separada por comas de palabras que contribuyen a un sentimiento positivo que anula los valores predeterminados. La lista predeterminada está vacía.
 
 * **Observaciones negativas**
 
-   Una lista separada por comas de palabras que contribuyen a un sentimiento negativo que anula los valores predeterminados. La lista predeterminada está vacía.
+  Una lista separada por comas de palabras que contribuyen a un sentimiento negativo que anula los valores predeterminados. La lista predeterminada está vacía.
 
 * **Ruta explícita al nodo Watchwords**
 
-   Ubicación del repositorio de un nodo que contiene el valor predeterminado `positive` y `negative` propiedades especificar palabras observadas predeterminadas. El valor predeterminado es `/libs/settings/community/watchwords/default`.
+  Ubicación del repositorio de un nodo que contiene el valor predeterminado `positive` y `negative` propiedades especificar palabras observadas predeterminadas. El valor predeterminado es `/libs/settings/community/watchwords/default`.
 
 * **Reglas de opinión**
 
-   Ubicación del repositorio de las reglas para calcular la opinión basada en palabras observadas positivas y negativas. El valor predeterminado es `/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo involucrado).
+  Ubicación del repositorio de las reglas para calcular la opinión basada en palabras observadas positivas y negativas. El valor predeterminado es `/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo involucrado).
 
 A continuación se muestra un ejemplo de una entrada personalizada para las palabras clave predeterminadas, cuando `Explicit Path to Watchwords Node` se establece en `/libs/settings/community/watchwords/default`.
 

@@ -1,19 +1,15 @@
 ---
 title: Tablas en formularios adaptables
-seo-title: Tables in adaptive forms
 description: El componente Tabla en AEM Forms le permite crear tablas en formularios adaptables que respondan a diseños móviles y también permite utilizar componentes de tabla XDP.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2475'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -217,7 +213,7 @@ Columna expandida de una tabla en un dispositivo móvil
 
 Las tablas de formularios adaptables permiten rellenar la tabla durante la ejecución al utilizar datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo donde se ejecuta el servidor de AEM Forms o en el repositorio CRX.
 
-Veamos un ejemplo de la siguiente tabla de resumen de transacciones bancarias que queremos rellenar con datos de un archivo XML.
+Tomemos como ejemplo la siguiente tabla de resumen de transacciones bancarias que queremos rellenar con datos de un archivo XML.
 
 ![data-merge-table](assets/data-merge-table.png)
 

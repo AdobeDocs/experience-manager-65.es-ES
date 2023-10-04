@@ -1,16 +1,12 @@
 ---
 title: Tipos de extremos
-seo-title: Types of endpoints
 description: Obtenga información acerca de los distintos tipos de extremos.
-seo-description: Learn about the different types of endpoints.
-uuid: c899245c-14cc-4035-9440-95a5b6c1e47f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8fe572e0-8a53-4129-940f-3fdb990073fe
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -43,6 +39,6 @@ Se pueden agregar los siguientes tipos de extremos a los servicios. No todos los
 
 **WSDL:** AEM Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación para invocar el servicio mediante el Lenguaje de definición de servicios web (WSDL). AEM La página Configuraciones principales contiene una opción para habilitar la generación de WSDL para todos los servicios que forman parte de los formularios de. AEM (Consulte Configuración general de los formularios de ).
 
-**REST:** Los procesos creados en Workbench se pueden configurar para que se puedan invocar a través de solicitudes de transferencia de estado representacional (REST). Las solicitudes REST se envían desde páginas del HTML. AEM Es decir, puede invocar un proceso de formularios de la directamente desde una página web mediante una solicitud REST.
+**REST:** Los procesos creados en Workbench se pueden configurar para que se puedan invocar a través de solicitudes de transferencia de estado representacional (REST). Las solicitudes REST se envían desde páginas del HTML. AEM Es decir, puede invocar un proceso de formularios de la aplicación de la forma directa desde una página web utilizando una petición REST.
 
 Los extremos Correo electrónico, TaskManager, Carpeta inspeccionada y Remoting exponen únicamente una operación específica del servicio. Para agregar estos extremos, es necesario realizar un segundo paso de configuración para seleccionar un método para invocar el servicio, establecer parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.

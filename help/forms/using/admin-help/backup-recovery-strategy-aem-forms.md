@@ -1,16 +1,12 @@
 ---
 title: Estrategia de copia de seguridad y recuperación para AEM Forms
-seo-title: Backup and recovery strategy for AEM forms
 description: AEM Obtenga información sobre cómo implementar una estrategia para realizar copias de seguridad de los datos y asegurarse de que permanecen sincronizados con los datos de los formularios de.
-seo-description: Learn how to implement a strategy to back up data and ensuring that it remains in sync with the AEM forms data.
-uuid: 98fc3115-76e5-4e58-aa30-3601866a441f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 0%

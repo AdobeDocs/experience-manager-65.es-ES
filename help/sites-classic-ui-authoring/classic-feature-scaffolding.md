@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Para crear un nuevo andamio, vaya al **Herramientas** consola, entonces **Andami
 
 Vaya a la **Propiedades de página** de la nueva página y configure el *Texto del título*, *Descripción*, *Plantilla de destino*, y *Ruta de destino*, tal como se ha descrito anteriormente.
 
-A continuación, debe definir la estructura de la página que creará este andamio. Para ello, vaya a **[modo de diseño](/help/sites-authoring/page-authoring.md#sidekick)** en la página andamiaje. Aparecerá un enlace que le permitirá editar el andamio en la **editor de diálogos**.
+A continuación, debe definir la estructura de la página que creará este andamio. Para ello, vaya a **[modo de diseño](/help/sites-authoring/page-authoring.md#sidekick)** en la página andamiaje. Aparece un vínculo que le permite editar el andamio en la **editor de diálogos**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 

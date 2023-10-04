@@ -3,9 +3,9 @@ title: Configuración de los complementos del Editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar las funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 11cda989e6a28428f03a269c407a7672e6eab747
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '4406'
+source-wordcount: '4405'
 ht-degree: 5%
 
 ---
@@ -39,13 +39,13 @@ De forma predeterminada, `format`, `link`, `list`, `justify`, y `control` Los co
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * un nodo de configuración alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
+
    * Son del tipo: **jcr:primaryType** `cq:Widget`
    * Ambos tienen la siguiente propiedad:
 
       * **Nombre** `name`
       * **Tipo** `String`
       * **Valor** `./text`
-
 
 1. Según la interfaz que configure para, cree un nodo `<rtePlugins-node>`, si no existe:
 
@@ -59,7 +59,7 @@ De forma predeterminada, `format`, `link`, `list`, `justify`, y `control` Los co
 
 Después de activar un complemento, siga estas directrices para configurar el `features` propiedad.
 
-|  | Habilitar todas las funciones | Habilitar algunas funciones específicas | Desactivar todas las funciones |
+| | Habilitar todas las funciones | Habilitar algunas funciones específicas | Desactivar todas las funciones |
 |---|---|---|---|
 | Nombre | características | características | características |
 | Tipo | Cadena | Cadena[] (multi-cadena; establezca Type en String y haga clic en Multi en el CRXDE Lite) | Cadena |
@@ -301,8 +301,7 @@ Para crear el estilo que los autores pueden aplicar al texto en japonés, siga e
 
 1. Añada el texto de la propiedad al mismo nodo. El valor es el nombre del estilo que ven los autores al seleccionar el estilo.
    * Nombre: `text`
-*Tipo: 
-`String`
+*Tipo: `String`
    * Valor: `Japanese word-wrap`
 
 1. Cree una hoja de estilo y especifique su ruta. Consulte [especificar la ubicación de la hoja de estilo](#locationofstylesheet). Añada el siguiente contenido a la hoja de estilo. Cambie el color de fondo como desee.
@@ -349,16 +348,18 @@ En primer lugar, habilite el complemento de paraformato:
    * **Valor** `*` (asterisco)
 
 >[!NOTE]
+>
 Si el complemento no se sigue configurando, se habilitan los siguientes formatos predeterminados:
+>
 * Párrafo ( `<p>`)
 * Encabezado 1 ( `<h1>`)
 * Encabezado 2 ( `<h2>`)
 * Encabezado 3 ( `<h3>`)
 >
 
-
 >[!CAUTION]
-Al configurar los formatos de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si la variable `<p>` Si se elimina la etiqueta, el autor del contenido no puede seleccionar **Formatos de párrafo** opción incluso si hay formatos adicionales configurados.
+>
+Al configurar los formatos de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si la variable `<p>` se elimina, el autor del contenido no puede seleccionar la etiqueta **Formatos de párrafo** opción incluso si hay formatos adicionales configurados.
 
 ### Especificar los formatos de párrafo disponibles {#paraformatsindropdown}
 
@@ -381,7 +382,7 @@ Los formatos de párrafo podrán ser seleccionados por:
    * **Tipo** `String`
    * **Valor** La etiqueta de bloque para el formato; por ejemplo: p, h1, h2, etc.
 
-      No es necesario introducir los corchetes angulares delimitadores.
+     No es necesario introducir los corchetes angulares delimitadores.
 
 1. Al mismo nodo, agregue otra propiedad para que el texto descriptivo aparezca en la lista desplegable:
 
@@ -394,6 +395,7 @@ Los formatos de párrafo podrán ser seleccionados por:
    Repita los pasos para cada formato requerido.
 
 >[!CAUTION]
+>
 Si define formatos personalizados, los formatos predeterminados (`<p>`, `<h1>`, `<h2>`, y `<h3>`) se han eliminado. Volver a crear `<p>` formato, ya que es el formato predeterminado.
 
 ## Configuración de caracteres especiales {#spchar}
@@ -403,6 +405,7 @@ AEM En una instalación estándar de, cuando la variable `misctools` está habil
 Puede configurar el RTE para que su propia selección de caracteres esté disponible; ya sea definiendo caracteres distintos o una secuencia completa.
 
 >[!CAUTION]
+>
 Si agrega sus propios caracteres especiales, se anulará la selección predeterminada. Si es necesario, (re-)defina estos caracteres en su propia selección.
 
 ### Definir un solo carácter {#definesinglechar}
@@ -414,7 +417,7 @@ Si agrega sus propios caracteres especiales, se anulará la selección predeterm
    * **Tipo** `String[]`
    * **Valor** `specialchars`
 
-          (o `String / *` si aplica todas las funciones para este complemento)
+         (o `String / *` si aplica todas las funciones para este complemento)
 
 1. En `misctools` cree un nodo que contenga las configuraciones de caracteres especiales:
 
@@ -454,14 +457,12 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 1. Bajo este nodo (denominado según su intervalo especial de caracteres), agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
-
-      **Tipo** `Long`
-      **Valor** el [Unicode](https://unicode.org/) representación (decimal) del primer carácter del intervalo
+     **Tipo** `Long`
+     **Valor** el [Unicode](https://unicode.org/) representación (decimal) del primer carácter del intervalo
 
    * **Nombre** `rangeEnd`
-
-      **Tipo** `Long`
-      **Valor** el [Unicode](https://unicode.org/) representación (decimal) del último carácter del intervalo
+     **Tipo** `Long`
+     **Valor** el [Unicode](https://unicode.org/) representación (decimal) del último carácter del intervalo
 
 1. Guarde los cambios.
 
@@ -478,9 +479,11 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conjunto independiente de estilos en una tabla o en algunas celdas de la tabla. Estos estilos están disponibles para los autores desde el cuadro Selector de estilo en el cuadro de diálogo Propiedades de celda o Propiedades de tabla. Los estilos están disponibles al editar una tabla dentro de un componente Texto (o derivado) y no en el componente Tabla estándar.
 
 >[!NOTE]
+>
 Puede definir estilos para tablas y celdas solo para la IU clásica.
 
 >[!NOTE]
+>
 La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/table`. Cree los nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
@@ -491,12 +494,14 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
    * **Valor** `*` (asterisco)
 
    >[!NOTE]
+   >
    Si no desea activar todas las funciones de tabla, puede crear el `features` propiedad como:
+   >
    * **Tipo** `String[]`
+   >
    * **Valor**(s) uno, o ambos, de los siguientes, según sea necesario:
-      * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
-      * `cellprops` para permitir la edición de las propiedades de la celda, incluidos los estilos.
-
+   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   * `cellprops` para permitir la edición de las propiedades de la celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para hacer referencia a ellas. Consulte [Especificar la ubicación de la hoja de estilos](#locationofstylesheet) ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
 1. En el `table` nodo cree los siguientes nodos nuevos (según sea necesario):
@@ -505,11 +510,11 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
 
       * **Nombre** `tableStyles`
       * **Tipo** `cq:WidgetCollection`
+
    * Para definir estilos para celdas individuales (disponible en **Propiedades de celda**):
 
       * **Nombre** `cellStyles`
       * **Tipo** `cq:WidgetCollection`
-
 
 1. Cree un nuevo nodo (en la variable `tableStyles` o `cellStyles` (según corresponda) para representar un estilo individual:
 
@@ -523,12 +528,12 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
       * **Nombre** `cssName`
       * **Tipo** `String`
       * **Valor** el nombre de la clase CSS (sin un `.`, por ejemplo, `cssClass` en lugar de `.cssClass`)
+
    * Para definir un texto descriptivo que aparecerá en el selector desplegable
 
       * **Nombre** `text`
       * **Tipo** `String`
       * **Valor** el texto que aparecerá en la lista de selección
-
 
 1. Guarde todos los cambios.
 
@@ -557,6 +562,7 @@ Si especifica las cadenas CSS y Style en el código, la clase CSS tiene priorida
 Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios para cada idioma adecuado. A continuación, se seleccionan según el idioma del sitio web tomando la propiedad language del subárbol o extrayendo el idioma de la dirección URL; por ejemplo. el `/en/` La rama de se marca como Inglés, la `/de/` sucursal en alemán.
 
 >[!NOTE]
+>
 El mensaje `Spell checking failed` se ve si se intenta una comprobación para un idioma que no está instalado. Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos léame adecuados. No modifique los archivos.
 
 AEM Una instalación estándar de la incluye los diccionarios para inglés americano (`en_us`) e inglés británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
@@ -571,13 +577,16 @@ AEM Una instalación estándar de la incluye los diccionarios para inglés ameri
 1. Descargue el archivo con las definiciones de ortografía. Extraiga el contenido del archivo en su sistema de archivos.
 
    >[!CAUTION]
+   >
    Solo los diccionarios de `MySpell` es compatible con el formato de OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
 
 1. Busque los archivos .aff y .dic. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos .aff y .dic en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
+>
 El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto. Para ejecutar el corrector ortográfico, haga clic en [!UICONTROL Corrector ortográfico] en la barra de herramientas. RTE revisa la ortografía de las palabras y resalta las palabras mal escritas.
+>
 Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas dejan de resaltarse. Para ejecutar el corrector ortográfico, toque o haga clic en el botón Corrector ortográfico de nuevo.
 
 ## Configuración del tamaño del historial para acciones de deshacer y rehacer {#undohistory}
@@ -613,6 +622,7 @@ Para definir el tamaño de la pestaña:
 Cuando la sangría está activada (predeterminada), puede definir el tamaño de la sangría:
 
 >[!NOTE]
+>
 Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afecta a la sangría de listas reales.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/lists`. Cree estos nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
@@ -625,6 +635,7 @@ Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afect
 ## Configurar la altura del espacio editable {#editablespace}
 
 >[!NOTE]
+>
 Esto solo es aplicable cuando se utiliza el RTE en un cuadro de diálogo (no en la edición in situ en la IU clásica).
 
 Puede definir la altura del espacio editable que se muestra en el cuadro de diálogo del componente:
@@ -636,6 +647,7 @@ Puede definir la altura del espacio editable que se muestra en el cuadro de diá
    * **Valor** altura del lienzo de edición en píxeles.
 
    >[!NOTE]
+   >
    Esto no cambia la altura de la ventana de diálogo.
 
 1. Guarde los cambios.
@@ -656,11 +668,13 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
    * **Tipo** `nt:unstructured`
 
    >[!NOTE]
+   >
    El `../items/text` tiene la propiedad:
+   >
    * **Nombre** `xtype`
    * **Tipo** `String`
    * **Valor** `richtext`
-
+   >
    La ubicación del `../items/text` El nodo puede variar, según la estructura del cuadro de diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. En `htmlRules`, cree un nuevo nodo.
@@ -674,28 +688,32 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
 
       * **Nombre** `cssInternal`
       * **Tipo** `String`
-      * **Valor** el nombre de la clase CSS (sin &#39;.&#39; anterior); por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** el nombre de la clase CSS (sin &#39;.&#39;); por ejemplo, `cssClass` en lugar de `.cssClass`)
+
    * Estilo CSS para vínculos externos
 
       * **Nombre** `cssExternal`
       * **Tipo** `String`
       * **Valor** el nombre de la clase CSS (sin &#39;.&#39;); por ejemplo, `cssClass` en lugar de `.cssClass`)
+
    * Matriz de válidos **protocolos**. Los protocolos admitidos son `http://`, `https://`, `file://`, y `mailto:`.
 
       * **Nombre** `protocols`
       * **Tipo** `String[]`
       * **Valor**(s) uno o más protocolos
+
    * **defaultProtocol** (propiedad de tipo **Cadena**): Protocolo que se utilizará si el usuario no ha especificado ninguno explícitamente.
 
       * **Nombre** `defaultProtocol`
       * **Tipo** `String`
       * **Valor**(s) uno o más protocolos predeterminados
+
    * Definición de cómo gestionar el atributo de destino de un vínculo. Cree un nuevo nodo:
 
       * **Nombre** `targetConfig`
       * **Tipo** `nt:unstructured`
 
-      En el nodo `targetConfig`: defina las propiedades requeridas:
+     En el nodo `targetConfig`: defina las propiedades requeridas:
 
       * Especifique el modo de destino:
 
@@ -705,26 +723,21 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
 
             * `auto`: significa que se elige un destinatario automático
 
-               (especificado por el `targetExternal` para vínculos externos o `targetInternal` para vínculos internos).
+              (especificado por el `targetExternal` para vínculos externos o `targetInternal` para vínculos internos).
 
             * `manual`: no aplicable en este contexto
             * `blank`: no aplicable en este contexto
+
       * El destino de los vínculos internos:
 
          * **Nombre** `targetInternal`
          * **Tipo** `String`
          * **Valor** el destino de los vínculos internos (solo se utiliza cuando el modo sea `auto`)
+
       * El destino de los vínculos externos:
 
          * **Nombre** `targetExternal`
          * **Tipo** `String`
          * **Valor** el destino de los vínculos externos (solo se utiliza cuando el modo es `auto`).
-
-
-
-
-
-
-
 
 1. Guarde todos los cambios.

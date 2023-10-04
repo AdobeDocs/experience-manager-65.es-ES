@@ -1,17 +1,13 @@
 ---
 title: Invocar AEM Forms mediante Remoting
-seo-title: Invoking AEM Forms using Remoting
 description: Utilice la comunicación remota para invocar un proceso de AEM Forms e invocar procesos creados en Workbench. Puede invocar un proceso de AEM Forms desde una aplicación cliente creada con Flex.
-seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
-uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4597'
 ht-degree: 0%
@@ -471,7 +467,7 @@ Para utilizar el inicio de sesión único en AEM Forms, instale el componente de
 
 ### Escribir una aplicación cliente que utilice el inicio de sesión único {#writing-a-client-application-that-uses-single-sign-on}
 
-Cuando se aprovecha el mecanismo de inicio de sesión único, se espera que los usuarios inicien sesión mediante el servicio de inicio de sesión centralizado antes de iniciar una aplicación cliente. Es decir, una aplicación cliente no inicia sesión a través del explorador ni llamando a la función `ChannelSet.login` método.
+Cuando se aprovecha el mecanismo de inicio de sesión único, se espera que los usuarios inicien sesión utilizando el servicio de inicio de sesión centralizado antes de iniciar una aplicación cliente. Es decir, una aplicación cliente no inicia sesión a través del explorador ni llamando a la función `ChannelSet.login` método.
 
 Si utiliza el mecanismo de inicio de sesión único de AEM Forms, configure el extremo remoto para que utilice autenticación personalizada, no básica. De lo contrario, cuando se utiliza la autenticación básica, un error de autenticación provoca un desafío del explorador, que no desea que el usuario vea. En su lugar, la aplicación detecta el error de autenticación y, a continuación, muestra un mensaje que indica al usuario que inicie sesión mediante el servicio de inicio de sesión centralizado.
 
@@ -548,9 +544,9 @@ Puede iniciar una aplicación cliente creada con Flex y utilizar el servicio de 
 
 ## Pasar documentos seguros para invocar procesos mediante Remoting {#passing-secure-documents-to-invoke-processes-using-remoting}
 
-Puede pasar documentos seguros a AEM Forms al invocar un proceso que requiere uno o más documentos. Al pasar un documento seguro, protege la información comercial y los documentos confidenciales. En este caso, un documento puede hacer referencia a un documento de PDF, a un documento XML, a un documento de Word, etc. Es necesario pasar un documento seguro a AEM Forms desde una aplicación cliente escrita en Flex cuando AEM Forms está configurado para permitir documentos seguros. (Consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
+Puede pasar documentos seguros a AEM Forms al invocar un proceso que requiere uno o más documentos. Al pasar un documento seguro, protege la información comercial y los documentos confidenciales. En este caso, un documento puede hacer referencia a un documento de PDF, a un documento XML, a un documento de Word, etc. La transferencia de un documento seguro a AEM Forms desde una aplicación de cliente escrita en Flex es necesaria cuando AEM Forms está configurado para permitir documentos seguros. (Consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-AEM Al pasar un documento seguro, utilice el inicio de sesión único y especifique un usuario de formularios en la lista de usuarios de la aplicación de formularios en la que se utilice el formulario de la manera más segura *Usuario de aplicación de carga de documento* función. Sin esta función, el usuario no puede cargar un documento seguro. Puede asignar mediante programación una función a un usuario. (Consulte [Administración de funciones y permisos](/help/forms/developing/users.md#managing-roles-and-permissions).)
+AEM Al pasar un documento seguro, utilice el inicio de sesión único y especifique un usuario de formularios en la que se utilice el formulario de la manera más segura. *Usuario de aplicación de carga de documento* función. Sin esta función, el usuario no puede cargar un documento seguro. Puede asignar mediante programación una función a un usuario. (Consulte [Administración de funciones y permisos](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >

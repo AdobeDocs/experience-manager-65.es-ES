@@ -1,18 +1,14 @@
 ---
 title: Función de búsqueda
-seo-title: Search Feature
 description: Agregar y configurar la búsqueda en un sitio de Communities
-seo-description: Adding and configuring Search to a Communities site
-uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: e252b0e5-a2f8-468e-ac8c-951a5b0f2e32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 2%
 
 ---
@@ -57,8 +53,7 @@ Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Página de resultados]**
-Los resultados aparecerán en una página independiente especificada utilizando el explorador para seleccionar una página que contenga la variable 
-`Search Results` componente.
+Los resultados aparecerán en una página independiente especificada utilizando el explorador para seleccionar una página que contenga la variable `Search Results` componente.
 
 ## Resultados de la búsqueda {#search-results}
 
@@ -90,11 +85,11 @@ En el **[!UICONTROL Configuración de resultados de búsqueda]** , es posible es
 
 * **[!UICONTROL Resultados de búsqueda por página]**
 
-   Defina el número de temas/entradas que se muestran por página. El valor predeterminado es 10.
+  Defina el número de temas/entradas que se muestran por página. El valor predeterminado es 10.
 
 * **[!UICONTROL Rutas de búsqueda]**
 
-   Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda de contenido está limitada.
+  Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda de contenido está limitada.
 
 ## Información adicional {#additional-information}
 

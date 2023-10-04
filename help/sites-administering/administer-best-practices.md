@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '529'
 ht-degree: 7%
 
 ---
@@ -46,7 +46,7 @@ Las prácticas recomendadas en Assets, incluidas la funcionalidad Dynamic Media 
   <tr>
    <td>Cómo organizar el contenido (jerarquía de carpetas)</td>
    <td><a href="/help/assets/organize-assets.md">Prácticas recomendadas para administrar archivos</a></td>
-   <td>Gran parte de los perfiles de procesamiento se basan en carpetas, ya que el vídeo, los metadatos y el procesamiento de imágenes siempre se aplican a las carpetas. Este documento de prácticas recomendadas describe cómo definir y configurar la jerarquía de carpetas, ya que la jerarquía tiene un impacto significativo en la forma en que se procesa el contenido. </td>
+   <td>La mayoría de los perfiles de procesamiento se basan en carpetas, ya que el vídeo, los metadatos y el procesamiento de imágenes siempre se aplican a las carpetas. Este documento de prácticas recomendadas describe cómo definir y configurar la jerarquía de carpetas, ya que la jerarquía tiene un impacto significativo en la forma en que se procesa el contenido. </td>
   </tr>
   <tr>
    <td>Integración de Scene7 AEM y</td>

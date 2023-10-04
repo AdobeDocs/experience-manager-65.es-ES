@@ -3,9 +3,9 @@ title: Crear un controlador de usuarios externos de invitación
 description: Crear un controlador de usuarios externos de invitación
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Además de agregar las variables `edc-server-spi.jar` a la ruta de clase del pro
 
 Para desarrollar un controlador de usuarios externos de invitación, debe crear una clase Java que implemente la variable `com.adobe.edc.server.spi.ersp.InvitedUserProvider` interfaz. Esta clase contiene un método denominado `invitedUser`, que el servicio Rights Management invoca cuando se envían direcciones de correo electrónico utilizando **Agregar usuarios invitados** página accesible a través de la consola de administración.
 
-El `invitedUser` El método acepta un `java.util.List` instancia de, que contiene direcciones de correo electrónico con tipo de cadena enviadas desde **Agregar usuarios invitados** página. El `invitedUser` método devuelve una matriz de `InvitedUserProviderResult` , que generalmente es una asignación de direcciones de correo electrónico a objetos de usuario (no devuelven nulo).
+El `invitedUser` El método acepta un `java.util.List` , que contiene direcciones de correo electrónico con tipo de cadena enviadas desde el **Agregar usuarios invitados** página. El `invitedUser` método devuelve una matriz de `InvitedUserProviderResult` , que generalmente es una asignación de direcciones de correo electrónico a objetos de usuario (no devuelven nulo).
 
 >[!NOTE]
 >

@@ -1,26 +1,22 @@
 ---
 title: Diseñar plantillas de formulario para formularios HTML5
-seo-title: Designing form templates for HTML5 forms
-description: AEM Forms ofrece el procesamiento de plantillas de formulario XFA en formato HTML5. Los diseñadores de formularios pueden diseñar plantillas de formulario con Designer y utilizar la capacidad de representación de HTML5.
-seo-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability.
-uuid: 4f6b7231-4479-400a-adcd-c68064f06b4e
+description: AEM Forms puede procesar plantillas de formulario XFA en formato HTML 5. Los diseñadores de formularios pueden diseñar plantillas de formulario con Designer y utilizar la capacidad de representación de HTML5.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Diseñar plantillas de formulario para formularios HTML5{#designing-form-templates-for-html-forms}
 
-El componente de formularios HTML5 en AEM ofrece el procesamiento de la plantilla de formulario XFA al formato HTML5. Los diseñadores de formularios pueden diseñar plantillas de formulario mediante [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) y utilizar la capacidad de representación de HTML5. Estas plantillas de formulario, junto con sus recursos, pueden residir en el repositorio de AEM, el sistema de archivos o exponerse a través de http. Sin embargo, si planea administrar los formularios con Forms Manager, las plantillas y los recursos deben residir en el repositorio de AEM.
+El componente de formularios de HTML AEM 5 de la plantilla de formulario XFA se puede procesar en formato de HTML 5, lo que permite: Los diseñadores de formularios pueden diseñar plantillas de formulario mediante [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) y utilizar la capacidad de representación de HTML5. Estas plantillas de formulario, junto con sus recursos, pueden residir en el repositorio de AEM, el sistema de archivos o exponerse a través de http. Sin embargo, si planea administrar los formularios con Forms Manager, las plantillas y los recursos deben residir en el repositorio de AEM.
 
 Aunque los formularios HTML5 coinciden en buena medida con el comportamiento de los formularios PDF, hay algunas características en ambos formatos que no se pueden aplicar al otro. Por ejemplo, la forma en que se aplican los códigos de barras en un formulario PDF en Adobe Reader varía según el formulario de Mobile o la forma en que el formulario se firma digitalmente también varía según el formato. Para obtener más información sobre estas variaciones, consulte [Diferenciar las características entre formularios HTML5 y los formularios PDF](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 

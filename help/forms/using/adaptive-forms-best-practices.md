@@ -1,18 +1,14 @@
 ---
 title: Prácticas recomendadas para usar formularios adaptables
-seo-title: Best practices for working with adaptive forms
 description: Explica las prácticas recomendadas para configurar un proyecto de AEM Forms, desarrollar formularios adaptables y optimizar el rendimiento del sistema AEM Forms.
-seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4734'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -293,7 +289,7 @@ Algunas prácticas recomendadas al localizar formularios adaptables son las sigu
 
 * Utilice fragmentos de formulario adaptables para elementos comunes en todos los formularios y localice fragmentos. Garantiza que localice un fragmento una vez y se refleje en todos los formularios en los que se utilice el fragmento localizado.
 * Las modificaciones como agregar un componente nuevo o aplicar un script en un formulario localizado no se localizan automáticamente. Por lo tanto, debe finalizar un formulario antes de localizarlo para evitar varios ciclos de localización.
-* Use el parámetro de solicitud`afAcceptLang` para anular la configuración regional del explorador y procesar el formulario en la configuración regional especificada. Por ejemplo, la siguiente URL obligará a procesar el formulario en la configuración regional japonesa, independientemente de la configuración regional especificada en la configuración del explorador:
+* Use el parámetro de solicitud`afAcceptLang` para anular la configuración regional del explorador y procesar el formulario en la configuración regional especificada. Por ejemplo, la siguiente URL es forzada a procesar el formulario en la configuración regional japonesa, independientemente de la configuración regional especificada en la configuración del explorador:
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

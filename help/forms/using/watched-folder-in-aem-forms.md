@@ -1,16 +1,12 @@
 ---
 title: Carpeta inspeccionada en AEM Forms
-seo-title: Watched folder in AEM Forms
 description: Un administrador puede colocar una carpeta en inspección e iniciar una operación de flujo de trabajo, servicio o script cuando se coloca un archivo en la carpeta que está viendo.
-seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
-uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7148'
 ht-degree: 98%
@@ -592,7 +588,7 @@ Las asignaciones de parámetros de salida también pueden especificar patrones a
 * %F = Nombre de archivo de origen
 * %E = Extensión de nombre de archivo de origen
 
-Si el patrón de asignación de parámetros de salida termina con “File.separator” (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con “File.separator”, el contenido (archivo o carpeta de resultados) se crea con ese nombre.
+Si el patrón de asignación de parámetros de salida termina con &quot;File.separator&quot; (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con “File.separator”, el contenido (archivo o carpeta de resultados) se crea con ese nombre.
 
 ## Usar el Generador de PDF con una carpeta inspeccionada {#using-pdf-generator-with-a-watched-folder}
 

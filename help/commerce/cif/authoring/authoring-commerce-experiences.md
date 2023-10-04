@@ -2,9 +2,9 @@
 title: Creación de experiencias comerciales
 description: Experiencias de comercio de trabajo
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM El complemento CIF amplía la creación de informes con capacidades específicas del comercio. Esto permite a los autores crear y administrar experiencias relacionadas con el comercio de forma eficaz, obteniendo acceso a los datos y al contenido del producto sin abandonar el contexto.
+CIF AEM El complemento de amplía la creación de informes con capacidades específicas del comercio. Esto permite a los autores crear y administrar experiencias relacionadas con el comercio de forma eficaz, obteniendo acceso a los datos y al contenido del producto sin abandonar el contexto.
 
 ## Seleccionadores {#pickers}
 
@@ -21,7 +21,7 @@ AEM Los selectores de productos y categorías son cuadros de diálogo de interfa
 
 ### Selector de productos {#product-picker}
 
-Este selector ofrece la exploración de la estructura del catálogo o la búsqueda de texto completo para encontrar el producto. Los productos con variación ofrecen un icono de carpeta en la columna Tipo. Al hacer clic en el icono de la carpeta, se abren las variaciones del producto seleccionado.
+Este selector puede ofrecer la exploración a través de la estructura del catálogo o la búsqueda de texto completo para encontrar el producto. Los productos con variación ofrecen un icono de carpeta en la columna Tipo. Al hacer clic en el icono de la carpeta, se abren las variaciones del producto seleccionado.
 
 ![Selector de productos](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -33,13 +33,13 @@ Al hacer clic en la categoría principal, el autor vuelve al nivel de producto.
 
 ![Componente Teaser sin selección](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-El cuadro de diálogo de configuración de este componente requiere un producto. CIF utiliza el SKU como identificador del producto. Los autores pueden introducir el SKU a mano o hacer clic en el icono de la carpeta para abrir el selector de productos. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre del producto seleccionado
+El cuadro de diálogo de configuración de este componente requiere un producto. CIF utiliza el SKU de como identificador de producto. Los autores pueden introducir el SKU a mano o hacer clic en el icono de la carpeta para abrir el selector de productos. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre del producto seleccionado
 
 ![Componente teaser con selección](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
 ### Selector de categoría {#category-picker}
 
-Este selector ofrece la posibilidad de explorar la estructura del catálogo para encontrar la categoría.
+Este selector puede ofrecer la exploración a través de la estructura del catálogo para encontrar la categoría.
 
 ![Selector de categoría](/help/commerce/cif/assets/authoring/category-picker.png)
 
@@ -47,7 +47,7 @@ Este selector ofrece la posibilidad de explorar la estructura del catálogo para
 
 ![Componente de carrusel sin selección](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-El cuadro de diálogo de configuración de este componente requiere 1 : n categorías. CIF utiliza el UID/ID como identificador de categoría. Los autores pueden introducir el UID manualmente o hacer clic en el icono de carpeta para abrir el selector de categorías. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre de la categoría seleccionada.
+El cuadro de diálogo de configuración de este componente requiere 1 : n categorías. CIF utiliza el UUID/ID como identificador de categoría. Los autores pueden introducir el UID manualmente o hacer clic en el icono de carpeta para abrir el selector de categorías. Después de seleccionar y cerrar el selector, el cuadro de diálogo del componente muestra el nombre de la categoría seleccionada.
 
 ![Componente de carrusel con selección](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ Analógicamente, los productos se pueden enviar en una página (que crea un comp
 
 ### Adición de vínculos en campos de texto mediante RTE {#rte}
 
-Las páginas del catálogo de productos del CIF son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF añade una nueva acción &quot;Vínculos de comercio&quot; al RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
+CIF Las páginas de catálogo de productos de son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF Añade una nueva acción &quot;Vínculos de comercio&quot; a RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 

@@ -1,18 +1,15 @@
 ---
 title: Configuración de ContextHub
-seo-title: Configuring ContextHub
 description: Obtenga información sobre cómo configurar ContextHub.
-seo-description: Learn how to configure Context Hub.
-uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 1%
+source-wordcount: '1786'
+ht-degree: 2%
 
 ---
 
@@ -90,7 +87,7 @@ Añada un modo de interfaz de usuario para agrupar módulos de ContextHub relaci
    * Icono de modo: el selector para [Icono de Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) para utilizar, por ejemplo `coral-Icon--user`
    * Habilitado: seleccione esta opción para mostrar el modo de IU en la barra de herramientas de ContextHub
 
-1. Toque o haga clic en Guardar.
+1. Haga clic o pulse Guardar.
 
 ### Adición de un módulo de IU {#adding-a-ui-module}
 
@@ -126,7 +123,7 @@ Las propiedades del módulo de interfaz de usuario incluyen una configuración d
    * Habilitado: seleccione esta opción para mostrar el módulo de IU en la barra de herramientas de ContextHub
 
 1. (Opcional) Para anular la configuración de almacén predeterminada, introduzca un objeto JSON para configurar el módulo de interfaz de usuario.
-1. Toque o haga clic en Guardar.
+1. Haga clic o pulse Guardar.
 
 ## Creación de una tienda de ContextHub {#creating-a-contexthub-store}
 
@@ -156,7 +153,7 @@ AEM proporciona los siguientes candidatos de tienda de muestra en los que puede 
 
 1. En el carril del Experience Manager, pulse o haga clic en Herramientas > Sitios > ContextHub.
 1. Toque o haga clic en el contenedor de configuración predeterminado.
-1. Toque o haga clic en Configuración de Contexthub
+1. Haga clic o pulse Configuración de Contexthub
 1. Para agregar una tienda, toque o haga clic en el icono Crear y luego toque o haga clic en Configuración de tienda de ContextHub.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
@@ -169,7 +166,7 @@ AEM proporciona los siguientes candidatos de tienda de muestra en los que puede 
    * **Habilitado:** Seleccione para activar la tienda
 
 1. (Opcional) Para anular la configuración de almacén predeterminada, introduzca un objeto JSON en el cuadro Configuración detallada (JSON).
-1. Toque o haga clic en Guardar.
+1. Haga clic o pulse Guardar.
 
 ## Ejemplo: Uso de un servicio JSONP  {#example-using-a-jsonp-service}
 
@@ -258,7 +255,7 @@ Utilice el CRXDE Lite para establecer la propiedad `debug` hasta **true** en:
 
 >[!NOTE]
 >
->Para las configuraciones de ContextHub que aún se encuentran en sus rutas heredadas, la ubicación para establecer la variable `debug property` es es `/libs/settings/cloudsettings/legacy/contexthub`.
+>Para las configuraciones de ContextHub que aún se encuentran en sus rutas heredadas, la ubicación para establecer la variable `debug property` es `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Modo silencioso {#silent-mode}
 

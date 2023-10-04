@@ -5,16 +5,16 @@ contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 # Personalizar y ampliar [!DNL Assets] {#customizing-and-extending-assets}
 
-El editor de recursos es el principal punto de acceso que los usuarios de un sitio web de Enterprise Manager de Adobe utilizarán para buscar, ver y manipular los recursos digitales del repositorio.
+El editor de recursos es el principal punto de acceso que los usuarios de un sitio web de Enterprise Manager de Adobe utilizan para buscar, ver y manipular los recursos digitales del repositorio.
 
 Como un [!DNL Experience Manager] Para los desarrolladores, puede personalizar y ampliar el editor de recursos de varias formas, presentando a los usuarios una interfaz y un conjunto de funcionalidades específicamente adaptados.
 

@@ -12,9 +12,9 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '3736'
+source-wordcount: '3732'
 ht-degree: 9%
 
 ---
@@ -27,11 +27,11 @@ Los siguientes son otros factores que determinan la calidad de sus vídeos:
 
 * **Resolución del vídeo de origen principal cargado**
 
-   Si el vídeo MP4 se grabó con una resolución inferior, como 240p o 360p, no se puede transmitir en alta definición.
+  Si el vídeo MP4 se grabó con una resolución inferior, como 240p o 360p, no se puede transmitir en alta definición.
 
 * **Tamaño del reproductor de vídeo**
 
-   De forma predeterminada, la &quot;Anchura&quot; del perfil de codificación de vídeo adaptable se establece en &quot;Automático&quot;. De nuevo, durante la reproducción se utiliza la mejor calidad según el tamaño del reproductor.
+  De forma predeterminada, la &quot;Anchura&quot; del perfil de codificación de vídeo adaptable se establece en &quot;Automático&quot;. De nuevo, durante la reproducción se utiliza la mejor calidad según el tamaño del reproductor.
 
 Consulte [Prácticas recomendadas para la codificación de vídeo](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -118,7 +118,7 @@ Adobe Sensei está limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS.
 >
 >Para que funcione el recorte inteligente de vídeo, debe incluir uno o más ajustes preestablecidos de codificación de vídeo en el perfil de vídeo.
 
-Para utilizar el recorte inteligente para vídeo, debe crear un perfil de codificación de vídeo adaptable o progresivo. Como parte de su perfil de, utilice la variable **[!UICONTROL Smart Crop Ratio]** para seleccionar relaciones de aspecto predefinidas. Por ejemplo, después de definir los ajustes preestablecidos de codificación de vídeo, puede añadir una definición de &quot;Horizontal móvil&quot; con una proporción de aspecto de 16x9 y una definición de &quot;Vertical móvil&quot; con una proporción de aspecto de 9x16. Otras proporciones de aspecto o recorte entre las que puede elegir son 1x1, 4x3 y 4x5.
+Para utilizar el recorte inteligente para vídeo, debe crear un perfil de codificación de vídeo adaptable o progresivo. Como parte de su perfil de, utilice la variable **[!UICONTROL Smart Crop Ratio]** para seleccionar relaciones de aspecto predefinidas. Por ejemplo, después de definir los ajustes preestablecidos de codificación de vídeo, puede añadir una definición de &quot;Horizontal móvil&quot; con una proporción de aspecto de 16×9 y una definición de &quot;Vertical móvil&quot; con una proporción de aspecto de 9×16. Otros aspectos o relaciones de recorte entre los que puede elegir incluyen 1×1, 4×3 y 4×5.
 
 ![Edición de un perfil de codificación de vídeo con recorte inteligente](assets/edit-smart-crop-video2.png)
 
@@ -411,7 +411,7 @@ Consulte también [Vuelva a procesar los recursos de una carpeta después de edi
 
 * Vaya al CRXDE Lite en el siguiente nodo: `/content/dam/jcr:content`. Añadir la propiedad `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` y seleccione **[!UICONTROL Guardar todo]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * Puede [monitorización del progreso de un trabajo de procesamiento de perfiles de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 ## Monitorización del progreso de un trabajo de procesamiento de perfiles de vídeo {#monitoring-the-progress-of-an-encoding-job}

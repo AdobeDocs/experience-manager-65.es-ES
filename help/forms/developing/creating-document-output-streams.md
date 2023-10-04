@@ -1,17 +1,13 @@
 ---
 title: Crear flujos de salida de documento
-seo-title: Creating Document Output Streams
 description: Utilice el servicio Output para convertir documentos como PDF (incluidos documentos de PDF/A), PostScript, Printer Control Language (PCL) y los formatos de etiqueta Zebra - ZPL, Intermec - IPL, Datamax - DPL y TecToshiba - TPCL.
-seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
-uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '19016'
 ht-degree: 1%
@@ -101,7 +97,7 @@ Para crear un documento de PDF, realice los siguientes pasos:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente con Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -772,6 +768,7 @@ Pase un documento recuperado de Content Services (obsoleto) mediante el servicio
       * AEM Asigne el nombre de usuario del formulario de la al campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `OutputServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -1029,7 +1026,6 @@ Cree un documento de PDF basado en fragmentos mediante la API del servicio de sa
    * Itere a través de `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
    * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el documento XDP ensamblado.
 
-
 1. Utilice el servicio Output para generar el documento de PDF.
 
    Invoque el `OutputClient` del objeto `generatePDFOutput2` y pasar los siguientes valores:
@@ -1096,6 +1092,7 @@ Cree un documento de PDF basado en fragmentos mediante la API del servicio de sa
       * AEM Asigne el nombre de usuario de los formularios de la a `OutputServiceClient.ClientCredentials.UserName.UserName`field.
       * Asigne el valor de contraseña correspondiente al `OutputServiceClient.ClientCredentials.UserName.Password`field.
       * Asignar el valor constante `HttpClientCredentialType.Basic` a la `BasicHttpBindingSecurity.Transport.ClientCredentialType`field.
+
    * Asigne el `BasicHttpSecurityMode.TransportCredentialOnly` valor constante para `BasicHttpBindingSecurity.Security.Mode`field.
 
    >[!NOTE]
@@ -1114,7 +1111,6 @@ Cree un documento de PDF basado en fragmentos mediante la API del servicio de sa
 
    * Acceda a la `AssemblerResult` del objeto `documents` , que es un `Map` que contiene los documentos de PDF resultantes.
    * Itere a través de `Map` para recuperar el diseño de formulario ensamblado. Convierta el de ese miembro de la matriz `value` a un `BLOB`. Pasar esto `BLOB` al Servicio de salida.
-
 
 1. Utilice el servicio Output para generar el documento de PDF.
 
@@ -1420,7 +1416,7 @@ Recupere un flujo de impresión para enviarlo a una impresora. Por ejemplo, pued
 
 Puede elegir enviar un archivo de PDF si la impresora admite PDF. Sin embargo, un problema con el envío de un documento de PDF a una impresora es que cada fabricante de la impresora tiene una implementación diferente del intérprete de PDF. Es decir, algunos fabricantes de impresión utilizan la interpretación de Adobe PDF, pero depende de la impresora. Otras impresoras tienen su propio intérprete PDF. Como resultado, los resultados de impresión pueden variar.
 
-Otra limitación del envío de un documento de PDF a una impresora es que sólo imprime; no puede tener acceso a dúplex, selección de bandeja de papel y grapado, excepto a través de la configuración de la impresora.
+Otra limitación del envío de un documento de PDF a una impresora es que sólo imprime; no puede tener acceso a doble cara, selección de bandeja de papel y grapado, excepto a través de la configuración de la impresora.
 
 Para recuperar un documento que imprimir, utilice la variable `generatePrintedOutput` método. En la tabla siguiente se especifican los tipos de contenido que se establecen para un flujo de impresión determinado al utilizar el `generatePrintedOutput` método.
 
@@ -1550,10 +1546,9 @@ Envíe un flujo de impresión a una impresora de red mediante la API de salida (
       * El `PrintedOutputOptionsSpec` que contiene opciones en tiempo de ejecución necesarias para imprimir en un archivo.
       * El `com.adobe.idp.Document` que representa el origen de datos XML que contiene los datos del formulario para combinarlos con el diseño de formulario.
 
-      Este método devuelve un `OutputResult` que contiene los resultados de la operación.
+     Este método devuelve un `OutputResult` que contiene los resultados de la operación.
 
-   * Crear un `com.adobe.idp.Document` objeto para enviar a la impresora invocando el `OutputResult` objeto ‘s `getGeneratedDoc` método. Este método devuelve un `com.adobe.idp.Document` objeto.
-
+   * Crear un `com.adobe.idp.Document` objeto para enviar a la impresora invocando el `OutputResult` del objeto `getGeneratedDoc` método. Este método devuelve un `com.adobe.idp.Document` objeto.
 
 1. Enviar el flujo de impresión a una impresora de red
 
@@ -1622,8 +1617,8 @@ Enviar un flujo de impresión a una impresora de red mediante la API de salida (
       * A `BLOB` objeto que se rellena con la variable `generatePrintedOutput` método. El `generatePrintedOutput` Este método rellena este objeto con metadatos generados que describen el documento. (Este valor de parámetro solo es necesario para la invocación del servicio web).
       * A `BLOB` objeto que se rellena con la variable `generatePrintedOutput` método. El `generatePrintedOutput` Este método rellena este objeto con datos de resultado. (Este valor de parámetro solo es necesario para la invocación del servicio web).
       * Un `OutputResult` que contiene los resultados de la operación. (Este valor de parámetro solo es necesario para la invocación del servicio web).
-   * Crear un `BLOB` objeto que se va a enviar a la impresora obteniendo el valor del `OutputResult` objeto ‘s `generatedDoc` método. Este método devuelve un `BLOB` que contiene datos PostScript devueltos por el `generatePrintedOutput` método.
 
+   * Crear un `BLOB` objeto que se va a enviar a la impresora obteniendo el valor del `OutputResult` del objeto `generatedDoc` método. Este método devuelve un `BLOB` que contiene datos PostScript devueltos por el `generatePrintedOutput` método.
 
 1. Envíe el flujo de impresión a una impresora de red.
 
@@ -1756,7 +1751,7 @@ Debe establecer las siguientes opciones en tiempo de ejecución para que el serv
 
 Puede establecer opciones de procesamiento en tiempo de ejecución al crear varios archivos. Aunque estas opciones no son necesarias (a diferencia de las opciones de tiempo de ejecución de salida, que son necesarias), puede realizar tareas como mejorar el rendimiento del servicio Output. Por ejemplo, puede almacenar en caché el diseño de formulario que utiliza el servicio Output para mejorar el rendimiento.
 
-Cuando el Servicio de salida procesa los registros por lotes, lee de forma incremental los datos que contienen varios registros. Es decir, el servicio Output lee los datos en la memoria y los libera a medida que se procesa el lote de registros. El servicio Output carga los datos de forma incremental cuando se establece una de las dos opciones de tiempo de ejecución. Si establece la opción de tiempo de ejecución Nombre del registro, el servicio Output leerá los datos de forma incremental. Del mismo modo, si establece la opción de tiempo de ejecución Nivel de registro en 2 o bueno, el servicio Output leerá los datos de forma incremental.
+Cuando el Servicio de salida procesa los registros por lotes, lee de forma incremental los datos que contienen varios registros. Es decir, el servicio Output lee los datos en la memoria y los libera a medida que se procesa el lote de registros. El servicio Output carga los datos de forma incremental cuando se establece una de las dos opciones de tiempo de ejecución. Si establece la opción de tiempo de ejecución Nombre del registro, el servicio Output leerá los datos de forma incremental. Del mismo modo, si establece la opción de tiempo de ejecución Nivel de registro en 2 o superior, el servicio Output leerá los datos de forma incremental.
 
 Puede controlar si el Servicio de salida realiza una carga incremental utilizando `PDFOutputOptionsSpec` o el `PrintedOutputOptionSpec` del objeto `setLazyLoading` método. Puede pasar el valor `false` a este método, que desactiva la carga incremental.
 
@@ -1967,7 +1962,7 @@ Para indicar al servicio Output que utilice reglas de búsqueda al generar un do
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -2051,7 +2046,6 @@ Cree reglas de búsqueda mediante la API de salida (Java):
 
    * Crear un `java.util.List` mediante un objeto `java.util.ArrayList` constructor.
    * Para cada `Rule` objeto que ha creado, invoque el `java.util.List` del objeto `add` y pase el `Rule` objeto.
-
 
 1. Establecer las opciones de tiempo de ejecución del PDF.
 
@@ -2141,7 +2135,6 @@ Cree reglas de búsqueda mediante la API de salida (servicio web):
 
    * Crear un `MyArrayOf_xsd_anyType` que almacena las reglas.
    * Asignar cada `Rule` objeto a un elemento del `MyArrayOf_xsd_anyType` matriz. Invoque el `MyArrayOf_xsd_anyType` del objeto `Add` método para cada `Rule` objeto.
-
 
 1. Establecer las opciones de tiempo de ejecución del PDF
 

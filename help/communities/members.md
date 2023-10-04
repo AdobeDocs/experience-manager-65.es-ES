@@ -1,15 +1,13 @@
 ---
 title: Consolas de administración de miembros y grupos
 description: Cómo acceder a las consolas de administración de miembros y grupos
-uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
@@ -29,7 +27,7 @@ Uso de las consolas Miembros de comunidades y grupos, miembros y grupos de miemb
 
 ### Usuarios en Author {#users-on-author}
 
-Para administrar usuarios y grupos registrados en *autor* entorno, es necesario para utilizar la consola de seguridad de la plataforma:
+Para administrar usuarios y grupos registrados en *autor* entorno, es necesario utilizar la consola de seguridad de la plataforma:
 
 * En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
 * En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Grupos]**.

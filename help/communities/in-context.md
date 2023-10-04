@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ En la publicación, inicie sesión como Boyd Larsen y acceda al hilo seleccionan
 Aviso:
 
 * Boyd no ha participado en el foro.
-* El cuerpo no puede eliminar nada.
+* Boyd no puede eliminar nada.
 * El cuerpo ha iniciado sesión y puede responder o marcar contenido.
 
 Haga que Boyd seleccione Marcar para marcar el contenido publicado por Andrew.
