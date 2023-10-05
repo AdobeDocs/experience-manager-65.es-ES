@@ -2,10 +2,10 @@
 title: Actualización del contenido mediante las API de AEM Assets
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, descubra cómo utilizar la API de REST para acceder y actualizar el contenido de sus fragmentos de contenido.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1066'
-ht-degree: 88%
+ht-degree: 86%
 
 ---
 
@@ -180,7 +180,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## API HTTP de Recursos y fragmentos de contenido {#assets-http-api-content-fragments}
 
-Los fragmentos de contenido se utilizan para entregas sin encabezado y un fragmento de contenido es un tipo de recurso especial. Se utilizan para acceder a datos estructurados, como textos, números y fechas, entre otros.
+Los fragmentos de contenido se utilizan para entregas sin encabezado y un fragmento de contenido es un tipo de recurso especial. Se utilizan para acceder a datos estructurados, como textos, números, fechas, entre otros.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.

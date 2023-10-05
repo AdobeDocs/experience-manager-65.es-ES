@@ -10,7 +10,7 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -77,17 +77,17 @@ Se utilizan para ilustrar el rendimiento en condiciones diferentes:
 
 * Normal
 
-   Condiciones que el sitio experimentará por ejemplo el 90% del tiempo. Por ejemplo, cuando solo una proporción de los autores utiliza el sistema.
+  Condiciones que el sitio experimentará por ejemplo el 90% del tiempo. Por ejemplo, cuando solo una proporción de los autores utiliza el sistema.
 
 * Pico
 
-   Condiciones que se experimentarán durante un tiempo proporcionalmente corto debido a circunstancias especiales; por ejemplo, cuando todos los autores utilicen el sistema simultáneamente o cuando se publique nuevo contenido y un número mayor de visitantes vea el sitio.
+  Condiciones que se experimentarán durante un tiempo proporcionalmente corto debido a circunstancias especiales; por ejemplo, cuando todos los autores utilicen el sistema simultáneamente o cuando se publique nuevo contenido y un número mayor de visitantes vea el sitio.
 
 * Extremo
 
-   Se puede utilizar para emular la previsión de rendimiento cuando se publica contenido nuevo y extremadamente interesante en el sitio web. Entonces se puede ver un pico extremo, aunque esto no siempre es totalmente predecible.
+  Se puede utilizar para emular la previsión de rendimiento cuando se publica contenido nuevo y extremadamente interesante en el sitio web. Entonces se puede ver un pico extremo, aunque esto no siempre es totalmente predecible.
 
-   Estas circunstancias se ven a veces cuando se ponen a disposición entradas para eventos específicos, o cuando se publica por primera vez un sitio web muy esperado.
+  Estas circunstancias se ven a veces cuando se ponen a disposición entradas para eventos específicos, o cuando se publica por primera vez un sitio web muy esperado.
 
 A continuación, los resultados se utilizan para ajustar la aplicación.
 

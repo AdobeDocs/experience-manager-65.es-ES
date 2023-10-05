@@ -5,7 +5,7 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 24%
@@ -220,7 +220,7 @@ Los recursos pueden tener varias representaciones. Normalmente se exponen como e
 
 ### Fragmentos de contenido {#content-fragments}
 
-A [fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un tipo especial de recurso. Pueden utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros.
+A [fragmento de contenido](/help/assets/content-fragments/content-fragments.md) es un tipo especial de recurso. Pueden utilizarse para acceder a datos estructurados, como textos, números, fechas, etc.
 
 Dado que existen varias diferencias con *standard* recursos (como imágenes o audio), se aplican algunas reglas adicionales para administrarlos.
 

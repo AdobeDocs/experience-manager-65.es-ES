@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -176,7 +176,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 ### Estructura del sitio    {#site-structure}
 
-* Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
+* Proporcionar vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros.
 
 ## Edición de las propiedades de página   {#editing-page-properties-2}
 

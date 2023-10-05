@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 1%
@@ -100,35 +100,34 @@ Los modelos de flujo de trabajo se almacenan en el repositorio según el tipo:
 
 * Los diseños de flujo de trabajo listos para usar se mantienen en la siguiente ruta:
 
-   `/libs/settings/workflow/models/`
+  `/libs/settings/workflow/models/`
 
-   >[!CAUTION]
-   >
-   >No haga lo siguiente:
-   >
-   >* coloque cualquiera de los modelos de flujo de trabajo personalizados en esta carpeta
-   >* editar cualquier elemento en `/libs`
-
-   >
-   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
+  >[!CAUTION]
+  >
+  >No haga lo siguiente:
+  >
+  >* coloque cualquiera de los modelos de flujo de trabajo personalizados en esta carpeta
+  >* editar cualquier elemento en `/libs`
+  >
+  >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
 * Los diseños de flujo de trabajo personalizados se encuentran en:
 
-   ```
-   /conf/global/settings/workflow/models/...
-   ```
+  ```
+  /conf/global/settings/workflow/models/...
+  ```
 
 * Los diseños de flujo de trabajo de tiempo de ejecución (tanto predeterminados como personalizados) se mantienen en la siguiente ruta:
 
-   `/var/workflow/models/`
+  `/var/workflow/models/`
 
 * Los diseños de flujo de trabajo heredados (tanto en tiempo de diseño como en tiempo de ejecución) se mantienen en la siguiente ruta:
 
-   `/etc/workflow/models/`
+  `/etc/workflow/models/`
 
-   >[!NOTE]
-   >
-   >Si estos diseños se editan *AEM uso de la IU de*, los detalles se copiarán en las nuevas ubicaciones.
+  >[!NOTE]
+  >
+  >Si estos diseños se editan *AEM uso de la IU de*, los detalles se copiarán en las nuevas ubicaciones.
 
 #### Ubicaciones - Iniciadores de flujo de trabajo {#locations-workflow-launchers}
 
@@ -136,31 +135,30 @@ Las definiciones del lanzador de flujos de trabajo también se almacenan en el r
 
 * Los iniciadores de flujo de trabajo listos para usar se mantienen en la siguiente ruta:
 
-   `/libs/settings/workflow/launcher/`
+  `/libs/settings/workflow/launcher/`
 
-   >[!CAUTION]
-   >
-   >No haga lo siguiente:
-   >
-   >* coloque cualquiera de los iniciadores de flujo de trabajo personalizados en esta carpeta
-   >* editar cualquier elemento en `/libs`
-
-   >
-   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
+  >[!CAUTION]
+  >
+  >No haga lo siguiente:
+  >
+  >* coloque cualquiera de los iniciadores de flujo de trabajo personalizados en esta carpeta
+  >* editar cualquier elemento en `/libs`
+  >
+  >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
 * Los iniciadores de flujo de trabajo personalizados se encuentran en:
 
-   ```
-   /conf/global/settings/workflow/launcher/...
-   ```
+  ```
+  /conf/global/settings/workflow/launcher/...
+  ```
 
 * Los iniciadores de flujos de trabajo heredados se mantienen en la siguiente ruta:
 
-   `/etc/workflow/launcher/`
+  `/etc/workflow/launcher/`
 
-   >[!NOTE]
-   >
-   >Si se editan estas definiciones *AEM uso de la IU de*, los detalles se copiarán en las nuevas ubicaciones.
+  >[!NOTE]
+  >
+  >Si se editan estas definiciones *AEM uso de la IU de*, los detalles se copiarán en las nuevas ubicaciones.
 
 #### Ubicaciones - Scripts de flujo de trabajo {#locations-workflow-scripts}
 
@@ -168,27 +166,26 @@ Los scripts de flujo de trabajo también se almacenan en el repositorio según e
 
 * Los scripts de flujo de trabajo listos para usar se mantienen en la siguiente ruta:
 
-   `/libs/workflow/scripts/`
+  `/libs/workflow/scripts/`
 
-   >[!CAUTION]
-   >
-   >No haga lo siguiente:
-   >
-   >* coloque cualquiera de los scripts de flujo de trabajo personalizados en esta carpeta
-   >* editar cualquier elemento en `/libs`
-
-   >
-   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
+  >[!CAUTION]
+  >
+  >No haga lo siguiente:
+  >
+  >* coloque cualquiera de los scripts de flujo de trabajo personalizados en esta carpeta
+  >* editar cualquier elemento en `/libs`
+  >
+  >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
 * Los scripts de flujo de trabajo personalizados se encuentran en:
 
-   ```
-   /apps/workflow/scripts/...
-   ```
+  ```
+  /apps/workflow/scripts/...
+  ```
 
 * Los scripts de flujo de trabajo heredados se mantienen en la siguiente ruta:
 
-   `/etc/workflow/scripts/`
+  `/etc/workflow/scripts/`
 
 #### Ubicaciones - Notificaciones de flujo de trabajo {#locations-workflow-notifications}
 
@@ -196,34 +193,33 @@ Las notificaciones de flujo de trabajo también se almacenan en el repositorio s
 
 * Las definiciones de notificaciones de flujo de trabajo listas para usar se mantienen en la siguiente ruta:
 
-   `/libs/settings/workflow/notification/`
+  `/libs/settings/workflow/notification/`
 
-   >[!CAUTION]
-   >
-   >No haga lo siguiente:
-   >
-   >* coloque cualquiera de las definiciones de notificación de flujo de trabajo personalizadas en esta carpeta
-   >* editar cualquier elemento en `/libs`
-
-   >
-   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
+  >[!CAUTION]
+  >
+  >No haga lo siguiente:
+  >
+  >* coloque cualquiera de las definiciones de notificación de flujo de trabajo personalizadas en esta carpeta
+  >* editar cualquier elemento en `/libs`
+  >
+  >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
 * Las definiciones de notificaciones de flujo de trabajo personalizadas se encuentran en:
 
-   ```
-   /conf/global/settings/workflow/notification/...
-   ```
+  ```
+  /conf/global/settings/workflow/notification/...
+  ```
 
-   >[!NOTE]
-   >
-   >Si desea anular un texto de notificación de flujo de trabajo, cree una ruta superpuesta en:
-   >
-   >
-   >`/conf/global/settings/workflow/notification/<path-under-libs>`
+  >[!NOTE]
+  >
+  >Si desea anular un texto de notificación de flujo de trabajo, cree una ruta superpuesta en:
+  >
+  >
+  >`/conf/global/settings/workflow/notification/<path-under-libs>`
 
 * Las definiciones de notificaciones de flujo de trabajo heredadas se mantienen en la siguiente ruta:
 
-   `/etc/workflow/notification/`
+  `/etc/workflow/notification/`
 
 ### Sesiones de proceso {#process-sessions}
 

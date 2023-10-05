@@ -3,10 +3,10 @@ title: Configuración de los complementos del Editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar las funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
-source-wordcount: '4405'
-ht-degree: 5%
+source-wordcount: '4395'
+ht-degree: 4%
 
 ---
 
@@ -41,13 +41,13 @@ De forma predeterminada, `format`, `link`, `list`, `justify`, y `control` Los co
       * `text: .../text/dialog/items/tab1/items/text`
 
    * Son del tipo: **jcr:primaryType** `cq:Widget`
-   * Ambos tienen la siguiente propiedad:
+   * Ambos tienen las siguientes propiedades:
 
       * **Nombre** `name`
       * **Tipo** `String`
       * **Valor** `./text`
 
-1. Según la interfaz que configure para, cree un nodo `<rtePlugins-node>`, si no existe:
+1. Según la interfaz para la que esté configurando, cree un nodo `<rtePlugins-node>`, si no existe:
 
    * **Nombre** `rtePlugins`
    * **Tipo** `nt:unstructured`
@@ -71,7 +71,7 @@ El `findreplace` no necesita ninguna configuración. Funciona de forma predeterm
 
 Al utilizar la funcionalidad de reemplazo, la cadena de reemplazo que se va a reemplazar debe introducirse al mismo tiempo que la cadena de búsqueda. Sin embargo, puede hacer clic en Buscar para buscar la cadena antes de reemplazarla. Si se introduce la cadena de reemplazo después de hacer clic en Buscar, la búsqueda se restablecerá al principio del texto.
 
-El cuadro de diálogo buscar y reemplazar se volverá transparente cuando se haga clic en buscar y se volverá opaco cuando se haga clic en reemplazar. Esto permitirá al autor revisar el texto que reemplazará. Si los usuarios hacen clic en reemplazar todo, el cuadro de diálogo se cierra y muestra el número de reemplazos realizados.
+El cuadro de diálogo buscar y reemplazar se volverá transparente cuando se haga clic en buscar y se volverá opaco cuando se haga clic en reemplazar. Esto permite al autor revisar el texto que reemplaza. Si los usuarios hacen clic en reemplazar todo, el cuadro de diálogo se cierra y muestra el número de reemplazos realizados.
 
 ## Configuración de los modos de pegado {#paste-modes}
 
@@ -81,7 +81,7 @@ Al utilizar RTE, los autores pueden pegar el contenido en uno de los tres modos 
 
 * **Modo de texto sin formato**: pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlo en [!DNL Experience Manager] componente.
 
-* **Modo MS Word**: pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite la copia y pegado de texto desde otro origen, como una página web o MS Excel, y sólo conserva un formato parcial.
+* **Modo MS® Word**: pegue el texto, incluidas las tablas, con formato al copiar desde MS® Word. No se admite la copia y pegado de texto desde otro origen, como una página web o MS® Excel, y sólo se conserva un formato parcial.
 
 ### Configurar las opciones de pegado disponibles en la barra de herramientas RTE  {#configure-paste-options-available-on-the-rte-toolbar}
 
@@ -91,7 +91,7 @@ Puede proporcionar algunos, todos o ninguno de estos tres iconos a los autores e
 
 * **[!UICONTROL Pegar como texto]**: Proporciona funcionalidad de modo de texto sin formato.
 
-* **[!UICONTROL Pegar desde Word]**: proporciona la funcionalidad del modo MS Word.
+* **[!UICONTROL Pegar desde Word]**: proporciona la funcionalidad del modo MS® Word.
 
 Para configurar RTE para que muestre los iconos necesarios, siga estos pasos.
 
@@ -109,10 +109,10 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 * Pegue el contenido del portapapeles como texto sin formato. AEM Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente de la. Configurado mediante `plaintext` más abajo.
 
-* Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite la copia y pegado de texto desde otro origen, como una página web o MS Excel, y sólo conserva un formato parcial. Configurado mediante `wordhtml` más abajo.
+* Pegue el texto, incluidas las tablas, con formato al copiar desde MS® Word. No se admite la copia y pegado de texto desde otro origen, como una página web o MS® Excel, y sólo se conserva un formato parcial. Configurado mediante `wordhtml` más abajo.
 
 1. En el componente, navegue hasta `<rtePlugins-node>/edit` nodo. Cree los nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
-1. En el `edit` nodo cree una propiedad con los siguientes detalles:
+1. En el `edit` , cree una propiedad con los siguientes detalles:
 
    * **Nombre** `defaultPasteMode`
    * **Tipo** `String`
@@ -120,7 +120,7 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 ### Configurar los formatos permitidos al pegar contenido {#pasteformats}
 
-La función pegar como Microsoft Word (`paste-wordhtml`AEM El modo ) se puede configurar aún más para que pueda definir explícitamente qué estilos se permiten al pegar elementos desde otro programa, como Microsoft Word, o desde el que se pueden pegar los elementos desde otro programa, o desde el que se pueden pegar los elementos de forma predeterminada.
+La función pegar como Microsoft Word (`paste-wordhtml`AEM El modo ) se puede configurar aún más para que pueda definir explícitamente qué estilos se permiten al pegar elementos desde otro programa, como Microsoft® Word, o desde cualquier otro programa.
 
 AEM Por ejemplo, si solo se deben permitir formatos en negrita y listas al pegar en la lista de distribución, puede filtrar los demás formatos. Esto se denomina filtrado de pegado configurable y se puede hacer para lo siguiente:
 
@@ -132,12 +132,12 @@ En el caso de los vínculos, también puede definir los protocolos que se acepta
 AEM Para configurar los formatos que se permiten al pegar texto en los archivos de texto desde otro programa, haga lo siguiente:
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/edit`. Cree los nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
-1. Cree un nodo en `edit` nodo en el que se guardarán las reglas de pegado de HTML:
+1. Cree un nodo en `edit` para poder mantener las reglas de pegado del HTML:
 
    * **Nombre** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
 
-1. Cree un nodo en `htmlPasteRules`, para contener detalles de los formatos básicos permitidos:
+1. Cree un nodo en `htmlPasteRules`, para que pueda conservar los detalles de los formatos básicos permitidos:
 
    * **Nombre** `allowBasics`
    * **Tipo** `nt:unstructured`
@@ -163,7 +163,7 @@ Puede utilizar las siguientes propiedades para `htmlPasteRules`.
 | Propiedad | Tipo | Descripción |
 |---|---|---|
 | `allowBlockTags` | Cadena | Define la lista de etiquetas de bloque permitidas. Algunas etiquetas de bloque posibles son: <ul> <li>titulares (h1, h2, h3)</li> <li>párrafos p)</li> <li>listas (ol, ul)</li> <li>tablas (tabla)</li> </ul> |
-| `fallbackBlockTag` | Cadena | Define la etiqueta de bloque utilizada para cualquier bloque que tenga una etiqueta de bloque no incluida en `allowBlockTags`. `p` en la mayoría de los casos. |
+| `fallbackBlockTag` | Cadena | Define la etiqueta de bloque utilizada para cualquier bloque que tenga una etiqueta de bloque no incluida en `allowBlockTags`. `p` normalmente es suficiente. |
 | tabla | nt:unstructured | Define el comportamiento al pegar tablas. Este nodo debe tener la propiedad `allow` (tipo Boolean) para definir si se permite pegar tablas. Si la opción Permitir está establecida en `false`, debe especificar la propiedad `ignoreMode` (escriba Cadena) para definir cómo se administra el contenido de tabla pegado. Valores válidos para `ignoreMode` son: <ul> <li>`remove`: elimina el contenido de la tabla.</li> <li>`paragraph`: convierte las celdas de la tabla en párrafos.</li> </ul> |
 | list | nt:unstructured | Define el comportamiento al pegar listas. Debe tener la propiedad `allow` (tipo booleano) para definir si se permite pegar listas. If `allow` se establece en `false`, debe especificar la propiedad `ignoreMode` (escriba Cadena) para definir cómo gestionar cualquier contenido de lista pegado. Valores válidos para `ignoreMode` son: <ul><li> `remove`: elimina el contenido de la lista.</li> <li>`paragraph`: convierte los elementos de lista en párrafos.</li> </ul> |
 
@@ -196,8 +196,8 @@ Los autores pueden aplicar estilos para cambiar el aspecto de una parte del text
 Cuando el complemento Estilos está habilitado por primera vez, no hay estilos predeterminados disponibles. La lista emergente está vacía. Para proporcionar estilos a los autores, haga lo siguiente:
 
 * Active el selector desplegable Estilo.
-* Especifique la ubicación de las hojas de estilo.
-* Especifique los estilos individuales que se pueden seleccionar en la lista desplegable Estilo.
+* Especifique las ubicaciones de las hojas de estilo.
+* Especifique los estilos individuales que se pueden seleccionar de la lista desplegable Estilo.
 
 Para configuraciones posteriores, por ejemplo, para agregar más estilos, siga sólo las instrucciones para hacer referencia a una nueva hoja de estilos y para especificar los estilos adicionales.
 
@@ -207,7 +207,7 @@ Para configuraciones posteriores, por ejemplo, para agregar más estilos, siga s
 
 ### Habilitar la lista desplegable de selectores de estilo {#styleselectorlist}
 
-Para ello, habilite el complemento estilos.
+Para ello, habilite el complemento de estilo.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/styles`. Cree los nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
 1. Cree el `features` propiedad en el `styles` nodo:
@@ -224,14 +224,14 @@ Para ello, habilite el complemento estilos.
 
 ### Especificar la ubicación de la hoja de estilos {#locationofstylesheet}
 
-A continuación, especifique las ubicaciones de las hojas de estilos a las que desea hacer referencia:
+A continuación, especifique las ubicaciones de las hojas de estilo a las que desea hacer referencia:
 
 1. Vaya al nodo raíz del componente de texto, por ejemplo `/apps/<myProject>/components/text`.
 1. Añadir la propiedad `externalStyleSheets` al nodo principal de `<rtePlugins-node>`:
 
    * **Nombre** `externalStyleSheets`
    * **Tipo** `String[]` (varias cadenas; haga clic en **Múltiple** en CRXDE)
-   * **Valor(es)** Ruta de acceso y nombre de archivo de cada hoja de estilos que desee incluir. Utilice las rutas del repositorio.
+   * **Valores** Ruta de acceso y nombre de archivo de cada hoja de estilos que desee incluir. Utilice las rutas del repositorio.
 
    >[!NOTE]
    >
@@ -241,7 +241,7 @@ A continuación, especifique las ubicaciones de las hojas de estilos a las que d
 
 >[!NOTE]
 >
->Al utilizar RTE en un cuadro de diálogo (IU clásica), es posible que desee especificar hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto CSS se pierde en el editor, por lo que es posible que desee emular este contexto para mejorar la experiencia WYSIWYG.
+>Cuando utilice RTE en un cuadro de diálogo (IU clásica), es posible que desee especificar hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto CSS se pierde en el editor, por lo que es posible que desee emular este contexto para mejorar la experiencia WYSIWYG.
 >
 >El editor de texto enriquecido utiliza un elemento DOM contenedor con un ID de `CQrte` que pueden utilizarse para proporcionar diferentes estilos de visualización y edición:
 >
@@ -254,17 +254,17 @@ A continuación, especifique las ubicaciones de las hojas de estilos a las que d
 ### Especifique los estilos disponibles en la lista emergente {#stylesindropdown}
 
 1. En la definición del componente, vaya al nodo `<rtePlugins-node>/styles`, tal como se crea en [Activación del selector desplegable de estilo](#styleselectorlist).
-1. En el nodo `styles`, cree un nuevo nodo (también llamado `styles`) para que la lista esté disponible:
+1. En el nodo `styles`, cree un nodo (también llamado `styles`) para que la lista esté disponible:
 
    * **Nombre** `styles`
    * **Tipo** `cq:WidgetCollection`
 
-1. Cree un nuevo nodo en `styles` para representar un estilo individual:
+1. Cree un nodo en `styles` para que pueda representar un estilo individual:
 
    * **Nombre**, puede especificar el nombre, pero debe ser adecuado para el estilo
    * **Tipo** `nt:unstructured`
 
-1. Añadir la propiedad `cssName` Vaya a este nodo para hacer referencia a la clase CSS:
+1. Añadir la propiedad `cssName` a este nodo para poder hacer referencia a la clase CSS:
 
    * **Nombre** `cssName`
    * **Tipo** `String`
@@ -290,21 +290,21 @@ AEM Los autores que utilizan la función de creación de contenido en japonés p
 
 Para crear el estilo que los autores pueden aplicar al texto en japonés, siga estos pasos:
 
-1. Cree un nuevo nodo en el nodo Estilos. Consulte [especificar un nuevo estilo](#stylesindropdown).
+1. Cree un nodo en el nodo Estilos. Consulte [especificar un nuevo estilo](#stylesindropdown).
    * Nombre: `jpn-word-wrap`
    * Tipo: `nt:unstructure`
 
-1. Añadir la propiedad `cssName` al nodo para hacer referencia a la clase CSS. Este nombre de clase es un nombre reservado para la función de ajuste de línea en japonés.
+1. Añadir la propiedad `cssName` al nodo para poder hacer referencia a la clase CSS. Este nombre de clase es un nombre reservado para la función de ajuste de línea en japonés.
    * Nombre: `cssName`
    * Tipo: `String`
    * Valor: `jpn-word-wrap` (sin un precedente `.`)
 
-1. Añada el texto de la propiedad al mismo nodo. El valor es el nombre del estilo que ven los autores al seleccionar el estilo.
+1. Añada el texto de la propiedad al mismo nodo. El valor es el nombre del estilo que ve el autor al seleccionar el estilo.
    * Nombre: `text`
 *Tipo: `String`
    * Valor: `Japanese word-wrap`
 
-1. Cree una hoja de estilo y especifique su ruta. Consulte [especificar la ubicación de la hoja de estilo](#locationofstylesheet). Añada el siguiente contenido a la hoja de estilo. Cambie el color de fondo como desee.
+1. Cree una hoja de estilos y especifique su ruta. Consulte [especificar la ubicación de la hoja de estilos](#locationofstylesheet). Agregue el siguiente contenido a la hoja de estilos. Cambie el color de fondo como desee.
 
    ```css
    .text span.jpn-word-wrap {
@@ -319,11 +319,11 @@ Para crear el estilo que los autores pueden aplicar al texto en japonés, siga e
 
 ## Configuración de los formatos de párrafo {#paraformats}
 
-Cualquier texto creado en RTE se coloca dentro de una etiqueta de bloque, siendo el valor predeterminado `<p>`. Al habilitar la variable `paraformat` , puede especificar etiquetas de bloque adicionales que se pueden asignar a los párrafos mediante una lista de selección desplegable. Los formatos de párrafo determinan el tipo de párrafo asignando la etiqueta de bloque correcta. El autor puede seleccionarlos y asignarlos mediante el selector de formato. Entre las etiquetas de bloque de ejemplo se incluye el párrafo estándar &lt;p> y encabezados &lt;h1>, &lt;h2>, etc.
+Cualquier texto creado en RTE se coloca dentro de una etiqueta de bloque, siendo el valor predeterminado `<p>`. Al habilitar la variable `paraformat` , puede especificar etiquetas de bloque adicionales que se pueden asignar a los párrafos mediante una lista de selección desplegable. Los formatos de párrafo determinan el tipo de párrafo asignando la etiqueta de bloque correcta. El autor puede seleccionarlos y asignarlos mediante el selector de formato. Las etiquetas de bloque de ejemplo incluyen, entre otros, el párrafo estándar &lt;p> y encabezados &lt;h1>, &lt;h2>, etc.
 
 >[!CAUTION]
 >
->Este complemento no es adecuado para contenido con una estructura compleja, como listas o tablas.
+>Este complemento no es adecuado para contenido con estructuras complejas, como listas o tablas.
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ Cuando el complemento Formatos de párrafo se activa por primera vez, no hay dis
 * Habilite la lista desplegable Formato del selector.
 * Especifique las etiquetas de bloque que se pueden seleccionar como formatos de párrafo en la lista desplegable.
 
-Para configuraciones posteriores (reconfiguraciones), por ejemplo, para añadir más formatos, siga solo la parte correspondiente de las instrucciones.
+Para configuraciones o reconfiguraciones posteriores, por ejemplo, para agregar más formatos, siga solo la parte correspondiente de las instrucciones.
 
 ### Habilite el selector desplegable Formato {#formatselectorlist}
 
@@ -359,19 +359,19 @@ Si el complemento no se sigue configurando, se habilitan los siguientes formatos
 
 >[!CAUTION]
 >
-Al configurar los formatos de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si la variable `<p>` se elimina, el autor del contenido no puede seleccionar la etiqueta **Formatos de párrafo** opción incluso si hay formatos adicionales configurados.
+Al configurar el formato de párrafo del RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si la variable `<p>` se elimina, el autor del contenido no puede seleccionar la etiqueta **Formatos de párrafo** opción incluso si hay formatos adicionales configurados.
 
 ### Especificar los formatos de párrafo disponibles {#paraformatsindropdown}
 
 Los formatos de párrafo podrán ser seleccionados por:
 
 1. En la definición del componente, vaya al nodo `<rtePlugins-node>/paraformat`, tal como se crea en [Activación del selector desplegable de formato](#styleselectorlist).
-1. En el `paraformat` nodo crear un nuevo nodo, para guardar la lista de formatos:
+1. En el `paraformat` , cree un nodo para guardar la lista de formatos:
 
    * **Nombre** `formats`
    * **Tipo** `cq:WidgetCollection`
 
-1. Cree un nuevo nodo en `formats` , contiene detalles de un formato individual:
+1. Cree un nodo en `formats` , contiene detalles de un formato individual:
 
    * **Nombre**, puede especificar el nombre, pero debe ser adecuado para el formato (por ejemplo, myparagraph, myheading1).
    * **Tipo** `nt:unstructured`
@@ -380,7 +380,7 @@ Los formatos de párrafo podrán ser seleccionados por:
 
    * **Nombre** `tag`
    * **Tipo** `String`
-   * **Valor** La etiqueta de bloque para el formato; por ejemplo: p, h1, h2, etc.
+   * **Valor** La etiqueta de bloque del formato; por ejemplo: p, h1, h2.
 
      No es necesario introducir los corchetes angulares delimitadores.
 
@@ -388,7 +388,7 @@ Los formatos de párrafo podrán ser seleccionados por:
 
    * **Nombre** `description`
    * **Tipo** `String`
-   * **Valor** Texto descriptivo para este formato; por ejemplo, Párrafo, Encabezado 1, Encabezado 2, etc. Este texto se muestra en la lista de selección Formato.
+   * **Valor** Texto descriptivo para este formato; por ejemplo, Párrafo, Encabezado 1, Encabezado 2. Este texto se muestra en la lista de selección Formato.
 
 1. Guarde los cambios.
 
@@ -406,7 +406,7 @@ Puede configurar el RTE para que su propia selección de caracteres esté dispon
 
 >[!CAUTION]
 >
-Si agrega sus propios caracteres especiales, se anulará la selección predeterminada. Si es necesario, (re-)defina estos caracteres en su propia selección.
+Si agrega sus propios caracteres especiales, se anulará la selección predeterminada. Si es necesario, defina o redefina estos caracteres en su propia selección.
 
 ### Definir un solo carácter {#definesinglechar}
 
@@ -419,22 +419,22 @@ Si agrega sus propios caracteres especiales, se anulará la selección predeterm
 
          (o `String / *` si aplica todas las funciones para este complemento)
 
-1. En `misctools` cree un nodo que contenga las configuraciones de caracteres especiales:
+1. En `misctools`, cree un nodo para guardar las configuraciones de caracteres especiales:
 
    * **Nombre** `specialCharsConfig`
    * **Tipo** `nt:unstructured`
 
-1. En `specialCharsConfig` cree otro nodo que contenga la lista de caracteres:
+1. En `specialCharsConfig`, cree otro nodo para albergar la lista de caracteres:
 
    * **Nombre** `chars`
    * **Tipo** `nt:unstructured`
 
-1. En `chars` añada un nuevo nodo para guardar una definición de carácter individual:
+1. En `chars`, agregue un nodo para guardar una definición de carácter individual:
 
    * **Nombre** puede especificar el nombre, pero debe reflejar el carácter; por ejemplo, la mitad.
    * **Tipo** `nt:unstructured`
 
-1. A este nodo, agregue la siguiente propiedad:
+1. Agregue la siguiente propiedad a este nodo:
 
    * **Nombre** `entity`
    * **Tipo** `String`
@@ -442,14 +442,14 @@ Si agrega sus propios caracteres especiales, se anulará la selección predeterm
 
 1. Guarde los cambios.
 
-En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. Consulte a continuación el ejemplo de la mitad. Repita los pasos anteriores para que los autores tengan acceso a caracteres más especiales.
+En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. Consulte a continuación el ejemplo de la mitad. Repita los pasos anteriores para que pueda poner más caracteres especiales a disposición de los autores.
 
 ![En CRXDE, añada un solo carácter para que esté disponible en la barra de herramientas RTE](assets/chlimage_1-106.png "En CRXDE, añada un solo carácter para que esté disponible en la barra de herramientas RTE")
 
 ### Definir un intervalo de caracteres {#definerangechar}
 
-1. Siga los pasos del 1 al 3 de [Definición de un solo carácter](#definesinglechar).
-1. En `chars` agregue un nuevo nodo para guardar la definición del intervalo de caracteres:
+1. Siga los pasos del 1 al 3 desde [Definición de un solo carácter](#definesinglechar).
+1. En `chars`, agregue un nodo para guardar la definición del intervalo de caracteres:
 
    * **Nombre** puede especificar el nombre, pero debe reflejar el intervalo de caracteres; por ejemplo, lápices.
    * **Tipo** `nt:unstructured`
@@ -466,7 +466,7 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 
 1. Guarde los cambios.
 
-   Por ejemplo, defina un intervalo de 9998 10000 le proporcione los siguientes caracteres.
+   Por ejemplo, defina un rango 9998 10000 le proporcione los siguientes caracteres.
 
    ![En CRXDE, defina un rango de caracteres que estará disponible en RTE](assets/chlimage_1-107.png)
 
@@ -495,16 +495,16 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
 
    >[!NOTE]
    >
-   Si no desea activar todas las funciones de tabla, puede crear el `features` propiedad como:
+   Si no desea habilitar todas las funciones de la tabla, puede crear la variable `features` propiedad como:
    >
    * **Tipo** `String[]`
    >
-   * **Valor**(s) uno, o ambos, de los siguientes, según sea necesario:
+   * **Valor** una, o ambas, de las siguientes, según sea necesario:
    * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
    * `cellprops` para permitir la edición de las propiedades de la celda, incluidos los estilos.
 
-1. Defina la ubicación de las hojas de estilos CSS para hacer referencia a ellas. Consulte [Especificar la ubicación de la hoja de estilos](#locationofstylesheet) ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
-1. En el `table` nodo cree los siguientes nodos nuevos (según sea necesario):
+1. Defina la ubicación de las hojas de estilos CSS para que pueda hacer referencia a ellas. Consulte [Especificar la ubicación de la hoja de estilos](#locationofstylesheet) ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
+1. En el `table` , cree los siguientes nodos nuevos (según sea necesario):
 
    * Para definir estilos para toda la tabla (disponible en **Propiedades de tabla**):
 
@@ -516,7 +516,7 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
       * **Nombre** `cellStyles`
       * **Tipo** `cq:WidgetCollection`
 
-1. Cree un nuevo nodo (en la variable `tableStyles` o `cellStyles` (según corresponda) para representar un estilo individual:
+1. Cree un nodo (en la variable `tableStyles` o `cellStyles` (según corresponda) para que pueda representar un estilo individual:
 
    * **Nombre** puede especificar el nombre, pero debe reflejar el estilo.
    * **Tipo** `nt:unstructured`
@@ -541,7 +541,7 @@ Repita los pasos anteriores para cada estilo necesario.
 
 ### Configuración de encabezados ocultos en tablas para fines de accesibilidad {#hiddenheader}
 
-A veces, puede crear tablas de datos sin texto visual en un encabezado de columna suponiendo que el propósito del encabezado está implícito en la relación visual de la columna con otras columnas. En este caso, es necesario proporcionar texto interno oculto dentro de la celda en la celda del encabezado para permitir que los lectores de pantalla y otras tecnologías de asistencia ayuden a los lectores con diversas necesidades a comprender el propósito de la columna.
+A veces, puede crear tablas de datos sin texto visual en un encabezado de columna suponiendo que el propósito del encabezado está implícito en la relación visual de la columna con otras columnas. En este caso, es necesario proporcionar texto interno oculto dentro de la celda en la celda del encabezado. Al hacerlo, los lectores de pantalla y otras tecnologías de asistencia pueden ayudar a los lectores con diversas necesidades a comprender el propósito de la columna.
 
 Para mejorar la accesibilidad en estos casos, RTE admite celdas de encabezado ocultas. Además, proporciona opciones de configuración relacionadas con encabezados ocultos en tablas. Esta configuración permite aplicar estilos CSS a encabezados ocultos en los modos de edición y vista previa. Para ayudar a los autores a identificar los encabezados ocultos en el modo de edición, incluya los siguientes parámetros en el código:
 
@@ -559,7 +559,7 @@ Si especifica las cadenas CSS y Style en el código, la clase CSS tiene priorida
 
 ## Agregar diccionarios para el corrector ortográfico {#adddict}
 
-Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios para cada idioma adecuado. A continuación, se seleccionan según el idioma del sitio web tomando la propiedad language del subárbol o extrayendo el idioma de la dirección URL; por ejemplo. el `/en/` La rama de se marca como Inglés, la `/de/` sucursal en alemán.
+Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios para cada idioma adecuado. A continuación, se seleccionan según el idioma del sitio web tomando la propiedad language del subárbol o extrayendo el idioma de la dirección URL. Por ejemplo, la variable `/en/` La rama de se marca como Inglés, la `/de/` sucursal en alemán.
 
 >[!NOTE]
 >
@@ -580,8 +580,8 @@ AEM Una instalación estándar de la incluye los diccionarios para inglés ameri
    >
    Solo los diccionarios de `MySpell` es compatible con el formato de OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
 
-1. Busque los archivos .aff y .dic. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
-1. Cargue los archivos .aff y .dic en el repositorio en `/apps/cq/spellchecker/dictionaries`.
+1. Busque el `.aff` y `.dic` archivos. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
+1. Cargue el `.aff` y `.dic` archivos en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
@@ -594,7 +594,7 @@ Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado d
 RTE permite a los autores deshacer o rehacer algunas ediciones últimas. De forma predeterminada, se almacenan 50 ediciones en el historial. Puede configurar este valor según sea necesario.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/undo`. Cree estos nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
-1. En el `undo` nodo crear la propiedad:
+1. En el `undo` , cree la propiedad:
 
    * **Nombre** `maxUndoSteps`
    * **Tipo** `Long`
@@ -609,7 +609,7 @@ Cuando se presiona el carácter de tabulación dentro de cualquier texto, se ins
 Para definir el tamaño de la pestaña:
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/keys`. Cree los nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
-1. En el `keys` nodo crear la propiedad:
+1. En el `keys` , cree la propiedad:
 
    * **Nombre** `tabSize`
    * **Tipo** `String`
@@ -619,16 +619,16 @@ Para definir el tamaño de la pestaña:
 
 ## Establecer margen de sangría {#indentmargin}
 
-Cuando la sangría está activada (predeterminada), puede definir el tamaño de la sangría:
+Cuando la sangría está habilitada (opción predeterminada), puede definir el tamaño de la sangría:
 
 >[!NOTE]
 >
 Este tamaño de sangría solo se aplica a párrafos (bloques) de texto; no afecta a la sangría de listas reales.
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/lists`. Cree estos nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
-1. En el `lists` nodo crear el `identSize` parámetro:
+1. En el `lists` , cree el nodo `indentSize` parámetro:
 
-   * **Nombre**: `identSize`
+   * **Nombre**: `indentSize`
    * **Tipo**: `Long`
    * **Valor**: número de píxeles necesarios para el margen de sangría.
 
@@ -640,7 +640,7 @@ Esto solo es aplicable cuando se utiliza el RTE en un cuadro de diálogo (no en 
 
 Puede definir la altura del espacio editable que se muestra en el cuadro de diálogo del componente:
 
-1. En el `../items/text` en la definición del cuadro de diálogo del componente, cree una nueva propiedad:
+1. En el `../items/text` en la definición del cuadro de diálogo del componente, cree una propiedad:
 
    * **Nombre** `height`
    * **Tipo** `Long`
@@ -662,7 +662,7 @@ AEM Al añadir vínculos en, puede definir lo siguiente:
 AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro programa, defina las reglas del HTML de.
 
 1. Con CRXDE Lite, busque el componente de texto para su proyecto.
-1. Cree un nuevo nodo en el mismo nivel que `<rtePlugins-node>`, es decir, cree el nodo en el nodo principal de `<rtePlugins-node>`:
+1. Cree un nodo en el mismo nivel que `<rtePlugins-node>`, es decir, cree el nodo en el nodo principal de `<rtePlugins-node>`:
 
    * **Nombre** `htmlRules`
    * **Tipo** `nt:unstructured`
@@ -677,12 +677,12 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
    >
    La ubicación del `../items/text` El nodo puede variar, según la estructura del cuadro de diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
-1. En `htmlRules`, cree un nuevo nodo.
+1. En `htmlRules`, cree un nodo.
 
    * **Nombre** `links`
    * **Tipo** `nt:unstructured`
 
-1. En el `links` nodo, defina las propiedades según sea necesario:
+1. En el `links` , defina las propiedades según sea necesario:
 
    * Estilo CSS para vínculos internos:
 
@@ -700,26 +700,26 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
 
       * **Nombre** `protocols`
       * **Tipo** `String[]`
-      * **Valor**(s) uno o más protocolos
+      * **Valor** uno o más protocolos
 
    * **defaultProtocol** (propiedad de tipo **Cadena**): Protocolo que se utilizará si el usuario no ha especificado ninguno explícitamente.
 
       * **Nombre** `defaultProtocol`
       * **Tipo** `String`
-      * **Valor**(s) uno o más protocolos predeterminados
+      * **Valor** uno o más protocolos predeterminados
 
-   * Definición de cómo gestionar el atributo de destino de un vínculo. Cree un nuevo nodo:
+   * Definición de cómo gestionar el atributo de destino de un vínculo. Cree un nodo:
 
       * **Nombre** `targetConfig`
       * **Tipo** `nt:unstructured`
 
-     En el nodo `targetConfig`: defina las propiedades requeridas:
+     En el nodo `targetConfig`, defina las propiedades necesarias:
 
       * Especifique el modo de destino:
 
          * **Nombre** `mode`
          * **Tipo** `String`)
-         * **Valor**(s) :
+         * **Valor**
 
             * `auto`: significa que se elige un destinatario automático
 

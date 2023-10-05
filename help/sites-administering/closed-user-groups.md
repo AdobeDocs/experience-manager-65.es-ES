@@ -1,5 +1,5 @@
 ---
-title: AEM Grupos de usuarios cerrados en el
+title: Grupos de usuarios cerrados en AEM
 description: AEM Obtenga información acerca de los grupos de usuarios cerrados en la.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,14 +8,14 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '6845'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# AEM Grupos de usuarios cerrados en el{#closed-user-groups-in-aem}
+# Grupos de usuarios cerrados en AEM{#closed-user-groups-in-aem}
 
 ## Introducción {#introduction}
 
@@ -23,7 +23,7 @@ AEM Desde la versión 6.3, existe una nueva implementación de grupo cerrado de 
 
 >[!NOTE]
 >
->Para simplificar, se utilizará la abreviatura CUG en toda esta documentación.
+>En aras de la simplicidad, se utilizará la abreviatura CUG en toda esta documentación.
 
 El objetivo de la nueva implementación es cubrir la funcionalidad existente donde sea necesario y, al mismo tiempo, abordar los problemas y las limitaciones de diseño de versiones anteriores. El resultado es un nuevo diseño de CUG con las siguientes características:
 
@@ -81,7 +81,7 @@ La evaluación de permisos para políticas de CUG y la interacción con el model
 Las siguientes características se aplican a la evaluación de permisos asociada al modelo de autorización diseñado para gestionar y evaluar las políticas de CUG:
 
 * Solo controla los permisos de lectura para nodos y propiedades normales, pero no lee el contenido de control de acceso
-* No gestiona permisos de escritura ni ningún tipo de permisos necesarios para la modificación del contenido JCR protegido (control de acceso, información de tipo de nodo, versiones, bloqueo o administración de usuarios, entre otros); Estos permisos no se ven afectados por una política de CUG y no serán evaluados por el modelo de autorización asociado. La concesión o no de estos permisos depende de los otros modelos configurados en la configuración de seguridad.
+* No gestiona permisos de escritura ni ningún tipo de permisos necesarios para la modificación del contenido JCR protegido (control de acceso, información de tipo de nodo, versiones, bloqueo o administración de usuarios, entre otros); Estos permisos no se ven afectados por una directiva CUG y no serán evaluados por el modelo de autorización asociado. La concesión o no de estos permisos depende de los otros modelos configurados en la configuración de seguridad.
 
 El efecto de una única política de CUG sobre la evaluación de permisos se puede resumir de la siguiente manera:
 
@@ -684,7 +684,7 @@ AEM De forma predeterminada, las nuevas instalaciones de la función CUG utiliza
 
 | **&quot;Configuración de Apache Jackrabbit Oak CUG&quot;** | **Explicación** |
 |---|---|
-| Rutas admitidas `/content` | La administración de control de acceso para directivas CUG está habilitada. |
+| Rutas admitidas `/content` | La administración del control de acceso para las directivas CUG está habilitada. |
 | Evaluación de CUG habilitada FALSE | La evaluación de permisos está deshabilitada. Las políticas de CUG no surten efecto. |
 | Clasificación | 200 | Consulte la documentación de Oak. |
 
