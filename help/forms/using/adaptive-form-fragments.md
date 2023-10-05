@@ -10,14 +10,19 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: d8e34f6ece9e3be4c4c5372f3046bc937538536e
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 97%
+source-wordcount: '2134'
+ht-degree: 96%
 
 ---
 
 # Fragmentos de formularios adaptables{#adaptive-form-fragments}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
+| AEM 6.5 | Este artículo |
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
 
