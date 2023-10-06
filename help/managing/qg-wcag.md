@@ -2,10 +2,10 @@
 title: Guía rápida de WCAG 2.1
 description: Guía rápida de WCAG 2.1
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://
 >
 >Actualmente se está desarrollando una [versión actualizada de las directrices, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) pero no se examinará en este momento.
 
-WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
+WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo más accesibles posible para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, discapacidad visual, pérdida de audición, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
 Por ejemplo, describir una imagen (o cualquier otro contenido no textual) mediante el uso del `alt` atributo en HTML beneficia en gran medida a las personas no videntes o con visión parcial. La descripción textual del `alt` atributo puede convertirse en salida de voz o transmitirse a pantallas de braille actualizables electrónicas.
 
