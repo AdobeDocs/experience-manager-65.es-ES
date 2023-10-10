@@ -2,9 +2,9 @@
 title: Optimización de consultas de GraphQL
 description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y ordenar los fragmentos de contenido en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 2ba17c43e84ad449ec858de57812f3ef82fca3e1
+source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1935'
 ht-degree: 60%
 
 ---
@@ -89,7 +89,10 @@ Consulte:
 
 Cuando se utilizan consultas GraphQL persistentes con una CDN, se recomienda establecer los encabezados de control de caché HTTP adecuados.
 
-Cada consulta persistente puede tener su propio conjunto específico de encabezados de control de caché. Los encabezados se pueden configurar a través de [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) o el [AEM IDE de GraphiQL de](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+Cada consulta persistente puede tener su propio conjunto específico de encabezados de control de caché. Los encabezados se pueden configurar a través de [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **Referencia adicional**
 
