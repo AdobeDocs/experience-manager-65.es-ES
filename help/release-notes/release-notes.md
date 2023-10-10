@@ -2,9 +2,10 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: ffda4927ddc8555564f33697fa81d1f8a0cd2cdc
+exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
+source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
 workflow-type: tm+mt
-source-wordcount: '4548'
+source-wordcount: '4633'
 ht-degree: 2%
 
 ---
@@ -462,8 +463,25 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 #### Instalación
 
 * En la plataforma JBoss® 7.1.4, cuando el usuario instala el Service Pack de Experience Manager 6.5.16.0 o posterior, `adobe-livecycle-jboss.ear` la implementación falla. (CQ-4351522, CQDOC-20159)
-* AEM Después de instalar el programa de instalación completo del paquete de servicio 6.5.18.0 de, la implementación de EAR falla en JEE mediante JBoss® Turnkey (CQDOC-20803).
-Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` archivar y actualizar `Adobe_Adobe_JAVA_HOME` hasta `Adobe_JAVA_HOME` para todas las ocurrencias antes de ejecutar el administrador de configuración.
+* Después de actualizar al entorno del instalador completo JBoss Turnkey de AEM Forms 6.5.18.0 en Windows Server 2022, al compilar el código de la aplicación cliente de salida mediante Java 11, puede producirse el siguiente error de compilación:
+
+  ```
+  error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
+  Illegal character in path at index 70: file:/[AEM_Forms_Installation_dir]/sdk/client-libs/common/${clover.jar.name} 1 error
+  ```
+
+  Para resolver el problema, realice los siguientes pasos:
+   1. Vaya a `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` y descomprima `adobe-output-client.jar` para extraer el `Manifest.mf` archivo.
+   1. Actualice el `Manifest.mf` eliminando la entrada de `${clover.jar.name}` del atributo class-path.
+
+      >[!NOTE]
+      >
+      > También puede utilizar una herramienta de edición in situ, por ejemplo 7-zip, para actualizar el `Manifest.mf` archivo.
+
+   1. Guarde el actualizado en `Manifest.mf` en el `adobe-output-client.jar` archive.
+   1. Guardar el modificado `adobe-output-client.jar` y vuelva a ejecutar el programa de instalación.  (CQDOC-20878)
+* AEM Después de instalar el programa de instalación completo del paquete de servicio 6.5.18.0 de, la implementación de EAR falla en JEE mediante JBoss® Turnkey.
+Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` archivar y actualizar `Adobe_Adobe_JAVA_HOME` hasta `Adobe_JAVA_HOME` para todas las ocurrencias antes de ejecutar el administrador de configuración. (CQDOC-20803)
 
 #### Formularios adaptables
 
