@@ -2,9 +2,9 @@
 title: Optimización de consultas de GraphQL
 description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y ordenar los fragmentos de contenido en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
+source-git-commit: 3ec34efc14cc49d0f45cb4b175573c33c1cc232e
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1966'
 ht-degree: 60%
 
 ---
@@ -91,6 +91,17 @@ Cuando se utilizan consultas GraphQL persistentes con una CDN, se recomienda est
 
 Cada consulta persistente puede tener su propio conjunto específico de encabezados de control de caché. Los encabezados se pueden configurar a través de [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
+También se pueden configurar utilizando la variable **cURL** herramienta de línea de comandos. Por ejemplo, con un `PUT` solicitud para crear una consulta sin formato ajustada con control de caché.
+
+```shell
+$ curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
 <!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
 -->
 
@@ -99,6 +110,7 @@ Cada consulta persistente puede tener su propio conjunto específico de encabeza
 Consulte:
 
 * [Almacenamiento en caché de las consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [Cómo conservar una consulta de GraphQL](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
 <!--
 * [Managing cache for your persisted queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->
