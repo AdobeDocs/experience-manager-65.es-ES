@@ -1,15 +1,15 @@
 ---
 title: AEM Comercio de - Preparación para el RGPD
 seo-title: AEM Commerce - GDPR Readiness
-description: AEM "Comercio de - Preparación para el RGPD"
+description: AEM Conozca los procedimientos para gestionar las solicitudes de RGPD en Comercio de y cómo utilizarlas.
 seo-description: null
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---

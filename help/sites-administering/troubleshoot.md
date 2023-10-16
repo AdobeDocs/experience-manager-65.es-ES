@@ -1,6 +1,6 @@
 ---
 title: Solución de problemas de Adobe Experience Manager
-description: AEM Obtenga información acerca de la resolución de problemas con la solución de problemas de.
+description: Obtenga información sobre la resolución de algunos problemas que pueden surgir con Adobe Experience Manager.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 4%
+source-wordcount: '551'
+ht-degree: 3%
 
 ---
 
@@ -78,7 +78,7 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 ### Uso del volcado de hilos Sling {#using-sling-thread-dumper}
 
 1. Abra el **AEM Consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
-1. Seleccione el **Hilos** bajo **Estado** pestaña.
+1. Seleccione el **Threads** bajo **Estado** pestaña.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 

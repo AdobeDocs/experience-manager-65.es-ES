@@ -1,13 +1,13 @@
 ---
 title: Uso de versiones de página
-description: Obtenga información sobre el control de versiones y cómo crear una "captura de pantalla" de una página en un momento específico.
+description: Obtenga información sobre el control de versiones y cómo crear una instantánea de una página en un momento específico.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 19%

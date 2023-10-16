@@ -1,7 +1,7 @@
 ---
 title: Ofertas de Target
 seo-title: Target offers
-description: Creación de ofertas de Target
+description: Cree ofertas de Target en Adobe Experience Manager para utilizarlas en Adobe Target.
 seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 8%
+source-wordcount: '102'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 8%
 ## Creación de una experiencia de oferta de Test&amp;Target {#creating-a-test-target-offer-experience}
 
 1. Seleccione la nueva campaña en el panel izquierdo o haga doble clic en ella en el panel derecho.
-1. Seleccione la vista de lista mediante el icono:
+1. Seleccione la vista de lista con el icono:
 
    ![Vista de lista](do-not-localize/chlimage_1-11.png)
 
