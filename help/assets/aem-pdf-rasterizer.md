@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e6e0ad29bc5b3a644f74427d8d60233c9e26aa03
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
@@ -24,11 +24,11 @@ El Adobe recomienda utilizar la biblioteca Rasterizer de PDF para lo siguiente:
 
 Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calidad en comparación con la salida predeterminada y, por lo tanto, proporcionan una experiencia de visualización uniforme en todos los dispositivos. La biblioteca Rasterizer de Adobe PDF no admite ninguna conversión de espacio de color. Siempre se envía al RGB independientemente del espacio de color del archivo de origen.
 
-1. Instale el paquete PDF Rasterizer en su [!DNL Adobe Experience Manager] implementación desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
+1. Instale el paquete PDF Rasterizer en su [!DNL Adobe Experience Manager] implementación desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
-   >La biblioteca Rasterizer de PDF solo está disponible para Windows y Linux.
+   >La biblioteca Rasterizer de PDF solo está disponible para Windows y Linux®.
 
 1. Acceda a la [!DNL Assets] consola de flujo de trabajo en `https://[aem_server]:[port]/workflow`. Abrir [!UICONTROL Recurso de actualización DAM] flujo de trabajo.
 
@@ -65,7 +65,6 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
 
    * `-h`: Ayuda
 
-
 1. Para eliminar representaciones intermedias, seleccione **[!UICONTROL Eliminar representación generada]**.
 1. Para permitir que PDF Rasterizer genere representaciones web, seleccione **[!UICONTROL Generar representación web]**.
 
@@ -95,7 +94,6 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
    * `-i`: ruta para el PDF de entrada. Es un parámetro obligatorio.
 
    * `-h`: Ayuda
-
 
 1. Para eliminar representaciones intermedias, seleccione **[!UICONTROL Eliminar representación generada]**.
 1. Para permitir que PDF Rasterizer genere representaciones web, seleccione **[!UICONTROL Generar representación web]**.
