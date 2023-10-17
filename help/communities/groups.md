@@ -1,21 +1,17 @@
 ---
 title: Consola de grupos de la comunidad
-seo-title: Community Groups Console
-description: La consola Grupos permite crear grupos de la comunidad
-seo-description: Groups console lets you create Community groups
-uuid: 21e2bde3-7354-4193-bcb3-c672c6342252
+description: Obtenga información acerca de la consola Grupos de la comunidad que le permite crear grupos de comunidad cuando la estructura de plantillas de un sitio de comunidad incluye la función de grupos.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1688'
 ht-degree: 2%
 
 ---
@@ -28,7 +24,7 @@ La consola Grupos proporciona acceso a la creación de grupos de comunidad cuand
 * Solo para el entorno de creación, existe un asistente de creación de grupos similar al asistente de creación de sitios.
 * Tanto si los miembros pueden crear grupos en el entorno de publicación como si no, se puede configurar al agregar una función Grupos a una estructura de sitio de comunidad o de grupo de comunidad.
 
-De las tres plantillas de grupo incluidas, solo la variable `Reference Group` La plantilla incluye una función de grupos en su estructura.
+De las tres plantillas de grupo que se incluyen, solo está disponible la variable `Reference Group` La plantilla incluye una función de grupos en su estructura.
 
 Las diferentes facetas de los grupos comunitarios son:
 
@@ -39,7 +35,7 @@ Las diferentes facetas de los grupos comunitarios son:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
 -->
 
 >[!NOTE]
@@ -52,9 +48,9 @@ Las diferentes facetas de los grupos comunitarios son:
 
 Para acceder a la consola de grupos:
 
-* En autor, inicie sesión con privilegios de administrador.
+* En Autor, inicie sesión con privilegios de administrador.
 * Desde la navegación global: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
-* Seleccione una carpeta existente del sitio de la comunidad para abrirla.
+* Seleccione una carpeta existente del sitio de la comunidad para poder abrirla.
 * Seleccione una instancia de un sitio de la comunidad dentro de la carpeta.
 
    * La estructura del sitio de la comunidad debe incluir una función de grupos.
@@ -62,9 +58,9 @@ Para acceder a la consola de grupos:
 
   ![create-group](assets/create-group.png)
 
-* Seleccione el **Carpeta de grupos** para abrirlo.
+* Seleccione el **Carpeta de grupos** para que puedas abrirlo.
 
-  Cuando se abren, se muestran todos los grupos existentes, independientemente de si se crearon en el autor o en la publicación.
+  Cuando se abren, se muestran todos los grupos existentes, ya se hayan creado en Autor o en Publicar.
 
   Desde esta consola de grupos, es posible crear nuevos grupos.
 
@@ -131,12 +127,12 @@ El tamaño de la imagen debe ser igual de ancho que la visualización esperada d
 
 Al crear o seleccionar una imagen, tenga en cuenta lo siguiente:
 
-* La altura de la imagen se recortará a 120 píxeles medidos desde el borde superior de la imagen
+* La altura de la imagen se recorta a 120 píxeles medidos desde el borde superior de la imagen
 * La imagen se fija al borde izquierdo de la ventana del explorador
 * No se cambia el tamaño de la imagen, de modo que cuando el ancho de la imagen es:
 
-   * Menor que el ancho del explorador, la imagen se repetirá horizontalmente.
-   * En bueno lugar que la anchura del navegador, la imagen aparece recortada.
+   * Menor que el ancho del explorador, la imagen se repite horizontalmente.
+   * Mayor que el ancho del explorador, la imagen aparece recortada.
 
 ### Paso 3: Configuración {#step-settings}
 
@@ -148,7 +144,7 @@ Al crear o seleccionar una imagen, tenga en cuenta lo siguiente:
 
 De forma predeterminada, se hereda la lista de moderadores del sitio de la comunidad principal.
 
-Es posible añadir moderadores específicos al grupo. Busque miembros (del entorno de publicación) para agregarlos como moderadores
+Es posible añadir moderadores específicamente al grupo. Busque miembros (del entorno de publicación) para agregarlos como moderadores
 
 **Administradores de grupo**
 
@@ -216,7 +212,7 @@ Las propiedades de un sitio de subcomunidad existente, especificadas durante el 
 
 ![edit-site](assets/edit-site.png)
 
-Los detalles de las siguientes propiedades coinciden con las descripciones proporcionadas en la variable [Creación de grupos](#group-creation) sección. Cualquier grupo anidado se puede modificar, independientemente de si se crea en el entorno de publicación o en el entorno de creación.
+Los detalles de las siguientes propiedades coinciden con las descripciones proporcionadas en la [Creación de grupos](#group-creation) sección. Cualquier grupo anidado se puede modificar, independientemente de si se crea en el entorno de publicación o en el entorno de creación.
 
 ![community-group-basic](assets/community-group-basic.png)
 
@@ -253,7 +249,7 @@ Modifique el orden de las funciones tal como se muestran en la barra de navegaci
 >
 >Aunque el título para mostrar se puede cambiar sin efectos secundarios, no se recomienda editar el nombre de la URL de una función de la comunidad que pertenece a un sitio de la comunidad.
 >
->Por ejemplo, al cambiar el nombre de la URL no se moverá el UGC existente, por lo que se &quot;perderá&quot; el UGC.
+>Por ejemplo, al cambiar el nombre de la URL no se mueve el UGC existente, por lo que tiene el efecto de &quot;perder&quot; UGC.
 
 >[!CAUTION]
 >
@@ -272,7 +268,7 @@ El panel DISEÑO permite modificar la temática:
 * [Tema del grupo de la comunidad](#community-group-theme)
 * [Marca del grupo de la comunidad](#community-group-branding)
 
-   * Desplácese hasta la parte inferior del panel para cambiar la imagen de marca.
+   * Desplácese hasta la parte inferior del panel para poder cambiar la imagen de marca.
 
 ### Modificar configuración {#modify-settings}
 
@@ -284,7 +280,7 @@ El [ABONO](#membership) el panel es solo informativo. No es posible modificar el
 
 ### Modificar miniatura {#modify-thumbnail}
 
-El [MINIATURA](#thumbnail) El panel permite cargar una imagen para representar el grupo de la comunidad ante los visitantes del sitio en el entorno de publicación, así como en la consola Grupos del sitio de comunidades en el entorno de creación.
+El [MINIATURA](#thumbnail) El panel permite cargar una imagen para representar el grupo de la comunidad ante los visitantes del sitio en el entorno de publicación y en la consola Grupos del sitio de comunidades en el entorno de creación.
 
 ## Publicar el grupo {#publish-the-group}
 
@@ -292,7 +288,7 @@ El [MINIATURA](#thumbnail) El panel permite cargar una imagen para representar e
 
 Después de crear o modificar un grupo de comunidad, es posible publicarlo (activarlo) seleccionando la opción `Publish Site` icono.
 
-Una vez que el grupo se publique correctamente, aparecerá un mensaje:
+Una vez que el grupo se haya publicado correctamente, aparecerá el siguiente mensaje:
 
 ![publicado en grupo](assets/group-published.png)
 

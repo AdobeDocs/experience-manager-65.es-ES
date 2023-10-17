@@ -1,20 +1,16 @@
 ---
 title: Puntuación avanzada y distintivos
-seo-title: Advanced Scoring and Badges
-description: Configuración de la puntuación avanzada
-seo-description: Setting up advanced scoring
-uuid: 48caca57-43d3-4f2f-adf3-257428ba54d5
+description: Aprenda a configurar la puntuación avanzada para que pueda permitir la concesión de insignias e identificar a los miembros como expertos.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1069'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-La puntuación avanzada permite la concesión de insignias para identificar a los miembros como expertos. La puntuación avanzada asigna puntos según la cantidad *y* calidad del contenido creado por un miembro, mientras que la puntuación básica asigna puntos basados simplemente en la cantidad de contenido creado.
+La puntuación avanzada permite la concesión de insignias para identificar a los miembros como expertos. La puntuación avanzada asigna puntos según la cantidad *y* calidad del contenido creado por un miembro, mientras que la puntuación básica asigna puntos en función de la cantidad de contenido creado.
 
 Esta diferencia se debe al motor de puntuación utilizado para calcular las puntuaciones. El motor de puntuación básico aplica matemáticas simples. El motor de puntuación avanzado es un algoritmo adaptable que recompensa a los miembros activos que contribuyen con contenido relevante y valorado, deducido a través del procesamiento de lenguaje natural (PNL) de un tema.
 
@@ -51,7 +47,7 @@ Las diferencias al configurar las reglas de puntuación e insignias son las sigu
 
    * `badgingType` establezca en `advanced`
    * `badgingLevels` establezca en **número de niveles de expertos que se van a otorgar**
-   * Requiere `badgingPaths` matriz de distintivos en lugar de umbrales asignación de matriz de puntos a distintivos.
+   * Requiere `badgingPaths` matriz de distintivos en lugar de umbrales: la matriz asigna puntos a distintivos.
 
 >[!NOTE]
 >
@@ -65,27 +61,27 @@ El motor de puntuación avanzada proporciona una configuración OSGi con paráme
 
 * **Ponderaciones de puntuación**
 
-   Para un tema, especifique el verbo que debe tener la prioridad más alta al calcular la puntuación. Se pueden introducir uno o más temas, pero limitados a **un verbo por tema**. Consulte [Temas y verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
+  Para un tema, especifique el verbo que debe tener la prioridad más alta al calcular la puntuación. Se pueden introducir uno o más temas, pero limitados a **un verbo por tema**. Consulte [Temas y verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Ingresado como `topic,verb` con la coma escapada. Por ejemplo:
-   `/social/forum/hbs/social/forum\,ADD`
+  `/social/forum/hbs/social/forum\,ADD`
 De forma predeterminada, se establece el verbo ADD para los componentes de foro y control de calidad.
 
 * **Rango de puntuación**
 
-   El rango de puntuaciones avanzadas se define con este valor (puntuación máxima posible) y 0 (puntuación más baja posible).
+  El rango de puntuaciones avanzadas se define con este valor (puntuación máxima) y 0 (puntuación más baja posible).
 
-   El valor predeterminado es 100, de modo que el intervalo de puntuación es de 0 a 100.
+  El valor predeterminado es 100, de modo que el intervalo de puntuación es de 0 a 100.
 
 * **Intervalo de tiempo de deterioro de entidad**
 
-   Este parámetro representa el número de horas después de las cuales se deterioran todas las puntuaciones de entidad. Esto es necesario para no incluir contenido antiguo en las puntuaciones de un sitio de la comunidad.
+  Este parámetro representa el número de horas después de las cuales se deterioran todas las puntuaciones de entidad. Esto es necesario para no incluir contenido antiguo en las puntuaciones de un sitio de la comunidad.
 
-   El valor predeterminado es de 216000 horas (~24 años).
+  El valor predeterminado es de 216000 horas (~24 años).
 
 * **Tasa de crecimiento de puntuación**
 Esto especifica la puntuación entre 0 y el intervalo de puntuación, más allá del cual el crecimiento se ralentiza para limitar el número de expertos.
 
-   El valor predeterminado es 50.
+  El valor predeterminado es 50.
 
 ## Reglas de puntuación avanzadas {#advanced-scoring-rules}
 
@@ -115,7 +111,7 @@ El algoritmo de puntuación avanzada utiliza la lista de palabras del archivo de
 
 No se espera que este archivo se modifique.
 
-Si falta el archivo de palabras de parada, el motor de puntuación avanzada generará un error.
+Si falta el archivo de palabras de parada, el motor de puntuación avanzada genera un error.
 
 ## Reglas de distintivos avanzadas {#advanced-badging-rules}
 
@@ -135,7 +131,7 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
   <tr>
    <td>badgingPath</td>
    <td>Cadena[]</td>
-   <td><em>(Obligatorio)</em> Una cadena de varios valores de imágenes de distintivo hasta el número de badgingLevels. Las rutas de imagen del distintivo deben ordenarse para que la primera se asigne al experto más alto. Si hay menos distintivos que los indicados por badgingLevels, el último distintivo de la matriz rellena el resto de la matriz. Ejemplo de entrada:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Obligatorio)</em> Una cadena de varios valores de imágenes de distintivo hasta el número de badgingLevels. Las rutas de imagen del distintivo deben ordenarse para que la primera se asigne al experto más alto. Si hay menos distintivos de los indicados por badgingLevels, el último distintivo de la matriz rellena el resto de la matriz. Ejemplo de entrada:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -150,7 +146,7 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
   <tr>
    <td>scoringRules</td>
    <td>Cadena[]</td>
-   <td><em>(Opcional)</em> Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por las reglas de puntuación enumeradas.<br /> Ejemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> El valor predeterminado es sin restricciones.</td>
+   <td><em>(Opcional)</em> Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por una o más reglas de puntuación enumeradas.<br /> Ejemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> El valor predeterminado es sin restricciones.</td>
   </tr>
  </tbody>
 </table>
@@ -163,7 +159,7 @@ Esta versión beta incluye una insignia de experto basada en recompensas:
 
 * `expert`
 
-   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
+  `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![insignia de experto](assets/included-badge.png)
 
@@ -205,7 +201,7 @@ La versión beta incluye dos reglas de puntuación avanzadas para [función de f
 * Ambos `rules` y `sub-rules` los nodos son del tipo `cq:Page`.
 * `subRules` es un atributo de tipo cadena`[]` en la regla de `jcr:content` nodo.
 * `sub-rules` pueden compartirse entre varias reglas de puntuación.
-* `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
+* `rules` debe estar en una ubicación de repositorio con permiso de lectura para todos.
 * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
 ### Reglas de distintivos incluidas {#included-badging-rules}
@@ -218,5 +214,5 @@ En la versión de se incluyen dos reglas de distintivo avanzadas que corresponde
 **Notas:**
 
 * `rules` Los nodos son de tipo cq:Page.
-* `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
+* `rules` debe estar en una ubicación de repositorio con permiso de lectura para todos.
 * Los nombres de las reglas deben ser únicos independientemente de la ubicación.

@@ -1,19 +1,15 @@
 ---
 title: Consolas de Communities
-seo-title: Communities Consoles
-description: Consolas de la comunidad explicadas
-seo-description: Community Consoles explained
-uuid: 1c5b2600-9059-4b44-9741-f1b627423d3c
+description: Obtenga información acerca de las consolas de la comunidad de Adobe Experience Manager disponibles en el entorno de creación desde el panel de navegación global.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -30,17 +26,17 @@ Las consolas de AEM Communities, disponibles en el entorno de creación desde el
 * Crear [insignias personalizadas](badges.md)
 * Configuración de la [almacenamiento predeterminado para UGC](srp-config.md)
 
-Cuándo [Almacenamiento UGC](working-with-srp.md) está configurado para ser un almacén común compartido por los entornos de autor y publicación, el [consola de moderación](moderation.md), disponible tanto en entornos de creación como de publicación, funciona en una instancia única de UGC.
+Cuándo [Almacenamiento UGC](working-with-srp.md) está configurado para ser un almacén común compartido por los entornos de creación y publicación, el [consola de moderación](moderation.md), disponible en los entornos de creación y publicación, funciona en una instancia única de UGC.
 
 En el entorno de creación, después de iniciar sesión con privilegios de administrador, la variable `Communities` Las consolas están disponibles en las consolas de navegación y herramientas.
 
 >[!NOTE]
 >
->En el entorno de publicación, una [sitio comunitario](sites-console.md) mostrará un `Administration` elemento de menú cuando el miembro que ha iniciado sesión tiene los privilegios adecuados.
+>En el entorno de publicación, una [sitio comunitario](sites-console.md) muestra un `Administration` elemento de menú cuando el miembro que ha iniciado sesión tiene los privilegios adecuados.
 
 ## Panel de navegación global {#global-navigation-panel}
 
-Seleccione el `Adobe Experience Manager` en la esquina superior izquierda para abrir el panel de navegación global y acceder a dos iconos:
+Seleccione el `Adobe Experience Manager` en la esquina superior izquierda para poder abrir el panel de navegación global y acceder a dos iconos:
 
 * [Consola de navegación](#navigation-console)
 * [Consola Herramientas](tools.md)
@@ -53,19 +49,19 @@ Para acceder a las distintas consolas de Communities, en navegación global, sel
 
 * [Sites](sites-console.md)
 
-   La consola Sitios es accesible en el entorno de creación con el fin de crear y administrar los sitios de la comunidad y sus [grupos](groups.md).
+  La consola Sites es accesible en el entorno de creación para crear y administrar sitios de la comunidad y sus [grupos](groups.md).
 
 * [Moderación](moderation.md)
 
-   La consola Moderación se utiliza para la moderación masiva de UGC y en el entorno de creación. En el entorno de publicación hay disponible una consola de moderación masiva similar a la que pueden acceder los miembros de la comunidad a los que se les ha asignado la función [moderador de la comunidad](users.md#publishenvironmentusersandgroups) para uno o más sitios de la comunidad.
+  La consola Moderación se utiliza para la moderación masiva de UGC y en el entorno de creación. En el entorno de publicación hay una consola de moderación masiva similar a la que pueden acceder los miembros de la comunidad asignados la función de [moderador de la comunidad](users.md#publishenvironmentusersandgroups) para uno o más sitios de la comunidad.
 
 * [Miembros, grupos](members.md)
 
-   Las consolas Miembros y grupos se utilizan para administrar miembros de la comunidad y grupos de miembros que existen en el entorno de publicación desde el entorno de creación.
+  Las consolas Miembros y grupos se utilizan para administrar miembros de la comunidad y grupos de miembros que existen en el entorno de publicación desde el entorno de creación.
 
 * [Informes](reports.md)
 
-   En la consola Informes es donde se pueden generar informes sobre asignaciones, vistas de página y contenido publicado (UGC) cuando un sitio de la comunidad tiene [Adobe Analytics habilitado](sites-console.md#analytics). La consola solo está disponible en el entorno de creación.
+  En la consola Informes es donde se pueden generar informes sobre asignaciones, vistas de página y contenido publicado (UGC) cuando un sitio de la comunidad tiene [Adobe Analytics habilitado](sites-console.md#analytics). La consola solo está disponible en el entorno de creación.
 
 ## Consola Herramientas {#tools-console}
 

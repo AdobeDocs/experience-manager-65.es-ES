@@ -1,20 +1,16 @@
 ---
 title: Configuración de Analytics para funciones de Communities
-seo-title: Analytics Configuration for Communities Features
-description: Configurar Analytics para Communities
-seo-description: Configure analytics for Communities
-uuid: 5a083645-9de6-4ecd-a94e-a40143f92edf
+description: Obtenga información sobre cómo configurar Adobe Analytics para AEM Communities de modo que cuando un miembro interactúe con las funciones de comunidades admitidas, los eventos se envíen a Adobe Analytics.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2701'
 ht-degree: 4%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 4%
 
 ## Información general {#overview}
 
-Adobe Analytics y Adobe Experience Manager AEM () son soluciones de Adobe Marketing Cloud.
+Adobe Analytics y Adobe Experience Manager AEM () son soluciones de Adobe Experience Cloud.
 
 Adobe Analytics se puede configurar para AEM Communities de modo que, como miembro interactúe con las funciones de las Comunidades admitidas, se envíen eventos a Adobe Analytics desde el cual se generan los informes.
 
@@ -35,7 +31,7 @@ Además, el análisis es necesario para lo siguiente:
 
    * Informes sobre la comunidad [tendencias](/help/communities/trends.md)
    * Permitir que los visitantes del sitio ordenen por &quot;más visitados&quot;, &quot;más activos&quot;, &quot;más gustados&quot;
-   * Ver recuentos en listas UGC
+   * Ver recuentos en listas UGC (contenido generado por el usuario)
 
 * En el entorno de creación:
 
@@ -52,9 +48,9 @@ Entre las funciones compatibles de Communities se incluyen:
 
 En esta sección de la documentación se describe cómo conectar un grupo de informes de Analytics con funciones de Communities. Los pasos básicos son:
 
-1. [Replicar la clave criptográfica](#replicate-the-crypto-key) AEM para garantizar que el cifrado/descifrado se produzca correctamente en todas las instancias de la
+1. [Replicar la clave criptográfica](#replicate-the-crypto-key) AEM de modo que puede asegurarse de que el cifrado/descifrado se produzca correctamente en todas las instancias de
 1. Preparación de un Adobe Analytics [grupo de informes](#adobe-analytics-report-suite-for-video-reporting)
-1. AEM Creación de una lista de análisis de [cloud service](#aem-analytics-cloud-service-configuration) y [marco](#aem-analytics-framework-configuration)
+1. AEM Creación de una lista de análisis de [Cloud Service](#aem-analytics-cloud-service-configuration) y [marco](#aem-analytics-framework-configuration)
 
 1. [Habilitar Analytics](#enable-analytics-for-a-community-site) para un sitio de la comunidad
 1. [**Verificar**](#verify-analytics-to-aem-variable-mapping) AEM Asignación de variables de Analytics a
@@ -88,17 +84,17 @@ Para configurar las funciones de Analytics para Communities, es necesario trabaj
 
 ## Grupo de informes de Adobe Analytics para informes de vídeo {#adobe-analytics-report-suite-for-video-reporting}
 
-Uso del de Adobe Marketing Cloud [Administrador de grupos de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html), los grupos de informes de Analytics se pueden configurar para que un sitio de la comunidad pueda proporcionar informes para las funciones de las Comunidades.
+Uso del de Adobe Experience Cloud [Administrador de grupos de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html), los grupos de informes de Analytics se pueden configurar para que un sitio de la comunidad pueda proporcionar informes para las funciones de las Comunidades.
 
 Iniciando sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) con [Nombre de empresa y nombre de usuario](/help/communities/analytics.md#prerequisites), es posible configurar un grupo de informes nuevo o existente para que tenga:
 
-* [11 Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (eVars)
+* [11 Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) (eVars)
 
    * **`evar1`** mediante **`evar11`** activado
 
-   * Puede cambiar el propósito (cambiar el nombre) de las eVars existentes o crear otras nuevas para usarlas en las funciones de Communities
+   * Puede cambiar el propósito (cambiar el nombre) de las eVars existentes o crear otras que quiera usar para las funciones de Communities
 
-* [7 eventos de éxito](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) (eventos)
+* [7 eventos de éxito](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) (eventos)
 
    * **`event1`** mediante **`event7`** activado
 
@@ -106,7 +102,7 @@ Iniciando sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com
 
       * no **`Counter (no subrelations)`**
 
-   * Puede cambiar el propósito (cambiar el nombre) de eventos existentes o crear otros nuevos para usarlos para las funciones de Communities
+   * Puede reutilizar (cambiar el nombre) de eventos existentes o crear otros que se utilizarán para las funciones de Communities
 
 * [Administración de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
@@ -120,7 +116,7 @@ Iniciando sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com
       * Seleccione lo siguiente `Use Solution Variables`
       * Seleccione Guardar
 
-Si se usa un **nuevo grupo de informes** Sin embargo, tenga en cuenta que un nuevo grupo de informes solo puede tener 4 evars y 6 variables de evento, mientras que se requieren 11 evars y 7 variables de evento para las comunidades.
+Si se usa un **nuevo grupo de informes** Sin embargo, un nuevo grupo de informes solo puede tener 4 evars y 6 variables de evento, mientras que para las comunidades se requieren 11 evars y 7 variables de evento.
 
 Si se usa un **grupo de informes existente**, puede que sea necesario [modificación de la asignación de variables](#modifying-analytics-variable-mapping) antes de activar el marco de Analytics para un sitio de la comunidad.
 
@@ -146,7 +142,7 @@ Cuando Video Heartbeat Analytics tiene licencia, se crea un `Marketing Cloud Org
 
 Para habilitar los informes de Video Heartbeat después de [configuración del grupo de informes de Analytics para informes de vídeo](#adobe-analytics-report-suite-for-video-reporting):
 
-* Crear un [Analytics Cloud Service](#aem-analytics-cloud-service-configuration)
+* Crear un [servicio de Analytics Cloud](#aem-analytics-cloud-service-configuration)
 * Activar [Analytics para un sitio de la comunidad](#enable-analytics-for-a-community-site)
 * Asocie el `Marketing Cloud Org Id` con el sitio de la comunidad
 
@@ -154,13 +150,13 @@ El `Marketing Cloud Org Id` puede introducirse en el momento de [creación de si
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
-Cuando Video Heartbeat Analytics está habilitado, el código JavaScript (JS) del reproductor de vídeo crea una instancia del código de biblioteca de Video Heartbeat (también en JS) que gestiona toda la lógica para enviar actualizaciones de estado de vídeo a los servidores de seguimiento de vídeo de Analytics cada 10 segundos (no configurables) y, finalmente, enviar un informe acumulado de la sesión de vídeo a los servidores principales de Analytics.
+Cuando Video Heartbeat Analytics está habilitado, el código JavaScript (JS) del reproductor de vídeo crea una instancia del código de biblioteca de Video Heartbeat (también en JS). El código gestiona toda la lógica para enviar actualizaciones de estado de vídeo a los servidores de seguimiento de vídeo de Analytics cada 10 segundos (no configurable). Finalmente, envía un informe acumulado de la sesión de vídeo a los servidores principales de Analytics.
 
 Si no está habilitado, el código de latido de vídeo nunca se crea una instancia y solo el progreso del vídeo y el seguimiento de posición de reanudación se mantienen en SRP para la creación de informes.
 
 ## AEM Configuración del servicio de Analytics Cloud {#aem-analytics-cloud-service-configuration}
 
-Para crear una nueva integración de Analytics, que integre Adobe Analytics AEM con el sitio de la comunidad de, mediante la interfaz de usuario estándar en la instancia de autor:
+Para crear una integración de Analytics, que integre Adobe Analytics AEM con el sitio de la comunidad de, mediante la interfaz de usuario estándar en la instancia de autor:
 
 * Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Service]**
 * Desplazarse hacia abajo hasta **[!UICONTROL Adobe Analytics]**
@@ -170,7 +166,7 @@ Para crear una nueva integración de Analytics, que integre Adobe Analytics AEM 
 
 ### Cuadro de diálogo Crear configuración {#create-configuration-dialog}
 
-* Seleccionar `[+]` junto a **[!UICONTROL Configuraciones disponibles]** para crear una nueva configuración
+* Seleccionar `[+]` junto a **[!UICONTROL Configuraciones disponibles]** para poder crear una configuración.
 
 En el cuadro de diálogo Crear configuración, los valores que se van a introducir identifican la configuración.
 
@@ -183,7 +179,7 @@ Por ejemplo, introduzca *Análisis de comunidad*
 
 * **Nombre**
 
-  (Opcional) Si no se especifica, el nombre tendrá de forma predeterminada un nombre de nodo válido derivado del título.
+  (Opcional) Si no se especifica, el nombre predeterminado es un nombre de nodo válido derivado del título.
 Por ejemplo, introduzca *comunidades*
 
 * **Plantilla**
@@ -249,7 +245,7 @@ Para guardar la configuración:
 
 Después de configurar correctamente la conexión básica a Adobe Analytics, es necesario crear o editar un marco de trabajo para el sitio de la comunidad. AEM El propósito del marco de trabajo es asignar variables de características de las comunidades () a variables de Analytics (grupo de informes).
 
-* Seleccionar `[+]` junto a **[!UICONTROL Módulos disponibles]** para crear un nuevo marco
+* Seleccionar `[+]` junto a **[!UICONTROL Módulos disponibles]** para poder crear un marco de trabajo.
 
   ![analytics-framework](assets/analytics-framework.png)
 
@@ -259,7 +255,7 @@ Después de configurar correctamente la conexión básica a Adobe Analytics, es 
 
 * **Nombre**
 
-  (Opcional) Si no se especifica, el nombre tendrá de forma predeterminada un nombre de nodo válido derivado del título.
+  (Opcional) Si no se especifica, el nombre predeterminado es un nombre de nodo válido derivado del título.
 Por ejemplo, introduzca *comunidades*.
 
 * *Plantilla*
@@ -310,13 +306,13 @@ El Sidekick no es necesario y puede minimizarse para que no obstruya el acceso a
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
-El servicio en la nube y el marco de Analytics ya están completos. Las asignaciones se definirán una vez que se haya creado un sitio de la comunidad con este servicio de Analytics habilitado.
+El servicio en la nube y el marco de Analytics ya están completos. Las asignaciones se definen después de crear un sitio de comunidad con este servicio de Analytics habilitado.
 
 ## Habilitar Analytics para un sitio de la comunidad {#enable-analytics-for-a-community-site}
 
 ### Habilitar para el nuevo sitio de la comunidad {#enable-for-new-community-site}
 
-Para añadir el servicio en la nube de Analytics mientras [crear un nuevo sitio de la comunidad](/help/communities/sites-console.md):
+Para añadir el servicio Analytics Cloud mientras [crear un sitio de la comunidad](/help/communities/sites-console.md):
 
 * En el paso 3, en la sección [Pestaña ANALYTICS](/help/communities/sites-console.md#analytics):
    * Seleccione el **Habilitar Analytics** casilla de verificación.
@@ -326,7 +322,7 @@ Para añadir el servicio en la nube de Analytics mientras [crear un nuevo sitio 
 
 ### Habilitar para sitio de comunidad existente {#enable-for-existing-community-site}
 
-Para agregar el servicio en la nube de Analytics a una [sitio de la comunidad existente](/help/communities/sites-console.md#modifying-site-properties):
+Para agregar el servicio Analytics Cloud a una [sitio de la comunidad existente](/help/communities/sites-console.md#modifying-site-properties):
 
 * Vaya a **Comunidades > Sitios** consola.
 * Seleccione el icono de la comunidad Editar sitio.
@@ -339,7 +335,7 @@ Para agregar el servicio en la nube de Analytics a una [sitio de la comunidad ex
 
 ### Habilitar para sitios personalizados {#enable-for-customized-sites}
 
-Para que el seguimiento y la importación de Analytics funcionen correctamente en un sitio de la comunidad, agregue un elemento de página con el `scf-js-site-title` los atributos class y href deben estar presentes. Solo debe existir un elemento de este tipo en la página, como en una página sin modificar `sitepage.hbs` script para un sitio de la comunidad. El valor de `siteUrl` se extrae y se envía a Adobe Analytics como *ruta del sitio*.
+Para que el seguimiento y la importación de Analytics funcionen correctamente en un sitio de la comunidad, cree un elemento de página con la variable `scf-js-site-title` los atributos class y href deben estar presentes. Solo debe existir un elemento de este tipo en la página, como en una página sin modificar `sitepage.hbs` script para un sitio de la comunidad. El valor de `siteUrl` se extrae y se envía a Adobe Analytics como *ruta del sitio*.
 
 ```xml
 # present in default sitepage.hbs
@@ -353,7 +349,7 @@ Para que el seguimiento y la importación de Analytics funcionen correctamente e
 </div>
 ```
 
-Para un **sitio personalizado de la comunidad** que se superpone a `sitepage.hbs` , asegúrese de que el elemento esté presente. El `siteUrl` se establecerá cuando se represente en el servidor antes de entregarse al cliente.
+Para un **sitio personalizado de la comunidad** que se superpone a `sitepage.hbs` , asegúrese de que el elemento esté presente. El `siteUrl` se establece cuando se representa en el servidor antes de entregarse al cliente.
 
 Para un **AEM sitio genérico** que incluye componentes de Communities, pero no se crea con [asistente de creación de sitios](/help/communities/sites-console.md), es necesario añadir el elemento. El valor del href debe ser la ruta al sitio. Por ejemplo, si la ruta del sitio es `/content/my/company/en`, luego use:
 
@@ -384,9 +380,9 @@ Si se crean nuevos componentes personalizados que están instrumentados para Ana
 
 ### AEM Analytics asignado a variables de {#mapped-analytics-to-aem-variables}
 
-AEM Una vez que se guarde el sitio de la comunidad con Analytics habilitado y se seleccione el marco de trabajo de configuración de la nube, las variables de se asignarán automáticamente a las eVars y a los eventos de Analytics que comiencen con evar1 y event1, respectivamente, y se incrementen en 1.
+AEM Una vez guardado el sitio de la comunidad, con Analytics habilitado y el marco de trabajo de configuración de la nube seleccionado, las variables de la se asignan automáticamente a las eVars y los eventos de Analytics. Comienza con evar1 y event1, respectivamente, y se incrementa en 1.
 
-Si utiliza un grupo de informes existente que haya asignado cualquiera de las variables dentro de evar1 a evar11 y de event1 a event7, será necesario [AEM reasignación de las variables de](#modifying-analytics-variable-mapping) y restaure la asignación original.
+Si utiliza un grupo de informes existente que haya asignado cualquiera de las variables dentro de evar1 a evar11 y de event1 a event7, es necesario lo siguiente [AEM reasignación de las variables de](#modifying-analytics-variable-mapping) y restaure la asignación original.
 
 A continuación se muestra un ejemplo de asignaciones predeterminadas:
 
@@ -518,7 +514,7 @@ A continuación se muestra un ejemplo de asignaciones predeterminadas:
 
 **Ejemplos de valores de eVar:**
 
-* *[Tipo MIME](https://www.iana.org/assignments/media-types)*: video/mp4
+* *[Tipo MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)*: video/mp4
 * *[título del sitio de la comunidad](/help/communities/sites-console.md#step13asitetemplate)*: comunidades de Geometrixx
 * *[nombre de función de comunidad](/help/communities/functions.md)*: Foro
 * *[nombre del grupo de comunidad](/help/communities/creating-groups.md#creating-a-new-group)*: Senderismo
@@ -535,7 +531,7 @@ o *ruta del componente a seguir*: `/content/sites/<site name>/en/jcr:content/con
 
 AEM La asignación de eVars y eventos de Analytics a variables de se puede ver desde la configuración del marco de trabajo una vez que Analytics esté habilitado para un sitio de la comunidad.
 
-Una vez habilitado Analytics y antes de que se publique el sitio de la comunidad, la asignación puede modificarse en el marco de trabajo arrastrando la eVar o el evento de Analytics deseado desde el carril izquierdo y soltándolo en la fila correspondiente de la tabla de asignación.
+Después de habilitar Analytics y antes de publicar el sitio de la comunidad, la asignación puede modificarse en el marco de trabajo. Basta con arrastrar la eVar o el evento de Analytics deseado desde el carril izquierdo y soltarlo en la fila correspondiente de la tabla de asignación.
 
 Para evitar asignaciones duplicadas, asegúrese de quitar la eVar o el evento de Analytics reemplazado de la fila pasando el puntero sobre él y seleccionando la &quot;X&quot; que aparece a la derecha del elemento de variable de Analytics.
 
@@ -561,7 +557,7 @@ AEM Si las eVars y los eventos de las comunidades sobrescriben las asignaciones 
 
 ### AEM Verificar la asignación de Analytics a variables de {#verify-analytics-to-aem-variable-mapping}
 
-Es aconsejable verificar la asignación de variables antes de publicar el sitio de la comunidad, que también publica el marco y el servicio en la nube de Analytics.
+Es aconsejable comprobar la asignación de variables antes de publicar el sitio de la comunidad, que también publica el servicio y el marco de trabajo de Analytics Cloud.
 
 Consulte las secciones:
 
@@ -576,7 +572,7 @@ Consulte las secciones:
 >
 >* **`event1`** hasta **`event7`**
 >
->**A continuación, antes de publicar el sitio de la comunidad,** AEM Es importante restaurar la asignación preexistente y mover las variables de la comunidad que se asignaron automáticamente (cuando Analytics estaba habilitado para el sitio de la comunidad) a otras variables de Analytics. Esta reasignación debe ser coherente en todos los componentes de las comunidades.
+>**A continuación, antes de publicar el sitio de la comunidad,** restaure la asignación preexistente. AEM Mueva las comunidades que se asignaron variables automáticamente (cuando Analytics estaba habilitado para el sitio de la comunidad) a otras variables de Analytics. Esta reasignación debe ser coherente en todos los componentes de las comunidades.
 >
 >Si no lo hace, puede causar una pérdida de datos irrecuperable.
 
@@ -602,7 +598,7 @@ Para ello, siga las instrucciones en [Replicar la clave criptográfica](/help/co
 
 ### Publicar sitio de la comunidad y servicio de Analytics Cloud {#publish-community-site-and-analytics-cloud-service}
 
-Una vez habilitado el servicio en la nube de Analytics para un sitio de la comunidad y, si es necesario, la variable [AEM se ha ajustado la asignación de Analytics a variables de](#mapped-analytics-to-aem-variables), es necesario replicar la configuración en el entorno de publicación mediante [volver a publicar el sitio de la comunidad](/help/communities/sites-console.md#publishing-the-site).
+Una vez habilitado el servicio Analytics Cloud para un sitio de la comunidad y, si es necesario, la variable [AEM se ha ajustado la asignación de Analytics a variables de](#mapped-analytics-to-aem-variables), duplique la configuración en el entorno de publicación mediante [volver a publicar el sitio de la comunidad](/help/communities/sites-console.md#publishing-the-site).
 
 ## Obtener informes de Analytics {#obtaining-reports-from-analytics}
 
@@ -637,7 +633,7 @@ El tema del foro es actualmente el único ejemplo de esta personalización:
 * En el editor principal, inicie sesión con privilegios administrativos.
 * Vaya a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
-* En el nodo jcr:content de la raíz del idioma (por ejemplo, `/content/sites/engage/en/jcr:content),`vaya al componente configurado para los informes de Analytics.
+* En el `jcr:content` nodo de la raíz del idioma (por ejemplo, `/content/sites/engage/en/jcr:content`), vaya al componente configurado para los informes de Analytics.
 Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Observe los periodos de tiempo creados:
@@ -649,13 +645,13 @@ Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 * Observe el `total`nodo.
 
    * Modificación del **`interval`** anula el intervalo del importador de informes.
-   * El valor se establece en 4 horas (14400 segundos) en segundos.
+   * El valor se establece en cuatro horas (14400 segundos) en segundos.
 
 ![informe-componente](assets/component-report.png)
 
 ## Administración de datos de usuario en Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario. Para obtener más información, consulte [Envío de solicitudes de acceso y eliminación](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario. Para obtener más información, consulte [Envío de solicitudes de acceso y eliminación](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=es).
 
 ## Recursos {#resources}
 
