@@ -2,15 +2,9 @@
 title: AEM Enriquecimiento de datos de producto con contenido asociado de la
 description: Descubra cómo los especialistas en marketing pueden enriquecer los datos de productos con contenido asociado de Adobe Experience Manager añadiendo contenido de marketing de forma dinámica a las páginas de productos. Esto abre una amplia gama de posibilidades para que los especialistas en marketing se dirijan a páginas de productos específicas con contenido adicional como imágenes y vídeo.
 sub-product: Commerce
-version: 6.5
-doc-type: feature-video
-activity: use
-audience: marketer
 feature: Commerce Integration Framework
-kt: 7065
-thumbnail: 333205.jpg
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: a600acb7d65fbfa1806ef582642a6c5ac7859890
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 2%

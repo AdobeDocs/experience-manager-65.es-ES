@@ -1,8 +1,8 @@
 ---
-title: AEM Migración al complemento Marco de integración de comercio de (CIF)
-description: AEM Migración del complemento Commerce Integration Framework (CIF) de la versión antigua a la versión de la plataforma de integración de comercio de la versión de
+title: AEM Migración al complemento Commerce integration framework CIF de la ()
+description: AEM Cómo migrar al complemento de Commerce integration framework CIF de () desde una versión antigua.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 4%
@@ -13,17 +13,17 @@ ht-degree: 4%
 
 Esta guía ayuda a identificar las áreas que debe actualizar para la migración del complemento de Experience Manager.
 
-## Complemento CIF
+## CIF Complemento de
 
-AEM El complemento CIF está disponible para la versión 6.5 de a través de la [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Es compatible y proporciona las mismas funciones que el complemento CIF para Experience Manager as a Cloud Service.
+CIF AEM El complemento de está disponible para la versión 6.5 de a través de la [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). CIF Es compatible y proporciona las mismas características que el complemento de la para Experience Manager as a Cloud Service.
 
 Consulte [AEM Introducción a Contenido y comercio de](getting-started.md).
 
-Para apoyar proyectos que implementen CIF, Adobe proporciona [AEM Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components).
+CIF Para admitir la implementación de proyectos, el Adobe de proporciona lo siguiente: [AEM Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components).
 
 ## Catálogo de productos
 
-El complemento CIF no admite la importación de datos del catálogo de productos. Al usar las entidades principales de complementos del CIF, las solicitudes de productos y catálogos se realizan bajo demanda mediante llamadas en tiempo real a una solución de comercio externo. Vaya al capítulo Integración para obtener más información sobre la integración de una solución de comercio.
+CIF El complemento no admite la importación de datos del catálogo de productos de. CIF Al usar las entidades de seguridad de complemento de la aplicación, las solicitudes de productos y catálogos se realizan bajo demanda mediante llamadas en tiempo real a una solución de comercio externo. Vaya al capítulo Integración para obtener más información sobre la integración de una solución de comercio.
 
 >[!TIP]
 >
@@ -31,7 +31,7 @@ El complemento CIF no admite la importación de datos del catálogo de productos
 
 ## AEM Experiencias del catálogo de productos con renderización de
 
-Si utiliza el modelo de catálogo con CIF clásico, debe actualizar el flujo de trabajo del catálogo de productos. AEM El complemento CIF ahora procesa las experiencias del catálogo de productos sobre la marcha mediante plantillas de catálogo de productos de la aplicación de la versión de la aplicación de la documentación de la aplicación de la documentación de producto de la aplicación. Ya no se requiere replicación de datos o páginas de productos.
+CIF Si utiliza el modelo de catálogo con la versión clásica de los productos, debe actualizar el flujo de trabajo del catálogo de productos. CIF AEM El complemento ahora procesa experiencias del catálogo de productos sobre la marcha utilizando plantillas de catálogo de productos de la aplicación de la manera más rápida y sencilla Ya no se requiere replicación de datos o páginas de productos.
 
 ## Interacción de datos y compras no almacenables en caché
 

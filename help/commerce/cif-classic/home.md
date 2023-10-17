@@ -1,28 +1,27 @@
 ---
-title: AEM CIF Classic de
-description: AEM Recursos informativos y vínculos a la documentación de CIF Classic
+title: AEM CIF Classic
+description: Recursos informativos y vínculos a la documentación de Adobe Experience Manager CIF Classic.
 exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '54'
 ht-degree: 5%
 
 ---
 
-# AEM CIF Classic de {#commerce-guide}
+# AEM CIF Classic {#commerce-guide}
 
-AEM En esta página se muestran los recursos informativos relacionados con CIF clásico de la comunidad de.
+AEM CIF En esta página se muestran los recursos informativos relacionados con la aplicación de la versión de Classic.
 
 >[!NOTE]
 >
->CIF Classic está en modo de mantenimiento.
+>CIF La versión clásica de la está en modo de mantenimiento.
 >
->* Los nuevos proyectos deben utilizar [AEM CIF DE LA](/help/commerce/home.md).
->* El CIF clásico existente debe [AEM migrar a CIF de la](/help/commerce/cif/migration.md).
+>* Los nuevos proyectos deben utilizar [AEM CIF](/help/commerce/home.md).
+>* CIF El clásico existente debería [AEM CIF migrar a la](/help/commerce/cif/migration.md).
 >
 
-
-## Artículos clave del CIF clásico {#key-articles}
+## CIF Artículos Clásicos Clave {#key-articles}
 
 * [Conceptos ](administering/concepts.md)
 * [Administración](administering/generic.md)

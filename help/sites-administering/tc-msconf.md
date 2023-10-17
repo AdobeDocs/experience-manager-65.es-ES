@@ -1,18 +1,13 @@
 ---
 title: Conectando con Microsoft&reg; Translator
-description: AEM Aprenda a conectarse a Microsoft&reg; Translator de forma.
-uuid: 5e3916ec-36a0-4d31-94ff-c340a462411a
+description: Aprenda a conectar Adobe Experience Manager a Microsoft&reg; Translator.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Language Copy
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 11%
+source-wordcount: '608'
+ht-degree: 13%
 
 ---
 
@@ -31,7 +26,7 @@ Después de crear la configuración, debe [activarlo](/help/sites-administering/
 
 El siguiente procedimiento utiliza la interfaz de usuario táctil optimizada para crear una configuración de Microsoft® Translator.
 
-1. En el carril, toque o haga clic en Herramientas > Cloud Services.
+1. En el carril, toque o haga clic en Herramientas > Cloud Service.
 1. En el área de Microsoft® Translator, seleccione Mostrar configuraciones.
 1. Haga clic en + junto a Configuraciones disponibles.
 
@@ -59,7 +54,7 @@ Esta configuración de Microsoft® Translator está optimizada para utilizarse c
 
 Las páginas de configuración de Microsoft® Translation proporcionan un práctico vínculo al sitio web de Microsoft® para obtener una suscripción de cuenta adecuada para los sistemas de producción.
 
-1. En el carril, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Services.
+1. En el carril, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
 1. En el área de Microsoft® Translator, toque o haga clic en Mostrar configuraciones y, a continuación, toque o haga clic en Licencia de prueba de Microsoft® Translator (Microsoft® Translation Configuration).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
@@ -72,7 +67,7 @@ Las páginas de configuración de Microsoft® Translation proporcionan un práct
 
 Las páginas de configuración de Microsoft® Translation proporcionan un práctico vínculo al sitio web de Microsoft® para personalizar el motor de Microsoft® Translator. ([https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/](https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/))
 
-1. En el carril, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Services.
+1. En el carril, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
 1. En el área de Microsoft® Translator, toque o haga clic en Mostrar configuraciones y, a continuación, toque o haga clic en la configuración que desea personalizar.
 1. En la página de configuración, haga clic en Personalizar traductor. Utilice la página web de Microsoft® que se abre para personalizar el servicio.
 

@@ -1,20 +1,13 @@
 ---
 title: Preparación del contenido para su traducción
-seo-title: Preparing Content for Translation
-description: Aprenda a preparar el contenido para la traducción.
-seo-description: Learn how to prepare content for translation.
-uuid: 369630a8-2ed7-48db-973e-bd8213231d49
+description: Aprenda a preparar el contenido para la traducción en Adobe Experience Manager.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 66%
+source-wordcount: '685'
+ht-degree: 65%
 
 ---
 

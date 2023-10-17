@@ -1,22 +1,22 @@
 ---
 title: Recursos para nuevos usuarios de Adobe Experience Manager
-description: Preguntas, respuestas y recursos para usuarios nuevos de Adobe Experience Manager
+description: Preguntas, respuestas y recursos para usuarios nuevos de Adobe Experience Manager 6.5.
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
 # AEM Recursos para nuevos usuarios de la {#resources-for-new-aem-users}
 
-## ¿Qué es Adobe Experience Manager AEM () y dónde obtener documentación? {#what-is-aem}
+## ¿Qué es Adobe Experience Manager AEM () y dónde obtener la documentación? {#what-is-aem}
 
 Adobe Experience Manager AEM () es un sistema cliente-servidor basado en la web para crear, administrar e implementar sitios web comerciales y servicios relacionados. Combina varias funciones de nivel de infraestructura y de nivel de aplicación en un único paquete integrado.
 
 * [Consulte la documentación para obtener más información](/help/sites-deploying/home.md)
-* [AEM Actualizaciones recientes de la documentación de la](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [AEM Actualizaciones recientes de la documentación de la](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 
 ## AEM ¿Dónde puedo descargar el software de la? {#download}
 
@@ -28,7 +28,7 @@ Visita [AEM Centro de mantenimiento de](https://experienceleague.adobe.com/docs/
 
 ## AEM ¿Cómo obtengo el apoyo oficial para el trabajo de la? {#official-support}
 
-AEM Como cliente con licencia, puede obtener asistencia para la asistencia de los clientes de la siguiente manera: [Equipo del Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support). También puede hacernos preguntas en el [AEM Comunidad de](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) o en el identificador de Twitter de AdobeExpCare en `https://twitter.com/adobeexpcare`.
+AEM Como cliente con licencia, puede obtener asistencia para la asistencia de los clientes de la siguiente manera: [Equipo del Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support). También puede hacernos preguntas en el [AEM Comunidad de](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) o en el controlador de Twitter de AdobeExpCare en `https://twitter.com/adobeexpcare`.
 
 ## AEM ¿Dónde se encuentra la documentación de otras versiones de? {#versions}
 

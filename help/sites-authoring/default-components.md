@@ -1,15 +1,11 @@
 ---
 title: Componentes predeterminados
 description: Adobe Experience Manager incluye varios componentes listos para usar que proporcionan una amplia funcionalidad para creadores de sitios web.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 18%
+ht-degree: 37%
 
 ---
 
@@ -21,13 +17,13 @@ Los componentes están disponibles cuando [edición de una página](/help/sites-
 
 >[!NOTE]
 >
->AEM En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación estándar de la instalación de la aplicación de la versión de la aplicación de la versión de la aplicación de.
+>En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación de AEM estándar.
 >
 >Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 
 ## Uso general   {#general-usage}
 
-Los componentes están disponibles en la **Componentes** del panel lateral del editor de páginas cuando [edición de una página](/help/sites-authoring/editing-content.md).
+Los componentes están disponibles en la pestaña **Componentes** del panel lateral del editor de página al [editar una página](/help/sites-authoring/editing-content.md).
 
 Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la página. A continuación, puede editarlo mediante:
 
@@ -36,7 +32,7 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 
 * [Editar contenido: modo pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de página](/help/sites-authoring/editing-content.md).
+Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
 Los componentes se ordenan según varias categorías denominadas grupos de componentes. Algunos ejemplos de estos grupos de componentes son:
 
 * **We.Retail**: incluye los componentes principales procesados como proxy para su uso con [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md).

@@ -1,13 +1,11 @@
 ---
 title: AEM Guía del usuario de funciones de.5
-seo-title: AEM 6.5 Capabilities User Guide
-description: AEM Una visión general de las capacidades esenciales de la versión 6.5 de la
-seo-description: An overview of the essential capabilities of AEM 6.5
+description: Una descripción general de las funciones esenciales de Adobe Experience Manager 6.5.
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 66%
+source-wordcount: '131'
+ht-degree: 65%
 
 ---
 
@@ -15,7 +13,7 @@ ht-degree: 66%
 
 ## AEM Fundamento de {#aem-foundation}
 
-[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida nuestra implementación en la nube de Adobe Managed Services.
+[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida nuestra implementación en la nube de Managed Services de Adobe.
 
 [Obtenga información sobre cómo administrar un proyecto de AEM](/help/managing/home.md).
 

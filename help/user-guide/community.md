@@ -1,11 +1,11 @@
 ---
 title: AEM La comunidad de
-description: AEM La comunidad de
+description: Descubra y cree conexiones con la comunidad de Adobe Experience Manager.
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 6%
+source-wordcount: '323'
+ht-degree: 5%
 
 ---
 

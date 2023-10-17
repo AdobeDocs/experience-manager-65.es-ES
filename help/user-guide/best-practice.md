@@ -1,10 +1,8 @@
 ---
 title: AEM Prácticas recomendadas de.5
-seo-title: AEM 6.5 Best Practices
-description: AEM Recursos para prácticas recomendadas, solución de problemas y formación para la versión 6.5 de la
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
+description: AEM Recursos para prácticas recomendadas, solución de problemas y formación para la versión 6.5 de la.
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 4%

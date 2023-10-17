@@ -3,9 +3,8 @@ title: AEM Introducción a la extensión de para PWA Studio
 description: AEM Obtenga información sobre cómo implementar un proyecto de comercio y contenido sin encabezado de con PWA Studio.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -93,15 +92,15 @@ AEM Siga la documentación de Fragmentos de contenido de para configurar un punt
 
 * Política de uso compartido de recursos de origen cruzado de Adobe Granite (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Configure las variables `allowedorigin` al nombre de host completo de la aplicación de PWA.
+  Configure las variables `allowedorigin` al nombre de host completo de la aplicación de PWA.
 
-   Ejemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Ejemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro de referente de Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Establezca la propiedad allow.hosts en el nombre de host de la aplicación PWA.
+  Establezca la propiedad allow.hosts en el nombre de host de la aplicación PWA.
 
-   Ejemplo: pwa-studio-test-vflyn.local.pwadev
+  Ejemplo: pwa-studio-test-vflyn.local.pwadev
 
 Puede encontrar ejemplos completos de ambas configuraciones aquí: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
@@ -109,7 +108,7 @@ Para mostrar el punto final de GraphQL, Adobe preparó algunos modelos y datos d
 
 ## Usos {#how-to-use}
 
-Esta extensión se considera una implementación de ejemplo de cómo conectar una aplicación PWA Studio AEM con la aplicación para recuperar y procesar contenido a través de GraphQL.
+Esta extensión se considera una implementación de ejemplo de cómo conectar una aplicación PWA Studio AEM con la que se ha creado un vínculo para recuperar y procesar contenido a través de GraphQL.
 
 Según el caso de uso, desea crear sus propios modelos de fragmento de contenido personalizados, que resultan en un esquema de GraphQL personalizado que luego pueden consumir sus propios componentes de React.
 

@@ -1,21 +1,21 @@
 ---
 title: AEM Notas de la versión de Content and Commerce de 2020
-description: AEM Notas de la versión de Content and Commerce de 2020
+description: Notas de la versión de Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1354'
 ht-degree: 13%
 
 ---
 
-# Información general sobre la versión de Commerce Integration Framework GitHub
+# Información general sobre la versión de Commerce integration framework GitHub
 
 ## Fecha de versión: noviembre de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1.6.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 1.6.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 1.6.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de CIF Venia | 2020.12.01 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -37,7 +37,7 @@ ht-degree: 13%
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1.5.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 1.5.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 1.5.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de CIF Venia | 2020.10.27 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -45,7 +45,7 @@ ht-degree: 13%
 
 * AEM Se ha agregado un nuevo componente de carrusel de categoría para permitir a los usuarios empresariales arrastrar y soltar este componente en páginas de contenido para enriquecer las páginas de contenido con datos de comercio.
 
-* Los componentes principales del CIF se ampliaron para hidratar la capa de datos del cliente del Adobe mediante el envío de datos comerciales. La capa de datos del cliente de Adobe es un método estandarizado para recopilar datos y comunicar los datos a los servidores de informes y análisis digital. Para obtener más información, consulte [Capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* CIF Los componentes principales se ampliaron para hidratar la capa de datos del cliente de Adobe mediante el envío de datos comerciales. La capa de datos del cliente de Adobe es un método estandarizado para recopilar datos y comunicar los datos a los servidores de informes y análisis digital. Para obtener más información, consulte [Capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Las páginas de detalles de producto y listas de productos se han ampliado para rellenar automáticamente los metadatos de SEO (como título, metadescripción o palabras clave meta) configurados desde la interfaz de usuario de administración de Adobe Commerce
 
@@ -55,7 +55,7 @@ ht-degree: 13%
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1.4.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 1.4.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 1.4.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de CIF Venia | 2020.10.2 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -81,7 +81,7 @@ ht-degree: 13%
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1.3.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 1.3.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 1.3.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de CIF Venia | 2020.9.2 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -89,7 +89,7 @@ ht-degree: 13%
 
 * Se ha agregado un componente Ruta de exploración para admitir páginas de contenido y comercio.
 
-* Se ha añadido la pestaña Comercio en Propiedades de página para exponer las propiedades del CIF para la página de aterrizaje y los fragmentos de experiencias.
+* CIF Se ha añadido la pestaña Comercio en Propiedades de página para exponer las propiedades de la página de aterrizaje y los fragmentos de experiencias.
 
 * El componente Barra de búsqueda se ha mejorado para que admita la opción de mostrar el texto del marcador de posición
 
@@ -105,19 +105,19 @@ ht-degree: 13%
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1.2.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 1.2.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 1.2.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de CIF Venia | 2020.8.14 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novedades {#what-is-new-july}
 
-* El sitio de referencia de CIF Venia se extrajo del repositorio de tipo de archivo del CIF y ahora es un repositorio independiente de GitHub.
+* CIF CIF El sitio de referencia de Venia se extrajo del repositorio de tipo de archivo de GitHub y ahora es un repositorio independiente de GitHub.
 
-* AEM El tipo de archivo CIF se ha combinado con el tipo de archivo del proyecto. Para nuevos proyectos, utilice [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) como punto de partida.
+* CIF AEM Tipo de archivo de combinado con el tipo de archivo del proyecto de. Para nuevos proyectos, utilice [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) como punto de partida.
 
 * Se agregó la administración de la libreta de direcciones para permitir que los usuarios que iniciaron sesión administren sus direcciones.
 
-* La IU de configuración del CIF en la nube admite acciones de publicación/cancelación de publicación.
+* CIF La interfaz de usuario de configuración de nube de admite acciones de publicación/cancelación de publicación.
 
 ### Qué se ha mejorado {#what-is-improved-july}
 
@@ -131,19 +131,19 @@ ht-degree: 13%
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1.1.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 1.1.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 1.1.1 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Tipo de archivo CIF | 0.11.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novedades {#what-is-new-june}
 
-Esta es la primera versión de los componentes principales del CIF que se admite en Adobe Experience Manager.
+CIF Esta es la primera versión de los componentes principales de la aplicación que se admite en Adobe Experience Manager.
 
 * Se ha añadido la ordenación de productos en la página Lista de productos y en la página Resultados de búsqueda para permitir que los compradores ordenen en función de la relevancia, el precio y el nombre del producto.
 
 * Se ha añadido el filtrado de categorías como faceta para permitir que los compradores filtren según la categoría.
 
-* Se ha agregado la asignación de usuarios de servicio como parte del requisito de seguridad para garantizar el acceso a /conf mediante usuarios de servicio y no manipulando directamente las ACL. Los componentes principales del CIF ahora deben utilizar un usuario de servicio para acceder a las configuraciones.
+* Se ha agregado la asignación de usuarios de servicio como parte del requisito de seguridad para garantizar el acceso a /conf mediante usuarios de servicio y no manipulando directamente las ACL. CIF Los componentes principales ahora deben utilizar un usuario de servicio para acceder a las configuraciones de.
 
 ### Qué se ha mejorado {#what-is-improved-june}
 
@@ -159,7 +159,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1.0.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 1.0.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 1.0.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Tipo de archivo CIF | 0.11.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
@@ -183,13 +183,13 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 0.10.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 0.10.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 0.10.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Tipo de archivo CIF | 0.10.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novedades {#what-is-new-april}
 
-* Los ajustes de configuración para el conector del CIF están unificados y simplificados. Para obtener más información, cierre de compra [Primeros pasos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es) o [AEM Nueva configuración del proyecto de CIF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es)
+* CIF Los ajustes de configuración para el conector de están unificados y simplificados. Para obtener más información, cierre de compra [Primeros pasos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es) o [AEM CIF Nueva configuración del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es)
 
 ### Qué se ha mejorado {#what-is-improved-april}
 
@@ -207,7 +207,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 0.9.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 0.9.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 0.9.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Tipo de archivo CIF | 0.9.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
@@ -233,7 +233,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 0.8.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Conector de | 0.8.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principales del CIF | 0.8.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Tipo de archivo CIF | 0.7.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
@@ -243,7 +243,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 * Cambiar la funcionalidad de contraseña disponible en mi cuenta.
 
-* AEM Compatibilidad con i18n para componentes principales del lado del servidor del CIF de la.
+* AEM CIF Compatibilidad con i18n para componentes principales del lado del servidor de la.
 
 * El componente de producto relacionado genérico está disponible.
 

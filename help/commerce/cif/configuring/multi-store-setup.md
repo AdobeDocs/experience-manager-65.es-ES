@@ -6,10 +6,8 @@ doc-type: technical-video
 activity: setup
 audience: administrator
 feature: Commerce Integration Framework
-kt: 3046
-thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 18%
@@ -18,7 +16,7 @@ ht-degree: 18%
 
 # Configuración de varias tiendas de Commerce {#multi-store}
 
-AEM AEM Los componentes principales del CIF de la se pueden utilizar en varias estructuras del sitio de la aplicación y la implementación de cliente de GraphQL subyacente se puede conectar a diferentes tiendas de Adobe Commerce o vistas de tiendas. Esto permite que los proyectos implementen configuraciones complejas de varias tiendas y sitios.
+AEM CIF AEM Los componentes principales de la se pueden utilizar en varias estructuras de sitio de la y la implementación de cliente de GraphQL subyacente se puede conectar a diferentes tiendas de Adobe Commerce o vistas de tiendas. Esto permite que los proyectos implementen configuraciones complejas de varias tiendas y sitios.
 
 Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la tienda Adobe Commerce con Adobe Experience Manager Sites.
 
@@ -28,7 +26,7 @@ AEM Las funciones de administración de varios sitios de Live Copy y de copia de
 
 AEM La configuración recomendada es utilizar una relación 1:1 entre el sitio de y la vista de la tienda de Adobe Commerce.
 
-AEM AEM Para conectar un sitio de y los componentes principales de CIF de manera que también se conecten a una vista de tienda dedicada, siga los pasos a continuación:
+AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una vista de tienda dedicada, siga los pasos a continuación:
 
 ## Configuración {#configuration}
 

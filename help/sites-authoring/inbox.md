@@ -1,17 +1,11 @@
 ---
 title: Bandeja de entrada para administrar tareas
-description: Administrar las tareas con la bandeja de entrada.
-uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+description: Administrar las tareas con la bandeja de entrada de Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 28%
+source-wordcount: '1148'
+ht-degree: 42%
 
 ---
 
@@ -32,7 +26,7 @@ AEM Puede recibir notificaciones de varias áreas de la, incluidos flujos de tra
 
    * elementos de error, para permitir que los administradores reintenten el paso con errores.
 
-Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá verlas y realizar acciones.
+Estas notificaciones las recibe en su propia bandeja de entrada, donde puede verlas y realizar acciones.
 
 >[!NOTE]
 >
@@ -50,7 +44,7 @@ Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá ver
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}
 
-Desde cualquiera de las consolas, el número actual de elementos de la bandeja de entrada se muestra en el encabezado. El indicador también se puede abrir para proporcionar acceso rápido a las páginas que requieren acciones o acceso a la bandeja de entrada:
+Desde cualquiera de las consolas, en el encabezado se muestra el número actual de elementos de la bandeja de entrada. El indicador también se puede abrir para proporcionar acceso rápido a las páginas que requieren acciones o acceso a la bandeja de entrada:
 
 ![wf-80](assets/wf-80.png)
 
@@ -109,7 +103,7 @@ Puede hacer lo siguiente:
 
 ### Bandeja de entrada - Configuración {#inbox-view-settings}
 
-Para ambas vistas (Lista y Calendario) puede definir la configuración:
+Para ambas vistas (Lista y Calendario) puede definir la siguiente configuración:
 
 * **Vista de calendario**
 
@@ -126,7 +120,7 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
   Para **Vista de lista** puede configurar el mecanismo de ordenación:
 
    * **Campo de ordenación**
-   * **Orden**
+   * **Orden de clasificación**
 
   ![wf-83](assets/inbox-settings.png)
 
@@ -167,7 +161,7 @@ La opción Control de administración solo está visible para los miembros del `
 >Aunque es posible seleccionar más de un elemento, las acciones solo se pueden realizar en un elemento a la vez.
 
 
-1. Para realizar una acción sobre un elemento, seleccione la miniatura del elemento correspondiente. Los iconos de las acciones aplicables a ese elemento se mostrarán en la barra de herramientas:
+1. Para realizar una acción sobre un elemento, seleccione la miniatura correspondiente al elemento en cuestión. Los iconos de las acciones aplicables a ese elemento se mostrarán en la barra de herramientas:
 
    ![wf-84](assets/wf-84.png)
 
@@ -189,7 +183,7 @@ La opción Control de administración solo está visible para los miembros del `
    >
    >Para obtener más información, consulte lo siguiente:
    >
-   >* Elementos de flujo de trabajo - [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
+   >* Elementos de flujo de trabajo: [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
 
 1. En función del elemento seleccionado, se inicia una acción; por ejemplo:
 
@@ -209,9 +203,9 @@ La opción Control de administración solo está visible para los miembros del `
 
 ## Creación de una tarea {#creating-a-task}
 
-Desde la bandeja de entrada puede crear tareas:
+Desde la bandeja de entrada puede crear las siguientes tareas:
 
-1. Seleccionar **Crear**, entonces **Tarea**.
+1. Seleccione **Crear** y a continuación, **Tarea**.
 1. Rellene los campos necesarios en la **Básico** y **Avanzadas** pestañas; solo las pestañas **Título** es obligatorio, el resto son opcionales:
 
    * **Básico**:
@@ -222,7 +216,7 @@ Desde la bandeja de entrada puede crear tareas:
       * **Contenido**; similar a Carga útil, es una referencia de la tarea a una ubicación del repositorio
       * **Descripción**
       * **Prioridad de tareas**
-      * **Fecha inicial**
+      * **Fecha de inicio**
       * **Fecha de vencimiento**
 
    ![wf-86](assets/wf-86.png)
@@ -237,9 +231,9 @@ Desde la bandeja de entrada puede crear tareas:
 
 ## Creación de un proyecto    {#creating-a-project}
 
-Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projects.md) en función de esa tarea:
+Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projects.md) basado en esa tarea:
 
-1. Seleccione la tarea adecuada tocando o haciendo clic en la miniatura.
+1. Seleccione la tarea adecuada pulsando o haciendo clic en la miniatura.
 
    >[!NOTE]
    >
@@ -248,16 +242,16 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projec
    >Los elementos de trabajo (de un flujo de trabajo) no se pueden utilizar para crear un proyecto.
 
 1. Seleccione **Crear proyecto** en la barra de herramientas para abrir el asistente.
-1. Seleccione la plantilla adecuada y luego **Siguiente**.
+1. Seleccione la plantilla apropiada y, a continuación, **Siguiente**.
 1. Especifique las propiedades necesarias:
 
    * **Básico**
 
       * **Título**
       * **Descripción**
-      * **Fecha inicial**
+      * **Fecha de inicio**
       * **Fecha de vencimiento**
-      * **Usuario** Función y
+      * **Usuario** y función
 
    * **Avanzado**
 
@@ -267,7 +261,7 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projec
    >
    >Consulte [Creación de un proyecto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obtener información completa.
 
-1. Seleccionar **Crear** para confirmar la acción.
+1. Seleccione **Crear** para confirmar la acción.
 
 ## Filtrado de elementos en la bandeja de entrada AEM    {#filtering-items-in-the-aem-inbox}
 

@@ -1,24 +1,19 @@
 ---
 title: Trabajo con versiones de páginas de contenido
-description: Crear, comparar y restaurar versiones de una página
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Crear, comparar y restaurar versiones de una página en Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 37%
+source-wordcount: '1501'
+ht-degree: 65%
 
 ---
 
 # Uso de versiones de página  {#working-with-page-versions}
 
-El control de versiones crea una &quot;captura de pantalla&quot; de una página en un momento específico. Con el control de versiones, puede realizar las siguientes acciones:
+Al generar una versión, se crea una “instantánea” de una página en un momento determinado. Con las versiones, se pueden realizar las siguientes operaciones:
 
-* Cree una versión de una página.
+* Crear una versión de la página.
 * Restaurar una página a una versión anterior; por ejemplo:
    * para deshacer un cambio realizado en la página.
 * Comparar la versión actual de una página con una versión anterior:
@@ -40,14 +35,14 @@ Puede crear una versión de su recurso desde:
 
    ![Cronología: guardar como versión](assets/screen-shot_2019-03-05at112335.png)
 
-1. Seleccionar **Guardar como versión**.
+1. Seleccione **Guardar como versión**.
 1. Introduzca una **Etiqueta** y **Comentario** si es necesario.
 
    ![Crear versión: añadir etiqueta y comentario](assets/chlimage_1-42.png)
 
 1. Confirme la nueva versión con **Crear**.
 
-   La información de la cronología se actualiza para indicar la nueva versión.
+   La información en la cronología se actualizará para indicar la nueva versión.
 
 ### Crear una nueva versión: creación con un recurso seleccionado {#creating-a-new-version-create-with-a-selected-resource}
 
@@ -89,7 +84,7 @@ Una vez creada una versión de la página, existen varios métodos para restable
 >1. Cree una versión de una página cualquiera.
 >1. Las etiquetas y los nombres de nodo iniciales serán 1.0, 1.1, 1.2, etc.
 >1. Restablezca la primera versión; en este caso, 1.0.
->1. Vuelva a crear versiones.
+>1. Vuelva a crear las versiones.
 >1. Las etiquetas y los nombres de nodo generados ahora serán 1.0.0, 1.0.1, 1.0.2, etc.
 
 ### Volver a esta versión {#revert-to-a-version}
@@ -98,12 +93,12 @@ Hasta **Revertir** la página seleccionada a una versión anterior:
 
 1. Desplácese hasta mostrar la página que desea revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**. Se muestran las versiones de página de la página seleccionada.
+1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
 1. Seleccione la versión a la que desea revertir. Se muestran las opciones posibles:
 
    ![Volver a esta versión](assets/screen-shot_2019-03-05at112505.png)
 
-1. Seleccionar **Volver a esta versión**. La versión seleccionada se restaura y la información se actualiza en la cronología.
+1. Seleccione **Revertir a esta versión**. La versión seleccionada se restaura y la información se actualiza en la cronología.
 
 ### Restaurar versión {#restore-version}
 
@@ -126,7 +121,7 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
 
    ![Restaurar versión: lista de todas las páginas de la carpeta](/help/sites-authoring/assets/versions-restore-version-01.png)
 
-1. Para una página específica, utilice el selector desplegable en **RESTAURAR A LA VERSIÓN** para seleccionar la versión requerida para esa página.
+1. Para una página específica, utilice el selector desplegable en **RESTAURAR A VERSIÓN** para seleccionar la versión requerida para esa página.
 
    ![Restaurar versión: seleccionar versión](/help/sites-authoring/assets/versions-restore-version-02.png)
 
@@ -146,7 +141,7 @@ Este método puede utilizarse para restaurar una versión de un árbol en una fe
 
 1. Vaya a, y [seleccione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Seleccione **Restaurar**, luego **Restaurar árbol** desde la parte superior de la [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar). Se muestra la última versión del árbol:
+1. Seleccione **Restaurar**, luego **Restaurar árbol** desde la parte superior de la [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar). Se mostrará la última versión del árbol:
 
    ![Restaurar árbol](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
@@ -171,17 +166,17 @@ Puede obtener una vista previa de una versión específica:
 
    ![Seleccione la versión que desea previsualizar](assets/screen-shot_2019-03-05at112505-1.png)
 
-1. Seleccionar **Previsualizar**. La página se muestra en una nueva pestaña.
+1. Seleccione **Vista previa**. La página se muestra en una nueva pestaña.
 
    >[!CAUTION]
    >
-   >Si se ha movido una página, ya no puede realizar una previsualización de ninguna versión realizada antes del movimiento.
+   >Si se ha movido una página, ya no podrá realizar vistas previas en ninguna versión realizada antes del movimiento.
    >
-   >* Si tiene problemas con una vista previa, consulte la [Cronología](/help/sites-authoring/basic-handling.md#timeline) para que la página vea si la página se ha movido.
+   >* Si tiene problemas con la vista previa, consulte la [Cronología](/help/sites-authoring/basic-handling.md#timeline) de la página para ver si se ha movido.
 
 ## Comparar una versión con la página actual {#comparing-a-version-with-current-page}
 
-Para comparar una versión anterior con la página actual:
+Para comparar una versión anterior con la página actual, haga lo siguiente:
 
 1. Desplácese hasta mostrar la página que desea comparar.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -190,7 +185,7 @@ Para comparar una versión anterior con la página actual:
 
    ![Versiones de página enumeradas: seleccionar versión](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Seleccionar **Comparar con actual**. El [diferencia de página](/help/sites-authoring/page-diff.md) se abre para mostrar las diferencias.
+1. Seleccione **Comparar con actual**. El [diferencia de página](/help/sites-authoring/page-diff.md) se abre para mostrar las diferencias.
 
 ## Deformación de tiempo   {#timewarp}
 
@@ -209,9 +204,9 @@ La creación de contenido es un proceso continuo y colaborativo. El propósito d
 
 ### Utilizar la Deformación de tiempo {#using-timewarp}
 
-Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-tools.md#page-modes) del editor de páginas. Para iniciarlo, simplemente cámbielo como lo haría con cualquier otro modo.
+Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-tools.md#page-modes) del editor de páginas. Para iniciarlo, basta con activarlo como cualquier otro modo.
 
-1. Inicie el editor de la página donde desea iniciar Deformación de tiempo y, a continuación, seleccione **Deformación de tiempo** en la selección de modo.
+1. Inicie el editor para la página donde desea iniciar Deformación de tiempo y, a continuación, seleccione **Deformación de tiempo** en la selección de modo.
 
    ![Seleccione Deformación de tiempo en la selección de modo](assets/wwpv-01.png)
 
@@ -227,8 +222,8 @@ Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-too
 
 Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en un punto temporal seleccionado. AEM Sin embargo, debido a las complejidades de la creación continua de contenido en el espacio de trabajo, esto no siempre es posible. Estas limitaciones deben tenerse en cuenta al utilizar Deformación de tiempo.
 
-* **Deformación de tiempo funciona según las páginas publicadas** : Deformación de tiempo solo funciona a la perfección si ya ha publicado la página. Si no es así, Deformación de tiempo muestra la página actual en el entorno de creación.
-* **Deformación de tiempo emplea versiones de página** : Si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página disponibles en el repositorio.
+* **Deformación de tiempo funciona dependiendo de las páginas publicadas**: deformación de tiempo solo funciona a la perfección si ya ha publicado la página. Si no es así, Deformación de tiempo muestra la página actual en el entorno de creación.
+* **Deformación de tiempo emplea las versiones de página**: si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página en el repositorio.
 * **Las versiones eliminadas afectan a la función Deformación de tiempo**: si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar resultados correctos.
 
 * **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, debe hacerlo manualmente mediante [restaurar](#reverting-to-a-page-version).

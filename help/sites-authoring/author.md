@@ -1,16 +1,11 @@
 ---
 title: Creación
-description: Conceptos sobre la creación de contenido en Adobe Experience Manager
-contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Conceptos sobre creación y publicación en Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 20%
+source-wordcount: '553'
+ht-degree: 35%
 
 ---
 
@@ -32,7 +27,7 @@ El entorno de creación ofrece mecanismos para crear, actualizar y revisar el co
 
 ![Información general sobre entornos](assets/chlimage_1-132.png)
 
-AEM En el entorno de creación, la funcionalidad de la creación de informes está disponible a través de dos interfaces de usuario. En el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
+AEM En el entorno de creación, la funcionalidad de la creación de informes está disponible a través de dos interfaces de usuario. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
 
 ### Entorno de creación {#author-environment}
 
@@ -42,7 +37,7 @@ El creador trabaja en lo que se conoce como **entorno de creación**. Esto propo
 >
 >Su cuenta necesita los derechos de acceso adecuados para crear, editar o publicar contenido.
 
-Según la configuración de la instancia y los derechos de acceso personales, puede realizar muchas tareas en el contenido, entre otras:
+Según la configuración de su instancia y sus derechos de acceso personales, puede realizar muchas tareas con el contenido, incluidas (entre otras):
 
 * generar contenido nuevo o editar contenido existente en una página
 * usar plantillas predefinidas para crear páginas de contenido nuevo
@@ -86,4 +81,4 @@ AEM Cuando el sitio de la es un [sitio comunitario](/help/communities/overview.m
 
 #### Dispatcher {#dispatcher}
 
-Para optimizar el rendimiento de los visitantes del sitio web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)** implementa almacenamiento en caché y equilibrio de carga.
+A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) implementa almacenamiento en caché y equilibrio de carga.**
