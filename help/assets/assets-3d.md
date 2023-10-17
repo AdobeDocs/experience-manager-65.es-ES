@@ -1,6 +1,6 @@
 ---
 title: Uso de recursos 3D en Dynamic Media
-description: Aprenda a trabajar con recursos 3D en Dynamic Media
+description: Descubra cómo puede cargar, gestionar, ver y distribuir recursos 3D en Dynamic Media como una experiencia envolvente.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2354'
 ht-degree: 3%
 
 ---
@@ -54,9 +54,9 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 >
 >Los recursos 3D no son compatibles con Dynamic Media: modo híbrido.
 
-Antes de trabajar con recursos 3D en Dynamic Media, asegúrese de que su Experience Manager de ya ha activado y configurado los Cloud Services de Dynamic Media en el modo Dynamic Media - Scene7.
+Antes de trabajar con recursos 3D en Dynamic Media, asegúrese de que su Experience Manager de ya ha activado y configurado los Cloud Service de Dynamic Media en el modo Dynamic Media - Scene7.
 
-Consulte [CLOUD SERVICES ConfigurE DE DYNAMIC MEDIA](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media: modo Scene7 y [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
+Consulte [CLOUD SERVICE ConfigurE DE DYNAMIC MEDIA](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media: modo Scene7 y [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
 
 1. **Carga de recursos 3D**
 

@@ -1,15 +1,15 @@
 ---
 title: Editor por lotes
-description: Aprenda a utilizar el Editor por lotes.
+description: Aprenda a utilizar el Editor por lotes para una edición eficaz cuando el contexto de la página visual no sea necesario.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ El Editor por lotes le permite:
 Para utilizar el Editor por lotes para editar varios elementos a la vez:
 
 1. En el **Herramientas** consola, haga clic en **importadores** para expandirla.
-1. Haga doble clic en **Editor por lotes** para abrirlo.
+1. Haga doble clic en **Editor por lotes**.
 1. Introduzca los requisitos de selección:
 
 <table>
@@ -78,11 +78,11 @@ Para utilizar el Editor por lotes para editar varios elementos a la vez:
   </tr>
   <tr>
    <td>Parámetros de consulta</td>
-   <td>Mediante parámetros GQL, introduzca la cadena de búsqueda que desea que busque el editor en masa en el repositorio; por ejemplo, <code>type:Page</code> busca todas las páginas de la ruta raíz, <code>text:professional</code> busca todas las páginas que contengan la palabra "profesional", y <code>"jcr:title":English</code> busca todas las páginas que tengan el título en "inglés". Solo puede buscar cadenas.</td>
+   <td>Con los parámetros GQL, introduzca la cadena de búsqueda que desea que busque el Editor por lotes en el repositorio. Por ejemplo, <code>type:Page</code> busca todas las páginas de la ruta raíz, <code>text:professional</code> busca todas las páginas que contengan la palabra "profesional", y <code>"jcr:title":English</code> busca todas las páginas que tengan el título en "inglés". Solo puede buscar cadenas.</td>
   </tr>
   <tr>
    <td>Casilla Modo de contenido</td>
-   <td>Active esta casilla de verificación para leer las propiedades dentro de la <code>jcr:content</code> subnodo de los resultados de búsqueda, si existe. Se utiliza solo para páginas. Los nombres de propiedad llevan el prefijo <code>"jcr:content/"</code></td>
+   <td>Active esta casilla de verificación para poder leer las propiedades dentro del <code>jcr:content</code> subnodo de los resultados de búsqueda si existe. Se utiliza solo para páginas. Los nombres de propiedad llevan el prefijo <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Propiedades / Columnas</td>
@@ -104,11 +104,11 @@ En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqued
 
    ![Resultados del editor en lotes](assets/chlimage_1-39.png)
 
-1. Realice los cambios que necesite haciendo doble clic en una celda.
+1. Haga doble clic en una celda para poder realizar cualquier cambio.
 
    ![Edición en lotes](assets/srchresultedit.png)
 
-1. Clic **Guardar** para guardar los cambios (la variable **Guardar** se activará una vez que haya editado una celda).
+1. Clic **Guardar** para guardar los cambios (la variable **Guardar** se activa después de editar una celda).
 
    >[!CAUTION]
    >
@@ -117,18 +117,18 @@ En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqued
 #### Parámetros de consulta GQL adicionales {#additional-gql-query-parameters}
 
 * **ruta:** solo buscar nodos debajo de esta ruta. Si especifica más de un término con un prefijo de ruta, solo se tendrá en cuenta el último.
-* **tipo:** solo devuelven nodos de los tipos de nodo dados. Esto incluye los tipos principal y de mezcla. Puede especificar varios tipos de nodos separados por comas. GQL devuelve nodos que son de cualquiera de los tipos especificados.
+* **tipo:** solo devuelven nodos del tipo de nodo dado. Esto incluye los tipos principal y de mezcla. Puede especificar varios tipos de nodos separados por comas. GQL devuelve nodos que son de cualquiera de los tipos especificados.
 * **pedido:** ordene el resultado según las propiedades dadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga un signo menos al nombre de la propiedad. Por ejemplo, order:-name. El uso de un signo más devuelve el resultado en orden ascendente, que también es el valor predeterminado.
-* **límite:** limita el número de resultados mediante un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, el inicio es inclusivo y el final es exclusivo. También puede especificar un intervalo abierto:limit:10.. o límite:..20 Si se omiten los puntos y solo se especifica un valor, GQL devolverá como máximo este número de resultados. Por ejemplo, limit:10 (devuelve los diez primeros resultados).
+* **límite:** limita el número de resultados mediante un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar un intervalo abierto:limit:10.. o límite:..20 Si se omiten los puntos y solo se especifica un valor, GQL devuelve como máximo este número de resultados. Por ejemplo, limit:10 (devuelve los diez primeros resultados).
 
 ### Exportación de contenido {#exporting-content}
 
-Es posible que tenga que exportar contenido y realizar cambios en una hoja de cálculo de Excel. Por ejemplo, puede exportar una lista de correo y cambiar el código de área de todos los números de teléfono enumerados directamente en Excel, o agregar líneas adicionales, etc.
+Si es necesario, exporte el contenido a una hoja de cálculo de Excel para realizar cualquier cambio. Por ejemplo, puede exportar una lista de correo y cambiar el código de área de todos los números de teléfono enumerados directamente en Excel, o agregar líneas adicionales.
 
 Para exportar contenido:
 
 1. Busque contenido como se describe en [Búsqueda y edición de contenido](#searching-and-editing-content).
-1. Clic **Exportar** para exportar los cambios en una hoja de cálculo de Excel separada por tabulaciones. AEM WCM le preguntará dónde desea descargar el archivo.
+1. Clic **Exportar** para poder exportar los cambios a una hoja de cálculo de Excel separada por tabulaciones. AEM WCM le preguntará dónde desea descargar el archivo.
 
    >[!NOTE]
    >

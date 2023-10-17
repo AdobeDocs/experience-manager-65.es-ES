@@ -1,13 +1,13 @@
 ---
 title: Información general de modelos
-description: Información general de modelos
+description: Aprenda a utilizar la administración de modelos, que implica la creación y administración de modelos para asociarlos con objetos de datos posibles.
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---

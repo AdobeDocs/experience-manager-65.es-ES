@@ -1,14 +1,14 @@
 ---
 title: AEM Iniciando PhoneGap
-description: Obtenga información acerca del Starterkit para desarrolladores.
+description: Aprenda a utilizar el Starterkit para ayudarle a empezar con los conceptos básicos del desarrollo de Adobe Experience Manager Mobile.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Para los desarrolladores, el mejor lugar para empezar es consultar Adobe Experie
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-El Starterkit le permite avanzar rápidamente explicándole los conceptos básicos del desarrollo de AEM Mobile, empezando por la creación y el control de proyectos, la instalación de las herramientas necesarias, la definición de un arquetipo de Maven, la creación, la implementación y, a continuación, la creación de su propia experiencia.
+El Starterkit le permite avanzar rápidamente explicándole los conceptos básicos del desarrollo de AEM Mobile. Comienza con la creación y el control de proyectos, la instalación de las herramientas necesarias, la definición de un arquetipo de Maven, la creación, la implementación y, a continuación, la creación de su propia experiencia.
 
 Los desarrolladores pueden utilizar este ejemplo como punto de partida para probar una aplicación de AEM Mobile con PhoneGap. Al ejecutar el Starterkit y la aplicación de referencia, se comprenden bien los conceptos básicos para crear aplicaciones móviles enriquecidas.
 
@@ -38,7 +38,7 @@ Los desarrolladores pueden utilizar este ejemplo como punto de partida para prob
 
 ## Plantillas y componentes {#templates-and-components}
 
-AEM *Plantillas* y *Componentes* habilite a los propietarios de la línea de negocios para crear experiencias personalizadas. Ambos *Plantillas *y *Componentes* están disponibles de forma predeterminada o puede desarrollarlas usted, el desarrollador, ampliando los componentes existentes o creando greenfield (avanzado). *Plantillas* y *Componentes* Estas son las opciones que permiten al autor de AEM arrastrar y soltar para crear experiencias atractivas y relevantes.
+AEM *Plantillas* y *Componentes* habilite a los propietarios de la línea de negocios para crear experiencias personalizadas. Ambos *Plantillas *y *Componentes* están disponibles de forma predeterminada o puede desarrollarlas usted, el desarrollador, ampliando los componentes existentes o creando greenfield (avanzado). *Plantillas* y *Componentes* AEM son los que permiten al autor de la arrastrar y soltar para crear experiencias atractivas y relevantes.
 
 1. [Creación de componentes](/help/sites-developing/components.md)
 1. [Creación de plantillas](/help/sites-developing/templates.md)

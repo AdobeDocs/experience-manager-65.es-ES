@@ -1,6 +1,6 @@
 ---
 title: Conjuntos de giros
-description: Aprenda a trabajar con conjuntos de giros en Dynamic Media
+description: Aprenda a crear un conjunto de giros en Dynamic Media para simular el acto real de girar un objeto para verlo desde cualquier ángulo y así poder ver los detalles.
 uuid: 379a20a3-6a17-499a-b0f1-3a835b97aa7b
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1974'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 Un conjunto de giros simula el acto del mundo real de girar un objeto para examinarlo. Los conjuntos de giros permiten ver los elementos desde cualquier ángulo, obteniendo los detalles visuales clave desde cualquier ángulo.
 
-Un conjunto de giros simula una experiencia de visualización de 360°. Dynamic Media ofrece conjuntos de giros de un solo eje en los que los visualizadores pueden girar un elemento. Además, los usuarios pueden hacer zoom de forma libre y recorrer cualquiera de las vistas con unos pocos clics del ratón. De este modo, los usuarios pueden examinar un elemento más de cerca desde un punto de vista concreto.
+Un conjunto de giros simula una experiencia de visualización de 360 grados. Dynamic Media ofrece conjuntos de giros de un solo eje en los que los visualizadores pueden girar un elemento. Además, los usuarios pueden hacer zoom de forma libre y recorrer cualquiera de las vistas con unos pocos clics del ratón. De este modo, los usuarios pueden examinar un elemento más de cerca desde un punto de vista concreto.
 
 Los conjuntos de giros se designan mediante una pancarta con la palabra **[!UICONTROL SPINSET]**. Además, si se publica el conjunto de giros, la fecha de publicación se indica mediante la variable **[!UICONTROL World]** aparece en el titular junto con la fecha de la última modificación, indicada por la variable **[!UICONTROL Lápiz]** se muestra el icono.
 
@@ -32,7 +32,7 @@ Los conjuntos de giros se designan mediante una pancarta con la palabra **[!UICO
 >
 >Para obtener información sobre la interfaz de usuario de Assets, consulte [Administrar recursos](/help/assets/manage-assets.md).
 
-Al crear un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
+Al crear un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica los límites siguientes:
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
@@ -117,12 +117,13 @@ En esta sección se describe cómo crear un conjunto de giros en Experience Mana
 >También puede crear conjuntos de giros automáticamente mediante los [ajustes preestablecidos de conjuntos de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Importante:** IPS (Image Production System) crea los conjuntos de lotes como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
 >
 >Consulte &quot;Creación de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros&quot; en [Configuración de Dynamic Media: modo Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>
 
 >[!NOTE]
 >
->El orden en que aparecen las imágenes en un conjunto de giros es importante. Asegúrese de pedirlos de modo que el giro sea una vista suave de 360°.
+>El orden en que aparecen las imágenes en un conjunto de giros es importante. Asegúrese de ordenarlos de modo que el giro sea una vista suave de 360 grados.
 
-Al crear un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
+Al crear un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica los límites siguientes:
 
 | Tipo de límite | Práctica recomendada | Limitado impuesto |
 | --- | --- | --- |
@@ -149,6 +150,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Añadir recurso]**.
 
    * Cerca del centro de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
+
    Pulse para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el **[!UICONTROL Filtrar]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
@@ -225,7 +227,6 @@ Si elimina la imagen que el Experience Manager utiliza para la miniatura reempla
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, seleccione el icono Ajuste preestablecido y elija uno.
    * Para eliminar un conjunto de giros completo, vaya al conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
-
    >[!NOTE]
    >
    >Puede editar las imágenes de un conjunto de giros navegando hasta el conjunto y seleccionando **[!UICONTROL Definir miembros]** en el carril izquierdo y, a continuación, seleccione el icono Lápiz en un recurso individual para abrir la ventana de edición.

@@ -1,16 +1,12 @@
 ---
 title: Administración de flujos de trabajo
-seo-title: Administering Workflows
-description: AEM Obtenga información sobre cómo administrar flujos de trabajo de en la.
-seo-description: Learn how to administer workflows in AEM.
-uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
+description: Obtenga información sobre cómo automatizar actividades de Adobe Experience Manager mediante flujos de trabajo.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 2%
@@ -42,7 +38,6 @@ Los procesos empresariales que ha establecido su organización se pueden represe
 >* Creación de modelos de flujo de trabajo y ampliación de funciones de flujo de trabajo: [Desarrollo y ampliación de flujos de trabajo](/help/sites-developing/workflows.md).
 >* Mejora del rendimiento de los flujos de trabajo que utilizan recursos de servidor significativos: [Procesamiento de flujo de trabajo simultáneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
-
 
 ## Modelos de flujo de trabajo e instancias {#workflow-models-and-instances}
 
@@ -85,7 +80,7 @@ Un usuario o un servicio realizan pasos del flujo de trabajo según el tipo de p
 
 >[!NOTE]
 >
->Si se produce un error, la implementación del servicio/paso debe gestionar el comportamiento para un escenario de error. El motor de flujo de trabajo en sí reintentará el trabajo, registrará un error y detendrá la instancia.
+>Si se produce un error, la implementación del servicio/paso debe gestionar el comportamiento para un escenario de error. El propio motor de flujo de trabajo reintenta el trabajo y, a continuación, registra un error y detiene la instancia.
 
 ## Estado y acciones del flujo de trabajo {#workflow-status-and-actions}
 
@@ -94,7 +89,7 @@ Un flujo de trabajo puede tener uno de los siguientes estados:
 * **EN EJECUCIÓN**: la instancia del flujo de trabajo se está ejecutando.
 * **COMPLETADO**: la instancia del flujo de trabajo se ha finalizado correctamente.
 
-* **SUSPENDIDO**: marca el flujo de trabajo como suspendido. Sin embargo, consulte la nota de precaución siguiente sobre un problema conocido con este estado.
+* **SUSPENDIDO**: marca el flujo de trabajo como suspendido. Sin embargo, consulte la nota de precaución que aparece a continuación sobre un problema conocido con este estado.
 * **ANULADO**: se ha finalizado la instancia del flujo de trabajo.
 * **ANTICUADO**: el progreso de la instancia de flujo de trabajo requiere que se ejecute un trabajo en segundo plano, pero el trabajo no se puede encontrar en el sistema. Esta situación se puede producir cuando se produce un error al ejecutar el flujo de trabajo.
 
@@ -102,13 +97,13 @@ Un flujo de trabajo puede tener uno de los siguientes estados:
 >
 >Cuando la ejecución de un paso de proceso genera errores, el paso aparece en la bandeja de entrada del administrador y el estado del flujo de trabajo es **EN EJECUCIÓN**.
 
-Según el estado actual, puede realizar acciones en instancias de flujo de trabajo en ejecución cuando necesite intervenir en la progresión normal de una instancia de flujo de trabajo:
+Según el estado, puede realizar acciones en instancias de flujo de trabajo en ejecución cuando deba intervenir en la progresión normal de una instancia de flujo de trabajo:
 
 * **Suspender**: Suspender cambia el estado del flujo de trabajo a Suspendido. Consulte Precaución a continuación:
 
 >[!CAUTION]
 >
->Marcar el estado de un flujo de trabajo como &quot;Suspender&quot; tiene un problema conocido. En este estado es posible realizar acciones en elementos de flujo de trabajo suspendidos en una bandeja de entrada.
+>Marcar el estado de un flujo de trabajo como &quot;Suspender&quot; tiene un problema conocido. En este estado, es posible actuar sobre los elementos de flujo de trabajo suspendidos en una bandeja de entrada.
 
 * **Reanudar**: reinicia un flujo de trabajo suspendido en el mismo punto de ejecución en el que se suspendió, utilizando la misma configuración.
 * **Finalizar**: finaliza la ejecución del flujo de trabajo y cambia el estado a **ANULADO**. No se puede reiniciar una instancia de flujo de trabajo anulada.

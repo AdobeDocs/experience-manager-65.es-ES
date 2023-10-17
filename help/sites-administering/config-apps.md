@@ -1,25 +1,21 @@
 ---
 title: AEM Configuración de para aplicaciones de
-seo-title: Configuring for AEM Apps
-description: AEM Obtenga información sobre cómo configurar aplicaciones de.
-seo-description: Learn how to configure AEM Apps.
-uuid: ab9acd93-da7f-4bb7-8d26-224044899068
+description: Aprenda a utilizar las aplicaciones de Adobe Experience Manager para actualizar el contenido de su aplicación OTA (por el aire).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
 exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
 # AEM Configuración de para aplicaciones de{#configuring-for-aem-apps}
 
-Las aplicaciones de Adobe Experience Manager permiten actualizar el contenido de la aplicación por el aire (OTA). El contenido actualizado se almacena en la instancia de publicación. Para permitir que la aplicación de su dispositivo se conecte a la instancia de publicación y compruebe las actualizaciones, la instancia de publicación debe configurarse para permitir un encabezado de referente vacío.
+Adobe Experience Manager Apps permite actualizar el contenido de la OTA de la aplicación (por el aire). El contenido actualizado se almacena en la instancia de publicación. Para permitir que la aplicación de su dispositivo se conecte a la instancia de publicación y compruebe las actualizaciones, la instancia de publicación debe configurarse para permitir un encabezado de referente vacío.
 
 ## Configuración de un encabezado de referente vacío {#configuring-empty-referrer-header}
 
@@ -29,7 +25,7 @@ Para configurar el servicio del filtro de referente:
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Inicie sesión como administrador.
 * En el **Configuraciones** menú, seleccione: *Filtro de referente de Apache Sling*
-* Marque el campo Permitir vacío para permitir encabezados de referente vacíos o que falten.
+* Marque el campo Permitir vacío para poder permitir encabezados de referente vacíos o que falten.
 * Clic **Guardar** para guardar los cambios.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)

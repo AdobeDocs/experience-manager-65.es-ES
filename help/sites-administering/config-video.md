@@ -1,19 +1,15 @@
 ---
 title: Configuración del componente de vídeo
-seo-title: Configure the Video component
-description: Obtenga información sobre cómo configurar el componente de vídeo.
-seo-description: Learn how to configure the Video Component.
-uuid: f4755a13-08ea-4096-a951-46a590f8d766
+description: Aprenda a utilizar el componente Vídeo en Adobe Experience Manager para colocar un recurso de vídeo predefinido y listo para usar en su página.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 1%
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +21,7 @@ Para que se produzca la transcodificación adecuada, un administrador instala FF
 
 >[!CAUTION]
 >
->Este componente de base se ha desaprobado. Adobe recomienda aprovechar el [Componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) en su lugar.
+>Este componente de base se ha desaprobado. El Adobe recomienda utilizar la variable [Componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) en su lugar.
 
 >[!CAUTION]
 >
@@ -50,18 +46,18 @@ Para instalar FFmpeg en **Windows**, siga estos pasos:
 1. Establecer la variable de entorno del sistema `PATH` hasta &lt;*your-ffmpeg-location*>`\bin`.
 1. AEM Reinicie la sesión.
 
-Para instalar FFmpeg en **MAC OS X**, siga estos pasos:
+Para instalar FFmpeg en **MACOS X**, siga estos pasos:
 
 1. Instalar Xcode disponible en [developer.apple.com/xcode](https://developer.apple.com/xcode/).
-1. Instalación disponible en [XQuartz](https://www.xquartz.org) para obtener [X11](https://support.apple.com/es-es/HT201341).
+1. Instalación disponible en [XQuartz](https://www.xquartz.org) para obtener [X11](https://support.apple.com/en-us/100724).
 1. Instale MacPorts disponibles en [www.macports.org](https://www.macports.org/).
 1. En la consola, ejecute `sudo port install ffmpeg` y siga las instrucciones que aparecen en la pantalla. Asegúrese de que la ruta del `FFmpeg` El ejecutable de se agrega a `PATH` variable del sistema.
 
-Para instalar FFmpeg en **Mac OS X 10.6**, utilizando la versión precompilada, siga estos pasos:
+Para instalar FFmpeg en **macOS X 10.6**, utilizando la versión precompilada, siga estos pasos:
 
 1. Descargue la versión precompilada.
 1. Desarchivarlo en el `/usr/local` directorio.
-1. En la consola, ejecute `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Cambie las rutas según corresponda.
+1. En la consola, ejecute `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Cambie la ruta según corresponda.
 
 Hasta **AEM configurar la**, siga estos pasos:
 

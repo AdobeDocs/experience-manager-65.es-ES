@@ -1,14 +1,14 @@
 ---
 title: Content Services
-description: Content Services
+description: Aprenda a utilizar los servicios de contenido de AEM Mobile AEM para solicitar contenido administrado por los usuarios de la red de distribución de contenido (CDNs.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 3%
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 >
 >La función Servicios de contenido está documentada únicamente con fines de vista previa.
 >
->Está sujeto a cambios con el lanzamiento del paquete de servicio 1 de 6.3 GA.
+>Está sujeto a cambios con el lanzamiento del paquete de servicio 1 de 6.3.
 
 AEM Mobile AEM Content Services es una función ligera para solicitar contenido que administra el usuario de forma independiente. AEM Esto proporciona a todos los desarrolladores de aplicaciones una forma de alto rendimiento de recuperar contenido sin tener que tener conocimientos profundos de repositorio de contenido (JCR) y marco de trabajo web (Sling). Permite que las aplicaciones solicitantes se disocien del repositorio de contenido.
 

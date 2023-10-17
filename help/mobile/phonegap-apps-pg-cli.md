@@ -1,16 +1,14 @@
 ---
 title: Desarrollo de aplicaciones con CLI de PhoneGap
-description: Obtenga información sobre el desarrollo de aplicaciones con la CLI de PhoneGap.
-uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
+description: Aprenda a desarrollar aplicaciones para dispositivos móviles con la CLI de PhoneGap mediante un entorno de desarrollo de arranque.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 1%
 
 En cualquier momento dado, como desarrollador, puede ejecutar la aplicación en un dispositivo o en un emulador, siempre y cuando haya configurado el entorno de desarrollo.
 
-Para ejecutar los siguientes ejemplos, necesita un sistema que ejecute OS X (Mac) con Xcode o un sistema Mac/Win/Linux con el SDK de Android™ instalado.
+Para ejecutar los siguientes ejemplos, necesita un sistema que ejecute macOS X con Xcode o un sistema Mac/Win/Linux con el SDK de Android™ instalado.
 
 ## Bootstrap de su entorno de desarrollo {#bootstrap-your-development-environment}
 
@@ -41,7 +39,7 @@ Para Android™: Para desarrollar para iPhones y iPads, necesita el Android™ S
 
 ## Descargar el origen {#download-the-source}
 
-AEM Una vez que haya arrancado correctamente su entorno de desarrollo, descargue el origen desde el mosaico de creación de la aplicación de la aplicación de la aplicación de la:
+AEM Cuando haya arrancado correctamente su entorno de desarrollo, descargue el origen desde el mosaico de creación de la aplicación de la aplicación de la:
 
 * Haga clic en las comillas angulares desplegables del mosaico PhoneGap Build.
 
@@ -131,7 +129,7 @@ phonegap run <platform> --emulator
 
 * Abrir Safari
 * Haga clic en Desarrollo en la barra de menús
-* Seleccione el submenú iOS Simulator
+* Submenú Seleccionar iOS Simulator
 * Haga clic en home.html
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
@@ -153,7 +151,7 @@ Puede establecer puntos de interrupción en cualquier lugar del origen. Al inter
 
 >[!NOTE]
 >
-Para ver los valores de las variables, en el método actual, pase el ratón por encima.
+Para ver los valores de las variables en el método actual, pase el ratón por encima.
 
 ## Pasos siguientes {#the-next-steps}
 

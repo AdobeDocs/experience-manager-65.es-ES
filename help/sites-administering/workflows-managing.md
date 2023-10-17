@@ -1,18 +1,14 @@
 ---
 title: Administración del acceso a los flujos de trabajo
-seo-title: Managing Access to Workflows
-description: Descubra cómo administrar el acceso a los flujos de trabajo.
-seo-description: Learn how to manage access to Workflows.
-uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
+description: Obtenga información sobre cómo configurar Listas de control de acceso según las cuentas de usuario para permitir (o deshabilitar) el inicio y la participación en flujos de trabajo.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '575'
 ht-degree: 4%
 
 ---
@@ -53,7 +49,7 @@ Los modelos de flujo de trabajo heredan una lista de control de acceso (ACL) pre
 
 ### Aplicar una ACL para el modelo de flujo de trabajo específico a /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Si el modelo de flujo de trabajo se almacena en `/var/workflow/models` a continuación, puede asignar una ACL específica, relevante solo para ese flujo de trabajo, en la carpeta:
+Si el modelo de flujo de trabajo se almacena en `/var/workflow/models`, a continuación, puede asignar una ACL específica, relevante solo para ese flujo de trabajo, en la carpeta:
 
 1. Abra CRXDE Lite en el explorador web (por ejemplo, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. En el árbol de nodos, seleccione el nodo de la carpeta de modelos de flujo de trabajo:
@@ -62,7 +58,7 @@ Si el modelo de flujo de trabajo se almacena en `/var/workflow/models` a continu
 
 1. Haga clic en **Control de acceso** pestaña.
 1. En el **Políticas de control de acceso local** (**Lista de control de acceso**), haga clic en el icono de signo más para **Agregar entrada**.
-1. En el **Añadir nueva entrada** Cuadro de diálogo agregar una nueva ACE con las siguientes propiedades:
+1. En el **Añadir nueva entrada** Cuadro de diálogo, agregue un ACE con las siguientes propiedades:
 
    * **Principal**: `content-authors`
    * **Tipo**: `Deny`
@@ -99,7 +95,7 @@ A continuación, puede agregar una ACL a la propia carpeta.
 1. Haga clic en **Control de acceso** pestaña.
 1. En el **Política de control de acceso aplicable** , haga clic en el icono de signo más para **Añadir** una entrada.
 1. En el **Políticas de control de acceso local** (**Lista de control de acceso**), haga clic en el icono de signo más para **Agregar entrada**.
-1. En el **Añadir nueva entrada** Cuadro de diálogo agregar una nueva ACE con las siguientes propiedades:
+1. En el **Añadir nueva entrada** Cuadro de diálogo, agregue un ACE con las siguientes propiedades:
 
    * **Principal**: `content-authors`
    * **Tipo**: `Deny`

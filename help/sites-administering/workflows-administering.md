@@ -1,19 +1,15 @@
 ---
 title: Administración de instancias de flujo de trabajo
-seo-title: Administering Workflow Instances
-description: Obtenga información sobre cómo administrar instancias de flujo de trabajo.
-seo-description: Lear how to administer Workflow Instances.
-uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
+description: Descubra cómo la consola de flujo de trabajo proporciona varias herramientas para administrar instancias de flujo de trabajo a fin de garantizar que se ejecuten según lo esperado.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 84%
+source-wordcount: '1003'
+ht-degree: 65%
 
 ---
 
@@ -37,7 +33,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Monitorización del estado de las instancias de flujo de trabajo {#monitoring-the-status-of-workflow-instances}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccione **Instancias** para mostrar la lista de instancias de flujo de trabajo en progreso.
+1. Seleccionar **Instancias** para poder mostrar la lista de instancias de flujo de trabajo en curso.
 
    ![wf-96](assets/wf-96.png)
 
@@ -66,7 +62,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Suspender, reanudar y finalizar una instancia de flujo de trabajo {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccione **Instancias** para mostrar la lista de instancias de flujo de trabajo en progreso.
+1. Seleccionar **Instancias** para poder mostrar la lista de instancias de flujo de trabajo en curso.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -77,7 +73,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Visualización de flujos de trabajo archivados {#viewing-archived-workflows}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccione **Archivo** para mostrar la lista de instancias de flujo de trabajo que se completaron correctamente.
+1. Seleccionar **Archivar** para poder mostrar la lista de instancias de flujo de trabajo que se completaron correctamente.
 
    ![wf-98](assets/wf-98.png)
 
@@ -86,7 +82,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
    >El estado de anulación se considera una terminación satisfactoria, ya que ocurre como resultado de la acción del usuario; por ejemplo:
    >
    >* uso de la acción **Finalizar**
-   >* cuando se elimina una página sujeta a un flujo de trabajo, este se cierra y el flujo de trabajo finaliza
+   >* cuando se elimina (se fuerza) una página sujeta a un flujo de trabajo, este finaliza
 
 1. Seleccione un elemento específico y luego **Abrir historial** para ver más detalles:
 
@@ -102,14 +98,14 @@ Abre una ventana para mostrar el **Mensaje de error**, **Etapa**, y **Pila de er
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
 
-* **Paso de reintento** Ejecuta de nuevo la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
-* **Finalizar** Finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
-* **Finalizar y reintentar** Similar a **Finalizar**, excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
+* **Paso de reintento** : vuelve a ejecutar la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
+* **Finalizar** : Finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
+* **Finalizar y volver a intentar** - Similar a **Finalizar** excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
 
 Para investigar los errores y luego reanudar o finalizar el flujo de trabajo más tarde, siga estos pasos:
 
 1. Mediante la Navegación, seleccione **Herramientas** y, luego, **Flujo de trabajo**.
-1. Seleccione **Errores** para mostrar la lista de instancias de flujo de trabajo que no se completaron correctamente.
+1. Seleccionar **Errores** para poder mostrar la lista de instancias de flujo de trabajo que no se completaron correctamente.
 1. Seleccione un elemento específico y luego la acción apropiada:
 
    ![wf-47](assets/wf-47.png)
@@ -120,9 +116,9 @@ Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimient
 
 Configure **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su antigüedad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
 
-También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante mucho más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
+También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
 
-Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describen las propiedades que necesita para cualquiera de los métodos.
+Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente, se describen las propiedades que necesita para cualquiera de los métodos.
 
 >[!NOTE]
 >
@@ -163,7 +159,7 @@ Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deployi
   <tr>
    <td>Edad del flujo de trabajo</td>
    <td>scheduledpurge.daysell</td>
-   <td>La antigüedad de las instancias de flujo de trabajo que se van a purgar, en días.</td>
+   <td>La antigüedad de las instancias de flujo de trabajo que se purgarán en días.</td>
   </tr>
  </tbody>
 </table>
@@ -182,15 +178,15 @@ Puede establecer el tamaño máximo de la bandeja de entrada configurando **Adob
 |---|---|
 | Tamaño máximo de consulta de la bandeja de entrada | granite.workflow.inboxQuerySize |
 
-## Uso de variables de flujo de trabajo para almacenes de datos propiedad del cliente {#using-workflow-variables-customer-datastore}
+## Usar variables de flujo de trabajo para almacenes de datos propiedad del cliente {#using-workflow-variables-customer-datastore}
 
-Los datos procesados por flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por el Adobe. En estas secciones se describe cómo configurar estas variables para el almacenamiento externo.
+Los datos procesados por flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por Adobe. En estas secciones se describe cómo configurar estas variables para el almacenamiento externo.
 
 ### Establecer el modelo para que utilice el almacenamiento externo de metadatos {#set-model-for-external-storage}
 
-En el nivel del modelo de flujo de trabajo, se proporciona un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Las variables de flujo de trabajo no se mantendrán en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
+En el nivel del modelo de flujo de trabajo, se proporciona un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Las variables de flujo de trabajo no persisten en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
 
-La propiedad *userMetadataPersistenceEnabled* se almacenará en la variable *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantendrá en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
+La propiedad *userMetadataPersistenceEnabled* se almacena en la variable *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantiene en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
 La siguiente ilustración muestra cómo establecer el indicador en un flujo de trabajo.
 
@@ -198,7 +194,7 @@ La siguiente ilustración muestra cómo establecer el indicador en un flujo de t
 
 ### API para metadatos en almacenamiento externo {#apis-for-metadata-external-storage}
 
-Para almacenar las variables de forma externa, debe implementar las API que expone el flujo de trabajo.
+Para almacenar las variables de forma externa, implemente las API que expone el flujo de trabajo.
 
 UserMetaDataPersistenceContext
 

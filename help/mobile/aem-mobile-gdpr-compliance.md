@@ -1,12 +1,12 @@
 ---
 title: 'Adobe Experience Manager Mobile: Preparación para el RGPD'
-description: 'Adobe Experience Manager Mobile: Preparación para el RGPD'
+description: Obtenga información sobre cómo Adobe Experience Manager está preparado para ayudarle con sus obligaciones de cumplimiento del RGPD.
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Para asegurarse de que no confunde AEM Mobile con el producto de Digital Publish
 
 Póngase en contacto con el Servicio de atención al cliente de Adobe para poder iniciar una solicitud de RGPD para el Digital Publishing Suite.
 
-Se requieren los siguientes ID para localizar los datos del cliente. Cualquier subconjunto recibido implicará que los demás ID no eran aplicables a este usuario.
+Se requieren los siguientes ID para localizar los datos del cliente. Cualquier subconjunto recibido implica que los demás ID no eran aplicables a este usuario.
 
 Obligatorio:
 
@@ -49,17 +49,17 @@ Proporcione al menos una de las siguientes opciones:
 
 ### Preguntas más frecuentes (FAQ) {#frequently-asked-questions-faq}
 
-**¿Eliminará el Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
+**¿El Adobe está eliminando mis compras de App Store al iniciar una solicitud de DELETE?**
 
-El Adobe elimina la información que tiene sobre las compras en la tienda de aplicaciones (suscripciones, etc.), pero las compras siguen registradas en las tiendas de aplicaciones. Si la aplicación (usuario final) ha iniciado sesión en la tienda de aplicaciones, esos recibos se recogen de nuevo y se envían al Adobe y más tarde, esos recibos se consideran nuevas compras y la aplicación restaura el acceso para volver a tenerlos.
+El Adobe elimina la información que tiene sobre las compras en la tienda de aplicaciones (suscripciones, etc.), pero las compras siguen registradas en las tiendas de aplicaciones. Si la aplicación (usuario final) ha iniciado sesión en la tienda de aplicaciones, esos recibos se recogen de nuevo y se envían al Adobe. Más adelante, se consideran nuevas compras y son restauradas por la aplicación, con acceso de nuevo.
 
-**¿Eliminará el Adobe los derechos proporcionados por el cliente al iniciar una solicitud de DELETE?**
+**¿El Adobe elimina los derechos proporcionados por el cliente al iniciar una solicitud de DELETE?**
 
 El Adobe elimina la información que tiene de las asignaciones de derechos directos adicionales del cliente. Si la aplicación (usuario final) inicia sesión en el mecanismo de OAuth que el cliente ha utilizado, envía información al Adobe y los servicios vuelven a recoger los derechos adicionales.
 
 **¿Qué se espera del usuario final?**
 
-Dado que la clave para asignar derechos a la aplicación reside en el dispositivo como parte del software del visualizador, el usuario final debe desinstalar la aplicación. El usuario final debe tener en cuenta que, si vuelve a instalar la aplicación, se restaurarán las compras existentes (asociadas al usuario de la tienda de aplicaciones) y las asignaciones de derechos directos (asociadas al usuario de OAuth del cliente).
+Dado que la clave para asignar derechos a la aplicación reside en el dispositivo como parte del software del visualizador, el usuario final debe desinstalar la aplicación. El usuario final debe tener en cuenta que, si vuelve a instalar la aplicación, las compras existentes (asociadas al usuario de la tienda de aplicaciones) y las asignaciones de derechos directos (asociadas al usuario de OAuth del cliente) se restauran.
 
 **¿Qué sucede cuando una aplicación se comparte entre personas en un dispositivo?**
 

@@ -1,25 +1,21 @@
 ---
 title: Inicio de flujos de trabajo
-seo-title: Starting Workflows
-description: AEM Obtenga información sobre cómo iniciar flujos de trabajo de en la.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: Obtenga información sobre cómo administrar flujos de trabajo en Adobe Experience Manager para que pueda iniciarlos mediante varios métodos, ya sea de forma manual o automática.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '799'
 ht-degree: 6%
 
 ---
 
 # Inicio de flujos de trabajo{#starting-workflows}
 
-Al administrar flujos de trabajo, puede iniciarlos mediante diversos métodos:
+Al administrar flujos de trabajo, puede iniciarlos mediante varios métodos:
 
 * Manualmente:
 
@@ -93,10 +89,10 @@ Un paquete de flujo de trabajo:
 
    >[!NOTE]
    >
-   >El **[Transitorio](/help/sites-developing/workflows.md#transient-workflows)** El indicador muestra los flujos de trabajo para los que no se mantendrá el historial del flujo de trabajo.
+   >El **[Transitorio](/help/sites-developing/workflows.md#transient-workflows)** El indicador muestra los flujos de trabajo para los que el historial de flujos de trabajo no persiste.
 
 1. Seleccionar **Iniciar flujo de trabajo** en la barra de herramientas.
-1. Se abrirá el cuadro de diálogo Ejecutar flujo de trabajo, que le permitirá especificar lo siguiente:
+1. Se abre el cuadro de diálogo Ejecutar flujo de trabajo, que permite especificar:
 
    * **Carga útil**
 
@@ -121,7 +117,7 @@ Un paquete de flujo de trabajo:
 
    * **Tipo de evento**
 
-     El tipo de evento que iniciará el flujo de trabajo:
+     El tipo de evento que inicia el flujo de trabajo:
 
       * Creado
       * Modificado
@@ -172,10 +168,10 @@ Un paquete de flujo de trabajo:
 
      Esto especifica los eventos JCR que se deben excluir (es decir, ignorar) al determinar si se debe activar un flujo de trabajo.
 
-     Esta propiedad del lanzador es una lista de elementos separados por comas:&quot;
+     Esta propiedad del lanzador es una lista de elementos separados por comas: &quot;
 
       * `property-name` ignorar cualquiera `jcr` evento que se activó en el nombre de propiedad especificado. &quot;
-      * `event-user-data:<*someValue*>` pasa por alto cualquier evento que contenga `*<someValue*`> `user-data` configurar a través de [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` pasa por alto cualquier evento que contenga `*<someValue*`> `user-data` configurar a través de [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por ejemplo:
 
@@ -187,7 +183,7 @@ Un paquete de flujo de trabajo:
 
 1. Seleccionar **Crear**, para crear el lanzador y volver a la consola.
 
-   Una vez que se produzca el evento correspondiente, el iniciador se activará y se iniciará el flujo de trabajo.
+   Cuando se produce el evento correspondiente, el iniciador se activa y se inicia el flujo de trabajo.
 
 ## Administración de una configuración de lanzador {#managing-a-launcher-configuration}
 

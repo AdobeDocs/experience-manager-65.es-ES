@@ -1,13 +1,13 @@
 ---
 title: Entrega de contenido
-description: Entrega de contenido
+description: Obtenga información sobre cómo utilizar todo el contenido en Adobe Experience Manager para ofrecer la experiencia de aplicación segmentada.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Esto incluye el uso de recursos, contenido del sitio, contenido de CaaS (aéreo)
 
 >[!NOTE]
 >
->**Contenido en el aire** puede provenir de cualquiera de los anteriores a través de controladores ContentSync. Se puede utilizar para empaquetar y enviar por lotes mediante archivos zip y mantener las actualizaciones de dichos paquetes.
+>**Contenido en el aire** puede provenir de cualquiera de los elementos anteriores mediante controladores ContentSync. Se puede utilizar para empaquetar y enviar por lotes mediante archivos zip y mantener las actualizaciones de dichos paquetes.
 
 Existen tres tipos principales de material que los servicios de contenido ofrecen:
 
@@ -47,7 +47,7 @@ Una colección de recursos se puede exponer a través de Content Services. La ll
 
 Un valor clave de Content Services es la capacidad de devolver recursos optimizados para el dispositivo. Esto reduce las necesidades de almacenamiento del dispositivo local y mejora el rendimiento de la aplicación.
 
-La optimización de recursos es una función del lado del servidor, basada en la información proporcionada en la solicitud de API. Siempre que sea posible, las representaciones de recursos deben almacenarse en caché para que las solicitudes similares no requieran una regeneración de la representación de recursos.
+La optimización de recursos es una función del lado del servidor, basada en la información proporcionada en la solicitud de API. Siempre que sea posible, las representaciones de recursos deben almacenarse en caché para que las solicitudes similares no requieran la regeneración de la representación de recursos.
 
 ### Flujo de trabajo de recursos {#assets-workflow}
 
@@ -70,7 +70,7 @@ AEM AEM Los servicios de contenido proporcionan acceso a recursos administrados 
 
 #### Recursos administrados existentes {#existing-managed-assets}
 
-Un usuario de AEM Sites y Assets está utilizando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y necesitan utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo e iconos de botón.
+Un usuario de AEM Sites y Assets está utilizando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y deben utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo e iconos de botón.
 
 Actualmente se distribuyen por todo el repositorio de Assets. Los archivos a los que la aplicación debe hacer referencia se encuentran en los siguientes:
 
@@ -106,7 +106,7 @@ Para obtener el binario de la imagen &quot;carrito&quot;, se vuelve a utilizar l
 
 ## Contenido de HTML empaquetado {#packaged-html-content}
 
-Se necesita contenido HTML para los clientes que necesitan mantener la presentación del contenido. Esto resulta útil para las aplicaciones nativas que utilizan un contenedor web (como una vista web de Cordova) para mostrar el contenido.
+Se necesita contenido HTML para los clientes que deben mantener la presentación del contenido. Esto resulta útil para las aplicaciones nativas que utilizan un contenedor web (como una vista web de Cordova) para mostrar el contenido.
 
 AEM Los servicios de contenido proporcionan contenido de HTML a la aplicación móvil mediante la API de. AEM Los clientes que deseen exponer el contenido de la como HTML pueden crear una entidad de página del HTML AEM que apunte a la fuente de contenido de la.
 
@@ -121,18 +121,18 @@ Se tienen en cuenta las siguientes opciones:
 
 AEM El contenido independiente del canal es una forma de exponer construcciones de contenido de canal, como páginas, sin tener que preocuparse por el diseño, los componentes u otra información específica del canal.
 
-AEM Estas entidades de contenido se generan mediante un modelo de contenido para traducir las estructuras de la a un formato JSON. AEM Los datos JSON resultantes contienen información sobre los datos del contenido que se desliga del repositorio de la. AEM Esto incluye la devolución de metadatos y vínculos de referencia a recursos, así como las relaciones entre estructuras de contenido, incluida la jerarquía de entidades.
+AEM Estas entidades de contenido se generan mediante un modelo de contenido para traducir las estructuras de la a un formato JSON. AEM Los datos JSON resultantes contienen información sobre los datos del contenido que están disociados del repositorio de la. AEM Esto incluye la devolución de metadatos y vínculos de referencia a recursos, así como las relaciones entre estructuras de contenido, incluida la jerarquía de entidades.
 
 ### Administración de contenido independiente del canal {#managing-channel-independent-content}
 
 El contenido puede llegar a la aplicación de varias formas.
 
-1. ZIPS de contenido de GET AEM a través de la vía aérea de la
+1. ZIPS de contenido de GET AEM por medio de la técnica de sobreexposición de la vía aérea de la
 
    * Los controladores de sincronización de contenido pueden actualizar el paquete zip directamente o llamando a los procesadores de contenido existentes
 
       * Controladores de plataforma
-      * Controladores de AEM
+      * AEM Manejadores de
       * Controladores personalizados
 
 1. GET de contenido directamente mediante procesadores de contenido

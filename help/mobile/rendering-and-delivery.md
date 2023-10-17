@@ -1,13 +1,13 @@
 ---
 title: Procesamiento y entrega
-description: Procesamiento y entrega
+description: Aprenda a procesar contenido de Adobe Experience Manager mediante Sling Default Servlets para procesar JSON y otros formatos.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '596'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 El contenido de Adobe Experience Manager AEM () se puede representar fácilmente mediante [Servlets predeterminados de Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
 
-Estos procesamientos listos para usar suelen recorrer el repositorio y devolver el contenido tal cual.
+Estas representaciones listas para usar suelen recorrer el repositorio y devolver el contenido tal cual.
 
 AEM A través de Sling, también admite el desarrollo y la implementación de procesadores sling personalizados para tomar el control total del esquema y el contenido procesados.
 
@@ -42,7 +42,7 @@ Uso **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&qu
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPCIONAL</strong><br /> </p> <p>se ha encontrado una configuración de exportación en /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Si se omite, se aplicará la configuración de exportación predeterminada </p> </td>
+   <td><p><strong>OPCIONAL</strong><br /> </p> <p>se ha encontrado una configuración de exportación en /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Si se omite, se aplica la configuración de exportación predeterminada </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>

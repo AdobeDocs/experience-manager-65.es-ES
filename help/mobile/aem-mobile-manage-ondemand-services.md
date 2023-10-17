@@ -1,18 +1,14 @@
 ---
 title: Vista previa con comprobación preliminar
-seo-title: Previewing with Preflight
-description: Esta página explica la vista previa con la aplicación de comprobaciones.
-seo-description: With the Mobile On Demand Preflight app, you can view all projects to which you have access. Follow this page to learn more about this.
-uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
+description: Aprenda a utilizar la aplicación Mobile On-Demand Preflight para poder ver todos los proyectos a los que tiene acceso.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -27,7 +23,7 @@ Esta página explica la vista previa con la aplicación de comprobaciones.
 
 Las siguientes acciones se realizan en la aplicación en su conjunto.
 
-Con la aplicación Mobile On Demand Preflight, puede ver todos los proyectos a los que tiene acceso. Una vez que seleccione un proyecto, puede obtener una vista previa del contenido de la aplicación, incluidas las páginas de exploración y los artículos, para tener una idea del aspecto y el rendimiento de la aplicación en varios dispositivos.
+Con la aplicación Mobile On-Demand Preflight, puede ver todos los proyectos a los que tiene acceso. Una vez que seleccione un proyecto, puede obtener una vista previa del contenido de la aplicación, incluida la exploración de páginas y artículos, para tener una idea del aspecto y el rendimiento de la aplicación en varios dispositivos.
 
 >[!NOTE]
 >
@@ -39,13 +35,13 @@ Con la aplicación Mobile On Demand Preflight, puede ver todos los proyectos a l
 1. Haga clic en los puntos suspensivos (...) en **Administrar artículos** (o Banners/Colecciones).
 1. Seleccionar **Comprobación preliminar** de la barra de acciones.
 1. Clic **Activar comprobación preliminar** del cuadro de diálogo.
-1. La aplicación ya estará lista para la vista previa en la aplicación Mobile On-Demand Preflight.
+1. La aplicación ya está lista para la vista previa en la aplicación Mobile On-Demand Preflight.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->AEM La aplicación Preflight se utiliza para obtener una vista previa del contenido y examinar páginas. Para obtener información detallada sobre la aplicación de comprobaciones, haga clic en [aquí](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>AEM La aplicación Preflight se utiliza para previsualizar contenido y navegar por páginas. Para obtener información detallada sobre la aplicación de comprobaciones, haga clic en [aquí](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Primeros pasos {#getting-ahead}
