@@ -1,19 +1,15 @@
 ---
 title: Configuración de almacenamiento
-seo-title: Storage Configuration
-description: Cómo acceder a la consola de configuración de almacenamiento
-seo-description: How to access the Storage Configuration Console
-uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
+description: Obtenga información acerca de la consola Configuración de almacenamiento como medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 4%
 
 La configuración de almacenamiento es el medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
 
-Esta configuración informa al código AEM Communities AEM de qué implementación del proveedor de recursos de almacenamiento (SRP) se va a utilizar al acceder a UGC y debe reflejar la topología establecida cuando se implementó el.
+Esta configuración informa al código AEM Communities de qué implementación del proveedor de recursos de almacenamiento (SRP) se utiliza al acceder a UGC. Debe reflejar la topología establecida cuando se implementó Adobe Experience Manager AEM ().
 
 Para ver un análisis de las opciones de almacenamiento y las topologías de implementación, visite:
 
@@ -50,9 +46,9 @@ Para seleccionar una opción de almacenamiento que no sea el JCR predeterminado:
 
 ### Acerca del almacenamiento JCR {#about-jcr-storage}
 
-AEM Tenga en cuenta que si no se realiza ninguna selección, el valor predeterminado es el repositorio de, JCR.
+AEM Si no se realiza ninguna selección, el valor predeterminado es el repositorio de, JCR.
 
-JCR es *no* un almacén común compartido por los entornos de creación y publicación. El contenido de la comunidad solo será visible desde el entorno de creación o publicación en el que se creó.
+JCR es *no* un almacén común compartido por los entornos Author y Publish. El contenido de la comunidad solo es visible desde el entorno de creación o publicación en el que se creó.
 
 Visita [Almacén JCR](jsrp.md) para obtener más información.
 

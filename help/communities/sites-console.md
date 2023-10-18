@@ -1,6 +1,6 @@
 ---
 title: Consola Sitios de comunidades
-description: Cómo acceder a la consola Sitios de Communities
+description: Obtenga información sobre cómo acceder a la consola Sitios de Communities para crear, editar y administrar sitios.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3089'
 ht-degree: 4%
 
 ---
@@ -49,7 +49,7 @@ La práctica recomendada, para asegurarse de que el sitio está preparado para a
 
 ## Acceder a la consola Sitios de Communities {#accessing-communities-sites-console}
 
-En el entorno de creación, para llegar a la consola Sitios de Communities:
+En el entorno Autor, para llegar a la consola Sitios de Communities:
 
 * Desde la navegación global: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**
 
@@ -67,7 +67,7 @@ Todos los sitios creados incluyen una función de inicio de sesión, ya que los 
 
 El proceso se inicia seleccionando la variable `Create` en la parte superior de la consola Sitios de Communities.
 
-El proceso de creación es una serie de pasos presentados como paneles que contienen un conjunto de funciones que se van a configurar (presentadas como subpaneles). Es posible pasar a la sección **Siguiente** paso o **Atrás** Vaya al paso anterior antes de comprometer el sitio en el paso final.
+El proceso de creación es una serie de pasos que se presentan como paneles que contienen un conjunto de funciones que se van a configurar (presentadas como subpaneles). Es posible pasar a la sección **Siguiente** paso o **Atrás** Vaya al paso anterior antes de comprometer el sitio en el paso final.
 
 ### Paso 1: Plantilla del sitio {#step-site-template}
 

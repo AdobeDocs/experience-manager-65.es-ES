@@ -1,20 +1,16 @@
 ---
 title: Plantillas de grupo
-seo-title: Group Templates
-description: Cómo acceder a la consola Plantillas de grupo
-seo-description: How to access the Group Templates console
-uuid: 4cf20c91-32b0-4051-a98d-44e4eb50a231
+description: Obtenga información sobre cómo acceder a la consola de plantillas de grupo para un conjunto de páginas precableadas y funciones que forman un sitio de la comunidad.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '543'
 ht-degree: 3%
 
 ---
@@ -27,15 +23,15 @@ Un grupo de comunidad se incorpora a una plantilla de sitio incluyendo el [Funci
 
 A partir de comunidades [paquete de funciones 1](/help/communities/deploy-communities.md#latestfeaturepack)Además, es posible anidar grupos incluyendo la función Grupos dentro de una plantilla de grupo.
 
-En el momento en que se realiza una acción para crear un nuevo grupo de comunidad, se selecciona la plantilla (estructura) del grupo. La selección depende de cómo se configuró la función Grupos cuando se agregó al sitio o a la plantilla del grupo.
+En el momento en que se realiza una acción para crear un grupo de comunidad, se selecciona la plantilla (estructura) del grupo. La selección depende de cómo se configuró la función Grupos cuando se agregó al sitio o a la plantilla del grupo.
 
 >[!NOTE]
 >
->Las consolas para la creación de [sitios de la comunidad](/help/communities/sites-console.md), [plantillas de sitio de comunidad](/help/communities/sites.md), [plantillas de grupo de comunidad](/help/communities/tools-groups.md) y [funciones de comunidad](/help/communities/functions.md) solo se utilizan en el entorno de creación.
+>Las consolas para la creación de [sitios de la comunidad](/help/communities/sites-console.md), [plantillas de sitio de comunidad](/help/communities/sites.md), [plantillas de grupo de comunidad](/help/communities/tools-groups.md), y [funciones de comunidad](/help/communities/functions.md) solo se utilizan en el entorno de creación.
 
 ## Consola de plantillas de grupo {#group-templates-console}
 
-Para llegar a la consola de plantillas de grupos en el entorno de AEM Author:
+AEM Para llegar a la consola de plantillas de grupo en el entorno de autor de la:
 
 * Seleccionar **Herramientas | Communities | Plantillas de grupo,** desde la navegación global.
 
@@ -45,9 +41,9 @@ Esta consola muestra las plantillas desde las que se puede crear una [sitio comu
 
 ## Crear plantilla del grupo {#create-group-template}
 
-Para empezar a crear una nueva plantilla de grupo, seleccione `Create`.
+Para empezar a crear una plantilla de grupo, seleccione `Create`.
 
-Esto mostrará el panel Editor del sitio, que contiene 3 subpaneles:
+Esto abre el panel Editor del sitio, que contiene tres subpaneles:
 
 ### Información básica {#basic-info}
 
@@ -57,15 +53,15 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
 * **Nombre de la plantilla del grupo nuevo**
 
-   ID del nombre de la plantilla.
+  ID del nombre de la plantilla.
 
 * **Descripción**
 
-   La descripción de la plantilla.
+  La descripción de la plantilla.
 
 * **Desactivado/Habilitado**
 
-   Conmutador que controla si la plantilla es referenciable.
+  Conmutador que controla si la plantilla es referenciable.
 
 #### Miniatura    {#thumbnail}
 
@@ -85,9 +81,9 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
 ![Editor de plantillas de grupo](assets/template-editor.png)
 
-Para agregar funciones de la comunidad, arrastre desde el lado derecho hacia la izquierda en el orden en que deben aparecer los vínculos de menú del sitio. Los estilos se aplicarán a la plantilla durante la creación del sitio.
+Para agregar funciones de la comunidad, arrastre desde el lado derecho hacia la izquierda en el orden en que deben aparecer los vínculos de menú del sitio. Los estilos se aplican a la plantilla durante la creación del sitio.
 
-Por ejemplo, si desea un foro, arrastre la función del foro desde la biblioteca y suéltela debajo del generador de plantillas. Esto hará que se abra el cuadro de diálogo de configuración del foro. Consulte la [consola de funciones](/help/communities/functions.md) para obtener información sobre los cuadros de diálogo de configuración.
+Por ejemplo, si desea un foro, arrastre la función del foro desde la biblioteca y suéltela debajo del generador de plantillas. Esto da como resultado la apertura del cuadro de diálogo de configuración del foro. Consulte la [consola de funciones](/help/communities/functions.md) para obtener información sobre los cuadros de diálogo de configuración.
 
 Continúe arrastrando y soltando cualquier otra función de la comunidad que desee para un sitio (grupo) de subcomunidad basado en esta plantilla.
 
@@ -99,6 +95,6 @@ Una vez que todas las funciones deseadas se hayan colocado en el área del gener
 
 Al ver los grupos de la comunidad en el [Consola de plantillas de grupo](#group-templates-console), es posible seleccionar una plantilla de grupo existente para editarla.
 
-La edición de una plantilla de grupo no afectará a los sitios de la comunidad ya creados a partir de la plantilla. Es posible hacer lo siguiente [editar un sitio de la comunidad](/help/communities/sites-console.md#modify-structure)La estructura de en su lugar.
+La edición de una plantilla de grupo no afecta a los sitios de la comunidad ya creados a partir de la plantilla. Es posible hacer lo siguiente [editar un sitio de la comunidad](/help/communities/sites-console.md#modify-structure)La estructura de en su lugar.
 
 Este proceso proporciona los mismos paneles que [creación de una plantilla de grupo](#create-group-template).
