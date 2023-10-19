@@ -1,14 +1,8 @@
 ---
 title: AEM Preguntas más frecuentess
-seo-title: AEM 6.4 frequently asked questions
 description: AEM Utilice estas preguntas frecuentes para comprender, configurar y solucionar problemas o flujos de trabajo comunes en los flujos de trabajo de.
-seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
-contentOwner: jsyal
-discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
-docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%
@@ -42,7 +36,7 @@ Ver el `Initiator` para determinar cuál fue el iniciador de una solicitud. AJAX
 
 Para crear la función de copia de idioma, los autores de contenido necesitan permisos en `/content/projects` ubicación.
 
-Si uno requiere que los autores administren también proyectos, la solución es agregar al autor a `project-administrators` grupo.
+Si uno requiere que los autores administren también proyectos, la solución es agregar al autor a `projects-administrators` grupo.
 
 #### ¿Cómo cambiar el formato al crear una copia de idioma para un proyecto? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
@@ -97,7 +91,7 @@ Si el usuario que carga los archivos de película no tiene permisos de eliminaci
 Cuando crea una copia de idioma mediante la IU táctil (**Referencias** -> **Actualizar copia de idioma**), se crea una nueva carpeta DAM en el nuevo idioma y se hace referencia a los recursos desde allí.
 
 Esta es la configuración predeterminada para las configuraciones de OOTB. Puede establecer **Traducir recursos de la página** = **No traducir** en Configuraciones de traducción.
-AEM Para la versión 6.4, **Herramientas** > **Cloud Services** > **Servicios de nube de traducción**.
+AEM Para la versión 6.4, **Herramientas** > **Cloud Service** > **Servicios de nube de traducción**.
 
 #### AEM AEM AEM ¿Cómo desactivar un componente de la que causa un crecimiento exponencial para la tienda de segmentos de la (6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 

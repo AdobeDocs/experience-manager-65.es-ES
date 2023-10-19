@@ -1,16 +1,8 @@
 ---
 title: Proyectos
-seo-title: Projects
 description: Los proyectos permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 34%
@@ -223,7 +215,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para permit
 |---|---|---|---|
 | Observador | Un usuario con esta función puede ver los detalles del proyecto, incluido su estado. | Permisos de solo lectura en un proyecto | grupo `workflow-users` |
 | Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados<br>Privilegios para cargar una lista de tomas, una sesión fotográfica, y revisar y aprobar recursos<br>Permiso de escritura en `/etc/commerce`<br>Modificación del permiso en un proyecto específico | grupo `workflow-users` |
-| Propietario | Un usuario con esta función puede crear un proyecto, iniciar el trabajo en un proyecto y mover los recursos aprobados a la carpeta de producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo para poder crear un proyecto<br>`project-administrators` para poder crear un proyecto y mover recursos |
+| Propietario | Un usuario con esta función puede crear un proyecto, iniciar el trabajo en un proyecto y mover los recursos aprobados a la carpeta de producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo para poder crear un proyecto<br>`projects-administrators` para poder crear un proyecto y mover recursos |
 
 Para proyectos creativos, también se proporcionan funciones adicionales, como fotógrafos. Puede utilizar estas funciones para derivar funciones personalizadas para un proyecto específico.
 

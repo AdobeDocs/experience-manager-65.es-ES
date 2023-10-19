@@ -2,7 +2,7 @@
 title: Administración de proyectos de traducción
 description: Obtenga información sobre cómo administrar proyectos de traducción en Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 55%
@@ -433,7 +433,7 @@ Puede crear manualmente un proyecto de traducción si prefiere utilizar la conso
 
 >[!NOTE]
 >
->Para crear un proyecto, la cuenta debe ser miembro del grupo `project-administrators`.
+>Para crear un proyecto, la cuenta debe ser miembro del grupo `projects-administrators`.
 
 Cuando cree manualmente un proyecto de traducción, debe proporcionar valores para las siguientes propiedades relacionadas con la traducción, además de las [propiedades básicas](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 
