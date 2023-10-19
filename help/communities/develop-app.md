@@ -1,29 +1,25 @@
 ---
 title: Desarrollar aplicación de zona protegida
-seo-title: Develop Sandbox Application
-description: Desarrollar aplicaciones mediante scripts de base
-seo-description: Develop application using foundation scripts
-uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
+description: Obtenga información sobre cómo desarrollar una aplicación de zona protegida que utilice secuencias de comandos de base e incluya la capacidad de habilitar la creación con componentes de Communities.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 7%
+source-wordcount: '593'
+ht-degree: 6%
 
 ---
 
 # Desarrollar aplicación de zona protegida  {#develop-sandbox-application}
 
-En esta sección, ahora que la plantilla se ha configurado en la variable [aplicación inicial](initial-app.md) y las páginas iniciales establecidas en la sección [contenido inicial](initial-content.md) , la aplicación se puede desarrollar utilizando secuencias de comandos de base, incluida la capacidad de habilitar la creación con componentes de Communities. Al final de esta sección, el sitio web estará en funcionamiento.
+Ahora que la plantilla está configurada en la sección [aplicación inicial](initial-app.md) y las páginas iniciales establecidas en la sección [contenido inicial](initial-content.md) , puede desarrollar la aplicación. Para ello, utilice scripts de base que incluyan la capacidad de habilitar la creación con componentes de Communities. Al final de esta sección, tiene un sitio web que funciona completamente.
 
 ## Uso de scripts de página base {#using-foundation-page-scripts}
 
-El script predeterminado, creado cuando se añadió el componente que procesa la plantilla de página de reproducción, se modifica para incluir head.jsp de la página de base y body.jsp local.
+El script predeterminado, creado cuando se añadió el componente que procesa la plantilla de página de reproducción, se modifica para incluir el head.jsp de la página de base y un body.jsp local.
 
 ### Tipo de superrecurso {#super-resource-type}
 
@@ -66,9 +62,9 @@ Uso del CRXDE Lite:
    %>
    ```
 
-1. Consciente de las etiquetas de script de apertura/cierre, reemplace &quot; // TODO ...&quot; por inclusiones de scripts para las partes de la cabeza y el cuerpo de &lt;html>.
+1. Teniendo en cuenta las etiquetas de script de apertura/cierre, reemplace &quot; // TODO ...&quot; por `includes` de guiones para las partes de la cabeza y el cuerpo de &lt;html>.
 
-   Con un super tipo de `foundation/components/page`, cualquier script no definido en esta misma carpeta se resolverá en un script en `/apps/foundation/components/page` carpeta (si existe), de lo contrario a una secuencia de comandos en `/libs/foundation/components/page` carpeta.
+   Con un super tipo de `foundation/components/page`, cualquier script no definido en esta misma carpeta se resolverá en un script en `/apps/foundation/components/page` carpeta (si existe), o bien a un script en `/libs/foundation/components/page` carpeta.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -88,9 +84,9 @@ Uso del CRXDE Lite:
    </html>
    ```
 
-1. El script de base `head.jsp` no necesita superponerse, pero el script de base `body.jsp` está vacío.
+1. Superponer el script de base `head.jsp` no es necesario, pero la secuencia de comandos foundation `body.jsp` está vacío.
 
-   Para configurar la creación, haga clic en Superponer `body.jsp` con una secuencia de comandos local e incluya un sistema de párrafos (parsys) en el cuerpo:
+   Para configurar la creación, haga clic en Superposición `body.jsp` con una secuencia de comandos local e incluya un sistema de párrafos (parsys) en el cuerpo:
 
    1. Navegue hasta `/apps/an-scf-sandbox/components`.
    1. Seleccione el `playpage` nodo.
@@ -162,13 +158,13 @@ Además, elija **[!UICONTROL General]** componentes, como
 >
 >Los componentes habilitados para el par de página se almacenan en el repositorio como el valor del `components` propiedad del
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+>Nodo `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
 
 ## Página de aterrizaje {#landing-page}
 
 En un entorno de varios idiomas, la página raíz incluiría una secuencia de comandos que analizaría la solicitud del cliente para determinar el idioma preferido.
 
-En este ejemplo sencillo, la página raíz se está configurando estáticamente para redirigir a la página en inglés, que puede desarrollarse en el futuro para que sea la página de aterrizaje principal con un vínculo a la página de reproducción.
+En este ejemplo, la página raíz se está configurando estáticamente para redirigir a la página en inglés, que puede desarrollarse en el futuro para que sea la página de aterrizaje principal con un vínculo a la página de reproducción.
 
 Cambie la dirección URL del explorador a la página raíz: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
@@ -181,6 +177,6 @@ Cambie la dirección URL del explorador a la página raíz: `http://localhost:45
 
 * Haga clic en **[!UICONTROL Aceptar]**
 
-Una vez publicado el sitio, la navegación a la página raíz de una instancia de publicación redireccionará a la página en inglés.
+Una vez publicado el sitio, si navega a la página raíz de una instancia de publicación, se redirige a la página en inglés.
 
-El último paso antes de jugar con los componentes SCF de las comunidades es añadir una carpeta de biblioteca de cliente (clientlibs) .... [Añadir Clienlibs](add-clientlibs.md)
+El último paso antes de jugar con los componentes del SCF de Communities es añadir una carpeta de biblioteca de cliente (clientlibs) .... [Añadir Clientlibs](add-clientlibs.md)

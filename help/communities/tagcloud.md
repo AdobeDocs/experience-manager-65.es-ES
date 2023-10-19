@@ -1,18 +1,14 @@
 ---
 title: Uso de Social Tag Cloud
-seo-title: Using Social Tag Cloud
-description: Adición de un componente de Nube de etiquetas social a una página
-seo-description: Adding a Social Tag Cloud component to a page
-uuid: 8c400030-976c-457a-bb5f-e473909647a9
+description: Aprenda a añadir un componente de Nube de etiquetas social a una página que permita a los miembros de la comunidad conectados identificar rápidamente los temas de tendencia y localizar el contenido etiquetado.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
@@ -29,7 +25,7 @@ Esta página documenta los `Social Tag Cloud` configuración del cuadro de diál
 
 Para obtener información detallada para los desarrolladores, consulte [Tag Essentials](tag.md).
 
-Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
+Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) para obtener información sobre cómo crear y administrar etiquetas, y a qué etiquetas de contenido se han aplicado.
 
 ## Adición de una nube de etiquetas social {#adding-a-social-tag-cloud}
 
@@ -37,13 +33,13 @@ Para agregar un `Social Tag Cloud` a una página en modo de autor, utilice el na
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](tag.md#essentials-for-client-side) están incluidos, así es como se `Social Tag Cloud` el componente aparecerá:
+Si la variable [bibliotecas requeridas del lado del cliente](tag.md#essentials-for-client-side) están incluidos, así es como se `Social Tag Cloud` el componente aparece:
 
 ![social-tag](assets/social-tag.png)
 
 ## Configuración de Social Tag Cloud {#configuring-social-tag-cloud}
 
-Seleccione el colocado `Social Tag Cloud` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Social Tag Cloud` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
@@ -73,7 +69,7 @@ Identifique las etiquetas UGC que desea mostrar. Las opciones desplegables son:
 
 ## Cambiar la visualización de Nube de etiquetas social {#change-display-of-social-tag-cloud}
 
-Para editar la visualización de **Nube de etiquetas social**, introduzca [Modo de diseño](../../help/sites-authoring/default-components-designmode.md) y haga doble clic en el `Social Tag Cloud` para abrir un cuadro de diálogo con una pestaña adicional.
+Para editar la visualización de **Nube de etiquetas social**, introduzca [Modo de diseño](../../help/sites-authoring/default-components-designmode.md) y haga doble clic en el elemento colocado `Social Tag Cloud` para abrir un cuadro de diálogo con una pestaña adicional.
 
 Uso del **[!UICONTROL Nube de etiquetas social (Diseño)]** , especifique cómo se muestran las etiquetas. Una etiqueta puede ser una etiqueta simple, una sola palabra en el área de nombres predeterminada o una taxonomía jerárquica:
 
@@ -104,8 +100,8 @@ Uso del **[!UICONTROL Nube de etiquetas social (Diseño)]** , especifique cómo 
 
   `Geometrixx Media (the namespace)`, `Gadgets`, y `Cars`
 
-   * Activado: solo `Cars` se mostrará, si se aplica.
-   * Desactivado: `Geometrixx Media` y `Gadgets`así como `Cars` se mostrará, si se aplica.
+   * Activado: solo `Cars` se muestran, si se aplican.
+   * Desactivado: `Geometrixx Media`, `Gadgets`, y `Cars` se muestran, si se aplican.
 
   Una etiqueta simple es una etiqueta de hoja.
 

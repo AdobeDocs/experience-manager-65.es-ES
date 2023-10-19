@@ -1,19 +1,15 @@
 ---
 title: Elementos esenciales de puntuación e insignias
-seo-title: Scoring and Badges Essentials
-description: Información general sobre las características Puntuación e insignias
-seo-description: Scoring and Badges feature overview
-uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
+description: Obtenga información sobre cómo la función de puntuación e insignias de las comunidades de Adobe Experience Manager identifica y premia a los miembros de la comunidad.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -68,9 +64,9 @@ Por ejemplo, busque `this.isAssigned` in `/libs/social/forum/components/hbs/topi
 {{/each}}
 ```
 
-Si el valor es True, isAssigned indica que el distintivo se ha asignado a una función y que el distintivo debe mostrarse como texto.
+Si el valor es True, `isAssigned` indica que el distintivo se asignó a un rol y que el distintivo debe mostrarse como texto.
 
-Si es false, isAssigned indica que el distintivo se concedió por una puntuación ganada y que el distintivo debe mostrarse como una imagen.
+Si es false, `isAssigned` indica que el distintivo se concedió por una puntuación ganada y que el distintivo debe mostrarse como una imagen.
 
 Cualquier cambio en este comportamiento debe realizarse en un script personalizado (anulación o superposición). Consulte [Personalización del lado del cliente](/help/communities/client-customize.md).
 
@@ -93,13 +89,13 @@ Para configurar rápidamente un archivo slinglog:
    1. Introduzca un nombre para **Archivo de registro**, por ejemplo
 
       * logs/scoring-debug.log
+
    1. Introducir dos **Logger** Entradas (clase) (usando `+` icon)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
+
    1. Seleccione **Guardar**
-
-
 
 ![debug-scoring-log](assets/debug-scoring-log.png)
 
@@ -115,7 +111,7 @@ Para ver las entradas de registro:
 
    * El archivo de registro se encuentra en &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*nombre-archivo-registro*>.log
 
-   * Por ejemplo, `.../crx-quickstart/logs/scoring-debug.log`. 
+   * Por ejemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![registro de puntuación](assets/scoring-log.png)
 
@@ -127,7 +123,7 @@ Las descripciones para acceder a los datos de puntuación y distintivos utilizan
 
 **JSRP en autor**: la experimentación en el entorno de creación da como resultado un CGU que solo es visible desde el entorno de creación.
 
-**JSRP en publicación**: del mismo modo, si realiza pruebas en el entorno de publicación, es necesario acceder a un CRXDE Lite con privilegios administrativos en una instancia de publicación. Si la instancia de publicación se ejecuta en [modo de producción](/help/sites-administering/production-ready.md) (nosamplecontent runmode), es necesario [habilitar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP en publicación**: del mismo modo, si realiza pruebas en el entorno de publicación, es necesario acceder a un CRXDE Lite con privilegios administrativos en una instancia de publicación. Si la instancia de publicación se ejecuta en [modo de producción](/help/sites-administering/production-ready.md) (modo de ejecución nosamplecontent), es necesario [habilitar CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 La ubicación base de UGC en JSRP es `/content/usergenerated/asi/jcr/`.
 
@@ -151,7 +147,7 @@ AEM Las capturas de pantalla de los datos del repositorio proceden de la configu
    * Uso del sitio Tutorial de introducción (participación) creado durante la [tutorial de introducción](/help/communities/getting-started.md)
    * Busque el nodo de la página del foro
 
-      `/content/sites/engage/en/forum/jcr:content`
+     `/content/sites/engage/en/forum/jcr:content`
 
    * Añadir propiedades de puntuación e insignias
 
@@ -167,22 +163,21 @@ AEM Las capturas de pantalla de los datos del repositorio proceden de la configu
 
    * Busque el nodo del componente del foro
 
-      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+     `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Para mostrar insignias, agregue la propiedad
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Un usuario inicia sesión, crea un tema de foro y se le otorga una insignia de bronce
-
 
 1. AEM Un sitio *sin* un id único:
 
    * Uso del [Guía de componentes de la comunidad](/help/communities/components-guide.md)
    * Busque el nodo de la página del foro
 
-      `/content/community-components/en/forum/jcr:content`
+     `/content/community-components/en/forum/jcr:content`
 
    * Añadir propiedades de puntuación e insignias
 
@@ -198,15 +193,14 @@ AEM Las capturas de pantalla de los datos del repositorio proceden de la configu
 
    * Busque el nodo del componente del foro
 
-      `/content/community-components/en/forum/jcr:content/content/forum`
+     `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Para mostrar insignias, agregue la propiedad
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Un usuario inicia sesión, crea un tema de foro y se le otorga una insignia de bronce
-
 
 1. A un usuario se le asigna un distintivo de moderador mediante cURL :
 
@@ -230,7 +224,6 @@ AEM Las capturas de pantalla de los datos del repositorio proceden de la configu
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
 >* AEM Creación de imágenes de insignias únicas para diferentes sitios de
-
 
 ### UGC de puntuación de acceso {#access-scoring-ugc}
 

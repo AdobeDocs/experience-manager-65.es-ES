@@ -1,14 +1,14 @@
 ---
 title: Configurar Dispatcher para comunidades
-description: Configuración de Dispatcher para AEM Communities
+description: Aprenda a configurar Dispatcher para AEM Communities a fin de garantizar el funcionamiento adecuado de los sitios de la comunidad.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '653'
 ht-degree: 12%
 
 ---
@@ -62,7 +62,7 @@ La configuración de OSGi **AEM ACS Commons - Encabezado de control de caché de
   *(obligatorio)* Una o más rutas a páginas de la comunidad. Por ejemplo, `/content/sites/engage/(.*)`.
 
 * **Edad máxima de control de caché**
-  *(obligatorio)* Edad máxima (en segundos) que se agregará al encabezado Control de caché. El valor debe ser bueno que cero (0).
+  *(obligatorio)* Edad máxima (en segundos) que se agregará al encabezado Control de caché. El valor debe ser mayor que cero (0).
 
 ## Filtros de Dispatcher {#dispatcher-filters}
 
@@ -70,7 +70,7 @@ La sección /filter del `dispatcher.any` el archivo está documentado en [Config
 
 En esta sección se describen las entradas que probablemente sean necesarias para el correcto funcionamiento de las funciones de Communities.
 
-Los nombres de las propiedades de filtro siguen la convención de utilizar un número de cuatro dígitos para indicar el orden en que se aplican los patrones de filtro. Cuando se aplican varios patrones de filtros a una solicitud, el último que se aplica es efectivo. Por lo tanto, el primer patrón de filtro se utiliza a menudo para denegar todo, de modo que los siguientes patrones sirven para restaurar el acceso de forma controlada.
+Los nombres de las propiedades de filtro siguen la convención de utilizar un número de cuatro dígitos para indicar el orden en que se aplican los patrones de filtro. Cuando se aplican varios patrones de filtro a una solicitud, el último que se aplica es efectivo. Por lo tanto, el primer patrón de filtro se utiliza a menudo para denegar todo, de modo que los siguientes patrones sirven para restaurar el acceso de forma controlada.
 
 Los siguientes ejemplos utilizan nombres de propiedad que es probable que deban modificarse para adaptarse a cualquier `dispatcher.any` archivo.
 

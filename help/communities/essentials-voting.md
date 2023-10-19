@@ -1,18 +1,14 @@
 ---
 title: Voting Essentials
-seo-title: Voting Essentials
-description: Resumen del componente de votación
-seo-description: Voting component overview
-uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
+description: Aprenda a utilizar el componente Votación que permite a los miembros clasificar un fragmento de contenido en particular seleccionando flechas arriba o abajo para indicar su opinión.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '301'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ El componente de votación, un [corresponder](tally.md) subclase, es una herrami
 
 Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con un único `tally name` propiedad.
 
-No se admite la publicación anónima de un voto. Los visitantes del sitio deben registrarse e iniciar sesión para participar en la votación solo una vez. El visitante (miembro) registrado puede cambiar su voto en cualquier momento.
+No se admite la publicación anónima de un voto. Los visitantes del sitio deben registrarse e iniciar sesión para participar en la votación solo una vez. El visitante (miembro) conectado puede cambiar su voto en cualquier momento.
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
@@ -60,9 +56,9 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

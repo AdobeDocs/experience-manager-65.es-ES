@@ -1,14 +1,14 @@
 ---
 title: Forum Essentials
-description: Resumen del foro
+description: Obtenga información acerca de los aspectos básicos del trabajo con la función Foro en las comunidades de Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '259'
 ht-degree: 2%
 
 ---

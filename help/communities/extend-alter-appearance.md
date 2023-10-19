@@ -1,26 +1,22 @@
 ---
 title: Modificar el aspecto visual (HBS)
-seo-title: Alter the Appearance
-description: Modificación de los scripts HBS
-seo-description: Modify the HBS scripts
-uuid: cff24505-dbb3-4312-9b1b-c1693b8d1c98
+description: Aprenda a cambiar la apariencia (HBS) editando los scripts de HBS.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
 # Modificar el aspecto visual (HBS) {#alter-the-appearance-hbs}
 
-Ahora que los componentes del sistema de comentarios personalizado del directorio de aplicaciones (/apps) están instalados, con un resourceSuperType que hace referencia al sistema de comentarios predeterminado y al modelo/vista personalizado registrado, es posible modificar la implementación.
+Ahora que los componentes del sistema de comentarios personalizado del directorio de aplicaciones (/apps) están instalados, con un resourceSuperType que hace referencia al sistema de comentarios predeterminado y el modelo/vista personalizado registrado, puede editar la implementación.
 
 Para una demostración sencilla, se elimina una característica visual, el avatar que se muestra del usuario que ha iniciado sesión y que publica un comentario.
 
@@ -36,21 +32,21 @@ Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
    * Comente la etiqueta que incluye el avatar para una publicación de comentario (~ línea 21):
 
-      ```
-        <!--
-         <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-         -->
-      ```
+     ```
+       <!--
+        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+        -->
+     ```
 
 * Abrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Convierta en comentario la etiqueta que incluye el avatar para la siguiente entrada de comentario (~ línea 44):
 
-      ```
-        <!--
-         <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-         -->
-      ```
+     ```
+       <!--
+        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+        -->
+     ```
 
 * Seleccionar **Guardar todo**
 

@@ -1,28 +1,24 @@
 ---
 title: Aplicación de zona protegida inicial
-seo-title: Initial Sandbox Application
-description: Creación de plantillas, componentes y scripts
-seo-description: Create template, component, and script
-uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
+description: Aprenda a utilizar la plantilla Contenido que se utiliza para crear páginas de contenido y un componente y un script que se utilizan para procesar páginas de sitios web.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
 
 # Aplicación de zona protegida inicial {#initial-sandbox-application}
 
-En esta sección, creará lo siguiente:
+En esta sección, cree lo siguiente:
 
-* El **[plantilla](#createthepagetemplate)** que se utilizará para crear páginas de contenido en el sitio web de ejemplo.
-* El **[componente y script](#create-the-template-s-rendering-component)** que se utilizará para procesar las páginas del sitio web.
+* El **[plantilla](#createthepagetemplate)** que se utiliza para crear páginas de contenido en el sitio web de ejemplo.
+* El **[componente y script](#create-the-template-s-rendering-component)** que se utiliza para procesar las páginas del sitio web.
 
 ## Creación de la plantilla de contenido {#create-the-content-template}
 
@@ -32,7 +28,7 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
 1. En el panel del explorador del CRXDE Lite:
 
-   * Seleccionar `/apps/an-scf-sandbox/templates`
+   * Seleccione lo siguiente `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear plantilla]**
 
 1. En el cuadro de diálogo Crear plantilla, escriba los siguientes valores y haga clic en **[!UICONTROL Siguiente]**:
@@ -45,13 +41,13 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
    Label se utiliza para el nombre del nodo.
 
-   El Tipo de recurso aparece en la `playpage`El nodo jcr:content de como propiedad `sling:resourceType`. Identifica el componente (recurso) que procesa el contenido cuando un explorador lo solicita.
+   El Tipo de recurso aparece en la `playpage`de `jcr:content` nodo como propiedad `sling:resourceType`. Identifica el componente (recurso) que procesa el contenido cuando un explorador lo solicita.
 
    En este caso, todas las páginas creadas con `playpage` Las plantillas son procesadas por `an-scf-sandbox/components/playpage` componente. Por convención, la ruta al componente es relativa, lo que permite a Sling buscar el recurso primero en la `/apps` y, si no se encuentra, en la carpeta `/libs` carpeta.
 
    ![create-content-template](assets/create-content-template-1.png)
 
-1. Si utiliza copiar/pegar, asegúrese de que el valor del Tipo de recurso no tenga espacios iniciales o finales.
+1. Si utiliza copiar/pegar, asegúrese de que el valor Tipo de recurso no tenga espacios iniciales o finales.
 
    Haga clic en **[!UICONTROL Siguiente]**.
 
@@ -63,7 +59,7 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
    Cuando un autor crea una página a continuación `/content`, el `playpage` La plantilla titulada &quot;An SCF Sandbox Page Template&quot; aparece en una lista de plantillas disponibles para su uso.
 
-   Una vez creada la página raíz a partir de la plantilla, el acceso a la plantilla se podría restringir a este sitio web modificando la propiedad para incluir la ruta raíz en la expresión regular, es decir.
+   Una vez creada la página raíz a partir de la plantilla, el acceso a la plantilla podría restringirse a este sitio web editando la propiedad para incluir la ruta raíz en la expresión regular.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -73,11 +69,11 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
    Clic **[!UICONTROL Siguiente]** en el **[!UICONTROL Principales permitidos]** panel.
 
-   Clic **[!UICONTROL Siguiente]** en el **[!UICONTROL Elementos secundarios permitidos]** paneles.
+   Clic **[!UICONTROL Siguiente]** en el **[!UICONTROL Elementos secundarios permitidos]** panel.
 
    Haga clic en **[!UICONTROL Aceptar]**.
 
-1. Una vez que haga clic en Aceptar y termine de crear la plantilla, verá que se muestran triángulos rojos en las esquinas de los valores de la pestaña Propiedades para la nueva plantilla `playpage` plantilla. Estos triángulos rojos indican ediciones que no se han guardado.
+1. Después de hacer clic en Aceptar y terminar de crear la plantilla, observe los triángulos rojos que se muestran en las esquinas de los valores de la ficha Propiedades para la nueva plantilla `playpage` plantilla. Estos triángulos rojos indican ediciones que no se han guardado.
 
    Clic **[!UICONTROL Guardar todo]** para guardar la nueva plantilla en el repositorio.
 
@@ -113,6 +109,6 @@ Cree el *componente* que define el contenido y procesa cualquier página creada 
 
    >[!CAUTION]
    >
-   >La correspondencia entre la ruta al componente de página de reproducción y la propiedad sling:resourceType de la plantilla de página de reproducción es crucial para el correcto funcionamiento del sitio web.
+   >La correspondencia entre la ruta al componente de página de reproducción y el `sling:resourceType` La propiedad de la plantilla de página de reproducción es crucial para el correcto funcionamiento del sitio web.
 
    ![verify-template-component](assets/verify-template-component.png)

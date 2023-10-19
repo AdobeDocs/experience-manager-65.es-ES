@@ -1,18 +1,14 @@
 ---
 title: Servicio ConvertPDF
-seo-title: ConvertPDF Service
-description: Utilizar el servicio AEM Forms ConvertPDF para convertir documentos PDF a archivos PostScript o de imagen.
-seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
-uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
+description: Utilice el servicio Adobe Experience Manager Forms ConvertPDF para convertir documentos de PDF en archivos PostScript o archivos de imagen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 exl-id: 575bab27-d973-47fa-a0da-fa889cec6f27
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '400'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +67,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
  // options object to pass to toPS API
  ToPSOptionsSpec toPSOptions = new ToPSOptionsSpec();
 
- // mandatory option to pass, sets PostScript langauge
+ // mandatory option to pass, sets PostScript language
  toPSOptions.setPsLevel(PSLevel.LEVEL_3);
 
  // invoke toPS method to convert inputPDF to PostScript

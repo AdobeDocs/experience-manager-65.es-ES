@@ -1,14 +1,14 @@
 ---
 title: Contenido inicial de zona protegida
-description: Crear contenido
+description: Aprenda a utilizar la plantilla Página en la zona protegida para crear una página principal para una versión en inglés de un sitio web y una página secundaria de la página principal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '490'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ En esta sección, cree las siguientes páginas, que utilizan la variable [planti
 
    * Reproducción SCF: elemento secundario de la página principal en la que se va a reproducir.
 
-Aunque este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md), está diseñado para que la página raíz pueda implementar la detección del idioma preferido del usuario a través del encabezado del HTML y redirigir a la página principal adecuada para el idioma. La convención es utilizar el código de país de dos letras para el nombre del nodo de la página como, por ejemplo, &quot;en&quot; para inglés y &quot;fr&quot; para francés.
+Este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md). En su lugar, está diseñado para que la página raíz pueda implementar la detección del idioma preferido del usuario a través del encabezado del HTML y redirigir a la página principal adecuada para el idioma. La convención es utilizar el código de país de dos letras para el nombre del nodo de la página como, por ejemplo, &quot;en&quot; para inglés y &quot;fr&quot; para francés.
 
 ## Crear primeras páginas {#create-first-pages}
 

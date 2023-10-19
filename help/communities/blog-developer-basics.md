@@ -1,19 +1,15 @@
 ---
 title: Blog Essentials
-seo-title: Blog Essentials
-description: Resumen del blog
-seo-description: Blog overview
-uuid: 714cf70c-76a0-4be6-9163-a31ac6bd1643
+description: Aprenda a añadir la función Blog a una página para que los miembros de la comunidad que inicien sesión puedan publicar artículos de blog.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '451'
 ht-degree: 2%
 
 ---
@@ -32,7 +28,7 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
-La función de blog consta de dos componentes principales que están disponibles al agregar el [Función Blog](/help/communities/functions.md#blog-function) o añadiendo los componentes a una página en modo de edición de autor.
+La función de blog está compuesta por dos componentes principales disponibles mediante la adición de [Función Blog](/help/communities/functions.md#blog-function) o añadiendo los componentes a una página en modo de edición de autor.
 
 ### Blog {#blog}
 
@@ -79,15 +75,15 @@ La función de blog consta de dos componentes principales que están disponibles
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [API de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Extremos del blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Extremos del blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](/help/communities/server-customize.md)
 
 ### Función Blog {#blog-function}
 
-Una estructura de sitio de la comunidad que incluye [Función Blog](/help/communities/functions.md#blog-function) habría configurado `Blog` y `Blog Sidebar` componentes. La función Blog admite la identificación de [grupo de usuarios miembros privilegiados](/help/communities/users.md#privileged-members-group).
+Una estructura de sitio de la comunidad que incluye [Función Blog](/help/communities/functions.md#blog-function) tiene `Blog` y `Blog Sidebar` componentes configurados. La función Blog admite la identificación de [grupo de usuarios miembros privilegiados](/help/communities/users.md#privileged-members-group).
 
 ### Acceso a las entradas de blog (UGC) {#accessing-blog-entries-ugc}
 
@@ -107,7 +103,7 @@ Consulte :
 
 ## Editor principal {#primary-publisher}
 
-Cuando la implementación es un conjunto de servidores de publicación, es necesario identificar un editor principal que sondeará los artículos programados para su publicación.
+Cuando la implementación es un conjunto de servidores de publicación, es necesario identificar un editor principal que sondee los artículos que están programados para publicarse.
 
 Consulte [Editor principal](/help/communities/deploy-communities.md#primary-publisher) para obtener más información.
 

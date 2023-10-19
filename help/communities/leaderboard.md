@@ -1,19 +1,15 @@
 ---
 title: Leaderboard Essentials
-seo-title: Leaderboard Essentials
-description: Resumen de características de clasificación
-seo-description: Leaderboard feature overview
-uuid: 815a6928-b147-496d-9751-13159ad1304d
+description: Aprenda a configurar la puntuación y los distintivos de las comunidades para que pueda trabajar con el componente Tabla de posiciones en las comunidades de Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 exl-id: fd1b1749-13f9-4079-ae39-348676105852
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 6%
+source-wordcount: '112'
+ht-degree: 5%
 
 ---
 

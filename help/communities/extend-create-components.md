@@ -1,25 +1,21 @@
 ---
 title: Creación de componentes
-seo-title: Create the Components
-description: Creación del componente Comentarios
-seo-description: Create the Comments component
-uuid: ea6e00d4-1db7-40ef-ae49-9ec55df58adf
+description: Obtenga información sobre cómo ampliar componentes mediante el sistema de comentarios, que está compuesto por los componentes Comentarios y Comentarios.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '634'
 ht-degree: 5%
 
 ---
 
 # Creación de componentes  {#create-the-components}
 
-El ejemplo de ampliación de componentes utiliza el sistema de comentarios, que en realidad está compuesto por dos componentes
+El ejemplo de ampliación de componentes utiliza el sistema de comentarios, que está compuesto por dos componentes.
 
 * Comentarios: el sistema de comentarios envolvente que es el componente colocado en una página.
 * Comentario: componente que captura una instancia de un comentario publicado.
@@ -36,7 +32,7 @@ Ambos componentes deben ponerse en marcha, especialmente si se personaliza la ap
 
 Estas instrucciones especifican una **Grupo** valor distinto de `.hidden` por lo tanto, el componente puede estar disponible desde el explorador de componentes (barra de tareas).
 
-La eliminación del archivo JSP creado automáticamente se debe a que se utilizará el archivo HBS predeterminado en su lugar.
+La eliminación del archivo JSP creado automáticamente se debe a que se utiliza el archivo HBS predeterminado en su lugar.
 
 1. Navegar a **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
 
@@ -45,10 +41,10 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
    * Seleccione el `/apps` nodo
 
       * **Crear carpeta** nombrado **[!UICONTROL personalizado]**
+
    * Seleccione el `/apps/custom` nodo
 
       * **Crear carpeta** nombrado **[!UICONTROL componentes]**
-
 
 1. Seleccione el `/apps/custom/components` nodo
 
@@ -59,13 +55,13 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
       * **Descripción**: *Estilo de comentarios alternativos*
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Grupo**: *Personalizado*
+
    * Seleccione **[!UICONTROL Siguiente]**
    * Seleccione **[!UICONTROL Siguiente]**
    * Seleccione **[!UICONTROL Siguiente]**
    * Seleccionar **[!UICONTROL OK]**
 
-
-1. Expanda el nodo que acaba de crear: `/apps/custom/components/comments`
+1. Expanda el nodo que ha creado: `/apps/custom/components/comments`
 1. Seleccionar **[!UICONTROL Guardar todo]**
 1. Clic con el botón derecho `comments.jsp`
 1. Seleccione **[!UICONTROL Eliminar]**
@@ -77,7 +73,7 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
 
 Estas direcciones se establecen **Grupo** hasta `.hidden` ya que solo el componente principal debe incluirse en una página.
 
-La eliminación del archivo JSP creado automáticamente se debe a que se utilizará el archivo HBS predeterminado en su lugar.
+La eliminación del archivo JSP creado automáticamente se debe a que se utiliza el archivo HBS predeterminado en su lugar.
 
 1. Vaya a `/apps/custom/components/comments` nodo
 1. Haga clic con el botón derecho en el nodo
@@ -89,13 +85,13 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
       * **Descripción**: *Estilo de comentario alternativo*
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Grupo**: `*.hidden*`
+
    * Seleccione **[!UICONTROL Siguiente]**
    * Seleccione **[!UICONTROL Siguiente]**
    * Seleccione **[!UICONTROL Siguiente]**
    * Seleccionar **[!UICONTROL OK]**
 
-
-1. Expanda el nodo que acaba de crear: `/apps/custom/components/comments/comment`
+1. Expanda el nodo que ha creado: `/apps/custom/components/comments/comment`
 1. Seleccionar **[!UICONTROL Guardar todo]**
 1. Clic con el botón derecho `comment.jsp`
 1. Seleccione **[!UICONTROL Eliminar]**
@@ -120,11 +116,11 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
       * De `social/commons/components/hbs/comments`
       * A `/apps/custom/components/comments`
+
    * Modifique para incluir el componente de comentario personalizado (línea 75):
 
       * Replace `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
       * Con `{{include this resourceType='/apps/custom/components/comments/comment'}}`
-
 
 * Copie `comment.hbs`
 
@@ -143,7 +139,7 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ## Crear una carpeta de biblioteca de cliente {#create-a-client-library-folder}
 
-Para evitar tener que incluir explícitamente esta biblioteca de cliente, se podría utilizar el valor categories para la clientlib del sistema de comentarios predeterminado ( `cq.social.author.hbs.comments`), pero entonces esta clientlib también se incluiría para todas las instancias del componente predeterminado.
+Para evitar tener que incluir esta biblioteca de cliente, se puede utilizar el valor categories para la clientlib del sistema de comentarios predeterminado ( `cq.social.author.hbs.comments`). Sin embargo, esta clientlib también tendría que incluirse para todas las instancias del componente predeterminado.
 
 Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -158,7 +154,7 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
       * **Nombre** `dependencies` **Tipo** `String` **Valor** `cq.social.scf` `Multi`
 
 * Seleccionar **[!UICONTROL Guardar todo]**
-* Con `/apps/custom/components/comments/clientlib`Como nodo seleccionado, cree 3 archivos:
+* Con `/apps/custom/components/comments/clientlib`Como nodo seleccionado, cree tres archivos:
 
    * **Nombre**: `css.txt`
    * **Nombre**: `js.txt`

@@ -1,16 +1,14 @@
 ---
 title: Aspectos básicos de QnA
-description: Función de foro de preguntas y respuestas
-uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
+description: Conozca los aspectos básicos del trabajo con la función de foro Preguntas y respuestas (QnA) en las comunidades de Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---

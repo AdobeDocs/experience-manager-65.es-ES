@@ -1,18 +1,14 @@
 ---
 title: Calendar Essentials
-seo-title: Calendar Essentials
-description: Resumen de funciones de calendario
-seo-description: Calendar feature overview
-uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
+description: Aprenda a trabajar con la función Calendario en las comunidades de Experience Manager. El calendario admite la identificación de grupos de usuarios miembros privilegiados.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -57,15 +53,15 @@ Esta página proporciona información esencial sobre cómo trabajar con la funci
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de calendario](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [API de calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Extremos de calendario](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [Extremos de calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Función Calendario {#calendar-function}
 
-Una estructura de sitio de la comunidad que incluye [Función Calendario](functions.md#calendar-function) tendrá un configurado `calendar` componente. La función Calendario admite la identificación de un [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
+Una estructura de sitio de la comunidad que incluye [Función Calendario](functions.md#calendar-function) tiene un `calendar` componente configurado. La función Calendario admite la identificación de un [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
 
 ### Acceso a las publicaciones del calendario (UGC) {#accessing-calendar-posts-ugc}
 

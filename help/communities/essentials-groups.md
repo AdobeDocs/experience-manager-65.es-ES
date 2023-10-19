@@ -1,14 +1,14 @@
 ---
 title: Elementos esenciales del grupo de comunidad
-description: Creación dinámica de sitios de la comunidad
+description: Descubra cómo los usuarios autorizados pueden utilizar la función Grupos de la comunidad para crear dinámicamente una subcomunidad dentro de un sitio de la comunidad.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 La función de grupos de comunidad es la capacidad de una subcomunidad para que los usuarios autorizados de los entornos de publicación y creación la creen dinámicamente dentro de un sitio de comunidad.
 
-A partir de comunidades [paquete de funciones 1](deploy-communities.md#latestfeaturepack), es posible anidar grupos dentro de otros grupos
+A partir de comunidades [paquete de funciones 1](deploy-communities.md#latestfeaturepack), es posible anidar grupos dentro de otros grupos.
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
@@ -85,9 +85,9 @@ A partir de comunidades [paquete de funciones 1](deploy-communities.md#latestfea
 
 Una estructura de sitio de la comunidad que incluye un [Función Grupos](functions.md#groups-function) admite la creación de nuevos `community groups` desde los entornos de publicación y creación. El grupo de comunidad creado incluye un `community groups member list` componente que enumera los miembros del grupo.
 
-Uno o más [plantillas de grupo de comunidad](tools-groups.md), que proporcionan el diseño de las páginas del grupo de la comunidad, se pueden configurar para la función Grupos cuando la función se agrega a un [plantilla del sitio de la comunidad](sites.md) o anidados dentro de una plantilla de grupo de la comunidad.
+Uno o más [plantillas de grupo de comunidad](tools-groups.md), que proporcionan el diseño de las páginas del grupo de comunidad, se pueden configurar para la función Grupos. Esto es así cuando la función se agrega a una [plantilla del sitio de la comunidad](sites.md) o anidados dentro de una plantilla de grupo de la comunidad.
 
-La inclusión de varias plantillas de grupo de comunidad resulta en la presentación de una opción de diseño al usuario autorizado en el momento en que se crea un nuevo grupo de comunidad para el sitio de comunidad, como se muestra en la sección sobre [grupos comunitarios](creating-groups.md) para autores.
+La inclusión de varias plantillas de grupo de comunidad resulta en una opción. Es decir, la opción de diseño que se presenta al usuario autorizado en el momento en que se crea un grupo de comunidad para el sitio de comunidad. Consulte la sección sobre [grupos comunitarios](creating-groups.md) para autores.
 
 ### Grupos anidados {#nested-groups}
 

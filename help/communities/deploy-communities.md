@@ -1,15 +1,15 @@
 ---
 title: Implementación de comunidades
-description: Cómo implementar AEM Communities
+description: Obtenga información sobre cómo implementar comunidades y funciones de la comunidad en Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1712'
 ht-degree: 3%
 
 ---
@@ -84,7 +84,7 @@ AEM.5 Communities GA incluye el paquete Communities. AEM Para obtener más infor
 
 AEM AEM A partir de la versión 6.4, las actualizaciones de las comunidades se entregarán como parte de los paquetes de correcciones acumulativas y paquetes de servicio de la aplicación de, que se incluyen en la versión de.
 
-AEM Para obtener las últimas actualizaciones de la versión 6.5 de la, consulte [Paquetes de correcciones acumulativas y paquetes de servicio de Adobe Experience Manager 6.4](https://helpx.adobe.com/es/experience-manager/aem-releases-updates.html).
+AEM Para obtener las últimas actualizaciones de la versión 6.5 de la, consulte [Paquetes de correcciones acumulativas y paquetes de servicio de Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es).
 
 ### Historial de versiones {#version-history}
 
@@ -132,7 +132,7 @@ Encontrará más información sobre la instalación de paquetes en la [Consola w
 
 Para que la colección SRP (MSRP o DSRP) admita la búsqueda multilingüe avanzada (MLS), se requieren nuevos complementos de Solr, además de un esquema personalizado y una configuración de Solr. Todos los elementos necesarios se empaquetan en un archivo zip descargable.
 
-La descarga avanzada de MLS (también conocida como &#39;phasetwo&#39;) está disponible en el repositorio de Adobe :
+La descarga avanzada de MLS (también conocida como `phasetwo`) está disponible en el repositorio de Adobe :
 
 * AEM-SOLR-MLS-phasettwo
 
@@ -298,13 +298,11 @@ Para copiar el material clave de Autor en todas las demás instancias, es necesa
 
 #### Replicación del repositorio {#repository-replication}
 
-AEM Se puede conservar el material clave almacenado en el repositorio, como era el caso de la versión 6.2 y anteriores de la. AEM Especifique la siguiente propiedad del sistema en el primer inicio de cada instancia de (que crea el repositorio inicial):
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+AEM Se puede conservar el material clave almacenado en el repositorio, como era el caso de la versión 6.2 y anteriores de la. Especificar la propiedad del sistema `-Dcom.adobe.granite.crypto.file.disable=true` AEM al iniciar por primera vez cada instancia de la instancia de la (que crea el repositorio inicial).
 
 >[!NOTE]
 >
->Es importante verificar que la variable [agente de replicación en Autor](#replication-agents-on-author) está configurado correctamente.
+>Compruebe que la variable [agente de replicación en Autor](#replication-agents-on-author) está configurado correctamente.
 
 Con el material de clave almacenado en el repositorio, la manera de replicar la clave criptográfica desde el autor a otras instancias es la siguiente:
 

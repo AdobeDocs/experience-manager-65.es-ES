@@ -1,19 +1,15 @@
 ---
 title: Crear nodos
-seo-title: Create Nodes
-description: Superponer el sistema de comentarios
-seo-description: Overlay the comments system
-uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
+description: Aprenda a superponer el sistema de comentarios con una versión personalizada copiando el número mínimo de archivos necesarios de /libs y editándolos en /apps.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '297'
+ht-degree: 10%
 
 ---
 
@@ -34,21 +30,21 @@ La ruta que se está duplicando es:
 Algunos nodos de la ruta son carpetas y otros son componentes.
 
 1. Navegar a [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
-1. Crear `/apps/social` (si aún no existe).
+1. Crear `/apps/social` (si aún no existe)
    * Seleccionar `/apps` nodo
-   * **[!UICONTROL Crear > Carpeta...]**
+   * **[!UICONTROL Crear > Carpeta]**
       * Introduzca el nombre: `social`
 1. Seleccionar `social` nodo
-   * **[!UICONTROL Crear]** > **[!UICONTROL Carpeta...]**
+   * **[!UICONTROL Crear]** > **[!UICONTROL Carpeta]**
       * Introduzca el nombre: `commons`
 1. Seleccionar `commons` nodo
-   * **[!UICONTROL Crear > Carpeta...]**
+   * **[!UICONTROL Crear > Carpeta]**
       * Introduzca el nombre: `components`
 1. Seleccionar `components` nodo
-   * **[!UICONTROL Crear > Carpeta..]**.
+   * **[!UICONTROL Crear > Carpeta]**.
       * Introduzca el nombre: `hbs`
 1. Seleccionar `hbs` nodo
-   * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente...]**
+   * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente]**
       * Introducir etiqueta: `comments`
       * Escriba el título: `Comments`
       * Escriba la descripción: `List of comments without showing avatars`
@@ -57,7 +53,7 @@ Algunos nodos de la ruta son carpetas y otros son componentes.
       * Clic **[!UICONTROL Siguiente]** hasta **[!UICONTROL OK]**
 1. Seleccionar `comments` nodo
 
-   * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente...]**
+   * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente]**
 
       * Introducir etiqueta: `comment`
       * Escriba el título: `Comment`
@@ -80,7 +76,6 @@ Algunos nodos de la ruta son carpetas y otros son componentes.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
 
 La propia superposición `Type`(propiedad) `sling:resourceType`) debe ser una referencia automática relativa para que cualquier contenido que no se encuentre en /apps se busque en /libs.
 * Nombre: `sling:resourceType`

@@ -1,21 +1,21 @@
 ---
 title: Comments Essentials
-description: Resumen del componente Comentarios
+description: Obtenga información acerca de cómo trabajar con el sistema de comentarios (componente Comentarios) y administrar el contenido generado por el usuario (UGC) en las publicaciones de los miembros de la comunidad.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '351'
 ht-degree: 4%
 
 ---
 
 # Comments Essentials {#comments-essentials}
 
-Esta página proporciona lo esencial para trabajar con el sistema de comentarios (componente de comentarios) y las opciones para administrar el contenido generado por el usuario (UGC) que se produce cuando los miembros publican comentarios o respuestas.
+Esta página proporciona los aspectos básicos del trabajo con el sistema de comentarios (componente de comentarios) y las opciones para administrar el contenido generado por el usuario (UGC) que se produce cuando los miembros publican comentarios o respuestas.
 
 El componente de comentarios establece un sistema de comentarios tal que cada publicación individual está representada por un componente de comentario (singular). Es el sistema de comentarios el que se incluye en la página. El sistema de comentarios crea los comentarios individuales cuando se invocan.
 

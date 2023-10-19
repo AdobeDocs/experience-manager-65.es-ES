@@ -1,14 +1,14 @@
 ---
 title: Crear una página de muestra
-description: Crear un sitio de comunidad de muestra
+description: Aprenda a crear una plantilla de sitio de comunidad que solo contenga la función Página que puede ayudarle a crear un sitio de comunidad sencillo.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '426'
 ht-degree: 2%
 
 ---

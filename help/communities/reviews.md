@@ -1,18 +1,14 @@
 ---
 title: Uso del resumen de críticas y comentarios (visualización)
-seo-title: Using Reviews and Reviews Summary (Display)
-description: Adición de los componentes Reseñas y Resumen de críticas a una página
-seo-description: Adding the Reviews and Reviews Summary components to a page
-uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
+description: Obtenga información sobre cómo agregar los componentes de Resumen de críticas y revisiones a una página.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1285'
 ht-degree: 4%
 
 ---
@@ -33,13 +29,13 @@ Para agregar un `Reviews` a una página en modo de autor, utilice el navegador d
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](reviews-basics.md#essentials-for-client-side) están incluidos, así es como se `Reviews` El componente aparecerá.
+Si la variable [bibliotecas requeridas del lado del cliente](reviews-basics.md#essentials-for-client-side) están incluidos, así es como se `Reviews` aparece el componente.
 
 ![create-review](assets/create-review.png)
 
 ## Configuración de críticas {#configuring-reviews}
 
-Seleccione el colocado `Reviews` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Reviews` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
@@ -55,9 +51,9 @@ En el **[!UICONTROL Clasificaciones permitidas]** , especifique la lista complet
 
   Clic **[!UICONTROL Agregar elemento]** para añadir otra opción de clasificación.
 
-En el **[!UICONTROL Clasificaciones obligatorias]** pestaña, vuelva a introducir elementos de la lista de **[!UICONTROL Clasificaciones permitidas]** que deben tener una calificación. Si un elemento solo se especifica en la ficha Clasificaciones permitidas, puede dejarse sin marcar cuando el miembro lo envíe.
+En el **[!UICONTROL Clasificaciones obligatorias]** pestaña, vuelva a introducir elementos de la lista de **[!UICONTROL Clasificaciones permitidas]** que son necesarios para la clasificación. Si un elemento solo se especifica en la ficha Clasificaciones permitidas, puede dejarse sin marcar cuando el miembro lo envíe.
 
-En el sitio web, las clasificaciones requeridas se marcan con un asterisco. Si un elemento es obligatorio y se deja sin marcar, se mostrará un mensaje al miembro y se denegará el envío hasta que se marquen todas las clasificaciones requeridas.
+En el sitio web, las clasificaciones requeridas se marcan con un asterisco. Si un elemento es obligatorio y se deja sin marcar, se muestra un mensaje al miembro y se deniega el envío hasta que se marquen todas las clasificaciones requeridas.
 
 ![clasificación obligatoria](assets/configure-review2.png)
 
@@ -99,7 +95,7 @@ En el **[!UICONTROL Críticas]** , especifique cómo se gestionan las revisiones
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-  Relevante solo si **[!UICONTROL Permitir cargas de archivos]** está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los que no se especifiquen. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Relevante solo si **[!UICONTROL Permitir cargas de archivos]** está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permiten los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **[!UICONTROL Editor de texto enriquecido]**
 
@@ -115,11 +111,11 @@ En el **[!UICONTROL Moderación de usuario]** pestaña, especifique cómo se adm
 
 * **[!UICONTROL Moderación previa]**
 
-  Si se selecciona, las revisiones deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado está desmarcado.
+  Si se selecciona, las revisiones deben aprobarse antes de aparecer en un sitio de publicación. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Eliminar críticas]**
 
-  Si se selecciona, el miembro que publicó la revisión tiene la capacidad de eliminarla. El valor predeterminado está desmarcado.
+  Si esta opción está activada, el miembro que publicó la revisión puede eliminarla. El valor predeterminado está desmarcado.
 
 * **[!UICONTROL Denegar críticas]**
 
@@ -155,11 +151,11 @@ Para agregar un `Reviews Summary (Display)` a una página en modo de autor, busq
 
 * `Communities / Reviews Summary (Display)`
 
-y arrástrela a su lugar en una página donde se va a mostrar un resumen de una revisión activa o cerrada.
+Y arrástrela a su lugar en una página donde se va a mostrar un resumen de una revisión activa o cerrada.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](reviews-basics.md#essentials-for-client-side) están incluidos, así es como se `Reviews Summary (Display)`El componente aparecerá.
+Si la variable [bibliotecas requeridas del lado del cliente](reviews-basics.md#essentials-for-client-side) están incluidos, así es como se `Reviews Summary (Display)`aparece el componente.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -169,7 +165,7 @@ Si la variable [bibliotecas requeridas del lado del cliente](reviews-basics.md#e
 
 ### Configuración del resumen de críticas (visualización) {#configuring-reviews-summary-display}
 
-Seleccione el colocado `Reviews Summary (Display)` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Reviews Summary (Display)` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
@@ -179,21 +175,21 @@ En el **[!UICONTROL Resumen de críticas]** pestaña
 
 * `Review Path`
 
-  introduzca o examine la instancia colocada del `reviews`para resumir, por ejemplo, si se añade a la página web del [Sitio de Geometrixx Engage,](getting-started.md) la ruta sería:
+  Introduzca o busque la instancia colocada del `reviews` para que pueda resumir, por ejemplo, si se añade a la página web del [Sitio de Geometrixx Engage,](getting-started.md) la ruta sería:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-  Si se selecciona, se debe incluir la visualización de un gráfico de barras que indique el número de cada clasificación por estrellas que hay en las revisiones que se resumen. El valor predeterminado está desmarcado.
+  Si se selecciona, se debe incluir la visualización de un gráfico de barras que indique cuántas clasificaciones de estrellas hay en las revisiones que se resumen. El valor predeterminado está desmarcado.
 
 ### Cambio a un tipo de revisión personalizado {#changing-to-a-custom-review-type}
 
 El componente Revisiones utiliza el sistema de comentarios.
 
-Al cambiar el Tipo de recurso de comentario, el sistema de comentarios ya no generará una instancia de un comentario con el valor predeterminado, sino una que los desarrolladores hayan personalizado (ampliado).
+Al cambiar el Tipo de recurso de comentario, el sistema de comentarios ya no genera una instancia de un comentario con el valor predeterminado, sino una que han personalizado (ampliado) los desarrolladores.
 
-Una vez conocidos los tipos de recursos personalizados, escriba [Modo de diseño](../../help/sites-authoring/default-components-designmode.md) y haga doble clic en el `Comments` para abrir un cuadro de diálogo con una pestaña adicional.
+Cuando se conocen los tipos de recursos personalizados, escriba [Modo de diseño](../../help/sites-authoring/default-components-designmode.md) y haga doble clic en el elemento colocado `Comments` para abrir un cuadro de diálogo con una pestaña adicional.
 
 En el **[!UICONTROL Tipos de recursos]** pestaña, especifique el resourceType personalizado para las nuevas instancias de la `Comments or Voting` componentes:
 
@@ -203,13 +199,13 @@ En el **[!UICONTROL Tipos de recursos]** pestaña, especifique el resourceType p
 
   Navegue hasta el resourceType de un `comment`componente (comentario único) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`.
 
-  Este recurso identificará el resourceType del UGC creado cuando un visitante publica un comentario.
+  Este recurso identifica el resourceType del UGC creado cuando un visitante publica un comentario.
 
 * **[!UICONTROL Tipo de medio de votación]**
 
   Navegue hasta el resourceType de un `voting`en /apps. Por ejemplo, `/apps/social/components/hbs/voting`.
 
-  Este recurso identificará el tipo de recurso de UGC creado cuando un visitante publica un voto.
+  Este recurso identifica el tipo de recurso de UGC creado cuando un visitante publica un voto.
 
 * **[!UICONTROL Tipo de medio de sistema de comentario]**
 

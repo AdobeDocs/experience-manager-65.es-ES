@@ -1,18 +1,14 @@
 ---
 title: Página Crear Comentarios
-seo-title: Create Comments Page
-description: Página Ver Comentarios
-seo-description: View Comments page
-uuid: 1f043133-51c6-41e8-bbdb-d9fd7780136b
+description: Descubra cómo la guía de componentes de la comunidad le ofrece la capacidad de experimentar fácilmente la superposición del componente Comentarios.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: b3cb8f12-197e-4f5e-bd7d-70b55e76b0ca
 exl-id: 35b8efac-5716-4ab3-9b8a-ea957023b51f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '57'
+source-wordcount: '69'
 ht-degree: 1%
 
 ---

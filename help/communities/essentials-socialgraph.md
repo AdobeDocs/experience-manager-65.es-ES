@@ -1,14 +1,14 @@
 ---
 title: Social Graph Essentials
-description: Obtenga información acerca del siguiente componente y el componente Seguir.
+description: Obtenga información acerca de los aspectos básicos del gráfico social mediante los componentes Siguiendo y Seguir en un sitio de la comunidad.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '249'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ El `following` El componente enumera los miembros que siguen al miembro actual o
        <li><i>Verdadero </i>- El <code>following</code> Este componente enumera los miembros que han iniciado sesión como miembros <code>follows</code></li>
        <li><i>Falso </i>- El <code>following</code> El componente enumera los miembros que <code>follow </code>el miembro conectado</li>
       </ul> </li>
-    </ul> <p>El valor predeterminado es <i>true</i> si falta la propiedad. No es posible establecer esta propiedad mediante el cuadro de diálogo de edición en el modo Autor. La propiedad debe añadirse a una instancia de <code>following</code> nodo que utiliza <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>El valor predeterminado es <i>true</i> si falta la propiedad. No es posible establecer esta propiedad mediante el cuadro de diálogo de edición en el modo Autor. La propiedad debe añadirse a una instancia de <code>following</code> usando el nodo <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -1,26 +1,22 @@
 ---
 title: Aspectos básicos
-seo-title: Liking Essentials
-description: Información general sobre el componente Me gusta
-seo-description: Liking component overview
-uuid: 89f16859-c901-4090-8e16-363b95c508de
+description: Aprenda a utilizar el componente Me gusta, una herramienta útil que permite a los miembros expresar una opinión positiva sobre algún contenido seleccionando el icono del corazón.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '306'
 ht-degree: 1%
 
 ---
 
 # Aspectos básicos {#liking-essentials}
 
-El componente de me gusta, un [corresponder](tally.md) subclase, es una herramienta útil que permite a los miembros expresar una opinión positiva sobre un contenido en particular simplemente seleccionando el icono del corazón.
+El componente &quot;me gusta&quot;, una [corresponder](tally.md) subclase, es una herramienta útil que permite a los miembros expresar una opinión positiva sobre un contenido en particular simplemente seleccionando el icono del corazón.
 
 Se permite colocar varias instancias de un componente de vinculación en la misma página; cada instancia debe configurarse con un único `tally name` propiedad.
 
@@ -61,9 +57,9 @@ No se admite la publicación anónima de elementos similares. Los visitantes del
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

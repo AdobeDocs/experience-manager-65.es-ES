@@ -1,19 +1,15 @@
 ---
 title: Messaging Essentials
-seo-title: Messaging Essentials
-description: Resumen del componente de mensajería
-seo-description: Messaging component overview
-uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
+description: Obtenga información sobre los detalles de trabajar con el componente Mensajería y utilizarlo para incluir una función de mensajería en un sitio web.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
@@ -57,7 +53,7 @@ Esta página documenta los detalles de cómo trabajar con utilizando el componen
 
 **Lista de mensajes**
 
-(para Bandeja de entrada, Enviado y Papelera)
+(Para Bandeja de entrada, Enviado y Papelera)
 
 <table>
  <tbody>
@@ -93,9 +89,9 @@ Consulte también [Personalizaciones del lado del cliente](/help/communities/cli
 ## Essentials para servidor {#essentials-for-server-side}
 
 * [Configuración de mensajería](/help/communities/configure-messaging.md)
-* [API de cliente de mensajería](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes de SCF
-* [API de mensajería](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para el servicio
-* [Puntos finales de mensajería](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [API de cliente de mensajería](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes de SCF
+* [API de mensajería](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para el servicio
+* [Puntos finales de mensajería](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizaciones del lado del servidor](/help/communities/server-customize.md)
 
 >[!CAUTION]
@@ -107,8 +103,7 @@ Consulte también [Personalizaciones del lado del cliente](/help/communities/cli
 >
 >Por ejemplo:
 >
->
-```
+>```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
 >```

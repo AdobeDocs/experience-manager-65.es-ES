@@ -1,19 +1,15 @@
 ---
 title: Agregar comentario a página de muestra
-seo-title: Add Comment to Sample Page
-description: Agregar comentarios personalizados a una página
-seo-description: Add Custom Comments to a page
-uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
+description: Descubra cómo una instancia del sistema de comentarios de un sitio web debe establecer su resourceType para que sea el sistema de comentarios personalizado e incluir todas las bibliotecas de cliente necesarias.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -30,13 +26,13 @@ El [Guía de componentes de la comunidad](/help/communities/components-guide.md)
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-Tenga en cuenta las tres bibliotecas de cliente necesarias para que los comentarios se representen y funcionen correctamente. Deberán incluirse cuando se haga referencia a los comentarios ampliados y la variable [biblioteca de cliente de comentarios extendidos](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
+Tenga en cuenta las tres bibliotecas de cliente necesarias para que los comentarios se representen y funcionen correctamente. Se deben incluir cuando se haga referencia a los comentarios ampliados y la variable [biblioteca de cliente de comentarios extendidos](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`).
 
 ![comments-component1](assets/comments-component1.png)
 
 ### Agregar comentarios personalizados a una página {#add-custom-comments-to-a-page}
 
-Como solo puede haber un sistema de comentarios por página, es más sencillo crear una página de muestra como se describe en el breve [Crear una página de muestra](/help/communities/create-sample-page.md) tutorial.
+Como solo puede haber un sistema de comentarios por página, es más sencillo crear una página de muestra como se describe en la información [crear una página de muestra](/help/communities/create-sample-page.md) tutorial.
 
 Una vez creado, introduzca el modo de diseño y active el grupo de componentes personalizados para permitir el `Alt Comments` componente que se añadirá a la página.
 

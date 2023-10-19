@@ -1,25 +1,21 @@
 ---
 title: Rating Essentials
-seo-title: Rating Essentials
-description: Resumen del componente Clasificación
-seo-description: Rating component overview
-uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
+description: Descubra cómo el componente Clasificación, una subclase de recuento, permite que los miembros de la comunidad que iniciaron sesión clasifiquen una función del sitio web.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: 49456944-ff0d-4507-b3b8-143c90067573
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '287'
 ht-degree: 1%
 
 ---
 
 # Rating Essentials {#rating-essentials}
 
-El componente de calificación, a [corresponder](tally.md) subclase, permite a los miembros de la comunidad que han iniciado sesión clasificar una función del sitio web.
+El componente de calificación, a [corresponder](tally.md) subclase, permite a los miembros de la comunidad que iniciaron sesión clasificar una función del sitio web.
 
 Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con un único `tally name` propiedad.
 
@@ -60,9 +56,9 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

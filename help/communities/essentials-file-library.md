@@ -1,25 +1,21 @@
 ---
 title: Elementos básicos de biblioteca de archivos
-seo-title: File Library Essentials
-description: Uso de la función de biblioteca de archivos
-seo-description: Working with the file library feature
-uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
+description: Obtenga información acerca de los aspectos básicos del trabajo con la función de biblioteca de archivos en las comunidades de Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 2%
 
 ---
 
 # Elementos básicos de biblioteca de archivos {#file-library-essentials}
 
-Esta página proporciona la información esencial para trabajar con la función de biblioteca de archivos.
+Esta página proporciona la información fundamental para trabajar con la función de biblioteca de archivos.
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
@@ -56,9 +52,9 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [API de biblioteca de archivos](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Puntos finales de biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Puntos finales de biblioteca de archivos](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
