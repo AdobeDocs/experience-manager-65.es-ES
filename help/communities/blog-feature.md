@@ -1,17 +1,15 @@
 ---
 title: Función Blog
-description: Información de la comunidad en formato de diario
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: Descubra cómo la función de blog admite el suministro de información de la comunidad en formato de diario. Los usuarios autorizados realizan las entradas en el entorno de publicación.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1670'
 ht-degree: 7%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 7%
 
 ## Introducción {#introduction}
 
-La funcionalidad de blog para AEM Communities se ha transformado de una actividad de creación a una verdadera actividad de comunidad que tiene lugar en el entorno de publicación.
+La funcionalidad de blog para AEM Communities se ha transformado de una actividad de creación a una verdadera actividad de comunidad que se lleva a cabo en el entorno de publicación.
 
 La función de blog permite proporcionar información de la comunidad en formato de diario. Las entradas de blog las realizan en el entorno de publicación miembros autorizados (usuarios registrados y conectados).
 
@@ -133,7 +131,7 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
 * **Permitir etiquetado**
 
-  Si se selecciona esta opción, permite a los miembros añadir etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** pestaña). El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, permite que los miembros agreguen etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** pestaña). El valor predeterminado está desmarcado.
 
 * **Permitir cargas de archivos**
 
@@ -145,7 +143,7 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
 * **Tipos de archivo permitidos**
 
-  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los tipos de archivo que no se especifiquen. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los tipos de archivo no especificados. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -223,11 +221,11 @@ En el **Moderación de usuario** pestaña, especifique la configuración de mode
 
 * **Límite de indicación**
 
-  Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo de la vista pública. Si se establece en -1, el tema o comentario marcado nunca se ocultará de la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo de la vista pública. Si se establece en -1, el tema o comentario marcado nunca se ocultará de la vista pública. De lo contrario, este número debe ser mayor o igual que el umbral de moderación. El valor predeterminado es 5.
 
 #### Pestaña Campo de etiqueta {#tag-field-tab}
 
-En el **Campo de etiqueta** pestaña, especifique qué etiquetas se pueden aplicar si **Permitir etiquetado** es una comprobación en **Configuración** pestaña :
+En el **Campo de etiqueta** pestaña, especifique qué etiquetas se pueden aplicar si **Permitir etiquetado** está marcada en la **Configuración** pestaña :
 
 * **Espacios de nombres permitidos**
 
@@ -269,7 +267,7 @@ En el **Configuración de barra lateral del diario** , especifique el formato de
 
   *(Opcional)* La ubicación del recurso de blog desde el que se enumerarán los artículos de blog. Si se deja en blanco, se utiliza el componente de resourceType `social/journal/components/hbs/journal` que aparece en la misma página.
 
-   * Por ejemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`. 
+   * Por ejemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Límite de sugerencias**
 

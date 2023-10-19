@@ -1,15 +1,13 @@
 ---
 title: Función Biblioteca de archivos
-description: La función Biblioteca de archivos permite que los visitantes del sitio que inicien sesión carguen, gestionen y descarguen archivos
-uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
+description: La función Biblioteca de archivos permite que los visitantes del sitio que inicien sesión carguen, administren y descarguen archivos.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 9%
@@ -155,7 +153,7 @@ En el **Moderación de usuario** pestaña, configurar la moderación de los come
 
 * **Límite de indicación**
 
-  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser bueno o igual que **Umbral de moderación**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser mayor o igual que **Umbral de moderación**. El valor predeterminado es 5.
 
 ### Pestaña Configuración de ordenación {#sort-settings-tab}
 

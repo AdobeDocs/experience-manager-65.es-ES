@@ -1,20 +1,16 @@
 ---
 title: Función de clasificación
-seo-title: Leaderboard Feature
-description: Adición de un componente Tabla de posiciones a una página
-seo-description: Adding a Leaderboard component to a page
-uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
+description: Descubra cómo el componente Tabla de clasificación le permite ver cómo los miembros interactúan dentro de la comunidad clasificando a los miembros en función de los puntos obtenidos y la experiencia.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 10%
+source-wordcount: '417'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 10%
 
 ## Introducción {#introduction}
 
-El `Leaderboard` Este componente proporciona la capacidad de obtener una idea de cómo interactúan los miembros dentro de la comunidad mediante la clasificación de los miembros según los puntos obtenidos (puntuación básica) o su experiencia (puntuación avanzada).
+El `Leaderboard` Este componente le ayuda a hacerse una idea de cómo interactúan los miembros dentro de la comunidad clasificando a los miembros según los puntos obtenidos (puntuación básica) o su experiencia (puntuación avanzada).
 
 Antes de incluir el componente de tabla de posiciones en una página, es necesario configurar [Puntuación y distintivos de comunidades](/help/communities/implementing-scoring.md).
 
@@ -37,7 +33,7 @@ Para agregar un `Leaderboard` a una página en modo de autor, busque el componen
 
 * `Communities / Leaderboard`
 
-y arrástrela a su lugar en una página.
+Y arrástrela a su lugar en una página.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
@@ -47,7 +43,7 @@ Cuando se coloca por primera vez en una página de un sitio de la comunidad, as�
 
 ### Configurar tabla de posiciones {#configuring-leaderboard}
 
-Seleccione el colocado `Leaderboard` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Leaderboard` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
@@ -59,22 +55,22 @@ En el **[!UICONTROL Configuración]** , especifique qué información relacionad
 
 * **Nombre para mostrar**
 
-   Un nombre descriptivo para mostrar para el tablero, que refleje las reglas seleccionadas para mostrar insignias y puntuaciones.
-El valor predeterminado es `Leaderboard`, si no se ha introducido nada.
+  Un nombre descriptivo para mostrar para el tablero, que refleje las reglas seleccionadas para mostrar insignias y puntuaciones.
+El valor predeterminado es `Leaderboard` si no se introduce nada.
 
 * **Distintivo**
 
-   Si se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
+  Si se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
 El valor predeterminado está desmarcado.
 
 * **Nombre de distintivo**
 
-   Si se selecciona, se incluye una columna para el nombre del distintivo en la tabla de clasificación.
+  Si se selecciona, se incluye una columna para el nombre del distintivo en la tabla de clasificación.
 El valor predeterminado está desmarcado.
 
 * **Usar avatar**
 
-   Si se selecciona, la imagen de avatar del miembro se incluirá en la tabla de clasificación, junto al vínculo de su nombre a su perfil de miembro.
+  Si se selecciona, la imagen de avatar del miembro se incluirá en la tabla de clasificación, junto al vínculo de su nombre a su perfil de miembro.
 El valor predeterminado está desmarcado.
 
 #### Pestaña Reglas {#rules-tab}
@@ -83,19 +79,19 @@ En el **Reglas** , el sitio de la comunidad y sus reglas de puntuación y distin
 
 * **Ubicación de la regla**
 
-   (Obligatorio) Ubicación donde se configura la regla de puntuación/distintivos.
+  (Obligatorio) Ubicación donde se configura la regla de puntuación/distintivos.
 
 * **Regla de puntuación**
 
-   (Obligatorio) Regla específica que genera las puntuaciones que se van a mostrar.
+  (Obligatorio) Regla específica que genera las puntuaciones que se van a mostrar.
 
 * **Regla de creación de distintivos**
 
-   (Obligatorio) Regla específica que genera el distintivo que se va a mostrar.
+  (Obligatorio) Regla específica que genera el distintivo que se va a mostrar.
 
 * **Límite de visualización**
 
-   Número de miembros que se mostrarán por página. El valor predeterminado es 10.
+  Número de miembros que se mostrarán por página. El valor predeterminado es 10.
 
 ### Ejemplo: tabla de posiciones de participantes {#example-participants-leaderboard}
 

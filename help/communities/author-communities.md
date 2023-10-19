@@ -1,20 +1,16 @@
 ---
 title: Componentes de Communities
-seo-title: Communities Components
-description: AEM Agregar características de la comunidad a cualquier sitio de la
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: Obtenga información sobre cuándo se concede la licencia a AEM Communities AEM AEM, y es posible añadir funciones de Communities a cualquier sitio de la mediante herramientas de creación estándar.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 30%
+source-wordcount: '293'
+ht-degree: 27%
 
 ---
 
@@ -80,8 +76,8 @@ Consulte también la sección interactiva [Guía de componentes de la comunidad]
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implementación de comunidades](/help/communities/deploy-communities.md) para obtener más información sobre las implementaciones recomendadas.
+* Visita [Implementación de comunidades](/help/communities/deploy-communities.md) donde puede obtener más información sobre las implementaciones recomendadas.
 
 * Visita [Administración de sitios de Communities](/help/communities/administer-landing.md) para obtener más información sobre cómo crear un sitio de la comunidad, configurar las plantillas de sitio de la comunidad, moderar el contenido de la comunidad, administrar miembros y configurar la mensajería.
 
-* Visita [Desarrollo de comunidades](/help/communities/communities.md) para obtener más información sobre el marco de trabajo de componentes sociales (SCF) y personalizar los componentes y las funciones de las Comunidades.
+* Visita [Desarrollo de comunidades](/help/communities/communities.md) donde puede obtener información sobre el marco de trabajo de componentes sociales (SCF) y la personalización de los componentes y las funciones de las Comunidades.

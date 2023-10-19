@@ -1,19 +1,15 @@
 ---
 title: Función Flujos de actividad
-seo-title: Activity Streams Feature
-description: Actividades de un miembro de la comunidad que ha iniciado sesión
-seo-description: Activities of a signed-in community member
-uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
+description: Descubra cómo se recopilan las actividades de un miembro de la comunidad conectado en un flujo que puede filtrar y mostrar a través del componente Flujos de actividad.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '473'
 ht-degree: 4%
 
 ---
@@ -37,17 +33,17 @@ Si se desea añadir un `Activity Streams` a una página en modo de autor, utilic
 
 * `Communities / Activity Streams`
 
-y arrástrela a su lugar en una página en la que deban aparecer flujos de actividad.
+Y arrástrela a su lugar en una página en la que deban aparecer flujos de actividad.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-activities.md#essentials-for-client-side) están incluidos, así es como se `Activity Streams` el componente aparecerá :
+Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-activities.md#essentials-for-client-side) están incluidos, así es como se `Activity Streams` el componente aparece:
 
 ![activity-streams](assets/activity-component.png)
 
 ### Configuración de flujos de actividad {#configuring-activity-streams}
 
-Seleccione el colocado `Activity Streams` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Activity Streams` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
@@ -57,27 +53,27 @@ En el **Actividades de usuario** , especifique qué actividades mostrar :
 
 * **Número máximo de actividades**
 
-   Número de actividades que se van a mostrar
+  Número de actividades que se van a mostrar
 
 * **Ruta de medio de flujo**
 
-   Déjelo en blanco para establecer de forma predeterminada el sitio o el grupo de la comunidad. La ruta del recurso de flujo identifica el origen de las actividades. El valor predeterminado está en blanco.
+  Déjelo en blanco para establecer de forma predeterminada el sitio o el grupo de la comunidad. La ruta del recurso de flujo identifica el origen de las actividades. El valor predeterminado está en blanco.
 
 * **Mostrar vista de actividades de usuario**
 
-   Si se selecciona, la página de actividades incluirá una pestaña que filtra las actividades en función de las que genere el miembro actual dentro de la comunidad. La opción predeterminada está activada.
+  Si se selecciona, la página Actividades incluye una pestaña que filtra las actividades en función de las que genera el miembro actual dentro de la comunidad. La opción predeterminada está activada.
 
 * **Mostrar vista de todas las actividades**
 
-   Si se selecciona, la página de actividades incluirá una pestaña que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. La opción predeterminada está activada.
+  Si se selecciona, la página de actividades incluye una pestaña que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. La opción predeterminada está activada.
 
 * **Mostrar la vista siguiente**
 
-   Si se selecciona, la página de actividades incluirá una pestaña que filtra las actividades en función de las que está siguiendo el miembro actual. La opción predeterminada está activada.
+  Si se selecciona, la página Actividades incluye una pestaña que filtra las actividades en función de las que sigue el miembro actual. La opción predeterminada está activada.
 
 ### Vista siguiente {#following-view}
 
-Los componentes deben configurarse para habilitar lo siguiente. Las funciones que permiten lo siguiente son [blog](/help/communities/blog-feature.md), [foro](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), y [comentarios](/help/communities/comments.md).
+Los componentes deben configurarse para habilitar lo siguiente. Las funciones que permiten lo siguiente son [blog](/help/communities/blog-feature.md), [foro](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [biblioteca de archivos](/help/communities/file-library.md), y [comentarios](/help/communities/comments.md).
 
 ![vista siguiente](assets/following-activities.png)
 
@@ -85,7 +81,7 @@ El **Seguir** proporciona un medio para seguir las entradas como actividades, [n
 
 Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguientes**. Para su comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
 
-El **Seguir** aparecerá el botón:
+El **Seguir** aparece el botón:
 
 * Al ver el perfil de otro usuario.
 * En una página de características principal, como foros, control de calidad y blogs.
