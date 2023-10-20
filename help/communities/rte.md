@@ -1,18 +1,14 @@
 ---
 title: Elementos básicos del editor de texto enriquecido
-seo-title: Rich Text Editor Essentials
-description: Resumen de las funciones del Editor de texto enriquecido
-seo-description: Rich text Editor feature overview
-uuid: f96015cc-114b-431a-a5ba-dc195c2a0b83
+description: Obtenga información sobre los aspectos básicos y las características de un editor de texto enriquecido que le permite introducir texto con marcado.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 exl-id: 821e32f4-da8d-4bbb-936a-0844b8a24cdd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '238'
 ht-degree: 3%
 
 ---
@@ -29,9 +25,9 @@ Para los componentes de Communities, aunque es similar a la [editor de texto enr
 
 ## Habilitar el editor de texto enriquecido {#enabling-rich-text-editor}
 
-Los componentes de las comunidades que permiten contenido generado por el usuario (UGC) se pueden habilitar para permitir RTE. En función de si el componente se añadió a una página o se incluyó en una [función](functions.md), RTE puede estar o no habilitado de forma predeterminada.
+Los componentes de las comunidades que permiten contenido generado por el usuario (UGC) se pueden habilitar para permitir RTE. Si el componente se añadió a una página o se incluyó en un [función](functions.md), RTE puede estar o no habilitado de forma predeterminada.
 
-Si no está activada, simplemente introduzca [modo de edición de autor](sites-console.md#authoring-site-content), seleccione el componente para editarlo y seleccione `Rich Text Editor` casilla de verificación
+Si no está activada, simplemente introduzca [modo de edición de autor](sites-console.md#authoring-site-content), seleccione el componente para editarlo y seleccione el `Rich Text Editor` casilla de verificación
 
 RTE está disponible para los siguientes componentes de Communities:
 
@@ -46,9 +42,9 @@ RTE está disponible para los siguientes componentes de Communities:
 
 ## Personalización {#customization}
 
-La personalización del editor de texto enriquecido es posible porque la implementación se basa en lo siguiente [CKEditor](https://www.ckeditor.com/).
+La personalización del editor de texto enriquecido es posible porque la implementación se basa en lo siguiente [CKEditor](https://ckeditor.com/).
 
-La configuración actual de los componentes de Communities se encuentra en `cq.social.  scf   clientlib`, ubicado en el repositorio en
+La configuración actual de los componentes de Communities se encuentra en `cq.social.  scf   clientlib`, en el repositorio en
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 

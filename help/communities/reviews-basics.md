@@ -1,18 +1,14 @@
 ---
 title: Reviews Essentials
-seo-title: Reviews Essentials
-description: Componentes de Revisiones y Resumen de críticas
-seo-description: Reviews and Review Summary components
-uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
+description: Obtenga información sobre cómo las revisiones en AEM Communities son un componente compuesto basado en un sistema de comentarios que contiene uno o más componentes de clasificación (recuento).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 2%
 
 ---
@@ -72,9 +68,9 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [Revisar API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [Revisar API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Revisar extremos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Revisar extremos](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

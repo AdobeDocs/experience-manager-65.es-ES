@@ -1,18 +1,14 @@
 ---
 title: Configuración inicial
-seo-title: Initial Setup
-description: Configuración de comunidades
-seo-description: Setting up Communities
-uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
+description: Obtenga información sobre cómo configurar inicialmente Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '684'
 ht-degree: 3%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 3%
 
 ## Iniciar instancias de autor y publicación {#start-author-and-publish-instances}
 
-Para fines de desarrollo y demostración, será necesario ejecutar una instancia de autor y otra de publicación.
+Para fines de desarrollo y demostración, es necesario ejecutar una instancia de autor y otra de publicación.
 
-AEM Para ello, siga los pasos básicos que se describen a continuación [Primeros pasos](../../help/sites-deploying/deploy.md#getting-started) instrucciones, que resultarán en:
+Para ello, siga las instrucciones básicas de Adobe Experience Manager AEM () [Primeros pasos](../../help/sites-deploying/deploy.md#getting-started) instrucciones, que dan como resultado lo siguiente:
 
 * Entorno de creación en [localhost:4502](http://localhost:4502/)
 * Entorno de publicación en [localhost:4503](http://localhost:4503/)
@@ -72,7 +68,7 @@ Al crear un sitio de comunidad en el entorno de creación, el servicio de túnel
 
 La convención es para miembros y grupos de miembros creados en el entorno de publicación para *no* volver a crearse en el entorno de creación. Para obtener más información, consulte [Administración de usuarios y grupos de usuarios](users.md).
 
-Para obtener instrucciones sencillas sobre cómo habilitar el servicio de túnel en un **autor** instancia, consulte [Servicio de túnel](deploy-communities.md#tunnel-service-on-author).
+Para obtener instrucciones sencillas sobre cómo habilitar el servicio de túnel en un **Autor** instancia, consulte [Servicio de túnel](deploy-communities.md#tunnel-service-on-author).
 
 ## Función de administrador de comunidad {#community-administrator-role}
 
@@ -96,7 +92,7 @@ Crear un usuario en *autor*, a quien se asigna la función de administrador de l
 * En el `Create New User` diálogo entrar:
 
    * **[!UICONTROL ID]**: sirio
-   * **[!UICONTROL Dirección de correo electrónico]**: sirius.nilson@mailinator.com
+   * **[!UICONTROL Correo electrónico]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Contraseña]**: password
    * **[!UICONTROL Confirmar contraseña&amp;ast;]**: contraseña
    * **[!UICONTROL Nombre]**: Sirio
@@ -108,8 +104,8 @@ Desplácese hacia abajo hasta `Add User to Groups`:
 
 * Escriba &quot;C&quot; para buscar
 
-   * Seleccionar `Community Administrators`
-   * Seleccionar `Community Enablement Managers`
+   * Seleccione lo siguiente `Community Administrators`
+   * Seleccione lo siguiente `Community Enablement Managers`
 
 * Seleccione **[!UICONTROL Guardar]**.
 
@@ -117,7 +113,7 @@ Desplácese hacia abajo hasta `Add User to Groups`:
 
 ## Habilitar inicio de sesión social {#enable-social-login}
 
-Antes de que se puedan utilizar las versiones de demostración de los inicios de sesión sociales con Facebook y Twitter, es necesario
+Antes de que se puedan utilizar las versiones de demostración del inicio de sesión social con Facebook y Twitter, es necesario lo siguiente
 
 1. Instale un paquete de correcciones o [último paquete de funciones](deploy-communities.md#latestfeaturepack) (para cambios de la API de Facebook de marzo de 2017).
 1. [Habilitar el proveedor de OAuth](social-login.md#adobe-granite-oauth-authentication-handler) en el entorno de publicación.
@@ -128,7 +124,7 @@ Consulte [Inicio de sesión social con Facebook y Twitter](social-login.md).
 
 ## Creación de etiquetas de tutorial {#create-tutorial-tags}
 
-Cree etiquetas para utilizarlas en los tutoriales de Engage, utilizando el área de nombres de etiquetas de `Tutorial`.
+Cree etiquetas para poder utilizarlas en los tutoriales de Engage, utilizando el área de nombres de etiquetas de `Tutorial`.
 
 Utilice el [Consola de etiquetado](../../help/sites-administering/tags.md#tagging-console) para crear las etiquetas siguientes:
 

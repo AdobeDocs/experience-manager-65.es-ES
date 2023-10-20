@@ -1,18 +1,14 @@
 ---
 title: Configurar estructura del sitio web
-seo-title: Setup Website Structure
-description: Configurar directorios
-seo-description: Set up directories
-uuid: a31edcd5-dab8-4a42-953b-1d076c2182b2
+description: Obtenga información sobre cómo configurar la estructura del sitio web, incluidas las carpetas que se van a crear.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -23,17 +19,17 @@ Para configurar el sitio web, las instrucciones siguientes describen las carpeta
 
 * `/apps/an-scf-sandbox`
 
-   Aquí es donde residen las aplicaciones y plantillas personalizadas.
+  Aquí es donde residen las aplicaciones y plantillas personalizadas.
 
 * `/etc/designs/an-scf-sandbox`
 
-   Aquí es donde residen los elementos de diseño descargables.
+  Aquí es donde residen los elementos de diseño descargables.
 
 * `/content/an-scf-sandbox`
 
-   Aquí es donde residen las páginas web descargables.
+  Aquí es donde residen las páginas web descargables.
 
-El código de este tutorial dependerá de que el nombre de la carpeta principal sea el mismo para la aplicación, el diseño y el contenido. Si elige otro nombre para el sitio web, reemplace siempre `an-scf-sandbox` con el nombre que ha elegido.
+El código de este tutorial depende de que el nombre de la carpeta principal sea el mismo para la aplicación, el diseño y el contenido. Si elige otro nombre para el sitio web, reemplace siempre `an-scf-sandbox` con el nombre que ha elegido.
 
 >[!NOTE]
 >
@@ -41,11 +37,10 @@ El código de este tutorial dependerá de que el nombre de la carpeta principal 
 >
 >* Los nombres que se ven en CRXDE son nombres de nodo que forman la ruta al contenido accesible.
 >* Los nombres de nodo pueden contener espacios, pero cuando se utilizan en un URI, el espacio debe codificarse como &#39;%20&#39; o &#39;+&#39;.
->* Los nombres de nodo pueden contener guiones y guiones bajos, pero deben codificarse cuando se haga referencia a ellos como un nombre de paquete dentro de un archivo Java. Tanto los guiones como los guiones bajos se escapan con guiones bajos seguidos de su valor Unicode:
-   >
-   >   * el guión se convierte en &#39;_002d&#39;
-   >   * el guion bajo se convierte en &#39;_005f&#39;
-
+>* Los nombres de nodo pueden contener guiones y guiones bajos, pero deben codificarse cuando se haga referencia a ellos como un nombre de paquete dentro de un archivo Java™. Tanto los guiones como los guiones bajos se codifican con guiones bajos seguidos de su valor Unicode:
+>
+* el guión se convierte en &#39;_002d&#39;
+* el guion bajo se convierte en &#39;_005f&#39;
 
 ## Configurar el directorio de aplicaciones (/apps) {#setup-the-application-directory-apps}
 
@@ -79,7 +74,7 @@ El directorio /apps está protegido y no es accesible públicamente, como los di
    1. Volver a seleccionar `/apps/an-scf-sandbox`.
    1. Seleccionar **[!UICONTROL Guardar todo]**.
 
-   Al igual que con cualquier proceso de edición, guarde con frecuencia. Si tiene problemas para introducir datos, puede deberse a que se ha agotado el tiempo de espera de inicio de sesión o a que necesita guardar las ediciones anteriores.
+   Al igual que con cualquier proceso de edición, debe guardar con frecuencia. Si tiene problemas para introducir datos, puede deberse a que se ha agotado el tiempo de espera de inicio de sesión o a que debe guardar las ediciones anteriores.
 
 1. La estructura del panel del explorador del CRXDE Lite debería tener un aspecto similar al siguiente:
 
@@ -87,7 +82,7 @@ El directorio /apps está protegido y no es accesible públicamente, como los di
 
 ## Configurar el directorio de diseño (/etc/designs) {#setup-the-design-directory-etc-designs}
 
-El directorio /etc/designs contiene las imágenes, scripts y hojas de estilo a descargar junto con el contenido de la página.
+El directorio /etc/designs contiene las imágenes, los scripts y las hojas de estilo que se van a descargar junto con el contenido de la página.
 
 1. Para utilizar la herramienta Diseñador en la IU clásica, vaya a [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
@@ -109,7 +104,7 @@ El directorio /etc/designs contiene las imágenes, scripts y hojas de estilo a d
 
 1. Vuelva al CRXDE Lite (http:// localhost:4502/crx/de) y expanda /etc/designs para ver el nodo llamado &quot;an-scf-sandbox&quot;.
 
-   En el panel inferior derecho de CRXDE, puede ver las pestañas Propiedades, Control de acceso y Replicación para ver lo que se ha definido con la Plantilla de página de diseño.
+   En el panel inferior derecho de CRXDE, puede ver las pestañas Propiedades, Control de acceso y Replicación para ver lo que se ha definido con la plantilla de la página de diseño.
 
    ![crxde-configure-template](assets/crxde-configure-template.png)
 

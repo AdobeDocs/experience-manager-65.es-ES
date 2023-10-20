@@ -1,18 +1,14 @@
 ---
 title: Tag Essentials
-seo-title: Tag Essentials
-description: Información general de etiquetas
-seo-description: Tag overview
-uuid: a5d52319-f821-4608-b0ab-abc8a1374343
+description: Obtenga información sobre cuándo se configuran los componentes de las comunidades con el etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
@@ -25,7 +21,7 @@ La infraestructura subyacente para las etiquetas aplicadas en el entorno de publ
 
 * Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado del contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre cómo crear y administrar etiquetas.
 
-* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información acerca de [marco de etiquetado](../../help/sites-developing/framework.md) además de incluir y ampliar etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
+* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información acerca de [marco de etiquetado](../../help/sites-developing/framework.md) e inclusión y ampliación de etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
 
 * Consulte [Uso de Social Tag Cloud](tagcloud.md) para obtener información para los autores sobre cómo agregar una `social tag cloud` Componente a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
 
@@ -74,9 +70,9 @@ El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sit
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de nube de etiquetas social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API de nube de etiquetas social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Administrador de etiquetas social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Administrador de etiquetas social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

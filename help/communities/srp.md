@@ -1,14 +1,14 @@
 ---
 title: Resumen del proveedor de recursos de almacenamiento
-description: Almacenamiento común para las comunidades
+description: Descubra cómo el contenido de la comunidad, conocido como contenido generado por el usuario (UGC), se almacena en un almacén simple y común proporcionado por un proveedor de recursos de almacenamiento (SRP).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ AEM Una implementación de JCR es el repositorio de, Oak.
 
 AEM Tanto JCR como Oak se utilizan generalmente para hacer referencia al repositorio de.
 
-Después de desarrollar el contenido del sitio en el entorno de creación privado, debe copiarse en el entorno de publicación público. A menudo, esto se lleva a cabo mediante una operación llamada *[réplica](deploy-communities.md#replication-agents-on-author)*. Esto sucede bajo el control del autor, desarrollador o administrador.
+Después de desarrollar el contenido del sitio en el entorno privado de creación, debe copiarse en el entorno público de publicación. A menudo, esto se lleva a cabo mediante una operación llamada *[réplica](deploy-communities.md#replication-agents-on-author)*. Esto sucede bajo el control del autor, desarrollador o administrador.
 
 Para UGC, el contenido lo introducen visitantes registrados del sitio (miembros de la comunidad) en el entorno de publicación público. Esto sucede al azar.
 
-Para fines de administración y creación de informes, es útil tener acceso a UGC desde el entorno de creación privado. Con SRP, el acceso a UGC desde el autor es más coherente y eficaz, ya que la replicación inversa de la publicación al autor no es necesaria.
+Para fines de administración y creación de informes, es útil tener acceso a UGC desde el entorno de Author privado. Con SRP, el acceso a UGC desde Autor es más coherente y eficaz, ya que la replicación inversa de Publicar en Autor no es necesaria.
 
 ## Acerca de SRP {#about-srp}
 
@@ -77,7 +77,7 @@ ASRP utiliza la nube de Adobe para las consultas.
 
 ### MSRP {#msrp}
 
-Si existe, MSRP, UGC no se almacena en JCR, sino en MongoDB. No se puede ver con CRXDE Lite ni acceder a los UGC almacenados en MSRP mediante la API JCR.
+Si existe, MSRP, UGC no se almacena en JCR, sino en MongoDB. No se puede ver con el CRXDE Lite el UGC almacenado en el MSRP ni acceder a él mediante la API JCR.
 
 Consulte [MSRP: proveedor de recursos de almacenamiento de MongoDB](msrp.md).
 
@@ -91,9 +91,9 @@ AEM JSRP es el proveedor predeterminado para acceder a todos los UGC en una sola
 
 Consulte [JSRP: proveedor de recursos de almacenamiento de JCR](jsrp.md).
 
-Si hay JSRP, mientras que UGC está almacenado en JCR, y accesible a través de CRXDE Lite y de la API JCR, se recomienda no utilizar nunca la API JCR para hacerlo, de lo contrario los cambios futuros pueden afectar al código personalizado.
+Si hay JSRP mientras que UGC está almacenado en JCR y es accesible en el CRXDE Lite y la API JCR, Adobe recomienda que nunca utilice la API JCR para hacerlo. Si lo hace, los cambios futuros pueden afectar al código personalizado.
 
-Además, el repositorio de los entornos de creación y publicación no se comparte. Mientras que un clúster de instancias de publicación genera un repositorio de publicación compartido, el UGC introducido en la publicación no será visible en el autor, por lo que no es posible administrar el UGC desde el autor. AEM UGC solo persiste en el repositorio de la instancia en la que se ingresó, es decir, en el repositorio de la instancia en la que se ingresó.
+Además, el repositorio de los entornos Author y Publish no se comparte. Aunque un clúster de instancias de publicación genera un repositorio de publicación compartido, el UGC introducido en la publicación no es visible en el autor, por lo que no es posible administrar el UGC desde el autor. AEM UGC solo persiste en el repositorio de la instancia en la que se ingresó, es decir, en el repositorio de la instancia en la que se ingresó.
 
 JSRP utiliza los índices de Oak para las consultas.
 
@@ -104,13 +104,13 @@ Los nodos sombreados, que imitan la ruta a UGC, existen en el repositorio local 
 1. [Control de acceso (ACL)](#for-access-control-acls)
 1. [Recursos no existentes (NER)](#for-non-existing-resources-ners)
 
-Independientemente de la implementación de SRP, el UGC real *no *será visible en la misma ubicación que el nodo en la sombra.
+Independientemente de la implementación del SRP, el UGC real es *no* visible en la misma ubicación que el nodo de la sombra.
 
 ### Para el control de acceso (ACL) {#for-access-control-acls}
 
 Algunas implementaciones de SRP, como ASRP y MSRP, almacenan contenido de la comunidad en bases de datos que no proporcionan verificación de ACL. Los nodos sombreados proporcionan una ubicación en el repositorio local a la que se pueden aplicar las ACL.
 
-Con la API de SRP, todas las opciones de SRP realizan la misma comprobación de la ubicación en la sombra antes de todas las operaciones de CRUD.
+Con la API de SRP, todas las opciones de SRP realizan la misma comprobación de la ubicación en la sombra antes que todas las operaciones de CRUD.
 
 La comprobación ACL utiliza un método de utilidad que devuelve una ruta adecuada para comprobar los permisos aplicados al UGC del recurso.
 

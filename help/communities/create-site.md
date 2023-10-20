@@ -1,35 +1,31 @@
 ---
-title: Crear un nuevo sitio de comunidad
-seo-title: Author a New Community Site
-description: Creación de un nuevo sitio de AEM Communities
-seo-description: How to author a new AEM Communities site
-uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
+title: Crear un sitio de la comunidad
+description: Obtenga información sobre cómo crear un sitio de comunidades Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1578'
 ht-degree: 2%
 
 ---
 
-# Crear un nuevo sitio de comunidad{#author-a-new-community-site}
+# Crear un sitio de la comunidad{#author-a-new-community-site}
 
 ## Crear un sitio de la comunidad {#create-a-community-site}
 
-Utilice la instancia de autor para crear un sitio de la comunidad. En la instancia de autor de AEM:
+Utilice la instancia de autor para crear un sitio de la comunidad. AEM En la instancia de autor de:
 
 1. Iniciar sesión con privilegios de administrador.
 1. En la navegación global, vaya a **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
 La consola Sitios de Communities proporciona un asistente para guiar a uno a través de los pasos para crear un sitio de comunidad. Es posible pasar a la sección `Next` paso o `Back` Vaya al paso anterior antes de comprometer el sitio en el paso final.
 
-Para empezar a crear un nuevo sitio de la comunidad:
+Para empezar a crear un sitio de la comunidad:
 
 * Seleccione el `Create` botón.
 
@@ -45,12 +41,12 @@ En el [Paso Plantilla del sitio](/help/communities/sites-console.md#step2013asit
 * **Descripción del sitio de la comunidad**: `A site for engaging with the community.`
 * **Raíz del sitio de comunidad**: (dejar en blanco para la raíz predeterminada) `/content/sites`)
 * **Configuraciones de nube**: (déjelo en blanco si no se especifica ninguna configuración de nube) proporcione la ruta a las configuraciones de nube especificadas.
-* **Idioma base del sitio de la comunidad**: (no tocar para un solo idioma: inglés) utilice la lista desplegable para elegir uno *o más* idiomas base de los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se creará un sitio de comunidad para cada idioma agregado y existirá dentro de la misma carpeta del sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contendrá una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
+* **Idioma base del sitio de la comunidad**: (no tocar para un solo idioma: inglés) utilice la lista desplegable para elegir uno *o más* idiomas base de los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se crea un sitio de comunidad para cada idioma agregado y existe en la misma carpeta de sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
 
 * **Nombre del sitio de comunidad**: participar
 
    * Compruebe el nombre, ya que no se cambia fácilmente después de crear el sitio
-   * La dirección URL inicial se mostrará debajo del nombre del sitio de la comunidad
+   * La dirección URL inicial se muestra debajo del Nombre del sitio de la comunidad
    * Para una URL válida, añada un código de idioma base + &quot;.html&quot;
    * *Por ejemplo*, https://localhost:4502/content/sites/ `engage/en.html`
 
@@ -78,7 +74,7 @@ Seleccione **Siguiente**.
 
 ### Paso 3: Configuración {#step-settings}
 
-En el paso Configuración, antes de seleccionar `Next`, tenga en cuenta que hay siete secciones que proporcionan acceso a configuraciones que implican administración de usuarios, etiquetado, moderación, administración de grupos, análisis y traducción.
+En el paso Configuración, antes de seleccionar `Next`, hay siete secciones que proporcionan acceso a configuraciones que implican administración de usuarios, etiquetado, moderación, administración de grupos, análisis y traducción.
 
 #### Administración de usuarios {#user-management}
 
@@ -92,18 +88,18 @@ Marcar todas las casillas de verificación para [Administración de usuarios](/h
 
 >[!NOTE]
 >
->Para un entorno de producción, es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
+>Para un entorno de producción, es necesario crear aplicaciones de Twitter y Facebook personalizadas. Consulte [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
 
 ![configuración del sitio de comunidad](assets/site-settings.png)
 
 #### ETIQUETADO {#tagging}
 
-AEM Las etiquetas que se pueden aplicar al contenido de la comunidad se controlan seleccionando áreas de nombres definidas previamente mediante la opción de nombre de la comunidad de nombres de [Consola de etiquetado](/help/sites-administering/tags.md#tagging-console) (como el [Área de nombres del tutorial](/help/communities/setup.md#create-tutorial-tags)).
+AEM Las etiquetas aplicadas al contenido de la comunidad se controlan seleccionando áreas de nombres previamente definidas a través de la opción de selección de nombres de la comunidad. [Consola de etiquetado](/help/sites-administering/tags.md#tagging-console) (como el [Área de nombres del tutorial](/help/communities/setup.md#create-tutorial-tags)).
 
 Encontrar áreas de nombres es fácil mediante la búsqueda de escritura anticipada. Por ejemplo,
 
 * Tipo `tut`
-* Seleccionar `Tutorial`
+* Seleccione lo siguiente `Tutorial`
 
 ![etiquetado](assets/tagging.png)
 
@@ -132,7 +128,7 @@ Acepte la configuración global predeterminada para [moderador](/help/communitie
 
 #### ANALYTICS {#analytics}
 
-Si Adobe Analytics tiene licencia y se han configurado un servicio y una estructura en la nube de Analytics, es posible habilitar Analytics y seleccionar la estructura.
+Si Adobe Analytics tiene licencia y se han configurado un servicio y una estructura de Analytics Cloud, es posible habilitar Analytics y seleccionar la estructura.
 
 Consulte [Configuración de Analytics para funciones de Communities](/help/communities/analytics.md).
 
@@ -140,7 +136,7 @@ Consulte [Configuración de Analytics para funciones de Communities](/help/commu
 
 #### TRADUCCIÓN {#translation}
 
-El [Configuración de traducción](/help/communities/sites-console.md#translation) especifique el idioma base del sitio, así como si se puede traducir o no UGC y a qué idioma, si es así.
+El [Configuración de traducción](/help/communities/sites-console.md#translation) especifique el idioma base del sitio, si se puede traducir el UGC y a qué idioma, en caso afirmativo.
 
 * Marque **Permitir traducción automática**
 * Deje seleccionados los idiomas predeterminados para la traducción mediante el servicio de traducción automática predeterminado
@@ -177,24 +173,23 @@ De izquierda a derecha son:
 
 * **Abrir sitio**
 
-   Seleccione el icono de lápiz para abrir el sitio de la comunidad en el modo de edición de autor, para agregar o configurar componentes de página
+  Al seleccionar el icono de lápiz, se abre el sitio de la comunidad en el modo de edición de Autor, donde puede agregar o configurar componentes de página.
 
 * **Editar sitio**
 
-   Seleccione el icono de propiedades para abrir el sitio de la comunidad y modificar las propiedades, como el título o cambiar el tema
+  Al seleccionar el icono de propiedades, se abre el sitio de la comunidad para modificar las propiedades, como el título o para cambiar el tema.
 
 * **Publicar sitio**
 
-   Seleccione el icono del mundo para publicar el sitio de la comunidad (por ejemplo, si el servidor de publicación se está ejecutando en el equipo local y, a continuación, en localhost:4503 de forma predeterminada)
+  Al seleccionar el icono del mundo, se publica el sitio de la comunidad (por ejemplo, si el servidor de publicación se está ejecutando en el equipo local y, a continuación, en localhost:4503 de forma predeterminada).
 
 * **Exportar sitio**
 
-   Seleccione el icono de exportación para crear un paquete del sitio de la comunidad almacenado en [administrador de paquetes](/help/sites-administering/package-manager.md) y descargado.
-Tenga en cuenta que UGC no se incluye en el paquete del sitio.
+  Al seleccionar el icono de exportación, se crea un paquete del sitio de la comunidad que está almacenado en [Administrador de paquetes](/help/sites-administering/package-manager.md) y descargado. UGC no está incluido en el paquete del sitio.
 
 * **Eliminar sitio**
 
-   Seleccione el icono de eliminación para eliminar el sitio de la comunidad desde **[!UICONTROL Communities > Consola de sitios]**. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, recursos y registros de bases de datos.
+  Al seleccionar el icono de eliminación, se elimina el sitio de la comunidad desde **[!UICONTROL Communities > Consola de sitios]**. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, recursos y registros de bases de datos.
 
 ![siteactions](assets/siteactions.png)
 
@@ -212,7 +207,6 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 >1. En URI, cambie el número de puerto 4503 por el número de puerto deseado. Por ejemplo, para utilizar el puerto 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. Seleccionar **[!UICONTROL OK]**.
 >1. (Opcional) Seleccione **[!UICONTROL Borrar]** o **[!UICONTROL Forzar reintento]** para restablecer la cola de replicación.
-
 
 ### Seleccionar publicación {#select-publish}
 
@@ -235,7 +229,7 @@ Para este nuevo sitio de comunidad, dado el nombre de sitio &quot;participar&quo
 * Miembros privilegiados de Community Engage
 * Administrador de contenido del sitio Community Engage
 
-Tenga en cuenta que [Aaron McDonald](/help/communities/tutorials.md#demo-users) es miembro de
+[Aaron McDonald](/help/communities/tutorials.md#demo-users) es miembro de
 
 * Community Engage Administradores de la comunidad
 * Moderadores de Community Engage
@@ -283,12 +277,12 @@ Para empezar:
    * **Nombre** sling:coincidencia
       * **Tipo** Cadena
       * **Valor** localhost.4503/$ (debe finalizar con &#39;$&#39; char)
+
    * Añadir propiedades:
 
       * **Nombre** sling:internalRedirect
       * **Tipo** Cadena
       * **Valor** /content/sites/engage/en.html
-
 
 1. Seleccionar **Guardar todo.**
 1. (Opcional) Elimine el historial de exploración.
@@ -310,7 +304,7 @@ Si no puede guardar los cambios, asegúrese de que el nombre del nodo es `localh
 
 #### Solución de problemas: error al redirigir {#troubleshooting-fail-to-redirect}
 
-El &#39;**$**&#39; al final de la expresión regular `sling:match`cadena es crucial, por lo que solo exactamente `https://localhost:4503/` se asigna; de lo contrario, el valor de redirección se antepone a cualquier ruta que pueda existir después del server:port en la dirección URL. AEM Por lo tanto, cuando el usuario intenta redirigir a la página de inicio de sesión, se produce un error.
+El &#39;**$**&#39; al final de la expresión regular `sling:match`La cadena es crucial, por lo que solo `https://localhost:4503/` se asigna; de lo contrario, el valor de redirección se antepone a cualquier ruta que pueda existir después del server:port en la dirección URL. AEM Por lo tanto, cuando el usuario intenta redirigir a la página de inicio de sesión, se produce un error.
 
 ### Modificación del sitio {#modify-the-site}
 

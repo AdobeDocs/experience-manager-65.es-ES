@@ -1,19 +1,15 @@
 ---
 title: Experimente el sitio publicado
-seo-title: Experience the Published Site
-description: Navegación a un sitio publicado
-seo-description: Browse to a published site
-uuid: 44594e9e-27ad-475d-953d-3611b04f0df8
+description: Obtenga información sobre cómo buscar la dirección URL que se muestra al crear un sitio, pero en el servidor de publicación.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,7 @@ Ahora que se ha publicado el sitio de comunidades recién creado, vaya a la URL 
 
 Para minimizar la confusión sobre qué miembro ha iniciado sesión en Autor y Publicación, se recomienda utilizar diferentes exploradores para cada instancia.
 
-Al llegar por primera vez al sitio publicado, el visitante del sitio no suele haber iniciado sesión y es anónimo.
+Al llegar por primera vez al sitio publicado, el visitante del sitio no suele haber iniciado sesión ya y es anónimo.
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
@@ -86,17 +82,17 @@ En la esquina superior derecha, seleccione `Log in`y firme con el nombre de usua
 Una vez que haya iniciado sesión como miembro registrado de la comunidad, observe los siguientes elementos de menú para hacer clic y explorar el sitio de la comunidad:
 
 * **Perfil** Esta opción le permite ver y editar su perfil.
-* [Mensajes](/help/communities/configure-messaging.md) le dirige a la sección mensajería directa, donde puede:
+* [Mensajes](/help/communities/configure-messaging.md) le dirige a la sección mensajería directa, donde puede hacer lo siguiente:
 
    1. Ver los mensajes directos recibidos (Bandeja de entrada), enviados (Elementos enviados) y eliminados (Papelera).
-   1. Componga nuevos mensajes directos para enviarlos a particulares y grupos.
+   1. Componga nuevos mensajes directos para que pueda enviarlos a particulares y grupos.
 
 * [Notificaciones](/help/communities/notifications.md) le dirige a la sección notificaciones, donde puede ver los eventos de interés y editar la configuración de las notificaciones.
 * [Administration](/help/communities/published-site.md#moderationlink) le dirige a la página Moderación de AEM Communities, si tiene privilegios de moderación.
 
 ![adminscreen](assets/adminscreen.png)
 
-Observe que la página de calendario es la página principal porque la Plantilla de sitio de referencia seleccionada incluía primero la función de calendario, seguida de la función de flujo de actividad, la función de foro, etc. Esta estructura es visible desde el [Plantilla del sitio](/help/communities/sites.md#edit-site-template) o al modificar las propiedades del sitio en el entorno de creación:
+Observe que la página de calendario es la página principal porque la Plantilla de sitio de referencia seleccionada incluía primero la función de calendario, seguida de la función Flujo de actividad, Función de foro, etc. Esta estructura es visible desde el [Plantilla del sitio](/help/communities/sites.md#edit-site-template) o al modificar las propiedades del sitio en el entorno de creación:
 
 ![sitetemplate](assets/sitetemplate.png)
 
@@ -119,7 +115,7 @@ Los visitantes del sitio pueden ver las publicaciones y ordenarlas de varias for
 
 ### Vínculo de grupos {#groups-link}
 
-Dado que Aaron es administrador de un grupo, si selecciona el vínculo Grupos, podrá crear un nuevo grupo de comunidad seleccionando una plantilla de grupo, una imagen, si el grupo es abierto o secreto e invitando a miembros.
+Dado que Aaron es administrador de un grupo, al seleccionar el vínculo Grupos, Aaron puede crear un grupo de comunidad seleccionando una plantilla de grupo, una imagen, si el grupo es abierto o secreto e invitando a miembros.
 
 Este es un ejemplo en el que se crea un grupo en el entorno de publicación.
 
@@ -166,7 +162,7 @@ Por ejemplo, añada dos `new groups`.
 **Aviso**:
 
 * Es posible que sea necesario actualizar la página antes de mostrar ambos grupos.
-* Esta plantilla sí *no* incluya la función grupos, de modo que no será posible anidar más grupos.
+* Esta plantilla sí *no* incluya la función grupos, de modo que no sea posible anidar más grupos.
 * En autor, la variable [Consola de grupos](/help/communities/groups.md) proporciona una tercera opción: una `Public Group` (abono opcional).
 
 Una vez creados ambos grupos, seleccione el grupo de béisbol, un grupo abierto y observe sus vínculos:
@@ -186,7 +182,7 @@ Continuando con la publicación, cierre la sesión de Aaron McDonald y vea los g
 * Seleccionar `Sports` vincular
 * Seleccione el de deportes `Groups` vincular
 
-Solo el grupo de béisbol será visible.
+Solo el grupo de béisbol es visible.
 
 Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y vaya a la misma ubicación. Tenga en cuenta que Weston puede `Join` la apertura `Baseball` grupo y o bien `enter or Leave` el privado `Gymnastics` grupo.
 
@@ -196,13 +192,13 @@ Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y vay
 
 Ver la página web básica incluida en el sitio seleccionando el vínculo Página web. AEM Las herramientas de creación de contenido estándar se pueden utilizar para añadir contenido a esta página en el entorno de creación.
 
-Por ejemplo, vaya a **autor** , abra el `engage` carpeta en el [Consola Sitios de Communities](/help/communities/sites-console.md), seleccione la **Abrir sitio** para acceder al modo de edición de autor. A continuación, seleccione el modo de vista previa para seleccionar `Web Page` y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
+Por ejemplo, vaya a **autor** , abra el `engage` carpeta en el [Consola Sitios de Communities](/help/communities/sites-console.md), seleccione la **Abrir sitio** para acceder al modo de edición de autor. A continuación, seleccione el modo de vista previa para poder seleccionar el `Web Page` y, a continuación, seleccione el modo de edición para añadir los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Vínculo de moderación {#moderationlink}
 
-Cuando el miembro de la comunidad tiene privilegios de moderación, el vínculo Moderación se puede ver y, al seleccionarlo, se muestra el contenido de la comunidad publicado y se permite [moderado](/help/communities/moderate-ugc.md) de forma similar a la [consola de moderación](/help/communities/moderation.md) en el entorno de creación.
+Cuando el miembro de la comunidad tiene privilegios de moderación, se puede ver el vínculo Moderación. Al seleccionar el vínculo, se muestra el contenido de la comunidad que se publica y se permite [moderado](/help/communities/moderate-ugc.md) de forma similar a la [consola de moderación](/help/communities/moderation.md) en el entorno de creación.
 
 Utilice el botón Atrás del explorador para volver al sitio publicado. La mayoría de las consolas no son accesibles desde la navegación global en el entorno de publicación.
 
@@ -210,7 +206,7 @@ Utilice el botón Atrás del explorador para volver al sitio publicado. La mayor
 
 ## Registro automático {#self-registration}
 
-Después de cerrar la sesión, es posible crear un nuevo registro de usuario.
+Después de cerrar la sesión, es posible crear un registro de usuario.
 
 * Seleccione lo siguiente `Log In`
 * Seleccione lo siguiente `Sign up for a new account`
@@ -221,9 +217,9 @@ Después de cerrar la sesión, es posible crear un nuevo registro de usuario.
 
 De forma predeterminada, la dirección de correo electrónico es el ID de inicio de sesión. Si no se selecciona, el visitante puede introducir su propio ID de inicio de sesión (nombre de usuario). El nombre de usuario debe ser único en el entorno de publicación.
 
-Después de especificar el nombre de usuario, el correo electrónico y la contraseña, seleccione `Sign Up` creará el usuario y le permitirá firmar.
+Después de especificar el nombre de usuario, el correo electrónico y la contraseña, seleccione `Sign Up` crea el usuario y le permite firmar.
 
-Una vez que haya iniciado sesión, la primera página que se presenta es su `Profile` , que pueden personalizar.
+Después de iniciar sesión, la primera página que se presenta es su `Profile` , que pueden personalizar.
 
 ![perfil](assets/profile.png)
 

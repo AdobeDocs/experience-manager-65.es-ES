@@ -1,19 +1,15 @@
 ---
 title: Sitios de comunidades
-seo-title: Communities Sites
-description: Información general sobre la documentación de AEM Communities
-seo-description: Overview of the AEM Communities documentation
-uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
+description: Obtenga información acerca de los aspectos básicos de las comunidades de Adobe Experience Manager AEM () para administradores que ya están familiarizados con sus funciones básicas.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -38,10 +34,10 @@ Para obtener información general y tutoriales de introducción, visite:
    * [Sites](sites-console.md)
 
       * [Grupos (subcomunidades)](groups.md)
+
    * [Moderación](moderation.md)
    * [Administración de miembros y grupos](members.md)
    * [Informes](reports.md)
-
 
 * Communities [*herramientas*](tools.md):
 
@@ -70,7 +66,7 @@ Una característica principal de AEM Communities es la generación de contenido 
 * [Servicio de túnel](deploy-communities.md#tunnel-service-on-author): permite acceder a los miembros y grupos de miembros del lado de publicación desde el entorno de creación.
 * [Consolas de miembros y grupos](members.md): permite crear y administrar miembros y grupos de miembros del lado de publicación desde el entorno de creación.
 * [Sincronización de usuarios](sync.md): para sincronizar miembros y grupos de miembros en varias instancias de publicación.
-* [Inicio de sesión social con Facebook y Twitter](social-login.md): capacidad de los visitantes del sitio para convertirse en miembros de la comunidad mediante sus credenciales de Facebook o Twitter.
+* [Social Inicie sesión con Facebook y Twitter](social-login.md): capacidad para que los visitantes del sitio se conviertan en miembros de la comunidad mediante sus credenciales de Facebook o Twitter.
 * [Puntuación y distintivos](implementing-scoring.md): capacidad para asignar insignias a fin de identificar las funciones de un miembro y para que los miembros obtengan insignias mediante su participación en la comunidad.
 * [Notificaciones](notifications.md): capacidad para que los miembros reciban notificaciones de la actividad que siguen.
 * [Suscripciones](subscriptions.md): capacidad de los miembros para interactuar con la comunidad mediante correo electrónico externo.
@@ -88,12 +84,12 @@ AEM Es importante instalar la versión más reciente de Communities en la plataf
 
 * [Último paquete de funciones de Communities](deploy-communities.md#latestfeaturepack)
 
-Consulte la página de implementación para obtener otra información específica de las comunidades, como para [Actualización](upgrade.md), [Dispatcher](dispatcher.md) y [Replicación](deploy-communities.md#replication-agents-on-author).
+Consulte la página de implementación para obtener otra información específica de las comunidades, como para [Actualización](upgrade.md), [Dispatcher](dispatcher.md), y [Replicación](deploy-communities.md#replication-agents-on-author).
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implementación de comunidades](deploy-communities.md) para obtener más información sobre las implementaciones recomendadas.
+* Visita [Implementación de comunidades](deploy-communities.md) donde puede obtener más información sobre las implementaciones recomendadas.
 
-* Visita [Desarrollo de comunidades](communities.md) para obtener más información sobre el marco de trabajo de componentes sociales (SCF) y personalizar los componentes y las funciones de las Comunidades.
+* Visita [Desarrollo de comunidades](communities.md) donde puede obtener información sobre el marco de trabajo de componentes sociales (SCF) y la personalización de los componentes y las funciones de las Comunidades.
 
-* Visita [Componentes de comunidades de creación](author-communities.md) para aprender a crear y configurar componentes de Communities.
+* Visita [Componentes de comunidades de creación](author-communities.md) donde puede aprender a crear y configurar componentes de Communities.

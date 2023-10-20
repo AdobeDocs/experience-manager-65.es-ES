@@ -1,14 +1,14 @@
 ---
 title: Search Essentials
-description: Buscar en comunidades
+description: Obtenga información acerca de la función de búsqueda, que es una función esencial de AEM Communities. Las comunidades también proporcionan la API de búsqueda para el contenido generado por el usuario.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1189'
 ht-degree: 5%
 
 ---
@@ -72,7 +72,7 @@ Para [JSRP](jsrp.md), UGC se almacena en [Oak](../../help/sites-deploying/platfo
 
 Dado que UGC se introduce normalmente en el entorno de publicación, para sistemas de producción de varios editores es necesario configurar un [publicar clúster](topologies.md), no un conjunto de servidores de publicación, de modo que el contenido introducido sea visible desde todos los editores.
 
-Para JSRP, el UGC introducido en el entorno de publicación nunca es visible en el entorno de creación. Por lo tanto, todos [moderación](moderate-ugc.md) las tareas se realizan en el entorno de publicación.
+Para JSRP, el UGC introducido en el entorno de publicación nunca es visible en el entorno de creación. Por lo tanto, todos [moderación](moderate-ugc.md) Las tareas de se realizan en el entorno de publicación.
 
 Las funciones de búsqueda personalizadas deben utilizar la variable [API de búsqueda UGC](#ugc-search-api).
 

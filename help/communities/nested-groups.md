@@ -1,15 +1,15 @@
 ---
 title: Creación de grupos anidados
-description: Creación de grupos anidados
+description: Obtenga información sobre cómo crear grupos anidados para un sitio de comunidades de Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '600'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ La función de grupos se muestra como una carpeta en la que se crean instancias 
 
 ## Crear grupo de artes principales {#create-main-arts-group}
 
-Este grupo se puede crear porque la estructura del sitio para la participación incluye una función de grupos. La configuración de la función en el `Reference Template` de forma predeterminada, permite seleccionar cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo es `Reference Group`.
+Este grupo se puede crear porque la estructura del sitio para participar incluye la función de un grupo. La configuración de la función en el `Reference Template` de forma predeterminada, permite seleccionar cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo es `Reference Group`.
 
 Estas consolas son similares a la consola Sitios de Communities.
 
