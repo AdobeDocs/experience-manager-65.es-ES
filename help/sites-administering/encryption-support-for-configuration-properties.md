@@ -1,7 +1,7 @@
 ---
 title: Compatibilidad con cifrado para propiedades de configuración
 seo-title: Encryption Support for Configuration Properties
-description: Compatibilidad con cifrado para propiedades de configuración
+description: AEM Obtenga información acerca de la compatibilidad con el cifrado de las propiedades de configuración que se proporcionan en la documentación de.
 seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---

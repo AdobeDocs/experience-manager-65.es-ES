@@ -1,7 +1,7 @@
 ---
 title: Tareas de mantenimiento previas a la actualización
 seo-title: Pre-Upgrade Maintenance Tasks
-description: AEM Obtenga información acerca de las tareas previas a la actualización en la.
+description: AEM Obtenga información acerca de las tareas previas a la actualización recomendadas para los.
 seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2031'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ El proceso de actualización realiza un buen trabajo al mantener y combinar el c
 
 ## Generar el archivo quickstart.properties {#generate-quickstart-properties}
 
-AEM Al iniciar el proceso desde el archivo jar, se muestra un `quickstart.properties` el archivo se genera en `crx-quickstart/conf`. AEM Si solo se ha iniciado con la secuencia de comandos de inicio en el pasado, este archivo no está presente y la actualización falla. AEM Asegúrese de comprobar la existencia de este archivo y reinicie el proceso desde el archivo jar si no está presente.
+AEM Al iniciar el proceso desde el archivo jar, se muestra un archivo `quickstart.properties` el archivo se genera en `crx-quickstart/conf`. AEM Si solo se ha iniciado con la secuencia de comandos de inicio en el pasado, este archivo no está presente y la actualización falla. AEM Asegúrese de comprobar la existencia de este archivo y reinicie el proceso desde el archivo jar si no está presente.
 
 ## Configurar depuración de flujo de trabajo y registro de auditoría {#configure-wf-audit-purging}
 
@@ -245,7 +245,6 @@ A continuación se muestra una lista de todos los métodos disponibles que el `P
 >* cURL
 >
 
-
 ## Deshabilitar módulos de inicio de sesión personalizados {#disable-custom-login-modules}
 
 >[!NOTE]
@@ -340,8 +339,7 @@ Para evitar que se produzca un escenario de este tipo, actualice el esquema haci
 >* Durante la actualización, se produce cualquiera de los errores que se mencionan a continuación.
 >
 
-
-AEM Existen casos excepcionales en los que los usuarios del servicio pueden terminar en una versión anterior que se está etiquetando incorrectamente como usuarios habituales.
+AEM Existen casos excepcionales en los que los usuarios del servicio pueden terminar en una versión anterior del servicio etiquetada incorrectamente como usuarios habituales.
 
 Si se produce una situación de este tipo, la actualización falla con un mensaje como el siguiente:
 

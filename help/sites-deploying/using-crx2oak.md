@@ -1,7 +1,7 @@
 ---
 title: Uso de la herramienta de migración CRX2Oak
 seo-title: Using the CRX2Oak Migration Tool
-description: Aprenda a utilizar la herramienta de migración CRX2Oak.
+description: AEM Aprenda a utilizar la herramienta de migración CRX2Oak con la herramienta de migración de.
 seo-description: Learn how to use the CRX2Oak migration tool.
 uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1222'
 ht-degree: 1%
 
 ---

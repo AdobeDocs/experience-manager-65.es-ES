@@ -1,6 +1,6 @@
 ---
 title: Sincronización de usuarios
-description: AEM Obtenga información acerca de la sincronización de usuarios en.
+description: AEM Obtenga información acerca del funcionamiento interno de la sincronización de usuarios en la.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2502'
 ht-degree: 5%
 
 ---

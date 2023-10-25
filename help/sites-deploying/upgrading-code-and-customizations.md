@@ -1,7 +1,7 @@
 ---
 title: Actualizar código y personalizaciones
 seo-title: Upgrading Code and Customizations
-description: AEM Obtenga más información sobre la actualización del código personalizado en la.
+description: AEM Obtenga más información sobre la actualización de código y personalizaciones en.
 seo-description: Learn more about upgrading custom code in AEM.
 uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
 contentOwner: sarchiz
@@ -13,9 +13,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
-source-git-commit: a296e459461973fc2dbd0641c6fdda1d89d8d524
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ AEM Antes de continuar con la actualización, debe tener una base de código de 
 AEM Además de actualizar de forma opcional el código base y las personalizaciones para que funcionen con la nueva versión de la aplicación, la versión 6.5 también ayuda a administrar las personalizaciones de forma más eficaz con la función Compatibilidad con versiones anteriores, tal como se describe en [esta página](/help/sites-deploying/backward-compatibility.md).
 
 Como se ha mencionado anteriormente y se muestra en el diagrama siguiente, la ejecución del [Detector de patrones](/help/sites-deploying/pattern-detector.md) en el primer paso puede ayudarle a evaluar la complejidad general de la actualización. AEM También puede ayudarle a decidir si desea ejecutar en modo de compatibilidad o actualizar las personalizaciones para utilizar todas las nuevas características de la versión 6.5 de la versión de. Consulte la [AEM Compatibilidad con versiones anteriores en 6.5](/help/sites-deploying/backward-compatibility.md) para obtener más información.
-[ ![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Actualizar la base de código {#upgrade-code-base}
 
@@ -91,7 +91,7 @@ AEM La creación de IU clásica sigue estando disponible en la versión 6.5 de, 
 
 Para facilitar las actualizaciones y garantizar que las configuraciones no se sobrescriban durante una actualización, el repositorio se reestructura en la versión 6.4 para separar el contenido de la configuración.
 
-Por lo tanto, se deben mover varias configuraciones para que ya no residan en `/etc` como había ocurrido en el pasado. AEM Para revisar el conjunto completo de problemas de reestructuración de repositorios que deben revisarse y tenerse en cuenta en la actualización a la versión 6.4, véase el documento de trabajo de la Comisión sobre la reestructuración de los repositorios de las Naciones Unidas en el documento actualizado a la versión 6.4000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000 [AEM Reestructuración de repositorios en 6.4](/help/sites-deploying/repository-restructuring.md).
+Por lo tanto, se deben mover varias configuraciones para que ya no residan en `/etc` como había ocurrido en el pasado. AEM Para revisar el conjunto completo de problemas de reestructuración de repositorios que deben revisarse y tenerse en cuenta en la actualización a la versión 6.4, véase el documento de trabajo de la Comisión sobre la reestructuración de los repositorios de las Naciones Unidas en el documento actualizado a la versión 6.40000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000 [AEM Reestructuración de repositorios en 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## AEM Personalizaciones de  {#aem-customizations}
 

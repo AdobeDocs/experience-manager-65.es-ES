@@ -1,7 +1,7 @@
 ---
 title: Copia de seguridad y restauración
 seo-title: Backup and Restore
-description: AEM Obtenga información sobre cómo realizar copias de seguridad y restaurar el contenido de la.
+description: AEM Obtenga información sobre cómo realizar copias de seguridad y restaurar el contenido y las configuraciones de la.
 seo-description: Learn how to backup and restore your AEM content.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,7 @@ La copia de seguridad en línea utiliza el siguiente algoritmo:
    * Si realiza una copia de seguridad en un archivo zip, se crea un directorio temporal. El nombre del directorio empieza por `backup.` y termina por `.temp`; por ejemplo `backup.f4d3.temp`.
    * Si se realiza una copia de seguridad en un directorio, se utiliza el nombre especificado en la ruta de destino. Se puede utilizar un directorio existente; de lo contrario, se creará un nuevo directorio.
 
-      Un archivo vacío denominado `backupInProgress.txt` se crea en el directorio de destino cuando se inicia la copia de seguridad. Este archivo se elimina cuando finaliza la copia de seguridad.
+     Un archivo vacío denominado `backupInProgress.txt` se crea en el directorio de destino cuando se inicia la copia de seguridad. Este archivo se elimina cuando finaliza la copia de seguridad.
 
 1. Los archivos se copian del directorio de origen al directorio de destino (o al directorio temporal al crear un archivo zip). El almacén de segmentos se copia antes del almacén de datos para evitar daños en el repositorio. Los datos de índice y de caché se omiten al crear la copia de seguridad. Como resultado, los datos de `crx-quickstart/repository/cache` y `crx-quickstart/repository/index` no se incluye en la copia de seguridad. El indicador de barra de progreso del proceso está entre 0% y 70% al crear un archivo zip o entre 0% y 100% si no se crea ningún archivo zip.
 
