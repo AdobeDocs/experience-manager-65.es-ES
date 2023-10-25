@@ -1,7 +1,7 @@
 ---
 title: Administración de etiquetas
 seo-title: Administering Tags
-description: AEM Obtenga información sobre cómo administrar Etiquetas en la aplicación de etiquetas de.
+description: Obtenga información sobre cómo administrar y administrar etiquetas en Adobe Experience Manager.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
@@ -10,10 +10,10 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 1%
+source-wordcount: '1764'
+ht-degree: 2%
 
 ---
 
@@ -85,15 +85,13 @@ El área de nombres es en sí misma una etiqueta y no necesita contener subetiqu
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creation_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
 * **Título**
-
-   *(obligatorio)* Un título para mostrar para el área de nombres.
+  *(obligatorio)* Un título para mostrar para el área de nombres.
 
 * **Nombre**
-   *(opcional)* Un nombre para el área de nombres. Si no se especifica, se crea un nombre de nodo válido a partir del Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
+  *(opcional)* Un nombre para el área de nombres. Si no se especifica, se crea un nombre de nodo válido a partir del Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Descripción**
-
-   *(opcional)* Una descripción del área de nombres.
+  *(opcional)* Una descripción del área de nombres.
 
 Una vez introducida la información requerida
 
@@ -197,15 +195,13 @@ Cuando se selecciona un área de nombres u otra etiqueta, al seleccionar **`Move
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Ruta**
-
-   *(solo lectura)* Ruta actual a la etiqueta seleccionada.
+  *(solo lectura)* Ruta actual a la etiqueta seleccionada.
 
 * **Mover a**
 Desplácese hasta la nueva ruta en la que desea mover la etiqueta.
 
 * **Cambiar nombre a**
-Muestra inicialmente el actual 
-`name`de la etiqueta. Un nuevo `name`se puede introducir.
+Muestra inicialmente el actual `name`de la etiqueta. Un nuevo `name`se puede introducir.
 
 * select **Guardar**
 
@@ -220,8 +216,7 @@ Cuando se selecciona un área de nombres u otra etiqueta, al seleccionar **Combi
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Ruta**
-
-   *(solo lectura)* Ruta de la etiqueta seleccionada para combinarse con otra etiqueta.
+  *(solo lectura)* Ruta de la etiqueta seleccionada para combinarse con otra etiqueta.
 
 * **Combinar en**
 Busque y seleccione la ruta de la etiqueta en la que desea combinar.
@@ -262,14 +257,14 @@ Los permisos de etiquetas son [&quot;seguro (de forma predeterminada)&quot;](/he
    * acceda al [Consola de seguridad](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * por ejemplo, vaya a http://localhost:4502/useradmin
+
    * en el panel izquierdo, seleccione el grupo (o usuario) para el que [permiso de lectura](/help/sites-administering/security.md#permissions) se concederá a
    * en el panel derecho, busque el **Path **to the Tag Namespace
 
       * por ejemplo, `/content/cq:tags/mycommunity`
+
    * seleccione el `checkbox`en el **Leer** columna
    * select **Guardar**
-
-
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -278,10 +273,10 @@ Los permisos de etiquetas son [&quot;seguro (de forma predeterminada)&quot;](/he
    * un enfoque es [creación de un paquete](/help/sites-administering/package-manager.md#package-manager) del área de nombres en autor
 
       * el `Advanced` pestaña, para `AC Handling` select `Overwrite`
+
    * replicar el paquete
 
       * escoger `Replicate` del administrador de paquetes
-
 
 ## Administración de etiquetas en diferentes idiomas {#managing-tags-in-different-languages}
 
@@ -301,7 +296,7 @@ Una vez introducidas todas las traducciones, seleccione **Guardar** para salir d
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-En general, el idioma elegido para la etiqueta se toma del idioma de la página, cuando está disponible. Si la variable [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) se utiliza en otros casos (por ejemplo, en formularios o cuadros de diálogo), el idioma de la etiqueta depende del contexto.
+En general, el idioma elegido para la etiqueta se toma del idioma de la página, cuando está disponible. Si la variable [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) se utiliza en otros casos (por ejemplo, en formularios o cuadros de diálogo), el idioma de la etiqueta depende del contexto.
 
 En lugar de utilizar la configuración de idioma de la página, la consola de etiquetado utiliza la configuración de idioma del usuario. En la consola de etiquetado, para la etiqueta &quot;Animales&quot;, se mostraría &quot;Animales&quot; para un usuario que establece el idioma en francés en sus propiedades de usuario.
 
@@ -315,6 +310,6 @@ Para añadir un nuevo idioma al cuadro de diálogo, consulte [Adición de un nue
 
 * [Etiquetado para desarrolladores](/help/sites-developing/tags.md)
 
-   Información sobre el marco de etiquetado, así como la ampliación e inclusión de etiquetas en aplicaciones personalizadas.
+  Información sobre el marco de etiquetado, así como la ampliación e inclusión de etiquetas en aplicaciones personalizadas.
 
 * [Consola de etiquetado de IU clásica](/help/sites-administering/classic-console.md)

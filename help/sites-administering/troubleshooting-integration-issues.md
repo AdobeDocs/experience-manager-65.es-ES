@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas de integración
 seo-title: Troubleshooting Integration Issues
-description: Obtenga información sobre cómo solucionar problemas de integración.
+description: Obtenga información sobre cómo solucionar problemas al integrarse con Adobe Experience Manager.
 seo-description: Learn how to troubleshoot integration issues.
 uuid: fe080e58-a855-4308-a611-f72eb47ba82d
 contentOwner: raiman
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1101'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ AEM Para obtener más información sobre la creación de servicios de importador
 
 ### El cierre tarda mucho tiempo debido al importador de encuestas {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics se ha diseñado teniendo en cuenta un mecanismo de herencia. Normalmente, para habilitar Analytics para un sitio, agrega una referencia a una configuración de Analytics dentro de las propiedades de página [Cloud Services](/help/sites-developing/extending-cloud-config.md) pestaña. A continuación, la configuración se hereda automáticamente a todas las páginas secundarias sin necesidad de volver a hacer referencia a ella a menos que una página requiera una configuración diferente. AEM AEM Al agregar una referencia a un sitio, también se crean automáticamente varios nodos (12 para la versión 6.3 y anteriores o 6 para la versión 6.4 y posteriores de la versión de) del tipo `cq;PollConfig` AEM , que crea una instancia de los importadores de encuestas utilizados para importar datos de Analytics en las instancias de. Como resultado:
+Analytics se ha diseñado teniendo en cuenta un mecanismo de herencia. Normalmente, para habilitar Analytics para un sitio, agrega una referencia a una configuración de Analytics dentro de las propiedades de página [Cloud Service](/help/sites-developing/extending-cloud-config.md) pestaña. A continuación, la configuración se hereda automáticamente a todas las páginas secundarias sin necesidad de volver a hacer referencia a ella a menos que una página requiera una configuración diferente. AEM AEM Al agregar una referencia a un sitio, también se crean automáticamente varios nodos (12 para la versión 6.3 y versiones anteriores o 6 para la versión 6.4 y posteriores de la versión de la aplicación de) del tipo `cq;PollConfig` AEM , que crea una instancia de los importadores de encuestas utilizados para importar datos de Analytics en las instancias de. Como resultado:
 
 * Tener muchas páginas que hacen referencia a Analytics lleva a una gran cantidad de importadores de encuestas.
 * Además, copiar y pegar páginas con una referencia a una configuración de Analytics provoca una duplicación de los importadores de encuestas.
@@ -91,7 +91,7 @@ AEM Para obtener más información sobre la creación de servicios de importador
 
 ### La etiqueta de script de DTM no se representa en el origen de página {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-El [DTM](/help/sites-administering/dtm.md) la etiqueta de script no se incluye correctamente en la página aunque se haya hecho referencia a la configuración en las propiedades de página [Cloud Services](/help/sites-developing/extending-cloud-config.md) pestaña.
+El [DTM](/help/sites-administering/dtm.md) la etiqueta de script no se incluye correctamente en la página aunque se haya hecho referencia a la configuración en las propiedades de página [Cloud Service](/help/sites-developing/extending-cloud-config.md) pestaña.
 
 #### Solución {#solution-2}
 
@@ -141,7 +141,7 @@ Al utilizar DTM para la entrega de `mbox.js` o `at.js` asegúrese de que las bib
 
 Para obtener más información, lea la [Desarrollo de contenido de destino](/help/sites-developing/target.md#understanding-the-target-component) página.
 
-### El error &quot;Falta el ID del grupo de informes en la inicialización de AppMeasurement&quot; se muestra en la consola del explorador {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
+### El error &quot;Falta la ID del grupo de informes en la inicialización de la AppMeasurement&quot; se muestra en la consola del explorador {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
 Este problema puede aparecer cuando Adobe Analytics se implementa en el sitio web mediante DTM y utiliza código personalizado. La causa es el uso de `s = new AppMeasurement()` para crear una instancia de `s` objeto.
 

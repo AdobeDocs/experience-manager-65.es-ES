@@ -1,7 +1,7 @@
 ---
 title: Consola de etiquetado de IU clásica
 seo-title: Classic UI Tagging Console
-description: Obtenga información acerca de la consola de etiquetado de IU clásica.
+description: Obtenga información acerca de la consola de etiquetado de IU de Adobe Experience Manager Classic.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 0%
+source-wordcount: '892'
+ht-degree: 1%
 
 ---
 

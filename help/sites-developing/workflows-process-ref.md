@@ -1,14 +1,14 @@
 ---
 title: Referencia del proceso de flujo de trabajo
-description: Referencia del proceso de flujo de trabajo
+description: Consulte esta referencia de proceso para ver los flujos de trabajo en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1076'
 ht-degree: 1%
 
 ---

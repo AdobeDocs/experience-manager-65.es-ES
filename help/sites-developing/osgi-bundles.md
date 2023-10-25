@@ -1,19 +1,19 @@
 ---
-title: Paquetes OSGI
-description: Sugerencias para administrar los paquetes OSGi
+title: Paquetes OSGi
+description: Conozca algunas sugerencias para administrar sus paquetes OSGi en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-# Paquetes OSGI{#osgi-bundles}
+# Paquetes OSGi{#osgi-bundles}
 
 ## Uso de versiones semánticas {#use-semantic-versioning}
 
@@ -21,7 +21,7 @@ Las prácticas recomendadas acordadas para la numeración de versiones semántic
 
 ## No incruste más clases y tarros de los estrictamente necesarios en los paquetes OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Las bibliotecas comunes deben dividirse en paquetes independientes. Esto permite reutilizarlos en todos los paquetes. Al envolver un *JAR* en un paquete OSGI, asegúrese de comprobar las fuentes en línea para ver si alguien ya lo ha hecho antes. Algunos lugares comunes para encontrar envoltorios de paquetes existentes son: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Recetas de paquete Eclipse y el Repositorio de paquetes Enterprise de SpringSource.
+Las bibliotecas comunes deben dividirse en paquetes independientes. Esto permite reutilizarlos en todos los paquetes. Al envolver un *JAR* en un paquete OSGi, asegúrese de comprobar las fuentes en línea para ver si alguien ya lo ha hecho antes. Algunos lugares comunes para encontrar envoltorios de paquetes existentes son: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Recetas de paquete Eclipse y el Repositorio de paquetes Enterprise de SpringSource.
 
 ## Depender de las versiones de paquete más bajas necesarias {#depend-on-the-lowest-needed-bundle-versions}
 

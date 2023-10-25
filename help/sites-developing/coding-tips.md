@@ -1,14 +1,14 @@
 ---
 title: Sugerencias de codificación
-description: AEM Sugerencias para codificar para el
+description: Conozca algunas sugerencias para codificar las prácticas recomendadas en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---

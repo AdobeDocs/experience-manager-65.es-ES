@@ -1,16 +1,16 @@
 ---
 title: SPA Procesamiento del lado del servidor y de
-description: SPA "Procesamiento del lado del servidor y de la"
+description: SPA Obtenga información acerca de la representación del lado del servidor y la segmentación en Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 0%
+source-wordcount: '1724'
+ht-degree: 2%
 
 ---
 
@@ -176,7 +176,7 @@ Para ver un ejemplo simplista, consulte [Aplicación de diario We.Retail](https:
 
 >[!NOTE]
 >
->AEM Cualquier proyecto debe utilizar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA y utiliza el SDK de.
+>Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## Uso de Node.js {#using-node-js}
 

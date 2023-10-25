@@ -1,7 +1,7 @@
 ---
 title: Interactuar con flujos de trabajo mediante programación
 seo-title: Interacting with Workflows Programmatically
-description: Interactuar con flujos de trabajo mediante programación
+description: Aprenda a interactuar con flujos de trabajo mediante programación en Adobe Experience Manager.
 seo-description: null
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2011'
 ht-degree: 1%
 
 ---
@@ -495,15 +495,15 @@ Al crear un nuevo modelo:
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
 
-   Al crear un modelo, primero debe crearlo `cq:Page` y utilice su `jcr:content` nodo como nodo principal del nodo de modelo.
+  Al crear un modelo, primero debe crearlo `cq:Page` y utilice su `jcr:content` nodo como nodo principal del nodo de modelo.
 
 * El `id` El argumento que algunos métodos requieren para identificar el modelo es la ruta absoluta del nodo del modelo en el repositorio:
 
-   `/var/workflow/models/<*model_name>*/jcr:content/model`
+  `/var/workflow/models/<*model_name>*/jcr:content/model`
 
-   >[!NOTE]
-   >
-   >Consulte [Cómo enumerar todos los modelos de flujo de trabajo](#how-to-list-all-workflow-models).
+  >[!NOTE]
+  >
+  >Consulte [Cómo enumerar todos los modelos de flujo de trabajo](#how-to-list-all-workflow-models).
 
 #### Creación, lectura o eliminación de modelos de flujo de trabajo: Java {#creating-reading-or-deleting-workflow-models-java}
 
@@ -626,63 +626,63 @@ wfSession.terminateWorkflow(workflow);
 
 * **Inicio de flujos de trabajo**
 
-   ```shell
-   # starting a workflow
-   curl -d "model={id}&payloadType={type}&payload={payload}" http://localhost:4502/etc/workflow/instances
-   
-   # for example:
-   curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
-   ```
+  ```shell
+  # starting a workflow
+  curl -d "model={id}&payloadType={type}&payload={payload}" http://localhost:4502/etc/workflow/instances
+  
+  # for example:
+  curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
+  ```
 
 * **Listado de instancias**
 
-   ```shell
-   # listing the instances
-   curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
-   ```
+  ```shell
+  # listing the instances
+  curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
+  ```
 
-   Esto enumerará todas las instancias; por ejemplo:
+  Esto enumerará todas las instancias; por ejemplo:
 
-   ```shell
-   [
-       {"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_1"}
-       ,{"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_2"}
-   ]
-   ```
+  ```shell
+  [
+      {"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_1"}
+      ,{"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_2"}
+  ]
+  ```
 
-   >[!NOTE]
-   >
-   >Consulte [Cómo obtener una lista de todos los flujos de trabajo en ejecución](#how-to-get-a-list-of-all-running-workflows-with-their-ids) con sus ID para enumerar instancias con un estado específico.
+  >[!NOTE]
+  >
+  >Consulte [Cómo obtener una lista de todos los flujos de trabajo en ejecución](#how-to-get-a-list-of-all-running-workflows-with-their-ids) con sus ID para enumerar instancias con un estado específico.
 
 * **Suspender un flujo de trabajo**
 
-   ```shell
-   # suspending a workflow
-   curl -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # suspending a workflow
+  curl -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 * **Reanudación de un flujo de trabajo**
 
-   ```shell
-   # resuming a workflow
-   curl -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # resuming a workflow
+  curl -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 * **Finalización de una instancia de flujo de trabajo**
 
-   ```shell
-   # terminating a workflow
-   curl -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # terminating a workflow
+  curl -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 ### Interactuar con elementos de trabajo {#interacting-with-work-items}
 
@@ -728,89 +728,89 @@ wfSession.complete(workItem, routes.get(0));
 
 * **Lista de elementos de trabajo de la bandeja de entrada**
 
-   ```shell
-   # listing the work items
-   curl -u admin:admin http://localhost:4502/bin/workflow/inbox
-   ```
+  ```shell
+  # listing the work items
+  curl -u admin:admin http://localhost:4502/bin/workflow/inbox
+  ```
 
-   Se enumerarán los detalles de los elementos de trabajo que se encuentran actualmente en la bandeja de entrada; por ejemplo:
+  Se enumerarán los detalles de los elementos de trabajo que se encuentran actualmente en la bandeja de entrada; por ejemplo:
 
-   ```shell
-   [{
-       "uri_xss": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
-       "uri": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
-       "currentAssignee_xss": "workflow-administrators",
-       "currentAssignee": "workflow-administrators",
-       "startTime": 1519656289274,
-       "payloadType_xss": "JCR_PATH",
-       "payloadType": "JCR_PATH",
-       "payload_xss": "/content/we-retail/es/es",
-       "payload": "/content/we-retail/es/es",
-       "comment_xss": "Process resource is null",
-       "comment": "Process resource is null",
-       "type_xss": "WorkItem",
-       "type": "WorkItem"
-     },{
-       "uri_xss": "configuration/configure_analyticstargeting",
-       "uri": "configuration/configure_analyticstargeting",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/securitychecklist",
-       "uri": "configuration/securitychecklist",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/enable_collectionofanonymoususagedata",
-       "uri": "configuration/enable_collectionofanonymoususagedata",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/configuressl",
-       "uri": "configuration/configuressl",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     }
-   ```
+  ```shell
+  [{
+      "uri_xss": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
+      "uri": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
+      "currentAssignee_xss": "workflow-administrators",
+      "currentAssignee": "workflow-administrators",
+      "startTime": 1519656289274,
+      "payloadType_xss": "JCR_PATH",
+      "payloadType": "JCR_PATH",
+      "payload_xss": "/content/we-retail/es/es",
+      "payload": "/content/we-retail/es/es",
+      "comment_xss": "Process resource is null",
+      "comment": "Process resource is null",
+      "type_xss": "WorkItem",
+      "type": "WorkItem"
+    },{
+      "uri_xss": "configuration/configure_analyticstargeting",
+      "uri": "configuration/configure_analyticstargeting",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/securitychecklist",
+      "uri": "configuration/securitychecklist",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/enable_collectionofanonymoususagedata",
+      "uri": "configuration/enable_collectionofanonymoususagedata",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/configuressl",
+      "uri": "configuration/configuressl",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    }
+  ```
 
 * **Delegación de elementos de trabajo**
 
-   ```xml
-   # delegating
-   curl -d "item={item}&delegatee={delegatee}" http://localhost:4502/bin/workflow/inbox
-   
-   # for example:
-   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_act_1&delegatee=administrators" http://localhost:4502/bin/workflow/inbox
-   ```
+  ```xml
+  # delegating
+  curl -d "item={item}&delegatee={delegatee}" http://localhost:4502/bin/workflow/inbox
+  
+  # for example:
+  curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_act_1&delegatee=administrators" http://localhost:4502/bin/workflow/inbox
+  ```
 
-   >[!NOTE]
-   >
-   >El `delegatee` debe ser una opción válida para el paso del flujo de trabajo.
+  >[!NOTE]
+  >
+  >El `delegatee` debe ser una opción válida para el paso del flujo de trabajo.
 
 * **Completar o avanzar elementos de trabajo al paso siguiente**
 
-   ```xml
-   # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
-   http://localhost:4502/etc/workflow/instances/<path-to-the-workitem>.routes.json
-   
-   # completing or advancing to the next step; use the appropriate route ID (rid value) from the above list
-   curl -d "item={item}&route={route}" http://localhost:4502/bin/workflow/inbox
-   
-   # for example:
-   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
-   ```
+  ```xml
+  # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
+  http://localhost:4502/etc/workflow/instances/<path-to-the-workitem>.routes.json
+  
+  # completing or advancing to the next step; use the appropriate route ID (rid value) from the above list
+  curl -d "item={item}&route={route}" http://localhost:4502/bin/workflow/inbox
+  
+  # for example:
+  curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
+  ```
 
 ### Escucha de eventos de flujo de trabajo {#listening-for-workflow-events}
 
-Utilice el marco de eventos OSGi para detectar eventos que [ `com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) define la clase. Esta clase también proporciona varios métodos útiles para obtener información sobre el asunto del evento. Por ejemplo, la variable `getWorkItem` El método devuelve el `WorkItem` objeto para el elemento de trabajo implicado en el evento.
+Utilice el marco de eventos OSGi para detectar eventos que [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) define la clase. Esta clase también proporciona varios métodos útiles para obtener información sobre el asunto del evento. Por ejemplo, la variable `getWorkItem` El método devuelve el `WorkItem` objeto para el elemento de trabajo implicado en el evento.
 
 El siguiente código de ejemplo define un servicio que escucha eventos de flujo de trabajo y realiza tareas según el tipo de evento.
 

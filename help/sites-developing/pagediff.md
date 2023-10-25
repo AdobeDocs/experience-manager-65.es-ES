@@ -1,16 +1,16 @@
 ---
 title: Desarrollo y diferencia de página
-description: Desarrollo y diferencia de página
+description: Aprenda a desarrollar y utilizar la función de diferencia de página en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 1%
+source-wordcount: '380'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Descripción general de funciones {#feature-overview}
 
-La creación de contenido es un proceso iterativo. Crear con eficacia requiere poder ver qué ha cambiado de una iteración a otra. Ver una versión de la página y luego la otra es ineficiente y propensa a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
+La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar la versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
 
 La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
 

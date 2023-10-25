@@ -1,7 +1,7 @@
 ---
 title: Planificación
 seo-title: Planning
-description: Lo que necesita saber para planificar su prueba
+description: Aprenda lo que necesita saber para planificar las pruebas de Adobe Experience Manager.
 seo-description: What you need to know to plan for your test
 uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---

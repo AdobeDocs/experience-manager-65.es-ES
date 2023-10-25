@@ -1,7 +1,7 @@
 ---
 title: Acceso a WebDAV
 seo-title: WebDAV Access
-description: AEM Obtenga información sobre el acceso a WebDAV en la.
+description: Obtenga información sobre cómo acceder a Experience Manager de Adobe mediante WebDAV.
 seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar
@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1101'
 ht-degree: 1%
 
 ---
@@ -108,11 +108,11 @@ Se proporcionan instrucciones sobre cómo conectar los siguientes sistemas opera
 
 ### Windows {#windows}
 
-Para conectar correctamente un sistema Microsoft® Windows 7 (y buena AEM) a una instancia de que no esté protegida con SSL, la opción para establecer la autenticación básica en una red no segura debe estar habilitada explícitamente en Windows. Esta capacidad requiere un cambio en el Registro de Windows de WebClient.
+Para conectar correctamente un sistema MicrosoftAEM ® Windows 7 (y posterior) a una instancia de que no esté protegida con SSL, la opción para establecer la autenticación básica en una red no segura debe estar habilitada explícitamente en Windows. Esta capacidad requiere un cambio en el Registro de Windows de WebClient.
 
 AEM Una vez actualizado el registro, la instancia de la instancia de la se puede asignar como una unidad.
 
-#### Configuración de Windows 7 y Buenos {#windows-and-greater-configuration}
+#### Configuración de Windows 7 y posterior {#windows-and-greater-configuration}
 
 Para actualizar el Registro para permitir la autenticación básica en una red no segura:
 
@@ -122,7 +122,7 @@ Para actualizar el Registro para permitir la autenticación básica en una red n
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
    ```
 
-1. Configure las variables `BasicAuthLevel` subclave de entrada del Registro a un valor de `2` o bueno.
+1. Configure las variables `BasicAuthLevel` subclave de entrada del Registro a un valor de `2` o superior.
 
    Si no está presente, agregue la subclave.
 
@@ -134,15 +134,15 @@ Para actualizar el Registro para permitir la autenticación básica en una red n
 
 #### Configuración de Windows 8 {#windows-configuration}
 
-Para Windows 8, cambie la entrada del Registro [como se describe para Windows 7 y versiones buenas](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Sin embargo, antes de realizar esta tarea, la Experiencia de escritorio debe estar habilitada para ver la entrada del Registro.
+Para Windows 8, cambie la entrada del Registro [como se describe para Windows 7 y versiones posteriores](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Sin embargo, antes de realizar esta tarea, la Experiencia de escritorio debe estar habilitada para ver la entrada del Registro.
 
 Para habilitar la experiencia de escritorio, abra **Administrador del servidor**, entonces **Funciones**, entonces **Añadir funciones**, entonces **Experiencia de escritorio**.
 
-Después de reiniciar, está disponible la entrada del Registro que se describe para Windows 7 y bueno. Modifique como se describe para Windows 7 y buenas versiones.
+Después del reinicio, está disponible la entrada del Registro descrita para Windows 7 y posterior. Modifique la configuración tal como se describe para Windows 7 y versiones posteriores.
 
 #### Conexión en Windows {#connecting-in-windows}
 
-AEM Para conectarse a la red a través de WebDAV en un entorno de Windows, haga lo siguiente:
+AEM Para conectarse a la red a través de WebDAV en un entorno de Windows:
 
 1. Abrir **Explorador de Windows** o **Explorador de archivos** y haga clic en **Ordenador** o **Este equipo**.
 
@@ -181,6 +181,7 @@ No se requieren pasos de configuración para conectarse mediante WebDAV en macOS
 1. En el **Conectar con servidor** AEM , introduzca la ubicación de la:
 
    * `http://localhost:4502`
+
    >[!NOTE]
    >
    >AEM Si está en otro puerto, utilice ese número de puerto en lugar de 4502. Además, si no está ejecutando el repositorio de contenido en su equipo local, reemplace `localhost` con el nombre del servidor o la dirección IP correspondientes.

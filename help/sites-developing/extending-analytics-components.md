@@ -1,14 +1,14 @@
 ---
 title: Añadir el seguimiento de Adobe Analytics a los componentes
-description: Añadir el seguimiento de Adobe Analytics a los componentes
+description: Aprenda a añadir el seguimiento de Adobe Analytics a los componentes de Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1273'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ## Inclusión del módulo Adobe Analytics en un componente de página {#including-the-adobe-analytics-module-in-a-page-component}
 
-Componentes de plantilla de página (por ejemplo, `head.jsp, body.jsp`) necesita que JSP incluya para cargar ContextHub y la integración de Adobe Analytics (que forma parte de los Cloud Services). Todo incluye la carga de archivos JavaScript.
+Componentes de plantilla de página (por ejemplo, `head.jsp, body.jsp`) necesita que JSP incluya para cargar ContextHub y la integración de Adobe Analytics (que forma parte de los Cloud Service). Todo incluye la carga de archivos JavaScript.
 
-La entrada de ContextHub debe incluirse inmediatamente debajo de `<head>` , mientras que los Cloud Services deben incluirse en la `<head>` y antes del `</body>` sección; por ejemplo:
+La entrada de ContextHub debe incluirse inmediatamente debajo de `<head>` , mientras que los Cloud Service deben incluirse en la `<head>` y antes del `</body>` sección; por ejemplo:
 
 ```xml
 <head>
@@ -36,7 +36,7 @@ La entrada de ContextHub debe incluirse inmediatamente debajo de `<head>` , mien
 
 El `contexthub` secuencia de comandos que se inserta después de `<head>` agrega las funciones de ContextHub a la página.
 
-El `cloudservices` scripts que se agregan en `<head>` y el `<body>` Las secciones se aplican a las configuraciones de servicios en la nube que se añaden a la página. (Si la página utiliza más de una configuración de Cloud Services, debe incluir el jsp de ContextHub y el jsp de Cloud Services solo una vez).
+El `cloudservices` scripts que se agregan en `<head>` y el `<body>` Las secciones se aplican a las configuraciones de servicios en la nube que se añaden a la página. (Si la página utiliza más de una configuración de Cloud Service, debe incluir el jsp de ContextHub y el jsp de Cloud Service solo una vez).
 
 Cuando se añade un marco de trabajo de Adobe Analytics a la página, la variable `cloudservices` Los scripts generan JavaScript relacionados con Adobe Analytics y referencias a bibliotecas del lado del cliente, de forma similar al siguiente ejemplo:
 
@@ -133,7 +133,7 @@ Los componentes pueden interactuar con el marco de trabajo de Adobe Analytics cu
 * `cq:trackevents`: identifica los eventos CQ que expone el componente. (Consulte Eventos personalizados).
 * `cq:trackvars`: Nombre las variables de CQ que se asignan con las propiedades de Adobe Analytics.
 * `cq:componentName`: Nombre del componente que aparece en el Sidekick.
-* `cq:componentGroup`: El grupo de la barra de tareas que incluye el componente.
+* `cq:componentGroup`: El grupo del Sidekick que incluye el componente.
 
 El código del JSP del componente añade el JavaScript a la página que almacena en déclencheur el seguimiento y define los datos que se rastrean. El nombre de evento y los nombres de datos utilizados en JavaScript deben coincidir con los valores correspondientes de la variable `analytics` propiedades del nodo.
 
@@ -193,7 +193,7 @@ Configure el componente de navegación superior y edite el archivo JSP para defi
    * Valor: General
 
 1. Haga clic en Guardar todo.
-1. Abra el `topnav.jsp` archivo.
+1. Abra el archivo `topnav.jsp`.
 1. En el elemento, agregue el atributo siguiente:
 
    ```xml

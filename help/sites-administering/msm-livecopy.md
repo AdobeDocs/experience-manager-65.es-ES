@@ -1,11 +1,11 @@
 ---
 title: Creación y sincronización de Live Copies
-description: Obtenga información sobre cómo crear y sincronizar Live Copies.
+description: Obtenga información sobre cómo crear y sincronizar Live Copies en Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '4229'
+source-wordcount: '4233'
 ht-degree: 47%
 
 ---

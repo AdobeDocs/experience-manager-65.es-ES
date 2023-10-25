@@ -1,7 +1,7 @@
 ---
 title: Desarrollo de Forms (IU clásica)
 seo-title: Developing Forms (Classic UI)
-description: Aprenda a desarrollar formularios
+description: Aprenda a desarrollar formularios para la IU clásica de Adobe Experience Manager
 seo-description: Learn how to develop forms
 uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1953'
 ht-degree: 1%
 
 ---
