@@ -1,7 +1,7 @@
 ---
 title: Tablero de operaciones
 seo-title: Operations Dashboard
-description: Aprenda a utilizar el tablero de operaciones.
+description: Aprenda a utilizar el tablero de operaciones en Adobe Experience Manager.
 seo-description: Learn how to use the Operations Dashboard.
 uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '6053'
+source-wordcount: '6057'
 ht-degree: 2%
 
 ---
@@ -111,6 +111,7 @@ La creación de una comprobación de estado individual implica dos pasos: implem
 
       * **Tipo:** `String`
       * **Valor:** `granite/operations/components/mbean`
+
    * **Nombre:** `resource`
 
       * **Tipo:** `String`
@@ -173,6 +174,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
 
       * **Tipo:** `String`
       * **Valor:** `granite/operations/components/mbean`
+
    * **Nombre:** `resource`
 
       * **Tipo:** `String`
@@ -241,7 +243,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
     <ul>
      <li>un estado de advertencia si hay un índice con más de 1000 millones de documentos</li>
      <li>un estado crítico si hay un índice con más de 1500 millones de documentos</li>
-    </ul> <p>Los umbrales se pueden configurar y el MBean para la comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>AEM AEM Esta comprobación está disponible con la versión 6.4 y se ha trasladado a la versión 6.3.2.0 de la versión 6.3 de la versión, en la que se ha realizado un cambio de versión.</p> </td>
+    </ul> <p>Los umbrales se pueden configurar y el MBean para la comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Nota: </strong>AEM AEM Esta comprobación está disponible con la versión 6.4 y se ha trasladado a la versión 6.3.2.0 de la versión 6.4 de la versión de.</p> </td>
   </tr>
   <tr>
    <td>Mantenimiento del sistema</td>

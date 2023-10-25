@@ -1,6 +1,6 @@
 ---
 title: Integración de soluciones
-description: AEM Obtenga más información sobre la integración de soluciones en la.
+description: Obtenga más información acerca de la integración de Adobe Experience Manager AEM () con otros servicios de Adobe o de terceros.
 uuid: 3bf56b1b-284d-4f14-8974-0a595ece5028
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
-source-git-commit: 97dc62303e0174b44b5d776ce11e2ca2ad31b42c
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 27%
+source-wordcount: '124'
+ht-degree: 25%
 
 ---
 
@@ -33,4 +33,3 @@ AEM La siguiente información está disponible acerca de la integración de la i
 >* 3.x está configurado con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x está configurado con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-

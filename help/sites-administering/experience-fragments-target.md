@@ -1,16 +1,16 @@
 ---
 title: Exportación de fragmentos de experiencias a Adobe Target
-description: Exportación de fragmentos de experiencias a Adobe Target
+description: Obtenga información sobre cómo exportar Fragmentos de experiencias de Adobe Experience Manager AEM () a Adobe Target.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: c6eee2e647a0c5e6f5a8dd7a1a13d18218fdf10b
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 43%
+source-wordcount: '1540'
+ht-degree: 42%
 
 ---
 
@@ -211,7 +211,7 @@ Para evitar estas situaciones, haga lo siguiente:
 
 Los fragmentos de experiencias contienen etiquetas html completas y todas las bibliotecas de cliente (CSS/JS) necesarias para procesar el fragmento exactamente como lo creó el autor del contenido del fragmento de experiencia. Esto es por diseño.
 
-Cuando se utiliza una oferta de fragmento de experiencia con Adobe Target AEM en una página que está siendo entregada por, la página de destino ya contiene todas las bibliotecas de cliente necesarias. Además, el HTML prescindible en la oferta de Fragmento de experiencia tampoco es necesario (consulte [Consideraciones](#considerations)).
+Cuando se utiliza una oferta de fragmento de experiencia con Adobe Target AEM en una página que está siendo entregada por, la página de destino ya contiene todas las bibliotecas de cliente necesarias. Además, el HTML superfluo en la oferta de Fragmento de experiencia tampoco es necesario (consulte [Consideraciones](#considerations)).
 
 El siguiente es un pseudoejemplo del html de una oferta de fragmento de experiencia:
 

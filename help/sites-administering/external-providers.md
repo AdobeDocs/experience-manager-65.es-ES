@@ -1,15 +1,15 @@
 ---
 title: Analytics con proveedores externos
-description: Obtenga información sobre Analytics con proveedores externos.
+description: Obtenga información sobre cómo configurar su propia instancia de fragmentos de Analytics genéricos para definir una nueva configuración de servicio.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Estos fragmentos permiten recopilar datos y generar informes. Los datos reales r
 
 >[!CAUTION]
 >
->El sitio de demostración de Geometrixx-Outdoors está configurado de modo que los atributos proporcionados en Propiedades de página se anexen al código fuente html (justo encima de ). `</html>` end (etiqueta) en el `js` script.
+>El sitio de demostración de Geometrixx-Outdoors está configurado de modo que los atributos proporcionados en las Propiedades de página se adjunten al código fuente html (justo encima de la variable `</html>` end (etiqueta) en el `js` script.
 >
 >Si su propio `/apps` no heredar del componente de página predeterminado ( `/libs/foundation/components/page`) usted (o sus desarrolladores) debe asegurarse de que las `js` Los scripts de se incluyen, por ejemplo, incluyendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizando un mecanismo similar.
 >
@@ -64,7 +64,7 @@ Estos fragmentos permiten recopilar datos y generar informes. Los datos reales r
 Para la configuración básica:
 
 1. Abra el **Herramientas** consola.
-1. En el panel izquierdo, expanda **Configuraciones de Cloud Services**.
+1. En el panel izquierdo, expanda **Configuraciones de Cloud Service**.
 1. Doble clic **Fragmento de análisis genérico** para abrir la página:
 
    ![Fragmento de análisis genérico](assets/analytics_genericoverview.png)
@@ -84,13 +84,13 @@ Para la configuración básica:
 Una vez creada la configuración del servicio, ahora debe configurar las páginas necesarias para utilizarlo:
 
 1. Navegue hasta la página.
-1. Abra el **Propiedades de página** de la barra de tareas, luego el **Cloud Services** pestaña.
+1. Abra el **Propiedades de página** de la barra de tareas, luego el **Cloud Service** pestaña.
 1. Clic **Añadir servicio**, luego seleccione el servicio requerido. Por ejemplo, la variable **Fragmento de análisis genérico**:
 
    ![Añadir un servicio en la nube](assets/analytics_selectservice.png)
 
 1. Clic **OK** para guardar.
-1. Se le devolverá a la **Cloud Services** pestaña. El **Fragmento de análisis genérico** ahora aparece con el mensaje `Configuration reference missing`. Utilice la lista desplegable para seleccionar la instancia de servicio específica. Por ejemplo, google-analytics:
+1. Se le devolverá a la **Cloud Service** pestaña. El **Fragmento de análisis genérico** ahora aparece con el mensaje `Configuration reference missing`. Utilice la lista desplegable para seleccionar la instancia de servicio específica. Por ejemplo, google-analytics:
 
    ![Adición de la configuración de Cloud Service](assets/analytics_selectspecificservice.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Campañas
 seo-title: Campaigns
-description: AEM Aprenda los conceptos básicos del uso de Campañas de.
+description: Aprenda los conceptos básicos del uso de campañas de Adobe Experience Manager AEM ().
 seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 4a3a2ad7-40b0-4f19-a012-167453f58bc2
 exl-id: c7a6ab46-111f-42f0-bf09-7a300486672a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '145'
 ht-degree: 1%
 
 ---

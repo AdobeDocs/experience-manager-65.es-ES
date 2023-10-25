@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas de índices Oak
 seo-title: Troubleshooting Oak Indexes
-description: Cómo detectar y corregir la reindexación lenta.
+description: Obtenga información sobre cómo identificar si la indexación es lenta, encontrar la causa y resolver el problema.
 uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1473'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Detección inicial La indexación lenta requiere la revisión de la `IndexStats`
 
 1. Para ambos MBean, compruebe si la variable **Listo** marca de tiempo y **LastIndexTime** La marca de tiempo es inferior a 45 minutos desde la hora actual.
 
-1. Para MBean, si el valor de tiempo (**Listo** o **LastIndexedTime** buena ) tiene menos de 45 minutos desde el momento actual, por lo que el trabajo de indexación está fallando o está tardando demasiado. Este problema hace que los índices asíncronos estén obsoletos.
+1. Para MBean, si el valor de tiempo (**Listo** o **LastIndexedTime**) tiene más de 45 minutos desde el momento actual, por lo que el trabajo de indexación está fallando o tardando demasiado. Este problema hace que los índices asíncronos estén obsoletos.
 
 ## La indexación se detiene después de un cierre forzado {#indexing-is-paused-after-a-forced-shutdown}
 
@@ -80,7 +80,7 @@ En circunstancias excepcionales, el grupo de subprocesos utilizado para administ
 Si se realizan demasiados cambios y confirmaciones en el repositorio en un corto período de tiempo, la indexación se puede retrasar debido a una cola de observación completa. En primer lugar, determine si la cola de observación está llena:
 
 1. Vaya a la consola web y haga clic en la pestaña JMX o vaya a https://&lt;host>:&lt;port>/system/console/jmx (por ejemplo, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
-1. Abra el MBean Estadísticas del repositorio de Oak y determine si hay alguna `ObservationQueueMaxLength` el valor es bueno a 10 000.
+1. Abra el MBean Estadísticas del repositorio de Oak y determine si hay alguna `ObservationQueueMaxLength` el valor es mayor que 10 000.
 
    * En operaciones normales, este valor máximo siempre debe reducirse finalmente a cero (especialmente en el `per second` ), de modo que compruebe que las `ObservationQueueMaxLength`Las métricas de segundos de son 0.
    * Si los valores son 10 000 o más y aumentan de forma constante, indica que al menos una cola (posiblemente más) no se puede procesar tan rápido como se producen nuevos cambios (confirmaciones).
@@ -111,19 +111,19 @@ Para identificar y corregir un proceso de reindexación atascado, haga lo siguie
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+
    * Recopilación de datos de la lista asíncrona `IndexStats` MBean:
 
       * AEM Vaya a Consola web de OSGi>Principal>JMX>IndexStat>asíncrona.
 
-         o vaya a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+        o vaya a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+
    * Uso [modo de consola de oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) para recopilar los detalles de lo que existe en * `/:async`* nodo.
    * Recopile una lista de puntos de comprobación del repositorio mediante el `CheckpointManager` MBean:
 
       * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
 
-         o vaya a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
-
-
+        o vaya a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. AEM Después de recopilar toda la información descrita en el paso 1, reinicie el proceso de.
 
@@ -155,11 +155,13 @@ Para anular la reindexación de forma segura, siga estos pasos:
    * Al reindexar un **existente** índice, establezca la propiedad reindex en false
 
       * `/oak:index/someExistingIndex@reindex=false`
+
    * O si no, por un **nuevo** index, ya sea:
 
       * Establezca la propiedad type como disabled
 
          * `/oak:index/someNewIndex@type=disabled`
+
       * o elimine la definición del índice por completo
 
    Confirme los cambios en el repositorio cuando se hayan completado.

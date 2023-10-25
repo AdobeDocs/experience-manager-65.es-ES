@@ -1,8 +1,8 @@
 ---
 title: AEM Mantenimiento del registro de auditoría en el 6
 seo-title: Audit Log Maintenance in AEM 6
-description: AEM Obtenga información sobre el mantenimiento del registro de auditoría en la.
-seo-description: Lear about Audit Log Maintenance in AEM.
+description: Obtenga información sobre el mantenimiento del registro de auditoría en Adobe Experience Manager AEM ().
+seo-description: Learn about Audit Log Maintenance in Adobe Experience Manager (AEM).
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---

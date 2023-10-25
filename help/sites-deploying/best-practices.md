@@ -1,15 +1,15 @@
 ---
 title: Implementación de prácticas recomendadas
-description: Implementación y mantenimiento de prácticas recomendadas.
+description: Aprenda a implementar y mantener Adobe Experience Manager AEM () de la manera más eficiente y eficaz posible.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 11%
+source-wordcount: '447'
+ht-degree: 10%
 
 ---
 
@@ -34,7 +34,7 @@ En las tablas siguientes se describen y vinculan documentos específicos.
 
 ## Oak {#oak}
 
-[Oak](/help/sites-deploying/platform.md) AEM es un repositorio de contenido jerárquico escalable y con buen rendimiento que es la base de la creación de informes de contenido de tipo
+[Oak](/help/sites-deploying/platform.md) AEM es un repositorio de contenido jerárquico escalable y con buen rendimiento que es la base de la creación de recursos
 
 <table>
  <tbody>

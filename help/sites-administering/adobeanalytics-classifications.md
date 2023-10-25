@@ -1,8 +1,8 @@
 ---
 title: Clasificaciones de Adobe
 seo-title: Adobe Classifications
-description: Obtenga información sobre las Clasificaciones de Adobes.
-seo-description: Learn about Adobe Classifications.
+description: Aprenda a utilizar las clasificaciones de Adobes para exportar datos de clasificaciones a Adobe Analytics.
+seo-description: Learn how to use Adobe Classifications to export classifications data to Adobe Analytics.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 7%
+source-wordcount: '609'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ Clasificaciones de Adobes exporta datos de clasificaciones a [Adobe Analytics](/
 
 Para configurar esto:
 
-1. Uso de **Navegación**, seleccione **Herramientas**, **Cloud Services**, entonces **Cloud Services heredados**.
+1. Uso de **Navegación**, seleccione **Herramientas**, **Cloud Service**, entonces **Cloud Service heredados**.
 1. Desplazarse a **Adobe Analytics** y seleccione **Mostrar configuraciones**.
 1. Haga clic en **[+]** junto a la configuración de Adobe Analytics.
 
