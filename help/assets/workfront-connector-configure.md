@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1740'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,7 @@ La asignación de metadatos entre proyectos de Workfront AEM AEM y carpetas de r
 
 Para configurar las asignaciones, siga estos pasos:
 
+1. Añadir `jcr:read` permisos para `/conf/global/settings/dam/adminui-extension/foldermetadataschema` para `wf-workfront-users` grupo.
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos de carpeta]**.
 1. Seleccione el formulario de esquema de metadatos de carpeta que desee editar y haga clic en Editar.
 1. Seleccione el campo del formulario del esquema de metadatos de la carpeta que desea editar y seleccione la pestaña Configuración en el panel derecho.
