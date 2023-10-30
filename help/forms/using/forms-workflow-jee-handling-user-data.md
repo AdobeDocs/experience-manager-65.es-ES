@@ -1,17 +1,16 @@
 ---
 title: Flujos de trabajo JEE de Forms | Gestión de datos de usuario
-seo-title: Forms JEE workflows | Handling user data
-description: Flujos de trabajo JEE de Forms | Gestión de datos de usuario
+description: Flujos de trabajo de AEM Forms JEE para diseñar, crear y administrar procesos empresariales.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 100%
+source-wordcount: '1370'
+ht-degree: 99%
 
 ---
 
@@ -165,6 +164,7 @@ Una vez que tenga los ID de tarea, siga los siguientes pasos para purgar los arc
       En el sistema de archivos GDS:
 
       1. Busque archivos con las siguientes cadenas de ID de sesión como extensiones:
+
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
@@ -174,6 +174,7 @@ Una vez que tenga los ID de tarea, siga los siguientes pasos para purgar los arc
       `<file_name_guid>.session<session_id_string>`
 
       1. Elimine todos los archivos de marcador y otros archivos con ese nombre de archivo exacto como `<file_name_guid>` del sistema de archivos.
+
    1. **GDS en una base de datos**
 
       Ejecute los siguientes comandos para cada ID de sesión:
@@ -183,9 +184,6 @@ Una vez que tenga los ID de tarea, siga los siguientes pasos para purgar los arc
       delete from tb_dm_session_reference where sessionid=<session_id>
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
-
-
-
 
 1. Ejecute los siguientes comandos para eliminar los datos de los ID de tarea de la base de datos del servidor de AEM Forms:
 

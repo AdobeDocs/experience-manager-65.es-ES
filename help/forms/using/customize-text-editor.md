@@ -1,8 +1,6 @@
 ---
 title: Personalizar el editor de texto
-seo-title: Customize text editor
-description: Aprenda a personalizar el editor de texto.
-seo-description: Learn how to customize text editor.
+description: Aprenda a personalizar el editor de texto en el entorno de AEM Forms.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +9,10 @@ discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 100%
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
 
@@ -173,7 +171,6 @@ Para personalizar fuentes al editar el archivo tbxeditor-config.xml, haga lo sig
       También puede cambiar los valores predeterminados de varios aspectos del texto y, al quitar las entradas, quitar las fuentes del editor de texto.
 
    1. Haga clic en **Guardar todo**.
-
 
 ## Agregar fuentes personalizadas al equipo cliente {#addcustomfonts}
 

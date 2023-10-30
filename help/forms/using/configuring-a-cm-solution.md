@@ -1,7 +1,6 @@
 ---
 title: Configurar una solución de Administración de correspondencia
-seo-title: Configuring a Correspondence Management solution
-description: Configurar una solución de Administración de correspondencia
+description: Configurar una solución de Administración de correspondencia en el entorno de AEM Forms.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
@@ -9,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '295'
+ht-degree: 96%
 
 ---
 
@@ -48,7 +47,7 @@ Siga estos pasos para definir la URL de instancia de publicación para el admini
    * **URL de instancia de publicación**: proporcione cualquier URL de instancia de publicación, si tiene una sola instancia de publicación o el servidor web que enlaza la granja de servidores de publicación no es accesible desde el entorno de creación debido a restricciones. En caso de que la instancia de publicación especificada no funcione, existe un mecanismo de reserva para el autor.
    * **Cadena de URL**:
 
-      `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
+     `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 

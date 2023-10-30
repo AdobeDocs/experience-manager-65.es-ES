@@ -1,13 +1,12 @@
 ---
 title: Configuración de Fuera de la oficina
-seo-title: Configure Out of Office settings
-description: Configurar las opciones de Fuera de la oficina
+description: Configure Fuera de la oficina en la instancia de AEM Forms.
 seo-description: Configure Out of Office settings
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 98%
+source-wordcount: '825'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 98%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
 | AEM 6.5 | Este artículo |
 
 Si planea estar fuera de la oficina, puede especificar qué sucederá con los elementos que se le hayan asignado durante ese período.

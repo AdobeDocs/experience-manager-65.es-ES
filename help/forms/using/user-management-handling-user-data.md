@@ -1,17 +1,16 @@
 ---
 title: Administrar usuarios de Forms | Administración de datos de usuario
-seo-title: Forms user management | Handling user data
-description: Administrar usuarios de Forms | Administración de datos de usuario
+description: El componente Administración de usuarios JEE de AEM Forms permite crear, autorizar y administrar usuarios para acceder a AEM Forms.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 100%
+source-wordcount: '895'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +67,7 @@ Administración de usuarios almacena los datos de usuario en las siguientes tabl
    <td>Contiene entradas de todos los usuarios de dominios locales, empresariales e híbridos. Contiene los ID de correo electrónico del usuario.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code>  (Bases de datos de Oracle y MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br />  (Bases de datos de Oracle y MS SQL)</p> </td>
    <td>Almacena la asignación entre usuarios y grupos.</td>
   </tr>
   <tr>
@@ -80,7 +79,7 @@ Administración de usuarios almacena los datos de usuario en las siguientes tabl
    <td>Almacena la asignación entre principales y permisos para usuarios y grupos.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code>  (Bases de datos de Oracle y MS SQL)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br />  (Bases de datos de Oracle y MS SQL)</p> </td>
    <td>Almacena los valores de atributo antiguos y nuevos correspondientes a un principal.<br /> </td>
   </tr>
  </tbody>
@@ -122,7 +121,6 @@ Ejecute los siguientes comandos de base de datos para exportar los datos de admi
 >
 >* Reemplace `EdcPrincipalGrpCtmntEntity` por `EdcPrincipalGrpCtmntEnti`
 >
-
 
 ```sql
 Select * from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (Select id from EDCPRINCIPALENTITY where id='<principal_id>'));

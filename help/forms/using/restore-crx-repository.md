@@ -1,8 +1,8 @@
 ---
 title: No se puede restaurar el repositorio CRX dañado aplicable al servidor de clúster JEE
-description: Pasos para restaurar el repositorio CRX dañado
+description: Pasos para restaurar el repositorio CRX dañado.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: c4f776b08cb8cc8c6eea78a3757735e063bec20c
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 8%

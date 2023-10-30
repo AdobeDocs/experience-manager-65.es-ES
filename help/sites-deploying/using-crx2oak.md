@@ -1,19 +1,15 @@
 ---
 title: Uso de la herramienta de migración CRX2Oak
-seo-title: Using the CRX2Oak Migration Tool
-description: AEM Aprenda a utilizar la herramienta de migración CRX2Oak con la herramienta de migración de.
-seo-description: Learn how to use the CRX2Oak migration tool.
-uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
+description: Aprenda a utilizar la herramienta de migración CRX2Oak con Adobe Experience Manager. La herramienta está diseñada para ayudarle a migrar datos entre distintos repositorios.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: ee1134be6ad81cc6638ee9004f7dad475a6cc67d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1208'
 ht-degree: 1%
 
 ---
@@ -31,7 +27,7 @@ Puede descargar la versión más reciente de crx2oak desde el repositorio de Ado
 
 >[!NOTE]
 >
->AEM Para obtener más información sobre Apache Oak y los conceptos clave de la persistencia, consulte la página de ayuda de la interfaz de usuario de Apache Oak, en la página de ayuda de [AEM Introducción a la plataforma de](/help/sites-deploying/platform.md).
+>Para obtener más información sobre Apache Oak y los conceptos clave de la persistencia de Adobe Experience Manager AEM (), consulte [AEM Introducción a la plataforma de](/help/sites-deploying/platform.md).
 
 ## Casos de uso de migración {#migration-use-cases}
 
@@ -51,15 +47,15 @@ El diagrama siguiente ilustra todas las combinaciones de migración posibles que
 
 AEM Se llama a CRX2Oak durante las actualizaciones de la de forma que el usuario pueda especificar un perfil de migración predefinido que automatice la reconfiguración de los modos de persistencia. Este se denomina modo de inicio rápido.
 
-También se puede ejecutar por separado en caso de que requiera más personalización. AEM Sin embargo, tenga en cuenta que en este modo los cambios se realizan solamente en el repositorio y cualquier reconfiguración adicional de la debe realizarse manualmente. Esto se denomina modo independiente.
+También se puede ejecutar por separado en caso de que requiera más personalización. AEM Sin embargo, en este modo, los cambios se realizan únicamente en el repositorio y cualquier reconfiguración adicional de se debe realizar de forma manual. El proceso de reconfiguración de la aplicación se realiza de forma manual. Esto se denomina modo independiente.
 
-Otra cosa que hay que tener en cuenta es que con la configuración predeterminada en modo independiente, solo se migrará el almacén de nodos y el nuevo repositorio reutilizará el antiguo almacenamiento binario.
+Otra cosa que hay que tener en cuenta es que con la configuración predeterminada en modo independiente, solo se migra el almacén de nodos y el nuevo repositorio reutiliza el antiguo almacenamiento binario.
 
 ### Modo de inicio rápido automatizado {#automated-quickstart-mode}
 
 AEM Desde la versión 6.3, CRX2Oak es capaz de gestionar perfiles de migración definidos por el usuario que se pueden configurar con todas las opciones de migración ya disponibles. AEM Esto permite una mayor flexibilidad y la capacidad de automatizar la configuración de las funciones, que no están disponibles si utiliza la herramienta en modo independiente, de la manera siguiente:
 
-AEM Para cambiar CRX2Oak al modo de inicio rápido, debe definir la ruta a la carpeta crx-quickstart en el directorio de instalación de la a través de esta variable ambiental del sistema operativo:
+AEM Para cambiar CRX2Oak al modo de inicio rápido, defina la ruta a la carpeta crx-quickstart en el directorio de instalación de la mediante esta variable ambiental del sistema operativo:
 
 **Para sistemas basados en UNIX y macOS:**
 
@@ -79,7 +75,7 @@ La migración se puede interrumpir en cualquier momento, con la posibilidad de r
 
 #### Lógica de actualización personalizable {#customizable-upgrade-logic}
 
-La lógica personalizada de Java también se puede implementar utilizando `CommitHooks`. Personalizado `RepositoryInitializer` Las clases se pueden implementar para inicializar el repositorio con valores personalizados.
+La lógica personalizada de Java™ se puede implementar mediante `CommitHooks`. Personalizado `RepositoryInitializer` se pueden implementar clases para inicializar el repositorio con valores personalizados.
 
 #### Compatibilidad con operaciones con asignación de memoria {#support-for-memory-mapped-operations}
 
@@ -97,15 +93,15 @@ Si hay alguna parte del contenido que no sea necesaria en la nueva instancia, pu
 
 #### Combinación de rutas {#path-merging}
 
-Si es necesario copiar los datos entre dos repositorios y tiene una ruta de contenido diferente en ambas instancias, puede definirlos en el `--merge-path` parámetro. Una vez hecho esto, CRX2Oak copiará solamente los nuevos nodos al repositorio de destino y mantendrá los antiguos en su lugar.
+Si los datos deben copiarse entre dos repositorios y tiene una ruta de contenido diferente en ambas instancias, puede definirlos en la variable `--merge-path` parámetro. Cuando lo haga, CRX2Oak copiará solo los nodos nuevos en el repositorio de destino y mantendrá los antiguos en su lugar.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Compatibilidad con versiones {#version-support}
 
-AEM De forma predeterminada, los usuarios crearán una versión de cada nodo o página que se modifique y la almacenarán en el repositorio. Las versiones se pueden utilizar para restaurar la página a un estado anterior.
+AEM De forma predeterminada, crea una versión de cada nodo o página que se modifica y la almacena en el repositorio. Las versiones se pueden utilizar para restaurar la página a un estado anterior.
 
-Sin embargo, estas versiones nunca se purgan, aunque se elimine la página original. Al tratar con repositorios que han estado en funcionamiento durante mucho tiempo, la migración puede necesitar procesar una gran cantidad de datos redundantes causados por versiones huérfanas.
+Sin embargo, estas versiones nunca se purgan, aunque se elimine la página original. Cuando se trata de repositorios que han estado en funcionamiento durante mucho tiempo, la migración puede volver a procesar los datos redundantes causados por versiones huérfanas.
 
 Una característica útil para estos tipos de situaciones es la adición de la variable `--copy-versions` parámetro. Se puede utilizar para omitir los nodos de versión durante la migración o la copia de un repositorio.
 
@@ -146,11 +142,11 @@ Consulte la [Documentación de Apache](https://jackrabbit.apache.org/oak/docs/mi
 * `--fail-on-error`: Fuerza un error de la migración si los nodos no se pueden leer desde el repositorio de origen.
 * `--ldap`: Migra usuarios LDAP de una instancia CQ 5.x a una basada en Oak. Para que esto funcione, el proveedor de identidad en la configuración de Oak debe llamarse ldap. Para obtener más información, consulte la [Documentación LDAP](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Utilice esto junto con las `--ldap` parámetro para repositorios CQ 5.x que utilizaban varios servidores LDAP para la autenticación. Puede utilizarlo para señalar al CQ 5.x `ldap_login.conf` o `jaas.conf` archivos de configuración. El formato es `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Use esto con `--ldap` parámetro para repositorios CQ 5.x que utilizaban varios servidores LDAP para la autenticación. Puede utilizarlo para señalar al CQ 5.x `ldap_login.conf` o `jaas.conf` archivos de configuración. El formato es `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Opciones del almacén de versiones {#version-store-options}
 
-* `--copy-orphaned-versions`: omite la copia de versiones huérfanas. Los parámetros admitidos son: `true`, `false` y `yyyy-mm-dd`. El valor predeterminado es `true`.
+* `--copy-orphaned-versions`: omite la copia de versiones huérfanas. Los parámetros admitidos son: `true`, `false`, y `yyyy-mm-dd`. El valor predeterminado es `true`.
 
 * `--copy-versions:` Copia el almacenamiento de versiones. Parámetros: `true`, `false`, `yyyy-mm-dd`. El valor predeterminado es `true`.
 
@@ -200,7 +196,7 @@ También puede habilitar la información de depuración para el proceso de migra
   </tr>
   <tr>
    <td>Modo independiente</td>
-   <td><p>Añada el <strong>—trace</strong> opciones a la línea de comandos CRX2Oak para mostrar los eventos del TRACE en la salida estándar (debe redirigir los registros usando el carácter de redirección: '&gt;' o el comando 'tee' para una inspección posterior).</p> </td>
+   <td><p>Añada el <strong>—trace</strong> opciones a la línea de comandos CRX2Oak para poder mostrar eventos de TRACE en la salida estándar (debe redirigir los registros usando el carácter de redirección: '&gt;' o el comando 'tee' para una inspección posterior).</p> </td>
   </tr>
  </tbody>
 </table>

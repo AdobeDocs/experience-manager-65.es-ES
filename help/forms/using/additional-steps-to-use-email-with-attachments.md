@@ -1,11 +1,11 @@
 ---
 title: Pasos adicionales para obtener correo electrónico con archivos adjuntos
-description: Pasos adicionales para obtener correo electrónico con archivos adjuntos
+description: Corrija el error cuando no pueda recuperar correos electrónicos con archivos adjuntos para AEM Forms en plataformas JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 75%
+source-wordcount: '235'
+ht-degree: 68%
 
 ---
 

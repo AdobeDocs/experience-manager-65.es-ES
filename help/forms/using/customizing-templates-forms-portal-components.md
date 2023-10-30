@@ -1,8 +1,6 @@
 ---
 title: Personalizar plantillas para componentes del portal de formularios
-seo-title: Customizing templates for forms portal components
-description: Mostrar metadatos personalizados en una lista de formularios
-seo-description: Display custom metadata in form listing
+description: La interfaz de usuario de AEM Forms permite a los usuarios agregar metadatos a los formularios. Los metadatos personalizados mejoran la experiencia del usuario al enumerar los formularios y buscar en su organización.
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +9,10 @@ discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 100%
+source-wordcount: '1243'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +43,7 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
 
       * Sección Borradores: /libs/fd/fp/draftsTemplate
       * Sección Envíos: /libs/fd/fp/submissionsTemplate
+
    * Componente de vínculo: /libs/fd/fp/linkTemplate
 
    Agregue un título que desee que se muestre al seleccionar plantillas de diseño.

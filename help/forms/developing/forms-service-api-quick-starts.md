@@ -1,8 +1,6 @@
 ---
 title: Inicio rápido de la API del servicio de Forms
-seo-title: Forms Service API Quick Starts
-description: Utilice los Tutoriales rápidos para la API del servicio de Forms.
-seo-description: Use the Quick Starts for the Forms Service API.
+description: Procesar PDF interactivo, HTML Forms y fragmentos mediante la API de JAVA.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,7 +9,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%
@@ -64,7 +62,7 @@ La lógica de la aplicación que utiliza la API del servicio Forms se implementa
 
 ## Inicio rápido (modo SOAP): Procesamiento de un formulario interactivo de PDF mediante la API de Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
-El ejemplo de código siguiente procesa un formulario PDF interactivo denominado *Loan.xdp* a un explorador web de cliente. Se adjuntará un archivo al formulario. Observe que el diseño de formulario forma parte de una aplicación y se hace referencia a él mediante el valor URI de la raíz del contenido `repository:///`. (Consulte [Procesamiento de PDF forms interactivos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+El siguiente ejemplo de código procesa un formulario PDF interactivo denominado *Loan.xdp* a un explorador web de cliente. Se adjuntará un archivo al formulario. Observe que el diseño de formulario forma parte de una aplicación y se hace referencia a él mediante el valor URI de la raíz del contenido `repository:///`. (Consulte [Procesamiento de PDF forms interactivos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
 ```java
  /*

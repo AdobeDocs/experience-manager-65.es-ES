@@ -1,8 +1,6 @@
 ---
 title: Registrar flujos de trabajo de AEM Forms
-seo-title: Logging in AEM Forms workflows
-description: Utilice los registros para depurar los problemas de los flujos de trabajo de AEM Forms.
-seo-description: Use logs to debug AEM Forms workflow issues.
+description: Depure los problemas del flujo de trabajo de AEM Forms y habilite el registro de depuración de los flujos de trabajo de AEM Forms para ver los registros.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +8,10 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 100%
+source-wordcount: '288'
+ht-degree: 94%
 
 ---
 
@@ -26,35 +24,35 @@ De forma predeterminada, toda la información del registro está disponible en e
 Los registros de depuración de los flujos de trabajo de formularios incluyen:
 
 * La entrada de cada paso del flujo de trabajo. Por ejemplo:\
-   `[DEBUG] "Executing Invoke DDX Process step"`
+  `[DEBUG] "Executing Invoke DDX Process step"`
 
 * La salida de cada paso del flujo de trabajo. Por ejemplo:\
-   `[DEBUG] "Successfully finished Invoke DDX Process step"`
+  `[DEBUG] "Successfully finished Invoke DDX Process step"`
 
 * Mensajes de invocación del servicio. Por ejemplo:\
-   `[DEBUG] Invoking Adobe Sign Service for creating agreement`
+  `[DEBUG] Invoking Adobe Sign Service for creating agreement`
 
 * Mensajes de salida del servicio. Por ejemplo:\
-   `[DEBUG] Agreement created successfully with agreement id <agreement id>`
+  `[DEBUG] Agreement created successfully with agreement id <agreement id>`
 
 * Variables leídas desde el mapa de metadatos. Por ejemplo:\
-   `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
+  `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
 
 * Variables escritas en el repositorio JCR. Por ejemplo:
 
-   ```verilog
-      [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
-   ```
+  ```verilog
+     [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
+  ```
 
 * Mensajes de excepción con seguimiento de pila completo. Por ejemplo:\
-   `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
+  `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
 
 * Parámetros de metadatos de paso dinámico. Por ejemplo:
 
-   ```verilog
-   [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
-    [DEBUG] Locale to be used for Document of Record is <locale>
-   ```
+  ```verilog
+  [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
+   [DEBUG] Locale to be used for Document of Record is <locale>
+  ```
 
 El siguiente ejemplo ilustra los registros del paso Firmar documento:
 

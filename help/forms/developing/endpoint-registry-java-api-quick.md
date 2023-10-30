@@ -1,7 +1,6 @@
 ---
 title: Inicio rápido (SOAP) de la API de Java Registro de extremos
-seo-title: Endpoint Registry Java API QuickStart(SOAP)
-description: Inicio rápido (SOAP) de la API de Java Registro de extremos
+description: Agregue puntos finales como EJB, SOAP, carpeta inspeccionada, punto final de correo electrónico, punto final de Remoting y más. Además, modifique, elimine y recupere un extremo mediante la API de Java.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1917989005a98469776befc967e40ab7b40c31f5
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 2%
+source-wordcount: '560'
+ht-degree: 1%
 
 ---
 

@@ -1,15 +1,15 @@
 ---
 title: Portal de Forms | Gestión de datos de usuario
-description: Portal de Forms | Gestión de datos de usuario
+description: Administrar datos de usuario, como acceso, eliminación y almacén de datos en el portal de AEM Forms.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bb1e1790b8b9e6d6224c62b1f51d8af50a82e975
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 66%
+source-wordcount: '865'
+ht-degree: 64%
 
 ---
 

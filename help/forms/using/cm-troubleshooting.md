@@ -1,8 +1,6 @@
 ---
 title: '“Administración de correspondencia: Solución de problemas”'
-seo-title: Correspondence Management Troubleshooting
-description: Solución de problemas de Administración de correspondencia
-seo-description: Correspondence Management Troubleshooting
+description: Gestionar los errores que puedan surgir durante el proceso de guardar una carta en un entorno de AEM Forms.
 uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +8,10 @@ topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 100%
+source-wordcount: '213'
+ht-degree: 92%
 
 ---
 
