@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Consulte [Abrir Analytics y Recommendations para una página](/help/sites-author
 ## Período de informe
 
 Los informes muestran datos correspondientes a un período de tiempo que usted controla. Al ajustar el período de informe, los informes se actualizan automáticamente con los datos de ese período. Las indicaciones visuales indican el momento en el que cambiaron las versiones de la página, de modo que puede comparar el rendimiento de cada versión.
+
+>[!NOTE]
+>
+>La cronología del panel de información del contenido está en `GMT`.
 
 También puede especificar la granularidad de los datos del informe; por ejemplo, puede ver datos diarios, semanales, mensuales o anuales.
 
