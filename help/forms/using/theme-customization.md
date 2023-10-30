@@ -1,19 +1,16 @@
 ---
 title: Personalizar temáticas
-seo-title: Theme Customization
-description: Personalizar la temática de su aplicación de AEM Forms.
-seo-description: How to customize the theme of your AEM Forms app.
-uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
+description: Aprenda a personalizar la temática de la aplicación de AEM Forms. Puede personalizar el código del HTML y el archivo CSS para proporcionar una apariencia específica de la organización.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
-source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '238'
+ht-degree: 89%
 
 ---
 

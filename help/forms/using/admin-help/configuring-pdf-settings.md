@@ -1,8 +1,6 @@
 ---
 title: Configurar Adobe PDF
-seo-title: Configuring Adobe PDF settings
-description: Obtenga información sobre cómo establecer la configuración de Adobe PDF.
-seo-description: Learn how to configure Adobe PDF settings.
+description: Obtenga información sobre cómo establecer las opciones de Adobe PDF visibles en la página Configuración de Adobe PDF. Puede utilizar cualquiera de los ajustes predefinidos del PDF o crear los suyos propios.
 uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '7265'
+source-wordcount: '7285'
 ht-degree: 0%
 
 ---
@@ -60,7 +58,7 @@ Estos archivos de PDF se pueden abrir en Adobe Acrobat 5 y Adobe Acrobat Reader�
 
 **PDF/A-1B 2005 CMYK/PDF/A-1B 2005 RGB:** Comprueba la conformidad de los trabajos entrantes con la norma ISO para la conservación a largo plazo (archivo) de documentos electrónicos y crea archivos PDF/A solo si cumplen con la normativa. Estos archivos se utilizan principalmente para el archivado. Los archivos compatibles solo pueden contener texto, imágenes rasterizadas y objetos vectoriales; no pueden contener codificación ni secuencias de comandos. Además, todas las fuentes deben estar incrustadas para que los documentos puedan abrirse y verse como creados. PDF/A-1b utiliza el PDF 1.4 y convierte todos los colores a CMYK o RGB, dependiendo del estándar que elija. Los archivos de PDF creados con este archivo de configuración se pueden abrir en Acrobat 5 y Acrobat Reader 5 y versiones posteriores. Para obtener más información sobre PDF/A, consulte Adobe y estándares del sector.
 
-**PDF/X-1a 2001:** Comprueba la compatibilidad de los trabajos entrantes con PDF/X-1a y crea archivos de PDF solo si son compatibles. PDF/X-1a es un estándar ISO para el intercambio de contenido gráfico. PDF/X-1a requiere que todas las fuentes estén incrustadas, que se especifiquen los cuadros de PDF adecuados y que el color aparezca como CMYK o manchas de color. Los archivos de PDF que cumplen los requisitos de PDF/X-1a se dirigen a una condición de salida específica, como la impresión en offset de la web de acuerdo con las Especificaciones Publicaciones en offset de la web. Para obtener más información sobre PDF/X, consulte Adobe y estándares del sector.
+**PDF/X-1a 2001:** Comprueba la compatibilidad de los trabajos entrantes con PDF/X-1a y crea archivos de PDF solo si son compatibles. PDF/X-1a es un estándar ISO para el intercambio de contenido gráfico. PDF/X-1a requiere que todas las fuentes estén incrustadas, que se especifiquen los cuadros de PDF adecuados y que el color aparezca como CMYK o manchas de color. Los archivos de PDF que cumplen los requisitos de PDF/X-1a se dirigen a una condición de salida específica, como la impresión en offset de la web según las especificaciones Publicaciones en offset de la web. Para obtener más información sobre PDF/X, consulte Adobe y estándares del sector.
 
 **PDF/X-3 2002:** Comprueba la compatibilidad de los trabajos entrantes con PDF/X-3 y crea archivos de PDF solo si cumplen los requisitos. Al igual que PDF/X-1a, PDF/X-3 es un estándar ISO para el intercambio de contenido gráfico. La principal diferencia es que el PDF/X-3 admite colores independientes del dispositivo.
 
@@ -87,7 +85,7 @@ Los trabajos de impresión fallan si tienen fuentes que no se pueden incrustar. 
 
 La configuración del PDF determina con precisión cómo se convierten los archivos y la estructura y características del PDF resultantes. Defina una nueva configuración de PDF o edite una que haya creado anteriormente. No puede modificar la configuración predefinida, pero puede crear una configuración basada en una existente editándola y guardándola con un nuevo nombre.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de Adobe PDF.
 1. Haga clic en Nuevo o haga clic en el nombre de una configuración existente.
 1. En la página Nueva/Editar configuración de Adobe PDF, complete la información necesaria en estas secciones:
 
@@ -113,7 +111,7 @@ La configuración del PDF determina con precisión cómo se convierten los archi
 
 Puede disponer de la configuración de PDF en el servidor de PDF Generator cargándola desde un equipo local o una ubicación de red.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF y, a continuación, haga clic en Cargar.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de Adobe PDF y, a continuación, haga clic en Cargar.
 1. En la página Cargar configuración de Adobe PDF, haga clic en Examinar, busque el archivo de configuración del PDF y haga clic en Abrir.
 1. Haga clic en Aceptar y vuelva a hacer clic en Aceptar.
 
@@ -121,7 +119,7 @@ Puede disponer de la configuración de PDF en el servidor de PDF Generator carg�
 
 Puede eliminar de forma permanente la configuración del PDF si ya no es necesaria.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de Adobe PDF.
 1. Seleccione la casilla de verificación situada junto a la configuración que desea eliminar. Puede seleccionar varias configuraciones.
 1. Haga clic en Eliminar y, en la página Confirmación de eliminación, vuelva a hacer clic en Eliminar.
 
@@ -220,7 +218,7 @@ Las opciones de imágenes especifican la compresión y el remuestreo de las imá
 
 Estas opciones configuran el color, la escala de grises y las imágenes monocromas:
 
-**Disminuir resolución:** Establezca un valor para cada tipo de imagen. Para reducir la resolución de imágenes en color, escala de grises o monocromas, PDF Generator combina píxeles en un área de muestra para aumentar el tamaño de un píxel. Proporcione la resolución del dispositivo de salida en puntos por pulgada (ppp) e introduzca una resolución en ppp en el cuadro Para imágenes anterior. En el caso de las imágenes con una resolución superior a este umbral, PDF Generator combina píxeles, según sea necesario, para reducir la resolución de la imagen (píxeles por pulgada) al valor de ppp especificado. Para desactivar la disminución de resolución, seleccione Desactivado. Estas son las opciones:
+**Disminuir resolución:** Establezca un valor para cada tipo de imagen. Para reducir la resolución de imágenes en color, escala de grises o monocromas, PDF Generator combina los píxeles de un área de muestra para aumentar el tamaño de un píxel. Proporcione la resolución del dispositivo de salida en puntos por pulgada (ppp) e introduzca una resolución en ppp en el cuadro Para imágenes anterior. Para imágenes con una resolución superior a este umbral, el PDF Generator combina píxeles, según sea necesario, para reducir la resolución de la imagen (píxeles por pulgada) al ajuste de ppp especificado. Para desactivar la disminución de resolución, seleccione Desactivado. Estas son las opciones:
 
 **Promedio de disminución de resolución a:** Obtiene el promedio de los píxeles de un área de muestra y reemplaza toda el área por el color de píxel promedio con la resolución especificada.
 
@@ -295,15 +293,15 @@ Las opciones de Fuentes especifican qué fuentes se incrustarán en un archivo d
 
 **Insertar todas las fuentes:** Incrusta todas las fuentes utilizadas en el archivo. Se requiere la incrustación de fuentes para la compatibilidad con PDF/X.
 
-**Subconjunto De Fuentes Incrustadas Cuando El Porcentaje De Caracteres Utilizados Es Inferior A:** Si selecciona esta opción, especifique un porcentaje de umbral para incrustar solo un subconjunto de las fuentes. Por ejemplo, si el umbral es 35 y se utiliza menos del 35 % de los caracteres, PDF Generator incrusta solo esos caracteres. Solo se incrustan las fuentes con los bits de permiso adecuados.
+**Subconjunto De Fuentes Incrustadas Cuando El Porcentaje De Caracteres Utilizados Es Inferior A:** Si selecciona esta opción, especifique un porcentaje de umbral para incrustar solo un subconjunto de las fuentes. Por ejemplo, si el umbral es 35 y se utiliza menos del 35 % de los caracteres, PDF Generator solo los incrusta. Solo se incrustan las fuentes con los bits de permiso adecuados.
 
-**Cuando La Incrustación Falla:** Especifica cómo responde PDF Generator si no encuentra una fuente que incrustar al procesar un archivo. Puede hacer que PDF Generator ignore la solicitud y sustituya la fuente, le advierta y sustituya la fuente o cancele el procesamiento del trabajo actual.
+**Cuando La Incrustación Falla:** Especifica cómo responde el PDF Generator si no encuentra una fuente que incrustar al procesar un archivo. Puede hacer que PDF Generator ignore la solicitud y sustituya la fuente, que le advierta y que sustituya la fuente o que cancele el procesamiento del trabajo actual.
 
-**Fuente de fuente:** Ubicación de las fuentes que utiliza PDF Generator.
+**Fuente de fuente:** Ubicación de las fuentes que utiliza el PDF Generator.
 
 ### Especificar las fuentes que se van a incrustar {#specify-which-fonts-to-embed}
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de Adobe PDF.
 1. Haga clic en Nuevo o haga clic en el nombre de una configuración.
 1. Haga clic en Fuentes y desmarque Incrustar todas las fuentes.
 1. En la lista Fuente, seleccione una fuente y haga clic en Ir para actualizar la lista de fuentes en el cuadro de la izquierda.
@@ -321,7 +319,7 @@ Las opciones de Fuentes especifican qué fuentes se incrustarán en un archivo d
 
 ## Opciones de color {#color-options}
 
-Las opciones de color definen toda la información de gestión de color para PDF Generator. Para obtener instrucciones sobre cómo acceder a las opciones de Color, consulte [Agregar o editar la configuración del PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+Las opciones de Color definen toda la información de gestión de color para el PDF Generator. Para obtener instrucciones sobre cómo acceder a las opciones de Color, consulte [Agregar o editar la configuración del PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 ### Configuración de Adobe Color {#adobe-color-settings}
 
@@ -329,7 +327,7 @@ Las opciones de color definen toda la información de gestión de color para PDF
 
 ### Políticas de gestión de color {#color-management-policies}
 
-Si ha seleccionado Ninguno en el archivo de configuración, el área Directivas de gestión de color especifica cómo PDF Generator convierte el color no administrado en un archivo PostScript.
+Si ha seleccionado Ninguno en el archivo de configuración, el área Directivas de gestión de color especifica cómo el PDF Generator convierte el color no administrado en un archivo PostScript.
 
 **Dejar el color sin cambiar:** Deja sin cambios los colores dependientes del dispositivo y conserva los colores independientes del dispositivo como el equivalente más cercano posible en PDF. Esta opción es útil para imprimir tiendas que han calibrado todos sus dispositivos, utilizado esa información para especificar el color del archivo y enviado sólo a esos dispositivos.
 
@@ -439,7 +437,7 @@ Al trabajar con las opciones Avanzadas, resulta útil conocer el lenguaje PostSc
 
 ## Información sobre normas y opciones de conformidad {#standards-reporting-and-compliance-options}
 
-PDF Generator puede comprobar el contenido de los documentos en un archivo PostScript para asegurarse de que cumplen los criterios estándar de PDF/X-1a, PDF/X-3 o PDF/A antes de crear el archivo PDF. Para los archivos compatibles con PDF/X, también puede requerir que el archivo PostScript cumpla criterios adicionales seleccionando otras opciones en &quot;Informes y conformidad de normas&quot;. La disponibilidad de las opciones depende del estándar seleccionado.
+El PDF Generator puede comprobar el contenido de los documentos en un archivo PostScript para asegurarse de que cumplen los criterios estándar de PDF/X-1a, PDF/X-3 o PDF/A antes de crear el archivo PDF. Para los archivos compatibles con PDF/X, también puede requerir que el archivo PostScript cumpla criterios adicionales seleccionando otras opciones en &quot;Informes y conformidad de normas&quot;. La disponibilidad de las opciones depende del estándar seleccionado.
 
 Los archivos compatibles con PDF/X se utilizan principalmente como formato estandarizado para el intercambio de archivos de PDF destinados a la producción de impresión de alta resolución. A menos que esté creando un documento de PDF para la producción de impresión, puede ignorar los estándares de conformidad de PDF/X.
 
@@ -451,7 +449,7 @@ Los archivos compatibles con el PDF/A se utilizan principalmente para el archiva
 
 Para obtener instrucciones sobre el acceso a las opciones de informes y conformidad con las normas, consulte [Agregar o editar la configuración del PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-**Estándar de cumplimiento:** Seleccione un estándar para generar un informe que indique si el archivo cumple los requisitos y, si no es así, qué problemas se han producido. Cuando la compatibilidad en la página Configuración general está establecida en Acrobat 4.0, se activan las siguientes opciones. Cuando Compatibilidad se establece en Acrobat 5.0, solo están disponibles las opciones de Acrobat 5.0. Cuando Compatibilidad se establece en una opción alternativa, las siguientes opciones aparecen atenuadas:
+**Estándar de cumplimiento:** Seleccione un estándar para generar un informe que indique si el archivo cumple los requisitos y, si no es así, qué problemas se han producido. Cuando la compatibilidad en la página Configuración general está establecida en Acrobat 4.0, se habilitan las siguientes opciones. Cuando Compatibilidad se establece en Acrobat 5.0, solo están disponibles las opciones de Acrobat 5.0. Cuando Compatibilidad se establece en una opción alternativa, las siguientes opciones aparecen atenuadas:
 
 * PDF/X-1a (compatible con Acrobat 4.0)
 * PDF/X-3 (compatible con Acrobat 4.0)
@@ -561,14 +559,14 @@ Estos archivos tienen muchos propósitos. Por ejemplo, los archivos de prólogo 
 
 ### Descargar un archivo de prólogo o epílogo {#download-a-prologue-or-epilogue-file}
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de Adobe PDF.
 1. Haga clic en Nuevo o haga clic en el nombre de una configuración.
 1. Haga clic en Avanzadas y, a continuación, junto a la opción Usar Prolog.ps y Epilog.ps, haga clic en Descargar.
 1. En la página Descargar Prolog y archivos de Epilog, haga clic en Prolog.ps o Epilog.ps y, a continuación, en Guardar.
 
 ### Carga de un archivo de prólogo o epílogo {#upload-a-prologue-or-epilogue-file}
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de Adobe PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de Adobe PDF.
 1. Haga clic en Nuevo o haga clic en el nombre de una configuración.
 1. Haga clic en Avanzadas y, a continuación, junto a la opción Usar Prolog.ps y Epilog.ps, haga clic en Cargar.
 1. En la página Cargar archivos de prólogo y epílogo, haga clic en Examinar para seleccionar un prólogo o un archivo epílogo.
@@ -578,4 +576,4 @@ Estos archivos tienen muchos propósitos. Por ejemplo, los archivos de prólogo 
 
 >[!NOTE]
 >
->PDF Generator sólo admite archivos de prólogo y epílogo para la conversión de archivos PostScript y PostScript encapsulado a PDF.
+>PDF Generator sólo admite archivos de prólogo y epílogo para la conversión de archivos PostScript y PostScript encapsulados a PDF.

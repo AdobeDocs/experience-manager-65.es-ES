@@ -1,8 +1,6 @@
 ---
 title: Configurar la seguridad
-seo-title: Configuring security settings
-description: Obtenga información sobre cómo establecer la configuración de seguridad.
-seo-description: Learn how to configure security settings.
+description: Obtenga información sobre cómo establecer la configuración de seguridad. Puede proteger los documentos del PDF limitando el acceso. Puede cifrar, certificar o proteger el documento con contraseña.
 uuid: 9747f268-3551-4064-8dba-e1de4a577843
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -28,7 +26,7 @@ En la página Configuración de seguridad, puede realizar las siguientes tareas:
 
 A *configuración de seguridad* controla la seguridad y los permisos de los archivos que se convierten con esa configuración de seguridad.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Configuración de seguridad.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Configuración de seguridad.
 1. Haga clic en Nuevo o en el nombre de una configuración de seguridad.
 1. En la página Nueva/Editar configuración de seguridad, complete la información necesaria para la configuración de seguridad. (Consulte [Configuración del tipo de archivo](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
 1. Haga clic en Guardar y, en el cuadro de diálogo que aparece, escriba un nombre para la configuración y, a continuación, haga clic en Aceptar.

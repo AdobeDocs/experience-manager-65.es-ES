@@ -1,14 +1,14 @@
 ---
 title: Importar y administrar aplicaciones
-description: Obtenga información sobre cómo importar y administrar aplicaciones.
+description: Obtenga información sobre cómo importar y administrar aplicaciones. AEM Una aplicación es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios en la que se puede usar el formato de formularios en la aplicación de formularios de.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '838'
 ht-degree: 1%
 
 ---

@@ -1,8 +1,6 @@
 ---
 title: Aplicar firmas electrónicas a un formulario utilizando firmas manuscritas
-seo-title: Apply electronic signatures to a form using scribble signatures
-description: Firma de formularios mediante firmas manuscritas
-seo-description: Signing forms using scribble
+description: AEM Obtenga información sobre cómo firmar en Forms adaptable con la firma a mano alzada. Puede utilizar la firma manuscrita y el paso de firma para dibujar la firma en un formulario.
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,10 +8,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 91%
+source-wordcount: '742'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html) |
 | AEM 6.5 | Este artículo |
 
 

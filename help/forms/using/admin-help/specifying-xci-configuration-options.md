@@ -1,15 +1,15 @@
 ---
 title: Especificar las opciones de configuración XCI
-description: Obtenga información sobre cómo especificar las opciones de configuración de XCI.
+description: Obtenga información sobre cómo especificar las opciones de configuración de XCI. Puede especificar valores de archivo XCI personalizados para el formulario adaptable, de modo que se pueda utilizar durante el procesamiento del formulario.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
+source-wordcount: '149'
+ht-degree: 6%
 
 ---
 

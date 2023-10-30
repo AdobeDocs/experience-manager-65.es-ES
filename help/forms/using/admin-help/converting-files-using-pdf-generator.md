@@ -1,8 +1,6 @@
 ---
 title: Convertir archivos mediante el generador de PDF
-seo-title: Converting files using PDF Generator
-description: Obtenga información sobre cómo convertir archivos mediante PDF Generator.
-seo-description: Learn how to convert files using PDF Generator.
+description: El servicio PDF Generator convierte los formatos de archivo nativos en PDF. También convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF.
 uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
@@ -11,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 3%
+source-wordcount: '1184'
+ht-degree: 4%
 
 ---
 
 # Convertir archivos mediante el generador de PDF{#converting-files-using-pdf-generator}
 
-Puede utilizar las páginas web de PDF Generator para convertir archivos.
+Puede utilizar las páginas web del PDF Generator para convertir archivos.
 
 ## Creación de un archivo de PDF {#create-a-pdf-file}
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Crear PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Crear PDF.
 1. Haga clic en Examinar para buscar y seleccionar el archivo.
 
    >[!NOTE]
@@ -35,7 +33,7 @@ Puede utilizar las páginas web de PDF Generator para convertir archivos.
 
    * Si utiliza la configuración personalizada, seleccione una configuración de Adobe PDF, de seguridad y de tipo de archivo, y especifique un tiempo de espera.
 
-      La configuración de Adobe PDF solo se aplica a las conversiones de PS a PDF, de EPS a PDF, de PRN a PDF, de imagen a PDF con OCR activado y de nativo a PDF. La configuración de tiempo de espera especifica el tiempo máximo que tarda la conversión en completarse. El valor predeterminado es 270 segundos. Esta configuración no se utiliza durante las conversiones de imagen a PDF y de OpenOffice a PDF.
+     La configuración de Adobe PDF solo se aplica a las conversiones de PS a PDF, de EPS a PDF, de PRN a PDF, de imagen a PDF con OCR activado y de nativo a PDF. La configuración de tiempo de espera especifica el tiempo máximo que tarda la conversión en completarse. El valor predeterminado es 270 segundos. Esta configuración no se utiliza durante las conversiones de imagen a PDF y de OpenOffice a PDF.
 
    * Si está cargando un archivo de configuración, escriba su ruta y nombre en el cuadro o haga clic en Examinar para buscar y seleccionar el archivo.
 
@@ -79,8 +77,7 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de su je
 >
 >* Para cargar un archivo desde el sistema de archivos local, utilice la opción Upload File de la página HTML a PDF.
 
-
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > HTML a PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > HTML a PDF.
 1. Especifique el archivo que desea convertir mediante una de las siguientes tareas:
 
    * En Cargar archivo, escriba la ruta y el nombre del archivo del HTML o del archivo ZIP, o haga clic en Examinar para buscarlo y seleccionarlo.
@@ -93,12 +90,12 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de su je
 1. Especifique los ajustes de configuración:
 
    * Para usar la configuración personalizada, seleccione Usar configuración personalizada, especifique la configuración de seguridad y tipo de archivo, y especifique un valor de tiempo de espera. El valor predeterminado es 270 segundos.
+
    >[!NOTE]
    >
    >Si configuró el servicio Generar PDF para utilizar Acrobat WebCapture, la configuración de tipo de archivo que seleccione en esta página no afectará al PDF producido. En su lugar, realice los cambios correspondientes en la versión de Acrobat instalada en el servidor.
 
    * Para utilizar un archivo de configuración existente, seleccione Cargar archivo de configuración y haga clic en Examinar para ir a la ubicación del archivo.
-
 
 1. XMP Para cargar un archivo de, haga clic en Examinar y vaya a la ubicación del archivo. XMP Se puede utilizar un archivo de para incluir información de metadatos estándar. (Consulte [XMP Acerca de los archivos](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Haga clic en Crear. Cuando se crea el archivo, aparece un vínculo al archivo del PDF.
@@ -108,7 +105,7 @@ Si el archivo ZIP contiene más de un archivo HTML en el nivel inferior de su je
 
 Puede exportar archivos de PDF a varios formatos, tal como se describe en el capítulo Generate PDF Service de [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Export PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Export PDF.
 1. Haga clic en Examinar para buscar el archivo de PDF que desea exportar.
 1. En la lista Archivo de Export PDF a, seleccione el formato al que desea exportar el archivo de PDF.
 1. En el cuadro Especificar un tiempo de espera, escriba el tiempo de espera antes de que se agote el tiempo de espera de la aplicación. El valor predeterminado es 270 segundos.
@@ -127,7 +124,7 @@ PDF Generator permite reducir el tamaño de los archivos de PDF.
 >
 >Al optimizar un documento firmado digitalmente, se eliminan y se invalidan las firmas digitales.
 
-1. En la consola de administración, haga clic en Servicios > Generador de PDF > Optimize PDF.
+1. En la consola de administración, haga clic en Servicios > PDF Generator > Optimize PDF.
 1. Haga clic en Examinar para buscar el archivo del PDF que desea optimizar.
 1. Especifique los ajustes de configuración:
 

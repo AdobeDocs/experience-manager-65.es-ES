@@ -1,8 +1,6 @@
 ---
 title: Configurar ubicaciones para Forms
-seo-title: Configuring locations for Forms
-description: Obtenga información sobre cómo configurar la ubicación de Forms.
-seo-description: Learn how to configure location for Forms.
+description: AEM Obtenga información sobre cómo configurar la ubicación del formulario. Puede especificar las ubicaciones de archivo del atributo, la ubicación del formulario, el archivo del PDF semilla y la ubicación de la caché.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '826'
 ht-degree: 2%
 
 ---

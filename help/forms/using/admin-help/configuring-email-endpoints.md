@@ -1,8 +1,6 @@
 ---
 title: Configurar extremos de correo electrónico
-seo-title: Configuring email endpoints
-description: Obtenga información sobre cómo configurar los extremos de correo electrónico.
-seo-description: Learn how to configure email endpoints.
+description: Obtenga información sobre cómo configurar los extremos de correo electrónico. Los extremos de correo electrónico permiten invocar un servicio enviando uno o varios documentos a una cuenta de correo electrónico especificada.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '3757'
+source-wordcount: '3776'
 ht-degree: 1%
 
 ---

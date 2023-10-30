@@ -1,8 +1,6 @@
 ---
 title: Especificar ubicaciones de archivos para la salida
-seo-title: Specify file locations for Output
-description: Obtenga información sobre cómo especificar ubicaciones de archivos para la salida.
-seo-description: Learn how to specify file locations for Output.
+description: Obtenga información sobre cómo especificar ubicaciones de archivos para la salida para determinados tipos de archivos, por ejemplo, URI raíz de contenido, archivo de configuración XCI, caché y predeterminado.
 uuid: 3287274f-85b5-4811-8abb-d347a9b80947
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '330'
 ht-degree: 5%
 
 ---

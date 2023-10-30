@@ -1,8 +1,6 @@
 ---
 title: Introducción al trabajo con el generador de PDF
-seo-title: Introduction to working with PDF Generator
-description: Aprenda a convertir varios formatos de archivo a PDF.
-seo-description: Learn how to convert various file formats to PDF.
+description: Aprenda a convertir varios formatos de archivo a PDF. También convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF.
 uuid: 1942bf9f-99cc-48b6-89f4-e78c1957a300
 contentOwner: admin
 content-type: reference
@@ -12,10 +10,10 @@ discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 feature: PDF Generator
 exl-id: 08e2381e-c7e8-4690-9cbf-6934064a04f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 20%
+source-wordcount: '149'
+ht-degree: 28%
 
 ---
 
@@ -23,10 +21,10 @@ ht-degree: 20%
 
 PDF Generator convierte varios formatos de archivo en PDF. También convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF. Para obtener una lista de los formatos de archivo admitidos, consulte [Soporte de software para PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
-**Envío de archivos a PDF Generator para su procesamiento**
+**Envío de archivos al PDF Generator para su procesamiento**
 
-Existen tres formas de enviar archivos a PDF Generator para su procesamiento:
+Existen tres formas de enviar archivos al PDF Generator para su procesamiento:
 
-* Los administradores pueden acceder a las páginas de PDFG en la consola de administración. (Consulte [Conversión de archivos mediante PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
+* Los administradores pueden acceder a las páginas de PDFG en la consola de administración. (Consulte [Convertir archivos mediante el PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
 * Los usuarios pueden acceder a las páginas del usuario final de PDFG iniciando sesión en `http(s)://'[server]:[port]'/pdfgui.` Desde allí, pueden acceder a las páginas Impresora de red PDFG, Crear PDF, HTML a PDF, Export PDF y Optimize PDF.
 * Puede configurar los extremos de los servicios de. Consulte <!--Fix broken link to Managing Endpoints --> [Generar recomendaciones de servicio del PDF](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).

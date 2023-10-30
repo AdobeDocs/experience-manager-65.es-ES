@@ -1,8 +1,6 @@
 ---
 title: Configurar los ajustes del servicio
-seo-title: Configure service settings
-description: Obtenga información sobre cómo configurar los ajustes del servicio.
-seo-description: Learn how to configure service settings.
+description: Obtenga información sobre cómo configurar los ajustes del servicio. AEM Puede utilizar la página Administración de servicios para configurar los ajustes de cada uno de los servicios que forman parte de los formularios de la.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10699'
 ht-degree: 4%
 
 ---

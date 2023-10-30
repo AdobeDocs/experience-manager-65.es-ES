@@ -14,7 +14,7 @@ ht-degree: 55%
 El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes., incluidos:
 
 * Texto
-* Texto  Imagen
+* Imagen de texto
 * Tabla
 
 ## Edición local {#in-place-editing}

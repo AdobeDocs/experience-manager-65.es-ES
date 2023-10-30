@@ -35,7 +35,7 @@ ht-degree: 10%
 
 * Los componentes basados en React están disponibles como paquete npm. Esto permite a los desarrolladores utilizar el paquete de componentes de React como dependencia para un nuevo proyecto de React para permitir la personalización de componentes existentes o desarrollar nuevos componentes basados en React.
 
-* La personalización de consultas de GraphQL está simplificada. Esto permite a los desarrolladores personalizar los componentes principales del CIF con menos código.
+* La personalización de consultas de GraphQL está simplificada. CIF Esto permite a los desarrolladores personalizar los componentes principales de la con menos código.
 
 ## Fecha de versión: octubre de 2019
 
@@ -148,7 +148,7 @@ ht-degree: 10%
 
 * CIF AEM Herramientas de creación y conector de datos (consola de producto, selector de productos y selector de categorías) para permitir a los autores crear experiencias en el área de la con contenido comercial.
 
-* Primera versión de los componentes principales del CIF compatibles con Adobe Commerce 2.3.1:
+* CIF Primera versión de componentes principales de la compatible con Adobe Commerce 2.3.1:
    * Detalles del producto
    * Lista de productos
    * Teaser de productos
