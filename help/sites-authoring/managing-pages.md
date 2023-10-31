@@ -2,10 +2,10 @@
 title: AEM Creación y organización de páginas con la función de
 description: Obtenga información sobre cómo crear y administrar páginas con Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 79%
+source-wordcount: '2436'
+ht-degree: 78%
 
 ---
 
@@ -375,18 +375,13 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
 #### Acciones asincrónicas {#asynchronous-actions}
 
-Normalmente, una acción de mover o cambiar el nombre de una página se realiza de inmediato. Esto se considera un procesamiento sincrónico y las acciones posteriores en la IU se bloquean hasta que se complete la acción.
+Las acciones de movimiento de página siempre se procesan asincrónicamente, lo que permite al usuario continuar la creación en la IU sin impedimentos.
 
-Sin embargo, si el número de páginas afectadas supera un límite definido, la acción se procesará asincrónicamente, lo que permitirá al usuario continuar la creación en la IU sin impedimentos por la acción de mover o cambiar el nombre de la página.
+* El usuario debe definir cuándo se debe realizar la operación asincrónica
+   * **Ahora** comienza la ejecución del trabajo asincrónico de inmediato.
+   * **Más tarde** permite al usuario definir cuándo se iniciará el trabajo asincrónico.
 
-* Al hacer clic en **Mover** en el último paso anterior, AEM comprueba el límite configurado.
-* Si el número de páginas afectadas es inferior al límite, realiza una operación sincrónica.
-* Si el número de páginas afectadas supera el límite, realiza una operación asincrónica.
-   * El usuario debe definir cuándo se debe realizar la operación asincrónica
-      * **Ahora** comienza la ejecución del trabajo asincrónico de inmediato.
-      * **Más tarde** permite al usuario definir cuándo se iniciará el trabajo asincrónico.
-
-        ![Movimiento asincrónico de página](assets/asynchronous-page-move.png)
+  ![Movimiento asincrónico de página](assets/asynchronous-page-move.png)
 
 El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado de los trabajos asincrónicos** ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**
 

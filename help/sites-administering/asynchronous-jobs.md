@@ -2,10 +2,10 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 96%
+source-wordcount: '800'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,6 @@ Estas operaciones incluyen:
 * Desplazar muchos recursos o recursos con muchas referencias
 * Exportar e importar metadatos de recursos de manera masiva
 * Recuperar recursos que estén por encima del umbral establecido, desde una implementación remota de Experience Manager
-* Desplazar páginas
 * Desplegar Live Copies
 
 Se puede ver el estado de los trabajos asincrónicos desde el panel **[!UICONTROL Estado de trabajo asincrónico]** en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**.
@@ -113,19 +112,6 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 1. En el cuadro **[!UICONTROL Número de umbral de recursos/referencias]**, especifique el número de umbral de recursos, carpetas o referencias para el procesamiento asincrónico de operaciones de movimiento.
 
    ![Umbral de movimiento de recursos](assets/async-move-threshold.png)
-
-1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, success, failed.
-1. Guarde los cambios.
-
-### Configurar operaciones asincrónicas de movimiento de página {#configuring-asynchronous-page-move-operations}
-
-Si el número de referencias a las páginas que se van a mover supera el número de umbral, la operación de movimiento se realiza de manera asincrónica.
-
-1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**
-1. En el campo **[!UICONTROL Número de umbral de referencias]**, especifique el número de umbral de referencias para el procesamiento asincrónico de las operaciones de movimiento de página.
-
-   ![Umbral de movimiento de página](assets/async-page-move.png)
 
 1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, success, failed.
 1. Guarde los cambios.
