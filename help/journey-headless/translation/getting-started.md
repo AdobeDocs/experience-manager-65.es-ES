@@ -2,10 +2,10 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1495'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -180,7 +180,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender cómo AEM almacena contenido sin encabezado.
 * Estar familiarizado con las herramientas de traducción de AEM.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM sin encabezado y revise a continuación el documento [Configuración del conector de traducción](configure-connector.md), donde aprenderá a conectar AEM a un servicio de traducción.|
+AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Configuración de la integración de traducción](configure-connector.md) AEM donde aprenderá a conectarse a un servicio de traducción de forma gratuita.|
 
 ## Recursos adicionales {#additional-resources}
 

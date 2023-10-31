@@ -2,10 +2,10 @@
 title: Recorrido de traducción de AEM sin encabezado
 description: Empiece aquí un recorrido guiado a través de la traducción de contenido sin encabezado utilizando las potentes herramientas de traducción de AEM.
 exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -66,9 +66,9 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | 0 | Recorrido de traducción de AEM sin encabezado | Este documento |
 | 1 | [Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM](learn-about.md) | Aprenda conceptos sin encabezado, cómo se asignan a AEM y la teoría de la traducción de AEM. |
 | 2 | [Introducción a la traducción sin encabezado AEM](getting-started.md) | Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM. |
-| 3 | [Configuración del conector de traducción](configure-connector.md) | Aprenda a conectar AEM a un servicio de traducción. |
+| 3 | [Configuración de la integración de traducción](configure-connector.md) | Aprenda a conectar AEM a un servicio de traducción. |
 | 4 | [Configuración de reglas de traducción](translation-rules.md) | Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir. |
-| 5 | [Traducir contenido](translate-content.md) | Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado. |
+| 5 | [Traducir contenido](translate-content.md) | Utilice la integración de traducción y las reglas para traducir el contenido sin encabezado. |
 | 6 | [Publicar contenido traducido](publish-content.md) | Aprenda a publicar el contenido traducido y a actualizar la traducción cuando se actualiza el contenido subyacente. |
 
 ## Siguientes pasos {#what-is-next}

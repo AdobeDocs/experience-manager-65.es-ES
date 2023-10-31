@@ -1,15 +1,15 @@
 ---
-title: Configuración del conector de traducción
+title: Configuración de la integración de traducción
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1164'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
-# Configuración del conector de traducción {#configure-connector}
+# Configuración de la integración de traducción {#configure-integration}
 
 Aprenda a conectar AEM a un servicio de traducción.
 
@@ -25,7 +25,7 @@ Este artículo se basa en estos aspectos básicos para que pueda realizar el pri
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo configurar un conector de AEM en el servicio de traducción seleccionado. Después de leer, debería haber logrado lo siguiente:
+AEM Este documento le ayuda a comprender cómo configurar una integración de en el servicio de traducción elegido. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.

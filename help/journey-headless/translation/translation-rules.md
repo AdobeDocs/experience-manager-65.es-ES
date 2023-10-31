@@ -2,10 +2,10 @@
 title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 92%
+ht-degree: 83%
 
 ---
 
@@ -15,12 +15,12 @@ Aprenda a definir reglas de traducción para identificar el contenido que se va 
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de traducción sin encabezado de AEM, [Configuración del conector de traducción](configure-connector.md), ha aprendido a instalar y configurar el conector de traducción y ahora, deberá hacer lo siguiente:
+AEM En el documento anterior del recorrido de trabajo de traducción sin encabezado de la, [Configuración de la integración de traducción](configure-connector.md) ha aprendido a instalar y configurar su integración de traducción y ahora debería hacer lo siguiente:
 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
-Ahora que el conector está configurado, este artículo le explica el siguiente paso para identificar qué contenido debe traducir.
+Ahora que la integración está configurada, este artículo le explica el siguiente paso para identificar qué contenido debe traducir.
 
 ## Objetivo {#objective}
 
@@ -92,7 +92,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender lo que hacen las reglas de traducción.
 * Poder definir sus propias reglas de traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM sin encabezado. Revise el documento [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos el conector y las reglas para traducir contenido sin encabezado.
+AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos la integración y las reglas para traducir contenido sin encabezado.
 
 ## Recursos adicionales {#additional-resources}
 

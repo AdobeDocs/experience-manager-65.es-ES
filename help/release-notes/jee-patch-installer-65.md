@@ -57,11 +57,11 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba `./
 
    * O anule la selección del **Iniciar el Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Antes de ejecutar **Administrador de configuración** usando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya a *`<AEMForms_Install_Dir>\configurationManager\bin`* directorio y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) y [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) archivos.
 
-   
+   >>
    [!NOTE]
+   >>
+   Uso de **ConfigurationManager.bat** le ayuda a evitar actualizar manualmente el nombre de los archivos .lax.
    >
-   >Uso de **ConfigurationManager.bat** le ayuda a evitar actualizar manualmente el nombre de los archivos .lax.
- 
 
 1. **[Solo para entornos basados en Unix]:**
 
