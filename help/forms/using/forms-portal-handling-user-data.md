@@ -1,32 +1,32 @@
 ---
 title: Portal de Forms | Gestión de datos de usuario
-description: Administrar datos de usuario, como acceso, eliminación y almacén de datos en el portal de AEM Forms.
+description: Obtenga información acerca de la administración de datos de usuario, como acceso, eliminación y almacén de datos en AEM Forms Portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: bb1e1790b8b9e6d6224c62b1f51d8af50a82e975
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 64%
+source-wordcount: '867'
+ht-degree: 51%
 
 ---
 
 # Portal de Forms | Gestión de datos de usuario {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] El portal de proporciona componentes que puede utilizar para ver una lista de los formularios adaptables, los formularios de HTML5 y otros recursos de Forms en [!DNL AEM Sites] página. Asimismo, puede configurarla para que muestre los borradores, los formularios adaptables enviados y los formularios HTML5 de un usuario que ha iniciado sesión. Para obtener más información sobre el portal de formularios, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] El portal proporciona componentes que puede utilizar para ver una lista de los formularios adaptables, los formularios de HTML5 y otros recursos de Forms en [!DNL AEM Sites] página. Asimismo, puede configurarla para que muestre los borradores, los formularios adaptables enviados y los formularios HTML5 de un usuario que ha iniciado sesión. Para obtener más información sobre el portal de Forms, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
-Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestra en las pestañas Borradores y Envíos del portal de formularios. AEM Los datos de los formularios redactados o enviados se almacenan en el almacén de datos configurado para la implementación de la. Los borradores y los envíos de los usuarios anónimos no se muestran en la página del portal de formularios; sin embargo, los datos se almacenan en el almacén de datos configurado. Consulte [Configurar servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
+Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestra en las pestañas Borradores y Envíos del portal de Forms. AEM Los datos de los formularios redactados o enviados se almacenan en el almacén de datos configurado para la implementación de la. Los borradores y los envíos de los usuarios anónimos no se muestran en la página del portal de Forms; sin embargo, los datos se almacenan en el almacén de datos configurado. Consulte [Configurar servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
 El portal de Forms almacena los datos de los borradores y los formularios enviados en los siguientes casos:
 
 * La acción de envío configurada en el formulario adaptable es **Acción de envío del portal de formularios**.
-* En el caso de las acciones de envío distintas de **Acción de envío del portal de formularios**, se habilita la opción **[!UICONTROL Almacenar datos en el portal de formularios]** en las propiedades de **[!UICONTROL Envío]** del contenedor de formulario adaptable.
+* Para acciones de envío distintas de **Acción de envío del portal de Forms**, el **[!UICONTROL Almacenar datos en Forms Portal]** está activada en la **[!UICONTROL Envío]** propiedades del contenedor de formulario adaptable.
 
-El portal de formularios almacena los siguientes datos sobre todos los borradores y los formularios enviados de los usuarios anónimos y los usuarios que han iniciado sesión:
+El portal de Forms almacena los siguientes datos sobre todos los borradores y los formularios enviados de los usuarios anónimos y los usuarios que han iniciado sesión:
 
 * Los metadatos del formulario, como el nombre del formulario, la ruta, el ID de borrador o envío, la ruta de acceso de los archivos adjuntos y el ID de datos de usuario.
 * Los archivos adjuntos del formulario como bytes de datos.
@@ -43,17 +43,17 @@ Según la persistencia del almacén de datos configurado, los datos de los borra
   </tr>
   <tr>
    <td><p>Predeterminado</p> </td>
-   <td><p>Repositorio de instancias de autor y publicación de AEM</p> </td>
+   <td><p>AEM Repositorio de instancias de autor y publicación de</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>
-   <td><p>Repositorio de instancias de AEM remotas y de autor de AEM</p> </td>
+   <td><p>AEM AEM Repositorio de instancias de autor y de remoto</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Base de datos</p> </td>
-   <td><p>Repositorio de instancias de autor y tablas de bases de datos de AEM</p> </td>
+   <td><p>AEM Repositorio de instancias de autor y tablas de bases de datos de</p> </td>
    <td><code>data</code>, <code>metadata</code> y tablas de bases de datos <code>additionalmetadata</code></td>
   </tr>
  </tbody>
@@ -97,7 +97,7 @@ Los datos de los borradores y los envíos de todos los usuarios anónimos se alm
 
 ### Base de datos {#database}
 
-Cuando AEM está configurado para almacenar datos en una base de datos, los datos de los borradores y los envíos del portal de formularios se almacenan en las siguientes tablas de bases de datos para los usuarios que han iniciado sesión y los usuarios anónimos:
+AEM Cuando se configura el almacenamiento de datos en una base de datos, los datos de los borradores y los envíos del portal de Forms se almacenan en las siguientes tablas de bases de datos para los usuarios que han iniciado sesión y los usuarios anónimos:
 
 * data
 * metadatos

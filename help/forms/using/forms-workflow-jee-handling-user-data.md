@@ -1,16 +1,14 @@
 ---
 title: Flujos de trabajo JEE de Forms | Gestión de datos de usuario
-description: Flujos de trabajo de AEM Forms JEE para diseñar, crear y administrar procesos empresariales.
-uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
+description: Aprenda a utilizar los flujos de trabajo de JEE de AEM Forms para diseñar, crear y administrar procesos empresariales.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 99%
+source-wordcount: '1388'
+ht-degree: 80%
 
 ---
 
@@ -44,7 +42,7 @@ Sin embargo, no es posible identificar el ID de instancia de proceso de un inici
 
 Realice los siguientes pasos para identificar los ID de instancia de proceso del iniciador o el participante de un flujo de trabajo:
 
-1. Ejecute el siguiente comando en la base de datos del servidor de AEM Forms para recuperar el ID principal del iniciador o el participante del flujo de trabajo de la tabla de bases de datos `edcprincipalentity`.
+1. Ejecute el siguiente comando en la base de datos de AEM Forms Server para recuperar el ID principal del iniciador o participante del flujo de trabajo desde `edcprincipalentity` tabla de base de datos.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -75,7 +73,7 @@ Realice los siguientes pasos para identificar los ID de instancia de proceso del
 
    Para las tareas huérfanas o aquellas tareas en las que el `process_instance_id` es 0 (cero), tome nota de los ID de tarea correspondientes y consulte [Trabajo con tareas huérfanas](#orphan).
 
-1. Siga las instrucciones que aparecen en la sección [Purgar los datos de usuario de las instancias de flujo de trabajo en función de los ID de instancia de proceso](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) para eliminar los datos de usuario de los ID de instancia de proceso identificados.
+1. Siga las instrucciones de [Purgar datos de usuario de instancias de flujo de trabajo en función de ID de instancias de proceso](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) para poder eliminar los datos de usuario de los ID de instancia de proceso identificados.
 
 ### Identificar los ID de instancia de proceso cuando los datos de usuario se almacenan en variables primitivas {#primitive}
 
@@ -85,7 +83,7 @@ Se puede diseñar un flujo de trabajo de modo que los datos del usuario se captu
 * **Numérico**: contiene directamente el ID de usuario.
 * **XML**: contiene el ID de usuario como una subcadena dentro del texto almacenado como columnas de texto en la base de datos, y se puede consultar en forma de cadenas.
 
-Realice los siguientes pasos para determinar si un flujo de trabajo que almacena datos en variables de tipo primitivo contiene datos de un usuario:
+Realice los siguientes pasos para determinar si un flujo de trabajo que almacena datos en variables de tipo primitivo contiene datos del usuario:
 
 1. Ejecute el siguiente comando de base de datos:
 
@@ -97,7 +95,7 @@ Realice los siguientes pasos para determinar si un flujo de trabajo que almacena
 
    >[!NOTE]
    >
-   >El valor de la propiedad `name` puede ser complejo si el flujo de trabajo está anidado en subcarpetas dentro de la aplicación. Asegúrese de especificar la ruta completa exacta al flujo de trabajo, que puede obtener de la tabla de bases de datos `omd_object_type`.
+   >El valor del `name` La propiedad puede ser compleja si el flujo de trabajo está anidado en subcarpetas dentro de la aplicación. Asegúrese de especificar la ruta completa exacta al flujo de trabajo, que puede obtener de la tabla de bases de datos `omd_object_type`.
 
 1. Revise el esquema de tabla `tb_<number>`. La tabla contiene variables que almacenan los datos de usuario del flujo de trabajo especificado. Las variables de la tabla corresponden a las variables del flujo de trabajo.
 
@@ -111,13 +109,13 @@ Realice los siguientes pasos para determinar si un flujo de trabajo que almacena
 
    La consulta devuelve todos los ID de instancia de proceso asociados al `user_ID` especificado.
 
-1. Siga las instrucciones que aparecen en la sección [Purgar los datos de usuario de las instancias de flujo de trabajo en función de los ID de instancia de proceso](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) para eliminar los datos de usuario de los ID de instancia de proceso identificados.
+1. Siga las instrucciones de [Purgar datos de usuario de instancias de flujo de trabajo en función de ID de instancias de proceso](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) para poder eliminar los datos de usuario de los ID de instancia de proceso identificados.
 
 ### Purgar los datos de usuario de las instancias de flujo de trabajo en función de los ID de instancia de proceso {#purge}
 
 Ahora que ha identificado los ID de instancia de proceso asociados a un usuario, siga los siguientes pasos para eliminar los datos de usuario de las instancias de proceso correspondientes.
 
-1. Ejecute el siguiente comando para recuperar el ID de invocación de larga duración y el estado de una instancia de proceso de la tabla `tb_process_instance`.
+1. Ejecute el siguiente comando para poder recuperar el ID de invocación de larga duración y el estado de una instancia de proceso desde el `tb_process_instance` tabla.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
@@ -127,7 +125,7 @@ Ahora que ha identificado los ID de instancia de proceso asociados a un usuario,
 
 1. Cree una instancia del cliente público `ProcessManager` cliente (`com.adobe.idp.workflow.client.ProcessManager`) usando una instancia de `ServiceClientFactory` con la configuración de conexión correcta.
 
-   Para obtener más información, consulte Referencia de la API de Java de [Class ProcessManager](https://helpx.adobe.com/es/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Para obtener más información, consulte Referencia de la API de Java™ para [Class ProcessManager](https://helpx.adobe.com/es/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Compruebe el estado de la instancia del flujo de trabajo. Si el estado es distinto de 2 (COMPLETADA) o 4 (TERMINADA), termine la instancia primero llamando al siguiente método:
 
@@ -137,15 +135,15 @@ Ahora que ha identificado los ID de instancia de proceso asociados a un usuario,
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   El método `purgeProcessInstance` elimina completamente todos los datos del ID de invocación especificado de la base de datos del servidor de AEM Forms y GDS, si están configurados.
+   El `purgeProcessInstance` El método elimina completamente todos los datos del ID de invocación especificado de la base de datos de AEM Forms Server y GDS, si están configurados.
 
 ### Trabajar con tareas huérfanas {#orphan}
 
-Las tareas huérfanas son tareas cuyo proceso contenedor se ha iniciado, pero aún no se ha enviado. En este caso, el `process_instance_id` es **0** (cero). Por lo tanto, no puede realizar un seguimiento de los datos de usuario de tareas huérfanas almacenados utilizando ID de instancias de proceso. Sin embargo, puede realizar un seguimiento de estos datos usando el ID de tarea de una tarea huérfana. Puede identificar los ID de tarea de la tabla `tb_task` de un usuario como se describe en [Identifique los ID de instancia de proceso cuando se conozca el iniciador o participante del flujo de trabajo](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Las tareas huérfanas son tareas cuyo proceso contenedor se ha iniciado, pero aún no se ha enviado. En este caso, la variable `process_instance_id` es **0** (cero). Por lo tanto, no puede realizar un seguimiento de los datos de usuario de tareas huérfanas almacenados utilizando ID de instancias de proceso. Sin embargo, puede realizar un seguimiento de estos datos usando el ID de tarea de una tarea huérfana. Puede identificar los ID de tarea de la tabla `tb_task` de un usuario como se describe en [Identifique los ID de instancia de proceso cuando se conozca el iniciador o participante del flujo de trabajo](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Una vez que tenga los ID de tarea, siga los siguientes pasos para purgar los archivos y los datos asociados con una tarea huérfana de GDS y de la base de datos.
 
-1. Ejecute el siguiente comando en la base de datos del servidor de AEM Forms para recuperar los ID de tarea identificados.
+1. Ejecute el siguiente comando en la base de datos de AEM Forms Server para poder recuperar los ID de tarea identificados.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -185,7 +183,7 @@ Una vez que tenga los ID de tarea, siga los siguientes pasos para purgar los arc
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
 
-1. Ejecute los siguientes comandos para eliminar los datos de los ID de tarea de la base de datos del servidor de AEM Forms:
+1. Ejecute los siguientes comandos para poder eliminar los datos de los ID de tarea de la base de datos de AEM Forms Server:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

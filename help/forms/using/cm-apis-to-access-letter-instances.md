@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '597'
 ht-degree: 61%
 
 ---
@@ -134,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 La instancia de carta puede ser del tipo Enviado o Borrador. Al abrir ambos tipos de instancias de cartas, se muestran comportamientos diferentes:
 
-* En el caso de una instancia de carta Enviada, se abre un PDF que representa la instancia de carta. La instancia de carta enviada que persiste en el servidor también contiene el dataXML y el XDP procesados, que se pueden utilizar para llevar a cabo y utilizar un caso personalizado como la creación de un PDF/A.
-* En el caso de una instancia de carta Borrador, la interfaz de usuario de Crear correspondencia se vuelve a cargar al estado anterior exacto, tal como estaba durante el momento en que se creó el borrador
+* Si hay una instancia de carta Enviada, se abre un PDF que representa la instancia de carta. La instancia de carta enviada que persiste en el servidor también contiene el dataXML y el XDP procesados, que se pueden utilizar para llevar a cabo y utilizar un caso personalizado como la creación de un PDF/A.
+* Si hay una instancia de carta Borrador, la interfaz de usuario de Crear correspondencia se vuelve a cargar al estado anterior exacto, tal como estaba durante el momento en que se creó el borrador
 
 ### Abrir instancia de carta Borrador  {#opening-draft-letter-instance-nbsp}
 

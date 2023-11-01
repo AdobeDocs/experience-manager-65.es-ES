@@ -1,17 +1,18 @@
 ---
 title: Pasos adicionales para obtener correo electrónico con archivos adjuntos
-description: Corrija el error cuando no pueda recuperar correos electrónicos con archivos adjuntos para AEM Forms en plataformas JEE.
+description: Obtenga información sobre cómo corregir el error cuando no puede recuperar correos electrónicos con archivos adjuntos para AEM Forms en plataformas JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 68%
+source-wordcount: '237'
+ht-degree: 64%
 
 ---
 
 # No se puede obtener correo electrónico con archivos adjuntos para AEM Forms en plataformas JEE{#unable-to-get-email-with-attachments}
 
 El problema se aplica a la siguiente versión:
+
 * Experience Manager 6.5 Forms
 
 ## Problema {#issue}
@@ -37,7 +38,7 @@ El usuario no puede realizar operaciones como Enviar PDF por correo electrónico
 
 1. Instale`java.mail-1.5.jar` obtenido en el paso 3. Este paso reinicia las propiedades sling de la implementación JEE. Espere a que se instalen los paquetes en `http://<server name>:<port>/lc/system/console/bundles` para mostrar el estado como **Activo**.
 
-   >Nota: En caso afirmativo, el estado sigue siendo **InActive**, reiniciar   **JBoss®** desde el **Consola de servicios**.
+   >En caso de que el estado siga siendo **InActive**, reiniciar   **JBoss®** desde el **Consola de servicios**.
 
 
 1. Instale el archivo `javax.mail-1.5.6.redhat-1.jar` descargado mediante el paso 5.

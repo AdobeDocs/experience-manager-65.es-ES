@@ -1,14 +1,14 @@
 ---
 title: Programa de instalación de parches de AEM Forms JEE
-description: Programa de instalación de parches de AEM Forms AEM JEE para solucionar problemas en los componentes de Forms de la versión 6.5 de.
+description: Aprenda a utilizar el Instalador de parches de AEM Forms AEM JEE para solucionar problemas en componentes de Forms de la versión 6.5 de.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 23%
+source-wordcount: '535'
+ht-degree: 24%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->[Atención al cliente](https://www.adobe.com/account/sign-in.supportportal.html) para obtener más información o para obtener el parche.
+>[Atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support) para obtener más información o para obtener el parche.
 
 ## Acerca del instalador de parches {#about-the-patch-installer}
 
@@ -39,10 +39,10 @@ Vaya al directorio correspondiente del medio de instalación o a la carpeta del 
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-   * **Linux**
+   * **Linux®**
 Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba `./aem65_cfp_install.bin`.
 
-      * (Linux) `Linux/Disk1/InstData/NoVM`
+      * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Esto inicia un asistente de instalación que le guiará a través de la instalación.
 
@@ -52,8 +52,8 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba `./
 1. Lea la información del resumen previo a la instalación y haga clic en **[!UICONTROL Instalar]**.
 1. Una vez finalizada la instalación, haga clic en **[!UICONTROL Siguiente]** para aplicar las actualizaciones de correcciones rápidas a los archivos instalados.
 
-1. **[Solo para Windows]:** Realice uno de los siguientes pasos:
-   * Anule la selección del **Iniciar el Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Ejecutar **Administrador de configuración** mediante el uso de **ConfigurationManager.bat** archivo ubicado en `[aem-forms root]\configurationManager\bin`.
+1. **[Solo para Windows]:** Haga lo siguiente:
+   * Anule la selección del **Iniciar el Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Ejecutar **Administrador de configuración** mediante el uso de **ConfigurationManager.bat** archivo en `[aem-forms root]\configurationManager\bin`.
 
    * O anule la selección del **Iniciar el Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Antes de ejecutar **Administrador de configuración** usando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya a *`<AEMForms_Install_Dir>\configurationManager\bin`* directorio y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) y [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) archivos.
 
@@ -69,16 +69,16 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba `./
 
 1. Según el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones del *AEM Configuración e implementación de formularios* sección.
 
-   * [AEM Instalación e implementación de formularios de para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65_es)
-   * [AEM Instalación e implementación de formularios de la aplicación para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_es)
+   * [AEM Instalación e implementación de formularios de para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_es)
+   * [AEM Instalación e implementación de formularios en la aplicación de la interfaz de usuario para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_es)
 
-1. (Solo JBoss) Después de instalar el parche y configurar el servidor, elimine tmp y los directorios de trabajo del servidor de aplicaciones JBoss.
+1. (Solo JBoss®) Después de instalar el parche y configurar el servidor, elimine los directorios tmp y de trabajo del servidor de aplicaciones JBoss®.
 
 ## Configuraciones posteriores a la implementación {#post-deployment-configurations}
 
 ### Configuraciones de SAML {#saml-configurations}
 
-Si tenía configurada la autenticación SAML y tenía problemas con metadatos de IDP grandes, haga lo siguiente después de instalar el parche:
+Si tiene configurada la autenticación SAML y tiene problemas con metadatos de IDP grandes, haga lo siguiente después de instalar el parche:
 
 1. Establezca la siguiente propiedad del sistema en el servidor de aplicaciones:\
    `um.saml.enable.large.xml=true`
@@ -91,4 +91,4 @@ Si tenía configurada la autenticación SAML y tenía problemas con metadatos de
 * Seguridad de los documentos
 * Base JEE
 
-[Atención al cliente](https://www.adobe.com/account/sign-in.supportportal.html)
+[Atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support)

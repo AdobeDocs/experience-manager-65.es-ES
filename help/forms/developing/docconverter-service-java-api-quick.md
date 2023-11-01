@@ -1,38 +1,36 @@
 ---
-title: Inicio rápido (SOAP) de la API de Java del servicio DocConverter
-description: Convierta un documento en un documento de PDF/A y administre la conformidad mediante el Inicio rápido (SOAP) de la API de Java.
-uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
+title: Inicio rápido (SOAP) de la API de DocConverter Service Java&trade
+description: Obtenga información sobre cómo convertir un documento en un documento de PDF/A y administrar la conformidad mediante el Inicio rápido (SOAP) de la API de Java&trade;.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
 exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 2%
+source-wordcount: '270'
+ht-degree: 0%
 
 ---
 
-# Inicio rápido (SOAP) de la API de Java del servicio DocConverter {#docconverter-service-java-api-quickstart-soap}
+# Inicio rápido (SOAP) de la API de Java™ del servicio DocConverter {#docconverter-service-java-api-quickstart-soap}
 
-Inicio rápido (SOAP) de la API de Java está disponible para el servicio DocConverter.
+Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio DocConverter.
 
-[Inicio rápido (modo SOAP): Determinación de la conformidad del PDF/A mediante la API de Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Inicio rápido (modo SOAP): Determinación del cumplimiento de PDF/A mediante Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Conversión de un documento a un documento de PDF/A mediante la API de Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Inicio rápido (modo SOAP): Conversión de un documento a un documento de PDF/A mediante Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->AEM Los inicios rápidos, ubicados en Programación con formularios de la aplicación, se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Conversión de un documento a un documento de PDF/A mediante la API de Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
+## Inicio rápido (modo SOAP): Conversión de un documento a un documento de PDF/A mediante la API de Java™ {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-El siguiente ejemplo de código Java convierte un documento de PDF denominado *Loan.pdf* a un documento de PDF/A guardado como archivo de PDF llamado *LoanArchive.pdf*. (Consulte [Conversión de documentos a documentos de PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+El siguiente ejemplo de código Java™ convierte un documento de PDF denominado *Loan.pdf* a un documento de PDF/A guardado como archivo de PDF llamado *LoanArchive.pdf*. (Consulte [Conversión de documentos a documentos de PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
  /*
@@ -133,9 +131,9 @@ El siguiente ejemplo de código Java convierte un documento de PDF denominado *L
  }
 ```
 
-## Inicio rápido (modo SOAP): Determinación de la conformidad del PDF/A mediante la API de Java {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
+## Inicio rápido (modo SOAP): Determinación de la conformidad del PDF/A mediante la API de Java™ {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-El siguiente ejemplo de código Java determina si el documento del PDF de entrada es compatible con el PDF/A. El documento del PDF de entrada que se pasa al servicio DocConverter se denomina *LoanArchive.pdf*. Los resultados de validación se escriben en un archivo XML denominado *ValidationResults.xml*. (Consulte [Determinación programática de la conformidad de PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+El siguiente ejemplo de código Java™ determina si el documento del PDF de entrada es compatible con el PDF/A. El documento del PDF de entrada que se pasa al servicio DocConverter se denomina *LoanArchive.pdf*. Los resultados de validación se escriben en un archivo XML denominado *ValidationResults.xml*. (Consulte [Determinación programática de la conformidad de PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*

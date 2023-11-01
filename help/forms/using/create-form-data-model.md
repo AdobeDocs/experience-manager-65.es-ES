@@ -1,16 +1,14 @@
 ---
 title: '“Tutorial: Crear un modelo de datos de formulario”'
-description: Configure MySQL como fuente de datos, cree un modelo de datos de formulario (FDM), configúrelo y prueba para AEM Forms.
-uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
+description: Aprenda a configurar MySQL como fuente de datos, crear un modelo de datos de formulario (FDM), configurarlo y prueba para AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 91%
+source-wordcount: '1528'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +16,7 @@ ht-degree: 91%
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Este tutorial es un paso en la serie [Crear su primer formulario adaptable](../../forms/using/create-your-first-adaptive-form.md). Se recomienda seguir la serie en orden cronológico para comprender, realizar y mostrar el caso de uso del tutorial completo.
+Este tutorial es un paso en la serie [Crear su primer formulario adaptable](../../forms/using/create-your-first-adaptive-form.md). Adobe Systems recomienda que seguir la serie en Secuencia cronológica para comprender, representar y demostrar el caso de uso completo tutorial.
 
 ## Información sobre el tutorial {#about-the-tutorial}
 
@@ -49,7 +47,7 @@ Antes de empezar, asegúrese de que dispone de lo siguiente:
 
 ## Paso 1: Configurar la base de datos MySQL como fuente de datos {#config-database}
 
-Puede configurar distintos tipos de fuentes de datos para crear un modelo de datos de formulario. Para este tutorial, configuraremos la base de datos MySQL que ha configurado y rellenado con datos de ejemplo. Para obtener información sobre otras fuentes de datos compatibles y cómo configurarlas, consulte [Integración de datos de AEM Forms](../../forms/using/data-integration.md).
+Puede configurar distintos tipos de fuentes de datos para crear un modelo de datos de formulario. Para este tutorial, configure la base de datos MySQL que configuró y rellenó con datos de ejemplo. Para obtener información sobre otras fuentes de datos compatibles y cómo configurarlas, consulte [Integración de datos de AEM Forms](../../forms/using/data-integration.md).
 
 Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 
@@ -70,8 +68,8 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 
       * **Nombre del Datasource:** puede especificar cualquier nombre. Por ejemplo, especifique **WeRetailMySQL**.
       * **Nombre de propiedad del servicio DataSource**: especifique el nombre de la propiedad de servicio que contiene el nombre del DataSource. Se especifica al registrar la instancia de fuente de datos como servicio OSGi. Por ejemplo, **datasource.name**.
-      * **Clase del controlador JDBC**: especifique el nombre de clase Java del controlador JDBC. Para la base de datos[!DNL MySQL], especifique **com.mysql.jdbc.Driver**.
-      * **URI de conexión JDBC**: especifique la dirección URL de conexión de la base de datos. Para la base de datos [!DNL MySQL]que se ejecuta en el puerto 3306 y esquema weretail, la URL es: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **Clase** de controlador JDBC: especifique el nombre de la clase Java™ del controlador JDBC. Para la base de datos[!DNL MySQL], especifique **com.mysql.jdbc.Driver**.
+      * **URI de conexión JDBC**: especifique la dirección URL de conexión de la base de datos. Para [!DNL MySQL] la base de datos que se ejecuta en puerto 3306 y esquema `weretail`, el URL es: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
@@ -82,7 +80,7 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 
       >[!NOTE]
       >
-      >AEM Forms no admite NT Authentication para [!DNL MySQL]. Vaya a AEM consola web en [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) y búsqueda &quot;Apache Sling Connection Pooled Datasource&quot;. Para &quot;URI de conexión JDBC&quot; Propiedad valor establecido de &quot;integratedSecurity&quot; como False y use nombre de usuario y contraseña creados para conectarse con [!DNL MySQL] la base de datos.
+      >AEM Forms no admite NT Authentication para [!DNL MySQL]. Vaya a AEM consola web en [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) y búsqueda &quot;Apache Sling Connection Pooled Datasource&quot;. Para la Propiedad &quot;URI de conexión JDBC&quot;, establezca el valor de &quot;integratedSecurity&quot; como False y use nombre de usuario y contraseña creados para conectarse con [!DNL MySQL] la base de datos.
 
       * **Probar en el préstamo:** habilita la opción **[!UICONTROL Probar en el préstamo]**.
       * **Probar en la devolución:** habilita la opción **[!UICONTROL Probar en la devolución]**.
@@ -97,7 +95,7 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 
 ## Paso 2: Crear un modelo de datos de formulario {#create-fdm}
 
-AEM [!DNL Forms] proporciona una interfaz de usuario intuitiva para [crear un modelo de datos de formulario](data-integration.md) desde fuentes de datos configuradas. Puede utilizar varias fuentes de datos en un modelo de datos de formulario. Para nuestro caso de uso, utilizaremos la fuente de datos configurada [!DNL MySQL].
+AEM [!DNL Forms] proporciona una interfaz de usuario intuitiva para [crear un modelo de datos de formulario](data-integration.md) desde fuentes de datos configuradas. Puede utilizar varias fuentes de datos en un modelo de datos de formulario. Para este caso de uso, puede utilizar el fuente de datos configurado [!DNL MySQL] .
 
 Para crear el modelo de datos de formulario, haga lo siguiente:
 
@@ -126,7 +124,7 @@ Para configurar el modelo de datos de formulario, haga lo siguiente:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Expanda el árbol de fuentes de datos WeRailMySQL. Seleccione los siguientes objetos y servicios del esquema **weretail** > **customerdetails** para el modelo de datos de formulario:
+1. Expanda el árbol de fuentes de datos WeRailMySQL. Seleccione los siguientes objetos y servicios de modelo de datos de weretail **> customerdetails** esquema para poder formar el modelo de **datos:**
 
    * **Objetos del modelo de datos**:
 
@@ -179,7 +177,7 @@ Para configurar el modelo de datos de formulario, haga lo siguiente:
       * **Título**: especifique el título del servicio. Por ejemplo: Recuperar dirección de envío.
       * **Descripción**: especifique la descripción que contiene el funcionamiento detallado del servicio. Por ejemplo:
 
-        Este servicio recupera la dirección de envío y otros detalles del cliente desde [!DNL MySQL]database
+        Este servicio recupera la dirección de envío y otros detalles del cliente de la [!DNL MySQL] base de datos
 
       * **Objeto de modelo de salida**: seleccione el esquema que contiene los datos del cliente. Por ejemplo:
 
@@ -207,7 +205,7 @@ Para configurar el modelo de datos de formulario, haga lo siguiente:
 
       * **Tipo de salida**: seleccione **BOOLEANO**.
 
-      * **Argumentos**: seleccione el argumento llamado **ID** y **customerdetails**.
+      * **Argumentos**: seleccione el ID del nombre **** del argumento y **customerdetails**.
 
       Pulse **[!UICONTROL Listo]**. El servicio **[!UICONTROL actualizar]** para actualizar los detalles del cliente en la base de datos [!DNL MySQL]está configurado.
 
@@ -235,6 +233,6 @@ Haga lo siguiente para ejecutar la prueba:
 
    ![test-write-model](assets/test-write-model.png)
 
-   Si vuelve a probar el servicio de modelo de lectura para el ID 7107215, recuperará y mostrará los detalles actualizados del cliente como se muestra a continuación.
+   Ahora, si vuelve a prueba el servicio de modelo de lectura para el 7107215 de identificación, obtiene y muestra los detalles actualizados del cliente como se muestra a continuación.
 
    ![read-updated](assets/read-updated.png)

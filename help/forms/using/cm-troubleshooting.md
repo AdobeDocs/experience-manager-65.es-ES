@@ -1,17 +1,15 @@
 ---
 title: '“Administración de correspondencia: Solución de problemas”'
-description: Gestionar los errores que puedan surgir durante el proceso de guardar una carta en un entorno de AEM Forms.
-uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
+description: Obtenga información sobre cómo gestionar los errores que surgen durante el proceso de guardar una carta en un entorno de AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 92%
+source-wordcount: '215'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 92%
 Se muestra uno de los siguientes errores al guardar una carta:
 
 * El enlace de datos no está presente para el módulo de texto.
-* Proporcione la información de la propiedad necesaria para lo siguiente.
+* Proporcione la información de la propiedad necesaria para lo siguiente
 
 ### Motivo {#reason}
 
@@ -50,5 +48,5 @@ Restablezca la memoria caché de la carta en la instancia de publicación median
 1. Vaya a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e inicie sesión como administrador.
 1. Seleccione **Configuraciones de Administración de correspondencia**.
 1. En **Configuraciones de Administración de correspondencia**, deshabilite **Habilitar memoria caché de la carta** y haga clic en **Guardar**.
-1. Habilite **Habilitar memoria caché de la carta** y haga clic en **Guardar**.
+1. Marque **Habilitar memoria caché de carta** y luego haga clic en **Guardar**.
 1. Vuelva a intentar visualizar la carta.

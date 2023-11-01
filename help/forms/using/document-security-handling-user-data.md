@@ -1,16 +1,14 @@
 ---
 title: Seguridad de los documentos | Administrar datos de usuario
-description: AEM Forms Document Security le permite administrar los datos de usuario y los almacenes de datos, así como acceder, eliminar y exportar datos de usuario.
-uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
+description: Obtenga información sobre cómo AEM Forms Document Security le permite administrar los datos de usuario y los almacenes de datos, así como acceder, eliminar y exportar datos de usuario.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 96%
+source-wordcount: '973'
+ht-degree: 65%
 
 ---
 
@@ -22,7 +20,7 @@ AEM Forms Document Security permite crear, almacenar y aplicar configuraciones d
 
 ## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
-La seguridad de los documentos almacena directivas y datos relacionados con documentos protegidos, incluidos datos de usuario, en una base de datos, como My Sql, Oracle, MS SQL Server y IBM DB2. Además, los datos de los usuarios autorizados en una directiva se almacenan en la administración de usuarios. Para obtener información sobre los datos almacenados en la administración de usuarios, consulte [Administrar usuarios de Forms: Administrar datos de usuario](/help/forms/using/user-management-handling-user-data.md).
+La seguridad de los documentos almacena directivas y datos relacionados con documentos protegidos, incluidos datos de usuario, en una base de datos, como My Sql, Oracle, MS® SQL Server y IBM® DB2®. Además, los datos de los usuarios autorizados en una directiva se almacenan en la administración de usuarios. Para obtener información sobre los datos almacenados en la administración de usuarios, consulte [Administrar usuarios de Forms: Administrar datos de usuario](/help/forms/using/user-management-handling-user-data.md).
 
 La siguiente tabla muestra cómo la seguridad de documentos organiza los datos en las tablas de la base de datos.
 
@@ -38,7 +36,7 @@ La siguiente tabla muestra cómo la seguridad de documentos organiza los datos e
   </tr>
   <tr>
    <td><code>EdcAuditEntity</code></td>
-   <td>Almacena información sobre la creación de eventos como eventos de usuario, eventos de documento y eventos de directivas.</td>
+   <td>Almacena información sobre la auditoría de eventos como eventos de usuario, eventos de documento y eventos de directivas.</td>
   </tr>
   <tr>
    <td><p><code>EdcLicenseEntity</code></p> </td>
@@ -69,7 +67,7 @@ La siguiente tabla muestra cómo la seguridad de documentos organiza los datos e
    <td>Almacena información sobre directivas archivadas. Una directiva archivada contiene su XML de directiva almacenado como objeto Blob.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br />  (Bases de datos de Oracle y MS SQL)</p> </td>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Bases de datos de Oracle y MS® SQL)</p> </td>
    <td>Almacena la asignación entre el conjunto de directivas y los usuarios.</td>
   </tr>
   <tr>
@@ -95,11 +93,11 @@ Una vez que conozca el ID principal, puede exportar o eliminar los datos del usu
 
 ### Exportar datos de usuario {#export-user-data}
 
-Ejecute los siguientes comandos de la base de datos para exportar los datos de usuario para un ID principal desde las tablas de la base de datos. En el comando `select`, reemplace `<principal_id>` con el ID principal del usuario cuyos datos desee exportar.
+Ejecute los siguientes comandos de base de datos para poder exportar los datos de usuario para un ID principal desde las tablas de base de datos. En el comando `select`, reemplace `<principal_id>` con el ID principal del usuario cuyos datos desee exportar.
 
 >[!NOTE]
 >
->Los siguientes comandos utilizan nombres de tabla de base de datos en bases de datos My SQL y IBM DB2. Cuando ejecute estos comandos en bases de datos Oracle y MS SQL, sustituya `EdcPolicySetPrincipalEntity` por `EdcPolicySetPrincipalEnt` en los comandos.
+>Los siguientes comandos utilizan nombres de tabla de base de datos en bases de datos My SQL y IBM® DB2®. Cuando ejecute estos comandos en bases de datos de Oracle y MS® SQL, reemplace `EdcPolicySetPrincipalEntity` con `EdcPolicySetPrincipalEnt` en los comandos.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -125,7 +123,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Para exportar datos desde la tabla `EdcAuditEntity`, utilice la API [EventManager.exportEvents](https://helpx.adobe.com/es/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://helpx.adobe.com/es/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para exportar datos de auditoría basados en `principalId`, `policyId`o `licenseId`.
+Para exportar datos desde la tabla `EdcAuditEntity`, utilice la API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para exportar datos de auditoría basados en `principalId`, `policyId`o `licenseId`.
 
 Para obtener datos completos sobre un usuario del sistema, debe acceder a los datos de la base de datos de administración de usuarios y exportarlos. Para obtener más información, consulte [Administrar usuarios de Forms: Administrar datos de usuario](/help/forms/using/user-management-handling-user-data.md).
 
@@ -134,7 +132,7 @@ Para obtener datos completos sobre un usuario del sistema, debe acceder a los da
 Haga lo siguiente para eliminar los datos de seguridad del documento para un ID principal de las tablas de la base de datos.
 
 1. Apague el servidor de AEM Forms.
-1. Ejecute los siguientes comandos de la base de datos para eliminar los datos del ID principal de las tablas de base de datos para la seguridad del documento. En el `Delete` comando, reemplace `<principal_id>` por el ID principal del usuario cuyos datos desee eliminar.
+1. Ejecute los siguientes comandos de base de datos para poder eliminar los datos del ID principal de las tablas de base de datos para la seguridad del documento. En el `Delete` comando, reemplace `<principal_id>` por el ID principal del usuario cuyos datos desee eliminar.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -150,17 +148,17 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    >[!NOTE]
    >
-   >Para eliminar datos de la tabla `EdcAuditEntity`, utilice la API [EventManager.deleteEvents](https://helpx.adobe.com/es/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://helpx.adobe.com/es/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para eliminar datos de auditoría basados en `principalId`, `policyId` o `licenseId`.
+   Para eliminar datos de la tabla `EdcAuditEntity`, utilice la API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para eliminar datos de auditoría basados en `principalId`, `policyId` o `licenseId`.
 
 1. Los archivos XML de directivas activas y archivadas se almacenan en las tabla de la base de datos `EdcPolicyXmlEntity` y `EdcPolicyArchiveEntity`, respectivamente. Para eliminar datos de un usuario de estas tablas, haga lo siguiente:
 
    1. Abra el blob XML de cada fila en la tabla `EdcPolicyXMLEntity` o `EdcPolicyArchiveEntity` y extraiga el archivo XML. El archivo XML es similar al que se muestra a continuación.
-   1. Edite el archivo XML para quitar el blob del ID principal.
+   1. Edite el archivo XML para poder quitar el blob del ID principal.
    1. Repita los pasos 1 y 2 para el otro archivo.
 
    >[!NOTE]
    >
-   >Debe quitar el blob completo dentro de la etiqueta `Principal` para un ID principal o el XML de directiva podría dañarse o inutilizarse.
+   Elimine el blob completo dentro de la `Principal` para un ID principal o el XML de directiva puede dañarse o inutilizarse.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -193,7 +191,7 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    **Usar la consola de administración**
 
-   1. Inicie sesión como administrador en la consola de administración de Forms JEE en https://[*server*]:[*port*]/adminui.
+   1. Inicie sesión como administrador en la consola de administración de Forms JEE en https://[*server*]:[*puerto*]/adminui.
    1. Navegue hasta **[!UICONTROL Servicios > Seguridad de documentos > Conjuntos de directivas]**.
    1. Abra un conjunto de directivas y elimine el usuario de la directiva.
 
@@ -201,13 +199,13 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    Los usuarios de seguridad de documentos que tengan permisos para crear directivas personales pueden eliminar datos de usuario de sus directivas. Para ello:
 
-   1. Los usuarios que tengan directivas personales deben iniciar sesión en la página web de seguridad de documentos en https://[*server*]:[*port*]/edc.
+   1. Los usuarios que tengan directivas personales deben iniciar sesión en la página web de seguridad de documentos en https://[*server*]:[*puerto*]/edc.
    1. Navegar hasta **[!UICONTROL Servicios > Seguridad de documentos > Mis directivas]**.
    1. Abrir una directiva y eliminar el usuario de ella.
 
    >[!NOTE]
    >
-   >Los administradores pueden buscar, acceder y eliminar datos de usuario de las directivas personales de otros usuarios en **[!UICONTROL Servicios > Seguridad de documentos > Mis directivas]** mediante la consola de administración.
+   Los administradores pueden buscar, acceder y eliminar datos de usuario de las directivas personales de otros usuarios en **[!UICONTROL Servicios > Seguridad de documentos > Mis directivas]** mediante la consola de administración.
 
 1. Eliminar los datos del ID principal de la base de datos de administración de usuarios. Para ver los pasos detallados, consulte [Administrar usuarios de Forms | Administrar datos de usuario](/help/forms/using/user-management-handling-user-data.md).
-1. Inicie el servidor de AEM Forms.
+1. Inicie AEM Forms Server.

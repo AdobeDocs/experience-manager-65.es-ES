@@ -1,22 +1,20 @@
 ---
-title: Personalizar plantillas para componentes del portal de formularios
-description: La interfaz de usuario de AEM Forms permite a los usuarios agregar metadatos a los formularios. Los metadatos personalizados mejoran la experiencia del usuario al enumerar los formularios y buscar en su organización.
-uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
+title: Personalizar plantillas para componentes del portal de Forms
+description: Descubra cómo la interfaz de usuario de AEM Forms permite a los usuarios agregar metadatos a los formularios. Los metadatos personalizados mejoran la experiencia del usuario en la búsqueda y la lista de formularios.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 98%
+source-wordcount: '1250'
+ht-degree: 86%
 
 ---
 
-# Personalizar plantillas para componentes del portal de formularios{#customizing-templates-for-forms-portal-components}
+# Personalizar plantillas para componentes del portal de Forms{#customizing-templates-for-forms-portal-components}
 
 ## Requisitos previos {#prerequisites}
 
@@ -30,7 +28,7 @@ La interfaz de usuario de AEM Forms permite agregar metadatos a cualquier formul
 
 El portal de formularios permite utilizar metadatos personalizados en listas de formularios. Al crear plantillas personalizadas para los recursos, puede modificar su diseño y utilizar metadatos personalizados con el conjunto de estilos CSS.
 
-Siga estos pasos para crear una plantilla personalizada para varios componentes de portal de formularios.
+Haga lo siguiente para poder crear una plantilla personalizada para varios componentes del portal de Forms.
 
 ## Crear una plantilla personalizada {#creating-a-nbsp-custom-template}
 
@@ -55,7 +53,7 @@ Siga estos pasos para crear una plantilla personalizada para varios componentes 
    La siguiente imagen muestra la configuración del componente Buscar y listar.
    ![Crear una sling:Folder](assets/1.png)
 
-1. Cree un archivo template.html en esta carpeta para que sirva como plantilla personalizada.
+1. Cree un archivo template.html en esta carpeta para que pueda servir como plantilla personalizada.
 1. Escriba la plantilla personalizada y utilice metadatos personalizados como se describe a continuación.
 
 ## Ejemplo práctico {#working-example}
@@ -120,8 +118,8 @@ Compatibilidad con la localización, clasificación y uso de propiedades de conf
 1. **Compatibilidad con localización**: para localizar cualquier texto estático, utilice el atributo `${localize-YOUR_TEXT}` y haga que el valor localizado esté disponible, si no existe todavía.
    *En el ejemplo analizado, los atributos `${localize-Apply}` y `${localize-Download}` se utilizan para localizar el texto Aplicar y Descargar.*
 
-1. **Compatibilidad con la ordenación**: haga clic en el elemento HTML para ordenar los resultados de la búsqueda. Para implementar la ordenación en un diseño de tablas, agregue el atributo “data-sortKey” en el encabezado de tabla concreto. Además, agregue su valor como metadatos para los que desea ordenar.
-Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el valor del encabezado “data-sortKey” es “título”. Haga clic en el encabezado para ordenar los valores de una columna en particular.
+1. **Compatibilidad con la ordenación**: haga clic en el elemento HTML para ordenar los resultados de la búsqueda. Para implementar la ordenación en un diseño de tabla, agregue el atributo &quot;data-sortKey&quot; en el encabezado de tabla concreto. Además, agregue su valor como metadatos para los que desea ordenar.
+Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el valor del encabezado “data-sortKey” es “título”. Haga clic en el encabezado para poder ordenar los valores de una columna en particular.
 
 1. **Usar las propiedades de configuración**: el componente Buscar y listar tiene varias configuraciones que puede utilizar en la interfaz de usuario. Por ejemplo, para mostrar el texto de información del objeto HTML guardado a través del cuadro de diálogo de edición, utilice el atributo `${config-htmlLinkText}`. **Del mismo modo, para el texto de información del objeto PDF, utilice el atributo** `${config-pdfLinkText}`.
 
@@ -134,7 +132,7 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 
 ### Componente Borradores y envíos {#drafts-amp-submissions-component}
 
-* **Ruta**: ruta del nodo de metadatos de borradores/envíos. Utilícelo con la extensión .HTML como URL para abrir un borrador o un envío.
+* **Ruta**: ruta del nodo de metadatos de borradores/envíos. Utilícelo con la extensión .HTML como URL para poder abrir un borrador o un envío.
 * **contextPath**: ruta de contexto de la instancia de AEM
 * **firstLetter**: primera letra (mayúscula) del título del formulario adaptable, que se guardó como borrador o se envió.
 * **formName**: título del formulario adaptable, que se guardó como borrador o se envió.
@@ -142,7 +140,7 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 * **submitID**: ID del envío que aparece en la lista (utilícelo solamente en la plantilla de la sección Envío).
 * **estado**: estado del formulario enviado. (Se utiliza solo en la plantilla de la sección Envío).
 * **descripción**: descripción del formulario adaptable asociado al borrador o al envío.
-* **diffTime**: diferencia entre la hora actual y la última acción de guardado del borrador. Alternativamente, la diferencia entre la hora actual y la última acción de envío para el envío.
+* **diffTime**: diferencia entre la hora actual y la última acción de guardado del borrador. Alternativamente, la diferencia entre la hora actual y la última acción enviada para la presentación.
 * **iconClass**: la clase CSS utilizada para mostrar la primera letra del borrador/envío. El portal de formularios incluye las siguientes clases, que proporcionan distintos fondos de colores.
 * **propietario**: usuario que ha creado el borrador/envío.
 * **Hoy**: fecha de creación del borrador o de la presentación en formato DD:MM:AAAA.
@@ -162,7 +160,7 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 
 **C.** Atributo repetible de datos utilizado en la sección de la plantilla para cada formulario
 
-**D.** Localizar la cadena “Aplicar”
+**D.** Localice la cadena &quot;Aplicar&quot;
 
 **E.** Usar la propiedad de configuración pdfLinkText
 
@@ -177,11 +175,11 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 
 ## Artículos relacionados
 
-* [Habilitar componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md)
-* [Creación de una página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
+* [Habilitar componentes del portal de Forms](/help/forms/using/enabling-forms-portal-components.md)
+* [Crear página del portal de Forms](/help/forms/using/creating-form-portal-page.md)
 * [Enumerar formularios en una página web mediante API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Usar el componente Borradores y envíos](/help/forms/using/draft-submission-component.md)
 * [Personalizar el almacenamiento de borradores y formularios enviados](/help/forms/using/draft-submission-component.md)
 * [Ejemplo para integrar el componente Borradores y envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizar plantillas para componentes del portal de formularios](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Personalizar plantillas para componentes del portal de Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md)

@@ -1,20 +1,20 @@
 ---
-title: Inicio rápido (SOAP) de la API de Java del servicio Assembler
-description: Montar, desmontar y crear dinámicamente un documento de PDF mediante el Inicio rápido (SOAP) de la API de Java del servicio Assembler.
+title: Inicio rápido (SOAP) de la API de Assembler Service Java&trade
+description: Aprenda a montar, desmontar y crear dinámicamente un documento de PDF mediante el Inicio rápido (SOAP) de la API de Java&trade; del servicio Assembler.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 1%
+source-wordcount: '1019'
+ht-degree: 0%
 
 ---
 
-# Inicio rápido (SOAP) de la API de Java del servicio Assembler  {#assembler-service-java-api-quickstart-soap}
+# Inicio rápido (SOAP) de la API de Java™ del servicio Assembler {#assembler-service-java-api-quickstart-soap}
 
 Inicio rápido (SOAP) de la API de Java está disponible para el servicio Assembler
 
@@ -44,7 +44,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
->Inicio rápido ubicado en Programación con AEM Forms se basa en el servidor de Forms que se está implementando en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Los inicios rápidos en programación con AEM Forms se basan en el servidor de aplicaciones Forms Server que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Inicio rápido (modo SOAP): Agrupar un documento de PDF mediante la API de Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -736,7 +736,7 @@ El siguiente ejemplo de código Java organiza un documento de PDF no interactivo
 
 ## Inicio rápido (modo SOAP): Determinación de si un documento es compatible con el PDF/A mediante la API de Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-El siguiente ejemplo de código Java determina si el documento del PDF de entrada es compatible con el PDF/A. El documento del PDF de entrada que se pasa al servicio Assembler se denomina *Loan.pdf*. El nombre del documento DDX es shell_PDFA.xml. El documento XML que devuelve el servicio Assembler y especifica si el documento del PDF de entrada es compatible con PDF/A se guarda como un archivo XML denominado result.xml. Para obtener más información sobre *shell_PDFA.xml* Documento DDX utilizado en este ejemplo de código, consulte [Determinar Si Los Documentos Son Compatibles Con El PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+El siguiente ejemplo de código Java determina si el documento del PDF de entrada es compatible con el PDF/A. El documento del PDF de entrada que se pasa al servicio Assembler se denomina *Loan.pdf*. El nombre del documento DDX es shell_PDFA.xml. El documento XML que devuelve el servicio Assembler y especifica si el documento del PDF de entrada es compatible con el PDF/A, se guarda como un archivo XML denominado result.xml. Para obtener más información sobre *shell_PDFA.xml* Documento DDX utilizado en este ejemplo de código, consulte [Determinar Si Los Documentos Son Compatibles Con El PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -1687,7 +1687,7 @@ En el ejemplo de código siguiente se crea un documento de PDF utilizando `PDFUt
 
 >[!NOTE]
 >
->`PDFUtility` puede redactar solo los PDF marcados para redacción con Acrobat.
+El `PDFUtility` puede redactar solo los PDF marcados para redacción con Acrobat.
 
 ```java
 /*

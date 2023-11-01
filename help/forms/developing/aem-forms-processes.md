@@ -1,17 +1,15 @@
 ---
 title: Explicar los procesos de AEM Forms
-description: Los procesos de AEM Forms abarcan la creación, el envío, la gestión, la validación, la integración, la automatización del flujo de trabajo y la administración de resultados.
-uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
+description: Descubra cómo los procesos de AEM Forms abarcan la creación, el envío, la gestión de datos, la validación, la integración, la automatización del flujo de trabajo y la administración de resultados.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
-discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '814'
 ht-degree: 3%
 
 ---
@@ -63,7 +61,7 @@ Cuando se invoca este proceso de corta duración, realiza las siguientes accione
    *AEM Programar con formularios de* describe las siguientes maneras de invocar mediante programación este proceso de corta duración:
 
    * [Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Uso de una aplicación de Flex)
-   * [Invocación de un proceso de corta duración mediante la API de invocación](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API de invocación de Java)
+   * [Invocación de un proceso de corta duración mediante la API de invocación](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API de invocación de Java™)
    * [Invocar AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (ejemplo de servicio web)
    * [Invocar AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (ejemplo de servicio web)
    * [Invocar AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (ejemplo de servicio web)

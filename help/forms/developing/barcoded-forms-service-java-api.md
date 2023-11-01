@@ -1,34 +1,34 @@
 ---
-title: Inicio rápido (SOAP) de la API de Java Servicio de formularios con códigos de barras
-description: Inicio rápido (SOAP) de la API de Java del servicio de Forms con códigos de barras en AEM Forms permite un procesamiento fluido de los códigos de barras.
+title: Inicio rápido (SOAP) de la API del servicio Forms con códigos de barras Java&trade
+description: Descubra cómo el Inicio rápido (SOAP) de la API de Forms Service Java&trade; con códigos de barras en AEM Forms permite un procesamiento fluido de los códigos de barras.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 3%
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
-# Inicio rápido (SOAP) de la API de Java del servicio de Forms con códigos de barras {#barcoded-forms-service-java-apiquick-start-soap}
+# Inicio rápido (SOAP) de la API de Java™ del servicio Forms con códigos de barras {#barcoded-forms-service-java-apiquick-start-soap}
 
-Inicio rápido (SOAP) de la API de Java está disponible para el servicio de Forms con códigos de barras:
+Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio de Forms con códigos de barras:
 
-[Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos ubicados en Programación con AEM Forms se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Los inicios rápidos en programación con AEM Forms se basan en el servidor de aplicaciones Forms Server que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java™ {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-El siguiente código Java descodifica los datos del formulario que se encuentran en un formulario de PDF guardado como Loan.pdf. Los datos descodificados se guardan como un archivo XML denominado extractedData.xml. Este ejemplo de código convierte un `org.w3c.dom.Document` objeto en un `com.adobe.idp.Document` objeto. (Consulte [Descodificación de datos de formulario con códigos de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+El siguiente código Java™ descodifica los datos de formulario que están en un formulario de PDF que se guarda como Loan.pdf. Los datos descodificados se guardan como un archivo XML denominado extractedData.xml. Este ejemplo de código convierte un `org.w3c.dom.Document` objeto en un `com.adobe.idp.Document` objeto. (Consulte [Descodificación de datos de formulario con códigos de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -217,4 +217,4 @@ El siguiente código Java descodifica los datos del formulario que se encuentran
 
 >[!NOTE]
 >
->Cuando se utilizan ambos `org.w3c.dom.Document` objeto y un `com.adobe.idp.Document` en la misma lógica de aplicación, se recomienda calificar completamente ambos objetos.
+Cuando se utilizan ambos `org.w3c.dom.Document` objeto y un `com.adobe.idp.Document` en la misma lógica de aplicación, se recomienda calificar completamente ambos objetos.

@@ -1,23 +1,21 @@
 ---
 title: Registrar flujos de trabajo de AEM Forms
-description: Depure los problemas del flujo de trabajo de AEM Forms y habilite el registro de depuración de los flujos de trabajo de AEM Forms para ver los registros.
-uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
+description: Obtenga información sobre cómo depurar los problemas del flujo de trabajo de AEM Forms y habilitar el registro de depuración para los flujos de trabajo de AEM Forms para ver los registros.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 94%
+source-wordcount: '292'
+ht-degree: 82%
 
 ---
 
 # Registrar flujos de trabajo de AEM Forms{#logging-in-aem-forms-workflows}
 
-Los pasos de flujo de trabajo de Forms proporcionan registros detallados para depurar convenientemente los problemas relacionados con los flujos de trabajo. Habilite el registro de depuración de los flujos de trabajo de AEM Forms para ver los registros.
+Los pasos del Forms Workflow proporcionan registros detallados para depurar convenientemente los problemas relacionados con el flujo de trabajo. Habilite el registro de depuración de los flujos de trabajo de AEM Forms para ver los registros.
 
 De forma predeterminada, toda la información del registro está disponible en el archivo **error.log** del directorio */crx-repository/logs/*.
 
@@ -68,7 +66,7 @@ El siguiente ejemplo ilustra los registros del paso Firmar documento:
 
 Utilice los registros para evaluar lo siguiente:
 
-* Utiliza la configuración correcta de Adobe Sign.
+* Está usando una configuración de Adobe Sign correcta.
 * El servicio de Adobe Sign se cierra después de crear correctamente un acuerdo.
 * El paso Firmar documento se cierra con un mensaje de éxito.
 
@@ -76,7 +74,7 @@ Si se produce una excepción, puede ver el seguimiento de pila completo para eva
 
 ## Habilitar el registro de depuración en flujos de trabajo de AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Realice los siguientes pasos para habilitar el registro de depuración en flujos de trabajo de AEM Forms:
+Haga lo siguiente para poder habilitar el registro de depuración para los flujos de trabajo de AEM Forms:
 
 1. Vaya al Administrador de configuración de la consola web de AEM en:
 

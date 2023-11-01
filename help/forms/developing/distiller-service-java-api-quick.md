@@ -1,34 +1,32 @@
 ---
-title: Inicio rápido (SOAP) de la API de Java del servicio Distiller
-description: El servicio Distiller transforma los archivos PostScript, EPS y PRN en PDF, que normalmente se emplean en las conversiones de documentos de impresión a electrónica de gran volumen.
-uuid: 7781f074-cea4-4109-892b-118cfad4ec36
+title: Inicio rápido (SOAP) de la API de Distiller Service Java&trade
+description: Descubra cómo el servicio Distiller transforma los archivos PostScript, EPS y PRN en PDF, empleados comúnmente para conversiones de documentos de impresión a electrónicos de gran volumen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 3%
+source-wordcount: '190'
+ht-degree: 0%
 
 ---
 
-# Inicio rápido (SOAP) de la API de Java del servicio Distiller {#distiller-service-java-api-quickstart-soap}
+# Inicio rápido (SOAP) de la API de Java™ del servicio Distiller {#distiller-service-java-api-quickstart-soap}
 
-Inicio rápido (SOAP) de la API de Java está disponible para el servicio Distiller®:
+El Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio Distiller®:
 
-[Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento de PDF mediante Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->AEM Los inicios rápidos, ubicados en Programación con formularios de la aplicación, se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
+## Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java™ {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
 En el ejemplo de código siguiente se convierte un archivo PostScript llamado *Loan.ps* a un archivo de PDF llamado *Loan.pdf*. (Consulte [Conversión de documentos PostScript a PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 

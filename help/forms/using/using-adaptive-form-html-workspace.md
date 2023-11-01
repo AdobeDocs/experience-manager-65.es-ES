@@ -1,25 +1,23 @@
 ---
 title: Usar un formulario adaptable en el espacio de trabajo HTML
-description: Aprenda a utilizar un formulario adaptable en HTML Workspace para permitir que los usuarios accedan al formulario en sus dispositivos.
-uuid: 473d5daf-a3ed-449f-9136-585755b59922
+description: Aprenda a utilizar un formulario adaptable en HTML Workspace que permita a los  acceder al formulario en sus dispositivos.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 97%
+ht-degree: 79%
 
 ---
 
-# Usar un formulario adaptable en el espacio de trabajo HTML{#using-an-adaptive-form-in-html-workspace}
+# Usar un formulario adaptable en el espacio de trabajo HTML {#using-an-adaptive-form-in-html-workspace}
 
-AEM Forms en JEE ofrece la capacidad de utilizar un formulario adaptable en HTML Workspace.
+AEM Forms en JEE permite utilizar un formulario adaptable en HTML Workspace.
 
-Como se puede seleccionar un XDP durante el diseño del proceso, se ha agregado la capacidad de examinar desde un formulario adaptable de repositorio de AEM existente. La capacidad permite al diseñador de procesos configurar un formulario adaptable tanto en el punto de inicio como en la tarea.
+Como se puede seleccionar un XDP durante el diseño del proceso, se ha agregado la capacidad de examinar desde un formulario adaptable de repositorio de AEM existente. La capacidad permite al Diseñador de procesos configurar un formulario adaptable en el punto de inicio y en la tarea.
 
 ## Experiencia en diseño de procesos {#process-design-experience}
 
@@ -43,11 +41,11 @@ HTML Workspace proporciona algunos controles adaptables específicos de formular
 
 1. Para enviar un formulario adaptable, utilice el botón **Enviar** o las acciones de ruta disponibles, como en Mobile Forms. Cualquier botón de tipo Enviar del formulario adaptable está oculto.
 
-1. **Visibilidad global de la barra de herramientas del formulario adaptable**: Si el diseñador de procesos oculta la barra de herramientas global/de nivel superior, la barra de herramientas y los botones no aparecen en los formularios adaptables.
+1. **Visibilidad global de la barra de herramientas del formulario adaptable**: Si el Diseñador de procesos oculta la barra de herramientas global/de nivel superior, la barra de herramientas y los botones no aparecen en los formularios adaptables.
 
-1. **Controles de navegación de Workspace para formularios adaptables**: Los botones Siguiente/Anterior están disponibles junto con los botones Guardar, Enviar y Acción de ruta para un formulario adaptable en HTML Workspace. Haga clic en los botones Siguiente/Anterior para desplazarse por los paneles de los formularios adaptables en HTML Workspace. Los botones Siguiente/Anterior proporcionan una navegación profunda, similar a los controles de navegación de la vista Móvil de los formularios adaptables.
+1. **Controles de navegación de Workspace para formularios adaptables**: Los botones Siguiente/Anterior están disponibles junto con los botones Guardar, Enviar y Acción de ruta para un formulario adaptable en HTML Workspace. Haga clic en los botones Siguiente/Anterior para poder navegar por los paneles de los formularios adaptables en HTML Workspace. Los botones Siguiente/Anterior proporcionan una navegación profunda, similar a los controles de navegación de la vista Móvil de los formularios adaptables.
 
-1. **Servicios de firma electrónica y componente Resumen del formulario adaptable**: El componente Resumen no es operativo en HTML Workspace. En otras palabras, si un formulario adaptable tiene un componente Resumen, no es visible en el espacio de trabajo. En lugar de Enviar automáticamente en el componente Firma electrónica, el usuario del espacio de trabajo hace clic en Enviar o en una acción de ruta en HTML Workspace. Una vez firmado un documento, se puede ver como un documento con firma plano. Haga clic en **Enviar** o una acción de ruta para cerrar/completar la tarea o el punto de inicio.\
+1. **Servicios de firma electrónica y componente Resumen del formulario adaptable**: El componente Resumen no es operativo en HTML Workspace. En otras palabras, si un formulario adaptable tiene un componente Resumen, no es visible en el espacio de trabajo. En lugar de Enviar automáticamente en el componente Firma electrónica, el usuario del espacio de trabajo hace clic en Enviar o en una acción de ruta en HTML Workspace. Una vez firmado un documento, se puede ver como un documento con firma plano. Clic **Enviar** o una acción de ruta para poder cerrar/completar la tarea o el punto de inicio.\
    El documento firmado se recopila del servidor de servicios de firma electrónica y el archivo xml de datos se reenvía al siguiente paso del proceso.
 
 ## Pasos para utilizar formularios adaptables en el diseño del proceso {#steps-to-use-adaptive-forms-in-process-design}
@@ -58,13 +56,13 @@ HTML Workspace proporciona algunos controles adaptables específicos de formular
 
    ![Crear nueva aplicación](assets/create_new_appl.png)
 
-   Crear nueva aplicación
+   Crear aplicación
 
 1. Cree un proceso o utilice un proceso existente en la aplicación.
 
    ![Crear nuevo proceso](assets/create_new_process.png)
 
-   Crear nuevo proceso
+   Crear proceso
 
 1. Cree un punto de inicio o asigne una tarea y haga doble clic en ella.
 1. En la sección **[!UICONTROL Presentación y datos]**, seleccione **[!UICONTROL usar un recurso CRX]** y haga clic en los puntos suspensivos antes del recurso.

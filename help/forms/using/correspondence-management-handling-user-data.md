@@ -1,16 +1,14 @@
 ---
 title: Administración de correspondencia | Administrar datos de usuario
-description: Administración de correspondencia y Administrar datos de usuario en el entorno de AEM Forms.
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Obtenga información sobre Administración de correspondencia y la administración de datos de usuario en un entorno de Adobe Experience Manager Forms.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 98%
+source-wordcount: '550'
+ht-degree: 94%
 
 ---
 
@@ -73,7 +71,7 @@ Puede acceder a los datos de correspondencia en Borradores y enviados en los rep
 
 Administración de correspondencia proporciona una API que puede utilizar para buscar y acceder a instancias de carta en Borradores y enviados. Con las API, puede encontrar y abrir instancias de carta mediante el ID de instancia de la carta o el usuario que guardó o envió la correspondencia. Para obtener más información, consulte [API para acceder a instancias de carta](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Alternativamente, puede navegar a la instancia de carta en el repositorio de AEM mediante CRX DELite. Consulte [Almacenamiento de datos y datos de usuarios](/help/forms/using/correspondence-management-handling-user-data.md#data) para obtener información sobre los datos almacenados y la ubicación del repositorio.
+AEM Como alternativa, puede navegar a la instancia de carta en el repositorio de mediante CRXDE Lite. Consulte [Almacenamiento de datos y datos de usuarios](/help/forms/using/correspondence-management-handling-user-data.md#data) para obtener información sobre los datos almacenados y la ubicación del repositorio.
 
 ### Eliminar los datos de usuario {#delete-user-data}
 

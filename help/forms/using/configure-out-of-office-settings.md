@@ -1,12 +1,11 @@
 ---
 title: Configuración de Fuera de la oficina
-description: Configure Fuera de la oficina en la instancia de AEM Forms.
-seo-description: Configure Out of Office settings
+description: Obtenga información sobre cómo establecer la configuración de Fuera de la oficina en la instancia de Adobe Experience Manager Forms.
 exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 97%
+source-wordcount: '832'
+ht-degree: 76%
 
 ---
 
@@ -43,18 +42,18 @@ Realice los siguientes pasos para habilitar la configuración de Fuera de la ofi
 1. Pulse el botón **[!UICONTROL Habilitar/Deshabilitar]** para habilitar la configuración de Fuera de la oficina.
 1. Especifique la **[!UICONTROL Hora de inicio]** y la **[!UICONTROL Hora de finalización]** para la configuración. Los elementos se delegarán únicamente durante el período especificado. Deje el campo **[!UICONTROL Hora de finalización]** vacío para delegar los elementos durante un período de tiempo indefinido.
 1. Seleccione la casilla de verificación **[!UICONTROL Reenviar mis elementos durante este periodo]**. Si no selecciona la opción y no especifica un usuario asignado, los elementos no se reenviarán a ningún usuario. Aunque no esté presente y la configuración esté habilitada, los elementos permanecerán en la Bandeja de entrada.
-1. Pulse **[!UICONTROL Agregar usuario asignado]**. Especifique un usuario en el campo **[!UICONTROL Usuario asignado]** en el que delegar los elementos. Especifique el **[!UICONTROL Modelo de flujo de trabajo]** para delegar en el usuario especificado. Puede seleccionar más de un modelo de flujo de trabajo.
+1. Pulse **[!UICONTROL Agregar usuario asignado]**. Especifique un usuario en la **[!UICONTROL Asignado]** para que pueda delegar los elementos. Especifique el **[!UICONTROL Modelo de flujo de trabajo]** para poder delegar en el usuario especificado. Puede seleccionar más de un modelo de flujo de trabajo.
 
    Además, para asignar todos los elementos a un usuario determinado independientemente del modelo de flujo de trabajo, seleccione **[!UICONTROL Todos los flujos de trabajo]** en la lista desplegable Modelo de flujo de trabajo. <br>
 
    Para asignar elementos a un usuario determinado para todos los modelos de flujo de trabajo excepto algunos, seleccione **[!UICONTROL Todos los flujos de trabajo]** en la lista desplegable Modelo de flujo de trabajo, pulse **[!UICONTROL + Agregar excepciones]** y especifique los modelos de flujo de trabajo que desea excluir.
    <br>
 
-   Repita el paso para agregar más usuarios asignados. <br>
+   Repita el paso para poder agregar más usuarios asignados. <br>
 
    >[!NOTE]
    >
-   >El orden de los usuarios asignados es importante. Cuando se asigna un elemento a un usuario que ha habilitado la configuración de Fuera de la oficina, el elemento se evalúa según la lista de usuarios asignados especificados en el orden en el que se agregan los usuarios asignados. Cuando un elemento coincide con los criterios, se asigna al usuario asignado y el siguiente usuario no se comprueba.
+   >El orden de los usuarios asignados es importante. Cuando se asigna un elemento a un usuario que ha habilitado la configuración de Fuera de la oficina, el elemento se evalúa según la lista de usuarios asignados especificados en el orden en que se agregan los usuarios asignados. Cuando un elemento coincide con los criterios, se asigna al usuario asignado y el siguiente usuario no se comprueba.
 
 1. Pulse **[!UICONTROL Guardar]**. La configuración se aplica en la fecha y la hora de inicio especificadas. Si inicia sesión mientras está fuera de la oficina, no se considerará que ha vuelto hasta que cambie la configuración.
 
@@ -63,7 +62,7 @@ Ahora, los elementos que se le hayan asignado durante el período de tiempo que 
 
 >[!NOTE]
 >
->(Solo para los elementos de flujos de trabajo centrados en formularios) Active la opción **Permitir que el usuario asignado delegue mediante la configuración de Fuera de la oficina** del paso **Asignar tarea** del flujo de trabajo. Solo los elementos que tienen la opción mencionada habilitada se delegan en otros usuarios.
+>(Solo para los elementos de flujos de trabajo centrados en formularios) Active la opción **Permitir que el usuario asignado delegue mediante la configuración de Fuera de la oficina** del paso **Asignar tarea** del flujo de trabajo. Solo los elementos que tienen la opción mencionada anteriormente habilitada se delegan en otros usuarios.
 
 ## Restricciones {#limitations}
 

@@ -1,18 +1,16 @@
 ---
 title: Personalizar el editor de texto
-description: Aprenda a personalizar el editor de texto en el entorno de AEM Forms.
-uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
+description: Aprenda a personalizar el editor de texto en un entorno de Adobe Experience Manager Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 98%
+source-wordcount: '604'
+ht-degree: 72%
 
 ---
 
@@ -29,7 +27,7 @@ Puede personalizarlo para cambiar lo siguiente en la configuración de la fuente
 * Valores predeterminados de la familia de fuentes y el formato de tamaño, altura, espaciado entre letras y fecha
 * Sangrías de viñetas
 
-Para hacer esto, deberá:
+Haga lo siguiente:
 
 1. [Personalizar fuentes al editar el archivo tbxeditor-config.xml en CRX](#customizefonts)
 1. [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts)
@@ -159,14 +157,14 @@ Para personalizar fuentes al editar el archivo tbxeditor-config.xml, haga lo sig
       </editorConfig>
       ```
 
-   1. Realice los cambios necesarios en el archivo para cambiar lo siguiente en la configuración de la fuente:
+   1. Realice los cambios necesarios en el archivo para poder cambiar lo siguiente en la configuración de la fuente:
 
       * Agregar o quitar la familia y el tamaño de fuente
       * Propiedades como la altura y el espaciado entre letras
       * Valores predeterminados de la familia de fuentes y el formato de tamaño, altura, espaciado entre letras y fecha
       * Sangrías de viñetas
 
-      Por ejemplo, para agregar una fuente japonesa denominada Sazanami Mincho Medium, debe incluir la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesitará tener esta fuente instalada en el equipo cliente para acceder y trabajar con la personalización de fuentes. Para obtener más información, consulte [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts).
+      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También debe tener esta fuente instalada en el equipo cliente para acceder y trabajar con la personalización de fuentes. Para obtener más información, consulte [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts).
 
       También puede cambiar los valores predeterminados de varios aspectos del texto y, al quitar las entradas, quitar las fuentes del editor de texto.
 
@@ -183,7 +181,7 @@ Para obtener más información sobre la instalación de fuentes, consulte lo sig
 
 ## Acceder a las personalizaciones de fuente {#access-font-customizations}
 
-Después de realizar cambios en las fuentes en el archivo tbxeditor-config.xml en CRX e instalar las fuentes requeridas en el equipo cliente utilizado para acceder a AEM Forms, los cambios aparecerán en el editor de texto.
+Después de cambiar las fuentes en la `tbxeditor-config.xml` en CRX e instaló las fuentes necesarias en el equipo cliente utilizado para acceder a AEM Forms, los cambios aparecerán en el editor de texto.
 
 Por ejemplo, la fuente Sazanami Mincho Medium agregada en el procedimiento [Personalizar fuentes al editar el archivo tbxeditor-config.xml en CRX](#customizefonts), aparece en la interfaz de usuario del editor de texto de la siguiente manera:
 
@@ -191,4 +189,4 @@ Por ejemplo, la fuente Sazanami Mincho Medium agregada en el procedimiento [Pers
 
 >[!NOTE]
 >
->Para ver texto en japonés, primero debe introducir el texto con caracteres japoneses. La aplicación de una fuente japonesa personalizada solo da formato al texto de una manera determinada. La aplicación de una fuente japonesa personalizada no cambia los caracteres ingleses u otros caracteres a los japoneses.
+>Para ver texto en japonés, primero debe escribir el texto con caracteres japoneses. La aplicación de una fuente japonesa personalizada solo da formato al texto de una manera determinada. La aplicación de una fuente japonesa personalizada no cambia los caracteres ingleses u otros caracteres a los japoneses.

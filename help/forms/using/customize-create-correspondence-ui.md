@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 61%
+ht-degree: 60%
 
 ---
 
@@ -71,7 +71,7 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la `/apps` ra
 
       >[!NOTE]
       >
-      >No cambie el `/libs` Rama. Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
+      >No cambie el `/libs` Rama. Cualquier cambio que realice puede perderse, ya que esta rama puede sufrir cambios siempre que:
       >
       >    
       >    
@@ -83,7 +83,7 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la `/apps` ra
 
    1. Haga clic en **Aceptar**. La carpeta css se creará en la ruta de acceso especificada.
 
-1. En la carpeta de aplicaciones, cree una carpeta llamada `imgs` con una ruta/estructura similar a la carpeta imgs (en la carpeta ccrui).
+1. En la carpeta de aplicaciones, cree una carpeta llamada `imgs` con una ruta/estructura similar a la `imgs` carpeta (en la carpeta ccrui).
 
    1. Haga clic con el botón derecho en la carpeta **imgs** en la siguiente ruta y seleccione **Nodo de superposición**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores:
