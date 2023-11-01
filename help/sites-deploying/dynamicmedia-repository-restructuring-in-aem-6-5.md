@@ -1,16 +1,14 @@
 ---
 title: Reestructuración del repositorio de Dynamic Media en Adobe Experience Manager 6.5
 description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en Experience Manager 6.5 para Dynamic Media.
-uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 4%
 
 ---
@@ -116,7 +114,7 @@ Como se describe en el elemento principal [Reestructuración de repositorios en 
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>1. Anule la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube con la nueva interfaz de usuario táctil (desde <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua<br /> 3. Vuelva a publicar todos los vídeos en YouTube.</p> <p>Este flujo de trabajo genera nuevas direcciones URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de IU táctil, tiene varias URL de YouTube enumeradas en Propiedades porque los canales creados de nuevo se publican de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles en Propiedades.</p> </td>
+   <td><p>1. Cancelar la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube con la nueva interfaz de usuario táctil (desde <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua<br /> 3. Vuelva a publicar todos los vídeos en YouTube.</p> <p>Este flujo de trabajo genera nuevas direcciones URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de IU táctil, tiene varias URL de YouTube enumeradas en Propiedades porque los canales creados de nuevo se publican de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles en Propiedades.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

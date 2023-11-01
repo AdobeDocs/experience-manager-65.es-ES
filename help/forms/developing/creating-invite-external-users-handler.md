@@ -3,9 +3,9 @@ title: Crear un controlador de usuarios externos de invitación
 description: Obtenga información sobre cómo crear un controlador de usuarios externos de invitación. Permite al servicio Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1133'
 ht-degree: 1%
 
 ---

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -397,4 +397,4 @@ Después de implementar la aplicación web, puede probarla con un explorador web
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-   Seleccione un botón de opción y haga clic en el botón Enviar. Un formulario basado en fragmentos aparecerá en el explorador web. Si se producen problemas, consulte el archivo de registro del servidor de aplicaciones J2EE.
+  Seleccione un botón de opción y haga clic en el botón Enviar. Un formulario basado en fragmentos aparecerá en el explorador web. Si se producen problemas, consulte el archivo de registro del servidor de aplicaciones J2EE.

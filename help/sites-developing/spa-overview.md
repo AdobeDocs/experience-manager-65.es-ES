@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 91%
+source-wordcount: '1653'
+ht-degree: 87%
 
 ---
 
@@ -47,7 +47,7 @@ El componente de página de una SPA no proporciona los elementos HTML de sus com
 
 ### Administración de modelos de página {#page-model-management}
 
-La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. Las SPA deben utilizar la biblioteca del modelo de página para que el Editor de SPA pueda inicializarlas y crearlas. La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se redacta la página, se debe añadir la biblioteca adicional `cq.authoring.pagemodel.messaging` para habilitar la comunicación con el editor de páginas.
+La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. SPA SPA La biblioteca debe utilizar la biblioteca de modelo de página para inicializarse y ser creada por el Editor de modelos de página (). La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se cree la página, una biblioteca adicional `cq.authoring.pagemodel.messaging` debe añadirse para habilitar la comunicación con el editor de páginas.
 
 Si el componente de página de las SPA hereda del componente principal de página, hay dos opciones para hacer que la categoría de la biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
 
@@ -172,7 +172,7 @@ Las versiones anteriores de estos marcos de trabajo pueden funcionar con el Edit
 
 ### Marcos de trabajo adicionales {#additional-frameworks}
 
-Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte el documento [Modelo de SPA](/help/sites-developing/spa-blueprint.md) para los requisitos que debe cumplir un marco de trabajo para crear una capa específica de la plataforma compuesta por módulos, componentes y servicios que funcionen con el Editor de SPA de AEM.
+Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte la [SPA Modelo de](/help/sites-developing/spa-blueprint.md) AEM SPA documento para los requisitos que debe cumplir un marco de trabajo para crear una capa específica del marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de la.
 
 ### Uso de varios selectores {#multiple-selectors}
 

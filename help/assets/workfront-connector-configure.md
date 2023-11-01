@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] config
 
 ## Configuración de suscripciones a eventos {#event-subscriptions}
 
-AEM Las suscripciones a eventos se utilizan para notificar a los usuarios de eventos que tienen lugar en el [!DNL Adobe Workfront]. Hay tres [!DNL Workfront for Experience Manager enhanced connector] Las funciones que necesitan suscripciones de evento para funcionar son las siguientes:
+AEM Las suscripciones a eventos se utilizan para notificar a los usuarios de eventos que tienen lugar en el [!DNL Adobe Workfront]. Hay tres [!DNL Workfront for Experience Manager enhanced connector] funciones que necesitan suscripciones de evento para funcionar, estas son:
 
 * Creación automática de carpetas vinculadas a proyectos.
 * Sincronización de cambios en los valores del formulario personalizado de documentos de Workfront AEM para crear metadatos de recursos de la aplicación
@@ -62,9 +62,9 @@ Para suscribirse a los eventos, siga estos pasos:
 1. Estructura de carpetas vinculadas: introduzca valores separados por comas. Cada valor debe ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Año, Nombre o algún &quot;Valor de cadena literal&quot; (este último con comillas). Actualmente está establecido en Portfolio, Programa, Año, DE: Tipo de proyecto, Nombre.
 1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, será el título de la última carpeta.
 1. Subcarpetas multicampo permite especificar una lista de carpetas que deben crearse como una carpeta secundaria de la carpeta vinculada.
-1. Estado del proyecto: seleccione el estado en el que debe configurarse el proyecto para crear la carpeta vinculada.
+1. Estado del proyecto: seleccione el estado del proyecto para crear la carpeta vinculada.
 1. Crear una carpeta vinculada en proyectos con portafolio: lista de Portfolio a los que debe pertenecer el proyecto para crear la carpeta vinculada. Deje esta lista vacía para crear la carpeta vinculada para todo el portafolio de proyectos.
-1. Crear una carpeta vinculada en proyectos con un campo de formulario personalizado: Campo de formulario personalizado y su valor correspondiente que el proyecto debe tener para crear la carpeta vinculada. Esta configuración se ignorará si se deja vacía. Seleccionar `CUSTOM FORMS: Create DAM Linked Folder` para campo y entrada `Yes` para el valor.
+1. Crear una carpeta vinculada en proyectos con un campo de formulario personalizado: Campo de formulario personalizado y su valor correspondiente que debe tener el proyecto para crear la carpeta vinculada. Esta configuración se ignorará si se deja vacía. Seleccionar `CUSTOM FORMS: Create DAM Linked Folder` para campo y entrada `Yes` para el valor.
 1. Haga clic en Habilitar la creación automática de carpetas vinculadas. Si vuelve a la pestaña Suscripciones de eventos, verá que ahora hay un evento de creación.
 
 ![configuración de carpeta vinculada](/help/assets/assets/wf-linked-folder-config.png)

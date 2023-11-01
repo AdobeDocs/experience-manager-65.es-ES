@@ -3,16 +3,16 @@ title: Pasos de actualización para instalaciones de Application Server
 description: AEM Obtenga información sobre cómo actualizar las instancias de los recursos implementados a través de los servidores de aplicaciones.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # Pasos de actualización para instalaciones de Application Server{#upgrade-steps-for-application-server-installations}
 
-AEM En esta sección se describe el procedimiento que debe seguirse para actualizar los parámetros de las instalaciones de Application Server para el servidor de aplicaciones (DAMs).
+AEM En esta sección se describe el procedimiento que debe seguirse para actualizar las instalaciones del servidor de aplicaciones en el servidor de aplicaciones de forma que se puedan actualizar los datos de la instalación de un servidor de aplicaciones.
 
 AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de aplicaciones e implican que ya tiene implementada una versión de trabajo de la aplicación de. El procedimiento está diseñado para documentar las actualizaciones realizadas desde **AEM Versión de 6.4 a 6.5**.
 
@@ -30,7 +30,7 @@ AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de ap
 
 1. AEM A continuación, anule la implementación de 6.4. Esto se puede hacer desde el Administrador de aplicaciones de TomCat (`http://serveraddress:serverport/manager/html`)
 
-1. Ahora, migre el repositorio con la herramienta de migración crx2oak. Para ello, descargue la última versión de crx2oak de [esta ubicación](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Ahora, migre el repositorio con la herramienta de migración crx2oak. Para ello, descargue la versión más reciente de crx2oak desde [esta ubicación](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
@@ -78,14 +78,14 @@ AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de ap
 
    * Añada la línea siguiente a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-      `customBlobStore=true`
+     `customBlobStore=true`
 
    * A continuación, añada las siguientes líneas a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
-      ```
-      path=./crx-quickstart/repository/datastore
-      minRecordLength=4096
-      ```
+     ```
+     path=./crx-quickstart/repository/datastore
+     minRecordLength=4096
+     ```
 
 1. AEM Ahora necesita cambiar los modos de ejecución en el archivo de guerra de la versión 6.5 de la. AEM Para ello, cree primero una carpeta temporal que aloje la guerra de la versión 6.5 de la. El nombre de la carpeta en este ejemplo es `temp`. Una vez copiado el archivo WAR, extraiga su contenido ejecutando desde la carpeta temporal:
 

@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2871'
-ht-degree: 94%
+source-wordcount: '2869'
+ht-degree: 95%
 
 ---
 
@@ -176,7 +176,7 @@ Para crear una nueva área:
 
 ## Creación de áreas como Live Copies {#creating-areas-as-live-copies}
 
-Puede crear un área como una Live Copy para heredar el contenido de destino en las estructuras del sitio.
+Cree una zona como una Live Copy para heredar el contenido de destino a través las estructuras de sitios.
 
 Para crear un área como una Live Copy, haga lo siguiente:
 

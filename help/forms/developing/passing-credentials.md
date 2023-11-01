@@ -2,9 +2,9 @@
 title: Pasar credenciales mediante encabezados WS-security
 description: Obtenga información sobre cómo pasar credenciales mediante encabezados WS-security
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '215'
 ht-degree: 5%
 
 ---
@@ -39,4 +39,3 @@ Para sacar el máximo partido a este documento, debe tener una comprensión sól
 >[!MORELIKETHIS]
 >
 >* [Pasar credenciales mediante encabezados WS-Security](assets/passing-credentials-using-ws-security-headers.pdf)
-

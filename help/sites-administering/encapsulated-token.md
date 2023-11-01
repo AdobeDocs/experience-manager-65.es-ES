@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---

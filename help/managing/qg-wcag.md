@@ -2,10 +2,10 @@
 title: Guía rápida de WCAG 2.1
 description: Guía rápida de las directrices de accesibilidad del contenido web (WCAG) versión 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 94%
+source-wordcount: '1777'
+ht-degree: 92%
 
 ---
 
@@ -42,7 +42,7 @@ es decir, las directrices que pueden aplicarse a una amplia gama de formatos de 
 Cada directriz está redactada de manera que pueda probarse de manera objetiva para garantizar que un grupo de expertos en accesibilidad esté de acuerdo en general con que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito.
 
 * Apoyar la **implementación contextual y priorizada:**
-Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia y/o exploradores específicos para beneficiarse de las características de accesibilidad.
+Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa o pueden requerir que los usuarios tengan tecnologías de asistencia o exploradores específicos para beneficiarse de las características de accesibilidad.
 
 Estos objetivos han influido de manera significativa en la estructura de WCAG 2.1.
 

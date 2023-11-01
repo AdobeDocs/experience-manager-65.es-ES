@@ -1,18 +1,14 @@
 ---
 title: AEM Reestructuración de repositorios de Sites en 6.5
-seo-title: Sites Repository Restructuring in AEM 6.5
-description: AEM Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.5 para sitios de.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Sites.
-uuid: 6dc5f8bd-1680-40af-9b8f-26c1f4bc3304
+description: AEM Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.5 de la versión para sitios de.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 1%
 
 ---
@@ -36,7 +32,6 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 * [Andamiaje de página](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Cuadrícula interactiva LESS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
 * [Diseños de plantilla estática](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
-
 <!-- Search&Promote is end-of-life September 1, 2022 * [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries) -->
 * [Bibliotecas de cliente de integración de Adobe Target](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
 * [Bibliotecas de cliente de WCM Foundation](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
@@ -53,7 +48,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Nueva ubicación(es)</strong></td>
-   <td><p><code>/apps/settings/wcm/segments</code> </p> <p><code>/conf/settings/settings/wcm/segments</code> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
+   <td><p><code>/apps/settings/wcm/segments</code><br /> </p> <p><code>/conf/settings/settings/wcm/segments</code><br /> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>

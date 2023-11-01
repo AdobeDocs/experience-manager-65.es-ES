@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3855'
-ht-degree: 99%
+source-wordcount: '3853'
+ht-degree: 98%
 
 ---
 
@@ -179,8 +179,6 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 
    * El valor predeterminado de un campo de variable numérica es *0 (cero)*. Pero se considera que la variable no está rellenada. Esto implica que el recuento de variables incluye todos los campos numéricos de variables con valor *0 (cero)*.
 
-
-
 #### Acciones e información disponibles en la pestaña Crear contenido de correspondencia {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
 **Área de destino**
@@ -293,7 +291,7 @@ Estas instancias solo se pueden guardar cuando la carta se ve en la instancia de
 
 Antes de publicar cartas o guardar borradores en la instancia de publicación, realice los siguientes pasos en las instancias de autor y publicación para habilitar la función Guardar como borrador:
 
-Las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* no se transfieren a la instancia de publicación de forma predeterminada. Para poder transmitir las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* para publicar instancias, deshabilite el componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para deshabilitar el componente, haga lo siguiente:
+Las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* no se transfieren a la instancia de publicación de forma predeterminada. Para transferir *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* propiedades para publicar la instancia, deshabilite la variable [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para deshabilitar el componente, haga lo siguiente:
 
 1. En la instancia de autor, abra la consola Componentes de la consola web de Adobe Experience Manager. La URL predeterminada es `http://author-server:port/system/console/components`
 

@@ -4,9 +4,9 @@ description: AEM Obtenga información sobre cómo realizar una actualización in
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---

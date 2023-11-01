@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Hay varias reglas que se deben seguir al cambiar el nombre del archivo jar de in
 
 Si está ejecutando Java 11 de Oracle AEM (o, por lo general, versiones de Java más recientes que la 8), se deberán agregar modificadores adicionales a la línea de comandos al iniciar la ejecución de un comando de.
 
-* Lo siguiente: `-add-opens` es necesario añadir modificadores para evitar que se produzcan mensajes de ADVERTENCIA de acceso a la reflexión relacionados en la `stdout.log`
+* Lo siguiente: `-add-opens` es necesario añadir modificadores para evitar la reflexión relacionada con los mensajes de ADVERTENCIA de acceso en la `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning

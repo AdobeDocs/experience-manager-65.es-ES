@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1489'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM Después de identificar cómo se utilizan los formularios de la, determine d
 
 >[!NOTE]
 >
->AEM Al igual que con cualquier otro aspecto de la implementación de los formularios de la aplicación, la estrategia de copia de seguridad y recuperación debe desarrollarse y probarse en un entorno de desarrollo o ensayo antes de utilizarse en la producción, a fin de garantizar que toda la solución funcione según lo esperado sin perder datos.
+>AEM Al igual que con cualquier otro aspecto de la implementación de los formularios de la aplicación, la estrategia de copia de seguridad y recuperación debe desarrollarse y probarse en un entorno de desarrollo o ensayo antes de utilizarse en la producción para garantizar que toda la solución funcione según lo esperado sin perder datos.
 
 Adobe Experience Manager AEM AEM () es una parte integral de los formularios de la. AEM AEM AEM AEM AEM AEM AEM Por lo tanto, también debe realizar una copia de seguridad de los formularios en sincronización con la copia de seguridad de formularios de la misma manera que la solución y los servicios de Administración de correspondencia, como el administrador de formularios, se basan en datos almacenados en parte de los formularios de la.Para evitar la pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios de forma que se garantice que el GDS y el repositorio (repositorio) se correlacionan con las referencias de la base de datos.Los directorios de la base de datos, el GDS, el GDS y la raíz de almacenamiento de contenido deben restaurarse en un equipo con el mismo nombre DNS que el original.
 

@@ -10,9 +10,9 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 4005e09349d22dbb70a7af378bed2a991ea7218d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '473'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ Consulte también [Incrustar el visualizador de imágenes o vídeos de Dynamic M
 
 >[!NOTE]
 >
->* Los recursos deben publicarse para poder usar la dirección URL. Si los recursos no se publican, no funcionará copiar y pegar la dirección URL en un explorador web.
+>* Los recursos deben publicarse para utilizar la dirección URL. Si los recursos no se publican, no funcionará copiar y pegar la dirección URL en un explorador web.
 >* Los ajustes preestablecidos de imagen y de visualizador se deben activar y publicar para la entrega en directo.
 >
 

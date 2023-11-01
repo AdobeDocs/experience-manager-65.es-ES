@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Si no necesita un flujo de trabajo o control de versiones para sus recursos, deb
 
 ### Configuración de la integración con Dynamic Media Classic Video {#configuring-integration-with-scene-video}
 
-1. Entrada **[!UICONTROL Cloud Services]**, vaya a su **[!UICONTROL Dynamic Media Classic]** y seleccione **[!UICONTROL Editar]**.
+1. Entrada **[!UICONTROL Cloud Service]**, vaya a su **[!UICONTROL Dynamic Media Classic]** y seleccione **[!UICONTROL Editar]**.
 1. Seleccione el **[!UICONTROL Vídeo]** pestaña.
 
    >[!NOTE]
@@ -117,6 +117,7 @@ La siguiente matriz explica cuándo debe utilizar qué componente:
 >[!NOTE]
 >
 >De forma predeterminada, el componente de vídeo de Dynamic Media Classic utiliza el perfil de vídeo universal. Sin embargo, puede obtener el reproductor de vídeo basado en HTML 5 para que lo utilice Experience Manager. En Dynamic Media Classic, copie el código incrustado del reproductor de vídeo HTML5 incorporado y colóquelo en la página del Experience Manager.
+>
 
 ## Componente de vídeo de Experience Manager {#aem-video-component}
 
@@ -126,7 +127,7 @@ Aunque se recomiende el uso del componente Vídeo de Dynamic Media Classic para 
 
 En la tabla siguiente se proporciona una comparación de alto nivel de las funciones compatibles entre el componente de vídeo de Experience Manager Foundation y el componente de vídeo de Dynamic Media Classic:
 
-|  | Vídeo de Experience Manager Foundation | Dynamic Media Classic Video |
+|   | Vídeo de Experience Manager Foundation | Dynamic Media Classic Video |
 |---|---|---|
 | Aproximación | Primer acercamiento de HTML 5. El Flash solo se utiliza para la reserva que no es de HTML 5. | Flash en la mayoría de los sobremesas. HTML5 se utiliza para móviles y tabletas. |
 | Entrega | Progresivo | Flujo adaptable |
@@ -173,7 +174,7 @@ El componente de vídeo de base debe saber qué perfiles de vídeo utilizar para
 
 >[!NOTE]
 >
->Los cambios realizados en el diseño requieren la activación del diseño para que surtan efecto en la publicación.
+>Los cambios realizados en el diseño requieren que su activación surta efecto en la publicación.
 
 1. Abra el cuadro de diálogo de diseño del componente de vídeo de base y cambie a **[!UICONTROL Perfiles]** pestaña. A continuación, elimine los perfiles predeterminados y agregue los nuevos perfiles de vídeo de Dynamic Media Classic. El orden de la lista de perfiles en el cuadro de diálogo de diseño también define el orden del elemento de fuentes de vídeo al procesar.
 1. En los exploradores que no admiten HTML5, el componente Vídeo permite configurar una reserva de flash. Abra el cuadro de diálogo de diseño de componentes de vídeo y cambie a **[!UICONTROL Flash]** pestaña. Configure los ajustes de Flash Player y asigne un perfil de reserva para Flash Player.

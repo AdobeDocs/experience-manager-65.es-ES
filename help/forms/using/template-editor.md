@@ -11,9 +11,9 @@ discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2042'
 ht-degree: 96%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 
@@ -195,7 +195,7 @@ Siga estos pasos para mostrar y ocultar plantillas:
 1. Busque y abra la **Configuración de FormsManager**:
 
    * Para mostrar u ocultar la plantilla de formularios adaptables preestablecida, marque o desmarque la casilla **Incluir plantillas predeterminadas AF y AD**.
-   * Para mostrar u ocultar las plantillas de formulario adaptables predeterminadas que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 Forms pero que ahora están en desuso, marque o desmarque la opción **Incluir plantillas AF de AEM 6.0**. Si esta opción está activada, para que tenga efecto, se requiere que la configuración **Incluir plantillas predeterminadas AF y AD** esté habilitada.
+   * Para mostrar u ocultar las plantillas de formulario adaptables predeterminadas que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 Forms pero que ahora están en desuso, marque o desmarque la opción **Incluir plantillas AF de AEM 6.0**. Si esta opción está activada, para que tenga efecto, se requiere la variable **Incluir plantillas predeterminadas AF y AD** para activar la configuración de.
 
 1. Haga clic en **Guardar**. Se cambian las opciones de visualización de las plantillas predeterminadas.
 

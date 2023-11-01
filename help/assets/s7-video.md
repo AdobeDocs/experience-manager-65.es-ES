@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Si no necesita un flujo de trabajo o control de versiones para sus recursos, cá
 
 ## Configuración de la integración con Scene7 Video {#configuring-integration-with-scene-video}
 
-1. Entrada **[!UICONTROL Cloud Services]**, vaya a su **[!UICONTROL Scene7]** y seleccione **[!UICONTROL Editar]**.
+1. Entrada **[!UICONTROL Cloud Service]**, vaya a su **[!UICONTROL Scene7]** y seleccione **[!UICONTROL Editar]**.
 1. Seleccione el **[!UICONTROL Vídeo]** pestaña.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -131,7 +131,7 @@ Aunque se recomiende el uso del componente de vídeo de Scene7 para ver vídeos 
 
 En la tabla siguiente se proporciona una comparación de alto nivel de las funciones compatibles entre el componente de vídeo de Experience Manager Foundation y el componente de vídeo de Scene7:
 
-|  | Vídeo de Experience Manager Foundation | Scene7 Video |
+|   | Vídeo de Experience Manager Foundation | Scene7 Video |
 |---|---|---|
 | Aproximación | Primer acercamiento de HTML 5. El Flash solo se utiliza para la reserva que no es de HTML 5. | Flash en la mayoría de los sobremesas. HTML5 se utiliza para móviles y tabletas. |
 | Entrega | Progresivo | Flujo adaptable |
@@ -177,7 +177,7 @@ El **[!UICONTROL Vídeo de base]** El componente debe saber qué perfiles de ví
 
 >[!NOTE]
 >
->Los cambios realizados en el diseño requieren la activación del diseño para que surtan efecto en la publicación.
+>Los cambios realizados en el diseño requieren que su activación surta efecto en la publicación.
 
 1. Abra el **[!UICONTROL Vídeo de base]** Cuadro de diálogo de diseño del componente y cambie a **[!UICONTROL Perfiles]** pestaña. A continuación, elimine los perfiles predeterminados y añada los nuevos perfiles de vídeo de S7. El orden de la lista de perfiles en el cuadro de diálogo de diseño define el orden del elemento de orígenes de vídeo al procesarse.
 1. En los exploradores que no admiten HTML5, el componente de vídeo permite configurar una reserva de Flash. Abra el cuadro de diálogo de diseño de componentes de vídeo y cambie a **[!UICONTROL Flash]** pestaña. Configure los ajustes del reproductor de Flash y asigne un perfil de reserva para el reproductor Flash.

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '10805'
+source-wordcount: '10801'
 ht-degree: 2%
 
 ---
@@ -899,7 +899,7 @@ Para poder agregar mediante programación un extremo de TaskManager, debe crear 
 
 **Crear una categoría para el extremo**
 
-Las categorías se utilizan para organizar los servicios en Workspace. Es decir, un usuario de Workspace puede invocar un servicio que tenga un extremo de TaskManager seleccionando una categoría en Workspace. Al crear un extremo de TaskManager, puede hacer referencia a una categoría existente o crear una nueva categoría mediante programación.
+Las categorías se utilizan para organizar los servicios en Workspace. Es decir, un usuario de Workspace puede invocar un servicio que tiene un punto de conexión de TaskManager seleccionando una categoría en Workspace. Al crear un extremo de TaskManager, puede hacer referencia a una categoría existente o crear una nueva categoría mediante programación.
 
 >[!NOTE]
 >
@@ -951,8 +951,8 @@ Agregar un extremo de TaskManager mediante la API de Java:
 
       * Un valor de cadena que especifica el valor de identificador de la categoría
       * Valor de cadena que especifica la descripción de la categoría
-   * Cree la categoría invocando el `EndpointRegistryClient` del objeto `createEndpointCategory` y pasando el `CreateEndpointCategoryInfo` objeto. Este método devuelve un `EndpointCategory` que representa la nueva categoría.
 
+   * Cree la categoría invocando el `EndpointRegistryClient` del objeto `createEndpointCategory` y pasando el `CreateEndpointCategoryInfo` objeto. Este método devuelve un `EndpointCategory` que representa la nueva categoría.
 
 1. Establecer atributos de extremo de TaskManager.
 
@@ -1071,8 +1071,8 @@ Modifique un extremo mediante la API de Java:
 
       * Un valor de cadena que especifica el nombre del valor de configuración. Por ejemplo, para establecer la variable `url` valor de configuración, especifique `url`.
       * Un valor de cadena que especifica el valor del valor de configuración. Para definir un valor para `url` valor de configuración, especifique la ubicación de la carpeta vigilada.
-   * Invoque el `EndpointRegistryClient` del objeto `modifyEndpoint` y pase el `ModifyEndpointInfo` objeto.
 
+   * Invoque el `EndpointRegistryClient` del objeto `modifyEndpoint` y pase el `ModifyEndpointInfo` objeto.
 
 **Consulte también**
 

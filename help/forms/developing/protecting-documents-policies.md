@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '15513'
+source-wordcount: '15485'
 ht-degree: 0%
 
 ---
@@ -353,7 +353,7 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 **Recuperar una política existente**
 
-Debe recuperar una directiva existente para poder modificarla. Para recuperar una directiva, especifique el nombre de la directiva y el conjunto de directivas al que pertenece. Si especifica un `null` valor para el nombre del conjunto de directivas, la directiva se recupera del *Mis directivas* conjunto de directivas.
+Debe recuperar una directiva existente para modificarla. Para recuperar una directiva, especifique el nombre de la directiva y el conjunto de directivas al que pertenece. Si especifica un `null` valor para el nombre del conjunto de directivas, la directiva se recupera del *Mis directivas* conjunto de directivas.
 
 **Establecer los atributos de la directiva**
 
@@ -744,7 +744,7 @@ Puede recuperar un documento de PDF protegido por una directiva para quitar una 
 
 **Quitar la directiva del documento de PDF**
 
-Puede quitar una directiva de un documento de PDF protegido por una directiva siempre que se especifique un administrador en la configuración de conexión. Si no es así, la directiva utilizada para proteger un documento debe contener la variable `SWITCH_POLICY` para quitar una directiva de un documento de PDF. Además, el usuario especificado en la configuración de conexión de AEM Forms también debe tener ese permiso. De lo contrario, se produce una excepción.
+Puede quitar una directiva de un documento de PDF protegido por una directiva siempre que se especifique un administrador en la configuración de conexión. Si no es así, la directiva utilizada para proteger un documento debe contener la variable `SWITCH_POLICY` permiso para quitar una directiva de un documento de PDF. Además, el usuario especificado en la configuración de conexión de AEM Forms también debe tener ese permiso. De lo contrario, se produce una excepción.
 
 **Guardar el documento de PDF no protegido**
 
@@ -2136,7 +2136,7 @@ Debe recuperar un documento de Word protegido por una directiva para quitar una 
 
 **Quitar la directiva del documento de Word**
 
-Puede quitar una directiva de un documento de Word protegido por una directiva siempre que se especifique un administrador en la configuración de conexión. Si no es así, la directiva utilizada para proteger un documento debe contener la variable `SWITCH_POLICY` para quitar una directiva de un documento de Word. Además, el usuario especificado en la configuración de conexión de AEM Forms también debe tener ese permiso. De lo contrario, se produce una excepción.
+Puede quitar una directiva de un documento de Word protegido por una directiva siempre que se especifique un administrador en la configuración de conexión. Si no es así, la directiva utilizada para proteger un documento debe contener la variable `SWITCH_POLICY` permiso para quitar una directiva de un documento de Word. Además, el usuario especificado en la configuración de conexión de AEM Forms también debe tener ese permiso. De lo contrario, se produce una excepción.
 
 **Guardar el documento de Word no protegido**
 

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7850'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -592,7 +592,7 @@ Este documento utiliza el término *aplicación nativa* para indicar la aplicaci
 1. Abrir el cuadro de diálogo Imprimir seleccionando Archivo > Imprimir
 1. Comprobación de que aparece el cuadro de diálogo Imprimir
 
-AppMon utiliza API estándar de Win32 para interactuar con aplicaciones de terceros con el fin de transferir eventos de interfaz de usuario como pulsaciones de teclas y clics del ratón, lo que resulta útil para controlar estas aplicaciones y producir archivos de PDF a partir de ellas.
+AppMon utiliza API estándar de Win32 para interactuar con aplicaciones de terceros y transferir eventos de interfaz de usuario, como pulsaciones de teclas y clics de mouse (ratón), lo que resulta útil para controlar estas aplicaciones y producir archivos PDF a partir de ellas.
 
 Debido a una limitación con estas API de Win32, AppMon no puede distribuir estos eventos de interfaz de usuario a algunos tipos específicos de ventanas, como barras de menú flotantes (que se encuentran en algunas aplicaciones como TextPad) y cierto tipo de cuadros de diálogo cuyo contenido no se puede recuperar mediante las API de Win32.
 
@@ -982,7 +982,7 @@ En este ejemplo se especifica cómo debe interactuar el servicio Generate PDF co
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. To see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

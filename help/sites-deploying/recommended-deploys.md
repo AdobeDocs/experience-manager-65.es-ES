@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 4%
+source-wordcount: '1782'
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ En esta situación, se ejecuta una sola instancia de TarMK en un solo servidor.
 
 Las ventajas:
 
-* Simple
+* Sencillo
 * Fácil mantenimiento
 * Buen rendimiento
 
@@ -136,7 +136,7 @@ La regla básica que debe tenerse en cuenta al elegir entre los dos micro núcle
 
 Puede utilizar estas matrices de decisión para establecer cuál es el mejor tipo de implementación que se adapta a sus necesidades.
 
-Adobe recomienda encarecidamente que TarMK sea la tecnología de persistencia predeterminada utilizada por los clientes en todos los escenarios de implementación, tanto para las instancias de autor de AEM como para las de publicación, excepto en los casos de uso descritos a continuación.
+Adobe AEM recomienda encarecidamente que TarMK sea la tecnología de persistencia predeterminada utilizada por los clientes en todos los escenarios de implementación, tanto para las instancias de autor de como de publicación, excepto en los casos de uso descritos a continuación.
 
 ### AEM Excepciones para elegir MongoMK en lugar de TarMK en instancias de autor {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
@@ -178,7 +178,7 @@ AEM Hay disponible un conjunto de requisitos previos y recomendaciones si está 
 **Requisitos previos obligatorios para implementaciones de MongoDB:**
 
 1. La arquitectura y el tamaño de la implementación de MongoDB deben formar parte de la implementación del proyecto con la ayuda de la asesoría de Adobe AEM o de arquitectos de MongoDB familiarizados con el uso de la tecnología de la base de datos de la plataforma de datos de la plataforma de datos de;
-1. La experiencia de MongoDB debe estar presente dentro del equipo del socio o del cliente para tener confianza en poder sostener y mantener un entorno de MongoDB existente o nuevo;
+1. La experiencia de MongoDB debe estar presente dentro del equipo del socio o cliente para tener confianza en poder mantener y mantener un entorno de MongoDB existente o nuevo;
 1. AEM Puede elegir implementar la versión comercial o de código abierto de MongoDB (admite ambas), pero debe adquirir un contrato de mantenimiento y soporte de MongoDB directamente de MongoDB Inc;
 1. AEM Las arquitecturas e infraestructuras generales y de MongoDB deben ser bien definidas y validadas por un arquitecto de Adobe AEM
 1. AEM Debe revisar el modelo de soporte para implementaciones de que incluyen MongoDB.
@@ -213,7 +213,7 @@ A continuación se muestra un conjunto de matrices de decisiones que pueden ayud
 >
 >MongoDB es software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la página [Directiva de licencias de MongoDB](https://www.mongodb.org/about/licensing/).
 >
->Para aprovechar al máximo su implementación de AEM, Adobe recomienda licenciar la versión de MongoDB Enterprise para beneficiarse del soporte profesional.
+>AEM Para aprovechar al máximo su implementación, Adobe recomienda licenciar la versión de MongoDB Enterprise para beneficiarse del soporte profesional.
 >
 >La licencia incluye un conjunto de réplicas estándar, que está compuesto por una instancia principal y dos secundarias que se pueden utilizar para las implementaciones de autor o publicación.
 >

@@ -12,9 +12,9 @@ discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '519'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Pattern Detector se libera por separado como [un paquete](https://experience.ado
 
 >[!NOTE]
 >
->Pattern Detector se puede ejecutar en cualquier entorno, incluidas las instancias de desarrollo locales. Sin embargo, con el fin de:
+>Pattern Detector se puede ejecutar en cualquier entorno, incluidas las instancias de desarrollo locales. Sin embargo, para:
 >
 >* aumentar la tasa de detección
 >* evitar cualquier ralentización en las instancias esenciales para el negocio

@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 29%
+source-wordcount: '2699'
+ht-degree: 36%
 
 ---
 
@@ -34,9 +34,9 @@ En esta sección se proporciona información sobre las configuraciones de despli
 >
 >Actualizar o cambiar una configuración de despliegue predeterminada (instalada) es **no** recomendado. Si hay algún requisito para una acción en directo personalizada, debe añadirse en una configuración de despliegue personalizada.
 
-### Desplegar Déclencheur {#rollout-triggers}
+### Activadores de despliegue {#rollout-triggers}
 
-Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace que se produzca el lanzamiento. Las configuraciones de despliegue pueden utilizar uno de los siguientes déclencheur:
+Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace que se produzca el lanzamiento. Las configuraciones de despliegue pueden utilizar uno de los siguientes activadores:
 
 * **En el despliegue**: La **Despliegue** El comando se utiliza en la página del modelo o en el **Sincronizar** se utiliza el comando en la página live copy.
 
@@ -94,7 +94,7 @@ AEM En la tabla siguiente se enumeran las opciones de configuración de desplieg
   </tr>
   <tr>
    <td>Promocionar lanzamiento</td>
-   <td>Configuración de lanzamiento estándar para promocionar páginas con dicho fin.</td>
+   <td>Configuración de despliegue estándar para promocionar páginas con dicho fin.</td>
    <td>En el despliegue</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> markLiveRelationship</td>
   </tr>
@@ -132,7 +132,7 @@ AEM En la tabla siguiente se enumeran las acciones de sincronización que se ins
 <table>
  <tbody>
   <tr>
-   <th>Nombre de acción</th>
+   <th>Nombre de la acción</th>
    <th>Descripción</th>
    <th>Propiedades<br /> </th>
   </tr>
@@ -162,7 +162,7 @@ AEM En la tabla siguiente se enumeran las acciones de sincronización que se ins
   </tr>
   <tr>
    <td>notificar</td>
-   <td>Envía un evento de página que indica que la página se ha desplegado. Para recibir notificaciones, primero debe suscribirse a eventos de lanzamiento.</td>
+   <td>Envía un evento de página que indica que la página se ha desplegado. Para recibir notificaciones, primero debe suscribirse a los eventos de lanzamiento.</td>
    <td> </td>
   </tr>
   <tr>
@@ -388,19 +388,19 @@ También puede configurar las opciones de configuración de despliegue para una 
 
 1. Si es necesario, ajuste la marca de **Herencia de Live Copy**. Si se selecciona, la configuración de la Live Copy es eficaz en todas las páginas secundarias.
 
-1. Borre la **Heredar configuración de despliegue del elemento principal** y, a continuación, seleccione una o varias configuraciones de despliegue de la lista.
+1. Borre la propiedad **Heredar configuración de despliegue del elemento principal** y, a continuación, seleccione una o varias opciones de configuración de despliegue de la lista.
 
    Las configuraciones de despliegue seleccionadas aparecen debajo de la lista desplegable.
 
    ![Configuraciones de despliegue seleccionadas](assets/chlimage_1-2.png)
 
-1. Haga clic o toque **Guardar**.
+1. Haga clic o pulse **Guardar**.
 
 ### Configuración de despliegue para una página de modelo {#setting-the-rollout-configuration-for-a-blueprint-page}
 
-Configure una página de modelo con las opciones de configuración de despliegue que se utilizarán cuando se implemente la página de modelo.
+Configure una página modelo con las configuraciones de despliegue que se usarán cuando se lance la página modelo.
 
-Tenga en cuenta que las páginas secundarias de la página de modelo heredan la configuración. Al configurar la configuración de despliegue para su uso, podría estar anulando la configuración que la página hereda de su elemento principal.
+Tenga en cuenta que las páginas secundarias de la página de modelo heredan la configuración. Al establecer la configuración de despliegue para su uso, se anula la configuración que la página hereda de su elemento principal.
 
 1. Utilice la consola **Sitios** para seleccionar la página de modelo.
 1. En la barra de herramientas, seleccione **Propiedades**.

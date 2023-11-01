@@ -1,18 +1,14 @@
 ---
 title: Modelo SPA
-seo-title: SPA Blueprint
-description: SPA SPA AEM En este documento se describe el contrato general independiente del marco que cualquier marco de trabajo de la debe cumplir para implementar componentes de la estructura editables dentro de los componentes de la.
-seo-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
-uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
+description: SPA SPA AEM En este documento se describe el contrato general independiente del marco que cualquier marco de trabajo de la debe cumplir para implementar componentes de editables dentro de la aplicación de la plataforma de trabajo de la.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2074'
 ht-degree: 1%
 
 ---
@@ -27,7 +23,7 @@ AEM SPA SPA SPA Para permitir que el autor use el Editor de de trabajo para edit
 
 ## Introducción {#introduction}
 
-SPA AEM SPA AEM En este documento se describe el contrato general que cualquier marco de trabajo debe cumplir (es decir, el tipo de capa de soporte de la) para implementar componentes de la editables dentro de la plataforma de trabajo.
+SPA AEM SPA AEM En este documento se describe el contrato general que cualquier marco de trabajo debe cumplir (es decir, el tipo de capa de soporte de la) para implementar componentes de la aplicación de la editables dentro de la plataforma de trabajo de la plataforma de la plataforma de trabajo de la plataforma.
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1248'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ En esta sección puede definir la URL de Content Update Server, la página de at
 
 **Versión de aplicación** es la versión de trabajo de la aplicación. La práctica recomendada habitual es utilizar una notación de 3 decimales y comenzar por debajo de 1.0.0 antes de la primera versión.
 
-**Versión de PhoneGap** es la versión en la que se desea compilar la aplicación con PhoneGap. La práctica recomendada es mantenerse al día con la versión actual para asegurarse de obtener las últimas y buenas funciones y correcciones de errores.
+**Versión de PhoneGap** es la versión en la que se desea compilar la aplicación con PhoneGap. La práctica recomendada es mantenerse al día con la versión actual para asegurarse de obtener las últimas y mejores funciones y correcciones de errores.
 
 **URL del servidor de actualización de contenido** es la dirección URL que la aplicación utilizará para solicitar actualizaciones de ContentSync. Se debe establecer en la dirección URL de Dispatcher o, si no se utiliza Dispatcher, en una de las instancias de publicación que se utilizará para publicar actualizaciones de ContentSync en la aplicación.
 
@@ -98,7 +98,7 @@ AEM AEM En el caso de las plataformas que no comprende el usuario, un desarrolla
 
 #### Metadatos de iOS {#ios-metadata}
 
-Apple AppStore requiere metadatos adicionales para enviar la solicitud para su distribución. La sección de metadatos de iOS intenta recopilar la información necesaria que puede utilizar la herramienta iTMSTransporter de Apple para publicar los metadatos en la cuenta del desarrollador de Apple asociado.
+Apple AppStore requiere metadatos adicionales para enviar la aplicación y distribuirlos. La sección de metadatos de iOS intenta recopilar la información necesaria que puede utilizar la herramienta iTMSTransporter de Apple para publicar los metadatos en la cuenta del desarrollador de Apple asociado.
 
 Para obtener los metadatos específicos de Apple, primero debe crear la aplicación en [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Al crear la aplicación, Apple genera los metadatos requeridos por la sección de metadatos de iOS si desea utilizar la herramienta Apple iTMSTransporter para validar y cargar los metadatos en itunesconnect.apple.com. Si solo desea obtener los metadatos que desea recopilar, no es necesario que rellene los metadatos específicos de iOS. Puede seguir exportando los metadatos que combinarán el iOS y los metadatos comunes, y recopilando todas las capturas de pantalla en un archivo zip que se puede descargar en cualquier momento.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4609'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Lucene registra un bean JMX que proporcionará detalles sobre el contenido index
 
 Puede acceder a ella desde la consola JMX en `https://server:port/system/console/jmx`
 
-Una vez que haya iniciado sesión en la consola JMX, realice una búsqueda de **Estadísticas de índice de Lucene** para poder encontrarlo. Se pueden encontrar otras estadísticas de índice en la **IndexStats** MBean.
+Una vez que haya iniciado sesión en la consola JMX, realice una búsqueda de **Estadísticas de índice de Lucene** para encontrarlo. Se pueden encontrar otras estadísticas de índice en la **IndexStats** MBean.
 
 Para estadísticas de consulta, observe el MBean denominado **Estadísticas de consulta de Oak**.
 

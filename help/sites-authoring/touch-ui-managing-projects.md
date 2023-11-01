@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 7%
+source-wordcount: '985'
+ht-degree: 23%
 
 ---
 
@@ -43,30 +43,30 @@ Siga estos pasos para crear un nuevo proyecto.
 
    ![Asistente de Creación de proyectos](assets/create-project-wizard.png)
 
-1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede agregar o eliminar usuarios y a qué grupo pertenecen.
+1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede añadir o eliminar usuarios y a qué grupo pertenecen.
 
    ![Paso Propiedades del asistente](assets/create-project-wizard-properties.png)
 
-1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el nuevo proyecto o volver a la consola.
+1. Toque o haga clic en **Crear**. La confirmación le solicitará si desea abrir el nuevo proyecto o volver a la consola.
 
 El procedimiento para crear un proyecto es el mismo para todas las plantillas de proyecto. La diferencia entre los tipos de proyectos se relaciona con los proyectos disponibles [funciones de usuario](/help/sites-authoring/projects.md) y [flujos de trabajo.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Asociación de recursos al proyecto {#associating-resources-with-your-project}
 
-Los proyectos permiten agrupar recursos en una entidad para administrarlos en su conjunto. Por lo tanto, debe asociar recursos al proyecto. Estos recursos se agrupan dentro del proyecto como **Mosaicos**. Los tipos de recursos que puede agregar se describen en [Mosaicos del proyecto](/help/sites-authoring/projects.md#project-tiles).
+Los proyectos permiten agrupar recursos en una entidad para administrarlos en su conjunto. Por lo tanto, debe asociar recursos al proyecto. Estos recursos se agrupan dentro del proyecto como **Mosaicos**. Los tipos de recursos que puede añadir se describen en [Mosaicos del proyecto](/help/sites-authoring/projects.md#project-tiles).
 
-Para asociar recursos al proyecto:
+Para asociar recursos al proyecto, haga lo siguiente:
 
-1. Abra el proyecto desde el **Proyectos** consola.
+1. Abra el proyecto desde la consola **Proyectos**.
 1. Pulse o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular a su proyecto. Puede seleccionar varios tipos de mosaicos.
 
    ![Agregar mosaico](assets/project-add-tile.png)
 
 1. Toque o haga clic en **Crear**. El recurso está vinculado al proyecto y, a partir de ahora, podrá acceder a él desde el proyecto.
 
-### Agregar elementos a un mosaico {#adding-items-to-a-tile}
+### Adición de elementos a un mosaico {#adding-items-to-a-tile}
 
-En algunos mosaicos, es posible que desee agregar más de un elemento. Por ejemplo, puede tener más de un flujo de trabajo ejecutándose a la vez o más de una experiencia.
+En algunos mosaicos, puede que desee añadir más de un elemento. Por ejemplo, puede tener más de un flujo de trabajo que se ejecuta al mismo tiempo o más de una experiencia.
 
 Para agregar elementos a un mosaico:
 
@@ -82,11 +82,11 @@ Para agregar elementos a un mosaico:
 
 El propósito principal de los proyectos es agrupar la información asociada en un solo lugar para que sea más accesible y procesable. Existen varias formas de acceder a esta información.
 
-### Abrir un mosaico {#opening-a-tile}
+### Apertura de un mosaico {#opening-a-tile}
 
 Es posible que desee ver qué elementos se incluyen en un mosaico actual o modificar o eliminar elementos en el mosaico.
 
-Para abrir un mosaico para poder ver o modificar elementos:
+Para abrir un mosaico para poder ver o modificar elementos, haga lo siguiente:
 
 1. Toque o haga clic en el icono de elipses en la parte inferior derecha del mosaico.
 

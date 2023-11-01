@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---

@@ -4,10 +4,10 @@ description: Este artículo presenta los conceptos de un SPA y explica cómo usa
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 70%
+source-wordcount: '1965'
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,7 @@ El tutorial se basa en la funcionalidad AEM estándar y en la aplicación de pro
 
 ### ¿Qué es una SPA? {#what-is-a-spa}
 
-SPA Una aplicación de una sola página () se diferencia de una página convencional en que se procesa en el lado del cliente y se basa principalmente en JavaScript, y depende de llamadas de Ajax para cargar datos y actualizar la página de forma dinámica. La mayoría o todo el contenido se recupera una vez en una carga de una sola página con recursos adicionales cargados asincrónicamente según sea necesario en función de la interacción del usuario con la página.
+Una aplicación de una sola página (SPA) difiere de una página convencional en que se procesa en el lado del cliente y principalmente está dirigida por JavaScript, y se basa en llamadas AJAX para cargar datos y actualizar la página de forma dinámica. La mayoría o todo el contenido se recupera una vez en una carga de una sola página con recursos adicionales cargados asincrónicamente según sea necesario en función de la interacción del usuario con la página.
 
 Esto reduce la necesidad de actualizaciones de la página y presenta al usuario una experiencia que es fluida, rápida y se parece más a una experiencia nativa de la aplicación.
 

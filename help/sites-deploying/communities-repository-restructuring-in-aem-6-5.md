@@ -1,18 +1,14 @@
 ---
 title: Reestructuración de repositorios para AEM Communities en 6.4
-seo-title: Repository Restructuring for AEM Communities in 6.4
-description: AEM Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.4 para comunidades de.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
-uuid: d161655f-4074-44a7-8d69-38e80934c58b
+description: AEM Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.4 para comunidades de la versión de la versión de.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1009'
 ht-degree: 3%
 
 ---
@@ -29,13 +25,13 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 **Antes de una actualización futura**
 
 * [Configuraciones de distintivos](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#badging-configurations)
-* [Diseños de consola de comunidades clásicas](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
+* [Diseños de consola de comunidades clásicos](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
 * [Configuraciones de inicio de sesión social de facebook](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
 * [Configuraciones de opciones de idioma](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#language-options-configurations)
 
 * [Configuraciones de inicio de sesión social de pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [Configuraciones de puntuación](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
-* [Configuraciones de inicio de sesión social de twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
+* [Twitter Configuraciones de inicio de sesión social](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [Varios](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Con actualización a 6.5 {#with-upgrade}
@@ -145,7 +141,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
  </tbody>
 </table>
 
-### Diseños de consola de comunidades clásicas {#classic-communities-console-designs}
+### Diseños de consola de comunidades clásicos {#classic-communities-console-designs}
 
 <table>
  <tbody>
@@ -187,7 +183,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol>
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Facebook AEM mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Services &gt; Configuración de inicio de sesión social de Facebook</strong>.<br /> o <br /> </li>
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Facebook AEM mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Facebook</strong>.<br /> o <br /> </li>
        <li>Copie cualquier configuración de nube de Facebook nueva de la ubicación anterior a la ubicación nueva correspondiente, en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Facebook estableciendo el <code>[cq:Page]/jcr:content@cq:conf</code> a la ruta absoluta en la Nueva ubicación.</li>
@@ -243,7 +239,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol>
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Pinterest AEM mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Services &gt; Configuración de inicio de sesión social de Pinterest</strong>.<br /> o</li>
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Pinterest AEM mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Pinterest</strong>.<br /> o</li>
        <li>Copie cualquier nueva configuración de nube de Pinterest de la ubicación anterior a la ubicación nueva correspondiente en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Pinterest mediante la configuración de <code>[cq:Page]/jcr:content@cq:conf</code> a la ruta absoluta en la Nueva ubicación.</li>
@@ -290,7 +286,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
  </tbody>
 </table>
 
-### Configuraciones de inicio de sesión social de twitter {#twitter-social-login-configurations}
+### Twitter Configuraciones de inicio de sesión social {#twitter-social-login-configurations}
 
 <table>
  <tbody>
@@ -309,8 +305,8 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol>
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Twitter AEM mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Services &gt; Configuración de inicio de sesión social de Twitter</strong>.<br /> o <br /> </li>
-       <li>Copie cualquier configuración de nube de Twitter nueva de la ubicación anterior a la ubicación nueva correspondiente, en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Twitter AEM a través de la IU de creación de en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Twitter</strong>.<br /> o <br /> </li>
+       <li>Copie cualquier nueva configuración de nube de Twitter de la ubicación anterior a la ubicación nueva correspondiente, en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Twitter estableciendo el <code>[cq:Page]/jcr:content@cq:conf</code> a la ruta absoluta en la Nueva ubicación.</li>
      <li>Desasocie el Cloud Service de Twitter Connect heredado de cualquier raíz del sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li>

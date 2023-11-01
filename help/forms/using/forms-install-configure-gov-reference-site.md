@@ -4,10 +4,10 @@ description: Instale, configure y personalice un paquete de demostración de AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4626'
-ht-degree: 66%
+source-wordcount: '4622'
+ht-degree: 64%
 
 ---
 
@@ -476,7 +476,7 @@ Revise lo siguiente antes de leer más instrucciones:
 
 #### Creación de una configuración de IMS, parte 1 {#creating-ims-config}
 
-Para que el servicio se comunique correctamente con la herramienta de conversión de formularios, los usuarios deben configurar el servicio Identity Management System (IMS) para poder registrarse en Adobe I/O.
+Para que el servicio se comunique correctamente con la herramienta de conversión de formularios, los usuarios deben configurar el servicio Identity Management System (IMS) para poder registrarse en el Adobe I/O.
 
 1. Vaya a https://&lt;aemserver>:&lt;port>. Haga clic en Adobe Experience Manager en la parte superior izquierda y luego en Herramientas > Seguridad > Configuración de Adobe IMS.
 
@@ -496,7 +496,7 @@ El certificado creado en esta sección se utilizará para crear el servicio de i
 
 #### Creación de la integración en Adobe I/O. {#create-integration-adobeio}
 
-Asegúrese de que puede crear una integración dentro del dominio de Adobe. En caso contrario, póngase en contacto con el administrador del sistema para hacerlo.
+Asegúrese de que puede crear una integración dentro del dominio de Adobe si no se pone en contacto con el administrador del sistema para hacerlo.
 
 1. Vaya a la [consola de Adobe I/O](https://developer.adobe.com/console/).
 
@@ -548,7 +548,7 @@ AEM Una vez completada la configuración de IMS, puede continuar con la revisió
 
 1. Abra el explorador y vaya a la URL del sistema https://&lt;domain_name>:&lt;system_port>.
 
-1. Haga clic en Adobe Experience Manager en la esquina superior izquierda de la pantalla > Herramientas > Cloud Services > Configuración de la conversación automatizada de Forms.
+1. Haga clic en Adobe Experience Manager en la esquina superior izquierda de la pantalla > Herramientas > Cloud Service > Configuración de la conversación automatizada de Forms.
 
 1. Seleccione la carpeta de configuración en la que desea colocar la configuración.
 
@@ -578,7 +578,7 @@ Una vez completada la configuración de IMS, podemos proceder a crear la configu
 
 1. Abra el explorador y vaya a la URL del sistema https://&lt;domain_name>:&lt;system_port>.
 
-1. Haga clic en Adobe Experience Manager en la esquina superior izquierda de la pantalla > Herramientas > Cloud Services > Configuración de la conversación automatizada de Forms.
+1. Haga clic en Adobe Experience Manager en la esquina superior izquierda de la pantalla > Herramientas > Cloud Service > Configuración de la conversación automatizada de Forms.
 
 1. Seleccione la carpeta de configuración en la que desea colocar la configuración.
 

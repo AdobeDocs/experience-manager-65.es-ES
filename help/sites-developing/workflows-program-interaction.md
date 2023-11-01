@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -248,7 +248,7 @@ Donde `*{uri}*` es la ruta al nodo del modelo en el repositorio.
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>Elimina el modelo. Para resolver los problemas de servidor de seguridad/proxy, <code>POST</code> que contiene un <code>X-HTTP-Method-Override</code> entrada de encabezado con valor <code>DELETE</code> también se aceptarán como <code>DELETE</code> solicitud.</td>
+   <td>Elimina el modelo. Para resolver los problemas de servidor de seguridad/proxy <code>POST</code> que contiene un <code>X-HTTP-Method-Override</code> entrada de encabezado con valor <code>DELETE</code> también se aceptarán como <code>DELETE</code> solicitud.</td>
   </tr>
  </tbody>
 </table>

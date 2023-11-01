@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3837'
 ht-degree: 8%
 
 ---
@@ -206,7 +206,6 @@ El tamaño de la miniatura se define en el siguiente formato: **[!UICONTROL anch
 >* Los tamaños de miniatura de los vídeos se configuran en la variable **[!UICONTROL Miniaturas FFmpeg]** paso, en el **[!UICONTROL Proceso]** pestaña debajo de **[!UICONTROL Argumentos]**.
 >
 
-
 **Para configurar el tamaño de la miniatura:**
 
 1. Tocar **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL Recurso de actualización DAM]** > **[!UICONTROL Editar]**.
@@ -286,7 +285,7 @@ Si los deja en blanco, el Experience Manager verá que este ajuste preestablecid
 
 >[!NOTE]
 >
->Para poder ver la **[!UICONTROL URL]** y **[!UICONTROL RESS]** botones al aplicar un ajuste preestablecido de imagen a un recurso, este debe publicarse.
+>Para ver los botones **[!UICONTROL URL]** y **[!UICONTROL RESS]** al aplicar un ajuste preestablecido de imagen a un recurso, este debe publicarse.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -334,7 +333,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <strong>Cuantificación de color GIF</strong> opciones:
     </div>
     <ul>
-     <li><strong>Tipo </strong>- Seleccionar <strong>Adaptable</strong> (el valor predeterminado), <strong>Web</strong>, o <strong>Macintosh</strong>. Si selecciona <strong>GIF con alfa</strong>, la opción Macintosh no está disponible.</li>
+     <li><strong>Tipo </strong>- Seleccionar <strong>Adaptable</strong> (el valor predeterminado), <strong>Web</strong>, o <strong>Macintosh</strong>. Si selecciona <strong>GIF con Alpha</strong>, la opción Macintosh no está disponible.</li>
      <li><strong>Tramado</strong> - Seleccionar <strong>Difuso</strong> o <strong>Desactivado</strong>.</li>
      <li><strong>Número de colores </strong>: introduzca un número del 2 al 256.</li>
      <li><strong>Lista de colores</strong> : introduzca una lista separada por comas. Por ejemplo, para blanco, gris y negro, escriba <code>000000,888888,ffffff</code>.</li>
@@ -346,8 +345,8 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <strong>TIFF con alfa</strong> proporciona esta opción adicional:
     </div>
     <ul>
-     <li><strong>Compresión</strong> - Seleccione un algoritmo de compresión. Las opciones de algoritmo para el PDF son <strong>Ninguno</strong>, <strong>Zip</strong>, y <strong>Jpeg</strong>; para el TIFF, las opciones son <strong>Ninguno</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, y <strong>Zip</strong>; y para TIFF con alfa son <strong>Ninguno</strong>, <strong>LZW</strong>, y <strong>Zip</strong>.</li>
-    </ul> <p>Elección <strong>PNG</strong>, <strong>PNG con alfa,</strong> o <strong>EPS</strong> no proporciona opciones adicionales.</p> </td>
+     <li><strong>Compresión</strong> - Seleccione un algoritmo de compresión. Las opciones de algoritmo para el PDF son <strong>Ninguno</strong>, <strong>Zip</strong>, y <strong>Jpeg</strong>; para el TIFF, las opciones son <strong>Ninguno</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, y <strong>Zip</strong>; y para TIFF con Alpha son <strong>Ninguno</strong>, <strong>LZW</strong>, y <strong>Zip</strong>.</li>
+    </ul> <p>Elección <strong>PNG</strong>, <strong>PNG con Alpha,</strong> o <strong>EPS</strong> no proporciona opciones adicionales.</p> </td>
   </tr>
   <tr>
    <td><strong>Enfoque</strong></td>
@@ -453,43 +452,43 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - Invierte cada componente de color para un efecto de imagen negativo.
 
-   ```xml
-   &op_invert=1
-   ```
+  ```xml
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) - Aplica un filtro de desenfoque a la imagen.
 
-   ```xml
-   &op_blur=7
-   ```
+  ```xml
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * Comandos combinados - op_blur y op-invert
 
-   ```xml
-   &op_invert=1&op_blur=7
-   ```
+  ```xml
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [op_bright](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) - Reduce o aumenta el brillo.
 
-   ```xml
-   &op_brightness=58
-   ```
+  ```xml
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-bright](assets/6_5_imagepreset-edit-brightness.png)
 
 * [opaco](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) - Ajusta la opacidad de la imagen. Permite reducir la opacidad en primer plano.
 
-   ```xml
-   opac=29
-   ```
+  ```xml
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ## Edición de ajustes preestablecidos de imagen {#modifying-image-presets}
 

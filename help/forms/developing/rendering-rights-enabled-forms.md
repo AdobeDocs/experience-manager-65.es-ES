@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1457'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 El servicio Forms puede procesar formularios a los que se les han aplicado derechos de uso. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Las Forms a las que se les han aplicado derechos de uso se denominan formularios con derechos activados. Un usuario que abre un formulario con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese formulario.
 
-Para aplicar derechos de uso a un formulario, el servicio de extensiones de Acrobat Reader DC AEM debe formar parte de la instalación de los formularios de. Además, debe tener una credencial válida que le permita aplicar derechos de uso a documentos de PDF. Es decir, debe configurar correctamente el servicio de extensiones de Acrobat Reader DC para poder procesar un formulario con los derechos activados. (Consulte [Acerca del servicio Acrobat Reader DC extensions](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Para aplicar derechos de uso a un formulario, el servicio de extensiones de Acrobat Reader DC AEM debe formar parte de la instalación de los formularios de la aplicación de la aplicación de la aplicación de la aplicación de la. Además, debe tener una credencial válida que le permita aplicar derechos de uso a documentos de PDF. Es decir, debe configurar correctamente el servicio de extensiones de Acrobat Reader DC para poder procesar un formulario con los derechos activados. (Consulte [Acerca del servicio Acrobat Reader DC extensions](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
 >[!NOTE]
 >

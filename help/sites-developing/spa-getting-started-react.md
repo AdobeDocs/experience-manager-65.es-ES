@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1164'
 ht-degree: 5%
 
 ---
@@ -44,7 +44,7 @@ SPA AEM Para obtener más información sobre cómo funcionan los en la, consulte
 
 >[!NOTE]
 >
->SPA AEM Para poder crear contenido dentro de un elemento de contenido, el contenido debe almacenarse en el elemento de contenido y ser expuesto por el modelo de contenido de, lo que se debe almacenar en el elemento de contenido de un elemento de contenido.
+>SPA AEM Para poder crear contenido dentro de un elemento de contenido, el contenido debe almacenarse en el elemento de contenido y ser expuesto por el modelo de contenido de, lo que hace que el contenido se almacene en el elemento de contenido.
 >
 >SPA AEM Una desarrollada fuera de la no será legible si no respeta el contrato del modelo de contenido.
 

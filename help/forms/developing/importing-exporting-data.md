@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2774'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Para importar datos en un formulario de PDF, debe hacer referencia a un formular
 
 **Hacer referencia a una fuente de datos XML**
 
-Para importar datos de formulario, debe hacer referencia a una fuente de datos válida. Para importar datos en un formulario XML XFA creado en Designer, debe utilizar una fuente de datos XML XDP. Si hace referencia a un formulario de Acrobat, debe utilizar una fuente de datos XFDF. Para cada campo en el que desee importar datos, se debe especificar un valor. Si un elemento ubicado en la fuente de datos XML no se corresponde con un campo del formulario, el elemento se ignora.
+Para importar datos de formulario, debe hacer referencia a un origen de datos válido. Para importar datos en un formulario XML XFA creado en Designer, debe utilizar una fuente de datos XML XDP. Si hace referencia a un formulario de Acrobat, debe utilizar una fuente de datos XFDF. Para cada campo en el que desee importar datos, se debe especificar un valor. Si un elemento ubicado en la fuente de datos XML no se corresponde con un campo del formulario, el elemento se ignora.
 
 **Importación de datos en el formulario de PDF**
 

@@ -2,10 +2,10 @@
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 95%
+source-wordcount: '3038'
+ht-degree: 94%
 
 ---
 
@@ -87,7 +87,7 @@ Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabez
 
 AEM admite todos los modelos sin encabezado y los modelos tradicionales de pila completa o sin encabezado de un CMS. Sin embargo, AEM ofrece no solo estas dos opciones exclusivas, sino también la capacidad de soportar modelos híbridos que combinan las ventajas de ambos, ofreciendo una flexibilidad única para su proyecto sin encabezado.
 
-Con el fin de garantizar su comprensión de los conceptos sin encabezado, este Recorrido para desarrolladores sin periféricos de AEM se centra en el modelo sin periféricos para ponerlo en marcha lo antes posible sin necesidad de utilizar codificación en AEM.
+Para garantizar su comprensión de los conceptos sin encabezado, este Recorrido para desarrolladores sin encabezado de AEM se centra en el modelo sin encabezado para ponerlo en marcha lo antes posible sin necesidad de utilizar codificación en AEM.
 
 Sin embargo, hay que tener en cuenta las posibilidades híbridas adicionales que se abren una vez que entienda las características sin encabezado de AEM. Para su información, estos casos se detallan a continuación. Al final del recorrido, se le presentarán estos conceptos con más detalle en caso de que se requiera dicha flexibilidad para su proyecto.
 
@@ -195,7 +195,7 @@ Las carpetas también se pueden restringir para permitir solo ciertos tipos de c
 * Evita que los autores de contenido creen contenido que no pertenece a la carpeta.
 * Optimiza el proceso de creación de contenido filtrando los tipos de contenido permitidos en la carpeta durante la creación para mostrar solo tipos de contenido válidos.
 
-Al crear una estructura de contenido adecuada, resulta más fácil coordinar la creación de contenido sin encabezado en todos los canales para maximizar la reutilización del contenido. El aprovechamiento del contenido en varios canales mejora considerablemente la eficacia de la producción de contenido y la administración de cambios.
+Al crear una estructura de contenido adecuada, resulta más fácil coordinar la creación de contenido sin encabezado entre canales para maximizar la reutilización del contenido. El aprovechamiento del contenido en varios canales mejora considerablemente la eficacia de la producción de contenido y la administración de cambios.
 
 ##### Establecimiento de convenciones de nombres adecuados {#naming-conventions}
 

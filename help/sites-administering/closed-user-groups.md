@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6854'
+source-wordcount: '6836'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ Dado que se espera que este tipo de requisito de autenticación se limite a cier
 
 AEM La configuración predeterminada de la ahora utiliza esta configuración para permitir establecer la mezcla en el modo de ejecución de autor, pero solo hacer que tenga efecto tras la replicación en la instancia de publicación. Consulte [esta página](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) para obtener más información sobre cómo Sling aplica el requisito de autenticación.
 
-Añadir el `granite:AuthenticationRequired` El tipo de mezcla dentro de las rutas admitidas configuradas hará que el registro OSGi del controlador responsable se actualice y contenga una entrada nueva y adicional con el `sling.auth.requirements` propiedad. Si un requisito de autenticación determinado especifica lo opcional `granite:loginPath` , el valor se registra adicionalmente con el autenticador con un prefijo &quot;-&quot; para que se excluya del requisito de autenticación.
+Añadir el `granite:AuthenticationRequired` El tipo de mezcla dentro de las rutas admitidas configuradas hará que el registro OSGi del controlador responsable se actualice y contenga una entrada nueva y adicional con el `sling.auth.requirements` propiedad. Si un requisito de autenticación determinado especifica lo opcional `granite:loginPath` , el valor se registra adicionalmente con el autenticador con un prefijo &quot;-&quot; que se excluirá del requisito de autenticación.
 
 #### Evaluación y herencia del requisito de autenticación {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -776,7 +776,7 @@ El objetivo de esta sección es proporcionar una visión general de los cambios 
 
 ### Diferencias en la configuración y configuración de CUG {#differences-in-cug-setup-and-configuration}
 
-El componente OSGi obsoleto **Soporte de Adobe Granite Closed User Group (CUG)** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) se ha sustituido por nuevos componentes para poder gestionar por separado las partes relacionadas con la autorización y la autenticación de la antigua funcionalidad de CUG.
+El componente OSGi obsoleto **Soporte de Adobe Granite Closed User Group (CUG)** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) se ha sustituido por nuevos componentes para poder gestionar por separado las partes relacionadas con la autorización y la autenticación de la funcionalidad anterior de CUG.
 
 ## Diferencias en la gestión de CUG en el contenido del repositorio {#differences-in-managing-cugs-in-the-repository-content}
 
@@ -794,7 +794,7 @@ Con la nueva implementación, la configuración de control de acceso del modelo 
 
 **Edición de directivas de CUG en la administración de control de acceso**
 
-Este cambio de las propiedades JCR residuales a una política de control de acceso dedicada afecta al permiso necesario para crear o modificar la parte de autorización de la función CUG. Dado que esto se considera una modificación del contenido de control de acceso, requiere lo siguiente `jcr:readAccessControl` y `jcr:modifyAccessControl` privilegios para que se escriban en el repositorio. Por lo tanto, solo los autores de contenido con derecho a modificar el contenido de control de acceso de una página pueden configurar o modificar este contenido. Esto contrasta con la implementación antigua, en la que la capacidad para escribir propiedades JCR normales era suficiente, lo que daba como resultado una escalación de privilegios.
+Este cambio de las propiedades JCR residuales a una política de control de acceso dedicada afecta al permiso necesario para crear o modificar la parte de autorización de la función CUG. Dado que esto se considera una modificación del contenido de control de acceso, requiere lo siguiente `jcr:readAccessControl` y `jcr:modifyAccessControl` privilegios que se escribirán en el repositorio. Por lo tanto, solo los autores de contenido con derecho a modificar el contenido de control de acceso de una página pueden configurar o modificar este contenido. Esto contrasta con la implementación antigua, en la que la capacidad para escribir propiedades JCR normales era suficiente, lo que daba como resultado una escalación de privilegios.
 
 **Nodo De Destino Definido Por La Directiva**
 
@@ -870,7 +870,7 @@ AEM Para la instalación actualizada de la, es importante asegurarse de que solo
 
 ### Migración del contenido de CUG existente {#migrating-existing-cug-content}
 
-El Adobe proporciona una herramienta para migrar a la nueva implementación de CUG. Para utilizarlo, realice los siguientes pasos:
+El Adobe proporciona una herramienta para migrar a la nueva implementación de CUG. Para usarlo, realice los siguientes pasos:
 
 1. Ir a `https://<serveraddress>:<serverport>/system/console/cug-migration` para acceder a la herramienta.
 1. Introduzca la ruta raíz para la que desea comprobar los CUG y pulse el botón **Realizar simulacro** botón. Esto buscará los CUG aptos para la conversión en la ubicación seleccionada.

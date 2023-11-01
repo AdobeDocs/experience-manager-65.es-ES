@@ -2,13 +2,13 @@
 sub-product: AEM Documentation Journeys
 user-guide-title: Recorridos de documentación de AEM
 breadcrumb-title: Recorridos de documentación de AEM
-user-guide-description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de la documentación de AEM al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
+user-guide-description: Los Recorrido AEM de documentación proporcionan una estructura narrativa dentro de la documentación de la documentación de al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 53%
+source-wordcount: '527'
+ht-degree: 48%
 
 ---
 

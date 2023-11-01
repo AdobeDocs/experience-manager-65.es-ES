@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3926'
+source-wordcount: '3918'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ Para realizar mediante programación una operación de servicio de extensiones d
 
 **Recuperación de un documento de PDF**
 
-Debe recuperar un documento de PDF para aplicar los derechos de uso. Los documentos de PDF con derechos activados contienen un diccionario de derechos de uso. Cuando Adobe Reader abre un documento que contiene dicho diccionario, solo habilita los derechos de uso especificados en el diccionario para ese documento. Si el documento no contiene un diccionario de derechos de uso, el servicio de extensiones de Acrobat Reader DC crea uno. Si ya contiene un diccionario, el servicio de extensiones de Acrobat Reader DC sobrescribe los derechos de uso existentes con los especificados. El diccionario especifica qué derechos de uso están habilitados. Cuando un usuario abre el documento en Adobe Reader, solo se permiten los derechos de uso especificados en el diccionario.
+Debe recuperar un documento de PDF para aplicar derechos de uso. Los documentos de PDF con derechos activados contienen un diccionario de derechos de uso. Cuando Adobe Reader abre un documento que contiene dicho diccionario, solo habilita los derechos de uso especificados en el diccionario para ese documento. Si el documento no contiene un diccionario de derechos de uso, el servicio de extensiones de Acrobat Reader DC crea uno. Si ya contiene un diccionario, el servicio de extensiones de Acrobat Reader DC sobrescribe los derechos de uso existentes con los especificados. El diccionario especifica qué derechos de uso están habilitados. Cuando un usuario abre el documento en Adobe Reader, solo se permiten los derechos de uso especificados en el diccionario.
 
 **Especificar los derechos de uso que aplicar**
 
@@ -128,11 +128,13 @@ Aplique derechos de uso a un documento de PDF mediante la API de extensiones de 
 
       * El `UsageRights` que contiene los derechos de uso que se aplicarán al documento.
       * Valor de cadena que especifica un mensaje que ve un usuario cuando se abre el documento de PDF con derechos habilitados en Adobe Reader 7.x. Este mensaje no se muestra en Adobe Reader 8.0.
+
    * Aplicar derechos de uso al documento de PDF invocando el `ReaderExtensionsServiceClient` del objeto `applyUsageRights` y pasando los siguientes valores:
 
       * El `com.adobe.idp.Document` que contiene el documento del PDF al que se aplican los derechos de uso.
       * Valor de cadena que especifica el alias de la credencial que le permite aplicar derechos de uso.
       * Un valor de cadena que especifica el valor de contraseña correspondiente. (Actualmente este parámetro se ignora. Puedes pasar `null`.)
+
    * El `ReaderExtensionsOptionSpec` que contiene opciones en tiempo de ejecución.
 
    El `applyUsageRights` El método devuelve un valor `com.adobe.idp.Document` que contiene el documento de PDF con derechos activados.
@@ -200,6 +202,7 @@ Aplicar derechos de uso a un documento de PDF mediante la API de extensiones de 
       * El `BLOB` que contiene el documento del PDF al que se aplican los derechos de uso.
       * Valor de cadena que especifica el alias de la credencial que le permite aplicar derechos de uso.
       * Un valor de cadena que especifica el valor de contraseña correspondiente. (Actualmente este parámetro se ignora. Puedes pasar `null`.)
+
    * El `ReaderExtensionsOptionSpec` que contiene opciones en tiempo de ejecución.
 
    El `applyUsageRights` El método devuelve un valor `BLOB` que contiene el documento de PDF con derechos activados.

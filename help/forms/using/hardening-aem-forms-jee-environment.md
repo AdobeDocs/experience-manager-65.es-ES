@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7669'
+source-wordcount: '7667'
 ht-degree: 97%
 
 ---
@@ -745,7 +745,7 @@ Incluya el argumento JAVA `-Dlc.um.csrffilter.disabled=true` en el script de ini
 
 **Filtrado de referentes para archivos WAR personalizados**
 
-Es posible que haya creado archivos WAR personalizados para trabajar con AEM Forms en JEE con el fin de satisfacer sus necesidades empresariales. Para habilitar el filtrado de referentes para los archivos WAR personalizados, incluya ***adobe-usermanager-client.jar*** en la ruta de clase del archivo WAR y agregue una entrada de filtro en el archivo *web.xml* con los siguientes parámetros:
+Es posible que haya creado archivos WAR personalizados para trabajar con AEM Forms en JEE y satisfacer así sus necesidades empresariales. Para habilitar el filtrado de referentes para los archivos WAR personalizados, incluya ***adobe-usermanager-client.jar*** en la ruta de clase del archivo WAR y agregue una entrada de filtro en el archivo *web.xml* con los siguientes parámetros:
 
 **CSRF_CHECK_GETS** controla la comprobación del referente en las peticiones GET. Si no se define este parámetro, el valor predeterminado se establece en False. Incluya este parámetro únicamente si desea filtrar las peticiones GET.
 

@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '10243'
+source-wordcount: '10239'
 ht-degree: 0%
 
 ---

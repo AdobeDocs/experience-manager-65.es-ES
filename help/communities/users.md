@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1916'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Para un [publicar conjunto de servidores](topologies.md), el registro y las modi
 
 ### Límites de contribución {#contribution-limits}
 
-Para protegerse contra el spam, es posible limitar la frecuencia de los miembros que publican contenido. Además, es posible limitar automáticamente las contribuciones de los miembros recién registrados.
+Para protegerse contra el correo no deseado, es posible limitar la frecuencia de publicación de contenido por parte de los miembros. Además, es posible limitar automáticamente las contribuciones de los miembros recién registrados.
 
 Para obtener más información, consulte [Límites de contribución de miembros](limits.md).
 
@@ -239,8 +239,8 @@ Cuando se tratan los grupos, hay dos temas distintos:
 
 * **[Grupos de comunidad](overview.md#communitygroups)**
 
-   Los grupos de comunidad son las subcomunidades que se pueden crear en el entorno de publicación para un sitio de comunidad que apoye la creación de grupos de comunidad. La creación de un grupo de comunidad resulta en más páginas agregadas al sitio web y se administran de una manera similar a su sitio de comunidad principal. Para obtener más información, visite [Elementos esenciales del grupo de comunidad](essentials-groups.md) para desarrolladores y [Grupo de comunidad](creating-groups.md) para autores.
+  Los grupos de comunidad son las subcomunidades que se pueden crear en el entorno de publicación para un sitio de comunidad que apoye la creación de grupos de comunidad. La creación de un grupo de comunidad resulta en más páginas agregadas al sitio web y se administran de una manera similar a su sitio de comunidad principal. Para obtener más información, visite [Elementos esenciales del grupo de comunidad](essentials-groups.md) para desarrolladores y [Grupo de comunidad](creating-groups.md) para autores.
 
 * **[Grupos de miembros](../../help/sites-administering/security.md)**
 
-   Los grupos de miembros son los grupos a los que pueden pertenecer los miembros y se administran mediante la consola Grupos. Gran parte del debate de esta página se ha dedicado a los grupos de miembros. Los grupos de miembros creados automáticamente para un sitio de la comunidad, que llevan el prefijo *`Community`*, puede denominarse grupo comunitario, por lo que debe considerarse el contexto de la discusión.
+  Los grupos de miembros son los grupos a los que pueden pertenecer los miembros y se administran mediante la consola Grupos. Gran parte del debate de esta página se ha dedicado a los grupos de miembros. Los grupos de miembros creados automáticamente para un sitio de la comunidad, que llevan el prefijo *`Community`*, puede denominarse grupo comunitario, por lo que debe considerarse el contexto de la discusión.

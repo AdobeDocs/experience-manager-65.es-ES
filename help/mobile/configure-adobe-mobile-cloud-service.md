@@ -11,9 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ AEM Mosaico de métricas del centro de comandos
 
 Para aprovechar Adobe Mobile Services Analytics, debe configurar el servicio de AEM Mobile Analytics Cloud con la información de su cuenta de Adobe Analytics.
 
-1. Haga clic en el icono de la parte superior derecha para añadir o editar los Cloud Services del **Administración de Cloud Services** del tablero de la aplicación.
+1. Haga clic en el icono superior derecho para añadir o editar los Cloud Service del **Administración de Cloud Service** del tablero de la aplicación.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. El **Añadir o editar Cloud Services** se muestra. Seleccionar **Adobe Mobile Services** y haga clic en **Siguiente**.
+1. El **Añadir o editar Cloud Service** se muestra. Seleccionar **Adobe Mobile Services** y haga clic en **Siguiente**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Siga estos pasos para configurar la depuración del registro de auditoría:
    >La ruta de contenido solo se aplica a los elementos secundarios del `/var/audit/com.day.cq.wcm.core.page` en el repositorio.
 
 1. Guarde la regla.
-1. La regla que acaba de crear debe exponerse en el tablero de operaciones para que se ejecute. Para hacer esto, vaya a **Herramientas - Operaciones - Mantenimiento** AEM en la pantalla de bienvenida de la.
+1. La regla que acaba de crear debe exponerse en el tablero de operaciones para que se ejecute. Para ello, vaya a **Herramientas - Operaciones - Mantenimiento** AEM en la pantalla de bienvenida de la.
 
 1. Pulse el botón **Ventana de mantenimiento semanal** Tarjeta de.
 

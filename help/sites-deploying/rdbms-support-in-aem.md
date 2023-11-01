@@ -12,9 +12,9 @@ discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ AEM Para que funcione, es necesario configurar una fuente de datos con la opció
 
 Para ver los pasos sobre la creación de paquetes OSGi para controladores JDBC, consulte esto [documentación](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) en el sitio web de Apache Sling.
 
-AEM Una vez que los paquetes estén en su lugar, siga los siguientes pasos para configurar la persistencia de la RDB en la configuración de la:
+AEM Una vez que los paquetes estén en su lugar, siga los siguientes pasos para configurar la con persistencia de RDB:
 
 1. AEM Asegúrese de que se ha iniciado el daemon de base de datos y de que dispone de una base de datos activa para su uso con el servicio de base de datos de.
 1. AEM Copie el JAR de la versión 6.3 de la en el directorio de instalación.
@@ -57,6 +57,7 @@ AEM Una vez que los paquetes estén en su lugar, siga los siguientes pasos para 
 1. Configure la fuente de datos y los parámetros JDBC creando otro archivo de configuración con el siguiente nombre en la `crx-quickstart\install` carpeta:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
+
    >[!NOTE]
    >
    >Para obtener información detallada sobre la configuración de la fuente de datos de cada base de datos admitida, consulte [Opciones de configuración de fuente de datos](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
