@@ -5,13 +5,13 @@ sub-product: Edge Delivery Services
 audience: end-user
 user-guide-title: Edge Delivery Services
 breadcrumb-title: Edge Delivery Services
-user-guide-description: Obtenga más información sobre los servicios de envío de Edge, un conjunto de servicios que admite composición que permite un entorno de desarrollo rápido en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos sitios se inician rápidamente.
+user-guide-description: Obtenga más información acerca de los servicios de entrega perimetral (EDS), un conjunto de servicios componibles que permite un entorno de desarrollo rápido en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos sitios se inician rápidamente.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 93%
+source-wordcount: '48'
+ht-degree: 29%
 
 ---
 

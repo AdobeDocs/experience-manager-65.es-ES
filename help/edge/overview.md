@@ -1,11 +1,11 @@
 ---
 title: Introducción a Edge Delivery Services
-description: Introducción a Edge Delivery Services.
+description: Introducción a los Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 6b60deb47f4a07b48156ce8f449d49ebaf29abde
+source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 2%
+source-wordcount: '869'
+ht-degree: 1%
 
 ---
 
