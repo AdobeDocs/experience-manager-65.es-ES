@@ -1,79 +1,73 @@
 ---
-title: Conectando con Microsoft&reg; Translator
-description: Aprenda a conectar Adobe Experience Manager a Microsoft&reg; Translator.
-contentOwner: Guillaume Carlino
+title: Volver a conectar con Microsoft Translator
+description: Obtenga información sobre cómo conectar AEM a Microsoft Translator de forma predeterminada para automatizar el flujo de trabajo de traducción.
 feature: Language Copy
+role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f6e94d215a49683efe87254ccc1600fefcb369bc
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 13%
+source-wordcount: '477'
+ht-degree: 100%
 
 ---
 
-# Conexión a Microsoft® Translator{#connecting-to-microsoft-translator}
+# Volver a conectar con Microsoft Translator {#connecting-to-microsoft-translator}
 
-Cree una configuración para el servicio en la nube de Microsoft® Translator y use su cuenta de MicrosoftAEM ® Translation para traducir contenido de página, contenido de la comunidad o recursos.
+Cree una configuración para el servicio en la nube de [Microsoft Translator](https://www.microsoft.com/es-es/translator/business/) y use su cuenta de Microsoft Translation para traducir contenido o recursos de la página de AEM.
+
+>[!NOTE]
+>
+>AEM proporciona una cuenta de versión de prueba de Microsoft Translation que permite un máximo de 2 000 000 caracteres traducidos gratuitos al mes. Para obtener una suscripción de cuenta adecuada para los sistemas de producción, consulte [Actualización de la configuración de la licencia de versión de prueba de Microsoft Translator](#upgrading-the-microsoft-translator-trial-license-configuration).
 
 | Propiedad | Descripción |
 |---|---|
-| Etiqueta de traducción | El nombre para mostrar del servicio de traducción. |
-| Atribución de traducción | (Opcional) Para el contenido generado por el usuario, la atribución que aparece junto al texto traducido, por ejemplo `Translations by Microsoft`. |
-| ID del espacio de trabajo | (Opcional) El ID del motor personalizado de Microsoft® Translator que debe utilizar. |
-| Clave de suscripción | Su clave de suscripción de Microsoft® para Microsoft® Translator. |
+| Etiqueta de traducción | El nombre para mostrar del servicio de traducción |
+| Atribución de traducción | (Opcional) Para el contenido generado por el usuario, la atribución que aparece junto al texto traducido, por ejemplo `Translations by Microsoft` |
+| ID del espacio de trabajo | (Opcional) El ID del motor personalizado de Microsoft Translator que debe utilizar |
+| Clave de suscripción | La clave de suscripción de Microsoft para Microsoft Translator |
 
-Después de crear la configuración, debe [activarlo](/help/sites-administering/tc-msconf.md#activating-the-translator-service-configurations).
+Después de crear la configuración, debe [activarla](#activating-the-translator-service-configurations).
 
-El siguiente procedimiento utiliza la interfaz de usuario táctil optimizada para crear una configuración de Microsoft® Translator.
+El siguiente procedimiento crea una configuración de Microsoft Translator.
 
-1. En el carril, toque o haga clic en Herramientas > Cloud Service.
-1. En el área de Microsoft® Translator, seleccione Mostrar configuraciones.
-1. Haga clic en + junto a Configuraciones disponibles.
+1. En el [panel de navegación,](/help/sites-authoring/basic-handling.md#first-steps) pulse o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
+1. Vaya a donde desea crear la configuración. Normalmente, se encuentra en la raíz del sitio o puede ser una configuración global predeterminada.
+1. Pulse o haga clic en el botón **Crear**.
+1. Defina la configuración.
+   1. Seleccione **Microsoft Translator** en la lista desplegable.
+   1. Escriba un título para la configuración. El título identifica la configuración en la consola Cloud Services y en las listas desplegables de propiedades de página.
+   1. De forma opcional, escriba un nombre para usar para el nodo del repositorio que almacena la configuración.
 
-   ![chlimage_1-382](assets/chlimage_1-382.png)
+   ![Creación de configuración de traducción](assets/create-translation-config.png)
 
-1. Escriba un título para la configuración. El título identifica la configuración en la consola Cloud Services y en las listas desplegables de propiedades de página. El nombre predeterminado se basa en el título. De forma opcional, escriba un nombre para usar para el nodo del repositorio que almacena la configuración. Utilice el valor predeterminado para la propiedad Parent Configuration, que es la ruta del nodo del repositorio.
-1. Haga clic en Crear.
-1. En el cuadro de diálogo que aparece, escriba los valores de las propiedades y, a continuación, haga clic en Aceptar.
+1. Haga clic en **Crear**.
+1. En la ventana **Editar configuración**, proporcione los valores para el servicio de traducción descrito en la tabla anterior.
 
-## Ejemplo de configuraciones del Cloud Service de Microsoft® Translator {#sample-microsoft-translator-cloud-service-configurations}
+   ![Edición de la configuración de traducción](assets/edit-translation-config.png)
 
-Las siguientes configuraciones del servicio en la nube de Microsoft® Translator se instalan con los ejemplos de Geometrixx. Algunas configuraciones de muestra utilizan una cuenta de prueba de Microsoft® Translation que permite un máximo de 2 000 000 caracteres traducidos gratuitos al mes.
+1. Pulse o haga clic en **Conectar** para verificar la conexión.
+1. Haga clic o pulse en **Guardar y cerrar**.
 
-### Licencia de prueba de Microsoft® Translator {#microsoft-translator-trial-license}
+## Actualización de la configuración de la licencia de versión de prueba de Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
 
-La configuración de la licencia de prueba de Microsoft® Translator es una configuración de ejemplo que se instala con el paquete de muestra de Geometrixx Outdoors. Esta configuración utiliza una cuenta de Microsoft® Translator con una suscripción gratuita que permite 2 000 000 caracteres traducidos al mes.
+Las páginas de configuración de Microsoft Translation proporcionan un práctico vínculo al sitio web de Microsoft para obtener una suscripción de cuenta adecuada para los sistemas de producción.
 
-### Licencia de prueba del traductor de Microsoft® - Geometrixx-al aire libre {#microsoft-translator-trial-license-geometrixx-outdoors}
+1. En el [panel de navegación,](/help/sites-authoring/basic-handling.md#first-steps) pulse o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
+1. Pulse o haga clic en la configuración de Microsoft Translator existente.
+1. Haga clic o pulse en **Editar**.
+1. En la ventana **Editar configuración**, pulse o haga clic en **Actualizar suscripción**. Se abre una página web de Microsoft con más detalles acerca del servicio.
 
-La configuración de Microsoft® Translator Trial License - Geometrixx-outdoors es una configuración de ejemplo que se instala con los Geometrixx Outdoors. Esta configuración utiliza la misma cuenta gratuita de Microsoft® Translator que la configuración de la licencia de prueba de Microsoft® Translator. La cuenta tiene una suscripción gratuita que permite 2 000 000 caracteres traducidos al mes.
+## Personalización del motor de Microsoft Translator {#customizing-your-microsoft-translator-engine}
 
-Esta configuración de Microsoft® Translator está optimizada para utilizarse con el tipo de contenido del sitio de muestra de Geometrixx Outdoors.
+Las páginas de configuración de Microsoft Translation proporcionan un práctico vínculo al sitio web de Microsoft para personalizar el motor de Microsoft Translator.
 
-### Actualización De La Configuración De La Licencia De Prueba De Microsoft® Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
-
-Las páginas de configuración de Microsoft® Translation proporcionan un práctico vínculo al sitio web de Microsoft® para obtener una suscripción de cuenta adecuada para los sistemas de producción.
-
-1. En el carril, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
-1. En el área de Microsoft® Translator, toque o haga clic en Mostrar configuraciones y, a continuación, toque o haga clic en Licencia de prueba de Microsoft® Translator (Microsoft® Translation Configuration).
-
-   ![chlimage_1-383](assets/chlimage_1-383.png)
-
-1. En la página de configuración, haga clic en Actualizar suscripción. Utilice la página web de Microsoft® que se abre para configurar su cuenta de.
-
-   ![chlimage_1-384](assets/chlimage_1-384.png)
-
-### Personalización del motor de Microsoft® Translator {#customizing-your-microsoft-translator-engine}
-
-Las páginas de configuración de Microsoft® Translation proporcionan un práctico vínculo al sitio web de Microsoft® para personalizar el motor de Microsoft® Translator. ([https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/](https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/))
-
-1. En el carril, toque o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
-1. En el área de Microsoft® Translator, toque o haga clic en Mostrar configuraciones y, a continuación, toque o haga clic en la configuración que desea personalizar.
-1. En la página de configuración, haga clic en Personalizar traductor. Utilice la página web de Microsoft® que se abre para personalizar el servicio.
+1. En el [panel de navegación,](/help/sites-authoring/basic-handling.md#first-steps) pulse o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
+1. Pulse o haga clic en la configuración de Microsoft Translator existente.
+1. Haga clic o pulse en **Editar**
+1. En la ventana **Editar configuración**, pulse o haga clic en **Personalizar traductor**. Utilice la página web de Microsoft que se abre para personalizar el servicio.
 
 ## Activación de las configuraciones del servicio de traducción {#activating-the-translator-service-configurations}
 
-Para admitir contenido traducido que se duplique en la instancia de publicación, active las configuraciones del servicio en la nube. Para activar los nodos del repositorio que almacenan las configuraciones de Microsoft® Translator o servicios en la nube de terceros, utilice el método de [activación de una sección completa (árbol)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree). Los nodos se encuentran debajo de los siguientes nodos principales:
+Debe activar las configuraciones del servicio en la nube para que admitan el contenido traducido que se replica en la instancia de publicación. Utilice el método de [Publicación de un árbol](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) para activar los nodos del repositorio que almacenan las configuraciones de Microsoft Translator. Los nodos se encuentran debajo de los siguientes nodos principales:
 
-* Servicio de traducción de Microsoft®: /libs/settings/cloudconfigs/translation/msft-translation
-* Traducción de terceros: /etc/cloudservices/machine-translation
+* `/libs/settings/cloudconfigs/translation/msft-translation`
