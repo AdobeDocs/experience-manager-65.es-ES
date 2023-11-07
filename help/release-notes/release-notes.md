@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
 workflow-type: tm+mt
-source-wordcount: '4632'
+source-wordcount: '4640'
 ht-degree: 2%
 
 ---
@@ -492,7 +492,7 @@ Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standa
 
 #### Comunicaciones interactivas
 
-* AEM Después de actualizar al paquete de servicio 18 de, no es posible editar las cartas de comunicación interactivas. (FORMS-10578) Para resolver el problema, realice los siguientes pasos:
+* AEM Después de actualizar al paquete de servicio 18 de, no es posible abrir la comunicación interactiva con imágenes en línea grandes en el modo de edición. (FORMS-10578) Para resolver el problema, realice los siguientes pasos:
 
    1. Descargar [Revisión-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) desde el vínculo SD.
    1. Extraiga el archivo de revisión para poder obtener un paquete de Experience Manager (.zip) y archivos de paquete (.jar).
