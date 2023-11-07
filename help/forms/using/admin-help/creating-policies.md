@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4718'
+source-wordcount: '4715'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Los usuarios pueden crear o editar directivas personales para su propio uso. Los
 
 ### Consideraciones para editar directivas {#considerations-for-editing-policies}
 
-Cuando edita una directiva, los cambios afectan a los documentos que la directiva protege actualmente, así como a los documentos que la directiva protege posteriormente. Por ejemplo, si elimina destinatarios de una directiva que está aplicada actualmente a un documento, los destinatarios ya no podrán abrir el documento.
+Cuando edita una directiva, los cambios afectan a los documentos que la directiva protege actualmente y a los documentos que la directiva protege posteriormente. Por ejemplo, si elimina destinatarios de una directiva que está aplicada actualmente a un documento, los destinatarios ya no podrán abrir el documento.
 
 El estado del documento determina cuándo se aplica el cambio:
 
@@ -96,7 +96,7 @@ Al editar directivas, se aplican estas restricciones:
    No se pueden utilizar los siguientes caracteres en el nombre o la descripción:
 
    * signo menos que (&lt;)
-   * Signo de bueno que (>)
+   * signo de mayor que (>)
    * y comercial (&amp;)
    * comilla tipográfica simple (&#39;)
    * comillas dobles (&quot;)
@@ -365,7 +365,7 @@ Los usuarios externos solo pueden copiar directivas si el administrador habilita
    No se pueden utilizar los siguientes caracteres en el nombre o la descripción:
 
    * signo menos que (&lt;)
-   * Signo de bueno que (>)
+   * signo de mayor que (>)
    * y comercial (&amp;)
    * comilla tipográfica simple (&#39;)
    * comillas dobles (&quot;)

@@ -11,10 +11,10 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3156'
-ht-degree: 98%
+source-wordcount: '3154'
+ht-degree: 97%
 
 ---
 
@@ -52,7 +52,7 @@ La IU táctil optimizada para crear formularios adaptables es intuitiva y propor
 * Componentes de formulario estándar
 * Repositorio integrado para recursos
 
-Cuando crea un formulario adaptable nuevo o edita uno existente, utiliza los siguientes elementos de la interfaz de usuario:
+Cuando crea o edita un formulario adaptable existente, utiliza los siguientes elementos de la interfaz de usuario:
 
 * [Barra lateral](#sidebar)
 * [Barra de herramientas de la página](#page-toolbar)
@@ -154,7 +154,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Correo electrónico</td>
-   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Archivo adjunto</td>

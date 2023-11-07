@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 2%
 
 ---
@@ -196,7 +196,7 @@ AEM AEM Para desarrollar nuevos componentes para su en función del componente e
    * uso del CRXDE Lite para añadir el valor `<path-to-component>` (por ejemplo, `/apps/geometrixx/components/myComponent`) a los componentes de propiedad del nodo `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * siga las instrucciones de [Adición de nuevos componentes a los sistemas de párrafos](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. AEM En WCM, abra una página en el sitio web e inserte un párrafo del tipo que acaba de crear para asegurarse de que el componente funciona correctamente.
+1. AEM En WCM, abra una página en el sitio web e inserte un párrafo del tipo que ha creado para asegurarse de que el componente funciona correctamente.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ AEM AEM Para desarrollar nuevos componentes para su en función del componente e
 
 Una vez desarrollado el componente, se añade al sistema de párrafos, que permite a los autores seleccionar y utilizar el componente al editar una página.
 
-1. Acceda a una página del entorno de creación que utilice el sistema de párrafos, por ejemplo `<contentPath>/Test.html`.
+1. Acceda a una página del entorno de creación que utilice el sistema de párrafos, por ejemplo, `<contentPath>/Test.html`.
 1. Cambie al modo Diseño mediante una de las siguientes opciones:
 
    * adición `?wcmmode=design` al final de la dirección URL y volviendo a acceder a, por ejemplo:

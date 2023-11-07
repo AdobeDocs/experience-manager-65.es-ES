@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ AEM En el caso de los **Llamada a acción** componentes - **ClickThroughLink** y
 
 Para asignar componentes de página de aterrizaje a Adobe Analytics:
 
-1. Después de crear la configuración de Adobe Analytics y de crear una nueva estructura, seleccione el grupo de informes adecuado en el menú desplegable. Esto hace que se recuperen las variables de Adobe Analytics y se muestren en el buscador de contenido.
+1. Después de crear la configuración de Adobe Analytics y de crear un marco de trabajo, seleccione el grupo de informes adecuado en el menú desplegable. Esto hace que se recuperen las variables de Adobe Analytics y se muestren en el buscador de contenido.
 1. Arrastre y suelte los componentes de llamada a la acción (CTA) de la barra de tareas en el área de asignación situada en el centro de la página, según corresponda.
 
 <table>
@@ -89,7 +89,7 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
 </table>
 
 1. Asigne estos atributos expuestos con cualquier variable de Adobe Analytics desde el buscador de contenido. El marco de trabajo ya está listo para usarse.
-1. Ahora puede crear una nueva página de aterrizaje o abrir una existente con componentes de CTA existentes y hacer clic en **Cloud Services** pestaña en **Propiedades de página** en la barra de tareas (en la IU táctil optimizada, seleccione **Abrir propiedades** y haga clic en **Cloud Services**) y configure el marco de trabajo para utilizarlo con la página de aterrizaje. Seleccione el marco de trabajo de la lista desplegable.
+1. Ahora puede crear una página de aterrizaje o abrir una existente con componentes de CTA existentes y hacer clic en **Cloud Service** pestaña en **Propiedades de página** en la barra de tareas (en la IU táctil optimizada, seleccione **Abrir propiedades** y haga clic en **Cloud Service**) y configure el marco de trabajo para utilizarlo con la página de aterrizaje. Seleccione el marco de trabajo de la lista desplegable.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

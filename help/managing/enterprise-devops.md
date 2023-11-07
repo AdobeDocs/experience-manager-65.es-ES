@@ -1,24 +1,24 @@
 ---
 title: Operaciones de desarrollo empresarial
-description: Obtenga información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y simplificar la colaboración.
+description: Obtenga información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y la colaboración.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 60%
+source-wordcount: '982'
+ht-degree: 72%
 
 ---
 
-# Operaciones de desarrollo empresarial {#enterprise-devops}
+# Operaciones de desarrollo empresarial{#enterprise-devops}
 
-Las operaciones de desarrollo empresarial abarcan los procesos, métodos y comunicaciones necesarios para lo siguiente:
+Las DevOps abarcan los procesos, métodos y comunicaciones necesarios para lo siguiente:
 
 * Facilitar la implementación del software en los distintos entornos.
-* Simplifique la colaboración entre los equipos de desarrollo, prueba e implementación.
+* Simplificar la colaboración entre los equipos de desarrollo, prueba e implementación.
 
 Las operaciones de desarrollo empresarial tienen como objetivo evitar problemas como los siguientes:
 
@@ -43,7 +43,7 @@ Una implementación de Adobe Experience Manager AEM () suele consistir en varios
 
 ### Desarrollo {#development}
 
-Los desarrolladores son responsables de desarrollar y personalizar el proyecto propuesto (ya sea sitio web, aplicaciones móviles, implementación de DAM, etc.), con toda la funcionalidad requerida. Estos procedimientos:
+Los desarrolladores son responsables de desarrollar y personalizar el proyecto propuesto (ya sea el sitio web, las aplicaciones móviles, la implementación de DAM, etc.), con todas las funcionalidades requeridas. Estos procedimientos:
 
 * desarrollan y personalizan los elementos necesarios; por ejemplo, plantillas, componentes, flujos de trabajo, aplicaciones.
 * Realizan el diseño.
@@ -65,8 +65,8 @@ El equipo de garantía de la calidad utiliza este entorno para [prueba](/help/si
 El entorno de ensayo debe ser un reflejo del entorno de producción: configuración, código y contenido:
 
 * Se utiliza para probar las secuencias de comandos utilizadas para implementar la implementación real.
-* Se puede utilizar para pruebas finales (diseño, funcionalidad e interfaces) antes de implementarse en los entornos de producción.
-* Aunque no siempre es posible que el entorno de ensayo sea idéntico al entorno de producción, debería ser lo más parecido posible para permitir las pruebas de carga y rendimiento.
+* Puede utilizarse para pruebas finales (diseños, funcionalidades e interfaces) antes de implementarse en los entornos de producción.
+* Aunque no siempre es posible que el entorno de ensayo sea idéntico al de producción, debería ser lo más parecido posible para permitir las pruebas de carga y rendimiento.
 
 ### Producción: creación y publicación {#production-author-and-publish}
 
@@ -94,7 +94,7 @@ Para volver a replicar los datos generados en un entorno de publicación en el e
 
 #### Publicación {#publish}
 
-Un entorno de publicación se encuentra en la zona desmilitarizada (DMZ). Este es el entorno en el que los visitantes acceden al contenido (por ejemplo, a través de un sitio web o en forma de aplicación móvil) e interactúan con él; ya sea pública o dentro de la intranet. El entorno de publicación:
+Hay un entorno de publicación en la zona desmilitarizada (DMZ). Este es el entorno en el que los visitantes acceden al contenido (por ejemplo, a través de un sitio web o en forma de aplicación móvil) e interactúan con él; ya sea pública o dentro de la intranet. El entorno de publicación:
 
 * contiene el contenido replicado desde el entorno de creación.
 * Pone ese contenido a disposición de los visitantes.
@@ -107,8 +107,8 @@ El entorno de publicación genera el contenido dinámicamente en tiempo real y e
 
 Propagar siempre el código de abajo a arriba:
 
-* el código se desarrolla inicialmente en el entorno de desarrollo local y luego en el entorno de desarrollo integrado.
-* Seguido de pruebas exhaustivas en los entornos de control de calidad
+* el código se desarrolla inicialmente en el entorno de desarrollo local y luego en el entorno de desarrollo integrado
+* seguido de pruebas exhaustivas en los entornos de control de calidad
 * A continuación, se vuelve a probar en los entornos de ensayo.
 * Solo entonces debe implementarse el código en los entornos de producción.
 
@@ -117,7 +117,7 @@ El código (por ejemplo, las plantillas de diseño y la funcionalidad personaliz
 AEM Los proyectos suelen implementar código de déclencheur:
 
 * Automáticamente: para su transferencia a los entornos de desarrollo y control de calidad.
-* Manualmente: las implementaciones en los entornos de ensayo y producción se realizan de forma más controlada, a menudo manual; aunque la automatización es posible, si es necesario.
+* Manualmente: las implementaciones en los entornos de ensayo y producción se realizan de manera más controlada, a menudo manual; aunque la automatización es posible si es necesario.
 
 ![chlimage_1](assets/chlimage_1.png)
 

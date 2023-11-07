@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1012'
 ht-degree: 6%
 
 ---
@@ -51,7 +51,7 @@ SPA SPA Este documento recorrerá la estructura de un documento simplificado e i
 
 ## Dependencias, configuración y generación {#dependencies-configuration-and-building}
 
-Además de la dependencia de Angular SPA SPA esperada, el ejemplo puede aprovechar las bibliotecas adicionales para que la creación de los recursos de la biblioteca sea más eficiente. En este caso, se puede hacer un uso más eficiente de la biblioteca de la biblioteca de la biblioteca de la.
+Además de la dependencia de Angular SPA SPA esperada, el ejemplo puede utilizar bibliotecas adicionales para que la creación de los recursos de ejemplo sea más eficiente. En este ejemplo, se puede usar una biblioteca de bibliotecas adicionales para hacer que la creación de los recursos sea más eficiente
 
 ### Dependencias {#dependencies}
 
@@ -65,7 +65,7 @@ El `package.json` SPA define los requisitos del paquete de trabajo global de la.
 }
 ```
 
-El `aem-clientlib-generator` se aprovecha para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
+El `aem-clientlib-generator` se utiliza para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -106,7 +106,7 @@ module.exports = {
 
 ### Compilando {#building}
 
-La creación real de la aplicación aprovecha [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
+La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -114,7 +114,7 @@ AEM Una vez creado, el paquete se puede cargar en una instancia de.
 
 ### Tipo de archivo del proyecto AEM. {#aem-project-archetype}
 
-Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
+Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## Estructura de aplicación {#application-structure}
 
@@ -282,7 +282,7 @@ Finalmente, la imagen se puede representar en `image.component.html`.
 
 Normalmente, es necesario que los componentes de una aplicación de una sola página compartan información. Existen varias formas recomendadas de hacerlo, enumeradas de la siguiente manera en orden creciente de complejidad.
 
-* **Opción 1:** Centralice la lógica y difunda los componentes necesarios, por ejemplo, utilizando una clase util como solución pura orientada a objetos.
+* **Opción 1:** Centralice la lógica y difunda a los componentes necesarios, por ejemplo, utilizando una clase util como solución pura orientada a objetos.
 * **Opción 2:** Compartir estados de componentes mediante una biblioteca de estados como NgRx.
 * **Opción 3:** Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
 
@@ -294,4 +294,4 @@ SPA AEM Para obtener más información acerca de cómo organizarse para desarrol
 
 SPA AEM Para obtener más información acerca de la asignación de modelos dinámicos a componentes y cómo funciona dentro de la asignación de componentes dentro de la en la aplicación, consulte el artículo [SPA Asignación de modelos dinámicos a componentes para la creación de](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-SPA AEM Si desea implementar la implementación de la en un entorno de trabajo distinto de React o Angular SPA AEM, o simplemente desea profundizar en cómo funciona el SDK de la para la creación de informes, consulte la [SPA Modelo de](/help/sites-developing/spa-blueprint.md) artículo.
+SPA AEM Si desea implementar un esquema de trabajo en el que se incluya un módulo de trabajo que no sea React o Angular SPA AEM, o simplemente desea profundizar en cómo funciona el SDK de la para la creación de informes, consulte el documento de trabajo de la aplicación de diseño de informes (en inglés) que contiene información detallada sobre cómo funciona el SDK para la creación de informes de. [SPA Modelo de](/help/sites-developing/spa-blueprint.md) artículo.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Supongamos que es necesario agregar una página de lista de noticias a los sitio
 
 La manera recomendada de abordar ese problema sería la siguiente:
 
-* Reutilice una plantilla existente para poder crear un nuevo tipo de página. La plantilla define aproximadamente la estructura de la página (elementos de navegación, paneles, etc.), que se ajusta aún más por su diseño (CSS, gráficos).
+* Reutilice una plantilla existente para poder crear un tipo de página. La plantilla define aproximadamente la estructura de la página (elementos de navegación, paneles, etc.), que se ajusta aún más por su diseño (CSS, gráficos).
 * Utilice el sistema de párrafos (parsys/iparsys) en las páginas nuevas.
 * Defina el derecho de acceso al modo Diseño de los sistemas de párrafos, de modo que solo las personas autorizadas (normalmente el administrador) puedan cambiarlas.
 * Defina los componentes permitidos en el sistema de párrafos determinado para que los editores puedan colocar los componentes necesarios en la página. En este caso, podría ser un componente de lista, que puede atravesar un subárbol de páginas y extraer la información según reglas predefinidas.
@@ -46,7 +46,7 @@ Las siguientes reglas generales para desarrolladores tienen sentido en la mayor�
 
 ### Personalizar componentes y otros elementos {#customizing-components-and-other-elements}
 
-Al crear sus propios componentes o personalizar un componente existente, a menudo es más fácil (y seguro) reutilizar las definiciones existentes. AEM Los mismos principios se aplican también a otros elementos dentro de la lista de elementos permitidos, por ejemplo, el controlador de errores.
+Al crear sus propios componentes o personalizar un componente existente, a menudo es más fácil (y seguro) reutilizar las definiciones existentes. AEM Los mismos principios se aplican también a otros elementos dentro de la aplicación de, por ejemplo, el controlador de errores.
 
 Esto se puede hacer copiando y superponiendo la definición existente. Es decir, copiar la definición de `/libs` hasta `/apps/<your-project>`. Esta nueva definición, en `/apps`, se puede actualizar según sus necesidades.
 

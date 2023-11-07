@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '550'
 ht-degree: 33%
 
 ---
@@ -58,7 +58,7 @@ La **Información general de Live Copy** se puede abrir desde el panel lateral *
 La **Información general de Live Copy** se puede abrir al ver las propiedades de una página de modelo:
 
 1. Abra las **Propiedades** de la página de modelo adecuada.
-1. Abra la pestaña **Modelo**, la **Información general de Live Copy** se mostrará en la barra de herramientas superior:
+1. Abra la pestaña **Modelo**, la **Información general de Live Copy** se muestra en la barra de herramientas superior:
 
    ![Pestaña Modelo: Información general de Live Copy](assets/chlimage_1-360.png)
 

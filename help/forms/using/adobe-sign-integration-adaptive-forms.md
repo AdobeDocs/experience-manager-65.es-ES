@@ -10,10 +10,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 82%
+source-wordcount: '2073'
+ht-degree: 81%
 
 ---
 
@@ -60,7 +60,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
    >[!NOTE]
    >
-   >Puede ejecutar los pasos 1-4 para crear un nuevo contenedor de configuración y crear una configuración [!DNL Adobe Sign] en el contenedor o utilizar la carpeta existente `global` en **Herramientas** ![martillo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Si crea la configuración en el nuevo contenedor de configuración, asegúrese de especificar el nombre del contenedor en el campo **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
+   >Puede ejecutar los pasos 1-4 para crear un contenedor de configuración y crear un [!DNL Adobe Sign] en el contenedor o utilice la configuración existente `global` carpeta en **Herramientas** ![martillo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Sign]**. Si crea la configuración en el nuevo contenedor de configuración, asegúrese de especificar el nombre del contenedor en el campo **[!UICONTROL Contenedor de configuración]** al crear un formulario adaptable.
 
    >[!NOTE]
    >

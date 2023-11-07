@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1422'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Descargue e instale Apache Solr:
 
 * [Versión 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
-* Solr requiere Java™ 1.7 o bueno
+* Solr requiere Java™ 1.7 o superior
 * No se necesita ningún servicio
 * Elección de los modos de ejecución:
 
@@ -110,7 +110,7 @@ Uso: sh ./scripts/cloud-scripts/zkcli.sh \
 
 La búsqueda multilingüe (MLS) de AEM Communities está diseñada para la plataforma Solr y ofrece una búsqueda mejorada en todos los idiomas admitidos, incluido el inglés.
 
-MLS para AEM Communities está disponible como MLS estándar o MLS avanzado. MLS estándar solo incluye los ajustes de configuración de Solr y excluye los complementos o archivos de recursos. Advanced MLS es la solución más completa e incluye ajustes de configuración de Solr, así como complementos y recursos relacionados
+MLS para AEM Communities está disponible como MLS estándar o MLS avanzado. MLS estándar solo incluye los ajustes de configuración de Solr y excluye los complementos o archivos de recursos. Advanced MLS es la solución más completa e incluye opciones de configuración de Solr, complementos y recursos relacionados
 
 MLS estándar incluye mejoras para la búsqueda de contenido en los siguientes idiomas:
 
@@ -187,8 +187,8 @@ AEM Los archivos MLS estándar se almacenan en el repositorio de la.
 
       * Para Solr4: copy `solr-install-dir/example/solr/collection1/conf/`
       * Para Solr5: copiar `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. Copie el archivo descargado **schema.xml** y **solrconfig.xml** hasta *new-config-dir* para sobrescribir los archivos existentes.
 
+   1. Copie el archivo descargado **schema.xml** y **solrconfig.xml** hasta *new-config-dir* para sobrescribir los archivos existentes.
 
 1. [Cargue la nueva configuración](#upload-a-configuration-to-zookeeper) a ZooKeeper.
 1. [Crear una colección](#create-a-collection) especificar los parámetros necesarios, como el número de fragmentos, el número de réplicas y el nombre de la configuración.
@@ -244,15 +244,15 @@ Instrucciones de instalación: tenga en cuenta las pocas diferencias entre Solr4
 
       * Como `solr-install-dir/myconfig/`
       * Creación de subcarpetas `stopwords/` y `lang/`
+
    1. Copie el contenido del directorio de configuración de Solr existente en *new-config-dir*
 
       * Para Solr4: Copiar `solr-install-dir/example/solr/collection1/conf/`
       * Para Solr5: Copiar `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+
    1. Copie el extraído **schema.xml** y **solrconfig.xml** hasta *new-config-dir* para sobrescribir los archivos existentes.
    1. Para Solr5: Copiar `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` hasta `new-config-dir/lang/`
    1. Copie el extraído **stopwords/** carpeta a *new-config-dir* que resulta en `new-config-dir/stopwords/*.txt`
-
-
 
 1. [Cargue la nueva configuración](#upload-a-configuration-to-zookeeper) a ZooKeeper
 1. Copie el nuevo **perfiles/** carpeta...
@@ -296,19 +296,19 @@ donde:
 
    * -d solrhome
 
-      Directorio de instalación de Solr
+     Directorio de instalación de Solr
 
    * -c rutaDeColección
 
-      Ruta de recopilación en solr
+     Ruta de recopilación en solr
 
    * --help
 
-      Imprimir opciones de línea de comandos
+     Imprimir opciones de línea de comandos
 
    * -v [4|5]
 
-      Establecer versión para solr
+     Establecer versión para solr
 
 * Ejemplo de Solr 4.10.4:
 

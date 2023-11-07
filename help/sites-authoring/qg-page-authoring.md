@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 72%
+source-wordcount: '1553'
+ht-degree: 73%
 
 ---
 
@@ -128,7 +128,7 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) disponibles:
 
 1. [Desplácese hasta la página](#finding-your-page) sobre la que quiera llevar a cabo una acción.
-1. Pase el puntero del ratón sobre la tarjeta que representa el recurso necesario; se mostrarán las acciones rápidas:
+1. Pase el puntero del ratón sobre la tarjeta que representa el recurso necesario; se muestran las acciones rápidas:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -195,7 +195,7 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
       * Seleccione **Vista previa** en la barra de herramientas.
 
-   * Vuelva al modo de edición (o seleccione otro modo) utilizando **Editar** selector desplegable.
+   * Vuelva al modo de edición (o seleccione otro modo) utilizando **Editar** en el selector desplegable.
 
    >[!NOTE]
    >
@@ -215,7 +215,7 @@ Existen dos métodos (principales) para [editar las propiedades de la página](/
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-   1. Se mostrarán las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
+   1. Se muestran las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
 
 * Cuando [edite su página](#editing-your-page-content):
 

@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -189,7 +189,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!CAUTION]
 >
->Al utilizar un servidor de aplicaciones diferente (como JBoss), es posible que la copia de seguridad en línea no funcione según lo esperado porque el directorio de destino no se puede escribir. En este caso, póngase en contacto con el Soporte técnico.
+>Al utilizar un servidor de aplicaciones diferente (como JBoss), es posible que la copia de seguridad en línea no funcione según lo esperado porque el directorio de destino no se puede escribir. En este caso, póngase en contacto con Soporte técnico.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ La copia de seguridad en línea utiliza el siguiente algoritmo:
 
 1. Al crear un archivo zip, el primer paso es crear o localizar el directorio de destino.
 
-   * Si realiza una copia de seguridad en un archivo zip, se crea un directorio temporal. El nombre del directorio empieza por `backup.` y termina por `.temp`; por ejemplo `backup.f4d3.temp`.
+   * Si realiza una copia de seguridad en un archivo zip, se crea un directorio temporal. El nombre del directorio empieza por `backup.` y termina por `.temp`; por ejemplo, `backup.f4d3.temp`.
    * Si se realiza una copia de seguridad en un directorio, se utiliza el nombre especificado en la ruta de destino. Se puede utilizar un directorio existente; de lo contrario, se creará un nuevo directorio.
 
      Un archivo vacío denominado `backupInProgress.txt` se crea en el directorio de destino cuando se inicia la copia de seguridad. Este archivo se elimina cuando finaliza la copia de seguridad.

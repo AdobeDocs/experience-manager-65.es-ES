@@ -1,18 +1,14 @@
 ---
 title: Configuración de notificaciones por correo electrónico
-seo-title: Configuring Email Notification
 description: Obtenga información sobre cómo configurar las notificaciones por correo electrónico en Adobe Experience Manager.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2067'
 ht-degree: 12%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 12%
 
 AEM envía notificaciones por correo electrónico a los usuarios que:
 
-* Se han suscrito a eventos de página como, por ejemplo, una modificación o replicación. El [Bandeja de entrada de notificaciones](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) En esta sección se describe cómo suscribirse a estos eventos.
+* Se han suscrito a eventos de página como, por ejemplo, modificaciones o replicaciones. El [Bandeja de entrada de notificaciones](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) En esta sección se describe cómo suscribirse a estos eventos.
 
 * Se ha suscrito a eventos de foro.
 * Deben realizar un paso en un flujo de trabajo. El [Etapa de participante](/help/sites-developing/workflows-step-ref.md#participant-step) Esta sección describe cómo almacenar en déclencheur las notificaciones por correo electrónico en un flujo de trabajo.
@@ -36,11 +32,11 @@ Cuando se notifica a un usuario, este recibe un correo electrónico en el idioma
 
 >[!NOTE]
 >
->AEM Al trabajar con los servicios de correo electrónico, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+>AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ## Configuración del servicio de correo {#configuring-the-mail-service}
 
-AEM Para poder enviar correos electrónicos, la función de envío de correo electrónico de la dirección **Day CQ Mail Service** debe estar correctamente configurado. Puede ver la configuración en la consola web. AEM Al trabajar con los servicios de correo electrónico, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+AEM Para poder enviar correos electrónicos, la función de envío de correo electrónico de la dirección **Day CQ Mail Service** debe estar correctamente configurado. Puede ver la configuración en la consola web. AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 Se aplican las siguientes restricciones:
 
@@ -279,7 +275,7 @@ Puede configurar OAuth para varios proveedores de correo electrónico, como se d
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Una vez agregados los ámbitos, vuelva a **Credenciales** en el menú de la izquierda y vaya a **Crear credenciales** - **ID de cliente de OAuth** - **Aplicación de escritorio**
-1. Se abrirá una nueva ventana que contiene el ID de cliente y el Secreto del cliente.
+1. Se abre una nueva ventana que contiene el ID de cliente y el Secreto de cliente.
 1. Guarde estas credenciales.
 
 **AEM Configuraciones de lado**
@@ -361,7 +357,7 @@ Finalmente, confirme la configuración mediante lo siguiente:
 1. A continuación, vaya a **Certificados y secretos**, haga clic en **Nuevo secreto de cliente** y siga los pasos que aparecen en la pantalla para crear un secreto. Asegúrese de tomar nota de este secreto para utilizarlo posteriormente
 1. Pulse **Información general** en el panel izquierdo y copie los valores de **ID de aplicación (cliente)** y **ID de directorio (inquilino)** para su posterior uso
 
-AEM Para recapitular, necesitará la siguiente información para configurar OAuth2 para el servicio Mailer en el lado del:
+AEM Para recapitular, debe tener la siguiente información para configurar OAuth2 para el servicio Mailer en el lado del:
 
 * La URL de autenticación, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * La URL del token, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

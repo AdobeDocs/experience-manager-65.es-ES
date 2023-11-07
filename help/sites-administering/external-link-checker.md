@@ -2,9 +2,9 @@
 title: El Verificador De Vínculos
 description: El Verificador de vínculos ayuda a validar los vínculos internos y externos y permite la reescritura de vínculos.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
-source-git-commit: 0b9de3261d8747f3e7107962b6aea1dbdf9d6773
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ El Verificador de vínculos se ejecuta automáticamente para ayudar a los autore
 * Mostrar una lista de todos los vínculos externos del contenido
 * Realización de transformaciones de vínculos
 
-El Verificador de vínculos tiene un número de [opciones de configuración](#configuring) como definir la validación interna, permitir que determinados vínculos o patrones de vínculo se omitan en la validación y reescribir las reglas de reescritura de vínculos.
+El Verificador de vínculos tiene varias opciones [opciones de configuración](#configuring) como definir la validación interna, permitir que determinados vínculos o patrones de vínculo se omitan en la validación y reescribir las reglas de reescritura de vínculos.
 
 El Verificador de vínculos valida ambos [vínculos internos](#internal) y [vínculos externos.](#external)
 
@@ -88,7 +88,7 @@ Puede manipular el contenido de la ventana mediante los dos botones situados en 
 
 ### Funcionamiento del Comprobador de vínculos externos {#how-it-works}
 
-Aunque es fácil de usar, el Comprobador de vínculos externos depende de una serie de servicios y comprender cómo funcionan le ayuda a comprender cómo hacerlo [configuración del Verificador de vínculos](#configuring) para satisfacer sus necesidades.
+Aunque es fácil de usar, el Comprobador de vínculos externos depende de varios servicios y comprender cómo funcionan le ayuda a comprender cómo hacerlo [configuración del Verificador de vínculos](#configuring) para satisfacer sus necesidades.
 
 1. Cada vez que un autor de contenido guarda un vínculo a una página, se activa un controlador de eventos.
 1. El controlador de eventos recorre todo el contenido de `/content` y comprueba los vínculos nuevos o actualizados y los añade a una caché para el Verificador de vínculos.

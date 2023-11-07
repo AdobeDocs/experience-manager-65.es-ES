@@ -7,7 +7,7 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 3%
@@ -114,7 +114,7 @@ Una estructura de sitio de comunidad, creada con el asistente, incluye la funci�
 
 ### Código de ejemplo: Mensaje recibido notificación {#sample-code-message-received-notification}
 
-La función Mensajería social emite eventos para operaciones como, por ejemplo `send`, `marking read`, `marking delete`. Estos eventos se pueden capturar y se pueden realizar acciones con los datos contenidos en el evento.
+La función Mensajería social emite eventos para operaciones como, por ejemplo, `send`, `marking read`, `marking delete`. Estos eventos se pueden capturar y se pueden realizar acciones con los datos contenidos en el evento.
 
 El siguiente ejemplo es de un controlador de eventos que escucha el `message sent` y envía un correo electrónico a todos los destinatarios de mensajes utilizando `Day CQ Mail Service`.
 

@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6430'
-ht-degree: 100%
+source-wordcount: '6419'
+ht-degree: 96%
 
 ---
 
@@ -93,7 +93,7 @@ Las firmas digitales aparecen en los campos de firma, que son campos de formular
    <td>Objeto de documento que contiene el PDF.<br /> </td>
   </tr>
   <tr>
-   <td><code>signatureFieldName</code> </td>
+   <td><code>signatureFieldName</code><br /> </td>
    <td>Nombre del campo de firma. Este parámetro es obligatorio y no puede tener nulo como valor.<br /> </td>
   </tr>
   <tr>
@@ -441,7 +441,7 @@ La marca de tiempo de un documento se puede programar según las especificacione
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>doc</code> </td>
+   <td><code>doc</code><br /> </td>
    <td>Objeto de documento que contiene el PDF.<br /> </td>
   </tr>
   <tr>
@@ -635,7 +635,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### Conseguir firma {#getting-signature}
 
-Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma ubicados en un documento PDF o para comprobar los nombres, recupere los nombres mediante programación. El servicio Firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento de PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma en un documento de PDF o para comprobar los nombres, recupere los nombres mediante programación. El servicio Firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxis**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -648,7 +648,7 @@ Puede recuperar los nombres de todos los campos de firma que se encuentran en un
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>doc</code> </td>
+   <td><code>doc</code><br /> </td>
    <td>Objeto de documento que contiene el PDF.<br /> </td>
   </tr>
   <tr>
@@ -662,7 +662,7 @@ Puede recuperar los nombres de todos los campos de firma que se encuentran en un
  </tbody>
 </table>
 
-El siguiente ejemplo de código Java recupera la información de firma del campo de firma dado ubicado en un documento PDF.
+El siguiente ejemplo de código Java recupera la información de firma del campo de firma dado en un documento de PDF.
 
 ```java
 /*************************************************************************
@@ -704,12 +704,12 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.signatures.client.types.PDFSignature;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
+ * The following Java code example retrieves the Signature Info for the given signature field in a PDF document.
  */
 
 @Component
@@ -759,7 +759,7 @@ public class GetSignature {
 
 ### Conseguir una lista de campos de firma  {#getting-signature-field-list-nbsp}
 
-Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma en un documento de PDF, puede recuperarlos y verificarlos mediante programación. El servicio Firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento de PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma en un documento de PDF, puede recuperarlos y verificarlos mediante programación. El servicio Firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxis**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -770,7 +770,7 @@ Puede recuperar los nombres de todos los campos de firma que se encuentran en un
 | `inDoc` | Objeto de documento que contiene el PDF |
 | `unlockOptions` | Incluye los parámetros necesarios para desbloquear un archivo cifrado. Esto solo es necesario si el archivo está cifrado. |
 
-El siguiente ejemplo de código Java recupera los nombres de los campos de firma ubicados en un documento PDF.
+El siguiente ejemplo de código Java recupera los nombres de los campos de firma en un documento de PDF.
 
 ```java
 /*************************************************************************
@@ -808,12 +808,12 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the names of signature fields located in a PDF document.
+ * The following Java code example retrieves the names of signature fields in a PDF document.
  */
 
 @Component
@@ -874,7 +874,7 @@ public class GetSignatureFields {
 
 ### Modificar campos de firma  {#modifying-signature-fields-nbsp}
 
-Puede modificar los campos de firma que se encuentran en un documento PDF. La modificación de un campo de firma implica la manipulación de sus valores del diccionario de bloqueo de campos de firma o valores del diccionario de valores de semillas.
+Puede modificar los campos de firma que se encuentran en un documento de PDF. La modificación de un campo de firma implica la manipulación de sus valores del diccionario de bloqueo de campos de firma o valores del diccionario de valores de semillas.
 
 Un diccionario de bloqueo de campos especifica una lista de campos que se bloquearán cuando se firme en el campo de firma. Un campo bloqueado impedirá que los usuarios lo editen. Un diccionario de valores semillas contiene información de la restricción que se utilizará en el momento en que se aplique la firma. Por ejemplo, puede cambiar los permisos que controlan las acciones que se pueden producir sin invalidar una firma.
 
@@ -955,7 +955,7 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesOtherException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can modify signature fields that are located in a PDF document by using the Java API and web service API. Modifying a signature field involves
+ * You can modify signature fields that are in a PDF document by using the Java API and web service API. Modifying a signature field involves
  * manipulating its signature field lock dictionary values or seed value dictionary values.
  * A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from making
  * changes to the field. A seed value dictionary contains constraining information that is used at the time the signature is applied.
@@ -1063,11 +1063,11 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Documento PDF de entrada de documento<br /> </td>
   </tr>
   <tr>
-   <td><code>encryptionOptions</code> </td>
+   <td><code>encryptionOptions</code><br /> </td>
    <td>Incluye los argumentos necesarios para codificar un documento PDF<br /> </td>
   </tr>
   <tr>
@@ -1440,11 +1440,11 @@ secureDocument(Document inDoc,
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Documento PDF de entrada de documento<br /> </td>
   </tr>
   <tr>
-   <td><code>encryptionOptions</code> </td>
+   <td><code>encryptionOptions</code><br /> </td>
    <td>Incluye los argumentos necesarios para codificar un documento PDF<br /> </td>
   </tr>
   <tr>
@@ -2119,11 +2119,11 @@ Para recuperar la información de derechos de uso de la credencial especificada 
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>credentialAlias</code> </td>
+   <td><code>credentialAlias</code><br /> </td>
    <td>El <code>credentialAlias</code> que especifica la credencial.<br /> </td>
   </tr>
   <tr>
-   <td><code>credentialPassword</code> </td>
+   <td><code>credentialPassword</code><br /> </td>
    <td>Para la contraseña de la credencial, si esta está cifrada, se debe utilizar nulo si la credencial no está cifrada.<br /> </td>
   </tr>
  </tbody>
@@ -2210,7 +2210,7 @@ Para recuperar la información de derechos de uso de un documento determinado, l
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDocument</code> </td>
+   <td><code>inDocument</code><br /> </td>
    <td>Documento desde el que se obtiene la información de derechos de uso<br /> </td>
   </tr>
  </tbody>
@@ -2328,11 +2328,11 @@ Puede quitar los derechos de uso de un documento llamando a la API `removeUsageR
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDocument</code> </td>
+   <td><code>inDocument</code><br /> </td>
    <td>Documento desde el que se quitan los derechos de uso.<br /> </td>
   </tr>
   <tr>
-   <td><code>unlockOptions</code> </td>
+   <td><code>unlockOptions</code><br /> </td>
    <td>Incluye los parámetros necesarios para desbloquear un archivo cifrado. Esto solo es necesario si el archivo está cifrado.<br /> </td>
   </tr>
  </tbody>
@@ -2455,12 +2455,12 @@ Las firmas digitales se pueden verificar para garantizar que no se haya modifica
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Objeto de documento que contiene el PDF<br /> </td>
   </tr>
   <tr>
    <td><code class="code">signatureField
-      Name</code> </td>
+      Name</code><br /> </td>
    <td>Nombre del campo de firma que se debe validar. se puede dar un nombre completo o parcial<br /> </td>
   </tr>
   <tr>
@@ -2609,17 +2609,17 @@ public class VerifyFieldEncryptedPDF {
 
              //Determine the status of the signature
              if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                 myStatus = "The signatures located in the dynamic PDF form are unknown";
+                 myStatus = "The signatures in the dynamic PDF form are unknown";
              else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                 myStatus = "The signatures located in the PDF document are unknown";
+                 myStatus = "The signatures in the PDF document are unknown";
              else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                 myStatus = "The signatures located in a certified PDF form are valid";
+                 myStatus = "The signatures in a certified PDF form are valid";
              else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                 myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                 myStatus = "The signatures in a signed dynamic PDF form are valid";
              else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                 myStatus = "The signatures located in a certified PDF document are valid";
+                 myStatus = "The signatures in a certified PDF document are valid";
              else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                 myStatus = "The signatures located in a signed PDF document are valid";
+                 myStatus = "The signatures in a signed PDF document are valid";
              else if (sigStatus == SignatureStatus.SignatureFormatError)
                  myStatus = "The format of a signature in a signed document is invalid";
              else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -2773,7 +2773,7 @@ AEM permite verificar las firmas digitales en los documentos PDF. Un documento P
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Objeto de documento que contiene el PDF<br /> </td>
   </tr>
   <tr>
@@ -2913,7 +2913,7 @@ public class VerifyEncryptedPDFDoc {
                  dssPrefs,
                  resourceResolver);
 
-             //Get a list of all signatures that are located in the PDF document
+             //Get a list of all signatures that are in the PDF document
              List allSignatures = docInfo.getVerificationInfos();
 
            //Create an Iterator object and iterate through
@@ -2929,17 +2929,17 @@ public class VerifyEncryptedPDFDoc {
 
                    //Determine the status of the signature
                      if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                         myStatus = "The signatures located in the dynamic PDF form are unknown";
+                         myStatus = "The signatures in the dynamic PDF form are unknown";
                      else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                         myStatus = "The signatures located in the PDF document are unknown";
+                         myStatus = "The signatures in the PDF document are unknown";
                      else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                         myStatus = "The signatures located in a certified PDF form are valid";
+                         myStatus = "The signatures in a certified PDF form are valid";
                      else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                         myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                         myStatus = "The signatures in a signed dynamic PDF form are valid";
                      else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                         myStatus = "The signatures located in a certified PDF document are valid";
+                         myStatus = "The signatures in a certified PDF document are valid";
                      else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                         myStatus = "The signatures located in a signed PDF document are valid";
+                         myStatus = "The signatures in a signed PDF document are valid";
                      else if (sigStatus == SignatureStatus.SignatureFormatError)
                          myStatus = "The format of a signature in a signed document is invalid";
                      else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -3071,7 +3071,7 @@ Solo se puede aplicar una firma digital nueva a un campo de firma después de qu
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Objeto de documento que contiene el PDF<br /> </td>
   </tr>
   <tr>
@@ -3079,7 +3079,7 @@ Solo se puede aplicar una firma digital nueva a un campo de firma después de qu
    <td>Nombre del campo de firma<br /> </td>
   </tr>
   <tr>
-   <td><code>unlockOptions</code> </td>
+   <td><code>unlockOptions</code><br /> </td>
    <td>Incluye los parámetros necesarios para desbloquear un archivo cifrado. Esto solo es necesario si el archivo está cifrado<br /> </td>
   </tr>
  </tbody>
@@ -3179,7 +3179,7 @@ public class ClearSignatureField {
 
 ### Obtener certificados de campo de firma {#getting-certifying-signature-field}
 
-Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma que se encuentran en un documento PDF o desea verificarlos, puede recuperarlos mediante programación. El servicio Firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento de PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma que están en un documento de PDF o desea verificarlos, puede recuperarlos mediante programación. El servicio Firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxis**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3192,7 +3192,7 @@ Puede recuperar los nombres de todos los campos de firma que se encuentran en un
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Objeto de documento que contiene el PDF.<br /> </td>
   </tr>
   <tr>
@@ -3243,8 +3243,8 @@ import com.adobe.fd.signatures.client.types.exceptions.SignaturesBaseException;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
@@ -3298,7 +3298,7 @@ public class GetCertifyingSignatureField {
 
 ### Obtener el tipo de cifrado del PDF {#getting-pdf-encryption-type}
 
-Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma que se encuentran en un documento PDF o desea verificarlos, puede recuperarlos mediante programación. El servicio de firma devuelve el nombre completo del campo de firma, como `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento de PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma que están en un documento de PDF o desea verificarlos, puede recuperarlos mediante programación. El servicio de firma devuelve el nombre completo del campo de firma, como `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxis**: `void getPDFEncryption(Document inDoc)`
 
@@ -3311,13 +3311,13 @@ Puede recuperar los nombres de todos los campos de firma que se encuentran en un
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Documento proporcionado como entrada. Puede o no cifrarse.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-El siguiente ejemplo de código Java recupera la información de la firma del campo de firma ubicado en un documento PDF.
+El siguiente ejemplo de código Java recupera la información de la firma del campo de firma dado en un documento de PDF.
 
 ```java
 /*************************************************************************
@@ -3359,12 +3359,12 @@ import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.adobe.fd.encryption.client.EncryptionTypeResult;
 
 /**
- * You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify.
- * If you are unsure of the signature field names that are located in a PDF document or you want to verify the names, you can
+ * You can retrieve the names of all signature fields that are in a PDF document that you want to sign or certify.
+ * If you are unsure of the signature field names that are in a PDF document or you want to verify the names, you can
  * programmatically retrieve them. The Signature service returns the fully qualified name of the signature field, such as
  * form1[0].grantApplication[0].page1[0].SignatureField1[0].
  *
- * The following Java code example retrieves the Signature Info for the given signature field located in a PDF document.
+ * The following Java code example retrieves the Signature Info for the given signature field in a PDF document.
  */
 
 @Component
@@ -3427,11 +3427,11 @@ Quite el cifrado basado en contraseña de un documento PDF para permitir a los u
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Documento suministrado como entrada. Debe estar protegido con una contraseña.<br /> </td>
   </tr>
   <tr>
-   <td><code>password</code> </td>
+   <td><code>password</code><br /> </td>
    <td>Abra un documento o use una contraseña de permiso para quitar la seguridad del documento.<br /> </td>
   </tr>
  </tbody>
@@ -3526,11 +3526,11 @@ Puede quitar el cifrado basado en certificados de un documento PDF para que los 
    <th>Descripción</th>
   </tr>
   <tr>
-   <td><code>inDoc</code> </td>
+   <td><code>inDoc</code><br /> </td>
    <td>Objeto Document que representa el documento PDF cifrado mediante certificado.<br /> </td>
   </tr>
   <tr>
-   <td><code>alias</code> </td>
+   <td><code>alias</code><br /> </td>
    <td>El alias que corresponde a la clave del repositorio de Granite Trust que se utiliza para quitar el cifrado basado en certificados del documento PDF.<br /> </td>
   </tr>
   <tr>

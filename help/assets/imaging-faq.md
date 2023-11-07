@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: ea983b24da66edd02f86614690f8bc5e1e2499d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 1%
@@ -94,13 +94,12 @@ Actualmente, la densidad de píxeles de la visualización proviene de los valore
 | Valores permitidos en la dirección URL de una imagen | Descripción |
 |---|---|
 | `dpr=off` | Desactive la optimización del RGPD en un nivel de URL de imagen individual. |
-| `dpr=on,dprValue` | Anule el valor del DPR detectado por Imágenes inteligentes, con un valor personalizado (tal y como lo detecta cualquier lógica del lado del cliente u otro medio). Valor permitido para `dprValue` es cualquier número bueno que 0. |
+| `dpr=on,dprValue` | Anule el valor del DPR detectado por Imágenes inteligentes, con un valor personalizado (tal y como lo detecta cualquier lógica del lado del cliente u otro medio). Valor permitido para `dprValue` es cualquier número mayor que 0. |
 
 >[!NOTE]
 >
 >* Puede utilizar `dpr=on,dprValue` incluso si la configuración del DPR a nivel de compañía está desactivada.
->* Debido a la optimización del RGPD, cuando la imagen resultante es buena respecto a la configuración de MaxPix Dynamic Media, la anchura de MaxPix siempre se reconoce manteniendo la proporción de aspecto de la imagen.
-
+>* Debido a la optimización del RGPD, cuando la imagen resultante es mayor que la configuración de MaxPix Dynamic Media, la anchura de MaxPix siempre se reconoce manteniendo la proporción de aspecto de la imagen.
 
 | Tamaño de imagen solicitado | Valor de proporción de píxeles del dispositivo (dpr) | Tamaño de imagen entregado |
 |---|---|---|
@@ -146,7 +145,7 @@ Cuando un consumidor solicita una imagen, Smart Imaging comprueba las caracterí
 * Convertir automáticamente a WebP si la conversión AVIF no fue beneficiosa o el explorador no admite AVIF
 * Convertir automáticamente a JPEG 2000 si Safari no admite WebP
 * Convertir automáticamente a JPEGXR para IE 9+ o si Edge no admite WebP\
-   | Formato de imagen | Exploradores admitidos | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+  | Formato de imagen | Exploradores admitidos | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * En los exploradores que no admiten estos formatos, se proporciona el formato de imagen solicitado originalmente.
 
 Si el tamaño de la imagen original es menor que el que produce Smart Imaging, se sirve la imagen original.
@@ -222,26 +221,26 @@ Si ya tiene habilitadas las imágenes inteligentes con WebP, pero desea otras nu
       * AVIF
       * Optimización del ancho de banda de red y DPR
       * PNG a AVIF con pérdida o WebP con pérdida
+
    * Todos los dominios que deben habilitarse para imágenes inteligentes (es decir, `images.company.com` o `mycompany.scene7.com`).
 
-      Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
+     Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
 
-      Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
+     Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
 
-      Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**.
+     Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**.
 
    * Compruebe que está utilizando la red de distribución de contenido (CDN) a través del Adobe y que no está gestionada con una relación directa.
 
    * Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com`y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
+     Para buscar los dominios, abra [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta o cuentas de empresa.
 
-      Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
+     Ir a **[!UICONTROL Configurar]** > **[!UICONTROL Ajustes de aplicación]** > **[!UICONTROL Configuración general]**.
 
-      Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**. Si está utilizando un dominio de Dynamic Media Classic genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+     Busque el campo con la etiqueta **[!UICONTROL Servidor de publicación]**. Si está utilizando un dominio de Dynamic Media Classic genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
 
    * Indique si desea que funcione sobre HTTP/2.
-
 
 1. La Asistencia al cliente de Adobe le añade a la Lista de espera de clientes de imágenes inteligentes en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para administrar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo.
@@ -342,11 +341,11 @@ Para evitar este error, puede:
 
 Añadir `fmt=tif` y `bfc=off` a la ruta URL de la imagen.
 
-## ¿Smart Imaging solo administra el formato de imagen o también la configuración de calidad de imagen para obtener mejores resultados?
+## ¿Smart Imaging solo administra el formato de imagen o también la configuración de calidad de imagen para obtener los mejores resultados?
 
 Imágenes inteligentes utiliza formato y calidad. El resto de los parámetros siguen siendo los mismos, si se solicitan en la dirección URL de la imagen.
 
-## Si Smart Imaging administra la configuración de calidad, ¿hay mínimos y máximos que pueda establecer? En otras palabras, ¿una calidad que no es inferior a 60 ni buena a 80? {#quality-setting}
+## Si Smart Imaging administra la configuración de calidad, ¿hay mínimos y máximos que pueda establecer? En otras palabras, ¿una calidad que no es inferior a 60 ni superior a 80? {#quality-setting}
 
 Actualmente no existe ese aprovisionamiento.
 
@@ -368,7 +367,7 @@ Imágenes inteligentes determina si la conversión es beneficiosa o no. Devuelve
 
 ## ¿Por qué la funcionalidad de proporción de píxeles de dispositivo (dpr) no funciona como se espera con las imágenes compuestas? {#composite-images}
 
-Si una imagen compuesta implica demasiadas capas, la funcionalidad de dpr puede verse afectada al utilizar un modificador de posición. Este problema se conoce y se solucionará en futuras versiones de Imágenes inteligentes. Si otras funcionalidades de imágenes inteligentes no funcionan según lo esperado, puede crear un caso de asistencia para informar del problema.
+Si una imagen compuesta implica demasiadas capas, la funcionalidad de dpr puede verse afectada al utilizar un modificador de posición. Este problema se conoce y debe solucionarse en futuras versiones de Smart Imaging. Si otras funcionalidades de imágenes inteligentes no funcionan según lo esperado, puede crear un caso de asistencia para informar del problema.
 
 ## ¿Por qué Smart Imaging PNG sigue convirtiéndose en WebP/AVIF sin pérdidas? {#convert-to-lossless}
 

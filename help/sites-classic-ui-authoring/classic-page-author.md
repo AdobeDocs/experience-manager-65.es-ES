@@ -8,7 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -27,7 +27,7 @@ AEM A continuación se ofrece una descripción general de la creación con la ay
 
 ## Información general rápida sobre las funciones utilizadas para crear páginas {#quick-overview-of-features-used-for-authoring-pages}
 
-Para ayudarle a crear páginas, el entorno de creación ofrece funciones como las siguientes:
+Para ayudarle a crear páginas, el entorno de creación incluye funciones como las siguientes:
 
 * **Arrastrar y soltar**
 Los componentes (como texto e imagen) y los recursos digitales (como imágenes) se pueden colocar en la página simplemente arrastrándolos y soltándolos en la ubicación deseada.
@@ -38,7 +38,7 @@ Una vez colocado en la página, se puede abrir un cuadro de diálogo específico
 * **Edición in situ**
 Los componentes Texto e Imagen se pueden editar directamente en la página web sin necesidad de abrir un cuadro de diálogo ni una acción de guardado explícita.
 
-* **[Compañero](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
 Ventana &quot;inspector&quot; flotante que aparece en la página editable. Desde aquí se pueden arrastrar nuevos componentes a la página y se pueden ejecutar acciones específicas de página.
 
 * **[Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**

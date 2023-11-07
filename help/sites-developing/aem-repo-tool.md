@@ -1,18 +1,14 @@
 ---
 title: AEM Repo Tool
-seo-title: AEM Repo Tool
 description: AEM AEM La Herramienta de Repo es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de la a través de una línea de comandos comparable a la de FTP. AEM La herramienta de repo de datos es similar a la herramienta Jackrabbit FileVault, pero es más rápida, tiene dependencias mínimas y es un script bash simple.
-seo-description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
-uuid: 6c4a3504-e8e8-46c0-83cb-c18d9791f93e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
 exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '281'
 ht-degree: 2%
 
 ---
@@ -31,7 +27,7 @@ La herramienta no admite varias rutas de filtro ni de FileVault `filter.xml`.
 
 >[!CAUTION]
 >
->AEM Tenga en cuenta que la herramienta de repo de siempre sobrescribirá todo el archivo o directorio especificado.
+>AEM La herramienta de repositorio de datos siempre sobrescribe todo el archivo o directorio especificado.
 
 ## Descarga y documentación {#download-and-documentation}
 

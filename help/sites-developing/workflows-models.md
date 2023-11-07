@@ -1,19 +1,15 @@
 ---
 title: Creación de modelos de flujo de trabajo
-seo-title: Creating Workflow Models
 description: Puede crear un modelo del flujo de trabajo para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2451'
 ht-degree: 4%
 
 ---
@@ -30,14 +26,14 @@ Cuando un usuario inicia un flujo de trabajo, se inicia una instancia; este es e
 
 ## Creación de un nuevo flujo de trabajo {#creating-a-new-workflow}
 
-La primera vez que cree un nuevo modelo de flujo de trabajo, contendrá lo siguiente:
+La primera vez que cree un modelo del flujo de trabajo, contendrá:
 
 * Los pasos, **Inicio de flujo** y **Fin de flujo**.
 Representan el principio y el final del flujo de trabajo. Estos pasos son obligatorios y no se pueden editar ni eliminar.
 * Un ejemplo **Participante** paso denominado **Paso 1**.
 Este paso está configurado para asignar un elemento de trabajo al iniciador del flujo de trabajo. Edite o elimine este paso y agregue los pasos necesarios.
 
-Para crear un nuevo flujo de trabajo con el editor:
+Para crear un flujo de trabajo con el editor:
 
 1. Abra el **Modelos de flujo de trabajo** consola; mediante **Herramientas**, **Flujo de trabajo**, **Modelos** o, por ejemplo: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Seleccione **Crear** y, a continuación, **Crear modelo**.
@@ -86,8 +82,8 @@ Al abrir un [Modelo predeterminado o heredado](/help/sites-developing/workflows.
 * El navegador de pasos no está disponible (lado izquierdo).
 * Hay un **Editar** acción disponible en la barra de herramientas (lado derecho).
 * Inicialmente, el modelo y sus propiedades se presentan en modo de solo lectura como:
-   * Los flujos de trabajo predeterminados se encuentran en `/libs`
-   * Los flujos de trabajo heredados se encuentran en `/etc`
+   * Los flujos de trabajo predeterminados están en `/libs`
+   * Los flujos de trabajo heredados están en `/etc`
 Seleccionar **Editar** hará:
 * realice una copia del flujo de trabajo en `/conf`
 * Hacer que el explorador de Pasos esté disponible
@@ -101,7 +97,7 @@ Seleccionar **Editar** hará:
 
 ### Adición de un paso a un modelo {#adding-a-step-to-a-model}
 
-Deberá agregar pasos al modelo para representar la actividad que se va a realizar: cada paso realiza una actividad específica. AEM Hay una selección de componentes de paso disponibles en una instancia de estándar.
+Debe agregar pasos al modelo para representar la actividad que se va a realizar: cada paso realiza una actividad específica. AEM Hay una selección de componentes de paso disponibles en una instancia de estándar.
 
 Cuando se edita un modelo, los pasos disponibles aparecen en los distintos grupos del **Explorador de pasos**. Por ejemplo:
 
@@ -167,7 +163,7 @@ Puede **Configurar** y personalizar el comportamiento de un paso del flujo de tr
 
 ### Creación de un flujo de trabajo transitorio {#creating-a-transient-workflow}
 
-Puede crear un [Transitorio](/help/sites-developing/workflows.md#transient-workflows) modelo de flujo de trabajo al crear un nuevo modelo o al editar uno existente:
+Puede crear un [Transitorio](/help/sites-developing/workflows.md#transient-workflows) modelo de flujo de trabajo al crear un modelo o al editar uno existente:
 
 1. Abra el modelo de flujo de trabajo para [edición](#editinganexistingworkflow).
 1. Seleccionar **Propiedades del modelo de flujo de trabajo** en la barra de herramientas.
@@ -207,7 +203,7 @@ Si un modelo de flujo de trabajo está presente en la IU clásica, pero no apare
 
 ### Configuración de un flujo de trabajo para la compatibilidad con varios recursos {#configuring-a-workflow-for-multi-resource-support}
 
-Puede configurar un modelo del flujo de trabajo para [Compatibilidad con varios recursos](/help/sites-developing/workflows.md#multi-resource-support) al crear un nuevo modelo o al editar uno existente:
+Puede configurar un modelo del flujo de trabajo para [Compatibilidad con varios recursos](/help/sites-developing/workflows.md#multi-resource-support) al crear un modelo o al editar uno existente:
 
 1. Abra el modelo de flujo de trabajo para [edición](#editinganexistingworkflow).
 1. Seleccionar **Propiedades del modelo de flujo de trabajo** en la barra de herramientas.
@@ -264,7 +260,7 @@ Para definir **Fases** para el flujo de trabajo:
 
 Para exportar un modelo de flujo de trabajo en un paquete:
 
-1. Cree un nuevo paquete con la variable [Administrador de paquetes](/help/sites-administering/package-manager.md#package-manager):
+1. Cree un paquete utilizando [Administrador de paquetes](/help/sites-administering/package-manager.md#package-manager):
 
    1. Vaya al Administrador de paquetes mediante **Herramientas**, **Implementación**, **Paquetes**.
 
@@ -299,7 +295,7 @@ Puede configurar un formulario para que el flujo de trabajo seleccionado lo proc
 
 Para configurar el flujo de trabajo que se utilizará con el formulario:
 
-1. Cree una nueva página y ábrala para editarla.
+1. Cree una página y ábrala para editarla.
 1. Añadir un **Form** a la página.
 1. **Configurar** el **Inicio de formulario** componente que apareció en la página.
 1. Uso **Iniciar flujo de trabajo** para seleccionar el flujo de trabajo deseado de entre los disponibles:
@@ -328,7 +324,7 @@ AEM También puede configurar la visualización de la **DEPURAR** mensajes en lo
 
 Para ilustrar algunas de las posibilidades de creación de un flujo de trabajo, en el siguiente ejemplo se crea una variación del `Publish Example` flujo de trabajo.
 
-1. [Crear un nuevo modelo de flujo de trabajo](#creating-a-new-workflow).
+1. [Crear un modelo del flujo de trabajo](#creating-a-new-workflow).
 
    El nuevo flujo de trabajo contendrá:
 

@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 23%
 
 ---
@@ -36,7 +36,7 @@ La forma más sencilla de hacerlo es dar el **projects-users** acceso de lectura
 
 ## Creación de un proyecto {#creating-a-project}
 
-Siga estos pasos para crear un nuevo proyecto.
+Siga estos pasos para crear un proyecto.
 
 1. En el **Proyectos** consola, toque o haga clic en **Crear** para abrir **Crear proyecto** asistente.
 1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información sobre las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
@@ -76,7 +76,7 @@ Para agregar elementos a un mosaico:
 
    ![cheurón en mosaico](assets/project-tile-create-task.png)
 
-1. Agregue el elemento al mosaico como lo haría al crear un mosaico nuevo. Se describen los mosaicos del proyecto [aquí.](/help/sites-authoring/projects.md#project-tiles)
+1. Agregue el elemento al mosaico como lo haría al crear un mosaico. Se describen los mosaicos del proyecto [aquí.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Visualización de información del proyecto {#viewing-project-info}
 

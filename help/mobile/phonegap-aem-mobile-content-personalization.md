@@ -1,15 +1,15 @@
 ---
 title: Personalización de contenido de Adobe Experience Manager Mobile
-description: AEM AEM Siga esta página para obtener más información sobre la función de personalización de contenido móvil de Adobe Experience Manager () que permite a los autores de la aplicación personalizar el contenido de la aplicación móvil mediante Adobe Target.
+description: Siga esta página para obtener más información sobre la función de personalización de contenido móvil de Adobe AEM AEM Experience Manager () que permite a los autores de la aplicación personalizar el contenido de la aplicación móvil mediante Adobe Target.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2609'
-ht-degree: 0%
+source-wordcount: '2607'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 >
 >Este documento forma parte del [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guía, un punto de partida recomendado para referencia de AEM Mobile.
 
-La función de personalización de contenido de AEM Mobile permite [Autores AEM](#author) para personalizar el contenido de la aplicación móvil mediante [Adobe Target](https://business.adobe.com/products/target/adobe-target.html). Esto permite enviar ofertas segmentadas a usuarios de aplicaciones móviles. Adobe Experience Manager Mobile permite crear, segmentar y entregar contenido que proporcione al usuario contenido específico para sus propios gustos individuales.
+La función de personalización de contenido de AEM Mobile permite [AEM Autores de](#author) para personalizar el contenido de la aplicación móvil mediante [Adobe Target](https://business.adobe.com/products/target/adobe-target.html?lang=es). Esto permite enviar ofertas segmentadas a usuarios de aplicaciones móviles. Adobe Experience Manager Mobile permite crear, segmentar y entregar contenido que proporcione al usuario contenido específico para sus propios gustos individuales.
 
 AEM En la práctica, para que los autores empiecen a crear este contenido, los administradores y desarrolladores deben preparar primero el entorno.
 
@@ -55,7 +55,7 @@ Se sugiere que, como parte de la configuración de usuarios y grupos, el grupo d
 
 Para que el contenido de destino funcione para aplicaciones móviles, hay dos servicios que deben configurarse: el servicio Adobe Target y el servicio Adobe Mobile Services. El servicio Adobe Target proporciona el motor para procesar las solicitudes de los clientes y devolver el contenido personalizado. El servicio de Adobe Mobile Services proporciona la conexión entre los servicios de Adobe y la aplicación móvil a través del archivo ADBMobileConfig.json, que consume el complemento AMS Cordova. Desde el panel de control de AEM Mobile, puede configurar la aplicación añadiendo los dos servicios.
 
-En el panel de AEM Mobile, busque Administrar Cloud Services y haga clic en el botón +.
+En el panel de AEM Mobile, busque Administrar Cloud Service y haga clic en el botón +.
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -87,7 +87,7 @@ Ahora que el código de cliente se ha asociado a la aplicación móvil, cuando e
 
 ### Cloud Service de Adobe Mobile Services {#adobe-mobile-service-cloud-service}
 
-Ahora que AMS está configurado, es hora de asociar la aplicación móvil al Tablero móvil de Adobe. En el panel de AEM Mobile, busque Administrar Cloud Services y haga clic en el botón +.
+Ahora que AMS está configurado, es hora de asociar la aplicación móvil al Tablero móvil de Adobe. En el panel de AEM Mobile, busque Administrar Cloud Service y haga clic en el botón +.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -97,7 +97,7 @@ Seleccione la tarjeta de Adobe Mobile Services y haga clic en Siguiente.
 
 En el paso del asistente Crear o Seleccionar, seleccione la lista desplegable Mobile Services y la entrada Crear configuración. Proporcione un título, una empresa, un nombre de usuario y una contraseña, y seleccione el centro de datos adecuado. Si no conoce estos valores, póngase en contacto con el administrador de Adobe Mobile Services para obtenerlos. Una vez rellenados todos los campos, haga clic en **Verificar**. El proceso de verificación va a AMS y verifica las credenciales de la cuenta. Una vez validada correctamente, se rellena una lista de aplicaciones móviles en la que se selecciona la aplicación móvil asociada en el menú desplegable. Clic **Enviar** para completar el asistente. El proceso puede tardar un poco en obtener los datos de configuración y cualquier análisis asociado con la aplicación. Una vez completado el proceso, haga clic en **Listo** para volver al Panel de control de Adobe Mobile.
 
-Al volver al panel móvil, el mosaico Administrar Cloud Services contiene el servicio en la nube de AMS. Tenga en cuenta también que el mosaico Analizar métricas se rellena con informes de ciclo vital.
+Al volver al panel móvil, el mosaico Administrar Cloud Service contiene el servicio en la nube de AMS. Además, el mosaico Analizar métricas se rellena con informes de ciclo vital.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -137,7 +137,7 @@ Cuando el contenido se almacena en zona intermedia mediante el panel de Adobe Mo
 
 #### Componentes {#components}
 
-AEM La base de cualquier contenido suele ser un componente de página que amplía uno de los componentes de página base wcm/foundation/components/page o foundation/components/page, en función de si utiliza HTL o JSP. La duración de estos pasos se centra en el uso del componente wcm/foundation/components/page. La estructura básica del componente de página se desglosa en varios scripts, cada uno de los cuales proporciona el propósito específico de permitir al desarrollador organizar y anular su código si es necesario. Los dos scripts de interés para la personalización son head.html y body.html. Estos dos scripts proporcionan un área en la que se puede insertar código para admitir ContextHub, Cloud Services y Mobile Authoring.
+AEM La base de cualquier contenido suele ser un componente de página que amplía uno de los componentes de página base wcm/foundation/components/page o foundation/components/page, en función de si utiliza HTL o JSP. La duración de estos pasos se centra en el uso del componente wcm/foundation/components/page. La estructura básica del componente de página se desglosa en varios scripts, cada uno de los cuales proporciona el propósito específico de permitir al desarrollador organizar y anular su código si es necesario. Los dos scripts de interés para la personalización son head.html y body.html. Estos dos scripts proporcionan un área en la que se puede insertar código para admitir ContextHub, Cloud Service y Mobile Authoring.
 
 A continuación se ofrece una descripción general de los dos scripts principales utilizados para habilitar la segmentación de contenido.
 

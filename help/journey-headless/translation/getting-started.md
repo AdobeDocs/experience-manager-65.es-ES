@@ -2,10 +2,10 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 89%
+source-wordcount: '1490'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ Este documento le ayuda a comprender cómo empezar a traducir contenido sin enca
 
 ## Requisitos y requisitos previos {#requirements-prerequisites}
 
-Antes de empezar a traducir el contenido AEM sin encabezado, existen varios requisitos.
+AEM Antes de empezar a traducir el contenido sin encabezado, existen varios requisitos que se deben cumplir
 
 ### Conocimiento {#knowledge}
 

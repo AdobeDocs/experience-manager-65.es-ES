@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '359'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Información general {#overview}
 
-AEM En la sección de creación de la documentación se describe la adición de funciones de comunidades a los sitios en modo de edición de creación, así como también la descripción de las configuraciones de los componentes, que se pueden utilizar para crear páginas de destino.
+AEM En la sección de creación de la documentación se describe cómo agregar funciones de comunidades a sitios de creación en el modo de edición de creación, así como la descripción de configuraciones de componentes.
 
 AEM Los componentes se pueden explorar mediante una instancia de y la función interactiva [Guía de componentes de la comunidad](components-guide.md).
 

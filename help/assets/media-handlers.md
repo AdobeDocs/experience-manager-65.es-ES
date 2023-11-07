@@ -6,9 +6,9 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2156'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Los controladores de medios son servicios de [!DNL Assets] que realizan acciones
 
 >[!NOTE]
 >
->Consulte la [Formatos compatibles con Assets](assets-formats.md) para obtener una descripción de todos los formatos admitidos por [!DNL Assets] así como las funciones compatibles con cada formato.
+>Consulte la [Formatos compatibles con Assets](assets-formats.md) para obtener una descripción de todos los formatos admitidos por [!DNL Assets] y funciones compatibles con cada formato.
 
 ## Controladores de medios predeterminados {#default-media-handlers}
 
@@ -83,9 +83,9 @@ Para habilitar o deshabilitar un controlador de medios:
 1. Actualice la página: aparece un icono junto al controlador de medios que indica que está desactivado.
 1. Para habilitar el controlador de medios, haga clic en **[!UICONTROL Activar]** junto al nombre del controlador de medios.
 
-### Crear un nuevo controlador de medios {#creating-a-new-media-handler}
+### Crear un controlador de medios {#creating-a-new-media-handler}
 
-Para admitir un nuevo tipo de medios o ejecutar tareas específicas en un recurso, es necesario crear un nuevo controlador de medios. En esta sección se describe cómo proceder.
+Para admitir un nuevo tipo de medios o ejecutar tareas específicas en un recurso, es necesario crear un controlador de medios. En esta sección se describe cómo proceder.
 
 #### Clases e interfaces importantes {#important-classes-and-interfaces}
 
@@ -151,8 +151,8 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
       * ID del artefacto: myBundle.
       * Nombre: My [!DNL Experience Manager] paquete.
       * Descripción: Esta es mi [!DNL Experience Manager] paquete.
-   1. Haga clic en **[!UICONTROL Finalizar]**.
 
+   1. Haga clic en **[!UICONTROL Finalizar]**.
 
 1. Configure las variables [!DNL Java] compilador a la versión 1.5:
 
@@ -162,8 +162,8 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
       * Nivel de cumplimiento del compilador
       * Compatibilidad de archivos .class generada
       * Compatibilidad de origen
-   1. Haga clic en **[!UICONTROL Aceptar]**. En la ventana de diálogo, haga clic en **[!UICONTROL Sí]**.
 
+   1. Haga clic en **[!UICONTROL Aceptar]**. En la ventana de diálogo, haga clic en **[!UICONTROL Sí]**.
 
 1. Sustituya el código en la `pom.xml` con el siguiente código:
 
@@ -438,8 +438,8 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
    1. Haga clic con el botón derecho en `myBundle` proyecto, seleccione **[!UICONTROL Ejecutar como]**, entonces **[!UICONTROL Instalación de Maven]**.
    1. El paquete `myBundle-0.0.1-SNAPSHOT.jar` (que contiene la clase compilada) se crea en `myBundle/target`.
 
-1. En el explorador CRX, cree un nuevo nodo en `/apps/myApp`. Nombre = `install`, Tipo = `nt:folder`.
-1. Copiar el paquete `myBundle-0.0.1-SNAPSHOT.jar` y guárdelo en `/apps/myApp/install` (por ejemplo, con WebDAV). El nuevo controlador de texto ahora está activo en [!DNL Experience Manager].
+1. En el explorador CRX, cree un nodo en `/apps/myApp`. Nombre = `install`, Tipo = `nt:folder`.
+1. Copiar el paquete `myBundle-0.0.1-SNAPSHOT.jar` y guárdelo en `/apps/myApp/install` (por ejemplo, con WebDAV) El nuevo controlador de texto ahora está activo en [!DNL Experience Manager].
 1. En el explorador, abra el [!UICONTROL Consola de administración web Apache Felix]. Seleccione el [!UICONTROL Componentes] y deshabilite el controlador de texto predeterminado `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Controlador de medios basado en línea de comandos {#command-line-based-media-handler}
@@ -494,7 +494,7 @@ Instalar [!DNL ImageMagick] en el disco que aloja el [!DNL Experience Manager] s
 Para probar el flujo de trabajo modificado, agregue un recurso a `/content/dam`.
 
 1. En el sistema de archivos, obtenga una imagen de TIFF de su elección. Cambiarle el nombre a `myImage.tiff` y cópielo en `/content/dam`, por ejemplo, utilizando WebDAV.
-1. Vaya a la **[!UICONTROL DAM CQ5]** consola, por ejemplo `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Vaya a la **[!UICONTROL DAM CQ5]** consola, por ejemplo, `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra el recurso **[!UICONTROL myImage.tiff]** y compruebe que se han creado la imagen volteada y las tres miniaturas.
 
 #### Configurar el paso del proceso CommandLineProcess {#configuring-the-commandlineprocess-process-step}
@@ -507,7 +507,7 @@ Separe los valores del [!UICONTROL Argumentos del proceso] usando una coma y no 
 |---|---|
 | mime:&lt;mime-type> | Argumento opcional. El proceso se aplica si el recurso tiene el mismo tipo MIME que el del argumento. <br>Se pueden definir varios tipos MIME. |
 | tn:&lt;width>:&lt;height> | Argumento opcional. El proceso crea una miniatura con las dimensiones definidas en el argumento. <br>Se pueden definir varias miniaturas. |
-| cmd: &lt;command> | Define el comando que se ejecuta. La sintaxis depende de la herramienta de línea de comandos. Solo se puede definir un comando. <br>Se pueden utilizar las siguientes variables para crear el comando:<br>`${filename}`: nombre del archivo de entrada, por ejemplo original.jpg <br> `${file}`: nombre de ruta completo del archivo de entrada, por ejemplo `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directorio del archivo de entrada, por ejemplo `/tmp/cqdam0816.tmp` <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo original <br>`${extension}`: extensión del archivo de entrada, por ejemplo JPG. |
+| cmd: &lt;command> | Define el comando que se ejecuta. La sintaxis depende de la herramienta de línea de comandos. Solo se puede definir un comando. <br>Se pueden utilizar las siguientes variables para crear el comando:<br>`${filename}`: nombre del archivo de entrada, por ejemplo, original.jpg <br> `${file}`: nombre de ruta completo del archivo de entrada, por ejemplo, `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directorio del archivo de entrada, por ejemplo, `/tmp/cqdam0816.tmp` <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo, original <br>`${extension}`: extensión del archivo de entrada, por ejemplo, JPG. |
 
 Por ejemplo, si [!DNL ImageMagick] está instalado en el disco que aloja el [!DNL Experience Manager] y si crea un paso de proceso utilizando [!UICONTROL CommandLineProcess] como implementación y los siguientes valores como [!UICONTROL Argumentos del proceso]:
 
@@ -530,4 +530,3 @@ Utilice lo siguiente [!UICONTROL Argumentos del proceso] para crear la represent
 >[!MORELIKETHIS]
 >
 >* [Procesar recursos](assets-workflow.md)
-

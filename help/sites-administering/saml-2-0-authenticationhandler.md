@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '842'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ El [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 >[!NOTE]
 >
->El Controlador de autenticación SAML 2.0 está deshabilitado de forma predeterminada. Debe establecer al menos una de las siguientes propiedades para habilitar el controlador:
+>El Controlador de autenticación SAML 2.0 está deshabilitado de forma predeterminada. Establezca al menos una de las siguientes propiedades para habilitar el controlador:
 >
 >* La URL del POST del proveedor de identidad o la URL del IDP.
 >* El ID de entidad de Service Provider.

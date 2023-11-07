@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 40%
 
 ---
@@ -27,7 +27,7 @@ Una anotación coloca un marcador de color/nota adhesiva en la página. La anota
 
 >[!NOTE]
 >
->Las anotaciones creadas en la IU clásica se mostrarán en la IU táctil. Sin embargo, los bocetos son específicos de la interfaz de usuario y solo se muestran en la interfaz en la que se crearon.
+>Las anotaciones creadas en la IU clásica se muestran en la IU táctil. Sin embargo, los bocetos son específicos de la interfaz de usuario y solo se muestran en la interfaz en la que se crearon.
 
 >[!CAUTION]
 >

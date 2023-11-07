@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2206'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,6 @@ Después de configurar la integración, los cambios en las herramientas y reglas
 >* 3.x está configurado con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x está configurado con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-
 
 ## Opciones de implementación {#deployment-options}
 
@@ -145,7 +144,7 @@ Al alojar las bibliotecas de Dynamic Tag Management AEM AEM en la, configura aut
   </tr>
   <tr>
    <td>Flujo de trabajo de descarga</td>
-   <td><p>Modelo de flujo de trabajo que se utiliza para descargar e instalar la biblioteca de Dynamic Tag Management. El modelo predeterminado es Descarga del paquete DTM predeterminado. Utilice este modelo a menos que haya creado uno personalizado.</p> <p>Tenga en cuenta que el flujo de trabajo de descarga predeterminado activa automáticamente las bibliotecas cuando se descargan.</p> </td>
+   <td><p>Modelo de flujo de trabajo que se utiliza para descargar e instalar la biblioteca de Dynamic Tag Management. El modelo predeterminado es Descarga del paquete DTM predeterminado. Utilice este modelo a menos que haya creado uno personalizado.</p> <p>El flujo de trabajo de descarga predeterminado activa automáticamente las bibliotecas cuando se descargan.</p> </td>
   </tr>
   <tr>
    <td>Sugerencia de dominio</td>
@@ -161,7 +160,7 @@ Al alojar las bibliotecas de Dynamic Tag Management AEM AEM en la, configura aut
   </tr>
   <tr>
    <td>Habilitar el importador de encuestas</td>
-   <td><p>(Opcional) Seleccione para descargar e instalar periódicamente la biblioteca de Dynamic Tag Management y asegurarse de que está utilizando una versión actualizada. Cuando se selecciona, Dynamic Tag Management no envía solicitudes de POST HTTP a la dirección URL del vínculo de implementación.</p> <p>AEM La configuración automática de la propiedad Implementación de URL de enlace de las propiedades de Descarga de biblioteca de la propiedad web de Dynamic Tag Management se configura automáticamente. Cuando se selecciona, la propiedad se configura sin valor. Cuando no se selecciona, la propiedad se configura con la dirección URL de la configuración de Dynamic Tag Management.</p> <p>Habilite el importador de encuestas cuando el vínculo de implementación de Dynamic Tag Management AEM AEM no se pueda conectar a la red de seguridad, por ejemplo, cuando la red de seguridad esté detrás de un cortafuegos, por ejemplo, cuando la red de seguridad esté detrás de un cortafuegos.</p> </td>
+   <td><p>(Opcional) Seleccione para descargar e instalar periódicamente la biblioteca de Dynamic Tag Management y asegurarse de que está utilizando una versión actualizada. Cuando se selecciona, Dynamic Tag Management no envía solicitudes de POST HTTP a la dirección URL del vínculo de implementación.</p> <p>AEM La configuración automática de la propiedad Implementación de URL de enlace de las propiedades de Descarga de biblioteca de la propiedad web de Dynamic Tag Management se configura automáticamente. Cuando se selecciona, la propiedad se configura sin valor. Cuando no se selecciona, la propiedad se configura con la dirección URL de la configuración de Dynamic Tag Management.</p> <p>Habilite el importador de encuestas cuando el vínculo de implementación de Dynamic Tag Management AEM AEM no se pueda conectar a la red, por ejemplo, cuando el usuario esté detrás de un cortafuegos, o cuando el vínculo de implementación de Dynamic no se pueda conectar a la red de seguridad.</p> </td>
   </tr>
   <tr>
    <td>Expresión de programación</td>
@@ -201,7 +200,7 @@ Configure las siguientes propiedades para la configuración de Dynamic Tag Manag
 
 El siguiente procedimiento utiliza la interfaz de usuario táctil para configurar la integración con Dynamic Tag Management.
 
-1. En el carril, haga clic en Herramientas > Operaciones > Cloud > Cloud Services.
+1. En el carril, haga clic en Herramientas > Operaciones > Cloud > Cloud Service.
 1. En el área de Dynamic Tag Management, aparece uno de los siguientes vínculos para agregar una configuración:
 
    * Haga clic en Configurar ahora si esta es la primera configuración que agrega.
@@ -229,7 +228,7 @@ El siguiente procedimiento utiliza la interfaz de usuario táctil para configura
 
 Descargue manualmente las bibliotecas de Dynamic Tag Management AEM para actualizarlas inmediatamente en el momento en que lo haga de forma. Por ejemplo, realice la descarga manual si desea probar una biblioteca actualizada antes de que el importador de encuestas programe la descarga automática de la biblioteca.
 
-1. En el carril, haga clic en Herramientas > Operaciones > Cloud > Cloud Services.
+1. En el carril, haga clic en Herramientas > Operaciones > Cloud > Cloud Service.
 1. En el área de Dynamic Tag Management, haga clic en Mostrar configuraciones y, a continuación, haga clic en la configuración.
 1. En el área Configuración de ensayo o Configuración de producción, haga clic en el botón Déclencheur Descargar flujo de trabajo para descargar e implementar el paquete de biblioteca.
 
@@ -247,7 +246,6 @@ Descargue manualmente las bibliotecas de Dynamic Tag Management AEM para actuali
 >* `servertype`
 >
 
-
 ## Asociación de una configuración de Dynamic Tag Management al sitio {#associating-a-dynamic-tag-management-configuration-with-your-site}
 
 Asocie la configuración de Dynamic Tag Management AEM con las páginas del sitio web para que agregue la secuencia de comandos necesaria a las páginas. Asocie la página raíz del sitio con la configuración. Todos los descendientes de esa página heredan la asociación. Si es necesario, puede anular la asociación en una página descendiente.
@@ -255,8 +253,8 @@ Asocie la configuración de Dynamic Tag Management AEM con las páginas del siti
 Utilice el siguiente procedimiento para asociar una página y sus descendientes a una configuración de Dynamic Tag Management.
 
 1. Abra la página raíz del sitio en la IU clásica.
-1. Utilice la barra de tareas para abrir las propiedades de la página.
-1. En la pestaña Cloud Services, haga clic en Agregar servicio, seleccione Dynamic Tag Management y, a continuación, haga clic en Aceptar.
+1. Utilice el Sidekick para abrir las propiedades de la página.
+1. En la pestaña Cloud Service, haga clic en Agregar servicio, seleccione Dynamic Tag Management y, a continuación, haga clic en Aceptar.
 
    ![chlimage_1-357](assets/chlimage_1-357.png)
 
@@ -265,8 +263,8 @@ Utilice el siguiente procedimiento para asociar una página y sus descendientes 
 Utilice el siguiente procedimiento para anular la asociación de configuración heredada de una página. La anulación afecta a la página y a todos sus descendientes.
 
 1. Abra la página en la IU clásica.
-1. Utilice la barra de tareas para abrir las propiedades de la página.
-1. En la ficha Cloud Services, haga clic en el icono de candado situado junto a la propiedad Heredado de y, a continuación, haga clic en Sí en el cuadro de diálogo de confirmación.
+1. Utilice el Sidekick para abrir las propiedades de la página.
+1. En la ficha Cloud Service, haga clic en el icono de candado situado junto a la propiedad Heredado de y, a continuación, haga clic en Sí en el cuadro de diálogo de confirmación.
 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 

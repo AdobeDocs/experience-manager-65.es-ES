@@ -1,5 +1,5 @@
 ---
-title: Configuración de nube
+title: Configuración de la nube
 seo-title: Cloud Configuration
 description: La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager AEM () comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. Siga esta página para obtener más información.
 seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '407'
 ht-degree: 2%
 
 ---
 
-# Configuración de nube{#cloud-configuration}
+# Configuración de la nube{#cloud-configuration}
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ A partir de ahí, es posible publicar, previsualizar y administrar contenido. AE
 >
 >Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración.
 
-Para configurar los Cloud Services de Mobile On-Demand, haga clic en la parte superior derecha de la barra de herramientas **Administrar conexión** mosaico del tablero de la aplicación.
+Para configurar los Cloud Service de Mobile On-Demand, haga clic en el icono de engranaje superior derecho del panel **Administrar conexión** mosaico del tablero de la aplicación.
 
 Debe estar familiarizado con el panel de la aplicación y los mosaicos disponibles. Consulte [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
 
@@ -54,7 +54,7 @@ Los siguientes pasos describen la configuración del vínculo a la nube:
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Introduzca la configuración ya existente o cree una nueva introduciendo el **Título de configuración**, **ID de dispositivo**, y **Token de dispositivo**.
+1. Introduzca la configuración ya existente o cree una introduciendo el **Título de configuración**, **ID de dispositivo**, y **Token de dispositivo**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 

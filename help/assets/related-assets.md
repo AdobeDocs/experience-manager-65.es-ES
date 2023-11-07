@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Si el archivo de origen está relacionado con otro recurso, [!DNL Experience Man
 
 *Imagen: recurso de origen de los recursos relacionados que se van a incluir en la traducción.*
 
-1. Traduzca los recursos de la carpeta de origen a un idioma de destino siguiendo los pasos indicados en [Creación de un nuevo proyecto de traducción](translation-projects.md#create-a-new-translation-project). Por ejemplo, en este caso, traduzca sus recursos al francés.
+1. Traduzca los recursos de la carpeta de origen a un idioma de destino siguiendo los pasos indicados en [Creación de un proyecto de traducción](translation-projects.md#create-a-new-translation-project). Por ejemplo, en este caso, traduzca sus recursos al francés.
 
 1. Desde el [!UICONTROL Proyectos] , abra la carpeta de traducción.
 

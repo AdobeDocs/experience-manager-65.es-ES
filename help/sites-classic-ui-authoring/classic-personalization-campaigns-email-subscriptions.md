@@ -1,18 +1,14 @@
 ---
 title: Administración de suscripciones
-seo-title: Managing Subscriptions
 description: AEM Se puede pedir a los usuarios que se suscriban a las listas de correo del proveedor de servicios de correo electrónico con la ayuda del componente Formulario utilizado en una página web de. AEM AEM Para preparar una página de con un formulario de suscripción para suscribirse a las listas de correo del servicio de correo electrónico, debe aplicar la configuración del servicio correspondiente a la página de la página que visitará el suscriptor potencial.
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >El Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
->La recomendación es aprovechar [Adobe Campaign AEM y su integración con la](/help/sites-administering/campaign.md).
+>La recomendación es utilizar [Adobe Campaign AEM y su integración con la](/help/sites-administering/campaign.md).
 
 Se puede pedir a los usuarios que se suscriban a **Proveedor de servicio de correo electrónico** listas de correo con la ayuda de **Form** AEM Componente utilizado en una página web de. AEM AEM Para preparar una página de con un formulario de suscripción para suscribirse a las listas de correo del servicio de correo electrónico, debe aplicar la configuración del servicio correspondiente a la página de la página que visitará el suscriptor potencial.
 
@@ -72,7 +68,7 @@ Para crear un formulario de registro y configurarlo para suscripciones a las lis
 Para que el servicio de correo electrónico pueda suscribirse y cancelar la suscripción a través del formulario de registro en la instancia de publicación, debe seguir estos pasos:
 
 1. En la instancia de autor de, vaya al Administrador de paquetes.
-1. Cree un nuevo paquete. Definir el filtro como `/etc/key`.
+1. Cree un paquete. Definir el filtro como `/etc/key`.
 1. Genere y descargue el paquete.
 1. Vaya al Administrador de paquetes en la instancia de publicación y cargue este paquete.
 1. Vaya a la consola OSGI de publicación y reinicie el paquete llamado **Adobe Granite Crypto Support**.

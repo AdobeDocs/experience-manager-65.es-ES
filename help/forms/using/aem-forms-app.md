@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2450'
-ht-degree: 100%
+source-wordcount: '2448'
+ht-degree: 99%
 
 ---
 
@@ -123,7 +123,7 @@ Consulte [Usar el guardado automático en la aplicación de AEM Forms](/help/for
 
 ## Diferencias entre la bandeja de entrada de AEM y las características de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. La bandeja de entrada de AEM solo funciona con [Flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md) mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. Para obtener más información sobre las diferencias entre la Bandeja de entrada de AEM y las funciones de la aplicación de AEM Forms, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
+Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. AEM La bandeja de entrada de solo funciona con [Flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md) mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. Para obtener más información sobre las diferencias entre la Bandeja de entrada de AEM y las funciones de la aplicación de AEM Forms, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
 
 ## Formularios compatibles {#supported-forms}
 
@@ -218,4 +218,4 @@ Puede actualizar la aplicación directamente desde Play Store.
 
 * **Si la versión anterior de la aplicación se crea e instala con el código fuente (aplicable para iOS y Android)**:
 
-   Antes de instalar la nueva aplicación, sincronice todos los datos con el servidor de AEM Forms. Una vez sincronizados los datos, desinstale la versión anterior de la aplicación e instale la nueva.
+  Antes de instalar la nueva aplicación, sincronice todos los datos con el servidor de AEM Forms. Una vez sincronizados los datos, desinstale la versión anterior de la aplicación e instale la nueva.

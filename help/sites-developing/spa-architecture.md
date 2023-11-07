@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2056'
-ht-degree: 4%
+source-wordcount: '2055'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +29,7 @@ SPA AEM AEM SPA AEM Este artículo presenta preguntas importantes que se deben t
 El desarrollo de aplicaciones de una sola página en AEM supone que el desarrollador front-end sigue las prácticas recomendadas estándar al crear una SPA. AEM SPA Si, como desarrollador front-end, sigue estas prácticas recomendadas generales y algunos principios específicos de la interfaz de usuario de la aplicación, el administrador de la aplicación de la aplicación de la interfaz de usuario de su cuenta de usuario de la aplicación de, el administrador de la aplicación de la aplicación de la configuración de usuario de la aplicación estará funcionando con la siguiente: [AEM y sus capacidades de creación de contenido](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[Portabilidad](/help/sites-developing/spa-architecture.md#portability) -** Al igual que con cualquier otro componente, los componentes deben crearse para que sean lo más portátiles posible. La SPA debe crearse con componentes transferibles y reutilizables.
-* **[AEM Estructura del sitio de](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)** AEM : el desarrollador front-end crea componentes y es propietario de su estructura interna, pero depende de la definición de la estructura de contenido del sitio en la que se basa para definir el contenido.
+* **[AEM impulsa la estructura del sitio](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**: el desarrollador front-end crea componentes y posee su estructura interna, pero depende de AEM para definir la estructura de contenido del sitio.
 * **[Procesamiento dinámico](/help/sites-developing/spa-architecture.md#dynamic-rendering)**: todo el procesamiento debe ser dinámico.
 * **[Enrutamiento dinámico](#dynamic-routing) -** SPA AEM El usuario es responsable del enrutamiento, lo escucha y lo recupera en función de lo que se haya hecho en la base de datos de, y el usuario es responsable de la. Cualquier enrutamiento también debe ser dinámico.
 
@@ -63,7 +63,7 @@ Cualquier enrutamiento estático funciona con la variable [principio de portabil
 
 ## Tipo de archivo del proyecto AEM. {#aem-project-archetype}
 
-AEM Cualquier proyecto debe utilizar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA y utiliza el SDK de.
+Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## SPA Modelos de diseño {#spa-design-models}
 
@@ -89,7 +89,7 @@ Sin embargo, puede haber casos en los que esto no sea del todo necesario. En la 
    <td><p>AEM Los autores de contenido están restringidos a un conjunto limitado de experiencias de creación de contenido de la.</p> <p>El código corre el riesgo de no ser ni portátil ni reutilizable si contiene referencias estáticas o enrutamiento.</p> <p>No permite el uso del editor de plantillas, por lo que el desarrollador front-end debe mantener plantillas editables a través del JCR.</p> </td>
   </tr>
   <tr>
-   <td>SPA AEM El proyecto aprovecha completamente el SDK del Editor de, y los componentes de front-end se desarrollan como una biblioteca y la estructura de contenido de la aplicación se delega a los usuarios de la aplicación de forma que puedan acceder a la interfaz de usuario de la aplicación en un solo paso.</td>
+   <td>SPA AEM El proyecto utiliza completamente el SDK del Editor de, y los componentes de front-end se desarrollan como una biblioteca y la estructura de contenido de la aplicación se delega a los.</td>
    <td><p>La aplicación es reutilizable y portátil.</p> <p>AEM El autor del contenido puede editar la aplicación mediante la experiencia de creación de contenido de la.<br /> </p> <p>SPA La plantilla es compatible con el editor de plantillas de.</p> </td>
    <td><p>AEM El desarrollador no controla la estructura de la aplicación ni la parte de contenido delegada a la que se ha delegado la aplicación en el usuario.</p> <p>AEM El desarrollador puede seguir reservando áreas de la aplicación para el contenido que no vaya a crearse con la ayuda de la herramienta de creación de segmentos de contenido de la aplicación de la aplicación de tipo de.</p> </td>
   </tr>
@@ -190,7 +190,7 @@ AEM SPA La arquitectura general de los entornos de desarrollo, creación y publi
   SPA Aquí es donde se extrae el origen del origen de la aplicación y del origen del componente de la aplicación de la.
 
    * SPA El generador clientlib de NPM crea una biblioteca de cliente a partir del proyecto de.
-   * Esa biblioteca la toma Maven y la implementa el complemento de compilación de Maven junto con el componente al autor de AEM.
+   * AEM Maven se encarga de tomar esa biblioteca e implementarla el complemento de compilación de Maven junto con el componente al autor de la.
 
 * **AEM Author**
 
@@ -212,7 +212,7 @@ AEM SPA La arquitectura general de los entornos de desarrollo, creación y publi
 
   AEM Dispatcher sirve como la capa de almacenamiento en caché de los recursos para los visitantes del sitio.
 
-   * Las solicitudes se procesan de forma similar a como se encuentran en el Autor de AEM, pero no hay ninguna solicitud de información de página porque solo la necesita el editor.
+   * AEM Las solicitudes se procesan de forma similar a como se encuentran en el autor de la página, pero no hay ninguna solicitud de información de la página porque solo la necesita el editor.
    * JavaScript, CSS, JSON y HTML se almacenan en caché, lo que optimiza la página para una entrega rápida.
 
 >[!NOTE]
@@ -227,4 +227,4 @@ SPA Para obtener una guía paso a paso sobre cómo crear sus propios, consulte l
 
 SPA AEM Para obtener más información acerca de la asignación de modelos dinámicos a componentes y cómo funciona dentro de la asignación de componentes dentro de la en la aplicación, consulte el artículo [SPA Asignación de modelos dinámicos a componentes para la creación de](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-SPA AEM Si desea implementar la implementación de la en un entorno de trabajo distinto de React o Angular SPA AEM, o simplemente desea profundizar en cómo funciona el SDK de la para la creación de informes, consulte la [SPA Modelo de](/help/sites-developing/spa-blueprint.md) artículo.
+SPA AEM Si desea implementar un esquema de trabajo en el que se incluya un módulo de trabajo que no sea React o Angular SPA AEM, o simplemente desea profundizar en cómo funciona el SDK de la para la creación de informes, consulte el documento de trabajo de la aplicación de diseño de informes (en inglés) que contiene información detallada sobre cómo funciona el SDK para la creación de informes de. [SPA Modelo de](/help/sites-developing/spa-blueprint.md) artículo.

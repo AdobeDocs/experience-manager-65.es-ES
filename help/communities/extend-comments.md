@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 exl-id: e57198cb-8fd9-43e2-b416-e40e462561c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 
 AEM Supongamos que el encabezado del componente Comentario debe mostrarse con una apariencia alternativa en un sitio de la instancia de la, mientras que aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentario para todas las instancias, una mejor solución es garantizar que haya varios componentes de comentario disponibles para su uso en varios sitios.
 
-Para implementar esta solución, cree un nuevo componente que amplíe (anule) el existente y modifique el script Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la ampliada, mientras que los sitios que utilizan la apariencia predeterminada no se ven afectados.
+Para implementar esta solución, cree un componente que amplíe (anule) el existente y modifique el script Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la ampliada, mientras que los sitios que utilizan la apariencia predeterminada no se ven afectados.
 
 El componente de comentario es en realidad uno de los dos componentes que componen el sistema de comentarios. Por lo tanto, hay dos componentes que se deben ampliar: *comentarios* y *comentario*. La secuencia de comandos que se va a editar se encuentra en *comentario* de componente `header.hbs` archivo, mientras que el principal *comentarios* (el sistema de comentarios) es lo que un autor añade a la página.
 
-Para ampliar los comentarios, deberá:
+Para ampliar los comentarios, debe:
 
 1. [Creación de componentes](extend-create-components.md)
 1. [Agregar comentario a página de muestra](extend-sample-page.md)

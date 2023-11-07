@@ -5,7 +5,7 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 27%
@@ -85,7 +85,7 @@ Las actualizaciones de la memoria de traducción se pueden interceptar y enviar 
 
 ## Copias de idioma en varios niveles {#language-copies-on-multiple-levels}
 
-Ahora, las raíces de los idiomas se pueden agrupar en nodos, por ejemplo, por región, aunque se siguen reconociendo como raíces de las copias de idiomas.
+Las raíces de los idiomas ahora se pueden agrupar en nodos, por ejemplo, por región, aunque se siguen reconociendo como raíces de las copias de idiomas.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 

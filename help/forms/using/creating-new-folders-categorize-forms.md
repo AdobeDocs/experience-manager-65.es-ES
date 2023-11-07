@@ -10,10 +10,10 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 100%
+source-wordcount: '392'
+ht-degree: 98%
 
 ---
 
@@ -29,9 +29,9 @@ Puede crear una carpeta en AEM Forms de una de las siguientes maneras:
 
 * Cargue un archivo ZIP que contenga recursos en la estructura de las carpetas deseadas (Consulte [Conseguir documentos XDP y PDF en AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
-* Crear una carpeta nueva vacía
+* Crear una carpeta vacía
 
-1. Inicie sesión en la interfaz de usuario de AEM Forms en `https://<server>:<port>/aem/forms.html`.
+1. Inicie sesión en la interfaz de usuario de AEM Forms en `https://<server>:<port>/aem/forms.html`.
 1. Vaya a la ubicación en la que desea crear una carpeta.
 1. Haga clic en el icono ![aem6forms_add](assets/aem6forms_add.png) de la barra de herramientas y, a continuación, seleccione **[!UICONTROL Crear carpeta]**.
 

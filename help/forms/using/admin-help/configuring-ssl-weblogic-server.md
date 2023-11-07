@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ A continuación, configure WebLogic de modo que utilice el almacén de claves de
 
 ## Creación de una credencial SSL para su uso en WebLogic Server {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
-El comando keytool se encuentra generalmente en el directorio Java jre/bin y debe incluir varias opciones y valores de opción, que se enumeran en la siguiente tabla.
+El comando keytool suele estar en el directorio Java jre/bin y debe incluir varias opciones y valores de opción, que se enumeran en la siguiente tabla.
 
 <table>
  <thead>
@@ -183,7 +183,7 @@ Configure WebLogic de modo que utilice el repositorio de claves de identidad per
 
    **Tipo de almacén de claves de identidad personalizada**: JKS
 
-   **Frase de clave de identidad personalizada**: *mypassword* (contraseña del almacén de claves de identidad personalizada)
+   **Frase de clave de identidad personalizada**: *mypassword* (contraseña de almacén de claves de identidad personalizada)
 
 1. En Confianza, especifique los siguientes valores:
 

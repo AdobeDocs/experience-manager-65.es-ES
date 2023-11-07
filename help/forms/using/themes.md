@@ -1,20 +1,16 @@
 ---
 title: Crear y usar temáticas
-seo-title: Creating and using themes
 description: Puede utilizar temáticas para estilizar y proporcionar una identidad visual a un formulario adaptable o comunicación interactiva. Puede compartir una temática en cualquier número de formularios adaptables o comunicaciones interactivas.
-seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
-uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
-discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6106'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +20,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 ## Introducción {#introduction}
@@ -170,7 +166,7 @@ Lista de metapropiedades de una temática (que se encuentran en la página de pr
    <td>
     <ul>
      <li>Contiene la sección “Remitido por” Enumera los formularios que utilizan la temática.</li>
-     <li>Dado que la temática no hace referencia a ningún otro recurso, no existe la sección “Referencias”.</li>
+     <li>Dado que la temática no hace referencia a ningún otro recurso, no existe la sección "Referencias".</li>
     </ul> </td>
   </tr>
   <tr>

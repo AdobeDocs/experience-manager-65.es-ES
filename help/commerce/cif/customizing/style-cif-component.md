@@ -1,6 +1,6 @@
 ---
-title: Estilo Componentes principales del CIF de Adobe Experience Manager
-description: Aprenda a aplicar estilo a los componentes principales del CIF de Adobe Experience Manager. El tutorial cubre cómo se utilizan las bibliotecas del lado del cliente o clientlibs para implementar y administrar CSS y JavaScript para una implementación de Adobe Experience Manager AEM () Commerce. Este tutorial también cubre cómo el módulo ui.frontend y un proyecto de Webpack se integran en el proceso de compilación de extremo a extremo.
+title: Estilo de componentes principales de Adobe Experience Manager CIF
+description: Obtenga información sobre cómo aplicar estilo a los componentes principales de Adobe Experience Manager CIF. El tutorial cubre cómo se utilizan las bibliotecas del lado del cliente o clientlibs para implementar y administrar CSS y JavaScript para una implementación de Adobe Experience Manager AEM () Commerce. Este tutorial también cubre cómo el módulo ui.frontend y un proyecto de Webpack se integran en el proceso de compilación de extremo a extremo.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -9,16 +9,16 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2533'
 ht-degree: 20%
 
 ---
 
 # Diseño de los componentes principales del CIF de AEM {#style-aem-cif-core-components}
 
-El [Proyecto Venia del CIF](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para utilizar [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components). AEM En este tutorial, inspeccionará el proyecto de referencia de Venia y comprenderá cómo se organizan los componentes principales de CIF y CSS y JavaScript que utilizan los componentes principales de la aplicación de. También creará un estilo con CSS para actualizar el estilo predeterminado del **Teaser de productos** componente.
+El [CIF Proyecto Venia en la](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para utilizar [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components). AEM CIF En este tutorial, inspeccionará el proyecto de referencia de Venia y comprenderá cómo se organizan los componentes principales y CSS y JavaScript utilizados por los componentes principales de la. También creará un estilo con CSS para actualizar el estilo predeterminado del **Teaser de productos** componente.
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ El [Proyecto Venia del CIF](https://github.com/adobe/aem-cif-guides-venia) es un
 
 ## Qué va a generar
 
-En este tutorial, se implementa un nuevo estilo para el componente teaser de productos que se parece a una tarjeta. Las lecciones aprendidas en el tutorial se pueden aplicar a otros componentes principales del CIF.
+En este tutorial, se implementa un nuevo estilo para el componente teaser de productos que se parece a una tarjeta. CIF Las lecciones aprendidas en el tutorial se pueden aplicar a otros componentes principales de la.
 
 ![Qué va a generar](../assets/style-cif-component/what-you-will-build.png)
 
@@ -40,7 +40,7 @@ Clonamos el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y, a
 
 >[!NOTE]
 >
->**Siéntase libre de usar un proyecto existente** AEM (en función del Tipo de archivo del proyecto de la con CIF incluido) y omita esta sección.
+>**Siéntase libre de usar un proyecto existente** AEM CIF (en función del Tipo de archivo del proyecto de la con el que se incluye la) y omita esta sección.
 
 1. Ejecute el siguiente comando de Git para clonar el proyecto:
 
@@ -67,7 +67,7 @@ Clonamos el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y, a
 
 AEM CSS y JavaScript responsables de procesar el tema o los estilos de la tienda se administran en la administración de la tienda a través de un administrador de estilos. [biblioteca de cliente](/help/sites-developing/clientlibs.md) o clientlibs para abreviar. Las bibliotecas de cliente proporcionan un mecanismo para organizar CSS y JavaScript en el código de un proyecto y luego distribuirlas en la página.
 
-AEM Los estilos específicos de la marca se pueden aplicar a los componentes principales de CIF de forma independiente agregando y anulando el CSS administrado por estas bibliotecas de cliente. Es fundamental comprender cómo se estructuran e incluyen las bibliotecas de cliente en la página.
+AEM CIF Los estilos específicos de la marca se pueden aplicar a los componentes principales de la marca de añadiendo y anulando el CSS administrado por estas bibliotecas de cliente. Es fundamental comprender cómo se estructuran e incluyen las bibliotecas de cliente en la página.
 
 El [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) es un dedicado [webpack](https://webpack.js.org/) proyecto para administrar todos los recursos front-end de un proyecto. Esto permite a los desarrolladores de front-end utilizar cualquier número de lenguajes y tecnologías como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) y mucho más.
 
@@ -190,7 +190,7 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo s
 
    >[!NOTE]
    >
-   >Solo las bibliotecas base están &quot;codificadas&quot; como parte de los scripts de página. `venia.site` no se incluye en estos archivos y, en su lugar, se incluye como parte de la plantilla de página para una buena flexibilidad. Esto se inspecciona más tarde.
+   >Solo las bibliotecas base están &quot;codificadas&quot; como parte de los scripts de página. `venia.site` no se incluye en estos archivos y, en su lugar, se incluye como parte de la plantilla de página para una mayor flexibilidad. Esto se inspecciona más tarde.
 
 1. AEM Desde el terminal, cree e implemente todo el proyecto en una instancia local de:
 
@@ -261,7 +261,7 @@ Existen varias opciones para incluir una biblioteca del lado del cliente. A cont
 
    ![Editar la plantilla](../assets/style-cif-component/edit-template.png)
 
-   Esto abrirá el **Página de aterrizaje** plantilla el **Inicio** se basa en.
+   Esto abre el **Página de aterrizaje** plantilla el **Inicio** se basa en.
 
    >[!NOTE]
    >
@@ -334,7 +334,7 @@ AEM El webpack-dev-server proporciona imágenes y algunos de los elementos CSS/J
 
    ![Servidor de desarrollo de Webpack en el puerto 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
-   Deje el webpack-dev-server en ejecución. Se utilizará en el próximo ejercicio.
+   Deje el webpack-dev-server en ejecución. Se utiliza en el siguiente ejercicio.
 
 ## Implementar el estilo de tarjeta para el teaser de productos {#update-css-product-teaser}
 
@@ -467,7 +467,7 @@ AEM también intenta almacenar en caché las bibliotecas de cliente para el rend
 
 ## Felicitaciones {#congratulations}
 
-AEM Ha diseñado su primer componente principal del CIF de la y ha utilizado un servidor de desarrollo de Webpack.
+AEM CIF Ha diseñado su primer componente principal de la y ha utilizado un servidor de desarrollo de Webpack.
 
 ## Desafío para una bonificación {#bonus-challenge}
 

@@ -10,7 +10,7 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5401'
 ht-degree: 1%
@@ -169,7 +169,7 @@ Las acciones se pueden realizar en una página (recurso). Para cada página de l
     <ul>
      <li>modifique el contenido existente en la página y en cualquier página secundaria.</li>
      <li>cree párrafos en la página o en cualquier página secundaria.</li>
-    </ul> <p>En el nivel JCR, los usuarios pueden editar un recurso editando sus propiedades, bloqueando, creando versiones, no modificando y tienen permiso de escritura completo en los nodos que definen un nodo secundario jcr:content. Por ejemplo: cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>En el nivel JCR, los usuarios pueden editar un recurso editando sus propiedades, bloqueando, creando versiones, no modificando y tienen permiso de escritura completo en los nodos que definen un nodo secundario jcr:content. Por ejemplo, cq:Page, nt:file, cq:Asset.</p> </td>
   </tr>
   <tr>
    <td>Crear</td>

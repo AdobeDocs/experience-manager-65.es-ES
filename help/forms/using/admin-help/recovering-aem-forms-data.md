@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ AEM Los formularios de datos deben recuperarse de forma fiable de los siguientes
 
 Si está utilizando el modo de copia de seguridad móvil, aún está en modo de copia de seguridad después de la recuperación. Si está utilizando el modo de copia de seguridad de instantánea, no estará en modo de copia de seguridad después de la recuperación.
 
-Al restaurar desde la copia de seguridad en un sistema nuevo, las siguientes configuraciones pueden ser diferentes. AEM Esta diferencia no debería afectar a la recuperación correcta de la aplicación de formularios de la aplicación de la:
+Al restaurar desde la copia de seguridad en un sistema nuevo, las siguientes configuraciones pueden ser diferentes. AEM Esta diferencia no debería afectar a la recuperación correcta de la aplicación de formularios en la que se ha realizado el:
 
 * Dirección IP
 * Configuración del sistema físico (CPU, disco, memoria)
@@ -71,15 +71,15 @@ Si un nodo único de un clúster de varios nodos ha fallado y los nodos restante
 
    * (JBoss®) Cambiar nombre `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` hasta:
 
-      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
+     `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
    * (WebLogic) Cambiar nombre `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` hasta:
 
-      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
+     `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
    * (WebSphere®) Cambiar nombre `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` hasta:
 
-      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
+     `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. AEM Recupere el directorio raíz de almacenamiento de contenido eliminando primero el contenido del directorio raíz de almacenamiento de contenido en la instalación existente de formularios en la que ya existen y, a continuación, recuperando el contenido siguiendo las tareas de los entornos independientes o agrupados:
 
@@ -99,13 +99,13 @@ Si un nodo único de un clúster de varios nodos ha fallado y los nodos restante
 
    * **Independiente**
 
-      *Restaurar instancias de autor y publicación*: Si se produce un desastre, puede restaurar el repositorio al último estado de copia de seguridad realizando los pasos descritos en [Copia de seguridad y restauración](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Restaurar instancias de autor y publicación*: Si se produce un desastre, puede restaurar el repositorio al último estado de copia de seguridad realizando los pasos descritos en [Copia de seguridad y restauración](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
-      La restauración completa del nodo Autor también determina la restauración de los datos de Forms Manager y AEM Forms Workspace.
+     La restauración completa del nodo Autor también determina la restauración de los datos de Forms Manager y AEM Forms Workspace.
 
    * **Agrupado**
 
-      Para la restauración en un entorno agrupado, consulte [Estrategia de copia de seguridad y restauración en un entorno en clúster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
+     Para la restauración en un entorno agrupado, consulte [Estrategia de copia de seguridad y restauración en un entorno en clúster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. AEM Elimine cualquier archivo temporal de formularios de la forma de la aplicación que se haya creado en el directorio java.io.temp o en el directorio temporal del Adobe.
 1. AEM Inicio de formularios (consulte ) [Iniciar y detener servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.

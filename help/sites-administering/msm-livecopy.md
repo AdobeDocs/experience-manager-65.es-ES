@@ -3,10 +3,10 @@ title: Creación y sincronización de Live Copies
 description: Obtenga información sobre cómo crear y sincronizar Live Copies en Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4233'
-ht-degree: 47%
+source-wordcount: '4226'
+ht-degree: 46%
 
 ---
 
@@ -123,8 +123,8 @@ Para crear una Live Copy:
    * Seleccionado: crear una Live Copy solo de la página seleccionada (Live Copy superficial)
    * No seleccionado: crear una Live Copy que incluya todos los descendientes de la página seleccionada (Live Copy profundo)
 
-1. (Opcional) Para especificar una o más configuraciones de despliegue que se utilizarán para la Live Copy, utilice el **Configuraciones de despliegue** lista desplegable para seleccionarlos; las configuraciones seleccionadas se mostrarán debajo del selector desplegable.
-1. Haga clic o pulse **Crear**. Se mostrará un mensaje de confirmación, desde el que podrá seleccionar una de las opciones siguientes: **Apertura** o **Listo**.
+1. (Opcional) Para especificar una o más configuraciones de despliegue que se utilizarán para la Live Copy, utilice el **Configuraciones de despliegue** lista desplegable para seleccionarlos; las configuraciones seleccionadas se muestran debajo del selector desplegable.
+1. Haga clic o pulse **Crear**. Se muestra un mensaje de confirmación, desde el que puede seleccionar una de las opciones siguientes: **Apertura** o **Listo**.
 
 ### Creación de una Live Copy de un sitio a partir de una configuración de modelo {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -149,7 +149,7 @@ Cuando cree el sitio, proporcione valores para las siguientes propiedades:
 
 Para crear una Live Copy de un sitio a partir de una configuración de modelo:
 
-1. En la consola **Sitios**, seleccione **Crear**, luego **Sitio** en el selector desplegable.
+1. En la consola **Sites**, seleccione **Crear**, a continuación **Sitio** en el selector desplegable.
 1. Seleccione la configuración de modelo que se utilizará como origen de la Live Copy y continúe con **Siguiente**:
 
    ![Seleccionar configuración de modelo como fuente de Live Copy](assets/blueprint-configuration-select.png)
@@ -325,7 +325,7 @@ Para cambiar el contenido de la Live Copy, puede:
 
 >[!NOTE]
 >
->Si crea manualmente una nueva página en la Live Copy, esta será local para la Live Copy, lo que significa que no tiene una página de origen correspondiente a la que adjuntar.
+>Si crea manualmente una página en Live Copy, esta será local para Live Copy, lo que significa que no tiene una página de origen correspondiente a la que adjuntar.
 >
 >La práctica recomendada para crear una página local que forme parte de la relación sería crearla en el origen y realizar un despliegue (profundo). Esto creará la página localmente como Live Copies.
 
@@ -418,7 +418,7 @@ Cuando se selecciona, se muestra el cuadro de diálogo. Puede seleccionar una si
 
 La [acción Reanudar también está disponible en la Información general de Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), cuando se selecciona una página Live Copy.
 
-1. Abra el [Información general de Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) y seleccione una página Live Copy que se haya suspendido; se mostrará como **HERENCIA CANCELADA**.
+1. Abra el [Información general de Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) y seleccione una página Live Copy que se haya suspendido; se muestra como **HERENCIA CANCELADA**.
 1. En la barra de herramientas, seleccione **Reanudar**.
 1. Indique si desea sincronizar la página después de revertir la herencia y, a continuación, confirme la acción **Reanudar** en el diálogo **Reanudar Live Copy**.
 
@@ -624,7 +624,7 @@ Hay implicaciones sobre dónde dentro del árbol que utiliza **Desasociar**:
 
       * Esto se debe a que MSM los considera como páginas creadas manualmente que causan un conflicto, ya que tienen el mismo nombre que las páginas de Live Copy que intenta crear.
 
-   1. Cree una nueva página (Live Copy) con el nombre original, que contenga los cambios del despliegue.
+   1. Cree una página (Live Copy) con el nombre original, que contenga los cambios del despliegue.
 
   >[!NOTE]
   >
@@ -640,7 +640,7 @@ Para separar una Live Copy:
 
    ![Desasociar](assets/chlimage_1-236.png)
 
-1. Se mostrará un cuadro de diálogo de confirmación, seleccione **Desasociar** para completar la acción.
+1. Se muestra un cuadro de diálogo de confirmación, seleccione **Desasociar** para completar la acción.
 
 ### Desasociar una página de Live Copy de la información general de Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 

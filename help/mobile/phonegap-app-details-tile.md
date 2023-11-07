@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1246'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ En esta sección puede definir la URL de Content Update Server, la página de at
 
 **Versión de PhoneGap** es la versión en la que se desea compilar la aplicación con PhoneGap. La práctica recomendada es mantenerse al día con la versión actual para asegurarse de obtener las últimas y mejores funciones y correcciones de errores.
 
-**URL del servidor de actualización de contenido** es la dirección URL que la aplicación utilizará para solicitar actualizaciones de ContentSync. Se debe establecer en la dirección URL de Dispatcher o, si no se utiliza Dispatcher, en una de las instancias de publicación que se utilizará para publicar actualizaciones de ContentSync en la aplicación.
+**URL del servidor de actualización de contenido** es la dirección URL que la aplicación utilizará para solicitar actualizaciones de ContentSync. Se debe establecer en la dirección URL de Dispatcher o, si no utiliza un Dispatcher, en una de las instancias de publicación que se utiliza para proporcionar actualizaciones de ContentSync a la aplicación.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -130,7 +130,7 @@ La propiedad URL del servidor de actualización de contenido es la dirección UR
 
 ### La pestaña Plugins {#the-plugins-tab}
 
-El **Complementos** describe los complementos asociados a su aplicación. Esta información se utilizará para recuperar el complemento adecuado durante la compilación.
+El **Complementos** describe los complementos asociados a su aplicación. Esta información se utiliza para recuperar el complemento adecuado durante una compilación.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 

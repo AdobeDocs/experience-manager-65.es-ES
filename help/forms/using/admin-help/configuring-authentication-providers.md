@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1575'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Para utilizar un servidor LDAP diferente para realizar la autenticación, selecc
 
 **Anónimo:** No se requiere nombre de usuario ni contraseña.
 
-**Usuario:** Se requiere autenticación. En el cuadro Nombre, especifique el nombre del registro de usuario que puede acceder al directorio. Se recomienda introducir el nombre distinguido completo (DN) de la cuenta de usuario, como cn=Jane Doe, ou=user, dc=can, dc=com. En el cuadro Contraseña, especifique la contraseña asociada. Esta configuración es necesaria cuando selecciona Usuario como opción de enlace.
+**Usuario:** Se requiere autenticación. En el cuadro Nombre, especifique el nombre del registro de usuario que puede acceder al directorio. Es mejor introducir el nombre distinguido completo (DN) de la cuenta de usuario, como cn=Jane Doe, ou=user, dc=can, dc=com. En el cuadro Contraseña, especifique la contraseña asociada. Esta configuración es necesaria cuando selecciona Usuario como opción de enlace.
 
 **Recuperar DN Base:** (No obligatorio) Recupera los DN base y los muestra en la lista desplegable. Esta configuración es útil cuando tiene varios DN base y necesita seleccionar un valor.
 
@@ -108,14 +108,14 @@ Si está configurando la autenticación para un dominio empresarial o híbrido y
 
 Se requieren las siguientes propiedades personalizadas si se utiliza el enlace de artefactos.
 
-* AEM Agregue la siguiente propiedad personalizada para especificar un nombre de usuario que represente al proveedor de servicios de Forms, que se utilizará para autenticarse en el servicio de resolución de artefactos IDP.
-   `saml.idp.resolve.username=<username>`
+* AEM Agregue la siguiente propiedad personalizada para especificar un nombre de usuario que represente al proveedor de servicios de Forms, que se utiliza para autenticarse en el servicio de resolución de artefactos IDP.
+  `saml.idp.resolve.username=<username>`
 
 * Agregue la siguiente propiedad personalizada para especificar la contraseña del usuario especificado en `saml.idp.resolve.username`.
-   `saml.idp.resolve.password=<password>`
+  `saml.idp.resolve.password=<password>`
 
 * Agregue la siguiente propiedad personalizada para permitir que el proveedor de servicios ignore la validación del certificado al establecer la conexión con el servicio de resolución de artefactos a través de SSL.
-   `saml.idp.resolve.ignorecert=true`
+  `saml.idp.resolve.ignorecert=true`
 
 ### Configuración personalizada {#custom-settings}
 

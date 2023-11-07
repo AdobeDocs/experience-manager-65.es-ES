@@ -1,8 +1,8 @@
 ---
 title: Pasar documentos a FormsService
 seo-title: Passing Documents to the FormsService
-description: Pase un objeto com.adobe.idp.Document que contenga el diseño de formulario al servicio Forms. El servicio Forms procesa el diseño de formulario ubicado en el objeto com.adobe.idp.Document.
-seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object.
+description: Pase un objeto com.adobe.idp.Document que contenga el diseño de formulario al servicio Forms. El servicio Forms procesa el diseño de formulario en el objeto com.adobe.idp.Document.
+seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design in the com.adobe.idp.Document object.
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1682'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-El servicio AEM Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. A partir de AEM Forms, puede pasar un `com.adobe.idp.Document` que contiene el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario ubicado en la variable `com.adobe.idp.Document` objeto.
+El servicio AEM Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. A partir de AEM Forms, puede pasar un `com.adobe.idp.Document` que contiene el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario en la variable `com.adobe.idp.Document` objeto.
 
 Una ventaja de pasar un `com.adobe.idp.Document` objeto del servicio de Forms es que otras operaciones del servicio devuelven un `com.adobe.idp.Document` ejemplo. Es decir, puede obtener una `com.adobe.idp.Document` instancia de otra operación de servicio y procesarla. Por ejemplo, supongamos que un archivo XDP se almacena en un nodo de Content Services (obsoleto) denominado `/Company Home/Form Designs`, como se muestra en la siguiente ilustración.
 
@@ -156,6 +156,7 @@ Pase un documento obtenido de Content Services (obsoleto) mediante el servicio F
       * AEM Asigne el nombre de usuario del formulario de la al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]

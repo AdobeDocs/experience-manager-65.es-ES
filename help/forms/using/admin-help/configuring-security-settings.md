@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1381'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Estas opciones configuran los permisos:
 
 **Ninguno:** Impide que los usuarios cambien el documento, incluso rellenando los campos de firma y de formulario.
 
-**Insertar, Eliminar Y Rotar Páginas:** Permite a los usuarios insertar, eliminar y rotar páginas, así como crear marcadores y páginas de miniaturas. Esta opción solo está disponible si se selecciona un nivel de cifrado alto (Acrobat 5.0, 6.0, 7.0 o 9.0).
+**Insertar, Eliminar Y Rotar Páginas:** Permite a los usuarios insertar, eliminar y rotar páginas y crear marcadores y páginas de miniaturas. Esta opción solo está disponible si se selecciona un nivel de cifrado alto (Acrobat 5.0, 6.0, 7.0 o 9.0).
 
 **Rellenar Campos De Formulario Y Firmar Campos De Firma Existentes:** Permite que los usuarios rellenen formularios y agreguen firmas digitales. Sin embargo, los usuarios no pueden agregar comentarios ni crear campos de formulario. Esta opción solo está disponible si se selecciona un nivel de cifrado alto (Acrobat 5.0, 6.0, 7.0 o 9.0).
 

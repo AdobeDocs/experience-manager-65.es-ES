@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1188'
 ht-degree: 5%
 
 ---
@@ -82,7 +82,7 @@ AEM AEM Aunque los índices Oak no se crean automáticamente para la búsqueda e
 
 Si las propiedades personalizadas están en uso y las búsquedas son lentas, se deben crear índices adicionales para las propiedades personalizadas para que tengan un mejor rendimiento. Para mantener la portabilidad, siga el [requisitos de nomenclatura](#naming-of-custom-properties) al crear propiedades personalizadas en las que se pueden realizar búsquedas.
 
-Para modificar índices existentes o crear índices personalizados, consulte [Consultas e indexación de Oak](../../help/sites-deploying/queries-and-indexing.md).
+Para modificar los índices existentes o crear índices personalizados, consulte [Consultas e indexación de Oak](../../help/sites-deploying/queries-and-indexing.md).
 
 El [Administrador de índices Oak](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) AEM está disponible en ACS Commons. Proporciona lo siguiente:
 

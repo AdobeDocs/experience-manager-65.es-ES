@@ -2,9 +2,9 @@
 title: Cómo acceder al contenido a través de las API de entrega de AEM
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenderá a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1332'
 ht-degree: 93%
 
 ---
@@ -262,7 +262,7 @@ Para utilizar GraphQL, la API de AEM en una consulta, podemos utilizar las dos e
 
 Como puede ver, los campos CEO y Empleados hacen referencia a los fragmentos Persona.
 
-Se utilizarán los modelos de fragmento:
+Se utilizan los modelos de fragmento:
 
 * al crear el contenido en el editor de fragmentos de contenido
 * para generar los esquemas de GraphQL que se consultarán

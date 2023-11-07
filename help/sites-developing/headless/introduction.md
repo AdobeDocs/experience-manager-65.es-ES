@@ -2,9 +2,9 @@
 title: AEM Desarrollo sin encabezado para sitios de 6.5
 description: AEM Descubra cómo las potentes funciones sin encabezado de la versión 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, trabajan juntas para permitirle administrar sus experiencias de forma centralizada y atenderlas en todos los canales.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '518'
 ht-degree: 35%
 
 ---
@@ -48,7 +48,7 @@ AEM La versión 6.5 de es una herramienta flexible para el modelo de implementac
 
 ## Primeros pasos con AEM Headless {#first-steps}
 
-AEM Hay una serie de recursos disponibles para que sus clientes empiecen a utilizar las funciones sin encabezado de la. AEM Están pensados para diferentes casos de uso, pero todos ofrecen una visión general sólida de las funciones sin encabezado de la aplicación de la interfaz de usuario de.
+AEM Hay varios recursos disponibles para que sus clientes empiecen a utilizar las funciones sin encabezado de la. AEM Están pensados para diferentes casos de uso, pero todos ofrecen una visión general sólida de las funciones sin encabezado de la aplicación de la interfaz de usuario de.
 
 | Recurso | Descripción | Tipo | Audiencia | EST Hora |
 |---|---|---|---|---|

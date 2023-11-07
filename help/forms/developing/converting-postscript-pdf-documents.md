@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 4%
 
 ---
@@ -62,7 +62,7 @@ Para poder realizar mediante programación una operación de servicio de Distill
 
 **Recupere el archivo que desea convertir**
 
-Debe recuperar el archivo que desea convertir. Por ejemplo, para convertir un archivo PS en un documento de PDF, debe recuperar el archivo PS.
+Recupere el archivo que desea convertir. Por ejemplo, para convertir un archivo PS en un documento de PDF, debe recuperar el archivo PS.
 
 **Invocar la operación de creación del PDF**
 
@@ -126,7 +126,6 @@ Conversión de un archivo PostScript en un documento de PDF mediante la API de s
 
    * Invoque el `CreatePDFResult` del objeto `getLogDocument` método. Esto devuelve un `com.adobe.idp.Document` objeto.
    * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el documento de registro.
-
 
 **Consulte también**
 

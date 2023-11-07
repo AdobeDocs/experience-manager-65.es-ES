@@ -3,10 +3,10 @@ title: Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms
 description: Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en los flujos de trabajo de OSGi y JEE de AEM Forms
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 98%
+source-wordcount: '925'
+ht-degree: 96%
 
 ---
 
@@ -396,7 +396,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
 
 ## Diferencias entre la bandeja de entrada de AEM y las características de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](../../forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. La bandeja de entrada de AEM solo funciona con [Flujos de trabajo centrados en Forms](../../forms/using/aem-forms-workflow.md) mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos.
+Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](../../forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. AEM La bandeja de entrada de solo funciona con [Flujos de trabajo centrados en Forms](../../forms/using/aem-forms-workflow.md) mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos.
 
 La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la aplicación de AEM Forms:
 

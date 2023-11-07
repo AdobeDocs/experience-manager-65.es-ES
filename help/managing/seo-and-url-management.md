@@ -5,10 +5,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3678'
-ht-degree: 65%
+source-wordcount: '3677'
+ht-degree: 67%
 
 ---
 
@@ -49,9 +49,8 @@ A continuación se ofrecen algunas sugerencias generales para crear las URL para
    * Si se utilizan selectores en una página, se prefieren los selectores que proporcionan un valor semántico.
    * Si un ser humano no puede leer su URL, un motor de búsqueda tampoco podrá.
    * Por ejemplo:
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-se prefiere en lugar de 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+se prefiere en lugar de `mybrand.com/products/product-detail.1234.html`
 
 * Evite los subdominios siempre que sea posible, ya que los motores de búsqueda los tratarán como entidades diferentes y fragmentarán el valor SEO del sitio.
 
@@ -189,20 +188,20 @@ Si un autor desea que una página sea accesible desde una segunda ubicación con
 Es posible que desee mostrar nombres de páginas localizados a los usuarios de contenido traducido. Por ejemplo:
 
 * En lugar de hacer que un usuario que habla en español navegue a:
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * Sería mejor que la URL fuera:
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-AEM El desafío que supone la localización del nombre de la página es que muchas de las herramientas de localización disponibles en la plataforma dependen de que los nombres de las páginas coincidan en las distintas configuraciones regionales para mantener el contenido sincronizado.
+El desafío que supone la localización del nombre de la página es que muchas de las herramientas de localización disponibles en la plataforma AEM dependen de que los nombres de las páginas coincidan en las distintas configuraciones regionales para mantener el contenido sincronizado.
 
 El `sling:alias` La propiedad permite tener pastel de Adobe y comerlo también. Puede añadir `sling:alias` como una propiedad a cualquier recurso para permitir un nombre de alias para el recurso. En el ejemplo anterior, tendría lo siguiente:
 
 * Una página del JCR en:
-   `…/es/home`
+  `…/es/home`
 
 * A continuación, agréguele una propiedad:
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 AEM Este flujo permite a las herramientas de traducción de la, como el administrador de varios sitios, seguir manteniendo una relación entre:
 
@@ -221,12 +220,10 @@ También permite a los usuarios finales interactuar con el nombre de la página 
 En una instalación estándar de AEM:
 
 * para la configuración OSGi
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la propiedad
-   **Ubicación de asignación** ( `resource.resolver.map.location`)
+  **Ubicación de asignación** ( `resource.resolver.map.location`)
 
 * va de manera predeterminada a`/etc/map`
 
@@ -255,8 +252,8 @@ Sin embargo, también hay una forma más sencilla de administrar este problema:
    Mediante la consola web (por ejemplo, localhost:4502/system/console/configMgr) puede configurar el Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    El Adobe recomienda crear las asignaciones necesarias para acortar las URL como expresiones regulares y luego definir estas configuraciones en un nodo OsgiConfignode, `config.publish` que se incluye en la compilación.
 
    En lugar de definir las asignaciones en `/etc/map`, se pueden asignar directamente a la propiedad Asignaciones **de** URL ( `resource.resolver.mapping`):
@@ -382,7 +379,7 @@ Por ejemplo, piense en un sitio que defina una raíz de mapa del sitio de nivel 
 
 En la configuración predeterminada, el cuadro de diálogo Propiedades de página proporciona una opción para marcar una página como raíz de mapa del sitio y, por lo tanto, como se describe más arriba, generar un mapa del sitio propio y de sus descendientes. Este comportamiento se implementa mediante las implementaciones de la variable `SitemapGenerator` y se puede ampliar añadiendo implementaciones alternativas. Sin embargo, como la frecuencia con la que se regeneran los mapas del sitio XML depende de los flujos de trabajo y las cargas de trabajo de creación de contenido, el producto no envía ninguno `SitemapScheduler` configuración. Como tal, hace que la función sea de inclusión efectiva.
 
-Para habilitar el trabajo en segundo plano que genera los mapas del sitio XML, haga lo siguiente `SitemapScheduler` debe estar configurado. Para ello, cree una configuración OSGi para el `org.apache.sling.sitemap.impl.SitemapScheduler` PID. La expresión del planificador `0 0 0 * * ?` puede utilizarse como punto de partida para regenerar todos los mapas del sitio XML una vez al día a medianoche.
+Para habilitar el trabajo en segundo plano que genera los mapas del sitio XML, debe estar configurado un `SitemapScheduler`. Para ello, cree una configuración OSGi para el `org.apache.sling.sitemap.impl.SitemapScheduler` PID. La expresión del planificador `0 0 0 * * ?` puede utilizarse como punto de partida para regenerar todos los mapas del sitio XML una vez al día a medianoche.
 
 ![Mapa del sitio de Apache Sling: planificador](assets/sling-sitemap-scheduler.png)
 
@@ -470,7 +467,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar para diferentes casos de uso, por ejemplo para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página. Consulte [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
+Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar para diferentes casos de uso, por ejemplo, para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página. Consulte [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
 
 ### Crear redirecciones 301 para URL heredadas {#creating-redirects-for-legacy-urls}
 

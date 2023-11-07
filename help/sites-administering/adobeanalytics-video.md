@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1745'
 ht-degree: 2%
 
 ---
@@ -376,7 +376,7 @@ Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se a
 
    ![lseconds](assets/lseconds.png)
 
-   *La llamada es similar a la llamada a los hitos heredados anterior. Consulte la información sobre pev3 **[proporcionado allí](/help/sites-administering/adobeanalytics.md)**.*
+   *La llamada es similar a la llamada a los hitos heredados anterior. Ver la información de pev3 **[proporcionado allí](/help/sites-administering/adobeanalytics.md)**.*
 
 **Referencias utilizadas en este tutorial:**
 

@@ -2,10 +2,10 @@
 title: Administración de puntos de conexión de GraphQL en AEM
 description: Obtenga información sobre cómo administrar los extremos de GraphQL en Adobe Experience Manager para la entrega de contenido sin encabezado.
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 97%
+source-wordcount: '510'
+ht-degree: 93%
 
 ---
 
@@ -61,7 +61,7 @@ Para habilitar el punto de conexión correspondiente:
 
 1. Vaya a **Herramientas**, **Assets** y, a continuación, seleccione **GraphQL**.
 1. Seleccione **Crear**.
-1. El diálogo **Crear nuevo punto de conexión de GraphQL** se abrirá. Aquí puede especificar lo siguiente:
+1. Se abre el cuadro de diálogo **Crear nuevo punto final de GraphQL**. Aquí puede especificar lo siguiente:
    * **Nombre**: nombre del punto de conexión; puede escribir cualquier texto.
    * **Utilice el esquema GraphQL proporcionado por**: utilice la lista desplegable para seleccionar el sitio o proyecto requerido.
 
@@ -70,7 +70,6 @@ Para habilitar el punto de conexión correspondiente:
    >La siguiente advertencia se muestra en el cuadro de diálogo:
    >
    >* *Los puntos de conexión de GraphQL pueden introducir problemas de rendimiento y seguridad de datos si no se administran con cuidado. Asegúrese de definir los permisos adecuados después de crear un punto de conexión.*
-
 
 1. Confirme con **Crear**.
 1. El diálogo **Pasos siguientes** proporciona un vínculo directo a la consola de seguridad para que pueda cerciorarse de que el punto de conexión recién creado tenga los permisos adecuados.
@@ -91,4 +90,4 @@ Seleccione el nuevo punto de conexión y **Publicación** para que esté totalme
 >
 >En instancias de publicación esto puede suponer un problema de seguridad, ya que las consultas de GraphQL pueden imponer una carga pesada en el servidor.
 >
->Debe configurar ACL adecuados para su caso de uso en el punto de conexión.
+>Configure ACL adecuados para su caso de uso en el punto de conexión.

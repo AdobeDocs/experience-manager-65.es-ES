@@ -4,9 +4,9 @@ description: Utilice usuarios y grupos ficticios para realizar tareas de AEM Fo
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2475'
 ht-degree: 58%
 
 ---
@@ -97,7 +97,7 @@ También se incluyen los siguientes grupos:
 
 ## Conversión de formularios automatizada (Camila) {#automated-forms-conversion}
 
-**Esta sección**: Camila, la directora de CX, tiene un formulario basado en PDF existente que ha sido utilizado como parte de un proceso basado en el papel. Como parte del esfuerzo de modernización, Camila desea utilizar este formulario PDF para crear automáticamente un Forms adaptable nuevo y moderno.
+**Esta sección**: Camila, la directora de CX, tiene un formulario basado en PDF existente que ha sido utilizado como parte de un proceso basado en el papel. Como parte del esfuerzo de modernización, Camila desea utilizar este formulario PDF para crear automáticamente un Forms adaptable moderno.
 
 ### Conversión de formularios automatizada - We.Gov (Camila) {#automated-forms-conversion-wegov}
 

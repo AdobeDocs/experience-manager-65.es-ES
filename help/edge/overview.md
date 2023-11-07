@@ -2,9 +2,9 @@
 title: Introducción a Edge Delivery Services
 description: Introducción a los Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Con los Edge Delivery Services AEM, ofrece experiencias excepcionales que impulsan la participación y las conversiones. AEM Lo hace ofreciendo experiencias de alto impacto que son rápidas de crear y desarrollar. Es un conjunto de servicios componibles que permite un entorno de desarrollo rápido en el que los autores pueden actualizar y publicar rápidamente y en el que los nuevos sitios se inician rápidamente. De este modo, los Edge Delivery Services permiten mejorar la conversión, reducir los costes y proporcionar una velocidad de contenido extrema.
 
-Al aprovechar Edge Delivery, puede:
+Con la entrega a través de Edge, puede:
 
 * Cree sitios rápidos con una puntuación de Lighthouse perfecta y monitorice continuamente el rendimiento de su sitio a través de la monitorización real del usuario (RUM).
 * Aumente la eficacia de la creación desacoplando las fuentes de contenido. AEM De forma predeterminada, puede utilizar la creación basada en documentos y la creación basada en documentos, tanto en la creación de documentos como en la creación de documentos. De este modo, puede trabajar con varias fuentes de contenido en el mismo sitio web.
@@ -29,7 +29,7 @@ Edge Delivery es un conjunto de servicios componibles que permiten un alto grado
 
 Por ejemplo, puede utilizar contenido directamente desde Microsoft Word o Google Docs. Esto significa que los documentos de esas fuentes pueden convertirse en páginas del sitio web. Además, los encabezados, las listas, las imágenes y los elementos de fuente se pueden transferir desde la fuente inicial al sitio web. El nuevo contenido se añadirá instantáneamente sin un proceso de reconstrucción.
 
-Edge Delivery aprovecha GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir contenido en Google Docs o en Microsoft Word, y la funcionalidad del sitio se puede desarrollar mediante CSS y JavaScript en GitHub. Cuando esté listo, puede utilizar la extensión del explorador Sidekick para previsualizar y publicar actualizaciones de contenido.
+Edge Delivery utiliza GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir contenido en Google Docs o en Microsoft Word, y la funcionalidad del sitio se puede desarrollar mediante CSS y JavaScript en GitHub. Cuando esté listo, puede utilizar la extensión del explorador Sidekick para previsualizar y publicar actualizaciones de contenido.
 
 Más información:
 
@@ -49,7 +49,7 @@ Es fácil empezar a usar Edge Delivery Services. Empiece siguiendo los pasos de 
 
 ## Obtención de ayuda del Adobe {#adobe-gethelp}
 
-Puede interactuar con los equipos de productos de Adobe a través del canal de colaboración de productos aprovisionado (consulte a continuación para obtener detalles de acceso) para responder a preguntas sobre el uso del producto o las prácticas recomendadas. Tenga en cuenta que no hay términos de nivel de servicio (SLT) asociados con las conversaciones a través del canal de colaboración de productos. Si un problema de producto necesita más investigación y solución de problemas, y necesita cumplir con los SLT de respuesta, puede enviar un ticket de asistencia después de la [proceso de soporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+Puede interactuar con los equipos de productos de Adobe a través del canal de colaboración de productos aprovisionado (consulte a continuación para obtener detalles de acceso) para responder a preguntas sobre el uso del producto o las prácticas recomendadas. No hay términos de nivel de servicio (SLT) asociados a las conversaciones a través del canal de colaboración de productos. Si un problema de producto necesita más investigación y solución de problemas, y necesita cumplir con los SLT de respuesta, puede enviar un ticket de asistencia después de la [proceso de soporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 El Adobe de proporciona tres canales para ayudarle con los Edge Delivery Services:
 

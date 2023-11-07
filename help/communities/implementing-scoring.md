@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2851'
 ht-degree: 2%
 
 ---
@@ -285,7 +285,7 @@ Esta versión incluye dos reglas de puntuación para [Función Foro](/help/commu
 * `subRules` es un atributo de tipo cadena[] en la regla de `jcr:content` nodo.
 
 * `sub-rules` pueden compartirse entre varias reglas de puntuación.
-* `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
+* `rules` debe estar en una ubicación de repositorio con permiso de lectura para todos.
 
    * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
@@ -385,15 +385,15 @@ cURL -i -X POST -H *encabezado* -u *firma* -F *operación* -F *distintivo* *memb
 
 *encabezado* = Encabezado personalizado &quot;Accept:application/json&quot; para pasarlo al servidor (obligatorio)
 
-*firma* = administrator-id:contraseña por ejemplo : admin:admin
+*firma* = administrator-id:contraseña por ejemplo, admin:admin
 
 *operación* = &quot;:operation=social:assignBadge&quot; O &quot;:operation=social:deleteBadge&quot;
 
 *distintivo* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = la ubicación del archivo de imagen de distintivo en el repositorio, por ejemplo : /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = la ubicación del archivo de imagen de distintivo en el repositorio, por ejemplo, /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = el punto final del perfil del miembro en la publicación, por ejemplo : https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = el punto final del perfil del miembro al publicar, por ejemplo, https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -616,7 +616,7 @@ Siguiente, [volver a publicar](/help/communities/sites-console.md#publishing-the
 Finalmente,
 
 * Vaya al componente en la instancia de publicación.
-* Inicie sesión como miembro de la comunidad (por ejemplo: weston.mccall@dodgit.com / password).
+* Inicie sesión como miembro de la comunidad (por ejemplo, weston.mccall@dodgit.com / contraseña).
 * Publicar un nuevo tema de foro.
 * Se debe actualizar la página para que se muestre el distintivo.
 

@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2853'
 ht-degree: 4%
 
 ---
@@ -122,7 +122,7 @@ El cliente web debe tener permisos para acceder a `cq:ClientLibraryFolder` nodo.
 
 ### Anular bibliotecas en /lib {#overriding-libraries-in-lib}
 
-Carpetas de la biblioteca de cliente ubicadas debajo `/apps` tienen prioridad sobre las carpetas con el mismo nombre ubicadas de forma similar en `/libs`. Por ejemplo, `/apps/cq/ui/widgets` tiene prioridad sobre `/libs/cq/ui/widgets`. Cuando estas bibliotecas pertenecen a la misma categoría, la biblioteca de abajo `/apps` se utiliza.
+Carpetas de la biblioteca de cliente ubicadas debajo `/apps` tienen prioridad sobre las carpetas con el mismo nombre que se encuentran de forma similar en `/libs`. Por ejemplo, `/apps/cq/ui/widgets` tiene prioridad sobre `/libs/cq/ui/widgets`. Cuando estas bibliotecas pertenecen a la misma categoría, la biblioteca de abajo `/apps` se utiliza.
 
 ### Localizar una carpeta de biblioteca de cliente y utilizar el servlet de bibliotecas de cliente proxy {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -197,7 +197,7 @@ A continuación, configure el `allowProxy` propiedad en `foo` a true.
 
 ### Vinculación a dependencias {#linking-to-dependencies}
 
-Cuando el código de la carpeta de la biblioteca de cliente haga referencia a otras bibliotecas, identifique las demás bibliotecas como dependencias. En el JSP, la variable `ui:includeClientLib` que hace referencia a la carpeta de la biblioteca de cliente hace que el código del HTML incluya un vínculo al archivo de biblioteca generado, así como a las dependencias.
+Cuando el código de la carpeta de la biblioteca de cliente haga referencia a otras bibliotecas, identifique las demás bibliotecas como dependencias. En el JSP, la variable `ui:includeClientLib` que hace referencia a la carpeta de la biblioteca de cliente hace que el código del HTML incluya un vínculo al archivo de biblioteca generado y a las dependencias.
 
 Las dependencias deben ser otras `cq:ClientLibraryFolder`. Para identificar dependencias, agregue una propiedad a su `cq:ClientLibraryFolder` nodo con los atributos siguientes:
 

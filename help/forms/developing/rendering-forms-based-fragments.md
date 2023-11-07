@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2199'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 El servicio Forms puede procesar formularios basados en fragmentos creados con Designer. A *fragmento* es una parte reutilizable de un formulario y se guarda como un archivo XDP independiente que se puede insertar en varios diseños de formulario. Por ejemplo, un fragmento puede incluir un bloque de direcciones o texto legal.
 
-El uso de fragmentos simplifica y acelera la creación y el mantenimiento de una gran cantidad de formularios. Al crear un nuevo formulario, inserte una referencia al fragmento requerido y este aparecerá en el formulario. La referencia de fragmento contiene un subformulario que señala al archivo XDP físico. Para obtener información sobre la creación de diseños de formulario basados en fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+El uso de fragmentos simplifica y acelera la creación y el mantenimiento de una gran cantidad de formularios. Al crear un formulario, inserte una referencia al fragmento requerido y este aparecerá en el formulario. La referencia de fragmento contiene un subformulario que señala al archivo XDP físico. Para obtener información sobre la creación de diseños de formulario basados en fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Un fragmento puede incluir varios subformularios envueltos en un conjunto de subformularios de opción. Los conjuntos de subformularios de opción controlan la visualización de subformularios en función del flujo de datos desde una conexión de datos. Las sentencias condicionales se utilizan para determinar qué subformulario del conjunto aparece en el formulario enviado. Por ejemplo, cada subformulario de un conjunto puede incluir información de una ubicación geográfica determinada y el subformulario que se muestra se puede determinar en función de la ubicación del usuario.
 
@@ -77,7 +77,7 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 Para procesar correctamente un formulario basado en fragmentos, debe asegurarse de que el servicio Forms pueda localizar el formulario y los fragmentos (los archivos XDP) a los que hace referencia el diseño de formulario. Por ejemplo, supongamos que el formulario se denomina PO.xdp y que utiliza dos fragmentos llamados FooterUS.xdp y FooterCanada.xdp. En este caso, el servicio Forms debe poder localizar los tres archivos XDP.
 
-Puede organizar un formulario y sus fragmentos colocándolo en una ubicación y los fragmentos en otra ubicación, o bien puede colocar todos los archivos XDP en la misma ubicación. A los efectos de esta sección, supongamos que todos los archivos XDP se encuentran en el repositorio de AEM Forms. Para obtener información sobre cómo colocar archivos XDP en el repositorio de AEM Forms, consulte [Recursos de escritura](/help/forms/developing/aem-forms-repository.md#writing-resources).
+Puede organizar un formulario y sus fragmentos colocándolo en una ubicación y los fragmentos en otra ubicación, o bien puede colocar todos los archivos XDP en la misma ubicación. A los efectos de esta sección, supongamos que todos los archivos XDP están en el repositorio de AEM Forms. Para obtener información sobre cómo colocar archivos XDP en el repositorio de AEM Forms, consulte [Recursos de escritura](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Al procesar un formulario basado en fragmentos, solo debe hacer referencia al propio formulario y no a los fragmentos. Por ejemplo, debe hacer referencia a PO.xdp y no a FooterUS.xdp o FooterCanada.xdp. Asegúrese de colocar los fragmentos en una ubicación en la que el servicio Forms pueda localizarlos.
 
@@ -122,7 +122,7 @@ Procesar un formulario basado en fragmentos mediante la API de Forms (Java):
 
    * Crear un `URLSpec` que almacena los valores de URI mediante su constructor.
    * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario y los fragmentos se encuentran en el URI raíz de contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository://`.
+   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario y los fragmentos estén en el URI raíz de contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository://`.
    * Invoque el `URLSpec` del objeto `setTargetURL` y pasan un valor de cadena que especifica el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Procesar el formulario
@@ -174,7 +174,7 @@ Procesar un formulario basado en fragmentos mediante la API de Forms (servicio w
 
    * Crear un `URLSpec` que almacenan valores de URI utilizando su constructor.
    * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario esté ubicado en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository://`.
+   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño del formulario esté en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository://`.
    * Invoque el `URLSpec` del objeto `setTargetURL` y pasan un valor de cadena que especifica el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Procesar el formulario
@@ -183,7 +183,7 @@ Procesar un formulario basado en fragmentos mediante la API de Forms (servicio w
 
    * Un valor de cadena que especifica el nombre del diseño del formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta de acceso completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * A `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar los datos, apruebe `null`.
-   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Tenga en cuenta que la opción de PDF etiquetado no se puede establecer si el documento de entrada es un documento de PDF. Si el archivo de entrada es un archivo XDP, se puede establecer la opción de PDF etiquetado.
+   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. La opción de PDF etiquetado no se puede definir si el documento de entrada es un documento de PDF. Si el archivo de entrada es un archivo XDP, se puede establecer la opción de PDF etiquetado.
    * A `URLSpec` que contiene los valores de URI requeridos por el servicio Forms.
    * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
    * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que rellena el método. Este parámetro se utiliza para almacenar el formulario procesado.

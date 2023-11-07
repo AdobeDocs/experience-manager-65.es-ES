@@ -10,10 +10,10 @@ discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 86%
+source-wordcount: '830'
+ht-degree: 83%
 
 ---
 
@@ -41,6 +41,7 @@ Para permitir que Designer genere una vista previa HTML de los formularios XDP, 
 
       * -/content/xfaforms
       * -/etc/clientlibs
+
    * AEM Forms en OSGi
 
       * -/content/xfaforms
@@ -78,6 +79,7 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
       * `/content/xfaforms/profiles/default.html` (AEM Forms en OSGi)
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms en JEE)
+
    * **Contexto de Forms Manager:** la ruta del contexto en el que se implementa la interfaz de usuario de Forms Manager. Los valores predeterminados son:
 
       * `/aem/forms` (AEM Forms en OSGi)
@@ -100,7 +102,8 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
    >
    >    * Si la pestaña Vista previa HTML está cerrada, pulse F4 para abrirla. También puede seleccionar la opción Vista previa HTML en el menú Ver para abrir la pestaña Vista previa HTML.
    >    * La vista previa HTML no admite documentos PDF; únicamente permite visualizar documentos XDP.
-
+   >
+   >
 
    >[!CAUTION]
    >
@@ -120,6 +123,6 @@ La prueba del formulario mediante una fuente de datos de ejemplo garantiza que l
 
 1. Haga clic en **Aceptar**. La próxima vez que obtenga una vista previa del formulario mediante la pestaña **Vista previa HTML**, aparecerán los valores de datos del archivo XML de ejemplo en los objetos correspondientes.
 
-## Obtener una vista previa de los formularios ubicados en un repositorio {#html-preview-of-forms-in-forms-manager}
+## Vista previa de formularios en un repositorio {#html-preview-of-forms-in-forms-manager}
 
-En AEM Forms, puede obtener una vista previa de los formularios y documentos de un repositorio. La vista previa permite conocer cuál será exactamente el aspecto y el comportamiento de los formularios cuando los utilicen los usuarios finales.
+En AEM Forms, puede obtener una vista previa de los formularios y documentos de un repositorio. La vista previa permite saber exactamente qué aspecto tienen los formularios y cómo se comportan cuando los utilizan los usuarios finales.

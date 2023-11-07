@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ La implementación siguiente del método getResource devuelve el objeto Resource
     }
 ```
 
-El siguiente código representa toda la clase, incluidas las anotaciones SCR que configuran el servicio. Tenga en cuenta que la clasificación del servicio es 200, que anula el servicio predeterminado.
+El siguiente código representa toda la clase, incluidas las anotaciones SCR que configuran el servicio. La clasificación del servicio es 200, que anula el servicio predeterminado.
 
 ```java
 /*************************************************************************

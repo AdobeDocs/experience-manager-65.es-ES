@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Los siguientes comandos son un ejemplo de cómo configurar un conjunto de répli
 
    * Adecuado para cualquier sistema operativo.
    * Solr versión 7.0.
-   * Solr requiere Java™ 1.7 o bueno.
+   * Solr requiere Java™ 1.7 o superior.
 
 * Configuración básica
 
@@ -147,7 +147,7 @@ Siga las instrucciones de la página de documentación principal: [MSRP: almacé
 
 ## Probar {#test}
 
-Para probar y verificar el almacén común de MongoDB, publique un comentario en la instancia de publicación y visualícelo en la instancia de autor, así como vea el UGC en MongoDB y Solr:
+Para probar y verificar el almacén común de MongoDB, publique un comentario en la instancia de publicación y visualícelo en la instancia de autor, y vea el UGC en MongoDB y Solr:
 
 1. En la instancia de publicación, vaya a [Guía de componentes de la comunidad](http://localhost:4503/content/community-components/en/comments.html) y seleccione el componente Comentarios.
 1. Inicie sesión para publicar un comentario:
@@ -169,8 +169,8 @@ Para probar y verificar el almacén común de MongoDB, publique un comentario en
 
    * Vaya al panel de Solr: [http://localhost:8983/solr/](http://localhost:8983/solr/).
    * Usuario `core selector` para seleccionar `collection1`.
-   * Seleccionar `Query`.
-   * Seleccionar `Execute Query`.
+   * Seleccione lo siguiente `Query`.
+   * Seleccione lo siguiente `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 

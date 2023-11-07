@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1619'
 ht-degree: 1%
 
 ---
@@ -92,9 +92,9 @@ Utilice el siguiente procedimiento para añadir variables a la lista:
 
 1. En la página del marco de trabajo de Adobe Analytics, expanda **Configuración general de Analytics** área.
 1. Debajo de la lista de variables, haga clic en Agregar elemento para agregar una nueva variable a la lista.
-1. En la celda de la izquierda, introduzca un nombre para la variable, por ejemplo `prop10`.
+1. En la celda de la izquierda, introduzca un nombre para la variable, por ejemplo, `prop10`.
 
-1. En la columna derecha, introduzca un valor para la variable, por ejemplo `CONSTANT`.
+1. En la columna derecha, introduzca un valor para la variable, por ejemplo, `CONSTANT`.
 
 1. Para quitar una variable, haga clic en el botón (-) junto a la variable.
 
@@ -199,7 +199,7 @@ Por lo tanto, JavaScript debe establecer `s.usePlugins` hasta `true` para que cu
    1. Especificar `cq` como el nombre de la carpeta y haga clic en Aceptar.
    1. Del mismo modo, cree el `analytics` y `components` carpetas.
 
-1. Haga clic con el botón derecho en `components` que acaba de crear y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad:
+1. Haga clic con el botón derecho en `components` que ha creado y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad:
 
    * Etiqueta: `sitecatalyst`
    * Título: `sitecatalyst`
@@ -301,7 +301,7 @@ AEM Utilice el siguiente procedimiento para obtener el código del complemento, 
 
 1. Abra el archivo js.txt desde la carpeta de biblioteca de cliente.
 
-1. En una línea nueva, añada el nombre del archivo que contiene el complemento, por ejemplo getQueryParam.js. A continuación, haga clic en Guardar todo y cierre el archivo.
+1. En una línea nueva, añada el nombre del archivo que contiene el complemento, por ejemplo, getQueryParam.js. A continuación, haga clic en Guardar todo y cierre el archivo.
 
 >[!NOTE]
 >

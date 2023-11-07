@@ -9,9 +9,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >La actualización requiere tiempo de inactividad para el nivel de Author, ya que la mayoría de las actualizaciones de Adobe Experience Manager AEM () se realizan in situ. Si sigue estas prácticas recomendadas, puede minimizar o eliminar el tiempo de inactividad del nivel de publicación.
 
-AEM Al actualizar los entornos de creación, debe tener en cuenta las diferencias de enfoque entre la actualización de entornos de creación o de publicación para minimizar el tiempo de inactividad, tanto para los autores como para los usuarios finales. AEM AEM En esta página se describe el procedimiento de alto nivel para actualizar una topología en la que se está ejecutando actualmente en una versión de 6.x. Dado que el proceso difiere entre los niveles de creación y publicación, así como entre las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se ha enumerado en una sección independiente. Al ejecutar la implementación, Adobe recomienda actualizar primero el entorno de creación, determinar el éxito y, a continuación, continuar con los entornos de publicación.
+AEM Al actualizar los entornos de creación, debe tener en cuenta las diferencias de enfoque entre la actualización de entornos de creación o de publicación para minimizar el tiempo de inactividad, tanto para los autores como para los usuarios finales. AEM AEM En esta página se describe el procedimiento de alto nivel para actualizar una topología en la que se está ejecutando actualmente en una versión de 6.x. Dado que el proceso difiere entre los niveles de creación y publicación y las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se han enumerado en una sección independiente. Al ejecutar la implementación, Adobe recomienda actualizar primero el entorno de creación, determinar el éxito y, a continuación, continuar con los entornos de publicación.
 
 <!--
 >[!IMPORTANT]
@@ -83,7 +83,7 @@ La topología supuesta para esta sección consiste en un servidor de creación q
 
 ### Iniciando topología {#starting-topology-1}
 
-La topología supuesta para esta sección consiste en un clúster de creación de MongoMK con al menos dos instancias de creación de AEM, respaldadas por al menos dos bases de datos MongoMK. Todas las instancias de autor comparten un almacén de datos. Estos pasos deben aplicarse tanto a los almacenes de datos S3 como a los de archivos. La replicación se produce desde los servidores de creación a la granja de servidores de publicación TarMK.
+AEM La topología supuesta para esta sección consiste en un clúster de creación de MongoMK con al menos dos instancias de autor de, respaldadas por al menos dos bases de datos MongoMK. Todas las instancias de autor comparten un almacén de datos. Estos pasos deben aplicarse tanto a los almacenes de datos S3 como a los de archivos. La replicación se produce desde los servidores de creación a la granja de servidores de publicación TarMK.
 
 ![mongo-topología](assets/mongo-topology.jpg)
 
@@ -93,7 +93,7 @@ La topología supuesta para esta sección consiste en un clúster de creación d
 
 1. Detener la creación de contenido.
 1. Clone el almacén de datos para la copia de seguridad.
-1. Detenga todas las instancias de autor de AEM, excepto una, y su autor principal.
+1. AEM Detenga todas las instancias de autor excepto una, la instancia de autor principal.
 1. Elimine todos los nodos MongoDB excepto uno del conjunto de réplicas, su instancia principal de Mongo.
 1. Actualice el `DocumentNodeStoreService.cfg` en el Autor principal para reflejar el conjunto de réplicas de un solo miembro.
 1. Reinicie el autor principal para asegurarse de que se reinicia correctamente.

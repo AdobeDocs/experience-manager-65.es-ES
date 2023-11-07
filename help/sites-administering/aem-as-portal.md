@@ -1,19 +1,15 @@
 ---
 title: AEM Portals y portlets de la red
-seo-title: AEM Portals and Portlets
 description: AEM AEM Obtenga información sobre cómo configurar y administrar los recursos de un portal, así como sobre cómo configurar y mostrar el contenido de un portlet de forma que se pueda configurar y mostrar de manera que se pueda mostrar el contenido de un portal.
-seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -130,7 +126,7 @@ El portlet se puede configurar con las siguientes preferencias:
   </tr>
   <tr>
    <td>preferencesDialog</td>
-   <td>AEM Ruta al cuadro de diálogo de preferencias en: si se deja vacío, se utilizará el cuadro de diálogo de preferencias integrado. El valor predeterminado es /libs/portal/content/prefs.html.</td>
+   <td>AEM Ruta al cuadro de diálogo de preferencias en: si se deja vacío, se utiliza el cuadro de diálogo de preferencias integrado. El valor predeterminado es /libs/portal/content/prefs.html.</td>
   </tr>
   <tr>
    <td>initialRedirect</td>
@@ -193,7 +189,7 @@ Para configurar un agente de replicación para el portal:
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. Haga doble clic en el agente de replicación recién creado. Se muestra como no válido porque aún no se ha configurado.
+1. Haga doble clic en el agente de replicación que ha creado. Se muestra como no válido porque aún no se ha configurado.
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -247,7 +243,7 @@ AEM Las opciones de configuración de autenticación que utiliza el portlet en l
 
 >[!NOTE]
 >
->AEM Al trabajar con, existen varios métodos para administrar los ajustes de configuración de los servicios OSGi (nodos de consola o de repositorio).
+>AEM Al trabajar con el servicio de OSGi, existen varios métodos para administrar los ajustes de configuración de los servicios de OSGi (nodos de consola o de repositorio).
 >
 >Consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
 
@@ -343,7 +339,7 @@ AEM Por cada solicitud que WCM recibe, primero se intenta la autenticación basa
 
 #### AEM Activación de la autenticación SSO en un portlet de {#enabling-sso-authentication-in-a-aem-portlet}
 
-AEM Para que la instancia de WCM subyacente acepte solicitudes de SSO, el modo de autenticación del portlet debe cambiarse de **Técnico** hasta **SSO**.
+AEM Para que la instancia de WCM subyacente acepte solicitudes de SSO, el modo de autenticación del portlet debe cambiarse desde **Técnico** hasta **SSO**.
 
 AEM Para habilitar la autenticación SSO en un portlet de:
 
@@ -548,7 +544,7 @@ AEM AEM El portlet de contenido de la aplicación tiene una función de localiza
 Esto se realiza en dos pasos:
 
 1. El detector de configuración regional del directorio de portal detecta la configuración regional del usuario del portal al obtener la configuración regional del portal. AEM Este servicio debe configurarse con la lista de idiomas disponibles en la lista de idiomas en los que se puede realizar la.
-1. El controlador de configuración regional de Portal Director administra la localización de la solicitud actual. Toma la ruta del contenido solicitado, por ejemplo `/content/geometrixx/en/company.html`y según la configuración, reescribe el **en** con la configuración regional real del usuario.
+1. El controlador de configuración regional de Portal Director administra la localización de la solicitud actual. Toma la ruta del contenido solicitado, por ejemplo, `/content/geometrixx/en/company.html`y según la configuración, reescribe el **en** con la configuración regional real del usuario.
 
 El controlador de configuración regional de Portal Director se puede configurar con las rutas para buscar información de configuración regional, normalmente esto incluye todo lo que hay bajo `/content` y con la posición de la información de configuración regional en la ruta. AEM De forma predeterminada, el controlador de configuración regional sigue la recomendación de estructurar sitios en varios idiomas dentro de la configuración de idioma de los sitios de la interfaz de usuario de.
 
@@ -616,7 +612,7 @@ Al implementar un servicio de este tipo, asegúrese de establecer la variable **
 | **Nombre** | **Descripción** | **Comportamiento predeterminado** |
 |---|---|---|
 | Autenticador | AEM Proporciona la información de autenticación que se va a | Utiliza un usuario técnico configurable tanto para creación como para publicación. O se puede utilizar SSO. |
-| HTMLRewriter | Reescribe vínculos, imágenes, etc. | AEM Reescribe los vínculos de la biblioteca de vínculos del portal, que se pueden ampliar mediante un UrlMapper y un TextMapper |
+| HTMLRewriter | Reescribe vínculos, imágenes, etc | AEM Reescribe los vínculos de la biblioteca de vínculos del portal, que se pueden ampliar mediante un UrlMapper y un TextMapper |
 | HttpClientService | Gestiona todas las conexiones http | Implementación estándar |
 | LocaleHandler | Gestiona la información de configuración regional | Reescribe un vínculo al contenido con respecto a la configuración regional. |
 | LocaleDetector | Detecta la configuración regional del usuario. | Utiliza la configuración regional proporcionada por el portal. |
@@ -731,7 +727,7 @@ Utilice el componente Portal para añadir una ventana de portlet a la página we
 
 AEM AEM Para acceder al contenido proporcionado por WCM, es necesario que el servidor del portal esté equipado con el Portlet Director del portal de la interfaz de usuario de la interfaz de usuario de. Para ello, instale, configure y agregue el portlet a la página del portal siguiendo los pasos que se indican en esta sección.
 
-De forma predeterminada, el portlet se conecta a la instancia de publicación en localhost:4503 y a la instancia de autor en localhost:4502. Estos valores se pueden cambiar durante la implementación del portlet. El director del portal está disponible como contenido en el repositorio en /libs/portal/directory. Deberá descargar el archivo WAR de la aplicación antes de utilizarlo.
+De forma predeterminada, el portlet se conecta a la instancia de publicación en localhost:4503 y a la instancia de autor en localhost:4502. Estos valores se pueden cambiar durante la implementación del portlet. El director del portal está disponible como contenido en el repositorio en /libs/portal/directory. Debe descargar el archivo WAR de la aplicación antes de utilizarlo.
 
 ### Descarga del archivo WAR {#downloading-the-war-file}
 
@@ -799,7 +795,7 @@ AEM Normalmente, la ruta de inicio apunta directamente al contenido en la págin
 Para agregar el portlet a la página del portal:
 
 1. Asegúrese de que se encuentra en la ventana de administración del servidor de aplicaciones y vaya a la ubicación donde administra las páginas. (por ejemplo, en WebSphere 6.1, haga clic en **Administrar páginas**).
-1. Seleccione el nombre del portlet y, a continuación, seleccione una página existente o cree una nueva.
+1. Seleccione el nombre del portlet y seleccione una página existente o cree una página.
 1. Edite el diseño de página.
 1. Seleccione el portlet y agréguelo a un contenedor.
 1. Guarde los cambios.

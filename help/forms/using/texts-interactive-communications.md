@@ -10,9 +10,9 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2477'
+source-wordcount: '2475'
 ht-degree: 97%
 
 ---
@@ -86,7 +86,7 @@ Puede editar un fragmento de documento de texto existente mediante los siguiente
 
 Puede personalizar los fragmentos de documento de texto al insertar las propiedades del modelo de datos de formulario. Al insertar las propiedades del modelo de datos de formulario en texto, se pueden recuperar y rellenar datos específicos del destinatario de la fuente de datos asociado con la vista previa de una comunicación interactiva. Para obtener más información sobre el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
-Si ha especificado un modelo de datos de formulario al crear un texto, las propiedades del modelo de datos de formulario aparecerán en el panel izquierdo del editor de texto. El modelo de datos de formulario especificado debe ser el mismo para el fragmento de documento de texto, así como para la comunicación interactiva que lo incluye.
+Si ha especificado un modelo de datos de formulario al crear un texto, las propiedades del modelo de datos de formulario aparecerán en el panel izquierdo del editor de texto. El modelo de datos de formulario especificado debe ser el mismo para el fragmento de documento de texto y la comunicación interactiva que lo incluye.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 

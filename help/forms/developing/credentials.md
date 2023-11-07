@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Para poder importar mediante programación una credencial en AEM Forms, cree un 
 
 **Hacer referencia a la credencial**
 
-Haga referencia a una credencial que desee importar en AEM Forms. El inicio rápido asociado a esta sección hace referencia a un archivo P12 ubicado en el sistema de archivos.
+Haga referencia a una credencial que desee importar en AEM Forms. El inicio rápido asociado a esta sección hace referencia a un archivo P12 en el sistema de archivos.
 
 **Realice la operación de importación**
 

@@ -1,15 +1,15 @@
 ---
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 78%
+source-wordcount: '516'
+ht-degree: 62%
 
 ---
 # Contribución a la documentación de Adobe Experience Manager
 
 Gracias por contribuir con la documentación de Adobe Experience Manager. Adobe acoge con satisfacción las aportaciones de contenido de toda la comunidad de lectores y de otros empleados del Adobe.
 
-Este archivo describe cómo puede contribuir, así como las directrices que debe seguir al realizar sus contribuciones.
+Este archivo describe cómo puede contribuir y señala las directrices que debe seguir al realizar sus contribuciones.
 
 ## Código de conducta de código abierto de Adobe
 
@@ -17,7 +17,7 @@ Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](c
 
 ## Directrices para la contribución
 
-Si bien acogemos con beneplácito cualquier contribución para mejorar la documentación de AEM, pedimos que las contribuciones se ajusten a determinadas directrices y normas, siempre que sea posible. Consulte las [Directrices para contribuir a la documentación de AEM](guidelines.md) para obtener más información.
+Si bien acogemos con beneplácito cualquier contribución para mejorar la documentación de AEM, pedimos que las contribuciones se ajusten a determinadas directrices y normas, siempre que sea posible. Revise la [AEM Directrices para contribuir a la documentación de la](guidelines.md) para obtener más información.
 
 ## Contribuir
 
@@ -54,7 +54,7 @@ Consulte el siguiente vídeo para obtener una descripción general rápida de c�
 
 Si usted es un empleado de Adobe y tiene una contribución, utilice el `AdobeDocs` org en el git corporativo.
 
-Por supuesto, estamos encantados de recibir cualquier contribución y revisaremos su contribución si se realiza en el repositorio público, sin embargo, las solicitudes de extracción de los empleados de Adobe son más fáciles de procesar y se pueden aprobar más rápido en el repositorio corporativo. Asegúrese de que cualquier información de propiedad solo se analiza en el repositorio corporativo.
+Estamos encantados de recibir cualquier contribución y revisaremos su contribución si se realiza en el repositorio público, sin embargo, las solicitudes de extracción de los empleados de Adobe son más fáciles de procesar y se pueden aprobar más rápido en el repositorio corporativo. Asegúrese de que cualquier información de propiedad solo se analiza en el repositorio corporativo.
 
 ## Información adicional
 

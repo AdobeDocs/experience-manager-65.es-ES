@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '699'
 ht-degree: 7%
 
 ---
@@ -24,13 +24,13 @@ Puede utilizar documentos protegidos por directivas que reciba de un usuario de 
 * Un usuario de Document Security que desea enviarle un documento protegido por una directiva le agrega a una directiva.
 * Un administrador de Document Security crea una cuenta para usted.
 
-   Después de registrarse y activar la cuenta, puede utilizar documentos protegidos por directivas que esté autorizado a utilizar mediante una directiva. Si el administrador de Document Security habilita estas funciones para usuarios invitados, es posible que tenga permiso para realizar estas tareas:
+  Después de registrarse y activar la cuenta, puede utilizar documentos protegidos por directivas que esté autorizado a utilizar mediante una directiva. Si el administrador de Document Security habilita estas funciones para usuarios invitados, es posible que tenga permiso para realizar estas tareas:
 
 * Documentos de Protect mediante directivas de seguridad de documentos.
 * Cree sus propias directivas de usuario que pueda aplicar a sus documentos.
 * Invitar a otros usuarios externos a utilizar un documento protegido por una directiva agregándolos a la directiva.
 
-   Además, cuando se registra, no es necesario registrarse de nuevo para utilizar otros documentos protegidos por políticas. Su cuenta permanece activa hasta que un administrador de directivas la deshabilite o elimine.
+  Además, cuando se registra, no es necesario registrarse de nuevo para utilizar otros documentos protegidos por políticas. Su cuenta permanece activa hasta que un administrador de directivas la deshabilite o elimine.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Su cuenta permanece activa hasta que el administrador la desactiva o elimina.
 
 ## Restablecer la contraseña {#reset-your-password}
 
-Si olvida su contraseña, el administrador de políticas puede restablecerla por usted. El restablecimiento de una contraseña genera un correo electrónico que le invita a iniciar sesión con una contraseña temporal. A continuación, puede crear una nueva contraseña.
+Si olvida su contraseña, el administrador de políticas puede restablecerla por usted. El restablecimiento de una contraseña genera un correo electrónico que le invita a iniciar sesión con una contraseña temporal. A continuación, puede crear otra contraseña.
 
 Para obtener información sobre cómo ponerse en contacto con un administrador de Document Security para obtener una nueva contraseña, consulte el aviso de activación por correo electrónico u otros avisos de la organización que le invitó a registrarse.
 

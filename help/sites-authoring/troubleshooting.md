@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '294'
 ht-degree: 42%
 
 ---
@@ -25,7 +25,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->AEM Los usuarios que tienen privilegios de administrador y que desean solucionar problemas con la solución de problemas con la solución de problemas con la solución de problemas, pueden utilizar los métodos de solución de problemas descritos en [AEM Solución de problemas (para administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, póngase en contacto con el administrador del sistema para solucionar los problemas de la solución de problemas de la forma más sencilla de resolver los problemas de la.
+>AEM Los usuarios que tienen privilegios de administrador y que desean solucionar problemas con la solución de problemas con la solución de problemas con la solución de problemas, pueden utilizar los métodos de solución de problemas descritos en [AEM Solución de problemas (para administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
@@ -46,8 +46,8 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
       * `http://localhost:4502/sites.html/content?`
       * Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
-   * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
 
+   * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
 
 ## Acciones aplicables a los componentes no visibles en la barra de herramientas {#component-actions-not-visible-on-toolbar}
 

@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ La superposición de un componente es un método para realizar modificaciones en
 
 La superposición se realiza modificando una copia del componente predeterminado en el icono /**apps** en lugar de modificar el componente original en el directorio /**libs** directorio. El componente se construye con una ruta relativa idéntica, excepto que &quot;libs&quot; se sustituye por &quot;apps&quot;.
 
-El directorio /apps es el primer lugar en el que se buscan solicitudes para resolverlas y, si no se encuentra, se utiliza la versión predeterminada ubicada en el directorio /libs.
+El directorio /apps es el primer lugar en el que se buscan solicitudes para resolverlas y, si no se encuentra, se utiliza la versión predeterminada en el directorio /libs.
 
 El componente predeterminado en el directorio /libs nunca debe modificarse, ya que los parches y las actualizaciones futuros pueden alterar el directorio /libs de la manera necesaria mientras se mantienen las interfaces públicas.
 

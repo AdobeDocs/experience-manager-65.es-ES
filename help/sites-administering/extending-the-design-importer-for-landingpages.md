@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3498'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Antes de realizar la importación, tenga en cuenta las siguientes limitaciones:
 
 ### No se conserva ningún atributo como clase o id aplicado en la etiqueta &amp;lt;body> {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Si se aplica algún atributo como id o class en la etiqueta body, por ejemplo `<body id="container">` a continuación, no se conserva después de la importación. Por lo tanto, el diseño que se esté importando no debería depender de los atributos aplicados en la `<body>` etiqueta.
+Si se aplica algún atributo como id o class en la etiqueta body, por ejemplo, `<body id="container">` a continuación, no se conserva después de la importación. Por lo tanto, el diseño que se esté importando no debería depender de los atributos aplicados en la `<body>` etiqueta.
 
 ### Arrastrar y soltar zip {#drag-and-drop-zip}
 
@@ -321,7 +321,7 @@ Un formulario de posible cliente es un formulario que se utiliza para recopilar 
 
 * Campos de posibles clientes predefinidos: nombre, apellido, dirección, dob, sexo, acerca de, userId, emailId, botón de envío están disponibles en la barra de tareas. Basta con arrastrar y soltar el componente necesario en el formulario de posible cliente.
 * Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede añadir campos adicionales utilizando los campos cq:form o cta del formulario de posibles clientes, asignarles un nombre y diseñarlos según los requisitos.
-* Asigne campos de formulario de posibles clientes con nombres predefinidos específicos de formularios de posibles clientes de CTA, por ejemplo: firstName para el nombre en el formulario de posibles clientes, etc.
+* Asigne campos de formulario de posibles clientes con nombres predefinidos específicos de formularios de posibles clientes de CTA, por ejemplo, - firstName para el nombre en el formulario de posibles clientes, etc.
 * Los campos que no están asignados al formulario principal se asignan a los componentes cq:form: texto, radio, casilla de verificación, lista desplegable, oculto, contraseña.
 * El usuario puede proporcionar el título con la etiqueta &quot;label&quot; y puede proporcionar estilo utilizando el atributo de estilo &quot;class&quot; (solo disponible para componentes de formulario de posibles clientes de CTA).
 * La página de agradecimiento y la lista de suscripción se pueden proporcionar como un parámetro oculto del formulario (presente en el index.htm) o se pueden agregar o editar desde la barra de edición de Inicio del formulario de posibles clientes
@@ -438,9 +438,9 @@ Si no se especifica ninguna codificación en el HTML importado, la codificación
 
 ### Plantilla superpuesta {#overlaying-template}
 
-La plantilla Página de aterrizaje en blanco se puede superponer creando una nueva en: `/apps/<appName>/designimporter/templates/<templateName>`
+La plantilla Página de aterrizaje en blanco se puede superponer creando una en: `/apps/<appName>/designimporter/templates/<templateName>`
 
-AEM Se explican los pasos para crear una nueva plantilla en la creación de plantillas de formulario [aquí](/help/sites-developing/templates.md).
+AEM Se explican los pasos para crear una plantilla en la creación de plantillas en la página de inicio de sesión [aquí](/help/sites-developing/templates.md).
 
 ### Referencia a un componente desde la página de aterrizaje {#referring-a-component-from-landing-page}
 

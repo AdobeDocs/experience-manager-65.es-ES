@@ -2,10 +2,10 @@
 title: Crear contenido accesible para Adobe Experience Manager (Conformidad con WCAG 2.1)
 description: AEM Uso para ayudar a las personas con discapacidades a hacer que el contenido web sea accesible para ellas y lo puedan utilizar
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '13817'
-ht-degree: 85%
+source-wordcount: '13810'
+ht-degree: 84%
 
 ---
 
@@ -281,7 +281,7 @@ Siga las directrices que se proporcionan para la [Descripción del audio o medio
 
 ### Adaptable (1.3)     {#adaptable}
 
-[Directriz 1.3 Adaptable: cree contenido que se pueda presentar de diferentes maneras (por ejemplo, de forma más sencilla) sin perder información ni estructuras.](https://www.w3.org/TR/WCAG/#adaptable)
+[Directrices 1.3 Adaptable: Crear contenido que se pueda presentar de diferentes maneras (por ejemplo, con un diseño más sencillo) sin perder información o estructura.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Esta directriz cubre los requisitos necesarios para apoyar a las siguientes personas:
 
@@ -438,7 +438,7 @@ Del mismo modo, la información que requiere distinguir entre sonidos diferentes
 
 Asegúrese de que cualquier información relativa a las características visuales del contenido de una página también se presente en un formato alternativo.
 
-* Es importante no basarse en la posición visual para dar información. Por ejemplo, para dirigir a los usuarios hacia un menú a la derecha de la página para que accedan a más información, no se debe hacer referencia al *menú de la derecha*; en lugar de eso, es preferible nombrar el menú (por ejemplo mediante un encabezado) y hacer referencia a ese nombre en el texto.
+* Es importante no basarse en la posición visual para dar información. Por ejemplo, si desea remitir a los usuarios a un menú situado en la parte derecha de la página para acceder a más información, no consulte *el menú de la derecha*; en su lugar, asigne un nombre al menú (por ejemplo, mediante un encabezado) y menciónelo en el texto.
 * También es importante no basarse en el estilo del texto (por ejemplo, si se trata de texto en negrita o en cursiva) como la única manera de transmitir la información.
 
 >[!NOTE]
@@ -1094,7 +1094,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 3.2.2](https://ww
 
 La intención de este criterio de éxito es fomentar el uso de una presentación y un diseño coherentes para los usuarios que interactúan con contenido repetido dentro de un conjunto de páginas web y deben localizar información o funcionalidad específicas más de una vez. Las personas con visión reducida que utilizan la ampliación de la pantalla para mostrar una pequeña parte de esta suelen usar indicaciones visuales y límites de página para localizar rápidamente el contenido repetido. La presentación de contenido repetido en el mismo orden también es importante para los usuarios visuales que usan la memoria espacial o las señales visuales en el diseño para localizar contenido repetido.
 
-Es importante tener en cuenta que el uso de la frase &quot;el mismo orden&quot; en esta sección no implica que no se puedan usar los menús de subnavegación o que no se puedan usar bloques de navegación secundaria o de estructura de página. En su lugar, este criterio de éxito está diseñado para ayudar a los usuarios que interactúan con el contenido repetido en las páginas web, a poder predecir la ubicación del contenido que buscan. Y, para encontrarlo más rápido cuando lo encuentren de nuevo.
+El uso de la frase &quot;el mismo orden&quot; en esta sección no implica que no se puedan usar los menús de subnavegación o que no se puedan usar bloques de navegación secundaria o de estructura de página. En su lugar, este criterio de éxito está diseñado para ayudar a los usuarios que interactúan con el contenido repetido en las páginas web, a poder predecir la ubicación del contenido que buscan. Y, para encontrarlo más rápido cuando lo encuentren de nuevo.
 
 Los usuarios pueden iniciar un cambio en el orden utilizando agentes de usuario adaptables o estableciendo preferencias para que la información se presente de una manera que les resulte más útil.
 
@@ -1206,7 +1206,7 @@ Las etiquetas se colocan inmediatamente a la derecha del campo.
 * Otros componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados): 
 Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
 
-En formularios simples con funcionalidad limitada, etiquetar correctamente una `Submit` puede actuar como una etiqueta para el campo adyacente (por ejemplo, `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
+En formularios simples con funcionalidad limitada, etiquetar correctamente una `Submit` El botón puede actuar como una etiqueta para el campo adyacente (por ejemplo, `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
 
 #### Más información: Etiquetas o instrucciones (3.3.2)   {#more-information-labels-or-instructions}
 

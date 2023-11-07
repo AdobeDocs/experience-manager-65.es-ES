@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5396'
+source-wordcount: '5393'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 AEM Forms se puede invocar mediante la API de Java de AEM Forms. Al utilizar la API de Java de AEM Forms, puede utilizar la API de invocación o las bibliotecas de cliente de Java. Las bibliotecas de cliente Java están disponibles para servicios como el servicio Rights Management. Estas API con establecimiento inflexible de tipos le permiten desarrollar aplicaciones Java que invocan AEM Forms.
 
-La API de invocación son clases que se encuentran en la variable `com.adobe.idp.dsc` paquete. Con estas clases, se puede enviar una solicitud de invocación directamente a un servicio y controlar una respuesta de invocación que se devuelve. Utilice la API de invocación para invocar procesos de corta o larga duración creados con Workbench.
+La API de invocación son clases que se encuentran en `com.adobe.idp.dsc` paquete. Con estas clases, se puede enviar una solicitud de invocación directamente a un servicio y controlar una respuesta de invocación que se devuelve. Utilice la API de invocación para invocar procesos de corta o larga duración creados con Workbench.
 
 La forma recomendada de invocar un servicio mediante programación es utilizar una biblioteca de cliente Java que corresponda al servicio en lugar de la API de invocación. Por ejemplo, para invocar el servicio Encryption, utilice la biblioteca de cliente del servicio Encryption. Para realizar una operación del servicio Encryption, invoque un método que pertenezca al objeto de cliente del servicio Encryption. Puede cifrar un documento de PDF con una contraseña invocando la variable `EncryptionServiceClient` del objeto `encryptPDFUsingPassword` método.
 
@@ -632,7 +632,7 @@ En esta situación, una aplicación cliente se está ejecutando en su propia JVM
 
 ### Aplicación cliente que invoca instancias de AEM Forms agrupadas {#client-application-invoking-clustered-aem-forms-instances}
 
-En el diagrama siguiente se muestra una aplicación cliente ejecutándose en su propia JVM e invocando instancias de AEM Forms ubicadas en un clúster.
+En el diagrama siguiente se muestra una aplicación cliente ejecutándose en su propia JVM e invocando instancias de AEM Forms en un clúster.
 
 Este escenario es similar a una aplicación cliente que invoca una instancia de AEM Forms independiente. Sin embargo, la dirección URL del proveedor es diferente. Si una aplicación cliente desea conectarse a un servidor de aplicaciones J2EE específico, la aplicación debe cambiar la URL para hacer referencia al servidor de aplicaciones J2EE específico.
 

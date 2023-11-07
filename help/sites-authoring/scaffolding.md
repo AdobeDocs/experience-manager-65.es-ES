@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen 
 
 >[!NOTE]
 >
->Aunque hay un andamiaje [modo](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, el mantenimiento y la creación de andamios, así como la creación de nuevas páginas a partir de andamios, se realizan en la IU clásica. Consulte [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación de la IU clásica para obtener más información.
+>Aunque hay un andamiaje [modo](/help/sites-authoring/author-environment-tools.md#page-modes) Si está disponible, el mantenimiento y la creación de andamios y la creación de nuevas páginas a partir de andamios se realizan en la IU clásica. Consulte [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación de la IU clásica para obtener más información.

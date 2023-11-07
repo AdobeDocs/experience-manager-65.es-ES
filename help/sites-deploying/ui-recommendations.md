@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ A continuación se muestra una lista de recomendaciones de Administración de pr
     </ol> <p>A continuación, en una segunda fase:</p>
     <ol>
      <li>Actualice los cuadros de diálogo de componentes para utilizar el formato de diálogo Coral 3. El Adobe recomienda utilizar la variable <a href="/help/sites-developing/modernization-tools.md">AEM Herramientas de modernización de</a> para actualizar los componentes.</li>
-     <li>Configure ContextHub (el reemplazo del ClientContext) y actualice las plantillas de página para utilizar ContextHub. Tenga en cuenta que ContextHub tiene un modo de compatibilidad que permite cargar almacenes de ClientContexts personalizados.</li>
+     <li>Configure ContextHub (el reemplazo del ClientContext) y actualice las plantillas de página para utilizar ContextHub. ContextHub tiene un modo de compatibilidad que permite cargar almacenes de ClientContext personalizados.</li>
     </ol> </td>
   </tr>
   <tr>

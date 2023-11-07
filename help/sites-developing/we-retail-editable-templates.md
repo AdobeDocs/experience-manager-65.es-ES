@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 10%
 
 ---
@@ -29,7 +29,7 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. Tenga en cuenta que el selector de modo ya no ofrece el modo Diseño. Todas las páginas de We.Retail se basan en plantillas editables y, para modificar el diseño de las plantillas editables, deben editarse en el editor de plantillas.
+1. El selector de modo ya no ofrece el modo Diseño. Todas las páginas de We.Retail se basan en plantillas editables y, para modificar el diseño de las plantillas editables, deben editarse en el editor de plantillas.
 1. Desde el **Información de página** selección de menú **Editar plantilla**.
 1. Ahora está editando la plantilla Página principal.
 
@@ -45,7 +45,7 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
 
 1. En el cuadro de diálogo de diseño del contenedor de diseño, puede
 
-   * Seleccione una política existente o cree una nueva política para el contenedor
+   * Seleccione una política existente o cree una política para el contenedor
    * Seleccione los componentes permitidos en el contenedor
    * Defina los componentes predeterminados que se colocarán cuando se arrastre un recurso al contenedor
 
@@ -55,7 +55,7 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
 
    Esto le permite:
 
-   * Seleccione una política existente o cree una nueva política para el contenedor
+   * Seleccione una política existente o cree una política para el contenedor
    * Defina las funciones disponibles para el autor de la página al utilizar este componente, como
 
       * Fuentes de pegado permitidas

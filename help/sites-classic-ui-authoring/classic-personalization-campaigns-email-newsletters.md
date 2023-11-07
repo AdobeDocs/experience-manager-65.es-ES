@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Puede publicar boletines en servicios de correo electrónico como ExactTarget y 
 
 Para publicar el correo electrónico en el proveedor de servicios de correo electrónico, debe realizar los siguientes pasos:
 
-1. Cree un correo electrónico.
+1. Crear un correo electrónico.
 1. Aplique la configuración del servicio de correo electrónico al correo electrónico.
 1. Publique el correo electrónico.
 
@@ -39,7 +39,7 @@ Para publicar el correo electrónico en el proveedor de servicios de correo elec
 
 Se puede crear un correo electrónico o una newsletter que desee publicar en un servicio de correo electrónico en una campaña utilizando **Newsletter de Geometrixx** plantilla. También puede utilizar la variable **Correo electrónico de Geometrixx Outdoors** plantilla. Ejemplo de correo electrónico/newsletter basado en el **Correo electrónico de Geometrixx Outdoors** Las plantillas de están disponibles en `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-Para crear un nuevo correo electrónico publicado en el servicio de correo electrónico configurado:
+Para crear un correo electrónico publicado en el servicio de correo electrónico configurado:
 
 1. Ir a **Sitios web** y luego **Campañas**. Seleccione una campaña.
 1. Clic **Nuevo** para abrir **Crear página** ventana.

@@ -2,10 +2,10 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 97%
+source-wordcount: '798'
+ht-degree: 91%
 
 ---
 
@@ -88,7 +88,7 @@ Puede modificar la programación del trabajo de depuración y la duración por l
 
 ## Configurar el procesamiento asincrónico {#configuring-asynchronous-processing}
 
-Puede configurar el número de umbral de recursos, páginas o referencias para que AEM procese una operación en particular de manera asincrónica, así como alternar las notificaciones por correo electrónico cuando se procesen los trabajos.
+AEM Puede configurar el número de umbral de recursos, páginas o referencias para que los recursos se procesen de forma asíncrona para procesar una operación en particular y conmutar las notificaciones por correo electrónico cuando se procesen los trabajos.
 
 ### Configurar operaciones asincrónicas de eliminación de recursos {#configuring-synchronous-delete-operations}
 

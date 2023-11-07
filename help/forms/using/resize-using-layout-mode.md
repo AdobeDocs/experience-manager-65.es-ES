@@ -3,10 +3,10 @@ title: Utilice el modo Diseño para cambiar el tamaño de los componentes para l
 description: Defina la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Puede utilizar el modo Diseño para cambiar el tamaño de los componentes de tod
 Seleccione **Diseño** en la lista desplegable que aparece en la parte superior de la interfaz de creación de formularios adaptables junto a la opción **Vista previa**. El formulario se muestra en el modo Diseño.
 
 1. Inicie sesión en la instancia de autor de AEM y navegue hasta **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-1. Cree un nuevo [formulario adaptable](../../forms/using/creating-adaptive-form.md) o abra uno existente.
+1. Crear un [formulario adaptable](../../forms/using/creating-adaptive-form.md) o abra una existente.
 1. Seleccione **Diseño** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa**. El formulario se muestra en el modo Diseño.
 
    ![Modo Diseño](assets/layout_mode_ic_new.png)

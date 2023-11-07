@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2740'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # [!DNL Adobe Experience Manager Assets] guía de optimización de rendimiento {#assets-performance-tuning-guide}
 
-Un [!DNL Experience Manager Assets] la instalación contiene una serie de componentes de hardware, software y red. Según el escenario de implementación, es posible que necesite realizar cambios de configuración específicos en los componentes de hardware, software y red para eliminar los cuellos de botella de rendimiento.
+Un [!DNL Experience Manager Assets] la instalación contiene varios componentes de hardware, software y red. Según el escenario de implementación, es posible que necesite realizar cambios de configuración específicos en los componentes de hardware, software y red para eliminar los cuellos de botella de rendimiento.
 
 Además, la identificación y el cumplimiento de determinadas directrices de optimización de hardware y software ayudan a crear una base sólida que permite [!DNL Experience Manager Assets] implementación para cumplir con las expectativas de rendimiento, escalabilidad y fiabilidad.
 
@@ -29,11 +29,11 @@ Estas son algunas áreas de enfoque clave en torno a las cuales se descubren y c
 
 ## Plataforma {#platform}
 
-Aunque Experience Manager es compatible con una serie de plataformas, Adobe ha encontrado la buena compatibilidad con las herramientas nativas en Linux y Windows, lo que contribuye a un rendimiento óptimo y a una implementación sencilla. Lo ideal es implementar un sistema operativo de 64 bits para satisfacer los altos requisitos de memoria de un [!DNL Experience Manager Assets] implementación. Como con cualquier implementación de Experience Manager, debe implementar TarMK siempre que sea posible. Aunque TarMK no puede escalar más allá de una sola instancia de autor, se encuentra que tiene un mejor rendimiento que MongoMK. Puede añadir instancias de descarga de TarMK para aumentar la potencia de procesamiento del flujo de trabajo de su [!DNL Experience Manager Assets] implementación.
+Aunque Experience Manager es compatible con varias plataformas, Adobe ha encontrado la mayor compatibilidad con herramientas nativas en Linux y Windows, lo que contribuye a un rendimiento óptimo y a una implementación sencilla. Lo ideal es implementar un sistema operativo de 64 bits para satisfacer los altos requisitos de memoria de un [!DNL Experience Manager Assets] implementación. Como con cualquier implementación de Experience Manager, debe implementar TarMK siempre que sea posible. Aunque TarMK no puede escalar más allá de una sola instancia de autor, se encuentra que tiene un mejor rendimiento que MongoMK. Puede añadir instancias de descarga de TarMK para aumentar la potencia de procesamiento del flujo de trabajo de su [!DNL Experience Manager Assets] implementación.
 
 ### Carpeta temporal {#temp-folder}
 
-Para mejorar los tiempos de carga de los recursos, utilice un almacenamiento de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se podría utilizar una unidad RAM o SSD. En entornos basados en la nube, se podría utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, una [impulso efímero](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) se puede utilizar para la carpeta temporal.
+Para mejorar los tiempos de carga de los recursos, utilice un almacenamiento de alto rendimiento para el directorio temporal de Java. En Linux y Windows, se podría utilizar una unidad RAM o SSD. En entornos basados en la nube, se podría utilizar un tipo de almacenamiento de alta velocidad equivalente. Por ejemplo, en Amazon EC2, un [impulso efímero](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) se puede utilizar para la carpeta temporal.
 
 Si el servidor tiene suficiente memoria, configure una unidad de RAM. En Linux, ejecute estos comandos para crear una unidad de 8 GB de RAM:
 
@@ -157,11 +157,11 @@ De forma predeterminada, [!DNL Experience Manager] ejecuta un número máximo de
 
 1. Activado [!DNL Experience Manager] Autor, acceso `https://[aem_server]:[port]/system/console/slingevent`.
 
-1. Clic **[!UICONTROL Editar]** en cada cola de flujo de trabajo relevante para la implementación, por ejemplo **[!UICONTROL Cola de flujo de trabajo transitorio de Granite]**.
+1. Clic **[!UICONTROL Editar]** en cada cola de flujo de trabajo relevante para la implementación, por ejemplo, **[!UICONTROL Cola de flujo de trabajo transitorio de Granite]**.
 
 1. Actualizar el valor de **[!UICONTROL Máximo de trabajos paralelos]** y haga clic en **[!UICONTROL Guardar]**.
 
-Establecer una cola en la mitad de los procesadores disponibles es una solución viable para empezar. Sin embargo, es posible que tenga que aumentar o disminuir este número para lograr el máximo rendimiento y ajustarlo por entorno. Hay colas independientes para flujos de trabajo transitorios y no transitorios, así como otros procesos, como flujos de trabajo externos. Si varias colas configuradas al 50% de los procesadores están activas simultáneamente, el sistema puede sobrecargarse rápidamente. Las colas muy utilizadas varían en gran medida entre las implementaciones de los usuarios. Por lo tanto, es posible que tenga que configurarlos cuidadosamente para lograr la máxima eficiencia sin sacrificar la estabilidad del servidor.
+Establecer una cola en la mitad de los procesadores disponibles es una solución viable para empezar. Sin embargo, es posible que tenga que aumentar o disminuir este número para lograr el máximo rendimiento y ajustarlo por entorno. Hay colas independientes para flujos de trabajo transitorios y no transitorios y otros procesos, como flujos de trabajo externos. Si varias colas configuradas al 50% de los procesadores están activas simultáneamente, el sistema puede sobrecargarse rápidamente. Las colas muy utilizadas varían en gran medida entre las implementaciones de los usuarios. Por lo tanto, es posible que tenga que configurarlos cuidadosamente para lograr la máxima eficiencia sin sacrificar la estabilidad del servidor.
 
 ### Configuración de recursos de actualización DAM {#dam-update-asset-configuration}
 
@@ -212,7 +212,7 @@ Además, establezca la ruta de la carpeta temporal de ImageMagick en `configure.
 >
 >ImageMagick `policy.xml` y `configure.xml` Los archivos de están disponibles en `/usr/lib64/ImageMagick-&#42;/config/` en lugar de `/etc/ImageMagick/`.Consulte [Documentación de ImageMagick](https://www.imagemagick.org/script/resources.php) para la ubicación de los archivos de configuración.
 
-Si está utilizando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si tiene pensado procesar muchos archivos PSD o PSB de gran tamaño. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager]Es posible que el no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles. 
+Si está utilizando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si planea procesar muchos archivos de PSD o PSB grandes. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager]Es posible que el no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles. 
 
 ### XMP respuesta de escritura de la {#xmp-writeback}
 
@@ -228,7 +228,7 @@ XMP La importación de una gran cantidad de metadatos puede dar como resultado u
 
 ## Replicación {#replication}
 
-Al replicar recursos en un gran número de instancias de publicación, por ejemplo en una implementación de Sites, Adobe recomienda utilizar la replicación en cadena. En este caso, la instancia de autor se replica en una sola instancia de publicación, que a su vez se replica en las demás instancias de publicación, liberando la instancia de autor.
+Al replicar recursos en un gran número de instancias de publicación, por ejemplo, en una implementación de Sites, Adobe recomienda utilizar la replicación en cadena. En este caso, la instancia de autor se replica en una sola instancia de publicación, que a su vez se replica en las demás instancias de publicación, liberando la instancia de autor.
 
 ### Configurar replicación de cadena {#configure-chain-replication}
 
@@ -268,7 +268,7 @@ Cuando cree consultas que generen grandes conjuntos de resultados, utilice el `g
 
 ### Archivos grandes {#large-files}
 
-Hay dos problemas conocidos importantes relacionados con los archivos grandes en [!DNL Experience Manager]. Cuando los archivos alcanzan tamaños de bueno de 2 GB, la sincronización en espera en frío puede quedarse sin memoria. En algunos casos, evita que se ejecute la sincronización en espera. En otros casos, hace que la instancia principal se bloquee. Este escenario se aplica a cualquier archivo de [!DNL Experience Manager] superior a 2 GB, incluidos los paquetes de contenido.
+Hay dos problemas conocidos importantes relacionados con los archivos grandes en [!DNL Experience Manager]. Cuando los archivos alcanzan tamaños superiores a 2 GB, la sincronización en espera en frío puede encontrarse con una falta de memoria. En algunos casos, evita que se ejecute la sincronización en espera. En otros casos, hace que la instancia principal se bloquee. Este escenario se aplica a cualquier archivo de [!DNL Experience Manager] superior a 2 GB, incluidos los paquetes de contenido.
 
 Del mismo modo, cuando los archivos alcanzan los 2 GB de tamaño mientras se utiliza un almacén de datos S3 compartido, puede tardar algún tiempo en persistir completamente desde la caché al sistema de archivos. Como resultado, cuando se utiliza la replicación sin binarios, es posible que los datos binarios no se hayan mantenido antes de que finalice la replicación. Esta situación puede dar lugar a problemas, especialmente si la disponibilidad de datos es importante.
 

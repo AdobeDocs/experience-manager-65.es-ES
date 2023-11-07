@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 95%
+source-wordcount: '1351'
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,7 @@ Para personalizar Administración de correspondencia para permitir que los usuar
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 
-1. En la carpeta de aplicaciones, cree una carpeta denominada Elementos con una ruta/estructura similar a la de la carpeta Elementos ubicada en la carpeta de selección, para hacerlo, siga los siguientes pasos:
+1. En la carpeta de aplicaciones, cree una carpeta denominada Elementos con una ruta/estructura similar a la de la carpeta Elementos en la carpeta de selección, para hacerlo, siga los siguientes pasos:
 
    1. Haga clic con el botón derecho en la carpeta **Elementos** en la siguiente ruta y seleccione **Nodo de superposición**:
 
@@ -136,7 +136,7 @@ Para personalizar Administración de correspondencia para permitir que los usuar
         </tbody>
        </table>
 
-1. En la carpeta de aplicaciones, cree una carpeta denominada js con una ruta o estructura similares a la carpeta Elementos ubicada en la carpeta de administración, para hacerlo, siga estos pasos:
+1. En la carpeta de aplicaciones, cree una carpeta denominada js con una ruta o estructura similares a la carpeta Elementos en la carpeta de administración, para hacerlo, siga los siguientes pasos:
 
    1. Haga clic con el botón derecho en la carpeta **js** en la siguiente ruta y seleccione **Nodo de superposición**:
 
@@ -226,7 +226,7 @@ Para personalizar Administración de correspondencia para permitir que los usuar
 
       El código anterior es para la administración de acciones específicas de cartas del comando creado en este procedimiento. Para administrar acciones de otros recursos, modifique el código JavaScript.
 
-1. En la carpeta de aplicaciones, cree una carpeta denominada Elementos con una ruta/estructura similar a la de la carpeta Elementos ubicada en la carpeta actionhandlers, para hacerlo, siga los siguientes pasos:
+1. En la carpeta de aplicaciones, cree una carpeta denominada Elementos con una ruta/estructura similar a la de la carpeta Elementos en la carpeta actionhandlers, para hacerlo, siga los siguientes pasos:
 
    1. Haga clic con el botón derecho en la carpeta **Elementos** en la siguiente ruta y seleccione **Nodo de superposición**:
 

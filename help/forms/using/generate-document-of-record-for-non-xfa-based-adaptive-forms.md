@@ -1,20 +1,16 @@
 ---
 title: Generar documento de registro para formularios adaptables
-seo-title: Generate Document of Record for adaptive forms
 description: Explica cómo puede generar una plantilla para el documento de registro (DoR) de los formularios adaptables.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 98%
+source-wordcount: '3545'
+ht-degree: 97%
 
 ---
 
@@ -219,7 +215,7 @@ Los componentes de las tablas de formularios adaptables, como el encabezado, el 
 
 La plantilla base proporciona al documento de registro información relativa al estilo y la apariencia. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, puede utilizar la plantilla base para agregar el logotipo de su compañía en el encabezado y la información de copyright en el pie de página del documento de registro. La página maestra de la plantilla base se utiliza como página maestra de la plantilla del documento de registro. La página maestra puede incluir información como el encabezado de página, el pie de página y el número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento de registro mediante la plantilla base para generar automáticamente el documento de registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
 
-Siga siempre las [convenciones de plantilla base](#base-template-conventions) a la hora de diseñarla.
+Asegúrese de seguir [Convenciones de plantilla base](#base-template-conventions) al diseñar una plantilla base.
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
@@ -235,7 +231,7 @@ Se utiliza una plantilla base para definir el encabezado, el pie de página, el 
 
 **Convenciones de estilo para campos**
 
-* Para aplicar un estilo a los campos del documento de registro, la plantilla base proporciona campos ubicados en el subformulario `AF_FIELDSSUBFORM` supeditado al subformulario raíz `AF_METATEMPLATE`.
+* Para aplicar un estilo a los campos del documento de registro, la plantilla base proporciona campos en la variable `AF_FIELDSSUBFORM` subformulario en `AF_METATEMPLATE` subformulario raíz.
 
 * Las propiedades de estos campos se aplican a los campos del documento de registro. Estos campos deben seguir la convención de nomenclatura de `AF_<name of field in all caps>_XFO`. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Los componentes de página con autorización que desean utilizar AngularJS tiene
 
 En las bibliotecas de cliente, hay algunas opciones disponibles para el desarrollador de dónde colocarlas en el repositorio. El siguiente patrón se ofrece como guía, pero no es un requisito difícil.
 
-Si el código de cliente puede funcionar por sí solo y no está relacionado con un componente específico de la aplicación (lo que significa que puede reutilizarse en otras aplicaciones), Adobe recomienda almacenarlo en /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. Por otro lado, si la clientlib es específica de una sola aplicación, puede anidarla como un elemento secundario del nodo de diseño de la aplicación; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Esta categoría de clientlib no debería ser utilizada por otras bibliotecas, y debería ser utilizada para incrustar otras bibliotecas según sea necesario. Seguir este patrón evita que el desarrollador tenga que añadir nuevas configuraciones de sincronización de contenido cada vez que se añade una biblioteca de cliente a la aplicación, en lugar de actualizar simplemente la propiedad &quot;embeds&quot; de la clientlib de diseño de la aplicación. Por ejemplo, observe el nodo de configuración Geometrixx clientlibs-all Content Sync en /content/phonegap/geometrixx-outdoors/en/jcr:content/page-app/app-config/clientlibs-all.
+Si el código de cliente puede funcionar por sí solo y no está relacionado con un componente específico de la aplicación (lo que significa que puede reutilizarse en otras aplicaciones), Adobe recomienda almacenarlo en /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. Por otro lado, si la clientlib es específica de una sola aplicación, puede anidarla como un elemento secundario del nodo de diseño de la aplicación; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. No utilice la categoría de esta clientlib con otras bibliotecas; en su lugar, incruste otras bibliotecas según sea necesario. Seguir este patrón evita que el desarrollador tenga que añadir nuevas configuraciones de sincronización de contenido cada vez que se añade una biblioteca de cliente a la aplicación, en lugar de actualizar simplemente la propiedad &quot;embeds&quot; de la clientlib de diseño de la aplicación. Por ejemplo, observe el nodo de configuración Geometrixx clientlibs-all Content Sync en /content/phonegap/geometrixx-outdoors/en/jcr:content/page-app/app-config/clientlibs-all.
 
 Si el código del lado del cliente está perfectamente acoplado a un componente específico, colóquelo en una biblioteca de cliente anidada debajo de la ubicación del componente en /apps/ e incruste su categoría en la clientlib de &quot;diseño&quot; de la aplicación.
 

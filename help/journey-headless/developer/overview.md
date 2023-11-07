@@ -1,17 +1,17 @@
 ---
 title: Recorrido para desarrolladores de AEM sin encabezado
-description: AEM Documentación de CMS sin encabezado de. Comience aquí para obtener un recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
+description: AEM Documentación de CMS sin encabezado de. Comience aquí para obtener un recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los, sus capacidades y cómo utilizarlas en su primer proyecto de desarrollo.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 76%
+source-wordcount: '1225'
+ht-degree: 73%
 
 ---
 
 # Recorrido para desarrolladores de AEM sin encabezado {#aem-headless-developer-journey}
 
-Comience aquí para obtener un recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo sin encabezado. Este recorrido AEM le proporciona toda la documentación sin encabezado de la que necesita para desarrollar su primera aplicación sin encabezado.
+Comience aquí para obtener un recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los, sus capacidades y cómo utilizarlas en su primer proyecto de desarrollo sin encabezado. Este recorrido AEM le proporciona toda la documentación sin encabezado de la que necesita para desarrollar su primera aplicación sin encabezado.
 
 ## Introducción {#introduction}
 
@@ -48,7 +48,7 @@ Los siguientes son los perfiles que interactúan en este recorrido.
 | Administrador | Gestiona la configuración base de AEM | El desarrollador trabaja con el administrador para realizar los cambios de configuración necesarios para el desarrollo. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin encabezado y define la estructura de estos datos | Los desarrolladores trabajan con el arquitecto de contenido para comprender la estructura de los datos y los requisitos para ofrecerlos sin encabezado. |
 
-Por supuesto, la información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales.](/help/journey-documentation/home.md#journeys)
+La información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales.](/help/journey-documentation/home.md#journeys)
 
 ## Recorrido para los desarrolladores de contenido sin encabezado {#the-journey}
 
@@ -75,7 +75,7 @@ Ya está listo para empezar su recorrido de Adobe sin encabezado. Le animamos a 
 
 ### Elija su propia aventura {#choose-your-path}
 
-Sin embargo, Adobe AEM quiere que tenga éxito a medida que empiece a trabajar en su proyecto sin encabezado, independientemente de su estilo de aprendizaje. Así que por favor considere estas dos opciones.
+Sin embargo, Adobe AEM quiere que tenga éxito a medida que empiece a trabajar en su proyecto sin encabezado, independientemente de su estilo de aprendizaje. Así que consideren estas dos opciones.
 
 * Si prefiere seguir **obteniendo información sobre conceptos sin encabezado y tecnologías sin encabezado de AEM**, debe continuar con su recorrido de AEM sin encabezado como se recomienda en la próxima revisión del documento [Modelar el contenido como modelos de contenido de AEM](model-your-content.md), donde aprenderá a modelar la estructura de contenido en AEM.
 * Si prefiere **aprender de forma práctica**, puede ir al [Tutorial práctico de introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es), donde pasará directamente al desarrollo de AEM sin encabezado implementando un proyecto simple para exponer contenido sin encabezado de AEM.
@@ -84,7 +84,7 @@ Sin embargo, Adobe AEM quiere que tenga éxito a medida que empiece a trabajar e
 
 Los recorridos de documentación muestran cómo AEM resuelve un problema empresarial al proporcionar una narrativa que lo guía a través de procesos y características complejas e interrelacionadas. Un recorrido ilustra cómo varias funciones trabajan juntas para satisfacer una sola necesidad empresarial.
 
-Ya que estos recorridos están diseñados para mantenerse por su cuenta. Sin embargo, varios de ellos pueden relacionarse entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo las potentes funciones de AEM trabajan juntas.
+Como tal, los recorridos están diseñados para mantenerse por sí mismos. Sin embargo, varios de ellos pueden estar relacionados entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo las potentes funciones de AEM trabajan juntas.
 
 * [Tutoriales Headless de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): si prefiere aprender con la práctica y tiene interés por la tecnología, siga nuestros tutoriales prácticos organizados por API y el marco de trabajo, que exploran la creación y el uso de aplicaciones creadas en AEM Headless.
 * [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece un amplio conocimiento sobre la tecnología sin encabezado, cómo proporciona AEM contenido sin encabezado y cómo puede traducirlo.

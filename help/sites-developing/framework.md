@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ El marco de etiquetado también permite restringir la capacidad de los autores y
 * Cuando contiene nodos secundarios, la etiqueta se denomina [etiqueta contenedora.](#container-tags)
 * La etiqueta se almacena en el repositorio bajo una ruta base denominada [nodo raíz de taxonomía.](#taxonomy-root-node)
 
-Dado que las etiquetas son simplemente nodos JCR, los nombres de nodo deben cumplir, por supuesto, con el [Convenciones de nomenclatura JCR.](naming-conventions.md)
+Dado que las etiquetas son simplemente nodos JCR, los nombres de nodo deben cumplir con las [Convenciones de nomenclatura JCR.](naming-conventions.md)
 
 ### ID de etiqueta {#tagid}
 
@@ -223,4 +223,4 @@ A continuación se describen los efectos del repositorio al mover o combinar eti
 
 A partir de Adobe Experience Manager 6.4, las etiquetas se almacenan en `/content/cq:tags` mientras que las versiones anteriores almacenaban etiquetas en `/etc/tags`.
 
-AEM Siempre que se actualice un sistema de la versión anterior a la versión 6.4, las etiquetas deben migrarse a `/content/cq:tags`. Consulte el documento [AEM Reestructuración común de repositorios en 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obtener más información.
+AEM Siempre que se actualice un sistema de la versión anterior a la versión 6.4, las etiquetas deben migrarse a `/content/cq:tags`. Consulte [AEM Reestructuración común de repositorios en 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obtener más información.

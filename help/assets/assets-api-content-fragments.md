@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1959'
 ht-degree: 24%
 
 ---
@@ -237,7 +237,7 @@ Fragmentos de contenido:
 
 Actualmente, los modelos que definen la estructura de un fragmento de contenido no se exponen a través de una API HTTP. Por lo tanto, *consumidor* necesita conocer el modelo de un fragmento (al menos un mínimo), aunque la mayoría de la información se puede inferir de la carga útil, como tipos de datos, etc. forman parte de la definición de.
 
-Para crear un nuevo fragmento de contenido, se debe proporcionar la ruta (repositorio interno) del modelo.
+Para crear un fragmento de contenido, se debe proporcionar la ruta (del repositorio interno) del modelo.
 
 #### Contenido asociado {#associated-content}
 
@@ -307,7 +307,7 @@ El uso se realiza mediante:
 
 Hay algunas limitaciones:
 
-* **Actualmente no se admiten modelos de fragmento de contenido**: no se pueden leer ni crear. Para poder crear un fragmento de contenido nuevo o actualizar uno existente, los desarrolladores deben conocer la ruta correcta al modelo de fragmento de contenido. Actualmente, el único método para obtener una descripción general de estos es a través de la IU de administración.
+* **Actualmente no se admiten modelos de fragmento de contenido**: no se pueden leer ni crear. Para poder crear un fragmento de contenido o actualizar uno existente, los desarrolladores deben conocer la ruta correcta al modelo de fragmento de contenido. Actualmente, el único método para obtener una descripción general de estos es a través de la IU de administración.
 * **Las referencias se omiten**. Actualmente no hay comprobaciones sobre si se hace referencia a un fragmento de contenido existente. Por lo tanto, por ejemplo, si elimina un fragmento de contenido, podrían producirse problemas en una página que contenga una referencia al fragmento de contenido eliminado.
 * **Tipo de datos JSON** La salida de la API de REST del *Tipo de datos JSON* es actualmente *salida basada en cadenas*.
 

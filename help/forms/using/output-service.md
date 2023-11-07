@@ -10,10 +10,10 @@ topic-tags: document_services
 discoiquuid: 51ab91ff-c0c0-4165-ae02-f306e45eea03
 docset: aem65
 exl-id: 1b62e1c1-428d-4c0f-98a8-486f319fa581
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ El servicio Output le permite crear aplicaciones con las que puede hacer lo sigu
 
 Normalmente, las plantillas se crean con AEM Forms Designer. Las API `generatePDFOutput` y `generatePrintedOutput` del servicio Output permiten convertir directamente estas plantillas a varios formatos, incluidos PDF, PostScript, ZPL y PCL.
 
-La operación `generatePDFOutput` genera PDF, mientras que la operación `generatePrintedOutput` genera los formatos PostScript, ZPL y PCL. El primer parámetro de ambas operaciones acepta el nombre del archivo de plantilla (por ejemplo `ExpenseClaim.xdp`) o un objeto Document que contenga la plantilla. Cuando especifique el nombre del archivo de plantilla, especifique también la raíz de contenido como la ruta a la carpeta que contiene la plantilla. Puede especificar la raíz de contenido mediante los parámetros `PDFOutputOptions` o `PrintedOutputOptions`. Consulte Javadoc para obtener más información sobre otras opciones que puede especificar mediante estos parámetros.
+La operación `generatePDFOutput` genera PDF, mientras que la operación `generatePrintedOutput` genera los formatos PostScript, ZPL y PCL. El primer parámetro de ambas operaciones acepta el nombre del archivo de plantilla (por ejemplo, `ExpenseClaim.xdp`) o un objeto Document que contenga la plantilla. Cuando especifique el nombre del archivo de plantilla, especifique también la raíz de contenido como la ruta a la carpeta que contiene la plantilla. Puede especificar la raíz de contenido mediante los parámetros `PDFOutputOptions` o `PrintedOutputOptions`. Consulte Javadoc para obtener más información sobre otras opciones que puede especificar mediante estos parámetros.
 
 El segundo parámetro acepta un documento XML que se combina con la plantilla al generar el documento de salida.
 

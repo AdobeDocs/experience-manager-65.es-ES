@@ -2,9 +2,9 @@
 title: Encabezados HTTP personalizados
 description: Aprenda a configurar encabezados HTTP personalizados en Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '273'
 ht-degree: 5%
 
 ---
@@ -26,11 +26,11 @@ Para configurar los encabezados HTTP personalizados, primero debe definirlos. Lo
 
 Puede configurar los valores de los encabezados HTTP en la página Configuración de Cloud Service de su proyecto:
 
-1. Vaya a la página de configuración del Cloud Service en Herramientas -> Cloud Services CIF -> Configuración de la
-1. Abra una configuración existente o cree una nueva
+1. Vaya a la página de configuración del Cloud Service en Herramientas > Cloud Services CIF > Configuración de la.
+1. Abra una configuración existente o cree una.
 1. Vaya a la pestaña &quot;Avanzado&quot; y busque el campo múltiple &quot;Encabezados HTTP personalizados&quot;. Puede seleccionar los encabezados definidos anteriormente y asignarles valores.
 
-Los componentes que utilizan la configuración de servicio en la nube anterior enviarán estos encabezados HTTP con cada solicitud de GraphQL.
+Los componentes que utilizan la configuración de servicio en la nube anterior envían estos encabezados HTTP con cada solicitud de GraphQL.
 
 ## Restricciones {#restrictions}
 

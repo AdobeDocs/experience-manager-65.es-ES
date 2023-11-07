@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3618'
-ht-degree: 8%
+source-wordcount: '3616'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Las organizaciones idean un modelo de metadatos que mejora la detección de recursos, el uso, la interoperabilidad, etc. La aplicación correcta de metadatos es sacrosanta para mantener flujos de trabajo y procesos impulsados por metadatos. Para adherirse a la estrategia y los estándares de metadatos de toda la organización, puede utilizar esquemas de metadatos que ayuden a los usuarios de DAM a alinearse. [!DNL Adobe Experience Manager] permite métodos fáciles y flexibles para crear, mantener y aplicar esquemas de metadatos.
@@ -45,18 +45,18 @@ Para ver una lista de formularios o plantillas, en [!DNL Experience Manager] int
 
 [!DNL Experience Manager] proporciona las siguientes plantillas de formulario de esquema de metadatos.
 
-| Plantillas |  | Descripción |
+| Plantillas | | Descripción |
 |---|---|---|
-| [!UICONTROL predeterminada] |  | El formulario de esquema de metadatos base para los recursos. |
-|  | Los siguientes formularios secundarios heredan las propiedades del [!UICONTROL predeterminado] formulario: |  |
-|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulario de esquema para vídeos de Dynamic Media. |
-|  | <ul><li>[!UICONTROL imagen]</li></ul> | Formulario de esquema para imágenes con el tipo MIME como `image/jpeg` y `image/png`. <br> El [!UICONTROL imagen] El formulario tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL riña]: Formulario de esquema para los recursos con TIFF de subtipo.</li></ul> |
-|  | <ul><li>[!UICONTROL aplicación]</li></ul> | Formulario de esquema para recursos con tipo MIME como `application/pdf` y `application/zip`. <br>[!UICONTROL pdf]: Formulario de esquema para recursos con PDF de subtipo. |
-|  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
-| [!UICONTROL colección] |  | Formulario de esquema para colecciones. |
-| [!UICONTROL contentfragment] |  | [Formulario de esquema para fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL formularios] |  | Este formulario de esquema está relacionado con [Adobe Experience Manager Forms](/help/forms/home.md). |
-| [!UICONTROL ugc_contentfragment] |  | Formulario de esquema para elementos y recursos de contenido generado por el usuario e integrado en Experience Manager desde medios sociales. |
+| [!UICONTROL predeterminada] | | El formulario de esquema de metadatos base para los recursos. |
+| | Los siguientes formularios secundarios heredan las propiedades del [!UICONTROL predeterminado] formulario: | |
+| | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulario de esquema para vídeos de Dynamic Media. |
+| | <ul><li>[!UICONTROL imagen]</li></ul> | Formulario de esquema para imágenes con el tipo MIME como `image/jpeg` y `image/png`. <br> El [!UICONTROL imagen] El formulario tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL riña]: Formulario de esquema para los recursos con TIFF de subtipo.</li></ul> |
+| | <ul><li>[!UICONTROL aplicación]</li></ul> | Formulario de esquema para recursos con tipo MIME como `application/pdf` y `application/zip`. <br>[!UICONTROL pdf]: Formulario de esquema para recursos con PDF de subtipo. |
+| | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
+| [!UICONTROL colección] | | Formulario de esquema para colecciones. |
+| [!UICONTROL contentfragment] | | [Formulario de esquema para fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md). |
+| [!UICONTROL formularios] | | Este formulario de esquema está relacionado con [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] | | Formulario de esquema para elementos y recursos de contenido generado por el usuario e integrado en Experience Manager desde medios sociales. |
 
 >[!NOTE]
 >
@@ -92,12 +92,12 @@ El **[!UICONTROL Generar formulario]** La pestaña enumera los elementos de form
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Encabezado de sección] | Añada un encabezado de sección para una lista de componentes comunes. |
 | [!UICONTROL Texto de una sola línea] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
-| [!UICONTROL Texto con varios valores] | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
-| [!UICONTROL Número] | Añada un componente numérico. |
+| [!UICONTROL Texto con varios valores] | Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
+| [!UICONTROL Número] | Añada un componente de número. |
 | [!UICONTROL Fecha] | Añada un componente de fecha. |
 | [!UICONTROL Lista desplegable] | Añada una lista desplegable. |
 | [!UICONTROL Etiquetas estándar] | Añadir una etiqueta. |
-| [!UICONTROL Etiquetas inteligentes] | Añada para aumentar las capacidades de búsqueda mediante la adición automática de etiquetas de metadatos. |
+| [!UICONTROL Etiquetas inteligentes] | Añada para aumentar las capacidades de búsqueda añadiendo automáticamente etiquetas de metadatos. |
 | [!UICONTROL Campo oculto] | Agregue un campo oculto. Se envía como parámetro de POST cuando se guarda el recurso. |
 | [!UICONTROL Recurso al que se hace referencia en] | Agregue este componente para ver la lista de recursos a los que hace referencia el recurso. |
 | [!UICONTROL Referencia de recursos] | Agregar para mostrar una lista de recursos que hacen referencia al recurso. |
@@ -194,9 +194,9 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    ![select_form](assets/select_form.png)
 
-1. (Opcional) En el editor de esquemas de metadatos, cree un nuevo campo para condicionalizar. Especifique un nombre y una ruta de propiedad en la **[!UICONTROL Configuración]** pestaña.
+1. (Opcional) En el editor de esquemas de metadatos, cree un campo para condicionalizar. Especifique un nombre y una ruta de propiedad en la **[!UICONTROL Configuración]** pestaña.
 
-   Para crear una nueva pestaña, haga clic en `+` para agregar una pestaña y luego agregar un campo de metadatos.
+   Para crear una pestaña, haga clic en `+` para agregar una pestaña y luego agregar un campo de metadatos.
 
    ![add_tab](assets/add_tab.png)
 
@@ -280,7 +280,6 @@ Para eliminar un formulario, seleccione un formulario y haga clic en Eliminar.
 >* Después de eliminar los cambios personalizados en un formulario predeterminado, el ![cerradura cerrada](assets/do-not-localize/lock_closed_icon.svg) vuelve a aparecer antes del formulario. Indica que el formulario se revierte a su estado predeterminado.
 >* No puede eliminar los formularios de esquema de metadatos predeterminados en [!DNL Assets].
 
-
 ## Formularios de esquema para tipos MIME {#schema-forms-for-mime-types}
 
 [!DNL Experience Manager] proporciona formularios predeterminados para varios tipos MIME de forma predeterminada. Sin embargo, puede agregar formularios personalizados para recursos de varios tipos MIME.
@@ -331,7 +330,7 @@ Solo los recursos cargados en la carpeta a la que se aplica este esquema se ajus
 La herencia de metadatos por recursos se basa en el esquema aplicado a la carpeta de nivel superior en la jerarquía. Las subcarpetas aplican o heredan el mismo esquema. Si se aplica un esquema diferente en el nivel de subcarpeta, se detiene la herencia.
 
 1. Entrada [!DNL Experience Manager] interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
-1. Seleccione la casilla de verificación situada antes de un formulario, por ejemplo el formulario de metadatos predeterminado, y haga clic en **[!UICONTROL Copiar]** y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo `my_default`. También puede crear un formulario personalizado.
+1. Seleccione la casilla de verificación situada antes de un formulario como, por ejemplo, el formulario de metadatos predeterminado y haga clic en **[!UICONTROL Copiar]** y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo, `my_default`. También puede crear un formulario personalizado.
 
 1. En el **[!UICONTROL Forms de esquema de metadatos]** , seleccione la `my_default` y haga clic en **[!UICONTROL Editar]**.
 

@@ -8,10 +8,10 @@ topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Puede utilizar el paso Asignar tarea para crear y asignar tareas a un usuario o 
 
 ![Notificación por correo electrónico con plantilla predeterminada](do-not-localize/default_email_template_new.png)
 
-Puede personalizar el aspecto y utilizar metadatos personalizados en una notificación por correo electrónico. AEM Forms proporciona una plantilla predeterminada para las notificaciones por correo electrónico. Puede personalizar la plantilla predeterminada o crear una nueva desde cero.
+Puede personalizar el aspecto y utilizar metadatos personalizados en una notificación por correo electrónico. AEM Forms proporciona una plantilla predeterminada para las notificaciones por correo electrónico. Puede personalizar la plantilla predeterminada o crear una plantilla desde cero.
 
 Las plantillas de notificación de correo electrónico se basan en el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Estos correos electrónicos se adaptan a diferentes clientes de correo electrónico y tamaños de pantalla. Además, el estilo del correo electrónico se define dentro de la plantilla.
 
@@ -57,7 +57,7 @@ De forma predeterminada, AEM Forms ofrece una plantilla para las notificaciones 
 
 1. Agregue código HTML personalizado al archivo.
 
-   Una plantilla de notificación de correo electrónico es un [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Puede agregar código HTML personalizado al archivo para crear una plantilla nueva.
+   Una plantilla de notificación de correo electrónico es un [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Puede agregar código de HTML personalizado al archivo para crear una plantilla.
 
 1. Guarde el archivo. La plantilla está lista para utilizarse en el paso Asignar tarea.
 

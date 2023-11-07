@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ El servicio Forms permite crear aplicaciones cliente de captura de datos interac
 
 Cuando un usuario final solicita un formulario, una aplicación cliente envía la solicitud al servicio de Forms, que lo devuelve en un formato adecuado. En cuanto el servicio Forms recibe una solicitud, combina los datos con un diseño de formulario y, a continuación, envía el formulario en el formato deseado. La salida del servicio de Forms es un formulario interactivo, normalmente un documento de PDF. Un formulario interactivo permite a los usuarios rellenar campos ubicados en el formulario.
 
-Según el tipo de aplicación cliente, puede escribir el formulario en un explorador web cliente o guardarlo como archivo de PDF. Una aplicación basada en web puede escribir el formulario en un explorador web. Una aplicación de escritorio puede guardar el formulario como un archivo de PDF. Para mostrar cómo escribir en un explorador web y en un archivo de PDF, los inicios rápidos se encuentran en *Renderización de Forms* Las secciones de se organizan de la siguiente manera:
+Según el tipo de aplicación cliente, puede escribir el formulario en un explorador web cliente o guardarlo como archivo de PDF. Una aplicación basada en web puede escribir el formulario en un explorador web. Una aplicación de escritorio puede guardar el formulario como un archivo de PDF. Para mostrar cómo escribir en un explorador web y en un archivo de PDF, los inicios rápidos de la *Renderización de Forms* Las secciones de se organizan de la siguiente manera:
 
 * Los ejemplos de API de Java con establecimiento inflexible de tipos (modo SOAP) son un servlet Java.
 * Los ejemplos del servicio web (Java Base64) son un servlet Java.
@@ -41,7 +41,7 @@ Según el tipo de aplicación cliente, puede escribir el formulario en un explor
 
 Puede pasar un diseño de formulario (un archivo XDP) o un documento de PDF al servicio Forms de una de las dos maneras siguientes:
 
-* Puede hacer referencia al diseño de formulario mediante un valor de URL. Este enfoque implica el uso de un `URLSpec` objeto. La raíz de contenido se pasa al servicio de Forms mediante la variable `URLSpec` del objeto `setContentRootURI` método. El nombre del diseño del formulario ( `formQuery`) se pasa como parámetro independiente. Los dos valores se concatenan para obtener la referencia absoluta al diseño de formulario. (La mayoría de los inicios rápidos se encuentran en la variable *Renderización de Forms* utilice este método).
+* Puede hacer referencia al diseño de formulario mediante un valor de URL. Este enfoque implica el uso de un `URLSpec` objeto. La raíz de contenido se pasa al servicio de Forms mediante la variable `URLSpec` del objeto `setContentRootURI` método. El nombre del diseño del formulario ( `formQuery`) se pasa como parámetro independiente. Los dos valores se concatenan para obtener la referencia absoluta al diseño de formulario. (La mayoría de los inicios rápidos de la *Renderización de Forms* utilice este método).
 * Puede pasar un `com.adobe.idp.Document` que contiene el diseño de formulario al servicio Forms. Dos nuevos métodos llamados `renderPDFForm2` y `renderHTMLForm2` aceptar un `com.adobe.idp.Document` que contiene un diseño de formulario. (Consulte [Pasar documentos al servicio de Forms](/help/forms/developing/passing-documents-forms-service.md)
 
 Puede realizar estas tareas mediante el servicio Forms:

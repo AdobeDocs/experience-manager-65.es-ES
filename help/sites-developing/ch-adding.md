@@ -2,9 +2,9 @@
 title: Adición de ContextHub a las páginas y acceso a las tiendas
 description: Agregue ContextHub a sus páginas para habilitar las funciones de ContextHub y para vincular a las bibliotecas de JavaScript de ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Utilice los almacenes de ContextHub para mantener los datos de contexto. Context
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Todos los tipos de almacén son extensiones de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) clase. Para obtener información acerca de cómo crear un nuevo tipo de almacén, consulte [Crear tiendas personalizadas](ch-extend.md#creating-custom-store-candidates). Para obtener información acerca de los tipos de almacén de ejemplo, consulte [Candidatos de tienda de ContextHub de muestra](ch-samplestores.md).
+Todos los tipos de almacén son extensiones de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) clase. Para obtener información sobre cómo crear un tipo de almacén, consulte [Crear tiendas personalizadas](ch-extend.md#creating-custom-store-candidates). Para obtener información acerca de los tipos de almacén de ejemplo, consulte [Candidatos de tienda de ContextHub de muestra](ch-samplestores.md).
 
 ### Modos de persistencia {#persistence-modes}
 
@@ -139,7 +139,7 @@ Las reglas que se utilizan para resolver estos segmentos se resumen de la siguie
 
 >[!WARNING]
 >
->Los segmentos instalados se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto y, como tales, no deben utilizarse directamente.
+>Los segmentos instalados se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto. No los utilice directamente.
 
 ## Depuración de ContextHub {#debugging-contexthub}
 

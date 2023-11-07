@@ -8,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 53%
+source-wordcount: '382'
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 
 Los siguientes métodos abreviados están disponibles para las consolas Sitios, Comercio, Pantallas, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
 
-| Lugar de residencia | Acceso directo | Descripción |
+| Lugar de residencia | Atajo | Descripción |
 |---|---|---|
 | General | `Ctrl+Click` | Selección múltiple en un dispositivo de escritorio |
 | Consola: vista de columna y vista de contenido | `Right Arrow` | Desplácese hacia abajo en la estructura del sitio web / amplíe el nodo de árbol |
@@ -81,7 +81,7 @@ Además, los métodos abreviados de teclado son los mismos para todas las config
 
 ## Desactivación de métodos abreviados del teclado {#deactivating-keyboard-shortcuts}
 
-AEM proporciona métodos abreviados del teclado para algunas de las funciones que se utilizan con más frecuencia (editar, propiedades, copiar/pegar, mostrar diversos menús de raíl secundarios, etc.).
+AEM proporciona métodos abreviados del teclado para algunas de las funciones que se utilizan con más frecuencia (editar, propiedades, copiar/pegar, mostrar varios menús de raíl secundarios, etc.).
 
 Para los usuarios que no utilizan métodos abreviados de teclado o que tienen ciertos requisitos de accesibilidad, se pueden desactivar todos los métodos abreviados de teclado.
 

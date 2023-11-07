@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ cURL es una herramienta de línea de comandos de código abierto que se utiliza 
 
 cURL es una herramienta bien establecida y ampliamente utilizada para obtener o enviar datos mediante la sintaxis de URL y se lanzó originalmente en 1997. El nombre cURL originalmente significaba &quot;ver URL&quot;.
 
-AEM Debido a la naturaleza RESTful del marco de trabajo de Sling en el que se crea la, la mayoría de las tareas se pueden reducir a una llamada URL, que se puede ejecutar con cURL. [Tareas de manipulación de contenido](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) como activar páginas e iniciar flujos de trabajo, así como [tareas operativas](/help/sites-administering/curl.md#common-operational-aem-curl-commands) como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. Además, puede hacer lo siguiente [crear su propia cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) AEM comandos para la mayoría de las tareas de la.
+AEM Debido a la naturaleza RESTful del marco de trabajo de Sling en el que se crea la, la mayoría de las tareas se pueden reducir a una llamada URL, que se puede ejecutar con cURL. [Tareas de manipulación de contenido](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) como activar páginas e iniciar flujos de trabajo y [tareas operativas](/help/sites-administering/curl.md#common-operational-aem-curl-commands) como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. Además, puede hacer lo siguiente [crear su propia cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) AEM comandos para la mayoría de las tareas de la.
 
 >[!NOTE]
 >

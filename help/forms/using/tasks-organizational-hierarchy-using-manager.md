@@ -1,20 +1,16 @@
 ---
 title: Administrar tareas en una jerarquía organizativa mediante la vista Administrador
-seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: Cómo los administradores y los jefes de organización pueden acceder y trabajar en las tareas de sus informes directos e indirectos en la pestaña Tareas pendientes de AEM Forms Workspace.
-seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -68,7 +64,7 @@ AEM Forms restringe el acceso de los usuarios solo a aquellas tareas para las qu
    }
    ```
 
-1. Cree un archivo component.xml. Asegúrese de que el spec-id debe ser el mismo que se muestra en el siguiente fragmento de código. A continuación se muestra un fragmento de código de ejemplo que puede reutilizar.
+1. Cree un archivo component.xml. Asegúrese de que spec-id sea el mismo que se muestra en el siguiente fragmento de código. El siguiente es un fragmento de código de ejemplo que puede reutilizar.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">

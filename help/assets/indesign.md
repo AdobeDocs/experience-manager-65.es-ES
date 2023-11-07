@@ -1,13 +1,13 @@
 ---
-title: Integrar  [!DNL Assets]  con  [!DNL InDesign Server]
+title: Integrar [!DNL Assets] con [!DNL InDesign Server]
 description: Aprenda a integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1589'
 ht-degree: 4%
 
 ---
@@ -44,6 +44,7 @@ Esta secuencia de comandos:
       * Se extraerán la estructura, el texto y los archivos multimedia.
       * Se generan las representaciones de PDF y JPG.
       * Se generan las representaciones HTML e IDML.
+
    * Volver a publicar los archivos resultantes en [!DNL Experience Manager Assets].
 
    >[!NOTE]
@@ -52,7 +53,7 @@ Esta secuencia de comandos:
 
    >[!CAUTION]
    >
-   >Si la variable [!DNL InDesign Server] no está instalado o no está configurado, a continuación, aún puede cargar un archivo INDD en [!DNL Experience Manager]. Sin embargo, las representaciones generadas se limitarán a PNG y JPEG. No podrá generar representaciones de HTML, .idml ni de página.
+   >Si la variable [!DNL InDesign Server] no está instalado o no está configurado, a continuación, aún puede cargar un archivo INDD en [!DNL Experience Manager]. Sin embargo, las representaciones generadas se limitan a PNG y al JPEG. No podrá generar representaciones de HTML, .idml ni de página.
 
 1. Después de la generación de la extracción y la representación:
 
@@ -141,7 +142,7 @@ En un estándar [!DNL Experience Manager] instalación está disponible lo sigui
 
 * **Título de página**: especifique el título que desea tener asignado a la página resultante.
 
-* **Ruta raíz de página**: Ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utilizará el nodo que contiene las representaciones del recurso.
+* **Ruta raíz de página**: Ruta a la ubicación raíz de la página resultante. Si se deja en blanco, se utiliza el nodo que contiene las representaciones del recurso.
 
 * **Plantilla de página**: Plantilla que se utiliza al generar la página resultante.
 
@@ -153,7 +154,7 @@ En un estándar [!DNL Experience Manager] instalación está disponible lo sigui
 >
 >El trabajador reside en la instancia de proxy.
 
-1. En la consola Herramientas, expanda **[!UICONTROL Configuraciones de Cloud Services]** en el panel izquierdo. A continuación, expanda **[!UICONTROL Configuración de proxy de nube]**.
+1. En la consola Herramientas, expanda **[!UICONTROL Configuraciones de Cloud Service]** en el panel izquierdo. A continuación, expanda **[!UICONTROL Configuración de proxy de nube]**.
 
 1. Haga doble clic en el programa de **[!UICONTROL IDS de trabajo]** para abrirlo y configurarlo.
 
@@ -239,4 +240,3 @@ Puede cambiar las credenciales de administrador predeterminadas (nombre de usuar
 >[!MORELIKETHIS]
 >
 >* [Acerca de Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
-

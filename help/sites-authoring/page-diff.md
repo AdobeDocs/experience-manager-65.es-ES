@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 86%
+source-wordcount: '571'
+ht-degree: 91%
 
 ---
 
@@ -48,7 +48,7 @@ Independientemente del contenido que se va a comparar, la presentación de las d
 * El contenido seleccionado al iniciar la comparación de diferencias se muestra a la izquierda (punto de entrada de las diferencias).
 * El contenido con el que se va a comparar se muestra a la derecha (elemento con el que se compara el contenido seleccionado).
 
-Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquierda y la anterior a la derecha.
+Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquierda y la versión anterior se muestra a la derecha.
 
 El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del navegador.
 
@@ -102,4 +102,4 @@ Hay algunas situaciones en las que la comparación de diferencias de la página 
 
 >[!NOTE]
 >
->Para obtener más información sobre el funcionamiento del mecanismo de diferencia de página, así como las limitaciones que pueden afectar a dicho mecanismo, consulte la [documentación para desarrolladores](/help/sites-developing/pagediff.md) de esta función.
+>Para obtener más información sobre el funcionamiento del mecanismo de diferencia de página y las limitaciones que pueden afectar a dicho mecanismo, consulte la [documentación para desarrolladores](/help/sites-developing/pagediff.md) de esta función.

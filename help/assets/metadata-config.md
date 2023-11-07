@@ -6,10 +6,10 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 <!-- Scope of metadata articles:
-* metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
+* metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
@@ -56,7 +56,7 @@ Un perfil de metadatos le permite aplicar metadatos predeterminados a los recurs
 ### Añadir un perfil de metadatos {#adding-a-metadata-profile}
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]** y haga clic en **[!UICONTROL Crear]**.
-1. Introduzca un título para el perfil, por ejemplo `Sample Metadata`y haga clic en **[!UICONTROL Crear]**. El [!UICONTROL Editar formulario] para el perfil de metadatos.
+1. Introduzca un título para el perfil, por ejemplo, `Sample Metadata`y haga clic en **[!UICONTROL Crear]**. El [!UICONTROL Editar formulario] para el perfil de metadatos.
 
    ![Edición de un formulario de metadatos](assets/metadata-edit-form.png)
 
@@ -185,9 +185,9 @@ El **[!UICONTROL Generar formulario]** La pestaña enumera los elementos de form
 | Nombre del componente | Descripción |
 |---|---|
 | [!UICONTROL Encabezado de sección] | Añada un encabezado de sección para una lista de componentes comunes. |
-| [!UICONTROL Texto de una sola línea] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
-| [!UICONTROL Texto con varios valores] | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
-| [!UICONTROL Número] | Añada un componente numérico. |
+| [!UICONTROL Texto de una sola línea] | Añada una propiedad de texto de una sola línea. Se almacena como una cadena. |
+| [!UICONTROL Texto con varios valores] | Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
+| [!UICONTROL Número] | Añada un componente de número. |
 | [!UICONTROL Fecha] | Añada un componente de fecha. |
 | [!UICONTROL Lista desplegable] | Añada una lista desplegable. |
 | [!UICONTROL Etiquetas estándar] | Añadir una etiqueta. |
@@ -281,4 +281,3 @@ Introduzca valores de metadatos en los distintos campos y haga clic en **[!UICON
 >* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
 >* [Prácticas recomendadas para organizar los recursos digitales a fin de que utilicen perfiles de procesamiento](/help/assets/organize-assets.md).
 >* [XMP respuesta de escritura de la](/help/assets/xmp-writeback.md).
-

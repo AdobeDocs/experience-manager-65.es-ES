@@ -2,10 +2,10 @@
 title: Bandeja de entrada para administrar tareas
 description: Administrar las tareas con la bandeja de entrada de Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 42%
+source-wordcount: '1144'
+ht-degree: 43%
 
 ---
 
@@ -67,7 +67,7 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 
 1. Toque o haga clic en el indicador de la barra de herramientas.
 
-1. Seleccione **Ver todo**. Se abrirá la **bandeja de entrada AEM.** La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
+1. Seleccione **Ver todo**. El **AEM Bandeja de entrada de** abre. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
    Para ambas vistas también puede definir lo siguiente [Configuración de vista](#inbox-view-settings); las opciones disponibles dependen de la vista actual.
@@ -161,7 +161,7 @@ La opción Control de administración solo está visible para los miembros del `
 >Aunque es posible seleccionar más de un elemento, las acciones solo se pueden realizar en un elemento a la vez.
 
 
-1. Para realizar una acción sobre un elemento, seleccione la miniatura correspondiente al elemento en cuestión. Los iconos de las acciones aplicables a ese elemento se mostrarán en la barra de herramientas:
+1. Para realizar una acción sobre un elemento, seleccione la miniatura correspondiente al elemento en cuestión. Los iconos de las acciones aplicables a ese elemento se muestran en la barra de herramientas:
 
    ![wf-84](assets/wf-84.png)
 
@@ -191,7 +191,7 @@ La opción Control de administración solo está visible para los miembros del `
    * se iniciará un asistente de acciones.
    * se abrirá una página de documentación.
 
-   Por ejemplo, **Reasignar** abrirá un cuadro de diálogo:
+   Por ejemplo, **Reasignar** abre un cuadro de diálogo:
 
    ![wf-85](assets/wf-85.png)
 
@@ -223,7 +223,7 @@ Desde la bandeja de entrada puede crear las siguientes tareas:
 
    * **Avanzado**
 
-      * **Nombre**: se utilizará para formar la dirección URL; si está en blanco, se basará en **Título**.
+      * **Nombre**: se utiliza para formar la dirección URL; si está en blanco, se basa en **Título**.
 
    ![wf-87](assets/wf-87.png)
 

@@ -2,10 +2,10 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 98%
+source-wordcount: '1988'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ Debe impulsar una experiencia coherente y administrar campañas personalizadas e
 
 En su lugar, debe tener en cuenta cómo se relaciona el contenido en diferentes superficies basándose en los principios de la organización, como jerarquías de productos y marcas, categorías de bienes o superficies o pasos en el recorrido del cliente. Por ejemplo, si tiene un conjunto de superficies que admiten una marca específica de automóviles que fabrica, puede que desee comenzar con un modelo de contenido para obtener información general que sea verdadera para todo el automóvil, y que luego tenga elementos más específicos, como el contenido necesario, desde cuando el automóvil comience a funcionar hasta que haya problemas con el servicio. Este modelo impondrá la herencia del contenido general de la marca del automóvil, al tiempo que permitirá cambios basados en el contexto específico necesario. También le ayudará a gestionar las actualizaciones de este contenido en el futuro, ya que puede aplicar un control basándose en las funciones como la de experto en marketing general o gestor de productos para toda la marca, frente a un autor responsable de la experiencia de “arrancar el automóvil”.
 
-Una vez que tenga el modelo de contenido y una vista clara de los distintos clientes a los que debe mostrarse el contenido, debe asegurarse de que GraphQL o las API asociadas con el acceso a varios modelos de contenido se publiquen para todos los clientes que necesiten este contenido. Existen diferentes opciones para acceder a cierto contenido. Puede solicitar un contenido específico que sea estático y que permita el almacenamiento en caché del contenido y un rendimiento superior. También puede solicitar contenido que se genere dinámicamente y que requiera más procesamiento. Asegúrese de que los clientes aprovechan las API más eficientes para sus necesidades empresariales.
+Una vez que tenga el modelo de contenido y una vista clara de los distintos clientes a los que debe mostrarse el contenido, debe asegurarse de que GraphQL o las API asociadas con el acceso a varios modelos de contenido se publiquen para todos los clientes que necesiten este contenido. Existen diferentes opciones para acceder a cierto contenido. Puede solicitar un contenido específico que sea estático y que permita el almacenamiento en caché del contenido y un rendimiento superior. También puede solicitar contenido que se genere dinámicamente y que requiera más procesamiento. Asegúrese de que los clientes utilicen las API más eficientes para sus necesidades comerciales.
 
 ## Explicación de los entornos {#understanding-environments}
 
@@ -68,15 +68,15 @@ Durante la fase de desarrollo, se recomienda trabajar con un entorno de desarrol
 
 ### Cooperación entre desarrolladores y autores de contenido {#cooperation}
 
-Los desarrolladores necesitan un entorno de desarrollo de AEM configurado con los modelos de contenido rellenados. El desarrollador desarrolla el cliente que consumirá el contenido desde AEM sin in encabezado, ya que los autores de contenido siguen creándolo. Por eso las definiciones de API son muy importantes. Al aprovechar el SDK de AEM, el desarrollador puede crear un enlace de prueba para que se puedan crear pruebas de cliente y unidad a fin de garantizar que el cliente pueda procesar el contenido correctamente.
+Los desarrolladores necesitan un entorno de desarrollo de AEM configurado con los modelos de contenido rellenados. El desarrollador desarrolla el cliente que consumirá el contenido desde AEM sin in encabezado, ya que los autores de contenido siguen creándolo. Por eso las definiciones de API son muy importantes. AEM Mediante el SDK de la, el desarrollador puede crear un vínculo de prueba para que las pruebas de cliente y de unidad se puedan crear y garantizar que el cliente pueda procesar correctamente el contenido.
 
-Los autores de contenido crean contenido en función de los modelos de contenido que se han definido en el entorno de ensayo. Con la herramienta de creación de fragmentos de contenido, el autor crea un nuevo fragmento de contenido o edita un fragmento de contenido existente. Antes de publicarlo, el autor puede obtener una previsualización del aspecto que tendrá para el cliente si trabaja con el desarrollador para impulsar el modelo de contenido al desarrollo o configurar un entorno de desarrollador solo para que los autores puedan obtener una vista previa del aspecto que tendría para el cliente.
+Los autores de contenido crean contenido en función de los modelos de contenido que se han definido en el entorno de ensayo. Con la herramienta de creación de fragmentos de contenido, el autor crearía un fragmento de contenido o editaría uno existente. Antes de publicarlo, el autor puede obtener una previsualización del aspecto que tendrá para el cliente si trabaja con el desarrollador para impulsar el modelo de contenido al desarrollo o configurar un entorno de desarrollador solo para que los autores puedan obtener una vista previa del aspecto que tendría para el cliente.
 
 ## Configuración {#setup}
 
 Antes de empezar con el contenido sin encabezado de AEM, debe asegurarse de que todas las funciones necesarias estén habilitadas. Esta sección describe lo que se requiere. Los pasos reales para realizar estos pasos se detallan más adelante en la sección [Recorrido para desarrolladores de AEM sin encabezado.](#overview.md)
 
-También puede consultar los [recursos adicionales](#additional-resources) para obtener más información sobre temas individuales.
+Si lo desea, también puede ver la [recursos adicionales](#additional-resources) para obtener más información sobre los temas concretos.
 
 ### Configuración {#configuration}
 
@@ -94,7 +94,7 @@ Se trata de información general de lo que necesita para implementar su primera 
 
 ## Prácticas recomendadas {#best-practices}
 
-Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementada, sino también debido a la buena planificación y gestión de los proyectos. A continuación se indican algunas prácticas recomendadas a tener en cuenta por los autores y desarrolladores de contenido al planificar el proyecto.
+Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementada, sino también debido a la buena planificación y gestión de los proyectos. Las siguientes son varias prácticas recomendadas que los autores y desarrolladores de contenido deben tener en cuenta al planificar el proyecto.
 
 ### Organización del contenido {#organizing-content}
 

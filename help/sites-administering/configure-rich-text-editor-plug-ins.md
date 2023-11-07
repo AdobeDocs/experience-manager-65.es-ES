@@ -3,7 +3,7 @@ title: Configuración de los complementos del Editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar las funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4395'
 ht-degree: 4%
@@ -95,7 +95,7 @@ Puede proporcionar algunos, todos o ninguno de estos tres iconos a los autores e
 
 Para configurar RTE para que muestre los iconos necesarios, siga estos pasos.
 
-1. Vaya al componente, por ejemplo `/apps/<myProject>/components/text`.
+1. Vaya al componente, por ejemplo, `/apps/<myProject>/components/text`.
 1. Vaya al nodo `rtePlugins/edit`. Consulte [activación de un complemento](#activateplugin) si el nodo no existe.
 1. Cree el `features` propiedad en el `edit` y agregue una o más de las funciones. Guarde todos los cambios.
 
@@ -226,7 +226,7 @@ Para ello, habilite el complemento de estilo.
 
 A continuación, especifique las ubicaciones de las hojas de estilo a las que desea hacer referencia:
 
-1. Vaya al nodo raíz del componente de texto, por ejemplo `/apps/<myProject>/components/text`.
+1. Navegue hasta el nodo raíz del componente de texto, por ejemplo, `/apps/<myProject>/components/text`.
 1. Añadir la propiedad `externalStyleSheets` al nodo principal de `<rtePlugins-node>`:
 
    * **Nombre** `externalStyleSheets`
@@ -327,7 +327,7 @@ Cualquier texto creado en RTE se coloca dentro de una etiqueta de bloque, siendo
 
 >[!NOTE]
 >
->Si se usa una etiqueta de bloque, por ejemplo, un &lt;hr> , no se puede asignar a un párrafo; no es un caso de uso válido para un complemento de paraformato.
+>Si una etiqueta de bloque, por ejemplo, un &lt;hr> , no se puede asignar a un párrafo; no es un caso de uso válido para un complemento de paraformato.
 
 Cuando el complemento Formatos de párrafo se activa por primera vez, no hay disponibles formatos de párrafo predeterminados. La lista emergente está vacía. Para proporcionar a los autores formatos de párrafo, haga lo siguiente:
 

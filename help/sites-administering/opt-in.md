@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 10%
 
 ---
@@ -27,11 +27,11 @@ Tiene las siguientes opciones para configurar la integración:
 
 * Configure la integración mediante la tarea.
 
-   Esto se puede hacer de inmediato o más tarde, la tarea permanecerá en la Bandeja de entrada hasta que se realice alguna acción. En cualquier caso, la configuración se puede realizar directamente en la interfaz de usuario o con el uso de un `.properties` archivo.
+  Esto se puede hacer de inmediato o más tarde, la tarea permanecerá en la Bandeja de entrada hasta que se realice alguna acción. En cualquier caso, la configuración se puede realizar directamente en la interfaz de usuario o con el uso de un `.properties` archivo.
 
 * Exclusión de la integración.
 
-   Tenga en cuenta esta opción si prefiere [configuración manual de la integración](/help/sites-administering/marketing-cloud.md). Consulte también [AEM Integración de los recursos de la con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+  Tenga en cuenta esta opción si prefiere [configuración manual de la integración](/help/sites-administering/marketing-cloud.md). Consulte también [AEM Integración de los recursos de la con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Configure la configuración y el aprovisionamiento mediante una secuencia de comandos.
 
@@ -93,7 +93,7 @@ Desactivar la integración con Analytics y Target cuando:
 * No desea integrar con estos productos.
 * Prefiera configurar las integraciones manualmente.
 
-   Para obtener información sobre cómo configurar las integraciones manualmente, consulte [Integración con Adobe Analytics](/help/sites-administering/adobeanalytics.md) y [Integración con Adobe Target](/help/sites-administering/target.md).
+  Para obtener información sobre cómo configurar las integraciones manualmente, consulte [Integración con Adobe Analytics](/help/sites-administering/adobeanalytics.md) y [Integración con Adobe Target](/help/sites-administering/target.md).
 
 Para desactivar, debe completar la tarea precargada:
 
@@ -185,11 +185,11 @@ Los parámetros que envíe dependerán de lo siguiente:
    * `servicename`= `analytics|target`
    * `path`AEM =ruta de acceso a una página de para adjuntar las configuraciones creadas de los servicios en la nube
 
-   Por ejemplo, una solicitud de pliegue que cree configuraciones de Analytics y Target y las adjunte a la página de we.retail sería:
+  Por ejemplo, una solicitud de pliegue que cree configuraciones de Analytics y Target y las adjunte a la página de we.retail sería:
 
-   ```shell
-   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
-   ```
+  ```shell
+  curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
+  ```
 
 * Si no desea utilizar la variable **marketingcloud.properties** a continuación, tendrá que enviar las credenciales y los parámetros; por ejemplo:
 
@@ -205,8 +205,8 @@ Los parámetros que envíe dependerán de lo siguiente:
    * target.email= `me@adobe.com`
    * target.password= `password`
 
-   En este caso, la solicitud de pliegue que crea las configuraciones de Analytics y Target y las adjunta a la página web de venta minorista sería la siguiente:
+  En este caso, la solicitud de pliegue que crea las configuraciones de Analytics y Target y las adjunta a la página web de venta minorista sería la siguiente:
 
-   ```shell
-   curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
-   ```
+  ```shell
+  curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
+  ```

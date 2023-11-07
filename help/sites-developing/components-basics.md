@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4907'
 ht-degree: 1%
 
 ---
@@ -178,7 +178,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
    * IU clásica:
 
       * `icon.png` : icono para este componente.
-      * `thumbnail.png` : imagen que se muestra si este componente aparece enumerado en el sistema de párrafos.
+      * `thumbnail.png` : imagen que se muestra si este componente aparece en la lista del sistema de párrafos.
 
    * IU táctil
 
@@ -210,7 +210,7 @@ El icono o la abreviatura del componente se define mediante las propiedades JCR 
 1. `abbreviation` : propiedad de cadena para personalizar la abreviatura del nombre del componente en el explorador de componentes
    * La abreviatura debe estar limitada a dos caracteres.
    * Si se proporciona una cadena vacía, se genera la abreviatura a partir de los dos primeros caracteres del `jcr:title` propiedad.
-      * Por ejemplo, &quot;Im&quot; para &quot;Imagen&quot;
+      * Por ejemplo, &quot;Im&quot; para &quot;Image&quot;
       * El título localizado se utiliza para crear la abreviatura.
    * La abreviatura solo se traduce si el componente tiene un `abbreviation_commentI18n` , que luego se utiliza como sugerencia de traducción.
 1. `cq:icon.png` o `cq:icon.svg` : icono para este componente, que se muestra en el explorador de componentes
@@ -366,7 +366,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>virtual</code></td>
    <td><code>sling:Folder</code></td>
-   <td>Permite la creación de componentes virtuales. Para ver un ejemplo, consulte el componente de contacto en:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
+   <td>Permite la creación de componentes virtuales. Para ver un ejemplo, observe el componente de contacto en:<br /> <code>/libs/foundation/components/profile/form/contact</code></td>
   </tr>
   <tr>
    <td><code>&lt;breadcrumb.jsp&gt;</code></td>
@@ -710,7 +710,7 @@ El `cq:layout` property ( `String`) define cómo se puede editar el componente e
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>Se puede acceder a la edición por componentes mediante una barra de herramientas.<br /> Para un uso avanzado, tenga en cuenta que el objeto del lado del cliente correspondiente es: <code>CQ.wcm.EditBar</code>.</td>
+   <td>Se puede acceder a la edición por componentes mediante una barra de herramientas.<br /> Para un uso avanzado, el objeto del lado del cliente correspondiente es: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -1026,7 +1026,7 @@ El `cq:listeners` node (tipo de nodo) `cq:EditListenersConfig`) define lo que su
 >  * `aftermove`
 >  * `aftercopy`
 
-El controlador de eventos se puede implementar con una implementación personalizada. Por ejemplo (donde `project.customerAction` es un método estático):
+El controlador de eventos se puede implementar con una implementación personalizada. Por ejemplo, (donde `project.customerAction` es un método estático):
 
 `afteredit = "project.customerAction"`
 
@@ -1036,7 +1036,7 @@ El siguiente ejemplo equivale a la variable `REFRESH_INSERTED` configuración:
 
 >[!NOTE]
 >
->Para la IU clásica, para ver qué parámetros se pueden usar en los controladores, consulte la `before<action>` y `after<action>` sección de eventos de [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) y [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) documentación del widget.
+>Para ver los parámetros que se pueden usar en los controladores de la IU clásica, consulte la `before<action>` y `after<action>` sección de eventos de [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) y [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) documentación del widget.
 
 Con la siguiente configuración, la página se actualiza después de eliminar, editar, insertar o mover el componente:
 

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2268'
 ht-degree: 0%
 
 ---
@@ -321,7 +321,7 @@ AEM En el siguiente ejemplo se utiliza el Generador de consultas, ya que es el l
 ## Ajuste de índice existente {#existing-index-tuning}
 
 1. Si la consulta óptima se resuelve en un índice de propiedades, no queda nada por hacer, ya que los índices de propiedades son mínimamente ajustables.
-1. De lo contrario, la consulta debe resolverse en un índice de propiedades de Lucene. Si no se puede resolver ningún índice, vaya a Creación de un nuevo índice.
+1. De lo contrario, la consulta debe resolverse en un índice de propiedades de Lucene. Si no se puede resolver ningún índice, vaya a Creación de un índice.
 1. Si es necesario, convierta la consulta a XPath o JCR-SQL2.
 
    * **Consulta del Generador de consultas**

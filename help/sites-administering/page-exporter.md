@@ -2,7 +2,7 @@
 title: El exportador de página
 description: Aprenda a utilizar el Exportador de páginas de Adobe Experience Manager AEM ().
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Cuando la plantilla esté configurada, haga que esté disponible:
 
 La plantilla consta de una estructura de nodos, ya que utiliza la variable [Marco de sincronización de contenido](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Cada nodo tiene un `type` que define una acción específica en el proceso de creación del archivo zip.
 
-<!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
+<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Se pueden utilizar los siguientes nodos para crear una plantilla de exportación:
@@ -131,7 +131,7 @@ El nodo de página se utiliza para copiar el HTML de página en el archivo zip. 
 
 * `rewrite`
 El nodo de reescritura define cómo se reescriben los vínculos en la página exportada. Los vínculos reescritos pueden apuntar a los archivos incluidos en el archivo zip o a los recursos del servidor.
-  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- See the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 El nodo de diseño se utiliza para copiar el diseño utilizado para la página exportada. Tiene las siguientes características:
@@ -177,7 +177,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Para cumplir algunos requisitos específicos, implemente una [controlador de actualización personalizado](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
+<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exportación de una página mediante programación {#programmatically-exporting-a-page}

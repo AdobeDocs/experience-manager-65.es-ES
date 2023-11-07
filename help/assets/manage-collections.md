@@ -7,7 +7,7 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2203'
 ht-degree: 14%
@@ -18,7 +18,7 @@ ht-degree: 14%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Una colección es un conjunto de recursos dentro de [!DNL Adobe Experience Manager Assets]. Utilice las colecciones para compartir recursos entre los usuarios. El conjunto puede ser una colección estática o dinámica basada en los resultados de búsqueda.
@@ -52,7 +52,7 @@ Puede crear una colección con referencias estáticas; por ejemplo, una colecci�
 
    >[!NOTE]
    >
-   >Para permitir que los miembros compartan colecciones con otros usuarios, proporcione el `dam-users` permisos de lectura de grupo en la ruta `home/users`. Conceder permiso a los usuarios en `/content/dam/collections` ubicación para permitir a los usuarios ver las colecciones en las listas emergentes. También puede incluir al usuario en `dam-users` grupo.
+   >Para permitir que los miembros compartan colecciones con otros usuarios, proporcione el `dam-users` permisos de lectura de grupo en la ruta `home/users`. Conceder permiso a los usuarios en `/content/dam/collections` ubicación para permitir que los usuarios vean las colecciones en las listas emergentes. También puede incluir al usuario en `dam-users` grupo.
 
 1. (Opcional) Agregue una imagen en miniatura para la colección.
 1. Clic **[!UICONTROL Crear]** y haga clic en **[!UICONTROL OK]** para cerrar el cuadro de diálogo. En la consola Colecciones se abre una colección con el título y las propiedades especificados.
@@ -166,7 +166,6 @@ Puede editar los metadatos de varias colecciones simultáneamente. Esta funciona
    >* En el [!UICONTROL Propiedades] , puede quitar colecciones de la lista de colecciones cancelando la selección. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. [!DNL Experience Manager] no actualiza los metadatos de las colecciones que se quitan.
    >* En la parte superior de la lista, active la casilla de verificación situada junto a **[!UICONTROL Título]** para alternar entre seleccionar las colecciones y borrar la lista.
 
-
 1. Clic **[!UICONTROL Guardar y cerrar]** en la barra de herramientas y cierre el cuadro de diálogo de confirmación.
 1. Para anexar los nuevos metadatos con los metadatos existentes, seleccione **[!UICONTROL Modo de adición]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Haga clic en **[!UICONTROL Enviar]**.
 
@@ -278,4 +277,3 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 >
 >* [Configuración de notificaciones de correo electrónico de Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
 >* [Crear una tarea de revisión para Colecciones](bulk-approval.md)
-

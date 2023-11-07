@@ -11,10 +11,10 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Este artículo |
 
 Para obtener información sobre las últimas funciones y mejoras de AEM Forms, consulte [Novedades de AEM Forms](../../forms/using/whats-new.md).
@@ -87,7 +87,7 @@ Todos los tipos de formulario admiten las siguientes funciones:
 
 Una vez enviados los datos de formulario, Adobe Experience Manager los conecta con los sistemas existentes, las reglas empresariales y las personas requeridas.
 
-AEM Forms proporciona Forms Workspace, una aplicación móvil que amplía los procesos empresariales digitales a los dispositivos móviles. Con Forms Workspace, puede recopilar y registrar datos incluso sin conexión. Forms Workspace aprovecha las capacidades de su dispositivo móvil y permite capturar fotos y vídeos y recopilar datos como marcas de tiempo y otro tipo de información. La próxima vez que se conecte a una red, puede sincronizar los datos recopilados.
+AEM Forms proporciona Forms Workspace, una aplicación móvil que amplía los procesos empresariales digitales a los dispositivos móviles. Con Forms Workspace, puede recopilar y registrar datos incluso sin conexión. Forms Workspace utiliza las capacidades de su dispositivo móvil y le permite capturar fotos y vídeos y recopilar datos como marcas de tiempo y otro tipo de información. La próxima vez que se conecte a una red, puede sincronizar los datos recopilados.
 
 Capturar los datos sin conexión y sincronizarlos la próxima vez que vuelva a estar en línea resulta especialmente útil para las personas que trabajan sobre el terreno. Mejora la productividad y reduce los errores.
 

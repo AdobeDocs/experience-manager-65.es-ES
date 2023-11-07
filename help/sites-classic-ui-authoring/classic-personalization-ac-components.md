@@ -1,17 +1,15 @@
 ---
 title: Componentes de Adobe Campaign
 description: Al integrar con Adobe Campaign, tiene componentes disponibles para cuando trabaja con boletines informativos y con formularios.
-uuid: cc9417c9-4cc1-4554-858e-2ecd682dc92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2530'
 ht-degree: 5%
 
 ---
@@ -24,7 +22,7 @@ Al integrar con Adobe Campaign, tiene componentes disponibles para cuando trabaj
 >
 >AEM Los componentes de correo electrónico de la se han desaprobado. AEM Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada se convierten en de reutilización limitada para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
 >
->AEM Los componentes de correo electrónico se pueden implementar en el nivel de proyecto, y los componentes de correo electrónico de la obsoleta ilustran cómo se puede lograr. Sin embargo, estos componentes obsoletos no deben utilizarse en proyectos.
+>AEM Los componentes de correo electrónico se pueden implementar en el nivel de proyecto, y los componentes de correo electrónico de la obsoleta ilustran cómo se puede lograr. Sin embargo, no utilice estos componentes obsoletos en proyectos.
 
 ## Componentes de newsletter de Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -174,7 +172,7 @@ Arrastre una imagen desde el buscador de contenido o haga clic para buscar una i
 * **Propiedades de imagen** (**Propiedades de imagen avanzadas**) Permite especificar lo siguiente:
 
    * **Título**
-El título del bloque; se mostrará al pasar el ratón.
+Título del bloque; se muestra con el ratón.
 
    * **Texto alternativo**
 Texto alternativo que se mostrará si no se puede mostrar la imagen.
@@ -377,7 +375,7 @@ El siguiente ejemplo muestra un componente Clave de reconciliación oculta (Camp
 
 ### Campo numérico (Campaign) {#numeric-field-campaign}
 
-Utilice el campo numérico para permitir que los destinatarios introduzcan números, por ejemplo su edad.
+Utilice el campo numérico para permitir que los destinatarios introduzcan números, por ejemplo, su edad.
 
 Además de [configuración común a la mayoría de los componentes de Adobe Campaign](#settings-common-to-most-components), puede configurar lo siguiente:
 

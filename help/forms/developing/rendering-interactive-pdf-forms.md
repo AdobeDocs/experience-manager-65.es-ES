@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2478'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Este formulario lo procesa el administrador de la solicitud de préstamo de ejem
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-El `HandleData` Java Servlet rellena previamente este formulario con el nombre y los apellidos del usuario, así como la cantidad. Una vez rellenado previamente el formulario, se envía al explorador web del cliente. (Consulte [Rellenado previo de Forms con diseños flexibles](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+El `HandleData` Java Servlet rellena previamente este formulario con el nombre y los apellidos del usuario y la cantidad. Una vez rellenado previamente el formulario, se envía al explorador web del cliente. (Consulte [Rellenado previo de Forms con diseños flexibles](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Servlets Java**
 
@@ -133,7 +133,7 @@ Para acceder a este diseño de formulario, especifique `Applications/FormsApplic
 >
 >Para obtener información sobre la creación de una aplicación de Forms mediante Workbench, consulte [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-La ruta a un recurso ubicado en una aplicación de Forms es:
+La ruta a un recurso en una aplicación de Forms es:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -193,7 +193,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (Java):
 
    * Crear un `URLSpec` que almacena los valores de URI mediante su constructor.
    * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pasar un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario esté ubicado en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
+   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño del formulario esté en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
    * Invoque el `URLSpec` del objeto `setTargetURL` y pasan un valor de cadena que especifica el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Adjuntar archivos al formulario
@@ -248,7 +248,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (servicio web
 
    * Crear un `URLSpec` que almacena los valores de URI mediante su constructor.
    * Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pasar un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario esté ubicado en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
+   * Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño del formulario esté en el URI raíz del contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
    * Invoque el `URLSpec` del objeto `setTargetURL` y pasan un valor de cadena que especifica el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Adjuntar archivos al formulario

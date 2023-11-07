@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '369'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Los extremos solo se pueden agregar a los servicios. Un extremo no puede existir
 
 ## Habilitar o deshabilitar un extremo {#enable-or-disable-an-endpoint}
 
-De forma predeterminada, los nuevos extremos se habilitan automáticamente. Pero si ha deshabilitado un punto final, deberá habilitarlo para que esté operativo.
+De forma predeterminada, los nuevos extremos se habilitan automáticamente. Pero si ha deshabilitado un punto final, debe habilitarlo para que esté operativo.
 
 Si tiene problemas con los servicios de, deshabilite los extremos asociados de para solucionar mejor el problema. También es posible que desee deshabilitar los extremos durante el mantenimiento regular del sistema o al actualizar un servicio.
 

@@ -6,7 +6,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 1%
@@ -71,11 +71,11 @@ El resto de este documento describe los requisitos de esta capa específica del 
 
 AEM La estructura de contenido de la página se almacena en el archivo de datos de. SPA El modelo de la página se utiliza para asignar e instanciar componentes de la. SPA SPA AEM Los desarrolladores de la crean componentes de la a los que asignan componentes de la aplicación. AEM Para ello, utilizan el tipo de recurso (o la ruta al componente de) como clave única.
 
-SPA Los componentes de la página deben estar sincronizados con el modelo de página y se deben actualizar con cualquier cambio en su contenido en consecuencia. Se debe utilizar un patrón que aproveche los componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
+SPA Los componentes de la página deben estar sincronizados con el modelo de página y se deben actualizar con cualquier cambio en su contenido en consecuencia. Se debe utilizar un patrón que utilice componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
 
 ### Metadatos de campos {#meta-fields}
 
-El modelo de página aprovecha el exportador de modelos JSON, que a su vez se basa en la variable [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) API. Los modelos de sling exportables exponen la siguiente lista de campos para permitir que las bibliotecas subyacentes interpreten el modelo de datos:
+El modelo de página utiliza el exportador de modelos JSON, que a su vez se basa en la variable [Modelo Sling](https://sling.apache.org/documentation/bundles/models.html) API. Los modelos de sling exportables exponen la siguiente lista de campos para permitir que las bibliotecas subyacentes interpreten el modelo de datos:
 
 * `:type`AEM : tipo del recurso de la (predeterminado = tipo de recurso)
 * `:children`: elementos secundarios jerárquicos del recurso actual. Los elementos secundarios no forman parte del contenido interno del recurso actual (se pueden encontrar en elementos que representan una página)

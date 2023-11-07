@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1222'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Esta sección incluye los siguientes pasos para configurar SSL con el servidor d
 
 Para habilitar SSL, WebSphere necesita tener acceso a una cuenta de usuario del Registro de usuarios del sistema operativo local que tenga permiso para administrar el sistema:
 
-* (Windows) Cree un nuevo usuario de Windows que forme parte del grupo Administradores y tenga el privilegio de actuar como parte del sistema operativo. (Consulte [Crear un usuario de Windows para WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
+* (Windows) Cree un usuario de Windows que forme parte del grupo Administradores y tenga el privilegio de actuar como parte del sistema operativo. (Consulte [Crear un usuario de Windows para WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) El usuario puede ser un usuario raíz u otro usuario que tenga privilegios de raíz. Cuando habilite SSL en WebSphere, utilice la identificación del servidor y la contraseña de este usuario.
 
 ### Creación de un usuario de Linux o UNIX para WebSphere {#create-a-linux-or-unix-user-for-websphere}
@@ -51,7 +51,7 @@ Para habilitar SSL, WebSphere necesita tener acceso a una cuenta de usuario del 
 1. Haga clic con el botón derecho en Usuarios y seleccione **Nuevo usuario**.
 1. Escriba un nombre de usuario y una contraseña en los cuadros correspondientes y cualquier otra información que necesite en los cuadros restantes.
 1. Anular selección **El Usuario Debe Cambiar La Contraseña La Próxima Vez Que Inicie Sesión**, haga clic en **Crear** y haga clic en **Cerrar**.
-1. Clic **Usuarios**, haga clic con el botón derecho en el usuario que acaba de crear y seleccione **Propiedades**.
+1. Clic **Usuarios**, haga clic con el botón derecho en el usuario que ha creado y seleccione **Propiedades**.
 1. Haga clic en **Miembro de** y luego haga clic en **Añadir**.
 1. En el cuadro Escriba los nombres de objeto que desea seleccionar, escriba `Administrators`, haga clic en Comprobar nombres para asegurarse de que el nombre del grupo es correcto.
 1. Clic **OK** y luego haga clic en **OK** otra vez.

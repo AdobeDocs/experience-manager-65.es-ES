@@ -1,18 +1,14 @@
 ---
 title: Uso de Adobe Campaign 6.1 y Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: AEM Puede crear contenido de correo electrónico en y procesarlo en correos electrónicos de Adobe Campaign.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
-uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 AEM Puede crear contenido de correo electrónico en y procesarlo en correos electrónicos de Adobe Campaign. Para ello, debe:
 
-1. AEM Cree un nuevo boletín informativo en el que se incluya una plantilla específica de Adobe Campaign.
+1. AEM Cree un boletín informativo en el que se le asigne un nombre a partir de una plantilla específica de Adobe Campaign.
 1. Seleccionar [un servicio de Adobe Campaign](#selectingtheadobecampaigncloudservice) antes de editar el contenido para acceder a todas las funcionalidades.
 1. Edite el contenido.
 1. Valide el contenido.
@@ -56,7 +52,7 @@ Las instrucciones detalladas se describen en este documento.
 
    >[!NOTE]
    >
-   >[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md#weretail). Descargue contenido de Geometrixx de ejemplo desde Package Share.
+   >[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md#weretail). Descargar contenido de Geometrixx de muestra desde Package Share.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -147,7 +143,7 @@ Consulte [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classi
 
 ### Previsualización de una newsletter {#previewing-a-newsletter}
 
-Puede obtener una vista previa del aspecto que tendrá la newsletter, así como previsualizar la personalización.
+Puede obtener una vista previa del aspecto que tendrá la newsletter y previsualizar la personalización.
 
 1. Abra la newsletter que desee previsualizar y haga clic en Vista previa (lupa) para reducir la barra de tareas.
 1. Haga clic en uno de los iconos del cliente de correo electrónico para ver el aspecto de la newsletter en cada cliente de correo electrónico.

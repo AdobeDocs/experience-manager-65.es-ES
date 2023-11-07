@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: 399ae241593b5cc14ef1c2efd090f0d1fae7c2df
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 2%
@@ -17,9 +17,9 @@ Possible topics to cover in this article are below.
 
 * Compile a list of enhancements done in the last ~1 year.
 * Showcase a few prominent use cases (search?) in a screencast.
-* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, etc.
+* Top-level actions supported, such as clickable UI elements, keyboard shortcuts, popup dialogs, and so on.
 * List all UIs that are keyboard navigable.
-* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, etc.
+* Unified list of the product tasks supported, such as, search assets, download assets, add or editing metadata, use DM Viewers, and so on.
 * Do we need to add support matrix of user tasks with browser and screen reader combinations. Everything may not work in all browsers and/or using all screen readers.
 * Any exceptions that users should be aware of. It may help to call out (it may be done in ACR) what tasks are NOT supported.
 * CTAs – what's next and more info from AEM team:
@@ -181,7 +181,7 @@ La funcionalidad de búsqueda se hace accesible mediante la siguiente funcionali
 
 * El título de página, disponible para un lector de pantalla, ayuda a identificar la página como página de búsqueda de recursos.
 * Los usuarios buscan recursos desde el campo Omnisearch. Los usuarios pueden abrirlo con la navegación mediante el teclado o con el método abreviado de teclado `/`.
-* Los usuarios pueden empezar a escribir la palabra clave de búsqueda y, a continuación, seleccionar las sugerencias automáticas utilizando las teclas de flecha. La sugerencia destacada se puede seleccionar mediante el `Return` clave y recursos se buscan para la sugerencia seleccionada.
+* Los usuarios pueden empezar a escribir la palabra clave de búsqueda y, a continuación, seleccionar las sugerencias automáticas utilizando las teclas de flecha. La sugerencia destacada se puede seleccionar mediante las opciones `Return` clave y recursos se buscan para la sugerencia seleccionada.
 * Los lectores de pantalla pueden identificar y anunciar las casillas de verificación de estado mixto (en las que, a menos que seleccione todos los predicados anidados, las casillas de verificación de primer nivel no están seleccionadas y se atraviesan) en el panel Filtros al filtrar los resultados de búsqueda.
 * El enfoque del usuario se desplaza a las opciones de búsqueda una vez cerrado el cuadro Omnisearch.
 
@@ -228,4 +228,3 @@ Para proporcionar comentarios, formular preguntas y solicitar mejoras del produc
 >* [Notas de la versión de las mejoras realizadas en cada versión del Service Pack](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] guía de accesibilidad](/help/managing/web-accessibility.md).
 >* [ACR Informes de conformidad () y listado de VPAT para soluciones de Adobe](https://www.adobe.com/accessibility/compliance.html).
-

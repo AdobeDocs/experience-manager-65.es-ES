@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 3%
 
 ---
@@ -155,9 +155,9 @@ Las siguientes estrategias pueden minimizar la pérdida de datos de la carpeta d
 * Realice copias de seguridad de las carpetas de resultados y errores con frecuencia, por ejemplo, cada hora, para evitar la pérdida de archivos de resultados y errores.
 * Haga una copia de seguridad de los archivos de entrada en una carpeta que no sea la carpeta vigilada. Esto garantiza la disponibilidad del archivo después de la recuperación en caso de que no pueda encontrar los archivos en la carpeta de salida o de error. Asegúrese de que el esquema de nomenclatura de archivos sea coherente.
 
-   Por ejemplo, si guarda la salida con `%F.`*extensión*, el archivo de salida tendrá el mismo nombre que el archivo de entrada. Esto le ayuda a determinar qué archivos de entrada se manipulan y cuáles se deben volver a enviar. Si sólo ve archivo1_out en la carpeta de resultados y no archivo2_out, archivo3_out y archivo4_out, debe volver a enviar archivo2, archivo3 y archivo4.
+  Por ejemplo, si guarda la salida con `%F.`*extensión*, el archivo de salida tendrá el mismo nombre que el archivo de entrada. Esto le ayuda a determinar qué archivos de entrada se manipulan y cuáles se deben volver a enviar. Si sólo ve archivo1_out en la carpeta de resultados y no archivo2_out, archivo3_out y archivo4_out, debe volver a enviar archivo2, archivo3 y archivo4.
 
-* Si la copia de seguridad de la carpeta inspeccionada que está disponible es anterior al tiempo que tarda en procesar el trabajo, debe permitir al sistema crear una nueva carpeta inspeccionada y colocar automáticamente los archivos en la carpeta de entrada.
+* Si la copia de seguridad de la carpeta inspeccionada que está disponible es anterior al tiempo que tarda en procesar el trabajo, debe permitir al sistema crear una carpeta inspeccionada y colocar automáticamente los archivos en la carpeta de entrada.
 * Si la última copia de seguridad disponible no es lo suficientemente reciente, el tiempo de copia de seguridad es menor que el tiempo que tarda en procesar los archivos y se restaura la carpeta vigilada, el archivo se manipuló en una de las siguientes fases diferentes:
 
    * **Fase 1:** En la carpeta de entrada
@@ -166,11 +166,11 @@ Las siguientes estrategias pueden minimizar la pérdida de datos de la carpeta d
    * **Fase 4:** Manipulación en curso
    * **Fase 5:** Resultados devueltos
 
-   Si los archivos se encuentran en la fase 1, se manipularán. Si los archivos se encuentran en las fases 2 o 3, colóquelos en la carpeta de entrada para que la manipulación tenga lugar de nuevo.
+  Si los archivos se encuentran en la fase 1, se manipularán. Si los archivos se encuentran en las fases 2 o 3, colóquelos en la carpeta de entrada para que la manipulación tenga lugar de nuevo.
 
-   >[!NOTE]
-   >
-   >Si la manipulación de un archivo se produce más de una vez, se evitará la pérdida de datos, pero los resultados pueden duplicarse.
+  >[!NOTE]
+  >
+  >Si la manipulación de un archivo se produce más de una vez, se evitará la pérdida de datos, pero los resultados pueden duplicarse.
 
 ## Conclusión {#conclusion}
 

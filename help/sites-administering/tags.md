@@ -1,18 +1,14 @@
 ---
 title: Administración de etiquetas
-seo-title: Administering Tags
 description: Obtenga información sobre cómo administrar y administrar etiquetas en Adobe Experience Manager.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -78,7 +74,7 @@ Para acceder a la consola de etiquetado:
 
 ### Creación de un área de nombres {#creating-a-namespace}
 
-Para crear una nueva área de nombres, seleccione la **`Create Namespace`** icono.
+Para crear un área de nombres, seleccione **`Create Namespace`** icono.
 
 El área de nombres es en sí misma una etiqueta y no necesita contener subetiquetas. Sin embargo, para continuar creando una taxonomía, [creación de subetiquetas](#creating-tags), que a su vez pueden ser etiquetas de hoja o de contenedor.
 
@@ -211,7 +207,7 @@ Muestra inicialmente el actual `name`de la etiqueta. Un nuevo `name`se puede int
 
 La combinación de etiquetas se puede utilizar cuando una taxonomía tiene duplicados. Cuando la etiqueta A se combina con la etiqueta B, todas las páginas etiquetadas con la etiqueta A se etiquetarán con la etiqueta B y la etiqueta A ya no estará disponible para los autores.
 
-Cuando se selecciona un área de nombres u otra etiqueta, al seleccionar **Combinar** El icono abrirá un panel en el que se puede seleccionar la ruta de acceso de la combinación.
+Cuando se selecciona un área de nombres u otra etiqueta, al seleccionar **Combinar** Este icono abre un panel en el que se puede seleccionar la ruta de acceso de la combinación.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -310,6 +306,6 @@ Para añadir un nuevo idioma al cuadro de diálogo, consulte [Adición de un nue
 
 * [Etiquetado para desarrolladores](/help/sites-developing/tags.md)
 
-  Información sobre el marco de etiquetado, así como la ampliación e inclusión de etiquetas en aplicaciones personalizadas.
+  Información sobre el marco de etiquetado y ampliación e inclusión de etiquetas en aplicaciones personalizadas.
 
 * [Consola de etiquetado de IU clásica](/help/sites-administering/classic-console.md)

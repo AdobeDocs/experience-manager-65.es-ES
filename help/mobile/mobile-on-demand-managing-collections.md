@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Flujo de trabajo general para eliminar una colección:
 1. Seleccione el artículo que desea eliminar en la **Administrar colecciones** mosaico.
 1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
 1. Clic **Eliminar** de la barra de acciones.
-1. AEM Seleccione si quiere eliminar de la aplicación, así como de Mobile On-Demand, si lo desea.
+1. AEM Seleccione si desea eliminar de la aplicación de Adobe y de Mobile On-Demand en la lista de dispositivos de la aplicación.
 1. Haga clic en **Eliminar**.
 1. Su colección se eliminará de la lista.
 

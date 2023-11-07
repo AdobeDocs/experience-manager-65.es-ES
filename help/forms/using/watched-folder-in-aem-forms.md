@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7148'
-ht-degree: 98%
+source-wordcount: '7146'
+ht-degree: 97%
 
 ---
 
@@ -87,7 +87,7 @@ Puede configurar las siguientes propiedades para una carpeta inspeccionada.
 
 >[!NOTE]
 >
->Incluso cuando una entrada está marcada como con el tiempo de espera agotado con este mecanismo, puede que se esté procesando en segundo plano, pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento puede incluso continuar hasta la finalización más tarde y el resultado se volcará a la carpeta de resultados. Si el contenido no se consumió antes del tiempo de espera, es muy probable que el procesamiento genere un error más adelante al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otro lado, si el procesamiento de la entrada nunca se activa debido a un error intermitente del trabajo/flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces por supuesto no se producirá ninguna de estas dos situaciones. Por lo tanto, para cualquier entrada de la carpeta de errores que se haya marcado como errónea debido al tiempo de espera (busque los mensajes del formulario “Archivo no procesado después de una cantidad de tiempo significativa, ¡marcando como error!;” en el registro de errores), se recomienda analizar la carpeta de resultados (y también la carpeta de errores en sí para obtener otra entrada para la misma entrada) para comprobar si se ha producido alguna de las eventualidades descritas anteriormente.
+>Incluso cuando una entrada está marcada como con el tiempo de espera agotado con este mecanismo, puede que se esté procesando en segundo plano, pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento puede incluso continuar hasta la finalización más tarde y el resultado se volcará a la carpeta de resultados. Si el contenido no se consumió antes del tiempo de espera, es muy probable que el procesamiento genere un error más adelante al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otro lado, si el procesamiento de la entrada nunca se activa debido a un error intermitente del trabajo/flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces no se producirá ninguna de estas dos situaciones. Por lo tanto, para cualquier entrada de la carpeta de errores que se haya marcado como errónea debido al tiempo de espera (busque los mensajes del formulario “Archivo no procesado después de una cantidad de tiempo significativa, ¡marcando como error!;” en el registro de errores), se recomienda analizar la carpeta de resultados (y también la carpeta de errores en sí para obtener otra entrada para la misma entrada) para comprobar si se ha producido alguna de las eventualidades descritas anteriormente.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, default true):** Indica si el mecanismo de caducidad debe activarse solo cuando se restringe la carpeta del reloj. El mecanismo es más relevante para las carpetas de inspección restringidas, ya que un pequeño número de archivos que permanecen en estado sin procesar (debido a errores intermitentes en el trabajo/flujo de trabajo) pueden bloquear el procesamiento de todo el lote cuando se habilita la restricción. Si esta propiedad se mantiene como True (predeterminada), el mecanismo de caducidad no se activa para las carpetas de inspección que no estén restringidas. Si la propiedad se mantiene como False, el mecanismo siempre se activará siempre que la propiedad stageFileExpirationDuration sea un número positivo.
 

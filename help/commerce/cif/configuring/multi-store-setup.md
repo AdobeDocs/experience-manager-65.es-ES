@@ -7,7 +7,7 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 18%
@@ -49,7 +49,7 @@ AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una 
 4. Asigne la configuración secundaria a un sitio de AEM.
 
    * Vaya a la consola de AEM Sites
-   * Navegue hasta la región o la raíz de idioma de la estructura del sitio, por ejemplo /content/venia/us _o_ /content/venia/us/es para la página de muestra de Venia
+   * Navegue hasta la región o la raíz de idioma de la estructura del sitio, por ejemplo, /content/venia/us _o_ /content/venia/us/es para la página de muestra de Venia
    * Seleccione la página y abra las propiedades de página
    * Seleccione la pestaña Avanzadas.
    * En el `Configuration` , seleccione la configuración que creó en el paso

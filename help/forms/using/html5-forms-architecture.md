@@ -12,10 +12,10 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2011'
-ht-degree: 97%
+source-wordcount: '2010'
+ht-degree: 96%
 
 ---
 
@@ -174,7 +174,7 @@ Los perfiles son nodos de recursos de Sling que representan un formulario o una 
 
 #### Procesadores de perfiles {#profile-renderers}
 
-El nodo Perfil tiene una propiedad **sling:resourceSuperType** con el valor **xfaforms/profile**. Esta propiedad envía internamente solicitudes al script de Sling para los nodos de perfil ubicados en la carpeta **/libs/xfaforms/profile**. Estos scripts son páginas JSP, las cuales son contenedores para recopilar los formularios HTML y los artefactos JS/CSS requeridos. Las páginas incluyen referencias a:
+El nodo Perfil tiene una propiedad **sling:resourceSuperType** con el valor **xfaforms/profile**. Esta propiedad envía internamente solicitudes al script de Sling para los nodos de perfil en **/libs/xfaforms/profile** carpeta. Estos scripts son páginas JSP, las cuales son contenedores para recopilar los formularios HTML y los artefactos JS/CSS requeridos. Las páginas incluyen referencias a:
 
 * **xfaforms.I18N.&lt;locale>**: esta biblioteca contiene datos localizados.
 * **xfaforms.profile**: esta biblioteca contiene la implementación para el motor de diseño y los scripts XFA.

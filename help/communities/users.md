@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1912'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Para administrar usuarios y grupos de usuarios registrados en el entorno de crea
 
 | Si es miembro del grupo... | Rol principal |
 |---|---|
-| administradores | El grupo de administradores está formado por administradores del sistema que tienen todas las capacidades de un administrador de la comunidad, así como la capacidad de administrar el grupo de administradores de la comunidad. |
+| administradores | El grupo de administradores está formado por administradores del sistema que tienen todas las capacidades de un administrador de la comunidad y la capacidad de administrar el grupo de administradores de la comunidad. |
 | Administradores de la comunidad | El grupo Administradores de la comunidad se convierte automáticamente en miembro de todos los sitios de la comunidad y de todos los grupos de la comunidad creados en el sitio. Un miembro inicial del grupo Administradores de la comunidad es el grupo Administradores. En el entorno de creación, los administradores de la comunidad pueden crear sitios de la comunidad, administrar sitios, administrar miembros (pueden prohibir a miembros de la comunidad) y moderar contenido. |
 | Comunidad &lt;*nombre del sitio*> Sitecontentmanager | AEM El Administrador de contenido de sitios de la comunidad puede realizar tareas tradicionales de creación de contenido, creación de contenido y modificación de páginas para un sitio de la comunidad. |
 | Ninguno | Un visitante anónimo del sitio no puede acceder al entorno de creación. |
@@ -200,7 +200,7 @@ Siga los mismos pasos que para crear y asignar un usuario a la función de admin
 
 ### Integración de LDAP {#ldap-integration}
 
-AEM La autenticación de usuarios admite el uso de LDAP, así como la creación de cuentas de usuario. Esto se detalla en [AEM Configuración de LDAP con 6](../../help/sites-administering/ldap-config.md).
+AEM Compatibilidad con el uso de LDAP para la autenticación de usuarios y la creación de cuentas de usuario. Esto se detalla en [AEM Configuración de LDAP con 6](../../help/sites-administering/ldap-config.md).
 
 A continuación se muestran algunos detalles de configuración específicos de los miembros y grupos de miembros de la comunidad.
 

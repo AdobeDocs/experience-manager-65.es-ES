@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '8187'
+source-wordcount: '8184'
 ht-degree: 2%
 
 ---
@@ -86,9 +86,9 @@ Debe obtener un documento de PDF sin cifrar para cifrar el documento con una con
 
 Para cifrar un documento de PDF con una contraseña, debe especificar cuatro valores, incluidos dos valores de contraseña. El primer valor de contraseña se utiliza para cifrar el documento de PDF y debe especificarse al abrir el documento de PDF. El segundo valor de contraseña, denominado valor de contraseña maestra, se utiliza para quitar el cifrado del documento de PDF. Los valores de contraseña distinguen entre mayúsculas y minúsculas y estos dos valores de contraseña no pueden ser iguales.
 
-Debe especificar los recursos de documentos de PDF que desea cifrar. Puede cifrar todo el documento de PDF, todo excepto los metadatos del documento o solo los archivos adjuntos del documento. Si cifra únicamente los datos adjuntos del documento, se pedirá al usuario una contraseña cuando intente obtener acceso a los datos adjuntos del archivo.
+Especifique los recursos del documento de PDF que desea cifrar. Puede cifrar todo el documento de PDF, todo excepto los metadatos del documento o solo los archivos adjuntos del documento. Si cifra únicamente los datos adjuntos del documento, se pedirá al usuario una contraseña cuando intente obtener acceso a los datos adjuntos del archivo.
 
-Al cifrar un documento de PDF, puede especificar los permisos asociados al documento protegido. Al especificar permisos, puede controlar las acciones que puede realizar un usuario que abre un documento de PDF cifrado con contraseña. Por ejemplo, para extraer correctamente datos de formulario, debe definir los siguientes permisos:
+Al cifrar un documento de PDF, puede especificar los permisos asociados al documento protegido. Al especificar permisos, puede controlar las acciones que puede realizar un usuario que abre un documento de PDF cifrado con contraseña. Por ejemplo, para extraer correctamente datos de formulario, debe establecer los siguientes permisos:
 
 * PASSWORD_EDIT_ADD
 * PASSWORD_EDIT_MODIFY
@@ -142,7 +142,7 @@ Cifrar un documento de PDF con una contraseña mediante la API de cifrado (Java)
    * Crear un `PasswordEncryptionOptionSpec` invocando su constructor.
    * Especifique los recursos de documento de PDF que se van a cifrar invocando el `PasswordEncryptionOptionSpec` del objeto `setEncryptOption` método y pasar un `PasswordEncryptionOption` valor de enumeración que especifica los recursos de documento que se van a cifrar. Por ejemplo, para cifrar todo el documento de PDF, incluidos sus metadatos y sus archivos adjuntos, especifique `PasswordEncryptionOption.ALL`.
    * Crear un `java.util.List` que almacena los permisos de cifrado mediante el objeto `ArrayList` constructor.
-   * Especifique un permiso invocando el `java.util.List` objeto ‘s `add` y pasando un valor de enumeración que corresponde al permiso que desea establecer. Por ejemplo, para establecer el permiso que permite a un usuario copiar los datos ubicados en el documento del PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita este paso para cada permiso que desee establecer).
+   * Especifique un permiso invocando el `java.util.List` objeto ‘s `add` y pasando un valor de enumeración que corresponde al permiso que desea establecer. Por ejemplo, para establecer el permiso que permite a un usuario copiar datos en el documento de PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita este paso para cada permiso que desee establecer).
    * Especifique la opción de compatibilidad de Acrobat invocando la variable `PasswordEncryptionOptionSpec` del objeto `setCompatability` y pasando un valor de enumeración que especifica el nivel de compatibilidad de Acrobat. Por ejemplo, puede especificar `PasswordEncryptionCompatability.ACRO_7`.
    * Especifique el valor de contraseña que permite a un usuario abrir el documento de PDF cifrado invocando el `PasswordEncryptionOptionSpec` del objeto `setDocumentOpenPassword` y pasando un valor de cadena que representa la contraseña de apertura.
    * Especifique el valor de la contraseña maestra que permite al usuario quitar el cifrado del documento del PDF invocando el `PasswordEncryptionOptionSpec` del objeto `setPermissionPassword` y pasando un valor de cadena que representa la contraseña maestra.

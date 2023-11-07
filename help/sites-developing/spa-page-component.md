@@ -1,20 +1,16 @@
 ---
 title: Componente de página SPA
-seo-title: SPA Page Component
 description: En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que delega esto en el SPA de trabajo de la página de trabajo de la página de la página de trabajo de la página de trabajo de. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
-seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 9%
+source-wordcount: '730'
+ht-degree: 8%
 
 ---
 
@@ -91,9 +87,9 @@ SPA Las propiedades del recurso meta que describen el contenido de la:
 
 >[!CAUTION]
 >
->Este documento utiliza la aplicación We.Retail Journal solo para fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
+>Este documento utiliza la aplicación We.Retail Journal solo para fines de demostración. No utilice para ningún trabajo de proyecto.
 >
->AEM Cualquier proyecto de debería aprovechar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA SPA AEM SPA y aprovecha el SDK de la. Todos los proyectos de la deben basarse en el Arquetipo de Maven para el Starter Kit de la.
+>AEM Cualquier proyecto debe utilizar la variable [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)SPA , que es compatible con proyectos de que utilizan React o Angular SPA SPA AEM SPA y que utilizan el SDK de. Todos los proyectos de en el SDK de Maven deben basarse en el arquetipo de Maven para el kit de inicio de la aplicación de.
 
 ## Sincronización de superposición del editor de páginas {#page-editor-overlay-synchronization}
 

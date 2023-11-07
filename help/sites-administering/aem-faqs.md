@@ -2,9 +2,9 @@
 title: AEM Preguntas más frecuentess
 description: AEM Utilice estas preguntas frecuentes para comprender, configurar y solucionar problemas o flujos de trabajo comunes en los flujos de trabajo de.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM Conozca las respuestas a algunos problemas de solución de problemas y confi
 
 ### ¿Cómo configuro la distribución sin binarios? {#how-do-i-configure-binary-less-distribution}
 
-La distribución sin binarios es compatible con implementaciones en un almacén de datos compartido e implica agentes que aprovechan el exportador de paquetes de distribución basado en Vault (PID de fábrica: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) generador de paquetes.
+La distribución sin binarios es compatible con implementaciones en un almacén de datos compartido e implica a agentes que utilizan el exportador de paquetes de distribución basado en Vault (PID de fábrica: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) generador de paquetes.
 
 Con el modo sin binarios habilitado, los paquetes de contenido distribuidos contienen referencias a binarios en lugar de a los binarios reales.
 
@@ -60,13 +60,13 @@ Adobe Experience Manager AEM () 6.4 se envía con el asistente SSL y ofrece una 
 
 Para habilitar SSL de forma predeterminada, consulte [SSL de forma predeterminada](/help/sites-administering/ssl-by-default.md).
 
-#### AEM ¿Cuál es la arquitectura recomendada al utilizar los servicios de contenido de la aplicación móvil de, idealmente React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### AEM ¿Cuál es la arquitectura recomendada al utilizar los servicios de contenido de la aplicación móvil, idealmente React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 AEM Los servicios de contenido se basan en los modelos Sling, y los desarrolladores de deben proporcionar un pojo de modelo Sling para cada componente exportado.
 
 AEM Para obtener información sobre cómo consumir servicios de contenido desde una aplicación de React, consulte [AEM Introducción a los servicios de contenido de](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) tutorial.
 
-Además, si los desarrolladores desean exportar un árbol de componentes, también pueden implementar el `ComponentExporter` y `ContainerExporter` así como utilizar la variable `ModelFactory` para iterar en los componentes secundarios y devolver la representación del modelo. Consulte los siguientes recursos:
+Además, si los desarrolladores desean exportar un árbol de componentes, también pueden implementar el `ComponentExporter` y `ContainerExporter` y utilice la variable `ModelFactory` para iterar en los componentes secundarios y devolver la representación del modelo. Consulte los siguientes recursos:
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
@@ -78,7 +78,7 @@ Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario t
 
 #### AEM ¿Existe un buen recurso que destaque las características clave para actualizar a la versión 6.4 de la versión de la aplicación de la versión de? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-Consulte la [AEM Explicación de los motivos para actualizar el](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) en se describe un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la versión más reciente de Adobe Experience Manager.
+Consulte [AEM Explicación de los motivos para actualizar el](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) en se describe un desglose de alto nivel de las funciones clave para los clientes que se plantean actualizar a la versión más reciente de Adobe Experience Manager.
 
 ## Assets {#assets}
 
@@ -103,7 +103,7 @@ Como solución alternativa, también puede deshabilitar manualmente el component
 
 #### ¿Cómo personalizar Admin Consoles? {#how-to-customize-admin-consoles}
 
-AEM proporciona varios mecanismos para permitirle personalizar las consolas y la funcionalidad de creación de páginas de la instancia de creación. Para aprender a crear una consola personalizada y personalizar una vista predeterminada para una consola, consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md).
+AEM proporciona varios mecanismos para permitirle personalizar las consolas y la funcionalidad de creación de páginas de la instancia de creación. Para obtener información sobre cómo crear una consola personalizada y personalizar una vista predeterminada para una consola, consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md).
 
 #### ¿Cuál es la diferencia entre los componentes basados en CoralUI 2 y CoralUI 3? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 

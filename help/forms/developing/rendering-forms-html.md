@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4143'
 ht-degree: 1%
 
 ---
@@ -89,9 +89,9 @@ Puede diseñar formularios que se muevan entre páginas (paneles) llamando a `xf
 
 Se recomienda no asignar a las variables de script y a los campos de formulario los mismos nombres, como por ejemplo, elemento. Es posible que algunos exploradores web, como Internet Explorer, no inicialicen una variable con el mismo nombre que un campo de formulario, lo que provoca un error de secuencia de comandos. Se recomienda asignar nombres diferentes a los campos de formulario y a las variables de script.
 
-Al procesar formularios de HTML que contienen funcionalidad de navegación de páginas y scripts de formulario (por ejemplo, supongamos que un script recupera datos de campo de una base de datos cada vez que se procesa el formulario), asegúrese de que el script de formulario se encuentra en el evento form:calculate en lugar de form:readyevent.
+Al procesar formularios de HTML que contienen funcionalidad de navegación de páginas y scripts de formulario (por ejemplo, supongamos que un script recupera datos de campo de una base de datos cada vez que se procesa el formulario), asegúrese de que el script de formulario esté en el evento form:calculate en lugar de form:readyevent.
 
-Los scripts de formulario ubicados en el evento form:ready se ejecutan solo una vez durante la representación inicial del formulario y no se ejecutan para las recuperaciones de páginas posteriores. Por el contrario, el evento form: calculate se ejecuta para cada navegación de página en la que se procesa el formulario.
+Los scripts de formulario que se encuentran en el evento form:ready se ejecutan solo una vez durante la representación inicial del formulario y no se ejecutan para las recuperaciones de páginas posteriores. Por el contrario, el evento form: calculate se ejecuta para cada navegación de página en la que se procesa el formulario.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Al crear diseños de formulario para procesarlos como HTML, debe restringir los 
 
 Los scripts que se ejecutan en el cliente o en el cliente y en el servidor deben escribirse dentro del subconjunto XFA. Los scripts que se ejecutan en el servidor pueden utilizar el modelo de scripts XFA completo y también utilizar FormCalc. Para obtener información sobre el uso de JavaScript, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
-Al ejecutar secuencias de comandos en el cliente, solo el panel que se está mostrando puede utilizar secuencias de comandos; por ejemplo, no puede crear secuencias de comandos con campos ubicados en el panel A cuando se muestra el panel B. Al ejecutar scripts en el servidor, se puede acceder a todos los paneles.
+Al ejecutar scripts en el cliente, solo el panel actual que se muestra puede utilizar scripts; por ejemplo, no puede crear scripts con campos que están en el panel A cuando se muestra el panel B. Al ejecutar scripts en el servidor, se puede acceder a todos los paneles.
 
 También debe tener cuidado al utilizar expresiones del Modelo de objetos de script (SOM) en scripts que se ejecutan en el cliente. Los scripts que se ejecutan en el cliente solo admiten un subconjunto simplificado de expresiones SOM.
 
@@ -158,7 +158,7 @@ Se recomienda colocar la lógica de formulario en los eventos calculate, que se 
 
 A medida que se desplaza entre páginas de HTML (paneles), solo se mantiene el estado de los datos. La configuración, como el color de fondo o la configuración de campo obligatoria, no se mantiene (si es diferente a la configuración inicial). Para mantener el estado de la presentación, debe crear campos (normalmente ocultos) que representen el estado de presentación de los campos. Si añade una secuencia de comandos al `Calculate` Si cambia la presentación en función de valores de campos ocultos, puede conservar el estado de la presentación al moverse de un lado a otro entre las páginas del HTML (paneles).
 
-La siguiente secuencia de comandos mantiene el `fillColor` de un campo basado en el valor de `hiddenField`. Supongamos que esta secuencia de comandos se encuentra en el campo `Calculate` evento.
+La siguiente secuencia de comandos mantiene el `fillColor` de un campo basado en el valor de `hiddenField`. Supongamos que este script se encuentra en el campo de `Calculate` evento.
 
 ```java
      If (hiddenField.rawValue == 1)

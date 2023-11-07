@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3681'
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -95,7 +95,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    Para el ejemplo de la solicitud de la hipoteca, configure el paso Asignar tarea para utilizar un formulario adaptable de solo lectura y mostrar el documento PDF una vez que se haya completado la tarea. Además, seleccione el grupo de usuarios autorizado para aprobar la solicitud del préstamo. En la pestaña **Acciones**, deshabilite la opción **Enviar**. Cree una variable **actionTaken** del tipo de datos String y especifíquela como **Variable de ruta**. Por ejemplo, actionTaken. Además, agregue las rutas Aprobar y Rechazar. Las rutas se muestran como acciones independientes (botones) en la bandeja de entrada AEM. El flujo de trabajo selecciona una rama en función de la acción (botón) que pulse un usuario.
 
-   Puede importar el paquete de ejemplo, que está disponible para descargar al principio de la sección, para el conjunto completo de valores de todos los campos del paso Asignar tarea configurado, para el ejemplo de solicitud de hipoteca.
+   Puede importar el paquete de ejemplo, disponible para descargar al principio de la sección, para el conjunto completo de valores de todos los campos del paso Asignar tarea configurado, por ejemplo, la solicitud hipotecaria.
 
 1. Arrastre y suelte el componente OR Split desde el explorador de pasos al modelo del flujo de trabajo. OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 
@@ -121,7 +121,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    Para el ejemplo de la hipoteca, agregue un documento de registro generado, dos pasos de la asignación de tareas y un paso del documento de firma a la rama 1 del modelo, como se muestra en la siguiente imagen. Un paso de la asignación de tareas es mostrar y enviar **documentos de préstamo a firmar al solicitante** y otro componente de asignación de tareas es **mostrar documentos firmados**. Además, agregue un componente de la asignación de tareas a la rama 2. Se activará cuando un usuario pulse Rechazar en la bandeja de entrada AEM.
 
-   Para obtener el conjunto completo de valores de todos los campos de los pasos de la asignación de tareas, el paso Documento de registro y el de documento de firma configurado para, por ejemplo, la solicitud de hipoteca, importe el paquete de ejemplo, disponible para descargar al principio de esta sección.
+   Para obtener el conjunto completo de valores de todos los campos de los pasos de la asignación de tareas, el paso Documento de registro y el de documento de firma configurado, por ejemplo, la solicitud de hipoteca, importe el paquete de ejemplo, disponible para descargar al principio de esta sección.
 
    El modelo del flujo de trabajo está listo. Puede iniciar el flujo de trabajo mediante varios métodos. Para obtener más información, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](#launch).
 
@@ -277,9 +277,9 @@ Al minimizar el número de instancias del flujo de trabajo, aumenta el rendimien
 
 ## Parametrizar datos confidenciales a variables de flujo de trabajo y almacenarlos en repositorios de datos externos {#externalize-wf-variables}
 
-Cualquier dato enviado desde formularios adaptables a flujos de trabajo [!DNL Experience Manager]pueden tener PII (información de identificación personal) o SPD (datos personales confidenciales) de los usuarios finales de su empresa. Sin embargo, no es obligatorio almacenar los datos almacenados en el [!DNL Adobe Experience Manager] [Repositorio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=es). Puede externalizar el almacenamiento de datos del usuario final en el almacenamiento de datos administrado (por ejemplo, el almacenamiento del blob de Azure) al parametrizar la información en [variables de flujo de trabajo](/help/forms/using/variable-in-aem-workflows.md).
+Cualquier dato enviado desde formularios adaptables a flujos de trabajo [!DNL Experience Manager]pueden tener PII (información de identificación personal) o SPD (datos personales confidenciales) de los usuarios finales de su empresa. Sin embargo, no es obligatorio almacenar los datos almacenados en el [!DNL Adobe Experience Manager] [Repositorio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=es). Puede externalizar el almacenamiento de datos del usuario final en el almacenamiento de datos administrado (por ejemplo, Azure Blob Storage) al parametrizar la información en [variables de flujo de trabajo](/help/forms/using/variable-in-aem-workflows.md).
 
-En un [!DNL Adobe Experience Manager] flujo de trabajo de Forms, los datos se procesan y pasan a través de una serie de pasos de flujo de trabajo mediante variables de flujo de trabajo. Estas variables se denominan propiedades o pares de clave-valor que se almacenan en el nodo de metadatos de instancias de flujo de trabajo; por ejemplo `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Estas variables de flujo de trabajo se pueden externalizar en un repositorio independiente que no sea JCR y luego procesar mediante [!DNL Adobe Experience Manager] flujos de trabajo. [!DNL Adobe Experience Manager] proporciona API `[!UICONTROL UserMetaDataPersistenceProvider]` para almacenar las variables de flujo de trabajo en el almacenamiento externo administrado. Para obtener más información sobre el uso de variables de flujo de trabajo para repositorios de datos de propiedad del cliente en [!DNL Adobe Experience Manager], consulte [Administrar variables de flujo de trabajo para repositorios de datos externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+En un [!DNL Adobe Experience Manager] flujo de trabajo de Forms, los datos se procesan y pasan a través de una serie de pasos de flujo de trabajo mediante variables de flujo de trabajo. Estas variables se denominan propiedades o pares de clave-valor que se almacenan en el nodo de metadatos de instancias de flujo de trabajo; por ejemplo, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Estas variables de flujo de trabajo se pueden externalizar en un repositorio independiente que no sea JCR y luego procesar mediante [!DNL Adobe Experience Manager] flujos de trabajo. [!DNL Adobe Experience Manager] proporciona API `[!UICONTROL UserMetaDataPersistenceProvider]` para almacenar las variables de flujo de trabajo en el almacenamiento externo administrado. Para obtener más información sobre el uso de variables de flujo de trabajo para repositorios de datos de propiedad del cliente en [!DNL Adobe Experience Manager], consulte [Administrar variables de flujo de trabajo para repositorios de datos externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] proporciona el siguiente [ejemplo](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables desde el mapa de metadatos del flujo de trabajo al almacenamiento del blob de Azure, con la API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). En líneas similares, puede utilizar el ejemplo como guía para utilizar la API [UserMetaDataPersistenceProvider] para externalizar las variables de flujo de trabajo en cualquier otro almacenamiento de datos externo a [!DNL Adobe Experience Manager] y administrar lo mismo.
 
 >[!NOTE]
@@ -313,11 +313,11 @@ Los siguientes son los propósitos (y ejemplos) de estas propiedades:
 
 * **accountName** es la cuenta de Azure en la que se deben almacenar los datos.
 
-* **endpointSuffix**, por ejemplo `core.windows.net`.
+* **endpointSuffix**, por ejemplo, `core.windows.net`.
 
 * **containerName** es el contenedor de la cuenta donde se deben almacenar los datos. El ejemplo supone que el contenedor existe.
 
-* **protocol**, por ejemplo `https` o `http`.
+* **protocolo**, por ejemplo, `https` o `http`.
 
 1. Configure el modelo de flujo de trabajo en [!DNL Adobe Experience Manager]. Para saber cómo configurar el modelo de flujo de trabajo para un almacenamiento externo, consulte [Configurar el modelo de flujo de trabajo](#configure-aem-wf-model).
 
@@ -337,7 +337,7 @@ Para configurar un modelo de flujo de trabajo de AEM para un almacenamiento de d
 
 ### Directrices para los flujos de trabajo de AEM de un almacenamiento de datos externo {#guidelines-workflows-external-data-storage}
 
-Estas son las directrices a seguir a la hora de utilizar [!DNL Adobe Experience Manager]flujos de trabajo y almacenar datos en almacenamientos de datos externos (por ejemplo, el servidor de almacenamiento de Microsoft Azure):
+Estas son las directrices a seguir a la hora de utilizar [!DNL Adobe Experience Manager] flujos de trabajo y almacenamiento de datos en almacenamientos de datos externos (por ejemplo, el servidor de almacenamiento de Microsoft Azure):
 
 * Utilice variables para almacenar los datos al definir los archivos de datos de entrada y salida y los archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]**. Las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** no se mostrarán automáticamente una vez que [ [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
 

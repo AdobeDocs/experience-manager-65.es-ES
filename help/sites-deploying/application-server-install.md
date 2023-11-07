@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Si se implementa, lo siguiente ocurre de forma predeterminada:
 * el modo de ejecución es `author`
 * la instancia (Repositorio, entorno Felix OSGI, paquetes, etc.) está instalada en `${user.dir}/crx-quickstart`donde `${user.dir}` es el directorio de trabajo actual, se llama a esta ruta de acceso a crx-quickstart `sling.home`
 
-* la raíz de contexto es el nombre del archivo war, por ejemplo: `aem-6`
+* la raíz de contexto es el nombre del archivo war, por ejemplo,  `aem-6`
 
 #### Configuración {#configuration}
 

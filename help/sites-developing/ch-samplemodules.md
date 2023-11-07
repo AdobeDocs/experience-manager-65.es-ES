@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ En el siguiente ejemplo se configura un módulo de interfaz de usuario contexthu
 
 ## Tipo de módulo de IU de contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
-El módulo de interfaz de usuario contexthub.browserinfo muestra información sobre el explorador web y el sistema operativo del cliente. La información se obtiene del almacén surferinfo, en función de la variable [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) candidato de tienda.
+El módulo de IU contexthub.browserinfo muestra información sobre el explorador web y el sistema operativo del cliente. La información se obtiene del almacén surferinfo, en función de la variable [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) candidato de tienda.
 
 ![chlimage_1-77](assets/chlimage_1-77a.png)
 
@@ -183,7 +183,7 @@ El origen del módulo de interfaz de usuario se encuentra en /libs/granite/conte
 
 ### Configuración {#configuration-5}
 
-Las instancias del módulo de IU contexthub.screen-orientation no requieren un valor para la Configuración detallada. El siguiente texto JSON representa la configuración predeterminada del módulo. Tenga en cuenta que la variable `clickable` la propiedad es `false` de forma predeterminada. Si anula la configuración predeterminada para establecer `clickable` hasta `true`, al hacer clic en el módulo, se muestra una ventana emergente en la que puede seleccionar la orientación.
+Las instancias del módulo de IU contexthub.screen-orientation no requieren un valor para la Configuración detallada. El siguiente texto JSON representa la configuración predeterminada del módulo. El `clickable` la propiedad es `false` de forma predeterminada. Si anula la configuración predeterminada para establecer `clickable` hasta `true`, al hacer clic en el módulo, se muestra una ventana emergente en la que puede seleccionar la orientación.
 
 ```xml
 {

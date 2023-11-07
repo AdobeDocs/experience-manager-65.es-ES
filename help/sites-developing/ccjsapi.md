@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3157'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ Por ejemplo, un almacén de sesiones se basa en un objeto JSON y se recupera med
 * El almacén se rellena previamente con valores predeterminados (propiedades init), pero la solicitud falla (tiempo de espera). Solo hay una inicialización con valores predeterminados.
 * El almacén se rellena previamente.
 
-Cuando el retraso se establece en `true` En algunos milisegundos, el método espera antes de llamar al método de devolución de llamada. Si se activa otro evento de inicialización antes de que transcurra el retraso, esperará hasta que se supere el tiempo de retraso sin que se produzca ningún evento de inicialización. Esto permite esperar a que se active un segundo evento de inicialización y llama a la función de llamada de retorno en el caso más óptimo.
+Cuando el retraso se establece en `true` Durante varios milisegundos, el método espera antes de llamar al método de devolución de llamada. Si se activa otro evento de inicialización antes de que transcurra el retraso, esperará hasta que se supere el tiempo de retraso sin que se produzca ningún evento de inicialización. Esto permite esperar a que se active un segundo evento de inicialización y llama a la función de llamada de retorno en el caso más óptimo.
 
 **Parámetros**
 

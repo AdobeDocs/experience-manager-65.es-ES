@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1250'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ El componente de inicio de sesión se puede utilizar para recopilar la informaci
 
 Esto proporciona al visitante los campos estándar de **Nombre de usuario** y **Contraseña**, con un **Iniciar sesión** para activar el proceso de inicio de sesión cuando se introducen las credenciales.
 
-Por ejemplo, los usuarios pueden iniciar sesión o crear una nueva cuenta utilizando **Iniciar sesión** opción de la barra de herramientas Geometrixx, que utiliza la página:
+Por ejemplo, los usuarios pueden iniciar sesión o crear una cuenta utilizando **Iniciar sesión** opción de la barra de herramientas Geometrixx, que utiliza la página:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -145,7 +145,7 @@ Puede añadir campos a la definición del perfil. Por ejemplo, para agregar un c
 
 ## Estados de perfil {#profile-states}
 
-Existen varios casos de uso que requieren saber si un usuario (o más bien su perfil) está en un *estado específico* o no.
+Existen varios casos de uso que requieren saber si un usuario (o más bien su perfil) está en una *estado específico* o no.
 
 Esto implica definir una propiedad adecuada en el perfil de usuario de una manera que:
 
@@ -163,7 +163,7 @@ Esto se realiza con:
 
   Para administrar acciones relacionadas con los estados.
 
-Se pueden definir varios estados; por ejemplo, en la Geometrixx se incluyen:
+Se pueden definir varios estados; por ejemplo, en Geometrixx, estos incluyen:
 
 * suscripción (o cancelación de la suscripción) a notificaciones en boletines informativos o hilos de comentarios
 * agregar y quitar una conexión a un amigo

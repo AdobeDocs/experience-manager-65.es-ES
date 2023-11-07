@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Finalmente, [AEM Administradores de](#administrators) aprenda a:
 
 **Requisito previo:** AEM Los administradores de deben configurar la configuración de nube de Adobe Mobile Services, [como se discute a continuación](#amscloudserviceconfig).
 
-Los desarrolladores son responsables de [adición de analytics a una aplicación de AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md) según sea necesario, para realizar un seguimiento del contenido de su aplicación móvil, informar sobre él y comprender cómo interactúan los usuarios con él, así como para medir métricas clave del ciclo vital como inicios, tiempo en la aplicación y tasa de bloqueo.
+Los desarrolladores son responsables de [adición de analytics a una aplicación de AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md) según sea necesario para realizar el seguimiento, generar informes y comprender cómo los usuarios interactúan con el contenido de su aplicación móvil, así como para medir métricas clave del ciclo vital como inicios, tiempo en la aplicación y tasa de bloqueo.
 
 ## Para administradores: Configuración del Cloud Service de Adobe Mobile Services {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
@@ -68,7 +68,7 @@ Al hacer clic en el icono de engranaje en el mosaico Analizar métricas, se abre
 
 Para crear un servicio en la nube de Adobe Mobile Service, hay que seguir dos pasos: la conexión al servicio y seleccionar qué grupo de informes asignar a la configuración.
 
-Para empezar, haga clic en el botón &quot;+&quot; en el mosaico Administrar Cloud Services del panel.
+Para empezar, haga clic en el botón &quot;+&quot; en el mosaico Administrar Cloud Service del panel.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
@@ -76,7 +76,7 @@ Después de hacer clic en &#39;**+**&#39;, el botón **Añadir Cloud Service** s
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Seleccione o cree una nueva configuración de Mobile Services rellenando los campos obligatorios como se muestra a continuación. AEM El administrador de la aplicación requiere esta información para crear correctamente la conexión con Adobe Mobile Services.
+Seleccione o cree una configuración de Mobile Services rellenando los campos obligatorios como se muestra a continuación. AEM El administrador de la aplicación requiere esta información para crear correctamente la conexión con Adobe Mobile Services.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 

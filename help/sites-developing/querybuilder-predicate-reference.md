@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2347'
 ht-degree: 3%
@@ -68,7 +68,7 @@ Admite extracción de facetas. Proporciona bloques para cada `true` o `false` , 
 #### Propiedades {#properties}
 
 * **boolproperty**
-Ruta relativa a la propiedad, por ejemplo `myFeatureEnabled` o `jcr:content/myFeatureEnabled`.
+Ruta relativa a la propiedad, por ejemplo, `myFeatureEnabled` o `jcr:content/myFeatureEnabled`.
 
 * **valor**
 Valor para comprobar la propiedad de,&quot; `true`&quot; o &quot; `false`&quot;.
@@ -120,11 +120,11 @@ No admite el filtrado.
 
 * **propiedad**
 
-  Ruta relativa a un `DATE` propiedad, por ejemplo `jcr:lastModified`.
+  Ruta relativa a un `DATE` , por ejemplo, `jcr:lastModified`.
 
 * **lowerBound**
 
-  La fecha inferior enlazada a la propiedad check de, por ejemplo `2014-10-01`.
+  La fecha inferior enlazada a la propiedad check para, por ejemplo, `2014-10-01`.
 
 * **lowerOperation**
 
@@ -132,7 +132,7 @@ No admite el filtrado.
 
 * **upperBound**
 
-  Límite superior para comprobar la propiedad, por ejemplo `2014-10-01T12:15:00`.
+  Límite superior de la propiedad check para, por ejemplo, `2014-10-01T12:15:00`.
 
 * **upperOperation**
 
@@ -247,7 +247,7 @@ Admite extracción de facetas. Proporciona bloques para cada código de lenguaje
 
 * **language**
 
-  Código de idioma ISO, por ejemplo &quot; `de`&quot;
+  Código de idioma ISO, por ejemplo,&quot;`de`&quot;
 
 ### recurso principal {#mainasset}
 
@@ -313,7 +313,7 @@ Permite ordenar los resultados. Si se requiere ordenar por varias propiedades, e
 
 * **orderby**
 
-  Nombre de propiedad JCR indicado por una @ inicial, por ejemplo `@jcr:lastModified` o `@jcr:content/jcr:title`u otro predicado de la consulta, por ejemplo `2_property`, según cuál ordenar.
+  Nombre de propiedad JCR indicado por una @ inicial, por ejemplo, `@jcr:lastModified` o `@jcr:content/jcr:title`u otro predicado de la consulta, por ejemplo, `2_property`, según cuál ordenar.
 
 * **ordenar**
 
@@ -357,7 +357,7 @@ Admite extracción de facetas. Proporciona bloques para cada valor de propiedad 
 
 * **propiedad**
 
-  Ruta relativa a la propiedad, por ejemplo `jcr:title`.
+  Ruta relativa a la propiedad, por ejemplo, `jcr:title`.
 
 * **valor**
 
@@ -521,7 +521,7 @@ Admite extracción de facetas. Proporciona bloques para cada etiqueta única, ut
 
 * **etiqueta**
 
-  Ruta de título de etiqueta que buscar, por ejemplo, &quot;Propiedades del recurso : Orientación / Horizontal&quot;.
+  Etiquete la ruta del título que desee buscar, por ejemplo, &quot;Propiedades del recurso : Orientación / Horizontal&quot;.
 
 * **N_value**
 
@@ -541,7 +541,7 @@ Admite extracción de facetas. Proporciona bloques para cada etiqueta única, ut
 
 * **tagid**
 
-  ID de etiqueta para que pueda buscar, por ejemplo, &quot; `properties:orientation/landscape`&quot;.
+  ID de etiqueta para poder buscar, por ejemplo, &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 
@@ -585,4 +585,4 @@ Admite extracción de facetas. Proporciona bloques para cada tipo único en los 
 
 * **tipo**
 
-  Tipo de nodo o nombre de mezcla que buscar, por ejemplo `cq:Page`.
+  Tipo de nodo o nombre de mezcla que buscar, por ejemplo, `cq:Page`.

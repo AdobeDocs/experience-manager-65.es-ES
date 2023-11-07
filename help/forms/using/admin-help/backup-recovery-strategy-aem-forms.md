@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ En un clúster, si utiliza el almacenamiento en caché TCP en lugar de UDP, debe
 
 ### AEM Cambio de las rutas del sistema de archivos del nodo de formularios de forma {#changing-the-aem-forms-node-file-system-paths}
 
-AEM Si cambia las rutas del sistema de archivos de un nodo independiente, debe actualizar las referencias adecuadas en las preferencias, otras configuraciones del sistema, aplicaciones personalizadas y aplicaciones de formularios implementadas en el sistema de archivos de forma independiente. Por otro lado, para un clúster, todos los nodos deben utilizar la misma configuración de ruta del sistema de archivos. Debe establecer el directorio raíz de Global Document Storage (GDS) y asegurarse de que apunta a una copia del GDS recuperado que está sincronizado con la base de datos recuperada. La configuración de la ruta de GDS es importante porque el GDS puede contener datos que pretenden persistir tras los reinicios del servidor de aplicaciones.
+AEM Si cambia las rutas del sistema de archivos de un nodo independiente, debe actualizar las referencias adecuadas en las preferencias, otras configuraciones del sistema, aplicaciones personalizadas y aplicaciones de formularios implementadas en el sistema de archivos de forma independiente. Por otro lado, para un clúster, todos los nodos deben utilizar la misma configuración de ruta del sistema de archivos. Establezca el directorio raíz de Global Document Storage (GDS) y asegúrese de que apunta a una copia del GDS recuperado que está sincronizado con la base de datos recuperada. La configuración de la ruta de GDS es importante porque el GDS puede contener datos que pretenden persistir tras los reinicios del servidor de aplicaciones.
 
 En un entorno agrupado, la configuración de la ruta del sistema de archivos del repositorio debe ser la misma para todos los nodos del clúster antes de la copia de seguridad y después de la recuperación.
 

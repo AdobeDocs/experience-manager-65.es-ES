@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Puede introducir atributos específicos para realizar una búsqueda detallada. U
    * En la lista Filtro, seleccione un operador.
    * En el cuadro Valor, escriba un valor apropiado para el atributo seleccionado.
 
-1. Para agregar otra fila, seleccione Más filtros. Aparece otro conjunto de listas de atributos, filtros y valores, así como una lista de condiciones.
+1. Para agregar otra fila, seleccione Más filtros. Aparecerá otro conjunto de listas de atributos, filtros y valores, así como una lista de condiciones.
 1. En Condición, seleccione AND u OR. Repita los pasos del 1 al 3 según sea necesario para acotar aún más la búsqueda.
 1. Para agregar o quitar filas, haga clic en Más filtros o Menos filtros. Puede tener de una a cuatro filas.
 1. Haga clic en Buscar. Aparecerá la página Instancia de Proceso, que enumera las instancias encontradas.

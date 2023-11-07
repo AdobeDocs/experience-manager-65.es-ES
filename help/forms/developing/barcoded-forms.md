@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -60,9 +60,9 @@ Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (obligatorio si AEM Forms está implementado en JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en JBoss)
-* xercesImpl.jar (ubicado en &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\third-party)
+* xercesImpl.jar (en &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\third-party)
 
-Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBOSS, deberá reemplazar adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que está implementado AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBOSS, debe reemplazar adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que está implementado AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Crear un objeto de API de cliente de formularios con códigos de barras**
 
@@ -160,7 +160,7 @@ Descodificar datos de formulario mediante la API de formularios con códigos de 
 
 1. Procesamiento de los datos descodificados
 
-   * Itere a través de `java.util.List` objeto para obtener cada `org.w3c.dom.Document` que se encuentra en la lista.
+   * Itere a través de `java.util.List` objeto para obtener cada `org.w3c.dom.Document` objeto que está en la lista.
    * Para cada elemento de la lista, convierta el `org.w3c.dom.Document` objeto a `com.adobe.idp.Document` objeto. (La lógica de la aplicación que convierte un `org.w3c.dom.Document` objeto en un `com.adobe.idp.Document` se muestra en los datos del formulario con códigos de barras de Descodificación (con el ejemplo de la API de Java).
    * Guarde los datos XML como un archivo XML invocando el `com.adobe.idp.Document` del objeto `copyToFile`y pasando un objeto File que representa el archivo XML.
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9901'
+source-wordcount: '9888'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ En la tabla siguiente se enumeran las definiciones de WSDL del servicio (suponie
 
 **Definiciones WSDL de procesos de AEM Forms**
 
-Debe especificar el nombre de la aplicación y el nombre del proceso dentro de la definición de WSDL para acceder a un WSDL que pertenece a un proceso creado en Workbench. Supongamos que el nombre de la aplicación es `MyApplication` y el nombre del proceso es `EncryptDocument`. En este caso, especifique la siguiente definición de WSDL:
+Especifique el nombre de la aplicación y el nombre del proceso dentro de la definición de WSDL para acceder a un WSDL que pertenece a un proceso creado en Workbench. Supongamos que el nombre de la aplicación es `MyApplication` y el nombre del proceso es `EncryptDocument`. En este caso, especifique la siguiente definición de WSDL:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
@@ -208,7 +208,7 @@ El `MTOM` y `swaRef` Los campos de solo son compatibles con AEM Forms. Solo pued
 
 **Suministro de objetos BLOB en solicitudes de servicio**
 
-Si una operación del servicio AEM Forms requiere un `BLOB` escriba como valor de entrada, cree una instancia de `BLOB` escriba en la lógica de la aplicación. (Muchos de los inicios rápidos del servicio web se encuentran en *AEM Programar con formularios de* mostrar cómo trabajar con un tipo de datos BLOB).
+Si una operación del servicio AEM Forms requiere un `BLOB` escriba como valor de entrada, cree una instancia de `BLOB` escriba en la lógica de la aplicación. (Muchos de los servicios web se inician rápidamente en *AEM Programar con formularios de* mostrar cómo trabajar con un tipo de datos BLOB).
 
 Asignar valores a campos que pertenecen a `BLOB` como se indica a continuación:
 
@@ -357,7 +357,7 @@ Puede utilizar JAX-WS para convertir un WSDL de servicio de Forms en clases de p
 1. Instale JDK 1.6 o posterior.
 
    * Añada el directorio JDK bin a la ruta de clase.
-   * Añada el directorio bin JRE a la ruta de clase. Esta bandeja se encuentra en `[JDK_INSTALL_LOCATION]/jre` directorio.
+   * Añada el directorio bin JRE a la ruta de clase. Esta bandeja está en la `[JDK_INSTALL_LOCATION]/jre` directorio.
    * Configure las variables `JAVA_HOME` al directorio en el que instaló el JDK.
 
    JDK 1.6 incluye el programa wsimport utilizado en el archivo build.xml. JDK 1.5 no incluye ese programa.
@@ -431,7 +431,7 @@ Puede utilizar JAX-WS para convertir un WSDL de servicio de Forms en clases de p
 
 1. Empaquete los archivos JAVA en un archivo JAR. Si está trabajando en Eclipse, siga estos pasos:
 
-   * Cree un nuevo proyecto Java que se utilice para empaquetar los archivos JAVA proxy en un archivo JAR.
+   * Cree un proyecto Java que se utilice para empaquetar los archivos JAVA proxy en un archivo JAR.
    * Cree una carpeta de origen en el proyecto.
    * Crear un `com.adobe.idp.services` en la carpeta Origen.
    * Seleccione el `com.adobe.idp.services` e importe los archivos JAVA de la carpeta adobe/idp/services en el paquete.
@@ -440,11 +440,11 @@ Puede utilizar JAX-WS para convertir un WSDL de servicio de Forms en clases de p
    * Establezca el nivel de cumplimiento del compilador de Java en 5.0 o superior.
    * Genere el proyecto.
    * Exporte el proyecto como archivo JAR.
-   * Importe este archivo JAR en la ruta de clase de un proyecto cliente. Además, importe todos los archivos JAR ubicados en &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
+   * Importe este archivo JAR en la ruta de clase de un proyecto cliente. Además, importe todos los archivos JAR en &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty.
 
    >[!NOTE]
    >
-   >Todos los inicios rápidos del servicio web de Java (excepto el servicio de Forms AEM) ubicados en Programación con formularios de crean archivos proxy de Java mediante JAX-WS. Además, todos los inicios rápidos del servicio web de Java, utilizan SwaRef. (Consulte [Invocar AEM Forms mediante SwaRef](#invoking-aem-forms-using-swaref).)
+   >Todos los inicios rápidos del servicio web de Java (excepto el servicio de Forms AEM) en Programación con formularios crean archivos proxy de Java mediante JAX-WS. Además, todos los inicios rápidos del servicio web de Java, utilizan SwaRef. (Consulte [Invocar AEM Forms mediante SwaRef](#invoking-aem-forms-using-swaref).)
 
 **Consulte también**
 
@@ -669,7 +669,7 @@ Puede invocar un servicio de AEM Forms mediante las clases de proxy Java y Base6
    >Reemplazar `hiro-xp` *con la dirección IP del servidor de aplicaciones J2EE que aloja AEM Forms.*
 
 1. Empaquete las clases de proxy Java creadas con JAX-WS en un archivo JAR.
-1. Incluya el archivo JAR del proxy Java y los archivos JAR ubicados en la siguiente ruta:
+1. Incluya el archivo JAR del proxy Java y los archivos JAR en la siguiente ruta:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -864,7 +864,7 @@ Para invocar el `MyApplication/EncryptDocument` Para procesar mediante archivos 
    >Reemplazar `hiro-xp` *con la dirección IP del servidor de aplicaciones J2EE que aloja AEM Forms.*
 
 1. Empaquete las clases de proxy Java creadas con JAX-WS en un archivo JAR.
-1. Incluya el archivo JAR del proxy Java y los archivos JAR ubicados en la siguiente ruta:
+1. Incluya el archivo JAR del proxy Java y los archivos JAR en la siguiente ruta:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -966,7 +966,7 @@ Puede invocar el `MyApplication/EncryptDocument` (que se creó en Workbench) med
 1. Invoque el `MyApplication/EncryptDocument` proceso invocando el `MyApplication_EncryptDocumentService` del objeto `invoke` y pasando el `BLOB` objeto. Este proceso devuelve un documento de PDF cifrado dentro de un `BLOB` objeto.
 1. Crear un `System.UriBuilder` mediante su constructor y pasando el valor del objeto devuelto `BLOB` del objeto `remoteURL` miembro de datos.
 1. Conversión de `System.UriBuilder` objeto a `System.IO.Stream` objeto. (El Inicio rápido de C# que sigue a esta lista ilustra cómo realizar esta tarea.)
-1. Cree una matriz de bytes y rellénela con los datos ubicados en la variable `System.IO.Stream` objeto.
+1. Cree una matriz de bytes y rellénela con los datos de la `System.IO.Stream` objeto.
 1. Crear un `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream` objeto.
 1. Escriba el contenido de la matriz de bytes en un archivo PDF invocando el `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
@@ -987,7 +987,7 @@ Puede invocar un servicio de AEM Forms utilizando clases de proxy Java y datos B
    >Reemplazar `hiro-xp` *con la dirección IP del servidor de aplicaciones J2EE que aloja AEM Forms.*
 
 1. Empaquete las clases de proxy Java creadas con JAX-WS en un archivo JAR.
-1. Incluya el archivo JAR del proxy Java y los archivos JAR ubicados en la siguiente ruta:
+1. Incluya el archivo JAR del proxy Java y los archivos JAR en la siguiente ruta:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -1106,7 +1106,7 @@ Puede invocar un servicio de Forms mediante DIME. Considere la `MyApplication/En
 1. Invoque el `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` y pase el `Microsoft.Web.Services2.Dime.DimeAttachment` objeto.
 1. Invoque el `MyApplication/EncryptDocument` proceso invocando el `EncryptDocumentServiceWse` del objeto `invoke` y pasando el `BLOB` objeto que contiene el archivo adjunto DIME. Este proceso devuelve un documento de PDF cifrado dentro de un `BLOB` objeto.
 1. Obtenga el valor del identificador de datos adjuntos obteniendo el valor del devuelto `BLOB` del objeto `attachmentID` miembro de datos.
-1. Itere a través de los archivos adjuntos ubicados en `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` y utilice el valor del identificador de datos adjuntos para obtener el documento de PDF cifrado.
+1. Iterar por los archivos adjuntos en `EncryptDocumentServiceWse.ResponseSoapContext.Attachments` y utilice el valor del identificador de datos adjuntos para obtener el documento de PDF cifrado.
 1. Obtenga una `System.IO.Stream` al obtener el valor de la variable `Attachment` del objeto `Stream` miembro de datos.
 1. Cree una matriz de bytes y pase esa matriz de bytes al `System.IO.Stream` del objeto `Read` método. Este método rellena la matriz de bytes con una secuencia de datos que representa el documento de PDF cifrado.
 1. Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa una ubicación de archivo del PDF. Este objeto representa el documento de PDF cifrado.

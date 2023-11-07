@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2608'
 ht-degree: 92%
 
 ---
@@ -161,7 +161,7 @@ Configurar las siguientes propiedades al crear gráficos para imprimir o para ca
    <td><p>Además de las configuraciones comunes, están disponibles las siguientes configuraciones específicas del gráfico:</p>
     <ul>
      <li><strong>Mostrar leyenda: </strong>muestra una leyenda para el gráfico circular o de anillo cuando está habilitada.</li>
-     <li><strong>Posición de la leyenda: </strong>especifica la posición del pie de ilustración con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior. Se recomienda utilizar la leyenda del lado derecho en el canal Imprimir.</li>
+     <li><strong>Posición de la leyenda: </strong>especifica la posición del pie de ilustración con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior. Utilice la leyenda del lado derecho en el canal Imprimir.</li>
      <li><strong>Radio interior</strong>: disponible para gráficos de anillo para especificar el radio (en píxeles) del círculo interior del gráfico.</li>
      <li><strong>Color de línea</strong>: disponible para gráficos de líneas, líneas y puntos y áreas para especificar el color de la línea del gráfico.</li>
      <li><strong>Color de punto</strong>: disponible para gráficos de puntos y líneas y puntos para especificar el color de los puntos del gráfico.<br /> </li>

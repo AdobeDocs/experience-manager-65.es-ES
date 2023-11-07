@@ -1,19 +1,15 @@
 ---
 title: Administración de usuarios
-seo-title: Managing Users
-description: Utilice la API de administración de usuarios para crear aplicaciones cliente que puedan administrar roles, permisos y principales (que pueden ser usuarios o grupos), así como autenticar usuarios.
-seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
+description: Utilice la API de administración de usuarios para crear aplicaciones cliente que puedan administrar roles, permisos y principales (que pueden ser usuarios o grupos) y autenticar usuarios.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6226'
+source-wordcount: '6218'
 ht-degree: 1%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 1%
 
 **Acerca de la administración de usuarios**
 
-Puede utilizar la API de administración de usuarios para crear aplicaciones cliente que puedan administrar roles, permisos y principales (que pueden ser usuarios o grupos), así como autenticar usuarios. La API de administración de usuarios consta de las siguientes API de AEM Forms:
+Puede utilizar la API de administración de usuarios para crear aplicaciones cliente que puedan administrar roles, permisos y principales (que pueden ser usuarios o grupos) y autenticar usuarios. La API de administración de usuarios consta de las siguientes API de AEM Forms:
 
 * API de servicio de Directory Manager
 * API del servicio Administrador de autenticación
@@ -401,7 +397,7 @@ Para crear un grupo, realice los siguientes pasos:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -476,7 +472,7 @@ Cree un grupo mediante la API de servicio de Directory Manager (Java):
    * Crear un `PrincipalSearchFilter` mediante su constructor.
    * Establezca el valor del identificador de usuario invocando el `PrincipalSearchFilter` del objeto `setUserId` método. Pase un valor de cadena que represente el valor del identificador de usuario.
    * Invoque el `DirectoryManagerServiceClient` del objeto `findPrincipals` y pase el `PrincipalSearchFilter` objeto. Este método devuelve un `java.util.List` instancia, donde cada elemento es una `User` objeto. Itere a través de `java.util.List` para localizar al usuario.
-   * Agregue un usuario al grupo invocando el `DirectoryManagerServiceClient` del objeto `addPrincipalToLocalGroup` método. Pasar el valor devuelto del `User` del objeto `getOid` método. Pasar el valor devuelto del `Group` de los objetos `getOid` método (utilice el `Group` que representa el nuevo grupo).
+   * Agregue un usuario al grupo invocando el `DirectoryManagerServiceClient` del objeto `addPrincipalToLocalGroup` método. Pasar el valor devuelto del `User` del objeto `getOid` método. Pasar el valor devuelto del `Group` de objetos `getOid` método (utilice el `Group` que representa el nuevo grupo).
 
 **Consulte también**
 
@@ -781,7 +777,7 @@ Para poder autenticar a un usuario mediante programación, debe crear un cliente
 
 **Invocar la operación de autenticación**
 
-Una vez creado el cliente de servicios, puede invocar la operación de autenticación. Esta operación necesitará información sobre el usuario, como su nombre y contraseña. Si el usuario no se autentica, se genera una excepción.
+Una vez creado el cliente de servicios, puede invocar la operación de autenticación. Esta operación necesita información sobre el usuario, como su nombre y contraseña. Si el usuario no se autentica, se genera una excepción.
 
 **Recuperación del contexto de autenticación**
 
@@ -853,7 +849,7 @@ Autenticar a un usuario mediante la API del servicio Administrador de autenticac
 
 ## Sincronización de usuarios mediante programación {#programmatically-synchronizing-users}
 
-Puede sincronizar usuarios mediante programación utilizando la API de administración de usuarios. Al sincronizar usuarios, está actualizando AEM Forms con los datos de usuario ubicados en su repositorio de usuarios. Por ejemplo, supongamos que agrega nuevos usuarios al repositorio de usuarios. AEM Después de realizar una operación de sincronización, los nuevos usuarios se convierten en usuarios de formularios de la aplicación de la aplicación de la manera más rápida. Además, los usuarios que ya no estén en su repositorio de usuarios se eliminarán de AEM Forms.
+Puede sincronizar usuarios mediante programación utilizando la API de administración de usuarios. Al sincronizar usuarios, está actualizando AEM Forms con los datos de usuario que se encuentran en su repositorio de usuarios. Por ejemplo, supongamos que agrega nuevos usuarios al repositorio de usuarios. AEM Después de realizar una operación de sincronización, los nuevos usuarios se convierten en usuarios de formularios de la aplicación de la aplicación de la manera más rápida. Además, los usuarios que ya no estén en su repositorio de usuarios se eliminarán de AEM Forms.
 
 El diagrama siguiente muestra la sincronización de AEM Forms con un repositorio de usuario.
 
@@ -912,7 +908,7 @@ Antes de realizar una operación de sincronización mediante la API de administr
 
 **Invocar la operación de sincronización**
 
-Después de especificar uno o varios dominios de empresa, puede realizar la operación de sincronización. El tiempo que tarda en realizar esta operación depende del número de registros de usuario ubicados en el repositorio del usuario.
+Después de especificar uno o varios dominios de empresa, puede realizar la operación de sincronización. El tiempo que se tarda en realizar esta operación depende del número de registros de usuario que hay en el repositorio de usuario.
 
 **Determine si la operación de sincronización ha finalizado**
 

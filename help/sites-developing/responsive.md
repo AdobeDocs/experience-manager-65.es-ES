@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '5375'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Desarrolle aplicaciones de Adobe Experience Manager AEM () que generen páginas 
 * Anchura máxima de 767 píxeles (teléfono, horizontal)
 * Anchura entre 768 píxeles y 979 píxeles (tableta, vertical)
 * Anchura entre 980 píxeles y 1199 píxeles (tableta, horizontal)
-* Anchura de 1200 píxeles o bueno (escritorio)
+* Anchura de 1200 píxeles o superior (escritorio)
 
 Consulte los siguientes temas para obtener información sobre la implementación del comportamiento de diseño interactivo:
 
@@ -51,7 +51,7 @@ Consulte los siguientes temas para obtener información sobre la implementación
 * [Rejillas fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Imágenes adaptables](/help/sites-developing/responsive.md#using-adaptive-images)
 
-A medida que diseñe, utilice **[!UICONTROL Compañero]** para obtener una vista previa de las páginas para varios tamaños de pantalla.
+A medida que diseñe, utilice **[!UICONTROL Sidekick]** para obtener una vista previa de las páginas para varios tamaños de pantalla.
 
 ## Antes de que desarrolle {#before-you-develop}
 
@@ -63,7 +63,7 @@ AEM Antes de desarrollar la aplicación que admite sus páginas web, se deben to
 
 ### Estructura de aplicación {#application-structure}
 
-AEM La estructura típica de la aplicación de la es compatible con todas las implementaciones de diseño adaptables:
+AEM La estructura típica de la aplicación de la comunidad admite todas las implementaciones de diseño interactivo:
 
 * Los componentes de página residen debajo de /apps/*application_name*/components
 * Las plantillas se encuentran debajo de /apps/*application_name*/templates
@@ -173,15 +173,15 @@ El script JSP genera el siguiente código de HTML que hace referencia a las hoja
 
 ## Vista previa para dispositivos específicos {#previewing-for-specific-devices}
 
-Vea vistas previas de las páginas en diferentes tamaños de ventanilla móvil para poder probar el comportamiento del diseño interactivo. Entrada **[!UICONTROL Previsualizar]** modo, **[!UICONTROL Compañero]** incluye un **[!UICONTROL Dispositivos]** que se utiliza para seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
+Vea vistas previas de las páginas en diferentes tamaños de ventanilla móvil para poder probar el comportamiento del diseño interactivo. Entrada **[!UICONTROL Previsualizar]** modo, **[!UICONTROL Sidekick]** incluye un **[!UICONTROL Dispositivos]** que se utiliza para seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-Para activar la vista previa del dispositivo en **[!UICONTROL Compañero]**, debe configurar la página y el **[!UICONTROL MobileEmulatorProvider]** servicio. Otra configuración de página controla la lista de dispositivos que aparece en la **[!UICONTROL Dispositivos]** lista.
+Para activar la vista previa del dispositivo en **[!UICONTROL Sidekick]**, debe configurar la página y el **[!UICONTROL MobileEmulatorProvider]** servicio. Otra configuración de página controla la lista de dispositivos que aparece en la **[!UICONTROL Dispositivos]** lista.
 
 ### Agregar la lista de dispositivos {#adding-the-devices-list}
 
-El **[!UICONTROL Dispositivos]** La lista aparece en **[!UICONTROL Compañero]** cuando la página incluye el script JSP que procesa el **[!UICONTROL Dispositivos]** lista. Para añadir el **[!UICONTROL Dispositivos]** lista para **[!UICONTROL Compañero]**, incluya el `/libs/wcm/mobile/components/simulator/simulator.jsp` secuencia de comandos en `head` de la página.
+El **[!UICONTROL Dispositivos]** La lista aparece en **[!UICONTROL Sidekick]** cuando la página incluye el script JSP que procesa el **[!UICONTROL Dispositivos]** lista. Para añadir el **[!UICONTROL Dispositivos]** lista para **[!UICONTROL Sidekick]**, incluya el `/libs/wcm/mobile/components/simulator/simulator.jsp` secuencia de comandos en `head` de la página.
 
 Incluya el siguiente código en el JSP que define la variable `head` sección:
 
@@ -605,9 +605,9 @@ La ruta de la imagen, las dimensiones y los valores de calidad deben almacenarse
 
 * La ruta de la imagen se almacena como el valor de una propiedad denominada `fileReference`.
 
-Al crear una página, utilice **Compañero** para especificar la imagen y añadir `image` nodo a las propiedades de página:
+Al crear una página, utilice **Sidekick** para especificar la imagen y añadir `image` nodo a las propiedades de página:
 
-1. Entrada **Compañero**, haga clic en **Página** y haga clic en **Propiedades de página**.
+1. Entrada **Sidekick**, haga clic en **Página** y haga clic en **Propiedades de página**.
 1. Haga clic en **Imagen** y especifique la imagen.
 1. Haga clic en **Aceptar**.
 
@@ -929,21 +929,21 @@ El CSS incluye una serie de consultas de medios que utilizan la siguiente estruc
 
 Utilice el siguiente algoritmo como punto de partida para desarrollar las clases de elementos y los estilos CSS para sus páginas.
 
-1. Defina un nombre de clase para el elemento div que contenga todas las filas, por ejemplo `content.`
+1. Defina un nombre de clase para el elemento div que contenga todas las filas, por ejemplo, `content.`
 1. Defina una clase CSS para los elementos div que representan filas, como `row-fluid`.
 1. Defina nombres de clase para los elementos de bloque de contenido. Se requiere una clase para todas las anchuras posibles, en términos de intervalos de columnas. Por ejemplo, utilice la variable `span3` clase para `div` elementos que abarcan tres columnas, utilice `span4` clases para espacios de cuatro columnas. Defina tantas clases como columnas de la cuadrícula.
 
 1. Para cada tamaño de ventanilla móvil que vaya a segmentar, agregue la consulta de medios correspondiente al archivo CSS. Agregue los siguientes elementos en cada consulta de medios:
 
    * Un selector para `content` por ejemplo, `.content{}`.
-   * Selectores para cada clase span, por ejemplo `.span3{ }`.
+   * Selectores para cada clase span, por ejemplo, `.span3{ }`.
    * Un selector para `row-fluid` por ejemplo, `.row-fluid{ }`
-   * Selectores para clases span que están dentro de clases row-flow, por ejemplo `.row-fluid span3 { }`.
+   * Selectores para clases span que están dentro de clases row-flow, por ejemplo, `.row-fluid span3 { }`.
 
 1. Agregue estilos de anchura para cada selector:
 
-   1. Establecer la anchura de `content` selectores al tamaño absoluto de la página, por ejemplo `width:480px`.
-   1. Establezca la anchura de todos los selectores de líquido de filas en 100%.
+   1. Establecer la anchura de `content` selectores para el tamaño absoluto de la página, por ejemplo, `width:480px`.
+   1. Establezca la anchura de todos los selectores de fluido de fila en 100%.
    1. Establezca la anchura de todos los selectores de espacio en la anchura absoluta del bloque de contenido. Una cuadrícula trivial utiliza columnas distribuidas uniformemente de la misma anchura: `(absolute width of page)/(number of columns)`.
    1. Definir la anchura de la `.row-fluid .span` selectores como un porcentaje de la anchura total. Calcule esta anchura utilizando la variable `(absolute span width)/(absolute page width)*100` fórmula.
 

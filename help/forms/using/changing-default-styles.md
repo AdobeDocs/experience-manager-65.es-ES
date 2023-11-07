@@ -11,10 +11,10 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 97%
+source-wordcount: '366'
+ht-degree: 90%
 
 ---
 
@@ -32,7 +32,7 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
 1. **Elija un perfil al que agregar estilos personalizados**
 
-   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija uno existente. Para obtener información sobre cómo crear un perfil, consulte [Crear un perfil nuevo](/help/forms/using/custom-profile.md).
+   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija uno existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un perfil](/help/forms/using/custom-profile.md)
 
 1. **Crear una hoja de estilos CSS para aplicar estilo a los formularios HTML5**
 

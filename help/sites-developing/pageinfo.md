@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 2%
@@ -475,7 +475,8 @@ Configure el servicio Proveedor de información del paquete del flujo de trabajo
 
 >[!NOTE]
 >
->La pestaña Workflow de la barra de tareas utiliza el servlet PageInfo para obtener una lista de paquetes de flujo de trabajo. En la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
+>La pestaña Workflow del Sidekick utiliza el servlet PageInfo para obtener una lista de paquetes de flujo de trabajo. En la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
+>
 
 El ID del servicio es `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para crear un filtro, especifique un valor para una `workflowpackageinfoprovider.filter` propiedad.
 
@@ -516,7 +517,7 @@ Para configurar el servicio en el origen del proyecto:
 
 1. AEM Busque o cree la carpeta de configuración para la aplicación de en el origen del proyecto.
 
-   Por ejemplo, si ha utilizado el arquetipo multimodule del complemento Maven del paquete de contenido para crear el proyecto, la ruta de la carpeta es `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Por ejemplo, si ha utilizado el arquetipo multimodule del complemento Maven del paquete de contenido para crear el proyecto, la ruta de la carpeta es `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. En la carpeta de configuración, cree un archivo de texto llamado com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
 1. Copie el siguiente texto en el archivo:
 

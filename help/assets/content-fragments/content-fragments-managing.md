@@ -4,10 +4,10 @@ description: AEM Aprenda a utilizar la consola Recursos para administrar los fra
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 80%
+source-wordcount: '1714'
+ht-degree: 77%
 
 ---
 
@@ -78,7 +78,7 @@ El método para crear un fragmento de contenido es el siguiente:
 
       * **Nombre**
 
-        El nombre; se utilizará para formar la dirección URL.
+        El nombre; se utiliza para formar la dirección URL.
 
         Obligatorio; se derivará automáticamente del título, pero se puede actualizar.
 
@@ -180,13 +180,13 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
 
 ![modos](assets/cfm-managing-top-toolbar.png)
 
-* Se mostrará un mensaje cuando ya se haga referencia al fragmento en una página de contenido. Puede **Cerrar** el mensaje.
+* Se muestra un mensaje cuando ya se hizo referencia al fragmento en una página de contenido. Puede **Cerrar** el mensaje.
 
 * El panel lateral puede ocultarse o mostrarse utilizando el icono **Alternar panel lateral**.
 
 * Debajo del nombre del fragmento puede ver el nombre del [Modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) que se utiliza para crear el fragmento actual:
 
-   * El nombre también es un vínculo que abrirá el editor de modelos.
+   * El nombre también es un vínculo que abre el editor de modelos.
 
 * Ver el estado del fragmento; por ejemplo, información sobre cuándo se creó, modificó o publicó.
 

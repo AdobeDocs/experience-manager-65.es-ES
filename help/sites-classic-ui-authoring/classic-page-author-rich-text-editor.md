@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1835'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 AEM El Editor de texto enriquecido es un bloque de creación básico para introducir contenido textual en los elementos de texto de los elementos de texto de los elementos de texto de los elementos de texto de la interfaz de usuario. Constituye la base de varios componentes, entre los que se incluyen:
 
 * Texto
-* Texto  Imagen
+* Imagen de texto
 * Tabla
 
 ## Editor de texto enriquecido {#rich-text-editor-1}
@@ -44,7 +44,7 @@ Podrá editar directamente el texto de la página, en lugar de hacerlo desde una
 
 >[!NOTE]
 >
->Si tiene abierto el buscador de contenido, se mostrará una barra de herramientas con las opciones de formato RTE en la parte superior de la pestaña (como se muestra arriba).
+>Si tiene el buscador de contenido abierto, se muestra una barra de herramientas con las opciones de formato RTE en la parte superior de la pestaña (como se muestra arriba).
 >
 >Si el buscador de contenido no está abierto, la barra de herramientas no se mostrará.
 
@@ -52,7 +52,7 @@ Actualmente, el modo de edición local está habilitado para los elementos de p�
 
 >[!NOTE]
 >
->El [!UICONTROL Título] está diseñado para contener un texto corto sin saltos de línea. Al editar un título en el modo de edición local, al introducir un salto de línea se abrirá un nuevo **Texto** Componente debajo del título.
+>El [!UICONTROL Título] está diseñado para contener un texto corto sin saltos de línea. Al editar un título en el modo de edición local, al introducir un salto de línea se abre un nuevo **Texto** Componente debajo del título.
 
 ## Funciones del editor de texto enriquecido {#features-of-the-rich-text-editor}
 
@@ -353,7 +353,7 @@ Seleccione una sola celda para dividirla:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Si se crea una tabla anidada, se creará una nueva tabla independiente dentro de la celda actual.
+Al crear una tabla anidada, se crea una tabla independiente dentro de la celda actual.
 
 >[!NOTE]
 >

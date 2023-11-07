@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7181'
+source-wordcount: '7177'
 ht-degree: 21%
 
 ---
@@ -35,7 +35,7 @@ Puede crear una carpeta vigilada de las dos maneras siguientes:
 
 * Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta vigilada y, a continuación, escriba la ruta de acceso completa en el cuadro Ruta.
 
-En un entorno agrupado, la carpeta que se utilizará como carpeta vigilada debe ser accesible, modificable y compartida en el sistema de archivos o red. En esta situación, cada instancia de servidor de aplicaciones del clúster debe tener acceso a la misma carpeta compartida.
+En un entorno agrupado, la carpeta que se utiliza como carpeta vigilada debe ser accesible, modificable y compartida en el sistema de archivos o red. En esta situación, cada instancia de servidor de aplicaciones del clúster debe tener acceso a la misma carpeta compartida.
 
 En Windows, si el servidor de aplicaciones se está ejecutando como un servicio, debe iniciarse con el acceso adecuado a la carpeta compartida de una de las siguientes maneras:
 
@@ -62,7 +62,7 @@ Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una 
 
 ## Salida de carpeta inspeccionada {#watched-folder-output}
 
-AEM Cuando la entrada es una carpeta y la salida consta de varios archivos, los formularios de datos de formulario de la aplicación crean una carpeta de salida con el mismo nombre que la carpeta de entrada y copian los archivos de salida en esa carpeta. Cuando el resultado consiste en un mapa del documento que contiene un par clave-valor, como el resultado de un proceso de salida, la clave se utilizará como nombre del archivo de salida.
+AEM Cuando la entrada es una carpeta y la salida consta de varios archivos, los formularios de datos de formulario de la aplicación crean una carpeta de salida con el mismo nombre que la carpeta de entrada y copian los archivos de salida en esa carpeta. Cuando el resultado consiste en un mapa del documento que contiene un par clave-valor, como el resultado de un proceso de salida, la clave se utiliza como nombre del archivo de salida.
 
 Los nombres de los archivos de salida resultantes de un proceso de extremo no pueden contener caracteres que no sean letras, números y un punto (.) antes de la extensión de archivo. AEM Los formularios de datos convierten otros caracteres en sus valores hexadecimales.
 
@@ -386,7 +386,7 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
    * Para `java.lang.String`: el administrador tiene dos opciones. En primer lugar, el administrador puede especificar el tipo de asignación como `Literal` e introduzca un valor de asignación como cadena, como `hello.` La carpeta inspeccionada invocará el servicio con la cadena `hello`. En segundo lugar, el administrador puede especificar el tipo de asignación como `Variable` e introduzca un valor de asignación con un patrón como `*.txt`. En este último caso, los archivos con la extensión .txt se leerán como un documento forzado como una cadena para invocar el servicio.
    * Tipo primitivo de Java: el administrador puede especificar el tipo de asignación como `Literal` y proporcione el valor. La carpeta inspeccionada invocará el servicio con el valor especificado.
 
-* La carpeta inspeccionada está diseñada para trabajar con documentos. Los resultados admitidos son `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, así como una lista y un mapa de estos tipos. Cualquier otro tipo producirá un resultado de error en la carpeta de errores.
+* La carpeta inspeccionada está diseñada para trabajar con documentos. Los resultados admitidos son `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`y una lista y un mapa de estos tipos. Cualquier otro tipo producirá un resultado de error en la carpeta de errores.
 * Si los resultados no están en la carpeta de resultados, compruebe la carpeta de errores para ver si se ha producido un error.
 * La carpeta inspeccionada funciona mejor si se utiliza en modo asincrónico. En este modo, la carpeta inspeccionada coloca la solicitud de invocación en la cola y devuelve las llamadas. A continuación, la cola se procesa asincrónicamente. Cuando no se establece la opción Asincrónica, la carpeta inspeccionada invoca el servicio de destino sincrónicamente y el motor de procesos espera hasta que el servicio se realiza con la solicitud y se generan los resultados. Si el servicio de destino tarda mucho tiempo en procesar la solicitud, la carpeta inspeccionada puede obtener errores de tiempo de espera.
 * La creación de carpetas vigiladas para operaciones de importación y exportación no permite la abstracción de la extensión del nombre de archivo. Al invocar el servicio de integración de datos de formulario mediante carpetas inspeccionadas, es posible que el tipo de extensión del nombre de archivo del archivo de salida no coincida con el formato de salida deseado para el tipo de objeto de documento. Por ejemplo, si el archivo de entrada a una carpeta inspeccionada que invoca la operación de exportación es un formulario XFA que contiene datos, el resultado debe ser un archivo de datos XDP. Para obtener un archivo de salida con la extensión de nombre de archivo correcta, puede especificarlo en la asignación de parámetros de salida. En este ejemplo, puede utilizar %F.xdp para la asignación de parámetros de salida.

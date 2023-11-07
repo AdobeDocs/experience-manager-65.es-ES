@@ -4,9 +4,9 @@ description: Aprenda a identificar el contenido que necesita traducirse en Adobe
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1152'
 ht-degree: 66%
 
 ---
@@ -160,7 +160,7 @@ Desde aquí, puede **Agregar contexto**. Esto permite añadir una ruta.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-A continuación, debe seleccionar el contexto y hacer clic en **Editar**. Se abrirá el editor de reglas de traducción.
+A continuación, debe seleccionar el contexto y hacer clic en **Editar**. Se abrirá el Editor de reglas de traducción.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
@@ -192,7 +192,7 @@ En la IU, puede marcar o desmarcar **Heredar** en la pestaña **Propiedades**.
 
 En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**.
 
-**updateDestinationLanguage** Este atributo se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo jcr:idioma. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
+**updateDestinationLanguage** Este atributo se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo, jcr:idioma. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
 
 En la IU, puede marcar o desmarcar **Traducir** en el **Propiedades** , pero para las propiedades específicas que tienen códigos de idioma como valor.
 

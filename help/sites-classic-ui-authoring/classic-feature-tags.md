@@ -1,6 +1,6 @@
 ---
 title: Uso de etiquetas
-description: Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas se pueden considerar palabras clave o etiquetas que se pueden adjuntar a una página, un recurso u otro contenido para permitir las búsquedas y encontrar ese contenido y el contenido relacionado.
+description: Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o etiquetas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el relacionado.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,19 +8,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 23%
+source-wordcount: '706'
+ht-degree: 39%
 
 ---
 
 # Uso de etiquetas{#using-tags}
 
-Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas se pueden considerar palabras clave o etiquetas que se pueden adjuntar a una página, un recurso u otro contenido para permitir las búsquedas y encontrar ese contenido y el contenido relacionado.
+Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o etiquetas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el relacionado.
 
-* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
-* Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
+* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre cómo crear y administrar etiquetas, y a qué etiquetas de contenido se han aplicado.
+* Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de trabajo de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}
 
@@ -33,9 +33,9 @@ Las etiquetas son un método rápido y sencillo de clasificar contenido dentro d
 1. Habilitación de SEO: las etiquetas aplicadas como propiedades de página se mostrarán automáticamente en las metaetiquetas de la página, por lo que serán visibles a los motores de búsqueda.
 1. Sofisticación simple : las etiquetas se pueden crear simplemente a partir de una palabra y pulsar un botón. Después, se pueden añadir un título, una descripción y marcas ilimitadas para proporcionar más semántica a la etiqueta.
 1. AEM AEM Consistencia central: el sistema de etiquetado es un componente central de la creación de categorías y lo utilizan todas las capacidades de la para clasificar el contenido. Además, la API de etiquetado está disponible para los desarrolladores para que creen aplicaciones compatibles con el etiquetado con acceso a las mismas taxonomías.
-1. AEM Combina estructura y flexibilidad : la opción de trabajo es ideal para trabajar con información estructurada, debido al anidamiento de páginas y rutas de acceso. Es igualmente potente cuando se trabaja con información no estructurada, debido a la búsqueda de texto completo integrada. El etiquetado combina las ventajas tanto de la estructura como de la flexibilidad.
+1. AEM Combina estructura y flexibilidad : la opción de trabajo es ideal para trabajar con información estructurada, debido al anidamiento de páginas y rutas de acceso. También es extremadamente útil a la hora de trabajar con información sin estructurar, debido a la búsqueda incorporada de texto completo. El etiquetado combina las ventajas tanto de la estructura como de la flexibilidad.
 
-Al diseñar la estructura de contenido para un sitio y el esquema de metadatos para los recursos, tenga en cuenta el enfoque ligero y accesible que proporciona el etiquetado.
+A la hora de diseñar la estructura de contenido para un sitio y el esquema de metadatos para los recursos, considere la ligereza y la accesibilidad que proporciona el etiquetado.
 
 ## Aplicación de etiquetas   {#applying-tags}
 
@@ -53,7 +53,7 @@ Al igual que con las páginas, puede realizar lo siguiente en etiquetas y áreas
 
 * Activar etiquetas individuales.
 
-   Al igual que con las páginas, las nuevas etiquetas que se creen deberán activarse antes de que estén disponibles en el entorno de publicación.
+  Al igual que con las páginas, las etiquetas recién creadas deben activarse antes de que estén disponibles en el entorno de publicación.
 
 >[!NOTE]
 >

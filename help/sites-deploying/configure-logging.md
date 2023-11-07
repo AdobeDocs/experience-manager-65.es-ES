@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -135,13 +135,13 @@ Los otros pares siguen la configuración estándar:
 
 Puede definir su propio par Registrador/Escritor:
 
-1. Cree una nueva instancia de la configuración de fábrica [Configuración del registrador de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Cree una instancia de la configuración de fábrica [Configuración del registrador de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Especifique el Archivo de registro.
    1. Especifique el registrador.
    1. Configure los demás parámetros según sea necesario.
 
-1. Cree una nueva instancia de la configuración de fábrica [Configuración del escritor de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Cree una instancia de la configuración de fábrica [Configuración del escritor de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Especifique el Archivo de registro: debe coincidir con el especificado para el registrador.
    1. Configure los demás parámetros según sea necesario.

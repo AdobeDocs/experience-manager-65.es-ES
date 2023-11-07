@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1878'
 ht-degree: 1%
 
 ---
@@ -80,13 +80,13 @@ Para ilustrar el uso de una secuencia de comandos de diseño de formulario, esta
 
 **A.** Campo denominado NumericField1 **B.** Campo denominado NumericField2 **C.** Campo denominado NumericField3
 
-La sintaxis de la secuencia de comandos ubicada en este diseño de formulario es la siguiente:
+La sintaxis de la secuencia de comandos en este diseño de formulario es la siguiente:
 
 ```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
-En este diseño de formulario, el botón Calcular es un botón de comando, y la secuencia de comandos se encuentra en el `Click` evento. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio de Forms, donde se ejecuta la secuencia de comandos. El servicio Forms vuelve a procesar el formulario en el dispositivo cliente con los resultados del cálculo mostrados en el campo NumericField3.
+En este diseño de formulario, el botón Calcular es un botón de comando y el script se encuentra en el de este botón `Click` evento. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio de Forms, donde se ejecuta la secuencia de comandos. El servicio Forms vuelve a procesar el formulario en el dispositivo cliente con los resultados del cálculo mostrados en el campo NumericField3.
 
 >[!NOTE]
 >
@@ -152,14 +152,13 @@ Calcular datos de formulario mediante la API de Forms (Java):
    * Invoque el `FormsServiceClient` del objeto `processFormSubmission` y pasar los siguientes valores:
 
       * El `com.adobe.idp.Document` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Debe especificar el tipo de contenido que desea gestionar especificando uno o más valores para `CONTENT_TYPE` variable de entorno. Por ejemplo, para gestionar datos XML y de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a gestionar especificando uno o más valores para `CONTENT_TYPE` variable de entorno. Por ejemplo, para gestionar datos XML y de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Un valor de cadena que especifica la variable `HTTP_USER_AGENT` valor del encabezado; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
 
-      El `processFormSubmission` El método devuelve un valor `FormsResult` que contiene los resultados del envío del formulario.
+     El `processFormSubmission` El método devuelve un valor `FormsResult` que contiene los resultados del envío del formulario.
 
    * Compruebe que el estado de procesamiento asociado a un formulario enviado es `1` invocando el método `FormsResult` del objeto `getAction` método. Si este método devuelve el valor `1`, se realizó el cálculo y los datos se pueden escribir de nuevo en el explorador web del cliente.
-
 
 1. Escribir el flujo de datos de formulario en el explorador web del cliente
 
@@ -200,7 +199,7 @@ Calcular datos de formulario mediante la API de Forms (servicio web):
    * Invoque el `FormsServiceClient` del objeto `processFormSubmission` y pasar los siguientes valores:
 
       * El `BLOB` que contiene los datos del formulario.
-      * Un valor de cadena que especifica las variables de entorno que incluyen todos los encabezados HTTP relevantes. Por ejemplo, puede especificar el siguiente valor de cadena: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
+      * Un valor de cadena que especifica variables de entorno que incluyen todos los encabezados HTTP relevantes. Por ejemplo, puede especificar el siguiente valor de cadena: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
       * Un valor de cadena que especifica la variable `HTTP_USER_AGENT` valor del encabezado; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` que almacena opciones en tiempo de ejecución. Para obtener más información, .
       * Un vacío `BLOBHolder` objeto que rellena el método.
@@ -211,10 +210,9 @@ Calcular datos de formulario mediante la API de Forms (servicio web):
       * Un vacío `MyArrayOf_xsd_anyTypeHolder` objeto que rellena el método. Este parámetro se utiliza para almacenar los archivos adjuntos enviados junto con el formulario.
       * Un vacío `FormsResultHolder` que rellena el método con el formulario que se envía.
 
-      El `processFormSubmission` rellena el método `FormsResultHolder` con los resultados del envío del formulario. El `processFormSubmission` El método devuelve un valor `FormsResult` que contiene los resultados del envío del formulario.
+     El `processFormSubmission` rellena el método `FormsResultHolder` con los resultados del envío del formulario. El `processFormSubmission` El método devuelve un valor `FormsResult` que contiene los resultados del envío del formulario.
 
    * Compruebe que el estado de procesamiento asociado a un formulario enviado es `1` invocando el método `FormsResult` del objeto `getAction` método. Si este método devuelve el valor `1`, se realizó el cálculo y los datos se pueden escribir de nuevo en el explorador web del cliente.
-
 
 1. Escribir el flujo de datos de formulario en el explorador web del cliente
 

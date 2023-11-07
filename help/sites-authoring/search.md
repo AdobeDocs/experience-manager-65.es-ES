@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 84%
+source-wordcount: '507'
+ht-degree: 76%
 
 ---
 
@@ -33,7 +33,7 @@ La función de búsqueda está disponible en la barra de herramientas superior:
 Con el carril de búsqueda puede:
 
 * Busque una palabra clave, una ruta o una etiqueta específicas..
-* Filtre según los criterios específicos del recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
+* Filtre según criterios específicos de recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
 * Defina y utilice una [búsqueda guardada](#saved-searches) según los criterios anteriores.
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Para buscar y filtrar sus recursos:
 1. Si es necesario, puede quitar el filtro de ubicación (seleccione **X** en el filtro que desea eliminar) para buscar en todas las consolas/tipos de recurso.
 1. Los resultados se muestran agrupados según la consola y el tipo de recurso relacionado.
 
-   Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo **Ver todos los sitios**: 
+   Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo, **Ver todos los sitios**:
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

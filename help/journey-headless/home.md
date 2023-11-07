@@ -2,10 +2,10 @@
 title: Recorridos sin AEM
 description: Recopilación de recorridos de documentación que describen cómo utilizar Adobe Experience Manager como CMS sin encabezado.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 65%
+source-wordcount: '457'
+ht-degree: 59%
 
 ---
 
@@ -19,7 +19,7 @@ La implementación sin encabezado es cada vez más importante para ofrecer exper
 
 La implementación sin encabezado renuncia a la administración de páginas y componentes, ya que es tradicional en soluciones de pila completa y se centra en la creación de fragmentos de contenido neutros y reutilizables para el canal y en su entrega multicanal. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
 
-AEM AEM Si eres nuevo en el mundo de la y/o sin encabezado, los Recorridos sin encabezado son un lugar bueno para comenzar a comprender la teoría y la tecnología a través de una narrativa para resolver varios problemas empresariales de manera sin encabezado.
+AEM AEM Si eres nuevo en el mundo de la comunicación y/o en el mundo sin encabezado, los Recorridos sin encabezado son un buen lugar para empezar a entender la teoría y la tecnología a través de una narrativa para resolver varios problemas empresariales de manera sin encabezado.
 
 ## Recorridos de documentación de AEM {#documentation-journeys}
 
@@ -35,7 +35,7 @@ Los Recorridos sin encabezado están diseñados para personas diferentes, exponi
 
 El recorrido individual está definido para un perfil específico o audiencia, pero también incluye perfiles adicionales con los que el lector interactúa.
 
-La información en los recorridos puede ser útil para varias personas, pero un recorrido está dirigido a una persona específica y cierta información puede ser superflua a ciertas funciones.
+La información de los recorridos puede ser útil para varias personas, pero un recorrido está dirigido a una persona específica y cierta información puede ser superflua a ciertas funciones.
 
 ## Recorridos sin encabezado {#headless-journeys}
 

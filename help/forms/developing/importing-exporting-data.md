@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2771'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Para importar datos en un formulario de PDF, debe hacer referencia a un formular
 
 **Hacer referencia a una fuente de datos XML**
 
-Para importar datos de formulario, debe hacer referencia a un origen de datos válido. Para importar datos en un formulario XML XFA creado en Designer, debe utilizar una fuente de datos XML XDP. Si hace referencia a un formulario de Acrobat, debe utilizar una fuente de datos XFDF. Para cada campo en el que desee importar datos, se debe especificar un valor. Si un elemento ubicado en la fuente de datos XML no se corresponde con un campo del formulario, el elemento se ignora.
+Para importar datos de formulario, debe hacer referencia a un origen de datos válido. Para importar datos en un formulario XML XFA creado en Designer, debe utilizar una fuente de datos XML XDP. Si hace referencia a un formulario de Acrobat, debe utilizar una fuente de datos XFDF. Para cada campo en el que desee importar datos, se debe especificar un valor. Si un elemento de la fuente de datos XML no se corresponde con un campo del formulario, el elemento se ignora.
 
 **Importación de datos en el formulario de PDF**
 
@@ -177,7 +177,7 @@ Importar datos de formulario mediante la API de integración de datos de formula
    * El `com.adobe.idp.Document` que almacena el formulario de PDF.
    * El `com.adobe.idp.Document` que almacena datos de formulario.
 
-   El `importData` El método devuelve un valor `com.adobe.idp.Document` que almacena un formulario de PDF que contiene los datos ubicados en el origen de datos XML.
+   El `importData` El método devuelve un valor `com.adobe.idp.Document` que almacena un formulario de PDF que contiene los datos del origen de datos XML.
 
 1. Guarde el formulario de PDF como archivo de PDF.
 
@@ -242,7 +242,7 @@ Importar datos de formulario mediante la API de integración de datos de formula
    * El `BLOB` que almacena el formulario de PDF.
    * El `BLOB` que almacena datos de formulario.
 
-   El `importData` El método devuelve un valor `BLOB` que almacena un formulario de PDF que contiene los datos ubicados en el origen de datos XML.
+   El `importData` El método devuelve un valor `BLOB` que almacena un formulario de PDF que contiene los datos del origen de datos XML.
 
 1. Guarde el formulario de PDF como archivo de PDF.
 

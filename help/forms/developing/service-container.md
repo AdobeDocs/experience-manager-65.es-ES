@@ -1,7 +1,7 @@
 ---
 title: Contenedor de servicio
 seo-title: Service container
-description: Servicios de AEM Forms ubicados en el contenedor de servicios
+description: Servicios de AEM Forms en el contenedor de servicios
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '924'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 **Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Los servicios de AEM Forms ubicados en el contenedor de servicios (incluidos los servicios estándar como el servicio Encryption y los procesos de larga y corta duración) se pueden invocar mediante varios proveedores, como un proveedor EJB. Un proveedor EJB permite invocar los servicios de AEM Forms a través de RMI/IIOP. Un proveedor de servicios web expone servicios como servicios web (generación de WSDL) mediante estándares como SOAP/HTTP y SOAP/JMS.
+Los servicios de AEM Forms en el contenedor de servicios (incluidos los servicios estándar como el servicio Encryption y los procesos de larga y corta duración) se pueden invocar mediante varios proveedores, como un proveedor EJB. Un proveedor EJB permite invocar los servicios de AEM Forms a través de RMI/IIOP. Un proveedor de servicios web expone servicios como servicios web (generación de WSDL) mediante estándares como SOAP/HTTP y SOAP/JMS.
 
 En la tabla siguiente se describen las diferentes formas en que se puede invocar mediante programación los servicios de AEM Forms.
 
@@ -61,23 +61,23 @@ La siguiente ilustración proporciona una representación visual de las diferent
 El contenedor de servicio proporciona las siguientes funciones:
 
 * Permite que los servicios de AEM Forms se invoquen mediante diferentes métodos. Puede configurar un servicio estableciendo puntos finales para que se pueda invocar mediante todos los métodos: Remoting, la API de Java, los servicios web y REST. (Consulte [Administrar extremos mediante programación](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
-* Convierte un mensaje en un formato normalizado denominado solicitud de invocación. Se envía una solicitud de invocación desde una aplicación cliente (u otro servicio) a un servicio ubicado en el contenedor de servicios. Una solicitud de invocación contiene información como el nombre del servicio que se va a invocar y los valores de datos necesarios para realizar la operación. Muchos servicios requieren un documento para realizar una operación. Por lo tanto, una solicitud de invocación suele contener un documento, que puede ser datos de PDF, datos XDP, datos XML, etc.
+* Convierte un mensaje en un formato normalizado denominado solicitud de invocación. Se envía una solicitud de invocación desde una aplicación cliente (u otro servicio) a un servicio en el contenedor de servicios. Una solicitud de invocación contiene información como el nombre del servicio que se va a invocar y los valores de datos necesarios para realizar la operación. Muchos servicios requieren un documento para realizar una operación. Por lo tanto, una solicitud de invocación suele contener un documento, que puede ser datos de PDF, datos XDP, datos XML, etc.
 * Enruta las solicitudes de invocación a los servicios adecuados (el nombre del servicio que se va a invocar forma parte de la solicitud de invocación).
 * Realiza tareas como determinar si el llamador tiene permiso para invocar la operación de servicio especificada. AEM La solicitud de invocación debe contener un nombre de usuario y una contraseña de formularios de datos válidos.
 
-   Existen diferentes maneras de enviar una solicitud de invocación a un servicio. Además, hay diferentes formas de enviar los valores de entrada necesarios al servicio. Por ejemplo, supongamos que utiliza la API de Java para invocar un servicio que requiere un documento de PDF. El método Java correspondiente contiene un parámetro que acepta un documento de PDF. En este caso, el tipo de datos del parámetro es `com.adobe.idp.Document`. (Consulte [Pasar datos a servicios de AEM Forms mediante la API de Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+  Existen diferentes maneras de enviar una solicitud de invocación a un servicio. Además, hay diferentes formas de enviar los valores de entrada necesarios al servicio. Por ejemplo, supongamos que utiliza la API de Java para invocar un servicio que requiere un documento de PDF. El método Java correspondiente contiene un parámetro que acepta un documento de PDF. En este caso, el tipo de datos del parámetro es `com.adobe.idp.Document`. (Consulte [Pasar datos a servicios de AEM Forms mediante la API de Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-   Si invoca un servicio mediante carpetas vigiladas, se envía una solicitud de invocación al colocar un archivo en una carpeta vigilada configurada. Si invoca un servicio mediante correo electrónico, se envía una solicitud de invocación a un servicio cuando un mensaje de correo electrónico llega a una bandeja de entrada configurada.
+  Si invoca un servicio mediante carpetas vigiladas, se envía una solicitud de invocación al colocar un archivo en una carpeta vigilada configurada. Si invoca un servicio mediante correo electrónico, se envía una solicitud de invocación a un servicio cuando un mensaje de correo electrónico llega a una bandeja de entrada configurada.
 
-   El contenedor de servicio devuelve una respuesta de invocación una vez realizada la operación. Una respuesta de invocación contiene información como los resultados de la operación. Por ejemplo, si la operación modifica un documento de PDF, la respuesta de invocación contiene el documento de PDF modificado. Si la operación no se realizó correctamente, la respuesta de invocación contiene un mensaje de error.
+  El contenedor de servicio devuelve una respuesta de invocación una vez realizada la operación. Una respuesta de invocación contiene información como los resultados de la operación. Por ejemplo, si la operación modifica un documento de PDF, la respuesta de invocación contiene el documento de PDF modificado. Si la operación no se realizó correctamente, la respuesta de invocación contiene un mensaje de error.
 
-   Una respuesta de invocación se puede recuperar del mismo modo en que se envía una solicitud de invocación. Es decir, si la solicitud de invocación se envía mediante la API de Java, se puede recuperar una respuesta de invocación mediante la API de Java. Supongamos, por ejemplo, que una operación modifica un documento de PDF. Puede recuperar el documento de PDF modificado obteniendo el valor devuelto del método Java que invocó el servicio.
+  Una respuesta de invocación se puede recuperar del mismo modo en que se envía una solicitud de invocación. Es decir, si la solicitud de invocación se envía mediante la API de Java, se puede recuperar una respuesta de invocación mediante la API de Java. Supongamos, por ejemplo, que una operación modifica un documento de PDF. Puede recuperar el documento de PDF modificado obteniendo el valor devuelto del método Java que invocó el servicio.
 
-   Cuando se invoca un proceso de larga duración, una respuesta de invocación contiene un valor de identificador asociado a la solicitud de invocación. Con este valor de identificador, puede comprobar el estado del proceso más adelante. Por ejemplo, considere el servicio de larga duración de MortgageLoan. Con el valor del identificador, puede comprobar si el proceso se ha completado correctamente. (Consulte [Invocar procesos de larga duración centrados en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+  Cuando se invoca un proceso de larga duración, una respuesta de invocación contiene un valor de identificador asociado a la solicitud de invocación. Con este valor de identificador, puede comprobar el estado del proceso más adelante. Por ejemplo, considere el servicio de larga duración de MortgageLoan. Con el valor del identificador, puede comprobar si el proceso se ha completado correctamente. (Consulte [Invocar procesos de larga duración centrados en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-   En el diagrama siguiente se muestra una aplicación cliente (que utiliza la API de Java) que invoca un servicio.
+  En el diagrama siguiente se muestra una aplicación cliente (que utiliza la API de Java) que invoca un servicio.
 
-   Cuando una aplicación cliente invoca un servicio, se producen tres eventos:
+  Cuando una aplicación cliente invoca un servicio, se producen tres eventos:
 
    1. Una aplicación cliente envía una solicitud de invocación a un servicio.
    1. El servicio realiza la operación especificada en la solicitud de invocación.

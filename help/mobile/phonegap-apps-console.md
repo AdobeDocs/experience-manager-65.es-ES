@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2688'
 ht-degree: 0%
 
 ---
@@ -169,16 +169,16 @@ Realice el siguiente procedimiento en la instancia en la que desea actualizar la
 
 ### Uso de plantillas de aplicación {#using-app-templates}
 
-AEM Esta es una función que está disponible con el paquete de funciones 2 de Apps 6.1 y proporciona una manera sencilla de aprovechar las plantillas de aplicación existentes para la creación de nuevas aplicaciones dentro de los entornos de trabajo de los usuarios de la aplicación de.
+AEM Esta es una función que está disponible con el paquete de funciones 2 de Apps 6.1 y proporciona una manera fácil de usar las plantillas de aplicación existentes para la creación de nuevas aplicaciones dentro de la aplicación de.
 
 ¿Qué es una plantilla de aplicación? Considérelo como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
-Al crear una aplicación nueva basada en la plantilla de otra aplicación, obtendrá una aplicación que tenga un punto de partida representativo de la aplicación en la que se creó.
+Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.
 
 Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para utilizar esta función.
 
 AEM El último paquete de muestras de aplicaciones para la versión 6.1 incluye una versión actualizada de la aplicación de Geometrixx con una plantilla de aplicación de. Como alternativa, puede instalar el StarterKit, que también proporciona una plantilla.
 
-Pasos para crear una nueva aplicación basada en una plantilla de aplicación:
+Pasos para crear una aplicación basada en una plantilla de aplicación:
 
 1. AEM Asegúrese de que tiene instalados los paquetes de funciones y muestras de referencia más recientes para Aplicaciones de la versión 6.1.
 1. Haga clic en Aplicaciones en el carril izquierdo.
@@ -219,7 +219,7 @@ Para abrir la aplicación, en el carril, haga clic en Aplicaciones móviles y, a
 
 Cada página de la aplicación móvil incluye las siguientes funciones:
 
-* Botón Atrás para volver a la página principal. Tenga en cuenta que el botón Atrás no aparece en la página Inicio.
+* Botón Atrás para volver a la página principal. El botón Atrás no aparece en la página Inicio.
 * Un carril fungible que ofrece un menú de comandos y vínculos:
 
    * Abra la página Ubicaciones.

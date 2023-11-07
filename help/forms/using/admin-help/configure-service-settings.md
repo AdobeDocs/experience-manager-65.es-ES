@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10694'
 ht-degree: 4%
 
 ---
@@ -109,7 +109,7 @@ El valor predeterminado de esta configuración es `/LiveCycleES/ConnectorforIBMF
 
 ## Convertir configuración del servicio del PDF {#convert-pdf-service-settings}
 
-El servicio ConvertPDF ( `ConvertPdfService`) convierte los documentos de PDF a PostScript y a una serie de formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento de PDF en un archivo de TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
+El servicio ConvertPDF ( `ConvertPdfService`) convierte documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento de PDF en un archivo de TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
 
 Las siguientes configuraciones están disponibles para el servicio Convertir PDF.
 
@@ -326,7 +326,7 @@ Los valores predeterminados del servicio Utilidades de guía admiten la mayoría
 
 ### Uso de guías en un clúster de servidores {#using-guides-in-a-server-cluster}
 
-Al procesar una Guide en un clúster de servidores que no utiliza sesiones fijas, se produce un error con NullPointerException. Una solicitud de Guías aprovecha las direcciones URL seguras que, de forma predeterminada, son únicas para el servidor en el que se generan. En un clúster que utiliza sesiones fijas, después de que una solicitud llegue a un nodo del clúster, todas las solicitudes posteriores de esa sesión o usuario se enrutarán exclusivamente a ese servidor y todo estará bien. En un clúster que no utilice sesiones fijas, las solicitudes posteriores pueden alcanzar cualquier servidor del clúster. Si el servidor en el que se producen las solicitudes de visita no es el servidor original, no se puede resolver la dirección URL segura.
+Al procesar una Guide en un clúster de servidores que no utiliza sesiones fijas, se produce un error con NullPointerException. Una solicitud de Guías utiliza direcciones URL seguras que, de forma predeterminada, son únicas para el servidor en el que se generan. En un clúster que utiliza sesiones fijas, después de que una solicitud llegue a un nodo del clúster, todas las solicitudes posteriores de esa sesión o usuario se enrutarán exclusivamente a ese servidor y todo estará bien. En un clúster que no utilice sesiones fijas, las solicitudes posteriores pueden alcanzar cualquier servidor del clúster. Si el servidor en el que se producen las solicitudes de visita no es el servidor original, no se puede resolver la dirección URL segura.
 
 Si utiliza Guías en un clúster de servidores que no utiliza sesiones fijas, establezca el valor macKeySeed para el servicio GuidesUtility y, a continuación, detenga e inicie el clúster.
 
@@ -826,7 +826,7 @@ Se instalan los perfiles de seguridad predeterminados, que se pueden configurar 
    * **SUPERVISOR_PERM:** Para ver los datos de instancia de proceso de un servicio creado a partir de un proceso
    * **START_STOP_PERM:** Para iniciar y detener un servicio
    * **ADD_REMOVE_ENDPOINTS_PERM:** Para agregar, quitar y modificar extremos de un servicio
-   * **CREATE_VERSION_PERM:** Para crear una nueva versión del servicio
+   * **CREATE_VERSION_PERM:** Para crear una versión del servicio
    * **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
    * **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
    * **READ_PERM:** Para ver el servicio

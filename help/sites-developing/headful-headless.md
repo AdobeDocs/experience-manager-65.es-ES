@@ -2,10 +2,10 @@
 title: Modelos con encabezado y sin encabezado en AEM
 description: Los proyectos de AEM se pueden implementar en un modelo con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 94%
+source-wordcount: '1013'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Pero esto no tiene que ser una elección binaria. AEM ofrece una flexibilidad si
 
 ![Modelos de implementación de AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-En un modelo de pila completa o con periférico, el contenido se administra en el repositorio de AEM, y los componentes de AEM basados en Java, HTL, etc., se utilizan para representar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
+AEM AEM En un modelo con encabezado o de pila completa, el contenido se administra en el repositorio de y se utilizan componentes basados en Java, HTL, etc., para procesar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
 
 En un modelo sin encabezado, el contenido se administra en el repositorio de AEM, pero se envía mediante una API como REST y GraphQL a otro sistema para procesar el contenido para la experiencia del usuario. En este modelo, el contenido se crea en AEM, pero el diseño, la presentación y entrega se realiza en otra plataforma.
 
@@ -43,7 +43,7 @@ La siguiente sección explora estos niveles de integración con más detalle.
 
 >[!NOTE]
 >
->Por supuesto, también puede volver a implementar la SPA de la tienda web como una SPA que funcione completamente en AEM [con el marco de trabajo de un Editor de SPA en AEM.](/help/sites-developing/spa-walkthrough.md) Si ya tiene AEM y desea crear una nueva tienda web u otras SPA, este es el método recomendado, pero queda fuera del alcance de este documento.
+>Por supuesto, también puede volver a implementar la SPA de la tienda web como una SPA que funcione completamente en AEM [con el marco de trabajo de un Editor de SPA en AEM.](/help/sites-developing/spa-walkthrough.md) AEM SPA Si ya tiene una tienda web o un sitio web y desea crear una tienda web u otro tipo de tienda, este es el método recomendado, pero está fuera del ámbito de este documento.
 
 ## Niveles de integración de las SPA {#integration-levels}
 

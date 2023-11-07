@@ -1,18 +1,14 @@
 ---
 title: AEM Extensión de corchetes de
-seo-title: AEM Brackets Extension
 description: Aprenda a utilizar la extensión de Adobe Experience Manager para corchetes.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM AEM La extensión de brackets proporciona un flujo de trabajo fluido para editar componentes de y bibliotecas de cliente, y aprovecha la potencia de la [Corchetes](https://brackets.io/) editor de código, que proporciona acceso desde el editor de código a los archivos y capas de Photoshop. AEM La fácil sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es), que elimina la complejidad de JSP para que el desarrollo de componentes sea más fácil y seguro.
+AEM AEM La extensión de brackets proporciona un flujo de trabajo fluido para editar componentes de y bibliotecas de cliente, y utiliza la potencia de [Corchetes](https://brackets.io/) editor de código, que proporciona acceso desde el editor de código a los archivos y capas de Photoshop. AEM La fácil sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es), que elimina la complejidad de JSP para que el desarrollo de componentes sea más fácil y seguro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -71,7 +67,7 @@ El proyecto debe contener al menos:
 
 1. a `jcr_root` carpeta (por ejemplo, `myproject/jcr_root`)
 
-1. a `filter.xml` (por ejemplo, `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del `filter.xml` por favor, consulte el [Definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` (por ejemplo, `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del `filter.xml` consulte el archivo [Definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html).
 
 Entre paréntesis **Archivo** menú, elija **Abrir carpeta...** y elija la `jcr_root` o la carpeta del proyecto principal.
 
@@ -127,7 +123,7 @@ AEM La extensión de corchetes de la barra de herramientas de la parte derecha d
 * amarillo: algunos archivos no se sincronizaron
 * rojo: no se sincronizó ningún archivo
 
-Al hacer clic en el icono de notificación, se abrirá el cuadro de diálogo del informe Estado de sincronización que enumera todos los estados de cada archivo sincronizado.
+Al hacer clic en el icono de notificación, se abre el cuadro de diálogo Informe de estado de sincronización que muestra todos los estados de cada archivo sincronizado.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 

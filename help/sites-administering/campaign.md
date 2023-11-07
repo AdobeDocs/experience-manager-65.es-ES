@@ -8,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 6fe5e617ceac3c97a77de2d574ec370f30887330
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 3%
+source-wordcount: '335'
+ht-degree: 17%
 
 ---
 
@@ -30,15 +30,15 @@ Adobe Campaign es un conjunto de soluciones que le permite personalizar y entreg
 
 ## Integración con Adobe Campaign Classic {#acc}
 
-Existen varias versiones de Adobe Campaign Classic (ACC). AEM AEM La compatibilidad con la integración con la integración de depende de la versión de ACC que haya implementado y de si la instalación de la aplicación se realiza de forma local en Adobe Manage Services (AMS), y de si la aplicación está instalada en el sitio web de la aplicación (AMS).
+Existen varias versiones de Adobe Campaign Classic (ACC). AEM AEM La compatibilidad con la integración con la integración de depende de la versión de ACC que haya implementado y de si la instalación de la aplicación se realiza de forma local en los servicios de administración de Adobe (AMS), y de si la versión de la aplicación está instalada de forma local en dicha aplicación.
 
 | Versión ACC | AEM Integración con 6.5 <br>En las instalaciones | AEM Integración con 6.5<br>AMS |
 |---|---|---|
-| [Versión 7](https://experienceleague.adobe.com/docs/campaign-classic.html) | Compatible | Compatible  |
-| [Versión 8](https://experienceleague.adobe.com/docs/campaign-v8.html) | Compatible | Compatible  |
-| IU web* | Compatible | Compatible  |
+| [Versión 7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=es) | Compatible | Compatible  |
+| [Versión 8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=es) | Compatible | Compatible  |
+| Web IU* | Compatible | Compatible |
 
-*La interfaz de usuario web para Adobe Campaign Classic está prevista para finales de 2023.
+*La IU web para Adobe Campaign Classic está prevista para finales de 2023.
 
 AEM En la siguiente documentación se describe cómo integrar los segmentos de con la interfaz de usuario de Adobe Campaign Classic.
 
@@ -51,7 +51,7 @@ La siguiente documentación adicional describe cómo utilizar la integración.
 
 ## Integración con Adobe Campaign Standard {#acs}
 
-Integración de [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) AEM AEM (ACS) con la depende de si la instalación de la aplicación es local en, en Adobe Manage Services (AMS).
+Integración de [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=es) AEM AEM (ACS) con la depende de si la instalación de la aplicación es local en, en Adobe Manage Services (AMS).
 
 | AEM Integración con 6.5 <br>En las instalaciones | AEM Integración con 6.5<br>AMS |
 |---|---|

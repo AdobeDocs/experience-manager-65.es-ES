@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Para personalizar o ampliar los componentes, solo escribe las superposiciones y 
 * Para agregar un procesamiento personalizado durante las operaciones:
    * Escribir un [OperationExtension](server-customize.md#operationextension-class).
 * Para agregar una operación personalizada:
-   * Crear un nuevo [Operación posterior de Sling](server-customize.md#postoperation-class).
+   * Crear un [Operación posterior de Sling](server-customize.md#postoperation-class).
    * Usar los existentes [OperationServices](server-customize.md#operationservice-class) según sea necesario.
    * Agregue código JavaScript para invocar la operación desde el lado del cliente según sea necesario.
 
@@ -73,7 +73,7 @@ Las clases principales se describen en la [Personalización del lado del servido
 
 Visita [Resumen del proveedor de recursos de almacenamiento](srp.md) para aprender a trabajar con UGC.
 
-### API HTTP {#http-api}
+### API del HTTP {#http-api}
 
 La API HTTP admite la facilidad de personalización y la elección de plataformas de cliente para aplicaciones PhoneGap, aplicaciones nativas y otras integraciones y mezclas. Además, la API HTTP permite que un sitio de la comunidad se ejecute como un servicio sin un cliente, de modo que los componentes de marco de trabajo se puedan integrar en cualquier página web basada en cualquier tecnología.
 

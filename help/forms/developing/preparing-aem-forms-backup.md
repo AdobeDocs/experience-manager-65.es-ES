@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2519'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Se entra en el modo de copia de seguridad para permitir copias de seguridad en c
 * Hora a la que se completó el procedimiento de copia de seguridad.
 * Un indicador que indica si se debe estar en modo de copia de seguridad continua, lo que resulta útil solo si se realizan copias de seguridad móviles.
 
-Antes de escribir aplicaciones para entrar en el modo de copia de seguridad, se recomienda comprender los procedimientos de copia de seguridad que se utilizarán después de poner el servidor de Forms en modo de copia de seguridad. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
+Antes de escribir aplicaciones para entrar en el modo de copia de seguridad, se recomienda comprender los procedimientos de copia de seguridad que se utilizan después de poner el servidor de Forms en modo de copia de seguridad. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Inicie el modo de copia de seguridad mediante la API del servicio de copia de se
 
 1. Incluir archivos de proyecto
 
-   Incluya los archivos JAR de cliente necesarios, como adobe-backup-restore-client-sdk.jar, en la ruta de clase del proyecto Java. Para crear la aplicación cliente Java, se deben añadir los siguientes archivos JAR a la ruta de clase del proyecto:
+   Incluya los archivos JAR de cliente necesarios, como adobe-backup-restore-client-sdk.jar, en la ruta de clase del proyecto Java. Para crear la aplicación cliente Java, se deben agregar los siguientes archivos JAR a la ruta de clase del proyecto:
 
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
@@ -135,7 +135,7 @@ Inicie el modo de copia de seguridad mediante la API del servicio de copia de se
    * Un `int` que especifica el número de minutos que deben permanecer en el modo de copia de seguridad. Puede especificar un valor desde `1` hasta `10080` (el número de minutos en una semana). Este valor se omite al utilizar el modo de copia de seguridad continua.
    * A `Boolean` valor que especifica si se va a realizar una copia de seguridad continua. Un valor de `True` especifica que está en modo de copia de seguridad continua. En el modo de copia de seguridad continua, se omite el valor especificado para el número de minutos que deben permanecer en el modo de copia de seguridad.
 
-      El modo de copia de seguridad continua significa que se inicia una nueva sesión de modo de copia de seguridad después de que se complete la actual. Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos del GDS.
+     El modo de copia de seguridad continua significa que se inicia una nueva sesión de modo de copia de seguridad después de que se complete la actual. Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos del GDS.
 
 1. Recuperar información sobre la sesión del modo de copia de seguridad en el servidor
 
@@ -170,7 +170,7 @@ Inicie el modo de copia de seguridad mediante el servicio web proporcionado por 
    * A `Uint32` que especifica el número de minutos que deben permanecer en el modo de copia de seguridad. Puede especificar un valor desde `1` hasta `10080` (número de minutos en una semana). Este valor se omite al utilizar el modo de copia de seguridad continua.
    * A `Boolean` valor que especifica si se va a realizar una copia de seguridad continua. Un valor de `True` especifica que está en modo de copia de seguridad continua. En el modo de copia de seguridad continua, se omite el valor especificado para el número de minutos que deben permanecer en el modo de copia de seguridad. El modo de copia de seguridad continua significa que se inicia una nueva sesión de modo de copia de seguridad después de que se complete la actual.
 
-      Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos del GDS.
+     Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos del GDS.
 
 1. Recuperar información sobre la sesión del modo de copia de seguridad en el servidor
 

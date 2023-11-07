@@ -1,14 +1,12 @@
 ---
 title: Instalación independiente personalizada
-seo-title: Custom Standalone Install
 description: AEM Obtenga información acerca de las opciones disponibles al instalar una instancia independiente de la.
-seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
@@ -45,7 +43,7 @@ Hay varias reglas que se deben seguir al cambiar el nombre del archivo jar de in
 
 ### Consideraciones sobre Java 11 {#java-considerations}
 
-Si está ejecutando Java 11 de Oracle AEM (o, por lo general, versiones de Java más recientes que la 8), se deberán agregar modificadores adicionales a la línea de comandos al iniciar la ejecución de un comando de.
+Si está ejecutando Java 11 de Oracle AEM (o, por lo general, versiones de Java más recientes que la 8), se deben agregar modificadores adicionales a la línea de comandos al iniciar la ejecución de un comando de.
 
 * Lo siguiente: `-add-opens` es necesario añadir modificadores para evitar la reflexión relacionada con los mensajes de ADVERTENCIA de acceso en la `stdout.log`
 
@@ -67,7 +65,7 @@ AEM Por último, si está ejecutando una instancia actualizada desde la versión
 
 ## Ejecutar modos {#run-modes}
 
-**Modos de ejecución** AEM le permite ajustar la instancia de la para un propósito específico; por ejemplo, crear o publicar, probar, desarrollar, intranet, etc. Estos modos también permiten controlar el uso del contenido de muestra. Este contenido de muestra se define antes de que se genere el inicio rápido y puede incluir paquetes, configuraciones, etc. Esto puede resultar especialmente útil para instalaciones listas para la producción cuando desea mantener la instalación limpia y sin contenido de muestra. Para obtener más información, consulte:
+**Modos de ejecución** AEM permite ajustar la instancia de la aplicación para un propósito específico; por ejemplo, crear o publicar, probar, desarrollar, intranet, etc. Estos modos también permiten controlar el uso del contenido de muestra. Este contenido de muestra se define antes de que se genere el inicio rápido y puede incluir paquetes, configuraciones, etc. Esto puede resultar especialmente útil para instalaciones listas para la producción cuando desea mantener la instalación limpia y sin contenido de muestra. Para obtener más información, consulte:
 
 * [Ejecutar modos](/help/sites-deploying/configure-runmodes.md)
 
@@ -143,7 +141,7 @@ Para desinstalar el servicio, haga clic en **Detener** en el **Servicios** panel
 
 ## Redefinición de la ubicación del directorio de trabajo temporal {#redefining-the-location-of-the-temporary-work-directory}
 
-La ubicación predeterminada de la carpeta temporal del equipo java es `/tmp`. AEM también utiliza esta carpeta, por ejemplo, al crear paquetes.
+La ubicación predeterminada de la carpeta temporal del equipo java es `/tmp`. AEM También utiliza esta carpeta, por ejemplo, al crear paquetes.
 
 Si desea cambiar la ubicación de la carpeta temporal (por ejemplo, si necesita un directorio con más espacio libre), defina un * `<new-tmp-path>`* añadiendo el parámetro JVM:
 

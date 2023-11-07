@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '953'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Las consolas de administración de grupos y usuarios de Granite están disponibl
 
 ![Consola Herramientas](assets/chlimage_1-72a.png)
 
-Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abrirá la consola adecuada. En ambos, puede realizar acciones utilizando el cuadro de clic y luego las acciones de la barra de herramientas, o abriendo los detalles de la cuenta mediante el vínculo en **Nombre**.
+Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abre la consola adecuada. En ambos, puede realizar acciones utilizando el cuadro de clic y luego las acciones de la barra de herramientas, o abriendo los detalles de la cuenta mediante el vínculo en **Nombre**.
 
 * [Administración de usuarios](#user-administration)
 
@@ -59,7 +59,7 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
 
    ![Icono Agregar usuario](do-not-localize/chlimage_1-1.png)
 
-1. El **Crear usuario** se abrirá el formulario:
+1. El **Crear usuario** se abre el formulario:
 
    ![Formulario de detalles del usuario](assets/chlimage_1-75a.png)
 
@@ -135,7 +135,7 @@ Puede marcar la cuenta como **activo** o **inactivo**.
 
    ![Cuadro de diálogo Configuración de cuenta](assets/chlimage_1-76a.png)
 
-1. El **Cambiar contraseña** se abrirá. Introduzca y vuelva a escribir la nueva contraseña, junto con la suya. Uso **OK** para confirmar los cambios.
+1. El **Cambiar contraseña** se abre. Introduzca y vuelva a escribir la nueva contraseña, junto con la suya. Uso **OK** para confirmar los cambios.
 
    ![Cuadro de diálogo Cambiar contraseña](assets/chlimage_1-77a.png)
 
@@ -176,7 +176,7 @@ Puede marcar la cuenta como **activo** o **inactivo**.
 
    ![Agregar un nuevo grupo](do-not-localize/chlimage_1-4.png)
 
-1. El **Crear grupo** se abrirá el formulario:
+1. El **Crear grupo** se abre el formulario:
 
    ![Formulario Detalles del grupo](assets/chlimage_1-79a.png)
 
@@ -188,7 +188,7 @@ Puede marcar la cuenta como **activo** o **inactivo**.
 
    * **Nombre**
 
-     Un nombre para el grupo; se mostrará en la consola Grupos.
+     Un nombre para el grupo; se muestra en la consola Grupos.
 
    * **Descripción**
 

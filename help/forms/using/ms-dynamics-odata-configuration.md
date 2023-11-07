@@ -1,19 +1,15 @@
 ---
 title: Configuración de OData de Microsoft Dynamics
-seo-title: Microsoft Dynamics ODtata configuration
-description: Aproveche, integre y trabaje con los servicios en línea y locales de Microsoft Dynamics mediante el modelo de datos de formulario.
-seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
-uuid: 37e59633-484b-4a20-808d-2a0bc0d336cc
+description: Aprenda a utilizar, integrar y trabajar con servicios en línea y locales de Microsoft Dynamics mediante el modelo de datos de formulario.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 97%
+source-wordcount: '1230'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 97%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM 6.5 | Este artículo |
 
 ![integración de datos](assets/data-integeration.png)
@@ -32,7 +28,7 @@ Microsoft Dynamics es un software de gestión de relaciones con el cliente (CR
 * Escribir datos en Microsoft Dynamics durante el envío de formularios adaptables
 * escribir datos en Microsoft Dynamics mediante entidades personalizadas definidas en el modelo de datos de formulario y a la inversa;
 
-El paquete de complementos de AEM Forms también incluye la configuración de OData de referencia, que puede aprovechar para integrar rápidamente Microsoft Dynamics con AEM Forms.
+El paquete de complementos de AEM Forms también incluye la configuración de OData de referencia, que puede utilizar para integrar rápidamente Microsoft Dynamics con AEM Forms.
 
 Cuando se instala el paquete, las siguientes entidades y servicios están disponibles en la instancia de AEM Forms:
 

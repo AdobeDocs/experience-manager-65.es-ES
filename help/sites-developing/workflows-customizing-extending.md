@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 2%
@@ -803,7 +803,7 @@ Una manera sencilla de empezar a crear su propio paso personalizado es copiar un
    >
    >Este paso no se aplica al editor del modelo de interfaz de usuario clásico.
 
-1. A continuación, coloque el paso copiado en la carpeta /apps; por ejemplo:
+1. A continuación, coloque el paso copiado en la carpeta /apps; por ejemplo, como:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -1042,4 +1042,4 @@ El `_cq_dialog/.content.xml` ejemplo utilizado en este ejemplo:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  No debe modificar nada en `/libs`, utilícelos simplemente como ejemplos. Si desea aprovechar cualquiera de los pasos existentes, cópielos en `/apps` y modifíquelas allí.
+>  No debe modificar nada en `/libs`, utilícelos simplemente como ejemplos. Si desea utilizar cualquiera de los pasos existentes, cópielos en `/apps` y modifíquelas allí.

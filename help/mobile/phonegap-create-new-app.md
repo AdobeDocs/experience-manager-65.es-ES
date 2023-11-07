@@ -1,23 +1,19 @@
 ---
-title: Creación de una nueva aplicación de AEM Mobile mediante el asistente de creación
-seo-title: Creating a new AEM Mobile app using create wizard
-description: Las aplicaciones de AEM Mobile se basan en un modelo que define una estructura y propiedades de página. Siga esta página para obtener más información sobre cómo crear una aplicación nueva basada en una plantilla de aplicación.
-seo-description: AEM Mobile apps are based on a blueprint that defines a page structure and properties. Follow this page to learn about how to create a new app based on an app template.
-uuid: c2bd63a5-3dff-4a72-b1fb-0c776e0afa33
+title: Creación de una aplicación de AEM Mobile mediante el asistente de creación
+description: Las aplicaciones de AEM Mobile se basan en un modelo que define una estructura y propiedades de página. Siga esta página para obtener más información sobre cómo crear una aplicación basada en una plantilla de aplicación.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '632'
 ht-degree: 1%
 
 ---
 
-# Creación de una nueva aplicación de AEM Mobile mediante el asistente de creación{#creating-a-new-aem-mobile-app-using-create-wizard}
+# Creación de una aplicación de AEM Mobile mediante el asistente de creación{#creating-a-new-aem-mobile-app-using-create-wizard}
 
 >[!NOTE]
 >
@@ -41,16 +37,16 @@ Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e
 
 ## Uso de plantillas de aplicación {#using-app-templates}
 
-AEM Las plantillas de aplicación ofrecen una forma sencilla de aprovechar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la plataforma de creación de aplicaciones de la plataforma de creación de aplicaciones de.
+AEM Las plantillas de aplicación ofrecen una forma sencilla de utilizar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
 
 ¿Qué es una plantilla de aplicación? Considérelo como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
-Al crear una aplicación nueva basada en la plantilla de otra aplicación, obtendrá una aplicación que tenga un punto de partida representativo de la aplicación en la que se creó.
+Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.
 
 Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para utilizar esta función.
 
 AEM El último paquete de ejemplos de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación incluye una versión actualizada de la Geometrixx con una plantilla de aplicación. También puede instalar el [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) que también proporciona una plantilla.
 
-Pasos para crear una nueva aplicación basada en una plantilla de aplicación:
+Pasos para crear una aplicación basada en una plantilla de aplicación:
 
 1. Vaya al catálogo de aplicaciones de AEM Mobile: &lt;*server-url*>aem/apps.html/content/mobileapps
 1. Seleccionar **Crear** y luego elija **Aplicación** como se muestra a continuación

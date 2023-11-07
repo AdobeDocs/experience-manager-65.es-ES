@@ -2,13 +2,13 @@
 sub-product: AEM Headless Journeys
 user-guide-title: Recorridos sin AEM
 breadcrumb-title: Recorridos sin AEM
-user-guide-description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su proyecto.
+user-guide-description: Comience aquí para obtener un recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los, sus capacidades y cómo utilizarlas en su proyecto.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 

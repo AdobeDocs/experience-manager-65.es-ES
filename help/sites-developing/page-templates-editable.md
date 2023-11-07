@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 7%
+source-wordcount: '3219'
+ht-degree: 6%
 
 ---
 
@@ -56,7 +56,7 @@ La creación de plantillas editables se realiza principalmente con [consola de p
 
 AEM Para obtener más información sobre cómo utilizar plantillas editables en un proyecto de, consulte [AEM Creación de un proyecto de con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Al crear una nueva plantilla editable, haga lo siguiente:
+Al crear una plantilla editable, debe hacer lo siguiente:
 
 1. Crear un [carpeta para las plantillas](#template-folders). Esta carpeta no es obligatoria, pero se recomienda como práctica recomendada.
 1. Seleccione una [tipo de plantilla](#template-type). Este tipo se copia para crear el [definición de plantilla](#template-definitions).
@@ -416,7 +416,7 @@ El [grupos de dispositivos](/help/sites-developing/mobile.md#device-groups) se u
 * En el tipo de plantilla editable
 * En la plantilla editable
 
-Al crear una nueva plantilla editable, el valor se copia del tipo de plantilla en la plantilla individual. Si el valor no se establece en el tipo, se puede establecer en la plantilla. Una vez creada una plantilla, no hay herencia del tipo a la plantilla.
+Al crear una plantilla editable, el valor se copia del tipo de plantilla en la plantilla individual. Si el valor no se establece en el tipo, se puede establecer en la plantilla. Una vez creada una plantilla, no hay herencia del tipo a la plantilla.
 
 >[!CAUTION]
 >

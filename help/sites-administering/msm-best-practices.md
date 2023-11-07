@@ -4,10 +4,10 @@ description: Encuentre las prácticas recomendadas recopiladas por los equipos d
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 42%
+source-wordcount: '1609'
+ht-degree: 40%
 
 ---
 
@@ -52,7 +52,7 @@ Los beneficios adicionales de utilizar una configuración de modelo son que:
 
 En caso de que no se haga referencia a una configuración de modelo, los despliegues solo se pueden iniciar desde las propias Live Copies, lo que básicamente extrae contenido del origen.
 
-Al crear un nuevo sitio con Live Copy, resulta ventajoso crear configuraciones de modelo para garantizar la disponibilidad del conjunto completo de funciones MSM.
+Al crear un sitio con Live Copy, resulta ventajoso crear configuraciones de modelo para garantizar la disponibilidad del conjunto completo de funciones MSM.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ AEM Tenga en cuenta que tiene dos enfoques principales para crear Live Copies:
 
 A continuación se indican algunas consideraciones que se deben tener en cuenta al crear un sitio:
 
-* Para crear un nuevo sitio, necesita una [configuración de modelo](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Para crear un sitio, necesita un [configuración de modelo](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Para permitir la selección de rutas de idioma a crear en un sitio nuevo, las raíces de idioma correspondientes deben existir en el modelo (fuente).
 * Una vez al [se ha creado un nuevo sitio como live copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (con **Crear**, entonces **Sitio**), los dos primeros niveles de esta live copy son *superficial*. Los elementos secundarios de la página no pertenecen a la relación dinámica, pero se desplegará si se encuentra una relación dinámica que coincida con el activador.
 
@@ -103,7 +103,7 @@ MSM puede ayudar en la creación de sitios web multilingües de dos maneras:
 
 * Al crear formatos de idiomas.
 
-   * Mientras que MSM en sí **no proporciona traducción de contenido**, se puede integrar con conectores de traducción de terceros que sí lo hagan. Tenga en cuenta lo siguiente:
+   * Mientras que MSM en sí **no proporciona traducción de contenido**, se puede integrar con conectores de traducción de terceros que sí lo hagan. Tenga en cuenta que:
 
       * MSM le permite cancelar la herencia en el nivel de página o componente. Esto ayuda a evitar sobrescribir el contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en el siguiente despliegue.
       * Algunos conectores de traducción de terceros automatizan esta administración de las herencias de MSM.

@@ -2,10 +2,10 @@
 title: Configuración de la integración de traducción
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1159'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Una vez instalado el paquete de conector para el servicio de traducción preferi
 * Si se va a realizar una traducción humana o automática
 * Si se debe traducir otro contenido asociado al fragmento de contenido, como, por ejemplo, las etiquetas.
 
-Para crear una nueva configuración de traducción:
+Para crear una configuración de traducción:
 
 1. En el menú de navegación global, toque o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. Esto suele basarse en un proyecto en particular o puede ser global.

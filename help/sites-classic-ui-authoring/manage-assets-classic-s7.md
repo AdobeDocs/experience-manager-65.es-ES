@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3532'
 ht-degree: 0%
@@ -105,7 +105,7 @@ El Adobe recomienda publicar los recursos en Dynamic Media Classic (Scene7) úni
 
 1. En la barra de tareas, seleccione **[!UICONTROL Página]** y seleccione **[!UICONTROL Propiedades de página]**.
 
-1. Seleccionar **[!UICONTROL Cloud Services]**.
+1. Seleccionar **[!UICONTROL Cloud Service]**.
 1. Seleccionar **[!UICONTROL Agregar servicios]**.
 1. Seleccionar **[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. En el **[!UICONTROL Adobe Dynamic Media Classic (Scene7)]** , seleccione la configuración que desee y seleccione **[!UICONTROL OK]**.
@@ -175,7 +175,7 @@ El diseño interactivo para sus recursos significa que los recursos se adaptará
 
 Para agregar una experiencia de visualización interactiva a un sitio adaptable en la IU clásica:
 
-1. Inicie sesión en el Experience Manager de y asegúrese de que dispone de lo siguiente [Cloud Services configurados de Adobe Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#configuring-scene-integration) y que los componentes de Dynamic Media Classic (Scene7) están disponibles.
+1. Inicie sesión en el Experience Manager de y asegúrese de que dispone de lo siguiente [Cloud Service configurados de Adobe Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#configuring-scene-integration) y que los componentes de Dynamic Media Classic (Scene7) están disponibles.
 
    >[!NOTE]
    >
@@ -216,7 +216,7 @@ En el componente flotante HTML 5, el recurso se muestra como una pantalla dividi
 >
 >Si el componente flotante utiliza un tamaño personalizado, se utilizará ese tamaño personalizado y la configuración adaptable del componente estará desactivada.
 >
->Si el componente flotante utiliza el tamaño predeterminado, tal como se establece en la vista Diseño, se utilizará el tamaño predeterminado. El componente se expande para dar cabida al tamaño del diseño de página con la configuración adaptable del componente habilitada. Sin embargo, tenga en cuenta que existe una limitación en la configuración interactiva del componente. Cuando utilice el componente flotante con configuración adaptable, no debe utilizarlo con ampliación de página completa. De lo contrario, el menú flotante puede extenderse más allá del borde derecho de la página.
+>Si el componente flotante utiliza el tamaño predeterminado, tal como se establece en la vista Diseño, se utilizará el tamaño predeterminado. El componente se amplía para dar cabida al tamaño del diseño de página con la configuración adaptable del componente habilitada. Sin embargo, tenga en cuenta que existe una limitación en la configuración interactiva del componente. Cuando utilice el componente flotante con configuración adaptable, no debe utilizarlo con ampliación de página completa. De lo contrario, el menú flotante puede extenderse más allá del borde derecho de la página.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -238,7 +238,7 @@ El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcio
 
 **Ajuste preestablecido de imagen** - Seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
-**Formato de salida** - Seleccione el formato de salida de la imagen, por ejemplo jpeg. Según el formato de salida seleccionado, puede tener opciones de configuración adicionales. Consulte Prácticas recomendadas de ajustes preestablecidos de imagen.
+**Formato de salida** : seleccione el formato de salida de la imagen como, por ejemplo, jpeg. Según el formato de salida seleccionado, puede tener opciones de configuración adicionales. Consulte Prácticas recomendadas de ajustes preestablecidos de imagen.
 
 **Enfoque** - Seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en Prácticas recomendadas de ajustes preestablecidos de imagen y Prácticas recomendadas de enfoque.
 
@@ -381,7 +381,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuración** : si tiene más de una configuración de Dynamic Media Classic (Scene7) definida en Cloud Services, puede seleccionarla aquí. Como resultado, la carpeta cambia según la configuración elegida.
+**Configuración** : si tiene más de una configuración de Dynamic Media Classic (Scene7) definida en Cloud Service, puede seleccionarla aquí. Como resultado, la carpeta cambia según la configuración elegida.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 

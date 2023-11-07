@@ -12,9 +12,9 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2220'
 ht-degree: 6%
 
 ---
@@ -55,11 +55,11 @@ Cuando se agrega una función de la comunidad a una plantilla de sitio de la com
 
 * **Título**
 
-   (*Requerido*) Texto que aparece en el menú de funciones del sitio
+  (*Requerido*) Texto que aparece en el menú de funciones del sitio
 
 * **URL**
 
-   (*Requerido*) Nombre utilizado para generar el URI. El nombre debe ajustarse a la variable [convenciones de nomenclatura](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
+  (*Requerido*) Nombre utilizado para generar el URI. El nombre debe ajustarse a la variable [convenciones de nomenclatura](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
 
 Por ejemplo, al usar el sitio creado a partir de, se sigue el [Primeros pasos](/help/communities/getting-started.md) tutorial, si
 
@@ -86,15 +86,15 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * **Mostrar vista de “Mis actividades”**
 
-   Si se selecciona, la página Actividades incluye una pestaña que filtra las actividades en función de las que genera el miembro actual dentro de la comunidad. La opción predeterminada está seleccionada.
+  Si se selecciona, la página Actividades incluye una pestaña que filtra las actividades en función de las que genera el miembro actual dentro de la comunidad. La opción predeterminada está seleccionada.
 
 * **Mostrar vista de “todas las actividades”**
 
-   Si se selecciona, la página Actividades incluye una pestaña que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. La opción predeterminada está seleccionada.
+  Si se selecciona, la página Actividades incluye una pestaña que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. La opción predeterminada está seleccionada.
 
 * **Mostrar vista de “Últimas noticias”**
 
-   Si se selecciona, las páginas Actividades incluyen una pestaña que filtra las actividades en función de las que sigue el miembro actual. La opción predeterminada está seleccionada.
+  Si se selecciona, las páginas Actividades incluyen una pestaña que filtra las actividades en función de las que sigue el miembro actual. La opción predeterminada está seleccionada.
 
 ### Función Blog {#blog-function}
 
@@ -108,19 +108,19 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el blog solo permite a los miembros privilegiados crear artículos al permitir la selección de una [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, se permite crear a todos los miembros de la comunidad. La opción predeterminada no está seleccionada.
+  Si se selecciona, el blog solo permite a los miembros privilegiados crear artículos al permitir la selección de una [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, se permite crear a todos los miembros de la comunidad. La opción predeterminada no está seleccionada.
 
 * **Permitir cargas de archivos**
 
-   Si se selecciona, el blog incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
+  Si se selecciona, el blog incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
 
 * **Permitir respuestas de debate**
 
-   Si no está seleccionado, el blog permite las respuestas (comentarios) a un artículo, pero no las respuestas a los comentarios. La opción predeterminada está seleccionada.
+  Si no está seleccionado, el blog permite las respuestas (comentarios) a un artículo, pero no las respuestas a los comentarios. La opción predeterminada está seleccionada.
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, el blog se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
+  Si se selecciona, el blog se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
 
 ### Función Calendario {#calendar-function}
 
@@ -134,23 +134,23 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * **Permitir fijación**
 
-   Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
+  Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el blog solo permite a los miembros privilegiados crear artículos al permitir la selección de una [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, se permite crear a todos los miembros de la comunidad. La opción predeterminada no está seleccionada.
+  Si se selecciona, el blog solo permite a los miembros privilegiados crear artículos al permitir la selección de una [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, se permite crear a todos los miembros de la comunidad. La opción predeterminada no está seleccionada.
 
 * **Permitir cargas de archivos**
 
-   Si se selecciona, el blog incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
+  Si se selecciona, el blog incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
 
 * **Permitir respuestas de debate**
 
-   Si no está seleccionado, el blog permite las respuestas (comentarios) a un artículo, pero no las respuestas a los comentarios. La opción predeterminada está seleccionada.
+  Si no está seleccionado, el blog permite las respuestas (comentarios) a un artículo, pero no las respuestas a los comentarios. La opción predeterminada está seleccionada.
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, su contenido se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
+  Si se selecciona, su contenido se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
 
 ### Función Contenido destacado {#featured-content-function}
 
@@ -180,23 +180,23 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * **Permitir fijación**
 
-   Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
+  Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
+  Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
 
 * **Permitir cargas de archivos**
 
-   Si se selecciona, el foro incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
+  Si se selecciona, el foro incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
 
 * **Permitir respuestas de debate**
 
-   Si no está seleccionado, el foro permite comentarios sobre un tema, pero no se permiten las respuestas a esos comentarios. La opción predeterminada está seleccionada.
+  Si no está seleccionado, el foro permite comentarios sobre un tema, pero no se permiten las respuestas a esos comentarios. La opción predeterminada está seleccionada.
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, el contenido del componente se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
+  Si se selecciona, el contenido del componente se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
 
 ### Función Grupos {#groups-function}
 
@@ -222,22 +222,22 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * **Seleccione las plantillas de grupo**
 
-   Lista desplegable que permite seleccionar una o más plantillas de grupo habilitadas entre las que puede elegir el futuro creador de un nuevo grupo de comunidad (en el entorno de publicación).
+  Lista desplegable que permite seleccionar una o más plantillas de grupo habilitadas entre las que puede elegir el futuro creador de un nuevo grupo de comunidad (en el entorno de publicación).
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
+  Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
 
 * **Permitir la creación de publicación**
 
-   Si se selecciona, los miembros de la comunidad autorizados pueden crear un grupo en el entorno de publicación. Si no se selecciona, los nuevos grupos (subcomunidades) solo se pueden crear en el entorno de creación desde la consola Grupos de sitios de comunidades.
+  Si se selecciona, los miembros de la comunidad autorizados pueden crear un grupo en el entorno de publicación. Si no se selecciona, los nuevos grupos (subcomunidades) solo se pueden crear en el entorno de creación desde la consola Grupos de sitios de comunidades.
 La opción predeterminada está seleccionada.
 
 ### Función ideación {#ideation-function}
 
 La función de ideación es una página con uno [Componente de ideación](/help/communities/ideation-feature.md).
 
-Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que especifica los nombres predeterminados de Título y Dirección URL, así como la configuración de visualización predeterminada de la plantilla:
+Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que especifica los nombres predeterminados de Título y URL, y la configuración de visualización predeterminada para la plantilla:
 
 ![ideación-función](assets/ideation-function.png)
 
@@ -245,19 +245,19 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que e
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
+  Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
 
 * **Permitir cargas de archivos**
 
-   Si se selecciona, la idea incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
+  Si se selecciona, la idea incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
 
 * **Permitir respuestas de debate**
 
-   Si no está seleccionada, la idea permite las respuestas (comentarios) a un tema, pero no las respuestas a comentarios. La opción predeterminada está seleccionada.
+  Si no está seleccionada, la idea permite las respuestas (comentarios) a un tema, pero no las respuestas a comentarios. La opción predeterminada está seleccionada.
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, su contenido se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
+  Si se selecciona, su contenido se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
 
 ### Función de la tabla de clasificación {#leaderboard-function}
 
@@ -265,7 +265,7 @@ La función de clasificación es una página con uno [Componente de clasificaci�
 
 **NOTA**: el componente Tabla de posiciones necesita más configuración *después* se crea un sitio de comunidad a partir de una plantilla de comunidad que incluye la función Tabla de posiciones. Especifique el componente de la tabla de posiciones [reglas](/help/communities/enabling-leaderboard.md#rules-tab), que dependen de la configuración de [puntuación y distintivos](/help/communities/implementing-scoring.md) para el sitio de la comunidad.
 
-Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que especifica los nombres predeterminados de Título y Dirección URL, así como la configuración de visualización predeterminada de la plantilla:
+Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que especifica los nombres predeterminados de Título y URL, y la configuración de visualización predeterminada para la plantilla:
 
 ![cuadro de diálogo de clasificación](assets/leaderboard-dialog.png)
 
@@ -273,17 +273,17 @@ Cuando se agrega a una plantilla, se abre el siguiente cuadro de diálogo, que e
 
 * **Mostrar distintivo**
 
-   Si se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
+  Si se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
 La opción predeterminada no está seleccionada.
 
 * **Mostrar nombre del distintivo**
 
-   Si se selecciona, se incluye en la tabla de clasificación una columna para el nombre del distintivo.
+  Si se selecciona, se incluye en la tabla de clasificación una columna para el nombre del distintivo.
 La opción predeterminada no está seleccionada.
 
 * **Mostrar avatar**
 
-   Si se selecciona, la imagen de avatar del miembro se incluirá en la tabla de clasificación, junto al vínculo de su nombre a su perfil de miembro.
+  Si se selecciona, la imagen de avatar del miembro se incluirá en la tabla de clasificación, junto al vínculo de su nombre a su perfil de miembro.
 La opción predeterminada no está seleccionada.
 
 ### Función Página {#page-function}
@@ -304,23 +304,23 @@ Cuando se agrega a una plantilla, la configuración permite la restricción a lo
 
 * **Permitir fijación**
 
-   Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
+  Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el foro de control de calidad solo permite a los miembros privilegiados publicar preguntas al permitir la selección de una [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
+  Si se selecciona, el foro de control de calidad solo permite a los miembros privilegiados publicar preguntas al permitir la selección de una [grupo de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
 
 * **Permitir cargas de archivos**
 
-   Si se selecciona, el foro de control de calidad incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
+  Si se selecciona, el foro de control de calidad incluye la capacidad para que los miembros carguen archivos. La opción predeterminada está seleccionada.
 
 * **Permitir respuestas de debate**
 
-   Si no está seleccionado, el foro de control de calidad permite comentarios (respuestas) a una pregunta publicada, pero no se permiten respuestas a las respuestas. La opción predeterminada está seleccionada.
+  Si no está seleccionado, el foro de control de calidad permite comentarios (respuestas) a una pregunta publicada, pero no se permiten respuestas a las respuestas. La opción predeterminada está seleccionada.
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, su contenido se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
+  Si se selecciona, su contenido se identifica como [contenido destacado](/help/communities/featured.md). La opción predeterminada está seleccionada.
 
 ## Crear función de la comunidad {#create-community-function}
 
@@ -336,15 +336,15 @@ En el panel Nombre de función de la comunidad, se configura un nombre, una desc
 
 * **Nombre de función de la comunidad**
 
-   El nombre de función utilizado para la visualización y el almacenamiento.
+  El nombre de función utilizado para la visualización y el almacenamiento.
 
 * **Descripción de la función de la comunidad**
 
-   Descripción de la función que se va a mostrar.
+  Descripción de la función que se va a mostrar.
 
 * **Desactivado/Habilitado**
 
-   Conmutador que controla si la función es referenciable.
+  Conmutador que controla si la función es referenciable.
 
 ### Modelo AEM {#aem-blueprint}
 

@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 0%
@@ -22,12 +22,12 @@ Como especialista en marketing, puede almacenar y administrar plantillas en [!DN
 
 Mientras que las plantillas de recursos son principalmente [!DNL Adobe InDesign] archivos, competencia en [!DNL Adobe InDesign] no es una barrera para crear artefactos estelares. No es necesario asignar los campos del [!DNL Adobe InDesign] plantilla con los campos de producto que, de lo contrario, deberá rellenar al crear catálogos. Puede editar las plantillas en modo WYSIWYG directamente en la interfaz web. Sin embargo, para [!DNL Adobe InDesign] para procesar los cambios de edición, primero debe configurar [!DNL Experience Manager Assets] para integrar con [!DNL Adobe InDesign Server].
 
-La capacidad de edición [!DNL Adobe InDesign] Las plantillas de la interfaz web ayudan a fomentar la buena colaboración entre el personal creativo y de marketing. El aumento de la velocidad de contenido reduce el tiempo de comercialización de las garantías reales de marketing.
+La capacidad de edición [!DNL Adobe InDesign] Las plantillas de la interfaz web ayudan a fomentar una mayor colaboración entre el personal creativo y de marketing. El aumento de la velocidad de contenido reduce el tiempo de comercialización de las garantías reales de marketing.
 
 Puede lograr lo siguiente con las plantillas de recursos:
 
 * Modifique los campos de plantilla editables desde la interfaz web.
-* Controle el estilo básico del texto, por ejemplo el tamaño de fuente, el estilo y el tipo en el nivel de etiqueta.
+* Controle el estilo básico del texto, por ejemplo, el tamaño de fuente, el estilo y el tipo en el nivel de etiqueta.
 * Cambiar imágenes dentro de la plantilla mediante el Selector de contenido.
 * Previsualizar ediciones de plantilla.
 * Combine varios archivos de plantilla para crear un artefacto de varias páginas.
@@ -120,13 +120,11 @@ Puede editar un material colateral inmediatamente después de crearlo. Como alte
    >
    >* Las imágenes no están incrustadas en el subyacente [!DNL InDesign] plantilla.
    >* Las imágenes están vinculadas desde el sistema de archivos local.
-
    >
    >Para habilitar [!DNL Experience Manager] para resolver imágenes, haga lo siguiente:
    >
    >* Incrustar imágenes al crear [!DNL InDesign] plantillas (consulte [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Montar [!DNL Experience Manager] al sistema de archivos local y, a continuación, asigne los iconos que faltan a los recursos existentes en [!DNL Experience Manager].
-
    >
    >Para obtener más información sobre cómo trabajar con [!DNL InDesign] documentos, consulte [prácticas recomendadas para trabajar con documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 

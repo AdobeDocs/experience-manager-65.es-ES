@@ -2,10 +2,10 @@
 title: AEM Creación y organización de páginas con la función de
 description: Obtenga información sobre cómo crear y administrar páginas con Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2434'
-ht-degree: 78%
+source-wordcount: '2412'
+ht-degree: 70%
 
 ---
 
@@ -21,11 +21,11 @@ En esta sección se describe cómo crear y administrar páginas con Adobe Experi
 
 >[!NOTE]
 >
->Existen varios [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) que puede utilizar desde la consola de sitios web, y que le permitirán organizar las páginas de forma más eficaz.
+>Hay varios [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) que puede utilizar desde la consola sitios web para organizar las páginas de forma más eficaz.
 
 ## Organizar el sitio web {#organizing-your-website}
 
-Como creador, deberá organizar el sitio web dentro de AEM. Esto implica crear y asignar un nombre a las páginas de contenido para que:
+AEM Como creador, organice el sitio web dentro de la organización de. Esto implica crear y asignar un nombre a las páginas de contenido para que:
 
 * Pueda encontrarlas con facilidad en el entorno de creación
 * Los usuarios que visiten el sitio web puedan explorarlas fácilmente en el entorno de publicación
@@ -78,7 +78,7 @@ Desde cualquier punto, podrá ver la rama hacia arriba desde las rutas en la bar
 
 ### Convenciones de nomenclatura de páginas {#page-naming-conventions}
 
-Al crear una nueva página, hay dos campos de claves:
+Al crear una página, hay dos campos de claves:
 
 * **[Título](#title)**:
 
@@ -104,7 +104,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos. 
 
-Al crear una página nueva, AEM [valida su nombre según las convenciones](/help/sites-developing/naming-conventions.md) que establecen tanto AEM como JCR.
+AEM Al crear una página, se debe hacer lo siguiente [valida el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
 
 El mínimo permitido de caracteres es:
 
@@ -122,7 +122,7 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 #### Título {#title}
 
-Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre** de página de esta cadena y lo [validará según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
+Si proporciona solo una página **Título** AEM al crear una página, se deriva la página de forma de **Nombre** de esta cadena y [valide el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR. Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -131,7 +131,7 @@ Si proporciona solo un **título** de página al crear una nueva página, AEM de
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. AEM Cuando se detecta la existencia de caracteres no válidos, el campo se resalta con un mensaje explicativo.
+Cuando se proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. AEM Cuando se detecta la existencia de caracteres no válidos, el campo se resalta con un mensaje explicativo.
 
 ![caop-02](assets/caop-02.png)
 
@@ -143,7 +143,7 @@ Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nom
 
 ### Plantillas {#templates}
 
-En AEM, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
+En AEM, una plantilla especifica un tipo de página especializado. Se utiliza una plantilla como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
@@ -183,7 +183,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
 1. Abra la consola Sitios (por ejemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
-1. Abra el selector desplegable seleccionando **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
+1. Abra el selector desplegable con **Crear** en la barra de herramientas y, a continuación, seleccione **Página** en la lista:
 
    ![caop-03](assets/caop-03.png)
 
@@ -210,7 +210,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
-      * Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
+      * Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
 
       * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
@@ -218,7 +218,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    >
    >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página nueva es el **Título**.
+   La información mínima necesaria para crear una página es la siguiente **Título**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -228,7 +228,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
    >[!NOTE]
    >
-   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `winter` ya existe, la página nueva pasará a llamarse `winter0`.
+   >Si crea una página con un nombre que ya existe en la ubicación, el sistema generará automáticamente una variación del nombre añadiéndole un número. Por ejemplo, si `winter` ya existe. una nueva página se convertirá en `winter0`.
 
 1. Al volver a la consola, podrá ver la nueva página:
 
@@ -278,17 +278,17 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
    >Si está en modo de selección, esto se abandona automáticamente en cuanto se copia la página.
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
-1. El icono **Pegar** está disponible con una flecha desplegable directamente a la derecha:
+1. El **Pegar** está disponible con una flecha desplegable directamente a la derecha:
 
    ![Pegar](assets/paste-without-children.png)
 
    Puede:
    * Seleccione el icono **Pegar** página: En esta ubicación, se creará una copia de la página original y de las páginas secundarias.
-   * Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios**. Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
+   * Seleccione la flecha desplegable para mostrar el **Pegar sin elementos secundarios** opción. Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
 
    >[!NOTE]
    >
-   >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema genera automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema genera automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe `winter` se convertirá en `winter1`.
 
 ### Mover una página o cambiarle el nombre {#moving-or-renaming-a-page}
 
@@ -332,7 +332,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    >[!NOTE]
    >
-   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe `winter` se convertirá en `winter1`.
 
 1. En el paso **Seleccionar destino** del asistente puede realizar una de las acciones siguientes:
 
@@ -351,7 +351,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    >[!NOTE]
    >
-   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
+   >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe `winter` se convertirá en `winter1`.
 
 1. Si la página está vinculada, si se hace referencia a ella o si se ha publicado, los detalles aparecen en el paso **Ajustar/Volver a publicar**.
 

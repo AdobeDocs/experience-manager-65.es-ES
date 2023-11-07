@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 88%
+source-wordcount: '1304'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Esto elimina la necesidad de desarrollar un componente personalizado para cada e
 
 ## Caso práctico    {#use-case}
 
-Los autores de plantillas no solo necesitan la capacidad de configurar el funcionamiento de los componentes para los autores de contenido, sino también de configurar una serie de variaciones visuales alternativas de un componente.
+Los autores de plantillas no solo necesitan la capacidad de configurar el funcionamiento de los componentes para los autores de contenido, sino también de configurar varias variaciones visuales alternativas de un componente.
 
 Del mismo modo, los autores de contenido no solo necesitan la capacidad de estructurar y organizar su contenido, sino también de seleccionar cómo se presenta visualmente.
 
@@ -111,7 +111,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 >[!CAUTION]
 >
->Las clases CSS (así como cualquier código JavaScript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/sites-developing/clientlibs.md) para trabajar.
+>Las clases CSS (y cualquier código JavaScript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/sites-developing/clientlibs.md) para trabajar.
 
 ## Configuración {#setup}
 

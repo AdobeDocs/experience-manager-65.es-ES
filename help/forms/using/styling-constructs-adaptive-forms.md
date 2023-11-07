@@ -10,9 +10,9 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2363'
 ht-degree: 97%
 
 ---
@@ -27,7 +27,7 @@ Conocimiento de CSS y del marco de trabajo LESS.
 
 ## Qué se puede personalizar {#what-can-be-customized}
 
-El artículo enumera las clases de css disponibles públicamente de los formularios adaptables. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como los cuadros de diálogo y las barras de estado que muestran advertencias, excede el ámbito de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Less) solo cuando no pueda aplicar estilo a los componentes con el [editor de temáticas](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/themes.html).
+El artículo enumera las clases de css disponibles públicamente de los formularios adaptables. Puede utilizar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como los cuadros de diálogo y las barras de estado que muestran advertencias, excede el ámbito de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Less) solo cuando no pueda aplicar estilo a los componentes con el [editor de temáticas](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizar estilos en formularios adaptables {#customizing-styles-in-adaptive-forms}
 
@@ -944,7 +944,7 @@ Un panel incluye una barra de herramientas opcional y su contenido.
  </tbody>
 </table>
 
-El nodo del panel se divide en navegadores y contenido. No `` `` hay ningún componente de estilo independiente para el contenido. Las variables descritas se aplican tanto en el navegador como en el contenido.
+El nodo del panel se divide en navegadores y contenido. No `` `` hay ningún componente de estilo independiente para el contenido. Las variables descritas se aplican al navegador y al contenido.
 
 El panel superior (RootPanel) no tiene esta clase.
 

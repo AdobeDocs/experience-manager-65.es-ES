@@ -1,16 +1,14 @@
 ---
 title: Segmentación de Adobe Campaign
 description: La configuración de la segmentación incluye la creación de segmentos, una marca, una campaña y experiencias.
-uuid: 520cd006-0aa8-43f3-b754-efb7397bb92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -32,9 +30,9 @@ La configuración de la segmentación incluye la creación de segmentos, una mar
 Para crear segmentos:
 
 1. Abra el [consola de segmentación](http://localhost:4502/miscadmin#/etc/segmentation) en **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Cree una nueva página e introduzca un título; por ejemplo, **Segmentos de CA** - y seleccione el **Segmento (Adobe Campaign)** plantilla.
+1. Cree una página e introduzca un título; por ejemplo, **Segmentos de CA** - y seleccione el **Segmento (Adobe Campaign)** plantilla.
 1. Seleccione la página creada en la vista de árbol de la izquierda.
-1. Cree un segmento, por ejemplo segmentando los usuarios masculinos, creando una nueva página en el segmento que ha creado llamada Hombre y seleccione **Segmento (Adobe Campaign)** plantilla.
+1. Cree un segmento, por ejemplo, dirigido a usuarios hombres, creando una página en el segmento que ha creado llamada Hombre y seleccione **Segmento (Adobe Campaign)** plantilla.
 1. Abra la página de segmentos creada y arrastre y suelte un **ID del segmento** de la barra de tareas a la página.
 1. Haga doble clic en la característica e introduzca el ID que representa, en este caso, el segmento masculino definido en Adobe Campaign; por ejemplo, **MASCULINO** - y haga clic en **OK**. Debe aparecer el siguiente mensaje: `targetData.segmentCode == "MALE"`
 1. Repita los pasos para otro segmento, por ejemplo, un segmento dirigido a mujeres.
@@ -50,19 +48,19 @@ Para crear una marca:
 
 Para crear una campaña:
 
-1. Abra el **Marca** página que acaba de crear.
+1. Abra el **Marca** página que ha creado.
 1. Clic **Crear página** y escriba un título para su página, por ejemplo, We.Retail Campaign, y seleccione **Campaign** y haga clic en **Crear**.
 
 ### Creación de experiencias {#creating-experiences}
 
 Para crear experiencias para segmentos:
 
-1. Abra el **Campaign** página que acaba de crear.
+1. Abra el **Campaign** página que ha creado.
 1. Cree experiencias para sus segmentos haciendo clic en **Crear página** y escriba un título para su página, por ejemplo, Hombre mientras crea una experiencia para el segmento Hombre, y seleccione **Experiencia** plantilla.
 1. Abra la página de experiencia creada.
 1. Clic **Editar**, a continuación, haga clic en Segmentos **Agregar elemento**.
-1. Introduzca la ruta al segmento masculino, por ejemplo `/etc/segmentation/ac-segments/male` y haga clic en **OK**. Debe aparecer el siguiente mensaje: *La experiencia se dirige a: Hombre*
-1. Repita los pasos anteriores para crear una experiencia para todos los segmentos, por ejemplo el segmento femenino.
+1. Introduzca la ruta al segmento masculino, por ejemplo, `/etc/segmentation/ac-segments/male` y haga clic en **OK**. Debe aparecer el siguiente mensaje: *La experiencia se dirige a: Hombre*
+1. Repita los pasos anteriores para crear una experiencia para todos los segmentos, por ejemplo, el segmento femenino.
 
 ## Creación de una newsletter con contenido de destino {#creating-a-newsletter-with-targeted-content}
 
@@ -76,7 +74,7 @@ Para crear una newsletter con contenido de destino:
 
    >[!NOTE]
    >
-   >[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md#weretail). Descargue contenido de Geometrixx de ejemplo desde Package Share.
+   >[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md#weretail). Descargar contenido de Geometrixx de muestra desde Package Share.
 
 1. En la newsletter, añada un componente Texto y personalización.
 1. Agregue texto al componente Texto y personalización, como &quot;Este es el predeterminado&quot;.

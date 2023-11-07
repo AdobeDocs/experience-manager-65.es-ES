@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 19%
 
 ---
@@ -53,13 +53,13 @@ Además de utilizar predicados preexistentes, [!DNL Experience Manager] los desa
 
 La creación de predicados personalizados requiere conocimientos básicos sobre [Marco de widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-La práctica recomendada es copiar un predicado existente y ajustarlo. Los predicados de muestra se encuentran en **/libs/cq/search/components/predicates**.
+La práctica recomendada es copiar un predicado existente y ajustarlo. Los predicados de muestra están en **/libs/cq/search/components/predicates**.
 
 ### Ejemplo: Creación de un predicado de propiedad simple {#example-build-a-simple-property-predicate}
 
 Para generar un predicado de propiedad:
 
-1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo **/apps/weretail/components/titlepredicate**.
+1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo, **/apps/weretail/components/titlepredicate**.
 1. Añadir **content.xml**:
 
    ```xml
@@ -89,7 +89,7 @@ Para generar un predicado de propiedad:
    
        <div class="title">Title</div>
    
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are appended to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
    
    </div><script type="text/javascript">
@@ -108,7 +108,7 @@ Para generar un predicado de propiedad:
            var id = qb.createId(predicateName);
    
            // Hidden field that defines the property to search for; in our case this
-           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" etc.)
+           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" and so on.)
            // indicates the server to use the property predicate
            // (com.day.cq.search.eval.JcrPropertyPredicateEvaluator).
            qb.addField({
@@ -152,7 +152,7 @@ Para generar un predicado de propiedad:
 
 Para generar un predicado de grupo:
 
-1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo **/apps/weretail/components/picspredicate**.
+1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo, **/apps/weretail/components/picspredicate**.
 1. Añadir **content.xml**:
 
    ```xml
@@ -182,7 +182,7 @@ Para generar un predicado de grupo:
    
        <div class="title">Image Formats</div>
    
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are append to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
    
    </div><script type="text/javascript">
@@ -228,7 +228,7 @@ Para generar un predicado de grupo:
                qb.addField({
                    "xtype": "checkbox",
                    "renderTo": "<%= elemId %>",
-                   // 1_group.property.0_value, 1_group.property.1_value etc.
+                   // 1_group.property.0_value, 1_group.property.1_value and so on.
                    "name": groupId + "." +  predicateName + "." + i + "_value",
                    "inputValue": options[i].value,
                    "boxLabel": options[i].label,

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1825'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ AEM Esta integración permite que la integración de los segmentos de datos y de
 
 ## Pasos de integración {#integration-steps}
 
-AEM La configuración de la integración entre y Adobe Campaign Standard requiere una serie de pasos en ambas soluciones.
+AEM La configuración de la integración entre y Adobe Campaign Standard requiere varios pasos en ambas soluciones.
 
 1. [Configure las variables ](#aemserver-user)
 1. [Compruebe el ](#resource-type-filter)
@@ -63,7 +63,7 @@ Adobe Campaign Standard incluye de forma predeterminada un `aemserver` AEM usuar
 
 Su `aemserver` AEM El usuario de ahora tiene los derechos necesarios para que pueda utilizarla para comunicarse con el usuario de Adobe Campaign.
 
-AEM Sin embargo, antes de que pueda usar la variable, puede usar la siguiente `aemserver` usuario, se debe establecer su contraseña. Esto no se puede hacer a través de Adobe Campaign. Debe ser realizado por un ingeniero de soporte de Adobe. [Envíe un ticket al Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=es#support) para solicitar el restablecimiento de `aemserver` contraseña. Una vez que tenga la contraseña del Servicio de atención al cliente de Adobe, manténgala en una ubicación segura.
+AEM Sin embargo, antes de que pueda usar la variable, puede usar la siguiente `aemserver` usuario, se debe establecer su contraseña. Esto no se puede hacer a través de Adobe Campaign. Debe ser realizado por un ingeniero de soporte de Adobe. [Envío de un ticket con el Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=es#support) para solicitar el restablecimiento de `aemserver` contraseña. Una vez que tenga la contraseña del Servicio de atención al cliente de Adobe, manténgala en una ubicación segura.
 
 ## Verificación de AEMResourceTypeFilter en Campaign {#resource-type-filter}
 

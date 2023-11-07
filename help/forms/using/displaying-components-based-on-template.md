@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: f658da57-0134-4458-9ef9-a99787b66742
 docset: aem65
 exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 100%
+source-wordcount: '351'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ Realice los siguientes pasos para mostrar los componentes de la barra lateral en
 
 1. En CRXDE, navegue hasta: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`
 
-   Para seleccionar un grupo de componentes, se requiere una nueva directiva de contenido. Para crear una directiva nueva, copie y pegue la directiva predeterminada y cambie su nombre.
+   Para seleccionar un grupo de componentes, se requiere una nueva directiva de contenido. Para crear una directiva, copie y pegue la directiva predeterminada y cambie su nombre.
 
    La ruta a la directiva de contenido predeterminada es la siguiente: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 

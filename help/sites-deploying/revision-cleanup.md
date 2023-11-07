@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5814'
+source-wordcount: '5811'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Además, puede leer el [Documentación oficial de Oak](https://jackrabbit.apache
 
 ## Cómo ejecutar la limpieza de revisión en línea {#how-to-run-online-revision-cleanup}
 
-La Limpieza de revisión en línea está configurada de forma predeterminada para ejecutarse automáticamente una vez al día tanto en instancias de autor de AEM como de publicación. Todo lo que debe hacer es definir la ventana de mantenimiento durante un periodo con la menor actividad de usuario. Puede configurar la tarea Limpieza de revisión en línea de la siguiente manera:
+AEM La Limpieza de revisión en línea está configurada de forma predeterminada para ejecutarse automáticamente una vez al día tanto en instancias de autor como en instancias de publicación de la. Todo lo que debe hacer es definir la ventana de mantenimiento durante un periodo con la menor actividad de usuario. Puede configurar la tarea Limpieza de revisión en línea de la siguiente manera:
 
 1. AEM En la ventana principal de la, vaya a **Herramientas - Operaciones - Panel de control - Mantenimiento** o dirija el explorador a: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
 
@@ -230,7 +230,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Por qué Online Revision Cleanup no recupera ningún espacio cuando se ejecuta por primera vez?</strong></td>
-   <td>Limpieza de revisiones en línea recupera las revisiones antiguas realizadas por las generaciones. Se genera una nueva generación cada vez que se ejecuta la limpieza de revisión. Solo se recupera el contenido que tiene al menos dos generaciones, lo que significa que en una primera ejecución no hay nada que recuperar.</td>
+   <td>Limpieza de revisiones en línea recupera las revisiones antiguas realizadas por las generaciones. Se genera una nueva generación cada vez que se ejecuta la limpieza de revisión. Solo se recupera el contenido que tenga al menos dos generaciones, lo que significa que en una primera ejecución no hay nada que recuperar.</td>
    <td> </td>
   </tr>
   <tr>
@@ -240,7 +240,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Las ventanas Autor y Publicación suelen tener diferentes ventanas Limpieza de revisiones en línea?</strong></td>
-   <td>Esto depende del horario de oficina y de los patrones de tráfico de la presencia en línea del cliente. Las ventanas de mantenimiento deben configurarse fuera de los tiempos de producción principales para permitir la mejor eficacia de limpieza. Para varias instancias de publicación de AEM (granja TarMK), las ventanas de mantenimiento para Limpieza de revisiones en línea deben escalonarse.</td>
+   <td>Esto depende del horario de oficina y de los patrones de tráfico de la presencia en línea del cliente. Las ventanas de mantenimiento deben configurarse fuera de los tiempos de producción principales para permitir la mejor eficacia de limpieza. AEM Para varias instancias de publicación de datos (granja TarMK), las ventanas de mantenimiento para Limpieza de revisiones en línea deben escalonarse.</td>
    <td> </td>
   </tr>
   <tr>
@@ -270,7 +270,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
    <td> </td>
   </tr>
   <tr>
-   <td><strong>¿Cuál es el impacto esperado en el rendimiento al ejecutar la Limpieza de revisiones en línea?</strong></td>
+   <td><strong>¿Cuál es el impacto esperado en el rendimiento al ejecutar Online Revision Cleanup?</strong></td>
    <td>La limpieza de revisión en línea es un proceso en segundo plano que lee y escribe en el repositorio de forma simultánea en operaciones normales del sistema. En particular, es posible que necesite adquirir acceso exclusivo al repositorio durante un corto periodo de tiempo, lo que evita que otros subprocesos escriban en el repositorio.</td>
    <td> </td>
   </tr>
@@ -426,7 +426,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Qué información se expone en la comprobación de estado de Revision Cleanup? ¿Cómo y cuándo contribuyen a los niveles de estado codificados por colores? </strong></td>
-   <td><p>La comprobación de estado de limpieza de revisión forma parte de la <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Tablero de operaciones</a>.<br /> </p> <p>El estado es <strong>VERDE</strong> si la última ejecución de la tarea de mantenimiento Limpieza de revisiones en línea ha finalizado correctamente.</p> <p>Lo es <strong>AMARILLO</strong> si la tarea de mantenimiento Limpieza de revisiones en línea se canceló una vez.<br /> </p> <p>Lo es <strong>ROJO</strong> si la tarea de mantenimiento Limpieza de revisiones en línea se ha cancelado tres veces seguidas. <strong>En este caso, se requiere interacción manual</strong> o es probable que Limpieza de revisión en línea vuelva a fallar. Para obtener más información, lea la <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solución de problemas</a> más abajo.<br /> </p> <p>Tenga en cuenta también que el estado de la comprobación de estado se restablecerá después de reiniciar el sistema. Por lo tanto, una instancia recién reiniciada muestra un estado verde en la comprobación de estado de limpieza de revisión. AEM Se podrían utilizar herramientas de monitorización externas para mantener los datos más allá del tiempo de actividad de la. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">AEM la documentación de la aplicación de controles de estado a Nagios como ejemplo para una herramienta de monitorización externa</a>.</p> </td>
+   <td><p>La comprobación de estado de limpieza de revisión forma parte de la <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Tablero de operaciones</a>.<br /> </p> <p>El estado es <strong>VERDE</strong> si la última ejecución de la tarea de mantenimiento Limpieza de revisiones en línea ha finalizado correctamente.</p> <p>Lo es <strong>AMARILLO</strong> si la tarea de mantenimiento Limpieza de revisiones en línea se canceló una vez.<br /> </p> <p>Lo es <strong>ROJO</strong> si la tarea de mantenimiento Limpieza de revisiones en línea se ha cancelado tres veces seguidas. <strong>En este caso, se requiere interacción manual</strong> o es probable que Limpieza de revisión en línea vuelva a fallar. Para obtener más información, lea la <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solución de problemas</a> más abajo.<br /> </p> <p>Además, el estado de la comprobación de estado se restablece después de reiniciar el sistema. Por lo tanto, una instancia recién reiniciada muestra un estado verde en la comprobación de estado de limpieza de revisión. AEM Se podrían utilizar herramientas de monitorización externas para mantener los datos más allá del tiempo de actividad de la. Consulte <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">AEM la documentación de la aplicación de controles de estado a Nagios como ejemplo para una herramienta de monitorización externa</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>

@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -23,7 +23,7 @@ La biblioteca de transcodificación de imágenes de Adobe es una solución de pr
 * Compresión de calidad JPEG
 * Cambio de tamaño de imagen
 
-La biblioteca de transcodificación de imágenes proporciona compatibilidad con CMYK y con alfa completo, excepto con CMYK -Alpha.
+La biblioteca de transcodificación de imágenes es compatible con CMYK y con alfa completo, excepto con el Alpha CMYK.
 
 Además de admitir una amplia gama de formatos y perfiles de archivo, la biblioteca de transcodificación de imágenes tiene ventajas significativas respecto a otras soluciones de terceros en cuanto a rendimiento, escalabilidad y calidad. Estas son algunas de las ventajas clave de utilizar la biblioteca de transcodificación de imágenes:
 
@@ -57,7 +57,7 @@ Los argumentos de la línea de comandos para la biblioteca de transcodificación
 Puede configurar las siguientes opciones para `-resize` parámetro:
 
 * `X`: funciona de forma similar a [!DNL Experience Manager]. Por ejemplo, -resize 319.
-* `WxH`: La proporción de aspecto no se mantiene, por ejemplo `-resize 319x319`.
+* `WxH`: La proporción de aspecto no se mantiene, por ejemplo, `-resize 319x319`.
 * `Wx`: corrige la anchura y calcula la altura manteniendo la relación de aspecto. Por ejemplo, `-resize 319x`.
 * `xH`: corrige la altura y calcula la anchura manteniendo la relación de aspecto. Por ejemplo, `-resize x319`.
 

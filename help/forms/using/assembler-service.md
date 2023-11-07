@@ -10,10 +10,10 @@ topic-tags: document_services
 discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2121'
-ht-degree: 100%
+source-wordcount: '2115'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ La siguiente ilustración muestra tres documentos que se combinan en uno solo re
 
 Combinar un documento PDF simple desde varios documentos PDF
 
-El siguiente ejemplo es un documento DDX simple que se utiliza para combinar el documento. Especifica los nombres de los documentos de origen utilizados para producir el documento resultante, así como el nombre del documento resultante:
+El siguiente ejemplo es un documento DDX simple que se utiliza para combinar el documento. Especifica los nombres de los documentos de origen utilizados para producir el documento resultante y el nombre del documento resultante:
 
 ```xml
 <PDF result="Doc4">
@@ -86,15 +86,15 @@ Si uno o más documentos de entrada están cifrados, proporcione una contraseña
 
 Al combinar un documento, puede utilizar la numeración Bates para aplicar un identificador de página único a cada página. Al utilizar la numeración Bates, a cada página del documento (o conjunto de documentos) se le asigna un número que identifica de forma exclusiva la página. Por ejemplo, los documentos de fabricación que contienen información de listas de materiales y están asociados con la producción de un conjunto pueden contener un identificador. Un número Bates contiene un valor numérico incrementado secuencialmente y un prefijo y sufijo opcionales. El prefijo + valor numérico + sufijo se denomina patrón de fechas.
 
-La siguiente ilustración muestra un documento PDF que contiene un identificador único ubicado en el encabezado del documento.
+La siguiente ilustración muestra un documento de PDF que contiene un identificador único en el encabezado del documento.
 
-![Documento PDF que contiene un identificador único ubicado en el encabezado del documento](do-not-localize/as_batesnumber.png)
+![Documento de PDF que contiene un identificador único en el encabezado del documento](do-not-localize/as_batesnumber.png)
 
-Documento PDF que contiene un identificador único ubicado en el encabezado del documento
+Documento de PDF que contiene un identificador único en el encabezado del documento
 
 ### Acoplar y combinar documentos {#flatten-and-assemble-documents}
 
-Puede utilizar el servicio Assembler para transformar un documento PDF interactivo (por ejemplo, un formulario) en un documento de PDF no interactivo. Un documento PDF interactivo permite a los usuarios introducir o modificar datos ubicados en los campos del documento PDF. El proceso de transformar un documento PDF interactivo en uno no interactivo se denomina aplanamiento. Cuando se aplana un documento PDF, los campos de formulario conservan su apariencia gráfica, pero ya no son interactivos. Una razón para acoplar un documento PDF es garantizar que no se puedan modificar los datos. Además, los scripts asociados a los campos ya no funcionan.
+Puede utilizar el servicio Assembler para transformar un documento PDF interactivo (por ejemplo, un formulario) en un documento de PDF no interactivo. Un documento interactivo del PDF permite a los usuarios introducir o modificar datos en los campos del documento del PDF. El proceso de transformar un documento PDF interactivo en uno no interactivo se denomina aplanamiento. Cuando se aplana un documento PDF, los campos de formulario conservan su apariencia gráfica, pero ya no son interactivos. Una razón para acoplar un documento PDF es garantizar que no se puedan modificar los datos. Además, los scripts asociados a los campos ya no funcionan.
 
 Cuando se crea un documento de PDF que se monta a partir de documentos PDF interactivos, el servicio Assembler aplana dichos formularios antes de combinarlos en el documento resultante.
 
@@ -311,11 +311,11 @@ Puede utilizar el servicio Assembler para obtener la siguiente información sobr
    * Frases en cada párrafo de cada página del documento
 
 * Marcadores, incluido el número de página, el título, el destino y la apariencia. Puede exportar estos\
-   datos de un documento PDF e importarlos en otro PDF.
+  datos de un documento PDF e importarlos en otro PDF.
 
 * Archivos adjuntos, incluida la información del archivo. Para los archivos adjuntos de nivel de página, también incluye la\
-   ubicación de la anotación del archivo adjunto. Puede exportar estos datos desde un documento PDF e\
-   Importarlos en otro PDF.
+  ubicación de la anotación del archivo adjunto. Puede exportar estos datos desde un documento PDF e\
+  Importarlos en otro PDF.
 
 * Empaquetar archivos, incluida la información de archivo, las carpetas, el paquete, el esquema y los datos de campo. Puede exportar estos datos desde un documento PDF e importarlos en otro PDF.
 

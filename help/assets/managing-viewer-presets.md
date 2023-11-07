@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4519'
 ht-degree: 8%
@@ -348,7 +348,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
    <td><p>Panes</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Seleccionar</strong></p> </td>
+   <td><p><strong>Seleccione lo siguiente</strong></p> </td>
    <td><p>Muestra una ventana flotante</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
@@ -404,7 +404,7 @@ Experience Manager muestra una amplia variedad de ajustes preestablecidos de vis
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. En la propiedad limit, cambie el número al deseado, por ejemplo `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. En la propiedad limit, cambie el número al deseado, por ejemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Seleccionar **[!UICONTROL Guardar todo]**.
 
 ## Crear un ajuste preestablecido de visor {#creating-a-new-viewer-preset}
@@ -439,15 +439,16 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de visu
 
    * En el **[!UICONTROL Tipo seleccionado]** en el menú desplegable, seleccione un componente cuyo diseño visual desee personalizar. Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo y configurarlo.
 
-      El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Establezca o ajuste cualquier propiedad para ver instantáneamente qué efecto tiene en el visor mediante la muestra a la izquierda del editor.
+     El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Establezca o ajuste cualquier propiedad para ver instantáneamente qué efecto tiene en el visor mediante la muestra a la izquierda del editor.
 
-      Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en &quot;Personalización&quot; *`<viewer name>`* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalizar el visor de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
+     Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en &quot;Personalización&quot; *`<viewer name>`* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalizar el visor de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
 
    * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en AEM Assets. Seleccionar **[!UICONTROL Importar CSS]** debajo de la **[!UICONTROL Tipo seleccionado]** menú desplegable (si es necesario, desplace el editor visual hacia arriba para verlo), de modo que pueda encontrar el archivo CSS cargado y asociarlo al ajuste preestablecido de visualizador.
 
-      Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de Zoom, todas las reglas CSS que importe deben definirse con el nombre de clase del visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
+     Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de Zoom, todas las reglas CSS que importe deben definirse con el nombre de clase del visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-      Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier sección &quot;Personalización *&lt;viewer name=&quot;&quot;>* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si desea leer acerca de los marcadores CSS del Visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+     Puede importar CSS arbitrario y hecho a mano siempre que defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier sección &quot;Personalización *&lt;viewer name=&quot;&quot;>* Visor&quot; en el tema de ayuda de [Guía de referencia del visor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si desea leer acerca de los marcadores CSS del Visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Sin embargo, es posible que el editor visual no entienda algunos valores CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+
    >[!NOTE]
    >
    >Si prefiere editar la CSS directamente en su formulario sin procesar, seleccione **[!UICONTROL Mostrar/ocultar CSS]** debajo del menú desplegable Tipo seleccionado (si es necesario, desplace el editor visual hacia arriba para verlo).
@@ -552,7 +553,7 @@ En el ejemplo de la tabla anterior, 30 segundos / 3 subsegmentos de vídeo = vis
 
 Al crear ajustes preestablecidos de visualizador de titular de carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
 
-|  | **Descripción** | **Acciones** |
+| | **Descripción** | **Acciones** |
 |---|---|---|
 | **[!UICONTROL Icono de punto interactivo]** | Cambiar el icono utilizado para el punto interactivo | Para cambiar la imagen del icono de punto interactivo, en la **[!UICONTROL Aspecto]** pestaña, en **[!UICONTROL Componente seleccionado]**, seleccione **[!UICONTROL ImageMapEffect]**. En **[!UICONTROL Icono]**, seleccione **[!UICONTROL Fondo]** y, en el campo **[!UICONTROL Imagen]**, vaya a la imagen de fondo que desee. |
 

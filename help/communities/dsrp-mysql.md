@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '725'
 ht-degree: 3%
 
 ---
@@ -177,7 +177,7 @@ AEM Cuando MySQL se ejecuta en un servidor diferente de, se debe especificar el 
    * Por ejemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Busque el `Day Commons JDBC Connections Pool`
-* Seleccione el `+` para crear una nueva configuración de conexión.
+* Seleccione el `+` para crear una configuración de conexión.
 
   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 

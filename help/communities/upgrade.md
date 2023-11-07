@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -61,8 +61,7 @@ AEM Para todas las instancias de autor y publicación de la versión 6.3 de:
 
          * Seleccione **Guardar**
 
-      ![utilidades](assets/utilities.png)
-
+     ![utilidades](assets/utilities.png)
 
 ### Almacenamiento On-Premise {#on-premise-storage}
 
@@ -83,7 +82,7 @@ Consulte también [Uso de Maven para comunidades](/help/communities/maven.md).
 
 El [marco de componentes sociales](/help/communities/scf.md) (SCF) utiliza el [HandlebarsJS](https://handlebarsjs.com/) AEM (HBS) lenguaje de plantilla en lugar de las páginas de servidor Java (JSP) utilizadas antes de la versión 6.0 de la versión 6.0.
 
-AEM En la versión 6.0, los componentes de JSP permanecieron junto a los nuevos componentes del marco de HBS en la misma ubicación, y los componentes de HBS generalmente se encuentran en subcarpetas denominadas &quot;hbs&quot;.
+AEM En la versión 6.0, los componentes de JSP permanecieron junto a los nuevos componentes del marco de HBS en la misma ubicación, y los componentes de HBS normalmente en subcarpetas denominadas &quot;hbs&quot;.
 
 AEM A partir de la versión 6.1, los componentes de JSP se eliminaron por completo. En el caso de las comunidades, se recomienda reemplazar todo el uso de componentes JSP por componentes SCF.
 
@@ -97,7 +96,7 @@ Además de mover UGC de versiones anteriores, también es posible utilizar la he
 
 Conceptualmente, hay tres generaciones de componentes de las comunidades:
 
-**Gen 1** AEM : Aproximadamente CQ 5.4 a 5.6.0, estos son los siguientes: **collab** componentes que almacenan UGC en el repositorio local mediante replicación como medio para sincronizar UGC entre plataformas. Otras diferencias implican la implementación mediante Java Server Pages (JSP), así como la función de blog que consiste en crear solo en el entorno de creación.
+**Gen 1** AEM : Aproximadamente CQ 5.4 a 5.6.0, estos son los siguientes: **collab** componentes que almacenan UGC en el repositorio local mediante replicación como medio para sincronizar UGC entre plataformas. Otras diferencias implican la implementación mediante Java Server Pages (JSP) y la función de blog que consiste en crear solo en el entorno de creación.
 
 **Gen 2** AEM AEM : De la versión 5.6.1 a la versión 6.1 de la, se trata de una combinación de **collab** y **social** componentes. AEM.0 presentó el nuevo [marco de componentes sociales](/help/communities/scf.md) AEM (SCF) y la versión 6.2 de la introdujeron un [almacén de UGC común](/help/communities/working-with-srp.md) donde se accede a UGC mediante una [proveedor de recursos de almacenamiento](/help/communities/srp.md) (SRP).
 

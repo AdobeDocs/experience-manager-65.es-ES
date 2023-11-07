@@ -1,19 +1,15 @@
 ---
 title: 'Introducción al desarrollo de AEM Sites: Tutorial de WKND'
-seo-title: Getting Started Developing AEM Sites - WKND Tutorial
 description: ¿Es nuevo en el desarrollo de AEM? ¿Necesita un repaso sobre las prácticas recomendadas? Este es el lugar para empezar. El objetivo de este tutorial en varias partes es enseñar a un desarrollador nuevo con AEM cómo implementar un sitio web en AEM utilizando los estándares y tecnologías más recientes.
-seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
-uuid: 12861ca8-b5b9-404e-9788-9d13aa7c5a68
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '258'
 ht-degree: 81%
 
 ---
@@ -34,7 +30,7 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador nue
 
 ## Conceptos principales {#core-concepts}
 
-La implementación del tutorial aprovecha muchas funciones potentes de AEM. El sitio se implementará utilizando:
+La implementación del tutorial utiliza muchas funciones potentes de AEM. El sitio se implementará utilizando:
 
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html)
@@ -42,7 +38,7 @@ La implementación del tutorial aprovecha muchas funciones potentes de AEM. El s
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Plantillas editables](/help/sites-developing/page-templates-editable.md)
 
-Por favor, avance a través del tutorial antes de sumergirse en los conceptos anteriores en detalle.
+Avance por el tutorial antes de profundizar en los conceptos anteriores en detalle.
 
 ## Pasos siguientes {#next-steps}
 

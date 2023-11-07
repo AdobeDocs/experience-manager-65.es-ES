@@ -1,19 +1,15 @@
 ---
 title: Crear contenido accesible (Conformidad con WCAG 2.0)
-seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades.
-seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
-uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9152'
+source-wordcount: '9151'
 ht-degree: 61%
 
 ---
@@ -360,7 +356,7 @@ Siga las directrices que se proporcionan para la [Descripción del audio o medio
 
 ### Adaptable (1.3)     {#adaptable}
 
-[Directriz 1.3 Adaptable: cree contenido que se pueda presentar de diferentes maneras (por ejemplo, de forma más sencilla) sin perder información ni estructuras.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Directrices 1.3 Adaptable: Crear contenido que se pueda presentar de diferentes maneras (por ejemplo, con un diseño más sencillo) sin perder información o estructura.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Esta directriz cubre los requisitos necesarios para apoyar a las siguientes personas:
 
@@ -382,7 +378,7 @@ Este criterio de éxito existe para garantizar que dicha información estructura
 
 #### Cómo cumplir: Información y relaciones (1.3.1)  {#how-to-meet-info-and-relationships}
 
-AEM facilita construir páginas web utilizando los elementos HTML adecuados. Abra el contenido de su página en RTE (un componente Texto) y utilice el **Formato** para especificar el elemento estructural adecuado (por ejemplo, párrafos y encabezados).
+AEM facilita construir páginas web utilizando los elementos HTML adecuados. Abra el contenido de su página en RTE (un componente Texto) y utilice el **Formato** para especificar el elemento estructural adecuado (por ejemplo, párrafo y encabezado).
 
 La siguiente imagen muestra el texto que se ha diseñado como texto de párrafo; la vista de código fuente que se está utilizando muestra que tiene las opciones de apertura y cierre correctas &lt;p> y &lt;/p> etiquetas.
 
@@ -535,7 +531,7 @@ Para los requisitos relativos a las alternativas de color, consulte [Uso del col
 
 Asegúrese de que cualquier información relativa a las características visuales del contenido de una página también se presente en un formato alternativo.
 
-* Es importante no basarse en la posición visual para dar información. Por ejemplo, para dirigir a los usuarios hacia un menú a la derecha de la página para que accedan a más información, no se debe hacer referencia al *menú de la derecha*; en lugar de eso, es preferible nombrar el menú (por ejemplo mediante un encabezado) y hacer referencia a ese nombre en el texto.
+* Es importante no basarse en la posición visual para dar información. Por ejemplo, si desea remitir a los usuarios a un menú situado en la parte derecha de la página para acceder a más información, no consulte *el menú de la derecha*; en su lugar, asigne un nombre al menú (por ejemplo, mediante un encabezado) y menciónelo en el texto.
 * También es importante no basarse en el estilo del texto (por ejemplo, si se trata de texto en negrita o en cursiva) como la única manera de transmitir la información.
 
 >[!NOTE]
@@ -966,7 +962,7 @@ Las etiquetas se colocan inmediatamente a la derecha del campo.
 
 Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
 
-En formularios simples con funcionalidad limitada, etiquetar correctamente una `Submit` puede actuar como una etiqueta para el campo adyacente (por ejemplo, `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
+En formularios simples con funcionalidad limitada, etiquetar correctamente una `Submit` El botón puede actuar como una etiqueta para el campo adyacente (por ejemplo, `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
 
 #### Más información: Etiquetas o instrucciones (3.3.2)   {#more-information-labels-or-instructions}
 

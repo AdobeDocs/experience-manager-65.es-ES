@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Por último, las capacidades de versiones de [!DNL Experience Manager] almacenar
 
 Teniendo en cuenta estos factores, necesita una metodología para calcular un espacio de almacenamiento aceptablemente preciso para almacenar los recursos del usuario.
 
-1. Determine el tamaño y el número de recursos que se cargarán en el sistema.
+1. Determine el tamaño y el número de recursos que se cargan en el sistema.
 1. Obtenga una muestra representativa de los recursos que se van a cargar en [!DNL Experience Manager]. Por ejemplo, si planea cargar archivos de PSD, JPG, IA y PDF en el sistema, necesita varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños y complejidades de archivo de las imágenes.
 1. Defina las representaciones que desea utilizar.
 1. Creación de representaciones en [!DNL Experience Manager] usando [!DNL ImageMagick] o [!DNL Adobe Creative Cloud] aplicaciones. Además de las representaciones que especifiquen los usuarios, cree representaciones listas para usarse. Para los usuarios que implementan Dynamic Media, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en Experience Manager.
@@ -103,7 +103,7 @@ Para el repositorio, utilice SSD o discos con un nivel de IOPS mayor que 3000. P
 
 ## Red {#network}
 
-[!DNL Assets] tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros [!DNL Experience Manager] proyectos. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para admitir la carga de los usuarios que cargan y descargan recursos del sistema, seguirá apareciendo como lenta. Existe una buena metodología para determinar el punto de estrangulamiento en la conexión de red de un usuario a [!DNL Experience Manager] en [Consideraciones de recursos para la experiencia del usuario, el tamaño de la instancia, la evaluación del flujo de trabajo y la topología de red](/help/assets/assets-network-considerations.md).
+[!DNL Assets] tiene varios casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros [!DNL Experience Manager] proyectos. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para admitir la carga de los usuarios que cargan y descargan recursos del sistema, seguirá apareciendo como lenta. Existe una buena metodología para determinar el punto de estrangulamiento en la conexión de red de un usuario a [!DNL Experience Manager] en [Consideraciones de recursos para la experiencia del usuario, el tamaño de la instancia, la evaluación del flujo de trabajo y la topología de red](/help/assets/assets-network-considerations.md).
 
 ## Restricciones {#limitations}
 

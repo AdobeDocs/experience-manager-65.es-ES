@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4633'
+source-wordcount: '4632'
 ht-degree: 2%
 
 ---
@@ -476,7 +476,7 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
       >[!NOTE]
       >
-      > También puede utilizar una herramienta de edición in situ, por ejemplo 7-zip, para actualizar el `Manifest.mf` archivo.
+      > También puede utilizar una herramienta de edición in situ, por ejemplo, 7-zip, para actualizar el `Manifest.mf` archivo.
 
    1. Guarde el actualizado en `Manifest.mf` en el `adobe-output-client.jar` archive.
    1. Guardar el modificado `adobe-output-client.jar` y vuelva a ejecutar el programa de instalación.  (CQDOC-20878)

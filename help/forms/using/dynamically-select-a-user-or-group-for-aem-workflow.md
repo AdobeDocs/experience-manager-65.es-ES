@@ -8,10 +8,10 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
-source-git-commit: 8f0e8b15d2ed8b436594fd2be464b4ace29a8902
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ El siguiente ejemplo de ECMAScript selecciona dinámicamente un usuario asignado
 
 >[!NOTE]
 >
->A la hora de usar ECMAScript para Adobe Sign, el script debe encontrarse en crx-repository en /apps/fd/workflow/scripts/adobesign/ y debe tener una función denominada getAdobeSignRecipients para devolver una lista de usuarios.
+>A la hora de usar ECMAScript para Adobe Sign, el script debe estar en crx-repository en /apps/fd/workflow/scripts/adobesign/ y debe tener una función denominada getAdobeSignRecipients para devolver una lista de usuarios.
 
 ```javascript
 function getAdobeSignRecipients() {

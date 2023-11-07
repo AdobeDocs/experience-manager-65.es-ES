@@ -1,16 +1,14 @@
 ---
 title: Oriente su Adobe Campaign
 description: Puede crear experiencias segmentadas para Adobe Campaign después de configurar la segmentación.
-uuid: 8fcc9210-d8c5-44e3-8aa8-6c6db810c98e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -34,9 +32,9 @@ La configuración de la segmentación incluye la creación de segmentos, una mar
 Para crear segmentos:
 
 1. Abra el [consola de segmentación](http://localhost:4502/miscadmin#/etc/segmentation) en **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Cree una nueva página e introduzca un título; por ejemplo, **Segmentos de CA**- y seleccione el **Segmento (Adobe Campaign)** plantilla.
+1. Cree una página e introduzca un título; por ejemplo, **Segmentos de CA**- y seleccione el **Segmento (Adobe Campaign)** plantilla.
 1. Seleccione la página creada en la vista de árbol de la izquierda.
-1. Cree un segmento, por ejemplo segmentando los usuarios masculinos, creando una nueva página en el segmento que ha creado llamada Hombre y seleccione **Segmento (Adobe Campaign)** plantilla.
+1. Cree un segmento, por ejemplo, dirigido a usuarios hombres, creando una página en el segmento que ha creado llamada Hombre y seleccione **Segmento (Adobe Campaign)** plantilla.
 1. Abra la página de segmentos creada y arrastre y suelte un **ID del segmento** de la barra de tareas a la página.
 1. Haga doble clic en la característica e introduzca el ID que representa, en este caso, el segmento masculino definido en Adobe Campaign; por ejemplo, **MASCULINO** - y haga clic en **OK**. Debe aparecer el siguiente mensaje: *`targetData.segmentCode == "MALE"`*
 1. Repita los pasos para otro segmento, por ejemplo, un segmento dirigido a mujeres.
@@ -52,19 +50,19 @@ Para crear una marca:
 
 Para crear una campaña:
 
-1. Abra el **Marca** página que acaba de crear.
+1. Abra el **Marca** página que ha creado.
 1. Clic **Crear página** y escriba un título para su página, por ejemplo, We.Retail Campaign, y seleccione **Campaign** y haga clic en **Crear**.
 
 ### Creación de experiencias {#creating-experiences}
 
 Para crear experiencias para segmentos:
 
-1. Abra el **Campaign** página que acaba de crear.
+1. Abra el **Campaign** página que ha creado.
 1. Cree experiencias para sus segmentos haciendo clic en **Crear página** y escriba un título para su página, por ejemplo, Hombre mientras crea una experiencia para el segmento Hombre, y seleccione **Experiencia** plantilla.
 1. Abra la página de experiencia creada.
 1. Clic **Editar**, a continuación, haga clic en Segmentos **Agregar elemento**.
-1. Introduzca la ruta al segmento masculino, por ejemplo **/etc/segmentation/ac-segments/male** y haga clic en **OK**. Debe aparecer el siguiente mensaje: *La experiencia se dirige a: Hombre*
-1. Repita los pasos anteriores para crear una experiencia para todos los segmentos, por ejemplo el segmento femenino.
+1. Introduzca la ruta al segmento masculino, por ejemplo, **/etc/segmentation/ac-segments/male** y haga clic en **OK**. Debe aparecer el siguiente mensaje: *La experiencia se dirige a: Hombre*
+1. Repita los pasos anteriores para crear una experiencia para todos los segmentos, por ejemplo, el segmento femenino.
 
 ## Creación de una newsletter con contenido de destino {#creating-a-newsletter-with-targeted-content}
 
@@ -72,7 +70,7 @@ Después de crear segmentos, una marca, una campaña y una experiencia, puede cr
 
 >[!NOTE]
 >
->[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargue contenido de Geometrixx de ejemplo desde Package Share.
+>[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargar contenido de Geometrixx de muestra desde Package Share.
 
 Para crear una newsletter con contenido de destino:
 

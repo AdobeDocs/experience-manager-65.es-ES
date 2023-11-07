@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 1%
@@ -89,11 +89,11 @@ Esto significa que cuando se debe especificar una dirección IP, se puede selecc
 
 * una dirección IPv6
 
-  por ejemplo `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  por ejemplo, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * una dirección IPv4
 
-  por ejemplo `https://123.1.1.4:4502`
+  por ejemplo, `https://123.1.1.4:4502`
 
 * un nombre de servidor
 
@@ -287,7 +287,7 @@ Consulte la [Conceptos básicos de personalización de informes](/help/sites-adm
 
 CQ envía notificaciones por correo electrónico a los usuarios que:
 
-* Se han suscrito a eventos de página como, por ejemplo, una modificación o replicación.
+* Se han suscrito a eventos de página como, por ejemplo, modificaciones o replicaciones.
 * Se ha suscrito a eventos de foro.
 * Deben realizar un paso en un flujo de trabajo.
 

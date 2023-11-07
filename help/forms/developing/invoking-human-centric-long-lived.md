@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3695'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ El `FirstAppSolution/PreLoanProcess` El proceso se invoca cuando un solicitante 
  </LoanApp>
 ```
 
-Los datos XML pasados a un proceso deben coincidir con los campos ubicados en el formulario utilizado en el proceso. De lo contrario, los datos no se mostrarán dentro del formulario. Todas las aplicaciones que invocan el `FirstAppSolution/PreLoanProcess` El proceso debe pasar esta fuente de datos XML. Las aplicaciones creadas en *Invocar procesos de larga duración centrados en el ser humano* crear dinámicamente la fuente de datos XML a partir de los valores introducidos por un usuario en un cliente web.
+Los datos XML pasados a un proceso deben coincidir con los campos del formulario utilizado en el proceso. De lo contrario, los datos no se mostrarán dentro del formulario. Todas las aplicaciones que invocan el `FirstAppSolution/PreLoanProcess` El proceso debe pasar esta fuente de datos XML. Las aplicaciones creadas en *Invocar procesos de larga duración centrados en el ser humano* crear dinámicamente la fuente de datos XML a partir de los valores introducidos por un usuario en un cliente web.
 
 Mediante una aplicación cliente, puede enviar la variable *FirstAppSolution/PreLoanProcess* procesar los datos XML necesarios. Un proceso de larga duración devuelve un valor de identificador de invocación como su valor devuelto. La siguiente ilustración muestra aplicaciones cliente que invocan el proceso de larga duración de *FirstAppSolution/PreLoanProcess. Las aplicaciones cliente envían datos XML y recuperan un valor de cadena que representa el valor del identificador de invocación.
 
@@ -215,7 +215,7 @@ El siguiente ejemplo de código Java representa el servlet Java que invoca el `F
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      * For complete details about the location of these JAR files,
@@ -321,7 +321,7 @@ El siguiente ejemplo de código Java representa el servlet Java que invoca el `F
                  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
                  DocumentBuilder builder = factory.newDocumentBuilder();
  
-                 //Create a new Document object
+                 //Create a Document object
                  document = builder.newDocument();
  
                  //Create MortgageApp - the root element in the XML
@@ -447,7 +447,7 @@ Después de implementar la aplicación web, puede probarla con un explorador web
 
 * http://localhost:8080/PreLoanProcess/index.html
 
-   Introduzca valores en los campos de formulario del HTML y haga clic en el botón Enviar solicitud. Si se producen problemas, consulte el archivo de registro del servidor de aplicaciones J2EE.
+  Introduzca valores en los campos de formulario del HTML y haga clic en el botón Enviar solicitud. Si se producen problemas, consulte el archivo de registro del servidor de aplicaciones J2EE.
 
 >[!NOTE]
 >
@@ -518,7 +518,7 @@ Aviso en Referencias del servicio, hay dos artículos. El primer elemento se lla
 
 ### Crear una página ASP que invoque FirstAppSolution/PreLoanProcess {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
-Dentro del proyecto ASP.NET, agregue un formulario web (un archivo ASPX) responsable de mostrar una página del HTML al solicitante del préstamo. El formulario web se basa en una clase derivada de `System.Web.UI.Page`. La lógica de aplicación de C# que invoca `FirstAppSolution/PreLoanProcess` se encuentra en la `Button1_Click` (este botón representa el botón Enviar solicitud).
+Dentro del proyecto ASP.NET, agregue un formulario web (un archivo ASPX) responsable de mostrar una página del HTML al solicitante del préstamo. El formulario web se basa en una clase derivada de `System.Web.UI.Page`. La lógica de aplicación de C# que invoca `FirstAppSolution/PreLoanProcess` está en `Button1_Click` (este botón representa el botón Enviar solicitud).
 
 La siguiente ilustración muestra la aplicación ASP.NET
 
@@ -559,7 +559,7 @@ En la tabla siguiente se enumeran los controles que forman parte de esta aplicac
  </tbody>
 </table>
 
-La lógica de aplicación que forma parte de la aplicación ASP.NET debe crear dinámicamente un origen de datos XML para pasar al `FirstAppSolution/PreLoanProcess` proceso. Los valores que el solicitante ha introducido en la página del HTML deben especificarse dentro de la fuente de datos XML. Estos valores de datos se combinan en el formulario cuando este se visualiza en Workspace. Las clases ubicadas en la variable `System.Xml` se utilizan para crear el origen de datos XML.
+La lógica de aplicación que forma parte de la aplicación ASP.NET debe crear dinámicamente un origen de datos XML para pasar al `FirstAppSolution/PreLoanProcess` proceso. Los valores que el solicitante ha introducido en la página del HTML deben especificarse dentro de la fuente de datos XML. Estos valores de datos se combinan en el formulario cuando este se visualiza en Workspace. Las clases de la `System.Xml` se utilizan para crear el origen de datos XML.
 
 Al invocar un proceso que requiere datos XML de una aplicación ASP.NET, hay disponible un tipo de datos XML para su uso. Es decir, no se puede pasar un `System.Xml.XmlDocument` al proceso. El nombre completo de esta instancia XML para pasar al proceso es `InvokePreLoanProcess.PreLoanProcess.XML`. Conversión de `System.Xml.XmlDocument` instancia a `InvokePreLoanProcess.PreLoanProcess.XML`. Puede realizar esta tarea utilizando el siguiente código.
 
@@ -815,7 +815,7 @@ El siguiente ejemplo de código de C# invoca el método `FirstAppSolution/PreLoa
 
 >[!NOTE]
 >
->Los valores ubicados en el método getJobDescription definido por el usuario corresponden a los valores devueltos por el servicio Administrador de trabajos.
+>Los valores del método definido por el usuario getJobDescription corresponden a los valores devueltos por el servicio Administrador de trabajos.
 
 ### Ejecute la aplicación ASP.NET {#run-the-asp-net-application}
 

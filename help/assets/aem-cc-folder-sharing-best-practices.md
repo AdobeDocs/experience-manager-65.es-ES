@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Collaboration
 exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Prácticas recomendadas para usar [!DNL Experience Manager] hasta [!DNL Creative
 * **Consideraciones sobre el volumen:** [!DNL Experience Manager] y [!DNL Creative Cloud] El uso compartido de carpetas debe utilizarse para compartir un número menor de archivos, por ejemplo, relevantes para una campaña o actividad específica. Para compartir conjuntos de recursos más grandes, como todos los recursos aprobados de la organización, utilice otros métodos de distribución (por ejemplo, [!DNL Assets Brand Portal]) o [!DNL Experience Manager] aplicación de escritorio.
 * **Evite compartir jerarquías profundas:** El uso compartido funciona de forma recursiva y no permite el uso compartido selectivo. Normalmente, solo se deben tener en cuenta para el uso compartido las carpetas sin subcarpetas o con una jerarquía superficial, como un nivel de subcarpeta.
 * **Separe las carpetas para compartir en un solo sentido:** Se deben usar carpetas independientes para compartir los recursos finales de [!DNL Assets] hasta [!DNL Creative Cloud] archivos y para compartir recursos listos para la creatividad desde [!DNL Creative Cloud] archivos a [!DNL Assets]. Junto con una buena convención de nombres para estas carpetas, crea un entorno de trabajo más fácil de entender para [!DNL Assets] y [!DNL Creative Cloud] usuarios por igual.
-* **Evitar WIP en la carpeta compartida:** La carpeta compartida no debe utilizarse para Trabajo en curso: utilice una carpeta independiente en Archivos de Creative Cloud para realizar trabajos que requieran cambios frecuentes en el archivo.
+* **Evitar WIP en la carpeta compartida:** No utilice una carpeta compartida para Trabajo en curso: utilice una carpeta independiente en Archivos de Creative Cloud para realizar trabajos que requieran cambios frecuentes en el archivo.
 * **Iniciar nuevo trabajo fuera de la carpeta compartida:** Los nuevos diseños (archivos creativos) deben iniciarse en la carpeta independiente WIP en Archivos de Creative Cloud y cuando estén listos para compartirse con [!DNL Assets] usuarios, deben moverse o guardarse en la carpeta compartida.
 * **Simplifique la estructura de uso compartido:** Para una configuración operativa más manejable, piense en simplificar la estructura de uso compartido. En lugar de compartir con todos los usuarios creativos, [!DNL Assets] las carpetas solo deben compartirse con los representantes del equipo, como un director creativo o un administrador de equipo. El administrador del lado creativo recibiría los recursos finales, decidiría las asignaciones de trabajo y, a continuación, permitiría a los diseñadores trabajar en sus propias cuentas de Creative Cloud en los recursos de WIP. Pueden utilizar funciones de colaboración Creative Cloud para coordinar el trabajo y, finalmente, seleccionar y colocar los recursos listos para compartir en [!DNL Assets] en su carpeta compartida lista para la creación.
 

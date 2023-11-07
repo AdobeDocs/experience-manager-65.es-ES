@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 100%
+source-wordcount: '1760'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Los pasos que más suelen aplicarse se explican en [Pasos genéricos para la per
 
 Antes de personalizar Workspace, familiarícese con la hoja de estilos predeterminada que se proporciona con AEM Forms en /libs/ws/css/style.css.
 
-Para personalizar el espacio de trabajo, se recomienda que se familiarice con la hoja de estilo existente, style.css, ubicada en la carpeta /libs/ws/css. A continuación se describen algunos componentes destacados.
+Para personalizar el espacio de trabajo, se recomienda que se familiarice con la hoja de estilo existente, style.css, en la carpeta /libs/ws/css. A continuación se describen algunos componentes destacados.
 
 <table>
  <tbody>
@@ -203,7 +203,7 @@ Está pensado principalmente para las personalizaciones, ya que permite generar 
       * js:
 
          * libs: contiene todas las bibliotecas de terceros utilizadas en AEM Forms Workspace.
-         * licenses: contiene las licencias para archivos HTML y JS, así como código para prefijar estas licencias en los respectivos archivos de origen.
+         * licenses: contiene las licencias para archivos de HTML y JS, y código para prefijar estas licencias en los respectivos archivos de origen.
          * minifier: se utiliza para la combinación, la minificación y la uglificación del código personalizado JavaScript.
          * resourcejs_optimizer: se utiliza para la combinación, la minificación y la uglificación del origen JavaScript.
          * resource_generator: se utiliza para generar register.js y modelcontrollerpath.js.
@@ -216,8 +216,10 @@ Está pensado principalmente para las personalizaciones, ya que permite generar 
             * templates: contiene todas las plantillas, es decir, los archivos HTML de todas las vistas de AEM Forms Workspace.
             * util: contiene todos los archivos de utilidad (javascript) que se utilizan en AEM Forms Workspace.
             * views: contiene las vistas de Backbone de todos los componentes de AEM Forms Workspace.
+
          * main.js
          * router.js
+
       * libs/ws: pdf.html y pluginPing.pdf se utilizan para cargar formularios PDF en AEM Forms Workspace, y WSNextAdapter.swf se utiliza para cargar formularios y guías SWF.
       * Configuraciones regionales:
 
@@ -226,11 +228,9 @@ Está pensado principalmente para las personalizaciones, ya que permite generar 
          * fr-FR: contiene el archivo translation.json para francés.
          * ja-JP: contiene el archivo translation.json para japonés.
          * html.jsp: contiene código para detectar la configuración regional actual del explorador.
+
       * html.jsp
       * GET.jsp
-
-
-
 
 ### Paquete CRX {#crx-package}
 
@@ -261,13 +261,13 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
 
       * need: contiene required.js.
       * jqueryui: contiene jquery.ui.datepicker.ja.js.
+
    * runtime:
 
       * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
+
    * main.js (combinado, minificado y uglificado).
    * register.js
-
-
 
 * libs:
 
@@ -306,13 +306,13 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
 
       * need: contiene required.js.
       * jqueryui: contiene jquery.ui.datepicker.ja.js.
+
    * runtime:
 
       * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
+
    * main.js (combinado).
    * register.js
-
-
 
 * libs:
 
@@ -358,10 +358,10 @@ mvn clean: instala el paquete Dev en client-pkg.
       * templates: contiene todas las plantillas, es decir, los archivos HTML de todos los componentes de AEM Forms Workspace.
       * util: contiene todos los archivos de utilidad (JavaScript) que se utilizan en AEM Forms Workspace.
       * views: contiene vistas de todos los componentes de AEM Forms Workspace.
+
    * main.js
    * register.js
    * router.js
-
 
 * libs:
 

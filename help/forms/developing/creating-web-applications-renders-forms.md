@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Del mismo modo, si el usuario selecciona datos canadienses, el formulario devuel
 
 **Archivos de muestra**
 
-Esta sección utiliza archivos de ejemplo que se pueden encontrar en la siguiente ubicación:
+Esta sección utiliza archivos de ejemplo que pueden estar en la siguiente ubicación:
 
 &lt;*Directorio de instalación de Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
 
@@ -71,7 +71,7 @@ Los archivos de datos XML utilizados por la aplicación web se movieron de la ca
 
 Para crear aplicaciones basadas en web que procesen formularios basados en fragmentos, realice los siguientes pasos:
 
-1. Cree un nuevo proyecto web.
+1. Cree un proyecto web.
 1. Cree la lógica de la aplicación Java que represente el servlet Java.
 1. Cree la página web para la aplicación web.
 1. Empaquete la aplicación web en un archivo WAR.
@@ -84,7 +84,7 @@ Para crear aplicaciones basadas en web que procesen formularios basados en fragm
 
 ### Creación de un proyecto web {#creating-a-web-project}
 
-El primer paso para crear una aplicación web que contenga un servlet Java que pueda invocar el servicio Forms es crear un nuevo proyecto web. El IDE de Java en el que se basa este documento es Eclipse 3.3. Con el IDE de Eclipse, cree un proyecto web y agregue los archivos JAR necesarios al proyecto. Finalmente, agregue una página de HTML llamada *index.html* y un servlet Java al proyecto.
+El primer paso para crear una aplicación web que contenga un servlet Java que pueda invocar el servicio Forms es crear un proyecto web. El IDE de Java en el que se basa este documento es Eclipse 3.3. Con el IDE de Eclipse, cree un proyecto web y agregue los archivos JAR necesarios al proyecto. Finalmente, agregue una página de HTML llamada *index.html* y un servlet Java al proyecto.
 
 La siguiente lista especifica los archivos JAR que debe agregar al proyecto web:
 
@@ -145,12 +145,12 @@ Normalmente, no colocaría el código de cliente dentro del de un servlet Java `
 Para procesar un formulario basado en fragmentos mediante la API de servicio de Forms, realice las siguientes tareas:
 
 1. Incluya archivos JAR de cliente, como adobe-forms-client.jar, en la ruta de clase del proyecto Java. Para obtener información acerca de la ubicación de estos archivos, consulte [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Recupere el valor del botón de opción enviado desde el formulario de HTML y especifica si se deben utilizar datos estadounidenses o canadienses. Si se envía American, cree un `com.adobe.idp.Document` que almacena datos ubicados en el *Pedido de compra US.xml*. Del mismo modo, si es canadiense, cree un `com.adobe.idp.Document` que almacena datos ubicados en el *Pedido de compra Canada.xml* archivo.
+1. Recupere el valor del botón de opción enviado desde el formulario de HTML y especifica si se deben utilizar datos estadounidenses o canadienses. Si se envía American, cree un `com.adobe.idp.Document` que almacena datos en *Pedido de compra US.xml*. Del mismo modo, si es canadiense, cree un `com.adobe.idp.Document` que almacena datos en *Pedido de compra Canada.xml* archivo.
 1. Crear un `ServiceClientFactory` que contiene las propiedades de conexión. (Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Crear un `FormsServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
 1. Crear un `URLSpec` que almacena los valores de URI mediante su constructor.
 1. Invoque el `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
-1. Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario y los fragmentos se encuentran en el URI raíz de contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio de AEM Forms, especifique `repository://`.
+1. Invoque el `URLSpec` del objeto `setContentRootURI` y pasan un valor de cadena que especifica el valor de URI de la raíz de contenido. Asegúrese de que el diseño de formulario y los fragmentos estén en el URI raíz de contenido. Si no es así, el servicio Forms genera una excepción. Para hacer referencia al repositorio de AEM Forms, especifique `repository://`.
 1. Invoque el `URLSpec` del objeto `setTargetURL` y pasan un valor de cadena que especifica el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 1. Invoque el `FormsServiceClient` del objeto `renderPDFForm` y pasar los siguientes valores:
 
@@ -184,7 +184,7 @@ El siguiente ejemplo de código representa el servlet Java que invoca el servici
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs
      *
      * For complete details about the location of these JAR files,

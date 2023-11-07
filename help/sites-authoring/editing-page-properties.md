@@ -2,10 +2,10 @@
 title: Edición de propiedades de página de contenido
 description: Defina las propiedades necesarias para una página en Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 45%
+source-wordcount: '1871'
+ht-degree: 43%
 
 ---
 
@@ -255,9 +255,9 @@ Definir la variación del fragmento de experiencia que se utiliza para generar m
 
 Puede definir las propiedades de la página:
 
-* Desde la consola **Sitios:**
+* Desde la consola **Sitios**:
 
-   * [Creando una página nueva](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un subconjunto de las propiedades)
+   * [Creación de una página](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un subconjunto de las propiedades)
 
    * Pulsando o haciendo clic en **Propiedades**
 
@@ -363,7 +363,7 @@ Una vez introducida la edición masiva, puede hacer lo siguiente:
    * Puede actualizar los valores en los campos disponibles.
 
       * Los nuevos valores se aplican a todas las páginas seleccionadas cuando selecciona **Listo**.
-      * Cuando el campo admite varios valores (por ejemplo, etiquetas), puede agregar un nuevo valor o eliminar un valor común.
+      * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), puede anexar un nuevo valor o quitar un valor común.
 
    * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial, como el texto `<Mixed Entries>`.
 

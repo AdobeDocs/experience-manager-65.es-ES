@@ -11,7 +11,7 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2845'
 ht-degree: 0%
@@ -53,6 +53,7 @@ Puede publicar recursos digitales en Dynamic Media Classic de la siguiente maner
 >[!NOTE]
 >
 >Experience Manager publica en Dynamic Media Classic de forma asíncrona. Después de seleccionar **[!UICONTROL Publish]** Sin embargo, el recurso tarda varios segundos en publicarse en Dynamic Media Classic.
+>
 
 ## Componentes de Dynamic Media Classic {#scene-components}
 
@@ -66,7 +67,7 @@ Los siguientes componentes de Dynamic Media Classic están disponibles en Experi
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y deben seleccionarse en **[!UICONTROL Diseño]** antes de usar.
+>Estos componentes no están disponibles de forma predeterminada y deben seleccionarse en **[!UICONTROL Diseño]** antes de utilizar.
 
 Una vez que estén disponibles en **[!UICONTROL Diseño]** En este modo, puede añadir los componentes a la página como cualquier otro componente del Experience Manager. Los recursos que aún no se han publicado en Dynamic Media Classic se publican en Dynamic Media Classic si se encuentran en una carpeta sincronizada o en una página, o con una configuración de nube de Dynamic Media Classic.
 
@@ -111,7 +112,7 @@ Consulte también [Diseño interactivo para páginas web](/help/sites-developing
 
 **Para agregar una experiencia de visualización interactiva a un sitio adaptable:**
 
-1. Inicie sesión en el Experience Manager de y asegúrese de que dispone de lo siguiente [Cloud Services de Adobe Dynamic Media Classic configurados](/help/sites-administering/scene7.md#configuring-scene-integration) y que los componentes de Dynamic Media Classic están disponibles.
+1. Inicie sesión en el Experience Manager de y asegúrese de que dispone de lo siguiente [Cloud Service de Adobe Dynamic Media Classic configurados](/help/sites-administering/scene7.md#configuring-scene-integration) y que los componentes de Dynamic Media Classic están disponibles.
 
    >[!NOTE]
    >
@@ -141,7 +142,7 @@ Estas opciones de configuración se establecen abriendo (haciendo doble clic) en
 
 El componente Zoom HTML 5 muestra una imagen más grande al pulsar el botón **[!UICONTROL +]** botón.
 
-El recurso tiene herramientas de zoom en la parte inferior. Seleccionar **[!UICONTROL +]** si desea ampliar; seleccione **[!UICONTROL -]** si desea reducir. Pulse el botón **[!UICONTROL x]** o la flecha para restablecer el zoom devuelve la imagen al tamaño original con el que se importó. Seleccione las flechas diagonales para que aparezca en pantalla completa. Seleccionar **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar lo siguiente [configuración común a todos [!UICONTROL Dynamic Media Classic] componentes](#settings-common-to-all-scene-components).
+El recurso tiene herramientas de zoom en la parte inferior. Seleccionar **[!UICONTROL +]** si desea ampliar; seleccione **[!UICONTROL -]** si desea reducir. Pulsando el botón **[!UICONTROL x]** o la flecha para restablecer el zoom devuelve la imagen al tamaño original con el que se importó. Seleccione las flechas diagonales para que aparezca en pantalla completa. Seleccionar **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar lo siguiente [configuración común a todos [!UICONTROL Dynamic Media Classic] componentes](#settings-common-to-all-scene-components).
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
@@ -175,7 +176,7 @@ El Dynamic Media Classic **[!UICONTROL Imagen]** Este componente permite añadir
 
 **[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md). No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
-**[!UICONTROL Formato de salida]** - Seleccione el formato de salida de la imagen, por ejemplo jpeg. Según el formato de salida seleccionado, hay opciones de configuración adicionales. Consulte [Prácticas recomendadas de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Formato de salida]** : seleccione el formato de salida de la imagen como, por ejemplo, jpeg. Según el formato de salida seleccionado, hay opciones de configuración adicionales. Consulte [Prácticas recomendadas de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options).
 
 **[!UICONTROL Enfoque]** - Seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en [Prácticas recomendadas de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options) y [Prácticas recomendadas de enfoque](/help/assets/assets/sharpening_images.pdf).
 
@@ -267,11 +268,10 @@ Si tiene varias configuraciones, Experience Manager muestra de forma predetermin
 >* Cuándo [La previsualización segura está activada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Sin embargo, los recursos publicados y no publicados en Dynamic Media Classic no aparecen en el explorador de contenido de Dynamic Media Classic.
 >* Si no ve **[!UICONTROL Dynamic Media Classic]** o el **[!UICONTROL S7]** como opción en el navegador de contenido, debe hacer lo siguiente [configuración de Dynamic Media Classic para que funcione con Experience Manager](/help/sites-administering/scene7.md).
 >* Para el vídeo, el explorador de contenido de Dynamic Media Classic admite:
-   >
-   >   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
-   >   * Vídeo MP4 único
-   >   * Vídeo F4V único
-
+>
+>   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
+>   * Vídeo MP4 único
+>   * Vídeo F4V único
 
 ### Examen de contenido en la interfaz de usuario táctil optimizada {#browsing-content-in-the-touch-optimized-ui}
 
@@ -286,7 +286,6 @@ Examine los recursos de Dynamic Media Classic seleccionando **[!UICONTROL Dynami
 >* El explorador de contenido de Dynamic Media Classic carga unos 100 recursos y los ordena por nombre.
 >* Si tiene un servidor de vista previa segura configurado, el explorador utiliza ese servidor de vista previa para procesar miniaturas y recursos.
 >
-
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -321,7 +320,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-**[!UICONTROL Configuración]** - Si tiene más de una configuración de Dynamic Media Classic definida en [!UICONTROL Cloud Services], puede seleccionarlo aquí. Como resultado, la carpeta cambia según la configuración que haya elegido.
+**[!UICONTROL Configuración]** - Si tiene más de una configuración de Dynamic Media Classic definida en [!UICONTROL Cloud Service], puede seleccionarlo aquí. Como resultado, la carpeta cambia según la configuración que haya elegido.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -336,7 +335,6 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &amp;ast;.mp4) y la codificada.
 >* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
 >
-
 
 **[!UICONTROL Estado de publicación]** - Puede filtrar los recursos en función del estado de publicación: **[!UICONTROL Sin publicar]** o **[!UICONTROL Publicado]**. Si no selecciona ninguna **[!UICONTROL Estado de publicación]**, el Experience Manager busca de forma predeterminada en todos los estados de publicación.
 

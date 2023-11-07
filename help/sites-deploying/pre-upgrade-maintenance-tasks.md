@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2029'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ AEM Al iniciar el proceso desde el archivo jar, se muestra un archivo `quickstar
 
 El `WorkflowPurgeTask` y `com.day.cq.audit.impl.AuditLogMaintenanceTask` Las tareas requieren configuraciones de OSGi independientes y no pueden funcionar sin ellas. Si fallan durante la ejecución de la tarea previa a la actualización, la razón más probable es que falten configuraciones. Por lo tanto, asegúrese de agregar configuraciones de OSGi para estas tareas o eliminarlas por completo de la lista de tareas de optimización previas a la actualización si no desea ejecutarlas. La documentación para configurar las tareas de depuración del flujo de trabajo se encuentra en [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md) y la configuración de tareas de mantenimiento de registros de auditoría se encuentra en [AEM Mantenimiento del registro de auditoría en el 6](/help/sites-administering/operations-audit-log.md).
 
-AEM Para la depuración de registros de auditoría y flujo de trabajo en CQ 5.6, así como depuración de registros de auditoría en 6.0, consulte [Purga de nodos de auditoría y flujo de trabajo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
+AEM Para la depuración de registros de auditoría y flujo de trabajo en CQ 5.6 y depuración de registros de auditoría en 6.0, consulte [Purga de nodos de auditoría y flujo de trabajo](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## Instalar, configurar y ejecutar las tareas previas a la actualización {#install-configure-run-pre-upgrade-tasks}
 

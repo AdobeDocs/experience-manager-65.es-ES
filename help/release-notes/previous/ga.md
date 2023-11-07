@@ -2,7 +2,7 @@
 title: Notas de la versión generales de [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] Notas de la versión 6.5 que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4675'
 ht-degree: 7%
@@ -147,25 +147,25 @@ Para obtener más información sobre los cambios en AEM Screens, consulte las No
 
    * Operador &quot;in&quot; para cadenas, matrices y objetos:
 
-      ```html
-      ${'a' in 'abc'}
-      ${100 in myArray}
-      ${'a' in myObject}
-      ```
+     ```html
+     ${'a' in 'abc'}
+     ${100 in myArray}
+     ${'a' in myObject}
+     ```
 
    * Declaraciones de variables con data-sly-set :
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Parámetros de control de lista y repetición: inicio, paso, fin:
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identificadores para data-sly-unwrap:
 
-      ```html
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-      </div>
-      ```
+     ```html
+     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+     </div>
+     ```
 
    * Compatibilidad con números negativos
 
@@ -241,7 +241,6 @@ Para obtener más información sobre los cambios en AEM Screens, consulte las No
 >
 >* Ambos `at.js. 1.x` y `at.js 2.x` son compatibles si utiliza la exportación de fragmentos de experiencias a Target y ejecuta actividades en la consola de Target.
 
-
 * La integración de Adobe Target ahora utiliza la API de Target Standard. AEM Las versiones anteriores de utilizan la API de HTTP de Target Classic, que ya está en desuso.
 * Adobe Target `mbox.js` se incluye la versión 63 de. El Adobe recomienda encarecidamente que cambie la implementación a `at.js` v1.x.
 * `at.js` ya se incluye la versión 1.5.0 de. El Adobe recomienda que utilice [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para aprovisionar `at.js` v1.x en el sitio.
@@ -253,7 +252,7 @@ Para obtener más información sobre los cambios en AEM Screens, consulte las No
 
 #### AEM Comercio de {#aem-commerce}
 
-AEM Las mejoras de Commerce Integration Framework están en un ciclo de lanzamiento más rápido desde la versión 6.4 de la. [Obtenga más información aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+Las mejoras realizadas en el Commerce integration framework AEM se encuentran en un ciclo de liberación más rápido desde la versión 6.4 de la. [Obtenga más información aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 
 #### Complemento de Communities {#communities-add-on}
 
@@ -314,7 +313,7 @@ AEM La funcionalidad de habilitación de las comunidades de 6.5 admite el modelo
 ##### Otras mejoras {#other-enhancements}
 
 * Compatibilidad con Solr 7
-* AEM Las comunidades de 6.5 admiten la versión Apache Solr 7.0 de la plataforma de búsqueda al configurar MSRP y DSRP.
+* AEM Las comunidades de 6.5 admiten la versión 7.0 de Apache Solr de la plataforma de búsqueda al configurar MSRP y DSRP.
 
 ### [!DNL Experience Manager Assets] {#experience-manager-assets}
 
@@ -435,7 +434,7 @@ El Adobe de utiliza un modelo de desarrollo centrado en el cliente que permite a
 
 Adobe dispone de los procedimientos y procesos necesarios para permitir la recopilación, la priorización y el seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. El [Portal de asistencia al Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#support) está integrado con el sistema de mejora de Adobe y seguimiento de defectos. El equipo de Asistencia al cliente identifica y resuelve las preguntas del cliente siempre que es posible. Cuando se pasa a I+D, toda la información del cliente se captura y se utiliza con fines de priorización e informes. En el desarrollo se da prioridad a la asistencia de pago, los problemas de garantía y las mejoras de pago del cliente.
 
-AEM Este proceso de priorización ha dado como resultado más de 750 cambios centrados en el cliente fijados en la versión 6.500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+AEM Este proceso de priorización ha dado como resultado más de 750 cambios centrados en el cliente fijados en la versión 6.5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 ## Lista de archivos que forman parte de la versión {#list-of-files-that-are-part-of-the-release}
 
@@ -522,20 +521,20 @@ Para [!DNL Adobe Experience Manager] 6,5, [leer la lista de funciones obsoletas 
 
 * Se informa de un problema en el que se eliminan CRX-Quickstart y su contenido.
 
-   En cada una de estas acciones, asegúrese de que la propiedad `htmllibmanager.fileSystemOutputCacheLocation` no es una cadena vacía:
+  En cada una de estas acciones, asegúrese de que la propiedad `htmllibmanager.fileSystemOutputCacheLocation` no es una cadena vacía:
 
    1. Llamando `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. AEM Actualización a la versión 6.5 de.
    3. AEM Ejecución de la &quot;migración de contenido diferido&quot; en la versión 6.5 de.
 
-   A [Base de conocimiento](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) Este artículo está disponible con más detalles y la solución alternativa para este problema.
+  A [Base de conocimiento](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) Este artículo está disponible con más detalles y la solución alternativa para este problema.
 
 * AEM Si utiliza JDK 11 con instancia de 6.5, algunas de las páginas podrían mostrarse en blanco después de implementar algunos paquetes. El siguiente mensaje de error aparece en el archivo de registro:
 
-   ```java
-   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
-   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
-   ```
+  ```java
+  *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+  java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+  ```
 
 Para resolver este error:
 
@@ -571,7 +570,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * En un formulario adaptable, cuando se invoca un servicio del modelo de datos de formulario desde el editor de reglas para actualizar dinámicamente los valores del componente de opción de imagen, los valores del componente de opción de imagen no se actualizan. (CQ-4254754)
 * El instalador de AEM Forms Designer requiere la versión de 32 bits de [Paquete de tiempo de ejecución redistribuible de Visual C++ 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) y [Paquetes de tiempo de ejecución redistribuibles de Visual C++ 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Asegúrese de que los paquetes de ejecución redistribuibles anteriores estén instalados antes de iniciar la instalación. (CQ-4265668)
 
-* PDF Generator no admite la autenticación basada en tarjetas inteligentes. Cuando un administrador habilita la directiva de grupo `Interactive Logon: Require Smart card` en un servidor Windows, se invalidan todos los usuarios existentes de PDF Generator.
+* El PDF Generator no admite la autenticación basada en tarjetas inteligentes. Cuando un administrador habilita la directiva de grupo `Interactive Logon: Require Smart card` en un servidor de Windows, se invalidan todos los usuarios de PDF Generator existentes.
 
 * Cuando se configura un formulario adaptable para actualizar dinámicamente los valores de un componente y se accede a la instancia de publicación que aloja el formulario a través de Dispatcher, la funcionalidad para actualizar dinámicamente los valores de un campo deja de funcionar. Para resolver el problema, en la instancia de publicación, abra CRXDE y navegue hasta `/libs/fd/af/runtime/clientlibs/guideChartReducer`y cree la propiedad que se muestra en.
 
@@ -583,7 +582,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Múltiple: False
    * Creado automáticamente: Falso
 
-   La propiedad permite a las bibliotecas de cliente de la carpeta de tiempo de ejecución acceder a los proxies. (CQ-4268679)
+  La propiedad permite a las bibliotecas de cliente de la carpeta de tiempo de ejecución acceder a los proxies. (CQ-4268679)
 
 * Cuando se inicia AEM Forms, la variable `SAX Security Manager could not be setup` aparece una advertencia.
 * Al abrir un PDF protegido con AEM Forms Document Security en un Apple iOS o iPadOS que ejecute la versión 20.10.00 de Adobe Acrobat Reader

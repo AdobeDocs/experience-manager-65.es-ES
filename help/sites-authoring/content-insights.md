@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -79,7 +79,7 @@ El informe Participación media de la página incluye las siguientes funciones p
 
 ## El informe de fuentes {#the-sources-report}
 
-El informe Fuentes indica cómo navegaron los usuarios hasta la página, por ejemplo, desde los resultados de los motores de búsqueda o utilizando la URL conocida.
+El informe Fuentes indica cómo navegaron los usuarios hasta la página, por ejemplo, desde los resultados del motor de búsqueda o utilizando la dirección URL conocida.
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 

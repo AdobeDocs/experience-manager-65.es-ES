@@ -1,19 +1,15 @@
 ---
 title: Convertir archivos PDF a Postscript andImage
-seo-title: Converting PDF to Postscript andImage Files
-description: Utilice el servicio ConvertPDF para convertir documentos de PDF a PostScript y a una serie de formatos de imagen (JPEG, JPEG 2000, PNG y TIFF) mediante la API de Java y la API de servicio web.
-seo-description: Use the Convert PDF service to convert PDF documents to PostScript and to a number of image formats (JPEG, JPEG 2000, PNG, and TIFF) using the Java API and Web Service API.
-uuid: 07da0391-7180-4197-aaa6-ae753d753b84
+description: Utilice el servicio ConvertPDF para convertir documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF) mediante la API de Java y la API de servicio web.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2801'
 ht-degree: 2%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 2%
 
 **Acerca del servicio Convertir PDF**
 
-El servicio ConvertPDF convierte los documentos de PDF a PostScript y a una serie de formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento PDF en un archivo TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos PDF.
+El servicio ConvertPDF convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento PDF en un archivo TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos PDF.
 
 Puede realizar estas tareas mediante el servicio Convert PDF:
 
@@ -240,11 +236,11 @@ Para poder realizar mediante programación una operación de servicio ConvertPDF
 
 **Recuperar el documento del PDF para convertirlo**
 
-Debe recuperar el documento del PDF para convertirlo en una imagen. No se puede convertir un documento interactivo de PDF en una imagen. Si intenta hacerlo, se produce una excepción. Para convertir un documento de PDF interactivo en un archivo de imagen, debe acoplar el documento de PDF antes de convertirlo. (Consulte [Acoplar documentos de PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Recupere el documento del PDF para convertirlo en una imagen. No se puede convertir un documento interactivo de PDF en una imagen. Si intenta hacerlo, se produce una excepción. Para convertir un documento de PDF interactivo en un archivo de imagen, debe acoplar el documento de PDF antes de convertirlo. (Consulte [Acoplar documentos de PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **Establecer opciones en tiempo de ejecución**
 
-Debe establecer opciones en tiempo de ejecución como el formato de imagen y los valores de resolución. Para obtener información sobre los valores en tiempo de ejecución, vea la `ToImageOptionsSpec` referencia de clase en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Establezca opciones en tiempo de ejecución como el formato de imagen y los valores de resolución. Para obtener información sobre los valores en tiempo de ejecución, vea la `ToImageOptionsSpec` referencia de clase en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Conversión del PDF en imagen**
 

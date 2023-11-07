@@ -2,9 +2,9 @@
 title: SPA Edición de un recurso externo en Adobe Experience Manager
 description: SPA En este documento se describen los pasos recomendados para cargar una instancia independiente en una instancia de Adobe Experience Manager, agregar secciones de contenido editables y habilitar la creación de instancias.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2432'
 ht-degree: 1%
 
 ---
@@ -247,7 +247,7 @@ Cuando el autor del contenido actualice este componente, se agregará un nuevo `
 
 #### Requisitos y limitaciones {#limitations}
 
-Existen varios requisitos para agregar componentes de hoja virtual, así como algunas limitaciones.
+Existen varios requisitos para agregar componentes de hoja virtual y algunas limitaciones.
 
 * El `pagePath` La propiedad es obligatoria para crear un componente virtual.
 * El nodo de página proporcionado en la ruta de `pagePath` AEM debe existir en el proyecto de.
@@ -286,7 +286,7 @@ Ahora se pueden agregar más componentes y contenido al contenedor según lo req
 
 #### Requisitos y limitaciones {#container-limitations}
 
-Existen varios requisitos para agregar contenedores virtuales, así como algunas limitaciones.
+Existen varios requisitos para agregar contenedores virtuales y algunas limitaciones.
 
 * La directiva para determinar qué componentes se pueden agregar se heredará del contenedor principal.
 * AEM El elemento principal inmediato del contenedor que se va a crear ya debe existir en el espacio de trabajo de la.
@@ -314,9 +314,9 @@ SPA Por ejemplo, supongamos que tenemos un en el que la aplicación se procesa d
 
 1. AEM En el cuerpo del componente de página de la aplicación de, siga dos pasos:
 
-   1. Crear un nuevo `body.html` para el componente de página.
+   1. Crear un `body.html` para el componente de página.
 
-   ![Creación de un nuevo archivo body.html](assets/external-spa-update-body.gif)
+   ![Creación de un archivo body.html](assets/external-spa-update-body.gif)
 
    1. Añadir el nuevo elemento raíz en el nuevo `body.html` archivo.
 
@@ -336,9 +336,9 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
    * Para nuestra muestra, consideramos `wknd-spa-react/us/en` SPA como la raíz de la. AEM Esto significa que todo lo anterior a esa ruta solo es contenido o páginas de la lista de contenido de la lista de distribución de contenido/página.
 
-1. Cree una nueva página en el nivel requerido.
+1. Cree una página en el nivel requerido.
 
-   * En este ejemplo, la página que se va a editar es `mydomain.com/test`. `test` se encuentra en la ruta raíz de la aplicación. AEM Esto también debe conservarse al crear la página en la. Por lo tanto, podemos crear una nueva página en el nivel raíz definido en el paso anterior.
+   * En este ejemplo, la página que se va a editar es `mydomain.com/test`. `test` se encuentra en la ruta raíz de la aplicación. AEM Esto también debe conservarse al crear la página en la. Por lo tanto, puede crear una página en el nivel raíz definido en el paso anterior.
    * La nueva página creada debe tener el mismo nombre que la página que se va a editar. En este ejemplo para `mydomain.com/test`, la nueva página creada debe ser `/path/to/aem/root/test`.
 
 1. SPA Agregar ayudantes dentro del enrutamiento de la.

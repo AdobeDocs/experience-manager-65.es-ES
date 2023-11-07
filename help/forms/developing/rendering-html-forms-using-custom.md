@@ -1,20 +1,16 @@
 ---
 title: Procesar formularios HTML mediante archivos CSS personalizados
-seo-title: Rendering HTML Forms Using Custom CSS Files
 description: Utilice el servicio Forms para hacer referencia a archivos CSS personalizados y procesar formularios de HTML en respuesta a una solicitud HTTP de un explorador web. Puede procesar un formulario de HTML que utilice un archivo CSS mediante la API de Java y la API de servicio web.
-seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
-uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1687'
 ht-degree: 2%
 
 ---
@@ -25,7 +21,7 @@ ht-degree: 2%
 
 El servicio Forms procesa formularios de HTML en respuesta a una solicitud HTTP de un explorador web. Al procesar un formulario de HTML, el servicio Forms puede hacer referencia a un archivo CSS personalizado. Puede crear un archivo CSS personalizado para satisfacer los requisitos de su empresa y hacer referencia a ese archivo CSS al utilizar el servicio Forms para procesar formularios de HTML.
 
-El servicio Forms analiza de forma silenciosa el archivo CSS personalizado. Es decir, el servicio Forms no informa de los errores que se pueden encontrar si el archivo CSS personalizado no cumple con los estándares CSS. En este caso, el servicio Forms ignora el estilo y continúa con los estilos restantes ubicados en el archivo CSS.
+El servicio Forms analiza de forma silenciosa el archivo CSS personalizado. Es decir, el servicio Forms no informa de los errores que se pueden encontrar si el archivo CSS personalizado no cumple con los estándares CSS. En este caso, el servicio Forms ignora el estilo y continúa con los estilos restantes del archivo CSS.
 
 La siguiente lista especifica los estilos compatibles con un archivo CSS personalizado:
 
@@ -127,7 +123,7 @@ Procesar un formulario de HTML que utilice un archivo CSS personalizado mediante
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
    * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
    * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.h\ttp.HttpServletResponse` del objeto `getOutputStream` método.

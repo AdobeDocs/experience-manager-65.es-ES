@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ AEM A continuación, se muestra una lista de las áreas que se ven afectadas en 
  </tbody>
 </table>
 
-Es importante asegurarse de que está ejecutando un sistema operativo compatible, un tiempo de ejecución de Java™, un httpd y una versión de Dispatcher. Para obtener más información, consulte la [AEM Página de requisitos técnicos de.5](/help/sites-deploying/technical-requirements.md). AEM La actualización de estos componentes deberá tenerse en cuenta en el plan del proyecto y deberá realizarse antes de la actualización de los componentes de la versión de la aplicación de la.
+Es importante asegurarse de que está ejecutando un sistema operativo compatible, un tiempo de ejecución de Java™, un httpd y una versión de Dispatcher. Para obtener más información, consulte la [AEM Página de requisitos técnicos de.5](/help/sites-deploying/technical-requirements.md). AEM La actualización de estos componentes debe tenerse en cuenta en el plan del proyecto y debe realizarse antes de la actualización de los componentes de la versión de la aplicación de la aplicación de la.
 
 ## Fases del proyecto {#project-phases}
 
@@ -113,7 +113,7 @@ Al realizar la actualización, es posible que también necesite actualizar otros
 
 ![doi_cropped](assets/doi_cropped.png)
 
-AEM Revise los Requisitos técnicos de la versión 6.5 de la versión de y asegúrese de que el hardware y el software actuales sean suficientes. Para ver posibles cambios en los procesos operativos, consulte los siguientes documentos:
+AEM Revise los Requisitos técnicos para la versión 6.5 de la versión de y asegúrese de que el hardware y el software actuales sean suficientes. Para ver posibles cambios en los procesos operativos, consulte los siguientes documentos:
 
 **Monitorización y mantenimiento:**
 
@@ -143,11 +143,11 @@ Debido a la amplia variedad en la cantidad y naturaleza de las personalizaciones
 
 AEM Existen dos métodos para evaluar la complejidad de la actualización: una fase preliminar puede utilizar el Pattern Detector recién introducido, que está disponible para ejecutarse en las instancias de la versión 6.1, 6.2 y 6.3 de la. El detector de patrones es la forma más sencilla de evaluar la complejidad general de la actualización que cabe esperar utilizando los patrones notificados. El informe detector de patrones incluye patrones para identificar las API no disponibles que utiliza la base de código personalizada (esto se hizo mediante comprobaciones de compatibilidad previas a la actualización en la versión 6.3).
 
-Después de la evaluación inicial, un paso siguiente más completo podría ser realizar una actualización en una instancia de prueba y realizar algunas pruebas básicas de humo. El Adobe también proporciona algunos . Además, la lista de [Funciones en desuso y eliminadas](/help/release-notes/deprecated-removed-features.md) debe revisarse no solo para la versión a la que está actualizando, sino también para cualquier versión entre las versiones de origen y destino. AEM AEM AEM Por ejemplo, si se actualiza de la versión 6.2 a la versión 6.5, es importante revisar las funciones obsoletas y eliminadas de la versión 6.3, además de las de la versión 6.5, que ya se han eliminado de la versión 6.3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Después de la evaluación inicial, un paso siguiente más completo podría ser realizar una actualización en una instancia de prueba y realizar algunas pruebas básicas de humo. El Adobe también proporciona algunos . Además, la lista de [Funciones en desuso y eliminadas](/help/release-notes/deprecated-removed-features.md) debe revisarse no solo para la versión a la que está actualizando, sino también para cualquier versión entre las versiones de origen y destino. AEM AEM AEM Por ejemplo, si se actualiza de la versión 6.2 a la versión 6.5, es importante revisar las funciones obsoletas y eliminadas de la versión 6.3, además de las de la versión 6.5, que ya se han eliminado de la versión 6.30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 ![trei_cropped](assets/trei_cropped.png)
 
-Pattern Detector, introducido recientemente, debería proporcionarle una estimación bastante precisa de lo que puede esperar durante una actualización en la mayoría de los casos. AEM Sin embargo, para personalizaciones e implementaciones más complejas en las que tenga cambios incompatibles, puede actualizar una instancia de desarrollo a la versión 6.5 según las instrucciones de la sección [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md). Una vez finalizado, realice algunas pruebas de humo de alto nivel en este entorno. El objetivo de este ejercicio no es completar exhaustivamente el inventario de casos de prueba y producir un inventario formal de defectos, sino darnos una estimación aproximada de la cantidad de trabajo que se requerirá para actualizar el código para la compatibilidad con 6.5. Cuando se combina con [Detección de patrones](/help/sites-deploying/pattern-detector.md) y los cambios arquitectónicos que se determinaron en la sección anterior, se puede proporcionar una estimación aproximada al equipo de administración del proyecto para que planifique la actualización.
+Pattern Detector, introducido recientemente, debería proporcionarle una estimación bastante precisa de lo que puede esperar durante una actualización en la mayoría de los casos. AEM Sin embargo, para personalizaciones e implementaciones más complejas en las que tenga cambios incompatibles, puede actualizar una instancia de desarrollo a la versión 6.5 según las instrucciones de la sección de, que se encuentra en la sección de configuración de. [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md). Una vez finalizado, realice algunas pruebas de humo de alto nivel en este entorno. El objetivo de este ejercicio no es completar exhaustivamente el inventario de casos de prueba y producir un inventario formal de defectos, sino darnos una estimación aproximada de la cantidad de trabajo que se requerirá para actualizar el código para la compatibilidad con la versión 6.5. Cuando se combina con [Detección de patrones](/help/sites-deploying/pattern-detector.md) y los cambios arquitectónicos que se determinaron en la sección anterior, se puede proporcionar una estimación aproximada al equipo de administración del proyecto para que planifique la actualización.
 
 ### Creación del Runbook de actualización y reversión {#building-the-upgrade-and-rollback-runbook}
 
@@ -176,7 +176,7 @@ Un plan de proyecto integral debe incluir:
 
 ### Desarrollo y control de calidad {#performing-development-and-qa}
 
-El Adobe ha establecido procedimientos para [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) AEM para ser compatible con la versión 6.5 de la. A medida que se ejecuta este proceso iterativo, se deben realizar cambios en el Runbook según sea necesario. Consulte también [AEM Compatibilidad con versiones anteriores en 6.5](/help/sites-deploying/backward-compatibility.md) no hay información sobre cómo las personalizaciones pueden permanecer compatibles con versiones anteriores, por lo general sin requerir desarrollo inmediatamente después de la actualización.
+El Adobe ha establecido procedimientos para [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) AEM para ser compatible con la versión 6.5 de la. A medida que se ejecuta este proceso iterativo, se deben realizar cambios en el Runbook según sea necesario. Consulte también [AEM Compatibilidad con versiones anteriores en 6.5](/help/sites-deploying/backward-compatibility.md) no se necesita información sobre cómo las personalizaciones pueden seguir siendo compatibles con versiones anteriores, por lo general sin requerir desarrollo inmediatamente después de la actualización.
 
 ![patru_cropped](assets/patru_cropped.png)
 

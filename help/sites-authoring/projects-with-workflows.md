@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 42%
 
 ---
@@ -125,7 +125,7 @@ Este flujo de trabajo le permite solicitar un correo electrónico. Es el mismo f
 
 1. En un proyecto sencillo, toque o haga clic en las comillas angulares descendentes en la parte superior derecha de la **Flujos de trabajo** mosaico y selección **Iniciar flujo de trabajo**.
 1. En el asistente de flujo de trabajo seleccione **Solicitar correo electrónico** y haga clic en **Siguiente**.
-1. Introduzca un título de correo electrónico, así como las rutas de campaña y plantilla. Además, puede proporcionar un nombre, una descripción y una fecha de lanzamiento.
+1. Introduzca un título de correo electrónico y las rutas de campaña y plantilla. Además, puede proporcionar un nombre, una descripción y una fecha de lanzamiento.
 
    ![Solicitar flujo de trabajo de correo electrónico](assets/project-request-email-workflow.png)
 

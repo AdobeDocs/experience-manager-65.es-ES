@@ -1,17 +1,15 @@
 ---
 title: Uso de lanzamientos para desarrollar contenido para una versión futura
 description: Launch le permite desarrollar contenido de forma eficaz para una versión futura. Permiten realizar cambios listos para su publicación futura, manteniendo al mismo tiempo las páginas actuales.
-uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 77%
 
 ---

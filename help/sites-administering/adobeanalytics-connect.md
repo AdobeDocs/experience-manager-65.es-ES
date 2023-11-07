@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1497'
 ht-degree: 9%
 
 ---
@@ -111,7 +111,7 @@ En el caso del ID del grupo de informes (RSID) que esté utilizando, puede contr
 >
 >Por ejemplo, un marco de trabajo está configurado para utilizar la variable *diweretail* report suite and author es la instancia de servidor seleccionada. Cuando las páginas se publican junto con el marco de trabajo, se siguen realizando llamadas a Adobe Analytics, pero estas llamadas no contienen el RSID. Solo las llamadas de la instancia de autor incluyen el RSID.
 
-1. Uso de **Navegación**, seleccione **Herramientas**, **Cloud Services**, entonces **Cloud Services heredados**.
+1. Uso de **Navegación**, seleccione **Herramientas**, **Cloud Service**, entonces **Cloud Service heredados**.
 1. Desplazarse a **Adobe Analytics** y seleccione **Mostrar configuraciones**.
 1. Haga clic en **[+]** junto a la configuración de Adobe Analytics.
 
@@ -131,7 +131,7 @@ En el caso del ID del grupo de informes (RSID) que esté utilizando, puede contr
    >
    >El buscador de contenido de la izquierda se rellena con variables de Adobe Analytics (variables de SiteCatalyst) al seleccionar un ID de grupo de informes.
 
-1. Para seleccionar las instancias de servidor que desea enviar información al grupo de informes, utilice el **Modo de ejecución** desplegable (junto a la ID del grupo de informes).
+1. Para seleccionar las instancias de servidor que desea enviar información al grupo de informes, utilice el **Modo de ejecución** desplegable (junto al ID del grupo de informes).
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
@@ -175,7 +175,7 @@ Los descendientes de la página heredan la asociación con el marco. Por ejemplo
 
 1. Desde el **Sites** , seleccione la página que desea configurar con el seguimiento.
 1. Abra el **[Propiedades de página](/help/sites-authoring/editing-page-properties.md)**, directamente desde la consola o desde el editor de páginas.
-1. Abra la pestaña** Cloud Services **.
+1. Abra la pestaña** Cloud Service **.
 
 1. Utilice el **Agregar configuración** menú desplegable para seleccionar **Adobe Analytics** en las opciones disponibles. Si se hereda, desactívelo antes de que el selector esté disponible.
 
@@ -206,7 +206,7 @@ Para configurar este servicio OSGi, puede usar el [Consola web](/help/sites-depl
 
 ## Edición de configuraciones y/o marcos de Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 
-Al igual que al crear una configuración o un marco de trabajo de Adobe Analytics, vaya a (heredado) **Cloud Services** pantalla. Seleccionar **Mostrar configuraciones** A continuación, haga clic en el vínculo a la configuración específica que desee actualizar.
+Al igual que al crear una configuración o un marco de trabajo de Adobe Analytics, vaya a (heredado) **Cloud Service** pantalla. Seleccionar **Mostrar configuraciones** A continuación, haga clic en el vínculo a la configuración específica que desee actualizar.
 
 Al editar una configuración de Adobe Analytics, pulse **Editar** cuando se encuentra en la propia página de configuración para abrir **Editar componente** diálogo.
 

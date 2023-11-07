@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 1%
@@ -76,7 +76,7 @@ Necesita herramientas externas, como NewRelic(TM) y AppDynamics(TM) para supervi
 
 #### Monitorización de aplicaciones internas {#internal-application-monitoring}
 
-La monitorización de aplicaciones internas incluye la monitorización de los componentes de la aplicación que conforman el [!DNL Experience Manager] pila, incluida JVM, el repositorio de contenido y monitorización a través del código de aplicación personalizado creado en la plataforma. En general, se realiza a través de Mbeans JMX que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView (TM), Hyperic (TM), Zabbix (TM), y otras. En el caso de los sistemas que no admiten una conexión directa a JMX, puede escribir scripts de shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que comprendan de forma nativa.
+La monitorización de aplicaciones internas incluye la monitorización de los componentes de la aplicación que conforman el [!DNL Experience Manager] pila, incluida JVM, el repositorio de contenido y monitorización a través del código de aplicación personalizado creado en la plataforma. En general, se realiza a través de Mbeans JMX que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView (TM), Hyperic (TM), Zabbix (TM) y otras. En el caso de los sistemas que no admiten una conexión directa a JMX, puede escribir scripts de shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que comprendan de forma nativa.
 
 El acceso remoto a los Mbeans de JMX no está habilitado de forma predeterminada. Para obtener más información sobre la monitorización mediante JMX, consulte [Monitorización y administración con tecnología JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
@@ -100,12 +100,12 @@ Memoria
 >
 >La información proporcionada por este bean se expresa en bytes.
 
-Hilos
+Threads
 
 * MBean: `java.lang:type=Threading`
 * URL: `/system/console/jmx/java.lang:type=Threading`
 * Instancias: todos los servidores
-* Umbral de alarma: cuando el número de hilos es bueno que el 150% de la línea de base.
+* Umbral de alarma: cuando el número de hilos es mayor que el 150% de la línea de base.
 * Definición de alarma: o bien hay un proceso de fuga activo, o una operación ineficiente consume una gran cantidad de recursos. Analice un volcado de hilos para llegar a una definición.
 
 **Monitor[!DNL Experience Manager]**
@@ -119,7 +119,7 @@ Agentes de replicación
 * MBean: `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * Instancias: un autor y todas las instancias de publicación (para los agentes de vaciado)
-* Umbral de alarma: Cuando el valor de `QueueBlocked` es `true` o el valor de `QueueNumEntries` es bueno que el 150 % de la línea de base.
+* Umbral de alarma: Cuando el valor de `QueueBlocked` es `true` o el valor de `QueueNumEntries` es mayor que el 150 % del valor basal.
 
 * Definición de alarma: presencia de una cola bloqueada en el sistema que indica que el destino de replicación está inactivo o no se puede acceder a él. A menudo, los problemas de red o infraestructura hacen que se pongan en cola entradas excesivas, lo que puede afectar negativamente al rendimiento del sistema.
 

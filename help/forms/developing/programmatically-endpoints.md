@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10801'
+source-wordcount: '10790'
 ht-degree: 2%
 
 ---
@@ -108,7 +108,7 @@ Después de establecer los atributos de extremo de EJB, puede crear un extremo d
 
 **Habilitar el extremo**
 
-Después de crear un nuevo punto de conexión, debe habilitarlo. Después de habilitar el punto de conexión, se puede utilizar para invocar el servicio. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
+Después de crear un extremo, debe habilitarlo. Después de habilitar el punto de conexión, se puede utilizar para invocar el servicio. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
 
 **Consulte también**
 
@@ -213,7 +213,7 @@ Después de establecer los atributos de extremo SOAP, puede crear un extremo SOA
 
 **Habilitar el extremo**
 
-Después de crear un nuevo punto de conexión, debe habilitarlo. Cuando el punto de conexión está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
+Después de crear un extremo, debe habilitarlo. Cuando el punto de conexión está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
 
 **Consulte también**
 
@@ -319,7 +319,7 @@ Para crear un punto final de carpeta inspeccionada para un servicio, especifique
 
 **Especificar valores de configuración**
 
-Debe especificar valores de configuración para un punto final de carpeta inspeccionada al agregar mediante programación un punto final de carpeta inspeccionada a un servicio. Un administrador especifica estos valores de configuración si se agrega un punto final de carpeta inspeccionada mediante la consola de administración.
+Especifique valores de configuración para un punto final de carpeta inspeccionada al agregar mediante programación un punto final de carpeta inspeccionada a un servicio. Un administrador especifica estos valores de configuración si se agrega un punto final de carpeta inspeccionada mediante la consola de administración.
 
 La siguiente lista especifica los valores de configuración que se establecen al agregar mediante programación un punto final de carpeta inspeccionada a un servicio:
 
@@ -552,7 +552,7 @@ Para crear un extremo de correo electrónico para un servicio, especifique los s
 
 **Especificar valores de configuración**
 
-Debe especificar valores de configuración para un extremo de correo electrónico al agregar mediante programación un extremo de correo electrónico a un servicio. Estos valores de configuración los especifica un administrador si se agrega un extremo de correo electrónico mediante la consola de administración.
+Especifique valores de configuración para un extremo de correo electrónico al agregar mediante programación un extremo de correo electrónico a un servicio. Estos valores de configuración los especifica un administrador si se agrega un extremo de correo electrónico mediante la consola de administración.
 
 >[!NOTE]
 >
@@ -811,7 +811,7 @@ Después de establecer los atributos de extremo remoto, puede crear un extremo r
 
 **Habilitar el extremo**
 
-Después de crear un nuevo punto de conexión, debe habilitarlo. Cuando se habilita un extremo de Remoting, permite a un cliente de Flex invocar el servicio.
+Después de crear un extremo, debe habilitarlo. Cuando se habilita un extremo de Remoting, permite a un cliente de Flex invocar el servicio.
 
 **Consulte también**
 
@@ -899,7 +899,7 @@ Para poder agregar mediante programación un extremo de TaskManager, debe crear 
 
 **Crear una categoría para el extremo**
 
-Las categorías se utilizan para organizar los servicios en Workspace. Es decir, un usuario de Workspace puede invocar un servicio que tiene un punto de conexión de TaskManager seleccionando una categoría en Workspace. Al crear un extremo de TaskManager, puede hacer referencia a una categoría existente o crear una nueva categoría mediante programación.
+Las categorías se utilizan para organizar los servicios en Workspace. Es decir, un usuario de Workspace puede invocar un servicio que tiene un punto de conexión de TaskManager seleccionando una categoría en Workspace. Al crear un extremo de TaskManager, puede hacer referencia a una categoría existente o crear una categoría mediante programación.
 
 >[!NOTE]
 >
@@ -922,7 +922,7 @@ Después de establecer los atributos de extremo de TaskManager, puede crear un e
 
 **Habilitar el extremo**
 
-Después de crear un nuevo punto de conexión, debe habilitarlo. Cuando el punto de conexión está habilitado, se puede utilizar para invocar el servicio desde Workspace. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
+Después de crear un extremo, debe habilitarlo. Cuando el punto de conexión está habilitado, se puede utilizar para invocar el servicio desde Workspace. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
 
 **Consulte también**
 
@@ -1034,7 +1034,7 @@ Al modificar un punto de conexión, especifique nuevos valores de configuración
 
 >[!NOTE]
 >
->No puede modificar el servicio que invoca el extremo. Si intenta modificar el servicio, se generará una excepción. Para modificar el servicio asociado a un extremo determinado, quite el extremo y cree uno nuevo. (Consulte [Eliminación de extremos](programmatically-endpoints.md#removing-endpoints).)
+>No puede modificar el servicio que invoca el extremo. Si intenta modificar el servicio, se generará una excepción. Para modificar el servicio asociado a un extremo determinado, elimine el extremo y cree uno. (Consulte [Eliminación de extremos](programmatically-endpoints.md#removing-endpoints).)
 
 **Consulte también**
 
@@ -1128,7 +1128,7 @@ Puede recuperar un extremo recuperando una lista de extremos. A continuación, p
 
 **Quitar el punto final**
 
-Después de crear un nuevo punto de conexión, debe habilitarlo. Cuando el punto de conexión está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
+Después de crear un extremo, debe habilitarlo. Cuando el punto de conexión está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto de conexión, puede verlo en la consola de administración.
 
 **Consulte también**
 

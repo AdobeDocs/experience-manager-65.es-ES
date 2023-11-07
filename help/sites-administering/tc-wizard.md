@@ -3,9 +3,9 @@ title: Asistente para copia de idioma
 description: Obtenga información sobre el uso del Asistente para copia de idioma en Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 2d87022aa2223df261e245fba65df054c041cd69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '214'
 ht-degree: 30%
 
 ---
@@ -40,7 +40,7 @@ Para acceder a este asistente:
    >
    >De forma predeterminada, solo hay una configuración de traducción. Para poder seleccionar otra configuración, primero debe configurar las configuraciones de nube. Consulte [Configuración del marco de trabajo de integración de traducción](/help/sites-administering/tc-tic.md)
 
-1. El **Siguiente** El botón le lleva a la **Traducir** del asistente. Aquí puede elegir entre crear solo la estructura, crear un nuevo proyecto de traducción o agregar a un proyecto de traducción existente.
+1. El **Siguiente** El botón le lleva a la **Traducir** del asistente. Aquí puede elegir entre crear solo la estructura, crear un proyecto de traducción o agregar a un proyecto de traducción existente.
 
    >[!NOTE]
    >

@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1723'
 ht-degree: 1%
 
 ---
@@ -60,11 +60,11 @@ Para suscribirse a los eventos, siga estos pasos:
 1. Vaya a la pestaña Carpetas vinculadas del proyecto en los servicios en la nube.
 1. Ruta principal de la carpeta vinculada: seleccione una carpeta en DAM en la que desee crear las carpetas vinculadas. Si se deja vacío, el valor predeterminado será /content/dam. Asegúrese de que el esquema de metadatos de Workfront Tools y el esquema de metadatos de la carpeta de carpetas vinculadas de Workfront se hayan aplicado a la carpeta seleccionada.
 1. Estructura de carpetas vinculadas: introduzca valores separados por comas. Cada valor debe ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Año, Nombre o algún &quot;Valor de cadena literal&quot; (este último con comillas). Actualmente está establecido en Portfolio, Programa, Año, DE: Tipo de proyecto, Nombre.
-1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, será el título de la última carpeta.
+1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, es el título de la última carpeta.
 1. Subcarpetas multicampo permite especificar una lista de carpetas que deben crearse como una carpeta secundaria de la carpeta vinculada.
 1. Estado del proyecto: seleccione el estado del proyecto para crear la carpeta vinculada.
 1. Crear una carpeta vinculada en proyectos con portafolio: lista de Portfolio a los que debe pertenecer el proyecto para crear la carpeta vinculada. Deje esta lista vacía para crear la carpeta vinculada para todo el portafolio de proyectos.
-1. Crear una carpeta vinculada en proyectos con un campo de formulario personalizado: Campo de formulario personalizado y su valor correspondiente que debe tener el proyecto para crear la carpeta vinculada. Esta configuración se ignorará si se deja vacía. Seleccionar `CUSTOM FORMS: Create DAM Linked Folder` para campo y entrada `Yes` para el valor.
+1. Crear una carpeta vinculada en proyectos con un campo de formulario personalizado: Campo de formulario personalizado y su valor correspondiente que debe tener el proyecto para crear la carpeta vinculada. Esta configuración se ignora si se deja vacía. Seleccionar `CUSTOM FORMS: Create DAM Linked Folder` para campo y entrada `Yes` para el valor.
 1. Haga clic en Habilitar la creación automática de carpetas vinculadas. Si vuelve a la pestaña Suscripciones de eventos, verá que ahora hay un evento de creación.
 
 ![configuración de carpeta vinculada](/help/assets/assets/wf-linked-folder-config.png)
@@ -95,7 +95,7 @@ La asignación de metadatos entre documentos y recursos de Adobe Workfront AEM s
 Para configurar las asignaciones, siga estos pasos:
 
 1. Vaya a **Herramientas** > **Assets** > **Esquemas de metadatos**.
-1. Seleccione el formulario de esquema de metadatos que desee editar y haga clic en **Editar** o cree un nuevo esquema de metadatos desde cero.
+1. Seleccione el formulario de esquema de metadatos que desee editar y haga clic en **Editar** o cree un esquema de metadatos desde cero.
 1. Seleccione el campo del formulario de esquema de metadatos que desea editar y seleccione **Configuración** en el panel derecho.
 1. Entrada [!DNL Workfront] Campo de formulario personalizado, seleccione el nombre del [!DNL Workfront] AEM que desee asignar a la propiedad seleccionada de la. Las opciones disponibles son:
 
@@ -173,7 +173,7 @@ AEM AEM Para mantener el historial de versiones de los recursos en la, configure
 
 1. Seleccionar opción **[!UICONTROL Almacenar recursos con el mismo nombre que las versiones del recurso existente]**. Cuando se selecciona, esta opción permite almacenar recursos cargados con el mismo nombre y en la misma ubicación que la versión del recurso existente. Si no se selecciona, se creará un nuevo recurso con un nombre diferente (por ejemplo, `asset-name.pdf` y `asset-name-1.pdf`).
 
-1. Seleccionar opción **[!UICONTROL Actualizar los metadatos del recurso al crear una nueva versión]**. Cuando se selecciona, esta opción actualiza los metadatos del recurso cada vez que se crea una nueva versión del recurso. Si no se selecciona, el recurso conservará los metadatos que tenía antes de crear la nueva versión.
+1. Seleccionar opción **[!UICONTROL Actualizar los metadatos del recurso al crear una versión]**. Cuando se selecciona, esta opción actualiza los metadatos del recurso cada vez que se crea una nueva versión del recurso. Si no se selecciona, el recurso conservará los metadatos que tenía antes de crear la nueva versión.
 
 ![configurar versiones de recursos](/help/assets/assets/wf-config-versioning.png)
 

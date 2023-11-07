@@ -2,10 +2,10 @@
 title: Fragmentos de experiencias
 description: Fragmentos de experiencias en la creación de Adobe Experience Manager Sites.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 81%
+source-wordcount: '1440'
+ht-degree: 80%
 
 ---
 
@@ -234,7 +234,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    ![xf-06](assets/xf-06.png)
 
-1. Confirmar con **Listo** (icono del tic), la nueva variación se mostrará en el panel:
+1. Confirmar con **Listo** (icono del tic), la nueva variación se muestra en el panel:
 
    ![xf-07](assets/xf-07.png)
 
@@ -267,7 +267,7 @@ Puede seleccionar uno o varios componentes para crear un bloque de creación y a
 
 ### Crear un bloque de creación {#creating-a-building-block}
 
-Para crear un componente nuevo, haga lo siguiente:
+Para crear un bloque de creación:
 
 1. En el editor de Fragmento de experiencia, seleccione los componentes que desea reutilizar:
 
@@ -281,7 +281,7 @@ Para crear un componente nuevo, haga lo siguiente:
 
    ![xf-11](assets/xf-11.png)
 
-1. El **bloque de creación** se mostrará en la pestaña y se podrá seleccionar en el sistema de párrafos:
+1. El **Bloque de creación** se muestra en la pestaña y se puede seleccionar en el sistema de párrafos:
 
    ![xf-12](assets/xf-12.png)
 

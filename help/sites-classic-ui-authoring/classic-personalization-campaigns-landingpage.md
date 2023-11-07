@@ -1,19 +1,15 @@
 ---
 title: Páginas de destino
-seo-title: Landing Pages
 description: AEM La función de páginas de aterrizaje permite importar rápida y fácilmente un diseño y contenido directamente en una página de. Un desarrollador web puede preparar el HTML y recursos adicionales que se pueden importar como una página completa o solo como parte de una página.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3329'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -41,7 +37,7 @@ La preparación del paquete de diseño para la importación se explica en [Ampli
 
 ## ¿Qué son las páginas de aterrizaje? {#what-are-landing-pages}
 
-Las páginas de aterrizaje son sitios de una o varias páginas que son el &quot;punto final&quot; de un alcance de marketing; por ejemplo, con correo electrónico, anuncios/banners o medios sociales. Una página de aterrizaje puede servir para varios fines, pero todos tienen una cosa en común: el visitante debe cumplir una tarea y que define el éxito de una página de aterrizaje.
+Las páginas de aterrizaje son sitios de una o varias páginas que son el &quot;punto final&quot; de una campaña de marketing, por ejemplo, con correo electrónico, anuncios/banners o medios sociales. Una página de aterrizaje puede servir para varios fines, pero todos tienen una cosa en común: el visitante debe cumplir una tarea y que define el éxito de una página de aterrizaje.
 
 AEM AEM AEM La función Páginas de destino en la permite a los especialistas en marketing trabajar con diseñadores web de agencias o equipos creativos internos para crear diseños de página que se puedan importar fácilmente a las páginas de destino y que los especialistas en marketing puedan seguir editando, y que se publiquen bajo el mismo gobierno que el resto de los sitios con tecnología de la web. La función de página de destino en la página de destino es la siguiente:
 
@@ -357,7 +353,7 @@ Para poder importar el diseño de la página de aterrizaje, debe crear una pági
 >
 >De forma predeterminada, una página de importador solo se puede crear en campañas, pero también puede superponer esta plantilla para crear una página de aterrizaje en `/content/mysite`.
 
-Para crear una nueva página de aterrizaje:
+Para crear una página de aterrizaje:
 
 1. Vaya a la **Sitios web** consola.
 1. Seleccione la campaña en el panel izquierdo.
@@ -417,7 +413,7 @@ Al importar el paquete de diseño, **Borrar diseño** y **Descargar archivo comp
 
 ### Descarga del paquete de diseño importado {#downloading-the-imported-design-package}
 
-La descarga del archivo zip permite registrar qué zip se importó con una página de aterrizaje en particular. Tenga en cuenta que los cambios realizados en una página no se añaden al zip.
+La descarga del archivo zip permite registrar qué zip se importó con una página de aterrizaje en particular. Los cambios realizados en una página no se añaden al zip.
 
 Para descargar el paquete de diseño importado, haga clic en **Descargar archivo comprimido** en la barra de herramientas Página de aterrizaje.
 
@@ -439,7 +435,7 @@ Al borrar la página de aterrizaje, puede quitar los cambios de contenido. Si ha
 
 >[!NOTE]
 >
->Si decide quitar los cambios de contenido, al hacer clic en se perderán todos los cambios realizados en la página de aterrizaje importada, así como todas las propiedades de la página **Borrar**.
+>Si decide quitar los cambios de contenido, al hacer clic en se perderán todos los cambios realizados en la página de aterrizaje importada y todas las propiedades de la página **Borrar**.
 
 ### Modificación y adición de componentes en una página de aterrizaje {#modifying-and-adding-components-on-a-landing-page}
 

@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ AEM Mobile On-Demand proporciona una plantilla de aplicación completamente conf
 
 La aplicación We.Unlimited es una plantilla de ejemplo que representa el shell de una aplicación de AEM Mobile On-Demand totalmente configurable y manejable.
 
-Al seleccionar esta plantilla de muestra al crear una nueva aplicación, se muestra un panel con numerosas funciones de AEM Mobile.
+Al seleccionar esta plantilla de muestra al crear una aplicación, se muestra un panel con numerosas funciones de AEM Mobile.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -36,13 +36,13 @@ Al seleccionar esta plantilla de muestra al crear una nueva aplicación, se mues
 
 ## Creación de plantillas de aplicación {#creating-app-templates}
 
-Una plantilla de aplicación se utiliza para crear una nueva aplicación y actúa como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación. La plantilla elimina algunas propiedades fundamentales para guiar a la aplicación de la manera adecuada. En general, un cliente no crearía demasiadas aplicaciones en total.
+Una plantilla de aplicación se utiliza para crear una aplicación y actúa como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación. La plantilla elimina algunas propiedades fundamentales para guiar a la aplicación de la manera adecuada. En general, un cliente no crearía demasiadas aplicaciones en total.
 
-AEM Las plantillas de aplicación ofrecen una forma sencilla de aprovechar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la plataforma de creación de aplicaciones de la plataforma de creación de aplicaciones de.
+AEM Las plantillas de aplicación ofrecen una forma sencilla de utilizar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
 
-Al crear una aplicación nueva basada en la plantilla de otra aplicación, obtendrá una aplicación que tenga un punto de partida representativo de la aplicación en la que se creó.
+Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.
 
-Pasos para crear una nueva aplicación basada en una plantilla de aplicación:
+Pasos para crear una aplicación basada en una plantilla de aplicación:
 
 1. Vaya al catálogo de aplicaciones de AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Seleccionar **Crear** —> **Aplicación** como se muestra a continuación
@@ -51,7 +51,7 @@ Una vez creada una aplicación con esta plantilla, puede agregar artículos, tit
 
 >[!NOTE]
 >
->También puede seleccionar una plantilla de aplicación de ejemplo, por ejemplo **We.Unlimited** AEM aplicación, puesta a su disposición por un desarrollador de. Si utiliza esta plantilla de ejemplo para su aplicación, obtendrá algunos artículos y colecciones de ejemplo para trabajar. Tendrá la opción de utilizar las plantillas y los componentes de ejemplo, personalizar los existentes o crear nuevos para la aplicación.
+>También puede seleccionar una plantilla de aplicación de ejemplo, por ejemplo, **We.Unlimited** AEM aplicación, puesta a su disposición por un desarrollador de. Si utiliza esta plantilla de ejemplo para su aplicación, obtendrá algunos artículos y colecciones de ejemplo para trabajar. Tendrá la opción de utilizar las plantillas y los componentes de ejemplo, personalizar los existentes o crear nuevos para la aplicación.
 
 >[!CAUTION]
 >
@@ -75,7 +75,7 @@ Cada tipo de entidad tiene dos plantillas predeterminadas. Estos son:
 
 El artículo de Unlimited es una plantilla de muestra que representa un diseño de artículo típico de AEM Mobile On-Demand.
 
-1. Haga clic en **+** in **Administrar artículos** para crear un nuevo artículo. Puede elegir una de estas opciones **Artículo de Unlimited** o una **Artículo de texto enriquecido**. La siguiente imagen muestra la opción que le permite elegir entre cualquiera de estas dos plantillas de artículo.
+1. Entrada **Administrar artículos**, seleccione **+**  para crear un artículo. Puede elegir una de estas opciones **Artículo de Unlimited** o una **Artículo de texto enriquecido**. La siguiente imagen muestra la opción que le permite elegir entre cualquiera de estas dos plantillas de artículo.
 
 1. Clic **Siguiente** para definir metadatos de artículo, como nombre/título del artículo, descripción, autor, resumen, departamento, imagen en miniatura, acceso a artículos, etc.
 1. Clic **Siguiente** para rellenar Propiedades del anuncio.

@@ -1,18 +1,14 @@
 ---
 title: Planificación
-seo-title: Planning
 description: Aprenda lo que necesita saber para planificar las pruebas de Adobe Experience Manager.
-seo-description: What you need to know to plan for your test
-uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -37,7 +33,7 @@ Antes de comenzar con el análisis real y la definición de pruebas, revise la s
 
 Existen muchos sitios web, libros y cursos que tratan sobre tales principios y por lo tanto no serán tratados en detalle en este documento.
 
-**Suposiciones que se deben evitar** - La mayor suposición (hecha regularmente) es que su sitio web necesitará atender millones de solicitudes cada día. En ciertas circunstancias esto puede ser cierto, pero no se puede suponer.
+**Suposiciones que se deben evitar** - La mayor suposición es que su sitio web debe atender millones de solicitudes cada día. En ciertas circunstancias esto puede ser cierto, pero no se puede suponer.
 
 Aunque los números futuros no se pueden predecir con una precisión del 100%, observar el sitio existente y el tráfico experimentado dará una buena indicación. A continuación, puede hacer que las estimaciones dependan del factor por el que espera / espera que aumente el tráfico.
 

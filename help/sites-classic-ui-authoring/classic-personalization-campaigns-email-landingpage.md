@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Para crear una página de aterrizaje de newsletter efectiva, debe hacer lo sigui
 >[!NOTE]
 >
 >El Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
->La recomendación es aprovechar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
+>La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
 ## Creación de una lista para la newsletter {#creating-a-list-for-the-newsletter}
 
@@ -48,7 +48,7 @@ Cree un formulario de registro de newsletter que permita a los usuarios suscribi
 
 Para crear su propio formulario de newsletter, consulte la información sobre la creación de formularios en la [Documentación de Forms](/help/sites-authoring/default-components.md#form). La newsletter utiliza las etiquetas de la Biblioteca de etiquetas. Para añadir etiquetas adicionales, consulte [Administración de etiquetas](/help/sites-authoring/tags.md#tagadministration).
 
-Los campos ocultos en el ejemplo siguiente proporcionan la cantidad mínima de información (correo electrónico); además, puede agregar más campos más adelante, pero esto afectará a la tasa de conversión.
+Los campos ocultos en el siguiente ejemplo proporcionan la mínima cantidad de información (correo electrónico); además, puede agregar más campos más adelante, pero esto afectará a la tasa de conversión.
 
 El siguiente ejemplo es un formulario creado en https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 

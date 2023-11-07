@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 17%
+source-wordcount: '1132'
+ht-degree: 14%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->Este documento cubre la configuración de la segmentación tal como se utiliza con Client Context. Para configurar segmentos con ContextHub mediante la interfaz de usuario táctil, consulte [Configuración de la segmentación con ContextHub](/help/sites-administering/segmentation.md).
+>Este documento cubre la configuración de la segmentación tal como se utiliza con Client Context. Para configurar segmentos con ContextHub mediante la IU táctil, consulte [Configuración de la segmentación con ContextHub](/help/sites-administering/segmentation.md).
 
 La segmentación es una consideración clave al crear una campaña. Consulte [Glosario de segmentación](/help/sites-authoring/segmentation-overview.md) para obtener información sobre cómo funciona la segmentación y los términos clave.
 
-En función de la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que quiera lograr, deberá definir los segmentos y las estrategias necesarios para el contenido de destino.
+Según la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que desee lograr, debe definir los segmentos y las estrategias necesarios para el contenido de destino.
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) de la página web. Las páginas de teaser definidas aquí se pueden incluir como párrafos de teaser en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
@@ -131,7 +131,7 @@ Para definir el nuevo segmento:
 1. Crear un [nueva página](/help/sites-authoring/editing-content.md#creatinganewpage) uso del **Segmento** plantilla.
 1. Abra la nueva página para ver el editor de segmentos:
 
-   ![El primer paso para crear un nuevo segmento en el Editor de segmentos](assets/screen_shot_2012-02-02at101726am.png)
+   ![El primer paso para crear un segmento en el Editor de segmentos](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Utilice la barra de tareas o el menú contextual (por lo general, haga clic con el botón secundario del mouse y seleccione **Nuevo...** para abrir la ventana Insertar nuevo componente) y encontrar el rasgo del segmento que necesita. A continuación, arrástrela a **Editor de segmentos** aparecerá en la lista predeterminada **Y** contenedor.
 1. Haga doble clic en el nuevo rasgo para editar los parámetros específicos; por ejemplo, la posición del ratón:

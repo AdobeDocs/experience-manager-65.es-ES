@@ -1,17 +1,15 @@
 ---
 title: Participación en flujo de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso.
-uuid: 15d56bcc-1e84-4cc0-8b71-7fb906cd7ff7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1519'
 ht-degree: 90%
 
 ---
@@ -46,7 +44,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
    * El número de flujos de trabajo a los que está sujeta la página. Puede hacer lo siguiente:
 
       * utilice las flechas izquierda/derecha para navegar por la información de estado de los distintos flujos de trabajo.
-      * pulse o haga clic en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccione el flujo de trabajo que desee mostrar en la barra de estado.
+      * haga clic o pulse en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccione el flujo de trabajo que desee visualizar en la barra de estado.
 
   ![wf-59](assets/wf-59.png)
 
@@ -57,7 +55,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
   >
   >Las acciones se muestran cuando el usuario actual está directamente involucrado en el paso actual del flujo de trabajo.
 
-* Cuándo **Cronología** está abierto para el recurso, se mostrará el paso del flujo de trabajo. Al hacer clic o pulsar en el titular de alerta, se mostrarán las acciones disponibles:
+* Cuando **Cronología** está abierta para el recurso, se muestra el paso del flujo de trabajo. Al hacer clic o pulsar en el titular de alerta, se mostrarán las acciones disponibles:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -84,7 +82,7 @@ Utilice el siguiente procedimiento para completar el elemento de trabajo:
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
 1. Seleccione **Completar** en la barra de herramientas.
-1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione **Siguiente paso** del selector desplegable y añada un comentario en el campo **Comentario**, si fuera necesario.
+1. El **Completar elemento de trabajo** se abre el cuadro de diálogo. Seleccione **Etapa siguiente** del selector desplegable y añada un **Comentario**, si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Finalización de una etapa de participante: editor de la página {#completing-a-participant-step-page-editor}
@@ -93,7 +91,7 @@ Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
 1. Abra la [página para editarla](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Completar** de la barra de estado situada en la parte superior.
-1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione **Siguiente paso** del selector desplegable y añada un comentario en el campo **Comentario**, si fuera necesario.
+1. El **Completar elemento de trabajo** se abre el cuadro de diálogo. Seleccione **Etapa siguiente** del selector desplegable y añada un **Comentario**, si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Finalización de una etapa de participante: cronología {#completing-a-participant-step-timeline}
@@ -143,7 +141,7 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
 1. Seleccione **Delegar** en la barra de herramientas.
-1. Se abrirá el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un comentario en el campo **Comentario**, si fuera necesario.
+1. Se abrirá el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un **Comentario** si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Delegación de una etapa de participante: editor de páginas {#delegating-a-participant-step-page-editor}
@@ -152,7 +150,7 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
 1. Abra la [página para editarla](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Seleccione **Delegar** de la barra de estado situada en la parte superior.
-1. Se abrirá el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un comentario en el campo **Comentario**, si fuera necesario.
+1. Se abrirá el cuadro de diálogo. Especifique el **Usuario** del selector desplegable (también puede ser un grupo) y añada un **Comentario** si fuera necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
 
 #### Delegación de una etapa de participante: cronología {#delegating-a-participant-step-timeline}

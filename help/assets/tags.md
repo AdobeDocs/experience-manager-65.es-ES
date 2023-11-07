@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6622'
+source-wordcount: '6618'
 ht-degree: 7%
 
 ---
@@ -469,7 +469,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
    Consulte [Información general sobre props y eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
-   A los efectos de esta documentación, solo se utilizará una variable de Tráfico personalizado (props), ya que estará disponible en un informe de Analytics en los minutos siguientes a la acción que se produzca en una página web.
+   A los efectos de esta documentación, solo se utiliza una variable de tráfico personalizado (props) porque está disponible en un informe de Analytics pocos minutos después de que se produzca una acción en una página web.
 
    Para habilitar una nueva variable Tráfico personalizado, vaya a Adobe Analytics, en la barra de herramientas **[!UICONTROL Administrador]** > **[!UICONTROL Grupos de informes]**.
 
@@ -496,7 +496,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
 ## Configuración de etiquetas de Experience Platform para la integración {#configuring-adobe-launch-for-the-integration}
 
-Después de configurar las etiquetas de Experience Platform, se configurará lo siguiente para la integración:
+Después de configurar las etiquetas de Experience Platform, se configura lo siguiente para la integración:
 
 * La creación de una nueva propiedad para mantener todas las configuraciones juntas.
 * Instalación y configuración de extensiones. El código del lado del cliente de todas las extensiones instaladas en la propiedad se compila junto en una biblioteca. La página web utiliza esta biblioteca más adelante.
@@ -578,7 +578,7 @@ En el momento de escribir este artículo, *Visores de Dynamic Media* La extensi�
 
 Consulte [Creación de una propiedad en Etiquetas de Experience Platform](#creating-a-property-in-adobe-launch).
 
-Una vez instaladas y configuradas las extensiones, se enumerarán las cinco extensiones siguientes (cuatro si no realiza el seguimiento de vídeo) en el área Extensiones > Instaladas.
+Una vez instaladas y configuradas las extensiones, y como mínimo, las cinco extensiones siguientes (cuatro si no realiza el seguimiento de vídeos) se enumeran en el área Extensiones > Instaladas.
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -826,7 +826,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    En el **[!UICONTROL URI de biblioteca]** (Identificador de recurso uniforme), compruebe la ubicación de la versión de ensayo de la biblioteca de etiquetas de Experience Platform. El Experience Manager rellena este campo automáticamente.
 
-   Solo con fines de ejemplo, este paso utiliza bibliotecas de etiquetas de Experience Platform implementadas en CDN de Adobe.
+   Solo para fines de ejemplo, este paso utiliza bibliotecas de etiquetas de Experience Platform implementadas en CDN de Adobe.
 
    >[!NOTE]
    >

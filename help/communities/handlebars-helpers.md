@@ -8,7 +8,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Handlebars Helpers (ayudantes) son métodos a los que se puede llamar desde scri
 
 La implementación incluye una definición del lado del cliente y una definición del lado del servidor. También es posible que los desarrolladores creen ayudantes personalizados.
 
-Los ayudantes personalizados de SCF que se entregan con AEM Communities se definen en la [biblioteca de cliente](../../help/sites-developing/clientlibs.md):
+Los ayudantes de SCF personalizados que se entregan con AEM Communities se definen en la [biblioteca de cliente](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
@@ -276,7 +276,7 @@ Incluye un nuevo componente de comentarios en `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-AEM Un asistente que incluye una biblioteca de cliente de HTML de, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe utilizarse varias veces en el script Handlebars.
+AEM Un asistente que incluye una biblioteca de cliente de HTML de, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en el script Handlebars.
 
 Este asistente, que solo es adecuado en el lado del servidor, proporciona una funcionalidad similar a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 

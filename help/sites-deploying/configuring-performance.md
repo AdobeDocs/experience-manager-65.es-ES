@@ -9,7 +9,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '6503'
 ht-degree: 12%
@@ -36,13 +36,12 @@ Los autores que introducen y actualizan contenido utilizan este entorno. Debe at
 
 ## Entorno de publicación {#publish-environment}
 
-Este entorno incluye contenido que usted pone a disposición de sus usuarios. En este caso, el número de solicitudes es incluso bueno y la velocidad es igualmente vital. Sin embargo, como la naturaleza de las solicitudes es menos dinámica, se pueden aplicar mecanismos adicionales de mejora del rendimiento, como almacenar en caché el contenido o equilibrar la carga.
+Este entorno incluye contenido que usted pone a disposición de sus usuarios. En este caso, el número de solicitudes es aún mayor y la velocidad es igualmente vital. Sin embargo, como la naturaleza de las solicitudes es menos dinámica, se pueden aplicar mecanismos adicionales de mejora del rendimiento, como almacenar en caché el contenido o equilibrar la carga.
 
 >[!NOTE]
 >
 >* Después de configurar para la optimización del rendimiento, siga los procedimientos que se describen en [Día difícil](/help/sites-developing/tough-day.md) para probar el entorno con una carga pesada.
 >* Consulte también [Consejos de rendimiento.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
-
 
 ## Metodología de optimización del rendimiento {#performance-optimization-methodology}
 
@@ -387,9 +386,9 @@ En ambos casos, puede definir el número esperado de transacciones por segundo c
 | Componente | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Página principal de un solo usuario | Media | 1 | 1 |  |  |
-|  | Pico | 1 | 3 |  |  |
+|   | Pico | 1 | 3 |  |  |
 | Página principal 100 usuarios | Media | 100 | 3 |  |  |
-|  | Pico | 100 | 3 |  |
+|   | Pico | 100 | 3 |  |
 
 #### Pruebas de componentes combinadas {#combined-component-tests}
 
@@ -398,27 +397,27 @@ La prueba de los componentes en combinación ofrece una reflexión más detallad
 | Escenario | Componente | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Media mixta | Página principal | 10 | 1 |  |  |
-|  | Búsqueda | 10 | 1 |  |  |
-|  | Noticias | 10 | 2 |  |  |
-|  | Eventos | 10 | 1 |  |  |
-|  | Activaciones | 10 | 3 |  | Simulación del comportamiento del autor. |
+|   | Búsqueda | 10 | 1 |  |  |
+|   | Noticias | 10 | 2 |  |  |
+|   | Eventos | 10 | 1 |  |  |
+|   | Activaciones | 10 | 3 |  | Simulación del comportamiento del autor. |
 | Pico mixto | Página principal | 100 | 5 |  |  |
-|  | Búsqueda | 50 | 5 |  |  |
-|  | Noticias | 100 | 10 |  |  |
-|  | Eventos | 100 | 10 |  |  |
-|  | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
+|   | Búsqueda | 50 | 5 |  |  |
+|   | Noticias | 100 | 10 |  |  |
+|   | Eventos | 100 | 10 |  |  |
+|   | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
 
 #### Pruebas de puesta en marcha {#going-live-tests}
 
-Durante los primeros días después de que su sitio web esté disponible, puede esperar un mayor nivel de interés. Este escenario es incluso más bueno que los valores máximos que está probando. El Adobe recomienda probar los escenarios de lanzamiento para garantizar que el sistema pueda hacer frente a esta situación.
+Durante los primeros días después de que su sitio web esté disponible, puede esperar un mayor nivel de interés. Este escenario es incluso mayor que los valores máximos que está probando. El Adobe recomienda probar los escenarios de lanzamiento para garantizar que el sistema pueda hacer frente a esta situación.
 
 | Escenario | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Pico de puesta en marcha | Página principal | 200 | 20 |  |  |
-|  | Búsqueda | 100 | 10 |  |  |
-|  | Noticias | 200 | 20 |  |  |
-|  | Eventos | 200 | 20 |  |  |
-|  | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
+|   | Búsqueda | 100 | 10 |  |  |
+|   | Noticias | 200 | 20 |  |  |
+|   | Eventos | 200 | 20 |  |  |
+|   | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
 
 #### Pruebas de escenarios de error {#error-scenario-tests}
 
@@ -432,9 +431,9 @@ Al diseñar estas pruebas, debe tenerse en cuenta que no todos los escenarios se
 | Escenario de error | Tipo de error | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Solo se busca &amp;ast;&amp;ast;&amp;ast;. |
-|  | Detener palabra | 20 | 2 |  | Buscando una palabra de detención. |
-|  | Cadena vacía | 10 | 1 |  | Buscando una cadena vacía. |
-|  | Caracteres especiales | 10 | 1 |  | Buscando caracteres especiales. |
+|   | Detener palabra | 20 | 2 |  | Buscando una palabra de detención. |
+|   | Cadena vacía | 10 | 1 |  | Buscando una cadena vacía. |
+|   | Caracteres especiales | 10 | 1 |  | Buscando caracteres especiales. |
 
 #### Pruebas de resistencia {#endurance-tests}
 
@@ -443,10 +442,10 @@ Algunos problemas solo se encuentran después de que el sistema se haya estado e
 | Escenario | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
 | Prueba de resistencia (72 horas) | Página principal | 10 | 1 |  |  |
-|  | Búsqueda | 10 | 1 |  |  |
-|  | Noticias | 20 | 2 |  |  |
-|  | Eventos | 10 | 1 |  |  |
-|  | Activaciones | 1 | 3 |  | Simulación del comportamiento del autor. |
+|   | Búsqueda | 10 | 1 |  |  |
+|   | Noticias | 20 | 2 |  |  |
+|   | Eventos | 10 | 1 |  |  |
+|   | Activaciones | 1 | 3 |  | Simulación del comportamiento del autor. |
 
 ### Optimización {#optimization}
 
@@ -496,6 +495,7 @@ Dispatcher ofrece varios mecanismos integrados que puede utilizar para optimizar
 >En general, varias estrategias de almacenamiento en caché implican la selección de buenas direcciones URL y no depender de estos datos adicionales.
 >
 >Con la versión de Dispatcher 4.1.11 también puede almacenar en caché los encabezados de respuesta, consulte [Almacenamiento en caché de encabezados de respuesta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>
 
 ### Calcular la proporción de caché de Dispatcher {#calculating-the-dispatcher-cache-ratio}
 
@@ -718,7 +718,7 @@ El parámetro de retraso de copia de seguridad se proporciona para limitar el gr
 
 Para comparar, el rendimiento obtenido mediante una copia de seguridad del sistema de archivos (&quot;tar&quot;) para realizar una copia de seguridad de los mismos archivos del repositorio. El rendimiento del tar es comparable, pero ligeramente superior al de la copia de seguridad con retraso establecido en cero. La configuración de incluso un pequeño retraso reduce en gran medida el rendimiento del backup y el retraso predeterminado de 10 milisegundos reduce en gran medida el rendimiento. En situaciones en las que se pueden programar copias de seguridad cuando el uso general de la aplicación es bajo o la aplicación puede estar inactiva, reduzca el retraso por debajo del valor predeterminado para permitir que la copia de seguridad se realice más rápidamente.
 
-El impacto real del rendimiento de la aplicación de un backup continuo depende de la aplicación y de los detalles de la infraestructura. La elección del valor de retardo debe hacerse mediante un análisis empírico de la aplicación, pero debe elegirse lo más pequeño posible, de modo que las copias de seguridad puedan completarse lo más rápido posible. Debido a que existe una correlación débil entre el valor de retardo elegido y el impacto en el rendimiento de la aplicación, la elección del retardo debería favorecer tiempos de backup generales más cortos para minimizar el impacto general de los backups. Una copia de seguridad que tarda ocho horas en completarse, pero que afecta al rendimiento en un -20 % probablemente tenga un bueno impacto general que una que tarda dos horas en completarse, pero afecta al rendimiento en un -30 %.
+El impacto real del rendimiento de la aplicación de un backup continuo depende de la aplicación y de los detalles de la infraestructura. La elección del valor de retardo debe hacerse mediante un análisis empírico de la aplicación, pero debe elegirse lo más pequeño posible, de modo que las copias de seguridad puedan completarse lo más rápido posible. Debido a que existe una correlación débil entre el valor de retardo elegido y el impacto en el rendimiento de la aplicación, la elección del retardo debería favorecer tiempos de backup generales más cortos para minimizar el impacto general de los backups. Una copia de seguridad que tarda ocho horas en completarse, pero que afecta al rendimiento en un -20 % probablemente tenga un impacto general mayor que una que tarda dos horas en completarse, pero afecta al rendimiento en un -30 %.
 
 ### Referencias {#references}
 

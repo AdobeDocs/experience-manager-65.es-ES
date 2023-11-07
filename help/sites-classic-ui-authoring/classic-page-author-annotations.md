@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '761'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ Una anotación coloca un marcador de color/nota adhesiva en la página. La anota
 
 >[!NOTE]
 >
->Las anotaciones creadas en la IU clásica también se mostrarán en la IU táctil optimizada. Sin embargo, los bocetos son específicos de la interfaz de usuario y solo se muestran en la interfaz en la que se crearon.
+>Las anotaciones creadas en la IU clásica se muestran en la IU táctil optimizada. Sin embargo, los bocetos son específicos de la interfaz de usuario y solo se muestran en la interfaz en la que se crearon.
 
 >[!CAUTION]
 >

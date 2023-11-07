@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1901'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Por ejemplo, se configura un recordatorio de tarea para que se produzca tres dí
 
 >[!NOTE]
 >
->AEM Al calcular fechas y horas mediante calendarios comerciales, los formularios de datos utilizan la fecha y la hora del servidor en el que se están ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si se programa un recordatorio de tarea para que se produzca a las 10:00 a.m. en un servidor que se ejecute en Londres, pero el usuario que recibe el recordatorio se encuentra en la ciudad de Nueva York, el usuario recibiría el recordatorio a las 5:00 a.m. hora local.
+>AEM Al calcular fechas y horas mediante calendarios comerciales, los formularios de datos utilizan la fecha y la hora del servidor en el que se están ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si un recordatorio de tarea está programado para producirse a las 10:00 a. m. en un servidor que se ejecute en Londres, pero el usuario que recibe el recordatorio está en la ciudad de Nueva York, recibirá el recordatorio a las 5:00 a. m. hora local.
 
 ## Usar el calendario empresarial predeterminado {#using-the-default-business-calendar}
 
@@ -65,7 +65,7 @@ Si su organización contiene diferentes conjuntos de usuarios con diferentes dí
 
 >[!NOTE]
 >
->Si no crea un nuevo calendario empresarial, se utilizará el predeterminado.
+>Si no crea un calendario empresarial, se utilizará el predeterminado.
 
 1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Calendarios empresariales.
 1. Para agregar un nuevo calendario empresarial, haga clic en ![bus_cal_plus](assets/bus_cal_plus.png). El texto *Nuevo calendario* aparece en la lista desplegable. Seleccione el texto y escriba otro nombre para el calendario.
@@ -117,7 +117,7 @@ Puede utilizar dos métodos para asociar un calendario empresarial a un usuario.
 
    >[!NOTE]
    >
-   >AEM En Workbench, si ha configurado un servicio de usuario para utilizar calendarios comerciales y el servicio está asignado a un grupo, los formularios de la aplicación utilizan las asignaciones de grupo especificadas aquí para resolver el calendario del grupo. AEM Los formularios siempre utilizan asignaciones de grupos para resolver el calendario de los grupos, incluso cuando se utilizan claves de calendario empresarial para resolver el calendario de los usuarios. Si no se encuentra ninguna asignación de grupo, se utilizará el calendario empresarial predeterminado.
+   >AEM En Workbench, si ha configurado un servicio de usuario para utilizar calendarios comerciales y el servicio está asignado a un grupo, los formularios de la aplicación utilizan las asignaciones de grupo especificadas aquí para resolver el calendario del grupo. AEM Los formularios siempre utilizan asignaciones de grupos para resolver el calendario de los grupos, incluso cuando se utilizan claves de calendario empresarial para resolver el calendario de los usuarios. Si no se encuentra ninguna asignación de grupo, se utiliza el calendario empresarial predeterminado.
 
 1. Para cada elemento de la lista Grupo de Servicios de Directorio, seleccione un Calendario.
 1. Haga clic en Guardar.

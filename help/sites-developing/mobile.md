@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3786'
 ht-degree: 1%
 
 ---
@@ -360,12 +360,12 @@ Para obtener más información sobre la integración de la biblioteca de cliente
 
 ### Proporcionar vínculos alternativos {#providing-alternate-links}
 
-El `PageVariantsProvider` El servicio OSGi puede generar vínculos alternativos para sitios que pertenecen a la misma familia. Para configurar sitios que el servicio va a considerar, se debe usar un `cq:siteVariant` El nodo debe añadirse a `jcr:content` desde la raíz del sitio.
+El `PageVariantsProvider` El servicio OSGi puede generar vínculos alternativos para sitios que pertenecen a la misma familia. Para configurar sitios que el servicio va a considerar, se debe `cq:siteVariant` El nodo debe añadirse a `jcr:content` desde la raíz del sitio.
 
 El `cq:siteVariant` El nodo debe tener las siguientes propiedades:
 
 * `cq:childNodesMapTo` : determina a qué atributo del elemento de vínculo se asignarán los nodos secundarios; se recomienda organizar el contenido del sitio web de forma que los secundarios del nodo raíz representen la raíz de una variante de idioma del sitio web global (por ejemplo, `/content/mysite/en`, `/content/mysite/de`), en cuyo caso el valor de `cq:childNodesMapTo` debería ser `hreflang`;
-* `cq:variantDomain` - indica lo que `Externalizer` Este dominio se utilizará para generar las variantes de página de las URL absolutas; si este valor no se define, las variantes de página se generarán mediante vínculos relativos;
+* `cq:variantDomain` - indica lo que `Externalizer` El dominio se utiliza para generar las variantes de página de las URL absolutas; si este valor no se establece, las variantes de página se generarán mediante vínculos relativos.
 * `cq:variantFamily` - indica a qué familia de sitios web pertenece este sitio; múltiples representaciones específicas del dispositivo del mismo sitio web deben pertenecer a la misma familia;
 * `media` : almacena los valores del atributo media del elemento de vínculo; se recomienda utilizar el nombre del `BrowserMap` registrado `DeviceGroups`, de modo que la `BrowserMap` La biblioteca de puede reenviar automáticamente los clientes a la variante correcta del sitio web.
 
@@ -569,7 +569,7 @@ El **Estadísticas** AEM La página se crea la primera vez que un dispositivo m�
 
 Si necesita generar una entrada en las estadísticas, puede continuar de la siguiente manera:
 
-1. Utilice un dispositivo móvil o un emulador (como por ejemplo https://chrispederick.com/work/user-agent-switcher/ en Firefox).
+1. Utilice un dispositivo móvil o un emulador (como por ejemplo, https://chrispederick.com/work/user-agent-switcher/ en Firefox).
 1. Solicite una página móvil en la instancia de autor desactivando el modo de creación, por ejemplo:
    `https://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 
@@ -577,7 +577,7 @@ El **Estadísticas** ya está disponible.
 
 ### Almacenamiento en caché de páginas de apoyo para vínculos de &quot;enviar vínculo a un amigo&quot; {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Las páginas móviles se pueden almacenar en caché en Dispatcher, ya que las páginas representadas para un grupo de dispositivos se distinguen en la dirección URL de la página por el selector de grupo de dispositivos, por ejemplo `/content/mobilepage.touch.html`. Una solicitud a una página móvil sin selector nunca se almacena en caché, ya que en este caso, la detección de dispositivos funciona y finalmente redirige al grupo de dispositivos coincidente (o &quot;no coincidente&quot;, en ese caso). Una página móvil representada con un selector de grupo de dispositivos se procesa mediante la reescritura de vínculos, que reescribe todos los vínculos de la página para contener también el selector de grupo de dispositivos, lo que impide volver a realizar la detección de dispositivos cada vez que se hace clic en una página ya clasificada.
+Las páginas móviles se pueden almacenar en caché en Dispatcher, ya que las páginas que se representan para un grupo de dispositivos se distinguen en la dirección URL de la página por el selector de grupo de dispositivos, por ejemplo, `/content/mobilepage.touch.html`. Una solicitud a una página móvil sin selector nunca se almacena en caché, ya que en este caso, la detección de dispositivos funciona y finalmente redirige al grupo de dispositivos coincidente (o &quot;no coincidente&quot;, en ese caso). Una página móvil representada con un selector de grupo de dispositivos se procesa mediante la reescritura de vínculos, que reescribe todos los vínculos de la página para contener también el selector de grupo de dispositivos, lo que impide volver a realizar la detección de dispositivos cada vez que se hace clic en una página ya clasificada.
 
 Por lo tanto, podría encontrar el siguiente escenario:
 

@@ -1,19 +1,15 @@
 ---
 title: SPA AEM Introducción a la administración de la en React
-seo-title: Getting Started with SPAs in AEM - React
 description: SPA SPA Este artículo presenta una aplicación de ejemplo para la creación de informes, explica cómo se crea y le permite ponerse en marcha con su propia aplicación de forma rápida mediante el marco de trabajo React.
-seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
-uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1161'
 ht-degree: 5%
 
 ---
@@ -52,7 +48,7 @@ SPA SPA Este documento recorrerá la estructura de un documento simplificado cre
 
 ## Dependencias, configuración y generación {#dependencies-configuration-and-building}
 
-SPA SPA Además de la dependencia de React esperada, el ejemplo puede aprovechar las bibliotecas adicionales para que la creación de la biblioteca de React sea más eficiente. En el caso de los usuarios de React, el ejemplo puede usar otras bibliotecas de forma más eficiente..
+SPA SPA Además de la dependencia de React esperada, el ejemplo puede utilizar bibliotecas adicionales para que la creación de la biblioteca de React sea más eficiente. En este ejemplo, se puede usar una biblioteca adicional para hacer que la creación de la biblioteca de React sea más eficiente.
 
 ### Dependencias {#dependencies}
 
@@ -73,7 +69,7 @@ react
  react-dom
 ```
 
-El `aem-clientlib-generator` se aprovecha para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
+El `aem-clientlib-generator` se utiliza para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -114,7 +110,7 @@ module.exports = {
 
 ### Compilando {#building}
 
-La creación real de la aplicación aprovecha [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
+La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -122,7 +118,7 @@ AEM Una vez creado, el paquete se puede cargar en una instancia de.
 
 ### Tipo de archivo del proyecto AEM. {#aem-project-archetype}
 
-Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
+Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## Estructura de aplicación {#application-structure}
 
@@ -134,7 +130,7 @@ Como ejemplo se utiliza un componente de imagen simplificado, pero todos los com
 
 ### index.js {#index-js}
 
-SPA El punto de entrada en la es, por supuesto, el `index.js` archivo que se muestra aquí simplificado para centrarse en el contenido importante.
+SPA El punto de entrada en la es el `index.js` archivo que se muestra aquí simplificado para centrarse en el contenido importante.
 
 ```
 import ReactDOM from 'react-dom';
@@ -151,7 +147,7 @@ ReactDOM.render(
 });
 ```
 
-La función principal de `index.js` es aprovechar el `ReactDOM.render` función para determinar en qué parte del DOM insertar la aplicación.
+La función principal de `index.js` es utilizar el `ReactDOM.render` función para determinar en qué parte del DOM insertar la aplicación.
 
 Este es un uso estándar de esta función, no exclusivo de esta aplicación de ejemplo.
 
@@ -285,4 +281,4 @@ SPA AEM Para obtener más información acerca de cómo organizarse para desarrol
 
 SPA AEM Para obtener más información acerca de la asignación de modelos dinámicos a componentes y cómo funciona dentro de la asignación de componentes dentro de la en la aplicación, consulte el artículo [SPA Asignación de modelos dinámicos a componentes para la creación de](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-SPA AEM Si desea implementar la implementación de la en un entorno de trabajo distinto de React o Angular SPA AEM, o simplemente desea profundizar en cómo funciona el SDK de la para la creación de informes, consulte la [SPA Modelo de](/help/sites-developing/spa-blueprint.md) artículo.
+SPA AEM Si desea implementar un esquema de trabajo en el que se incluya un módulo de trabajo que no sea React o Angular SPA AEM, o simplemente desea profundizar en cómo funciona el SDK de la para la creación de informes, consulte el documento de trabajo de la aplicación de diseño de informes (en inglés) que contiene información detallada sobre cómo funciona el SDK para la creación de informes de. [SPA Modelo de](/help/sites-developing/spa-blueprint.md) artículo.

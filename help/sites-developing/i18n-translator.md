@@ -1,18 +1,14 @@
 ---
 title: Usar Translator para administrar diccionarios
-seo-title: Using Translator to Manage Dictionaries
 description: AEM proporciona una consola para administrar las distintas traducciones de textos utilizados en la interfaz de usuario del componente
-seo-description: AEM provides a console for managing the various translations of texts used in component UI
-uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -23,9 +19,9 @@ AEM proporciona una consola para administrar las distintas traducciones de texto
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Utilice la herramienta de traducción para gestionar cadenas en inglés y sus traducciones. Los diccionarios se crean en el repositorio; por ejemplo, /apps/myproject/i18n.
+Utilice la herramienta de traducción para gestionar cadenas en inglés y sus traducciones. Los diccionarios se crean en el repositorio, por ejemplo, /apps/myproject/i18n.
 
-Tenga en cuenta que la herramienta de traducción y los diccionarios que administra se utilizan para presentar la interfaz de usuario de los componentes en diferentes idiomas. Si desea traducir contenido generado por el usuario o la página, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) y [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
+La herramienta de traducción y los diccionarios que administra se utilizan para presentar la interfaz de usuario de los componentes en diferentes idiomas. Si desea traducir contenido generado por el usuario o la página, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) y [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
@@ -43,7 +39,7 @@ AEM El traductor enumera los textos utilizados en la traducción con las distint
 
 Puede buscar, filtrar y editar el inglés y los textos traducidos. También puede exportar diccionarios al formato XLIFF para traducirlos y, a continuación, importar las traducciones de nuevo en los diccionarios.
 
-También es posible añadir diccionarios i18n a un proyecto de traducción desde esta consola. Puede crear uno nuevo o agregar a un proyecto existente.
+También es posible añadir diccionarios i18n a un proyecto de traducción desde esta consola. Puede crear uno o agregar uno a un proyecto existente.
 
 1. Clic **Traducir diccionario**.
 
@@ -283,7 +279,7 @@ La herramienta Traductor incluye los siguientes idiomas en la tabla del dicciona
 
 Utilice el siguiente procedimiento para añadir o quitar idiomas.
 
-1. Uso del CRXDE Lite para crear un nuevo nodo:
+1. Con el CRXDE Lite, cree un nodo:
 
    `/etc/languages`
 
@@ -382,7 +378,7 @@ Del mismo modo, la prueba de las cadenas de diccionario debe realizarse como par
 
 >[!NOTE]
 >
->La funcionalidad de publicación normal, o replicación, no debe utilizarse para diccionarios. En su lugar, los diccionarios deben tratarse del mismo modo que el código y la configuración. Esto incluye el uso del control de código fuente para realizar un seguimiento de los cambios y el uso de paquetes de contenido para aplicar los cambios a autor y publicación.
+>No utilice la funcionalidad de publicación normal o la replicación para los diccionarios. En su lugar, los diccionarios deben tratarse del mismo modo que el código y la configuración. Esto incluye el uso del control de código fuente para realizar un seguimiento de los cambios y el uso de paquetes de contenido para aplicar los cambios a autor y publicación.
 
 >[!NOTE]
 >

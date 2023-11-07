@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4597'
+source-wordcount: '4593'
 ht-degree: 0%
 
 ---
@@ -550,7 +550,7 @@ AEM Al pasar un documento seguro, utilice el inicio de sesión único y especifi
 
 >[!NOTE]
 >
-Cuando cree una función nueva y desee que sus miembros carguen documentos seguros, asegúrese de especificar el permiso de carga de documentos.
+Cuando cree una función y desee que sus miembros carguen documentos seguros, asegúrese de especificar el permiso de carga de documentos.
 
 AEM Forms admite una operación denominada `getFileUploadToken` que devuelve un token que se pasa al servlet de carga. El `DocumentReference.constructRequestForUpload` requiere una dirección URL de AEM Forms junto con el token devuelto por el método `LC.FileUploadAuthenticator.getFileUploadToken` método. Este método devuelve un `URLRequest` que se utiliza en la invocación al servlet de carga. El código siguiente muestra esta lógica de aplicación.
 
@@ -889,7 +889,7 @@ si AEM Forms está configurado para permitir que solo se carguen documentos segu
 
 ## Invocar servicios de componentes personalizados mediante Remoting {#invoking-custom-component-services-using-remoting}
 
-Puede invocar servicios ubicados en un componente personalizado mediante Remoting. Por ejemplo, considere el componente Banco que contiene el Servicio de atención al cliente. Puede invocar operaciones que pertenecen al servicio de atención al cliente mediante una aplicación cliente escrita en Flex. Para poder ejecutar el inicio rápido asociado a esta sección, debe crear el componente personalizado Banco.
+Puede invocar servicios en un componente personalizado mediante Remoting. Por ejemplo, considere el componente Banco que contiene el Servicio de atención al cliente. Puede invocar operaciones que pertenecen al servicio de atención al cliente mediante una aplicación cliente escrita en Flex. Para poder ejecutar el inicio rápido asociado a esta sección, debe crear el componente personalizado Banco.
 
 El servicio de atención al cliente expone una operación denominada `createCustomer`. En esta discusión se describe cómo crear una aplicación cliente de Flex que invoque el servicio de atención al cliente y cree un cliente. Esta operación requiere un objeto complejo de tipo `com.adobe.livecycle.sample.customer.Customer` que representa al nuevo cliente. La siguiente ilustración muestra la aplicación cliente que invoca el servicio de atención al cliente y crea un cliente nuevo. El `createCustomer` La operación de devuelve un valor de identificador de cliente. El valor del identificador se muestra en el cuadro de texto Identificador de cliente.
 
@@ -969,7 +969,7 @@ La siguiente clase de ActionScript denominada Customer muestra cómo asignar al 
 
 El tipo de datos completo del tipo complejo de AEM Forms se asigna a la etiqueta de alias.
 
-Los campos de la clase ActionScript coinciden con los campos que pertenecen al tipo complejo AEM Forms. Los seis campos ubicados en la clase de ActionScript del cliente coinciden con los campos a los que pertenecen `com.adobe.livecycle.sample.customer.Customer`.
+Los campos de la clase ActionScript coinciden con los campos que pertenecen al tipo complejo AEM Forms. Los seis campos de la clase de ActionScript del cliente coinciden con los campos a los que pertenece `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 >

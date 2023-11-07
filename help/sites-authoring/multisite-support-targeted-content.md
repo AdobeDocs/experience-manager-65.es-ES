@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 95%
+source-wordcount: '2855'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,7 @@ Este documento describe lo siguiente:
 
 Para configurar cómo sus sitios comparten contenido personalizado, debe realizar los pasos siguientes:
 
-1. [Crear una nueva área](#creating-new-areas) o [crear una nueva área como Live Copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. Al crear un área nueva, se crea una vacía; si crea una nueva área como Live Copy puede heredar contenido de las estructuras del sitio.
+1. [Crear un área](#creating-new-areas) o [crear un área como live copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. Crear un área crea un área vacía, mientras que crear un área como Live Copy permite heredar el contenido en las estructuras del sitio.
 
 1. [Vincular el sitio o la página](#linking-sites-to-an-area) a un área.
 
@@ -60,7 +60,7 @@ Un sitio o Live Copy vincula un área que contiene las actividades que deben est
 
 ## Casos de uso {#use-cases}
 
-Puede configurar el soporte de varios sitios para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. Además, en [Ejemplo: Segmentación de contenido según la geografía](#example-targeting-content-based-on-geography), puede ver una aplicación real de contenido de segmentación en varios sitios.
+Puede configurar la compatibilidad de varios sitios para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. Además, en [Ejemplo: Segmentación de contenido según la geografía](#example-targeting-content-based-on-geography), puede ver una aplicación real de contenido de segmentación en varios sitios.
 
 El contenido de destino se agrupa en las denominadas áreas, que definen el ámbito de los sitios o las páginas. Estas áreas se definen en el nivel de la marca. Una marca puede contener varias áreas. Las áreas pueden ser diferentes entre marcas. Si bien una marca solo puede contener el área principal y, por lo tanto, se comparte entre todas las marcas, otra marca puede contener varias marcas (por ejemplo, según la región). Por lo tanto, las marcas no necesitan reflejar el conjunto de áreas entre ellas.
 
@@ -130,11 +130,11 @@ En cualquier momento, puede suspender la herencia o desasociar la herencia por c
 >
 >Para obtener información más técnica sobre esta característica, consulte [Cómo se estructura el sistema de administración de varios sitios para el contenido de destino](/help/sites-authoring/technical-multisite-targeted.md).
 
-### Creación de una nueva área frente a la creación de una nueva como Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Creación de un área frente a creación de un área como Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-En AEM, tiene la opción de crear una área nueva o crear una área nueva como Live Copy. Crear una nueva área agrupa actividades y todo lo que pertenezca a esas actividades, como ofertas, experiencias, etc. Puede crear una nueva área cuando desee crear un conjunto de contenido de destino distinto o cuando desee compartir un conjunto de contenido de destino.
+AEM En el caso de los archivos, tiene la opción de crear un área o de crear un área como Live Copy. La creación de un área agrupa actividades y cualquier elemento que pertenezca a esas actividades, como ofertas, experiencias, etc. Puede crear un área cuando desee crear un conjunto de contenido de destino completamente distinto o cuando desee compartir un conjunto de contenido de destino.
 
-Sin embargo, si ha configurado la herencia mediante MSM entre los dos sitios, puede que desee heredar las actividades. En este caso, se crea una nueva área como Live Copy, donde Y es una Live Copy de X y, por lo tanto, hereda también todas las actividades.
+Sin embargo, si ha configurado la herencia mediante MSM entre los dos sitios, puede que desee heredar las actividades. En este caso, se crea un área como Live Copy, donde Y es una Live Copy de X y, por lo tanto, hereda también todas las actividades.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Las áreas pueden abarcar actividades y ofertas. Después de crear un área en a
 >
 >El área predeterminada denominada Área maestra se contrae de forma predeterminada al pulsar o hacer clic en el nombre de una marca **hasta** crear otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
 
-Para crear una nueva área:
+Para crear un área:
 
 1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
 1. Haga clic o pulse **Crear área**.

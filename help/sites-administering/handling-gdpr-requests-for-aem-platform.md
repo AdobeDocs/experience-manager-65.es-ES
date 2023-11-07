@@ -3,10 +3,10 @@ title: Gestión de solicitudes de RGPD para Adobe Experience Manager Foundation
 description: Gestión de solicitudes de RGPD para Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 43%
+source-wordcount: '438'
+ht-degree: 48%
 
 ---
 
@@ -36,9 +36,9 @@ AEM En el nivel de base de datos de usuario, los datos personales almacenados so
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### API HTTP {#http-api}
+### API del HTTP {#http-api}
 
-Como ya se ha mencionado, Adobe proporciona API para acceder a los datos de usuario y facilitar la automatización. Existen varios tipos de API que puede utilizar:
+Como ya se ha mencionado, Adobe proporciona las API para acceder a los datos de usuario, para facilitar la automatización. Existen varios tipos de API que puede utilizar:
 
 **API UserProperties**
 
@@ -103,7 +103,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### API HTTP {#http-api-1}
+### API del HTTP {#http-api-1}
 
 Los siguientes procedimientos utilizan el `curl` herramienta de línea de comandos para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL escrutinio]** `userId` y eliminar perfiles de `cavery` que están disponibles en la ubicación predeterminada.
 
@@ -124,7 +124,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Eliminación de perfiles de usuario*
 
-Usando la ruta del nodo desde la propiedad principal de la carga útil JSON devuelta desde el comando de detección de cuentas y las ubicaciones de nodos de perfil conocidas fuera de cuadro:
+Usando la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando de detección de cuentas y las ubicaciones de nodos de perfil conocidas fuera de cuadro:
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'

@@ -2,10 +2,10 @@
 title: Guía de inicio rápido Creación de una carpeta de recursos sin encabezado
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 87%
+source-wordcount: '375'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ Utilice modelos de fragmentos de contenido de AEM para definir la estructura de 
 
 Sin embargo, primero debe crear una carpeta de recursos en la que almacenarlos.
 
-Las carpetas de recursos se utilizan para [organizar recursos de contenido tradicionales](/help/assets/manage-assets.md) como imágenes y vídeo, así como fragmentos de contenido.
+Las carpetas de recursos se utilizan para lo siguiente [organizar recursos de contenido tradicionales](/help/assets/manage-assets.md) le gustan las imágenes y el vídeo y los fragmentos de contenido.
 
 ## Cómo crear una carpeta de recursos {#how-to-create-an-assets-folder}
 
@@ -34,17 +34,16 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](assets/assets-folder-create.png)
-1. Seleccione la carpeta que acaba de crear y luego seleccione **Propiedades** en la barra de herramientas (o utilice la variable `p` [método abreviado de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Seleccione la carpeta que ha creado y, a continuación, seleccione **Propiedades** en la barra de herramientas (o utilice la variable `p` [método abreviado de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
-
    ![Configurar la carpeta de recursos](assets/assets-folder-configure.png)
 1. Haga clic o pulse en **Guardar y cerrar**.
 1. Toque o haga clic en **Aceptar** en la ventana de confirmación.
 
    ![Ventana de confirmación](assets/assets-folder-confirmation.png)
 
-Puede crear subcarpetas adicionales dentro de la carpeta que acaba de crear. Las subcarpetas heredarán la **Configuración de nube** de la carpeta principal. Sin embargo, esto se puede sobrescribir si desea utilizar modelos de otra configuración.
+Puede crear subcarpetas adicionales dentro de la carpeta que ha creado. Las subcarpetas heredarán la **Configuración de nube** de la carpeta principal. Sin embargo, esto se puede sobrescribir si desea utilizar modelos de otra configuración.
 
 Si está usando una estructura de sitio localizada, puede [crear una raíz de idioma](/help/assets/multilingual-assets.md) debajo de la nueva carpeta.
 

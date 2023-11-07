@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ AEM Esta integración permite que la integración de los segmentos de datos y de
 
 ## Pasos de integración {#integration-steps}
 
-AEM La integración entre y Campaign requiere una serie de pasos en ambas soluciones.
+AEM La integración entre y Campaign requiere varios pasos en ambas soluciones.
 
 1. [AEM Instalación del paquete de integración de la en Campaign.](#install-package)
 1. [AEM Creación de un operador para la creación de segmentos en Campaign](#create-operator)
@@ -46,7 +46,7 @@ Este documento le guía en detalle por cada uno de estos pasos.
 
 ## AEM Instalación del paquete de integración de en Campaign {#install-package}
 
-El **AEM Integración de** El paquete de Adobe Campaign AEM incluye una serie de configuraciones estándar necesarias para conectarse a la red de trabajo de la interfaz de usuario de.
+El **AEM Integración de** El paquete de en Adobe Campaign AEM incluye varias configuraciones estándar necesarias para conectarse a la aplicación de forma rápida y sencilla
 
 1. Inicie sesión como administrador en la instancia de Adobe Campaign mediante la consola del cliente.
 

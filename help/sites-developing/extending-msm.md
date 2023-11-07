@@ -1,19 +1,15 @@
 ---
 title: Ampliación del Administrador de varios sitios
-seo-title: Extending the Multi Site Manager
 description: Esta página le ayuda a ampliar las funcionalidades del Administrador de varios sitios
-seo-description: This page helps you extend the functionalities of the Multi Site Manager
-uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2578'
 ht-degree: 2%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 2%
 Esta página le ayuda a ampliar las funcionalidades del Administrador de varios sitios:
 
 * Obtenga información acerca de los miembros principales de la API de Java de MSM.
-* Cree una nueva acción de sincronización que se pueda utilizar en una configuración de lanzamiento.
+* Cree una acción de sincronización que se pueda utilizar en una configuración de despliegue.
 * Modifique el idioma y los códigos de país predeterminados.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
@@ -182,8 +178,6 @@ La nueva configuración de despliegue está disponible al establecer configuraci
 
 ### Creación de la configuración de despliegue {#create-the-rollout-configuration}
 
-Para crear una nueva configuración de despliegue:
-
 1. Abrir CRXDE Lite; por ejemplo:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -206,7 +200,7 @@ Para crear una nueva configuración de despliegue:
 
 1. En esta sección **Crear** Cree un nodo con las siguientes propiedades:
 
-   * **Nombre**: Nombre del nodo de la configuración de lanzamiento. md#install-synchronization-actions), por ejemplo `contentCopy` o `workflow`.
+   * **Nombre**: Nombre del nodo de la configuración de lanzamiento. md#install-synchronization-actions), por ejemplo, `contentCopy` o `workflow`.
    * **Tipo**: `cq:RolloutConfig`
 
 1. Agregue las siguientes propiedades a este nodo:
@@ -240,7 +234,7 @@ Agregar nodos secundarios de tipo `cq:LiveSyncAction` para agregar acciones de s
 1. **Crear** Cree un nodo con las siguientes propiedades de nodo:
 
    * **Nombre**: Nombre del nodo de la acción de sincronización.
-El nombre debe ser el mismo que **Nombre de acción** en la tabla debajo de [Acciones de sincronización](/help/sites-administering/msm-sync.md#installed-synchronization-actions), por ejemplo `contentCopy` o `workflow`.
+El nombre debe ser el mismo que **Nombre de acción** en la tabla debajo de [Acciones de sincronización](/help/sites-administering/msm-sync.md#installed-synchronization-actions), por ejemplo, `contentCopy` o `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
 1. Añada y configure tantos nodos de acción de sincronización como sea necesario. Reorganice los nodos de acción para que su orden coincida con el orden en que desea que se produzcan. El nodo de acción superior se produce primero.
@@ -600,7 +594,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a node:
 
     1. **Name** = `chapters`; **Type** = `cq:Widget`.
 

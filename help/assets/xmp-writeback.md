@@ -6,7 +6,7 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 XMP Esta función de reescritura de la en [!DNL Adobe Experience Manager Assets] replica los cambios de metadatos en las representaciones del recurso original. Al cambiar los metadatos de un recurso desde Recursos o al cargar el recurso, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.
@@ -77,7 +77,7 @@ Los cambios de metadatos se propagan a las representaciones representaciones thu
 
 [!DNL Experience Manager Assets] admite el filtrado por lista de bloqueados y por lista de permitidos XMP de propiedades/nodos para metadatos de que se leen desde archivos binarios de recursos y se almacenan en JCR cuando se incorporan recursos.
 
-El filtrado mediante una lista de bloqueados XMP permite importar todas las propiedades de metadatos de la, excepto las propiedades especificadas para la exclusión. XMP Sin embargo, para los tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos de recursos (por ejemplo, 1000 nodos con 10 000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen de antemano. Si el filtrado con una lista de bloqueados XMP permite importar un gran número de recursos con numerosos metadatos de la, la variable [!DNL Experience Manager] la implementación puede encontrar problemas de estabilidad, por ejemplo colas de observación obstruidas.
+El filtrado mediante una lista de bloqueados XMP permite importar todas las propiedades de metadatos de la, excepto las propiedades especificadas para la exclusión. XMP Sin embargo, para los tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos de recursos (por ejemplo, 1000 nodos con 10 000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen de antemano. Si el filtrado con una lista de bloqueados XMP permite importar un gran número de recursos con numerosos metadatos de la, la variable [!DNL Experience Manager] la implementación puede encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
 
 XMP El filtrado de metadatos de la a través de la lista de permitidos XMP resuelve este problema ya que permite definir las propiedades que se van a importar. XMP De este modo, se ignoran todas las demás propiedades de la o desconocidas. Para la compatibilidad con versiones anteriores, puede agregar algunas de estas propiedades al filtro que utiliza una lista de bloqueados.
 

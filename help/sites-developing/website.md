@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4941'
 ht-degree: 3%
@@ -309,7 +309,7 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a los scri
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Abra el origen de la página para ver los elementos JavaScript y HTML que generaron los scripts head.jsp y body.jsp. El siguiente fragmento de script abre la barra de tareas al abrir la página:
+   Abra el origen de la página para ver los elementos JavaScript y HTML que generaron los scripts head.jsp y body.jsp. El siguiente fragmento de script abre el Sidekick cuando abre la página:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -477,7 +477,7 @@ Para incluir la navegación superior en el componente de página de contenido:
 El componente Página define las propiedades que permiten proporcionar subtítulos para las páginas. Añada subtítulos que proporcionen información sobre el contenido de la página.
 
 1. En el explorador, abra el **Productos** página.
-1. En la barra de tareas **Página** pestaña, haga clic en **Propiedades de página**.
+1. En el Sidekick **Página** pestaña, haga clic en **Propiedades de página**.
 1. En la pestaña Básico del cuadro de diálogo, expanda **Más títulos y descripciones,** y para el **Subtítulo** propiedad, tipo **lo que hacemos**. Haga clic en **Aceptar**.
 1. Repita los pasos anteriores para agregar el subtítulo **sobre nuestros servicios** a la **Servicios** página.
 1. Repita los pasos anteriores para agregar el subtítulo **la confianza que ganamos** a la **Clientes** página.
@@ -729,7 +729,7 @@ Desarrolle la secuencia de comandos para el componente listchildren.
    <%@include file="/libs/foundation/global.jsp"%><%
    %><%@ page import="java.util.Iterator,
             com.day.cq.wcm.api.PageFilter"%><%
-        /* Create a new Page object using the path of the current page */
+        /* Create a Page object using the path of the current page */
          String listroot = properties.get("listroot", currentPage.getPath());
         Page rootPage = pageManager.getPage(listroot);
         /* iterate through the child pages and gather properties */
@@ -1216,7 +1216,7 @@ En esta sección, verá el **Productos** y agregue el componente de imagen al si
 1. Haga clic en el botón Editar para editar el cuadro de diálogo de diseño de la pieza.
 1. En el cuadro de diálogo, una lista de **Componentes permitidos** se muestra; vaya a **MyWebsite**, seleccione la **Mi componente de imagen** y haga clic en **OK.**
 1. Volver a **modo de edición.**
-1. Haga doble clic en el marco parsys (activado) **Arrastre componentes o recursos aquí**). El **Insertar nuevo componente** y **Compañero** Los selectores tienen el siguiente aspecto:
+1. Haga doble clic en el marco parsys (activado) **Arrastre componentes o recursos aquí**). El **Insertar nuevo componente** y **Sidekick** Los selectores tienen el siguiente aspecto:
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -1296,7 +1296,7 @@ Cuando haya terminado, el cuadro de entrada de búsqueda debería tener el sigui
 
 En esta sección se describe cómo crear el script de búsqueda:
 
-1. Abra el `/apps/mywebsite/components/search/search.jsp` archivo.
+1. Abra el archivo `/apps/mywebsite/components/search/search.jsp`.
 1. Copie el siguiente código en `search.jsp`:
 
    ```java

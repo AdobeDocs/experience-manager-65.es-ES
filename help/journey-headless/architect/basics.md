@@ -2,10 +2,10 @@
 title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 89%
+source-wordcount: '896'
+ht-degree: 87%
 
 ---
 
@@ -105,7 +105,7 @@ Proporciona referencias a otros fragmentos de contenido.
 Este tipo de referencia se utiliza para crear contenido anidado e introduce las relaciones necesarias para modelar el contenido.
 El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
    * Editar directamente el fragmento al que se hace referencia.
-   * Crear un nuevo fragmento de contenido basado en el modelo apropiado
+   * Crear un fragmento de contenido basado en el modelo adecuado
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero, por supuesto, una compañía tiene un director ejecutivo (CEO) y empleados...y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todas ellas se definen como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 

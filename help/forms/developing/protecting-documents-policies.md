@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '15485'
+source-wordcount: '15469'
 ht-degree: 0%
 
 ---
@@ -293,7 +293,7 @@ Cree una directiva mediante la API de seguridad de los documentos (servicio web)
    * Crear un `PolicySpec` mediante su constructor.
    * Establezca el nombre de la directiva asignando un valor de cadena al `PolicySpec` del objeto `name` miembro de datos.
    * Establezca la descripción de la directiva asignando un valor de cadena al `PolicySpec` del objeto `description` miembro de datos.
-   * Especifique el conjunto de directivas al que pertenece la directiva asignando un valor de cadena al `PolicySpec` del objeto `policySetName` miembro de datos. Debe especificar un nombre de conjunto de directivas existente. (Puede especificar `null` para este valor de parámetro que resulta en la directiva agregada a *Mis directivas*.)
+   * Especifique el conjunto de directivas al que pertenece la directiva asignando un valor de cadena al `PolicySpec` del objeto `policySetName` miembro de datos. Especifique un nombre de conjunto de directivas existente. (Puede especificar `null` para este valor de parámetro que resulta en la directiva agregada a *Mis directivas*.)
    * Establezca el período de concesión sin conexión de la directiva asignando un valor entero al `PolicySpec` del objeto `offlineLeasePeriod` miembro de datos.
    * Configure las variables `PolicySpec` del objeto `policyXml` miembro de datos con un valor de cadena que representa los datos XML de PDRL. Para realizar esta tarea, cree un archivo .NET `StreamReader` mediante su constructor. Pase la ubicación de un archivo XML de PDRL que represente la directiva a `StreamReader` constructor. A continuación, invoque el `StreamReader` del objeto `ReadLine` y asigne el valor devuelto a una variable de cadena. Itere a través de `StreamReader` objeto hasta que `ReadLine` el método devuelve null. Asigne la variable de cadena a `PolicySpec` del objeto `policyXml` miembro de datos.
 
@@ -325,7 +325,7 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 
 Puede modificar una directiva existente mediante la API de Java de Document Security o la API del servicio web. Para realizar cambios en una directiva existente, debe recuperarla, modificarla y, a continuación, actualizar la directiva en el servidor. Por ejemplo, supongamos que recupera una política existente y amplía su periodo de validez. Antes de que el cambio surta efecto, debe actualizar la directiva.
 
-Puede modificar una política cuando cambien los requisitos de la empresa y la política ya no refleje estos requisitos. En lugar de crear una directiva nueva, simplemente puede actualizar una directiva existente.
+Puede modificar una política cuando cambien los requisitos de la empresa y la política ya no refleje estos requisitos. En lugar de crear una política, simplemente puede actualizar una política existente.
 
 Para modificar atributos de directiva mediante un servicio web (por ejemplo, mediante clases de proxy Java creadas con JAX-WS), debe asegurarse de que la directiva esté registrada en el servicio Document Security. A continuación, puede hacer referencia a la directiva existente mediante la variable `PolicySpec.getPolicyXml` y modificar los atributos de la directiva mediante los métodos aplicables. Por ejemplo, puede modificar el período de concesión sin conexión invocando la variable `PolicySpec.setOfflineLeasePeriod` método.
 
@@ -353,7 +353,7 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 **Recuperar una política existente**
 
-Debe recuperar una directiva existente para modificarla. Para recuperar una directiva, especifique el nombre de la directiva y el conjunto de directivas al que pertenece. Si especifica un `null` valor para el nombre del conjunto de directivas, la directiva se recupera del *Mis directivas* conjunto de directivas.
+Recupere una directiva existente para modificarla. Para recuperar una directiva, especifique el nombre de la directiva y el conjunto de directivas al que pertenece. Si especifica un `null` valor para el nombre del conjunto de directivas, la directiva se recupera del *Mis directivas* conjunto de directivas.
 
 **Establecer los atributos de la directiva**
 
@@ -878,9 +878,9 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 **Recuperar un documento de PDF protegido por una directiva**
 
-Debe recuperar un documento de PDF protegido por una directiva para revocarlo. No puede revocar un documento que ya se haya revocado o que no sea un documento protegido por una directiva.
+Recupere un documento de PDF protegido por una directiva para revocarlo. No puede revocar un documento que ya se haya revocado o que no sea un documento protegido por una directiva.
 
-Si conoce el valor del identificador de licencia del documento protegido por una directiva, no es necesario recuperar el documento de PDF protegido por una directiva. Sin embargo, en la mayoría de los casos, deberá recuperar el documento del PDF para obtener el valor del identificador de licencia.
+Si conoce el valor del identificador de licencia del documento protegido por una directiva, no es necesario recuperar el documento de PDF protegido por una directiva. Sin embargo, en la mayoría de los casos, debe recuperar el documento del PDF para obtener el valor del identificador de licencia.
 
 **Revocar el documento protegido por una directiva**
 
@@ -1020,7 +1020,7 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 **Recuperar el identificador de licencia del documento de PDF revocado**
 
-Debe recuperar el identificador de licencia del documento de PDF revocado para restablecer un documento de PDF revocado. Después de obtener el valor del identificador de licencia, puede restablecer un documento revocado. Si intenta restablecer un documento que no se ha revocado, se producirá una excepción.
+Recupere el identificador de licencia del documento de PDF revocado para restablecer un documento de PDF revocado. Después de obtener el valor del identificador de licencia, puede restablecer un documento revocado. Si intenta restablecer un documento que no se ha revocado, se producirá una excepción.
 
 **Restablecer el acceso al documento de PDF revocado**
 
@@ -1287,7 +1287,7 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 **Establecer los atributos de marcas de agua**
 
-Para crear una nueva marca de agua, debe establecer los atributos de la marca de agua. El atributo name siempre debe estar definido. Además del atributo name, debe establecer al menos uno de los atributos siguientes:
+Para crear una marca de agua, debe establecer los atributos de la marca de agua. El atributo name siempre debe estar definido. Además del atributo name, debe establecer al menos uno de los atributos siguientes:
 
 * Texto personalizado
 * DateIncluded
@@ -1622,9 +1622,9 @@ El servicio Rights Management realiza un seguimiento de acciones específicas a 
 
 Los eventos se clasifican en una de las siguientes categorías:
 
-* Los eventos de administrador son acciones relacionadas con un administrador, como crear una nueva cuenta de administrador.
+* Los eventos de administrador son acciones relacionadas con un administrador, como crear una cuenta de administrador.
 * Los eventos de documento son acciones relacionadas con un documento, como cerrar un documento protegido por una directiva.
-* Los eventos de directiva son acciones relacionadas con una directiva, como crear una nueva.
+* Los eventos de directiva son acciones relacionadas con una directiva, como crear una directiva.
 * Los eventos de servicio son acciones relacionadas con el servicio de Rights Management, como la sincronización con el directorio de usuario.
 
 Puede buscar eventos específicos utilizando la API de Java de Rights Management o la API del servicio web. Al buscar eventos, puede realizar tareas como, por ejemplo, crear un archivo de registro de ciertos eventos.
@@ -1652,7 +1652,7 @@ Para poder realizar mediante programación una operación de servicio de Rights 
 
 **Especifique los eventos que desea buscar**
 
-Debe especificar el evento que desea buscar. Por ejemplo, puede buscar el evento de creación de directivas, que se produce cuando se crea una directiva nueva.
+Especifique el evento que desea buscar. Por ejemplo, puede buscar el evento de creación de directivas, que se produce cuando se crea una directiva nueva.
 
 **Buscar el evento**
 
@@ -1977,7 +1977,7 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 **Recuperar un documento de Word**
 
-Debe recuperar un documento de Word para aplicar una directiva. Después de aplicar una directiva al documento de Word, los usuarios están restringidos al utilizar el documento. Por ejemplo, si la directiva no permite abrir el documento sin conexión, los usuarios deben estar en línea para abrirlo.
+Recuperar un documento de Word para aplicar una directiva. Después de aplicar una directiva al documento de Word, los usuarios están restringidos al utilizar el documento. Por ejemplo, si la directiva no permite abrir el documento sin conexión, los usuarios deben estar en línea para abrirlo.
 
 **Aplicar una directiva existente al documento de Word**
 
@@ -2132,7 +2132,7 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 **Recuperar un documento de Word protegido por una directiva**
 
-Debe recuperar un documento de Word protegido por una directiva para quitar una directiva. Si intenta quitar una directiva de un documento de Word que no está protegido por una directiva, se producirá una excepción.
+Recupere un documento de Word protegido por una directiva para quitar una directiva. Si intenta quitar una directiva de un documento de Word que no está protegido por una directiva, se producirá una excepción.
 
 **Quitar la directiva del documento de Word**
 

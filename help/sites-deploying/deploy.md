@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1765'
 ht-degree: 5%
 
 ---
@@ -109,11 +109,11 @@ Para obtener más información sobre las implementaciones locales típicas, cons
 
 ### Managed Services con Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia desde el Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la tecnología informática.
+AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia desde el Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la TI.
 
 AEM Con Managed Services, los clientes pueden obtener las siguientes ventajas:
 
-**Tiempo de comercialización más rápido:** Con la infraestructura de nube flexible de Adobe Managed Services, las organizaciones pueden planificar, iniciar y optimizar rápidamente las experiencias digitales exitosas. Adobe administra la arquitectura en la nube sin necesidad de capital, hardware ni software adicionales. Los ingenieros de soluciones para clientes de Adobe AEM le ayudarán con la arquitectura, el aprovisionamiento y la personalización de la conexión a las aplicaciones back-end, así como con las prácticas recomendadas de lanzamiento.
+**Tiempo de comercialización más rápido:** Con la infraestructura de nube flexible de Adobe Managed Services, las organizaciones pueden planificar, iniciar y optimizar rápidamente experiencias digitales exitosas. Adobe administra la arquitectura en la nube sin necesidad de capital, hardware ni software adicionales. Los ingenieros de soluciones para clientes de Adobe AEM le ayudarán con la arquitectura, el aprovisionamiento y la personalización de la conexión a las aplicaciones back-end, así como con las prácticas recomendadas de lanzamiento.
 
 **Mayor rendimiento:** Proporciona experiencias digitales fiables para su empresa con cuatro opciones de disponibilidad de servicios: 99,5 %, 99,9 %, 99,95 % y 99,99 %. Además, permite realizar copias de seguridad automáticas y modelos de recuperación ante desastres multimodo para garantizar la fiabilidad y la gestión de contingencias.
 
@@ -155,7 +155,7 @@ En la siguiente sección describimos el **instalación independiente**. AEM Para
 
    Ubicación de instalación de Windows: **`C:\Program Files\aem`**
 
-   Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, nos referimos a esta ubicación genéricamente como:
+   Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, Adobe se refiere a esta ubicación genéricamente como:
 
    `<aem-install>`
 

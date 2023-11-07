@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1694'
 ht-degree: 2%
 
 ---
@@ -53,13 +53,13 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 **Establecer opciones de tiempo de ejecución de procesamiento de cliente**
 
-Debe establecer la opción de tiempo de ejecución de representación de cliente para procesar un formulario en el cliente estableciendo la variable `RenderAtClient` opción de tiempo de ejecución para `true`. Esto hace que el formulario se envíe al dispositivo cliente donde se representa. If `RenderAtClient` es `auto` (el valor predeterminado), el diseño de formulario determina si el formulario se procesa en el cliente. El diseño de formulario debe ser un diseño de formulario con un diseño fluido.
+Establezca la opción de tiempo de ejecución de representación de cliente para procesar un formulario en el cliente estableciendo la variable `RenderAtClient` opción de tiempo de ejecución para `true`. Esto hace que el formulario se envíe al dispositivo cliente donde se representa. If `RenderAtClient` es `auto` (el valor predeterminado), el diseño de formulario determina si el formulario se procesa en el cliente. El diseño de formulario debe ser un diseño de formulario con un diseño fluido.
 
 Una opción de tiempo de ejecución opcional que puede establecer es la `SeedPDF` opción. El `SeedPDF` combina el contenedor de PDF (documento de PDF semilla) con el diseño de formulario y los datos XML. Tanto el diseño de formulario como los datos XML se envían a Acrobat o Adobe Reader, donde se procesa el formulario. El `SeedPDF` se puede utilizar cuando el equipo cliente no tiene fuentes que se utilicen en el formulario, como cuando un usuario final no tiene licencia para utilizar una fuente para la que el propietario del formulario tiene licencia.
 
 Puede utilizar Designer para crear un archivo PDF dinámico simple para utilizarlo como archivo PDF semilla. Se requieren los siguientes pasos para realizar esta tarea:
 
-1. Determine si necesita incrustar alguna fuente dentro del archivo del PDF semilla. El archivo del PDF semilla tendrá que contener las fuentes adicionales que requiere el formulario que se está procesando. Al incrustar fuentes en el archivo del PDF semilla, asegúrese de que no infringe ningún acuerdo de licencia de fuentes. En Designer, puede determinar si puede incrustar fuentes legalmente. Al guardar, si hay fuentes que no se pueden incrustar en el formulario, Designer muestra un mensaje con las fuentes que no se pueden incrustar. Este mensaje no se muestra en Designer para documentos de PDF estáticos.
+1. Determine si necesita incrustar alguna fuente dentro del archivo del PDF semilla. El archivo del PDF semilla debe contener las fuentes adicionales que requiere el formulario que se está procesando. Al incrustar fuentes en el archivo del PDF semilla, asegúrese de que no infringe ningún acuerdo de licencia de fuentes. En Designer, puede determinar si puede incrustar fuentes legalmente. Al guardar, si hay fuentes que no se pueden incrustar en el formulario, Designer muestra un mensaje con las fuentes que no se pueden incrustar. Este mensaje no se muestra en Designer para documentos de PDF estáticos.
 1. Si está creando el archivo del PDF semilla en Designer, se recomienda que, como mínimo, añada un campo de texto que contenga un mensaje. El mensaje debe dirigirse a los usuarios de versiones anteriores de Adobe Reader para informarles de que necesitan Acrobat 7.0 o posterior, o Adobe Reader 7.0 o posterior, para ver el documento.
 1. Guarde el archivo del PDF semilla como un archivo de PDF dinámico con la extensión de nombre de archivo del PDF.
 

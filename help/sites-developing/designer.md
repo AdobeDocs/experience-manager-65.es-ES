@@ -1,18 +1,14 @@
 ---
 title: Diseños y el diseñador
-seo-title: Designs and the Designer
-description: AEM Tendrá que crear un diseño para su sitio web y, en la práctica, lo hace utilizando el diseñador de páginas web.
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: AEM Aprenda a crear un diseño para su sitio web y a crear un diseño en mediante el uso de la interfaz de usuario de.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Este artículo describe cómo crear un sitio web basado en la IU clásica. El Adobe AEM recomienda aprovechar las últimas tecnologías de la para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
+>Este artículo describe cómo crear un sitio web basado en la IU clásica. El Adobe AEM recomienda utilizar las últimas tecnologías de la para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
 
 El Diseñador se utiliza para crear un diseño para el sitio web utilizando [IU clásica](/help/release-notes/touch-ui-features-status.md) AEM en la.
 

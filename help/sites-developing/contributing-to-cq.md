@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2670'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ La compatibilidad con versiones anteriores también debe tenerse en cuenta con r
 
 También es posible combinar varias instancias del repositorio de contenido para crear una *de alta disponibilidad* AEM Solución JCR, que puede integrarse con su solución de para maximizar la protección contra fallos de hardware y software. Consulte [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter) para obtener más información.
 
-**Componente** AEM - En la práctica, un componente es un tipo de objeto, cuyas instancias generalmente se pueden crear arrastrando y soltando desde, por ejemplo, el Sidekick. AEM Por ejemplo, los componentes listos para usar que se envían con las listas incluyen los componentes Texto, Título, Nube de etiquetas, Carrusel, Imagen y Lista, todos disponibles en la barra de tareas durante la ejecución.
+**Componente** AEM - En la práctica, un componente es un tipo de objeto, cuyas instancias generalmente se pueden crear arrastrando y soltando desde, por ejemplo, el Sidekick. AEM Por ejemplo, los componentes listos para usar que se envían con los componentes Texto, Título, Nube de etiquetas, Carrusel, Imagen y Lista, todos disponibles en el Sidekick durante la ejecución.
 
 **Buscador de contenido** : En el modo de creación, el Buscador de contenido es un panel especial (marco) en el lado izquierdo de la página que, según la pestaña que seleccione en la parte superior, muestra listas de imágenes, documentos, recursos de Flash, páginas, párrafos o recursos del repositorio que puede arrastrar y soltar desde el Buscador de contenido en la página en la que está trabajando (a la derecha).
 
@@ -169,7 +169,7 @@ java -jar <quickstartfilename>.jar -help
 
 **Segmentación** - Los visitantes del sitio tienen diferentes intereses y objetivos cuando llegan a un sitio. Comprender los objetivos de los visitantes y cumplir sus expectativas es un requisito previo importante para el éxito del marketing en línea. La segmentación ayuda a conseguirlo al analizar y caracterizar los detalles de un visitante.
 
-**Compañero** : El Sidekick es una ventana flotante similar a una paleta que aparece en la página editable desde la que se pueden arrastrar nuevos componentes y ejecutar acciones que se apliquen a la página.
+**Sidekick** : El Sidekick es una ventana flotante similar a una paleta que aparece en la página editable desde la que se pueden arrastrar nuevos componentes y ejecutar acciones que se apliquen a la página.
 
 **Site Catalyst** : SiteCatalyst proporciona a los especialistas en marketing un lugar para medir, analizar y optimizar los datos integrados de todas las iniciativas en línea en varios canales de marketing. Puede utilizar Adobe SiteCatalyst AEM para analizar datos de sitios web de la.
 

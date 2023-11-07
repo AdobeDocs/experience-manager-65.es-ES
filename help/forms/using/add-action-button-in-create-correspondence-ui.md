@@ -7,10 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1880'
-ht-degree: 98%
+source-wordcount: '1879'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Agregar un botón con una acción (enviar carta para revisión) a la interfaz de
 ### Agregar el botón a la interfaz de usuario Crear correspondencia {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada `defaultApp` con una ruta/estructura similar a la carpeta defaultApp (ubicada en la carpeta config). Para crear la carpeta, siga estos pasos:
+1. En la carpeta de aplicaciones, cree una carpeta llamada `defaultApp` con una ruta/estructura similar a la carpeta defaultApp (en la carpeta config). Para crear la carpeta, siga estos pasos:
 
    1. Haga clic con el botón derecho en la carpeta **defaultApp** en la siguiente ruta y seleccione **Nodo de superposición**:
 

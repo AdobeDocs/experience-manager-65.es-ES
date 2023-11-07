@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ AEM Mobile requiere una cuenta de Adobe Analytics para recopilar y crear informe
 
 Una vez creada la cuenta de Analytics, cree una configuración de sincronización de contenido para extraer el contenido en la aplicación móvil.
 
-Para obtener más información, consulte Configuración del contenido de sincronización de contenido. La configuración necesitará indicar a la sincronización de contenido que coloque ADBMobileConfig en el directorio /www. Por ejemplo, en la aplicación de Geometrixx Outdoors, la configuración de sincronización de contenido se encuentra en: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. También hay una configuración para desarrollo; sin embargo, es idéntica a la configuración de no desarrollo en el caso de los Geometrixx Outdoors.
+Para obtener más información, consulte Configuración del contenido de sincronización de contenido. La configuración debe indicar a Content Sync que coloque ADBMobileConfig en el directorio /www. Por ejemplo, en la aplicación de Geometrixx Outdoors, la configuración de sincronización de contenido se encuentra en: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. También hay una configuración para desarrollo; sin embargo, es idéntica a la configuración de no desarrollo en el caso de los Geometrixx Outdoors.
 
 AEM Para obtener más información sobre cómo descargar ADBMobileConfig desde el panel de aplicaciones de la aplicación móvil, consulte Analytics: Mobile Services: archivo de configuración del SDK de Adobe Mobile Services.
 
@@ -63,7 +63,7 @@ Cada plataforma requiere que ADBMobileConfig se copie en una ubicación específ
 
 Si se genera con la CLI de PhoneGap, esto se puede hacer con una compilación de cordova de scripts de gancho. Esto se puede ver en la aplicación Geometrixx Outdoors en:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Para iOS, el archivo deberá copiarse en el del proyecto XCode. **Recursos** (por ejemplo, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Si el destino de la aplicación es Android™, la ruta a la que se copiará es &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Para obtener más información sobre el uso de vínculos durante la compilación de la CLI de PhoneGap, consulte [Tres enlaces que necesita su proyecto Cordova/PhoneGap](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Para iOS, el archivo debe copiarse en el del proyecto XCode. **Recursos** (por ejemplo, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Si el destino de la aplicación es Android™, la ruta a la que se copiará es &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Para obtener más información sobre el uso de vínculos durante la compilación de la CLI de PhoneGap, consulte [Tres enlaces que necesita su proyecto Cordova/PhoneGap](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

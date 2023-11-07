@@ -1,18 +1,14 @@
 ---
 title: Descripción de los objetos JSON de AEM Forms Workspace
-seo-title: AEM Forms workspace JSON object description
 description: Información conceptual sobre los objetos JavaScript de JSON utilizados en LiveCycle AEM Forms Workspace para tareas de personalización, extensión, modificación y reutilización.
-seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
-uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 100%
+source-wordcount: '2113'
+ht-degree: 98%
 
 ---
 
@@ -634,7 +630,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
 
 1. Objeto Task ACL
 
-   El objeto Task ACL contiene información sobre los permisos de una tarea, como Reenviar, Compartir, Consultar, etc. A continuación se muestran las propiedades del ACL de la tarea.
+   El objeto Task ACL contiene información sobre los permisos de una tarea, como reenviar, compartir, consultar, etc. A continuación se muestran las propiedades del ACL de la tarea.
 
 <table>
  <tbody>
@@ -794,7 +790,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>directGroupMemberships<br type="_moz" /> </td>
    <td>F</td>
-   <td>La lista del grupo del usuario<br type="_moz" /> </td>
+   <td>Lista del grupo del usuario.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>displayName<br type="_moz" /> </td>

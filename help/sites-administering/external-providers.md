@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Estos fragmentos permiten recopilar datos y generar informes. Los datos reales r
 >
 >El sitio de demostración de Geometrixx-Outdoors está configurado de modo que los atributos proporcionados en las Propiedades de página se adjunten al código fuente html (justo encima de la variable `</html>` end (etiqueta) en el `js` script.
 >
->Si su propio `/apps` no heredar del componente de página predeterminado ( `/libs/foundation/components/page`) usted (o sus desarrolladores) debe asegurarse de que las `js` Los scripts de se incluyen, por ejemplo, incluyendo `cq/cloudserviceconfigs/components/servicescomponents`o utilizando un mecanismo similar.
+>Si su propio `/apps` no heredar del componente de página predeterminado ( `/libs/foundation/components/page`) usted (o sus desarrolladores) debe asegurarse de que las `js` los scripts se incluyen, por ejemplo, mediante lo siguiente: `cq/cloudserviceconfigs/components/servicescomponents`o utilizando un mecanismo similar.
 >
 >Sin esto, ninguno de los servicios (genérico, de Analytics, de Target, etc.) funcionará.
 
@@ -69,7 +69,7 @@ Para la configuración básica:
 
    ![Fragmento de análisis genérico](assets/analytics_genericoverview.png)
 
-1. Haga clic en + para agregar una nueva configuración mediante el cuadro de diálogo. Como mínimo, asigne un nombre, por ejemplo Google Analytics:
+1. Haga clic en + para agregar una nueva configuración mediante el cuadro de diálogo. Como mínimo, asigne un nombre, por ejemplo, Google Analytics:
 
    ![Crear configuración](assets/analytics_addconfig.png)
 

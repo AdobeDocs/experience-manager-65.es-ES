@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
 docset: aem65
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del 
 
 ## Topología admitida {#supported-topology}
 
-Los informes de transacciones solo están disponibles en AEM Forms en el entorno OSGi. Admite autor-publicación, autor-procesamiento-publicación y procesar solo topologías. Por ejemplo, para las topologías, consulte [Topologías de arquitectura e implementación para AEM Forms](../../forms/using/transaction-reports-overview.md).
+Los informes de transacciones solo están disponibles en AEM Forms en el entorno OSGi. Admite autor-publicación, autor-procesamiento-publicación y procesar solo topologías. Por ejemplo, las topologías, consulte [Arquitectura y topologías de implementación para AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 El recuento de transacciones se replica de forma inversa de las instancias de publicación a las instancias de autor o procesamiento. A continuación se muestra una topología indicativa de autor-publicación:
 

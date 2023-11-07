@@ -1,18 +1,14 @@
 ---
 title: Copia de seguridad y recuperación del repositorio de Documentum de EMC
-seo-title: Backing up and recovering the EMC Documentum repository
 description: AEM En este documento se describen las tareas necesarias para realizar copias de seguridad y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios de la aplicación de la aplicación de la manera más rápida y sencilla.
-seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '802'
 ht-degree: 3%
 
 ---
@@ -67,7 +63,7 @@ Esta sección describe la instalación y configuración del software EMC NetWork
     #
     # Parameters not shown can be set in this file (as per site customisation) #or from the command-line.
     #
-    # Please refer to the user Guides for details on all parameters, including
+    # See the user Guides for details on all parameters, including
     # those not listed below.
     # Note: DCTM environment for D6 is slightly different from D5, refer to D6
     # Installation Guide to update the values.
@@ -198,29 +194,29 @@ Esta sección describe la instalación y configuración del software EMC NetWork
 
    * Copia de seguridad completa de la base de datos (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[contraseña ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[contraseña ]*`-l full`*&lt;database_name>*
 
    * Copia de seguridad incremental de la base de datos (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Copia de seguridad del registro de base de datos (nsrnmdbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
-      Donde:
+     Donde:
 
-      `[NetWorker_database_module_root]` es el directorio de instalación del módulo NetWorker. Por ejemplo, el directorio de instalación predeterminado del módulo NetWorker para SQL Server es C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+     `[NetWorker_database_module_root]` es el directorio de instalación del módulo NetWorker. Por ejemplo, el directorio de instalación predeterminado del módulo NetWorker para SQL Server es C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
-      `NetWorker_Server_Name` es el servidor en el que está instalado NetWorker.
+     `NetWorker_Server_Name` es el servidor en el que está instalado NetWorker.
 
-      `username` &amp; `password` son el nombre de usuario y la contraseña del usuario administrador de la base de datos.
+     `username` &amp; `password` son el nombre de usuario y la contraseña del usuario administrador de la base de datos.
 
-      `database_name` es el nombre de la base de datos de la que se realizará una copia de seguridad.
+     `database_name` es el nombre de la base de datos de la que se realizará una copia de seguridad.
 
 **Crear un dispositivo de copia de seguridad**
 
-1. Cree un nuevo directorio en el servidor EMC Documentum y comparta la carpeta otorgando derechos completos a todos los usuarios.
+1. Cree un directorio en el servidor EMC Documentum y comparta la carpeta otorgando derechos completos a todos los usuarios.
 1. Inicie el administrador de EMC NetWorker y haga clic en Gestión de medios > Dispositivos.
 1. Haga clic con el botón derecho en Dispositivos y seleccione Crear.
 1. Introduzca los siguientes valores y haga clic en Aceptar:

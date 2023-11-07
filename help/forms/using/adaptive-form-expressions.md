@@ -10,10 +10,10 @@ discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2802'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -285,7 +285,7 @@ Realice los siguientes pasos para crear un motivo personalizado para un tipo de 
 
 1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
 ``
-1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agregue una propiedad con un nombre (por ejemplo `pattern1`) y establezca su valor en el motivo que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
+1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agregue una propiedad con un nombre (por ejemplo, `pattern1`) y establezca su valor en el patrón que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
 
    ![Crear motivos personalizados para campos en CrxDe](assets/creating-custom-patterns.png)
 

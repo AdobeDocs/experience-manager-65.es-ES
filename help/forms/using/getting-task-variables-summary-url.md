@@ -1,18 +1,14 @@
 ---
 title: Obtener variables de tarea en la URL de resumen
-seo-title: Getting Task Variables in Summary URL
 description: Aprenda a reutilizar la información sobre una tarea y a generar una URL de resumen para resumir o describir una tarea.
-seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 100%
+source-wordcount: '431'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +59,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
    1. Cree el proceso **Crear resumen de PTO** y utilícelo como subproceso antes de la operación **Asignar tarea** en su orquestación.
    1. Establezca **employeeName**, **employeeID**, **ptoReason**, **totalDays** y **nodeName** como las variables de entrada del nuevo proceso. Estas variables se pasarán como los datos de formulario enviados.
 
-      Establezca también una variable de salida **ptoNodePath**, que se utilizará al configurar la URL de resumen.
+      Defina también una variable de salida **ptoNodePath** que se utiliza al configurar la URL de resumen.
 
    1. En el proceso **Crear resumen de PTO** proceso, utilice el componente **Establecer valor** para establecer los detalles de entrada en una asignación **nodeProperty**(**nodeProps**).
 
@@ -78,8 +74,8 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
       * **Ruta de carpeta**: la ruta en la que se crea el nuevo nodo CRX. Establezca la ruta como **/content**.
       * **Nombre del nodo**: asigne la variable de entrada nodeName a este campo. Es una cadena de nombre de nodo única.
       * **Tipo de nodo**: establezca el tipo como **nt:unstructured**. La salida de este proceso es nodePath. nodePath es la ruta CRX del nodo recién creado. ndoePath es la salida final del proceso **Crear resumen de PTO**.
-   1. Pase los datos de formulario enviados (**employeeName**, **employeeID**, **ptoReason** y **totalDays**) como entrada al nuevo proceso **Crear resumen de PTO**. Tome la salida como **ptoSummaryNodePath**.
 
+   1. Pase los datos de formulario enviados (**employeeName**, **employeeID**, **ptoReason** y **totalDays**) como entrada al nuevo proceso **Crear resumen de PTO**. Tome la salida como **ptoSummaryNodePath**.
 
 1. Defina la URL de resumen como una expresión XPath que contiene los detalles del servidor junto con **ptoSummaryNodePath**.
 

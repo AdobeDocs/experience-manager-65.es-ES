@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1707'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ Si no especifica un directorio raíz de GDS, el directorio predeterminado será 
 
 >[!NOTE]
 >
->El cambio del valor del directorio raíz de GDS debe realizarse con especial cuidado. AEM El directorio GDS se utiliza para almacenar archivos de larga duración utilizados dentro de un proceso, así como componentes de producto de formularios críticos. Cambiar la ubicación del directorio GDS es un cambio importante en el sistema. AEM AEM Si configura incorrectamente la ubicación del directorio del GDS, los formularios de la quedarán inoperantes y podrían requerir una reinstalación completa de los formularios de la. Si especifica una nueva ubicación para el directorio GDS, es necesario cerrar el servidor de aplicaciones y migrar los datos antes de reiniciar el servidor. El administrador del sistema debe mover todos los archivos de la ubicación antigua a la nueva ubicación, pero mantener la estructura de directorios interna.
+>El cambio del valor del directorio raíz de GDS debe realizarse con especial cuidado. AEM El directorio GDS se utiliza para almacenar tanto los archivos de larga duración utilizados dentro de un proceso como los componentes de producto de formularios críticos. Cambiar la ubicación del directorio GDS es un cambio importante en el sistema. AEM AEM Si configura incorrectamente la ubicación del directorio del GDS, los formularios de la quedarán inoperantes y podrían requerir una reinstalación completa de los formularios de la. Si especifica una nueva ubicación para el directorio GDS, es necesario cerrar el servidor de aplicaciones y migrar los datos antes de reiniciar el servidor. El administrador del sistema debe mover todos los archivos de la ubicación antigua a la nueva ubicación, pero mantener la estructura de directorios interna.
 
 >[!NOTE]
 >

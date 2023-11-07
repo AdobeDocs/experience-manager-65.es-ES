@@ -4,9 +4,9 @@ description: AEM Obtenga información sobre cómo realizar una actualización in
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Antes de ejecutar la actualización, hay que completar varios pasos. Consulte [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) y [Tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) para obtener más información. AEM Además, asegúrese de que el sistema cumple los requisitos de la nueva versión de la aplicación de la nueva versión de la aplicación de la nueva versión de la aplicación de la versión de la aplicación de la nueva versión de. Consulte cómo Pattern Detector puede ayudarle a estimar la complejidad de su actualización y también consulte la sección Ámbito de la actualización y Requisitos de [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md) para obtener más información.
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Requisitos previos de migración {#migration-prerequisites}
 
@@ -161,13 +161,13 @@ Donde `/path/to/datastore` representa la ruta al almacén de datos de archivos.
 
 ### Determinar el comando de inicio de actualización correcto {#determining-the-correct-upgrade-start-command}
 
-AEM Para ejecutar la actualización, es importante empezar a utilizar el archivo jar para que aparezca la instancia. Para actualizar a 6.5, consulte también otras opciones de reestructuración de contenido y migración en [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que puede elegir con el comando upgrade.
+AEM Para ejecutar la actualización, es importante empezar a utilizar el archivo jar para que aparezca la instancia. Para actualizar a 6.5, consulte otras opciones de reestructuración y migración de contenido en [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que puede elegir con el comando upgrade.
 
 >[!IMPORTANT]
 >
->Si está ejecutando Java 11 de Oracle AEM (o, por lo general, versiones de Java más recientes que la 8), se deberán agregar modificadores adicionales a la línea de comandos al iniciar la ejecución de un comando de. Para obtener más información, consulte [Consideraciones sobre Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Si está ejecutando Java 11 de Oracle AEM (o, por lo general, versiones de Java más recientes que la 8), se deben agregar modificadores adicionales a la línea de comandos al iniciar la ejecución de un comando de. Para obtener más información, consulte [Consideraciones sobre Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-AEM Tenga en cuenta que iniciar la actualización desde la secuencia de comandos de inicio no iniciará la actualización. AEM La mayoría de los clientes empiezan a utilizar la secuencia de comandos de inicio y la han personalizado para incluir modificadores para configuraciones de entorno como, por ejemplo, configuraciones de memoria, certificados de seguridad, etc. Por este motivo, Adobe recomienda seguir este procedimiento para determinar el comando de actualización adecuado:
+AEM Tenga en cuenta que iniciar la actualización desde la secuencia de comandos de inicio no iniciará la actualización. AEM La mayoría de los clientes empiezan a utilizar la secuencia de comandos de inicio y la han personalizado para incluir modificadores para configuraciones de entorno como la configuración de memoria, los certificados de seguridad, etc. Por este motivo, Adobe recomienda seguir este procedimiento para determinar el comando de actualización adecuado:
 
 1. AEM En una instancia de en ejecución, ejecute lo siguiente desde la línea de comandos:
 

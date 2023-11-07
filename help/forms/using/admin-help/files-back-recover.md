@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2065'
 ht-degree: 3%
 
 ---
@@ -109,7 +109,7 @@ DB2 tiene funcionalidades integradas para realizar copias de seguridad de una ba
 
 Utilice las copias de seguridad instantáneas o configure la base de datos de Oracle para que se ejecute en el modo de registro de archivos. (Consulte [Copia de seguridad en oracle: Introducción](https://www.databasedesign-resource.com/oracle-backup.md).) Para obtener más información sobre la copia de seguridad y recuperación de la base de datos de Oracle, visite estos sitios:
 
-[Copia de seguridad y recuperación de oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica los conceptos de copia de seguridad y recuperación y las técnicas más comunes para utilizar Recovery Manager (RMAN) para realizar copias de seguridad, recuperación y generación de informes con más detalle, además de proporcionar más información sobre cómo planificar una estrategia de copia de seguridad y recuperación.
+[Copia de seguridad y recuperación de oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica los conceptos de copia de seguridad y recuperación y las técnicas más comunes para utilizar Recovery Manager (RMAN) para realizar copias de seguridad, recuperación y generación de informes con más detalle, y proporciona más información sobre cómo planificar una estrategia de copia de seguridad y recuperación.
 
 [Guía del Usuario de Copia de Seguridad y Recuperación de la Base de Datos oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Proporciona información detallada acerca de la arquitectura de RMAN, los conceptos y mecanismos de copia de seguridad y recuperación, las técnicas avanzadas de recuperación, como las funciones de recuperación puntual y flashback de base de datos, y la optimización del rendimiento de copia de seguridad y recuperación. También cubre la copia de seguridad y recuperación gestionadas por el usuario, utilizando instalaciones del sistema operativo del host en lugar de RMAN. Este volumen es esencial para la copia de seguridad y recuperación de implementaciones de bases de datos más sofisticadas y para escenarios de recuperación avanzados.
 
@@ -153,7 +153,7 @@ El directorio raíz de almacenamiento de contenido se crea cuando se instala Con
 
 La ubicación predeterminada del directorio raíz de almacenamiento de contenido es `[aem-forms root]/lccs_data`.
 
-Haga una copia de seguridad de los siguientes directorios ubicados en el directorio raíz de almacenamiento de contenido:
+Haga una copia de seguridad de los siguientes directorios en el directorio raíz de almacenamiento de contenido:
 
 /audit.contentstore
 
@@ -163,7 +163,7 @@ Haga una copia de seguridad de los siguientes directorios ubicados en el directo
 
 /backup-lucene-indexes
 
-Si el directorio /backup-lucene-indexes no está presente, haga una copia de seguridad del directorio /lucene-indexes, también ubicado en el directorio raíz del almacenamiento de contenido. Si el directorio /backup-lucene-indexes está presente, no realice una copia de seguridad del directorio /lucene-indexes porque podría provocar errores.
+Si el directorio /backup-lucene-indexes no está presente, haga una copia de seguridad del directorio /lucene-indexes, también en el directorio raíz del almacenamiento de contenido. Si el directorio /backup-lucene-indexes está presente, no realice una copia de seguridad del directorio /lucene-indexes porque podría provocar errores.
 
 ### Ubicación raíz del almacenamiento de contenido (entorno en clúster) {#content-storage-root-location-clustered-environment}
 
@@ -173,7 +173,7 @@ Al instalar Content Services (obsoleto) en un entorno agrupado, el directorio ra
 
 **Directorio raíz del índice:** Directorio que se crea en cada nodo del clúster, siempre con la misma ruta de acceso y el mismo nombre de directorio
 
-La ubicación predeterminada del directorio raíz de almacenamiento de contenido es `[GDS root]/lccs_data`, donde `[GDS root]` es la ubicación descrita en [Ubicación de GDS](files-back-recover.md#gds-location). Haga una copia de seguridad de los siguientes directorios ubicados en el directorio raíz de almacenamiento de contenido:
+La ubicación predeterminada del directorio raíz de almacenamiento de contenido es `[GDS root]/lccs_data`, donde `[GDS root]` es la ubicación descrita en [Ubicación de GDS](files-back-recover.md#gds-location). Haga una copia de seguridad de los siguientes directorios en el directorio raíz de almacenamiento de contenido:
 
 /audit.contentstore
 
@@ -183,7 +183,7 @@ La ubicación predeterminada del directorio raíz de almacenamiento de contenido
 
 /backup-lucene-indexes
 
-Si el directorio /backup-lucene-indexes no está presente, haga una copia de seguridad del directorio /lucene-indexes, también ubicado en el directorio raíz del almacenamiento de contenido. Si el directorio /backup-lucene-indexes está presente, no realice una copia de seguridad del directorio /lucene-indexes porque podría provocar errores.
+Si el directorio /backup-lucene-indexes no está presente, haga una copia de seguridad del directorio /lucene-indexes, también en el directorio raíz del almacenamiento de contenido. Si el directorio /backup-lucene-indexes está presente, no realice una copia de seguridad del directorio /lucene-indexes porque podría provocar errores.
 
 La ubicación predeterminada para el directorio raíz del índice es `[aem-forms root]/lucene-indexes` en cada nodo.
 

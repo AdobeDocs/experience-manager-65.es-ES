@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 3%
+source-wordcount: '550'
+ht-degree: 4%
 
 ---
 
@@ -110,7 +110,7 @@ AEM Cuando la funcionalidad está desarrollada para WCM, se pueden abrir sesione
 * Puede ver gran parte de CacheManager: resizeAll entradas en el archivo de registro; el siguiente número (size=&lt;x>) muestra el número de cachés, cada sesión abre varias cachés.
 * De vez en cuando, el sistema se queda sin memoria (después de unas pocas horas, días o semanas, según la gravedad).
 
-Para analizar las sesiones no cerradas y averiguar qué código no cierra una sesión, consulte el artículo de la Base de conocimiento [Analizar sesiones no cerradas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Para analizar las sesiones no cerradas y averiguar qué código no está cerrando una sesión, consulte el artículo de la Base de conocimiento [Analizar sesiones no cerradas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
 ### Uso de la consola web de Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

@@ -1,19 +1,15 @@
 ---
 title: Client Context
-seo-title: Client Context
 description: Aprenda a utilizar Client Context para ver información sobre la página actual y el visitante en Adobe Experience Manager.
-seo-description: Learn how to use the Client Context in AEM.
-uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1979'
 ht-degree: 0%
 
 ---
@@ -42,7 +38,7 @@ Los iconos (solo disponibles en el entorno de creación) permiten configurar los
 ![Los iconos Editar, Cargar y Restablecer de la ventana Client Context.](do-not-localize/clientcontext_icons.png)
 
 * **Editar**
-Se abrirá una nueva página para permitirle lo siguiente [edición, adición o eliminación de una propiedad de perfil](#editingprofiledetails).
+Se abre una nueva página, que le permite [editar, añadir o quitar una propiedad de perfil](#editingprofiledetails).
 
 * **Cargar**
 Puede [seleccione de una lista de perfiles y cargue el perfil](#loading-a-new-user-profile) desea realizar la prueba.
@@ -64,13 +60,13 @@ Client Context puede mostrar las siguientes propiedades ([en función de lo que 
 * el **mouse X** position
 * el **Y de ratón** position
 
-**Flujo de actividad** AEM Esto proporciona información sobre la actividad social del usuario en varias plataformas; por ejemplo, los foros, blogs, clasificaciones, etc. de la.
+**Flujo de actividad** AEM Esto proporciona información sobre la actividad social del usuario en varias plataformas; por ejemplo, los foros, blogs, clasificaciones, etc., de los que se puede acceder a través de la red social.
 
 **Campaign** Permite a los autores simular una experiencia específica para una campaña. Este componente anula la resolución normal de la campaña y la selección de experiencias para habilitar la prueba de varias permutaciones.
 
 La resolución de la campaña se basa normalmente en la propiedad priority de la campaña. La experiencia se selecciona normalmente en función de la segmentación.
 
-**Carrito** Muestra información del carro de compras, incluidas las entradas de producto (título, cantidad, precio, con formato, etc.), las promociones resueltas (título, mensaje, etc.) y cupones (código, descripción, etc.).
+**Carrito** Muestra información del carro de compras, incluidas las entradas de producto (título, cantidad, precio, con formato, etc.), las promociones resueltas (título, mensaje, etc.) y los cupones (código, descripción, etc.).
 
 El almacén de sesiones del carro de compras también notifica al servidor acerca de los cambios de promoción resueltos (según los cambios de segmentación) mediante ClientContextCartServlet.
 
@@ -154,7 +150,7 @@ Cuando termine, puede [restablecimiento del perfil](#resetting-the-profile-to-th
 
    ![El icono Cargar perfil de Client Context](do-not-localize/clientcontext_loadprofile.png)
 
-1. Se abrirá el cuadro de diálogo, donde puede seleccionar el perfil que desea cargar:
+1. Esto abre el cuadro de diálogo, donde puede seleccionar el perfil que desea cargar:
 
    ![El cuadro de diálogo Cargador de perfiles muestra la lista desplegable para seleccionar un perfil](assets/clientcontext_profileloader.png)
 
@@ -164,7 +160,7 @@ Cuando termine, puede [restablecimiento del perfil](#resetting-the-profile-to-th
 
 También puede seleccionar un perfil con el control deslizante de selección:
 
-1. Haga doble clic en el icono que representa al usuario actual. Se abrirá el selector, utilice las flechas para navegar y ver los perfiles disponibles:
+1. Haga doble clic en el icono que representa al usuario actual. Cuando se abra el selector, utilice las flechas para desplazarse y ver los perfiles disponibles:
 
    ![El selector de usuario](assets/clientcontext_profileselector.png)
 
@@ -178,7 +174,7 @@ También puede seleccionar un perfil con el control deslizante de selección:
 
 ### Cambio de la plataforma del explorador {#changing-the-browser-platform}
 
-1. Haga doble clic en el icono que representa la plataforma del explorador. Se abrirá el selector, utilice las flechas para navegar y ver las plataformas o exploradores disponibles:
+1. Haga doble clic en el icono que representa la plataforma del explorador. Cuando se abra el selector, utilice las flechas para desplazarse y ver las plataformas o exploradores disponibles:
 
    ![Selector de plataforma del explorador](assets/clientcontext_browserplatform.png)
 
@@ -186,7 +182,7 @@ También puede seleccionar un perfil con el control deslizante de selección:
 
 ### Cambio de la geolocalización {#changing-the-geolocation}
 
-1. Haga doble clic en el icono de geolocalización. Se abrirá un mapa expandido, donde puede arrastrar el marcador a una nueva ubicación:
+1. Haga doble clic en el icono de geolocalización. Se abre un mapa expandido, donde puede arrastrar el marcador a una nueva ubicación:
 
    ![Detalles de geolocalización](assets/clientcontext_geomocationrelocate.png)
 

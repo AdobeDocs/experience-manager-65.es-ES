@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2798'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Para que los autores editen el contenido.
 * **Entorno de producción de publicación**
 Para servir contenido publicado.
 
-AEM Además, los entornos pueden variar, desde un sistema de un solo servidor que ejecuta el servidor de aplicaciones y un servidor de aplicaciones hasta un conjunto de gran escala de instancias agrupadas de varios servidores y varias CPU. El Adobe recomienda que utilice un equipo independiente para cada sistema de producción y que no ejecute otras aplicaciones en estos equipos.
+AEM Además, los entornos pueden variar, desde un sistema de un solo servidor que ejecuta el servidor de aplicaciones y un servidor de aplicaciones, hasta un conjunto de gran escala de instancias agrupadas de varios servidores y varias CPU. El Adobe recomienda que utilice un equipo independiente para cada sistema de producción y que no ejecute otras aplicaciones en estos equipos.
 
 ## Consideraciones genéricas de tamaño de hardware {#generic-hardware-sizing-considerations}
 
@@ -85,7 +85,7 @@ Los requisitos de tamaño de hardware para casos de uso avanzados deben basarse 
 
 El espacio en disco necesario depende en gran medida del volumen y del tipo de la aplicación web. Los cálculos deben tener en cuenta lo siguiente:
 
-* la cantidad y el tamaño de páginas, recursos y otras entidades almacenadas en el repositorio, como flujos de trabajo, perfiles, etc.
+* la cantidad y el tamaño de las páginas, los recursos y otras entidades almacenadas en el repositorio, como flujos de trabajo, perfiles, etc.
 * la frecuencia estimada de los cambios de contenido y, por lo tanto, la creación de versiones de contenido
 * el volumen de representaciones de recursos DAM que se generarán
 * el crecimiento general del contenido con el tiempo
@@ -314,7 +314,7 @@ Además, tenga en cuenta los autores que trabajan en paralelo. AEM Percibirán e
 
 ### Consideraciones de tamaño de AEM Communities {#aem-communities-sizing-considerations}
 
-AEM los sitios que incluyen funciones de AEM Communities (sitios de la comunidad) experimentan un alto nivel de interacción de los visitantes del sitio (miembros) en el entorno de publicación.
+AEM Los sitios de que incluyen funciones de AEM Communities (sitios de la comunidad) experimentan un alto nivel de interacción por parte de los visitantes del sitio (miembros) en el entorno de publicación.
 
 Las consideraciones de tamaño para un sitio de comunidad dependen de la interacción anticipada por los miembros de la comunidad y de si el rendimiento óptimo del contenido de la página es de mayor importancia.
 

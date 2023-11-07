@@ -3,10 +3,10 @@ title: Utilice el modo Diseño para cambiar el tamaño de los componentes de la 
 description: Defina la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Puede utilizar el modo Diseño para cambiar el tamaño de los componentes de tod
 Seleccione **Diseño** de la lista desplegable que aparece en la parte superior de la interfaz de creación de comunicaciones interactivas, junto a la opción **Vista previa**. El formulario se muestra en el modo Diseño.
 
 1. Inicie sesión en la instancia de autor de AEM y navegue hasta **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-1. Cree una nueva [Comunicación interactiva](../../forms/using/create-interactive-communication.md) o abra una existente.
+1. Crear un [Comunicación interactiva](../../forms/using/create-interactive-communication.md) o abra una existente.
 1. Seleccione **Diseño** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa**. El formulario se muestra en el modo Diseño.
 
    ![Modo de diseño para comunicaciones interactivas](assets/layout_mode_ic_new.png)

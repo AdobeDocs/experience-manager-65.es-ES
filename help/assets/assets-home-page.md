@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Developer Tools, Asset Management
 role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Esta sección aparece debajo de la sección Bienvenido y muestra widgets predete
 * Reciente
 * Descubrir
 
-**Actividad**: En esta sección, la variable **[!UICONTROL Mi actividad]** widget muestra las actividades recientes realizadas por el usuario que ha iniciado sesión con recursos (incluidos los recursos sin representaciones), por ejemplo cargas de recursos, descargas, creación de recursos, ediciones, comentarios, anotaciones y recursos compartidos.
+**Actividad**: En esta sección, la variable **[!UICONTROL Mi actividad]** widget muestra las actividades recientes realizadas por el usuario que ha iniciado sesión con recursos (incluidos los recursos sin representaciones), por ejemplo, cargas, descargas, creación, ediciones, comentarios, anotaciones y recursos compartidos de recursos.
 
 **Reciente**: La **[!UICONTROL Vistos recientemente]** el widget de esta sección muestra las entidades a las que el usuario que ha iniciado sesión ha accedido recientemente, incluidas las carpetas, las colecciones y los proyectos.
 
@@ -74,7 +74,7 @@ Esta sección aparece debajo de la sección Bienvenido y muestra widgets predete
 
 Para habilitar la depuración de los datos de actividad del usuario, habilite la **[!UICONTROL Servicio de purga de eventos DAM]** en el Administrador de configuración. Después de habilitar este servicio, el sistema eliminará las actividades del usuario que haya iniciado sesión y que superen un número especificado.
 
-La pantalla de bienvenida proporciona ayudas para la navegación sencillas, como iconos en la barra de herramientas para acceder a carpetas, colecciones y catálogos.
+La pantalla de bienvenida proporciona ayudas para la navegación sencillas como, por ejemplo, los iconos de la barra de herramientas para acceder a carpetas, colecciones y catálogos.
 
 >[!NOTE]
 >

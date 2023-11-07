@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
 
    * En la parte superior de la pestaña Criterios, seleccione un elemento de proceso o un elemento de tarea.
 
-      **Sugerencia**: *Si previamente seleccionó el elemento Nombre del proceso y especificó un proceso, también se podrá seleccionar cualquier variable de proceso definida en ese proceso.*
+     **Sugerencia**: *Si previamente seleccionó el elemento Nombre del proceso y especificó un proceso, también se podrá seleccionar cualquier variable de proceso definida en ese proceso.*
 
-      **Sugerencia**: *Si selecciona el elemento Task Visible, los usuarios podrán quitar las tareas completadas de los resultados de búsqueda.*
+     **Sugerencia**: *Si selecciona el elemento Task Visible, los usuarios podrán quitar las tareas completadas de los resultados de búsqueda.*
 
-      Los campos de criterios de búsqueda para el elemento seleccionado aparecen en la parte inferior de la pestaña Criterios.
+     Los campos de criterios de búsqueda para el elemento seleccionado aparecen en la parte inferior de la pestaña Criterios.
 
    * Para cada elemento de proceso, elemento de tarea y variable de proceso que seleccione, rellene los campos de búsqueda correspondientes en la parte inferior de la pestaña Criterios:
 
@@ -58,10 +58,9 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
       * (Opcional) Para permitir que los usuarios cambien el valor del operando en Workspace, seleccione Permitir al usuario cambiar el operando.
       * (Opcional) Para permitir que los usuarios cambien el operador relacional, seleccione Permitir al usuario seleccionar otro operador relacional. En la lista que aparece, seleccione los operadores que deben estar disponibles para el usuario.
 
-      **Sugerencia**: *Si ha seleccionado Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se esté ejecutando en el servidor de Forms. Después de seleccionar un proceso, cualquier variable de proceso definida en ese proceso estará disponible para su selección en Variables de proceso en la sección superior de la pestaña Criterios.*
+     **Sugerencia**: *Si ha seleccionado Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se esté ejecutando en el servidor de Forms. Después de seleccionar un proceso, cualquier variable de proceso definida en ese proceso estará disponible para su selección en Variables de proceso en la sección superior de la pestaña Criterios.*
 
-      **Sugerencia**: *Para eliminar un elemento de la plantilla de búsqueda, haga clic en el icono Eliminar junto a los criterios de búsqueda del elemento.*
-
+     **Sugerencia**: *Para eliminar un elemento de la plantilla de búsqueda, haga clic en el icono Eliminar junto a los criterios de búsqueda del elemento.*
 
 1. (Opcional) Para que el encabezado de cada columna se muestre en los resultados de búsqueda, haga clic en la pestaña Diseño y realice los siguientes pasos:
 
@@ -80,7 +79,7 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
    * (Opcional) Para ordenar una columna en orden descendente, active la casilla de verificación situada junto al nombre del elemento. Si la casilla de verificación no está seleccionada, la columna se ordena en orden ascendente.
 
 1. Haga clic en la pestaña Save.
-1. (Opcional) Si crea una nueva plantilla de búsqueda, asígnele un nombre único. Si no especifica un nombre único, puede sobrescribir una plantilla existente.
+1. (Opcional) Si crea una plantilla de búsqueda, asígnele un nombre único. Si no especifica un nombre único, puede sobrescribir una plantilla existente.
 1. Haga clic en el botón Save.
 
 ## Eliminación de una plantilla de búsqueda {#delete-a-search-template}

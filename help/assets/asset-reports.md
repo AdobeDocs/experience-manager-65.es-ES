@@ -6,18 +6,18 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1162'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
-# Informes de Asset {#asset-reports}
+# Informes de recurso {#asset-reports}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Los informes de recursos le permiten evaluar la utilidad de su [!DNL Adobe Experience Manager Assets] implementación. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo interactúan los usuarios con los recursos y cuáles se descargan y comparten.
@@ -113,7 +113,7 @@ Para generar informes, haga lo siguiente:
    ![Seleccionar o cancelar la selección de columnas del informe](assets/custom_columns.png)
 
 1. Clic **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
-1. En el [!UICONTROL Informes de recursos] página, el estado de generación del informe se basa en el estado actual del trabajo de informe, por ejemplo [!UICONTROL Correcto], [!UICONTROL Error], [!UICONTROL En cola], o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. También puede seleccionar el informe y hacer clic en **[!UICONTROL Ver]** en la barra de herramientas.
+1. En el [!UICONTROL Informes de recursos] página, el estado de generación del informe se basa en el estado actual del trabajo de informe, por ejemplo, [!UICONTROL Correcto], [!UICONTROL Error], [!UICONTROL En cola], o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. También puede seleccionar el informe y hacer clic en **[!UICONTROL Ver]** en la barra de herramientas.
 
    ![Un informe generado](assets/report_page.png)
 

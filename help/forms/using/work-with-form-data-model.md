@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4184'
+source-wordcount: '4181'
 ht-degree: 97%
 
 ---
@@ -96,7 +96,7 @@ Para crear un objeto de modelo de datos sin fuentes de datos:
 
 1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea crear una entidad u objeto del modelo de datos.
 1. Pulse **[!UICONTROL Crear entidad]**.
-1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y haga clic en **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos del formulario. Tenga en cuenta que el objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
+1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y haga clic en **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos del formulario. El objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
 
    ![new-entity](assets/new-entity.png)
 
@@ -317,7 +317,7 @@ Una propiedad calculada es aquella cuyo valor se calcula en función de una regl
 
 Por ejemplo, puede crear una propiedad calculada **FullName** cuyo valor es resultado de la concatenación de las propiedades **FirstName** y **LastName**. Para ello:
 
-1. Cree una nueva propiedad con el nombre `FullName` cuyo tipo de datos es Cadena.
+1. Cree una propiedad con el nombre `FullName` cuyo tipo de datos es Cadena.
 1. Habilite la opción **[!UICONTROL Calculada]** y pulse **[!UICONTROL Listo]** para crear la propiedad.
 
    ![computed](assets/computed.png)

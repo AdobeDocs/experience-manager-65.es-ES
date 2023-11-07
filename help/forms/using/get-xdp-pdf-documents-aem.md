@@ -11,7 +11,7 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 96%
@@ -82,7 +82,7 @@ Un formulario adaptable que hace referencia a un XFA tiene sus campos enlazados 
 Al quitar una plantilla de formulario, se corrompe el formulario adaptable o la plantilla de formulario dependientes. Algunas veces, a este tipo de formularios adaptables se les denomina informalmente &quot;formularios sucios&quot;. Puede buscar formularios sucios en la interfaz de usuario de AEM Forms de las dos formas siguientes.
 
 * Se muestra un icono de advertencia en la miniatura del formulario adaptable de la lista de recursos, y al situar el puntero sobre él, aparece el siguiente mensaje.\
-  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
 ![Advertencia para un formulario adaptable sin sincronizar después de actualizar el XFA asociado](assets/dirtyaf.png)
 

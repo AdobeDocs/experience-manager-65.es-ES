@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3032'
 ht-degree: 2%
 
 ---
@@ -429,7 +429,7 @@ AEM También se puede configurar para que funcione con una instancia remota del 
 
 #### Configuración recomendada para Solr {#recommended-configuration-for-solr}
 
-A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. AEM Se adapta a los índices de propiedades dedicados que ya están presentes en la propiedad y que no deben usarse con otras aplicaciones.
+A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. AEM Se adapta a los índices de propiedades dedicados que ya están presentes en el código de tiempo; no los utilice con otras aplicaciones.
 
 Para utilizarlo correctamente, debe colocar el contenido del archivo directamente en el Directorio principal de Solr. Si hay implementaciones de varios nodos, debe ir directamente a la carpeta raíz de cada nodo.
 

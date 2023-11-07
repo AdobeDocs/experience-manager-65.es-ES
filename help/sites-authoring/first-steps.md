@@ -1,6 +1,6 @@
 ---
 title: AEM Primeros pasos para los autores al crear contenido en la
-description: AEM Información general sobre las tareas principales que se utilizan para crear contenido con Adobe Experience Manager ().
+description: Información general sobre las tareas principales que se utilizan para crear contenido con Adobe AEM Experience Manager ().
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '405'
 ht-degree: 6%
 
 ---
@@ -23,10 +23,10 @@ Esta sección le ofrece una descripción general de las tareas principales que u
 Abarca:
 
 * [Introducción](#getting-started)\
-   Detallando la secuencia básica de eventos que necesita para crear y publicar su primera página.
+  Detallando la secuencia básica de eventos que necesita para crear y publicar su primera página.
 
 * [Acciones adicionales](#further-actions)\
-   Continuando con las muchas otras acciones que puede utilizar durante la creación.
+  Continuando con las muchas otras acciones que puede utilizar durante la creación.
 
 ## Introducción {#getting-started}
 
@@ -38,7 +38,7 @@ El contenido del sitio web se mantiene en una estructura de árbol. Para crear o
 
 ### Creación de una nueva página {#creating-a-new-page}
 
-Antes de editar, debe [crear una nueva página](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+Antes de editar, debe [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
 ### Abrir una página {#opening-a-page}
 
@@ -46,7 +46,7 @@ Para realizar muchas acciones, como editar, debe [abrir una página](/help/sites
 
 ### Edición de una página {#editing-a-page}
 
-Tanto si la instancia ya tiene páginas existentes como si acaba de crear una nueva página usted mismo puede [editar una página](/help/sites-authoring/editing-content.md) por:
+Tanto si la instancia ya tiene páginas existentes como si ha creado una nueva página usted mismo puede [editar una página](/help/sites-authoring/editing-content.md) por:
 
 * [Inserción de un componente (párrafo)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Editar/Configurar/Copiar/Cortar/Eliminar/Pegar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente

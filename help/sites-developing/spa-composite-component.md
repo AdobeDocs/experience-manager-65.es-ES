@@ -2,16 +2,16 @@
 title: Componentes compuestos en SPA
 description: AEM SPA Aprenda a crear sus propios componentes compuestos, componentes formados por otros componentes, que funcionan con el Editor de aplicaciones de una sola página () de la aplicación de una sola página (SPA) de la.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '781'
 ht-degree: 1%
 
 ---
 
 # Componentes compuestos en SPA {#composite-components-in-spas}
 
-AEM Los componentes compuestos aprovechan la naturaleza modular de los componentes de base combinando varios componentes de base en un solo componente. Un caso de uso de componente compuesto común es el componente de tarjeta, formado por una combinación de los componentes de imagen y texto.
+AEM Los componentes compuestos utilizan la naturaleza modular de los componentes de base mediante la combinación de varios componentes base en un único componente. Un caso de uso de componente compuesto común es el componente de tarjeta, formado por una combinación de los componentes de imagen y texto.
 
 AEM SPA Cuando los componentes compuestos se implementan correctamente dentro del marco de trabajo del Editor de aplicaciones de una sola página () de, los autores de contenido pueden arrastrar y soltar estos componentes como lo harían con cualquier otro componente, pero siguen teniendo la capacidad de editar individualmente cada componente que compone el componente compuesto.
 
@@ -19,7 +19,7 @@ AEM SPA Este artículo muestra cómo puede agregar un componente compuesto a la 
 
 ## Caso práctico {#use-case}
 
-Este artículo utiliza el componente de tarjeta típico como ejemplo de uso. Las tarjetas son un elemento de la interfaz de usuario común para muchas experiencias digitales y suelen estar formadas por una imagen y un texto o rótulo asociado. Un autor quiere poder arrastrar y soltar toda la tarjeta, pero puede editar individualmente la imagen de la tarjeta, así como personalizar el texto asociado.
+Este artículo utiliza el componente de tarjeta típico como ejemplo de uso. Las tarjetas son un elemento de la interfaz de usuario común para muchas experiencias digitales y suelen estar formadas por una imagen y un texto o rótulo asociado. Un autor desea poder arrastrar y soltar toda la tarjeta, pero puede editar individualmente la imagen de la tarjeta y personalizar el texto asociado.
 
 ## Requisitos previos {#prerequisites}
 

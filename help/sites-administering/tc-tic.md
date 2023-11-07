@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo configurar el marco de trabajo de 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 49%
+source-wordcount: '1571'
+ht-degree: 48%
 
 ---
 
@@ -196,7 +196,7 @@ Para configurar la traducción de las páginas de origen a otros idiomas, asóci
 * La configuración en la nube que conecta AEM con su proveedor de traducción.
 * El marco de trabajo de integración de traducciones que configura los detalles de la traducción.
 
-Tenga en cuenta que la configuración de nube del marco de trabajo de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco de trabajo, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco trabajo.
+La configuración de nube del marco de trabajo de integración de traducciones identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco de trabajo, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco trabajo.
 
 Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asocia la página /content/geometrixx/en/products con un marco de trabajo de integración de traducciones, la página Products y todas las páginas por debajo se traducen según el marco de trabajo.
 

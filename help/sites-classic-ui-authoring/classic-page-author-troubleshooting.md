@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '429'
 ht-degree: 29%
 
 ---
@@ -25,7 +25,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->AEM Los usuarios que tienen privilegios de administrador y que desean solucionar problemas con la solución de problemas con la solución de problemas con la solución de problemas, pueden utilizar los métodos de solución de problemas descritos en [AEM Solución de problemas (para administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, póngase en contacto con el administrador del sistema para solucionar los problemas de la solución de problemas de la forma más sencilla de resolver los problemas de la.
+>AEM Los usuarios que tienen privilegios de administrador y que desean solucionar problemas con la solución de problemas con la solución de problemas con la solución de problemas, pueden utilizar los métodos de solución de problemas descritos en [AEM Solución de problemas (para administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
@@ -44,17 +44,17 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
    * Borre la caché del navegador local y vuelva a acceder a la página.
    * Añada `?` al final de la URL de la página. Por ejemplo:
 
-      `http://localhost:4502/sites.html/content?`
+     `http://localhost:4502/sites.html/content?`
 
-      Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
+     Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
 
    * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
 
-## Barra no visible {#sidekick-not-visible}
+## Sidekick no visible {#sidekick-not-visible}
 
 * **Problema**:
 
-   * La barra de tareas no está visible al editar una página de contenido en el entorno de creación.
+   * El Sidekick no está visible al editar una página de contenido en el entorno de creación.
 
 * **Motivo**:
 
@@ -62,7 +62,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Solución**:
 
-   * Cierre la sesión actual y vuelva a iniciarla. La barra de tareas volverá a la posición predeterminada.
+   * Cierre la sesión actual y vuelva a iniciarla. El Sidekick volverá a la posición predeterminada.
 
 ## Buscar y reemplazar: no se reemplazan todas las instancias {#find-replace-not-all-instances-are-replaced}
 
@@ -83,4 +83,4 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
    * Estas definiciones se pueden cambiar con la configuración de **Día en que CQ WCM encuentre el servlet de reemplazo** uso del **Consola web**; por ejemplo, en
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`

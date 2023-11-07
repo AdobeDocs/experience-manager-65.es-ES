@@ -11,10 +11,10 @@ discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 feature: Mobile Forms
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 100%
+source-wordcount: '343'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5 para gen
 
 AEM Forms Designer incluye varias opciones de Texto hablado que se pueden pasar a los lectores de pantalla. Para cada objeto de un formulario, el usuario puede especificar una de varias opciones de configuración para el texto del lector de pantalla:
 
-* Texto personalizado del lector de pantalla, que se puede configurar con la paleta Accesibilidad. Los autores pueden anotar los nombres de los botones y campos, así como su propósito.
+* Texto personalizado del lector de pantalla, que se puede configurar con la paleta Accesibilidad. Los autores pueden anotar los nombres de los botones y campos, y su propósito.
 * Información del objeto, que se puede establecer en la paleta Accesibilidad.
 * Pies de ilustración para los campos del formulario.
 * Nombres de objetos, como se especifican en la opción Nombre de la pestaña Enlace.

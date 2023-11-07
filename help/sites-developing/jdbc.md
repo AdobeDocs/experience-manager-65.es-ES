@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Acceda a una base de datos SQL externa para que las aplicaciones CQ puedan inter
 
 ## Agrupar el controlador de base de datos JDBC {#bundling-the-jdbc-database-driver}
 
-Algunos proveedores de bases de datos proporcionan controladores JDBC en un paquete OSGi, por ejemplo [MySQL](https://dev.mysql.com/downloads/connector/j/). Si el controlador JDBC para la base de datos no está disponible como paquete OSGi, obtenga el JAR del controlador y encapsúlelo en un paquete OSGi. El paquete debe exportar los paquetes necesarios para interactuar con el servidor de la base de datos. El paquete también debe importar los paquetes a los que hace referencia.
+Algunos proveedores de bases de datos proporcionan controladores JDBC en un paquete OSGi, por ejemplo, [MySQL](https://dev.mysql.com/downloads/connector/j/). Si el controlador JDBC para la base de datos no está disponible como paquete OSGi, obtenga el JAR del controlador y encapsúlelo en un paquete OSGi. El paquete debe exportar los paquetes necesarios para interactuar con el servidor de la base de datos. El paquete también debe importar los paquetes a los que hace referencia.
 
 El ejemplo siguiente utiliza el [Complemento de paquete para Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) para envolver el controlador HSQLDB en un paquete OSGi. El POM indica al complemento que incruste el archivo hsqldb.jar que está identificado como dependencia. Se exportan todos los paquetes de org.hsqldb.
 
@@ -100,15 +100,15 @@ Al trabajar con CQ, existen varios métodos para administrar los ajustes de conf
 
 Las siguientes propiedades están disponibles para configurar un servicio de conexión agrupada. Los nombres de las propiedades se muestran tal y como aparecen en la consola web. El nombre correspondiente de un `sling:OsgiConfig` El nodo aparece entre paréntesis. Se muestran valores de ejemplo para un servidor HSQLDB y una base de datos que tiene un alias de `mydb`:
 
-* Clase de controlador JDBC ( `jdbc.driver.class`): La clase Java™ que se utilizará y que implementa la interfaz java.sql.Driver, por ejemplo `org.hsqldb.jdbc.JDBCDriver`. El tipo de datos es `String`.
+* Clase de controlador JDBC ( `jdbc.driver.class`): La clase Java™ que se utilizará y que implementa la interfaz java.sql.Driver, por ejemplo, `org.hsqldb.jdbc.JDBCDriver`. El tipo de datos es `String`.
 
-* URI de conexión JDBC ( `jdbc.connection.uri`): La dirección URL de la base de datos que se utilizará para crear la conexión, por ejemplo `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. El formato de la dirección URL debe ser válido para su uso con el método getConnection de la clase java.sql.DriverManager. El tipo de datos es `String`.
+* URI de conexión JDBC ( `jdbc.connection.uri`): La dirección URL de la base de datos que se utilizará para crear la conexión, por ejemplo, `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. El formato de la dirección URL debe ser válido para su uso con el método getConnection de la clase java.sql.DriverManager. El tipo de datos es `String`.
 
 * Nombre de usuario ( `jdbc.username`): El nombre de usuario que se utilizará para autenticarse en el servidor de base de datos. El tipo de datos es `String`.
 
 * Contraseña ( `jdbc.password`): La contraseña que se utilizará para la autenticación del usuario. El tipo de datos es `String`.
 
-* Consulta de validación ( `jdbc.validation.query`): Instrucción SQL que se utiliza para comprobar que la conexión se ha realizado correctamente, por ejemplo `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. El tipo de datos es `String`.
+* Consulta de validación ( `jdbc.validation.query`): Instrucción SQL que se utiliza para comprobar que la conexión se ha realizado correctamente, por ejemplo, `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. El tipo de datos es `String`.
 
 * Sólo lectura de forma predeterminada (default.readonly): seleccione esta opción cuando desee que la conexión proporcione acceso de sólo lectura. El tipo de datos es `Boolean`.
 * Autoconfirmar de forma predeterminada ( `default.autocommit`): Seleccione esta opción para crear transacciones independientes para cada comando SQL enviado a la base de datos y cada transacción se confirma automáticamente. No seleccione esta opción cuando confirme transacciones explícitamente en el código. El tipo de datos es `Boolean`.

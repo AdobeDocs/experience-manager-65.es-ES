@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Los mapas de imágenes permiten agregar una o más áreas hipervinculadas que fu
 
    * Con Acciones rápidas, haga clic en **[!UICONTROL Editar]** que aparece en un recurso en la **[!UICONTROL Tarjeta]** vista. En la vista Lista, seleccione el recurso y haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
 
-      >[!NOTE]
-      >
-      >Acciones rápidas no está disponible en el **[!UICONTROL Lista]** vista.
+     >[!NOTE]
+     >
+     >Acciones rápidas no está disponible en el **[!UICONTROL Lista]** vista.
 
    * En el **[!UICONTROL Tarjeta]** o **[!UICONTROL Lista]** visualice, seleccione el recurso y haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
    * Clic **[!UICONTROL Editar]** en la página de recursos.

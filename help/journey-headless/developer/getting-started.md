@@ -2,10 +2,10 @@
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3038'
-ht-degree: 94%
+source-wordcount: '3032'
+ht-degree: 92%
 
 ---
 
@@ -81,7 +81,7 @@ Para modificar el contenido sin problemas, AEM ofrece dos API sólidas.
 * La API de GraphQL permite crear solicitudes para acceder a fragmentos de contenido y enviarlos.
 * La API de REST de Assets permite crear y modificar fragmentos de contenido (y otros recursos).
 
-Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O consulte la sección de [recursos adicionales](#additional-resources) para obtener más documentación.
+Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O bien, consulte la [recursos adicionales](#additional-resources) para obtener documentación adicional.
 
 ## Niveles de integración sin encabezado {#integration-levels}
 
@@ -113,13 +113,13 @@ Este nivel de integración se basa en el nivel dos al permitir que la mayoría d
 
 ### Todavía no tiene un consumidor externo del contenido sin encabezado, como una aplicación de una sola página (SPA). {#do-not-have-a-spa}
 
-Si su objetivo es crear una nueva SPA que consuma contenido sin encabezado desde AEM, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también generar una SPA dentro del marco de trabajo del editor de SPA.
+SPA AEM SPA AEM SPA Si su objetivo es crear una interfaz de usuario que consuma contenido sin encabezado de los recursos, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también crear un marco de trabajo de con el editor de contenido sin encabezado, por ejemplo, para crear una interfaz de usuario que le permita crear una interfaz de usuario con el editor de contenido sin encabezado
 
 Con el editor de SPA, la SPA no solo consume contenido de AEM, sino que también es totalmente editable dentro de AEM por sus autores de contenido, lo que le ofrece la flexibilidad de envío sin encabezado y de edición en contexto dentro de AEM.
 
 ## Condiciones y requisitos previos {#requirements-prerequisites}
 
-Antes de comenzar con su proyecto sin encabezado de AEM, existen varios requisitos.
+AEM Antes de comenzar un proyecto de integración sin encabezado, deben cumplirse varios requisitos
 
 ### Conocimiento {#knowledge}
 
@@ -175,9 +175,9 @@ Cree un plan sobre la traducción de contenido que necesita.
 * ¿Necesita idiomas diferentes o también idiomas que se adapten a las especificidades regionales?
 * ¿Necesita contenido con medios enriquecidos, como imágenes o vídeos, para que sea diferente en diferentes configuraciones regionales?
 
-Sea claro sobre el flujo de trabajo de actualización de contenido. ¿Cuál es el proceso de aprobación que debe admitir el sistema? ¿Se pueden aprovechar los flujos de trabajo de AEM para automatizar este proceso?
+Sea claro sobre el flujo de trabajo de actualización de contenido. ¿Cuál es el proceso de aprobación que debe admitir el sistema? ¿Se pueden utilizar los flujos de trabajo de AEM para automatizar este proceso?
 
-Tenga en cuenta que la [jerarquía de contenido](#content-hierarchy) se puede aprovechar para facilitar la traducción.
+Tenga en cuenta que la [jerarquía de contenido](#content-hierarchy) se puede utilizar para facilitar la traducción.
 
 Consulte la sección [recursos adicionales](#additional-resources) para obtener documentación adicional sobre los flujos de trabajo de AEM y las herramientas de traducción, entre ellos, los vínculos al recorrido de traducción sin encabezado de AEM.
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ AEM Este controlador debe agregarse a cualquier configuración de ContentSync de
 }
 ```
 
-**mobilecontentpackageslisting** AEM Enumera el paquete de contenido de la aplicación en cuestión en una aplicación determinada, así como la URL del servidor en la que realizar las solicitudes de actualización. Se utiliza en el lado del cliente js en el dispositivo para solicitar actualizaciones de contenido
+**mobilecontentpackageslisting** AEM Enumera el paquete de contenido de la aplicación en cuestión en una aplicación determinada y la URL del servidor donde se realizarán las solicitudes de actualización. Se utiliza en el lado del cliente js en el dispositivo para solicitar actualizaciones de contenido
 
 AEM El controlador debe usarse en la configuración de ContentSync de App Shell (nodo con page-type=app-instance)
 
@@ -157,7 +157,7 @@ AEM Las propiedades de son aquellas que se espacian con nombres como &quot;cq&qu
 
    * otra configuración de ContentSync
    * a un paquete de contenido (se utilizará su propiedad phonegap-exportTemplate para encontrar su configuración ContentSync)
-   * a un recurso móvil (el contenido de la aplicación se encontrará debajo de ese recurso y, si esos paquetes de contenido tienen una propiedad page-includeInBuild que es true, se utilizará phonegap-exportTemplate para encontrar su configuración de ContentSync)
+   * a un recurso móvil (los de app-content se encuentran debajo de ese recurso y, si esos paquetes de contenido tienen una propiedad page-includeInBuild que es true, se utiliza phonegap-exportTemplate para encontrar su configuración de ContentSync)
 
 * ***autoCreateFirstUpdateBeforeImport: booleano*** : si es true, cree una **actualizar** en la configuración de target antes de importar si una vez no existe ya
 

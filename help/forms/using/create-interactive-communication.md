@@ -10,10 +10,10 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6169'
-ht-degree: 98%
+source-wordcount: '6168'
+ht-degree: 97%
 
 ---
 
@@ -157,7 +157,7 @@ Pulse el fragmento de documento, pulse ![configure_icon](assets/configure_icon.p
 
    Navegue hasta [Variables y objetos del modelo de datos](../../forms/using/create-interactive-communication.md#hiddenvariables) para configurar el enlace de variables ocultas en el fragmento de documento.
 
-   También puede arrastrar y soltar elementos de la fuente de datos o fragmentos de documento de texto para configurar el enlace de variables. Para crear un enlace con cualquiera de los elementos de la fuente de datos, seleccione la pestaña **Fuentes de datos** y arrastre y suelte el elemento en el nombre de la variable. El elemento de la fuente de datos y la variable deben ser del mismo tipo para configurar el enlace correctamente. Si arrastra y suelta un elemento de fuente de datos en una variable ya enlazada, el nuevo elemento reemplazará al anterior para crear un nuevo enlace con la variable. Del mismo modo, seleccione la pestaña **Recursos** y arrastre y suelte el fragmento de documento de texto en el nombre de la variable para configurar el enlace entre ellos. El fragmento del documento de texto no debe contener ninguna variable.
+   También puede arrastrar y soltar elementos de la fuente de datos o fragmentos de documento de texto para configurar el enlace de variables. Para crear un enlace con cualquiera de los elementos de la fuente de datos, seleccione la pestaña **Fuentes de datos** y arrastre y suelte el elemento en el nombre de la variable. El elemento de la fuente de datos y la variable deben ser del mismo tipo para configurar el enlace correctamente. Si arrastra y suelta un elemento de fuente de datos en una variable ya enlazada, el nuevo elemento reemplazará al anterior para crear un enlace con la variable. Del mismo modo, seleccione la pestaña **Recursos** y arrastre y suelte el fragmento de documento de texto en el nombre de la variable para configurar el enlace entre ellos. El fragmento del documento de texto no debe contener ninguna variable.
 
 1. Para agregar una tabla, con el canal Imprimir seleccionado, en la pestaña **[!UICONTROL Recursos]** aplique el filtro para mostrar solo los fragmentos de diseño. Arrastre y suelte el fragmento de diseño necesario en la comunicación interactiva. Un fragmento de diseño se basa en un XDP y se puede utilizar para crear diseños gráficos o tablas estáticas y dinámicas en comunicaciones interactivas que se rellenen con datos dinámicos.
 

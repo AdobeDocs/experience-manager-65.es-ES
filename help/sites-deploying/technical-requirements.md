@@ -3,7 +3,7 @@ title: Requisitos técnicos
 description: Una lista de las plataformas de cliente y servidor compatibles con Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0dd6e3fc2fa9539e5c3ce4e99ab367752dfeaad6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 17%
@@ -226,7 +226,7 @@ AEM Para un entorno nativo de la nube, revise la oferta más reciente de la lín
 
 Adobe también ofrece Managed Services AEM de Adobe para implementar en Azure o AWS la implementación de la implementación de la aplicación de forma. Adobe Managed Services AEM ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y operar en estos entornos de computación en la nube (cloud computing) con el fin de realizar tareas de implementación y operación en estos entornos. Consulte [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-AEM En todos los demás casos de implementación de la aplicación en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad desde el Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. AEM Cualquier problema informado relativo a la ejecución en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, almacenamiento del blob de Azure o AWS S3.
+AEM En todos los demás casos de implementación de la aplicación en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad desde el Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. AEM Cualquier problema informado relativo a la ejecución en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, Azure Blob Storage o AWS S3.
 
 AEM Para obtener recomendaciones sobre cómo implementar en Azure o AWS, fuera de Adobe Managed Services, Adobe recomienda trabajar directamente con el proveedor de la nube. O bien, trabajar con socios de Adobe AEM que apoyen la implementación de la implementación de en el entorno de nube que elija. El proveedor o socio de nube seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura, para satisfacer sus requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 
@@ -537,4 +537,4 @@ XMP La reescritura de datos es compatible y está habilitada para las siguientes
 
 ### Requisitos para que AEM Assets procese recursos con muchos metadatos en Linux® {#assetsonlinux}
 
-El proceso XMPFilesProcessor requiere la biblioteca GLIBC_2.14 para funcionar. Utilice un núcleo Linux® que contenga GLIBC_2.14, por ejemplo la versión 3.1.x del núcleo Linux®. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos de PSD. El uso de una versión anterior de GLIBC provoca un error en los registros que comienzan por `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+El proceso XMPFilesProcessor requiere la biblioteca GLIBC_2.14 para funcionar. Utilice un núcleo Linux® que contenga GLIBC_2.14, por ejemplo, Linux® kernel versión 3.1.x. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos de PSD. El uso de una versión anterior de GLIBC provoca un error en los registros que comienzan por `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

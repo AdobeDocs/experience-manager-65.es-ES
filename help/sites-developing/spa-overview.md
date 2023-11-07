@@ -1,20 +1,16 @@
 ---
 title: Información general del editor de SPA
-seo-title: SPA Editor Overview
 description: Este artículo ofrece una información general completa del Editor de SPA y cómo funciona, e incluye flujos de trabajo detallados de interacción del Editor de SPA dentro de AEM.
-seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
-uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 87%
+source-wordcount: '1651'
+ht-degree: 86%
 
 ---
 
@@ -159,7 +155,7 @@ Esta es una descripción más detallada que se centra en la experiencia de creac
 
 ## Requisitos y limitaciones {#requirements-limitations}
 
-Para permitir que el autor utilice el editor de páginas para editar el contenido de una SPA, la aplicación de SPA debe implementarse para interactuar con el SDK del editor de SPA de AEM. Consulte la [SPA AEM Introducción a la administración de la](/help/sites-developing/spa-getting-started-react.md) documento mínimo que necesita saber para poner en marcha el suyo.
+Para permitir que el autor utilice el editor de páginas para editar el contenido de una SPA, la aplicación de SPA debe implementarse para interactuar con el SDK del editor de SPA de AEM. Consulte [SPA AEM Introducción a la administración de la](/help/sites-developing/spa-getting-started-react.md) por lo mínimo que necesita saber para poner en marcha el suyo.
 
 ### Marcos de trabajo compatibles {#supported-frameworks}
 
@@ -172,7 +168,7 @@ Las versiones anteriores de estos marcos de trabajo pueden funcionar con el Edit
 
 ### Marcos de trabajo adicionales {#additional-frameworks}
 
-Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte la [SPA Modelo de](/help/sites-developing/spa-blueprint.md) AEM SPA documento para los requisitos que debe cumplir un marco de trabajo para crear una capa específica del marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de la.
+Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte la [SPA Modelo de](/help/sites-developing/spa-blueprint.md) AEM SPA para los requisitos que debe cumplir un marco de trabajo para crear una capa específica del marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de la.
 
 ### Uso de varios selectores {#multiple-selectors}
 
@@ -199,6 +195,6 @@ AEM SPA AEM El SDK de Editor de se ha introducido con el paquete de servicio 2 d
 * Editar configuraciones (p. ej., oyentes)
 * Deshacer, Rehacer
 * Diferencias de página y Deformación de tiempo
-* Funciones que realizan la reescritura de HTML del lado del servidor, como Verificador de vínculos, servicio de reescritura de CDN, acortamiento de URL, etc.
+* Funciones que realizan la reescritura del HTML en el lado del servidor, como Verificador de vínculos, servicio de reescritura de CDN, acortamiento de URL, etc.
 * Modo de desarrollador
 * Lanzamientos de AEM

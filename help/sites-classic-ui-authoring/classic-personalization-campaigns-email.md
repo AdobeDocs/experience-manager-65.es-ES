@@ -1,19 +1,15 @@
 ---
 title: Marketing por correo electrónico
-seo-title: E-mail Marketing
-description: El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente, así como añadir contenido nuevo específico a los boletines informativos.
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
+description: El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente de la red de contenido y añadir contenido nuevo, específico para los boletines informativos.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1764'
 ht-degree: 1%
 
 ---
@@ -24,9 +20,9 @@ ht-degree: 1%
 >[!NOTE]
 >
 >El Adobe AEM de no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de la.
->La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+>La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
-El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente, así como añadir contenido nuevo específico a los boletines informativos.
+El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente de la red de contenido y añadir contenido nuevo, específico para los boletines informativos.
 
 Una vez creados, puede enviar boletines informativos al grupo específico de usuarios inmediatamente o en otra hora programada (mediante un flujo de trabajo). Además, los usuarios pueden suscribirse a los boletines en el formato que elijan.
 
@@ -67,7 +63,7 @@ AEM En este documento se describen los conceptos básicos para crear boletines i
 
 1. Haga clic en **Crear**.
 
-1. Se abrirá inmediatamente un nuevo cuadro de diálogo. Aquí puede introducir las propiedades de la newsletter.
+1. Se abre inmediatamente un nuevo cuadro de diálogo. Aquí puede introducir las propiedades de la newsletter.
 
    El **Lista de destinatarios predeterminada** es un campo obligatorio, ya que forma el punto de contacto de la newsletter (consulte [Uso de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obtener más información sobre listas).
 
@@ -173,7 +169,7 @@ Para cambiar entre clientes, haga clic en el icono correspondiente para ver la n
 Aunque solo los usuarios autorizados pueden enviar una newsletter, debe personalizar lo siguiente:
 
 * La línea de asunto, para que los usuarios quieran abrir su correo electrónico y también para asegurarse de que el boletín informativo no termine marcado como correo no deseado.
-* La dirección De, por ejemplo noreply@geometrixx.com, para que los usuarios reciban correo electrónico de una dirección especificada.
+* La dirección De, por ejemplo, `noreply@geometrixx.com`, para que los usuarios reciban correo electrónico de una dirección especificada.
 
 Para personalizar la configuración de la newsletter:
 
@@ -223,7 +219,7 @@ Para enviar boletines de prueba:
 >[!NOTE]
 >
 >El Adobe AEM de no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de la.
->La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+>La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
 Puede enviar una newsletter desde la newsletter o desde la lista. Se describen ambos procedimientos.
 

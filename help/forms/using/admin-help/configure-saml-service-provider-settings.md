@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '598'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Para ver una explicación de SAML, consulte [Información técnica sobre el leng
    * En la lista Alias de clave de credencial de proveedor de servicios, seleccione el alias que asignó a la credencial en el almacén de confianza.
    * Haga clic en Exportar para guardar el contenido de la URL en un archivo y, a continuación, importe ese archivo en el IDP.
 
-1. (Opcional) En la lista de la política de ID de nombres de proveedores de servicios, seleccione el formato de nombre que utiliza el IDP para identificar al usuario en una afirmación de SAML. Las opciones son Sin especificar, Correo electrónico y Nombre completo del dominio de Windows.
+1. (Opcional) En la lista Política de ID de nombres de proveedores de servicios, seleccione el formato de nombre que utiliza el IDP para identificar al usuario en una afirmación de SAML. Las opciones son Sin especificar, Correo electrónico y Nombre completo del dominio de Windows.
 
    >[!NOTE]
    >
@@ -51,13 +51,13 @@ Para ver una explicación de SAML, consulte [Información técnica sobre el leng
 
    * AEM Puede configurar formularios para que emitan una aserción SAML durante un periodo de validez que coincida con el periodo de validez de una aserción de terceros. Para respetar el tiempo de espera de aserción de SAML de terceros, agregue la siguiente línea en Propiedades personalizadas:
 
-      `saml.sp.honour.idp.assertion.expiry=true`
+     `saml.sp.honour.idp.assertion.expiry=true`
 
    * Agregue la siguiente propiedad personalizada para utilizar RelayState para determinar la dirección URL a la que se redirigirá al usuario después de la autenticación correcta.
 
-      `saml.sp.use.relaystate=true`
+     `saml.sp.use.relaystate=true`
 
-   * Agregue la siguiente propiedad personalizada para configurar la dirección URL de las páginas de servidor Java (JSP) personalizadas, que se utilizarán para procesar la lista registrada de proveedores de identidad. Si no ha implementado una aplicación web personalizada, se utiliza la página predeterminada Administración de usuarios para procesar la lista.
+   * Agregue la siguiente propiedad personalizada para configurar la dirección URL de las páginas de servidor Java (JSP) personalizadas, que se utiliza para procesar la lista registrada de proveedores de identidad. Si no ha implementado una aplicación web personalizada, se utiliza la página predeterminada Administración de usuarios para procesar la lista.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 

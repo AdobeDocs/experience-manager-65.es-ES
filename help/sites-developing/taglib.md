@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ El global también declara el [Biblioteca de Sling](/help/sites-developing/tagli
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-El `<ui:includeClientLib>` AEM etiqueta Incluye una biblioteca de cliente de html de, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio cómodo para el ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` interfaz de servicio de.
+El `<ui:includeClientLib>` AEM etiqueta Incluye una biblioteca de cliente de html de, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio cómodo para el ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` interfaz de servicio de.
 
 Tiene los atributos siguientes:
 
@@ -117,7 +117,7 @@ Tiene los siguientes atributos opcionales:
 
 **tagName** : nombre del elemento que rodeará una salida no vacía. El valor predeterminado es DIV.
 
-**placeholder** : valor predeterminado que se utilizará para el texto nulo o vacío en el modo de edición, es decir, el marcador de posición. Tenga en cuenta que la comprobación predeterminada se realiza después del formato y el escape opcionales, es decir, se escribe tal cual en la salida. El valor predeterminado es:
+**placeholder** : valor predeterminado que se utilizará para el texto nulo o vacío en el modo de edición, es decir, el marcador de posición. La comprobación predeterminada se realiza después del formato opcional y el escape, es decir, se escribe tal cual en la salida. El valor predeterminado es:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -256,7 +256,7 @@ Tiene los atributos siguientes:
 >
 >`<cq:includeClientLib>` AEM Obsoleto desde la versión 5.. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) debe utilizarse en su lugar.
 
-El `<cq:includeClientLib>` AEM etiqueta Incluye una biblioteca de cliente html de la comunidad, que puede ser una biblioteca js, una css o una biblioteca de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio cómodo para el `com.day.cq.widget.HtmlLibraryManager` interfaz de servicio de.
+El `<cq:includeClientLib>` AEM etiqueta Incluye una biblioteca de cliente html de la comunidad, que puede ser una biblioteca js, una css o una biblioteca de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio cómodo para el `com.day.cq.widget.HtmlLibraryManager` interfaz de servicio de.
 
 Tiene los atributos siguientes:
 
@@ -545,7 +545,7 @@ Tiene los atributos siguientes:
 
 >[!NOTE]
 >
->La resolución del recurso y la secuencia de comandos que se incluyen con el `<sling:include>` es la misma que para una resolución de URL normal de sling. De forma predeterminada, los selectores, la extensión, etc. de la solicitud actual también se utilizan para el script incluido. Se pueden modificar mediante los atributos de etiqueta: por ejemplo `replaceSelectors="foo.bar"` permite sobrescribir los selectores.
+>La resolución del recurso y la secuencia de comandos que se incluyen con el `<sling:include>` es la misma que para una resolución de URL normal de sling. De forma predeterminada, los selectores, la extensión, etc. de la solicitud actual también se utilizan para el script incluido. Se pueden modificar mediante los atributos de etiqueta: por ejemplo, `replaceSelectors="foo.bar"` permite sobrescribir los selectores.
 
 Por ejemplo:
 

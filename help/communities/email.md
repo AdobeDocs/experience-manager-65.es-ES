@@ -8,7 +8,7 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 3%
@@ -41,7 +41,7 @@ El servicio de correo predeterminado es necesario tanto para las notificaciones 
 
 Se basa en la documentación de [Configuración de notificaciones por correo electrónico](../../help/sites-administering/notification.md), pero con una diferencia en que el campo `"From" address` es *no* obligatorio y debe dejarse vacío.
 
-Por ejemplo (rellenado con valores solo con fines ilustrativos):
+Por ejemplo (rellenado con valores solo con fines ilustrativos),:
 
 ![email-config](assets/email-config.png)
 

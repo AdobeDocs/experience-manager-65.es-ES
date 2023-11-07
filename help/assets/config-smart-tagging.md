@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 24%
@@ -14,7 +14,7 @@ ht-degree: 24%
 
 # Preparar [!DNL Assets] para el etiquetado inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Antes de empezar a etiquetar recursos mediante Smart Content Services, integre [!DNL Experience Manager Assets] con la consola de Adobe Developer para aprovechar el servicio inteligente de [!DNL Adobe Sensei]. Una vez configurado, entrene el servicio con unas pocas imágenes y una etiqueta.
+Antes de empezar a etiquetar recursos mediante Smart Content Services, integre [!DNL Experience Manager Assets] con la consola de Adobe Developer para utilizar el servicio inteligente de [!DNL Adobe Sensei]. Una vez configurado, entrene el servicio con unas pocas imágenes y una etiqueta.
 
 >[!NOTE]
 >

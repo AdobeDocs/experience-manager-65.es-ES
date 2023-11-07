@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3505'
+source-wordcount: '3501'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Cuando se rellena previamente un formulario que ya contiene datos, se deben espe
 
 Por ejemplo, puede rellenar previamente un formulario como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Procesamiento de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
-Para rellenar previamente el formulario de confirmación de ejemplo, debe crear un origen de datos XML que contenga tres elementos XML que coincidan con los tres campos del formulario. Este formulario contiene los tres campos siguientes: `FirstName`, `LastName`, y `Amount`. El primer paso es crear una fuente de datos XML que contenga elementos XML que coincidan con los campos ubicados en el diseño de formulario. El siguiente paso es asignar valores de datos a los elementos XML, como se muestra en el siguiente código XML.
+Para rellenar previamente el formulario de confirmación de ejemplo, debe crear un origen de datos XML que contenga tres elementos XML que coincidan con los tres campos del formulario. Este formulario contiene los tres campos siguientes: `FirstName`, `LastName`, y `Amount`. El primer paso es crear una fuente de datos XML que contenga elementos XML que coincidan con los campos del diseño de formulario. El siguiente paso es asignar valores de datos a los elementos XML, como se muestra en el siguiente código XML.
 
 ```xml
      <Untitled>
@@ -176,9 +176,9 @@ Tenga en cuenta que cada subgrupo de datos contiene cuatro elementos XML que se 
 * Cantidad de artículos
 * Precio unitario
 
-El nombre del elemento XML principal de un subgrupo de datos debe coincidir con el nombre del subformulario ubicado en el diseño de formulario. Por ejemplo, en el diagrama anterior, observe que el nombre del elemento XML principal del subgrupo de datos es `detail`. Corresponde al nombre del subformulario que se encuentra en el diseño de formulario en el que se basa el formulario de pedido de compra. Si el nombre del elemento XML principal del subgrupo de datos y el subformulario no coinciden, no se rellena previamente un formulario del lado del servidor.
+El nombre del elemento XML principal de un subgrupo de datos debe coincidir con el nombre del subformulario que se encuentra en el diseño de formulario. Por ejemplo, en el diagrama anterior, observe que el nombre del elemento XML principal del subgrupo de datos es `detail`. Corresponde al nombre del subformulario que se encuentra en el diseño de formulario en el que se basa el formulario de pedido de compra. Si el nombre del elemento XML principal del subgrupo de datos y el subformulario no coinciden, no se rellena previamente un formulario del lado del servidor.
 
-Cada subgrupo de datos debe contener elementos XML que coincidan con los nombres de campo del subformulario. El `detail` el subformulario ubicado en el diseño de formulario contiene los campos siguientes:
+Cada subgrupo de datos debe contener elementos XML que coincidan con los nombres de campo del subformulario. El `detail` El subformulario del diseño de formulario contiene los campos siguientes:
 
 * txtPartNum
 * txtDescription
@@ -253,25 +253,25 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
    * Llame a `DocumentBuilder` del objeto `newDocument` método para crear una instancia de `org.w3c.dom.Document` objeto.
    * Cree el elemento raíz de la fuente de datos XML invocando el `org.w3c.dom.Document` del objeto `createElement` método. Esto crea un `Element` que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, anexe el elemento raíz al documento llamando a la función `Document` del objeto `appendChild` y pase el objeto del elemento raíz como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
+     ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
    * Cree el elemento de encabezado de la fuente de datos XML llamando a la variable `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, añada el elemento header al elemento raíz llamando a la variable `root` del objeto `appendChild` y pase el objeto header element como un argumento. Los elementos XML que se anexan al elemento header corresponden a la parte estática del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
+     ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
    * Cree un elemento secundario que pertenezca al elemento de encabezado llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento del encabezado llamando al elemento del encabezado `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
+     ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
    * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).)
    * Cree el elemento de detalle de la fuente de datos XML llamando a la función `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, anexe el elemento de detalle al elemento raíz llamando a la función `root` del objeto `appendChild` y pase el objeto de elemento de detalle como argumento. Los elementos XML anexados al elemento de detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
+     ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
    * Cree un elemento secundario que pertenezca al elemento de detalle llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento de detalle llamando al elemento de detalle `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
+     ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
    * Repita el último subpaso para todos los elementos XML para anexar al elemento de detalle. Para crear correctamente el origen de datos XML utilizado para rellenar el formulario de pedido de compra, debe anexar los siguientes elementos XML al elemento de detalle: `txtDescription`, `numQty`, y `numUnitPrice`.
    * Repita los dos últimos pasos secundarios para todos los elementos de datos utilizados para rellenar previamente el formulario.
@@ -306,7 +306,6 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
    * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invoque el `javax.servlet.ServletOutputStream` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
 
-
 **Consulte también**
 
 [Inicio rápido (modo SOAP): Rellenado previo de Forms con diseños flexibles mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
@@ -331,24 +330,24 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
    * Llame a `DocumentBuilder` del objeto `newDocument` método para crear una instancia de `org.w3c.dom.Document` objeto.
    * Cree el elemento raíz de la fuente de datos XML invocando el `org.w3c.dom.Document` del objeto `createElement` método. Esto crea un `Element` que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, anexe el elemento raíz al documento llamando a la función `Document` del objeto `appendChild` y pase el objeto del elemento raíz como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
+     ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
    * Cree el elemento de encabezado de la fuente de datos XML llamando a la variable `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, añada el elemento header al elemento raíz llamando a la variable `root` del objeto `appendChild` y pase el objeto header element como un argumento. Los elementos XML que se anexan al elemento header corresponden a la parte estática del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
+     ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
    * Cree un elemento secundario que pertenezca al elemento de encabezado llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento del encabezado llamando al elemento del encabezado `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
+     ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
    * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).)
    * Cree el elemento de detalle de la fuente de datos XML llamando a la función `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, anexe el elemento de detalle al elemento raíz llamando a la función `root` del objeto `appendChild` y pase el objeto de elemento de detalle como argumento. Los elementos XML anexados al elemento de detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
+     ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
    * Cree un elemento secundario que pertenezca al elemento de detalle llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento de detalle llamando al elemento de detalle `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
-      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
+     ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
    * Repita el último subpaso para todos los elementos XML para anexar al elemento de detalle. Para crear correctamente el origen de datos XML utilizado para rellenar el formulario de pedido de compra, debe anexar los siguientes elementos XML al elemento de detalle: `txtDescription`, `numQty`, y `numUnitPrice`.
    * Repita los dos últimos pasos secundarios para todos los elementos de datos utilizados para rellenar previamente el formulario.

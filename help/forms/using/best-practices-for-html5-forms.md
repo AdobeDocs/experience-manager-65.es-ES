@@ -12,10 +12,10 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '1416'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Las recomendaciones que se examinan en este artículo están dirigidas a los for
 
 ## Los nodos son la divisa de los formularios HTML5, inviértalos con prudencia {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
-Por lo general, un formulario XFA tiene varios elementos. Por ejemplo, tabla, campo de texto e imágenes. Cada elemento tiene una serie de propiedades para controlar el comportamiento y el aspecto del elemento. Cuando se procesa un formulario XFA en formato HTML5, todos los elementos XFA y las propiedades correspondientes se convierten en nodos Modelo o HTML DOM. Estos nodos aumentan el tamaño y la complejidad de un DOM. Y hacen que el formulario HTML5 sea lento de procesar.
+Por lo general, un formulario XFA tiene varios elementos. Por ejemplo, tabla, campo de texto e imágenes. Cada elemento tiene varias propiedades para controlar el comportamiento y el aspecto del elemento. Cuando se procesa un formulario XFA en formato HTML5, todos los elementos XFA y las propiedades correspondientes se convierten en nodos Modelo o HTML DOM. Estos nodos aumentan el tamaño y la complejidad de un DOM. Y hacen que el formulario HTML5 sea lento de procesar.
 
 Es más fácil para los exploradores procesar un DOM más ligero. Por lo tanto, puede realizar las siguientes optimizaciones en un formulario XFA para reducir el número de nodos. Genere una estructura DOM ligera:
 
@@ -83,4 +83,4 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
 ## Tarjeta de referencia rápida {#quick-reference-card}
 
 Puede imprimir la siguiente tarjeta (haga clic en tarjeta para descargar una versión de alta resolución) y mantenerla en su escritorio para una referencia rápida:
-[ ![Tarjeta de referencia rápida de las prácticas recomendadas para formularios HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![ Tarjeta de referencia rápida de las prácticas recomendadas para formularios HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

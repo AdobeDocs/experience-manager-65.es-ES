@@ -8,10 +8,10 @@ topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 100%
+source-wordcount: '1440'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ De forma predeterminada, la acción de envío de los formularios adaptables del 
 
 Puede configurar el servicio de almacenamiento para que transmita datos al clúster de procesamiento sin guardar nada de forma local en el nodo de publicación. El clúster de procesamiento reside en una zona segura detrás del cortafuegos privado, y los datos siguen siendo seguros.
 
-Utilice las credenciales del servidor de procesamiento para el servicio de configuración de AEM DS para publicar datos del nodo de publicación en el servidor de procesamiento. Se recomienda utilizar las credenciales de un usuario no administrativo restringido con acceso de lectura y escritura al repositorio del servidor de procesamiento. Para obtener más información, consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
+Utilice las credenciales del servidor de procesamiento para el servicio de configuración de AEM DS para publicar datos del nodo de publicación en el servidor de procesamiento. Utilice las credenciales de un usuario no administrativo restringido con acceso de lectura y escritura al repositorio del servidor de procesamiento. Para obtener más información, consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Proteger datos administrados por el modelo de datos de formulario (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
@@ -176,12 +176,12 @@ Se requiere un conjunto diferente de perfiles de usuario para las instancias de 
       * No puede crear un formulario adaptable basado en XDP.
       * No tiene permisos para escribir scripts para formularios adaptables.
       * No puede importar XDP ni ningún paquete que contenga XDP.
+
    * Un usuario del grupo forms-power-user puede crear, cumplimentar, publicar y enviar todo tipo de formularios, escribir scripts para formularios adaptables e importar paquetes que contengan XDP.
    * Un usuario de template-authors y template-power-user puede previsualizar y crear una plantilla.
    * Un usuario de fdm-authors puede crear y modificar un modelo de datos de formulario.
    * Un usuario del grupo cm-user-agent puede crear, previsualizar y publicar cartas de Administración de correspondencia.
    * Un usuario del grupo workflow-editors puede crear una aplicación de bandeja de entrada y un modelo de flujo de trabajo.
-
 
 **En autor de procesamiento:**
 

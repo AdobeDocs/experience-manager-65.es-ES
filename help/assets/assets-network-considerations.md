@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -61,7 +61,7 @@ En este ejemplo, la empresa tiene un vínculo superior de 10 Gb/s. Debe ser lo s
 
 Este es el punto de estrangulamiento más pequeño orientado al cliente. Sin embargo, puede realizar una evaluación de un cambio o configurar una lista de permitidos con el grupo de operaciones de red a cargo de este cortafuegos.
 
-A partir de los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser insuficiente para satisfacer las expectativas de los usuarios.
+A partir de los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los recursos utilizados, esto puede ser insuficiente para satisfacer las expectativas de los usuarios.
 
 ## Topología de la [!DNL Experience Manager] entorno {#topology-of-the-aem-environment}
 

@@ -1,19 +1,17 @@
 ---
 title: Añadir un controlador de error personalizado en Forms AEM adaptable basado en componentes principales para Forms adaptable de la
-seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
 description: AEM Forms proporciona controladores de éxitos y de errores predeterminados para un formulario mediante el punto final REST configurado para invocar un servicio externo. AEM Puede agregar un controlador de error predeterminado y un controlador de error personalizado en un formulario adaptable con un formato de formulario adaptable con un nombre de usuario.
-seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
 keywords: Añadir un controlador de errores personalizado, añadir un controlador de errores predeterminado, añadir un controlador de errores en el formulario, utilizar el servicio de invocación del editor de reglas para añadir un controlador de errores personalizado, configurar el editor de reglas para añadir un controlador de errores personalizado y añadir un controlador de errores personalizado mediante el editor de reglas
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 6d6e74c61b2ecb13e7cc352d5278c40d2677d44d
+exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2331'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
-
 
 # Controladores de errores en formularios adaptables (Componentes principales) {#error-handlers-in-adaptive-form}
 
@@ -171,7 +169,7 @@ Antes de utilizar el controlador de error en un Forms adaptable:
 
 * [Habilitar los componentes principales de formularios adaptables para su entorno](enable-adaptive-forms-core-components.md).
 * Conocimientos básicos para [crear una función personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
-* Instale la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
+* Instalar la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
 
 ## Adición de un controlador de error mediante el Editor de reglas {#add-error-handler-using-rule-editor}
 

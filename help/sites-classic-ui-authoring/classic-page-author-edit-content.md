@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 18%
@@ -79,7 +79,7 @@ Para insertar un componente nuevo:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Tanto en la barra de tareas como en **Insertar nuevo componente** barra de herramientas aparece una lista de los componentes disponibles (tipos de párrafo). Pueden dividirse en varias secciones (por ejemplo, General, Columnas, etc.), que se pueden expandir según sea necesario.
+1. Tanto en la barra de tareas como en **Insertar nuevo componente** barra de herramientas aparece una lista de los componentes disponibles (tipos de párrafo). Se pueden dividir en varias secciones (por ejemplo, General, Columnas, etc.), que se pueden expandir según sea necesario.
 
    Según el entorno de producción, estas opciones pueden diferir. Para obtener información detallada sobre los componentes, consulte [Componentes predeterminados](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,7 +87,7 @@ Para insertar un componente nuevo:
 
 ### Inserción de un componente mediante el buscador de contenido {#inserting-a-component-using-the-content-finder}
 
-También puede agregar un componente nuevo a la página arrastrando un recurso desde el [Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Esto creará automáticamente un nuevo componente del tipo adecuado que contenga el recurso.
+También puede agregar un componente nuevo a la página arrastrando un recurso desde el [Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Esto crea automáticamente un componente del tipo adecuado que contiene el recurso.
 
 Esto es válido para los siguientes tipos de recursos (algunos dependerán del sistema de páginas o párrafos):
 

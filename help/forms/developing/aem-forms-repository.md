@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9109'
+source-wordcount: '9095'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,13 @@ Por ejemplo, considere la siguiente aplicación de Forms denominada *Aplicacione
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-Observe que hay un archivo denominado Loan.xdp ubicado en la carpeta FormsFolder. Para acceder a este diseño de formulario, debe especificar la ruta completa (incluida la versión): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Observe que hay un archivo denominado Loan.xdp en la carpeta FormsFolder. Para acceder a este diseño de formulario, debe especificar la ruta completa (incluida la versión): `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
 >Para obtener información sobre la creación de una aplicación de Forms mediante Workbench, consulte [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-La ruta a un recurso ubicado en el repositorio de AEM Forms es:
+La ruta a un recurso en el repositorio de AEM Forms es:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -50,7 +50,7 @@ Los siguientes valores muestran algunos ejemplos de valores de URI:
 >
 >Puede examinar el repositorio de AEM Forms utilizando un explorador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicio rápido asociados a la sección Uso del repositorio de AEM Forms mediante un explorador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede verlo en un explorador web. (Consulte [Inicio rápido (modo SOAP): Escritura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
-La API del repositorio proporciona una serie de operaciones que puede utilizar para almacenar y recuperar información del repositorio. Por ejemplo, puede obtener una lista de recursos o recuperar recursos específicos almacenados en el repositorio cuando se necesite un recurso como parte del procesamiento de una aplicación.
+La API del repositorio proporciona varias operaciones que puede utilizar para almacenar y recuperar información del repositorio. Por ejemplo, puede obtener una lista de recursos o recuperar recursos específicos almacenados en el repositorio cuando se necesite un recurso como parte del procesamiento de una aplicación.
 
 >[!NOTE]
 >
@@ -305,7 +305,7 @@ Escriba un recurso mediante la API de servicio de repositorio (Java):
 
 1. Escribir el recurso en la carpeta de destino
 
-   Invoque el `ResourceRepositoryClient` del objeto `writeResource` y pasan el URI de la carpeta, así como el `Resource` objeto.
+   Invoque el `ResourceRepositoryClient` del objeto `writeResource` y pasan el URI de la carpeta, y el `Resource` objeto.
 
 **Consulte también**
 
@@ -354,7 +354,7 @@ Escribir un recurso mediante la API del servicio de repositorio (servicio web):
 
 1. Escribir el recurso en la carpeta de destino
 
-   Invoque el `RepositoryServiceService` del objeto `writeResource` y pasan el URI de la carpeta, así como el `Resource` objeto. Aprobado `null` para los otros dos parámetros.
+   Invoque el `RepositoryServiceService` del objeto `writeResource` y pasan el URI de la carpeta, y el `Resource` objeto. Aprobado `null` para los otros dos parámetros.
 
 **Consulte también**
 
@@ -716,7 +716,7 @@ Puede recuperar recursos relacionados para determinar las dependencias entre un 
 
 **Instrucciones de consulta**
 
-A *query* contiene una o más instrucciones unidas lógicamente con condiciones. A *declaración* consta de un operando izquierdo, un operador y un operando derecho. Además, puede especificar el criterio de ordenación que se utilizará para los resultados de búsqueda. El *criterio de ordenación* contiene información equivalente a un SQL `ORDER BY` y se compone de elementos que contienen los atributos en los que se basó la búsqueda, así como un valor que indica si se va a utilizar en orden ascendente o descendente.
+A *query* contiene una o más instrucciones unidas lógicamente con condiciones. A *declaración* consta de un operando izquierdo, un operador y un operando derecho. Además, puede especificar el criterio de ordenación que se utilizará para los resultados de búsqueda. El *criterio de ordenación* contiene información equivalente a un SQL `ORDER BY` y se compone de elementos que contienen los atributos en los que se basó la búsqueda y un valor que indica si se va a utilizar en orden ascendente o descendente.
 
 Puede buscar recursos mediante programación utilizando la API de Java del servicio de repositorio. En este momento, no es posible utilizar la API del servicio web para buscar recursos.
 
@@ -999,7 +999,7 @@ Cree recursos de relación mediante la API del repositorio (servicio web):
 
 Puede bloquear un recurso o un conjunto de recursos para su uso exclusivo por parte de un usuario en particular o para su uso compartido entre más de un usuario. Un bloqueo compartido es una indicación de que algo sucederá con el recurso, pero no impide que otra persona realice acciones con ese recurso. Un bloqueo compartido debe considerarse un mecanismo de señalización. Un bloqueo exclusivo significa que el usuario que bloqueó el recurso va a cambiar el recurso y el bloqueo garantiza que nadie más pueda hacerlo hasta que el usuario ya no necesite acceso al recurso y haya liberado el bloqueo. Si un administrador del repositorio desbloquea un recurso, todos los bloqueos exclusivos y compartidos de ese recurso se eliminarán automáticamente. Este tipo de acción está diseñado para situaciones en las que un usuario ya no está disponible y no ha desbloqueado el recurso.
 
-Cuando un recurso está bloqueado, aparece un icono de bloqueo al ver la pestaña Recursos ubicada en Workbench, como se muestra en la siguiente ilustración.
+Cuando un recurso está bloqueado, aparece un icono de bloqueo al ver la pestaña Recursos en Workbench, como se muestra en la siguiente ilustración.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 

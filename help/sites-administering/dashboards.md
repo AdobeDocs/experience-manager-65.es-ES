@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '829'
 ht-degree: 3%
 
 ---
@@ -32,8 +32,6 @@ AEM Al utilizar la opción, puede administrar una gran cantidad de contenido de 
 ## Administración de tableros {#administering-dashboards}
 
 ### Creación De Un Tablero {#creating-a-dashboard}
-
-Para crear un nuevo panel, siga estos pasos:
 
 1. En el **Herramientas** , haga clic en **Consola de configuración**.
 1. En el árbol, haga doble clic **Tablero**.

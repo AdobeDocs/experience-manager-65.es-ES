@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2008'
 ht-degree: 1%
 
 ---
@@ -488,7 +488,7 @@ Los ejemplos utilizados son:
 >
 >La eliminación no elimina el nodo del modelo.
 
-Al crear un nuevo modelo:
+Al crear un modelo:
 
 * El editor del modelo de flujo de trabajo requiere que los modelos utilicen una estructura de nodos específica debajo de `/var/workflow/models`. El nodo principal del modelo debe ser del tipo `cq:Page` teniendo un `jcr:content` con los siguientes valores de propiedad:
 

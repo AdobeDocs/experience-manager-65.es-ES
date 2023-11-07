@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1525'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Al validar un documento DDX, debe establecer opciones específicas en tiempo de 
 
 Después de crear el cliente de servicio Assembler, hacer referencia al documento DDX y establecer las opciones en tiempo de ejecución, puede invocar el `invokeDDX` para validar el documento DDX. Al validar el documento DDX, puede pasar `null` como parámetro de asignación (este parámetro generalmente almacena los documentos de PDF que el ensamblador necesita para realizar las operaciones especificadas en el documento DDX).
 
-Si la validación falla, se inicia una excepción y el archivo de registro contiene detalles que explican por qué el documento DDX no es válido y se pueden obtener de `OperationException` ejemplo. Una vez pasado el análisis XML básico y la comprobación de esquema, se realiza la validación con respecto a la especificación DDX. Todos los errores ubicados en el documento DDX se especifican en el registro.
+Si la validación falla, se inicia una excepción y el archivo de registro contiene detalles que explican por qué el documento DDX no es válido y se pueden obtener de `OperationException` ejemplo. Una vez pasado el análisis XML básico y la comprobación de esquema, se realiza la validación con respecto a la especificación DDX. Todos los errores que se encuentran en el documento DDX se especifican en el registro.
 
 **Guardar los resultados de validación en un archivo de registro**
 

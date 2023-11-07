@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1873'
-ht-degree: 15%
+source-wordcount: '1869'
+ht-degree: 14%
 
 ---
 
@@ -30,7 +30,7 @@ Para crear una copia de idioma, almacene en déclencheur uno de los siguientes f
 El flujo de trabajo de creación y traducción se utiliza para generar copias de idioma para un idioma concreto por primera vez. El flujo de trabajo ofrece las siguientes opciones:
 
 * Crear solo una estructura.
-* Crear un nuevo proyecto de traducción.
+* Crear un proyecto de traducción.
 * Añadir a un proyecto de traducción existente.
 
 ### Crear solo una estructura {#create-structure-only}
@@ -55,7 +55,7 @@ Utilice la opción **[!UICONTROL Crear solo estructura]** para diseñar una jera
 
    ![revelar en recursos](assets/reveal-in-assets.png)
 
-### Crear un nuevo proyecto de traducción {#create-a-new-translation-project}
+### Crear un proyecto de traducción {#create-a-new-translation-project}
 
 Si utiliza esta opción, los recursos que desea traducir se copian en la raíz del idioma al que desea traducirlo. Según las opciones que elija, se creará un proyecto de traducción para los recursos en la consola Proyectos. Según la configuración, el proyecto de traducción se puede iniciar manualmente o se ejecuta automáticamente en cuanto se crea el proyecto de traducción.
 
@@ -164,10 +164,10 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 
 Ejecute este flujo de trabajo para traducir cualquier conjunto adicional de recursos e incluirlos en una copia de idioma para una configuración regional determinada. En este caso, los recursos traducidos se añaden a la carpeta de destino que ya contiene los recursos traducidos anteriormente. Según la opción de opciones, se crea un proyecto de traducción o se actualiza uno existente para los nuevos recursos. El flujo de trabajo Actualizar copias de idioma incluye las siguientes opciones:
 
-* Crear un nuevo proyecto de traducción
+* Crear un proyecto de traducción
 * Añadir a un proyecto de traducción existente
 
-### Crear un nuevo proyecto de traducción {#create-a-new-translation-project-1}
+### Crear un proyecto de traducción {#create-a-new-translation-project-1}
 
 Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de recursos para el que desea actualizar una copia de idioma.
 

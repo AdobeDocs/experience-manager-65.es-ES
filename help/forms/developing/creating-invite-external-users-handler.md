@@ -3,9 +3,9 @@ title: Crear un controlador de usuarios externos de invitación
 description: Obtenga información sobre cómo crear un controlador de usuarios externos de invitación. Permite al servicio Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1132'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Para desarrollar un controlador de usuarios externos de invitación, debe realiz
 
 ## Configuración del entorno de desarrollo {#setting-up-development-environment}
 
-Para configurar el entorno de desarrollo, debe crear un nuevo proyecto Java, como un proyecto Eclipse. La versión de Eclipse compatible es `3.2.1` o más tarde.
+Para configurar el entorno de desarrollo, debe crear un proyecto Java, como un proyecto Eclipse. La versión de Eclipse compatible es `3.2.1` o más tarde.
 
 La SPI de Rights Management requiere lo siguiente `edc-server-spi.jar` que se establecerá en la ruta de clase del proyecto. Si no hace referencia a este archivo JAR, no puede utilizar el SPI de Rights Management en su proyecto Java. Este archivo JAR se instala con el SDK de AEM Forms en `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` carpeta.
 

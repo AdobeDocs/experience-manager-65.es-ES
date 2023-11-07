@@ -10,10 +10,10 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '901'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Un XDP se puede procesar como un formulario PDF o HTML. Las nuevas funciones per
 
 ### Nuevo servicio de formularios HTML {#new-html-forms-service}
 
-El nuevo servicio de formularios HTML aprovecha la nueva función de Forms para admitir el procesamiento de formularios XDP como HTML. El nuevo servicio de formularios HTML expone los siguientes métodos:
+El nuevo servicio Forms de HTML utiliza la nueva función de Forms para admitir el procesamiento de formularios XDP como HTML. El nuevo servicio de formularios HTML expone los siguientes métodos:
 
 ```java
 /*

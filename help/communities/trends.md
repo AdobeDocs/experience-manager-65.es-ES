@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ## Introducción {#introduction}
 
-El `Community Activity List` Este componente permite agregar información de tendencias sobre las publicaciones y las vistas de los miembros, así como publicaciones y vistas del contenido.
+El `Community Activity List` Este componente permite agregar información de tendencias sobre las publicaciones y las vistas de los miembros, así como las publicaciones y las vistas del contenido.
 
 El documento describe:
 

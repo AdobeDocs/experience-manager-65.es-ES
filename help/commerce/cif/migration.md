@@ -2,7 +2,7 @@
 title: AEM Migración al complemento Commerce integration framework CIF de la ()
 description: AEM Cómo migrar al complemento de Commerce integration framework CIF de () desde una versión antigua.
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 4%
@@ -35,4 +35,4 @@ CIF Si utiliza el modelo de catálogo con la versión clásica de los productos,
 
 ## Interacción de datos y compras no almacenables en caché
 
-Las solicitudes del lado del cliente para datos e interacciones no almacenables en caché (por ejemplo, complementos al carro de compras o búsquedas) deben ir directamente al extremo de comercio (ya sea la solución de comercio o la capa de integración) a través de CDN/Dispatcher. AEM Elimine todas las llamadas en las que solo haya un proxy en el que se haya realizado la.
+Las solicitudes del lado del cliente para datos e interacciones no almacenables en caché (por ejemplo, complementos al carro de compras, búsquedas) deben ir directamente al extremo de comercio (ya sea la solución de comercio o la capa de integración) a través de CDN/Dispatcher. AEM Elimine todas las llamadas en las que solo haya un proxy en el que se haya realizado la.

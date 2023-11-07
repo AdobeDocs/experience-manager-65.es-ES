@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4734'
-ht-degree: 93%
+source-wordcount: '4725'
+ht-degree: 92%
 
 ---
 
@@ -68,7 +68,7 @@ Una vez configurado el proyecto de AEM, defina una estrategia para crear y perso
    * **Plantilla de formulario XFA**: es un modelo de formulario ideal si tiene inversiones en formularios HTML5 basados en XFA. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
    * **Modelo de datos de formulario**: es un modelo de formulario preferido si desea integrar sistemas backend como bases de datos, servicios web y perfiles de usuario de AEM para rellenar previamente formularios adaptables y escribir datos de formulario enviados de nuevo en los sistemas backend. Un editor del Modelo de datos de formulario permite definir y configurar entidades y servicios en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Para obtener más información, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
-Es importante elegir cuidadosamente el modelo de datos que no solo se adapte a sus necesidades, sino que amplíe sus inversiones existentes en recursos XFA y XSD, si las hay. Se recomienda utilizar el modelo XSD para crear plantillas de formulario porque el XML generado contiene datos según el XPATH definido por el esquema. El uso del modelo XSD como opción predeterminada para el modelo de datos de formulario también es útil porque desvincula el diseño de formulario del sistema backend que procesa y consume datos y mejora el rendimiento del formulario debido a que se asigna de uno a uno el campo de formulario. Además, el BindRef del campo puede convertirse en el XPATH de su valor de datos en XML.
+Es importante elegir cuidadosamente el modelo de datos que no solo se adapte a sus necesidades, sino que amplíe sus inversiones existentes en recursos XFA y XSD, si las hay. Utilice el modelo XSD para crear plantillas de formulario porque el XML generado contiene datos según el XPATH definido por el esquema. El uso del modelo XSD como opción predeterminada para el modelo de datos de formulario también es útil porque desvincula el diseño de formulario del sistema backend que procesa y consume datos y mejora el rendimiento del formulario debido a que se asigna de uno a uno el campo de formulario. Además, el BindRef del campo puede convertirse en el XPATH de su valor de datos en XML.
 
 Para obtener más información, consulte [Crear un formulario adaptable](/help/forms/using/creating-adaptive-form.md).
 
@@ -103,7 +103,7 @@ Las plantillas de formulario también se pueden cargar desde paquetes de formula
 * El modo de ejecución **nosamplecontent** solo se recomienda para el autor y no para los nodos de publicación.
 * La creación de recursos, como formularios adaptables, temáticas, plantillas o configuraciones de nube, se realiza solo sobre nodos de autor, que se pueden publicar en los nodos configurados de publicación.
 Para obtener más información, consulte [Publicar y cancelar la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=es)
-* Se necesita el paquete de complementos de Forms para que la creación y la publicación admitan las operaciones del servicio de documentos; por lo tanto, puede considerarse como una dependencia.
+* El paquete de complementos de Forms es necesario para que la creación y la publicación admitan las operaciones del servicio de documentos; por lo tanto, puede considerarse como una dependencia.
 Si solo desea plantillas de muestra, temáticas y paquetes de DOR relacionados con Forms, puede descargarlos desde [paquetes aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=es).
 
 Para obtener más información, consulte las prácticas recomendadas en [Introducción a la creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md).
@@ -187,7 +187,7 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
 
 ### Trabajar con temáticas {#working-with-themes}
 
-La adaptación para las temáticas le permite crear estilos reutilizables que se pueden aplicar en todos los formularios para lograr un aspecto y un estilo coherentes. Se recomienda utilizar Temáticas para definir el estilo de los componentes y paneles del formulario. Algunas prácticas recomendadas relacionadas con los temáticas son las siguientes:
+La adaptación para las temáticas le permite crear estilos reutilizables que se pueden aplicar en todos los formularios para lograr un aspecto y un estilo coherentes. Utilice Temáticas para definir el estilo de los componentes y paneles del formulario. Algunas prácticas recomendadas relacionadas con los temáticas son las siguientes:
 
 * Utilizar la biblioteca de recursos para aplicar rápidamente estilos de texto, fondo e imágenes. Cuando se agrega un estilo en la biblioteca de recursos, estará disponible para otras temáticas y para el modo de estilo de la interfaz de usuario del editor de formularios.
 * Aplique la configuración global como fuente y fondo de página mediante el selector de nivel de página.
@@ -241,7 +241,7 @@ Los formularios adaptables requieren enviar acciones para procesar los datos esp
 * Puede escribir una acción de envío personalizada si las acciones de envío predeterminadas no cumplen con su caso de uso. Para obtener más información, consulte [Escribir una acción de envío personalizada para formularios adaptables](/help/forms/using/custom-submit-action-form.md).
 * Incluya validaciones del lado del servidor para evitar el envío de datos no válidos.
 
-Puede aprovechar la experiencia de varias firmas de Adobe Sign en los formularios adaptables. Tenga en cuenta lo siguiente al configurar Adobe Sign en formularios adaptables. Para obtener más información, consulte [Usar Adobe Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
+Puede utilizar la experiencia de varias firmas de Adobe Sign en formularios adaptables. Tenga en cuenta lo siguiente al configurar Adobe Sign en formularios adaptables. Para obtener más información, consulte [Usar Adobe Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
 
 * El formulario adaptable habilitado para Adobe Sign solo se envía después de que todos los firmantes hayan firmado el formulario. Forms aparecerá en estado de firma pendiente hasta que todos los firmantes firmen el formulario.
 * Puede configurar la experiencia de firma en el formulario o redirigir a los firmantes a una página de firma en el envío.

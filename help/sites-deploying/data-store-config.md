@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3549'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ AEM El almacén de nodos de documentos es la base de la implementación de Mongo
 
 * `changesSize`: Tamaño en MB de la colección limitada utilizada en Mongo para almacenar en caché la salida de diferencia. El valor predeterminado es `256`
 
-* `customBlobStore`: Valor booleano que indica que se utilizará un almacén de datos personalizado. El valor predeterminado es `false`.
+* `customBlobStore`: Valor booleano que indica que se utiliza un almacén de datos personalizado. El valor predeterminado es `false`.
 
 El siguiente es un ejemplo `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` archivo:
 

@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2707'
 ht-degree: 2%
 
 ---
 
 # Cómo utilizar la herramienta VLT {#how-to-use-the-vlt-tool}
 
-La herramienta Jackrabbit FileVault (VLT) es una herramienta desarrollada por [La Fundación Apache](https://www.apache.org/) AEM que asigna el contenido de una instancia de Jackrabbit/a su sistema de archivos. La herramienta VLT tiene funciones similares a las del cliente del sistema de control de fuentes (como un cliente de Subversion (SVN)), proporcionando operaciones normales de check-in, check-out y gestión, así como opciones de configuración para una representación flexible del contenido del proyecto.
+La herramienta Jackrabbit FileVault (VLT) es una herramienta desarrollada por [La Fundación Apache](https://www.apache.org/) AEM que asigna el contenido de una instancia de Jackrabbit/a su sistema de archivos. La herramienta VLT tiene funciones similares a las del cliente del sistema de control de código fuente (como un cliente de Subversion (SVN)), proporcionando operaciones normales de check-in, check-out y administración, y opciones de configuración para una representación flexible del contenido del proyecto.
 
-La herramienta VLT se ejecuta desde la línea de comandos. En este documento se describe cómo utilizar la herramienta, incluido cómo empezar y obtener ayuda, así como una lista de todos los [comandos](#vlt-commands) y disponibles [opciones](#vlt-global-options).
+La herramienta VLT se ejecuta desde la línea de comandos. En este documento se describe cómo utilizar la herramienta, incluido cómo empezar y obtener ayuda, y una lista de todos los [comandos](#vlt-commands) y disponibles [opciones](#vlt-global-options).
 
 ## Conceptos y arquitectura {#concepts-and-architecture}
 
@@ -440,7 +440,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf para vínculos de revisión (nombre, id), por ejemplo `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf para vínculos de revisión (nombre, id), por ejemplo, `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | resultado detallado |
 | `-q (--quiet)` | imprime lo menos posible |
 | `<localPaths> [<localPaths> ...]` | ruta local |
@@ -781,7 +781,7 @@ El servicio de sincronización de Vault se utiliza para sincronizar el contenido
 
 >[!NOTE]
 >
->El servicio de sincronización de Vault es una herramienta de desarrollo y se desaconseja encarecidamente utilizarlo en un sistema productivo. Tenga en cuenta también que el servicio solo se puede sincronizar con el sistema de archivos local y no se puede utilizar para el desarrollo remoto.
+>El servicio de sincronización de Vault es una herramienta de desarrollo y se desaconseja encarecidamente utilizarlo en un sistema productivo. Además, el servicio solo se puede sincronizar con el sistema de archivos local y no se puede utilizar para el desarrollo remoto.
 
 ### Instalación del servicio mediante vlt {#installing-the-service-using-vlt}
 
@@ -854,7 +854,7 @@ Una vez que el servicio se está ejecutando, se puede configurar con los siguien
 >
 >El servicio se puede configurar con la consola web o con un `sling:OsgiConfig` nodo (con el nombre `com.day.jcr.sync.impl.VaultSyncServiceImpl`) en el repositorio.
 >
->AEM Al trabajar con los servicios de correo electrónico, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
+>AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
 
 #### Sincronizar configuración de carpeta {#sync-folder-configuration}
 

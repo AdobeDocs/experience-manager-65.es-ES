@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1681'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ a una nueva ubicación en:
 
 Debido a esto, se requieren ajustes manuales después de una actualización para que los formularios sigan funcionando.
 
-Esto se aplica al nuevo Forms de búsqueda, así como al Forms predeterminado que se ha personalizado.
+Esto se aplica a los nuevos Forms de búsqueda y Forms predeterminados que se han personalizado.
 
 Para obtener más información, consulte la documentación sobre [Facetas de búsqueda](/help/assets/search-facets.md).
 

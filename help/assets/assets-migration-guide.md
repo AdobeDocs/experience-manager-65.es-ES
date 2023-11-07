@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1795'
 ht-degree: 8%
 
 ---
@@ -55,13 +55,13 @@ Es posible que ya tenga una taxonomía de etiquetas configurada que esté aplica
 
 ### Ingesta de recursos {#ingesting-assets}
 
-El rendimiento y la estabilidad son preocupaciones importantes al ingerir recursos en el sistema. Dado que está cargando una gran cantidad de datos en el sistema, debe asegurarse de que el sistema funciona tan bien como pueda para minimizar la cantidad de tiempo necesaria y evitar sobrecargar el sistema, lo que puede provocar un bloqueo del sistema, especialmente en sistemas que ya están en producción.
+El rendimiento y la estabilidad son preocupaciones importantes al ingerir recursos en el sistema. Dado que está cargando una gran cantidad de datos en el sistema, debe asegurarse de que el sistema funciona y de que puede minimizar la cantidad de tiempo necesaria y evitar sobrecargar el sistema, lo que puede provocar un bloqueo del sistema, especialmente en sistemas que ya están en producción.
 
 Existen dos métodos para cargar los recursos en el sistema: un método basado en push con HTTP o un método basado en pull con las API de JCR.
 
 #### Enviar a través de HTTP {#pushing-through-http}
 
-El equipo de Managed Services del Adobe utiliza una herramienta llamada Glutton para cargar datos en entornos de clientes. Glutton es una pequeña aplicación Java que carga todos los recursos de un directorio a otro en un [!DNL Experience Manager] implementación. En lugar de Glotón, también puede utilizar herramientas como Perl scripts para publicar los recursos en el repositorio.
+El equipo de Managed Services de Adobe utiliza una herramienta llamada Glutton para cargar datos en entornos de clientes. Glutton es una pequeña aplicación Java que carga todos los recursos de un directorio a otro en un [!DNL Experience Manager] implementación. En lugar de Glotón, también puede utilizar herramientas como Perl scripts para publicar los recursos en el repositorio.
 
 Existen dos desventajas principales al utilizar el método de forzar https:
 

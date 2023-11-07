@@ -1,18 +1,14 @@
 ---
 title: Prueba del diseño interactivo en We.Retail
-seo-title: Trying out Responsive Layout in We.Retail
 description: Aprenda a probar el diseño interactivo en Adobe Experience Manager mediante We.Retail.
-seo-description: null
-uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '251'
 ht-degree: 6%
 
 ---

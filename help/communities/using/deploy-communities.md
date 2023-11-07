@@ -3,7 +3,7 @@ title: Implementación de comunidades
 description: Cómo implementar AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 3%
@@ -150,7 +150,7 @@ Para instalar los paquetes visibles en `adobeaemcloud.com` AEM en una instancia 
 * Seleccione el **Assets** pestaña
 * Seleccionar **descargar en disco**
 
-AEM En la instancia local de, utilice un Administrador de paquetes (por ejemplo, ) [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)AEM ), para cargar en el repositorio local de paquetes de.
+AEM En la instancia local de, utilice un Administrador de paquetes (por ejemplo, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)AEM ), para cargar en el repositorio local de paquetes de.
 
 AEM Como alternativa, acceder al paquete utilizando Package Share desde la instancia local de la aplicación (por ejemplo, ). [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), el `Download` AEM El botón se descarga en el repositorio de paquetes de la instancia de la instancia local de.
 

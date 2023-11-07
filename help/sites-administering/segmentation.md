@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 78%
+source-wordcount: '1774'
+ht-degree: 75%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->En esta sección se describe la configuración de la segmentación al utilizar ContextHub. Si utiliza la funcionalidad de Client Context, consulte la documentación pertinente de [configuración de la segmentación para Client Context](/help/sites-administering/campaign-segmentation.md).
+>En esta sección se describe la configuración de la segmentación al utilizar ContextHub. Si utiliza la funcionalidad de Client Context, consulte la documentación pertinente para [configuración de la segmentación para Client Context](/help/sites-administering/campaign-segmentation.md).
 >
 
 La segmentación es una consideración clave al crear una campaña. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener información sobre cómo funciona la segmentación y los términos clave.
 
-En función de la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que quiera lograr, deberá definir los segmentos y las estrategias necesarios para el contenido de destino.
+Según la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que desee lograr, debe definir los segmentos y las estrategias necesarios para el contenido de destino.
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Personalización](/help/sites-authoring/personalization.md) de la página web. Las [Actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
@@ -34,13 +34,13 @@ AEM Le permite personalizar fácilmente la experiencia de sus usuarios. También
 
 ## Acceso a segmentos {#accessing-segments}
 
-El [Audiencias](/help/sites-authoring/managing-audiences.md) La consola de se utiliza para administrar segmentos para ContextHub o Client Context, así como audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
+El [Audiencias](/help/sites-authoring/managing-audiences.md) La consola de se utiliza para administrar segmentos para ContextHub o Client Context y audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
 
 Para acceder a sus segmentos, debe seleccionar su configuración. En la navegación global, seleccione **Navegación > Personalización > Audiencias**. Verá las configuraciones disponibles:
 
 ![Audiencias: configuraciones](assets/segmentation-access-confs.png)
 
-Seleccione la configuración para ver los segmentos, por ejemplo WKND Site:
+Seleccione la configuración para ver los segmentos como, por ejemplo, WKND Site:
 
 ![Audiencias - Segmentos](assets/segmentation-access-segments.png)
 
@@ -141,7 +141,7 @@ Para definir el nuevo segmento:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento, así como un valor de ampliación si es necesario y, a continuación, pulse o haga clic en **Crear**.
+1. En el **Nuevo segmento de ContextHub**, escriba un título para el segmento y un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -323,7 +323,7 @@ O si no se resuelve:
 
 Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido de destino y **Actividades** y **Experiencias** relacionadas.
 
-Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento de grupo de edad principal anterior, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad, consulte la [documentación sobre la creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento de grupo de edad principal anterior, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad de, consulte la [documentación sobre creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
 1. En el modo de edición de una página en la que ha configurado contenido de destino, puede ver que el contenido se orienta mediante un icono de flecha en el contenido.
 

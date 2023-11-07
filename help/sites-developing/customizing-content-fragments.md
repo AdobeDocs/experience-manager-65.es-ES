@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2793'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ La administración de fragmentos de contenido (CFM) forma parte de AEM Assets co
 
 * Los fragmentos de contenido son recursos.
 * Utilizan la funcionalidad existente de Assets.
-* Están totalmente integrados con los recursos (Admin Console, etc.).
+* Están totalmente integrados con Assets (Admin Consoles, etc.).
 
 #### Asignación de fragmentos de contenido estructurados a los recursos {#mapping-structured-content-fragments-to-assets}
 
@@ -138,7 +138,7 @@ AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de re
 * Además, se puede seleccionar un rango de párrafos para restringir la salida; por ejemplo, esto se puede utilizar para la salida de varias columnas.
 * El componente permite [contenido intermedio](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * Aquí el componente le permite colocar otros recursos (imágenes, etc.) entre los párrafos del fragmento al que se hace referencia.
+   * Aquí, el componente le permite colocar otros recursos (imágenes, etc.) entre los párrafos del fragmento al que se hace referencia.
    * Para el contenido intermedio, debe:
 
       * tenga en cuenta la posibilidad de referencias inestables; el contenido intermedio (añadido al crear una página) no tiene relación fija con el párrafo al que se coloca junto, insertando un nuevo párrafo (en el editor de fragmentos de contenido) antes de que la posición del contenido intermedio pueda perder la posición relativa
@@ -254,7 +254,7 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
 
 * **Plantilla de fragmento** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Uso `FragmentTemplate.createFragment()` para crear un nuevo fragmento.
+  Uso `FragmentTemplate.createFragment()` para crear un fragmento.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -492,9 +492,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Ejemplo: Creación de un nuevo fragmento de contenido {#example-creating-a-new-content-fragment}
+### Ejemplo: Creación de un fragmento de contenido {#example-creating-a-new-content-fragment}
 
-Para crear un nuevo fragmento de contenido mediante programación, debe utilizar:
+Para crear un fragmento de contenido mediante programación, debe utilizar:
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

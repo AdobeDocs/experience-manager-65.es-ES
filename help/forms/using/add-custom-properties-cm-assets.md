@@ -11,10 +11,10 @@ discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4435'
-ht-degree: 98%
+source-wordcount: '4428'
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
 Complete los siguientes pasos para agregar una propiedad personalizada a todos los tipos de recursos y cartas:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada css con una ruta o estructura similares a la carpeta css (ubicada en la carpeta clave), para ello, siga los siguientes pasos:
+1. En la carpeta de aplicaciones, cree una carpeta denominada css con una ruta o estructura similares a la carpeta css (en la carpeta ccrui), para hacerlo, siga estos pasos:
 
    1. Haga clic con el botón derecho en la carpeta Elementos en la siguiente ruta y seleccione **Nodo de superposición**:
 
@@ -189,7 +189,7 @@ Este escenario muestra cómo se puede agregar una pestaña personalizada, Destin
 Con el siguiente procedimiento, puede agregar una pestaña con un campo a todos los recursos:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada cmmetadataproperties con una ruta o estructura similares a la carpeta cmmetadataproperties (ubicada en la carpeta de contenido), para hacerlo, siga estos pasos:
+1. En la carpeta de aplicaciones, cree una carpeta denominada cmmetadataproperties con una ruta o estructura similares a la carpeta cmmetadataproperties (en la carpeta de contenido), para hacerlo, siga estos pasos:
 
    1. Haga clic con el botón derecho en la carpeta cmmetadataproperties en la siguiente ruta y seleccione **Nodo de superposición**:
 
@@ -846,7 +846,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 ## Cambie la vista predeterminada de la página de búsqueda {#change-default-view-of-the-search-page}
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada Lista con una ruta/estructura similar a la carpeta Lista ubicada en /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
+1. En la carpeta de aplicaciones, cree una carpeta denominada Lista con una ruta/estructura similar a la carpeta Lista en /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
 
    1. Haga clic con el botón derecho en la carpeta Elementos en la siguiente ruta y seleccione **Nodo de superposición**:
 
@@ -890,7 +890,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 >Estos pasos cambian la vista predeterminada de todas las consolas, como Formularios y documentos, Recursos y Sites.
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada Lista con una ruta o estructura similares a la carpeta Lista ubicada en la siguiente ruta:
+1. En la carpeta de aplicaciones, cree una carpeta denominada Lista con una ruta o estructura similares a la carpeta Lista de:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
@@ -933,7 +933,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 
 Para mostrar u ocultar las propiedades personalizadas, complete los siguientes pasos:
 
-1. En el nodo de propiedad personalizada, como geographicallocation, cree un nuevo nodo con el nombre “granite:rendercondition” del tipo “nt:unstructured”.
+1. En el nodo de propiedad personalizada, como geographicallocation, cree un nodo con el nombre &quot;granite:rendercondition&quot; del tipo &quot;nt:unstructured&quot;.
 1. Agregue la siguiente propiedad al nodo y haga clic en **Guardar todo**:
 
    <table>

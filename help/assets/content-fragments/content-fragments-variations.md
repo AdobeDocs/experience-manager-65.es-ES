@@ -4,9 +4,9 @@ description: AEM Comprenda de qué forma las variaciones pueden hacer que el con
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2388'
 ht-degree: 61%
 
 ---
@@ -183,7 +183,7 @@ Si el modelo de fragmento de contenido contiene referencias a fragmento, es posi
 La opción **Editar fragmento de contenido** abre ese fragmento en una nueva pestaña de ventana.
 
 <!--
-The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+The option **Edit Content Fragment** opens that fragment in a new editor tab (within the same browser tab).
 
 Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
 

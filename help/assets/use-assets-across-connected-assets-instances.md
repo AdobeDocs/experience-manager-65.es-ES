@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3949'
 ht-degree: 17%
@@ -32,7 +32,7 @@ La funcionalidad Recursos conectados admite los casos de uso anteriores mediante
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
-Al editar páginas en [!UICONTROL Editor de página] como destino de destino, los creadores pueden buscar, examinar e incrustar recursos sin problemas desde un entorno diferente [!DNL Assets] implementación que actúa como origen de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con [!DNL Sites] con otra implementación de [!DNL Experience Manager] con [!DNL Assets] capacidad. Los creadores de sitios también pueden utilizar imágenes de Dynamic Media en las páginas web de su sitio a través de Recursos conectados y aprovechar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
+Al editar páginas en [!UICONTROL Editor de página] como destino de destino, los creadores pueden buscar, examinar e incrustar recursos sin problemas desde un entorno diferente [!DNL Assets] implementación que actúa como origen de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con [!DNL Sites] con otra implementación de [!DNL Experience Manager] con [!DNL Assets] capacidad. Los creadores del sitio también pueden utilizar imágenes de Dynamic Media en las páginas web de su sitio a través de Recursos conectados y utilizar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
 
 Para el [!DNL Sites] Para los creadores, los recursos remotos están disponibles como recursos locales de solo lectura. La funcionalidad admite la búsqueda y el acceso ininterrumpidos a recursos remotos en el Editor del sitio. Para cualquier otro caso de uso que requiera que el cuerpo de recursos completo esté disponible en Sites, considere migrar los recursos de forma masiva en lugar de utilizar Recursos conectados. Consulte [Guía de migración de Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -145,7 +145,7 @@ Puede comprobar la conectividad entre las configuraciones [!DNL Sites] implement
 ## Uso de recursos de Dynamic Media {#dynamic-media-assets}
 
 
-Con Recursos conectados, puede utilizar recursos de imagen procesados por [!DNL Dynamic Media] desde la implementación remota de DAM en páginas de Sites y aproveche las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
+Con Recursos conectados, puede utilizar recursos de imagen procesados por [!DNL Dynamic Media] desde la implementación remota de DAM en páginas de Sites y utilice las funcionalidades de Dynamic Media, como los ajustes preestablecidos de recorte inteligente y de imagen.
 
 Para usar [!DNL Dynamic Media] con recursos conectados:
 

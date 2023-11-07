@@ -2,10 +2,10 @@
 title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método de GET HTTP y la respuesta se puede almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 90%
+source-wordcount: '1422'
+ht-degree: 88%
 
 ---
 
@@ -197,7 +197,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Donde `PERSISTENT_PATH` es una ruta abreviada donde se guarda la consulta persistente.
 
-1. Por ejemplo, `wknd` es el nombre de configuración y `plain-article-query` es el nombre de la consulta persistente. Para ejecutar la consulta:
+1. Por ejemplo, `wknd` es el nombre de configuración y `plain-article-query`, el nombre de la consulta persistente. Para ejecutar la consulta:
 
    ```shell
    $ curl -X GET \
@@ -397,10 +397,10 @@ Las consultas persistentes se pueden integrar en [Paquetes de AEM](/help/sites-a
 Para crear un paquete, haga lo siguiente:
 
 1. Vaya a **Herramientas** > **Implementación** > **Paquetes**.
-1. Cree un nuevo paquete tocando **Crear paquete**. Se abre un cuadro de diálogo para definir el paquete.
+1. Cree un paquete tocando **Crear paquete**. Se abrirá un cuadro de diálogo para definir el paquete.
 1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
 1. Escriba un número de versión como “1.0”.
-1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para la configuración `wknd` la ruta completa será `/conf/wknd/settings/graphql/persistentQueries`.
+1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para `wknd` configuración la ruta completa será `/conf/wknd/settings/graphql/persistentQueries`.
 1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
 1. Toque el botón **Generar** en la definición del paquete recién creada.
 

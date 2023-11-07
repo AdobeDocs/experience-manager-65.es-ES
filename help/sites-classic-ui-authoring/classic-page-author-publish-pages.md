@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 3%
+source-wordcount: '1035'
+ht-degree: 9%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Después de crear y revisar el contenido en el entorno de creación, debe publicarlo en su sitio web público (el entorno de publicación).
 
-Esto se conoce como publicación de una página. Cuando desee eliminar una página del entorno de publicación, se denomina cancelación de publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que la elimine.
+Es lo que se denomina publicar una página. Quitar una página del entorno de publicación, se denomina cancelar la publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que se elimine.
 
 También puede publicar una página (o cancelar su publicación) inmediatamente o en un momento posterior predefinido.
 
@@ -40,7 +40,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 
 >[!NOTE]
 >
->Si no tiene los privilegios necesarios para publicar una página específica:
+>Si no dispone de los privilegios necesarios para publicar una página específica:
 >
 >* Se activará un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
 >* Se mostrará un mensaje (durante un corto periodo de tiempo) para notificarle esto.
@@ -78,7 +78,7 @@ Puede activar páginas en la consola Sitios web. Después de abrir una página y
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. AEM WCM activa el contenido seleccionado. La página o páginas publicadas aparecen en la [Consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado en verde) con información sobre quién activó el contenido, así como la fecha y la hora de activación.
+1. AEM WCM activa el contenido seleccionado. La página o páginas publicadas aparecen en la [Consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado en verde) con información sobre quién activó el contenido y la fecha y hora de activación.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 

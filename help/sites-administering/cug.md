@@ -1,20 +1,16 @@
 ---
 title: Creación de un grupo de usuarios cerrado
-seo-title: Creating a Closed User Group
 description: Obtenga información sobre cómo crear un grupo de usuarios cerrado.
-seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
-uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 2%
+source-wordcount: '747'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +50,7 @@ Para crear un grupo de usuarios cerrado:
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Pulse el botón **Crear** en la esquina superior derecha, para crear un nuevo grupo.
+1. Pulse el botón **Crear** en la esquina superior derecha, para crear un grupo.
 1. Asigne un nombre al nuevo grupo. Por ejemplo, `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
@@ -82,7 +78,7 @@ Para aplicar el CUG a una o varias páginas:
    1. Activar el **Activar** tickbox.
 
    1. Añada la ruta a su **Página de inicio**.
-Es opcional; si se deja en blanco, se utilizará la página de inicio de sesión estándar.
+Es opcional; si se deja en blanco, se utiliza la página de inicio de sesión estándar.
 
    ![CUG añadido](assets/cug-authentication-requirement.png)
 
@@ -96,7 +92,7 @@ Es opcional; si se deja en blanco, se utilizará la página de inicio de sesión
    >
    >Para obtener más información, consulte [esta página](closed-user-groups.md#aem-livecopy).
 
-1. El **Editar grupo de usuarios cerrado** se abrirá. Aquí puede buscar y seleccionar su CUG y confirmar la selección del grupo con **Guardar**.
+1. El **Editar grupo de usuarios cerrado** se abre. Aquí puede buscar y seleccionar su CUG y confirmar la selección del grupo con **Guardar**.
 
    El grupo se agregará a la lista; por ejemplo, el grupo **cug_access**.
 

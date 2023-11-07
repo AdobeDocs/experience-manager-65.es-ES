@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado y po
 
 ## Entrega de contenido de pila completa {#full-stack}
 
-Desde que han surgido los sistemas de administración de contenido (CMS) a gran escala, fáciles de usar, las organizaciones los han aprovechado como una ubicación central que permite administrar mensajes, marcas y comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
+Desde que han surgido los sistemas de administración de contenido (CMS) a gran escala y fáciles de usar, las organizaciones los han utilizado como una ubicación central que permite administrar los mensajes, la promoción de la marca y las comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
 
 ![El CMS de pila completa clásico](assets/full-stack.png)
 
@@ -56,13 +56,13 @@ Los usuarios esperan que haya participación independientemente de la plataforma
 
 El HEAD de cualquier sistema es generalmente el procesador de salida de dicho sistema, normalmente en forma de GUI u otra salida gráfica.
 
-Por ejemplo, es probable que un servidor sin periféricos esté sentado en una estantería en una sala de servidores en algún lugar y no tenga un monitor conectado. Para acceder a él, debe conectarse de forma remota. En este caso, el monitor es la cabeza, ya que se encarga de procesar el output del servidor. Usted, como consumidor del servicio, proporcione su propio monitor cuando se conecte de forma remota a él.
+Un servidor sin encabezado, por ejemplo, se encuentra probablemente en un rack en una sala de servidores en algún lugar y no tiene un monitor conectado. Para acceder a él, debe conectarse de forma remota. En este caso, el monitor es la cabeza, ya que se encarga de procesar el output del servidor. Usted, como consumidor del servicio, proporcione su propio monitor cuando se conecte de forma remota a él.
 
 Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y continúa entregándolo a los consumidores. Sin embargo, al entregar únicamente **contenido** de forma estandarizada, un CMS sin encabezado omite el procesamiento de salida final, dejando la **presentación** del contenido al servicio que lo consume.
 
 ![CMS sin encabezado](assets/headless-cms.png)
 
-Los servicios que consumen, ya sean experiencias AR, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., reciben contenido del CMS sin encabezado y proporcionan su propia representación. Se ocupan de proporcionar sus propios HEADS para su contenido.
+Los servicios de consumo, ya sean experiencias de RA, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., incorporan contenido del CMS sin encabezado y proporcionan su propio procesamiento. Se ocupan de proporcionar sus propios HEADS para su contenido.
 
 Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicho procesamiento.
 
@@ -84,7 +84,7 @@ Sigue siendo necesario contar con API de REST sólidas. Sin embargo, las solicit
 
 La entrega de contenido sin encabezado suele utilizar las API de GraphQL. GraphQL permite una transferencia sin estado similar, pero permite consultas más específicas, reduce el número total de consultas necesarias y mejora el rendimiento. Es habitual ver que las soluciones utilizan una mezcla de REST y GraphQL, eligiendo esencialmente la mejor herramienta para el trabajo en cuestión.
 
-Independientemente de cuál sea su API elegida, al definir un sistema sin encabezado basado en API comunes, puede aprovechar el explorador más reciente y otras tecnologías web, como aplicaciones web progresivas (PWA). Las API crean una interfaz estándar que es fácilmente ampliable y adaptable.
+Independientemente de cuál sea su API elegida, al definir un sistema sin encabezado basado en API comunes, puede utilizar el explorador más reciente y otras tecnologías web, como aplicaciones web progresivas (PWA). Las API crean una interfaz estándar que es fácilmente ampliable y adaptable.
 
 Normalmente, el contenido se representa en el lado del cliente. Esto suele significar que alguien llama a su contenido en un dispositivo móvil, su CMS envía el contenido y, a continuación, el dispositivo móvil (el cliente) es responsable de procesar el contenido que ha servido. Si el dispositivo es antiguo o lento, la experiencia digital también es lenta.
 
@@ -96,7 +96,7 @@ El contenido sin encabezado abre un mundo de flexibilidad para ofrecer sus exper
 
 Tener muchos canales diferentes puede significar que cada uno tiene sus propios sistemas de presentación. Aunque todas consumen el mismo contenido a través de las mismas API, la experiencia puede ser diferente debido a las diferentes presentaciones. Se debe prestar atención y atención a garantizar la coherencia de la experiencia del cliente.
 
-Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y aprovechar componentes de diseño reutilizables, así como marcos abiertos y establecidos del lado del cliente, se pueden asegurar experiencias coherentes, pero esto debe planificarse.
+Mediante la implementación de sistemas de diseño cuidadosos, el uso compartido de bibliotecas de patrones y el uso de componentes de diseño reutilizables y marcos de trabajo del lado del cliente establecidos y abiertos, se pueden garantizar experiencias coherentes, pero esto debe planificarse.
 
 ## El futuro es el contenido sin encabezado y es ahora {#future}
 
@@ -110,7 +110,7 @@ A medida que continúe con este recorrido para desarrolladores, aprenderá cómo
 
 Como líder del sector en la administración de experiencias digitales, Adobe se da cuenta de que la solución ideal a los desafíos del mundo real que enfrentan los creadores de experiencias rara vez es una opción binaria. Por este motivo, AEM no solo admite ambos modelos, sino que también permite de forma exclusiva la combinación híbrida continua de los dos, fusionando las ventajas del contenido sin encabezado y de pila completa, para ayudarle a servir mejor a los consumidores de su contenido, independientemente del lugar en que se encuentren.
 
-Este recorrido se centra en el modelo de entrega de contenido sin encabezado únicamente. Sin embargo, una vez que tenga este conocimiento fundacional, puede explorar más a fondo cómo aprovechar el poder de ambos modelos.
+Este recorrido se centra en el modelo de entrega de contenido sin encabezado únicamente. Sin embargo, una vez que tenga este conocimiento fundacional, puede explorar más a fondo cómo utilizar el poder de ambos modelos.
 
 ## Siguientes pasos {#what-is-next}
 

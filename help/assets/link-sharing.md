@@ -6,9 +6,9 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1030'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] permite compartir recursos, carpetas y colecciones como una dirección URL con miembros de la organización y entidades externas, incluidos socios y proveedores. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros sin que tengan que iniciar sesión primero en [!DNL Assets].
@@ -26,7 +26,6 @@ ht-degree: 6%
 >
 >* Necesita `Edit ACL` en la carpeta o el recurso que desee compartir como vínculo.
 >* Para enviar correos electrónicos a los usuarios, configure los detalles del servidor SMTP en [Day CQ Mail Service](#configmailservice).
-
 
 ## Compartir recursos {#share-assets}
 
@@ -37,7 +36,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 
 1. En el [!DNL Assets] interfaz de usuario, seleccione el recurso que desea compartir como vínculo.
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]** ![icono de compartir recursos](assets/do-not-localize/assets_share.png). El vínculo que se creará después de hacer clic en **[!UICONTROL Compartir]** se muestra de antemano en la [!UICONTROL Compartir vínculo] field. El vínculo no se creará hasta que seleccione **[!UICONTROL Enviar]**.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]** ![icono de compartir recursos](assets/do-not-localize/assets_share.png). El vínculo que se crea después de hacer clic en **[!UICONTROL Compartir]** se muestra de antemano en la [!UICONTROL Compartir vínculo] field. El vínculo no se creará hasta que seleccione **[!UICONTROL Enviar]**.
 
    ![Cuadro de diálogo con el vínculo compartido](assets/share-assets-as-link.png)
 
@@ -117,4 +116,5 @@ Al descargar recursos desde el vínculo compartido mediante la función Comparti
    * `http://[aem_server]:[port]/linkshare.html`
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
-   Entrada [!DNL Experience Manager] interfaz, acceso **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. Abra el **[!UICONTROL Externalizador de vínculos CQ de día]** y modifique las siguientes propiedades en la **[!UICONTROL Domains]** con los valores mencionados en contra de `local`, `author`, y `publish`. Para el `local` y `author` , proporcione la URL para las instancias local y Author, respectivamente. Si ejecuta una sola [!DNL Experience Manager] Instancia de autor, utilice el mismo valor para `local` y `author` propiedades. Para instancias de publicación, proporcione la dirección URL del [!DNL Experience Manager] Instancia de publicación.
+
+  Entrada [!DNL Experience Manager] interfaz, acceso **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. Abra el **[!UICONTROL Externalizador de vínculos CQ de día]** y modifique las siguientes propiedades en la **[!UICONTROL Domains]** con los valores mencionados en contra de `local`, `author`, y `publish`. Para el `local` y `author` , proporcione la URL para las instancias local y Author, respectivamente. Si ejecuta una sola [!DNL Experience Manager] Instancia de autor, utilice el mismo valor para `local` y `author` propiedades. Para instancias de publicación, proporcione la dirección URL del [!DNL Experience Manager] Instancia de publicación.

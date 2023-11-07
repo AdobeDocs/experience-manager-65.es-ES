@@ -2,10 +2,10 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 81%
+source-wordcount: '1688'
+ht-degree: 78%
 
 ---
 
@@ -41,7 +41,7 @@ Para obtener más información, consulte Conceptos de creación.
 
 ### Inicio de sesión {#signing-in}
 
-Al igual que con la mayoría de los sistemas, tendrá que iniciar sesión. Como autor, se le proporcionará lo siguiente:
+Al igual que con la mayoría de los sistemas, debe iniciar sesión. Como autor, se le proporcionará lo siguiente:
 
 * Un nombre de usuario o de cuenta
 * Una contraseña
@@ -102,7 +102,7 @@ Puede hacerlo creando una serie de carpetas dentro de la sección **Archivos** d
 
 ![Opción Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Se abre un cuadro de diálogo en el que puede introducir los detalles y confirmarlos con **Crear**:
+Se abrirá un cuadro de diálogo en el que puede introducir los detalles y confirmar con **Crear**:
 
 ![Cuadro de diálogo Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -201,7 +201,7 @@ Los modelos de fragmento de contenido son vitales para los fragmentos de conteni
 
   Esto es bastante obvio, ya que es una pestaña del editor.
 
-  Los fragmentos de contenido han estado disponibles en AEM desde hace ya varias versiones. En un principio, se pusieron a disposición para el uso “tradicional” cuando se creaban páginas.Se siguen utilizando en este contexto. Esto puede implicar asociar recursos (por ejemplo, imágenes) que, aunque no estén incrustados en el fragmento, deben estar disponibles para el autor cuando cree una página.
+  Los fragmentos de contenido han estado disponibles en AEM desde hace ya varias versiones. En un principio, se pusieron a disposición para el uso “tradicional” cuando se creaban páginas.Se siguen utilizando en este contexto. Esto puede implicar la asociación de recursos (por ejemplo, imágenes) que, aunque no estén incrustados en el fragmento, deben estar disponibles para el autor al crear una página.
 
 * **Vista previa**
 
@@ -209,7 +209,7 @@ Los modelos de fragmento de contenido son vitales para los fragmentos de conteni
 
 * **Actualizar referencias de página**
 
-  Esta acción está disponible en el menú desplegable de los puntos suspensivos (**...**). No tiene interés para los autores sin encabezado, ya que está relacionado con la creación de páginas.
+  Esta acción está disponible en el menú desplegable **...** (puntos suspensivos). No tiene interés para los autores sin encabezado, ya que está relacionado con la creación de páginas.
 
 ### Publicación {#publishing}
 

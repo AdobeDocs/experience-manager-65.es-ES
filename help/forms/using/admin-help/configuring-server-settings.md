@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Las páginas Notificaciones de tareas y Notificaciones del administrador proporc
 
 ### Editor de texto enriquecido {#rich-text-editor}
 
-El área Plantilla de notificación es un editor de texto enriquecido que permite generar un HTML para los mensajes de notificación por correo electrónico. Proporciona opciones de formato de fuente y párrafo, que se encuentran debajo del cuadro Plantilla de notificación. Las opciones incluyen tipo de fuente, tamaño, estilo y color, así como alineación de párrafo y viñetas.
+El área Plantilla de notificación es un editor de texto enriquecido que permite generar un HTML para los mensajes de notificación por correo electrónico. Proporciona opciones de formato de fuente y párrafo, que se encuentran debajo del cuadro Plantilla de notificación. Las opciones incluyen tipo de fuente, tamaño, estilo y color, y alineación de párrafo y viñetas.
 
 ### Generación de URL {#url-generation}
 
@@ -187,11 +187,11 @@ Solo para las notificaciones de tareas, el flujo de trabajo de Forms incluye dos
 
 * OpenTask está disponible para los tipos de notificación Recordatorio y Asignación de tareas. Esta URL proporciona un vínculo a la tarea en Workspace, lo que permite al usuario acceder rápidamente a la tarea desde la notificación por correo electrónico. Al arrastrar la URL de OpenTask al cuadro Plantilla de notificación, la URL tiene el siguiente formato:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 * ClaimTask está disponible para los tipos de notificación Grupo - Recordatorio y Grupo - Asignación de tareas. Esta dirección URL proporciona un vínculo a la página de detalles de la tarea en Workspace, donde el usuario puede reclamar o reclamar y abrir el elemento de trabajo. Al arrastrar la dirección URL de la tarea de notificación al cuadro Plantilla de notificación, la dirección URL tiene el siguiente formato:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 >[!NOTE]
 >

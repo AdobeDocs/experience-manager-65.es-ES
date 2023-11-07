@@ -2,9 +2,9 @@
 title: Configuración de componentes predeterminados en el modo Diseño
 description: Configuración de componentes de Adobe Experience Manager en el modo Diseño.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '914'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ Para habilitar o deshabilitar un componente:
 
    Se seleccionará el sistema de párrafos que contiene el componente actual.
 
-1. El **Configurar** para el sistema de párrafos se mostrará en la barra de acciones del elemento principal.
+1. El **Configurar** para el sistema de párrafos se muestra en la barra de acciones del elemento principal.
 
    ![Configurar](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -95,7 +95,7 @@ Para habilitar o deshabilitar un componente:
 
    >[!NOTE]
    >
-   >Los componentes de formulario adaptable están diseñados para funcionar dentro del contenedor de formulario adaptable y aprovechar el ecosistema de Forms. Por lo tanto, estos componentes solo deben utilizarse en el editor de formularios adaptables y no funcionarán en el editor de páginas de Sites.
+   >Los componentes de formulario adaptable están diseñados para funcionar dentro del contenedor de formulario adaptable y utilizar el ecosistema de Forms. Por lo tanto, estos componentes solo deben utilizarse en el editor de formularios adaptables y no funcionarán en el editor de páginas de Sites.
 
    **Configuración**
 

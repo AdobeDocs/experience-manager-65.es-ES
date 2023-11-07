@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1439'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Cuando el servicio Output recibe una solicitud de procesamiento, recupera el dis
 
 El servicio Output siempre almacena en caché los diseños de formulario en el disco. Si los diseños de formulario se almacenan en el servidor, esos archivos se consideran la caché de disco. El servicio Output también almacena en caché los diseños de formulario en la memoria, según la configuración de la **En caché de plantilla de memoria** área. Si cambia cualquiera de estas opciones, reinicie el Servicio de salida para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [AEM Iniciar o detener los servicios asociados con módulos de formularios de la](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
-**Tamaño de caché de configuración de plantilla:** Número máximo de objetos de configuración de plantilla que se guardarán en la memoria. El valor predeterminado es 100. Se recomienda establecer este valor en un valor bueno o igual al valor de Tamaño de caché de la plantilla. Esta configuración no afecta a la caché del disco.
+**Tamaño de caché de configuración de plantilla:** Número máximo de objetos de configuración de plantilla que se guardarán en la memoria. El valor predeterminado es 100. Se recomienda establecer este valor en mayor o igual que el valor de Tamaño de caché de la plantilla. Esta configuración no afecta a la caché del disco.
 
 **Tamaño del almacenamiento de plantillas:** Número máximo de objetos de contenido de plantilla que se guardarán en la memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché del disco.
 

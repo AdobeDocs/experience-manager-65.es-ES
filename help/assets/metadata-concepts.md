@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2718'
 ht-degree: 9%
 
 ---
@@ -151,7 +151,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * PDF y PDF/X: aplicaciones de Adobe PDF y de terceros.
 * PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` XMP - metadatos de la página para texto de página.
+* `xmpPG` XMP - metadatos de la página para texto paginado.
 
 ### Metadatos específicos de medios múltiples {#multimedia-specific-metadata}
 
@@ -160,7 +160,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 
 ## Referencia de esquemas de metadatos {#metadata-schemata-reference}
 
-La siguiente referencia incluye información sobre un esquema de metadatos determinado (en orden alfabético), así como una lista de propiedades y sus definiciones.
+La siguiente referencia incluye información sobre un esquema de metadatos determinado (en orden alfabético) y una lista de propiedades y sus definiciones.
 
 ### Dublin Core {#dublin-core}
 
@@ -184,7 +184,7 @@ Además del DCMES, existen otros elementos de metadatos creados por la Iniciativ
 | relation | Un recurso relacionado. |
 | derechos | Información sobre quién tiene derechos sobre este recurso. |
 | origen | Un recurso relacionado del que se deriva el recurso. |
-| sujeto | El tema del recurso. |
+| asunto | El tema del recurso. |
 | Título | Un nombre para el recurso. |
 | tipo | La naturaleza o el género del recurso. |
 

@@ -2,7 +2,7 @@
 title: Caducidad de los certificados de Extensiones de Reader y su impacto
 description: Caducidad de los certificados de Extensiones de Reader y su impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 3%
@@ -12,13 +12,13 @@ ht-degree: 3%
 
 # Caducidad de los certificados de Extensiones de Reader y su impacto {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Los clientes de Adobe Experience Manager Forms (AEM Forms) con licencias de Adobe Managed Services o On-premise Enterprise Base pueden utilizar el servicio Acrobat Reader DC Extensions. El servicio permite a una organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Acrobat Reader con derechos de uso adicionales. El servicio agrega derechos de uso a un documento de PDF y activa funciones que no están disponibles cuando se abre un documento de PDF con Adobe Acrobat Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos activados. Los documentos de PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento de PDF con derechos activados en Acrobat Reader puede realizar las operaciones que están habilitadas para ese documento.
+Los clientes de Adobe Experience Manager Forms (AEM Forms) con licencias Adobe Managed Services o On-premise Enterprise Base pueden utilizar el servicio Acrobat Reader DC Extensions. El servicio permite a una organización compartir fácilmente documentos interactivos de PDF mediante la ampliación de la funcionalidad de Acrobat Reader con derechos de uso adicionales. El servicio agrega derechos de uso a un documento de PDF y activa funciones que no están disponibles cuando se abre un documento de PDF con Adobe Acrobat Reader, como agregar comentarios a un documento, rellenar formularios y guardar el documento. Los usuarios de terceros no requieren software ni complementos adicionales para trabajar con los documentos con derechos activados. Los documentos de PDF que tienen derechos de uso añadidos se denominan documentos con derechos activados. Un usuario que abre un documento de PDF con derechos activados en Acrobat Reader puede realizar las operaciones que están habilitadas para ese documento.
 
-Adobe aprovecha una infraestructura de clave pública (PKI) para emitir certificados digitales para su uso en licencias y habilitación de funciones. El Adobe ha estado emitiendo certificados bajo la autoridad de certificación **CA raíz de Adobe**, que caducará el 7 de enero de 2023. La caducidad del certificado no afecta a los documentos de PDF extendidos mediante certificados de producción emitidos desde **CA raíz de Adobe** certificados basados en (certificados antiguos). Todos los documentos de PDF, extendidos por Reader mediante los certificados antiguos antes del 7 de enero de 2023, incluidos los descargados por los clientes, seguirían funcionando con todos los derechos de uso que se les aplican y no requieren ninguna actualización.
+Adobe utiliza una infraestructura de clave pública (PKI) para emitir certificados digitales para su uso en licencias y habilitación de funciones. El Adobe ha estado emitiendo certificados bajo la autoridad de certificación **CA raíz de Adobe**, que caducará el 7 de enero de 2023. La caducidad del certificado no afecta a los documentos de PDF extendidos mediante certificados de producción emitidos desde **CA raíz de Adobe** certificados basados en (certificados antiguos). Todos los documentos de PDF, extendidos por Reader mediante los certificados antiguos antes del 7 de enero de 2023, incluidos los descargados por los clientes, seguirían funcionando con todos los derechos de uso que se les aplican y no requieren ninguna actualización.
 
 Una nueva entidad emisora de certificados, **Adobe raíz CA G2** Ya están disponibles los certificados y basados en la nueva entidad emisora de certificados. A partir del 7 de enero de 2023, empiece a utilizar los nuevos certificados (basados en **Adobe raíz CA G2** — para que Reader amplíe los nuevos documentos de PDF.  Puede [obtener nuevos certificados del Sitio web de licencias de Adobe](https://licensing.adobe.com/) o Compatibilidad con Adobes.
 
-## Preguntas frecuentes 
+## Preguntas frecuentes
 
 **P. ¿Cuál es la diferencia entre un certificado raíz de Adobe y un certificado de extensiones de Acrobat Reader? ¿El certificado raíz de Adobe depende de un certificado de extensiones de Acrobat Reader? ¿Vencen ambos certificados en enero de 2023?**
 
@@ -178,7 +178,7 @@ The following command list the details of the pfx file. Before running the comma
 
 `keytool -v -list -storetype pkcs12 -keystore [name of your .pfx file]`
 
-For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
+For example, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 1005566.pfx is the name of my pfx file
 
 <!-- ### Remove usage rights from existing rights-enabled PDF documents
 

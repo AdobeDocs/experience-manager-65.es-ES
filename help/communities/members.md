@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 4%
 
 ---
@@ -145,7 +145,7 @@ El miembro puede agregarse a uno o varios grupos de miembros. Comience introduci
 
 ### Pestaña INSIGNIAS {#badges-tab}
 
-El `BADGES` el panel permite asignar insignias manualmente y revocarlas. Las insignias pueden ser para funciones asignadas, así como insignias ganadas normalmente.
+El `BADGES` el panel permite asignar insignias manualmente y revocarlas. Las insignias pueden ser para roles asignados y distintivos ganados normalmente.
 
 Consulte también [Puntuación y distintivos](implementing-scoring.md).
 
@@ -174,7 +174,7 @@ Seleccionar `Add Group` para crear un grupo en el entorno de publicación.
 
 ![La ventana Crear nuevo grupo](assets/group-console1.png)
 
-Los campos obligatorios para crear un nuevo grupo de miembros del lado de publicación son:
+Los campos obligatorios para crear un grupo de miembros del lado de publicación son:
 
 * **[!UICONTROL ID]**
 

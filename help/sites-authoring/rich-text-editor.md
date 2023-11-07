@@ -2,10 +2,10 @@
 title: Uso del editor de texto enriquecido para crear contenido
 description: Uso del editor de texto enriquecido para crear contenido en Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 55%
+source-wordcount: '266'
+ht-degree: 46%
 
 ---
 
@@ -23,7 +23,7 @@ Si se selecciona un componente basado en texto con un solo pulse o clic, se mues
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo selecciona con un doble pulse o doble clic lento, se abre la edición local, que dispone de su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
+Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo selecciona con un doble pulse o doble clic lento, se abre la edición in-situ, que tiene su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

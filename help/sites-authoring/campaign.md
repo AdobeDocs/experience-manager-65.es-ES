@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2749'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 AEM Puede crear contenido de correo electrónico en y procesarlo en correos electrónicos de Adobe Campaign. Para ello, debe:
 
-1. AEM Cree un nuevo boletín informativo en el que se incluya una plantilla específica de Adobe Campaign.
+1. AEM Cree un boletín informativo en el que se le asigne un nombre a partir de una plantilla específica de Adobe Campaign.
 1. Seleccionar [un servicio de Adobe Campaign](#selecting-the-adobe-campaign-cloud-service-and-template) antes de editar el contenido para acceder a todas las funcionalidades.
 1. Edite el contenido.
 1. Valide el contenido.
@@ -55,7 +55,7 @@ Las instrucciones detalladas se describen en este documento.
 
    >[!NOTE]
    >
-   >[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargue contenido de Geometrixx de ejemplo desde Package Share.
+   >[Los ejemplos de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargar contenido de Geometrixx de muestra desde Package Share.
 
    ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -125,7 +125,7 @@ Para editar el contenido del correo electrónico:
 
    >[!NOTE]
    >
-   >Si los campos de personalización en las propiedades desde el editor están atenuados, vuelva a examinar la configuración.
+   >Si los campos de personalización de las propiedades desde el editor están atenuados, vuelva a examinar la configuración.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -187,7 +187,7 @@ Para insertar una personalización:
 
 ### Previsualización de una newsletter {#previewing-a-newsletter}
 
-Puede obtener una vista previa del aspecto que tendrá la newsletter, así como previsualizar la personalización.
+Puede obtener una vista previa del aspecto que tendrá la newsletter y previsualizar la personalización.
 
 1. Con la newsletter abierta, haga clic en **Previsualizar** AEM en la esquina superior derecha de la. AEM Muestra el aspecto que tendrá la newsletter cuando los usuarios la reciban.
 
@@ -257,7 +257,7 @@ Si un boletín informativo está vinculado a varios envíos, se muestra el núme
 
 AEM Para vincular una página creada en con un correo electrónico desde Adobe Campaign, haga lo siguiente:
 
-1. AEM Cree un nuevo correo electrónico basado en una plantilla de correo electrónico específica de la. Consulte [Creación de correos electrónicos en Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) para obtener más información.
+1. AEM Cree un correo electrónico basado en una plantilla de correo electrónico específica de un cliente de correo electrónico. Consulte [Creación de correos electrónicos en Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) para obtener más información.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

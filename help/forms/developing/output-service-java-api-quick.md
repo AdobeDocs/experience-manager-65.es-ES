@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido (SOAP) de la API de Java del servicio de salida
 seo-title: Output Service Java API Quick Start(SOAP)
-description: Utilice el Inicio rápido (SOAP) de la API de Java del servicio de salida para crear un documento de PDF, crear un documento de PDF basado en el archivo XDP de la aplicación, crear un documento de PDF/A, pasar documentos al servicio de salida, pasar un documento ubicado en el repositorio de AEM Forms al servicio de salida, crear un documento de PDF basado en fragmentos, imprimir en un archivo, enviar una secuencia de impresión a una impresora de red, crear varios archivos de PDF, crear reglas de búsqueda y transformar un documento de PDF.
-seo-description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document located in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
+description: Utilice el Inicio rápido (SOAP) de la API de Java del servicio de salida para crear un documento de PDF, crear un documento de PDF basado en el archivo XDP de la aplicación, crear un documento de PDF/A, pasar documentos al servicio de salida, pasar un documento del repositorio de AEM Forms al servicio de salida, crear un documento de PDF basado en fragmentos, imprimir en un archivo, enviar una secuencia de impresión a una impresora de red, crear varios archivos de PDF, crear reglas de búsqueda y transformar un documento de PDF.
+seo-description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
 uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1311'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Inicio rápido (SOAP) de la API de Java está disponible para el servicio Output
 
 [Inicio rápido (modo SOAP): Pasar documentos al servicio Output mediante la API de Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Pasar un documento ubicado en el repositorio de AEM Forms al servicio Output mediante la API de Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Inicio rápido (modo SOAP): Pasar un documento del repositorio de AEM Forms al servicio Output mediante la API de Java](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Creación de un documento de PDF basado en fragmentos mediante la API de Java](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
@@ -48,7 +48,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
->AEM Los inicios rápidos, que se encuentran en Programación con formularios de la lista de distribución, se basan en el sistema operativo Forms Server. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de la aplicación se basan en el sistema operativo Forms Server. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Inicio rápido (modo SOAP): Creación de un documento de PDF mediante la API de Java {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
@@ -81,7 +81,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF denominado *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -90,7 +90,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF denominado *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -200,7 +200,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF denominado *
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/Adobe/adobe_experience_manager_forms/SDK/client-libs/common
      *
      * <install directory>/Adobe/adobe_experience_manager_forms/SDK/client-libs/jboss
@@ -210,7 +210,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF denominado *
      * If you want to invoke a remote AEM Forms instance and there is a
      * firewall between the client application and AEM Forms, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/Adobe/adobe_experience_manager_forms/SDK/client-libs/thirdparty
      *
@@ -291,7 +291,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF denominado *
  
 ```
 
-## Inicio rápido (modo SOAP): Pasar un documento ubicado en el repositorio al servicio Output mediante la API de Java {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
+## Inicio rápido (modo SOAP): Pasar un documento del repositorio al servicio Output mediante la API de Java {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 El siguiente código Java recupera un archivo XDP del repositorio y lo pasa al servicio Output en `com.adobe.idp.Document` ejemplo. El archivo XDP se implementa como parte de una aplicación de AEM Forms denominada `Applications/FormsApplication`. Observe que la ruta URI es `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
 
@@ -305,7 +305,7 @@ Observe también el valor de raíz del contenido `repository:///Applications/For
 >
 >Puede establecer el valor de la raíz de contenido del mismo modo que al invocar el `generatePrintedOutput2` método.
 
-El *Loan.pdf* se escribe en la carpeta C:\Adobe ubicada en el servidor de aplicaciones J2EE que aloja AEM Forms. (Consulte [Pasar documentos ubicados en el repositorio al servicio Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service).)
+El *Loan.pdf* se escribe en la carpeta C:\Adobe ubicada en el servidor de aplicaciones J2EE que aloja AEM Forms. (Consulte [Pasar documentos del repositorio al servicio Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service).)
 
 >[!NOTE]
 >
@@ -323,7 +323,7 @@ El *Loan.pdf* se escribe en la carpeta C:\Adobe ubicada en el servidor de aplica
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -332,7 +332,7 @@ El *Loan.pdf* se escribe en la carpeta C:\Adobe ubicada en el servidor de aplica
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -471,13 +471,13 @@ En el siguiente ejemplo de código Java se crea un documento de PDF denominado *
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -584,7 +584,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF/A denominado
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -593,7 +593,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF/A denominado
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -673,7 +673,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF/A denominado
 
 ## Inicio rápido (modo SOAP): Pasar documentos al servicio Output mediante la API de Java {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-El siguiente inicio rápido de Java recupera el archivo *Loan.xdp* de Content Services. Este archivo XDP se encuentra en `space /Company Home/Form Designs`. El archivo XDP se devuelve en un `com.adobe.idp.Document` ejemplo. El `com.adobe.idp.Document` La instancia de se pasa al servicio Output. El formulario no interactivo se guarda como un archivo de PDF denominado *Loan.pdf *en el equipo cliente. Como la opción File URI está definida, el archivo PDF *Loan.pdf *también se guarda en el servidor de aplicaciones J2EE que aloja AEM Forms. (Consulte [Pasar documentos ubicados en Content Services ES2 al servicio Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+El siguiente inicio rápido de Java recupera el archivo *Loan.xdp* de Content Services. Este archivo XDP se encuentra en `space /Company Home/Form Designs`. El archivo XDP se devuelve en un `com.adobe.idp.Document` ejemplo. El `com.adobe.idp.Document` La instancia de se pasa al servicio Output. El formulario no interactivo se guarda como un archivo de PDF denominado *Loan.pdf *en el equipo cliente. Como la opción File URI está definida, el archivo PDF *Loan.pdf *también se guarda en el servidor de aplicaciones J2EE que aloja AEM Forms. (Consulte [Pasar documentos en Content Services ES2 al servicio Output](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 ```java
  /*
@@ -687,7 +687,7 @@ El siguiente inicio rápido de Java recupera el archivo *Loan.xdp* de Content Se
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -696,7 +696,7 @@ El siguiente inicio rápido de Java recupera el archivo *Loan.xdp* de Content Se
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -812,7 +812,7 @@ El siguiente inicio rápido de Java recupera el archivo *Loan.xdp* de Content Se
 
 ## Inicio rápido (modo SOAP): Creación de un documento de PDF basado en fragmentos mediante la API de Java {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-En el siguiente ejemplo de código Java se crea un documento de PDF basado en un diseño de formulario ensamblado por el servicio Assembler. El servicio Assembler combina fragmentos ubicados en varios archivos XDP en un único diseño de formulario. La lógica de aplicación que invoca el servicio Assembler se encuentra en un método definido por el usuario denominado `GetFormDesign`. El formulario no interactivo se guarda como un archivo de PDF denominado *Loan.pdf *en el equipo cliente. (Consulte [Creación de documentos de PDF mediante fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
+En el siguiente ejemplo de código Java se crea un documento de PDF basado en un diseño de formulario ensamblado por el servicio Assembler. El servicio Assembler organiza fragmentos de varios archivos XDP en un único diseño de formulario. La lógica de aplicación que invoca el servicio Assembler se encuentra en un método definido por el usuario denominado `GetFormDesign`. El formulario no interactivo se guarda como un archivo de PDF denominado *Loan.pdf *en el equipo cliente. (Consulte [Creación de documentos de PDF mediante fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
 
 ```java
  /*
@@ -842,7 +842,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF basado en un
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -851,7 +851,7 @@ En el siguiente ejemplo de código Java se crea un documento de PDF basado en un
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1049,7 +1049,7 @@ El siguiente ejemplo de código Java imprime un flujo de salida en un archivo Po
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1058,7 +1058,7 @@ El siguiente ejemplo de código Java imprime un flujo de salida en un archivo Po
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1161,7 +1161,7 @@ El siguiente ejemplo de código Java envía un flujo de impresión PostScript a 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1170,7 +1170,7 @@ El siguiente ejemplo de código Java envía un flujo de impresión PostScript a 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1223,7 +1223,7 @@ El siguiente ejemplo de código Java envía un flujo de impresión PostScript a 
              printOptions.setStaple(Staple.on);
  
              //Create a PostScript output stream based on the form design named Loan.xdp and
-             //the data located in the XML file
+             //the data in the XML file
              OutputResult outputDocument = outClient.generatePrintedOutput(
                      PrintFormat.PostScript,
                      "Loan.xdp",
@@ -1257,7 +1257,7 @@ El siguiente ejemplo de código Java envía un flujo de impresión PostScript a 
 
 ## Inicio rápido (modo SOAP): Creación de varios archivos de PDF mediante la API de Java {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
-El siguiente código Java crea varios archivos de PDF para cada registro de datos ubicado en un archivo de datos XML denominado *Loan_data_batch.xml*. Los archivos se escriben en el directorio C:\Adobe. Los archivos del PDF se escriben en la carpeta C:\Adobe ubicada en el servidor de aplicaciones J2EE que aloja AEM Forms, no en el equipo cliente. (Consulte [Creación de varios archivos de salida](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
+El siguiente código Java crea varios archivos de PDF para cada registro de datos que se encuentra en un archivo de datos XML denominado *Loan_data_batch.xml*. Los archivos se escriben en el directorio C:\Adobe. Los archivos del PDF se escriben en la carpeta C:\Adobe ubicada en el servidor de aplicaciones J2EE que aloja AEM Forms, no en el equipo cliente. (Consulte [Creación de varios archivos de salida](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
 
 ```java
  /*
@@ -1286,7 +1286,7 @@ El siguiente código Java crea varios archivos de PDF para cada registro de dato
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1295,7 +1295,7 @@ El siguiente código Java crea varios archivos de PDF para cada registro de dato
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1407,7 +1407,7 @@ El siguiente ejemplo de código Java crea dos patrones de texto que el servicio 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1416,7 +1416,7 @@ El siguiente ejemplo de código Java crea dos patrones de texto que el servicio 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1539,7 +1539,7 @@ El siguiente ejemplo de código Java transforma un documento PDF interactivo den
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -1548,7 +1548,7 @@ El siguiente ejemplo de código Java transforma un documento PDF interactivo den
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

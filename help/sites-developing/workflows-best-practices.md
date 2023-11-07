@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1923'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Al configurar los procesos de flujo de trabajo (personalizados o predeterminados
 
 Para optimizar las cargas de ingesta altas, puede definir una [flujo de trabajo como transitorio](/help/sites-developing/workflows.md#transient-workflows).
 
-Cuando un flujo de trabajo es transitorio, los datos de tiempo de ejecución relacionados con los pasos de trabajo intermedios no se mantienen en el JCR cuando se ejecutan (las representaciones de salida se mantienen, por supuesto).
+Cuando un flujo de trabajo es transitorio, los datos de tiempo de ejecución relacionados con los pasos de trabajo intermedios no persisten en el JCR cuando se ejecutan (las representaciones de salida se mantienen).
 
 Las ventajas pueden incluir:
 
@@ -68,7 +68,7 @@ Además, hay una configuración independiente para **Cola de trabajos de proceso
 
 ### Configurar colas de trabajos individuales {#configure-individual-job-queues}
 
-En algunos casos, resulta útil configurar colas de trabajos individuales para controlar los subprocesos simultáneos u otras opciones de cola de forma individual. Puede agregar y configurar una cola individual desde la consola web a través de **Configuración de cola de trabajos de Apache Sling** de fábrica. Para encontrar el tema correspondiente, ejecute el modelo del flujo de trabajo y búsquelo en la **Trabajos de Sling** consola; por ejemplo, en `http://localhost:4502/system/console/slingevent`.
+En algunos casos, resulta útil configurar colas de trabajos individuales para controlar los subprocesos simultáneos u otras opciones de cola de forma individual. Puede agregar y configurar una cola individual desde la consola web a través de **Configuración de cola de trabajos de Apache Sling** de fábrica. Para encontrar el tema adecuado que enumerar, ejecute el modelo del flujo de trabajo y búsquelo en la **Trabajos de Sling** consola; por ejemplo, en `http://localhost:4502/system/console/slingevent`.
 
 También se pueden agregar colas de trabajos individuales para flujos de trabajo transitorios.
 
@@ -255,7 +255,7 @@ Guardar una sesión:
 
 >[!CAUTION]
 >
->Si, a pesar de las recomendaciones aquí, crea su propia sesión jcr, deberá guardarla.
+>Si, a pesar de las recomendaciones aquí, crea su propia sesión jcr, se debe guardar.
 
 ### Minimizar el número/ámbito de los lanzadores {#minimize-the-number-scope-of-launchers}
 
@@ -285,7 +285,7 @@ Los flujos de trabajo pueden conllevar una cantidad significativa de sobrecarga,
 
 Un ejemplo de esto sería un flujo de trabajo que implementa un proceso empresarial en un conjunto de contenido y luego activa ese contenido. Es mejor crear un proceso de flujo de trabajo personalizado que active cada uno de estos nodos, en lugar de iniciar un **Activar contenido** modelo para cada uno de los nodos de contenido que deben publicarse. Este método requerirá un trabajo de desarrollo adicional, pero es más eficaz cuando se ejecuta que iniciar una instancia de flujo de trabajo independiente para cada activación.
 
-Otro ejemplo sería un flujo de trabajo que procese una serie de nodos, cree un paquete de flujo de trabajo y luego active dicho paquete. En lugar de crear el paquete y luego iniciar un flujo de trabajo independiente con el paquete como carga útil, puede cambiar la carga útil del flujo de trabajo en el paso que crea el paquete y luego llamar al paso para activar el paquete dentro del mismo modelo de flujo de trabajo.
+Otro ejemplo sería un flujo de trabajo que procese varios nodos, cree un paquete de flujo de trabajo y active dicho paquete. En lugar de crear el paquete y luego iniciar un flujo de trabajo independiente con el paquete como carga útil, puede cambiar la carga útil del flujo de trabajo en el paso que crea el paquete y luego llamar al paso para activar el paquete dentro del mismo modelo de flujo de trabajo.
 
 ### Avance de controlador {#handler-advance}
 

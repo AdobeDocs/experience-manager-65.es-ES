@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 100%
@@ -90,7 +90,7 @@ Para mostrar la propiedad `description` de la instancia de proceso en la tarjeta
 
    ```css
    .processinstance .processDescription {
-    <!--Dummy values, need to be configured by user as per requirement as well as user can add or delete any property depending upon requirement-->
+    <!--Dummy values, need to be configured by user as per requirement and user can add or delete any property depending upon requirement-->
        width : 250px;
        font-size : 11pt;
        padding : 2px;

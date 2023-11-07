@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2242'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 
@@ -115,7 +115,7 @@ La siguiente tabla contiene una lista completa de los posibles escenarios de ins
    <td><p>Acrobat Pro o Acrobat Pro Extended (incluye Designer)</p> </td>
    <td><p>Ninguna.<br /> 
 La instalación de Workbench detecta una instancia de Designer instalada en el equipo con Acrobat Pro o Acrobat Pro Extended.<br />
-En el mismo sistema pueden coexistir distintas versiones de Designer; por ejemplo, Designer 6.4.x para Workbench 6.4 y Designer 6.5.0.x para Workbench 6.5. No es necesario desinstalar la versión de Designer instalada con Acrobat 10 Pro, Acrobat 10 Pro Extended o superior.
+En el mismo sistema pueden coexistir distintas versiones de Designer; por ejemplo, Designer 6.4.x para Workbench 6.4 y Designer 6.5.0.x para Workbench 6.5. No es necesario desinstalar la versión de Designer instalada con Acrobat 10 Pro, Acrobat 10 Pro Extended o superior.
 <br /></p> </td>
   </tr>
   <tr>

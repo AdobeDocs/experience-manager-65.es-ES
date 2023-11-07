@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ Flujo de trabajo general para eliminar un titular:
 1. Seleccione el titular que desea eliminar en la **Administrar titulares** mosaico.
 1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
 1. Clic **Eliminar** de la barra de acciones.
-1. AEM Seleccione si quiere eliminar de la aplicación, así como de Mobile On-Demand, si lo desea.
+1. AEM Seleccione si desea eliminar de la aplicación de Adobe y de Mobile On-Demand en la lista de dispositivos de la aplicación.
 1. Haga clic en **Eliminar**.
 1. El titular se eliminará de la lista.
 

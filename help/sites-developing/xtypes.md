@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6384'
+source-wordcount: '6381'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Esta página describe todos los xtype disponibles con Adobe Experience Manager A
 
 En el lenguaje ExtJS, un xtype es un nombre simbólico dado a una clase. Puede leer el párrafo &quot;Tipos XT de componentes&quot; del [Descripción general de ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) para obtener una explicación detallada sobre qué es un xtype y cómo se puede utilizar.
 
-AEM Para obtener información completa sobre todos los widgets disponibles en, consulte la sección sobre la configuración de los widgets en la barra de herramientas de [documentación de API de widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+AEM Para obtener información completa sobre todos los widgets disponibles en la documentación de, consulte la sección sobre la configuración de los widgets en la documentación de [documentación de API de widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 AEM Para saber en qué componentes se utiliza un xtype determinado en la, puede utilizar la siguiente consulta Xpath en CRXDE reemplazando &quot;casilla de verificación&quot; por el xtype que le interese:
 
@@ -245,7 +245,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.wcm.CreateVersionDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.CreateVersionDialog)
 
-  CreateVersionDialog es un cuadro de diálogo que permite crear una nueva versión de una página.
+  CreateVersionDialog es un cuadro de diálogo que permite crear una versión de una página.
 
 * customcontentpanel
 
@@ -703,7 +703,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.form.SearchField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SearchField)
 
-  SearchField proporciona un campo de búsqueda que proporciona los resultados de una lista desplegable que se puede utilizar para buscar en el repositorio.
+  SearchField proporciona un campo de búsqueda que proporciona los resultados en una lista desplegable que se puede utilizar para buscar en el repositorio.
 
 * selección
 

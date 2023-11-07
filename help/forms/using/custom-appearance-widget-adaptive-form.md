@@ -1,19 +1,15 @@
 ---
 title: Crear apariencias personalizadas para campos de formularios adaptables
-seo-title: Create custom appearances for adaptive form fields
 description: Personalice el aspecto de los componentes integrados en formularios adaptables.
-seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
-uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
-source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 100%
+source-wordcount: '1712'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 ## Introducción {#introduction}
 
-Los formularios adaptables aprovechan el [marco de trabajo de apariencia](/help/forms/using/introduction-widgets.md) para ayudarle a crear apariencias personalizadas para campos de formularios adaptables y proporcionar una experiencia de usuario diferente. Por ejemplo, reemplace los botones de radio y las casillas de verificación por botones de alternancia o utilice complementos jQuery personalizados para restringir las entradas de los usuarios en campos como números de teléfono o ID de correo electrónico.
+Los formularios adaptables utilizan el [marco de apariencia](/help/forms/using/introduction-widgets.md) para ayudarle a crear apariencias personalizadas para campos de formularios adaptables y proporcionar una experiencia de usuario diferente. Por ejemplo, reemplace los botones de radio y las casillas de verificación por botones de alternancia o utilice complementos jQuery personalizados para restringir las entradas de los usuarios en campos como números de teléfono o ID de correo electrónico.
 
 En este documento se explica cómo utilizar un complemento jQuery para crear estas experiencias alternativas para campos de formularios adaptables. Además, muestra un ejemplo para crear una apariencia personalizada para que el componente de campo numérico aparezca como un salto numérico o un control deslizante.
 
@@ -141,7 +137,7 @@ Una vez creada la plantilla del proyecto, realice los siguientes cambios según 
   </tr>
   <tr>
    <td><code>getCommitValue</code></td>
-   <td>El marco de trabajo del widget jQuery carga la función siempre que su valor se guarde en el modelo XFA (por ejemplo, en el suceso de salida de un campo de texto). La implementación debe devolver el valor guardado en el widget. El controlador se proporciona con el nuevo valor para la opción.</td>
+   <td>El marco de trabajo del widget jQuery carga la función siempre que su valor se guarde en el modelo XFA (por ejemplo, en el evento de salida de un campo de texto). La implementación debe devolver el valor guardado en el widget. El controlador se proporciona con el nuevo valor para la opción.</td>
   </tr>
   <tr>
    <td><code>showValue</code></td>
@@ -320,4 +316,4 @@ Veamos un ejemplo para crear una apariencia personalizada para que un campo num�
 
    1. En la pestaña Estilo, actualice la propiedad **[!UICONTROL clase CSS]** para agregar `widget_numericStepper`.
 
-La nueva apariencia que acaba de crear ya está disponible para usarla.
+La nueva apariencia que ha creado ya está disponible para su uso.

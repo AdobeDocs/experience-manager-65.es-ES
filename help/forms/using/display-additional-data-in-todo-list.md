@@ -10,10 +10,10 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Para obtener más información sobre la descripción del objeto JSON, consulte [
 1. Siga los [Pasos genéricos para personalizar AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Para mostrar información adicional para una tarea, se deben agregar los pares clave-valor correspondientes dentro del bloque de tareas de `translation.json`.
 
-   Por ejemplo, cambiar `/apps/ws/locales/en-US/translation.json` a inglés:
+   Por ejemplo, cambie `/apps/ws/locales/en-US/translation.json` para inglés:
 
    ```json
    "task" : {

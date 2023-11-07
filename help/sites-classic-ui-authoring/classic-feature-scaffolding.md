@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ El cuerpo del andamio es la forma. Cuando un usuario desea crear una página con
 
 ### Creación de un andamio {#creating-a-scaffold}
 
-Para crear un nuevo andamio, vaya al **Herramientas** consola, entonces **Andamiaje de página predeterminada** y cree una página. Hay disponible un tipo de plantilla de una sola página, la variable *Plantilla de andamiaje.*
+Para crear un andamio, vaya al **Herramientas** consola, entonces **Andamiaje de página predeterminada** y cree una página. Hay disponible un tipo de plantilla de una sola página, la variable *Plantilla de andamiaje.*
 
 Vaya a la **Propiedades de página** de la nueva página y configure el *Texto del título*, *Descripción*, *Plantilla de destino*, y *Ruta de destino*, tal como se ha descrito anteriormente.
 
@@ -163,4 +163,4 @@ Después de desbloquear, puede restaurar la herencia haciendo clic en el símbol
 
 >[!NOTE]
 >
->Si la herencia se cancela en el nivel de página (desde la pestaña LiveCopy de Propiedades de página), todos los componentes se podrán editar en **Andamiaje** modo (se mostrarán en estado desbloqueado).
+>Si la herencia se cancela en el nivel de página (desde la pestaña LiveCopy de Propiedades de página), todos los componentes se pueden editar en **Andamiaje** modo (se muestran en estado desbloqueado).

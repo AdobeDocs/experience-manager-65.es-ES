@@ -8,9 +8,9 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ Cuando se actualiza o modifica el fragmento de contenido de origen, el fragmento
 El flujo de trabajo Crear y traducir incluye las siguientes opciones. Los pasos de procedimiento asociados a cada opción son similares a los asociados a la opción correspondiente para los recursos.
 
 * Crear solo estructura: para ver los pasos del procedimiento, consulte [Crear estructura solo para recursos](translation-projects.md#create-structure-only).
-* Crear un nuevo proyecto de traducción: para ver los pasos del procedimiento, consulte [Crear un nuevo proyecto de traducción para recursos](translation-projects.md#create-a-new-translation-project).
+* Crear un proyecto de traducción: para ver los pasos del procedimiento, consulte [Creación de un proyecto de traducción para recursos](translation-projects.md#create-a-new-translation-project).
 * Agregar a un proyecto de traducción existente: para ver los pasos del procedimiento, consulte [Añadir a un proyecto de traducción existente para recursos](translation-projects.md#add-to-existing-translation-project).
 
 ## Actualizar flujo de trabajo de copias de idioma {#update-language-copies-workflow}
 
 El flujo de trabajo Actualizar copias de idioma incluye las siguientes opciones. Los pasos de procedimiento asociados a cada opción son similares a los asociados a la opción correspondiente para los recursos.
 
-* Crear un nuevo proyecto de traducción: para ver los pasos del procedimiento, consulte [Crear un nuevo proyecto de traducción para recursos](translation-projects.md#create-a-new-translation-project) (flujo de trabajo de actualización).
+* Crear un proyecto de traducción: para ver los pasos del procedimiento, consulte [Creación de un proyecto de traducción para recursos](translation-projects.md#create-a-new-translation-project) (flujo de trabajo de actualización).
 * Agregar a un proyecto de traducción existente: para ver los pasos del procedimiento, consulte [Añadir a un proyecto de traducción existente para recursos](translation-projects.md#add-to-existing-translation-project) (flujo de trabajo de actualización).
 
 También puede crear copias de idioma temporales para fragmentos de forma similar a como crea copias temporales para los recursos. Para obtener más información, consulte [Creación de copias de idioma temporales para los recursos](translation-projects.md#creating-temporary-language-copies).

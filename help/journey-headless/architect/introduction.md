@@ -2,10 +2,10 @@
 title: Recorrido de arquitectos de contenido de Adobe Experience Manager Headless
 description: Introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y a cómo diseñar contenido para su proyecto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 86%
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado, có
 
 ## Entrega de contenido de pila completa {#full-stack}
 
-Desde que han surgido los sistemas de administración de contenido (CMS) a gran escala, fáciles de usar, las organizaciones los han aprovechado como una ubicación central que permite administrar mensajes, marcas y comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
+Desde que han surgido los sistemas de administración de contenido (CMS) a gran escala y fáciles de usar, las organizaciones los han utilizado como una ubicación central que permite administrar los mensajes, la promoción de la marca y las comunicaciones. El uso de CMS como punto central para administrar experiencias ha mejorado la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
 
 ![El CMS de pila completa clásico](/help/journey-headless/developer/assets/full-stack.png)
 
@@ -50,7 +50,7 @@ Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y conti
 
 ![CMS sin encabezado](/help/journey-headless/developer/assets/headless-cms.png)
 
-Los servicios que consumen, ya sean experiencias AR, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., reciben contenido del CMS sin encabezado y proporcionan su propia representación. Se ocupan de proporcionar sus propios HEADS para su contenido.
+Los servicios de consumo, ya sean experiencias de RA, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., incorporan contenido del CMS sin encabezado y proporcionan su propio procesamiento. Se ocupan de proporcionar sus propios HEADS para su contenido.
 
 Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicho procesamiento.
 
@@ -66,7 +66,7 @@ En AEM, usted, como arquitecto de contenido, realizará el modelado de contenido
 
 Se trata más bien de un detalle de desarrollo, pero puede interesarle para completar la historia.
 
-Una vez que haya creado los modelos de fragmento de contenido y que los autores los hayan utilizado para generar el contenido, las aplicaciones sin encabezado tendrán que acceder a este contenido.
+Una vez creados los modelos de fragmentos de contenido y que los autores los hayan utilizado para generar el contenido, las aplicaciones sin encabezado deben acceder a este.
 
 Adobe Experience Manager AEM AEM () puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de la aplicación de la para devolver solo el contenido necesario. Con la API, un desarrollador puede formular consultas que seleccionan contenido específico. Este proceso de selección se basa en *sus* Modelos de fragmento de contenido.
 

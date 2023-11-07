@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Además de [desarrollo de nuevos componentes](/help/sites-developing/developing-
 
 >[!NOTE]
 >
->Este documento se centra en el desarrollo de formularios utilizando [Componentes básicos](/help/sites-authoring/default-components-foundation.md) en la IU clásica. El Adobe recomienda aprovechar el nuevo [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
+>Este documento se centra en el desarrollo de formularios utilizando [Componentes básicos](/help/sites-authoring/default-components-foundation.md) en la IU clásica. El Adobe recomienda utilizar el nuevo [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
 
 ## Precarga de valores de formulario {#preloading-form-values}
 
@@ -68,7 +68,7 @@ Se puede configurar una lista desplegable con el rango de valores para la selecc
 
 El **Ruta de carga de elementos** se puede utilizar para acceder a una lista de una carpeta del repositorio y precargarla en el campo:
 
-1. Cree una nueva carpeta de sling ( `sling:Folder`) por ejemplo, `/etc/designs/<myDesign>/formlistvalues`
+1. Cree una carpeta de sling ( `sling:Folder`) por ejemplo, `/etc/designs/<myDesign>/formlistvalues`
 
 1. Añada una nueva propiedad (por ejemplo, `myList`) de tipo cadena de varios valores ( `String[]`) para contener la lista de elementos desplegables. El contenido también se puede importar mediante una secuencia de comandos, como con una secuencia de comandos JSP o cURL en una secuencia de comandos shell.
 
@@ -78,7 +78,7 @@ Tenga en cuenta que si los valores de `String[]` tienen el siguiente formato:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* etc.
+* y demás
 
 AEM a continuación, generará la lista como:
 
@@ -178,7 +178,7 @@ Este script se invoca cuando se procesa el formulario. Se puede utilizar para in
 El nombre del script es `cleanup.<extension>`, por ejemplo, `cleanup.jsp`
 Esta secuencia de comandos se puede utilizar para realizar la limpieza.
 
-1. Utilice el **Forms** en un parsys. El **Tipo de acción** La lista desplegable ahora incluye la nueva acción.
+1. Utilice el **Forms** en un parsys. El **Tipo de acción** ahora, la lista desplegable incluirá la nueva acción.
 
    >[!NOTE]
    >
@@ -208,7 +208,7 @@ Puede añadir sus propias restricciones para un campo individual (en `/apps`) co
 
    * `sling:resourceType` - se establece en `foundation/components/form/constraint`
 
-   * `constraintMessage` : un mensaje personalizado que se mostrará si el campo no es válido, según la restricción, cuando se envíe el formulario
+   * `constraintMessage` : un mensaje personalizado que se muestra si el campo no es válido, según la restricción, cuando se envía el formulario
 
    * Opcionalmente:
 

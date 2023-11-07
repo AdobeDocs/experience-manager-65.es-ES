@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10239'
+source-wordcount: '10229'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Si utiliza IPv6, escriba la dirección URL base como nombre del equipo o el nomb
 
 >[!NOTE]
 >
->La dirección URL base está incrustada en archivos protegidos por directivas. Las aplicaciones cliente utilizan la dirección URL base para volver a conectarse al servidor. Los archivos protegidos seguirán conteniendo la dirección URL base, incluso si se cambia más adelante. Si cambia la dirección URL base, deberá actualizar la información de configuración de todos los clientes que se conectan.
+>La dirección URL base está incrustada en archivos protegidos por directivas. Las aplicaciones cliente utilizan la dirección URL base para volver a conectarse al servidor. Los archivos protegidos seguirán conteniendo la dirección URL base, incluso si se cambia más adelante. Si cambia la dirección URL base, la información de configuración debe actualizarse para todos los clientes que se conectan.
 
 **Período de concesión sin conexión predeterminado:** Período de tiempo predeterminado durante el cual un usuario puede utilizar un documento protegido sin conexión. Esta configuración determina el valor inicial de la configuración Período de concesión sin conexión automática al crear una directiva. (Consulte Creación y edición de directivas). Cuando caduca el período de concesión, el destinatario debe sincronizar de nuevo el documento para seguir utilizándolo.
 
@@ -581,7 +581,7 @@ La siguiente configuración se encuentra en el área Filtro de restricción de c
 
 ### Parámetros de servidor y cuenta de registro {#server-and-registration-account-parameters}
 
-La siguiente configuración se encuentra en el área Configuración general de la página Registro de usuario invitado.
+La configuración siguiente se encuentra en el área Configuración general de la página Registro de usuario invitado.
 
 **Host SMTP:** El nombre de host del servidor SMTP. El servidor SMTP gestiona los avisos de correo electrónico salientes para registrar y activar cuentas de usuario invitadas.
 
@@ -625,11 +625,11 @@ Si lo requiere el host SMTP, escriba la información necesaria en los cuadros No
 
 ### Configuración de correo electrónico de invitación de registro {#registration-invitation-email-settings}
 
-Document Security envía automáticamente un correo electrónico de invitación de registro cuando crea una cuenta de usuario invitada nueva o cuando un usuario existente agrega un destinatario externo que no se ha registrado anteriormente o que se le ha invitado a registrarse en una directiva. El correo electrónico contiene un vínculo que el destinatario puede utilizar para acceder a la página de registro e introducir información personal de la cuenta, incluidos el nombre de usuario y la contraseña. La contraseña puede ser cualquier combinación de ocho caracteres.
+Document Security envía automáticamente un correo electrónico de invitación de registro cuando crea una cuenta de usuario invitada o cuando un usuario existente agrega un destinatario externo que no se ha registrado anteriormente o que se le ha invitado a registrarse en una directiva. El correo electrónico contiene un vínculo que el destinatario puede utilizar para acceder a la página de registro e introducir información personal de la cuenta, incluidos el nombre de usuario y la contraseña. La contraseña puede ser cualquier combinación de ocho caracteres.
 
 Cuando el destinatario activa la cuenta, el usuario se convierte en un usuario local.
 
-Las siguientes opciones se encuentran en el área Configuración del correo electrónico de invitación de la página Registro de usuario invitado.
+Los siguientes ajustes se encuentran en el área Configuración del correo electrónico de invitación de la página Registro de usuario invitado.
 
 **Desde:** La dirección de correo electrónico desde la que se envía el correo electrónico de invitación. El formato predeterminado de la dirección de correo electrónico De es postmaster@[your_installation_domain].com.
 
@@ -706,7 +706,7 @@ Los usuarios y grupos seleccionados ahora tienen permiso para crear directivas p
 
 ### Especificar usuarios y grupos visibles en las búsquedas {#specify-users-and-groups-that-are-visible-in-searches}
 
-Cuando los usuarios administran sus directivas personalizadas, pueden buscar usuarios y grupos para agregarlos a sus directivas. Debe especificar los dominios desde los que los usuarios y grupos son visibles en estas búsquedas.
+Cuando los usuarios administran sus directivas personalizadas, pueden buscar usuarios y grupos para agregarlos a sus directivas. Especifique los dominios desde los que los usuarios y grupos son visibles en estas búsquedas.
 
 1. En la página Document Security, haga clic en Configuración > Mis directivas.
 1. En la página Mis directivas, haga clic en la ficha Usuarios y grupos visibles.

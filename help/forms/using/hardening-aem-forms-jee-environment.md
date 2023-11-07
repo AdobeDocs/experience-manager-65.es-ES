@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7667'
-ht-degree: 97%
+source-wordcount: '7665'
+ht-degree: 96%
 
 ---
 
@@ -430,7 +430,7 @@ Puede establecer el número de intentos erróneos y el periodo de bloqueo poster
 
 ### Auditoría y registro {#auditing-and-logging}
 
-El uso adecuado y seguro de la auditoría y el registro de aplicaciones puede ayudarle a garantizar que se detecta y se realiza un seguimiento de los eventos de seguridad y de otros eventos anómalos lo antes posible. El uso efectivo de la auditoría y el registro de una aplicación comprende elementos como el seguimiento de inicios de sesión correctos y fallidos, así como eventos clave de la aplicación como la creación o eliminación de registros clave.
+El uso adecuado y seguro de la auditoría y el registro de aplicaciones puede ayudarle a garantizar que se detecta y se realiza un seguimiento de los eventos de seguridad y de otros eventos anómalos lo antes posible. El uso efectivo de la auditoría y el registro dentro de una aplicación incluye elementos como el seguimiento de inicios de sesión correctos y fallidos, y eventos clave de la aplicación como la creación o eliminación de registros clave.
 
 Puede utilizar la auditoría para detectar numerosos tipos de ataques, incluidos los siguientes:
 
@@ -662,7 +662,7 @@ Ciertas URL se resaltan como aplicaciones web dirigidas al usuario final. Debe e
 
 Un ataque de falsificación de solicitud en sitios múltiples (CSRF) explota la confianza que un sitio web tiene en un usuario para transmitir comandos que no han sido autorizados ni enviados intencionadamente por este. El ataque se configura incluyendo un vínculo o un script en una página web o una URL en un mensaje de correo electrónico para acceder a otro sitio en el que el usuario ya se ha autenticado.
 
-Por ejemplo, puede iniciar sesión en la consola de administración mientras navega por otro sitio web. Una de las páginas web puede incluir una etiqueta de imagen HTML con un atributo `src` que identifica un script del lado del servidor en el sitio web atacado. Al aprovechar el mecanismo de autenticación de sesión basado en cookies que proporcionan los exploradores web, el sitio web atacante puede enviar solicitudes malintencionadas al script del lado del servidor atacado haciéndose pasar por el usuario legítimo. Para ver más ejemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Por ejemplo, puede iniciar sesión en la consola de administración mientras navega por otro sitio web. Una de las páginas web puede incluir una etiqueta de imagen HTML con un atributo `src` que identifica un script del lado del servidor en el sitio web atacado. Al utilizar el mecanismo de autenticación de sesión basado en cookies que proporcionan los exploradores web, el sitio web atacante puede enviar solicitudes malintencionadas al script del lado del servidor atacado haciéndose pasar por el usuario legítimo. Para ver más ejemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 Las siguientes características son comunes al CSRF:
 
@@ -706,7 +706,7 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 
 AEM Forms en JEE proporciona el Filtro de referente para especificar los referentes a los que se permite el acceso a los recursos del servidor. De forma predeterminada, el Filtro de referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* se establece en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente procedentes de ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El Filtro de referente se desactiva si se eliminan todas las entradas de la lista Referentes permitidos.
 
-Cuando instala Document Services por primera vez, la lista Referentes permitidos se actualiza con la dirección del servidor en el que se ha instalado este. Las entradas del servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitado, la dirección de bucle invertido y una entrada localhost. El sistema operativo del host devuelve los nombres agregados a la lista Referentes permitidos. Por ejemplo, un servidor con la dirección IP 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. La lista de permitidos no se actualiza para los nombres no autorizados devueltos por el sistema operativo del host (nombres que no tienen una dirección IPv4, una dirección IPv6 o un nombre de dominio autorizado). Modifique la lista Referente permitidos para adaptarla a su entorno empresarial. No implemente el servidor de Forms en el entorno de producción con la lista Referentes permitidos predeterminada. Si ha modificado cualquiera de los referentes permitidos, las excepciones de los referentes permitidos o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
+Cuando instala Document Services por primera vez, la lista Referentes permitidos se actualiza con la dirección del servidor en el que se ha instalado este. Las entradas del servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitado, la dirección de bucle invertido y una entrada localhost. El sistema operativo del host devuelve los nombres agregados a la lista Referentes permitidos. Por ejemplo, un servidor con la dirección IP 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. La lista de permitidos no se actualiza para los nombres no autorizados devueltos por el sistema operativo del host (nombres que no tienen una dirección IPv4, una dirección IPv6 o un nombre de dominio autorizado). Modifique la lista Referente permitidos para adaptarla a su entorno empresarial. No implemente el servidor de Forms en el entorno de producción con la lista Referentes permitidos predeterminada. Si ha modificado cualquiera de los referentes permitidos, las excepciones de los referentes permitidos o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
 
 **Administración de la lista Referentes permitidos**
 
@@ -932,7 +932,7 @@ Esta sección describe los puertos predeterminados (y los intervalos de configur
     <ul> 
      <li><p>Puerto de escucha del servidor de administración: el valor predeterminado es 7001</p> </li> 
      <li><p>Puerto de escucha SSL del servidor de administración: el valor predeterminado es 7002</p> </li> 
-     <li><p>Puerto configurado para el servidor administrado; por ejemplo, 8001</p> </li> 
+     <li><p>Puerto configurado para el servidor administrado; por ejemplo, 8001</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 20%
+source-wordcount: '1892'
+ht-degree: 17%
 
 ---
 
@@ -25,7 +25,7 @@ En esta sección se describe cómo crear y administrar páginas con Adobe Experi
 
 ## Organizar el sitio web {#organizing-your-website}
 
-Como creador, deberá organizar el sitio web dentro de AEM. Esto implica crear y asignar un nombre a las páginas de contenido para que:
+AEM Como creador, debe organizar el sitio web dentro de la organización de la creación de. Esto implica crear y asignar un nombre a las páginas de contenido para que:
 
 * puede encontrarlos fácilmente en el entorno de creación
 * los visitantes del sitio pueden explorarlas fácilmente en el entorno de publicación
@@ -72,7 +72,7 @@ Esta estructura se puede ver desde la consola Sitios web, que puede utilizar par
 
 ### Convenciones de nomenclatura de páginas {#page-naming-conventions}
 
-Al crear una nueva página, hay dos campos de claves:
+Al crear una página, hay dos campos de claves:
 
 * **[Título](#title)**:
 
@@ -84,7 +84,7 @@ Al crear una nueva página, hay dos campos de claves:
    * Se usa para generar la URI.
    * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título.
 
-AEM Al crear una página nueva, la opción de configuración de la página de inicio de sesión es: [valide el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
+AEM Al crear una página, se debe hacer lo siguiente [valida el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
 
 La implementación y la lista de caracteres permitidos difieren ligeramente según la interfaz de usuario (es más extensa para la interfaz con capacidad táctil), pero el mínimo permitido es:
 
@@ -98,7 +98,7 @@ Utilice únicamente estos caracteres si desea asegurarse de que se aceptan o uti
 
 #### Título {#title}
 
-Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre** de página de esta cadena y lo [validará según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. En ambas IU, una **Título** se aceptará el campo que contenga caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
+Si proporciona solo una página **Título** AEM al crear una página, se deriva la página de forma de **Nombre** de esta cadena y [valide el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR. En ambas IU, una **Título** se aceptará el campo que contenga caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -107,7 +107,7 @@ Si proporciona solo un **título** de página al crear una nueva página, AEM de
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
+Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
 
 En la IU clásica puede **no puede introducir caracteres no válidos** en el **Nombre** field.
 
@@ -122,7 +122,7 @@ En la IU clásica puede **no puede introducir caracteres no válidos** en el **N
 
 ### Plantillas {#templates}
 
-En AEM, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
+En AEM, una plantilla especifica un tipo de página especializado. Se utiliza una plantilla como base para cualquier página nueva que se cree.
 
 La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
@@ -152,7 +152,7 @@ Una vez que haya creado y abierto una página, puede [añadir contenido mediante
 
 A menos que se hayan creado todas las páginas por adelantado, antes de empezar a crear contenido, debe crear una página:
 
-1. Desde el **Sitios web** , seleccione el nivel en el que desea crear una nueva página.
+1. Desde el **Sitios web** , seleccione el nivel en el que desea crear una página.
 
    En el ejemplo siguiente, se crea una página en el nivel **Productos** - se muestra en el panel izquierdo; el panel derecho muestra páginas que ya existen en el nivel inferior **Productos**.
 
@@ -167,7 +167,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    * Proporcione un **Título**; esto se muestra al usuario.
    * Proporcione un **Nombre**; se utiliza para generar el URI. Si no se especifica, el nombre se derivará del título.
 
-      * Si proporciona una página **Nombre** AEM al crear una página nueva, se le mostrará lo siguiente [valide el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por los JCR y los de la.
+      * Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por los JCR y los de la.
       * En la IU clásica puede: **no puede introducir caracteres no válidos** en el **Nombre** field.
 
    * Haga clic en la plantilla que desee utilizar para crear la nueva página.
@@ -178,7 +178,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    >
    >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página nueva es la siguiente **Título** y la plantilla requerida.
+   La información mínima necesaria para crear una página es la siguiente **Título** y la plantilla requerida.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -188,11 +188,11 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
 1. Clic **Crear** para crear la página. Volverá a la **Sitios web** consola en la que puede ver una entrada para la nueva página.
 
-   La consola proporciona información sobre la página (por ejemplo, cuándo se editó por última vez y quién la modificó) que se actualiza según sea necesario.
+   La consola proporciona información sobre la página (por ejemplo, cuándo se editó por última vez y quién la modificó), que se actualiza según sea necesario.
 
    >[!NOTE]
    >
-   >También puede crear una página cuando esté editando una página existente. Uso de **Crear página secundaria **desde **Página** de la barra de tareas, creará una nueva página directamente debajo de la página que se está editando.
+   >También puede crear una página cuando esté editando una página existente. Uso de **Crear página secundaria** desde el **Página** de la barra de tareas crea una página directamente debajo de la página que se está editando.
 
 ### Abrir una página para su edición {#opening-a-page-for-editing}
 
@@ -328,7 +328,7 @@ Puede [bloquear/desbloquear una página](/help/sites-classic-ui-authoring/classi
 
 1. Abra el **Sitios web** y vaya a la ubicación requerida.
 1. En el **Nuevo...** (haga clic en la flecha situada junto a **Nuevo...**), seleccione **Nueva carpeta...**.
-1. El **Crear carpeta** se abrirá. Aquí puede indicar el **Nombre** y el **Título**:
+1. El **Crear carpeta** se abre el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

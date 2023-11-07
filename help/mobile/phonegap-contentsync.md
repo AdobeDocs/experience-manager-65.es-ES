@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2959'
+source-wordcount: '2957'
 ht-degree: 0%
 
 ---
@@ -287,7 +287,7 @@ Observe que la variable *fábrica* La definición de contiene la interfaz común
 
 ### Implementar un controlador de actualización personalizado {#implementing-a-custom-update-handler}
 
-Cada página de We.Retail Mobile contiene un logotipo en la esquina superior izquierda que queremos incluir en el archivo zip, por supuesto. AEM Sin embargo, para la optimización de la caché, no hace referencia a la ubicación real del archivo de imagen en el repositorio, lo que nos impide simplemente utilizar la variable **copia** tipo de configuración. Lo que debemos hacer en su lugar es proporcionar lo nuestro **logo** AEM tipo de configuración que hace que la imagen esté disponible en la ubicación solicitada por el usuario de. La siguiente lista de códigos muestra la implementación completa del controlador de actualización de logotipos:
+Cada página de We.Retail Mobile contiene un logotipo en la esquina superior izquierda que queremos incluir en el archivo zip. AEM Sin embargo, para la optimización de la caché, no hace referencia a la ubicación real del archivo de imagen en el repositorio, lo que nos impide simplemente utilizar la variable **copia** tipo de configuración. Lo que debemos hacer en su lugar es proporcionar lo nuestro **logo** AEM tipo de configuración que hace que la imagen esté disponible en la ubicación solicitada por el usuario de. La siguiente lista de códigos muestra la implementación completa del controlador de actualización de logotipos:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

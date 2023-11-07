@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Solo deben aplicarse otras restricciones de datos, como obligatorias o restricci
 
 #### Ejemplos {#example-1}
 
-El ejemplo anterior de uso de una `lastModified` La propiedad de fecha en, por ejemplo, el nodo &quot;publicación de blog&quot;, no significa realmente que sea necesario un tipo de nodo especial. Definitivamente me vendría bien `nt:unstructured` para los nodos de mi entrada de blog al menos inicialmente. Ya que en mi aplicación de blogs, todo lo que voy a hacer es mostrar la fecha de lastModified de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha en absoluto. Porque confío implícitamente en mi aplicación de escritura de blogs para poner una &quot;fecha&quot; de todos modos, no hay realmente necesidad de declarar la presencia de una `lastModified` fecha en forma de tipo de nodo.
+El ejemplo anterior de uso de una `lastModified` La propiedad Fecha en, por ejemplo, el nodo &quot;publicación de blog&quot;, no significa realmente que sea necesario un tipo de nodo especial. Definitivamente me vendría bien `nt:unstructured` para los nodos de mi entrada de blog al menos inicialmente. Ya que en mi aplicación de blogs, todo lo que voy a hacer es mostrar la fecha de lastModified de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha en absoluto. Porque confío implícitamente en mi aplicación de escritura de blogs para poner una &quot;fecha&quot; de todos modos, no hay realmente necesidad de declarar la presencia de una `lastModified` fecha en forma de tipo de nodo.
 
 ### #2 de reglas: Controle la jerarquía de contenido; no permita que esto ocurra. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4950'
+source-wordcount: '4962'
 ht-degree: 1%
 
 ---
@@ -387,7 +387,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>node.type.management.value.constraints.supported</td>
-   <td>true indica que el repositorio admite restricciones de valor para las propiedades del nodo.</td>
+   <td>true indica que el repositorio admite restricciones de valor para las propiedades de nodo.</td>
   </tr>
   <tr>
    <td>node.type.management.property.types</td>
@@ -480,7 +480,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>option.retention.supported</td>
-   <td>true indica que el repositorio admite el uso de aplicaciones de administración de retención externas para aplicar directivas de retención al contenido y admite retención y liberación.</td>
+   <td>true indica que el repositorio admite el uso de aplicaciones de administración de retención externas para aplicar directivas de retención al contenido y admite la retención y la liberación.</td>
   </tr>
   <tr>
    <td>option.lifecycle.supported</td>
@@ -894,7 +894,7 @@ La página principal de la consola JMX incluye una tabla de servicios. Cada fila
 
 ## Uso de aplicaciones JMX externas para la monitorización {#using-external-jmx-applications-for-monitoring}
 
-CRX permite que las aplicaciones externas interactúen con Managed Beans (MBeans) mediante [Extensiones de administración de Java (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Uso de consolas genéricas como [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) o aplicaciones de monitorización específicas del dominio, permite obtener y establecer configuraciones y propiedades de CRX, así como monitorizar el rendimiento y el uso de recursos.
+CRX permite que las aplicaciones externas interactúen con Managed Beans (MBeans) mediante [Extensiones de administración de Java (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Uso de consolas genéricas como [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) o aplicaciones de monitorización específicas del dominio, permite obtener y establecer configuraciones y propiedades CRX, y monitorizar el rendimiento y el uso de recursos.
 
 ### Usar JConsole para conectarse a CRX {#using-jconsole-to-connect-to-crx}
 
@@ -915,7 +915,7 @@ JConsole mostrará una lista de los procesos locales de la máquina virtual Java
 
 ### Conectarse a un proceso CRX remoto {#connecting-to-a-remote-crx-process}
 
-Para conectarse a un proceso CRX remoto, la JVM que aloja el proceso CRX remoto deberá estar habilitada para aceptar conexiones JMX remotas.
+Para conectarse a un proceso CRX remoto, la JVM que aloja el proceso CRX remoto debe estar habilitada para aceptar conexiones JMX remotas.
 
 Para habilitar conexiones JMX remotas, se debe establecer la siguiente propiedad del sistema al iniciar la JVM:
 

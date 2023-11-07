@@ -3,9 +3,9 @@ title: Pasos de actualización para instalaciones de Application Server
 description: AEM Obtenga información sobre cómo actualizar las instancias de los recursos implementados a través de los servidores de aplicaciones.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de ap
 
    * Eliminar **sling.options.file** ejecutando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. AEM Ahora, cree el almacén de nodos y el almacén de datos que se utilizará con la versión 6.5 de la. Para ello, cree dos archivos con los siguientes nombres en `crx-quickstart\install`:
+1. AEM Ahora, cree el almacén de nodos y el almacén de datos que se utiliza con la versión 6.5 de. Para ello, cree dos archivos con los siguientes nombres en `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`

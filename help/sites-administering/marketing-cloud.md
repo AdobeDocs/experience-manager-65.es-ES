@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '843'
 ht-degree: 5%
 
 ---
 
 # Integración con Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-El [Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html), incluye potentes análisis web y productos de optimización de sitios web que ofrecen datos y perspectivas procesables en tiempo real para impulsar iniciativas en línea exitosas. Ofrece una plataforma integrada y abierta para la optimización comercial en línea. La nube consiste en aplicaciones integradas para recopilar y liberar el poder de la perspectiva del cliente para optimizar los esfuerzos de adquisición, conversión y retención del cliente, así como la creación y distribución de contenido.
+El [Adobe Experience Cloud](https://business.adobe.com/products/marketing-cloud/main.html), incluye potentes análisis web y productos de optimización de sitios web que ofrecen datos y perspectivas procesables en tiempo real para impulsar iniciativas en línea exitosas. Ofrece una plataforma integrada y abierta para la optimización comercial en línea. La nube consiste en aplicaciones integradas para recopilar y liberar el poder de la perspectiva del cliente para optimizar los esfuerzos de adquisición, conversión y retención del cliente y la creación y distribución de contenido.
 
 Con Adobe Experience Manager AEM (), puede integrarse fácilmente con los siguientes productos de Adobe Experience Cloud:
 
@@ -37,7 +37,7 @@ Puede utilizar Adobe Analytics para analizar los datos de sus sitios.
 Al integrar con Adobe Analytics, puede hacer lo siguiente:
 
 * Habilite el seguimiento de usuarios de Analytics.
-* Asigne los modos de ejecución (por ejemplo, creación y publicación) a diferentes grupos de informes.
+* Asigne los modos de ejecución (por ejemplo, autor, publicación) a diferentes grupos de informes.
 * Envíe variables de Client Context como variables de conversión o propiedades de tráfico.
 * Utilice asignaciones de variables predefinidas.
 * Configure secciones completas del sitio a la vez.
@@ -89,7 +89,7 @@ La integración de Audience Manager AEM se ha eliminado en la versión 6.3 de la
 
 <!-- Search&Promote is end of life as of September 1, 2022 ## Integrating with Search&Promote {#integrating-with-search-promote} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics. -->
+<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, and automate merchandising and promotions activity via KPI-based triggers or metrics. -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance. -->
 

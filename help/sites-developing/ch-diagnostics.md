@@ -1,16 +1,14 @@
 ---
 title: Diagnóstico de ContextHub
-seo-title: ContextHub Diagnostics
 description: ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub
-seo-description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '473'
 ht-degree: 1%
 
 ---
@@ -25,7 +23,7 @@ La página Diagnósticos de ContextHub proporciona información sobre los almace
 
 >[!NOTE]
 >
->Para que se devuelva la información de diagnóstico, debe habilitarse el modo de depuración; de lo contrario, la página de diagnósticos estará en blanco. Consulte lo siguiente [este documento](ch-configuring.md#debugging-contexthub) para obtener más información sobre cómo habilitar el modo de depuración.
+>Para que se devuelva la información de diagnóstico, debe habilitarse el modo de depuración; de lo contrario, la página de diagnósticos estará en blanco. Consulte [este documento](ch-configuring.md#debugging-contexthub) para obtener más información sobre cómo habilitar el modo de depuración.
 
 >[!NOTE]
 >

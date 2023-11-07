@@ -11,10 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3892'
-ht-degree: 98%
+source-wordcount: '3888'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
    <td>Especifica el contenido del campo antes de los cambios determinados por las acciones de un usuario. El valor puede recuperarse de la misma manera que una función deshacer.</td>
    <td><p>No funciona para cuadros de lista y listas desplegables. <code>PrevText </code> no funciona correctamente en los siguientes casos:</p>
     <ul>
-     <li>Al escribir caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos numéricos de iPad, y </li>
+     <li>Al escribir caracteres especiales (por ejemplo, $, (,), &amp;, @, etc.) en los campos numéricos de iPad, y </li>
      <li>Para el campo Fecha (cuando la fecha se introduce mediante el calendario).<br /> </li>
     </ul> <p>No es compatible la configuración del valor mediante script.</p> </td>
   </tr>
@@ -52,7 +52,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
     <ul>
      <li>Al seleccionar o reemplazar textos</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir caracteres especiales (por ejemplo $, (, ), &amp;, @, etc.) en los campos numéricos<br /> </li>
+     <li>Al escribir caracteres especiales (por ejemplo, $, (, ), &amp;, @, etc.) en los campos numéricos<br /> </li>
      <li>Al utilizar la combinación Mayús+alfanumérico. </li>
      <li>Al usar los campos de fecha y hora.</li>
     </ul>
@@ -67,7 +67,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
     <ul>
      <li>Al seleccionar o reemplazar textos</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos numéricos<br /> </li>
+     <li>Al escribir caracteres especiales (por ejemplo, $, (,), &amp;, @, etc.) en los campos numéricos<br /> </li>
      <li>Al utilizar la combinación Mayús+alfanumérico. </li>
      <li>Al usar los campos de fecha y hora.</li>
     </ul> <p>No es compatible la configuración del valor mediante script.</p> </td>
@@ -1353,4 +1353,4 @@ Los siguientes eventos XFA del lado del cliente son compatibles:
 
 >[!NOTE]
 >
->Los formularios HTML5 se representan en el lado del cliente (explorador). Se recomienda utilizar los scripts del lado del cliente **validate** y **calculate** en lugar de scripts del lado del servidor.
+>Los formularios HTML5 se representan en el lado del cliente (explorador). Uso del lado del cliente **validate** y **calcular** scripts en lugar de scripts del lado del servidor.

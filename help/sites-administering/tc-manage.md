@@ -2,10 +2,10 @@
 title: Administración de proyectos de traducción
 description: Obtenga información sobre cómo administrar proyectos de traducción en Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3588'
-ht-degree: 55%
+source-wordcount: '3578'
+ht-degree: 52%
 
 ---
 
@@ -123,7 +123,7 @@ Después de crear un proyecto de traducción, puede utilizar el panel Recursos p
 
 Al añadir páginas a un proyecto de traducción, estas se incluyen en un nuevo trabajo de traducción. También puede [agregar páginas a un trabajo existente](#adding-pages-assets-to-a-translation-job).
 
-Al igual que al crear un nuevo proyecto, al anexar páginas, se añaden copias de estas a un lanzamiento cuando es necesario para evitar sobrescribir las copias de idioma existentes. Consulte [Creación de proyectos de traducción para copias de idiomas existentes](#performing-initial-translations-and-updating-existing-translations).
+Al igual que al crear un proyecto, al añadir páginas, se añaden copias de las páginas a un lanzamiento cuando es necesario para evitar sobrescribir las copias de idioma existentes. Consulte [Creación de proyectos de traducción para copias de idiomas existentes](#performing-initial-translations-and-updating-existing-translations).
 
 1. Utilice la consola Sites para seleccionar la página que está agregando al proyecto de traducción.
 
@@ -234,7 +234,7 @@ Cuando se crea un proyecto utilizando el panel Recursos de una página, estas pr
 
 ## Monitorización del estado de un trabajo de traducción {#monitoring-the-status-of-a-translation-job}
 
-El mosaico Trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción, así como el número de páginas y activos del trabajo.
+El mosaico Trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción y la cantidad de páginas y activos en el trabajo.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -412,7 +412,7 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida necesita ser [cambiada de nombre o movida](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado creará una nueva copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí. Para evitarlo, puede utilizar la funcionalidad de actualización de copia de idioma después del movimiento:
+Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado crea una copia de idioma basada en el nuevo nombre/ubicación de página. La copia de idioma antigua basada en el nombre/ubicación anterior sigue ahí. Para evitarlo, puede utilizar la funcionalidad de actualización de copia de idioma después del movimiento:
 
 1. Mueva una página que tenga una copia de idioma.
 1. Seleccione la raíz de la copia de idioma.
@@ -423,9 +423,9 @@ Si una página de origen ya traducida necesita ser [cambiada de nombre o movida]
 1. Haga clic en **Actualizar**. A [Launch](/help/sites-authoring/launches-promoting.md) se creará.
 1. Vaya a la raíz de idioma necesaria y selecciónela.
 1. Uso del **Referencias** panel, seleccionar **Lanzamientos**.
-1. Haga clic en el lanzamiento recién creado y haga clic en **Promocionar lanzamiento**.
+1. Haga clic en el lanzamiento creado y haga clic en **Promocionar lanzamiento**.
 
-Ahora se ha movido la página de origen, así como la copia de idioma asociada.
+Ahora se ha movido la página de origen y se ha copiado la copia de idioma asociada.
 
 ## Creación de un proyecto de traducción mediante la consola Proyectos {#creating-a-translation-project-using-the-projects-console}
 
@@ -450,7 +450,7 @@ Cuando cree manualmente un proyecto de traducción, debe proporcionar valores pa
 
 ## Exportación de un trabajo de traducción {#exporting-a-translation-job}
 
-Puede descargar el contenido de un trabajo de traducción, por ejemplo, para enviarlo a un proveedor de traducción que no esté integrado con AEM a través de un conector o para revisar el contenido.
+AEM Puede descargar el contenido de un trabajo de traducción, por ejemplo, para enviarlo a un proveedor de traducción que no esté integrado con a través de un conector o para revisar el contenido.
 
 1. En el menú desplegable del mosaico Trabajo de traducción, toque o haga clic en Exportar.
 1. En el cuadro de diálogo Exportar, toque o haga clic en Descargar archivo exportado y, si es necesario, utilice el cuadro de diálogo del explorador web para guardar el archivo.
@@ -458,7 +458,7 @@ Puede descargar el contenido de un trabajo de traducción, por ejemplo, para env
 
 ## Importación de un trabajo de traducción {#importing-a-translation-job}
 
-Puede importar contenido traducido a AEM, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con AEM a través de un conector.
+AEM AEM Se puede importar contenido traducido a los recursos, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con los recursos a través de un conector de la aplicación de traducción de los recursos de la aplicación de la traducción de los recursos de la red de.
 
 1. En el menú desplegable del mosaico Trabajo de traducción, toque o haga clic en Importar.
 1. Utilice el cuadro de diálogo del explorador web para seleccionar el archivo que desea importar.

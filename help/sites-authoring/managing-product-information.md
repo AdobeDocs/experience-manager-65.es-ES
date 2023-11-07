@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2989'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -62,10 +62,10 @@ Para iniciar una solicitud de sesión fotográfica, toque o haga clic en un proy
 
 A **Proyecto de sesión fotográfica del producto** incluye los siguientes flujos de trabajo predeterminados:
 
-* **Flujo de trabajo de la sesión fotográfica del producto (integración comercial)**: este flujo de trabajo aprovecha la integración comercial con el sistema de administración de la información del producto (PIM) para generar automáticamente una lista de tomas para los productos seleccionados (jerarquía). Una vez completado el flujo de trabajo, puede ver los datos del producto como parte de los metadatos del recurso.
+* **Flujo de trabajo de la sesión fotográfica del producto (integración comercial)**: Este flujo de trabajo utiliza la integración comercial con el sistema de gestión de la información del producto (PIM) para generar automáticamente una lista de tomas para los productos seleccionados (jerarquía). Una vez completado el flujo de trabajo, puede ver los datos del producto como parte de los metadatos del recurso.
 * **Flujo de trabajo de sesión fotográfica del producto**: Este flujo de trabajo permite proporcionar una lista de tomas en lugar de depender de la integración comercial. Asigna las imágenes cargadas a un archivo CSV en la carpeta de recursos del proyecto.
 
-Utilice el **Sesión fotográfica del producto (integración comercial)** AEM flujo de trabajo para asignar recursos de imagen con los productos en la. Este flujo de trabajo aprovecha la integración comercial para vincular las imágenes aprobadas a los datos de productos existentes en la ubicación `/etc/commerce`.
+Utilice el **Sesión fotográfica del producto (integración comercial)** AEM flujo de trabajo para asignar recursos de imagen con los productos en la. Este flujo de trabajo utiliza la integración comercial para vincular las imágenes aprobadas a los datos de producto existentes en la ubicación `/etc/commerce`.
 
 El **Sesión fotográfica del producto (integración comercial)** El flujo de trabajo de incluye las siguientes tareas:
 

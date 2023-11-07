@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3446'
 ht-degree: 2%
 
 ---
@@ -206,13 +206,13 @@ Para ver ejemplos, consulte:
 
 Los widgets para la interfaz de usuario táctil se implementan como componentes de la interfaz de usuario de Granite.
 
-Para crear un widget nuevo para utilizarlo en un cuadro de diálogo de componentes para la IU táctil, debe [crear un nuevo componente de campo de Granite UI](/help/sites-developing/granite-ui-component.md).
+Para crear un widget para utilizarlo en un cuadro de diálogo de componentes para la IU táctil, debe [Creación de un componente de campo de IU de Granite](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
 >Para obtener más información sobre la interfaz de usuario de Granite, consulte la [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Si considera el cuadro de diálogo como un contenedor simple para un elemento de formulario, también puede ver el contenido principal del cuadro de diálogo como campos de formulario. La creación de un nuevo campo de formulario requiere la creación de un tipo de recurso; esto equivale a la creación de un nuevo componente. Para ayudarle en esa tarea, la interfaz de usuario de Granite ofrece un componente de campo genérico del que heredar (mediante `sling:resourceSuperType`):
+Si considera el cuadro de diálogo como un contenedor simple para un elemento de formulario, también puede ver el contenido principal del cuadro de diálogo como campos de formulario. La creación de un campo de formulario requiere la creación de un tipo de recurso; esto equivale a la creación de un componente. Para ayudarle en esa tarea, la interfaz de usuario de Granite ofrece un componente de campo genérico del que heredar (mediante `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -228,7 +228,7 @@ Una vez creado el tipo de recurso, puede crear una instancia del campo añadiend
 
 Si desea definir el estilo y el comportamiento del componente, puede crear un [biblioteca de cliente](/help/sites-developing/clientlibs.md) que define su CSS/LESS personalizado y JS.
 
-Para que la biblioteca de cliente se cargue únicamente para el cuadro de diálogo del componente (es decir, no se cargará para otro componente), debe establecer la propiedad `extraClientlibs` del cuadro de diálogo al nombre de categoría de la biblioteca de cliente que acaba de crear. Esto es aconsejable si la biblioteca de cliente es bastante grande o si el campo es específico de ese cuadro de diálogo y no es necesario en otros cuadros de diálogo.
+Para que la biblioteca de cliente se cargue únicamente para el cuadro de diálogo del componente (es decir, no se cargará para otro componente), debe establecer la propiedad `extraClientlibs` del cuadro de diálogo al nombre de categoría de la biblioteca de cliente que ha creado. Esto es aconsejable si la biblioteca de cliente es bastante grande o si el campo es específico de ese cuadro de diálogo y no es necesario en otros cuadros de diálogo.
 
 Para que la biblioteca de cliente se cargue para todos los cuadros de diálogo, establezca la propiedad category de la biblioteca de cliente en `cq.authoring.dialog`. Es el nombre de categoría de la biblioteca de cliente que se incluye de forma predeterminada al procesar todos los cuadros de diálogo. Desea hacerlo si la biblioteca de cliente es pequeña o si el campo es genérico y se puede reutilizar en otros cuadros de diálogo.
 
@@ -346,13 +346,13 @@ Si el nuevo componente hace referencia a contenido de otras páginas, puede cons
 
 AEM La opción predeterminada solo comprueba el componente de referencia Para agregar el componente, debe configurar el paquete OSGi **Configuración de referencia del contenido de creación de WCM**.
 
-Cree una nueva entrada en la definición para especificar el componente, junto con la propiedad que desea comprobar. Por ejemplo:
+Cree una entrada en la definición para especificar el componente, junto con la propiedad que se va a comprobar. Por ejemplo:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+>AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ## Activación y adición del componente al sistema de párrafos {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -373,12 +373,12 @@ Se puede configurar este comportamiento y la relación de recurso a componente n
 
    * `/etc/designs/<myApp>/page/par`
 
-   Cree un nuevo nodo:
+   Cree un nodo:
 
    * Nombre: `cq:authoring`
    * Tipo: `nt:unstructured`
 
-1. En esta sección, cree un nuevo nodo que contenga todas las asignaciones de recursos a componentes:
+1. En esta sección, cree un nodo que contenga todas las asignaciones de recursos a componentes:
 
    * Nombre: `assetToComponentMapping`
    * Tipo: `nt:unstructured`
@@ -398,7 +398,7 @@ Se puede configurar este comportamiento y la relación de recurso a componente n
    * `assetMimetype`:
 
       * Tipo: `String`
-      * Valor: el tipo MIME del recurso relacionado; por ejemplo `image/*`
+      * Valor: el tipo MIME del recurso relacionado; por ejemplo, `image/*`
 
    * `droptarget`:
 
@@ -436,7 +436,7 @@ Puede encontrar el código de esta página en GitHub
 
 El [AEM Extensión de corchetes de](/help/sites-developing/aem-brackets.md) AEM proporciona un flujo de trabajo fluido para editar componentes de la aplicación y bibliotecas de cliente. Se basa en la variable [Corchetes](https://brackets.io/) editor de código.
 
-La extensión:
+La extensión es la siguiente:
 
 * AEM Facilita la sincronización (no se requiere Maven ni File Vault) para ayudar a aumentar la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados sobre la materia a participar en proyectos.
 * Proporciona algunos [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) es el lenguaje de plantilla diseñado para simplificar el desarrollo de componentes y aumentar la seguridad.

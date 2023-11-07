@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
 
 # Recolección de papelera del almacén de datos {#data-store-garbage-collection}
 
-Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia se convierte en &quot;basura&quot; que no necesita conservarse. En los casos en los que existen una serie de activos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento de la copia de seguridad y el mantenimiento del sistema de archivos.
+Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia se convierte en &quot;basura&quot; que no necesita conservarse. En los casos en que existen varios recursos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento del mantenimiento del sistema de archivos y la copia de seguridad.
 
 En su mayor parte, una aplicación WCM tiende a recopilar información, pero no a eliminarla casi con la misma frecuencia. Aunque se añaden nuevas imágenes, incluso sustituyendo a las versiones antiguas, el sistema de control de versiones conserva la antigua y admite la reversión a ella si es necesario. Por lo tanto, la mayor parte del contenido que pensamos que se añade al sistema se almacena de forma efectiva de forma permanente. Entonces, ¿cuál es la fuente típica de &quot;basura&quot; en el repositorio que podríamos querer limpiar?
 
-AEM utiliza el repositorio de como almacenamiento para una serie de actividades internas y de mantenimiento:
+AEM utiliza el repositorio de como almacenamiento para varias actividades internas y de mantenimiento:
 
 * Paquetes creados y descargados
 * Archivos temporales creados para la replicación de publicación

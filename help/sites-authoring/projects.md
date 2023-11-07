@@ -2,9 +2,9 @@
 title: Proyectos
 description: Los proyectos permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1359'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ La consola Proyectos es donde se accede a los proyectos y se administran dentro 
 
 ![La consola Proyectos](assets/screen-shot_2019-03-05at125110.png)
 
-AEM La consola Proyectos es similar a otras consolas en, permite realizar una serie de acciones en proyectos individuales, así como ajustar la vista de los proyectos.
+AEM La consola Proyectos es similar a otras consolas en, permite realizar varias acciones en proyectos individuales y ajustar la vista de los proyectos en la que se encuentran.
 
 ### Alternar el modo {#modes}
 
@@ -129,7 +129,7 @@ El **Vínculos** El mosaico permite asociar vínculos externos con el proyecto.
 
 ![Mosaico Vínculos](assets/project-tile-links.png)
 
-Puede asignar al vínculo un nombre fácil de reconocer, así como cambiar la miniatura.
+Puede asignar al vínculo un nombre fácil de reconocer y cambiar la miniatura.
 
 ### Información del proyecto {#project-info}
 

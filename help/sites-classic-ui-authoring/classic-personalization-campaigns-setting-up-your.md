@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2223'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ La configuración de una nueva campaña incluye los siguientes pasos (genéricos
 1. [Creación de una campaña](#creating-a-new-campaign) para albergar experiencias; por ejemplo, páginas de teaser o un boletín informativo.
 1. Si es necesario, puede [defina las propiedades de la nueva campaña](#defining-the-properties-for-your-new-campaign).
 
-A continuación, según el tipo de experiencia que esté creando, deberá [crear una experiencia](#creating-a-new-experience). Los detalles de la experiencia y las acciones que siguen a su creación dependen del tipo de experiencia que desee crear:
+A continuación, según el tipo de experiencias que cree, debe [crear una experiencia](#creating-a-new-experience). Los detalles de la experiencia y las acciones que siguen a su creación dependen del tipo de experiencia que desee crear:
 
 * Si crea un teaser:
 
@@ -50,15 +50,13 @@ A continuación, según el tipo de experiencia que esté creando, deberá [crear
 
 ## Crear una nueva marca {#creating-a-new-brand}
 
-Para crear una nueva marca:
-
 1. Abra el **MCM** y seleccione **Campañas** en el panel izquierdo.
 
 1. Seleccionar **Nuevo...** para introducir el **Título** y **Nombre** y plantilla para su nueva marca:
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Haga clic en **Crear**. La nueva marca se mostrará en el MCM (con un icono predeterminado).
+1. Haga clic en **Crear**. La nueva marca se muestra en el MCM (con un icono predeterminado).
 
 ### Definición de las propiedades de la nueva marca {#defining-the-properties-for-your-new-brand}
 
@@ -72,8 +70,6 @@ Para crear una nueva marca:
 
 ### Creación de una nueva campaña {#creating-a-new-campaign}
 
-Para crear una nueva campaña:
-
 1. Desde **Campañas**, seleccione la nueva marca en el panel izquierdo o haga doble clic en el icono del panel derecho.
 
    Se muestra la descripción general (vacío si la marca es nueva).
@@ -82,7 +78,7 @@ Para crear una nueva campaña:
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Haga clic en **Crear**. La nueva campaña se mostrará en el MCM.
+1. Haga clic en **Crear**. La nueva campaña se muestra en el MCM.
 
 ### Definición de las propiedades de la nueva campaña {#defining-the-properties-for-your-new-campaign}
 
@@ -105,7 +101,7 @@ Configure las propiedades de la campaña que controlan el comportamiento:
 
 ### Creación de una nueva experiencia {#creating-a-new-experience}
 
-El procedimiento para crear una nueva experiencia depende del tipo de experiencia:
+El procedimiento para crear una experiencia depende del tipo de experiencia:
 
 * [Creación de un teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Creación de una newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
@@ -154,7 +150,7 @@ Si tiene experiencias existentes, puede agregar un punto de contacto directament
 >[!NOTE]
 >
 >El Adobe no tiene previsto seguir mejorando esta capacidad (gestión de posibles clientes).
->La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+>La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
 AEM En MCM, puede organizar y agregar posibles clientes introduciéndolos manualmente o importando una lista separada por comas, por ejemplo, una lista de correo. Otras formas de generar posibles clientes son las suscripciones a boletines informativos o las suscripciones a la comunidad (si se configuran, pueden almacenar en déclencheur un flujo de trabajo que rellene los posibles clientes).
 
@@ -172,7 +168,7 @@ En el panel, puede acceder a todos los posibles clientes haciendo clic en **Posi
 
 Después de crear nuevos posibles clientes, asegúrese de lo siguiente [activarlos](#activating-or-deactivating-leads) para que pueda rastrear su actividad en la instancia de publicación y personalizar su experiencia.
 
-Para crear un nuevo posible cliente manualmente:
+Para crear un posible cliente manualmente:
 
 1. AEM En la barra de herramientas, navegue hasta el MCM. En el panel, haga clic en **Posibles clientes**.
 1. Clic **Nuevo**. El **Crear nuevo** se abre.
@@ -207,7 +203,7 @@ Para posibles clientes activos o desactivados:
 
 ### Importación de nuevos posibles clientes {#importing-new-leads}
 
-Al importar nuevos posibles clientes, puede agregarlos automáticamente a una lista existente o crear una nueva lista para incluirlos.
+Al importar nuevos posibles clientes, puede agregarlos automáticamente a una lista existente o crear una lista para incluirlos.
 
 Para importar posibles clientes de una lista separada por comas:
 
@@ -302,7 +298,7 @@ Para eliminar los posibles clientes existentes en el MCM, seleccione la casilla 
 >[!NOTE]
 >
 >El Adobe no tiene previsto seguir mejorando esta capacidad (gestión de listas).
->La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
+>La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo selecto de personas; por ejemplo, puede enviar una newsletter segmentada a una lista. Las listas son visibles en el MCM, ya sea en el panel o haciendo clic en **Listas**. Ambos le proporcionan el nombre de la lista y el número de miembros.
 
@@ -314,8 +310,6 @@ Si hace clic **Listas**, también puede ver si la lista es miembro de otra lista
 
 ### Creación de nuevas listas {#creating-new-lists}
 
-Para crear una nueva lista (grupo):
-
 1. En el panel del MCM, haga clic en **Nueva lista...** o en **Listas**, haga clic en **Nuevo** ... Se abrirá la ventana Crear lista.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -325,8 +319,6 @@ Para crear una nueva lista (grupo):
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Modificación de listas existentes {#modifying-existing-lists}
-
-Para modificar una lista existente:
 
 1. En el MCM, haga clic en **Listas**.
 
@@ -384,7 +376,7 @@ Para combinar listas existentes:
 
 En cualquier momento, puede ver qué posibles clientes pertenecen a una lista específica explorando o buscando miembros.
 
-Para ver los posibles clientes que pertenecen a una lista:
+Para ver los posibles clientes en las listas:
 
 1. En el MCM, haga clic en **Listas**.
 

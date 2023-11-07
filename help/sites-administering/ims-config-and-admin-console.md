@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 9%
+source-wordcount: '1668'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Esta función solo está disponible para los clientes de Adobe Managed Services.
+>Esta función solo está disponible para los clientes de Managed Services de Adobe.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ AEM a la [!DNL Admin Console] AEM permitirá a los clientes de Managed Services 
 
 ## Puntos clave destacados {#key-highlights}
 
-* AEM La compatibilidad con la autenticación IMS solo es para autores, administradores o desarrolladores de AEM, no para usuarios finales externos de sitios de clientes como visitantes del sitio
+* AEM AEM La compatibilidad con la autenticación IMS solo es para autores, administradores o desarrolladores de, no para usuarios finales externos de sitios de clientes como visitantes del sitio
 * El [!DNL Admin Console] AEM representará a los clientes de Managed Services como organizaciones de IMS y sus instancias como contextos de producto. Los administradores de sistemas de clientes y productos podrán administrar el acceso a las instancias
 * AEM Managed Services sincronizará las topologías de clientes con [!DNL Admin Console]. AEM Habrá una instancia de contexto de producto de Managed Services por instancia en la instancia de [!DNL Admin Console].
 * Perfiles de producto en [!DNL Admin Console] determinará a qué instancias puede acceder un usuario
@@ -54,7 +54,7 @@ AEM El flujo de inicio de sesión del usuario se muestra a continuación; se red
 
 La incorporación del cliente a [!DNL Admin Console] AEM es un requisito previo para utilizar Adobe IMS para la autenticación de la.
 
-Como primer paso, los clientes deben disponer de una organización en Adobe IMS. Los clientes de Adobe Enterprise están representados como organizaciones de IMS en la [Adobe [!DNL Admin Console]](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
+Como primer paso, los clientes deben disponer de una organización en Adobe IMS. Los clientes de Adobe Enterprise están representados como organizaciones de IMS en [Adobe [!DNL Admin Console]](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
 
 AEM Los clientes de Managed Services ya deben tener una organización aprovisionada y, como parte del aprovisionamiento de IMS, las instancias de cliente están disponibles en el [!DNL Admin Console] para administrar derechos de usuario y acceso.
 
@@ -116,11 +116,11 @@ La sincronización de usuarios se distribuye a través del repositorio de Adobe 
 
 Tenga en cuenta que hay disponible una versión preliminar 2.4RC1 con compatibilidad para la creación de grupos dinámicos y que se puede encontrar aquí: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-Las principales características de esta versión son la capacidad de asignar dinámicamente nuevos grupos LDAP para la pertenencia de usuarios a [!DNL Admin Console], así como la creación dinámica de grupos de usuarios.
+Las principales características de esta versión son la capacidad de asignar dinámicamente nuevos grupos LDAP para la pertenencia de usuarios a [!DNL Admin Console]y creación dinámica de grupos de usuarios.
 
 Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 
-[https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)
+[https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options)
 
 >[!NOTE]
 >
@@ -129,14 +129,14 @@ Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 >
 >La herramienta de sincronización de usuarios debe registrarse como cliente de Adobe I/O UMAPI mediante el procedimiento descrito [aquí](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->La documentación de la consola de Adobe I/O se encuentra en [aquí](https://developer.adobe.com/developer-console/docs/guides/).
+>La documentación de la consola de Adobe I/O se encuentra en [aquí](https://developer.adobe.com/developer-console/documentos/guías/).
 >
 >
 >El [!DNL User Management] La API que utiliza la herramienta de sincronización de usuarios se explica en esta [ubicación](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >
->AEM El equipo de Adobe Managed Services se encargará de la configuración de la IMS de la. Sin embargo, el administrador del cliente puede modificarla según sus necesidades (por ejemplo, Pertenencia a un grupo automático o Asignación de grupos). El cliente IMS también será registrado por su equipo de Managed Services.
+>AEM El equipo de Managed Services de Adobe se encargará de la configuración de la IMS de la. Sin embargo, el administrador del cliente puede modificarla según sus necesidades (por ejemplo, Pertenencia a un grupo automático o Asignación de grupos). El cliente IMS también será registrado por su equipo de Managed Services.
 
 ## Usos {#how-to-use}
 

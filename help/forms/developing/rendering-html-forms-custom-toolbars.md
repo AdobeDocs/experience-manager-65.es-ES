@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2340'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ El servicio Forms permite personalizar una barra de herramientas que se procesa 
 
 >[!NOTE]
 >
->La ubicación de este URI se encuentra en el archivo adobe-forms-core.jar, que se encuentra en el archivo adobe-forms-dsc.jar. El archivo adobe-forms-dsc.jar se encuentra en la carpeta C:\Adobe\Adobe_Experience_Manager_forms\ (C:\ es el directorio de instalación). Puede utilizar una herramienta de extracción de archivos, como Win RAR, para abrir Adobe.
+>Esta ubicación de URI se encuentra en el archivo adobe-forms-core.jar, que se encuentra en el archivo adobe-forms-dsc.jar. El archivo adobe-forms-dsc.jar se encuentra en la carpeta C:\Adobe\Adobe_Experience_Manager_forms\ (C:\ es el directorio de instalación). Puede utilizar una herramienta de extracción de archivos, como Win RAR, para abrir Adobe.
 
 Puede copiar el archivo fscmenu.xml desde esta ubicación, modificarlo para que se ajuste a sus necesidades y, a continuación, colocarlo en una ubicación URI personalizada. A continuación, mediante la API del servicio de Forms, establezca las opciones en tiempo de ejecución que resultan en el servicio de Forms mediante el archivo fscmenu.xml desde la ubicación especificada. Estas acciones hacen que el servicio Forms procese un formulario de HTML que tiene una barra de herramientas personalizada.
 

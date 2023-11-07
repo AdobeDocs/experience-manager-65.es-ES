@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 2%
@@ -578,13 +578,13 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td><p>Al reiniciar el paquete OSGi de etiquetado comunitario de día, solo se registrará la nueva ubicación como raíz de etiqueta si la ubicación anterior está vacía.</p> <p>AEM Las referencias a la ubicación anterior seguirán funcionando después de migrar a la nueva ubicación para todas las funcionalidades que aprovechen la API de TagManager para la resolución de etiquetas de la forma más rápida.</p> <p>Cualquier código personalizado que haga referencia explícita a la ruta <code>/etc/tags</code> debe actualizarse a <span class="code">/content/
+   <td><p>Al reiniciar el paquete OSGi de etiquetado comunitario de día, solo se registrará la nueva ubicación como raíz de etiqueta si la ubicación anterior está vacía.</p> <p>AEM Las referencias a la ubicación anterior seguirán funcionando después de migrar a la nueva ubicación para todas las funcionalidades que utilicen la API de TagManager para la resolución de etiquetas de la forma que se usa en la aplicación de etiquetas de forma independiente.</p> <p>Cualquier código personalizado que haga referencia explícita a la ruta <code>/etc/tags</code> debe actualizarse a <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>o, preferiblemente, reescrito para aprovechar la API de Java de TagManager junto con esta migración.</p> </td>
+      </code></span>, o preferiblemente reescrito para utilizar la API de Java de TagManager, junto con esta migración.</p> </td>
   </tr>
  </tbody>
 </table>

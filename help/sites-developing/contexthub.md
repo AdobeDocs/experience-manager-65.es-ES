@@ -1,18 +1,14 @@
 ---
 title: ContextHub
-seo-title: ContextHub
 description: ContextHub es un marco para almacenar, manipular y presentar datos de contexto
-seo-description: ContextHub is a framework for storing, manipulating, and presenting context data
-uuid: 14e6ff4f-ffbe-454a-b2ec-a35333526e27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '284'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,7 @@ ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de
 >
 >La ruta que contiene la configuración de ContextHub de ejemplo que utiliza el [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) solo debe utilizarse como referencia para crear su propia configuración.
 >
->No debe utilizarse en un proyecto como su propia configuración de ContextHub.
+>No utilice en un proyecto como su propia configuración de ContextHub.
 
 ## Persistencia {#persistence}
 

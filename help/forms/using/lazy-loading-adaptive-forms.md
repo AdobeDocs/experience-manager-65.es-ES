@@ -6,10 +6,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 91%
+source-wordcount: '1084'
+ht-degree: 87%
 
 ---
 
@@ -45,7 +45,7 @@ Las transacciones basadas en Forms implican elementos dinámicos para capturar d
 * **Escribir reglas para controlar la visibilidad de los campos**
 Los formularios incluyen algunos campos y secciones que no son aplicables a todos los usuarios y en todas las condiciones. Los autores y desarrolladores de formularios utilizan la visibilidad o las reglas de Mostrar u ocultar para controlar su visibilidad en función de las entradas del usuario. Por ejemplo, el campo Dirección de la oficina no se muestra a los usuarios que eligen Desempleado en el campo Situación laboral en un formulario. Para obtener más información sobre cómo escribir reglas, consulte [Uso del Editor de reglas](../../forms/using/rule-editor.md).
 
-  Puede aprovechar las reglas de visibilidad en los fragmentos cargados de forma diferida, de forma que los campos condicionales se muestren solo cuando sean necesarios. Además, puede marcar el campo condicional como global para hacer referencia a él en la expresión de visibilidad del fragmento cargado de forma diferida.
+  Puede utilizar reglas de visibilidad en los fragmentos cargados de forma diferida, de forma que los campos condicionales se muestren solo cuando sean necesarios. Además, puede marcar el campo condicional como global para hacer referencia a él en la expresión de visibilidad del fragmento cargado de forma diferida.
 
 ## Configuración de la carga diferida {#configuring-lazy-loading}
 
@@ -73,7 +73,7 @@ Puede marcar los valores de los objetos del fragmento cargado de forma diferida 
 
 A continuación encontrará algunas limitaciones, recomendaciones y puntos importantes a tener en cuenta a la hora de trabajar con la carga diferida:
 
-* Se recomienda utilizar formularios adaptables basados en esquemas XSD en lugar de formularios adaptables basados en XFA para configurar la carga diferida en formularios grandes. La mejora del rendimiento obtenida mediante la implementación de la carga diferida en los formularios adaptables basados en XFA es relativamente menor que la obtenida en los formularios adaptables basados en XSD.
+* Utilice formularios adaptables basados en esquemas XSD sobre formularios adaptables basados en XFA para configurar la carga diferida en formularios grandes. La mejora del rendimiento obtenida mediante la implementación de la carga diferida en los formularios adaptables basados en XFA es relativamente menor que la obtenida en los formularios adaptables basados en XSD.
 * No configure la carga diferida en fragmentos de un formulario adaptable que utilicen el diseño **[!UICONTROL Adaptable: todo en una página sin navegación]** en el panel raíz. La configuración de diseño Adaptable provoca que todos los fragmentos se carguen simultáneamente en un formulario adaptable. También puede provocar una reducción del rendimiento.
 * Se recomienda no configurar la carga diferida en el primer fragmento de un formulario adaptable.
 * Se recomienda no configurar la carga diferida de los fragmentos del primer panel que se representa al cargar el formulario adaptable.
@@ -87,7 +87,7 @@ A continuación encontrará algunas limitaciones, recomendaciones y puntos impor
 Estos son algunos puntos importantes que debe tener en cuenta al desarrollar scripts para paneles de carga diferida:
 
 * Asegúrese de que los scripts de inicialización y cálculo utilizados en los campos de un fragmento cargado de forma diferida son idempotentes. Los scripts idempotentes son aquellos que tienen el mismo efecto incluso después de varias ejecuciones.
-* Utilice la propiedad de los campos disponible de forma global para que el valor de los campos situados en un panel de carga diferida esté disponible en el resto de los paneles de un formulario.
+* Utilice la propiedad de los campos disponible de forma global para que el valor de los campos de un panel de carga diferida esté disponible en el resto de los paneles de un formulario.
 * No reenvíe el valor de referencia de un campo dentro de un panel de carga diferida, independientemente de si el campo está marcado como global en los fragmentos o no.
 * Utilice la función Restablecer del panel para restablecer todos sus elementos visibles mediante la siguiente expresión de clic.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
