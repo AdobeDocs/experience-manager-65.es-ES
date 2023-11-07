@@ -1,8 +1,8 @@
 ---
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 82%
+source-wordcount: '426'
+ht-degree: 78%
 
 ---
 # Código de conducta de Adobe
@@ -41,7 +41,7 @@ Este Código de conducta se aplica tanto en los espacios del proyecto como en lo
 
 ## Aplicación
 
-Se pueden notificar casos de comportamiento abusivo, discriminatorio o inaceptable poniéndose en contacto con el equipo del proyecto en Grp-opensourceoffice@adobe.com. Todas las denuncias serán examinadas e investigadas y darán lugar a la respuesta que se considere necesaria y adecuada a las circunstancias. El equipo del proyecto está obligado a mantener la confidencialidad con respecto al denunciante de un incidente. Los detalles adicionales de las políticas de ejecución específicas pueden publicarse por separado.
+Se pueden notificar casos de comportamiento abusivo, discriminatorio o inaceptable poniéndose en contacto con el equipo del proyecto en Grp-opensourceoffice@adobe.com. Todas las denuncias se examinan e investigan y dan lugar a una respuesta que se considera necesaria y adecuada a las circunstancias. El equipo del proyecto está obligado a mantener la confidencialidad con respecto al denunciante de un incidente. Los detalles adicionales de las políticas de ejecución específicas pueden publicarse por separado.
 
 Los responsables de los proyectos que no sigan o apliquen el Código de conducta de buena fe pueden tener repercusiones temporales o permanentes determinadas por otros miembros de la dirección del proyecto.
 

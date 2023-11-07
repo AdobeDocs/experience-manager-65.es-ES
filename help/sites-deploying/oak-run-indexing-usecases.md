@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deploying
 noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Para diagnosticar algunos de los casos relacionados con el Adobe de rendimiento 
 
 1. Volcar contenido de índice para análisis sin conexión;
 
-1. AEM Se podrá utilizar incluso si no se puede acceder a la
+1. AEM Se puede utilizar incluso si no se puede acceder a la
 
 Las operaciones anteriores ahora se pueden realizar mediante los siguientes comandos de índice de operaciones:
 
