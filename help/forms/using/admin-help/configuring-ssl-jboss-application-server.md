@@ -1,18 +1,14 @@
 ---
 title: Configurar SSL para el servidor de aplicaciones JBoss
-seo-title: Configuring SSL for JBoss Application Server
 description: Obtenga información sobre cómo configurar SSL para el servidor de aplicaciones JBoss.
-seo-description: Learn how to configure SSL for JBoss Application Server.
-uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '907'
 ht-degree: 2%
 
 ---
@@ -145,6 +141,7 @@ En este procedimiento:
       * Seleccione Acción > Detener.
       * Espere a que el estado del servicio aparezca como detenido.
       * Seleccione Acción > Iniciar.
+
    * Para instalaciones de JBoss preconfiguradas o configuradas manualmente en Adobe:
 
       * Desde un símbolo del sistema, vaya a *`[appserver root]`*/bin.
@@ -152,13 +149,12 @@ En este procedimiento:
 
          * (Windows) `shutdown.bat -S`
          * (Linux) `./shutdown.sh -S`
+
       * Espere hasta que el proceso de JBoss se haya cerrado completamente (cuando el proceso de JBoss devuelva el control al terminal en el que se inició).
       * Inicie el servidor introduciendo el siguiente comando:
 
          * (Windows) `run.bat -c <profile>`
          * (Linux) `./run.sh -c <profile>`
-
-
 
 1. Para acceder a la consola de administración mediante SSL, escriba `https://[host name]:'port'/adminui` en un explorador web:
 
@@ -200,6 +196,5 @@ En este procedimiento:
    >
    >* Reemplazar `[JAVA_HOME]` con el directorio en el que está instalado el JDK y reemplace el texto en cursiva por valores que se correspondan con su entorno.
    >* El certificado firmado por la CA importada reemplazará a un certificado público firmado automáticamente si existe.
-
 
 1. Complete los pasos 13 y 18 de Creación de una credencial SSL.

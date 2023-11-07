@@ -1,16 +1,12 @@
 ---
 title: Configurar Fuera de la oficina
-seo-title: Configuring Out of Office Settings
 description: AEM La función Fuera de la oficina le permite especificar cuándo un usuario estará fuera de la oficina y no podrá completar las tareas asignadas por los formularios de.
-seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
-uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 2%
@@ -30,7 +26,7 @@ Al crear un proceso, el usuario de Workbench puede especificar si una tarea se p
 
    **Buscar por nombre**
 
-   Seleccione la opción Buscar por nombre. Escriba todo o parte del nombre de usuario y haga clic en Buscar. Si deja el campo en blanco, el flujo de trabajo de Forms devuelve una lista de todos los usuarios
+   Seleccione la opción Buscar por nombre. Escriba todo o parte del nombre de usuario y haga clic en Buscar. Si deja el campo en blanco, el flujo de trabajo de Forms devuelve una lista de todos los usuarios.
 
    **Buscar por intervalo de fechas**
 

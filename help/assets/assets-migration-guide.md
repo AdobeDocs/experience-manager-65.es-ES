@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1791'
 ht-degree: 8%
 
 ---
@@ -55,7 +55,7 @@ Es posible que ya tenga una taxonomía de etiquetas configurada que esté aplica
 
 ### Ingesta de recursos {#ingesting-assets}
 
-El rendimiento y la estabilidad son preocupaciones importantes al ingerir recursos en el sistema. Dado que está cargando una gran cantidad de datos en el sistema, debe asegurarse de que el sistema funciona y de que puede minimizar la cantidad de tiempo necesaria y evitar sobrecargar el sistema, lo que puede provocar un bloqueo del sistema, especialmente en sistemas que ya están en producción.
+El rendimiento y la estabilidad son preocupaciones importantes al ingerir recursos en el sistema. Dado que está cargando una gran cantidad de datos en el sistema, debe asegurarse de que el sistema funciona correctamente para minimizar el tiempo necesario y evitar sobrecargar el sistema, lo que puede provocar un bloqueo del sistema, especialmente en sistemas que ya están en producción.
 
 Existen dos métodos para cargar los recursos en el sistema: un método basado en push con HTTP o un método basado en pull con las API de JCR.
 

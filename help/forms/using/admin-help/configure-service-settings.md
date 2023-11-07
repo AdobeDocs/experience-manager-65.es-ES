@@ -1,16 +1,14 @@
 ---
 title: Configurar los ajustes del servicio
 description: Obtenga información sobre cómo configurar los ajustes del servicio. AEM Puede utilizar la página Administración de servicios para configurar los ajustes de cada uno de los servicios que forman parte de los formularios de la.
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '10694'
+source-wordcount: '10692'
 ht-degree: 4%
 
 ---
@@ -223,7 +221,7 @@ Los siguientes ajustes están disponibles para el servicio Encryption.
 
 >[!NOTE]
 >
->Utilice la autenticación simple (nombre de usuario y contraseña) solo cuando la conexión esté protegida mediante SSL (mediante LDAPS).
+Utilice la autenticación simple (nombre de usuario y contraseña) solo cuando la conexión esté protegida mediante SSL (mediante LDAPS).
 
 **Modo de compatibilidad:**
 
@@ -425,13 +423,13 @@ Los siguientes ajustes están disponibles para el servicio de configuración de 
 
 **Aplicación de tareas:** Habilita la función Tareas en las aplicaciones cliente móviles. Cuando se selecciona esta opción, los usuarios pueden acceder a sus listas de tareas y completar tareas desde sus dispositivos móviles.
 
-**Aplicación de servicios de contenido:** Habilita la función Servicios de contenido en la aplicación cliente móvil. Esta función solo está disponible para iOS. Cuando se selecciona esta opción, los usuarios de iPhone y iPad pueden acceder a los archivos almacenados en el servidor WebDAV de su organización.
+**Aplicación de servicios de contenido:** Habilita la función Servicios de contenido en la aplicación cliente móvil. Esta función solo está disponible para iOS. Si se selecciona esta opción, los usuarios de iPhone y iPad pueden acceder a los archivos almacenados en el servidor WebDAV de su organización.
 
 **Compatibilidad sin conexión:** Permite a los usuarios seguir utilizando las aplicaciones cliente móviles incluso cuando no tienen conexión con el servidor (por ejemplo, cuando están fuera del rango de celdas o en modo avión). Los usuarios también deben habilitar la configuración Compatibilidad con conexión en sus dispositivos móviles. Esta función está disponible para dispositivos Android y iOS. Esta función está desactivada de forma predeterminada.
 
 >[!NOTE]
 >
->Si se ha habilitado la compatibilidad sin conexión y, a continuación, la deshabilita, los perfiles de aprovisionamiento de los usuarios se actualizan inmediatamente o en cuanto están en línea. Si un usuario ha estado trabajando sin conexión, todas las tareas pendientes se devuelven a su lista Tareas y todos los elementos de su Cola, incluidos los formularios pendientes, las tareas y los formularios que contienen errores de validación, se eliminan de la Cola.
+Si se ha habilitado la compatibilidad sin conexión y, a continuación, la deshabilita, los perfiles de aprovisionamiento de los usuarios se actualizan inmediatamente o en cuanto están en línea. Si un usuario ha estado trabajando sin conexión, todas las tareas pendientes se devuelven a su lista Tareas y todos los elementos de su Cola, incluidos los formularios pendientes, las tareas y los formularios que contienen errores de validación, se eliminan de la Cola.
 
 **Android:** Permite que los dispositivos Android se conecten al servidor.
 
@@ -733,7 +731,7 @@ Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carp
 
 >[!NOTE]
 >
->Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta inspeccionada. Por ejemplo, si la carga estimada para la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
+Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta inspeccionada. Por ejemplo, si la carga estimada para la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
 
 **Carpeta de fase:** El nombre predeterminado para la carpeta de fase dentro de la carpeta vigilada.
 
@@ -815,7 +813,7 @@ Se instalan los perfiles de seguridad predeterminados, que se pueden configurar 
 
    >[!NOTE]
    >
-   >Los servicios de procesamiento y envío que se utilizan con las variables xfaForm, Document Form y Form se ejecutan siempre con la cuenta de usuario del sistema.
+   Los servicios de procesamiento y envío que se utilizan con las variables xfaForm, Document Form y Form se ejecutan siempre con la cuenta de usuario del sistema.
 
 1. Haga clic en Agregar entidad principal para especificar los permisos que tienen los usuarios y grupos para este servicio.
 1. La pantalla Seleccionar principal muestra los usuarios y grupos configurados en Administración de usuarios. Si el usuario o grupo que desea no aparece, utilice la función de búsqueda para encontrarlo. Haga clic en el nombre de un usuario o grupo.

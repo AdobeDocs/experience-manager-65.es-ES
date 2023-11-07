@@ -9,10 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3983'
-ht-degree: 99%
+source-wordcount: '3979'
+ht-degree: 98%
 
 ---
 
@@ -170,7 +170,7 @@ Analice cada carta para descubrir las partes que la componen. El especialista en
 
 **Crear el diccionario de datos** Habrá valores de datos como “ID del cliente” y “Nombre del cliente” que son comunes en muchas cartas. Puede preparar una lista consolidada de todos estos valores de datos. Normalmente, se consulta a alguien del equipo de middleware empresarial para planificar la estructura. Esto forma la base para crear el diccionario de datos.
 
-**Abastecimiento de datos de sistemas empresariales back-end** También conocerá todos los valores de datos necesarios y desde dónde se obtienen los datos del sistema empresarial. A continuación, puede crear la implementación para extraer los datos del sistema empresarial y alimentarlos con la solución Cartas.
+**Abastecimiento de datos desde sistemas empresariales back-end** También conocerá todos los valores de datos necesarios y de dónde se obtienen los datos del sistema empresarial. A continuación, puede crear la implementación para extraer los datos del sistema empresarial y alimentarlos con la solución Cartas.
 
 **Calcular la complejidad de las cartas** Es importante determinar lo complejo que será crear una correspondencia determinada. Este análisis ayuda a determinar la cantidad de tiempo y conjuntos de aptitudes que se necesitarán para crear las plantillas de cartas. Esto, a su vez, ayudará a estimar los recursos y el gasto de la implementación de la solución Cartas.
 

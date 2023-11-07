@@ -1,18 +1,14 @@
 ---
 title: Configurar calendarios comerciales
-seo-title: Configuring Business Calendars
 description: Los calendarios comerciales definen los días laborables y no laborables de la organización. Obtenga información sobre cómo configurar los calendarios empresariales.
-seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1898'
 ht-degree: 1%
 
 ---
@@ -39,7 +35,7 @@ Si algunos usuarios de su organización tienen diferentes días no laborables, p
 
 1. Decida cómo va a asociar el calendario empresarial adecuado a un usuario. Existen dos formas de asociar un calendario empresarial a un usuario:
 
-   **Pertenencia a grupo:** Puede asignar un calendario empresarial a un usuario según su pertenencia al grupo. En este caso, cada usuario del grupo utilizará el mismo calendario empresarial.
+   **Pertenencia a grupo:** Puede asignar un calendario empresarial a un usuario en función de su pertenencia al grupo. En este caso, cada usuario del grupo utilizará el mismo calendario empresarial.
 
    AEM Si un usuario es miembro de dos grupos diferentes y esos grupos están asignados a dos calendarios comerciales diferentes, los formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación utilizarán el primer calendario que encuentre en sus resultados de búsqueda. En este caso, considere la posibilidad de utilizar claves de calendario empresarial para asociar usuarios con calendarios comerciales.
 
@@ -128,7 +124,7 @@ AEM Los formularios de datos le permiten exportar e importar calendarios comerci
 
 >[!NOTE]
 >
->AEM Esta característica exporta e importa todos los calendarios comerciales definidos, incluido el calendario empresarial predeterminado proporcionado por los formularios de la aplicación de la aplicación de datos de la aplicación de datos de la aplicación de datos de la aplicación de datos. Un calendario empresarial importado con el mismo nombre que un calendario existente sobrescribirá el calendario existente.
+>AEM Esta característica exporta e importa todos los calendarios comerciales definidos, incluido el calendario empresarial predeterminado proporcionado por los formularios de la aplicación de la aplicación de datos de la aplicación de datos de la aplicación de datos de la aplicación. Un calendario empresarial importado con el mismo nombre que un calendario existente sobrescribe el calendario existente.
 
 ### Exportar calendarios comerciales {#export-business-calendars}
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ A medida que aumenta el tamaño de la implementación de un proyecto, también l
 
 Los desarrolladores deben practicar el desarrollo impulsado por pruebas (TDD) y escribir pruebas unitarias que produzcan errores antes del código de producción que cumpla sus requisitos. El control de calidad debe crear un conjunto automatizado de pruebas de aceptación para garantizar que el sistema funcione según lo esperado desde un alto nivel.
 
-Hay marcos personalizados disponibles, como Jackalope y Prosper, para hacer que burlarse de las API de JCR sea más fácil para garantizar la productividad de los desarrolladores al escribir pruebas unitarias.
+Hay marcos personalizados disponibles, como Jackalope y Prosper, para hacer que burlarse de las API de JCR sea más fácil para garantizar la productividad de los desarrolladores mientras escriben pruebas unitarias.
 
 ### Mantén la demostración lista {#stay-demo-ready}
 

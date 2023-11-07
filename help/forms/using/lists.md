@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '6913'
+source-wordcount: '6911'
 ht-degree: 95%
 
 ---
@@ -209,7 +209,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
 ## Lista {#list}
 
-Una lista es un grupo de fragmentos de documento que puede incluir texto, (otras) listas, condiciones e imágenes. El orden de los elementos de la lista puede ser fijo o editable. Al crear una carta, puede utilizar algunos o todos los elementos de la lista para replicar un patrón de elementos reutilizable. Las listas se comportan básicamente como destinos que se pueden anidar dentro de otros destinos.
+Una lista es un grupo de fragmentos de documento que puede incluir texto, (otras) listas, condiciones e imágenes. El orden de los elementos de la lista puede ser fijo o editable. Al crear una carta, puede utilizar algunos o todos los elementos de una lista para replicar un patrón de elementos reutilizable. Las listas se comportan básicamente como destinos que se pueden anidar dentro de otros destinos.
 
 ### Implementación de listas {#implementing-lists}
 

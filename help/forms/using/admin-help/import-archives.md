@@ -1,16 +1,14 @@
 ---
 title: Importar y administrar archivos
 description: Obtenga información sobre cómo importar y administrar archivos. Archiva, importa y administra los LCA creados en Workbench. Puede importar, configurar, utilizar y eliminar un archivo.
-uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1470'
 ht-degree: 1%
 
 ---
@@ -26,7 +24,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 1. Haga clic en Examinar para buscar el archivo que desea importar y, a continuación, haga clic en Vista previa.
 1. Revise la lista de recursos y objetos que se instalarán con el archivo. Asegúrese de que no haya conflictos con los recursos, objetos y configuraciones de servicio existentes porque no hay capacidad de deshacer disponible.
 
-   AEM Si selecciona importar las configuraciones del servicio, formularios de datos de la aplicación importan todos los archivos de configuración del proceso (puntos de conexión, perfiles de seguridad y parámetros de configuración del servicio) utilizados por los procesos en el LCA.
+   AEM Si selecciona importar las configuraciones del servicio, los formularios de datos de la aplicación importan todos los archivos de configuración del proceso (extremos, perfiles de seguridad y parámetros de configuración del servicio) utilizados por los procesos en el LCA.
 
 1. Haga clic en Importar.
 1. Revise los resultados de la importación y haga clic en Omitir configuración para finalizar el proceso de importación o haga clic en Configurar para configurar el archivo.

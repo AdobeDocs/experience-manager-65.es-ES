@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '7665'
-ht-degree: 96%
+source-wordcount: '7661'
+ht-degree: 95%
 
 ---
 
@@ -269,7 +269,7 @@ El Administrador de configuración utilizó un servlet implementado en su servid
 
 El Administrador de configuración permite cargar una credencial de extensiones de Acrobat Reader DC en el almacén de confianza de AEM Forms en JEE. Esto significa que el acceso al servicio de credenciales del Almacén de confianza a través de protocolos remotos (SOAP y EJB) se ha habilitado de forma predeterminada. Este acceso ya no es necesario después de cargar las credenciales de derechos mediante el Administrador de configuración, o si decide utilizar la consola de administración más adelante para administrar las credenciales.
 
-Puede deshabilitar el acceso remoto a todos los servicios del Almacén de confianza siguiendo los pasos de la sección [Desactivación del acceso remoto no esencial a los servicios](https://helpx.adobe.com/es/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Puede deshabilitar el acceso remoto a todos los servicios del Almacén de confianza siguiendo los pasos de la sección [Deshabilitar el acceso remoto no esencial a los servicios](https://helpx.adobe.com/es/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Desactive todo acceso anónimo no esencial**
 
@@ -953,7 +953,7 @@ Para obtener información sobre los puertos de WebSphere que requiere AEM Forms
 
 ### Configurar SSL {#configuring-ssl}
 
-Respecto a la arquitectura física que se describe en la sección [Arquitectura física de AEM Forms en JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), debe configurar SSL para todas las conexiones que planea utilizar. Específicamente, todas las conexiones de SOAP deben realizarse a través de SSL para evitar la exposición de las credenciales de usuario en una red.
+Referencia a la arquitectura física que se describe en la sección [Arquitectura física de AEM Forms en JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), debe configurar SSL para todas las conexiones que planea utilizar. Específicamente, todas las conexiones de SOAP deben realizarse a través de SSL para evitar la exposición de las credenciales de usuario en una red.
 
 Para obtener instrucciones sobre cómo configurar SSL en JBoss, WebLogic y WebSphere, consulte &quot;Configuración de SSL&quot; en la [Ayuda de Administración](https://www.adobe.com/go/learn_aemforms_admin_64_es).
 

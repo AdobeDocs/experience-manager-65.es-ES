@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3001'
-ht-degree: 0%
+source-wordcount: '3000'
+ht-degree: 1%
 
 ---
 
@@ -73,7 +73,7 @@ Un componente de almacén de contexto es un componente de CQ que se puede agrega
 Los componentes del almacén de contexto pueden incluir los siguientes elementos:
 
 * Scripts JSP que definen el aspecto en Client Context.
-* Propiedades para enumerar el componente en la barra de tareas.
+* Propiedades para enumerar el componente en Sidekick.
 * Cuadros de diálogo de edición para configurar instancias de componente.
 * JavaScript que inicializa el almacén de sesión.
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2318'
 ht-degree: 0%
 
 ---
@@ -247,7 +247,7 @@ Utilice el siguiente procedimiento para exportar todas o algunas de las cadenas 
 
 1. Abra la herramienta de traducción. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Utilice el menú desplegable Diccionarios para seleccionar el diccionario que desea exportar.
-1. Si va a exportar un subconjunto de las cadenas, seleccione los elementos del diccionario que desea exportar. Si no selecciona ningún elemento, se exportan todos los elementos.
+1. Si va a exportar un subconjunto de las cadenas, seleccione los elementos del diccionario que desea exportar. Al seleccionar ningún elemento, se exportan todos los elementos.
 1. Haga clic en Exportar > Exportar selección como Xliff (solo cadenas).
 1. En el cuadro de diálogo que aparece, copie el texto y péguelo en un archivo de texto.
 

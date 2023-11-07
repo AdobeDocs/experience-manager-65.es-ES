@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '5007'
+source-wordcount: '5003'
 ht-degree: 2%
 
 ---
@@ -787,7 +787,7 @@ If `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
-Clase de utilidad que permite a un objeto heredar las propiedades y métodos de otro objeto.
+Clase de utilidad que permite a un objeto heredar las propiedades y los métodos de otro objeto.
 
 ### Funciones (ContextHub.Utils.inheritance) {#functions-contexthub-utils-inheritance}
 

@@ -10,10 +10,10 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 55%
+source-wordcount: '589'
+ht-degree: 52%
 
 ---
 
@@ -79,7 +79,7 @@ Hay dos conjuntos de componentes de la aplicación proporcionados por el Adobe A
 
 ### Visualización de componentes disponibles {#viewing-available-components}
 
-Para información general de todos los componentes disponibles en la instancia de AEM, utilice la [Consola de Componentes](/help/sites-authoring/default-components-console.md).
+AEM Para obtener una descripción general de todos los componentes disponibles en la instancia de la, utilice el [Consola Componentes](/help/sites-authoring/default-components-console.md).
 
 Como alternativa, también puede utilizar CRXDE Lite para obtener una lista de todos los componentes disponibles en el repositorio.
 

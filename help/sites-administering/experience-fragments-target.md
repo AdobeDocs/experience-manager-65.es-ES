@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 42%
+source-wordcount: '1539'
+ht-degree: 43%
 
 ---
 
@@ -220,7 +220,7 @@ El siguiente es un pseudoejemplo del html de una oferta de fragmento de experien
 <html>
    <head>
       <title>…</title>
-      <!-- all of the client libraries (css/js) -->
+      <!-- all the client libraries (css/js) -->
       …
    </head>
    <body>

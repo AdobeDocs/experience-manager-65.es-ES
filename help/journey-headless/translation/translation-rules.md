@@ -2,10 +2,10 @@
 title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 76%
+source-wordcount: '861'
+ht-degree: 70%
 
 ---
 
@@ -31,7 +31,7 @@ Este documento le ayuda a comprender cómo utilizar las reglas de traducción de
 
 ## Reglas de traducción {#translation-rules}
 
-Los fragmentos de contenido, que representan el contenido sin encabezado, pueden contener mucha información organizada en campos estructurados. Según las necesidades del proyecto, es probable que no todos los campos de un Fragmento de contenido deban traducirse.
+Los fragmentos de contenido, que representan el contenido sin encabezado, pueden contener mucha información organizada en campos estructurados. Según las necesidades del proyecto, es probable que no todos los campos de un fragmento de contenido deban traducirse.
 
 Las reglas de traducción identifican el contenido que se incluye en los proyectos de traducción o que se excluye de ellos. Cuando se traduce contenido, AEM lo extrae o saca en función de estas reglas. De este modo, solo el contenido que debe traducirse se envía al servicio de traducción.
 
@@ -46,7 +46,7 @@ Debido a que los Modelos de fragmento de contenido, que definen la estructura de
 
 >[!TIP]
 >
->Por lo general, el arquitecto de contenido proporciona al especialista de traducción los **Nombres de propiedad** de todos los campos necesarios para la traducción. Estos nombres son necesarios para configurar las reglas de traducción. Como especialista en traducción, [puede encontrar estos **Nombres de propiedad** por sí mismo](getting-started.md#content-models), tal como se ha descrito anteriormente en este recorrido.
+>Generalmente, el arquitecto de contenido proporciona al especialista en traducción la **Nombre de propiedad** es de todos los campos necesarios para la traducción. Estos nombres son necesarios para configurar las reglas de traducción. Como especialista en traducción, [puede encontrar estos **Nombres de propiedad** por sí mismo](getting-started.md#content-models), tal como se ha descrito anteriormente en este recorrido.
 
 ## Creación de reglas de traducción {#creating-rules}
 

@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '652'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Una comunicación interactiva contiene los siguientes elementos:
 * Los **datos introducidos por el empleado de primera línea (interfaz de usuario del agente)** que está personalizando la comunicación antes de enviarla. Por ejemplo, la fecha de vencimiento del pago.
 
 * Los **datos condicionales** que se rellenan en función de condiciones predefinidas. Por ejemplo, la fecha en la que se genera la comunicación interactiva.
-* Las **imágenes almacenadas en un repositorio**, como logotipos e imágenes de firma. Algunas imágenes, como los logotipos corporativos, aparecen en la mayoría o en todas las comunicaciones interactivas.
+* Las **imágenes almacenadas en un repositorio**, como logotipos e imágenes de firma. Las imágenes como logotipos corporativos aparecerían en la mayoría o en todas las comunicaciones interactivas.
 * Las **tablas y los gráficos** son necesarios para simplificar la representación de datos complejos en una comunicación interactiva.
 
 ## Estructura de la comunicación interactiva {#anatomy-of-the-interactive-communication}

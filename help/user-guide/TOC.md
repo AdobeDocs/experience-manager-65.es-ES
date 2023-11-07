@@ -3,12 +3,12 @@ cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM Guía del usuario de.5
-user-guide-description: AEM Una visión general de todos los recursos esenciales para comprender, instalar, administrar y utilizar la versión 6.5 de la aplicación de la aplicación de datos de usuario de la aplicación de la aplicación de datos de usuario de la aplicación de la aplicación de datos de.
+user-guide-description: AEM Una visión general de todos los recursos esenciales para comprender, instalar, administrar y utilizar la versión 6.5 de la aplicación de
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '59'
 ht-degree: 1%
 
 ---
