@@ -1,19 +1,15 @@
 ---
 title: Configuración de la segmentación con ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Obtenga información sobre cómo configurar la segmentación con ContextHub.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 75%
+source-wordcount: '1772'
+ht-degree: 73%
 
 ---
 
@@ -52,7 +48,7 @@ El **Editor de segmentos** permite modificar fácilmente un segmento. Para edita
 
 Con el explorador de componentes, puede añadir contenedores **AND** y **OR** para definir la lógica del segmento. A continuación, agregue componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) y el escenario exacto para seleccionar el segmento.
 
-Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelto. En caso de que se apliquen varios segmentos, el factor **Aumento** también se utiliza. Consulte [Creación de un nuevo segmento](#creating-a-new-segment)[ para obtener más información sobre el factor de ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelto. Si hay varios segmentos aplicables, la variable **Aumentar** también se utiliza el factor. Consulte [Creación de un nuevo segmento](#creating-a-new-segment)[ para obtener más información sobre el factor de ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >

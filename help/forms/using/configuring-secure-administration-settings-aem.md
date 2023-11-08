@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Complete este procedimiento mediante la página web Aplicaciones y servicios de 
 
 ## Deshabilitar el acceso anónimo no esencial a los servicios {#disabling-non-essential-anonymous-access-to-services}
 
-Algunos servicios de servidor de formularios permiten invocaciones no autenticadas (anónimas) para algunas operaciones. Esto significa que una o más operaciones expuestas por el servicio pueden invocarse como cualquier usuario autenticado o como ninguno.
+Algunos servicios de Forms Server permiten invocaciones no autenticadas (anónimas) para algunas operaciones. Esto significa que una o más operaciones expuestas por el servicio pueden invocarse como cualquier usuario autenticado o como ninguno.
 
 1. Inicie sesión en la consola de administración al escribir la siguiente URL en un explorador web:
 

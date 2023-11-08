@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2113'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Según la configuración específica, estos cambios se pueden realizar mediante 
 
 >[!NOTE]
 >
->AEM La configuración de la es sencilla. Sin embargo, tenga en cuenta que ciertos cambios pueden tener un impacto importante en las aplicaciones. AEM Por este motivo, asegúrese de que tiene la experiencia y los conocimientos necesarios antes de empezar a configurar la configuración de la aplicación y realice solo los cambios que sepa que son necesarios. Cualquier cambio realizado a través de la consola OSGi es **inmediatamente** aplicado al sistema en ejecución (no es necesario reiniciar).
+>AEM La configuración de la es sencilla. Sin embargo, ciertos cambios pueden tener un impacto importante en las aplicaciones. AEM Por este motivo, asegúrese de que tiene la experiencia y los conocimientos necesarios antes de empezar a configurar la configuración de la aplicación y realice solo los cambios que sepa que son necesarios. Cualquier cambio realizado a través de la consola OSGi es **inmediatamente** aplicado al sistema en ejecución (no es necesario reiniciar).
 
 ## Consideraciones de configuración principal {#primary-configuration-considerations}
 

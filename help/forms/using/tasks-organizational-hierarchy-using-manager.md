@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 93%
+ht-degree: 78%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 93%
 
 En AEM Forms Workspace, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar diversas acciones en ellas. Las tareas están disponibles en la pestaña Tareas pendientes de AEM Forms Workspace. Las acciones compatibles con las tareas de los informes directos son las siguientes:
 
-**Reenviar** reenviar una tarea desde un informe directo a cualquier usuario.
+**Avanzar** - Reenviar una tarea desde un informe directo a cualquier usuario.
 
-**Reclamar** reclamar una tarea de un informe directo.
+**Reclamar** - Reclamar una tarea de un informe directo.
 
-**Reclamar y abrir** reclamar una tarea de un informe directo y abrirla automáticamente en la lista de tareas pendientes del administrador.
+**Reclamar y abrir** - Reclamar una tarea de un informe directo y abrirla automáticamente en la lista de tareas pendientes del administrador.
 
-**Rechazar** rechazar una tarea reenviada a un informe directo por otro usuario. Esta opción está disponible para las tareas reenviadas por otros usuarios a un informe directo.
+**Rechazar** - Rechazar una tarea reenviada a un informe directo por otro usuario. Esta opción está disponible para las tareas reenviadas por otros usuarios a un informe directo.
 
 AEM Forms restringe el acceso de los usuarios solo a aquellas tareas para las que el usuario tiene control de acceso (ACL). Esta comprobación garantiza que un usuario solo pueda recuperar las tareas en las que tiene permisos de acceso. Mediante servicios web e implementaciones de terceros para definir la jerarquía, una organización puede personalizar la definición de administrador y dirigir informes para adaptarlos a sus necesidades.
 

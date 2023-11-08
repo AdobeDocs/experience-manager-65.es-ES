@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -41,13 +41,13 @@ También puede habilitar SSO mediante SPNEGO. (Consulte [Habilitar SSO con SPNEG
    * **Encabezado HTTP para el dominio:** (No obligatorio) Nombre del encabezado cuyo valor contiene el nombre de dominio. Utilice esta configuración solo si ningún encabezado HTTP individual identifica de forma exclusiva al usuario. Utilice esta configuración para casos en los que existen varios dominios y el identificador único solo es único dentro de un dominio. En este caso, especifique el nombre del encabezado en este cuadro de texto y especifique la asignación de dominios para varios dominios en el cuadro Asignación de dominios. (Consulte [Editar y convertir dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **Asignación de dominios:** (Obligatorio) Especifica la asignación para varios dominios con el formato *header value=domain name*.
 
-      Por ejemplo, considere una situación en la que el encabezado HTTP de un dominio sea domainName y pueda tener valores de domain1, domain2 o domain3. En este caso, utilice la asignación de dominios para asignar los valores domainName a los nombres de dominio de Administración de usuarios. Cada asignación debe estar en una línea diferente:
+     Por ejemplo, considere una situación en la que el encabezado HTTP de un dominio sea domainName y pueda tener valores de domain1, domain2 o domain3. En este caso, utilice la asignación de dominios para asignar los valores domainName a los nombres de dominio de Administración de usuarios. Cada asignación debe estar en una línea diferente:
 
-      domain1=dominioUM1
+     domain1=dominioUM1
 
-      domain2=dominioUM2
+     domain2=dominioUM2
 
-      domain3=UMdomain3
+     domain3=UMdomain3
 
 ### Configuración de referentes permitidos {#configure-allowed-referers}
 
@@ -63,8 +63,8 @@ También puede habilitar SSO utilizando encabezados HTTP. (Consulte [Habilitar S
 >
 >AEM Forms en JEE no admite la configuración de SSO mediante Kerberos/SPNEGO en varios entornos de dominio secundarios
 
-1. Decida qué dominio desea utilizar para habilitar SSO. AEM El servidor de formularios y los usuarios deben formar parte del mismo dominio de Windows o dominio de confianza.
-1. AEM En Active Directory, cree un usuario que represente el servidor de formularios de la. (Consulte [Crear una cuenta de usuario](enabling-single-sign-on-aem.md#create-a-user-account).) Si está configurando más de un dominio para utilizar SPNEGO, asegúrese de que las contraseñas de cada uno de estos usuarios sean diferentes. Si las contraseñas no son diferentes, SPNEGO SSO no funciona.
+1. Decida qué dominio desea utilizar para habilitar SSO. AEM Forms Server y los usuarios deben formar parte del mismo dominio de Windows o dominio de confianza.
+1. En Active Directory, cree un usuario que represente al servidor de AEM Forms. (Consulte [Crear una cuenta de usuario](enabling-single-sign-on-aem.md#create-a-user-account).) Si está configurando más de un dominio para utilizar SPNEGO, asegúrese de que las contraseñas de cada uno de estos usuarios sean diferentes. Si las contraseñas no son diferentes, SPNEGO SSO no funciona.
 1. Asigne el nombre principal del servicio. (Consulte [Asignar un nombre principal de servicio (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configure el controlador de dominio. (Consulte [Evitar errores de comprobación de integridad de Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Agregue o edite un dominio de empresa como se describe en [Adición de dominios](/help/forms/using/admin-help/adding-domains.md#adding-domains) o [Editar y convertir dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Cuando cree o edite el dominio de empresa, realice estas tareas:
@@ -98,7 +98,7 @@ También puede habilitar SSO utilizando encabezados HTTP. (Consulte [Habilitar S
 
 ### Asignar un nombre principal de servicio (SPN) {#map-a-service-principal-name-spn}
 
-1. Obtenga la utilidad KtPass. Esta utilidad se utiliza para asignar un SPN a un REALM. Puede obtener la utilidad KtPass como parte del paquete de herramientas o del kit de recursos de Windows Server. (Consulte [Herramientas de soporte técnico de Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
+1. Obtenga la utilidad KtPass. Esta utilidad se utiliza para asignar un SPN a un REALM. Puede obtener la utilidad KtPass como parte del paquete de herramientas o el kit de recursos de Windows Server. (Consulte [Herramientas de soporte técnico de Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
 1. En un símbolo del sistema, ejecute `ktpass` con los siguientes argumentos:
 
    `ktpass -princ HTTP/`*host* `@`*TERRITORIO* `-mapuser`*usuario*
@@ -150,9 +150,9 @@ Si se obtiene acceso al servidor mediante el nombre del equipo, como https://lcs
 
 1. Vaya a Herramientas > Opciones de Internet y haga clic en la ficha Seguridad.
 1. Haga clic en el icono Intranet local y, a continuación, en Sitios.
-1. Haga clic en Avanzadas y, en el cuadro Agregar este sitio web a la zona, escriba la dirección URL del servidor de Forms. Por ejemplo, escriba `https://lcserver.um.lc.com`
+1. Haga clic en Avanzadas y, en el cuadro Agregar este sitio Web a la zona, escriba la dirección URL del servidor de Forms. Por ejemplo, escriba `https://lcserver.um.lc.com`
 1. Haga clic en Aceptar hasta que se cierren todos los cuadros de diálogo.
-1. AEM Pruebe la configuración accediendo a la dirección URL del servidor de formularios en la. Por ejemplo, en el cuadro URL del explorador, escriba `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Pruebe la configuración accediendo a la dirección URL del servidor de AEM Forms. Por ejemplo, en el cuadro URL del explorador, escriba `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Configuración de Mozilla Firefox**
 

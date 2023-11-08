@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1961'
 ht-degree: 24%
 
 ---
@@ -178,7 +178,7 @@ La respuesta contendrá información de paginación como parte de `properties` d
 
 >[!NOTE]
 >
->La paginación se aplica normalmente a entidades contenedoras (es decir, carpetas o recursos con representaciones), en lo que se refiere a los elementos secundarios de la entidad solicitada.
+>La paginación se aplica normalmente a entidades contenedoras (es decir, carpetas o activos con representaciones), en lo que se refiere a las tareas secundarias de la entidad solicitada.
 
 #### Ejemplo: Paginación {#example-paging}
 

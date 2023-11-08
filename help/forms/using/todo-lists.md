@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4031'
 ht-degree: 98%
@@ -194,7 +194,7 @@ Se le puede permitir agregar, actualizar, eliminar o guardar archivos adjuntos l
 
    >[!NOTE]
    >
-   >Puede configurar el espacio de trabajo para que, periódicamente, guarde automáticamente como borrador la información introducida por un usuario. Si el guardado automático está habilitado y un usuario trabaja en un borrador, este se guardará periódicamente. En caso de guardado automático, se tomará automáticamente el nombre predeterminado de la tarea.
+   >Puede configurar el espacio de trabajo para que, periódicamente, guarde automáticamente como borrador la información introducida por un usuario. Si el guardado automático está habilitado y un usuario trabaja en un borrador, este se guardará periódicamente. Si hay guardado automático, se tomará automáticamente el nombre predeterminado de la tarea.
    >
    >
    >Para obtener más información, consulte Guardar borrador periódicamente en [Preferencias de administración](/help/forms/using/getting-started-livecycle-html-workspace.md).

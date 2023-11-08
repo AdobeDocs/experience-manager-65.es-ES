@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 4%
@@ -265,7 +265,7 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 **Tamaño del grupo de OCR:** Tamaño del grupo de PaperCaptureService que utiliza el PDF Generator para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
 
-**Familia De Fuentes De Reserva Para Conversiones De HTML A PDF:** Nombre de la familia de fuentes que se utilizará en los documentos del PDF cuando la fuente utilizada en el HTML AEM original no esté disponible para el servidor de formularios de la. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
+**Familia De Fuentes De Reserva Para Conversiones De HTML A PDF:** Nombre de la familia de fuentes que se utilizará en los documentos del PDF cuando la fuente utilizada en el HTML original no esté disponible para AEM Forms Server. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
 
 **Lógica de reintento para conversiones nativas** Rige los reintentos de generación de PDF si el primer intento de conversión ha fallado:
 
@@ -283,7 +283,7 @@ Reintente la conversión del PDF si el tiempo empleado para el primer intento de
 
 ## Guías ES4 Utilidades configuración del servicio {#guides-es4-utilities-service-settings}
 
-Al crear una guía, algunos recursos, como la definición de la guía, están incrustados en la guía. AEM Los recursos también pueden existir como referencias a recursos de la aplicación almacenados localmente o en el servidor de formularios de la. La Guía no contiene datos, y los valores de la ubicación de envío y las entradas no son adecuados para todos los entornos externos.
+Al crear una guía, algunos recursos, como la definición de la guía, están incrustados en la guía. Los recursos también pueden existir como referencias a recursos de la aplicación almacenados localmente o en el servidor de AEM Forms. La Guía no contiene datos, y los valores de la ubicación de envío y las entradas no son adecuados para todos los entornos externos.
 
 En la mayoría de los casos, los servicios de procesamiento predeterminados de las guías son suficientes para preparar una guía para usarla en Workspace u otros entornos externos. (En la vista Servicios, en Workbench, el servicio predeterminado es Guías (sistema)/Procesos/Guía de procesamiento - 1.0). El servicio Utilidades de guía ( `GuidesUtility`) permite crear un proceso personalizado para procesar una guía, si es necesario.
 
@@ -704,7 +704,7 @@ En una configuración de clúster, el tamaño de lote de un extremo de carpeta v
 
 **Sobrescribir nombres de archivo duplicados:** Una cadena booleana que especifica si la carpeta vigilada sobrescribe los nombres de archivo de resultados duplicados y si se deben sobrescribir los documentos conservados con el mismo nombre.
 
-**Conservar carpeta:** El valor predeterminado para la carpeta de conservación. Esta carpeta se utiliza para copiar los archivos de origen en caso de que la entrada se procese correctamente. Este valor puede ser una ruta vacía, relativa o absoluta con un patrón de archivo como se describe para la configuración Carpeta de resultados.
+**Conservar carpeta:** El valor predeterminado para la carpeta de conservación. Esta carpeta se utiliza para copiar los archivos de origen en si la entrada se procesa correctamente. Este valor puede ser una ruta vacía, relativa o absoluta con un patrón de archivo como se describe para la configuración Carpeta de resultados.
 
 **Carpeta de errores:** Nombre de la carpeta donde se copian los archivos de error. Este valor puede ser una ruta vacía, relativa o absoluta con un patrón de archivo como se describe para la configuración Carpeta de resultados.
 
@@ -783,7 +783,7 @@ La siguiente configuración está disponible para el servicio Transformación XS
 
 ## Modificación de la configuración de seguridad de un servicio {#modifying-security-settings-for-a-service}
 
-el servidor de forms le permite configurar las opciones de seguridad de cada servicio, lo que le permite configurar un control de acceso detallado en un nivel de servicio a servicio.
+El servidor de Forms le permite configurar las opciones de seguridad de cada servicio, lo que le permite configurar un control de acceso detallado en un nivel de servicio a servicio.
 
 Se instalan los perfiles de seguridad predeterminados, que se pueden configurar para satisfacer las necesidades del sistema. Cada perfil de seguridad tiene un dominio asociado y se crea en el nivel de usuario o de grupo.
 

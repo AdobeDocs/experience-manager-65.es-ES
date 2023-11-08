@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -82,11 +82,11 @@ El valor predeterminado es una cadena vacía.
 **Ubicación predeterminada:** Esta es la selección predeterminada. Cuando se selecciona esta opción, la caché se crea en una ubicación que depende del servidor de aplicaciones que esté utilizando:
 
 * **JBoss:** [Inicio de JBoss]\server\[tipo de instalación]\svcdata\FormServer\Cache
-* **WebLogic:** [Inicio de WebLogic]\user_projects\domains\[nombre de dominio de aem-forms]\adobe\[nombre de servidor de formularios]\FormServer\Cache
+* **WebLogic:** [Inicio de WebLogic]\user_projects\domains\[nombre de dominio de aem-forms]\adobe\[nombre de servidor de Forms]\FormServer\Cache
 * **WebSphere:** [Inicio de IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **Directorio temporal de LC:** AEM La caché se crea en un subdirectorio del directorio temporal de los formularios de la, que se especifica en la consola de administración en Configuración > Configuración del sistema principal > Configuraciones > Ubicación del directorio temporal. El subdirectorio se denomina adobeform_[servername].
 
 >[!NOTE]
 >
->Si utiliza una utilidad de limpieza temporal, tenga en cuenta que, aunque la eliminación de estos directorios no afecta a la funcionalidad, puede afectar significativamente al rendimiento durante un corto tiempo hasta que se cree la nueva caché. AEM Para evitar este problema, no elimine estos directorios mientras borra el directorio temporal de los formularios de la.
+>Si utiliza una utilidad de limpieza temporal, mientras que la eliminación de estos directorios no afecta a la funcionalidad, puede afectar significativamente al rendimiento durante un corto tiempo hasta que se cree la nueva caché. AEM Para evitar este problema, no elimine estos directorios mientras borra el directorio temporal de los formularios de la.

@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '3775'
 ht-degree: 1%
@@ -116,11 +116,11 @@ Para que el flujo de trabajo de formularios reciba y administre mensajes de corr
 
 **SSL de SMTP activado:** Cuando se selecciona esta opción, se habilita SSL a través de SMTP.
 
-**Incluya El Cuerpo Del Correo Electrónico Original Como Archivo Adjunto:** De forma predeterminada, cuando envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
+**Incluya El Cuerpo Del Correo Electrónico Original Como Archivo Adjunto:** De forma predeterminada, cuando se envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
 
 **Utilice La Línea De Asunto Original Para Los Correos Electrónicos De Resultados:** De forma predeterminada, el servidor de Forms utiliza los valores especificados en la configuración Asunto del correo electrónico de éxito y Asunto del correo electrónico de error como línea de asunto al enviar mensajes de correo electrónico de resultados. Para utilizar en su lugar la misma línea de asunto que el correo electrónico original enviado al servidor, seleccione esta opción.
 
-**Asunto de correo electrónico de éxito:** AEM Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibirá un mensaje de correo electrónico de retorno del servidor de formularios de la. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
+**Asunto de correo electrónico de éxito:** Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibe un mensaje de correo electrónico de retorno del servidor de AEM Forms. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
 
 **Cuerpo del correo electrónico de éxito:** Permite especificar el texto del cuerpo de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
 
@@ -132,7 +132,7 @@ Para que el flujo de trabajo de formularios reciba y administre mensajes de corr
 
 **Información de resumen de correo electrónico:** Cada mensaje de éxito o error incluye una sección que contiene el texto de correo electrónico original que ha enviado al servidor de Forms. Esta configuración especifica el texto que aparece encima de esa sección.
 
-**Validar Bandeja De Entrada Antes De Crear/Actualizar Este Extremo:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. AEM Si esta opción no está seleccionada, el servidor de formularios en tiempo de ejecución crea el extremo sin validar la bandeja de entrada.
+**Validar Bandeja De Entrada Antes De Crear/Actualizar Este Extremo:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. Si esta opción no está seleccionada, el servidor de AEM Forms crea el extremo sin validar la bandeja de entrada.
 
 **Codificación del conjunto de caracteres:** Formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que usará la mayoría de los usuarios fuera de Japón. Los usuarios en un entorno japonés pueden elegir ISO2022-JP.
 
@@ -206,11 +206,11 @@ Por ejemplo, se crea un extremo de correo electrónico para un servicio que toma
 
 El valor predeterminado es asíncrono.
 
-**Incluir el cuerpo del correo electrónico original como datos adjuntos:** De forma predeterminada, cuando envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
+**Incluir el cuerpo del correo electrónico original como datos adjuntos:** De forma predeterminada, cuando se envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
 
 **Utilice la línea de asunto original para los correos electrónicos de resultados:** De forma predeterminada, el servidor de Forms utiliza los valores especificados en la configuración Asunto del correo electrónico de éxito y Asunto del correo electrónico de error como línea de asunto al enviar mensajes de correo electrónico de resultados. Para utilizar en su lugar la misma línea de asunto que el correo electrónico original enviado al servidor, seleccione esta opción.
 
-**Asunto de correo electrónico de éxito:** AEM Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibirá un mensaje de correo electrónico de retorno del servidor de formularios de la. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
+**Asunto de correo electrónico de éxito:** Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibe un mensaje de correo electrónico de retorno del servidor de AEM Forms. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
 
 **Cuerpo del correo electrónico de éxito:** Permite especificar el texto del cuerpo de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
 
@@ -222,7 +222,7 @@ El valor predeterminado es asíncrono.
 
 **Información de resumen de correo electrónico:** Cada mensaje de éxito o error incluye una sección que contiene el texto de correo electrónico original que ha enviado al servidor de Forms. Esta configuración especifica el texto que aparece encima de esa sección.
 
-**Valide la bandeja de entrada antes de crear o actualizar este punto de conexión:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. AEM Si esta opción no está seleccionada, el servidor de formularios en tiempo de ejecución crea el extremo sin validar la bandeja de entrada.
+**Valide la bandeja de entrada antes de crear o actualizar este punto de conexión:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. Si esta opción no está seleccionada, el servidor de AEM Forms crea el extremo sin validar la bandeja de entrada.
 
 **Nombre de operación:** Esta configuración es obligatoria. Una lista de operaciones que se pueden asignar al extremo de correo electrónico. La operación que seleccione aquí determina qué campos se muestran en las secciones Asignaciones de parámetros de entrada y Asignaciones de parámetros de salida.
 

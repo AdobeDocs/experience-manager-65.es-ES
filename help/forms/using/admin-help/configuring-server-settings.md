@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2623'
 ht-degree: 0%
@@ -27,7 +27,7 @@ La página Configuración del servidor proporciona acceso a varias configuracion
 
 ## Configuración de correo electrónico {#configuring-email-settings}
 
-AEM Puede especificar una cuenta de correo electrónico para el servidor de Forms, a través de la cual enviará mensajes de correo electrónico a los usuarios y administradores de Forms, a los que se les enviará un mensaje de correo electrónico. Estos mensajes de correo electrónico se utilizan para notificar y recordar a los usuarios las tareas que deben completar, notificar al usuario las tareas que han alcanzado un plazo y notificar al administrador de cualquier error de proceso que se produzca.
+Puede especificar una cuenta de correo electrónico para el servidor de Forms AEM, a través de la cual enviará mensajes de correo electrónico a los usuarios y administradores de formularios de la aplicación de correo electrónico de la aplicación de correo electrónico a los usuarios y administradores de la aplicación. Estos mensajes de correo electrónico se utilizan para notificar y recordar a los usuarios las tareas que deben completar, notificar al usuario las tareas que han alcanzado un plazo y notificar al administrador de cualquier error de proceso que se produzca.
 
 AEM Para habilitar el envío de mensajes de correo electrónico entre los formularios de y los usuarios, configure las opciones del correo electrónico saliente en la página Configuración de correo electrónico. El correo electrónico saliente debe utilizar un servidor SMTP.
 
@@ -288,7 +288,7 @@ En la página Valores de configuración de BAM, se establecen las conexiones al 
 1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Configuración del servidor > Configuración de BAM.
 1. En el cuadro Host de BAM, escriba el nombre del servidor que ejecuta BAM. El valor predeterminado es localhost.
 1. En el cuadro Puerto de BAM, escriba el puerto que se utilizará para conectar con el servidor que ejecuta BAM. El puerto BAM predeterminado para JBoss es 8080, WebLogic es 7001 y WebSphere es 9080.
-1. En el cuadro Host del servidor, escriba el nombre o la dirección IP del servidor de Forms host. El valor predeterminado es localhost.
+1. En el cuadro Host del servidor, escriba el nombre o la dirección IP del servidor host de Forms. El valor predeterminado es localhost.
 1. En el cuadro Puerto del servidor, escriba el número de puerto que utiliza el servidor de Forms.
 1. En los cuadros Nombre de usuario y Contraseña, escriba el Id. de usuario y la contraseña adecuados para tener acceso al servidor de BAM. El nombre de usuario predeterminado es CognosNowAdmin y la contraseña predeterminada es manager.
 1. Haga clic en Guardar.

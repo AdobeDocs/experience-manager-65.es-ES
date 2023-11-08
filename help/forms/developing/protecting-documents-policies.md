@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '15468'
+source-wordcount: '15464'
 ht-degree: 0%
 
 ---
@@ -323,7 +323,7 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 
 ## Modificación de directivas {#modifying-policies}
 
-Puede modificar una directiva existente mediante la API de Java de Document Security o la API del servicio web. Para realizar cambios en una directiva existente, debe recuperarla, modificarla y, a continuación, actualizar la directiva en el servidor. Por ejemplo, supongamos que recupera una política existente y amplía su periodo de validez. Antes de que el cambio surta efecto, debe actualizar la directiva.
+Puede modificar una directiva existente mediante la API de Java de Document Security o la API del servicio web. Para cambiar una directiva existente, puede recuperarla, modificarla y, a continuación, actualizar la directiva en el servidor. Por ejemplo, supongamos que recupera una política existente y amplía su periodo de validez. Antes de que el cambio surta efecto, debe actualizar la directiva.
 
 Puede modificar una política cuando cambien los requisitos de la empresa y la política ya no refleje estos requisitos. En lugar de crear una política, simplemente puede actualizar una política existente.
 
@@ -1477,7 +1477,7 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 
 ## Modificación de marcas de agua {#modifying-watermarks}
 
-Puede modificar una marca de agua existente mediante la API de Java o la API del servicio web de Document Security. Para realizar cambios en una marca de agua existente, debe recuperarla, modificar sus atributos y, a continuación, actualizarla en el servidor. Por ejemplo, supongamos que recupera una marca de agua y modifica su atributo de opacidad. Antes de que el cambio surta efecto, debe actualizar la marca de agua.
+Puede modificar una marca de agua existente mediante la API de Java o la API del servicio web de Document Security. Para cambiar una marca de agua existente, debe recuperarla, modificar sus atributos y, a continuación, actualizarla en el servidor. Por ejemplo, supongamos que recupera una marca de agua y modifica su atributo de opacidad. Antes de que el cambio surta efecto, debe actualizar la marca de agua.
 
 Al modificar una marca de agua, el cambio afecta a los documentos futuros a los que se les haya aplicado dicha marca. Es decir, los documentos de PDF existentes que contienen la marca de agua no se ven afectados.
 

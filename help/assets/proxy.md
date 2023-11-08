@@ -4,9 +4,9 @@ description: Un proxy es un [!DNL Experience Manager] instancia que utiliza trab
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] utiliza un proxy para distribuir el procesamiento de determinadas tareas.
 
-Un proxy es una instancia de Experience Manager específica (y a veces independiente) que utiliza los proxies como procesadores responsables de gestionar un trabajo y crear un resultado. Un trabajador proxy puede utilizarse para una amplia variedad de tareas. En el caso de un [!DNL Assets] proxy: esto se puede utilizar para cargar recursos para procesarlos en Assets. Por ejemplo, la variable [Trabajador proxy IDS](indesign.md) utiliza un [!DNL Adobe InDesign] Servidor para procesar archivos para usarlos en Assets.
+Un proxy es una instancia de Experience Manager específica (y a veces independiente) que utiliza los proxies como procesadores responsables de gestionar un trabajo y crear un resultado. Un trabajador proxy puede utilizarse para una amplia variedad de tareas. Si hay un [!DNL Assets] proxy: esto se puede utilizar para cargar recursos para procesarlos en Assets. Por ejemplo, la variable [Trabajador proxy IDS](indesign.md) utiliza un [!DNL Adobe InDesign] Servidor para procesar archivos para usarlos en Assets.
 
 Cuando el proxy es un servidor independiente [!DNL Experience Manager] Esto ayuda a reducir la carga de la [!DNL Experience Manager] instancia(s) de creación. De forma predeterminada, [!DNL Assets] ejecuta las tareas de procesamiento de recursos en la misma JVM (externalizadas mediante proxy) para reducir la carga en la [!DNL Experience Manager] instancia de creación.
 

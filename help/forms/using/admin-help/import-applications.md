@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 1%
@@ -51,7 +51,7 @@ Utilice la pestaña Aplicaciones para importar y gestionar aplicaciones creadas 
 
    La pestaña Propiedades de la derecha muestra las propiedades del nodo CRX seleccionado.
 
-   El **syncState** AEM La propiedad indica el estado de sincronización de datos entre el servidor de formularios de y el repositorio CRX. Tan pronto como comience el proceso de importación, este estado se establece en 0 (cero). Este estado indica que los datos no están sincronizados actualmente. Cuando se sincronizan los datos, el estado se establece en 1.
+   El **syncState** indica el estado de sincronización de datos entre el servidor de AEM Forms y el repositorio CRX. Tan pronto como comience el proceso de importación, este estado se establece en 0 (cero). Este estado indica que los datos no están sincronizados actualmente. Cuando se sincronizan los datos, el estado se establece en 1.
 
 ## Implementación de una aplicación {#deploy-an-application}
 

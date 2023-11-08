@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -54,7 +54,7 @@ La pestaña Opciones de entorno le permite establecer varias opciones de procesa
 * *Nivel de registro de trabajo*: especifica el nivel de registro para los registros de procesamiento.
 * *Validar solo*: comprueba la validez del DDX de entrada.
 
-* *Error al producirse el error*: especifica si la llamada al servicio Assembler debe fallar en caso de error. El valor predeterminado es False.
+* *Finalizar al producirse un error*: especifica si la llamada al servicio Assembler debe fallar si hay un error. El valor predeterminado es False.
 
 #### Documentos de salida {#output-documents}
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '7285'
+source-wordcount: '7282'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,7 @@ Estas opciones configuran el color, la escala de grises y las imágenes monocrom
 
 **Submuestreo a:** Selecciona un píxel en el centro del área de muestra y reemplaza todo el área por ese píxel con la resolución especificada. El submuestreo reduce significativamente el tiempo de conversión en comparación con la disminución de resolución, pero da como resultado imágenes menos fluidas y continuas.
 
-La configuración de resolución para el color y la escala de grises debe ser de 1,5 a 2 veces la pantalla de líneas que indica que el archivo se imprimirá en. (Siempre que no descienda por debajo de esta configuración de resolución recomendada, las imágenes que no contengan líneas rectas o patrones geométricos o repetitivos no se verán afectadas por una resolución más baja.) La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida. Sin embargo, tenga en cuenta que si guarda una imagen monocroma con una resolución superior a 1500 ppp, el tamaño del archivo aumenta sin que la calidad de la imagen mejore de forma notable.
+La configuración de resolución para el color y la escala de grises debe ser de 1,5 a 2 veces la pantalla de líneas que indica que el archivo se imprimirá en. (Siempre que no descienda por debajo de esta configuración de resolución recomendada, las imágenes que no contengan líneas rectas o patrones geométricos o repetitivos no se verán afectadas por una resolución más baja.) La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida. Sin embargo, si se guarda una imagen monocroma con una resolución superior a 1500 ppp, el tamaño del archivo aumenta sin que la calidad de la imagen mejore de forma notable.
 
 Considere también si los usuarios necesitan ampliar una página. Por ejemplo, si está creando un documento PDF de un mapa, considere la posibilidad de utilizar una resolución de imagen más alta para que los usuarios puedan ampliar el mapa.
 

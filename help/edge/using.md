@@ -2,9 +2,9 @@
 title: Uso de Edge Delivery Services
 description: Uso de Edge Delivery Services (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '608'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Con Edge Delivery, la creación es fácil, rápida y flexible. Puede seguir dos 
 * Creación basada en documentos (como Microsoft Word o Google Docs): [Consulte este vínculo para obtener más información](https://www.hlx.live/docs/authoring).
 * Editor de páginas/editor universal: póngase en contacto con su representante de ventas de Adobe.
 
-En el caso de la creación basada en documentos, puede trabajar con una variedad de fuentes, como Microsoft Word y Google Docs. Los documentos de estas fuentes se convierten en páginas del sitio web. Encabezados, listas, imágenes, elementos de fuente, vídeos se pueden transferir desde la fuente inicial a su sitio web. Puede agregar metadatos con fines de SEO o utilizar bloques para trabajar con contenido estructurado y agregar funcionalidad.
+Si existe la creación basada en documentos, puede trabajar con una variedad de fuentes, como Microsoft Word y Google Docs. Los documentos de estas fuentes se convierten en páginas del sitio web. Encabezados, listas, imágenes, elementos de fuente, vídeos se pueden transferir desde la fuente inicial a su sitio web. Puede agregar metadatos con fines de SEO o utilizar bloques para trabajar con contenido estructurado y agregar funcionalidad.
 
 ## Publicación {#publishing-edge}
 

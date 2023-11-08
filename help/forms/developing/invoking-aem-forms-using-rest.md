@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2503'
 ht-degree: 1%
 
 ---
@@ -117,9 +117,9 @@ Si el trabajo se elimina correctamente, esta dirección URL devuelve un mensaje 
 
 ## Informes de errores {#error-reporting}
 
-Si no se puede completar una solicitud de invocación sincrónica o asincrónica debido a que se está iniciando una excepción en el servidor, la excepción se comunica como parte del mensaje de respuesta HTTP. Si la URL de invocación (o la `async_result` La URL (en el caso de una invocación asincrónica) no tiene un sufijo .xml, el proveedor REST devuelve el código HTTP `500 Internal Server Error` seguido de un mensaje de excepción.
+Si no se puede completar una solicitud de invocación sincrónica o asincrónica debido a que se está iniciando una excepción en el servidor, la excepción se comunica como parte del mensaje de respuesta HTTP. Si la URL de invocación (o la `async_result` La dirección URL (si hay una invocación asincrónica) no tiene un sufijo .xml, el proveedor REST devuelve el código HTTP `500 Internal Server Error` seguido de un mensaje de excepción.
 
-Si la URL de invocación (o la `async_result` La URL (en el caso de una invocación asincrónica) no tiene un sufijo .xml, el proveedor REST devuelve el código HTTP `200 OK`seguido de un documento XML que describe la excepción en el siguiente formato.
+Si la URL de invocación (o la `async_result` La dirección URL (si hay una invocación asincrónica) tiene un sufijo .xml, el proveedor REST devuelve el código HTTP `200 OK`seguido de un documento XML que describe la excepción en el siguiente formato.
 
 ```xml
  <exception>

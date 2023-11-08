@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1820'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -63,13 +63,13 @@ Realice los siguientes pasos para crear una carpeta vigilada:
 
    * **Patrón del archivo de salida**: especifique una lista delimitada por punto y coma (;) de patrones que usa una carpeta vigilada para determinar el nombre y la ubicación de los archivos y carpetas de salida. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-
 1. Pulse **Avanzadas**. La pestaña Avanzadas contiene más campos. La mayoría de estos campos contienen un valor predeterminado.
 
    * **Filtro de asignador de cargas útiles:** cuando se crea una carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta que se ve. La estructura de carpetas tiene carpetas de fase, resultado, conservación, entrada y error. La estructura de carpetas puede servir como carga útil de entrada al flujo de trabajo y aceptar la salida de un flujo de trabajo. También puede enumerar los puntos de error, si los hay. La estructura de una carga útil es diferente de la de una carpeta vigilada. Puede escribir scripts personalizados para asignar la estructura de una carpeta vigilada a la carga útil. Este script se denomina filtro de asignador de cargas útiles. Hay dos implementaciones de asignador de carga útil listas para usar. Si no tiene [una implementación personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilice una predeterminada:
 
       * **Asignador predeterminado:** utilice el asignador de cargas útiles predeterminado para mantener el contenido de entrada y salida de las carpetas vigiladas en carpetas de entrada y salida independientes en la carga útil.
       * **Asignador de cargas útiles basado en archivos simples:** utilice el asignador de cargas útiles basado en archivos simples para mantener el contenido de entrada y salida directamente en la carpeta de carga útil. No crea ninguna jerarquía adicional, como el asignador predeterminado.
+
    * **Modo de ejecución**: especifique la lista separada por comas de modos de ejecución permitidos para ejecutar el flujo de trabajo.
    * **Tiempo de espera agotado: archivos clasificados después**: especifique el número de segundos que hay que esperar antes de que un archivo o carpeta de entrada que ya se haya seleccionado para el procesamiento se trate como si se hubiera agotado el tiempo de espera y se marque como un error. El mecanismo de tiempo de espera solo se activa cuando el valor de esta propiedad es un número positivo.
    * **Eliminar archivos clasificados con tiempo de espera agotado al acelerarlos**: si está habilitado, el mecanismo **Tiempo de espera agotado: archivos clasificados después** se activará solo cuando se active la restricción para la carpeta vigilada.
@@ -78,7 +78,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
    * **Patrón de archivo de inclusión**: especifique una lista delimitada por punto y coma (;) de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; se recogerán. El valor predeterminado es &amp;ast; e indica todos los archivos y carpetas. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Tiempo de espera:** especifique el tiempo, en milisegundos, a esperar antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0.
 
-      Esta configuración es útil para asegurarse de que todo el contenido del archivo o la carpeta se copia en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Este intervalo evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
+     Esta configuración es útil para asegurarse de que todo el contenido del archivo o la carpeta se copia en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Este intervalo evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
 
    * **Eliminar resultados anteriores a:** especifique el tiempo, en número de días, a esperar antes de eliminar los archivos y carpetas anteriores al valor especificado. Esta configuración es útil para garantizar que la carpeta de resultados no se llene. El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
    * **Nombre de la carpeta de resultados:** especifique el nombre de la carpeta para almacenar los resultados. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. Puede utilizar una ruta absoluta o relativa con los siguientes patrones de archivo:
@@ -99,20 +99,19 @@ Realice los siguientes pasos para crear una carpeta vigilada:
       * %P = ID del proceso o trabajo
       * Por ejemplo, si son las 20:00 del 17 de julio de 2009 y especifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la carpeta de resultados es C:/Test/WF0/failure/2009/07/17/20.
       * Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta vigilada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta de resultados dentro de la carpeta vigilada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+
    * **Nombre de la carpeta de errores:** especifique la carpeta en la que se guardan los archivos con errores. Esta ubicación siempre es relativa a la carpeta vigilada. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados.
    * **Conservar nombre de carpeta:** especifique la carpeta en la que se almacenan los archivos después de realizar el análisis y la recogida correctamente. La ruta puede ser un directorio absoluto, relativo o nulo. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. El valor predeterminado es preserve/%Y/%M/%D/.
    * **Tamaño del lote:** especifique el número de archivos o carpetas que se recogerán por análisis. Evita una sobrecarga en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
 
-      Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, deberá reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
+     Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, deberá reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
    * **Acelerador activado:** cuando esta opción está habilitada, limita el número de trabajos de carpetas vigiladas que procesa AEM Forms en un momento dado. El valor Tamaño de lote determina el número máximo de trabajos. Para obtener más información, consulte [acelerador](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
    * **Sobrescribir archivos existentes con un nombre similar**: cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de preservación se sobrescribirán. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
-   * **Conservar archivos en caso de error:** cuando se establece en True, los archivos de entrada se conservan en caso de error. El valor predeterminado es True.
+   * **Conservar archivos si se produce error:** Cuando se establece en True, los archivos de entrada se conservan si se produce un error. El valor predeterminado es True.
    * **Incluir archivos con patrón:** especifique una lista delimitada por punto y coma (;) de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si se introduce el Patrón de archivo de inclusión, se recogerán todos los archivos y carpetas que coincidan con la entrada. Para obtener más información, consulte [Ayuda de administración](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
    * **Invocar la carpeta vigilada asincrónicamente:** identifica el tipo de invocación como asíncrono o sincrónico. El valor predeterminado es asíncrono. Se recomienda asincrónico para procesos de larga duración y sincrónico para procesos transitorios o de corta duración.
    * **Habilitar carpeta vigilada:** cuando esta opción está habilitada, la carpeta vigilada está habilitada. El valor predeterminado es True.
-
-
 
 ## Modificar propiedades de una carpeta vigilada existente {#modify-properties-of-an-existing-watched-folder}
 

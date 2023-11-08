@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ La definición del cuadro de diálogo de un andamio funciona de manera similar a
 
 * Las definiciones de cuadros de diálogo de componentes se representan como cuadros de diálogo normales (como se muestra en el panel central del editor de cuadros de diálogo), mientras que las definiciones de cuadros de diálogo de andamios, aunque aparecen como cuadros de diálogo normales en el editor de cuadros de diálogo, se representan en la página de andamio como un formulario de andamio (como se muestra en la **Noticias** andamio arriba).
 * Los cuadros de diálogo de componentes proporcionan campos solo para aquellos valores necesarios para definir el contenido de un componente específico único. Un cuadro de diálogo de andamiaje debe proporcionar campos para cada propiedad en cada párrafo de la página que se va a crear.
-* En el caso de los cuadros de diálogo de componentes, el componente utilizado para procesar el contenido especificado es implícito y, por lo tanto, la variable `sling:resourceType` La propiedad del párrafo se rellena automáticamente cuando se crea el párrafo. Con un andamiaje, toda la información que defina el contenido y el componente asignado para un párrafo determinado debe proporcionarla el propio cuadro de diálogo. En los cuadros de diálogo de andamiaje, esta información debe proporcionarse utilizando *Oculto* campos para enviar esta información al crear la página.
+* Si hay cuadros de diálogo de componentes, el componente utilizado para procesar el contenido especificado es implícito y, por lo tanto, la variable `sling:resourceType` La propiedad del párrafo se rellena automáticamente cuando se crea el párrafo. Con un andamiaje, toda la información que defina el contenido y el componente asignado para un párrafo determinado debe proporcionarla el propio cuadro de diálogo. En los cuadros de diálogo de andamiaje, esta información debe proporcionarse utilizando *Oculto* campos para enviar esta información al crear la página.
 
 Un vistazo al ejemplo **Noticias** el cuadro de diálogo andamiaje del editor de diálogos ayuda a explicar cómo funciona. Vaya al modo de diseño en la página del andamio y haga clic en el vínculo del editor de diálogos.
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Una ventaja de este enfoque es que el tamaño de la base de datos de seguridad d
 
 La seguridad de los documentos también admite directivas abstractas. Las directivas abstractas son plantillas de directiva que contienen todos los atributos de directiva, como la configuración de seguridad de los documentos y los derechos de uso, pero no contienen una lista de principales. Los administradores pueden crear cualquier número de directivas a partir de la directiva abstracta con diferentes entidades principales que deben tener acceso a los documentos. Los cambios realizados en la política abstracta no afectan a las políticas reales que se generan a partir de las políticas abstractas.
 
-En el caso de la generación de facturas mensuales para una compañía de telecomunicaciones, se crea una directiva abstracta, se crean usuarios y, a continuación, se generan licencias únicas para cada usuario. Las licencias se aplican posteriormente a los documentos de cada usuario.
+Si una empresa de telecomunicaciones genera una factura mensual, se crea una directiva abstracta, se crean usuarios y, a continuación, se generan licencias únicas para cada usuario. Las licencias se aplican posteriormente a los documentos de cada usuario.
 
 La creación de una directiva abstracta solo se admite mediante el SDK de Java de seguridad de documentos. Sin embargo, puede administrar las directivas que cree a partir de la directiva abstracta de las páginas web de Document Security. Las directivas creadas con este método tienen un comportamiento idéntico al de las páginas web de Document Security.
 

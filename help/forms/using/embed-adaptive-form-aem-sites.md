@@ -10,10 +10,10 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1162'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
 | AEM 6.5 | Este artículo |
 
 
@@ -45,7 +45,7 @@ Todos los formularios y las comunicaciones interactivas que cree estarán dispon
 
 Para incrustar un formulario adaptable o una comunicación interactiva en una página de AEM Sites que usa una plantilla editable, asegúrese de que el componente de AEM Forms esté configurado como un componente permitido en la plantilla asociada. Para obtener más información, consulte la sección **directiva y propiedades (Contenedor de diseño)** en [Creación de plantillas de página](/help/sites-authoring/templates.md).
 
-En el caso de las páginas de Sites que usan una plantilla estática, deberá configurarlo en el sistema de párrafos de la página de Sites. Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
+Si hay una página de Sites que utiliza una plantilla estática, debe configurarla en el sistema de párrafos de la página de Sites. Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
 
 ## Incrustar un formulario adaptable o comunicación interactiva {#af-component}
 

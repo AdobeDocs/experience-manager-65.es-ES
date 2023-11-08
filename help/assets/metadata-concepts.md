@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2717'
 ht-degree: 9%
 
 ---
@@ -220,7 +220,7 @@ XMP La estandarización estandariza la forma en que se definen, crean y procesan
 
 Todos los metadatos heredados de EXIF, ID3 o Microsoft XMP Office se traducen automáticamente a la versión de, que se puede ampliar para admitir esquemas de metadatos específicos del cliente, como catálogos de productos.
 
-XMP Los metadatos de la constan de un conjunto de propiedades. Estas propiedades siempre se asocian a una entidad concreta denominada recurso; es decir, las propiedades se refieren al recurso. XMP En el caso de los recursos, el recurso siempre es el recurso
+XMP Los metadatos de la constan de un conjunto de propiedades. Estas propiedades siempre se asocian a una entidad concreta denominada recurso; es decir, las propiedades se refieren al recurso. XMP Si hay algún recurso, el recurso es siempre el recurso.
 
 ### XMP ecosistema de {#xmp-ecosystem}
 

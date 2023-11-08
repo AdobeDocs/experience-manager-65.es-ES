@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2668'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ También es posible combinar varias instancias del repositorio de contenido para
 
 **Dispatcher** : Dispatcher es una herramienta de almacenamiento en caché y de equilibrio de carga que proporciona ciertas garantías de seguridad.
 
-**Widgets de ExtJS** AEM : La mayoría de los elementos de la interfaz de usuario en el uso de ExtJS, que es una biblioteca de widgets de terceros escrita en JavaScript. ExtJS ofrece un alto rendimiento, widgets de interfaz de usuario personalizables y un modelo de componentes bien diseñado y ampliable.
+**Widgets de ExtJS** AEM : La mayoría de los elementos de la interfaz de usuario de utilizan ExtJS, que es una biblioteca de widgets de terceros escrita en JavaScript. ExtJS ofrece un alto rendimiento, widgets de interfaz de usuario personalizables y un modelo de componentes bien diseñado y ampliable.
 
 **JCR, Java™ Repositorio de contenido** : la especificación del repositorio de contenido Java™ (JSR-283) proporciona un modelo de datos abstracto y una interfaz de programación de aplicaciones para crear un repositorio de datos NoSQL escalable que combina las características de un sistema de archivos y una base de datos de objetos. AEM Aunque no necesita comprender JSR-283 con detalle exhaustivo, debe dedicar tiempo a familiarizarse con las capacidades básicas de JCR y con el modelo de datos subyacente, ya que JCR es lo que hace posible la filosofía de &quot;todo es contenido&quot; de la.
 

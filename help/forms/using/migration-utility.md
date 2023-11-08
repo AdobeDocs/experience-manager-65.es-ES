@@ -9,9 +9,9 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1734'
 ht-degree: 60%
 
 ---
@@ -27,19 +27,19 @@ La utilidad de migración convierte el [Recursos de Forms adaptables](../../form
 
 >[!NOTE]
 >
->En el caso de una actualización fuera del sitio, para los recursos de Administración de correspondencia, puede ejecutar la migración cada vez que importe los recursos. Para realizar una migración de Administración de correspondencia, debe tener instalado el Paquete de compatibilidad de Forms.
+>Si hay una actualización fuera del sitio, para los recursos de Administración de correspondencia, puede ejecutar la migración cada vez que importe los recursos. Para realizar una migración de Administración de correspondencia, debe tener instalado el Paquete de compatibilidad de Forms.
 
 ## Método de migración {#approach-to-migration}
 
 Puede [actualización](../../forms/using/upgrade.md) a la última versión de AEM Forms 6.5 desde AEM Forms 6.4, 6.3 o 6.2, o una nueva instalación. Dependiendo de si ha actualizado la instalación anterior o si ha realizado una instalación nueva, debe realizar una de las siguientes acciones:
 
-**En el caso de una actualización in situ**
+**Si hay una actualización in situ**
 
 Si ha realizado una actualización in situ, la instancia actualizada ya contiene los recursos y los documentos. Sin embargo, para poder utilizar los recursos y los documentos, debe instalar el [Paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) (incluye el paquete de compatibilidad de Administración de correspondencia)
 
 A continuación, debe actualizar los recursos y los documentos mediante [ejecución de la utilidad de migración](#runningmigrationutility).
 
-**En el caso de una instalación fuera del sitio**
+**Si hay una instalación fuera del sitio**
 
 Si se trata de una instalación fuera del sitio (nueva), antes de poder utilizar los recursos y documentos, debe instalar el [Paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) (incluye el paquete de compatibilidad de Administración de correspondencia).
 

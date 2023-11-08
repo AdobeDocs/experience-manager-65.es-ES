@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2519'
 ht-degree: 1%
@@ -51,15 +51,15 @@ Puede realizar estas tareas mediante el servicio Copia de seguridad y restauraci
 >
 >Para obtener más información sobre el servicio Copia de seguridad y restauración, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Introducción del modo de copia de seguridad en el servidor de Forms {#entering-backup-mode-on-the-forms-server}
+## Introducción del modo de copia de seguridad en Forms Server {#entering-backup-mode-on-the-forms-server}
 
-Se entra en el modo de copia de seguridad para permitir copias de seguridad en caliente de un servidor de Forms. Al entrar en el modo de copia de seguridad, debe especificar la siguiente información en función de los procedimientos de copia de seguridad de su organización:
+Se entra en modo de copia de seguridad para permitir copias de seguridad en caliente de un servidor de Forms. Al entrar en el modo de copia de seguridad, debe especificar la siguiente información en función de los procedimientos de copia de seguridad de su organización:
 
 * Una etiqueta única para identificar la sesión del modo de copia de seguridad que puede ser útil para los procesos de copia de seguridad.
 * Hora a la que se completó el procedimiento de copia de seguridad.
 * Un indicador que indica si se debe estar en modo de copia de seguridad continua, lo que resulta útil solo si se realizan copias de seguridad móviles.
 
-Antes de escribir aplicaciones para entrar en el modo de copia de seguridad, se recomienda comprender los procedimientos de copia de seguridad que se utilizan después de poner el servidor de Forms en modo de copia de seguridad. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
+Antes de escribir aplicaciones para entrar en modo de copia de seguridad, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizan después de poner el servidor de Forms en modo de copia de seguridad. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Inicie el modo de copia de seguridad mediante la API del servicio de copia de se
 
 1. Realizar la copia de seguridad del GDS y la base de datos
 
-   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado el servidor de Forms. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
+   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado Forms Server. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
 
 ### Acceder al modo de copia de seguridad mediante la API de servicio web {#enter-backup-mode-using-the-web-service-api}
 
@@ -178,11 +178,11 @@ Inicie el modo de copia de seguridad mediante el servicio web proporcionado por 
 
 1. Realizar la copia de seguridad del GDS y la base de datos
 
-   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado el servidor de Forms. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
+   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado Forms Server. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
 
-## Dejar el modo de copia de seguridad en el servidor de Forms {#leaving-backup-mode-on-the-forms-server}
+## Dejar el modo de copia de seguridad en Forms Server {#leaving-backup-mode-on-the-forms-server}
 
-Se abandona el modo de copia de seguridad para que el servidor de Forms reanude la depuración de archivos del GDS (Global Document Storage) en el servidor de Forms.
+Se abandona el modo de copia de seguridad para que Forms Server reanude la depuración de archivos del GDS (Global Document Storage) en Forms Server.
 
 Antes de escribir las aplicaciones para entrar en el modo de salida, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizan con AEM Forms. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
 

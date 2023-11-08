@@ -1,19 +1,15 @@
 ---
 title: Usar AEM Forms Workspace
-seo-title: Working with AEM Forms workspace
 description: Familiarícese con AEM Forms Workspace con esta breve descripción general de los flujos de trabajo de proceso.
-seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 99%
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +47,7 @@ puede aprobar varias tareas del mismo tipo. Una vez que seleccione una tarea par
 
 Espacio de trabajo de Flex no es compatible con los clientes de AEM Forms. Todos los clientes que utilicen espacio de trabajo de Flex deben trasladarse a AEM Forms Workspace.
 
-En AEM Forms Workspace, los servicios de procesamiento y envío predeterminados del perfil de acción predeterminado asociados a los formularios XDP han cambiado, y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio de renderización y envío](/help/forms/using/new-render-submit-service.md). Para migrar los procesos existentes, que funcionan con formularios XDP, y para utilizar estos servicios, puede seguir [los siguientes pasos](new-render-submit-service.md).
+En AEM Forms Workspace, los servicios de procesamiento y envío predeterminados del perfil de acción predeterminado asociados a los formularios XDP han cambiado, y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio de renderización y envío](/help/forms/using/new-render-submit-service.md). Para migrar los procesos existentes, que funcionan con formularios XDP, y utilizar estos servicios, puede seguir [estos pasos](new-render-submit-service.md).
 
 **Asignación de las personalizaciones de espacio de trabajo de Flex con AEM Forms Workspace**
 

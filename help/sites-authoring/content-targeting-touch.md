@@ -1,19 +1,15 @@
 ---
 title: Creación de contenido orientado mediante el modo de Orientación
-seo-title: Authoring Targeted Content Using Targeting Mode
 description: El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias
-seo-description: Targeting mode and the Target component provide tools for creating content for experiences
-uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5383'
 ht-degree: 86%
 
 ---
@@ -635,7 +631,7 @@ Si utiliza la prueba A/B, al simular, las experiencias se muestran según el por
 
    La página cambia para mostrar el contenido dirigido al contexto actual.
 
-1. Para realizar cambios en las ofertas que se muestran, cambie al modo de Orientación. Con la actividad de simulación seleccionada, edite las ofertas para el contexto configurado en el modo de vista previa.
+1. Para cambiar las ofertas que se muestran, cambie al modo de Orientación. Con la actividad de simulación seleccionada, edite las ofertas para el contexto configurado en el modo de vista previa.
 
 ## Configuración de opciones del componente de Target {#configuring-target-component-options}
 

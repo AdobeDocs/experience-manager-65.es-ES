@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9095'
 ht-degree: 1%
@@ -593,7 +593,7 @@ Al actualizar un recurso, se crea la nueva versión en función de los atributos
 
 Por ejemplo, si actualiza un archivo XDP y contiene referencias a otros recursos, también se registrarán esas referencias adicionales. Supongamos que form.xdp versión 1.0 tiene dos referencias externas: un logotipo y una hoja de estilo y, a continuación, actualice form.xdp para que ahora tenga tres referencias: un logotipo, una hoja de estilo y un archivo de esquema. Durante la actualización, el repositorio añadirá la tercera relación (al archivo de esquema) a su tabla de relaciones pendiente. Una vez que el archivo de esquema esté presente en el repositorio, la relación se formará automáticamente. Sin embargo, si la versión 2.0 de form.xdp ya no utiliza el logotipo, la versión 2.0 de form.xdp no tendrá relación con él.
 
-Todas las operaciones de actualización son atómicas y transaccionales. Por ejemplo, si dos usuarios leen el mismo recurso y ambos deciden actualizar la versión 1.0 a la 2.0, uno de ellos se realizará correctamente y uno de ellos fallará, la integridad del repositorio se mantendrá y ambos recibirán un mensaje que confirme el éxito o el error. Si la transacción no se confirma, se revierte en caso de error de la base de datos y se agota el tiempo de espera o se revierte según el servidor de aplicaciones.
+Todas las operaciones de actualización son atómicas y transaccionales. Por ejemplo, si dos usuarios leen el mismo recurso y ambos deciden actualizar la versión 1.0 a la 2.0, uno de ellos se realizará correctamente y uno de ellos fallará, la integridad del repositorio se mantendrá y ambos recibirán un mensaje que confirme el éxito o el error. Si la transacción no se confirma, se revertirá si se produce un error en la base de datos y se agotará el tiempo de espera o se revertirá según el servidor de aplicaciones.
 
 Puede actualizar los recursos mediante programación utilizando la API de Java del servicio de repositorio o la API del servicio web.
 

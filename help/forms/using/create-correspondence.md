@@ -1,19 +1,15 @@
 ---
 title: Crear correspondencia
-seo-title: Create Correspondence
 description: Después de crear una plantilla de carta, puede utilizarla para crear correspondencia en AEM Forms administrando datos, contenido y archivos adjuntos.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3853'
-ht-degree: 98%
+source-wordcount: '3849'
+ht-degree: 97%
 
 ---
 
@@ -261,11 +257,11 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
    >
    >Si utiliza Mozilla Firefox y el tipo de representación HTML, para previsualizar la carta como PDF aplanado, asegúrese de utilizar el complemento del explorador nativo y no el complemento de Acrobat. Para seleccionar el complemento nativo del explorador, vaya a la configuración de Mozilla Firefox y, para el tipo de contenido PDF, seleccione Previsualizar en Firefox.
 
-1. Si la vista previa del PDF aplanado es satisfactoria, pulse **Enviar** para presentar la carta. O para realizar cambios en la carta, pulse **Salir de la vista previa** para volver a la interfaz de Crear correspondencia de la carta y realizar cambios en ella. Al pulsar Enviar, si la configuración Administrar instancia de carta está habilitada en la instancia de publicación, se generará la instancia de envío de la carta.
+1. Si la vista previa del PDF aplanado es satisfactoria, pulse **Enviar** para presentar la carta. O bien, para cambiar la carta, pulse **Salir de vista previa** para volver a la vista previa de la interfaz de usuario Crear correspondencia de la carta y realizar cambios en ella. Al pulsar Enviar, si la configuración Administrar instancia de carta está habilitada en la instancia de publicación, se generará la instancia de envío de la carta.
 
    Para obtener más información, consulte Instancia de borrador en las instancias Guardar borrador y Enviar carta.
 
-   También puede guardar la carta como borrador para realizar cambios más adelante.
+   También puede guardar la carta como borrador para cambiarla más adelante.
 
    Después de realizar los cambios necesarios, puede enviar la carta desde la vista previa HTML5 o pulsar de nuevo Previsualizar para revisar el resultado del PDF aplanado.
 

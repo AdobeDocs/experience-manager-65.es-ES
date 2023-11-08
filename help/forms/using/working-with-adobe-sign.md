@@ -11,10 +11,10 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3935'
-ht-degree: 97%
+source-wordcount: '3936'
+ht-degree: 96%
 
 ---
 
@@ -201,7 +201,7 @@ Solo se puede tener un firmante o varios firmantes para un formulario adaptable.
 
    * **[!UICONTROL ¿El firmante y quien rellena el formulario son la misma persona?]:** Seleccione **Sí**, si la persona que rellena el formulario y el primer firmante son la misma persona. Si la opción se establece en **No,** a continuación, no utilice el componente paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente como Sí.
 
-   * **[!UICONTROL Dirección de correo electrónico del firmante]:** Especifique la dirección de correo electrónico del firmante. El firmante recibe los documentos/formularios a firmar en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en el perfil de AEM del usuario que ha iniciado sesión o escribir manualmente una dirección de correo electrónico. Es un paso obligatorio. Asegúrese de que la dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no sea idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar AEM Cloud Services.
+   * **[!UICONTROL Dirección de correo electrónico del firmante]:** Especifique la dirección de correo electrónico del firmante. El firmante recibe los documentos/formularios a firmar en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en el perfil de AEM del usuario que ha iniciado sesión o escribir manualmente una dirección de correo electrónico. Es un paso obligatorio. Asegúrese de que la dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no sea idéntica a [!DNL Adobe Sign] AEM cuenta utilizada para configurar servicios en la nube de.
 
    * **[!UICONTROL Método de autenticación del firmante]:** Especifique el método para autenticar a un usuario antes de abrir un formulario para su firma. Puede elegir entre teléfono, base de conocimiento y autenticación social basada en identidad. Para Adobe Acrobat Sign Solutions para Administración Pública, solo están disponibles las opciones de autenticación por teléfono y basada en conocimientos.
 
@@ -355,7 +355,7 @@ Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario ada
 * Asegúrese de que la aplicación API en el servidor [!DNL Adobe Sign] utilizada para configurar [!DNL Adobe Sign] Cloud Service tiene los permisos necesarios.
 * Si utiliza varios servicios de [!DNL Adobe Sign] Cloud Services, señale la **[!UICONTROL URL oAuth]** de todos los servicios al mismo sistema para **[!UICONTROL compartir de Adobe Sign]**.
 
-* Use direcciones de correo electrónico independientes para configurar la cuenta de [!DNL Adobe Sign] y para el primer y único firmante. La dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no puede ser idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar AEM Cloud Services.
+* Use direcciones de correo electrónico independientes para configurar la cuenta de [!DNL Adobe Sign] y para el primer y único firmante. La dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no puede ser idéntica a [!DNL Adobe Sign] AEM cuenta utilizada para configurar servicios en la nube de.
 
 ### El flujo de trabajo de AEM [!DNL Forms] configurado para un formulario adaptable habilitado para [!DNL Adobe Sign] no se inicia {#adobe-sign-aem-form-workflow-failures}
 

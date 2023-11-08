@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -134,7 +134,7 @@ Por lo tanto, en el ejemplo de superposición anterior, se necesitan los siguien
 
 >[!NOTE]
 >
->Al utilizar la fusión de recursos de Sling (es decir, al tratar con la interfaz de usuario táctil estándar), no se recomienda copiar toda la estructura de `/libs` ya que se almacenaría demasiada información en `/apps`. Esto puede causar problemas cuando el sistema se actualiza de alguna manera.
+>Al utilizar la fusión de recursos de Sling (es decir, al trabajar con la interfaz de usuario táctil estándar), no se recomienda copiar toda la estructura de `/libs` ya que se almacenaría demasiada información en `/apps`. Esto puede causar problemas cuando el sistema se actualiza de alguna manera.
 
 ### Casos de uso {#use-cases}
 

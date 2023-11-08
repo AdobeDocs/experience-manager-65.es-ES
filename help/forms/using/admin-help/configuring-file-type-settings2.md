@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '6166'
+source-wordcount: '6163'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,7 @@ Active estas opciones para especificar el aspecto de la ventana:
 
 ## Configuración de vídeos de Flash a PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator admite la capacidad de enviar un vídeo para el Flash de Adobe (archivo SWF o FLV) y crear un archivo PDF con un vídeo para el Flash de Adobe incrustado en él. Esta conversión no requiere que el Flash Player del Adobe esté instalado en el servidor de Forms. Para obtener instrucciones sobre cómo acceder a esta opción, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator admite la capacidad de enviar un vídeo para el Flash de Adobe (archivo SWF o FLV) y crear un archivo PDF con un vídeo para el Flash de Adobe incrustado en él. Esta conversión no requiere que el Flash Player de Adobe esté instalado en el servidor de Forms. Para obtener instrucciones sobre cómo acceder a esta opción, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensiones de nombre de archivo:** Lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
 
@@ -253,7 +253,7 @@ Para obtener instrucciones sobre cómo acceder a esta configuración, consulte [
 
    * Si es necesario, seleccione un directorio de fuentes diferente en la **Fuente** menú desplegable. Este menú desplegable enumera los directorios de fuentes especificados en **Inicio > Configuración > Sistema principal > Configuraciones principales**.
    * Seleccione una o más fuentes de la lista **Fuentes disponibles** y haga clic en **Añadir**. Estas fuentes se añaden a **Fuentes para desincrustar** lista.
-   * Si desea desincrustar algunas fuentes que no existen en el servidor de Forms, introduzca los nombres de esas fuentes en la **Añadir fuentes para desincrustar** cuadro. Clic **Añadir**.
+   * Si desea desincrustar algunas fuentes que no existen en el servidor de Forms, escriba los nombres de esas fuentes en el **Añadir fuentes para desincrustar** cuadro. Clic **Añadir**.
 
    >[!NOTE]
    >
@@ -315,7 +315,7 @@ Conservar sobreimpresión: fusiona el color de la ilustración transparente con 
 
 En la tabla siguiente se muestran los tipos comunes de impresoras y su resolución medida en ppp, su resolución de pantalla predeterminada medida en líneas por pulgada (lpp) y una resolución de remuestreo para imágenes medidas en píxeles por pulgada (ppi). Por ejemplo, si estuviera imprimiendo en una impresora láser de 600 ppp, escribiría 170 para la resolución con la que volver a muestrear las imágenes.
 
-**Imágenes** Seleccione Imágenes para especificar las opciones de compresión y remuestreo de las imágenes en color, escala de grises y monocromas. Es posible que desee experimentar con estas opciones para encontrar un equilibrio adecuado entre el tamaño del archivo y la calidad de la imagen. La configuración de resolución para las imágenes en color y escala de grises debe ser de 1,5 a 2 veces la regla de pantalla de línea en la que se imprimirá el archivo. La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida, pero tenga en cuenta que guardar una imagen monocroma con una resolución superior a 1500 ppp aumenta el tamaño del archivo sin mejorar de forma notable la calidad de la imagen. Las imágenes que se ampliarán, como los mapas, pueden requerir resoluciones más altas.
+**Imágenes** Seleccione Imágenes para especificar las opciones de compresión y remuestreo de las imágenes en color, escala de grises y monocromas. Es posible que desee experimentar con estas opciones para encontrar un equilibrio adecuado entre el tamaño del archivo y la calidad de la imagen. La configuración de resolución para las imágenes en color y escala de grises debe ser de 1,5 a 2 veces la regla de pantalla de línea en la que se imprimirá el archivo. La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida, pero si guarda una imagen monocroma con una resolución superior a 1500 ppp, el tamaño del archivo aumenta sin mejorar de forma notable la calidad de la imagen. Las imágenes que se ampliarán, como los mapas, pueden requerir resoluciones más altas.
 
 >[!NOTE]
 >

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 3%
@@ -174,4 +174,4 @@ Las siguientes estrategias pueden minimizar la pérdida de datos de la carpeta d
 
 ## Conclusión {#conclusion}
 
-Debido a la naturaleza dinámica y en constante cambio de una carpeta vigilada, la restauración de las carpetas vigiladas debe realizarse con archivos de los que se realiza una copia de seguridad en un día. Una práctica recomendada sería realizar una copia de seguridad de los resultados, almacenar la carpeta de entrada en un servidor y rastrear los archivos de entrada para que pueda volver a enviar el trabajo en caso de error.
+Debido a la naturaleza dinámica y en constante cambio de una carpeta vigilada, la restauración de las carpetas vigiladas debe realizarse con archivos de los que se realiza una copia de seguridad en un día. Una práctica recomendada sería realizar una copia de seguridad de los resultados, almacenar la carpeta de entrada en un servidor y rastrear los archivos de entrada para que pueda volver a enviar el trabajo si se produce un error.

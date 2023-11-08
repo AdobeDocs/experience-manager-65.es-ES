@@ -10,10 +10,10 @@ topic-tags: Configuration
 discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
 exl-id: d080932f-d5fb-482d-9329-62da5df10362
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -58,7 +58,7 @@ Siga los siguientes pasos para integrar AEM Forms Workspace en un elemento web
 
 1. En la página Visor de páginas, realice las siguientes tareas:
 
-   1. En el cuadro Vínculo, escriba la URL de AEM Forms Workspace; por ejemplo, `https://[AEM_forms_Server]:8080/lc/ws`, donde `[AEM_forms_Server]` representa la IP o el nombre del servidor de AEM Forms.
+   1. En el cuadro Vínculo, escriba la dirección URL de AEM Forms Workspace como `https://[AEM_forms_Server]:8080/lc/ws` donde `[AEM_forms_Server]` representa la IP o el nombre del servidor de AEM Forms.
    1. Haga clic en **Apariencia** y modifique la altura, la anchura y el título para que pueda ver la interfaz de usuario de Workspace completa. Por ejemplo, puede establecer la altura y la anchura en 6 y 11 pulgadas, respectivamente.
    1. Haga clic en **Probar vínculo**. Aparece una nueva ventana del explorador web que muestra Workspace.
    1. (Opcional) Haga clic en **Diseño** y modifique el diseño de Workspace en Elemento web.

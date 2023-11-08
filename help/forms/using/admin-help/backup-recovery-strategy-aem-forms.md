@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 0%
@@ -61,11 +61,11 @@ AEM Para evitar la pérdida de datos, se debe realizar una copia de seguridad de
 
 AEM Siga estas directrices si debe recuperar formularios en un entorno diferente debido a los siguientes cambios:
 
-* AEM Cambio en la dirección IP, el nombre de host o el puerto del servidor de formularios de la
+* Cambio en la dirección IP, el nombre de host o el puerto del servidor de AEM Forms
 * Cambio en las letras de unidad o en la ruta de acceso del directorio
 * Cambiar a un host, puerto o nombre de base de datos diferente
 
-Normalmente, estos escenarios de recuperación se deben a un error de hardware del servidor que aloja el servidor de aplicaciones, el servidor de bases de datos o el servidor de Forms. AEM AEM AEM Además de las configuraciones específicas de los formularios de la aplicación que se describen en esta sección, también debe realizar los cambios necesarios en otras partes de la implementación de Forms, como equilibradores de carga y servidores de seguridad, si cambia el nombre de host o la dirección IP de un servidor de Forms, por ejemplo, si cambia el nombre de host o la dirección IP de un servidor de la aplicación.
+Normalmente, estos escenarios de recuperación se deben a un error de hardware del servidor que aloja el servidor de aplicaciones, el servidor de base de datos o el servidor de Forms. AEM AEM Además de las configuraciones específicas de formularios de la aplicación que se describen en esta sección, también debe realizar los cambios necesarios en otras partes de la implementación de formularios de la aplicación, como equilibradores de carga y firewalls, si cambia el nombre de host o la dirección IP de un servidor de AEM Forms.
 
 ### Qué no se puede cambiar {#what-cannot-be-changed}
 
@@ -104,4 +104,4 @@ Utilice el `LCSetGDS`secuencia de comandos en `[*aem-forms root]*\sdk\misc\Found
 >
 >Esta circunstancia es la única en la que debería usar esta secuencia de comandos para cambiar la ubicación de GDS. AEM Para cambiar la ubicación de GDS mientras se está ejecutando el formulario de GDS, utilice la consola de administración. (Consulte [AEM Configurar opciones generales de formularios](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
-Después de establecer la ruta de GDS, inicie el servidor de Forms en modo de mantenimiento y utilice la consola de administración para actualizar las rutas de sistema de archivos restantes para el nuevo nodo. AEM Después de comprobar que se han actualizado todas las configuraciones necesarias, reinicie y pruebe los formularios de la aplicación de prueba de la aplicación de prueba de la aplicación de.
+Después de establecer la ruta de acceso de GDS, inicie el servidor de Forms en modo de mantenimiento y utilice la consola de administración para actualizar las rutas de acceso restantes del sistema de archivos para el nuevo nodo. AEM Después de comprobar que se han actualizado todas las configuraciones necesarias, reinicie y pruebe los formularios de la aplicación de prueba de la aplicación de prueba de la aplicación de.

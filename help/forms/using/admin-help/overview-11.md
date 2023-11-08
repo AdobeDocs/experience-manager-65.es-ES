@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
 exl-id: 05f8b430-141e-4921-98b1-a0d8f636e478
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 2%
@@ -28,7 +28,7 @@ AEM El monitor de estado proporciona información crítica sobre el sistema de f
 
 La página Monitor de estado de la consola de administración tiene tres pestañas:
 
-* La pestaña System muestra gráficos de monitorización de recursos e información sobre el servidor de Forms (o el nodo en un entorno agrupado). (Consulte [Ver información del sistema](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
+* La pestaña System muestra gráficos de monitorización de recursos e información sobre Forms Server (o el nodo en un entorno agrupado). (Consulte [Ver información del sistema](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
 * La ficha Administrador de trabajo muestra datos relacionados con el Administrador de trabajo, como el número de elementos de trabajo de la cola Administrador de trabajos. Puede filtrar la información utilizando varios criterios o administrar elementos de trabajo individuales utilizando las herramientas de operación. (Consulte [Ver estadísticas relacionadas con Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 * La pestaña Programador de Depuración de Trabajos permite depurar registros obsoletos de la base de datos Administrador de trabajos. (Consulte [Purgar registros de la base de datos de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 

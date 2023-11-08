@@ -1,20 +1,16 @@
 ---
 title: Diseño
-seo-title: Layout Design
 description: Detalles del diseño explica cómo crear diseños para utilizarlos en sus cartas o comunicaciones interactivas.
-seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
-uuid: 469a8a71-88f7-4102-bb02-38ed05390f6c
 content-type: reference
 topic-tags: correspondence-management, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 100%
+source-wordcount: '2171'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +38,7 @@ Siga estos pasos para crear diseños para cartas o el canal de impresión de Int
 1. Un diseño se puede diseñar de la siguiente forma:
 
    1. Cree cada sección como un subformulario independiente que contenga todos los elementos de la sección.
-   1. Diseñe cada subformulario de sección como secundario al mismo subformulario principal. El diseño del subformulario principal está establecido en una posición variable para permitir que las secciones se desplacen hacia abajo en el caso de que se combinen datos grandes en las secciones anteriores.
+   1. Diseñe cada subformulario de sección como secundario al mismo subformulario principal. El diseño del subformulario principal está establecido en una posición variable para permitir que las secciones se desplacen hacia abajo si hay datos grandes que se combinen en secciones anteriores.
    1. La sección Domicilio habitual también se puede reutilizar en otros diseños. Créela como un diseño de fragmento.
    1. La sección Detalles de interés adicionales contiene únicamente dos elementos colocados uno debajo de otro, pueden contener datos grandes y se ha diseñado con una posición variable.
    1. Otras secciones contienen elementos en posiciones específicas, por lo que se crean como diseños de posición fija.
@@ -227,7 +223,7 @@ Utilice un campo si desea capturar datos de módulo o datos de elementos del dic
 
 ## Configuración de elementos repetidos {#setting-up-repetitive-elements}
 
-Si algunos elementos, como el logotipo y la dirección de su organización, aparecen en todas las páginas de una carta o comunicación interactiva, cree campos de formulario para esos elementos y colóquelos en la página maestra. Utilice el enlace Nombre (Nombre de campo) para estos campos.
+Cuando elementos como el logotipo y la dirección de su organización aparezcan en todas las páginas de una carta o comunicación interactiva, cree campos de formulario para esos elementos y colóquelos en la página maestra. Utilice el enlace Nombre (Nombre de campo) para estos campos.
 
 ## Especificar el formato de renderización del servidor {#specify-the-server-nbsp-render-format}
 

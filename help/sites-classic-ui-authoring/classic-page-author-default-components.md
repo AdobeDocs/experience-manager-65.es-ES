@@ -2,17 +2,15 @@
 title: Componentes
 description: AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web.
 page-status-flag: de-activated
-uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 8%
+source-wordcount: '218'
+ht-degree: 27%
 
 ---
 
@@ -22,7 +20,7 @@ Adobe Experience Manager AEM () viene con una variedad de componentes listos par
 
 >[!CAUTION]
 >
->AEM En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación estándar de la instalación de la aplicación de la versión de la aplicación de la versión de la aplicación de.
+>En esta sección solo se describen los componentes que están disponibles de forma predeterminada en una instalación de AEM estándar.
 >
 >Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 
@@ -32,11 +30,11 @@ Las siguientes páginas proporcionan vínculos rápidos a algunas de las áreas 
 
 * [Componentes para la creación de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Los componentes utilizados para crear contenido de página estándar están principalmente contenidos en los grupos **General**, **Columnas** y **Forms**.
+  Los componentes utilizados para crear contenido de página estándar están principalmente contenidos en los grupos **General**, **Columnas** y **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-   AEM La funcionalidad de comercio electrónico de también incluye una amplia gama de componentes, incluidos en la sección **Comercio** grupo. El uso real puede depender del motor de comercio que se utilice.
+  AEM La funcionalidad de comercio electrónico de también incluye una amplia gama de componentes, incluidos en la sección **Comercio** grupo. El uso real puede depender del motor de comercio que se utilice.
 
 ## Uso del modo Diseño para configurar componentes {#using-design-mode-to-configure-components}
 

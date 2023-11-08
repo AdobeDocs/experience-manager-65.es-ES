@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 1%
@@ -67,13 +67,13 @@ Debe moverse explícitamente de un panel a otro con la variable `xfa.host.pageUp
 >
 >Si desea personalizar el aspecto del botón Firma digital de HTML en un formulario de HTML, debe cambiar las siguientes propiedades en el archivo fscdigsig.css (dentro del archivo adobe-forms-ds.ear > adobe-forms-ds.war ):
 
-**.fsc-ds-ssb**: Esta hoja de estilo es aplicable en el caso de un campo de signo en blanco.
+**.fsc-ds-ssb**: esta hoja de estilo es aplicable si hay un campo de signo en blanco.
 
-**.fsc-ds-ssv**: Esta hoja de estilo es aplicable en el caso de un campo de signo válido.
+**.fsc-ds-ssv**: esta hoja de estilo es aplicable si hay un campo de signo válido.
 
-**.fsc-ds-ssc**: esta hoja de estilo es aplicable en el caso de un campo de signo válido pero los datos han cambiado.
+**.fsc-ds-ssc**: Esta hoja de estilo es aplicable si hay un campo de signo Válido pero los datos han cambiado.
 
-**.fsc-ds-ssi**: esta hoja de estilo es aplicable en caso de un campo de signo no válido.
+**.fsc-ds-ssi**: esta hoja de estilo es aplicable si hay un campo de signo no válido.
 
 **.fsc-ds-popup-bg**: esta propiedad de hoja de estilos no se está utilizando.
 

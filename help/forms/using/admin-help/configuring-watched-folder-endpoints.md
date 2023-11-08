@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7176'
+source-wordcount: '7174'
 ht-degree: 21%
 
 ---
@@ -211,7 +211,7 @@ Los archivos de solo lectura no se procesan y se guardan en la carpeta de errore
 
 El valor predeterminado es failure/%Y/%M/%D/.
 
-**Conservar si se produce error:** Conservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es True.
+**Conservar si se produce error:** Conservar archivos de entrada si no se puede ejecutar la operación en un servicio. El valor predeterminado es True.
 
 **Sobrescribir nombres de archivo duplicados:** Cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de conservación se sobrescriben. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
 
@@ -225,7 +225,7 @@ El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El
 
 **Literal:** La carpeta vigilada utiliza el valor introducido en el campo a medida que se muestra. Se admiten todos los tipos básicos de Java. Por ejemplo, si una API utiliza entradas como String, long, int y Boolean, la cadena se convierte al tipo adecuado y se invoca el servicio.
 
-**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada utiliza para elegir la entrada. Por ejemplo, en el caso del servicio de cifrado de contraseña, donde el documento de entrada debe ser un archivo de PDF, el usuario puede utilizar &amp;ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
+**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada utiliza para elegir la entrada. Por ejemplo, si existe el servicio de cifrado de contraseñas, en el que el documento de entrada debe ser un archivo de PDF, el usuario puede utilizar &amp;ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
 
 **Asignaciones de parámetros de salida:** Se utiliza para configurar las salidas del servicio y la operación. La configuración disponible depende del servicio que utilice el punto final de la carpeta vigilada.
 
@@ -271,7 +271,7 @@ Si el patrón de asignación de parámetros de salida termina con &quot;File.sep
 
 ## Acerca de la restricción {#about-throttling}
 
-Cuando la restricción está habilitada para un punto final de carpeta de inspección, limita el número de trabajos de carpeta inspeccionada que se pueden procesar en un momento determinado. El número máximo de trabajos está determinado por el valor Tamaño del lote, también configurable en el punto final de la carpeta inspeccionada. Los documentos entrantes en el directorio de entrada de la carpeta vigilada no se sondearán cuando se haya alcanzado el límite de restricción. Los documentos también permanecerán en el directorio de entrada hasta que se completen otros trabajos de carpetas vigiladas y se realice otro intento de encuesta. En el caso del procesamiento sincrónico, todos los trabajos procesados en una sola encuesta se contarán hacia el límite de restricción, aunque los trabajos se procesen consecutivamente en un solo hilo.
+Cuando la restricción está habilitada para un punto final de carpeta de inspección, limita el número de trabajos de carpeta inspeccionada que se pueden procesar en un momento determinado. El número máximo de trabajos está determinado por el valor Tamaño del lote, también configurable en el punto final de la carpeta inspeccionada. Los documentos entrantes en el directorio de entrada de la carpeta vigilada no se sondearán cuando se haya alcanzado el límite de restricción. Los documentos también permanecerán en el directorio de entrada hasta que se completen otros trabajos de carpetas vigiladas y se realice otro intento de encuesta. Si hay procesamiento sincrónico, todos los trabajos procesados en una sola encuesta se contarán hasta el límite de restricción, aunque los trabajos se procesen consecutivamente en un solo hilo.
 
 >[!NOTE]
 >
@@ -292,7 +292,7 @@ La restricción impide que la carpeta inspeccionada invoque nuevos trabajos cuan
 
 La carpeta inspeccionada puede servir 100 carpetas en total en un solo nodo. El rendimiento de la carpeta inspeccionada depende del rendimiento del servidor de Forms. Para las invocaciones asincrónicas, el rendimiento depende más de la carga del sistema y de los trabajos que están en la cola del Administrador de trabajos.
 
-El rendimiento de la carpeta inspeccionada se puede mejorar añadiendo nodos al clúster. Los trabajos de carpeta inspeccionada se distribuyen entre los nodos del clúster en virtud del programador Quartz y, en el caso de solicitudes asincrónicas, por el servicio Administrador de trabajos. Todos los trabajos se mantienen en la base de datos.
+El rendimiento de la carpeta inspeccionada se puede mejorar añadiendo nodos al clúster. Los trabajos de carpeta inspeccionada se distribuyen entre los nodos del clúster en virtud del programador Quartz y, si hay solicitudes asincrónicas, por el servicio Administrador de trabajos. Todos los trabajos se mantienen en la base de datos.
 
 La carpeta inspeccionada depende del servicio Programador para programar, cancelar la programación y volver a programar los trabajos. Están disponibles otros servicios, como el servicio Administración de eventos, el servicio Administrador de usuarios y el servicio Proveedor de correo electrónico, que comparten el grupo de subprocesos del servicio Programador. Esto puede afectar al rendimiento de la carpeta inspeccionada. El ajuste del grupo de hilos del servicio Planificador será necesario cuando todos los servicios empiecen a utilizarlo.
 
@@ -408,7 +408,7 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
 
 ## Recomendaciones específicas del servicio para carpetas vigiladas {#service-specific-recommendations-for-watched-folders}
 
-AEM Para todos los servicios, debe ajustar el tamaño del lote y el intervalo de repetición de la carpeta inspeccionada para que la velocidad a la que la carpeta inspeccionada recoge los nuevos archivos y carpetas para su procesamiento no supere la velocidad de los trabajos que puede procesar el servidor de formularios de la. Los parámetros reales que se van a utilizar pueden variar según la cantidad de carpetas vigiladas configuradas, los servicios que utilicen carpetas vigiladas y la intensidad de los trabajos en el procesador.
+Para todos los servicios, debe ajustar el tamaño del lote y el intervalo de repetición de la carpeta inspeccionada para que la velocidad a la que la carpeta inspeccionada recoge los nuevos archivos y carpetas para su procesamiento no supere la velocidad de los trabajos que puede procesar el servidor de AEM Forms. Los parámetros reales que se van a utilizar pueden variar según la cantidad de carpetas vigiladas configuradas, los servicios que utilicen carpetas vigiladas y la intensidad de los trabajos en el procesador.
 
 ### Generar recomendaciones de servicio del PDF {#generate-pdf-service-recommendations}
 

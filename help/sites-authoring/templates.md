@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4840'
-ht-degree: 76%
+source-wordcount: '4834'
+ht-degree: 77%
 
 ---
 
@@ -53,7 +53,7 @@ Es importante tener en cuenta los siguientes puntos antes de comenzar:
 
 * La creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función.](#roles)
 
-* AEM Según la configuración de la instancia, puede resultar útil tener en cuenta que ahora proporciona lo siguiente: [dos tipos básicos de plantilla](/help/sites-authoring/templates.md#editable-and-static-templates). Esto no afecta a cómo realmente [usar una plantilla para crear una página](#using-a-template-to-create-a-page), pero afecta al tipo de plantilla que puede crear y a cómo se relaciona una página con su plantilla.
+* AEM En función de cómo esté configurada la instancia, ahora proporciona el parámetro de tipo de datos de, que se muestra a continuación: [dos tipos básicos de plantilla](/help/sites-authoring/templates.md#editable-and-static-templates). Esto no afecta a cómo realmente [usar una plantilla para crear una página](#using-a-template-to-create-a-page), pero afecta al tipo de plantilla que puede crear y a cómo se relaciona una página con su plantilla.
 
 ### Funciones {#roles}
 
@@ -314,7 +314,7 @@ Los siguientes aspectos de una plantilla se pueden editar:
 
   >[!NOTE]
   >
-  >Entrada **Contenido inicial** y en las páginas resultantes, cualquier componente desbloqueado que tenga un elemento principal accesible (es decir, componentes dentro de un contenedor de diseño) se puede eliminar.
+  >En el modo de **Contenido inicial**, así como en las páginas resultantes, se puede eliminar cualquier componente desbloqueado que tenga una raíz accesible (es decir, componentes dentro de un contenedor de diseño).
 
 * [Diseño](#editingatemplatelayout)
 

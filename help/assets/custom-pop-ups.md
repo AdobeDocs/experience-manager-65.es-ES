@@ -9,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Aunque la funcionalidad de cada visualizador es diferente, el proceso de creaci�
     </tbody>
    </table>
 
-1. El visor que utilice ahora debe saber cómo utilizar la vista rápida.
+1. El visualizador que utilice debe saber cómo utilizar la vista rápida.
 
    El visor utiliza un controlador llamado `QuickViewActive`.
 
@@ -109,7 +109,7 @@ Supongamos que utiliza el siguiente código incrustado de muestra en la página 
    * Visualizador de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visualizador de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Ahora debe configurar la variable `quickViewActivate` controlador.
+1. Debe configurar la variable `quickViewActivate` controlador.
 
    El `quickViewActivate` controla la vista rápida en el visor. El controlador contiene la lista de variables y las llamadas a funciones para su uso con la vista rápida. El código incrustado proporciona una asignación para la variable SKU establecida en la vista rápida y un ejemplo `loadQuickView` llamada de función.
 
@@ -148,9 +148,10 @@ El controlador también requiere una llamada a la función para que funcione la 
    * Asigne cualquier variable adicional contenida en la vista rápida.
 
       * Actualice el `loadQuickView(sku,*var1*,*var2*)` llame a si agrega variables adicionales.
+
    * Cree un `loadQuickView` () en la página, fuera del visor.
 
-      Por ejemplo, lo siguiente escribe el valor de SKU en la consola del explorador:
+     Por ejemplo, lo siguiente escribe el valor de SKU en la consola del explorador:
 
    ```xml
    function loadQuickView(sku){
@@ -160,9 +161,7 @@ El controlador también requiere una llamada a la función para que funcione la 
 
    * Cargue una página de HTML de pruebas en un servidor web y ábrala.
 
-      Con las variables de la vista rápida asignadas y la llamada a la función configurada, la consola del explorador escribe el valor de la variable en la consola del explorador mediante la función de ejemplo proporcionada.
-
-
+     Con las variables de la vista rápida asignadas y la llamada a la función configurada, la consola del explorador escribe el valor de la variable en la consola del explorador mediante la función de ejemplo proporcionada.
 
 1. Ahora puede utilizar una función para invocar una ventana emergente simple en la vista rápida. El siguiente ejemplo utiliza un `DIV` para ver una ventana emergente.
 1. Aplicar estilo a la ventana emergente `DIV` de la siguiente manera. Añada su propio estilo adicional si lo desea.

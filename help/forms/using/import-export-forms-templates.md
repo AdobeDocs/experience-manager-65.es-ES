@@ -11,10 +11,10 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2511'
-ht-degree: 97%
+source-wordcount: '2509'
+ht-degree: 94%
 
 ---
 
@@ -44,7 +44,7 @@ Para descargar recursos de formularios y documentos:
 1. Seleccione los recursos de los formularios y pulse en el icono **Descargar**.
 1. En Descargar recursos, elija una de las siguientes opciones y pulse **Descargar**.
 
-   * **Descargar como paquete CRX:** utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. Todos los recursos de formulario, incluidos los formularios creados en AEM (los formularios adaptables, las comunicaciones interactivas y los fragmentos de formularios adaptables), los conjuntos de formularios, las plantillas de formulario, los documentos PDF y los recursos (XSD, XFS e imágenes), se pueden descargar como paquete desde la interfaz de usuario de AEM Forms.
+   * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. AEM Todos los recursos de formulario, incluidos los formularios creados en los formularios (formularios adaptables, comunicaciones interactivas y fragmentos de formularios adaptables), los conjuntos de formularios, las plantillas de formulario, los documentos de PDF y los recursos (XSD, XFS e imágenes), se pueden descargar como paquete desde la interfaz de usuario de AEM Forms.
 La ventaja de descargar recursos como un paquete es que también descarga los recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, imagine que tiene un formulario adaptable que utiliza una plantilla de formulario, un XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, el XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
 
    * **Descargar recursos como archivos binarios:** Utilice la opción para descargar solo plantillas de formulario (XDP), Formularios PDF (PDF), documento (PDF) y recursos (imágenes, esquemas, hojas de estilo). Puede editar estos recursos con aplicaciones externas. Descarga los recursos de formularios que poseen binarios, como XSD, XDP, imágenes, PDF y XDP como un archivo .zip. 

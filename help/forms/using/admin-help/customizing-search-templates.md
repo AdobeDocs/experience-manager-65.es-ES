@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
       * (Opcional) Para permitir que los usuarios cambien el valor del operando en Workspace, seleccione Permitir al usuario cambiar el operando.
       * (Opcional) Para permitir que los usuarios cambien el operador relacional, seleccione Permitir al usuario seleccionar otro operador relacional. En la lista que aparece, seleccione los operadores que deben estar disponibles para el usuario.
 
-     **Sugerencia**: *Si ha seleccionado Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se esté ejecutando en el servidor de Forms. Después de seleccionar un proceso, cualquier variable de proceso definida en ese proceso estará disponible para su selección en Variables de proceso en la sección superior de la pestaña Criterios.*
+     **Sugerencia**: *Si seleccionó Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se esté ejecutando en el servidor de Forms. Después de seleccionar un proceso, cualquier variable de proceso definida en ese proceso estará disponible para su selección en Variables de proceso en la sección superior de la pestaña Criterios.*
 
      **Sugerencia**: *Para eliminar un elemento de la plantilla de búsqueda, haga clic en el icono Eliminar junto a los criterios de búsqueda del elemento.*
 

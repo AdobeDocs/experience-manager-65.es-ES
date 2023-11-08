@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3446'
+source-wordcount: '3447'
 ht-degree: 2%
 
 ---
@@ -243,7 +243,7 @@ Para ver un ejemplo, consulte:
 Según sus necesidades, puede hacer lo siguiente:
 
 * Ampliar un campo de IU de Granite determinado mediante la herencia de componentes ( `sling:resourceSuperType`)
-* Amplíe un widget determinado desde la biblioteca de widgets subyacente (en el caso de la interfaz de usuario de Granite, es la interfaz de usuario de Coral), siguiendo la API de biblioteca de widgets (herencia JS/CSS)
+* Amplíe un widget determinado desde la biblioteca de widgets subyacente (si hay una interfaz de usuario de Granite, es la interfaz de usuario de Coral), siguiendo la API de biblioteca de widgets (herencia JS/CSS)
 
 #### Acceso a campos de diálogo {#access-to-dialog-fields}
 

@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '181'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Actualmente, todas las implementaciones de la plataforma Java son compatibles [T
    >
    >Los archivos de fuente del repositorio deben tener el sufijo `*.ttf` o `*.TTF`.
 
-1. Actualice el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de [Ayuda de fuentes GFX de Day Commons](/help/sites-deploying/osgi-configuration-settings.md). Añada la ruta a la carpeta de fuentes; p. ej. `/apps/<your-project>/fonts`.
+1. Actualice el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de [Ayuda de fuentes GFX de Day Commons](/help/sites-deploying/osgi-configuration-settings.md). Añada la ruta a la carpeta de fuentes; es decir, `/apps/<your-project>/fonts`.
 
 1. Volver a CRXDE Lite. Ahora debería ver una `.fontlist` nodo de la carpeta que contiene el nombre de las fuentes importadas.
 

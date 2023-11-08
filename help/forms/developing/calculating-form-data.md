@@ -1,20 +1,16 @@
 ---
 title: Calcular datos de formulario
-seo-title: Calculating Form Data
 description: Utilice el servicio Forms para calcular los valores que un usuario introduce en un formulario y mostrar los resultados. El servicio Forms calcula los valores mediante la API de Java y la API de servicio web.
-seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
-uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,7 @@ Como parte del proceso de diseño del formulario, puede utilizar cálculos y scr
 
 El usuario introduce valores en el formulario y hace clic en el botón Calcular para ver los resultados. El siguiente proceso describe una aplicación de ejemplo que permite a un usuario calcular datos:
 
-* El usuario accede a una página de HTML denominada StartLoan.html que actúa como página de inicio de la aplicación web. Esta página invoca un servlet Java denominado `GetLoanForm`.
+* El usuario tiene acceso a una página de HTML denominada StartLoan.html que actúa como página de inicio de la aplicación web. Esta página invoca un servlet Java denominado `GetLoanForm`.
 * El `GetLoanForm` servlet procesa un formulario de préstamo. Este formulario contiene un script, campos interactivos, un botón de cálculo y un botón de envío.
 * El usuario introduce valores en los campos del formulario y hace clic en el botón Calcular. El formulario se envía a `CalculateData` Servlet Java donde se ejecuta el script. El formulario se devuelve al usuario con los resultados del cálculo mostrados en el formulario.
 * El usuario continúa introduciendo y calculando valores hasta que se muestra un resultado satisfactorio. Cuando esté satisfecho, el usuario hace clic en el botón Enviar para procesar el formulario. El formulario se enviará a otro servlet Java denominado `ProcessForm` que es responsable de recuperar los datos enviados. (Consulte [Gestión de Forms enviados](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
@@ -86,7 +82,7 @@ La sintaxis de la secuencia de comandos en este diseño de formulario es la sigu
      NumericField3 = NumericField2 + NumericField1
 ```
 
-En este diseño de formulario, el botón Calcular es un botón de comando y el script se encuentra en el de este botón `Click` evento. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio de Forms, donde se ejecuta la secuencia de comandos. El servicio Forms vuelve a procesar el formulario en el dispositivo cliente con los resultados del cálculo mostrados en el campo NumericField3.
+En este diseño de formulario, el botón Calcular es un botón de comando y la secuencia de comandos se encuentra en el `Click` evento. Cuando un usuario introduce valores en los dos primeros campos (NumericField1 y NumericField2) y hace clic en el botón Calcular, el formulario se envía al servicio de Forms, donde se ejecuta la secuencia de comandos. El servicio Forms vuelve a procesar el formulario en el dispositivo cliente con los resultados del cálculo mostrados en el campo NumericField3.
 
 >[!NOTE]
 >
@@ -163,7 +159,7 @@ Calcular datos de formulario mediante la API de Forms (Java):
 1. Escribir el flujo de datos de formulario en el explorador web del cliente
 
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para enviar un flujo de datos de formulario al explorador web del cliente.
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
    * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
    * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invoque el `javax.servlet.ServletOutputStream` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.

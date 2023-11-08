@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1244'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Las plataformas mostradas se rigen por el contenido config.xml de PhoneGap:
 </widget>
 ```
 
-Cada tienda de aplicaciones de proveedores (por ejemplo, Apple App Store o Google Play Store) necesita una o más capturas de pantalla de su aplicación móvil para mostrar los detalles de su aplicación a los clientes. Estas capturas de pantalla pueden tener requisitos estrictos en cuanto a dimensiones y contenido (básicamente, deben representar realmente la aplicación). AEM Las aplicaciones de AppMeasurement proporcionan asistencia para seleccionar y administrar estas capturas de pantalla para las plataformas admitidas y ver las dimensiones de puerto según lo requerido por la tienda de aplicaciones de cada proveedor.
+Cada tienda de aplicaciones de proveedores (por ejemplo, Apple App Store o Google Play Store) necesita una o más capturas de pantalla de su aplicación móvil para mostrar los detalles de su aplicación a los clientes. Estas capturas de pantalla pueden tener requisitos estrictos en cuanto a dimensiones y contenido (básicamente, deben representar realmente la aplicación). AEM Aplicaciones admite la selección y administración de estas capturas de pantalla para las plataformas admitidas y ve las dimensiones de puerto según lo requerido por la tienda de aplicaciones de cada proveedor.
 
 >[!NOTE]
 >

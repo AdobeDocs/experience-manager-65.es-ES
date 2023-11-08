@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Puede ordenar la lista de documentos por encabezados de columna. Los iconos de t
 
 ## Agregar portada a documentos protegidos por directivas {#add-cover-page-to-policy-protected-documents}
 
-En el caso de la mayoría de los visualizadores que no son de Adobe PDF, si abre un documento protegido por Document Security, la primera página se muestra como una página en blanco o la aplicación se interrumpe sin abrir el documento.
+Si hay la mayoría de visores que no son de Adobe PDF, si abre un documento protegido por Document Security, la primera página se muestra como una página en blanco o la aplicación se interrumpe sin abrir el documento.
 
 Puede utilizar la compatibilidad con la Página 0 (Documento envolvente) para permitir que los visualizadores que no sean de Adobe PDF abran un documento protegido y muestren una portada en el documento.
 

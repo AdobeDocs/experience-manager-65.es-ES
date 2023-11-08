@@ -4,7 +4,7 @@ description: AEM Obtenga información sobre cómo implementar un proyecto de Con
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 6%
@@ -57,7 +57,7 @@ El complemento y el [Componentes principales del CIF](https://github.com/adobe/a
 
 CIF Esta configuración se puede ajustar para el proyecto mediante la configuración del Cloud Service de la siguiendo estos pasos:
 
-1. AEM En el paso de la página, vaya a Herramientas -> Cloud Service CIF -> Configuración de la
+1. AEM En la página de inicio, vaya a Herramientas > Cloud Service CIF > Configuración de la
 
 2. Seleccione la configuración de comercio que desee cambiar
 

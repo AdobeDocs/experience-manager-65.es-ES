@@ -2,10 +2,10 @@
 title: Optimización de consultas de GraphQL
 description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y ordenar los fragmentos de contenido en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 60%
+source-wordcount: '1964'
+ht-degree: 59%
 
 ---
 
@@ -177,7 +177,7 @@ Consulte:
 
 El tiempo de respuesta de las consultas complejas, con grandes conjuntos de resultados, se puede mejorar segmentando las respuestas en fragmentos mediante paginación, un estándar de GraphQL.
 
-GraphQL en AEM ofrece compatibilidad con dos tipos de paginación:
+GraphQL AEM en la admite dos tipos de paginación:
 
 * [paginación basada en límite/desplazamiento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Se utiliza para consultas de lista; terminan con `List`; por ejemplo, `articleList`.

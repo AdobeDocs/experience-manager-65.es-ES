@@ -3,9 +3,9 @@ title: Configure el Editor de texto enriquecido para crear páginas web y sitios
 description: Configure el Editor de texto enriquecido para crear páginas web y sitios accesibles.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Los nuevos formatos de bloque semántico pueden estar disponibles para su selecc
    * Uso del icono de fila de párrafo en la IU táctil.
    * Uso del **Formato** (selector emergente) en la IU clásica.
 
-AEM Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, el formato de párrafo proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente, los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, deben seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos desde la opción Estilos. Esto garantiza un marcado limpio, buenas opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
+AEM Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, el formato de párrafo proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente, los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, deben seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos desde la opción Estilos. Esto garantiza un marcado limpio, mejores opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
 
 ## Uso de la función de edición de origen {#use-of-the-source-edit-feature}
 

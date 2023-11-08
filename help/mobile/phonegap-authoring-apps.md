@@ -1,16 +1,14 @@
 ---
 title: Creación de aplicaciones móviles
 description: El panel de AEM Mobile le permite crear, crear e implementar su aplicación móvil, así como crear, eliminar y editar metadatos de aplicación. Siga esta página para obtener más información.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -67,7 +65,7 @@ El contenido se puede crear, actualizar y eliminar en AEM Mobile de la misma man
 
 Una vez que haya añadido o modificado el contenido a través del mosaico Administrar contenido de la página, puede insertar esos cambios en los clientes con una actualización de la versión de contenido.
 
-AEM AEM El paquete de contenido permite al autor de la aplicación de administrar el contenido de la página en y, así como hacer que el equipo de desarrollo realice cambios en la aplicación de shell de PhoneGap (es decir, el marco de la aplicación o la infraestructura) y luego enviar esos cambios a los clientes de forma rápida y sin necesidad de inscribir a un desarrollador para que los vuelva a enviar a las distintas tiendas para su distribución.
+AEM AEM El paquete de contenido permite al autor de la aplicación de administrar el contenido de la página en los entornos de y, hacer que el equipo de desarrollo cambie la aplicación PhoneGap Shell (es decir, el marco de la aplicación o la infraestructura) y luego enviar esos cambios a los clientes de forma rápida y sin necesidad de inscribir a un desarrollador para que vuelva a enviarlos a las distintas tiendas para su distribución.
 
 El paquete de contenido crea un archivo ZIP, considerado un paquete de liberación de contenido, para cada actualización. Estos paquetes contienen recursos html y páginas html que se generan al procesar la aplicación y son lo suficientemente inteligentes como para empaquetar solo aquellos archivos que se han modificado desde la última actualización.
 

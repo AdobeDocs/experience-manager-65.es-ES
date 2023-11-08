@@ -2,10 +2,10 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, aprenderá a modelar el contenido para la entrega de contenido sin encabezado de AEM utilizando el Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1809'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -206,7 +206,7 @@ El tipo de datos se puede configurar para que los autores de fragmentos puedan h
 
 ### Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
-Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Esta activación se realiza en el Explorador de configuración; en Herramientas -> General -> Explorador de configuración. Puede seleccionar para configurar la entrada global o crear una configuración. Por ejemplo:
+Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Esta activación se realiza en el Explorador de configuración, en Herramientas > General > Explorador de configuración. Puede seleccionar para configurar la entrada global o crear una configuración. Por ejemplo:
 
 ![Definir configuración](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Es
 >
 >Consulte Recursos adicionales: Fragmentos de contenido en el explorador de configuración
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas -> Recursos -> Modelos de fragmentos de contenido. Por ejemplo:
+A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas > Recursos > Modelos de fragmentos de contenido. Por ejemplo:
 
 ![Modelo de fragmento de contenido](assets/cfm-model.png)
 
@@ -228,7 +228,7 @@ Los fragmentos de contenido se basan siempre en un modelo de fragmento de conten
 
 ### Selección del modelo apropiado {#select-model}
 
-El primer paso para crear el contenido es crear un fragmento de contenido. Esto se realiza mediante Crear -> Fragmento de contenido en la carpeta necesaria en Recursos -> Archivos. El asistente le guiará por los pasos.
+El primer paso para crear el contenido es crear un fragmento de contenido. Esto se realiza mediante Crear > Fragmento de contenido en la carpeta requerida en Recursos > Archivos. El asistente le guiará por los pasos.
 
 Un fragmento de contenido se basa en un modelo de fragmento de contenido específico que se selecciona como primer paso del proceso de creación.
 

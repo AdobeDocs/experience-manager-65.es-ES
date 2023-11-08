@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 4%
@@ -23,7 +23,7 @@ AEM Las firmas digitales de formularios pueden utilizar credenciales almacenadas
 
 >[!NOTE]
 >
->AEM Después de cambiar la configuración de HSM, reinicie el servidor de formularios de la.
+>Después de cambiar la configuración de HSM, reinicie AEM Forms Server.
 
 ## Crear un alias para una credencial HSM cuando el dispositivo HSM esté en línea {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
@@ -50,7 +50,7 @@ AEM Las firmas digitales de formularios pueden utilizar credenciales almacenadas
 1. En la lista Tipo de Ranura, seleccione ID de Ranura, Índice de Ranura o Nombre de Token y especifique un valor en el cuadro Información de Ranura. AEM Los formularios de datos utilizan esta configuración para determinar dónde se almacenan las credenciales en el HSM.
 
    * **Nombre del token:** Corresponde a un nombre de partición (por ejemplo, HSMPART1).
-   * **ID de ranura:** El ID de ranura es un entero que corresponde a la ranura, que a su vez corresponde a una partición. Por ejemplo, el cliente (servidor de formularios) se registró primero con la partición HSMPART1. Esto asigna la ranura 1 a la partición HSMPART1, para este cliente. Como HSMPART1 es la primera partición registrada, el ID de ranura es 1 y establecería Información de ranura en 1.
+   * **ID de ranura:** El ID de ranura es un entero que corresponde a la ranura, que a su vez corresponde a una partición. Por ejemplo, el cliente (Forms Server) se registró primero con la partición HSMPART1. Esto asigna la ranura 1 a la partición HSMPART1, para este cliente. Como HSMPART1 es la primera partición registrada, el ID de ranura es 1 y establecería Información de ranura en 1.
 
      El ID de ranura se establece cliente por cliente. Si registró una segunda máquina en una partición diferente (por ejemplo, HSMPART2 en el mismo dispositivo HSM), entonces la ranura 1 se asociaría con la partición HSMPART2 para ese cliente.
 
@@ -73,7 +73,7 @@ AEM Las firmas digitales de formularios pueden utilizar credenciales almacenadas
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM.
 1. Haga clic en la casilla de verificación situada junto a la credencial que desea comprobar y, a continuación, haga clic en Comprobar estado.
 
-La columna Estado refleja el estado actual de la credencial. En caso de error, se muestra una X roja en la columna Estado. Pase el ratón sobre la X para ver la información del objeto que contiene el motivo del error.
+La columna Estado refleja el estado actual de la credencial. Si se produce un error, se muestra una X roja en la columna Estado. Pase el ratón sobre la X para ver la información del objeto que contiene el motivo del error.
 
 ## Actualizar propiedades de alias de credenciales HSM {#update-hsm-credential-alias-properties}
 

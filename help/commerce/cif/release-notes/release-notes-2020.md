@@ -2,9 +2,9 @@
 title: AEM Notas de la versión de Content and Commerce de 2020
 description: Notas de la versión de Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1352'
 ht-degree: 13%
 
 ---
@@ -143,7 +143,7 @@ CIF Esta es la primera versión de los componentes principales de la aplicación
 
 * Se ha añadido el filtrado de categorías como faceta para permitir que los compradores filtren según la categoría.
 
-* Se ha agregado la asignación de usuarios de servicio como parte del requisito de seguridad para garantizar el acceso a /conf mediante usuarios de servicio y no manipulando directamente las ACL. CIF Los componentes principales ahora deben utilizar un usuario de servicio para acceder a las configuraciones de.
+* Se ha agregado la asignación de usuarios de servicio como parte del requisito de seguridad para garantizar el acceso a /conf mediante usuarios de servicio y no manipulando directamente las ACL. CIF Los componentes principales deben utilizar un usuario de servicio para acceder a las configuraciones de.
 
 ### Qué se ha mejorado {#what-is-improved-june}
 

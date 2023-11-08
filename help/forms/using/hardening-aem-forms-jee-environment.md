@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7661'
-ht-degree: 95%
+source-wordcount: '7662'
+ht-degree: 91%
 
 ---
 
@@ -153,7 +153,7 @@ Esta sección describe las técnicas que puede utilizar durante el proceso de in
 
 Después de instalar correctamente AEM Forms en JEE, es importante mantener periódicamente el entorno desde el punto de vista de la seguridad.
 
-La siguiente sección describe en detalle las diferentes tareas recomendadas para proteger el servidor de Forms implementado.
+En la siguiente sección se describen en detalle las diferentes tareas recomendadas para proteger el servidor de Forms implementado.
 
 ### Seguridad de AEM Forms {#aem-forms-security}
 
@@ -169,7 +169,7 @@ De forma predeterminada, AEM Forms en JEE instala un servicio mediante la cuent
 
 Para ejecutar el servidor de aplicaciones en el que se implementa AEM Forms en JEE utilizando una cuenta específica no administrativa, siga estas instrucciones:
 
-1. Cree un usuario local en Microsoft Management Console (MMC) para que el servicio del servidor de formularios inicie sesión como:
+1. En Microsoft Management Console (MMC), cree un usuario local para que el servicio Forms Server inicie sesión como:
 
    * Seleccione **El usuario no puede cambiar la contraseña**.
    * En la pestaña **Miembro de**, asegúrese de que el grupo **Usuarios** aparece en la lista.
@@ -273,7 +273,7 @@ Puede deshabilitar el acceso remoto a todos los servicios del Almacén de confia
 
 **Desactive todo acceso anónimo no esencial**
 
-Algunos servicios del servidor de Forms incluyen operaciones que un llamador anónimo puede invocar. Si no se requiere acceso anónimo a estos servicios, deshabilite el acceso siguiendo los pasos indicados en [Desactivación del acceso anónimo no esencial a los servicios](https://helpx.adobe.com/es/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Algunos servicios de Forms Server tienen operaciones que un llamador anónimo puede invocar. Si no se requiere acceso anónimo a estos servicios, deshabilite el acceso siguiendo los pasos indicados en [Desactivación del acceso anónimo no esencial a los servicios](https://helpx.adobe.com/es/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Cambiar la contraseña de administrador predeterminada {#change-the-default-administrator-password}
 
@@ -401,7 +401,7 @@ En WebSphere, solo puede configurar la seguridad integrada cuando utiliza un con
 
 ### Protección del acceso al contenido confidencial en la base de datos {#protecting-access-to-sensitive-content-in-the-database}
 
-El esquema de la base de datos de AEM Forms contiene información confidencial sobre la configuración del sistema y los procesos empresariales, y debe ocultarse detrás del cortafuegos. La base de datos debe considerarse dentro del mismo límite de confianza que el servidor de Forms. Para evitar la divulgación de información y el robo de datos empresariales, el administrador de la base de datos (DBA) debe configurar la base de datos para permitir el acceso únicamente a los administradores autorizados.
+El esquema de la base de datos de AEM Forms contiene información confidencial sobre la configuración del sistema y los procesos empresariales, y debe ocultarse detrás del cortafuegos. La base de datos debe considerarse dentro del mismo límite de confianza que Forms Server. Para evitar la divulgación de información y el robo de datos empresariales, el administrador de la base de datos (DBA) debe configurar la base de datos para permitir el acceso únicamente a los administradores autorizados.
 
 Como precaución adicional, debe considerar la posibilidad de utilizar las herramientas específicas del proveedor de bases de datos para cifrar columnas en las tablas que contienen los siguientes datos:
 
@@ -537,13 +537,13 @@ Ciertas URL se resaltan como aplicaciones web dirigidas al usuario final. Debe e
   </tr> 
   <tr> 
    <td><p>/soap/*</p> </td> 
-   <td><p>Página de información de los servicios web del servidor de Forms</p> </td> 
+   <td><p>Página de información de los servicios web de Forms Server</p> </td> 
    <td><p>No</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
   <tr> 
    <td><p>/soap/services/*</p> </td> 
-   <td><p>URL del servicio web de todos los servicios del servidor de Forms</p> </td> 
+   <td><p>URL del servicio web de todos los servicios de Forms Server</p> </td> 
    <td><p>No</p> </td> 
    <td><p>No</p> </td> 
   </tr> 
@@ -685,7 +685,7 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 1. El servidor de Forms comprueba el método HTTP utilizado para la invocación:
 
    1. Si es POST, el servidor de Forms realiza la comprobación del encabezado Referente.
-   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* esté establecido en True, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
+   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* se establece en true, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
 
 1. El servidor de Forms comprueba si el URI solicitado existe en la lista de permitidos:
 
@@ -727,7 +727,7 @@ AEM Forms en JEE proporciona API para administrar las listas Excepciones de ref
 
 Consulte la *Referencia de las API de AEM Forms en JEE* para obtener más información sobre las API.
 
-Utilice la lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para las excepciones de los referentes permitidos a nivel global, es decir, para definir excepciones aplicables a todas las aplicaciones. Esta lista contiene únicamente URI con una ruta absoluta (por ejemplo, `/index.html`) o una ruta relativa (por ejemplo, `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo, `/sample/(.)*`.
+Utilice el ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lista de Excepciones de referentes permitidos a nivel global, es decir, para definir excepciones aplicables a todas las aplicaciones. Esta lista contiene únicamente URI con una ruta absoluta (por ejemplo, `/index.html`) o una ruta relativa (por ejemplo, `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo, `/sample/(.)*`.
 
 EL ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** se define como una constante en la clase `UMConstants` del área de nombres `com.adobe.idp.um.api`, que se encuentra en `adobe-usermanager-client.jar`. Puede utilizar las API de AEM Forms para crear, modificar o editar esta lista. Por ejemplo, para crear la lista de excepciones de referentes permitidos globales, utilice:
 
@@ -749,7 +749,7 @@ Es posible que haya creado archivos WAR personalizados para trabajar con AEM For
 
 **CSRF_CHECK_GETS** controla la comprobación del referente en las peticiones GET. Si no se define este parámetro, el valor predeterminado se establece en False. Incluya este parámetro únicamente si desea filtrar las peticiones GET.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** es el ID de la lista Excepciones de referentes permitidos. El Filtro de referente evita que las solicitudes procedentes de referentes de la lista identificada por el ID de lista invoquen cualquier tipo de recurso en el servidor de Forms.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** es el ID de la lista Excepciones de referentes permitidos. El Filtro de referente evita que las solicitudes procedentes de referentes de la lista identificada por el ID de lista invoquen cualquier recurso del servidor de Forms.
 
 **CSRF_ALLOWED_URIS_LIST_NAME** es el ID de la lista URI permitidos. El Filtro de referente no bloquea las solicitudes de ninguno de los recursos de la lista identificados por el ID de lista, independientemente del valor del encabezado Referente de la solicitud.
 
@@ -835,7 +835,7 @@ Al configurar una arquitectura de red segura como se describe en la sección ant
     <ul> 
      <li><p>Aplicaciones cliente de los servicios web; p. ej., aplicaciones .NET</p> </li> 
      <li><p>Adobe Reader® utiliza SOAP para los servicios web del servidor de AEM Forms en JEE</p> </li> 
-     <li><p>Las aplicaciones Flash® de Adobe utilizan SOAP para los servicios web del servidor de Forms</p> </li> 
+     <li><p>Flash de Adobe ® las aplicaciones utilizan SOAP para los servicios web de Forms Server</p> </li> 
      <li><p>Llamadas del SDK de AEM Forms en JEE cuando se utiliza en el modo SOAP</p> </li> 
      <li><p>Entorno de diseño de Workbench</p> </li> 
     </ul> </td> 
@@ -995,7 +995,7 @@ La instalación llave en mano de AEM Forms en JEE configura una cuenta de servi
 
 #### Ejecute el servidor de aplicaciones con una cuenta no administrativa {#run-the-application-server-using-a-non-administrative-account}
 
-1. Cree un usuario local en Microsoft Management Console (MMC) para que el servicio del servidor de formularios inicie sesión como:
+1. En Microsoft Management Console (MMC), cree un usuario local para que el servicio Forms Server inicie sesión como:
 
    * Seleccione **El usuario no puede cambiar la contraseña**.
    * En la pestaña **Miembro de**, asegúrese de que el grupo Usuarios aparece en la lista.
@@ -1040,7 +1040,7 @@ AEM Forms en JEE utiliza el sistema de archivos de las siguientes formas:
 * Almacena archivos en el almacén de archivos global que se utiliza para admitir los componentes de la solución instalados
 * Las carpetas inspeccionadas almacenan archivos colocados que se utilizan como entrada en un servicio desde una ubicación de carpetas del sistema de archivos
 
-Cuando utilice carpetas inspeccionadas para enviar y recibir documentos con un servicio del servidor de Forms, tome precauciones adicionales a la hora de garantizar la seguridad del sistema de archivos. Cuando un usuario coloca contenido en la carpeta inspeccionada, ese contenido se expone a través de la carpeta inspeccionada. En este caso, el servicio no autentica al usuario final real. En su lugar, se basa en la seguridad de nivel ACL y Share que se debe establecer en el nivel de carpeta para determinar quién puede invocar el servicio de forma efectiva.
+Cuando utilice carpetas inspeccionadas para enviar y recibir documentos con un servicio de Forms Server, tome precauciones adicionales a la hora de garantizar la seguridad del sistema de archivos. Cuando un usuario coloca contenido en la carpeta inspeccionada, ese contenido se expone a través de la carpeta inspeccionada. En este caso, el servicio no autentica al usuario final real. En su lugar, se basa en la seguridad de nivel ACL y Share que se debe establecer en el nivel de carpeta para determinar quién puede invocar el servicio de forma efectiva.
 
 ## Recomendaciones de seguridad específicas para JBoss {#jboss-specific-security-recommendations}
 

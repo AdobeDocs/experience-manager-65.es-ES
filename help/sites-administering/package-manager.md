@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3570'
 ht-degree: 2%
 
 ---
@@ -173,7 +173,7 @@ Al crear filtros, puede definir una ruta o utilizar una expresión regular para 
 
 | Tipo de regla | Descripción |
 |---|---|
-| include | Si se incluye un directorio, se incluirá ese directorio y todos los archivos y carpetas que contiene (es decir, todo el subárbol), pero **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
+| include | Si se incluye un directorio, se incluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol), pero **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
 | excluir | Excluir un directorio excluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol). |
 
 Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.

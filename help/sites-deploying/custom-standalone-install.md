@@ -4,9 +4,9 @@ description: AEM Obtenga información acerca de las opciones disponibles al inst
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Si está ejecutando Java 11 de Oracle AEM (o, por lo general, versiones de Java 
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Además, debe utilizar la variable `-XX:+UseParallelGC` para mitigar cualquier problema de rendimiento potencial.
+* Además, debe utilizar el `-XX:+UseParallelGC` para mitigar cualquier problema de rendimiento potencial.
 
 AEM A continuación se muestra un ejemplo del aspecto que deberían tener los parámetros de JVM adicionales al iniciar la administración de la aplicación en Java 1100000000000000000000000000000000000000000. A continuación se muestra un ejemplo del aspecto que deben tener los parámetros de JVM adicionales al iniciar la administración de la aplicación de la aplicación de la aplicación de Java 111111000000000000000000000000000000000000000000000000000000000000000000000000
 

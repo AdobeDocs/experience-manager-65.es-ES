@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
@@ -67,7 +67,7 @@ El siguiente ejemplo de código Java™ entra en modo de copia de seguridad con 
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -117,10 +117,10 @@ El siguiente ejemplo de código Java™ entra en modo de copia de seguridad con 
              boolean continousCoverage = false;
  
  
-             // Enter backup mode on the forms server server
+             // Enter backup mode on the Forms Server server
              BackupModeEntryResult backupResult = backup.enterBackupMode(backUpLabel,minsInBackupMode, continousCoverage);
  
-             // Get information from entering backup mode on the forms server server.
+             // Get information from entering backup mode on the Forms Server server.
              if (backupResult != null)
              {
                  System.out.println("Start time is: " + backupResult.getStartTime());
@@ -182,7 +182,7 @@ El siguiente ejemplo de código Java™ hace que un servidor de Forms deje el mo
      *
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -226,7 +226,7 @@ El siguiente ejemplo de código Java™ hace que un servidor de Forms deje el mo
              // Create a BackupService object
              BackupServiceClient backup = new BackupServiceClient(myFactory);
  
-             // Leave backup mode on the forms server
+             // Leave backup mode on the Forms Server
              BackupModeResult leaveBackupResult = backup.leaveBackupMode();
  
              //Get result information from leaving backup mode

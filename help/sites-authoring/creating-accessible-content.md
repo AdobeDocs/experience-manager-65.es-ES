@@ -2,9 +2,9 @@
 title: Crear contenido accesible para Adobe Experience Manager (Conformidad con WCAG 2.1)
 description: AEM Uso para ayudar a las personas con discapacidades a hacer que el contenido web sea accesible para ellas y lo puedan utilizar
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '13810'
+source-wordcount: '13806'
 ht-degree: 84%
 
 ---
@@ -1144,7 +1144,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 3.2.4](https://ww
 
 #### Objetivo: Identificación de errores (3.3.1) {#purpose-error-identification}
 
-La intención de este criterio de éxito es garantizar que los usuarios sean conscientes de que se ha producido un error y puedan determinar lo que está mal. El mensaje de error debe ser lo más específico posible. En el caso de que falle el envío de un formulario, la visualización del formulario y la indicación de los campos en los que se ha producido un error no bastan para que algunos usuarios perciban que se ha producido un error. Los usuarios del lector de pantalla, por ejemplo, no sabrán que hubo un error hasta que encuentren uno de los indicadores. Es posible que abandonen el formulario por completo antes de encontrar el indicador de error, pensando que la página simplemente no funciona. Según la definición de WCAG, un [error de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) es información proporcionada por el usuario que no se acepta. Esto incluye lo siguiente.
+La intención de este criterio de éxito es garantizar que los usuarios sean conscientes de que se ha producido un error y puedan determinar lo que está mal. El mensaje de error debe ser lo más específico posible. Si el envío del formulario no se ha realizado correctamente, la visualización del formulario y la indicación de los campos en los que se ha producido un error no bastan para que algunos usuarios perciban que se ha producido un error. Los usuarios del lector de pantalla, por ejemplo, no sabrán que hubo un error hasta que encuentren uno de los indicadores. Es posible que abandonen el formulario por completo antes de encontrar el indicador de error, pensando que la página simplemente no funciona. Según la definición de WCAG, un [error de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) es información proporcionada por el usuario que no se acepta. Esto incluye lo siguiente.
 
 Información requerida por la página web pero omitida por el usuario, o información proporcionada por el usuario pero que se encuentra fuera del formato de datos requerido o de los valores permitidos.
 Por ejemplo:
@@ -1223,7 +1223,7 @@ En formularios simples con funcionalidad limitada, etiquetar correctamente una `
 
 La intención de este criterio de éxito es garantizar que los usuarios reciban las sugerencias adecuadas para la corrección de un error de entrada, si es posible. La definición de WCAG de [error de entrada](https://www.w3.org/TR/WCAG/#dfn-input-error) indica que es &quot;información proporcionada por el usuario que no es aceptada&quot; por el sistema. Algunos ejemplos de información no aceptada incluyen la información que es necesaria pero que el usuario omite, y la información que el usuario proporciona pero que no corresponde al formato de datos requerido o a los valores permitidos.
 
-Los criterios de éxito 3.3.1 permiten la notificación de errores. Sin embargo, a las personas con limitaciones cognitivas les puede resultar difícil entender cómo corregir errores. Es posible que las personas con discapacidad visual no puedan averiguar exactamente cómo corregir el error. En el caso de que falle el envío de un formulario, los usuarios pueden dejar el formulario al no estar seguros de cómo corregir el error aunque sepan que se ha producido.
+Los criterios de éxito 3.3.1 permiten la notificación de errores. Sin embargo, a las personas con limitaciones cognitivas les puede resultar difícil entender cómo corregir errores. Es posible que las personas con discapacidad visual no puedan averiguar exactamente cómo corregir el error. Si el envío del formulario no se ha realizado correctamente, los usuarios pueden dejar el formulario al no estar seguros de cómo corregir el error aunque sepan que se ha producido.
 
 El autor del contenido puede proporcionar la descripción del error, o el agente de usuario puede proporcionar la descripción del error en función de la información específica de la tecnología y determinada mediante programación.
 

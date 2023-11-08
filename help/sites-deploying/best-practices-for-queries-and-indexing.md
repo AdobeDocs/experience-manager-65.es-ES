@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4598'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ En general, se recomienda utilizar índices de Lucene a menos que exista una nec
 
 ### Indexación de Solr {#solr-indexing}
 
-AEM También proporciona compatibilidad con la indexación de Solr de forma predeterminada. Se utiliza para admitir la búsqueda de texto completo, pero también se puede utilizar para admitir cualquier tipo de consulta JCR. AEM Solr se debe tener en cuenta cuando las instancias de no tienen la capacidad de CPU para gestionar la cantidad de consultas necesarias en implementaciones que requieren mucha búsqueda, como sitios web impulsados por búsquedas con un alto número de usuarios simultáneos. Como alternativa, Solr se puede implementar con un enfoque basado en rastreadores para utilizar algunas de las funciones más avanzadas de la plataforma.
+AEM También admite la indexación de Solr de forma predeterminada. Se utiliza para admitir la búsqueda de texto completo, pero también se puede utilizar para admitir cualquier tipo de consulta JCR. AEM Solr se debe tener en cuenta cuando las instancias de no tienen la capacidad de CPU para gestionar la cantidad de consultas necesarias en implementaciones que requieren mucha búsqueda, como sitios web impulsados por búsquedas con un alto número de usuarios simultáneos. Como alternativa, Solr se puede implementar con un enfoque basado en rastreadores para utilizar algunas de las funciones más avanzadas de la plataforma.
 
 AEM Los índices de Solr se pueden configurar para que se ejecuten incrustados en el servidor de para entornos de desarrollo o para que se puedan descargar en una instancia remota a fin de mejorar la escalabilidad de búsqueda en los entornos de producción y ensayo. Aunque la descarga de búsquedas mejora la escalabilidad, introduce latencia y, por ello, no se recomienda a menos que sea necesario. Para obtener más información sobre cómo configurar la integración de Solr y cómo crear índices de Solr, consulte la [Documentación de consultas e indexación de Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 

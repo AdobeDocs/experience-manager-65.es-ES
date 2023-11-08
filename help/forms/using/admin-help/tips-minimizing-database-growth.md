@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%
@@ -33,6 +33,6 @@ Utilice tipos de variables simples (por ejemplo, string o int) y evite utilizar 
 
 ## Sugerencias de administración de productos {#product-administration-tips}
 
-Utilice el almacenamiento global de documentos (GDS) de forma eficaz. AEM El directorio GDS del servidor de Forms se utiliza para almacenar, entre otras cosas, los archivos que se pasan a servicios que forman parte de formularios en proceso de la. Para mejorar el rendimiento, los documentos más pequeños se almacenan en la memoria y se conservan en la base de datos.
+Utilice el almacenamiento global de documentos (GDS) de forma eficaz. El directorio GDS del servidor de Forms AEM se utiliza para almacenar, entre otras cosas, los archivos que se pasan a servicios que forman parte de formularios en proceso de la. Para mejorar el rendimiento, los documentos más pequeños se almacenan en la memoria y se conservan en la base de datos.
 
 La consola de administración expone la propiedad Tamaño máximo en línea del documento predeterminado para configurar el tamaño máximo de los documentos almacenados en memoria y conservados en la base de datos. (Consulte [AEM Configurar opciones generales de formularios](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Si establece esta propiedad en un valor bajo, la mayoría de los documentos se conservan en el directorio GDS en lugar de en la base de datos. La ventaja es que puede eliminar más fácilmente los archivos cuando ya no los necesita cuando están almacenados en el directorio GDS.

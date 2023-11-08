@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '10228'
+source-wordcount: '10221'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Para ver cómo funciona la concesión y sincronización sin conexión, consulte 
 
 **Permitir autenticación extendida** Seleccione para habilitar la autenticación extendida y luego introduzca la URL de aterrizaje de autenticación extendida.
 
-Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. AEM La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de formularios de la. AEM Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar de utilizar el nombre de usuario y la contraseña de los formularios de Acrobat y el cliente Reader en los formularios de los formularios de los formularios. De forma predeterminada, la dirección URL de aterrizaje contiene *localhost* como nombre del servidor. Sustituya el nombre del servidor por un nombre de host completo. El nombre de host de la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base si la autenticación extendida aún no está habilitada. Consulte [Agregar el proveedor de autenticación extendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de AEM Forms. AEM Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar de utilizar el nombre de usuario y la contraseña de los formularios de Acrobat y el cliente Reader en los formularios de los formularios de los formularios. De forma predeterminada, la dirección URL de aterrizaje contiene *localhost* como nombre del servidor. Sustituya el nombre del servidor por un nombre de host completo. El nombre de host de la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base si la autenticación extendida aún no está habilitada. Consulte [Agregar el proveedor de autenticación extendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***nota **: la autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posteriores.*
 
@@ -99,7 +99,7 @@ AEM Los formularios de datos proporcionan una configuración de ejemplo que pued
 >La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posteriores.
 
 1. Obtenga el archivo WAR de muestra para implementarlo. Consulte la guía de instalación adecuada para su servidor de aplicaciones.
-1. Asegúrese de que el servidor de Forms tenga un nombre completo en lugar de direcciones IP como dirección URL base y que sea una dirección URL HTTPS. Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
+1. Asegúrese de que el servidor de Forms tiene un nombre completo en lugar de direcciones IP como dirección URL base y que es una dirección URL HTTPS. Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
 1. Habilite Autenticación extendida desde la página Configuración del servidor. Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
 1. Añada las URL de redireccionamiento de SSO requeridas en el archivo de configuración de User Management. Consulte [Añadir URL de redireccionamiento de SSO para la autenticación extendida](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -154,7 +154,7 @@ Para abrir un documento protegido por una directiva sin conexión, el equipo del
 
 Una forma de reducir la amenaza que supone para los documentos sin conexión es evitar permitir el acceso sin conexión a documentos especialmente confidenciales. Otro método es pasar periódicamente sobre las claves principales. Cuando Document Security transfiere la clave, las claves existentes ya no pueden acceder a los documentos protegidos por directivas. Por ejemplo, si un perpetrador obtiene una clave principal de un portátil robado, esa clave no se puede utilizar para acceder a los documentos protegidos después de la sustitución. Si sospecha que una clave principal específica se ha visto comprometida, puede pasar manualmente sobre la clave.
 
-Sin embargo, también debe tener en cuenta que una sustitución de claves afecta a todas las claves principales, no solo a una. También reduce la escalabilidad del sistema porque los clientes deben almacenar más claves para el acceso sin conexión. La frecuencia de rollover de clave predeterminada es de 20 días. Se recomienda no establecer este valor por debajo de 14 días, ya que a las personas se les puede impedir ver documentos sin conexión y el rendimiento del sistema puede verse afectado.
+Sin embargo, una sustitución de claves afecta a todas las claves principales, no solo a una. También reduce la escalabilidad del sistema porque los clientes deben almacenar más claves para el acceso sin conexión. La frecuencia de rollover de clave predeterminada es de 20 días. Se recomienda no establecer este valor por debajo de 14 días, ya que a las personas se les puede impedir ver documentos sin conexión y el rendimiento del sistema puede verse afectado.
 
 En el ejemplo siguiente, Key1 es la carpeta de las dos claves principales y Key2 es la más reciente. Al hacer clic en el botón Claves de desplazamiento ahora la primera vez, Key1 deja de ser válida y se genera una clave principal válida más reciente (Key3). Los usuarios obtienen la clave 3 cuando se sincronizan con Document Security, normalmente abriendo un documento protegido en línea. Sin embargo, los usuarios no están obligados a sincronizar con Document Security hasta que alcancen el período máximo de concesión sin conexión especificado en una directiva. Después de la primera sustitución de claves, los usuarios que permanecen sin conexión pueden seguir abriendo documentos sin conexión, incluidos los protegidos por Key3, hasta que alcancen el período máximo de concesión sin conexión. Cuando haga clic en el botón Claves de rollover ahora por segunda vez, Key2 deja de ser válida y se crea Key4. Los usuarios que permanecen sin conexión durante las dos rollovers de claves no pueden abrir documentos protegidos con Key3 o Key4 hasta que se sincronizan con Document Security.
 

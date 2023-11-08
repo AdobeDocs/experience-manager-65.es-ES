@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -80,11 +80,11 @@ En el caso de las operaciones de AWS, la implementación de una única ubicació
 
 #### Problemas de rendimiento {#performance-concerns}
 
-Un almacén de datos compartido requiere que los binarios se almacenen en una unidad montada en red que se comparta entre todas las instancias. Dado que se accede a estos binarios a través de una red, el rendimiento del sistema se ve afectado negativamente. Puede mitigar parcialmente el impacto utilizando una conexión de red rápida a una matriz rápida de discos. Sin embargo, esta es una propuesta costosa. En el caso de las operaciones de AWS, todos los discos son remotos y requieren conectividad de red. Los volúmenes efímeros pierden datos cuando la instancia se inicia o detiene.
+Un almacén de datos compartido requiere que los binarios se almacenen en una unidad montada en red que se comparta entre todas las instancias. Dado que se accede a estos binarios a través de una red, el rendimiento del sistema se ve afectado negativamente. Puede mitigar parcialmente el impacto utilizando una conexión de red rápida a una matriz rápida de discos. Sin embargo, esta es una propuesta costosa. Si hay operaciones de AWS, todos los discos son remotos y requieren conectividad de red. Los volúmenes efímeros pierden datos cuando la instancia se inicia o detiene.
 
 #### Latencia {#latency}
 
-La latencia en las implementaciones de S3 se introduce mediante los hilos de escritura en segundo plano. Los procedimientos de backup deben tener en cuenta esta latencia. Además, los índices de Lucene pueden permanecer incompletos al realizar una copia de seguridad. Se aplica a cualquier archivo con distinción de tiempo escrito en el almacén de datos S3 y al que se accede desde otra instancia.
+La latencia en las implementaciones de S3 se introduce mediante los hilos de escritura en segundo plano. Los procedimientos de copia de seguridad deben tener en cuenta esta latencia. Además, los índices de Lucene pueden permanecer incompletos al realizar una copia de seguridad. Se aplica a cualquier archivo con distinción de tiempo escrito en el almacén de datos S3 y al que se accede desde otra instancia.
 
 ### Almacén de nodos o almacén de documentos {#node-store-document-store}
 

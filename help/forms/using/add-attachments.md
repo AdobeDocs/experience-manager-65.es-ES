@@ -1,19 +1,15 @@
 ---
 title: Agregar archivos adjuntos
-seo-title: Adding attachments
 description: Agregue fotografías y notas garabateadas como anotaciones a su tarea en la aplicación de AEM Forms
-seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
-uuid: 3d2738b4-fd43-44ec-8eaf-a2ad4b7e5af5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -34,6 +30,7 @@ Las opciones son las siguientes:
 >[!NOTE]
 >
 >Los archivos adjuntos agregados por un usuario son visibles para otros usuarios de aplicaciones de AEM Forms. Otros usuarios no pueden eliminar los archivos adjuntos que haya agregado un usuario.
+>
 
 ### Pantalla de archivos adjuntos {#the-attachments-screen}
 
@@ -88,4 +85,4 @@ Los archivos adjuntos para formularios móviles sincronizados con servidores OSG
 
 Los archivos adjuntos de nivel de formulario no son compatibles con los formularios adaptables cargados en la aplicación desde un servidor OSGi de AEM Forms. Para adjuntar imágenes o notas de texto, active los archivos adjuntos de nivel de campo en el formulario cuando lo cree. Arrastre y suelte el componente de archivo adjunto desde el explorador de componentes del campo.
 
-En el caso de los formularios adaptables, puede ver los archivos adjuntos en el documento de registro (DoR). Consulte, [Generar un documento de registro para formularios adaptables que no sean XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Si hay formularios adaptables, puede ver los archivos adjuntos en el documento de registro (DoR). Consulte, [Generar un documento de registro para formularios adaptables que no sean XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ AEM En el caso del código Java™, admite slf4j como API estándar para registr
 * DEPURACIÓN: información de nivel inferior sobre el procesamiento. Resulta útil al depurar un problema compatible con.
 * TRACE: la información de nivel inferior, como métodos de entrada y salida. Normalmente, solo lo utilizan los desarrolladores.
 
-En el caso de JavaScript, *console.log* solo debe utilizarse durante el desarrollo, y todas las sentencias de registro deben eliminarse antes del lanzamiento.
+Si hay JavaScript, *console.log* solo debe utilizarse durante el desarrollo, y todas las sentencias de registro deben eliminarse antes del lanzamiento.
 
 ### Evitar programación de culto de carga {#avoid-cargo-cult-programming}
 

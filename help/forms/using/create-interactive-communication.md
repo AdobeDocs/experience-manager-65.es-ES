@@ -1,19 +1,15 @@
 ---
 title: Crear una comunicación interactiva
-seo-title: Create an Interactive Communication
 description: Cree una comunicación interactiva con el editor de comunicaciones interactivas. Utilice la funcionalidad de arrastrar y soltar para crear la comunicación interactiva y previsualizar las salidas de impresión y web en diferentes tipos de dispositivos.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6168'
-ht-degree: 97%
+source-wordcount: '6163'
+ht-degree: 96%
 
 ---
 
@@ -141,7 +137,7 @@ La interfaz de creación permite distinguir entre los campos independientes y en
 
 Además, cuando pasa el ratón sobre estos elementos, se muestra información del objeto con el mensaje Campo (sin enlazar) o Variable (sin enlazar).
 
-Es posible que a veces no se muestre una variable independiente utilizada en un fragmento de documento en la interfaz de creación. Puede deberse a una regla de texto en línea dentro de un fragmento de documento o en el caso de un fragmento de condición. En estos casos, la información del objeto, resaltada en azul, se mostrará como parte del fragmento de documento. La información sobre herramientas muestra el número de variables independientes utilizadas dentro de un fragmento de documento.
+Es posible que a veces no se muestre una variable independiente utilizada en un fragmento de documento en la interfaz de creación. Puede deberse a una regla de texto en línea dentro de un fragmento de documento o si hay un fragmento de condición. En estos casos, la información del objeto, resaltada en azul, se mostrará como parte del fragmento de documento. La información sobre herramientas muestra el número de variables independientes utilizadas dentro de un fragmento de documento.
 
 ![Variable sin enlazar ](assets/df_unbound_variable_new.png)
 
@@ -562,7 +558,7 @@ Pulse **[!UICONTROL Sí]**.
 
 ### Sincronizar {#synchronize-1}
 
-Si utiliza Imprimir como principal para el canal Web y realiza cambios en el canal Imprimir, puede sincronizar el contenido para traer los cambios recién realizados al canal Web.
+Si utiliza Imprimir como principal para el canal Web y cambia el canal Imprimir, puede sincronizar el contenido para traer los cambios recién realizados al canal Web.
 
 1. Para sincronizar el canal Web con el canal Imprimir, cambie al canal Web y pulse el icono Más opciones.
 

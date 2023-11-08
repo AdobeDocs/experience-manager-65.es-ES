@@ -1,19 +1,15 @@
 ---
 title: Administración programática de puntos de conexión
-seo-title: Programmatically Managing Endpoints
 description: Utilice el servicio Registro de extremos para agregar extremos de EJB, agregar extremos de SOAP, agregar extremos de carpetas inspeccionadas, agregar extremos de correo electrónico, agregar extremos de Remoting, agregar extremos de Task Manager, modificar extremos, quitar extremos y recuperar información del conector de extremo.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '10790'
+source-wordcount: '10791'
 ht-degree: 2%
 
 ---
@@ -146,7 +142,7 @@ Agregar un extremo de EJB mediante la API de Java:
 
 1. Habilite el extremo.
 
-   Habilite el punto de conexión invocando `EndpointRegistryClient` método enable del objeto y pasar el `Endpoint` objeto que ha devuelto el `createEndpoint` método.
+   Habilite el punto de conexión invocando `EndpointRegistryClient` método enable del objeto y pasando el `Endpoint` objeto que ha devuelto el `createEndpoint` método.
 
 **Consulte también**
 
@@ -339,7 +335,7 @@ La siguiente lista especifica los valores de configuración que se establecen al
 * **resultFolderName**: Carpeta en la que se almacenan los resultados guardados. Esta ubicación puede ser una ruta de acceso de directorio absoluta o relativa. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es `result/%Y/%M/%D/`. Esta es la carpeta de resultados dentro de la carpeta vigilada.
 * **preserveFolderName**: Ubicación en la que se almacenan los archivos después de analizarlos y recogerlos correctamente. Esta ubicación puede ser una ruta de directorio absoluta, relativa o nula. El valor predeterminado es `preserve/%Y/%M/%D/`.
 * **failureFolderName**: Carpeta en la que se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es `failure/%Y/%M/%D/`.
-* **preserveOnFailure**: Conservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es True.
+* **preserveOnFailure**: Conservar archivos de entrada si se produce un error al ejecutar la operación en un servicio. El valor predeterminado es True.
 * **overwriteDuplicateFilename**: cuando se establece en true, los archivos de la carpeta de resultados y de la carpeta de conservación se sobrescriben. Cuando se establece en false, los archivos y carpetas que tienen un sufijo de índice numérico se utilizan para el nombre. El valor predeterminado es False.
 
 **Definir valores de parámetros de entrada**

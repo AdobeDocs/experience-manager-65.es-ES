@@ -1,20 +1,16 @@
 ---
 title: Envío asincrónico de formularios adaptables
-seo-title: Asynchronous submission of adaptive forms
 description: Aprenda a configurar el envío asincrónico en formularios adaptables.
-seo-description: Learn to configure asynchronous submission for adaptive forms.
-uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 91%
+source-wordcount: '795'
+ht-degree: 81%
 
 ---
 
@@ -24,12 +20,12 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html) |
 | AEM 6.5 | Este artículo |
 
-Tradicionalmente, los formularios web se configuran para enviarse sincrónicamente. En el envío sincrónico, cuando los usuarios envían un formulario, se les redirige a una página de reconocimiento, de agradecimiento o, en el caso de se produzca un error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están ganando popularidad en los casos en los que la página web permanece estática mientras la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables mediante la configuración del envío asincrónico.
+Tradicionalmente, los formularios web se configuran para enviarse sincrónicamente. En el envío sincrónico, cuando los usuarios envían un formulario, se les redirige a una página de reconocimiento, de agradecimiento o, si hay un error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están ganando popularidad en los casos en los que la página web permanece estática mientras la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables mediante la configuración del envío asincrónico.
 
-En el caso del envío asincrónico, cuando un usuario envía un formulario, el desarrollador del formulario agrega una experiencia independiente, como redirigir a otro formulario o a una sección independiente del sitio web. El autor también puede agregar servicios separados como el envío de datos a un repositorio de datos diferente o agregar un motor de análisis personalizado. En caso de envío asincrónico, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se volverá a cargar o su URL no cambiará cuando los datos del formulario enviados se validen en el servidor.
+En el caso del envío asincrónico, cuando un usuario envía un formulario, el desarrollador del formulario agrega una experiencia independiente, como redirigir a otro formulario o a una sección independiente del sitio web. El autor también puede añadir servicios independientes, como enviar datos a un almacén de datos diferente o añadir un motor de análisis personalizado. Si hay envío asincrónico, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se vuelve a cargar o su URL no cambia cuando los datos del formulario enviados se validan en el servidor.
 
 Siga leyendo para obtener más información sobre el envío asincrónico en formularios adaptables.
 
@@ -67,7 +63,7 @@ La estructura de la respuesta del servidor para el evento de éxito del envío e
 }
 ```
 
-La respuesta del servidor en caso de que el envío del formulario se realice correctamente incluye:
+La respuesta del servidor si el envío de formularios se realiza correctamente incluye lo siguiente:
 
 * el tipo de formato de datos del formulario: XML o JSON;
 * los datos del formulario en formato XML o JSON;
@@ -93,7 +89,7 @@ La estructura de la respuesta del servidor para el evento de error del envío es
  }
 ```
 
-La respuesta del servidor en caso de que se produzca un error durante el envío del formulario incluye:
+La respuesta del servidor si hay un error en el envío del formulario incluye:
 
 * el motivo del error, el error de CAPTCHA o la validación del lado del servidor;
 * la lista de objetos de error, que incluye la expresión SOM del campo en el que se ha producido un error al efectuar la validación y el mensaje de error correspondiente.

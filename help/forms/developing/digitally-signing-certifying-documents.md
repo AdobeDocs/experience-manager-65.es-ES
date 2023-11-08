@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '17029'
+source-wordcount: '17027'
 ht-degree: 4%
 
 ---
@@ -351,7 +351,7 @@ Puede modificar los campos de firma que se encuentran en un documento de PDF med
 
 A *diccionario de bloqueo de campos* especifica una lista de campos bloqueados cuando se firma el campo de firma. Un campo bloqueado impedirá que los usuarios realicen cambios en el campo. A *diccionario de valores semilla* contiene información de restricción que se utiliza en el momento en que se aplica la firma. Por ejemplo, puede cambiar los permisos que controlan las acciones que se pueden producir sin invalidar una firma.
 
-Si modifica un campo de firma existente, podrá realizar cambios en el documento de PDF para reflejar los cambios en los requisitos empresariales. Por ejemplo, un requisito empresarial nuevo puede requerir bloquear todos los campos del documento después de firmarlo.
+Si modifica un campo de firma existente, puede cambiar el documento de PDF para reflejar los cambios en los requisitos empresariales. Por ejemplo, un requisito empresarial nuevo puede requerir bloquear todos los campos del documento después de firmarlo.
 
 En esta sección se explica cómo modificar un campo de firma mediante la modificación de los valores del diccionario de bloqueo de campos y del diccionario de valores semilla. Los cambios realizados en el diccionario de bloqueo de campos de firma hacen que todos los campos del documento de PDF se bloqueen cuando se firma un campo de firma. Los cambios realizados en el diccionario de valores semilla prohíben tipos específicos de cambios en el documento.
 

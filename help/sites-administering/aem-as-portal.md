@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6087'
 ht-degree: 0%
 
 ---
@@ -737,7 +737,7 @@ De forma predeterminada, el portlet se conecta a la instancia de publicación en
 
 >[!NOTE]
 >
->Estos procedimientos utilizan el portal Websphere como ejemplo, aunque son lo más genéricos posible; tenga en cuenta que los procedimientos varían para otros portales web. Aunque los pasos son esencialmente idénticos para todos los portales web, debe reutilizar los pasos para su portal web en particular.
+>Estos procedimientos utilizan el portal Websphere como ejemplo, aunque son lo más genéricos posible; los procedimientos varían para otros portales web. Aunque los pasos son esencialmente idénticos para todos los portales web, debe reutilizar los pasos para su portal web en particular.
 
 #### Instalación del portlet {#installing-the-portlet}
 

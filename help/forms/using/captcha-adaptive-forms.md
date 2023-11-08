@@ -1,20 +1,16 @@
 ---
 title: Usar CAPTCHA en formularios adaptables
-seo-title: Using CAPTCHA in adaptive forms
 description: Aprenda a configurar el servicio AEM CAPTCHA o Google reCAPTCHA en formularios adaptables.
-seo-description: Learn how to configure AEM CAPTCHA or Google reCAPTCHA service in adaptive forms.
-uuid: 0e11e98a-12ac-484c-b77f-88ebdf0f40e5
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
-discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 1ab5165dc87684918b33edabec133702b1f62663
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 64%
+source-wordcount: '1993'
+ht-degree: 65%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 64%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 
@@ -68,7 +64,7 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
    1. Pulse **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración creado en el paso anterior y pulse **[!UICONTROL Crear]**.
    1. Seleccione la versión como reCAPTCHA Enterprise y especifique el nombre, el ID de proyecto, la clave del sitio y la clave de API (obtenida en los pasos 2 y 3) para el servicio reCAPTCHA Enterprise.
    1. Seleccione el tipo de clave, el tipo de clave debe ser el mismo que la clave del sitio configurada en el proyecto de Google Cloud, por ejemplo, **Clave de sitio de casilla** o **Clave de sitio basada en puntuación**.
-   1. Especifique una puntuación de umbral en el rango de 0 a 1 ([Haga clic para obtener más información sobre la puntuación](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Las puntuaciones buenas o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
+   1. Especifique una puntuación de umbral en el rango de 0 a 1 ([Haga clic para obtener más información sobre la puntuación](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Las puntuaciones superiores o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
 
       > Nota:
       >
@@ -131,9 +127,9 @@ Para usar reCAPTCHA en formularios adaptables haga lo siguiente:
    >
    >Captcha tiene un plazo y caduca en aproximadamente un minuto. Por lo tanto, se recomienda colocar el componente Captcha justo antes del botón Enviar en el formulario adaptable.
 
-1. Seleccione el componente Captcha que ha agregado y pulse ![cmppr](assets/cmppr.png) para editar sus propiedades.
+1. Seleccione el componente Captcha que ha añadido y pulse ![cmppr](assets/cmppr.png) para editar sus propiedades.
 1. Especifique un título para el widget CAPTCHA. El valor predeterminado es **Captcha**. Seleccione **Ocultar título** si no desea que aparezca el título.
-1. Desde el **Servicio Captcha** menú desplegable, seleccione **reCAPTCHA** para habilitar el servicio reCAPTCHA si se ha configurado como se describe en [Servicio reCAPTCHA de Google](#google-reCAPTCHA).
+1. En el menú desplegable **servicio Captcha**, seleccione **reCAPTCHA** para habilitarlo si lo configuró como se describe en el [Servicio reCAPTCHA de Google](#google-reCAPTCHA).
 1. Seleccione una configuración en la lista desplegable Configuración.
 1. **Si la configuración seleccionada tiene la versión reCAPTCHA Enterprise**:
    1. Puede seleccionar la configuración de nube reCAPTCHA con **tipo de clave** as **casilla de verificación**. En el tipo de clave de casilla de verificación, el mensaje de error personalizado aparece como un mensaje en línea si falla la validación captcha. Puede seleccionar el tamaño como **[!UICONTROL Normal]** y **[!UICONTROL Compacto]**.
@@ -215,7 +211,7 @@ Para usar reCAPTCHA en formularios adaptables haga lo siguiente:
 
 
    **Si la configuración seleccionada tiene la versión reCAPTCHA v2**:
-   1. Seleccione el tamaño como **[!UICONTROL Normal]** o **[!UICONTROL Compacto]** para el widget reCAPTCHA. También puede seleccionar la opción **[!UICONTROL Invisible]** para mostrar el desafío CAPTCHA solamente en el caso de una actividad sospechosa. El **protegido por reCAPTCHA** el distintivo, que se muestra a continuación, aparece en los formularios protegidos.
+   1. Seleccione el tamaño como **[!UICONTROL Normal]** o **[!UICONTROL Compacto]** para el widget reCAPTCHA. También puede seleccionar la variable **[!UICONTROL Invisible]** para mostrar el desafío CAPTCHA solo si hay actividad sospechosa. El **protegido por reCAPTCHA** el distintivo, que se muestra a continuación, aparece en los formularios protegidos.
 
       ![Distintivo protegido por reCAPTCHA de Google](/help/forms/using/assets/google-recaptcha-v2.png)
 

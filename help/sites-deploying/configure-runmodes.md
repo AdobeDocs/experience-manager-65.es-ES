@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -71,9 +71,9 @@ También se pueden seleccionar modos de ejecución personalizados en cada inicio
 
 Estos modos permiten controlar el uso del contenido de muestra. El contenido de muestra se define antes de que se genere el inicio rápido y puede incluir paquetes, configuraciones, etc.:
 
-* El `samplecontent` el modo de ejecución instalará este contenido (el modo predeterminado).
+* El `samplecontent` el modo de ejecución instala este contenido (el modo predeterminado).
 
-* El `nosamplecontent` El modo no instalará el contenido de muestra.
+* El `nosamplecontent` El modo no instala el contenido de muestra.
 
 El modo de ejecución nosamplecontent está diseñado para instalaciones de producción.
 

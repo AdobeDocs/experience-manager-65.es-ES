@@ -4,9 +4,9 @@ description: Encuentre las prácticas recomendadas recopiladas por los equipos d
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1604'
 ht-degree: 40%
 
 ---
@@ -160,7 +160,7 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de fuente
 
 ## Personalización de despliegues {#customizing-rollouts}
 
-Las configuraciones de despliegue de MSM son altamente personalizables. Debe tener en cuenta que la automatización de los despliegues puede tener consecuencias de gran alcance. Como práctica recomendada, debe planificar *muy* con cuidado antes, por ejemplo:
+Las configuraciones de despliegue de MSM son altamente personalizables. La automatización de los despliegues puede tener consecuencias de gran alcance. Como práctica recomendada, debe planificar *muy* con cuidado antes, por ejemplo:
 
 * automatización de despliegues; por ejemplo, con [déclencheur onModify](#onmodify),
 * personalización [tipos de nodo/propiedades](#node-types-properties),

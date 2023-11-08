@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
-source-git-commit: 2a2f8538b6554540b546f4d345c0b3c0d3e706f3
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Para sincronizar dominios, puede elegir realizar una sincronización manual o pr
 
 La sincronización de directorios se utiliza para extraer detalles de los servidores de directorios especificados en la configuración de directorios de la base de datos de Administración de usuarios. Posteriormente, también puede realizar una sincronización manual si se producen cambios o actualizaciones en los servidores de directorios. Por ejemplo, puede realizar una sincronización manual si se agregan usuarios y grupos o si se realizan cambios en la cuenta de un usuario.
 
-También puede establecer una programación de sincronización diaria para sincronizar automáticamente la base de datos de administración de usuarios con cambios o actualizaciones en los servidores de directorio de origen. Sin embargo, tenga en cuenta que este proceso utiliza recursos de red y de servidor. Elija períodos de tiempo de bajo uso y evite programar sincronizaciones innecesarias que atan los recursos del sistema y de la red. Para minimizar las sincronizaciones innecesarias, utilice la opción de sincronización inmediata en su lugar.
+También puede establecer una programación de sincronización diaria para sincronizar automáticamente la base de datos de administración de usuarios con cambios o actualizaciones en los servidores de directorio de origen. Sin embargo, este proceso utiliza recursos de red y de servidor. Elija períodos de tiempo de bajo uso y evite programar sincronizaciones innecesarias que atan los recursos del sistema y de la red. Para minimizar las sincronizaciones innecesarias, utilice la opción de sincronización inmediata en su lugar.
 
 También puede especificar si desea insertar información de usuarios y grupos en el LiveCycle de Adobe de Content Services 9 (obsoleto) al sincronizar dominios.
 

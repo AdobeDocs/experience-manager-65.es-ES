@@ -3,10 +3,10 @@ title: Prácticas recomendadas de traducción
 description: Encuentre prácticas recomendadas recopiladas por equipos de consultoría e ingeniería de Adobes para ayudarle a poner en marcha proyectos de traducción.
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 97%
+source-wordcount: '836'
+ht-degree: 96%
 
 ---
 

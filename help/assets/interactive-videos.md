@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6036'
+source-wordcount: '6035'
 ht-degree: 2%
 
 ---
@@ -533,7 +533,7 @@ El código incrustado copiado se configura para un entorno interactivo, de modo 
 >
 En este punto, si ha agregado interactividad con solo páginas web con hipervínculos, habrá terminado.
 >
-Sin embargo, si ha agregado interactividad para almacenar en déclencheur una vista rápida, las miniaturas junto al vídeo interactivo son solo para fines de visualización; aún no se han integrado con la vista rápida existente. En tal caso, ahora debe integrar el vídeo interactivo con la vista rápida existente en su sitio web.
+Sin embargo, si ha agregado interactividad para almacenar en déclencheur una vista rápida, las miniaturas junto al vídeo interactivo son solo para fines de visualización; aún no se han integrado con la vista rápida existente. En tal caso, debe integrar el vídeo interactivo con la vista rápida existente en su sitio web.
 
 **Ejemplo**
 

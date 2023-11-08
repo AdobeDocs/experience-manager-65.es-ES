@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '9887'
 ht-degree: 0%
@@ -1735,4 +1735,4 @@ El siguiente ejemplo de código de C# firma un formulario interactivo que proces
 
 ### Los servicios que comienzan con la carta generan archivos proxy no válidos {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-El nombre de algunas clases de proxy generadas por AEM Forms son incorrectos cuando se utilizan Microsoft .Net 3.5 y WCF. Este problema se produce cuando se crean clases de proxy para IBMFilenetContentRepositoryConnector, IDPSchedulerService o cualquier otro servicio cuyo nombre comience por la letra I. Por ejemplo, el nombre del cliente generado en el caso de IBMFileNetContentRepositoryConnector es `BMFileNetContentRepositoryConnectorClient`. Falta el ID de carta en la clase de proxy generada.
+El nombre de algunas clases de proxy generadas por AEM Forms son incorrectos cuando se utilizan Microsoft .Net 3.5 y WCF. Este problema se produce cuando se crean clases de proxy para IBMFilenetContentRepositoryConnector, IDPSchedulerService o cualquier otro servicio cuyo nombre comience por la letra I. Por ejemplo, el nombre del cliente generado si hay IBMFileNetContentRepositoryConnector es `BMFileNetContentRepositoryConnectorClient`. Falta el ID de carta en la clase de proxy generada.

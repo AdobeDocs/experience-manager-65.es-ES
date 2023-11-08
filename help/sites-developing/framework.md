@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Las áreas de nombres permiten agrupar cosas. El caso de uso más habitual es un
 
 El área de nombres de la etiqueta es el primer nivel del subárbol de taxonomía, que es el nodo situado inmediatamente debajo de [nodo raíz de taxonomía](#taxonomy-root-node). Un área de nombres es un nodo de tipo `cq:Tag` cuyo elemento principal no es un `cq:Tag` tipo de nodo.
 
-Todas las etiquetas tienen un área de nombres. Si no se especifica ningún área de nombres, la etiqueta se asigna al área de nombres predeterminada, que es TagID `default` con el título `Standard Tags`, es decir:. `/content/cq:tags/default`.
+Todas las etiquetas tienen un área de nombres. Si no se especifica ningún área de nombres, la etiqueta se asigna al área de nombres predeterminada, que es TagID `default` con el título `Standard Tags`, es decir, `/content/cq:tags/default`.
 
 ### Etiquetas de contenedor {#container-tags}
 

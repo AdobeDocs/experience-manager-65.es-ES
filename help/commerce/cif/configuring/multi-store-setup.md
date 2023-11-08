@@ -7,10 +7,10 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 18%
+ht-degree: 14%
 
 ---
 
@@ -36,11 +36,11 @@ AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una 
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * AEM En el camino a Herramientas, vaya a Herramientas -> General -> [Explorador de configuración](/help/sites-administering/configurations.md#using-configuration-browser)
+   * AEM En el paso de la página, vaya a Herramientas > General > [Explorador de configuración](/help/sites-administering/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado
    * Cree una configuración siguiendo los pasos descritos anteriormente en el punto 2
 
-   Esta nueva configuración se crea como una configuración secundaria de la base. Ahora puede ir a Herramientas -> General -> Explorador de configuración y crear los ajustes de configuración.
+   Esta nueva configuración se crea como una configuración secundaria de la base. Ahora puede ir a Herramientas > General > Explorador de configuración y crear los ajustes de configuración.
 
    >[!TIP]
    >

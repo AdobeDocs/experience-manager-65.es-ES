@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -89,40 +89,38 @@ devuelve el número de versión de la biblioteca de scripts.
 
       * **widgetConfig:** permite que el usuario anule los widgets predeterminados del formulario con widgets personalizados. La configuración se anula de la siguiente forma:
 
-         *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
       * **pagingConfig:** permite al usuario anular el comportamiento predeterminado al procesar solo la primera página. La configuración se anula de la siguiente forma:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
       * **LoggingConfig:** permite al usuario anular el nivel de registro, desactivar el registro de una categoría, mostrar la consola de registros o realizar el envío al servidor. La configuración se puede anular de la siguiente forma:
 
-      ```javascript
-      formBridge.registerConfig{
-        "LoggerConfig" : {
-      {
-      "on":`<true *| *false>`,
-      "category":`<array of categories>`,
-      "level":`<level of categories>`, "
-      type":`<"console"/"server"/"both">`
-      }
-        }
-      ```
+     ```javascript
+     formBridge.registerConfig{
+       "LoggerConfig" : {
+     {
+     "on":`<true *| *false>`,
+     "category":`<array of categories>`,
+     "level":`<level of categories>`, "
+     type":`<"console"/"server"/"both">`
+     }
+       }
+     ```
 
       * **SubmitServiceProxyConfig:** permita que los usuarios registren los servicios proxy de envío y registrador.
 
-         ```javascript
-         window.formBridge.registerConfig("submitServiceProxyConfig",
-         {
-         "submitServiceProxy" : "`<submitServiceProxy>`",
-         "logServiceProxy": "`<logServiceProxy>`",
-         "submitUrl" : "`<submitUrl>`"
-         });
-         ```
+        ```javascript
+        window.formBridge.registerConfig("submitServiceProxyConfig",
+        {
+        "submitServiceProxy" : "`<submitServiceProxy>`",
+        "logServiceProxy": "`<logServiceProxy>`",
+        "submitUrl" : "`<submitUrl>`"
+        });
+        ```
 
    * **config:** el valor de la configuración.
-
-
 
 * **Salida:** el objeto que contiene el valor original de la configuración en la propiedad *data*.
 
@@ -177,7 +175,7 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:** la expresión Som del campo en el que se va a establecer el enfoque.
 * **Salida:** ninguna.
-* **Error:** inicia una excepción en el caso de que la expresión Som sea incorrecta.
+* **Error:** Inicia una excepción si hay una expresión Som incorrecta
 
 **setFieldValue (som, value)**: establece el valor de los campos para las expresiones Som dadas.
 
@@ -187,7 +185,7 @@ devuelve el número de versión de la biblioteca de scripts.
    * **value:** la matriz que contiene los valores correspondientes a las expresiones Som proporcionadas en una matriz **som**. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
 
 * **Salida:** ninguna.
-* **Error:** inicia una excepción en el caso de una expresión Som sea incorrecta.
+* **Error:** Inicia una excepción si hay una expresión Som incorrecta
 
 **getFieldValue (som)**: devuelve el valor de los campos de las expresiones Som dadas.
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 1%
@@ -51,9 +51,9 @@ El panel izquierdo de la ficha Sistema muestra la siguiente información sobre e
 
 **Tiempo de compilación:** Cantidad de tiempo empleado en la compilación.
 
-**Número de hilos activos:** AEM Número total de subprocesos presentes actualmente en el sistema de formularios de la.
+**Número de Live Threads:** AEM Número total de subprocesos presentes actualmente en el sistema de formularios de la.
 
-**Número máximo de subprocesos:** Número máximo de subprocesos activos registrados en el sistema.
+**Número máximo de Threads:** Número máximo de subprocesos activos registrados en el sistema.
 
 **Número de clases cargadas:** Número de clases cargadas en la JVM.
 
@@ -63,9 +63,9 @@ El panel izquierdo de la ficha Sistema muestra la siguiente información sobre e
 
 **Montón máximo:** Cantidad máxima de pila que se ha utilizado.
 
-**Nombre del sistema operativo:** AEM El nombre del sistema operativo que se ejecuta en el servidor de formularios de la.
+**Nombre del sistema operativo:** Nombre del sistema operativo que se ejecuta en el servidor de AEM Forms.
 
-**Versión del sistema operativo:** AEM Número de versión del sistema operativo que se ejecuta en el servidor de formularios de la.
+**Versión del sistema operativo:** Número de versión del sistema operativo que se ejecuta en AEM Forms Server.
 
 **Arco del sistema operativo:** Arquitectura del sistema operativo en la que se ejecuta JVM.
 

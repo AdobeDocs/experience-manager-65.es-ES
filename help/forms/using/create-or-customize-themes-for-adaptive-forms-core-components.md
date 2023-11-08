@@ -1,20 +1,18 @@
 ---
 title: Crear o personalizar temáticas de formularios adaptables
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: Aprenda a crear o personalizar temáticas para componentes principales de Forms adaptables mediante especificaciones de BEM
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: AEM crear una temática de componentes principales de formularios adaptables, crear una temática nueva, personalizar una temática, cargar una temática nueva, utilizar una temática en formularios, eliminar una temática, crear una temática en formularios 6.5 de
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1971'
 ht-degree: 11%
 
 ---
-
 
 # Crear o personalizar una temática de formulario adaptable {#introduction-to-theme}
 
@@ -62,7 +60,7 @@ Puede [personalice cualquiera de estas temáticas para crear una temática](#cus
 
 ## Personalizar una temática {#customize-a-theme-core-components-based-adaptive-forms}
 
-La personalización de una temática hace referencia al proceso de modificación y personalización de la apariencia de una temática. Al personalizar una temática, se realizan cambios en los elementos de diseño, el diseño, los colores, la tipografía y, a veces, en el código subyacente. Esto le permite crear un aspecto único y personalizado para su sitio web o aplicación, al tiempo que mantiene la estructura y la funcionalidad básicas proporcionadas por la temática.
+La personalización de una temática hace referencia al proceso de modificación y personalización de la apariencia de una temática. Al personalizar una temática, cambia sus elementos de diseño, diseño, colores, tipografía y, a veces, el código subyacente. Esto le permite crear un aspecto único y personalizado para su sitio web o aplicación, al tiempo que mantiene la estructura y la funcionalidad básicas proporcionadas por la temática.
 
 >[!NOTE]
 >
@@ -73,7 +71,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * [Habilitar los componentes principales de formularios adaptables para su entorno.](/help/forms/using/enable-adaptive-forms-core-components.md)
 
-* Instale la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
+* Instalar la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
 * Obtenga información sobre cómo crear un [biblioteca de cliente en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es). AEM proporciona bibliotecas de cliente, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
 
@@ -339,4 +337,3 @@ Para eliminar temas no utilizados o no deseados:
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-
