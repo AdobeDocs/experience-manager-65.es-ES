@@ -796,7 +796,7 @@ Información sobre el proceso de inicio y el lanzador de inicio rápido.
 
 ### Operaciones {#operations-5}
 
-**registro**
+**log**
 
 Muestra un mensaje en la ventana Inicio rápido.
 

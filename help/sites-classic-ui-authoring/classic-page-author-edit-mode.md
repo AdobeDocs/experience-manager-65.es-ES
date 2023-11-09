@@ -1072,7 +1072,7 @@ Especifique la lista de posibles clientes necesaria.
 
            Grupo al que asignar el nuevo usuario.
 
-         * **Página principal**
+         * **Inicio**
 
            Página para mostrar después de iniciar sesión correctamente.
 

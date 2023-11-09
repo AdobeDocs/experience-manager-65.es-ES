@@ -121,7 +121,7 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>obligatorio<br /> </p> </td>
+     <td><p><code>String</code></p> <p>required<br /> </p> </td>
      <td>El título de la plantilla (mostrado en la <strong>Crear fragmento</strong> asistente).</td>
     </tr>
     <tr>

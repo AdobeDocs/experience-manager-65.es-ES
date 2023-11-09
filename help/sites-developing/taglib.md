@@ -603,7 +603,7 @@ El `<sling:defineObjects>` expone los siguientes objetos de script, que se utili
 
 * Si el recurso actual apunta a un nodo JCR (como suele ocurrir en Sling), proporciona acceso directo al objeto Node. De lo contrario, este objeto no está definido.
 
-**registro**
+**log**
 
 * Proporciona un registrador SLF4J para registrar en el sistema de registro de Sling desde scripts, por ejemplo, log.info(&quot;Ejecutando mi script&quot;).
 

@@ -1220,7 +1220,7 @@ AEM En una instalación estándar de la aplicación se incluye una selección de
 
            Grupo al que asignar el nuevo usuario.
 
-         * **Página principal**
+         * **Inicio**
 
            Página para mostrar después de iniciar sesión correctamente.
 

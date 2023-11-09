@@ -41,7 +41,7 @@ En la tabla siguiente se enumeran los nombres y eventos que se producen en las t
 | ContextHub.Constants.PERSISTENCE_CONTAINER_NAME | Nombre de contenedor de persistencia | ContextHubPersistence |
 | ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY | Almacena el nombre de clave de persistencia específico donde se almacena el resultado JSON sin procesar | /_/raw-response |
 | ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY | Almacena la marca de tiempo específica que indica cuándo se recuperaron los datos de JSON | /_/response-time |
-| ContextHub.Constants.SERVICE_LAST_URL_KEY | Almacena la URL específica del servicio JSON utilizado durante la última llamada | /_/url |
+| ContextHub.Constants.SERVICE_LAST_URL_KEY | Almacena la URL específica del servicio JSON utilizado durante la última llamada | /_/URL |
 | ContextHub.Constants.IS_CONTAINER_EXPANDED | Indica si la IU de ContextHub está expandida | /_/container-expand |
 
 ### Constantes de evento de IU {#ui-event-constants}

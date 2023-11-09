@@ -503,7 +503,7 @@ En el HTML, puede utilizar los siguientes marcadores de posición, que se sustit
 |---|---|
 | {name} | Nombre del botón; por ejemplo** autor, atrás** actualizar, etc. |
 | {id} | ID de CSS del botón. |
-| {url} | URL del destino del botón. |
+| {URL} | URL del destino del botón. |
 | {text} | Etiqueta del botón. |
 | {onclick} | JavaScript **onclick** función (contiene {url}). |
 
