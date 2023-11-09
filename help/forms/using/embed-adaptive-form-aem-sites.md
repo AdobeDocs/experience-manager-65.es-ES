@@ -1,19 +1,15 @@
 ---
 title: Incrustar un formulario adaptable o una comunicación interactiva en la página de AEM Sites
-seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: Puede incrustar formularios adaptables en páginas de AEM Sites. Los usuarios pueden rellenar y enviar formularios sin salir de las páginas de Sites.
-seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
-uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
-discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 92%
+source-wordcount: '1164'
+ht-degree: 91%
 
 ---
 
@@ -69,7 +65,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva mediante 
 
       * **Mensaje de agradecimiento**: escriba un mensaje con el editor de texto enriquecido para mostrarlo después del envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
       * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después del envío del formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
-      * **Actualizar página en envío**: habilítelo para actualizar la página que contiene el formulario adaptable incrustado para mostrar la página de agradecimiento. De lo contrario, la página de agradecimiento reemplazará al formulario adaptable en el contenedor de AEM Forms sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
+      * **Actualizar página al enviar**: habilítelo para poder actualizar la página que contiene el formulario adaptable incrustado para mostrar la página de agradecimiento. De lo contrario, la página de agradecimiento reemplazará al formulario adaptable en el contenedor de AEM Forms sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
 
    * **Temática**: seleccione una temática que defina el estilo de los componentes del formulario adaptable o de la comunicación interactiva. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación.
    * **Altura**: especifique la altura del contenedor. Déjelo en blanco para cambiar automáticamente el tamaño del contenedor.

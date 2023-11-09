@@ -7,7 +7,7 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '2773'
 ht-degree: 2%
@@ -326,8 +326,8 @@ AEM Si es necesario editar, en cada instancia de publicación de la:
 
      Ubicación en el repositorio donde se almacenan los datos de usuario. En el caso de un sitio de la comunidad, para garantizar que los miembros tengan permisos para ver el perfil de los demás, la ruta debe ser la predeterminada `/home/users/community`.
 
-   * **[!UICONTROL Activar parámetros]** no editar
-   * **[!UICONTROL Parámetros de URL]** no editar
+   * **[!UICONTROL Activar parámetros]** - no editar
+   * **[!UICONTROL Parámetros de URL]** - no editar
    * **[!UICONTROL Actualizar usuario]**
 
      Si se selecciona, actualiza los datos de usuario en el repositorio en cada inicio de sesión para reflejar los cambios de perfil o los datos adicionales solicitados. La opción predeterminada no está seleccionada.

@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '5739'
+source-wordcount: '5736'
 ht-degree: 6%
 
 ---
@@ -428,7 +428,7 @@ Puede hacer lo siguiente con los recursos en los que ha buscado [!DNL Experience
 
 Ordene los resultados de búsqueda para descubrir los recursos necesarios más rápido. Puede ordenar los resultados de búsqueda en la vista de lista y solo cuando selecciona **[[!UICONTROL Archivos]](#searchui)** desde el **[!UICONTROL Filtros]** panel. [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
-En la vista de lista, puede ordenar los resultados de búsqueda del mismo modo que puede ordenar los recursos de cualquier carpeta. La ordenación funciona en estas columnas: Nombre, Título, Estado, Dimension, Tamaño, Clasificación, Uso, (Fecha) de creación, (Fecha) de modificación, (Fecha) de publicación, Flujo de trabajo y Retirado.
+En la vista de lista, puede ordenar los resultados de búsqueda del mismo modo que puede ordenar los recursos de cualquier carpeta. La ordenación funciona en estas columnas: Nombre, Título, Estado, Dimension, Tamaño, Clasificación, Uso, Creado, Modificado, Publicado, Flujo de trabajo y Extraído.
 
 Para obtener información sobre las limitaciones de la funcionalidad de ordenación, consulte [limitaciones](#limitations).
 

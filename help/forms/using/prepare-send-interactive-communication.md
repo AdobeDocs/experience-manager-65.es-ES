@@ -1,18 +1,14 @@
 ---
 title: Preparar y enviar comunicaciones interactivas mediante la interfaz de usuario del agente
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: La interfaz de usuario del agente permite a los agentes preparar y enviar una comunicación interactiva al proceso de publicación. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso de publicación, como el correo electrónico o la impresión.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '2020'
-ht-degree: 98%
+source-wordcount: '2021'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +65,7 @@ En la pestaña Contenido, administre el contenido de la comunicación interactiv
 
    Si pulsa Resaltar los módulos seleccionados en el contenido ( ![ccr_resaltar_módulos_seleccionados_en_contenido](assets/highlightselectedmodulesincontentccr.png)) en la parte superior izquierda de la vista previa de las pestañas Contenido o Datos, puede deshabilitar o habilitar la funcionalidad para ir al fragmento de documento pulsando o seleccionando el texto, el párrafo o el campo de datos relevantes en la vista previa.
 
-   Los fragmentos que el agente puede editar al crear la comunicación interactiva incluyen el icono Editar contenido seleccionado ( ![icono_editar_contenido_seleccionado](assets/iconeditselectedcontent.png)). Pulse el icono Editar contenido seleccionado para iniciar el fragmento en el modo Edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar el texto:
+   Los fragmentos que el agente puede editar al crear la comunicación interactiva incluyen Editar contenido seleccionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) icono. Pulse el icono Editar contenido seleccionado para iniciar el fragmento en el modo Edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar el texto:
 
    * [Opciones de formato](#formattingtext)
 
@@ -169,7 +165,7 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 cara
 
 * Insertar línea en blanco: inserta una nueva línea en blanco.
 * Selección (icono en forma de ojo): incluye o excluye el fragmento de documento de la comunicación interactiva.
-* Omitir viñetas/numeraciones: active esta opción para omitir las viñetas o la numeración en el fragmento de documento de lista.
+* Omitir viñetas/numeraciones: active esta opción si desea omitir las viñetas o la numeración en el fragmento de documento de lista.
 * Valores no rellenados (información): indica el número de variables no rellenadas del fragmento de documento.
 
 ## Guardar comunicaciones interactivas como borrador {#save-as-draft}

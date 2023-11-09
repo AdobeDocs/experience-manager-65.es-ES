@@ -1,18 +1,14 @@
 ---
 title: Configuración de Seguimiento de vínculos para Adobe Analytics
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: Obtenga información acerca de la configuración del seguimiento de vínculos para el SiteCatalyst.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -24,7 +20,7 @@ Cuando los usuarios hacen clic en vínculos en páginas del sitio web, puede cap
 
 ## Configuración del seguimiento de vínculos para un módulo de Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Uso de **Navegación**, vaya a **Implementación**, **Cloud Services** a la **Adobe Analytics** sección.
+1. Uso de **Navegación**, vaya a **Implementación**, **Cloud Service** a la **Adobe Analytics** sección.
 
 1. Uso de **Mostrar configuraciones**, abra el marco de trabajo de Adobe Analytics necesario.
 1. Expanda el **Configuración de seguimiento de vínculos** y configúrelo según sea necesario (esta página proporciona más detalles):
@@ -93,7 +89,7 @@ Define filtros para hacer coincidir las direcciones URL de los vínculos interno
 * **Dejar cadena de consulta**
 Incluye parámetros de URL al evaluar coincidencias con filtros internos y externos.
 
-  Habilite la opción para incluir parámetros de URL al evaluar direcciones URL de destino de vínculo con filtros externos e internos.
+  Habilite la opción si desea incluir parámetros de URL al evaluar direcciones URL de destino de vínculo con filtros externos e internos.
 
 Las propiedades de seguimiento de vínculos externos se implementan como código en la variable `analytics.sitecatalyst.js` que se genera para una página. El siguiente código de ejemplo se genera para una página asociada a un marco de trabajo que ha habilitado el seguimiento de vínculos externos con la siguiente configuración:
 
@@ -215,7 +211,7 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
 1. Anular selección **Dejar cadena de consulta**.
 1. Utilice el siguiente valor para **Filtros externos** para identificarla como URL externa:
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. Añada el siguiente valor a **Eventos de seguimiento de vínculos** campo:
 
@@ -345,12 +341,12 @@ Utilice el siguiente procedimiento para configurar el seguimiento de vínculos p
 1. (Opcional) Para realizar un seguimiento de los datos de las variables con el clic en el vínculo, agregue variables de Adobe Analytics en la variable **Incluir variables de Adobe Analytics** field. Utilice cualquiera de los siguientes formatos:
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*: *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`'CONSTANT'`*
 
    Los siguientes ejemplos ilustran cada formato:
 
    * `eVar10:pagedata.title`
-   * `prop1: ‘Aubergine'`
+   * `prop1: 'Aubergine'`
 
    Separe los distintos valores con una coma.
 

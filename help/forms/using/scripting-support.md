@@ -1,20 +1,16 @@
 ---
 title: Compatibilidad con scripts para formularios HTML5
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, propiedades de FormCalc y otros métodos compatibles con formularios HTML5.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '3887'
-ht-degree: 96%
+source-wordcount: '3896'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +32,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
    <td>Especifica el contenido del campo antes de los cambios determinados por las acciones de un usuario. El valor puede recuperarse de la misma manera que una función deshacer.</td>
    <td><p>No funciona para cuadros de lista y listas desplegables. <code>PrevText </code> no funciona correctamente en los siguientes casos:</p>
     <ul>
-     <li>Al escribir caracteres especiales (por ejemplo, $, (,), &amp;, @, etc.) en los campos numéricos de iPad, y </li>
+     <li>Al escribir caracteres especiales (por ejemplo, $ o , o &amp; o @ y más) en los campos numéricos de iPad, y </li>
      <li>Para el campo Fecha (cuando la fecha se introduce mediante el calendario).<br /> </li>
     </ul> <p>No es compatible la configuración del valor mediante script.</p> </td>
   </tr>
@@ -52,7 +48,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
     <ul>
      <li>Al seleccionar o reemplazar textos</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir caracteres especiales (por ejemplo, $, (, ), &amp;, @, etc.) en los campos numéricos<br /> </li>
+     <li>Al escribir caracteres especiales (por ejemplo, $ o , o &amp; o @ y más) en los campos numéricos<br /> </li>
      <li>Al utilizar la combinación Mayús+alfanumérico. </li>
      <li>Al usar los campos de fecha y hora.</li>
     </ul>
@@ -67,7 +63,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
     <ul>
      <li>Al seleccionar o reemplazar textos</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir caracteres especiales (por ejemplo, $, (,), &amp;, @, etc.) en los campos numéricos<br /> </li>
+     <li>Al escribir caracteres especiales (por ejemplo, $ o , o &amp; o @ y más) en los campos numéricos<br /> </li>
      <li>Al utilizar la combinación Mayús+alfanumérico. </li>
      <li>Al usar los campos de fecha y hora.</li>
     </ul> <p>No es compatible la configuración del valor mediante script.</p> </td>
@@ -318,12 +314,12 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>x</td>
-   <td>Indica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
+   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica la coordenada Y del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
+   <td>Especifica la coordenada Y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
@@ -446,12 +442,12 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>x</td>
-   <td>Indica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
+   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica la coordenada Y del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
+   <td>Especifica la coordenada Y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
@@ -466,7 +462,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>presence</td>
-   <td>Indica la visibilidad de un objeto.</td>
+   <td>Especifica la visibilidad de un objeto.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
@@ -726,7 +722,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>presence</td>
-   <td>Indica la visibilidad de un objeto.</td>
+   <td>Especifica la visibilidad de un objeto.</td>
    <td> </td>
   </tr>
   <tr>
@@ -939,12 +935,12 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>x</td>
-   <td>Indica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
+   <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
    <td>y</td>
-   <td>Especifica la coordenada Y del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
+   <td>Especifica la coordenada Y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con el diseño posicionado.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
@@ -964,7 +960,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>presence</td>
-   <td>Indica la visibilidad de un objeto.</td>
+   <td>Especifica la visibilidad de un objeto.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1109,7 +1105,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
 
 | **Propiedad** | **Descripción** | **Excepción** |
 |---|---|---|
-| presence | Indica la visibilidad de un objeto. | Ninguno |
+| presence | Especifica la visibilidad de un objeto. | Ninguno |
 
 ## FormCalc {#formcalc}
 

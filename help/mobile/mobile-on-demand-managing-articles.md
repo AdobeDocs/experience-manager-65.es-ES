@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 1%
@@ -118,7 +118,7 @@ Flujo de trabajo general para eliminar un artículo:
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
 1. Seleccione el artículo que desea eliminar en la **Administrar artículos** mosaico.
-1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
+1. Asegúrese de que esté seleccionado en la lista; seleccione otros para eliminarlos según sea necesario.
 1. Clic **Eliminar** de la barra de acciones.
 1. AEM Seleccione si desea eliminar de la aplicación de Adobe y de Mobile On-Demand en la lista de dispositivos de la aplicación.
 1. Haga clic en **Eliminar**.
