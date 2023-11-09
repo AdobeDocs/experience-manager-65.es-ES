@@ -7,9 +7,9 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3260'
 ht-degree: 15%
 
 ---
@@ -199,7 +199,7 @@ Adobe Asset Link ofrece una buena compatibilidad con este caso de uso:
 * Además, como el recurso se encuentra en la cuenta de Creative Cloud, también está disponible en otros dispositivos que el usuario pueda tener (por ejemplo, se puede abrir o editar en una aplicación móvil de Creative Cloud) y se puede compartir con otros usuarios de Creative Cloud para colaborar.
 * Cuando el usuario creativo haya terminado con los cambios, puede ejecutar una operación de protección en ese archivo en su aplicación Creative Cloud, con un comentario opcional. El recurso correspondiente en [!DNL Experience Manager] se han creado versiones y actualizado en con el nuevo binario. [!DNL Experience Manager] Los usuarios de, como los especialistas en marketing o los usuarios de LOB, tienen acceso a los cambios de recursos importantes o a los hitos a través de [!DNL Experience Manager] IU de cronología de recursos.
 
-[!DNL Experience Manager] la aplicación de escritorio proporciona un recurso compartido de red para los recursos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan en [!DNL Experience Manager] automáticamente después de un breve rato. Con esta configuración, los ahorros frecuentes durante la fase de trabajo en curso se cargarían todos en [!DNL Experience Manager] y versiones, lo que crea una gran cantidad de tráfico de red y posibles desafíos de escalabilidad, sin mencionar versiones innecesarias en [!DNL Experience Manager].
+[!DNL Experience Manager] la aplicación de escritorio proporciona un recurso compartido de red para los recursos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan en [!DNL Experience Manager] automáticamente después de un breve rato. Con esta configuración, los ahorros frecuentes durante la fase de trabajo en curso se cargarían todos en [!DNL Experience Manager] y con versiones, lo que crea numerosos desafíos de tráfico de red y de escalabilidad potencial, sin mencionar las versiones innecesarias en [!DNL Experience Manager].
 
 El método recomendado aquí es utilizar una opción en [!DNL Experience Manager] aplicación de escritorio para desactivar las actualizaciones automatizadas y cargar cambios en los recursos a [!DNL Experience Manager] manualmente, con la acción cargar cambios en la interfaz de usuario del estado de los recursos de la aplicación.
 

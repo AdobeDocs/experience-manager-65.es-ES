@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3616'
 ht-degree: 9%
@@ -220,7 +220,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    >[!NOTE]
    >
-   >Al añadir opciones, si hace clic en el campo desplegable, la interfaz se distorsiona y la opción de eliminación de las opciones deja de funcionar. No haga clic en el menú desplegable hasta que guarde los cambios. Si tiene este problema, guarde el esquema y ábralo de nuevo para seguir editando.
+   >Al añadir opciones, si hace clic en el campo desplegable, la interfaz se distorsiona y la opción de eliminación de las opciones deja de funcionar. No haga clic en la lista desplegable hasta que guarde los cambios. Si tiene este problema, guarde el esquema y ábralo de nuevo para seguir editando.
 
 1. (Opcional) Añada los demás campos obligatorios. Por ejemplo, formato, códec y duración para el vídeo de tipo de recurso.
 

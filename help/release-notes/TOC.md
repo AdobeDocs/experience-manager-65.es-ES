@@ -7,10 +7,10 @@ breadcrumb-title: Notas de la versión
 user-guide-description: AEM Obtenga información acerca de las últimas funciones de la versión 6.5 de en las notas de la versión.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: f618dbaafbbcd1511ea2a678db398b4bcbfda366
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 42%
+source-wordcount: '71'
+ht-degree: 43%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 42%
 + [Notas de la versión de AEM 6.5](home.md)
 + [Notas de la versión actual](release-notes.md)
 + [Notas de la versión anterior]{#service-pack}
+   + [6.5.18](previous/6.5.18.md)
    + [6.5.17](previous/6.5.17.md)
    + [6.5.16](previous/6.5.16.md)
    + [6.5.15](previous/6.5.15.md)

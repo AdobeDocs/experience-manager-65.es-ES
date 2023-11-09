@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4519'
+source-wordcount: '4520'
 ht-degree: 8%
 
 ---
@@ -114,7 +114,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
   </tr>
   <tr>
    <td><strong>Imagen panorámica</strong></td>
-   <td><p>Los visores de imagen panorámica y de realidad virtual panorámica procesan imágenes panorámicas esféricas para sumergir a los usuarios en una experiencia de visualización de 360° de una habitación, propiedad, ubicación o paisaje.</p> <p>Para que una imagen cargada pueda considerarse como un panorama esférico, debe tener uno o ambos de los siguientes elementos:</p>
+   <td><p>Los visores de imagen panorámica y de realidad virtual panorámica representan imágenes panorámicas esféricas para sumergir a los usuarios en una experiencia de visualización de 360 grados de una habitación, propiedad, ubicación o paisaje.</p> <p>Para que una imagen cargada pueda considerarse como un panorama esférico, debe tener uno o ambos de los siguientes elementos:</p>
     <ul>
      <li>Una relación de aspecto de 2:1.</li>
      <li>Etiquetado con las palabras clave <code>equirectangular</code>, o <code>spherical</code> y <code>panorama</code>, o <code>spherical </code>y <code>panoramic</code>. Consulte <a href="/help/sites-authoring/tags.md">Uso de etiquetas</a>.</li>

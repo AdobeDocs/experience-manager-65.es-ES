@@ -4,9 +4,9 @@ description: Instale, configure y personalice un paquete de demostración de AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '4611'
+source-wordcount: '4603'
 ht-degree: 63%
 
 ---
@@ -34,8 +34,8 @@ Este paquete contiene la configuración de nube compatible con las siguientes ve
 | API de Rest | de Adobe Analytics v1.4 | **Compatibilidad** |
 **Consideraciones sobre la instalación del paquete:**
 
-* Se espera que el paquete se instale en un servidor limpio, libre de otros paquetes de demostración o versiones de paquetes de demostración más antiguas
-* Se espera que el paquete se instale en un servidor OSGI que se ejecute en el modo Autor.
+* Instale el paquete en un servidor limpio, sin otros paquetes de demostración o versiones de paquetes de demostración más antiguas.
+* Instale el paquete en un servidor OSGI que se ejecute en el modo Autor.
 
 ### ¿Qué incluye este paquete? {#what-does-this-package-include}
 

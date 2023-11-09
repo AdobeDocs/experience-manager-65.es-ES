@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '6163'
 ht-degree: 96%
@@ -552,7 +552,7 @@ Aparecerá el cuadro de diálogo Revertir herencia.
 
 ![revertinheritance](assets/revertinheritance.png)
 
-Si es necesario, seleccione **[!UICONTROL Sincronizar la página después de revertir la herencia]**. Seleccione esta opción para sincronizar toda la comunicación interactiva. Si no selecciona esta opción, solo se sincronizará el área de destino correspondiente al restablecer la herencia.
+Si es necesario, seleccione **[!UICONTROL Sincronizar La Página Después De Revertir La Herencia]**. Seleccione esta opción para sincronizar toda la comunicación interactiva. Si no selecciona esta opción, solo se sincronizará el área de destino correspondiente al restablecer la herencia.
 
 Pulse **[!UICONTROL Sí]**.
 

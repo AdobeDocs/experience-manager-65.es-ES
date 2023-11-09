@@ -3,10 +3,10 @@ title: Introducción y descripción general
 description: Introducción y descripción general de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) es el patrón recomendado de Adobe para integrar y ampliar los servicios de comercio de Adobe Commerce y otras soluciones de comercio de terceros con Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 94%
+source-wordcount: '867'
+ht-degree: 92%
 
 ---
 
@@ -42,7 +42,7 @@ Esta complejidad abre la puerta a posibles fallos, un incremento del coste total
 
 ## CIF apoya con éxito a sus clientes desde 2013
 
-Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para un proyecto de Content and Commerce con éxito. Esto aporta valor a la TI y a las empresas hoy y en el futuro. Los proyectos recientes de los clientes describen CIF como un “Gran acelerador y un gran ahorro de tiempo con mucho valor”.
+Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para un proyecto de Content and Commerce con éxito. Esto aporta valor a la TI y a las empresas hoy y en el futuro. CIF Los proyectos recientes de clientes describen a los clientes como &quot;un gran acelerador y un gran ahorro de tiempo con mucho valor&quot;.
 
 ## Beneficios del CIF {#cif-benefits}
 

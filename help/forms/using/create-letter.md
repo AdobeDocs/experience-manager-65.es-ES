@@ -9,10 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3979'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -475,5 +475,5 @@ Puede utilizar una plantilla de carta existente para crear rápidamente una plan
 1. En la página Cartas, seleccione una o varias cartas. La interfaz de usuario muestra el icono Copiar.
 1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar. Si lo desea, también puede abrir una carpeta antes de pegar el fragmento. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Pulse Pegar. Aparecerá el cuadro de diálogo Pegar. Si está copia y pega las cartas en el mismo lugar, el sistema asignará automáticamente nombres y títulos a las copias nuevas de las cartas, pero podrá editar sus títulos y nombres.
-1. Si es necesario, edite el título y el nombre con los que desea guardar la copia de la carta.
+1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia de la carta.
 1. Pulse Pegar. Se creará la copia de la carta. Ahora puede realizar los cambios necesarios en la carta recién creada.

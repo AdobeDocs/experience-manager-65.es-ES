@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10221'
 ht-degree: 0%
@@ -585,7 +585,7 @@ La configuración siguiente se encuentra en el área Configuración general de l
 
 **Host SMTP:** El nombre de host del servidor SMTP. El servidor SMTP gestiona los avisos de correo electrónico salientes para registrar y activar cuentas de usuario invitadas.
 
-Si lo requiere el host SMTP, escriba la información necesaria en los cuadros Nombre de cuenta de servidor SMTP y Contraseña de cuenta de servidor SMTP para conectarse al servidor SMTP. Algunas organizaciones no aplican este requisito. Si necesita información, consulte al administrador del sistema.
+Si es necesario para el host SMTP, escriba la información necesaria en los cuadros Nombre de cuenta de servidor SMTP y Contraseña de cuenta de servidor SMTP para conectarse al servidor SMTP. Algunas organizaciones no aplican este requisito. Si necesita información, consulte al administrador del sistema.
 
 **Nombre de clase de socket del servidor SMTP:** Nombre de clase de socket para el servidor SMTP. Por ejemplo, javax.net.ssl.SSLSocketFactory.
 

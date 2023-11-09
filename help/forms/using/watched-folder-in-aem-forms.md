@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 96%
@@ -489,7 +489,7 @@ Para un punto final de carpeta inspeccionada, los usuarios pueden iniciar operac
 
 En los puntos finales de carpeta inspeccionada, si un trabajo requiere un solo archivo de entrada, el usuario puede copiar ese archivo en la raíz de la carpeta inspeccionada.
 
-Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una carpeta fuera de la jerarquía de carpetas inspeccionadas que contenga todos los archivos necesarios. Esta nueva carpeta debe incluir los archivos de entrada (y opcionalmente un archivo DDX si el proceso lo requiere). Una vez construida la carpeta de trabajo, el usuario la copia en la carpeta de entrada de la carpeta inspeccionada.
+Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una carpeta fuera de la jerarquía de carpetas inspeccionadas que contenga todos los archivos necesarios. Esta nueva carpeta debe incluir los archivos de entrada (y opcionalmente un archivo DDX si el proceso lo necesita). Una vez construida la carpeta de trabajo, el usuario la copia en la carpeta de entrada de la carpeta inspeccionada.
 
 >[!NOTE]
 >

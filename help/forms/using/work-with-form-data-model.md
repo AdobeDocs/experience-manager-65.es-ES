@@ -10,10 +10,10 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4181'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -186,7 +186,7 @@ En este ejemplo, los detalles asociados con **4367655678**, como el valor del ar
 
 Seleccione **[!UICONTROL Atributo de perfil de usuario]** del menú desplegable **[!UICONTROL Enlace a]** e indique el nombre del atributo en el campo **[!UICONTROL Valor de enlace]**. Los detalles del usuario que ha iniciado sesión en la instancia de AEM se recuperan de la fuente de datos en función del nombre del atributo.
 
-El nombre de atributo especificado en el campo **[!UICONTROL Valor de enlace]** debe incluir la ruta de enlace completa hasta el nombre del atributo del usuario. Abra la siguiente URL para acceder a los detalles del usuario sobre CRXDE:
+El nombre de atributo especificado en la variable **[!UICONTROL Valor de enlace]** Este campo debe incluir la ruta de enlace completa hasta el nombre del atributo del usuario. Abra la siguiente URL para acceder a los detalles del usuario sobre CRXDE:
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 

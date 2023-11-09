@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4834'
 ht-degree: 77%
@@ -125,7 +125,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 * Puede [crear una carpeta para las plantillas](#creating-a-template-folder-admin), si lo necesita.
 * [Creación de una plantilla](#creatinganewtemplateauthor), que inicialmente está vacío
 
-* [Defina propiedades adicionales](#definingtemplatepropertiesauthor) para la plantilla, si es necesario
+* [Definición de propiedades adicionales](#definingtemplatepropertiesauthor) para la plantilla si es necesario
 * [Editar la plantilla](#editingtemplates) para definir lo siguiente:
 
    * [Estructura](#editingatemplatestructureauthor): contenido predefinido que no se puede cambiar en las páginas creadas con la plantilla.

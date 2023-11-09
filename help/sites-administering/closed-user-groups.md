@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '6816'
+source-wordcount: '6808'
 ht-degree: 0%
 
 ---
@@ -798,7 +798,7 @@ Este cambio de las propiedades JCR residuales a una política de control de acce
 
 **Nodo De Destino Definido Por La Directiva**
 
-Se espera que las políticas de CUG se creen en el nodo JCR que define el subárbol que estará sujeto a acceso de lectura restringido. AEM Es probable que esta sea una página de en caso de que se espere que el CUG afecte a todo el árbol.
+Cree políticas de CUG en el nodo JCR que definan el subárbol que debe estar sujeto al acceso de lectura restringido. AEM Es probable que esta sea una página de en caso de que se espere que el CUG afecte a todo el árbol.
 
 Tenga en cuenta que colocar la directiva CUG solo en el nodo jcr:content ubicado debajo de una página determinada solo restringirá el acceso al contenido s.str de una página determinada, pero no surtirá efecto en ninguna página del mismo nivel o secundaria. Este puede ser un caso de uso válido y se puede lograr con un editor de repositorios que permita aplicar contenido de acceso de grano fino. Sin embargo, contrasta con la implementación anterior, en la que al colocar una propiedad cq:cugEnabled en el nodo jcr:content se reasignaba internamente al nodo de la página. Esta asignación ya no se realiza.
 
@@ -839,7 +839,7 @@ En cuanto a la `granite:loginPath` En este caso, se requiere el mismo privilegio
 
 #### Nodo De Destino Definido Por Tipo De Mixin {#target-node-defined-by-mixin-type}
 
-Se espera que los requisitos de autenticación se creen en el nodo JCR que define el subárbol que debe estar sujeto al inicio de sesión obligatorio. AEM Es probable que esta sea una página de en caso de que se espere que el CUG afecte a todo el árbol y, en consecuencia, la interfaz de usuario de la nueva implementación agregará el tipo de mezcla de requisito de autenticación en el nodo de página.
+Cree requisitos de autenticación en el nodo JCR que definan el subárbol que debe estar sujeto al inicio de sesión obligatorio. AEM Es probable que esta sea una página de en caso de que se espere que el CUG afecte a todo el árbol y, en consecuencia, la interfaz de usuario de la nueva implementación agregará el tipo de mezcla de requisito de autenticación en el nodo de página.
 
 Colocar la directiva CUG solo en el nodo jcr:content ubicado debajo de una página determinada solo restringirá el acceso al contenido, pero no entrará en vigor en el propio nodo de la página ni en ninguna página secundaria.
 

@@ -1,18 +1,14 @@
 ---
 title: Copia de seguridad y restauración
-seo-title: Backup and Restore
 description: AEM Obtenga información sobre cómo realizar copias de seguridad y restaurar el contenido y las configuraciones de la.
-seo-description: Learn how to backup and restore your AEM content.
-uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -232,7 +228,7 @@ Los archivos se copian en el directorio de destino en cuatro fases:
    * Fase A: todo se copia excepto el almacén de datos (con retraso).
    * Fase B: solo se copia el almacén de datos (con retraso).
 
-1. En la segunda fase de copia (indicador de progreso 63 % - 65,8 % al crear un archivo zip o 90 % - 94 % si no se crea ningún archivo zip), solo se copian los archivos creados o modificados en el directorio de origen desde que se inició la primera fase de copia. Según la actividad del repositorio, esto puede variar desde la ausencia total de archivos hasta un número significativo de archivos (porque la primera fase de copia de archivos suele llevar mucho tiempo). El proceso de copia es similar al de la primera fase (Fase A y Fase B con retraso).
+1. En la segunda fase de copia (indicador de progreso 63 % - 65,8 % al crear un archivo zip o 90 % - 94 % si no se crea ningún archivo zip), solo se copian los archivos creados o modificados en el directorio de origen desde que se inició la primera fase de copia. Según la actividad del repositorio, esto puede variar desde la ausencia total de archivos hasta un número significativo de archivos (porque la primera fase de copia de archivos suele ser la que más tiempo tarda). El proceso de copia es similar al de la primera fase (Fase A y Fase B con retraso).
 1. En la tercera fase de copia (indicador de progreso 65,8% - 68,6% al crear un archivo zip o 94% - 98% si no se crea ningún archivo zip) solo se copian los archivos que se crearon o modificaron en el directorio de origen desde que se inició la segunda fase de copia. Según la actividad del repositorio, puede que no haya archivos que copiar o que haya un número muy pequeño de archivos (porque la segunda fase de copia de archivos suele ser rápida). El proceso de copia es similar al de la segunda fase: Fase A y Fase B, pero sin demora.
 1. Las fases de copia de archivos de uno a tres se realizan simultáneamente mientras se ejecuta el repositorio. Solo se copian los archivos creados o modificados en el directorio de origen desde que se inició la tercera fase de copia. Según la actividad del repositorio, puede que no haya archivos para copiar o que haya un número muy, muy pequeño de archivos (porque la segunda fase de copia de archivos suele ser muy rápida). Indicador de progreso 68,6% - 70% al crear un archivo zip o 98% - 100% si no se crea ningún archivo zip. El proceso de copia es similar al de la tercera fase.
 1. Según el objetivo:

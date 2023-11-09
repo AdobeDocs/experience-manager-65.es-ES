@@ -12,10 +12,10 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 99%
+source-wordcount: '2003'
+ht-degree: 97%
 
 ---
 
@@ -116,7 +116,7 @@ Existen preguntas más frecuentes (FAQ) sobre la presentación, la compatibilida
 
 1. ¿Por qué los formularios HTML son más grandes que los PDF?
 
-   Respuesta: Para procesar un XDP en un formulario HTML, se requieren muchas estructuras de datos intermedias y objetos como dom de formulario, dom de datos y dom de presentación.
+   Respuesta: Se requieren numerosas estructuras de datos intermedias y objetos como dom de formulario, dom de datos y dom de diseño para procesar un XDP en un formulario HTML.
 
    Para los formularios PDF, Adobe Acrobat tiene un motor XTG integrado para crear objetos y estructuras de datos intermedias. Acrobat también se encarga del diseño y de los scripts.
 

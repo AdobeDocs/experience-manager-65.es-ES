@@ -1,17 +1,15 @@
 ---
 title: Edición del contenido de página
 description: El contenido se añade mediante componentes que se pueden arrastrar hasta la página. Después estos se pueden editar local, mover o eliminar.
-uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1831'
 ht-degree: 18%
 
 ---
@@ -110,7 +108,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
    Se creará un componente, adecuado para el tipo de recurso, en la ubicación requerida; contendrá el recurso seleccionado.
 
-1. [Edite](#editmovecopypastedelete) el componente, si es necesario.
+1. [Editar](#editmovecopypastedelete) Seleccione el componente si es necesario.
 
 ## Edición de un componente (contenido y propiedades) {#editing-a-component-content-and-properties}
 
@@ -227,7 +225,7 @@ Para ediciones a mayor escala de la misma frase a **[Buscar y reemplazar](/help/
 
 ## Bloquear una página   {#locking-a-page}
 
-AEM permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
+AEM permite bloquear páginas para que nadie más pueda cambiar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando necesita congelar una página durante un corto tiempo.
 
 >[!CAUTION]
 >

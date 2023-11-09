@@ -2,10 +2,10 @@
 title: Creación de una Guía de inicio rápido de configuración sin encabezado
 description: AEM Cree una configuración como primer paso para empezar a utilizar sin encabezado en la versión 6.5 de la.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 69%
+ht-degree: 67%
 
 ---
 

@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '1975'
 ht-degree: 8%
 
 ---
@@ -102,7 +102,7 @@ Consulte [Dynamic Media: Formatos de imagen rasterizada compatibles](/help/asset
 
 A continuación se indican algunas prácticas recomendadas en las imágenes de conjuntos de giros. En general, cuantas más imágenes tenga en un conjunto de giros, mejor será el efecto de giro de la imagen. Sin embargo, incluir muchas imágenes en el conjunto también aumenta la cantidad de tiempo que tardan las imágenes en cargarse. El Experience Manager recomienda estas directrices para grabar imágenes para utilizarlas en conjuntos de giros:
 
-* Como mínimo, utilice 8-12 imágenes en un conjunto de giros unidimensional y 16-24 imágenes en un conjunto de giros bidimensional. Es necesario un mínimo de 8 imágenes para poder girar 360°. Los conjuntos de giros unidimensionales son más comunes, ya que la creación de conjuntos de giros bidimensionales requiere mucha mano de obra.
+* Como mínimo, utilice 8-12 imágenes en un conjunto de giros unidimensional y 16-24 imágenes en un conjunto de giros bidimensional. Se necesita un mínimo de 8 imágenes para poder girar 360 grados. Los conjuntos de giros unidimensionales son más comunes, ya que la creación de conjuntos de giros bidimensionales requiere mucha mano de obra.
 * Utilice un formato sin pérdidas; se recomienda TIFF y PNG.
 * Enmascara todas las imágenes de modo que el elemento aparezca sobre un fondo blanco puro u otro fondo de alto contraste. Opcionalmente, puede añadir sombras.
 * Asegúrese de que los detalles del producto estén bien iluminados y enfocados.

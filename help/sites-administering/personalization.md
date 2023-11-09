@@ -1,18 +1,14 @@
 ---
 title: Personalización
-seo-title: Personalization
 description: Obtenga información acerca de la personalización en Adobe Experience Manager para proporcionar al usuario un entorno personalizado que muestre contenido dinámico.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 2%
 
 ---
@@ -115,7 +111,7 @@ Al utilizar la personalización, tenga en cuenta lo siguiente:
 
 * La personalización que se realiza realizando un seguimiento del comportamiento del usuario o estableciendo reglas basadas en el perfil del usuario debe ser precisa y lógica.
 * No hay nada más frustrante para el usuario que tener contenido forzado o denegado debido a la lógica inexacta de una regla.
-* Por lo tanto, las reglas deben estar bien pensadas, con los requisitos del usuario en primer plano. Esto puede requerir mucho esfuerzo y no se debe subestimar; la definición de reglas empresariales a menudo supera el esfuerzo técnico al implementar la personalización.
+* Por lo tanto, las reglas deben estar bien pensadas, con los requisitos del usuario en primer plano. Esto puede requerir mucho esfuerzo y no se debe subestimar; definir las reglas empresariales a menudo supera el esfuerzo técnico al implementar la personalización.
 
 #### Cuándo usarlas {#when-to-use}
 

@@ -3,7 +3,7 @@ title: Creación y sincronización de Live Copies
 description: Obtenga información sobre cómo crear y sincronizar Live Copies en Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4227'
 ht-degree: 46%
@@ -412,7 +412,7 @@ Una vez [suspendida](#suspending-inheritance-from-page-properties), la acción *
 
 ![Reanudar](assets/chlimage_1-229.png)
 
-Cuando se selecciona, se muestra el cuadro de diálogo. Puede seleccionar una sincronización, si es necesario, y confirmar la acción.
+Cuando se selecciona, se muestra el cuadro de diálogo. Si es necesario, puede seleccionar una sincronización y confirmar la acción.
 
 #### Reanudación de una página Live Copy desde la Información general de Live Copy {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -462,7 +462,7 @@ Para especificar o cambiar la profundidad:
 
 ### Cancelación de la herencia de un componente {#cancelling-inheritance-for-a-component}
 
-Cancele la herencia de Live Copy de un componente para que ya no se sincronice con el componente de origen. Si es necesario, puede habilitar la herencia en un momento posterior.
+Cancele la herencia de Live Copy de un componente para que ya no se sincronice con el componente de origen. Puede habilitar la herencia en un momento posterior si es necesario.
 
 >[!NOTE]
 >

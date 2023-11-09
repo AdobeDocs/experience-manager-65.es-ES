@@ -6,10 +6,10 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1672'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -93,7 +93,7 @@ La búsqueda de procesos/tareas se utiliza para definir filtros para consultar i
 Después de crear una consulta, utilice las opciones de la esquina superior derecha del panel **Crear filtro** para lo siguiente:
 
 * **Cancelar**: cancelar los cambios y volver al panel **Mis filtros**.
-* **Ejecutar**: ejecute la consulta actual para ver y / o comprobar los resultados. En este caso, no es necesario guardar la consulta antes de ejecutarla. Puede comprobar los resultados, realizar cambios si fuera necesario y guardar la consulta cuando esté satisfecho con el resultado.
+* **Ejecutar**: ejecute la consulta actual para ver y / o comprobar los resultados. En este caso, no es necesario guardar la consulta antes de ejecutarla. Puede comprobar los resultados, realizar cambios si es necesario y, a continuación, guardar la consulta cuando esté satisfecho con el resultado.
 * **Guardar**: guarde el filtro. El filtro se puede ver y ejecutar desde el panel **Mis filtros**.
 
 ### Opciones en el panel Mis filtros {#options-in-my-filters-panel}

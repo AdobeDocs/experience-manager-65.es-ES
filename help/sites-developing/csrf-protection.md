@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '247'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ El marco de trabajo utiliza tokens para garantizar que la solicitud del cliente 
 
 ### Dependencias {#dependencies}
 
-Cualquier componente que dependa de `granite.jquery` La dependencia se beneficiará automáticamente del Marco de protección de CSRF. Si este no es el caso de ninguno de los componentes, debe declarar una dependencia a `granite.csrf.standalone` antes de poder utilizar el marco de trabajo.
+Cualquier componente que dependa de `granite.jquery` La dependencia de puede beneficiarse del Marco de protección de CSRF automáticamente. Si no es así, para cualquiera de los componentes, debe declarar una dependencia a `granite.csrf.standalone` antes de poder utilizar el marco de trabajo.
 
 ### Duplicación de la clave criptográfica {#replicating-crypto-keys}
 

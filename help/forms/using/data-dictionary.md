@@ -10,10 +10,10 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '3840'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 
 >[!NOTE]
 >
->Para varias cartas que requieran elementos similares, puede crear un diccionario de datos común. Sin embargo, un diccionario de datos grandes con un gran número de elementos puede provocar problemas de rendimiento al utilizarlo y al cargar los elementos, como en cartas y fragmentos de documento. Si tiene problemas de rendimiento, intente crear diccionarios de datos independientes para cartas diferentes.
+>Para varias cartas que requieran elementos similares, puede crear un diccionario de datos común. Sin embargo, un diccionario de datos de gran tamaño con un gran número de elementos puede provocar problemas de rendimiento al utilizarlo y al cargar los elementos, como en cartas y fragmentos de documento. Si tiene problemas de rendimiento, intente crear diccionarios de datos independientes para cartas diferentes.
 
 1. Seleccione **Forms** > **Diccionarios de datos**.
 1. Pulse **Crear diccionario de datos**.
@@ -120,7 +120,7 @@ Para crear rápidamente uno o más diccionarios de datos con propiedades y eleme
 1. En la lista de diccionarios de datos, seleccione los diccionarios de datos correspondientes. La interfaz de usuario muestra el icono Copiar.
 1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar.
 1. Pulse Pegar. Aparecerá el cuadro de diálogo Pegar. El sistema asignará automáticamente nombres y títulos a los nuevos diccionarios de datos.
-1. Si es necesario, edite el título y el nombre con los que desea guardar la copia del diccionario de datos.
+1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia del diccionario de datos.
 1. Pulse Pegar. Se creará una copia del diccionario de datos. Ahora puede realizar los cambios necesarios en el diccionario de datos recién creado.
 
 ## Consulte los fragmentos del documento o documentos que hacen referencia a un elemento del diccionario de datos {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}

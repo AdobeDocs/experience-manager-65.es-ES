@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 4%
@@ -610,9 +610,9 @@ Los siguientes ajustes están disponibles para el servicio Signature.
 
 **URL del servidor TSP:** Dirección URL del proveedor de marca de tiempo predeterminado. Se utiliza solo si se proporciona algún valor válido. No hay valor predeterminado.
 
-**Nombre de usuario del servidor TSP:** El nombre de usuario si lo requiere el proveedor de marca de tiempo. Se utiliza solo si se proporciona algún valor válido para la dirección URL. No hay valor predeterminado.
+**Nombre de usuario del servidor TSP:** El nombre de usuario si lo necesita el proveedor de marca de tiempo. Se utiliza solo si se proporciona algún valor válido para la dirección URL. No hay valor predeterminado.
 
-**Contraseña del servidor TSP:** La contraseña del nombre de usuario anterior si la requiere el proveedor de la marca de tiempo. Se utiliza solo si se proporciona algún valor válido para la dirección URL y el nombre de usuario. No hay valor predeterminado.
+**Contraseña del servidor TSP:** La contraseña del nombre de usuario anterior si es necesario por el proveedor de marca de tiempo. Se utiliza solo si se proporciona algún valor válido para la dirección URL y el nombre de usuario. No hay valor predeterminado.
 
 **Algoritmo hash de solicitud:** Especifica el algoritmo hash que se utilizará al crear la solicitud para el proveedor de marca de tiempo. El valor predeterminado es SHA1.
 

@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Por ejemplo:
 
 >[!NOTE]
 >
->Los vínculos siempre hacen referencia a la instancia de publicación. Están pensados para que los consuman terceros, por lo que siempre se llamará al vínculo desde la instancia de publicación, no desde el autor.
+>Los vínculos siempre hacen referencia a la instancia de publicación. Los consumen terceros, por lo que siempre se llama al vínculo desde la instancia de publicación, no desde la instancia de autor.
 >
 >Para obtener más información, consulte [Externalización de direcciones URL](/help/sites-developing/externalizer.md).
 
