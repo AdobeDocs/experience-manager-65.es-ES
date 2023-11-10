@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1803'
 ht-degree: 5%
 
 ---
@@ -73,7 +73,7 @@ AEM Partiendo de esta base, también ofrece varias funciones de nivel de aplicac
 * **Sitios web**
 * **Aplicaciones móviles**
 * **Publicaciones digitales**
-* **Forms**
+* **Formularios y documentos**
 * **Recursos digitales**
 * **Communities**
 * **Comercio en línea**
@@ -81,6 +81,10 @@ AEM Partiendo de esta base, también ofrece varias funciones de nivel de aplicac
 Por último, los clientes pueden utilizar estos componentes básicos de infraestructura y de nivel de aplicación para crear soluciones personalizadas mediante la creación de aplicaciones propias.
 
 AEM El servidor de la es **Basado en Java** y se ejecuta en la mayoría de los sistemas operativos compatibles con esa plataforma. AEM Toda la interacción del cliente con el cliente se realiza a través de un **explorador web**.
+
+>[!NOTE]
+>
+>La función Adaptive Forms AEM, disponible en QuickStart de la versión 6.5 de la versión, está diseñada únicamente para fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad de Forms adaptable requiere una licencia adecuada.
 
 ### Escenarios de implementación habituales {#typical-deployment-scenarios}
 
