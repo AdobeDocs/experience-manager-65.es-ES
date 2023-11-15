@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 68%
+source-wordcount: '221'
+ht-degree: 63%
 
 ---
 
@@ -25,9 +25,9 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 ## Editar métodos abreviados de teclado {#editing-keyboard-shortcuts}
 
-| Lugar de residencia | Acceso directo | Descripción |
+| Lugar de residencia | Atajo | Descripción |
 |---|---|---|
-| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista previa** y el [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.).* |
+| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Previsualizar** y el seleccionado actualmente [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (por ejemplo, **Editar**, **Diseño**, etc.) |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |

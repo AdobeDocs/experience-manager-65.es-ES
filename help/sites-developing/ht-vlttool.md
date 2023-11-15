@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2709'
 ht-degree: 2%
 
 ---
@@ -944,4 +944,4 @@ La carpeta local se sincronizará con el repositorio. La sincronización es bidi
 
 >[!NOTE]
 >
->La función de sincronización VLT solo admite archivos y carpetas simples, pero detecta los archivos serializados de Vault especiales (.content.xml, dialog.xml, etc.) y los ignora de forma silenciosa. Por lo tanto, es posible utilizar la sincronización de Vault en una extracción de Vault predeterminada.
+>La función de sincronización de VLT solo admite archivos y carpetas simples, pero detecta los archivos serializados de Vault especiales (.content.xml, dialog.xml, etc.) y los ignora de forma silenciosa. Por lo tanto, es posible utilizar la sincronización de Vault en una extracción de Vault predeterminada.
