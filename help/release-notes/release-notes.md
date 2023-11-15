@@ -2,10 +2,10 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
+source-git-commit: 7c5d45788583cce3403b8beca0c122a9ddf1ca49
 workflow-type: tm+mt
-source-wordcount: '3433'
-ht-degree: 1%
+source-wordcount: '3613'
+ht-degree: 2%
 
 ---
 
@@ -41,11 +41,19 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 **Funciones principales**
 
-* A
+* Recursos, Dynamic Media - [Compatibilidad con subtítulos múltiples y pistas de audio múltiple para vídeos en Dynamic Media](/help/assets/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para toda la audiencia global. Puede personalizar un solo vídeo principal publicado a una audiencia global en varios idiomas y adherirse a las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+
+* Recursos: desde los resultados de búsqueda, ahora puede navegar a la ubicación de la carpeta que contiene un recurso para permitirle realizar varias tareas de administración de recursos. (ASSETS-23182)
 
 **Mejoras clave**
 
-* S
+* El Selector de estrella de Sites en Fragmentos de contenido ha mejorado el rendimiento. (SITES-14092)
+
+* Se habilitó al usuario del Editor de páginas de sitios/Componente de imagen para hacer referencia a los recursos desde el Cloud Service de recursos remoto. (SITES-13448, SITES-13433)
+
+* Para encontrar rápidamente un proyecto en la Vista de lista, donde puede tener muchos proyectos en el sistema, el Adobe ahora admite la ordenación del lado del servidor. Los nodos del proyecto se ordenan en el servidor en función de la columna seleccionada por el usuario antes de procesarlos en la interfaz de usuario. (NPR-41027)
+
+* AEM 6.5.18.0 es compatible con MongoDB 5.0 a 6.0.
 
 **Función en desuso**
 
@@ -57,7 +65,6 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 ### [!DNL Sites]{#sites-6519}
 
-* U
 
 #### Accesibilidad{#sites-accessibility-6519}
 
@@ -285,7 +292,7 @@ Para obtener instrucciones para instalar el Service Pack en Experience Manager F
 
 >[!NOTE]
 >
->La función de AEM Forms, como Forms adaptable, está disponible en [AEM Inicio rápido de 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), se destinan únicamente a fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms.
+>La función de AEM Forms, como Forms adaptable, está disponible en [AEM Inicio rápido de 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es), se destinan únicamente a fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms.
 
 
 
