@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1652'
 ht-degree: 86%
 
 ---
@@ -178,7 +178,7 @@ Se pueden definir y utilizar selectores personalizados adicionales como parte de
 
 Si desea utilizar el editor in situ de un componente de texto creado en la SPA, se requiere una configuración adicional.
 
-1. Establezca un atributo (puede ser cualquiera) en el elemento contenedor que encierra el texto HTML. Si hay contenido de muestra del WKND Journal, es un `<div>` y el selector que se ha utilizado es `data-rte-editelement`.
+1. Establezca un atributo (puede ser cualquiera) en el elemento contenedor que encierra el texto HTML. Si hay contenido de muestra de WKND Journal, es un `<div>` y el selector que se ha utilizado es `data-rte-editelement`.
 1. Establezca la configuración `editElementQuery` en el componente de texto de AEM correspondiente `cq:InplaceEditingConfig` que apunte a ese selector, por ejemplo, `data-rte-editelement`. Esto permite al editor saber qué elemento de HTML ajusta el texto HTML.
 
 Para ver un ejemplo de cómo se hace, consulte la [Contenido de muestra del WKND Journal.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)

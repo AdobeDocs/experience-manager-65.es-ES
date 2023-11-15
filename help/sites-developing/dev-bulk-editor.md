@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1832'
 ht-degree: 2%
 
 ---
@@ -436,7 +436,7 @@ Se pueden configurar todas las partes del editor en bloque. En la tabla siguient
      <li>cellCls: clase css </li>
      <li>readOnly: true para no poder cambiar el valor </li>
      <li>casilla de verificación: true para definir todas las celdas de la columna como casillas de verificación (valores true/false) </li>
-     <li>forcedPosition: valor entero para especificar dónde se debe colocar la columna en la cuadrícula (entre 0 y el número de columnas-1)<p><br /> </p> </li>
+     <li>forcedPosition: valor entero para especificar dónde se debe colocar la columna en la cuadrícula (entre 0 y 1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>

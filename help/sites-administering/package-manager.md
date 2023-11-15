@@ -8,9 +8,9 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3574'
 ht-degree: 2%
 
 ---
@@ -358,11 +358,11 @@ El Administrador de paquetes puede realizar las siguientes validaciones:
 
 ##### Validar importaciones de paquetes OSGi {#osgi-package-imports}
 
-**Qué se ha comprobado**
+**Qué se marca**
 
 Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi) y extrae su `manifest.xml` AEM (que contiene las dependencias con versiones en las que se basa dicho paquete OSGi) y verifica la instancia de la exporta dichas dependencias con las versiones correctas.
 
-**Cómo se informa de él**
+**Cómo se realiza el informe**
 
 AEM Cualquier dependencia con versiones que la instancia de la instancia de la aplicación no pueda satisfacer se enumera en el registro de actividad del administrador de paquetes.
 
@@ -376,13 +376,13 @@ Para resolver errores debido a paquetes OSGi no satisfechos, se debe ajustar la 
 
 ##### Validar capas {#overlays}
 
-**Qué se ha comprobado**
+**Qué se marca**
 
 AEM Esta validación determina si el paquete que se está instalando contiene un archivo que ya se superpone en la instancia de destino de la.
 
 Por ejemplo, dada una superposición existente en `/apps/sling/servlet/errorhandler/404.jsp`, un paquete que contiene `/libs/sling/servlet/errorhandler/404.jsp`, de forma que cambie el archivo existente en `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Cómo se informa de él**
+**Cómo se informa**
 
 Cualquier superposición de este tipo se describe en el registro de actividad del administrador de paquetes.
 
@@ -400,11 +400,11 @@ Para resolver este problema, el responsable del archivo de superposición en `/a
 
 ##### Validar ACL {#acls}
 
-**Qué se ha comprobado**
+**Qué se marca**
 
 Esta validación comprueba qué permisos se están agregando, cómo se administrarán (combinar/reemplazar) y si los permisos actuales se verán afectados.
 
-**Cómo se informa de él**
+**Cómo se realiza el informe**
 
 Los permisos se describen en el registro de actividad del administrador de paquetes.
 

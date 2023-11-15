@@ -2,9 +2,9 @@
 title: Configuraciones y el explorador de configuración
 description: AEM AEM Comprenda las configuraciones de la y cómo administran la configuración del espacio de trabajo en las instancias de trabajo de.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1483'
 ht-degree: 6%
 
 ---

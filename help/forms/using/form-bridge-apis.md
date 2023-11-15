@@ -1,18 +1,14 @@
 ---
 title: API de Form Bridge para formularios HTML5
-seo-title: Form Bridge APIs for HTML5 forms
 description: Las aplicaciones externas utilizan la API de FormBridge para conectarse al formulario móvil XFA. La API distribuye un evento FormBridgeInitialized en la ventana principal.
-seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
-uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
-discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 97%
+source-wordcount: '939'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +16,7 @@ ht-degree: 97%
 
 Puede utilizar las API de Form Bridge para abrir un canal de comunicación entre los formularios HTML5 basados en XFA y las aplicaciones. Las API de Form Bridge proporcionan una API de **Connect** para crear la conexión.
 
-La API de **Connect** acepta un controlador como argumento. Después de crear correctamente una conexión entre el formulario HTML5 basado en XFA y Form Bridge, se invoca el controlador.
+La API de **Connect** acepta un controlador como argumento. Después de crear correctamente una conexión entre el formulario HTML5 basado en XFA y Form Bridge, se invoca el controlador.
 
 Puede utilizar el siguiente código de ejemplo para crear la conexión.
 

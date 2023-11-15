@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: d370d772-ef4d-4f38-826c-e90d07735822
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Ahora que el código de cliente se ha asociado a la aplicación móvil, cuando e
 
 ### No se pudo entregar el servicio de Adobe Mobile {#adobe-mobile-service-could-service}
 
-Ahora que AMS está configurado, es hora de asociar la aplicación móvil al Tablero móvil de Adobe. En el panel de AEM Mobile, busque Administrar Cloud Service y haga clic en el botón +.
+Ahora que AMS está configurado, es hora de asociar la aplicación móvil al panel de control de Adobe Mobile. En el panel de AEM Mobile, busque Administrar Cloud Service y haga clic en el botón +.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 

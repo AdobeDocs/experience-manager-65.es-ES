@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 0%
@@ -180,7 +180,7 @@ AEM Compatibilidad con los siguientes idiomas de consulta:
 * JCR-SQL2
 * XPath
 
-AEM En el siguiente ejemplo se utiliza el Generador de consultas, ya que es el lenguaje de consulta más utilizado por los desarrolladores de; sin embargo, los mismos principios se aplican a JCR-SQL2 y XPath.
+AEM El siguiente ejemplo utiliza el Generador de consultas como el lenguaje de consulta más común utilizado por los desarrolladores de, aunque los mismos principios se aplican a JCR-SQL2 y XPath.
 
 1. Añada una restricción nodetype para que la consulta se resuelva en un índice de propiedades de Lucene existente.
 

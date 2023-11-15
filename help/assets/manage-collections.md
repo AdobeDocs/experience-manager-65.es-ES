@@ -7,9 +7,9 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2204'
 ht-degree: 14%
 
 ---
@@ -222,7 +222,7 @@ Al descargar una colección, se descarga toda la jerarquía de recursos de la co
 
 ## Creación de colecciones anidadas {#creating-nested-collections}
 
-Puede agregar una colección a otra colección, creando así una colección anidada.
+Puede agregar una colección a otra colección para crear una colección anidada.
 
 1. En la consola Colecciones, seleccione la colección o el grupo de colecciones que desee y haga clic en **[!UICONTROL A la colección]** en la barra de herramientas.
 

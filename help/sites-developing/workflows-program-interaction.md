@@ -1,18 +1,14 @@
 ---
 title: Interactuar con flujos de trabajo mediante programación
-seo-title: Interacting with Workflows Programmatically
 description: Aprenda a interactuar con flujos de trabajo mediante programación en Adobe Experience Manager.
-seo-description: null
-uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2007'
 ht-degree: 1%
 
 ---
@@ -359,7 +355,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completa el elemento de trabajo cuyo URI se envía como parámetro <code>item</code> y avanza la instancia de flujo de trabajo correspondiente a los nodos siguientes, definidos por el parámetro <code>route</code> o <code>backroute</code> si hay que dar un paso atrás.<br /> Si el parámetro <code>delegatee</code> , el elemento de trabajo identificado por el parámetro <code>item</code> se delega al participante especificado.</td>
+   <td>Completa el elemento de trabajo cuyo URI se envía como parámetro <code>item</code> y avanza la instancia de flujo de trabajo correspondiente a los nodos siguientes, definidos por el parámetro <code>route</code> o <code>backroute</code> si hay que volver atrás un paso.<br /> Si el parámetro <code>delegatee</code> , el elemento de trabajo identificado por el parámetro <code>item</code> se delega al participante especificado.</td>
   </tr>
  </tbody>
 </table>

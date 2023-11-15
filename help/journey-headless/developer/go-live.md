@@ -2,9 +2,9 @@
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
 description: AEM En esta parte del Recorrido para desarrolladores sin encabezado de, aprenda a implementar una aplicación sin encabezado en directo.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1874'
 ht-degree: 50%
 
 ---

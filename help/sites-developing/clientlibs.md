@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2853'
 ht-degree: 4%
@@ -36,7 +36,7 @@ La forma estándar de incluir una biblioteca del lado del cliente (es decir, un 
 
 AEM Aunque este enfoque funciona en la práctica, puede dar lugar a problemas cuando las páginas y sus componentes constitutivos se vuelven complejos. En estos casos, existe el peligro de que se incluyan varias copias de la misma biblioteca JS en la salida final del HTML. AEM Para evitarlo y permitir la organización lógica de las bibliotecas del lado del cliente que utiliza el usuario **carpetas de biblioteca del lado del cliente**.
 
-Una carpeta de biblioteca del lado del cliente es un nodo de repositorio de tipo `cq:ClientLibraryFolder`. Es la definición en [Notación CDN](https://jackrabbit.apache.org/node-type-notation.html) es
+Una carpeta de biblioteca del lado del cliente es un nodo de repositorio de tipo `cq:ClientLibraryFolder`. Su definición en [Notación CDN](https://jackrabbit.apache.org/node-type-notation.html) es
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder

@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2226'
-ht-degree: 50%
+source-wordcount: '2227'
+ht-degree: 49%
 
 ---
 
@@ -174,7 +174,7 @@ El árbol de contenido es una pestaña del panel lateral (junto con el explorado
 
 ![Árbol de contenido](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando se abre, puede ver una representación en forma de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, resulta más fácil saltar entre los componentes de la página.
+Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando se abre, puede ver una representación de vista de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, resulta más fácil saltar entre los componentes de la página.
 
 ![ateat-11](assets/ateat-11.png)
 

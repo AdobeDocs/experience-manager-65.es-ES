@@ -1,17 +1,14 @@
 ---
 title: Solución de problemas de índices Oak
-seo-title: Troubleshooting Oak Indexes
 description: Obtenga información sobre cómo identificar si la indexación es lenta, encontrar la causa y resolver el problema.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1474'
 ht-degree: 1%
 
 ---
@@ -22,7 +19,7 @@ ht-degree: 1%
 
 AEM El proceso de reindexación interno de recopila datos del repositorio y los almacena en índices Oak para admitir la consulta de contenido con rendimiento. En circunstancias excepcionales, el proceso puede ralentizarse o incluso atascarse. Esta página actúa como una guía de solución de problemas para identificar si la indexación es lenta, encontrar la causa y resolver el problema.
 
-Es importante distinguir entre una reindexación que lleva una cantidad de tiempo inapropiadamente larga y una reindexación que toma una cantidad de tiempo larga porque está indexando grandes cantidades de contenido. Por ejemplo, el tiempo que se tarda en indexar el contenido se escala con la cantidad de contenido, por lo que los repositorios de producción grandes tardan más en reindexarse que los pequeños.
+Es importante distinguir entre una reindexación que lleva una cantidad de tiempo inapropiadamente larga y una reindexación que lleva una cantidad de tiempo larga porque está indexando grandes cantidades de contenido. Por ejemplo, el tiempo que se tarda en indexar el contenido se escala con la cantidad de contenido, por lo que los repositorios de producción grandes tardan más en reindexarse que los pequeños.
 
 Consulte la [Prácticas recomendadas en consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md) para obtener información adicional sobre cuándo y cómo reindexar contenido.
 

@@ -2,9 +2,9 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, aprenderá a modelar el contenido para la entrega de contenido sin encabezado de AEM utilizando el Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1810'
 ht-degree: 68%
 
 ---

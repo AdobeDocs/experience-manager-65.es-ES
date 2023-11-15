@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Todas las páginas de la aplicación deben encontrarse debajo de /content/mobile
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-AEM Por convención, la primera página de la aplicación debe ser una redirección a uno de sus elementos secundarios que sirva como idioma predeterminado de la aplicación (&quot;en&quot; en los casos de Geometrixx y Starter Kit). La página de configuración regional de nivel superior generalmente hereda del componente &quot;splash-page&quot; base (/libs/mobileapps/components/splash-page), que se encarga de la inicialización necesaria para admitir la instalación de actualizaciones de sincronización de contenido por aire (el código contentInit se encuentra en /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+AEM Por convención, la primera página de la aplicación debe ser una redirección a uno de sus elementos secundarios, que sirve como idioma predeterminado de la aplicación (&quot;en&quot; en los casos de Geometrixx y Starter Kit). La página de configuración regional de nivel superior generalmente hereda del componente &quot;splash-page&quot; base (/libs/mobileapps/components/splash-page), que se encarga de la inicialización necesaria para admitir la instalación de actualizaciones de sincronización de contenido por aire (el código contentInit se encuentra en /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Plantillas y componentes {#templates-and-components}
 

@@ -1,20 +1,16 @@
 ---
 title: Tablero de operaciones
-seo-title: Operations Dashboard
 description: Aprenda a utilizar el tablero de operaciones en Adobe Experience Manager.
-seo-description: Learn how to use the Operations Dashboard.
-uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '6057'
+source-wordcount: '6061'
 ht-degree: 2%
 
 ---
@@ -443,7 +439,7 @@ Por ejemplo:
 
 >[!NOTE]
 >
->La configuración de la página de diagnóstico no influye en lo que se registra en los archivos de registro y a la inversa. Por lo tanto, aunque el registro de errores puede capturar mensajes INFO, es posible que no los vea en la interfaz de usuario de mensajes de registro. Además, a través de la IU es posible capturar mensajes de DEPURACIÓN de ciertos paquetes sin que afecte al registro de errores. Para obtener más información sobre cómo configurar los archivos de registro, consulte [Registro](/help/sites-deploying/configure-logging.md).
+>La configuración de la página de diagnóstico no influye en lo que se registra en los archivos de registro y a la inversa. Por lo tanto, aunque el registro de errores puede capturar mensajes INFO, es posible que no los vea en la interfaz de usuario de mensajes de registro. Además, a través de la interfaz de usuario es posible capturar mensajes de DEPURACIÓN de ciertos paquetes sin que afecte al registro de errores. Para obtener más información sobre cómo configurar los archivos de registro, consulte [Registro](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >

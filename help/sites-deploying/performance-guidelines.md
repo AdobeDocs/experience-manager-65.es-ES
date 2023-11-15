@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2913'
+source-wordcount: '2914'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ AEM A continuación se ilustran las opciones de implementación disponibles para
    <td><p>Propiedad</p> </td>
    <td><p>Apache</p> </td>
    <td><p>Edge</p> </td>
-   <td><p>Destino</p> </td>
+   <td><p>Público destinatario</p> </td>
   </tr>
   <tr>
    <td><p>Assets</p> </td>
@@ -302,7 +302,7 @@ AEM En, los datos binarios se pueden almacenar de forma independiente de los nod
 
 >[!NOTE]
 >
->Adobe recomienda que TarMK sea la tecnología de persistencia predeterminada que utilizan los clientes tanto para las instancias de autor de AEM como para las de publicación.
+>Adobe AEM recomienda que TarMK sea la tecnología de persistencia predeterminada utilizada por los clientes tanto para las instancias de autor como para las instancias de publicación de la versión de la aplicación de la aplicación de la aplicación de publicación.
 
 >[!CAUTION]
 >
@@ -318,19 +318,19 @@ Para obtener más información sobre las opciones de configuración disponibles,
 
 >[!NOTE]
 >
->Adobe AEM recomienda elegir la opción de implementación de la aplicación en Azure o Amazon Web Service (AWS) mediante Adobe Managed Services. AEM Los clientes se benefician de un equipo con la experiencia y las habilidades necesarias para implementar y operar en estos entornos de computación en la nube (cloud computing) con el fin de obtener una mayor experiencia y capacidad de operación en estos entornos. Consulte [Documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe AEM recomienda elegir la opción de implementación de la aplicación en Azure o en Amazon Web Service (AWS) mediante Adobe Managed Services. AEM Los clientes se benefician de un equipo con la experiencia y las habilidades necesarias para implementar y operar en estos entornos de computación en la nube (cloud computing) con el fin de obtener una mayor experiencia y capacidad de operación en estos entornos. Consulte [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
 >AEM Para obtener recomendaciones sobre cómo implementar en Azure o AWS, fuera de Adobe Managed Services, Adobe recomienda trabajar directamente con el proveedor de la nube. O bien, trabaje con uno de los socios de Adobe AEM que admita la implementación de las soluciones de en el entorno de nube que prefiera. El proveedor o socio de nube seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura que admiten para satisfacer los requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
->Consulte también la [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms) página.
 >
->
->
+>>Consulte también la [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms) página.
+
 ### Búsqueda {#search-features}
 
 AEM En esta sección se enumeran los proveedores de índices personalizados utilizados con las listas de proveedores de índices de. Para obtener más información sobre la indexación, consulte [Consultas e indexación de Oak](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
-Para la mayoría de las implementaciones, Adobe recomienda utilizar el índice Lucene. Utilice Solr únicamente para la escalabilidad en implementaciones especializadas y complejas.
+>
+>Para la mayoría de las implementaciones, Adobe recomienda utilizar el índice Lucene. Utilice Solr únicamente para la escalabilidad en implementaciones especializadas y complejas.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -368,7 +368,8 @@ AEM Para obtener más información sobre el desarrollo de la, lea [Desarrollo: C
 ### Escenarios de referencia {#benchmark-scenarios}
 
 >[!NOTE]
-Todas las pruebas de referencia mostradas en esta página se han realizado en un entorno de laboratorio.
+>
+>Todas las pruebas de referencia mostradas en esta página se han realizado en un entorno de laboratorio.
 
 Los escenarios de prueba detallados a continuación se utilizan para las secciones de referencia de los capítulos TarMK, MongoMk y TarMK vs MongoMk. Para ver qué escenario se ha utilizado para una prueba de referencia determinada, lea el campo Escenario del [Especificaciones técnicas](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) tabla.
 
@@ -398,14 +399,15 @@ Medios:
 
 Este capítulo proporciona directrices generales de rendimiento para TarMK que especifican los requisitos mínimos de arquitectura y la configuración. También se proporcionan pruebas de referencia para una mayor aclaración.
 
-Adobe recomienda que TarMK sea la tecnología de persistencia predeterminada que utilizan los clientes en todos los escenarios de implementación, tanto para las instancias de autor de AEM como para las de publicación.
+Adobe AEM recomienda que TarMK sea la tecnología de persistencia predeterminada utilizada por los clientes en todos los escenarios de implementación, tanto para las instancias de autor de la como para las de publicación.
 
 Para obtener más información sobre TarMK, consulte [Escenarios de implementación](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) y [Almacenamiento de tar](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
 ### Directrices de arquitectura mínima de TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
-Las directrices de arquitectura mínimas que se presentan a continuación son para entornos de producción y sitios con alto tráfico. Estas directrices son **no** el [especificaciones mínimas](/help/sites-deploying/technical-requirements.md#prerequisites) AEM para ejecutar la.
+>
+>Las directrices de arquitectura mínimas que se presentan a continuación son para entornos de producción y sitios con alto tráfico. Estas directrices son **no** el [especificaciones mínimas](/help/sites-deploying/technical-requirements.md#prerequisites) AEM para ejecutar la.
 
 Para establecer un buen rendimiento al usar TarMK, debe comenzar desde la siguiente arquitectura:
 
@@ -416,7 +418,8 @@ Para establecer un buen rendimiento al usar TarMK, debe comenzar desde la siguie
 AEM A continuación se ilustran las directrices de arquitectura para sitios de y AEM Assets.
 
 >[!NOTE]
-La replicación sin binarios debe activarse **ACTIVADO** si se comparte el almacén de datos de archivos.
+>
+>La replicación sin binarios debe activarse **ACTIVADO** si se comparte el almacén de datos de archivos.
 
 **Directrices de arquitectura TAR para AEM Sites**
 
@@ -489,7 +492,7 @@ Para obtener un buen rendimiento, debe seguir las directrices de configuración 
 
 Los ensayos de referencia se realizaron con arreglo a las siguientes especificaciones:
 
-|  | **Nodo de autor** |
+| | **Nodo de autor** |
 |---|---|
 | Servidor | Hardware de metal desnudo (HP) |
 | Sistema operativo | Red Hat® Linux® |
@@ -506,7 +509,8 @@ Los ensayos de referencia se realizaron con arreglo a las siguientes especificac
 #### Resultados de referencia de rendimiento {#performance-benchmark-results}
 
 >[!NOTE]
-Los números que se presentan a continuación se han normalizado a 1 como línea de base y no son los números de rendimiento real.
+>
+>Los números que se presentan a continuación se han normalizado a 1 como línea de base y no son los números de rendimiento real.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
@@ -526,10 +530,12 @@ Para establecer un buen rendimiento al utilizar MongoMK, debe comenzar desde la 
 * Dos Dispatcher
 
 >[!NOTE]
-En entornos de producción, MongoDB siempre se utiliza como un conjunto de réplicas con un principal y dos secundarios. Las lecturas y escrituras van a la primaria y las lecturas pueden ir a la secundaria. Si el almacenamiento no está disponible, uno de los secundarios se puede reemplazar por un árbitro, pero los conjuntos de réplicas de MongoDB siempre deben estar compuestos por un número impar de instancias.
+>
+>En entornos de producción, MongoDB siempre se utiliza como un conjunto de réplicas con un principal y dos secundarios. Las lecturas y escrituras van a la primaria y las lecturas pueden ir a la secundaria. Si el almacenamiento no está disponible, uno de los secundarios se puede reemplazar por un árbitro, pero los conjuntos de réplicas de MongoDB siempre deben estar compuestos por un número impar de instancias.
 
 >[!NOTE]
-La replicación sin binarios debe activarse **ACTIVADO** si se comparte el almacén de datos de archivos.
+>
+>La replicación sin binarios debe activarse **ACTIVADO** si se comparte el almacén de datos de archivos.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
@@ -596,7 +602,7 @@ Para obtener un buen rendimiento, debe seguir las directrices de configuración 
 
 Los ensayos de referencia se realizaron con arreglo a las siguientes especificaciones:
 
-|  | **Nodo Autor** | **Nodo MongoDB** |
+| | **Nodo Autor** | **Nodo MongoDB** |
 |---|---|---|
 | Servidor | Hardware de metal desnudo (HP) | Hardware de metal desnudo (HP) |
 | Sistema operativo | Red Hat® Linux® | Red Hat® Linux® |
@@ -613,13 +619,14 @@ Los ensayos de referencia se realizaron con arreglo a las siguientes especificac
 ### Resultados de referencia de rendimiento {#performance-benchmark-results-1}
 
 >[!NOTE]
-Los números que se presentan a continuación se han normalizado a 1 como línea de base y no son los números de rendimiento real.
+>
+>Los números que se presentan a continuación se han normalizado a 1 como línea de base y no son los números de rendimiento real.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
 ## TarMK vs MongoMK {#tarmk-vs-mongomk}
 
-La regla básica a tener en cuenta al elegir entre los dos es que TarMK está diseñado para el rendimiento, mientras que MongoMK se utiliza para la escalabilidad. Adobe recomienda que TarMK sea la tecnología de persistencia predeterminada que utilizan los clientes en todos los escenarios de implementación, tanto para las instancias de autor de AEM como para las de publicación.
+La regla básica a tener en cuenta al elegir entre los dos es que TarMK está diseñado para el rendimiento, mientras que MongoMK se utiliza para la escalabilidad. Adobe AEM recomienda que TarMK sea la tecnología de persistencia predeterminada utilizada por los clientes en todos los escenarios de implementación, tanto para las instancias de autor de la como para las de publicación.
 
 La razón principal para elegir el backend de persistencia MongoMK sobre TarMK es escalar las instancias horizontalmente. Esta funcionalidad significa tener dos o más instancias de autor activas siempre en ejecución y utilizar MongoDB como sistema de almacenamiento de persistencia. La necesidad de ejecutar más de una instancia de autor suele deberse al hecho de que la capacidad de CPU y memoria de un solo servidor, que admite todas las actividades de creación simultáneas, ya no es sostenible.
 
@@ -646,7 +653,8 @@ Para obtener más información sobre TarMK frente a MongoMK, consulte [Implement
 ### Puntos de referencia de TarMK vs MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
-Los números que se presentan a continuación se han normalizado a 1 como línea de base y no son números de rendimiento real.
+>
+>Los números que se presentan a continuación se han normalizado a 1 como línea de base y no son números de rendimiento real.
 
 ### Especificaciones técnicas del escenario 1 {#scenario-technical-specifications}
 
@@ -734,7 +742,8 @@ Los números que se presentan a continuación se han normalizado a 1 como línea
 ### Especificaciones técnicas del escenario 2 {#scenario-technical-specifications-1}
 
 >[!NOTE]
-AEM Para habilitar el mismo número de Autores con MongoDB que con un sistema TarMK, necesita un clúster con dos nodos de. Un clúster MongoDB de cuatro nodos puede administrar 1,8 veces el número de autores que una instancia de TarMK. Un clúster de MongoDB de ocho nodos puede administrar 2,3 veces el número de autores que una instancia de TarMK.
+>
+>AEM Para habilitar el mismo número de Autores con MongoDB que con un sistema TarMK, necesita un clúster con dos nodos de. Un clúster MongoDB de cuatro nodos puede administrar 1,8 veces el número de autores que una instancia de TarMK. Un clúster de MongoDB de ocho nodos puede administrar 2,3 veces el número de autores que una instancia de TarMK.
 
 <table>
  <tbody>

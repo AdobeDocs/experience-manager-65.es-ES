@@ -1,12 +1,10 @@
 ---
 title: Integración de servicios con la consola JMX
-seo-title: Integrating Services with the JMX Console
 description: Exponga los atributos y las operaciones del servicio para permitir que se realicen las tareas de administración creando e implementando MBeans para administrar los servicios mediante la consola JMX
-seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 0%
@@ -27,7 +25,7 @@ En la plataforma Apache Felix, implementa MBeans como servicios OSGi. Cuando se 
 
 ## Creación de MBeans para CQ5 y CRX {#creating-mbeans-for-cq-and-crx}
 
-Los MBean que crea para administrar recursos CQ5 o CRX se basan en la interfaz javax.management.DynamicMBean. Para crearlos, siga los patrones de diseño habituales establecidos en la especificación JMX:
+Los MBean que crea para administrar recursos CQ5 o CRX se basan en la interfaz javax.management.DynamicMBean. Para crearlos, siga los patrones de diseño habituales tal como se describe en la especificación JMX:
 
 * Cree la interfaz de administración, incluidos los métodos get, set y is para definir atributos y otros métodos para definir operaciones.
 * Cree la clase de implementación. La clase debe implementar DynamicMBean o ampliar una clase de implementación de DynamicMBean.
@@ -283,6 +281,7 @@ El servicio WorkflowMBeanManager incluye el método de activación de componente
 >[!NOTE]
 >
 >La implementación WorkflowMBeanManager solo crea servicios MBean para configuraciones de modelo que existen cuando se activa el componente. Una implementación más sólida escucha eventos de repositorio relacionados con las nuevas configuraciones de modelo y los cambios o eliminaciones de la configuración de modelo existente. Cuando se produce un cambio, el administrador puede crear, modificar o quitar el servicio WorkflowMBean correspondiente.
+>
 
 #### Interfaz de WorkflowMBeanManager {#workflowmbeanmanager-interface}
 

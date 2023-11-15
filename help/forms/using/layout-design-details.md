@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 95%
+source-wordcount: '2170'
+ht-degree: 94%
 
 ---
 
@@ -83,7 +83,7 @@ Realice los siguientes pasos para utilizar el subformulario en una plantilla XDP
    1. Especifique un nombre para el subformulario en el campo **Nombre**.
    1. Seleccione **Sin enlace de datos** en la lista desplegable **Enlace de datos**.
 
-   Repita los pasos del 2 al 5 para agregar más subformularios a la plantilla XDP. Agregue [texto, fragmentos de documento, imágenes y gráficos](create-interactive-communication.md#step2) a las áreas de destino solo durante la creación de la comunicación interactiva.
+   Repita los pasos del 2 al 5 para agregar más subformularios a la plantilla XDP. Agregue [texto, fragmentos de documento, imágenes y gráficos](create-interactive-communication.md#step2) a las áreas de destino solo durante la creación de la comunicación interactiva.
 
 1. Seleccione **Archivo** > **Guardar como** para guardar el archivo en el sistema de archivos local:
 

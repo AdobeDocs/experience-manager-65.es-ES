@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '5383'
-ht-degree: 86%
+source-wordcount: '5374'
+ht-degree: 84%
 
 ---
 
@@ -38,9 +38,9 @@ Las actividades y experiencias que ve en el modo de Target reflejan la variable 
 
 >[!NOTE]
 >
->Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Al eliminar la campaña en Adobe Target, thirdPartyId no se elimina. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por tanto, los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
+>Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Al eliminar la campaña en Adobe Target, thirdPartyId no se elimina. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
 >
->Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
+>Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribe la campaña existente.
 >
 >Si al sincronizar se muestra el mensaje de error “Se ha producido un error en la solicitud. `thirdPartyId` ya existe”, cambie el nombre de la campaña y vuelva a sincronizar.
 
@@ -79,7 +79,7 @@ Para añadir una actividad, haga lo siguiente:
 
    >[!NOTE]
    >
-   >Se recomienda [crear marcas a través de la consola actividades](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >El Adobe recomienda que [crear marcas a través de la consola actividades](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Si crea una marca de cualquier otra manera, asegúrese de que el nodo `/campaigns/<brand>/master` existe o se producirá un error al intentar crear una actividad.
@@ -342,7 +342,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-   El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número que aparece en la parte superior derecha indica cuántas ofertas hay disponibles en la biblioteca actual.
+   El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número de la esquina superior derecha indica cuántas ofertas hay disponibles en la biblioteca actual.
 
    * Toque o haga clic en **Examinar** para desplazarse a otra carpeta. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Vuelva a tocar o hacer clic en **Examinar** para cerrar el panel de navegación.
 
@@ -406,7 +406,7 @@ Defina un público con un segmento. La configuración de nube de la página dete
 
 Para obtener información sobre los motores de segmentación, consulte el [Motor de segmentación](/help/sites-authoring/personalization.md#targeting-engine).
 
-Una experiencia no debe utilizar más de un público. Aparece un símbolo de advertencia junto a una experiencia cuando se asigna a un público asignado a otra experiencia.
+No utilice una audiencia con más de una experiencia. Aparece un símbolo de advertencia junto a una experiencia cuando se asigna a un público asignado a otra experiencia.
 
 ![Símbolo de advertencia cuando se asigna a una audiencia asignada a otra experiencia](do-not-localize/chlimage_1-6.png)
 
@@ -517,7 +517,7 @@ Use la configuración avanzada para determinar qué sucede **después** de que u
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Aumentar recuento, liberar usuario y volver a entrar en la barra</strong></td>
+   <td><strong>Aumentar recuento, liberar usuario y volver a introducir barras</strong></td>
    <td>Determine lo que el usuario ve en lugar del contenido de la actividad:
     <ul>
      <li>La misma experiencia, sin seguimiento</li>

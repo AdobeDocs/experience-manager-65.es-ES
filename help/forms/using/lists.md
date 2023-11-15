@@ -8,10 +8,10 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '6911'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -271,7 +271,7 @@ Para cambiar el orden de los recursos de la lista, pulse y mantenga presionado e
    * **Seleccionado:** cuando se selecciona esta opción, el contenido se preselecciona en la interfaz de usuario Crear correspondencia.
    * **Omitir estilo:** cuando se selecciona esta opción, el contenido omite las viñetas y la numeración en la interfaz de usuario Crear correspondencia. (Esta opción no está disponible para los módulos Imagen. Además, no es posible aplicar conjuntamente las opciones Omitir estilo, Compuesto e Ignorar estilo de lista al mismo módulo. Puede utilizar una de ellas si selecciona Agregar viñetas en ese módulo).
    * **Sangría:** puede cambiar el nivel de sangría de cada módulo/contenido seleccionado como parte de la lista. La sangría se especifica en términos de Niveles (empezando por cero), de forma que cada nivel de sangría corresponde a un relleno de 36 puntos.
-   * **Compuesto:** cuando se selecciona esta opción, la numeración compuesta se aplica como una combinación del estilo de la lista externa (principal) y su propio estilo. La numeración compuesta de esta lista anidada se basa en el orden en el que aparece en la lista externa.
+   * **Compuesto:** Al seleccionarla, la numeración compuesta se aplica como una combinación del estilo de la lista externa (principal) y su propio estilo. La numeración compuesta de esta lista anidada se basa en el orden en el que aparece en la lista externa.
    * **Ignorar estilo de lista:** si la opción Numeración compuesta no está seleccionada, se activa la opción Ignorar estilo de lista. Esta selección ignora el estilo de la lista anidada, y la numeración continúa desde la lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista externa, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista tienen su propio estilo de numeración.
    * **Mantener con siguiente:** establece el salto de página de los recursos contenidos en una lista. Si establece la propiedad Mantener con siguiente del recurso de una lista en **Activado**, ese recurso y el siguiente permanecerán en la misma página. Eso significa que el contenido del recurso seleccionado y el del siguiente no se dividirán en varias páginas.
 

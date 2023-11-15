@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Estos son los pasos lógicos para que el importador de diseños reconozca el com
 
 1. Crear un TagHandler
 
-   * Un controlador de etiquetas es un POJO que administra etiquetas de HTML de un tipo específico. El &quot;tipo&quot; de HTML que TagHandler puede gestionar se define mediante la propiedad OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Esta propiedad OSGi es esencialmente una regex que debe coincidir con la etiqueta html de entrada que desee administrar. Todas las etiquetas anidadas se lanzarán al controlador de etiquetas para su gestión. Por ejemplo, si se registra en un div que contiene un anidado &lt;p> , la etiqueta &lt;p> La etiqueta de también se lanzaría a su TagHandler y depende de usted cómo desee encargarse de ella.
+   * Un controlador de etiquetas es un POJO que administra etiquetas de HTML de un tipo específico. El &quot;tipo&quot; de HTML que TagHandler puede gestionar se define mediante la propiedad OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Esta propiedad OSGi es esencialmente una regex que debe coincidir con la etiqueta html de entrada que desee administrar. Todas las etiquetas anidadas se lanzarán al controlador de etiquetas para su gestión. Por ejemplo, si se registra en un div que contiene un anidado &lt;p> , la etiqueta &lt;p> La etiqueta también se lanzaría a su TagHandler y depende de usted cómo desee encargarse de ella.
    * La interfaz del controlador de etiquetas es similar a una interfaz del controlador de contenido SAX. Recibe eventos SAX para cada etiqueta html. Como proveedor de controladores de etiquetas, debe implementar ciertos métodos del ciclo vital a los que llama automáticamente el marco de trabajo del importador de diseños.
 
 1. Cree su TagHandlerFactory correspondiente.

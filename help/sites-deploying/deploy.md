@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1804'
 ht-degree: 5%
 
 ---
@@ -285,7 +285,7 @@ AEM Se inicia la sesión y redirige automáticamente el explorador web a la pág
 
 ![pantalla de inicio de sesión](assets/screen_shot_2019-04-08at83533am.png)
 
-AEM Una vez que haya iniciado sesión, tendrá acceso a la interfaz de usuario de. Para obtener más información, según la función, consulte lo siguiente:
+AEM Una vez que haya iniciado sesión, tendrá acceso a la interfaz de usuario de. Para obtener más información, según su función, consulte lo siguiente:
 
 * [Creación](/help/sites-authoring/home.md)
 * [Administración](/help/sites-administering/home.md)

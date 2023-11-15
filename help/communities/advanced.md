@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ De forma predeterminada, se establece el verbo ADD para los componentes de foro 
   El valor predeterminado es de 216000 horas (~24 años).
 
 * **Tasa de crecimiento de puntuación**
-Esto especifica la puntuación entre 0 y el intervalo de puntuación, más allá del cual el crecimiento se ralentiza para limitar el número de expertos.
+Esto especifica la puntuación entre el intervalo de puntuación 0, más allá del cual el crecimiento se ralentiza para limitar el número de expertos.
 
   El valor predeterminado es 50.
 
