@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
+source-git-commit: f525c8d159b8312184fc015b1151e93c9d46b3eb
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1497'
 ht-degree: 9%
 
 ---
@@ -193,20 +193,36 @@ Cuando una página está asociada a un marco de trabajo de Adobe Analytics, el n
 
 Consulte [Ver datos de análisis de página](/help/sites-authoring/page-analytics-using.md) para obtener más información.
 
+<!-- SP19
+### Configuring the Import Interval {#configuring-the-import-interval}
+
+Configure the appropriate instance of the **Adobe AEM Analytics Report Sling Importer** service:
+
+* **Fetch attempts**:
+  Number of attempts to fetch a queued report. 
+  The default is `6`.
+
+* **Fetch delay**:
+  The number of milliseconds between attempts to fetch a queued report. 
+  The default is `10000`. As this is in milliseconds it corresponds to 10 seconds.
+
+* **Fetch frequency**:
+  A `cron` expression to determine the frequency for fetching the Analytics Report. 
+  The default is `0 0 0/12 * * ?`; this corresponds to 12 fetches every hour.
+
+To configure this OSGi service, you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or an [osgiConfig node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (the service PID is `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
+-->
+
 ### Configuración del intervalo de importación {#configuring-the-import-interval}
 
-Configure la instancia adecuada del **Importador de informes de Sling de Adobe AEM Analytics** servicio:
+Configure la instancia adecuada del **Configuración de encuestas administradas de Adobe AEM** servicio:
 
-* **Intentos de recuperación**: Número de intentos de recuperar un informe en cola.
-El valor predeterminado es `6`.
+* **Intervalo de encuesta**: Intervalo, en segundos, con el que el servicio recupera los datos de vista de página de Adobe Analytics.
+El intervalo predeterminado es de 43200000 ms (12 horas).
 
-* **Demora de recuperación**: El número de milisegundos entre intentos de recuperar un informe en cola.
-El valor predeterminado es `10000`. Como este valor se expresa en milisegundos, corresponde a 10 segundos.
+* **Activar**: habilite o deshabilite el servicio. El servicio está habilitado de forma predeterminada.
 
-* **Frecuencia de recuperación**: A `cron` expresión para determinar la frecuencia con la que se recupera el informe de Analytics.
-El valor predeterminado es `0 0 0/12 * * ?`; esto corresponde a 12 recuperaciones cada hora.
-
-Para configurar este servicio OSGi, puede usar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo osgiConfig en el repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (el PID de servicio es `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
+Para configurar este servicio OSGi, puede usar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un [nodo osgiConfig en el repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (el PID de servicio es `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
 
 ## Edición de configuraciones y/o marcos de Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 
