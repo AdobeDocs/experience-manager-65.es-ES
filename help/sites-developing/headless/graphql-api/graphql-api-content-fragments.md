@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager AEM AEM () con la API de GraphQL de la para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
 workflow-type: tm+mt
-source-wordcount: '4774'
-ht-degree: 55%
+source-wordcount: '4848'
+ht-degree: 54%
 
 ---
 
@@ -715,7 +715,28 @@ Para habilitar el almacenamiento en caché de consultas persistentes, defina la 
 
 >[!NOTE]
 >
->Para ajustarse a la [Requisitos de Dispatcher para documentos que se pueden almacenar en caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher agrega el sufijo `.json` a todas las direcciones URL de consulta persistentes, de modo que el resultado se pueda almacenar en caché.
+>Cuando el almacenamiento en caché de Dispatcher está habilitado para consultas persistentes mediante `Define CACHE_GRAPHQL_PERSISTED_QUERIES` un `ETag` Dispatcher agrega el encabezado a la respuesta.
+>
+>De forma predeterminada, la variable `ETag` El encabezado de está configurado con la siguiente directiva:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>Sin embargo, esta configuración puede causar problemas cuando se utiliza en las respuestas de consulta persistentes, ya que no tiene en cuenta los pequeños cambios en la respuesta.
+>
+>Para lograr objetivos individuales `ETag` cálculos en *cada* respuesta única en el `FileETag Digest` la configuración debe usarse en la configuración de dispatcher:
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
+
+>[!NOTE]
+>
+>Para ajustarse a la [Requisitos de Dispatcher para documentos que se pueden almacenar en caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher agrega el sufijo `.json` a todas las URL de consulta persistentes, de modo que el resultado se pueda almacenar en caché.
 >
 >Este sufijo se agrega mediante una regla de reescritura, una vez habilitado el almacenamiento en caché de consultas persistentes.
 
