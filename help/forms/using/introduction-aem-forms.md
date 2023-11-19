@@ -11,10 +11,10 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
+source-git-commit: 31131af52ecb4f9c4caaf8e75e0a9213874b3a1e
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 91%
+source-wordcount: '963'
+ht-degree: 90%
 
 ---
 
@@ -39,8 +39,7 @@ AEM Forms proporciona herramientas de administración de formularios que no sol
 
 >[!NOTE]
 >
->La función de AEM Forms, como Forms adaptable, está disponible en [AEM Inicio rápido de 6.5](/help/sites-deploying/deploy.md), se destinan únicamente a fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms.
-
+>La función Forms adaptable, disponible en [AEM Inicio rápido de 6.5](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es), está diseñado únicamente con fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad de Forms adaptable requiere una licencia adecuada.
 
 ![AEM Funcionalidades de formularios](do-not-localize/4th-draft.gif)
 
