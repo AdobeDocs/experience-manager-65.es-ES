@@ -259,13 +259,13 @@ Utilice un formato específico para ***Nombre*** propiedad de los agentes de rep
 
 `offloading_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
 
-Ejemplo: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
+Ejemplos: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nombrar el agente inverso en la instancia de autor:**
 
 `offloading_reverse_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
 
-Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
+Ejemplos: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nombrar la bandeja de salida en la instancia de trabajador:**
 

@@ -22,7 +22,7 @@ Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM Las funciones de administración de varios sitios de Live Copy y de copia de idioma se utilizan con Commerce Integration Framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
+AEM Las funciones de administración de varios sitios de Live Copy y de copia de idioma se utilizan con el Commerce integration framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
 
 AEM La configuración recomendada es utilizar una relación 1:1 entre el sitio de y la vista de la tienda de Adobe Commerce.
 

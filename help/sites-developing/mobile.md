@@ -254,7 +254,7 @@ En el **General** pestaña:
 
    * **Título**: nombre del grupo de dispositivos móviles.
    * **Descripción**: descripción del grupo.
-   * **User-Agent**: cadena de user-agent con la que se comparan los dispositivos. Es opcional y puede ser una expresión regular. Ejemplo: `BlackBerryZ10`
+   * **User-Agent**: cadena de user-agent con la que se comparan los dispositivos. Es opcional y puede ser una expresión regular. Ejemplos: `BlackBerryZ10`
    * **Funcionalidades**: define si el grupo puede gestionar la rotación de imágenes, CSS, JavaScript o dispositivos.
    * **Ancho de pantalla mínimo** y **Altura**
    * **Desactivar emulador**: para habilitar/deshabilitar el emulador durante la edición de contenido.

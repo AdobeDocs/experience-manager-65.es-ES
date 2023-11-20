@@ -274,7 +274,7 @@ Cuando abra un formulario configurado para integrarse con Adobe Campaign, verá 
 * Campo de fecha (Campaign) y Campo de fecha/HTML 5 (Campaign)
 * Clave principal cifrada (Campaign)
 * Visualización de error (Campaign)
-* Clave de reconciliación oculta (Campaign)
+* Clave de conciliación oculta (Campaign)
 * Campo numérico (Campaign)
 * Campo de opción (Campaign)
 * Lista de comprobación de suscripciones (Sightly)
@@ -421,7 +421,7 @@ El siguiente ejemplo muestra un componente Visualización de error (Campaign).
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-### Clave de reconciliación oculta (Campaign) {#hidden-reconciliation-key-campaign}
+### Clave de conciliación oculta (Campaign) {#hidden-reconciliation-key-campaign}
 
 El componente Clave de reconciliación oculta (Campaign) permite agregar campos ocultos como parte de la clave de reconciliación a un formulario.
 

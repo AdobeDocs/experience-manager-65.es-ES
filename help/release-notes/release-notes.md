@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 31131af52ecb4f9c4caaf8e75e0a9213874b3a1e
+source-git-commit: c78d5f1d94ffb92a1e034b0ccb6131ac811d708f
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3530'
 ht-degree: 2%
 
 ---
@@ -462,17 +462,13 @@ Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standa
 
 * Cuando se publica un formulario adaptable, todas sus dependencias, incluidas las directivas, se vuelven a publicar, aunque no se hayan realizado modificaciones en ellas. (FORMS-10454)
 * Cuando un usuario selecciona configurar un campo por primera vez en un formulario adaptable, la opción para guardar una configuración no se muestra en el Explorador de propiedades. El problema se resuelve seleccionando la configuración de otro campo del formulario adaptable en el mismo editor.
-* Cuando se establece una URL de redireccionamiento en el contenedor de guía de un formulario adaptable, la firma en línea deja de funcionar. (FORMS-10493)
-* No se pueden publicar todas las plantillas de documento de registro (DoR). Solo se publican las plantillas de DoR basadas en la configuración regional en inglés y sus plantillas de DoR asociadas basadas en Forms. (FORMS-10535)
+* Cuando se establece una URL de redireccionamiento en el contenedor de guía de un formulario adaptable, la firma en línea deja de funcionar. (FORMS-10493) Para resolver el problema, descargue e instale [revisión para 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* No se pueden publicar todas las plantillas de documento de registro (DoR). Solo se publican las plantillas de DoR basadas en la configuración regional en inglés y sus plantillas de DoR asociadas basadas en Forms. (FORMS-10535) Para resolver el problema, descargue e instale [revisión para 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+
 
 #### Comunicaciones interactivas
 
-* AEM Después de actualizar al paquete de servicio 18 de, no es posible abrir la comunicación interactiva con imágenes en línea grandes en el modo de edición. (FORMS-10578) Para resolver el problema, realice los siguientes pasos:
-
-   1. Descargar [Revisión-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) desde el vínculo SD.
-   1. Extraiga el archivo de revisión para poder obtener un paquete de Experience Manager (.zip) y archivos de paquete (.jar).
-   1. Cargue e instale el paquete (.zip) mediante el Administrador de paquetes.
-   1. Abra los paquetes del administrador de configuración `https://server:host/system/console/bundles`, cargue e instale el paquete (.jar).
+* AEM Después de actualizar al paquete de servicio 18 de, no es posible abrir la comunicación interactiva con imágenes en línea grandes en el modo de edición. (FORMS-10578) Para resolver el problema, descargue e instale [revisión para 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
