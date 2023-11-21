@@ -1,16 +1,11 @@
 ---
 title: 'Tutorial: Crear un formulario adaptable'
-seo-title: Create an adaptive form
 description: Aprenda a crear, diseñar y previsualizar un formulario adaptable. Además, aprenda a configurar las acciones de envío.
-seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
-page-status-flag: de-activated
-uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
-discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1384'
 ht-degree: 99%
 
 ---
@@ -51,7 +46,7 @@ Al final del artículo tendrá un formulario similar al siguiente:\
 
    Para obtener información sobre la interfaz de creación de formularios adaptables y los componentes disponibles, consulte [Introducción a la creación de formularios adaptables](/help/forms/using/creating-adaptive-form.md).
 
-   ![newly-created-adaptive-form](assets/newly-created-adaptive-form.png)
+   ![Un formulario adaptable recién creado.](assets/newly-created-adaptive-form.png)
 
 ## Paso 2: Agregar un encabezado y pie de página {#step-add-header-and-footer}
 
