@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b886336b5a66f16eb7b076aefc2ae326dedb2f52
+source-git-commit: 7ac81860e127f47aecfd948ddda34241627f457c
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 61%
+source-wordcount: '3973'
+ht-degree: 57%
 
 ---
 
@@ -36,6 +36,22 @@ Este documento enumera las plataformas de cliente y servidor compatibles con AEM
 >
 >- Para obtener una lista completa de las excepciones a las plataformas de servidor compatibles, consulte [Excepciones a plataformas de servidor compatibles](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms en JEE solo admite versiones en inglés, francés, alemán y japonés de los sistemas operativos y aplicaciones compatibles.
+
+### Política de actualización y asistencia
+
+#### Instalador completo
+
+- **Actualización de la compatibilidad con instaladores completos** AEM : Se incluye un programa de instalación completo con cada 6ª versión del paquete de servicio de. Por ejemplo, había un instalador completo lanzado con las versiones 6.5.12.0 y 6.5.18.0 SP. AEM Forms permite actualizaciones directas exclusivamente desde los dos últimos instaladores completos. Por ejemplo, AEM Forms solo facilita las actualizaciones directas a la versión 6.5.18.0 desde los dos últimos instaladores completos, a saber, 6.5.12.0 y 6.5.6.0. Si necesita actualizar desde una actualización anterior, puede utilizar una actualización de varios saltos para ir primero a una versión de instalador completo compatible y, a continuación, a la última versión.
+
+- **Obsolescencia y eliminación**: la compatibilidad con la plataforma se actualiza con cada versión completa del instalador. Cualquier software marcado como obsoleto en la matriz de la plataforma durante una versión completa del instalador tiene derecho a ser eliminado de la matriz de la plataforma admitida en una versión posterior del instalador completo, lo que indica el fin de la compatibilidad con el software.
+
+#### Service Packs
+
+- **Cobertura del paquete de servicio**: el Adobe proporciona asistencia técnica para entornos de AEM Forms que utilizan cualquiera de los seis paquetes de servicio más recientes. Si la versión actual es anterior a los seis últimos Service Packs, Adobe recomienda encarecidamente actualizar a la versión más reciente para obtener un rendimiento óptimo, seguridad y soporte continuo.
+
+- **Directrices del instalador de parches**: Mientras utiliza los instaladores de parches para actualizar, es crucial verificar que la versión del instalador completo subyacente no tenga más de dos versiones anteriores. Por ejemplo, durante la instalación del Service Pack 6.5.19.0, asegúrese de que la versión completa del instalador subyacente sea 6.5.18.0 o 6.5.12.0.
+
+- **Compatibilidad con actualización de parches**: Puede seguir actualizando al Service Pack más reciente, hasta que también esté actualizando a las plataformas compatibles más recientes. Por ejemplo, es posible actualizar del Service Pack 6.5.12.0 al 6.5.19.0, siempre que realice la transición a una combinación de plataformas compatible con el 6.5.19.0.
 
 ### Configuraciones recomendadas {#recommendedconfigurations}
 
