@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3226'
 ht-degree: 0%
@@ -188,7 +188,7 @@ Aunque DN base es una configuración obligatoria en la consola de administració
 
 **Identificador único de miembro:** Identificador único de un usuario o grupo que es miembro del grupo seleccionado. Este valor depende del servidor de directorios. El valor es objectSID para AD2003, nsuniqueID para Sun One y guid para eDirectory.
 
-Si se especifica DN de miembro con un atributo que no es DN, User Management utiliza el identificador único de miembro para consultar LDAP a fin de recopilar el DN del usuario, ya que corresponde a un valor de identificador único.
+Si se especifica DN de miembro con un atributo que no es DN, User Management utiliza el identificador único de miembro para consultar LDAP y recopilar el DN del usuario, ya que corresponde a un valor de identificador único.
 
 Si DN se especifica como identificador único, no es necesario configurar el identificador único de miembro.
 

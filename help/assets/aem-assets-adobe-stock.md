@@ -6,10 +6,10 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 7%
+source-wordcount: '2483'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 <!-- old content
@@ -207,7 +207,7 @@ Para configurar la cuenta de IMS:
 
 Para configurar la variable [!DNL Adobe Stock] servicio en la nube:
 
-1. En el [!DNL Experience Manager] interfaz de usuario, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. En el [!DNL Experience Manager] interfaz de usuario, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
 
 1. En el [!DNL Adobe Stock Configurations] página, haga clic en **[!UICONTROL Crear]**.
 
@@ -264,7 +264,7 @@ Puede crear un grupo de usuarios o asignar permisos a un grupo de usuarios exist
 
    ![user-permissions](assets/aem-stock-user-permissions.png)
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Seleccione el [!DNL Adobe Stock] configuración de nube y haga clic en **[!UICONTROL Propiedades]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. Seleccione el [!DNL Adobe Stock] configuración de nube y haga clic en **[!UICONTROL Propiedades]**.
 
 1. Agregue el grupo de usuarios recién creado al [!DNL Adobe Stock] configuración. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
@@ -390,7 +390,6 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 >* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/stock/faq.html)
-
 
 
 <!--old content

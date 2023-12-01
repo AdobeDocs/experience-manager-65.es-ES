@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6087'
 ht-degree: 0%
@@ -106,7 +106,7 @@ El portlet se puede configurar con las siguientes preferencias:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Esta es la ruta de inicio del portlet: define el contenido que se muestra inicialmente.</p> <p><strong>Importante</strong>AEM : Si el portlet está configurado para conectarse a instancias de autor y publicación de la red que se ejecutan en una ruta de contexto diferente a la que se muestra en el cuadro de diálogo.<strong> /</strong>, debe habilitar la fuerza <strong>CQUrlInfo</strong> AEM en la configuración del Administrador de bibliotecas Html de estas instancias de (por ejemplo, a través de la consola web de Felix) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.</p> </td>
+   <td><p>Esta es la ruta de inicio del portlet: define el contenido que se muestra inicialmente.</p> <p><strong>Importante</strong>AEM : Si el portlet está configurado para conectarse a instancias de autor y publicación de la red que se ejecutan en una ruta de contexto diferente de la que se utiliza en la publicación.<strong> /</strong>, debe habilitar la fuerza <strong>CQUrlInfo</strong> AEM en la configuración del Administrador de bibliotecas Html de estas instancias de (por ejemplo, a través de la consola web de Felix) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -149,7 +149,7 @@ Abra el **Configuraciones** y seleccione **Configuración del servidor CQ de dir
 
 AEM Para admitir implementaciones automatizadas y el aprovisionamiento de configuración, el portlet de contenido de la tiene compatibilidad de configuración integrada que intenta leer las configuraciones de la ruta de clase proporcionada a la aplicación del portlet.
 
-Al iniciar, la propiedad del sistema **com.day.cq.portet.config** está listo para detectar el entorno actual. Normalmente, el valor de esta propiedad es similar al siguiente **dev**, **picar**, **prueba** y demás. Si no se establece ningún entorno, no se lee ninguna configuración.
+Al iniciar, la propiedad del sistema **com.day.cq.portet.config** está listo para detectar el entorno actual. Normalmente, el valor de esta propiedad es similar al siguiente **dev**, **picar**, **prueba**, etc. Si no se establece ningún entorno, no se lee ninguna configuración.
 
 Si se establece un entorno, se busca un archivo de configuración en la ruta de clase en* ***com/day/cq/portlet/{env}.config** donde **env** se reemplaza con el valor real para el entorno. Este archivo debe enumerar todos los archivos de configuración para este entorno. La búsqueda de estos archivos se realiza en relación con la ubicación del archivo de configuración. Por ejemplo, si el archivo contiene una línea `my.service.xml,` este archivo se lee desde la ruta de clase en `com/day/cq/portlet/my.service.config.` El nombre del archivo consta del ID de persistencia del servicio, seguido de **.config**. En el ejemplo anterior, el ID de persistencia es **my.service**. El formato del archivo de configuración es el formato utilizado por el instalador OSGi de Apache Sling.
 
@@ -501,7 +501,7 @@ En el HTML, puede utilizar los siguientes marcadores de posición, que se sustit
 
 | Cadena de marcador | Descripción |
 |---|---|
-| {name} | Nombre del botón; por ejemplo** autor, atrás** actualizar, etc. |
+| {name} | Nombre del botón, por ejemplo,**autor, atrás, actualizar**, etc. |
 | {id} | ID de CSS del botón. |
 | {URL} | URL del destino del botón. |
 | {text} | Etiqueta del botón. |
@@ -762,7 +762,7 @@ Para configurar el portlet:
 
    >[!NOTE]
    >
-   >AEM Si el portlet está configurado para conectarse a instancias de autor y publicación de que se ejecutan en una ruta de contexto diferente a** /**, debe habilitar la fuerza **CQUrlInfo** AEM en la configuración del Administrador de bibliotecas Html de estas instancias de (por ejemplo, a través de la consola web de Felix) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.
+   >AEM Si el portlet está configurado para conectarse a instancias de autor y publicación que se ejecutan en una ruta de contexto distinta de la que se utiliza en la publicación, es posible que no se puedan usar las instancias. **/**, debe habilitar la fuerza **CQUrlInfo** AEM en la configuración del Administrador de bibliotecas Html de estas instancias de (por ejemplo, a través de la consola web de Felix) o la edición no funcionarán y no aparecerá el cuadro de diálogo de preferencias.
 
 1. Guarde los cambios de configuración en el servidor de aplicaciones.
 

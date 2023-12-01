@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 1%
@@ -83,7 +83,7 @@ Debe moverse explícitamente de un panel a otro con la variable `xfa.host.pageUp
 
 Un autor de formularios especifica si una secuencia de comandos se ejecuta en el servidor o en el cliente. El servicio Forms crea un entorno de procesamiento de eventos distribuido para la ejecución de inteligencia de formularios que se puede distribuir entre el cliente y el servidor mediante `runAt` atributo. Para obtener información sobre este atributo o la creación de scripts en diseños de formulario, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-El servicio Forms puede ejecutar scripts mientras se procesa el formulario. Como resultado, puede rellenar previamente un formulario con datos conectándose a una base de datos o a servicios web que pueden no estar disponibles en el cliente. También puede establecer el de un botón `Click` evento que se ejecutará en el servidor para que el cliente pueda enviar datos de ida y vuelta al servidor. Esto permite al cliente ejecutar scripts que pueden requerir recursos del servidor, como una base de datos empresarial, mientras un usuario interactúa con un formulario. Para los formularios de HTML, los scripts formcalc solo se pueden ejecutar en el servidor. Como resultado, debe marcar estos scripts para que se ejecuten a las `server` o `both`.
+El servicio Forms puede ejecutar scripts mientras se procesa el formulario. Como resultado, puede rellenar previamente un formulario con datos conectándose a una base de datos o a servicios web que pueden no estar disponibles en el cliente. También puede establecer el valor de un botón `Click` evento que se ejecutará en el servidor para que el cliente pueda enviar datos de ida y vuelta al servidor. Esto permite al cliente ejecutar scripts que pueden requerir recursos del servidor, como una base de datos empresarial, mientras un usuario interactúa con un formulario. Para los formularios de HTML, los scripts formcalc solo se pueden ejecutar en el servidor. Como resultado, debe marcar estos scripts para que se ejecuten a las `server` o `both`.
 
 Puede diseñar formularios que se muevan entre páginas (paneles) llamando a `xfa.host.pageUp` y `xfa.host.pageDown` métodos. Esta secuencia de comandos se coloca en la etiqueta de un botón `Click` y el `runAt` el atributo se establece en `Both`. La razón por la que elige `Both` es para que Adobe Reader o Acrobat (para formularios que se representan como PDF) puedan cambiar de página sin ir al servidor y los formularios de HTML pueden cambiar de página recorriendo datos al servidor. Es decir, se envía un formulario al servicio de Forms y se vuelve a procesar como HTML con la nueva página mostrada.
 
@@ -156,9 +156,9 @@ Se recomienda colocar la lógica de formulario en los eventos calculate, que se 
 
 ## Mantener cambios de presentación {#maintaining-presentation-changes}
 
-A medida que se desplaza entre páginas de HTML (paneles), solo se mantiene el estado de los datos. La configuración, como el color de fondo o la configuración de campo obligatoria, no se mantiene (si es diferente a la configuración inicial). Para mantener el estado de la presentación, debe crear campos (normalmente ocultos) que representen el estado de presentación de los campos. Si añade una secuencia de comandos al `Calculate` Si cambia la presentación en función de valores de campos ocultos, puede conservar el estado de la presentación al moverse de un lado a otro entre las páginas del HTML (paneles).
+A medida que se desplaza entre páginas de HTML (paneles), solo se mantiene el estado de los datos. La configuración, como el color de fondo o la configuración de campo obligatoria, no se mantiene (si es diferente de la configuración inicial). Para mantener el estado de la presentación, debe crear campos (normalmente ocultos) que representen el estado de presentación de los campos. Si agrega una secuencia de comandos al `Calculate` Si cambia la presentación en función de valores de campos ocultos, puede conservar el estado de la presentación al moverse de un lado a otro entre las páginas del HTML (paneles).
 
-La siguiente secuencia de comandos mantiene el `fillColor` de un campo basado en el valor de `hiddenField`. Supongamos que este script se encuentra en el campo de `Calculate` evento.
+La siguiente secuencia de comandos mantiene el `fillColor` de un campo basado en el valor de `hiddenField`. Supongamos que este script se encuentra en el campo `Calculate` evento.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -302,7 +302,7 @@ Procesar un formulario de HTML mediante la API de Forms (Java):
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
    * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
    * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.

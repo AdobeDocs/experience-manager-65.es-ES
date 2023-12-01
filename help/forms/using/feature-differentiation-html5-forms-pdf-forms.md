@@ -8,10 +8,10 @@ topic-tags: hTML5_forms
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 86%
+ht-degree: 78%
 
 ---
 
@@ -48,7 +48,7 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   </tr>
   <tr>
    <td>Paginación<br /> </td>
-   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los formularios PDF. El tamaño de la página se calcula dinámicamente. Si se elimina o se marca como oculto el contenido completo de una página de un formulario de HTML5, la página en blanco se oculta. No se muestra ningún espacio vacío (espacio en blanco) entre las páginas que aparecen encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o los scripts agregan contenido a una página, la longitud de la página se amplía para dar cabida al contenido recién agregado. No se agregarán nuevas páginas al formulario para acomodar el contenido que acaba de agregarse. </p> <p><strong>Nota:</strong> Cuando se elimina o se marca como oculto el contenido completo de una página de un formulario HTML5, la página en blanco (espacio en blanco) sigue siendo visible entre la primera y la segunda página, pero no entre las demás.</p> </td>
+   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los formularios PDF. El tamaño de la página se calcula dinámicamente. Si se elimina o se marca como oculto el contenido completo de una página de un formulario de HTML5, la página en blanco se oculta. No se muestra ningún espacio vacío (espacio en blanco) entre las páginas que aparecen encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o los scripts agregan contenido a una página, la longitud de la página se amplía para dar cabida al contenido recién agregado. No se agregarán nuevas páginas al formulario para acomodar el contenido que acaba de agregarse. </p> <p><strong>Nota:</strong> Cuando se elimina o se marca como oculto el contenido completo de una página de un formulario de HTML5, la página en blanco (espacio en blanco) permanece visible entre la primera y la segunda página, pero no entre las demás.</p> </td>
    <td>La paginación del PDF depende del contenido combinado de los datos o del contenido del usuario, y el recuento de páginas se incrementa o se reduce en función de este.</td>
   </tr>
   <tr>

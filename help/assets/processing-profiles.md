@@ -1,17 +1,15 @@
 ---
 title: Perfiles para procesar metadatos, imágenes y vídeos
 description: Un perfil define un conjunto de reglas sobre las opciones que se aplicarán a los recursos cargados en una carpeta. Especifique qué perfil de metadatos y perfil de codificación de vídeo aplicar a los recursos de vídeo que carga. En el caso de los recursos de imagen, también puede especificar qué perfil de imagen aplicar a los recursos de imagen para que se recorten correctamente.
-uuid: 6ded2a2f-a0d3-4f43-af97-02fbc0902c25
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 0%
@@ -63,7 +61,7 @@ Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#
 >
 >El agente de publicación de migración debe estar desactivado en el servidor de Dynamic Media para que el flujo de trabajo de nuevo procesamiento funcione según lo esperado.
 
-<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
+<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **Para volver a procesar recursos en una carpeta:**
 

@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6218'
 ht-degree: 1%
@@ -101,7 +101,7 @@ En el XML de configuración que exporta Administración de usuarios, el nodo ra�
 
 Al utilizar Active Directory, es importante comprender que una `objectSID` El valor de no es un atributo único en varios dominios. Este valor almacena el identificador de seguridad de un objeto. En un entorno de varios dominios (por ejemplo, un árbol de dominios), la variable `objectSID` el valor puede ser diferente.
 
-Un `objectSID` cambiaría si un objeto se mueve de un dominio de Active Directory a otro dominio. Algunos objetos tienen el mismo `objectSID` valor en cualquier lugar del dominio. Por ejemplo, grupos como BUILTIN\Administradores, BUILTIN\Usuarios avanzados, etc., tendrían el mismo `objectSID` independientemente de los dominios. Estos `objectSID` Los valores de son bien conocidos.
+Un `objectSID` cambiaría si un objeto se mueve de un dominio de Active Directory a otro dominio. Algunos objetos tienen el mismo `objectSID` valor en cualquier lugar del dominio. Por ejemplo, los grupos BUILTIN\Administradores, BUILTIN\Usuarios avanzados, etc., tendrían el mismo `objectSID` independientemente de los dominios. Estos `objectSID` Los valores de son bien conocidos.
 
 ## Adición de usuarios {#adding-users}
 
@@ -576,7 +576,7 @@ Para administrar mediante programación usuarios, grupos y dominios mediante la 
 
 1. Invoque las operaciones de usuario o grupo adecuadas.
 
-   Para buscar un usuario o grupo, invoque uno de los `DirectoryManagerServiceService` métodos del objeto para buscar principales (ya que un principal puede ser un usuario o un grupo). En el ejemplo siguiente, la variable `findPrincipalsWithFilter` método se llama mediante un filtro de búsqueda (a) `PrincipalSearchFilter` objeto). Cuando se utiliza un `PrincipalSearchFilter` objeto, las identidades locales solo se devuelven si la variable `isLocal` La propiedad se establece en `true`. Este comportamiento es diferente a lo que ocurriría con la API de Java.
+   Para buscar un usuario o grupo, invoque uno de los `DirectoryManagerServiceService` métodos del objeto para buscar principales (ya que un principal puede ser un usuario o un grupo). En el ejemplo siguiente, la variable `findPrincipalsWithFilter` método se llama mediante un filtro de búsqueda (a) `PrincipalSearchFilter` objeto). Cuando se utiliza un `PrincipalSearchFilter` objeto, las identidades locales solo se devuelven si la variable `isLocal` La propiedad se establece en `true`. Este comportamiento es diferente al que se produciría con la API de Java.
 
    >[!NOTE]
    >

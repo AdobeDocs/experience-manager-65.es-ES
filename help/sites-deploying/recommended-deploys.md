@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1778'
 ht-degree: 3%
 
 ---
@@ -159,7 +159,7 @@ Además, es muy recomendable configurar el almacén de datos en un sistema de ar
 
 Una de las ventajas adicionales de implementar un conjunto de réplicas MongoDB con un clúster de dos o más instancias de autor es tener un escenario de recuperación automatizada con un tiempo de inactividad mínimo si hay instancias de autor, una réplica MongoDB o un error completo del centro de datos. Sin embargo, la elección de MongoMK sobre TarMK no debe ser impulsada únicamente por el requisito de recuperación, ya que TarMK también puede proporcionar una solución de tiempo de inactividad mínima con un mecanismo de failover controlado.
 
-AEM Si no se espera que los criterios anteriores se cumplan durante los primeros dieciocho meses de implementación, se recomienda implementarlos primero mediante TarMK, luego volver a evaluar la configuración en una fecha posterior cuando se apliquen los criterios anteriores y, finalmente, determinar si se debe permanecer en TarMK o migrar a MongoMK.
+AEM Si no se espera que los criterios anteriores se cumplan durante los primeros 18 meses de implementación, se recomienda primero implementar mediante TarMK, luego volver a evaluar la configuración en una fecha posterior cuando se apliquen los criterios anteriores y, finalmente, determinar si debe permanecer en TarMK o migrar a MongoMK.
 
 ### AEM Excepciones para elegir MongoMK en lugar de TarMK en las instancias de publicación de los datos {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
