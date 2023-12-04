@@ -11,10 +11,10 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 98%
+source-wordcount: '1666'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 Los componentes del portal de formularios permiten a los desarrolladores web crear y personalizar un portal de formularios en sitios web creados con Adobe Experience Manager (AEM). Para obtener una descripción general rápida del portal de formularios, consulte [Introducción a la publicación de formularios en un portal](../../forms/using/introduction-publishing-forms.md).
@@ -58,13 +58,13 @@ Componente Buscar y listar en una página con diseño de cuadrícula
 
 El panel Lista es un área en la que se enumeran los formularios. El componente Buscar y listar proporciona varias opciones de configuración que puede utilizar para controlar la visualización de formularios en el panel Lista.
 
-Para configurar el panel Lista, pulse el componente Buscar y listar y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo **[!UICONTROL Editar componente]**.
+Para configurar el panel Lista, seleccione el componente Buscar y listar y, a continuación, seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo **[!UICONTROL Editar componente]**.
 
 ![Panel Lista en modo de edición](assets/edit-list.png)
 
 Panel Lista en modo de edición
 
-El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan las opciones de configuración descritas en la siguiente tabla. Pulse **Aceptar** para guardar la configuración cuando haya terminado.
+El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan las opciones de configuración descritas en la siguiente tabla. Seleccionar **OK** para guardar la configuración, cuando haya terminado.
 
 <table>
  <tbody>
@@ -177,7 +177,7 @@ Cuando se agrega el componente Predicado Fecha, permite buscar en los formulario
 
 Para configurar el componente Predicado Fecha:
 
-1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
+1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
 1. Especifique lo siguiente:
 
    * **Tipo:** la única opción disponible es **Fecha de la última modificación**
@@ -188,7 +188,7 @@ Para configurar el componente Predicado Fecha:
    * **Etiqueta Fecha de finalización:** etiqueta o rótulo para el campo de la fecha de finalización
    * **Ocultar:** aplicar el filtro de fecha predeterminado a los formularios de lista
 
-1. Pulse **Aceptar**
+1. Seleccionar **OK**
 
 #### Predicado de texto completo {#full-text-predicate}
 
@@ -196,9 +196,9 @@ El componente Predicado Texto completo implementa la búsqueda de texto completo
 
 Para configurar el componente Predicado Texto completo, haga lo siguiente:
 
-1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
+1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
 1. Especifique el título en el campo **Título principal**.
-1. Pulse **Aceptar**
+1. Seleccionar **Ok**
 
 #### Predicado Propiedades {#properties-predicate}
 
@@ -206,15 +206,15 @@ El componente Predicado Propiedades implementa la búsqueda de formularios en fu
 
 Para configurar el componente Predicado Propiedades, haga lo siguiente:
 
-1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
+1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
 1. En la pestaña General, especifique la etiqueta de búsqueda. El valor predeterminado es **Propiedades**
 
-1. En la pestaña Opciones, pulse **Agregar elemento.**
+1. En la pestaña Opciones, seleccione **Agregar elemento.**
 1. Seleccione una propiedad de la lista desplegable y especifique una etiqueta de búsqueda para ella en el campo situado debajo de la lista desplegable.
 1. Repita el paso 4 para agregar más propiedades. También puede especificar un valor de filtro predeterminado para enumerar formularios en función de los criterios especificados y ocultar la propiedad para que la busquen los usuarios finales. Seleccione la casilla Ocultar de una propiedad y especifique el valor de filtro predeterminado.
 Por ejemplo, si desea mostrar formularios que contengan “Viajar” en sus títulos, seleccione Ocultar junto a la propiedad Título. Además, especifique Viajar en el cuadro de texto con valor de filtro predeterminado.
 
-1. Pulse **Aceptar**
+1. Seleccionar **OK**
 
 #### Predicado Etiquetas {#tags-predicate}
 
@@ -222,10 +222,10 @@ El componente Predicado Etiquetas implementa la búsqueda de formularios en func
 
 Para configurar el componente Predicado Etiquetas:
 
-1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
-1. Pulse el botón de flecha hacia abajo situado junto al campo Etiquetas.
+1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
+1. Seleccione el botón de flecha hacia abajo situado junto al campo Etiquetas.
 1. Seleccione las etiquetas adecuadas
-1. Pulse **Aceptar**
+1. Seleccionar **OK**
 
 Las etiquetas seleccionadas aparecerán en el panel Buscar junto con las casillas de verificación para seleccionarlas. Ahora los usuarios pueden limitar la búsqueda en función de las etiquetas.
 

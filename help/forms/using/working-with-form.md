@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 97%
+ht-degree: 87%
 
 ---
 
@@ -26,9 +26,9 @@ Para sincronizar su formulario en la aplicación de AEM Forms:
 
 1. En la instancia de autor, seleccione un formulario y haga clic en **Ver propiedades**.
 1. En la página Propiedades, haga clic en **Avanzadas**.
-1. En Avanzadas, habilite la opción: **Sincronizar con la aplicación de AEM Forms** y pulse **Guardar**.
+1. En Avanzadas, active la opción: **Sincronizar con la aplicación de AEM Forms** y seleccione **Guardar**.
 
-Para sincronizar varios formularios, en la instancia de autor, seleccione varios formularios en el administrador de formularios y pulse **Sincronizar con la aplicación de AEM Forms**. Cuando se publica el formulario, la aplicación de AEM Forms puede conectarse al servidor de publicación y recuperar los formularios.
+Para sincronizar varios formularios, en la instancia de autor, seleccione varios formularios en el administrador de formularios y seleccione **Sincronizar con la aplicación de AEM Forms**. Cuando se publica el formulario, la aplicación de AEM Forms puede conectarse al servidor de publicación y recuperar los formularios.
 
 Si su aplicación AFA Android (aplicación de AEM Forms) no se puede sincronizar, realice los siguientes pasos para solucionar el problema de sincronización:
 
@@ -51,5 +51,5 @@ Si su aplicación AFA Android (aplicación de AEM Forms) no se puede sincronizar
 
 **Para abrir y actualizar un formulario**
 
-1. Para abrir un formulario, pulse el botón **[!UICONTROL Formulario]** en la pantalla de inicio.
+1. Para abrir un formulario, seleccione la **[!UICONTROL Form]** en la pantalla de inicio.
 1. Puede actualizar los campos del formulario, agregar archivos adjuntos, guardar como borrador y enviarlo.

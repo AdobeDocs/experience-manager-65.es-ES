@@ -7,10 +7,10 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 11%
+source-wordcount: '1933'
+ht-degree: 9%
 
 ---
 
@@ -69,11 +69,11 @@ La personalización de una temática hace referencia al proceso de modificación
 
 ### Requisitos previos para personalizar una temática {#prerequisites}
 
-* [Habilitar los componentes principales de formularios adaptables para su entorno.](/help/forms/using/enable-adaptive-forms-core-components.md)
+* [Habilitar los componentes principales de Forms adaptable](/help/forms/using/enable-adaptive-forms-core-components.md) para su entorno.
 
-* Instalar la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
+* Instale la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
-* Obtenga información sobre cómo crear un [biblioteca de cliente en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=es). AEM proporciona bibliotecas de cliente, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
+* Obtenga información sobre cómo crear un [biblioteca de cliente en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM proporciona bibliotecas de cliente, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
 
 * Instale un editor de texto sin formato. Por ejemplo, Microsoft® Visual Studio Code. Utilizar un editor de texto sin formato como Microsoft® Visual Studio Code proporciona un entorno fácil de usar para editar y modificar archivos de temas.
 
@@ -145,7 +145,7 @@ Tiene la flexibilidad de personalizar componentes individuales o realizar cambio
 
 El `variable.scss` contiene las variables globales de la temática. Al actualizar estas variables, puede realizar cambios relacionados con los estilos en el nivel de la temática. Para aplicar estilos de nivel de tema, siga estos pasos:
 
-1. Abra el archivo `<your-theme-sources>/src/site/_variables.scss` para editarlo.
+1. Abra el `<your-theme-sources>/src/site/_variables.scss` archivo para editar.
 1. Cambie el valor de cualquier propiedad. Por ejemplo, el color de error predeterminado es rojo. Para cambiar el color del error de rojo a azul, cambie el código hexadecimal de color del `$error`variable. Por ejemplo, `$error: #196ee5`.
 
    ![Ejemplo: Color de error establecido en azul](/help/forms/using/assets/theme-level-changes.png)
@@ -233,7 +233,7 @@ To apply and test the customized theme with an Adaptive Form:
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
@@ -247,7 +247,7 @@ An Adaptive Form with the selected theme is created.
 
 1. Log in to your AEM Forms author instance. 
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Select **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
 1. Select an Adaptive Form and click Properties. 
 
@@ -283,8 +283,8 @@ Una vez instalado el paquete, la temática está disponible para su selección.
 Los pasos para aplicar una temática a un formulario adaptable son los siguientes:
 
 1. AEM Inicie sesión en la instancia local de autor de la.
-1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Vaya a **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-1. Haga clic en **Crear** > **Formularios adaptables**.
+1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Seleccionar **Adobe Experience Manager** > **Forms** > **Forms y documentos**.
+1. Clic **Crear** > **Forms adaptable**.
 1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. El **Añadir propiedades** aparece
 1. Especifique el **Nombre** para su formulario adaptable.
 
@@ -302,8 +302,8 @@ Las temáticas se utilizan como parte de una plantilla de formulario adaptable p
 
 Para eliminar temas no utilizados o no deseados:
 
-1. Inicie sesión en la instancia de autor de .
-1. Abra `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
+1. Inicie sesión en la instancia de autor.
+1. Abrir `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. Navegue hasta `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Elimine la carpeta de la temática y guarde los cambios.
 
@@ -336,4 +336,4 @@ Para eliminar temas no utilizados o no deseados:
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Crear una plantilla para componentes principales basados en Forms adaptable](template-editor.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

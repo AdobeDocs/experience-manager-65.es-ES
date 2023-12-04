@@ -10,10 +10,10 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3840'
-ht-degree: 97%
+source-wordcount: '3842'
+ht-degree: 88%
 
 ---
 
@@ -51,7 +51,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 >Para varias cartas que requieran elementos similares, puede crear un diccionario de datos común. Sin embargo, un diccionario de datos de gran tamaño con un gran número de elementos puede provocar problemas de rendimiento al utilizarlo y al cargar los elementos, como en cartas y fragmentos de documento. Si tiene problemas de rendimiento, intente crear diccionarios de datos independientes para cartas diferentes.
 
 1. Seleccione **Forms** > **Diccionarios de datos**.
-1. Pulse **Crear diccionario de datos**.
+1. Seleccionar **Crear diccionario de datos**.
 1. En la pantalla Propiedades, agregue lo siguiente:
 
    * **Título:** (Opcional) escriba el título del diccionario de datos. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. A las cartas y otros fragmentos de documento se refieren mediante su título (cuando están disponibles), como en miniaturas y propiedades de recursos. Se hace referencia a los diccionarios de datos con sus nombres y no títulos.
@@ -59,11 +59,11 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 
    * **Descripción**: (Opcional) descripción del diccionario de datos.
    * **Etiquetas:** (Opcional) para crear una etiqueta personalizada, escriba un valor en el campo de texto y pulse Entrar. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas que acaba de agregar.
-   * **Propiedades extendidas**: (Opcional) pulse **Agregar campo** para especificar atributos de metadatos para el diccionario de datos. En la columna Nombre de propiedad, escriba un nombre de propiedad único. En la columna Valor, escriba un valor para asociarlo a la propiedad.
+   * **Propiedades extendidas**: (Opcional) Seleccione **Añadir campo** para especificar atributos de metadatos para el diccionario de datos. En la columna Nombre de propiedad, escriba un nombre de propiedad único. En la columna Valor, escriba un valor para asociarlo a la propiedad.
 
    ![Propiedades del diccionario de datos especificadas en alemán](do-not-localize/1_ddproperties.png)
 
-1. (Opcional) Para cargar una definición de esquema XSD para el diccionario de datos, en el panel Estructura del diccionario de datos, pulse **Cargar esquema XML**. Vaya al archivo XSD, selecciónelo y pulse **Abrir**. Se creará un diccionario de datos en función del esquema XML cargado. Es necesario modificar los nombres para mostrar y las descripciones de los elementos en el diccionario de datos. Para ello, seleccione los nombres de los elementos al pulsarlos y editar sus descripciones, nombres para mostrar y otros detalles en los campos del panel derecho.
+1. (Opcional) Para cargar una definición de esquema XSD para el diccionario de datos, en el panel Estructura del diccionario de datos, seleccione **Cargar esquema XML**. Busque el archivo XSD, selecciónelo y seleccione **Abrir**. Se creará un diccionario de datos en función del esquema XML cargado. Es necesario modificar los nombres para mostrar y las descripciones de los elementos en el diccionario de datos. Para ello, seleccione los nombres de los elementos al pulsarlos y editar sus descripciones, nombres para mostrar y otros detalles en los campos del panel derecho.
 
    Para obtener más información sobre los elementos DD calculados, consulte [Elementos del diccionario de datos calculados](#computedddelements).
 
@@ -71,10 +71,10 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
    >
    >Puede omitir cargar el archivo de esquema y crear el diccionario de datos desde cero mediante la interfaz de usuario. Para ello, omita este paso y continúe con los siguientes.
 
-1. Pulse **Siguiente**.
+1. Seleccione **Siguiente**.
 1. En la pantalla Agregar propiedades, agregue los elementos al diccionario de datos. También puede agregar o eliminar elementos y editar sus detalles si ha cargado un esquema para obtener una estructura básica del diccionario de datos.
 
-   Puede pulsar los tres puntos del lado derecho de un elemento y agregar un elemento a la estructura del diccionario de datos.
+   Puede seleccionar los tres puntos del lado derecho de un elemento y agregar un elemento a la estructura del diccionario de datos.
 
    ![1_2_createanelement](assets/1_2_createanelement.png)
 
@@ -98,7 +98,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Opcional) Después de seleccionar un elemento, en la pestaña Avanzado puede agregar propiedades (atributos). También puede pulsar **Agregar campo** y ampliar las propiedades de un elemento DD.
+1. (Opcional) Después de seleccionar un elemento, en la pestaña Avanzado puede agregar propiedades (atributos). También puede seleccionar **Añadir campo** y amplían las propiedades de un elemento DD.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -111,17 +111,17 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
    >Al eliminar un elemento compuesto/de colección con nodos secundarios, también se eliminan sus nodos secundarios.
 
 1. (Opcional) Seleccione un elemento en el panel Estructura del diccionario de datos y en el panel Lista de campos y variables. Cambie o agregue cualquier atributo necesario asociado al elemento.
-1. Pulse **Guardar**.
+1. Seleccione **Guardar**.
 
 ### Crear copias de uno o varios diccionarios de datos {#create-copies-of-one-or-more-data-dictionary}
 
 Para crear rápidamente uno o más diccionarios de datos con propiedades y elementos similares a otros existentes, puede copiarlos y pegarlos.
 
 1. En la lista de diccionarios de datos, seleccione los diccionarios de datos correspondientes. La interfaz de usuario muestra el icono Copiar.
-1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar.
-1. Pulse Pegar. Aparecerá el cuadro de diálogo Pegar. El sistema asignará automáticamente nombres y títulos a los nuevos diccionarios de datos.
+1. Seleccione Copiar. La interfaz de usuario muestra el icono Pegar.
+1. Seleccione Pegar. Aparecerá el cuadro de diálogo Pegar. El sistema asignará automáticamente nombres y títulos a los nuevos diccionarios de datos.
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia del diccionario de datos.
-1. Pulse Pegar. Se creará una copia del diccionario de datos. Ahora puede realizar los cambios necesarios en el diccionario de datos recién creado.
+1. Seleccione Pegar. Se creará una copia del diccionario de datos. Ahora puede realizar los cambios necesarios en el diccionario de datos recién creado.
 
 ## Consulte los fragmentos del documento o documentos que hacen referencia a un elemento del diccionario de datos {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
@@ -129,32 +129,32 @@ Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del
 
 1. Realice una de las siguientes acciones para editar el diccionario de datos:
 
-   * Pase el ratón sobre un diccionario de datos y pulse Editar.
-   * Seleccione un diccionario de datos y, a continuación, pulse Editar en el encabezado.
-   * Pase el ratón sobre un diccionario de datos y pulse Seleccionar. A continuación, pulse Editar en el encabezado.
+   * Pase el ratón sobre un diccionario de datos y seleccione Editar.
+   * Seleccione un diccionario de datos y, a continuación, seleccione Editar en el encabezado.
+   * Pase el ratón sobre un diccionario de datos y seleccione Seleccionar. A continuación, seleccione Edit en el encabezado.
 
-   O pulse un diccionario de datos para verlo.
+   O bien, seleccione un diccionario de datos para verlo.
 
-1. En el diccionario de datos, pulse un elemento simple para seleccionarlo. Los elementos compuestos y de colección no tienen referencias.
+1. En el diccionario de datos, seleccione un elemento simple para seleccionarlo. Los elementos compuestos y de colección no tienen referencias.
 
    Junto con las propiedades Básicas y Avanzadas del elemento, también aparece Contenido prestado.
 
-1. Pulse Contenido prestado.
+1. Seleccione Contenido prestado.
 
    La pestaña Contenido prestado aparecerá con lo siguiente: textos, condiciones, cartas y comunicaciones interactivas. Cada uno de estos encabezados también muestra el número de referencias al elemento seleccionado.
 
-1. Pulse en un encabezado para ver el nombre de los recursos que hacen referencia al elemento.
+1. Seleccione un encabezado para ver el nombre de los recursos que hacen referencia al elemento.
 
    ![lentcontent](assets/lentcontent.png)
 
-1. Para ver el contenido prestado de otro elemento, pulse el elemento.
-1. Para mostrar un recurso que hace referencia al elemento, pulse su nombre. El explorador muestra el recurso, la carta o la comunicación interactiva.
+1. Para ver el contenido prestado de otro elemento, seleccione el elemento.
+1. Para mostrar un recurso que hace referencia al elemento, seleccione en su nombre. El explorador muestra el recurso, la carta o la comunicación interactiva.
 
 ## Trabajar con datos de prueba {#working-with-test-data}
 
-1. En la página Diccionarios de datos, pulse **Seleccionar**.
-1. Pulse un diccionario de datos para el que desee descargar datos de prueba y, a continuación, pulse **Descargar datos XML de ejemplo**.
-1. Pulse **Aceptar** en el mensaje de alerta. Se descargará un archivo XML.
+1. En la página Diccionarios de datos, seleccione **Seleccionar**.
+1. Seleccione un diccionario de datos para el que desee descargar datos de prueba y, a continuación, seleccione **Descargar datos XML de ejemplo**.
+1. Seleccionar **OK** en el mensaje de alerta. Se descargará un archivo XML.
 1. Abra el archivo XML con el Bloc de notas u otro editor XML. El archivo XML tiene la misma estructura que el diccionario de datos y las cadenas de marcador de posición de los elementos. Reemplace las cadenas de marcador de posición por los datos con los que desea probar una carta.
 
    ```xml
@@ -200,7 +200,7 @@ Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del
 
 1. Después de realizar las entradas de datos, puede utilizar este archivo XML cuando previsualice una carta con datos de prueba.
 
-   Puede agregar estos datos de prueba con DD (seleccione DD y pulse Cargar datos de prueba y cargar este archivo xml). Después de esto, cuando obtiene una vista previa de la carta normal (no personalizada), estos datos XML se utilizarán en la carta. También puede pulsar Personalizado y, a continuación, cargar este XML.
+   Puede agregar estos datos de prueba con DD (seleccione DD y Cargar datos de prueba y cargar este archivo xml). Después de esto, cuando obtiene una vista previa de la carta normal (no personalizada), estos datos XML se utilizan en la carta. También puede seleccionar Personalizado y, a continuación, cargar este XML.
 
 ## Ejemplos {#samples}
 
@@ -413,9 +413,9 @@ La exportación de un XSD requiere una asignación de datos específica, que se 
 
 Una vez creado un diccionario de datos, puede descargarlo como un archivo de datos de ejemplo XML para crear entradas de texto en él.
 
-1. En la página Diccionarios de datos, pulse **Seleccionar** y, a continuación, pulse un diccionario de datos para seleccionarlo.
+1. En la página Diccionarios de datos, seleccione **Seleccionar** y, a continuación, seleccione un diccionario de datos para seleccionarlo.
 1. Seleccione **Descargar datos XML de ejemplo.**
-1. Pulse **Aceptar** en el mensaje de alerta.
+1. Seleccionar **OK** en el mensaje de alerta.
 
    Administración de correspondencia creará un archivo XML basado en la estructura del diccionario de datos seleccionado y lo descargará en su equipo con el nombre &lt;data-dictionary-name>-SampleData. Ahora puede editar este archivo en un editor de texto o XML para realizar entradas de datos mientras [crea una carta](../../forms/using/create-letter.md).
 
@@ -425,9 +425,9 @@ Si desea enviar la misma carta en distintos idiomas a sus clientes, puede locali
 
 ### Localizar un diccionario de datos {#localize-data-dictionary}
 
-1. En la página Diccionarios de datos, pulse **Seleccionar** y, a continuación, pulse un diccionario de datos para seleccionarlo.
-1. Pulse **Descargar datos de localización**.
-1. Pulse **Aceptar** en la alerta. Administración de correspondencia descargará un archivo zip a su equipo con el nombre DataDictionary-&lt;DDname>.zip.
+1. En la página Diccionarios de datos, seleccione **Seleccionar** y, a continuación, seleccione un diccionario de datos para seleccionarlo.
+1. Seleccionar **Descargar datos de localización**.
+1. Seleccionar **OK** en la alerta. Administración de correspondencia descargará un archivo zip a su equipo con el nombre DataDictionary-&lt;DDname>.zip.
 1. El archivo zip contiene un archivo .properties. Este archivo define el diccionario de datos descargado. El contenido del archivo de propiedades es similar al siguiente:
 
    ```ini

@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 95%
+source-wordcount: '744'
+ht-degree: 91%
 
 ---
 
@@ -32,11 +32,11 @@ La funcionalidad de borradores está habilitada de forma predeterminada. Cuando 
 Siga estos pasos para agregar y configurar el componente Borradores y envíos:
 
 1. Arrastre y suelte el componente **Borradores y envíos** en la categoría Servicios de documentos del explorador de componentes de su página.
-1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar del componente.
+1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar del componente.
 
    ![Componente Borradores y envíos](assets/drafts-submissions-edit.png)
 
-1. En el cuadro de diálogo Editar, especifique los siguientes detalles y pulse **Listo** para guardar la configuración.
+1. En el cuadro de diálogo Editar, especifique los siguientes detalles y seleccione **Listo** para guardar la configuración.
 
 <table>
  <tbody>

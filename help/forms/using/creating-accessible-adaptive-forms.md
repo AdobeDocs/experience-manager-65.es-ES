@@ -10,16 +10,16 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 94%
+source-wordcount: '2099'
+ht-degree: 93%
 
 ---
 
 # Crear formularios adaptables accesibles{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 ## Introducción {#introduction}
 
@@ -46,7 +46,7 @@ La herramienta Inspector de nombres y descripciones accesibles (ANDI) ayuda a id
 * Detecta problemas de accesibilidad del teclado y del contraste de color
 * Identifica claramente el contenido del lector de pantalla de acuerdo con los estándares
 
-ANDI trabaja con los principales exploradores de Internet. Consulte la documentación de [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
+ANDI trabaja con los principales exploradores de Internet. Consulte la [documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
 
 ### Descargue e instale la temática Ultramarine-Accessible
 
@@ -54,7 +54,7 @@ La temática Ultramarine-Accessible es de referencia. Muestra cómo corregir el 
 
 1. Descargue el paquete de temáticas.
 1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** en la instancia de AEM.
-1. Pulse **[!UICONTROL Crear]** > **[!UICONTROL Cargar archivo]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Cargue la temática en la instancia de AEM.
+1. Seleccionar **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivos]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Cargue la temática en la instancia de AEM.
 
 ## Hacer accesible un formulario adaptable
 
@@ -65,8 +65,8 @@ Debe centrarse en cuatro aspectos clave: navegación mediante el teclado, contra
 Aplique la temática Ultramarine-Accessible al formulario adaptable existente. Para aplicar la temática, haga lo siguiente:
 
 1. Abra el formulario adaptable para editarlo.
-1. Seleccione un componente y pulse el icono principal. En el menú contextual, pulse **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse el icono configurar.
-1. Seleccione la temática Ultramarine-Accessible en el explorador de propiedades y pulse el icono **[!UICONTROL Guardar]**.
+1. Seleccione un componente y seleccione el icono principal. En el menú contextual, seleccione **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione el icono configurar.
+1. Seleccione la temática Ultramarine-Accessible en el explorador de propiedades y seleccione **[!UICONTROL Guardar]** icono.
 1. Actualice la ventana del explorador. La temática se aplicará al formulario adaptable.
 
 Después de aplicar una temática accesible, realice las siguientes correcciones adicionales. Las correcciones se agregan a las correcciones de accesibilidad que se tratan en la temática accesible:
@@ -107,7 +107,7 @@ La etiqueta que perciben los lectores de pantalla no necesariamente debe ser la 
 
 Para utilizar la opción Accesibilidad, haga lo siguiente:
 
-1. Seleccione un componente y pulse ![cmppr](assets/cmppr.png).
+1. Seleccione un componente y seleccione ![cmppr](assets/cmppr.png).
 1. Haga clic en **[!UICONTROL Accesibilidad]** en la barra lateral para elegir la opción de accesibilidad deseada.
 
 ### Opciones de accesibilidad en componentes del formulario {#accessibility-options-in-form-components}
@@ -135,7 +135,7 @@ Las imágenes pueden ayudar a mejorar la comprensión de algunos usuarios. Sin e
 
 Asegúrese de que el texto describa el objeto y su propósito en el formulario. Un lector de pantalla lee este texto alternativo cuando encuentra una imagen. Una imagen siempre debe tener un texto alternativo especificado.
 
-Seleccione un componente de imagen y pulse ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, especifique el texto alternativo de una imagen.
+Seleccione un componente de imagen y seleccione ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, especifique el texto alternativo de una imagen.
 
 ![Texto alternativo de una imagen](assets/image-properties.png)
 
@@ -164,7 +164,7 @@ Los siguientes métodos abreviados del teclado están disponibles en AEM Forms.
 | Restablecer los datos rellenados en un formulario | Alt + R |
 | Enviar un formulario | Alt + S |
 
-Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para habilitar las teclas de método abreviado, pulse el componente **[!UICONTROL Selector de fechas]** y pulse ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En la sección **[!UICONTROL Patrones]**, seleccione un patrón de visualización mediante las listas desplegables **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]**. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
+Además, hay varias teclas de método abreviado de teclado disponibles para el **[!UICONTROL Selector de fechas]** en los formularios adaptables. Para activar las teclas de método abreviado, seleccione la opción **[!UICONTROL Selector de fecha]** Componente y seleccione ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En la sección **[!UICONTROL Patrones]**, seleccione un patrón de visualización mediante las listas desplegables **[!UICONTROL Tipo]** y **[!UICONTROL Patrón]**. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fechas]**.
 
 Las siguientes teclas de método abreviado de teclado están disponibles para el componente Selector de fecha en formularios adaptables:
 

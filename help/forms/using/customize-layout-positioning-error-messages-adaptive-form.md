@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 66%
+ht-degree: 52%
 
 ---
 
@@ -24,14 +24,14 @@ Puede personalizar la presentación y la posición de los mensajes de error de u
 
 ## Personalizar el diseño de los campos {#customize-layout-of-fields}
 
-Puede personalizar el diseño de un único campo o de todos los campos para cambiar la posición del rótulo y los mensajes de error.
+Puede personalizar el diseño de un solo campo o de todos los campos para cambiar la posición del rótulo y los mensajes de error.
 
 Para aplicar un diseño personalizado a un campo, haga lo siguiente:
 
 ### Personalizar el diseño de un solo campo {#customize-layout-of-a-single-field}
 
-1. Abra el formulario en el modo **Estilo**. Para abrir el formulario en modo Estilo, en la barra de herramientas de la página, pulse ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
-1. En la barra lateral, debajo de **Objetos de formulario**, seleccione el campo y pulse el botón editar ![edit-button](assets/edit-button.png).
+1. Abra el formulario en el modo **Estilo**. Para abrir el formulario en modo Estilo, en la barra de herramientas de la página, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
+1. En la barra lateral, debajo de **Objetos de formulario**, seleccione el campo y seleccione el botón editar ![edit-button](assets/edit-button.png).
 1. Seleccione el estado del campo que desea personalizar y especifique el estilo para ese estado.
 
    ![Especificar el estilo en línea de un campo](assets/edit-error-state.png)
@@ -44,7 +44,7 @@ Cree una temática con el Editor de temáticas para personalizar la presentació
 
 1. Abra el formulario en modo de edición. 
 
-1. En el modo de edición, seleccione un componente y, a continuación, pulse ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable** y haga clic en ![cmppr](assets/cmppr.png).
+1. En el modo de edición, seleccione un componente y, a continuación, seleccione ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable**, y luego seleccione ![cmppr](assets/cmppr.png).
 1. En la barra lateral, en Temática de formulario adaptable, seleccione la temática que ha creado con el Editor de temáticas.
 
 ## Crear un diseño de campo personalizado {#create-a-custom-field-layout}

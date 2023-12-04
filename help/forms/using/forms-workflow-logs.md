@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 82%
+ht-degree: 77%
 
 ---
 
@@ -81,12 +81,12 @@ Haga lo siguiente para poder habilitar el registro de depuración para los flujo
    https://&#39;[server]:[puerto]&#39;/system/console/configMgr
 
 1. Seleccione **[!UICONTROL Sling]** > **[!UICONTROL Compatibilidad de registros]**.
-1. Toque **[!UICONTROL Añadir nuevo registrador.]**
+1. Seleccionar **[!UICONTROL Añadir nuevo registrador.]**
 1. Seleccione **[!UICONTROL Depuración]** como **[!UICONTROL Nivel de registro]**.
 1. Especifique la ubicación del archivo de registro. La ubicación predeterminada para el archivo de registro es *logs\error.log*.
 1. Especifique el nombre del paquete como **com.adobe.granite.workflow.core** en la columna **[!UICONTROL Registrador]**.
 
-   La ejecución de estos pasos permite almacenar los registros de depuración del paquete **com.adobe.granite.workflow.core**. Toque **[!UICONTROL +]** y añada los siguientes nombres de paquete a la lista:
+   La ejecución de estos pasos permite almacenar los registros de depuración del paquete **com.adobe.granite.workflow.core**. Seleccionar **[!UICONTROL +]** y añada los siguientes nombres de paquete a la lista:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

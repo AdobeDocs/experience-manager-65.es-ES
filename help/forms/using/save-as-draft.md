@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,7 @@ Puede [actualizar el formulario](/help/forms/using/working-with-form.md), [anota
 Para habilitar la función Guardar como borrador para formularios guardados en el portal de formularios, consulte [Guardar un formulario HTML5 como borrador](/help/forms/using/saving-html5-form-draft.md).
 Para configurar el envío de formularios adaptables, consulte [Componente Borradores y envíos](/help/forms/using/draft-submission-component.md). (No válido para formularios sincronizados con el servidor JEE de AEM Forms).
 
-Para crear un borrador, abra el formulario y pulse el botón **Guardar como borrador** ![save-as-draft](assets/save-as-draft.png). Proporcione el nombre del borrador y pulse **Guardar**. El borrador se guardará en la carpeta Borradores y se sincronizará con el servidor. Se guardará en la carpeta Bandeja de salida si la aplicación está sin conexión.
+Para crear un borrador, abra el formulario y seleccione. **Guardar como borrador** ![save-as-draft](assets/save-as-draft.png). Proporcione el nombre del borrador y seleccione **Guardar**. El borrador se guardará en la carpeta Borradores y se sincronizará con el servidor. Se guardará en la carpeta Bandeja de salida si la aplicación está sin conexión.
 
 Si actualiza el formulario correspondiente posteriormente, los cambios se reflejarán inmediatamente. Al sincronizar la aplicación de AEM Forms con el servidor de AEM Forms, el borrador se cargará en el servidor de AEM Forms. Además, el borrador se moverá de la Bandeja de salida a la carpeta Tareas o Borradores. Aparece un icono de edición junto a él.
 
@@ -43,5 +43,5 @@ Realice los siguientes pasos para eliminar un borrador:
 
 1. En la aplicación de AEM Forms, navegue hasta **Formularios.**
 1. Seleccione **Borradores** de la lista desplegable situada junto a Buscar.
-1. Un formulario con el icono de edición ![edit-draft-app](assets/edit-draft-app.png) denota un borrador. Pulse los puntos suspensivos horizontales junto al borrador.
-1. En las opciones que aparecen al pulsar los puntos suspensivos horizontales, pulse **Eliminar borrador**.
+1. Un formulario con el icono de edición ![edit-draft-app](assets/edit-draft-app.png) denota un borrador. Seleccione los puntos suspensivos horizontales junto al borrador.
+1. En las opciones que aparecen al seleccionar los puntos suspensivos horizontales, seleccione **Eliminar borrador**.

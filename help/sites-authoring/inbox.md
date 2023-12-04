@@ -2,10 +2,10 @@
 title: Bandeja de entrada para administrar tareas
 description: Administrar las tareas con la bandeja de entrada de Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 41%
+source-wordcount: '1155'
+ht-degree: 39%
 
 ---
 
@@ -65,7 +65,7 @@ AEM La aplicación predeterminada viene precargada con cuatro tareas asignadas a
 
 Para abrir la bandeja de entrada de notificaciones AEM:
 
-1. Toque o haga clic en el indicador de la barra de herramientas.
+1. Haga clic en el indicador de la barra de herramientas.
 
 1. Seleccione **Ver todo**. El **AEM Bandeja de entrada de** abre. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
@@ -138,13 +138,13 @@ La opción Control de administración solo está visible para los miembros del `
 
 * **Personalización de columnas** AEM : personalice una bandeja de entrada de para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
    * **Agregar columna** AEM : seleccione una columna para añadirla a la bandeja de entrada de la.
-   * **Editar columna**: pase el ratón sobre el título de la columna y pulse ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
-   * **Eliminar columna**: pulse el botón ![eliminar](assets/delete_updated.svg) AEM para eliminar la columna de la bandeja de entrada de la.
+   * **Editar columna**: Pase el ratón sobre el título de la columna y seleccione ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
+   * **Eliminar columna**: seleccione la ![eliminar](assets/delete_updated.svg) AEM para eliminar la columna de la bandeja de entrada de la.
    * **Mover columna**: arrastre el ![mover](assets/move_updated.svg) AEM para mover una columna a una nueva posición en la bandeja de entrada de la bandeja de entrada de la.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
-* **Personalizar la promoción de la marca**
+* **Personalización de marca**
 
    * **Personalizar el texto del encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el predeterminado **Adobe Experience Manager** texto.
 
@@ -152,7 +152,7 @@ La opción Control de administración solo está visible para los miembros del `
 
 * **Navegación del usuario**
    * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones de, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
-* **Guardar:** Pulse o haga clic en esta opción para guardar la configuración.
+* **Guardar:** Haga clic en esta opción para guardar la configuración.
 
 ## Acción en un elemento {#taking-action-on-an-item}
 
@@ -167,7 +167,7 @@ La opción Control de administración solo está visible para los miembros del `
 
    Las acciones son apropiadas para el elemento y entre ellas se incluyen:
 
-   * Acción **Completar**.; por ejemplo, una tarea o un elemento de flujo de trabajo.
+   * **Completar** acción; por ejemplo, una tarea o un elemento de flujo de trabajo.
    * **Reasignar**/**Delegar** un elemento.
    * **Abrir** un elemento; en función del tipo de elemento, esta acción puede:
 
@@ -175,9 +175,9 @@ La opción Control de administración solo está visible para los miembros del `
       * abra un tablero o un asistente apropiado para realizar más acciones
       * abrir documentación relacionada
 
-   * **Retroceder** a una etapa anterior.
+   * **Retroceder un paso** a un paso anterior.
    * Consultar la carga útil de un flujo de trabajo.
-   * Crear un proyecto a partir de un elemento.
+   * Cree un proyecto a partir del elemento.
 
    >[!NOTE]
    >
@@ -198,7 +198,7 @@ La opción Control de administración solo está visible para los miembros del `
    En función de si ha abierto un cuadro de diálogo, un asistente o una página de documentación, puede:
 
    * Confirme la acción adecuada; por ejemplo, Reasignar.
-   * Cancelar la acción.
+   * Cancele la acción.
    * Flecha hacia atrás; por ejemplo, si se ha abierto un asistente de acciones o una página de documentación, puede volver a la Bandeja de entrada.
 
 ## Creación de una tarea {#creating-a-task}

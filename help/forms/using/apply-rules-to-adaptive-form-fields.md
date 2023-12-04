@@ -8,10 +8,10 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 97%
+source-wordcount: '1115'
+ht-degree: 87%
 
 ---
 
@@ -45,12 +45,12 @@ A cada cliente se le asigna un número de ID de cliente único, que ayuda a iden
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Pulse el campo **[!UICONTROL ID de cliente]** y pulse el icono **[!UICONTROL Editar reglas]**. Se abrirá la ventana Editor de reglas.
-1. Pulse el icono **[!UICONTROL + Crear]** para agregar una regla. Se abrirá el Editor visual.
+1. Seleccione el **[!UICONTROL ID de cliente]** y seleccione el campo **[!UICONTROL Editar reglas]** icono. Se abrirá la ventana Editor de reglas.
+1. Seleccione el **[!UICONTROL + Crear]** para agregar una regla. Se abrirá el Editor visual.
 
    En el Editor visual, la instrucción **[!UICONTROL CUANDO]** está seleccionada de forma predeterminada. Además, el objeto de formulario (en este caso **[!UICONTROL Id. del cliente]**) desde el que se inició el Editor de reglas se especifica en la instrucción **[!UICONTROL CUANDO]**.
 
-1. Pulse la lista desplegable **[!UICONTROL Seleccionar estado]** y seleccione **[!UICONTROL se cambia]**.
+1. Seleccione el **[!UICONTROL Seleccionar estado]** y seleccione. **[!UICONTROL se ha cambiado]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
@@ -64,7 +64,7 @@ A cada cliente se le asigna un número de ID de cliente único, que ayuda a iden
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Pulse **[!UICONTROL Listo]** para guardar la regla. En la ventana Editor de reglas, pulse **[!UICONTROL Cerrar]**.
+   Seleccionar **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, seleccione **[!UICONTROL Cerrar]**.
 
 1. Previsualice el formulario adaptable. Introduzca un ID en el campo **[!UICONTROL ID de cliente]**. El formulario ahora puede recuperar los detalles del cliente de la base de datos.
 
@@ -74,8 +74,8 @@ A cada cliente se le asigna un número de ID de cliente único, que ayuda a iden
 
 Una vez recuperados los detalles del cliente de la base de datos, puede actualizar la dirección de envío, el estado y el código postal. El siguiente procedimiento invoca un servicio del Modelo de datos de formulario para actualizar la información del cliente en la base de datos:
 
-1. Seleccione el campo **[!UICONTROL Enviar]** y pulse el icono **[!UICONTROL Editar reglas]**. Se abrirá la ventana Editor de reglas.
-1. Seleccione la regla **[!UICONTROL Enviar: Hacer clic]** y pulse el icono **[!UICONTROL Editar]**. Aparecerán las opciones para editar la regla Enviar.
+1. Seleccione el **[!UICONTROL Enviar]** y seleccione el campo **[!UICONTROL Editar reglas]** icono. Se abrirá la ventana Editor de reglas.
+1. Seleccione el **[!UICONTROL Enviar: haga clic]** y seleccione la **[!UICONTROL Editar]** icono. Aparecerán las opciones para editar la regla Enviar.
 
    ![submit-rule](assets/submit-rule.png)
 
@@ -83,7 +83,7 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
 
    ![submit-is-clicked](assets/submit-is-clicked.png)
 
-1. En la opción **[!UICONTROL ENTONCES]**, pulse la opción **[!UICONTROL + Agregar instrucción]**. Seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **[!UICONTROL Seleccionar acción]**.
+1. En el **[!UICONTROL THEN]** , seleccione la opción **[!UICONTROL + Agregar instrucción]** opción. Seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **[!UICONTROL Seleccionar acción]**.
 1. Seleccione el servicio **[!UICONTROL Actualizar dirección de envío]** de la lista desplegable **[!UICONTROL Seleccionar]**.
 
    ![update-shipping-address](assets/update-shipping-address.png)
@@ -97,7 +97,7 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
    >No arrastre y suelte los campos **[!UICONTROL Nombre]** ni **[!UICONTROL ID del cliente]** hasta la propiedad tablename.property correspondiente (por ejemplo, customerdetails.name). Ayuda a evitar actualizar el nombre y el ID del cliente por error.
 
 1. Arrastre y suelte el campo **[!UICONTROL ID de cliente]** desde la pestaña [!UICONTROL Objetos de formulario] hasta el cuadro de diálogo **[!UICONTROL ENTRADA]**. Los campos sin un nombre de tabla prefijado (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL ID]** en este caso de uso identifica de forma exclusiva un registro de la tabla **detalles del cliente**.
-1. Pulse **[!UICONTROL Listo]** para guardar la regla. En la ventana Editor de reglas, pulse **[!UICONTROL Cerrar]**.
+1. Seleccionar **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, seleccione **[!UICONTROL Cerrar]**.
 1. Previsualice el formulario adaptable. Recuperar detalles de un cliente, actualizar la dirección de envío y enviar el formulario. Cuando recupere los detalles del mismo cliente de nuevo, se mostrará la dirección de envío actualizada.
 
 ## Paso 3: (Sección bonus) Utilice el editor de código para ejecutar las validaciones y mostrar los mensajes de error {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -108,12 +108,12 @@ Los formularios adaptables proporcionan varios componentes con validaciones inte
 
 El siguiente procedimiento muestra cómo crear una regla para mostrar un mensaje de error si el ID del cliente introducido en el formulario no existe en la base de datos. La regla también lleva se centra en y restablece el campo **[!UICONTROL ID del cliente]**. La regla utiliza [la API dataIntegrationUtils del servicio del modelo de datos de formulario](/help/forms/using/invoke-form-data-model-services.md) para comprobar si el ID de cliente existe en la base de datos.
 
-1. Pulse el campo **[!UICONTROL ID de cliente]** y pulse el icono `Edit Rules`. Se abrirá la ventana [!UICONTROL Editor de reglas].
-1. Pulse el icono **[!UICONTROL + Crear]** para agregar una regla. Se abrirá el Editor visual.
+1. Seleccione el **[!UICONTROL ID de cliente]** y seleccione el campo `Edit Rules` icono. Se abrirá la ventana [!UICONTROL Editor de reglas].
+1. Seleccione el **[!UICONTROL + Crear]** para agregar una regla. Se abrirá el Editor visual.
 
    En el Editor visual, la instrucción **[!UICONTROL CUANDO]** está seleccionada de forma predeterminada. Además, el objeto de formulario (en este caso **[!UICONTROL Id. del cliente]**) desde el que se inició el Editor de reglas se especifica en la instrucción **[!UICONTROL CUANDO]**.
 
-1. Pulse la lista desplegable **[!UICONTROL Seleccionar estado]** y seleccione **[!UICONTROL se cambia]**.
+1. Seleccione el **[!UICONTROL Seleccionar estado]** y seleccione. **[!UICONTROL se ha cambiado]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 

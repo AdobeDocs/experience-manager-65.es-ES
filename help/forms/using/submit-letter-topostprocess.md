@@ -11,10 +11,10 @@ discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 feature: Correspondence Management
 exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -116,10 +116,10 @@ Las instancias de carta guardadas se pueden manipular aún más, como la recuper
 
 En la interfaz de usuario de CCR, complete los siguientes pasos para asociar un proceso de publicación con una carta:
 
-1. Pase el ratón sobre una carta y pulse **Ver propiedades**.
+1. Pase el ratón sobre una carta y seleccione **Ver propiedades**.
 1. Seleccione **Editar**.
 1. En Propiedades básicas, mediante la lista desplegable Procesamiento posterior, seleccione el procesamiento posterior que quiera asociar con la carta. En la lista desplegable se enumeran los procesamientos posteriores de publicación relacionados con AEM y Forms.
-1. Pulse **Guardar**.
+1. Seleccione **Guardar**.
 1. Después de configurar la carta con el procesamiento posterior, publique la carta y, opcionalmente, en la instancia de publicación, especifique la URL del procesamiento en el servicio de configuración de AEM DS. Esto garantiza que el procesamiento posterior se ejecute en la instancia de procesamiento.
 
 ## Volver a cargar una instancia de borrador de carta  {#reloaddraft}

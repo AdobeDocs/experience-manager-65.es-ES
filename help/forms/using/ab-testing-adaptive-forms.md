@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 59%
+source-wordcount: '1558'
+ht-degree: 54%
 
 ---
 
@@ -84,9 +84,9 @@ Además del servidor JBoss®, puede agregar el argumento -Dabtesting.enabled=tru
 
 AEM permite crear una audiencia y utilizarla para una prueba A/B. La audiencia que cree en AEM estará disponible en AEM Forms. AEM Para crear audiencias dentro de las audiencias de, haga lo siguiente:
 
-1. En la instancia de autor, pulse **Adobe Experience Manager** > **Personalización** > **Audiencias**.
+1. En la instancia de creación, seleccione **Adobe Experience Manager** > **Personalización** > **Audiencias**.
 
-1. En la página Audiencias, pulse **Crear audiencia > Crear audiencia de Target**.
+1. En la página Audiencias, seleccione **Crear audiencia > Crear audiencia de Target**.
 1. En el cuadro de diálogo Configuración de Adobe Target, seleccione una configuración de Target y haga clic en **Aceptar**.
 1. En la página Crear audiencia, cree reglas. Las reglas permiten clasificar la audiencia. Por ejemplo, debe categorizar las audiencias en función del sistema operativo. La audiencia A proviene de Windows y la audiencia B procede de Linux®.
 

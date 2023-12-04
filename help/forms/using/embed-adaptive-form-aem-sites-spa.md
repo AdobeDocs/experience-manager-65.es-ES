@@ -10,16 +10,16 @@ discoiquuid: a74ed6c1-3006-4baf-bd77-ad4045e23c22
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 95%
+source-wordcount: '1107'
+ht-degree: 94%
 
 ---
 
 # Incrustar un formulario adaptable o una comunicación interactiva en una aplicación de una sola página de AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 ## Información general {#overview}
 
@@ -59,7 +59,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva con el co
 1. Abra la página de AEM Sites, en el modo de edición, en la que desee incrustar un formulario adaptable o comunicación interactiva.
 1. Inserte el **formulario de AEM para la SPA** en la página mediante cualquiera de las siguientes opciones:
 
-   * Pulse el contenedor de diseño en la página de Sites, pulse **+** y seleccione el componente **formulario de AEM para la SPA**.
+   * Seleccione el contenedor de diseño en la página Sitios y seleccione **+** y seleccione la **AEM SPA Formulario de** componente.
 
    * En el panel Explorador de componentes, arrastre y suelte el componente **Formulario de AEM para la SPA** en la página.
    * Busque un formulario adaptable o una comunicación interactiva en el explorador de recursos y arrástrelo y suéltelo en la página de Sites. Incrusta el formulario en un contenedor de componentes de la SPA de AEM Forms.
@@ -68,7 +68,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva con el co
    >
    >No se admite procesar varios componentes del componente Contenedor de la SPA de AEM Forms en una misma página. Puede tener varios Contenedores de la SPA de AEM Forms en una página, pero solo se procesará uno a la vez. Asegúrese de que solo esté visible un componente en la página para evitar discrepancias.
 
-1. Pulse el componente Contenedor de la SPA de AEM Forms incrustado en la página de Sites y, a continuación, pulse ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abrirá el cuadro de diálogo **Editar contenedor de la SPA de AEM Forms**.
+1. Seleccione el componente Contenedor de la aplicación de AEM Forms SPA incrustado en la página de Sites y, a continuación, seleccione ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abrirá el cuadro de diálogo **Editar contenedor de la SPA de AEM Forms**.
 1. En el cuadro de diálogo **Editar contenedor de AEM Forms**, especifique lo siguiente:
 
    * **Tipo de recurso:** seleccione el tipo de recurso que desea incrustar. Las opciones son **Formulario adaptable** y **Comunicación interactiva**
@@ -78,7 +78,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva con el co
 
    * **Temática**: seleccione una temática que defina el estilo de los componentes del formulario adaptable o de la comunicación interactiva. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación.
 
-1. Pulse ![done_icon](assets/done_icon.png) para guardar la configuración. El formulario adaptable o la comunicación interactiva están incrustados en la página.
+1. Seleccionar ![done_icon](assets/done_icon.png) para guardar la configuración. El formulario adaptable o la comunicación interactiva están incrustados en la página.
 
 ## Publicar formularios adaptables y comunicaciones interactivas incrustados {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -95,7 +95,7 @@ La página de AEM Sites mantiene una referencia al formulario adaptable y a la 
 Para modificar cualquier configuración o propiedad del formulario adaptable o de la comunicación interactiva incrustados, realice una de las siguientes acciones.
 
 * Abra el formulario original en formularios adaptables o comunicaciones interactivas en sus respectivos editores y modifíquelos.
-* Pulse el formulario adaptable o la comunicación interactiva desde la página de Sites en el modo de edición y, a continuación, pulse **Editar en una nueva ventana**. El formulario original se abrirá en el modo de edición.
+* Seleccione el formulario adaptable o la comunicación interactiva desde la página de Sites en el modo Edición y, a continuación, seleccione **Editar en una nueva ventana**. El formulario original se abrirá en el modo de edición.
 
 ## Consideraciones y prácticas recomendadas {#considerations-and-best-practices}
 

@@ -6,16 +6,16 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 87%
+source-wordcount: '1070'
+ht-degree: 90%
 
 ---
 
 # Mejorar el rendimiento de los formularios grandes mediante la carga diferida{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -52,8 +52,8 @@ Los formularios incluyen algunos campos y secciones que no son aplicables a todo
 Realice los siguientes pasos para habilitar la carga diferida en un fragmento de formulario adaptable:
 
 1. Abra el formulario adaptable que contiene el fragmento en el que desea habilitar la carga diferida en el modo Autor.
-1. Seleccione el fragmento de formulario adaptable y pulse ![cmppr](assets/cmppr.png).
-1. En la barra lateral, habilite la opción **[!UICONTROL Cargar fragmento de forma diferida]** y pulse **Listo**.
+1. Seleccione el fragmento de formulario adaptable y seleccione ![cmppr](assets/cmppr.png).
+1. En la barra lateral, habilite **[!UICONTROL Carga diferida de fragmento]** y seleccione **Listo**.
 
    ![Habilitar la carga diferida en el fragmento de formulario adaptable](assets/lazy-loading-fragment.png)
 
@@ -62,7 +62,7 @@ Realice los siguientes pasos para habilitar la carga diferida en un fragmento de
 Puede marcar los valores de los objetos del fragmento cargado de forma diferida como globales, de modo que estén disponibles para su uso en scripts cuando el fragmento que los contiene no esté cargado. Haga lo siguiente:
 
 1. Abra el fragmento del formulario adaptable en el modo Autor.
-1. Pulse el campo cuyo valor desee marcar como global y, a continuación, pulse ![cmppr](assets/cmppr.png).
+1. Seleccione el campo cuyo valor desee marcar como global y, a continuación, seleccione ![cmppr](assets/cmppr.png).
 1. En la barra lateral, habilite la opción **Utilizar valor durante la carga diferida**.
 
    ![Campo de carga diferida en la barra lateral](assets/enable-lazy-loading.png)

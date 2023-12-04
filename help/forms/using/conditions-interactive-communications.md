@@ -10,10 +10,10 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 95%
+source-wordcount: '1494'
+ht-degree: 77%
 
 ---
 
@@ -51,15 +51,15 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
    * **[!UICONTROL Descripción]**: escriba una descripción del fragmento del documento.
    * **[!UICONTROL Modelo de datos de formulario]**: de forma opcional, seleccione el botón Modelo de datos de formulario para crear la condición basada en un modelo de datos de formulario. Al seleccionar el botón Modelo de datos de formulario, aparecerá el campo **[!UICONTROL Modelo de datos de formulario]**. Busque y seleccione un modelo de datos de formulario. Al crear una condición para una comunicación interactiva, asegúrese de utilizar el mismo modelo de datos que desea utilizar en la comunicación interactiva. Para obtener información sobre el modelo de datos de formulario, consulte [Integración de datos](../../forms/using/data-integration.md).
 
-   * **[!UICONTROL Etiquetas]**: de forma opcional, para crear una etiqueta personalizada, escriba un valor en el campo de texto y pulse Entrar. Al guardar esta condición, se crean las etiquetas recién agregadas.
+   * **[!UICONTROL Etiquetas]**: De forma opcional, para crear una etiqueta personalizada, introduzca un valor en el campo de texto y seleccione Introducir. Al guardar esta condición, se crean las etiquetas recién agregadas.
 
-1. Pulse **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Siguiente]**.
 
    Aparecerá la página Crear condición.
 
    ![createcondition](assets/createcondition.png)
 
-1. Pulse **[!UICONTROL Agregar recursos]**.
+1. Seleccionar **[!UICONTROL Añadir recursos]**.
 
    Aparecerá la página Seleccionar recursos y mostrará los textos, las listas, las condiciones y las imágenes disponibles para agregar en la condición.
 
@@ -67,7 +67,7 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
    >
    >En la página Seleccionar recursos solo aparecen los recursos basados en ninguno, los recién creados y los basados en FDM (creados con el mismo FDM que la condición que crea).
 
-1. Pulse los recursos adecuados para seleccionarlos e incluirlos en la condición y, a continuación, pulse **[!UICONTROL Listo]**.
+1. Seleccione los recursos adecuados para seleccionarlos e incluirlos en la condición y, a continuación, seleccione **[!UICONTROL Listo]**.
 
    Aparecerá la página Crear condición y se enumerarán los recursos agregados.
 
@@ -77,11 +77,11 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Rechazar cambio.** Pulse este icono para rechazar los cambios que puede haber realizado en el recurso y en la regla de la condición.
-   **[B] Aceptar cambio.** Pulse este icono para aceptar los cambios realizados en el recurso y en la regla de la condición.
-   **[C] Duplicar recurso.** Pulse este icono para crear una copia del recurso junto con la regla aplicada, si la hay, en la condición. A continuación, puede editar la regla y el recurso para los recursos duplicados. Duplicar un recurso resulta útil para crear reglas similares que muestren recursos alternativos basados en un contexto en particular.
-   **[D] Mostrar vista previa.** Pulse este icono para mostrar una previsualización del recurso en la página Crear/Editar condición.
-   **Reordenar “servidor”.** Pulse y mantenga presionado este icono para arrastrar y soltar recursos para reordenarlos dentro de una condición.
+   **[A] Rechazar cambio.** Seleccione este icono para rechazar los cambios que puede haber realizado en el recurso y en la regla de la condición.
+   **[B] Aceptar cambio.** Seleccione este icono para aceptar los cambios realizados en el recurso y en la regla de la condición.
+   **[C] Duplicar recurso.** Seleccione este icono para crear una copia del recurso junto con la regla aplicada, si la hay, en la condición. A continuación, puede editar la regla y el recurso para los recursos duplicados. Duplicar un recurso resulta útil para crear reglas similares que muestren recursos alternativos basados en un contexto en particular.
+   **[D] Mostrar vista previa.** Seleccione este icono para mostrar una previsualización del recurso en la página Crear/Editar condición.
+   **Reordenar “servidor”.** Seleccione y mantenga presionado este icono para arrastrar y soltar recursos para reordenarlos dentro de una condición.
 
    Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición durante la ejecución:
 
@@ -89,7 +89,7 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
 
    * **Salto de página**: seleccione esta opción ( ![break](assets/break.png)) para agregar un salto de página entre los recursos de las condiciones. Cuando esta opción no esté seleccionada ( ![nobreak](assets/nobreak.png)), si una condición se pasa a la siguiente página de la salida de impresión, toda la condición se pasará a la siguiente página en lugar de romperse en la página entre los recursos de la condición.
 
-1. Pulse **[!UICONTROL Crear regla]** para agregar reglas para mostrar u ocultar los recursos, según sea necesario. Para utilizar variables en las reglas, consulte [Crear variables](#variables). Para obtener más información, consulte [Agregar reglas a una condición](#ruleeditor).
+1. Seleccionar **[!UICONTROL Crear regla]** para agregar reglas para mostrar u ocultar los recursos, según sea necesario. Para utilizar variables en las reglas, consulte [Crear variables](#variables). Para obtener más información, consulte [Agregar reglas a una condición](#ruleeditor).
 
    Las reglas creadas aparecen en la columna REGLA de la pantalla Crear condición.
 
@@ -99,7 +99,7 @@ Los recursos en las condiciones que se procesan en función de las reglas aplica
    >
    >Puede insertar recursos en la condición que ya tengan reglas o que se repitan.
 
-1. Pulse **[!UICONTROL Guardar]**.
+1. Seleccione **[!UICONTROL Guardar]**.
 
    Se creará la condición. Ahora puede usar la condición como un bloque de creación al crear una comunicación interactiva.
 
@@ -113,9 +113,9 @@ Puede editar una condición si sigue los siguientes pasos. También puede editar
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Fragmentos de documento]**.
 1. Navegue hasta la condición y selecciónela.
-1. Pulse **[!UICONTROL Editar]**.
+1. Seleccione **[!UICONTROL Editar]**.
 1. Realice los cambios necesarios en la condición. Para obtener más información sobre la información que puede cambiar en una condición, consulte [Crear condición](#createcondition).
-1. Pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Cerrar]**.
+1. Seleccionar **[!UICONTROL Guardar]** y luego seleccione **[!UICONTROL Cerrar]**.
 
 ## Crear reglas en condición {#ruleeditor}
 
@@ -130,7 +130,7 @@ Con el editor de reglas en una condición, puede crear reglas para mostrar u ocu
 
 ### Crear regla en condición {#create-rule-in-condition}
 
-1. Durante la creación o edición de una condición, pulse ![ruleeditoricon](assets/ruleeditoricon.png) (Editor de reglas) para el recurso correspondiente.
+1. Al crear o editar una condición, seleccione ![ruleeditoricon](assets/ruleeditoricon.png) (Editor de reglas) para el recurso correspondiente.
 
    Aparecerá el cuadro de diálogo Crear regla. Además de Cadena, Número, Expresión matemática y Fecha, también están disponibles las siguientes reglas en el editor de reglas para crear instrucciones:
 
@@ -152,53 +152,53 @@ Con el editor de reglas en una condición, puede crear reglas para mostrar u ocu
 
    Regla para mostrar un recurso cuando el tipo de directiva es estándar
 
-   * Al crear o editar una regla, también puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla/Editar regla. El cuadro de diálogo expandido a ventana completa le permite crear [variables](#variables) para construir reglas. Pulse de nuevo Cambiar tamaño para volver al cuadro de diálogo normal Crear regla.
+   * Al crear o editar una regla, también puede seleccionar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el diálogo Crear regla/Editar regla. El cuadro de diálogo expandido a ventana completa le permite crear [variables](#variables) para construir reglas. Vuelva a seleccionar Cambiar tamaño para volver al cuadro de diálogo normal Crear regla.
 
    * También puede crear varias condiciones en una regla.
 
-1. Pulse **[!UICONTROL Listo]**.
+1. Seleccionar **[!UICONTROL Listo]**.
 
    La regla se aplicará al recurso.
 
 ## Crear y usar variables en una condición {#variables}
 
-Durante la creación o edición de una regla en una condición, puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla\Editar regla. El cuadro de diálogo expandido a ventana completa le permite:
+Al crear o editar una regla en una condición, puede seleccionar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el diálogo Crear regla\Editar regla. El cuadro de diálogo expandido a ventana completa le permite:
 
 * Crear y usar variables en la regla
 * Arrastrar y soltar las propiedades y variables del modelo de datos de formulario en la regla
 
-Vuelva a pulsar Cambiar tamaño para volver al cuadro de diálogo Crear regla\Editar regla.
+Vuelva a seleccionar Cambiar tamaño para volver al cuadro de diálogo Crear regla\Editar regla.
 
 ### Crear variables {#create-variables}
 
-1. Durante la creación o edición de una regla en una condición, puede pulsar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla\Editar regla.
+1. Al crear o editar una regla en una condición, puede seleccionar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el diálogo Crear regla\Editar regla.
 
    Aparecerá el cuadro de diálogo expandido y a ventana completa.
 
    ![expandededitruledialog](assets/expandededitruledialog.png)
 
-1. En el panel izquierdo, pulse **[!UICONTROL Variables]**.
+1. En el panel izquierdo, seleccione **[!UICONTROL Variables]**.
 
    Aparecerá el panel Variables.
 
    ![expandededitrulevariables](assets/expandededitrulevariables.png)
 
-1. Pulse **[!UICONTROL Crear]**.
+1. Seleccione **[!UICONTROL Crear]**.
 
    Aparecerá el panel Crear variables.
 
-1. Escriba la siguiente información y pulse **[!UICONTROL Crear]**:
+1. Introduzca la siguiente información y seleccione **[!UICONTROL Crear]**:
 
    * **[!UICONTROL Nombre]**: nombre de la variable.
    * **[!UICONTROL Descripción]**: opcionalmente, introduzca una descripción sobre la variable.
    * **[!UICONTROL Tipo]**: seleccione un tipo de variable: cadena, número, booleano o fecha.
    * **[!UICONTROL Permitir solo valores específicos]**: para las variables cadena y número, puede asegurarse de que el agente elija entre un conjunto específico de valores para un marcador de posición en la interfaz de usuario de Agente. Para especificar el conjunto de valores, seleccione esta opción y, a continuación, especifique los valores separados por coma que están permitidos en el campo **[!UICONTROL Valores]**.
 
-1. Pulse **[!UICONTROL Crear]**.
+1. Seleccione **[!UICONTROL Crear]**.
 
    La variable se crea y se enumera en el panel Variables.
 
 1. Para insertar una variable en la regla, arrastre y suelte la variable en un marcador de posición para una opción de la regla.
-1. Después de crear una regla válida, pulse **[!UICONTROL Listo]**.
+1. Después de crear una regla válida, seleccione **[!UICONTROL Listo]**.
 
    Realice más cambios, si es necesario, en la condición y guárdela.

@@ -9,16 +9,16 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 91%
+source-wordcount: '1139'
+ht-degree: 92%
 
 ---
 
 # Crear formularios con secciones repetibles {#creating-forms-with-repeatable-sections}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 Las secciones repetibles son paneles que se pueden añadir o quitar dinámicamente a un formulario.
 
@@ -28,7 +28,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
 ## Utilizar Instance Manager mediante scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. En el modo de edición, seleccione un panel y pulse ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, habilite **Hacer que el panel sea repetible**. Especifique los valores para los campos **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]**.
+1. En el modo de edición, seleccione un panel y, a continuación, seleccione ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, habilite **Hacer que el panel sea repetible**. Especifique los valores para los campos **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]**.
 
    El campo Máximo especifica el número máximo de veces que puede aparecer un panel en la página. Puede especificar -1 en el campo Máximo para permitir que el panel aparezca durante un número infinito de veces.
 
@@ -40,7 +40,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
 1. El elemento principal del panel, que se va a repetir, debe contener botones de añadir y eliminar para administrar las instancias de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones:
 
-   1. Desde la barra lateral, arrastre y suelte un componente de botón en el elemento principal del panel. Seleccione el componente y pulse ![Editar reglas](assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
+   1. Desde la barra lateral, arrastre y suelte un componente de botón en el elemento principal del panel. Seleccione el componente y seleccione ![edit-rules](assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
    1. En la ventana Editor de reglas, haga clic en **Crear**.
 
       Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
@@ -100,8 +100,8 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
 Un panel tiene varias opciones de diseño. La opción Diseño para el diseño de acordeón es compatible de forma predeterminada con los paneles repetibles. Realice los siguientes pasos en el panel repetible con la opción Diseño para el diseño de acordeón:
 
-1. En el panel principal que se va a repetir, pulse ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En la lista desplegable **Diseño**, seleccione **Acordeón**.
-1. En un panel que se va a repetir, pulse ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Habilite la pestaña **Hacer que el panel sea repetible** y especifique los valores para los campos **Máximo** y **Mínimo**.
+1. En el panel principal que se va a repetir, seleccione ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En la lista desplegable **Diseño**, seleccione **Acordeón**.
+1. En un panel que se va a repetir, seleccione ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Habilite la pestaña **Hacer que el panel sea repetible** y especifique los valores para los campos **Máximo** y **Mínimo**.
 
    Ahora puede utilizar los botones más (+) y eliminar (![eliminar panel](assets/delete-panel.png)) para añadir y quitar los paneles.
 

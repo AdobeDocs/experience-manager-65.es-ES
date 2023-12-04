@@ -11,10 +11,10 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3154'
-ht-degree: 97%
+source-wordcount: '3141'
+ht-degree: 93%
 
 ---
 
@@ -96,7 +96,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
 
   Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Para ver las propiedades del contenedor de formulario adaptable, haga lo siguiente:
 
-  Seleccione un componente y, a continuación, pulse ![nivel de campo](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse ![cmppr](assets/cmppr.png).
+  Seleccione un componente y luego seleccione ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![cmppr](assets/cmppr.png).
 
 * **Explorador de recursos**
 
@@ -281,16 +281,16 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
 
 Estas son algunas de las prácticas recomendadas y los puntos clave que deben tenerse en cuenta a la hora de trabajar con componentes de formulario adaptable:
 
-* Cada componente tiene propiedades asociadas que controlan su aspecto y su funcionalidad. Para configurar las propiedades de un componente, pulse el componente y luego pulse ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el Explorador de propiedades.
-* Cada componente se identifica con su nombre de elemento. Al pulsar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando el valor del campo **[!UICONTROL Nombre del elemento]** en el Explorador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
+* Cada componente tiene propiedades asociadas que controlan su aspecto y su funcionalidad. Para configurar las propiedades de un componente, seleccione el componente y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el explorador de propiedades.
+* Cada componente se identifica con su nombre de elemento. Al seleccionar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando la variable **[!UICONTROL Nombre de elemento]** en el explorador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
 
 * Puede modificar la propiedad Título de los componentes en línea de un formulario adaptable en el Editor de formularios sin abrir el Explorador de propiedades siempre que el título esté visible en el formulario. Para ello:
 
-   1. Pulse para seleccionar un componente que tenga la propiedad **[!UICONTROL Título]** y cuya propiedad **[!UICONTROL Ocultar título]** esté deshabilitada.
+   1. Seleccione para seleccionar un componente que tenga un **[!UICONTROL Título]** propiedad y cuyo **[!UICONTROL Ocultar título]** La propiedad está deshabilitada.
 
-   1. Pulse ![aem_6_3_editar](assets/aem_6_3_edit.png) para poder editar el título.
+   1. Seleccionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el título se pueda editar.
 
-   1. Modifique el título y pulse la tecla Retroceso o pulse en cualquier sitio fuera del componente para guardar los cambios. Pulse la tecla Esc para descartar los cambios.
+   1. Modifique el título y seleccione la tecla Retroceso o seleccione cualquier lugar fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
 
 * Algunos componentes de los formularios adaptables, como Correo electrónico y Teléfono, incluyen patrones de validación listos para usar. Sin embargo, puede especificar una validación personalizada actualizando el campo **[!UICONTROL Patrón de validación]** en el acordeón Patrones de las propiedades del componente. Consulte las descripciones de componentes de la tabla anterior para obtener más información sobre las validaciones predeterminadas.
 
@@ -304,7 +304,7 @@ Estas son algunas de las prácticas recomendadas y los puntos clave que deben te
 * De forma predeterminada, el componente Archivo adjunto permite al usuario adjuntar un único archivo. Sin embargo, puede configurar las propiedades del componente para que admita varios archivos adjuntos. Además, si un usuario adjunta varios archivos con el mismo nombre de archivo, los archivos adjuntos pueden causar algunos problemas. Por lo tanto, se recomienda asociar un identificador único a cada archivo adjunto enviado cuando se envía el formulario. Para ello:
 
    1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-   1. Busque y pulse **[!UICONTROL Servicio de configuración de formularios adaptables]**.
+   1. Buscar y seleccionar **[!UICONTROL Servicio de configuración de Forms adaptable]**.
    1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, active la opción **[!UICONTROL Asignar nombres de archivo únicos]**. De forma predeterminada, está desactivada.
 
 * Para permitir que los usuarios adjunten un PDF mediante el explorador Safari, asegúrese de que agrega **aplicación/pdf** a la propiedad Tipos de archivo compatibles del componente Archivo adjunto. Los formularios adaptables creados con versiones anteriores de AEM Forms pueden contener **.pdf** en lugar de **aplicación/pdf** en la propiedad Tipos de archivo compatibles.
@@ -345,7 +345,7 @@ La barra de herramientas de la parte superior de la página ofrece opciones que 
 
 Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son las siguientes:
 
-A.**Configurar**: Al pulsar **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de las bibliotecas de cliente, los diseños, los temas, los documentos de registro, las opciones de guardado, los envíos y los metadatos.
+A.**Configurar**: cuando selecciona **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de las bibliotecas de cliente, los diseños, los temas, los documentos de registro, las opciones de guardado, los envíos y los metadatos.
 
 B.**Copiar**: Puede utilizar la opción Copiar para copiar un componente y pegarlo en otros lugares del formulario. Al pegar un componente, este recibirá un nombre de elemento nuevo, pero conservará las propiedades del componente copiado.
 
@@ -363,7 +363,7 @@ H. **Grupo**: Permite seleccionar varios componentes si desea cortar, copiar o p
 
 I. **Principal**: Permite seleccionar el elemento principal de un componente. Por ejemplo, un campo de texto se encuentra dentro de una subsección, que reside en una sección. La sección se encuentra en el panel raíz de la guía, y el contenedor del formulario adaptable es el elemento principal del panel raíz. Puede ver todas las opciones de un componente con la jerarquía ordenada en la parte inferior.
 
-Por ejemplo, si pulsa **[!UICONTROL Principal]** en un cuadro de texto, podrá ver lo siguiente:
+Por ejemplo, si selecciona **[!UICONTROL Principal]** para un cuadro de texto, puede ver lo siguiente:
 
 * Subsección
 * Sección

@@ -11,10 +11,10 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ Puede cargar los tipos de recursos compatibles de forma individual o como un arc
 
 1. Inicie sesión en la interfaz de usuario de AEM Forms accediendo a `https://'[server]:[port]'/aem/forms.html`.
 1. Vaya a la carpeta en la que desea cargar el formulario o la carpeta que contiene los formularios.
-1. En la barra de herramientas de acciones, pulse **Crear > Carga de archivo**.
+1. En la barra de herramientas de acciones, seleccione **Crear > Cargar archivo**.
 
    ![Archivos en la opción de almacenamiento local en Crear](assets/step.png)
 

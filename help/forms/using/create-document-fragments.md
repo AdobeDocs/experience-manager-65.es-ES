@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 80%
+source-wordcount: '1653'
+ht-degree: 73%
 
 ---
 
@@ -68,16 +68,16 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccione **FDM_Create_First_IC** como modelo de datos del formulario y pulse **Seleccionar**.
+   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
-   1. Pulse **Siguiente**.
+   1. Seleccione **Siguiente**.
 
-1. Seleccione la pestaña **Variables** en el panel izquierdo y pulse **Crear**.
+1. Seleccione el **Variables** en el panel izquierdo y seleccione **Crear**.
 1. En la sección **Crear variable**:
 
    1. Escriba **Invoicenumber** como nombre de la variable.
    1. Seleccionar **Cadena** como el tipo.
-   1. Pulse **Crear**.
+   1. Seleccione **Crear**.
 
    ![Crear variable de tipo Cadena](assets/variable_create_string_new.png)
 
@@ -132,16 +132,16 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccione **FDM_Create_First_IC** como modelo de datos del formulario y pulse **Seleccionar**.
+   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
-   1. Pulse **Siguiente**.
+   1. Seleccione **Siguiente**.
 
-1. Seleccione la pestaña **Variables** en el panel izquierdo y pulse **Crear**.
+1. Seleccione el **Variables** en el panel izquierdo y seleccione **Crear**.
 1. En la sección **Crear variable**:
 
    1. Escriba **Placesupply** como nombre de la variable.
    1. Seleccionar **Cadena** como el tipo.
-   1. Pulse **Crear**.
+   1. Seleccione **Crear**.
 
    Repita los pasos 4 y 5 para crear las siguientes variables:
 
@@ -195,16 +195,16 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccione **FDM_Create_First_IC** como modelo de datos del formulario y pulse **Seleccionar**.
+   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
-   1. Pulse **Siguiente**.
+   1. Seleccione **Siguiente**.
 
-1. Seleccione la pestaña **Variables** en el panel izquierdo y pulse **Crear**.
+1. Seleccione el **Variables** en el panel izquierdo y seleccione **Crear**.
 1. En la sección **Crear variable**:
 
    1. Escriba **Saldo anterior** como nombre de la variable.
    1. Seleccione **Número** como tipo.
-   1. Pulse **Crear**.
+   1. Seleccione **Crear**.
 
    Repita los pasos 4 y 5 para crear las siguientes variables:
 
@@ -262,9 +262,9 @@ Para crear texto estático y utilizar elementos del modelo de datos de formulari
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccione **FDM_Create_First_IC** como modelo de datos del formulario y pulse **Seleccionar**.
+   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
-   1. Pulse **Siguiente**.
+   1. Seleccione **Siguiente**.
 
 1. Cree texto estático para los siguientes campos mediante el panel derecho:
 
@@ -293,7 +293,7 @@ Para crear texto estático y utilizar elementos del modelo de datos de formulari
 
    ![Resumen de gastos](assets/summary_charges_static_fdm_new.png)
 
-1. Seleccione el texto en la fila **Gastos por servicios de valor agregado** y pulse **Crear regla** para crear una condición basada en la que se muestra la fila en la comunicación interactiva:
+1. Seleccione el texto en la **Cargos por servicios de valor agregado** fila y seleccione **Crear regla** para crear una condición basada en la que se muestra la fila en la comunicación interactiva:
 1. En la ventana emergente **Crear regla**:
 
    1. Seleccione **Modelos y variables de datos** y luego **facturas** > **callcharges**.

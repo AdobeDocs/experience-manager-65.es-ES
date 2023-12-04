@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2206'
-ht-degree: 98%
+source-wordcount: '2136'
+ht-degree: 95%
 
 ---
 
@@ -81,7 +81,7 @@ Para crear una comunicación interactiva a partir de los registros guardados en 
 
 1. Cree una [Carpeta inspeccionada](/help/forms/using/creating-configure-watched-folder.md) y configúrela para utilizar la API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
-   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Pulse **[!UICONTROL Nueva]**.
+   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Seleccionar **[!UICONTROL Nuevo]**.
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
@@ -97,7 +97,7 @@ Para crear una comunicación interactiva a partir de los registros guardados en 
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio predeterminado no utiliza la opción Configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
 
-   1. Toque **[!UICONTROL Crear]**. Se creará la carpeta inspeccionada.
+   1. Seleccionar **[!UICONTROL Crear]** Se creará la carpeta vigilada.
 1. Utilice la carpeta inspeccionada para generar una comunicación interactiva:
    1. Abra la carpeta inspeccionada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada y coloque el archivo JSON en la carpeta recién creada.
@@ -113,9 +113,9 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
 
 1. Configure el modelo de datos de formulario de la plantilla:
    1. Abra el modelo de datos de formulario asociado a la plantilla de comunicación interactiva.
-   1. Seleccione el OBJETO DEL MODELO DE NIVEL SUPERIOR y pulse Editar propiedades.
+   1. Seleccione el OBJETO DEL MODELO DE NIVEL SUPERIOR y seleccione Editar propiedades.
    1. Seleccione el servicio de recuperación o Get-service en el campo Servicio de lectura del panel Editar propiedades.
-   1. Pulse el icono en forma de lápiz del argumento del servicio de lectura para enlazar el argumento a un atributo de solicitud y especificar el valor del enlace. Vincula el argumento del servicio al atributo del enlace o el valor literal especificado, el cual se pasa al servicio como argumento para recuperar datos asociados con el valor especificado de la fuente de datos.
+   1. Seleccione el icono de lápiz del argumento del servicio de lectura para enlazar el argumento a un atributo de solicitud y especificar el valor del enlace. Vincula el argumento del servicio al atributo del enlace o el valor literal especificado, el cual se pasa al servicio como argumento para recuperar datos asociados con el valor especificado de la fuente de datos.
 
       <br>
         En este ejemplo, el argumento del ID toma el valor del atributo del ID del perfil del usuario y lo pasa como argumento al servicio de lectura. Leerá y devolverá los valores de las propiedades asociadas del objeto del modelo de datos de empleado del ID especificado. Por lo tanto, si especifica 00250 en el campo ID del formulario, el servicio de lectura leerá los datos del empleado con el ID de empleado 00250.
@@ -143,7 +143,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
 
 1. Cree una [carpeta inspeccionada](/help/forms/using/creating-configure-watched-folder.md) y configúrela para utilizar el servicio de la API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
-   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Pulse **[!UICONTROL Nueva]**.
+   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Seleccionar **[!UICONTROL Nuevo]**.
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
@@ -159,7 +159,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio predeterminado no utiliza la opción Configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
 
-   1. Toque **[!UICONTROL Crear]**. Se creará la carpeta inspeccionada.
+   1. Seleccionar **[!UICONTROL Crear]** Se creará la carpeta vigilada.
 1. Utilice la carpeta inspeccionada para generar una comunicación interactiva:
    1. Abra la carpeta inspeccionada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada. Coloque el archivo JSON creado en el paso 2 en la carpeta recién creada.

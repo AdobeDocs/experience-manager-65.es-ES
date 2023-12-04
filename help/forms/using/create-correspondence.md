@@ -6,10 +6,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3849'
-ht-degree: 97%
+source-wordcount: '3832'
+ht-degree: 82%
 
 ---
 
@@ -23,14 +23,14 @@ Después de crear [la plantilla de carta en Administración de correspondencia](
 
 Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
-1. En la página Cartas, pulse **Seleccionar**.
+1. En la página Cartas, seleccione **Seleccionar**.
 1. Pulse la carta adecuada para seleccionarla.
 
    ![Seleccionar carta](assets/1_selectletter.png)
 
    Seleccionar carta
 
-1. Para una carta basada en el diccionario de datos, seleccione **Previsualizar** > **Previsualizar**. O para una carta no basada en diccionario de datos, seleccione **Previsualizar**. También puede situarse sobre una carta (sin seleccionarla) y pulsar el icono Previsualizar carta para previsualizarla.
+1. Para una carta basada en el diccionario de datos, seleccione **Previsualizar** > **Previsualizar**. O para una carta no basada en diccionario de datos, seleccione **Previsualizar**. También puede situarse sobre una carta (sin seleccionarla) y seleccionar el icono Previsualizar carta para previsualizarla.
 
    >[!NOTE]
    >
@@ -63,7 +63,7 @@ En la pestaña Datos, rellene los campos de diseño y los marcadores de posició
 
 1. Escriba las variables de datos y de contenido en los campos según sea necesario. Rellene todos los campos obligatorios marcados con un asterisco (&#42;) para habilitar el botón **Enviar**.
 
-   Pulse un valor del campo de datos en la vista previa de la carta HTML para resaltar el campo de datos correspondiente en la pestaña Datos.
+   Seleccione un valor de campo de datos en la vista previa de la carta del HTML para resaltar el campo de datos correspondiente en la pestaña Datos.
 
    ![Escriba datos en la carta](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
@@ -75,7 +75,7 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 
    ![Pestaña Contenido: módulo destacado en el contenido](assets/3_content.png)
 
-1. Edite los módulos de contenido, según sea necesario, en la pestaña Contenido. Para centrar la atención en el módulo de contenido relevante en la jerarquía de contenido, puede pulsar la línea o el párrafo correspondiente en la vista previa de la carta o pulsar el módulo de contenido directamente en la jerarquía de contenido.
+1. Edite los módulos de contenido, según sea necesario, en la pestaña Contenido. Para centrar la atención en el módulo de contenido relevante en la jerarquía de contenido, puede seleccionar la línea o el párrafo correspondiente en la vista previa de la carta o seleccionar el módulo de contenido directamente en la jerarquía de contenido.
 
    Por ejemplo, la línea “Hemos revisado...” está seleccionada en el siguiente gráfico y el módulo de contenido correspondiente está seleccionado en la pestaña Contenido.
 
@@ -86,8 +86,8 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
    Para obtener más información sobre las acciones disponibles para varios módulos en la interfaz de usuario Crear correspondencia, consulte [Acciones e información disponible en la interfaz de usuario Crear correspondencia](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
 1. Para localizar módulos de contenido, utilice el campo Buscar. Escriba el nombre completo o parcial o el título del módulo de contenido para buscarlo en la correspondencia.
-1. Pulse el icono Mostrar ( ![mostrar](assets/display.png)) delante de una lista, texto, condición o área de destino para mostrarlo u ocultarlo en la carta.
-1. Para editar un módulo de texto dentro de la línea o editable, pulse el icono **Editar** ( ![edittextmodule](assets/edittextmodule.png)) o haga doble clic en el módulo de texto correspondiente en la vista previa de la carta.
+1. Seleccione el icono Mostrar ( ![exhibición](assets/display.png)) delante de una lista, texto, condición o área de destino para mostrarlo u ocultarlo en la carta.
+1. Para editar un módulo de texto dentro de la línea o editable, seleccione el **Editar** icono ( ![edittextmodule](assets/edittextmodule.png)) o haga doble clic en el módulo de texto correspondiente en la vista previa de la carta.
 
    El sistema muestra un editor de texto para editar y dar formato al texto.
 
@@ -131,22 +131,22 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 
    Administración de correspondencia ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [agregar compatibilidad con caracteres especiales adicionales o personalizados usando la personalización](../../forms/using/custom-special-characters.md).
 
-1. Para resaltar o hacer énfasis en determinados fragmentos de texto de un módulo en línea editable, seleccione el texto y pulse Color de resaltado.
+1. Para resaltar fragmentos de texto en un módulo en línea editable, seleccione el texto y elija Color de resaltado.
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   Puede pulsar directamente en un color básico `**[A]**` presentes en la paleta Colores básicos o pulsar **Seleccionar** después de usar el regulador `**[B]**` para elegir la sombra adecuada de color.
+   Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccione **Seleccionar** después de usar el regulador `**[B]**` para elegir la sombra adecuada del color.
 
-   Alternativamente, también puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, pulsar Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
+   También puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccione Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Realice los cambios de contenido y formato adecuados y pulse **Guardar**. Pulse ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) para moverse entre módulos de texto editables, o pulse **Guardar y siguiente** para guardar los cambios y pasar al siguiente módulo de texto editable.
-1. El sistema también muestra las variables sin rellenar para cada una de las ramas. Cuando no hay variables no rellenadas, las estas se mostrarán como 0. Si hay variables sin rellenar, puede pulsar una rama para expandirla y localizarlas. Utilice la barra de herramientas de contenido para eliminar contenido, aumentar/disminuir la sangría del contenido e insertar saltos de página antes o después del contenido.
+1. Realice los cambios de contenido y formato adecuados y seleccione **Guardar**. Seleccionar ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) para moverse entre módulos de texto editables, o seleccione **Guardar y siguiente** para guardar los cambios y pasar al siguiente módulo de texto editable.
+1. El sistema también muestra las variables sin rellenar para cada una de las ramas. Cuando no hay variables no rellenadas, las estas se mostrarán como 0. Si hay variables sin rellenar, puede seleccionar una rama para expandirla y localizarlas. Utilice la barra de herramientas de contenido para eliminar contenido, aumentar/disminuir la sangría del contenido e insertar saltos de página antes o después del contenido.
 
    Puede insertar saltos de página por encima y por debajo de los módulos de datos incluso cuando formen parte de listas y condiciones.
 
-1. Pulse Abrir/Cerrar variable de contenido ( ![opencontentvariables](assets/opencontentvariables.png)) para abrir las variables de contenido y rellenarlas correctamente.
+1. Seleccione Abrir/Cerrar variable de contenido ( ![opencontentvariables](assets/opencontentvariables.png)) para abrir las variables de contenido y rellenarlas correctamente.
 1. Una vez que rellene correctamente las variables que estén sin rellenar, el recuento de variables sin rellenar se establecerá en 0.
 
    En la interfaz de usuario Crear correspondencia, el recuento de variables sin rellenar se mostrará en cada nivel de la jerarquía de cualquier módulo que contenga al menos una variable. Si un módulo contiene variables no rellenadas, el recuento se mostrará en los niveles de variable, módulo, área de destino y plantilla de carta.
@@ -204,8 +204,8 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 ### Administrar archivos adjuntos {#manage-attachments}
 
 1. Seleccione **Archivos adjuntos**. Administración de correspondencia mostrará los archivos adjuntos disponibles, tal como se configuran al crear la plantilla de la carta.
-1. Puede optar por no enviar un archivo adjunto junto con la carta al pulsar el icono Ver y puede pulsar la cruz del archivo adjunto para eliminarlo de la carta. Para los archivos adjuntos especificados, al crear una plantilla de carta, como Obligatorio, los iconos Ver y Eliminar están deshabilitados.
-1. Pulse el icono Acceder a la biblioteca (![libraryaccess](assets/libraryaccess.png)) para acceder a la biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
+1. Puede optar por no enviar un archivo adjunto junto con la carta al pulsar el icono Ver y puede seleccionar la cruz del archivo adjunto para eliminarlo de la carta. Para los archivos adjuntos especificados, al crear una plantilla de carta, como Obligatorio, los iconos Ver y Eliminar están deshabilitados.
+1. Seleccione el acceso a la biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acceder a la Biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
 
    >[!NOTE]
    >
@@ -219,13 +219,13 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 
 Puede realizar cambios en el diseño y el contenido para garantizar que la carta tenga el aspecto que desea y se envíe a los distintos procesos de publicación.
 
-1. Para resaltar todo el contenido editable de la carta, pulse **Resaltar secciones editables**.
+1. Para resaltar todo el contenido editable de la carta, seleccione **Resaltar secciones editables**.
 
    El contenido editable de la carta se resaltará con un fondo gris.
 
    ![Resaltar contenido editable](assets/4_highlightmoduleincontent-1.png)
 
-1. Edite los módulos de contenido, según sea necesario, en la pestaña Contenido. Para centrar la atención en el módulo de contenido relevante en la jerarquía de contenido, puede pulsar la línea o el párrafo correspondiente en la vista previa de la carta o pulsar el módulo de contenido directamente en la jerarquía de contenido.
+1. Edite los módulos de contenido, según sea necesario, en la pestaña Contenido. Para centrar la atención en el módulo de contenido relevante en la jerarquía de contenido, puede seleccionar la línea o el párrafo correspondiente en la vista previa de la carta o seleccionar el módulo de contenido directamente en la jerarquía de contenido.
 
    Por ejemplo, la línea “Para permitirnos acceder...” está seleccionada en el gráfico de abajo y el módulo de contenido correspondiente está seleccionado en la pestaña Contenido.
 
@@ -233,7 +233,7 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
 
    Para obtener más información sobre las acciones disponibles para varios módulos en la interfaz de usuario Crear correspondencia, consulte [Acciones e información disponible en la interfaz de usuario Crear correspondencia](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Para agregar un salto de página a la carta, pulse donde desee insertar un salto de página y seleccione Salto de página antes o Salto de página después ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
+1. Para agregar un salto de página a la carta, seleccione dónde desee insertar un salto de página y seleccione Salto de página antes o Salto de página después ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
    En la carta se insertará un marcador de posición de salto de página explícito. Para ver cómo afecta un salto de página explícito a la carta, consulte la vista previa del PDF aplanado.
 
@@ -243,13 +243,13 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
 
    ![Salto de página explícito](assets/8_pagebreak.png)
 
-1. Para guardar la carta como borrador, para poder volver a trabajar más adelante, pulse Guardar como borrador. Para utilizar esta opción, la carta debe [publicarse](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obtener más información, consulte Instancia de borrador en las [instancias Guardar borrador y Enviar carta](#savingdrafts).
+1. Para guardar la carta como borrador, para poder volver a trabajar más adelante, seleccione Guardar como borrador. Para utilizar esta opción, la carta debe [publicarse](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Para obtener más información, consulte Instancia de borrador en las [instancias Guardar borrador y Enviar carta](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   El cuadro de diálogo Nombre de la carta en estado de borrador aparecerá con el ID de instancia de la carta. Si lo desea, puede editar este ID Tome nota del ID de la carta y, a continuación, pulse **Listo**. Más tarde, podrá usar este ID para [volver a cargar el borrador de la carta](submit-letter-topostprocess.md#reloaddraft).
+   El cuadro de diálogo Nombre de la carta en estado de borrador aparecerá con el ID de instancia de la carta. Si lo desea, puede editar este ID Anote el ID de la carta y, a continuación, seleccione **Listo**. Más tarde, podrá usar este ID para [volver a cargar el borrador de la carta](submit-letter-topostprocess.md#reloaddraft).
 
-1. Para obtener una vista previa de la carta como PDF aplanado con el diseño exacto y los saltos de página a medida que se envíen, pulse ( ![previsualizar](assets/preview.png)) Previsualizar.
+1. Para obtener una vista previa de la carta como PDF aplanado con el diseño exacto y los saltos de página a medida que se envíen, seleccione ( ![previsualización](assets/preview.png)) Vista previa.
 
    La carta aparecerá como PDF aplanado. El PDF aplanado es la representación exacta de la carta tal como se enviará con las fuentes, los saltos y el diseño correctos.
 
@@ -257,13 +257,13 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
    >
    >Si utiliza Mozilla Firefox y el tipo de representación HTML, para previsualizar la carta como PDF aplanado, asegúrese de utilizar el complemento del explorador nativo y no el complemento de Acrobat. Para seleccionar el complemento nativo del explorador, vaya a la configuración de Mozilla Firefox y, para el tipo de contenido PDF, seleccione Previsualizar en Firefox.
 
-1. Si la vista previa del PDF aplanado es satisfactoria, pulse **Enviar** para presentar la carta. O bien, para cambiar la carta, pulse **Salir de vista previa** para volver a la vista previa de la interfaz de usuario Crear correspondencia de la carta y realizar cambios en ella. Al pulsar Enviar, si la configuración Administrar instancia de carta está habilitada en la instancia de publicación, se generará la instancia de envío de la carta.
+1. Si la vista previa del PDF aplanado es satisfactoria, seleccione **Enviar** para enviar la carta. O bien, para cambiar la carta, seleccione **Salir de vista previa** para volver a la vista previa de la interfaz de usuario Crear correspondencia de la carta y realizar cambios en ella. Al seleccionar Enviar, si la configuración Administrar instancia de carta está habilitada en la instancia de publicación, se genera la instancia de envío de la carta.
 
    Para obtener más información, consulte Instancia de borrador en las instancias Guardar borrador y Enviar carta.
 
    También puede guardar la carta como borrador para cambiarla más adelante.
 
-   Después de realizar los cambios necesarios, puede enviar la carta desde la vista previa HTML5 o pulsar de nuevo Previsualizar para revisar el resultado del PDF aplanado.
+   Después de realizar los cambios necesarios, puede enviar la carta desde la vista previa de HTML5 o seleccionar de nuevo Vista previa para revisar el resultado del PDF aplanado.
 
    Para obtener información sobre las diferencias entre formularios HTML5 y PDF, consulte [Diferenciar características entre formularios HTML5 y formularios PDF](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -354,10 +354,10 @@ A continuación se muestran las ventajas y las funcionalidades disponibles en la
 
 **Ventajas de los formularios móviles/vista previa HTML**
 
-* **Pulse un valor de campo de datos para resaltar el campo de datos correspondiente**: en la interfaz de usuario de Crear correspondencia, puede pulsar un valor de campo de datos en la carta para resaltar el campo de datos correspondiente en la pestaña Datos. Para obtener más información, consulte [Escribir datos](#enterdata).
+* **Seleccione un valor de campo de datos para resaltar el campo de datos correspondiente**: en la interfaz de usuario Crear correspondencia, puede seleccionar un valor de campo de datos en la carta para resaltar el campo de datos correspondiente en la pestaña Datos. Para obtener más información, consulte [Escribir datos](#enterdata).
 
 * **Compatibilidad con exploradores**: los exploradores retiran la compatibilidad con NPAPI gradualmente, lo que afecta a la vista previa PDF de la carta. La vista previa de la carta en los formularios HTML/móvil no se ve afectada por esto.
-* **Resaltar contenido editable en una carta**: en la interfaz de usuario de Crear correspondencia, puede pulsar Resaltar contenido editable para resaltar en gris todo el contenido editable de la carta. Para obtener más información, consulte [Administrar contenido](#managecontent).
+* **Resaltar contenido editable en una carta**: en la interfaz de usuario Crear correspondencia, puede seleccionar Resaltar contenido editable para resaltar en gris todo el contenido editable de la carta. Para obtener más información, consulte [Administrar contenido](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Ventajas de la vista previa PDF**

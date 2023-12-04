@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2228'
-ht-degree: 93%
+source-wordcount: '2080'
+ht-degree: 84%
 
 ---
 
@@ -56,8 +56,8 @@ Necesita el [Paquete de complementos para AEM Forms](https://helpx.adobe.com/es/
 Siga estos pasos para crear una variable:
 
 1. AEM En una instancia de, vaya a Herramientas ![Herramientas](/help/forms/using/assets/hammer.png) > Flujo de trabajo > Modelos.
-1. Pulse **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y pulse **[!UICONTROL Editar]**.
-1. Pulse el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y pulse **[!UICONTROL Agregar variable]**.
+1. Seleccionar **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y seleccione **[!UICONTROL Editar]**.
+1. Seleccione el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y seleccione **[!UICONTROL Agregar variable]**.
 
    ![Agregar variable](assets/variables_add_variable_new.png)
 
@@ -69,7 +69,7 @@ Siga estos pasos para crear una variable:
    * Modelo de datos de formulario: especifique una ruta del modelo de datos de formulario.
    * ArrayList: Especifique un subtipo para la colección.
 
-1. Especifique una descripción opcional para la variable y pulse ![done_icon](assets/done_icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
+1. Especifique una descripción opcional para la variable y seleccione ![done_icon](assets/done_icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
 
 Cuando cree variables, tenga en cuenta las siguientes prácticas:
 
@@ -102,11 +102,11 @@ También puede actualizar elementos específicos de una variable de tipo JSON o 
 
 Ejecute los siguientes pasos para agregar la asignación entre variables:
 
-1. En la página de edición del flujo de trabajo, pulse el icono Pasos en la barra de tareas del modelo de flujo de trabajo.
-1. Arrastre y suelte el paso **Establecer paso** en el editor de flujo de trabajo, pulse el paso y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
+1. En la página de edición del flujo de trabajo, seleccione el icono Pasos de la barra de tareas del modelo de flujo de trabajo.
+1. Arrastre y suelte el **Establecer variable** vaya al editor de flujo de trabajo, seleccione el paso y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
 1. En el cuadro de diálogo Establecer variable, seleccione **[!UICONTROL Asignación]** > **[!UICONTROL Agregar asignación]**.
 1. En la sección **Variable de mapa**, seleccione la variable para almacenar datos, seleccione el modo de asignación y especifique un valor para almacenar en la variable. Los modos de asignación varían en función del tipo de variable.
-1. Asigne más variables para crear una expresión significativa. Pulse ![done_icon](assets/done_icon.png) para guardar los cambios.
+1. Asigne más variables para crear una expresión significativa. Seleccionar ![done_icon](assets/done_icon.png) para guardar los cambios.
 
 ### Ejemplo 1: Consultar una variable XML para establecer el valor de una variable en cadena {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -175,7 +175,7 @@ En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [eje
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Del mismo modo, seleccione una ruta de script externa o especifique el script ECMA para las expresiones de enrutamiento para evaluar la rama activa. Pulse **[!UICONTROL Cambiar nombre de rama]** para especificar un nombre alternativo para la rama.
+Del mismo modo, seleccione una ruta de script externa o especifique el script ECMA para las expresiones de enrutamiento para evaluar la rama activa. Seleccionar **[!UICONTROL Cambiar nombre de rama]** para especificar un nombre alternativo para la rama.
 
 Para ver más ejemplos, consulte [Crear un modelo del flujo de trabajo](../../forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -287,9 +287,9 @@ Los datos procesados mediante Forms Workflow pueden contener datos confidenciale
 
 ## Editar una variable {#edit-a-variable}
 
-1. En la página Editar flujo de trabajo, pulse el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
-1. Pulse el icono ![editar](assets/edit.png) (Editar) junto al nombre de la variable que desea editar.
-1. Edite la información de la variable y pulse ![done_icon](assets/done_icon.png) para guardar los cambios. No se pueden editar los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]** para una variable.
+1. En la página Editar flujo de trabajo, seleccione el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
+1. Seleccione el ![editar](assets/edit.png) (Editar) junto al nombre de la variable que desea editar.
+1. Edite la información de la variable y seleccione ![done_icon](assets/done_icon.png) para guardar los cambios. No se pueden editar los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]** para una variable.
 
 ## Eliminar una variable {#delete-a-variable}
 
@@ -297,9 +297,9 @@ Antes de eliminar la variable, elimine todas las referencias de la variable del 
 
 Siga estos pasos para eliminar una variable:
 
-1. En la página Editar flujo de trabajo, pulse el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
-1. Pulse el icono Eliminar junto al nombre de la variable que desee eliminar.
-1. Pulse ![done_icon](assets/done_icon.png) para confirmar y eliminar la variable.
+1. En la página Editar flujo de trabajo, seleccione el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
+1. Seleccione el icono Eliminar junto al nombre de la variable que desee eliminar.
+1. Seleccionar ![done_icon](assets/done_icon.png) para confirmar y eliminar la variable.
 
 ## Referencias {#references}
 

@@ -7,16 +7,16 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 81%
+source-wordcount: '781'
+ht-degree: 78%
 
 ---
 
 # Envío asincrónico de formularios adaptables{#asynchronous-submission-of-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -33,14 +33,14 @@ Siga leyendo para obtener más información sobre el envío asincrónico en form
 
 Para configurar el envío asincrónico en un formulario adaptable haga lo siguiente:
 
-1. En el modo Autor del formulario adaptable, seleccione el objeto Contenedor de formularios y pulse ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
+1. En el modo Autor del formulario adaptable, seleccione el objeto Contenedor de formularios y seleccione ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
 1. En la sección de propiedades de **[!UICONTROL Envío]**, habilite **[!UICONTROL Usar envío asincrónico]**.
 1. En la sección **[!UICONTROL Al enviar]**, seleccione una de las siguientes opciones para realizarla cuando se envíe correctamente del formulario.
 
    * **[!UICONTROL Redirigir a URL]**: redirige a la URL o página especificada después de enviar el formulario. Puede especificar una URL o examinar y elegir la ruta a una página en el campo **[!UICONTROL URL/ruta de redireccionamiento]**.
    * **[!UICONTROL Mostrar mensaje]**: muestra un mensaje sobre el envío del formulario. Puede escribir un mensaje en el campo de texto debajo de la opción Mostrar mensaje. El campo de texto admite el formato de texto enriquecido.
 
-1. Pulse ![check-button1](assets/check-button1.png) para guardar las propiedades.
+1. Seleccionar ![check-button1](assets/check-button1.png) para guardar las propiedades.
 
 ## Funcionamiento del envío asincrónico {#how-asynchronous-submission-works}
 
@@ -102,9 +102,9 @@ Los desarrolladores y autores de formularios pueden escribir reglas a nivel de f
 
 Realice los siguientes pasos para escribir reglas en el editor de código para controlar los eventos de éxito y error.
 
-1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto de formulario y pulse ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
-1. Seleccione **[!UICONTROL Formulario]** en el árbol Objetos de formulario y pulse **[!UICONTROL Crear]**.
+1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto del formulario y seleccione ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
+1. Seleccionar **[!UICONTROL Form]** en el árbol Objetos de formulario y seleccione **[!UICONTROL Crear]**.
 1. Seleccione **[!UICONTROL Editor de código]** de la lista desplegable de modo de selección.
-1. En el editor de código, pulse **[!UICONTROL Editar código]**. Pulse **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
+1. En el editor de código, seleccione **[!UICONTROL Editar código]**. Seleccionar **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
 1. Elija **[!UICONTROL Envío correcto]** o **[!UICONTROL Error en el envío]** de la lista desplegable **[!UICONTROL Evento]**.
-1. Escriba una regla para el evento seleccionado y pulse **[!UICONTROL Listo]** para guardar la regla.
+1. Escriba una regla para el evento seleccionado y seleccione **[!UICONTROL Listo]** para guardar la regla.

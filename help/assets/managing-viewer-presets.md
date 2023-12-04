@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 8%
+source-wordcount: '4422'
+ht-degree: 7%
 
 ---
 
@@ -308,7 +308,7 @@ Consulte &quot;Notas de la versión de los visualizadores&quot; en la tabla de c
   </tr>
   <tr>
    <td>Zoom_oscuro<br /> </td>
-   <td>Acercar o alejar<br /> </td>
+   <td>Zoom<br /> </td>
    <td><code>html5_basiczoomviewer_dark.css</code></td>
   </tr>
   <tr>
@@ -348,13 +348,13 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
    <td><p>Panes</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Seleccione lo siguiente</strong></p> </td>
+   <td><p><strong>Seleccionar</strong></p> </td>
    <td><p>Muestra una ventana flotante</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
    <td><p>Muestra u oculta la interfaz de usuario</p> </td>
   </tr>
   <tr>
-   <td><p><strong>Pulsar dos veces</strong></p> </td>
+   <td><p><strong>Seleccionar dos veces</strong></p> </td>
    <td><p>No se aplica</p> </td>
    <td><p>Aumenta o restablece</p> </td>
    <td><p>Aumenta o restablece</p> </td>
@@ -533,7 +533,7 @@ Para ilustrar, supongamos que tiene un segmento de vídeo de 30 segundos. Ademá
 | **Subsegmento de vídeo** | **Tiempo de subsegmento en segundos** | **Miniaturas visibles en el panel** |
 |---|---|---|
 | 1 | 0-10 | 1, 2, 3, 4 |
-| 2 | 10-20 | 4, 5, 6, 7 |
+| 2 | De 10 a 20 | 4, 5, 6, 7 |
 | 3 | 20-30 | 6, 7, 8, 9 |
 
 El subsegmento de vídeo 3 no se extiende más allá de las miniaturas que se le han asignado. Observe también que las miniaturas 4, 6 y 7 son visibles en el panel el doble de tiempo que las otras miniaturas.
@@ -555,7 +555,7 @@ Al crear ajustes preestablecidos de visualizador de titular de carrusel, se pued
 
 | | **Descripción** | **Acciones** |
 |---|---|---|
-| **[!UICONTROL Icono de punto interactivo]** | Cambiar el icono utilizado para el punto interactivo | Para cambiar la imagen del icono de punto interactivo, en la **[!UICONTROL Aspecto]** pestaña, en **[!UICONTROL Componente seleccionado]**, seleccione **[!UICONTROL ImageMapEffect]**. En **[!UICONTROL Icono]**, seleccione **[!UICONTROL Fondo]** y, en el campo **[!UICONTROL Imagen]**, vaya a la imagen de fondo que desee. |
+| **[!UICONTROL Icono de punto interactivo]** | Cambiar el icono utilizado para el punto interactivo | Para cambiar la imagen del icono de punto interactivo, en la **[!UICONTROL Aspecto]** pestaña, en **[!UICONTROL Componente seleccionado]**, seleccione **[!UICONTROL ImageMapEffect]**. En **[!UICONTROL Icono]**, seleccione **[!UICONTROL Fondo]** y en el **[!UICONTROL Imagen]** vaya a la imagen de fondo que desee. |
 
 ## Activar o desactivar ajustes preestablecidos de visor {#activating-or-deactivating-viewer-presets}
 

@@ -13,16 +13,16 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 8%
+source-wordcount: '3794'
+ht-degree: 7%
 
 ---
 
 # Administrar ajustes preestablecidos de imagen de Dynamic Media{#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten que Adobe Experience Manager Assets entregue dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
+Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets entregar dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido al exportar imágenes, que también redistribuye las imágenes según las especificaciones del administrador.
 
@@ -81,11 +81,11 @@ El formato de archivo de Adobe Illustrator es una variante de PDF. Las principal
 * Los documentos de Adobe Illustrator constan de una sola página con varias capas. Cada capa se extrae como un subrecurso PNG en el recurso principal de Illustrator.
 * Los documentos del PDF constan de una o más páginas. Cada página se extrae como un subactivo de PDF de página única en el documento principal de PDF de varias páginas.
 
-Los subrecursos los crea el `Create Sub Asset process` componente dentro del conjunto `DAM Update Asset` flujo de trabajo. Para ver este componente de proceso dentro del flujo de trabajo, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL Recurso de actualización DAM]** > **[!UICONTROL Editar]**.
+Los subrecursos los crea el `Create Sub Asset process` componente dentro del conjunto `DAM Update Asset` flujo de trabajo. Para ver este componente de proceso dentro del flujo de trabajo, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL Recurso de actualización DAM]** > **[!UICONTROL Editar]**.
 
 Consulte también [Visualización de páginas de un archivo de varias páginas](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-Puede ver los subrecursos o las páginas al abrir el recurso, pulsar el menú Contenido y seleccionar **[!UICONTROL Recursos secundarios]** o **[!UICONTROL Páginas]**. Los subactivos son activos reales. Es decir, las páginas PDF se extraen mediante la variable `Create Sub Asset` componente de flujo de trabajo. A continuación, se almacenan como `page1.pdf`, `page2.pdf`, etc., debajo del recurso principal. Una vez almacenados, el `DAM Update Asset` el flujo de trabajo los procesa.
+Puede ver los subrecursos o las páginas al abrir el recurso, seleccionar el menú Contenido y seleccionar **[!UICONTROL Recursos secundarios]** o **[!UICONTROL Páginas]**. Los subactivos son activos reales. Es decir, las páginas PDF se extraen mediante la variable `Create Sub Asset` componente de flujo de trabajo. A continuación, se almacenan como `page1.pdf`, `page2.pdf`, etc., debajo del recurso principal. Una vez almacenados, el `DAM Update Asset` el flujo de trabajo los procesa.
 
 Para utilizar Dynamic Media para previsualizar y generar representaciones dinámicas para archivos AI, EPS o de PDF, se requieren los siguientes pasos de procesamiento:
 
@@ -106,7 +106,7 @@ Para utilizar Dynamic Media para previsualizar y generar representaciones dinám
 
 Puede acceder a `Rasterize PDF/AI Image Preview Rendition` procesar opciones de componentes mediante el `DAM Update Asset` flujo de trabajo.
 
-Pulse en Adobe Experience Manager en la parte superior izquierda y navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Recurso de actualización DAM]** y, en la barra de herramientas, pulse **[!UICONTROL Editar]**. En el [!UICONTROL Recurso de actualización DAM] página de flujo de trabajo, pulse dos veces el `Rasterize PDF/AI Image Preview Rendition` para abrir el cuadro de diálogo Propiedades del paso.
+En la esquina superior izquierda, seleccione Adobe Experience Manager y navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Recurso de actualización DAM]** y, en la barra de herramientas, seleccione **[!UICONTROL Editar]**. En el [!UICONTROL Recurso de actualización DAM] página de flujo de trabajo, seleccione dos veces `Rasterize PDF/AI Image Preview Rendition` para abrir el cuadro de diálogo Propiedades del paso.
 
 #### Rasterizar PDF/AI a las opciones de representación de previsualización de imagen {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -208,18 +208,18 @@ El tamaño de la miniatura se define en el siguiente formato: **[!UICONTROL anch
 
 **Para configurar el tamaño de la miniatura:**
 
-1. Tocar **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL Recurso de actualización DAM]** > **[!UICONTROL Editar]**.
-1. Pulse el botón **[!UICONTROL Recursos de imagen de proceso Dynamic Media]** y toque o haga clic en **[!UICONTROL Miniaturas]** pestaña. Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
+1. Seleccionar **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]** > **[!UICONTROL Recurso de actualización DAM]** > **[!UICONTROL Editar]**.
+1. Seleccione el **[!UICONTROL Recursos de imagen de proceso Dynamic Media]** y haga clic en el **[!UICONTROL Miniaturas]** pestaña. Cambie el tamaño de la miniatura, según sea necesario, y seleccione **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Pulse el paso **[!UICONTROL Procesar miniaturas]** y, a continuación, pulse la pestaña **[!UICONTROL Miniaturas]**. Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
+1. Seleccione el **[!UICONTROL Procesar miniaturas]** , luego seleccione la opción **[!UICONTROL Miniaturas]** pestaña. Cambie el tamaño de la miniatura, según sea necesario, y seleccione **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
    >Los valores del argumento de miniaturas del paso **[!UICONTROL Miniaturas de proceso]** deben coincidir con el argumento de miniaturas del paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**.
 
-1. Tocar **[!UICONTROL Guardar]** para guardar los cambios en el flujo de trabajo.
+1. Seleccionar **[!UICONTROL Guardar]** para guardar los cambios en el flujo de trabajo.
 
 ### Aumentar o reducir el número de ajustes preestablecidos de imagen de Dynamic Media que se muestran {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -238,7 +238,7 @@ Los ajustes preestablecidos de imagen que cree estarán disponibles como represe
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. En la propiedad limit, cambie el número al deseado, por ejemplo, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tocar **[!UICONTROL Guardar todo]**.
+1. Seleccionar **[!UICONTROL Guardar todo]**.
 
 ## Creación de un ajuste preestablecido de imagen de Dynamic Media {#creating-image-presets}
 
@@ -260,7 +260,7 @@ Consulte [Formato de archivo InDesign (INDD)](#indesign-indd-file-format).
 
 **Para crear un ajuste preestablecido de imagen de Dynamic Media:**
 
-1. En Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
+1. En Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
 1. Haga clic en **[!UICONTROL Crear]**. El **[!UICONTROL Editar ajuste preestablecido de imagen]** se abre.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -297,7 +297,7 @@ Si los deja en blanco, el Experience Manager verá que este ajuste preestablecid
 
 Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descritas en esta sección. Además, Adobe recomienda estas opciones de &quot;práctica recomendada&quot; para comenzar:
 
-* **[!UICONTROL Formato]** (pestaña **[!UICONTROL Básico]**): Seleccione **[!UICONTROL JPEG]** u otro formato que cumpla sus necesidades. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
+* **[!UICONTROL Formato]** (**[!UICONTROL Básico]** pestaña): seleccione **[!UICONTROL JPEG]** u otro formato que cumpla sus necesidades. Todos los navegadores web admiten el formato de imagen JPEG; ofrece un buen equilibrio entre los tamaños de archivos pequeños y la calidad de imagen. Sin embargo, las imágenes en formato JPEG utilizan un esquema de compresión con pérdidas que puede introducir artefactos de imagen no deseados si el ajuste de compresión es demasiado bajo. Por este motivo, Adobe recomienda establecer la calidad de compresión en 75. Este ajuste ofrece un buen equilibrio entre la calidad de imagen y el tamaño de archivo pequeño.
 
 * **[!UICONTROL Activar enfoque simple]**: No seleccione **[!UICONTROL Activar enfoque simple]** (este filtro de enfoque ofrece menos control que la configuración de máscara de enfoque).
 
@@ -492,7 +492,7 @@ A continuación se muestran algunos ejemplos básicos de lo que se puede hacer c
 
 ## Edición de ajustes preestablecidos de imagen {#modifying-image-presets}
 
-1. En Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
+1. En Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -507,14 +507,14 @@ Si está ejecutando el modo Dynamic Media híbrido, debe publicar manualmente lo
 
 **Para publicar ajustes preestablecidos de imagen en Dynamic Media, modo híbrido:**
 
-1. En Experience Manager, pulse o haga clic en el logotipo del Experience Manager para acceder a la consola de navegación global y pulse o haga clic en el icono Herramientas y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
-1. Seleccione el ajuste preestablecido de imagen o varios ajustes preestablecidos de imagen de la lista de ajustes preestablecidos de imagen y toque o haga clic en **[!UICONTROL Publish]**.
+1. En Experience Manager, haga clic en el logotipo del Experience Manager para acceder a la consola de navegación global, haga clic en el icono Herramientas y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
+1. Seleccione el ajuste preestablecido de imagen o varios ajustes preestablecidos de imagen de la lista de ajustes preestablecidos de imagen y haga clic en **[!UICONTROL Publish]**.
 1. Una vez publicado el ajuste preestablecido de imagen, el estado cambia de sin publicar a publicado.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Eliminando ajustes preestablecidos de imagen de Dynamic Media {#deleting-image-presets}
 
-1. En Experience Manager, toque o haga clic en el logotipo del Experience Manager para acceder a la consola de navegación global.
-1. Pulse el botón **[!UICONTROL Herramientas]** y luego vaya a **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
-1. Seleccione un ajuste preestablecido y haga clic en **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Tocar **[!UICONTROL Eliminar]** para eliminar o tocar **[!UICONTROL Cancelar]** para cancelar.
+1. En Experience Manager, haga clic en el logotipo del Experience Manager para acceder a la consola de navegación global.
+1. Seleccione el **[!UICONTROL Herramientas]** y luego vaya a **[!UICONTROL Assets]** > **[!UICONTROL Ajustes preestablecidos de imagen]**.
+1. Seleccione un ajuste preestablecido y haga clic en **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Seleccionar **[!UICONTROL Eliminar]** para eliminar o seleccionar **[!UICONTROL Cancelar]** para cancelar.

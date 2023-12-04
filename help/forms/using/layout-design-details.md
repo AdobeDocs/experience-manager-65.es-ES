@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 94%
+source-wordcount: '2171'
+ht-degree: 90%
 
 ---
 
@@ -56,7 +56,7 @@ Una vez analizado el diseño necesario para crear la comunicación interactiva, 
 
 Realice los siguientes pasos para utilizar el subformulario en una plantilla XDP:
 
-1. Abra Forms Designer, seleccione **Archivo** > **Nuevo** > **Usar un formulario en blanco**, pulse **Siguiente** y, a continuación, pulse **Finalizar** para abrir el formulario para la creación de plantillas.
+1. Abra Forms Designer y seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco**, seleccione **Siguiente**, y luego seleccione **Finalizar** para abrir el formulario y crear plantillas.
 
    Asegúrese de que las opciones **Biblioteca de objetos** y **Objeto** se seleccionan en el menú **Ventana**.
 
@@ -90,7 +90,7 @@ Realice los siguientes pasos para utilizar el subformulario en una plantilla XDP
    1. Vaya a la ubicación para guardar el archivo y especificar un nombre para la plantilla XDP.
    1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo**.
 
-   1. Pulse **Guardar**.
+   1. Seleccione **Guardar**.
 
 ### Uso del componente Campo de imagen en una plantilla XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -124,9 +124,9 @@ Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP 
 
    1. Especifique el número de filas y columnas de la tabla.
    1. Seleccione la casilla de verificación **Incluir fila de encabezado en tabla** para incluir una fila para el encabezado de tabla.
-   1. Pulse **Aceptar**.
+   1. Seleccionar **OK**.
 
-1. Toque **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón derecho en los nombres de celda incluidos en el encabezado y en otras filas y seleccione **Cambiar nombre de objeto** para cambiar el nombre de las celdas de la tabla.
+1. Seleccionar **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón derecho en los nombres de celda incluidos en el encabezado y en otras filas y seleccione **Cambiar nombre de objeto** para cambiar el nombre de las celdas de la tabla.
 1. Haga clic en los campos de texto del encabezado de la tabla de la **vista Diseño** y cambie su nombre.
 1. Arrastre y suelte el componente **Campo de texto** de la **Biblioteca de objetos** en cada una de las celdas de la tabla en la **vista Diseño**. Realice este paso para poder enlazar las celdas de tabla con los objetos del modelo de datos de formulario durante la creación de la comunicación interactiva.
 
@@ -141,15 +141,15 @@ Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP 
    1. Vaya a la ubicación para guardar el archivo y especifique el nombre de la plantilla XDP.
    1. Seleccione **.xdp** en la lista desplegable **Guardar como tipo**.
 
-   1. Pulse **Guardar**.
+   1. Seleccione **Guardar**.
 
 ### Cargar una plantilla XDP en el servidor de AEM Forms {#uploadxdptemplate}
 
 Una vez creada una plantilla XDP con el Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de comunicaciones interactivas.
 
 1. Seleccione **Forms** > **Formularios y documentos**.
-1. Pulse **Crear** > **Cargar archivo**.
-1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y pulse **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
+1. Seleccionar **Crear** > **Carga de archivos**.
+1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y seleccione **Abrir** para importar la plantilla XDP en el servidor de AEM Forms.
 
 ## Uso del esquema {#using-schema}
 

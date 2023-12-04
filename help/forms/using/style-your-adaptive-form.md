@@ -4,10 +4,10 @@ description: Aprenda a crear una temática personalizada, aplicar estilo a compo
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 81%
+source-wordcount: '1982'
+ht-degree: 61%
 
 ---
 
@@ -53,7 +53,7 @@ El editor de formularios adaptables proporciona varias temáticas predeterminada
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Abra las propiedades del **[!UICONTROL Contenedor de formularios adaptables]**. En el explorador de propiedades, navegue hasta **[!UICONTROL Básico]** > **[!UICONTROL Temática del formulario adaptable]**. El campo **[!UICONTROL Temática del formulario adaptable]** enumera todas las temáticas predeterminadas y personalizadas. De forma predeterminada, se aplica la temática Lienzo.
-1. Seleccione una temática del campo **[!UICONTROL Temática del formulario adaptable]**. Por ejemplo, **Temática de encuesta**. Tocar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para que pueda aplicar la temática seleccionada.
+1. Seleccione una temática del campo **[!UICONTROL Temática del formulario adaptable]**. Por ejemplo, **Temática de encuesta**. Seleccionar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para que pueda aplicar la temática seleccionada.
 
    ![Formulario adaptable con la temática predeterminada](assets/default-adaptive-form.png)
 
@@ -75,17 +75,17 @@ El diseño que se muestra más arriba requiere cambios en el texto del marcador 
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Pulse la imagen de logotipo en el componente [!UICONTROL encabezado] y pulse las **[!UICONTROL propiedades]** ![cmppr](assets/cmppr.png). En la propiedad [!UICONTROL imagen], pulse X para eliminar la imagen del logotipo existente.
-   1. Pulse **[!UICONTROL cargar]**, seleccione el logo.png y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios. La imagen se descargó en la sección [Antes de comenzar](/help/forms/using/style-your-adaptive-form.md#before-you-start).
-   1. Pulse el texto del encabezado. `We.Retail` y pulse ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL Editar]**. Cambie el texto del encabezado a `we retail`. Aplique formato de negrita solo a `we`en `we retail`.
+   1. Seleccione la imagen del logotipo en la [!UICONTROL encabezado] Componente y seleccione ![cmppr](assets/cmppr.png) **[!UICONTROL propiedades]**. En el [!UICONTROL imagen] , seleccione X para eliminar la imagen del logotipo existente.
+   1. Seleccionar **[!UICONTROL cargar]**, seleccione el logo.png y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios. La imagen se descargó en la sección [Antes de comenzar](/help/forms/using/style-your-adaptive-form.md#before-you-start).
+   1. Seleccionar texto de encabezado, `We.Retail`y seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL editar]**. Cambie el texto del encabezado a `we retail`. Aplique formato de negrita solo a `we`en `we retail`.
 
       ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Elimine el título y agregue un texto de marcador de posición:
 
-   1. Pulse el campo ID de cliente y pulse las propiedades ![cmppr](assets/cmppr.png).
+   1. Seleccione el campo ID de cliente y luego seleccione ![cmppr](assets/cmppr.png) propiedades.
    1. Copie el contenido del campo **[!UICONTROL Título]** en el campo **[!UICONTROL Texto del marcador de posición]**.
-   1. Elimine el contenido del campo **[!UICONTROL Título]** y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Eliminar el contenido del **[!UICONTROL Título]** y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Repita los tres pasos anteriores para todos los cuadros de texto, cuadros numéricos y campos de correo electrónico del formulario.
 
       ![updated-adaptive-form](assets/updated-adaptive-form.png)
@@ -101,16 +101,16 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
 ### Crear una temática {#create-a-theme}
 
 1. Inicie sesión en la instancia de autor de AEM y navegue hasta **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Temáticas]**. La dirección URL predeterminada es [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Pulse **[!UICONTROL Crear]** y seleccione **[!UICONTROL Temática]**. Aparecerá la página [!UICONTROL Crear temática] con los campos necesarios para crear una temática. Los campos **[!UICONTROL Título]** y **[!UICONTROL Nombre]** son obligatorios:
+1. Seleccionar **[!UICONTROL Crear]** y seleccione **[!UICONTROL Tema]**. Aparecerá la página [!UICONTROL Crear temática] con los campos necesarios para crear una temática. Los campos **[!UICONTROL Título]** y **[!UICONTROL Nombre]** son obligatorios:
 
    * **Título:** especifique un título para la temática. Por ejemplo, **Temática Global.** El título le ayuda a identificar la temática en la lista de temáticas.
    * **Nombre:** especifique el nombre de la temática. Por ejemplo, **Temática Global.** Se crea un nodo con el nombre especificado en el repositorio. A medida que empieza a escribir un título, el valor del campo de nombre se genera automáticamente. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos. Todas las entradas no válidas se sustituyen por guiones.
 
-1. Pulse **[!UICONTROL Crear]**. Se crea una temática y aparece un cuadro de diálogo para abrir el formulario y editarlo. Pulse **[!UICONTROL Abrir]** para abrir la temática recién creada en una pestaña nueva. La temática se abre en el editor de temáticas. Para aplicar estilo, el editor de temáticas utiliza un formulario adaptable incorporado que se incluye con AEM [!DNL Forms].
+1. Seleccione **[!UICONTROL Crear]**. Se crea una temática y aparece un cuadro de diálogo para abrir el formulario y editarlo. Seleccionar **[!UICONTROL Abrir]** para abrir la temática recién creada en una pestaña nueva. La temática se abre en el editor de temáticas. Para aplicar estilo, el editor de temáticas utiliza un formulario adaptable incorporado que se incluye con AEM [!DNL Forms].
 
    Para obtener información sobre el uso de la interfaz de usuario del editor de temáticas, consulte [Acerca del editor de temáticas](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Pulse **[!UICONTROL Opciones de temática]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. En el campo **[!UICONTROL Vista previa del formulario]**, seleccione el formulario adaptable **shipping-address-add-update-form**, pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), pulse **[!UICONTROL Guardar]**. Ahora, el editor de temáticas está configurado para usar su propio formulario adaptable en lugar del formulario adaptable predeterminado. Pulse **[!UICONTROL Cancelar]** para volver al editor de temáticas.
+1. Seleccionar **[!UICONTROL Opciones del tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. En el **[!UICONTROL Previsualizar formulario]** , seleccione el campo **shipping-address-add-update-form** formulario adaptable, seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), seleccione **[!UICONTROL Guardar]**. Ahora, el editor de temáticas está configurado para usar su propio formulario adaptable en lugar del formulario adaptable predeterminado. Seleccionar **[!UICONTROL Cancelar]** para volver al editor de temáticas.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -124,20 +124,20 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
 
 El encabezado y el pie de página proporcionan una apariencia coherente y distintiva a un formulario adaptable. Por lo general, el encabezado contiene el logotipo y el nombre de la organización, el pie de página contiene información sobre los derechos de autor y estos datos son idénticos en varias formas de organización. Para aplicar estilo al encabezado y al pie de página del formulario adaptable Formulario-actualizar-agregar-dirección-envío:
 
-1. Navegue hasta la opción **[!UICONTROL Encabezado]** > **[!UICONTROL Texto]** en el panel Selectores. El panel Selectores se encuentra a la izquierda del editor de temáticas. Si el panel no está visible, pulse ![toggle-side-panel](assets/toggle-side-panel.png) Alternar panel lateral.
+1. Navegue hasta la opción **[!UICONTROL Encabezado]** > **[!UICONTROL Texto]** en el panel Selectores. El panel Selectores se encuentra a la izquierda del editor de temáticas. Si el panel no está visible, seleccione ![toggle-side-panel](assets/toggle-side-panel.png) Alternar panel lateral.
 
-1. Establezca las siguientes propiedades en el acordeón **[!UICONTROL Texto]** y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Establezca las siguientes propiedades en la **[!UICONTROL Texto]** acordeón y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propiedad | Valor |
    |---|---|
    | Familia de fuentes | Arial® |
    | Color de fuente | FFFFFF |
-   | Tamaño de fuente | 54 px |
+   | Tamaño de fuente | 54 px |
 
-1. Pulse el widget [!UICONTROL encabezado] y pulse **[!UICONTROL Encabezado]**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el acordeón **[!UICONTROL Dimensiones y posición]**, establezca la **[!UICONTROL Altura]** a `120px` y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el [!UICONTROL encabezado] widget y seleccionar **[!UICONTROL Header]**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el **[!UICONTROL Dimension y posición]** acordeón, configure el **[!UICONTROL Altura]** hasta `120px`y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expanda el acordeón del widget de encabezado **[!UICONTROL Fondo]**, establezca el **[!UICONTROL Color de fondo]** a `F6921E.`
 
-   Pase el ratón sobre **[!UICONTROL Imagen y degradado]** > **[!UICONTROL + Agregar]** y pulse **[!UICONTROL Imagen]**. Establezca las siguientes propiedades y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Pase el ratón sobre **[!UICONTROL Imagen y degradación]** > **[!UICONTROL + Agregar]**, seleccione **[!UICONTROL Imagen]**. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propiedad | Valor |
    |---|---|
@@ -145,7 +145,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
    | Posición | Inferior Derecha |
    | Mosaico | No repetir |
 
-1. En el editor de temáticas, pulse el logotipo en el encabezado y pulse **[!UICONTROL Logotipo de encabezado]**. Expanda el acordeón Dimensiones y posición, defina las siguientes propiedades y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. En el editor de temáticas, seleccione el logotipo en el encabezado y seleccione **[!UICONTROL Logotipo de encabezado]**. Expanda el acordeón Dimension y posición, establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -160,7 +160,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
         <li>Superior: 1,5 rem</li> 
         <li>Inferior: -35 px</li> 
         <li>Izquierda: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Sugerencia:</strong> Pulse el botón <img src="assets/link.png"> icono de vínculo para proporcionar un valor diferente a cada campo.<br /> </p> </td> 
+       </ul> <p><strong>Sugerencia:</strong> Seleccione el <img src="assets/link.png"> icono de vínculo para proporcionar un valor diferente a cada campo.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Altura</td> 
@@ -169,13 +169,13 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
     </tbody> 
    </table>
 
-1. Pulse el widget de pie de página y pulse **[!UICONTROL Pie de página]**. Expanda el acordeón **[!UICONTROL Fondo]**, establezca el **[!UICONTROL Color de fondo]** a `F6921E` y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el widget de pie de página y seleccione **[!UICONTROL Pie]**. Expanda el **[!UICONTROL Fondo]** acordeón, configure el **[!UICONTROL Color de fondo]** hasta `F6921E`y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Aplicar un estilo al componente de captura de datos y un fondo al formulario adaptable {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Puede utilizar varios componentes en un formulario adaptable para capturar datos. Por ejemplo, cuadro de texto y cuadro numérico. Puede proporcionar un estilo idéntico a todos los componentes de captura de datos o a uno independiente para cada componente. En este tutorial, se aplica un estilo idéntico a los cuadros numéricos (ID de cliente, código postal) y los cuadros de texto (ID de cliente, nombre, dirección de envío, estado, correo electrónico). Para aplicar estilo a los componentes de captura de datos, haga lo siguiente:
 
-1. Pulse **[!UICONTROL ID de cliente]** y pulse la opción **[!UICONTROL Widget de campo]**. Establezca las siguientes propiedades y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el **[!UICONTROL ID de cliente]** y seleccione el campo **[!UICONTROL Widget del campo]** opción. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -194,10 +194,10 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
       <td>Radio de borde </td> 
       <td> 
        <ul> 
-        <li>Superior: 7 px<br /> </li> 
-        <li>Derecha: 7 px<br /> </li> 
-        <li>Inferior: 7 px<br /> </li> 
-        <li>Izquierda: 7 px<br /> </li> 
+        <li>Superior: 7 px<br /> </li> 
+        <li>Derecha: 7 px<br /> </li> 
+        <li>Inferior: 7 px<br /> </li> 
+        <li>Izquierda: 7 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -213,7 +213,7 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
      <tr> 
       <td>Texto</td> 
       <td>Tamaño de fuente</td> 
-      <td>18 px</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Dimensiones y posición</td> 
@@ -225,13 +225,13 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
       <td>Margen</td> 
       <td> 
        <ul> 
-        <li>Izquierda: 10 rem</li> 
+        <li>Izquierda: 10 rem</li> 
        </ul> </td> 
      </tr> 
     </tbody> 
     </table>
 
-1. Pulse en el área vacía encima del campo **[!UICONTROL ID de cliente]** y pulse **[!UICONTROL Contenedor del panel interactivo]**. Configure el **[!UICONTROL Contexto]** > **[!UICONTROL Color de fondo]** a F1F2F2. Pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el área vacía encima de **[!UICONTROL ID de cliente]** y seleccione **[!UICONTROL Contenedor del panel interactivo]**. Configure el **[!UICONTROL Contexto]** > **[!UICONTROL Color de fondo]** a F1F2F2. Seleccionar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Contenedor de panel interactivo](do-not-localize/responsive-panel-container.png)
 
@@ -239,7 +239,7 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
 
 Puede utilizar una temática personalizada para aplicar un estilo idéntico a todos los botones del formulario adaptable y [aplicar estilo dentro de la línea](/help/forms/using/inline-style-adaptive-forms.md) para aplicar un estilo a un botón específico. Para aplicar estilo a los botones, haga lo siguiente:
 
-1. Pulse el botón **[!UICONTROL Enviar]** y pulse la opción **[!UICONTROL Botón]**. Establezca las siguientes propiedades y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el **[!UICONTROL Enviar]** y seleccione el botón **[!UICONTROL Botón]** opción. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -263,10 +263,10 @@ Puede utilizar una temática personalizada para aplicar un estilo idéntico a to
       <td>Radio de borde </td> 
       <td> 
        <ul> 
-        <li>Superior: 7 px<br /> </li> 
-        <li>Derecha: 7 px<br /> </li> 
-        <li>Inferior: 7 px<br /> </li> 
-        <li>Izquierda: 7 px</li> 
+        <li>Superior: 7 px<br /> </li> 
+        <li>Derecha: 7 px<br /> </li> 
+        <li>Inferior: 7 px<br /> </li> 
+        <li>Izquierda: 7 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -282,7 +282,7 @@ Puede utilizar una temática personalizada para aplicar un estilo idéntico a to
      <tr> 
       <td>Texto</td> 
       <td>Tamaño de fuente</td> 
-      <td>18 px</td> 
+      <td>18 px</td> 
      </tr> 
     </tbody> 
    </table>
@@ -300,14 +300,14 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 
    ![style-option](assets/style-option.png)
 
-1. Pulse el botón **[!UICONTROL Adjuntar]** y pulse el icono ![aem_6_3_edit](assets/aem_6_3_edit.png). Establezca las siguientes propiedades en el acordeón **[!UICONTROL Dimensiones y posición]**:
+1. Seleccione el **[!UICONTROL Adjuntar]** y seleccione el botón ![aem_6_3_edit](assets/aem_6_3_edit.png)icono. Establezca las siguientes propiedades en el acordeón **[!UICONTROL Dimensiones y posición]**:
 
    | Propiedad | Valor |
    |---|---|
    | Flotante | Izquierda |
    | Anchura | 10 % |
 
-1. Pulse **[!UICONTROL Prueba de dirección aprobada por el gobierno]** y pulse el icono ![aem_6_3_edit](assets/aem_6_3_edit.png). Establezca las siguientes propiedades:
+1. Seleccione el **[!UICONTROL Prueba de dirección aprobada por el gobierno]** y seleccione la opción ![aem_6_3_edit](assets/aem_6_3_edit.png)icono. Establezca las siguientes propiedades:
 
    <table> 
     <tbody> 
@@ -331,21 +331,21 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
       <td>Espacio</td> 
       <td> 
        <ul> 
-        <li>Izquierda: 10 px</li> 
+        <li>Izquierda: 10 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Dimensiones y posición</td> 
       <td>Altura</td> 
-      <td>40 px</td> 
+      <td>40 px</td> 
      </tr> 
      <tr> 
       <td>Dimensiones y posición<br /> </td> 
       <td>Margen</td> 
       <td><br /> 
        <ul> 
-        <li>Derecha: 2 rem</li> 
-        <li>Izquierda: 10 rem </li> 
+        <li>Derecha: 2 rem</li> 
+        <li>Izquierda: 10 rem </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -356,7 +356,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
      <tr> 
       <td>Borde</td> 
       <td>Anchura de borde</td> 
-      <td>1 px</td> 
+      <td>1 px</td> 
      </tr> 
      <tr> 
       <td>Borde</td> 
@@ -371,7 +371,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
      <tr> 
       <td>Borde</td> 
       <td>Radio de borde</td> 
-      <td>7 px</td> 
+      <td>7 px</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -386,7 +386,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
      <tr> 
       <td>Texto</td> 
       <td>Tamaño de fuente</td> 
-      <td>18 px</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Texto</td> 
@@ -397,7 +397,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
     </tbody> 
    </table>
 
-1. Pulse el botón **[!UICONTROL Enviar]** y pulse el icono ![aem_6_3_edit](assets/aem_6_3_edit.png). Establezca las siguientes propiedades:
+1. Seleccione el **[!UICONTROL Enviar]** y seleccione el botón ![aem_6_3_edit](assets/aem_6_3_edit.png) icono. Establezca las siguientes propiedades:
 
    <table> 
     <tbody> 
@@ -416,10 +416,10 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
       <td>Margen</td> 
       <td> 
        <ul> 
-        <li>Superior: 5 rem</li> 
-        <li>Derecha: 14 rem</li> 
-        <li>Inferior: 20 px</li> 
-        <li>Izquierda: 20 px<br /> </li> 
+        <li>Superior: 5 rem</li> 
+        <li>Derecha: 14 rem</li> 
+        <li>Inferior: 20 píxeles</li> 
+        <li>Izquierda: 20 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 

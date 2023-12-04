@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2694'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 
 ## Con actualización a 6.5 {#with-upgrade}
 
-### Configuración de ContextHub {#contexthub-6.5}
+### Configuraciones de ContextHub {#contexthub-6.5}
 
 AEM A partir de la versión 6.4, no hay ninguna configuración predeterminada de ContextHub. Por lo tanto, en el nivel raíz del sitio a `cq:contextHubPathproperty` debe configurarse para indicar qué configuración debe utilizarse.
 
@@ -90,7 +90,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
         </ul> </li>
       </ol> </li>
      <li>Habilite el modo de edición en el Editor del modelo de flujo de trabajo, que copiará la definición del modelo de flujo de trabajo en /conf/global/workflow/models.</li>
-     <li>Pulse el botón Sincronizar para sincronizar los cambios en el Modelo de flujo de trabajo en tiempo de ejecución en /var/workflow/models.</li>
+     <li>Seleccione el botón Sincronizar para sincronizar los cambios en el Modelo de flujo de trabajo en tiempo de ejecución en /var/workflow/models.</li>
      <li>Exporte ambos modelos de flujo de trabajo (/conf/global/workflow/models/&lt;workflow-model&gt;) y Modelo de flujo de trabajo en tiempo de ejecución (/var/workflow/models/&lt;workflow-model&gt;AEM ) e integrarlo en el proyecto de.
       <ol>
        <li>Por ejemplo, exportar:
@@ -482,7 +482,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td>
     <ol>
      <li>Copiar configuraciones personalizadas de <code>/etc/blueprints</code> hasta <code>/apps/msm</code>.</li>
-     <li>Quitar <code>/etc/blueprints</code>.</li>
+     <li>Eliminar <code>/etc/blueprints</code>.</li>
     </ol> </td>
   </tr>
   <tr>

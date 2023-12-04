@@ -7,16 +7,16 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6106'
+source-wordcount: '6084'
 ht-degree: 98%
 
 ---
 
 # Crear y usar temáticas {#creating-and-using-themes}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -365,7 +365,7 @@ Cuando seleccione un componente en el lienzo, verá la barra de herramientas de 
 * **Widget de cuadro numérico**: permite seleccionar el componente para personalizar su aspecto en la barra lateral.
 * **Widget de campos**: permite seleccionar el componente genérico para el estilo. En este ejemplo, todos los componentes de entrada de texto (cuadro de texto/cuadro numérico/paso numérico/entrada de fecha) están seleccionados para el estilo.
 
-* ![field-level](assets/field-level.png): permite cambiar al componente genérico para aplicar un estilo. Si selecciona un cuadro numérico y pulsa este icono, el componente de campo estará seleccionado. Si selecciona el componente de campo y pulsa este icono, el panel estará seleccionado. Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
+* ![field-level](assets/field-level.png): permite cambiar al componente genérico para aplicar un estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado. Si selecciona el componente de campo y este icono, el panel estará seleccionado. Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
 
 >[!NOTE]
 >
@@ -453,7 +453,7 @@ Siga estos pasos para personalizar el estilo de un componente en particular (un 
 1. Al seleccionar el cuadro numérico, puede ver la barra de herramientas de componentes con tres opciones:
 
    * **Widget del cuadro numérico**
-   * **Widget del campo**  ![field-level](assets/field-level.png)
+   * **Widget del campo** ![field-level](assets/field-level.png)
 
 1. Seleccione **Widget del cuadro numérico**.
 1. El título de la barra lateral cambia a Widget del cuadro numérico y muestra las opciones para personalizar su aspecto. 
@@ -551,7 +551,7 @@ El ejemplo siguiente muestra estilos enmascarados y sin enmascarar en una temát
 
 ![Estilos enmascarados y sin enmascarar](assets/mask2.png)
 
-## Aplicación de una temática a un formulario  o comunicación interactiva {#applying-a-theme-to-a-form-or-interactive-communication-br}
+## Aplicar una temática a un formulario o comunicación interactiva {#applying-a-theme-to-a-form-or-interactive-communication-br}
 
 Para aplicar una temática a un formulario adaptable, haga lo siguiente:
 
@@ -592,7 +592,7 @@ Para copiar una temática, realice los siguientes pasos:
 
 1. En la instancia de creación, vaya a **Adobe Experience Manager > Forms > Temáticas**.
 1. Abra la carpeta Biblioteca de temáticas.
-1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y pulse **Copiar**.
+1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y seleccione **Copiar**.
 1. Pegue la temática copiada fuera de la carpeta Biblioteca de temáticas.
 1. Personalice la temática copiada.
 

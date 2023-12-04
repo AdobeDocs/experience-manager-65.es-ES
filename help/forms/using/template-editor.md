@@ -7,16 +7,16 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2040'
-ht-degree: 95%
+source-wordcount: '2029'
+ht-degree: 91%
 
 ---
 
 # Plantillas de formulario adaptable{#adaptive-form-templates}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -37,19 +37,19 @@ Por ejemplo, desea que todos los autores de formularios tengan ciertos cuadros d
 
 Puede acceder al editor de plantillas desde el menú Herramientas si navega hasta **Adobe Experience Manager > Herramientas > Plantillas**. En este caso, las plantillas están organizadas en carpetas habilitadas para plantillas editables. AEM proporciona una carpeta global para organizar las plantillas. Sin embargo, no está habilitada de forma predeterminada. Puede solicitar al administrador que habilite la carpeta global o que cree una carpeta para plantillas. Para obtener más información sobre cómo crear carpetas, consulte [Carpetas para plantillas](/help/sites-developing/page-templates-editable.md).
 
-Una vez que pulse para abrir una carpeta, verá un botón Crear que le permite crear una plantilla para formularios adaptables.
+Una vez que seleccione abrir una carpeta, verá un botón Crear que le permite crear una plantilla para formularios adaptables.
 
 ### Crear una plantilla {#create-template}
 
 Después de crear una carpeta, ábrala y haga lo siguiente para crear una plantilla:
 
-1. En la consola Plantilla, pulse **Crear** dentro de la carpeta que ha creado.
-1. En la sección Elegir tipo de plantilla, seleccione **Plantilla de formulario adaptable** y pulse **Siguiente**.
+1. En la consola Plantilla, seleccione **Crear** dentro de la carpeta que ha creado.
+1. En la sección Elegir tipo de plantilla, seleccione **Plantilla de formulario adaptable** y seleccione **Siguiente**.
 
-1. En la sección Detalles de la plantilla, escriba un Título de plantilla y pulse **Crear**. 
+1. En la sección Detalles de la plantilla, proporcione un Título de plantilla y seleccione **Crear**.
 Puede proporcionar una descripción y una miniatura que pueda ver cuando seleccione la plantilla creada en el momento de la creación del formulario.
 
-1. Pulse **Listo** para volver a la consola o pulse **Abrir** para abrir la plantilla en el editor.
+1. Seleccionar **Listo** para volver a la consola, o seleccione **Abrir** para abrir la plantilla en el editor.
 
 ### IU del editor de plantillas {#template-editor-ui}
 
@@ -113,7 +113,7 @@ Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccio
 
 Cuando se selecciona la opción Contenido inicial, el contenedor de formulario adaptable de la plantilla se abrirá como un formulario adaptable para su edición. Al igual que la creación de un formulario adaptable, puede especificar la configuración inicial, como seleccionar una temática y enviar acciones.
 
-Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, pulse ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenido inicial**.
+Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) **> Contenido inicial**.
 ![Capa de contenido inicial en el Editor de plantillas](assets/initial-content-layer.png)
 
 La capa de contenido inicial en el Editor de plantillas muestra el contenedor del formulario adaptable seleccionado para especificar propiedades.
@@ -144,7 +144,7 @@ Cambie la capa de Estructura a Contenido inicial y empiece a agregar contenido a
 * Puede arrastrar y soltar el componente del panel desde el explorador de componentes de la barra lateral.
 * Puede agregar el panel secundario del `guideRootPanel` en la barra de herramientas de componentes.
 
-Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y pulse ![cmppr](assets/cmppr.png) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info` y títulos como Información general e Información profesional respectivamente. En la barra lateral, pulse Contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Pulse ![cmppr](assets/cmppr.png) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **Pestañas arriba** y pulse **Listo**. Se aplica la estructura de la plantilla con pestañas.
+Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info` y títulos como Información general e Información profesional respectivamente. En la barra lateral, seleccione contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Seleccionar ![cmppr](assets/cmppr.png) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **Fichas de la parte superior** y seleccione **Listo**. Se aplica la estructura de la plantilla con pestañas.
 
 #### Agregar contenido en pestañas {#adding-content-in-tabs}
 
@@ -165,7 +165,7 @@ Al crear una plantilla, esta se agrega como borrador. Habilite la plantilla para
 1. Vaya a **Adobe Experience Manager > Herramientas > Plantillas** y abra la carpeta en la que ha creado la plantilla.
 
 1. La plantilla que ha creado se marcará como borrador.
-1. Seleccione la plantilla y pulse **Habilitar** en la barra de herramientas. 
+1. Seleccione la plantilla y seleccione **Activar** en la barra de herramientas.
 Cuando cree un formulario adaptable, podrá ver la plantilla en la lista cuando se le pida que elija una plantilla.
 
 ## Importar o exportar una plantilla {#importing-or-exporting-a-template}

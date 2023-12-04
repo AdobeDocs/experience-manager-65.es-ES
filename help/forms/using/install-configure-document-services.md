@@ -4,10 +4,10 @@ description: Instale AEM Forms Document Services para crear, ensamblar, distr
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '5499'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -365,11 +365,11 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras capacidades de AEM Forms. Realice los siguientes pasos para instalar el paquete:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Pulse **[!UICONTROL Adobe Experience Manager]**, disponible en el menú del encabezado.
+1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
-1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y pulse **[!UICONTROL Descargar]**.
+1. Seleccione el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y seleccione **[!UICONTROL Descargar]**.
 1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
@@ -491,7 +491,7 @@ Con la administración de almacén de confianza, puede importar, editar y elimin
 
 1. Inicie sesión en la instancia de AEM Forms como administrador.
 1. Vaya a **[!UICONTROL Herramientas]** >  **[!UICONTROL Seguridad]** >  **[!UICONTROL Almacén de confianza]**.
-1. Haga clic en **[!UICONTROL Crear almacén de confianza]**. Establezca una contraseña y pulse **[!UICONTROL Guardar]**.
+1. Haga clic en **[!UICONTROL Crear almacén de confianza]**. Establezca la contraseña y seleccione **[!UICONTROL Guardar]**.
 
 ### Configuración de certificados para los servicios Encryption y Extensiones de Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
 

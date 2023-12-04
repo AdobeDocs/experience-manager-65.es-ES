@@ -7,16 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 96%
+source-wordcount: '3533'
+ht-degree: 92%
 
 ---
 
 # Generar documento de registro para formularios adaptables{#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -267,7 +267,7 @@ Siga los siguientes pasos para configurar un documento de registro para formular
 
 1. En la instancia de autor de AEM, haga clic en **Forms > Formularios y documentos.**
 1. Seleccione un formulario y haga clic en **Ver propiedades**.
-1. En la ventana Propiedades, pulse **Modelo de formulario**.
+1. En la ventana Propiedades, seleccione **Modelo de formulario**.
 También puede seleccionar un modelo de formulario al crear un formulario.
 
    >[!NOTE]
@@ -303,8 +303,8 @@ Al generar un documento de registro, puede cambiar la información de marca del 
 
 Para localizar la información de marca indicada en la pestaña Documento de registro, asegúrese de que ha establecido correctamente la configuración regional del explorador. Para personalizar la información de marca del documento de registro, siga estos pasos:
 
-1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, pulse ![configurar](assets/configure.png).
-1. Pulse ![dortab](/help/forms/using/assets/dortab.png). Aparecerá la pestaña Documento de registro.
+1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, seleccione ![configurar](assets/configure.png).
+1. Seleccionar ![dortab](/help/forms/using/assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
 
    ![plantilla_personalización_de_marca](/help/forms/using/assets/brandingtemplate.png)
@@ -349,7 +349,7 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
    </proto>
    ```
 
-1. Para guardar los cambios de personalización de marca, pulse Listo.
+1. Para guardar los cambios de personalización de marca, seleccione Listo.
 
 ## Diseños de tablas y columnas para paneles del documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -402,7 +402,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 **Configuración del nivel de formulario**
 
 * **Incluir campos no enlazados en el documento de registro:** al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en el documento de registro. De forma predeterminada, es True.
-* **Excluir campos de DoR si están ocultos:**[!UICONTROL  establezca la propiedad para excluir los campos ocultos del documento de registro al enviar el formulario. ] Al activar [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)[!UICONTROL , el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del documento de registro].
+* **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos de [!UICONTROL Documento de registro] al enviar el formulario. Al activar [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del [!UICONTROL Documento de registro].
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
 
@@ -410,12 +410,12 @@ Puede aplicar saltos de página en un documento de registro utilizando varios m�
 
 Para aplicar un salto de página a un documento de registro:
 
-1. Pulse el panel y seleccione ![Configurar](/help/forms/using/assets/configure.png)
+1. Seleccione el panel y seleccione ![Configurar](/help/forms/using/assets/configure.png)
 1. Expanda **[!UICONTROL Documento de registro]** para ver las propiedades.
 
-1. En la sección **[!UICONTROL Paginación]**, pulse ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Posición]**.
-1. Pulse **[!UICONTROL Parte superior de la siguiente página]** y luego pulse **[!UICONTROL Seleccionar]**. También puede pulsar **[!UICONTROL Parte superior de la página]**, seleccionar la página maestra y pulsar **[!UICONTROL Seleccionar]** para aplicar el salto de página.
-1. Pulse ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
+1. En el **[!UICONTROL Paginación]** , seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Lugar]** field.
+1. Seleccionar **[!UICONTROL Parte superior de la página siguiente]** y seleccione **[!UICONTROL Seleccionar]**. También puede seleccionar **[!UICONTROL Parte superior de la página]**, seleccione la página maestra y seleccione **[!UICONTROL Seleccionar]** para aplicar el salto de página.
+1. Seleccionar ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
 
 El panel seleccionado se traslada a la página siguiente.
 
@@ -430,13 +430,13 @@ Carga una plantilla XDP que incluye cuatro páginas maestras en el servidor de [
 
 Para aplicar las propiedades de la segunda página maestra a un panel y las propiedades de la tercera página maestra a los paneles siguientes, ejecute los pasos que aparecen a continuación:
 
-1. Pulse el panel para aplicar la segunda página maestra y seleccione ![Configurar](assets/cmppr.png).
-1. En la sección **[!UICONTROL Paginación]**, pulse ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Posición]**.
-1. Pulse **[!UICONTROL En la página]**, seleccione la segunda página maestra y pulse **[!UICONTROL Seleccionar]**.
+1. Seleccione el panel al que aplicar la segunda página maestra y seleccione ![Configurar](assets/cmppr.png).
+1. En el **[!UICONTROL Paginación]** , seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Lugar]** field.
+1. Seleccionar **[!UICONTROL En la página]**, seleccione la segunda página maestra y seleccione **[!UICONTROL Seleccionar]**.
 AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
-1. En la sección **[!UICONTROL Paginación]**, pulse ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Después]**.
-1. Pulse **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y luego pulse **[!UICONTROL Seleccionar]**.
-1. Pulse ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
+1. En el **[!UICONTROL Paginación]** , seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Después]** field.
+1. Seleccionar **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y seleccione **[!UICONTROL Seleccionar]**.
+1. Seleccionar ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
 AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 
 

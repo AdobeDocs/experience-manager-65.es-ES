@@ -9,10 +9,10 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 60%
+source-wordcount: '1736'
+ht-degree: 53%
 
 ---
 
@@ -91,7 +91,7 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
 1. Para realizar la migración, realice los siguientes pasos:
 
-   * Para migrar **recursos**, pulse Migración de recursos de AEM Forms y, en la siguiente pantalla, pulse **Iniciar migración**. Se migrarán los siguiente elementos:
+   * Para migrar **activos**, seleccione Migración de recursos de AEM Forms y, en la pantalla siguiente, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
       * Formularios adaptables
       * Fragmentos de documento
@@ -103,18 +103,18 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
    >
    >Durante la migración de recursos, puede encontrar mensajes de advertencia como &quot;Se ha detectado un conflicto entre...&quot;. Estos mensajes indican que no se han podido migrar las reglas de algunos de los componentes de los formularios adaptables. Por ejemplo, si el componente tenía un evento con reglas y scripts, si las reglas se aplican después de uno de los scripts, no se migran ninguna de las reglas del componente. Puede [migrar estas reglas abriendo el Editor de reglas](#migrate-rules) durante la creación de los formularios adaptables.
 
-   * Para migrar componentes de formulario adaptable personalizados, pulse **Migración de componentes de formulario adaptable personalizados** y, en la página Migración de componentes personalizados, pulse **Iniciar migración**. Se migrarán los siguiente elementos:
+   * Para migrar componentes de formulario adaptable personalizados, seleccione **Migración de componentes personalizados de Forms adaptable** y en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
       * Componentes personalizados escritos para formularios adaptables
       * Superposiciones de componentes, si las hay.
 
-   * Para migrar plantillas de formulario adaptable, pulse **Migración de componentes de formulario adaptable personalizados** y, en la página Migración de componentes personalizados, pulse **Iniciar migración**. Se migrarán los siguiente elementos:
+   * Para migrar plantillas de formulario adaptable, seleccione **Migración de plantillas de Forms adaptable** y en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
       * Plantillas de formulario adaptable creadas en `/apps` o `/conf` con el Editor de plantillas de AEM.
 
    * Migre los servicios de configuración de AEM Forms Cloud para utilizar el nuevo paradigma de servicios en la nube sensibles al contexto, que incluye la interfaz de usuario táctil (en `/conf`). Cuando migre los servicios de configuración de AEM Forms Cloud, los servicios en la nube de `/etc` se mueven a `/conf`. Si no tiene personalizaciones de servicios en la nube que dependan de rutas heredadas (`/etc`), el Adobe recomienda ejecutar la utilidad de migración después de actualizar a la versión 6.5; utilizar la interfaz de usuario táctil de la configuración en la nube para cualquier trabajo posterior. Si tiene personalizaciones de servicios en la nube existentes, continúe usando la IU clásica en la configuración actualizada hasta que las personalizaciones se actualicen para que se alineen con las rutas migradas (`/conf`) y luego ejecute la utilidad de migración.
 
-   Para migrar **AEM Forms Cloud Services**, que incluyen lo siguiente, pulse Migración de configuración de nube de AEM Forms (la migración de configuración de nube es independiente del paquete de compatibilidad de AEMFD). Pulse Migración de configuraciones en la nube de AEM Forms y, a continuación, en la página Migración de configuración, pulse **Iniciar migración**:
+   Para migrar **AEM Forms Cloud Services**, que incluyen lo siguiente, seleccione Migración de configuración de AEM Forms Cloud (la migración de configuración en la nube es independiente del paquete de compatibilidad de AEMFD). Seleccione Migración de configuraciones de AEM Forms Cloud y, a continuación, en la página Migración de configuración, seleccione **Iniciar migración**:
 
    * Servicios en la nube del modelo de datos de formulario
 
@@ -152,13 +152,13 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
 Estos componentes se pueden migrar abriéndolos en el Editor de reglas desde el Editor de Forms adaptable.
 
-* Para migrar reglas y scripts (no es necesario si se actualiza desde la versión 6.3) de componentes personalizados, pulse Migración de componentes de formulario adaptable personalizados y, en la pantalla siguiente, pulse Iniciar migración. Se migrarán los siguiente elementos:
+* Para migrar reglas y scripts (no es necesario si se actualiza desde la versión 6.3) de componentes personalizados, seleccione Migración de componentes personalizados de Forms adaptable y, en la pantalla siguiente, seleccione Iniciar migración. Se migrarán los siguiente elementos:
 
    * Reglas y scripts creados con el Editor de reglas (6.1 FP1 y versiones posteriores)
 
    * Scripts creados con la pestaña Script en la IU de 6.1 y versiones anteriores
 
-* Para migrar plantillas (no es necesario si se actualiza desde las versiones 6.3 y 6.4), pulse Migración de plantillas de formulario adaptable y, en la pantalla siguiente, pulse Iniciar migración. Se migrarán los siguiente elementos:
+* Para migrar plantillas (no es necesario si se actualiza desde las versiones 6.3 y 6.4), seleccione Migración de plantillas de Forms adaptable y, en la pantalla siguiente, seleccione Iniciar migración. Se migrarán los siguiente elementos:
 
    * Plantillas antiguas: las plantillas de formulario adaptable creadas en /apps con AEM 6.1 Forms o versiones anteriores. Eso incluye los scripts definidos en los componentes de plantilla.
 

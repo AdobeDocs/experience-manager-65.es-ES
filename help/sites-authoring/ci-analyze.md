@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Abra el [Perspectiva de contenido](/help/sites-authoring/content-insights.md) pa
 Utilice el siguiente procedimiento para ver Analytics y Recommendations de una página:
 
 1. Desplácese hasta la página que desee analizar.
-1. En la barra de herramientas, toque o haga clic en **Analytics y Recommendations**.
+1. En la barra de herramientas, haga clic en **Analytics y Recommendations**.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Cambie el periodo de informe de la página Perspectiva de contenido para enfocar
 
 Para cambiar el período de informe de una página de perspectiva de contenido:
 
-1. Si el periodo de tiempo no aparece en la parte superior de la página, toque o haga clic en el icono Alternar periodo de tiempo.
+1. Si el periodo no aparece en la parte superior de la página, haga clic en el icono Alternar periodo de tiempo.
 
    ![Alternar intervalo](do-not-localize/chlimage_1-22.png)
 
@@ -70,11 +70,11 @@ Cambiar la cantidad de tiempo que cada punto de datos ocupa en un informe. Por e
 
 La granularidad afecta a los informes que trazan los datos en función del tiempo, como los informes Vistas y Minutos de participación media de la página. La granularidad también afecta a la escala del periodo de tiempo.
 
-1. Si no aparece el control de granularidad, toque o haga clic en el icono Alternar granularidad.
+1. Si no aparece el control de granularidad, haga clic en el icono Alternar granularidad.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. Toque o haga clic en la granularidad que desee. Una vez seleccionado, el informe se actualiza automáticamente para reflejar la granularidad.
+1. Haga clic en la granularidad deseada. Una vez seleccionado, el informe se actualiza automáticamente para reflejar la granularidad.
 
 ### Asignación de tareas para SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
@@ -90,7 +90,7 @@ Cuando se crea, la tarea aparece en la lista Tareas del usuario. Para obtener in
 
 Utilice el siguiente procedimiento para crear una tarea para una recomendación de SEO.
 
-1. Toque o haga clic en el icono de información de la recomendación de SEO.
+1. Haga clic en el icono de información de la recomendación de SEO.
 
    ![Icono de información](do-not-localize/chlimage_1-23.png)
 
@@ -98,7 +98,7 @@ Utilice el siguiente procedimiento para crear una tarea para una recomendación 
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Rellene los campos de formulario que aparecen y, a continuación, pulse Crear:
+1. Rellene los campos de formulario que aparecen y, a continuación, seleccione Crear:
 
    * Proyecto: seleccione el proyecto en el que desea crear la tarea.
    * Nombre: nombre que identifica la tarea. El nombre predeterminado es el título de la recomendación de SEO.
@@ -109,4 +109,4 @@ Utilice el siguiente procedimiento para crear una tarea para una recomendación 
 
    **Nota:** La tarea que se crea también incluye la ruta a la página a la que se aplica la recomendación SEO.
 
-1. Toque o haga clic en Listo para cerrar el mensaje de Tarea creada.
+1. Haga clic en Listo para cerrar el mensaje Creación de la tarea.

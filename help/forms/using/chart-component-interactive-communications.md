@@ -11,10 +11,10 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2608'
-ht-degree: 92%
+source-wordcount: '2621'
+ht-degree: 89%
 
 ---
 
@@ -28,13 +28,13 @@ Mientras crea una comunicación interactiva, puede agregar gráficos para repres
 
 Realice los siguientes pasos para agregar y configurar un gráfico en una comunicación interactiva:
 
-1. Pulse **Componentes** desde la barra de tareas de la comunicación interactiva.
+1. Seleccionar **Componentes** de la barra de tareas de la comunicación interactiva.
 1. Arrastre y suelte el componente **Gráfico** a uno de los siguientes componentes:
 
    * Canal de impresión: área de destino o campo de imagen
    * Canal web: panel o área de destino
 
-1. Pulse el componente Gráfico en el editor de la comunicación interactiva y seleccione **[!UICONTROL Configurar (]** ![configure_icon](assets/configure_icon.png)) de la barra de herramientas Componente.
+1. Seleccione el componente de gráfico en el editor de comunicaciones interactivas y seleccione **[!UICONTROL Configurar (]** ![configure_icon](assets/configure_icon.png)) en la barra de herramientas Componente.
 
    Las propiedades del gráfico se mostrarán en el panel izquierdo.
 
@@ -47,13 +47,13 @@ Realice los siguientes pasos para agregar y configurar un gráfico en una comuni
    Propiedades básicas de un gráfico de tipo línea en el canal Web
 
 1. Configure las [propiedades del gráfico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) en función del tipo de canal.
-1. (Solo canal Imprimir) En la **[!UICONTROL Configuración de Agente]**, especifique si es obligatorio que el agente use este gráfico. Si la opción **[!UICONTROL Es obligatorio que el agente utilice este gráfico]** no está seleccionada, el agente puede pulsar el icono de ojo del gráfico en la pestaña **[!UICONTROL Contenido]** de la interfaz de usuario de Agente para mostrar u ocultar el gráfico.
+1. (Solo canal Imprimir) En la **[!UICONTROL Configuración de Agente]**, especifique si es obligatorio que el agente use este gráfico. Si es **[!UICONTROL Es Obligatorio Que El Agente Utilice Este Gráfico]** no está seleccionada, el agente puede seleccionar el icono en forma de ojo para el gráfico en la **[!UICONTROL Contenido]** de la interfaz de usuario del agente para mostrar u ocultar el gráfico.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Pulse ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
+1. Seleccionar ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
-   Pulse **[!UICONTROL Vista previa]** para ver el aspecto y los datos asociados al gráfico. Pulse **[!UICONTROL Editar]** para volver a configurar las propiedades del gráfico.
+   Seleccionar **[!UICONTROL Previsualizar]** para ver el aspecto y los datos asociados con el gráfico. Seleccionar **[!UICONTROL Editar]** para volver a configurar las propiedades del gráfico.
 
 ## Configurar las propiedades del gráfico {#configure-chart-properties}
 

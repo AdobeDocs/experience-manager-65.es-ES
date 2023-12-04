@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6489'
+source-wordcount: '6508'
 ht-degree: 3%
 
 ---
@@ -127,7 +127,7 @@ Consulte [Instalación del paquete de funciones 18912 para la migración masiva 
 
      Consulte también [Configuración de la cuenta de alias de empresa de Dynamic Media](/help/assets/dm-alias-account.md).
 
-   * **[!UICONTROL Ruta de carpeta raíz de la empresa]**
+   * **[!UICONTROL Ruta de la carpeta raíz de empresa]**
 
    * **[!UICONTROL Publicando recursos]** - Puede elegir entre las tres opciones siguientes:
       * **[!UICONTROL Inmediata]** significa que, cuando se cargan recursos, el sistema los incorpora y proporciona instantáneamente la dirección URL o la incrustación. No es necesaria la intervención del usuario para publicar los recursos.
@@ -224,7 +224,7 @@ Cuando se ejecuta el modo Dynamic Media - Scene7 AEM en el modo de, actualmente 
 
 1. En Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![13-16-02_08-2019](assets/2019-08-02_16-13-14.png)
 
 1. Se abre una nueva pestaña del explorador a la **[!UICONTROL Configuración de la consola web Adobe Experience Manager]** página.
 
@@ -276,7 +276,7 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 
    * Copie y pegue la ruta de acceso anterior en el campo de ruta del CRXDE Lite debajo de la barra de herramientas y, a continuación, pulse `Enter`.
 
-1. En el carril izquierdo, haga clic con el botón derecho en `fileupload`y, en el menú emergente, seleccione **[!UICONTROL Nodo de superposición]**.
+1. En el carril izquierdo, haga clic con el botón derecho `fileupload`y, en el menú emergente, seleccione **[!UICONTROL Nodo de superposición]**.
 
    ![Opción Nodo de superposición](/help/assets/assets-dm/uploadassets15gb_a.png)
 
@@ -388,7 +388,7 @@ Consulte [Cargando recursos](/help/assets/manage-assets.md#uploading-assets).
 
    * Haga doble clic en **[!UICONTROL activado]** field. De forma predeterminada, todos los tipos MIME de recursos están habilitados (configurados en **[!UICONTROL true]**), lo que significa que los recursos se sincronizan con Dynamic Media para su procesamiento. Si desea excluir el procesamiento de este tipo de MIME de recurso, cambie este ajuste a **[!UICONTROL false]**.
 
-   * Pulsar dos veces **[!UICONTROL jobParam]** para abrir su campo de texto asociado. Consulte [Tipos MIME admitidos](/help/assets/assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetros de procesamiento permitidos que puede utilizar para un tipo mime determinado.
+   * Seleccionar dos veces **[!UICONTROL jobParam]** para abrir su campo de texto asociado. Consulte [Tipos MIME admitidos](/help/assets/assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetros de procesamiento permitidos que puede utilizar para un tipo mime determinado.
 
 1. Realice una de las siguientes acciones:
 
@@ -405,7 +405,7 @@ Puede agregar tipos MIME personalizados para formatos no compatibles en Experien
 
 1. En Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
-   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+   ![13-16-02_08-2019](assets/2019-08-02_16-13-14.png)
 
 1. Se abre una nueva pestaña del explorador a la **[!UICONTROL Configuración de la consola web Adobe Experience Manager]** página.
 
@@ -442,7 +442,7 @@ Puede agregar tipos MIME personalizados para formatos no compatibles en Experien
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Con el tipo MIME `image_vnd.dwg` aún seleccionado, desde el **[!UICONTROL Propiedades]** , en la pestaña **[!UICONTROL activado]** fila, debajo de **[!UICONTROL Valor]** encabezado de columna, pulse dos veces el valor para abrir **[!UICONTROL Valor]** lista desplegable.
+1. Con el tipo MIME `image_vnd.dwg` aún seleccionado, desde el **[!UICONTROL Propiedades]** , en la pestaña **[!UICONTROL activado]** fila, debajo de **[!UICONTROL Valor]** encabezado de columna, seleccione dos veces el valor para abrir **[!UICONTROL Valor]** lista desplegable.
 1. Tipo `false` en el campo (o seleccione **[!UICONTROL false]** de la lista desplegable).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -698,7 +698,7 @@ La configuración de Conexión de carga de Scene7 sincroniza los recursos del Ex
 
 **Para actualizar la conexión de carga de Dynamic Media Classic:**
 
-1. Navegue hasta `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el **[!UICONTROL Número de conexiones]** y/o el **[!UICONTROL Tiempo de espera del trabajo activo]** , cambie el número como desee.
 
    El **[!UICONTROL Número de conexiones]** Esta opción controla el número máximo de conexiones HTTP permitidas para la carga de Experience Manager a Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.

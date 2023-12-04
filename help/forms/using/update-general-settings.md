@@ -10,10 +10,10 @@ topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -31,8 +31,8 @@ En la pestaña General, cambie la configuración de descarga de archivos adjunto
 
 **Ir a la pestaña General en la pantalla Configuración**
 
-1. Para ir a la pantalla Configuración, pulse el botón Menú en la esquina superior izquierda de la pantalla Inicio y, a continuación, pulse **Configuración**.
-1. En la pantalla Configuración, pulse la pestaña General.
+1. Para ir a la pantalla Configuración, seleccione el botón Menú en la esquina superior izquierda de la pantalla Inicio y, a continuación, seleccione **Configuración**.
+1. En la pantalla Configuración, seleccione la pestaña General.
 
    ![Configuración general en la aplicación de AEM Forms](assets/gen-settings-1.png)
 
@@ -59,7 +59,7 @@ Opciones disponibles:
 
 * **Frecuencia de guardado automático**: Para definir la frecuencia con la que su [aplicación móvil guarda datos de formulario](../../forms/using/autosave-data-app.md) de forma local.
 * **Frecuencia de sincronización**: Para establecer la frecuencia con la que [su aplicación móvil se sincroniza](../../forms/using/sync-app.md) con el servidor de AEM Forms en modo en línea.
-   **Borrar datos locales**: Borrar la base de datos, incluida la configuración y los datos locales de todos los usuarios y el almacenamiento de archivos del dispositivo.
+  **Borrar datos locales**: Borrar la base de datos, incluida la configuración y los datos locales de todos los usuarios y el almacenamiento de archivos del dispositivo.
 
 >[!NOTE]
 >

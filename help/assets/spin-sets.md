@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2004'
 ht-degree: 8%
 
 ---
@@ -149,9 +149,9 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Añadir recurso]**.
 
-   * Cerca del centro de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
+   * Cerca del centro de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Seleccione para abrir el Selector de recursos]**.
 
-   Pulse para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
+   Seleccione para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el **[!UICONTROL Filtrar]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
@@ -173,7 +173,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicarlo a todos los recursos a la vez.
 
-1. Seleccione **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparecerá en la carpeta en la que lo creó.
+1. Seleccionar **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparecerá en la carpeta en la que lo creó.
 
 ## Ver un conjunto de giros {#viewing-spin-sets}
 

@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4275'
+source-wordcount: '4130'
 ht-degree: 1%
 
 ---
@@ -265,7 +265,7 @@ Si está editando imágenes interactivas con zonas interactivas y recorta la ima
 
    * Seleccione la imagen para poder abrirla en la página Vista de detalles. En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
-1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Añadir punto interactivo]** (icono con el dedo) para abrir la página de administración de puntos interactivos.
+1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Añadir punto interactivo]** (icono de selección con el dedo) para abrir la página de administración de puntos interactivos.
 1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Punto interactivo]**.
 
    1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, seleccione **[!UICONTROL Punto interactivo]**.

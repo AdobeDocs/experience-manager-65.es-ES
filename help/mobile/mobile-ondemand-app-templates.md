@@ -1,17 +1,13 @@
 ---
 title: Crear y agregar plantillas y componentes
-seo-title: Creating and Adding Templates and Components
 description: Siga esta página para obtener más información sobre la creación y adición de plantillas y componentes a la aplicación. La página utiliza la aplicación de Geometrixx Unlimited como la aplicación que contiene una plantilla de aplicación de ejemplo y plantillas de página.
-seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
-uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -45,7 +41,7 @@ Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una
 Pasos para crear una aplicación basada en una plantilla de aplicación:
 
 1. Vaya al catálogo de aplicaciones de AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Seleccionar **Crear** —> **Aplicación** como se muestra a continuación
+1. Seleccionar **Crear** -> **Aplicación** como se muestra a continuación
 
 Una vez creada una aplicación con esta plantilla, puede agregar artículos, titulares y colecciones a la aplicación. Para volver a visitar, crear artículos, titulares y colecciones, consulte [Acciones de administración de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
@@ -90,7 +86,7 @@ El artículo de Unlimited es una plantilla de muestra que representa un diseño 
 
 Una vez creado, un autor puede editar el contenido de un artículo añadiendo componentes como texto e imágenes. AEM Los artículos son una extensión de las plantillas de página de la página de.
 
-Seleccione un artículo que quiera editar y haga clic en **Editar** para agregar componentes al artículo.
+Seleccione el artículo que desee editar y haga clic en **Editar** para agregar componentes al artículo.
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -145,7 +141,7 @@ AEM Una vez que el componente ya se ha incluido en una página de creación, jun
 **Para editar un componente existente:**
 
 1. Elija esa página y asegúrese de que está en **Editar** y seleccione el componente
-1. Pulse el icono de la llave inglesa para configurar el componente
+1. Seleccione el icono de la llave inglesa para configurar el componente
 
 >[!NOTE]
 >

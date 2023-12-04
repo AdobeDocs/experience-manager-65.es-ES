@@ -12,10 +12,10 @@ discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 100%
+source-wordcount: '655'
+ht-degree: 96%
 
 ---
 
@@ -73,7 +73,8 @@ Una vez que se ha agregado un campo de Firma manuscrita al formulario y se ha pr
 Al hacer clic en el icono de geolocalización mientras se crea la firma manuscrita, la ubicación geográfica y la información horaria se incrustarán en el campo.
 
 >[!NOTE]
->De forma predeterminada, en iPad es obligatorio incrustar información de geolocalización.
+>
+De forma predeterminada, en iPad es obligatorio incrustar información de geolocalización.
 
 En iPad, el icono de geolocalización no se muestra de forma predeterminada y la información de geolocalización se incrusta automáticamente al hacer clic en **Aceptar**.
 
@@ -96,11 +97,11 @@ Al pulsar o hacer clic en el campo Firma manuscrita se abre el cuadro de diálog
 
 ### Seleccionar el tamaño de la pluma {#selecting-pen-size}
 
-Haga clic en el icono **Pinceles** para mostrar una lista de los tamaños de pluma disponibles. Pulse o haga clic en un tamaño de pluma para usarlo.
+Haga clic en el icono **Pinceles** para mostrar una lista de los tamaños de pluma disponibles. Haga clic en un tamaño de pluma para utilizar la pluma correspondiente.
 
 ### Eliminar firmas del formulario {#delete-signatures-from-the-form}
 
 Para eliminar las firmas del formulario, haga lo siguiente:
 
-* (Dispositivos móviles) Pulse durante mucho tiempo el campo de firma y, en el cuadro de diálogo de confirmación, pulse **Sí**.
+* (Dispositivos móviles) Pulse durante mucho tiempo el campo de firma y, en el cuadro de diálogo de confirmación, seleccione **Sí**.
 * (Escritorio) Pase el ratón sobre el campo de firma y haga clic en el botón **Cancelar** y, en el cuadro de diálogo de confirmación, haga clic en **Sí**.

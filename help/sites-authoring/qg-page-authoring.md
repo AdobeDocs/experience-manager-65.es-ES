@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 73%
+source-wordcount: '1540'
+ht-degree: 61%
 
 ---
 
@@ -71,7 +71,7 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
 1. Abra el **Sites** consola (con la variable **Sites** en la opción [Navegación global](/help/sites-authoring/basic-handling.md#global-navigation)): esto se activa (menú desplegable) al seleccionar el vínculo de Adobe Experience Manager (parte superior izquierda).
 
-1. Desplácese por el árbol y toque o haga clic en la página adecuada. La manera en la que se presentan los recursos de la página depende de la vista que utilice: [Tarjeta, Lista o Columnas](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
+1. Desplácese hacia abajo en el árbol tocando o haciendo clic en la página correspondiente. La forma en que se representan los recursos de la página depende de la vista que utilice: [Tarjeta, lista o columna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -102,17 +102,17 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
 1. Vista de columna:
 
-   * Haga clic o toque en la miniatura del recurso en cuestión: la vista en miniatura mostrará una marca de verificación para indicar que se ha seleccionado.
+   * Haga clic en la miniatura del recurso en cuestión: la miniatura mostrará una marca de verificación para indicar que se ha seleccionado.
 
 1. Vista en lista:
 
-   * Haga clic o toque en la miniatura del recurso en cuestión: la vista en miniatura mostrará una marca de verificación para indicar que se ha seleccionado.
+   * Haga clic en la miniatura del recurso en cuestión: la miniatura mostrará una marca de verificación para indicar que se ha seleccionado.
 
 1. Vista de tarjeta:
 
    * Introducir modo de selección por [selección del recurso necesario](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) con:
 
-      * Dispositivo móvil: pulsar y mantener presionado
+      * Dispositivo móvil: seleccionar y mantener presionado
       * Escritorio: el [acción rápida](/help/sites-authoring/basic-handling.md#quick-actions) - icono de tic:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
@@ -158,24 +158,24 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Editar el contenido de un componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) en la página:
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
-      * Abra el editor del componente pulsando y manteniendo pulsado o haciendo doble clic lento. Se muestran las acciones disponibles (para algunos componentes se trata de una selección limitada).
+      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el icono **Editar** (lápiz) para abrir el cuadro de diálogo.
+      * Abra el editor en contexto del componente con las funciones Seleccionar y mantener presionadas o Hacer doble clic con el botón lento. Se muestran las acciones disponibles (para algunos componentes se trata de una selección limitada).
       * Para ver todas las acciones disponibles, acceda al modo de pantalla completa mediante:
 
      ![Modo de pantalla completa](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar las propiedades de un componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el icono **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
+      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el icono **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
 
    * [Desplazar un componente](/help/sites-authoring/editing-content.md#moving-a-component) mediante las siguientes opciones:
 
       * Arrastre el componente en cuestión a la ubicación nueva.
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Cortar** y **Pegar** donde sea necesario.
+      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el **Cortar** entonces **Pegar** iconos donde sea necesario.
 
    * [Copiar (y pegar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Copiar** y **Pegar** cuando sea necesario.
+      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el **Copiar** entonces **Pegar** iconos según sea necesario.
 
    >[!NOTE]
    >
@@ -183,7 +183,7 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Eliminar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic sobre ella y utilice el icono **Eliminar.**
+      * Abra la barra de herramientas de componentes haciendo clic en y utilice **Eliminar** icono.
 
    * [Añadir anotaciones](/help/sites-authoring/annotations.md#annotations) a la página:
 
@@ -305,7 +305,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
    ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
-1. Pulse o haga clic en el tipo de referencia requerido para mostrar más detalles y (cuando corresponda) realizar más acciones.
+1. Haga clic en el tipo de referencia necesario para mostrar más detalles y (cuando corresponda) realizar más acciones.
 
 ### Crear una versión de su página   {#creating-a-version-of-your-page}
 
@@ -315,7 +315,7 @@ Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) d
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Pulse o haga clic en la flecha hacia arriba situada en la parte inferior derecha de la columna Línea de tiempo para mostrar botones adicionales, como **Guardar como versión**.
+1. Haga clic en la flecha hacia arriba situada en la parte inferior derecha de la columna Línea de tiempo para mostrar botones adicionales, como **Guardar como versión**.
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
@@ -331,7 +331,7 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    Si ya se ha guardado una versión de su página, se indica en la cronología.
 
-1. Pulse o haga clic en la versión que desea restaurar. Esto mostrará botones de acción adicionales:
+1. Haga clic en la versión que desee restaurar. Esto mostrará botones de acción adicionales:
 
    * **Volver a esta versión**
 

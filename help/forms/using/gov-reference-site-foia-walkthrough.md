@@ -4,10 +4,10 @@ description: Consulte el tutorial del sitio de referencia de We.Gov para compren
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 58%
+source-wordcount: '842'
+ht-degree: 56%
 
 ---
 
@@ -39,7 +39,7 @@ En virtud de la Ley de Libertad de Información, Sarah solicita una copia de los
 
 ### Puede verlo usted mismo {#see-it-yourself}
 
-En el explorador, abra `https://<hostname>:<PublishPort>/wegov`. En el sitio de We.Gov, pulse Solicitudes> Todas las solicitudes. En la página Todas las solicitudes, pulse Solicitar en Solicitud FOIA.
+En el explorador, abra `https://<hostname>:<PublishPort>/wegov`. En el sitio de We.Gov, seleccione Solicitudes > Todas las solicitudes. En la página Todas las Solicitudes, seleccione Solicitar en Solicitud FOIA.
 
 ## Sarah comienza su solicitud de información en virtud de la ley FOIA {#sarah-starts-her-application-for-information-under-foia}
 
@@ -54,7 +54,7 @@ Sarah hace clic en **Solicitar**. En la página del formulario de solicitud de l
 
 Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016
 
-En cualquier momento, Sarah puede pulsar **Guardar** para guardar un borrador del formulario y volver a él más tarde para rellenarlo y enviarlo. Sarah envía el formulario.
+En cualquier momento, Sarah puede seleccionar **Guardar** para guardar un borrador del formulario y volver a él más tarde para rellenarlo y enviarlo. Sarah envía el formulario.
 
 >[!NOTE]
 >

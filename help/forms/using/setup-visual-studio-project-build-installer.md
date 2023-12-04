@@ -8,10 +8,10 @@ topic-tags: forms-app
 discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '896'
+ht-degree: 95%
 
 ---
 
@@ -22,11 +22,11 @@ AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms.
 Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pasos:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Pulse **[!UICONTROL Adobe Experience Manager]**, disponible en el menú del encabezado.
+1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
-1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y pulse **[!UICONTROL Descargar]**.
+1. Seleccione el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y seleccione **[!UICONTROL Descargar]**.
 1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
@@ -107,15 +107,13 @@ Siga estos pasos para crear e implementar la aplicación de AEM Forms.
    1. La carpeta de dependencias
    1. El archivo PowerShell (extensión .ps1)
 
-
-
 ## Implementar una aplicación mediante Windows PowerShell {#deploying-an-app-using-windows-powershell}
 
 Existen dos maneras de instalar la aplicación en un dispositivo Windows.
 
 ### Al adquirir la licencia de desarrollador {#by-acquiring-the-developer-license}
 
-1. Haga clic con el botón derecho en el archivo de PowerShell (`Add-AppDevPackage.ps1)` y elija **Ejecutar con PowerShell**.
+1. Haga clic con el botón secundario en el archivo de PowerShell ( `Add-AppDevPackage.ps1)`y elija **Ejecutar con PowerShell**.
 
 1. La configuración le solicitará una licencia para desarrolladores. Utilice las credenciales de la cuenta de Microsoft para adquirir una licencia de desarrollador.\
    Esta licencia es válida durante 30 días y puede renovarla gratis.
@@ -138,7 +136,7 @@ Para implementar la aplicación, haga lo siguiente:
 
 1. En el dispositivo, ejecute `gpedit.msc`.
 1. Navegue hasta **Configuración del equipo > Plantillas administrativas > Componente de Windows > Implementar el paquete de aplicaciones**.
-1. Haga clic con el botón derecho en **Permitir que todas las aplicaciones de confianza se instalen**.
+1. Clic con el botón derecho **Permitir la instalación de todas las aplicaciones de confianza**.
 1. Haga clic en **Editar** y seleccione **Habilitado**.
 
 1. Haga clic en **Aceptar**.

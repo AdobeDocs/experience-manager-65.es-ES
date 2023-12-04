@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 64%
+ht-degree: 51%
 
 ---
 
@@ -29,10 +29,10 @@ La siguiente figura muestra anotaciones con llamadas a los componentes esenciale
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **Botón Menú**: pulse el botón **Menú** para ir a Tareas, Forms, Bandeja de salida y Configuración. Si la aplicación AEM Forms está conectada a un servidor de AEM Forms JEE, puede ver la opción Tareas. La opción Tareas también almacena los borradores creados a partir de las tareas de un proceso. En los servidores OSGi de AEM Forms, la opción Tareas está oculta. La Bandeja de salida almacena los formularios y los borradores guardados antes de sincronizarse con el servidor. Todos los formularios y borradores guardados en la Bandeja de salida se cargan en el servidor de AEM Forms cuando se cierra la aplicación [sincronizado con el servidor](../../forms/using/sync-app.md). Para obtener información sobre la configuración, consulte [Actualización de la configuración general](../../forms/using/update-general-settings.md).
-1. **Tarea o formulario**: pulse la tarea o el formulario de la lista con los que desea trabajar.
-1. **Puntos suspensivos horizontales**: indican que hay acciones disponibles en el formulario. Al pulsar los puntos suspensivos, se muestran las acciones y la descripción que ha proporcionado el autor. Las opciones **Eliminar borrador** y **Completar** se muestran al pulsar los puntos suspensivos.
-1. **Icono Actualizar**: pulse el icono de actualización para sincronizar la aplicación con el servidor de AEM Forms.
+1. **Botón Menú**: seleccione la **Menú** para ir a Tareas, Forms, Bandeja de salida y Configuración. Si la aplicación AEM Forms está conectada a un servidor de AEM Forms JEE, puede ver la opción Tareas. La opción Tareas también almacena los borradores creados a partir de las tareas de un proceso. En los servidores OSGi de AEM Forms, la opción Tareas está oculta. La Bandeja de salida almacena los formularios y los borradores guardados antes de sincronizarse con el servidor. Todos los formularios y borradores guardados en la Bandeja de salida se cargan en el servidor de AEM Forms cuando se cierra la aplicación [sincronizado con el servidor](../../forms/using/sync-app.md). Para obtener información sobre la configuración, consulte [Actualización de la configuración general](../../forms/using/update-general-settings.md).
+1. **Tarea o formulario**: seleccione la tarea o el formulario de la lista con los que desea trabajar.
+1. **Puntos suspensivos horizontales**: indican que hay acciones disponibles en el formulario. Al pulsar los puntos suspensivos, se muestran las acciones y la descripción que ha proporcionado el autor. El **Eliminar borrador** y **Completar** Esta opción está visible al seleccionar los puntos suspensivos.
+1. **Icono Actualizar**: seleccione el icono de actualización para poder sincronizar la aplicación con el servidor de AEM Forms.
 
 ### Personalización de la pantalla Inicio {#customizing-the-home-screen}
 

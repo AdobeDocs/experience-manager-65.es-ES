@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 92%
+source-wordcount: '2459'
+ht-degree: 93%
 
 ---
 
 # Tablas en formularios adaptables{#tables-in-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -77,7 +77,7 @@ El menú desplegable de la fila también proporciona la operación Editar para e
 
 Puede agregar una descripción de la tabla para explicar cómo se organiza la información que los lectores de pantalla pueden interpretar y leer. Para agregar la descripción, haga lo siguiente:
 
-1. Seleccione la tabla y pulse ![cmppr](assets/cmppr.png) para ver sus propiedades en la barra lateral.
+1. Seleccione la tabla y seleccione ![cmppr](assets/cmppr.png) para ver sus propiedades en la barra lateral.
 1. Especifique un resumen en la pestaña Accesibilidad.
 1. Haga clic en **Listo**.
 
@@ -95,9 +95,9 @@ Para aplicar la ordenación en columnas de la tabla, las celdas de la columna de
 
 Para habilitar la ordenación:
 
-1. Seleccione la tabla y pulse ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el explorador **Contenido** en la barra de tareas de comunicación interactiva.
+1. Seleccione la tabla y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el explorador **Contenido** en la barra de tareas de comunicación interactiva.
 1. Seleccione **Habilitar ordenación**.
-1. Pulse ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, de los encabezados de las columnas representan que se ha habilitado la ordenación.
+1. Seleccionar ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, de los encabezados de las columnas representan que se ha habilitado la ordenación.
 
    ![Habilitar ordenar](assets/enable_sorting_new.png)
 
@@ -116,7 +116,7 @@ Para habilitar la ordenación:
 
 Siga estos pasos para configurar el ancho de columna de una tabla:
 
-1. En la pestaña **[!UICONTROL Contenido]**, pulse el componente **[!UICONTROL Tabla]** y pulse el icono ![Configurar](assets/configure-icon.svg).
+1. En el **[!UICONTROL Contenido]** , seleccione la pestaña **[!UICONTROL Tabla]** y seleccione el componente Configurar (![Configurar](assets/configure-icon.svg))icono.
 
 1. Escriba la lista de valores separados por comas en el campo **[!UICONTROL Anchura de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluya 3 columnas, especificando 2, 4, 6 como el valor en el campo **[!UICONTROL Anchura de columna]** configurará el ancho de las columnas como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 establece el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 establece el ancho de la tercera columna como la mitad del ancho de la tabla.
 
@@ -124,9 +124,9 @@ Siga estos pasos para configurar el ancho de columna de una tabla:
 
 Puede definir el estilo de una tabla mediante el uso del modo Estilo de la barra de herramientas de la página. Realice los siguientes pasos para cambiar al modo de estilo y editar el estilo de la tabla
 
-1. En la barra de herramientas de la página, antes de Vista previa, pulse ![canvas-drop-down](assets/canvas-drop-down.png) > **Estilo**.
+1. En la barra de herramientas Página, antes de Vista previa, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
 
-1. En la barra lateral, seleccione la tabla y pulse el botón de edición ![edit-button](assets/edit-button.png). 
+1. En la barra lateral, seleccione la tabla y seleccione el botón de edición ![edit-button](assets/edit-button.png).
 Puede ver las propiedades de estilo en la barra lateral.
 
 ![Propiedades de estilo de una tabla](assets/style-table.png)
@@ -139,7 +139,7 @@ Puede ver las propiedades de estilo en la barra lateral.
 
 Las tablas proporcionan compatibilidad para agregar o eliminar filas de forma dinámica durante la ejecución.
 
-1. Seleccione una fila de la tabla y pulse ![cmppr](assets/cmppr.png).
+1. Seleccione una fila de la tabla y seleccione ![cmppr](assets/cmppr.png).
 1. En la pestaña Repetir configuración, especifique los recuentos mínimo y máximo para limitar el número de filas de la tabla.
 1. Haga clic en **Listo**.
 

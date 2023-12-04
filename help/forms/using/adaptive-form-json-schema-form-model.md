@@ -5,16 +5,16 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d0768679182567cc7cd618adaa78b6518f902f7c
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 80%
+source-wordcount: '1844'
+ht-degree: 84%
 
 ---
 
 # Crear formularios adaptables mediante el esquema JSON {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -732,15 +732,15 @@ Puede agregar las siguientes restricciones a los elementos del esquema JSON para
 
 ## Habilitar datos compatibles con esquemas {#enablig-schema-compliant-data}
 
-Para permitir que todos los Forms adaptables basados en esquemas JSON generen datos compatibles con esquemas al enviar el formulario, siga estos pasos:
+Para permitir que todos los Formularios adaptables basados en esquemas JSON generen datos compatibles con esquemas al enviar el formulario, siga estos pasos:
 
-1. Vaya a la consola web del Experience Manager en `https://server:host/system/console/configMgr`.
+1. Vaya a la consola web de Experience Manager en `https://server:host/system/console/configMgr`.
 1. Localizar **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**.
-1. Pulse para abrir la configuración en modo de edición.
-1. Seleccione el **[!UICONTROL Generar datos compatibles con esquemas]** casilla de verificación
+1. Seleccione para abrir la configuración en modo de edición.
+1. Seleccione la casilla de verificación **[!UICONTROL Generar datos compatibles con esquemas]**.
 1. Guarde la configuración.
 
-![configuración del canal web de comunicaciones interactivas y formularios adaptables](/help/forms/using/assets/af-ic-web-channel-configuration.png)
+![Configuración de canal web de comunicaciones interactivas y formularios adaptables](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Construcciones no compatibles  {#non-supported-constructs}
 

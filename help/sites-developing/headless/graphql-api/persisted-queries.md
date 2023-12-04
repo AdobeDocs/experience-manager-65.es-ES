@@ -2,10 +2,10 @@
 title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método de GET HTTP y la respuesta se puede almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 88%
+source-wordcount: '1401'
+ht-degree: 85%
 
 ---
 
@@ -262,7 +262,7 @@ Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codif
 
 ## Almacenamiento en caché de las consultas persistentes {#caching-persisted-queries}
 
-Se recomiendan las Consultas persistentes, ya que se pueden almacenar en caché en las capas de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) y la Red de distribución de contenido (CDN), mejorando finalmente el rendimiento de la aplicación cliente solicitante.
+Se recomiendan las Consultas persistentes, ya que se pueden almacenar en caché en las capas de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) y la Red de distribución de contenido (CDN), mejorando finalmente el rendimiento de la aplicación cliente solicitante.
 
 De forma predeterminada, AEM invalidará la caché en función de una definición de tiempo de vida (TTL). Estos TTL se pueden definir mediante los siguientes parámetros. Se puede acceder a estos parámetros de varias formas, con variaciones en los nombres según el mecanismo utilizado:
 
@@ -350,7 +350,7 @@ El `cache-control` se puede configurar en el momento de la creación (PUT) o má
 
 ### Administración de la caché con una configuración OSGi {#cache-osgi-configration}
 
-Para administrar la caché globalmente, puede [configurar la configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para la **Configuración del servicio de consulta persistente**. De lo contrario, esta configuración de OSGi utiliza el [valores predeterminados para instancias de publicación](#publish-instances).
+Para administrar la caché globalmente, puede hacer lo siguiente [configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para el **Configuración del servicio de consultas persistentes**. De lo contrario, esta configuración de OSGi utiliza el [valores predeterminados para instancias de publicación](#publish-instances).
 
 >[!NOTE]
 >
@@ -401,8 +401,8 @@ Para crear un paquete, haga lo siguiente:
 1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
 1. Escriba un número de versión como “1.0”.
 1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para `wknd` configuración la ruta completa será `/conf/wknd/settings/graphql/persistentQueries`.
-1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
-1. Toque el botón **Generar** en la definición del paquete recién creada.
+1. Seleccionar **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
+1. Seleccione el **Generar** en la definición del paquete recién creada.
 
 Una vez creado el paquete, puede hacer lo siguiente:
 

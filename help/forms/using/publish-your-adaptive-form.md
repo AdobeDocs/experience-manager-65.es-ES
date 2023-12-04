@@ -10,10 +10,10 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 99%
+source-wordcount: '886'
+ht-degree: 90%
 
 ---
 
@@ -42,7 +42,7 @@ Cuando el formulario adaptable se publica como una página de AEM, toda la pági
 
 1. Inicie sesión en la instancia de autor de AEM [!DNL Forms] y busque el formulario adaptable Formulario-actualizar-agregar-dirección-envío en la interfaz de usuario de AEM [!DNL Forms].
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. Seleccione el formulario adaptable Formulario-actualizar-agregar-dirección-envío y pulse **[!UICONTROL Publicar]**. Se muestra un cuadro de diálogo que contiene recursos relacionados con el formulario adaptable. Pulse **[!UICONTROL Publicar]**. El formulario adaptable se publica y aparece un cuadro de diálogo con un mensaje de éxito.
+1. Seleccione el formulario adaptable Formulario-actualizar-agregar-dirección-envío y seleccione **[!UICONTROL Publish]**. Se muestra un cuadro de diálogo que contiene recursos relacionados con el formulario adaptable. Seleccionar **[!UICONTROL Publish]**. El formulario adaptable se publica y aparece un cuadro de diálogo con un mensaje de éxito.
 1. Abra el formulario en la instancia de publicación. El formulario está disponible para que el usuario final lo rellene y lo envíe.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
@@ -58,11 +58,11 @@ AEM [!DNL Forms] proporciona un componente, el Contenedor de AEM [!DNL Forms],
 
    El sitio de We.Retail se proporciona junto con AEM. Si no ha instalado el sitio de We.Retail, consulte [Implementación de referencia de We.Retail](https://helpx.adobe.com/es/experience-manager/6-3/help/sites-developing/we-retail.html) para instalarlo.
 
-1. Pulse en la información de la página ![Propiedades](assets/properties.png) y seleccione la opción **[!UICONTROL Editar plantilla]** en la página de sitio de We.Retail recién creada. La plantilla de la página se abre en una nueva pestaña del explorador.
-1. Pulse en el cuadro del **[!UICONTROL contenedor de diseño]** y pulse ![administración_del_feed](assets/feedmanagement.png). En la pestaña **[!UICONTROL Componentes permitidos]**, expanda el acordeón **[!UICONTROL General]**, seleccione la opción **[!UICONTROL Formulario de AEM]** y pulse ![icono_guardar](assets/save_icon.svg). El componente Contenedor de AEM [!DNL Forms]está habilitado para la página.
+1. Seleccionar ![propiedades](assets/properties.png) y seleccione la opción **[!UICONTROL Editar plantilla]** en la página de sitio de We.Retail recién creada. La plantilla de la página se abre en una nueva pestaña del explorador.
+1. Seleccione dentro de **[!UICONTROL contenedor de diseño]** y seleccione ![administración de fuentes](assets/feedmanagement.png). En el **[!UICONTROL Componentes permitidos]** , expanda la pestaña **[!UICONTROL General]** acordeón, seleccione la **[!UICONTROL AEM Formulario de]** y seleccione. ![icono_guardar](assets/save_icon.svg). El componente Contenedor de AEM [!DNL Forms]está habilitado para la página.
 
-1. Abra la pestaña del explorador que contiene la página de AEM [!DNL Sites] que abrió en el paso 1. Pulse en el cuadro **[!UICONTROL Arrastre los componentes aquí]** y luego pulse **+.** En el cuadro **[!UICONTROL Insertar nuevo componente]**, pulse **[!UICONTROL Formulario de AEM]**. El componente **[!UICONTROL Contenedor de AEM Forms]** se añade a la página.
-1. Pulse en el componente **[!UICONTROL Contenedor de AEM Forms]** y, a continuación, en ![icono-configurar](assets/configure-icon.svg). Aparece un cuadro de diálogo con las propiedades del contenedor de AEM [!DNL Forms]. En el campo **[!UICONTROL Ruta del recurso]**, busque y seleccione el formulario adaptable Formulario-actualizar-agregar-dirección-envío. Pulse ![icono_guardar](assets/save_icon.svg). El formulario adaptable se incrusta en la página.
+1. Abra la pestaña del explorador que contiene la página de AEM [!DNL Sites] que abrió en el paso 1. Seleccione el **[!UICONTROL Arrastre los componentes aquí]** y seleccione **+.** En el **[!UICONTROL Insertar nuevo componente]** , seleccione **[!UICONTROL AEM Formulario de]**. El componente **[!UICONTROL Contenedor de AEM Forms]** se añade a la página.
+1. Seleccione el **[!UICONTROL contenedor de AEM Forms]** Componente y seleccione ![configure-icon](assets/configure-icon.svg). Aparece un cuadro de diálogo con las propiedades del contenedor de AEM [!DNL Forms]. En el campo **[!UICONTROL Ruta del recurso]**, busque y seleccione el formulario adaptable Formulario-actualizar-agregar-dirección-envío. Seleccionar ![icono_guardar](assets/save_icon.svg). El formulario adaptable se incrusta en la página.
 1. Publique el formulario adaptable y la página de [!DNL Sites]. Tenga en cuenta lo siguiente:
 
    * Si publica la página de AEM [!DNL Sites] por primera vez y esta incluye un formulario incrustado, publique la página de [!DNL Sites] y el formulario incrustado.

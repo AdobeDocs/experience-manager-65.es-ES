@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2987'
-ht-degree: 47%
+source-wordcount: '2963'
+ht-degree: 41%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 47%
 >* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de Adobe Experience Manager AEM () Author. Utiliza la consola **Sitios** como base. 
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras adicionales estén disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
->* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular, cuando [uso de consolas](/help/sites-authoring/keyboard-shortcuts.md) y [edición de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Introducción {#getting-started}
 
 ### Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
-AEM Se ha habilitado la interfaz de usuario para el contacto con el usuario. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón secundario y pasar el ratón por encima.
+AEM Se ha habilitado la interfaz de usuario para el contacto con el usuario. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como seleccionar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón secundario y pasar el ratón por encima.
 
 AEM Como la interfaz de usuario de la pantalla es táctil, puede utilizar los gestos táctiles en sus dispositivos táctiles (por ejemplo, móviles o tabletas) y las acciones del ratón en un dispositivo de escritorio tradicional.
 
@@ -40,23 +40,23 @@ Inmediatamente después de iniciar sesión, llegará al [Panel de navegación](#
 
 >[!NOTE]
 >
->Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios.**
+>AEM Para comprender bien el uso básico de los, este documento se basa en la **Sites** consola.
 >
->Para empezar, toque o haga clic en **Sites**.
+>Para empezar, haga clic en **Sites**.
 
 ### Navegación de productos    {#product-navigation}
 
-Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. AEM Toque o haga clic en para obtener una buena descripción general de la gestión básica de los recursos de la.
+Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. AEM Pulsa aquí para obtener una buena visión general de la gestión básica de los problemas de la.
 
-![Navegación de productos   ](assets/bh-02.png)
+![Navegación de productos](assets/bh-02.png)
 
-Toque o haga clic en **Siguiente** para avanzar a la siguiente página de la descripción general. Haga clic o toque **Cerrar** o toque o haga clic fuera del cuadro de diálogo información general para cerrar.
+Clic **Siguiente** para avanzar a la siguiente página de la descripción general. Clic **Cerrar** o haga clic fuera del cuadro de diálogo información general para cerrar.
 
 La descripción general se reinicia la próxima vez que acceda a una consola, a menos que vea todas las diapositivas o marque la opción **No volver a mostrar esto**.
 
 ## Navegación global {#global-navigation}
 
-Puede navegar entre las consolas con el panel de navegación global. Se activa como un menú desplegable a pantalla completa cuando pulse o haga clic en el vínculo de Adobe Experience Manager en la parte superior izquierda de la pantalla.
+Puede navegar entre las consolas con el panel de navegación global. Se activa como una lista desplegable de pantalla completa al hacer clic en el vínculo Adobe Experience Manager en la parte superior izquierda de la pantalla.
 
 Para volver a la ubicación anterior, puede cerrar el panel de navegación global tocando o haciendo clic en **Cerrar**.
 
@@ -186,7 +186,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   ![Rutas de exploración](assets/bh-05.png)
 
-  Aparece en el centro del carril y, siempre mostrando la descripción del elemento seleccionado, las rutas de exploración le permiten desplazarse dentro de una consola específica. Desde la consola Sitios puede desplazarse por los niveles de su sitio web.
+  Aparece en el centro del carril y, siempre mostrando la descripción del elemento seleccionado, las rutas de exploración le permiten desplazarse dentro de una consola específica. En la consola Sitios puede desplazarse por los niveles del sitio web.
 
   Al hacer clic en el texto de la ruta de exploración, se abre una lista desplegable que enumera los niveles de la jerarquía del elemento seleccionado actualmente. Para ir a esa ubicación, haga clic en una entrada.
 
@@ -316,7 +316,7 @@ La selección de un recurso específico depende de una combinación de la vista 
  <tbody>
   <tr>
    <td> </td>
-   <td>Seleccione lo siguiente</td>
+   <td>Seleccionar</td>
    <td>Deseleccionar</td>
   </tr>
   <tr>
@@ -324,12 +324,12 @@ La selección de un recurso específico depende de una combinación de la vista 
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la miniatura</li>
-     <li>Dispositivos móviles:<br /> Pulsar la miniatura</li>
+     <li>Dispositivos móviles:<br /> Seleccionar la miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la miniatura</li>
-     <li>Dispositivos móviles:<br /> Pulsar la miniatura</li>
+     <li>Dispositivos móviles:<br /> Seleccionar la miniatura</li>
     </ul> </td>
   </tr>
   <tr>
@@ -337,12 +337,12 @@ La selección de un recurso específico depende de una combinación de la vista 
    <td>
     <ul>
      <li>Escritorio:<br /> Pase el ratón sobre él y utilice la acción rápida de marca</li>
-     <li>Dispositivos móviles:<br /> Pulsar y mantener pulsada la tarjeta</li>
+     <li>Dispositivos móviles:<br /> Seleccionar y mantener presionada la tarjeta</li>
     </ul> </td>
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la tarjeta</li>
-     <li>Dispositivos móviles:<br /> Pulsar la tarjeta</li>
+     <li>Dispositivos móviles:<br /> Seleccione la tarjeta</li>
     </ul> </td>
   </tr>
   <tr>
@@ -350,12 +350,12 @@ La selección de un recurso específico depende de una combinación de la vista 
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la miniatura</li>
-     <li>Dispositivos móviles:<br /> Pulsar la miniatura</li>
+     <li>Dispositivos móviles:<br /> Seleccionar la miniatura</li>
     </ul> </td>
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la miniatura</li>
-     <li>Dispositivos móviles:<br /> Pulsar la miniatura</li>
+     <li>Dispositivos móviles:<br /> Seleccionar la miniatura</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -410,7 +410,7 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
      ![Vista de columna](assets/bh-17.png)
 
    * Los elementos secundarios del recurso en el que se hizo clic o pulsó se muestran en la columna a la derecha del recurso en el que se hizo clic o pulsó.
-   * Si pulsa o hace clic en un nombre de recurso que no tiene tareas secundarias, sus detalles se muestran en la última columna.
+   * Si hace clic en un nombre de recurso que no tiene tareas secundarias, sus detalles se muestran en la última columna.
 
 * Al tocar o hacer clic en la miniatura, se selecciona el recurso.
 
@@ -462,12 +462,12 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
 
    * Cuando se seleccionan todos los elementos de la lista, esta casilla de verificación aparece activada.
 
-      * Para anular la selección de todo, toque o haga clic en la casilla de verificación.
+      * Para anular la selección de todo, haga clic en la casilla de verificación.
 
    * Cuando solo se seleccionan algunos elementos, aparece con un signo menos.
 
-      * Para seleccionar todo, toque o haga clic en la casilla de verificación.
-      * Para anular la selección de todo, toque o haga clic en la casilla de verificación de nuevo.
+      * Para seleccionar todo, haga clic en la casilla de verificación.
+      * Para anular la selección de todo, vuelva a hacer clic en la casilla de verificación.
 
 * Seleccione las columnas que se mostrarán con la variable **Configuración de vista** opción situada debajo del botón Vistas. Las siguientes columnas están disponibles para su visualización:
 
@@ -493,7 +493,7 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
 
   ![Orden de cambio](assets/bh-22.png)
 
-  Toque o haga clic en la barra de selección vertical y arrastre el elemento hasta una nueva posición en la lista.
+  Haga clic en la barra de selección vertical y arrastre el elemento a una nueva posición en la lista.
 
   ![Orden de cambio - Arrastrar](assets/bh-23.png)
 
@@ -501,7 +501,7 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se muestran
 
   Puede filtrar datos de Analytics de los últimos 30, 90 o 365 días mediante las opciones de filtro a la derecha del encabezado.
 
-  ![Análisis](assets/bh-24.png)
+  ![Analytics](assets/bh-24.png)
 
 ## Selector de carril {#rail-selector}
 
@@ -537,7 +537,7 @@ La cronología puede utilizarse para ver o iniciar eventos que se hayan producid
 
 La columna de cronología le permite:
 
-* [Ver varios eventos relacionados con el elemento seleccionado.](#timelineviewevents)
+* [Ver varios eventos](#timelineviewevents) relacionado con un elemento seleccionado.
 
    * Los tipos de eventos se pueden seleccionar desde la lista desplegable:
 
@@ -552,7 +552,7 @@ La columna de cronología le permite:
 
       * y Mostrar todo
 
-* [Agregar o ver comentarios sobre el elemento seleccionado. ](#timelineaddingandviewingcomments) El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Escribir un comentario seguido de Retorno registra el comentario. Se muestra cuando se selecciona **Comentarios** o **Mostrar todo**.
+* [Agregar o ver comentarios](#timelineaddingandviewingcomments) sobre el elemento seleccionado. El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Escribir un comentario seguido de Retorno registra el comentario. Se muestra cuando se selecciona **Comentarios** o **Mostrar todo**.
 
 * Determinadas consolas tienen funciones adicionales. Por ejemplo, en la consola Sitios puede hacer lo siguiente:
 
@@ -561,7 +561,7 @@ La columna de cronología le permite:
 
 Se puede acceder a estas opciones mediante las comillas angulares que hay junto al **Comentario** field.
 
-![Escala de cronología](assets/bh-27.png)
+![Cronología](assets/bh-27.png)
 
 ### Referencias {#references}
 
@@ -581,4 +581,4 @@ Se puede acceder a estas opciones mediante las comillas angulares que hay junto 
 
 Se abrirá un panel similar al siguiente: [búsqueda](/help/sites-authoring/search.md), con los filtros de ubicación adecuados establecidos, lo que le permite filtrar aún más el contenido que desea ver.
 
-![Filter](assets/bh-29.png)
+![Filtrar](assets/bh-29.png)

@@ -10,10 +10,10 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 95%
+source-wordcount: '1268'
+ht-degree: 86%
 
 ---
 
@@ -51,7 +51,7 @@ Puede crear [formularios adaptables](../../forms/using/creating-adaptive-form.md
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Pulse para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
+1. Seleccionar para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
    Seleccione un modelo de datos de formulario.
 
@@ -93,19 +93,19 @@ Para obtener más información, consulte:
 
 ## Usar una vista previa con datos de ejemplo {#preview-ic}
 
-El editor del modelo de datos de formulario permite generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar comunicaciones interactivas y formularios adaptables. Debe generar los datos de ejemplo antes de obtener la vista previa, tal como se describe en [Trabajo con el modelo de datos de formulario](../../forms/using/work-with-form-data-model.md#sample).
+El editor del modelo de datos de formulario permite generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar comunicaciones interactivas y formularios adaptables. Genere los datos de ejemplo antes de obtener la vista previa como se describe en [Trabajo con el modelo de datos de formulario](../../forms/using/work-with-form-data-model.md#sample).
 
 Para previsualizar una comunicación interactiva con datos del modelo de datos de formulario de ejemplo:
 
 1. En la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Formularios y documentos]**.
-1. Seleccione una comunicación interactiva y pulse **[!UICONTROL Vista previa]** en la barra de herramientas para seleccionar **[!UICONTROL Canal web]**, **[!UICONTROL Canal de impresión]** o **[!UICONTROL Ambos canales]** para previsualizar la comunicación interactiva.
-1. En el cuadro de diálogo Previsualizar [*canal*], asegúrese de que **[!UICONTROL Probar datos del modelo de datos de formulario]** está seleccionado y pulse **[!UICONTROL Vista previa]**.
+1. Seleccione una comunicación interactiva y haga clic en **[!UICONTROL Previsualizar]** en la barra de herramientas para seleccionar **[!UICONTROL Canal web]**, **[!UICONTROL Canal de impresión]**, o **[!UICONTROL Ambos canales]** para previsualizar la comunicación interactiva.
+1. En la vista previa [*canal*] diálogo, asegúrese de que **[!UICONTROL Datos de prueba del modelo de datos de formulario]** está seleccionado y seleccione **[!UICONTROL Previsualizar]**.
 
 La comunicación interactiva se abre con datos de ejemplo prerrellenados.
 
 ![web-preview](assets/web-preview.png)
 
-De forma similar, para obtener una vista previa de un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y pulse **[!UICONTROL Vista previa]**.
+Del mismo modo, para previsualizar un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Previsualizar]**.
 
 ## Prerrellenar mediante el servicio del modelo de datos de formulario {#prefill}
 
@@ -135,10 +135,10 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
 1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
 1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el Explorador de componente al formulario adaptable.
-1. Pulse para seleccionar el componente agregado y pulse ![settings_icon](assets/settings_icon.png) para abrir el Explorador de propiedades del componente.
-1. En el campo Referencia de enlace, pulse ![foldersearch_18](assets/foldersearch_18.png) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
+1. Seleccione para seleccionar el componente añadido y seleccione ![settings_icon](assets/settings_icon.png) para abrir el Explorador de propiedades del componente.
+1. En el campo Referencia de enlace, seleccione ![foldersearch_18](assets/foldersearch_18.png) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
 
-   Pulse ![check-button](assets/check-button.png) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
+   Seleccionar ![botón de verificación](assets/check-button.png) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
 1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 

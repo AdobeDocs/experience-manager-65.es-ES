@@ -4,9 +4,9 @@ description: Instale, configure y personalice un paquete de demostración de AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4603'
+source-wordcount: '4501'
 ht-degree: 63%
 
 ---
@@ -79,11 +79,11 @@ Esta sección contiene información sobre la instalación del paquete de demostr
 ### Desde Distribución de software {#from-software-distribution}
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Pulse **[!UICONTROL Adobe Experience Manager]**, disponible en el menú del encabezado.
+1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
-1. Pulse el nombre del paquete, **we-gov-forms.pkg.all-&lt;version>.zip**, seleccione **[!UICONTROL Aceptar términos de EULA]** y luego pulse **[!UICONTROL Descargar]**.
+1. Seleccione el **we-gov-forms.pkg.all-&lt;version>.zip** nombre del paquete, seleccione **[!UICONTROL Aceptar términos de EULA]** y seleccione **[!UICONTROL Descargar]**.
 1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
@@ -330,7 +330,7 @@ Una vez completada la configuración en la nube, es posible que desee probar el 
 
    ![Propiedades del FDM de Dynamics CRM](assets/aftia-update-data-source.jpg)
 
-1. Haga clic en **Guardar y cerrar**.
+1. Clic **Guardar y cerrar**.
 
 1. [Prueba de los servicios](work-with-form-data-model.md#test-data-model-objects-and-services) para asegurarse de que se conectan correctamente a la fuente de datos configurada
 

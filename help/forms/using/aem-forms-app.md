@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 99%
+source-wordcount: '2410'
+ht-degree: 96%
 
 ---
 
@@ -58,9 +58,9 @@ Para sincronizar su formulario en la aplicación de AEM Forms:
 1. En la instancia de autor, seleccione un formulario y haga clic en **[!UICONTROL Ver propiedades]**.
 
 1. En la página Propiedades, haga clic en **[!UICONTROL Avanzadas]**.
-1. En Avanzadas, active la opción: **[!UICONTROL Sincronizar con la aplicación de AEM Forms]** y pulse **[!UICONTROL Guardar]**.
+1. En Avanzadas, active la opción: **[!UICONTROL Sincronizar con la aplicación de AEM Forms]** y seleccione **[!UICONTROL Guardar]**.
 
-Cuando se publique el formulario, la aplicación se sincronizará con el servidor y recuperará el formulario. Para sincronizar varios formularios, en la instancia de autor, seleccione varios formularios en el administrador de formularios y pulse **[!UICONTROL Sincronizar con la aplicación de AEM Forms]**.
+Cuando se publique el formulario, la aplicación se sincronizará con el servidor y recuperará el formulario. Para sincronizar varios formularios, en la instancia de autor, seleccione varios formularios en el administrador de formularios y seleccione **[!UICONTROL Sincronizar con la aplicación de AEM Forms]**.
 
 ## Compatibilidad con dispositivos móviles {#mobile-device-support}
 
@@ -183,11 +183,11 @@ El código fuente de la aplicación de AEM Forms se puede extraer del `adobe-lc-
 Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pasos:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Pulse **[!UICONTROL Adobe Experience Manager]**, disponible en el menú del encabezado.
+1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
-1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y pulse **[!UICONTROL Descargar]**.
+1. Seleccione el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y seleccione **[!UICONTROL Descargar]**.
 1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 

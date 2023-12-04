@@ -11,10 +11,10 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '2509'
-ht-degree: 94%
+ht-degree: 83%
 
 ---
 
@@ -40,9 +40,9 @@ Para estos tipos de recursos, debe utilizar el Administrador de paquetes de AEM 
 Para descargar recursos de formularios y documentos:
 
 1. Inicie sesión en la instancia de AEM Forms.
-1. Pulse en el icono de Experience Manager ![adobe_experience_manager](assets/adobeexperiencemanager.png) > Navegación ![icono en forma de brújula](assets/compass.png) > Forms > Formularios y documentos.
-1. Seleccione los recursos de los formularios y pulse en el icono **Descargar**.
-1. En Descargar recursos, elija una de las siguientes opciones y pulse **Descargar**.
+1. Seleccionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/compass.png) icon> Forms > Forms y documentos.
+1. Seleccione los recursos de los formularios y seleccione **Descargar** icono.
+1. En Descargar recursos, elija una de las siguientes opciones y seleccione **Descargar**.
 
    * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. AEM Todos los recursos de formulario, incluidos los formularios creados en los formularios (formularios adaptables, comunicaciones interactivas y fragmentos de formularios adaptables), los conjuntos de formularios, las plantillas de formulario, los documentos de PDF y los recursos (XSD, XFS e imágenes), se pueden descargar como paquete desde la interfaz de usuario de AEM Forms.
 La ventaja de descargar recursos como un paquete es que también descarga los recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, imagine que tiene un formulario adaptable que utiliza una plantilla de formulario, un XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, el XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
@@ -63,11 +63,11 @@ Para cargar recursos de formularios y documentos:
 >[!VIDEO](https://vimeo.com/es/)
 
 1. Inicie sesión en la instancia de AEM Forms.
-1. Pulse en el icono de Experience Manager ![adobe_experience_manager](assets/adobeexperiencemanager.png) > Navegación ![icono en forma de brújula](assets/compass.png) > Forms > Formularios y documentos.
-1. Pulse **Crear** > **Cargar archivo**. Aparecerá un cuadro de diálogo para cargar formularios o paquetes.
-1. En el cuadro de diálogo, examine y seleccione el paquete o el archivo que desea importar. También puede seleccionar documentos PDF, XSD, imágenes, hojas de estilo y formularios XDP. Pulse **Abrir**. La carpeta o el nombre de archivo que seleccione no deben incluir caracteres especiales.
+1. Seleccionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/compass.png) icon> Forms> Forms y documentos.
+1. Seleccionar **Crear** >**Carga de archivos**. Aparecerá un cuadro de diálogo para cargar formularios o paquetes.
+1. En el cuadro de diálogo, examine y seleccione el paquete o el archivo que desea importar. También puede seleccionar documentos PDF, XSD, imágenes, hojas de estilo y formularios XDP. Seleccionar **Abrir**. La carpeta o el nombre de archivo que seleccione no deben incluir caracteres especiales.
 
-   En el cuadro de diálogo, compruebe los detalles de los recursos que se están cargando y pulse **Cargar**.
+   En el cuadro de diálogo, compruebe los detalles de los recursos que se están cargando y seleccione **Cargar**.
 
    En caso de que cargue un recurso de formularios existente, este se actualizará.
 
@@ -86,8 +86,8 @@ Puede exportar temas en AEM Forms que puede utilizar en otros proyectos o insta
 Para descargar una temática:
 
 1. Inicie sesión en la instancia de AEM Forms.
-1. Pulse en el icono de Experience Manager ![adobe_experience_manager](assets/adobeexperiencemanager.png) > Navegación ![icono en forma de brújula](assets/compass.png) > Forms > Temas.
-1. Seleccione la temática y pulse **Descargar**. La temática se descarga como archivo (archivo .zip).
+1. Seleccionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/compass.png) icon> Forms> Temáticas.
+1. Seleccione la temática y seleccione **Descargar**. La temática se descarga como archivo (archivo .zip).
 
 ### Cargar una temática {#uploading-a-theme}
 
@@ -101,7 +101,7 @@ Para cargar una temática:
 La temática cargada está disponible en la página de temáticas.
 
 1. Inicie sesión en la instancia de AEM Forms.
-1. Pulse en el icono de Experience Manager ![adobe_experience_manager](assets/adobeexperiencemanager.png) > Navegación ![icono en forma de brújula](assets/compass.png) > Forms > Temas.
+1. Seleccionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/compass.png) icon> Forms> Temáticas.
 1. Haga clic en **Crear** > **Cargar archivo**. En la solicitud de carga de archivos, examine y seleccione un paquete de temas del equipo y haga clic en **Cargar**. El tema se cargará.
 
 ## Importar y exportar recursos en Administración de correspondencia {#import-and-export-assets-in-correspondence-management}
@@ -110,15 +110,15 @@ Para compartir recursos, como diccionarios de datos, cartas y fragmentos de docu
 
 ### Exportar fragmentos de documento, cartas o diccionarios de datos {#export-document-fragments-letters-and-or-data-dictionaries}
 
-1. En la página de las cartas, los fragmentos de documento o los diccionario de datos, pulse y seleccione los recursos que desea exportar a un mismo paquete y, a continuación, pulse Cola para descarga. Los recursos se preparan para la exportación.
+1. En las páginas de cartas, fragmentos de documento o diccionario de datos, seleccione los recursos que desea exportar a un único paquete y, a continuación, seleccione Cola para descarga. Los recursos se preparan para la exportación.
 1. Si es necesario, repita el paso anterior para agregar cartas, fragmentos de documento y diccionarios de datos.
-1. Pulse **Descargar**.
+1. Seleccionar **Descargar**.
 1. Administración de correspondencia muestra el cuadro de diálogo Descargar recursos con una lista de recursos en la lista de exportación.
 
    ![export](assets/export.png)
 
-1. Para ver las dependencias que se exportan, pulse Resolver. Alternativamente, también puede pasar al siguiente paso. Las dependencias se exportan aunque no pulse Resolución.
-1. Para descargar el archivo .cmp, pulse **Aceptar**.
+1. Para ver las dependencias que se exportan, seleccione Resolver. Alternativamente, también puede pasar al siguiente paso. Incluso si no selecciona resolver, las dependencias se exportan.
+1. Para descargar el archivo .cmp, seleccione **OK**.
 1. Administración de correspondencia descarga un archivo .cmp en el equipo.
 
    El archivo .cmp incluye los recursos exportados. Puede compartir el archivo .cmp con otros usuarios. Otros usuarios pueden importar el archivo .cmp en un servidor diferente para obtener todos los recursos en el nuevo servidor.
@@ -132,9 +132,9 @@ Por ejemplo, si Administración de correspondencia tiene una carta que utiliza u
 Para descargar todos los recursos de Administración de correspondencia y las dependencias relacionadas como paquete, siga los siguientes pasos:
 
 1. Inicie sesión en el servidor de AEM Forms como usuario de Forms.
-1. Pulse **Adobe Experience Manager** en la barra de navegación global.
-1. Pulse Herramientas ![herramientas](assets/tools.png) y, a continuación, **Forms**.
-1. Pulse **Exportar recursos de Administración de correspondencia**.
+1. Seleccionar **Adobe Experience Manager** en la barra de navegación global.
+1. Seleccionar herramientas ( ![herramientas](assets/tools.png)) y luego seleccione **Forms**.
+1. Seleccionar **Exportar recursos de Administración de correspondencia**.
 
    ![publicación-recursos-cmp-1](assets/publish-cmp-assets-1.png)
 
@@ -142,7 +142,7 @@ Para descargar todos los recursos de Administración de correspondencia y las de
 
    ![exportar-detalles-última-ejecución](assets/export-last-run-details.png)
 
-1. Pulse **Exportar** y, en el mensaje de confirmación, pulse **Aceptar**.
+1. Seleccionar **Exportar** y, en el mensaje de confirmación, seleccione **OK**.
 
    Una vez completado el proceso por lotes, se actualizan los detalles de la última ejecución y el vínculo para descargar el paquete. Incluye información como el inicio de sesión del administrador y si el lote se ejecuta correctamente o no. Los recursos se exportan a un paquete y aparece el vínculo Descargar paquete exportado.
 
@@ -150,7 +150,7 @@ Para descargar todos los recursos de Administración de correspondencia y las de
    >
    >El proceso Exportar todos los recursos no se puede cancelar una vez iniciado. Asimismo, no cree, elimine, modifique ni publique ningún recurso ni inicie el proceso Publicar todos los recursos mientras la operación Exportar todos está en curso.
 
-1. Pulse **Descargar paquete exportado** para descargar el archivo del paquete.
+1. Seleccione el **Descargar paquete exportado** para descargar el archivo del paquete.
 
    Para agregar los recursos del paquete a otra instancia de Administración de correspondencia, [importe el paquete a una instancia de AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -162,8 +162,8 @@ Puede importar recursos que se exportan a un archivo .cmp. Un archivo .cmp puede
 >
 >Al importar recursos antiguos de Administración de correspondencia para la migración, inicie sesión con una cuenta de administrador. Para obtener más información sobre la migración de recursos antiguos de Administración de correspondencia, consulte [Migración de recursos de Administración de correspondencia a AEM 6.1 Forms](/help/forms/using/migration-utility.md).
 
-1. En la página del diccionario de datos, las cartas o los fragmentos de documento, pulse **Crear > Cargar archivo** y seleccione el archivo .cmp.
-1. Administración de correspondencia muestra el cuadro de diálogo Importar recursos con la lista de recursos que se importan. Pulse **Importar**.
+1. En la página del diccionario de datos, cartas o fragmentos de documento, seleccione **Crear > Cargar archivo** y seleccione el archivo .cmp.
+1. Administración de correspondencia muestra el cuadro de diálogo Importar recursos con la lista de recursos que se importan. Seleccionar **Importar**.
 
    Después de importar los recursos, se actualizan las siguientes propiedades de los recursos, mientras que el resto de propiedades permanecen igual:
 
@@ -202,7 +202,7 @@ Para crear una carpeta, complete los siguientes pasos:
 
 1. Inicie sesión en la interfaz de usuario de AEM Forms en `https://<server>:<port>/aem/forms.html`.
 1. Vaya a la ubicación en la que desea crear una carpeta.
-1. Pulse Crear > Carpeta.
+1. Seleccione Crear > Carpeta.
 1. Introduzca la siguiente información:
 
    * **Título:** Nombre para mostrar de la carpeta
@@ -216,7 +216,7 @@ Para crear una carpeta, complete los siguientes pasos:
 
    Si existe una carpeta con el nombre especificado, el envío falla con un error. Puede ver el mensaje de error pasando el puntero sobre el icono de error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece junto al campo de nombre.
 
-   Puede pulsar la carpeta recién creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
+   Puede seleccionar la carpeta recién creada para entrar en ella y crear recursos o carpetas dentro de la carpeta. Además, puede seleccionar una carpeta y elegir colocarla en la cola para descargarla, eliminarla o editar su nombre.
 
    ![editar_eliminar_descargar_carpeta](assets/editdeletedownloadafolder.png)
 
@@ -227,19 +227,19 @@ Puede utilizar recursos y cartas existentes para crear rápidamente recursos y c
 Complete los siguientes pasos para crear copias de recursos y cartas:
 
 1. En la página Recursos o Cartas correspondiente, seleccione uno o varios recursos o cartas. La interfaz de usuario muestra el icono Copiar.
-1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar. También puede ir a una carpeta o navegar por ella antes de pegar elementos en ella. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](#folders-and-organizing-assets).
-1. Pulse Pegar. Aparecerá el cuadro de diálogo Pegar. El sistema genera automáticamente nombres y títulos para las nuevas copias de los recursos o las cartas, pero puede editar tanto los títulos como los nombres.
+1. Seleccione Copiar. La interfaz de usuario muestra el icono Pegar. También puede ir a una carpeta o navegar por ella antes de pegar elementos en ella. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](#folders-and-organizing-assets).
+1. Seleccione Pegar. Aparecerá el cuadro de diálogo Pegar. El sistema genera automáticamente nombres y títulos para las nuevas copias de los recursos o las cartas, pero puede editar tanto los títulos como los nombres.
 
    Si está copiando y pegando los recursos o las cartas en el mismo sitio, se agrega el sufijo &quot;-CopyXX&quot; al nombre existente del recurso o la carta. Si no existe ningún título para el recurso o la carta copiados, el campo de título generado automáticamente permanece en blanco.
 
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia del recurso o la carta.
-1. Pulse Pegar. Se crean nuevas copias de los recursos copiados.
+1. Seleccione Pegar. Se crean nuevas copias de los recursos copiados.
 
 ## Búsqueda {#search-forms}
 
-La interfaz de usuario de AEM Forms le permite buscar contenido. Con la barra superior, puede pulsar Buscar **[A]** para buscar recursos como recursos y documentos en el contenido.
+La interfaz de usuario de AEM Forms le permite buscar contenido. En la barra superior, puede seleccionar Buscar **[A]** para buscar recursos como recursos y documentos en el contenido.
 
-Al buscar recursos, AEM Forms muestra el panel lateral. También puede tocar ![recursos-explorar-solo-contenido](assets/assets-browser-content-only.png) > Filtro **[B]** para invocar el panel lateral. Puede limitar la búsqueda con los distintos filtros del panel. El panel lateral también permite guardar las búsquedas.
+Al buscar recursos, AEM Forms muestra el panel lateral. También puede seleccionar ![assets-browser-content-only](assets/assets-browser-content-only.png) > Filtro **[B]** para invocar el panel lateral. Puede limitar la búsqueda con los distintos filtros del panel. El panel lateral también permite guardar las búsquedas.
 
 ![barra_superior_búsqueda](assets/search_topbar.png)
 

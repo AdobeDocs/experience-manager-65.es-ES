@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 55%
+source-wordcount: '235'
+ht-degree: 45%
 
 ---
 
@@ -30,7 +30,7 @@ Para iniciar un proceso desde la aplicación de Adobe Experience Manager AEM () 
 1. Para ver los puntos de inicio disponibles en la aplicación de AEM Forms, vaya a la [Pantalla de inicio](../../forms/using/home-screen.md).
 1. En la pantalla **[!UICONTROL Inicio]**, de forma predeterminada, se muestra la lista **[!UICONTROL Todos los formularios]**.
 
-   El punto de inicio está asociado a un formulario. Pulse el formulario asociado al punto de inicio en la lista para abrirlo.
+   El punto de inicio está asociado a un formulario. Seleccione el formulario asociado al punto de inicio en la lista para abrirlo.
 
    Se abre el formulario asociado al punto de inicio.
 
@@ -38,7 +38,7 @@ Para iniciar un proceso desde la aplicación de Adobe Experience Manager AEM () 
 
    Puede agregar anotaciones a esta tarea con el botón [Archivo adjunto](../../forms/using/add-attachments.md).
 
-1. Después de rellenar el formulario, pulse el botón **[!UICONTROL Enviar]**.
+1. Después de rellenar el formulario, seleccione la opción **[!UICONTROL Enviar]** botón.
 
 Si la aplicación está sin conexión, el formulario y sus datos se guardan en la carpeta Bandeja de salida.
 

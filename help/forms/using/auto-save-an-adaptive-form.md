@@ -9,16 +9,16 @@ topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 93%
+source-wordcount: '736'
+ht-degree: 94%
 
 ---
 
 # Guardado automático de un formulario adaptable {#auto-save-an-adaptive-form}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 Puede configurar un formulario adaptable para que empiece a guardar automáticamente el contenido en función de un evento o un intervalo de tiempo predefinido. De forma predeterminada, el contenido de un formulario adaptable se guarda con una acción del usuario, como al pulsar el botón guardar. La opción de guardado automático es útil para lo siguiente:
 
@@ -31,7 +31,7 @@ Puede configurar un formulario adaptable para que empiece a guardar automáticam
 
 Para un formulario adaptable, la opción de guardado automático no está activada de forma predeterminada. Puede activar la opción de guardado automático desde la sección **Guardar automáticamente** en las propiedades de un formulario adaptable. La sección **Guardar automáticamente** también proporciona otras opciones de configuración. Realice los siguientes pasos para habilitar y configurar la opción de guardado automático para un formulario adaptable:
 
-1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente y pulse ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor del formulario adaptable]** y, a continuación, pulse ![cmppr](assets/cmppr.png).
+1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente y, a continuación, seleccione ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![cmppr](assets/cmppr.png).
 1. En la sección **[!UICONTROL Guardar automáticamente]**, **[!UICONTROL habilite]** la opción Guardar automáticamente.
 1. En el cuadro **[!UICONTROL Evento de formulario adaptable]** especifique 1 o TRUE para comenzar a guardar automáticamente el formulario cuando se cargue en el explorador. También se puede especificar una expresión condicional para un evento, que cuando se activa y devuelve el valor “True”, comienza a guardar el contenido del formulario.
 1. Especifique el Activador. El guardado automático se activará según la configuración. Las opciones son las siguientes:
@@ -87,6 +87,6 @@ Puede implementar un evento personalizado para habilitar la funcionalidad de gua
 
 1. Abra el formulario adaptable en el modo de autor.
 
-1. En el modo de edición, seleccione un componente y, a continuación, pulse ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y haga clic en ![cmppr](assets/cmppr.png).
+1. En el modo de edición, seleccione un componente y, a continuación, seleccione ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![cmppr](assets/cmppr.png).
 1. En las propiedades, abra la sección **[!UICONTROL Básico]**. En el cuadro **[!UICONTROL Categoría de la biblioteca del cliente]**, escriba el valor de la propiedad category definida al crear las carpetas de la biblioteca cliente.
 1. Abra la sección Guardar automáticamente. En el cuadro **[!UICONTROL Guardar automáticamente después de este evento]** especifique un evento personalizado ya definido en la biblioteca de cliente. Haga clic en **[!UICONTROL Aceptar]**.

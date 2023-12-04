@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 48%
+source-wordcount: '3015'
+ht-degree: 46%
 
 ---
 
@@ -38,7 +38,7 @@ El contenido se añade empleando los [componentes](/help/sites-authoring/default
 
 La barra de herramientas de página ofrece acceso a las funciones correspondientes, en función de la configuración de la página.
 
-![Barra de herramientas de página](assets/screen_shot_2018-03-22at111338.png)
+![Barra de herramientas Página](assets/screen_shot_2018-03-22at111338.png)
 
 La barra de herramientas ofrece acceso a numerosas opciones. En función del contexto y la configuración actuales, puede que algunas opciones no estén disponibles.
 
@@ -204,7 +204,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Abra el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) le muestra dónde se coloca el componente.
+1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) muestra dónde se encuentra el componente.
 
    Se crea en la posición requerida un componente apropiado para el tipo de recurso y que contiene el recurso seleccionado.
 
@@ -315,7 +315,7 @@ Las opciones de edición exactas dependen del componente. Para algunos component
 
 * [Componente de texto](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![Componente de texto](assets/screen_shot_2018-03-22at120215.png)
+  ![Componente Texto](assets/screen_shot_2018-03-22at120215.png)
 
 * Componente de imagen
 
@@ -368,7 +368,7 @@ Por ejemplo, el componente **Texto**:
 
 Para mover un componente de párrafo:
 
-1. Seleccione el párrafo que desee mover manteniéndolo pulsado o mediante clic y mantener.
+1. Seleccione el párrafo que desea mover con las funciones de seleccionar y mantener pulsado o de mantener pulsado.
 1. Arrastre el párrafo a la nueva ubicación. AEM indica dónde se puede depositar el párrafo. Colóquelo en la ubicación que desee.
 
    ![mover componente de párrafo](assets/screen_shot_2018-03-22at121821.png)
@@ -387,7 +387,7 @@ En lugar de cambiar repetidamente de edición a [modo de diseño](/help/sites-au
 
    ![Modo de edición en el formulario](assets/screen_shot_2018-03-22at133756.png)
 
-   Toque o haga clic en **Diseño** para que pueda ajustar el diseño del componente.
+   Haga clic en **Diseño** para que pueda ajustar el diseño del componente.
 
    ![Barra de herramientas de los componentes](do-not-localize/chlimage_1-21.png)
 

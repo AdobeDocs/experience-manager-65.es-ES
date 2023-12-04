@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ La acción Enviar correo electrónico permite a un autor enviar correos electró
 
 1. Abra un formulario adaptable en el modo **[!UICONTROL Edición]**.
 
-1. En la pestaña **[!UICONTROL Contenido]**, pulse **[!UICONTROL Contenedor de formulario]** y luego pulse ![configurar](assets/configure-icon.svg) para ver las propiedades del formulario adaptable.
+1. En el **[!UICONTROL Contenido]** pestaña, seleccione **[!UICONTROL Contenedor del formulario]** y seleccione ![configurar](assets/configure-icon.svg) para ver las propiedades del formulario adaptable.
 
 1. En la sección **[!UICONTROL Envío]**, seleccione **[!UICONTROL Enviar correo electrónico]** en la lista desplegable **[!UICONTROL Acción de envío]**.
 

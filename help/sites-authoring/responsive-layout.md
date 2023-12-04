@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 66%
+source-wordcount: '1798'
+ht-degree: 62%
 
 ---
 
@@ -120,7 +120,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 1. Para seleccionar un dispositivo específico para emular, puede hacer lo siguiente:
 
    * Utilizar el icono Seleccionar dispositivo y seleccionarlo desde un selector desplegable.
-   * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
+   * Haga clic en el indicador de dispositivo en la barra de herramientas del emulador.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -164,7 +164,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 >
 >Como un contenedor de diseño es un sistema de párrafos, al eliminar el componente se eliminará tanto la cuadrícula de diseño como todos los componentes (y su contenido) que se encuentren dentro del contenedor.
 
-1. Si pasa el puntero del ratón o toca el marcador de posición de la cuadrícula, se mostrará el menú Acción.
+1. Si pasa el ratón por encima o selecciona el marcador de posición de la cuadrícula, se muestra el menú de acción.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -201,7 +201,7 @@ El modo **Diseño** puede iniciarse de dos formas.
    * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
    * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
 
-* Al [editar un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* Cuándo [edición de un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
    * Mediante la opción **Diseño** en el menú de acción rápida del componente, puede cambiar al modo **Diseño**.
    * El modo **Diseño** persiste mientras se edita el componente y vuelve al modo **Editar** en cuanto el enfoque cambia a otro componente.
@@ -216,7 +216,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
   >
   >Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
 
-* Haga clic o toque un componente de contenido. La barra de herramientas le permite:
+* Haga clic en un componente de contenido y la barra de herramientas le permite:
 
    * **Principal**
 
@@ -232,7 +232,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Se mostrará la barra de herramientas de este modo.
+* Entrada **Diseño** modo en el que puede hacer clic en **Arrastre los componentes aquí** para seleccionar todo el componente. Se mostrará la barra de herramientas de este modo.
 
   La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 
@@ -244,7 +244,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
      ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Revertir diseño del punto de interrupción**: permite recuperar el diseño predeterminado. Es decir, no se aplicará ningún diseño personalizado.
+   * **Revertir diseño de punto de interrupción**: volver al diseño predeterminado. Esto significa que no se aplicará ningún diseño personalizado.
 
      ![Revertir diseño de punto de interrupción](do-not-localize/screen_shot_2018-03-23at091013.png)
 

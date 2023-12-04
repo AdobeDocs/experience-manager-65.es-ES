@@ -6,16 +6,16 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 55%
+source-wordcount: '361'
+ht-degree: 62%
 
 ---
 
 # Componente Separador en formularios adaptables{#separator-component-in-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un método antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un método antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 Puede utilizar el componente separador para separar visualmente los paneles de un formulario. Puede definir el aspecto y el estilo generales de un componente Separador especificando las siguientes propiedades del componente Separador:
 
@@ -30,7 +30,7 @@ Puede utilizar el modo Diseño para definir el número de columnas a las que se 
 
 Para especificar las propiedades de un componente Separador:
 
-1. Seleccione un componente Separador y pulse ![cmppr](assets/cmppr.png). Las propiedades se abren en la barra lateral.
+1. Seleccione un componente Separador y seleccione ![cmppr](assets/cmppr.png). Las propiedades se abren en la barra lateral.
 1. Haga clic en una pestaña de la sección Propiedades CSS en línea para poder especificar las propiedades CSS. Por ejemplo: a. En la pestaña Campo, haga clic en **Agregar elemento**. Se añade una fila con dos campos.
 1. En el primer campo de la izquierda, especifique la propiedad CSS3 que desee aplicar. Por ejemplo, **border**. También puede seleccionar una propiedad haciendo clic en el botón de flecha hacia abajo. La lista desplegable no es exhaustiva y puede especificar cualquier nombre de propiedad CSS3 admitido en este campo.
 1. En el campo adyacente, especifique un valor válido para la propiedad CSS3 especificada. Por ejemplo, **3 px solid black**.

@@ -2,10 +2,10 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 86%
+source-wordcount: '1601'
+ht-degree: 82%
 
 ---
 
@@ -68,7 +68,7 @@ Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, tambié
 
 ## Desacoplamiento {#decoupling}
 
-La entrega sin encabezado es posible mediante la exposición de un conjunto de interfaces de programación de aplicaciones (API) sólidas y flexibles que todas las experiencias pueden aprovechar. La API sirve como idioma común entre los servicios, y los une en el ámbito del contenido mediante una entrega de contenido estandarizada, pero permitiéndoles la flexibilidad para implementar sus propias soluciones.
+La entrega sin encabezado es posible al exponer un conjunto de interfaces de programación de aplicaciones (API) sólidas y flexibles en las que todas las experiencias pueden seleccionar. La API sirve como idioma común entre los servicios, y los une en el ámbito del contenido mediante una entrega de contenido estandarizada, pero permitiéndoles la flexibilidad para implementar sus propias soluciones.
 
 El contenido sin encabezado es un ejemplo de desvinculación del contenido de su presentación. O en un sentido más genérico, desacoplando el front-end del back-end de su pila de servicios. En una configuración sin encabezado, el sistema de presentación (la cabeza) está desacoplada de la administración de contenido (la cola). Los dos únicamente interactúan mediante llamadas de API.
 
@@ -120,7 +120,7 @@ Gracias por empezar con el recorrido de contenido sin encabezado de AEM Ahora qu
 * Comprenda por qué y cuándo es necesario el contenido sin encabezado.
 * Conocer en un nivel superior cómo se utilizan los conceptos del contenido sin encabezado y cómo se interrelacionan.
 
-Aproveche este conocimiento y continúe su recorrido de contenido sin encabezado de AEM al revisar el documento [Introducción a AEM Headless ](getting-started.md) donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en cómo AEM aborda la entrega de contenido sin encabezado y sus requisitos previos.
+AEM Aproveche este conocimiento y continúe con su recorrido sin encabezado de la revisando el documento a continuación [AEM Introducción a la tecnología sin encabezado de](getting-started.md) AEM donde aprenderá a configurar las herramientas necesarias y a pensar en cómo aborda la entrega de contenido sin encabezado y sus requisitos previos, de manera más sencilla.
 
 ## Recursos adicionales {#additional-resources}
 

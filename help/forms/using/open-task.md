@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 70%
+source-wordcount: '282'
+ht-degree: 51%
 
 ---
 
@@ -20,26 +20,26 @@ Otros formularios se guardan como borrador en la pestaña Borradores. Consulte [
 
 **Para abrir una tarea**
 
-1. Pulse en la tarea en la lista de tareas.
+1. Seleccione la tarea en la lista de tareas.
 
    Al seleccionar una tarea, su descripción se muestra debajo del nombre de tarea tal como se ha definido en Workbench. Después de la descripción, se muestra la acción o las acciones de usuario asociadas con la tarea.
 
    * Si una tarea tiene acciones asociadas, estas se muestran al pulsar los puntos suspensivos horizontales que aparecen junto a la tarea en la pantalla Inicio.
    * Si el diseñador de procesos no asocia ninguna acción a una tarea, la acción predeterminada asociada a la tarea es Completar.
 
-1. Pulse la tarea para abrirla.
+1. Seleccione la tarea para abrirla.
 
-   Puede pulsar en **Ver resumen** para ver las instrucciones adicionales especificadas en el proceso de Workbench.
+   Puede seleccionar **Ver resumen** para ver instrucciones adicionales especificadas en el proceso de Workbench.
 
 **Para abrir una aplicación**
 
-1. Pulse en la **aplicación** en la pestaña **Forms**.
+1. Seleccione el **aplicación** en el **Forms** pestaña.
 
    Al seleccionar una aplicación, la descripción de la aplicación se muestra debajo de su nombre. Después de la descripción, se muestran la acción o las acciones de usuario asociadas con la aplicación.
 
    * Si una aplicación tiene acciones asociadas, estas se muestran al pulsar los puntos suspensivos horizontales que aparecen junto a la aplicación en la pantalla Inicio.
    * Si el modelo de flujo de trabajo de la aplicación no asocia ninguna acción con la aplicación, se muestra la acción predeterminada asociada con la aplicación.
 
-1. Pulse la tarea para abrirla.
+1. Seleccione la tarea para abrirla.
 
-   Puede tocar **Ver resumen** para ver las instrucciones adicionales especificadas para la aplicación.
+   Puede seleccionar **Ver resumen** para ver instrucciones adicionales especificadas para la aplicación.

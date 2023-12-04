@@ -1,5 +1,5 @@
 ---
-title: Fragmentos de documento AEM en el
+title: AEM Fragmentos de documento en la
 description: Los fragmentos de documento, como texto, listas, condiciones y fragmentos de diseño, de Administración de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia del cliente.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
@@ -8,10 +8,10 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '6911'
-ht-degree: 94%
+source-wordcount: '6904'
+ht-degree: 88%
 
 ---
 
@@ -42,7 +42,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 ### Crear texto {#create-text}
 
 1. Seleccione **Forms** > **Fragmentos de documento**.
-1. Pulse **Crear** > **Texto**. También puede seleccionar un recurso de texto y pulsar **Editar**.
+1. Seleccionar **Crear** > **Texto** O seleccione un recurso de texto y seleccione **Editar**.
 1. Especifique la siguiente información para el texto:
 
    * **Título: (Opcional)** introduzca el título del recurso de texto. Los títulos no tienen por qué ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. Se hace referencia a los textos por sus títulos (cuando están disponibles); por ejemplo en las miniaturas y las propiedades de recursos.
@@ -51,7 +51,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
    * **Diccionario de datos**: si lo desea, puede seleccionar el diccionario de datos que desea asignar al texto. Este atributo permite agregar referencias a elementos de diccionario de datos en el recurso de texto.
    * **Etiquetas**: si lo prefiere, puede crear una etiqueta personalizada introduciendo el valor en el campo de texto y pulsando Intro. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas que acaba de agregar.
 
-1. Pulse **Siguiente**. Administración de correspondencia muestra la página Editor, donde puede agregar párrafos de texto y elementos de datos al texto.
+1. Seleccionar **Siguiente**. Administración de correspondencia muestra la página Editor, donde puede agregar párrafos de texto y elementos de datos al texto.
 
    El corrector ortográfico predeterminado del explorador comprueba la ortografía en el Editor de texto. Para administrar la revisión ortográfica y gramatical, puede editar la configuración del corrector ortográfico del explorador o instalar complementos del explorador para revisar la ortografía y la gramática.
 
@@ -63,7 +63,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    * **Vínculo**: inserte un vínculo de [hipertexto](#insert-hyperlink) en el texto.
    * **Repetir**: Repetir imprime el elemento de colección en el diccionario de datos con un delimitador.
-   * **Condición**: pulse esta opción para insertar una condición. Inserte texto basado en una condición. Si la condición es verdadera, el texto es visible en la carta; de lo contrario, no.
+   * **Condición**: seleccione para insertar una condición. Inserte texto basado en una condición. Si la condición es verdadera, el texto es visible en la carta; de lo contrario, no.
    * **Agregar descripción**: agregue anotaciones a un fragmento de texto. Es un metadato visible para el autor, pero no forma parte de la carta creada.
    * **Salto de página**: si establece el atributo de salto de página de un módulo de texto en False, el módulo de texto no se divide entre las páginas.
 
@@ -76,7 +76,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
    ![Barra de herramientas Párrafo](assets/fonteditingtoolbar.png)
 
    Barra de herramientas Párrafo
-   [![Barra de herramientas de alineación ](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de herramientas de alineación
+   [![Barra de herramientas Alineación](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de herramientas Alineación
 
    ![Barra de herramientas de lista ](assets/bulleteditingtoolbar.png)
 
@@ -106,13 +106,13 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    Administración de correspondencia ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [agregar compatibilidad con caracteres especiales adicionales o personalizados usando la personalización](/help/forms/using/custom-special-characters.md).
 
-1. Para resaltar o hacer énfasis en determinados fragmentos de texto de un módulo en línea editable, seleccione el texto y pulse Color de resaltado.
+1. Para resaltar fragmentos de texto en un módulo en línea editable, seleccione el texto y elija Color de resaltado.
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   Puede pulsar directamente en un color básico `**[A]**` presentes en la paleta Colores básicos o pulsar **Seleccionar** después de usar el regulador `**[B]**` para elegir la sombra adecuada de color.
+   Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccione **Seleccionar** después de usar el regulador `**[B]**` para elegir la sombra adecuada del color.
 
-   Alternativamente, también puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, pulsar Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
+   También puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccione Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
@@ -120,8 +120,8 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    A:
 
-   * Agregue un elemento de diccionario de datos al texto: Para ello, seleccione un elemento de datos de la lista y pulse Insertar ( ![insertar](assets/insert.png)). Si selecciona Protegido, el elemento del diccionario de datos es de solo lectura y aparece en el Editor de cartas, pero no en la interfaz de usuario Crear correspondencia o Creador de correspondencia.
-   * Agregue un elemento de marcador de posición en el texto; en el panel Elementos de datos, pulse Crear nuevo, introduzca los detalles del nuevo elemento de datos y pulse Crear para agregar el nuevo elemento a la lista. El nuevo marcador de posición se puede insertar en el texto del mismo modo que el elemento de diccionario de datos. Para editar un marcador de posición, seleccione un marcador y pulse Editar.
+   * Añada un elemento de diccionario de datos al texto, seleccione un elemento de datos de la lista y seleccione Insertar ( ![insertar](assets/insert.png)). Si selecciona Protegido, el elemento del diccionario de datos es de solo lectura y aparece en el Editor de cartas, pero no en la interfaz de usuario Crear correspondencia o Creador de correspondencia.
+   * Agregue un elemento de marcador de posición en el texto; en el panel Elementos de datos, seleccione Crear nuevo, introduzca los detalles del nuevo elemento de datos y seleccione Crear para agregar el nuevo elemento a la lista. El nuevo marcador de posición se puede insertar en el texto del mismo modo que el elemento de diccionario de datos. Para editar un marcador de posición, seleccione un marcador y haga clic en Editar.
 
    ![Elementos de marcador de posición](assets/placeholder_elements_in_xmldata.png)
 
@@ -134,7 +134,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
    También puede utilizar el símbolo @ para buscar y agregar elementos de diccionario de datos y marcador de posición al Editor de texto. Coloque el cursor en el lugar donde desea insertar el elemento. Escriba @ seguido de la cadena de búsqueda. El Editor de texto realiza la operación de búsqueda en todos los elementos de diccionario de datos y marcador de posición disponibles en el fragmento de documento de texto. La operación de búsqueda recupera y muestra los elementos que contienen la cadena de búsqueda como una lista desplegable. Navegue por los resultados de búsqueda y haga clic en el elemento que desee insertar en la ubicación del cursor. Pulse Esc para ocultar los resultados de la búsqueda.
 
 1. Puede utilizar condiciones en línea y repeticiones para que la carta tenga un carácter altamente contextual y esté bien estructurada. Para obtener más información sobre las condiciones en línea y las repeticiones, consulte [Condiciones en línea y repeticiones en cartas](/help/forms/using/cm-inline-condition.md).
-1. Pulse **Guardar**.
+1. Seleccione **Guardar**.
 
 #### Insertar hipervínculo en un texto {#insert-hyperlink}
 
@@ -142,9 +142,9 @@ Realice los siguientes pasos para crear un hipervínculo en un recurso de texto:
 
 1. Seleccione el texto o el objeto del modelo de datos en el Editor de texto.
 
-2. Pulse **[!UICONTROL Vínculo]**. Pulse el campo **[!UICONTROL Texto alternativo]** para quitar el texto o nombre del objeto del modelo de datos existente.
+2. Seleccionar **[!UICONTROL Vínculo]**. Seleccionar **[!UICONTROL Texto alternativo]** para quitar el texto o nombre del objeto del modelo de datos existente.
 
-3. Especifique la URL y pulse ![Guardar](assets/save_icon.svg).
+3. Especifique la URL y seleccione ![Guardar](assets/save_icon.svg).
 
 ![Crear un hipervínculo en un recurso de texto](assets/text-create-hyperlink.png)
 
@@ -158,7 +158,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 
 1. Abra el módulo de texto en el Editor de texto.
 
-1. Toque Buscar y reemplazar.
+1. Seleccione Buscar y reemplazar.
 1. Introduzca el texto que desea buscar en el cuadro de texto Buscar y pulse Buscar. El texto de búsqueda se resalta en el módulo de texto.
 1. Para buscar la siguiente instancia del texto, pulse de nuevo Buscar.
 
@@ -185,7 +185,7 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 #### Buscar y reemplazar texto en un módulo de texto {#to-search-and-replace-text-in-a-text-module}
 
 1. Abra el módulo de texto en el Editor de texto.
-1. Toque Buscar y reemplazar.
+1. Seleccione Buscar y reemplazar.
 1. Introduzca el texto que desea buscar en el cuadro de texto Buscar y el texto que reemplazará el texto de búsqueda, y pulse Reemplazar.
 1. Cuando se encuentra el texto de búsqueda, este se reemplaza por el texto del cuadro Reemplazar.
 
@@ -241,23 +241,23 @@ Una lista es un grupo de contenido relacionado que se puede utilizar en una plan
    * **Nombre:** el nombre único de la lista. No pueden existir dos recursos (texto, condición o lista) con el mismo nombre en ningún estado. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente con el valor del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
    * **Descripción (opcional)**: escriba una descripción para el recurso.
    * **Diccionario de datos (opcional)**: si lo desea, puede seleccionar el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista recursos que utilicen el mismo diccionario de datos que la lista, o recursos que no tengan asignado ningún diccionario de datos. Asignar un diccionario de datos a una lista facilita a la persona que crea una plantilla de carta la tarea de encontrar la lista adecuada.
-   * **Etiquetas (opcional)**: seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al pulsar **Guardar**).
+   * **Etiquetas (opcional)**: seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al seleccionar **Guardar**.)
 
-1. Pulse **Siguiente**.
-1. Pulse **Agregar recurso**.
-1. Para añadir recursos a la lista, selecciónelos en la página Seleccionar recursos y luego pulse **Listo**.
+1. Seleccione **Siguiente**.
+1. Seleccione **Agregar recurso**.
+1. Para añadir recursos a la lista, selecciónelos en la página Seleccionar recursos y seleccione **Listo**.
 
    ![Seleccionar recursos para agregarlos a la lista](assets/selectassets.png)
 
 1. Los recursos se agregan a la página Lista de elementos.
-Para cambiar el orden de los recursos de la lista, pulse y mantenga presionado el icono en forma de flechas ( ![arrastrar_y_soltar](assets/dragndrop.png) ), y después arrástrelo y suéltelo. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
+Para cambiar el orden de los recursos de la lista, seleccione y mantenga presionado el icono en forma de flechas ( ![dragndrop](assets/dragndrop.png) ) y arrastrar y soltar. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
 
    ![Reordenar y configurar recursos en una lista](assets/listitems.png)
 
 1. Puede seleccionar las siguientes opciones para especificar cómo se comporta la lista en la interfaz de usuario de CCR:
 
-   * **Acceso a la biblioteca**: para habilitar el acceso a la biblioteca para agregar recursos, pulse Acceso a la biblioteca. Cuando el acceso a la biblioteca está habilitado, el Administrador de reclamaciones puede añadir más contenido a la lista. De lo contrario, el Administrador de reclamaciones se limita al contenido que haya definido para la lista.
-   * **Orden de bloqueo**: para bloquear el orden de los recursos de la lista de modo que el Administrador de reclamaciones no pueda cambiarlo, pulse Bloquear orden. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
+   * **Acceso a biblioteca**: Para habilitar el acceso a la biblioteca para agregar recursos, seleccione Acceso a la biblioteca. Cuando el acceso a la biblioteca está habilitado, el Administrador de reclamaciones puede añadir más contenido a la lista. De lo contrario, el Administrador de reclamaciones se limita al contenido que haya definido para la lista.
+   * **Bloquear orden**: para bloquear el orden de los recursos en la lista de modo que el Administrador de reclamaciones no pueda cambiarlo, seleccione Bloquear orden. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
 
    * **Agregar viñetas**: utilice esta opción para aplicar una viñeta o un estilo de numeración al módulo. Puede utilizar un estilo de lista prediseñado o personalizado. También puede especificar el texto que se mostrará antes y después de cada uno de los elementos de la lista.
    * **Salto de página**: seleccione esta opción ( ![salto](assets/break.png)) para agregar un salto de página entre los contenidos de la lista. Cuando esta opción no está seleccionada ( ![sin_salto](assets/nobreak.png)), si el contenido de la lista se desborda hasta la siguiente página, toda la lista pasa a esa página en lugar de insertar un salto de página en medio de la lista.
@@ -275,7 +275,7 @@ Para cambiar el orden de los recursos de la lista, pulse y mantenga presionado e
    * **Ignorar estilo de lista:** si la opción Numeración compuesta no está seleccionada, se activa la opción Ignorar estilo de lista. Esta selección ignora el estilo de la lista anidada, y la numeración continúa desde la lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista externa, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista tienen su propio estilo de numeración.
    * **Mantener con siguiente:** establece el salto de página de los recursos contenidos en una lista. Si establece la propiedad Mantener con siguiente del recurso de una lista en **Activado**, ese recurso y el siguiente permanecerán en la misma página. Eso significa que el contenido del recurso seleccionado y el del siguiente no se dividirán en varias páginas.
 
-1. Pulse **Guardar**.
+1. Seleccione **Guardar**.
 
 ### Prácticas recomendadas, sugerencias y trucos {#best-practices-tips-and-tricks}
 
@@ -313,25 +313,25 @@ El Editor de condiciones permite especificar una condición predeterminada. Si e
    * **Nombre:** el nombre único de la condición. No pueden existir dos recursos (texto, condición o lista) con el mismo nombre en ningún estado. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
    * **Descripción (opcional):** escriba una descripción para la condición.
    * **Diccionario de datos (opcional)**: si lo desea, puede seleccionar el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista recursos que utilicen el mismo diccionario de datos que la condición, o recursos que no tengan asignado un diccionario de datos. Asignar un diccionario de datos a una lista facilita a la persona que crea una plantilla de carta la tarea de encontrar la condición adecuada.
-   * **Etiquetas (opcional)**: si lo desea, seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al pulsar **Guardar**).
+   * **Etiquetas (opcional)**: si lo desea, seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al seleccionar **Guardar**.)
 
-1. Pulse **Siguiente**.
-1. Pulse **Agregar recurso**.
-1. Para añadir un recurso a la condición, selecciónelo en la página Seleccionar recursos y pulse **Listo**. Los recursos se agregan al panel Expresión.
+1. Seleccione **Siguiente**.
+1. Seleccione **Agregar recurso**.
+1. Para añadir un recurso a la condición, selecciónelo en la página Seleccionar recursos y seleccione **Listo**. Los recursos se agregan al panel Expresión.
 1. Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición durante la ejecución:
 
    * **Deshabilitar evaluación de varios resultados\Habilitar evaluación de varios resultados**: Cuando esta opción está habilitada (aparece como &quot;Habilitar evaluación...&quot;), todas las condiciones se evalúan, y el resultado es la suma de todas las condiciones True. Si esta opción está desactivada (aparece como &quot;Deshabilitar evaluación...&quot;), solo se evalúa la primera condición que resulta ser True, y se convierte en el resultado de la condición.
    * **Salto de página**: seleccione esta opción ( ![salto](assets/break.png)) para agregar un salto de página entre los módulos de las condiciones. Cuando esta opción no está seleccionada (![sin_salto](assets/nobreak.png)), si una condición se desborda hasta la siguiente página, toda la condición se pasa a esa página en lugar de insertar un salto de página en medio de la condición.
 
-1. Para cambiar el orden de los recursos de la condición, pulse y mantenga presionado el icono en forma de flechas (![arrastrar_y_soltar](assets/dragndrop.png) ), y después arrástrelo y suéltelo. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
-1. Pulse **Eliminar** para eliminar la fila. Si pulsa Eliminar para la fila predeterminada, solo se borra la información del recurso.
-1. Pulse **Copiar** para duplicar una fila.
-1. Pulse **Editar** para cambiar el recurso o editar la expresión.
+1. Para cambiar el orden de los recursos dentro de la condición, seleccione y mantenga presionado el icono en forma de flechas ( ![dragndrop](assets/dragndrop.png) ) y arrastrar y soltar. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
+1. Seleccionar **Eliminar** para eliminar la fila. Si selecciona Eliminar para la fila predeterminada, solo se borra la información del recurso.
+1. Seleccionar **Copiar** para duplicar una fila.
+1. Seleccionar **Editar** para cambiar el recurso o editar la expresión.
 
    Además:
 
-   * Para actualizar el recurso, pulse el icono en forma de carpeta de la columna Recurso.
-   * Para abrir el Generador de expresiones e insertar una expresión, pulse el icono en forma de carpeta de la columna Expresión. Para obtener más información sobre el Generador de expresiones, consulte [Generador de expresiones](/help/forms/using/expression-builder.md).
+   * Para actualizar el recurso, seleccione el icono en forma de carpeta de la columna Recurso.
+   * Para abrir el Generador de expresiones e insertar una expresión, seleccione el icono en forma de carpeta de la columna Expression. Para obtener más información sobre el Generador de expresiones, consulte [Generador de expresiones](/help/forms/using/expression-builder.md).
 
 ### Prácticas recomendadas, sugerencias y trucos {#best-practices-tips-and-tricks-1}
 
@@ -388,14 +388,14 @@ Tenga en cuenta los siguientes puntos al diseñar tablas:
    * encabezado y pie de página de una columna adicional
    * proporción de anchura de cada columna
 
-Puede anidar fragmentos en una carta. Eso significa que puede agregar un fragmento dentro de otro. La solución Administración de correspondencia admite hasta cuatro niveles de anidación dentro de una carta: **Carta**->**Fragmento**->**Fragmento**->**Fragmento**->**Fragmento.**
+Puede anidar fragmentos en una carta. Eso significa que puede agregar un fragmento dentro de otro. La solución de Administración de correspondencia admite hasta cuatro niveles de anidación dentro de una carta: **Carta *>*Fragmento *>*Fragmento *>*Fragmento *>*Fragmento.**
 
 Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una carta](#examplewithsamplefiles).
 
 ### Creación de un fragmento de diseño {#creating-a-layout-fragment}
 
 1. Seleccione **Crear** > **Fragmento de diseño**.
-1. Administración de correspondencia muestra los XDP disponibles. Seleccione el XDP en el que desea basar el fragmento de diseño y pulse **Siguiente**.
+1. Administración de correspondencia muestra los XDP disponibles. Seleccione el XDP en el que desea basar el fragmento de diseño y seleccione **Siguiente**.
 1. Especifique la siguiente información para el diseño:
 
    * **Título (opcional):** introduzca el título del fragmento de diseño. El título no tiene que ser único, y puede contener caracteres especiales y caracteres que no sean de inglés. Se hace referencia a los fragmentos de diseño por sus títulos (cuando están disponibles); por ejemplo, en las miniaturas y las propiedades de recursos.
@@ -403,7 +403,7 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
    * **Descripción (opcional)**: la descripción que aparece en la lista de la interfaz de usuario Administrar recursos.
    * **Etiquetas (opcional)**: si lo desea, seleccione las etiquetas que desea aplicar a la condición. También puede escribir el nombre de una etiqueta nueva y crearla.
 
-1. Pulse la pestaña **Tabla** y especifique la siguiente información para el diseño:
+1. Seleccione el **Tabla** y especifique la siguiente información para el diseño:
 
    * **Configuración para**: seleccione la tabla que está configurando. El sufijo del nombre de tabla en la lista desplegable es (Estático) si la tabla es estática o (Dinámico) si la tabla es dinámica. Las tablas estáticas contienen un número fijo de filas. Las tablas estáticas pueden contener campos y áreas de destino. Estos campos y áreas de destino no se pueden enlazar a DDE repetitivos. Los datos enlazados a celdas de tabla determinan el número de filas de las tablas dinámicas.
 
@@ -419,7 +419,7 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
 
    Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una carta](#examplewithsamplefiles).
 
-1. Pulse **Guardar**.
+1. Seleccione **Guardar**.
 
 ### Cargar un XDP en Administración de correspondencia {#upload-an-xdp-to-correspondence-management}
 
@@ -433,7 +433,7 @@ Al crear áreas de destino en Designer, es recomendable establecer el enlace pre
 
 Para establecer el enlace predeterminado:
 
-1. En Designer, pulse **Herramientas** > **Opciones** > **Enlaces de datos** > **Enlace de subformularios**.
+1. En Designer, seleccione **Herramientas** > **Opciones** > **Enlaces de datos** > **Enlace de subformulario**.
 
 1. En la lista Enlace predeterminado para nuevos subformularios, seleccione **Sin enlace de datos**.
 
@@ -548,7 +548,7 @@ Para obtener más información sobre la creación de diseños, consulte [Ayuda d
 Para crear rápidamente un fragmento de documento con propiedades y contenido similares a los de un fragmento de documento existente, puede copiarlo y pegarlo.
 
 1. Seleccione uno o varios fragmentos en la lista de fragmentos de documento. La interfaz de usuario muestra el icono Copiar.
-1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar. Si lo desea, también puede abrir una carpeta antes de pegar el fragmento. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Pulse Pegar. Aparecerá el cuadro de diálogo Pegar. Si está copiando y pegando los fragmentos del documento en el mismo sitio, el sistema asignará automáticamente nombres y títulos a las nuevas copias de las cartas, pero podrá editarlos.
+1. Seleccione Copiar. La interfaz de usuario muestra el icono Pegar. Si lo desea, también puede abrir una carpeta antes de pegar el fragmento. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Seleccione Pegar. Aparecerá el cuadro de diálogo Pegar. Si está copiando y pegando los fragmentos del documento en el mismo sitio, el sistema asignará automáticamente nombres y títulos a las nuevas copias de las cartas, pero podrá editarlos.
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia del fragmento de documento.
-1. Pulse Pegar. Se crea la copia del fragmento del documento.
+1. Seleccione Pegar. Se crea la copia del fragmento del documento.

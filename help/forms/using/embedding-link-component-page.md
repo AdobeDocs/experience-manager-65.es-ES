@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ El componente Vínculo permite a los autores del portal de formularios crear un 
 
 Siga estos pasos para agregar un componente Vínculo a la página:
 
-1. Arrastre el **Vínculo** en la página. Seleccione el componente y pulse ![cmppr](assets/cmppr.png). Se abrirá el cuadro de diálogo Editar el componente Vínculo.
+1. Arrastre el **Vínculo** en la página. Seleccione el componente y seleccione ![cmppr](assets/cmppr.png). Se abrirá el cuadro de diálogo Editar el componente Vínculo.
 
    ![edit-link-component](assets/edit-link-component.png)
 
@@ -50,7 +50,7 @@ Siga estos pasos para agregar un componente Vínculo a la página:
 
 1. Abra la pestaña **Avanzado**. Puede especificar los parámetros adicionales en el formato de par clave-valor. Cuando se hace clic en el vínculo, estos parámetros adicionales se pasan junto con el formulario.
 
-   Pulse **Listo** para guardar la configuración.
+   Seleccionar **Listo** para guardar la configuración.
 
 ## Prácticas recomendadas para usar el componente Vínculo {#best-practices-for-using-link-component-br}
 

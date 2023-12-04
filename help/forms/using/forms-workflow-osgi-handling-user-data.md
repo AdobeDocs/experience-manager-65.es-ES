@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '986'
 ht-degree: 98%
 
 ---
@@ -139,7 +139,7 @@ Es necesario ser administrador de AEM para eliminar los datos de usuario de las 
 
    1. Vaya a `https://'[server]:[port]'/aem/start.html` e inicie sesión con las credenciales de administrador.
    1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Instancias]**.
-   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y pulse **[!UICONTROL Finalizar]** para finalizar las instancias en ejecución.
+   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y seleccione **[!UICONTROL Finalizar]** para finalizar instancias en ejecución.
 
       Para obtener más información sobre cómo trabajar con instancias de flujo de trabajo, consulte [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md).
 

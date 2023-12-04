@@ -12,10 +12,10 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 100%
+source-wordcount: '610'
+ht-degree: 82%
 
 ---
 
@@ -36,7 +36,7 @@ Entre las propiedades de configuración se incluyen:
 
 ## Configuración de fragmentos de documento {#document-fragments-configuration}
 
-Pulse **Configuración de fragmentos de documento** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los fragmentos de documento.
+Seleccionar **Configuración de fragmentos de documento** en el **Configuración de la consola web Adobe Experience Manager** para ver las propiedades de configuración de los fragmentos de documento.
 
 <table>
  <tbody> 
@@ -82,7 +82,7 @@ Pulse **Configuración de fragmentos de documento** en la página **Configuraci�
 
 ## Configuración de Crear correspondencia {#create-correspondence-configuration}
 
-Pulse **Configuración de Crear correspondencia** en la **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de la interfaz de usuario del agente.
+Seleccionar **Configuración de Crear correspondencia** en el **Configuración de la consola web Adobe Experience Manager** para ver las propiedades de configuración de la interfaz de usuario del agente.
 
 <table>
  <tbody> 
@@ -115,7 +115,7 @@ Pulse **Configuración de Crear correspondencia** en la **Configuración de la c
 
 ## Configuración del canal web de comunicaciones interactivas y formularios adaptables {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Pulse **Configuración del canal web de comunicaciones interactivas y formularios adaptables** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración del canal web de las comunicaciones interactivas y los formularios adaptables. En la siguiente tabla se describen las propiedades relacionadas con Interactive Communications:
+Seleccionar **Configuración del canal web de comunicaciones interactivas y formularios adaptables** en el **Configuración de la consola web Adobe Experience Manager** para ver las propiedades de configuración del canal web de comunicaciones interactivas y Forms adaptable. En la siguiente tabla se describen las propiedades relacionadas con Interactive Communications:
 
 | Propiedad | Descripción | Predeterminado | Valores aceptables |
 |---|---|---|---|
@@ -125,7 +125,7 @@ Pulse **Configuración del canal web de comunicaciones interactivas y formulario
 
 ## Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Pulse **Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los temas del canal web de las comunicaciones interactivas y los formularios adaptables.
+Seleccionar **Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables** en el **Configuración de la consola web Adobe Experience Manager** para ver las propiedades de configuración de las temáticas del canal Web de comunicaciones interactivas y Forms adaptable.
 
 <table>
  <tbody> 

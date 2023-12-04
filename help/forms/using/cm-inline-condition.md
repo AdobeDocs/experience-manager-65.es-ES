@@ -11,10 +11,10 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 91%
+source-wordcount: '1660'
+ht-degree: 86%
 
 ---
 
@@ -48,7 +48,7 @@ Puede insertar una condición dentro de la línea en una carta si inserta la con
 >
 >Si los recursos existentes incluyen expresiones antiguas/repetidas (anteriores a la versión 6.2 SP1 CFP4), los recursos mostrarán la sintaxis antigua de condición y se repetirán. Sin embargo, la condición o repetición antigua funcionará. Las expresiones de condición/repetición nuevas y antiguas son compatibles entre sí para crear una mezcla anidada de expresiones de condición/repetición antiguas y nuevas.
 
-1. En el módulo de texto correspondiente, seleccione la parte del texto que desee condicionar y pulse **Condición**.
+1. En el módulo de texto correspondiente, seleccione la parte del texto que desee condicionalizar y seleccione **Condición**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -60,9 +60,9 @@ Puede insertar una condición dentro de la línea en una carta si inserta la con
    >
    >No se puede guardar una expresión condicional vacía o no válida. Debe haber una expresión condicional válida dentro de `${}` para guardar la expresión.
 
-1. Realice lo siguiente para construir una condición para evaluar si el texto seleccionado/condicional aparece en la carta y, a continuación, pulse la marca de verificación para guardar la expresión:
+1. Realice lo siguiente para construir una condición para evaluar si el texto seleccionado/condicional aparece en la carta y, a continuación, seleccione la marca de verificación para guardar la expresión:
 
-   Pulse dos veces un elemento DD para insertarlo en la condición. Inserte el operador adecuado y construya la siguiente condición en el cuadro de diálogo.
+   Seleccione un elemento DD para insertarlo en la condición. Inserte el operador adecuado y construya la siguiente condición en el cuadro de diálogo.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
@@ -70,7 +70,7 @@ Puede insertar una condición dentro de la línea en una carta si inserta la con
 
    Para obtener más información sobre la creación de expresiones, consulte **Crear expresiones y funciones remotas con el generador de expresiones** en [Generador de expresiones](../../forms/using/expression-builder.md). El valor especificado en la expresión debe ser compatible con el elemento del diccionario de datos. Para obtener más información, consulte [Diccionario de datos](../../forms/using/data-dictionary.md).
 
-   Una vez insertada la condición, puede situarse sobre el controlador de la izquierda de la condición para ver la condición. Puede pulsar el controlador para ver el menú emergente de la condición, que le permite editarla o quitarla.
+   Una vez insertada la condición, puede situarse sobre el controlador de la izquierda de la condición para ver la condición. Puede seleccionar el controlador para ver el menú emergente de la condición, que le permite editarla o quitarla.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -111,13 +111,13 @@ El siguiente ejemplo le muestra los pasos para utilizar Repetir para estructurar
 
    ![2_selection](assets/2_selection.png)
 
-1. Pulse Repetir.
+1. Seleccione Repetir.
 
    Aparecerá el cuadro de diálogo Repetir.
 
    ![3_repeatdialog](assets/3_repeatdialog.png)
 
-1. Seleccione Salto de línea como separador y, si es necesario, pulse Agregar condición para crear una regla. También puede utilizar el texto como separador y especificar los caracteres de texto que se utilizarán como separadores.
+1. Seleccione Salto de línea como separador y, si es necesario, seleccione Añadir condición para crear una regla. También puede utilizar el texto como separador y especificar los caracteres de texto que se utilizarán como separadores.
 
    Aparecerá el cuadro de diálogo Crear regla.
 
@@ -172,7 +172,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar Repetir para est
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Pulse **Repetir**. El cuadro de diálogo Repetir aparecerá con una condición vacía dentro de la línea.
+1. Seleccionar **Repetir**. El cuadro de diálogo Repetir aparecerá con una condición vacía dentro de la línea.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -184,7 +184,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar Repetir para est
 
    De lo contrario, si no necesita procesar la información (aquí transacciones) de forma selectiva, mantenga la condición vacía al eliminar lo siguiente en el cuadro de diálogo: `${}`. Guardar una expresión repetida se habilita cuando la ventana de expresiones repetidas está vacía (sin ${} cuando no se necesita repetir) o cuando contiene una condición válida para repetir.
 
-1. Seleccione un separador para dar formato al texto dinámico y pulse la marca de verificación para guardar:
+1. Seleccione un separador para dar formato al texto dinámico y marque la casilla de verificación para guardar:
 
    * **Salto de línea**: inserta un salto de línea después de cada entrada de transacción en la carta de salida.
    * **Texto**: inserta el carácter de texto especificado después de cada entrada de transacción en la carta de salida.
@@ -193,7 +193,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar Repetir para est
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   Puede pulsar el controlador para ver el menú emergente de la repetición, que le permite editar o quitar la construcción repetida.
+   Puede seleccionar el controlador para ver el menú emergente de la repetición, que le permite editar o quitar la construcción repetida.
 
    ![5_repeateditremove](assets/5_repeateditremove.png)
 

@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 96%
+source-wordcount: '332'
+ht-degree: 73%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 De forma predeterminada, los componentes del portal de formularios no están disponibles para su uso. Para que los componentes aparezcan en la lista de componentes disponibles en la barra de tareas de AEM, realice los siguientes pasos:
@@ -30,15 +30,15 @@ De forma predeterminada, los componentes del portal de formularios no están dis
 
 1. Para las páginas que utilizan una plantilla estática, realice los siguientes pasos:
 
-   1. En el encabezado de la página, pulse ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Diseño** para abrir la página en el modo Diseño.
-   1. Pulse cualquier componente (con un borde azul) y, a continuación, pulse ![nivel de campo](assets/field-level.png) para seleccionar el sistema de párrafos que contiene el componente actual.
-   1. En el sistema de párrafos, pulse ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar del sistema de párrafos.
-   1. De la lista de **[!UICONTROL Componentes permitidos]**, habilite las casillas de verificación para los componentes **[!UICONTROL Servicios de documentos]** y **[!UICONTROL Predicados de servicios de documentos]**. Pulse **[!UICONTROL Aceptar]**.
+   1. En el encabezado de la página, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Diseño** para abrir la página en el modo Diseño.
+   1. Seleccione cualquier componente (con un borde azul) y luego seleccione ![field-level](assets/field-level.png) para seleccionar el sistema de párrafos que contiene el componente actual.
+   1. En el sistema de párrafos, seleccione ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar del sistema de párrafos.
+   1. De la lista de **[!UICONTROL Componentes permitidos]**, habilite las casillas de verificación para los componentes **[!UICONTROL Servicios de documentos]** y **[!UICONTROL Predicados de servicios de documentos]**. Seleccionar **[!UICONTROL OK]**.
 
 1. Para las páginas que utilizan una plantilla dinámica, realice los siguientes pasos:
 
-   1. En el encabezado de la página, pulse ![propiedades](assets/properties.png) > **Editar plantilla** para abrir la plantilla de la página.
-   1. Pulse **Contenedor de diseño** y pulse ![FeedManagement](/help/forms/using/assets/feedmanagement.png). En la pestaña **Componentes permitidos**, habilite **Predicados de servicios de documentos y Servicios de documentos** y pulse ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. En el encabezado de la página, seleccione ![propiedades](assets/properties.png) > **Editar plantilla** para abrir la plantilla de la página.
+   1. Seleccionar **Contenedor de diseño** y seleccione ![FeedManagement](/help/forms/using/assets/feedmanagement.png). En el **Componentes permitidos** , active la pestaña **Servicios de documentos y predicados de servicios de documentos** y seleccione. ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

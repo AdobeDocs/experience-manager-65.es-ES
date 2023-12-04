@@ -9,10 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '3979'
-ht-degree: 97%
+source-wordcount: '3982'
+ht-degree: 89%
 
 ---
 
@@ -245,11 +245,11 @@ Primero necesita lo siguiente para crear una correspondencia:
 
    ![create-letter](assets/create-letter.png)
 
-1. Para seleccionar un diseño, púlselo y pulse **Siguiente**.
+1. Para seleccionar un diseño, púlselo y seleccione **Siguiente**.
 
    ![Seleccione un diseño para crear una carta](assets/selectlayout.png)
 
-1. Introduzca las propiedades de la correspondencia y pulse **Guardar:**
+1. Introduzca las propiedades de la correspondencia y seleccione **Guardar:**
 
    * **Título (opcional):** escriba el título de la carta. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés.
    * **Nombre:** nombre único de la carta. No puede haber dos cartas en ningún estado con el mismo nombre. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
@@ -260,21 +260,21 @@ Primero necesita lo siguiente para crear una correspondencia:
 
    ![Propiedades de Correspondencia](assets/createcorrespondenceproperties.png)
 
-1. El sistema mostrará el mensaje: “Carta creada correctamente”. (en el mensaje de alerta) Pulse **Abrir** para configurar los módulos de datos y los fragmentos de diseño que incluye. O pulse **Listo** para volver a la página anterior.
+1. El sistema mostrará el mensaje: “Carta creada correctamente”. (en el mensaje de alerta) Seleccione **Abrir** para configurar los módulos de datos y los fragmentos de diseño que contiene. O seleccione **Listo** para volver a la página anterior.
 
    ![Mensaje de alerta: carta creada correctamente](assets/createcorrespondencecreated.png)
 
-   **Siguiente**: al pulsar **Abrir**, Administración de correspondencia mostrará una representación del diseño con todos los componentes del diseño (XDP) enumerados. Inserte los [módulos de datos y fragmentos de diseño y configúrelos](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Siguiente**: cuando selecciona **Abrir**, Administración de correspondencia mostrará una representación del diseño con todos los componentes del diseño (XDP) enumerados. Inserte los [módulos de datos y fragmentos de diseño y configúrelos](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Inserte módulos de datos y fragmentos de diseño en una carta y configúrelos {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Después de crear una correspondencia, si pulsa Abrir, Administración de correspondencia mostrará una representación de la presentación con todas las áreas de subformularios/destino de la presentación (XDP) enumerados. En cada una de las áreas de destino, puede elegir insertar un módulo de datos o un fragmento de diseño (y luego módulos de datos en el fragmento de diseño).
+Después de crear una correspondencia, si selecciona Abrir, Administración de correspondencia mostrará una representación de la presentación con todas las áreas de subformularios/destino de la presentación (XDP) enumerados. En cada una de las áreas de destino, puede elegir insertar un módulo de datos o un fragmento de diseño (y luego módulos de datos en el fragmento de diseño).
 
 >[!NOTE]
 >
->También puede pulsar el icono Editar de una carta en la página Cartas para Insertar módulos de datos y fragmentos de diseño y configurarlos.
+>También puede seleccionar el icono Editar de una carta en la página Cartas para Insertar módulos de datos y fragmentos de diseño en una carta y configurarlos.
 
-1. Pulse **Insertar** para cada uno de los subformularios y seleccione Módulos de datos o un fragmento de diseño para insertar en cada uno de ellos.
+1. Seleccionar **Insertar** para cada uno de los subformularios y seleccione Módulos de datos o un fragmento de diseño para insertar en cada uno de ellos.
 
    ![Insertar módulos de datos y fragmentos de diseño](assets/insertdmandlf.png)
 
@@ -283,7 +283,7 @@ Después de crear una correspondencia, si pulsa Abrir, Administración de corres
    ![nestedlf](assets/nestedlf.png)
 
 1. Si inserta un fragmento de presentación, el nombre del fragmento de presentación aparecerá en el subformulario. Y según el fragmento seleccionado, los subformularios anidados aparecerán en el subformulario.
-1. Una vez insertados los módulos de datos seleccionados en el diseño, puede pulsar el modo de configuración y definir lo siguiente después de pulsar el icono Editar para cada uno de los módulos:
+1. Una vez insertados los módulos de datos seleccionados en el diseño, puede seleccionar el modo de configuración y definir lo siguiente después de pulsar el icono Editar para cada uno de los módulos:
 
    1. **Editable**: cuando selecciona esta opción, el contenido se puede editar en la interfaz de usuario Crear correspondencia. Marque el contenido como editable solo si requiere que el usuario del negocio (como un Administrador de reclamaciones) lo modifique.
    1. **Obligatorio**: cuando selecciona esta opción, el contenido es necesario en la interfaz de usuario Crear correspondencia.
@@ -294,20 +294,20 @@ Después de crear una correspondencia, si pulsa Abrir, Administración de corres
 
    ![Módulos de datos y fragmentos de diseño insertados](assets/insertdmandlf2.png)
 
-1. Para editar un módulo, pulse el icono Editar que hay junto a él. Después de editar los módulos, pulse **Guardar**.
+1. Para editar un módulo, seleccione el icono Editar que hay junto a él. Después de editar los módulos, seleccione **Guardar**.
 
    En esta página, también puede hacer lo siguiente para los subformularios:
 
-   1. **Permitir texto libre**: si la opción Permitir texto libre está habilitada, el usuario puede agregar texto dentro de la línea en la carta en la vista CCR. En la vista CCR, se habilita una acción “T” para las áreas de destino que tienen habilitada la opción Permitir texto libre y cuando el usuario la pulse, se solicitará el nombre y la descripción del texto y, al pulsar Aceptar, se abrirá el texto en modo de edición, donde el usuario puede agregar texto. Esto funciona como otros módulos de texto
+   1. **Permitir texto libre**: si la opción Permitir texto libre está habilitada, el usuario puede agregar texto dentro de la línea en la carta en la vista CCR. En la vista CCR, se habilita una acción &quot;T&quot; para las áreas de destino que tienen habilitada la opción Permitir texto libre y cuando el usuario la selecciona, se solicita el nombre y la descripción del texto y, al pulsar Aceptar, se abre ese texto en modo de edición, donde el usuario puede agregar texto. Esto funciona como otros módulos de texto
    1. **Bloquear orden**: bloquea el orden de los subformularios de la carta. No se permite al autor reordenar los subformularios o componentes al crear la carta.
 
    En esta página, también puede hacer lo siguiente para cada uno de los recursos de los subformularios:
 
    1. **Cambiar el orden de los recursos**: arrastre y suelte un recurso que contenga el icono de reordenar de un recurso ( ![dragndrop](assets/dragndrop.png)).
-   1. **Eliminar recursos**: pulse el icono Eliminar situado junto a un recurso para eliminarlo.
-   1. **Previsualizar recursos**: pulse el icono Mostrar vista previa ( ![showpreview](assets/showpreview.png)) junto a un recurso.
+   1. **Eliminar recursos**: seleccione el icono Eliminar junto a un recurso para eliminarlo.
+   1. **Previsualización de recursos**: seleccione el icono mostrar vista previa ( ![showpreview](assets/showpreview.png)) junto a un recurso.
 
-1. Pulse **Siguiente**.
+1. Seleccione **Siguiente**.
 1. La página Datos detalla cómo se utilizan los campos de datos y las variables en la plantilla. Los datos se pueden vincular a fuentes de datos como un diccionario de datos o entradas del usuario. Cada campo define propiedades desde las que el diccionario de datos asigna datos o qué rótulo se muestra para los campos de entrada del usuario.
 
    Vinculación:
@@ -337,19 +337,19 @@ Después de crear una correspondencia, si pulsa Abrir, Administración de corres
 
    ![vínculos](assets/linkages.png)
 
-1. Después de especificar el vínculo, pulse **Siguiente**. Administración de correspondencia muestra la pantalla Anexos.
+1. Después de especificar el vínculo, seleccione **Siguiente**. Administración de correspondencia muestra la pantalla Anexos.
 
 ### Configurar los archivos adjuntos {#set-up-the-attachments}
 
 1. Seleccione **Agregar recurso**.
-1. En la pantalla Seleccionar recurso, pulse los recursos que desea adjuntar a la carta y pulse **Listo**. Debe tener los recursos que cargó primero en Recursos. Se recomienda adjuntar únicamente documentos PDF y de Microsoft Office, pero también imágenes. Para obtener más información sobre la carga de recursos en DAM, consulte [Cargar recursos](/help/assets/manage-assets.md).
-1. Para bloquear el orden de los recursos en la lista de modo que el Administrador de reclamaciones no pueda cambiar el orden, pulse **Bloquear orden**. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
+1. En la pantalla Seleccionar recurso, seleccione los recursos que desea adjuntar a la carta y seleccione **Listo**. Debe tener los recursos que cargó primero en Recursos. Se recomienda adjuntar únicamente documentos PDF y de Microsoft Office, pero también imágenes. Para obtener más información sobre la carga de recursos en DAM, consulte [Cargar recursos](/help/assets/manage-assets.md).
+1. Para bloquear el orden de los recursos en la lista de modo que el Administrador de reclamaciones no pueda cambiar el orden, seleccione **Bloquear orden**. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
 1. Para cambiar el orden de los recursos, arrastre y suelte un recurso que contenga el icono de reordenar de un recurso ( ![dragndrop](assets/dragndrop.png)).
-1. Pulse **Editar** delante de un archivo adjunto y especifique un archivo adjunto como obligatorio si no desea que el autor pueda eliminarlo. Especifique un archivo adjunto como Seleccionado si desea que se preseleccione en la interfaz de CCR.
+1. Seleccionar **Editar** delante de un archivo adjunto y especifique un archivo adjunto como obligatorio si no desea que el autor pueda eliminarlo. Especifique un archivo adjunto como Seleccionado si desea que se preseleccione en la interfaz de CCR.
 1. Seleccione **Acceso a la biblioteca** para conceder acceso a la biblioteca. Si el acceso a la biblioteca está habilitado, el Administrador de reclamaciones podrá acceder a la biblioteca de contenido al crear una carta e insertar archivos adjuntos.
 1. Seleccione **Configuración de archivos adjuntos** y especifique el número máximo de archivos adjuntos.
 
-1. Pulse **Guardar**. La correspondencia se creará y aparecerá en la página Cartas.
+1. Seleccionar **Guardar**. La correspondencia se creará y aparecerá en la página Cartas.
 
 Después de crear una plantilla de carta en Administración de correspondencia, el usuario/agente/administrador de reclamaciones final podrá abrir la carta en la interfaz de usuario de CCR y crear una correspondencia al introducir datos, configurar contenido y administrar archivos adjuntos. Para obtener más información, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
 
@@ -473,7 +473,7 @@ Los siguientes valores de la tabla
 Puede utilizar una plantilla de carta existente para crear rápidamente una plantilla de carta con propiedades, contenido y recursos heredados similares, como fragmentos de documento y diccionario de datos. Para ello, copie y pegue una carta.
 
 1. En la página Cartas, seleccione una o varias cartas. La interfaz de usuario muestra el icono Copiar.
-1. Pulse Copiar. La interfaz de usuario muestra el icono Pegar. Si lo desea, también puede abrir una carpeta antes de pegar el fragmento. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
-1. Pulse Pegar. Aparecerá el cuadro de diálogo Pegar. Si está copia y pega las cartas en el mismo lugar, el sistema asignará automáticamente nombres y títulos a las copias nuevas de las cartas, pero podrá editar sus títulos y nombres.
+1. Seleccione Copiar. La interfaz de usuario muestra el icono Pegar. Si lo desea, también puede abrir una carpeta antes de pegar el fragmento. Las carpetas pueden contener recursos con los mismos nombres. Para obtener más información sobre las carpetas, consulte [Carpetas y organización de recursos](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Seleccione Pegar. Aparecerá el cuadro de diálogo Pegar. Si está copia y pega las cartas en el mismo lugar, el sistema asignará automáticamente nombres y títulos a las copias nuevas de las cartas, pero podrá editar sus títulos y nombres.
 1. Si es necesario, edite el Título y el Nombre con los que desea guardar la copia de la carta.
-1. Pulse Pegar. Se creará la copia de la carta. Ahora puede realizar los cambios necesarios en la carta recién creada.
+1. Seleccione Pegar. Se creará la copia de la carta. Ahora puede realizar los cambios necesarios en la carta recién creada.

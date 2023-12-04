@@ -11,10 +11,10 @@ content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 100%
+source-wordcount: '1402'
+ht-degree: 85%
 
 ---
 
@@ -69,20 +69,19 @@ Un recurso puede tener los siguientes estados:
 1. Inicie sesión en el servidor de AEM Forms.
 1. Utilice una de las siguientes opciones para seleccionar y publicar un recurso.
 
-   1. Mueva el puntero sobre un recurso y pulse **[!UICONTROL Publicar]** ![aem6forms_global](assets/aem6forms_globe.pngasset.png).
-   1. Realice una de las siguientes acciones y, a continuación, pulse Publicar:
+   1. Mueva el puntero sobre un recurso y seleccione **[!UICONTROL Publish]** ![aem6forms_global](assets/aem6forms_globe.pngasset.png).
+   1. Realice una de las siguientes acciones y, a continuación, seleccione Publicar:
 
-      * Si está en la vista de tarjeta, pulse **[!UICONTROL Introducir selección]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) y pulse en el recurso. Se selecciona el recurso.
+      * Si está en la vista de tarjeta, seleccione **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)y seleccione el recurso. Se selecciona el recurso.
       * Si está en la vista de lista, seleccione la casilla de verificación de un recurso. Se selecciona el recurso.
-      * Pulse en un recurso para mostrar sus detalles.
+      * Seleccione un recurso para mostrar sus detalles.
       * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
       >No seleccione varios recursos. No se pueden publicar varios recursos a la vez.
 
-
-1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados. En el cuadro de diálogo que contiene los recursos relacionados, pulse **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
+1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados. En el cuadro de diálogo que contiene los recursos relacionados, seleccione **[!UICONTROL Publish]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
 
    >[!NOTE]
    >
@@ -107,9 +106,9 @@ AEM Forms le permite publicar todos los recursos de Administración de correspo
 Complete los siguientes pasos para publicar todos los recursos de administración de correspondencia en un servidor:
 
 1. Inicie sesión en el servidor de AEM Forms.
-1. Pulse **Adobe Experience Manager** en la barra de navegación global.
-1. Pulse ![herramientas](assets/tools.png) y, a continuación, **Formularios**.
-1. Pulse **Publicar los recursos de administración de correspondencia**.
+1. Seleccionar **Adobe Experience Manager** en la barra de navegación global.
+1. Seleccionar ![herramientas](assets/tools.png), y luego seleccione **Forms**.
+1. Seleccionar **Publicar recursos de Administración de correspondencia**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
@@ -117,7 +116,7 @@ Complete los siguientes pasos para publicar todos los recursos de administració
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Pulse **Publicar** y, en el mensaje de confirmación, pulse **OK**.
+1. Seleccionar **Publish** y, en el mensaje de confirmación, seleccione **OK**.
 
    Una vez completado un proceso por lotes, puede ver los detalles de la última ejecución. Incluye información como el inicio de sesión del administrador y si el lote se ejecuta correctamente o no.
 
@@ -131,27 +130,27 @@ AEM Forms le permite programar la publicación y la cancelación de la publicac
 
 Siga estos pasos para programar la fecha y la hora de publicación y cancelación de la publicación de recursos de formularios y documentos:
 
-1. Seleccione un recurso y pulse **[!UICONTROL Ver propiedades]**. Se abre la página Propiedades de metadatos.
-1. En la página Propiedades de metadatos, pulse **[!UICONTROL Avanzado]** y, a continuación, pulse **[!UICONTROL Editar]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Seleccione un recurso y seleccione **[!UICONTROL Ver propiedades]**. Se abre la página Propiedades de metadatos.
+1. En la página Propiedades de metadatos, seleccione **[!UICONTROL Avanzadas]**, y luego seleccione **[!UICONTROL Editar]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. En los campos **[!UICONTROL Tiempo de actividad de publicación]** y **[!UICONTROL Tiempo de inactividad de la publicación]** seleccione la fecha y la hora.\
-   Pulse **[!UICONTROL Listo]** ![aem6forms_check](assets/aem6forms_check.png).
+   Seleccionar **[!UICONTROL Listo]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Cancelar la publicación de un recurso {#unpublish-an-asset}
 
-1. Seleccione un recurso publicado y pulse **[!UICONTROL Cancelar la publicación]** ![cancelar la publicación](assets/unpublish.png).
+1. Seleccione un recurso publicado y seleccione **[!UICONTROL Cancelar publicación]** ![cancelar publicación](assets/unpublish.png).
 1. Utilice una de las siguientes opciones para seleccionar y cancelar la publicación de un recurso.
 
-   1. Mueva el puntero sobre un recurso y pulse **[!UICONTROL Cancelar la publicación]** ![cancelar la publicación](assets/unpublish.png).
-   1. Realice una de las siguientes acciones y, a continuación, pulse Cancelar la publicación:
+   1. Mueva el puntero sobre un recurso y seleccione **[!UICONTROL Cancelar publicación]** ![cancelar publicación](assets/unpublish.png).
+   1. Realice una de las siguientes acciones y, a continuación, seleccione cancelar publicación:
 
-      * Si está en la vista de tarjeta, pulse **[!UICONTROL Introducir selección]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) y pulse en el recurso. Se selecciona el recurso.
+      * Si está en la vista de tarjeta, seleccione **[!UICONTROL Introducir selección]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)y seleccione el recurso. Se selecciona el recurso.
 
-      * Si está en la vista de lista, pase el puntero sobre un recurso y pulse ![selectassetcheckmark](assets/selectassetcheckmark.png). Se selecciona el recurso.
+      * Si está en la vista de lista, pase el ratón sobre un recurso y seleccione ![selectassetcheckmark](assets/selectassetcheckmark.png) . Se selecciona el recurso.
 
-      * Pulse en un recurso para mostrar sus detalles.
+      * Seleccione un recurso para mostrar sus detalles.
       * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).
 
-1. Cuando se inicia el proceso Cancelar la publicación, aparece un cuadro de diálogo de confirmación. Pulse **[!UICONTROL Cancelar la publicación]**.
+1. Cuando se inicia el proceso Cancelar la publicación, aparece un cuadro de diálogo de confirmación. Seleccionar **[!UICONTROL Cancelar publicación]**.
 
    >[!NOTE]
    >
@@ -165,8 +164,8 @@ Cada vez que publica un recurso o una carta después de su edición, se crea una
 >
 >No revierta una carta a un estado de última publicación si se elimina del sistema cualquier recurso dependiente utilizado en esa carta publicada.
 
-1. Seleccione un recurso y pulse **[!UICONTROL Revertir a la versión publicada anteriormente]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Antes de revertir el recurso, aparece un cuadro de diálogo de confirmación. Pulse **[!UICONTROL Revertir]**.
+1. Seleccione un recurso y seleccione **[!UICONTROL Revertir a la versión publicada anteriormente]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Antes de revertir el recurso, aparece un cuadro de diálogo de confirmación. Seleccionar **[!UICONTROL Revertir]**.
 
    El recurso o la carta vuelven a su versión publicada anteriormente.
 
@@ -176,17 +175,17 @@ Cada vez que publica un recurso o una carta después de su edición, se crea una
 >
 >Al eliminar un recurso, se elimina de la instancia de publicación. Al eliminar un recurso, también se elimina su historial de versiones, excepto la versión base.
 
-1. Seleccione un recurso y pulse **[!UICONTROL Eliminar]** ![eliminar](assets/delete.png).
+1. Seleccione un recurso y seleccione **[!UICONTROL Eliminar]** ![eliminar](assets/delete.png).
 
    >[!NOTE]
    >
    >La opción Eliminar también está disponible cuando muestra los detalles del recurso al pulsar en un recurso o mostrando las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).
 
-1. Antes de eliminar el recurso, aparece un cuadro de diálogo de confirmación. Pulse **[!UICONTROL Eliminar]**.
+1. Antes de eliminar el recurso, aparece un cuadro de diálogo de confirmación. Seleccione **[!UICONTROL Eliminar]**.
 
    >[!NOTE]
    >
-   >Solo se elimina el recurso seleccionado, y los recursos dependientes no se eliminan. Para comprobar las referencias de un recurso, pulse ![referencias](assets/references.png) y, a continuación, seleccione un recurso.
+   >Solo se elimina el recurso seleccionado, y los recursos dependientes no se eliminan. Para comprobar las referencias de un recurso, seleccione ![referencias](assets/references.png) y, a continuación, seleccione un recurso.
    >
    >
    >Si el recurso que trata de eliminar es un recurso secundario de otro recurso, no se elimina. Para eliminar un recurso de este tipo, quite las referencias de este recurso de otros recursos y reinténtelo.

@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '10067'
+source-wordcount: '10038'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,7 @@ Para configurar la tarea de limpieza para los trabajos de carga de fragmentos no
 
 >[!CAUTION]
 >
->La carga de fragmentos se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=es) y configure el `timeout configuration` para reducir el tiempo que tarda un recurso en cargarse, se produce una situación de tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie la `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
+>La carga de fragmentos se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) y configure el `timeout configuration` para reducir el tiempo que tarda un recurso en cargarse, se produce una situación de tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie la `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
 >
 >Teniendo en cuenta el tiempo de espera de caducidad de la credencial, la latencia, el ancho de banda y las cargas simultáneas esperadas, el valor más alto que le permite asegurarse de que se selecciona lo siguiente:
 >
@@ -318,7 +318,7 @@ Para transcodificar un archivo de vídeo eligiendo entre varios ajustes preestab
 | Vídeo adaptable | | Un solo ajuste preestablecido de codificación que funciona con cualquier relación de aspecto para crear vídeos para su envío a dispositivos móviles, tabletas y de escritorio. Los vídeos de origen cargados que se codifican con este ajuste preestablecido se establecen con una altura fija. Sin embargo, la anchura se amplía automáticamente para conservar la relación de aspecto del vídeo. <br>La práctica recomendada es utilizar la codificación de vídeo adaptable. |
 | Ajustes preestablecidos de codificación única | Ordenar ajustes preestablecidos de codificación | Seleccionar **[!UICONTROL Nombre]** o **[!UICONTROL Tamaño]** si desea ordenar los ajustes preestablecidos de codificación enumerados en Escritorio, Móvil y Tablet por nombre o por tamaño de resolución. |
 | | Escritorio | Cree un archivo MP4 para ofrecer una experiencia de flujo continuo o vídeo progresivo a los equipos de escritorio. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
-| | Móvil | Cree un archivo MP4 para su envío a dispositivos móviles iPhone o Android™. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
+| | Mobile | Cree un archivo MP4 para su envío a dispositivos móviles iPhone o Android™. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
 | | Tableta | Cree un archivo MP4 para su envío a dispositivos iPad o tableta Android™. Seleccione una o varias relaciones de aspecto con el tamaño de resolución y la velocidad de datos de destino que desee. |
 
 #### Establecer ajustes preestablecidos del conjunto de lotes al cargar {#setting-batch-set-presets-at-upload}
@@ -407,7 +407,7 @@ Para obtener una vista previa de un recurso mediante el teclado, siga estos paso
    *Imagen: uso del selector de fechas para programar la activación de recursos.*
 
 1. Marque **[!UICONTROL Tiempo de activación/desactivación alcanzado]** si desea actualizar las déclencheur del agente de replicación en las propiedades de metadatos.
-   ![Ajustes de agente](assets-dm/Agent-settings.png)
+   ![Configuración de agente](assets-dm/Agent-settings.png)
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y la hora de desactivación del selector de fechas situado junto al **[!UICONTROL Tiempo de inactividad]** field. La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles a través del [!DNL Assets] a través de la interfaz web o de la API HTTP.
 
@@ -655,7 +655,7 @@ Para realizar búsquedas sencillas, avanzadas y personalizadas con el fin de des
 
 Los iconos de acción rápida están disponibles para un solo recurso a la vez. Según el dispositivo, realice las siguientes acciones para mostrar los iconos de acción rápida:
 
-* Dispositivos táctiles: toque y mantenga presionado. Por ejemplo, en una iPad, puede pulsar y mantener pulsado un recurso para que se muestren las acciones rápidas.
+* Dispositivos táctiles: toque y mantenga presionado. Por ejemplo, en una iPad, puede seleccionar y mantener presionado un recurso para que se muestren las acciones rápidas.
 * Dispositivos no táctiles: Pase el puntero por encima. Por ejemplo, en un dispositivo de escritorio, se muestra la barra de acciones rápidas si pasa el puntero sobre la miniatura del recurso.
 
 ### Navegar y seleccionar recursos {#navigating-and-selecting-assets}

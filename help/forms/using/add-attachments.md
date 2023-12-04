@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 96%
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ## Agregar archivos adjuntos en formularios sincronizados con el servidor de flujo de trabajo de AEM Forms (AEM Forms en JEE) {#adding-annotations}
 
-La aplicación de AEM Forms permite adjuntar imágenes, notas garabateadas y notas de texto al formulario sincronizado con el servidor JEE de AEM Forms. Si el formulario se carga desde un servidor del flujo de trabajo de AEM Forms, los archivos adjuntos se agregan al formulario. Puede pulsar el botón de archivos adjuntos ![attachment-app](assets/attachments-app.png) para ver todos los archivos adjuntos de un formulario juntos. La notificación roja especifica el número de archivos adjuntos en el formulario. Si no hay datos adjuntos en el formulario, no verá el botón de notificaciones rojo. Si no hay datos adjuntos en el formulario, al pulsar el botón de archivos adjuntos ![attch](assets/attch.png), verá opciones para adjuntar fotos o garabatos.
+La aplicación de AEM Forms permite adjuntar imágenes, notas garabateadas y notas de texto al formulario sincronizado con el servidor JEE de AEM Forms. Si el formulario se carga desde un servidor del flujo de trabajo de AEM Forms, los archivos adjuntos se agregan al formulario. Puede seleccionar el botón Archivo adjunto ![attachments-app](assets/attachments-app.png) para ver todos los archivos adjuntos de un formulario juntos. La notificación roja especifica el número de archivos adjuntos en el formulario. Si no hay datos adjuntos en el formulario, no verá el botón de notificaciones rojo. Si no hay datos adjuntos en el formulario, al seleccionar el botón Datos adjuntos ![sujetar](assets/attch.png), tiene opciones para adjuntar fotos o garabatos.
 
 Las opciones son las siguientes:
 
@@ -34,7 +34,7 @@ Las opciones son las siguientes:
 
 ### Pantalla de archivos adjuntos {#the-attachments-screen}
 
-Para ver todos los archivos adjuntos en un lugar, pulse ![attachment-app](assets/attachments-app.png). Aquí puede agregar, cambiar el nombre y eliminar archivos adjuntos.
+Para ver todos los archivos adjuntos en un lugar, seleccione ![attachments-app](assets/attachments-app.png). Aquí puede agregar, cambiar el nombre y eliminar archivos adjuntos.
 
 ![Todos los archivos adjuntos en un lugar](assets/attachments-screen.png)
 
@@ -44,26 +44,26 @@ Puede usar el botón **+** de la pantalla de archivos adjuntos para adjuntar otr
 
 Puede utilizar la cámara del dispositivo móvil o guardar imágenes en el dispositivo para adjuntar una imagen en el formulario.
 
-1. Pulse el botón de archivos adjuntos ![attch](assets/attch.png) de la parte inferior de la ventana.
-1. Pulse **Galería** o **Cámara** en la ventana emergente que aparece.
+1. Seleccione el botón Archivo adjunto ![sujetar](assets/attch.png) en la parte inferior de la ventana.
+1. Seleccionar **Galería** o **Cámara** en la ventana emergente que aparece.
 1. En función de la opción seleccionada, realice lo siguiente:
 
    1. Si selecciona **Cámara**.
 
-      Tome una foto. A continuación, pulse el botón **Usar** ![use-pic](assets/use-pic.png).
+      Tome una foto. A continuación, seleccione la **Uso** ![use-pic](assets/use-pic.png) botón.
 
-      O pulse el botón **Repetir** ![retake](assets/retake.png) para volver a tomar la fotografía.
+      O seleccione la opción **Repetir** ![retake](assets/retake.png) para volver a tomar la fotografía.
 
    1. Si selecciona **Galería**.
 
-      Aparecerá el explorador de imágenes del dispositivo. En el explorador de imágenes de su dispositivo, pulse la imagen que desea adjuntar.
+      Aparecerá el explorador de imágenes del dispositivo. En el explorador de imágenes del dispositivo, seleccione la imagen que desea adjuntar.
 
 ### Agregar una nota {#adding-a-note}
 
 La opción **Notas** permite agregar garabatos hechos a mano alzada y archivos adjuntos de texto en el formulario.
 
-1. Pulse el botón de archivos adjuntos ![attch](assets/attch.png) de la parte inferior de la ventana.
-1. Pulse **Notas** en la ventana emergente que aparece.
+1. Seleccione el botón Archivo adjunto ![sujetar](assets/attch.png) en la parte inferior de la ventana.
+1. Seleccionar **Notas** en la ventana emergente que aparece.
 1. En la interfaz de usuario de Notas que se inicia, realice un garabato a mano alzada.
 
    ![Interfaz de Garabatos](assets/scribble-ui.png)

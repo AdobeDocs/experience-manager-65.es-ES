@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
 workflow-type: tm+mt
-source-wordcount: '4031'
-ht-degree: 98%
+source-wordcount: '4024'
+ht-degree: 97%
 
 ---
 
@@ -186,7 +186,7 @@ Se le puede permitir agregar, actualizar, eliminar o guardar archivos adjuntos l
 
 ### Guardar el trabajo sin completar la tarea {#save-your-work-without-completing-the-task}
 
-1. En cualquier pestaña, pulse **Guardar**.
+1. En cualquier pestaña, seleccione **Guardar**.
 
    Aparecerá el cuadro de diálogo Guardar como borrador. El nombre predeterminado del borrador será el nombre de la tarea de la plantilla de tarea.
 
@@ -199,7 +199,7 @@ Se le puede permitir agregar, actualizar, eliminar o guardar archivos adjuntos l
    >
    >Para obtener más información, consulte Guardar borrador periódicamente en [Preferencias de administración](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. En el cuadro de diálogo Guardar como borrador, especifique un nombre único para la tarea y pulse **Aceptar**.
+1. En el cuadro de diálogo Guardar como borrador, especifique un nombre único para la tarea y seleccione **OK**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 
