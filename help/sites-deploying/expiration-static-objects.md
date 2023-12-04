@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
 
 >[!CAUTION]
 >
->Debe tener cuidado al definir el período de tiempo durante el cual se considera que un objeto está actualizado. Como hay *no se realizará ninguna comprobación hasta que haya transcurrido el período de tiempo especificado*, el cliente puede terminar presentando contenido antiguo desde la caché.
+>Tenga cuidado al definir el período de tiempo durante el cual se considera que un objeto está actualizado. Como hay *no se realizará ninguna comprobación hasta que haya transcurrido el período de tiempo especificado*, el cliente puede terminar presentando contenido antiguo desde la caché.
 
 1. **Para una instancia de autor:**
 

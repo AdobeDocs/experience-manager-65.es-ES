@@ -10,14 +10,14 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 8%
+source-wordcount: '418'
+ht-degree: 7%
 
 ---
 
-# Trabajo con Dynamic Media {#working-with-dynamic-media}
+# Uso de Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visuales enriquecidos bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Con un conjunto de recursos de origen primarios, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
@@ -82,7 +82,7 @@ Los recursos habilitados para Dynamic Media incluyen `pyramid.tiffs`.
 
 ### Cambio de vistas de recursos {#asset-views-change}
 
-Con Dynamic Media habilitado, puede acercar y alejar la imagen haciendo clic en el icono `+` y `-` botones. También puede tocar o hacer clic para acercar el zoom a determinadas áreas. Revertir le lleva a la versión original y puede hacer que la imagen de pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado tiene este aspecto:
+Con Dynamic Media habilitado, puede acercar y alejar la imagen haciendo clic en el icono `+` y `-` botones. También puede hacer clic en para ampliar una zona concreta. Revertir le lleva a la versión original y puede hacer que la imagen de pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado tiene este aspecto:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

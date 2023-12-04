@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 35%
+source-wordcount: '2672'
+ht-degree: 26%
 
 ---
 
@@ -48,11 +48,11 @@ Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace 
 
 >[!NOTE]
 >
->Recuerde que el uso del activador En la modificación puede afectar al rendimiento. Consulte [las prácticas recomendadas de MSM](/help/sites-administering/msm-best-practices.md#onmodify) para obtener más información.
+>El uso del déclencheur En la modificación puede afectar al rendimiento. Consulte [las prácticas recomendadas de MSM](/help/sites-administering/msm-best-practices.md#onmodify) para obtener más información.
 
 ### Configuraciones de despliegue instaladas {#installed-rollout-configurations}
 
-AEM En la tabla siguiente se enumeran las opciones de configuración de despliegue que se instalan con las opciones de configuración de la implementación de. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento. Si las acciones de configuración de lanzamiento instaladas no cumplen con sus requisitos, puede [creación de una configuración de despliegue](#creating-a-rollout-configuration).
+AEM En la tabla siguiente se enumeran las opciones de configuración de despliegue que se instalan con las opciones de configuración de la implementación de. La tabla incluye las acciones de déclencheur y sincronización de cada configuración de lanzamiento. Si las acciones de configuración de lanzamiento instaladas no cumplen con sus requisitos, puede [creación de una configuración de despliegue](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -64,7 +64,7 @@ AEM En la tabla siguiente se enumeran las opciones de configuración de desplieg
   </tr>
   <tr>
    <td>Configuración de lanzamiento estándar</td>
-   <td>La configuración de lanzamiento estándar permite iniciar procesos de lanzamiento con el activador de lanzamientos, y ejecuta acciones como crear, actualizar, eliminar contenido y ordenar nodos secundarios.</td>
+   <td>Configuración de lanzamiento estándar que permite iniciar procesos de lanzamiento con el activador onRollout y ejecuta acciones: crear, actualizar, eliminar contenido y ordenar nodos secundarios.</td>
    <td>En el despliegue</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -118,7 +118,7 @@ AEM En la tabla siguiente se enumeran las opciones de configuración de desplieg
   </tr>
   <tr>
    <td>Configuración de despliegue de catálogo heredado (5.6.0)</td>
-   <td>Obsoleto. Use el generador de catálogos en lugar de los medios convencionales para los lanzamientos de catálogos.</td>
+   <td>Obsoleto. Utilice el Generador de catálogos en lugar de MSM para los lanzamientos de catálogos.</td>
    <td>En el despliegue</td>
    <td>editProperties</td>
   </tr>
@@ -138,17 +138,17 @@ AEM En la tabla siguiente se enumeran las acciones de sincronización que se ins
   </tr>
   <tr>
    <td>contentCopy</td>
-   <td>Cuando los nodos de origen no existen en la Live Copy, los copia en esta. <a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de copia de contenido de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. <br /> </td>
+   <td>Cuando los nodos de origen no existen en la Live Copy, los copia en esta. <a href="#excluding-properties-and-node-types-from-synchronization">Configurar el servicio de acción de copia de contenido de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Elimina nodos de la Live Copy que no existen en el origen. <a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de eliminación de contenido de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
+   <td><p>Elimina nodos de la Live Copy que no existen en el origen. <a href="#excluding-properties-and-node-types-from-synchronization">Configurar el servicio de acción de eliminación de contenido de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>Actualiza el contenido de Live Copy con los cambios del origen. <a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de actualización de contenido de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. <br /> </td>
+   <td>Actualiza el contenido de Live Copy con los cambios del origen. <a href="#excluding-properties-and-node-types-from-synchronization">Configurar el servicio de acción de actualización de contenido de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. <br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -156,7 +156,7 @@ AEM En la tabla siguiente se enumeran las acciones de sincronización que se ins
    <td><p>Edita las propiedades de la Live Copy. La propiedad editMap determina qué propiedades se editan y su valor. El valor de la propiedad editMap debe utilizar el formato siguiente:</p> <p><code>[property_name_1]#[current_value]#</code>[nuevo_valor],<br /> <code>[property_name_2]#[current_value]#</code>[nuevo_valor],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[nuevo_valor]</p> <p>El <code>current_value</code> y <code>new_value</code> los elementos son expresiones regulares. <br /> </p> <p>Por ejemplo, considere el siguiente valor para editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Este valor edita las propiedades de los nodos de Live Copy de la siguiente manera:</p>
     <ul>
      <li>El <code>sling:resourceType</code> propiedades que se establecen como <code>contentpage</code> o a <code>homepage</code> están configuradas como <code>mobilecontentpage.</code></li>
-     <li>Las propiedades <code>cq:template</code> definidas en <code>contentpage</code> se establecen como <code>mobilecontentpage.</code></li>
+     <li>El <code>cq:template</code> propiedades que se establecen como <code>contentpage</code> están configuradas como <code>mobilecontentpage.</code></li>
     </ul> </td>
    <td><p> </p> <p>editMap: (cadena) identifica la propiedad, el valor actual y el nuevo valor. Consulte la Descripción para obtener más información.<br /> </p> </td>
   </tr>
@@ -172,7 +172,7 @@ AEM En la tabla siguiente se enumeran las acciones de sincronización que se ins
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>En la Live Copy, esta acción de sincronización actualiza referencias como los vínculos.<br /> Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy (en lugar del modelo). Las referencias que tienen los destinos fuera del modelo no cambian.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de actualización de referencias de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
+   <td><p>En la Live Copy, esta acción de sincronización actualiza referencias como los vínculos.<br /> Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy (en lugar del modelo). Las referencias que tienen los destinos fuera del modelo no cambian.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurar el servicio de acción de actualización de referencias de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -226,7 +226,7 @@ AEM En la tabla siguiente se enumeran las acciones de sincronización que se ins
   </tr>
   <tr>
    <td>PageMoveAction</td>
-   <td><p>PageMoveAction se aplica cuando una página se ha movido en el modelo.</p> <p>La acción copia la página de LiveCopy (relacionada) en lugar de moverla desde la ubicación, antes de realizar el traslado a la ubicación posterior.</p> <p>PageMoveAction no cambia la página de LiveCopy a la ubicación antes del movimiento. Por lo tanto, para RolloutConfigurations consecutivas, tiene el estado de una LiveRelationship sin modelo.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de traslado de páginas de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> <p>Esta acción debe ser la única acción de sincronización incluida en una configuración de lanzamiento.</p> </td>
+   <td><p>PageMoveAction se aplica cuando una página se ha movido en el modelo.</p> <p>La acción copia la página de LiveCopy (relacionada) en lugar de moverla desde la ubicación, antes de realizar el traslado a la ubicación posterior.</p> <p>PageMoveAction no cambia la página de LiveCopy a la ubicación antes del movimiento. Por lo tanto, para RolloutConfigurations consecutivas, tiene el estado de una LiveRelationship sin modelo.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurar el servicio de acción de movimiento de página de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> <p>Esta acción debe ser la única acción de sincronización incluida en una configuración de lanzamiento.</p> </td>
    <td><p>prop_referenceUpdate: (booleano) establézcalo en true para actualizar referencias. El valor predeterminado es True.</p> <p> </p> </td>
   </tr>
   <tr>
@@ -291,7 +291,7 @@ En la tabla siguiente se describen las propiedades que se pueden configurar:
   </tr>
   <tr>
    <td><p>Nodetypes excluidos</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
-   <td>Expresión regular que coincide con los tipos de nodos que se van a excluir de la acción de sincronización.</td>
+   <td>Expresión regular que coincide con los tipos de nodo que se van a excluir de la acción de sincronización.</td>
   </tr>
   <tr>
    <td><p>Elementos de párrafo excluidos</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
@@ -394,7 +394,7 @@ También puede configurar las opciones de configuración de despliegue para una 
 
    ![Configuraciones de despliegue seleccionadas](assets/chlimage_1-2.png)
 
-1. Haga clic o pulse **Guardar**.
+1. Haga clic en **Guardar**.
 
 ### Configuración de despliegue para una página de modelo {#setting-the-rollout-configuration-for-a-blueprint-page}
 

@@ -2,10 +2,10 @@
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 92%
+source-wordcount: '2998'
+ht-degree: 91%
 
 ---
 
@@ -240,7 +240,7 @@ Para una [implementación sin encabezado típica mediante AEM,](#level-1) el des
 
 Para que cualquier proyecto sea un éxito, el rendimiento debe tenerse en cuenta antes de crear cualquier contenido.
 
-Debe comprender las expectativas de los usuarios o visitantes y diseñar para ellos. Establezca objetivos de nivel de servicio (SLO) y mídalos para comprender si cumple con las expectativas del usuario.
+Asegúrese de comprender las expectativas de los usuarios/visitantes y de diseñarlas para ellos. Establezca objetivos de nivel de servicio (SLO) y mídalos para comprender si cumple con las expectativas del usuario.
 
 #### Patrones de tráfico {#traffic-patterns}
 

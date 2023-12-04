@@ -2,10 +2,10 @@
 title: Configuración de la integración de traducción
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 94%
+source-wordcount: '1143'
+ht-degree: 88%
 
 ---
 
@@ -70,22 +70,22 @@ Una vez instalado el paquete de conector para el servicio de traducción preferi
 
 Para crear una configuración de traducción:
 
-1. En el menú de navegación global, toque o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
+1. En el menú de navegación global, haga clic en **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. Esto suele basarse en un proyecto en particular o puede ser global.
    * Por ejemplo, en este caso, se podría realizar una configuración global para aplicar a todo el contenido o solo para el proyecto WKND.
 
    ![Ubicación de configuración de traducción](assets/translation-configuration-location.png)
 
-1. Proporcione la siguiente información en los campos y, a continuación, toque o haga clic en **Crear**.
+1. Proporcione la siguiente información en los campos y haga clic en **Crear**.
    1. Seleccione **Tipo de configuración** en la lista desplegable. Seleccione **Integración de traducción** de la lista.
    1. Escriba un **Título** para su configuración. El **Título** identifica la configuración en la consola **Cloud Services**, así como en las listas desplegables de propiedad de página.
    1. Opcionalmente, escriba un **Nombre** para usar para el nodo del repositorio que almacena la configuración.
 
    ![Crear configuración de traducción](assets/create-translation-configuration.png)
 
-1. Toque o haga clic en **Crear** y la ventana **Editar configuración** se muestra donde puede configurar las propiedades de configuración.
+1. Clic **Crear** y el **Editar configuración** aparece una ventana donde puede configurar las propiedades de configuración.
 
-1. Recuerde que los fragmentos de contenido se almacenan como recursos en AEM. Pulse o haga clic en la pestaña **Recursos.**
+1. Recuerde que los fragmentos de contenido se almacenan como recursos en AEM. Haga clic en **Assets** pestaña.
 
 ![Propiedades de configuración de traducción](assets/translation-configuration.png)
 
@@ -100,7 +100,7 @@ Para crear una configuración de traducción:
    1. **Traducir etiquetas**: marque esta opción para traducir las etiquetas asociadas con el recurso.
    1. **Ejecución automática de la traducción**: compruebe esta propiedad si desea que las traducciones se envíen automáticamente al servicio de traducción.
 
-1. Haga clic o pulse en **Guardar y cerrar**.
+1. Haga clic en **Guardar y cerrar**.
 
 Ahora ha configurado el conector en el servicio de traducción.
 
@@ -114,12 +114,12 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 /content/dam/<your-project>/en
 ```
 
-1. Vaya a la navegación global y luego a **Navegación** -> **Activos** -> **Archivos**.
-1. En la consola de activos, seleccione la raíz de idioma que desea configurar y toque o haga clic en **Propiedades**.
-1. Toque o haga clic en la pestaña **Cloud Services**.
+1. Vaya a la navegación global y luego a **Navegación** > **Assets** > **Archivos**.
+1. En la consola de recursos, seleccione la raíz de idioma que desea configurar y haga clic en **Propiedades**.
+1. Haga clic en **Cloud Service** pestaña.
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en el menú desplegable cuando haya instalado su paquete como [descritos anteriormente.](#connect-translation-provider)
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione también la configuración.
-1. Haga clic o pulse en **Guardar y cerrar**.
+1. Haga clic en **Guardar y cerrar**.
 
 ![Seleccionar configuraciones de servicios en la nube](assets/select-cloud-service-configurations.png)
 

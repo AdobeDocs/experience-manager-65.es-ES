@@ -9,10 +9,10 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 2%
+source-wordcount: '759'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ AEM Al utilizar pruebas automatizadas en el marco de la aplicación de, es impor
 
 Abra la consola de pruebas para ver los grupos de pruebas registrados. El panel Pruebas contiene una lista de los grupos de pruebas y sus casos de prueba.
 
-Vaya a la consola Herramientas mediante **Navegación global -> Herramientas > Operaciones -> Pruebas**.
+Vaya a la consola Herramientas mediante **Navegación global > Herramientas > Operaciones > Pruebas**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -69,7 +69,7 @@ El icono &quot;X&quot; indica que la prueba ha fallado:
 
 Para ejecutar un grupo de pruebas:
 
-1. En el panel Pruebas, toque o haga clic en el nombre del caso de prueba que desea ejecutar para expandir los detalles de las acciones.
+1. En el panel Pruebas, haga clic en el nombre del caso de prueba que desea ejecutar para expandir los detalles de las acciones.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -91,7 +91,7 @@ Los grupos de pruebas se ejecutan secuencialmente en el orden en que aparecen en
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. En el panel Pruebas, toque o haga clic en el botón **Ejecutar todas las pruebas** o el botón **Ejecutar pruebas** botón situado debajo del título del grupo de pruebas que desea ejecutar.
+1. En el panel Pruebas, haga clic en **Ejecutar todas las pruebas** o el botón **Ejecutar pruebas** botón situado debajo del título del grupo de pruebas que desea ejecutar.
 
    ![Imagen del botón Ejecutar todas las pruebas y del botón Ejecutar pruebas, indicados por un puntero orientado a la derecha dentro de un círculo.](do-not-localize/chlimage_1-5.png)
 
@@ -116,8 +116,8 @@ Para obtener información detallada sobre la creación de sus propios grupos de 
 
    | Nombre | Tipo | Valor  |
    |---|---|---|
-   | `categories` | String[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | String[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | Cadena[] | `granite.testing.hobbes.tests` |
+   | `dependencies` | Cadena[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >

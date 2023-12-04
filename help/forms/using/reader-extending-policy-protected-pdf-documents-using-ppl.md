@@ -11,16 +11,16 @@ topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 97%
 
 ---
 
 # Ampliar documentos PDF protegidos por políticas utilizando la Biblioteca de Protección Portátil mediante Reader {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-Es necesario estar familiarizado con los conceptos de Document Security, Extensiones de Reader y el lenguaje de programación Java para ampliar los documentos PDF protegidos por políticas de Document Security mediante Reader.
+Familiarícese con los conceptos de Document Security, Extensiones de Reader y el lenguaje de programación Java para ampliar los documentos de PDF protegidos por directivas de Document Security mediante Reader.
 
 Puede utilizar Document Security para restringir el acceso de documentos PDF específicos únicamente a usuarios autorizados. También puede determinar cómo un destinatario puede utilizar un documento protegido. Por ejemplo, puede especificar si los destinatarios pueden imprimir, copiar o editar el texto de un documento protegido por políticas de Document Security. Para obtener más información sobre Document Security, consulte [Acerca de la seguridad de los documentos](/help/forms/using/admin-help/document-security.md).
 

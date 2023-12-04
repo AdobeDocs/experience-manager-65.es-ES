@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 3%
+source-wordcount: '1275'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
       * Como un componente que el usuario puede agregar a una página.
       * Como parsys predeterminado para la página.
-      * Ambas.
+      * Ambos.
 
         Puede tener el contenedor de diseño como estándar para la página, a la vez que permite al usuario agregar más contenedores de diseño dentro de esta página; por ejemplo, para lograr el control de columna.
 
@@ -63,7 +63,7 @@ Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
 >[!NOTE]
 >
->En una instalación predeterminada, se ha configurado un diseño interactivo para el [Sitio de referencia de We.Retail](/help/sites-developing/we-retail.md). Aún debe... [activar el componente Contenedor de diseño](#enable-the-layout-container-component-for-page) para otras páginas.
+>En una instalación predeterminada, se ha configurado un diseño interactivo para el [Sitio de referencia de We.Retail](/help/sites-developing/we-retail.md). [Activación del componente Contenedor de diseño](#enable-the-layout-container-component-for-page) para otras páginas.
 
 ## Configuración del emulador interactivo {#configuring-the-responsive-emulator}
 

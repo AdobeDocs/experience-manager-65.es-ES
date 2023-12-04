@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '6076'
 ht-degree: 0%
 
 ---
@@ -503,7 +503,7 @@ En el HTML, puede utilizar los siguientes marcadores de posición, que se sustit
 |---|---|
 | {name} | Nombre del botón, por ejemplo,**autor, atrás, actualizar**, etc. |
 | {id} | ID de CSS del botón. |
-| {URL} | URL del destino del botón. |
+| {url} | URL del destino del botón. |
 | {text} | Etiqueta del botón. |
 | {onclick} | JavaScript **onclick** función (contiene {url}). |
 
@@ -727,7 +727,7 @@ Utilice el componente Portal para añadir una ventana de portlet a la página we
 
 AEM AEM Para acceder al contenido proporcionado por WCM, es necesario que el servidor del portal esté equipado con el Portlet Director del portal de la interfaz de usuario de la interfaz de usuario de. Para ello, instale, configure y agregue el portlet a la página del portal siguiendo los pasos que se indican en esta sección.
 
-De forma predeterminada, el portlet se conecta a la instancia de publicación en localhost:4503 y a la instancia de autor en localhost:4502. Estos valores se pueden cambiar durante la implementación del portlet. El director del portal está disponible como contenido en el repositorio en /libs/portal/directory. Debe descargar el archivo WAR de la aplicación antes de utilizarlo.
+De forma predeterminada, el portlet se conecta a la instancia de publicación en localhost:4503 y a la instancia de autor en localhost:4502. Estos valores se pueden cambiar durante la implementación del portlet. El director del portal está disponible como contenido en el repositorio en /libs/portal/directory. Descargue el archivo WAR de la aplicación antes de utilizarlo.
 
 ### Descarga del archivo WAR {#downloading-the-war-file}
 

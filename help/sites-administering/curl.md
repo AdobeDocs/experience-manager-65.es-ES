@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '884'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ Los siguientes pasos describen cómo hacerlo utilizando la creación de una nuev
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. Clic **Crear** en el **Crear página** asistente para crear el flujo de trabajo.
-1. Haga clic con el botón derecho en la acción del POST resultante y seleccione **Copiar** -> **Copiar como cURL**.
+1. Haga clic con el botón derecho en la acción del POST resultante y seleccione **Copiar** > **Copiar como cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 

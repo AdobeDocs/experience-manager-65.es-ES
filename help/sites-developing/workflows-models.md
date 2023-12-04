@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2451'
-ht-degree: 4%
+source-wordcount: '2462'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ Este paso está configurado para asignar un elemento de trabajo al iniciador del
 Para crear un flujo de trabajo con el editor:
 
 1. Abra el **Modelos de flujo de trabajo** consola; mediante **Herramientas**, **Flujo de trabajo**, **Modelos** o, por ejemplo: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
-1. Seleccione **Crear** y, a continuación, **Crear modelo**.
+1. Seleccionar **Crear**, entonces **Crear modelo**.
 1. El **Agregar modelo de flujo de trabajo** aparece el cuadro de diálogo. Introduzca el **Título** y **Nombre** (opcional) antes de seleccionar **Listo**.
 1. El nuevo modelo aparece en la lista **Modelos de flujo de trabajo** consola.
 1. Seleccione el nuevo flujo de trabajo y utilice [**Editar** para abrirlo y configurarlo](#editinganexistingworkflow):
@@ -97,7 +97,7 @@ Seleccionar **Editar** hará:
 
 ### Adición de un paso a un modelo {#adding-a-step-to-a-model}
 
-Debe agregar pasos al modelo para representar la actividad que se va a realizar: cada paso realiza una actividad específica. AEM Hay una selección de componentes de paso disponibles en una instancia de estándar.
+Agregue pasos al modelo para representar la actividad que desea realizar: cada paso realiza una actividad específica. AEM Hay una selección de componentes de paso disponibles en una instancia de estándar.
 
 Cuando se edita un modelo, los pasos disponibles aparecen en los distintos grupos del **Explorador de pasos**. Por ejemplo:
 
@@ -144,7 +144,7 @@ Puede **Configurar** y personalizar el comportamiento de un paso del flujo de tr
 
 1. Para abrir **Propiedades del paso** para ver un paso:
 
-   * Pulse o haga clic en el paso * * del modelo de flujo de trabajo y seleccione **Configurar** en la barra de herramientas de componentes.
+   * Haga clic en el paso* * del modelo de flujo de trabajo y seleccione **Configurar** en la barra de herramientas de componentes.
 
    * Haga doble clic en el paso.
 
@@ -190,7 +190,7 @@ Si un modelo de flujo de trabajo está presente en la IU clásica, pero no apare
 1. Seleccionar **[!UICONTROL Crear > Crear etiqueta]**. Establecer **[!UICONTROL Título]** as `DAM` y **[!UICONTROL Nombre]** as `dam`. Seleccione **[!UICONTROL Enviar]**.
    ![Crear etiqueta en el modelo de flujo de trabajo](assets/workflow_create_tag.png)
 
-1. Navegue hasta **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. Seleccionar **[!UICONTROL Solicitud de activación]**, luego seleccione **[!UICONTROL Editar]**.
+1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. Seleccionar **[!UICONTROL Solicitud de activación]**, luego seleccione **[!UICONTROL Editar]**.
 
 1. Seleccionar **[!UICONTROL Editar]**, abra el **[!UICONTROL Información de página]** y, desde allí, seleccione **[!UICONTROL Abrir propiedades]** y vaya a la **[!UICONTROL Básico]** pestaña (si no está abierta).
 
@@ -243,7 +243,7 @@ Para definir **Fases** para el flujo de trabajo:
 
    Se puede asignar una fase a más de un paso. Por ejemplo:
 
-   | **Paso** | **Escenario** |
+   | **Etapa** | **Fase** |
    |---|---|
    | Etapa 1 | Crear |
    | Etapa 2 | Crear |
@@ -264,7 +264,7 @@ Para exportar un modelo de flujo de trabajo en un paquete:
 
    1. Vaya al Administrador de paquetes mediante **Herramientas**, **Implementación**, **Paquetes**.
 
-   1. Haga clic en **Crear paquete**.
+   1. Clic **Crear paquete**.
    1. Especifique el **Nombre del paquete** y cualquier otra información según sea necesario.
    1. Haga clic en **Aceptar**.
 
@@ -324,7 +324,7 @@ AEM También puede configurar la visualización de la **DEPURAR** mensajes en lo
 
 Para ilustrar algunas de las posibilidades de creación de un flujo de trabajo, en el siguiente ejemplo se crea una variación del `Publish Example` flujo de trabajo.
 
-1. [Crear un modelo del flujo de trabajo](#creating-a-new-workflow).
+1. [Creación de un modelo de flujo de trabajo](#creating-a-new-workflow).
 
    El nuevo flujo de trabajo contendrá:
 
@@ -340,7 +340,7 @@ Para ilustrar algunas de las posibilidades de creación de un flujo de trabajo, 
 1. Para abrir el cuadro de diálogo de propiedades:
 
    * Haga clic en el paso del participante y seleccione **Configurar** en la barra de herramientas de componentes.
-   * Haga doble clic en el paso de participante.
+   * Haga doble clic en la etapa de participante.
 
 1. En el **Común** tab enter `Validate Content` para ambos, el **Título** y **Descripción**.
 1. Abra el **Usuario/grupo** pestaña:

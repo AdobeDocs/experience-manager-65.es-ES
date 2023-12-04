@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 10%
+source-wordcount: '256'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +36,7 @@ Evite invocar procesos mientras el servidor se encuentra en modo de mantenimient
 
    >[!NOTE]
    >
-   >Si apaga el servidor mientras está en modo de mantenimiento, seguirá en modo de mantenimiento cuando se reinicie. Debe desactivar el modo de mantenimiento cuando haya terminado con las tareas de mantenimiento.
+   >Si apaga el servidor mientras está en modo de mantenimiento, cuando se reinicia aún estará en modo de mantenimiento. Desactive el modo de mantenimiento cuando haya terminado sus tareas de mantenimiento.
 
 **AEM Comprobar si el formulario de la se está ejecutando en modo de mantenimiento**
 

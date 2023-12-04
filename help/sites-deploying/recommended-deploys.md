@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 3%
+source-wordcount: '1759'
+ht-degree: 2%
 
 ---
 
@@ -177,7 +177,7 @@ AEM Hay disponible un conjunto de requisitos previos y recomendaciones si está 
 1. La experiencia de MongoDB debe estar presente dentro del equipo del socio o cliente para tener confianza en poder mantener y mantener un entorno de MongoDB existente o nuevo;
 1. AEM Puede elegir implementar la versión comercial o de código abierto de MongoDB (admite ambas), pero debe adquirir un contrato de mantenimiento y soporte de MongoDB directamente de MongoDB Inc;
 1. AEM Las arquitecturas e infraestructuras generales y de MongoDB deben ser bien definidas y validadas por un arquitecto de Adobe AEM
-1. AEM Debe revisar el modelo de soporte para implementaciones de que incluyen MongoDB.
+1. AEM Revise el modelo de soporte para implementaciones de que incluyan MongoDB.
 
 **Recomendaciones sólidas para implementaciones de MongoDB:**
 

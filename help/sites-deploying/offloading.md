@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2316'
 ht-degree: 1%
 
 ---
@@ -153,7 +153,7 @@ Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes
    <td>Nombre del descriptor del repositorio</td>
    <td>leaderSelectionRepositoryDescriptor</td>
    <td> </td>
-   <td>&lt;ningún valor&gt;</td>
+   <td>&lt;no value&gt;</td>
   </tr>
  </tbody>
 </table>
@@ -229,7 +229,7 @@ Utilice la consola web o una `sling:OsgiConfig` para configurar las siguientes p
 
 ## Creación De Agentes De Replicación Para Descargar {#creating-replication-agents-for-offloading}
 
-El marco de trabajo de descarga utiliza la replicación para transportar recursos entre el autor y el trabajador. El marco de trabajo de descarga crea automáticamente agentes de replicación cuando las instancias se unen a la topología. Los agentes se crean con valores predeterminados. Debe cambiar manualmente la contraseña que utilizan los agentes para la autenticación.
+El marco de trabajo de descarga utiliza la replicación para transportar recursos entre el autor y el trabajador. El marco de trabajo de descarga crea automáticamente agentes de replicación cuando las instancias se unen a la topología. Los agentes se crean con valores predeterminados. Cambiar manualmente la contraseña que utilizan los agentes para la autenticación.
 
 >[!CAUTION]
 >
@@ -259,13 +259,13 @@ Utilice un formato específico para ***Nombre*** propiedad de los agentes de rep
 
 `offloading_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
 
-Ejemplos: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
+Ejemplo: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nombrar el agente inverso en la instancia de autor:**
 
 `offloading_reverse_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
 
-Ejemplos: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
+Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nombrar la bandeja de salida en la instancia de trabajador:**
 

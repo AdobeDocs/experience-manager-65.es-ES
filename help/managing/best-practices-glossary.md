@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '6945'
+source-wordcount: '6922'
 ht-degree: 0%
 
 ---
@@ -553,7 +553,7 @@ Definición de la estructura de contenido del sistema heredado. Se utiliza como 
 
 ### KPI de rendimiento histórico y rendimiento histórico {#historical-performance-and-historical-performance-kpis}
 
-Debe recopilar y documentar las estadísticas de rendimiento y los KPI de rendimiento del sistema heredado. A continuación, se utilizan como punto de referencia y para realizar pruebas comparativas con la nueva solución.
+Recopile y documente estadísticas de rendimiento y KPI de rendimiento del sistema heredado. A continuación, se utilizan como punto de referencia y para realizar pruebas comparativas con la nueva solución.
 
 ### Identificar las soluciones y funcionalidades clave {#identify-critical-key-solutions-functionalities}
 

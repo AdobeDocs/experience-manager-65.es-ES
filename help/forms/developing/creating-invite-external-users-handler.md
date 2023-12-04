@@ -3,9 +3,9 @@ title: Crear un controlador de usuarios externos de invitación
 description: Obtenga información sobre cómo crear un controlador de usuarios externos de invitación. Permite al servicio Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1126'
 ht-degree: 1%
 
 ---
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Definición del archivo XML del componente para el controlador de autorización {#define-component-xml-authorization-handler}
 
-Debe definir un archivo XML de componente para implementar el componente de controlador de usuarios externos de invitación. Existe un archivo XML de componente para cada componente y proporciona metadatos sobre el componente.
+Defina un archivo XML de componente para implementar el componente de controlador de usuarios externos de invitación. Existe un archivo XML de componente para cada componente y proporciona metadatos sobre el componente.
 
 Lo siguiente `component.xml` se utiliza para el controlador de usuarios externos de invitación. Observe que el nombre del servicio es `InviteExternalUsersSample` y la operación que expone este servicio se denomina `invitedUser`. El parámetro de entrada es un `java.util.List` y el valor de salida es una matriz de `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instancias.
 
@@ -203,7 +203,7 @@ Lo siguiente `component.xml` se utiliza para el controlador de usuarios externos
 
 ## Empaquetando el controlador de usuarios externos de invitación {#packaging-invite-external-users-handler}
 
-Para implementar el controlador de usuarios externos de invitación en AEM Forms, debe empaquetar el proyecto Java en un archivo JAR. Debe asegurarse de que los archivos JAR externos de los que depende la lógica empresarial del controlador de usuarios externos de invitación, como los siguientes `edc-server-spi.jar` y `adobe-rightsmanagement-client.jar` Los archivos también se incluyen en el archivo JAR. Además, el archivo XML de componente debe estar presente. El `component.xml` y los archivos JAR externos deben estar ubicados en la raíz del archivo JAR.
+Para implementar el controlador de usuarios externos de invitación en AEM Forms, debe empaquetar el proyecto Java en un archivo JAR. Asegúrese de que los archivos JAR externos de los que depende la lógica empresarial del controlador de usuarios externos de invitación, como el `edc-server-spi.jar` y `adobe-rightsmanagement-client.jar` Los archivos también se incluyen en el archivo JAR. Además, el archivo XML de componente debe estar presente. El `component.xml` y los archivos JAR externos deben estar ubicados en la raíz del archivo JAR.
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ La siguiente ilustración muestra el contenido del proyecto Java que se empaquet
 
 A. Archivos JAR externos requeridos por el componente B. Archivo JAVA
 
-Debe empaquetar el controlador de usuarios externos de invitación en un archivo JAR. En el diagrama anterior, observe que se muestran los archivos .JAVA. Una vez empaquetados en un archivo JAR, también se deben especificar los archivos .CLASS correspondientes. Sin los archivos .CLASS, el controlador de autorización no funciona.
+Empaquete el controlador de usuarios externos de invitación en un archivo JAR. En el diagrama anterior, observe que se muestran los archivos .JAVA. Una vez empaquetados en un archivo JAR, también se deben especificar los archivos .CLASS correspondientes. Sin los archivos .CLASS, el controlador de autorización no funciona.
 
 >[!NOTE]
 >

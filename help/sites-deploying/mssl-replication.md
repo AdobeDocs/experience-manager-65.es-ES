@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1319'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ La configuración de MSSL para la replicación implica realizar los siguientes p
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Debe determinar qué cuenta de usuario está realizando la replicación. Al instalar el certificado de autor de confianza en la instancia de publicación, el certificado se asocia a esta cuenta de usuario.
+Determine qué cuenta de usuario está realizando la replicación. Al instalar el certificado de autor de confianza en la instancia de publicación, el certificado se asocia a esta cuenta de usuario.
 
 ## Obtener o crear credenciales para MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -120,7 +120,7 @@ Genere una clave privada y un certificado en formato pkcs#12. Uso [openSSL](http
    | Opción | Autor | Publicación |
    |---|---|---|
    | -signkey | author.key | publish.key |
-   | -en | author_request.csr | publish_request.csr |
+   | -in | author_request.csr | publish_request.csr |
    | -out | author.cer | publish.cer |
 
 1. Para añadir la clave privada y el certificado firmado a un archivo pkcs#12, introduzca el siguiente comando, utilizando los valores de opción de la tabla siguiente:
@@ -133,7 +133,7 @@ Genere una clave privada y un certificado en formato pkcs#12. Uso [openSSL](http
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
-   | -en | author.cer | publish.cer |
+   | -in | author.cer | publish.cer |
    | -name | autor | publicación |
 
 ## Instalar la clave privada y TrustStore en Author {#install-the-private-key-and-truststore-on-author}
@@ -148,7 +148,7 @@ Para realizar el siguiente procedimiento, debe iniciar sesión como administrado
 ### Instalación de la clave privada del autor {#install-the-author-private-key}
 
 1. Abra la página Administración de usuarios de la instancia de autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Para abrir las propiedades de la cuenta de usuario, toque o haga clic en el nombre de usuario.
+1. Para abrir las propiedades de la cuenta de usuario, haga clic en el nombre de usuario.
 1. Si el vínculo Crear almacén de claves aparece en el área Configuración de cuenta, haga clic en el vínculo. Configure una contraseña y haga clic en Aceptar.
 1. En el área Configuración de cuenta, haga clic en Administrar almacén de claves.
 
@@ -167,7 +167,7 @@ Para realizar el siguiente procedimiento, debe iniciar sesión como administrado
 ### Instalar el certificado de publicación {#install-the-publish-certificate}
 
 1. Abra la página Administración de usuarios de la instancia de autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Para abrir las propiedades de la cuenta de usuario, toque o haga clic en el nombre de usuario.
+1. Para abrir las propiedades de la cuenta de usuario, haga clic en el nombre de usuario.
 1. Si el vínculo Crear almacén de confianza aparece en el área Configuración de cuenta, haga clic en el vínculo, cree una contraseña para el almacén de confianza y haga clic en Aceptar.
 1. En el área Configuración de cuenta, haga clic en Administrar almacén de confianza.
 1. Haga clic en Agregar certificado del archivo CER.
@@ -191,7 +191,7 @@ Para realizar el siguiente procedimiento, debe iniciar sesión como administrado
 ### Instalación de la clave privada de publicación {#install-the-publish-private-key}
 
 1. Abra la página User Management de la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Para abrir las propiedades de la cuenta de usuario, toque o haga clic en el nombre de usuario.
+1. Para abrir las propiedades de la cuenta de usuario, haga clic en el nombre de usuario.
 1. Si el vínculo Crear almacén de claves aparece en el área Configuración de cuenta, haga clic en el vínculo. Configure una contraseña y haga clic en Aceptar.
 1. En el área Configuración de cuenta, haga clic en Administrar almacén de claves.
 1. Haga Clic En Agregar Clave Privada Del Archivo De Almacén De Claves.

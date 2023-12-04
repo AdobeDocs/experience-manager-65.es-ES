@@ -1,19 +1,15 @@
 ---
 title: Trabajar con el administrador de campañas de marketing
-seo-title: Working with the Marketing Campaign Manager
 description: El Administrador de campañas de marketing (MCM) es una consola que le ayuda a administrar campañas de varios canales. Con este software de automatización de marketing puede administrar todas sus marcas, campañas y experiencias, así como los segmentos, las listas, los posibles clientes y los informes relacionados.
-seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
-uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -63,7 +59,7 @@ La recomendación es utilizar [Adobe Campaign AEM y la integración para la inte
 * **[Campañas](#campaigns)**
 Aquí puede administrar sus marcas, campañas y experiencias.
 
-## Tablero {#dashboard}
+## Panel {#dashboard}
 
 El tablero muestra cuatro paneles que le proporcionan una visión general de sus listas (de posibles clientes), segmentos, informes y campañas. El acceso a la funcionalidad básica para estos también está disponible aquí.
 
@@ -114,13 +110,10 @@ Para acceder a las campañas existentes, en el MCM, haga clic en **Campañas**.
 ![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **En el panel izquierdo**: Hay una lista de todas las marcas y campañas.
-Un solo clic en una marca hará lo siguiente:
-
-   * expanda la lista para mostrar todas las campañas relacionadas en el panel izquierdo; esta lista también muestra el número de experiencias que existen para cada campaña.
-   * abra información general de marca en el panel derecho.
+Al hacer clic en una marca, se expande la lista para mostrar todas las campañas relacionadas en el panel izquierdo; esta lista también muestra el número de experiencias que existen para cada campaña. También abre la descripción general de la marca en el panel derecho.
 
 * **En el panel derecho**: se muestran los iconos de cada marca (no se mostrarán las campañas históricas).
-Puede hacer doble clic en ellas para abrir la descripción general de la marca.
+Puede hacer doble clic en estas opciones para abrir la descripción general de la marca.
 
 #### Información general de marca {#brand-overview}
 

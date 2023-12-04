@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4963'
-ht-degree: 1%
+source-wordcount: '4830'
+ht-degree: 0%
 
 ---
 
@@ -223,19 +223,19 @@ Información sobre el repositorio CRX
 
 ### Atributos {#attributes}
 
-**Nombre** Nombre de la implementación del repositorio JCR. Solo lectura.
+**Nombre** Nombre de la implementación del repositorio JCR. Sólo lectura.
 
-**Versión** La versión de implementación del repositorio. Solo lectura.
+**Versión** La versión de implementación del repositorio. Sólo lectura.
 
-**HomeDir** El directorio en el que se encuentra el repositorio. La ubicación predeterminada es &lt;quickstart_jar_location>/crx-quickstart/repository. Solo lectura.
+**HomeDir** El directorio en el que se encuentra el repositorio. La ubicación predeterminada es &lt;quickstart_jar_location>/crx-quickstart/repository. Sólo lectura.
 
-**NombreCliente** El nombre del cliente al que se emite la licencia de software. Solo lectura.
+**NombreCliente** El nombre del cliente al que se emite la licencia de software. Sólo lectura.
 
-**LicenseKey** La clave de licencia única para esta instalación del repositorio. Solo lectura.
+**LicenseKey** La clave de licencia única para esta instalación del repositorio. Sólo lectura.
 
-**AvailableDiskSpace** Espacio en disco disponible para esta instancia del repositorio, en MB. Solo lectura.
+**AvailableDiskSpace** Espacio en disco disponible para esta instancia del repositorio, en MB. Sólo lectura.
 
-**MaximumNumberOfOpenFiles** Número de archivos que se pueden abrir al mismo tiempo. Solo lectura.
+**MaximumNumberOfOpenFiles** Número de archivos que se pueden abrir al mismo tiempo. Sólo lectura.
 
 **SessionTracker** Valor de la variable del sistema crx.debug.session. true indica una sesión de depuración. false indica una sesión normal. Lectura y escritura.
 
@@ -489,19 +489,19 @@ Información sobre el repositorio CRX
  </tbody>
 </table>
 
-**WorkspaceNames** Nombres de los espacios de trabajo del repositorio. Solo lectura.
+**WorkspaceNames** Nombres de los espacios de trabajo del repositorio. Sólo lectura.
 
 **DataStoreGarbageCollectionDelay** Cantidad de tiempo en milisegundos que la recolección de elementos no utilizados permanece activa después de analizar cada décimo nodo. Lectura y escritura.
 
 **BackupDelay** La cantidad de tiempo en milisegundos que el proceso de copia de seguridad permanece en suspensión entre cada paso de la copia de seguridad. Lectura y escritura.
 
-**CopiaDeSeguridadEnCurso** El valor true indica que se está ejecutando un proceso de copia de seguridad. Solo lectura.
+**CopiaDeSeguridadEnCurso** El valor true indica que se está ejecutando un proceso de copia de seguridad. Sólo lectura.
 
-**BackupProgress** Para la copia de seguridad actual, el porcentaje de todos los archivos de los que se ha realizado una copia de seguridad. Solo lectura.
+**BackupProgress** Para la copia de seguridad actual, el porcentaje de todos los archivos de los que se ha realizado una copia de seguridad. Sólo lectura.
 
-**CurrentBackupTarget** Para la copia de seguridad actual, el archivo ZIP donde se almacenan los archivos de copia de seguridad. Cuando una copia de seguridad no está en curso, no aparece ningún valor. Solo lectura.
+**CurrentBackupTarget** Para la copia de seguridad actual, el archivo ZIP donde se almacenan los archivos de copia de seguridad. Cuando una copia de seguridad no está en curso, no aparece ningún valor. Sólo lectura.
 
-**CopiaDeSeguridadCorrecta** El valor true indica que no se han producido errores durante la copia de seguridad actual o que no hay ninguna copia de seguridad en curso. false indica que se produjo un error durante la copia de seguridad actual. Solo lectura.
+**CopiaDeSeguridadCorrecta** El valor true indica que no se han producido errores durante la copia de seguridad actual o que no hay ninguna copia de seguridad en curso. false indica que se produjo un error durante la copia de seguridad actual. Sólo lectura.
 
 **BackupResult** El estado de la copia de seguridad actual. Los siguientes valores son posibles:
 
@@ -511,21 +511,21 @@ Información sobre el repositorio CRX
 * Copia de seguridad completada: la copia de seguridad se realizó correctamente.
 * No se ha ejecutado ninguna copia de seguridad hasta el momento: no hay ninguna copia de seguridad en curso.
 
-Solo lectura.
+Sólo lectura.
 
-**TarOptimizationRunningSince** Hora a la que comenzó el proceso actual de optimización de archivos TAR. Solo lectura.
+**TarOptimizationRunningSince** Hora a la que comenzó el proceso actual de optimización de archivos TAR. Sólo lectura.
 
 **TarOptimizationDelay** La cantidad de tiempo en milisegundos que el proceso de optimización de TAR pasa en suspensión entre cada paso del proceso. Lectura y escritura.
 
-**Propiedades de clúster** Conjunto de pares de clave-valor que representan las propiedades y los valores del clúster. Cada fila de la tabla representa una propiedad de clúster. Solo lectura.
+**Propiedades de clúster** Conjunto de pares de clave-valor que representan las propiedades y los valores del clúster. Cada fila de la tabla representa una propiedad de clúster. Sólo lectura.
 
 **ClusterNodes** Los miembros del clúster de repositorios.
 
-**ClusterId** El identificador de este clúster de repositorios. Solo lectura.
+**ClusterId** El identificador de este clúster de repositorios. Sólo lectura.
 
-**ClusterMasterId** El identificador del nodo maestro de este clúster de repositorios. Solo lectura.
+**ClusterMasterId** El identificador del nodo maestro de este clúster de repositorios. Sólo lectura.
 
-**ClusterNodeId** El identificador de este nodo del clúster de repositorios. Solo lectura.
+**ClusterNodeId** El identificador de este nodo del clúster de repositorios. Sólo lectura.
 
 ### Operaciones {#operations-1}
 
@@ -602,7 +602,7 @@ Solo lectura.
 * Argumentos: ninguno
 * Valor devuelto: ninguno
 
-**joinCluster** Agrega este repositorio a un clúster como un nodo controlado por el maestro del clúster. Debe proporcionar un nombre de usuario y una contraseña para fines de autenticación. La conexión utiliza autenticación básica. Las credenciales de seguridad se codifican en base 64 antes de enviarse al servidor.
+**joinCluster** Agrega este repositorio a un clúster como un nodo controlado por el maestro del clúster. Proporcione un nombre de usuario y una contraseña para fines de autenticación. La conexión utiliza autenticación básica. Las credenciales de seguridad se codifican en base 64 antes de enviarse al servidor.
 
 * Argumentos:
 
@@ -651,10 +651,10 @@ El valor del campo Serie temporal para cada tipo de estadística que `org.apache
 
 Se proporcionan los atributos siguientes para cada tipo de estadística del que se informa:
 
-* ValuePerSecond: valor medido por segundo en el último minuto. Solo lectura.
-* ValuePerMinute: valor medido por minuto durante la última hora. Solo lectura.
-* ValuePerHour: Valor medido por hora durante la última semana. Solo lectura.
-* ValuePerWeek: valor medido por semana durante los últimos tres años. Solo lectura.
+* ValuePerSecond: valor medido por segundo en el último minuto. Sólo lectura.
+* ValuePerMinute: valor medido por minuto durante la última hora. Sólo lectura.
+* ValuePerHour: Valor medido por hora durante la última semana. Sólo lectura.
+* ValuePerWeek: valor medido por semana durante los últimos tres años. Sólo lectura.
 
 ## Estadísticas de consulta del repositorio {#repository-query-stats}
 
@@ -665,11 +665,11 @@ Información estadística sobre consultas del repositorio.
 
 ### Atributos {#attributes-2}
 
-**SlowQueries** Información sobre las consultas del repositorio que han tardado más tiempo en completarse. Solo lectura.
+**SlowQueries** Información sobre las consultas del repositorio que han tardado más tiempo en completarse. Sólo lectura.
 
 **SlowQueriesQueueSize** Número máximo de consultas que se incluirán en la lista de consultas lentas. Lectura-escritura.
 
-**Consultas populares** Información sobre las consultas del repositorio que más se han producido. Solo lectura.
+**Consultas populares** Información sobre las consultas del repositorio que más se han producido. Sólo lectura.
 
 **PopularConsultasTamañoCola** Número máximo de consultas en la lista Consultas populares. Lectura-escritura.
 
@@ -696,26 +696,26 @@ Supervise los servicios de cada agente de replicación. Al crear un agente de re
 
 ### Atributos {#attributes-3}
 
-**Id** Valor de tipo String que representa el identificador de la configuración del agente de replicación. Varios agentes pueden utilizar la misma configuración. Solo lectura.
+**Id** Valor de tipo String que representa el identificador de la configuración del agente de replicación. Varios agentes pueden utilizar la misma configuración. Sólo lectura.
 
 **Válido** Un valor booleano que indica si el agente está configurado correctamente:
 
 * `true`: Configuración válida.
 * `false` : la configuración contiene errores.
 
-Solo lectura.
+Sólo lectura.
 
 **Habilitado** Un valor booleano que indica si el agente está habilitado:
 
 * `true`: Habilitado.
-* `false`: Deshabilitado.
+* `false`: deshabilitado.
 
 **QueueBlocked** Un valor booleano que indica si la cola existe y está bloqueada:
 
 * `true`: Bloqueado. Está pendiente un reintento automático.
 * `false`: No bloqueado o no existe.
 
-Solo lectura.
+Sólo lectura.
 
 **QueuePaused** Un valor booleano que indica si la cola de trabajos está en pausa:
 
@@ -724,15 +724,15 @@ Solo lectura.
 
 Lectura-escritura.
 
-**QueueNumEntries** Valor int que representa el número de trabajos de la cola del agente. Solo lectura.
+**QueueNumEntries** Valor int que representa el número de trabajos de la cola del agente. Sólo lectura.
 
-**QueueStatusTime** Valor de fecha que indica la hora del servidor en que se obtuvieron los valores de estado mostrados. El valor corresponde a la hora en que se cargó la página. Solo lectura.
+**QueueStatusTime** Valor de fecha que indica la hora del servidor en que se obtuvieron los valores de estado mostrados. El valor corresponde a la hora en que se cargó la página. Sólo lectura.
 
-**QueueNextRetryTime** Para colas bloqueadas, un valor Date que indica cuándo se produce el siguiente reintento automático. Cuando no aparece ningún tiempo, la cola no se bloquea. Solo lectura.
+**QueueNextRetryTime** Para colas bloqueadas, un valor Date que indica cuándo se produce el siguiente reintento automático. Cuando no aparece ningún tiempo, la cola no se bloquea. Sólo lectura.
 
-**QueueProcessingSince** Valor de fecha que indica cuándo comenzó el procesamiento del trabajo actual. Cuando no aparece ningún tiempo, la cola está bloqueada o inactiva. Solo lectura.
+**QueueProcessingSince** Valor de fecha que indica cuándo comenzó el procesamiento del trabajo actual. Cuando no aparece ningún tiempo, la cola está bloqueada o inactiva. Sólo lectura.
 
-**QueueLastProcessTime** Valor de fecha que indica cuándo se completó el trabajo anterior. Solo lectura.
+**QueueLastProcessTime** Valor de fecha que indica cuándo se completó el trabajo anterior. Sólo lectura.
 
 ### Operaciones {#operations-3}
 
@@ -777,8 +777,8 @@ Proporciona estadísticas sobre las solicitudes HTTP para que pueda supervisar e
 
 **instalado** Un valor booleano que indica si el paquete está instalado:
 
-* `true`: Instalado.
-* `false`: No está instalado.
+* `true`: instalado.
+* `false`: no instalado.
 
 **installBy** El ID del usuario que instaló el paquete por última vez.
 

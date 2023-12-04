@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 82%
+source-wordcount: '1521'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
    * El número de flujos de trabajo a los que está sujeta la página. Puede hacer lo siguiente:
 
       * utilice las flechas izquierda/derecha para navegar por la información de estado de los distintos flujos de trabajo.
-      * haga clic o pulse en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccione el flujo de trabajo que desee visualizar en la barra de estado.
+      * haga clic en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccione el flujo de trabajo que desee mostrar en la barra de estado.
 
   ![wf-59](assets/wf-59.png)
 
@@ -55,7 +55,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
   >
   >Las acciones se muestran cuando el usuario actual está directamente involucrado en el paso actual del flujo de trabajo.
 
-* Cuando **Cronología** está abierta para el recurso, se muestra el paso del flujo de trabajo. Al hacer clic o pulsar en el titular de alerta, se mostrarán las acciones disponibles:
+* Cuando **Cronología** está abierta para el recurso, se muestra el paso del flujo de trabajo. Al hacer clic en el titular de la alerta, también se mostrarán las acciones disponibles:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -80,7 +80,7 @@ Puede completar un paso de participante desde:
 Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
-1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
+1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
 1. Seleccione **Completar** en la barra de herramientas.
 1. El **Completar elemento de trabajo** se abre el cuadro de diálogo. Seleccione el **Paso siguiente** en el selector desplegable y añada una **Comentario** si es necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
@@ -102,7 +102,7 @@ También puede utilizar la cronología para completar y avanzar un paso:
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
-1. Pulse o haga clic en el titular de la alerta para mostrar las acciones disponibles. Seleccione **Avanzar**:
+1. Haga clic en el banner de alerta para mostrar las acciones disponibles. Seleccione **Avanzar**:
 
    ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
@@ -139,7 +139,7 @@ Puede delegar una etapa de participante desde:
 Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
-1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
+1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
 1. Seleccione **Delegar** en la barra de herramientas.
 1. Se abrirá el cuadro de diálogo. Especifique el **Usuario** en el selector desplegable (también puede ser un grupo) y añada una **Comentario** si es necesario.
 1. Utilice **Aceptar** para completar el paso (o **Cancelar** para anular la acción).
@@ -158,7 +158,7 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 También puede utilizar la cronología para delegar o asignar un paso:
 
 1. Seleccione la página necesaria y abra **Cronología** (o abra **Cronología** y seleccione la página).
-1. Pulse o haga clic en el titular de la alerta para mostrar las acciones disponibles. Seleccionar **Cambiar asignación**:
+1. Haga clic en el banner de alerta para mostrar las acciones disponibles. Seleccionar **Cambiar asignación**:
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
@@ -189,7 +189,7 @@ Puede volver a un paso anterior en un paso de participante desde:
 Utilice el siguiente procedimiento para retroceder:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
-1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
+1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
 1. Seleccione **Retroceder** para abrir el cuadro de diálogo. 
 
 1. Especifique el **Etapa anterior** y añada un **Comentario** si es necesario.
@@ -209,7 +209,7 @@ Utilice el siguiente procedimiento para retroceder:
 También puede utilizar la cronología para retroceder a un paso anterior:
 
 1. Seleccione la página necesaria y abra **Cronología** (o abra **Cronología** y seleccione la página).
-1. Pulse o haga clic en el titular de la alerta para mostrar las acciones disponibles. Seleccione **Restablecer**:
+1. Haga clic en el banner de alerta para mostrar las acciones disponibles. Seleccione **Restablecer**:
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
@@ -251,7 +251,7 @@ Puede abrir los detalles del elemento de trabajo desde las ubicaciones siguiente
 Para abrir un elemento de flujo de trabajo y ver los detalles:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
-1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
+1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
 1. Seleccione **Abrir** para abrir las pestañas de información. 
 
 1. Si es necesario, seleccione la acción adecuada, proporcione los detalles necesarios y confirme con **OK** (o **Cancelar**).
@@ -274,7 +274,7 @@ Puede ver los detalles de la carga útil asociada con la instancia de flujo de t
 Para ver la carga útil y los recursos de la instancia del flujo de trabajo:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-authoring/inbox.md)**.
-1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (pulse o haga clic en la miniatura).
+1. Seleccione el elemento de flujo de trabajo sobre el que desea realizar una acción (haga clic en la miniatura).
 1. Seleccione **Ver carga útil** de la barra de herramientas para abrir el cuadro de diálogo. 
 
    Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de medios** para añadir nuevas entradas.

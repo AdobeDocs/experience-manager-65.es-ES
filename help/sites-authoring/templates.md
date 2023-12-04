@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4834'
-ht-degree: 77%
+source-wordcount: '4825'
+ht-degree: 71%
 
 ---
 
@@ -51,7 +51,7 @@ Para obtener información detallada sobre cómo funcionan las plantillas editabl
 
 Es importante tener en cuenta los siguientes puntos antes de comenzar:
 
-* La creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función.](#roles)
+* La creación de una plantilla requiere colaboración. Por este motivo, la variable [Rol](#roles) se indica para cada tarea.
 
 * AEM En función de cómo esté configurada la instancia, ahora proporciona el parámetro de tipo de datos de, que se muestra a continuación: [dos tipos básicos de plantilla](/help/sites-authoring/templates.md#editable-and-static-templates). Esto no afecta a cómo realmente [usar una plantilla para crear una página](#using-a-template-to-create-a-page), pero afecta al tipo de plantilla que puede crear y a cómo se relaciona una página con su plantilla.
 
@@ -151,7 +151,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
-1. Abra la **Consola de plantillas** (que encontrará en **Herramientas ->** **General**) y navegue a la carpeta requerida.
+1. Abra el **Consola de plantillas** (mediante **Herramientas >** **General**) y luego vaya a la carpeta requerida.
 
    >[!NOTE]
    >
@@ -173,7 +173,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    * **Nombre de la plantilla**
    * **Descripción**
 
-1. Seleccione **Crear**. Se mostrará una confirmación; seleccione **Abrir**[](#editingatemplate) para comenzar a editar la plantilla o **Listo** para volver a la consola de plantillas.
+1. Seleccione **Crear**. Se muestra una confirmación, seleccione **Abrir** para empezar [edición de la plantilla](#editingatemplate) o **Listo** para volver a la consola de plantillas.
 
    >[!NOTE]
    >
@@ -221,14 +221,14 @@ Para definir la miniatura de la plantilla, haga lo siguiente:
 1. Editar las propiedades de la plantilla.
 1. Seleccione si desea cargar una miniatura o hacer que se genere a partir del contenido de la plantilla.
 
-   * Si desea cargar una miniatura, toque o haga clic en **Cargar imagen**
-   * Si desea generar una miniatura, toque o haga clic en **Generar previsualización**
+   * Si desea cargar una miniatura, haga clic en **Cargar imagen**
+   * Si desea generar una miniatura, haga clic en **Generar previsualización**
 
 1. Para ambos métodos se mostrará una previsualización de la miniatura.
 
-   Si no es satisfactorio, toque o haga clic en **Borrar** para cargar otra imagen o volver a generar la miniatura.
+   Si no es satisfactorio, haga clic en **Borrar** para cargar otra imagen o volver a generar la miniatura.
 
-1. Cuando esté satisfecho con la miniatura, toque o haga clic en **Guardar y cerrar**.
+1. Cuando esté satisfecho con la miniatura, haga clic en **Guardar y cerrar**.
 
 ### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
 
@@ -424,7 +424,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, para un componente de texto, las propiedades definen las opciones de copia y pegado, las opciones de formato y el estilo de párrafo, entre otras opciones.
 
-  ***Directiva***
+  ***Política***
 
   Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
@@ -448,7 +448,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   >[!NOTE]
   >
-  >Si se añaden diversos componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja la misma restricción en [**Modo de diseño** para plantillas estáticas](/help/sites-authoring/default-components-designmode.md).
+  >Si se añaden varios componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja la misma restricción en [**Modo de diseño** para plantillas estáticas](/help/sites-authoring/default-components-designmode.md).
 
   ***Propiedades***
 
@@ -463,17 +463,17 @@ Entrada **Estructura** modo del editor de plantillas:
 
   Por ejemplo, para un componente de imagen, las anchuras permitidas se pueden definir junto con la activación de la carga diferida.
 
-  Si una configuración permite varias configuraciones, toque o haga clic en el botón **Añadir** para añadir otra configuración.
+  Si una configuración permite varias configuraciones, haga clic en **Añadir** para añadir otra configuración.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Para quitar una configuración, toque o haga clic en el botón **Eliminar** situado a la derecha de la configuración.
+  Para quitar una configuración, haga clic en **Eliminar** situado a la derecha de la configuración.
 
-  Para quitar una configuración, toque o haga clic en el botón** Eliminar**.
+  Para quitar una configuración, haga clic en el botón** Delete**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
-  *Características*
+  *Funciones*
 
   El **Funciones** La pestaña permite activar o desactivar funciones adicionales del componente.
 
@@ -487,7 +487,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   >[!NOTE]
   >
-  >[Las políticas de contenido para componentes que implementan el editor de texto](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) enriquecido solo se pueden definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Políticas de contenido para componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se puede definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política y propiedades (contenedor de diseño)**
 
@@ -499,7 +499,7 @@ Entrada **Estructura** modo del editor de plantillas:
 
   La ventana de configuración se divide en dos, al igual que en el uso general de la ventana.
 
-  ***Directiva***
+  ***Política***
 
   Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
@@ -529,13 +529,13 @@ Entrada **Estructura** modo del editor de plantillas:
 
   En la pestaña **Componentes predeterminados**, puede definir qué componentes se asocian automáticamente a determinados tipos de medios, de modo que cuando un autor arrastre un recurso desde el navegador de recursos, AEM sabe a qué componente debe asociarlo. Tenga en cuenta que solo los componentes con zonas desplegables están disponibles para esta configuración.
 
-  Toque o haga clic en **Añadir asignación** para añadir un componente y una asignación de tipo MIME completamente nuevos.
+  Clic **Agregar asignación** para agregar un componente completamente nuevo y una asignación de tipo MIME.
 
-  Seleccione un componente en la lista y pulse o haga clic en **Agregar tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
+  Seleccione un componente en la lista y haga clic en **Añadir tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 
-  *Configuración adaptable*
+  *Configuración interactiva*
 
   En la pestaña **Configuración adaptable**, puede configurar el número de columnas de la cuadrícula resultante del contenedor de diseño.
 

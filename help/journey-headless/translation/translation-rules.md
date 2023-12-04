@@ -2,10 +2,10 @@
 title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 70%
+source-wordcount: '847'
+ht-degree: 68%
 
 ---
 
@@ -56,25 +56,25 @@ Las reglas de traducción están diseñadas para manejar estos escenarios. Sin e
 
 Hay una consola de **Configuración de traducción** disponible para configurar las reglas de traducción. Para acceder a ella:
 
-1. Vaya a **Herramientas** -> **General**.
-1. Toque o haga clic en **Configuración de traducción**.
+1. Vaya a **Herramientas** > **General**.
+1. Clic **Configuración de traducción**.
 
 En el **Configuración de traducción** IU, hay varias opciones disponibles para las reglas de traducción. Aquí destacamos los pasos más necesarios y típicos para una configuración de localización sin encabezado básica.
 
-1. Haga clic o pulse **Agregar contexto**, que le permite añadir una ruta. Esta es la ruta del contenido que se ve afectado por la regla.
+1. Clic **Agregar contexto**, que le permite añadir una ruta. Esta es la ruta del contenido que se ve afectado por la regla.
    ![Agregar contexto](assets/add-translation-context.png)
-1. Utilice el explorador de rutas para seleccionar la ruta necesaria o pulse o haga clic en el botón **Confirmar** para guardar. Recuerde que los fragmentos de contenido, que contienen contenido sin encabezado, generalmente se encuentran debajo de `/content/dam/<your-project>`.
+1. Utilice el explorador de rutas para seleccionar la ruta requerida y haga clic en **Confirmar** botón para guardar. Recuerde que los fragmentos de contenido, que contienen contenido sin encabezado, generalmente se encuentran debajo de `/content/dam/<your-project>`.
    ![Seleccionar la ruta](assets/select-context.png)
 1. AEM guarda la configuración.
-1. Debe seleccionar el contexto que ha creado y, a continuación, tocar o hacer clic en **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
+1. Seleccione el contexto que ha creado y haga clic en **Editar**. Esto abre el **Editor de reglas de traducción** para configurar las propiedades.
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso, `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para añadir campos adicionales a la configuración.
 1. Una vez desmarcado, en la sección **General** de la lista, añada los nombres de propiedad de los modelos de fragmento de contenido que haya [identificado anteriormente como campos para traducción.](getting-started.md#content-models)
    1. Introduzca el nombre de la propiedad en el campo **Nueva propiedad**.
    1. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
-   1. Haga clic o pulse **Agregar**.
+   1. Clic **Añadir**.
    1. Repita estos pasos para todos los campos que debe traducir.
-   1. Haga clic o pulse **Guardar**.
+   1. Haga clic en **Guardar**.
       ![Añadir propiedades](assets/add-property.png)
 
 Ya ha configurado las reglas de traducción.

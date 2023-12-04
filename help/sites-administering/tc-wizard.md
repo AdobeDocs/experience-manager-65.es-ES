@@ -3,10 +3,10 @@ title: Asistente para copia de idioma
 description: Obtenga información sobre el uso del Asistente para copia de idioma en Adobe Experience Manager.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 30%
+source-wordcount: '219'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ El asistente de copia de idioma es una experiencia guiada para crear e instrumen
 
 Para acceder a este asistente:
 
-1. En Sitios, seleccione una página y pulse o haga clic en Crear.
+1. En Sitios, seleccione una página y haga clic en Crear.
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
@@ -48,6 +48,6 @@ Para acceder a este asistente:
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. El botón **Crear** finaliza el asistente.
+1. El **Crear** El botón finaliza el asistente.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)

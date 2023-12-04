@@ -2,10 +2,10 @@
 title: Trabajo con versiones de páginas de contenido
 description: Crear, comparar y restaurar versiones de una página en Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 65%
+source-wordcount: '1510'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ Puede crear una versión de su recurso desde:
 1. Desplácese hasta mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el **Cronología** columna.
-1. Toque o haga clic en la punta de flecha junto al campo de comentarios para mostrar las opciones:
+1. Haga clic en la punta de flecha junto al campo Comentario para mostrar las opciones:
 
    ![Cronología: guardar como versión](assets/screen-shot_2019-03-05at112335.png)
 
@@ -195,7 +195,7 @@ Deformación de tiempo es una función diseñada para simular el estado *publica
 >
 >[La Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md) AEM al ejecutar la versión 6.5.10.0 o posterior de la versión de.
 
-La creación de contenido es un proceso continuo y colaborativo. El propósito de Deformación de tiempo es permitir que los autores rastreen el sitio web publicado con el paso del tiempo, para ayudarles a comprender cómo ha cambiado el contenido. Esta función emplea las versiones de página para determinar el estado del entorno de publicación:
+La creación de contenido es un proceso continuo y colaborativo. El propósito de Deformación de tiempo es permitir que los autores rastreen el sitio web publicado con el paso del tiempo, para ayudarles a comprender cómo ha cambiado el contenido. Esta función utiliza las versiones de página para determinar el estado del entorno de publicación:
 
 * El sistema busca la versión de página que estaba activa en el momento seleccionado.
    * Se creó/activó esta versión de la página *antes* el punto temporal seleccionado en Deformación de tiempo.
@@ -210,7 +210,7 @@ Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-too
 
    ![Seleccione Deformación de tiempo en la selección de modo](assets/wwpv-01.png)
 
-1. En el cuadro de diálogo, establezca una fecha y una hora de destino y toque o haga clic en **Establecer fecha**. Si no selecciona una hora, la hora actual se toma como predeterminada.
+1. En el cuadro de diálogo, establezca una fecha y una hora de destino y haga clic en **Establecer fecha**. Si no selecciona una hora, la hora actual se toma como predeterminada.
 
    ![Establecer fecha](assets/wwpv-02.png)
 

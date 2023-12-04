@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3443'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ Hoja de características clave de página de aterrizaje
 
 A continuación se muestra un ejemplo de diseño del zip:
 
-* /index.html -> archivo HTML de página de aterrizaje
-* /css -> para agregar a la clientlib de CSS
-* /img -> todas las imágenes y recursos
-* /js -> para agregarlo a la clientlib de JS
+* /index.html > archivo HTML de página de aterrizaje
+* /css > para agregar a la clientlib de CSS
+* /img > todas las imágenes y recursos
+* /js > para agregarlo a la clientlib de JS
 
 El diseño se basa en el diseño de prácticas recomendadas de HTML5 Boilerplate. Más información en [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
@@ -317,7 +317,7 @@ HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí 
 
 Un formulario de posible cliente es un formulario que se utiliza para recopilar información del perfil de un visitante o posible cliente. Esta información se puede almacenar y utilizar más adelante para realizar un marketing eficaz basado en la información. Esta información generalmente incluye título, nombre, correo electrónico, fecha de nacimiento, dirección, interés, etc. Forma parte del grupo &quot;Formulario de posible cliente de CTA&quot;.
 
-**Funciones admitidas**
+**Funciones compatibles**
 
 * Campos de posibles clientes predefinidos: nombre, apellido, dirección, dob, sexo, acerca de, userId, emailId, botón de envío están disponibles en la barra de tareas. Basta con arrastrar y soltar el componente necesario en el formulario de posible cliente.
 * Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede añadir campos adicionales utilizando los campos cq:form o cta del formulario de posibles clientes, asignarles un nombre y diseñarlos según los requisitos.

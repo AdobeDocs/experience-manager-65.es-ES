@@ -4,10 +4,10 @@ description: La prueba de Día difícil simula la carga diaria de unos 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 2%
+source-wordcount: '1824'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +70,7 @@ En la tabla siguiente, puede encontrar los parámetros de ayuda relevantes.
    <td><strong>Ejemplos</strong></td>
   </tr>
   <tr>
-   <td>--help</td>
+   <td>—help</td>
    <td>Imprime información global, por ejemplo: las acciones disponibles, los grupos predefinidos, los modos de ejecución y los parámetros globales.</td>
    <td> </td>
   </tr>
@@ -238,7 +238,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Las pruebas existentes en un grupo determinado también se pueden reconfigurar mediante la variable `config`* *parámetro. También debe especificar el nombre del grupo de informes y el nombre real de la prueba (no el nombre de la clase de prueba). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase Test. Para obtener más información sobre cómo buscar propiedades de prueba, lea la [Cambiar propiedades de prueba](/help/sites-developing/tough-day.md#changing-the-test-properties) sección.
+Las pruebas existentes en un grupo determinado también se pueden reconfigurar mediante la variable `config`* *parámetro. Especifique también el nombre del grupo de informes y el nombre real de la prueba (no el nombre de la clase de prueba). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase Test. Para obtener más información sobre cómo buscar propiedades de prueba, lea la [Cambiar propiedades de prueba](/help/sites-developing/tough-day.md#changing-the-test-properties) sección.
 
 En el ejemplo siguiente, el título de recurso predeterminado de la variable `CreatePageTreeTest` (denominado `UploadAsset`) se cambia a &quot;Nuevo recurso&quot;.
 
@@ -260,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Además, también puede quitar pruebas de grupos de informes predefinidos o editores de la configuración predeterminada con el uso de `exclude` parámetro. También debe especificar el nombre del grupo de informes y el nombre real de la prueba (no la prueba C) `lass` nombre). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase test. En el ejemplo siguiente, la variable `CreatePageTreeTest` (denominado `UploadAsset`) la prueba se ha eliminado del grupo toughday.
+Además, también puede quitar pruebas de grupos de informes predefinidos o editores de la configuración predeterminada con el uso de `exclude` parámetro. Especifique también el nombre del grupo de informes y el nombre real de la prueba (no la prueba C) `lass` nombre). Puede encontrar el nombre de la prueba en la `name` propiedad de la clase test. En el ejemplo siguiente, la variable `CreatePageTreeTest` (denominado `UploadAsset`) la prueba se ha eliminado del grupo toughday.
 
 Mediante parámetros de la línea de comandos:
 
@@ -356,11 +356,11 @@ Actualmente, el Día 2 difícil informa de nueve métricas de prueba que puede e
 | Min&#42; | La duración más baja de la ejecución de pruebas. |
 | Max&#42; | Duración máxima de la ejecución de la prueba. |
 | Mediana&#42; | Duración media calculada de todas las ejecuciones de prueba. |
-| Promedio&#42; | Duración media calculada de todas las ejecuciones de prueba. |
+| Media&#42; | Duración media calculada de todas las ejecuciones de prueba. |
 | StdDev&#42; | La desviación estándar. |
 | 90p&#42; | 90 %. |
 | 99p&#42; | Percentil 99. |
-| 99.9p&#42; | Percentil 99,9. |
+| 99,9p&#42; | Percentil 99,9. |
 | Rendimiento real&#42; | Número de ejecuciones divididas por el tiempo de ejecución transcurrido. |
 
 Estas métricas se escriben con la ayuda de editores que se pueden agregar con la variable `add` parámetro (similar a añadir pruebas). Actualmente, hay dos opciones:

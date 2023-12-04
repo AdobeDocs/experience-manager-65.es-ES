@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Para combinar un PDF que contenga marcadores nuevos, debe hacer referencia a un 
 
 **Agregue el documento PDF y el documento XML de marcador a una colección Map**
 
-Debe agregar el documento PDF al que se agregan los marcadores y el documento XML de marcador a la colección Map. Por lo tanto, el objeto de la colección Map contiene dos elementos: un documento de PDF y el documento XML de marcador.
+Agregue el documento PDF al que se agregan los marcadores y el documento XML de marcador a la colección Map. Por lo tanto, el objeto de la colección Map contiene dos elementos: un documento de PDF y el documento XML de marcador.
 
 **Establecer opciones en tiempo de ejecución**
 
@@ -164,7 +164,7 @@ Para combinar un documento de PDF que contenga nuevos marcadores, utilice el `in
 
 **Guarde el documento de PDF que contiene marcadores**
 
-Debe extraer los resultados del objeto de asignación devuelto y guardar el documento de PDF correspondiente. (Consulte &quot;Extraer los resultados&quot; en [Agrupar documentos de PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Extraiga los resultados del objeto de asignación devuelto y guarde el documento de PDF correspondiente. (Consulte &quot;Extraer los resultados&quot; en [Agrupar documentos de PDF mediante programación](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Consulte también**
 

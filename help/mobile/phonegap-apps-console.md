@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -107,16 +107,16 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 
 #### Cambiar el título, la descripción y el icono {#change-the-title-description-and-icon}
 
-1. En el carril, toque o haga clic en Aplicaciones.
+1. En el carril, haga clic en Aplicaciones.
 1. Seleccione la aplicación que desea configurar y haga clic en el icono Ver propiedades de página.
 
    ![El icono Ver propiedades de página está indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-8.png)
 
-1. Para cambiar los valores de las propiedades, toque o haga clic en el icono Editar.
+1. Para cambiar los valores de las propiedades, haga clic en el icono Edit.
 
    ![El icono Editar indicado por un lápiz.](do-not-localize/chlimage_1-9.png)
 
-1. Configure las propiedades Básico y Avanzado y, a continuación, toque o haga clic en el icono Listo.
+1. Configure las propiedades Básico y Avanzado y, a continuación, haga clic en el icono Listo.
 
    ![El icono Listo aparece indicado mediante un símbolo de marca de verificación.](do-not-localize/chlimage_1-10.png)
 
@@ -127,11 +127,11 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 
    ![El icono Ver propiedades de la aplicación está indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-11.png)
 
-1. Para cambiar los valores de las propiedades, toque o haga clic en el icono Editar.
+1. Para cambiar los valores de las propiedades, haga clic en el icono Edit.
 
    ![El icono Editar indicado por un lápiz.](do-not-localize/chlimage_1-12.png)
 
-1. Configure las propiedades en las pestañas Básico, Avanzado, Generar y Analytics y, a continuación, toque o haga clic en el icono Listo.
+1. Configure las propiedades en las pestañas Básico, Avanzado, Generar y Analytics y, a continuación, haga clic en el icono Listo.
 
    ![El icono Listo aparece indicado mediante un símbolo de marca de verificación.](do-not-localize/chlimage_1-13.png)
 
@@ -139,8 +139,8 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 
 Después de crear la aplicación móvil, agregue el contenido que se utiliza como interfaz de usuario de la aplicación.
 
-1. En el carril, toque o haga clic en Aplicaciones.
-1. Toque o haga clic en la aplicación y, a continuación, toque o haga clic en Inglés.
+1. En el carril, haga clic en Aplicaciones.
+1. Haga clic en la aplicación y, a continuación, en inglés.
 1. Edite la página de inicio o agregue páginas secundarias según sea necesario.
 
 ### Mover contenido a aplicaciones móviles {#moving-content-to-mobile-applications}
@@ -160,8 +160,8 @@ La sincronización de contenido también realiza un seguimiento de cuándo se pr
 
 Realice el siguiente procedimiento en la instancia en la que desea actualizar la caché. Por ejemplo, si la aplicación solicita actualizaciones desde la instancia de publicación, realice el procedimiento en la instancia de publicación.
 
-1. En el carril, toque o haga clic en Aplicaciones y, a continuación, toque o haga clic en la aplicación.
-1. Seleccione la página de bienvenida y, a continuación, toque o haga clic en el icono Actualizar caché.
+1. En el carril, haga clic en Aplicaciones y, a continuación, haga clic en la aplicación.
+1. Seleccione la página de bienvenida y, a continuación, haga clic en el icono Actualizar caché.
 
    ![El icono Actualizar caché está indicado por un barril rayado con un símbolo de reciclaje encima.](do-not-localize/chlimage_1-14.png)
 

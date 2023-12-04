@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 85%
+source-wordcount: '569'
+ht-degree: 80%
 
 ---
 
@@ -68,7 +68,7 @@ La comparación de diferencias detecta los cambios en el nivel de componente y d
 
 ### Pantalla completa y salida   {#fullscreen-and-exiting}
 
-Para centrarse en un contenido específico, puede hacer clic en el icono de pantalla completa para que cualquier “lado” de la comparación de diferencias en paralelo se amplíe en la ventana completa del navegador.
+Para centrarse en un contenido determinado, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del explorador.
 
 ![Icono de modo de pantalla completa](do-not-localize/chlimage_1-18.png)
 

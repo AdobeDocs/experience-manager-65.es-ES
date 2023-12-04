@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1890'
 ht-degree: 0%
 
 ---
@@ -109,12 +109,12 @@ Si necesita ejecutar la recolección de basura del almacén de datos fuera de es
 
 Antes de ejecutar la recolección de elementos no utilizados del almacén de datos, debe comprobar que no se estén ejecutando copias de seguridad en ese momento.
 
-1. Abrir el tablero de operaciones por **Navegación** -> **Herramientas** -> **Operaciones** -> **Mantenimiento**.
-1. Toque o haga clic en **Ventana de mantenimiento semanal**.
+1. Abrir el tablero de operaciones por **Navegación** > **Herramientas** > **Operaciones** > **Mantenimiento**.
+1. Haga clic en **Ventana de mantenimiento semanal**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Seleccione el **Recopilación de residuos del almacén de datos** y luego toque o haga clic en **Ejecutar** icono.
+1. Seleccione el **Recopilación de residuos del almacén de datos** y, a continuación, haga clic en **Ejecutar** icono.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 

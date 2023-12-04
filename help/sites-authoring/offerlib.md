@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 93%
+source-wordcount: '834'
+ht-degree: 73%
 
 ---
 
@@ -33,21 +33,21 @@ Cree una marca con la que se asocien sus ofertas. Abra una marca en la consola d
 
 Cuando crea una marca mediante la consola Ofertas, también aparece en la [Consola Actividades](/help/sites-authoring/activitylib.md) donde puede añadir y administrar actividades para la marca.
 
-1. En la consola de navegación, pulse o haga clic en **Personalización** > **Ofertas**.
+1. En la consola de navegación, haga clic en **Personalización** > **Ofertas**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Haga clic o pulse en **Crear** y luego en **Crear** **marca**.
-1. Seleccione la plantilla de la marca y, a continuación, haga clic o pulse **Siguiente**.
+1. Clic **Crear** y luego **Crear** **Marca**.
+1. Seleccione la plantilla de marca y haga clic en **Siguiente**.
 1. Escriba un título para la marca tal como desea que aparezca en las consolas Ofertas y Actividades. De forma opcional, escriba o seleccione una o varias etiquetas para asociarlas a la marca.
-1. Haga clic o pulse **Crear**.
+1. Haga clic en **Crear**.
 
 ## Añadir una carpeta a una biblioteca de ofertas {#add-a-folder-to-an-offer-library}
 
 Añada una carpeta a la biblioteca de ofertas de una marca para organizar y almacenar las ofertas. Puede crear una carpeta debajo de la marca o de otras carpetas.
 
 1. En la consola Ofertas, abra la ubicación en la que desea crear la carpeta. Por ejemplo, abra la marca para crear una carpeta de nivel superior o abra otra carpeta de la biblioteca.
-1. Haga clic o pulse **Crear** > **Crear carpeta u oferta**.
+1. Clic **Crear** > **Crear carpeta u oferta**.
 
    ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
@@ -56,7 +56,7 @@ Añada una carpeta a la biblioteca de ofertas de una marca para organizar y alma
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Haga clic o pulse **Crear**.
+1. Haga clic en **Crear**.
 
 ## Adición de una oferta a una biblioteca de ofertas {#add-an-offer-to-an-offer-library}
 
@@ -65,13 +65,13 @@ Añada una oferta a la biblioteca de ofertas de una marca para que se pueda aña
 Después de crear la oferta, puede abrirla para crear el contenido.
 
 1. En la consola Ofertas, abra la ubicación donde desea crear la oferta. Por ejemplo, abra la marca para crear una oferta de nivel superior o abra una carpeta en la biblioteca.
-1. Haga clic o pulse **Crear** > **Crear carpeta u oferta**.
+1. Clic **Crear** > **Crear carpeta u oferta**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Seleccione la plantilla **Página de oferta** y, a continuación, pulse o haga clic en **Siguiente**.
-1. Escriba un título para la oferta y, opcionalmente, seleccione o escriba una o más etiquetas para asociarlas a la oferta. A continuación, pulse o haga clic en **Crear**.
-1. En el cuadro de diálogo de confirmación, para abrir la oferta y editarla, haga clic o pulse **Abrir página**.
+1. Seleccione el **Página de oferta** y haga clic en **Siguiente**.
+1. Escriba un título para la oferta y, opcionalmente, seleccione o escriba una o más etiquetas para asociarlas a la oferta. A continuación, haga clic en **Crear**.
+1. En el cuadro de diálogo de confirmación, para abrir la oferta y editarla, haga clic en **Abrir página**.
 
 ## Edición de una oferta {#editing-an-offer}
 
@@ -79,7 +79,7 @@ Abra una oferta y edite el contenido tal como desea que aparezca en las experien
 
 Puede abrir una oferta desde una carpeta de una biblioteca de ofertas o desde los resultados de búsqueda. También puede abrir una oferta desde una experiencia que utilice la oferta.
 
-1. En la consola Ofertas, pulse o haga clic en el icono situado junto a la oferta y pulse o haga clic en **Editar**.
+1. En la consola Ofertas, haga clic en el icono situado junto a la oferta y seleccione **Editar**.
 1. Añada los componentes a la oferta y edite el contenido como de costumbre.
 
 ## Eliminación de una oferta {#deleting-an-offer}
@@ -88,15 +88,15 @@ Elimine una oferta cuando ya no la necesite. Cuando intente eliminar una oferta 
 
 Puede eliminar una oferta mientras ve el contenido de cualquiera de las carpetas en una biblioteca de ofertas o los resultados de búsqueda.
 
-1. En la consola de Ofertas, toque o haga clic en el icono situado junto a la oferta y haga clic o pulse en **Eliminar**.
+1. En la consola Ofertas, haga clic en el icono situado junto a la oferta y seleccione **Eliminar**.
 
-   Seleccione la oferta y toque o haga clic en **Eliminar**.
+   Seleccione la oferta y haga clic en **Eliminar**.
 
-1. En el cuadro de diálogo que aparece, toque o haga clic en **Eliminar** para confirmar la eliminación.
+1. Haga clic en el cuadro de diálogo que aparece **Eliminar** para confirmar la eliminación.
 1. Si la oferta se utiliza en una o más experiencias, aparece un cuadro de diálogo para indicar que se hace referencia a la oferta:
 
-   * Para eliminar la oferta y quitarla de las experiencias, toque o haga clic en **Forzar eliminación**.
-   * Para conservar la oferta, toque o haga clic en **Cancelar**.
+   * Para eliminar la oferta y eliminarla de las experiencias, haga clic en **Forzar eliminación**.
+   * Para conservar la oferta, haga clic en **Cancelar**.
 
 ## Búsqueda de ofertas {#searching-for-offers}
 
@@ -108,5 +108,5 @@ Los criterios de búsqueda actuales aparecen junto a los resultados. También pu
 
 Para buscar ofertas, haga lo siguiente:
 
-1. En la parte superior de la consola de ofertas, pulse o haga clic en el icono de la lupa. De forma predeterminada, la búsqueda se limita a las ofertas.
+1. En la parte superior de la consola Ofertas, haga clic en el icono de lupa. De forma predeterminada, la búsqueda se limita a las ofertas.
 1. Escriba la palabra clave para buscar ofertas. Seleccione entre los resultados.

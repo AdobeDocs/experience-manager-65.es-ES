@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 3%
+source-wordcount: '1482'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Todas las funcionalidades se implementan utilizando los servicios web nativos de
 >La instalación, configuración, administración y operaciones de TI del servidor de SharePoint y la infraestructura de TI relacionada están fuera del ámbito de este documento. Consulte la documentación del proveedor sobre [SharePoint](https://www.microsoft.com/sharepoint) para obtener información acerca de estos temas. El conector requiere que estas partes de la infraestructura se instalen, configuren y operen correctamente.
 >
 
-## Primeros pasos {#getting-started}
+## Introducción {#getting-started}
 
 Para empezar a usar el conector, haga lo siguiente:
 
@@ -47,7 +47,7 @@ Para empezar a usar el conector, haga lo siguiente:
 * Descargue el archivo de distribución del paquete del conector desde Distribución de software.
 * Copiar un válido *license.properties* al directorio que contiene el archivo *cq-quickstart-6.4.0.jar* archivo.
 
-* AEM Pulse o haga doble clic en el archivo .jar para iniciarlo o iniciarlo desde la línea de comandos.
+* AEM Haga doble clic en el archivo .jar para iniciarlo o iniciarlo desde la línea de comandos.
 * Instale el paquete del conector desde el Administrador de paquetes.
 * Configure las opciones del conector.
 
@@ -84,7 +84,7 @@ El conector admite lo siguiente:
 
 >[!NOTE]
 >
->El conector solo admite configuraciones oficialmente admitidas por Microsoft. Consulte [MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) y [MOSS 2013](https://technet.microsoft.com/es-es/library/cc262485.aspx) requisitos del sistema.
+>El conector solo admite configuraciones oficialmente admitidas por Microsoft. Consulte [MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) y [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx) requisitos del sistema.
 
 ### Instalación estándar {#standard-installation}
 
@@ -97,12 +97,12 @@ Para instalar el paquete de contenido del conector.
 
 1. Abra un ticket de soporte de Adobe para solicitar el paquete de funciones del conector.
 1. AEM Descargue el paquete cuando esté disponible y, a continuación, abra el Administrador de paquetes para la instancia de la.
-1. Pulse o haga clic en **Instalar** en la página de descripción del paquete.
-1. Desde el **Instalar paquete** , pulse o haga clic en **Instalar**.
+1. Clic **Instalar** en la página de descripción del paquete.
+1. Desde el **Instalar paquete** , haga clic en **Instalar**.
 
    **Nota**: asegúrese de haber iniciado sesión como administrador.
 
-1. Cuando se instale el paquete, pulse o haga clic en **Cerrar**.
+1. Cuando el paquete esté instalado, haga clic en **Cerrar**.
 
 ## Configuración del conector de SharePoint {#configuring-sharepoint-connector}
 
@@ -118,7 +118,7 @@ Para establecer la dirección URL del servidor de SharePoint y las opciones avan
 1. Busque la variable **Conector JCR de día para Microsoft Sharepoint** paquete.
 1. Edite los valores de configuración.
 1. Establezca la URL del servidor de SharePoint como el valor de **Workspaces**.
-1. Pulse o haga clic en **Guardar**.
+1. Haga clic en **Guardar**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -185,7 +185,7 @@ De forma opcional, puede configurar la Demora de sincronización entre diferente
 
 Sharepoint incluye los métodos de autenticación Classic y Claims Based, que admiten los siguientes tipos de autenticación:
 
-* Basic
+* Básica
 * Basado en Forms
 
 En particular, están disponibles los siguientes tipos de autenticación:
@@ -204,7 +204,7 @@ AEM El conector JCR de la aplicación para Microsoft SharePoint 2010 y Microsoft
 
 Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
-1. Haga clic en OSGI -> Configuración
+1. Haga clic en OSGI > Configuración
 1. Buscar &quot;Conector JCR de día para Microsoft Sharepoint&quot;
 1. Haga clic en Editar los valores de configuración.
 1. Establezca el valor de &quot;Sharepoint Connection Factory&quot; como &quot;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&quot;

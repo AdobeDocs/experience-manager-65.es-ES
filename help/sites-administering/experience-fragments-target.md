@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 43%
+source-wordcount: '1513'
+ht-degree: 41%
 
 ---
 
@@ -152,19 +152,19 @@ AEM Para exportar un fragmento de experiencia de Target a Target (después de es
    >
    >Debe ser una variación web del Fragmento de experiencia.
 
-1. Toque o haga clic en **Exportar a Adobe Target**.
+1. Clic **Exportación a Adobe Target**.
 
    >[!NOTE]
    >
    >Si el fragmento de experiencia ya se ha exportado, seleccione **Actualización del estado en Adobe Target**.
 
-1. Toque o haga clic en **Exportación sin publicación** o **Publicación** según sea necesario.
+1. Clic **Exportar sin publicar** o **Publish** según sea necesario.
 
    >[!NOTE]
    >
    >Seleccionar **Publish** publica el fragmento de experiencia de inmediato y lo envía a Target.
 
-1. Toque o haga clic en **Aceptar** en el cuadro de diálogo de confirmación.
+1. Clic **OK** en el cuadro de diálogo de confirmación.
 
    El fragmento de experiencia debería estar en Target.
 

@@ -1,19 +1,19 @@
 ---
-title: Trabajo con Adobe Campaign Classic y Adobe Campaign Standard
+title: Uso de Adobe Campaign Classic y Adobe Campaign Standard
 description: AEM Puede crear contenido de correo electrónico en y procesarlo en correos electrónicos de Adobe Campaign en la
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2749'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
 
-# Trabajo con Adobe Campaign Classic y Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
+# Uso de Adobe Campaign Classic y Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 AEM Puede crear contenido de correo electrónico en y procesarlo en correos electrónicos de Adobe Campaign. Para ello, debe:
 
@@ -102,7 +102,7 @@ Desde la newsletter/el correo electrónico de creación, es posible que no pueda
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Seleccionar **Cloud Services** y haga clic en **+** para añadir una configuración. Seleccione cualquier configuración visible (no importa cuál). Toque o haga clic en **+** inicie sesión para añadir otra configuración y seleccione **Adobe Campaign**.
+1. Seleccionar **Cloud Services** y haga clic en **+** para añadir una configuración. Seleccione cualquier configuración visible (no importa cuál). Haga clic en **+** inicie sesión para añadir otra configuración y seleccione **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -201,7 +201,7 @@ Puede obtener una vista previa del aspecto que tendrá la newsletter y previsual
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. Puede ver los datos semilla procedentes de Adobe Campaign que están asociados al usuario seleccionado actualmente. Para ello, pulse o haga clic en el módulo Adobe Campaign en la barra de ContextHub. Se abrirá un cuadro de diálogo en el que se mostrarán todos los datos semilla del perfil actual. De nuevo, los datos se adaptan cuando se cambia a una persona diferente.
+1. Puede ver los datos semilla procedentes de Adobe Campaign que están asociados al usuario seleccionado actualmente. Para ello, haga clic en el módulo Adobe Campaign en la barra de ContextHub. Se abrirá un cuadro de diálogo en el que se mostrarán todos los datos semilla del perfil actual. De nuevo, los datos se adaptan cuando se cambia a una persona diferente.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

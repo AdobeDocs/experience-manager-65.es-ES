@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3306'
-ht-degree: 1%
+source-wordcount: '3251'
+ht-degree: 0%
 
 ---
 
@@ -261,7 +261,7 @@ Por ejemplo:
 La jerarquía de tipo de:
 
 * `/x`
-   *  es`[ c, b, a, <default>]`
+   * es `[ c, b, a, <default>]`
 * while para `/y`
    * la jerarquía es `[ c, a, <default>]`
 
@@ -280,7 +280,7 @@ Si llama a la representación (la secuencia de comandos) directamente, oculta el
 
 * su arquitectura de código ya no es tan limpia ni está tan claramente estructurada como debería ser; es de vital importancia para el desarrollo a gran escala
 
-### API Sling {#sling-api}
+### API de Sling {#sling-api}
 
 Utiliza el paquete de API de Sling, org.apache.sling.&amp;ast; y bibliotecas de etiquetas.
 
@@ -444,7 +444,7 @@ AEM Con, un entorno de producción suele constar de dos tipos diferentes de inst
 
 ## Dispatcher {#the-dispatcher}
 
-Dispatcher es la herramienta de Adobe para el almacenamiento en caché o el equilibrio de carga. Encontrará más información en [el Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
+Dispatcher es la herramienta de Adobe para el almacenamiento en caché o el equilibrio de carga. Encontrará más información en [el Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
 ## FileVault (sistema de revisión de origen) {#filevault-source-revision-system}
 

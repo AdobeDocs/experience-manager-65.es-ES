@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1682'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Para procesar un formulario de HTML que utilice un archivo CSS personalizado, as
 
 **Procesar un formulario de HTML**
 
-Para procesar un formulario de HTML, debe especificar un diseño de formulario creado en Designer y guardado como archivo XDP. También debe seleccionar un tipo de transformación de HTML. Por ejemplo, puede especificar el tipo de transformación de HTML que procesa un HTML dinámico para Internet Explorer 5.0 o posterior.
+Para procesar un formulario de HTML, especifique un diseño de formulario creado en Designer y guardado como archivo XDP. Seleccione un tipo de transformación de HTML. Por ejemplo, puede especificar el tipo de transformación de HTML que procesa un HTML dinámico para Internet Explorer 5.0 o posterior.
 
 El procesamiento de un formulario de HTML también requiere valores, como los valores de URI necesarios para procesar otros tipos de formulario.
 

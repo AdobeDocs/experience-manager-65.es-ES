@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Para descodificar datos de un formulario de PDF, realice los siguientes pasos:
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
-Los siguientes archivos JAR deben añadirse a la ruta de clase del proyecto:
+Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -70,7 +70,7 @@ Para poder realizar mediante programación una operación de servicio de Forms c
 
 **Obtenga un formulario de PDF que contenga datos con códigos de barras**
 
-Debe obtener un formulario de PDF que contenga un código de barras que se haya rellenado con datos de usuario.
+Obtenga un formulario de PDF que contenga un código de barras que se haya rellenado con datos de usuario.
 
 **Descodificar los datos del formulario de PDF**
 

@@ -8,10 +8,10 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 12%
+source-wordcount: '435'
+ht-degree: 5%
 
 ---
 
@@ -36,9 +36,9 @@ Cada columna muestra un valor para el período de informe actual e indica si el 
 >Para cambiar el periodo de actualización, [configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Abra el **Sites** consola; por ejemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. En el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá del [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. En el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá del [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono y seleccione **Configuración de vista**. El **Configurar columnas** se abre. Realice los cambios necesarios y confirme con **Actualizar**.
+1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono y seleccione **Configuración de vista**. El **Configurar columnas** se abre. Realice los cambios necesarios y confirme con **Actualizar**.
 
    ![spad-02](assets/spad-02.png)
 
@@ -85,6 +85,6 @@ Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desd
 
 >[!CAUTION]
 >
->Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
+>Debido a los cambios de seguridad dentro de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map AEM incluida en el programa de trabajo de.
 >
 >El [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debería utilizarse ahora.

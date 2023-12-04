@@ -2,10 +2,10 @@
 title: Creación de una Guía de inicio rápido de configuración sin encabezado
 description: AEM Cree una configuración como primer paso para empezar a utilizar sin encabezado en la versión 6.5 de la.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 67%
+ht-degree: 66%
 
 ---
 
@@ -27,7 +27,7 @@ En el contexto de la administración de contenido sin encabezado en AEM, piense 
 
 Un administrador solo tendría que crear una configuración una vez, o poco a poco cuando se necesite un nuevo espacio de trabajo para organizar los modelos de contenido. Para los fines de esta guía de introducción, solo necesitamos crear una configuración.
 
-1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Herramientas -> General -> Explorador de configuración**.
+1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Herramientas > General > Explorador de configuración**.
 1. Proporcione un **Título** para su configuración.
    * Se generará automáticamente un nombre basado en el título y se ajustará según lo siguiente [AEM Convenciones de nomenclatura de.](/help/sites-developing/naming-conventions.md). Se convertirá en el nombre de nodo en el repositorio.
 1. Compruebe las siguientes opciones:
@@ -36,7 +36,7 @@ Un administrador solo tendría que crear una configuración una vez, o poco a po
 
    ![Creación de configuración](assets/create-configuration.png)
 
-1. Haga clic o pulse **Crear**
+1. Haga clic en **Crear**
 
 Si es necesario, puede crear varias configuraciones. Las configuraciones también se pueden anidar.
 

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '831'
 ht-degree: 77%
 
 ---
@@ -121,6 +121,6 @@ La consola Lanzamientos proporciona una descripción general de los lanzamientos
 
    ![Pestaña Referencia: Lanzamientos](assets/screen-shot_2019-03-05at121901-1.png)
 
-1. Pulse o haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
+1. Haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
 
    ![Seleccione iniciar para mostrar las posibles acciones](assets/screen-shot_2019-03-05at121952-1.png)

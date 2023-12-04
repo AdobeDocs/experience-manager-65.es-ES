@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3787'
-ht-degree: 1%
+source-wordcount: '3720'
+ht-degree: 0%
 
 ---
 
@@ -91,12 +91,12 @@ El **Sitio de demostración móvil de We.Retail** utiliza los siguientes compone
   </tr>
   <tr>
    <td>mobileimage</td>
-   <td>Móvil</td>
+   <td>Mobile</td>
    <td>: basado en el componente de base de imagen<br /> : procesa una imagen si el dispositivo es capaz de<br /> </td>
   </tr>
   <tr>
    <td>mobilelist</td>
-   <td>Móvil</td>
+   <td>Mobile</td>
    <td>- basado en el componente de base de lista<br /> - list_teaser.jsp procesa una imagen si el dispositivo es capaz<br /> </td>
   </tr>
   <tr>
@@ -106,12 +106,12 @@ El **Sitio de demostración móvil de We.Retail** utiliza los siguientes compone
   </tr>
   <tr>
    <td>mobilereference</td>
-   <td>Móvil</td>
+   <td>Mobile</td>
    <td><p>: similar al componente de base de referencia</p> <p>: asigna un componente textimage a uno mobiletextimage y un componente de imagen a uno mobileimage</p> </td>
   </tr>
   <tr>
    <td>mobiletextimage</td>
-   <td>Móvil</td>
+   <td>Mobile</td>
    <td>- basado en el componente base textimage<br /> : procesa una imagen si el dispositivo es capaz de</td>
   </tr>
   <tr>
@@ -146,8 +146,7 @@ AEM El marco de trabajo móvil de la permite desarrollar componentes sensibles a
 
 * Comprobar si el grupo de dispositivos admite imágenes
   `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
-...
-O
+... O
   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
 ...
 
@@ -188,7 +187,7 @@ Los grupos de dispositivos se definen como páginas de contenido a continuación
 
 * Ubicación: `/libs/wcm/mobile/templates/devicegroup`
 * Ruta permitida: `/etc/mobile/groups/*`
-* Componente Página: `wcm/mobile/components/devicegroup`
+* Componente de página: `wcm/mobile/components/devicegroup`
 
 #### Asignación de grupos de dispositivos al sitio {#assigning-device-groups-to-your-site}
 
@@ -254,7 +253,7 @@ En el **General** pestaña:
 
    * **Título**: nombre del grupo de dispositivos móviles.
    * **Descripción**: descripción del grupo.
-   * **User-Agent**: cadena de user-agent con la que se comparan los dispositivos. Es opcional y puede ser una expresión regular. Ejemplos: `BlackBerryZ10`
+   * **User-Agent**: cadena de user-agent con la que se comparan los dispositivos. Es opcional y puede ser una expresión regular. Ejemplo: `BlackBerryZ10`
    * **Funcionalidades**: define si el grupo puede gestionar la rotación de imágenes, CSS, JavaScript o dispositivos.
    * **Ancho de pantalla mínimo** y **Altura**
    * **Desactivar emulador**: para habilitar/deshabilitar el emulador durante la edición de contenido.
@@ -577,7 +576,7 @@ El **Estadísticas** ya está disponible.
 
 ### Almacenamiento en caché de páginas de apoyo para vínculos de &quot;enviar vínculo a un amigo&quot; {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Las páginas móviles se pueden almacenar en caché en Dispatcher, ya que las páginas que se representan para un grupo de dispositivos se distinguen en la dirección URL de la página por el selector de grupo de dispositivos, por ejemplo, `/content/mobilepage.touch.html`. Una solicitud a una página móvil sin selector nunca se almacena en caché, ya que en este caso, la detección de dispositivos funciona y finalmente redirige al grupo de dispositivos coincidente (o &quot;no coincidente&quot;, en ese caso). Una página móvil representada con un selector de grupo de dispositivos se procesa mediante la reescritura de vínculos, que reescribe todos los vínculos de la página para contener también el selector de grupo de dispositivos, lo que impide volver a realizar la detección de dispositivos cada vez que se hace clic en una página ya clasificada.
+Las páginas móviles se pueden almacenar en caché en Dispatcher, ya que las páginas que se representan para un grupo de dispositivos se distinguen en la dirección URL de la página por el selector de grupo de dispositivos, por ejemplo, `/content/mobilepage.touch.html`. Una solicitud a una página móvil sin selector nunca se almacena en caché, ya que en este caso, la detección de dispositivos funciona y finalmente redirige al grupo de dispositivos coincidente (o &quot;no coincidente&quot;, en ese caso). Una página móvil representada con un selector de grupo de dispositivos se procesa mediante la reescritura de vínculos, que reescribe todos los vínculos de la página para contener también el selector de grupo de dispositivos, lo que impide volver a realizar la detección de dispositivos en cada clic de una página ya clasificada.
 
 Por lo tanto, podría encontrar el siguiente escenario:
 

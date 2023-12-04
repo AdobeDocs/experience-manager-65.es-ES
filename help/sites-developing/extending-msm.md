@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 2%
+source-wordcount: '2444'
+ht-degree: 1%
 
 ---
 
@@ -191,7 +191,7 @@ La nueva configuración de despliegue está disponible al establecer configuraci
 
    >[!NOTE]
    >
-   >No debe cambiar nada en el `/libs` ruta.
+   >No cambie nada en el `/libs` ruta.
    >Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
    >El método recomendado para la configuración y otros cambios es:
    >

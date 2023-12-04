@@ -9,9 +9,9 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Estas reglas pueden incluir la adición de metadatos, el recorte inteligente de 
 * [Perfiles de imagen](/help/assets/image-profiles.md)
 * [Perfiles de vídeo](/help/assets/video-profiles.md)
 
-Debe tener derechos de administrador para crear, editar y eliminar metadatos, imágenes o perfiles de vídeo.
+Necesita derechos de administrador para crear, editar y eliminar metadatos, imágenes o perfiles de vídeo.
 
 Después de crear los metadatos, las imágenes o el perfil de vídeo, debe asignarlos a una o varias carpetas que utilice como destino para los recursos recién cargados.
 

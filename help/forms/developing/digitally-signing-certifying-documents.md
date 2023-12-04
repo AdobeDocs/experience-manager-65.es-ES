@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '17027'
-ht-degree: 4%
+source-wordcount: '16882'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 **Acerca del servicio Signature**
 
-El servicio Signature permite a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos. Dado que las características de seguridad se aplican al propio documento, éste permanece seguro y controlado durante todo su ciclo de vida. Un documento permanece seguro más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización.
+El servicio Signature permite a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que solo los destinatarios previstos puedan modificar los documentos. Dado que las características de seguridad se aplican al propio documento, este permanece seguro y controlado durante todo su ciclo de vida. Un documento permanece seguro más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Puede realizar estas tareas utilizando el servicio Signature:
 
 ## Adición de campos de firma {#adding-signature-fields}
 
-Las firmas digitales aparecen en los campos de firma, que son campos de formulario que contienen una representación gráfica de la firma. Los campos de firma pueden ser visibles o invisibles. Los firmantes pueden utilizar un campo de firma preexistente o se puede agregar un campo de firma mediante programación. En cualquier caso, el campo de firma debe existir antes de que se pueda firmar un documento PDF.
+Las firmas digitales aparecen en los campos de firma, que son campos de formulario que contienen una representación gráfica de la firma. Los campos de firma pueden ser visibles o invisibles. Los firmantes pueden utilizar un campo de firma preexistente o se puede agregar un campo de firma mediante programación. En cualquier caso, el campo de firma debe existir antes de que se pueda firmar un documento de PDF.
 
 Puede agregar mediante programación un campo de firma mediante la API de Java del servicio de firma o la API del servicio web de firma. Puede agregar más de un campo de firma a un documento de PDF; sin embargo, cada nombre de campo de firma debe ser único.
 
@@ -87,7 +87,7 @@ Para poder realizar mediante programación una operación del servicio Signature
 
 **Obtener un documento de PDF al que se agregue un campo de firma**
 
-Debe obtener un documento de PDF al que se agregue un campo de firma.
+Obtenga un documento de PDF al que se agregue un campo de firma.
 
 **Agregar un campo de firma**
 
@@ -555,7 +555,7 @@ Modificar un campo de firma mediante la API de firma (servicio web):
 
 Las firmas digitales se pueden aplicar a documentos PDF para proporcionar cierto nivel de seguridad. Las firmas digitales, como las firmas manuscritas, proporcionan un medio para que los firmantes se identifiquen y hagan declaraciones sobre un documento. La tecnología utilizada para firmar documentos digitalmente ayuda a garantizar que tanto el firmante como los destinatarios tengan una idea clara de lo que se firmó y estén seguros de que el documento no se ha alterado desde que se firmó.
 
-Los documentos PDF se firman mediante tecnología de clave pública. Un firmante tiene dos claves: una clave pública y una clave privada. La clave privada se almacenará en las credenciales del usuario, que deberán estar disponibles a la hora de realizar la firma. La clave pública se almacenará en el certificado del usuario, que deberá estar disponible para que los destinatarios validen la firma. La información sobre los certificados revocados se encuentra en las listas de revocación de certificados (CRL) y en las respuestas del Protocolo de estado de certificado en línea (OCSP) distribuidas por las autoridades de certificación (CA). La hora de la firma se puede obtener de una fuente de confianza conocida como Autoridad de marca de tiempo.
+Los documentos PDF se firman mediante tecnología de clave pública. Un firmante tiene dos claves: una clave pública y una clave privada. La clave privada se almacena en las credenciales de un usuario, que deben estar disponibles en el momento de la firma. La clave pública se almacenará en el certificado del usuario, que deberá estar disponible para que los destinatarios validen la firma. La información sobre los certificados revocados se encuentra en las listas de revocación de certificados (CRL) y en las respuestas del Protocolo de estado de certificado en línea (OCSP) distribuidas por las autoridades de certificación (CA). La hora de la firma se puede obtener de una fuente de confianza conocida como Autoridad de marca de tiempo.
 
 >[!NOTE]
 >
@@ -650,7 +650,7 @@ También puede especificar si desea realizar o no una comprobación de revocaci�
 
 * **NoCheck**: no realizar la comprobación de revocación.
 * **BestEffort**: Intente siempre comprobar la revocación de todos los certificados de la cadena. Si se produce algún problema en la comprobación, se asume que la revocación es válida. Si se produce algún error, suponga que el certificado no se ha revocado.
-* **CheckIfAvailable:** Comprobar la revocación de todos los certificados de la cadena si la información de revocación está disponible. Si se produce algún problema en la comprobación, se asume que la revocación no es válida. Si se produce algún error, suponga que el certificado se ha revocado y no es válido. (Este es el valor predeterminado.)
+* **CheckIfAvailable:** Comprobar la revocación de todos los certificados de la cadena si la información de revocación está disponible. Si se produce algún problema en la comprobación, se asume que la revocación no es válida. Si se produce algún error, suponga que el certificado se ha revocado y no es válido. (Este es el valor predeterminado).
 * **AlwaysCheck**: compruebe la revocación de todos los certificados de la cadena. Si la información de revocación no está presente en ningún certificado, se supone que la revocación no es válida.
 
 Para realizar la comprobación de revocación en un certificado, puede especificar una dirección URL a un servidor de lista de revocación de certificados (CRL) mediante un `CRLOptionSpec` objeto. Sin embargo, si desea realizar la comprobación de revocación y no especifica una dirección URL a un servidor CRL, el servicio Signature obtiene la dirección URL del certificado.
@@ -1057,12 +1057,12 @@ Firme digitalmente un formulario interactivo con Forms y la API de firma (servic
 
 [Invocar AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## Certificar documentos PDF {#certifying-pdf-documents}
+## Certificar documentos de PDF {#certifying-pdf-documents}
 
 Puede proteger un documento PDF certificándolo con un tipo de firma concreto denominada firma certificada. Una firma certificada se distingue de una firma digital de las siguientes maneras:
 
-* Debe ser la primera firma aplicada al documento PDF; es decir, en el momento en que se aplique la firma certificada, cualquier otro campo de firma del documento debe estar sin firmar. Solo se permite una firma certificada en un documento PDF. Si desea firmar y certificar un documento PDF, deberá certificarlo antes de firmarlo. Después de certificar un documento PDF, puede firmar digitalmente en los campos de firma adicionales.
-* El autor o el creador del documento pueden especificar que el documento se puede modificar de determinadas formas sin invalidar la firma certificada. Por ejemplo, el documento puede permitir rellenar formularios o hacer comentarios. Si el autor especifica que no se permite una modificación determinada, Acrobat impedirá que los usuarios modifiquen el documento de esta manera. Si se realizan dichas modificaciones, como por ejemplo utilizar otra aplicación, la firma certificada no será válida y Acrobat emitirá una advertencia cuando cualquier usuario abra el documento. (Con las firmas no certificadas no se evitan las modificaciones y las operaciones de edición normales no invalidan la firma original).
+* Debe ser la primera firma aplicada al documento de PDF; es decir, en el momento en que se aplique la firma certificada, cualquier otro campo de firma del documento debe estar sin firmar. Solo se permite una firma certificada en un documento PDF. Si desea firmar y certificar un documento de PDF, debe certificarlo antes de firmarlo. Después de certificar un documento PDF, puede firmar digitalmente en los campos de firma adicionales.
+* El autor o el creador del documento pueden especificar que el documento se puede modificar de determinadas formas sin invalidar la firma certificada. Por ejemplo, el documento puede permitir rellenar formularios o hacer comentarios. Si el autor especifica que no se permite una modificación determinada, Acrobat impedirá que los usuarios modifiquen el documento de esa manera. Si se realizan dichas modificaciones, como por ejemplo utilizar otra aplicación, la firma certificada no será válida y Acrobat emitirá una advertencia cuando cualquier usuario abra el documento. (Con las firmas no certificadas no se evitan las modificaciones y las operaciones de edición normales no invalidan la firma original).
 * En el momento de la firma, el documento se analizará para detectar tipos de contenido específicos que puedan hacer que el contenido de un documento sea ambiguo o engañoso. Por ejemplo, una anotación podría complicar algún texto de una página que sea importante para comprender qué se certifica. Se puede proporcionar una explicación (autenticación legal) sobre dicho contenido.
 
 Puede certificar documentos de PDF mediante programación utilizando la API de Java del servicio Signature o la API del servicio web Signature. Al certificar un documento de PDF, debe hacer referencia a una credencial de seguridad que exista en el servicio de credenciales. Para obtener información sobre las credenciales de seguridad, consulte la *Instalación e implementación de AEM Forms* para su servidor de aplicaciones.
@@ -1200,7 +1200,7 @@ Certificar un documento de PDF mediante la API de firma (Java):
 
 **Consulte también**
 
-[Certificar documentos PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
+[Certificar documentos de PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
 [Inicio rápido (modo SOAP): Certificación de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
@@ -1275,7 +1275,7 @@ Certificar un documento de PDF mediante la API de firma (servicio web):
 
 **Consulte también**
 
-[Certificar documentos PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
+[Certificar documentos de PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
 [Invocar AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 

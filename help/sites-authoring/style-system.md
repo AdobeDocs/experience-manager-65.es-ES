@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 85%
+source-wordcount: '1293'
+ht-degree: 81%
 
 ---
 
@@ -80,7 +80,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
    ![Sistema de estilos para el autor](assets/style-system-author.png)
 
-1. Toque o haga clic en el botón **Estilos** de la barra de herramientas del componente **Lista** para abrir el menú Estilo y cambiar el aspecto del componente.
+1. Haga clic en **Estilos** en la barra de herramientas del **Lista** para abrir el menú Estilo y cambiar el aspecto del componente.
 
    ![Seleccionar estilos](assets/style-system-author2.png)
 
@@ -90,7 +90,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 ### Como autor de plantillas    {#as-a-template-author}
 
-1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página a través de **Información de la página -> Editar plantilla**.
+1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página mediante **Información de página > Editar plantilla**.
 
    ![Editar plantilla](assets/style-system-edit-template.png)
 

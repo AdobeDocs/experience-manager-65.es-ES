@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5483'
-ht-degree: 1%
+source-wordcount: '5425'
+ht-degree: 0%
 
 ---
 
@@ -377,17 +377,17 @@ Cuando se añade un recurso a Experience Manager Assets, se carga y publica auto
 
 >[!NOTE]
 >
->El tamaño máximo de archivo para la carga automática de Experience Manager Assets a Dynamic Media Classic es de 500 MB.
+El tamaño máximo de archivo para la carga automática de Experience Manager Assets a Dynamic Media Classic es de 500 MB.
 
 **Para cargar automáticamente desde Experience Manager Assets:**
 
 1. Seleccione el icono del Experience Manager y vaya a **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Service]**.
 1. En el encabezado Dynamic Media, en Configuraciones disponibles, seleccione **[!UICONTROL dms7 (Dynamic Media)]**).
-1. Seleccione el **[!UICONTROL Avanzadas]** , seleccione la pestaña **[!UICONTROL Habilitar carga automática]** y, a continuación, seleccione **[!UICONTROL OK]**. Debe configurar el flujo de trabajo de recursos DAM para incluir la carga en Dynamic Media Classic.
+1. Seleccione el **[!UICONTROL Avanzadas]** , seleccione la pestaña **[!UICONTROL Habilitar carga automática]** y, a continuación, seleccione **[!UICONTROL OK]**. Configure el flujo de trabajo de recursos DAM para incluir la carga en Dynamic Media Classic.
 
    >[!NOTE]
    >
-   >Consulte [Configuración del estado (publicado/no publicado) de los recursos insertados en Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) para obtener información sobre cómo insertar recursos en Dynamic Media Classic en un estado sin publicar.
+   Consulte [Configuración del estado (publicado/no publicado) de los recursos insertados en Dynamic Media Classic](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) para obtener información sobre cómo insertar recursos en Dynamic Media Classic en un estado sin publicar.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +398,8 @@ Cuando se añade un recurso a Experience Manager Assets, se carga y publica auto
 
    >[!NOTE]
    >
-   >* Al añadir recursos después de la automatización, si no se colocan en la carpeta de destino de CQ, no se cargan en Dynamic Media Classic.
-   >* Experience Manager XMP incrusta todos los metadatos tal como se han definido antes de cargarlos en Dynamic Media Classic, de modo que todas las propiedades del nodo de metadatos también están disponibles en Dynamic Media Classic XMP como.
+   * Al añadir recursos después de la automatización, si no se colocan en la carpeta de destino de CQ, no se cargan en Dynamic Media Classic.
+   * Experience Manager XMP incrusta todos los metadatos tal como se han definido antes de cargarlos en Dynamic Media Classic, de modo que todas las propiedades del nodo de metadatos también están disponibles en Dynamic Media Classic XMP como.
 
 ### Configuración del estado (publicado/no publicado) de los recursos insertados en Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +424,7 @@ Estos pasos son los mismos que seguiría para crear cualquier configuración de 
 
 >[!NOTE]
 >
->Si el entorno de instalación es un sistema operativo UNIX® de 64 bits, consulte [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) con respecto a otras opciones de configuración, debe definir.
+Si el entorno de instalación es un sistema operativo UNIX® de 64 bits, consulte [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) con respecto a otras opciones de configuración, debe definir.
 
 #### Limitaciones conocidas para insertar recursos en estado sin publicar  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +435,13 @@ Si utiliza esta función, tenga en cuenta las siguientes limitaciones:
 
 >[!NOTE]
 >
->Si desea publicar recursos instantáneamente, se recomienda mantener **[!UICONTROL Habilitar previsualización segura]** establezca en **[!UICONTROL Inmediata]** y utilice el **[!UICONTROL Habilitar carga automática]** función.
+Si desea publicar recursos instantáneamente, se recomienda mantener **[!UICONTROL Habilitar previsualización segura]** establezca en **[!UICONTROL Inmediata]** y utilice el **[!UICONTROL Habilitar carga automática]** función.
 
 ### Definir el estado de los recursos insertados en Dynamic Media Classic como sin publicar {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
->Si un usuario publica el recurso en Experience Manager, déclencheur automáticamente el recurso S7 en el recurso de producción/activo (el recurso ya no está en previsualización segura/sin publicar).
+Si un usuario publica el recurso en Experience Manager, déclencheur automáticamente el recurso S7 en el recurso de producción/activo (el recurso ya no está en previsualización segura/sin publicar).
 
 **Para establecer el estado de los recursos insertados en Dynamic Media Classic como sin publicar:**
 
@@ -459,7 +459,7 @@ Si utiliza esta función, tenga en cuenta las siguientes limitaciones:
 
 Habilitar la vista previa segura significa que los recursos se insertan en el servidor de vista previa segura y se cancela su publicación.
 
-Para ver si **[!UICONTROL Previsualización segura]** Cuando esté habilitado, vaya a un componente de Dynamic Media Classic en una página de Experience Manager. Seleccione **[!UICONTROL Editar]**. El recurso tiene el servidor de previsualización segura enumerado en la dirección URL. Después de publicar en el Experience Manager, el dominio del servidor en la referencia de archivo se actualiza de la URL de vista previa a la URL de producción.
+Para ver si **[!UICONTROL Previsualización segura]** Cuando esté habilitado, vaya a un componente de Dynamic Media Classic en una página de Experience Manager. Seleccionar **[!UICONTROL Editar]**. El recurso tiene el servidor de previsualización segura enumerado en la dirección URL. Después de publicar en el Experience Manager, el dominio del servidor en la referencia de archivo se actualiza de la URL de vista previa a la URL de producción.
 
 ### Habilitar Dynamic Media Classic para WCM {#enabling-scene-for-wcm}
 
@@ -513,7 +513,7 @@ Solo se puede marcar una configuración de Dynamic Media Classic como predetermi
 
    >[!NOTE]
    >
-   >Si solo hay una configuración, seleccione la opción **[!UICONTROL Configuración predeterminada]** La casilla de verificación no tiene ningún efecto.
+   Si solo hay una configuración, seleccione la opción **[!UICONTROL Configuración predeterminada]** La casilla de verificación no tiene ningún efecto.
 
 ### Configuración de la carpeta Ad hoc {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +570,11 @@ Concretamente, puede configurar el formato de archivo aceptado por tipo MIME en 
 
    >[!NOTE]
    >
-   >Si está cargando archivos de PSD y desea procesarlos como plantillas con extracciones de capas, introduzca lo siguiente en la **[!UICONTROL jobParam]** campo de valor:
+   Si está cargando archivos de PSD y desea procesarlos como plantillas con extracciones de capas, introduzca lo siguiente en la **[!UICONTROL jobParam]** campo de valor:
    >
-   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   >Asegúrese de que el archivo del PSD tenga &quot;layers&quot;. Si es estrictamente una imagen o una imagen con máscara, se procesa como imagen porque no hay capas que procesar.
+   Asegúrese de que el archivo del PSD tenga &quot;layers&quot;. Si es estrictamente una imagen o una imagen con máscara, se procesa como imagen porque no hay capas que procesar.
 
 1. En la esquina superior izquierda de la página del CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
 
@@ -616,6 +616,6 @@ Si tiene problemas para integrar Experience Manager con Dynamic Media Classic, c
 
 >[!CAUTION]
 >
->La importación de recursos desde una cuenta de compañía de Dynamic Media Classic existente puede tardar mucho tiempo en mostrarse en Experience Manager. Asegúrese de designar una carpeta en Dynamic Media Classic que no tenga demasiados recursos. Por ejemplo, la carpeta raíz suele tener demasiados recursos.
+La importación de recursos desde una cuenta de compañía de Dynamic Media Classic existente puede tardar mucho tiempo en mostrarse en Experience Manager. Asegúrese de designar una carpeta en Dynamic Media Classic que no tenga demasiados recursos. Por ejemplo, la carpeta raíz suele tener demasiados recursos.
 >
->Si desea probar la integración, haga que la carpeta raíz apunte únicamente a una subcarpeta, en lugar de a toda la compañía.
+Si desea probar la integración, haga que la carpeta raíz apunte únicamente a una subcarpeta, en lugar de a toda la compañía.

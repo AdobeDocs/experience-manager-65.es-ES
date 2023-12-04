@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Además, es posible que también tenga que seleccionar la plantilla de Adobe Cam
 
    >[!NOTE]
    >
-   >Asegúrese de tocar o hacer clic en **OK** o **Aplicar** después de agregar el servicio en la nube. Esto habilita el **Adobe Campaign** para que funcione correctamente.
+   >Asegúrese de hacer clic en **OK** o **Aplicar** después de agregar el servicio en la nube. Esto habilita el **Adobe Campaign** para que funcione correctamente.
 
 1. Si desea aplicar una plantilla de envíos de correo electrónico específica (de Adobe Campaign), distinta de la predeterminada **correo** plantilla, seleccione **Propiedades de página** otra vez. En el **Adobe Campaign** pestaña, introduzca el nombre interno de la plantilla de envíos de correo electrónico en la instancia de Adobe Campaign relacionada.
 

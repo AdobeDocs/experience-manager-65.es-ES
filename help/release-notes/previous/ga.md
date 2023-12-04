@@ -2,10 +2,10 @@
 title: Notas de la versión generales de [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] Notas de la versión 6.5 que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 7%
+source-wordcount: '4484'
+ht-degree: 3%
 
 ---
 
@@ -363,7 +363,7 @@ Para obtener más información, consulte [Novedades de Brand Portal.](https://ex
 
 En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales necesarios residen en diferentes silos.
 
-[!DNL Experience Manager Sites] ofrece capacidades de crear páginas web y es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web.[!DNL Experience Manager Assets] [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración de [!DNL Sites] y [!DNL Assets]. Consulte [Cómo configurar y utilizar la función Recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
+[!DNL Experience Manager Sites] ofrece funciones para crear páginas web y [!DNL Experience Manager Assets] es el sistema de administración de activos digitales (DAM) que proporciona los activos necesarios para los sitios web. [!DNL Experience Manager] ahora admite el caso de uso anterior mediante la integración de [!DNL Sites] y [!DNL Assets]. Consulte [Cómo configurar y utilizar la función Recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
 
 ![Arrastrar un recurso desde una [!DNL Experience Manager] implementación en un [!DNL Sites] página de otro [!DNL Experience Manager] implementación](/help/release-notes/assets/connected-assets-drag-and-drop-only.gif)
 
@@ -428,7 +428,7 @@ AEM.5 Forms incorpora varias funciones y mejoras nuevas. Los aspectos destacados
 
 Consulte la [AEM Resumen de las nuevas funciones y mejoras de Forms en la versión 6.5 de la versión de](/help/forms/using/whats-new.md) para obtener información sobre las funciones nuevas y mejoradas y los recursos de documentación.
 
-### Uso del desarrollo centrado en el cliente {#leverage-customer-focused-development}
+### Uso del desarrollo centrado en el cliente {#use-customer-focused-development}
 
 El Adobe de utiliza un modelo de desarrollo centrado en el cliente que permite a los clientes contribuir en todas las etapas del proceso de desarrollo, durante la especificación, el desarrollo y las pruebas. Damos las gracias a todos los clientes y socios colaboradores en este proceso.
 
@@ -464,7 +464,7 @@ AEM Este proceso de priorización ha dado como resultado más de 750 cambios cen
    * [Alemán](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
    * [Español](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
    * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [Francés](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [francés](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM El grupo de herramientas de modernización, por ejemplo, la herramienta de conversión de diálogos. ([Proyecto de GitHub](https://github.com/adobe/aem-modernize-tools))
 
@@ -540,7 +540,7 @@ Para resolver este error:
 
 1. Detenga la instancia de AEM. Ir a `<aem_server_path_on_server>crx-quickstart\conf` y abra el `sling.properties` archivo. El Adobe recomienda realizar una copia de seguridad de este archivo.
 
-1. Buscar `org.osgi.framework.bootdelegation=`. Añadir `jdk.internal.reflect,jdk.internal.reflect.*` propiedades para mostrar el resultado como.
+1. Buscar por `org.osgi.framework.bootdelegation=`. Añadir `jdk.internal.reflect,jdk.internal.reflect.*` propiedades para mostrar el resultado como.
 
 ```java
 org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
@@ -568,7 +568,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * AEM (Solo JBoss® 7) Cuando actualiza desde una versión anterior a la versión 6.5 de Forms y la versión anterior tenía procesos (.lca) que creaban y utilizaban una copia del proceso de envío o procesamiento predeterminado, HTML5 Forms que utiliza estos procesos (.lca) no realiza las acciones necesarias. (CQ-4243928)
 * En un formulario adaptable, cuando se invoca un servicio del modelo de datos de formulario desde el editor de reglas para actualizar dinámicamente los valores del componente de opción de imagen, los valores del componente de opción de imagen no se actualizan. (CQ-4254754)
-* El instalador de AEM Forms Designer requiere la versión de 32 bits de [Paquete de tiempo de ejecución redistribuible de Visual C++ 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) y [Paquetes de tiempo de ejecución redistribuibles de Visual C++ 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Asegúrese de que los paquetes de ejecución redistribuibles anteriores estén instalados antes de iniciar la instalación. (CQ-4265668)
+* El instalador de AEM Forms Designer requiere la versión de 32 bits de [Paquete de tiempo de ejecución redistribuible de Visual C++ 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) y [Paquetes de tiempo de ejecución redistribuibles de Visual C++ 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Asegúrese de que los paquetes de tiempo de ejecución redistribuibles anteriores estén instalados antes de iniciar la instalación. (CQ-4265668)
 
 * El PDF Generator no admite la autenticación basada en tarjetas inteligentes. Cuando un administrador habilita la directiva de grupo `Interactive Logon: Require Smart card` en un servidor de Windows, se invalidan todos los usuarios de PDF Generator existentes.
 

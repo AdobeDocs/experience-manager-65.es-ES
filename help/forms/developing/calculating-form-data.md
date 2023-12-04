@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 1%
+source-wordcount: '1858'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 El servicio Forms puede calcular los valores que un usuario introduce en un formulario y mostrar los resultados. Para calcular los datos del formulario, debe realizar dos tareas. En primer lugar, se crea un script de diseño de formulario que calcula los datos del formulario. Un diseño de formulario admite tres tipos de scripts. Un tipo de script se ejecuta en el cliente, otro se ejecuta en el servidor y el tercer tipo se ejecuta tanto en el servidor como en el cliente. El tipo de script que se describe en este tema se ejecuta en el servidor. Los cálculos del lado del servidor son compatibles con las transformaciones de HTML, PDF y Guía de formularios (obsoletas).
 
-Como parte del proceso de diseño del formulario, puede utilizar cálculos y scripts para proporcionar una experiencia de usuario más rica. Los cálculos y las secuencias de comandos se pueden agregar a la mayoría de los campos y objetos de formulario. Debe crear una secuencia de comandos de diseño de formulario para realizar operaciones de cálculo con los datos que un usuario introduce en un formulario interactivo.
+Como parte del proceso de diseño del formulario, puede utilizar cálculos y scripts para proporcionar una experiencia de usuario más rica. Los cálculos y las secuencias de comandos se pueden agregar a la mayoría de los campos y objetos de formulario. Cree una secuencia de comandos de diseño de formulario para realizar operaciones de cálculo con los datos que un usuario introduce en un formulario interactivo.
 
 El usuario introduce valores en el formulario y hace clic en el botón Calcular para ver los resultados. El siguiente proceso describe una aplicación de ejemplo que permite a un usuario calcular datos:
 
@@ -197,7 +197,7 @@ Calcular datos de formulario mediante la API de Forms (servicio web):
       * El `BLOB` que contiene los datos del formulario.
       * Un valor de cadena que especifica variables de entorno que incluyen todos los encabezados HTTP relevantes. Por ejemplo, puede especificar el siguiente valor de cadena: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
       * Un valor de cadena que especifica la variable `HTTP_USER_AGENT` valor del encabezado; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * A `RenderOptionsSpec` que almacena opciones en tiempo de ejecución. Para obtener más información, .
+      * A `RenderOptionsSpec` que almacena opciones en tiempo de ejecución. Para obtener más información, consulte .
       * Un vacío `BLOBHolder` objeto que rellena el método.
       * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que rellena el método.
       * Un vacío `BLOBHolder` objeto que rellena el método.

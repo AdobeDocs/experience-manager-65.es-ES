@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1530'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ AEM Para exportar usuarios de como posibles clientes de Salesforce:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. AEM Seleccione el usuario de la cuenta de usuario que desea crear como posible cliente, como el **Carga útil** para este flujo de trabajo (inicio -> usuarios). Asegúrese de seleccionar el nodo de perfil del usuario, ya que contiene información como **givenName**, y  **familyName**, que se asignan a los posibles clientes de Salesforce **FirstName** y **LastName** campos.
+1. AEM Seleccione el usuario de la cuenta de usuario que desea crear como posible cliente, como el **Carga útil** para este flujo de trabajo (inicio > usuarios). Asegúrese de seleccionar el nodo de perfil del usuario, ya que contiene información como **givenName**, y  **familyName**, que se asignan a los posibles clientes de Salesforce **FirstName** y **LastName** campos.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -127,7 +127,7 @@ Si es necesario, configure el flujo de trabajo de exportación de Salesforce.com
 
 Para configurar el flujo de trabajo de exportación de Salesforce.com:
 
-1. Navegue hasta `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
+1. Vaya a `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
 
    ![chlimage_1-16](assets/chlimage_1-16.jpeg)
 

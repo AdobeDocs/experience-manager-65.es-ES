@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2548'
 ht-degree: 5%
 
 ---
@@ -107,7 +107,7 @@ Establece la altura y la anchura de la imagen.
 
 >[!NOTE]
 >
->Debe introducir información en la variable **Texto alternativo** en el campo **Avanzadas** o la imagen no se puede guardar y verá el siguiente mensaje de error:
+>Introduzca información en la **Texto alternativo** en el campo **Avanzadas** o la imagen no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -138,7 +138,7 @@ Añada cualquier parámetro de URL adicional. Haga clic en Agregar elemento para
 
 >[!NOTE]
 >
->Debe introducir información en la variable **Tipo de vínculo** en el campo **Información de URL** o el componente no se puede guardar y verá el siguiente mensaje de error:
+>Introduzca información en la **Tipo de vínculo** en el campo **Información de URL** o el componente no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -247,7 +247,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Casilla (Campaign)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>No contacto más largo (por cualquier canal)</p> </td>
+   <td><p>Ya no se puede contactar (por ningún canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de fecha (Campaign)</p> <p>Campo de fecha/HTML 5 (Campaign)</p> </td>

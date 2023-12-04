@@ -5,10 +5,10 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 27%
+source-wordcount: '669'
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Esta página presenta mejoras y refinamientos incrementales en las capacidad
 
 Se han añadido opciones para mejorar la productividad al trabajar con proyectos de traducción, como promocionar y eliminar automáticamente los lanzamientos de traducción y programar la ejecución recurrente de un proyecto de traducción.
 
-1. En el proyecto de traducción, toque o haga clic en los puntos suspensivos en la parte inferior de la **Resumen de traducción** mosaico.
+1. En el proyecto de traducción, haga clic en los puntos suspensivos en la parte inferior del **Resumen de traducción** mosaico.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -40,7 +40,7 @@ Se han añadido opciones para mejorar la productividad al trabajar con proyectos
 
 Es posible configurar varios idiomas de destino en un proyecto de traducción para reducir el número total de proyectos de traducción creados.
 
-1. En el proyecto de traducción, toque o haga clic en los puntos en la parte inferior de la **Resumen de traducción** mosaico.
+1. En el proyecto de traducción, haga clic en los puntos en la parte inferior de la **Resumen de traducción** mosaico.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -110,11 +110,11 @@ Ahora se puede seleccionar una propiedad en la vista de lista de sitios que mues
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Haga clic o toque **Configuración de vista**.
+1. Clic **Configuración de vista**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Marque **Traducido** casilla de verificación bajo **Traducción** y pulse o haga clic en **Actualizar**.
+1. Marque **Traducido** casilla de verificación bajo **Traducción** y haga clic en **Actualizar**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

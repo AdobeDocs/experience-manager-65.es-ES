@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 66%
+source-wordcount: '567'
+ht-degree: 65%
 
 ---
 
@@ -53,11 +53,11 @@ Para integrarse con Target, realice las siguientes tareas:
 
 >[!CAUTION]
 >
->Debe asegurar el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>Asegure el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
 >Consulte [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) para obtener información detallada.
 
-Cuando se complete la integración, puede [crear contenido de destino](/help/sites-authoring/content-targeting-touch.md) para enviar datos sobre visitantes a Adobe Target. Tenga en cuenta que los componentes de página requieren un código específico para habilitar la segmentación de contenido. (Consulte [Desarrollo de contenido de destino](/help/sites-developing/target.md)).)
+Cuando se complete la integración, puede [crear contenido de destino](/help/sites-authoring/content-targeting-touch.md) para enviar datos sobre visitantes a Adobe Target. Tenga en cuenta que los componentes de página requieren un código específico para habilitar la segmentación de contenido. (Consulte [Desarrollo de contenido de destino](/help/sites-developing/target.md).)
 
 >[!NOTE]
 >

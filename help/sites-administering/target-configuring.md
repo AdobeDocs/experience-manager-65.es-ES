@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 30%
+source-wordcount: '2122'
+ht-degree: 28%
 
 ---
 
@@ -27,7 +27,7 @@ El [Asistente de inclusión](/help/sites-administering/opt-in.md) que [AEM se in
 
 También puede configurar Adobe Target para que utilice Adobe Target como fuente de informes al segmentar contenido. Para ello, configure la Configuración de Analytics Cloud de A4T.
 
-Para localizar la configuración de la nube y el marco de trabajo, vaya a **Cloud Service** mediante **Herramientas** > **Implementación** > **Nube**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Bajo Adobe Target, toque o haga clic en **Mostrar configuraciones**.
+Para localizar la configuración de la nube y el marco de trabajo, vaya a **Cloud Service** mediante **Herramientas** > **Implementación** > **Nube**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Bajo Adobe Target, haga clic en **Mostrar configuraciones**.
 
 ### Propiedades de configuración de Target aprovisionadas {#provisioned-target-configuration-properties}
 
@@ -90,7 +90,7 @@ Para ello, especifique con qué configuración de nube de A4T conectar su config
    >1. Vaya a **Herramientas** > **General** > **CRXDE Lite**.
    1. Vaya a [Cuadro de diálogo Configuración de A4T Analytics](#a4t-analytics-config-dialog) (ver más abajo)
    1. Establezca la propiedad **disable** hasta **false**.
-   1. Haga clic o pulse **Guardar todo**.
+   1. Haga clic en **Guardar todo**.
 
 #### Cuadro de diálogo Configuración de A4T Analytics {#a4t-analytics-config-dialog}
 
@@ -153,7 +153,7 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
    1. Vaya a **Herramientas** > **General** > **CRXDE Lite**.
    1. Vaya a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. Establezca la propiedad **disable** hasta **false**.
-   1. Haga clic o pulse **Guardar todo**.
+   1. Haga clic en **Guardar todo**.
 
 1. En el cuadro de diálogo, proporcione valores para estas propiedades.
 
@@ -180,7 +180,7 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
    >
    Si ***ya*** ha creado componentes de destino y cambia esta configuración, los cambios no afectan a esos componentes. Cambie esos componentes directamente.
 
-1. Haga clic en **Conectarse a Target** para inicializar la conexión con Target. Si la conexión se realiza correctamente, aparecerá el mensaje **Conexión correcta**. Haga clic en **OK** en el mensaje y, a continuación, **OK** en el cuadro de diálogo.
+1. Clic **Conectar con Target** para inicializar la conexión con Target. Si la conexión se realiza correctamente, aparecerá el mensaje **Conexión correcta**. Haga clic en **OK** en el mensaje y, a continuación, **OK** en el cuadro de diálogo.
 
    Si no puede conectarse a Target, consulte la sección [solución de problemas](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems).
 
@@ -199,7 +199,7 @@ Puede crear varios marcos de trabajo para una sola configuración de Target. Los
 
    ![Componentes para el marco](assets/chlimage_1-162.png)
 
-1. Arrastre el componente Client Context que representa los datos que desea utilizar para la asignación al destino de colocación. También puede arrastrar el componente **Almacenamiento de ContextHub** al marco de trabajo.
+1. Arrastre el componente Client Context que representa los datos que desea utilizar para la asignación al destino de colocación. También puede arrastrar el **Tienda de ContextHub** al marco de trabajo.
 
    >[!NOTE]
    >
@@ -243,10 +243,10 @@ Cuando asocia una página con el marco de trabajo, las páginas secundarias here
 1. En el **Sites** , desplácese hasta el sitio que desee configurar.
 1. Uso de [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) o [modo de selección](/help/sites-authoring/basic-handling.md), seleccione **Ver propiedades.**
 1. Seleccione la pestaña **Cloud Services**.
-1. Pulse o haga clic en **Editar**.
-1. Pulse o haga clic en **Agregar configuración** bajo **Configuraciones del Cloud Service** y seleccione **Adobe Target**.
+1. Clic **Editar**.
+1. Clic **Agregar configuración** bajo **Configuraciones del Cloud Service** y seleccione **Adobe Target**.
 
-   ![Añadir configuración](assets/chlimage_1-165.png)
+   ![Agregar configuración](assets/chlimage_1-165.png)
 
 1. Seleccione el marco de trabajo en el que desee **Referencia de configuración**.
 
@@ -254,7 +254,7 @@ Cuando asocia una página con el marco de trabajo, las páginas secundarias here
    >
    Asegúrese de seleccionar la variable específica **marco** que ha creado y no la configuración de nube de Target en la que se creó.
 
-1. Pulse o haga clic en **Listo**.
+1. Haga clic en **Listo**.
 1. Active la página raíz del sitio web para replicarla en el servidor de publicación. (Consulte [Cómo Publicar Páginas](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]

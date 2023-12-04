@@ -11,10 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 100%
+source-wordcount: '811'
+ht-degree: 93%
 
 ---
 
@@ -107,7 +107,7 @@ Compruebe los siguientes parámetros:
 ### Problema: Error inesperado {#problem-unexpected-error-encountered}
 
 1. En la dirección URL del formulario, agregue el parámetro de consulta debugClientLibs y establezca su valor en true (Por ejemplo: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. En un explorador de escritorio, como Chrome, vaya a Herramientas para desarrolladores > Consola.
+1. En un navegador de escritorio, como Chrome, vaya a Herramientas para desarrolladores > Consola.
 1. Abra los registros para identificar el tipo de error. Para obtener información detallada sobre los registros, consulte [registros para formularios HTML5](/help/forms/using/enable-logs.md).
 1. Vaya a Herramientas para desarrolladores > Consola. Utilice el seguimiento en pila para localizar el código que causa el error. Depure el error para resolver el problema.
 
@@ -124,7 +124,7 @@ Compruebe los siguientes parámetros:
 
 ## Problema: No se muestran los mensajes de error localizados {#problem-localized-error-messages-do-not-display}
 
-1. Procese el formulario con un parámetro de consulta adicional **debugClientLibs=true** en el explorador de escritorio y, a continuación, vaya a Herramientas para desarrolladores > Recursos y busque el archivo I18N.css.
+1. Procesar el formulario con parámetros de consulta adicionales **debugClientLibs=true** en el explorador de escritorio y, a continuación, vaya a Herramientas para desarrolladores > Recursos y busque el archivo I18N.css.
 1. Si el archivo no está disponible, inicie sesión en CRX DE en https://&lt;server>:&lt;port>/crx/de.
 1. En la jerarquía de carpetas de la izquierda, navegue hasta /libs/fd/xfaforms/clientlibs/I18N y asegúrese de que existan los siguientes archivos y carpetas:
 

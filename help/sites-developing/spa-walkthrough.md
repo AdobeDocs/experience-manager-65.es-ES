@@ -4,10 +4,10 @@ description: Este artículo presenta los conceptos de un SPA y explica cómo usa
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 67%
+source-wordcount: '1945'
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ El Editor de SPA ofrece una solución completa para admitir las SPA dentro de AE
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## Introducción {#introduction}
 
@@ -103,7 +103,7 @@ SPA AEM SPA Cuando se crea una para utilizar el Editor de, el autor del contenid
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-   ![Etapa 1](assets/spa-walkthrough-step-1.png)
+   ![Paso 1](assets/spa-walkthrough-step-1.png)
 
 1. Seleccione un componente de encabezado y observe que la barra de herramientas aparece como para cualquier otro componente. Seleccione **Editar**.
 
@@ -125,7 +125,7 @@ SPA AEM SPA Cuando se crea una para utilizar el Editor de, el autor del contenid
 
    ![Paso 5](assets/spa-walkthrough-step-5.png)
 
-Se admiten herramientas de creación adicionales, como arrastrar y soltar componentes adicionales en la página, reorganizar componentes y modificar el diseño, como en cualquier aplicación que no sea de SPA.
+SPA Se admiten herramientas de creación adicionales, como arrastrar y soltar componentes adicionales en la página, reorganizar componentes y modificar el diseño, como en cualquier aplicación que no sea de tipo.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ SPA SPA SPA AEM Experimentar cómo se comporta una aplicación para el usuario f
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
-   ![Etapa 1](assets/spa-walkthrough-step-1-1.png)
+   ![Paso 1](assets/spa-walkthrough-step-1-1.png)
 
    Tenga en cuenta la estructura de las páginas, incluida la navegación a páginas secundarias, el widget del tiempo y los artículos.
 
@@ -169,7 +169,7 @@ La siguiente sección, [SPA Carga de una aplicación de,](#loading-an-spa-applic
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
-   ![Etapa 1](assets/spa-walkthrough-step-1-1.png)
+   ![Paso 1](assets/spa-walkthrough-step-1-1.png)
 
 1. Utilice la herramienta integrada de su navegador para ver la fuente de la página.
 1. El contenido de la fuente es extremadamente limitado.

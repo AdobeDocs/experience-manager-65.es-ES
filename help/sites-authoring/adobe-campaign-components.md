@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 5%
+source-wordcount: '2859'
+ht-degree: 4%
 
 ---
 
@@ -79,7 +79,7 @@ Puede arrastrar y soltar una imagen desde el [Explorador de recursos](/help/site
 
 >[!NOTE]
 >
->Debe introducir información en la variable **Texto alternativo** o no se puede guardar la imagen.
+>Introduzca información en la **Texto alternativo** o no se puede guardar la imagen.
 
 Una vez cargada la imagen (y no antes de), puede utilizar [edición in situ](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) para recortar o girar la imagen según sea necesario:
 
@@ -127,7 +127,7 @@ Establece la altura y la anchura de la imagen.
 
 >[!NOTE]
 >
->Debe introducir información en la variable **Texto alternativo** en el campo **Avanzadas** o la imagen no se puede guardar y verá el siguiente mensaje de error:
+>Introduzca información en la **Texto alternativo** en el campo **Avanzadas** o la imagen no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -156,7 +156,7 @@ Añada cualquier parámetro de URL adicional. Haga clic en Agregar elemento para
 
 >[!NOTE]
 >
->Debe introducir información en la variable **Tipo de vínculo** en el campo **Información de URL** o el componente no se puede guardar y verá el siguiente mensaje de error:
+>Introduzca información en la **Tipo de vínculo** en el campo **Información de URL** o el componente no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -300,7 +300,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Casilla (Campaign)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>No contacto más largo (por cualquier canal)</p> </td>
+   <td><p>Ya no se puede contactar (por ningún canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de fecha (Campaign)</p> <p>Campo de fecha/HTML 5 (Campaign)</p> </td>

@@ -8,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Para que esto funcione, siga las instrucciones de [Cómo trabajar con JSP](/help
 1. Abra el **Importar** diálogo en IntelliJ IDEA por
 
    * selección **Importar proyecto** en la pantalla de bienvenida si todavía no tiene ningún proyecto abierto
-   * selección **Archivo -> Importar proyecto** en el menú principal
+   * selección **Archivo > Importar proyecto** en el menú principal
 
 1. En el cuadro de diálogo Importar, seleccione el archivo POM del proyecto.
 
@@ -86,7 +86,7 @@ Los siguientes pasos son necesarios para depurar JSP con IntelliJ IDEA
 
 IntelliJ IDEA debe saber dónde encontrar los JSP para la depuración. Porque IDEA no puede interpretar `content-package-maven-plugin` , debe configurarse manualmente.
 
-1. Ir a **Archivo -> Estructura del proyecto**
+1. Ir a **Archivo > Estructura del proyecto**
 1. Seleccione el **Contenido** módulo
 1. Clic **+** sobre la lista de módulos y seleccione **Web**
 1. Como Directorio de recursos web, seleccione la opción `content/src/main/content/jcr_root subdirectory` del proyecto, como se muestra en la captura de pantalla siguiente.
@@ -97,14 +97,14 @@ IntelliJ IDEA debe saber dónde encontrar los JSP para la depuración. Porque ID
 
 1. Vaya a la **Complementos** panel en la configuración de IntelliJ IDEA
 1. Vaya a **Integración de JSR45** Y seleccione la casilla de verificación que hay junto a ella.
-1. Haga clic en **Aplicar**
+1. Clic **Aplicar**
 1. Reinicie IntelliJ IDEA cuando se le solicite
 
 ![chlimage_1-49](assets/chlimage_1-49a.png)
 
 #### Configuración de un perfil de depuración {#configure-a-debug-profile}
 
-1. Ir a **Ejecutar -> Editar configuraciones**
+1. Ir a **Ejecutar > Editar configuraciones**
 1. Pulse el botón **+** y seleccione **Remoto JSR45**
 1. En el cuadro de diálogo de configuración, seleccione **Configurar** junto a **Servidor de aplicaciones** y configurar un servidor genérico
 1. Establezca la página de inicio en una dirección URL adecuada si desea abrir un explorador al iniciar la depuración
@@ -141,7 +141,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 AEM Ya está todo configurado para depurar los JSP en el modo de depuración de la.
 
-1. Seleccionar **Ejecutar -> Depurar -> Su perfil de depuración**
+1. Seleccionar **Ejecutar > Depurar > Su perfil de depuración**
 1. Establecer puntos de interrupción en el código del componente
 1. Acceder a una página del explorador
 

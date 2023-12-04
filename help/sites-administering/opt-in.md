@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 11%
+source-wordcount: '1298'
+ht-degree: 10%
 
 ---
 
@@ -159,7 +159,7 @@ No es necesario modificar las configuraciones en la nube. Sin embargo, puede con
 >
 >El direccionamiento preciso siempre está habilitado en la instancia de autor. Sin embargo, en la instancia de publicación puede optar por desactivar el direccionamiento preciso globalmente, desactivando la marca de verificación junto al direccionamiento preciso en la configuración del servicio en la nube (**http://localhost:4502/etc/cloudservices.html**). También puede activar y desactivar el direccionamiento preciso para componentes individuales independientemente de la configuración del servicio en la nube.
 >
->Si ***ya*** ha creado componentes de destino y cambia esta configuración, los cambios no afectan a esos componentes. Debe realizar cualquier cambio en esos componentes directamente.
+>Si ***ya*** ha creado componentes de destino y cambia esta configuración, los cambios no afectan a esos componentes. Realice cualquier cambio en esos componentes directamente.
 
 >[!CAUTION]
 >

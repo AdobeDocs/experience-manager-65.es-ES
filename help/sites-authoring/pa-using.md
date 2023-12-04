@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 4%
+source-wordcount: '638'
+ht-degree: 5%
 
 ---
 
@@ -34,9 +34,9 @@ Cada columna muestra un valor para el período de informe actual e indica si el 
 >Para cambiar el periodo de actualización, [configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Abra el **Sites** consola; por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. En el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá del [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. En el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá del [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono y seleccione **Configuración de vista**. El **Configurar columnas** se abre. Realice los cambios necesarios y confirme con **Actualizar**.
+1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono y seleccione **Configuración de vista**. El **Configurar columnas** se abre. Realice los cambios necesarios y confirme con **Actualizar**.
 
    ![aa-04](assets/aa-04.png)
 

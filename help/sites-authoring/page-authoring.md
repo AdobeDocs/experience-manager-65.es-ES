@@ -2,7 +2,7 @@
 title: AEM Creación de páginas de contenido en el
 description: Las tareas implicadas al crear una página de contenido en Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -41,7 +41,7 @@ En la parte izquierda de una página editable se puede abrir un explorador desli
 En la parte izquierda de una página editable se puede abrir un explorador deslizante; desde aquí se pueden arrastrar recursos a la página; por ejemplo, para colocar recursos o crear vínculos a otras páginas.
 
 * **Barra de herramientas Componentes**
-Un solo clic o un doble toque lento mostrará la barra de herramientas adecuada (solo para la barra de herramientas de edición local y luego doble lento para la barra de herramientas completa).
+Un solo clic o un doble clic lento mostrará la barra de herramientas adecuada (solo para la barra de herramientas de edición local y luego doble lento para la barra de herramientas completa).
 
 * **[Diseño interactivo](/help/sites-authoring/responsive-layout.md)**
 Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable.

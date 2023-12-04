@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 15%
+source-wordcount: '2306'
+ht-degree: 12%
 
 ---
 
@@ -67,7 +67,7 @@ Se clonará el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y
 
    ![Tienda configurada con tema de Venia](../assets/customize-cif-components/venia-store-configured.png)
 
-## Creación del teaser de productos {#author-product-teaser}
+## Crear el teaser de productos {#author-product-teaser}
 
 El componente teaser de productos se amplía a través de este tutorial. Como primer paso, añada una instancia del teaser de productos a la página de inicio para comprender la funcionalidad de línea de base.
 
@@ -488,9 +488,9 @@ En este punto, la lógica de cuándo mostrar la variable **Respetuoso con el med
 
 AEM CIF Ha personalizado su primer componente de la. Descargue la [archivos de solución finalizados aquí](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
-## Desafío para una bonificación {#bonus-challenge}
+## Desafío de bonificación {#bonus-challenge}
 
-Revise la funcionalidad de **Nuevo** que ya se ha implementado en el teaser de productos. Intente añadir una casilla de verificación adicional para que los autores controlen cuándo se **Respetuoso con el medio ambiente** debe mostrarse el distintivo. Debe actualizar el cuadro de diálogo del componente en `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Revise la funcionalidad de **Nuevo** que ya se ha implementado en el teaser de productos. Intente añadir una casilla de verificación adicional para que los autores controlen cuándo se **Respetuoso con el medio ambiente** debe mostrarse el distintivo. Actualice el cuadro de diálogo del componente en `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![Nuevo desafío de implementación de distintivos](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

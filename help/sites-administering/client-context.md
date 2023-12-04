@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 40%
+source-wordcount: '632'
+ht-degree: 33%
 
 ---
 
@@ -65,15 +65,15 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    >[!NOTE]
    >
-   >Para salir del modo de anotación, pulse o haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
+   >Para salir del modo de anotación, haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
 
-1. Haga clic o toque el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
+1. Haga clic en el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
 
    >[!NOTE]
    >
-   >Para detener la adición de anotaciones (y volver a la vista), pulse o haga clic en el icono Cancelar (símbolo x en un círculo blanco) a la izquierda de la barra de herramientas superior.
+   >Para detener la adición de anotaciones (y volver a la visualización), haga clic en el icono Cancelar (símbolo x en un círculo blanco) a la izquierda de la barra de herramientas superior.
 
-1. Pulse o haga clic en el componente necesario (los componentes que se pueden anotar se resaltarán con un borde azul) para agregar la anotación y abrir el cuadro de diálogo:
+1. Haga clic en el componente requerido (los componentes que se pueden anotar se resaltarán con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -100,17 +100,17 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
 1. Cuando haya terminado de editar una anotación concreta, puede hacer lo siguiente:
 
-   * Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o eliminar la anotación.
+   * Haga clic en el marcador de texto para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o eliminar la anotación.
 
       * Los bocetos no se pueden eliminar independientemente de la anotación.
 
    * Cambiar la posición del marcador de texto.
-   * Tocar o hacer clic en una línea de un boceto para seleccionar el boceto y arrastrarlo a la posición deseada.
+   * Haga clic en una línea de un boceto para seleccionarlo y arrastrarlo a la posición deseada.
    * Mover o copiar un componente
 
       * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán y su posición en relación con el párrafo seguirá siendo la misma.
 
-1. Para salir del modo de anotación y volver al anterior, pulse o haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
+1. Para salir del modo de anotación y volver al anterior, haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
 
 >[!NOTE]
 >

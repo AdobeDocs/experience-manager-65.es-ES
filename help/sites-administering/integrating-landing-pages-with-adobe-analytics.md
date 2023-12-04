@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
-   <td>El destino al que se le redirige cuando hace clic en el vínculo </td>
+   <td>El destino al que se le redirige al hacer clic en el vínculo </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>

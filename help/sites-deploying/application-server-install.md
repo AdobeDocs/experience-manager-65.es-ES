@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Antes de una implementación, lea la [Descripción general](#general-description
 
 * Permita que los encabezados de autenticación básicos pasen:
 
-   * AEM Una forma de permitir que los usuarios se autentiquen es deshabilitar la seguridad administrativa global del servidor WebSphere®, para ello: vaya a Seguridad -> Seguridad global y desmarque la casilla de verificación Habilitar seguridad administrativa, guarde y reinicie el servidor.
+   * AEM Una forma de permitir que los usuarios se autentiquen es desactivar la seguridad administrativa global del servidor WebSphere®, para ello: vaya a Seguridad > Seguridad global y desmarque la casilla de verificación Habilitar seguridad administrativa, guarde y reinicie el servidor.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * AEM Si desea realizar la instalación utilizando la raíz de contexto = /, cambie la raíz de contexto de la aplicación web predeterminada existente.

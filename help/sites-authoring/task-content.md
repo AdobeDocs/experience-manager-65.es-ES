@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '586'
 ht-degree: 41%
 
 ---
@@ -52,7 +52,7 @@ Haga clic en el botón de los tres puntos de la parte inferior derecha del mosai
 
 #### Detalles de la tarea {#task-details}
 
-Para obtener más información sobre una tarea determinada, en la bandeja de entrada, toque o haga clic en la tarea para seleccionarla y, a continuación, toque o haga clic en **Abrir** en la barra de herramientas.
+Para obtener más información sobre una tarea determinada, en la bandeja de entrada, haga clic en la tarea para seleccionarla y, a continuación, haga clic en **Abrir** en la barra de herramientas.
 
 ![Detalles de tarea](assets/project-task-detail.png)
 
@@ -70,12 +70,12 @@ Puede agregar nuevas tareas a los proyectos. A continuación, estas tareas apare
 Para añadir una tarea, haga lo siguiente:
 
 1. En el proyecto, busque **Tareas** mosaico
-1. Toque o haga clic en las comillas angulares descendentes en la parte superior derecha del mosaico y seleccione **Crear tarea**.
+1. Haga clic en las comillas angulares hacia abajo en la parte superior derecha del mosaico y seleccione **Crear tarea**.
 1. En el **Agregar tarea** , proporcione detalles de la tarea como prioridad, usuario asignado y fecha de vencimiento.
 
    ![Agregar una tarea](assets/project-add-task.png)
 
-1. Haga clic o pulse **Enviar**.
+1. Haga clic en **Enviar**.
 
 ## Trabajar con tareas en la bandeja de entrada {#working-with-tasks-in-the-inbox}
 

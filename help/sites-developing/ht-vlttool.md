@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 2%
+source-wordcount: '2687'
+ht-degree: 1%
 
 ---
 
@@ -313,7 +313,7 @@ En la tabla siguiente se describen todos los comandos VLT disponibles. Consulte 
 | Comando | Comando abreviado | Descripción |
 | `export` |  | Exporta desde un repositorio JCR (sistema de archivos Vault) al sistema de archivos local sin archivos de control. |
 | `import` |  | Importa un sistema de archivos local a un repositorio JCR (sistema de archivos Vault). |
-| `checkout` | `co` | Extrae un sistema de archivos Vault. Utilice esto para un repositorio JCR inicial al sistema de archivos local. (Nota: Primero debe retirar el repositorio en subversion). |
+| `checkout` | `co` | Extrae un sistema de archivos Vault. Utilice esto para un repositorio JCR inicial al sistema de archivos local. (Nota: Primero retire el repositorio en subversion). |
 | `analyze` |  | Analiza los paquetes. |
 | `status` | `st` | Imprime el estado de los archivos y directorios de copia de trabajo. |
 | `update` | `up` | Importa cambios del repositorio a la copia de trabajo. |

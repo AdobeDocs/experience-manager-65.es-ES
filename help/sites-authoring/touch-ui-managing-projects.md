@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 22%
+source-wordcount: '964'
+ht-degree: 18%
 
 ---
 
@@ -34,16 +34,16 @@ La forma más sencilla de hacerlo es dar el **projects-users** acceso de lectura
 
 Siga estos pasos para crear un proyecto.
 
-1. En el **Proyectos** consola, toque o haga clic en **Crear** para abrir **Crear proyecto** asistente.
-1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información sobre las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
+1. En el **Proyectos** consola, haga clic en **Crear** para abrir **Crear proyecto** asistente.
+1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información sobre las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
 
    ![Asistente de Creación de proyectos](assets/create-project-wizard.png)
 
-1. Defina el **Título** y **Descripción** y añada un **Miniatura** imagen si es necesario. También puede añadir o eliminar usuarios y a qué grupo pertenecen.
+1. Defina el **Título** y **Descripción** y añada un **Miniatura** imagen si es necesario. También puede agregar o eliminar usuarios y a qué grupo pertenecen.
 
    ![Paso Propiedades del asistente](assets/create-project-wizard-properties.png)
 
-1. Toque o haga clic en **Crear**. La confirmación le solicitará si desea abrir el nuevo proyecto o volver a la consola.
+1. Haga clic en **Crear**. La confirmación le solicitará si desea abrir el nuevo proyecto o volver a la consola.
 
 El procedimiento para crear un proyecto es el mismo para todas las plantillas de proyecto. La diferencia entre los tipos de proyectos se relaciona con los proyectos disponibles [funciones de usuario](/help/sites-authoring/projects.md) y [flujos de trabajo.](/help/sites-authoring/projects-with-workflows.md)
 
@@ -54,11 +54,11 @@ Los proyectos permiten agrupar recursos en una entidad para administrarlos en su
 Para asociar recursos al proyecto, haga lo siguiente:
 
 1. Abra el proyecto desde la consola **Proyectos**.
-1. Pulse o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular a su proyecto. Puede seleccionar varios tipos de mosaicos.
+1. Clic **Añadir mosaico** y seleccione el mosaico que desea vincular a su proyecto. Puede seleccionar varios tipos de mosaicos.
 
    ![Agregar mosaico](assets/project-add-tile.png)
 
-1. Toque o haga clic en **Crear**. El recurso está vinculado al proyecto y, a partir de ahora, podrá acceder a él desde el proyecto.
+1. Haga clic en **Crear**. El recurso está vinculado al proyecto y, a partir de ahora, podrá acceder a él desde el proyecto.
 
 ### Adición de elementos a un mosaico {#adding-items-to-a-tile}
 
@@ -84,7 +84,7 @@ Es posible que desee ver qué elementos se incluyen en un mosaico actual o modif
 
 Para abrir un mosaico para poder ver o modificar elementos, haga lo siguiente:
 
-1. Toque o haga clic en el icono de elipses en la parte inferior derecha del mosaico.
+1. Haga clic en el icono de elipses en la parte inferior derecha del mosaico.
 
    ![Mosaico Tareas](assets/project-tile-tasks.png)
 
@@ -96,7 +96,7 @@ Para abrir un mosaico para poder ver o modificar elementos, haga lo siguiente:
 
 La cronología del proyecto proporciona información sobre la última vez que se utilizaron los recursos del proyecto. Para ver la cronología del proyecto, siga estos pasos.
 
-1. En el **Proyectos** consola, toque o haga clic en **Cronología** en el selector de raíl en la parte superior izquierda de la consola.
+1. En el **Proyectos** consola, haga clic en **Cronología** en el selector de raíl en la parte superior izquierda de la consola.
    ![Selección del modo de cronología](assets/projects-timeline-rail.png)
 2. En la consola, seleccione el proyecto cuya cronología desee ver.
    ![Vista de cronología del proyecto](assets/project-timeline-view.png)
@@ -119,7 +119,7 @@ Hay varias opciones disponibles para ayudarle a organizar sus proyectos con el f
 
 Puede crear carpetas en **Proyectos** para agrupar y organizar proyectos similares.
 
-1. En el **Proyectos** pulse o haga clic en la consola **Crear** y luego **Crear carpeta**.
+1. En el **Proyectos** clic en consola **Crear** y luego **Crear carpeta**.
 
    ![Crear carpeta](assets/project-create-folder.png)
 
@@ -141,7 +141,7 @@ Para que un proyecto quede inactivo, siga estos pasos.
 
    ![Selector de estado del proyecto en la ventana de propiedades](assets/project-status.png)
 
-1. Haga clic o pulse **Guardar y cerrar** para guardar los cambios.
+1. Clic **Guardar y cerrar** para guardar los cambios.
 
 ### Eliminación de proyectos {#deleting-a-project}
 
@@ -149,13 +149,13 @@ Siga estos pasos para eliminar un proyecto.
 
 1. Vaya al nivel superior de la **Proyectos** consola.
 1. Selección del proyecto en la consola.
-1. Haga clic o pulse **Eliminar** en la barra de herramientas.
+1. Clic **Eliminar** en la barra de herramientas.
 1. AEM Se pueden eliminar o modificar los datos de proyecto asociados al eliminar el proyecto. Seleccione las opciones que necesite en la **Eliminar proyecto** diálogo.
    * Eliminar los grupos y las funciones de proyecto
    * Eliminar carpeta de recursos del proyecto
    * Completar los flujos de trabajo del proyecto
 
    ![Opciones de eliminación de proyectos](assets/project-delete-options.png)
-1. Haga clic o pulse **Eliminar** para eliminar el proyecto con las opciones seleccionadas.
+1. Clic **Eliminar** para eliminar el proyecto con las opciones seleccionadas.
 
 Para obtener más información sobre los grupos creados automáticamente por proyectos, consulte [Creación automática de grupos](/help/sites-authoring/projects.md#auto-group-creation) para obtener más información.

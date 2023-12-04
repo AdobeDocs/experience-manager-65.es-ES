@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3478'
 ht-degree: 2%
 
 ---
@@ -176,7 +176,7 @@ Tenga en cuenta que cada subgrupo de datos contiene cuatro elementos XML que se 
 * Cantidad de artículos
 * Precio unitario
 
-El nombre del elemento XML principal de un subgrupo de datos debe coincidir con el nombre del subformulario que se encuentra en el diseño de formulario. Por ejemplo, en el diagrama anterior, observe que el nombre del elemento XML principal del subgrupo de datos es `detail`. Corresponde al nombre del subformulario que se encuentra en el diseño de formulario en el que se basa el formulario de pedido de compra. Si el nombre del elemento XML principal del subgrupo de datos y el subformulario no coinciden, no se rellena previamente un formulario del lado del servidor.
+El nombre del elemento XML principal de un subgrupo de datos debe coincidir con el nombre del subformulario que se encuentra en el diseño de formulario. Por ejemplo, en el diagrama anterior, observe que el nombre del elemento XML principal del subgrupo de datos es `detail`. Corresponde al nombre del subformulario que se encuentra en el diseño de formulario en el que se basa el formulario de pedido de compra. Si el nombre del elemento XML principal del subgrupo de datos y el subformulario no coinciden, no se rellenará previamente un formulario del lado del servidor.
 
 Cada subgrupo de datos debe contener elementos XML que coincidan con los nombres de campo del subformulario. El `detail` El subformulario del diseño de formulario contiene los campos siguientes:
 
@@ -212,7 +212,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Crear una fuente de datos XML en memoria**
 
-Puede utilizar `org.w3c.dom` clases para crear un origen de datos XML en memoria para rellenar previamente un formulario con un diseño variable. Debe colocar los datos en una fuente de datos XML que se ajuste al formulario. Para obtener información sobre la relación entre un formulario con un diseño variable y la fuente de datos XML, consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).
+Puede utilizar `org.w3c.dom` clases para crear un origen de datos XML en memoria para rellenar previamente un formulario con un diseño variable. Coloque los datos en una fuente de datos XML que se ajuste al formulario. Para obtener información sobre la relación entre un formulario con un diseño variable y la fuente de datos XML, consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).
 
 **Conversión de la fuente de datos XML**
 
@@ -248,7 +248,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
 1. Crear una fuente de datos XML en memoria
 
-   * Crear un Java `DocumentBuilderFactory` llamando a la función `DocumentBuilderFactory` class&quot; `newInstance` método.
+   * Crear un Java `DocumentBuilderFactory` llamando a la función `DocumentBuilderFactory` class&#39; `newInstance` método.
    * Crear un Java `DocumentBuilder` llamando a la función `DocumentBuilderFactory` del objeto `newDocumentBuilder` método.
    * Llame a `DocumentBuilder` del objeto `newDocument` método para crear una instancia de `org.w3c.dom.Document` objeto.
    * Cree el elemento raíz de la fuente de datos XML invocando el `org.w3c.dom.Document` del objeto `createElement` método. Esto crea un `Element` que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, anexe el elemento raíz al documento llamando a la función `Document` del objeto `appendChild` y pase el objeto del elemento raíz como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
@@ -259,7 +259,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Cree un elemento secundario que pertenezca al elemento de encabezado llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento del encabezado llamando al elemento del encabezado `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Cree un elemento secundario que pertenezca al elemento de encabezado llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento header llamando al método `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
@@ -269,7 +269,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Cree un elemento secundario que pertenezca al elemento de detalle llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento de detalle llamando al elemento de detalle `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Cree un elemento secundario que pertenezca al elemento de detalle llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento de detalle llamando al del elemento de detalle `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -278,7 +278,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
 1. Conversión de la fuente de datos XML
 
-   * Crear un `javax.xml.transform.Transformer` invocando el objeto de `javax.xml.transform.Transformer` estático del objeto `newInstance` método.
+   * Crear un `javax.xml.transform.Transformer` invocando el objeto de `javax.xml.transform.Transformer` objeto estático `newInstance` método.
    * Crear un `Transformer` invocando el objeto de `TransformerFactory` del objeto `newTransformer` método.
    * Crear un `ByteArrayOutputStream` mediante su constructor.
    * Crear un `javax.xml.transform.dom.DOMSource` usando su constructor y pasando el objeto `org.w3c.dom.Document` objeto creado en el paso 1.
@@ -301,7 +301,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
    El `renderPDFForm` El método devuelve un valor `FormsResult` que contiene un flujo de datos de formulario que debe escribirse en el explorador web cliente.
 
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para enviar un flujo de datos de formulario al explorador web del cliente.
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
    * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
    * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invoque el `javax.servlet.ServletOutputStream` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
@@ -325,7 +325,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
 1. Crear una fuente de datos XML en memoria
 
-   * Crear un Java `DocumentBuilderFactory` llamando a la función `DocumentBuilderFactory` class&quot; `newInstance` método.
+   * Crear un Java `DocumentBuilderFactory` llamando a la función `DocumentBuilderFactory` class&#39; `newInstance` método.
    * Crear un Java `DocumentBuilder` llamando a la función `DocumentBuilderFactory` del objeto `newDocumentBuilder` método.
    * Llame a `DocumentBuilder` del objeto `newDocument` método para crear una instancia de `org.w3c.dom.Document` objeto.
    * Cree el elemento raíz de la fuente de datos XML invocando el `org.w3c.dom.Document` del objeto `createElement` método. Esto crea un `Element` que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, anexe el elemento raíz al documento llamando a la función `Document` del objeto `appendChild` y pase el objeto del elemento raíz como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
@@ -336,7 +336,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Cree un elemento secundario que pertenezca al elemento de encabezado llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento del encabezado llamando al elemento del encabezado `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Cree un elemento secundario que pertenezca al elemento de encabezado llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento header llamando al método `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
@@ -345,7 +345,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Cree un elemento secundario que pertenezca al elemento de detalle llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento de detalle llamando al elemento de detalle `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Cree un elemento secundario que pertenezca al elemento de detalle llamando a la variable `Document` del objeto `createElement` y pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `appendChild` y pase el método `Document` del objeto `createTextNode` como argumento. Especifique un valor de cadena que aparezca como el valor del elemento secundario. Finalmente, anexe el elemento secundario al elemento de detalle llamando al del elemento de detalle `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
@@ -354,7 +354,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
 1. Conversión de la fuente de datos XML
 
-   * Crear un `javax.xml.transform.Transformer` invocando el objeto de `javax.xml.transform.Transformer` estático del objeto `newInstance` método.
+   * Crear un `javax.xml.transform.Transformer` invocando el objeto de `javax.xml.transform.Transformer` objeto estático `newInstance` método.
    * Crear un `Transformer` invocando el objeto de `TransformerFactory` del objeto `newTransformer` método.
    * Crear un `ByteArrayOutputStream` mediante su constructor.
    * Crear un `javax.xml.transform.dom.DOMSource` usando su constructor y pasando el objeto `org.w3c.dom.Document` objeto creado en el paso 1.

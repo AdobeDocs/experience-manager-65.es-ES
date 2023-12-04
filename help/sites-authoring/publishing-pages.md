@@ -2,10 +2,10 @@
 title: Publicación de páginas de contenido
 description: Obtenga información sobre cómo publicar páginas de contenido en Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 70%
+source-wordcount: '1673'
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,7 @@ En la consola Sitios hay dos opciones para la publicación:
 
 Para publicar una página con Publicación rápida:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Publicación rápida**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en **Publicación rápida** botón.
 
    ![pp-02](assets/pp-02.png)
 
@@ -111,11 +111,11 @@ Para publicar una página con Publicación rápida:
 
 #### Administrar publicación     {#manage-publication}
 
-**Administrar publicación** ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de la opción de publicar en una fecha posterior.
+**Administrar publicación** ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en **Administrar publicación** botón.
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -215,7 +215,7 @@ Si desea cancelar la publicación de una página que está editando, seleccione 
 
 Al igual que [utiliza la opción Administrar publicación para publicar](/help/sites-authoring/publishing-pages.md#manage-publication), puede usarla para cancelar la publicación.
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en **Administrar publicación** botón.
 1. Se inicia el asistente **Administrar publicación**. En el primer paso, **Opciones**, seleccione **Cancelar publicación** en lugar de la opción predeterminada **Publicar**.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)

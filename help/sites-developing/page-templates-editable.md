@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 6%
+source-wordcount: '3186'
+ht-degree: 4%
 
 ---
 
@@ -72,7 +72,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * La estructura permite definir los componentes y el contenido de la plantilla.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
 
-      * Si está creando una plantilla en una carpeta personalizada fuera de `We.Retail` Contenido de ejemplo, puede elegir Componentes de base o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es).
+      * Si está creando una plantilla en una carpeta personalizada fuera de `We.Retail` Contenido de ejemplo, puede elegir Componentes de base o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
 
    * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
    * Los componentes se pueden volver a desbloquear y bloquear para que pueda definir el contenido inicial.
@@ -105,7 +105,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    **Diseño**
 
    * Puede definir el diseño de la plantilla para una amplia gama de dispositivos.
-   * El diseño interactivo para las plantillas funciona tal como lo hace para la creación de páginas.
+   * El diseño interactivo para las plantillas funciona igual que para la creación de páginas.
 
    Para obtener más información sobre cómo define el diseño de la plantilla un autor de plantillas, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
@@ -216,7 +216,7 @@ Para crear una carpeta, haga lo siguiente:
 
 ### Uso del explorador de configuración {#using-the-configuration-browser}
 
-1. Ir a **Navegación global** -> **Herramientas** > **Explorador de configuración**.
+1. Ir a **Navegación global** > **Herramientas** > **Explorador de configuración**.
 
    Las carpetas existentes se muestran a la izquierda, incluida la **global** carpeta.
 
@@ -262,7 +262,7 @@ La siguiente tabla detalla los permisos necesarios para editar plantillas.
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
-   <td>Template Autores<br /> </td>
+   <td>Autores de plantillas<br /> </td>
    <td>leer, escribir, replicar</td>
    <td>Autores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en sitios específicos <code>/conf</code> espacio</td>
   </tr>
@@ -322,7 +322,7 @@ No almacenar plantillas en `/conf/global`. Sin embargo, para algunas instalacion
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Template Autores</td>
+   <td>Autores de plantillas</td>
    <td>leer, escribir, replicar</td>
    <td>Autores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en <code>/conf/global</code></td>
   </tr>

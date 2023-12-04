@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 88%
+source-wordcount: '1937'
+ht-degree: 75%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 88%
 
 La consola Actividades permite crear, organizar y administrar las [actividades](/help/sites-authoring/personalization.md#activities) de marketing de las marcas.
 
-* Añadir marcas.
-* Añadir y configurar las actividades de cada marca.
+* Agregar marcas.
+* Para cada marca, añada y configure actividades.
 * Administrar actividades.
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 
 >[!CAUTION]
 >
->Debe asegurar el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>Asegure el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
 >Consulte [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) para obtener información detallada.
 
@@ -64,14 +64,14 @@ Cree una marca para la que desee administrar actividades de marketing.
 
 Cuando cree una marca mediante la consola Actividades, esta también aparecerá en la [consola Ofertas](/help/sites-authoring/offerlib.md), donde podrá crear ofertas para las experiencias de las actividades.
 
-1. En la consola de navegación, haga clic o pulse **Personalización**. Haga clic o pulse en **Actividades**.
+1. En la consola de navegación, haga clic en **Personalización**. Clic **Actividades**.
 
    ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
-1. En la consola de actividades, haga clic o pulse en **Crear** y, a continuación, **Crear marca**.
-1. Seleccione la plantilla Página y, a continuación, haga clic o pulse en **Siguiente**.
+1. En la consola Actividades, haga clic en **Crear** entonces **Crear marca**.
+1. Seleccione la plantilla de marca y haga clic en **Siguiente**.
 1. Escriba un título para la marca tal como desea que aparezca en las consolas de actividades y de ofertas. De forma opcional, escriba o seleccione una o varias etiquetas para asociarlas a la marca.
-1. Haga clic o pulse **Crear**. La marca aparece en la consola de actividades.
+1. Haga clic en **Crear**. La marca aparece en la consola de actividades.
 
 ## Añadir/editar una actividad mediante la consola de actividades {#adding-editing-an-activity-using-the-activities-console}
 
@@ -97,8 +97,8 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 
 Para añadir una actividad, haga lo siguiente:
 
-1. Toque o haga clic en la marca para la que está creando la actividad, o haga clic o toque **Crear** y luego **Crear actividad**. Si está editando, seleccione la actividad y toque o haga clic en **Editar**.
-1. Proporcione la información siguiente y, a continuación, haga clic o pulse **Siguiente**:
+1. Haga clic en la marca para la que está creando la actividad y luego haga clic en **Crear** y luego **Crear actividad**. Si está editando, seleccione la actividad y haga clic en **Editar**.
+1. Proporcione la siguiente información y haga clic en **Siguiente**:
 
    * Un nombre para la actividad.
    * El motor de segmentación que se va a utilizar. ContextHub (AEM) está seleccionado de forma predeterminada. Si necesita utilizar Adobe Target, cree la actividad en el editor de contenido de destino.
@@ -106,35 +106,35 @@ Para añadir una actividad, haga lo siguiente:
    * (Opcional) El objetivo o la descripción de la actividad.
    * Seleccione el tipo de actividad.
 
-1. Agregue una o varias experiencias a la actividad. Pulse o haga clic en **Agregar experiencia**.
+1. Agregue una o varias experiencias a la actividad. Clic **Añadir experiencia**.
 1. Si utiliza la segmentación de AEM o la segmentación de experiencias de Adobe Target:
 
-   1. Toque o haga clic en **Seleccionar audiencia **y seleccione el segmento de destino de la experiencia.
-   1. Haga clic o pulse **Añadir experiencia**, escriba un nombre y haga clic o pulse **Aceptar**.
+   1. Haga clic en **Seleccionar audiencia **y seleccione el segmento de destino de la experiencia.
+   1. Clic **Añadir experiencia**, escriba un nombre y haga clic en **OK**.
 
-   1. Haga clic o pulse **Siguiente**.
+   1. Haga clic en **Siguiente**.
 
    Si utiliza las pruebas A/B de Adobe Target:
 
-   1. Toque o haga clic en el lápiz del cuadro de públicos para seleccionar uno.
-   1. Haga clic o pulse **Añadir experiencia**, escriba un nombre y haga clic o pulse **Aceptar**.
+   1. Haga clic en el lápiz del cuadro de audiencias para seleccionar una audiencia.
+   1. Clic **Añadir experiencia**, escriba un nombre y haga clic en **OK**.
 
    1. Introduzca el porcentaje de tráfico que muestra cada experiencia.
-   1. Haga clic o pulse **Siguiente**.
+   1. Haga clic en **Siguiente**.
 
 1. Para especificar el momento en que la actividad comenzará, use el menú desplegable **Inicio** para seleccionar uno de los valores siguientes:
 
    * **Cuando se activa:** la actividad se inicia cuando se activa la página con el contenido de destino.
-   * **Fecha y hora especificadas**: una hora determinada. Cuando seleccione esta opción, pulse o haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea iniciar la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Cuando seleccione esta opción, haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea iniciar la actividad.
 
 1. Para especificar cuándo finaliza la actividad, utilice el menú desplegable Fin para seleccionar uno de los siguientes valores:
 
    * **Al desactivar**: la actividad finaliza cuando la página que contiene el contenido de destino se desactiva.
-   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Cuando seleccione esta opción, haga clic en el icono de calendario, seleccione una fecha y especifique la hora a la que desea finalizar la actividad.
 
 1. Para especificar una prioridad para la actividad, utilice el regulador para seleccionar **Baja**, **Normal** o **Alta**.
-1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la actividad y definición de objetivos](/help/sites-authoring/content-targeting-touch.md) para obtener más información acerca de las métricas de éxito disponibles. Debe seleccionar por lo menos un objetivo.
-1. Haga clic o pulse **Guardar**.
+1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la actividad y definición de objetivos](/help/sites-authoring/content-targeting-touch.md) para obtener más información acerca de las métricas de éxito disponibles. Seleccione al menos un objetivo.
+1. Haga clic en **Guardar**.
 
    >[!NOTE]
    >
@@ -150,12 +150,12 @@ Debe publicar actividades para que estén disponibles. Por el contrario, es posi
 
 Para publicar o cancelar la publicación de actividades, haga lo siguiente:
 
-1. Haga clic o pulse en la marca y, a continuación, el área que contiene la actividad que quiera publicar o de la que quiera cancelar la publicación.
-1. Toque o haga clic en el icono situado junto a la actividad o actividades que desea publicar o cuya publicación desea cancelar.
+1. Haga clic en la marca y, a continuación, en el área que contiene la actividad que desea publicar o cancelar la publicación.
+1. Haga clic en el icono situado junto a la actividad o actividades que desee publicar o cancelar la publicación.
 
    ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. Para publicar, pulse o haga clic en **Publicar**. Para cancelar la publicación, pulse o haga clic en **Cancelar publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
+1. Para publicar, haga clic en **Publish**. Para cancelar la publicación, haga clic en **Cancelar publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
 
 ## Actividades en las instancias de autor y publicación {#activities-on-author-and-publish-instances}
 
@@ -170,13 +170,13 @@ Puede ver el rendimiento de cualquier actividad de Adobe Target (XT o A/B). Si u
 
 Para ver el rendimiento de las actividades y convertirlas en experiencias ganadoras:
 
-1. En **Personalización**, haga clic o pulse en **Actividades** para ir a la consola **Actividades**.
-1. Haga clic o pulse la marca de la cual quiera ver actividades.
-1. Seleccione la actividad y pulse o haga clic en **Ver propiedades**, seleccione la pestaña **Informes** y haga clic en la actividad para la que desee ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
+1. Entrada **Personalización**, haga clic en **Actividades** para ir al **Actividades** consola.
+1. Haga clic en la marca de la que desee ver actividades.
+1. Seleccione la actividad y haga clic en **Ver propiedades** y haga clic en **Informes** y seleccione la actividad para la que desea ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Haga clic o pulse en el vínculo **Ganador de push** para que esa experiencia sea la experiencia predeterminada.
+1. Haga clic en **Insertar ganador** vínculo para insertar esa experiencia como la experiencia predeterminada.
 
    Convertir al ganador hace lo siguiente:
 
@@ -187,7 +187,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 
    Una experiencia ganadora es la que más crece en los informes, y está basada en la tasa de conversión.
 
-1. Haga clic o pulse en **Sí** para confirmar que desea convertir el ganador, deshabilitar la experiencia actual y reemplazarla por el contenido de experiencia ganadora.
+1. Clic **Sí** para confirmar que desea convertir al ganador, deshabilite la experiencia actual y reemplácela por el contenido de la experiencia ganadora.
 
 ## Sincronización de actividades con Adobe Target {#synchronizing-activities-with-adobe-target}
 

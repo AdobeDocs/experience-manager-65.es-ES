@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 18%
+source-wordcount: '1829'
+ht-degree: 16%
 
 ---
 
@@ -104,7 +104,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 1. Abra el [Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#componentplaceholder) le muestra dónde se colocará el componente.
+1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#componentplaceholder) muestra dónde se colocará el componente.
 
    Se creará un componente, adecuado para el tipo de recurso, en la ubicación requerida; contendrá el recurso seleccionado.
 
@@ -301,4 +301,4 @@ Los campos de formulario que representan los componentes de formulario no están
 
 >[!NOTE]
 >
->Se necesitan permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.
+>Se requieren permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.

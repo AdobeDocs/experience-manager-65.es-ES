@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 86%
+source-wordcount: '1644'
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ El Editor de SPA ofrece una solución completa para admitir las SPA dentro de AE
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## Introducción {#introduction}
 
@@ -51,7 +51,7 @@ Si el componente de página de las SPA hereda del componente principal de págin
 * O agregue las categorías utilizando `customfooterlibs.html`.
 
 Para cada recurso del modelo exportado, las SPA se asignarán a un componente real que realizará la 
-renderización. El modelo, representado como JSON, se representa mediante las asignaciones de componentes dentro de un contenedor.
+renderización. El modelo, representado como JSON, se procesa a continuación utilizando las asignaciones de componentes dentro de un contenedor.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
@@ -79,7 +79,7 @@ Puede comprender el flujo de la interacción entre las SPA y el AEM pensando en 
 
 Teniendo en cuenta los elementos clave del Editor de SPA, el flujo de trabajo de alto nivel de edición de una SPA dentro de AEM aparece para el autor de la siguiente manera.
 
-![untitled1](assets/untitled1.gif)
+![sin título1](assets/untitled1.gif)
 
 1. Se carga el Editor de SPA.
 1. La SPA se carga en un fotograma independiente.
@@ -172,7 +172,7 @@ Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de S
 
 ### Uso de varios selectores {#multiple-selectors}
 
-Se pueden definir y utilizar selectores personalizados adicionales como parte de un SPA desarrollado para el SDK de SPA de AEM. Sin embargo, esta compatibilidad requiere que el selector `model` sea el primero y la extensión sea `.json`[, según lo requiera el exportador JSON.](json-exporter-components.md#multiple-selectors)
+Se pueden definir y utilizar selectores personalizados adicionales como parte de un SPA desarrollado para el SDK de SPA de AEM. Sin embargo, esta compatibilidad requiere que `model` selector sea el primer selector y la extensión sea `.json` as [requerido por el exportador JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Requisitos del editor de texto {#text-editor-requirements}
 

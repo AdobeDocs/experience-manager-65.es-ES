@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 3%
+source-wordcount: '2148'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ Si lo desea, la instancia de autor puede utilizar las bibliotecas de producción
 
 AEM Cuando aloja las bibliotecas de Dynamic Tag Management, puede utilizar el servicio de enlace de implementación de Dynamic Tag Management AEM para insertar automáticamente las actualizaciones de la biblioteca en el. Las actualizaciones de la biblioteca se insertan cuando se realizan cambios en las bibliotecas, como cuando se editan las propiedades web de Dynamic Tag Management.
 
-Para utilizar el vínculo de implementación, Dynamic Tag Management AEM debe poder conectarse a la instancia de implementación que aloja las bibliotecas de. Usted debe [AEM habilitar el acceso a la](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) para los servidores de Dynamic Tag Management.
+Para utilizar el vínculo de implementación, Dynamic Tag Management AEM debe poder conectarse a la instancia de implementación que aloja las bibliotecas de. [AEM Habilitar el acceso a la](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) para los servidores de Dynamic Tag Management.
 
 AEM AEM En algunas circunstancias, no se puede acceder a los servidores de seguridad, por ejemplo, cuando se encuentran detrás de un servidor de seguridad, por ejemplo, cuando se encuentran en el mismo lugar, se puede acceder a los. AEM En estos casos, puede utilizar la opción del importador de encuestas de para recuperar periódicamente las bibliotecas. Una expresión de trabajo cron dicta la programación de las descargas de biblioteca.
 

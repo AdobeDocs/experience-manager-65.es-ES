@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Después de crear segmentos, una marca, una campaña y una experiencia, puede cr
 
 Para crear una newsletter con contenido de destino:
 
-1. Cree una newsletter con contenido de destino: debajo de Campañas de correo electrónico en Geometrixx Outdoors, toque o haga clic en **Crear** > **Página** y seleccione una de las plantillas de correo de Adobe Campaign.
+1. Cree una newsletter con contenido de destino: Debajo de Campañas de correo electrónico en Geometrixx Outdoors, haga clic en **Crear** > **Página** y seleccione una de las plantillas de correo de Adobe Campaign.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -86,7 +86,7 @@ Para crear una newsletter con contenido de destino:
 
    >[!NOTE]
    >
-   >AEM De forma predeterminada, los ejemplos de correo electrónico incluidos con el uso de Adobe Campaign como motor de segmentación de datos utilizan el. Para los boletines personalizados, es posible que tenga que seleccionar Adobe Campaign como motor de segmentación. Al segmentar, toque o haga clic en + en la barra de herramientas, introduzca un título para la nueva actividad y seleccione **Adobe Campaign** como motor de segmentación.
+   >AEM De forma predeterminada, los ejemplos de correo electrónico incluidos con el uso de Adobe Campaign como motor de segmentación de datos utilizan el. Para los boletines personalizados, es posible que tenga que seleccionar Adobe Campaign como motor de segmentación. Cuando establezca el objetivo, haga clic en + en la barra de herramientas, introduzca un título para la nueva actividad y seleccione **Adobe Campaign** como motor de segmentación.
 
 1. Clic **Predeterminado** y luego el componente Texto y personalización que agregó, y verá la diana con una flecha en ella. Haga clic en el icono para orientar este componente.
 

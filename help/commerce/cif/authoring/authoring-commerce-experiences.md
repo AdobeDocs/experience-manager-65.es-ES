@@ -2,10 +2,10 @@
 title: Creación de experiencias comerciales
 description: CIF El complemento amplía la creación de Adobe Experience Manager con capacidades específicas del comercio.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -85,7 +85,7 @@ Si el editor universal reconoce productos 1:n en una página, el panel lateral m
 
 AEM El modo Deformación de tiempo del editor permite a los autores obtener una vista previa y examinar una experiencia con datos de catálogo de productos clasificados en función de la fecha de Deformación de tiempo.
 
-![Deformación de tiempo  ](/help/commerce/cif/assets/authoring/timewarp.png)
+![Deformación de tiempo](/help/commerce/cif/assets/authoring/timewarp.png)
 
 Los componentes mostrarán un indicador visual si la fecha utilizada está ensayada.
 

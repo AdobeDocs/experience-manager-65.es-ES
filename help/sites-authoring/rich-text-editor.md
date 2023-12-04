@@ -1,29 +1,29 @@
 ---
 title: Uso del editor de texto enriquecido para crear contenido
-description: Uso del editor de texto enriquecido para crear contenido en Adobe Experience Manager 6.5.
+description: Uso del Editor de texto enriquecido para crear contenido en Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 46%
+source-wordcount: '264'
+ht-degree: 32%
 
 ---
 
 # Uso del editor de texto enriquecido para crear contenido {#use-rich-text-editor-to-author-content}
 
-El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes., incluidos:
+El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de varios componentes, entre los que se incluyen:
 
 * Texto
 * Imagen de texto
 * Tabla
 
-## Edición local {#in-place-editing}
+## Edición in situ {#in-place-editing}
 
-Si se selecciona un componente basado en texto con un solo pulse o clic, se muestra la [barra de herramientas de componentes](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), como con cualquier otro componente.
+Si se selecciona un componente basado en texto con un solo clic, se muestra el [barra de herramientas de componentes](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) como con cualquier componente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo selecciona con un doble pulse o doble clic lento, se abre la edición in-situ, que tiene su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
+Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo selecciona con un doble clic lento, se abre la edición in-situ, que tiene su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

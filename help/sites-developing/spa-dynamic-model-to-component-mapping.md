@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ SPA En este documento se describe cómo se produce la asignación de modelos din
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## Módulo de asignación de componentes {#componentmapping-module}
 

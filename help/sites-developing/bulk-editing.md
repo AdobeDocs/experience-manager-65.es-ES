@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 5%
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 Debido a la posibilidad de que existan diferentes valores, las propiedades de página no están habilitadas para la edición por lotes de forma predeterminada. Deben permitirse explícitamente (habilitarse). Al definir las propiedades de página para que estén disponibles para la edición masiva, debe tener en cuenta determinadas implicaciones, como:
 
-* Algunos campos suelen ser únicos; por ejemplo, un título de página. Debe decidir si es significativo habilitar estos campos para la edición masiva, cuando se aplica un valor.
+* Algunos campos suelen ser únicos; por ejemplo, un título de página. Decida si es relevante habilitar estos campos para la edición masiva, cuando se aplicará un valor.
 * Algunos campos pueden tener varios valores; esto necesita una representación significativa al procesar.
 
   Por ejemplo, una casilla de verificación que indique &quot;Listo para publicación&quot;. Esto puede tener varios valores antes de la edición por lotes (por ejemplo, listo, en revisión o en curso).

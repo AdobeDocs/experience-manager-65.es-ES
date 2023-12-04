@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 2%
+source-wordcount: '1248'
+ht-degree: 1%
 
 ---
 
@@ -94,7 +94,7 @@ Según el formulario de registro, es posible que el visitante tenga información
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Para ver los detalles de su perfil, haga clic en **Mi perfil** en la esquina superior derecha de cualquier página; por ejemplo, con la etiqueta `admin` cuenta:
+Para ver los detalles del perfil, haga clic en **Mi perfil** en la esquina superior derecha de cualquier página; por ejemplo, con la etiqueta `admin` cuenta:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Puede ver otro perfil con la variable [Client Context](/help/sites-administering/client-context.md) (en el entorno de creación y con privilegios suficientes):

@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 30%
+source-wordcount: '362'
+ht-degree: 24%
 
 ---
 
@@ -23,7 +23,7 @@ El [ContextHub](/help/sites-developing/contexthub.md) La barra de herramientas d
 
 La barra de herramientas consta de una serie de modos de interfaz de usuario que contienen uno o más módulos de interfaz de usuario.
 
-* Los modos de interfaz de usuario son iconos que aparecen en la parte izquierda de la barra de herramientas. Al tocar o hacer clic en un icono, la barra de herramientas muestra los módulos de interfaz de usuario que contiene.
+* Los modos de interfaz de usuario son iconos que aparecen en la parte izquierda de la barra de herramientas. Al hacer clic en un icono, la barra de herramientas muestra los módulos de interfaz de usuario que contiene.
 * Los módulos de IU muestran datos de uno o más almacenes de ContextHub. Algunos módulos de IU también permiten manipular los datos de almacenamiento.
 
 ContextHub instala varios modos de interfaz de usuario y módulos de IU. Es posible que el administrador tenga [ContextHub configurado](/help/sites-developing/ch-configuring.md) para mostrar diferentes.
@@ -36,11 +36,11 @@ La barra de herramientas de ContextHub está disponible en el modo de vista prev
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
-1. Con la página abierta para edición, en la barra de herramientas, toque o haga clic en Vista previa.
+1. Con la página abierta para edición, en la barra de herramientas, haga clic en Vista previa.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Para mostrar la barra de herramientas, toque o haga clic en el icono de ContextHub.
+1. Para mostrar la barra de herramientas, haga clic en el icono de ContextHub.
 
    ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
@@ -66,6 +66,6 @@ La superposición emergente de un módulo puede incluir elementos de formulario 
 
 ### Modo de pantalla completa {#fullscreen-mode}
 
-Las superposiciones emergentes pueden incluir un icono en el que puede hacer clic o pulsar para expandir el contenido emergente y cubrir toda la ventana o pantalla del explorador.
+Las superposiciones emergentes pueden incluir un icono en el que hacer clic para expandir el contenido emergente y cubrir toda la ventana o pantalla del explorador.
 
 ![Pantalla completa](do-not-localize/chlimage_1-18.png)

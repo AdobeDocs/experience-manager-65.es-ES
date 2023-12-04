@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7687'
-ht-degree: 89%
+source-wordcount: '7640'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
 | AEM 6.5 | Este artículo |
 
 Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](/help/sites-developing/workflows-models.md#extending-aem).
@@ -29,7 +29,7 @@ Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones espec
 
 >[!NOTE]
 >
->Si el modelo de flujo de trabajo está marcado para un almacenamiento externo, para todos los pasos del Forms Workflow, puede seleccionar solo la opción de variable para almacenar o recuperar archivos de datos y archivos adjuntos.
+>Si el modelo de flujo de trabajo está marcado para un almacenamiento externo, para todos los pasos del flujo de Forms Workflow, puede seleccionar solo la opción de variable para almacenar o recuperar archivos de datos y archivos adjuntos.
 
 ## Paso de tarea de asignación {#assign-task-step}
 
@@ -104,7 +104,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Plantilla de correo electrónico HTML**: seleccione la plantilla de correo electrónico para el correo electrónico de notificación. Para editar una plantilla, modifique el archivo ubicado en /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt en el repositorio CRX.
 * **Permitir delegación en:** la bandeja de entrada de AEM proporciona una opción al usuario que ha iniciado sesión para delegar el flujo de trabajo asignado a otro usuario. Se le permite delegar dentro del mismo grupo o al usuario del flujo de trabajo de otro grupo. Si la tarea está asignada a un único usuario y la opción **Permitir la delegación a los miembros del grupo de asignados** está seleccionada, no es posible delegar la tarea a otro usuario o grupo.
 * **Compartir configuración:** la bandeja de entrada de AEM proporciona opciones para compartir una o todas las tareas de la bandeja de entrada con otros usuarios:
-   * Cuando la opción **Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada** esté seleccionada, el usuario puede hacer clic en la tarea y compartirla con otro usuario de AEM.
+   * Si la variable **Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada** AEM Una vez seleccionada la opción, el usuario puede hacer clic en la tarea y compartirla con otro usuario de la red de distribución de recursos de la red de.
    * Cuando la opción **Permitir que el usuario asignado comparta a través del uso compartido de la bandeja de entrada** esté seleccionada y los usuarios compartan sus elementos de la bandeja de entrada o permitan que otros usuarios accedan a sus elementos de la bandeja de entrada, solo las tareas con la opción mencionada previamente se compartirán con otros usuarios.
 
 * **Acciones > Acciones predeterminadas:** las acciones Enviar, Guardar y Restablecer están disponibles por defecto. De forma predeterminada, todas estas acciones están habilitadas.
@@ -186,7 +186,7 @@ Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos 
 
 **Guardar documento de registro generado mediante las siguientes opciones:** especifica la ubicación para mantener un archivo de documento de registro. Puede sobrescribir la carpeta de carga útil, colocar el documento de registro en una ubicación del directorio de carga útil o almacenar el documento de registro en una variable de tipo Doc.
 
-**Configuración regional:** especifique el idioma del documento de registro. Seleccione **Literal** para elegir la configuración regional de una lista desplegable o seleccione **Variable** para recuperar la configuración regional a partir del valor almacenado en una variable de tipo de datos de cadena. Debe definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
+**Configuración regional:** especifique el idioma del documento de registro. Seleccione **Literal** para elegir la configuración regional de una lista desplegable o seleccione **Variable** para recuperar la configuración regional a partir del valor almacenado en una variable de tipo de datos de cadena. Definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
 
 ## Paso para invocar el servicio de modelo de datos de formulario {#invoke-form-data-model-service-step}
 
@@ -279,7 +279,7 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 
 * **Nombre del contrato:** especifica el título del contrato. El nombre del acuerdo forma parte del asunto y del texto del cuerpo del correo electrónico enviado a los destinatarios. Puede almacenar el nombre en una variable de tipo de datos de cadena o seleccionar **Literal** para agregar el nombre manualmente.
 
-* **Configuración regional:** especifica el idioma para las opciones de correo electrónico y de verificación. Puede almacenar la configuración regional en una variable de tipo de datos de cadena o seleccionar **Literal** para elegir la configuración regional de la lista de opciones disponibles. Debe definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
+* **Configuración regional:** especifica el idioma para las opciones de correo electrónico y de verificación. Puede almacenar la configuración regional en una variable de tipo de datos de cadena o seleccionar **Literal** para elegir la configuración regional de la lista de opciones disponibles. Definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
 
 * **Configuración de Adobe Sign Cloud**: elige una configuración de Adobe Sign Cloud. Si no ha configurado Adobe Sign para AEM Forms, consulte [Integrar Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
@@ -296,7 +296,7 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 * **Proceso de firma:** puede optar por firmar un documento en orden secuencial o paralelo. En orden secuencial, un solo destinatario recibe el documento a la vez para su firma. Una vez que el primer destinatario completa la firma del documento, este se envía al segundo destinatario, y así sucesivamente. En orden paralelo, varios destinatarios pueden firmar un documento a la vez.
 * **URL de redireccionamiento:** especifica una URL de redireccionamiento. Una vez firmado el documento, puede redirigir al usuario asignado a una dirección URL. Normalmente, esta URL contiene un mensaje de agradecimiento o instrucciones adicionales.
 * **Fase del flujo de trabajo:** un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM. Puede definir estas fases en las propiedades del modelo (Barra de tareas > Página > Propiedades de la página > Fases).
-* **Seleccionar destinatarios:** Especifique el método para elegir el destinatario del documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un destinatario. Al seleccionar Manualmente en el menú desplegable, se agregan detalles del destinatario como Correo electrónico, Función y Método de autenticación.
+* **Seleccionar destinatarios:** Especifique el método para elegir el destinatario del documento. Puede asignar dinámicamente el flujo de trabajo a un usuario o grupo, o agregar manualmente los detalles de un firmante. Al seleccionar Manualmente en el menú desplegable, se agregan detalles del destinatario como Correo electrónico, Función y Método de autenticación.
 
   >[!NOTE]
   >
@@ -308,10 +308,10 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 * **Script o servicio para seleccionar destinatarios:** La opción solo estará disponible si selecciona la opción Dinámicamente en el campo Seleccionar destinatarios. Puede especificar un ECMAScript o un servicio para elegir destinatarios y opciones de verificación para un documento.
 * **Detalles del destinatario:** La opción solo está disponible si la opción Manualmente está seleccionada en el campo Seleccionar destinatarios. Especifique la dirección de correo electrónico y elija un mecanismo de verificación opcional. Antes de seleccionar un mecanismo de verificación de 2 pasos, asegúrese de que la opción de verificación correspondiente esté habilitada para la cuenta configurada de Adobe Sign. Puede utilizar una variable del tipo de datos de cadena para los campos **[!UICONTROL Correo electrónico]**, **[!UICONTROL Código de país]** y **[!UICONTROL Número de teléfono]**. Los campos **[!UICONTROL Código de país]** y **[!UICONTROL Número de teléfono]** solo se mostrarán si selecciona **[!UICONTROL Verificación por teléfono]** de la lista desplegable **[!UICONTROL verificación en dos pasos]**.
 * **Variable de estado:** un documento habilitado para Adobe Sign almacena el estado de la firma del documento en una variable de tipo de datos en cadena. Especifique el nombre de la variable de estado (adobeSignStatus). Una variable de estado de una instancia está disponible en CRXDE en /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData contiene el estado de una variable.
-* **[!UICONTROL Documento firmado]**: Puede guardar el estado del documento firmado en Variable. Para añadir una pista de auditoría de firma electrónica para una mayor seguridad y legalidad al documento firmado, puede Incluir informe de auditoría. Puede guardar el documento firmado mediante variable o carpeta de carga útil.
+* **[!UICONTROL Documento firmado]**: puede guardar el estado del documento firmado en Variable. Para añadir una pista de auditoría de firma electrónica para una mayor seguridad y legalidad al documento firmado, puede Incluir informe de auditoría. Puede guardar el documento firmado mediante variable o carpeta de carga útil.
   >[!NOTE]
   >
-  > El informe de auditoría se anexa a la última página del documento firmado.
+  > El informe de auditoría se añade a la última página del documento firmado.
 <!--
 * **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
 -->

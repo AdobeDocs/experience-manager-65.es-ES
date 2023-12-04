@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 76%
 
 ---
 
@@ -34,15 +34,15 @@ Para utilizar el nuevo formato en formularios HTML5, marque la tabla como comple
  </extras>
 ```
 
-Las tablas marcadas como *complexTable* siguen la representación nativa del HTML y proporcionan un soporte de accesibilidad mejor para determinados lectores de pantalla.  Para crear un intervalo de filas, seleccione celdas consecutivas de una tabla en la misma columna, haga clic con el botón derecho en la selección y, a continuación, haga clic en **[!UICONTROL Combinar celdas]**.
+Las tablas marcadas como *complexTable* siguen la representación nativa del HTML y proporcionan un soporte de accesibilidad mejor para determinados lectores de pantalla.  Para crear un intervalo de filas, seleccione celdas consecutivas de una tabla en la misma columna, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Combinar celdas]**.
 
 >[!NOTE]
 >
 >La creación de un intervalo de filas solo funciona para celdas de la izquierda.
 
-Para marcar una fila como encabezado de fila, seleccione todas las celdas de la fila, haga clic con el botón derecho en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
+Para marcar una fila como encabezado de fila, seleccione todas las celdas de la fila, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
 
-Para marcar una celda como encabezado de columna, seleccione cualquier celda de la columna, haga clic con el botón derecho en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
+Para marcar una celda como encabezado de columna, seleccione cualquier celda de la columna, haga clic con el botón secundario en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
 
 Limitaciones en el formato nuevo *Tabla accesible*:
 

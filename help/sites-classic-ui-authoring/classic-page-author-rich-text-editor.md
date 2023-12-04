@@ -5,9 +5,9 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1764'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ El cuadro de diálogo de edición WYSIWYG proporciona una amplia gama de funcion
 >
 >Las funciones disponibles se pueden configurar para proyectos individuales, por lo que pueden variar en función de la instalación.
 
-## Edición local {#in-place-editing}
+## Edición in situ {#in-place-editing}
 
 AEM Además del modo de edición de texto enriquecido basado en el cuadro de diálogo, también proporciona el modo de edición in situ, que permite editar directamente el texto tal y como se muestra en el diseño de la página.
 
@@ -88,7 +88,7 @@ Mientras que un formato se aplica a todo el párrafo de texto (un formato se bas
 
 Un formato específico solo se puede cambiar (el formato predeterminado es **[!UICONTROL Párrafo]**).
 
-Se puede quitar un estilo; coloque el cursor dentro del texto al que se ha aplicado el estilo y haga clic en el icono Eliminar:
+Se puede quitar un estilo; coloque el cursor dentro del texto al que se ha aplicado y haga clic en el icono Quitar:
 
 >[!CAUTION]
 >
@@ -238,7 +238,7 @@ Las tablas están disponibles tanto:
 
 * Como el **Tabla** componente
 
-  ![Componente de la tabla](assets/chlimage_1-105.png)
+  ![Componente Tabla](assets/chlimage_1-105.png)
 
 * Desde dentro de **Texto** componente
 
@@ -302,7 +302,7 @@ Se pueden configurar las propiedades de una celda específica o de una serie de 
 
 ![cq55_rte_cellproperties_dialog](assets/cq55_rte_cellproperties_dialog.png)
 
-* **Anchura**
+* **Ancho**
 * **Altura**
 * **Alineación horizontal** - Izquierda, centro o derecha
 * **Alineación vertical** - Superior, Medio, Inferior o Línea de base

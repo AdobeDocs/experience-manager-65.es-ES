@@ -1,22 +1,22 @@
 ---
 title: 'AEM Creación: el entorno y las herramientas en la creación de recursos'
-description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido.
+description: AEM El entorno de creación de ofrece varios mecanismos para organizar y editar el contenido.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 49%
+source-wordcount: '2246'
+ht-degree: 46%
 
 ---
 
 # Creación: el entorno y las herramientas{#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
 
 ## Administración del sitio {#managing-your-site}
 
@@ -95,7 +95,7 @@ El aspecto y el control dependerán del tipo de dispositivo que utilice:
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
 
-  Para obtener una descripción más detallada del componente, puede hacer clic o pulsar el icono de información situado junto al componente en el navegador de **componentes** (si está disponible). Por ejemplo, para el **contenedor de diseños**:
+  Para obtener una descripción más detallada del componente, puede hacer clic en el icono de información situado junto al componente en la **Componentes** explorador (si está disponible). Por ejemplo, para el **contenedor de diseños**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -344,7 +344,7 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-au
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Una vez seleccionado un recurso, el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Pulse o haga clic para confirmar la selección o **Cancelar** para anular la operación.
+* Una vez seleccionado un recurso, el botón **Seleccionar** en la parte superior derecha del cuadro de diálogo se activa. Haga clic en para confirmar la selección o en **Cancelar** para cancelar.
 * Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Clic **X** junto al número para anular toda la selección.
 * Al navegar por el árbol, su ubicación se refleja en las rutas de exploración en la parte superior del cuadro de diálogo. Estas rutas de exploración también se pueden utilizar para saltar rápidamente dentro de la jerarquía de recursos.
 * En cualquier momento, puede utilizar el campo de búsqueda en la parte superior del cuadro de diálogo. Haga clic en **X** en el campo de búsqueda para borrar la búsqueda.

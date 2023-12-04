@@ -6,10 +6,10 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 8%
+source-wordcount: '2446'
+ht-degree: 4%
 
 ---
 
@@ -95,7 +95,7 @@ Para integrar [!DNL Experience Manager] y [!DNL Adobe Stock], realice los siguie
 
    Entrada [!DNL Experience Manager], configure la cuenta de IMS con las credenciales de la cuenta de servicio y la carga útil JWT.
 
-1. [Configurar el servicio en la nube de ](#configure-the-cloud-service)
+1. [Configurar servicio en la nube](#configure-the-cloud-service)
 
    Entrada [!DNL Experience Manager], configure un [!DNL Adobe Stock] Cloud Service con la cuenta de IMS.
 
@@ -203,7 +203,7 @@ Para configurar la cuenta de IMS:
    ![control de estado](assets/aem-stock-healthcheck.png)
 
 
-### Configurar el servicio en la nube de  {#configure-the-cloud-service}
+### Configurar servicio en la nube {#configure-the-cloud-service}
 
 Para configurar la variable [!DNL Adobe Stock] servicio en la nube:
 
@@ -327,7 +327,7 @@ Una vez por [!DNL Adobe Stock] el recurso tiene licencia en [!DNL Experience Man
 
 ![Buscar por [!DNL Adobe Stock] recursos y filtrar resultados de sus [!DNL Adobe Experience Manager] workspace](assets/adobe-stock-search-results-workspace.png)
 
-**A.**[!DNL Adobe Stock] Busque recursos similares a los del ID de proporcionado. **B.** Busque recursos que coincidan con la selección de forma u orientación. **C.** Busque uno de los tipos de recurso más admitidos **D.** Abra o contraiga el panel de filtros **E.** Obtenga la licencia y guarde el recurso seleccionado en [!DNL Experience Manager]**F.**[!DNL Experience Manager] Guarde el recurso en con la marca de agua **G.**[!DNL Adobe Stock] Explore los recursos del sitio web de que sean similares al recurso **H.**[!DNL Adobe Stock] Vea los recursos seleccionados en el sitio web de . **I.** Número de recursos seleccionados de los resultados de búsqueda **J.** Cambie entre la vista de tarjeta y la vista de lista
+**A.** Busque recursos similares a los recursos cuya [!DNL Adobe Stock] Se ha proporcionado el ID. **B.** Busque recursos que coincidan con la selección de forma u orientación. **C.** Busque uno de los tipos de recursos más admitidos **D.** Abrir o contraer el panel de filtros **E.** Obtenga la licencia y guarde el recurso seleccionado en [!DNL Experience Manager] **F..** Guarde el recurso en [!DNL Experience Manager] con marca de agua **G.** Explorar recursos en [!DNL Adobe Stock] sitios web similares al recurso seleccionado **H..** Ver los recursos seleccionados en [!DNL Adobe Stock] sitio web **YO.** Número de recursos seleccionados de los resultados de búsqueda **J.** Cambiar entre la vista de tarjeta y la vista de lista
 
 ### Buscar recursos {#find-assets}
 

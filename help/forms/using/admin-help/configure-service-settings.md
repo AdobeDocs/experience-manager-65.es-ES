@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10692'
+source-wordcount: '10702'
 ht-degree: 4%
 
 ---
@@ -147,7 +147,7 @@ Las siguientes configuraciones están disponibles para el servicio Distiller.
 
 Se pueden crear nuevas configuraciones a través de la interfaz de usuario del PDF Generator.
 
-**Configuración de seguridad:** Configuración de seguridad preconfigurada que se aplica a documentos de PDF generados. El valor predeterminado es Sin seguridad. Debe crear la configuración de seguridad mediante PDF Generator y, a continuación, introduzca la configuración aquí.
+**Configuración de seguridad:** Configuración de seguridad preconfigurada que se aplica a documentos de PDF generados. El valor predeterminado es Sin seguridad. Cree la configuración de seguridad mediante el PDF Generator y, a continuación, introduzca la configuración aquí.
 
 **Tamaño del grupo:** El tamaño inicial de la piscina. Cuando se implementa el servicio Distiller, este número se utiliza para determinar el número de instancias de implementación del servicio que se crean y asignan al grupo libre a la espera de solicitudes de invocación. El contenedor de servicio puede responder inmediatamente a las solicitudes de invocación sin tener que inicializar primero una instancia de servicio.
 
@@ -207,7 +207,7 @@ Las siguientes configuraciones están disponibles para el servicio de correo ele
 
 ## Configuración del servicio de cifrado {#encryption-service-settings}
 
-El servicio Encryption ( `EncryptionService`) permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso al contenido. Si un documento de PDF está cifrado con una contraseña, el usuario debe especificar la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento de PDF está cifrado con un certificado, el usuario debe descifrar el documento de PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para cifrar el documento de PDF.
+El servicio Encryption ( `EncryptionService`) permite cifrar y descifrar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
 
 Los siguientes ajustes están disponibles para el servicio Encryption.
 
@@ -269,7 +269,7 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 **Lógica de reintento para conversiones nativas** Rige los reintentos de generación de PDF si el primer intento de conversión ha fallado:
 
-**No hay reintento**
+**Sin reintento**
 
 No reintente la conversión del PDF si el primer intento de conversión ha fallado
 
@@ -277,7 +277,7 @@ No reintente la conversión del PDF si el primer intento de conversión ha falla
 
 Reintentar la conversión del PDF independientemente de si se ha alcanzado el umbral de tiempo de espera. La duración de tiempo de espera predeterminada para el primer intento es 270 s.
 
-**Vuelva a intentar si el tiempo lo permite**
+**Reintentar si el tiempo lo permite**
 
 Reintente la conversión del PDF si el tiempo empleado para el primer intento de conversión fue menor que el tiempo de espera especificado. Por ejemplo, si la duración del tiempo de espera es de 270 segundos y el primer intento consumió 200 segundos, PDF Generator volverá a intentar la conversión. Si el primer intento consumió 270 segundos, no se volverá a intentar la conversión.
 
@@ -332,7 +332,7 @@ El valor macKeySeed es la semilla del generador de números aleatorios que se ut
 
 Cambie el valor de macKeySeed cuando necesite actualizar las direcciones URL seguras. La actualización de las direcciones URL seguras depende de la directiva de seguridad y es similar a la directiva de actualización para cambiar la contraseña de la raíz maestra del servidor. macSeedValue es análogo a la contraseña maestra para las URL seguras, ya que se utiliza para generar un nuevo número aleatorio único para utilizarlo en la generación y recuperación de URL seguras.
 
-Debe reiniciar el clúster porque macSeedValue es de sólo lectura al iniciar el sistema. Es necesario reiniciar todos los nodos para leer el valor, ya que lo utilizan de forma independiente para inicializar sus números aleatorios internos con el valor semilla.
+Reinicie el clúster porque macSeedValue es de solo lectura al iniciar el sistema. Es necesario reiniciar todos los nodos para leer el valor, ya que lo utilizan de forma independiente para inicializar sus números aleatorios internos con el valor semilla.
 
 ## Configuración del servicio JDBC {#jdbc-service-settings}
 

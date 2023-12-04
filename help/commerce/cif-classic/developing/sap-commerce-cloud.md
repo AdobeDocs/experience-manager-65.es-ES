@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2303'
 ht-degree: 0%
 
 ---
@@ -562,7 +562,7 @@ AEM La integración se proporciona entre los sistemas de comercio electrónico d
 
 AEM Un front-end se puede colocar delante de una implementación de hybris existente. AEM Además, se puede añadir un motor hybris a una instalación existente de la. Para ello, los sistemas deben poder gestionar correctamente los usuarios existentes en cualquiera de ellos:
 
-* AEM -> hybris
+* AEM > hybris
 
    * AEM Al iniciar sesión en hybris, si no existe el usuario de la:
 
@@ -571,7 +571,7 @@ AEM Un front-end se puede colocar delante de una implementación de hybris exist
 
    * Consulte: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* AEM hybris ->
+* AEM hybris >
 
    * AEM Al iniciar sesión en, si el sistema reconoce al usuario, haga lo siguiente:
 

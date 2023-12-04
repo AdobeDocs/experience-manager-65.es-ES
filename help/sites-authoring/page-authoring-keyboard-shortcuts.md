@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 63%
+source-wordcount: '220'
+ht-degree: 52%
 
 ---
 
@@ -41,7 +41,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&amp;ast; Una vez que el usuario empiece a interactuar con la página en modo de vista previa, la variable `Ctrl-Shift-m` el acceso directo ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
+>&amp;ast; Una vez que el usuario empiece a interactuar con la página en modo de vista previa, la variable `Ctrl-Shift-m` el acceso directo ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 

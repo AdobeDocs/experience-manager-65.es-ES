@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1447'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 **Establecer opciones de tiempo de ejecución de derechos de uso**
 
-Establezca opciones de tiempo de ejecución de derechos de uso para procesar un formulario con derechos activados. También debe especificar el alias de la credencial que se utiliza para aplicar derechos de uso a un formulario. Después de especificar el valor del alias, debe especificar cada derecho de uso que se aplicará al formulario.
+Establezca opciones de tiempo de ejecución de derechos de uso para procesar un formulario con derechos activados. Especifique el alias de la credencial que se utiliza para aplicar derechos de uso a un formulario. Después de especificar el valor del alias, debe especificar cada derecho de uso que se aplicará al formulario.
 
 **Procesar un formulario con derechos activados**
 
@@ -124,7 +124,7 @@ Procesar un formulario con derechos activados mediante la API de Forms (Java):
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
    * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
    * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.

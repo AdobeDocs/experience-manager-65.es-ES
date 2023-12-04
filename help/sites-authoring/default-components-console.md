@@ -2,10 +2,10 @@
 title: Consola Componentes
 description: La consola Componentes permite examinar todos los componentes definidos para la instancia y ver información clave de cada componente.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 51%
+ht-degree: 43%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 51%
 
 La consola Componentes permite examinar todos los componentes definidos para la instancia y ver información clave de cada componente.
 
-Se puede acceder a ella desde **Herramientas ->** **General ->** **Componentes**. En la consola, están disponibles la vista de tarjeta y la vista de lista. Como no hay una estructura de árbol para los componentes, la vista de columna no está disponible.
+Se puede acceder a ella desde **Herramientas >** **General >** **Componentes**. En la consola, están disponibles la vista de tarjeta y la vista de lista. Como no hay una estructura de árbol para los componentes, la vista de columna no está disponible.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -29,7 +29,7 @@ Con el icono **Solo contenido** (parte superior izquierda) podrá abrir el panel
 
 ### Detalles de los componentes {#component-details}
 
-Para ver los detalles de un componente específico, toque o haga clic en el recurso requerido. Hay tres pestañas que proporcionan:
+Para ver los detalles de un componente específico, haga clic en el recurso requerido. Hay tres pestañas que proporcionan:
 
 * **Propiedades**
 
@@ -64,6 +64,6 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
 * **Documentación**
 
-  Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), aparecerá en la **Documentación** pestaña. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
+  Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), aparecerá en la **Documentación** pestaña. Si no hay documentación disponible, la variable **Documentación** La pestaña no se mostrará.
 
   ![Documentación](assets/chlimage_1-171.png)

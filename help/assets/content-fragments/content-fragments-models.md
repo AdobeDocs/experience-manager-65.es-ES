@@ -4,10 +4,10 @@ description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 67%
+source-wordcount: '2310'
+ht-degree: 66%
 
 ---
 
@@ -19,7 +19,7 @@ Para utilizar modelos de fragmentos de contenido, puede:
 
 1. [Habilitar la funcionalidad de modelo de fragmento de contenido para la instancia](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. [Crear](#creating-a-content-fragment-model), y [configurar](#defining-your-content-fragment-model), los modelos de fragmentos de contenido.
-1. [Habilite los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido.
+1. [Habilitar los modelos de fragmentos de contenido](#enabling-disabling-a-content-fragment-model) para su uso al crear fragmentos de contenido.
 1. [Permita los modelos de fragmentos de contenido en las carpetas de recursos necesarias](#allowing-content-fragment-models-assets-folder) configurando **Políticas**.
 
 ## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}
@@ -86,7 +86,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
 1. **Eliminación de un campo**
 
-   Seleccione el campo requerido y, a continuación, toque o haga clic en el icono de la papelera. Se le solicitará que confirme la acción.
+   Seleccione el campo requerido y, a continuación, haga clic en el icono de la papelera. Se le solicitará que confirme la acción.
 
    ![quitar](assets/cfm-models-06.png)
 

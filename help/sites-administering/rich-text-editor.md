@@ -3,10 +3,10 @@ title: Configure el Editor de texto enriquecido para crear contenido en Adobe Ex
 description: Aprenda a configurar el Editor de texto enriquecido de Adobe Experience Manager para que cree contenido en Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2921'
-ht-degree: 1%
+source-wordcount: '2883'
+ht-degree: 0%
 
 ---
 
@@ -56,13 +56,13 @@ Los autores pueden crear y editar contenido textual en Experience Manager utiliz
 
 ### Edición en línea {#inline-editing}
 
-Cuando se abre (con un doble toque o clic lento), el contenido se puede editar dentro de la página. Se presenta una barra de herramientas compacta con opciones muy básicas.
+Cuando se abre (con un doble clic lento), el contenido se puede editar dentro de la página. Se presenta una barra de herramientas compacta con opciones muy básicas.
 
 ![Edición en línea con la barra de herramientas básica en la IU táctil](assets/chlimage_1-36.png)
 
 *Imagen: edición en línea con la barra de herramientas básica en la IU táctil*
 
-En la IU clásica, un doble clic lento en el componente permite la edición en línea y una descripción naranja resalta el contenido. Si el buscador de contenido está abierto, se muestra una barra de herramientas con las opciones de formato RTE disponibles en la parte superior de la ventana. Si el buscador de contenido no está abierto, las opciones de formato no se muestran y solo puede realizar ediciones de texto básicas.
+En la IU clásica, un doble clic lento en el componente permite la edición en línea y un contorno naranja resalta el contenido. Si el buscador de contenido está abierto, se muestra una barra de herramientas con las opciones de formato RTE disponibles en la parte superior de la ventana. Si el buscador de contenido no está abierto, las opciones de formato no se muestran y solo puede realizar ediciones de texto básicas.
 
 ### Edición de pantalla completa {#full-screen-editing}
 
@@ -113,7 +113,7 @@ En la tabla siguiente se enumeran los complementos actuales, mostrando:
 | image | image | Compatibilidad con imágenes básica (arrastre desde contenido o Buscador de contenido). Según el explorador, la compatibilidad tiene comportamientos diferentes para los autores |
 | teclas |  | Para definir este valor, consulte [tamaño de ficha](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
 | justificar | justifyleft justifycenter justifcopyright | Alineación de párrafo. |
-| links | modificar delimitador de desvinculación de vínculo | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| vínculos | modificar delimitador de desvinculación de vínculo | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | listas | anulación de sangría ordenada sin ordenar | Este complemento controla ambos [sangría y listas](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); incluyendo listas anidadas. |
 | herramientas diversas | specialchars sourceedit | Varias herramientas permiten a los autores introducir [caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o editar el origen del HTML. Además, puede agregar un todo [intervalo de caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
 | Paraformato | paraformato | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>`, y `<h3>`). Puede [agregar más formatos de párrafo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) o ampliar la lista. |

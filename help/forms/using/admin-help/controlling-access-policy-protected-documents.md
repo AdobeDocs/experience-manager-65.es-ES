@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2167'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ También puede ver más detalles, que se describen a continuación, sobre un doc
 
 >[!NOTE]
 >
->Debe utilizar el vínculo Nombre de directiva de la página Detalle del documento para acceder a las directivas que se generan automáticamente en Microsoft Outlook para los destinatarios de un documento adjunto a un mensaje de correo electrónico. Estas directivas no aparecen en la página de directivas.
+>Utilice el vínculo Nombre de directiva de la página Detalle del documento para acceder a las directivas generadas automáticamente en Microsoft Outlook para los destinatarios de un documento adjunto a un mensaje de correo electrónico. Estas directivas no aparecen en la página de directivas.
 
 **Nombre de documento:** Nombre del documento seleccionado.
 
@@ -52,7 +52,7 @@ También puede ver más detalles, que se describen a continuación, sobre un doc
 
 **Publicador:** Nombre del usuario que adjuntó la directiva al documento.
 
-**Nombre de política:** Nombre de la directiva que se utiliza para proteger el documento. Puede hacer clic en el nombre para abrir la directiva. Debe utilizar este vínculo para acceder a las directivas que Acrobat genera para los destinatarios de un documento adjunto a un mensaje de correo electrónico en Outlook. Estas directivas no aparecen en la página Directivas.
+**Nombre de política:** Nombre de la directiva que se utiliza para proteger el documento. Puede hacer clic en el nombre para abrir la directiva. Utilice este vínculo para acceder a las directivas que Acrobat genera para los destinatarios de un documento adjunto a un mensaje de correo electrónico en Outlook. Estas directivas no aparecen en la página Directivas.
 
 **Tipo de directiva:** El tipo de directiva que se aplicó al documento.
 

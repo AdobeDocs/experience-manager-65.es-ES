@@ -2,10 +2,10 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, aprenderá a modelar el contenido para la entrega de contenido sin encabezado de AEM utilizando el Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 68%
+source-wordcount: '1795'
+ht-degree: 67%
 
 ---
 
@@ -15,7 +15,7 @@ En esta parte del [Recorrido para desarrolladores de contenido sin encabezado de
 
 ## La historia hasta ahora {#story-so-far}
 
-Al principio, [Obtenga información acerca del desarrollo sin encabezado CMS](learn-about.md) abarcaba la entrega de contenido sin encabezado y por qué debería usarse. A continuación, la [Introducción al contenido sin encabezado de AEM ](getting-started.md) describía el contenido sin encabezado de AEM en el contexto de su propio proyecto.
+Al principio, [Obtenga información acerca del desarrollo sin encabezado CMS](learn-about.md) abarcaba la entrega de contenido sin encabezado y por qué debería usarse. Entonces [AEM Introducción a la tecnología sin encabezado de](getting-started.md) AEM se ha descrito la opción Sin encabezado en el contexto de su propio proyecto de.
 
 En el documento anterior del recorrido del contenido sin encabezado de AEM, [Ruta hacia la primera experiencia al usar contenido sin encabezado de AEM](path-to-first-experience.md), aprendió los pasos necesarios para implementar su primer proyecto. Después de leerlo, debería:
 
@@ -158,7 +158,7 @@ Los modelos de fragmentos de contenido proporcionan varios mecanismos que le per
 Un modelo de fragmento de contenido describe una entidad.
 
 >[!NOTE]
->Debe habilitar la funcionalidad Fragmento de contenido en el Explorador de configuración para poder crear modelos.
+>Habilite la funcionalidad Fragmento de contenido en el Explorador de configuración para poder crear modelos.
 
 >[!TIP]
 >

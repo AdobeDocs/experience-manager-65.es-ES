@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: spa
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 4%
+source-wordcount: '183'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Platform Launch es la forma recomendada de implementar Analytic
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## Tutorial {#tutorial}
 

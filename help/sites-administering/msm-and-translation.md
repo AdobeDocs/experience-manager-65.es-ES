@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 41%
+ht-degree: 32%
 
 ---
 
@@ -33,14 +33,14 @@ Las siguientes herramientas de administración están disponibles para administr
 
 ## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
-Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado de Administrador de varios sitios y el flujo de trabajo de traducción. Cree un sitio principal en un idioma para un país específico y luego utilice ese contenido como base para los demás sitios, traduciendo lo que sea necesario:
+Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado del Administrador de varios sitios y el flujo de trabajo de traducción. Cree un sitio principal en un idioma para un país específico y luego utilice ese contenido como base para los demás sitios, traduciendo lo que sea necesario:
 
 * [Traducir](/help/sites-administering/translation.md) el sitio principal a diferentes idiomas.
 
 * Use [Administrador de varios sitios](/help/sites-administering/msm.md) para lo siguiente:
 
    * Reutilice el contenido del sitio principal y las traducciones para crear sitios destinados a otros países y culturas.
-   * Asegúrese de limitar el uso del Administrador de varios sitios al contenido en un idioma, por ejemplo, inglés principal -> ramas en inglés en sitios de países, francés principal -> ramas en francés en sitios de países.
+   * Asegúrese de limitar el uso del Administrador de varios sitios al contenido en un idioma, por ejemplo, inglés principal > ramas en inglés en sitios de países, francés principal > ramas en francés en sitios de países.
    * Cuando sea necesario, desasocie elementos de las Live Copies para añadir detalles de localización.
 
 El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no muestra todos los niveles/elementos implicados):

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 12%
+source-wordcount: '2072'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ Puede [configuración de los formularios de búsqueda](#configuring-your-search-
 
    * **General**
 
-      * **Formularios de búsqueda**
+      * **Buscar Forms**
 
 Cuando acceda por primera vez a esta consola, verá que todas las configuraciones tienen un símbolo de candado. Esto indica que la configuración adecuada es la predeterminada (predeterminada) y no se puede eliminar. Después de personalizar la configuración, el bloqueo desaparece a menos que [elimine la configuración personalizada](#deleting-a-configuration-to-reinstate-the-default). En tal caso, se restablece el valor predeterminado (y el indicador de candado).
 
@@ -72,7 +72,7 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
   Esta configuración define las opciones disponibles al buscar vídeos en el explorador de recursos (al editar una página).
 
-* **Carril de búsqueda de administración de recursos:**
+* **Carril de búsqueda de administración de Assets:**
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar la consola Recursos.
 
@@ -84,7 +84,7 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar pedidos comerciales.
 
-* **Carril de búsqueda de administración de las colecciones de productos:**
+* **Carril de búsqueda de administración de colecciones de productos:**
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar colecciones de productos de comercio.
 
@@ -92,7 +92,7 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar productos de comercio.
 
-* **Carril de búsqueda de administración de proyecto:**
+* **Carril de búsqueda del administrador del proyecto:**
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar proyectos.
 
@@ -107,7 +107,7 @@ Los siguientes predicados están disponibles, según la configuración:
   <tr>
    <th>Predicado</th>
    <th>Función</th>
-   <th>Configuración</th>
+   <th>Ajustes</th>
   </tr>
   <tr>
    <td>Análisis </td>
@@ -130,7 +130,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Profundidad de la propiedad</li>
      <li>Descripción</li>
     </ul> </td>
@@ -141,7 +141,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -152,7 +152,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Texto de intervalo (desde)*</li>
      <li>Texto de intervalo (hasta)*</li>
      <li>Descripción</li>
@@ -164,7 +164,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -174,7 +174,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -196,19 +196,19 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Ruta de JSON</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Una sola selección</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Opciones Propiedad </td>
+   <td>Propiedad Options </td>
    <td>Busque en una propiedad de la opción.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta del nodo de opciones<br /> </li>
      <li>Una sola selección</li>
      <li>Descripción</li>
@@ -246,7 +246,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -266,7 +266,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -277,7 +277,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -288,7 +288,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Fecha relativa</li>
      <li>Descripción</li>
     </ul> </td>
@@ -299,7 +299,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -309,7 +309,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -320,7 +320,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Marcador de posición</li>
-     <li>Nombre de la propiedad*</li>
+     <li>Nombre de propiedad*</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
@@ -350,7 +350,7 @@ En función del predicado, hay una selección de opciones disponibles para la co
 
   Detalles descriptivos del usuario.
 
-* **Marcador de posición**
+* **Marcador**
 
   Texto vacío o el marcador de posición del predicado en caso de que no se introduzca ningún texto de filtrado.
 
@@ -360,7 +360,7 @@ En función del predicado, hay una selección de opciones disponibles para la co
 
   Si desea buscar únicamente en un nodo secundario de primer nivel del recurso que tiene la variable `x` propiedad en el `jcr:content` uso de nodo `*/jcr:content/x`
 
-* **Profundidad de la propiedad**
+* **Profundidad de propiedad**
 
   Profundidad máxima para buscar esa propiedad dentro de los recursos. Por lo tanto, se puede realizar una búsqueda de esa propiedad en un recurso y en elementos secundarios recursivos hasta que el nivel de los elementos secundarios sea igual a la profundidad especificada.
 
@@ -506,7 +506,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
 1. Abra el **Buscar Forms** y seleccione la configuración que desee actualizar. Por ejemplo, **Carril de búsqueda de administración de sitios**.
 
-   A continuación, toque o haga clic en **Editar formularios de búsqueda** icono.
+   Luego haga clic en **Editar formularios de búsqueda** icono.
 
 1. Según la configuración, añada una **Opciones** o **Propiedad Options** a la configuración.
 1. Actualice los campos, en particular:

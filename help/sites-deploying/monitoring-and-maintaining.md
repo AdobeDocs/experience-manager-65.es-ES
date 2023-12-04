@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5939'
-ht-degree: 1%
+source-wordcount: '5793'
+ht-degree: 0%
 
 ---
 
@@ -433,7 +433,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >para indicar cuándo se crea un nuevo archivo (y el nombre del archivo existente cambia según el patrón de nombre).
    >
    >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como número de bytes o puede agregar uno de los indicadores de tamaño: `KB`, `MB`, o `GB` (se ignora mayúsculas y minúsculas).
-   >* Como patrón se puede especificar una programación de fecha/hora `java.util.SimpleDateFormat` . Define el período de tiempo tras el cual se rota el archivo. Además, el sufijo anexado al archivo girado (para su identificación).
+   >* Se puede especificar una programación de fecha y hora como `java.util.SimpleDateFormat` patrón. Define el período de tiempo después del cual se gira el archivo. Además, el sufijo anexado al archivo girado (para su identificación).
    >
    >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria de registros).
    >
@@ -483,7 +483,7 @@ Estas entradas contienen la misma información que se muestra al editar una pág
 
 #### Registros de auditoría OSGi de la consola web {#osgi-audit-records-from-the-web-console}
 
-Los eventos OSGi también generan registros de auditoría que se pueden ver desde el **Estado de configuración** pestaña -> **Archivos de registro** AEM en la consola web de la:
+Los eventos OSGi también generan registros de auditoría que se pueden ver desde el **Estado de configuración** pestaña > **Archivos de registro** AEM en la consola web de la:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -914,7 +914,7 @@ Se recomienda que cada proyecto incluya `html comments` para el rendimiento del 
 El comando herramienta `jconsole` está disponible con el JDK de.
 
 1. AEM Inicie la instancia de.
-1. Ejecución `jconsole.`
+1. Ejecutar `jconsole.`
 1. AEM Seleccione la instancia de la y **Connect**.
 
 1. Desde dentro de `Local` aplicación, doble clic `com.day.crx.quickstart.Main`; la Información general se muestra de forma predeterminada:
@@ -1037,7 +1037,7 @@ Para ver cuántos recursos DAM mantiene actualmente, utilice una consulta del re
 
 #### ¿Cuál es el tamaño promedio de los recursos? {#what-is-the-average-size-of-the-assets}
 
-Para determinar el tamaño total del `/var/dam` carpeta:
+Para determinar el tamaño total de la `/var/dam` carpeta:
 
 1. Utilice WebDAV para asignar el repositorio al sistema de archivos local.
 
@@ -1098,9 +1098,9 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 >
 Consulte también los siguientes artículos para obtener más información:
 >
-* [Volcados de hilos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es)
-* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
-* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=es)
+* [Volcados de hilos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
+* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
 * [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1125,7 +1125,7 @@ En estos casos, compruebe:
 * La configuración de JVM utilizada para [AEM inicio de la](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
-   * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
+   * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1134,7 +1134,7 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 * Si ha deshabilitado la recopilación de información de depuración, puede configurarse en varias ubicaciones, incluidas las siguientes:
 
    * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Controlador de JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+   * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Administrador de bibliotecas HTML de CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [Filtrar de depuración de CQ Gestión de contenidos web](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
@@ -1143,7 +1143,7 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 * Si ha configurado Versión purga de y cómo lo ha hecho [](/help/sites-deploying/version-purging.md)
 * Base de conocimiento:
 
-   * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es)
+   * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
    * [El diario consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradación regular del rendimiento {#regular-performance-degradation}

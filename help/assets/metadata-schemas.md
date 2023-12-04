@@ -7,10 +7,10 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 9%
+source-wordcount: '3595'
+ht-degree: 8%
 
 ---
 
@@ -47,12 +47,12 @@ Para ver una lista de formularios o plantillas, en [!DNL Experience Manager] int
 
 | Plantillas | | Descripción |
 |---|---|---|
-| [!UICONTROL predeterminada] | | El formulario de esquema de metadatos base para los recursos. |
+| [!UICONTROL predeterminado] | | El formulario de esquema de metadatos base para los recursos. |
 | | Los siguientes formularios secundarios heredan las propiedades del [!UICONTROL predeterminado] formulario: | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulario de esquema para vídeos de Dynamic Media. |
 | | <ul><li>[!UICONTROL imagen]</li></ul> | Formulario de esquema para imágenes con el tipo MIME como `image/jpeg` y `image/png`. <br> El [!UICONTROL imagen] El formulario tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL riña]: Formulario de esquema para los recursos con TIFF de subtipo.</li></ul> |
 | | <ul><li>[!UICONTROL aplicación]</li></ul> | Formulario de esquema para recursos con tipo MIME como `application/pdf` y `application/zip`. <br>[!UICONTROL pdf]: Formulario de esquema para recursos con PDF de subtipo. |
-| | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
+| | <ul><li>[!UICONTROL video]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
 | [!UICONTROL colección] | | Formulario de esquema para colecciones. |
 | [!UICONTROL contentfragment] | | [Formulario de esquema para fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL formularios] | | Este formulario de esquema está relacionado con [Adobe Experience Manager Forms](/help/forms/home.md). |
@@ -91,18 +91,18 @@ El **[!UICONTROL Generar formulario]** La pestaña enumera los elementos de form
 | Nombre del componente | Descripción |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Encabezado de sección] | Añada un encabezado de sección para una lista de componentes comunes. |
-| [!UICONTROL Texto de una sola línea] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
-| [!UICONTROL Texto con varios valores] | Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
+| [!UICONTROL Texto de línea única] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
+| [!UICONTROL Texto con varios valores] | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
 | [!UICONTROL Número] | Añada un componente de número. |
 | [!UICONTROL Fecha] | Añada un componente de fecha. |
-| [!UICONTROL Lista desplegable] | Añada una lista desplegable. |
-| [!UICONTROL Etiquetas estándar] | Añadir una etiqueta. |
+| [!UICONTROL Desplegable] | Añada una lista desplegable. |
+| [!UICONTROL Etiquetas estándar] | Añada una etiqueta. |
 | [!UICONTROL Etiquetas inteligentes] | Añada para aumentar las capacidades de búsqueda añadiendo automáticamente etiquetas de metadatos. |
 | [!UICONTROL Campo oculto] | Agregue un campo oculto. Se envía como parámetro de POST cuando se guarda el recurso. |
-| [!UICONTROL Recurso al que se hace referencia en] | Agregue este componente para ver la lista de recursos a los que hace referencia el recurso. |
+| [!UICONTROL Recurso al que hace referencia] | Agregue este componente para ver la lista de recursos a los que hace referencia el recurso. |
 | [!UICONTROL Referencia de recursos] | Agregar para mostrar una lista de recursos que hacen referencia al recurso. |
 | [!UICONTROL Referencias de productos] | Agregar para mostrar la lista de productos vinculados con el recurso. |
-| [!UICONTROL Clasificación del recurso] | Agregar para ver las opciones de clasificación del recurso. |
+| [!UICONTROL Clasificación de recursos] | Agregar para ver las opciones de clasificación del recurso. |
 | [!UICONTROL Metadatos de contexto] | Agregue para controlar la visualización de otras pestañas de metadatos en la página de propiedades de los recursos. |
 
 #### Editar el componente de metadatos {#edit-the-metadata-component}

@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Cuando navega por AEM Forms Workspace utilizando un teclado, la navegación se
 * La Ayuda de AEM Forms Workspace se abre en una ventana independiente del explorador. Después de ver la Ayuda, el enfoque vuelve a la ventana del explorador que contiene AEM Forms Workspace. El menú Ayuda permanece enfocado cuando se vuelve a enfocar.
 * Cuando se abre un formulario para iniciar un proceso o completar una tarea, el enfoque permanece en el elemento existente y no cambia al formulario. Utilice la pestaña para desplazar el enfoque al formulario y navegar por él. El orden de tabulación del formulario depende del tipo y el diseño del formulario.
 
-   En el caso de los formularios PDF cuando se desplaza hasta el final del formulario o se envía el formulario, el enfoque del cursor salta a la barra de direcciones del explorador. Debe volver a desplazarse por los menús (pero no por todo el formulario) para ir a los botones de acción del formulario, como Guardar como borrador y Completar. Si el formulario sigue abierto, también puede desplazarse más allá de los botones y volver a él.
+  En el caso de los formularios PDF cuando se desplaza hasta el final del formulario o se envía el formulario, el enfoque del cursor salta a la barra de direcciones del explorador. Vuelva a desplazarse por los menús (pero no por todo el formulario) para ir a los botones de acción del formulario, como Guardar como borrador y Completar. Si el formulario sigue abierto, también puede desplazarse más allá de los botones y volver a él.
 
 ## Administración de preferencias {#managing-preferences}
 
@@ -65,7 +65,7 @@ Puede establecer las distintas preferencias de AEM Forms Workspace en las sigu
 
 **Fuera de la oficina:** establezca las preferencias para controlar cómo se asignarán las tareas a otras personas mientras esté fuera de la oficina. Consulte [Configuración de las preferencias de Fuera de la oficina](todo-lists.md#setting-out-of-office-preferences).
 
-**Colas:** establezca sus preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Trabajo con tareas de grupos y colas compartidas](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Colas:** Establezca sus preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Trabajo con tareas de grupos y colas compartidas](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
 **Configuración de la interfaz de usuario:** establezca sus preferencias para interactuar con AEM Forms Workspace. Consulte [Establecer las preferencias de la interfaz de usuario](#set-user-interface-preferences).
 

@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '921'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Los usuarios y administradores utilizan las páginas web de Document Security pa
 
 Para abrir las páginas web, necesita un explorador y la dirección URL y la información de inicio de sesión para Document Security. La dirección URL de los usuarios es diferente de la de los administradores.
 
-Debido a que Document Security hace referencia a los directorios existentes de su organización para obtener información del usuario, la información de inicio de sesión de Document Security puede ser la misma que utiliza para iniciar sesión en la red y en otras aplicaciones. Consulte al administrador del sistema o al administrador para obtener información sobre la cuenta.
+Debido a que Document Security hace referencia a los directorios existentes de su organización para obtener información del usuario, la información de inicio de sesión de Document Security puede ser la misma que se utiliza para iniciar sesión en la red y en otras aplicaciones. Consulte al administrador del sistema o al administrador para obtener información sobre la cuenta.
 
 Para iniciar sesión como administrador, debe tener asignada la función de administrador. Puede utilizar la cuenta de superadministrador predeterminada que se crea durante el proceso de instalación.
 
@@ -87,7 +87,7 @@ Utilice estos vínculos para acceder a las distintas páginas, donde puede crear
 
 Las aplicaciones cliente deben configurarse para conectarse a Document Security para proteger documentos, abrir documentos protegidos por directivas y conectarse a las páginas web de Document Security. Consulte *Ayuda de Acrobat* o el adecuado *Ayuda de RightsManagementExtension* para obtener información sobre cómo configurar la conexión en la aplicación cliente.
 
-Se accede a la seguridad de los documentos a través de Secure Sockets Layer (SSL). Debe instalar el certificado del sitio web en el almacén de certificados para poder acceder a la seguridad de los documentos a través de las aplicaciones cliente.
+Se accede a la seguridad de los documentos a través de Secure Sockets Layer (SSL). Instale el certificado del sitio web en el almacén de certificados para poder acceder a la seguridad de los documentos a través de las aplicaciones cliente.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 

@@ -2,10 +2,10 @@
 title: Guía de inicio rápido Creación de fragmentos de contenido sin encabezado
 description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 84%
+source-wordcount: '375'
+ht-degree: 73%
 
 ---
 
@@ -25,24 +25,24 @@ Los fragmentos de contenido contienen contenido estructurado y se pueden entrega
 
 Los autores de contenido generarán el número de fragmentos de contenido que corresponda para representar el contenido que crean. Esta será su tarea principal en AEM. Para los fines de esta guía de introducción, solo necesitamos crear uno.
 
-1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Navegación -> Recursos**.
+1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Navegación > Recursos**.
 1. Vaya a [carpeta creada anteriormente.](create-assets-folder.md)
-1. Toque o haga clic en **Crear -> Fragmento de contenido**.
-1. La creación de un fragmento de contenido se presenta como un asistente en dos pasos. Seleccione primero qué modelo desea utilizar para crear el fragmento de contenido y toque o haga clic en **Siguiente**.
+1. Clic **Crear > Fragmento de contenido**.
+1. La creación de un fragmento de contenido se presenta como un asistente en dos pasos. Seleccione primero qué modelo desea utilizar para crear el fragmento de contenido y haga clic en **Siguiente**.
    * Los modelos disponibles dependen de la [**Configuración de nube** que definió para la carpeta de recursos](create-assets-folder.md) en el que está creando el fragmento de contenido.
    * Si recibe el mensaje `We could not find any models`, compruebe la configuración de la carpeta de recursos.
 
    ![Selección del modelo de fragmentos de contenido](assets/content-fragment-model-select.png)
-1. Proporcione un **Título**, una **Descripción** y **Etiquetas** según sea necesario, y toque o haga clic en **Crear**.
+1. Proporcione un **Título**, **Descripción**, y **Etiquetas** según sea necesario y haga clic en **Crear**.
 
    ![Creación de un fragmento de contenido](assets/content-fragment-create.png)
-1. Toque o haga clic en **Abrir** en la ventana de confirmación.
+1. Clic **Abrir** en la ventana de confirmación.
 
    ![Confirmación de fragmento de contenido creado](assets/content-fragment-confirmation.png)
 1. Proporcione los detalles del fragmento de contenido en el Editor de fragmentos de contenido.
 
    ![Editor de fragmentos de contenido](assets/content-fragment-edit.png)
-1. Toque o haga clic en **Guardar** o **Guardar y cerrar**.
+1. Clic **Guardar** o  **Guardar y cerrar**.
 
 Los fragmentos de contenido pueden hacer referencia a otros fragmentos de contenido, lo que permite anidar una estructura de contenido si es necesario.
 

@@ -8,10 +8,10 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 3%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ El servicio de correo predeterminado es necesario tanto para las notificaciones 
 
 Se basa en la documentación de [Configuración de notificaciones por correo electrónico](../../help/sites-administering/notification.md), pero con una diferencia en que el campo `"From" address` es *no* obligatorio y debe dejarse vacío.
 
-Por ejemplo (rellenado con valores solo con fines ilustrativos),:
+Por ejemplo, (rellenado con valores solo con fines ilustrativos):
 
 ![email-config](assets/email-config.png)
 
@@ -191,7 +191,7 @@ navegando hasta la `postEmails`carpeta y seleccione **OK**.
 
   *(Opcional)* El servidor de correo configurado para el servicio de correo predeterminado puede tener requisitos relativos al valor del intervalo de actualización. Por ejemplo, Gmail puede requerir un intervalo de `300`.
 
-* **[!UICONTROL Inicio de sesión]**
+* **[!UICONTROL Iniciar sesión]**
 
   *(Opcional)*
 

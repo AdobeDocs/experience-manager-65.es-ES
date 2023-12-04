@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 12%
+source-wordcount: '2037'
+ht-degree: 9%
 
 ---
 
@@ -341,7 +341,7 @@ Finalmente, confirme la configuración mediante lo siguiente:
 
    ![El nuevo botón de registro al configurar Microsoft Outlook](assets/oauth-outlook1.png)
 
-1. Rellene la información según sus necesidades y haga clic en **Registro**
+1. Rellene la información según sus necesidades y haga clic en **Registrar**
 1. Vaya a la aplicación recién creada y seleccione **Permisos de API**
 1. Vaya a **Añadir permiso** - **Permiso de gráfico** - **Permisos delegados**
 1. Seleccione los siguientes permisos para su aplicación y haga clic en **Añadir permiso**:

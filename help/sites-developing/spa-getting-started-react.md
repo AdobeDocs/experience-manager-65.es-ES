@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 5%
+source-wordcount: '1148'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +26,7 @@ SPA SPA AEM La función de creación de ofrece una solución completa para la as
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## Introducción {#introduction}
 
@@ -108,7 +108,7 @@ module.exports = {
 };
 ```
 
-### Compilando {#building}
+### Edificio {#building}
 
 La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 

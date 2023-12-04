@@ -1,8 +1,8 @@
 ---
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 62%
+source-wordcount: '505'
+ht-degree: 52%
 
 ---
 # Contribución a la documentación de Adobe Experience Manager
@@ -30,19 +30,19 @@ El método que elija dependerá de la comodidad con la que edite la documentaci�
 
 >[!NOTE]
 >
->Las contribuciones que envíe estarán cubiertas por las [condiciones de uso de Adobe](https://www.adobe.com/es/legal/terms.html).
+>Las contribuciones que envíe estarán cubiertas por el [condiciones de uso del Adobe](https://www.adobe.com/es/legal/terms.html).
 
 ### Crear una incidencia {#create-an-issue}
 
 ¿Tiene una sugerencia, una observación sobre los documentos actuales o una pregunta sobre cómo se describe algo? A continuación, cree una incidencia. Las incidencias también son ideales si tiene algo que aportar, pero no se siente cómodo editando los documentos o haciendo una solicitud de extracción usted mismo.
 
-AEM Las incidencias permiten describir fácilmente su idea para mejorar los documentos y un miembro del equipo de documentación de la documentación de la documentación de la puede revisarla. Haga clic en el vínculo **Registrar una incidencia** en la parte superior del panel de navegación derecho en cualquier página para crear una incidencia.
+AEM Las incidencias permiten describir fácilmente su idea para mejorar los documentos y un miembro del equipo de documentación de la documentación de la documentación de la puede revisarla. Simplemente haga clic en **Registrar un problema** en la parte superior del panel de navegación derecho en cualquier página para crear un problema.
 
 ### Crear una solicitud de extracción {#create-a-pull-request}
 
 Si ve un problema y sabe exactamente cómo solucionarlo, plantéese crear una solicitud de extracción. AEM Las solicitudes de extracción le permiten realizar sus propios cambios en la documentación, que luego son revisados para su inclusión por un miembro del equipo de documentación de la documentación de, que también es miembro del equipo de documentación de los documentos de. Simplemente haga clic en **Editar esta página** en la parte superior del panel de navegación derecho en cualquier página para realizar los cambios sugeridos y crear la solicitud de extracción.
 
-Todas las solicitudes de extracción deben ir acompañadas de un [contrato de licencia de colaborador o CLA firmado](https://opensource.adobe.com/cla.html). Esto otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. Solo debe mandar un CLA de Adobe, así que si ya mandó uno en el pasado, con ese es suficiente.
+Todas las solicitudes de extracción deben ir acompañadas de un [contrato de licencia de colaborador o CLA](https://opensource.adobe.com/cla.html). Esto otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. Solo debe mandar un CLA de Adobe, así que si ya mandó uno en el pasado, con ese es suficiente.
 
 ### Vídeo introductorio breve
 

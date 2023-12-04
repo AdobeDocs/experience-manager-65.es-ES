@@ -1,8 +1,8 @@
 ---
 title: Registrarse como usuario
 seo-title: Registering as a User
-description: Descubra cómo puede utilizar los documentos protegidos por directivas que recibe de un usuario de Document Security, incluso si es externo a la organización del usuario.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+description: Descubra cómo puede utilizar documentos protegidos por directivas que reciba de un usuario de Document Security, incluso si es externo a la organización del usuario.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 7%
+source-wordcount: '695'
+ht-degree: 4%
 
 ---
 
@@ -43,11 +43,11 @@ Si es un usuario invitado y recibe un mensaje de registro por correo electrónic
 1. Abra el correo electrónico de registro de Document Security. La dirección URL que contiene el mensaje es un vínculo a la página de registro de usuarios externos en Document Security.
 1. Haga clic en la dirección URL o cópiela y péguela en el explorador. Se muestra la página Registro de usuarios externos.
 1. Escriba su nombre, número de teléfono, dirección, organización y contraseña en los cuadros correspondientes y, a continuación, vuelva a escribir la contraseña en el cuadro Confirmar contraseña. La contraseña puede ser cualquier combinación de ocho caracteres.
-1. Haga clic en Guardar. Aparece un mensaje de agradecimiento que le informa de que debe buscar un mensaje de correo electrónico de activación en su correo electrónico. Ahora debe activar su cuenta para finalizar el proceso de registro.
+1. Haga clic en Guardar. Aparece un mensaje de agradecimiento que le informa de que debe buscar un mensaje de correo electrónico de activación en su correo electrónico. Ahora activa tu cuenta para finalizar el proceso de registro.
 
 ## Activar la cuenta de usuario invitada {#activate-your-invited-user-account}
 
-Después de registrarse, Document Security le enviará un correo electrónico de activación. Debe activar la cuenta utilizando la dirección URL del mensaje. A continuación, puede iniciar sesión en Document Security para utilizar documentos protegidos por directivas a los que tenga acceso. Según las funciones que el administrador habilite para los usuarios externos, puede tener permiso para crear directivas, aplicar directivas a documentos y agregar otros usuarios externos a las directivas.
+Después de registrarse, Document Security le enviará un correo electrónico de activación. Active la cuenta utilizando la dirección URL del mensaje. A continuación, puede iniciar sesión en Document Security para utilizar documentos protegidos por directivas a los que tenga acceso. Según las funciones que el administrador habilite para los usuarios externos, puede tener permiso para crear directivas, aplicar directivas a documentos y agregar otros usuarios externos a las directivas.
 
 Su cuenta permanece activa hasta que el administrador la desactiva o elimina.
 

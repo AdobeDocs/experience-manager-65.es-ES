@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '8184'
-ht-degree: 2%
+source-wordcount: '8133'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 **Acerca del servicio Encryption**
 
-El servicio Encryption permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso al contenido. Si un documento de PDF está cifrado con una contraseña, el usuario debe especificar la contraseña de apertura para poder ver el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento de PDF está cifrado con un certificado, el usuario debe descifrar el documento de PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para cifrar el documento de PDF.
+El servicio Encryption permite cifrar y descifrar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
 
 Puede realizar estas tareas mediante el servicio Encryption:
 
@@ -80,7 +80,7 @@ Para realizar mediante programación una operación de servicio Encryption, debe
 
 **Obtener un documento de PDF para cifrar**
 
-Debe obtener un documento de PDF sin cifrar para cifrar el documento con una contraseña. Si intenta proteger un documento de PDF que ya está cifrado, se producirá una excepción.
+Obtenga un documento de PDF sin cifrar para cifrar el documento con una contraseña. Si intenta proteger un documento de PDF que ya está cifrado, se producirá una excepción.
 
 **Establecer opciones de cifrado en tiempo de ejecución**
 
@@ -289,7 +289,7 @@ Para realizar mediante programación una operación de servicio Encryption, debe
 
 **Obtener un documento de PDF para cifrar**
 
-Debe obtener un documento de PDF sin cifrar para cifrarlo. Si intenta proteger un documento de PDF que ya está cifrado, se generará una excepción.
+Obtenga un documento de PDF sin cifrar para cifrar. Si intenta proteger un documento de PDF que ya está cifrado, se generará una excepción.
 
 **Hacer referencia al certificado**
 
@@ -499,7 +499,7 @@ Para realizar mediante programación una operación de servicio Encryption, debe
 
 **Obtener el documento de PDF cifrado**
 
-Debe obtener un documento de PDF cifrado para quitar el cifrado basado en certificados. Si intenta quitar el cifrado de un documento de PDF que no está cifrado, se generará una excepción. Del mismo modo, si intenta quitar el cifrado basado en certificados de un documento cifrado con contraseña, se generará una excepción.
+Obtenga un documento de PDF cifrado para quitar el cifrado basado en certificados. Si intenta quitar el cifrado de un documento de PDF que no está cifrado, se generará una excepción. Del mismo modo, si intenta quitar el cifrado basado en certificados de un documento cifrado con contraseña, se generará una excepción.
 
 **Quitar cifrado**
 
@@ -660,7 +660,7 @@ Para realizar mediante programación una operación de servicio Encryption, debe
 
 **Obtener el documento de PDF cifrado**
 
-Debe obtener un documento de PDF cifrado para quitar el cifrado basado en contraseña. Si intenta quitar el cifrado de un documento de PDF que no está cifrado, se generará una excepción.
+Obtenga un documento de PDF cifrado para quitar el cifrado basado en contraseña. Si intenta quitar el cifrado de un documento de PDF que no está cifrado, se generará una excepción.
 
 **Eliminar la contraseña**
 
@@ -807,7 +807,7 @@ Para realizar mediante programación una operación de servicio Encryption, debe
 
 **Obtener el documento de PDF cifrado**
 
-Debe obtener un documento de PDF cifrado para desbloquearlo. Si intenta desbloquear un documento PDF que no está cifrado, se generará una excepción.
+Obtenga un documento de PDF cifrado para desbloquearlo. Si intenta desbloquear un documento PDF que no está cifrado, se generará una excepción.
 
 **Desbloquear el documento**
 
@@ -984,7 +984,7 @@ Para realizar mediante programación una operación de servicio Encryption, debe
 
 **Obtener el documento de PDF cifrado**
 
-Debe obtener un documento de PDF para determinar el tipo de cifrado que lo protege.
+Obtenga un documento del PDF para determinar el tipo de cifrado que lo protege.
 
 **Determinar el tipo de cifrado**
 

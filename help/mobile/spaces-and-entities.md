@@ -1,17 +1,13 @@
 ---
 title: Espacios y entidades
-seo-title: Developing AEM Mobile Content Services
 description: Esta página sirve como página de aterrizaje para desarrollar servicios de contenido de AEM Mobile.
-seo-description: This page serves a landing page for developing AEM Mobile Content Services.
-uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -56,7 +52,7 @@ Una vez configurados los espacios en el panel, siga estos pasos para crear espac
 
 ## Administración de un espacio {#managing-a-space}
 
-Una vez creado un espacio, haga clic en a la izquierda para administrar el espacio en la lista.
+Después de crear un espacio, haga clic en la izquierda para administrar el espacio en la lista.
 
 AEM Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su contenido en una instancia de publicación de la publicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de publicación de la aplicación.
 
@@ -142,7 +138,7 @@ El **Copia de idioma** Esta función permite a los autores copiar su copia de id
 
    >[!NOTE]
    >
-   >Para desplazarse a una carpeta y ver su contenido o añadir una subcarpeta o entidad, haga clic en el título de la carpeta en la lista de contenido del espacio.
+   >Para desplazarse a una carpeta y ver su contenido o agregar una subcarpeta o entidad, haga clic en el título de la carpeta en la lista de contenido del espacio.
 
 ## Uso de entidades en un espacio {#working-with-entities-in-a-space}
 
@@ -220,7 +216,7 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
    >
    >Cuando haya terminado de agregar recursos a la entidad, puede elegir **Guardar** para guardar los cambios o elija **Guardar y cerrar** para guardar y redirigir a la lista de la consola de Space donde se definen las entidades.
 
-   Además, seleccione una entidad de la lista de la consola del espacio y haga clic en **Propiedades** para ver y editar las propiedades de una entidad definida.
+   Además, seleccione una entidad de la lista de la consola de espacio y haga clic en **Propiedades** para ver y editar las propiedades de una entidad definida.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -244,6 +240,6 @@ Tiene la opción de elegir **Publicar árbol** o **Publicación rápida** para p
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
-   **O bien**,
+   **O**,
 
    Clic **Publicación rápida** para publicar esa entidad específica.

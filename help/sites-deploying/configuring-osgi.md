@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1954'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Para actualizar una configuración con la consola web:
 
 1. Acceda a la **Configuración** de la consola web mediante:
 
-   * Al abrir la consola web desde el vínculo en la **Herramienta -> Operaciones** menú. Después de iniciar sesión en la consola, puede utilizar el menú desplegable de:
+   * Al abrir la consola web desde el vínculo en la **Herramienta > Operaciones** menú. Después de iniciar sesión en la consola, puede utilizar el menú desplegable de:
 
      **OSGi >**
 
@@ -134,7 +134,7 @@ Estos archivos se pueden incluir en paquetes de contenido y reutilizarse en otra
 La consola web no muestra ninguna indicación de en qué parte del repositorio se han guardado los cambios, pero se pueden localizar fácilmente:
 
 1. Cree el archivo de configuración mediante [realización de un cambio inicial en la consola web](#osgi-configuration-with-the-web-console).
-1. Abra CRXDE Lite.
+1. Abra el CRXDE Lite.
 1. En el **Herramientas** menú, seleccione **Consulta...** .
 1. Para buscar el PID de la configuración que ha actualizado, envíe una consulta de **Tipo** `SQL`.
 
@@ -176,7 +176,7 @@ Como el mismo parámetro de configuración se encuentra en varios lugares, el si
 
 >[!NOTE]
 >
->Lea también [cómo definir una configuración basada en repositorio solo para una instancia específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=es).
+>Lea también [cómo definir una configuración basada en repositorio solo para una instancia específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=en).
 
 ### Adición de una nueva configuración al repositorio {#adding-a-new-configuration-to-the-repository}
 

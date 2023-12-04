@@ -2,10 +2,10 @@
 title: Guía de inicio rápido Creación de una carpeta de recursos sin encabezado
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 81%
+source-wordcount: '369'
+ht-degree: 78%
 
 ---
 
@@ -25,8 +25,8 @@ Las carpetas de recursos se utilizan para lo siguiente [organizar recursos de co
 
 Un administrador solo tendría que crear carpetas ocasionalmente para organizar el contenido a medida que se crea. Para los fines de esta guía de introducción, solo necesitamos crear una carpeta.
 
-1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Navegación -> Recursos -> Archivos**.
-1. Haga clic o pulse en **Crear -> Carpeta**.
+1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Navegación > Recursos > Archivos**.
+1. Clic **Crear > Carpeta**.
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
    * El **Nombre** se convertirá en el nombre de nodo en el repositorio.
@@ -38,8 +38,8 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
    ![Configurar la carpeta de recursos](assets/assets-folder-configure.png)
-1. Haga clic o pulse en **Guardar y cerrar**.
-1. Toque o haga clic en **Aceptar** en la ventana de confirmación.
+1. Haga clic en **Guardar y cerrar**.
+1. Clic **OK** en la ventana de confirmación.
 
    ![Ventana de confirmación](assets/assets-folder-confirmation.png)
 

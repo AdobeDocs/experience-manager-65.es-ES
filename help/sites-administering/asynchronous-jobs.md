@@ -2,10 +2,10 @@
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 91%
+source-wordcount: '791'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ Estas operaciones incluyen:
 * Recuperar recursos que estén por encima del umbral establecido, desde una implementación remota de Experience Manager
 * Desplegar Live Copies
 
-Se puede ver el estado de los trabajos asincrónicos desde el panel **[!UICONTROL Estado de trabajo asincrónico]** en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**.
+Puede ver el estado de los trabajos asincrónicos desde el **[!UICONTROL Estado de trabajo asíncrono]** panel en **Navegación global** > **Herramientas** > **Operaciones** > **Trabajos**.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Se puede ver el estado de los trabajos asincrónicos desde el panel **[!UICONTRO
 >
 >Para obtener más información, consulte [configuraciones de cola](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Monitorizar el estado de las operaciones asincrónicas {#monitor-the-status-of-asynchronous-operations}
+## Supervisar el estado de las operaciones asincrónicas {#monitor-the-status-of-asynchronous-operations}
 
 Siempre que AEM procese una operación de manera asincrónica, recibirá una notificación en la [bandeja de entrada](/help/sites-authoring/inbox.md) y por correo electrónico (si está activada).
 
@@ -86,7 +86,7 @@ Puede modificar la programación del trabajo de depuración y la duración por l
 
 1. Guarde los cambios.
 
-## Configurar el procesamiento asincrónico {#configuring-asynchronous-processing}
+## Configuración del procesamiento asincrónico {#configuring-asynchronous-processing}
 
 AEM Puede configurar el número de umbral de recursos, páginas o referencias para que los recursos se procesen de forma asíncrona para procesar una operación en particular y conmutar las notificaciones por correo electrónico cuando se procesen los trabajos.
 
@@ -116,7 +116,7 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 1. Marque la opción **Habilitar notificación por correo electrónico** para recibir notificaciones por correo electrónico para este estado del trabajo. por ejemplo, success, failed.
 1. Guarde los cambios.
 
-### Configurar operaciones de MSM asincrónicas {#configuring-asynchronous-msm-operations}
+### Configurar operaciones asincrónicas de MSM {#configuring-asynchronous-msm-operations}
 
 1. En Navegación global, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 1. En la consola web, abra la **[!UICONTROL Configuración de procesamiento asincrónico de trabajo de operación de movimiento de página.]**

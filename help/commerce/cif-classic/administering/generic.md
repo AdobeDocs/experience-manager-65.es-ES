@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '2907'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 1. Uso del **Productos** consola (mediante **Comercio**) vaya a la ubicación requerida.
 1. Utilice el **Crear** icono para seleccionar (según la estructura y la ubicación):
 
-   * **Crear el producto**
+   * **Crear producto**
    * **Crear variación del producto**
 
    ![Icono Crear con forma de plus](/help/sites-administering/do-not-localize/chlimage_1-14.png)
@@ -165,7 +165,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 >
 >`/etc/commerce/products/...`
 >
->Esto significa que, de forma predeterminada, están bloqueados por la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es), así que configúrelo según sea necesario.
+>Esto significa que, de forma predeterminada, están bloqueados por la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), así que configúrelo según sea necesario.
 
 #### Edición de información de producto: IU táctil optimizada {#editing-product-information-touch-optimized-ui}
 
@@ -194,7 +194,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 
    ![consola productos con referencias abiertas](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Pulse o haga clic en el tipo de referencia (por ejemplo, Páginas de producto) para expandir la lista.
+1. Haga clic en el tipo de referencia (por ejemplo, Páginas de producto) para expandir la lista.
 1. Seleccione una referencia específica para que pueda mostrar las opciones:
 
    * Navegar a pág. producto
@@ -430,7 +430,7 @@ Puede configurar el aspecto del cuadro de diálogo al hacer clic en el punto int
 
    ![icono de configuración](/help/sites-administering/assets/chlimage_1-96.png)
 
-1. Desplazar hacia abajo. Hay un **AÑADIR AL CARRO** pestaña.
+1. Desplácese hacia abajo. Hay un **AÑADIR AL CARRO** pestaña.
 
    ![pestaña añadir al carro](/help/sites-administering/assets/chlimage_1-97.png)
 
@@ -463,13 +463,13 @@ Para generar un catálogo:
    ![crear asistente de catálogo](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Vaya al modelo de catálogo necesario.
-1. Seleccione el **Seleccionar** y pulse o haga clic en el modelo de catálogo necesario.
+1. Seleccione el **Seleccionar** y haga clic en el modelo de catálogo necesario.
 1. Seleccione **Siguiente**.
 
    ![asistente de propiedades de catálogo](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Escriba un **Título** y una **Nombre**.
-1. Seleccione el botón **Crear.** Se crea el catálogo y se abre un cuadro de diálogo.
+1. Seleccione el **Crear** botón. Se crea el catálogo y se abre un cuadro de diálogo.
 
    ![cuadro de diálogo catálogo creado](/help/sites-administering/assets/chlimage_1-101.png)
 
@@ -524,7 +524,7 @@ Para desplegar un catálogo:
 
    ![despliegue](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. En el asistente, establezca el despliegue según sea necesario y, a continuación, toque o haga clic en **Desplegar cambios**.
+1. En el asistente, establezca el despliegue según sea necesario y haga clic en **Desplegar cambios**.
 1. Se abre un cuadro de diálogo. Seleccionar **Listo** cuando finalice el proceso.
 
 #### Despliegue de un catálogo: IU clásica {#rolling-out-a-catalog-classic-ui}
@@ -549,7 +549,7 @@ Para desplegar un catálogo:
 
    ![Icono Importar modelos](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. En el asistente, seleccione el Origen según sea necesario y pulse o haga clic en **Siguiente**.
+1. En el asistente, seleccione el Origen según sea necesario y haga clic en **Siguiente**.
 
    ![asistente de modelo](/help/sites-administering/assets/chlimage_1-102.png)
 

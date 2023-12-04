@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Esta sección solo detalla los vínculos específicos a Adobe Campaign. Para obt
    * **Adobe Campaign: Cancelar suscripción a los servicios**: permite cancelar las suscripciones de un destinatario en Adobe Campaign.
 
 1. Debe tener un **Clave principal cifrada** en cada formulario. Este componente define qué parámetro de URL se utiliza para aceptar la clave principal cifrada de un perfil de Adobe Campaign. En Componentes, seleccione Adobe Campaign para que solo estén visibles esos componentes.
-1. Arrastre el componente **Clave principal cifrada** Vaya al formulario (en cualquier lugar) y toque o haga clic en **Configuración** icono. En el **Adobe Campaign** pestaña, especifique cualquier nombre para el parámetro de URL. Toque o haga clic en la marca de verificación para guardar los cambios.
+1. Arrastre el componente **Clave principal cifrada** Vaya al formulario (en cualquier lugar) y haga clic en **Configuración** icono. En el **Adobe Campaign** pestaña, especifique cualquier nombre para el parámetro de URL. Haga clic en la marca de verificación para guardar los cambios.
 
    Los vínculos generados para este formulario deben utilizar este parámetro de URL y asignarle la clave principal cifrada de un perfil de Adobe Campaign. La clave principal cifrada debe tener la codificación URL (porcentaje) correcta.
 

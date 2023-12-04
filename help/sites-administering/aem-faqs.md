@@ -2,9 +2,9 @@
 title: AEM Preguntas más frecuentess
 description: AEM Utilice estas preguntas frecuentes para comprender, configurar y solucionar problemas o flujos de trabajo comunes en los flujos de trabajo de.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Si el usuario que carga los archivos de película no tiene permisos de eliminaci
 
 #### ¿Cuáles son los ajustes predeterminados para las configuraciones de OOTB al crear la copia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Cuando crea una copia de idioma mediante la IU táctil (**Referencias** -> **Actualizar copia de idioma**), se crea una nueva carpeta DAM en el nuevo idioma y se hace referencia a los recursos desde allí.
+Cuando crea una copia de idioma mediante la IU táctil (**Referencias** > **Actualizar copia de idioma**), se crea una nueva carpeta DAM en el nuevo idioma y se hace referencia a los recursos desde allí.
 
 Esta es la configuración predeterminada para las configuraciones de OOTB. Puede establecer **Traducir recursos de la página** = **No traducir** en Configuraciones de traducción.
 AEM Para la versión 6.4, **Herramientas** > **Cloud Service** > **Servicios de nube de traducción**.

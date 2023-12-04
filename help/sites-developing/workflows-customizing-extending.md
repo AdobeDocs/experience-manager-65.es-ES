@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3589'
-ht-degree: 2%
+source-wordcount: '3499'
+ht-degree: 1%
 
 ---
 
@@ -190,8 +190,8 @@ Para enfocar el componente para utilizarlo en un escenario de flujo de trabajo e
 
 1. Añadir un `String` a la propiedad `cq:formParameters` nodo. El supertipo de componente determina el nombre de la propiedad:
 
-   * Etapa del proceso: `PROCESS`
-   * Etapa de participante: `PARTICIPANT`
+   * Paso del proceso: `PROCESS`
+   * Etapa del participante: `PARTICIPANT`
    * Etapa de participante dinámica: `DYNAMIC_PARTICIPANT`
 
 1. Especifique el valor de la propiedad:
@@ -1042,4 +1042,4 @@ El `_cq_dialog/.content.xml` ejemplo utilizado en este ejemplo:
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  No debe modificar nada en `/libs`, utilícelos simplemente como ejemplos. Si desea utilizar cualquiera de los pasos existentes, cópielos en `/apps` y modifíquelas allí.
+>  No editar nada en `/libs`, utilícelos simplemente como ejemplos. Si desea utilizar cualquiera de los pasos existentes, cópielos en `/apps` y editarlos allí.

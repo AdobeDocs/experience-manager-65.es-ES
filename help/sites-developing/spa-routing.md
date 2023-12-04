@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 1%
+source-wordcount: '487'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Para las aplicaciones de una sola página en la, la aplicación es responsab
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## Enrutamiento de proyectos {#project-routing}
 

@@ -2,10 +2,10 @@
 title: AEM Creación y organización de páginas con la función de
 description: Obtenga información sobre cómo crear y administrar páginas con Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 70%
+source-wordcount: '2417'
+ht-degree: 64%
 
 ---
 
@@ -189,7 +189,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
 1. En el primer paso del asistente puede realizar una de las acciones siguientes:
 
-   * Seleccione la plantilla que desea utilizar para crear la nueva página y, a continuación, toque o haga clic en **Siguiente** para continuar.
+   * Seleccione la plantilla que desee utilizar para crear la nueva página y haga clic en **Siguiente** para continuar.
 
    * **Haga clic en Cancelar** para anular el proceso.
 
@@ -197,7 +197,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
 
 1. En el último paso del asistente puede realizar una de las acciones siguientes:
 
-   * Utilice las tres pestañas para especificar las [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página; a continuación, pulse o haga clic en **Crear** para crear la página.
+   * Utilice las tres pestañas para introducir la variable [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página y haga clic en **Crear** para crear la página.
 
    * Utilice **Atrás** para volver a la selección de plantilla.
 
@@ -303,8 +303,8 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y lo gestiona el mismo asistente. Con este asistente puede:
 
 * Cambiar el nombre de una página sin moverla.
-* Mover la página sin cambiar su nombre.
-* Moverla y cambiarle el nombre al mismo tiempo.
+* Mueva la página sin cambiar su nombre.
+* Mover y cambiar nombre al mismo tiempo.
 
 AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga referencia a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
 
@@ -322,7 +322,7 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
 1. En el paso **Cambiar nombre** del asistente puede realizar una de las acciones siguientes:
 
-   * Especifique el nombre que desea que tenga la página cuando se haya desplazado y, a continuación, toque o haga clic en **Siguiente** para continuar.
+   * Especifique el nombre que desea que tenga la página cuando se haya desplazado y haga clic en **Siguiente** para continuar.
 
    * **Haga clic en Cancelar** para anular el proceso.
 
@@ -383,7 +383,7 @@ Las acciones de movimiento de página siempre se procesan asincrónicamente, lo 
 
   ![Movimiento asincrónico de página](assets/asynchronous-page-move.png)
 
-El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado de los trabajos asincrónicos** ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**
+El estado de los trabajos asincrónicos se puede comprobar en la [**Estado de trabajos asincrónicos** tablero](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en **Navegación global** > **Herramientas** > **Operaciones** > **Trabajos**
 
 >[!NOTE]
 >
@@ -410,7 +410,7 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
    * **Eliminar** para confirmar la acción:
 
       * Si la página no tiene referencias, se eliminará la página.
-      * Si la página dispone de referencias, un cuadro de mensaje le informa de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
+      * Si la página tiene referencias, un cuadro de mensaje le informará de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 title: Traducir contenido
 description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2162'
-ht-degree: 80%
+source-wordcount: '2115'
+ht-degree: 66%
 
 ---
 
@@ -52,15 +52,15 @@ Ambos enfoques se analizan en las secciones siguientes.
 
 Para los propietarios de contenido que también son responsables de la traducción, a menudo es más fácil dejar que AEM cree automáticamente el proyecto de traducción. Para que AEM cree automáticamente un proyecto de traducción basado en la ruta de contenido:
 
-1. Vaya a **Navegación** -> **Recursos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
+1. Vaya a **Navegación** > **Assets** > **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
 1. Seleccione la raíz de idioma del proyecto. En este caso, `/content/dam/wknd/en` está seleccionado.
-1. Toque o haga clic en el selector de carril y muestre el panel **Referencias**.
-1. Haga clic o pulse **Copias de idioma**.
+1. Haga clic en el selector de carril y muestre las **Referencias** panel.
+1. Clic **Copias de idioma**.
 1. Marque la casilla de verificación **Copias de idioma**.
 1. Expanda la sección **Actualizar copias de idioma** en la parte inferior del panel de referencias.
 1. En el menú desplegable **Proyecto**, seleccione **Crear proyecto(s) de traducción**.
 1. Proporcione un título adecuado para el proyecto de traducción.
-1. Pulse o haga clic en **Iniciar**.
+1. Clic **Inicio**.
 
 ![Crear un proyecto de traducción](assets/create-translation-project.png)
 
@@ -76,16 +76,16 @@ Recibirá un mensaje que indica que se creó el proyecto.
 
 Para los gestores de proyectos de traducción, a menudo es necesario seleccionar manualmente contenido específico para incluirlo en un proyecto de traducción. Para crear un proyecto de traducción manual de este tipo, debe empezar creando un proyecto vacío y luego seleccionar el contenido que desea añadir.
 
-1. Vaya a **Navegación** -> **Proyectos**.
-1. Toque o haga clic en **Crear** -> **Carpeta** para crear una carpeta para sus proyectos.
+1. Vaya a **Navegación** > **Proyectos**.
+1. Clic **Crear** > **Carpeta** para crear una carpeta para sus proyectos.
    * Esto es opcional, pero resulta útil para organizar los esfuerzos de traducción.
-1. En el **Crear carpeta** ventana, añadir una **Título** para la carpeta y, a continuación, toque o haga clic en **Crear**.
+1. En el **Crear carpeta** ventana, añadir una **Título** para la carpeta y haga clic en **Crear**.
 
    ![Crear carpeta de proyecto](assets/create-project-folder.png)
 
-1. Toque o haga clic en la carpeta para abrirla.
-1. En la nueva carpeta del proyecto, toque o haga clic en **Crear** -> **Proyecto**.
-1. Los proyectos se basan en plantillas. Toque o haga clic en la plantilla **Proyecto de traducción** para seleccionarla y, a continuación, toque o haga clic en **Siguiente**.
+1. Haga clic en la carpeta para abrirla.
+1. En la nueva carpeta del proyecto, haga clic en **Crear** > **Proyecto**.
+1. Los proyectos se basan en plantillas. Haga clic en **Proyecto de traducción** para seleccionarla y, a continuación, haga clic en **Siguiente**.
 
    ![Seleccionar plantilla de proyecto de traducción](assets/select-translation-project-template.png)
 
@@ -93,11 +93,11 @@ Para los gestores de proyectos de traducción, a menudo es necesario seleccionar
 
    ![Pestaña Básico del proyecto](assets/project-basic-tab.png)
 
-1. En el **Avanzadas** , utilice la pestaña **Idioma de destino** para seleccionar los idiomas a los que se debe traducir el contenido. Haga clic o pulse en **Crear**.
+1. En el **Avanzadas** , utilice la pestaña **Idioma de destino** para seleccionar los idiomas a los que se debe traducir el contenido. Haga clic en **Crear**.
 
    ![Pestaña Avanzadas del proyecto](assets/project-advanced-tab.png)
 
-1. Toque o haga clic en **Abrir** en el cuadro de diálogo de confirmación.
+1. Clic **Abrir** en el cuadro de diálogo de confirmación.
 
    ![Cuadro de diálogo de confirmación del proyecto](assets/project-confirmation-dialog.png)
 
@@ -109,8 +109,8 @@ Los proyectos de traducción están diseñados para recopilar todo el contenido 
 
 Para ver el proyecto de traducción:
 
-1. Vaya a **Navegación** -> **Proyectos**.
-1. Pulse o haga clic en el proyecto que se ha creado en la sección anterior.
+1. Vaya a **Navegación** > **Proyectos**.
+1. Haga clic en el proyecto creado en la sección anterior.
 
 ![Proyecto de traducción](assets/translation-project.png)
 
@@ -129,16 +129,16 @@ AEM Al crear automáticamente el proyecto de traducción, el contenido sin encab
 
 Para ver los detalles del contenido sin encabezado incluidos en este proyecto, haga lo siguiente:
 
-1. Toque o haga clic en el botón de puntos suspensivos en la parte inferior de la **Trabajo de traducción** Tarjeta de.
+1. Haga clic en el botón de los tres puntos en la parte inferior de la **Trabajo de traducción** Tarjeta de.
 1. La ventana **Trabajo de traducción** lista todos los elementos del trabajo.
    ![Detalles del trabajo de traducción](assets/translation-job-detail.png)
-1. Toque o haga clic en una línea para ver el detalle de esa línea, teniendo en cuenta que una línea puede representar varios elementos de contenido para traducir.
-1. Pulse o haga clic en la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en las consolas Fragmentos de contenido o Recursos.
+1. Haga clic en una línea para ver el detalle de esa línea, teniendo en cuenta que una línea puede representar varios elementos de contenido para traducir.
+1. Haga clic en la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en las consolas Fragmentos de contenido o Recursos.
    ![Opciones de trabajo de traducción](assets/translation-job-options.png)
 
 Normalmente, el contenido del trabajo de traducción se inicia en el estado **Borrador** tal como indica la columna **Estado** en la ventana **Trabajo de traducción**.
 
-Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y toque o haga clic en el botón de comillas angulares en la parte superior de la tarjeta **Trabajo de traducción** y seleccione **Inicio**.
+Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y haga clic en las comillas angulares en la parte superior del **Trabajo de traducción** Tarjeta de y seleccione **Inicio**.
 
 ![Iniciar trabajo de traducción](assets/start-translation-job.png)
 
@@ -154,16 +154,16 @@ Al crear manualmente un proyecto de traducción, AEM crea los trabajos necesario
 
 Para añadir contenido a un trabajo de traducción:
 
-1. Toque o haga clic en los puntos suspensivos en la parte inferior de una de las tarjetas de **Trabajo de traducción**.
-1. Compruebe que el trabajo no incluya contenido. Toque o haga clic en el botón **Agregar** en la parte superior de la ventana y, a continuación, seleccione **Recursos/Páginas** en la lista desplegable.
+1. Haga clic en el botón de los tres puntos en la parte inferior de uno de los **Trabajo de traducción** tarjetas.
+1. Compruebe que el trabajo no incluya contenido. Haga clic en **Añadir** en la parte superior de la ventana y, a continuación, **Recursos/Páginas** de la lista desplegable.
 
    ![Trabajo de traducción vacío](assets/empty-translation-job.png)
 
-1. Se abre un navegador de rutas que le permite seleccionar específicamente qué contenido añadir. Busque el contenido y toque o haga clic para seleccionarlo.
+1. Se abre un navegador de rutas que le permite seleccionar específicamente qué contenido añadir. Busque el contenido y haga clic para seleccionar.
 
    ![Navegador de rutas](assets/path-browser.png)
 
-1. Toque o haga clic en **Seleccionar** para añadir el contenido seleccionado al trabajo.
+1. Clic **Seleccionar** para añadir el contenido seleccionado al trabajo.
 1. En el cuadro de diálogo **Traducir**, especifique que desea **Crear copia de idioma**.
 
    ![Crear copia de idioma](assets/translate-copy-master.png)
@@ -172,14 +172,14 @@ Para añadir contenido a un trabajo de traducción:
 
    ![Contenido añadido al trabajo de traducción](assets/content-added.png)
 
-1. Pulse o haga clic en la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en las consolas Fragmentos de contenido o Recursos.
+1. Haga clic en la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en las consolas Fragmentos de contenido o Recursos.
    ![Opciones del trabajo de traducción](assets/translation-job-options-manual.png)
 
 1. Repita estos pasos para incluir todo el contenido necesario en el trabajo.
 
 >[!TIP]
 >
->El navegador de rutas es una potente herramienta que le permite buscar, filtrar y navegar por el contenido. Toque o haga clic en el botón **Solo contenido/Filtros** para alternar el panel lateral y mostrar filtros avanzados como **Fecha de modificación** o **Estado de la traducción**.
+>El navegador de rutas es una potente herramienta que le permite buscar, filtrar y navegar por el contenido. Haga clic en **Solo contenido/Filtros** para alternar el panel lateral y mostrar filtros avanzados como **Fecha de modificación** o **Estado de traducción**.
 >
 >Puede obtener más información sobre el navegador de rutas en la [sección de recursos adicionales.](#additional-resources)
 
@@ -187,7 +187,7 @@ Puede utilizar los pasos anteriores para agregar el contenido necesario a todos 
 
 Normalmente, el contenido del trabajo de traducción se inicia en el estado **Borrador** tal como indica la columna **Estado** en la ventana **Trabajo de traducción**.
 
-Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y toque o haga clic en el botón de comillas angulares en la parte superior de la tarjeta **Trabajo de traducción** y seleccione **Inicio**.
+Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y haga clic en las comillas angulares en la parte superior del **Trabajo de traducción** Tarjeta de y seleccione **Inicio**.
 
 ![Iniciar trabajo de traducción](assets/start-translation-job-manual.png)
 
@@ -205,7 +205,7 @@ Simplemente, vaya al trabajo de traducción completado y seleccione un elemento 
 
 ![Revelar en fragmento de contenido](assets/reveal-in-content-fragment.png)
 
-Pulse o haga clic en dicho icono para abrir el fragmento de contenido traducido en su consola de editor para ver los detalles del contenido traducido.
+Haga clic en ese icono para abrir el fragmento de contenido traducido en su consola de editor para ver los detalles del contenido traducido.
 
 ![Un fragmento de contenido traducido](assets/translated-content-fragment.png)
 
@@ -217,7 +217,7 @@ El propósito del proyecto es reunir todos los recursos relacionados con una tra
 /content/dam/wknd/es
 ```
 
-Si se desplaza a esta carpeta mediante **Navegación** -> **Assets** -> **Archivos**, verá el contenido traducido.
+Si se desplaza a esta carpeta mediante **Navegación** > **Assets** > **Archivos**, verá el contenido traducido.
 
 ![Estructura de carpetas de contenido traducido](assets/translated-file-content.png)
 

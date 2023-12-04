@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Si la base de datos se está ejecutando en modo de registro, como se describe en
 
 ## AEM Haga una copia de seguridad de la base de datos, GDS, repositorio de la y directorios raíz del almacenamiento de contenido {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-Debe poner AEM Forms en modo de copia de seguridad segura (instantánea) o de copia de seguridad móvil (cobertura continua). Antes de configurar AEM Forms para que entre en cualquiera de los modos de copia de seguridad, asegúrese de lo siguiente:
+Ponga AEM Forms en modo de copia de seguridad segura (instantánea) o de copia de seguridad móvil (cobertura continua). Antes de configurar AEM Forms para que entre en cualquiera de los modos de copia de seguridad, asegúrese de lo siguiente:
 
 * Compruebe la versión del sistema y registre los parches o actualizaciones aplicados desde que se realizó la última copia de seguridad completa de la imagen del sistema.
 * Si utiliza copias de seguridad móviles o en modo de instantánea, asegúrese de que la base de datos está configurada con los valores de registro correctos para permitir copias de seguridad rápidas de la base de datos. (Consulte [base de datos AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
@@ -137,7 +137,7 @@ Puede utilizar la interfaz de línea de comandos para sacar AEM Forms del modo d
 
    >[!NOTE]
    >
-   >Establezca el directorio JAVA_HOME como se describe en el capítulo apropiado para su servidor de aplicaciones en [Preparación para la instalación de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_es)*.*
+   >Establezca el directorio JAVA_HOME como se describe en el capítulo apropiado para su servidor de aplicaciones en [Preparación para la instalación de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Ejecute el siguiente comando en una sola línea:
 

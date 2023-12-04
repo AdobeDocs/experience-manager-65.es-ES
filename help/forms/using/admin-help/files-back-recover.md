@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2017'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ AEM La ubicación del GDS se determina durante el proceso de instalación de los
 
 ### Ubicación de GDS {#gds-location}
 
-Si deja vacía la configuración de ubicación durante la instalación, la ubicación predeterminada es un directorio en la instalación del servidor de aplicaciones. Debe realizar una copia de seguridad del siguiente directorio para su servidor de aplicaciones:
+Si deja vacía la configuración de ubicación durante la instalación, la ubicación predeterminada es un directorio en la instalación del servidor de aplicaciones. Haga una copia de seguridad del siguiente directorio para su servidor de aplicaciones:
 
 * (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
 * (WebLogic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`

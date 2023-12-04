@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo configurar el marco de trabajo de 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 47%
+source-wordcount: '1497'
+ht-degree: 41%
 
 ---
 
 # Configuración del marco de trabajo de integración de traducción{#configuring-the-translation-integration-framework}
 
-El marco de trabajo de integración de traducciones se conecta con los servicios de traducción de terceros para organizar la traducción de contenido de AEM.
+AEM El marco de trabajo de integración de traducciones se integra con los servicios de traducción de terceros para organizar la traducción de contenido de la.
 
 * Conéctese a su proveedor de servicios de traducción.
 * Cree una configuración del marco de trabajo de integración de traducción.
@@ -23,7 +23,7 @@ Para obtener una descripción general de las funciones de traducción de conteni
 
 ## Conexión a un proveedor de servicios de traducción {#connecting-to-a-translation-service-provider}
 
-Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción. AEM incluye la capacidad de conexión a Microsoft Translator de forma predeterminada.
+Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción. AEM la capacidad de conexión a Microsoft Translator de forma predeterminada.
 Los siguientes proveedores de traducción proporcionan una implementación de la nueva API para los proyectos de traducción. Vínculos para obtener más información sobre la integración:
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (partner premier de Adobe Exchange)
@@ -60,7 +60,7 @@ Cree una configuración del marco de trabajo de integración de traducciones par
 
 * Qué proveedor de servicios de traducción utilizar.
 * Si se va a realizar una traducción humana o automática.
-* Si se va a traducir otro contenido asociado a una página o recurso, como etiquetas.
+* Si se debe traducir otro contenido asociado a una página o recurso, como etiquetas.
 
 Después de crear una configuración de marco de trabajo, asocia la configuración de la nube con las páginas que desea traducir según la configuración. Cuando se inicia el proceso de traducción, el flujo de trabajo de traducción se ejecuta según la configuración del marco de trabajo asociada.
 
@@ -149,7 +149,7 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
    <td><p>Seleccione el tipo de traducción que el marco de trabajo realiza para los recursos:</p>
     <ul>
      <li>Traducción automática: el proveedor de traducción realiza la traducción inmediatamente mediante traducción automática.</li>
-     <li>Traducción humana: el contenido se envía al proveedor de traducción para que lo traduzcan traductores. </li>
+     <li>Traducción humana: el contenido se envía automáticamente al proveedor de traducción para que lo traduzcan traductores. </li>
      <li>No traducir: los recursos no se envían para su traducción.</li>
     </ul> </td>
   </tr>
@@ -180,14 +180,14 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
  </tbody>
 </table>
 
-1. En la barra lateral, pulse o haga clic en Herramientas > Operaciones > Nube > Cloud Service.
+1. En la barra lateral, haga clic en Herramientas > Operaciones > Cloud > Cloud Service.
 1. En el área Integración de traducción, si se ha creado alguna configuración, determina qué vínculo aparece:
 
-   * Si no se ha creado ninguna configuración, toque o haga clic en Configurar ahora.
-   * Si ya existen configuraciones, toque o haga clic en Mostrar configuraciones y, a continuación, toque o haga clic en el vínculo + que aparece junto a Configuraciones disponibles.
+   * Si no se ha creado ninguna configuración, haga clic en Configurar ahora.
+   * Si ya existen configuraciones, haga clic en Mostrar configuraciones y, a continuación, en el vínculo + que aparece junto a Configuraciones disponibles.
 
-1. Escriba un nombre para la configuración y, a continuación, toque o haga clic en Crear.
-1. Configure las propiedades en la ficha Sitios, comunidades y recursos y, a continuación, toque o haga clic en Aceptar.
+1. Escriba un nombre para la configuración y haga clic en Crear.
+1. Configure las propiedades en la ficha Sitios, comunidades y recursos y, a continuación, haga clic en Aceptar.
 
 ## Configuración de páginas para su traducción {#configuring-pages-for-translation}
 
@@ -208,16 +208,16 @@ Además, para cualquier comunidad [Componentes de SCF](/help/communities/scf.md)
 
 Asocie una página al proveedor de traducción que esté utilizando para traducir la página y las páginas descendientes.
 
-1. En la consola Sitios, seleccione la página que desea configurar y toque o haga clic en Ver propiedades.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Service.
-1. Toque o haga clic en Agregar configuración > Integración de traducción.
-1. Seleccione el proveedor de traducción que desea utilizar y, a continuación, toque o haga clic en Listo.
+1. En la consola Sitios, seleccione la página que desea configurar y haga clic en Ver propiedades.
+1. Haga clic en Editar y luego en la pestaña Cloud Service.
+1. Haga clic en Agregar configuración > Integración de traducción.
+1. Seleccione el proveedor de traducción que desee utilizar y, a continuación, haga clic en Listo.
 
 ### Asociación de páginas a un marco de trabajo integración de traducción {#associating-pages-with-a-translation-integration-framework}
 
 Asocie una página al marco de trabajo de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
-1. En la consola Sitios, seleccione la página que desea configurar y toque o haga clic en Ver propiedades.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Service.
-1. Toque o haga clic en Agregar configuración > Integración de traducción.
-1. Seleccione el marco de trabajo de integración de traducciones que desea utilizar y, a continuación, toque o haga clic en Listo.
+1. En la consola Sitios, seleccione la página que desea configurar y haga clic en Ver propiedades.
+1. Haga clic en Editar y luego en la pestaña Cloud Service.
+1. Haga clic en Agregar configuración > Integración de traducción.
+1. Seleccione el marco de trabajo de integración de traducciones que desea utilizar y haga clic en Listo.

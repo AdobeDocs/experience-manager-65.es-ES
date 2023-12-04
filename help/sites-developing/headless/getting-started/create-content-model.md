@@ -2,10 +2,10 @@
 title: Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado
 description: Defina la estructura del contenido que crea y sirve con las capacidades sin encabezado de Adobe Experience Manager AEM () mediante modelos de fragmentos de contenido.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 55%
+source-wordcount: '478'
+ht-degree: 51%
 
 ---
 
@@ -23,15 +23,15 @@ Los Modelos de fragmento de contenido definen la estructura de los datos y el co
 
 Un arquitecto de la información realizaría estas tareas solo de forma esporádica, a medida que se necesiten nuevos modelos. Para los fines de esta guía de introducción, solo está creando un modelo.
 
-1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Herramientas -> Recursos -> Modelos de fragmentos de contenido**.
-1. Toque o haga clic en la carpeta que se formó al crear la configuración.
+1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Herramientas > Recursos > Modelos de fragmentos de contenido**.
+1. Haga clic en la carpeta que se creó al crear la configuración.
 
    ![La carpeta de modelos](assets/models-folder.png)
-1. Haga clic o pulse en **Crear**.
+1. Haga clic en **Crear**.
 1. Proporcione un **Título de modelo**, **Etiquetas**, y **Descripción**. También puede seleccionar o anular la selección de **Habilitar modelo** para controlar si el modelo se activa inmediatamente tras la creación.
 
    ![Creación de un modelo](assets/models-create.png)
-1. En la ventana de confirmación, pulse o haga clic en **Abrir** para configurar el modelo.
+1. En la ventana de confirmación, haga clic en **Abrir** para configurar el modelo.
 
    ![Ventana de confirmación](assets/models-confirmation.png)
 1. Con el **Editor del modelo de fragmento de contenido**, cree su modelo de fragmento de contenido arrastrando y soltando campos de la columna **Tipos de datos**.
@@ -41,14 +41,14 @@ Un arquitecto de la información realizaría estas tareas solo de forma esporád
 1. Una vez colocado un campo, se deben configurar sus propiedades. El editor cambia automáticamente a **Propiedades** para el campo añadido, donde puede proporcionar los campos obligatorios.
 
    ![Configure las propiedades](assets/models-configure-properties.png)
-1. Cuando haya terminado de crear el modelo, toque o haga clic en **Guardar**.
+1. Cuando haya terminado de crear el modelo, haga clic en **Guardar**.
 
 1. El tipo del modelo recién creado depende de si ha seleccionado **Activar modelo** al crearlo:
    * seleccionado: el nuevo modelo ya está **Habilitado**
    * No seleccionado: el nuevo modelo se crea en modo **Borrador**
 
 1. Si aún no lo está, el modelo debe estar **Habilitado** para utilizarlo.
-   1. Seleccione el modelo que ha creado y, a continuación, toque o haga clic en **Activar**.
+   1. Seleccione el modelo que ha creado y haga clic en **Activar**.
 
       ![Activación del modelo](assets/models-enable.png)
    1. Confirme la activación del modelo tocando o haciendo clic en **Habilitar** en el cuadro de diálogo de confirmación.

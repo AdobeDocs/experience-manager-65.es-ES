@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 13%
+source-wordcount: '1128'
+ht-degree: 7%
 
 ---
 
@@ -50,11 +50,11 @@ Los siguientes contenedores lógicos están disponibles de forma predeterminada 
  <tbody>
   <tr>
    <td> Contenedor Y<br /> </td>
-   <td> El operador boolean AND.<br /> </td>
+   <td> El operador booleano AND.<br /> </td>
   </tr>
   <tr>
    <td> Contenedor O<br /> </td>
-   <td> El operador boolean OR.</td>
+   <td> El operador booleano OR.</td>
   </tr>
  </tbody>
 </table>
@@ -66,11 +66,11 @@ Las siguientes características del segmento están disponibles y se pueden arra
 <table>
  <tbody>
   <tr>
-   <td> Rango de IP<br /> </td>
+   <td> Intervalo IP<br /> </td>
    <td>Define un intervalo de direcciones IP que puede tener el visitante.<br /> </td>
   </tr>
   <tr>
-   <td> Visitas de la página<br /> </td>
+   <td> Visitas individuales de página<br /> </td>
    <td>La frecuencia con la que se ha solicitado la página. <br /> </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@ Las siguientes características del segmento están disponibles y se pueden arra
    <td>Expresión JavaScript que se va a evaluar.<br /> </td>
   </tr>
   <tr>
-   <td> Referencia del segmento <br /> </td>
+   <td> Referencia de segmentos <br /> </td>
    <td>Referencia a otra definición de segmento.<br /> </td>
   </tr>
   <tr>
@@ -110,7 +110,7 @@ Cuando toda la instrucción se evalúa como verdadera, este segmento se ha resue
 
 >[!CAUTION]
 >
->El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al A. Debe asegurarse de que los segmentos no contengan ninguna referencia circular.
+>El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al A. Asegúrese de que los segmentos no contengan ninguna referencia circular.
 
 >[!NOTE]
 >

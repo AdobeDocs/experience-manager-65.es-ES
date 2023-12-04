@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 6%
+source-wordcount: '2037'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ SPA AEM AEM SPA AEM Este artículo presenta preguntas importantes que se deben t
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## SPA AEM Principios de desarrollo de la {#spa-development-principles-for-aem}
 
@@ -192,7 +192,7 @@ AEM SPA La arquitectura general de los entornos de desarrollo, creación y publi
    * SPA El generador clientlib de NPM crea una biblioteca de cliente a partir del proyecto de.
    * AEM Maven se encarga de tomar esa biblioteca e implementarla el complemento de compilación de Maven junto con el componente al autor de la.
 
-* **AEM Author**
+* **AEM Autor de**
 
   AEM SPA El contenido se crea en el autor de la, incluido el autor de la creación
 
@@ -204,7 +204,7 @@ AEM SPA La arquitectura general de los entornos de desarrollo, creación y publi
    1. SPA Cuando se ejecuta la aplicación de la, se solicita el JSON, lo que permite a la aplicación crear el DOM de la página, incluido el `cq-data` atributos.
    1. Esta `cq-data` Los atributos de permiten al editor cargar información de página adicional para saber qué configuraciones de edición están disponibles para los componentes.
 
-* **AEM Publish**
+* **AEM Publicación de**
 
   SPA Aquí es donde el contenido creado y las bibliotecas compiladas, incluidos los artefactos de aplicación, clientlibs y componentes, se publican para uso público.
 

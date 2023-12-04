@@ -4,10 +4,10 @@ description: Aprenda a preparar el contenido para la traducción en Adobe Experi
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 58%
+source-wordcount: '669'
+ht-degree: 44%
 
 ---
 
@@ -56,20 +56,20 @@ Puede utilizar cualquiera de los dos formatos, según la estructura que haya ele
 El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una copia de idioma de un sitio web. Para obtener instrucciones sobre el uso de la IU clásica, consulte [Creación de una raíz de idioma mediante la IU clásica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Vaya a Sitios.
-1. Toque o haga clic en el sitio para el que desea crear una copia de idioma.
+1. Haga clic en el sitio para el que desea crear una copia de idioma.
 
-   Por ejemplo, para crear una copia de idioma del sitio de Geometrixx Outdoors, debe tocar o hacer clic en Sitio de Geometrixx Outdoors.
+   Por ejemplo, para crear una copia de idioma del sitio de Geometrixx Outdoors, debe hacer clic en Sitio de Geometrixx Outdoors.
 
-1. Toque o haga clic en Crear y, a continuación, toque o haga clic en Crear página.
+1. Haga clic en Crear y, a continuación, en Crear página.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Seleccione la plantilla Página y, a continuación, haga clic o pulse Siguiente.
-1. En el campo Nombre escriba el código de país con el formato de `<language-code>` o `<language-code>_<country-code>`, por ejemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.
+1. Seleccione la plantilla de página y haga clic en Siguiente.
+1. En el campo Nombre escriba el código de país con el formato `<language-code>` o `<language-code>_<country-code>`, por ejemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Haga clic o pulse Crear. En el cuadro de diálogo de confirmación, toque o haga clic en **Listo** para volver a la consola Sitios, o **Abierto** para abrir la copia de idioma.
+1. Haga clic en Crear. En el cuadro de diálogo de confirmación, haga clic en **Listo** para volver a la consola Sitios, o **Abrir** para abrir la copia de idioma.
 
 ## Ver el estado de las raíces de los idiomas {#seeing-the-status-of-language-roots}
 
@@ -79,8 +79,8 @@ La IU táctil optimizada proporciona un panel Referencias que muestra una lista 
 
 El siguiente procedimiento utiliza la IU táctil optimizada para abrir el panel Referencias de una página.
 
-1. En la consola Sitios, seleccione una página del sitio y toque o haga clic en **Referencias**.
+1. En la consola Sitios, seleccione una página del sitio y haga clic en **Referencias**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. En el panel Referencias, toque o haga clic en **Copias de idioma**. El panel Copias de idioma muestra las copias de idioma del sitio web.
+1. En el panel Referencias, haga clic en **Copias de idioma**. El panel Copias de idioma muestra las copias de idioma del sitio web.

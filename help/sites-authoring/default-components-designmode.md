@@ -2,9 +2,9 @@
 title: Configuración de componentes predeterminados en el modo Diseño
 description: Configuración de componentes de Adobe Experience Manager en el modo Diseño.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '905'
 ht-degree: 10%
 
 ---
@@ -56,11 +56,11 @@ Para habilitar o deshabilitar un componente:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Toque o haga clic en un componente. El componente tendrá un borde azul cuando se seleccione.
+1. Haga clic en un componente. El componente tiene un borde azul cuando se selecciona.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Toque o haga clic en **Principal** icono.
+1. Haga clic en **Principal** icono.
 
    ![Principal](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -79,7 +79,7 @@ Para habilitar o deshabilitar un componente:
    El cuadro de diálogo tiene dos pestañas:
 
    * Componentes permitidos
-   * Configuración
+   * Ajustes
 
    **Componentes permitidos**
 
@@ -109,7 +109,7 @@ Para habilitar o deshabilitar un componente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Toque o haga clic en un componente con un borde azul. En este ejemplo, se selecciona un componente de imagen a pantalla completa.
+1. Haga clic en un componente con un borde azul. En este ejemplo, se selecciona un componente de imagen a pantalla completa.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -131,7 +131,7 @@ Para habilitar o deshabilitar un componente:
 
    El **Propiedades** La pestaña permite configurar los parámetros de diseño importantes del componente. Por ejemplo, para un componente de imagen puede definir el tamaño máximo y mínimo de la imagen permitido.
 
-   **Características**
+   **Funciones**
 
    El **Funciones** La pestaña permite activar o desactivar funciones adicionales del componente. Por ejemplo, para un componente de imagen puede definir la orientación de la imagen, las opciones de recorte disponibles y si se puede cargar una imagen.
 
@@ -153,4 +153,4 @@ Para habilitar o deshabilitar un componente:
 
    ![Mover](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Toque o haga clic en **Listo** para guardar y cerrar el cuadro de diálogo.
+1. Haga clic en **Listo** para guardar y cerrar el cuadro de diálogo.

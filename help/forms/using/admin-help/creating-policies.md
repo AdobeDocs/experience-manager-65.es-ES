@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4715'
+source-wordcount: '4713'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La seguridad de los documentos proporciona los siguientes tipos de directivas.
 
 **Políticas personales**
 
-Los usuarios pueden crear, editar, copiar, eliminar y aplicar sus propias directivas con la configuración adecuada para una situación concreta. Solo la persona que crea una directiva y los administradores pueden acceder a esa directiva personal. Las directivas personales aparecen en la ficha Mis directivas de la página Directivas.
+Los usuarios pueden crear, editar, copiar, eliminar y aplicar sus propias directivas con la configuración adecuada para una situación concreta. Solo la persona que crea una directiva y el administrador pueden acceder a esa directiva personal. Las directivas personales aparecen en la ficha Mis directivas de la página Directivas.
 
 Los usuarios invitados también pueden crear, editar, copiar y eliminar directivas personales si el administrador habilita esta capacidad.
 
@@ -38,9 +38,9 @@ Los administradores y coordinadores de conjuntos de directivas crean directivas 
 
 Cuando instala Document Security por primera vez, contiene una directiva compartida, denominada *Restringir a todas las identidades*. Cuando esta directiva se aplica a un documento, cualquier usuario que pueda iniciar sesión en Document Security puede acceder al documento. Esta directiva se encuentra en el conjunto de directivas denominado *Conjunto de directivas globales*. De forma predeterminada, esta directiva no está habilitada. Puede habilitarlo si se adapta a las necesidades de su organización.
 
-**Directivas generadas automáticamente por Microsoft Outlook**
+**Directivas generadas automáticamente por Microsoft® Outlook**
 
-Con Acrobat, puede aplicar directivas a documentos que envíe como datos adjuntos de correo electrónico en Microsoft Outlook. En Outlook, puede proteger un documento mediante una directiva existente o mediante una directiva generada automáticamente que Acrobat genera con la configuración de confidencialidad predeterminada y se aplica al documento adjunto a un mensaje de correo electrónico. (Consulte *[Ayuda de Acrobat](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
+Con Acrobat, puede aplicar directivas a documentos que envíe como datos adjuntos de correo electrónico en Microsoft® Outlook. En Outlook, puede proteger un documento utilizando una directiva existente. O bien, puede utilizar una directiva generada automáticamente y que Acrobat genera con la configuración de confidencialidad predeterminada y se aplica al documento adjunto a un mensaje de correo electrónico. (Consulte *[Ayuda de Acrobat](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
@@ -64,23 +64,23 @@ Los usuarios pueden crear o editar directivas personales para su propio uso. Los
 
 ### Consideraciones para editar directivas {#considerations-for-editing-policies}
 
-Cuando edita una directiva, los cambios afectan a los documentos que la directiva protege actualmente y a los documentos que la directiva protege posteriormente. Por ejemplo, si elimina destinatarios de una directiva que está aplicada actualmente a un documento, los destinatarios ya no podrán abrir el documento.
+Cuando edita una directiva, los cambios afectan a los documentos que la directiva protege actualmente y a los documentos que la directiva protege posteriormente. Por ejemplo, si elimina destinatarios de una directiva aplicada a un documento, los destinatarios ya no podrán abrir el documento.
 
 El estado del documento determina cuándo se aplica el cambio:
 
 * Si el documento está en línea, los cambios se aplican inmediatamente a menos que el usuario tenga el documento abierto. En este caso, el usuario debe cerrar el documento para que los cambios surtan efecto.
-* Si un destinatario utiliza el documento sin conexión (por ejemplo, en un equipo portátil), los cambios surtirán efecto la próxima vez que el destinatario ponga el documento en línea y lo sincronice con Document Security abriendo cualquier documento protegido por una directiva.
+* Si un destinatario utiliza el documento sin conexión (por ejemplo, en un equipo portátil), los cambios surtirán efecto la próxima vez que el destinatario ponga el documento en línea. A continuación, se sincroniza con Document Security abriendo cualquier documento protegido por directivas.
 
 >[!NOTE]
 >
->Las directivas que Acrobat genera automáticamente para los destinatarios de documentos adjuntos a mensajes de correo electrónico en Microsoft Outlook no aparecen en la lista de directivas. Sólo puede ver estas directivas si abre la página Detalle del documento para el documento asociado.
+>Las directivas que Acrobat genera automáticamente para los destinatarios de documentos adjuntos a mensajes de correo electrónico en Microsoft® Outlook no aparecen en la lista de directivas. Sólo puede ver estas directivas si abre la página Detalle del documento para el documento asociado.
 
 Al editar directivas, se aplican estas restricciones:
 
-* Los usuarios invitados solo pueden editar directivas si el administrador habilita esta capacidad. Si no puede editar directivas, la opción Editar no estará disponible.
+* Los usuarios invitados solo pueden editar directivas si el administrador habilita esta capacidad. Si no puede editar directivas, la opción Editar no está disponible.
 * Los coordinadores de conjuntos de directivas solo pueden editar directivas dentro de conjuntos de directivas si tienen los permisos correctos. El superusuario o el administrador de conjuntos de directivas establece estos permisos en la interfaz de administrador de Document Security.
 * Si la directiva tiene una marca de agua configurada que el administrador eliminó desde que se creó la directiva, esta marca de agua ya no se aplicará a los documentos si edita y guarda la directiva. Las marcas de agua eliminadas permanecen en vigor únicamente para las directivas existentes siempre que no edite la directiva. Si edita la directiva, debe seleccionar otra marca de agua para reemplazar la eliminada.
-* No puede conceder acceso anónimo a un documento editando la directiva que se aplica actualmente. Si edita la directiva, los usuarios deben iniciar sesión para acceder al documento. Para aplicar el acceso anónimo a este documento, primero quite la directiva en la aplicación cliente y, a continuación, aplique otra directiva que permita el acceso anónimo.
+* No se puede conceder acceso anónimo a un documento editando la directiva aplicada. Si edita la directiva, los usuarios deben iniciar sesión para acceder al documento. Para aplicar el acceso anónimo a este documento, primero quite la directiva en la aplicación cliente y, a continuación, aplique otra directiva que permita el acceso anónimo.
 * Las directivas que Acrobat genera automáticamente para los destinatarios de un documento adjunto a un mensaje de correo electrónico en Microsoft Outlook no aparecen en la lista de directivas. Para tener acceso a esta directiva, busque el documento en la página Documentos, abra la página Detalle del documento y haga clic en el nombre de la directiva en la lista de detalles del documento.
 
 **Crear o editar una directiva**
@@ -103,14 +103,14 @@ Al editar directivas, se aplican estas restricciones:
    * barra invertida (\)
    * barra diagonal (/)
 
-   Si utiliza el siguiente carácter en el nombre o la descripción, se convierten en espacios:
+   Si utilizó el siguiente carácter en el nombre o la descripción, se convierten en espacios:
 
    * retorno de carro (carácter ASCII 13)
    * nueva línea (carácter ASCII 10).
 
    >[!NOTE]
    >
-   >Puede crear un nombre de directiva que contenga caracteres extendidos; sin embargo, cuando se realiza una comparación entre dos cadenas, los caracteres acentuados y no acentuados como &quot;e&quot; y &quot;é&quot; se consideran iguales. Cuando alguien crea una directiva, se realiza una comparación para comprobar si ya existe una directiva con el mismo nombre. La comparación no puede distinguir entre nombres que son iguales excepto para caracteres acentuados. Se supone que la directiva ya se ha agregado a la base de datos y que la nueva no se ha agregado.
+   Puede crear un nombre de directiva que contenga caracteres extendidos; sin embargo, cuando se realiza una comparación entre dos cadenas, los caracteres acentuados y no acentuados como &quot;e&quot; y &quot;é&quot; se consideran iguales. Cuando alguien crea una directiva, se realiza una comparación para comprobar si existe una directiva con el mismo nombre. La comparación no puede distinguir entre nombres que son iguales excepto para caracteres acentuados. Se supone que la directiva ya se ha agregado a la base de datos y que la nueva no se ha agregado.
 
 1. Agregue usuarios y grupos a la directiva y establezca los permisos adecuados. (Consulte [Usuarios y grupos](creating-policies.md#users-and-groups).)
 1. En Configuración general, seleccione las opciones adecuadas. (Consulte [Configuración general](creating-policies.md#general-settings).)
@@ -124,15 +124,15 @@ Al editar directivas, se aplican estas restricciones:
 
    Para que la directiva esté disponible para los usuarios, actívela. (Consulte [Habilitar o deshabilitar directivas compartidas](creating-policies.md#enable-or-disable-shared-policies).)
 
-### Usuarios y grupos  {#users-and-groups}
+### Usuarios y grupos {#users-and-groups}
 
 En el área Usuarios y grupos, especifique los usuarios que tienen acceso a los documentos protegidos con la directiva. Para cada usuario o grupo que especifique, también debe establecer los privilegios de uso del documento.
 
 >[!NOTE]
 >
->El editor del documento es el usuario que protege el documento con la directiva. Este usuario siempre se incluye de forma predeterminada en una directiva, con derechos de acceso completos, incluidas las capacidades de revocación y cambio de directivas. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor del documento para las directivas compartidas. Por ejemplo, el administrador puede restringir el acceso al documento o cambiar la directiva al editor del documento.
+El editor del documento es el usuario que protege el documento con la directiva. Este usuario siempre se incluye de forma predeterminada en una directiva, con derechos de acceso completos, incluidas las capacidades de revocación y cambio de directivas. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor del documento para las directivas compartidas. Por ejemplo, el administrador puede restringir el acceso al documento o cambiar la directiva al editor del documento.
 
-**Agregar usuario o grupo:** Para agregar un usuario o grupo de usuarios, haga clic en Agregar usuario o grupo y, a continuación, haga clic en Búsqueda avanzada para buscar usuarios o grupos. Los usuarios incluyen a los usuarios internos de su organización y a los usuarios invitados que se han registrado en Document Security. Al seleccionar esta opción, aparecerá la página Agregar Usuario o Grupo:
+**Agregar usuario o grupo:** Para agregar un usuario o un grupo de usuarios, haga clic en Agregar usuario o grupo y, a continuación, haga clic en Búsqueda avanzada para encontrar usuarios o grupos. Los usuarios incluyen a los usuarios internos de su organización y a los usuarios invitados que se han registrado en Document Security. Al seleccionar esta opción, aparecerá la página Agregar Usuario o Grupo:
 
 * En el cuadro Buscar, escriba el nombre de usuario o de grupo o la dirección de correo electrónico.
 * En la lista Utilizando, seleccione Nombre o Correo electrónico.
@@ -142,7 +142,7 @@ En el área Usuarios y grupos, especifique los usuarios que tienen acceso a los 
 
 >[!NOTE]
 >
->Si introduce un nombre de usuario o una dirección de correo electrónico invitados correctos y no se devuelve ningún resultado, es posible que el usuario no se haya registrado aún o que la cuenta se haya eliminado. Puede intentar agregar el usuario como tipo de usuario invitado o ponerse en contacto con el administrador.
+Si introduce un nombre de usuario o una dirección de correo electrónico invitados correctos y no se devuelve ningún resultado, es posible que el usuario no se haya registrado aún o que la cuenta se haya eliminado. Puede intentar agregar el usuario como tipo de usuario invitado o ponerse en contacto con el administrador.
 
 **Invitar nuevo usuario:** Para agregar un usuario invitado, haga clic en Invitar nuevo usuario, escriba la dirección de correo electrónico del usuario en el cuadro que aparece y haga clic en Invitar. Esta opción solo está disponible si el administrador la ha activado. Cuando se agregan nuevos usuarios invitados a una directiva, Document Security envía un correo electrónico de invitación de registro si aún no se invita a los usuarios a registrarse. Los usuarios deben utilizar el vínculo del correo electrónico para crear una cuenta y, a continuación, deben activarla.
 
@@ -152,7 +152,7 @@ Después de registrarse, los usuarios invitados pueden utilizar los documentos p
 
 >[!NOTE]
 >
->Para permitir el acceso anónimo a un documento protegido por una directiva que actualmente no lo tiene, quite la directiva existente y aplique una directiva que permita el acceso anónimo. Si cambia o cambia la directiva existente, los usuarios deben iniciar sesión para acceder al documento.
+Para permitir el acceso anónimo a un documento protegido por una directiva que actualmente no lo tiene, quite la directiva existente y aplique una directiva que permita el acceso anónimo. Si cambia o cambia la directiva existente, los usuarios deben iniciar sesión para acceder al documento.
 
 #### Especifique los permisos de documento para usuarios y grupos {#specify-the-document-permissions-for-users-and-groups}
 
@@ -192,7 +192,7 @@ Estos permisos de documento están disponibles en la ficha Opciones. Puede aplic
 
 **Sin conexión:** Permite al usuario ver un documento sin conexión protegido con esta directiva.
 
-**Validez del permiso:** Seleccione Los permisos siempre son válidos o establezca un período de validez de permisos de documento. Si selecciona un periodo de validez, haga clic en los iconos del calendario para seleccionar una fecha y utilice las flechas para especificar la hora en formato de 24 horas.
+**Validez del permiso:** Seleccione Los permisos siempre son válidos o establezca un período de validez de permisos de documento. Si selecciona un periodo de validez, haga clic en el icono del calendario para seleccionar una fecha y utilice las flechas para especificar la hora en formato de 24 horas.
 
 En el caso de las directivas compartidas, los administradores pueden deshabilitar los siguientes privilegios para el editor del documento (el usuario que aplica la directiva a un documento):
 
@@ -216,15 +216,15 @@ El área Configuración general contiene la siguiente configuración:
 
 >[!NOTE]
 >
->Las fechas de validez se basan en la zona horaria del sistema de seguridad de documentos, no en la del equipo local.
+Las fechas de validez se basan en la zona horaria del sistema de seguridad de documentos, no en la del equipo local.
 
 **Auditoría:** Habilite o deshabilite la auditoría de los eventos asociados a un documento protegido por una directiva. Por ejemplo, Document Security puede registrar eventos como intentos de abrir un documento. Los eventos auditados aparecen en la lista de la página Eventos. Si no selecciona esta opción, Document Security no registra eventos para los documentos asociados a la directiva.
 
 >[!NOTE]
 >
->El administrador también debe habilitar la auditoría de servidores en la página Configuración de auditoría y privacidad para que funcione la función de auditoría.
+El administrador también debe habilitar la auditoría de servidores en la página Configuración de auditoría y privacidad para que funcione la función de auditoría.
 
-**Seguimiento de uso extendido:** Habilite o deshabilite el seguimiento de uso extendido. document security admite el seguimiento de eventos de usuario asociados con diversas operaciones realizadas en un archivo de PDF. Se puede acceder al objeto de seguridad del documento mediante un JavaScript. Un clic en un botón, un archivo multimedia que se está reproduciendo o el guardado de un archivo son algunos ejemplos de eventos que se pueden activar desde un PDF protegido por una directiva. Con el objeto Document Security, también puede recuperar información del usuario. El seguimiento de eventos puede habilitarse desde el servidor de Document Security a nivel global o de directiva.
+**Seguimiento de uso extendido:** Habilite o deshabilite el seguimiento de uso extendido. La seguridad de los documentos admite el seguimiento de eventos de usuario asociados con varias operaciones realizadas en un archivo de PDF. Se puede acceder al objeto de seguridad del documento mediante un JavaScript. Un clic en un botón, un archivo multimedia que se está reproduciendo o el guardado de un archivo son algunos ejemplos de eventos que se activan desde un PDF protegido por una directiva. Con el objeto Document Security, también puede recuperar información del usuario. El seguimiento de eventos puede habilitarse desde el servidor de Document Security a nivel global o de directiva.
 
 **Período de concesión sin conexión automática:** Número máximo de días que el destinatario puede utilizar el documento protegido por una directiva sin conexión (sin una conexión activa a Internet o a la red). Cuando caduca el período de concesión, el destinatario debe sincronizar de nuevo el documento para seguir utilizándolo.
 
@@ -236,25 +236,25 @@ Seleccione los proveedores de autenticación externos si ya ha configurado algun
 
 Puede anular la configuración de autenticación configurada en el servidor y especificar las opciones de autenticación relevantes para esta directiva. Seleccione Anular configuración de autenticación global y, a continuación, las opciones de autenticación correspondientes a esta directiva. Están disponibles las siguientes opciones de autenticación:
 
-**Permitir autenticación de contraseña de nombre de usuario:** Seleccione esta opción para permitir que las aplicaciones cliente utilicen la autenticación de nombre de usuario y contraseña al conectarse al servidor.
+**Permitir autenticación de contraseña de nombre de usuario:** Seleccione esta opción si desea permitir que las aplicaciones cliente utilicen la autenticación de nombre de usuario y contraseña al conectarse al servidor.
 
-**Permitir autenticación Kerberos:** Seleccione esta opción para permitir que las aplicaciones cliente utilicen la autenticación Kerberos al conectarse al servidor.
+**Permitir autenticación Kerberos:** Seleccione esta opción si desea permitir que las aplicaciones cliente utilicen la autenticación Kerberos al conectarse al servidor.
 
-**Permitir autenticación de certificado de cliente:** Seleccione esta opción para permitir que las aplicaciones cliente utilicen autenticación de certificado al conectarse al servidor.
+**Permitir autenticación de certificado de cliente:** Seleccione esta opción si desea permitir que las aplicaciones cliente utilicen autenticación de certificado al conectarse al servidor.
 
 **Permitir autenticación extendida** Seleccione para habilitar la autenticación extendida. Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de Document Security
 
-Si va a anular la configuración de autenticación global, puede elegir las opciones de autenticación correspondientes a esta directiva. Por ejemplo, si ha habilitado tres opciones de autenticación (nombre de usuario y contraseña, certificado de cliente y autenticación extendida) en el servidor, puede anular esa configuración global y seleccionar sólo autenticación extendida para esta directiva. Debe asegurarse de que la opción de autenticación que selecciona aquí ya está configurada en el servidor. En este ejemplo, no puede seleccionar Kerberos como opción de autenticación porque no está configurado en el servidor.
+Si va a anular la configuración de autenticación global, puede elegir las opciones de autenticación correspondientes a esta directiva. Por ejemplo, si ha habilitado tres opciones de autenticación (nombre de usuario y contraseña, certificado de cliente y autenticación extendida) en el servidor, puede anular esa configuración global y seleccionar sólo autenticación extendida para esta directiva. Asegúrese de que la opción de autenticación que selecciona aquí ya está configurada en el servidor. En este ejemplo, no puede seleccionar Kerberos como opción de autenticación porque no está configurado en el servidor.
 
 >[!NOTE]
 >
->La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posteriores.
+La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posteriores.
 
 ### Configuración avanzada {#advanced-settings}
 
 El área Configuración avanzada contiene la siguiente configuración:
 
-**Marca de agua dinámica:** Seleccione una marca de agua para que se muestre dinámicamente en las páginas de un documento (por ejemplo, cuando un destinatario imprima el documento). Las marcas de agua dinámicas identifican de forma exclusiva un documento, lo que contribuye a garantizar su confidencialidad y a evitar la infracción de los derechos de autor. Por ejemplo, el administrador puede configurar una marca de agua dinámica que muestre la fecha actual, el nombre de usuario o el identificador de la persona que está utilizando el documento o el nombre de la directiva utilizada para proteger el documento. Una marca de agua también puede mostrar texto personalizado o elementos gráficos, si están configurados. Los administradores configuran las opciones de marcas de agua, y los administradores y usuarios pueden aplicarlas a las directivas.
+**Marca de agua dinámica:** Seleccione una marca de agua para que se muestre dinámicamente en las páginas de un documento (por ejemplo, cuando un destinatario imprima el documento). Las marcas de agua dinámicas identifican de forma exclusiva un documento, lo que contribuye a garantizar su confidencialidad y a evitar la infracción de los derechos de autor. Por ejemplo, el administrador puede configurar una marca de agua dinámica que muestre la fecha actual, el nombre de usuario o el identificador de la persona que utiliza el documento. O bien, el nombre de la directiva utilizada para proteger el documento. Una marca de agua también puede mostrar texto personalizado o elementos gráficos, si están configurados. Los administradores configuran las opciones de marca de agua, y los administradores y usuarios pueden aplicarlas a las directivas.
 
 (Consulte [Configurar marcas de agua dinámicas](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).)
 
@@ -262,11 +262,11 @@ Si está editando una directiva y el administrador eliminó una marca de agua co
 
 >[!NOTE]
 >
->En el caso de las directivas que proporcionan acceso de usuario anónimo, el nombre de usuario y el identificador de un usuario anónimo no se muestran como una marca de agua aunque seleccione este tipo de marca de agua.
+En el caso de las directivas que proporcionan acceso de usuario anónimo, el nombre de usuario y el identificador de un usuario anónimo no se muestran como una marca de agua aunque seleccione este tipo de marca de agua.
 
 **Utilice únicamente complementos de Acrobat certificados para PDF:** Cuando se selecciona para una directiva, esta opción especifica que Acrobat 8.0 y versiones posteriores deben ejecutarse en modo certificado al abrir documentos protegidos con la directiva. Cuando Acrobat se ejecuta en modo certificado, no carga ningún complemento de terceros.
 
-Seleccione esta opción si le preocupa que un destinatario de documentos escriba un complemento que pueda eludir cualquiera de las protecciones de documentos de Acrobat 8.0 y posteriores. No seleccione esta opción si los destinatarios del documento necesitan utilizar complementos de terceros en Acrobat para interactuar con documentos.
+Seleccione esta opción si le preocupa que un destinatario de documentos escriba un complemento que pueda eludir cualquiera de las protecciones de documentos de Acrobat 8.0 y posteriores. No seleccione esta opción si los destinatarios del documento deben utilizar complementos de terceros en Acrobat para interactuar con documentos.
 
 Esta opción solo habilita el modo certificado en Acrobat 8.0 o posterior; el administrador debe deshabilitar el acceso para Acrobat 7.0.
 
@@ -300,7 +300,7 @@ Aparece una X roja junto a una directiva deshabilitada.
 
 >[!NOTE]
 >
->Los administradores no pueden deshabilitar las directivas personales y los usuarios no pueden habilitar ni deshabilitar sus propias directivas.
+Los administradores no pueden deshabilitar las directivas personales y los usuarios no pueden habilitar ni deshabilitar sus propias directivas.
 
 1. En la página de seguridad del documento, haga clic en Directivas y, a continuación, haga clic en la ficha Conjuntos de directivas.
 1. Haga clic en el nombre del conjunto de directivas correspondiente y haga clic en la ficha Directivas.
@@ -310,9 +310,9 @@ Aparece una X roja junto a una directiva deshabilitada.
 
 Mediante la ficha Mis directivas, puede buscar directivas personales.
 
-Los conjuntos de directivas que crean los administradores se muestran en la ficha Conjuntos de directivas de la página Directivas con información sobre el conjunto de directivas, incluido su nombre, la fecha de creación y modificación, y una descripción. Haga clic en el nombre de un conjunto de directivas para ver sus detalles. Los coordinadores de conjuntos de directivas que tienen permiso para administrar directivas pueden crear directivas compartidas dentro de un conjunto de directivas concreto.
+Los conjuntos de directivas que crean los administradores se muestran en la ficha Conjuntos de directivas de la página Directivas. Contienen información sobre el conjunto de directivas, incluido su nombre, la fecha de creación y modificación, y una descripción. Haga clic en el nombre de un conjunto de directivas para ver sus detalles. Los coordinadores de conjuntos de directivas que tienen permiso para administrar directivas pueden crear directivas compartidas dentro de un conjunto de directivas concreto.
 
-Al crear o editar una directiva, se muestra una página donde puede configurar detalles como el nombre de la directiva, los niveles de permisos, la configuración de confidencialidad y los destinatarios que se incluirán en la directiva.
+Al crear o editar una directiva, se muestra una página donde puede configurar el nombre de la directiva, los niveles de permisos, la configuración de confidencialidad y los destinatarios que se incluirán en ella.
 
 El administrador puede configurar las siguientes opciones de confidencialidad para una directiva:
 
@@ -326,10 +326,10 @@ Puede ver información más detallada sobre una directiva que aparece en la list
 
 >[!NOTE]
 >
->Las directivas que Acrobat genera automáticamente para los destinatarios de documentos adjuntos a mensajes de correo electrónico en Microsoft Outlook no aparecen en la lista de directivas. Sólo puede ver estas directivas si abre la página Detalle del documento para el documento asociado.
+Las directivas que Acrobat genera automáticamente para los destinatarios de documentos adjuntos a mensajes de correo electrónico en Microsoft Outlook no aparecen en la lista de directivas. Sólo puede ver estas directivas si abre la página Detalle del documento para el documento asociado.
 
 1. En la página de seguridad del documento, haga clic en Directivas y, a continuación, haga clic en la ficha Mis directivas.
-1. Rellene la información de búsqueda para buscar directivas personales.
+1. Rellene la información de búsqueda para poder buscar directivas personales.
 1. Seleccione la directiva adecuada en la lista.
 1. En la página Detalles de la directiva, puede ver los detalles de la directiva, editarla o ver eventos relacionados con ella.
 
@@ -343,9 +343,9 @@ Los administradores pueden buscar directivas compartidas y directivas personales
 
 1. En la lista Buscar, seleccione una de estas opciones:
 
-   **ID de política:** Número de identificación de la directiva que se genera cuando el usuario la crea. Debe escribir el ID de directiva exacto.
+   **ID de política:** Número de identificación de la directiva que se genera cuando el usuario la crea. Escriba el ID exacto de la directiva.
 
-   **Nombre de política:** Nombre de la directiva. Puede buscar parte o todo el nombre de la directiva.
+   **Nombre de política:** Nombre de la directiva. Puede buscar parte del nombre de la directiva o todo.
 
 1. En el cuadro de texto, escriba el valor correspondiente. Por ejemplo, si ha seleccionado Nombre de directiva, escriba el nombre de directiva que está buscando.
 1. En la lista Mostrar, seleccione el número de resultados que desea mostrar y, a continuación, haga clic en Buscar. Se muestran los resultados de la búsqueda.
@@ -353,9 +353,9 @@ Los administradores pueden buscar directivas compartidas y directivas personales
 
 ## Copiar una directiva {#copy-a-policy}
 
-Puede copiar una directiva existente y guardarla con un nombre y una descripción nuevos. Copiar directivas es una forma eficaz de crear nuevas directivas utilizando la configuración existente.
+Puede copiar una directiva existente y guardarla con un nombre y una descripción nuevos. Copiar directivas es una forma eficaz de crear directivas utilizando la configuración existente.
 
-Los usuarios externos solo pueden copiar directivas si el administrador habilita esta capacidad. Si no puede crear directivas, la opción Copiar no estará disponible.
+Los usuarios externos solo pueden copiar directivas si el administrador habilita esta capacidad. Si no puede crear directivas, la opción Copiar no está disponible.
 
 1. En la página de seguridad del documento, haga clic en Directivas y, a continuación, haga clic en la ficha Mi directiva.
 1. Seleccione la directiva adecuada en la lista.
@@ -372,14 +372,14 @@ Los usuarios externos solo pueden copiar directivas si el administrador habilita
    * barra invertida (\)
    * barra diagonal (/)
 
-   Si utiliza el siguiente carácter en el nombre o la descripción, se convierten en espacios:
+   Si utilizó el siguiente carácter en el nombre o la descripción, se convierten en espacios:
 
    * retorno de carro (carácter ASCII 13)
    * nueva línea (carácter ASCII 10).
 
    >[!NOTE]
    >
-   >Puede crear un nombre de directiva que contenga caracteres extendidos; sin embargo, cuando se realiza una comparación entre dos cadenas, los caracteres acentuados y no acentuados como &quot;e&quot; y &quot;é&quot; se consideran iguales. Cuando alguien crea una directiva, se realiza una comparación para comprobar si ya existe una directiva con el mismo nombre. La comparación no puede distinguir entre nombres que son iguales excepto para caracteres acentuados. Se supone que la directiva ya se ha agregado a la base de datos y que la nueva no se ha agregado.
+   Puede crear un nombre de directiva que contenga caracteres extendidos; sin embargo, cuando se realiza una comparación entre dos cadenas, los caracteres acentuados y no acentuados como &quot;e&quot; y &quot;é&quot; se consideran iguales. Cuando alguien crea una directiva, se realiza una comparación para comprobar si existe una directiva con el mismo nombre. La comparación no puede distinguir entre nombres que son iguales excepto para caracteres acentuados. Se supone que la directiva ya se ha agregado a la base de datos y que la nueva no se ha agregado.
 
 1. Haga clic en Aceptar.
 
@@ -387,7 +387,7 @@ Los usuarios externos solo pueden copiar directivas si el administrador habilita
 
 Puede eliminar las directivas que haya creado. Los administradores pueden eliminar las directivas que cualquier usuario haya creado. Los coordinadores de conjuntos de directivas pueden eliminar directivas en sus conjuntos de directivas. Las directivas que elimine se seguirán aplicando a los documentos protegidos por ellas. Puede eliminar varias directivas a la vez.
 
-Los usuarios invitados solo pueden eliminar directivas si el administrador habilita esta capacidad. Si no puede eliminar directivas, la opción Eliminar no estará disponible.
+Los usuarios invitados solo pueden eliminar directivas si el administrador habilita esta capacidad. Si no puede eliminar directivas, la opción Eliminar no está disponible.
 
 1. En la página Document Security, haga clic en Directivas.
 1. Haga clic en la pestaña Mi directiva.
@@ -396,7 +396,7 @@ Los usuarios invitados solo pueden eliminar directivas si el administrador habil
 
 >[!NOTE]
 >
->Debe utilizar la aplicación cliente para quitar directivas de los documentos. (Consulte la Ayuda de Acrobat o la Ayuda de las extensiones de Acrobat Reader DC correspondientes).
+Utilice la aplicación cliente para quitar directivas de los documentos. (Consulte la Ayuda de Acrobat o la Ayuda de las extensiones de Acrobat Reader DC correspondientes).
 
 ## Ordenar la lista de directivas {#sort-the-policy-list}
 

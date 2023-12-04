@@ -7,10 +7,10 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 8%
+source-wordcount: '723'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ En un recurso, el componente de página no proporciona los elementos HTML SPA de
 
 >[!NOTE]
 >
->SPA SPA El Editor de es la solución recomendada para proyectos que requieren un procesamiento basado en el marco de trabajo del lado del cliente (por ejemplo, React o Angular).
+>SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
 
 ## Introducción {#introduction}
 
@@ -41,7 +41,7 @@ No olvide limitar la inclusión de la variable `cq.authoring.pagemodel.messaging
 
 El tipo de datos de comunicación se establece como un elemento de HTML AEM dentro del componente Página de la página de la mediante la variable `data-cq-datatype` atributo. Cuando el tipo de datos de comunicación está establecido en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización de estado en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del Modelo de página. SPA A continuación, la biblioteca de modelo de página advierte a los usuarios de las actualizaciones que se han realizado en su.
 
-**Componente de página SPA -`body.html`**
+**SPA Componente de página -`body.html`**
 
 ```
 <div id="page"></div>
@@ -49,7 +49,7 @@ El tipo de datos de comunicación se establece como un elemento de HTML AEM dent
 
 SPA Además de ser una buena práctica para no retrasar la generación de DOM, el marco de trabajo de la requiere que se añadan los scripts al final del cuerpo.
 
-**Componente de página SPA -`customfooterlibs.html`**
+**SPA Componente de página -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -60,7 +60,7 @@ SPA Además de ser una buena práctica para no retrasar la generación de DOM, e
 
 SPA Las propiedades del recurso meta que describen el contenido de la:
 
-**Componente de página SPA -`customheaderlibs.html`**
+**SPA Componente de página -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>

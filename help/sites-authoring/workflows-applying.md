@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 91%
+source-wordcount: '647'
+ht-degree: 82%
 
 ---
 
@@ -103,7 +103,7 @@ Puede especificar los detalles:
 
    >[!NOTE]
    >
-   >La opción **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para la compatibilidad con varios recursos y se han seleccionado varios recursos.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >El **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para [Compatibilidad con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) y se han seleccionado varios recursos.
 
    Cuando haya terminado, seleccione **Siguiente** para continuar.
 
@@ -111,7 +111,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Añadir contenido** para abrir el [explorador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) y seleccionar recursos adicionales. En el explorador, haga clic o pulse en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
+   * **Añadir contenido** para abrir [explorador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) y seleccione recursos adicionales; en el explorador, haga clic en **Seleccionar** para añadir el contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 

@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4143'
-ht-degree: 1%
+source-wordcount: '4102'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +99,7 @@ En un formulario de varias páginas, los cambios realizados por JavaScript en un
 
 Puede invocar scripts personalizados antes de enviar un formulario. Esta función funciona en todos los navegadores disponibles. Sin embargo, solo se puede utilizar cuando los usuarios procesan el formulario de HTML que tiene su `Output Type` propiedad establecida en `Form Body`. No funcionará cuando la variable `Output Type` es `Full HTML`. Consulte Configuración de formularios en la ayuda de administración para ver los pasos necesarios para configurar esta función.
 
-Primero debe definir una función de llamada de retorno que se llame antes de enviar el formulario, donde el nombre de la función es `_user_onsubmit`. Se supone que la función no producirá ninguna excepción o, si lo hace, se ignorará la excepción. Se recomienda colocar la función de JavaScript en la sección head del HTML; sin embargo, puede declararla en cualquier lugar antes del final de las etiquetas de script que incluyen `xfasubset.js`.
+En primer lugar, defina una función de llamada de retorno que se llame antes de enviar el formulario, donde el nombre de la función es `_user_onsubmit`. Se supone que la función no producirá ninguna excepción o, si lo hace, se ignorará la excepción. Se recomienda colocar la función de JavaScript en la sección head del HTML; sin embargo, puede declararla en cualquier lugar antes del final de las etiquetas de script que incluyen `xfasubset.js`.
 
 Cuando el servidor de formularios procesa un XDP que contiene una lista desplegable, además de crear la lista desplegable, también crea dos campos de texto ocultos. Estos campos de texto almacenan los datos de la lista desplegable (uno almacena el nombre para mostrar de las opciones y otro almacena el valor de las opciones). Por lo tanto, cada vez que un usuario envía el formulario, se envían todos los datos de la lista desplegable. Suponiendo que no desee enviar tantos datos cada vez, puede escribir un script personalizado para deshabilitarlo. Por ejemplo: el nombre de la lista desplegable es `drpOrderedByStateProv` y se coloca debajo del encabezado del subformulario. El nombre del elemento de entrada del HTML es `header[0].drpOrderedByStateProv[0]`. El nombre de los campos ocultos que almacenan y envían los datos de la lista desplegable tiene los siguientes nombres: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
@@ -127,7 +127,7 @@ Los scripts que se ejecutan en el cliente o en el cliente y en el servidor deben
 
 Al ejecutar scripts en el cliente, solo el panel actual que se muestra puede utilizar scripts; por ejemplo, no puede crear scripts con campos que están en el panel A cuando se muestra el panel B. Al ejecutar scripts en el servidor, se puede acceder a todos los paneles.
 
-También debe tener cuidado al utilizar expresiones del Modelo de objetos de script (SOM) en scripts que se ejecutan en el cliente. Los scripts que se ejecutan en el cliente solo admiten un subconjunto simplificado de expresiones SOM.
+Tenga cuidado al utilizar expresiones del Modelo de objetos de script (SOM) en scripts que se ejecutan en el cliente. Los scripts que se ejecutan en el cliente solo admiten un subconjunto simplificado de expresiones SOM.
 
 ## Programación de eventos {#event-timing}
 
@@ -176,7 +176,7 @@ Los objetos estáticos no se muestran en un formulario de HTML procesado cuando 
 No se puede firmar un formulario de HTML que contenga un campo de firma digital si el formulario se representa como una de las siguientes transformaciones de HTML:
 
 * AHTML
-* HTML4
+* HTML 4
 * StaticHTML
 * NoScriptXHTML
 
@@ -236,7 +236,7 @@ Si procesa un formulario AHTML, se recomienda no agregar una barra de herramient
 
 **Procesar un formulario de HTML**
 
-Para procesar un formulario de HTML, debe especificar un diseño de formulario creado en Designer y guardado como archivo XDP. También debe seleccionar un tipo de transformación de HTML. Por ejemplo, puede especificar el tipo de transformación de HTML que procesa un HTML dinámico para Internet Explorer 5.0 o posterior.
+Para procesar un formulario de HTML, especifique un diseño de formulario creado en Designer y guardado como archivo XDP. Seleccione un tipo de transformación de HTML. Por ejemplo, puede especificar el tipo de transformación de HTML que procesa un HTML dinámico para Internet Explorer 5.0 o posterior.
 
 El procesamiento de un formulario de HTML también requiere valores, como valores de URI, necesarios para procesar otros tipos de formulario.
 

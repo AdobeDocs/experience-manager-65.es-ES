@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 72%
+source-wordcount: '1745'
+ht-degree: 61%
 
 ---
 
@@ -48,11 +48,11 @@ El **Editor de segmentos** permite modificar fácilmente un segmento. Para edita
 
 Con el explorador de componentes, puede añadir contenedores **AND** y **OR** para definir la lógica del segmento. A continuación, agregue componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) y el escenario exacto para seleccionar el segmento.
 
-Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelto. Si hay varios segmentos aplicables, la variable **Aumentar** también se utiliza el factor. Consulte [Creación de un nuevo segmento](#creating-a-new-segment)[ para obtener más información sobre el factor de ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelto. Si hay varios segmentos aplicables, la variable **Aumentar** también se utiliza el factor. Consulte [Creación de un nuevo segmento](#creating-a-new-segment) para obtener más información sobre [factor de ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
->El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al A. Debe asegurarse de que los segmentos no contengan ninguna referencia circular.
+>El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al A. Asegúrese de que los segmentos no contengan ninguna referencia circular.
 
 ### Contenedores {#containers}
 
@@ -62,10 +62,10 @@ Los siguientes contenedores están disponibles de forma predeterminada y le perm
  <tbody>
   <tr>
    <td>Contenedor AND<br /> </td>
-   <td>El operador boolean AND<br /> </td>
+   <td>El operador booleano AND<br /> </td>
   </tr>
   <tr>
-   <td>Contenedor OR<br /> </td>
+   <td>Contenedor O<br /> </td>
    <td>El operador boolean OR</td>
   </tr>
  </tbody>
@@ -87,7 +87,7 @@ Las siguientes comparaciones de segmentos están disponibles y listas para usars
   </tr>
   <tr>
    <td>Propiedad-Referencia de segmento</td>
-   <td>Compara una propiedad de un almacén con otro segmento al que se hace referencia<br /> </td>
+   <td>Compara una propiedad de un almacén con otro segmento referenciado<br /> </td>
   </tr>
   <tr>
    <td>Propiedad-Referencia de script</td>
@@ -117,7 +117,7 @@ Las siguientes referencias están disponibles listas para usarse y para vincular
 <table>
  <tbody>
   <tr>
-   <td>Referencia del segmento<br /> </td>
+   <td>Referencia de segmentos<br /> </td>
    <td>Evaluación del segmento al que se hace referencia</td>
   </tr>
   <tr>
@@ -133,11 +133,11 @@ Para definir el nuevo segmento:
 
 1. Después de [acceder a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [vaya a la carpeta](#organizing-segments) donde desea crear el segmento.
 
-1. toque o haga clic en el botón Crear y seleccione **Crear segmento de ContextHub**.
+1. haga clic en el botón Create y seleccione **Crear segmento de ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento y un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
+1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento y un valor de ampliación si es necesario y, a continuación, haga clic en **Crear**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -147,7 +147,7 @@ Para definir el nuevo segmento:
    * Valor máximo: `1000000`
 
 1. Arrastre una comparación o referencia al editor de segmentos que aparecerá en el contenedor AND predeterminado.
-1. Toque o haga doble clic en la opción de configuración de la nueva referencia o segmento para editar los parámetros específicos. En este ejemplo, estamos probando personas en San José.
+1. Haga doble clic en la opción de configuración de la nueva referencia o segmento para editar los parámetros específicos. En este ejemplo, estamos probando personas en San José.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
@@ -233,7 +233,7 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Cree una nueva carpeta {#create-folder}
 
-1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en el botón **Crear** y seleccione **Carpeta**.
+1. Después [acceso a los segmentos](#accessing-segments), haga clic en **Crear** y seleccione **Carpeta**.
 
    ![Agregar carpeta](assets/contexthub-create-segment.png)
 
@@ -245,24 +245,24 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
    ![Crear carpeta](assets/contexthub-create-folder.png)
 
-1. Haga clic o pulse en **Crear**.
+1. Haga clic en **Crear**.
 
    ![Confirmar carpeta](assets/contexthub-confirm-folder.png)
 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
-   * Puede tocar o hacer clic en los encabezados de columna para ajustar la ordenación.
+   * Puede hacer clic en los encabezados de columna para ajustar la ordenación.
      ![La nueva carpeta](assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}
 
-1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en la carpeta que desee modificar para seleccionarla.
+1. Después [acceso a los segmentos](#accessing-segments), haga clic en la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](assets/contexthub-select-folder.png)
 
-1. Toque o haga clic en **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
+1. Clic **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
 
-1. Proporcione un nuevo **Título de la carpeta** y toque o haga clic en **Guardar**.
+1. Proporcione un nuevo **Título de carpeta** y haga clic en **Guardar**.
 
    ![Cambiar nombre de carpeta](assets/contexthub-rename-folder.png)
 
@@ -272,25 +272,25 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Eliminar una carpeta
 
-1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en la carpeta que desee modificar para seleccionarla.
+1. Después [acceso a los segmentos](#accessing-segments), haga clic en la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](assets/contexthub-select-folder.png)
 
-1. Toque o haga clic en **Eliminar** en la barra de herramientas para eliminar la carpeta.
+1. Clic **Eliminar** en la barra de herramientas para eliminar la carpeta.
 
 1. Un cuadro de diálogo presenta una lista de carpetas seleccionadas para su eliminación.
 
    ![Confirmar eliminación](assets/contexthub-confirm-segment-delete.png)
 
-   * Toque o haga clic en **Eliminar** para confirmar.
-   * Toque o haga clic **Cancelar** para cancelar.
+   * Clic **Eliminar** para confirmar.
+   * Clic **Cancelar** para cancelar.
 
 1. Si alguna de las carpetas seleccionadas contiene subcarpetas o segmentos, su eliminación debe confirmarse.
 
    ![Confirmar la eliminación de tareas secundarias](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Toque o haga clic en **Forzar eliminación** para confirmar.
-   * Toque o haga clic en **Cancelar** para cancelar.
+   * Clic **Forzar eliminación** para confirmar.
+   * Clic **Cancelar** para cancelar.
 
 >[!NOTE]
 >
