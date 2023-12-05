@@ -7,10 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8c0c2d89fca7a5ba1a834108ae54fed524b3cbab
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 11%
+source-wordcount: '1604'
+ht-degree: 6%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 11%
 >[!NOTE]
 >
 >Esta función solo está disponible para los clientes de Managed Services de Adobe.
-
->[!NOTE]
->
->Actualmente, Adobe Experience Manager AEM () no admite la asignación de grupos a perfiles. Los usuarios deben añadirse individualmente en su lugar.
 
 ## Introducción {#introduction}
 
@@ -54,7 +50,7 @@ AEM El flujo de inicio de sesión del usuario se muestra a continuación; se red
 
 La incorporación del cliente a [!DNL Admin Console] AEM es un requisito previo para utilizar Adobe IMS para la autenticación de la.
 
-Como primer paso, los clientes deben disponer de una organización en Adobe IMS. Los clientes de Adobe Enterprise están representados como organizaciones de IMS en [Adobe [!DNL Admin Console]](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
+Como primer paso, los clientes deben disponer de una organización en Adobe IMS. Los clientes de Adobe Enterprise están representados como organizaciones de IMS en la [Adobe [!DNL Admin Console]](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
 
 AEM Los clientes de Managed Services ya deben tener una organización aprovisionada y, como parte del aprovisionamiento de IMS, las instancias de cliente están disponibles en el [!DNL Admin Console] para administrar derechos de usuario y acceso.
 
@@ -120,7 +116,7 @@ Las principales características de esta versión son la capacidad de asignar di
 
 Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 
-[https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options)
+[https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/es/user-manual/advanced_configuration.html#additional-group-options)
 
 >[!NOTE]
 >
@@ -129,7 +125,7 @@ Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 >
 >La herramienta de sincronización de usuarios debe registrarse como cliente de Adobe I/O UMAPI mediante el procedimiento descrito [aquí](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->La documentación de la consola de Adobe I/O se encuentra en [aquí](https://developer.adobe.com/developer-console/documentos/guías/).
+>La documentación de la consola de Adobe I/O se encuentra en [aquí](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >El [!DNL User Management] La API que utiliza la herramienta de sincronización de usuarios se explica en esta [ubicación](https://adobe-apiplatform.github.io/umapi-documentation/en/).
