@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 98%
+source-wordcount: '2595'
+ht-degree: 92%
 
 ---
 
@@ -166,6 +166,64 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte su instancia de AEM Forms con Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
 Después de una configuración correcta, utilice la acción de envío [Invocar un flujo de Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar datos a un flujo de Power Automate.
+
+## Enviar a la lista de Microsoft® SharePoint{#submit-to-sharedrive}
+
+<span class="preview"> Esta es una función previa al lanzamiento y se puede acceder a ella a través de nuestro [canal previo al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#new-features). </span>
+
+La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado.
+
+### Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
+
+Para usar la variable [!UICONTROL Enviar a la lista de SharePoint] Enviar acción en un formulario adaptable:
+
+1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms al almacenamiento de listas de SharePoint de Microsoft®.
+1. [Uso del envío mediante el modelo de datos de formulario en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable al Microsoft® SharePoint configurado.
+
+#### Crear una configuración de lista de SharePoint {#create-sharepoint-list-configuration}
+
+Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
+
+1. Ir a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
+1. Haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Lista de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
+1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
+   * Puede recuperar la variable `Client ID` y `Client Secret` de su aplicación desde el portal de Microsoft® Azure.
+   * En el portal de Microsoft® Azure, añada el URI de redireccionamiento como `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Reemplace `[author-instance]` por la URL de su instancia de autor.
+   * Adición de los permisos de API `offline_access` y `Sites.Manage.All` en la pestaña **Microsoft® Graph** para proporcionar permisos de lectura y escritura. Añadir permiso de `AllSites.Manage` en la pestaña **SharePoint** para interactuar de forma remota con los datos de SharePoint.
+   * Use la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplace `<tenant-id>` por el `tenant-id` de su aplicación desde el portal de Microsoft® Azure.
+
+     >[!NOTE]
+     >
+     El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
+
+1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
+1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
+1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para Microsoft® SharePointList.
+
+#### Uso del envío mediante el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
+
+Puede utilizar la configuración creada en la Lista de SharePoint en un formulario adaptable para guardar datos o documentos de registro generados en una Lista de SharePoint. Siga estos pasos para utilizar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
+
+1. [Crear un modelo de datos de formulario con la configuración de la lista de Microsoft® SharePoint](/help/forms/using/create-form-data-model.md)
+1. [Configurar el modelo de datos de formulario para recuperar y enviar datos](/help/forms/using/work-with-form-data-model.md#configure-services)
+1. [Creación de un formulario adaptable](/help/forms/using/create-adaptive-form.md).
+1. [Configurar la acción de envío mediante un modelo de datos de formulario](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
+
+Cuando envía el formulario, los datos se guardan en el almacenamiento de listas de SharePoint de Microsoft® especificado.
+
+>[!NOTE]
+>
+En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
+* columna de imagen
+* columna de metadatos
+* columna de persona
+* columna de datos externos
+
+
+>[!NOTE]
+>
+Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
 ## Revalidación del lado del servidor en formularios adaptables {#server-side-revalidation-in-adaptive-form}
 

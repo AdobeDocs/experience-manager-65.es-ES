@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
 workflow-type: tm+mt
-source-wordcount: '2120'
-ht-degree: 98%
+source-wordcount: '2291'
+ht-degree: 90%
 
 ---
 
@@ -43,6 +43,11 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 1. Haga clic para abrir el **modelo de formulario** y desde el menú desplegable **Seleccionar desde**, seleccione uno de los siguientes modelos para el fragmento:
 
    * **Ninguno**: Especifica que se cree el fragmento desde cero sin usar ningún modelo de formulario.
+
+     >[!NOTE]
+     >
+     > En Forms adaptable basado en componentes principales, puede utilizar un solo fragmento de formulario varias veces en un formulario. Admite fragmentos de formulario basados en ninguno y en esquema.
+
    * **Plantilla de formulario**: especifica la creación del fragmento mediante una plantilla XDP cargada en AEM Forms. Seleccione la plantilla XDP adecuada como modelo de formulario para el fragmento.
 
    ![Crear un formulario adaptable mediante una plantilla de formulario como modelo](assets/form-template-model.png)
@@ -94,7 +99,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
    * **Modelo de formulario**: en función del modelo de formulario para el formulario adaptable, este campo muestra el **Esquema XML**, la **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
    * **Raíz del modelo del fragmento**: solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Tenga en cuenta que solo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
-Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable.
+Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz de modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
 
    * **XSD Ref**: solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
 
@@ -159,6 +164,16 @@ Puede crear fragmentos de formulario adaptable anidados, lo que significa que pu
 ### Cambiar fragmentos {#change-fragments}
 
 Puede reemplazar o cambiar un fragmento de formulario adaptable por otro mediante la propiedad **Seleccionar recurso de fragmento** en el cuadro de diálogo Editar componente para un panel de fragmento de formulario adaptable.
+
+### Usar un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
+
+Puede utilizar un fragmento de formulario basado en esquemas varias veces en un formulario adaptable para guardar datos de forma única para cada campo de fragmento de formulario. Por ejemplo, puede utilizar un fragmento de formulario de dirección para recopilar detalles de dirección para direcciones permanentes, de comunicación y actuales en un formulario de solicitud de préstamo.
+
+![usar varios fragmentos en formularios adaptables](/help/forms/using/assets/using-multiple-fragment-af.gif)
+
+>[!NOTE]
+>
+> * Si utiliza fragmentos de formulario basados en ninguno varias veces en un formulario adaptable, se produce la sincronización de datos entre los campos de los fragmentos. El problema de sincronización de datos no se produce en fragmentos de formulario basados en componentes principales, donde puede utilizar un fragmento basado en esquemas o en ninguno varias veces en un formulario.
 
 ## Asignar automáticamente fragmentos para enlazar datos {#auto-mapping-of-fragments-for-data-binding}
 

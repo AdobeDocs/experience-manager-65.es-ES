@@ -5,10 +5,10 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 71%
+source-wordcount: '1533'
+ht-degree: 69%
 
 ---
 
@@ -69,7 +69,7 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
       * **Nombre del Datasource:** puede especificar cualquier nombre. Por ejemplo, especifique **WeRetailMySQL**.
       * **Nombre de propiedad del servicio DataSource**: especifique el nombre de la propiedad de servicio que contiene el nombre del DataSource. Se especifica al registrar la instancia de fuente de datos como servicio OSGi. Por ejemplo, **datasource.name**.
       * **Clase** de controlador JDBC: especifique el nombre de la clase Java™ del controlador JDBC. Para la base de datos[!DNL MySQL], especifique **com.mysql.jdbc.Driver**.
-      * **URI de conexión JDBC**: especifique la dirección URL de conexión de la base de datos. Para [!DNL MySQL] base de datos que se ejecuta en el puerto 3306 y esquema `weretail`, la dirección URL es: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI de conexión JDBC**: especifique la dirección URL de conexión de la base de datos. Para [!DNL MySQL] la base de datos que se ejecuta en puerto 3306 y esquema `weretail`, el URL es: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
@@ -177,7 +177,7 @@ Para configurar el modelo de datos de formulario, haga lo siguiente:
       * **Título**: especifique el título del servicio. Por ejemplo: Recuperar dirección de envío.
       * **Descripción**: especifique la descripción que contiene el funcionamiento detallado del servicio. Por ejemplo:
 
-        Este servicio recupera la dirección de envío y otros detalles del cliente desde el [!DNL MySQL] database
+        Este servicio recupera la dirección de envío y otros detalles del cliente de la [!DNL MySQL] base de datos
 
       * **Objeto de modelo de salida**: seleccione el esquema que contiene los datos del cliente. Por ejemplo:
 
@@ -236,3 +236,8 @@ Haga lo siguiente para ejecutar la prueba:
    Ahora, si vuelve a probar el servicio de modelo de lectura para el ID 7107215, recupera y muestra los detalles actualizados del cliente como se muestra a continuación.
 
    ![read-updated](assets/read-updated.png)
+
+
+>[!NOTE]
+>
+> Puede crear y utilizar la configuración de la lista de SharePoint con el modelo de datos de formulario en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Consulte [Conectar un formulario adaptable a la lista de Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration), para ver los pasos detallados.
