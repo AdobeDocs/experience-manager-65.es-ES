@@ -1,27 +1,25 @@
 ---
 title: Aplicación de flujos de trabajo a páginas
-description: Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde la barra de tareas.
-uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
+description: Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde el Sidekick.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '249'
+ht-degree: 15%
 
 ---
 
 # Aplicación de flujos de trabajo a páginas{#applying-workflows-to-pages}
 
-Al aplicar el flujo de trabajo, se especifica la siguiente información:
+A la hora de aplicar el flujo de trabajo, se especifica la siguiente información:
 
 * Flujo de trabajo que se va a aplicar.
 
-   Puede aplicar cualquier flujo de trabajo (al que tenga acceso, según lo haya asignado el administrador de AEM).
+  Puede aplicar cualquier flujo de trabajo (al que tenga acceso, según lo haya asignado el administrador de AEM).
 * Opcionalmente:
 
    * Un comentario que proporciona información sobre por qué ha iniciado el flujo de trabajo.
@@ -33,7 +31,7 @@ Al aplicar el flujo de trabajo, se especifica la siguiente información:
 
 ## Aplicación de flujos de trabajo {#applying-workflows}
 
-Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde la barra de tareas.
+Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde el Sidekick.
 
 El **Estado** en la columna **Sitios web** La consola de indica si se ha aplicado un flujo de trabajo a una página:
 
@@ -46,11 +44,11 @@ El **Estado** en la columna **Sitios web** La consola de indica si se ha aplicad
 1. En la lista de la página, seleccione la página y haga clic en Flujo de trabajo.
 1. En el cuadro de diálogo Iniciar flujo de trabajo, seleccione el flujo de trabajo que desea aplicar. Opcionalmente, introduzca un comentario y un título. A continuación, haga clic en Start.
 
-### Iniciar un flujo de trabajo mediante la barra de tareas {#starting-a-workflow-using-sidekick}
+### Iniciar un flujo de trabajo con el Sidekick {#starting-a-workflow-using-sidekick}
 
 1. Abra la consola Sitios web.
 1. Abra la página requerida.
-1. Seleccione la pestaña Flujo de trabajo de la barra de tareas.
+1. Seleccione la pestaña Workflow del Sidekick.
 1. Expanda el **Flujo de trabajo** , lo que permite seleccionar el **Flujo de trabajo** y, opcionalmente, introduzca **Título de flujo de trabajo** y **Comentario**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)

@@ -1,20 +1,16 @@
 ---
 title: Agrupar documentos PDF cifrados
-seo-title: Assembling Encrypted PDF Documents
 description: Ensamble documentos de PDF cifrados mediante la API de Java y la API de servicio web.
-seo-description: Assemble encrypted PDF documents using the Java API and Web Service API.
-uuid: d0948ec9-ab67-4fe4-9062-1c4938460b43
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
 exl-id: 2caaca74-640a-4257-a81b-3e8b295cd182
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1641'
 ht-degree: 4%
 
 ---

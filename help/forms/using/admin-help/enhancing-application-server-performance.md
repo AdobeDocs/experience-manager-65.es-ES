@@ -1,19 +1,15 @@
 ---
 title: Mejorar el rendimiento del servidor de aplicaciones
-seo-title: Enhancing application server performance
 description: AEM En este documento se describen las opciones opcionales que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios en la aplicación de la aplicación de la aplicación de formularios de la.
-seo-description: This document describes optional settings that you can configure to improve the performance of your AEM forms application server.
-uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1863'
-ht-degree: 1%
+source-wordcount: '1870'
+ht-degree: 0%
 
 ---
 

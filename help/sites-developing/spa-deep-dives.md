@@ -1,25 +1,21 @@
 ---
 title: Profundización en SPA
-seo-title: SPA Deep Dives
-description: AEM SPA AEM El SDK de Editor de se incluyó en una serie de sesiones de Gems de. Alojado por ingenieros de Adobe, esta serie puede servir como buena AEM SPA guía para obtener una comprensión más profunda del SDK de Editor de la en un nivel bajo, alojado por ingenieros de Adobe.
-seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
-uuid: 326ac431-79d4-48ed-aa48-0c9bfdbd23d0
+description: AEM SPA AEM El SDK de Editor de se incluyó en una serie de sesiones de Gems de. Alojado por ingenieros de Adobe AEM SPA, esta serie puede servir como una buena guía para obtener una comprensión más profunda del SDK del editor de contenido en formato de nivel bajo, alojado por ingenieros de Adobe.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 48ab972b-ca26-40d1-b89e-86124ceb173b
 exl-id: aba1dc0f-eab1-40aa-8ab6-317e2fa7891c
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '266'
 ht-degree: 2%
 
 ---
 
 # Profundización en SPA{#spa-deep-dives}
 
-AEM SPA AEM El SDK de Editor de se incluyó en una serie de sesiones de Gems de. [Gems de Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) es una serie de inmersiones técnicas en profundidad realizadas por expertos en Adobe. Alojado por ingenieros de Adobe, esta serie puede servir como buena AEM SPA guía para obtener una comprensión más profunda del SDK del Editor de la en un nivel bajo.
+AEM SPA AEM El SDK de Editor de se incluyó en una serie de sesiones de Gems de. [Gems de Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) es una serie de inmersiones técnicas en profundidad realizadas por expertos en Adobe. Alojado por ingenieros de Adobe AEM SPA, esta serie puede servir como una buena guía para obtener una comprensión más profunda del SDK del editor de contenido de la versión de Adobe de Adobe (SDK) en un nivel bajo.
 
 ## Sesiones de Gem {#gem-sessions}
 

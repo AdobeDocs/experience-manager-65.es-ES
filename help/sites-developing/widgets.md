@@ -1,17 +1,15 @@
 ---
 title: Uso y ampliación de widgets (IU clásica)
 description: La interfaz basada en web de Adobe Experience Manager AJAX utiliza la tecnología de navegador de web y otras tecnologías modernas para permitir que los autores puedan editar y dar formato WYSIWYG al contenido directamente en la página web
-uuid: eb3da415-cbef-4766-a28e-837e238a4156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '4925'
+source-wordcount: '4896'
 ht-degree: 0%
 
 ---
@@ -280,7 +278,7 @@ La lógica se implementa mediante detectores de eventos y código JavaScript de 
 * Cada pestaña opcional tiene un oyente que oculta la pestaña en &quot; `render`&quot; evento:
   `render="function(tab){Ejst.x2.hideTab(tab);}"`
 * Para el `Ejst.x2.hideTab()` método,
-  `tabPanel` es el `tabpanel` que contiene todas las pestañas
+  `tabPanel` es el `tabpanel` que contiene todas las fichas
   `index` es el índice del pestaña opcional
   `tabPanel.hideTabStripItem(index)` oculta el pestaña
 
@@ -587,7 +585,7 @@ El componente se muestra de la siguiente manera:
 En su versión predeterminada, el **componente Información general** de cuadrícula muestra una ventana con datos estáticos en un formato tabular. En este ejemplo, la lógica está integrada en el componente jsp de dos maneras:
 
 * La lógica genérica se define entre &lt;script> etiquetas
-* La lógica específica está disponible en un archivo .js independiente y está vinculada en el JSP. Esta configuración le permite alternar entre las dos lógicas (estáticas y dinámicas) comentando la deseada &lt;script> etiquetas.
+* la lógica específica está disponible en un archivo .js independiente y se vincula a en el jsp. Esta configuración le permite alternar entre las dos lógicas (estáticas y dinámicas) comentando la deseada &lt;script> etiquetas.
 
 El componente Información general de cuadrícula:
 

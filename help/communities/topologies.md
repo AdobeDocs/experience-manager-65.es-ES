@@ -1,18 +1,14 @@
 ---
 title: Topologías recomendadas para comunidades
-seo-title: Recommended Topologies for Communities
 description: Cómo abordar la administración del contenido generado por el usuario (UGC)
-seo-description: How to approach the handling of user-generated content (UGC)
-uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: b6658330-d862-44e3-aac0-824fb91cd087
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -40,6 +36,7 @@ Si se requiere un almacén común, se recomiendan las siguientes topologías.
 >Para AEM Communities, [UGC nunca se replica](working-with-srp.md#ugc-never-replicated).
 >
 >Cuando la implementación no incluye un [almacén común](working-with-srp.md)AEM , UGC solo estará visible en la instancia de publicación o autor en la que se haya introducido el código de acceso del usuario (UGC) en la que se haya publicado el código.
+>
 
 >[!NOTE]
 >
@@ -94,20 +91,20 @@ Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para la producción,
 
 * [Sincronización de usuarios](sync.md)
 
-   Analiza la sincronización de datos de usuario entre instancias de conjuntos de servidores de publicación.
+  Analiza la sincronización de datos de usuario entre instancias de conjuntos de servidores de publicación.
 
 * [Administración de usuarios y grupos de usuarios](users.md)
 
-   Describe las funciones de los usuarios y grupos de usuarios en los entornos de creación y publicación.
+  Describe las funciones de los usuarios y grupos de usuarios en los entornos de creación y publicación.
 
 * UGC [almacén común](working-with-srp.md)
 
-   Describe el almacenamiento del contenido de la comunidad aparte del contenido del sitio.
+  Describe el almacenamiento del contenido de la comunidad aparte del contenido del sitio.
 
 * [Almacenes de nodos y almacenes de datos](../../help/sites-deploying/data-store-config.md)
 
-   Básicamente, el contenido del sitio se almacena en un almacén de nodos. Para Assets, se puede configurar un almacén de datos para almacenar datos binarios. Para las comunidades, se debe configurar un almacén común para seleccionar el SRP.
+  Básicamente, el contenido del sitio se almacena en un almacén de nodos. Para Assets, se puede configurar un almacén de datos para almacenar datos binarios. Para las comunidades, se debe configurar un almacén común para seleccionar el SRP.
 
 * [Elementos de almacenamiento](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   Describe las implementaciones de almacenamiento de dos nodos: Tar y MongoDB.
+  Describe las implementaciones de almacenamiento de dos nodos: Tar y MongoDB.

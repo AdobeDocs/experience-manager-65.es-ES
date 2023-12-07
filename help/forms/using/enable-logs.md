@@ -1,20 +1,16 @@
 ---
 title: Habilitar el registro para formularios HTML5
-seo-title: Enable logging for HTML5 forms
 description: La utilidad logger habilita el registro de un formulario y le ayuda a depurar problemas relacionados con el formulario.
-seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
-uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '629'
 ht-degree: 100%
 
 ---

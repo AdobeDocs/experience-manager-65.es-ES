@@ -1,15 +1,11 @@
 ---
 title: Servicio de Forms
-seo-title: Forms Service
 description: El artículo describe el servicio Forms y las tareas relacionadas con los formularios que puede realizar mediante este servicio.
-seo-description: The article describes Forms service and the form-related tasks you can perform using Forms service.
-uuid: 3258d3c2-8755-4815-8c97-b2cfb9a9dfd4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
 exl-id: bd1216e4-2248-484b-a3c1-c209da4ff94f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 100%

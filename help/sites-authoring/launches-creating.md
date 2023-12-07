@@ -1,18 +1,16 @@
 ---
 title: Crear lanzamientos
 description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará más adelante.
-uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -87,7 +85,7 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
    * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en una [live copy](/help/sites-administering/msm.md).
 
-     Está opción está seleccionada de forma predeterminada.
+     Esta opción está seleccionada de forma predeterminada.
 
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
@@ -97,7 +95,7 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
 
    Si devuelve la consola (con **Listo**) puede ver (y acceder) al lanzamiento desde las ubicaciones siguientes:
 
-   * la [**** consola Lanzamientos](/help/sites-authoring/launches.md#the-launches-console)
+   * el [**Lanzamientos** consolar](/help/sites-authoring/launches.md#the-launches-console)
    * el [**Referencias** en el **Sites** consolar](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}

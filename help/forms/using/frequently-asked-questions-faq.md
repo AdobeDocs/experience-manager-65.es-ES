@@ -1,18 +1,16 @@
 ---
 title: Preguntas más frecuentes (FAQ) sobre formularios adaptables de Forms, HTML5 y AEM Forms
-seo-title: Frequently asked questions (FAQ) for Adaptive Forms, HTML5 forms, and AEM Forms
 description: Preguntas más frecuentes sobre la presentación, la compatibilidad con scripts y el ámbito de los formularios adaptables de Forms, HTML5 y AEM Forms.
-seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of Adaptive Forms, HTML5 forms, and AEM Forms.
 docset: aem65
 exl-id: 19a6e431-de66-4d5c-924f-f9c1a195390c
-source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 51%
+source-wordcount: '98'
+ht-degree: 55%
 
 ---
 
-# Preguntas más frecuentes (FAQ) {#frequently-asked-questions-faq}
+# Preguntas frecuentes {#frequently-asked-questions-faq}
 
 1. ¿Por qué los códigos de barras y los campos de firma no aparecen en mi formulario de HTML 5?
 

@@ -1,19 +1,15 @@
 ---
 title: Acerca de la administración y la terminología de los procesos
-seo-title: About administration and process terminology
 description: Obtenga información acerca de la administración y los términos de proceso como instancia de proceso, diagrama de proceso y operación.
-seo-description: Learn about administration and process terms like process instance, process diagram and operation.
-uuid: cf3f5bfc-4650-4f3d-81e1-9c814cfd497c
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f9b40e1f-956d-498b-92e4-4fe21e23fc4a
 exl-id: 8944cbae-865d-4b1c-b3bf-00c3a247d776
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 8%
+source-wordcount: '175'
+ht-degree: 6%
 
 ---
 

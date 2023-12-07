@@ -1,17 +1,15 @@
 ---
 title: Integración de soluciones
 description: Obtenga más información acerca de la integración de Adobe Experience Manager AEM () con otros servicios de Adobe o de terceros.
-uuid: 3bf56b1b-284d-4f14-8974-0a595ece5028
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 25%
+source-wordcount: '104'
+ht-degree: 11%
 
 ---
 

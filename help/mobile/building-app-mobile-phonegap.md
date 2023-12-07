@@ -1,14 +1,12 @@
 ---
 title: Creación de aplicaciones móviles
 description: Esta página proporciona un artículo paso a paso completo sobre cómo crear una aplicación móvil con el código disponible en GitHub aquí. Cree la aplicación para instalarla en un dispositivo o simulador para probarla o publicarla en tiendas de aplicaciones. Puede crear aplicaciones localmente mediante la interfaz de línea de comandos de PhoneGap o en la nube mediante PhoneGap Build.
-uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%

@@ -1,19 +1,15 @@
 ---
 title: Compatibilidad con XFA en formularios adaptables basados en XDP
-seo-title: XFA support in XDP-based adaptive forms
 description: Enumera los eventos XFA admitidos, las propiedades, los scripts y la validación en los formularios adaptables.
-seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
-uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 feature: Adaptive Forms
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 91%
+source-wordcount: '732'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 91%
 
 ## Introducción {#introduction}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Forms adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Forms adaptable a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de Forms adaptable, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 Los formularios adaptables admiten varios eventos, propiedades, scripts y validaciones XFA definidos en un archivo XDP, incluidos los siguientes:
 

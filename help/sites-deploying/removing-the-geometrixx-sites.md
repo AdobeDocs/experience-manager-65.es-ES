@@ -1,12 +1,10 @@
 ---
 title: Eliminación de los sitios de Geometrixx
 description: Obtenga información sobre cómo eliminar el contenido de la Geometrixx de ejemplo.
-uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%

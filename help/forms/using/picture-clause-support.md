@@ -1,19 +1,15 @@
 ---
 title: Compatibilidad con cláusula de imagen para formularios HTML5
-seo-title: Picture clause support for HTML5 forms
 description: Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor formateado de símbolos numéricos, texto y fecha.
-seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
-uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '633'
 ht-degree: 100%
 
 ---

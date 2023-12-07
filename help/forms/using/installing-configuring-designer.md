@@ -1,21 +1,17 @@
 ---
 title: Instalar y configurar Designer
-seo-title: Installing and configuring Designer
 description: Designer está disponible como programa de instalación independiente y se integra con Workbench. Aprenda a instalar Designer de forma independiente.
-seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 40%
+source-wordcount: '471'
+ht-degree: 35%
 
 ---
 

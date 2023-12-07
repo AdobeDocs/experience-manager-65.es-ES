@@ -1,18 +1,14 @@
 ---
 title: Personalizar la página de detalles de la tarea
-seo-title: Customizing the task details page
 description: Personalizar la página de detalles de tareas en AEM Forms Workspace para modificar la información predeterminada que se muestra sobre una tarea.
-seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
-uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -28,9 +24,9 @@ Puede agregar la siguiente información a la página de detalles de la tarea:
 Para personalizar la página de detalles de la tarea, haga lo siguiente:
 
 1. Siga los [Pasos genéricos para personalizar AEM Forms Workspace.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Para mostrar cualquier información adicional, agregue los pares de clave-valor correspondientes al archivo `translation.json` en `todo`block > `details`block > `app`block > [ `required`block].
+1. Para mostrar cualquier información adicional, agregue los pares clave-valor correspondientes a la variable `translation.json` archivo en `todo`bloquear > `details`bloquear > `app`bloquear > [`required`bloquear].
 
-   [ `required`block] hace referencia a bloques disponibles, como al bloque de tareas para la información de las tareas, el bloque de procesos para la información de los procesos y el bloque de tareas pendientes para la información de las tareas pendientes.
+   El [`required`bloquear] hace referencia a bloques disponibles, como el bloque de tareas para la información de las tareas, el bloque de procesos para la información de los procesos y el bloque de tareas pendientes para la información de las tareas pendientes.
 
    Por ejemplo, para agregar información sobre la selección de la ruta requerida en la página de detalles de la tarea, puede agregar el siguiente par clave-valor en el bloque de tareas:
 

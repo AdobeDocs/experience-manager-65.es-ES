@@ -1,16 +1,12 @@
 ---
 title: Aplicar estilos dentro de la línea a los componentes de un formulario adaptable
-seo-title: Inline CSS properties for adaptive form components
 description: Aunque puede aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable.
-seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
-uuid: e863780e-2250-4bea-9569-22be5638d54e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 93%

@@ -1,12 +1,11 @@
 ---
 title: AEM Guía del usuario de implementación de.5
-seo-title: AEM 6.5 Deploying User Guide
-description: Obtenga información acerca de la instalación e implementación de Adobe Experience Manager 6.5 y su arquitectura, incluida nuestra implementación en la nube de Adobe Managed Services.
+description: Obtenga información acerca de la instalación e implementación de Adobe Experience Manager 6.5 y acerca de su arquitectura, incluida nuestra implementación en la nube de Managed Services de Adobe.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 78%
+source-wordcount: '297'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +24,7 @@ AEM AEM Esta guía cubre todas las tareas de implementación de la, como la inst
 
 | Guía del usuario | Descripción |
 |--- |---|
-| [Notas de la versión](/help/release-notes/home.md) | Incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos. |
+| [Notas de la versión](/help/release-notes/home.md) | AEM Proporciona información importante sobre la versión más reciente de la, incluidas las novedades, las plataformas admitidas, las funciones en desuso y eliminadas, y los problemas conocidos. |
 | [Guía del usuario de Assets](/help/assets/home.md) | Aprenda a crear, administrar, entregar y optimizar recursos digitales. |
 | [Guía del usuario de Forms](/help/forms/home.md) | Esta guía describe cómo crear, administrar, publicar y actualizar formularios digitales. |
 | [Guía del usuario de Communities](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
@@ -41,7 +40,7 @@ AEM AEM Esta guía cubre todas las tareas de implementación de la, como la inst
 
 ## Recursos clave de AEM
 
-* [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriales de AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)

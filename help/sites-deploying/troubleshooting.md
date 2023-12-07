@@ -1,16 +1,14 @@
 ---
 title: AEM Solución de problemas de instalación con la
 description: AEM Este artículo trata algunos de los problemas de instalación con los que podría encontrar problemas de instalación de los que podría tener que lidiar con la.
-uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -57,7 +55,7 @@ Para solucionar problemas, haga lo siguiente:
 * AEM Pruebe con un menú contextual (normalmente haciendo clic con el botón derecho del ratón) en el Inicio rápido de WCM de la y seleccione &quot;Abrir con&quot;....
 * AEM Compruebe si Java™ o Sun Java™ se encuentra en la lista e intente ejecutar WCM de forma independiente con la lista de parámetros de la aplicación. Si tiene instaladas varias versiones de Java™, seleccione la compatible.
 
-   Si lo consigue, y el sistema operativo ofrece la opción de usar siempre el programa seleccionado para ejecutar los archivos .jar, selecciónelo. Hacer doble clic debería funcionar a partir de ahora.
+  Si lo consigue, y el sistema operativo ofrece la opción de usar siempre el programa seleccionado para ejecutar los archivos .jar, selecciónelo. Hacer doble clic debería funcionar a partir de ahora.
 
 * A veces, la reinstalación de la versión de Java™ admitida ayuda a restaurar la asociación correcta.
 * Siempre puede ejecutar CRX mediante la línea de comandos o secuencias de comandos de inicio y detención, tal como se ha descrito anteriormente en este documento.
@@ -66,7 +64,7 @@ Para solucionar problemas, haga lo siguiente:
 
 >[!NOTE]
 >
->Consulte también [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es).
+>Consulte también [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
 
 
 CRX tiene un espacio de memoria bajo. Si la aplicación que se ejecuta en CRX tiene requisitos de memoria más grandes o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM donde se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
@@ -122,9 +120,9 @@ Cuando una solicitud a la página geometrixx-outdoors/es devuelve un error 404 (
 
 Consulte en la *AEM Implementación de aplicación web* pasos para obtener los detalles.
 
-### El tamaño del encabezado de respuesta puede ser bueno a 4 KB {#response-header-size-can-be-greater-than-kb}
+### El tamaño del encabezado de respuesta puede ser superior a 4 KB {#response-header-size-can-be-greater-than-kb}
 
-AEM Los errores 502 pueden indicar que el servidor web no puede gestionar el tamaño del encabezado de respuesta HTTP de la. AEM Puede generar encabezados de respuesta HTTP que incluyan cookies de tamaño bueno a 4 KB. Asegúrese de que el contenedor del servlet esté configurado para que el tamaño máximo del encabezado de respuesta pueda superar los 4 KB.
+AEM Los errores 502 pueden indicar que el servidor web no puede gestionar el tamaño del encabezado de respuesta HTTP de la. AEM Puede generar encabezados de respuesta HTTP que incluyan cookies de tamaño superior a 4 KB. Asegúrese de que el contenedor del servlet esté configurado para que el tamaño máximo del encabezado de respuesta pueda superar los 4 KB.
 
 Por ejemplo, para Tomcat 7.0, el atributo maxHttpHeaderSize del [Conector HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controla las limitaciones en el tamaño del encabezado.
 

@@ -1,18 +1,14 @@
 ---
 title: SRP y UGC Essentials
-seo-title: SRP and UGC Essentials
 description: Resumen del proveedor de recursos de almacenamiento y del contenido generado por el usuario
-seo-description: Storage resource provider and user-generated content overview
-uuid: a4ee8725-f554-4fcf-ac1e-34878d6c02f8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 exl-id: 8279684f-23dd-4234-bf01-fd2ce74bcb4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---

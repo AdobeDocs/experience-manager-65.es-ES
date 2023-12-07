@@ -1,18 +1,14 @@
 ---
 title: Crear y configurar grupos
-seo-title: Creating and configuring groups
 description: Obtenga información sobre cómo crear grupos de forma manual o dinámica, editar un grupo, ver detalles sobre un grupo o eliminarlo.
-seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
-uuid: 8532d72b-270a-4fcf-b7a5-56fca979a5fe
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1576'
 ht-degree: 1%
 
 ---
@@ -55,7 +51,7 @@ Si utiliza Content Services (obsoleto), puede seleccionar la opción Seleccionar
 
 1. Haga clic en Siguiente.
 1. Para asignar funciones al grupo, haga clic en Buscar funciones, active las casillas de verificación de cada función que desee asignar al grupo y haga clic en Aceptar. Los usuarios del grupo heredan las funciones asignadas en el nivel de grupo.
-1. Haga clic en Finalizar.
+1. Haga clic en Finish.
 
 ## Creación de un grupo dinámico {#create-a-dynamic-group}
 
@@ -77,7 +73,7 @@ Un grupo dinámico contiene sólo usuarios. No puede contener otros grupos. Sin 
    * Para habilitar la sincronización automática diariamente, escriba la hora en formato de 24 horas en el cuadro Se produce a diario a las. Al guardar la configuración, este valor se convierte en una expresión cron, que se muestra en el cuadro siguiente.
    * Para programar la sincronización en un día concreto de la semana o del mes, o en un mes concreto, seleccione la expresión cron adecuada en el cuadro. El valor predeterminado es `0 00 4 ? * *`(lo que significa comprobar a las 4 a.m. todos los días).
 
-      El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
+     El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 
 1. Haga clic en Guardar.
 
@@ -110,7 +106,7 @@ Un grupo dinámico contiene sólo usuarios. No puede contener otros grupos. Sin 
 
 1. Haga clic en Siguiente.
 1. Para asignar funciones al grupo dinámico, haga clic en Buscar funciones, active las casillas de verificación de cada función que desee asignar al grupo y, a continuación, haga clic en Aceptar. Los usuarios del grupo heredan las funciones asignadas en el nivel de grupo.
-1. Haga clic en Finalizar.
+1. Haga clic en Finish.
 
 ## Ver detalles de un grupo {#view-details-about-a-group}
 

@@ -1,21 +1,17 @@
 ---
 title: Funciones de la comunidad
-seo-title: Community Functions
 description: Obtenga información sobre cómo acceder a la consola de funciones de la comunidad
-seo-description: Learn how to access the Community Functions console
-uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2220'
-ht-degree: 6%
+source-wordcount: '2215'
+ht-degree: 2%
 
 ---
 
@@ -84,15 +80,15 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * [Configuración de título y URL](#title-and-url-settings)
 
-* **Mostrar vista de “Mis actividades”**
+* **Mostrar vista de &quot;Mis actividades&quot;**
 
   Si se selecciona, la página Actividades incluye una pestaña que filtra las actividades en función de las que genera el miembro actual dentro de la comunidad. La opción predeterminada está seleccionada.
 
-* **Mostrar vista de “todas las actividades”**
+* **Mostrar vista de &quot;todas las actividades&quot;**
 
   Si se selecciona, la página Actividades incluye una pestaña que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. La opción predeterminada está seleccionada.
 
-* **Mostrar vista de “Últimas noticias”**
+* **Mostrar vista de &quot;Fuente de noticias&quot;**
 
   Si se selecciona, las páginas Actividades incluyen una pestaña que filtra las actividades en función de las que sigue el miembro actual. La opción predeterminada está seleccionada.
 
@@ -132,7 +128,7 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * [Configuración de título y URL](#title-and-url-settings)
 
-* **Permitir fijación**
+* **Permitir anclaje**
 
   Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
 
@@ -178,7 +174,7 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * [Configuración de título y URL](#title-and-url-settings)
 
-* **Permitir fijación**
+* **Permitir anclaje**
 
   Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
 
@@ -220,7 +216,7 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
 * [Configuración de título y URL](#title-and-url-settings)
 
-* **Seleccione las plantillas de grupo**
+* **Seleccionar plantillas de grupo**
 
   Lista desplegable que permite seleccionar una o más plantillas de grupo habilitadas entre las que puede elegir el futuro creador de un nuevo grupo de comunidad (en el entorno de publicación).
 
@@ -228,7 +224,7 @@ Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. La opción predeterminada no está seleccionada.
 
-* **Permitir la creación de publicación**
+* **Permitir creación de publicación**
 
   Si se selecciona, los miembros de la comunidad autorizados pueden crear un grupo en el entorno de publicación. Si no se selecciona, los nuevos grupos (subcomunidades) solo se pueden crear en el entorno de creación desde la consola Grupos de sitios de comunidades.
 La opción predeterminada está seleccionada.
@@ -302,7 +298,7 @@ Cuando se agrega a una plantilla, la configuración permite la restricción a lo
 
 * [Configuración de título y URL](#title-and-url-settings)
 
-* **Permitir fijación**
+* **Permitir anclaje**
 
   Si se selecciona, el foro permite anclar las respuestas del tema al principio de la lista de comentarios. La opción predeterminada está seleccionada.
 
@@ -334,11 +330,11 @@ Se accede a la capacidad de crear una función de comunidad seleccionando la var
 
 En el panel Nombre de función de la comunidad, se configura un nombre, una descripción y si la función está habilitada o deshabilitada:
 
-* **Nombre de función de la comunidad**
+* **Nombre de función de comunidad**
 
   El nombre de función utilizado para la visualización y el almacenamiento.
 
-* **Descripción de la función de la comunidad**
+* **Descripción de función de comunidad**
 
   Descripción de la función que se va a mostrar.
 

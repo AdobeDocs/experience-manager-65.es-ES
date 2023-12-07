@@ -1,21 +1,17 @@
 ---
 title: Creación de filtros de grupo de dispositivos
-seo-title: Creating Device Group Filters
 description: Cree un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de los dispositivos
-seo-description: Create a device group filter to define a set of device capability requirements
-uuid: 30c0699d-2388-41b5-a062-f5ea9d6f08bc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
-discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 1%
+source-wordcount: '760'
+ht-degree: 0%
 
 ---
 
@@ -177,7 +173,7 @@ Los valores de tipo String que devuelven los métodos getTitle y getDescription 
 
 El siguiente código POM es útil si utiliza Maven para crear sus aplicaciones. El POM hace referencia a varios complementos y dependencias necesarios.
 
-**Plugins:**
+**Complementos:**
 
 * Complemento del compilador de Apache Maven: compila clases Java a partir del código fuente.
 * Complemento Apache Felix Maven Bundle: Crea el paquete y el manifiesto

@@ -1,17 +1,13 @@
 ---
 title: Temáticas de referencia
-seo-title: Reference Themes
 description: AEM Forms proporciona temáticas de formularios adaptables que puede obtener de la Distribución de software y utilizar para aplicar estilo a un formulario.
-seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
-uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
-source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '525'
 ht-degree: 100%
 
 ---

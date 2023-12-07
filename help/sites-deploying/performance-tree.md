@@ -1,17 +1,14 @@
 ---
 title: Árbol de rendimiento
-seo-title: Performance Tree
 description: AEM Obtenga información acerca de los pasos que se deben seguir para solucionar problemas de rendimiento en las soluciones de problemas de la.
-uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1088'
 ht-degree: 9%
 
 ---
@@ -161,7 +158,7 @@ El análisis comienza en el paso 0. AEM El objetivo es determinar qué entidad (
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Memoria insuficiente</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">Mi aplicación genera errores de memoria insuficiente</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es">Analice los problemas de memoria.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">Analice los problemas de memoria.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,7 +225,7 @@ El análisis comienza en el paso 0. AEM El objetivo es determinar qué entidad (
   <tr>
    <td><strong>Etapa 31</strong></td>
    <td>Usar CDN delante de Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn">Utilizar Dispatcher con una CDN</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn">Uso de Dispatcher con una CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 32</strong></td>
@@ -240,7 +237,7 @@ El análisis comienza en el paso 0. AEM El objetivo es determinar qué entidad (
    <td>Hacer que las solicitudes sean almacenables en caché</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es">Configuración general de Dispatcher</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Configuración general de Dispatcher</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configurar la caché de Dispatcher</a></li>
     </ol> <p>Cómo mejorar la proporción de caché; hacer que las solicitudes puedan almacenarse en caché (prácticas recomendadas de Dispatcher)</p> <p>Además, tenga en cuenta la siguiente configuración para optimizar las configuraciones de almacenamiento en caché<br /> </p>
     <ol>

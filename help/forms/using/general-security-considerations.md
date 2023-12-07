@@ -1,20 +1,16 @@
 ---
 title: Consideraciones generales de seguridad para AEM Forms en JEE
-seo-title: General Security Considerations for AEM Forms on JEE
 description: Aprenda a prepararse para proteger AEM Forms en un entorno JEE.
-seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
-uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 82%
+source-wordcount: '996'
+ht-degree: 81%
 
 ---
 

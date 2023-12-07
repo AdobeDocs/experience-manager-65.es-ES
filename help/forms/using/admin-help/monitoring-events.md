@@ -1,17 +1,13 @@
 ---
 title: Supervisar eventos
-seo-title: Monitoring events
 description: Cuando la capacidad de auditoría está habilitada, Document Security permite supervisar ciertos tipos de eventos. Puede buscar y ordenar fácilmente la lista de eventos mediante la seguridad de documentos.
-seo-description: When the auditing capability is enabled, document security enables you to monitor certain types of events. You can easily search and sort the events list using the document security.
-uuid: 22add6ff-536d-4cb9-8eac-b72cad5c3ecf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -48,7 +44,7 @@ Estos requisitos de configuración deben cumplirse para que se realice la audito
 
 * El sistema o el administrador deben habilitar la capacidad de auditoría para el servidor.
 
-   (Consulte [Configuración de la auditoría de eventos y la privacidad](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
+  (Consulte [Configuración de la auditoría de eventos y la privacidad](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
 * La directiva que utilice para proteger el documento debe tener habilitada la auditoría. (Consulte [Crear y editar directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 

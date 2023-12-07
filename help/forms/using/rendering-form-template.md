@@ -1,16 +1,12 @@
 ---
 title: Representar la plantilla de formulario para formularios HTML5
-seo-title: Rendering form template for HTML5 forms
 description: Los perfiles de formulario HTML5 están asociados a procesamientos de perfiles. Los procesamientos de perfiles son páginas JSP responsables de generar la representaciones HTML del formulario al llamar al servicio OSGi de Forms.
-seo-description: HTML5 forms profiles are associated with profile renders. Profile Renders are JSP pages responsible for generating HTML representation of the form by calling the Forms OSGi service.
-uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 100%

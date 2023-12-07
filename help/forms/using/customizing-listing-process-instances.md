@@ -1,17 +1,13 @@
 ---
 title: Personalizar la lista de instancias de proceso
-seo-title: Customizing the listing of process instances
 description: Personalizar las propiedades mostradas en la instancia de proceso en AEM Forms Workspace.
-seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
-uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '293'
 ht-degree: 100%
 
 ---

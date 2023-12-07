@@ -1,20 +1,16 @@
 ---
 title: 'MSRP: proveedor de recursos de almacenamiento de MongoDB'
-seo-title: MSRP - MongoDB Storage Resource Provider
 description: Configure AEM Communities para que utilice una base de datos relacional como almacén común
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1190'
-ht-degree: 2%
+source-wordcount: '1142'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +26,7 @@ Consulte también [Características de las opciones de SRP](working-with-srp.md#
 
 * [MongoDB](https://www.mongodb.org/):
 
-   * Versión 2.6 o buena
+   * Versión 2.6 o superior
    * No es necesario configurar mongos ni el uso compartido
    * Recomendamos encarecidamente el uso de un [conjunto de réplicas](#mongoreplicaset)
    * AEM Puede ejecutarse en el mismo host que el servidor de correo o puede ejecutarse de forma remota.
@@ -38,7 +34,7 @@ Consulte también [Características de las opciones de SRP](working-with-srp.md#
 * [Apache Solr](https://lucene.apache.org/solr/):
 
    * Solr versión 7.0
-   * Solr requiere Java 1.7 o bueno
+   * Solr requiere Java 1.7 o superior
    * No se necesita ningún servicio
    * Elección de los modos de ejecución:
       * Modo independiente
@@ -80,7 +76,7 @@ En autor, para acceder a la consola Configuración de almacenamiento:
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host de Zookeeper**
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
      Cuando se ejecuta en [Modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en el `HOST:PORT` para el ZooKeeper, como *my.server.com:2181*
 
@@ -98,7 +94,7 @@ Déjelo en blanco si se ejecuta en el modo SolrCloud.
 Nombre de la colección Solr.
         *Predeterminado*: colección1
 
-* Seleccione **[!UICONTROL Enviar]**
+* Seleccionar **[!UICONTROL Enviar]**
 
 >[!NOTE]
 >

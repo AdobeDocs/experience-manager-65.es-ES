@@ -1,18 +1,14 @@
 ---
 title: Crear una plantilla de formulario adaptable personalizada
-seo-title: Creating a custom adaptive form template
 description: Este artículo describe cómo crear plantillas de formulario adaptables personalizadas.
-seo-description: This article describes how to create custom adaptive form templates.
-uuid: 11b5f8cd-c56a-4525-97d5-1938ef5f183d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: affba49e-9712-4d29-858b-2f8ec4f2b1f1
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1267'
 ht-degree: 100%
 
 ---

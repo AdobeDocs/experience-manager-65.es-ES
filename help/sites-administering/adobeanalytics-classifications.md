@@ -1,19 +1,15 @@
 ---
 title: Clasificaciones de Adobe
-seo-title: Adobe Classifications
 description: Aprenda a utilizar las clasificaciones de Adobes para exportar datos de clasificaciones a Adobe Analytics.
-seo-description: Learn how to use Adobe Classifications to export classifications data to Adobe Analytics.
-uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 6%
+source-wordcount: '612'
+ht-degree: 5%
 
 ---
 
@@ -98,7 +94,7 @@ En la implementación predeterminada SAINTDefaultTransformer, los recursos secun
 
 | **Clave** | **Producto** | **Precio** | **Tamaño** | **Color** | **Color^Código** |
 |---|---|---|---|---|---|
-| 1 | Mi nombre de producto | 120.90 | M | black | 101 |
+| 1 | Mi nombre de producto | 120,90 | M | black | 101 |
 
 Las propiedades incluyen lo siguiente:
 
@@ -113,7 +109,7 @@ Las propiedades incluyen lo siguiente:
    <td>Un nombre de clase de una implementación de SAINTransformer</td>
   </tr>
   <tr>
-   <td>email</td>
+   <td>correo electrónico</td>
    <td>Dirección de correo electrónico de notificación.</td>
   </tr>
   <tr>

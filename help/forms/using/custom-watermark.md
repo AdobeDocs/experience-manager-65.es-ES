@@ -1,19 +1,15 @@
 ---
 title: Marca de agua personalizada en la vista previa del PDF de cartas
-seo-title: Custom watermark in letter PDF preview
 description: Aprenda a crear marcas de agua personalizadas en la vista previa PDF de la carta.
-seo-description: Learn how to create custom watermark in letter PDF preview.
-uuid: 5adfede3-9b38-4a12-bf14-6d80cfb0a05a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '336'
 ht-degree: 100%
 
 ---
@@ -58,7 +54,8 @@ Puede seguir los siguientes pasos para personalizar el texto y el aspecto de la 
       >    * Actualice en su instancia
       >    * Aplique una corrección
       >    * Instale un paquete de características
-
+      >    
+      >
 
    1. Haga clic en **Aceptar** y luego en **Guardar todo**. La carpeta **[!UICONTROL previewwatermark]** se crea en la ruta de acceso especificada.
 

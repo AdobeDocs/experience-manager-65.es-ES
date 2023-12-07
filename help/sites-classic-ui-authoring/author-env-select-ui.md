@@ -1,14 +1,12 @@
 ---
 title: Selección de la IU
 description: Para mayor comodidad de los usuarios autores, la IU táctil permite cambiar a la IU clásica cuando es necesario.
-uuid: 755e513e-990c-4dba-8316-623f17bf5c33
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 exl-id: 57d45b06-e76e-420c-8cd0-389bd9f811af
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%

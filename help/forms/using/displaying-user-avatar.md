@@ -1,18 +1,14 @@
 ---
 title: Visualizar el avatar del usuario
-seo-title: Displaying the user avatar
 description: Cómo personalizar AEM Forms Workspace para visualizar la imagen de un usuario que ha iniciado sesión.
-seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
-uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '189'
 ht-degree: 100%
 
 ---

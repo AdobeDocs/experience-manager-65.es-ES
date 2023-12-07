@@ -1,21 +1,17 @@
 ---
 title: Lista de comprobación de seguridad
-seo-title: Security Checklist
 description: AEM Obtenga información acerca de las distintas consideraciones de seguridad al configurar e implementar la implementación de los elementos de seguridad de la aplicación
-seo-description: Learn about the various security considerations when configuring and deploying AEM.
-uuid: 8e293316-4177-4271-87c6-9dc1a2e85a07
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3004'
-ht-degree: 1%
+source-wordcount: '2959'
+ht-degree: 0%
 
 ---
 

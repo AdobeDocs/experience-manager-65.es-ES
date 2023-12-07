@@ -1,19 +1,15 @@
 ---
 title: "Base de datos IBM DB2: Ejecución de comandos para el mantenimiento regular"
-seo-title: "IBM DB2 database: Running commands for regular maintenance"
 description: Este documento enumera los comandos de IBM AEM DB2 recomendados para realizar un mantenimiento regular de la base de datos de formularios en la que se realiza un seguimiento de los formularios en la.
-seo-description: This document lists IBM DB2 commands that are recommended for regular maintenance of your AEM forms database.
-uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +21,7 @@ Se recomiendan los siguientes comandos de IBM AEM DB2 para el mantenimiento regu
 * **db2rbind:** Este comando vuelve a enlazar todos los paquetes de la base de datos. Utilice este comando después de ejecutar el `runstats` para volver a validar todos los paquetes de la base de datos.
 * **reorganizar tabla o índice:** Este comando comprueba si es necesaria una reorganización de algunas tablas e índices.
 
-   A medida que las bases de datos crecen y cambian, es fundamental recalcular las estadísticas de tabla para mejorar el rendimiento de la base de datos, y esto debe hacerse regularmente. Estos comandos se pueden ejecutar manualmente mediante scripts o mediante un trabajo cron.
+  A medida que las bases de datos crecen y cambian, es fundamental recalcular las estadísticas de tabla para mejorar el rendimiento de la base de datos, y esto debe hacerse regularmente. Estos comandos se pueden ejecutar manualmente mediante scripts o mediante un trabajo cron.
 
 >[!NOTE]
 >

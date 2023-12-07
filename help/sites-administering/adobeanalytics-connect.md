@@ -1,20 +1,16 @@
 ---
 title: Conectarse a Adobe Analytics y crear marcos
-seo-title: Connecting to Adobe Analytics and Creating Frameworks
 description: AEM Obtenga información acerca de cómo conectar a los usuarios con el SiteCatalyst y crear marcos de trabajo.
-seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
-uuid: 3820dd24-4193-42ea-aef2-4669ebfeaa9d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 9%
+source-wordcount: '1484'
+ht-degree: 3%
 
 ---
 
@@ -85,7 +81,7 @@ Utilice el [Consola web para configurar el paquete OSGi](/help/sites-deploying/c
 
 >[!CAUTION]
 >
->Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
+>Debido a los cambios de seguridad dentro de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map AEM incluida en el programa de trabajo de.
 >
 >El [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debería utilizarse ahora.
 
@@ -93,7 +89,7 @@ Utilice el [Consola web para configurar el paquete OSGi](/help/sites-deploying/c
 
 >[!CAUTION]
 >
->Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
+>Debido a los cambios de seguridad dentro de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map AEM incluida en el programa de trabajo de.
 >
 >El [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debería utilizarse ahora.
 
@@ -162,7 +158,7 @@ Comience por abrir el panel. Presione la flecha hacia abajo situada junto a **Se
    * Tiene los mismos segmentos que el servidor de seguimiento
    * Se utiliza para enviar datos desde páginas seguras (`https://`)
 
-* **Espacio de nombres del visitante**
+* **Área de nombres de visitante**
 
    * El área de nombres determina la primera parte de la dirección URL de seguimiento.
    * Por ejemplo, cambiar el área de nombres a **CNAME** hace que las llamadas realizadas a Adobe Analytics tengan el aspecto siguiente **CNAME.d1.omtrdc.net** en lugar del predeterminado.

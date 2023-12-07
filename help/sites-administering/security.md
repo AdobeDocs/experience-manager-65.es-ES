@@ -1,18 +1,16 @@
 ---
 title: Administración de usuarios y seguridad
 description: AEM Obtenga información sobre la administración de usuarios y la seguridad en la.
-uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5398'
 ht-degree: 1%
 
 ---
@@ -372,7 +370,7 @@ A continuación se describen las prácticas recomendadas al trabajar con permiso
 | *Usar grupos* | Evite asignar derechos de acceso usuario por usuario. Existen varias razones para este consejo:<ul><li>Hay muchos más usuarios que grupos, por lo que los grupos simplifican la estructura.</li><li>Los grupos ayudan a proporcionar una visión general de todas las cuentas.</li> <li>La herencia es más sencilla con los grupos.</li><li>Los usuarios van y vienen. Los grupos son a largo plazo.</li></ul> |
 | *Sea positivo* | Utilice siempre las instrucciones Allow para especificar los derechos del grupo (siempre que sea posible). Evite utilizar una instrucción Deny. Los grupos se evalúan en orden y el orden puede definirse de forma diferente por usuario. En otras palabras: es posible que tenga poco control sobre el orden en que se implementan y evalúan las instrucciones. Si solo utiliza instrucciones Allow, el orden no importa. |
 | *Manténgalo Simple* | Invertir algo de tiempo y reflexión a la hora de configurar una nueva instalación merece la pena. La aplicación de una estructura clara simplifica el mantenimiento y la administración continuos, lo que garantiza que tanto sus compañeros actuales como sus futuros sucesores puedan comprender fácilmente qué se implementa. |
-| *Probar* | Utilice una instalación de prueba para practicar y asegurarse de que comprende las relaciones entre los distintos usuarios y grupos. |
+| *Prueba* | Utilice una instalación de prueba para practicar y asegurarse de que comprende las relaciones entre los distintos usuarios y grupos. |
 | *Usuarios/grupos predeterminados* | Actualice siempre Usuarios y grupos predeterminados inmediatamente después de la instalación para evitar problemas de seguridad. |
 
 ## Administración de usuarios y grupos {#managing-users-and-groups}

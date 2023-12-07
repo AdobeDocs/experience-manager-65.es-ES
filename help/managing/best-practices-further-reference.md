@@ -1,16 +1,12 @@
 ---
 title: 'La lista de comprobación: referencia adicional'
-seo-title: The Checklist - Further Reference
 description: Obtenga más información que desarrolla o aumenta los documentos y principios cubiertos por la Lista de comprobación de prácticas recomendadas de administración de proyectos.
-seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
-uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -71,7 +67,7 @@ Al igual que con cualquier proyecto, es fundamental establecer normas básicas l
 
 * **Funciones**
 
-   Las funciones deben definirse claramente y darse a conocer a todas las personas involucradas en el proyecto. Además, es aconsejable destacar lo siguiente:
+  Las funciones deben definirse claramente y darse a conocer a todas las personas involucradas en el proyecto. Además, es aconsejable destacar lo siguiente:
 
    * Responsables
    * Puntos de contacto
@@ -82,10 +78,10 @@ Al igual que con cualquier proyecto, es fundamental establecer normas básicas l
 
 * **Participación**
 
-   Mediante la participación de las partes interesadas lo antes posible, puede animarlas a convertirse en *partes interesadas* en el proyecto. Hacerlo aumenta su compromiso con el éxito.
+  Mediante la participación de las partes interesadas lo antes posible, puede animarlas a convertirse en *partes interesadas* en el proyecto. Hacerlo aumenta su compromiso con el éxito.
 
    * En el lado del cliente, esta función incluye a los autores que trabajan con el sistema diariamente
-   * Dentro de su propio equipo de proyecto, esta participación también incluye a las personas responsables del control de calidad. Cuanto más comprendan los requisitos del cliente, mejor podrán planificar las pruebas.
+   * Dentro de su propio equipo de proyecto, esta participación también incluye a las personas responsables de la garantía de calidad. Cuanto más comprendan los requisitos del cliente, mejor podrán planificar las pruebas.
 
 * **Rutas de comunicación**
 
@@ -93,20 +89,20 @@ Al igual que con cualquier proyecto, es fundamental establecer normas básicas l
 
 * **Procesos**
 
-   Los procesos definidos dependen del proyecto individual. De nuevo, intente mantener estos procesos simples, teniendo en cuenta lo siguiente:
+  Los procesos definidos dependen del proyecto individual. De nuevo, intente mantener estos procesos simples, teniendo en cuenta lo siguiente:
 
    * Definir procesos (y rutas de comunicación) para interactuar con terceros; por ejemplo, agencias de diseño y proveedores de software de terceros, entre otros.
    * A menudo, el cliente tiene sus propios procedimientos y herramientas de administración e informes de proyectos.
 
 * **Herramientas de seguimiento**
 
-   Hay muchas herramientas disponibles para rastrear información sobre errores, tareas y otros aspectos del proyecto. Consulte [Descripción general de las herramientas potenciales](#overview-of-potential-tools) para obtener más información.
+  Hay muchas herramientas disponibles para rastrear información sobre errores, tareas y otros aspectos del proyecto. Consulte [Descripción general de las herramientas potenciales](#overview-of-potential-tools) para obtener más información.
 
    * El punto clave a tener en cuenta aquí es mantener solo una copia de la información y compartir la información (y por lo tanto el acceso a la herramienta que se utiliza). Este flujo de trabajo facilita el mantenimiento y ayuda a evitar discrepancias.
 
 * **Ámbito**
 
-   Defina claramente lo que abarca el proyecto en varios niveles:
+  Defina claramente lo que abarca el proyecto en varios niveles:
 
    * las versiones individuales (si se utiliza un proceso de versión iterativo e independientemente de si se entregan a los clientes o al equipo de prueba interno).
    * AEM el proyecto de la.
@@ -115,7 +111,7 @@ Al igual que con cualquier proyecto, es fundamental establecer normas básicas l
 
 * **Creación de informes**
 
-   Defina claramente qué información desea que se notifique, en qué forma, con qué frecuencia y a quién.
+  Defina claramente qué información desea que se notifique, en qué forma, con qué frecuencia y a quién.
 
 * **Terminología**
 
@@ -137,7 +133,7 @@ Las organizaciones utilizan indicadores de rendimiento clave (KPI) para evaluar 
 
 Estos indicadores pueden ser:
 
-* Negocios:
+* Empresa:
 
    * Se utiliza para medir objetivos comerciales clave.
    * Es importante elegir los KPI adecuados para su negocio/escenario con definiciones claras de cuáles son, cómo se miden, cómo se utilizan y quién los utiliza.
@@ -242,14 +238,14 @@ Los tiempos de respuesta que busca son diferentes en los entornos de creación y
 
 * **Entorno de creación**
 
-   Los autores que introducen y actualizan contenido utilizan este entorno, por lo que debe:
+  Los autores que introducen y actualizan contenido utilizan este entorno, por lo que debe:
 
    * atienda a unos pocos usuarios que generan un número elevado de solicitudes al actualizar las páginas de contenido y los elementos individuales de esas páginas
    * sea lo más rápido posible para maximizar su productividad y conseguir su contenido en su sitio web
 
 * **Entorno de publicación**
 
-   Este entorno incluye contenido que pone a disposición de los usuarios:
+  Este entorno incluye contenido que pone a disposición de los usuarios:
 
    * la velocidad sigue siendo vital, pero a menudo es más lenta que un entorno de creación
    * a menudo se aplican mecanismos adicionales de mejora del rendimiento:
@@ -285,13 +281,13 @@ Existen varios mecanismos que puede utilizar para controlar los tiempos de respu
 
 * **AEM Monitorización de los tiempos de respuesta con el registro de solicitudes de la**
 
-   Un buen punto de partida para el análisis del rendimiento es el registro de solicitudes. Entre otra información, puede ver los tiempos de respuesta de las solicitudes individuales. Consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
+  Un buen punto de partida para el análisis del rendimiento es el registro de solicitudes. Entre otra información, puede ver los tiempos de respuesta de las solicitudes individuales. Consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
 
 * **Monitorización de los tiempos de respuesta con comentarios del HTML**
 
-   Los comentarios del HTML se pueden utilizar para incluir información sobre el tiempo de respuesta dentro del origen de cada página:
+  Los comentarios del HTML se pueden utilizar para incluir información sobre el tiempo de respuesta dentro del origen de cada página:
 
-   `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
+  `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
 
 #### Buscar solicitudes {#search-requests}
 
@@ -317,11 +313,11 @@ Estas solicitudes de búsqueda deben planificarse e integrarse desde el principi
 
 * **AEM Monitorización de los tiempos de respuesta de búsqueda con el archivo request.log de**
 
-   De nuevo, request.log se puede utilizar para controlar los tiempos de respuesta para las solicitudes de búsqueda; consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
+  De nuevo, request.log se puede utilizar para controlar los tiempos de respuesta para las solicitudes de búsqueda; consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
 
 * **Mecanismos programados para medir los tiempos de respuesta de búsqueda**
 
-   Para personalizar la información recopilada acerca de las solicitudes de búsqueda y su rendimiento, se recomienda incluir la recopilación de información en el código fuente del proyecto; consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
+  Para personalizar la información recopilada acerca de las solicitudes de búsqueda y su rendimiento, se recomienda incluir la recopilación de información en el código fuente del proyecto; consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más información.
 
 ### Concurrencia {#concurrency}
 
@@ -353,15 +349,15 @@ Antes de hablar de las métricas relacionadas, defina rápidamente los términos
 
 * **Capacidad y volumen**
 
-   | Qué/dónde | Capacidad | Volumen |
-   |---|---|---|
-   | Cliente | Potencia de cálculo del equipo del usuario. | Complejidad del diseño de página. |
-   | Red | Ancho de banda de red. | Tamaño de la página (código, imágenes, etc.). |
-   | Caché de Dispatcher | Memoria del servidor del servidor web (memoria principal y disco duro). | Servidor web (memoria principal y disco duro). Número y tamaño de las páginas en caché. |
-   | Caché de salida | AEM Memoria del servidor del servidor de la unidad de disco duro (memoria principal y disco duro) del servidor de la unidad de. | Número y tamaño de las páginas en la caché de resultados, el número de dependencias por página. La caché de Dispatcher reduce este volumen. |
-   | Servidor web | Potencia de cálculo del servidor web. | Número de solicitudes. El almacenamiento en caché reduce este volumen. |
-   | Plantilla | Potencia de cálculo del servidor web. | Complejidad de las plantillas. |
-   | Repositorio | Rendimiento del repositorio. | Número de páginas cargadas desde el repositorio. |
+  | Qué/dónde | Capacidad | Volumen |
+  |---|---|---|
+  | Cliente | Potencia de cálculo del equipo del usuario. | Complejidad del diseño de página. |
+  | Red | Ancho de banda de red. | Tamaño de la página (código, imágenes, etc.). |
+  | Caché de Dispatcher | Memoria del servidor del servidor web (memoria principal y disco duro). | Servidor web (memoria principal y disco duro). Número y tamaño de las páginas en caché. |
+  | Caché de salida | AEM Memoria del servidor del servidor de la unidad de disco duro (memoria principal y disco duro) del servidor de la unidad de. | Número y tamaño de las páginas en la caché de resultados, el número de dependencias por página. La caché de Dispatcher reduce este volumen. |
+  | Servidor web | Potencia de cálculo del servidor web. | Número de solicitudes. El almacenamiento en caché reduce este volumen. |
+  | Plantilla | Potencia de cálculo del servidor web. | Complejidad de las plantillas. |
+  | Repositorio | Rendimiento del repositorio. | Número de páginas cargadas desde el repositorio. |
 
 ### Otras métricas {#other-metrics}
 
@@ -387,7 +383,6 @@ El [Lista de comprobación de seguridad](/help/sites-administering/security-chec
 >* Se trata de una descripción general abstracta; consulte la [Lista de comprobación del proyecto](/help/managing/best-practices.md) para fases/hitos/tareas específicos.
 >* Cualquier escala de tiempo es teórica.
 >
-
 
 AEM Para una nueva implementación de un proyecto de la estándar, tenga en cuenta tareas como:
 
@@ -423,12 +418,12 @@ Algunos puntos a tener en cuenta para cada categoría son:
       * El primer sprint genera la primera implementación en el entorno de prueba.
       * Cada sprint tiene un resultado ejecutable.
       * Cada sprint obtiene la firma de un cliente (mínimo de prueba estructurada con comentarios).
+
    * AEM Planifique la eventualidad de una actualización de la versión de la aplicación disponible durante la ejecución del proyecto.
    * Planifique las pruebas y la optimización durante los sprints.
    * Plan para las fases de estabilización y optimización.
    * Cree un registro de elementos que se planificarán para versiones posteriores.
    * Plan para la implicación y entrega de los socios.
-
 
 * **Infraestructura**
 
@@ -438,12 +433,14 @@ Algunos puntos a tener en cuenta para cada categoría son:
       * Definir objetivos de rendimiento (es decir, definir claramente las expectativas).
       * Definir la arquitectura de hardware e infraestructura, incluido el tamaño.
       * Defina la implementación.
+
    * Utilice varias iteraciones; para el primer sprint y la configuración inicial, prepare lo siguiente:
 
       * Entorno de desarrollo.
       * Proceso de desarrollo.
       * Entorno de prueba.
       * Proceso de implementación (incluida la administración de la configuración).
+
    * Planifique varias pruebas de carga.
    * Planifique las pruebas y la optimización durante los sprints.
    * Planifique una fase de estabilización y optimización.
@@ -451,8 +448,6 @@ Algunos puntos a tener en cuenta para cada categoría son:
    * Utilice usuarios con nombre y funciones definidas lo antes posible.
    * Planifique la formación (por ejemplo, formación de administradores).
    * Plan de transferencia a operaciones.
-
-
 
 * **Contenido**
 

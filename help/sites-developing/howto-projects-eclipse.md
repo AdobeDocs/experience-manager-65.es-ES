@@ -1,16 +1,12 @@
 ---
 title: AEM Cómo desarrollar proyectos de mediante Eclipse
-seo-title: How to Develop AEM Projects Using Eclipse
 description: AEM En esta guía se describe cómo utilizar Eclipse para desarrollar proyectos basados en el
-seo-description: This guide describes how to use Eclipse for developing AEM based projects
-uuid: 79fee76f-6bcc-498f-af46-530816b41bbe
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%

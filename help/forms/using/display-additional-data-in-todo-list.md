@@ -1,16 +1,12 @@
 ---
 title: Visualizar datos adicionales en la lista de tareas pendientes
-seo-title: Displaying additional data in ToDo list
 description: Personalización de la visualización de la lista Tareas pendientes de AEM Forms Workspace de LiveCycle para mostrar más información además de la predeterminada.
-seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
-uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 97%

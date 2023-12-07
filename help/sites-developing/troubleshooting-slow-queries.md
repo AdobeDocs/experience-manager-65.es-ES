@@ -1,18 +1,14 @@
 ---
 title: Solución de problemas de consultas lentas
-seo-title: Troubleshooting Slow Queries
 description: Aprenda a solucionar problemas de consultas lentas en Adobe Experience Manager.
-seo-description: null
-uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2230'
 ht-degree: 0%
 
 ---
@@ -432,7 +428,7 @@ Por lo tanto, asegúrese de que los índices satisfacen las consultas, excepto s
    * Interfaz de usuario web para ejecutar consultas XPath y JCR-SQL2.
    * AEM En el [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Herramientas > Consulta...
 
-* **[Explicar la consulta](/help/sites-administering/operations-dashboard.md#explain-query)**
+* **[Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query)**
 
    * AEM Panel de operaciones de la que proporciona una explicación detallada (plan de consulta, tiempo de consulta y número de resultados) para cualquier consulta XPATH o JCR-SQL2 determinada.
 

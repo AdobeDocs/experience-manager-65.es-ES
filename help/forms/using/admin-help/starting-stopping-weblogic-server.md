@@ -1,18 +1,14 @@
 ---
 title: Iniciar y detener WebLogic Server
-seo-title: Starting and stopping WebLogic Server
 description: AEM Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Server en la que desea implementar módulos de formularios de la forma que desee. Este documento describe cómo iniciar y detener WebLogic Server.
-seo-description: Several procedures require you to start or stop the instance of WebLogic Server where you want to deploy AEM forms modules. This document describes how to start and stop the WebLogic Server.
-uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 2%
+source-wordcount: '603'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +65,7 @@ AEM Varios procedimientos requieren que inicie o detenga la instancia de WebLogi
 1. Haga clic en AdminServer y, en el panel Configuración de AdminServer, haga clic en la ficha Control.
 1. Asegúrese de que AdminServer está seleccionado en la tabla Estado del servidor y haga clic en Apagar.
 1. Seleccione Al finalizar el trabajo para apagar correctamente el servidor o seleccione Forzar apagado ahora para detener el servidor inmediatamente sin completar las tareas en curso.
-1. En el panel Asistente para el ciclo de vida del servidor, haga clic en Sí para completar el apagado.
+1. En el panel Asistente para ciclos de vida de servidor, haga clic en Sí para completar el apagado.
 
 La consola de administración de WebLogic Server ya no está disponible y el símbolo del sistema desde el que ejecutó el comando start está disponible.
 
@@ -117,5 +113,5 @@ Después de cerrar WebLogic Server, puede cerrar el símbolo del sistema desde e
 1. Seleccione el servidor administrado que desea detener.
 1. Haga clic en el botón Apagar situado debajo del servidor administrado que desea detener.
 1. Seleccione Al finalizar el trabajo para apagar correctamente el servidor o seleccione Forzar apagado ahora para detener el servidor inmediatamente sin completar las tareas en curso.
-1. En el panel Asistente para el ciclo de vida del servidor, haga clic en Sí para completar el apagado.
+1. En el panel Asistente para ciclos de vida de servidor, haga clic en Sí para completar el apagado.
 

@@ -1,17 +1,13 @@
 ---
 title: Diseñar formularios HTML5 accesibles
-seo-title: Designing accessible HTML5 forms
 description: Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5. Estos formularios admiten la navegación con pestañas y están certificados para ser compatibles con lectores de pantalla comunes.
-seo-description: HTML5 forms use the ARIA HTML5 accessibility standard. These forms support tabbed navigation and are certified to be compatible with common screen readers.
-uuid: 1ce5ba39-69ea-4d0e-96ea-e2a38b21d6b7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 feature: Mobile Forms
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 92%

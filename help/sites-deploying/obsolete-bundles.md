@@ -1,19 +1,15 @@
 ---
 title: Lista de paquetes obsoletos desinstalados después de la actualización
-seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: AEM Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a la versión 6.3 de.
-seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
-uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---

@@ -1,20 +1,16 @@
 ---
 title: Inicio rápido de la API del servicio de repositorio
-seo-title: Repository Service API Quick Starts
 description: Utilice el servicio Repositorio de AEM Forms para crear una carpeta, escribir un recurso, enumerar recursos, leer un recurso, actualizar un recurso, buscar recursos, crear relaciones entre recursos, bloquear un recurso, administrar listas de control de acceso y eliminar un recurso.
-seo-description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
-uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 2%
+source-wordcount: '644'
+ht-degree: 1%
 
 ---
 

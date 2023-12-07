@@ -1,17 +1,15 @@
 ---
 title: Prácticas recomendadas para las pruebas de rendimiento
 description: Conozca las estrategias generales y las metodologías utilizadas para las pruebas de rendimiento, así como algunas de las herramientas disponibles para ayudar en el proceso.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 1%
+source-wordcount: '1790'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +66,7 @@ Hay muchas herramientas de prueba de rendimiento disponibles comercialmente en e
 
 #### Herramientas de optimización {#optimization-tools}
 
-**Monitoreo**
+**Monitorización**
 
 El [Monitorización del rendimiento](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) La documentación de es un buen recurso para herramientas y métodos que se pueden utilizar para diagnosticar problemas y localizar áreas para ajustar.
 
@@ -119,7 +117,7 @@ El **ObservationQueueMaxLength** Esta sección muestra el número de eventos en 
 1. Colóquelo en la carpeta /crx-quickstart/install.
 
 >[!NOTE]
->Consulte [AEM.x | Consejos de ajuste de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
+>Consulte [AEM.x | Consejos de ajuste de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 La configuración predeterminada es 10 000, pero la mayoría de las implementaciones deben aumentarla a 20 000 o 50 000.
 
@@ -147,7 +145,7 @@ Después de ejecutar pruebas de rendimiento en la instancia de autor, cualquier 
 * Observe el registro de errores para ver si hay errores o advertencias. Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md).
 * Supervise los recursos de hardware del sistema, como la utilización de memoria y CPU, E/S de disco o E/S de red. Estos recursos suelen ser la causa de cuellos de botella en el rendimiento.
 * Optimizar la arquitectura de las páginas y cómo se dirigen para minimizar el uso de parámetros de URL y permitir el mayor almacenamiento en caché posible.
-* Siga las [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [Consejos de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es) documentación.
+* Siga las [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [Consejos de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en) documentación.
 
 * Si hay problemas con la edición de determinadas páginas o componentes en instancias de autor, utilice el modo de desarrollador de TouchUI para inspeccionar la página en cuestión. Al hacerlo, se proporciona un desglose de cada área de contenido de la página y de su tiempo de carga.
 * Minimice todos los JS y CSS del sitio. Ver esto [publicación de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

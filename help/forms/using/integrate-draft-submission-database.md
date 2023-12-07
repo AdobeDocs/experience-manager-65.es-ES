@@ -1,17 +1,13 @@
 ---
 title: Ejemplo para integrar el componente Borradores y envíos con la base de datos
-seo-title: Sample for integrating drafts & submissions component with database
 description: Implementación de referencia de servicios personalizados de metadatos y datos para integrar el componente Borradores y envíos con una base de datos.
-seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
-uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1472'
 ht-degree: 100%
 
 ---
@@ -29,7 +25,6 @@ El ejemplo que se analiza en este documento es una implementación de referencia
 >* Los ejemplos y configuraciones explicados en este documento corresponden a MySQL 5.6.24. y debe sustituirlos adecuadamente por su sistema de base de datos.
 >* Asegúrese de que ha instalado la última versión del paquete de complementos de AEM Forms. Para ver la lista de paquetes disponibles, consulte el artículo [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
 >* El paquete de ejemplo solo es compatible con las acciones de envío de los formularios adaptables.
-
 
 ## Configuración del ejemplo {#set-up-and-configure-the-sample}
 
@@ -81,6 +76,7 @@ en https://[*host*]:[*port*]/system/console/configMgr.
    Para proporcionar un nombre diferente para la tabla de datos:
 
    * En la configuración de la consola web, busque y haga clic en Implementación de ejemplo del servicio de datos del portal de formularios. Puede cambiar los valores de la fuente de datos y el nombre de la tabla de datos.
+
    >[!NOTE]
    >
    >Si cambia los nombres de las tablas, proporciónelos en la configuración del portal de formularios.
@@ -163,7 +159,6 @@ en https://[*host*]:[*port*]/system/console/configMgr.
 >
 >* El controlador JDBC para MySQL no se proporciona con el ejemplo. Asegúrese de que lo ha aprovisionado y proporcione la información necesaria para configurar el grupo de conexiones JDBC.
 >* Asigne instancias de autor y publicación para utilizar la misma base de datos. El valor del campo URI de conexión JDBC debe ser el mismo para todas las instancias de autor y publicación.
-
 
 1. Deje el resto de las configuraciones tal como están y haga clic en **[!UICONTROL Guardar]**.
 

@@ -1,18 +1,14 @@
 ---
 title: AEM Mitigación de problemas de serialización en la
-seo-title: Mitigating serialization issues in AEM
 description: AEM Obtenga información sobre cómo mitigar los problemas de serialización en la.
-seo-description: Learn how to mitigate serialization issues in AEM.
-uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 614c4c88f3f09feb5a400ade9f45f634ac4fbcd5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -76,9 +72,10 @@ La configuración del cortafuegos es dinámica y se puede cambiar en cualquier m
 1. Buscar y hacer clic en **Configuración del firewall de deserialización.**
 
    >[!NOTE]
+   >
    También puede acceder a la página de configuración directamente accediendo a la dirección URL en:
+   >
    * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-
 
 Esta configuración contiene los registros de lista de permitidos, lista de bloqueados y deserialización.
 
@@ -109,6 +106,7 @@ Después de acceder a la dirección URL, se muestra una lista de comprobaciones 
 Para obtener más información sobre la resolución de problemas con el agente, consulte [Gestión De Errores Con La Carga Del Agente Dinámico](#handling-errors-with-dynamic-agent-loading) más abajo.
 
 >[!NOTE]
+>
 Si añade `org.apache.commons.collections.functors` en la lista de permitidos, la comprobación de estado siempre falla.
 
 ## Gestión de errores al cargar el agente dinámico {#handling-errors-with-dynamic-agent-loading}
@@ -124,9 +122,11 @@ Para cargar el agente manualmente, haga lo siguiente:
    ```
 
    >[!NOTE]
+   >
    AEM Requiere que también use la opción -nofork CQ/, junto con la configuración de memoria JVM adecuada, ya que el agente no está habilitado en una JVM ramificada.
 
    >[!NOTE]
+   >
    La distribución de Adobe del JAR del agente NotSoSerial se encuentra en el `crx-quickstart/opt/notsoserial/` AEM carpeta de la instalación de la.
 
 1. Detenga y reinicie JVM;

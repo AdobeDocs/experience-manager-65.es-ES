@@ -1,16 +1,12 @@
 ---
 title: Explicación de la estructura de carpetas
-seo-title: Understanding the folder structure
 description: Obtenga más información sobre la estructura de carpetas del código fuente de AEM Forms Workspace que se va a personalizar.
-seo-description: How to understand the folder structure of AEM Forms workspace source code to customize.
-uuid: ee844f89-887e-4f07-9db3-389859baa374
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 exl-id: a4c1d3d8-477e-4edf-9dde-4ef9c766be5a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%

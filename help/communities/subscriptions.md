@@ -1,17 +1,13 @@
 ---
 title: Suscripciones de Communities
-seo-title: Communities Subscriptions
 description: Los miembros de la comunidad interactúan con otros miembros por correo electrónico
-seo-description: Community members interact with other members through email
-uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%

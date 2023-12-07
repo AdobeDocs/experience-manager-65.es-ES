@@ -1,16 +1,12 @@
 ---
 title: Iniciar un nuevo proceso con datos de proceso existentes en AEM Forms Workspace
-seo-title: Initiating a new process with existing process data in AEM Forms workspace
 description: Consulte cómo puede iniciar un proceso nuevo con datos de proceso existentes en AEM Forms Workspace.
-seo-description: See how you can initiate a new process with existing process data in AEM Forms workspace.
-uuid: 4cb96d7f-483b-4db4-bea1-57948931423d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: cbc5af90-5d51-4fdb-ac72-eea91137975d
 docset: aem65
 exl-id: 6fa97c06-9238-4444-b67f-983ef3b6fdc8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 100%

@@ -1,20 +1,16 @@
 ---
 title: Crear documentos PDF con datos XML enviados
-seo-title: Creating PDF Documents with SubmittedXML Data
 description: Utilice el servicio Forms para recuperar los datos de formulario introducidos por el usuario en un formulario interactivo. Pase los datos del formulario a otra operación del servicio AEM Forms y cree un documento de PDF con los datos.
-seo-description: Use the Forms service to retrieve the form data that the user entered into an interactive form. Pass the form data to another AEM Forms service operation and create a PDF document using the data.
-uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -108,7 +104,7 @@ Cree un documento de PDF con datos XML enviados mediante la API de Forms, Output
       * Un valor de cadena que especifica la variable `HTTP_USER_AGENT` valor de encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
 
-      El `processFormSubmission` El método devuelve un valor `FormsResult` que contiene los resultados del envío del formulario.
+     El `processFormSubmission` El método devuelve un valor `FormsResult` que contiene los resultados del envío del formulario.
 
    * Determine si el servicio Forms ha terminado de procesar los datos del formulario invocando el `FormsResult` del objeto `getAction` método. Si este método devuelve el valor `0`, los datos están listos para procesarse.
    * Recuperar datos de formulario creando un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método. (Este objeto contiene datos de formulario que se pueden enviar al servicio Output).
@@ -117,7 +113,6 @@ Cree un documento de PDF con datos XML enviados mediante la API de Forms, Output
    * Crear un `org.w3c.dom.DocumentBuilder` invocando el objeto de `org.w3c.dom.DocumentBuilderFactory` del objeto `newDocumentBuilder` método.
    * Crear un `org.w3c.dom.Document` invocando el objeto de `org.w3c.dom.DocumentBuilder` del objeto `parse` y pasando el `java.io.InputStream` objeto.
    * Recupere el valor de cada nodo dentro del documento XML. Una forma de realizar esta tarea es crear un método personalizado que acepte dos parámetros: `org.w3c.dom.Document` y el nombre del nodo cuyo valor desea recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue este proceso, se llama a este método personalizado `getNodeText`. Se muestra el cuerpo de este método.
-
 
 1. Cree un documento de PDF no interactivo con el servicio Output.
 

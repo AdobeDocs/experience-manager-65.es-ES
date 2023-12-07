@@ -1,16 +1,14 @@
 ---
 title: Filtro de disposición de contenido
 description: Aprenda a utilizar el filtro de disposición de contenido para evitar ataques XSS.
-uuid: 145a88e0-9fa8-42db-b189-eda507c33049
 contentOwner: trushton
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: Security
-discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---

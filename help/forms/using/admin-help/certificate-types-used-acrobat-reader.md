@@ -1,19 +1,15 @@
 ---
 title: Tipos de certificados utilizados por las extensiones de Acrobat Reader DC
-seo-title: Certificate types used by Acrobat Reader DC extensions
 description: Obtenga información acerca de los tipos de certificados utilizados por las extensiones de Acrobat Reader DC.
-seo-description: Learn about the certificate types used by Acrobat Reader DC extensions.
-uuid: 93c02abc-2d5a-44ed-b93c-981afbd0553d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 5%
+source-wordcount: '944'
+ht-degree: 4%
 
 ---
 

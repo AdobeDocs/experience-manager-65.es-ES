@@ -1,17 +1,13 @@
 ---
 title: Introducción a AEM Communities
-seo-title: Getting Started with AEM Communities
 description: Un tutorial sobre cómo empezar a usar AEM Communities
-seo-description: A tutorial on getting started with AEM Communities
-uuid: b7adf7c0-5563-4e44-bb53-04a566f271d5
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 exl-id: 14ecaef7-d9fc-45ea-8feb-16ad8946508e
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%

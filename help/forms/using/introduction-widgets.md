@@ -1,17 +1,13 @@
 ---
 title: Marco de aspecto para formularios adaptables y HTML5
-seo-title: Appearance framework for adaptive and HTML5 forms
 description: Mobile Forms procesa las plantillas de formulario como formularios HTML5. Estos formularios utilizan archivos jQuery, Backbone.js y Underscore.js para el aspecto y para habilitar los scripts.
-seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
-uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1152'
 ht-degree: 100%
 
 ---

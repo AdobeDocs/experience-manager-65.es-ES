@@ -1,18 +1,14 @@
 ---
 title: Cambiar el conjunto de caracteres
-seo-title: Change the character set
 description: Puede especificar el conjunto de caracteres utilizado para codificar la secuencia de salida. Aprenda a cambiar el conjunto de caracteres.
-seo-description: You can specify the character set used to encode the output stream. Learn how you can change the character set.
-uuid: ecb0c3ff-368c-4553-80e4-aa35fc15af62
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 811b31f8-5465-4fb2-b1f9-513936041771
 exl-id: 9ff75d98-54ad-425d-912f-d5a7501bf564
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '132'
 ht-degree: 7%
 
 ---

@@ -1,18 +1,14 @@
 ---
 title: Introducción a la administración de formularios
-seo-title: Introduction to managing forms
 description: AEM Forms proporciona herramientas para administrar los formularios adaptables y los recursos relacionados. Este artículo presenta las principales funciones y elementos de la interfaz de usuario de Forms Management.
-seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
-uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager, introduction
-discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1566'
 ht-degree: 100%
 
 ---
@@ -38,7 +34,7 @@ Junto con las opciones para crear formularios, documentos y recursos relacionado
 * Fragmentos de documento
 * Diccionarios de datos
 
-   ![Consola de AEM Forms](assets/aem_forms_console_new.png)
+  ![Consola de AEM Forms](assets/aem_forms_console_new.png)
 
 ### Formularios y documentos  {#forms-documents}
 
@@ -59,9 +55,9 @@ El botón Crear es el punto de inicio del proceso de creación o carga de un rec
    * **Carpeta general:** estas carpetas se utilizan para los recursos creados en la interfaz de usuario de AEM [!DNL Forms]. Este tipo de carpetas no tiene una estructura de carpetas estricta. Puede cambiar el nombre de las carpetas, crear subcarpetas y utilizarlas para almacenar formularios adaptables, comunicaciones interactivas, fragmentos de formulario adaptable, plantillas de formulario (XDP), formularios PDF, documentos y recursos relacionados.
    * **Carpeta de Forms Workflow:** las carpetas de Forms Workflow se crean cuando los procesos de Workbench (archivos de LiveCycle) se migran y sincronizan con la interfaz de usuario de AEM [!DNL Forms]. No se puede cambiar el nombre de estas carpetas, ni crear subcarpetas, comunicaciones interactivas o fragmentos de formulario adaptable en ellas. Tampoco se permite eliminar una carpeta de versiones, crear y cargar un formulario adaptable, un fragmento de formulario adaptable o una comunicación interactiva en paralelo a la carpeta de versiones.
 
-   ![carpetas](assets/folders.png)
+  ![carpetas](assets/folders.png)
 
-   **A.** Carpeta general **B.** carpeta de Forms Workflow
+  **A.** Carpeta general **B.** carpeta de Forms Workflow
 
 El panel Formularios y documentos también proporciona opciones para lo siguiente:
 
@@ -97,7 +93,7 @@ El panel Herramientas AEM contiene herramientas para varios componentes. Para d
 * **Configurar carpeta inspeccionada:** un administrador puede configurar una carpeta de red, conocida como carpeta inspeccionada, de forma que cuando un usuario coloque un archivo (por ejemplo, un archivo PDF) en dicha carpeta, se inicie una operación preconfigurada y se manipule el archivo. Para obtener información detallada, consulte [Crear o configurar una carpeta vigilada](/help/forms/using/creating-configure-watched-folder.md).
 * **Configurar el servicio sin conexión de la aplicación Forms:** el servicio sin conexión de la aplicación AEM [!DNL Forms] almacena en caché las rutas o URL de los recursos utilizados en un formulario. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento del lado del servidor. Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms, consulte [Trabajar en modo sin conexión](/help/forms/using/work-offline-mode.md).
 
-   ![Herramientas de AEM Forms](assets/aem_forms_tools_new.png)
+  ![Herramientas de AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configurar PDF Generator:** un administrador puede configurar las opciones de AEM [!DNL Forms] PDF Generator, agregar cuentas de usuario e importar o exportar la configuración a PDF Generator.
 * **Publicar recursos de Administración de correspondencia:** AEM [!DNL Forms] permite publicar todas las cartas, fragmentos de documento, diccionarios de datos y dependencias relacionadas de una instancia de autor a la vez. Los recursos publicados incluyen todos los recursos de Administración de correspondencia y las dependencias relacionadas. Para obtener información detallada, consulte [Publicación y cancelación de la publicación de formularios y documentos](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
@@ -122,6 +118,6 @@ El panel Herramientas AEM contiene herramientas para varios componentes. Para d
 
 * **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el ratón sobre un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
 
-   ![Barra de herramientas Acciones en un formulario adaptable](assets/action_toolbar_new.png)
+  ![Barra de herramientas Acciones en un formulario adaptable](assets/action_toolbar_new.png)
 
-   Barra de herramientas Acciones en un formulario adaptable
+  Barra de herramientas Acciones en un formulario adaptable

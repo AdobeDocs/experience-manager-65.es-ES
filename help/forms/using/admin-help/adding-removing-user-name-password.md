@@ -1,16 +1,12 @@
 ---
 title: Agregar y eliminar credenciales de nombre de usuario y contraseña
-seo-title: Adding and removing user name and password credentials
 description: Obtenga información sobre cómo agregar y quitar credenciales de nombre de usuario y contraseña.
-seo-description: Learn how to add and remove user name and password credentials.
-uuid: f1d083b5-ba48-4b02-b40b-969f03732e36
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1fd28077-37a4-4cba-bbce-6d5b353f1e7d
 exl-id: 1e2b82d6-ca1f-4421-9a51-ec97fdc315d3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 10%

@@ -1,15 +1,13 @@
 ---
 title: Error en la implementación EAR en el servidor JEE WebLogic
-seo-title: EAR Deployment failing on JEE Weblogic Server
 description: Pasos para resolver el error de implementación de EAR en el servidor JEE WebLogic
-seo-description: Steps to resolve EAR Deployment failing on JEE Weblogic Server
-source-git-commit: 45bb54a2666c2c196a8fb52795a7f428aa751e4d
+exl-id: b87a9eee-ee56-4dca-b4a3-a42c91db0b4f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 6%
+source-wordcount: '97'
+ht-degree: 7%
 
 ---
-
 
 # Error de implementación de EAR en el servidor JEE WebLogic {#ear-deployment-failing-on-jee-weblogic-server}
 
@@ -17,7 +15,7 @@ ht-degree: 6%
 
 Cuando un usuario intenta implementar el `adobe-livecycle-weblogic.ear`, el `Null Pointer` se ha encontrado una excepción
 
-## Se aplica a {#applies-to}
+## Se aplica a lo siguiente: {#applies-to}
 
 Esta solución se aplica a:
 
@@ -36,5 +34,3 @@ Para resolver el problema, siga estos pasos:
        set `JAVA_OPTIONS=%JAVA_OPTIONS% -DANTLR_USE_DIRECT_CLASS_LOADING=true`
    
 1. Guarde los cambios.
-
-

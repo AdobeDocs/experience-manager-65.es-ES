@@ -1,20 +1,16 @@
 ---
 title: ¿Qué es Document Security?
-seo-title: About document security
 description: Descubra cómo puede crear, almacenar y aplicar configuraciones de confidencialidad predefinidas, y distribuir su información de forma segura mediante Document Security.
-seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
-uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3219'
 ht-degree: 4%
 
 ---
@@ -67,15 +63,15 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
 
 * El administrador del sistema u otra persona de sistemas de información (IS) instala y configura Document Security. Esta persona también puede ser responsable de configurar los ajustes globales del servidor, las páginas web, las políticas y los documentos.
 
-   Esta configuración puede incluir, por ejemplo, una URL de seguridad de documentos base, notificaciones de auditoría y privacidad, avisos de registro de usuarios invitados y períodos de alquiler sin conexión predeterminados.
+  Esta configuración puede incluir, por ejemplo, una URL de seguridad de documentos base, notificaciones de auditoría y privacidad, avisos de registro de usuarios invitados y períodos de alquiler sin conexión predeterminados.
 
 * Los administradores de Document Security crean directivas y conjuntos de directivas, y administran documentos protegidos por directivas para los usuarios según sea necesario. También crean cuentas de usuario invitadas y supervisan eventos del sistema, documento, usuario, directiva, conjunto de directivas y personalizados. También pueden ser responsables de configurar el servidor global y la página web y la configuración de directivas con un administrador del sistema.
 
-   Los administradores pueden asignar a los usuarios las siguientes funciones en el área Administración de usuarios de la consola de administración. Los usuarios a los que se asignan estas funciones realizan sus tareas en el área de la interfaz de usuario de Document Security de la consola de administración.
+  Los administradores pueden asignar a los usuarios las siguientes funciones en el área Administración de usuarios de la consola de administración. Los usuarios a los que se asignan estas funciones realizan sus tareas en el área de la interfaz de usuario de Document Security de la consola de administración.
 
-   **Superadministrador de seguridad de documentos**
+  **Superadministrador de seguridad de documentos**
 
-   Los usuarios con esta función tienen acceso a toda la configuración de seguridad de los documentos de la consola de administración. Estos permisos están asociados a la función:
+  Los usuarios con esta función tienen acceso a toda la configuración de seguridad de los documentos de la consola de administración. Estos permisos están asociados a la función:
 
    * Administrar configuración
    * Administrar directiva
@@ -87,17 +83,17 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
    * Delegar
    * Invitar a usuarios externos
 
-   **Administrador de seguridad de documentos**
+  **Administrador de seguridad de documentos**
 
-   Los usuarios con esta función pueden configurar el servidor de Document Security mediante la página Configuración en la sección Document Security de la consola de administración. Este permiso está asociado a la función Administrar configuración.
+  Los usuarios con esta función pueden configurar el servidor de Document Security mediante la página Configuración en la sección Document Security de la consola de administración. Este permiso está asociado a la función Administrar configuración.
 
-   >[!NOTE]
-   >
-   >Los usuarios con esta función también deben tener la función Usuario de la consola de administración para poder iniciar sesión en la consola de administración y editar cualquier configuración relacionada.
+  >[!NOTE]
+  >
+  >Los usuarios con esta función también deben tener la función Usuario de la consola de administración para poder iniciar sesión en la consola de administración y editar cualquier configuración relacionada.
 
-   **Administrador del conjunto de directivas de Document Security**
+  **Administrador del conjunto de directivas de Document Security**
 
-   Los usuarios con esta función pueden utilizar la sección Document Security de la consola de administración para editar las directivas de otros usuarios y crear, editar y eliminar conjuntos de directivas. Cuando un administrador de conjuntos de directivas crea un conjunto de directivas, puede asignarle un coordinador. Estos permisos están asociados a la función:
+  Los usuarios con esta función pueden utilizar la sección Document Security de la consola de administración para editar las directivas de otros usuarios y crear, editar y eliminar conjuntos de directivas. Cuando un administrador de conjuntos de directivas crea un conjunto de directivas, puede asignarle un coordinador. Estos permisos están asociados a la función:
 
    * Administrar directiva
    * Administrar conjuntos de directivas
@@ -106,32 +102,32 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
    * Ver eventos
    * Delegar
 
-   >[!NOTE]
-   >
-   >Los usuarios con esta función también deben tener la función Usuario de la consola de administración para poder iniciar sesión en la consola de administración y editar cualquier configuración relacionada.
+  >[!NOTE]
+  >
+  >Los usuarios con esta función también deben tener la función Usuario de la consola de administración para poder iniciar sesión en la consola de administración y editar cualquier configuración relacionada.
 
-   **La seguridad de los documentos administra usuarios invitados y locales**
+  **La seguridad de los documentos administra usuarios invitados y locales**
 
-   Los usuarios con esta función pueden realizar las tareas necesarias para administrar todos los usuarios invitados y locales en las páginas web de Document Security relevantes. Estos permisos están asociados a la función:
+  Los usuarios con esta función pueden realizar las tareas necesarias para administrar todos los usuarios invitados y locales en las páginas web de Document Security relevantes. Estos permisos están asociados a la función:
 
    * Administrar usuarios invitados y locales
    * Invitar a usuarios externos
    * Acceso a páginas web de usuarios finales
 
-   >[!NOTE]
-   >
-   >Los usuarios con esta función también deben tener la función Usuario de la consola de administración para poder iniciar sesión en la consola de administración y editar cualquier configuración relacionada.
+  >[!NOTE]
+  >
+  >Los usuarios con esta función también deben tener la función Usuario de la consola de administración para poder iniciar sesión en la consola de administración y editar cualquier configuración relacionada.
 
-   **Usuario de invitación de Document Security**
+  **Usuario de invitación de Document Security**
 
-   Los usuarios con esta función pueden invitar a usuarios. Estos permisos están asociados a la función:
+  Los usuarios con esta función pueden invitar a usuarios. Estos permisos están asociados a la función:
 
    * Invitar a usuarios externos
    * Acceso a páginas web de usuarios finales
 
-   **Usuario final de Document Security**
+  **Usuario final de Document Security**
 
-   Los usuarios con esta función pueden acceder a las páginas web del usuario final de Document Security. Esta función también se puede asignar a los administradores para que puedan crear directivas con las páginas de usuario final. Este permiso está asociado a la función Acceder a páginas web de usuario final.
+  Los usuarios con esta función pueden acceder a las páginas web del usuario final de Document Security. Esta función también se puede asignar a los administradores para que puedan crear directivas con las páginas de usuario final. Este permiso está asociado a la función Acceder a páginas web de usuario final.
 
 * Los usuarios de la organización que tienen cuentas de seguridad de documentos válidas crean sus propias directivas, utilizan directivas para proteger documentos, rastrean y administran sus documentos protegidos por directivas y supervisan eventos relacionados con sus documentos.
 * Los coordinadores de conjuntos de directivas administran documentos, ven eventos y administran otros coordinadores de conjuntos de directivas (según sus permisos). Los administradores designan a los usuarios como coordinadores de conjuntos de directivas para conjuntos de directivas concretos.
@@ -251,7 +247,7 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
 * **Crear conjuntos de directivas personalizados:** Un conjunto de directivas combina varias directivas en una entidad manejable. Cree conjuntos de directivas personalizadas para su organización o departamento, utilícelos para agrupar directivas relacionadas y ponerlas a disposición de un subconjunto de usuarios del sistema.
 
-   El uso de conjuntos de directivas facilita la asignación y administración de directivas relacionadas a usuarios específicos de una organización o departamento. Por ejemplo, los conjuntos de políticas independientes para el departamento de finanzas y recursos humanos pueden ayudar a administrar y aplicar fácilmente las políticas relacionadas a los documentos designados para los departamentos correspondientes.
+  El uso de conjuntos de directivas facilita la asignación y administración de directivas relacionadas a usuarios específicos de una organización o departamento. Por ejemplo, los conjuntos de políticas independientes para el departamento de finanzas y recursos humanos pueden ayudar a administrar y aplicar fácilmente las políticas relacionadas a los documentos designados para los departamentos correspondientes.
 
 * **Utilice un autorizador externo para aplicar permisos de forma dinámica:** Puede utilizar [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica en función de una condición externa. Cuando los permisos se evalúan dinámicamente en función de condiciones externas, puede:
 
@@ -260,20 +256,21 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
    * Controle el acceso a los documentos protegidos por directivas determinando dinámicamente si un usuario puede acceder a un documento protegido por directivas. Por ejemplo, decide dinámicamente si un usuario puede imprimir un documento protegido por una directiva.
 
    * Utilice un mecanismo de control de acceso que utilice el sistema de gestión de contenido, además del proceso de evaluación de directivas estándar. Por ejemplo, cuando el servicio determina si un usuario puede imprimir un documento protegido por una directiva, puede utilizar el proceso de evaluación de directivas estándar. También puede utilizar el mecanismo de control de acceso que utiliza su sistema de administración de contenido.
-   Aunque es posible reemplazar completamente el proceso de evaluación de directivas de Document Security por un controlador de autorización externo, se recomienda utilizar un controlador de autorización externa con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de gestión de contenido. Por ejemplo, cuando el servicio Document Security determina si un usuario puede imprimir un documento protegido por una directiva, utiliza el proceso de evaluación de directivas estándar. También utiliza el mecanismo de control de acceso que utiliza el sistema de administración de contenido. Para obtener más información, consulte [Crear controladores de autorización externos](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+
+  Aunque es posible reemplazar completamente el proceso de evaluación de directivas de Document Security por un controlador de autorización externo, se recomienda utilizar un controlador de autorización externa con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de gestión de contenido. Por ejemplo, cuando el servicio Document Security determina si un usuario puede imprimir un documento protegido por una directiva, utiliza el proceso de evaluación de directivas estándar. También utiliza el mecanismo de control de acceso que utiliza el sistema de administración de contenido. Para obtener más información, consulte [Crear controladores de autorización externos](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantener los conjuntos de directivas en un número limitado:** Varios factores conducen al crecimiento constante de las políticas y conjuntos de políticas. Algunos factores comunes son:
 
    * Aumento de los roles de usuario, departamentos y documentos dentro de una organización durante un periodo.
    * Los departamentos de una organización trabajan de forma aislada y mantienen un control estricto de las políticas específicas de cada departamento. Esto lleva a políticas idénticas dentro de una organización.
 
-   El Adobe recomienda mantener al mínimo el número de directivas y conjuntos de directivas. Ayuda a administrar fácilmente las políticas y los conjuntos de políticas y a proporcionar un mejor rendimiento. Para mantener el número al mínimo:
+  El Adobe recomienda mantener al mínimo el número de directivas y conjuntos de directivas. Ayuda a administrar fácilmente las políticas y los conjuntos de políticas y a proporcionar un mejor rendimiento. Para mantener el número al mínimo:
 
    * Crear directivas reutilizables. Estas políticas se pueden compartir en varios departamentos.
    * Considere la posibilidad de crear conjuntos de directivas para toda la organización, si algunas directivas se aplican a varios departamentos en lugar de un conjunto de directivas individual para cada departamento.
    * Directivas relacionadas con grupos en un conjunto de directivas. No cree un conjunto de directivas distinto para cada directiva.
    * Utilice un autorizador externo para controlar dinámicamente los permisos de usuario.
 
-   >[!NOTE]
-   >
-   >Puede usar el complemento [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de la API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas únicos asociados a las directivas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las directivas recuperadas están asociadas a 200 conjuntos de directivas en total, la API devuelve solo 200 nombres de conjuntos de directivas.
+  >[!NOTE]
+  >
+  >Puede usar el complemento [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de la API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas únicos asociados a las directivas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las directivas recuperadas están asociadas a 200 conjuntos de directivas en total, la API devuelve solo 200 nombres de conjuntos de directivas.

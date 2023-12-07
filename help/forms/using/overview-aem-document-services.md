@@ -1,18 +1,14 @@
 ---
 title: Descripción general de AEM Document Services
-seo-title: Overview of AEM Document Services
 description: AEM Document Services es un conjunto de servicios OSGi para crear, ensamblar y proteger documentos PDF.
-seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
-uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1413'
 ht-degree: 99%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html) |
 | AEM 6.5 | Este artículo |
 
 

@@ -1,16 +1,14 @@
 ---
 title: Personalizar y ampliar fragmentos de contenido
-seo-title: Customizing and Extending Content Fragments
 description: Un fragmento de contenido amplía un recurso estándar. Descubra cómo puede personalizarlos.
-seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2794'
-ht-degree: 2%
+source-wordcount: '2728'
+ht-degree: 1%
 
 ---
 
@@ -128,7 +126,7 @@ Para obtener más información, consulte [Fragmento de contenido: Eliminar consi
 
 >[!CAUTION]
 >
->El [Componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) ahora se recomienda. Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
+>El [Componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) ahora se recomienda. Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
 
 AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de recursos de la misma manera que desde cualquier otro tipo de recurso. AEM proporciona el [**Fragmento de contenido** componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) - a [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar, esto **Fragmento de contenido** componente principal.
 
@@ -511,7 +509,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 El intervalo de guardado automático (medido en segundos) se puede definir mediante el administrador de configuración (ConfMgr):
 
 * Nodo: `<*conf-root*>/settings/dam/cfm/jcr:content`
-* Nombre de la propiedad: `autoSaveInterval`
+* Nombre de propiedad: `autoSaveInterval`
 * Tipo: `Long`
 
 * Predeterminado: `600` (10 minutos); se define en `/libs/settings/dam/cfm/jcr:content`
@@ -519,7 +517,7 @@ El intervalo de guardado automático (medido en segundos) se puede definir media
 Si desea establecer un intervalo de guardado automático de 5 minutos, debe definir la propiedad en el nodo; por ejemplo:
 
 * Nodo: `/conf/global/settings/dam/cfm/jcr:content`
-* Nombre de la propiedad: `autoSaveInterval`
+* Nombre de propiedad: `autoSaveInterval`
 
 * Tipo: `Long`
 
@@ -531,7 +529,7 @@ Consulte [Plantillas de fragmentos de contenido](/help/sites-developing/content-
 
 ## Componentes para la creación de páginas {#components-for-page-authoring}
 
-Para obtener más información, consulte lo siguiente
+Para obtener más información, consulte
 
 * [Componentes principales: componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) (recomendado)
 * [Componentes de fragmentos de contenido: componentes para la creación de páginas](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

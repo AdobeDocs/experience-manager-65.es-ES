@@ -1,15 +1,11 @@
 ---
 title: Instalar y configurar comunicaciones interactivas
-seo-title: Install and configure Interactive Communications
 description: Instale y configure AEM Forms Interactive Communications para crear correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
-uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
-discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 83%

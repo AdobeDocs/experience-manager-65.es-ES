@@ -1,16 +1,12 @@
 ---
 title: Crear componentes de diseño personalizados para formularios adaptables
-seo-title: Creating custom layout components for adaptive forms
 description: Procedimiento para crear componentes de diseño personalizados para formularios adaptables.
-seo-description: Procedure to create custom layout components for adaptive forms.
-uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
 exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%

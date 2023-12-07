@@ -1,18 +1,14 @@
 ---
 title: Configurar las opciones de internacionalización
-seo-title: Setting internationalization options
 description: Obtenga información sobre cómo especificar la configuración regional utilizada para procesar formularios y cómo especificar el conjunto de caracteres utilizado para codificar el flujo de salida.
-seo-description: Learn how to specify the locale used to render forms and how to specify the character set used to encode the output stream.
-uuid: bb77f5f3-634f-4285-9b10-c4dd40085e69
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
 exl-id: 6cf82c2b-29f0-49d5-a138-99d7801d5a28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '224'
 ht-degree: 4%
 
 ---

@@ -1,20 +1,16 @@
 ---
 title: Integración con Adobe Analytics
-seo-title: Integrating with Adobe Analytics
 description: Obtenga información sobre cómo integrar Adobe Experience Manager AEM () con Adobe Analytics.
-seo-description: Learn how to integrate Adobe Experience Manager (AEM) with Adobe Analytics.
-uuid: d8548263-6ac5-45fb-8c70-52ecd4161bbb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 74%
+source-wordcount: '282'
+ht-degree: 60%
 
 ---
 
@@ -41,7 +37,7 @@ Los datos incluyen datos de páginas y usuarios; por ejemplo:
 Las siguientes páginas le ayudan a configurar la integración:
 
 * [Conectarse a Adobe Analytics y crear marcos](/help/sites-administering/adobeanalytics-connect.md)
-* [Configuración de Seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Configuración del seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
 * [Asignación de datos de componente con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
 * [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Clasificaciones de Adobe](/help/sites-administering/adobeanalytics-classifications.md)
@@ -56,7 +52,7 @@ También puede utilizar la variable [Asistente de inclusión](/help/sites-admini
 
 Consulte:
 
-* [Ampliación de la integración con Adobe Analytics](/help/sites-developing/extending-analytics.md) para obtener información acerca del desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics.
+* [Ampliación de la integración de Adobe Analytics](/help/sites-developing/extending-analytics.md) para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics.
 * El artículo de la base de conocimiento, [Integración de Adobe Analytics: solución de problemas](https://helpx.adobe.com/es/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información acerca de la solución de problemas de la integración de Adobe Analytics.
 
 >[!NOTE]

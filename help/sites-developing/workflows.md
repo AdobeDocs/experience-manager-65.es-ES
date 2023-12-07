@@ -1,19 +1,15 @@
 ---
 title: Desarrollo y ampliación de flujos de trabajo
-seo-title: Developing and Extending Workflows
 description: AEM proporciona varias herramientas y recursos para crear modelos de flujo de trabajo, desarrollar pasos de flujo de trabajo y para interactuar mediante programación con flujos de trabajo
-seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
-uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 4%
+source-wordcount: '1460'
+ht-degree: 3%
 
 ---
 
@@ -45,7 +41,6 @@ Los aspectos clave se tratan a continuación, mientras que las siguientes págin
 >* Consulte la [AEM Seminario web para expertos de Adobe sobre flujos de trabajo](https://communities.adobeconnect.com/p5s33iburd54/).
 >* Cambios en las ubicaciones de la información consulte [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md) y [Prácticas recomendadas de flujo de trabajo: ubicaciones](/help/sites-developing/workflows-best-practices.md#locations).
 >
-
 
 ## Modelo {#model}
 
@@ -126,15 +121,15 @@ Existen varios tipos de flujo de trabajo como se indica en la consola Modelos de
 
 * **Predeterminado**
 
-   AEM Estos tipos son los flujos de trabajo listos para usar incluidos en una instancia estándar de la interfaz de usuario de la aplicación de.
+  AEM Estos tipos son los flujos de trabajo listos para usar incluidos en una instancia estándar de la interfaz de usuario de la aplicación de.
 
 * Flujos de trabajo personalizados (sin indicador en la consola)
 
-   Estos flujos de trabajo se han creado como nuevos o a partir de flujos de trabajo integrados que se han superpuesto con las personalizaciones.
+  Estos flujos de trabajo se han creado como nuevos o a partir de flujos de trabajo integrados que se han superpuesto con las personalizaciones.
 
 * **Heredado**
 
-   AEM Flujos de trabajo creados en una versión anterior de. Estos flujos de trabajo se pueden retener durante una actualización o exportarse como un paquete de flujo de trabajo de la versión anterior y luego importarse en la nueva versión.
+  AEM Flujos de trabajo creados en una versión anterior de. Estos flujos de trabajo se pueden retener durante una actualización o exportarse como un paquete de flujo de trabajo de la versión anterior y luego importarse en la nueva versión.
 
 ### Flujos de trabajo transitorios {#transient-workflows}
 
@@ -159,7 +154,6 @@ Se han introducido flujos de trabajo transitorios para cargar muchos recursos, d
 >* El flujo de trabajo introduce un **División Y**. En estos casos, el historial de tiempo de ejecución es necesario para la confirmación de estado.
 >* Cuando el flujo de trabajo transitorio introduce un paso de participante, cambia de modo, durante la ejecución, a no transitorio. Como la tarea se pasa a una persona, el historial debe persistir.
 >
-
 
 >[!CAUTION]
 >

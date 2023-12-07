@@ -1,19 +1,15 @@
 ---
 title: Directrices para la resolución de problemas de AEM Forms Workspace
-seo-title: Troubleshooting guidelines for AEM Forms workspace
 description: Habilitar los registros y utilizar el depurador en el explorador para solucionar problemas de AEM Forms Workspace.
-seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
-uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 91%
+source-wordcount: '704'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +23,7 @@ Tras instalar el parche, abra AEM Forms Workspace. Si experimenta el error No se
 
 Al instalar el paquete, si se produce un error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, realice los pasos siguientes:
 
-1. Inicie sesión en CRXDE Lite. La URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Inicie sesión en el CRXDE Lite. La URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimine el siguiente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`

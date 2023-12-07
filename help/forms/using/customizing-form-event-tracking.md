@@ -1,17 +1,13 @@
 ---
 title: Personalizar el seguimiento de eventos de formulario
-seo-title: Customizing form event tracking
 description: Si un usuario pasa más de 60 segundos en un campo, se activará un evento de visita de campo y los detalles del campo se enviarán a Adobe SiteCatalyst.
-seo-description: If a user spends more than 60 seconds on a field, a fieldvisit event is triggered and the details of the field are sent to Adobe SiteCatalyst.
-uuid: 2f790085-2f1a-45be-9a69-6100c76dcae0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
 exl-id: d0280a15-5d0d-49cf-bce9-ad1c40530eae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '449'
 ht-degree: 100%
 
 ---

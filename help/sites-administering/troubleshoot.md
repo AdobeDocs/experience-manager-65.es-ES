@@ -1,18 +1,16 @@
 ---
 title: Solución de problemas de Adobe Experience Manager
 description: Obtenga información sobre la resolución de algunos problemas que pueden surgir con Adobe Experience Manager.
-uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 2%
 
 ---
 
@@ -88,7 +86,7 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 
    Por ejemplo, puede utilizar `ps -ef` o `jps`.
 
-1. Ejecución:
+1. Ejecutar:
 
    `jstack <pid>`
 
@@ -100,7 +98,7 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte la [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es) para obtener más información
+Consulte la [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) para obtener más información
 
 ### Comprobación de sesiones JCR sin cerrar {#checking-for-unclosed-jcr-sessions}
 
@@ -118,7 +116,7 @@ El estado de los paquetes OSGi también puede proporcionar una indicación tempr
 
 1. Abra el **AEM Consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
 1. Seleccionar **Paquetes** bajo **OSGI** pestaña.
-1. Comprobación:
+1. Marque:
 
    * el estado de los paquetes. Si alguno de ellos está Inactivo o Insatisfecho, intente detener y reiniciar el paquete. Si el problema persiste, investigue más a fondo con otros métodos.
    * si alguno de los paquetes tiene dependencias que faltan. Estos detalles se pueden ver haciendo clic en el Nombre del paquete individual, que es un vínculo (el siguiente ejemplo no tiene ningún problema):

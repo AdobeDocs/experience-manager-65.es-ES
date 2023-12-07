@@ -1,18 +1,14 @@
 ---
 title: Refactorización de SocialUtils
-seo-title: SocialUtils Refactoring
 description: AEM El paquete com.adobe.cq.social.ugcbase.SocialUtils ha quedado obsoleto en la versión 6.1 de
-seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
-uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---

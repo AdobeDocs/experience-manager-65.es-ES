@@ -1,21 +1,17 @@
 ---
 title: AEM Desarrollo de componentes
-seo-title: Developing AEM Components
 description: AEM Los componentes de se utilizan para mantener, dar formato y representar el contenido disponible en las páginas web.
-seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
-uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 2%
+source-wordcount: '3246'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +137,7 @@ Para obtener información detallada, consulte:
 
    * Proporciona una IU coherente en todas las soluciones de nube
    * [AEM Conceptos de la interfaz de usuario táctil con capacidad de uso de la: Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guía de la IU de Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+   * [Guía de Coral UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Granite UI
 

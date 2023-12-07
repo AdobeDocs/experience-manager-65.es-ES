@@ -1,13 +1,11 @@
 ---
 title: AEM Guía del usuario de creación de IU clásica de.5
-seo-title: AEM 6.5 Classic UI Authoring User Guide
 description: AEM Esta guía explica los conceptos de creación de la interfaz de usuario clásica de en la.
-seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 86%
+source-wordcount: '280'
+ht-degree: 75%
 
 ---
 
@@ -26,7 +24,7 @@ AEM Esta guía explica los conceptos de creación de la interfaz de usuario clá
 
 | Guía del usuario | Descripción |
 |--- |---|
-| [Notas de la versión](/help/release-notes/home.md) | Incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos. |
+| [Notas de la versión](/help/release-notes/home.md) | AEM Proporciona información importante sobre la versión más reciente de la, incluidas las novedades, las plataformas admitidas, las funciones en desuso y eliminadas, y los problemas conocidos. |
 | [Guía del usuario de Assets](/help/assets/home.md) | Aprenda a crear, administrar, entregar y optimizar recursos digitales. |
 | [Guía del usuario de Forms](/help/forms/home.md) | Esta guía describe cómo crear, administrar, publicar y actualizar formularios digitales. |
 | [Guía del usuario de Communities](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
@@ -42,7 +40,7 @@ AEM Esta guía explica los conceptos de creación de la interfaz de usuario clá
 
 ## Recursos clave de AEM
 
-* [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriales de AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)

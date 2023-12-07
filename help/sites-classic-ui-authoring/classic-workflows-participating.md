@@ -1,17 +1,15 @@
 ---
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
-uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 52%
+source-wordcount: '541'
+ht-degree: 39%
 
 ---
 
@@ -37,7 +35,7 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
    * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
    * Si el elemento de trabajo se asignó a un único usuario, el elemento de trabajo no se puede delegar.
 
-* **Retroceder**
+* **Retroceder un paso**
 
   Si descubre que un paso o una serie de pasos debe repetirse, puede retroceder. Esto permite seleccionar una etapa, que se produjo anteriormente en el flujo de trabajo, para volver a procesarla. El flujo de trabajo vuelve al paso especificado y continúa desde ahí.
 

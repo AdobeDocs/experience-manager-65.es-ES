@@ -1,20 +1,16 @@
 ---
 title: Preparar AEM Forms para copia de seguridad
-seo-title: Preparing AEM Forms for Backup
 description: Aprenda a utilizar el servicio de copia de seguridad y restauración para entrar y salir del modo de copia de seguridad del servidor de AEM Forms mediante la API de Java y la API del servicio web.
-seo-description: Learn how to use the Backup and Restore service to enter and leave the Backup mode for AEM Forms server using the Java API and the Web Service API.
-uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2519'
-ht-degree: 1%
+source-wordcount: '2484'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +41,7 @@ Puede realizar estas tareas mediante el servicio Copia de seguridad y restauraci
 
 >[!NOTE]
 >
->Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
+>Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -59,7 +55,7 @@ Se entra en modo de copia de seguridad para permitir copias de seguridad en cali
 * Hora a la que se completó el procedimiento de copia de seguridad.
 * Un indicador que indica si se debe estar en modo de copia de seguridad continua, lo que resulta útil solo si se realizan copias de seguridad móviles.
 
-Antes de escribir aplicaciones para entrar en modo de copia de seguridad, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizan después de poner el servidor de Forms en modo de copia de seguridad. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
+Antes de escribir aplicaciones para entrar en modo de copia de seguridad, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizan después de poner el servidor de Forms en modo de copia de seguridad. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -88,7 +84,7 @@ Para salir del modo de copia de seguridad mediante programación, cree un objeto
 
 **Decida una etiqueta única, determine la cantidad de tiempo para realizar la copia de seguridad y decida si desea estar en modo de copia de seguridad continua**
 
-Antes de entrar en el modo de copia de seguridad, debe decidir una etiqueta única, determinar la cantidad de tiempo que desea asignar para realizar la copia de seguridad y decidir si desea que el servidor de Forms permanezca en modo de copia de seguridad. Estas consideraciones son importantes para integrarlas con los procedimientos de copia de seguridad establecidos por su organización. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
+Antes de entrar en el modo de copia de seguridad, debe decidir una etiqueta única, determinar la cantidad de tiempo que desea asignar para realizar la copia de seguridad y decidir si desea que el servidor de Forms permanezca en modo de copia de seguridad. Estas consideraciones son importantes para integrarlas con los procedimientos de copia de seguridad establecidos por su organización. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Entrar en modo de copia de seguridad**
 
@@ -184,7 +180,7 @@ Inicie el modo de copia de seguridad mediante el servicio web proporcionado por 
 
 Se abandona el modo de copia de seguridad para que Forms Server reanude la depuración de archivos del GDS (Global Document Storage) en Forms Server.
 
-Antes de escribir las aplicaciones para entrar en el modo de salida, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizan con AEM Forms. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).
+Antes de escribir las aplicaciones para entrar en el modo de salida, se recomienda que comprenda los procedimientos de copia de seguridad que se utilizan con AEM Forms. Para obtener más información acerca de qué considerar al realizar copias de seguridad para AEM Forms, consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >

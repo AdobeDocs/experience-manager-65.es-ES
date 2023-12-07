@@ -1,19 +1,15 @@
 ---
 title: Configurar el bloqueo de cuentas
-seo-title: Configure account-locking settings
 description: Utilice la opción Habilitar bloqueo de cuentas para bloquear las cuentas de usuario después de un número determinado de errores de autenticación consecutivos.
-seo-description: Use the Enable Account Locking option to lock user accounts after a specified number of consecutive authentication failures.
-uuid: 5ff3fb76-8b11-4818-9a75-40ed8e121da5
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
 exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 9%
 
 ---
 

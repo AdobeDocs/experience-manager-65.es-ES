@@ -1,16 +1,14 @@
 ---
 title: Configurar extremos de correo electrónico
 description: Obtenga información sobre cómo configurar los extremos de correo electrónico. Los extremos de correo electrónico permiten invocar un servicio enviando uno o varios documentos a una cuenta de correo electrónico especificada.
-uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3796'
 ht-degree: 1%
 
 ---

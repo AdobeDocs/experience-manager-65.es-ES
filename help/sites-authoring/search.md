@@ -1,18 +1,16 @@
 ---
 title: Búsqueda completa
-description: Encuentre su contenido más rápidamente con una búsqueda completa.
-uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
+description: Encuentre su contenido más rápido con una búsqueda completa.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 68%
+source-wordcount: '517'
+ht-degree: 60%
 
 ---
 
@@ -32,9 +30,9 @@ La función de búsqueda está disponible en la barra de herramientas superior:
 
 Con el carril de búsqueda puede:
 
-* Busque una palabra clave, una ruta o una etiqueta específicas..
+* Busque una palabra clave, una ruta o una etiqueta específicas.
 * Filtre según criterios específicos de recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
-* Defina y utilice una [búsqueda guardada](#saved-searches) según los criterios anteriores.
+* Defina y utilice un [búsqueda guardada](#saved-searches) - sobre la base de los criterios anteriores.
 
 >[!NOTE]
 >
@@ -85,7 +83,7 @@ Para buscar y filtrar sus recursos:
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
-1. También se pueden agregar términos de búsqueda adicionales:
+1. También puede agregar términos de búsqueda adicionales:
 
    ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 

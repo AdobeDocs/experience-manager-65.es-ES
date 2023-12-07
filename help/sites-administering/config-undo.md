@@ -1,19 +1,15 @@
 ---
 title: Configurar Deshacer para editar páginas
-seo-title: Configuring Undo for Page Editing
 description: AEM Obtenga información sobre cómo configurar la compatibilidad con Deshacer para la edición de páginas en la.
-seo-description: Learn how to configure Undo support for page editing in AEM.
-uuid: e5a49587-a2a6-41d5-b449-f7a8f7e4cee6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -45,7 +41,7 @@ Puede configurar estas propiedades del servicio OSGi para su propia instancia.
 
 A continuación, se enumeran las propiedades tal como se muestran en la consola web, seguidas del nombre del parámetro OSGi correspondiente, junto con una descripción y el valor predeterminado (cuando corresponda):
 
-* **Enable**
+* **Activar**
 ( `cq.wcm.undo.enabled`)
 
    * **Descripción**: Determina si los autores de la página pueden deshacer y rehacer los cambios.
@@ -63,7 +59,7 @@ A continuación, se enumeran las propiedades tal como se muestran en la consola 
   >
   >De forma predeterminada, solo los administradores pueden acceder a `/var/undo` nodo. Los autores solo pueden realizar operaciones de deshacer y rehacer en el contenido binario una vez que se les han concedido permisos para acceder a los datos de deshacer binarios.
 
-* **Min. validez**
+* **Mín. validez**
 ( `cq.wcm.undo.validity`)
 
    * **Descripción**: Cantidad mínima de tiempo que se almacenan los datos de deshacer binarios, en horas. Después de este período de tiempo, los datos binarios están disponibles para su eliminación, para conservar espacio en disco.

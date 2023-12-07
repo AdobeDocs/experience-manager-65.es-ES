@@ -1,15 +1,11 @@
 ---
 title: Configurar servicios de almacenamiento para borradores y envíos
-seo-title: Configuring storage services for drafts and submissions
 description: Aprenda a configurar el almacenamiento para borradores y envíos
-seo-description: Learn how to configure storage for drafts and submissions
-uuid: 2f4efc07-312c-4908-8c91-84f4e6c5ad25
 topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 100%

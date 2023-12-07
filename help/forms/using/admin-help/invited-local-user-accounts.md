@@ -1,17 +1,13 @@
 ---
 title: Administrar cuentas de usuario invitadas y locales
-seo-title: Managing invited and local user accounts
 description: Con Document Security, puede buscar, ver, editar, bloquear, desbloquear y eliminar cuentas de usuario invitadas y locales.
-seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
-uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 1%

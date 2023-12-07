@@ -1,14 +1,12 @@
 ---
 title: AEM Fragmentos de documento en la
 description: Los fragmentos de documento, como texto, listas, condiciones y fragmentos de diseño, de Administración de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia del cliente.
-uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '6904'
 ht-degree: 88%

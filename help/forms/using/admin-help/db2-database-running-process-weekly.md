@@ -1,19 +1,15 @@
 ---
 title: "Base de datos DB2: Ejecutar un proceso semanalmente"
-seo-title: "DB2 database: Running a process weekly"
 description: AEM Vea cómo puede mejorar el rendimiento de la base de datos de formularios DB2 de la plataforma de datos de la plataforma de formularios de la.
-seo-description: See how you can improve the performance of your AEM forms DB2 database.
-uuid: 36070087-c250-41df-a841-aa922e777697
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc0e8183-5d50-4fc0-997a-5f3168ba0d70
 exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 

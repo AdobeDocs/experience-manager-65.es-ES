@@ -1,19 +1,15 @@
 ---
 title: Trabajar con documentos PDF/A
-seo-title: Working with PDF/A Documents
 description: Utilice el servicio DocConverter para determinar si un documento de PDF es un documento de PDF PDF/A y convertirlo en documentos de PDF/A.
-seo-description: Use the  DocConverter service to determine if a PDF document is a PDF/A document and convert PDF documents to PDF/A documents.
-uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2331'
 ht-degree: 2%
 
 ---
@@ -33,7 +29,7 @@ El servicio DocConverter puede convertir documentos de PDF en documentos de PDA/
 
 ## Conversión de documentos a documentos de PDF/A {#converting-documents-to-pdf-a-documents}
 
-Puede utilizar el servicio DocConverter para convertir un documento de PDF en un documento de PDF/A. Como PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo. Antes de convertir un documento de PDF en un documento de PDF/A, asegúrese de que el documento de PDF no sea un documento de PDF/A.
+Puede utilizar el servicio DocConverter para convertir un documento de PDF en un documento de PDF/A. Como PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento de PDF/A no contiene contenido de audio y vídeo. Antes de convertir un documento de PDF en un documento de PDF/A, asegúrese de que el documento de PDF no sea un documento de PDF/A.
 
 La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, A y B. La principal diferencia entre los dos es la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad B. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes estén incrustadas en el documento PDF/A generado. En este momento, solo se admite el PDF/A-1b en la validación (y conversión).
 

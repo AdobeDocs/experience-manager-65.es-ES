@@ -1,17 +1,13 @@
 ---
 title: Compilar el plan de prueba
-seo-title: Compiling your Test Plan
 description: Los casos de prueba individuales se combinan en el plan de prueba
-seo-description: The individual test cases are amalgamated into your Test Plan
-uuid: d83ef902-e0ef-4f84-9477-be12dfe91742
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: 82b8a5f4-583b-47ba-9579-b47364b56aa2
 docset: aem65
 exl-id: ee5df2c8-ab31-4be9-8ede-3c96f26fc626
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%

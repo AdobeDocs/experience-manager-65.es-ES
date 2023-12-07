@@ -1,19 +1,15 @@
 ---
 title: Uso del entorno de creación
-seo-title: Working with the Author Environment
 description: El entorno de creación permite realizar tareas relacionadas con la creación (incluida la creación de páginas y la administración de recursos) y las tareas de administración que necesite al generar y mantener el contenido del sitio web.
-seo-description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
-uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 

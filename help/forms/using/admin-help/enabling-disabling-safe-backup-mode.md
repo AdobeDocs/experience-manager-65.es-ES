@@ -1,16 +1,12 @@
 ---
 title: Habilitar y deshabilitar el modo de copia de seguridad
-seo-title: Enabling and disabling safe backup mode
 description: AEM En la página Configuración de copia de seguridad, puede utilizar formularios en modo de copia de seguridad segura para realizar copias de seguridad fiables de la base de datos y del directorio de almacenamiento global de documentos (GDS) (GDS). Obtenga información sobre cómo habilitar y deshabilitar el modo de copia de seguridad segura.
-seo-description: On the Backup Settings page, you can operate AEM forms in safe backup mode so that you can reliably back up your database and Global Document Storage (GDS) (GDS) directory. Learn how to enable and disable safe backup mode.
-uuid: 2fdeaeaf-e969-40a4-8aee-1f2b627d3942
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
 exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 6%

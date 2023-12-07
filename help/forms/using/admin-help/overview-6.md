@@ -1,16 +1,12 @@
 ---
 title: Información general sobre la configuración de SSL
-seo-title: Overview of configuring SSL
 description: Obtenga información sobre cómo mejorar la seguridad de la comunicación configurando SSL.
-seo-description: Learn about how to enhance security of communication by configuring SSL.
-uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 exl-id: fbe1487e-c830-4be8-9841-6022e6a98ae7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 3%

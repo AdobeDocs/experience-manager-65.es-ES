@@ -1,18 +1,14 @@
 ---
 title: Notificaciones de Communities
-seo-title: Communities Notifications
 description: AEM Communities tiene notificaciones que muestran eventos de interés para el miembro de la comunidad que ha iniciado sesión
-seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
-uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 1%
@@ -120,7 +116,7 @@ Al visitar el sitio publicado, seleccionar la variable `Notifications` El víncu
 
 Cuando el canal de correo electrónico está habilitado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
 
-![notifications5](assets/notifications5.png)
+![notificaciones5](assets/notifications5.png)
 
 ## Personalizar notificaciones por correo electrónico {#customize-email-notifications}
 

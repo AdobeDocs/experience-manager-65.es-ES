@@ -1,17 +1,13 @@
 ---
 title: Administrar imágenes de firma del agente
-seo-title: Manage agent signature images
 description: Después de crear una plantilla de carta, puede utilizarla para crear correspondencia en AEM Forms administrando datos, contenido y archivos adjuntos.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48b2697e-6065-4e23-9aa8-333e7b11ede1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
@@ -75,6 +71,7 @@ También puede anular la función personalizada predeterminada para definir su p
       Entre las subpropiedades de jcr:content está jcr:data, el cual se muestra atenuado. Haga doble clic en jcr:data. La propiedad se vuelve editable y aparece el botón Elegir archivo en la entrada. Haga clic en **Elegir archivo** y seleccione el archivo de imagen que desee utilizar como logotipo. No es necesario que el archivo de imagen tenga una extensión.
 
       ![Datos JCR](assets/5_jcrdata.png)
+
    Haga clic en **Guardar todo**.
 
 1. Asegúrese de que el XDP o el diseño que utiliza en la carta tenga un campo de imagen en la parte inferior izquierda (u en otro lugar apropiado del diseño donde desee representar la firma) para representar la imagen de firma.

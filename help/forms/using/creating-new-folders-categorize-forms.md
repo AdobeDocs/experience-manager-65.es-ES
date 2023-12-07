@@ -1,18 +1,14 @@
 ---
 title: Crear carpetas nuevas para aplicar categorías a los formularios
-seo-title: Create new folders to categorize forms
 description: Utilice carpetas para organizar las plantillas de formulario, los PDF, los recursos y los formularios adaptables.
-seo-description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
-uuid: 63fcb807-c9cf-49ae-ad69-6b1187543470
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
-discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '386'
 ht-degree: 98%
 
 ---

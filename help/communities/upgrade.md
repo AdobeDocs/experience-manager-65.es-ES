@@ -1,20 +1,16 @@
 ---
 title: AEM Actualización a comunidades de 6.5
-seo-title: Upgrading to AEM 6.5 Communities
 description: AEM Cómo actualizar desde una versión anterior a comunidades de la versión 6.5 de la
-seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
-uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 1%
+source-wordcount: '636'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +55,7 @@ AEM Para todas las instancias de autor y publicación de la versión 6.3 de:
 
          * *Desmarcar* `Cloud Storage`
 
-         * Seleccione **Guardar**
+         * Seleccionar **Guardar**
 
      ![utilidades](assets/utilities.png)
 

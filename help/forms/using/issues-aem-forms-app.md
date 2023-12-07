@@ -1,17 +1,13 @@
 ---
 title: Resolución de problemas de la aplicación de AEM Forms
-seo-title: Troubleshoot AEM Forms app
 description: Obtenga información sobre los problemas más comunes con la aplicación AEM Forms y cómo solucionarlos.
-seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
-uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '675'
 ht-degree: 100%
 
 ---

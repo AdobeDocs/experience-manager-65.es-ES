@@ -1,18 +1,14 @@
 ---
 title: Ver estadísticas relacionadas con Work Manager
-seo-title: View statistics related to Work Manager
 description: La pestaña Administrador de trabajo muestra estadísticas relacionadas con los elementos de Administrador de trabajo. Descubra cómo puede ver y filtrar los elementos de trabajo.
-seo-description: The Work Manager tab displays statistics that relate to Work Manager items. Learn how you can view and filter the work items.
-uuid: c3a575c7-773d-477a-bc75-6cbcf8b836b8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---

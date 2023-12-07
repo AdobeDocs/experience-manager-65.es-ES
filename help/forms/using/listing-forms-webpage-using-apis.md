@@ -1,17 +1,13 @@
 ---
 title: Listado de formularios en una página web mediante API
-seo-title: Listing forms on a web page using APIs
 description: Consulte Forms Manager mediante programación para recuperar una lista filtrada de formularios y mostrarla en sus propias páginas web.
-seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
-uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 100%
 
 ---

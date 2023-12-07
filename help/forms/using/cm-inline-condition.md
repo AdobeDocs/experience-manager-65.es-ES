@@ -1,17 +1,13 @@
 ---
 title: Condición y repetición dentro de la línea en comunicaciones interactivas y cartas
-seo-title: Inline condition and repeat in Interactive Communications and letters
 description: Si usa condición dentro de la línea y repetir en comunicaciones interactivas y cartas, puede crear comunicaciones que sean muy contextuales y estén bien estructuradas.
-seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
-uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
-discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 86%

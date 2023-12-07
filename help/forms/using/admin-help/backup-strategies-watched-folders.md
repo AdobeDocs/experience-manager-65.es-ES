@@ -1,19 +1,15 @@
 ---
 title: Estrategias de copia de seguridad para carpetas vigiladas
-seo-title: Backup strategies for watched folders
 description: Este documento describe cómo las carpetas vigiladas se ven afectadas por diferentes escenarios de copia de seguridad y recuperación, las limitaciones y los resultados de estos escenarios y cómo minimizar la pérdida de datos.
-seo-description: This document describes how watched folders are affected by different backup and recovery scenarios, the limitations and outcomes of these scenarios, and how to minimize data loss.
-uuid: c61997b8-6c36-4bd9-90e5-411841a6c176
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 3%
+source-wordcount: '1080'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +66,7 @@ En la tabla siguiente se describe la manipulación de cinco archivos de ejemplo 
   <tr>
    <td><p>Escenario</p></td>
    <td><p>vaciar</p></td>
-   <td><p>file1</p></td>
+   <td><p>archivo1</p></td>
    <td><p>file2</p></td>
    <td><p>file3</p></td>
    <td><p>file4</p></td>
@@ -101,7 +97,7 @@ En la tabla siguiente se describe la manipulación de cinco archivos de ejemplo 
    <td><p>Conservar</p></td>
    <td><p>vaciar</p></td>
    <td><p>vaciar</p></td>
-   <td><p>file1 </p></td>
+   <td><p>archivo1 </p></td>
    <td><p>archivo1, archivo2 </p></td>
    <td><p>archivo1, archivo2 </p></td>
    <td><p>archivo1, archivo2, archivo4 </p></td>

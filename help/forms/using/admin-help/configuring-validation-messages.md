@@ -1,18 +1,14 @@
 ---
 title: Configurar mensajes de validación
-seo-title: Configuring validation messages
 description: Obtenga información sobre cómo especificar cómo se muestran los mensajes de validación y su ubicación en relación con el formulario devuelto en el explorador web.
-seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
-uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 14314383-5228-4904-98c1-586f48a1142c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '352'
 ht-degree: 4%
 
 ---
@@ -62,6 +58,6 @@ Cuando Informes se establece en Marco, puede especificar el tamaño del borde de
 
 1. En Salida de validación, en el cuadro Tamaño del borde, escriba el tamaño del borde del marco, en píxeles.
 
-   El tamaño del borde debe ser igual o bueno que 0. El valor predeterminado es 1.
+   El tamaño del borde debe ser igual o mayor que 0. El valor predeterminado es 1.
 
 1. Haga clic en Guardar.

@@ -1,20 +1,16 @@
 ---
 title: Usar el guardado automático en la aplicación de AEM Forms
-seo-title: Using autosave in AEM Forms app
 description: Aprenda a utilizar la función de guardado automático en la aplicación de AEM Forms para evitar la pérdida de datos.
-seo-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss.
-uuid: 00fe6a10-1a72-443d-a840-0415dc769199
 contentOwner: sashanka
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 2c71cc28-b7c8-4785-9fc2-b47fa80cbd70
 docset: aem65
 exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -38,9 +34,9 @@ Siga estos pasos para utilizar la función de guardado automático en la aplicac
 
 1. Inicie sesión en la aplicación y navegue hasta **Configuración > General**.
 1. En la pantalla General, utilice la opción **Frecuencia de guardado automático** para seleccionar los intervalos a los que desea que la aplicación guarde los datos introducidos.
-   [ ![Configuración de la frecuencia de guardado automático](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
+   [![Estableciendo frecuencia de guardado automático](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
 1. Cuando reinicie la aplicación e inicie sesión con el mismo usuario, se le pedirá que restaure la tarea con el cuadro de diálogo Recuperar tarea no guardada. Haga clic en **Aceptar** en el cuadro de diálogo Recuperar tarea no guardada para reanudar el trabajo con la tarea guardada. Puede hacer clic en **Cancelar** para eliminar los datos guardados correspondientes al último guardado automático activado y comenzar a trabajar con una tarea nueva.
 
    Al hacer clic en **Aceptar**, la tarea se restaurará con los datos correspondientes a la última función de guardado automático activada antes de que la aplicación se bloqueara. Incluye los datos del formulario y todos los archivos adjuntos asociados a la tarea.
-   [ ![Recuperar una tarea ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Un formulario de trabajo en curso **B.** Aplicación cerrada a la fuerza **C.** Aplicación reiniciada con el cuadro de diálogo Recuperar tarea no guardada **D.** Formulario restaurado con datos originales
+   [![Recuperar una tarea ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Un formulario de trabajo en curso **B.** Aplicación cerrada a la fuerza **C.** Aplicación reiniciada con el diálogo Recuperar tarea no guardada **D.** Formulario restaurado con datos originales

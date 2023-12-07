@@ -1,18 +1,16 @@
 ---
 title: 'Reglamentos de protección de datos y privacidad de datos: preparación para Adobe Experience Manager'
 description: Obtenga información acerca de la compatibilidad de Adobe Experience Manager con las distintas normas de protección de datos y privacidad de datos. AEM Incluye el Reglamento General de Protección de Datos (RGPD) de la UE, la Ley de Privacidad del Consumidor de California y cómo cumplirlos al implementar un nuevo proyecto de.
-uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 42%
+source-wordcount: '890'
+ht-degree: 38%
 
 ---
 
@@ -78,7 +76,7 @@ Para Adobe Experience Manager:
 
    * Adobe AEM proporciona documentación y procedimientos para el administrador de privacidad y el administrador de la privacidad del cliente, lo que les permite ejecutar manualmente las solicitudes relacionadas con las normas de privacidad.
 
-Adobe proporciona procedimientos para gestionar solicitudes de privacidad relacionadas con acceso, eliminación y exclusión para Adobe Experience Manager. A veces, hay API disponibles a las que se puede llamar desde un portal o scripts desarrollados por el cliente para ayudar con la automatización.
+El Adobe de proporciona procedimientos para administrar solicitudes de privacidad relacionadas con Acceso, Eliminación y Exclusión de Adobe Experience Manager. A veces, hay API disponibles a las que se puede llamar desde un portal o scripts desarrollados por el cliente para ayudar con la automatización.
 
 El diagrama siguiente ilustra el aspecto que podría tener un flujo de trabajo de solicitud de privacidad (ilustrado con Adobe Experience Manager 6.5):
 
@@ -110,7 +108,7 @@ Consulte [AEM Mobile: Protección de datos y preparación para la privacidad](/h
 
 ## AEM Integración de con Adobe Target y Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Estas integraciones de Adobe Experience Manager se realizan con servicios preparados para la protección de datos y la privacidad (por ejemplo, RGPD o CCPA). No se almacenan datos personales de Adobe Target o Adobe Analytics en AEM en relación con las integraciones.
+Estas integraciones de Adobe Experience Manager se realizan con servicios preparados para la protección de datos y la privacidad (por ejemplo, RGPD o CCPA). No se almacenan datos personales de Adobe Target ni de Adobe Analytics AEM en los datos de la interfaz de usuario en relación con las integraciones de.
 
 Para obtener más información, consulte lo siguiente:
 

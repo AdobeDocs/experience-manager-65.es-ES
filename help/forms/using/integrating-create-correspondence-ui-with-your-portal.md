@@ -1,17 +1,13 @@
 ---
 title: Integrar la interfaz de usuario de Crear correspondencia con su portal personalizado
-seo-title: Integrating Create Correspondence UI with your custom portal
 description: Aprenda a integrar la interfaz de usuario de Crear correspondencia con su portal personalizado
-seo-description: Learn how to integrate create correspondence UI with your custom portal
-uuid: 68ef5bf2-b271-4c44-8840-6c495069164d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 feature: Correspondence Management
 exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 100%

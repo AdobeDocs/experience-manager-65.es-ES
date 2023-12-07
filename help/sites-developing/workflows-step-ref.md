@@ -1,20 +1,16 @@
 ---
 title: Referencia de pasos de flujo de trabajo
-seo-title: Workflow Step Reference
 description: Consulte esta referencia de paso para flujos de trabajo en Adobe Experience Manager.
-seo-description: null
-uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3250'
-ht-degree: 7%
+source-wordcount: '3229'
+ht-degree: 6%
 
 ---
 
@@ -59,7 +55,7 @@ Puede seleccionar entre: **Desactivado**, **Inmediato**, **1 h**, **6 h**, **12 
 
   Controlador que controla el flujo de trabajo cuando se agota el tiempo de espera del paso. Por ejemplo, `Auto Advancer`
 
-* **Avance de controlador**
+* **Avance del controlador**
 
   Seleccione esta opción para avanzar automáticamente el flujo de trabajo al siguiente paso después de la ejecución. Si no se selecciona, el script de implementación debe gestionar el avance del flujo de trabajo.
 
@@ -67,7 +63,7 @@ Puede seleccionar entre: **Desactivado**, **Inmediato**, **1 h**, **6 h**, **12 
 
 Las siguientes propiedades están disponibles para muchos componentes de paso de flujo de trabajo, en la **Usuario/grupo** pestaña del cuadro de diálogo propiedades:
 
-* **Notificar al usuario a través del correo electrónico**
+* **Notificar al usuario por correo electrónico**
 
    * Puede notificar a los participantes enviándoles un correo electrónico cuando el flujo de trabajo alcance el paso.
    * Si está habilitado, se envía un correo electrónico al usuario definido por la propiedad **Usuario/grupo** o a cada miembro del grupo si se ha definido uno.
@@ -268,7 +264,7 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 
 * [Común](#step-properties-common-tab)
 * [Usuario/grupo](#step-properties-user-group-tab)
-* **Cuadro de diálogo**
+* **Diálogo**
 
    * **Ruta de diálogo**: La ruta al nodo de diálogo del [diálogo que cree](#dialog-participant-step-creating-a-dialog).
 
@@ -390,7 +386,7 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
    * **Argumentos**: cualquier argumento requerido.
    * **Correo electrónico**: Si se debe enviar una notificación por correo electrónico al usuario.
 
-* **Cuadro de diálogo**
+* **Diálogo**
 
    * **Ruta de diálogo**: La ruta al nodo de diálogo del [diálogo que cree (como con el **Etapa de participante de diálogo**)](#dialog-participant-step-creating-a-dialog).
 
@@ -513,7 +509,7 @@ Para configurar el paso, edite y utilice las siguientes pestañas:
 
 * [Común](#step-properties-common-tab)
 * [Usuario/grupo](#step-properties-user-group-tab)
-* **Formulario**
+* **Form**
 
    * **Ruta de formulario**: La ruta al [formulario que cree](#form-participant-step-creating-the-form).
 

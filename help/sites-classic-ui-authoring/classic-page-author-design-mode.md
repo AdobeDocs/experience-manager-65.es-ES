@@ -1,17 +1,15 @@
 ---
 title: Configuración de componentes en el modo Diseño
 description: AEM Cuando se instala la instancia de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas. Además de estos, también hay otros componentes disponibles. Puede utilizar el modo Diseño para habilitar o deshabilitar estos componentes.
-uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -51,7 +49,7 @@ En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de con
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Se abrirá un cuadro de diálogo que enumera los grupos de componentes que se muestran en la barra de tareas junto con los componentes individuales que contienen.
+1. Se abrirá un cuadro de diálogo que enumera los grupos de componentes que se muestran en el Sidekick junto con los componentes individuales que contienen.
 
    Seleccione según sea necesario para agregar o quitar los componentes que deben estar disponibles en la barra de tareas.
 

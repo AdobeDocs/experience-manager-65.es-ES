@@ -1,19 +1,15 @@
 ---
 title: Funciones remotas en el Generador de expresiones
-seo-title: Expression Builder
 description: El generador de expresiones de Administración de correspondencia permite crear expresiones y funciones remotas.
-seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
-uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 100%
 
 ---
@@ -118,7 +114,6 @@ Puede crear un paquete personalizado para exportar sus propias funciones remotas
    * java.util.Calendar
    * java.util.Date
    * java.util.List
-
 
 1. Defina la implementación de la interfaz, configúrela como un servicio OSGI y defina las siguientes propiedades de servicio:
 

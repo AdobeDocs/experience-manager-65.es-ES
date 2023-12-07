@@ -1,20 +1,16 @@
 ---
 title: API de JavaScript de ClientContext
-seo-title: Client Context JavaScript API
 description: Obtenga información acerca de la API de JavaScript para Client Context en Adobe Experience Manager.
-seo-description: The JavaScript API for Client Context
-uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '3157'
-ht-degree: 3%
+source-wordcount: '3106'
+ht-degree: 2%
 
 ---
 
@@ -204,7 +200,7 @@ El nombre de la tienda. Utilice el `getInstance` para recuperar este valor.
 
 Consulte también CQ_Analytics.SessionStore para conocer los métodos heredados.
 
-#### borrar() {#clear}
+#### clear() {#clear}
 
 Quita los datos del almacén de sesiones y todas las propiedades de inicialización.
 
@@ -613,7 +609,7 @@ Utilice loadInitProperties para rellenar los datos del almacén de sesión con l
 
 No hay valor devuelto.
 
-#### borrar() {#clear-1}
+#### clear() {#clear-1}
 
 Quita todas las propiedades de datos del almacén.
 
@@ -747,7 +743,7 @@ Quita una propiedad del almacén de sesión. Activa el `update` evento tras la f
 
 No hay valor devuelto.
 
-#### restablecer() {#reset}
+#### reset() {#reset}
 
 Restaura los valores iniciales del almacén de datos. La implementación predeterminada simplemente elimina todos los datos. Activa el `update` evento tras la finalización.
 

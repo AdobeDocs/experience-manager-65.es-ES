@@ -1,13 +1,11 @@
 ---
 title: Guía del usuario de administración de AEM 6.5
-seo-title: AEM 6.5 Managing User Guide
 description: AEM AEM Descubra cómo administrar un proyecto de con éxito, con asistencia de recursos clave y una completa colección de guías del usuario de la versión 6.5 de.
-seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 86%
+source-wordcount: '292'
+ht-degree: 83%
 
 ---
 
@@ -42,7 +40,7 @@ AEM AEM Descubra cómo administrar un proyecto de con éxito, con asistencia de 
 
 ## Recursos clave de AEM
 
-* [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriales de AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)

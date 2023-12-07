@@ -1,18 +1,14 @@
 ---
 title: Introducción a los formularios HTML5
-seo-title: Getting started with HTML5 forms
 description: Para empezar, implemente el paquete de complementos de AEM Forms e importe los formularios HTML5 existentes en AEM.
-seo-description: To get started, deploy AEM Forms add-on package and import existing HTML5 forms to AEM.
-uuid: e85e57ab-fe32-4b6f-819e-322047ae3240
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: Mobile Forms
 exl-id: a3245f05-6ea3-4f90-8981-bfa89d2e7335
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---

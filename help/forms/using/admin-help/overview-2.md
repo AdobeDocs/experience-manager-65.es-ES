@@ -1,18 +1,14 @@
 ---
 title: Aspectos básicos de la administración de certificados y credenciales
-seo-title: Basics of managing certificates and credentials
 description: Obtenga información acerca de los conceptos básicos de la administración de certificados y credenciales.
-seo-description: Learn about the basics of managing certificates and credentials.
-uuid: f421e206-e7b5-416c-b9fb-974094f10a66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '301'
 ht-degree: 3%
 
 ---

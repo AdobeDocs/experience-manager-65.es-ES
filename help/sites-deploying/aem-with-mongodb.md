@@ -1,17 +1,15 @@
 ---
 title: Adobe Experience Manager con MongoDB
 description: Obtenga información acerca de las tareas y consideraciones necesarias para una implementación correcta de Adobe Experience Manager con MongoDB.
-uuid: 8028832d-10de-4811-a769-fab699c162ec
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6408'
+source-wordcount: '6184'
 ht-degree: 0%
 
 ---
@@ -207,7 +205,7 @@ cacheSizeInMB=128
 Donde:
 
 * `minRecordLength`
-Tamaño en bytes. Los binarios con un tamaño inferior o igual a este se almacenan con el almacén de nodos de documentos. En lugar de almacenar el ID del blob, se almacena el contenido del binario. En el caso de los binarios que son buenos, el identificador del binario se almacena como una propiedad del documento en la colección nodes. Y, el cuerpo del binario se almacena en el `FileDataStore` en el disco. 4096 bytes es un tamaño de bloque típico del sistema de archivos.
+Tamaño en bytes. Los binarios con un tamaño inferior o igual a este se almacenan con el almacén de nodos de documentos. En lugar de almacenar el ID del blob, se almacena el contenido del binario. En el caso de archivos binarios superiores a este tamaño, el identificador del archivo binario se almacena como una propiedad de Document en la colección nodes. Y, el cuerpo del binario se almacena en el `FileDataStore` en el disco. 4096 bytes es un tamaño de bloque típico del sistema de archivos.
 
 * `path`
 Ruta a la raíz del almacén de datos. AEM Para una implementación de MongoMK, esta ruta debe ser un sistema de archivos compartido disponible para todas las instancias de. Normalmente se utiliza un servidor de Almacenamiento conectado a la red (NAS). Para implementaciones en la nube como Amazon Web Service, la variable `S3DataFileStore` también está disponible.
@@ -594,7 +592,7 @@ Como Dispatcher no tiene estado, puede escalarse horizontalmente con facilidad. 
 
 AEM La ejecución de la ejecución sin un Dispatcher requiere la terminación SSL y el equilibrio de carga que debe realizar otra aplicación. AEM Esto es necesario porque las sesiones deben tener afinidad con la instancia de en la que se crean, un concepto conocido como conexiones fijas. El motivo es garantizar que las actualizaciones del contenido muestren una latencia mínima.
 
-Compruebe la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener más información sobre cómo configurarlo.
+Compruebe la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) para obtener más información sobre cómo configurarlo.
 
 ### Configuración adicional {#additional-configuration}
 

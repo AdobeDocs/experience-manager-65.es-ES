@@ -1,20 +1,16 @@
 ---
 title: Configuración de MySQL para DSRP
-seo-title: MySQL Configuration for DSRP
 description: Cómo conectarse al servidor MySQL y establecer la base de datos UGC
-seo-description: How to connect to the MySQL server and establish the UGC database
-uuid: c058cc88-7ca2-4aed-9a36-b080e603f886
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 3%
+source-wordcount: '705'
+ht-degree: 0%
 
 ---
 
@@ -93,7 +89,7 @@ Cuando se inicia por primera vez MySQL Workbench, a menos que ya se esté utiliz
    * Método de conexión: `Standard (TCP/IP)`
    * Nombre de host: `127.0.0.1`
    * Nombre de usuario: `root`
-   * Una contraseña: `no password by default`
+   * Contraseña: `no password by default`
    * Esquema predeterminado: `leave blank`
 
 1. Seleccionar `Test Connection` para comprobar la conexión con el servicio MySQL en ejecución
@@ -200,4 +196,4 @@ AEM Cuando MySQL se ejecuta en un servidor diferente de, se debe especificar el 
 
    * **[!UICONTROL Nombre de Datasource]**: nombre introducido para el [Conexión MySQL](#new-connection-settings), por ejemplo, &quot;comunidades&quot;.
 
-* Seleccione **[!UICONTROL Guardar]**
+* Seleccionar **[!UICONTROL Guardar]**

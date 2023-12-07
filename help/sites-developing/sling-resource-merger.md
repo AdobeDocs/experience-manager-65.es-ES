@@ -1,19 +1,15 @@
 ---
 title: AEM Uso de la fusión de recursos de Sling en la
-seo-title: Using the Sling Resource Merger in AEM
 description: La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos
-seo-description: The Sling Resource Merger provides services to access and merge resources
-uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 1%
+source-wordcount: '1247'
+ht-degree: 0%
 
 ---
 
@@ -200,8 +196,8 @@ Estas funciones, junto con las funciones estándar, permiten:
    1. Cree el nodo correspondiente en /apps
    1. Creación de una propiedad `sling:hideResource`
 
-      * type: `Boolean`
-      * value: `true`
+      * tipo: `Boolean`
+      * valor: `true`
 
 * **Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)**
 
@@ -210,7 +206,7 @@ Estas funciones, junto con las funciones estándar, permiten:
    1. Cree el nodo correspondiente en `/apps`
    1. Creación de la propiedad `sling:hideChildren`:
 
-      * type: `String[]`
+      * tipo: `String[]`
       * value: una lista de los nodos secundarios (como se define en `/libs`) para ocultar/omitir
 
       El comodín &amp;ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
@@ -226,8 +222,8 @@ Estas funciones, junto con las funciones estándar, permiten:
 
          Esto especifica el nodo (como en `/libs`) que el nodo actual debe colocarse antes de:
 
-         * type: `String`
-         * value: `<before-SiblingName>`
+         * tipo: `String`
+         * valor: `<before-SiblingName>`
 
 ### Invocar la fusión de recursos de Sling desde el código {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -248,7 +244,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* Omitir:
+* Anular:
 
    * objetivo: combinar recursos en función de su supertipo
    * punto de montaje: `/mnt/overide`
@@ -266,6 +262,6 @@ Se tratan algunos ejemplos:
    * [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)
    * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* Omitir:
+* Anular:
 
    * [Configuración de las propiedades de página](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

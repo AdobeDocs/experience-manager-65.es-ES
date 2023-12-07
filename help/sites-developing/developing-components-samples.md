@@ -1,20 +1,16 @@
 ---
 title: 'AEM Desarrollo de componentes: ejemplos de código'
-seo-title: Developing AEM Components - Code Samples
 description: AEM En esta sección se proporcionan algunos ejemplos sobre cómo crear sus propios componentes para la creación de componentes de la aplicación de componentes de la aplicación de tipo de.
-seo-description: This section provides some examples on how to create your own components for AEM.
-uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 4%
+source-wordcount: '203'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +33,6 @@ Para obtener información sobre la IU clásica, consulte [AEM Componentes para l
 >* a [marco para automatizar pruebas, basado en la biblioteca Hobbes.js](/help/sites-developing/hobbes.md)
 >
 
-
 ## Ejemplo de código: cómo personalizar campos de diálogo {#code-sample-how-to-customize-dialog-fields}
 
 CÓDIGO EN GITHUB
@@ -51,7 +46,7 @@ Puede encontrar el código de esta página en GitHub
 >
 >AEM Este ejemplo de código está relacionado con la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 
-## Medios relacionados {#related-resources}
+## Recursos relacionados {#related-resources}
 
 ### Agregar una nueva acción a una barra de herramientas de componentes {#add-new-action-to-a-component-toolbar}
 

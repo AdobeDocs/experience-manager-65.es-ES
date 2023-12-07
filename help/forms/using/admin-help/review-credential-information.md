@@ -1,17 +1,15 @@
 ---
 title: Revisar información del uso de credenciales
 description: Obtenga información sobre cómo revisar la información de uso de las credenciales. Se puede acceder a la información de uso de credenciales, que describe su uso, a través de la extensión de Acrobat Reader.
-uuid: 02af75f9-c235-470d-a98b-a2102aa31381
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 5%
+source-wordcount: '193'
+ht-degree: 4%
 
 ---
 

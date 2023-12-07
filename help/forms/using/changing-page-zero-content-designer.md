@@ -1,19 +1,15 @@
 ---
 title: Cambiar el contenido de la página cero en Designer
-seo-title: Changing Page Zero content in Designer
 description: ¿Sabe cómo puede cambiar el mensaje que se muestra en la página cero de un PDF XFA cuando se visualiza en un visor que no es Adobe PDF?
-seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
-uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
 feature: Adaptive Forms
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 85%
+source-wordcount: '230'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +19,7 @@ El contenido de la página cero se muestra de forma predeterminada cuando un vis
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] La versión de Designer de permite cambiar el mensaje que se muestra en la página cero. Para cambiar el mensaje de la página cero, realice los siguientes pasos:
+La versión de Designer de [!DNL AEM Forms] permite cambiar el mensaje que se muestra en la página cero. Para cambiar el mensaje de la página cero, realice los siguientes pasos:
 
 1. Asegúrese de que ha instalado la versión de Designer de [!DNL AEM Forms]. Puede comprobar la versión desde la pantalla Acerca de Designer.
 

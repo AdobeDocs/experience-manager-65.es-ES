@@ -1,19 +1,15 @@
 ---
 title: Uso de propiedades de contenido para exportar contenido
-seo-title: Using Content Properties to Export Content
 description: La siguiente página muestra los nodos y las propiedades de la aplicación.
-seo-description: The following page shows App Properties and Nodes.
-uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 5%
+source-wordcount: '332'
+ht-degree: 3%
 
 ---
 

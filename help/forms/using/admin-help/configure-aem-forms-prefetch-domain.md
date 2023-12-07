@@ -1,18 +1,14 @@
 ---
 title: AEM Configurar formularios para recuperar previamente información de dominio
-seo-title: Configure AEM forms to prefetchdomain information
 description: AEM Configure formularios para recuperar previamente información de dominio si experimenta un tiempo de respuesta más lento debido a grupos profundamente anidados o si es miembro de muchos grupos.
-seo-description: Configure AEM forms to prefetch domain information if you experience a slower response time due to deeply nested groups or if you are a member of many groups.
-uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---

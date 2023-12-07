@@ -1,17 +1,15 @@
 ---
 title: Métodos abreviados del teclado para las consolas
 description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas y otros, a la edición de páginas.
-uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -28,14 +26,13 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 >* Mac: **Cmd**+**click** en los componentes necesarios.
 >
 
-
 ## Métodos abreviados de teclado {#keyboard-shortcuts}
 
 <table>
  <tbody>
   <tr>
    <th>Lugar de residencia</th>
-   <th>Acceso directo</th>
+   <th>Atajo</th>
    <th>Descripción</th>
   </tr>
   <tr>

@@ -1,19 +1,15 @@
 ---
 title: Trabajar con el repositorio de AEM Forms
-seo-title: Working with AEM Forms Repository
 description: Administre el repositorio de AEM Forms para crear carpetas, escribir, enumerar, leer, actualizar y buscar recursos mediante la API de Java y la API de servicio web. Además, aprenda a crear relaciones de recursos, bloquear y eliminar recursos.
-seo-description: Manage AEM Forms repository to create folders, write, list, read, update resources, and search resources using the Java API and Web Service API. In addition, learn how to create resource relationships, lock and delete resources.
-uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '9095'
+source-wordcount: '9036'
 ht-degree: 1%
 
 ---
@@ -58,7 +54,7 @@ La API del repositorio proporciona varias operaciones que puede utilizar para al
 
 Mediante la API del servicio de repositorio, puede realizar las siguientes tareas:
 
-* Crear carpetas. Consulte [Creación de carpetas](aem-forms-repository.md#creating-folders).
+* Cree carpetas. Consulte [Creación de carpetas](aem-forms-repository.md#creating-folders).
 * Recursos de escritura y sus propiedades. Consulte [Recursos de escritura](aem-forms-repository.md#writing-resources).
 * Enumerar recursos de una colección determinada o relacionados con otros recursos. Consulte [Listando recursos](aem-forms-repository.md#listing-resources).
 * Recursos de lectura y sus propiedades. Consulte [Leyendo recursos](aem-forms-repository.md#reading-resources).

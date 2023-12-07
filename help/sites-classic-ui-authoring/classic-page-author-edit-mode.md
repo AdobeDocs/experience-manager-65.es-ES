@@ -1,20 +1,16 @@
 ---
 title: Componentes para la creación de páginas
-seo-title: Components for Page Authoring
 description: Los componentes están disponibles cuando se edita una página desde la pestaña Componentes de la barra de tareas y desde el selector Insertar nuevo componente (cuando hace doble clic en el área Arrastrar componentes o recursos aquí ).
-seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
-uuid: c353073d-d4d1-4529-b8bd-d0ca302cc9a0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '6026'
-ht-degree: 8%
+source-wordcount: '5991'
+ht-degree: 3%
 
 ---
 
@@ -266,7 +262,7 @@ El componente de integración de aplicaciones externas (**Externo** AEM ) le per
      https://en.wikipedia.org/wiki/Main_Page
      ```
 
-   * **Transmitir parámetros**
+   * **Pasar parámetros**
 
      Marque la casilla para que los parámetros se pasen a la aplicación cuando sea necesario.
 
@@ -288,7 +284,7 @@ El componente Flash permite cargar una película de Flash. Puede arrastrar un re
 
 * **Flash**
 
-   * **Película Flash**
+   * **película de Flash**
 
      El archivo de película flash. Arrastre un recurso desde el buscador de contenido o haga clic para abrir una ventana de exploración.
 
@@ -342,11 +338,11 @@ Puede arrastrar y soltar una imagen desde el [Buscador de contenido](/help/sites
 
 Cuando se carga una imagen, puede configurar lo siguiente:
 
-* **Asignar**
+* **Mapa**
 
   Para asignar una imagen, seleccione Mapa. Puede especificar cómo desea crear el mapa de imagen (rectángulo, polígono, etc.) y hacia dónde debe apuntar el área.
 
-* **Recortar**
+* **Recorte**
 
   Seleccione Recortar para poder recortar una parte de una imagen. Utilice el ratón para recortar la imagen.
 
@@ -508,7 +504,7 @@ Puede configurar lo siguiente:
 
      Especifique la página (producto) para la que se debe mostrar el estado del pedido.
 
-   * **Tipo / Tamaño**
+   * **Tipo/tamaño**
 
      Seleccione de la selección proporcionada.
 
@@ -572,7 +568,7 @@ Puede configurar lo siguiente:
 
      Si no hay resultados, se muestra el texto introducido aquí.
 
-   * **Revisar ortografía de texto**
+   * **Texto corrector ortográfico**
 
      Si alguien introduce un término similar, este texto se muestra antes del término.
 Por ejemplo, si escribe `Geometrixxe`, el sistema muestra &quot;¿Quiso decir? Geometrixx&quot;.
@@ -619,7 +615,7 @@ Si es necesario, puede configurar lo siguiente:
 
 * **Sitemap**
 
-   * **Ruta de acceso raíz**
+   * **Ruta raíz**
 
      Ruta desde la que comienza el anuncio.
 
@@ -772,7 +768,7 @@ Puede configurar lo siguiente:
 
   URI si el título va a funcionar como vínculo.
 
-* **Tipo / Tamaño**
+* **Tipo/tamaño**
 
   Seleccione Pequeño o Grande en la lista desplegable. Lo pequeño se genera como imagen. Grande se genera como texto.
 
@@ -843,7 +839,7 @@ Los componentes de formulario se utilizan para crear formularios para que los vi
 
 Forms se basa en varios componentes diferentes:
 
-* **Formulario**
+* **Form**
 
   El componente Formulario define el principio y el final de un nuevo formulario en una página. Otros componentes se pueden colocar entre estos elementos, como tablas y descargas.
 
@@ -909,7 +905,7 @@ Este campo es obligatorio y solo debe contener los siguientes caracteres:
 
      Permite proporcionar información adicional para el usuario, si es necesario. En el formulario, esta descripción se muestra debajo del campo, en una fuente más pequeña que el título.
 
-   * **Mostrar / Ocultar**
+   * **Mostrar/ocultar**
 
      Determina cuándo está visible el campo.
 
@@ -943,7 +939,7 @@ Este campo es obligatorio y solo debe contener los siguientes caracteres:
 
      En filas y columnas.
 
-   * **Anchura**
+   * **Ancho**
 
      En píxeles.
 
@@ -961,9 +957,9 @@ Entre el principio y el final de un formulario, puede agregar componentes de for
 
 Este componente necesario define el inicio de un nuevo formulario en una página. Puede configurar lo siguiente:
 
-* **Formulario**
+* **Form**
 
-   * **Página de agradecimientos**
+   * **Página de agradecimiento**
 
      Página a la que se hace referencia para agradecer a los visitantes por proporcionar sus comentarios. Si se deja en blanco, el formulario se vuelve a mostrar después del envío.
 
@@ -985,23 +981,23 @@ Este componente necesario define el inicio de un nuevo formulario en una página
       * **Crear y actualizar cuenta**
       * **Servicio de correo electrónico: crear suscriptor y agregar a la lista**
       * **Servicio de correo electrónico: enviar correo electrónico de respuesta automática**
-      * **Servicio de correo electrónico: cancelar la subscripción del usuario a la lista**
+      * **Servicio de correo electrónico: cancelar la suscripción del usuario a la lista**
       * **Editar comunidad**
       * **Editar medios**
       * **Editar recursos controlados por flujo de trabajo**
       * **Correo**
-      * **Detalles de pedido realizado**
+      * **Detalles del pedido realizado**
       * **Actualización de perfil**
       * **Restablecer contraseña**
-      * **Definir contraseña**
+      * **Establecer contraseña**
       * **Almacenar contenido**
 
         El tipo de acción predeterminado.
 
       * **Almacenar contenido con cargas**
       * **Enviar pedido**
-      * **Cancelar la suscripción del suscriptor**
-      * **Actualizar pedido**
+      * **Cancelar suscripción al suscriptor**
+      * **Actualizar orden**
 
    * **Identificador de formulario**
 
@@ -1029,7 +1025,7 @@ Uso de **Ruta de carga** puede precargar el formulario con valores en los campos
 
         `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-   * **Configuración de la acción**
+   * **Configuración de acción**
 
      Las opciones disponibles en **Configuración de acción** dependen del seleccionado **Tipo de acción**:
 
@@ -1047,7 +1043,7 @@ La página utilizada al crear una cuenta.
 
            Seleccione el tipo requerido.
 
-         * **Formulario**
+         * **Form**
 
            Especifique el formulario.
 
@@ -1086,7 +1082,7 @@ Especifique la lista de posibles clientes necesaria.
 
       * **Correo**
 
-         * **De**
+         * **Desde**
 
            Introduzca la dirección de correo electrónico de la que debe proceder el correo electrónico.
 
@@ -1127,7 +1123,7 @@ Especifique la lista de posibles clientes necesaria.
 
         Tiene las mismas opciones que **Almacenar contenido**.
 
-      * **Cancelar la suscripción del suscriptor**
+      * **Cancelar suscripción al suscriptor**
 
          * **El posible cliente se eliminará de esta lista**
 
@@ -1310,13 +1306,13 @@ Puede especificar varios parámetros, incluidas las áreas de nombres que se pue
 
 * **Campo de etiqueta**
 
-   * **Espacios de nombres permitidos**
+   * **Áreas de nombres permitidas**
 
       * **Geometrixx Outdoors**
       * **Flujo de trabajo**
       * **Foro**
       * **Fotografías de archivo**
-      * **Geometrixx Media**
+      * **Geometrixx Medias**
       * **Etiquetas estándar**
       * **Marketing**
       * **Propiedades del recurso**

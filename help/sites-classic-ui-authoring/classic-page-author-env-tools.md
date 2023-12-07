@@ -1,24 +1,22 @@
 ---
 title: 'Creación: el entorno y las herramientas'
 description: La consola Sitios web permite administrar y navegar por el sitio web. Con dos paneles, la estructura del sitio web se puede expandir y realizar acciones en los elementos necesarios.
-uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 6%
+source-wordcount: '892'
+ht-degree: 5%
 
 ---
 
 # Creación: el entorno y las herramientas {#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
 
 ## Administración del sitio {#site-administration}
 
@@ -174,7 +172,7 @@ En determinadas situaciones, el Sidekick puede realizar otras acciones, como las
 
 Otros [las relaciones entre páginas se pueden ver en la consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
-## Registro de auditorías {#audit-log}
+## Registro de auditoría {#audit-log}
 
 El **Registro de auditoría** se puede acceder a desde el **Información** pestaña de la barra de tareas. Enumera las acciones recientes realizadas en la página actual; por ejemplo:
 
@@ -188,7 +186,7 @@ La consola Sitio web también [proporciona información sobre el estado actual d
 
 Al editar una página con la IU clásica, hay varios modos a los que se puede acceder mediante los iconos de la parte inferior de la barra de tareas:
 
-![Modos de página  ](do-not-localize/chlimage_1-12.png)
+![Modos de página](do-not-localize/chlimage_1-12.png)
 
 La fila de iconos de la parte inferior del Sidekick se utiliza para cambiar los modos de trabajo de las páginas:
 

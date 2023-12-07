@@ -1,16 +1,12 @@
 ---
 title: Integración con servicios de terceros
-seo-title: Integrating with Third-Party Services
 description: AEM Obtenga información sobre cómo integrar la con servicios de terceros.
-seo-description: Learn how to integrate AEM with third party services.
-uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 6%

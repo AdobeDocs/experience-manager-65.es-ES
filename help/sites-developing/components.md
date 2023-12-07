@@ -1,19 +1,15 @@
 ---
 title: Información general sobre componentes
-seo-title: Components
 description: Los componentes son unidades modulares que implementan una funcionalidad específica para presentar el contenido en su sitio web
-seo-description: Components are modular units which realize specific functionality to present your content on your website
-uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 52%
+source-wordcount: '570'
+ht-degree: 44%
 
 ---
 
@@ -31,7 +27,7 @@ Esta página proporciona información general sobre los componentes de Adobe Exp
 * AEM Puede ejecutarse en cualquier lugar dentro de cualquier sistema de la. También se pueden limitar para que se ejecuten en componentes específicos.
 * Disponen de una interfaz de usuario estandarizada.
 * Tienen un comportamiento de edición que se puede configurar.
-* Utilizan cuadros de diálogo creados con subelementos basados en componentes de la IU de Granite
+* Utilice cuadros de diálogo creados con subelementos basados en componentes de la interfaz de usuario de Granite
 * Se desarrollan utilizando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) (recomendado) o JSP.
 * Se pueden desarrollar para crear componentes personalizados que amplíen la funcionalidad predeterminada.
 
@@ -40,7 +36,7 @@ Como los componentes son modulares, puede hacer lo siguiente:
 * Desarrollar un nuevo componente en la instancia local.
 * Implementarla en su entorno de prueba.
 * Implementarla en su entorno de creación activo, donde permiten a los autores o administradores añadir y configurar contenido.
-* Implementarla en los entornos de publicación activos, donde se utilizan para representar contenido para los visitantes del sitio web. Algunos componentes, por ejemplo, para las comunidades, también aceptan entradas de los usuarios.
+* Impleméntelo en los entornos de publicación activos, donde se utiliza para representar contenido para los visitantes del sitio web. Algunos componentes, por ejemplo, para las comunidades, también aceptan entradas de los usuarios.
 
 Cada componente AEM:
 
@@ -65,7 +61,7 @@ Los componentes proporcionados y su uso dentro de [sitios web de We.Retail de mu
 Hay dos conjuntos de componentes de la aplicación proporcionados por el Adobe AEM disponibles para el:
 
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Componentes de base](/help/sites-authoring/default-components-foundation.md)
+* [Componentes básicos](/help/sites-authoring/default-components-foundation.md)
 
 **Componentes principales** AEM se han introducido con la versión 6.3 de la aplicación y ofrecen funciones flexibles y personalizables de creación de contenido. El [Sitio de referencia de We.Retail](/help/sites-developing/we-retail.md) ilustra cómo se pueden utilizar los componentes principales y representa las prácticas recomendadas actuales de desarrollo de componentes.
 

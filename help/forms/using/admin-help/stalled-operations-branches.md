@@ -1,16 +1,12 @@
 ---
 title: Trabajar con operaciones y ramas estancadas
-seo-title: Working with stalled operations and branches
 description: La página Operaciones paralizadas y la página Ramas paralizadas muestran los procesos que se han paralizado.
-seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
-uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 1%

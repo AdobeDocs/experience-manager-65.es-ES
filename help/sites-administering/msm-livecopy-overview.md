@@ -1,20 +1,16 @@
 ---
 title: Información general de la consola de Live Copy
-seo-title: Live Copy Overview Console
 description: Obtenga información acerca de los conceptos básicos de la consola de información general de Live Copy.
-seo-description: Learn about the basics of the Live Copy Overview Console.
-uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 33%
+source-wordcount: '546'
+ht-degree: 30%
 
 ---
 
@@ -127,7 +123,7 @@ Al seleccionar una página de Live Copy, están disponibles las siguientes accio
 
 ## Estado de la relación {#relationship-status}
 
-La consola **Estado de la relación** tiene dos pestañas que proporcionan una amplia gama de funcionalidades:
+El **Estado de relación** La consola de tiene dos pestañas que proporcionan una amplia gama de funcionalidades:
 
 * [Información de estado de relación](#relationship-status-information)
 * [Información de Live Copy](#live-copy-information)
