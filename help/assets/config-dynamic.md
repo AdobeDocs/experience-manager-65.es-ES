@@ -2,21 +2,19 @@
 title: 'Configuración de Dynamic Media: modo híbrido'
 description: 'Obtenga información sobre cómo configurar Dynamic Media: modo híbrido.'
 mini-toc-levels: 3
-uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '7791'
-ht-degree: 2%
+source-wordcount: '7684'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +61,7 @@ Si es cliente de Dynamic Media, debe utilizar la entrega híbrida como mecanismo
 
 Las tareas de configuración que siguen hacen referencia a los siguientes términos:
 
-| **Term** | **Dynamic Media habilitado** | **Descripción** |
+| **Término** | **Dynamic Media habilitado** | **Descripción** |
 |---|---|---|
 | Nodo Experience Manager Author | Marca de verificación blanca en un círculo verde | Nodo de autor que se implementa en las instalaciones o a través de Managed Services. |
 | Nodo Publicación del Experience Manager | &quot;X&quot; blanca en un cuadrado rojo. | Nodo de publicación que se implementa en las instalaciones o a través de Managed Services. |
@@ -80,7 +78,7 @@ Puede elegir implementar Dynamic Media solo para imágenes, solo para vídeo o t
   </tr>
   <tr>
    <td>Distribuya SOLO imágenes en producción</td>
-   <td>Las imágenes se envían a través de servidores en los centros de datos mundiales de Adobe y, a continuación, una CDN las almacena en caché para obtener un rendimiento escalable y un alcance global.</td>
+   <td>Las imágenes se envían a través de servidores en los centros de datos de todo el mundo de Adobe y, a continuación, una CDN las almacena en caché para obtener un rendimiento escalable y un alcance global.</td>
    <td>
     <ol>
      <li>En el Experience Manager <strong>autor</strong> nodo, <a href="#enabling-dynamic-media">habilitar Dynamic Media</a>.</li>
@@ -95,7 +93,7 @@ Puede elegir implementar Dynamic Media solo para imágenes, solo para vídeo o t
   </tr>
   <tr>
    <td>Distribuya SOLO imágenes en preproducción (desarrollo, QE, ensayo, etc.)</td>
-   <td>Las imágenes se envían mediante el nodo de publicación Experience Manager. En esta situación, como el tráfico es mínimo, no es necesario enviar imágenes al centro de datos del Adobe. Y permite una previsualización segura del contenido antes del lanzamiento de producción.</td>
+   <td>Las imágenes se envían mediante el nodo de publicación Experience Manager. En esta situación, como el tráfico es mínimo, no es necesario enviar imágenes al centro de datos de Adobe. Y permite una previsualización segura del contenido antes del lanzamiento de producción.</td>
    <td>
     <ol>
      <li>En el Experience Manager <strong>autor</strong> nodo, <a href="#enabling-dynamic-media">habilitar Dynamic Media</a>.</li>
@@ -222,7 +220,7 @@ Para deshabilitar Dynamic Media después de haberla habilitado, quite el `-r dyn
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar
    ```
 
-1. Solicitar `https://localhost:4502/is/image`. Recibirá un mensaje que indica que Dynamic Media está deshabilitado.
+1. Solicitud `https://localhost:4502/is/image`. Recibirá un mensaje que indica que Dynamic Media está deshabilitado.
 
    >[!NOTE]
    >
@@ -618,7 +616,7 @@ Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL I
 
 ### Solucionar problemas de configuración de informes de vídeo {#troubleshooting-the-video-reporting-configuration}
 
-* Durante la instalación, a veces se agota el tiempo de espera de las conexiones al servidor de API de Analytics. La instalación reintenta la conexión 20 veces, pero sigue fallando. Cuando se produce esta situación, el archivo de registro registra varios errores. Buscar `SiteCatalystReportService`.
+* Durante la instalación, a veces se agota el tiempo de espera de las conexiones al servidor de API de Analytics. La instalación reintenta la conexión 20 veces, pero sigue fallando. Cuando se produce esta situación, el archivo de registro registra varios errores. Buscar por `SiteCatalystReportService`.
 * Si no instala primero el paquete de ajustes preestablecidos de Analytics, se puede crear un nuevo grupo de informes.
 * La actualización de Experience Manager 6.3 a Experience Manager 6.4 o Experience Manager 6.4.1 y, a continuación, la configuración de Dynamic Media (anterior a 6.3), sigue creando un grupo de informes. Se sabe que este problema está programado para solucionarse en el Experience Manager 6.4.2.
 
@@ -856,7 +854,7 @@ Para establecer la configuración de Dynamic Media Image Server:
    | Propiedad | Valor predeterminado | Descripción |
    |---|---|---|
    | Caché activada | Comprobado | Si la caché de respuestas está habilitada |
-   | Raíces de caché | cache | Una o varias rutas a las carpetas de la caché de respuestas. Las rutas relativas se resuelven en la carpeta del paquete de imagen s7 interna. |
+   | Raíces de caché | escondrijo | Una o varias rutas a las carpetas de la caché de respuestas. Las rutas relativas se resuelven en la carpeta del paquete de imagen s7 interna. |
    | Tamaño máximo de caché | 200000000 | Tamaño máximo de la caché de respuestas en bytes. |
    | Entradas máximas de caché | 100 000 | Número máximo de entradas permitidas en la caché. |
 
@@ -887,7 +885,7 @@ Configuración de tabla de manifiesto y sus valores predeterminados:
 | `defaultthumbpix` | `100,100` | Tamaño de miniatura predeterminado. Se utiliza en lugar del atributo::DefaultPix para solicitudes de miniaturas (`req=tmb`).<br>El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas. Esta acción es verdadera si se realiza una solicitud de miniatura (`req=tmb`) no especifica el tamaño explícitamente y no especifica el tamaño de vista explícitamente usando `wid=`, `hei=`, o `scl=`.<br>Se especifica como dos números enteros, 0 o más, separados por una coma. Ancho y alto en píxeles. Cualquiera de los dos valores, o ambos, se puede establecer en 0 para mantenerlos sin restricciones.<br>No se aplica a solicitudes anidadas o incrustadas.<br>Consulte también [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) en la API del servicio de imágenes. |
 | `expiration` | `36000000` | Duración predeterminada de la caché del cliente. Proporciona un intervalo de caducidad predeterminado en el caso de que el valor de catálogo::Expiration no sea válido en un registro de catálogo determinado.<br>Número real, 0 o superior. Número de milisegundos hasta la caducidad desde que se generaron los datos de respuesta. Si se establece en 0, la imagen de respuesta siempre caducará inmediatamente, lo que deshabilita el almacenamiento en caché del cliente. De forma predeterminada, este valor se establece en 10 horas, lo que significa que si se publica una imagen nueva, la imagen antigua tarda 10 horas en abandonar la caché del usuario. Póngase en contacto con Asistencia al cliente si necesita borrar la caché antes.<br>Consulte también [Caducidad](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) en la API del servicio de imágenes. |
 | `jpegquality` | `80` | Atributos de codificación de JPEG predeterminados. Especifica los atributos predeterminados para las imágenes de respuesta del JPEG.<br>Número entero e indicador, separados por coma. El primer valor está en el rango 1.. 100 y define la calidad. El segundo valor puede ser 0 para el comportamiento normal o 1 para desactivar la disminución de resolución de cromaticidad RGB empleada por los codificadores JPEG.<br>Consulte también [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) en la API del servicio de imágenes. |
-| `maxpix` | `2000,2000` | Límite de tamaño de la imagen de respuesta. Anchura y altura máximas para la imagen de respuesta que se devuelve al cliente.<br>El servidor devuelve un error si una solicitud genera una imagen de respuesta cuya anchura o altura sea mayor que el atributo::MaxPix.<br>Consulte también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) en la API del servicio de imágenes. |
+| `maxpix` | `2000,2000` | Límite de tamaño de imagen de respuesta. Anchura y altura máximas para la imagen de respuesta que se devuelve al cliente.<br>El servidor devuelve un error si una solicitud genera una imagen de respuesta cuya anchura o altura sea mayor que el atributo::MaxPix.<br>Consulte también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) en la API del servicio de imágenes. |
 | `resmode` | `SHARP2` | Modo de remuestreo predeterminado. Especifica los atributos predeterminados de remuestreo e interpolación que se utilizarán para escalar los datos de imagen.<br>Se utiliza cuando `resMode=` no se ha especificado en una solicitud.<br>Los valores permitidos incluyen `BILIN`, `BICUB`, o `SHARP2`.<br>Enumeración. Establezca en 2 para `bilin`, 3 para `bicub`, o 4 para `sharp2` modo de interpolación. Uso `sharp2` para obtener los mejores resultados.<br>Consulte también [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) en la API del servicio de imágenes. |
 | `resolution` | `72` | Resolución de objeto predeterminada. Proporciona una resolución de objeto predeterminada en el caso de que el valor de catálogo::Resolution no sea válido en un registro de catálogo determinado.<br>Número real, mayor que 0. Normalmente se expresa como píxeles por pulgada, pero también puede expresarse en otras unidades, como píxeles por metro.<br>Consulte también [Resolución](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) en la API del servicio de imágenes. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Estos valores representan una instantánea del tiempo de reproducción del vídeo y se pasan a [encoding.com](https://www.encoding.com/). Consulte [Acerca de la miniatura de vídeo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) para obtener más información. |
@@ -1121,7 +1119,7 @@ Se instalan los siguientes perfiles de color:
    <td>RGB ProPhoto</td>
   </tr>
   <tr>
-   <td>PS4Default</td>
+   <td>PS4Predeterminado</td>
    <td>CMYK</td>
    <td>CMYK predeterminado de Photoshop 4</td>
   </tr>
@@ -1151,7 +1149,7 @@ Se instalan los siguientes perfiles de color:
    <td>sRGB IEC61966-2.1</td>
   </tr>
   <tr>
-   <td>UncoatedFogra29</td>
+   <td>Fogra29 sin recubrimiento</td>
    <td>CMYK</td>
    <td>FOGRA29 sin recubrimiento (ISO 12647-2:2004)</td>
   </tr>

@@ -5,7 +5,7 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una
 Pasos para crear una aplicación basada en una plantilla de aplicación:
 
 1. Vaya al catálogo de aplicaciones de AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Seleccionar **Crear** -> **Aplicación** como se muestra a continuación
+1. Seleccionar **Crear** > **Aplicación** como se muestra a continuación
 
 Una vez creada una aplicación con esta plantilla, puede agregar artículos, titulares y colecciones a la aplicación. Para volver a visitar, crear artículos, titulares y colecciones, consulte [Acciones de administración de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 

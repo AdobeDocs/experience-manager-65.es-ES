@@ -1,26 +1,24 @@
 ---
 title: Vídeo
-description: Obtenga información sobre la administración centralizada de recursos de vídeo en Adobe Experience Manager Assets, donde puede cargar vídeos para su codificación automática en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Experience Manager Assets. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Obtenga información acerca de la administración centralizada de recursos de vídeo en Adobe Experience Manager Assets, donde puede cargar vídeos para su codificación automática en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Experience Manager Assets. La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1551'
 ht-degree: 1%
 
 ---
 
 # Vídeo {#video}
 
-Adobe Experience Manager Assets permite la administración centralizada de recursos de vídeo, donde puede cargar vídeos directamente en Assets para su codificación automática en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Assets para la creación de páginas.
+Adobe Experience Manager Assets proporciona una administración centralizada de recursos de vídeo, donde puede cargar vídeos directamente en Assets para su codificación automática en Dynamic Media Classic y acceder a vídeos de Dynamic Media Classic directamente desde Assets para la creación de páginas.
 
 La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas (detección automática de dispositivos y ancho de banda).
 

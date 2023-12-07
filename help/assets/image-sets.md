@@ -1,20 +1,18 @@
 ---
 title: Conjuntos de imágenes
 description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media
-uuid: ca2fd5b0-656e-4960-b10c-f0ec3d418760
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 7%
+source-wordcount: '2196'
+ht-degree: 5%
 
 ---
 
@@ -101,7 +99,7 @@ Si tiene problemas para crear conjuntos, consulte Imágenes y conjuntos en [Solu
 
 ## Carga de recursos en conjuntos de imágenes {#uploading-assets-in-image-sets}
 
-Comience por cargar las imágenes de los conjuntos de imágenes. Cuando elija imágenes, recuerde que los clientes pueden aplicar zoom a las imágenes en el Visor de conjuntos de imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan imágenes de TIFF, PNG y EPS sin pérdidas.
+Comience por cargar las imágenes de los conjuntos de imágenes. Cuando elija imágenes, recuerde que los clientes pueden aplicar zoom a las imágenes en el Visor de conjuntos de imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan imágenes de TIFF, PNG y EPS sin pérdidas.
 
 Puede cargar imágenes para conjuntos de imágenes como lo haría [cargar cualquier otro recurso en Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -111,7 +109,7 @@ Consulte [Dynamic Media: Formatos de imagen rasterizada compatibles](/help/asset
 
 Antes de crear conjuntos de imágenes, asegúrese de que las imágenes tengan el tamaño y el formato correctos.
 
-Para crear un conjunto de imágenes de varias vistas, necesita imágenes que muestren un elemento desde diferentes puntos de vista o que muestren diferentes aspectos del mismo elemento. El objetivo es resaltar las características importantes de un elemento para que los espectadores tengan una imagen completa de su aspecto o su funcionamiento.
+Para crear un conjunto de imágenes de varias vistas, necesita imágenes que muestren un elemento desde diferentes puntos de vista o que muestren diferentes aspectos del mismo elemento. El objetivo es resaltar las características importantes de un elemento para que los espectadores tengan una imagen completa de su aspecto o de sus acciones.
 
 Dado que los usuarios pueden ampliar las imágenes en conjuntos de imágenes, asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. <!-- Assets support many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
@@ -123,7 +121,6 @@ Dado que los usuarios pueden ampliar las imágenes en conjuntos de imágenes, as
 >
 >* Un tiro negro, marrón y verde de la misma chaqueta.
 >* Miniatura en color negro, marrón y verde.
-
 
 ## Crear un conjunto de imágenes {#creating-image-sets}
 
@@ -166,6 +163,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de imágenes, seleccione **[!UICONTROL Añadir recurso]**.
 
    * Cerca del centro de la página Editor de conjuntos de imágenes, seleccione **[!UICONTROL Pulse para abrir el Selector de recursos]**.
+
    Seleccione los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando o haciendo clic en **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el **[!UICONTROL Filtrar]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
@@ -187,11 +185,12 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
    * Para eliminar una imagen, selecciónela y seleccione **[!UICONTROL Eliminar recurso]**.
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicarlo a todos los recursos a la vez.
+
    >[!NOTE]
    >
    >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** encima del campo Título en la página Editor de conjuntos de imágenes, seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que quiere que Experience Manager genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** > **[!UICONTROL Miniatura automática]**.
 
-1. Seleccione **[!UICONTROL Guardar]**. El conjunto de imágenes recién creado aparecerá en la carpeta en la que lo creó.
+1. Seleccionar **[!UICONTROL Guardar]**. El conjunto de imágenes recién creado aparecerá en la carpeta en la que lo creó.
 
 ## Ver un conjunto de imágenes {#viewing-image-sets}
 
@@ -205,17 +204,17 @@ Sin embargo, los conjuntos creados mediante ajustes preestablecidos de conjuntos
 
 * Abra las propiedades de un recurso individual. Las propiedades indican qué conjuntos hacen referencia al recurso seleccionado o de qué es miembro. Seleccione el nombre del conjunto si desea ver el conjunto completo.
 
-   ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
+  ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
 * Desde una imagen de miembro de cualquier conjunto. Seleccione el **[!UICONTROL Conjuntos]** para mostrar los conjuntos de los que es miembro el recurso.
 
-   ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
+  ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
 * En la búsqueda, puede seleccionar **[!UICONTROL Filtrar]** y, a continuación, expanda **[!UICONTROL Dynamic Media]** y seleccione **[!UICONTROL Conjuntos]**.
 
-   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la búsqueda se realiza utilizando los criterios de búsqueda &quot;Comienza con&quot;, que son diferentes de la búsqueda del Experience Manager, que se basa en el uso de los criterios de búsqueda &quot;Contiene&quot;. Configuración del filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
+  La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la búsqueda se realiza utilizando los criterios de búsqueda &quot;Comienza con&quot;, que son diferentes de la búsqueda del Experience Manager, que se basa en el uso de los criterios de búsqueda &quot;Contiene&quot;. Configuración del filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
@@ -244,10 +243,9 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
    * Para reordenar los recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
    * Para ordenar los elementos en orden ascendente o descendente, seleccione el encabezado de la columna.
    * Para añadir un recurso o actualizar un recurso existente, seleccione la **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
-
-      >[!NOTE]
-      >
-      >Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
+     >[!NOTE]
+     >
+     >Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido de visor.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya a la nueva miniatura o recurso de muestra, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]**.

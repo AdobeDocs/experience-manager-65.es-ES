@@ -1,20 +1,16 @@
 ---
 title: Procesar formularios por valor
-seo-title: Rendering Forms By Value
 description: Utilice la API de Forms (Java) para procesar un formulario por valor mediante la API de Java y la API de servicio web.
-seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
-uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1822'
 ht-degree: 1%
 
 ---
@@ -75,7 +71,7 @@ Al procesar un formulario por valor, debe crear un `com.adobe.idp.Document` que 
 
 **Procesar un formulario por valor**
 
-Para procesar un formulario por valor, pase un `com.adobe.idp.Document` que contiene el diseño de formulario en el método de procesamiento `inDataDoc` parámetro (puede ser cualquiera de las `FormsServiceClient` métodos de procesamiento del objeto, como `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Este valor de parámetro se reserva normalmente para los datos que se combinan con el formulario. Del mismo modo, pase un valor de cadena vacío a `formQuery` parámetro. Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario.
+Para procesar un formulario por valor, pase un `com.adobe.idp.Document` instancia que contiene el diseño de formulario en el método de procesamiento `inDataDoc` parámetro (puede ser cualquiera de las `FormsServiceClient` métodos de procesamiento del objeto, como `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Este valor de parámetro se reserva normalmente para los datos que se combinan con el formulario. Del mismo modo, pase un valor de cadena vacío a `formQuery` parámetro. Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario.
 
 >[!NOTE]
 >
@@ -133,7 +129,7 @@ Procesar un formulario por valor mediante la API de Forms (Java):
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
    * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
    * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.

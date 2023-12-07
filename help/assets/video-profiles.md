@@ -1,21 +1,19 @@
 ---
 title: Perfiles de vídeo
 description: Dynamic Media ya incluye un perfil predefinido de codificación de vídeo adaptable. La configuración de este perfil predeterminado está optimizada para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede añadir un recorte inteligente a los vídeos.
-uuid: 26a20984-db63-41e9-b16c-6e164b7596a0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3732'
-ht-degree: 9%
+source-wordcount: '3770'
+ht-degree: 8%
 
 ---
 
@@ -59,7 +57,7 @@ En la tabla siguiente se identifican los perfiles de codificación de las práct
    <td><strong>Códec de formato de vídeo</strong></td>
    <td><strong>Tamaño de vídeo: Anchura (px)</strong></td>
    <td><strong>Tamaño del vídeo: altura (px)</strong></td>
-   <td><strong>Mantener proporción de aspecto?</strong></td>
+   <td><strong>¿Mantener proporción de aspecto?</strong></td>
    <td><strong>Velocidad de bits de vídeo (Kbps)</strong></td>
    <td><strong>Velocidad De Fotogramas De Vídeo (Fps)</strong></td>
    <td><strong>Códec de audio</strong></td>
@@ -389,7 +387,7 @@ Consulte también [Vuelva a procesar los recursos de una carpeta después de edi
 
 1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de vídeo]**.
 1. Seleccione el perfil de vídeo que desea aplicar a una o varias carpetas.
-1. Seleccionar **[!UICONTROL Aplicar perfil a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y seleccione **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta en el modo **[!UICONTROL Vista de tarjeta]**.
+1. Seleccionar **[!UICONTROL Aplicar perfil a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y seleccione **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta mientras se encuentra en **[!UICONTROL Vista de tarjeta]**.
 Puede [monitorización del progreso de un trabajo de procesamiento de perfiles de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 #### Aplicar un perfil de vídeo a las carpetas desde Propiedades {#applying-video-profiles-to-folders-from-properties}

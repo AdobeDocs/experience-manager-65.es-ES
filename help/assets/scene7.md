@@ -1,19 +1,17 @@
 ---
 title: Añadir funciones de Dynamic Media Classic a las páginas
 description: Cómo añadir funciones y componentes de Dynamic Media Classic a una página en Adobe Experience Manager.
-uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: managing-assets
-discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2845'
+source-wordcount: '2851'
 ht-degree: 0%
 
 ---
@@ -75,7 +73,7 @@ Una vez que estén disponibles en **[!UICONTROL Diseño]** En este modo, puede a
 >
 >Si está creando y desarrollando visualizadores personalizados y utiliza el buscador de contenido, debe añadir explícitamente el `allowfullscreen` parámetro.
 
-### Aviso de fin de vida útil para el visualizador Flash {#flash-viewers-end-of-life-notice}
+### Aviso de fin de vida útil para el visualizador de Flashes {#flash-viewers-end-of-life-notice}
 
 A partir del 31 de enero de 2017, Adobe Dynamic Media Classic dejará de ser compatible con la plataforma de visor de Flash.
 

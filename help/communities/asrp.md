@@ -1,20 +1,16 @@
 ---
 title: 'ASRP: proveedor de recursos de almacenamiento de Adobe'
-seo-title: ASRP - Adobe Storage Resource Provider
 description: Configure AEM Communities para que utilice una base de datos relacional como almacén común
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 42feafa381c129117dae5345255702f0b0951a17
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
@@ -46,7 +42,7 @@ Las claves secreta y de consumidor se comparten en todos los grupos de informes 
 
 El [Consola de configuración de almacenamiento](/help/communities/srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
-**En la instancia de autor de AEM:**
+**AEM En la instancia de autor de:**
 
 * En la navegación global, vaya a **[!UICONTROL Herramientas > Comunidades > Configuración de almacenamiento]** y seleccione **[!UICONTROL Proveedor de recursos de almacenamiento de Adobe (ASRP)]**.
 
@@ -69,7 +65,7 @@ Después de enviar la configuración, pruebe la conexión:
 
 * Seleccionar **Probar configuración**.
 
-   Para cada instancia de autor y publicación, pruebe la conexión con el centro de datos desde la consola Configuración de almacenamiento.
+  Para cada instancia de autor y publicación, pruebe la conexión con el centro de datos desde la consola Configuración de almacenamiento.
 
 * Asegúrese de que las direcciones URL del sitio para los datos de perfil se pueden enrutar desde el centro de datos mediante [externalización de vínculos](#externalize-links).
 
@@ -95,7 +91,7 @@ ASRP debe identificarse como el almacén común en todas las instancias de autor
 
 Para que la configuración idéntica esté disponible en el entorno de publicación:
 
-En la instancia de autor de AEM:
+AEM En la instancia de autor de:
 
 * Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]**
 * Seleccionar **Activar árbol**

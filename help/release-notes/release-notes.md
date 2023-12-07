@@ -3,10 +3,10 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: f8f82ad5805095f331432471b614225f761e645c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '3530'
-ht-degree: 3%
+source-wordcount: '3552'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * Se habilitó al usuario del Editor de páginas de sitios/Componente de imagen para hacer referencia a los recursos desde el Cloud Service de recursos remoto. (SITES-13448, SITES-13433)
 * AEM Ahora admite la ordenación del lado del servidor para una navegación más rápida por el proyecto en la vista de lista. Los nodos de proyecto se ordenan según la columna seleccionada por el usuario antes de aparecer en la interfaz.
 
-**Función en desuso**
+**Función obsoleta**
 
 * AEM ActiveMQ en el caso de que la aplicación esté en desuso. AEM ActiveMQ se utilizaba para la comunicación entre dos instancias de publicación de. Adobe recomienda que los clientes ahora utilicen un equilibrador de carga.
 
@@ -493,4 +493,4 @@ Estos sitios web solo están disponibles para los clientes de. Si es cliente de 
 >
 >* [[!DNL Experience Manager] página de producto](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Documentación de 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
->* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Suscribirse a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)

@@ -1,20 +1,18 @@
 ---
 title: Entrega de recursos de Dynamic Media
 description: Obtenga información sobre cómo enviar recursos de Dynamic Media, como vídeos e imágenes, a sus páginas web.
-uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 13%
+source-wordcount: '323'
+ht-degree: 9%
 
 ---
 
@@ -28,7 +26,7 @@ Con Dynamic Media, tiene varias opciones:
 * Si el sitio web no está en el Experience Manager, puede elegir una de estas opciones:
 
    * Incrustar el vídeo o la imagen en el sitio web.
-   * Vinculación de URL en la aplicación web. Utilice la vinculación cuando desee distribuir un reproductor de vídeo como ventana emergente o modal.
+   * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee distribuir un reproductor de vídeo como ventana emergente o modal.
    * Si su sitio es adaptable, puede hacer lo siguiente [ofrecer imágenes optimizadas](/help/assets/responsive-site.md).
 
 >[!NOTE]

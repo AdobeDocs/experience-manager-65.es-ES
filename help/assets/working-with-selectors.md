@@ -1,18 +1,16 @@
 ---
-title: Trabajar con selectores
+title: Uso de selectores
 description: Selección de recursos para imágenes interactivas, vídeos interactivos y titulares de carrusel
-uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selectors
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '741'
 ht-degree: 2%
 
 ---
@@ -89,7 +87,7 @@ Utilice el selector de sitio para elegir una página web cuando desee vincular u
 
 1. En **[!UICONTROL Previsualizar]** modo si selecciona el punto interactivo o el mapa de imagen, se desplaza a la página del sitio del Experience Manager especificada.
 
-## Uso del selector de recursos {#selecting-assets}
+## Uso del Selector de recursos {#selecting-assets}
 
 Utilice este selector para elegir imágenes para utilizarlas en un titular de carrusel, un vídeo interactivo, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible al seleccionar **[!UICONTROL Seleccionar recursos]** en el **[!UICONTROL Contenido]** pestaña. En los conjuntos de carrusel, el selector de recursos está disponible al crear una diapositiva. En conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros, el selector de recursos está disponible al crear un conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
 

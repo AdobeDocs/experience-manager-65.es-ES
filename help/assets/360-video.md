@@ -1,19 +1,17 @@
 ---
 title: Vídeo 360/VR
 description: Aprenda a trabajar con 360 y el vídeo de realidad virtual (VR) en Dynamic Media.
-uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: c0a60ec39e35fa8113ce9e1795561709b9c7e289
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -35,7 +33,7 @@ Consulte también [Administrar ajustes preestablecidos del visor](/help/assets/m
 Seleccionar [Estación Espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero del mouse a una nueva ubicación para cambiar el ángulo de visualización.
 
 ![Muestra de 360 videos con la estación espacial internacional flotando en el espacio exterior y la tierra y el sol detrás de ella.](assets/6_5_360videoiss_simplified.png)
-*Fotograma de vídeo de Space Station 360*
+*Fotograma de vídeo de la Estación Espacial 360*
 
 ## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -63,14 +61,16 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
       * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD o,
       * 2160p: 3840 x 2160, conocida como resolución 4k, UHD o HD Ultra. Esta resolución de pantalla grande se encuentra más a menudo en televisores y monitores de ordenador de primera calidad. La resolución de 2160p se denomina a menudo &quot;4k&quot; porque la anchura está cerca de los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
+
    * [Crear un perfil de vídeo adaptable personalizado](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) con representaciones de mayor calidad. Por ejemplo, cree un perfil de vídeo adaptable que contenga las tres configuraciones siguientes:
 
       * anchura=auto; altura=720; velocidad de bits=2500 kbps
       * anchura=auto; altura=1080; velocidad de bits=5000 kbps
       * anchura=auto; altura=1440; velocidad de bits=6600 kbps
+
    * Procesar contenido de vídeo de 360 en una carpeta dedicada exclusivamente a recursos de vídeo de 360.
 
-   Este enfoque impone buenas exigencias a la red y la CPU del usuario final.
+   Este enfoque impone mayores exigencias a la red y la CPU del usuario final.
 
 1. [Cargue el vídeo en la carpeta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
@@ -124,7 +124,8 @@ Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
-      El vídeo de realidad virtual (VR) es contenido de vídeo envolvente al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, puede crear vídeos de realidad virtual al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
+     El vídeo de realidad virtual (VR) es contenido de vídeo envolvente al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, puede crear vídeos de realidad virtual al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
+
    ![Captura de pantalla de un primer plano de la estación espacial internacional flotando en el espacio exterior con la tierra y el sol parcialmente visibles en el fondo](assets/6_5_360video-preview-video360vr.png)
    *Captura de pantalla de un vídeo de RV 360.*
 

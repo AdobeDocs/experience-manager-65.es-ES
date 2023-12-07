@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '6130'
 ht-degree: 83%
@@ -84,7 +84,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
 
    | **Componente** | **Funcionalidad** |
    |---|---|
-   | Gráfico | Agrega un gráfico que puede usar en comunicaciones interactivas para la representación visual de datos bidimensionales recuperados de una colección de modelos de datos de formulario. Para obtener más información, consulte [Usar gráficos en comunicaciones interactivas](/help/forms/using/chart-component-interactive-communications.md). |
+   | Gráfico | Agrega un gráfico que se puede usar en comunicaciones interactivas para la representación visual de datos bidimensionales recuperados de una colección de modelos de datos de formulario. Para obtener más información, consulte [Usar gráficos en comunicaciones interactivas](/help/forms/using/chart-component-interactive-communications.md). |
    | Fragmento de documento | Permite agregar un componente reutilizable, como texto, lista o condición, a una comunicación interactiva. El componente agregado puede estar basado en el modelo de datos de formulario o no. |
    | Imagen | Permite insertar una imagen. |
 

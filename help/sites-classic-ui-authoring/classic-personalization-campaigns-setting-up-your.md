@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
 source-wordcount: '2194'
 ht-degree: 0%
@@ -197,7 +197,7 @@ Para posibles clientes activos o desactivados:
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   AEM Al igual que con las páginas de, el estado de publicación se indica en la variable **Publicado** columna.
+   AEM Al igual que con las páginas de la lista de distribución, el estado de publicación se indica en la sección **Publicado** columna.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 

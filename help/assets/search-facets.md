@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 17%
+source-wordcount: '2411'
+ht-degree: 16%
 
 ---
 
@@ -113,7 +113,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 1. Haga clic en [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar Forms]**.
 1. Desde el **[!UICONTROL Buscar Forms]** página, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]**, luego haga clic en **[!UICONTROL Editar]**.
 1. En la página **[!UICONTROL Editar formulario de búsqueda]**, arrastre **[!UICONTROL Predicado de opciones]** desde la pestaña **[!UICONTROL Seleccionar predicado]** al panel principal.
-1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos en función de su formato, especifique un nombre descriptivo para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Indique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/dc:format.`
+1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos en función de su formato, especifique un nombre descriptivo para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Especifique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo, `jcr:content/metadata/dc:format.`
 1. Realice una de las siguientes acciones:
 
    * En el **[!UICONTROL Nombre de propiedad]** , mencione la ruta del archivo JSON donde define los nodos para las opciones y especifique los pares de clave-valor correspondientes.
@@ -172,9 +172,9 @@ De forma similar a la forma de agregar un predicado Propiedad o Opciones, puede 
 | [!UICONTROL Intervalo] | Predicado de búsqueda para buscar recursos que se encuentren dentro de un rango especificado. En el panel Buscar, puede especificar los valores mínimo y máximo del rango. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Intervalo de fechas] | Predicado de búsqueda para buscar recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización mediante selectores de fechas. | <ul><li>Etiqueta</li><li>Marcador de posición</li><li>Nombre de la propiedad</li><li>Texto de intervalo (desde)</li><li>Texto de intervalo (hasta)</li><li>Descripción</li></ul> |
 | [!UICONTROL Fecha] | Predicado de búsqueda para una búsqueda de recursos basada en un control deslizante y basada en una propiedad de fecha. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
-| [!UICONTROL Tamaño del archivo] | Predicado de búsqueda para buscar recursos en función de su tamaño. Es un predicado basado en deslizadores en el que se seleccionan las opciones del deslizador desde un nodo configurable. Las opciones predeterminadas se definen en /libs/dam/options/predicates/filesize en el repositorio CRXDE. El tamaño de archivo se proporciona en bytes. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta</li><li>Descripción</li></ul> |
+| [!UICONTROL Tamaño de archivo] | Predicado de búsqueda para buscar recursos en función de su tamaño. Es un predicado basado en deslizadores en el que se seleccionan las opciones del deslizador desde un nodo configurable. Las opciones predeterminadas se definen en /libs/dam/options/predicates/filesize en el repositorio CRXDE. El tamaño de archivo se proporciona en bytes. | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta</li><li>Descripción</li></ul> |
 | [!UICONTROL Última modificación del recurso] | Predicado de búsqueda para buscar recursos modificados recientemente | <ul><li>Nombre de la propiedad</li><li>Valor de propiedad</li><li>Descripción</li></ul> |
-| [!UICONTROL Estado de publicación] | Predicado de búsqueda para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
+| [!UICONTROL Estado de publicación] | Busque predicados para buscar recursos en función de su estado de publicación | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Clasificación] | Predicado de búsqueda para buscar recursos en función de su clasificación promedio | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Ruta de opción</li><li>Descripción</li></ul> |
 | [!UICONTROL Estado de caducidad] | Predicado de búsqueda para buscar recursos en función de su estado de caducidad | <ul><li>Etiqueta</li><li>Nombre de la propiedad</li><li>Descripción</li></ul> |
 | [!UICONTROL Oculto] | Predicado de búsqueda que define una propiedad de campo oculto para buscar recursos | <ul><li>Nombre de la propiedad</li><li>Valor de propiedad</li><li>Descripción</li></ul> |

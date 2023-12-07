@@ -1,19 +1,17 @@
 ---
 title: Incrustar Dynamic Media Video, el visualizador de imágenes o el visualizador dimensional en una página web
 description: Aprenda a incrustar vídeos, imágenes o imágenes 3D de Dynamic Media en una página web
-uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 21%
+source-wordcount: '383'
+ht-degree: 20%
 
 ---
 

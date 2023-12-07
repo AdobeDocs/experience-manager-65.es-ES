@@ -1,20 +1,18 @@
 ---
 title: Instalación del paquete de funciones 18912 para la migración masiva de recursos
 description: El paquete de funciones 18912 permite realizar ingestas masivas de recursos a través de FTP, o migrar recursos de Dynamic Media Classic a Dynamic Media en Adobe Experience Manager. Este paquete de funciones opcional está disponible en la asistencia para Adobes.
-uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 2%
+source-wordcount: '407'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +30,7 @@ El paquete de funciones 18912 permite la ingesta masiva de recursos directamente
 
 Antes de instalar el paquete de funciones, cree un usuario de servicio y proporcione esa información al servicio de asistencia de Adobe.
 
-Consulte también [Configuración de Dynamic Media: Modo Scene7](/help/assets/config-dms7.md).
+Consulte también [Configuración de Dynamic Media: modo Scene7](/help/assets/config-dms7.md).
 
 **Para instalar el paquete de funciones 18912 para la migración masiva de recursos:**
 

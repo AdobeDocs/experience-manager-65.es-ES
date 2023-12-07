@@ -1,18 +1,16 @@
 ---
 title: Prácticas recomendadas para optimizar la calidad de las imágenes en Dynamic Media
 description: Conozca las prácticas recomendadas para optimizar la calidad de la imagen en Dynamic Media
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -64,20 +62,19 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
       * **[!UICONTROL *cantidad *]**(0-5, intensidad del efecto.)
       * **[!UICONTROL *radio *]**(0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles.)
 
-      Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
+     Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
 
       * **[!UICONTROL *umbral *]**(0-255, sensibilidad del efecto.)
 
-             Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
-         
-         Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
+            Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
+        
+        Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
 
-         Tema de ayuda del Experience Manager sobre el enfoque de una imagen.
+        Tema de ayuda del Experience Manager sobre el enfoque de una imagen.
 
-         Documentación técnica sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+        Documentación técnica sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
       * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
-
 
 Se recomienda comenzar con el parámetro radio de la máscara de enfoque. Los ajustes de radio con los que puede empezar son los siguientes:
 
