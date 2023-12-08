@@ -7,10 +7,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 1630805be43ce9bb52a8fe1bbe50b2b934d4922c
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3984'
+ht-degree: 52%
 
 ---
 
@@ -120,7 +120,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 8 - 64bit</td>
+   <td>Azul Zulu OpenJDK 8 - 64 bits</td>
    <td>Z: No compatible</td>
    <td><p> </p> </td>
   </tr>
@@ -242,12 +242,12 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td><p><strong>Definiciones de parches compatibles</strong></p> </td>
   </tr>
   <tr>
-   <td>Servidor Oracle WebLogic 12.2.1 (12c R2) (Obsoleto)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Obsoleto) <sup>[9]</sup></td>
    <td>A: Compatible</td>
    <td>Service Pack y actualizaciones críticas</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c </td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A: Compatible</td>
    <td>Service Pack y actualizaciones críticas</td>
   </tr>
@@ -355,6 +355,9 @@ Tenga en cuenta las siguientes excepciones al elegir una plataforma para configu
 1. AEM Forms en JEE no admite el servidor de aplicaciones WebSphere® en CentOS.
 1. AEM Forms en JEE no es compatible con el control de acceso basado en roles JBoss® (RBAC).
 1. SDK de AEM Forms en Oracle JEE compatible con Java™ SE 11 (64 bits) solo para el servidor de aplicaciones JBoss® EAP 7.4.
+1. Las versiones de JDK superiores a 1.8.0_281 no son compatibles con el servidor WebLogic. (FORMS-8498)
+1. [!DNL Microsoft® Windows Server 2019] no admite [!DNL MySQL 5.7] y [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] no admite instalaciones llave en mano para [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
+
 
 Además, tenga en cuenta los siguientes puntos a la hora de elegir software para Adobe AEM Forms en implementaciones JEE:
 
@@ -476,7 +479,7 @@ Además,:
 - PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) para realizar la conversión.
 - PDF Generator solo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
 - PDF Generator no admite Microsoft® Office 365.
-- Las conversiones del generador de PDF para OpenOffice solo son compatibles con Windows y Linux®.
+- Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux®.
 - Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
 - Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para usarlo con el generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 - El servicio de PDF Generator no es compatible con Microsoft® Windows 10.

@@ -3,10 +3,10 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '3552'
-ht-degree: 2%
+source-wordcount: '4233'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 | -------- | ---------------------------- |
 | Versión | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versión del paquete de servicio |
-| Fecha | Jueves, 30 de noviembre de 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Fecha | Jueves, 7 de diciembre de 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Descargar URL | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.19.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## ¿Qué incluye? [!DNL Experience Manager] 6.5.19.0 {#what-is-included-in-aem-6519}
@@ -38,12 +38,30 @@ ht-degree: 2%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-**Funciones principales y mejoras**
+## Funciones principales y mejoras
 
 Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 * Se habilitó al usuario del Editor de páginas de sitios/Componente de imagen para hacer referencia a los recursos desde el Cloud Service de recursos remoto. (SITES-13448, SITES-13433)
 * AEM Ahora admite la ordenación del lado del servidor para una navegación más rápida por el proyecto en la vista de lista. Los nodos de proyecto se ordenan según la columna seleccionada por el usuario antes de aparecer en la interfaz.
+
+### [!DNL Forms]
+
+* **Nuevos componentes principales de formulario adaptable**: Se agregan pestañas verticales, Términos y condiciones y Casilla de verificación para mejorar la escalabilidad de los formularios.
+   * **[Componente Casilla](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: el Forms adaptable basado en componentes principales ahora puede incluir un componente de casilla de verificación. Permite a los usuarios realizar elecciones binarias, seleccionando o anulando la selección de una opción en particular. Normalmente aparece como un pequeño cuadro en el que se puede hacer clic o pulsar para alternar entre dos estados: activado y desactivado. La casilla de verificación es un elemento de formulario común que se utiliza para presentar una opción sí/no o verdadero/falso.
+
+   * **[Componente Términos y condiciones](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adaptable basado en componentes principales ahora puede incluir un componente Términos y condiciones. Permite a los autores de formularios introducir una sección específica dentro del formulario en la que se presentan a los usuarios los términos, condiciones o acuerdos legales asociados al uso de un servicio, producto o plataforma. Este componente está diseñado para informar a los usuarios sobre las reglas, regulaciones y obligaciones que aceptan enviando el formulario.
+
+     ![Pestañas verticales, términos y condiciones y componentes de casilla de verificación](/help/forms/using/assets/forms-components.png)
+
+   * **[Componente de pestañas verticales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adaptable basado en componentes principales ahora puede organizar el contenido del formulario en una lista vertical de pestañas, lo que proporciona un diseño estructurado y navegable. El uso de pestañas verticales en un formulario puede mejorar la experiencia general del usuario al simplificar la navegación y mejorar la organización del contenido del formulario, especialmente en situaciones en que un formulario contiene varias secciones o información compleja.
+
+* **[Versión de 64 bits de AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: la versión de 64 bits de AEM Forms Designer ofrece un rendimiento, una escalabilidad y una administración de memoria mejorados para potenciar su experiencia de creación de formularios. Con la arquitectura de 64 bits, puede abordar proyectos aún más grandes y complejos con facilidad, lo que garantiza flujos de trabajo de diseño sin problemas y eficiencia optimizada. Aumente sus capacidades de diseño de formularios y disfrute del futuro de AEM Forms Designer con esta versión de vanguardia.
+
+* **[Conectar un Forms adaptable con Microsoft® SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**: AEM Forms proporciona una integración OOTB para enviar datos de formulario directamente a la lista de SharePoint, lo que le permite utilizar las capacidades de Listas de SharePoint. Puede configurar la lista de Microsoft SharePoint como fuente de datos para un modelo de datos de formulario y utilizar la acción de envío Enviar mediante el modelo de datos de formulario para conectar un formulario adaptable con una lista de SharePoint.
+
+* **[Compatibilidad para configurar las propiedades del documento de registro para los fragmentos de formulario adaptable](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Ahora puede personalizar fácilmente los fragmentos del formulario adaptable y sus campos en el editor de formularios adaptables.
+
 
 **Función obsoleta**
 
@@ -149,9 +167,11 @@ hasta
 
 ### [!DNL Forms]{#forms-6519}
 
-Correcciones en [!DNL Experience Manager] Forms se entregan mediante un paquete de complementos independiente una semana después de lo programado [!DNL Experience Manager] Fecha de lanzamiento del paquete de servicio. AEM En este caso, el lanzamiento del paquete de complementos de Forms de la versión 6.5.19.0 está programado para el jueves, 30 de noviembre de 2023. Se agregaría una lista de correcciones y mejoras de Forms a esta sección después de la versión.
+#### [!DNL Adaptive Forms]
 
-* Agregar la lista de control de acceso para `fd-cloudservice` para poder leer o actualizar las configuraciones de Microsoft® en `cloudconfigs/microsoftoffice`. (FORMS-11142)
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.19.0 Forms add-on package release is scheduled for Thursday, November 30, 2023. A list of Forms fixes and enhancements would be added to this section post the release.-->
+
+<!--* Adding Access Control List for `fd-cloudservice` user to be able to read or update the Microsoft&reg; configurations under `cloudconfigs/microsoftoffice`. (FORMS-11142) -->
 
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
@@ -166,6 +186,32 @@ Correcciones en [!DNL Experience Manager] Forms se entregan mediante un paquete 
 <!--### Commerce{#commerce-6519}
 
 * A -->
+
+* Cuando un usuario agrega una barra de herramientas al formulario adaptable, la etiqueta del contenedor de formularios muestra un comportamiento errático porque no cambia al idioma preferido que el autor seleccionó para Forms. (FORMS-11371)
+* En AEM Forms Workspace, el campo desplegable selecciona la primera opción de forma predeterminada en la interfaz de usuario. (FORMS-11346)
+* AEM La configuración de idioma en la no muestra ningún efecto si utiliza configuraciones regionales con cinco caracteres y el separador decimal no se representa correctamente en la carta. (FORMS-11344)
+* Cuando un usuario genera la salida XML mediante el proceso de Workbench, se produce un error en algunos de los archivos. (FORMS-11314)
+* Cuando un usuario genera una vista previa del documento de registro (DOR) en idiomas distintos del inglés, no funciona. (FORMS-11106)
+* Cuando un usuario convierte algunos archivos de imagen con PDFG en una instancia OSGI basada en Linux con JDK11, no convierte. (FORMS-11105)
+* Cuando el usuario instala el complemento de AEM Forms, se rompe el panel de árbol de contenido en AEM Sites. (FORMS-10912)
+* Cuando un usuario copia fechas utilizando el lector de pantalla NVDA del componente Selector de fechas, no se lee correctamente. (FORMS-10805) 
+* En el editor de reglas de Forms, el usuario no puede establecer el valor del botón de opción/casilla de verificación cuando el tipo de valor de datos es booleano. (FORMS-10713)
+* Cuando un usuario agrega elementos agregados en un formulario adaptable, se agrega en orden inverso a una lista desplegable. (FORMS-10456)
+* Cuando se borra una lista desplegable con el editor de reglas, el primer valor proporcionado sigue apareciendo aunque el valor se haya borrado. (FORMS-9963) 
+* Los usuarios no pueden acceder al título del formulario con lectores de pantalla como NVDA. (FORMS-8815) 
+* Los usuarios no pueden acceder a los subtítulos en un formulario mediante lectores de pantalla como NVDA. (FORMS-8814) 
+* En el origen de página del formulario HTML, el atributo de clave de acceso está vacío y no funciona. (FORMS-5753) 
+* En el cuadro de diálogo Acerca de Workspace, el texto &quot;Adobe Experience Manager - Forms&quot; se presenta como texto. (FORMS-5748)
+
+#### [!DNL Forms Designer]{#forms-designer-6519}
+
+* Cuando un usuario intenta leer PDF forms no interactivos a través de lectores de pantalla, algunos elementos de la lista no se leen ni omiten. (LC-3921645) 
+* Cuando un usuario desplaza por los campos editables, no se desplaza a todos los campos de formulario del PDF de forma coherente. (LC-3921631) 
+* El orden de las etiquetas se cambia aleatoriamente en el PDF, incluso si el etiquetado en Forms Designer es correcto. (LC-3921313) 
+* Una lista no se muestra correctamente en las etiquetas de Adobe Acrobat Reader o Adobe Acrobat DC. (LC-3921306)
+* Los niveles de encabezado asignados correctamente en Forms Designer se cambian aleatoriamente a `<P>` en Adobe Acrobat. (LC-3921305) 
+* En una tabla, el ID de cualquier objeto no se puede modificar una vez asignado. (LC-3921134) 
+* Si las celdas combinadas están en la tabla, no hay ninguna interfaz gráfica de usuario disponible para establecer el intervalo (fila y columna) y el ámbito en una tabla compleja en AEM Forms Designer. (LC-3919532) 
 
 ### Foundation{#foundation-6519}
 
@@ -418,8 +464,6 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
 #### Plataformas compatibles
 
-* Las versiones de JDK superiores a 1.8.0_281 no son compatibles con el servidor JEE de WebLogic. (FORMS-8498, CQDOC-20383)
-* Como [!DNL Microsoft® Windows Server 2019] no admite [!DNL MySQL 5.7] y [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] no admite instalaciones llave en mano para [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * No se admite JDK 11.0.20 para instalar AEM Forms en el instalador JEE. Solo se admite JDK 11.0.19 o versiones anteriores para instalar AEM Forms en el instalador JEE. (FORMS-10659)
 
 #### Instalación
@@ -467,13 +511,10 @@ Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standa
 
 * Cuando se publica un formulario adaptable, todas sus dependencias, incluidas las directivas, se vuelven a publicar, aunque no se hayan realizado modificaciones en ellas. (FORMS-10454)
 * Cuando un usuario selecciona configurar un campo por primera vez en un formulario adaptable, la opción para guardar una configuración no se muestra en el Explorador de propiedades. El problema se resuelve seleccionando la configuración de otro campo del formulario adaptable en el mismo editor.
-* Cuando se establece una URL de redireccionamiento en el contenedor de guía de un formulario adaptable, la firma en línea deja de funcionar. (FORMS-10493) Para resolver el problema, descargue e instale el [revisión para 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
-* No se pueden publicar todas las plantillas de documento de registro (DoR). Solo se publican las plantillas de DoR basadas en la configuración regional en inglés y sus plantillas de DoR asociadas basadas en Forms. (FORMS-10535) Para resolver el problema, descargue e instale el [revisión para 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Cuando los usuarios realizan la acción de envío, el envío falla con un error:
+  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Para resolver el problema, [Volver a compilar los scripts de Sling como JSP, Java y Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
-
-#### Comunicaciones interactivas
-
-* AEM Después de actualizar al paquete de servicio 18 de, no es posible abrir la comunicación interactiva con imágenes en línea grandes en el modo de edición. (FORMS-10578) Para resolver el problema, instale el [revisión para 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 

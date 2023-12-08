@@ -4,10 +4,10 @@ description: Instale AEM Forms Document Services para crear, ensamblar, distr
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '5499'
-ht-degree: 89%
+source-wordcount: '5599'
+ht-degree: 87%
 
 ---
 
@@ -556,6 +556,16 @@ El servicio Assembler depende del servicio Extensiones de Reader, del servicio S
   </tr>
  </tbody>
 </table>
+
+### (Solo Windows) Configure la entrada del Registro para Microsoft® Project {#configure-registry-entry-for-microsoft-project}
+
+Después de instalar el complemento de AEM Forms y el proyecto Microsoft® en el equipo, registre una entrada para Microsoft® Project en la ubicación de 64 bits. Facilita la ejecución de pruebas de conversión de Project a PDFG. A continuación se indican los pasos que describen el proceso de entrada del Registro:
+
+1. Abra el Editor del Registro de Microsoft® Windows (regedit), Para abrir el Editor del Registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en Aceptar.
+1. Vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`y cree un nuevo **Valor binario** y cambie el nombre a **Proyecto**.
+1. Modifique el valor de datos del Registro binario creado a 01 y haga clic en Aceptar.
+1. Cierre la entrada del Registro.
+
 
 ## Problemas y limitaciones conocidos {#known-issues-and-troubleshooting}
 

@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: ab40115c373cc06a7600494288b2670deb914e1a
+source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
 workflow-type: tm+mt
-source-wordcount: '2291'
-ht-degree: 90%
+source-wordcount: '2359'
+ht-degree: 86%
 
 ---
 
@@ -164,6 +164,10 @@ Puede crear fragmentos de formulario adaptable anidados, lo que significa que pu
 ### Cambiar fragmentos {#change-fragments}
 
 Puede reemplazar o cambiar un fragmento de formulario adaptable por otro mediante la propiedad **Seleccionar recurso de fragmento** en el cuadro de diálogo Editar componente para un panel de fragmento de formulario adaptable.
+
+### Generar documento de registro para el fragmento de formulario adaptable {#generate-DOR-for-fragments}
+
+El documento de registro (DOR) le ayuda a mantener la información de los formularios en formato impreso o de documento. Por lo tanto, le ayuda a realizar un seguimiento de la información sobre sus clientes en cualquier momento posterior y también puede utilizar el documento de registro para archivar formularios y contenido en formato PDF. [Obtenga información sobre cómo generar el documento de registro para los fragmentos de formulario adaptable](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Usar un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
 
