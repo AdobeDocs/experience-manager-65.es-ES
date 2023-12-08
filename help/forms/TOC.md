@@ -9,9 +9,9 @@ breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
 feature: Forms Service
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: cf5da092fabbc7834108dc54d65eb97e160984ce
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3752'
 ht-degree: 96%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 96%
 + Formularios adaptables: creación básica {#adaptive-forms-basic-authoring}
    + [Prácticas recomendadas para usar formularios adaptables ](using/adaptive-forms-best-practices.md)
    + [Crear un formulario adaptable](using/creating-adaptive-form.md)
-   + [Crear o agregar un formulario adaptable mediante la página de AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+   + [Crear o agregar un formulario adaptable a una página de AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Fragmentos de formularios adaptables](using/adaptive-form-fragments.md)
    + [Configurar la acción de envío](using/configuring-submit-actions.md)
    + [Usar CAPTCHA en formularios adaptables](using/captcha-adaptive-forms.md)
@@ -579,7 +579,7 @@ ht-degree: 96%
    + Servicio de información del sistema {#system-information-service}
       + [Configurar el servicio de información del sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API del servicio de información del sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Informes de procesos  {#process-reporting}
++ Informes de procesos {#process-reporting}
    + [Introducción a la creación de informes de procesos](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introducción a la creación de informes de procesos](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funcionamiento de los informes de procesos](/help/forms/using/process-reporting/process-reporting-architecture.md)
@@ -705,4 +705,5 @@ ht-degree: 96%
    + [Configurar y solucionar problemas de AEM Forms en un clúster de servidores JEE](developing/configure-server-cluster.md)
    + [Generar y trabajar con hash en formularios PDF dinámicos](developing/hashing-forms.md)
    + [Pasar credenciales mediante encabezados WS-Security](developing/passing-credentials.md)
+   + [No se puede usar el servicio Output, el servicio Forms o el servicio Documento de registro (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
 
