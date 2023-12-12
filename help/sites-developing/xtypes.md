@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 25c444e2093d118259925034e0d630ab0effc473
 workflow-type: tm+mt
-source-wordcount: '6381'
+source-wordcount: '3865'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   Clase base para cualquier [Componente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component) que se debe dimensionar como una caja, usando anchura y altura.
 
-  BoxComponent proporciona ajustes automáticos del modelo de cuadro para el tamaño y la posición y funcionará correctamente dentro del modelo de representación de componentes.
+  BoxComponent proporciona ajustes automáticos del modelo de cuadro para el tamaño y la posición y funciona correctamente dentro del modelo de representación de componentes.
 
 * browsedialog
 
@@ -251,7 +251,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  CustomContentPanel es un tipo especial de panel que se utiliza en [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): su contenido se recupera y se envía a una dirección URL diferente a la de los demás campos del cuadro de diálogo.
+  CustomContentPanel es un panel especial para utilizarlo en [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): su contenido se recupera y se envía a una dirección URL diferente a la de los demás campos del cuadro de diálogo.
 
 * ciclo
 
@@ -293,7 +293,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  El cuadro de diálogo es un tipo especial de ventana con un formulario en el cuerpo y un grupo de botones en el pie de página. Normalmente se utiliza para editar contenido, pero también puede mostrar solo información.
+  El cuadro de diálogo es una ventana especial con un formulario en el cuerpo y un grupo de botones en el pie de página. Normalmente se utiliza para editar contenido, pero también puede mostrar solo información.
 
 * dialogfieldset
 
@@ -413,7 +413,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Proporciona un componente ligero de Editor de HTML. Safari no admite algunas funciones de la barra de herramientas, por lo que se ocultarán automáticamente cuando sea necesario. Se indican en las opciones de configuración cuando corresponde.
+  Proporciona un componente ligero de Editor de HTML. Safari no admite algunas funciones de la barra de herramientas, por lo que se ocultan automáticamente cuando es necesario. Se indican en las opciones de configuración cuando corresponde.
 
   Los botones de la barra de herramientas del editor tienen la información de objeto definida en la variable [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) propiedad.
 
@@ -463,7 +463,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView es una implementación rápida y ligera de un [Cuadrícula](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) como vista.
+  CQ.Ext.list.ListView es una implementación rápida y ligera de un [Parecido a una cuadrícula](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) vista.
 
 * livecopyproperties
 
@@ -793,7 +793,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-  Las Estadísticas muestran las impresiones de la página como un gráfico. El widget permite seleccionar un periodo, las estadísticas deben mostrarse para.
+  Las Estadísticas muestran las impresiones de la página como un gráfico. El widget permite seleccionar un periodo para el cual se deben mostrar las estadísticas.
 
 * almacenar
 
