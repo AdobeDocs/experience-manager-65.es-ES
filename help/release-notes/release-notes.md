@@ -3,7 +3,7 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 1c3df6ea88f1dfbab5d9df2dcd4907e72829287a
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
 source-wordcount: '4232'
 ht-degree: 1%
@@ -63,7 +63,6 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * **[Compatibilidad para configurar las propiedades del documento de registro para los fragmentos de formulario adaptable](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**: Ahora puede personalizar fácilmente los fragmentos del formulario adaptable y sus campos en el editor de formularios adaptables.
 
 * **XMLFM de 64 bits**: la iteración de 64 bits de XMLFM introduce un rendimiento, una escalabilidad y una administración de memoria mejorados. Es el primer servicio nativo de 64 bits implementado en el lado del servidor. Al aprovechar su capacidad inherente para acceder a recursos de memoria significativamente mayores en comparación con su homólogo de 32 bits, XMLFM de 64 bits permite la gestión perfecta de cargas de trabajo de procesamiento más grandes. Este hito no solo representa un salto en el rendimiento, sino que también introduce mejoras clave en el marco de servicio nativo dentro del servidor de AEM Forms. Esta actualización equipa al servidor de AEM Forms para admitir sin problemas cualquier servicio nativo de 64 bits.
-
 
 **Función obsoleta**
 

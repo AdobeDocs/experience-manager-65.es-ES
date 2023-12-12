@@ -5,9 +5,9 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '637'
 ht-degree: 3%
 
 ---
@@ -49,6 +49,11 @@ AEM Forms proporciona una integración OOTB para [enviar datos de formulario dir
 #### Compatibilidad para configurar las propiedades del documento de registro para los fragmentos de formulario adaptable
 
 Ahora puede [personalizar los fragmentos del formulario adaptable y sus campos en el editor de formularios adaptables](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+
+#### Incluye la versión de 64 bits de XMLFM
+
+La iteración de 64 bits de XMLFM presenta un rendimiento, escalabilidad y administración de memoria mejorados. Es el primer servicio nativo de 64 bits implementado en el lado del servidor. Al aprovechar su capacidad inherente para acceder a recursos de memoria significativamente mayores en comparación con su homólogo de 32 bits, XMLFM de 64 bits permite la gestión perfecta de cargas de trabajo de procesamiento más grandes. Este hito no solo representa un salto en el rendimiento, sino que también introduce mejoras clave en el marco de servicio nativo dentro del servidor de AEM Forms. Esta actualización equipa al servidor de AEM Forms para admitir sin problemas cualquier servicio nativo de 64 bits.
+
 
 
 ## Correcciones de errores
