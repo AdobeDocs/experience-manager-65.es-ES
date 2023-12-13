@@ -3,9 +3,9 @@ title: Requisitos técnicos
 description: Una lista de las plataformas de cliente y servidor compatibles con Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3624'
 ht-degree: 12%
 
 ---
@@ -44,7 +44,7 @@ Para obtener más información, consulte la [Directrices de tamaño de hardware]
 
 ### Niveles de soporte {#support-levels}
 
-Este documento enumera las plataformas de cliente y servidor admitidas para Adobe Experience Manager. Adobe Systems proporciona varios niveles de soporte, tanto para las configuraciones recomendadas como para otras configuraciones.
+Este documento enumera las plataformas de cliente y servidor admitidas para Adobe Experience Manager. El Adobe de proporciona varios niveles de compatibilidad, tanto para las configuraciones recomendadas como para otras configuraciones.
 
 ### Configuraciones admitidas {#supported-configurations}
 
@@ -112,8 +112,8 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | **Plataforma** | **Descripción** | **Nivel de soporte** |
 |---|---|---|
 | **Sistema de archivos con archivos TAR** `[1]` | Repositorio | A: Compatible |
-| **Archivo sistema con Datastore** `[1]` | Binarios | A: Compatible |
-| Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
+| **Sistema de archivos con almacén de datos** `[1]` | Binarios | A: Compatible |
+| Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con producción |
 | Amazon S3 | Binarios | A: Compatible |
 | Microsoft® Azure Blob Storage | Binarios | A: Compatible |
 | MongoDB Enterprise 4.4 | Repositorio | A: Compatible `[2, 3, 4]` |
@@ -164,7 +164,7 @@ Para ejecutar AEM 6.5 con una base de datos relacional compatible, se requiere u
 
 ### Motores de servlets/Servidores de aplicaciones {#servlet-engines-application-servers}
 
-Adobe Experience Manager se puede ejecutar como servidor independiente (el archivo JAR de inicio rápido) o como aplicación web dentro de un servidor de aplicaciones de terceros (el archivo WAR).
+Adobe Experience Manager puede ejecutarse como un servidor independiente (el archivo JAR de inicio rápido) o como un aplicación web dentro de un servidor terceros aplicación (el archivo WAR).
 
 La versión mínima de la API de servlet requerida es Servlet 3.1
 
@@ -203,8 +203,9 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 1. AEM Forms es compatible con Ubuntu 20.04 LTS.
 1. Distribución Linux® compatible con Adobe Managed Services.
 
-   >[¡NOTA!]
-Para el servidor basado en Linux (pila OSGI y JEE), el complemento de AEM Forms requiere dependencias de tiempo de ejecución como:
+   >[!NOTE]
+   >
+   Para el servidor basado en Linux (pila OSGI y JEE), el complemento de AEM Forms requiere dependencias de tiempo de ejecución como:
    * glibc.x86_64 (2.17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
@@ -217,7 +218,7 @@ Para el servidor basado en Linux (pila OSGI y JEE), el complemento de AEM Forms 
 
 >[!NOTE]
 >
-Si va a instalar AEM Forms 6.5, asegúrese de que ha instalado el siguiente Microsoft® Visual C++ de 32 bits redistribuible.
+Si va a instalar AEM Forms 6.5, asegúrese de que ha instalado el siguiente redistribuible de Microsoft® Visual C++ de 32 bits.
 >
 * Microsoft® Visual C++ 2008 redistribuible
 * Microsoft® Visual C++ 2010 redistribuible
@@ -250,9 +251,9 @@ Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatche
 | Microsoft® IIS 10 (Internet Information Server) | A: Compatible |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: No compatible |
 
-1. Los servidores web construidos en base al código fuente httpd de Apache tienen tanto soporte como la versión de httpd en la que se basa. En caso de duda, pida al Adobe que confirme el nivel de asistencia relacionado con el producto del servidor correspondiente. Los siguientes casos:
+1. Los servidores web construidos en base al código fuente httpd de Apache tienen tanto soporte como la versión de httpd en la que se basa. En caso de duda, solicite a Adobe Systems confirmación del nivel de soporte relacionado con el producto servidor correspondiente. Los siguientes casos:
 
-   1. El servidor HTTP se creó utilizando solo distribuciones de código fuente oficiales de Apache, o
+   1. El servidor HTTP se creó utilizando solo distribuciones de origen oficiales de Apache, o
    1. El servidor HTTP se entregó como parte del sistema operativo en el que se ejecuta. Ejemplos: IBM® HTTP Server, Oracle HTTP Server
 
 1. Dispatcher no está disponible para Apache 2.4.x para sistemas operativos Windows.
@@ -367,7 +368,7 @@ Cuando se debe especificar una dirección IP, puede seleccionar (según sea nece
 
 ### Requisitos para AEM Dynamic Media añadir-on {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media está desactivado de forma predeterminada. Consulte aquí para [habilitar Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+AEM Dynamic Media está deshabilitado de forma predeterminada. Consulte aquí para [habilitar Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 Con Dynamic Media habilitado, se aplican los siguientes requisitos técnicos adicionales.
 
