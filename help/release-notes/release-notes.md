@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4270'
 ht-degree: 1%
 
 ---
@@ -212,7 +212,8 @@ hasta
 * Una lista no se muestra correctamente en las etiquetas de Adobe Acrobat Reader o Adobe Acrobat DC. (LC-3921306)
 * Los niveles de encabezado asignados correctamente en Forms Designer se cambian aleatoriamente a `<P>` en Adobe Acrobat. (LC-3921305) 
 * En una tabla, el ID de cualquier objeto no se puede modificar una vez asignado. (LC-3921134) 
-* Si las celdas combinadas están en la tabla, no hay ninguna interfaz gráfica de usuario disponible para establecer el intervalo (fila y columna) y el ámbito en una tabla compleja en AEM Forms Designer. (LC-3919532) 
+* Si las celdas combinadas están en la tabla, no hay ninguna interfaz gráfica de usuario disponible para establecer el intervalo (fila y columna) y el ámbito en una tabla compleja en AEM Forms Designer. (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -517,8 +518,9 @@ Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standa
 * Cuando se publica un formulario adaptable, todas sus dependencias, incluidas las directivas, se vuelven a publicar, aunque no se hayan realizado modificaciones en ellas. (FORMS-10454)
 * Cuando un usuario selecciona configurar un campo por primera vez en un formulario adaptable, la opción para guardar una configuración no se muestra en el Explorador de propiedades. El problema se resuelve seleccionando la configuración de otro campo del formulario adaptable en el mismo editor.
 * Cuando los usuarios realizan la acción de envío, el envío falla con un error:
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Para resolver el problema, [Volver a compilar los scripts de Sling como JSP, Java™ y Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+Para resolver el problema, [Volver a compilar los scripts de Sling como JSP, Java y Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* Cuando un usuario intenta seleccionar una fuente para sus documentos de PDF en Adminui en la ruta Inicio > Servicios > PDF Generator > Configuración de Adobe PDF, la lista de fuentes se muestra vacía. El usuario no puede añadir fuentes a las listas &quot;Incrustar siempre&quot; y &quot;No incrustar nunca&quot;. (FORMS-12095)
 
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
