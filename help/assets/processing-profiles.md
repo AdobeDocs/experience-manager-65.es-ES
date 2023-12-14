@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bf6566bb9e3e77924b89b31fc2ef4a59545a66da
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Al utilizar estrategias de nomenclatura de archivos y carpetas coherentes y adec
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de procesamiento existente cambiado a posteriori.
 
-Por ejemplo, supongamos que ha creado un perfil de imagen y lo ha asignado a una carpeta. Cualquier recurso de imagen que haya cargado en la carpeta tenía automáticamente el perfil de imagen aplicado a los recursos. Sin embargo, más adelante decide añadir una nueva proporción de recorte inteligente al perfil. Ahora, en lugar de tener que seleccionar y volver a cargar los recursos en la carpeta de nuevo, simplemente ejecute el *Scene7: Volver a procesar recursos* flujo de trabajo.
+Por ejemplo, supongamos que ha creado un perfil de imagen y lo ha asignado a una carpeta. Cualquier recurso de imagen que haya cargado en la carpeta tenía automáticamente el perfil de imagen aplicado a los recursos. Sin embargo, más adelante decide añadir una nueva proporción de recorte inteligente al perfil. Ahora, en lugar de tener que seleccionar y volver a cargar los recursos en la carpeta de nuevo, simplemente ejecute el *Reprocesar Dynamic Media* <!-- *Scene7: Reprocess Assets* --> flujo de trabajo.
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso en el que se haya producido un error de procesamiento por primera vez. De este modo, aunque no haya editado un perfil de procesamiento ni aplicado un perfil de procesamiento, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
@@ -61,11 +61,11 @@ Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#
 >
 >El agente de publicación de migración debe estar desactivado en el servidor de Dynamic Media para que el flujo de trabajo de nuevo procesamiento funcione según lo esperado.
 
-<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
+<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **Para volver a procesar recursos en una carpeta:**
 
-1. En Experience Manager, en la página Recursos, vaya a una carpeta de recursos que tenga un perfil de procesamiento asignado y al que desee aplicar la variable **[!UICONTROL Scene7: volver a procesar recursos]** flujo de trabajo,
+1. En Experience Manager, en la página Recursos, vaya a una carpeta de recursos que tenga un perfil de procesamiento asignado y al que desee aplicar la variable **[!UICONTROL Reprocesar Dynamic Media]** flujo de trabajo,
 
    Las carpetas que ya tienen un perfil de procesamiento asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta en la vista de tarjeta.
 
@@ -81,7 +81,7 @@ Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#
    ![Flujo de trabajo de reprocesamiento de recursos 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Seleccionar **[!UICONTROL Iniciar flujo de trabajo]**.
-1. Desde el **[!UICONTROL Iniciar flujo de trabajo]** lista desplegable, elija **[!UICONTROL Scene7: Volver a procesar recursos]**.
+1. Desde el **[!UICONTROL Iniciar flujo de trabajo]** lista desplegable, elija **[!UICONTROL Reprocesar Dynamic Media]**.
 1. (Opcional) En el **Introducir título de flujo de trabajo** , introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
    ![Volver a procesar recursos 2](/help/assets/assets/reprocess-assets2.png)
@@ -97,12 +97,12 @@ Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#
 **Para ajustar de forma opcional el tamaño del lote del flujo de trabajo de reprocesamiento:**
 
 1. En Experience Manager, seleccione **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global, seleccione **[!UICONTROL Herramientas]** Icono de (martillo) > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar recursos]**.
+1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Reprocesar Dynamic Media]**.
 
-   ![Página Modelos de flujo de trabajo con Scene7: Flujo de trabajo de reprocesamiento de recursos seleccionado en la vista de tarjeta](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Página Modelos de flujo de trabajo con flujo de trabajo de reprocesamiento de Dynamic Media seleccionado en Vista de tarjeta](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**. Se abre una nueva pestaña del explorador en la página del modelo de flujo de trabajo Scene7: Reprocesar recursos.
-1. En la página de flujo de trabajo Scene7: Reprocesar recursos, cerca de la esquina superior derecha, seleccione **[!UICONTROL Editar]** para desbloquear el flujo de trabajo.
+1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**. Una nueva pestaña del explorador abre la página Modelo de flujo de trabajo de reprocesamiento de Dynamic Media.
+1. En la página Flujo de trabajo de nuevo procesamiento de Dynamic Media, cerca de la esquina superior derecha, seleccione **[!UICONTROL Editar]** para desbloquear el flujo de trabajo.
 1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, seleccione **[!UICONTROL Configurar]** en la barra de herramientas.
 
    ![Componente Carga por lotes de Scene7](/help/assets/assets-dm/reprocess-assets8.png)
@@ -119,11 +119,11 @@ Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#
 
 1. En la esquina superior derecha de la **[!UICONTROL Carga de lotes en Scene7 - Propiedades de la etapa]** , seleccione **[!UICONTROL Listo]**.
 
-1. En la esquina superior derecha de la página Scene7: modelo de flujo de trabajo Reprocesar recursos, seleccione **[!UICONTROL Sincronización]**. Cuando vea **[!UICONTROL Sincronizado]** Sin embargo, el modelo de tiempo de ejecución del flujo de trabajo se ha sincronizado correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha de la página Modelo de flujo de trabajo de reprocesamiento de Dynamic Media, seleccione **[!UICONTROL Sincronización]**. Cuando vea **[!UICONTROL Sincronizado]** Sin embargo, el modelo de tiempo de ejecución del flujo de trabajo se ha sincronizado correctamente y está listo para volver a procesar los recursos en una carpeta.
 
    ![Sincronizar el modelo de flujo de trabajo](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Cierre la pestaña del explorador que muestra el modelo de flujo de trabajo Scene7: Reprocesar recursos.
+1. Cierre la pestaña del explorador que muestra el modelo de flujo de trabajo Reprocesar de Dynamic Media.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
@@ -143,4 +143,4 @@ Consulte [Ajustar el tamaño del lote del flujo de trabajo de reprocesamiento](#
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
