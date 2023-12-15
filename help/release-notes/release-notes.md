@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
+source-git-commit: e67d7aa9ab1dd00daad3518904bded258e31128c
 workflow-type: tm+mt
-source-wordcount: '4259'
+source-wordcount: '4288'
 ht-degree: 1%
 
 ---
@@ -213,7 +213,8 @@ hasta
 * Los niveles de encabezado asignados correctamente en Forms Designer se cambian aleatoriamente a `<P>` en Adobe Acrobat. (LC-3921305) 
 * En una tabla, el ID de cualquier objeto no se puede modificar una vez asignado. (LC-3921134) 
 * Si las celdas combinadas están en la tabla, no hay ninguna interfaz gráfica de usuario disponible para establecer el intervalo (fila y columna) y el ámbito en una tabla compleja en AEM Forms Designer. (LC-3919532)
-  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
+* Cuando un usuario intenta generar documentos de PDF después de instalar el paquete de complementos de formularios en AEM Forms Service Pack 6.5.15.0, se produce un error intermitente y se muestra el siguiente error:
+   * `OutputServiceException AEM_OUT_001_003:Unexpected Exception: 0 Out of Memory Caused by: org.omg.CORBA.COMM_FAILURE: null` (LC-3921530)
 
 ### Foundation{#foundation-6519}
 
