@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 9f88eeb6770c59f7a52db30f19f3a1a78cbc401b
+source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
 workflow-type: tm+mt
-source-wordcount: '2581'
-ht-degree: 91%
+source-wordcount: '2580'
+ht-degree: 90%
 
 ---
 
@@ -169,14 +169,14 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 
 ## Enviar a la lista de Microsoft® SharePoint{#submit-to-sharedrive}
 
-La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado.
+El **[!UICONTROL Enviar a SharePoint]** La acción de envío conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado.
 
 ### Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Para usar la variable [!UICONTROL Enviar a la lista de SharePoint] Enviar acción en un formulario adaptable:
+Para conectar un formulario adaptable a la lista de Microsoft® SharePoint:
 
 1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms al almacenamiento de listas de SharePoint de Microsoft®.
-1. [Uso del envío mediante el modelo de datos de formulario en un formulario adaptable](#use-submit-using-fdm): conecta el formulario adaptable al Microsoft® SharePoint configurado.
+1. [Utilice el **Enviar mediante modelo de datos de formulario** enviar acción en un formulario adaptable](#use-submit-using-fdm): envía los datos del formulario adaptable al Microsoft® SharePoint configurado.
 
 #### Crear una configuración de lista de SharePoint {#create-sharepoint-list-configuration}
 
