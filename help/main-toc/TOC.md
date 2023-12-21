@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
+source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
 workflow-type: tm+mt
 source-wordcount: '7328'
 ht-degree: 68%
@@ -260,7 +260,7 @@ ht-degree: 68%
          + [Prácticas recomendadas de traducción](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
          + [Prácticas recomendadas de MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites: Preparación para el RGPD](/help/sites-administering/gdpr-compliance-sites.md)
-         + [AEM Gestión de solicitudes de RGPD para la Fundación de la](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/security/handling-gdpr-requests-for-aem-platform.html)
+         + [AEM Gestión de solicitudes de RGPD para la Fundación de la](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Comercio de - Preparación para el RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
       + Gestión de contenido {#contentmanagement}
          + [El administrador de paquetes](/help/sites-administering/package-manager.md)
@@ -1359,21 +1359,21 @@ ht-degree: 68%
          + [Sin encabezado y AEM](/help/sites-developing/headless/introduction.md)
          + Recorridos sin encabezado {#journeys}
             + Recorrido sin encabezado para desarrolladores {#developer}
-               + [AEM Comprender el sin encabezado en las](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/overview.html)
-               + [Obtenga información acerca del desarrollo sin encabezado de CMS](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/learn-about.html)
-               + [Introducción a AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/getting-started.html)
-               + [Ruta hacia la primera experiencia al usar AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/path-to-first-experience.html)
-               + [AEM Cómo modelar el contenido como modelos de contenido de](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/model-your-content.html)
-               + [Cómo acceder al contenido a través de las API de entrega de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/access-your-content.html)
-               + [Actualización del contenido mediante las API de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/update-your-content.html)
-               + [Cómo ponerlo todo junto](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/put-it-all-together.html)
-               + [Publicación de la aplicación sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/go-live.html)
-               + [AEM Opcional: cómo crear aplicaciones de una sola página con la opción de creación de una sola página](https://experienceleague.adobe.com/docs/experience-manager-65/headless/developer/create-spa.html)
+               + [AEM Comprender el sin encabezado en las](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
+               + [Obtenga información acerca del desarrollo sin encabezado de CMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html)
+               + [Introducción a AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html)
+               + [Ruta hacia la primera experiencia al usar AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html)
+               + [AEM Cómo modelar el contenido como modelos de contenido de](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
+               + [Cómo acceder al contenido a través de las API de entrega de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html)
+               + [Actualización del contenido mediante las API de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html)
+               + [Cómo ponerlo todo junto](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html)
+               + [Publicación de la aplicación sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html)
+               + [AEM Opcional: cómo crear aplicaciones de una sola página con la opción de creación de una sola página](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html)
             + Recorrido de arquitecto de contenido sin encabezado {#architect}
-               + [AEM Información general sobre el Recorrido de arquitectos de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/overview.html)
-               + [AEM Modelado de contenido para usuarios sin encabezado con: introducción](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/introduction.html)
-               + [AEM Descubra los conceptos básicos del modelado de contenido para Headless con](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/basics.html)
-               + [AEM Obtenga información acerca de la creación de modelos de fragmentos de contenido en la](https://experienceleague.adobe.com/docs/experience-manager-65/headless/architect/model-structure.html)
+               + [AEM Información general sobre el Recorrido de arquitectos de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
+               + [AEM Modelado de contenido para usuarios sin encabezado con: introducción](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
+               + [AEM Descubra los conceptos básicos del modelado de contenido para Headless con](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
+               + [AEM Obtenga información acerca de la creación de modelos de fragmentos de contenido en la](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html)
          + Guías de introducción {#getting-started}
             + [Introducción](/help/sites-developing/headless/getting-started/introduction.md)
             + [Creación de una configuración](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1396,14 +1396,14 @@ ht-degree: 68%
          + API de envío{#delivery-api}
             + [API de HTTP de Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/mac-api-assets.html)
             + [API de REST de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)
-            + [API de GraphQL de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphql-api-content-fragments.html)
+            + [API de GraphQL de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-api-content-fragments.html)
             + [Administrar extremos de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphiql-ide.html)
-            + [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/persisted-queries.html)
+            + [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html)
+            + [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/persisted-queries.html)
             + [Optimización de consultas de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [Autenticación para consultas de AEM de GraphQL remotas en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
-            + [API de GraphQL de AEM con fragmentos de contenido: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/headless/delivery-api/content-fragments-graphql-samples.html)
+            + [Autenticación para consultas de AEM de GraphQL remotas en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
+            + [API de GraphQL de AEM con fragmentos de contenido: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
       + SPA AEM Desarrollo híbrido y de {#spas}
          + [Híbrido y SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Introducción y tutorial de SPA](/help/sites-developing/spa-walkthrough.md)
