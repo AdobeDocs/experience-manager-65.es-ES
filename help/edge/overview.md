@@ -4,8 +4,8 @@ description: Introducción a Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
 source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 93%
+source-wordcount: '835'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Edge Delivery es un conjunto de servicios que admiten composición que permiten 
 
 Por ejemplo, puede utilizar contenido directamente desde Microsoft Word o Google Docs. Esto significa que los documentos de esas fuentes pueden convertirse en páginas de su sitio web. Además, los encabezados, las listas, las imágenes y los elementos de tipo de fuente se pueden transferir desde el origen inicial al sitio web. El nuevo contenido se añadirá instantáneamente sin que sea necesario un proceso de reconstrucción.
 
-Edge Delivery utiliza GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir contenido en Google Docs o en Microsoft Word y la funcionalidad del sitio se puede desarrollar mediante CSS y JavaScript en GitHub. Cuando esté listo, puede utilizar la extensión del explorador de la barra de tareas para obtener una vista previa y publicar actualizaciones de contenido.
+Edge Delivery utiliza GitHub para que los clientes puedan administrar e implementar código directamente desde su repositorio de GitHub. Por ejemplo, puede escribir contenido en Google Docs o en Microsoft Word, y la funcionalidad del sitio se puede desarrollar mediante CSS y JavaScript en GitHub. Cuando esté listo, puede utilizar la extensión del explorador de la barra de tareas para obtener una vista previa y publicar actualizaciones de contenido.
 
 Lectura adicional:
 
