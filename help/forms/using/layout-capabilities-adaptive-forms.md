@@ -3,10 +3,11 @@ title: Funciones de diseño de los formularios adaptables
 description: El diseño y el aspecto visual de los formularios adaptables en diferentes dispositivos se rigen por la configuración de diseño. Obtenga información sobre los distintos diseños y cómo aplicarlos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+feature: Adaptive Forms, Foundation Components
+discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
-feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 99%

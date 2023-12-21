@@ -3,10 +3,11 @@ title: Rellenar previamente los campos de un formulario adaptable
 description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
+discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
-feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2203'
 ht-degree: 99%

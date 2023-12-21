@@ -6,11 +6,12 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 52%
+source-wordcount: '965'
+ht-degree: 49%
 
 ---
 
@@ -80,7 +81,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
    * Configure las variables `archetypeVersion` propiedad a `41` o más tarde. Para ver la versión más reciente, consulte la sección Requisitos del sistema en [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) documentación.
 
-   * Actualice el comando para reflejar los valores específicos de su entorno, incluido el `appTitle`, `appId`, y `groupId`. Además, establezca el valor de  `includeFormsenrollment` propiedad a `y`. Si utiliza el Portal de Forms, establezca la opción `includeExamples=y` para que incluya los componentes principales del Portal de Forms en el proyecto.
+   * Actualice el comando para reflejar los valores específicos de su entorno, incluido el `appTitle`, `appId`, y `groupId`. Además, establezca el valor de  `includeFormsenrollment` propiedad a `y`. Si utiliza el portal de Forms, configure las `includeExamples=y` para incluir los componentes principales del portal de Forms en el proyecto.
 
 
 1. (Solo para proyectos basados en la versión 41 del arquetipo) Una vez creado el proyecto de arquetipo de AEM, habilite las temáticas para formularios adaptables basados en componentes principales. Para habilitar las temáticas, haga lo siguiente:
@@ -113,7 +114,7 @@ Para crear un proyecto basado en el arquetipo de AEM 41 o [posterior](https://gi
 
       >[!NOTE]
       >
-      >* Si configura cualquier otra topología, asegúrese de agregar las direcciones URL de envío, de relleno previo y de otro tipo a la lista de permitidos en la capa de Dispatcher.
+      >* Si configura cualquier otra topología, asegúrese de agregar las direcciones URL de envío, de relleno previo y de otro tipo a la lista de permitidos de Dispatcher.
 
    1. Guarde y cierre el archivo.
 

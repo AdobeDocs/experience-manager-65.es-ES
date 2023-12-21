@@ -3,10 +3,11 @@ title: Agregar información de datos de usuario a los metadatos de envío de for
 description: Aprenda a añadir información a los metadatos de un formulario enviado con los datos proporcionados por los usuarios.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
+discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
-feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 87%
