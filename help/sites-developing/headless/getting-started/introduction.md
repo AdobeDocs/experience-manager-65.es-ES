@@ -2,10 +2,10 @@
 title: Guía de introducción de Headless
 description: Con esta guía de inicio rápido, conozca los aspectos básicos de las potentes capacidades sin encabezado de Adobe Experience Manager AEM () 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 42%
+ht-degree: 39%
 
 ---
 
@@ -23,7 +23,7 @@ Las Guías de introducción sin encabezado establecen una ruta sencilla para cre
 >
 >Esta guía de introducción asume el conocimiento de tecnologías de AEM y sin encabezado.
 >
->AEM Si acaba de empezar en o no tiene encabezado, consulte la sección sobre la configuración de la página de la página de. [Recorridos de documentación sin encabezado](/help/journey-headless/home.md) AEM para obtener una introducción completa a sin encabezado y a cómo lo admite la aplicación de forma.
+>AEM Si acaba de empezar en o no tiene encabezado, consulte la sección sobre la configuración de la página de la página de. [Recorridos de documentación sin encabezado](/help/journey-headless/overview.md) AEM para obtener una introducción completa a sin encabezado y a cómo lo admite la aplicación de forma.
 
 ## Audiencia {#audience}
 

@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: AEM AEM Aprenda a utilizar y administrar Contenido y comercio de con nuestros útiles artículos sobre integraciones y cómo empezar a utilizar Tienda de productos de la tienda de la tienda de la manera más sencilla y práctica.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 77%
+source-wordcount: '259'
+ht-degree: 62%
 
 ---
 
@@ -16,8 +16,9 @@ AEM AEM Aprenda a utilizar y administrar Contenido y comercio de con nuestros ú
 >[!NOTE]
 >
 >AEM AEM Para obtener información sobre Contenido y comercio de la con as a Cloud Service, consulte [AEM Contenido y comercio de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=es).
+>
 
-## Artículos clave de Comercio {#key-articles}
+## Artículos clave de Commerce {#key-articles}
 
 * [AEM Introducción al comercio de la](/help/commerce/cif/introduction.md)
 * [Introducción](/help/commerce/cif/getting-started.md)
@@ -26,10 +27,9 @@ AEM AEM Aprenda a utilizar y administrar Contenido y comercio de con nuestros ú
 
 | Guía del usuario | Descripción |
 |--- |---|
-| [Notas de la versión](/help/release-notes/home.md) | Incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos. |
+| [Notas de la versión](/help/release-notes/home.md) | AEM Proporciona información importante sobre la versión más reciente de la, incluidas las novedades, las plataformas admitidas, las funciones en desuso y eliminadas, y los problemas conocidos. |
 | [Guía del usuario de Assets](/help/assets/home.md) | Aprenda a crear, administrar, entregar y optimizar recursos digitales. |
 | [Guía del usuario de Forms](/help/forms/home.md) | Esta guía describe cómo crear, administrar, publicar y actualizar formularios digitales. |
-| [Guía del usuario de Communities](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación de AEM. |
 | [Guía de creación con la interfaz de usuario clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación de la interfaz de usuario clásica de AEM. |
@@ -37,7 +37,6 @@ AEM AEM Aprenda a utilizar y administrar Contenido y comercio de con nuestros ú
 | [Guía del usuario de implementación](/help/sites-deploying/home.md) | Esta guía muestra los conceptos básicos de AEM. |
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear la instancia de AEM. |
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
-| [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
 
 ## Recursos clave de AEM
 

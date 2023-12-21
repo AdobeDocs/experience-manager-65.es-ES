@@ -2,10 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager 6.5
 description: Las Notas de la versión de AEM incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 84%
+source-wordcount: '257'
+ht-degree: 85%
 
 ---
 
@@ -27,7 +27,6 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 |--- |---|
 | [Guía del usuario de Assets](/help/assets/home.md) | Cree, administre, distribuya y optimice recursos digitales. |
 | [Guía del usuario de Forms](/help/forms/home.md) | Esta guía describe cómo crear, administrar, publicar y actualizar formularios digitales. |
-| [Guía del usuario de Communities](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación de AEM. |
 | [Guía de creación con la interfaz de usuario clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación de la interfaz de usuario clásica de AEM. |
@@ -36,7 +35,6 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear la instancia de AEM. |
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
-| [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
 
 ## Recursos clave de AEM
 

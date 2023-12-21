@@ -2,10 +2,10 @@
 title: Guía del usuario de administración de AEM 6.5
 description: AEM Obtenga información acerca de la administración de 6.5. Estas guías tratan sobre las funciones del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración, etc.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 88%
+source-wordcount: '251'
+ht-degree: 74%
 
 ---
 
@@ -24,10 +24,9 @@ AEM Obtenga información acerca de la administración de 6.5. Estas guías trata
 
 | Guía del usuario | Descripción |
 |--- |---|
-| [Notas de la versión](/help/release-notes/home.md) | Incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos. |
+| [Notas de la versión](/help/release-notes/home.md) | AEM Proporciona información importante sobre la versión más reciente de la, incluidas las novedades, las plataformas admitidas, las funciones en desuso y eliminadas, y los problemas conocidos. |
 | [Guía del usuario de Assets](/help/assets/home.md) | Aprenda a crear, administrar, entregar y optimizar recursos digitales. |
 | [Guía del usuario de Forms](/help/forms/home.md) | Esta guía describe cómo crear, administrar, publicar y actualizar formularios digitales. |
-| [Guía del usuario de Communities](/help/communities/home.md) | Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. |
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación de AEM. |
 | [Guía de creación con la interfaz de usuario clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación de la interfaz de usuario clásica de AEM. |
@@ -36,11 +35,10 @@ AEM Obtenga información acerca de la administración de 6.5. Estas guías trata
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear la instancia de AEM. |
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
-| [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
 
 ## Recursos clave de AEM
 
-* [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
+* [Tutoriales de AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)

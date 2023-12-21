@@ -4,10 +4,10 @@ description: Lista de funciones de experiencias fluidas
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 11%
+source-wordcount: '268'
+ht-degree: 4%
 
 ---
 
@@ -64,7 +64,7 @@ AEM En las tablas siguientes se definen las funciones de las experiencias fluida
 | [Administración de recursos multilingües](/help/assets/multilingual-assets.md) |
 | [Internacionalización](/help/sites-developing/i18n.md) |
 | [Traducción de contenido](/help/sites-administering/translation.md) |
-| [Monitoreo](/help/sites-deploying/monitoring-and-maintaining.md) |
+| [Monitorización](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Copia de seguridad](/help/sites-administering/backup-and-restore.md) |
 | [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es) |
 | [Integración de PIM](/help/sites-authoring/managing-product-information.md) |
@@ -84,7 +84,5 @@ AEM En las tablas siguientes se definen las funciones de las experiencias fluida
 
 * [Experiencias fluidas para casos de uso remoto](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
 * [AEM Servicio de contenido: ¿qué, por qué y cómo?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
-* [Uso de servicios de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
-* [Desarrollo de aplicaciones móviles](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
 * [Preguntas frecuentes sobre el acceso de terceros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
 * [Uso de las API de Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

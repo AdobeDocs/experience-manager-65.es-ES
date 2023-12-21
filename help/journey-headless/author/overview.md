@@ -2,10 +2,10 @@
 title: Recorrido del autor de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las funciones potentes y flexibles sin encabezado de AEM, sus funcionalidades, y cómo diseñar el contenido en su primer proyecto de contenido sin encabezado.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 81%
+source-wordcount: '847'
+ht-degree: 78%
 
 ---
 
@@ -35,7 +35,7 @@ Esta guía le llevará por los temas más importantes para que, al completarla, 
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
-Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-headless/home.md) es dónde debe empezar.
+Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-headless/overview.md) es dónde debe empezar.
 
 ## Audiencia {#audience}
 
@@ -81,7 +81,7 @@ Como tal, los recorridos están diseñados para mantenerse por sí mismos. Sin e
 * [Recorrido de traducción sin encabezado de AEM:](/help/journey-headless/translation/overview.md) este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin encabezado, cómo AEM sirve contenido sin encabezado y cómo puede traducirlo.
 * [Recorrido para desarrolladores de contenido sin encabezado de AEM](/help/journey-headless/developer/overview.md): empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus capacidades y cómo utilizarlas en su primer proyecto de desarrollo.
 * [Recorrido de arquitectos Headless](/help/journey-headless/architect/overview.md) : Empiece aquí para ver una introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y cómo diseñar contenido para su proyecto.
-* [Documentación técnica de AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es): si ya tiene una comprensión firme de las tecnologías AEM y headless, puede que desee consultar directamente nuestros documentos técnicos detallados.
+* [AEM documentación técnica de la](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) AEM - Si ya tiene un buen conocimiento de las tecnologías sin encabezado y de la tecnología sin encabezado, puede que desee consultar directamente nuestros documentos técnicos detallados.
    * Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * [Tutoriales Headless de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): si prefiere aprender con la práctica y tiene interés por la tecnología, siga nuestros tutoriales prácticos organizados por API y el marco de trabajo, que exploran la creación y el uso de aplicaciones creadas en AEM Headless.
 * [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

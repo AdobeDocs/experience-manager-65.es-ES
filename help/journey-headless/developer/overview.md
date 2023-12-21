@@ -2,10 +2,10 @@
 title: Recorrido para desarrolladores de AEM sin encabezado
 description: AEM Documentación de CMS sin encabezado de. Comience aquí para obtener un recorrido AEM guiado a través de las potentes y flexibles funciones sin encabezado de los, sus capacidades y cómo utilizarlas en su primer proyecto de desarrollo.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 73%
+source-wordcount: '1204'
+ht-degree: 69%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Esta guía le guía por los temas de implementación sin encabezado más com
 
 Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
-Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-headless/home.md) es dónde debe empezar.
+Si quiere saber lo recomienda Adobe para resolver los casos empresariales sin encabezado con AEM, [Los recorridos de AEM sin encabezado](/help/journey-headless/overview.md) es dónde debe empezar.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 |---|---|---|
 | 0 | Recorrido para desarrolladores de AEM sin encabezado | Este documento |
 | 1 | [Obtenga información acerca del desarrollo sin encabezado de CMS](learn-about.md) | Obtenga información sobre la tecnología sin encabezado y cuándo utilizarla. |
-| 2 | [Introducción a AEM sin encabezado](getting-started.md) | Aprenda sobre los requisitos previos de AEM sin encabezado |
+| 2 | [AEM Introducción a la tecnología sin encabezado de](getting-started.md) | Aprenda sobre los requisitos previos de AEM sin encabezado |
 | 3 | [Ruta hacia la primera experiencia al usar AEM sin encabezado](path-to-first-experience.md) | Configurar su entorno de desarrollo y aprender a integrar una aplicación sencilla con AEM sin encabezado |
 | 4 | [Cómo modelar el contenido](model-your-content.md) | Aprenda a modelar la estructura de contenido. A continuación, observe esa estructura para Adobe Experience Manager (AEM) mediante los modelos de fragmentos de contenido y los fragmentos de contenido, para reutilizarla en todos los canales. |
 | 5 | [Cómo acceder al contenido a través de las API de entrega de AEM](access-your-content.md) | Aprenda a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido. |
@@ -90,7 +90,7 @@ Como tal, los recorridos están diseñados para mantenerse por sí mismos. Sin e
 * [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece un amplio conocimiento sobre la tecnología sin encabezado, cómo proporciona AEM contenido sin encabezado y cómo puede traducirlo.
 * [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md). Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin encabezado.
 * [Recorrido de arquitectos Headless](/help/journey-headless/architect/overview.md) : Empiece aquí para ver una introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y cómo diseñar contenido para su proyecto.
-* [Documentación técnica de AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es): si ya tiene una comprensión firme de las tecnologías AEM y headless, puede que desee consultar directamente nuestros documentos técnicos detallados.
+* [AEM documentación técnica de la](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) AEM - Si ya tiene un buen conocimiento de las tecnologías sin encabezado y de la tecnología sin encabezado, puede que desee consultar directamente nuestros documentos técnicos detallados.
 
    * Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 719dd7b30c8ce3f02fe46c632b1589fcc74a1759
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '102'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 11%
 * [Integración con servicios de terceros](/help/sites-administering/third-party-services.md)
 * [Analytics con proveedores externos](/help/sites-administering/external-providers.md)
 * [Productor de catálogos](/help/sites-administering/catalog-producer.md)
-* [Conector de SharePoint](/help/sites-administering/sharepoint-connector.md)
 * [Explicación, aplicación y depuración de las etiquetas inteligentes](/help/assets/enhanced-smart-tags.md)
 
 AEM La siguiente información está disponible acerca de la integración de la integración de con otros servicios de Adobe o de terceros:
