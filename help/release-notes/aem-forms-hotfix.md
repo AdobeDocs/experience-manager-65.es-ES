@@ -1,17 +1,17 @@
 ---
-title: AEM Revisión para el paquete de servicio del formulario de
-description: Proporciona información sobre cómo descargar e instalar la revisión del Service Pack de AEM Forms
-source-git-commit: 169d407835098add0312b0d12c2c80035b525762
+title: Revisiones para AEM Forms
+description: Proporciona información sobre cómo descargar e instalar una revisión para AEM Forms.
+exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
+source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 1%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
+# Revisiones de Adobe Experience Manager Forms{#aem-form-hotfix}
 
-# Revisiones de Adobe Experience Manager{#aem-form-hotfix}
-
-La instalación de la última [AEM Paquete de servicio de](/help/release-notes/release-notes.md) se recomienda que incluya correcciones y mejoras clave de seguridad, rendimiento, estabilidad y del cliente realizadas tras la disponibilidad general de Adobe Experience Manager 6.5.
+Este artículo enumera las correcciones esenciales implementadas para abordar problemas conocidos, mejorar la estabilidad del sistema y mejorar el rendimiento general de AEM Forms.
 
 ## Revisiones para Forms adaptable {#hotfix-for-adaptive-forms}
 
@@ -19,11 +19,11 @@ La instalación de la última [AEM Paquete de servicio de](/help/release-notes/r
   <tbody>
   <tr>
     <td><strong>Fecha</strong></td>
-    <td><strong>Nombres de revisión</strong></td>
-    <td><strong>Correcciones</strong></td>
+    <td><strong>AEM Vínculo de descarga de revisión (vínculo de distribución de software de)</strong></td>
+    <td><strong>Problemas solucionados</strong></td>
    </tr>
    <tr>
-    <td>20 de noviembre de 2023</td>
+    <td>martes, 20 de noviembre de 2023</td>
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Linux</a> </li>
@@ -42,11 +42,11 @@ La instalación de la última [AEM Paquete de servicio de](/help/release-notes/r
     <tbody>
      </table>
 
-## Descargar e instalar revisión {#download-install-hotfix}
+## Descargar e instalar una revisión {#download-install-hotfix}
 
 Siga estos pasos para descargar e instalar la revisión:
 
-1. Descargar [Revisión](#hotfix-for-adaptive-forms) desde el vínculo SD.
+1. Descargar [Revisión](#hotfix-for-adaptive-forms) desde el vínculo Distribución de software.
 1. Extraiga el archivo de revisión para poder obtener un paquete de Experience Manager (.zip) y archivos de paquete (.jar).
-1. Cargue e instale el paquete (.zip) mediante el Administrador de paquetes.
-1. Abra los paquetes del administrador de configuración `https://server:host/system/console/bundles`, cargue e instale el paquete (.jar).
+1. Cargue e instale el paquete (.zip) mediante el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Abra los paquetes del administrador de configuración `https://server:host/system/console/bundles`, cargue e instale el paquete (.jar). La revisión está instalada.
