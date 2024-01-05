@@ -2,9 +2,9 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
+source-git-commit: 5c10c5d20338b696fdab2291c714a7d6313cca8a
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1689'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,6 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Área | Funcionalidad | Reemplazo | Versión (SP) |
 |---|---|---|---|
 | Sites | El **Configuración de encuestas administradas de Adobe AEM** servicio: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | El **Importador de informes de Sling de Adobe AEM Analytics** servicio. Consulte Conexión a Adobe Analytics y Creación de marcos: [Configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| Screens | AEM ActiveMQ en la. AEM ActiveMQ se utilizaba para la comunicación entre dos instancias de publicación de. | Adobe recomienda que los clientes utilicen un equilibrador de carga. |  |
 | [!DNL Sites] | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. |   | 6.5.11.0 |
 | [!DNL Sites] | Plantillas de fragmentos de contenido, para crear fragmentos de contenido simples. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. | 6.5.11.0 |
 | Integración de Creative Cloud | AEM En la versión 6.2 se introdujo Uso compartido de carpetas de Creative Cloud AEM de. AEM Proporciona una forma de proporcionar a los usuarios creativos acceso a los recursos de para que puedan abrirlos en los recursos de la aplicación y, de este modo, acceder a los recursos de la manera más rápida posible. [!DNL Creative Cloud] AEM y cargar nuevos archivos o guardar cambios en los archivos de la aplicación de forma que se puedan guardar en la. Una nueva funcionalidad lanzada en la aplicación de Creative Cloud, Adobe AEM Asset Link, ofrece una mejor experiencia de usuario y un acceso más potente a los recursos desde la directamente desde Photoshop, InDesign y Illustrator. Adobe AEM no tiene previsto realizar más mejoras en la integración de la integración de uso compartido de carpetas de Creative Cloud de la página de inicio de sesión. AEM Aunque la función está incluida en el servicio de asistencia, se recomienda a los clientes que utilicen soluciones de reemplazo. | Se aconseja a los clientes que cambien a nuevas funciones de integración de Creative Cloud, como Adobe AEM Asset Link o aplicación de escritorio para la aplicación de escritorio de la aplicación de escritorio de la. |  |
@@ -76,7 +75,7 @@ AEM Esta sección enumera las funciones y capacidades que se han eliminado de la
 | Desarrolladores | Eliminar `customJavaScriptPath` compatibilidad con en el Administrador de bibliotecas de cliente de HTML. | Sin reemplazo |  |
 | [!DNL Assets] | La función de descarga de recursos se ha eliminado de [!DNL Adobe Experience Manager] 6.5. | No hay reemplazo disponible. |  |
 | Caché | `system/console/slingjsp` AEM se ha eliminado y ya no está disponible en la versión 6.5 de. | Las clases y la caché de Slightly se almacenan en el paquete Apache Sling Commons FileSystem ClassLoader. AEM Puede comprobar el número de paquete en la consola web de y quitar la carpeta de caché directamente del sistema de archivos (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
-| Screens | El Adobe no planea mantener y actualizar más el paquete com.adobe.cq.screens.mq.activemq y las configuraciones relacionadas. | No hay reemplazo disponible. |  |
+| Screens | Se ha eliminado la compatibilidad con el paquete activemq y sus configuraciones relacionadas. |  |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
