@@ -2,10 +2,10 @@
 title: Revisiones para AEM Forms
 description: Proporciona información sobre cómo descargar e instalar una revisión para AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
+source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,8 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Linux</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Windows</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para el sistema operativo Mac</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Apple macOS</a></li>
      </ul>
      </td>
     <td>
