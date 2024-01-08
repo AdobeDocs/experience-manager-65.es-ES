@@ -1,15 +1,15 @@
 ---
 title: Exportador JSON para servicios de contenido
-description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web de AEM tradicionales, mediante métodos estandarizados que cualquier cliente puede consumir.
+description: AEM AEM Los servicios de contenido están diseñados para generalizar la descripción y la entrega de contenido desde o hacia el exterior, más allá de un enfoque en las páginas web. Los servicios de contenido están diseñados para proporcionar una descripción y una entrega de contenido desde o hacia el interior de las páginas web. AEM Proporcionan la entrega de contenido a canales que no son páginas web tradicionales, utilizando métodos estandarizados que cualquier cliente puede consumir.
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 36%
+source-wordcount: '411'
+ht-degree: 23%
 
 ---
 
@@ -99,4 +99,4 @@ Para obtener más información, consulte:
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 * [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)

@@ -3,7 +3,7 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4333'
 ht-degree: 1%
@@ -520,7 +520,7 @@ Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standa
 * Cuando un usuario selecciona configurar un campo por primera vez en un formulario adaptable, la opción para guardar una configuración no se muestra en el Explorador de propiedades. El problema se resuelve seleccionando la configuración de otro campo del formulario adaptable en el mismo editor.
 * Cuando los usuarios realizan la acción de envío, el envío falla con un error:
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-Para resolver el problema, [Volver a compilar los scripts de Sling como JSP, Java™ y Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+Para resolver el problema, [Volver a compilar los scripts de Sling como JSP, Java™ y Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * AEM Después de instalar el paquete de servicio 6.5.14.0 de y posteriores, los usuarios no pueden seleccionar una fuente de la interfaz de usuario de administración de JEE para los documentos de PDF al navegar a `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, ya que la lista de fuentes aparece vacía. (FORMS-12095)
 
 #### AEM Forms en JEE

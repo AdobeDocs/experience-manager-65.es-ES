@@ -1,15 +1,15 @@
 ---
-title: Componentes de base
+title: Componentes básicos
 description: Obtenga información sobre los componentes de base en Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 9%
+source-wordcount: '6872'
+ht-degree: 3%
 
 ---
 
-# Componentes de base {#foundation-components}
+# Componentes básicos {#foundation-components}
 
 >[!CAUTION]
 >
@@ -210,7 +210,7 @@ Opcional. Número máximo de elementos que desea utilizar en el carrusel.
 
 >[!NOTE]
 >
->Puede crear un componente de carrusel personalizado para Adobe Experience Manager AEM que muestre los recursos digitales en el DAM de la. Consulte [Creación de componentes de carrusel personalizados para Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>Puede crear un componente de carrusel personalizado para Adobe Experience Manager AEM que muestre los recursos digitales en el DAM de la. Consulte [Creación de componentes de carrusel personalizados para Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es).
 
 ### Gráfico {#chart}
 
@@ -245,7 +245,7 @@ A continuación se muestra un ejemplo de datos de gráfico seguido del gráfico 
 
 >[!NOTE]
 >
->AEM AEM Puede crear un control de gráfico de personalizado que muestre los datos en el JCR de la. Para obtener más información, consulte [Visualización de datos de Adobe Experience Manager en un gráfico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>AEM AEM Puede crear un control de gráfico de personalizado que muestre los datos en el JCR de la. Para obtener más información, consulte [Visualización de datos de Adobe Experience Manager en un gráfico](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es).
 
 ### Fragmento de contenido {#content-fragment}
 
@@ -327,7 +327,7 @@ El componente Flash permite cargar una película de Flash. Puede arrastrar un re
 
 * **Flash**
 
-   * **Película Flash**
+   * **película de Flash**
 
      El archivo de película flash. Arrastre un recurso desde el buscador de contenido o haga clic para abrir una ventana de exploración.
 
@@ -399,11 +399,11 @@ Hay varias opciones adicionales disponibles en el modo de edición de pantalla c
 
 Cuando se carga una imagen, puede configurar lo siguiente:
 
-* **Asignar**
+* **Mapa**
 
   Para asignar una imagen, seleccione Mapa. Puede especificar cómo desea crear el mapa de imagen (rectángulo, polígono, etc.) y hacia dónde debe apuntar el área.
 
-* **Recortar**
+* **Recorte**
 
   Para recortar parte de una imagen, seleccione Recortar. Utilice el ratón para recortar la imagen.
 
@@ -587,7 +587,7 @@ Puede configurar lo siguiente:
 
      Especifique la página (producto) para la que se debe mostrar el estado del pedido.
 
-   * **Tipo / Tamaño**
+   * **Tipo/tamaño**
 
      Seleccione de la selección proporcionada.
 
@@ -659,7 +659,7 @@ Puede configurar lo siguiente:
 
      Si no hay resultados, se muestra el texto introducido aquí.
 
-   * **Revisar ortografía de texto**
+   * **Texto corrector ortográfico**
 
      Si alguien introduce un término similar, este texto se muestra antes del término.
 Por ejemplo, si escribe `Geometrixxe`, el sistema muestra &quot;¿Quiso decir? Geometrixx&quot;.
@@ -710,7 +710,7 @@ Si es necesario, puede configurar lo siguiente:
 
 * **Sitemap**
 
-   * **Ruta de acceso raíz**
+   * **Ruta raíz**
 
      Ruta desde la que comienza el anuncio.
 
@@ -791,7 +791,7 @@ Al configurar el componente Nube de etiquetas, puede especificar lo siguiente:
 
   Seleccione la página a la que desea hacer referencia.
 
-* **Sin vínculos ni etiquetas**
+* **Sin vínculos en las etiquetas**
 
   Si las etiquetas mostradas deben actuar como vínculos.
 
@@ -878,7 +878,7 @@ El siguiente ejemplo muestra un componente Imagen de texto que muestra la imagen
 
 >[!CAUTION]
 >
->Este componente de base está obsoleto. El Adobe recomienda utilizar la variable [Componente principal de título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) en su lugar.
+>Este componente de base está obsoleto. El Adobe recomienda utilizar la variable [Componente principal de título](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) en su lugar.
 
 El componente de título puede:
 
@@ -895,7 +895,7 @@ Puede configurar lo siguiente:
 
   URI si el título va a funcionar como vínculo.
 
-* **Tipo / Tamaño**
+* **Tipo/tamaño**
 
   Seleccione Pequeño o Grande en la lista desplegable. Lo pequeño se genera como imagen. Grande se genera como texto.
 
@@ -977,7 +977,7 @@ Los componentes de formulario se utilizan para crear formularios para que los vi
 
 Forms se basa en varios componentes diferentes:
 
-* **Formulario**
+* **Form**
 
   El componente Formulario define el principio y el final de un nuevo formulario en una página. Otros componentes se pueden colocar entre estos elementos, como tablas y descargas.
 
@@ -1043,7 +1043,7 @@ Este campo es obligatorio y solo debe contener los siguientes caracteres:
 
      Permite proporcionar información adicional para el usuario, si es necesario. En el formulario, se muestra debajo del campo, en una fuente más pequeña que el título.
 
-   * **Mostrar / Ocultar**
+   * **Mostrar/ocultar**
 
      Determina cuándo está visible el campo.
 
@@ -1077,7 +1077,7 @@ Este campo es obligatorio y solo debe contener los siguientes caracteres:
 
      En filas y columnas.
 
-   * **Anchura**
+   * **Ancho**
 
      En píxeles.
 
@@ -1103,9 +1103,9 @@ Entre el principio y el final de un formulario, puede agregar componentes de for
 
 Este componente define el inicio de un nuevo formulario en una página. Puede configurar lo siguiente:
 
-* **Formulario**
+* **Form**
 
-   * **Página de agradecimientos**
+   * **Página de agradecimiento**
 
      Página a la que se hace referencia para agradecer a los visitantes por proporcionar sus comentarios. Si se deja en blanco, el formulario se vuelve a mostrar después del envío.
 
@@ -1126,23 +1126,23 @@ AEM En una instalación estándar de la aplicación se incluye una selección de
       * **Crear y actualizar cuenta**
       * **Servicio de correo electrónico: crear suscriptor y agregar a la lista**
       * **Servicio de correo electrónico: enviar correo electrónico de respuesta automática**
-      * **Servicio de correo electrónico: cancelar la subscripción del usuario a la lista**
+      * **Servicio de correo electrónico: cancelar la suscripción del usuario a la lista**
       * **Editar comunidad**
       * **Editar medios**
       * **Editar recursos controlados por flujo de trabajo**
       * **Correo**
-      * **Detalles de pedido realizado**
+      * **Detalles del pedido realizado**
       * **Actualización de perfil**
       * **Restablecer contraseña**
-      * **Definir contraseña**
+      * **Establecer contraseña**
       * **Almacenar contenido**
 
         El tipo de acción predeterminado.
 
       * **Almacenar contenido con cargas**
       * **Enviar pedido**
-      * **Cancelar la suscripción del suscriptor**
-      * **Actualizar pedido**
+      * **Cancelar suscripción al suscriptor**
+      * **Actualizar orden**
 
    * **Identificador de formulario**
 
@@ -1172,7 +1172,7 @@ AEM En una instalación estándar de la aplicación se incluye una selección de
 
         `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
-   * **Configuración de la acción**
+   * **Configuración de acción**
 
      Las opciones disponibles en **Configuración de acción** dependen del seleccionado **Tipo de acción**:
 
@@ -1194,7 +1194,7 @@ AEM En una instalación estándar de la aplicación se incluye una selección de
 
            Seleccione el tipo requerido.
 
-         * **Formulario**
+         * **Form**
 
            Especifique el formulario.
 
@@ -1234,7 +1234,7 @@ AEM En una instalación estándar de la aplicación se incluye una selección de
 
       * **Correo**
 
-         * **De**
+         * **Desde**
 
            Introduzca la dirección de correo electrónico de la que debe proceder el correo electrónico.
 
@@ -1275,7 +1275,7 @@ AEM En una instalación estándar de la aplicación se incluye una selección de
 
         Tiene las mismas opciones que **Almacenar contenido**.
 
-      * **Cancelar la suscripción del suscriptor**
+      * **Cancelar suscripción al suscriptor**
 
          * **El posible cliente se ha eliminado de esta lista**
 
@@ -1528,13 +1528,13 @@ Puede especificar varios parámetros, incluidas las áreas de nombres que se pue
 
 * **Campo de etiqueta**
 
-   * **Espacios de nombres permitidos**
+   * **Áreas de nombres permitidas**
 
       * **Geometrixx Outdoors**
       * **Flujo de trabajo**
       * **Foro**
       * **Fotografías de archivo**
-      * **Geometrixx Media**
+      * **Geometrixx Medias**
       * **Etiquetas estándar**
       * **Marketing**
       * **Propiedades del recurso**

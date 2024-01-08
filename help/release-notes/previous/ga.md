@@ -2,7 +2,7 @@
 title: Notas de la versión generales de [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] Notas de la versión 6.5 que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 3%
@@ -115,7 +115,7 @@ AEM AEM SPA Enviado por primera vez como parte de la versión 6.4 SP2, con la ve
 
 #### Administración de contenido sin encabezado {#headless-content-management}
 
-AEM Puede servir el contenido en varios formatos y desde varios niveles de la pila. Algunos han estado alrededor desde 2008 con el [GET de Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) y [Servlet POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Servicios de contenido ([Exportador del modelo Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en)AEM AEM ) se introdujo en la versión 6.3 de y es el método que usa el SDK de SJ de la aplicación para hidratar las aplicaciones de una sola página. El [API HTTP para Assets](/help/assets/mac-api-assets.md) AEM es una API de CRUD, que se amplió para la versión 6.5 de.
+AEM Puede servir el contenido en varios formatos y desde varios niveles de la pila. Algunos han estado alrededor desde 2008 con el [GET de Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) y [Servlet POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Servicios de contenido ([Exportador del modelo Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=es)AEM AEM ) se introdujo en la versión 6.3 de y es el método que usa el SDK de SJ de la aplicación para hidratar las aplicaciones de una sola página. El [API HTTP para Assets](/help/assets/mac-api-assets.md) AEM es una API de CRUD, que se amplió para la versión 6.5 de.
 
 Nuevas funciones de la API HTTP:
 
@@ -596,4 +596,4 @@ Los siguientes sitios solo están disponibles para clientes de. Si es cliente de
 
 * Actualizaciones de productos, parches y paquetes para obtener funcionalidad adicional en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 
-* [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).
+* [Asistencia al cliente mediante Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de asistencia al cliente de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

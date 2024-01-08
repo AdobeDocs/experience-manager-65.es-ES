@@ -2,10 +2,10 @@
 title: Edición de propiedades de página de contenido
 description: Defina las propiedades necesarias para una página en Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 43%
+source-wordcount: '1855'
+ht-degree: 42%
 
 ---
 
@@ -155,7 +155,7 @@ Las propiedades se distribuyen entre varias pestañas.
   >
   >En tal caso, los permisos de CUG deben editarse en la variable [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-* **Página de inicio de sesión**
+* **Página de inicio**
 
   La página que se utilizará para iniciar sesión.
 
@@ -187,7 +187,7 @@ Muestra la miniatura de la página. Puede hacer lo siguiente:
 
 * **Compartir en redes sociales**
 
-  Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [Uso compartido del componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
+  Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [Uso compartido del componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **Habilitar el uso compartido de usuarios en Facebook**
    * **Habilitar el uso compartido de usuarios en Pinterest**

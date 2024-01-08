@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
 ht-degree: 4%
@@ -46,7 +46,7 @@ Este documento supone que ya está familiarizado con la creación y edición de 
 >[!NOTE]
 >
 >El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto:
->[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
+>[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Creación de una nueva plantilla {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * La estructura permite definir los componentes y el contenido de la plantilla.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
 
-      * Si está creando una plantilla en una carpeta personalizada fuera de `We.Retail` Contenido de ejemplo, puede elegir Componentes de base o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+      * Si está creando una plantilla en una carpeta personalizada fuera de `We.Retail` Contenido de ejemplo, puede elegir Componentes de base o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
    * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
    * Los componentes se pueden volver a desbloquear y bloquear para que pueda definir el contenido inicial.

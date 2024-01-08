@@ -7,10 +7,10 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3238'
-ht-degree: 1%
+source-wordcount: '3214'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +185,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
    * Procesos para cada entorno; por ejemplo, requisitos de implementación y mantenimiento
    * Actividades de mantenimiento (optimización del almacén de datos, TarPM, etc.)
-   * [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)Almacenamiento en caché de Dispatcher
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) almacenamiento en caché
    * [Clúster](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * Rendimiento del lado del cliente (minificación de JS, concat, sprites css, número total de solicitudes http, etc.)
 
@@ -441,7 +441,7 @@ Desea que el lanzamiento sea lo más fluido posible. De nuevo, los pasos finales
 
   Confirme la seguridad de su solución tanto para usuarios internos como externos, así como para su contenido.
 
-* **Abandono**
+* **Reserva**
 
   Asegúrese de que todos los sistemas, procedimientos y mecanismos necesarios para la reserva estén implementados antes de activarse.
 

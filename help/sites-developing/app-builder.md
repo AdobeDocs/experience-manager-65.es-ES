@@ -2,9 +2,9 @@
 title: Ampliación [!DNL Adobe Experience Manager] 6.5 con el Generador de aplicaciones de Adobe Developer.
 description: Ampliación [!DNL Adobe Experience Manager] 6.5 con el Generador de aplicaciones de Adobe Developer.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ El Generador de aplicaciones ha estado disponible para los clientes y socios emp
 
 >[!NOTE]
 >
->AEM Para los clientes de as a Cloud Service que deseen utilizar el Generador de aplicaciones, consulte [Ampliación de Adobe Experience Manager as a Cloud Service con el Generador de aplicaciones de Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=en).
+>AEM Para los clientes de as a Cloud Service que deseen utilizar el Generador de aplicaciones, consulte [Ampliación de Adobe Experience Manager as a Cloud Service con el Generador de aplicaciones de Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Arquitectura {#architecture}
 

@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3360'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Las siguientes opciones de configuración de OSGi (enumeradas según el paquete)
 
 >[!NOTE]
 >
->La herramienta Diferencias de configuración de OSGi, que forma parte de la variable [AEM Herramientas de](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en), se puede utilizar para enumerar las configuraciones predeterminadas de OSGi.
+>La herramienta Diferencias de configuración de OSGi, que forma parte de la variable [AEM Herramientas de](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), se puede utilizar para enumerar las configuraciones predeterminadas de OSGi.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Al crear una configuración, no cambie la configuración de fábrica. En su luga
 
 >[!CAUTION]
 >
->Al cambiar la configuración de **Minificar** o **Gzip**, elimine el contenido de la caché de clientlibs. Consulte [Artículo de Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) para obtener más información.
+>Al cambiar la configuración de **Minificar** o **Gzip**, elimine el contenido de la caché de clientlibs. Consulte [Artículo de Knowledge Base](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) para obtener más información.
 
 >[!NOTE]
 >

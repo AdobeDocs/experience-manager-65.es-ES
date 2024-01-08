@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 12%
+source-wordcount: '601'
+ht-degree: 7%
 
 ---
 
@@ -39,7 +39,7 @@ Cuando se configura para admitir el almacenamiento en caché de Dispatcher, se a
 
 ### Requisitos  {#requirements}
 
-* Versión 4.1.2 o posterior de Dispatcher (consulte [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) para la última versión)
+* Versión 4.1.2 o posterior de Dispatcher (consulte [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para la última versión)
 * [AEM Paquete de ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versión 3.3.2 o posterior
@@ -66,7 +66,7 @@ La configuración de OSGi **AEM ACS Commons - Encabezado de control de caché de
 
 ## Filtros de Dispatcher {#dispatcher-filters}
 
-La sección /filter del `dispatcher.any` el archivo está documentado en [Configuración del acceso al contenido: /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es).
+La sección /filter del `dispatcher.any` el archivo está documentado en [Configuración del acceso al contenido: /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 En esta sección se describen las entradas que probablemente sean necesarias para el correcto funcionamiento de las funciones de Communities.
 
@@ -76,7 +76,7 @@ Los siguientes ejemplos utilizan nombres de propiedad que es probable que deban 
 
 Consulte también lo siguiente:
 
-* [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
+* [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >

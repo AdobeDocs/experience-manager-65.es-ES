@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -72,7 +72,7 @@ El [Monitorización del rendimiento](/help/sites-deploying/monitoring-and-mainta
 
 **Modo de desarrollador en IU táctil**
 
-AEM Una de las nuevas funciones de la IU táctil de la 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte [Presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+AEM Una de las nuevas funciones de la IU táctil de la 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte [Presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Uso del archivo log.jar para leer los registros de solicitudes**
 
@@ -117,7 +117,7 @@ El **ObservationQueueMaxLength** Esta sección muestra el número de eventos en 
 1. Colóquelo en la carpeta /crx-quickstart/install.
 
 >[!NOTE]
->Consulte [AEM.x | Consejos de ajuste de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>Consulte [AEM.x | Consejos de ajuste de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
 
 La configuración predeterminada es 10 000, pero la mayoría de las implementaciones deben aumentarla a 20 000 o 50 000.
 
@@ -145,7 +145,7 @@ Después de ejecutar pruebas de rendimiento en la instancia de autor, cualquier 
 * Observe el registro de errores para ver si hay errores o advertencias. Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md).
 * Supervise los recursos de hardware del sistema, como la utilización de memoria y CPU, E/S de disco o E/S de red. Estos recursos suelen ser la causa de cuellos de botella en el rendimiento.
 * Optimizar la arquitectura de las páginas y cómo se dirigen para minimizar el uso de parámetros de URL y permitir el mayor almacenamiento en caché posible.
-* Siga las [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [Consejos de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en) documentación.
+* Siga las [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [Consejos de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es) documentación.
 
 * Si hay problemas con la edición de determinadas páginas o componentes en instancias de autor, utilice el modo de desarrollador de TouchUI para inspeccionar la página en cuestión. Al hacerlo, se proporciona un desglose de cada área de contenido de la página y de su tiempo de carga.
 * Minimice todos los JS y CSS del sitio. Ver esto [publicación de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

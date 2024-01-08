@@ -2,10 +2,10 @@
 title: Guía de Adobe Experience Manager 6.5 Communities
 description: Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine esta guía que explica cómo implementar, administrar, desarrollar y crear comunidades.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -39,7 +39,7 @@ Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendiz
 ## Recursos clave de AEM
 
 * [Tutoriales de AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
+* [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)

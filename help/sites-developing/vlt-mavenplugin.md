@@ -2,10 +2,10 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: AEM Utilice el complemento Maven del paquete de contenido para implementar aplicaciones de
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 9%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ AEM La implementación de los paquetes construidos en el se realiza mediante el 
 >
 >Para obtener más información, consulte:
 >
->* El [Complemento Maven del paquete de contenido de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) AEM artículo de la documentación as a Cloud Service AEM de la sobre cómo implementar aplicaciones de la aplicación.
+>* El [Complemento Maven del paquete de contenido de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) AEM artículo de la documentación as a Cloud Service AEM de la sobre cómo implementar aplicaciones de la aplicación.
 >* El [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM artículo en la documentación as a Cloud Service AEM de la sobre cómo estructurar proyectos modernos.
 >* El [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) AEM documentación sobre cómo iniciar un nuevo proyecto de con el tipo de archivo.
 >

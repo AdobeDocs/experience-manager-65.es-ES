@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -203,7 +203,7 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro fases:
 
 ### Flujos de trabajo y Forms {#workflows-and-forms}
 
-AEM Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en la. Puede ser con el [componentes principales de componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=en) AEM disponible en una instancia de estándar o con [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
+AEM Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en la. Puede ser con el [componentes principales de componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) AEM disponible en una instancia de estándar o con [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Al crear un formulario, el envío del formulario se puede asociar fácilmente a un modelo del flujo de trabajo. Por ejemplo, para almacenar el contenido en una ubicación concreta del repositorio o para notificar a un usuario el envío del formulario y su contenido.
 

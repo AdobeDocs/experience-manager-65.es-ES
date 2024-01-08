@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 3%
@@ -48,7 +48,7 @@ Antes de continuar, asegúrese de que sus credenciales le permiten iniciar sesi�
 
 ### AEM Configuración de la configuración para utilizar los centros de datos de Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [centros de datos](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en) recopilar, procesar y almacenar datos asociados a su grupo de informes de Adobe Analytics. AEM Configure para utilizar el centro de datos que aloja el grupo de informes de Adobe Analytics. El centro de datos se menciona en el contrato. Póngase en contacto con un administrador de su organización para obtener esta información.
+Adobe Analytics [centros de datos](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) recopilar, procesar y almacenar datos asociados a su grupo de informes de Adobe Analytics. AEM Configure para utilizar el centro de datos que aloja el grupo de informes de Adobe Analytics. El centro de datos se menciona en el contrato. Póngase en contacto con un administrador de su organización para obtener esta información.
 
 Si es necesario, utilice lo siguiente para dirigirlo al centro de datos correcto: `https://api.omniture.com/`.
 

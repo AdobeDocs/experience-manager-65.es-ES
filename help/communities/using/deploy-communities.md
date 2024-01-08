@@ -3,10 +3,10 @@ title: Implementación de comunidades
 description: Cómo implementar AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 3%
+source-wordcount: '1705'
+ht-degree: 1%
 
 ---
 
@@ -102,11 +102,11 @@ Los pasos necesarios son:
 
    * La versión debe ser >= 5.1.38
 
-1. Extraer `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
+1. Extract `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
 1. Utilice la consola web para instalar e iniciar el paquete:
 
    * Por ejemplo, https://localhost:4502/system/console/bundles
-   * Seleccione lo siguiente **`Install/Update`**
+   * Seleccionar **`Install/Update`**
    * Examinar... para seleccionar el paquete extraído del archivo ZIP descargado
    * Compruebe que *Controlador JDBC de oracle Corporation para MySQLcom.mysql.jdbc* está activo y, si no es así, inícielo (o compruebe los registros)
 
@@ -114,7 +114,7 @@ Los pasos necesarios son:
 
    * Por ejemplo, https://localhost:4502/system/console/configMgr
    * Localizar `Day Commons JDBC Connections Pool` y seleccione para abrir la configuración de.
-   * Seleccione lo siguiente `Save`.
+   * Seleccionar `Save`.
 
 1. Repita los pasos 3 y 4 en todas las instancias de autor y publicación.
 
@@ -196,7 +196,7 @@ Para todas las demás instancias de publicación (secundarias) de un conjunto de
 * Busque el `AEM Communities Publisher Configuration`
 * Seleccione el icono de edición
 * Desmarque la **Editor principal** casilla de verificación
-* Seleccione **Guardar**
+* Seleccionar **Guardar**
 
 ### Agentes de replicación en Autor {#replication-agents-on-author}
 
@@ -307,9 +307,9 @@ Con el material de clave almacenado en el repositorio, la manera de replicar la 
 Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * Navegar a [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Seleccione lo siguiente `/etc/key`
+* Seleccionar `/etc/key`
 * Abrir `Replication` pestaña
-* Seleccione lo siguiente `Replicate`
+* Seleccionar `Replicate`
 
 * [actualice el paquete Granite Crypto](#refresh-the-granite-crypto-bundle)
 
@@ -357,7 +357,7 @@ En particular, tenga cuidado de utilizar el nombre de servidor correcto, no `loc
 Si utiliza un Dispatcher, consulte :
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) documentación
-* [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [Configurar Dispatcher para comunidades](/help/communities/dispatcher.md)
 * [Problemas conocidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 1%
+source-wordcount: '2092'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +42,7 @@ Según la configuración específica, estos cambios se pueden realizar mediante 
 
   Algunos archivos de configuración residen en el sistema de archivos.
 
-* **WCM AEM**
+* **AEM WCM de**
 
   AEM Se pueden configurar varios aspectos dentro del propio WCM, muchos de los cuales utilizan el parámetro de configuración de la variable de configuración de la variable [Herramientas](/help/sites-administering/tools-consoles.md) consola; por ejemplo, agentes de replicación.
 
@@ -178,7 +178,7 @@ AEM Para obtener información sobre la administración de usuarios dentro de la 
 
 Dispatcher es una herramienta de Adobe Experience Manager para el almacenamiento en caché, el equilibrio de carga o ambos. Se puede utilizar con un servidor web de clase empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener información detallada, en particular [Configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es) para obtener más información sobre la configuración.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener información detallada, en particular [Configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obtener más información sobre la configuración.
 
 ### AEM Configuración del conector de LiveCycle {#configuring-aem-livecycle-connector}
 

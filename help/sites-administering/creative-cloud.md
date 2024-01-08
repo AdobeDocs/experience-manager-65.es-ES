@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM La función de uso compartido de carpetas de Creative Cloud de está obsoleta. Se recomienda a los clientes que utilicen funciones más nuevas, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [AEM aplicación de escritorio de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en). Obtenga más información en [AEM Prácticas recomendadas de integración de Creative Cloud y](/help/assets/aem-cc-integration-best-practices.md).
+>AEM La función de uso compartido de carpetas de Creative Cloud de está obsoleta. Se recomienda a los clientes que utilicen funciones más nuevas, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [AEM aplicación de escritorio de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Obtenga más información en [AEM Prácticas recomendadas de integración de Creative Cloud y](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

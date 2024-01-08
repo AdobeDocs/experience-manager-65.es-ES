@@ -2,10 +2,10 @@
 title: Creación
 description: Conceptos sobre creación y publicación en Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 35%
+source-wordcount: '547'
+ht-degree: 28%
 
 ---
 
@@ -31,7 +31,7 @@ AEM En el entorno de creación, la funcionalidad de la creación de informes est
 
 ### Entorno de creación {#author-environment}
 
-El creador trabaja en lo que se conoce como **entorno de creación**. Esto proporciona una interfaz fácil de usar (interfaz gráfica de usuario (GUI o IU)) para crear el contenido. Se encuentra detrás del cortafuegos de una empresa que proporciona protección total y requiere que el autor inicie sesión con una cuenta a la que se le hayan asignado los derechos de acceso correspondientes.
+El autor trabaja en lo que se conoce como **entorno de creación**. Esto proporciona una interfaz fácil de usar (interfaz gráfica de usuario (GUI o IU)) para crear el contenido. Se encuentra detrás del cortafuegos de una empresa que proporciona protección total y requiere que el autor inicie sesión con una cuenta a la que se le hayan asignado los derechos de acceso correspondientes.
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ AEM Cuando el sitio de la es un [sitio comunitario](/help/communities/overview.m
 
 #### Dispatcher {#dispatcher}
 
-A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) implementa almacenamiento en caché y equilibrio de carga.**
+Para optimizar el rendimiento de los visitantes del sitio web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)** implementa almacenamiento en caché y equilibrio de carga.

@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6184'
 ht-degree: 0%
@@ -592,7 +592,7 @@ Como Dispatcher no tiene estado, puede escalarse horizontalmente con facilidad. 
 
 AEM La ejecución de la ejecución sin un Dispatcher requiere la terminación SSL y el equilibrio de carga que debe realizar otra aplicación. AEM Esto es necesario porque las sesiones deben tener afinidad con la instancia de en la que se crean, un concepto conocido como conexiones fijas. El motivo es garantizar que las actualizaciones del contenido muestren una latencia mínima.
 
-Compruebe la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) para obtener más información sobre cómo configurarlo.
+Compruebe la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener más información sobre cómo configurarlo.
 
 ### Configuración adicional {#additional-configuration}
 

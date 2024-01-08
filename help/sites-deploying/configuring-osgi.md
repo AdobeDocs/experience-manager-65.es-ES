@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1954'
 ht-degree: 0%
@@ -172,7 +172,7 @@ Como el mismo parámetro de configuración se encuentra en varios lugares, el si
 
 >[!NOTE]
 >
->Lea también [cómo definir una configuración basada en repositorio solo para una instancia específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=en).
+>Lea también [cómo definir una configuración basada en repositorio solo para una instancia específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Adición de una nueva configuración al repositorio {#adding-a-new-configuration-to-the-repository}
 

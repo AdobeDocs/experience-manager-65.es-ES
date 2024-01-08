@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager 6.5
 description: Las Notas de la versión de AEM incluyen información importante sobre la versión más reciente de AEM, incluidas las novedades, las plataformas admitidas, las funciones obsoletas y eliminadas, y los problemas conocidos.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 85%

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5752'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cada actualización del repositorio crea una revisión de contenido. Como result
 
 AEM Con la versión 6.3 y superior de la, se ha introducido una versión en línea de esta funcionalidad denominada Limpieza de revisión en línea. AEM AEM En comparación con la Limpieza de revisión sin conexión, en la que la instancia de debe cerrarse, la Limpieza de revisión en línea puede ejecutarse mientras la instancia está en línea. Limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
 
-**Nota**: [Consulte el vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) para obtener una introducción y cómo utilizar Limpieza de revisión en línea.
+**Nota**: [Consulte el vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) para obtener una introducción y cómo utilizar Limpieza de revisión en línea.
 
 El proceso de limpieza de revisión consta de tres fases: **estimación**, **compactación**, y **limpiar**. La estimación determina si se debe ejecutar la siguiente fase (compactación) o no en función de la cantidad de basura que se pueda recolectar. Durante la fase de compactación, los segmentos y los archivos tar se vuelven a escribir sin tener en cuenta el contenido no utilizado. A continuación, la fase de limpieza elimina los segmentos antiguos, incluida la basura que puedan contener. AEM El modo sin conexión generalmente puede reclamar más espacio porque el modo en línea debe tener en cuenta el conjunto de trabajo que mantiene a los segmentos adicionales de la recopilación.
 
@@ -266,7 +266,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Cuáles son los requisitos mínimos para el espacio en disco y la memoria de la pila al ejecutar Online Revision Cleanup?</strong></td>
-   <td><p>El espacio en disco se supervisa continuamente durante la Limpieza de revisiones en línea. Si el espacio disponible en disco cae por debajo de un valor crítico, el proceso se cancela. El valor crítico es el 25 % del espacio en disco actual del repositorio y no se puede configurar.</p> <p><strong>El Adobe recomienda que el tamaño del disco sea al menos dos o tres veces mayor que el tamaño de repositorio inicialmente estimado.</strong></p> <p>El espacio libre en la pila se monitoriza continuamente durante el proceso de limpieza. Si el espacio libre en la pila cae por debajo de un valor crítico, el proceso se cancela. El valor crítico se configura mediante org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. El valor predeterminado es 15%.</p> <p>Recommendations AEM para un tamaño mínimo de la pila de compactación no está separado de las recomendaciones de tamaño de memoria de la. Generalmente: <strong>AEM Si la instancia de una tiene el tamaño suficiente para hacer frente a los casos de uso y a la carga útil esperada, el proceso de limpieza obtiene suficiente memoria.</strong></p> </td>
+   <td><p>El espacio en disco se supervisa continuamente durante la Limpieza de revisiones en línea. Si el espacio disponible en disco cae por debajo de un valor crítico, el proceso se cancela. El valor crítico es el 25 % del espacio en disco actual del repositorio y no se puede configurar.</p> <p><strong>El Adobe recomienda que el tamaño del disco sea al menos dos o tres veces mayor que el tamaño de repositorio inicialmente estimado.</strong></p> <p>El espacio libre en la pila se monitoriza continuamente durante el proceso de limpieza. Si el espacio libre en la pila cae por debajo de un valor crítico, el proceso se cancela. El valor crítico se configura mediante org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. El valor predeterminado es 15 %.</p> <p>Recommendations AEM para un tamaño mínimo de la pila de compactación no está separado de las recomendaciones de tamaño de memoria de la. Generalmente: <strong>AEM Si la instancia de una tiene el tamaño suficiente para hacer frente a los casos de uso y a la carga útil esperada, el proceso de limpieza obtiene suficiente memoria.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>

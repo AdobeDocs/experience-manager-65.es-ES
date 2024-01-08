@@ -1,6 +1,6 @@
 ---
 title: Componentes para fragmentos de contenido
-description: Los fragmentos de contenido de Adobe Experience Manager (AEM) se crean y administran como recursos independientes de la página
+description: Los fragmentos de contenido de Adobe Experience Manager AEM () se crean y administran como recursos independientes de la página
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 5%
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ Consulte la [API de administración de fragmentos de contenido: del lado del cli
 
 >[!CAUTION]
 >
->El [Componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) ahora se recomienda. Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
+>El [Componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es) ahora se recomienda. Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
 >
 >Esta sección detalla el componente original entregado para su uso con fragmentos de contenido (**Fragmento de contenido** en el **General** grupo).
 
@@ -37,7 +37,7 @@ Consulte la [API de administración de fragmentos de contenido: del lado del cli
 >
 >Consulte también [Fragmentos de contenido Configurar componentes para procesamiento](/help/sites-developing/content-fragments-config-components-rendering.md) para obtener más información.
 
-Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). [Después se pueden usar estos fragmentos, y sus variaciones, al crear páginas de contenido](/help/sites-authoring/content-fragments.md). También puede utilizar un recurso de fragmento de contenido existente de la siguiente manera [arrastrándolo desde el explorador de recursos a la página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (al igual que para otros componentes basados en recursos, como el componente de base Imagen). El componente de fragmento de contenido predeterminado solo muestra uno [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del fragmento de contenido al que se hace referencia. Con el cuadro de diálogo de componentes puede definir la variable [elemento, variación y rango de párrafos del fragmento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que desee mostrar en la página.
+Los fragmentos de contenido de Adobe Experience Manager AEM () son [se crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). [A continuación, puede utilizar estos fragmentos, y sus variaciones, al crear páginas de contenido](/help/sites-authoring/content-fragments.md). También puede utilizar un recurso de fragmento de contenido existente de la siguiente manera [arrastrándolo desde el explorador de recursos a la página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (al igual que para otros componentes basados en recursos, como el componente de base Imagen). El componente de fragmento de contenido predeterminado solo muestra uno [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del fragmento de contenido al que se hace referencia. Con el cuadro de diálogo de componentes puede definir la variable [elemento, variación y rango de párrafos del fragmento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que desee mostrar en la página.
 
 >[!NOTE]
 >
