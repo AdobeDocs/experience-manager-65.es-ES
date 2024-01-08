@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3adf2b03ac4e227af2b33099c24ec177b8ea7e1b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,26 @@ Utilice las opciones de comando de Java™ para definir la configuración de mem
 
 AEM Especifique la opción de configuración de memoria al iniciar WCM desde la línea de comandos. AEM AEM Los scripts de inicio/parada de WCM de WCM de WCM o los scripts personalizados para administrar el inicio de WCM también se pueden modificar para definir la configuración de memoria necesaria.
 
-Si ya ha definido el tamaño de la pila en 512 MB, puede que desee analizar más el problema de memoria creando un volcado:
+Si ya ha definido el tamaño de la pila en 512 MB, puede que desee analizar más el problema de memoria creando un volcado.
 
 Para crear automáticamente un volcado de la pila cuando se agote la memoria, utilice el siguiente comando:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Este método genera un archivo de volcado de pila (**java_...hprof**) siempre que el proceso se quede sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de la pila. Normalmente, un archivo de volcado de la pila es suficiente para analizar el problema.
+Este método genera un archivo de volcado de pila (**java_...hprof**) siempre que el proceso se quede sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de la pila.
+
+A menudo, se requieren tres archivos de volcado de la pila, recopilados durante un período de tiempo, para analizar el problema:
+
+* Antes de que se produzca un error
+* Durante el fallo 1
+* Durante el fallo 2
+* *Lo ideal es que también sea bueno recopilar información después de resolver el evento*
+
+Se pueden comparar para ver los cambios y cómo los objetos utilizan la memoria.
+
+>[!NOTE]
+>
+>Si recopila con regularidad dicha información o tiene experiencia en la lectura de volcados de la pila, un archivo de volcado de la pila puede ser suficiente para analizar el problema.
 
 ### AEM AEM La pantalla de bienvenida de la pantalla no se muestra en el explorador después de hacer doble clic en el inicio rápido de la aplicación de la {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
