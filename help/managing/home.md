@@ -2,16 +2,24 @@
 title: Guía del usuario de administración de AEM 6.5
 description: AEM AEM Descubra cómo administrar un proyecto de con éxito, con asistencia de recursos clave y una completa colección de guías del usuario de la versión 6.5 de.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 5a7729e1792bc5849682800781e31f41c6bb6e4a
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 81%
+source-wordcount: '294'
+ht-degree: 71%
 
 ---
 
 # Guía del usuario de administración de AEM 6.5
 
 AEM AEM Descubra cómo administrar un proyecto de con éxito, con asistencia de recursos clave y una completa colección de guías del usuario de la versión 6.5 de.
+
+## Administración de artículos clave
+
+* [Administración de proyectos: lista de comprobación de prácticas recomendadas](/help/managing/best-practices.md)
+* [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
+* [Prácticas recomendadas para la optimización de los motores de búsqueda y administración URL](/help/managing/seo-and-url-management.md)
+* [AEM Directrices de accesibilidad web de y](/help/managing/web-accessibility.md)
+* [Preparación de Adobe Experience Manager para la protección de datos y las normas de privacidad de datos](/help/managing/data-protection-and-privacy.md)
 
 ## Artículos clave de AEM
 
