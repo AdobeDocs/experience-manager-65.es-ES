@@ -2,9 +2,9 @@
 title: Guía del usuario de administración de AEM 6.5
 description: AEM AEM Descubra cómo administrar un proyecto de con éxito, con asistencia de recursos clave y una completa colección de guías del usuario de la versión 6.5 de.
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 5ee9bc34128738967124855652c7b38c65d8779d
+source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
 workflow-type: tm+mt
-source-wordcount: '84'
+source-wordcount: '90'
 ht-degree: 11%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 11%
 AEM Descubra cómo administrar un proyecto de correctamente, con la asistencia de recursos clave, junto con prácticas recomendadas y directrices.
 
 ## Artículos clave
+
+Los artículos clave de esta guía incluyen:
 
 * [Administración de proyectos: lista de comprobación de prácticas recomendadas](/help/managing/best-practices.md)
 * [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
