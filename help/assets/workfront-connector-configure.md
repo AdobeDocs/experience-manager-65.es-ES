@@ -1,13 +1,13 @@
 ---
-title: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
-description: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
+title: Configurar [!DNL Workfront for Experience Manager enhanced connector]
+description: Configurar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 2cf980f643e1896ecd581fec44f963d7eb44766d
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -60,6 +60,7 @@ Para suscribirse a los eventos, siga estos pasos:
 1. Vaya a la pestaña Carpetas vinculadas del proyecto en los servicios en la nube.
 1. Ruta principal de la carpeta vinculada: seleccione una carpeta en DAM en la que desee crear las carpetas vinculadas. Si se deja vacío, el valor predeterminado será /content/dam. Asegúrese de que el esquema de metadatos de Workfront Tools y el esquema de metadatos de la carpeta de carpetas vinculadas de Workfront se hayan aplicado a la carpeta seleccionada.
 1. Estructura de carpetas vinculadas: introduzca valores separados por comas. Cada valor debe ser `DE:<some-project-custom-form-field>`, Portfolio, Programa, Año, Nombre o algún &quot;Valor de cadena literal&quot; (este último con comillas). Actualmente está establecido en Portfolio, Programa, Año, DE: Tipo de proyecto, Nombre.
+1. Configuración de permisos: Añadir `jcr:all permissions` permisos para `/conf/workfront-tools/settings/cloudconfigs` para `wf-workfront-users` grupo.
 1. La casilla de verificación Generar título de carpeta vinculado en Workfront mediante los nombres de estructura de carpetas debe activarse si el título de la carpeta en Workfront debe incluir todas las carpetas de la estructura. De lo contrario, es el título de la última carpeta.
 1. Subcarpetas multicampo permite especificar una lista de carpetas que deben crearse como una carpeta secundaria de la carpeta vinculada.
 1. Estado del proyecto: seleccione el estado del proyecto para crear la carpeta vinculada.
