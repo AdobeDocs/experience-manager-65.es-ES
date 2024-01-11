@@ -7,10 +7,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 34%
+source-wordcount: '797'
+ht-degree: 24%
 
 ---
 
@@ -18,14 +18,14 @@ ht-degree: 34%
 
 AEM El desarrollo de proyectos de comercio de basados en Commerce integration framework CIF AEM AEM () para la sigue las mismas reglas y prácticas recomendadas que otros proyectos de. Primero revise estos:
 
-- [Guía del usuario sobre desarrollo en AEM 6.5](/help/sites-developing/home.md)
+- [Guía del usuario sobre desarrollo en AEM 6.5](/help/sites-developing/getting-started.md)
 - [AEM Conceptos principales de](/help/sites-developing/the-basics.md)
 - [AEM Desarrollo: directrices y prácticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [AEM Cómo crear proyectos de con Apache Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## AEM Desarrollo local para comercio de {#local}
 
-Se recomienda contar con un entorno de desarrollo local para trabajar con proyectos CIF.
+CIF Se recomienda contar con un entorno de desarrollo local para trabajar con proyectos de la.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Para comenzar con la Tienda de referencia de Venia, simplemente clone el [Reposi
 
 >[!NOTE]
 >
->El proyecto de Tienda de referencia de Venia contiene dos perfiles de compilación para AEM as a Cloud Service y AEM 6.5. Compruebe el archivo [readme.md del proyecto](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) para ver cómo se utilizan. AEM Para la versión 6.5, utilice la variable `classic` perfil.
+>AEM El proyecto de Tienda de referencia de Venia contiene dos perfiles de compilación para as a Cloud Service AEM y la versión 6.5 de. Compruebe la [archivo readme.md del proyecto](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) para ver cómo se utilizan. AEM Para la versión 6.5, utilice la variable `classic` perfil.
 
 ### AEM Conectar con el sistema de comercio de
 

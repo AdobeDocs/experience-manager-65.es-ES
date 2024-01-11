@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1792'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ Una vez que se haya familiarizado con estos conceptos básicos, encontrará info
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
 * [Solución de problemas](/help/sites-deploying/troubleshooting.md)
 * [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configurar](/help/sites-deploying/configuring.md)
+* [Configuración](/help/sites-deploying/configuring.md)
 * [AEM Actualización a 6.5](/help/sites-deploying/upgrade.md)
 * [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
@@ -73,7 +73,7 @@ AEM Partiendo de esta base, también ofrece varias funciones de nivel de aplicac
 * **Sitios web**
 * **Aplicaciones móviles**
 * **Publicaciones digitales**
-* **Formularios y documentos**
+* **Forms y documentos**
 * **Recursos digitales**
 * **Communities**
 * **Comercio en línea**
@@ -84,7 +84,7 @@ AEM El servidor de la es **Basado en Java** y se ejecuta en la mayoría de los s
 
 >[!NOTE]
 >
->La función Adaptive Forms AEM, disponible en QuickStart de la versión 6.5 de la versión, está diseñada únicamente para fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad de Forms adaptable requiere una licencia adecuada.
+>La función Adaptive Forms AEM, disponible en QuickStart de la versión 6.5 de la versión, está diseñada únicamente para fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad Formularios adaptables requiere una licencia adecuada.
 
 ### Escenarios de implementación habituales {#typical-deployment-scenarios}
 
@@ -287,9 +287,9 @@ AEM Se inicia la sesión y redirige automáticamente el explorador web a la pág
 
 AEM Una vez que haya iniciado sesión, tendrá acceso a la interfaz de usuario de. Para obtener más información, según su función, consulte lo siguiente:
 
-* [Creación](/help/sites-authoring/home.md)
+* [Creación](/help/sites-authoring/first-steps.md)
 * [Administración](/help/sites-administering/home.md)
-* [Desarrollo de](/help/sites-developing/home.md)
+* [Desarrollo de](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
 ## Implementación avanzada {#advanced-deployment}
@@ -302,7 +302,7 @@ AEM La sección anterior le proporcionará una buena comprensión de los concept
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
 * [Solución de problemas](/help/sites-deploying/troubleshooting.md)
 * [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configurar](/help/sites-deploying/configuring.md)
+* [Configuración](/help/sites-deploying/configuring.md)
 * [AEM Actualización a 6.5](/help/sites-deploying/upgrade.md)
 * [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)

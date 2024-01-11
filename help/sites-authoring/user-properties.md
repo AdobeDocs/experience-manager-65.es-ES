@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 64%
+source-wordcount: '521'
+ht-degree: 63%
 
 ---
 
@@ -103,9 +103,9 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
   Esta opción habilita los métodos abreviados de teclado. De forma predeterminada, están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
 
-* **Usar experiencia de autoría clásica**
+* **Usar experiencia de creación clásica**
 
-  Esta opción habilita [IU clásica](/help/sites-classic-ui-authoring/home.md)Creación de páginas basada en. De forma predeterminada, se utiliza la interfaz de usuario estándar.
+  Esta opción habilita [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)Creación de páginas basada en. De forma predeterminada, se utiliza la interfaz de usuario estándar.
 
 * **Activar la página principal de los recursos**
 

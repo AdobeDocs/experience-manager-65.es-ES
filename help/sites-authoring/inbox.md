@@ -2,7 +2,7 @@
 title: Bandeja de entrada para administrar tareas
 description: Administrar las tareas con la bandeja de entrada de Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 39%
@@ -39,7 +39,7 @@ Estas notificaciones las recibe en su propia bandeja de entrada, donde puede ver
 >* [Proyectos](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Proyectos: trabajo con tareas](/help/sites-authoring/task-content.md)
 >* [Flujos de trabajo](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Forms](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}

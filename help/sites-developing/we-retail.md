@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 8%
+source-wordcount: '727'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ Aunque ilustra un vertical minorista, la forma en que se configura el sitio se p
 
 AEM AEM Como implementación de referencia estándar de, We.Retail muestra algunas de las funciones más potentes de las soluciones de de de.
 
-| **Funcionalidad** | **Descripción** | **¿Interesado?** |
+| **Función** | **Descripción** | **¿Interesado?** |
 |---|---|---|
 | [Estructura del sitio globalizada](/help/sites-administering/tc-bp.md) | We.Retail incluye formatos de idioma que se copian en tiempo real en sitios específicos de cada país. | [¡Pruébalo!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Diseño interactivo](/help/sites-authoring/responsive-layout.md) | Todas las páginas tienen un diseño interactivo para adaptarse dinámicamente a la pantalla y al tamaño del dispositivo. | [¡Pruébalo!](/help/sites-developing/we-retail-responsive-layout.md) |
@@ -49,7 +49,7 @@ AEM We.Retail se entrega como contenido de muestra de la. Para usar, simplemente
 
 >[!CAUTION]
 >
->AEM We.Retail se basa en la tecnología más reciente de la red de distribución de productos de la industria de la y, por lo tanto, no es compatible [creación de IU clásica](/help/sites-classic-ui-authoring/home.md).
+>AEM We.Retail se basa en la tecnología más reciente de la red de distribución de productos de la industria de la y, por lo tanto, no es compatible [creación de IU clásica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### Última versión {#latest-version}
 
@@ -75,7 +75,7 @@ La siguiente tabla ofrece una descripción general de las principales funciones 
 * **Disponible** significa que los ejemplos de la función se encuentran en el contenido de muestra.
 * **No disponible** significa que los ejemplos de la función no están disponibles en el contenido de muestra, pero no significa que la función en sí no lo esté.
 
-| **Funcionalidad** | **We.Retail** | **Geometrixx** |
+| **Función** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | Estructura del sitio globalizada | Los formatos de idiomas se copian en tiempo real en sitios específicos de cada país | No disponible |
 | Fragmentos de contenido | Disponible | No disponible |
@@ -85,7 +85,7 @@ La siguiente tabla ofrece una descripción general de las principales funciones 
 | HTL | Todos los componentes | Limitado |
 | Direccionamiento | Para todas las páginas | Solo Geometrixx Outdoors |
 | Screens | Disponible | No disponible |
-| Móvil | No disponible | Disponible |
+| Mobile | No disponible | Disponible |
 | Manuscritos | No disponible | Disponible |
 | Visualizador de carrusel, descargas y componentes de gráficos | No disponible | Disponible |
 | Control de columna | Reemplazado por el contenedor de diseño | Disponible |

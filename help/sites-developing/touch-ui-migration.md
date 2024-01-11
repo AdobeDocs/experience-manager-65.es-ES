@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
@@ -144,7 +144,7 @@ Aunque no están directamente relacionados con una migración a la interfaz de u
 
 AEM Para obtener información completa sobre el desarrollo de los recursos, consulte la recopilación de recursos en:
 
-* [Guía del usuario sobre desarrollo](/help/sites-developing/home.md)
+* [Guía del usuario sobre desarrollo](/help/sites-developing/getting-started.md)
 * [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM Tutorials y vídeos de 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)

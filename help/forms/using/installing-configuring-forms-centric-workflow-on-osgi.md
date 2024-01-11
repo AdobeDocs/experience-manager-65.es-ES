@@ -5,7 +5,7 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 97%
@@ -28,7 +28,7 @@ AEM Forms es una potente plataforma de clase empresarial. El flujo de trabajo c
 >
 >Con el flujo de trabajo centrado en Forms de OSGi, puede generar e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi, sin tener que instalar la capacidad Process Management completa en la pila JEE. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los flujos de trabajo de AEM centrados en Forms de OSGi y Process Management en JEE para conocer las diferencias y similitudes en las capacidades.
 >
->Después de la comparación, si decide instalar la capacidad Process Management en la pila de JEE, consulte [Instalación o actualización de AEM Forms en JEE](/help/forms/home.md) para obtener información detallada sobre la instalación y configuración de la pila JEE y las funcionalidades de Process Management.
+>Después de la comparación, si decide instalar la capacidad Process Management en la pila de JEE, consulte [Instalación o actualización de AEM Forms en JEE](/help/forms/using/introduction-aem-forms.md) para obtener información detallada sobre la instalación y configuración de la pila JEE y las funcionalidades de Process Management.
 
 ## Topología de implementación {#deployment-topology}
 

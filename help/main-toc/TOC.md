@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
+source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
 workflow-type: tm+mt
-source-wordcount: '7328'
+source-wordcount: '7297'
 ht-degree: 68%
 
 ---
@@ -17,8 +17,7 @@ ht-degree: 68%
 # Documentación de Adobe Experience Manager 6.5 {#content}
 
 + Notas de la versión {#release-notes}
-   + [AEM Notas de la versión de.5](/help/release-notes/home.md)
-   + [Notas de la versión actual](/help/release-notes/release-notes.md)
+   + [Notas de la versión](/help/release-notes/release-notes.md)
    + Notas de la versión anterior {#service-pack}
       + [6.5.18](/help/release-notes/previous/6.5.18.md)
       + [6.5.17](/help/release-notes/previous/6.5.17.md)
@@ -74,7 +73,6 @@ ht-degree: 68%
    + [Compatibilidad con cookies de SameSite](/help/sites-administering/same-site-cookie-support.md)
 + Sites {#sites}
    + Creación {#authoring}
-      + [Creación de Guía del usuario](/help/sites-authoring/home.md)
       + AEM Tareas, herramientas y conceptos esenciales para la creación de {#essentials}
          + [Primeros pasos para los autores](/help/sites-authoring/first-steps.md)
          + [Creación de páginas](/help/sites-authoring/page-authoring.md)
@@ -113,7 +111,7 @@ ht-degree: 68%
          + [Perspectiva de contenido](/help/sites-authoring/content-insights.md)
          + [Crear contenido accesible (Conformidad con WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
          + [Configuración de componentes en modo de diseño](/help/sites-authoring/default-components-designmode.md)
-         + [Componentes básicos](/help/sites-authoring/default-components-foundation.md)
+         + [Componentes de base](/help/sites-authoring/default-components-foundation.md)
          + [Andamiaje](/help/sites-authoring/scaffolding.md)
          + [Visualización de datos de análisis de la página](/help/sites-authoring/page-analytics-using.md)
       + Proyectos {#projects}
@@ -270,7 +268,6 @@ ht-degree: 68%
          + [Administración de contenido para Screens](/help/sites-administering/content-management-screens.md)
          + [Acceso a WebDAV](/help/sites-administering/webdav-access.md)
    + Creación de IU clásica {#classic-ui}
-      + [Información general sobre la Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md)
       + Introducción a la creación de IU clásica {#introduction}
          + [Primeros pasos para los autores](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
          + [Creación en la IU clásica](/help/sites-classic-ui-authoring/classicui.md)
@@ -340,7 +337,6 @@ ht-degree: 68%
          + [Uso de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [Convenciones de nomenclatura para pruebas de recursos](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
-   + [[!DNL Assets] guía del usuario](/help/assets/home.md)
    + [Acerca de DAM](/help/assets/assets.md)
    + [Prácticas recomendadas para recursos](/help/assets/best-practices-for-assets.md)
    + [Accesibilidad en [!DNL Assets]](/help/assets/accessibility.md)
@@ -504,7 +500,6 @@ ht-degree: 68%
       + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Configuración de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
-   + [Guía de AEM 6.5 Forms](/help/forms/home.md)
    + Notas de la versión {#release-notes-new-features}
       + [¿Qué hay de nuevo?](/help/forms/using/whats-new.md)
       + [Preguntas frecuentes](/help/forms/using/frequently-asked-questions-faq.md)
@@ -1192,9 +1187,8 @@ ht-degree: 68%
       + [Generar y trabajar con hash en formularios PDF dinámicos](/help/forms/developing/hashing-forms.md)
       + [Pasar credenciales mediante encabezados WS-Security](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
-   + [AEM Content and Commerce](/help/commerce/home.md)
-   + [AEM Cambios importantes en el contenido y el comercio de la](/help/commerce/cif/changes.md)
    + [Introducción y descripción general](/help/commerce/cif/introduction.md)
+   + [AEM Cambios importantes en el contenido y el comercio de la](/help/commerce/cif/changes.md)
    + Integraciones {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Solución de comercio de terceros](/help/commerce/cif/integrating/third-party.md)
@@ -1241,7 +1235,7 @@ ht-degree: 68%
 + Edge Delivery Services {#edge-delivery-services}
    + [Introducción a Edge Delivery](/help/edge/overview.md)
    + [Uso de Edge Delivery](/help/edge/using.md)
-+ Headless {#headless}
++ {#headless} sin encabezado
    + [Recorridos sin AEM](/help/journey-headless/overview.md)
    + AEM Recorrido de desarrollador sin encabezado {#developer}
       + [Comprender el sin encabezado en AEM](/help/journey-headless/developer/overview.md)
@@ -1276,7 +1270,6 @@ ht-degree: 68%
    + [¿Qué es un recorrido de documentación?](/help/journey-documentation/home.md)
 + Implementación {#implementing}
    + Desarrollo de {#developing}
-      + [Información general sobre el desarrollo de Guía del usuario](/help/sites-developing/home.md)
       + Introducción para desarrolladores {#introduction}
          + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
          + [AEM Conceptos principales de](/help/sites-developing/the-basics.md)
@@ -1529,7 +1522,6 @@ ht-degree: 68%
          + [Creación de sitios para dispositivos móviles](/help/sites-developing/mobile.md)
          + [Emuladores](/help/sites-developing/emulators.md)
    + Implementación {#deploying}
-      + [Guía del usuario de implementación](/help/sites-deploying/home.md)
       + AEM Introducción a la plataforma de {#introduction}
          + [AEM Introducción a la plataforma de](/help/sites-deploying/platform.md)
          + [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)

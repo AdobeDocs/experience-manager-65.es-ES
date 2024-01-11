@@ -1,14 +1,15 @@
 ---
 title: Introducción y descripción general
-description: Introducción y descripción general de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) es el patrón recomendado de Adobe para integrar y ampliar los servicios de comercio de Adobe Commerce y otras soluciones de comercio de terceros con Experience Cloud.
+description: AEM AEM Aprenda a utilizar y administrar Contenido y comercio de, con artículos útiles sobre integraciones y cómo empezar a utilizar Tienda de productos de la tienda de la tienda de la tienda de la manera más rápida y sencilla.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 92%
+source-wordcount: '838'
+ht-degree: 85%
 
 ---
+
 
 # Content and Commerce {#content-commerce}
 
@@ -16,7 +17,7 @@ Con Content y Commerce de Adobe Experience Manager, las marcas pueden escalar e 
 
 ## Cómo Content and Commerce ayudan a los clientes a tener éxito
 
-Con expectativas crecientes de los clientes en cuanto a experiencias de comercio en línea, las marcas se ven presionadas para ofrecer experiencias diferenciadas y más contenido con mayor rapidez. Sin embargo, la implementación de una plataforma de administración de contenido a menudo requiere fuertes inversiones en tiempo y presupuesto para desarrollar elementos fundamentales, tales como componentes personalizados y herramientas de creación, y acumula costes en mantenimiento y actualizaciones. Experience Manager Sites ofrece Content and Commerce como módulo complementario de Experience Manager , que proporciona componentes comerciales básicos, herramientas de creación y un escaparate de referencia predeterminados para acelerar el lanzamiento, permitir una colaboración fluida entre los equipos e impulsar la conversión.
+Con expectativas crecientes de los clientes en cuanto a experiencias de comercio en línea, las marcas se ven presionadas para ofrecer experiencias diferenciadas y más contenido con mayor rapidez. Sin embargo, la implementación de una plataforma de administración de contenido a menudo requiere fuertes inversiones en tiempo y presupuesto para desarrollar elementos fundamentales, tales como componentes personalizados y herramientas de creación, y acumula costes en mantenimiento y actualizaciones. Experience Manager Sites ofrece Content and Commerce como módulo complementario para Experience Manager que proporciona componentes principales de comercio listos para usar, herramientas de creación y una tienda de referencia para acelerar el lanzamiento, permitir una colaboración fluida entre equipos e impulsar la conversión.
 
 Las marcas pueden integrar Experience Manager con Adobe Commerce, parte de Adobe Experience Cloud, así como con cualquier motor de comercio que elijan. Con Experience Manager Content and Commerce, las marcas pueden hacer lo siguiente:
 

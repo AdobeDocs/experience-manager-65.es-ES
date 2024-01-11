@@ -1,18 +1,19 @@
 ---
 title: AEM Primeros pasos para los autores al crear contenido en la
-description: Información general sobre las tareas principales que se utilizan para crear contenido con Adobe AEM Experience Manager ().
+description: AEM Explore los conceptos clave para la creación de contenido en 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de la página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 6%
 
 ---
+
 
 # Primeros pasos para los autores{#first-steps-for-authors}
 

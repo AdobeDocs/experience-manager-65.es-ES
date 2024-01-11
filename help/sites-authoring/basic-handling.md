@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2963'
 ht-degree: 41%
@@ -91,7 +91,7 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>Estas consolas permiten importar y <a href="/help/assets/home.md">administrar recursos digitales</a> como imágenes, vídeos, documentos y archivos de audio. AEM Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de. </td>
+   <td>Estas consolas permiten importar y <a href="/help/assets/assets.md">administrar recursos digitales</a> como imágenes, vídeos, documentos y archivos de audio. AEM Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -107,7 +107,7 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Forms</td>
-   <td>Esta consola le permite crear, administrar y procesar su <a href="/help/forms/home.md">formularios y documentos</a>.</td>
+   <td>Esta consola le permite crear, administrar y procesar su <a href="/help/forms/using/introduction-aem-forms.md">formularios y documentos</a>.</td>
   </tr>
   <tr>
    <td>Personalización</td>

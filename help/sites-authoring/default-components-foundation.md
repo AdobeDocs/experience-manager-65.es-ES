@@ -1,15 +1,15 @@
 ---
-title: Componentes básicos
+title: Componentes de base
 description: Obtenga información sobre los componentes de base en Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '6872'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Componentes básicos {#foundation-components}
+# Componentes de base {#foundation-components}
 
 >[!CAUTION]
 >
@@ -973,7 +973,7 @@ Los componentes de formulario se utilizan para crear formularios para que los vi
 
 >[!NOTE]
 >
->Consulte [Ayuda de AEM Forms](/help/forms/home.md) para obtener información sobre AEM Forms.
+>Consulte [Ayuda de AEM Forms](/help/forms/using/introduction-aem-forms.md) para obtener información sobre AEM Forms.
 
 Forms se basa en varios componentes diferentes:
 

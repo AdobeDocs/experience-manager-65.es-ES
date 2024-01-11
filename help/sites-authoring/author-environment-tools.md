@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 46%
@@ -103,7 +103,7 @@ El aspecto y el control dependerán del tipo de dispositivo que utilice:
 
 ## Navegador de recursos {#assets-browser}
 
-El explorador de recursos muestra todos los [recursos](/help/assets/home.md) que se pueden utilizar directamente en la página actual.
+El explorador de recursos muestra todos los [recursos](/help/assets/assets.md) que se pueden utilizar directamente en la página actual.
 
 El explorador de recursos es una pestaña del panel lateral junto con la variable [exploración de componentes](/help/sites-authoring/author-environment-tools.md#components-browser)r y [árbol de contenido](/help/sites-authoring/author-environment-tools.md#content-tree). Para abrir o cerrar el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
