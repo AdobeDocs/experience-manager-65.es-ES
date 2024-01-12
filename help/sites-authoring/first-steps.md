@@ -1,6 +1,6 @@
 ---
 title: AEM Primeros pasos para los autores al crear contenido en la
-description: AEM Explore los conceptos clave para la creación de contenido en 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de la página.
+description: Explore los conceptos clave para la creación de contenido y la autorización en AEM 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de la página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,7 +10,7 @@ exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 6%
+ht-degree: 12%
 
 ---
 

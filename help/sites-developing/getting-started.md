@@ -1,6 +1,6 @@
 ---
 title: 'Introducción al desarrollo de AEM Sites: Tutorial de WKND'
-description: AEM Aprenda a crear la instancia de la. Obtenga más información acerca de la plataforma y los componentes y busque información sobre las herramientas de desarrollo y la personalización.
+description: Aprenda a crear la instancia de AEM. Obtenga más información acerca de la plataforma y los componentes, y busque información sobre las herramientas de desarrollo y la personalización.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 69%
+ht-degree: 80%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Recorridos sin AEM
-description: Recopilación de recorridos de documentación que describen cómo utilizar Adobe Experience Manager como CMS sin encabezado.
+description: Una colección de documentación que describe el uso de Adobe Experience Manager como CMS sin encabezado.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 source-git-commit: 719dd7b30c8ce3f02fe46c632b1589fcc74a1759
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 53%
+ht-degree: 63%
 
 ---
 
@@ -35,7 +35,7 @@ Los Recorridos sin encabezado están diseñados para personas diferentes, exponi
 
 El recorrido individual está definido para un perfil específico o audiencia, pero también incluye perfiles adicionales con los que el lector interactúa.
 
-La información de los recorridos puede ser útil para varias personas, pero un recorrido está dirigido a una persona específica y cierta información puede ser superflua a ciertas funciones.
+La información en los recorridos puede ser útil para varias personas, pero un recorrido está dirigido a una persona específica y cierta información puede ser superflua a ciertas funciones.
 
 ## Recorridos sin encabezado {#headless-journeys}
 
