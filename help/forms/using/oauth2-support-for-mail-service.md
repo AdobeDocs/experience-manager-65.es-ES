@@ -2,10 +2,10 @@
 title: Configuración de la autenticación basada en OAuth2 para Microsoft&reg; protocolos de servidor de correo de Office 365
 description: Configuración de la autenticación basada en OAuth2 para Microsoft&reg; protocolos de servidor de correo de Office 365
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 7%
+source-wordcount: '980'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ Para permitir que las organizaciones cumplan con los requisitos de correo electr
 
 1. Iniciar sesión en [https://portal.azure.com/](https://portal.azure.com/) y buscar **Azure Active Directory** en la barra de búsqueda y haga clic en el resultado.
 También puede navegar directamente a [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. Clic **Añadir** > **Registro de aplicación** > **Nuevo registro**
+1. Clic **Añadir** > **Registro de aplicación** > **Nuevo registro**.
 
    ![Registro de aplicaciones](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
@@ -33,7 +33,7 @@ En el caso anterior, **Cuentas en cualquier directorio organizativo (cualquier d
 
    ![Clave secreta](/help/forms/using/assets/azure_secretkey.png)
 
-1. Para añadir permisos, vaya a la aplicación recién creada y seleccione **Permisos de API** > **Añadir un permiso** > **Microsoft® Graph** > **Permisos delegados**
+1. Para añadir permisos, vaya a la aplicación recién creada y seleccione **Permisos de API** > **Añadir un permiso** > **Microsoft® Graph** > **Permisos delegados**.
 1. Seleccione las casillas de los siguientes permisos para la aplicación y haga clic en **Añadir permiso**:
 
    * `IMAP.AccessUser.All`
@@ -74,14 +74,14 @@ A continuación, debe generar el código de autorización, explicado en los paso
    >
    Si hay una aplicación de inquilino único, reemplace `common` con su `[tenantid]` en la siguiente URL para generar el código de autorización: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
-1. Cuando escriba la dirección URL anterior, se le redirigirá a la pantalla de inicio de sesión:
+1. Al escribir la dirección URL anterior, se le redirige a la pantalla de inicio de sesión:
    ![Pantalla de inicio](/help/forms/using/assets/azure_loginscreen.png)
 
 1. Introduzca el correo electrónico y haga clic en **Siguiente** y aparece la pantalla de permisos de la aplicación:
 
    ![Permitir permiso](/help/forms/using/assets/azure_permission.png)
 
-1. Una vez concedido el permiso, se le redirigirá a una nueva dirección URL como: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
+1. Cuando permite el permiso, se le redirige a una nueva dirección URL como: `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
 
 1. Copie el valor de `<code>` desde la URL anterior desde `0.ASY...` hasta `&session_state` en la dirección URL anterior.
 
@@ -134,7 +134,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   Si desea cambiar la configuración de autenticación Auth 2.0 a autenticación básica para un proceso determinado en un área de trabajo, puede establecer la variable **Autenticación OAuth 2.0** valor como &quot;False&quot; en **Usar configuración global** en el **Configuración de conexión** pestaña.
+   Si lo desea, puede cambiar la configuración de autenticación Auth 2.0 a autenticación básica para un proceso en particular en un área de trabajo. Para ello, establezca la variable **Autenticación OAuth 2.0** valor como &quot;False&quot; en **Usar configuración global** en el **Configuración de conexión** pestaña.
 
 ## Para habilitar las notificaciones de tareas oAuth {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Para configurar el extremo de correo electrónico {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html).
+   Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Solución de problemas {#troubleshooting}
 

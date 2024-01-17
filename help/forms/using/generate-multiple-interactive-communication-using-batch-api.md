@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
 workflow-type: tm+mt
-source-wordcount: '2136'
-ht-degree: 95%
+source-wordcount: '2134'
+ht-degree: 77%
 
 ---
 
@@ -22,7 +22,7 @@ La API por lotes acepta registros (datos) en formato JSON y desde un modelo de d
 
 ## Uso de la API por lotes {#using-the-batch-api}
 
-Puede utilizar la API por lotes junto con las carpetas inspeccionadas o como una API de REST independiente. Puede configurar una plantilla, un tipo de salida (HTML, PRINT o Ambos), una configuración regional, un servicio de relleno previo y un nombre para que las comunicaciones interactivas generadas utilicen la API por lotes.
+Puede utilizar la API por lotes con carpetas inspeccionadas o como una API de REST independiente. Puede configurar una plantilla, un tipo de salida (HTML, PRINT o Ambos), una configuración regional, un servicio de relleno previo y un nombre para que las comunicaciones interactivas generadas utilicen la API por lotes.
 
 Los registros se combinan con una plantilla de comunicación interactiva para generar una comunicación interactiva. Las API por lotes pueden leer registros (datos para plantillas de comunicación interactivas) directamente desde un archivo JSON o desde una fuente de datos externa a la que se accede a través del modelo de datos de formulario. Puede mantener cada registro en un archivo JSON independiente o crear una matriz JSON para guardar todos los registros en un solo archivo.
 
@@ -68,12 +68,12 @@ Los registros se combinan con una plantilla de comunicación interactiva para ge
 
 ### Uso de la API por lotes con carpetas inspeccionadas {#using-the-batch-api-watched-folders}
 
-Para facilitar la experiencia de la API, AEM Forms proporciona un servicio de carpetas inspeccionadas configurado para utilizar la API por lotes de forma predeterminada. Puede acceder al servicio a través de la interfaz de usuario de AEM Forms para generar diferentes comunicaciones interactivas. También puede crear servicios personalizados según sus necesidades. Puede utilizar los métodos que se indican a continuación para utilizar la API por lotes con una carpeta inspeccionada:
+Para facilitar la experiencia de la API, AEM Forms proporciona un servicio de carpetas inspeccionadas configurado para utilizar la API por lotes de forma predeterminada. Puede acceder al servicio a través de la interfaz de usuario de AEM Forms para generar varias comunicaciones interactivas. También puede crear servicios personalizados según sus necesidades. Puede utilizar los métodos que se indican a continuación para utilizar la API por lotes con una carpeta inspeccionada:
 
-* Especificar datos de entrada (registros) en el formato de archivo JSON para generar una comunicación interactiva
-* Utilice los datos de entrada (registros) guardados en una fuente de datos externa y a los que se accede a través de un modelo de datos de formulario para generar una comunicación interactiva
+* Especifique los datos de entrada (registros) en el formato de archivo JSON para que pueda generar una comunicación interactiva.
+* Utilice los datos de entrada (registros) guardados en una fuente de datos externa y a los que se accede a través de un modelo de datos de formulario para generar una comunicación interactiva.
 
-#### Especifique registros de datos de entrada en formato de archivo JSON para generar una comunicación interactiva {#specify-input-data-in-JSON-file-format}
+#### Especifique registros de datos de entrada en formato de archivo JSON para poder generar una comunicación interactiva {#specify-input-data-in-JSON-file-format}
 
 Los registros se combinan con una plantilla de comunicación interactiva para generar una comunicación interactiva. Puede crear un archivo JSON independiente para cada registro o crear una matriz JSON para guardar todos los registros en un solo archivo:
 
@@ -85,24 +85,24 @@ Para crear una comunicación interactiva a partir de los registros guardados en 
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
-   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el [patrón](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
+   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configure los parámetros avanzados:
    1. Abra la pestaña **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
 
       | Propiedad | Tipo | Descripción |
       |--- |--- |--- |
-      | templatePath | Cadena | Especifique la ruta de la plantilla de comunicación interactiva que desea utilizar. Por ejemplo, /content/dam/formsanddocuments/testsample/mediumic. Es una propiedad obligatoria. |
-      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es un [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()) aleatorio. |
+      | templatePath | Cadena | Especifique la ruta de la plantilla de comunicación interactiva que desea utilizar. Por ejemplo, `/content/dam/formsanddocuments/testsample/mediumic`. Es una propiedad obligatoria. |
+      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Booleano | Establezca el valor en False. Puede utilizar el parámetro usePrefillService para rellenar previamente la comunicación interactiva con los datos recuperados del servicio de relleno previo configurado para la comunicación interactiva correspondiente. Cuando usePrefillService se establece en True, los datos JSON de entrada (de cada registro) se tratan como argumentos FDM. El valor predeterminado es False. |
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio predeterminado no utiliza la opción Configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
 
-   1. Seleccionar **[!UICONTROL Crear]** Se creará la carpeta vigilada.
-1. Utilice la carpeta inspeccionada para generar una comunicación interactiva:
+   1. Seleccione **[!UICONTROL Crear]**.
+1. Utilice la carpeta vigilada creada para generar una comunicación interactiva:
    1. Abra la carpeta inspeccionada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada y coloque el archivo JSON en la carpeta recién creada.
    1. Espere a que la carpeta inspeccionada procese el archivo. Cuando se inicia el procesamiento, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta provisional.
-   1. Abra la carpeta de salida para ver el resultado:
+   1. Abra la carpeta de salida para poder ver el resultado:
       * Cuando especifica la opción PRINT en la configuración de la carpeta inspeccionada, se genera la salida PDF de la comunicación interactiva.
       * Cuando especifica la opción WEB en la configuración de la carpeta inspeccionada, se genera un archivo JSON por cada registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template).
       * Al especificar las opciones PRINT y WEB, se generan los dos documentos PDF y un archivo JSON por registro.
@@ -118,7 +118,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
    1. Seleccione el icono de lápiz del argumento del servicio de lectura para enlazar el argumento a un atributo de solicitud y especificar el valor del enlace. Vincula el argumento del servicio al atributo del enlace o el valor literal especificado, el cual se pasa al servicio como argumento para recuperar datos asociados con el valor especificado de la fuente de datos.
 
       <br>
-        En este ejemplo, el argumento del ID toma el valor del atributo del ID del perfil del usuario y lo pasa como argumento al servicio de lectura. Leerá y devolverá los valores de las propiedades asociadas del objeto del modelo de datos de empleado del ID especificado. Por lo tanto, si especifica 00250 en el campo ID del formulario, el servicio de lectura leerá los datos del empleado con el ID de empleado 00250.
+        En este ejemplo, el argumento del ID toma el valor del atributo del ID del perfil del usuario y lo pasa como argumento al servicio de lectura. Lee y devuelve valores de propiedades asociadas del objeto del modelo de datos de empleado para el ID especificado. Por lo tanto, si especifica 00250 en el campo ID del formulario, el servicio de lectura lee los detalles del empleado con 00250 ID de empleado.
         <br>
 
       ![Configurar el atributo de solicitud](assets/request-attribute.png)
@@ -126,7 +126,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
    1. Guarde las propiedades y el modelo de datos de formulario.
 1. Configure el valor del atributo de solicitud:
    1. Cree un archivo .json en el sistema de archivos y ábralo para editarlo.
-   1. Cree una matriz JSON y especifique el atributo principal para recuperar datos del modelo de datos de formulario. Por ejemplo, el siguiente JSON solicita al FDM que envíe los datos de registros en los que el ID es 27126 o 27127:
+   1. Cree una matriz JSON y especifique el atributo principal para poder recuperar datos del modelo de datos de formulario. Por ejemplo, el siguiente JSON solicita al FDM que envíe los datos de registros en los que el ID es 27126 o 27127:
 
       ```json
           [
@@ -147,37 +147,37 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
-   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el [patrón](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
+   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configure los parámetros avanzados:
    1. Abra la pestaña **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
 
       | Propiedad | Tipo | Descripción |
       |--- |--- |--- |
       | templatePath | Cadena | Especifique la ruta de la plantilla de comunicación interactiva que desea utilizar. Por ejemplo, /content/dam/formsanddocuments/testsample/mediumic. Es una propiedad obligatoria. |
-      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es un [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()) aleatorio. |  |
-      | usePrefillService | Booleano | Establezca el valor en True. El valor predeterminado es False.  Cuando el valor se establece en true, la API por lotes lee los datos del modelo de datos de formulario configurado y los cumplimenta en la comunicación interactiva. Cuando usePrefillService se establece en True, los datos JSON de entrada (de cada registro) se tratan como argumentos FDM. |
+      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | usePrefillService | Booleano | Establezca el valor en True. El valor predeterminado es false. Cuando el valor se establece en true, la API por lotes lee los datos del modelo de datos de formulario configurado y los cumplimenta en la comunicación interactiva. Cuando usePrefillService se establece en True, los datos JSON de entrada (de cada registro) se tratan como argumentos FDM. |
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio predeterminado no utiliza la opción Configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
 
-   1. Seleccionar **[!UICONTROL Crear]** Se creará la carpeta vigilada.
-1. Utilice la carpeta inspeccionada para generar una comunicación interactiva:
+   1. Seleccione **[!UICONTROL Crear]**.
+1. Utilice la carpeta vigilada creada para generar una comunicación interactiva:
    1. Abra la carpeta inspeccionada. Vaya a la carpeta de entrada.
    1. Cree una carpeta en la carpeta de entrada. Coloque el archivo JSON creado en el paso 2 en la carpeta recién creada.
    1. Espere a que la carpeta inspeccionada procese el archivo. Cuando se inicia el procesamiento, el archivo de entrada y la subcarpeta que contiene el archivo se mueven a la carpeta provisional.
-   1. Abra la carpeta de salida para ver el resultado:
+   1. Abra la carpeta de salida para poder ver el resultado:
       * Cuando especifica la opción PRINT en la configuración de la carpeta inspeccionada, se genera la salida PDF de la comunicación interactiva.
       * Cuando especifica la opción WEB en la configuración de la carpeta inspeccionada, se genera un archivo JSON por cada registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template).
       * Al especificar las opciones PRINT y WEB, se generan los dos documentos PDF y un archivo JSON por registro.
 
 ## Invocar la API por lotes utilizando solicitudes REST
 
-Puede invocar [la API por lotes](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/index.html) mediante solicitudes de transferencia de estado representacional (REST). Permite proporcionar un extremo REST a otros usuarios para que accedan a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. Puede desarrollar su propio servlet Java personalizado para implementar la API en la instancia de AEM.
+Puede invocar [la API por lotes](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) mediante solicitudes de transferencia de estado representacional (REST). Permite proporcionar un extremo REST a otros usuarios para que accedan a la API y configurar sus propios métodos para procesar, almacenar y personalizar la comunicación interactiva. AEM Puede desarrollar su propio servlet Java™ personalizado para implementar la API en la instancia de la.
 
-Antes de implementar el servlet Java, asegúrese de que tiene una comunicación interactiva y de que los archivos de datos correspondientes están listos. Siga los siguientes pasos para crear e implementar el servlet Java:
+Antes de implementar el servlet Java™, asegúrese de que tiene una comunicación interactiva y de que los archivos de datos correspondientes están listos. Siga estos pasos para poder crear e implementar el servlet Java™:
 
 1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de ejemplo que aparece a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
-1. [Creación e implementación de un proyecto AEM mediante Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=es) en la instancia de AEM.
-1. Agregue el [AEM Forms Client SDK versión 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) o posterior en la lista de dependencias del archivo POM de su proyecto de AEM. Por ejemplo,
+1. [Creación e implementación de un proyecto AEM mediante Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) en la instancia de AEM.
+1. Añadir [AEM Forms Client SDK versión 6.0.12 o posterior](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) AEM en la lista de dependencias del archivo POM de su proyecto de. Por ejemplo,
 
    ```xml
        <dependency>
@@ -187,7 +187,7 @@ Antes de implementar el servlet Java, asegúrese de que tiene una comunicación 
        </dependency>
    ```
 
-1. Abra el proyecto Java y cree un archivo .java como, por ejemplo, CCMBatchServlet.java. Añada el siguiente código al archivo:
+1. Abra el proyecto Java™ y cree un archivo .java como, por ejemplo, CCMBatchServlet.java. Añada el siguiente código al archivo:
 
    ```java
            package com.adobe.fd.ccm.multichannel.batch.integration;
@@ -323,12 +323,12 @@ Antes de implementar el servlet Java, asegúrese de que tiene una comunicación 
    ```
 
 1. En el código anterior, reemplace la ruta de la plantilla (setTemplatePath) con la ruta de su plantilla y establezca el valor de la API setBatchType:
-   * Cuando se especifica la opción PRINT, se genera la salida PDF de la comunicación interactiva.
+   * Cuando se especifica el PDF de la opción PRINT, se genera la salida de la comunicación interactiva.
    * Cuando especifica la opción WEB, se genera un archivo JSON por cada registro. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template).
    * Al especificar las opciones PRINT y WEB, se generan los dos documentos PDF y un archivo JSON por registro.
 
-1. [Utilice maven para implementar el código actualizado en la instancia de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=es).
-1. Invoque la API por lotes para generar la comunicación interactiva. La opción PRINT de la API por lotes devuelve un flujo de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template). Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve un flujo de archivos PDF y archivos JSON.
+1. [Utilice maven para implementar el código actualizado en la instancia de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. Para generar la comunicación interactiva, invoque la API por lotes. La opción PRINT de la API por lotes devuelve un flujo de archivos PDF y .json en función del número de registros. Puede utilizar el archivo JSON para [rellenar previamente una plantilla web](#web-template). Si utiliza el código anterior, la API se implementa en `http://localhost:4502/bin/batchServlet`. El código imprime y devuelve un flujo de archivos PDF y archivos JSON.
 
 ### Rellenar previamente una plantilla web {#web-template}
 
@@ -363,4 +363,4 @@ Además de guardar los datos en el sistema de archivos, los archivos JSON se alm
 
 >[!NOTE]
 >
->Únicamente el protocolo CRX está habilitado de forma predeterminada. Para habilitar el resto de protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante el Administrador de configuración](https://helpx.adobe.com/es/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>Únicamente el protocolo CRX está habilitado de forma predeterminada. Para habilitar el resto de protocolos admitidos, consulte [Configuración del servicio de relleno previo mediante el Administrador de configuración](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
