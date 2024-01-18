@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2c5791e972deef5fe81768d10ad53acaf946332a
+source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4376'
 ht-degree: 1%
 
 ---
@@ -444,6 +444,39 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
       "visualSimilaritySearch"
     ]
   "refresh": true
+  ```
+
+* Al ejecutar una consulta de GraphQL con variables opcionales, si un valor específico es **no** siempre que sea para la variable opcional, el valor de esa variable se considerará implícito `null`. Esto significa que el filtro solo coincidirá con `null` valores de la propiedad correspondiente.
+
+  Por ejemplo, en la consulta siguiente, donde no se especifica ningún valor para la propiedad `lastName`:
+
+  ```graphql
+  query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+      }
+    }
+  }
+  ```
+
+  Solo los autores con `lastName` se devolverá la propiedad establecida en null:
+
+  ```graphql
+  {
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": null
+        }
+      ]
+    }
+  }
+  }
   ```
 
 * Si actualiza su [!DNL Experience Manager] instancia de 6.5.0 a 6.5.4 al Service Pack más reciente de Java™ 11, verá lo siguiente `RRD4JReporter` excepciones en la `error.log` archivo. Para detener las excepciones, reinicie la instancia de [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
