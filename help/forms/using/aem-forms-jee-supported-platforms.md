@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: 75139b4a951269aeacc689baec1da6bf72ce65bc
 workflow-type: tm+mt
-source-wordcount: '3976'
+source-wordcount: '4002'
 ht-degree: 52%
 
 ---
@@ -162,7 +162,12 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td><p>Compatible</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 4.4 </p> </td>
+   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p>Repositorio Microkernel</p> </td>
+   <td><p>Compatible</p> </td>
+  </tr>
+    <tr>
+   <td><p> MongoDB Enterprise 6.0 </p> </td>
    <td><p>Repositorio Microkernel</p> </td>
    <td><p>Compatible</p> </td>
   </tr>
@@ -583,7 +588,7 @@ Para conocer los requisitos adicionales, consulte:
 - Aceleración de hardware de vídeo (opcional);
 - Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 - Privilegios administrativos para instalar Designer
-- Tiempo de ejecución de 32 bits de Microsoft® Visual C++ 2019 (VC 14.28 o superior)
+- Microsoft® Visual C++ 2019 (VC 14.28 o superior) con tiempo de ejecución de 32 bits
 
 ### Adobe Acrobat y Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -827,6 +832,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Versión 6.5.19.1 (15 de diciembre de 2023)
+
+| Compatibilidad añadida | Compatibilidad eliminada | Compatibilidad obsoleta |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 6.0 | MongoDB Enterprise 4.4 |  |
+| MongoDB Enterprise 5.0 |  |  |
+|  | |  |
+
 ### Versión 6.5.18.0 (31 de agosto de 2023)
 
 | Compatibilidad añadida | Compatibilidad eliminada | Compatibilidad obsoleta |
@@ -913,5 +926,4 @@ Una plataforma en desuso seguirá recibiendo asistencia hasta la próxima versi�
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
     -->
-
 
