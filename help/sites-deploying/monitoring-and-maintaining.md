@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ AEM WCM registra registros detallados. Después de desempaquetar e iniciar Quick
 
 La rotación del archivo de registro hace referencia al proceso que limita el crecimiento del archivo creando un archivo periódicamente. AEM En, un archivo de registro llamado: `error.log` se gira una vez al día según las reglas dadas:
 
-* El `error.log` se cambia el nombre del archivo según el patrón {original_filename} `.yyyy-MM-dd`. Por ejemplo, el 11 de julio de 2010, se cambia el nombre del archivo de registro actual `error.log-2010-07-10`, luego un nuevo `error.og` se ha creado.
+* El `error.log` se cambia el nombre del archivo según el patrón `{original_filename}.yyyy-MM-dd`. Por ejemplo, el 11 de julio de 2010, se cambia el nombre del archivo de registro actual `error.log-2010-07-10`, luego un nuevo `error.log` se ha creado.
 
 * Los archivos de registro anteriores no se eliminan, por lo que es responsabilidad suya limpiar los archivos de registro antiguos periódicamente para limitar el uso del disco.
 
@@ -435,7 +435,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >
    >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para rotación diaria de registros).
    >
-   >Por ejemplo, a medianoche del 20 de enero de 2010 (o cuando se produce el primer mensaje de registro posterior a esta fecha para ser preciso), .. /logs/error.log se renombra a.. /logs/error.log.2010-01-20. El registro del 21 de enero se genera en (nuevo y vacío) .. /logs/error.log hasta que se transfiere al cambio de día.
+   >Por ejemplo, a medianoche del 20 de enero de 2010 (o cuando se produce el primer mensaje de registro posterior a esta fecha para ser preciso), .. /logs/error.log se renombra a .. /logs/error.log.2010-01-20. El registro del 21 de enero se genera en (nuevo y vacío) .. /logs/error.log hasta que se da la vuelta al cambio de día.
    >
    >| `'.'yyyy-MM` | Rotación al comienzo de cada mes |
    >|---|---|

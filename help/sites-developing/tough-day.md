@@ -4,9 +4,9 @@ description: La prueba de Día difícil simula la carga diaria de unos 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1826'
 ht-degree: 1%
 
 ---
@@ -400,7 +400,7 @@ Día difícil 2 crea una carpeta de registros en el mismo directorio en el que e
 * **toughday.log**: contiene mensajes relacionados con el estado de la aplicación, la información de depuración y los mensajes globales.
 * **toughday_&lt;testname>.log**: mensajes relacionados con la prueba especificada.
 
-Los registros no se sobrescriben, las ejecuciones posteriores anexan mensajes a los registros existentes. Los registros tienen varios niveles. Para obtener más información, consulte la ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+Los registros no se sobrescriben, las ejecuciones posteriores anexan mensajes a los registros existentes. Los registros tienen varios niveles. Para obtener más información, consulte la [parámetro loglevel.](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}
