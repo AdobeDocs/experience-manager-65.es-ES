@@ -1,12 +1,12 @@
 ---
 title: Introducción y descripción general
-description: AEM AEM Aprenda a utilizar y administrar Contenido y comercio de, con artículos útiles sobre integraciones y cómo empezar a utilizar Tienda de productos de la tienda de la tienda de la tienda de la manera más rápida y sencilla.
+description: Aprenda a utilizar y administrar AEM Content and Commerce con útiles artículos sobre integraciones y cómo empezar a utilizar AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
