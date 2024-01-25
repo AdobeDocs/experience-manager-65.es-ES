@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
+source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
 workflow-type: tm+mt
-source-wordcount: '7297'
+source-wordcount: '7312'
 ht-degree: 68%
 
 ---
@@ -177,7 +177,7 @@ ht-degree: 68%
          + [Tableros](/help/sites-administering/dashboards.md)
          + [Tablero de operaciones](/help/sites-administering/operations-dashboard.md)
          + [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md)
-         + [Recolección de papelera del almacén de datos](/help/sites-administering/data-store-garbage-collection.md)
+         + [Recopilación de datos almacenados desechables](/help/sites-administering/data-store-garbage-collection.md)
          + [Supervisión de recursos del servidor mediante la consola JMX](/help/sites-administering/jmx-console.md)
          + [Uso de registros](/help/sites-administering/troubleshooting.md)
          + [AEM Mantenimiento del registro de auditoría en el 6](/help/sites-administering/operations-audit-log.md)
@@ -1180,6 +1180,7 @@ ht-degree: 68%
       + [Procesamiento de documentos incluso si el servidor de AEM Forms no está completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [No se puede usar el servicio Output, el servicio Forms o el servicio Documento de registro (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Mitigación de vulnerabilidades RCE de Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Error al realizar una copia de seguridad de la base de datos al actualizar al Service Pack de AEM Forms. 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + Documentación heredada {#legacy-documentation}
       + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
       + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
