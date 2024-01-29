@@ -2,9 +2,9 @@
 title: Revisiones para AEM Forms
 description: Proporciona información sobre cómo descargar e instalar una revisión para AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
+source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '320'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # Revisiones de Adobe Experience Manager Forms{#aem-form-hotfix}
 
 Este artículo enumera las correcciones esenciales implementadas para abordar problemas conocidos, mejorar la estabilidad del sistema y mejorar el rendimiento general de AEM Forms.
+
+>[!NOTE]
+>
+> Las revisiones están diseñadas para ser acumulativas, e incluyen todas las correcciones anteriores. Al aplicar la revisión más reciente a una versión de, no solo se aborda el problema más reciente, sino que también incorpora todas las correcciones de errores y mejoras anteriores.
 
 ## Revisiones para Forms adaptable {#hotfix-for-adaptive-forms}
 
@@ -21,6 +25,34 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
     <td><strong>Fecha</strong></td>
     <td><strong>AEM Vínculo de descarga de revisión (vínculo de distribución de software de)</strong></td>
     <td><strong>Problemas solucionados</strong></td>
+  </tr>
+  <tr>
+    <td>martes, 29 de enero de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fforms-foundation-qs-content-4.0.170-FORMS-12692-B0001.zip">AEM Revisión para el paquete de servicio 6.5.19.0 de para Windows en el servidor JEE</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>En AEM Forms en el servidor JEE, no se puede procesar el Forms de HTML5 que utiliza la ruta de contexto. (FORMS-12485).</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>martes, 29 de enero de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-win-pkg-6.0.1016-004.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-linux-pkg-6.0.1016-004.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Linux</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">AEM Revisión para el paquete de servicio 6.5.18.0 de para Apple macOS</a></li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> El componente Firma manuscrita OOTB no se puede procesar para una vista previa en un formulario adaptable. (FORMS-12073).</li>
+    </ul>
+    </td>    
    </tr>
    <tr>
     <td>martes, 20 de noviembre de 2023</td>
@@ -38,9 +70,9 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
     <li>La comunicación interactiva con imágenes en línea grandes no se puede abrir en modo de edición. (FORMS-10578)</li>
     </ul>
     </td>    
-    </tr>
-    <tbody>
-     </table>
+  </tr>
+  <tbody>
+</table>
 
 ## Descargar e instalar una revisión {#download-install-hotfix}
 

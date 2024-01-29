@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 5da11d1f1a8568c12cb9f6ccea9d71e61c1310c3
+source-git-commit: 040170454345df352ed259806193c41c23bf953d
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4415'
 ht-degree: 1%
 
 ---
@@ -552,6 +552,8 @@ Para resolver el problema, busque `<AEM_Forms_Installation_dir>\jboss\bin\standa
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
 Para resolver el problema, [Volver a compilar los scripts de Sling como JSP, Java™ y Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * AEM Después de instalar el paquete de servicio 6.5.14.0 de y posteriores, los usuarios no pueden seleccionar una fuente de la interfaz de usuario de administración de JEE para los documentos de PDF al navegar a `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, ya que la lista de fuentes aparece vacía. (FORMS-12095)
+<!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
+* En AEM Forms en JEE, los Forms de HTML5 que utilizan la ruta de contexto no se pueden procesar. (FORMS-12485). Hay una revisión disponible para este problema. Para descargar e instalar la revisión, consulte [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
 
 #### AEM Forms en JEE
 
