@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 90%
+source-wordcount: '2597'
+ht-degree: 91%
 
 ---
 
@@ -169,7 +169,11 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 
 ## Enviar a la lista de Microsoft® SharePoint{#submit-to-sharedrive}
 
-El **[!UICONTROL Enviar a SharePoint]** La acción de envío conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® Sharepoint conectado.
+>[!NOTE]
+>
+La función Enviar a Microsoft® SharePoint AEM List se introdujo con el paquete de servicio 19 (6.5.19.0) de Forms de 6.5.
+
+El **[!UICONTROL Enviar a SharePoint]** La acción de envío conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
 
 ### Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
 
