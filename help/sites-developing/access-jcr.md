@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
+source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 2%
@@ -65,7 +65,7 @@ Utilice un `Session` instancia para crear una `javax.jcr.Node` ejemplo. A `Node`
 Node root = session.getRootNode();
 ```
 
-Una vez que haya creado una `Node`Por ejemplo, puede realizar tareas como crear otro nodo y agregarle un valor. Por ejemplo, el siguiente código crea dos nodos y agrega un valor al segundo nodo.
+Una vez que haya creado una `Node` Por ejemplo, puede realizar tareas como crear otro nodo y agregarle un valor. Por ejemplo, el siguiente código crea dos nodos y agrega un valor al segundo nodo.
 
 ```java
 // Store content
