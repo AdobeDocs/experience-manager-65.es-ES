@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '567'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Para obtener información sobre cómo consultar el JCR de Adobe CQ mediante la A
 
 Aunque hay diferentes maneras de conectarse a un repositorio y establecer una conexión, este artículo de desarrollo utiliza un método estático que pertenece a `org.apache.jackrabbit.commons.JcrUtils` clase. El nombre del método es `getRepository`. Este método toma un parámetro de cadena que representa la dirección URL del servidor de Adobe CQ. Por ejemplo, `http://localhost:4503/crx/server`.
 
-El `getRepository`El método devuelve un valor `Repository`, como se muestra en el ejemplo de código siguiente.
+El `getRepository` El método devuelve un valor `Repository` , como se muestra en el ejemplo de código siguiente.
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
@@ -42,14 +42,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Crear una instancia de sesión {#create-a-session-instance}
 
-El `Repository`representa el repositorio CRX. Utilice el `Repository`para establecer una sesión con el repositorio. Para crear una sesión, invoque el `Repository`de la instancia `login`método y pase un `javax.jcr.SimpleCredentials` objeto. El `login`El método devuelve un valor `javax.jcr.Session` ejemplo.
+El `Repository` representa el repositorio CRX. Utilice el `Repository` para establecer una sesión con el repositorio. Para crear una sesión, invoque el `Repository` de la instancia `login` método y pase un `javax.jcr.SimpleCredentials` objeto. El `login` El método devuelve un valor `javax.jcr.Session` ejemplo.
 
-Usted crea un `SimpleCredentials`utilizando su constructor y pasando los siguientes valores de cadena:
+Usted crea un `SimpleCredentials` utilizando su constructor y pasando los siguientes valores de cadena:
 
 * El nombre de usuario;
 * La contraseña correspondiente
 
-Al pasar el segundo parámetro, llame al del objeto String `toCharArray`método. El siguiente código muestra cómo llamar a `login`método que devuelve un valor `javax.jcr.Sessioninstance`.
+Al pasar el segundo parámetro, llame al del objeto String `toCharArray` método. El siguiente código muestra cómo llamar a `login` método que devuelve un valor `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -58,7 +58,7 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Crear una instancia de nodo {#create-a-node-instance}
 
-Utilice un `Session`instancia para crear una `javax.jcr.Node` ejemplo. A `Node`La instancia de permite realizar operaciones de nodo. Por ejemplo, puede crear un nodo. Para crear un nodo que represente el nodo raíz, invoque el `Session`de la instancia `getRootNode` , tal como se muestra en la línea de código siguiente.
+Utilice un `Session` instancia para crear una `javax.jcr.Node` ejemplo. A `Node` La instancia de permite realizar operaciones de nodo. Por ejemplo, puede crear un nodo. Para crear un nodo que represente el nodo raíz, invoque el `Session` de la instancia `getRootNode` , tal como se muestra en la línea de código siguiente.
 
 ```java
 //Create a Node
@@ -75,7 +75,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Recuperar valores de nodo {#retrieve-node-values}
 
-Para recuperar un nodo y su valor, invoque el `Node`de la instancia `getNode`y pase un valor de cadena que represente la ruta completa al nodo. Considere la estructura de nodos creada en el ejemplo de código anterior. Para recuperar el nodo de día, especifique adobe/day, como se muestra en el siguiente código:
+Para recuperar un nodo y su valor, invoque el `Node` de la instancia `getNode` y pase un valor de cadena que represente la ruta completa al nodo. Considere la estructura de nodos creada en el ejemplo de código anterior. Para recuperar el nodo de día, especifique adobe/day, como se muestra en el siguiente código:
 
 ```java
 // Retrieve content
@@ -86,7 +86,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Creación de nodos en el repositorio de Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
-El siguiente ejemplo de código Java™ representa una clase Java™ que se conecta a Adobe CQ y crea un `Session`y añade nuevos nodos. A un nodo se le asigna un valor de datos y, a continuación, el valor del nodo y su ruta se escriben en la consola. Cuando haya terminado con la sesión, asegúrese de cerrar la sesión.
+El siguiente ejemplo de código Java™ representa una clase Java™ que se conecta a Adobe CQ y crea un `Session` y añade nuevos nodos. A un nodo se le asigna un valor de datos y, a continuación, el valor del nodo y su ruta se escriben en la consola. Cuando haya terminado con la sesión, asegúrese de cerrar la sesión.
 
 ```java
 /*
