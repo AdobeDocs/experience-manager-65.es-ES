@@ -3,9 +3,9 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager AEM AEM () con la API de GraphQL de la para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
 workflow-type: tm+mt
-source-wordcount: '4847'
+source-wordcount: '4697'
 ht-degree: 54%
 
 ---
@@ -259,7 +259,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada |  `String` |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 |  Etiquetas |  `[String]` |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido |  `String` |  Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos de referencia: `[AllFragmentModels]`: matriz de todos los tipos de modelo, referenciada desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado directamente <br><br>Multicampo, con un tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos referenciados: `[AllFragmentModels]` : matriz de todos los tipos de modelo, a la que se hace referencia desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
 {style="table-layout:auto"}
 
@@ -705,40 +705,28 @@ El almacenamiento en caché de consultas persistentes no está habilitado de for
 
 ### Habilitar el almacenamiento en caché de consultas persistentes {#enable-caching-persisted-queries}
 
-Para habilitar el almacenamiento en caché de consultas persistentes, defina la variable de Dispatcher `CACHE_GRAPHQL_PERSISTED_QUERIES`:
+Para habilitar el almacenamiento en caché de consultas persistentes, se requieren las siguientes actualizaciones de los archivos de configuración de Dispatcher:
 
-1. Añada la variable al archivo de Dispatcher `global.vars`:
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->Cuando el almacenamiento en caché de Dispatcher está habilitado para consultas persistentes mediante `Define CACHE_GRAPHQL_PERSISTED_QUERIES` un `ETag` Dispatcher agrega el encabezado a la respuesta.
->
->De forma predeterminada, la variable `ETag` El encabezado de está configurado con la siguiente directiva:
->
->```
->FileETag MTime Size 
->```
->
->Sin embargo, esta configuración puede causar problemas cuando se utiliza en las respuestas de consulta persistentes, ya que no tiene en cuenta los pequeños cambios en la respuesta.
->
->Para lograr objetivos individuales `ETag` cálculos en *cada* respuesta única en el `FileETag Digest` la configuración debe usarse en la configuración de dispatcher:
->
->```xml
-><Directory />    
->   ...    
->   FileETag Digest
-></Directory> 
->```
+  >[!NOTE]
+  >
+  >Dispatcher agrega el sufijo `.json` a todas las direcciones URL de consulta persistentes, de modo que el resultado se pueda almacenar en caché.
+  >
+  >Esto sirve para garantizar que la consulta se ajuste a los requisitos de Dispatcher para los documentos que se pueden almacenar en caché.
 
->[!NOTE]
->
->Para ajustarse a la [Requisitos de Dispatcher para documentos que se pueden almacenar en caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), Dispatcher agrega el sufijo `.json` a todas las URL de consulta persistentes, de modo que el resultado se pueda almacenar en caché.
->
->Este sufijo se agrega mediante una regla de reescritura, una vez habilitado el almacenamiento en caché de consultas persistentes.
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### Configuración de CORS en Dispatcher {#cors-configuration-in-dispatcher}
 
@@ -927,7 +915,7 @@ Para acceder al extremo de GraphQL, configure una política CORS en el repositor
 
 Esta configuración debe especificar un origen de sitio web de confianza `alloworigin` o `alloworiginregexp` para los que se debe conceder acceso.
 
-Por ejemplo, para conceder acceso al punto de conexión de GraphQL  y punto de conexión de consultas persistentes para `https://my.domain`, puede utilizar:
+Por ejemplo, para conceder acceso al extremo de GraphQL y al extremo de consultas persistentes para `https://my.domain` puede utilizar:
 
 ```xml
 {
