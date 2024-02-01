@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 26ffe17d1ddd116a749f7f02e84e91d5b9759ca8
+source-git-commit: 220e060de43758ce07e82bedcee8d26fb46a9a6f
 workflow-type: tm+mt
-source-wordcount: '7329'
+source-wordcount: '7333'
 ht-degree: 68%
 
 ---
@@ -626,6 +626,7 @@ ht-degree: 68%
       + [Usar CAPTCHA en formularios adaptables](/help/forms/using/captcha-adaptive-forms.md)
       + [Palabras clave en formularios adaptables](/help/forms/using/adaptive-forms-keywords.md)
       + [Tablas en formularios adaptables](/help/forms/using/adaptive-forms-tables.md)
+      + [Gráficos en formularios adaptables](/help/forms/using/adaptive-form-charts.md)
       + [Guardado automático de un formulario adaptable](/help/forms/using/auto-save-an-adaptive-form.md)
       + [Configurar la página de redireccionamiento](/help/forms/using/configuring-redirect-page.md)
       + [Crear formularios adaptables accesibles](/help/forms/using/creating-accessible-adaptive-forms.md)
