@@ -1,14 +1,14 @@
 ---
-title: Error al realizar una copia de seguridad de la base de datos anterior en AEM Forms 6.5.12.0.
+title: Error al realizar la copia de seguridad de la base de datos durante la actualización a 6.5.12.0 para MySQL.
 description: Cuando un usuario actualiza a Experience Manager 6.5.12.0 y hace clic en "Actualizar MySQL", el administrador de configuración no realiza una copia de seguridad de la base de datos de Experience Manager Forms anterior.
-source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
+source-git-commit: bf974331157e21b28c0daa5b878ac927ce5a2304
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 7%
+source-wordcount: '106'
+ht-degree: 6%
 
 ---
 
-# Problema (#issue)
+# Error al realizar la copia de seguridad de la base de datos durante la actualización a 6.5.12.0 para MySQL (#issue)
 
 Cuando un usuario actualiza a Experience Manager 6.5.12.0 y hace clic en &quot;Actualizar MySQL&quot;, el administrador de configuración no realiza una copia de seguridad de la base de datos de Experience Manager Forms anterior, muestra el error:
 
