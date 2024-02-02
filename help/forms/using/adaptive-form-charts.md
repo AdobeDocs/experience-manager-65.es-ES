@@ -4,9 +4,9 @@ description: Utilice gráficos en un formulario adaptable para que el formulario
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 5c117d25a381b2cb85c2bf0715866dd5ad93572c
+source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2005'
 ht-degree: 6%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 6%
 
 ![Hero_Image](assets/charts_hero_image.jpg)
 
-Un gráfico es una representación visual de los datos. Le permite condensar grandes cantidades de información en un formato visual y fácil de entender, lo que le permite visualizar, interpretar y analizar mejor datos complejos.
-El paquete de complementos de AEM Forms proporciona un componente de gráfico predeterminado. Puede utilizar en formularios adaptables y documentos para la representación visual de datos bidimensionales en paneles y tablas repetibles. El componente Gráfico permite agregar y configurar los siguientes tipos de gráficos:
+Un gráfico es una representación visual de los datos. Permite condensar grandes cantidades de información en un formato visual fácil de entender, lo que le permite visualizar, interpretar y analizar mejor datos complejos.
+El paquete de complementos de AEM Forms proporciona un componente de gráfico predeterminado. Puede usar en formularios adaptables y documentos para la representación visual de datos bidimensionales en **paneles repetibles** y **tablas**. El componente Gráfico permite agregar y configurar los siguientes tipos de gráficos:
 
 1. Circular
 1. Columna
@@ -41,7 +41,7 @@ AEM El componente Gráfico está disponible en la barra lateral de la de forma p
 > 
 > Antes de configurar el gráfico, asegúrese de que el panel o la fila de tabla para los que está configurando el gráfico estén configurados en repetibles. Puede especificar recuentos mínimos y máximos para el panel repetible o la fila de tabla en la pestaña Configuración de repetición del cuadro de diálogo Editar componente.
 
-Para configurar el gráfico, haga clic con el botón derecho en el componente Gráfico y haga clic en Editar para abrir el cuadro de diálogo Editar gráfico. El cuadro de diálogo incluye las pestañas Título y texto, Configuración, Opciones avanzadas y Estilo que le permiten configurar el gráfico.
+Para configurar el gráfico, haga clic en el componente Gráfico y en ![Configuración](cmppr1.png) para abrir el cuadro de diálogo Editar gráfico. El cuadro de diálogo incluye las pestañas Título y texto, Configuración, Opciones avanzadas y Estilo que le permiten configurar el gráfico.
 
 ### Básica {#basic}
 
@@ -51,7 +51,7 @@ En la pestaña Básico, puede configurar las siguientes propiedades:
 
 * **Nombre del elemento**: Un identificador para el elemento de gráfico en la estructura de contenido JCR. No está visible en el gráfico, pero resulta útil cuando se hace referencia al elemento desde otros componentes, scripts y expresiones SOM.
 * **Tipo de gráfico**: especifica el tipo de gráfico que desea generar. Las opciones disponibles son Circular, Anillo, Barra, Columna, Línea, Línea y punto, Punto y Área. En el ejemplo, el tipo de gráfico es Columna.
-* **Nombre de fila repetida para la fuente de datos**: especifica el nombre del elemento de la fila de la tabla o del panel repetible desde el que se originarán los datos. En el ejemplo, statementDetails es el nombre de elemento de la fila repetible de la tabla Detalles de instrucciones.
+* **Nombre de fila repetida o nombre de panel para la fuente de datos**: especifica el nombre del elemento de la fila de la tabla o del panel repetible desde el que se originarán los datos. En el ejemplo, statementDetails es el nombre de elemento de la fila repetible de la tabla Detalles de instrucciones.
 * **Eje X > Título**: especifica el título del eje X. En el ejemplo, el título del eje X es Categoría.
 * **Eje X > Campo**: especifica el nombre del elemento del campo (o una celda de una tabla) que se va a trazar en el eje X. En el ejemplo, las categorías se configuran en el eje X. El nombre del elemento para la celda de tabla de la columna Category de la tabla de ejemplo es category.
 * **Eje X > Usar función**: especifica la función estadística que se utiliza para calcular los valores en el eje X. En el ejemplo, la opción seleccionada es None. Para obtener más información sobre las funciones, consulte Usar funciones en el gráfico.
@@ -78,7 +78,7 @@ Para ello, debe trazar las categorías en el eje X y, en el eje Y, trazar el gas
 
 ![Detalles del extracto](assets/statement-details.png)
 
-La instrucción de la tarjeta de crédito utilizada en este ejemplo es un documento adaptable y la sección de detalles de la instrucción es una tabla, que tiene el siguiente aspecto en el modo de creación.
+La instrucción de tarjeta de crédito utilizada en este ejemplo es un documento de formulario adaptable y la sección de detalles de la instrucción es una tabla, que tiene el siguiente aspecto en el modo de creación.
 
 ![Creación de detalles de declaración](assets/statement-details-authoring.png)
 
@@ -87,7 +87,7 @@ Consideremos los siguientes requisitos y condiciones para generar el gráfico:
 * El gráfico muestra el gasto total en cada categoría de la tabla Detalles de estado.
 * El tipo de gráfico es Columna, aunque puede elegir cualquier otro tipo de gráfico, según corresponda.
 * La fila Tabla de la tabla Detalles de sentencias es repetible. Puede configurarlo en el campo Configuración de repetición de las propiedades de fila de la tabla.
-* El nombre del elemento para la fila es statementDetails. Puede configurarlo en las propiedades de la fila de la tabla.
+* El nombre de elemento para la fila es Detalles de instrucción. Puede configurarlo en las propiedades de la fila de la tabla.
 * El nombre del elemento para la celda de tabla de la columna Category es category. Puede especificarlo en línea. Seleccione la celda y pulse el botón editar.
 * El nombre del elemento para la celda de tabla de la columna Amount es amount. Además, la celda de tabla de la columna Importe es un cuadro numérico.
 * Con la configuración especificada, el gráfico de columnas del ejemplo aparecerá de la siguiente manera. Cada color representa una categoría y los elementos de línea individuales o las cantidades de una categoría se suman en el gráfico.
@@ -108,7 +108,7 @@ Para cambiar al modo Estilo, en la barra de herramientas de la página, haga lo 
 
 ## Usar funciones en el gráfico {#use-functions}
 
-Puede configurar un gráfico para que utilice funciones estadísticas a fin de calcular los valores a partir de los datos de origen para trazar en el gráfico. Aunque el componente Gráfico incluye algunas funciones integradas, puede escribir sus propias funciones y ponerlas a disposición para utilizarlas en la configuración del gráfico.
+Puede configurar un gráfico para que utilice funciones estadísticas a fin de calcular los valores a partir de los datos de origen para trazar en el gráfico. Aunque el componente Gráfico tiene algunas funciones integradas, puede escribir sus propias funciones y ponerlas a disposición para utilizarlas en la configuración del gráfico.
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ Las siguientes funciones están disponibles de forma predeterminada con el compo
 
 ### Funciones personalizadas {#custom-functions}
 
-Además de utilizar las funciones predeterminadas en los gráficos, puede escribir funciones personalizadas en JavaScript y ponerlas a disposición en la lista de funciones del componente Gráfico.
+Además de utilizar las funciones predeterminadas en los gráficos, puede escribir [funciones personalizadas](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) en JavaScript y haga que estén disponibles en la lista de funciones del componente Gráfico.
 
 Una función toma una matriz o valores y un nombre de categoría como entradas y devuelve un valor. Por ejemplo:
 
