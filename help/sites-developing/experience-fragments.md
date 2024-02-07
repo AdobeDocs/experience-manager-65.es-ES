@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 1%
+source-wordcount: '1781'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +102,7 @@ Al desarrollar una nueva plantilla para fragmentos de experiencias, puede seguir
 
 Para crear una plantilla de fragmento de experiencia que detecte el **Crear fragmento de experiencia** asistente, debe seguir uno de estos conjuntos de reglas:
 
-1. Ambas:
+1. Ambos:
 
    1. El tipo de recurso de la plantilla (el nodo inicial) debe heredar de:
       `cq/experience-fragments/components/xfpage`
@@ -127,7 +127,7 @@ Esto permite a los usuarios crear fragmentos de experiencias en /content/experie
 
 La única configuración adicional es garantizar que los componentes estén [permitido en la plantilla, esto se logra con la política de contenido](/help/sites-developing/page-templates-editable.md#content-policies).
 
-## El proveedor de reescritura de vínculos de fragmentos de experiencia: HTML {#the-experience-fragment-link-rewriter-provider-html}
+## El proveedor del reescritor de vínculos de fragmentos de experiencias: HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 AEM En tiene la posibilidad de crear Fragmentos de experiencias. Un fragmento de experiencia:
 
@@ -182,7 +182,7 @@ AEM Para estos casos de uso, proporciona la interfaz del proveedor de reescritur
 
 >[!NOTE]
 >
->Esta interfaz se introdujo en [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>Esta interfaz se introdujo en [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6-5-1.md).
 
 Para casos más complicados, no cubiertos por la [predeterminado](#default-link-rewriting)AEM , ofrece la interfaz del proveedor de reescritura de vínculos. Este es un `ConsumerType` que puede implementar en sus paquetes como servicio. AEM Evita las modificaciones que realiza en los vínculos internos de una oferta de HTML que se representan desde un fragmento de experiencia. Esta interfaz le permite personalizar el proceso de reescritura de vínculos internos de HTML para adaptarlos a sus necesidades comerciales.
 
