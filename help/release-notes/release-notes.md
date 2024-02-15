@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 6a5ff6df3939c6d1576327943b428f374e987bcb
+source-git-commit: fab43458811f70da7f80a23e689dfca54391a84a
 workflow-type: tm+mt
-source-wordcount: '4451'
+source-wordcount: '4453'
 ht-degree: 1%
 
 ---
@@ -554,7 +554,7 @@ Para resolver el problema, [Volver a compilar los scripts de Sling como JSP, Jav
 * AEM Después de instalar el paquete de servicio 6.5.14.0 de y posteriores, los usuarios no pueden seleccionar una fuente de la interfaz de usuario de administración de JEE para los documentos de PDF al navegar a `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, ya que la lista de fuentes aparece vacía. (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
 * En AEM Forms en JEE, los Forms de HTML5 que utilizan la ruta de contexto no se pueden procesar. (FORMS-12485, FORMS-12691). Hay una revisión disponible para este problema. Para descargar e instalar la revisión, consulte [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md).
-* La función personalizada admite funciones de la versión 5 de ECMAScript. Si la función personalizada utiliza funciones compatibles con ECMAScript versión 6 o posterior, por ejemplo, las funciones izquierda, const o flecha, el editor de reglas no se abrirá.
+* Las Forms adaptables permiten utilizar funciones personalizadas con ECMAScript versión 5 o anteriores. Cuando una función personalizada utiliza la versión 6 o posterior de ECMAScript, como las funciones &quot;let&quot;, &quot;const&quot; o &quot;arrow&quot;, es posible que el editor de reglas no se abra correctamente.
 
 #### AEM Forms en JEE
 
