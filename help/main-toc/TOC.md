@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: f41cb88406db23c2af8988f7ee584db95184c6c4
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '7335'
 ht-degree: 68%
@@ -560,7 +560,7 @@ ht-degree: 68%
       + Configurar AEM Forms {#configure-aem-forms}
          + [Ajustar el rendimiento del servidor de AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
          + [Configurar la caché de los formularios adaptables](/help/forms/using/configure-adaptive-forms-cache.md)
-         + [Configurar AEM DS](/help/forms/using/configuring-the-processing-server-url-.md)
+         + [Configurar AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
          + [Configurar el planificador de sincronización](/help/forms/using/configure-synchronization-scheduler.md)
          + [Configurar el conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
          + [Conectar AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
@@ -636,7 +636,7 @@ ht-degree: 68%
       + [Aplicar estilos dentro de la línea a los componentes de un formulario adaptable](/help/forms/using/inline-style-adaptive-forms.md)
       + [Introducción a la secuencia de formulario de varios pasos](/help/forms/using/introduction-form-sequence.md)
       + [Funciones de diseño de los formularios adaptables](/help/forms/using/layout-capabilities-adaptive-forms.md)
-      + [Texto de marcador de posición en AEM Forms](/help/forms/using/placeholder-text-in-aem-forms-.md)
+      + [Texto de marcador de posición en AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [Vista previa de un formulario](/help/forms/using/previewing-forms.md)
       + [Reutilizar formularios adaptables](/help/forms/using/reusing-adaptive-forms.md)
       + [Componente Separador en formularios adaptables](/help/forms/using/separator-component-in-adaptive-forms.md)

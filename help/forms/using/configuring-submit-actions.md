@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '2597'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -140,7 +140,7 @@ Para obtener más información sobre el portal de formularios y la acción de en
 
 La acción de envío **[!UICONTROL Invocar un flujo de trabajo de AEM]** asocia un formulario adaptable con un [Flujo de trabajo de AEM](/help/sites-developing/workflows-models.md). Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en la instancia de autor. Puede guardar el archivo de datos, los archivos adjuntos y el documento de registro en la ubicación de carga útil del flujo de trabajo o en una variable. Si el flujo de trabajo está marcado para almacenar datos externos, estará disponible la opción de variable y no la de carga útil. Puede seleccionar de la lista de variables disponibles para el modelo de flujo de trabajo. Si el flujo de trabajo está marcado para el almacenamiento de datos externos en una fase posterior y no en el momento de la creación del flujo de trabajo, asegúrese de que las configuraciones de variables requeridas estén establecidas.
 
-Antes de usar la acción de envío **Invocar un flujo de trabajo de AEM**, [configure el DS de Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Para obtener información sobre crear un flujo de trabajo de AEM, consulte [Flujos de trabajo centrados en formularios en OSGi](../../forms/using/aem-forms-workflow.md).
+Antes de usar la acción de envío **Invocar un flujo de trabajo de AEM**, [configure el DS de Experience Manager](../../forms/using/configuring-the-processing-server-url.md). Para obtener información sobre crear un flujo de trabajo de AEM, consulte [Flujos de trabajo centrados en formularios en OSGi](../../forms/using/aem-forms-workflow.md).
 
 La acción de envío coloca lo siguiente en la ubicación de carga útil del flujo de trabajo. Sin embargo, tenga en cuenta que solo se mostrará la opción Variable si el modelo de flujo de trabajo está marcado para almacenar datos externos y no para la opción de carga útil.
 
@@ -179,14 +179,14 @@ El **[!UICONTROL Enviar a SharePoint]** La acción de envío conecta un formular
 
 Para conectar un formulario adaptable a la lista de Microsoft® SharePoint:
 
-1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms al almacenamiento de listas de SharePoint de Microsoft®.
+1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms a su almacenamiento de de lista de Sharepoint de Microsoft®.
 1. [Utilice el **Enviar mediante modelo de datos de formulario** enviar acción en un formulario adaptable](#use-submit-using-fdm): envía los datos del formulario adaptable al Microsoft® SharePoint configurado.
 
-#### Crear una configuración de lista de SharePoint {#create-sharepoint-list-configuration}
+#### Crear configuración de lista de SharePoint {#create-sharepoint-list-configuration}
 
-Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
+Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
-1. Ir a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
 1. Seleccione un **Contenedor de configuración**. La configuración se almacena en el contenedor de configuración seleccionado.
 1. Haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Lista de SharePoint]** en la lista desplegable. Aparecerá el asistente de configuración de SharePoint.
 1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
@@ -203,16 +203,16 @@ Para conectar AEM Forms a la lista de SharePoint de Microsoft®:
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
 1. Pulse **[!UICONTROL Crear]** para crear la configuración de nube para Microsoft® SharePointList.
 
-#### Uso del envío mediante el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
+#### Usar la acción de envío Enviar con el modelo de datos de formulario en un formulario adaptable {#use-submit-using-fdm}
 
-Puede utilizar la configuración creada en la Lista de SharePoint en un formulario adaptable para guardar datos o documentos de registro generados en una Lista de SharePoint. Siga estos pasos para utilizar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
+Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
 
 1. [Crear un modelo de datos de formulario con Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Configurar el modelo de datos de formulario para recuperar y enviar datos](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Creación de un formulario adaptable](/help/forms/using/create-adaptive-form.md).
 1. [Configurar la acción de envío mediante un modelo de datos de formulario](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
 
-Cuando envía el formulario, los datos se guardan en el almacenamiento de listas de SharePoint de Microsoft® especificado.
+Al enviar el formulario, los datos se guardan en el almacenamiento de lista de Sharepoint de Microsoft® especificado.
 
 >[!NOTE]
 >
