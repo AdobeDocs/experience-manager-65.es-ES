@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '2846'
+source-wordcount: '2835'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ El rendimiento máximo para este escenario de operación mixta se encontró en 3
 >
 >La tasa de rendimiento no distingue entre tipos de transacciones dentro de un perfil de carga. El método utilizado para medir el rendimiento garantiza que se incluya una proporción fija de cada tipo de transacción en la carga de trabajo.
 
-Las dos pruebas anteriores resaltan claramente que el rendimiento varía según el tipo de operación. Utilice las actividades de su entorno como base para cambiar el tamaño del sistema. Obtendrá un mejor rendimiento con acciones menos intensivas como modificar (que también es más común).
+Las dos pruebas anteriores resaltan claramente que el rendimiento varía según el tipo de operación. Utilice las actividades de su entorno como base para cambiar el tamaño del sistema. Se obtiene un mejor rendimiento con acciones menos intensivas como modificar (que también es más común).
 
 ### Almacenamiento en caché {#caching}
 
@@ -147,13 +147,13 @@ En el entorno de creación, la eficacia del almacenamiento en caché suele ser m
 
 En el entorno de creación, el número de autores que trabajan en paralelo y la carga que sus interacciones añaden al sistema son los principales factores limitantes. Por lo tanto, Adobe recomienda escalar el sistema en función del rendimiento compartido de los datos.
 
-Para estos escenarios, ejecute pruebas de referencia de Adobe en un clúster de instancias de autor de dos nodos que no compartan nada.
+Para estos escenarios, Adobe ejecutó pruebas de referencia en un clúster de dos nodos que no compartían nada de instancias de autor.
 
 * **Ensayo de referencia 1a**
 Con un clúster activo-activo de no compartir nada de 2 instancias de autor, calcule el rendimiento máximo con un perfil de carga en el que los usuarios realizan un ejercicio simple de creación de páginas sobre una carga base de 300 páginas existentes, todas de naturaleza similar.
 
    * **Resultado**
-El rendimiento máximo de un ejercicio simple de creación de página, como el anterior (considerado como una transacción) es de 2016 transacciones/hora. Esto supone un aumento de aproximadamente el 16 % en comparación con una instancia de autor independiente para la misma prueba de referencia.
+El rendimiento máximo para un ejercicio simple de creación de páginas, como el que se considera como una transacción, se encuentra en 2016 transacciones/hora. Esto supone un aumento de aproximadamente el 16 % en comparación con una instancia de autor independiente para la misma prueba de referencia.
 
 * **Ensayo de referencia 2b**
 Con un clúster activo-activo de no compartir nada de 2 instancias de autor, calcule el rendimiento máximo cuando el perfil de carga tenga una combinación de creación de páginas nuevas (10 %), modificación de una página existente (80 %) y creación y modificación de una página en sucesión (10 %). La complejidad de la página sigue siendo la misma que en el perfil de la prueba de referencia 1. La modificación básica de la página se realiza añadiendo una imagen y modificando el contenido del texto. Una vez más, el ejercicio se realizó sobre una carga base de 300 páginas de complejidad igual a la definida en la prueba de referencia 1.
@@ -179,7 +179,7 @@ Consulte también [Paralelización](/help/managing/hardware-sizing-guidelines.md
 
 ### Hardware Recommendations {#hardware-recommendations}
 
-Normalmente, puede utilizar el mismo hardware para el entorno de creación que se recomienda para el entorno de publicación. Normalmente, el tráfico del sitio web es mucho menor en los sistemas de creación, pero la eficacia de la caché también es menor. Sin embargo, el factor fundamental aquí es el número de autores que trabajan en paralelo, junto con el tipo de acciones que se realizan al sistema. AEM AEM En general, la agrupación en clúster (del entorno de creación) es más eficaz para escalar las operaciones de lectura; en otras palabras, un clúster de creación en clúster se adapta mejor a los autores que realizan operaciones básicas de edición.
+Normalmente, puede utilizar el mismo hardware para el entorno de creación que se recomienda para el entorno de publicación. Normalmente, el tráfico del sitio web es menor en los sistemas de creación, pero la eficacia de la caché también es menor. Sin embargo, el factor fundamental aquí es el número de autores que trabajan en paralelo, junto con el tipo de acciones que se realizan al sistema. AEM AEM En general, la agrupación en clúster (del entorno de creación) es más eficaz para escalar las operaciones de lectura; en otras palabras, un clúster de creación en clúster se adapta mejor a los autores que realizan operaciones básicas de edición.
 
 Las pruebas de referencia en el Adobe se realizaron utilizando el sistema operativo Red Hat® 5.5, que se ejecuta en una plataforma de hardware Hewlett-Packard ProLiant DL380 G5 con la siguiente configuración:
 
@@ -215,7 +215,7 @@ AEM La proporción de caché es el porcentaje de páginas que Dispatcher puede d
 
 ### Complejidad de las plantillas y aplicaciones {#complexity-of-templates-and-applications}
 
-AEM Si utiliza plantillas complejas, necesitará más tiempo para procesar una página. Las páginas tomadas de la caché de no se ven afectadas por esto, pero el tamaño de la página sigue siendo relevante teniendo en cuenta el tiempo de respuesta general. Procesar una página compleja puede tardar fácilmente diez veces más que procesar una página simple.
+AEM Si utiliza plantillas complejas, necesita más tiempo para procesar una página. Las páginas tomadas de la caché de no se ven afectadas por esto, pero el tamaño de la página sigue siendo relevante teniendo en cuenta el tiempo de respuesta general. Procesar una página compleja puede tardar fácilmente diez veces más que procesar una página simple.
 
 ### Fórmula {#formula}
 
@@ -281,7 +281,7 @@ AEM Si tiene un sitio web más complejo, también necesita servidores web más p
 
 ## Cálculos adicionales específicos de casos de uso {#additional-use-case-specific-calculations}
 
-Además del cálculo para una aplicación web predeterminada, es posible que tenga que tener en cuenta factores específicos para los siguientes casos de uso. Los valores calculados se añaden al cálculo predeterminado.
+Además del cálculo para una aplicación web predeterminada, tenga en cuenta factores específicos para los siguientes casos de uso. Los valores calculados se añaden al cálculo predeterminado.
 
 ### Consideraciones específicas de los recursos {#assets-specific-considerations}
 
@@ -291,13 +291,13 @@ Asigne al menos 16 GB de pila y configure el [!UICONTROL Recurso de actualizaci�
 
 >[!NOTE]
 >
->Un mayor rendimiento de las imágenes significa que los recursos informáticos deben poder seguir el ritmo de E/S del sistema y a la inversa. Por ejemplo, si la importación de imágenes inicia flujos de trabajo, la carga de muchas imágenes a través de WebDAV podría provocar un registro de flujos de trabajo pendientes.
+Un mayor rendimiento de las imágenes significa que los recursos informáticos deben poder seguir el ritmo de E/S del sistema y a la inversa. Por ejemplo, si la importación de imágenes inicia flujos de trabajo, la carga de muchas imágenes a través de WebDAV podría provocar un registro de flujos de trabajo pendientes.
 >
->El uso de discos independientes para TarPM, almacén de datos e índice de búsqueda puede ayudar a optimizar el comportamiento de E/S del sistema (sin embargo, normalmente tiene sentido mantener el índice de búsqueda localmente).
+El uso de discos independientes para TarPM, almacén de datos e índice de búsqueda puede ayudar a optimizar el comportamiento de E/S del sistema (sin embargo, normalmente tiene sentido mantener el índice de búsqueda localmente).
 
 >[!NOTE]
 >
->Consulte también la [Guía de rendimiento de Assets](/help/sites-deploying/assets-performance-sizing.md).
+Consulte también la [Guía de rendimiento de Assets](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Administrador de varios sitios {#multi-site-manager}
 

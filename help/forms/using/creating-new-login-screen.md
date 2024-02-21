@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 94%
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -290,7 +290,7 @@ css.newLoginContentArea {
 1. Agregar imágenes nuevas en `/apps/livecycle/core/content/login`. Para agregar una imagen:
 
    1. Instale el cliente WebDAV.
-   1. Navegue hasta la carpeta `/apps/livecycle/core/content/login`, mediante el cliente webDAV. Para obtener más información, consulte: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+   1. Navegue hasta la carpeta `/apps/livecycle/core/content/login`, mediante el cliente webDAV. Para obtener más información, consulte [Acceso a WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    1. Agregar imágenes nuevas.
 

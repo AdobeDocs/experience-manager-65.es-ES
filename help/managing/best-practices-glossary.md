@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '6922'
+source-wordcount: '6926'
 ht-degree: 0%
 
 ---
@@ -1127,11 +1127,11 @@ Debe establecerse un proceso claro para la firma de especificaciones por parte d
 
 ### AEM Personal seleccionado para la formación de administradores de {#staff-selected-for-aem-administrator-training}
 
-Personal interno que necesita formación para administrar la solución.
+Personal interno que necesita formación para poder administrar la solución.
 
 ### Personal seleccionado para la formación de autores y usuarios finales {#staff-selected-for-author-and-end-user-training}
 
-Personal interno que necesita formación para crear la solución.
+Personal interno que necesita formación para poder crear la solución.
 
 ### Partes interesadas {#stakeholders}
 
@@ -1377,7 +1377,7 @@ Un caso de uso es la lista de acciones o pasos de evento necesarios para lograr 
 
 Los escenarios de prueba se basan en los casos de uso técnicos y comerciales. Se utilizan para probar que el comportamiento de la solución es el esperado.
 
-### Guías del usuario {#user-guides}
+### Guías de usuario {#user-guides}
 
 Las guías del usuario proporcionan información y asistencia a los usuarios de la solución:
 

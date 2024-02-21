@@ -2,10 +2,10 @@
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, aprenderá a modelar el contenido para la entrega de contenido sin encabezado de AEM utilizando el Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 67%
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 >[!NOTE]
 >
->El modelado de datos es un campo grande, ya que se utiliza al desarrollar bases de datos relacionales. Hay muchos libros y fuentes de información en línea disponibles.
+>El modelado de datos es un campo muy grande, ya que se utiliza para desarrollar bases de datos relacionales. Hay muchos libros y fuentes de información en línea disponibles.
 >
 >AEM Solo se tienen en cuenta los aspectos que son de interés al modelar datos para utilizarlos con sin encabezado
 
@@ -45,7 +45,7 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 *Es un mundo grande y peligroso*.
 
-Tal vez, tal vez no, pero ciertamente es un gran ***complicado*** el mundo ahí fuera. El modelado de datos se utiliza para definir una representación simplificada de una subsección muy (muy) pequeña, utilizando la información específica que se necesita para un propósito determinado.
+Quizás sí, pero quizás no. Sin duda es un gran ***complicado*** el mundo ahí fuera. El modelado de datos se utiliza para definir una representación simplificada de una subsección muy (muy) pequeña, utilizando la información específica que se necesita para un propósito determinado.
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Por ejemplo, anunciar eventos especiales para todas las escuelas de la zona:
 
 Lo que desea describir se denomina **Entidades** - básicamente las &quot;cosas&quot; sobre las que quieres almacenar información.
 
-La información que desea almacenar sobre ellos es la siguiente **Atributos** (propiedades), como Nombre y Cualificaciones para los profesores.
+La información que deseamos almacenar son los **Atributos** (propiedades), como el Nombre y las Cualificaciones del profesorado.
 
 A continuación, hay varias **Relaciones** entre las entidades. Por ejemplo, normalmente una escuela tiene un director y varios profesores (normalmente, el director también suele ser un profesor).
 
@@ -93,7 +93,7 @@ El proceso de análisis y definición de esta información, junto con las relaci
 
 A menudo, puede empezar elaborando un **Esquema conceptual** que describe las entidades y sus relaciones. Normalmente es de alto nivel conceptual.
 
-Cuando haya terminado, puede convertir los modelos en un **Esquema lógico** que describe las entidades, junto con los atributos y las relaciones. En este nivel, examine detenidamente las definiciones para eliminar la duplicación y optimizar el diseño.
+Cuando haya terminado, puede convertir los modelos en un **Esquema lógico** que describe las entidades, junto con los atributos y las relaciones. En este nivel, debe examinar detenidamente las definiciones para eliminar la duplicación y optimizar el diseño.
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ El modelado de datos es un conjunto de técnicas establecidas, que a menudo se u
 
 Para garantizar que su aplicación pueda solicitar y recibir de forma consistente y eficiente el contenido necesario de AEM, debe estar estructurado.
 
-Esto significa que la aplicación conoce de antemano la forma de respuesta y, por lo tanto, cómo procesarla. Esto es más fácil que recibir contenido de forma libre, que debe analizarse para determinar qué contiene y, por lo tanto, cómo se puede utilizar.
+Esto significa que la aplicación conoce de antemano la forma de respuesta y, por lo tanto, cómo procesarla. Esto es mucho más fácil que recibir contenido de forma libre, que debe analizarse para determinar qué contiene y, por lo tanto, cómo puede utilizarse.
 
 ### Introducción a ¿Cómo hacerlo? {#how}
 
@@ -147,7 +147,7 @@ La estructura del modelo de contenido:
 >
 >Los modelos de fragmento de contenido también se utilizan como base de los esquemas AEM GraphQL, que se utilizan para recuperar el contenido; más información al respecto en una sesión posterior.
 
-Las solicitudes de contenido se realizan mediante la API de AEM, GraphQL, una implementación personalizada de la API de GraphQL estándar. AEM La API de GraphQL le permite realizar consultas (complejas) en los fragmentos de contenido, estando cada consulta según un tipo de modelo específico.
+Las solicitudes de contenido se realizan mediante la API de AEM, GraphQL, una implementación personalizada de la API de GraphQL estándar. La API de AEM GraphQL permite realizar consultas (complejas) en los fragmentos de contenido, y cada consulta se realiza de acuerdo con un tipo de modelo específico.
 
 Las aplicaciones pueden utilizar el contenido devuelto.
 
@@ -169,7 +169,7 @@ Dentro de un modelo:
 1. **Tipos de datos** permite definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
 1. Los tipos de datos **Referencia de contenido** y **Referencia a fragmento** AEM permite crear relaciones con otro contenido dentro de los recursos de la aplicación de contenido de la.
-1. El **Referencia a fragmento** El tipo de datos permite realizar varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
+1. El tipo de datos **referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
 ![Modelado de contenido con fragmentos de contenido](assets/headless-modeling-01.png "Modelado de contenido con fragmentos de contenido")
@@ -206,7 +206,7 @@ El tipo de datos se puede configurar para que los autores de fragmentos puedan h
 
 ### Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
-Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Esta activación se realiza en el Explorador de configuración, en Herramientas > General > Explorador de configuración. Puede seleccionar para configurar la entrada global o crear una configuración. Por ejemplo:
+Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Esta activación se realiza en el Explorador de configuración, en Herramientas > General > Explorador de configuración. Puede seleccionar la configuración de la entrada global o crear una configuración. Por ejemplo:
 
 ![Definir configuración](assets/cfm-configuration.png)
 
@@ -228,7 +228,7 @@ Los fragmentos de contenido se basan siempre en un modelo de fragmento de conten
 
 ### Selección del modelo apropiado {#select-model}
 
-El primer paso para crear el contenido es crear un fragmento de contenido. Esto se realiza mediante Crear > Fragmento de contenido en la carpeta requerida en Recursos > Archivos. El asistente le guiará por los pasos.
+El primer paso para crear el contenido es crear un fragmento de contenido. Esto se realiza mediante Crear > Fragmento de contenido en la carpeta necesaria en Recursos > Archivos. El asistente le guiará a través de los pasos.
 
 Un fragmento de contenido se basa en un modelo de fragmento de contenido específico que se selecciona como primer paso del proceso de creación.
 
@@ -236,9 +236,9 @@ Un fragmento de contenido se basa en un modelo de fragmento de contenido especí
 
 Una vez creado el fragmento, puede abrirlo en el Editor de fragmentos de contenido. Aquí puede hacer lo siguiente:
 
-* Edite el contenido en modo normal o de pantalla completa.
-* Dé formato al contenido como Texto completo, Texto sin formato o Markdown.
-* Cree y administre variaciones de contenido.
+* Editar el contenido en modo normal o pantalla completa.
+* Dar formato al contenido como Texto completo, Texto sin formato o Markdown.
+* Crear y administrar Variaciones del contenido.
 * Asociar contenido.
 * Editar los metadatos.
 * Mostrar la estructura de árbol.

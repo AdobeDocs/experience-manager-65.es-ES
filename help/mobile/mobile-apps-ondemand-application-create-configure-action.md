@@ -1,12 +1,12 @@
 ---
 title: Acciones de creación y configuración de aplicaciones
-description: La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile On-Demand. Siga esta página para obtener más información.
+description: La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile On-Demand. Siga esta página si desea obtener más información.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Creación de una aplicación bajo demanda {#creating-an-on-demand-application}
 
-La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile AEM On-Demand, y a menudo se realiza en el nivel de administrador de. Representa un shell de contenido, visible en dispositivos móviles, listo para mostrar el contenido creado por el autor, como artículos, imágenes, colecciones, etc.
+La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile AEM On-Demand, y a menudo se realiza en el nivel de administrador de. Representa un shell de contenido, visible en dispositivos móviles, listo para mostrar contenido creado por el autor, como artículos, imágenes y colecciones.
 
 Los detalles de la aplicación se pueden ver en el panel o en el centro de control de AEM Mobile.
 
@@ -50,7 +50,7 @@ Los detalles de la aplicación se pueden ver en el panel o en el centro de contr
 
 ## Uso de plantillas de aplicación {#using-app-templates}
 
-AEM Las plantillas de aplicación ofrecen una forma sencilla de utilizar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
+AEM Las plantillas de aplicación proporcionan una forma sencilla de utilizar los diseños existentes creados por los desarrolladores, utilizados para la creación de nuevas aplicaciones dentro de los entornos de trabajo de los desarrolladores de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la plataforma de creación de la aplicación de la aplicación de la aplicación.
 
 ¿Qué es una plantilla de aplicación? Considérelo como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
 Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.

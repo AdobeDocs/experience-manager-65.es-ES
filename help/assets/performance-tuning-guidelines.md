@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '2739'
-ht-degree: 1%
+source-wordcount: '2728'
+ht-degree: 0%
 
 ---
 
@@ -127,7 +127,7 @@ Principalmente, la estrategia de optimización de la red depende de la cantidad 
 
 ### Flujos de trabajo transitorios {#transient-workflows}
 
-Siempre que sea posible, configure el [!UICONTROL Recurso de actualización DAM] flujo de trabajo a Transitorio. La configuración reduce significativamente los costes generales necesarios para procesar flujos de trabajo porque, en este caso, los flujos de trabajo no tienen que pasar por los procesos normales de seguimiento y archivo.
+Siempre que sea posible, configure el [!UICONTROL Recurso de actualización DAM] flujo de trabajo a Transitorio. La configuración reduce significativamente los costes generales necesarios para procesar flujos de trabajo porque, en este caso, los flujos de trabajo no necesitan pasar por los procesos normales de seguimiento y archivo.
 
 1. Vaya a `/miscadmin` en el [!DNL Experience Manager] implementación en `https://[aem_server]:[port]/miscadmin`.
 
@@ -212,7 +212,7 @@ Además, establezca la ruta de la carpeta temporal de ImageMagick en `configure.
 >
 >ImageMagick `policy.xml` y `configure.xml` Los archivos de están disponibles en `/usr/lib64/ImageMagick-&#42;/config/` en lugar de `/etc/ImageMagick/`.Consulte [Documentación de ImageMagick](https://www.imagemagick.org/script/resources.php) para la ubicación de los archivos de configuración.
 
-Si está utilizando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si planea procesar muchos archivos de PSD o PSB grandes. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager]Es posible que el no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles. 
+Si está utilizando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si planea procesar muchos archivos de PSD o PSB grandes. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] puede que no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles.
 
 ### XMP respuesta de escritura de la {#xmp-writeback}
 

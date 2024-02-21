@@ -4,9 +4,9 @@ description: La prueba de Día difícil simula la carga diaria de unos 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-El Día 2 difícil no tiene una etapa de limpieza. Como resultado, se recomienda ejecutar Día difícil 2 en una instancia de ensayo clonada y no en la instancia de producción principal. La instancia de ensayo debe eliminarse después de las pruebas.
+>El Día 2 difícil no tiene una etapa de limpieza. Como resultado, se recomienda ejecutar Día difícil 2 en una instancia de ensayo clonada y no en la instancia de producción principal. La instancia de ensayo debe eliminarse después de las pruebas.
 >
 
 ### Obtención de ayuda {#getting-help}
@@ -330,9 +330,9 @@ o
 
 >[!NOTE]
 >
-Debido a las ejecuciones paralelas, el número real de ejecuciones de prueba no será exactamente la cantidad configurada en la `count` parámetro. Esperar una desviación proporcional al número de hilos en ejecución (controlado por el `concurrency parameter`).
+>Debido a las ejecuciones paralelas, el número real de ejecuciones de prueba no será exactamente la cantidad configurada en la `count` parámetro. Esperar una desviación proporcional al número de hilos en ejecución (controlado por el `concurrency parameter`).
 
-### Simulacro {#dry-run}
+### Ensayo {#dry-run}
 
 Una ejecución en seco analiza todas las entradas dadas (parámetros de línea de comandos o archivos de configuración), combinándolas con los valores predeterminados y, a continuación, genera los resultados. No ejecuta ninguna de las pruebas.
 
@@ -351,7 +351,7 @@ Actualmente, el Día 2 difícil informa de nueve métricas de prueba que puede e
 | **Nombre** | **Descripción** |
 |---|---|
 | Marca de tiempo | Marca de tiempo de la última ejecución de prueba finalizada. |
-| Aprobado | Número de ejecuciones correctas. |
+| Superado | Número de ejecuciones correctas. |
 | Error | Número de ejecuciones fallidas. |
 | Min&#42; | La duración más baja de la ejecución de pruebas. |
 | Max&#42; | Duración máxima de la ejecución de la prueba. |
