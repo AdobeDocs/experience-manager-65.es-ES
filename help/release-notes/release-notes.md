@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
+source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2888'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* AEM AEM Ya no se admitían carpetas de configuración anidadas y las carpetas del modelo de fragmento de contenido dejaron de ser visibles después de actualizar a la versión 6.5.18 o a la versión 6.5.19 de la versión 6.18 o la versión 6.5.19 de la versión. (SITES-18110) PRINCIPAL
+* AEM AEM Ya no se admitían carpetas de configuración anidadas y las carpetas del modelo de fragmento de contenido dejaron de ser visibles después de actualizar a la versión 6.5.18 o a la versión 6.5.19 de la versión 6.18 o la versión 6.5.19 de la versión. (SITES-18110)
 * Algunas subcarpetas no pueden elegir entre los modelos de fragmento de contenido heredados. Debe admitir carpetas sin tener un `jcr:content` , incluso si las carpetas DAM creadas mediante la interfaz de usuario tienen un nodo de este tipo. (SITES-17943)
 
 #### [!DNL Content Fragments] - API de GraphQL {#sites-graphql-api-6520}
@@ -156,13 +156,7 @@ Correcciones en [!DNL Experience Manager] Forms se entregan mediante un paquete 
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Foundation {#foundation-6520}
 
 #### Communities {#communities-6520}
 
@@ -181,17 +175,9 @@ Correcciones en [!DNL Experience Manager] Forms se entregan mediante un paquete 
 * La etiqueta Aria &quot;close&quot; no está localizada en **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**, seleccione una carpeta y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]** > **[!UICONTROL Permisos]** pestaña > nombre del miembro. (NPR-41705)
 * Hay una información de objeto truncada para **[!UICONTROL Contraseña de almacén de claves]** en la página Configuración SSL para las configuraciones regionales ENG, FRA, KOR, DEU y PTB. (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Plataforma{#foundation-platform-6520}
 
 * AEM Problema con la integración de Campaign con los recursos causados por el servlet /api, que no devuelven el esquema correcto en el json href. AEM El motivo era que no estaba recibiendo el encabezado X-Forward-Proto, lo que obligaba a que la solicitud respondiera con un esquema HTTP en lugar de HTTPS. Como tal, se debe añadir la capacidad de alternar la selección de esquemas en función de una configuración OSGI. (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### Sling{#foundation-sling-6520}
 
