@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager AEM AEM () con la API de GraphQL de la para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
+source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
 workflow-type: tm+mt
-source-wordcount: '4708'
-ht-degree: 53%
+source-wordcount: '4796'
+ht-degree: 52%
 
 ---
 
@@ -523,6 +523,53 @@ El siguiente ejemplo muestra una consulta completa que filtra todas las personas
     items {
       lastName
       firstName
+    }
+  }
+}
+```
+
+Al ejecutar una consulta de GraphQL con variables opcionales, si un valor específico es **no** Cuando se proporcione para la variable opcional, la variable se omitirá en la evaluación del filtro. Esto significa que los resultados de la consulta contendrán todos los valores, ambos `null` y no `null`, para la propiedad relacionada con la variable de filtro.
+
+>[!NOTE]
+>
+>Si un `null` el valor es *explícitamente* especificado para dicha variable, el filtro solo coincidirá con `null` valores de la propiedad correspondiente.
+
+Por ejemplo, en la consulta siguiente, donde no se especifica ningún valor para la propiedad `lastName`:
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+Se devolverán todos los autores:
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
     }
   }
 }

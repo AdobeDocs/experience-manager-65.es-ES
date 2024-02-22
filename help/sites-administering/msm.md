@@ -1,21 +1,21 @@
 ---
-title: "Reutilización del contenido: administrador de varios sitios y Live Copy"
+title: "Reutilización del contenido: Administrador de varios sitios y Live Copy"
 description: Obtenga información sobre cómo reutilizar contenido con Live Copies y el Administrador de varios sitios.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 23%
+source-wordcount: '2665'
+ht-degree: 19%
 
 ---
 
 # Reutilización del contenido: administrador de varios sitios y Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
-Administrador de varios sitios (MSM) le permite utilizar el mismo contenido del sitio en varias ubicaciones. MSM utiliza su funcionalidad de Live Copy para conseguirlo:
+Administrador de varios sitios (MSM) le permite utilizar el mismo contenido del sitio en varias ubicaciones. MSM utiliza su funcionalidad de Live Copy para lograr lo siguiente:
 
 * Con MSM puede lograr lo siguiente:
 
@@ -117,7 +117,7 @@ Existen muchos casos de uso para MSM y Live Copies, algunos de los cuales incluy
 
 ## MSM desde la IU {#msm-from-the-ui}
 
-Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde la consola adecuada. Para proporcionar una introducción, a continuación se enumeran las ubicaciones principales:
+Se puede acceder directamente a MSM desde la IU mediante varias opciones desde la consola adecuada. Para proporcionar una introducción, a continuación se enumeran las ubicaciones principales:
 
 * **Crear sitio** (**Sitios**)
 
@@ -148,6 +148,10 @@ Se puede acceder directamente a MSM desde la IU mediante diversas opciones desde
 * **Modelos** (**Herramientas** - **Sites**)
 
    * Esta consola le permite [crear y administrar las configuraciones de modelo](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+
+>[!NOTE]
+>
+>MSM se puede utilizar con ambas páginas y [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) ya que estos fragmentos forman parte de una experiencia (página).
 
 >[!NOTE]
 >
@@ -233,7 +237,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
    <td><strong>Restablecer</strong></td>
    <td><p>Restablecer una página de Live Copy a:</p>
     <ul>
-     <li>Quite todas las cancelaciones de herencia y<br /> </li>
+     <li>Elimine todas las cancelaciones de herencia y<br /> </li>
      <li>Devuelva la página al mismo estado que la página de origen.</li>
     </ul> <p>Restablecer afecta a los cambios realizados en las propiedades de la página, el sistema de párrafos y los componentes.</p> </td>
    <td> </td>
@@ -281,7 +285,7 @@ En el ejemplo anterior, `/content/we-retail/language-masters/en` es la ubicació
 
 >[!NOTE]
 >
-Los diagramas y las descripciones de esta sección representan instantáneas de posibles Live Copies. No son exhaustivas, pero ofrecen una descripción general para resaltar características específicas.
+>Los diagramas y las descripciones de esta sección representan instantáneas de posibles Live Copies. No son exhaustivas, pero ofrecen una descripción general para resaltar características específicas.
 
 Cuando crea una Live Copy, las páginas de origen seleccionadas se reflejan en 1:1 en Live Copy. Después de esto, también se pueden crear nuevos recursos (páginas o párrafos) directamente dentro de la Live Copy, por lo que es útil tener en cuenta estas variaciones y cómo afectan a la sincronización. Las posibles composiciones incluyen las siguientes:
 
@@ -308,7 +312,7 @@ AEM AEM Cuando crea una Live Copy en, puede ver y navegar por la rama de Live Co
 * Estos recursos no tienen relación activa con las páginas de origen/modelo y no se sincronizan.
 * Pueden producirse escenarios que el MSM gestione como casos especiales. Por ejemplo, cuando usted (o un proceso) crea una página con la misma posición y el mismo nombre en las ramas de origen/modelo y Live Copy. Para estas situaciones, consulte [Conflictos de despliegue de MSM](/help/sites-administering/msm-rollout-conflicts.md) para obtener más información.
 
-![Despliegue de conflictos](assets/chlimage_1-368.png)
+![Conflictos de despliegue](assets/chlimage_1-368.png)
 
 #### Live Copies anidadas {#nested-live-copies}
 
@@ -323,7 +327,7 @@ Cuando usted (o un proceso) crea un [página dentro de una live copy existente](
 
 >[!NOTE]
 >
-AEM Si mueve o cambia el nombre de una página dentro de la rama de Live Copy, esto se trata (internamente) como una Live Copy anidada para permitir a los rastrear las relaciones.
+>AEM Si mueve o cambia el nombre de una página dentro de la rama de Live Copy, esto se trata (internamente) como una Live Copy anidada para permitir a los rastrear las relaciones.
 
 #### Copias activas apiladas {#stacked-live-copies}
 
@@ -355,12 +359,12 @@ El origen forma el modelo para la Live Copy. El modelo se define al:
 
 ### Desplegar y sincronizar {#rollout-and-synchronize}
 
-Un despliegue es la acción central de MSM que sincroniza Live Copies con su origen. Puede realizar despliegues manualmente o automáticamente:
+Un despliegue es la acción central de MSM que sincroniza Live Copies con su origen. Puede realizar despliegues manualmente o pueden producirse automáticamente:
 
 * Una [configuración de despliegue](#rollout-configurations) puede definirse de modo que [eventos](/help/sites-administering/msm-sync.md#rollout-triggers) específicos puedan provocar un despliegue automáticamente.
 * Al crear una página de modelo, puede utilizar el [Despliegue](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) para insertar los cambios en live copy.
 
-  **El comando Despliegue** está disponible en una página de modelo a la que se hace referencia mediante una configuración de modelo.
+  **El Despliegue** El comando está disponible en una página de modelo a la que se hace referencia mediante una configuración de modelo.
 
   ![Despliegue](assets/chlimage_1-370.png)
 
@@ -374,7 +378,7 @@ Un despliegue es la acción central de MSM que sincroniza Live Copies con su ori
 
 Una configuración de despliegue define cuándo y cómo se sincroniza una Live Copy con el contenido de origen. Una configuración de despliegue consta de un activador y una o más acciones de sincronización:
 
-* **Activador**
+* **Déclencheur**
 
   Un déclencheur es un evento que hace que se produzca la acción de sincronización dinámica, como la activación de una página de origen. MSM define los activadores que puede utilizar.
 
@@ -384,7 +388,7 @@ Una configuración de despliegue define cuándo y cómo se sincroniza una Live C
 
   >[!NOTE]
   >
-  Puede crear acciones personalizadas para su instancia mediante la API de Java™.
+  >Puede crear acciones personalizadas para su instancia mediante la API de Java™.
 
 Las configuraciones de despliegue se pueden reutilizar, de modo que más de una Live Copy pueda utilizar la misma configuración de despliegue. Varias [configuraciones de despliegue](/help/sites-administering/msm-sync.md#installed-rollout-configurations) se incluyen en una instalación estándar.
 
@@ -406,13 +410,13 @@ También puede [desasociar una live copy](/help/sites-administering/msm-livecopy
 
 >[!CAUTION]
 >
-La acción Desasociar es permanente e irreversible.
+>La acción Desasociar es permanente e irreversible.
 
 La opción Desasociar elimina permanentemente la relación activa entre una Live Copy y su página de modelo. Todas las propiedades relevantes para MSM se eliminan de la Live Copy y las páginas de Live Copy se convierten en una copia independiente.
 
 >[!NOTE]
 >
-Consulte [Desasociar una Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obtener información detallada, incluido el impacto relacionado en las páginas principales y secundarias.
+>Consulte [Desasociar una Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obtener información detallada, incluido el impacto relacionado en las páginas principales y secundarias.
 
 ## Pasos estándar para usar MSM {#standard-steps-for-using-msm}
 
@@ -432,7 +436,7 @@ Los siguientes pasos describen el procedimiento estándar para utilizar MSM para
 
 ## Personalización de MSM {#customizing-msm}
 
-MSM proporciona herramientas para que su implementación se pueda adaptar a las complejidades excepcionales que puedan existir al compartir contenido:
+MSM proporciona herramientas para que su implementación se pueda adaptar a las complejidades excepcionales que pueden existir al compartir contenido:
 
 * **Configuraciones de despliegue personalizadas**
   [Creación de una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplen con sus requisitos. Puede utilizar cualquier activador de despliegue y acción de sincronización disponible.

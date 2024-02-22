@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: a4ece4c2e9128e61982fb45d90ee3c63352f8349
 workflow-type: tm+mt
-source-wordcount: '7335'
+source-wordcount: '7342'
 ht-degree: 68%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 68%
 + Notas de la versión {#release-notes}
    + [Notas de la versión](/help/release-notes/release-notes.md)
    + Notas de la versión anterior {#service-pack}
+      + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
       + [6.5.16](/help/release-notes/previous/6-5-16.md)
@@ -41,6 +42,7 @@ ht-degree: 68%
    + [instrucciones de instalación del Service Pack de AEM Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
    + [Programa de instalación de parches de AEM Forms JEE](/help/release-notes/jee-patch-installer-65.md)
    + [Revisión del paquete de servicio AEM Forms](/help/release-notes/aem-forms-hotfix.md)
+   + [Funciones clave acumulativas y mejoras](/help/release-notes/cumulative-features-enhancements.md)
    + [Funciones en desuso y eliminadas](/help/release-notes/deprecated-removed-features.md)
    + [Estado de función de IU táctil](/help/release-notes/touch-ui-features-status.md)
 + Seguridad {#security}

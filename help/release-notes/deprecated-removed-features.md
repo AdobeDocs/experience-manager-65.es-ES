@@ -2,7 +2,7 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3443d331815ffb462890282a49e658693f157af0
+source-git-commit: a9b8980a5e6f0488f10c408cd18b83f3ff225058
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 10%
@@ -55,7 +55,8 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Desarrolladores | `Granite.Sling.js` biblioteca de cliente. Adobe no planea mejorar más la biblioteca de cliente Granite.Sling.js que se envía como parte de la distribución (Quickstart). | Adobe recomienda a los clientes que dependan de la capacidad de la biblioteca de refactorizar su código para que ya no lo utilicen. |  |
 | Desarrolladores | Uso de la IU de para comprimir/minimizar las bibliotecas de cliente de JavaScript. El Adobe no tiene previsto actualizar la biblioteca YUI. AEM Hasta la versión 6.4, YUI era la opción predeterminada para minimizar JavaScript con la opción de cambiar a Google Closure Compiler (GCC). AEM A partir de la versión 6.5, GCC es la predeterminada. | El Adobe AEM recomienda a los clientes que actualicen a la versión 6.5 de la versión para cambiar a la versión GCC para su implementación de |  |
 | Desarrolladores | Editor de cuadros de diálogo de IU clásica en CRXDE Lite. Adobe no planea mejorar aún más el Editor de cuadros de diálogo de la IU clásica que se incluye como parte de la distribución (inicio rápido) | No hay reemplazo disponible. |  |
-| Forms | La integración de AEM Forms con AEM Mobile está en desuso. | No hay disponible ningún reemplazo. |  | Desarrolladores | Editor de cuadros de diálogo de IU clásica en CRXDE Lite. Adobe no planea mejorar aún más el Editor de cuadros de diálogo de la IU clásica que se incluye como parte de la distribución (inicio rápido) | No hay reemplazo disponible. |  |
+| Forms | La integración de AEM Forms con AEM Mobile está en desuso. | No hay disponible ningún reemplazo. |
+| Desarrolladores | Editor de cuadros de diálogo de IU clásica en CRXDE Lite. Adobe no planea mejorar aún más el Editor de cuadros de diálogo de la IU clásica que se incluye como parte de la distribución (inicio rápido) | No hay reemplazo disponible. |  |
 | Desarrolladores | Biblioteca de cliente lodash/underscore. Adobe no planea mantener y actualizar la biblioteca de cliente Lodash/underscore que se envía como parte de la distribución (inicio rápido). | Adobe recomienda a los clientes que aún requieran Lodash/guion bajo para que su código lo añada a su base de código de proyecto. |  |
 
 ## Funciones eliminadas {#removed-features}
