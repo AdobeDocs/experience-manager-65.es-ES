@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 8ca683a973998e7b5d6a2f87210aaf324a5419ee
+source-git-commit: 6c17822e5d5fcd6af63bc695a057c1eeff50f03a
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '4023'
 ht-degree: 52%
 
 ---
@@ -493,7 +493,7 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 >- El PDF Generator no puede convertir archivos mediante Microsoft® Project 2019. Puede seguir utilizando Microsoft® Project 2016 para convertir archivos .MPP.
 >- PDF Generator no puede convertir archivos con Microsoft® Visio 2019.
 >- El PDF Generator no puede convertir archivos mediante Microsoft® Project 2019.
->- Si la instalación de Microsoft® Office se desactiva o deja de tener licencia por algún motivo, como que un VL_KMS no pueda establecer comunicación durante un periodo, las conversiones pueden fallar hasta que se reactive o se vuelva a otorgar la licencia a la instalación.
+>- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
 
 ### Excepciones a la compatibilidad con la accesibilidad {#exceptions-to-accessibility-support}
 
