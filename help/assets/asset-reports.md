@@ -6,10 +6,10 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 93d0a38d13223a8580f54786bc4ffe149efe99f1
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 10%
+source-wordcount: '1155'
+ht-degree: 8%
 
 ---
 
@@ -48,7 +48,7 @@ Para generar informes, haga lo siguiente:
 * Vencimiento
 * Modificación
 * Publicación
-* [!DNL Brand Portal] publicación
+* [!DNL Brand Portal] publicar
 * Uso del disco
 * Archivos
 * Vínculos compartidos
@@ -96,7 +96,7 @@ Para generar informes, haga lo siguiente:
 
    ![Página de detalles del informe Archivos](assets/files_report.png)
 
-   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde [!DNL Assets]. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
+   El **[!UICONTROL Vínculos compartidos]** El informe muestra las direcciones URL de los recursos que se comparten con usuarios externos desde [!DNL Assets]. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
 
    El **[!UICONTROL Vínculos compartidos]** no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en `/var/dam/share`.
 
@@ -115,7 +115,8 @@ Para generar informes, haga lo siguiente:
 1. Clic **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
 1. En el [!UICONTROL Informes de recursos] página, el estado de generación del informe se basa en el estado actual del trabajo de informe, por ejemplo, [!UICONTROL Correcto], [!UICONTROL Error], [!UICONTROL En cola], o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. También puede seleccionar el informe y hacer clic en **[!UICONTROL Ver]** en la barra de herramientas.
 
-   ![Un informe generado](assets/report_page.png)
+   <!--![A generated report](assets/report_page.png)-->
+   [Estado del informe](assets/report-status.JPG)
 
    Clic **[!UICONTROL Descargar]** en la barra de herramientas para descargar el informe en formato CSV.
 
@@ -128,7 +129,7 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * Vencimiento
 * Modificación
 * Publicación
-* [!DNL Brand Portal] publicación
+* [!DNL Brand Portal] publicar
 * Archivos
 
 Para añadir columnas personalizadas a estos informes, siga estos pasos:
