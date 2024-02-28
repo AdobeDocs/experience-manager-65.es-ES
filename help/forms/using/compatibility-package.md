@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 84%
+source-wordcount: '355'
+ht-degree: 76%
 
 ---
 
@@ -42,6 +42,10 @@ Asegúrese de que tiene preinstalado el [paquete de compatibilidad de AEM](https
 
 1. Una vez estabilizados los registros, reinicie el servidor.
 1. Utilice la utilidad de migración para hacer que los recursos sean compatibles con la versión 6.5.
+
+   >[!NOTE]
+   >
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
    Para obtener más información, consulte [utilidad de migración](../../forms/using/migration-utility.md).
 

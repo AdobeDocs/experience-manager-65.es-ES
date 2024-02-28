@@ -8,10 +8,10 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 94%
+source-wordcount: '830'
+ht-degree: 91%
 
 ---
 
@@ -38,7 +38,8 @@ Existen dos métodos para identificar la configuración regional del formulario 
 
 * observando los siguientes parámetros en el orden especificado:
 
-   * El parámetro de solicitud `afAcceptLang`. Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligó a procesar el formulario en la configuración regional japonesa:
+   * Parámetro de solicitud `afAcceptLang`
+Para anular la configuración regional del explorador de los usuarios, puede pasar el `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligó a procesar el formulario en la configuración regional japonesa:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * La configuración regional del explorador establecida para el usuario, que se especifica en la solicitud utilizando el encabezado `Accept-Language`.
@@ -123,6 +124,10 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 ### Reiniciar el servidor {#restart-the-server}
 
 Reinicie el servidor de AEM para aplicar la configuración regional añadida.
+
+>[!NOTE]
+>
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 ## Bibliotecas de ejemplo para agregar compatibilidad con Español {#sample-libraries-for-adding-support-for-spanish}
 

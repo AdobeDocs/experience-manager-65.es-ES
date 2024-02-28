@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,10 @@ Antes de reiniciar el servidor de Forms después de una recuperación, haga lo s
 1. Asegúrese de que no se inician procesos desde orígenes internos o externos como iniciadores de procesos web, SOAP o EJB hasta que se valide el funcionamiento normal del sistema.
 
 AEM AEM Si se mueve o cambia la base de datos de formularios principal de la, consulte las guías de instalación correspondientes a su servidor de aplicaciones para obtener información sobre cómo actualizar la información de conexión de la base de datos para las fuentes de datos de los formularios IDP_DS y EDC_DS de la forma de datos de la forma de la.
+
+>[!NOTE]
+> 
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 ### AEM Cambiar el nombre de host o la dirección IP de los formularios {#changing-the-aem-forms-hostname-or-ip-address}
 

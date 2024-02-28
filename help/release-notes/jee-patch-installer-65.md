@@ -3,10 +3,10 @@ title: Programa de instalación de parches de AEM Forms JEE
 description: Aprenda a utilizar el Instalador de parches de AEM Forms AEM JEE para solucionar problemas en componentes de Forms de la versión 6.5 de.
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 19%
+source-wordcount: '562'
+ht-degree: 18%
 
 ---
 
@@ -81,6 +81,10 @@ Si tiene configurada la autenticación SAML y tiene problemas con metadatos de I
    `um.saml.enable.large.xml=true`
 1. Reinicie el servidor.
 1. Elimine los proveedores de autenticación SAML existentes y agréguelos de nuevo para los dominios existentes, tal como se describe en la configuración de SAML.
+
+>[!NOTE]
+>
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 ## Módulos afectados {#impacted-modules}
 

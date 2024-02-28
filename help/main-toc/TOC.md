@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: a4ece4c2e9128e61982fb45d90ee3c63352f8349
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7342'
+source-wordcount: '7348'
 ht-degree: 68%
 
 ---
@@ -503,7 +503,7 @@ ht-degree: 68%
       + [Configuración de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
    + Notas de la versión {#release-notes-new-features}
-      + [¿Qué hay de nuevo?](/help/forms/using/whats-new.md)
+      + [Novedades](/help/forms/using/whats-new.md)
       + [Preguntas frecuentes](/help/forms/using/frequently-asked-questions-faq.md)
    + Introducción {#getting-started}
       + [Introducción a AEM Forms](/help/forms/using/introduction-aem-forms.md)
@@ -1186,6 +1186,7 @@ ht-degree: 68%
       + [Mitigación de vulnerabilidades RCE de Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Error al realizar la copia de seguridad de la base de datos durante la actualización a 6.5.12.0 para MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La generación de PDF no puede imprimir un gran número de PDF en Workbench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
+      + [AEM Cómo reiniciar correctamente el SDK de la](/help/forms/using/restart-aem-sdk.md)
    + Documentación heredada {#legacy-documentation}
       + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
       + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)

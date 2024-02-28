@@ -2,10 +2,10 @@
 title: Pasos adicionales para obtener correo electrónico con archivos adjuntos
 description: Obtenga información sobre cómo corregir el error cuando no puede recuperar correos electrónicos con archivos adjuntos para AEM Forms en plataformas JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 64%
+source-wordcount: '270'
+ht-degree: 53%
 
 ---
 
@@ -36,7 +36,7 @@ El usuario no puede realizar operaciones como Enviar PDF por correo electrónico
 
 1. Navegue hasta `http://<server name>:<port>/lc/system/console/bundles` y elimine el paquete con un nombre como `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
 
-1. Instale`java.mail-1.5.jar` obtenido en el paso 3. Este paso reinicia las propiedades sling de la implementación JEE. Espere a que se instalen los paquetes en `http://<server name>:<port>/lc/system/console/bundles` para mostrar el estado como **Activo**.
+1. Instalar `java.mail-1.5.jar` obtenido en el paso 3. Este paso reinicia las propiedades sling de la implementación JEE. Espere a que se instalen los paquetes en `http://<server name>:<port>/lc/system/console/bundles` para mostrar el estado como **Activo**.
 
    >En caso de que el estado siga siendo **InActive**, reiniciar   **JBoss®** desde el **Consola de servicios**.
 
@@ -47,4 +47,8 @@ El usuario no puede realizar operaciones como Enviar PDF por correo electrónico
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 
-1. Reinicie **JBoss®**.
+1. Restart **JBoss®**.
+
+>[!NOTE]
+>
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.

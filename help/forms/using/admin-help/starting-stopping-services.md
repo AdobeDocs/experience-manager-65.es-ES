@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 3%
+source-wordcount: '299'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +23,10 @@ AEM Existen dos tipos de servicios que forman parte de los formularios de:
 ## AEM Iniciar o detener los servicios asociados con módulos de formularios de la {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
 AEM Los módulos de formularios de datos (por ejemplo, Forms, Rights Management, Output) funcionan como servicios. AEM A veces, es posible que tenga que detener o iniciar los servicios para estos módulos de formularios de la forma en la que se utilizan los formularios de la. AEM Por ejemplo, debe detener y reiniciar un servicio de formularios de la después de cambiar una configuración del servicio.
+
+>[!NOTE]
+>
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 1. En la consola de administración, haga clic en **Servicios** > **Aplicaciones y servicios** > **Administración de servicios**.
 1. En la página Administración de servicios, active la casilla de verificación situada junto al servicio que desea detener o iniciar y haga clic en Detener o Iniciar.

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1676'
-ht-degree: 77%
+source-wordcount: '1710'
+ht-degree: 75%
 
 ---
 
@@ -95,6 +95,10 @@ Para cambiar la programación de publicación, realice los siguientes pasos:
 1. Reinicie la instancia de AEM Forms Server.
 
 ![servicio_de_publicación_de_datos_de_proceso](assets/processdatapublisherservice.png)
+
+>[!NOTE]
+>
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 ### Servicio ProcessDataStorage {#processdatastorage-service}
 
@@ -275,3 +279,5 @@ Para obtener más información sobre el servicio de publicación de datos y cóm
 * **[!UICONTROL Sincronizar]**: sincronice el repositorio de Process Reporting incrustado con la base de datos de AEM Forms.
 * **[!UICONTROL Ayuda]**: vea la documentación de la Ayuda de Process Reporting.
 * **[!UICONTROL Cerrar sesión]**: cierre sesión en Process Reporting.
+
+

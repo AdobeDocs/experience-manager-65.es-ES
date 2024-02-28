@@ -6,10 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 94%
+source-wordcount: '738'
+ht-degree: 90%
 
 ---
 
@@ -31,6 +31,10 @@ Al instalar el paquete, si se produce un error `javax.jcr.nodetype.ConstraintVio
 1. Vaya al Administrador de paquetes. La URL predeterminada es `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Busque e instale el paquete `adobe-lc-workspace-pkg-[version].zip`.
 1. Reinicie el servidor de la aplicación.
+
+>[!NOTE]
+>
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 ## Registro de AEM Forms Workspace {#aem-forms-workspace-nbsp-logging}
 

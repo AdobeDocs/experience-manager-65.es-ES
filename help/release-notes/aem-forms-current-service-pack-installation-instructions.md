@@ -2,9 +2,9 @@
 title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación del Service Pack de AEM Forms para el entorno OSGi y JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 531eed9bb6d7792a6da0104b533a505738a64786
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1748'
 ht-degree: 7%
 
 ---
@@ -128,7 +128,8 @@ Vaya al directorio adecuado, y desde un shell y escriba `./aem65_cfp_install.bin
 
 >[!NOTE]
 >
-> Después de instalar AEM Forms en el Service Pack de JEE, debe quitar el paquete de complementos de Forms de `crx-repository\install` antes de reiniciar appserver. Descargue el último paquete de complementos de Forms desde [Portal de distribución de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
+>* Después de instalar AEM Forms en el Service Pack de JEE, debe quitar el paquete de complementos de Forms de `crx-repository\install` antes de reiniciar appserver. Descargue el último paquete de complementos de Forms desde [Portal de distribución de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
+>* Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 +++
 
@@ -173,7 +174,7 @@ El paquete se instala automáticamente.
 
   >[!NOTE]
   >
-  El Service Pack de Experience Manager no admite la instalación de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >El Service Pack de Experience Manager no admite la instalación de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validación de la instalación**
 
@@ -205,7 +206,7 @@ El paquete se instala automáticamente.
 
 >[!NOTE]
 >
-Si instala el Service Pack de AEM Forms para la base de datos relacional, es obligatorio realizar una copia de seguridad de DB_schema.
+> Si instala el Service Pack de AEM Forms para la base de datos relacional, es obligatorio realizar una copia de seguridad de DB_schema.
 
 +++
 
@@ -223,7 +224,7 @@ Si instala el Service Pack de AEM Forms para la base de datos relacional, es obl
 >[!NOTE]
 >
 >
-Asegúrese de instalar la versión redistribuible, incluso si está instalada una versión anterior, para garantizar la disponibilidad de la versión más reciente.
+> Asegúrese de instalar la versión redistribuible, incluso si está instalada una versión anterior, para garantizar la disponibilidad de la versión más reciente.
 
 +++
 
@@ -244,7 +245,7 @@ Existen dos métodos diferentes que puede utilizar para instalar automáticament
 
   >[!NOTE]
   >
-  El Service Pack de Experience Manager no admite la instalación de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >El Service Pack de Experience Manager no admite la instalación de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validación de la instalación**
 

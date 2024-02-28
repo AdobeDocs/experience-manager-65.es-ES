@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: e1519477-b5a8-4947-8597-26b945a3b819
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1762'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 1%
 # Configuración general de AEM Forms {#general-aem-forms-settings}
 
 La página Configuraciones principales de la consola de administración proporciona opciones que pueden ayudar a mejorar el rendimiento del sistema. Después de configurar o actualizar esta configuración, reinicie el servidor de aplicaciones.
+
+>[!NOTE]
+>
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 Para obtener información sobre cómo habilitar el modo de copia de seguridad, consulte [Habilitar y deshabilitar el modo de copia de seguridad](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
@@ -63,7 +67,7 @@ Si no especifica un directorio raíz de GDS, el directorio predeterminado será 
 >
 >No especifique el mismo directorio para el directorio temporal y el directorio GDS.
 
-Para obtener más información sobre el directorio GDS, consulte [AEM Preparación para la instalación de formularios (un solo servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_es).
+Para obtener más información sobre el directorio GDS, consulte [AEM Preparación para la instalación de formularios (un solo servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 **Ubicación del directorio de fuentes del servidor de Adobe** *ndash; Escriba la ruta al directorio que contiene las fuentes del servidor de Adobe. AEM Estas fuentes se instalan con los formularios de. La ubicación predeterminada para estas fuentes es [raíz de aem-forms]directorio /fonts. Si no puede acceder a este directorio, puede copiar las fuentes en otra parte y utilizar esta configuración para especificar la nueva ubicación.
 

@@ -3,9 +3,9 @@ title: Crear un controlador de usuarios externos de invitación
 description: Obtenga información sobre cómo crear un controlador de usuarios externos de invitación. Permite al servicio Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -233,6 +233,11 @@ Para agregar usuarios externos a los que invitar mediante la consola de administ
 
 1. Implemente el archivo JAR del controlador de usuarios externos invitados mediante Workbench.
 1. Reinicie el servidor de la aplicación.
+
+   >[!NOTE]
+   >
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+
 1. Inicie sesión en la consola de administración.
 1. Clic **[!UICONTROL Servicios]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuración]** > Invitado **[!UICONTROL Registro de usuario]**.
 1. Habilitar el registro de usuarios invitados marcando la **[!UICONTROL Habilitar el registro de usuarios invitados]** cuadro. En **[!UICONTROL Utilizar el sistema de registro integrado]**, haga clic en **[!UICONTROL No]**. Guarde la configuración.

@@ -7,10 +7,10 @@ topic-tags: manage
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 44%
+source-wordcount: '468'
+ht-degree: 40%
 
 ---
 
@@ -36,7 +36,11 @@ AEM La aplicación de escritorio de ® utiliza el protocolo WebDAV en MicrosoftW
 1. En la instancia de autor, haga clic en ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Herramientas]** ![hammer](assets/hammer.png) **[!UICONTROL > Implementación > Operaciones> Consola Web]**. La consola web se abre en una nueva ventana.
 1. En la ventana de la consola web, busque y abra **[!UICONTROL Configuración del complemento FormsManager]** opción.
 1. En el cuadro de diálogo Configuración del complemento FormsManager, anule la selección de **[!UICONTROL Sincronizar recursos asincrónicamente]** y haga clic en **[!UICONTROL Guardar]**.
-1. Reinicie el servidor de AEM Forms. Después del reinicio, el servidor de AEM Forms AEM está habilitado para aceptar y compartir contenido con la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la.
+1. Reinicie AEM Forms Server. Después del reinicio, el servidor de AEM Forms AEM está habilitado para aceptar y compartir contenido con la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la.
 1. Abra la aplicación y conéctese al servidor de AEM Forms.
+
+   >[!NOTE]
+   >
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
    Si la conexión se realiza correctamente, la aplicación rellenará las carpetas `content/dam` y `content/dam/formsanddocuments`. Además de mover archivos de carpetas anteriores a carpetas locales y a la inversa, puede utilizar la aplicación para mover contenido entre carpetas rellenadas automáticamente.

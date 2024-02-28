@@ -5,10 +5,10 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 83%
+source-wordcount: '1383'
+ht-degree: 81%
 
 ---
 
@@ -98,6 +98,11 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
    También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
 
 1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el directorio] de instalación de AEM/crx-quickstart/logs/error.archivo de registro y el [registro sea estable.
+
+   >[!NOTE]
+   >
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. Reiniciar el SDK de AEM utilizando métodos alternativos, por ejemplo, detener los procesos de Java, puede posible cliente a incoherencias en el entorno de desarrollo AEM.
+
 1. Repita los pasos del 1 al 7 en todas las instancias de autor y publicación.
 
 ## Configuraciones posteriores a la instalación {#post-installation-configurations}

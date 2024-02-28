@@ -4,9 +4,9 @@ description: Instale, configure y personalice un paquete de demostración de AEM
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4501'
+source-wordcount: '4535'
 ht-degree: 63%
 
 ---
@@ -313,6 +313,10 @@ Una vez completada la configuración en la nube, es posible que desee probar el 
    >[!NOTE]
    >
    Se ha informado de que era necesario reiniciar el servidor de AEM para que la fuente de datos se enlace correctamente al FDM.
+
+   >[!NOTE]
+   >
+   Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
 
 #### Prueba del modelo de datos de Forms (Derby) {#test-fdm-derby}
 
