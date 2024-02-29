@@ -1,15 +1,15 @@
 ---
-title: Configuración de la autenticación basada en OAuth2 para Microsoft&reg; protocolos de servidor de correo de Office 365
-description: Configuración de la autenticación basada en OAuth2 para Microsoft&reg; protocolos de servidor de correo de Office 365
+title: Configuración de la autenticación basada en OAuth2 para Microsoft® (Forms JEE OAuth); protocolos de servidor de correo de Office 365
+description: Configuración de la autenticación basada en OAuth2 para Microsoft® (Forms JEE OAuth); protocolos de servidor de correo de Office 365
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
+source-git-commit: 2a67e7e54a72c31a4a0ab0a186be20a914222fa7
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '986'
 ht-degree: 5%
 
 ---
 
-# Integración con los protocolos del servidor de correo de Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integración de AEM Forms con los protocolos del servidor de correo de Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 Para permitir que las organizaciones cumplan con los requisitos de correo electrónico seguro, AEM Forms ofrece compatibilidad con OAuth 2.0 para la integración con los protocolos de servidor de correo de Microsoft® Office 365. Puede utilizar el servicio de autenticación OAuth 2.0 de Azure Active Directory (Azure AD) para conectarse con varios protocolos como IMAP, POP o SMTP y acceder a los datos de correo electrónico de los usuarios de Office 365. A continuación se proporcionan instrucciones paso a paso para configurar los protocolos del servidor de correo de Microsoft® Office 365 para autenticarse mediante el servicio OAuth 2.0:
 
@@ -27,7 +27,7 @@ En el caso anterior, **Cuentas en cualquier directorio organizativo (cualquier d
    >
    > * Para **Cuentas en cualquier directorio organizativo (cualquier directorio de Azure AD - Multitenant)** En la aplicación, Adobe recomienda utilizar una cuenta de trabajo en lugar de una cuenta de correo electrónico personal.
    > * **Solo cuentas personales de Microsoft®** no se admite la aplicación.
-   * El Adobe recomienda que utilice la variable **Cuenta de Microsoft® personal y de varios inquilinos** aplicación.
+   > * El Adobe recomienda que utilice la variable **Cuenta de Microsoft® personal y de varios inquilinos** aplicación.
 
 1. A continuación, vaya a **Certificados y secretos**, haga clic en **Nuevo secreto de cliente** y siga los pasos que aparecen en la pantalla para crear un secreto. Asegúrese de tomar nota de este valor de secret para utilizarlo posteriormente.
 
@@ -56,7 +56,7 @@ En el caso anterior, **Cuentas en cualquier directorio organizativo (cualquier d
 
    >[!NOTE]
    >
-   Es obligatorio seleccionar **Tokens de acceso** y **Tokens de ID** casillas de verificación.
+   > Es obligatorio seleccionar **Tokens de acceso** y **Tokens de ID** casillas de verificación.
 
 1. Clic **Información general** en el panel izquierdo y copie los valores de **ID de aplicación (cliente)**, **ID de directorio (inquilino)**, y **Secreto del cliente** para su uso posterior.
 
@@ -72,7 +72,7 @@ A continuación, debe generar el código de autorización, explicado en los paso
 
    >[!NOTE]
    >
-   Si hay una aplicación de inquilino único, reemplace `common` con su `[tenantid]` en la siguiente URL para generar el código de autorización: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+   > Si hay una aplicación de inquilino único, reemplace `common` con su `[tenantid]` en la siguiente URL para generar el código de autorización: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. Al escribir la dirección URL anterior, se le redirige a la pantalla de inicio de sesión:
    ![Pantalla de inicio](/help/forms/using/assets/azure_loginscreen.png)
@@ -97,8 +97,8 @@ A continuación, debe generar el token de actualización, tal y como se explica 
 
    >[!NOTE]
    >
-   En la aplicación de un solo inquilino, para generar el token de actualización, utilice el siguiente comando cURL y reemplace `common` con el `[tenantid]` en:
-   `curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
+   > En la aplicación de un solo inquilino, para generar el token de actualización, utilice el siguiente comando cURL y reemplace `common` con el `[tenantid]` en:
+   >`curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Tome nota del token de actualización.
 
@@ -110,7 +110,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   Para habilitar el servicio de autenticación oAuth 2.0, es obligatorio seleccionar **Si el servidor SMTP requiere autenticación (autenticación SMTP)** casilla de verificación
+   > Para habilitar el servicio de autenticación oAuth 2.0, es obligatorio seleccionar **Si el servidor SMTP requiere autenticación (autenticación SMTP)** casilla de verificación
 
 1. Establecer **Configuración de autenticación de oAuth 2.0** as `True`.
 1. Copie los valores de **ID de cliente** y **Secreto del cliente** desde Azure Portal.
@@ -123,8 +123,8 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   * El protocolo de seguridad de transporte tiene los siguientes valores válidos: &quot;blank&quot;, &quot;SSL&quot; o &quot;TLS&quot;. Establecer valores de **Seguridad de transporte SMTP** y **Seguridad de transporte de recepción** hasta **TLS** para habilitar el servicio de autenticación oAuth.
-   * **Protocolo POP3** no es compatible con OAuth mientras se utilizan extremos de correo electrónico.
+   >* El protocolo de seguridad de transporte tiene los siguientes valores válidos: &quot;blank&quot;, &quot;SSL&quot; o &quot;TLS&quot;. Establecer valores de **Seguridad de transporte SMTP** y **Seguridad de transporte de recepción** hasta **TLS** para habilitar el servicio de autenticación oAuth.
+   >* **Protocolo POP3** no es compatible con OAuth mientras se utilizan extremos de correo electrónico.
 
    ![Configuración de conexión](/help/forms/using/assets/oauth_connectionsettings.png)
 
@@ -134,7 +134,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   Si lo desea, puede cambiar la configuración de autenticación Auth 2.0 a autenticación básica para un proceso en particular en un área de trabajo. Para ello, establezca la variable **Autenticación OAuth 2.0** valor como &quot;False&quot; en **Usar configuración global** en el **Configuración de conexión** pestaña.
+   >Si lo desea, puede cambiar la configuración de autenticación Auth 2.0 a autenticación básica para un proceso en particular en un área de trabajo. Para ello, establezca la variable **Autenticación OAuth 2.0** valor como &quot;False&quot; en **Usar configuración global** en el **Configuración de conexión** pestaña.
 
 ## Para habilitar las notificaciones de tareas oAuth {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Para configurar el extremo de correo electrónico {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Solución de problemas {#troubleshooting}
 

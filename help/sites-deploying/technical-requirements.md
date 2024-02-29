@@ -1,11 +1,11 @@
 ---
 title: Requisitos técnicos
-description: Una lista de las plataformas de cliente y servidor compatibles con Adobe Experience Manager.
+description: Una lista de las plataformas de cliente y servidor admitidas para Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
+source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3650'
 ht-degree: 12%
 
 ---
@@ -535,6 +535,8 @@ Para Windows x86:
 * Tiempo de ejecución de 32 bits de Microsoft Visual C++ 2019 (VC 14.28 o superior) para AEM Forms Designer de 32 bits
 * Tiempo de ejecución de 64 bits de Microsoft Visual C++ 2019 (VC 14.28 o superior) para el Diseñador de AEM Forms de 64 bits (para la pila OSGI y JEE)
 
+[Instalar y configurar AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
+
 ### Requisitos para la reescritura de metadatos de AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP La reescritura de datos es compatible y está habilitada para las siguientes plataformas y formatos de archivo:
@@ -548,6 +550,6 @@ XMP La reescritura de datos es compatible y está habilitada para las siguientes
 
 * **Formatos de archivo**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
 
-### Requisitos para que AEM Assets procese recursos con muchos metadatos en Linux® {#assetsonlinux}
+### Requisitos para que Recursos AEM procese activos de metadatos pesado en Linux® {#assetsonlinux}
 
-El proceso XMPFilesProcessor requiere que biblioteca GLIBC_2.14 funcione. Utilice un núcleo Linux® que contenga GLIBC_2.14, por ejemplo, Linux® kernel versión 3.1.x. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos de PSD. El uso de una versión anterior de GLIBC produce errores en los registros que comienzan con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+El proceso XMPFilesProcessor requiere que biblioteca GLIBC_2.14 funcione. Utilice un núcleo Linux® que contenga GLIBC_2.14, por ejemplo, Linux® kernel versión 3.1.x. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos de PSD. El uso de una versión anterior de GLIBC provoca un error en los registros que comienzan por `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
