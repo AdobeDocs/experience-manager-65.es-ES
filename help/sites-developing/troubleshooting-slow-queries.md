@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2236'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Más restricciones de consulta reducen los conjuntos de resultados aptos y optim
 
 Del mismo modo, sin una regla de índice adicional para `cq:tags` , incluso una consulta de texto completo con una restricción en `cq:tags` tendría un mal rendimiento, ya que los resultados del índice devolverían todas las coincidencias de texto completo. La restricción de cq:tags se filtraría después de ella.
 
-Otra causa del filtrado posterior a los índices son las Listas de control de acceso, que a menudo se pierden durante el desarrollo. Intente asegurarse de que la consulta no devuelva rutas que puedan ser inaccesibles para el usuario. Esto se puede hacer mediante una mejor estructura de contenido y una restricción de ruta relevante en la consulta.
+Otra causa del filtrado posterior a los índices son las Listas de control de acceso, que a menudo se pierden durante el desarrollo. Intente asegurarse de que la consulta no devuelva rutas que puedan ser inaccesibles para el usuario. Esto se puede hacer mediante una mejor estructura de contenido y proporcionando restricciones de ruta relevantes en la consulta.
 
 Una forma útil de identificar si el índice Lucene devuelve muchos resultados para devolver un pequeño subconjunto como resultado de la consulta es habilitar los registros de DEPURACIÓN para `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Al hacerlo, puede ver cuántos documentos se cargan desde el índice. La cantidad de resultados posibles frente a la cantidad de documentos cargados no debería ser desproporcionada. Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md).
 
@@ -176,7 +176,7 @@ AEM Compatibilidad con los siguientes idiomas de consulta:
 * JCR-SQL2
 * XPath
 
-AEM El siguiente ejemplo utiliza el Generador de consultas como el lenguaje de consulta más común utilizado por los desarrolladores de, aunque los mismos principios se aplican a JCR-SQL2 y XPath.
+AEM El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta más común utilizado por los desarrolladores de, aunque los mismos principios se aplican a JCR-SQL2 y XPath.
 
 1. Añada una restricción nodetype para que la consulta se resuelva en un índice de propiedades de Lucene existente.
 
@@ -466,7 +466,7 @@ Por lo tanto, asegúrese de que los índices satisfacen las consultas, excepto s
 
    * Genere un índice de propiedades de Lucence óptimo a partir de instrucciones de consulta XPath o JCR-SQL2.
 
-* **[AEM Complemento de Chrome de](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
+* **_AEM Complemento de Chrome de_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * Extensión de explorador web Google Chrome que expone los datos de registro por solicitud, incluidas las consultas ejecutadas y sus planes de consulta, en la consola de herramientas de desarrollo del explorador.
-   * Requiere [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) AEM que se instalarán y activarán en el servidor de correo de.
+   * El _AEM Complemento de Chrome de_ es una extensión del explorador web Google Chrome que expone los datos de registro por solicitud, incluidas las consultas de ejecución y sus planes de consulta, en la consola de herramientas de desarrollo del explorador.
+   * Requiere que instale y habilite [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) AEM en la.

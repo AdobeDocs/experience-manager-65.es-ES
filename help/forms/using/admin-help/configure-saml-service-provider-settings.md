@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 El lenguaje de marcado de aserción de seguridad (SAML) es una de las opciones que puede seleccionar al configurar la autorización de un dominio híbrido o empresarial. SAML se utiliza principalmente para admitir SSO en varios dominios. AEM Cuando SAML está configurado como su proveedor de autenticación, los usuarios inician sesión y se autentican en los formularios de la a través de un proveedor de identidad de terceros (IDP) especificado.
 
-Para ver una explicación de SAML, consulte [Información técnica sobre el lenguaje de marcado de aserciones de seguridad (SAML) V2.0](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
+Para ver una explicación de SAML, consulte [Información técnica sobre el lenguaje de marcado de aserciones de seguridad (SAML) V2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. En la consola de administración, haga clic en Configuración > User Management > Configuración > Configuración de Proveedor de servicio de SAML.
 1. AEM En el cuadro ID de entidad de proveedor de servicios, escriba un ID único para utilizarlo como identificador para la implementación del proveedor de servicios de formularios de la aplicación de la entidad de proveedor de servicios de formularios de la. También puede especificar este ID único al configurar el IDP (por ejemplo, `um.lc.com`.) AEM También puede utilizar la dirección URL que se utiliza para acceder a los formularios de la (por ejemplo, `https://AEMformsserver`).
@@ -26,7 +26,7 @@ Para ver una explicación de SAML, consulte [Información técnica sobre el leng
 
    * Use el Administrador de confianza para importar una credencial en formato PKCS #12 con la credencial de firma de documento seleccionada como tipo de almacén de confianza. (Consulte [Administrar credenciales locales](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * En la lista Alias de clave de credencial de proveedor de servicios, seleccione el alias que asignó a la credencial en el almacén de confianza.
-   * Haga clic en Exportar para guardar el contenido de la URL en un archivo y, a continuación, importe ese archivo en el IDP.
+   * Haga clic en Exportar para guardar el contenido de la URL en un archivo y, a continuación, importar ese archivo en el IDP.
 
 1. (Opcional) En la lista Política de ID de nombres de proveedores de servicios, seleccione el formato de nombre que utiliza el IDP para identificar al usuario en una afirmación de SAML. Las opciones son Sin especificar, Correo electrónico y Nombre completo del dominio de Windows.
 
@@ -53,7 +53,7 @@ Para ver una explicación de SAML, consulte [Información técnica sobre el leng
 
      `saml.sp.use.relaystate=true`
 
-   * Agregue la siguiente propiedad personalizada para configurar la dirección URL de las páginas de servidor Java (JSP) personalizadas, que se utiliza para procesar la lista registrada de proveedores de identidad. Si no ha implementado una aplicación web personalizada, se utiliza la página predeterminada Administración de usuarios para procesar la lista.
+   * Agregue la siguiente propiedad personalizada para poder configurar la dirección URL de las páginas de servidor Java™ (JSP) personalizadas, que se utilizan para procesar la lista registrada de proveedores de identidad. Si no ha implementado una aplicación web personalizada, se utiliza la página predeterminada Administración de usuarios para procesar la lista.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 
