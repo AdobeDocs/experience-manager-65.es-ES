@@ -2,7 +2,7 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 60c9a1d9fb03975b70ed1d7d1d65b0bd4017c794
+source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
 workflow-type: tm+mt
 source-wordcount: '3390'
 ht-degree: 2%
@@ -217,8 +217,6 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 * Cuando un usuario crea un XDP en AEM Forms Designer, el objeto de fondo también se etiqueta en la salida del PDF cuando un usuario navega por las etiquetas del formulario. (LC-3921687)
 
-
-<!-- #### [!DNL Adaptive Forms] -->
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
   * text
@@ -229,8 +227,6 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * **Interactive Communications**
   * text -->
 <!--### Commerce{#commerce-6520} * text -->
-
-
 
 ### Foundation {#foundation-6520}
 
