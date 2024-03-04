@@ -4,10 +4,10 @@ description: Aprenda a crear una temática personalizada, aplicar estilo a compo
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: a361c194c238f0f2c999abfd77ca85e7697cb7bf
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 61%
+source-wordcount: '2038'
+ht-degree: 54%
 
 ---
 
@@ -442,16 +442,77 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible que no todos los dispositivos en los que se visualiza el formulario adaptable tengan las fuentes utilizadas para diseñar el formulario adaptable. Puede utilizar un servicio de fuentes web para enviar las fuentes necesarias al dispositivo de destino.
 
 [!DNL Adobe Fonts] es un servicio de Web Fonts. Puede configurar y utilizar el servicio con formularios adaptables. Para usar [!DNL Adobe Fonts] en un formulario adaptable, haga lo siguiente:
+1. Examine la [biblioteca de fuentes de Adobe](https://fonts.adobe.com/) y elija una fuente para aplicar estilo al formulario.
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] ahora se denomina Adobe Fonts y se incluye con Creative Cloud y otras suscripciones. [Más información](https://fonts.adobe.com/).
+> Puede añadir etiquetas o filtros para restringir la lista de fuentes.
 
-1. Cree una cuenta de [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com), cree un kit, agregue la fuente Myriad Pro al kit, publíquelo y obtenga su ID. Es necesario utilizar [!DNL Adobe Fonts] (Web Fonts) en un formulario adaptable.
-1. AEM En el [!DNL Forms] Servidor, vaya a ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. A continuación, abra una carpeta de configuración. Si ya hay una configuración disponible, haga clic en el botón **[!UICONTROL Crear]** para crear una instancia.
+1. Haga clic en el botón &lt;/> para añadir la familia a un proyecto web, en caso de que encuentre una fuente que le guste.
 
-   En el cuadro de diálogo Crear configuración, especifique un **título** para la configuración y haga clic en **[!UICONTROL Crear]**. Se le redirigirá a la página de configuración. En el cuadro de diálogo [!UICONTROL Editar componente] que aparece, proporcione el **ID del kit** y haga clic en **[!UICONTROL Aceptar]**.
+   ![select-font-from-font-library](assets/select-font-from-font-library.png)
 
-1. Configure la temática para que use la configuración [!DNL Adobe Fonts]. En la instancia de autor, abra la **[!UICONTROL Temática global]** en el editor de temáticas. En el editor de temáticas, vaya a **[!UICONTROL Opciones de temática]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. En el **[!UICONTROL Configuración de Adobe Fonts]** , seleccione el kit y haga clic en **[!UICONTROL Guardar]**.
+   Aparecerá la pantalla de diálogo Agregar fuentes a un proyecto web.
 
-   Las fuentes agregadas a **[!UICONTROL Adobe Fonts]** están disponibles para seleccionarlas en el acordeón **[!UICONTROL Texto]** de todos los componentes.
+   >[!NOTE]
+   >
+   > Solo puede añadir fuentes al proyecto web si tienen el botón &lt;/> disponible.
+
+2. Asigne un nombre al proyecto web.
+3. Seleccione las casillas de verificación para seleccionar los pesos y estilos de fuente que desee incluir.
+
+   ![añadir una biblioteca de fuentes](assets/add-a-font-window.png)
+
+4. Seleccionar **Clic** para crear el proyecto.
+5. Copie el código incrustado y la dirección URL desde la pantalla.
+   ![código incrustado y dirección URL](assets/font-add-url.png)
+
+6. Clic **Listo** para cerrar la ventana del proyecto web.
+7. AEM Inicie sesión en la instancia de y vaya a la dirección URL `http://server:port/crx/de/index.jsp#`
+8. Cree una estructura de carpetas en CRXDE, por ejemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+9. Vaya al recién creado `clientlibs` y añada la `allowProxy` y `categories` propiedades.
+10. Vaya a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` y cree una carpeta css.
+11. Vaya a la carpeta CSS creada y cree un archivo. Por ejemplo, cree un archivo como `fonts.css` y pegue el código de incrustación junto con la dirección URL.
+   ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
+12. Guarde los cambios.
+
+>[!NOTE]
+>
+> Para utilizar las fuentes personalizadas agregadas en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente en la variable **[!UICONTROL Categoría de biblioteca de cliente]** se alinea con el nombre especificado en la opción categories de la carpeta clientlib.
+
+Ahora el formulario adaptable puede acceder a las fuentes incluidas a través de la siguiente biblioteca de cliente de fuentes personalizada.
+
+
+<!--
+Create Adobe Fonts Configuration
+
+1. To create a API Token, go to **login** > **API Token** > **Make me a new API token**.
+
+   ![API token](/help/forms/using/assets/fonts-api-token.png)
+
+2. Once, you click **Make me a new API token**, a new token is generated. 
+3. Copy the generated token for future use.
+4. Now login to your AEM  author instance. On the author instance, go to **[!UICONTROL Tools]**>**[!UICONTROL Cloud Services]**> **[!UICONTROL Adobe Fonts]**.
+5. Select the configuration container and click **Create**. **[UICONTROL Create Adobe Fonts Configuration]** screen appears.
+    ![API token](/help/forms/using/adobe-font-configuration-screen.png)
+
+6. Spceify the name and paste the API token in the **[!UICONTROL Kit ID]** textbox.
+7. Click **Create**.
+
+
+
+The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
+1. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. 
+2. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+
+
+1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
+1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
+
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+
+
