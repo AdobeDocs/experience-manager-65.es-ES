@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
+source-git-commit: 348b82f0bd0d99eeb771aa4ed2719ee10d8cee68
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3464'
 ht-degree: 2%
 
 ---
@@ -461,6 +461,12 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
 
 ### Problemas conocidos de AEM Forms {#known-issues-aem-forms-6520}
+
+* AEM Forms AEM Después de actualizar del paquete de servicio 18 (6.5.18.0) o el paquete de servicio 19 (6.5.19.0) de Forms AEM 6.5 a paquete de servicio 20 (6.5.20.0) de Forms 6.5, los usuarios se toparán con un error de compilación de JSP. AEM No pueden abrir ni crear formularios adaptables y están experimentando errores con otras interfaces de, como el editor de páginas, la interfaz de usuario de AEM Forms AEM y el editor de flujo de trabajo de la. Se muestra un mensaje de error similar al siguiente:
+
+`Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
+
+Puede ponerse en contacto con el servicio de asistencia al Adobe para resolver el problema.
 
 * El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)
 
