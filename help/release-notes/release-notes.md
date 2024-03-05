@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 5f95281130f0f2cac6d115b59b828946c2f70d33
+source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
 workflow-type: tm+mt
-source-wordcount: '3462'
+source-wordcount: '3485'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
    * Curva elíptica ECDSA P384 con algoritmo de resumen SHA384
    * Curva elíptica ECDSA P512 con algoritmo de resumen SHA512
 * **Compatibilidad perfecta con Windows 11 para Forms Designer**: AEM Forms Designer ahora es compatible con Windows 11, lo que garantiza una instalación y un funcionamiento sin problemas. Los usuarios pueden actualizar con seguridad a Windows 11 sin tener que volver a instalar Forms Designer ni preocuparse por los problemas de compatibilidad, lo que garantiza un flujo de trabajo ininterrumpido.
-* **Accesibilidad mejorada con la función &quot;Pie de ilustración&quot; personalizada en AEM Forms Designer**: AEM Forms Designer ahora incluye una función de accesibilidad personalizada llamada &quot;Pie de ilustración&quot; para crear XDP con elementos de subtítulos personalizados. Esta función mejora la accesibilidad al permitir que los usuarios integren subtítulos personalizados en los diseños de sus documentos para mejorar la inclusividad y la experiencia del usuario.
+* **Accesibilidad mejorada con la función &quot;Pie de ilustración&quot; personalizada en AEM Forms Designer**: AEM Forms Designer ahora incluye una función de accesibilidad personalizada llamada &quot;Pie de ilustración&quot;, que permite a los usuarios crear XDP con elementos de subtítulos personalizados. Esta función mejora la accesibilidad al permitir que los usuarios integren subtítulos personalizados en los diseños de sus documentos para que puedan mejorar la inclusividad y la experiencia del usuario.
 
 <!-- ### [!DNL Forms]
 
@@ -466,8 +466,15 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
   `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
 
-  Puede ponerse en contacto con el soporte de Adobe para obtener ayuda sobre la resolución del problema.
+  Para solucionar el problema:
 
+   1. Descargue la revisión para su sistema operativo:
+
+   * [Revisión para Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+   * [Revisión para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+   * [Revisión para Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+
+   1. Cargue e instale el paquete (.zip) mediante el Administrador de paquetes.
 
 * El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)
 
