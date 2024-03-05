@@ -7,10 +7,10 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 69%
+source-wordcount: '902'
+ht-degree: 67%
 
 ---
 
@@ -62,7 +62,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 Los formularios adaptables y los formularios HTML5 se procesan en formato HTML5. Dependiendo de factores como el tamaño del formulario y las imágenes que este contiene, la salida resultante puede tener un gran tamaño. El método recomendado para optimizar la transferencia de datos es comprimir la respuesta del HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de la respuesta, el tráfico de red y el tiempo necesario para transmitir los datos entre los equipos cliente y servidor.
 
-Por ejemplo, realice los siguientes pasos para habilitar la compresión en Apache Web Server 2.0 de 32 bits con JBoss®:
+Por ejemplo, realice los siguientes pasos para habilitar la compresión en Apache Web Server 2.0 de 32 bits con JBoss®:
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -123,7 +123,7 @@ Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
-           #Don't compress
+           #Do not compress
            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
            #Dealing with proxy servers
@@ -167,7 +167,7 @@ Para mejorar el rendimiento, puede configurar el software antivirus para que exc
 
 >[!NOTE]
 >
-* Si utiliza una ubicación diferente para el GDS y el directorio temporal, abra AdminUI en `https://'[server]:[port]'/adminui`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones principales** para confirmar la ubicación utilizada.
+>* Si utiliza una ubicación diferente para el GDS y el directorio temporal, abra AdminUI en `https://'[server]:[port]'/adminui`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones principales** para confirmar la ubicación utilizada.
 >
 * Si el servidor de AEM Forms funciona lentamente incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable Java™ (java.exe).
 >

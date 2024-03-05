@@ -6,10 +6,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 96%
+source-wordcount: '1228'
+ht-degree: 90%
 
 ---
 
@@ -132,7 +132,7 @@ El campo que se ha eliminado también se marca con un icono para indicar un erro
 
 >[!NOTE]
 >
->Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se tratará como un campo de formulario adaptable normal sin vincular y se incluye en la sección sin vincular del archivo XML de salida.
+>Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se trata como un campo de formulario adaptable normal sin vincular y se incluye en la sección sin vincular del archivo XML de salida.
 
 ## Descargas {#downloads}
 

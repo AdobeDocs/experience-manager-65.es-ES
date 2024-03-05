@@ -1,11 +1,11 @@
 ---
 title: Proyectos
-description: Los proyectos permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
+description: Los proyectos le permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 34%
+source-wordcount: '1360'
+ht-degree: 26%
 
 ---
 
@@ -22,7 +22,7 @@ Como usuario, puede:
 
 ## Requisitos de acceso {#access-requirements}
 
-AEM Los proyectos son una función estándar de la y no requieren ninguna configuración adicional.
+AEM Los proyectos son una característica de la estándar y no requieren ninguna configuración adicional.
 
 Sin embargo, para que los usuarios de proyectos puedan ver a otros usuarios o grupos mientras utilizan Proyectos como, por ejemplo, al crear proyectos, crear tareas/flujos de trabajo o ver y administrar el equipo, dichos usuarios deben tener acceso de lectura a `/home/users` y `/home/groups`.
 
@@ -62,7 +62,7 @@ Puede utilizar el selector de vista para cambiar entre la visualización de proy
 
 Puede utilizar el filtro para alternar entre todos los proyectos y solo aquellos que están activos.
 
-![Filter](assets/projects-filter.png)
+![Filtrar](assets/projects-filter.png)
 
 ### Selección y visualización de proyectos {#selecting}
 
@@ -102,7 +102,7 @@ En el mosaico **Recursos**, puede recopilar todos los recursos que utilice para 
 
 ![Mosaico de recursos](assets/project-tile-assets.png)
 
-Los recursos se cargan directamente en el mosaico.
+Puede cargar recursos directamente en el mosaico.
 
 ### Colecciones de recursos {#asset-collections}
 
@@ -177,7 +177,7 @@ Puede iniciar flujos de trabajo para el proyecto. Si se está ejecutando algún 
 
 En función del proyecto que cree, hay diferentes flujos de trabajo disponibles.
 
-Estos se describen en [Uso de flujos de trabajo de proyecto.](/help/sites-authoring/projects-with-workflows.md)
+Estas se describen en [Uso de flujos de trabajo de proyecto.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanzamientos {#launches}
 
@@ -223,7 +223,7 @@ Para proyectos creativos, también se proporcionan funciones adicionales, como f
 
 Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados.
 
-Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**.
+Por ejemplo, un proyecto llamado Myproject tendría tres grupos **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**.
 
 Si se elimina el proyecto, esos grupos solo se eliminarán si selecciona la opción adecuada [al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
 

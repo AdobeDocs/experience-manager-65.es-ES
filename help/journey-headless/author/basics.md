@@ -2,10 +2,10 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante Fragmentos de contenido.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 76%
+source-wordcount: '1694'
+ht-degree: 75%
 
 ---
 
@@ -47,7 +47,7 @@ Al igual que con la mayoría de los sistemas, debe iniciar sesión. Como autor, 
 * Una contraseña
 * Un vínculo para acceder a la pantalla de inicio de sesión
 
-Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algún problema, Adobe recomienda ponerse en contacto con el equipo interno de soporte del proyecto.
+Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algún problema, recomendamos que se ponga en contacto con su equipo de soporte interno del proyecto.
 
 ### Navegación {#navigation}
 
@@ -76,7 +76,7 @@ Las Acciones rápidas están disponibles para un único recurso, consulte **Basi
 
 La barra de herramientas de acciones proporciona acceso a toda la gama de acciones, aplicables al escenario actual. Las acciones disponibles pueden cambiar, por ejemplo, en función de su ubicación o de si ha seleccionado varios recursos:
 
-![Barra de herramientas de acciones](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+![Barra de herramientas Acción](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
 Puede seleccionar el formato para ver los recursos con el Selector de vista:
 
@@ -98,11 +98,11 @@ A menos que tenga muy pocos fragmentos de contenido, querrá organizarlos para q
 
 #### Creación de una carpeta {#creating-folder}
 
-Puede hacerlo creando una serie de carpetas dentro de la sección **Archivos** de la consola Recursos. Seleccione la opción **Crear** (parte superior derecha), seguido de **Carpeta**:
+Para ello, cree una serie de carpetas en **Archivos** de la consola Recursos. Seleccione la opción **Crear** (parte superior derecha), seguido de **Carpeta**:
 
 ![Opción Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Se abrirá un cuadro de diálogo en el que puede introducir los detalles y confirmar con **Crear**:
+Se abre un cuadro de diálogo en el que puede escribir los detalles y confirmarlos con **Crear**:
 
 ![Cuadro de diálogo Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -126,7 +126,7 @@ A continuación, desplácese por estas carpetas para crear y editar los fragment
 
 Por si acaso...
 
-Probablemente, se le dará una carpeta inicial donde podrá crear sus carpetas. Así es como deben aplicarse algunos detalles de configuración (normalmente por un desarrollador o administrador del sistema) a la carpeta raíz. Probablemente esto no le interese, pero si es necesario, puede comprobar la **Configuración** en **Cloud Services** de la carpeta **Propiedades**:
+Probablemente, se le dará una carpeta inicial donde podrá crear sus carpetas. Así es como deben aplicarse algunos detalles de configuración (normalmente por un desarrollador o administrador del sistema) a la carpeta raíz. Esto probablemente no le interese, pero si es necesario puede consultar la **Configuración** en el **Cloud Service** de la carpeta **Propiedades**:
 
 ![Propiedades de Crear carpeta: configuración](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -184,7 +184,7 @@ Confirme las actualizaciones con: **Guardar** o **Guardar y cerrar**.
 >
 >Para obtener más información, puede leer Variaciones: creación de fragmentos de contenido.
 
-#### Lo que probablemente no deba preocuparle {#what-you-probably-do-not-need-to-worry-about}
+#### Lo que (probablemente) no debe preocuparle {#what-you-probably-do-not-need-to-worry-about}
 
 De acuerdo. Esta sección puede parecer un poco extraña, pero cuando abra el Editor de fragmentos de contenido y empiece a explorar, aparecerán varias opciones que no se aplican a su recorrido sin encabezado (probablemente) como Autor de contenido. Así que esto es tan solo un rápido avance de lo que debe ignorar en un contexto sin encabezado.
 

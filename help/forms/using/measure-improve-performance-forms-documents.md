@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 97%
+source-wordcount: '1274'
+ht-degree: 94%
 
 ---
 
@@ -117,7 +117,7 @@ Para obtener más información sobre los informes de análisis de formularios, c
 
 En este paso, se analizarán los puntos de datos en el informe de análisis y se deducirá el rendimiento del formulario. Si no alcanza los KPI de éxito, elaborará hipótesis basadas en los datos y buscará posibles soluciones para resolver los problemas. Por ejemplo:
 
-* Si el tiempo de rellenado promedio del formulario es mayor de lo esperado, es posible que este resulte complejo para los clientes, que no utilice terminologías estándar, que sea excesivamente largo, etc. En ese caso, tal vez prefiera simplificar la estructura y los campos del formulario, rehacer el diseño, reducir la longitud o agregar descripciones de ayuda y ejemplos para los campos no estándares.
+* Si el tiempo de rellenado promedio del formulario es mayor de lo esperado, es posible que este resulte complejo para los clientes, que no utilice terminologías estándar, que sea demasiado largo, etc. En ese caso, tal vez prefiera simplificar la estructura y los campos del formulario, rehacer el diseño, reducir la longitud o agregar descripciones de ayuda y ejemplos para los campos no estándares.
 * Si los datos indican que la mayoría de los clientes acceden a la ayuda de uno de los paneles del formulario, es evidente que tienen dudas respecto a la información que deben rellenar. Puede que prefiera utilizar una terminología alternativa o agregar algunas entradas de ejemplo y una descripción de ayuda en ese panel.
 * Si la tasa de anulación o abandono de un formulario es mayor de lo esperado, puede deberse a que tarda mucho tiempo en procesarse, a que los clientes acceden a él involuntariamente o a que es demasiado complicado. En ese caso, puede que desee optimizar la descripción del formulario que aparece en los resultados de búsqueda, simplificarlo, optimizarlo para que se cargue más rápido, etc.
 

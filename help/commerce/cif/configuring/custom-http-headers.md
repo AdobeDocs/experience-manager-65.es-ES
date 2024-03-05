@@ -2,10 +2,10 @@
 title: Encabezados HTTP personalizados
 description: Aprenda a configurar encabezados HTTP personalizados en Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 5%
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ Los componentes que utilizan la configuración de servicio en la nube anterior e
 
 ## Restricciones {#restrictions}
 
-Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no estarán disponibles para su configuración. En otras palabras, no se pueden anular los encabezados HTTP estándar con esta función. Se puede encontrar una lista de nombres de encabezado restringidos [aquí](https://developer.mozilla.org/es-ES/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden utilizar:
+Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no están disponibles para su configuración. En otras palabras, no se pueden anular los encabezados HTTP estándar con esta función. Se puede encontrar una lista de nombres de encabezado restringidos [aquí](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden utilizar:
 
 * CIF &quot;Almacén&quot;: utilizado por los usuarios para identificar la tienda de Adobe Commerce.
 * CIF &quot;Preview-Version&quot;: utilizado por los usuarios para recuperar productos clasificados.

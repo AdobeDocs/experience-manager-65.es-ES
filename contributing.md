@@ -1,8 +1,8 @@
 ---
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 52%
+source-wordcount: '506'
+ht-degree: 47%
 
 ---
 # Contribución a la documentación de Adobe Experience Manager

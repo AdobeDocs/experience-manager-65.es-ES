@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 97%
+source-wordcount: '1502'
+ht-degree: 95%
 
 ---
 
@@ -230,7 +230,7 @@ en https://[*host*]:[*port*]/system/console/configMgr.
    `key` varchar(255) NOT NULL,
    `id` varchar(60) NOT NULL,
    PRIMARY KEY (`id`,`key`),
-   CONSTRAINT ‘additionalmetadatatable_fk’ FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
+   CONSTRAINT 'additionalmetadatatable_fk' FOREIGN KEY (`id`) REFERENCES `metadata` (`id`) ON DELETE CASCADE
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
@@ -397,7 +397,7 @@ Siga los siguientes pasos para crear [una biblioteca cliente](/help/sites-develo
 
    >[!NOTE]
    >
-   >El script está diseñado para el componente del widget de archivos adjuntos predeterminado (OOTB). Si ha personalizado el widget de archivos adjuntos OOTB, cambie el script anterior para agregar los cambios correspondientes.
+   >El script es para el componente del widget de archivos adjuntos predeterminado. Si ha personalizado el widget de archivos adjuntos predeterminado, cambie el script anterior para incorporar los cambios correspondientes.
 
 1. Añada la siguiente propiedad a la carpeta creada en el paso 2 y haga clic en **[!UICONTROL Guardar todo]**.
 

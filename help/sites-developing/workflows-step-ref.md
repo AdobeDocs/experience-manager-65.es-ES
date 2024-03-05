@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ Los modelos de flujo de trabajo constan de una serie de pasos de varios tipos. S
 >* [Procesamiento de recursos mediante controladores de medios y flujos de trabajo](/help/assets/media-handlers.md)
 >
 
-## Propiedades de la etapa {#step-properties}
+## Propiedades del paso {#step-properties}
 
 Cada componente de paso tiene un **Propiedades del paso** que permite definir y editar las propiedades necesarias.
 
@@ -65,7 +65,7 @@ Las siguientes propiedades están disponibles para muchos componentes de paso de
 
 * **Notificar al usuario por correo electrónico**
 
-   * Puede notificar a los participantes enviándoles un correo electrónico cuando el flujo de trabajo alcance el paso.
+   * Notifique a los participantes enviándoles un correo electrónico cuando el flujo de trabajo alcance el paso.
    * Si está habilitado, se envía un correo electrónico al usuario definido por la propiedad **Usuario/grupo** o a cada miembro del grupo si se ha definido uno.
 
 * **Usuario/grupo**

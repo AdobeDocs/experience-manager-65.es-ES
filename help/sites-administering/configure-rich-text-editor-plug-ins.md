@@ -3,7 +3,7 @@ title: Configuración de los complementos del Editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar las funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%

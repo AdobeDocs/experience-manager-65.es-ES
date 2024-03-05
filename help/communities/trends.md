@@ -7,10 +7,10 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '343'
+ht-degree: 1%
 
 ---
 
@@ -63,12 +63,12 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
   El valor predeterminado es `Members`.
 
-* **Título que se mostrará**
+* **Mostrar título**
 
   Título descriptivo que se mostrará sobre los datos, como `Trending Content`.
 El valor predeterminado es sin título.
 
-* **Número de de visualizaciones**
+* **Mostrar recuento**
 
   Número de elementos que se van a enumerar.
 El valor predeterminado es 10.
@@ -92,7 +92,7 @@ El valor predeterminado es 10.
    * `Last 7 days`
    * `Last 30 days`
    * `Last 90 days`
-   * `This year (since Jan 1st)`
+   * `This year (since Jan 1)`
    * `Total`
 
   El valor predeterminado es `Total`.

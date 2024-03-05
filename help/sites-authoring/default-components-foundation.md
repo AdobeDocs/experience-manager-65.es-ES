@@ -2,9 +2,9 @@
 title: Componentes de base
 description: Obtenga información sobre los componentes de base en Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6872'
+source-wordcount: '6873'
 ht-degree: 4%
 
 ---
@@ -175,7 +175,7 @@ Especifique cómo funciona el carrusel:
 
    * **Lista de creación que utiliza**
 Existen varias formas de crear una lista de páginas: Páginas secundarias, Lista fija, Búsqueda o Búsqueda avanzada (todas ellas descritas a continuación).
-Independientemente del método que elija, las páginas que incluya en la lista deben tener ya una imagen asociada con la página. Es esta imagen la que se muestra en el carrusel. Si no hay ninguna imagen para una página determinada debajo de Propiedades de página de esa página, debe asociar una imagen con la página antes de comenzar. Si no lo tiene, el carrusel muestra una página en blanco. Consulte [Edición de propiedades de página](/help/sites-authoring/editing-page-properties.md).
+Independientemente del método que elija, las páginas que incluya en la lista deben tener ya una imagen asociada con la página. Es esta imagen la que se muestra en el carrusel. Si no hay ninguna imagen para una página determinada debajo de Propiedades de página de esa página, debe asociar una imagen con la página antes de comenzar. Si no lo hace, el carrusel muestra una página en blanco. Consulte [Edición de propiedades de página](/help/sites-authoring/editing-page-properties.md).
 Según el elemento que elija, aparecerá un nuevo panel:
 
       * **Opciones de las páginas secundarias**
@@ -696,7 +696,7 @@ El ejemplo siguiente muestra un término de búsqueda que está mal escrito y no
 
 ![dc_search_usenotfound](assets/dc_search_usenotfound.png)
 
-### Sitemap {#sitemap}
+### Mapa del sitio {#sitemap}
 
 >[!CAUTION]
 >
@@ -1395,7 +1395,7 @@ Puede especificar un título y elementos para que aparezcan en la lista. Con los
 >
 >Consulte [Precarga de campos de formulario con varios valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Carga de archivo {#file-upload}
+### Carga de archivos {#file-upload}
 
 >[!CAUTION]
 >

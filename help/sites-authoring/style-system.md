@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 81%
+source-wordcount: '1297'
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ El sistema de estilos proporciona una solución unificada a los requisitos del a
 * Los autores de plantillas pueden definir clases de estilo en la política de contenido de los componentes.
 * Los autores de contenido pueden seleccionar estas clases de una lista desplegable cuando editan el componente en una página para aplicar los estilos correspondientes.
 
-A continuación, la clase de estilo se inserta en el elemento envolvente de decoración del componente para que el desarrollador de componentes no tenga que preocuparse por administrar los estilos más allá de proporcionar sus reglas CSS.
+A continuación, la clase de estilo se inserta en el elemento envolvente de decoración del componente para que el desarrollador de componentes no tenga que preocuparse por administrar los estilos más allá de proporcionar sus reglas de CSS.
 
 ## Información general {#overview}
 
@@ -128,7 +128,7 @@ AEM AEM Con el componente configurado, los estilos configurados por los autores 
 
 AEM A partir de la versión 6.5.3.0 de la, una pestaña opcional de Estilos en el cuadro de diálogo de edición ya está disponible. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
 
-La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la pestaña Diseño:
+La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la pestaña Cuadro de diálogo de diseño:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`

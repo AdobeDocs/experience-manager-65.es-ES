@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '4598'
+source-wordcount: '4518'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ Los valores recomendados son:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-AEM En 6.3, los dos parámetros anteriores están preconfigurados como OOTB y se pueden mantener a través de OSGi QueryEngineSettings.
+AEM En 6.3, los dos parámetros anteriores están preconfigurados de forma predeterminada y se pueden mantener a través de OSGi QueryEngineSettings.
 
 Encontrará más información en : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -453,9 +453,9 @@ AEM AEM En el funcionamiento normal de los recursos, por ejemplo, la carga de re
 
 *Ejecute el paso 1(a-b) durante un período de ventana de mantenimiento/poco uso a medida que el almacén de nodos se atraviesa durante esta operación, lo que puede incurrir en una carga significativa en el sistema.*
 
-1a. Ejecutar `oak-run.jar --generate` para crear una lista de nodos a los que se extraerá previamente el texto.
+1 bis. Ejecutar `oak-run.jar --generate` para crear una lista de nodos a los que se extraerá previamente el texto.
 
-1b. La lista de nodos (1a) se almacena en el sistema de archivos como archivo CSV
+1 ter. La lista de nodos (1a) se almacena en el sistema de archivos como archivo CSV
 
 Todo el almacén de nodos se atraviesa (como especifican las rutas en el comando oak-run) cada vez `--generate` se ejecuta, y un **nuevo** Se crea el archivo CSV. El archivo CSV es **no** reutilizado entre ejecuciones discretas del proceso de preextracción de texto (pasos 1 a 2).
 
@@ -463,9 +463,9 @@ Todo el almacén de nodos se atraviesa (como especifican las rutas en el comando
 
 *AEM El paso 2(a-c) se puede ejecutar durante el funcionamiento normal del almacén de datos, es decir, solo interactúa con él.*
 
-2a. Ejecutar `oak-run.jar --tika` para extraer previamente texto para los nodos binarios enumerados en el archivo CSV generado en (1b)
+2 bis. Ejecutar `oak-run.jar --tika` para extraer previamente texto para los nodos binarios enumerados en el archivo CSV generado en (1b)
 
-2b. El proceso iniciado en (2a) accede a los nodos binarios definidos en el CSV en el almacén de datos directamente y extrae texto.
+2 ter. El proceso iniciado en (2a) accede a los nodos binarios definidos en el CSV en el almacén de datos directamente y extrae texto.
 
 2 quater. El texto extraído se almacena en el sistema de archivos en un formato ingerible por el proceso de reindexación de Oak (3a)
 
@@ -477,6 +477,6 @@ El texto extraído previamente se puede añadir gradualmente a a lo largo del ti
 
 *Ejecute la reindexación (pasos 3a-b) durante un periodo de mantenimiento/bajo uso a medida que el almacén de nodos se atraviesa durante esta operación, lo que puede incurrir en una carga significativa en el sistema.*
 
-3a. [Reindexar](#how-to-re-index) AEM de los índices Lucene se invoca en el.
+3 bis. [Reindexar](#how-to-re-index) AEM de los índices Lucene se invoca en el.
 
-3b. La configuración OSGi de Apache Jackrabbit Oak DataStore PreExtractTextProvider (configurada para señalar el texto extraído mediante una ruta del sistema de archivos) indica a Oak que obtenga texto completo de los archivos extraídos y evita visitar y procesar directamente los datos almacenados en el repositorio.
+3 ter. La configuración OSGi de Apache Jackrabbit Oak DataStore PreExtractTextProvider (configurada para señalar el texto extraído mediante una ruta del sistema de archivos) indica a Oak que obtenga texto completo de los archivos extraídos y evita visitar y procesar directamente los datos almacenados en el repositorio.

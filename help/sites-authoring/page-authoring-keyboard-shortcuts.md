@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 52%
@@ -30,7 +30,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |
 |  | `Ctrl-c` | Copiar los párrafos seleccionados |
-|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecen en la interfaz de usuario hasta que se pegue) |
+|  | `Ctrl-x` | Cortar párrafos seleccionados (los párrafos cortados no desaparecen en la interfaz de usuario hasta que se pega) |
 |  | `Ctrl-v` | Pegar párrafos previamente cortados o copiados |
 |  | `Ctrl-Backspace` | Eliminar párrafos seleccionados |
 | **Modo de edición:** editor de texto enriquecido | `Ctrl-b` | Negrita |
@@ -45,7 +45,7 @@ También hay varios métodos abreviados del teclado disponibles para los usuario
 
 >[!NOTE]
 >
->Los métodos abreviados del teclado del editor siempre están activos independientemente de si [se han desactivado los métodos abreviados de la consola](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+Los métodos abreviados del teclado del editor siempre están activos independientemente de si [se han desactivado los métodos abreviados de la consola](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Teclas modificadoras específicas del sistema operativo {#os-specific-modifier-keys}
 

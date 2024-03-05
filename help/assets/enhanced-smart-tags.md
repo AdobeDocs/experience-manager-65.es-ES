@@ -6,10 +6,10 @@ feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 2%
+source-wordcount: '1559'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Las organizaciones que trabajan con recursos digitales utilizan cada vez más vocabulario controlado por taxonomía en los metadatos de recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes suelen utilizar para referirse a recursos digitales de una clase determinada y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se identifiquen y recuperen fácilmente.
@@ -99,7 +99,6 @@ Agregue los recursos a una carpeta y aplique las etiquetas a cada recurso desde 
 >1. La formación es un proceso irrevocable. El Adobe recomienda revisar las etiquetas del conjunto depurado de recursos mucho antes de entrenar al servicio de contenido inteligente en las etiquetas.
 >1. Antes de aprender a utilizar una etiqueta, consulte [Directrices de formación de Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Cuando entrena el servicio de contenido inteligente por primera vez, Adobe recomienda que lo imparta en al menos dos etiquetas distintas.
-
 
 ## Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes {#understandsearch}
 
@@ -183,7 +182,7 @@ También puede asignar una clasificación más alta a una etiqueta para aumentar
 1. En el cuadro de búsqueda, busque recursos basados en una etiqueta como palabra clave.
 1. Para identificar una imagen que no encuentre relevante para la búsqueda, revise los resultados de la búsqueda.
 1. Seleccione la imagen y haga clic en **[!UICONTROL Administrar etiquetas]** en la barra de herramientas.
-1. Desde el **[!UICONTROL Administrar etiquetas]** , revise las etiquetas. Si no desea buscar la imagen según una etiqueta específica, seleccione la etiqueta y haga clic en **[!UICONTROL Eliminar]** en la barra de herramientas. También puede hacer clic en `x` símbolo que aparece junto a una etiqueta.
+1. Desde el **[!UICONTROL Administrar etiquetas]** , revise las etiquetas. Si no desea buscar la imagen en función de una etiqueta específica, seleccione la etiqueta y haga clic en **[!UICONTROL Eliminar]** en la barra de herramientas. También puede hacer clic en `x` símbolo que aparece junto a una etiqueta.
 1. De forma opcional, para asignar una clasificación más alta a una etiqueta, seleccione la etiqueta y haga clic en **[!UICONTROL Promocionar]** en la barra de herramientas. La etiqueta que promueva se moverá al **[!UICONTROL Etiquetas]** sección.
 1. Clic **[!UICONTROL Guardar]** y luego haga clic en **[!UICONTROL OK]**
 1. Vaya a **[!UICONTROL Propiedades]** página para la imagen. Observe que a la etiqueta promocionada se le asigna más relevancia y aparece antes en los resultados de búsqueda.

@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '574'
 ht-degree: 6%
 
 ---
@@ -74,56 +74,56 @@ En la tabla siguiente se muestran las propiedades de las configuraciones de expo
   </tr>
   <tr>
    <td>includeComponents</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td>incluir todo</td>
    <td>sling:resourceType</td>
    <td>excluir detalles de nodos con sling:resourceType especificado de la exportación JSON</td>
   </tr>
   <tr>
    <td>excludeComponents</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td>no excluir nada</td>
    <td>sling:resourceType</td>
    <td>incluir detalles solo para nodos con sling:resourceType especificado de la exportación JSON</td>
   </tr>
   <tr>
    <td>excludePropertyPrefixes</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td>no excluir nada</td>
    <td>Prefijos de propiedad</td>
    <td>excluir de la exportación JSON las propiedades que comienzan con prefijos especificados</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td>no excluir nada</td>
    <td>Nombres de propiedades</td>
    <td>excluir las propiedades especificadas de la exportación de JSON</td>
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td>incluir todo</td>
    <td>Nombres de propiedades</td>
    <td><p>si excludePropertyPrefixes establecido<br /> esto incluye las propiedades especificadas, a pesar de que coinciden con el prefijo que se excluye,</p> <p>else (excluyendo propiedades ignoradas) solo incluye estas propiedades</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td>incluir todo</td>
    <td>nombres secundarios</td>
    <td>excluir los elementos secundarios especificados de la exportación de JSON</td>
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>String[]<br /> <br /> </td>
+   <td>Cadena[]<br /> <br /> </td>
    <td>no excluir nada</td>
    <td>nombres secundarios</td>
    <td>incluir solo los elementos secundarios especificados de la exportación JSON, excluir otros</td>
   </tr>
   <tr>
    <td>nameProperties</td>
-   <td>String[]<br /> <br /> </td>
+   <td>Cadena[]<br /> <br /> </td>
    <td>cambiar nombre nada</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>cambiar el nombre de propiedades mediante reemplazos</td>
@@ -152,7 +152,7 @@ En la tabla siguiente se muestran las propiedades:
   </tr>
   <tr>
    <td>&lt;SELECTOR_TO_INC&gt;</td>
-   <td>Cadena[] </td>
+   <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
    <td>Para los siguientes tipos de recursos de sling, no devuelva la exportación JSON de CaaS predeterminada.<br /> Devolver una exportación de json de cliente procesando el recurso como;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>

@@ -1,5 +1,5 @@
 ---
-title: Integración de visualizadores de Dynamic Media con etiquetas de Analytics y Adobe Experience Platform
+title: Integración de visores de Dynamic Media con etiquetas de Experience Platform y Adobe Analytics
 description: Obtenga información acerca de la extensión de visores de Dynamic Media para Experience Platform y visores de Dynamic Media 5.13. Permite a los clientes de Adobe Analytics y Experience Platform Tags utilizar eventos y datos específicos para los visualizadores de Dynamic Media en la configuración de etiquetas de Experience Platform.
 mini-toc-levels: 3
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6618'
-ht-degree: 7%
+source-wordcount: '6664'
+ht-degree: 5%
 
 ---
 
-# Integración de visualizadores de Dynamic Media con etiquetas de Analytics y Adobe Experience Platform {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Integración de visores de Dynamic Media con etiquetas de Experience Platform y Adobe Analytics {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## ¿Qué es la integración de visores de Dynamic Media con etiquetas de Experience Platform y Adobe Analytics? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -41,7 +41,7 @@ Para obtener más información sobre las extensiones de Adobe o las extensiones 
 
 ### Casos de uso para la integración {#use-cases-for-the-integration}
 
-El caso de uso principal de la integración con Experience Platform Tags son los clientes que utilizan Adobe Experience Manager Assets y Adobe Experience Manager Sites. En estos casos, puede configurar una integración estándar entre el nodo de creación de Experience Manager y las etiquetas de Experience Platform y, a continuación, asociar la instancia de Sites con la propiedad Etiquetas de Experience Platform. Después, cualquier componente WCM de Dynamic Media agregado a una página de Sites realizará un seguimiento de los datos y eventos de los visualizadores.
+El caso de uso principal para la integración con etiquetas de Experience Platform son los clientes que utilizan Adobe Experience Manager Assets y Adobe Experience Manager Sites. En estos casos, puede configurar una integración estándar entre el nodo de creación de Experience Manager y las etiquetas de Experience Platform y, a continuación, asociar la instancia de Sites con la propiedad Etiquetas de Experience Platform. Después, cualquier componente WCM de Dynamic Media agregado a una página de Sites realizará un seguimiento de los datos y eventos de los visualizadores.
 
 Consulte [Seguimiento de visualizadores de Dynamic Media en Experience Manager Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
@@ -65,7 +65,7 @@ En Etiquetas de Experience Platform, los conceptos de *Elementos de datos* y *Re
 
 Un elemento de datos en las etiquetas de Experience Platform es una propiedad con nombre cuyo valor se define estáticamente o se calcula dinámicamente en función del estado de una página web o de los datos de los visualizadores de Dynamic Media.
 
-Las opciones disponibles para una definición de elemento de datos dependen de la lista de extensiones instaladas en la propiedad de etiquetas de Experience Platform. La extensión &quot;Core&quot; está preinstalada y disponible de forma predeterminada en cualquier configuración. Esta extensión &quot;Core&quot; permite definir un elemento de datos cuyo valor proviene de una cookie, un código JavaScript, una cadena de consulta y muchas otras fuentes.
+Las opciones disponibles para una definición de elemento de datos dependen de la lista de extensiones instaladas en la propiedad de etiquetas de Experience Platform. La extensión &quot;Core&quot; está preinstalada y disponible de forma predeterminada en cualquier configuración. Esta extensión &quot;Core&quot; le permite definir un elemento de datos cuyo valor proviene de una cookie, un código JavaScript, una cadena de consulta y muchas otras fuentes.
 
 Para el seguimiento de Adobe Analytics, se deben instalar varias extensiones más, como se describe en [Instalación y configuración de extensiones](#installing-and-setup-of-extensions). La extensión de visualizadores de Dynamic Media agrega la capacidad de definir un elemento de datos cuyo valor es un argumento del evento de visualizador dinámico. Por ejemplo, es posible hacer referencia al tipo de visor o al nombre del recurso notificado por el visor al cargar, al nivel de zoom notificado cuando el usuario final amplía o reduce la imagen y mucho más.
 
@@ -739,7 +739,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
 
 1. Vuelva a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** que dejó abierta anteriormente. En la esquina superior derecha de la página, seleccione **[!UICONTROL Siguiente]** para abrir **[!UICONTROL Cuenta]** página en la **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]** ventana.
 
-   (Si ha cerrado la página anteriormente, regrese a Autor del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**. Seleccione **[!UICONTROL Crear]**. En el **[!UICONTROL Solución de nube]** , seleccione la opción **[!UICONTROL Etiquetas de Experience Platform]**. En la lista desplegable **[!UICONTROL Certificado]**, seleccione el nombre del certificado creado anteriormente.)
+   (Si ha cerrado la página anteriormente, regrese a Autor del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**. Seleccione **[!UICONTROL Crear]**. En el **[!UICONTROL Solución de nube]** , seleccione la opción **[!UICONTROL Etiquetas de Experience Platform]**. En el **[!UICONTROL Certificado]** , seleccione el nombre del certificado creado anteriormente.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
@@ -756,7 +756,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
    * **[!UICONTROL Título]** : introduzca un título descriptivo para la cuenta.
    * **[!UICONTROL Servidor de autorización]** - Vuelva a la página de detalles de integración que abrió anteriormente. Seleccione el **[!UICONTROL JWT]** pestaña. Copie el nombre del servidor (sin la ruta) como se indica a continuación.
 
-   Vuelva a la página **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
+   Vuelva a la **[!UICONTROL Cuenta]** y, a continuación, pegue el nombre en el campo correspondiente.
 Por ejemplo, `https://ims-na1.adobelogin.com/`
 (el nombre del servidor es solo un ejemplo)
 
@@ -772,7 +772,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    Página de detalles de la integración.
 
-1. **[!UICONTROL Secreto del cliente]**: Regrese a la página de detalles de la integración. Desde el **[!UICONTROL Información general]** pestaña, seleccione **[!UICONTROL Recuperar secreto de cliente]**. A la derecha del **[!UICONTROL Secreto de cliente]** , seleccione **[!UICONTROL Copiar]**.
+1. **[!UICONTROL Secreto del cliente]** - Vuelva a la página de detalles de la integración. Desde el **[!UICONTROL Información general]** pestaña, seleccione **[!UICONTROL Recuperar secreto de cliente]**. A la derecha del **[!UICONTROL Secreto de cliente]** , seleccione **[!UICONTROL Copiar]**.
 
    Vuelva a la página **[!UICONTROL Cuenta]** y pegue la clave en el campo correspondiente.
 

@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
-ht-degree: 1%
+source-wordcount: '4843'
+ht-degree: 0%
 
 ---
 
@@ -430,7 +430,7 @@ Las definiciones de los cuadros de diálogo son específicas de la IU:
 >
 
 * IU táctil.
-   * `cq:dialog` ( `nt:unstructured`) nodes:
+   * `cq:dialog` ( `nt:unstructured`) nodos:
       * definir el cuadro de diálogo para editar el contenido de este componente
       * específico para la IU táctil
       * se definen mediante los componentes de la interfaz de usuario de Granite
@@ -446,7 +446,7 @@ Las definiciones de los cuadros de diálogo son específicas de la IU:
   ![screen_shot_2012-02-13at60937pm](assets/screen_shot_2012-02-13at60937pm.png)
 
 * IU clásica
-   * `dialog` ( `cq:Dialog`) nodes
+   * `dialog` ( `cq:Dialog`) nodos
       * definir el cuadro de diálogo para editar el contenido de este componente
       * específico para la IU clásica
       * se definen mediante widgets de ExtJS
@@ -602,7 +602,7 @@ Hay muchas configuraciones existentes en el repositorio. Puede buscar fácilment
 
 ### Marcadores de posición de componentes {#component-placeholders}
 
-Los componentes siempre deben procesar algún HTML visible para el autor, incluso cuando el componente no tenga contenido. De lo contrario, podría desaparecer visualmente de la interfaz del editor, lo que lo haría técnicamente presente, pero invisible en la página y en el editor. En tal caso, los autores no podrán seleccionar e interactuar con el componente vacío.
+Los componentes siempre deben procesar algún HTML visible para el autor, incluso cuando el componente no tenga contenido. De lo contrario, podría desaparecer visualmente de la interfaz del editor, lo que lo haría técnicamente presente, pero invisible en la página y en el editor. En tal caso, los autores no pueden seleccionar e interactuar con el componente vacío.
 
 Por este motivo, los componentes deben representar un marcador de posición siempre que no representen ningún resultado visible cuando la página se procese en el editor de páginas (cuando el modo WCM esté `edit` o `preview`).
 El marcado de HTML típico para un marcador de posición es el siguiente:

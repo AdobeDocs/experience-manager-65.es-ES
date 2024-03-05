@@ -7,10 +7,10 @@ topic-tags: Configuration
 docset: aem65
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 56%
+source-wordcount: '857'
+ht-degree: 61%
 
 ---
 
@@ -41,13 +41,13 @@ También puede configurar el almacenamiento en caché de un formulario adaptable
 
 ### Requisitos previos {#pre-requisites}
 
-* Habilite la [combinar o prerrellenar datos en el cliente](prepopulate-adaptive-form-fields.md#prefill-at-client) opción. Esto ayuda a combinar los datos únicos de cada instancia del formulario prerrellenado.
+* Habilite la opción [combinar o rellenar previamente los datos en el cliente](prepopulate-adaptive-form-fields.md#prefill-at-client). Esto ayuda a combinar los datos únicos de cada instancia del formulario rellenado previamente.
 
 ### Consideraciones para almacenar en caché formularios adaptables en Dispatcher {#considerations}
 
 * Cuando utilice la memoria caché de los formularios adaptables, utilice el [!DNL Dispatcher] de AEM para almacenar en caché las bibliotecas de cliente (CSS y JavaScript) de un formulario adaptable.
 * Cuando desarrolle componentes personalizados, mantenga deshabilitada la memoria caché de los formularios adaptables en el servidor utilizado para el desarrollo.
-* Las URL sin extensión no se almacenan en caché. Por ejemplo, las URL con el patrón `/content/forms/[folder-structure]/[form-name].html` se almacenan en la caché, y el almacenamiento en la caché ignora las URL con el patrón `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Por lo tanto, utilice direcciones URL con extensiones para aprovechar las ventajas del almacenamiento en caché.
+* Las URL sin extensión no se almacenan en caché. Por ejemplo, las URL con el patrón `/content/forms/[folder-structure]/[form-name].html` se almacenan en la caché, y el almacenamiento en la caché ignora las URL con el patrón `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Para esto, utilice una URL con extensiones para aprovechar las ventajas del almacenamiento en caché.
 * Consideraciones para los formularios adaptables localizados:
    * Utilice el formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * [Deshabilite el uso de la configuración regional del explorador ](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)para URL con el formato `http://host:port/content/forms/af/<adaptivefName>.html`.
@@ -89,7 +89,7 @@ Para habilitar y configurar el almacenamiento en caché de los formularios adapt
 
    * El formulario adaptable permanecerá en la caché hasta que no se publique una versión actualizada.
 
-   * Cuando se publica una versión más reciente de un recurso al que se hace referencia en un formulario adaptable, el formulario adaptable afectado se invalida automáticamente. Existen algunas excepciones a la hora de invalidar automáticamente los recursos a los que se hace referencia. Para obtener más información sobre las excepciones, consulte la [solución de problemas](#troubleshooting) sección.
+   * Cuando se publica una versión más reciente de un recurso al que se hace referencia en un formulario adaptable, el formulario adaptable afectado se invalida automáticamente. Existen algunas excepciones a la hora de invalidar automáticamente los recursos a los que se hace referencia. Para obtener más información sobre las excepciones, consulte la sección [Solución de problemas](#troubleshooting).
 1. [Añada las siguientes reglas: dispatcher.any o un archivo de reglas personalizadas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Esto excluirá las URL que no admitan el almacenamiento en caché; por ejemplo, comunicaciones interactivas.
 
    ```JSON
@@ -97,17 +97,17 @@ Para habilitar y configurar el almacenamiento en caché de los formularios adapt
             /glob "*"
             /type "allow"
       }
-      ## Don't cache csrf login tokens
+      ## Do not cache csrf login tokens
       /0001 {
             /glob "/libs/granite/csrf/token.json"
             /type "deny"
       }
-      ## Don't cache IC - print channel
+      ## Do not cache IC - print channel
       /0002 {
             /glob "/content/forms/**/channels/print.html"
             /type "deny"
       }
-      ## Don't cache IC - web channel
+      ## Do not cache IC - web channel
       /0003 {
             /glob "/content/forms/**/channels/web.html"
             /type "deny"

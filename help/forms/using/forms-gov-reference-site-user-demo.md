@@ -4,9 +4,9 @@ description: Utilice usuarios y grupos ficticios para realizar tareas de AEM Fo
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2478'
 ht-degree: 58%
 
 ---

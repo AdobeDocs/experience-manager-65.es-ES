@@ -2,9 +2,9 @@
 title: Configuración y solución de problemas de AEM Forms en un clúster de servidores JEE
 description: Obtenga información sobre cómo configurar y solucionar problemas de Adobe Experience Manager AEM () Forms en un clúster de servidores JEE.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3959'
+source-wordcount: '3945'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ En el otro nodo, AP-HP7:
 [info 2011/08/05 09:28:10.128 EDT GemfireCacheAdapter <server.startup : 0> tid=0x64] DistributionManager ap-hp7(2821)<v1>:19498/59136 started on 239.192.81.1[33456]. There were 1 other DMs. others: [ap-hp8(4268)<v0>:18763/56449]
 ```
 
-**¿Y si GemFire está encontrando nodos que no debería?**
+**¿Qué sucede si GemFire encuentra nodos que no debería?**
 
 Cada clúster distinto que comparte una red corporativa debe utilizar un conjunto independiente de localizadores TCP, si se utilizan localizadores TCP, o un número de puerto UDP independiente si se utiliza la configuración UDP de multidifusión. Debido a que la detección automática de UDP es la configuración predeterminada para AEM Forms en JEE y que el mismo puerto predeterminado 33456 está siendo utilizado por varios clústeres, es posible que los clústeres que no deberían intentar comunicarse lo estén haciendo de forma inesperada. Por ejemplo, los clústeres de producción y control de calidad deben permanecer separados, pero pueden conectarse entre sí mediante multidifusión UDP.
 
@@ -273,7 +273,7 @@ Si Quartz está configurado para ejecutarse como un solo nodo, pero se está eje
 
 ```xml
 [1/20/11 10:40:57:584 EST] 00000035 ErrorLogger   E org.quartz.core.ErrorLogger schedulerError An error occured while marking executed job complete. job= 'Asynchronous.TaskFormDataSaved:12955380518320.5650479324757354'
- org.quartz.JobPersistenceException: Couldn't remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
+ org.quartz.JobPersistenceException: Could not remove trigger: ORA-00060: deadlock detected while waiting for resource  [See nested exception: java.sql.SQLException: ORA-00060: deadlock detected while waiting for resource ]
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.removeTrigger(JobStoreSupport.java:1405)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggeredJobComplete(JobStoreSupport.java:2888)
         at org.quartz.impl.jdbcjobstore.JobStoreSupport$38.execute(JobStoreSupport.java:2872)

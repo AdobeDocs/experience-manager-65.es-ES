@@ -2,10 +2,10 @@
 title: SPA Edición de un recurso externo en Adobe Experience Manager
 description: SPA En este documento se describen los pasos recomendados para cargar una instancia independiente en una instancia de Adobe Experience Manager, agregar secciones de contenido editables y habilitar la creación de instancias.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 1%
+source-wordcount: '2391'
+ht-degree: 0%
 
 ---
 
@@ -360,7 +360,7 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
 ## Limitaciones del marco {#framework-limitations}
 
-El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el siguiente [encontrado aquí](https://github.com/shellscape/webpack-manifest-plugin). Sin embargo, el componente RemotePage solo se ha probado para que funcione con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
+El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el siguiente [encontrado aquí](https://github.com/shellscape/webpack-manifest-plugin). Sin embargo, el componente RemotePage solo se ha probado para funcionar con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
 
 ## Recursos adicionales {#additional-resources}
 
@@ -368,7 +368,7 @@ SPA AEM El siguiente material de referencia puede resultar útil para comprender
 
 * [AEM Arquetipo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
 * [SPA El proyecto de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
-* [Introducción a SPA en AEM usando React](spa-getting-started-react.md)
+* [SPA AEM Introducción a la administración de la en React](spa-getting-started-react.md)
 * [SPA Materiales de referencia (referencias de API)](spa-reference-materials.md)
 * [SPA Modelo de página y administrador de modelos de página](spa-blueprint.md#pagemodelmanager)
 * [SPA Enrutamiento de modelo de](spa-routing.md)

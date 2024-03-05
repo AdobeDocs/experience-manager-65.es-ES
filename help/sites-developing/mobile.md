@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3722'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,7 @@ Para asignar un grupo de dispositivos al sitio:
 1. Seleccione el **Móvil** pestaña:
 
    * Defina los grupos de dispositivos.
-   * Haga clic en **Aceptar**.
+   * Haz clic en **OK**.
 
 >[!NOTE]
 >
@@ -355,7 +355,7 @@ AEM admite la detección del lado del cliente del dispositivo basada en `Browser
 
 >[!NOTE]
 >
-Para obtener más información sobre la integración de la biblioteca de clientes, consulte [Uso de bibliotecas de HTML del lado del cliente](/help/sites-developing/clientlibs.md).
+>Para obtener más información sobre la integración de la biblioteca de clientes, consulte [Uso de bibliotecas de HTML del lado del cliente](/help/sites-developing/clientlibs.md).
 
 ### Proporcionar vínculos alternativos {#providing-alternate-links}
 
@@ -374,7 +374,7 @@ Cuando el valor de la variable `cq:variantDomain` propiedad de a `cq:siteVariant
 
 >[!NOTE]
 >
-AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+>AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ### Definición de una URL específica de un grupo de dispositivos {#defining-a-device-group-specific-url}
 
@@ -384,7 +384,7 @@ BrowserMap está diseñado de tal manera que las definiciones de Grupos de dispo
 
 >[!NOTE]
 >
-Para obtener más información, consulte [BrowserMap personalizado](#creatingacustomisedbrowsermap).
+>Para obtener más información, consulte [BrowserMap personalizado](#creatingacustomisedbrowsermap).
 
 ### Definición de direcciones URL basadas en selector {#defining-selector-based-urls}
 
@@ -410,7 +410,7 @@ Además, debe llamar manualmente al `BrowserMap.forwardRequest()` en su `JavaScr
 
 >[!NOTE]
 >
-Para obtener más información sobre la integración de la biblioteca de clientes, consulte [Uso de bibliotecas de HTML del lado del cliente](/help/sites-developing/clientlibs.md).
+>Para obtener más información sobre la integración de la biblioteca de clientes, consulte [Uso de bibliotecas de HTML del lado del cliente](/help/sites-developing/clientlibs.md).
 
 Una vez creado el personalizado `BrowserMap` La biblioteca de cliente de, Adobe, sugiere el siguiente enfoque:
 
@@ -520,7 +520,7 @@ Puede forzar al dispositivo de cualquier solicitud a probar una versión especí
 
 >[!NOTE]
 >
-El `wcmmode` El parámetro se ha establecido en `disabled` para simular el comportamiento de una instancia de publicación.
+>El `wcmmode` El parámetro se ha establecido en `disabled` para simular el comportamiento de una instancia de publicación.
 
 El valor del dispositivo de anulación se almacena en una cookie para que pueda navegar por su sitio web sin agregar el `device` parámetro para cada `URL`.
 
@@ -528,7 +528,7 @@ Como consecuencia, debe llamar a lo mismo `URL` con el `device` establezca en `b
 
 >[!NOTE]
 >
-BrowserMap almacena el valor del dispositivo de anulación en una cookie llamada `BMAP_device`. Eliminar esta cookie garantiza que CQ ofrecerá la versión adecuada del sitio web según su dispositivo actual (por ejemplo, escritorio o móvil).
+>BrowserMap almacena el valor del dispositivo de anulación en una cookie llamada `BMAP_device`. Eliminar esta cookie garantiza que CQ ofrecerá la versión adecuada del sitio web según su dispositivo actual (por ejemplo, escritorio o móvil).
 
 ## Procesamiento de solicitudes móviles {#mobile-request-processing}
 
@@ -564,7 +564,7 @@ El **Estadísticas** La página tiene el siguiente aspecto:
 
 >[!NOTE]
 >
-El **Estadísticas** AEM La página se crea la primera vez que un dispositivo móvil accede a la página y se detecta una página de acceso a la misma. Antes de eso, no está disponible.
+>El **Estadísticas** AEM La página se crea la primera vez que un dispositivo móvil accede a la página y se detecta una página de acceso a la misma. Antes de eso, no está disponible.
 
 Si necesita generar una entrada en las estadísticas, puede continuar de la siguiente manera:
 

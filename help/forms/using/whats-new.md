@@ -5,7 +5,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 3%
@@ -44,7 +44,7 @@ El [Versión de 64 bits de AEM Forms Designer](/help/forms/using/installing-conf
 
 #### Conectar un Forms adaptable con Microsoft® SharePoint List
 
-AEM Forms proporciona una integración OOTB para [enviar datos de formulario directamente a la lista de SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), lo que le permite utilizar las funciones de Listas de SharePoint. Puede configurar la lista de Microsoft® SharePoint como fuente de datos para un modelo de datos de formulario y utilizar la acción de envío Enviar mediante el modelo de datos de formulario para conectar un formulario adaptable con una lista de SharePoint.
+AEM Forms proporciona una integración predeterminada para lo siguiente [enviar datos de formulario directamente a la lista de SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), lo que le permite utilizar las funciones de Listas de SharePoint. Puede configurar la lista de Microsoft® SharePoint como fuente de datos para un modelo de datos de formulario y utilizar la acción de envío Enviar mediante el modelo de datos de formulario para conectar un formulario adaptable con una lista de SharePoint.
 
 #### Compatibilidad para configurar las propiedades del documento de registro para los fragmentos de formulario adaptable
 

@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '347'
 ht-degree: 2%
 
 ---
@@ -31,11 +31,12 @@ Al crear un conjunto de giros o de imágenes, o al cargar PDF para la extracció
 | Recurso: tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
 | **Imagen** - Número de recortes inteligentes por imagen | 5 | 100 |
-| **Todos los conjuntos** - Número de recursos duplicados por conjunto | No hay duplicados | 20 |
+| **Todos los conjuntos** - Número de recursos duplicados por conjunto | No hay duplicados | 20 ‡ |
 | **Todos los conjuntos** - Número máximo de recursos por conjunto | 5-10 imágenes por conjunto | 1000 |
 | **Conjunto de giros** - Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 | **PDF** - Número máximo de páginas para que un PDF se considere para la extracción |  | 100 (para todos los PDF) |
 
+‡ práctica recomendada es no tener recursos duplicados en un conjunto. El límite es de 20 duplicados para un solo recurso. Si agrega otro duplicado para ese recurso (dentro de ese conjunto), la solicitud genera un error o ignora el duplicado.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Combinaciones de explorador web y sistema operativo no admitidas para Dynamic Media {#unsupported-browser-os}

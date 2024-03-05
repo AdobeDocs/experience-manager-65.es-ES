@@ -7,10 +7,10 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 5%
+source-wordcount: '690'
+ht-degree: 0%
 
 ---
 
@@ -29,17 +29,17 @@ El `categories` el valor de propiedad dado a esta biblioteca de cliente es el id
    * Nombre : `clientlibs`
    * Tipo : `cq:ClientLibraryFolder`
 
-1. Haga clic en **Aceptar**
+1. Clic **OK**
 
 ![add-client-library](assets/add-client-library.png)
 
 En el **Propiedades** para el nuevo `clientlibs` , introduzca el **categorías** propiedad:
 
-* Nombre:**categories**
-* Tipo:**cadena**
+* Nombre : **categorías**
+* Tipo : **Cadena**
 * Valor : **apps.an-scf-sandbox**
 * Clic **Añadir**
-* Haga clic en **Guardar todo**
+* Clic **Guardar todo**
 
 Nota: anteponga el valor de categorías con &quot;apps&quot;. es una convención para identificar la &quot;aplicación propietaria&quot; como en la carpeta /apps, no /libs. IMPORTANTE: Agregar marcador de posición `js.tx`t y **`css.txt`** archivos. (No es oficialmente una cq:ClientLibraryFolder sin ellas).
 
@@ -48,7 +48,7 @@ Nota: anteponga el valor de categorías con &quot;apps&quot;. es una convención
 1. Entrar **Nombre:** `css.txt`
 1. Seleccionar **Crear archivo...**
 1. Entrar **Nombre:** `js.txt`
-1. Haga clic en **Guardar todo**
+1. Clic **Guardar todo**
 
 ![clientlibs-css](assets/clientlibs-css.png)
 
@@ -83,7 +83,7 @@ En este caso, incluyéndolos todos y por lo tanto se prefieren los clientlibs SC
 
 * Nombre : **`embed`**
 * Tipo : **`String`**
-* Haga clic en **`Multi`**
+* Clic **`Multi`**
 * Valor: **`cq.social.scf`**
 
    * Aparecerá un cuadro de diálogo, haga clic en **`+`** después de cada entrada para agregar las siguientes categorías clientlib:
@@ -94,9 +94,9 @@ En este caso, incluyéndolos todos y por lo tanto se prefieren los clientlibs SC
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * Haga clic en **Aceptar**
+      * Clic **OK**
 
-* Haga clic en **Guardar todo**
+* Clic **Guardar todo**
 
 ![scf-clientlibs](assets/scf-clientlibs.png)
 
@@ -123,13 +123,13 @@ La instrucción include pertenece al `head` de la sección `html` script. El val
 1. Uso de **CRXDE Lite**, seleccione **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Haga clic con el botón derecho y seleccione **Copiar** (o seleccione Copiar en la barra de herramientas)
-1. Seleccione lo siguiente **`/apps/an-scf-sandbox/components/playpage`**
+1. Seleccionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Haga clic con el botón derecho y seleccione **Pegar** (o seleccione Pegar en la barra de herramientas)
 1. Doble clic **`headlibs.jsp`** para que pueda abrirlo
 1. Anexe la línea siguiente al final del archivo
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. Haga clic en **Guardar todo**
+1. Clic **Guardar todo**
 
 ```xml
 <%@ page session="false" %><%
@@ -151,17 +151,17 @@ Cargue el sitio web en el explorador y compruebe si el fondo no es azul.
 
 En este punto, existe una zona protegida minimalista. Puede valer la pena guardarlo como un paquete para que, mientras se reproduce, si el repositorio se daña y desea volver a empezar, pueda desactivar el servidor. A continuación, cambie el nombre de la carpeta crx-quickstart/, encienda el servidor, cargue e instale este paquete guardado y no tenga que repetir estos pasos más básicos.
 
-Este paquete existe en [Crear una página de muestra](/help/communities/create-sample-page.md) tutorial para aquellos que no pueden esperar para saltar en y empezar a jugar!...
+Este paquete existe en [Crear una página de muestra](/help/communities/create-sample-page.md) tutorial para aquellos que no pueden esperar para saltar y comenzar a jugar.
 
 Para crear un paquete:
 
 * En el CRXDE Lite, haga clic en [Icono de paquete](https://localhost:4502/crx/packmgr/)
-* Haga clic en **Crear paquete**
+* Clic **Crear paquete**
 
    * Nombre del paquete: an-scf-sandbox-minimal-pkg
    * Versión: 0.1
    * Grupo: `leave as default`
-   * Haga clic en **Aceptar**
+   * Clic **OK**
 
 * Clic **Editar**
 
@@ -169,15 +169,15 @@ Para crear un paquete:
 
       * Clic **Añadir filtro**
       * Ruta raíz: buscar `/apps/an-scf-sandbox`
-      * Haga clic en **Listo**
+      * Clic **Listo**
       * Clic **Añadir filtro**
       * Ruta raíz: buscar `/etc/designs/an-scf-sandbox`
-      * Haga clic en **Listo**
+      * Clic **Listo**
       * Clic **Añadir filtro**
       * Ruta raíz: buscar `/content/an-scf-sandbox**`
-      * Haga clic en **Listo**
+      * Clic **Listo**
 
-   * Haga clic en **Guardar**
+   * Clic **Guardar**
 
 * Clic **Generar**
 

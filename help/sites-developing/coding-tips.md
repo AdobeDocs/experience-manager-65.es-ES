@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Idealmente, los nombres deberían revelar su intención. Una prueba de código c
  </tbody>
 </table>
 
-### No te repitas.  {#don-t-repeat-yourself}
+### No repita usted mismo  {#don-t-repeat-yourself}
 
 DRY afirma que el mismo conjunto de código nunca debe duplicarse. Esto también se aplica a elementos como literales de cadena. La duplicación de código abre la puerta a defectos cada vez que algo tiene que cambiar y debe buscarse y eliminarse.
 

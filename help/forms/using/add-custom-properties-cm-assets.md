@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4431'
-ht-degree: 95%
+source-wordcount: '4433'
+ht-degree: 94%
 
 ---
 
@@ -515,7 +515,7 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 
 ### Mostrar propiedades personalizadas en la página Creación de recursos {#display-custom-properties-on-the-asset-creation-page}
 
-De forma predeterminada, las propiedades personalizadas agregadas a las pestañas nuevas solo serán visibles en la página de propiedades y no en la de Creación de recursos, ya que la página Creación de recursos no tiene diseño de pestañas. Para mostrar las propiedades personalizadas en la página Creación de recursos junto con otras propiedades, debe hacer lo siguiente:
+De forma predeterminada, las propiedades personalizadas agregadas a las pestañas nuevas solo están visibles en la página de propiedades y no en la de creación de recursos, ya que la página de creación de recursos no tiene diseño de pestañas. Para mostrar las propiedades personalizadas en la página Creación de recursos junto con otras propiedades, debe hacer lo siguiente:
 
 1. Haga clic con el botón derecho en la carpeta Elementos en la siguiente ruta y seleccione **Nodo de superposición**:
 

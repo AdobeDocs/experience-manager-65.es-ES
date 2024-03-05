@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
 # Configuración del componente de vídeo {#configure-the-video-component}
 
-El [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) le permite colocar un recurso de vídeo predefinido y listo para usar (OOTB) en la página.
+El [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) le permite colocar un recurso de vídeo predefinido y listo para usar en la página.
 
 Para que se produzca la transcodificación adecuada, un administrador instala FFmpeg por separado. Consulte [AEM Instalación de FFmpeg y configuración de la](#install-ffmpeg). Los administradores también [Configuración de perfiles de vídeo](#configure-video-profiles) para su uso con elementos de HTML5.
 
@@ -81,4 +81,4 @@ Hasta **AEM configurar la**, siga estos pasos:
 
 >[!NOTE]
 >
->AEM Los cambios en los modelos de flujo de trabajo predeterminados (OOTB) no se conservan al actualizar la instancia de. El Adobe recomienda copiar los modelos de flujo de trabajo modificados antes de editarlos. Por ejemplo, copie el OOTB [!UICONTROL Recurso de actualización DAM] antes de editar el paso FFmpeg Transcoding en el [!UICONTROL Recurso de actualización DAM] modelo para elegir nombres de perfil de vídeo que existían antes de la actualización. A continuación, puede superponer la variable `/apps` AEM para permitir a los usuarios recuperar los cambios personalizados del modelo de OOTB, de manera que puedan recuperarlos.
+>AEM Los cambios en los modelos de flujo de trabajo predeterminados no se conservan al actualizar la instancia de. El Adobe recomienda copiar los modelos de flujo de trabajo modificados antes de editarlos. Por ejemplo, copie el de forma predeterminada [!UICONTROL Recurso de actualización DAM] antes de editar el paso FFmpeg Transcoding en el [!UICONTROL Recurso de actualización DAM] modelo para elegir nombres de perfil de vídeo que existían antes de la actualización. A continuación, puede superponer la variable `/apps` AEM para que los usuarios puedan recuperar los cambios personalizados del modelo predeterminado de forma rápida.

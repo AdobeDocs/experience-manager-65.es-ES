@@ -5,10 +5,10 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 99%
+source-wordcount: '913'
+ht-degree: 71%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 99%
 
 ## Introducción {#introduction}
 
-Si busca una **experiencia de formularios** adaptada a dispositivos móviles que simplifique la inscripción, aumente la participación y reduzca el tiempo de respuesta, los **formularios adaptables** son perfectos para usted. Los formularios adaptables proporcionan una experiencia adaptada para móviles, automatizada y analítica. Puede crear fácilmente formularios que sean interactivos y adaptables, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
+¿Está buscando una aplicación compatible con dispositivos móviles **experiencia de formularios** que simplifica la inscripción, aumenta la participación y reduce el tiempo de respuesta, **formularios adaptables** es un ajuste perfecto para usted. Los formularios adaptables proporcionan una experiencia adaptada para móviles, automatizada y analítica. Puede crear fácilmente formularios que sean interactivos y adaptables, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
 
-Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y agregar nuevas características al formulario adaptable que cree en este tutorial. Después de cada guía, tendrá un formulario adaptable operativo. La guía para crear un formulario adaptable está disponible. Próximamente habrá más guías disponibles. Al final de este tutorial, podrá:
+Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y agregar nuevas características al formulario adaptable que cree en este tutorial. Después de cada guía, tendrá un formulario adaptable operativo. La guía para crear un formulario adaptable está disponible. Próximamente habrá más guías. Al final de este tutorial, debería poder hacer lo siguiente:
 
 * Crear un formulario adaptable y un modelo de datos de formulario.
 * Establecer el estilo de su formulario adaptable.
@@ -43,7 +43,7 @@ El sitio web se ejecuta en Adobe Experience Manager (AEM) y utiliza AEM [!DNL Fo
 
 ### Requisitos previos {#prerequisite}
 
-* Configuración de un [AEM instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
+* Configuración de un [AEM instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instalar el [Complemento de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de autor.
 * Obtener el controlador de base de datos JDBC (archivo JAR) del proveedor de la base de datos. Los ejemplos del tutorial se basan en la base de datos [!DNL MySQL] y utiliza el [!DNL Oracle's] [Controlador de base de datos JDBC de MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -59,10 +59,10 @@ Los formularios adaptables son de nueva generación, atractivos, interactivos, d
 
 Objetivos:
 
-* Crear un formulario adaptable que permita a un cliente agregar una dirección de envío
-* Diseñar campos de un formulario adaptable para mostrar y aceptar información de un cliente
-* Crear una acción de envío para enviar un correo electrónico que contenga contenido de formulario
-* Previsualizar y enviar un formulario adaptable
+* Crear un formulario adaptable que permita a un cliente agregar una dirección de envío.
+* Diseñar campos de un formulario adaptable para mostrar y aceptar información de un cliente.
+* Cree una acción de envío para enviar un correo electrónico que contenga contenido de formulario.
+* Previsualizar y enviar un formulario adaptable.
 
 [![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -74,11 +74,11 @@ Un modelo de datos de formulario permite conectar un formulario adaptable a dist
 
 Objetivos:
 
-* Configurar la instancia de base de datos del sitio web (base de datos [!DNL MySQL]) como fuente de datos
-* Crear el modelo de datos de formulario mediante la base de datos [!DNL MySQL] como fuente de datos
-* Agregar objetos del modelo de datos al modelo de datos de formulario
-* Configurar servicios de lectura y escritura para el modelo de datos de formulario
-* Probar el modelo de datos de formulario y los servicios configurados con datos de prueba
+* Configurar la instancia de base de datos del sitio web ([!DNL MySQL] base de datos) como fuente de datos.
+* Crear el modelo de datos de formulario mediante [!DNL MySQL] como fuente de datos.
+* Agregar objetos del modelo de datos para poder formar el modelo de datos.
+* Configure los servicios de lectura y escritura para el modelo de datos de formulario.
+* Probar el modelo de datos de formulario y los servicios configurados con datos de prueba.
 
 [![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -90,8 +90,8 @@ Los formularios adaptables proporcionan un editor para escribir reglas sobre obj
 
 Objetivos:
 
-* Crear y aplicar reglas en campos de formularios adaptables
-* Utilice reglas para habilitar servicios del modelo de datos de formulario para actualizar los datos a la base de datos
+* Cree y aplique reglas en los campos de formulario adaptables.
+* Utilice reglas para almacenar en déclencheur los servicios del modelo de datos de formulario para actualizar los datos a la base de datos.
 
 [![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ Los formularios adaptables proporcionan temáticas y un [editor](../../forms/usi
 
 Objetivos:
 
-* Aplicar una temática predeterminada a un formulario adaptable
-* Crear una temática para un formulario adaptable mediante el editor de temáticas
-* Usar fuentes web en una temática personalizada
+* Aplicar una temática predeterminada a un formulario adaptable.
+* Cree una temática para el formulario adaptable mediante el editor de temáticas.
+* Usar Web Fonts en una temática personalizada.
 
 [![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ Puede publicar formularios adaptables como un formulario independiente (aplicaci
 
 Objetivos:
 
-* Publicar el formulario adaptable como una página de AEM
-* Incrustar el formulario adaptable en una página de AEM [!DNL Sites]
-* Incrustar el formulario adaptable en una página web externa (una página web que no pertenezca a AEM y esté alojada fuera de este)
+* AEM Publique el formulario adaptable como una página de la.
+* AEM Incrustar el formulario adaptable en una aplicación de tipo de formulario [!DNL Sites] Página.
+* AEM AEM Incruste el formulario adaptable en una página web externa (una página web que no sea de tipo alojada fuera de la página).
 
 [![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

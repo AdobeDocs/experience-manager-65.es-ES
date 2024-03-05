@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 El lenguaje de marcado de aserción de seguridad (SAML) es una de las opciones que puede seleccionar al configurar la autorización de un dominio híbrido o empresarial. SAML se utiliza principalmente para admitir SSO en varios dominios. AEM Cuando SAML está configurado como su proveedor de autenticación, los usuarios inician sesión y se autentican en los formularios de la a través de un proveedor de identidad de terceros (IDP) especificado.
 
-Para ver una explicación de SAML, consulte [Información técnica sobre el lenguaje de marcado de aserciones de seguridad (SAML) V2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+Para ver una explicación de SAML, consulte [Información técnica sobre el lenguaje de marcado de aserciones de seguridad (SAML) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. En la consola de administración, haga clic en Configuración > User Management > Configuración > Configuración de Proveedor de servicio de SAML.
 1. AEM En el cuadro ID de entidad de proveedor de servicios, escriba un ID único para utilizarlo como identificador para la implementación del proveedor de servicios de formularios de la aplicación de la entidad de proveedor de servicios de formularios de la. También puede especificar este ID único al configurar el IDP (por ejemplo, `um.lc.com`.) AEM También puede utilizar la dirección URL que se utiliza para acceder a los formularios de la (por ejemplo, `https://AEMformsserver`).

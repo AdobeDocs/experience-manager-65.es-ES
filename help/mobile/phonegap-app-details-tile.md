@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ AEM AEM En el caso de las plataformas que no comprende el usuario, un desarrolla
 
 Apple AppStore requiere metadatos adicionales para enviar la aplicación y distribuirlos. La sección de metadatos de iOS intenta recopilar la información necesaria que puede utilizar la herramienta iTMSTransporter de Apple para publicar los metadatos en la cuenta del desarrollador de Apple asociado.
 
-Para obtener los metadatos específicos de Apple, primero debe crear la aplicación en [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Al crear la aplicación, Apple genera los metadatos requeridos por la sección de metadatos de iOS si desea utilizar la herramienta Apple iTMSTransporter para validar y cargar los metadatos en itunesconnect.apple.com. Si solo desea obtener los metadatos que desea recopilar, no es necesario que rellene los metadatos específicos de iOS. Puede seguir exportando los metadatos que combinarán el iOS y los metadatos comunes, y recopilando todas las capturas de pantalla en un archivo zip que se puede descargar en cualquier momento.
+Para obtener los metadatos específicos de Apple, primero debe crear la aplicación en [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Al crear la aplicación, Apple genera los metadatos requeridos por la sección de metadatos de iOS si desea utilizar la herramienta Apple iTMSTransporter para validar y cargar los metadatos en itunesconnect.apple.com. Si solo desea obtener los metadatos para recopilarlos, no es necesario que rellene los metadatos específicos de iOS. Puede seguir exportando los metadatos que combinarán el iOS y los metadatos comunes, y recopilando todas las capturas de pantalla en un archivo zip que se puede descargar en cualquier momento.
 
 El archivo zip descargado contiene un archivo itmsp que se puede inspeccionar para buscar el archivo metadata.xml. El archivo itmsp contiene los metadatos exportados (dentro del archivo metadata.xml ), junto con todas las capturas de pantalla asociadas.
 

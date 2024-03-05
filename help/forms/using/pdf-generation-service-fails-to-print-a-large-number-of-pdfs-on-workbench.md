@@ -1,7 +1,7 @@
 ---
 title: La generación de PDF no puede imprimir un gran número de PDF con Workbench
 description: Cuando un cliente genera un gran número de PDF a través de servicios implementados mediante Workbench, el servicio de impresión falla.
-source-git-commit: 9cdf22918f08fe505c3efd0ce43235e3442165d5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Factores adicionales que se deben tener en cuenta al diseñar la plantilla de fo
 
 Como estamos limitados por la memoria de proceso máxima y la memoria consumida por el proceso no solo depende del tamaño del archivo de datos. Está muy estrechamente relacionado con el diseño de formulario y, en cierta medida, con la cantidad real de datos que se combinan en el formulario.
 
-Si el formulario tiene muchos nodos pequeños con datos pequeños, el proceso consumirá más memoria (y, por lo tanto, se quedará sin memoria más rápido) que un formulario que tenga menos nodos (incluso) con datos grandes.
+Si el formulario tiene muchos nodos pequeños con datos pequeños, el proceso consume más memoria (y, por lo tanto, se queda sin memoria más rápido) que un formulario que tiene menos nodos (incluso) con datos grandes.
 
 Lea el [Apéndice siguiente](#appendix) para obtener más información, donde los resultados de la prueba se basan en Imprimir formulario (PDF no etiquetado). El uso de PDF etiquetados aumenta los requisitos de memoria de proceso. También depende del número de campos del formulario: aproximadamente, el requisito de memoria de proceso sería algo más de 1,5 veces el PDF no etiquetado.
 

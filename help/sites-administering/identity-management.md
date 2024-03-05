@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 1%
 
 ---
@@ -106,7 +106,7 @@ Puede ver otro perfil con la variable [Client Context](/help/sites-administering
    ![Cargar un icono de perfil](do-not-localize/loadprofile.png)
 
 1. Seleccione otro perfil de la lista desplegable de la ventana de diálogo; por ejemplo, **Alison Parker**.
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 1. Haga clic de nuevo en **Mi perfil**. El formulario se actualizará con los detalles de Alison.
 
    ![Perfil de muestra de Alison](assets/profilealison.png)

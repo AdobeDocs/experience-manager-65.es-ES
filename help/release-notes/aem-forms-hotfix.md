@@ -2,7 +2,7 @@
 title: Revisiones para AEM Forms
 description: Proporciona información sobre cómo descargar e instalar una revisión para AEM Forms.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
      </td>
     <td>
     <ul>
-    <li> El componente Firma manuscrita OOTB no se puede procesar para una vista previa en un formulario adaptable. (FORMS-12073).</li>
+    <li> El componente Firma manuscrita predeterminado no se puede procesar para una vista previa en un formulario adaptable. (FORMS-12073).</li>
     </ul>
     </td>    
    </tr>

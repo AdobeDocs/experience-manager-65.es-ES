@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 AEM La forma principal de obtener un solucionador de sesión administrativa o de recursos en la aplicación de era usando el método de resolución de recursos de la aplicación de la aplicación de la. `SlingRepository.loginAdministrative()` y `ResourceResolverFactory.getAdministrativeResourceResolver()` métodos proporcionados por Sling.
 
-Sin embargo, ninguno de estos métodos se diseñó en torno a la [principio de menor privilegio](https://en.wikipedia.org/wiki/Principle_of_least_privilege) y facilitar al desarrollador la tarea de no planificar una estructura adecuada y los niveles de control de acceso (ACL) correspondientes para su contenido desde el principio. Si una vulnerabilidad está presente en un servicio de este tipo, a menudo conduce a escalaciones de privilegios a `admin` usuario, incluso si el código en sí no necesita privilegios administrativos para funcionar.
+Sin embargo, ninguno de estos métodos se diseñó en torno a la [principio de menor privilegio](https://en.wikipedia.org/wiki/Principle_of_least_privilege). Facilita demasiado a los desarrolladores no planificar una estructura adecuada y los niveles de control de acceso (ACL) correspondientes para su contenido desde el principio. Si una vulnerabilidad está presente en un servicio de este tipo, a menudo conduce a escalaciones de privilegios a `admin` usuario, incluso si el código en sí no necesita privilegios administrativos para funcionar.
 
 ## Cómo eliminar gradualmente las sesiones de administración {#how-to-phase-out-admin-sessions}
 
 ### Prioridad 0: ¿La función está activa/necesaria/abandonada? {#priority-is-the-feature-active-needed-derelict}
 
-Puede haber casos en los que no se utilice la sesión de administración o en los que la función esté completamente deshabilitada. Si este es el caso de la implementación, asegúrese de eliminar por completo la función o de ajustarla con [código NOP](https://en.wikipedia.org/wiki/NOP).
+Puede haber casos en los que no se utilice la sesión de administración o en los que la función esté completamente deshabilitada. Si es así con la implementación, asegúrese de eliminar por completo la función o de ajustarla con [código NOP](https://en.wikipedia.org/wiki/NOP).
 
 ### Prioridad 1: Utilizar La Sesión De Solicitud {#priority-use-the-request-session}
 
@@ -57,7 +57,7 @@ Además, asegúrese de que todas las nuevas funciones que desarrolle se ajusten 
    * La gestión del control de acceso debería ser natural
    * El control de acceso lo debe aplicar el repositorio, no la aplicación
 
-* **Utilizar tipos de nodos**
+* **Uso de tipos de nodo**
 
    * Restringir el conjunto de propiedades que se pueden establecer
 
@@ -80,7 +80,7 @@ Tanto si aplica el control de acceso al reestructurar el contenido como si lo ha
 
 ## Usuarios de servicio y asignaciones {#service-users-and-mappings}
 
-Si lo anterior falla, Sling 7 ofrece un servicio de asignación de usuarios de servicio, que permite configurar una asignación de paquete a usuario y dos métodos de API correspondientes:
+Si lo anterior falla, Sling 7 ofrece un servicio de asignación de usuarios de servicio, que le permite configurar una asignación de paquete a usuario y dos métodos de API correspondientes:
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -99,7 +99,7 @@ Los métodos devuelven un solucionador de sesión/recurso con los privilegios de
 
 ### Reemplazar la sesión de administración por un usuario de servicio {#replacing-the-admin-session-with-a-service-user}
 
-Un usuario de servicio es un usuario de JCR sin contraseña establecida y con un conjunto mínimo de privilegios necesarios para realizar una tarea específica. Si no se ha definido ninguna contraseña, no será posible iniciar sesión con un usuario del servicio.
+Un usuario de servicio es un usuario de JCR sin contraseña establecida y con un conjunto mínimo de privilegios necesarios para realizar una tarea específica. Si no se ha establecido ninguna contraseña, no es posible iniciar sesión con un usuario del servicio.
 
 Una forma de dejar de utilizar una sesión administrativa es reemplazarla por sesiones de usuarios de servicio. También podría ser reemplazado por varios usuarios de subservicios si es necesario.
 
@@ -116,7 +116,7 @@ Para reemplazar la sesión de administración por un usuario de servicio, debe r
 
 ## Creación de un usuario de servicio {#creating-a-new-service-user}
 
-AEM Después de comprobar que no hay ningún usuario en la lista de usuarios del servicio de aplicable a su caso de uso y de aprobar los problemas de RTC correspondientes, puede continuar y agregar el nuevo usuario al contenido predeterminado.
+AEM Después de comprobar que no hay ningún usuario en la lista de usuarios de servicio de aplicable a su caso de uso y de aprobar los problemas de RTC correspondientes, agregue el nuevo usuario al contenido predeterminado.
 
 El método recomendado es crear un usuario de servicio para utilizar el explorador de repositorios en *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
@@ -136,7 +136,7 @@ Puede crear usuarios de servicios de:
 
    >[!NOTE]
    >
-   >No hay tipos de mezcla asociados a usuarios del servicio. Esto significa que no habrá políticas de control de acceso para los usuarios del sistema.
+   >No hay tipos de mezcla asociados a usuarios del servicio. Esto significa que no hay directivas de control de acceso para los usuarios del sistema.
 
 Al agregar el archivo .content.xml correspondiente al contenido del paquete, asegúrese de haber establecido el `rep:authorizableId` y que el tipo principal es `rep:SystemUser`. Debería tener un aspecto similar al siguiente:
 
@@ -196,10 +196,10 @@ Para añadir una asignación desde el servicio a los usuarios del sistema corres
 
 Llamadas a `loginAdministrative()` a menudo aparecen junto con sesiones compartidas. Estas sesiones se adquieren al activarse el servicio y solo se cierran después de que este se detiene. Aunque esta es una práctica común, conduce a dos problemas:
 
-* **Seguridad:** Estas sesiones de administración se utilizan para almacenar en caché y devolver recursos u otros objetos enlazados a la sesión compartida. Más adelante en la pila de llamadas, estos objetos podrían adaptarse a sesiones o solucionadores de recursos con privilegios elevados y, a menudo, el llamador no tiene claro que esté operando en una sesión de administrador.
+* **Seguridad:** Estas sesiones de administración se utilizan para almacenar en caché y devolver recursos u otros objetos enlazados a la sesión compartida. Más adelante en la pila de llamadas, estos objetos podrían adaptarse a sesiones o solucionadores de recursos con privilegios elevados. A menudo, el llamador no tiene claro que es una sesión de administración con la que opera.
 * **Rendimiento:** En Oak, las sesiones compartidas pueden causar problemas de rendimiento y no se recomienda utilizarlas.
 
-La solución más obvia para el riesgo de seguridad es simplemente reemplazar el `loginAdministrative()` llamada con a `loginService()` una a un usuario con privilegios restringidos. Sin embargo, esto no tendrá ningún impacto en ninguna degradación potencial del rendimiento. Una posibilidad de mitigar que es envolver toda la información solicitada en un objeto que no tiene asociación con la sesión. A continuación, cree (o destruya) la sesión bajo demanda.
+La solución más obvia para el riesgo de seguridad es simplemente reemplazar el `loginAdministrative()` llamada con a `loginService()` una a un usuario con privilegios restringidos. Sin embargo, esto no tiene ningún impacto en ninguna degradación potencial del rendimiento. Una posibilidad de mitigar que es envolver toda la información solicitada en un objeto que no tiene asociación con la sesión. A continuación, cree (o destruya) la sesión bajo demanda.
 
 El método recomendado es refactorizar la API del servicio para dar al que llama control sobre la creación o destrucción de la sesión.
 

@@ -8,9 +8,9 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
@@ -163,7 +163,7 @@ El controlador también requiere una llamada a la función para que funcione la 
      Con las variables de la vista rápida asignadas y la llamada a la función configurada, la consola del explorador escribe el valor de la variable en la consola del explorador mediante la función de ejemplo proporcionada.
 
 1. Ahora puede utilizar una función para invocar una ventana emergente simple en la vista rápida. El siguiente ejemplo utiliza un `DIV` para ver una ventana emergente.
-1. Aplicar estilo a la ventana emergente `DIV` de la siguiente manera. Añada su propio estilo adicional si lo desea.
+1. Aplicar estilo a la ventana emergente `DIV` de la siguiente manera. Añada sus propios estilos adicionales según desee.
 
    ```xml
    <style type="text/css">

@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '6076'
+source-wordcount: '6074'
 ht-degree: 0%
 
 ---
@@ -612,7 +612,7 @@ Al implementar un servicio de este tipo, asegúrese de establecer la variable **
 | **Nombre** | **Descripción** | **Comportamiento predeterminado** |
 |---|---|---|
 | Autenticador | AEM Proporciona la información de autenticación que se va a | Utiliza un usuario técnico configurable tanto para creación como para publicación. O se puede utilizar SSO. |
-| HTMLRewriter | Reescribe vínculos, imágenes, etc | AEM Reescribe los vínculos de la biblioteca de vínculos del portal, que se pueden ampliar mediante un UrlMapper y un TextMapper |
+| HTMLRewriter | Reescribe vínculos e imágenes | AEM Reescribe los vínculos de la biblioteca de vínculos del portal, que se pueden ampliar mediante un UrlMapper y un TextMapper |
 | HttpClientService | Gestiona todas las conexiones http | Implementación estándar |
 | LocaleHandler | Gestiona la información de configuración regional | Reescribe un vínculo al contenido con respecto a la configuración regional. |
 | LocaleDetector | Detecta la configuración regional del usuario. | Utiliza la configuración regional proporcionada por el portal. |

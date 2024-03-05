@@ -7,10 +7,10 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 86%
+source-wordcount: '1246'
+ht-degree: 80%
 
 ---
 
@@ -82,19 +82,19 @@ A continuación se muestra una implementación de ejemplo de una plantilla perso
 
 Una plantilla personalizada para cualquier componente del portal de formularios incluye entradas repetibles y no repetibles. Las entradas repetibles son entidades básicas para las listas. Ejemplos de entradas repetibles son los componentes Buscar y listar, Borradores y envíos y Vínculo.
 
-El portal de formularios proporciona una sintaxis para que los marcadores de posición muestren metadatos personalizados/OOTB. Los marcadores de posición se rellenan después de mostrar los resultados de los formularios, borradores o envíos.
+Forms Portal proporciona una sintaxis para que los marcadores de posición muestren metadatos personalizados/predeterminados. Los marcadores de posición se rellenan después de mostrar los resultados de los formularios, borradores o envíos.
 
 Para incluir una entrada repetible, configure el valor del atributo **data-repeatable** a **true**.
 
 *En el ejemplo analizado, hay dos elementos Div presentes en la parte superior de la plantilla personalizada. El primero, con la clase CSS “__FP_boxes-container” funciona como un elemento de contenedor para los formularios que se enumeran. El segundo, con la clase CSS “__FP_boxes” es una plantilla para las entidades básicas, en este caso un formulario. El atributo **data-repeatable**presente en el elemento Div tiene el valor **true**.*
 
-Cada marcador de posición tiene un conjunto de metadatos OOTB exclusivo. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la **propiedad ${metadata_prop}**, en el lugar.
+Cada marcador de posición tiene un conjunto exclusivo de metadatos predeterminados. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la **propiedad ${metadata_prop}**, en el lugar.
 
 *En el ejemplo, la propiedad metadata se utiliza en varias instancias. Por ejemplo, se utiliza en **descripción**,**nombre**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**y **ruta**de la manera prescrita.*
 
 ## Metadatos predeterminados {#out-of-the-box-metadata}
 
-Varios componentes del portal de formularios proporcionan conjuntos exclusivos de metadatos OOTB que puede utilizar para incluirlos en la lista.
+Varios componentes del portal de Forms proporcionan conjuntos exclusivos de metadatos predeterminados que puede utilizar para incluirlos en la lista.
 
 ### Componente Buscar y listar {#search-amp-lister-component}
 
@@ -103,7 +103,7 @@ Varios componentes del portal de formularios proporcionan conjuntos exclusivos d
 * **descripción**: descripción del formulario
 * **formUrl**: URL para procesar el formulario como HTML
 * **pdfUrl**: URL para procesar el formulario como PDF
-* **assetType**: tipo de recurso. Los valores válidos incluyen **Formulario**, **Formulario PDF**, **Imprimir formulario** y **Formulario adaptable**
+* **assetType**: tipo de recurso. Los valores válidos incluyen **Form**, **Formulario de PDF**, **Imprimir formulario**, y **Formulario adaptable**
 
 * **htmlStyle** y **pdfStyle**: estilo de visualización de los iconos HTML y PDF respectivamente utilizados para el procesamiento. Los valores válidos son “**__FP_display_none**” o en blanco.
 
@@ -115,7 +115,7 @@ Varios componentes del portal de formularios proporcionan conjuntos exclusivos d
 
 Compatibilidad con la localización, clasificación y uso de propiedades de configuración en la interfaz de usuario (solo Buscar y listar):
 
-1. **Compatibilidad con localización**: para localizar cualquier texto estático, utilice el atributo `${localize-YOUR_TEXT}` y haga que el valor localizado esté disponible, si no existe todavía.
+1. **Compatibilidad con localización**: para localizar cualquier texto estático, utilice el atributo `${localize-YOUR_TEXT}` y hacer que el valor localizado esté disponible, si no existe ya.
    *En el ejemplo analizado, los atributos `${localize-Apply}` y `${localize-Download}` se utilizan para localizar el texto Aplicar y Descargar.*
 
 1. **Compatibilidad con la ordenación**: haga clic en el elemento HTML para ordenar los resultados de la búsqueda. Para implementar la ordenación en un diseño de tabla, agregue el atributo &quot;data-sortKey&quot; en el encabezado de tabla concreto. Además, agregue su valor como metadatos para los que desea ordenar.
@@ -169,7 +169,7 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 ## Sugerencias, trucos y problemas conocidos {#tips-tricks-and-known-issues}
 
 1. No utilice comillas simples (&#39;) en ninguna plantilla personalizada.
-1. Para los metadatos personalizados, almacene esta propiedad solamente en el nodo **jcr:content/metadata**. Si lo almacena en cualquier otro lugar, el portal de formularios no podrá mostrar los metadatos.
+1. Para los metadatos personalizados, almacene esta propiedad solamente en el nodo **jcr:content/metadata**. Si lo almacena en cualquier otro lugar, Forms Portal no podrá mostrar los metadatos.
 1. Asegúrese de que el nombre de cualquier metadato personalizado o existente no incluya dos puntos ( : ). Si es así, no se podrá mostrar en la interfaz de usuario.
 1. **data-repeatable** no tiene ningún significado para un componente **Vínculo**. Adobe recomienda evitar utilizar esta propiedad en la plantilla para un componente Vínculo.
 

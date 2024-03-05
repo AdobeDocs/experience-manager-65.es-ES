@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4941'
-ht-degree: 3%
+source-wordcount: '4920'
+ht-degree: 2%
 
 ---
 
@@ -461,7 +461,7 @@ Para incluir la navegación superior en el componente de página de contenido:
    <div class="topnav">topnav</div>
    ```
 
-   a:
+   con:
 
    ```xml
    <cq:include path="topnav" resourceType="mywebsite/components/topnav" />
@@ -478,7 +478,7 @@ El componente Página define las propiedades que permiten proporcionar subtítul
 
 1. En el explorador, abra el **Productos** página.
 1. En el Sidekick **Página** pestaña, haga clic en **Propiedades de página**.
-1. En la pestaña Básico del cuadro de diálogo, expanda **Más títulos y descripciones,** y para el **Subtítulo** propiedad, tipo **lo que hacemos**. Haga clic en **Aceptar**.
+1. En la pestaña Básico del cuadro de diálogo, expanda **Más títulos y descripciones,** y para el **Subtítulo** propiedad, tipo **lo que hacemos**. Haz clic en **OK**.
 1. Repita los pasos anteriores para agregar el subtítulo **sobre nuestros servicios** a la **Servicios** página.
 1. Repita los pasos anteriores para agregar el subtítulo **la confianza que ganamos** a la **Clientes** página.
 
@@ -968,7 +968,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 
@@ -1054,7 +1054,7 @@ En esta sección, se incluye el componente Ruta de exploración (pista), que es 
    <div>trail</div>
    ```
 
-   a:
+   con:
 
    ```xml
    <cq:include path="trail" resourceType="foundation/components/breadcrumb" />
@@ -1075,7 +1075,7 @@ En esta sección, se incluye el componente de título, que es uno de los compone
    <div>title</div>
    ```
 
-   a:
+   con:
 
    ```xml
    <cq:include path="title" resourceType="foundation/components/title" />
@@ -1147,7 +1147,7 @@ Cree un componente que muestre una imagen en el sistema de párrafos. Para ahorr
 
 En esta sección se describe cómo crear el script de imagen.
 
-1. Abra `/apps/mywebsite/components/image/` `image.jsp`
+1. Abrir `/apps/mywebsite/components/image/` `image.jsp`
 1. Reemplace el código existente por el siguiente código y, a continuación, guarde los cambios:
 
    ```xml
@@ -1286,7 +1286,7 @@ Cuando haya terminado, el cuadro de entrada de búsqueda debería tener el sigui
 1. Copie los siguientes nodos y péguelos en el nodo apps/mywebsite/components/search:
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &quot; `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 
@@ -1520,7 +1520,7 @@ Para este componente, puede establecer varios parámetros tanto en el modo de ed
    <div>iparsys</div>
    ```
 
-   a:
+   con:
 
    ```java
    <cq:include path="rightpar" resourceType="foundation/components/iparsys" />

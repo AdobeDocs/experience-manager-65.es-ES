@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -210,7 +210,7 @@ Con la salida:
 
 ## Ámbito de detección {#scope}
 
-Actualmente, Pattern Detector permite comprobar:
+Actualmente, Pattern Detector permite comprobar lo siguiente:
 
 * Las exportaciones e importaciones de paquetes OSGi no coinciden
 * Sobreutilización de tipos de recursos y supertipos de Sling (con superposiciones de contenido de ruta de búsqueda)

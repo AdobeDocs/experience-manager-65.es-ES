@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: '2352'
 ht-degree: 98%
 
 ---
@@ -54,7 +54,7 @@ Actualmente, las variables LESS se definen solo para estas propiedades de los di
 
 ## Cambiar el estilo de los componentes {#changing-component-style}
 
-Puede cambiar el aspecto, el diseño, el posicionamiento y la visibilidad de los elementos. Para realizar esta tarea, cree o actualice los archivos .css personalizados para incluir las construcciones de estilo que se enumeran en este artículo.
+Puede realizar cambios en el aspecto, el diseño, el posicionamiento y la visibilidad de los elementos. Para realizar esta tarea, cree o actualice los archivos .css personalizados para incluir las construcciones de estilo que se enumeran en este artículo.
 
 Para aplicar un estilo a un formulario adaptable, ábralo para editarlo, abra las propiedades del contenedor del formulario adaptable y especifique la ruta del archivo CSS personalizado en la pestaña básica. Las construcciones de estilo predeterminadas del formulario adaptable se anulan con las construcciones enumeradas en el archivo .css personalizado.
 

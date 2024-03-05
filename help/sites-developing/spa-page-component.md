@@ -1,22 +1,22 @@
 ---
 title: Componente de página SPA
-description: En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que delega esto en el SPA de trabajo de la página de trabajo de la página de la página de trabajo de la página de trabajo de. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
+description: En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que los delega en el SPA de trabajo de la página de trabajo. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '727'
 ht-degree: 6%
 
 ---
 
 # Componente de página SPA{#spa-page-component}
 
-En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que delega esto en el SPA de trabajo de la página de trabajo de la página de la página de trabajo de la página de trabajo de. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
+En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que los delega en el SPA de trabajo de la página de trabajo. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ En un recurso, el componente de página no proporciona los elementos HTML SPA de
 
 ## Introducción {#introduction}
 
-SPA El componente de página de un recurso no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega al marco de trabajo de las SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo ). SPA A continuación, se añaden los componentes de la a la página según el modelo JSON proporcionado. Como tal, la composición inicial del cuerpo del componente de página difiere de sus homólogos HTML procesados previamente.
+SPA El componente de página para una no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega al marco de trabajo de las SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo ). SPA A continuación, se añaden los componentes de la a la página según el modelo JSON proporcionado. Como tal, la composición inicial del cuerpo del componente de página difiere de sus homólogos HTML procesados previamente.
 
 ## Administración de modelos de página {#page-model-management}
 

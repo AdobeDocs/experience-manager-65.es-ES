@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 57%
+source-wordcount: '790'
+ht-degree: 56%
 
 ---
 
@@ -65,7 +65,7 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 
    **Archivos de variables Less**: estos son los archivos donde se definen o anulan las variables que se utilizan para definir estilos CSS.
 
-   Los formularios adaptables proporcionan variables OOTB definidas en las siguientes `.less` archivos:
+   Los formularios adaptables proporcionan variables predeterminadas definidas en los siguientes elementos `.less` archivos:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -107,7 +107,7 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 
    **Archivos de mezcla Less:** puede definir las funciones que aceptan variables como argumentos. El resultado de estas funciones son los estilos resultantes. Utilice estas mezclas en diferentes estilos para evitar la repetición de estilos CSS.
 
-   Los formularios adaptables proporcionan mezclas de OOTB definidas en:
+   Los formularios adaptables proporcionan mezclas integradas definidas en lo siguiente:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

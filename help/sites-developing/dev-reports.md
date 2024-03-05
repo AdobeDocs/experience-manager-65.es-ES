@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0f898fd81d2952b01eac7e6b8aa9970868009b15
 workflow-type: tm+mt
-source-wordcount: '5182'
+source-wordcount: '5177'
 ht-degree: 0%
 
 ---
@@ -359,7 +359,7 @@ Serie de líneas (puntos de conexión que representan las instantáneas reales).
          * `totals` ( `Boolean`)
 
            True si se muestra una línea adicional **Total** debería mostrarse.
-predeterminada: `false`
+valor predeterminado: `false`
 
          * `series` ( `Long`)
 
@@ -647,11 +647,11 @@ N:definitions
 
    * `pathextension`
 
-      * `path` (mandatory)
+      * `path` (obligatorio)
 
         Define la ruta que se va a anteponer.
 
-      * `propertyName` (mandatory)
+      * `propertyName` (obligatorio)
 
         Define la propiedad en la ruta de acceso resuelta donde se encuentra el valor real.
 

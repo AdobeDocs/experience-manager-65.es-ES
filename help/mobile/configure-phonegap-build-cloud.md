@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,15 @@ Si actualmente no tiene una cuenta de, vaya a `https://build.phonegap.com` ¡y r
 
 Una vez que haya comprobado que su cuenta de PhoneGap Build AEM está activa, vaya a la consola de administración de Cloud de, específicamente a [Cloud Service de PhoneGap Build](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-Utilice el **Administración de Cloud Services** mosaico para configurar una nueva configuración de cloud service.
+Utilice el **Administración de Cloud Service** mosaico para configurar una nueva configuración de cloud service.
 
-### Uso del mosaico Administrar Cloud Services {#using-manage-cloud-services-tile}
+### Uso del mosaico Administrar Cloud Service {#using-manage-cloud-services-tile}
 
-Antes de empezar a crear la aplicación usando **PhoneGap Build** debe configurar los servicios en la nube mediante el icono **Administración de Cloud Services** del tablero de AEM Mobile.
+Antes de empezar a crear la aplicación usando **PhoneGap Build** debe configurar los servicios en la nube mediante el icono **Administración de Cloud Service** del tablero de AEM Mobile.
 
 Para configurar los servicios en la nube de su aplicación, siga los pasos a continuación:
 
-1. Haga clic en la esquina superior derecha de la **Administración de Cloud Services** mosaico.
+1. Haga clic en la esquina superior derecha de la **Administración de Cloud Service** mosaico.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -55,7 +55,7 @@ Para configurar los servicios en la nube de su aplicación, siga los pasos a con
 
 1. Introduzca sus credenciales para poder crear una configuración de nube.
 
-   Una vez verificada, haga clic en **Enviar**. Esta configuración de nube configurada ahora se muestra en la **Administración de Cloud Services** mosaico.
+   Una vez verificada, haga clic en **Enviar**. Esta configuración de nube configurada ahora se muestra en la **Administración de Cloud Service** mosaico.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -94,7 +94,7 @@ phonegap run ios (or android, ...)
 
 >[!NOTE]
 >
->Agregar: emule al final de esta línea si no desea ejecutarlo en el dispositivo conectado.
+>Añada: emule al final de esta línea si no desea ejecutarlo en el dispositivo conectado.
 
 Una vez que haya comprobado que lo anterior funciona, utilice el **PhoneGap Build** Mosaico a **Descargar origen**. Guarde y descomprima el archivo en el sistema local. Una vez hecho esto:
 

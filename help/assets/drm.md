@@ -6,10 +6,10 @@ role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 6%
+source-wordcount: '1425'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración de uso. Porque [!DNL Adobe Experience Manager Assets] está totalmente integrado con el [!DNL Experience Manager] puede administrar de forma eficaz la información de caducidad y los estados de los recursos. También puede asociar la información de licencias con los recursos.
@@ -91,7 +91,7 @@ Para habilitar la variable [!DNL Assets] para mostrar los recursos compuestos de
 El [!DNL Assets] La consola de puede mostrar varios estados para los recursos. Según el estado actual de un recurso determinado, la vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 
 1. En el [!DNL Assets] interfaz de usuario, seleccione un recurso.
-1. Clic **[!UICONTROL Publish]** en la barra de herramientas. Si no lo ve... **Publish** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque **[!UICONTROL Publish]** ![opción de publicación](assets/do-not-localize/publish-globe.png) opción.
+1. Clic **[!UICONTROL Publish]** en la barra de herramientas. Si no ve **Publish** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque **[!UICONTROL Publish]** ![opción de publicación](assets/do-not-localize/publish-globe.png) opción.
 1. Elegir **[!UICONTROL Publish]** en el menú y cierre el cuadro de diálogo de confirmación.
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora a la que se publicó el recurso.
 

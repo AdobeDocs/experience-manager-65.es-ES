@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -60,7 +60,7 @@ AEM En la tabla siguiente se enumeran las opciones de configuración de desplieg
   </tr>
   <tr>
    <td>Configuración de lanzamiento estándar</td>
-   <td>Configuración de lanzamiento estándar que permite iniciar procesos de lanzamiento con el activador onRollout y ejecuta acciones: crear, actualizar, eliminar contenido y ordenar nodos secundarios.</td>
+   <td>Configuración de lanzamiento estándar que permite iniciar procesos de lanzamiento en el déclencheur de lanzamiento y ejecuta acciones: crear, actualizar, eliminar contenido y ordenar nodos secundarios.</td>
    <td>En el despliegue</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>

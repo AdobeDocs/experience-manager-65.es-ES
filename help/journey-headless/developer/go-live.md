@@ -2,10 +2,10 @@
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
 description: AEM En esta parte del Recorrido para desarrolladores sin encabezado de, aprenda a implementar una aplicación sin encabezado en directo.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
-ht-degree: 51%
+ht-degree: 53%
 
 ---
 
@@ -147,9 +147,9 @@ Para un *tradicional* implementación (que no es AMS) con Maven, consulte la [Tu
 
 Si es cliente de AMS que utiliza Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-AEM Una vez cargadas las actualizaciones en Cloud Manager, impleméntelas para que se puedan usar con el fin de crear una versión más completa de la aplicación de [Canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
+AEM Una vez cargadas las actualizaciones en Cloud Manager, impleméntelas para que se puedan usar con el fin de crear una versión más completa de la aplicación de [Canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es).
 
-<!-- Can't find a parallel link -->
+<!-- Cannot find a parallel link -->
 <!--
 You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
@@ -167,7 +167,7 @@ Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicac
       * Compruebe el número de usuarios, solicitudes y carga
 * Acceso a informes de rendimiento específicos de la aplicación y el espacio
    * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes, naranjas o rojas y, a continuación, identifique los problemas específicos de la aplicación.
-   * Abra los mismos informes que los filtrados a la aplicación o al espacio (por ejemplo, Photoshop Desktop, Paywall)
+   * Abra los mismos informes filtrados anteriormente en la aplicación o el espacio (por ejemplo, escritorio de Photoshop, muro de pago).
    * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y de la aplicación.
    * Póngase en contacto con asistencia al cliente en caso de que surjan otros problemas.
 
@@ -226,6 +226,6 @@ Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe co
 
    * Configuración de la [Reescritura CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*buscar reescritura de CDN*)
 
-* [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
-* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

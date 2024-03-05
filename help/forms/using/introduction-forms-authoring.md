@@ -7,10 +7,10 @@ topic-tags: introduction, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3141'
-ht-degree: 93%
+source-wordcount: '3142'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. 
 * **Usar una definición de esquema XML (XSD) o un esquema JSON**
 Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema estarán disponibles para su uso en la pestaña Objetos del modelo de datos del Explorador de contenido al crear formularios adaptables.
 
-* **No usar ninguno o no usar un modelo de formulario**
+* **Usar ninguno o no usar un modelo de formulario**
 Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
 
 Para obtener más información sobre la creación de un formulario adaptable, consulte [Creación de un formulario adaptable](../../forms/using/creating-adaptive-form.md).
@@ -170,7 +170,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Imagen</td>
-   <td>Permite insertar una imagen.</td>
+   <td>Insertar una imagen.</td>
   </tr>
   <tr>
    <td>Opción de imagen</td>
@@ -226,7 +226,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
   </tr>
   <tr>
    <td>Texto</td>
-   <td>Permite especificar texto estático.</td>
+   <td>Especificar texto estático.</td>
   </tr>
   <tr>
    <td>Botón Enviar</td>
@@ -282,11 +282,11 @@ Estas son algunas de las prácticas recomendadas y los puntos clave que deben te
 
 * Puede modificar la propiedad Título de los componentes en línea de un formulario adaptable en el Editor de formularios sin abrir el Explorador de propiedades siempre que el título esté visible en el formulario. Para ello:
 
-   1. Seleccione para seleccionar un componente que tenga un **[!UICONTROL Título]** propiedad y cuyo **[!UICONTROL Ocultar título]** La propiedad está deshabilitada.
+   1. Seleccione para seleccionar un componente que tenga la propiedad **[!UICONTROL Título]** y cuya propiedad **[!UICONTROL Ocultar título]** esté deshabilitada.
 
    1. Seleccionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el título se pueda editar.
 
-   1. Modifique el título y seleccione la tecla Retroceso o seleccione cualquier lugar fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
+   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios.  Seleccione la tecla Esc para descartar los cambios.
 
 * Algunos componentes de los formularios adaptables, como Correo electrónico y Teléfono, incluyen patrones de validación listos para usar. Sin embargo, puede especificar una validación personalizada actualizando el campo **[!UICONTROL Patrón de validación]** en el acordeón Patrones de las propiedades del componente. Consulte las descripciones de componentes de la tabla anterior para obtener más información sobre las validaciones predeterminadas.
 
@@ -300,7 +300,7 @@ Estas son algunas de las prácticas recomendadas y los puntos clave que deben te
 * De forma predeterminada, el componente Archivo adjunto permite al usuario adjuntar un único archivo. Sin embargo, puede configurar las propiedades del componente para que admita varios archivos adjuntos. Además, si un usuario adjunta varios archivos con el mismo nombre de archivo, los archivos adjuntos pueden causar algunos problemas. Por lo tanto, se recomienda asociar un identificador único a cada archivo adjunto enviado cuando se envía el formulario. Para ello:
 
    1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-   1. Buscar y seleccionar **[!UICONTROL Servicio de configuración de Forms adaptable]**.
+   1. Busque y seleccione **[!UICONTROL Servicio de configuración de formularios adaptables]**.
    1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, active la opción **[!UICONTROL Asignar nombres de archivo únicos]**. De forma predeterminada, está desactivada.
 
 * Para permitir que los usuarios adjunten un PDF mediante el explorador Safari, asegúrese de que agrega **aplicación/pdf** a la propiedad Tipos de archivo compatibles del componente Archivo adjunto. Los formularios adaptables creados con versiones anteriores de AEM Forms pueden contener **.pdf** en lugar de **aplicación/pdf** en la propiedad Tipos de archivo compatibles.
@@ -341,7 +341,7 @@ La barra de herramientas de la parte superior de la página ofrece opciones que 
 
 Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son las siguientes:
 
-A.**Configurar**: cuando selecciona **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral. La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de las bibliotecas de cliente, los diseños, los temas, los documentos de registro, las opciones de guardado, los envíos y los metadatos.
+A.**Configurar**: al seleccione **[!UICONTROL Configurar]**, las propiedades de los componentes se pueden ver en la barra lateral.  La configuración de estas propiedades permite personalizar la experiencia de captura de datos. Puede cambiar el nombre del elemento del componente, especificar el texto de la etiqueta en el campo Título del componente. El nombre del elemento permite capturar los valores que introducen los usuarios mediante el componente. En las propiedades del componente, se especifica el comportamiento del componente y se administran los datos que haya introducido el usuario. Configure las propiedades en la barra lateral para capturar los datos de usuario y utilizarlos en un procesamiento posterior. Las propiedades del contenedor de formularios adaptables permiten especificar la configuración de las bibliotecas de cliente, los diseños, los temas, los documentos de registro, las opciones de guardado, los envíos y los metadatos.
 
 B.**Copiar**: Puede utilizar la opción Copiar para copiar un componente y pegarlo en otros lugares del formulario. Al pegar un componente, este recibirá un nombre de elemento nuevo, pero conservará las propiedades del componente copiado.
 
@@ -359,7 +359,7 @@ H. **Grupo**: Permite seleccionar varios componentes si desea cortar, copiar o p
 
 I. **Principal**: Permite seleccionar el elemento principal de un componente. Por ejemplo, un campo de texto se encuentra dentro de una subsección, que reside en una sección. La sección se encuentra en el panel raíz de la guía, y el contenedor del formulario adaptable es el elemento principal del panel raíz. Puede ver todas las opciones de un componente con la jerarquía ordenada en la parte inferior.
 
-Por ejemplo, si selecciona **[!UICONTROL Principal]** para un cuadro de texto, puede ver lo siguiente:
+Por ejemplo, si selecciona **[!UICONTROL Principal]** en un cuadro de texto, podrá ver lo siguiente:
 
 * Subsección
 * Sección

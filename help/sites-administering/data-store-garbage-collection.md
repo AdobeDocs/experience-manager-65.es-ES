@@ -1,5 +1,5 @@
 ---
-title: Recolección de papelera del almacén de datos
+title: Recopilación de datos almacenados desechables
 description: Obtenga información sobre cómo configurar la recolección de elementos no utilizados del almacén de datos para liberar espacio en disco.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,14 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1891'
 ht-degree: 0%
 
 ---
 
-# Recolección de papelera del almacén de datos {#data-store-garbage-collection}
+# Recopilación de datos almacenados desechables {#data-store-garbage-collection}
 
 Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia se convierte en &quot;basura&quot; que no necesita conservarse. En los casos en que existen varios recursos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento del mantenimiento del sistema de archivos y la copia de seguridad.
 
@@ -161,7 +161,7 @@ La ventana de mantenimiento semanal integrada, disponible a través de la [Table
 >
 >El motivo por el que no se ejecuta simultáneamente es para que también se realice una copia de seguridad de los archivos del almacén de datos antiguos (y que no se utilicen), de modo que si es necesario revertir a una revisión antigua, los binarios sigan ahí en la copia de seguridad.
 
-Si no desea ejecutar la recolección de basura del almacén de datos con la ventana de mantenimiento semanal en el tablero de operaciones, también se puede automatizar usando los clientes HTTP wget o curl. A continuación se muestra un ejemplo de cómo automatizar la copia de seguridad mediante curl:
+Si no desea ejecutar la recolección de elementos no utilizados del almacén de datos con la ventana de mantenimiento semanal del tablero de operaciones, también se puede automatizar mediante los clientes HTTP wget o curl. A continuación se muestra un ejemplo de cómo automatizar la copia de seguridad mediante curl:
 
 >[!CAUTION]
 >

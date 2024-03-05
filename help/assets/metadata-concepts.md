@@ -5,16 +5,16 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 9%
+source-wordcount: '2665'
+ht-degree: 7%
 
 ---
 
 # Comprender los conceptos de metadatos {#why-we-need-metadata}
 
-Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
+Los metadatos son datos sobre datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo, una imagen. Los metadatos son esenciales para una administración eficaz de los recursos.
 
 Los metadatos son la recopilación de todos los datos disponibles para un recurso, pero que no están necesariamente contenidos en esa imagen. Algunos ejemplos de metadatos son los siguientes:
 
@@ -134,7 +134,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
 * MÁS - [Sistema universal de licencias de imágenes](https://www.useplus.com).
-* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL - PRISM Rights Language.
 * PUR - Derechos de uso de PRISM.
 * `xmpPlus` XMP - Integración de PLUS con la.
@@ -149,7 +149,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 ### Metadatos específicos de impresión {#print-specific-metadata}
 
 * PDF y PDF/X: aplicaciones de Adobe PDF y de terceros.
-* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+* PRISMA - [Requisitos de publicación para metadatos estándar del sector](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` XMP - metadatos de la página para texto paginado.
 

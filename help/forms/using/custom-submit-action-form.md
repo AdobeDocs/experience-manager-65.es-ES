@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 96%
+source-wordcount: '1543'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 | AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
 | AEM 6.5 | Este artículo |
 
-Los formularios adaptables requieren enviar acciones para procesar los datos especificados por el usuario. Una acción de envío determina la tarea realizada en los datos enviados mediante un formulario adaptable. Adobe Experience Manager (AEM) incluye [Acciones de envío de OOTB](../../forms/using/configuring-submit-actions.md) que muestran tareas personalizadas que puede realizar mediante los datos enviados por el usuario. Por ejemplo, puede realizar tareas como enviar correos electrónicos o almacenar los datos.
+Los formularios adaptables requieren enviar acciones para procesar los datos especificados por el usuario. Una acción de envío determina la tarea realizada en los datos enviados mediante un formulario adaptable. Adobe Experience Manager AEM () incluye [Acciones de envío listas para usar](../../forms/using/configuring-submit-actions.md) que muestran tareas personalizadas que puede realizar utilizando los datos enviados por el usuario. Por ejemplo, puede realizar tareas como enviar correos electrónicos o almacenar los datos.
 
 ## Flujo de trabajo para una acción de envío {#workflow-for-a-submit-action}
 
@@ -84,7 +84,7 @@ Si la acción no ofrece una ruta de reenvío, el servlet de envío redirecciona 
 
 >[!NOTE]
 >
->Un autor aporta la URL de redireccionamiento (mediante la configuración de la página de agradecimiento). [Las acciones de envío OOTB](../../forms/using/configuring-submit-actions.md) utilizan la URL de redireccionamiento para redirigir el explorador desde el recurso al que hace referencia la ruta de reenvío.
+>Un autor aporta la URL de redireccionamiento (mediante la configuración de la página de agradecimiento). [Acciones de envío listas para usar](../../forms/using/configuring-submit-actions.md) utilice la URL de redireccionamiento para redirigir el explorador desde el recurso al que hace referencia la ruta de reenvío.
 >
 >Puede escribir una acción de envío personalizada que reenvíe una solicitud a un recurso o servlet. Adobe recomienda que el script que administra los recursos de la ruta de reenvío redirija la solicitud a la URL de redireccionamiento cuando termine el procesamiento.
 
@@ -99,11 +99,11 @@ Una acción de envío es un sling:Folder, que incluye lo siguiente:
    * **guideComponentType** de tipo cadena y valor **fd/af/components/guidesubmittype**
    * **guideDataModel** de tipo cadena que especifica el tipo de formulario adaptable para el que se aplica la acción de envío. **xfa** es compatible con formularios adaptables basados en XFA, mientras **xsd** es compatible con formularios adaptables basados en XSD. **basic** es compatible con formularios adaptables que no utilizan XDP o XSD. Para mostrar la acción en varios tipos de formularios adaptables, agregue las cadenas correspondientes. Separe cada cadena con una coma. Por ejemplo, para que una acción sea visible en formularios adaptables basados en XFA y XSD, especifique los valores **xfa** y **xsd** respectivamente.
 
-   * **jcr:description** de tipo cadena. El valor de esta propiedad se muestra en la lista Enviar acción de la pestaña Acciones de envío del cuadro de diálogo Editar formulario adaptable. Las acciones OOTB están presentes en el repositorio CRX en la ubicación **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:description** de tipo cadena. El valor de esta propiedad se muestra en la lista Enviar acción de la pestaña Acciones de envío del cuadro de diálogo Editar formulario adaptable. Las acciones listas para usar están presentes en el repositorio CRX en la ubicación **/libs/fd/af/components/guidesubmittype**.
 
 ## Crear una acción de envío personalizada {#creating-a-custom-submit-action}
 
-Realice los siguientes pasos para crear una acción de envío personalizada que guarde los datos en el repositorio CRX y luego le envíe un correo electrónico. El formulario adaptable contiene el contenido del repositorio de acciones de envío OOTB (obsoleto) que guarda los datos en el repositorio CRX. Además, CQ facilitará una API de [Correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) que se puede utilizar para enviar correos electrónicos. Antes de usar la API de correo electrónico, [configurar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) el servicio Day CQ Mail a través de la consola del sistema. Puede reutilizar la acción Almacenar contenido (obsoleta) para almacenar los datos en el repositorio. La acción Almacenar contenido (obsoleta) está disponible en la ubicación /libs/fd/af/components/guidesubmittype/store en el repositorio CRX.
+Realice los siguientes pasos para crear una acción de envío personalizada que guarde los datos en el repositorio CRX y luego le envíe un correo electrónico. El formulario adaptable contiene el contenido del almacén de acciones de envío predeterminado (obsoleto) que guarda los datos en el repositorio CRX. Además, CQ facilitará una API de [Correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) que se puede utilizar para enviar correos electrónicos. Antes de usar la API de correo electrónico, [configurar](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) el servicio Day CQ Mail a través de la consola del sistema. Puede reutilizar la acción Almacenar contenido (obsoleta) para almacenar los datos en el repositorio. La acción Almacenar contenido (obsoleta) está disponible en la ubicación /libs/fd/af/components/guidesubmittype/store en el repositorio CRX.
 
 1. Inicie sesión en CRXDE Lite en la URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Cree un nodo con la propiedad sling:Folder y el nombre store_and_mail en la carpeta /apps/custom_submit_action. Cree la carpeta custom_submit_action si todavía no existe.
 
@@ -139,7 +139,7 @@ Realice los siguientes pasos para crear una acción de envío personalizada que 
 
    Añada el script post.POST.jsp a su acción. (/apps/custom_submit_action/store_and_mail/).
 
-   Ejecute la acción Almacenamiento OOTB (script post.POST.jsp). Utilice el [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API que CQ proporciona en su código para ejecutar la acción de almacenamiento. Añada el siguiente código en su archivo JSP:
+   Ejecute la acción predeterminada Almacenar (script post.POST.jsp). Utilice el [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API que CQ proporciona en su código para ejecutar la acción de almacenamiento. Añada el siguiente código en su archivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2773'
-ht-degree: 2%
+source-wordcount: '2672'
+ht-degree: 1%
 
 ---
 
@@ -122,10 +122,10 @@ El [Adobe Granite Aplicación y proveedor de OAuth](#adobe-granite-oauth-applica
 
    >[!NOTE]
    >
-   >Los grupos se pueden agregar o eliminar en cualquier momento. Sin embargo, las suscripciones de los usuarios existentes no se verán afectadas. La pertenencia automática solo se aplica a los nuevos usuarios que se crean después de esta actualización de campo. Para los sitios en los que los usuarios anónimos están deshabilitados, elija agregar usuarios al grupo de miembros de la comunidad correspondiente destinado a ese sitio de comunidad cerrado.
+   >Los grupos se pueden agregar o eliminar en cualquier momento. Sin embargo, las suscripciones de los usuarios existentes no se ven afectadas. La pertenencia automática solo se aplica a los nuevos usuarios que se crean después de esta actualización de campo. Para los sitios en los que los usuarios anónimos están deshabilitados, elija agregar usuarios al grupo de miembros de la comunidad correspondiente destinado a ese sitio de comunidad cerrado.
 
    * Seleccionar **[!UICONTROL GUARDAR]**.
-   * **[!UICONTROL Publicación]**.
+   * **[!UICONTROL Publish]**.
 
 El resultado es un [Adobe Granite Aplicación y proveedor de OAuth](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que no requiere ninguna modificación adicional a menos que se agregue un ámbito adicional (permisos). El ámbito predeterminado son los permisos estándar para el inicio de sesión de Facebook. Si desea un ámbito adicional, es necesario editar la configuración de OSGI directamente. Si hay modificaciones realizadas directamente a través del sistema o la consola, evite editar las configuraciones del servicio en la nube desde la interfaz de usuario táctil para evitar sobrescribirlas.
 
@@ -181,13 +181,13 @@ AEM Si es necesario editar, en cada instancia de publicación de la:
       * name
       * first_name
       * last_name
-      * vincular
+      * vínculo
       * locale
       * retratar
       * timezone
       * updated_time
       * verificado
-      * email
+      * correo electrónico
 
    Si se agrega o cambia algún campo, actualice la configuración del controlador de sincronización predeterminada correspondiente para corregir la asignación.
 
@@ -277,17 +277,17 @@ El [Adobe Granite Aplicación y proveedor de OAuth](#adobe-granite-oauth-applica
 
      Si se selecciona, al iniciar sesión con una cuenta de Twitter AEM se creará una entrada de usuario de y se agregarán como miembros al grupo de usuarios seleccionado. La opción predeterminada está activada (recomendado).
 
-   * **[!UICONTROL Enmascarar los ID de usuario]**
+   * **[!UICONTROL Enmascarar ID de usuario]**
 
      Dejar sin seleccionar.
 
-   * **[!UICONTROL Añadir a los grupos de usuarios]**
+   * **[!UICONTROL Añadir a grupos de usuarios]**
 
      Seleccione Agregar grupo de usuarios para elegir uno o más [grupos de miembros](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) para el sitio de la comunidad al que se agregarán usuarios.
 
    >[!NOTE]
    >
-   >Los grupos se pueden agregar o eliminar en cualquier momento. Sin embargo, las suscripciones de los usuarios existentes no se verán afectadas. La pertenencia automática solo se aplica a los nuevos usuarios que se crean después de esta actualización de campo. En los sitios en los que los usuarios anónimos están deshabilitados, agregue usuarios al grupo de miembros de la comunidad correspondiente destinado a ese sitio de comunidad cerrado.
+   >Los grupos se pueden agregar o eliminar en cualquier momento. Sin embargo, las suscripciones de los usuarios existentes no se ven afectadas. La pertenencia automática solo se aplica a los nuevos usuarios que se crean después de esta actualización de campo. En los sitios en los que los usuarios anónimos están deshabilitados, agregue usuarios al grupo de miembros de la comunidad correspondiente destinado a ese sitio de comunidad cerrado.
    >
 
 1. Seleccionar **[!UICONTROL GUARDAR]** y **[!UICONTROL Publish]**.
@@ -415,11 +415,11 @@ Para localizar la instancia creada para una aplicación de Facebook o de Twitter
 
      (*Requerido*) Los ID de configuración de OAuth deben ser únicos. Se genera automáticamente cuando se crea el servicio en la nube.
 
-   * **[!UICONTROL ID del cliente]**
+   * **[!UICONTROL ID de cliente]**
 
      (*Requerido*) El ID de aplicación proporcionado cuando se creó el servicio en la nube.
 
-   * **[!UICONTROL Secreto de cliente]**
+   * **[!UICONTROL Secreto del cliente]**
 
      (*Requerido* El secreto de la aplicación proporcionado cuando se creó el servicio en la nube.
 
@@ -435,7 +435,7 @@ Para localizar la instancia creada para una aplicación de Facebook o de Twitter
 
      (*Recomendado*) Uno o varios grupos de miembros a los que se agregan los usuarios creados. Para AEM Communities, se recomienda enumerar el grupo de miembros del sitio de la comunidad.
 
-   * **[!UICONTROL URL de llamada de retorno]**
+   * **[!UICONTROL URL de devolución de llamada]**
 
      (*Opcional*) URL configurada con los proveedores de OAuth para redirigir al cliente de vuelta. Utilice una URL relativa para utilizar el host de la solicitud original. Dejar vacío para utilizar la URL solicitada originalmente en su lugar. El sufijo &quot;/callback/j_security_check&quot; se anexa automáticamente a esta URL
 
@@ -464,7 +464,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
    * En el nodo `/oak:index`
    * Seleccionar nodo `ntBaseLucene`
    * Seleccionar **[!UICONTROL Copiar]**
-   * Seleccione lo siguiente `/oak:index`
+   * Seleccionar `/oak:index`
    * Seleccionar **[!UICONTROL Pegar]**
    * Cambie el nombre de la copia de ntBaseLucene a `ntBaseLucene-oauth`
 

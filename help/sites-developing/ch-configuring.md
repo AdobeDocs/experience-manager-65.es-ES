@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -261,7 +261,7 @@ Utilice el CRXDE Lite para establecer la propiedad `debug` hasta **true** en:
 
 El modo silencioso suprime toda la información de depuración. A diferencia de la opción de depuración normal, que se puede establecer de forma independiente para cada configuración de ContextHub, el modo silencioso es una configuración global que tiene prioridad sobre cualquier configuración de depuración en el nivel de configuración de ContextHub.
 
-Esto resulta útil en la instancia de publicación, donde no desea ninguna información de depuración. Como es una configuración global, se habilita mediante OSGi.
+Esto resulta útil en la instancia de publicación, donde no desea depurar ninguna información. Como es una configuración global, se habilita mediante OSGi.
 
 1. Abra el **Configuración de la consola web Adobe Experience Manager** en `http://<host>:<port>/system/console/configMgr`
 1. Buscar por **Adobe Granite ContextHub**

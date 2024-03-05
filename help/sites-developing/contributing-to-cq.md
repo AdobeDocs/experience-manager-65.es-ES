@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2635'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Reutilización del código: nuestra arquitectura de productos basada en OSGi y l
 
 Acoplamiento suelto: Favorecemos las interacciones de acoplamiento flexible sobre las dependencias estrechas y la &quot;intimidad no deseada&quot;. El acoplamiento suelto también permite una mayor reutilización del código.
 
-### No rompas la demostración {#don-t-break-the-demo}
+### No interrumpa la demostración {#don-t-break-the-demo}
 
 Familiarícese con los scripts de demostración y las funcionalidades de producto que se muestran con más frecuencia en las demostraciones. Tenga en cuenta que nada de lo que haga debería interrumpir la función de &quot;script de demostración&quot;. El producto principal siempre debe estar listo para la demostración, incluso durante el desarrollo.
 
@@ -95,7 +95,7 @@ Nos esforzamos por diseñar y codificar las funciones de forma flexible, de modo
 
 ### Anormal es la nueva normalidad {#abnormal-is-the-new-normal}
 
-No dependa de los enlaces de apagado, asegúrese de realizar la limpieza durante el inicio. La terminación anormal es la terminación normal.
+No dependa de los enlaces de apagado, asegúrese de realizar la limpieza al iniciar. La terminación anormal es la terminación normal.
 
 `shutdown == kill -9 == power outage`
 

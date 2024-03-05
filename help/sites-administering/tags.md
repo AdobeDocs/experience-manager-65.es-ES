@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1769'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Para acceder a la consola de etiquetado:
 
 Para crear un área de nombres, seleccione **`Create Namespace`** icono.
 
-El área de nombres es en sí misma una etiqueta y no necesita contener subetiquetas. Sin embargo, para continuar creando una taxonomía, [creación de subetiquetas](#creating-tags), que a su vez pueden ser etiquetas de hoja o de contenedor.
+El área de nombres es en sí misma una etiqueta y no debe contener ninguna subetiqueta. Sin embargo, para continuar creando una taxonomía, [creación de subetiquetas](#creating-tags), que a su vez pueden ser etiquetas de hoja o de contenedor.
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creation_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 

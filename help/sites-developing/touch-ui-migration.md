@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ Al migrar, tenga en cuenta las siguientes diferencias principales entre la IU cl
  </tbody>
 </table>
 
-En otras palabras, migrar una sección de la interfaz de usuario de la IU clásica a la IU táctil significa trasladar una *Widget de ExtJS* a un *Componente Sling*. Para facilitar esto, la interfaz de usuario táctil se basa en el marco de trabajo de la interfaz de usuario de Granite, que ya proporciona algunos componentes de Sling para la interfaz de usuario (denominados componentes de la interfaz de usuario de Granite).
+En otras palabras, migrar una sección de la interfaz de usuario de la IU clásica a la IU táctil significa trasladar un *Widget de ExtJS* a un *Componente Sling*. Para facilitar esto, la interfaz de usuario táctil se basa en el marco de trabajo de la interfaz de usuario de Granite, que ya proporciona algunos componentes de Sling para la interfaz de usuario (denominados componentes de la interfaz de usuario de Granite).
 
 Antes de empezar, compruebe el estado y las recomendaciones relacionadas:
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1267'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -121,7 +121,7 @@ La plantilla personalizada tiene el mismo estilo que la plantilla predeterminada
 
 1. Cambie el nombre del componente copiado a `enrollmentpage`.
 
-1. **(Solo si ya tiene una página de contenido)** Realice los siguientes pasos (a-d), si ya tiene un componente `contentpage` para su sitio web. Si no tiene un componente `contentpage` para su sitio web, puede dejar la propiedad `resourceSuperType` para señalar a la página base de OOTB.
+1. **(Solo si ya tiene una página de contenido)** Realice los siguientes pasos (a-d), si ya tiene un componente `contentpage` para su sitio web. Si no tiene un existente `contentpage`para su sitio web, puede dejar el `resourceSuperType`para que apunte a la página base predeterminada.
 
    1. Para el nodo `enrollmentpage`, establezca el valor de la propiedad `sling:resourceSuperType` a mycompany/components/page/contentpage. El componente `contentpage` es el componente de la página base del sitio. Otros componentes de página pueden ampliarlo. Quite los archivos del script en `enrollmentpage`, excepto `head.jsp`, `content.jsp` y `library.jsp`. El componente `sling:resourceSuperType`, que es `contentpage` en este caso, incluye todos esos scripts. Los encabezados, incluidas la barra de navegación y el pie de página, se heredan del componente `contentpage`.
 

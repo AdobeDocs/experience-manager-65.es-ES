@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 78%
+source-wordcount: '840'
+ht-degree: 76%
 
 ---
 
@@ -51,7 +51,7 @@ La marca ahora aparecerá en la página Actividades.
 
    >[!NOTE]
    >
-   >Puede ignorar el error “Su actividad se ha guardado, pero no se ha sincronizado con Target. Motivo: La siguiente experiencia no tiene ofertas”, si aparece al guardar la actividad.
+   >Puede ignorar el error &quot;Su actividad se ha guardado, pero no se ha sincronizado con Target. Motivo: La siguiente experiencia no tiene ofertas”, si aparece al guardar la actividad.
 
 1. Para habilitar la segmentación, edite el archivo .jsp para incluir las bibliotecas de cliente que utiliza la plantilla de formularios adaptables.
 
@@ -74,7 +74,7 @@ La marca ahora aparecerá en la página Actividades.
    Alternativamente, aparecerán cuatro botones al mover el puntero sobre icono del formulario o de la comunicación interactiva sin seleccionarlo. Puede seleccionar el **Editar** que aparece, para abrir el formulario en modo de edición.
 
 1. En la barra de herramientas de la página, seleccione **Información de página** ![theme-options](assets/theme-options.png) > **Abrir propiedades**.
-1. En la pestaña General, elija una configuración para el campo **Adobe Target**. Seleccionar **Guardar y cerrar**.
+1. En la pestaña General, elija una configuración para el campo **Adobe Target**. Seleccione **Guardar y cerrar**.
 
 ## Aplicar la actividad creada a una imagen de formulario adaptable o de comunicación interactiva {#applying-created-activity-to-an-adaptive-form-image-or-an-interactive-communication-image}
 

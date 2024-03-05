@@ -3,9 +3,9 @@ title: Configure el Editor de texto enriquecido para crear contenido en Adobe Ex
 description: Aprenda a configurar el Editor de texto enriquecido de Adobe Experience Manager para que cree contenido en Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2883'
+source-wordcount: '2887'
 ht-degree: 0%
 
 ---
@@ -255,7 +255,7 @@ Los administradores pueden controlar las opciones de RTE mediante políticas de 
 Las opciones disponibles en RTE fluyen hacia abajo desde las configuraciones de interfaz de usuario hasta las políticas de contenido.
 
 * Las opciones de configuración de la interfaz de usuario definen qué opciones están disponibles para las directivas de contenido.
-* Si la configuración de interfaz de usuario de RTE se ha eliminado o no habilita un elemento, la directiva de contenido no puede configurarlo.
+* Si la configuración de interfaz de usuario del RTE se ha eliminado o no habilita un elemento, la directiva de contenido no puede configurarlo.
 * Un autor solo tiene acceso a las funciones que están disponibles en las configuraciones de interfaz de usuario y en las directivas de contenido.
 
 A modo de ejemplo, puede ver el [Documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).

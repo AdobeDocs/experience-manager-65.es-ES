@@ -2,10 +2,10 @@
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2998'
-ht-degree: 91%
+source-wordcount: '2999'
+ht-degree: 95%
 
 ---
 
@@ -113,13 +113,13 @@ Este nivel de integración se basa en el nivel dos al permitir que la mayoría d
 
 ### Todavía no tiene un consumidor externo del contenido sin encabezado, como una aplicación de una sola página (SPA). {#do-not-have-a-spa}
 
-SPA AEM SPA AEM SPA Si su objetivo es crear una interfaz de usuario que consuma contenido sin encabezado de los recursos, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también crear un marco de trabajo de con el editor de contenido sin encabezado, por ejemplo, para crear una interfaz de usuario que le permita crear una interfaz de usuario con el editor de contenido sin encabezado
+Si su objetivo es crear una SPA que consuma contenido sin encabezado desde AEM, puede utilizar funciones como Fragmentos de contenido para administrar el contenido sin encabezado y también generar una SPA dentro del marco de trabajo del editor de SPA.
 
 Con el editor de SPA, la SPA no solo consume contenido de AEM, sino que también es totalmente editable dentro de AEM por sus autores de contenido, lo que le ofrece la flexibilidad de envío sin encabezado y de edición en contexto dentro de AEM.
 
 ## Condiciones y requisitos previos {#requirements-prerequisites}
 
-AEM Antes de comenzar un proyecto de integración sin encabezado, deben cumplirse varios requisitos
+Antes de comenzar con su proyecto sin encabezado de AEM, existen varios requisitos.
 
 ### Conocimiento {#knowledge}
 
@@ -139,7 +139,7 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 ### Ámbito {#scope}
 
-Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa los criterios de aceptación y le permite establecer una definición de listo.
+Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
 
 La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” AEM La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con las que no ha podido crear una aplicación de experiencia. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
@@ -206,7 +206,7 @@ Los nombres de los fragmentos de contenido deben ser descriptivos para los autor
 
 Consulte la sección [recursos adicionales](#additional-resources) para obtener documentación adicional sobre AEM convenciones de asignación de nombres a páginas.
 
-##### No extender el anidado de contenido {#content-nesting}
+##### No ampliar en exceso el anidamiento de contenido {#content-nesting}
 
 Los [fragmentos de contenido](#content-fragments) se utilizan en AEM para crear contenido sin encabezado. AEM admite hasta diez niveles de anidación de contenido para fragmentos de contenido. Sin embargo, es importante tener en cuenta que AEM debe resolver de forma iterativa cada referencia definida en el fragmento de contenido principal y, a continuación, comprobar si hay alguna referencia secundaria en todos los elementos del mismo nivel. Estas operaciones pueden sumarse rápidamente y convertirse en un problema de rendimiento.
 
@@ -255,10 +255,10 @@ Para comprender el tráfico y los patrones de tráfico, comience por reunir lo q
 
 #### Frecuencia de actualización {#update-frequency}
 
-A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Es importante comprender esto para poder ajustar las configuraciones de CDN y caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
+A menudo, las secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Comprender esto es importante para poder ajustar las configuraciones de la red de distribución de contenido (CDN) y la caché. Esto también es una aportación importante para los [Arquitectos de contenido](#content-architects), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
 
 * ¿Deben caducar algunos tipos de contenido después de un período determinado?
-* ¿Hay elementos específicos del usuario que no se pueden almacenar en caché?
+* ¿Hay elementos que son específicos del usuario y que, por lo tanto, no se pueden almacenar en caché?
 
 ## Siguientes pasos {#what-is-next}
 
@@ -277,9 +277,9 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 
 * [Contenido con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md): un análisis completo de los niveles de integración sin encabezado disponibles en AEM
 
-* Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 
-* [Recorrido de traducción sin encabezado de AEM:](/help/journey-headless/translation/overview.md) este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin encabezado, cómo AEM sirve contenido sin encabezado y cómo puede traducirlo.
+* [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md). Este recorrido de documentación te ofrece una amplia comprensión de la tecnología sin encabezado, cómo AEM presenta el contenido sin encabezado y cómo puedes traducirlo.
 
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
 * [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
@@ -295,4 +295,4 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentación técnica que explica cómo crear solicitudes para acceder y enviar fragmentos de contenido
 * [API de REST de Assets](/help/assets/assets-api-content-fragments.md): documentación técnica que explica cómo crear y modificar fragmentos de contenido (y otros recursos)
 * [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md): documentación técnica sobre consultas persistentes en AEM
-* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

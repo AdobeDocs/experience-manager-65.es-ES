@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '4257'
 ht-degree: 90%
@@ -283,7 +283,7 @@ También puede seleccionar un modelo de formulario al crear un formulario.
 
 1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione una de las siguientes opciones:
 
-   **Ninguno**: seleccione esta opción si no desea configurar el documento de registro del formulario.
+   **Ninguno** Seleccione esta opción si no desea configurar el documento de registro del formulario.
 
    **Asociar plantilla de formulario como plantilla de documento de registro**: seleccione esta opción si tiene un archivo XDP que desea utilizar como plantilla para el documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo apropiado.
 
@@ -452,7 +452,7 @@ AEM Forms aplica la tercera página maestra al panel y a todos los paneles post
 
 >[!NOTE]
 >
-> No puede aplicar varias páginas maestras a un documento de registro para un fragmento de formulario adaptable.
+> No se pueden aplicar varias páginas maestras a un documento de registro para un fragmento de formulario adaptable.
 
 ## Consideraciones clave al trabajar con el documento de registro {#key-considerations-when-working-with-document-of-record}
 

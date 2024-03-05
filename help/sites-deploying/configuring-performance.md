@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6470'
 ht-degree: 11%
 
 ---
@@ -383,9 +383,9 @@ En ambos casos, puede definir el número esperado de transacciones por segundo c
 
 | Componente | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
-| Página principal de un solo usuario | Media | 1 | 1 |  |  |
+| Página principal de un solo usuario | Promedio | 1 | 1 |  |  |
 |   | Pico | 1 | 3 |  |  |
-| Página principal 100 usuarios | Media | 100 | 3 |  |  |
+| Página principal 100 usuarios | Promedio | 100 | 3 |  |  |
 |   | Pico | 100 | 3 |  |
 
 #### Pruebas de componentes combinadas {#combined-component-tests}
@@ -509,7 +509,7 @@ La fórmula para calcular la proporción de caché es la siguiente:
 
 Por ejemplo, si el número total de solicitudes es 129491 y el número de solicitudes atendidas por la instancia de publicación es 58959, la proporción de caché es: **(129491 - 58959)/129491= 54,5 %**.
 
-Si no tiene un emparejamiento de publicador/Dispatcher individual, agregue solicitudes de todos los distribuidores y editores juntos para obtener una medición precisa. Consulte también [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md).
+Si no tiene un emparejamiento de publicador/Dispatcher individual, agregue solicitudes de todos los distribuidores y editores para obtener una medición precisa. Consulte también [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >

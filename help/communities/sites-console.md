@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 4%
+source-wordcount: '3084'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +59,7 @@ Para crear un sitio de la comunidad, seleccione la **Crear** icono.
 
 Para acceder a un sitio de la comunidad existente para crear, modificar, publicar, exportar o agregar un grupo anidado, seleccione el icono de carpeta del sitio.
 
-## Creación de sitios {#site-creation}
+## Creación del sitio {#site-creation}
 
 La consola de creación de sitios proporciona un enfoque paso a paso para ensamblar las características del sitio en función de un elemento seleccionado [plantilla del sitio de la comunidad](/help/communities/sites.md) Configuración de y.
 
@@ -75,13 +75,13 @@ El proceso de creación es una serie de pasos que se presentan como paneles que 
 
 En el panel Plantilla del sitio, se especifican el Título, la Descripción, la Raíz del sitio, el Idioma base, el Nombre y la Plantilla del sitio:
 
-* **Título del sitio de la comunidad**
+* **Título del sitio de comunidad**
 
   Un título para mostrar para el sitio.
 
   El título aparece en el sitio publicado y en la interfaz de usuario de administración del sitio.
 
-* **Descripción del sitio de la comunidad**
+* **Descripción del sitio de comunidad**
 
   Una descripción del sitio.
 
@@ -93,11 +93,11 @@ En el panel Plantilla del sitio, se especifican el Título, la Descripción, la 
 
   La raíz predeterminada es `/content/sites`, pero la raíz se puede mover a cualquier ubicación dentro del sitio web.
 
-* **Idioma de base del sitio de la comunidad**
+* **Idioma base del sitio de la comunidad**
 
   (No tocar para un solo idioma: Inglés) Utilice el menú desplegable para elegir uno *o más* idiomas base de los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se crea un sitio de comunidad para cada idioma agregado y existe en la misma carpeta de sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
 
-* **Nombre del sitio de la comunidad**:
+* **Nombre del sitio de comunidad**:
 
   Nombre de la página raíz del sitio que aparece en la dirección URL.
 
@@ -192,13 +192,13 @@ Desmarque para un *privado* sitio de la comunidad. La opción predeterminada est
 Si no se selecciona, la mensajería no está configurada para la comunidad.
 El valor predeterminado está desmarcado.
 
-* **Permitir inicios de sesión de redes sociales: Facebook**
+* **Permitir inicios de sesión sociales: Facebook**
 
   Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. El seleccionado [Configuración de nube de facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
 Si no se selecciona, no se muestra ningún inicio de sesión de Facebook.
 Dejar sin marcar para ver un *privado* sitio de la comunidad. El valor predeterminado está desmarcado.
 
-* **Permitir inicios de sesión de redes sociales: Twitter**
+* **Permitir inicios de sesión sociales: Twitter**
 
   Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Twitter. El seleccionado [configuración de nube de twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez creado el sitio de la comunidad.
 Si no se selecciona, no se muestra ningún inicio de sesión de Twitter.
@@ -232,7 +232,7 @@ Encontrar miembros de la comunidad es fácil mediante la búsqueda anticipada.
 
   Empiece a escribir para seleccionar uno o más miembros de la comunidad o grupos de miembros que puedan administrar miembros de la comunidad y grupos de miembros.
 
-* **Moderadores de la comunidad**
+* **Moderadores de comunidad**
 
   Empiece a escribir para seleccionar uno o varios miembros de la comunidad o grupos de miembros en los que se debe confiar como moderadores del contenido generado por el usuario.
 
@@ -240,7 +240,7 @@ Encontrar miembros de la comunidad es fácil mediante la búsqueda anticipada.
 
   Empiece a escribir para seleccionar uno o varios miembros de la comunidad o grupos de miembros a los que se les dará la capacidad de crear contenido cuando `Allow Privileged Member` se ha seleccionado para una [función comunitaria](/help/communities/functions.md).
 
-* **Administradores de la comunidad**
+* **Administradores de comunidad**
 
   Empiece a escribir para seleccionar uno o varios administradores del sitio que puedan administrar la estructura del sitio independientemente de otros administradores del sitio y del administrador de la comunidad predeterminado. Pueden crear grupos en cualquier nivel de la jerarquía y convertirse en el administrador predeterminado de los grupos anidados (pero más tarde se pueden eliminar de la función de administrador de los grupos anidados).
 
@@ -262,14 +262,14 @@ La configuración global para moderar el contenido generado por el usuario (UGC)
 
 ![site-analytics](assets/site-analytics.png)
 
-* **Activar Analytics**
+* **Habilitar Analytics**
 
   Solo está disponible cuando Adobe Analytics se ha [configurado](/help/communities/analytics.md) para las funciones de Communities.
 El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú de selección adicional:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
-* **Referencia de la estructura de configuración de la nube**
+* **Referencia del marco de configuración de nube**
 
   En el menú desplegable, seleccione el marco de servicio de Analytics Cloud configurado para este sitio de la comunidad.
   `Communities` es el ejemplo de módulo de [Configuración de Analytics para funciones de Communities](/help/communities/analytics.md#aem-analytics-framework-configuration) documentación.
@@ -284,7 +284,7 @@ El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú
 
 ![allow-machine-translation](assets/allow-machine-translation.png)
 
-* **Activar la traducción automática para los idiomas seleccionados**
+* **Habilitar la traducción automática para los idiomas seleccionados**
 
   Los idiomas habilitados para la traducción automática tienen de forma predeterminada la configuración del sistema especificada por el [configuración de integración de traducción](/help/communities/translate-ugc.md#translation-integration-configuration). Esta configuración predeterminada se puede sobrescribir para este sitio eliminando los valores predeterminados o seleccionando otros idiomas en el menú desplegable.
 
@@ -296,7 +296,7 @@ El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú
 
   Para un sitio web con varias copias de idioma, un almacén compartido global proporciona un único hilo de conversación, visible desde cada copia de idioma. Esto se logra seleccionando uno de los idiomas incluidos como copia de idioma. El valor predeterminado es *No hay almacén compartido global*.
 
-* **Elija la configuración del proveedor de traducciones**
+* **Elegir configuración del proveedor de traducción**
 
   Elija una [marco de integración de traducción](/help/sites-administering/tc-tic.md) creado para el proveedor de traducción con licencia.
 
@@ -313,14 +313,14 @@ El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú
      Si se selecciona, aparece una opción de traducción junto a cada entrada que permite traducir entradas individuales al idioma base de la página.
 El valor predeterminado es *seleccionado*.
 
-* **Seleccione las opciones de persistencia**
+* **Seleccionar opciones de persistencia**
 
    * **Traducir las contribuciones a petición del usuario y continuar posteriormente**
 Si se selecciona, el contenido no se traduce hasta que se realiza una solicitud. Una vez traducida, la traducción se almacena en el repositorio.
 
      El valor predeterminado es *no seleccionado*.
 
-   * **No continuar traduciendo**
+   * **No mantener traducciones**
 
      Si se selecciona, las traducciones no se almacenan en el repositorio.
 

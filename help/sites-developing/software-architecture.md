@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Diseño para actualizaciones {#design-for-upgrades}
 
-Al ampliar los comportamientos de OOTB, es importante tener en cuenta las actualizaciones. Aplique siempre las personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o utilice sling:resourceSuperType para ampliar el comportamiento predeterminado. AEM Aunque es posible que sean necesarias algunas modificaciones para admitir una nueva versión de, la nueva versión no debe sobrescribir las personalizaciones si se sigue esta práctica.
+Al ampliar los comportamientos predeterminados, es importante tener en cuenta las actualizaciones. Aplique siempre las personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o utilice sling:resourceSuperType para ampliar el comportamiento predeterminado. AEM Aunque es posible que sean necesarias algunas modificaciones para admitir una nueva versión de, la nueva versión no debe sobrescribir las personalizaciones si se sigue esta práctica.
 
 ### Reutilizar plantillas y componentes siempre que sea posible {#reuse-template-and-components-when-possible}
 
@@ -55,7 +55,7 @@ Los picos y el código de prueba forman parte de cualquier implementación de so
 
 ### Implementar scripts de migración de datos en su propio módulo {#implement-data-migration-scripts-in-their-own-module}
 
-Los scripts de migración de datos, mientras que el código de producción, se ejecutan solo una vez al primer inicio de un sitio. Por lo tanto, cuando el sitio está activo, los scripts se convierten en código muerto. Para asegurarse de que no genera código de implementación que dependa de los scripts de migración, estos deben implementarse en su propio módulo. Al hacerlo, podemos eliminar y retirar este código inmediatamente después del lanzamiento, eliminando el código inactivo del sistema.
+Los scripts de migración de datos, mientras que el código de producción, se ejecutan solo una vez al primer inicio de un sitio. Por lo tanto, cuando el sitio está activo, los scripts se convierten en código muerto. Para asegurarse de no generar código de implementación que dependa de los scripts de migración, estos deben implementarse en su propio módulo. Al hacerlo, podemos eliminar y retirar este código inmediatamente después del lanzamiento, eliminando el código inactivo del sistema.
 
 ### Seguir convenciones de Maven publicadas en archivos POM {#follow-published-maven-conventions-in-pom-files}
 

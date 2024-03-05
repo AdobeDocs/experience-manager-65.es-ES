@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2971'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Algunas de las directrices para desarrollar controladores de sincronización de 
 
 >[!NOTE]
 >
->Activar *Registro de ContentSync Debug* mediante las configuraciones del registrador OSGI en el paquete *com.day.cq.contentsync*. Esto permite rastrear qué controladores se ejecutaron y si actualizaron la caché e informaron de su actualización.
+>Activar *Registro de ContentSync Debug* mediante las configuraciones del registrador OSGI en el paquete *com.day.cq.contentsync*. Esto le permite rastrear qué controladores se ejecutaron y si actualizaron la caché e informaron de su actualización.
 
 ## Configuración del contenido de sincronización de contenido {#configuring-the-content-sync-content}
 

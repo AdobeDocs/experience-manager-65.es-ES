@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
-ht-degree: 4%
+source-wordcount: '2939'
+ht-degree: 5%
 
 ---
 
@@ -347,7 +347,7 @@ AEM Desarrollar para el objetivo de la de **rendimiento y escalabilidad**. Las s
 
 **NO LO HAGAS**
 
-* No utilice las API de JCR directamente, si es posible
+* No utilice directamente las API de JCR, si es posible
 * No cambie /libs, sino que utilice superposiciones
 * No utilice consultas siempre que sea posible
 * No utilice enlaces de Sling para obtener servicios OSGi en código Java™, sino que utilice:
@@ -470,13 +470,13 @@ Para obtener un buen rendimiento, debe seguir las directrices de configuración 
   <tr>
    <td>Flujo de trabajo de recursos de actualización DAM</td>
    <td><code>Transient Workflow</code></td>
-   <td>comprobado</td>
+   <td>activado</td>
    <td>Este flujo de trabajo administra la actualización de recursos.</td>
   </tr>
   <tr>
    <td>Reescritura de metadatos DAM</td>
    <td><code>Transient Workflow</code></td>
-   <td>comprobado</td>
+   <td>activado</td>
    <td>XMP Este flujo de trabajo gestiona la reescritura de la al binario original y define la fecha de la última modificación en JCR.</td>
   </tr>
  </tbody>

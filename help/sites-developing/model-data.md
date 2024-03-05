@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Yo modelaría un sistema simple de blogueo de la siguiente manera. Inicialmente,
 
 Creo que una de las cosas que se hace evidente es que la estructura del contenido se entiende a partir del ejemplo sin más explicaciones.
 
-Lo que puede ser inesperado inicialmente es por qué no almacenaría los &quot;comentarios&quot; con el &quot;post&quot;, que se debe al control de acceso que me gustaría aplicar de una manera razonablemente jerárquica.
+Lo que puede ser inesperado inicialmente es por qué no almacenaría los &quot;comentarios&quot; con el &quot;post&quot;, que se debe al control de acceso que me gustaría que se aplicara de una manera razonablemente jerárquica.
 
 Con el modelo de contenido anterior, puedo permitir fácilmente que el usuario &quot;anónimo&quot; &quot;cree&quot; comentarios, pero mantener al usuario anónimo en modo de solo lectura para el resto del espacio de trabajo.
 
@@ -97,7 +97,7 @@ Con el modelo de contenido anterior, puedo permitir fácilmente que el usuario &
 
 #### Explicación {#explanation-3}
 
-Si no utiliza el `clone()`, `merge()` o `update()` en su aplicación, un solo espacio de trabajo es probablemente el camino a seguir.
+Si no utiliza `clone()`, `merge()` o `update()` en su aplicación, un solo espacio de trabajo es probablemente el camino a seguir.
 
 &quot;Nodos correspondientes&quot; es un concepto definido en la especificación JCR. Básicamente, se reduce a nodos que representan el mismo contenido, en diferentes espacios de trabajo.
 
@@ -164,7 +164,7 @@ Supongamos que permito &quot;referencias&quot; de un documento a) a otro documen
 
 Por lo tanto, modelaría esas referencias como &quot;referencias débiles&quot; (en JCR v1.0, esto esencialmente se reduce a propiedades de cadena que contienen el uuid del nodo de destino) o simplemente utilizaría una ruta. A veces, la ruta es más significativa para empezar.
 
-Creo que hay casos de uso en los que un sistema no puede funcionar si una referencia está colgando, pero no puedo encontrar un buen ejemplo &quot;real&quot; pero simple de mi experiencia directa.
+Creo que hay casos prácticos en los que un sistema no puede funcionar si una referencia está colgando, pero no puedo encontrar un buen ejemplo &quot;real&quot; pero simple de mi experiencia directa.
 
 ### Regla #6: Los archivos son archivos. {#rule-files-are-files}
 
@@ -214,7 +214,7 @@ Por lo tanto, el hecho de que desee poder hacer referencia a un nodo de tipo &qu
 
 #### Ejemplos {#example-7}
 
-Uso:
+Utilice:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

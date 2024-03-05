@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -543,7 +543,7 @@ La salida de la segunda prueba debe ser considerablemente mayor que la primera, 
 
 >[!NOTE]
 >
-Al realizar las pruebas, compruebe las estadísticas de uso de E/S de las máquinas virtuales en cuestión en el sistema de supervisión del sistema operativo. Si indican valores inferiores al 100 por ciento para las lecturas de E/S, puede haber un problema con la máquina virtual.
+>Al realizar las pruebas, compruebe las estadísticas de uso de E/S de las máquinas virtuales en cuestión en el sistema de supervisión del sistema operativo. Si indican valores inferiores al 100 por ciento para las lecturas de E/S, puede haber un problema con la máquina virtual.
 
 **Pruebe el rendimiento de escritura de la instancia principal de MongoDB**
 
@@ -654,7 +654,7 @@ CSP permite ajustar las directivas. Sin embargo, en una aplicación compleja, lo
 
 >[!NOTE]
 >
-Para obtener más información sobre cómo funciona, consulte la [Página de OWASP sobre Política de seguridad de contenido](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Para obtener más información sobre cómo funciona, consulte la [Página de OWASP sobre Política de seguridad de contenido](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Tamaño {#sizing}
 
@@ -678,4 +678,4 @@ AEM Si se está ejecutando en una implementación del administrador de persisten
 
 >[!NOTE]
 >
-Consulte la [Documentación de MongoDB](https://docs.mongodb.com/manual/reference/limits/) para que pueda familiarizarse con las limitaciones y umbrales conocidos de MongoDB.
+>Consulte la [Documentación de MongoDB](https://docs.mongodb.com/manual/reference/limits/) para que pueda familiarizarse con las limitaciones y umbrales conocidos de MongoDB.

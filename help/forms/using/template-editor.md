@@ -7,10 +7,10 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 91%
+source-wordcount: '2030'
+ht-degree: 95%
 
 ---
 
@@ -46,10 +46,10 @@ Después de crear una carpeta, ábrala y haga lo siguiente para crear una planti
 1. En la consola Plantilla, seleccione **Crear** dentro de la carpeta que ha creado.
 1. En la sección Elegir tipo de plantilla, seleccione **Plantilla de formulario adaptable** y seleccione **Siguiente**.
 
-1. En la sección Detalles de la plantilla, proporcione un Título de plantilla y seleccione **Crear**.
+1. En la sección Detalles de la plantilla, escriba un Título de plantilla y seleccione **Crear**. 
 Puede proporcionar una descripción y una miniatura que pueda ver cuando seleccione la plantilla creada en el momento de la creación del formulario.
 
-1. Seleccionar **Listo** para volver a la consola, o seleccione **Abrir** para abrir la plantilla en el editor.
+1. Seleccione **Listo** para volver a la consola o seleccione **Abrir** para abrir la plantilla en el editor.
 
 ### IU del editor de plantillas {#template-editor-ui}
 
@@ -103,7 +103,7 @@ Encabezado y pie de página agregados en la capa Estructura
 
 Cuando edita la plantilla con la capa de estructura seleccionada, puede desbloquear el encabezado y el pie de página de la plantilla. Si un componente está desbloqueado en la plantilla, los autores de formularios pueden editarlo en el formulario adaptable que utiliza la plantilla. Bloquear un componente impide que los autores de formularios lo editen en el formulario adaptable. La opción Bloquear está disponible en la barra de herramientas de componentes.
 
-Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccionar el componente, podrá ver la opción de bloqueo en la barra de herramientas de componentes. Normalmente, el encabezado incluye el nombre de la empresa y el logotipo, y no se desea que los autores de formularios cambien el logotipo y el encabezado de una plantilla. En un formulario adaptable creado con la plantilla con el componente de encabezado bloqueado, los autores de formularios no pueden cambiar el logotipo ni el nombre de la empresa.
+Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccionar el componente, podrá ver la opción de bloqueo en la barra de herramientas de componentes. Normalmente, el encabezado incluye el nombre de la compañía y el logotipo, y no se desea que los autores de formularios cambien el logotipo y el encabezado de una plantilla. En un formulario adaptable creado con la plantilla con el componente de encabezado bloqueado, los autores de formularios no pueden cambiar el logotipo ni el nombre de la empresa.
 
 >[!NOTE]
 >
@@ -144,7 +144,7 @@ Cambie la capa de Estructura a Contenido inicial y empiece a agregar contenido a
 * Puede arrastrar y soltar el componente del panel desde el explorador de componentes de la barra lateral.
 * Puede agregar el panel secundario del `guideRootPanel` en la barra de herramientas de componentes.
 
-Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info` y títulos como Información general e Información profesional respectivamente. En la barra lateral, seleccione contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Seleccionar ![cmppr](assets/cmppr.png) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **Fichas de la parte superior** y seleccione **Listo**. Se aplica la estructura de la plantilla con pestañas.
+Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info` y títulos como Información general e Información profesional respectivamente. En la barra lateral, seleccione Contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Seleccione ![cmppr](assets/cmppr.png) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **Pestañas arriba** y seleccione **Listo**. Se aplica la estructura de la plantilla con pestañas.
 
 #### Agregar contenido en pestañas {#adding-content-in-tabs}
 
@@ -165,7 +165,7 @@ Al crear una plantilla, esta se agrega como borrador. Habilite la plantilla para
 1. Vaya a **Adobe Experience Manager > Herramientas > Plantillas** y abra la carpeta en la que ha creado la plantilla.
 
 1. La plantilla que ha creado se marcará como borrador.
-1. Seleccione la plantilla y seleccione **Activar** en la barra de herramientas.
+1. Seleccione la plantilla y seleccione **Habilitar** en la barra de herramientas. 
 Cuando cree un formulario adaptable, podrá ver la plantilla en la lista cuando se le pida que elija una plantilla.
 
 ## Importar o exportar una plantilla {#importing-or-exporting-a-template}

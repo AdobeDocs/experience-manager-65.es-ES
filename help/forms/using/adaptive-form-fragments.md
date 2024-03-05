@@ -7,10 +7,10 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: ea90b8a180426461b9c4a77d4eb91cf86081e9bc
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 87%
+source-wordcount: '2372'
+ht-degree: 74%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 87%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Formularios adaptables](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
-Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de las formas, como para proporcionar detalles personales como nombre y dirección, detalles familiares, detalles de ingresos, etc. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario.
+Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de las formas, como para proporcionar detalles personales como nombre y dirección, detalles familiares y detalles de ingresos. Los desarrolladores de formularios deben crear estos segmentos comunes cada vez que se crea un nuevo formulario.
 
 Los formularios adaptables proporcionan un mecanismo cómodo para crear segmentos de formulario como un panel o un grupo de campos solo una vez y reutilizarlos. Estos segmentos reutilizables e independientes se denominan fragmentos de formulario adaptables.
 
@@ -43,7 +43,7 @@ Puede crear un fragmento de formulario adaptable desde cero o guardar un panel e
 
    >[!NOTE]
    >
-   >Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
+   >Asegúrese de especificar un nombre único para el fragmento. Si existe otro fragmento con el mismo nombre, el fragmento no se creará.
 
 1. Haga clic para abrir el **modelo de formulario** y desde el menú desplegable **Seleccionar desde**, seleccione uno de los siguientes modelos para el fragmento:
 
@@ -91,7 +91,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
    * **Nombre**: Nombre del fragmento. El valor predeterminado es el nombre de elemento del panel. Es un campo obligatorio.
      >[!NOTE]
      >
-     >Asegúrese de especificar un nombre único para el fragmento. Si ya existe otro fragmento con el mismo nombre, el fragmento no se creará.
+     >Asegúrese de especificar un nombre único para el fragmento. Si existe otro fragmento con el mismo nombre, el fragmento no se creará.
 
    * **Título**: Título del fragmento. El valor predeterminado es el título del panel.
 
@@ -99,11 +99,11 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
 
    * **Etiquetas**: Etiquetas de metadatos para el fragmento.
 
-   * **Ruta de destino**: Ruta del repositorio en la que se guardará el fragmento. Si no especifica una ruta, se creará un nodo con el mismo nombre que el del fragmento junto al nodo que contiene el formulario adaptable. El fragmento se guardará en este nodo.
+   * **Ruta del público destinatario**: ruta del repositorio en la que se guarda el fragmento. Si no especifica una ruta, se creará un nodo con el mismo nombre que el del fragmento junto al nodo que contiene el formulario adaptable. El fragmento se guardará en este nodo.
 
    * **Modelo de formulario**: en función del modelo de formulario para el formulario adaptable, este campo muestra el **Esquema XML**, la **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
-   * **Raíz del modelo del fragmento**: solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Tenga en cuenta que solo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
+   * **Raíz del modelo del fragmento**: solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Solo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
 Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz de modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
 
    * **XSD Ref**: solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
@@ -114,7 +114,7 @@ Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la 
 
    Guardar como diálogo de fragmento
 
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
    El panel se guardará en la ubicación especificada o predeterminada del repositorio. En el formulario adaptable, el panel se reemplazará por una captura del fragmento. Como se muestra a continuación, el panel Información general y sus paneles secundarios, Información personal y Dirección, se guardarán como un fragmento.
 
@@ -128,12 +128,12 @@ Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la 
 
 Cualquier fragmento que inserte en formularios adaptables aparecerá como una imagen de marcador de posición. El marcador de posición muestra títulos de hasta un máximo de diez paneles secundarios en el fragmento. Puede configurar AEM Forms para mostrar el fragmento completo en lugar de la imagen del marcador de posición.
 
-Para mostrar fragmentos completos en formularios, haga lo siguiente:
+Realice los siguientes pasos para mostrar fragmentos completos en formularios:
 
 1. Vaya a la página de configuración de la consola web de AEM en https:[*host*]:[*port*]/system/console/configMgr.
 
-1. Busque y haga clic en **[!UICONTROL Configuración del canal Web de comunicaciones interactivas y formularios adaptables]** para abrirlo en modo de edición.
-1. Deshabilite **[!UICONTROL Habilite el marcador de posición en lugar del fragmento]** para mostrar fragmentos completos en lugar de la imagen del marcador de posición.
+1. Buscar y seleccionar **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]** para abrirlo en modo de edición.
+1. Deshabilitar **[!UICONTROL Habilitar marcador de posición en lugar de fragmento]** para que pueda mostrar fragmentos completos en lugar de la imagen del marcador de posición.
 
 ### Insertar un fragmento en un formulario adaptable {#insert-a-fragment-in-an-adaptive-form}
 
@@ -172,7 +172,7 @@ Puede reemplazar o cambiar un fragmento de formulario adaptable por otro mediant
 
 ### Generar documento de registro para el fragmento de formulario adaptable {#generate-DOR-for-fragments}
 
-El documento de registro (DOR) le ayuda a mantener la información de los formularios en formato impreso o de documento. Por lo tanto, le ayuda a realizar un seguimiento de la información sobre sus clientes en cualquier momento posterior y también puede utilizar el documento de registro para archivar formularios y contenido en formato PDF. [Obtenga información sobre cómo generar el documento de registro para los fragmentos de formulario adaptable](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+El documento de registro (DOR) le ayuda a mantener la información de los formularios en formato impreso o de documento. De este modo, le ayuda a realizar un seguimiento de la información sobre sus clientes en cualquier momento posterior y también puede utilizar el documento de registro para archivar formularios y contenido en formato PDF. [Obtenga información sobre cómo generar el documento de registro para los fragmentos de formulario adaptable](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Usar un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
 
@@ -249,22 +249,22 @@ Puede realizar varias operaciones en los fragmentos de formularios adaptables me
 
 ## Localizar el formulario adaptable que contiene fragmentos {#localizing-adaptive-form-containing-fragments}
 
-Para localizar un formulario adaptable que contenga fragmentos de formularios adaptables, debe localizar el fragmento y el formulario por separado. La idea es localizar un fragmento una vez y reutilizarlo en varios formularios adaptables.
+Para localizar un formulario adaptable que contenga fragmentos de formulario adaptables, debe localizar el fragmento y el formulario por separado. La idea es localizar un fragmento una vez y reutilizarlo en varios formularios adaptables.
 
 >[!NOTE]
 >
->Las claves de localización del fragmento no aparecerán en el archivo XLIFF de un formulario adaptable.
+>Las claves de localización del fragmento no aparecen en el archivo XLIFF de un formulario adaptable.
 
 ## Puntos clave que se deben recordar al trabajar con fragmentos {#key-points-to-remember-when-working-with-fragments}
 
 * Asegúrese de que el nombre del fragmento sea único. El fragmento no se creará si hay un fragmento existente con el mismo nombre.
 * En un formulario adaptable basado en XDP, si guarda un panel como fragmento que incluye otro fragmento XDP, el fragmento resultante se enlazará automáticamente al fragmento XDP secundario. Si hay un formulario adaptable basado en XSD, el fragmento resultante se enlazará a la raíz del esquema.
-* Cuando cree un fragmento de formulario adaptable, se creará un nodo de fragmento en CRXDe Lite, similar al nodo guideContainer para un formulario adaptable.
-* No se admite un fragmento de un formulario adaptable que utilice un modelo de datos de formulario diferente. Por ejemplo, un fragmento basado en XDP no es compatible con un formulario adaptable basado en XSD y viceversa.
+* Cuando se crea un fragmento de formulario adaptable, se crea un nodo de fragmento en CRXDE Lite, similar al nodo guideContainer para un formulario adaptable.
+* No se admite un fragmento de un formulario adaptable que utilice un modelo de datos de formulario diferente. Por ejemplo, un fragmento basado en XDP no es compatible con un formulario adaptable basado en XSD y, a la inversa.
 * Los fragmentos de formularios adaptables están disponibles para utilizarlos a través de la pestaña Fragmentos de formularios adaptables en el buscador de contenido de AEM.
 * Cualquier expresión, script o estilo de un fragmento de formulario adaptable independiente se conservará cuando se inserte por referencia o se incruste en un formulario adaptable.
 * No puede editar un fragmento de formulario adaptable, que se inserte por referencia, desde un formulario adaptable. Para editarlo, edite el fragmento de formulario adaptable independiente o incrústelo en el formulario adaptable.
-* Cuando publique un formulario adaptable, deberá publicar los fragmentos de formulario adaptable independientes insertados por referencia en el formulario adaptable.
+* Al publicar un formulario adaptable, debe publicar los fragmentos de formulario adaptable independientes insertados por referencia en el formulario adaptable.
 * Cuando vuelva a publicar un fragmento de formulario adaptable actualizado, los cambios se reflejarán en las instancias publicadas del formulario adaptable en el que se utilice el fragmento.
 * El formulario adaptable que contenga el componente Verificar no admitirá usuarios anónimos. Además, no se recomienda utilizar el componente Verificar en un fragmento de formulario adaptable.
 * (**Solo Mac**) Para asegurarse de que la funcionalidad de los fragmentos del formulario funciona perfectamente en todas las situaciones, agregue la siguiente entrada al archivo /private/etc/hosts:

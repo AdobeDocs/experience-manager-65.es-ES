@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 1%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
 
    * Escriba el texto del cuerpo
 
-     No he tenido mucho éxito cuando cuelgo un alimentador de colibrí todos los años. Parece que vienen un día o dos, entonces eso es todo. Lo cambio una vez a la semana, ¿es demasiado largo? ¿Debo cambiarlo antes?
+     No he tenido mucho éxito cuando cuelgo un alimentador de colibrí cada año. Parece que vienen un día o dos, entonces eso es todo. Lo cambio una vez a la semana, ¿es demasiado largo? ¿Debo cambiarlo antes?
 
    * Seleccionar publicación
    * Seleccione Cerrar sesión

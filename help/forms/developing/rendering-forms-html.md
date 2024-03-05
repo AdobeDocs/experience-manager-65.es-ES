@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4102'
+source-wordcount: '4104'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Puede invocar scripts personalizados antes de enviar un formulario. Esta funció
 
 En primer lugar, defina una función de llamada de retorno que se llame antes de enviar el formulario, donde el nombre de la función es `_user_onsubmit`. Se supone que la función no producirá ninguna excepción o, si lo hace, se ignorará la excepción. Se recomienda colocar la función de JavaScript en la sección head del HTML; sin embargo, puede declararla en cualquier lugar antes del final de las etiquetas de script que incluyen `xfasubset.js`.
 
-Cuando el servidor de formularios procesa un XDP que contiene una lista desplegable, además de crear la lista desplegable, también crea dos campos de texto ocultos. Estos campos de texto almacenan los datos de la lista desplegable (uno almacena el nombre para mostrar de las opciones y otro almacena el valor de las opciones). Por lo tanto, cada vez que un usuario envía el formulario, se envían todos los datos de la lista desplegable. Suponiendo que no desee enviar tantos datos cada vez, puede escribir un script personalizado para deshabilitarlo. Por ejemplo: el nombre de la lista desplegable es `drpOrderedByStateProv` y se coloca debajo del encabezado del subformulario. El nombre del elemento de entrada del HTML es `header[0].drpOrderedByStateProv[0]`. El nombre de los campos ocultos que almacenan y envían los datos de la lista desplegable tiene los siguientes nombres: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+Cuando el servidor de formularios procesa un XDP que contiene una lista desplegable, además de crear la lista desplegable, también crea dos campos de texto ocultos. Estos campos de texto almacenan los datos de la lista desplegable (uno almacena el nombre para mostrar de las opciones y otro almacena el valor de las opciones). Por lo tanto, cada vez que un usuario envía el formulario, se envían todos los datos de la lista desplegable. Si no desea enviar tantos datos cada vez, puede escribir un script personalizado para deshabilitarlo. Por ejemplo: el nombre de la lista desplegable es `drpOrderedByStateProv` y se coloca debajo del encabezado del subformulario. El nombre del elemento de entrada del HTML es `header[0].drpOrderedByStateProv[0]`. El nombre de los campos ocultos que almacenan y envían los datos de la lista desplegable tiene los siguientes nombres: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 Puede deshabilitar estos elementos de entrada de la siguiente manera si no desea publicar los datos. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 

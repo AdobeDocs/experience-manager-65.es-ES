@@ -2,16 +2,16 @@
 title: Crear contenido accesible para Adobe Experience Manager (Conformidad con WCAG 2.1)
 description: AEM Uso para ayudar a las personas con discapacidades a hacer que el contenido web sea accesible para ellas y lo puedan utilizar
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '13806'
-ht-degree: 84%
+source-wordcount: '13636'
+ht-degree: 83%
 
 ---
 
 # Crear contenido accesible (Conformidad con WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
-El [Directrices de accesibilidad del contenido web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), redactado por [un grupo de trabajo del World Wide Web Consortium](https://www.w3.org/grupos/#Accessibility_Guidelines_Working_Group), consisten en un conjunto de directrices y criterios de éxito independientes de la tecnología para ayudar a que el contenido web sea accesible para las personas con discapacidad y lo puedan utilizar.
+El [Directrices de accesibilidad del contenido web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), redactado por [un grupo de trabajo del World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), consisten en un conjunto de directrices y criterios de éxito independientes de la tecnología para ayudar a que el contenido web sea accesible para las personas con discapacidad y lo puedan utilizar.
 
 Como introducción, el consorcio ofrece una serie de secciones y documentos de apoyo:
 
@@ -96,7 +96,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 * Fotos ilustrativas: imágenes de personas, objetos o lugares. Es importante pensar en el papel de la foto en la página y describir el contenido de la imagen, ya que la tecnología de asistencia anunciará el tipo de elemento (por ejemplo, `graphic` o `image`); puede aumentar la claridad de uso `screenshot` o `illustration` en las descripciones de texto alternativas, pero esto depende del contexto. La coherencia es un factor importante, se debe tomar una decisión para todo el equipo de creación y esto se aplica en toda la experiencia del usuario.
 * Iconos: Pequeños pictogramas (gráficos) que transmiten información específica. Se deben utilizar de manera consistente en una página o sitio. Todos los ejemplos del icono en una página o sitio deben contener el mismo texto alternativo, corto y preciso, a menos que se duplique innecesariamente el texto adyacente.
-* Tablas y gráficos: Normalmente representan datos numéricos. Una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las tendencias principales que se muestran en la tabla o en el gráfico. Si es necesario, proporcione también una descripción más detallada en formato texto utilizando el campo **Descripción** en la pestaña de Propiedades de la imagen **avanzadas**. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
+* Gráficos y diagramas: Normalmente representan datos numéricos. Por lo tanto, una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las principales tendencias que se muestran en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto utilizando la variable **Descripción** en el campo **Avanzadas** pestaña propiedades de la imagen. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
 * Mapas, diagramas, diagramas de flujo: para los gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), asegúrese de que el mensaje clave se proporcione en formato de texto y de que esta información de texto se coloque cerca de cada punto de datos asociado. En el caso de los mapas, es probable que no sea práctico suministrar un equivalente textual completo. No obstante, si el mapa se proporciona como una forma de ayudar a las personas a encontrar su camino a una ubicación determinada, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, ofrecer indicaciones para llegar a esa ubicación en texto en cualquier parte de la página o a través del campo **Descripción** en la pestaña **Avanzado** del componente **Imagen**.
 * CAPTCHA: Un CAPTCHA es un *Prueba de Turing pública completamente automatizada para diferenciar ordenadores de humanos*. Se trata de una comprobación de seguridad que se utiliza en las páginas web para distinguir a los seres humanos del software malicioso, pero que puede causar barreras de accesibilidad. Son imágenes que requieren que se describa lo que se ve para pasar una prueba de seguridad. Como no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪ El W3C proporciona algunas sugerencias, como las siguientes:
    * Rompecabezas lógicos
@@ -147,7 +147,7 @@ Proporcionar esta información en un formato diferente, como texto (o audio para
 #### Cómo cumplir: Solo audio y solo vídeo (pregrabado) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * Si el contenido es audio pregrabado sin vídeo (como podcast):
-   * Proporcione un vínculo inmediatamente antes o después del contenido para obtener una transcripción textual del contenido del audio. La transcripción debe ser una página de HTML con un texto equivalente a todo el contenido hablado y no hablado importante, además de una indicación de quién habla, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
+   * Proporcione un vínculo inmediatamente antes o después del contenido para obtener una transcripción textual del contenido del audio. La transcripción debe ser una página HTML con un texto equivalente a todo el contenido hablado o no hablado importante, además de una indicación de quién habla, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
 * Si el contenido es una animación o un vídeo pregrabado sin audio:
    * Proporcione un vínculo inmediatamente antes o después del contenido para una descripción textual equivalente a la información proporcionada por el vídeo.
    * O bien, una descripción de audio equivalente en un formato de audio utilizado comúnmente, como MP3.
@@ -331,7 +331,7 @@ Puede garantizar que las páginas web tengan la estructura adecuada mediante los
 
   >[!NOTE]
   >
-  >Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte [Agregar ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >De forma predeterminada, estos elementos y atributos no están disponibles directamente, aunque es posible que el administrador del sistema añada compatibilidad con estos valores en **Propiedades de tabla** Cuadro de diálogo (consulte [Añadir ayuda para elementos y atributos de HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
   Para abrir el cuadro de diálogo **Tabla**, seleccione la pestaña **Propiedades de la tabla**:
 
@@ -838,7 +838,7 @@ Sobre todo, es importante asegurarse de que el objetivo de un vínculo se descri
    * Texto: Clases nocturnas de otoño de 2010, más información.
    * Motivo: ajustando ligeramente el texto y la posición del vínculo se puede mejorar el texto del vínculo.
 
-Los vínculos se tienen que redactar con coherencia en todas las páginas, especialmente en las barras de navegación. Por ejemplo, si un vínculo a una página en concreto se nombra como **Publicaciones** en una página, utilice ese mismo texto en otras páginas para mantener la coherencia.
+Los vínculos deben redactarse de forma coherente en todas las páginas, especialmente en las barras de navegación. Por ejemplo, si un vínculo a una página específica se denomina **Publicaciones** en una página, utilice ese texto en otras páginas para garantizar la coherencia.
 
 En el momento de escribir este artículo, existen algunos problemas relacionados con el uso de atributos de título para garantizar que vínculos similares presentados en una página proporcionen información única sobre el destino (por ejemplo, &quot;leer más&quot; se referirá a menudo a un rango de destinos diferentes):
 
@@ -848,7 +848,7 @@ En el momento de escribir este artículo, existen algunos problemas relacionados
 
 Por lo tanto, aunque el atributo del título se puede utilizar para proporcionar contexto adicional a un vínculo, tenga en cuenta sus limitaciones y no lo utilice como alternativa al vínculo de un texto.
 
-Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describe el destino del vínculo. Por ejemplo, si la imagen de una estantería es el vínculo a las publicaciones de una persona, el texto alternativo debería ser algo como **Publicaciones de John Smith** y no **Estantería**.
+Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describa el destino del vínculo. Por ejemplo, si la imagen de una estantería es un vínculo a las publicaciones de una persona, el texto alternativo debería ser **Publicaciones de John Smith** y no **Estantería**.
 
 Alternativamente, si el anclaje del vínculo contiene texto que describe el objetivo del vínculo, además de la imagen (y por ello aparece junto a la imagen), utilice un atributo alternativo vacío para la imagen:
 

@@ -6,10 +6,10 @@ role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 3%
+source-wordcount: '555'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager] platform proporciona diferentes funcionalidades para administrar recursos. Media Library permite a los usuarios cargar un pequeño número de recursos en el repositorio, buscarlos y utilizarlos en las páginas web y realizar tareas sencillas de administración de recursos en los recursos.
@@ -57,7 +57,7 @@ Media Library proporciona funciones básicas de DAM para los siguientes casos de
 Para utilizar la funcionalidad de Media Library, puede utilizar la opción predeterminada [!DNL Experience Manager] interfaz de usuario. Media Library forma parte de [!DNL Experience Manager Sites] instalación y no se requiere una interfaz o complemento por separado. Con la interfaz existente, los usuarios de Media Library tienen derecho a realizar las siguientes tareas:
 
 * Cree carpetas para organizar los recursos.
-* Carga de activos.
+* Cargar recursos.
 * Publicar recursos.
 * Editar, mover y copiar recursos.
 * Examinar, filtrar y buscar (incluye la búsqueda por similitudes) recursos.
@@ -80,7 +80,7 @@ Para utilizar la funcionalidad de Media Library, puede utilizar la opción prede
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
@@ -96,4 +96,3 @@ Tenga en cuenta que no puede utilizar etiquetas inteligentes, [!DNL Asset] vínc
 >* [Funciones DAM en [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)
 >* [[!DNL Experience Manager] Descripción del producto de Managed Services 6.5](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* [[!DNL Experience Manager] Descripción del producto on-premise de 6.5](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html)
-

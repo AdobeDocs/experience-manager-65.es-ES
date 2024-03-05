@@ -4,9 +4,9 @@ description: AEM Obtenga información sobre cómo realizar una actualización in
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ While `FileDataStore` AEM es el nuevo valor predeterminado para instalaciones de
 
 Omita esta sección si actualiza desde la versión 6.3. Aunque los perfiles crx2oak proporcionados deben satisfacer las necesidades de la mayoría de los clientes, hay momentos en que se necesitarán parámetros adicionales. Si se produce un error durante la migración, es posible que haya aspectos del entorno que requieran que se proporcionen opciones de configuración adicionales. Si es así, es probable que se produzca el siguiente error:
 
-**No se copiarán los puntos de comprobación porque no se ha especificado ningún almacén de datos externo. Esto conllevará la reindexación completa del repositorio en el primer inicio. Utilice —skip-checkpoints para forzar la migración o consulte https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration para obtener más información.**
+**Los puntos de comprobación no se copian porque no se ha especificado ningún almacén de datos externo. Esto conllevará la reindexación completa del repositorio en el primer inicio. Utilice —skip-checkpoints para forzar la migración o consulte https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration para obtener más información.**
 
 Por alguna razón, el proceso de migración necesita acceder a los binarios del almacén de datos y no puede encontrarlo. Para especificar la configuración del almacén de datos, incluya los siguientes indicadores en la `<<ADDITIONAL_FLAGS>>` parte del comando de migración:
 
@@ -175,7 +175,7 @@ AEM Tenga en cuenta que iniciar la actualización desde la secuencia de comandos
    ps -ef | grep java
    ```
 
-1. AEM Busque el proceso de. Se parecerá a:
+1. AEM Busque el proceso de. Se verá algo así como:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties

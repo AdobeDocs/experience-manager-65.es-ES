@@ -3,10 +3,10 @@ title: 'Tutorial: Crear un formulario adaptable'
 description: Aprenda a crear, diseñar y previsualizar un formulario adaptable. Además, aprenda a configurar las acciones de envío.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 84%
+source-wordcount: '1314'
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ Al final del artículo tendrá un formulario similar al siguiente:\
 ## Paso 1: Crear el formulario adaptable {#step-create-the-adaptive-form}
 
 1. Inicie sesión en la instancia de autor de AEM y navegue hasta **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**. La dirección URL predeterminada es [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-1. Seleccionar **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**. Aparecerá una opción para seleccionar una plantilla. Seleccione el **[!UICONTROL Vacío]** plantilla para seleccionarla y seleccionar **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**. Aparecerá una opción para seleccionar una plantilla. Seleccione el **[!UICONTROL Vacío]** plantilla para seleccionarla y seleccionar **[!UICONTROL Siguiente]**.
 
 1. Aparecerá una opción para **[!UICONTROL Agregar propiedades]**. Los campos **[!UICONTROL Título]** y **[!UICONTROL Nombre]** son obligatorios:
 

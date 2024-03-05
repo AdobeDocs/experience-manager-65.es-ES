@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 2%
+source-wordcount: '2403'
+ht-degree: 0%
 
 ---
 
@@ -267,7 +267,7 @@ AEM En cada instancia de publicación de la:
 
    `system`
 
-   `rep:cache` (dado que utilizamos sesiones fijas, no es necesario sincronizar este nodo con diferentes editores).
+   `rep:cache` (dado que se utilizan sesiones fijas, no es necesario sincronizar este nodo con distintos editores).
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
@@ -275,7 +275,7 @@ AEM En cada instancia de publicación de la:
 
 AEM La instancia de autor de utiliza el ID de Sling para identificar de dónde provienen los datos y a qué editores debe (o no debe) enviar el paquete de vuelta.
 
-Asegúrese de que todos los editores de un conjunto de servidores de publicación tengan un ID de Sling único. Si el ID de Sling es el mismo para varias instancias de publicación en un conjunto de servidores de publicación, la sincronización de usuarios falla. Como el autor no sabrá de dónde obtener el paquete ni dónde instalarlo.
+Asegúrese de que todos los editores de un conjunto de servidores de publicación tengan un ID de Sling único. Si el ID de Sling es el mismo para varias instancias de publicación en un conjunto de servidores de publicación, la sincronización de usuarios falla. Como el autor no sabe de dónde obtener el paquete ni dónde instalarlo.
 
 Para garantizar un ID de Sling único de los editores del conjunto de servidores de publicación, en cada instancia de publicación:
 

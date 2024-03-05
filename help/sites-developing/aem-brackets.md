@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '913'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Entre paréntesis **Archivo** menú, elija **Abrir carpeta...** y elija la `jcr_
 
 >[!NOTE]
 >
->Si no tiene un proyecto propio con un paquete de contenido, puede probar el [Ejemplo de HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). En GitHub, haga clic en **Descargar ZIP**, extraiga los archivos localmente y, como se indica más arriba, abra el `jcr_root` carpeta en Corchetes. A continuación, siga los pasos a continuación para configurar el **Configuración de proyecto** AEM y, finalmente, cargue todo el paquete en la instancia de desarrollo de su haciendo un **Exportar paquete de contenido** como se indica más adelante en la sección Sincronización completa del paquete de contenido.
+>Si no tiene su propio proyecto con un paquete de contenido, puede probar el [Ejemplo de HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). En GitHub, haga clic en **Descargar ZIP**, extraiga los archivos localmente y, como se indica más arriba, abra el `jcr_root` carpeta en Corchetes. A continuación, siga los pasos a continuación para configurar el **Configuración de proyecto** AEM y, finalmente, cargue todo el paquete en la instancia de desarrollo de su haciendo un **Exportar paquete de contenido** como se indica más adelante en la sección Sincronización completa del paquete de contenido.
 >
 >Después de estos pasos, debe poder acceder a las `/content/todo.html` AEM AEM En la URL de la instancia de desarrollo de la puede empezar a realizar modificaciones en el código de Brackets y ver cómo, después de realizar una actualización en el explorador web, los cambios se sincronizan inmediatamente con el servidor de la.
 
@@ -86,7 +86,7 @@ AEM Para sincronizar el contenido con y desde una instancia de desarrollo de, de
 La Configuración del proyecto permite definir lo siguiente:
 
 1. La URL del servidor (por ejemplo, `http://localhost:4502`)
-1. Si se toleran los servidores que no tienen un certificado HTTPS válido (no marcar, a menos que sea necesario)
+1. Si se toleran los servidores que no tienen un certificado HTTPS válido (manténgalo sin marcar, a menos que sea necesario)
 1. El nombre de usuario utilizado para sincronizar contenido (por ejemplo, `admin`)
 1. La contraseña del usuario (por ejemplo, `admin`)
 

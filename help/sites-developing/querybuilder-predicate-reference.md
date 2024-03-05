@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 3%
+source-wordcount: '2313'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 ## General {#general}
 
 * [raíz](#root)
-* [grupo ](#group)
+* [grupo](#group)
 * [orderby](#orderby)
 
 ## Predicados {#predicates}
@@ -174,7 +174,7 @@ No admite la extracción de facetas.
 
   La ruta relativa a la búsqueda en la propiedad o subnodo. Esta propiedad es opcional.
 
-### grupo  {#group}
+### grupo {#group}
 
 Permite crear condiciones anidadas. Los grupos pueden contener grupos anidados. Todo en una consulta del generador de consultas está implícito en un grupo raíz, que puede tener `p.or` y `p.not` también parámetros de.
 
@@ -245,7 +245,7 @@ Admite extracción de facetas. Proporciona bloques para cada código de lenguaje
 
 #### Propiedades {#properties-8}
 
-* **language**
+* **idioma**
 
   Código de idioma ISO, por ejemplo,&quot;`de`&quot;
 
@@ -315,7 +315,7 @@ Permite ordenar los resultados. Si se requiere ordenar por varias propiedades, e
 
   Nombre de propiedad JCR indicado por una @ inicial, por ejemplo, `@jcr:lastModified` o `@jcr:content/jcr:title`u otro predicado de la consulta, por ejemplo, `2_property`, según cuál ordenar.
 
-* **ordenar**
+* **sort**
 
   Dirección de ordenación, ya sea &quot; `desc`&quot; para descendente o &quot; `asc`&quot; para ascendente (predeterminado).
 
@@ -343,7 +343,7 @@ No admite la extracción de facetas.
 
   Busca solo los elementos secundarios directos (como anexar &quot; `/*`&quot; en xpath) (solo se usa si &#39; `exact`&#39; no es true, opcional).
 
-* **self**
+* **uno mismo**
 
   Busca en el subárbol pero incluye el nodo base dado como ruta (sin comodines).
 
@@ -473,7 +473,7 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
 
      Elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si está configurado).
 
-   * **completa**:
+   * **completo**:
 
      Representación del nodo JSON de Sling, con `jcr:path` indicando la ruta de la visita: de forma predeterminada solo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; agregue `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
@@ -573,7 +573,7 @@ No admite la extracción de facetas.
 
 * **todo**
 
-  (booleano) Buscar texto completo de la etiqueta completa, es decir, todos los títulos, descripción, etc. (tiene prioridad sobre &quot;l&quot; `ang`&quot;).
+  (Bool) Busque texto completo de la etiqueta, es decir, todos los títulos, descripciones, etc. Tiene prioridad sobre &quot;l&quot; `ang`&quot;.
 
 ### tipo {#type}
 
@@ -583,6 +583,6 @@ Admite extracción de facetas. Proporciona bloques para cada tipo único en los 
 
 #### Propiedades {#Properties-2}
 
-* **tipo**
+* **type**
 
   Tipo de nodo o nombre de mezcla que buscar, por ejemplo, `cq:Page`.

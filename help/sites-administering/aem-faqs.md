@@ -2,7 +2,7 @@
 title: AEM Preguntas más frecuentess
 description: AEM Utilice estas preguntas frecuentes para comprender, configurar y solucionar problemas o flujos de trabajo comunes en los flujos de trabajo de.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -80,11 +80,11 @@ Consulte [AEM Explicación de los motivos para actualizar el](https://helpx.adob
 
 Si el usuario que carga los archivos de película no tiene permisos de eliminación en el nodo de recursos, se produce un error en la eliminación de nodos de fragmentos y se reinicia la carga.
 
-#### ¿Cuáles son los ajustes predeterminados para las configuraciones de OOTB al crear la copia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### ¿Cuáles son los ajustes predeterminados para las configuraciones predeterminadas al crear la copia de idioma? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Cuando crea una copia de idioma mediante la IU táctil (**Referencias** > **Actualizar copia de idioma**), se crea una nueva carpeta DAM en el nuevo idioma y se hace referencia a los recursos desde allí.
 
-Esta es la configuración predeterminada para las configuraciones de OOTB. Puede establecer **Traducir recursos de la página** = **No traducir** en Configuraciones de traducción.
+Esta es la configuración predeterminada para las configuraciones listas para usarse. Puede establecer **Traducir recursos de la página** = **No traducir** en Configuraciones de traducción.
 AEM Para la versión 6.4, **Herramientas** > **Cloud Service** > **Servicios de nube de traducción**.
 
 #### AEM AEM AEM ¿Cómo desactivar un componente de la que causa un crecimiento exponencial para la tienda de segmentos de la (6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

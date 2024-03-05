@@ -1,10 +1,10 @@
 ---
 title: ¿Cómo se generan y trabajan con hashes en PDF forms dinámicos?
-description: Generar y trabajar con hash en formularios PDF dinámicos.
+description: Generación y trabajo con hash en PDF forms dinámicos.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Los archivos de ejemplo para este artículo incluyen dos PDF forms. El primer ej
 
 Siga los pasos a continuación para probar el primer ejemplo:
 
-1. Después de descargar y descomprimir los archivos de ejemplo, abra hashing_forms_sample1.pdf con AEM Forms en JEE Designer. Como alternativa, puede utilizar Adobe Reader o Adobe Acrobat Professional para abrir y ver el ejemplo, pero no podrá ver el código fuente.
+1. Después de descargar y descomprimir los archivos de ejemplo, abra hashing_forms_sample1.pdf con AEM Forms en JEE Designer. Como alternativa, puede utilizar Adobe Reader o Adobe Acrobat Professional para abrir y ver el ejemplo, pero no puede ver el código fuente.
 1. En el campo de texto etiquetado como [!UICONTROL borrar texto] escriba una contraseña o cualquier otro mensaje que desee que tenga hash.
 1. Haga clic en uno de los cuatro botones para generar el hash MD4, MD5, SHA-1 o SHA-256. Según el botón que haya presionado, se llamará a una de las cuatro funciones hash que produce salida hexadecimal y la cadena o el mensaje tendrán un valor hash.
 
@@ -89,7 +89,7 @@ El segundo ejemplo muestra cómo se comparan los hash en segundo plano, sin tene
 
 Siga los pasos a continuación para probar el segundo ejemplo:
 
-1. Abrir `hashing_forms_sample2.pdf` con AEM Forms en JEE Designer. Como alternativa, puede utilizar Adobe Reader o Adobe Acrobat Professional para abrir y ver el ejemplo, pero no podrá ver el código fuente.
+1. Abrir `hashing_forms_sample2.pdf` con AEM Forms en JEE Designer. Como alternativa, puede utilizar Adobe Reader o Adobe Acrobat Professional para abrir y ver el ejemplo, pero no puede ver el código fuente.
 1. Elija uno de los dos campos de contraseña etiquetados como [!UICONTROL Contraseña MAN] o [!UICONTROL Contraseña WOMAN] y escriba las contraseñas:
    1. La contraseña del usuario principal es `bob`
    1. La contraseña de la mujer es `alice`

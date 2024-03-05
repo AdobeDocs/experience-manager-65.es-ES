@@ -6,10 +6,10 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2156'
-ht-degree: 4%
+source-wordcount: '2136'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ Los controladores de medios son servicios de [!DNL Assets] que realizan acciones
 
 Los siguientes controladores de medios están disponibles en [!DNL Assets] y gestionan los tipos MIME más comunes:
 
-<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Nombre del controlador | Nombre del servicio (en la consola del sistema) | Tipos MIME admitidos |
@@ -109,7 +109,7 @@ La interfaz y las clases incluyen:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que añade compatibilidad con tipos MIME específicos. Añadir un nuevo tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` clase: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` clase:
+* Clase `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente, además de otra funcionalidad utilizada comúnmente para la extracción de subrecursos.
    * La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupe de la mayoría de las cosas y proporcione un comportamiento predeterminado razonable: la clase com.day.cq.dam.core.AbstractAssetHandler.
    * Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador de herencia en true.
@@ -412,7 +412,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
      * * @return the number of words in the string
      * */
     private long wordCount(String text) {
-     // We need to keep track of the last character, if we have two whitespaces in a row we don't want to double count.
+     // We need to keep track of the last character, if we have two whitespaces in a row we do not want to double count.
      // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true;
      boolean currentWhiteSpace = true;
@@ -485,7 +485,7 @@ Instalar [!DNL ImageMagick] en el disco que aloja el [!DNL Experience Manager] s
    >
    >En algunas versiones de Windows, el comando convert puede no ejecutarse porque está en conflicto con la utilidad de conversión nativa de la que forma parte [!DNL Windows] instalación. En este caso, mencione la ruta completa para [!DNL ImageMagick] software utilizado para convertir archivos de imagen en miniaturas. Por ejemplo, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Para ver si la herramienta se ejecuta correctamente, añada una imagen de JPG al directorio de trabajo y ejecute el comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` en la línea de comandos. Se añade una imagen volteada al directorio. A continuación, agregue el paso del proceso de la línea de comandos al flujo de trabajo de **[!UICONTROL recursos de actualización de DAM.]**
+1. Para ver si la herramienta se ejecuta correctamente, añada una imagen de JPG al directorio de trabajo y ejecute el comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` en la línea de comandos. Se añade una imagen volteada al directorio. A continuación, agregue el paso del proceso de la línea de comandos al **[!UICONTROL Recurso de actualización DAM]** flujo de trabajo.
 1. Vaya a la **[!UICONTROL Flujo de trabajo]** consola.
 1. En el **[!UICONTROL Modelos]** , edite la pestaña **[!UICONTROL Recurso de actualización DAM]** modelo.
 1. Cambie el [!UICONTROL Argumentos] de la **[!UICONTROL Representación habilitada para web]** paso a: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.

@@ -9,9 +9,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2274'
 ht-degree: 5%
 
 ---
@@ -38,8 +38,10 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 |
+| Número de recursos duplicados por conjunto | No hay duplicados | 20 ‡ |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
+
+‡ práctica recomendada es no tener recursos duplicados en un conjunto. El límite es de 20 duplicados para un solo recurso. Si agrega otro duplicado para ese recurso (dentro de ese conjunto), la solicitud genera un error o ignora el duplicado.
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
@@ -141,8 +143,10 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 |
+| Número de recursos duplicados por conjunto | No hay duplicados | 20 ‡ |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
+
+‡ práctica recomendada es no tener recursos duplicados en un conjunto. El límite es de 20 duplicados para un solo recurso. Si agrega otro duplicado para ese recurso (dentro de ese conjunto), la solicitud genera un error o ignora el duplicado.
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
@@ -190,7 +194,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
    >
    >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** encima del campo Título en la página Editor de conjuntos de imágenes, seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que quiere que Experience Manager genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** > **[!UICONTROL Miniatura automática]**.
 
-1. Seleccionar **[!UICONTROL Guardar]**. El conjunto de imágenes recién creado aparecerá en la carpeta en la que lo creó.
+1. Seleccione **[!UICONTROL Guardar]**. El conjunto de imágenes recién creado aparecerá en la carpeta en la que lo creó.
 
 ## Ver un conjunto de imágenes {#viewing-image-sets}
 

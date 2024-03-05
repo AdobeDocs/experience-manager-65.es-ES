@@ -2,10 +2,10 @@
 title: Problema de instalación del Service Pack de AEM Forms JEE 6.5.15.0 en el entorno JBoss® Linux®
 description: El Service Pack de AEM Forms JEE 6.5.15.0 no está instalado correctamente en el entorno JBoss® Linux®, los cambios de parche no se aplican al servidor de aplicaciones. Añada el archivo RUP_BOM.xml al directorio XML.
 exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
-source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 5%
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 5%
 
 ## Problema {#issue}
 
-El Service Pack de AEM Forms JEE 6.5.15.0 no está instalado correctamente en el entorno JBoss® Linux®. Entrada `PatchInstallerProcessing[1-9*].log` archivar la entrada de registro, `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component isn't in the installation. Skipping Processing`, se ha registrado. Esta entrada indica que la instalación del Service Pack de AEM Forms JEE 6.5.15.0 no se ha realizado correctamente.
+El Service Pack de AEM Forms JEE 6.5.15.0 no está instalado correctamente en el entorno JBoss® Linux®. Entrada `PatchInstallerProcessing[1-9*].log` archivar la entrada de registro, `[AEM_Forms_JEE_DIR]/patch/AEMForms-6.5.0-0057/xml/RUP_BOM.xml not found! Assuming this component is not in the installation. Skipping Processing`, se ha registrado. Esta entrada indica que la instalación del Service Pack de AEM Forms JEE 6.5.15.0 no se ha realizado correctamente.
 
-## Se aplica a {#applies-to}
+## Se aplica a lo siguiente: {#applies-to}
 
 Esta solución se aplica a:
 * Entorno JBoss® Linux®

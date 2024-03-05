@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3595'
 ht-degree: 8%
@@ -239,7 +239,7 @@ Independientemente del tipo de recurso elegido, muestre la información de copyr
 
    >[!NOTE]
    >
-   >Con las reglas se pueden utilizar listas desplegables con valores predefinidos manualmente. Los menús desplegables con la ruta JSON configurada no se pueden utilizar con reglas que utilizan valores predefinidos para aplicar condiciones. Si los valores se cargan desde JSON en tiempo de ejecución, no es posible aplicar una regla predefinida.
+   >Con las reglas se pueden utilizar listas desplegables con valores predefinidos manualmente. Los menús desplegables con la ruta JSON configurada no se pueden utilizar con reglas que utilicen valores predefinidos para aplicar condiciones. Si los valores se cargan desde JSON en tiempo de ejecución, no es posible aplicar una regla predefinida.
 
 1. En **[!UICONTROL Visibilidad]**, seleccione la opción **[!UICONTROL Visible, según la nueva regla]**.
 
