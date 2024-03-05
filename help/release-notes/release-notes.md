@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3486'
 ht-degree: 2%
 
 ---
@@ -470,11 +470,11 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
    1. Descargue la revisión para su sistema operativo:
 
-   * [Revisión para Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-   * [Revisión para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [Revisión para Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
+      * [Revisión para Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
+      * [Revisión para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [Revisión para Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. Cargue e instale el paquete (.zip) mediante el Administrador de paquetes.
+   1. Cargue e instale el paquete (.zip) mediante el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)
 
