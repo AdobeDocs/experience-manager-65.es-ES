@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 70f52515fc877ad5f20e14c2a26a934d3dcdfe01
+source-git-commit: f00d2c88ba6727f8f8597fefeb467b612b23dea3
 workflow-type: tm+mt
-source-wordcount: '3486'
+source-wordcount: '3524'
 ht-degree: 2%
 
 ---
@@ -474,6 +474,8 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
       * [Revisión para Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. Cargue e instale el paquete (.zip) mediante el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
+
+   1. AEM Reinicie el servidor de y verifique el estado de activación de todos los paquetes una vez finalizado el proceso de reinicio. Puede monitorizar el estado de los paquetes accediendo a: `https://server:host/system/console/bundles`. Asegúrese de que todos los paquetes estén activos antes de continuar con más tareas.
 
 * El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)
 
