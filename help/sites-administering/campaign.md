@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: dac156251ae48e9d83e84ba6a4685689def9e396
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 15%
+source-wordcount: '386'
+ht-degree: 8%
 
 ---
 
@@ -33,10 +33,8 @@ Existen varias versiones de Adobe Campaign Classic (ACC). AEM AEM La compatibili
 | Versión ACC | AEM Integración con 6.5 <br>En las instalaciones | AEM Integración con 6.5<br>AMS |
 |---|---|---|
 | [Versión 7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=es) | Compatible | Compatible  |
-| [Versión 8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=es) | Compatible | Compatible  |
-| Web IU* | Compatible | Compatible |
-
-*La IU web para Adobe Campaign Classic está prevista para finales de 2023.
+| [Consola de cliente v8](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=es) | Compatible | Compatible  |
+| [Interfaz de usuario web v8](https://experienceleague.adobe.com/docs/campaign-web/v8/campaign-web-home.html) | Compatible | Compatible  |
 
 AEM En la siguiente documentación se describe cómo integrar los segmentos de con la interfaz de usuario de Adobe Campaign Classic.
 
@@ -46,6 +44,13 @@ La siguiente documentación adicional describe cómo utilizar la integración.
 
 * [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) AEM : Obtenga información acerca de los componentes de correo electrónico estándar que puede utilizar para crear contenido de Campaign en la creación de campañas en la aplicación de correo electrónico de.
 * [Solución de problemas de integración de Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md) AEM - Aprenda a solucionar los problemas más comunes con la integración entre el y el ACC de la.
+
+
+AEM En la siguiente documentación se describe cómo integrar el as a Cloud Service con la interfaz de usuario web de Adobe Campaign v8.
+
+* [Administración de plantillas con Adobe Experience Manager as a Cloud Service en la interfaz de usuario web de Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-content.html) AEM : Conozca los detalles paso a paso sobre la configuración y el uso de la integración con plantillas de.
+* [Administre recursos con Adobe Experience Manager as a Cloud Service en la interfaz de usuario web de Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign-web/v8/integrations/aem-assets.html) : Conozca los detalles paso a paso sobre la configuración y el uso de la integración con AEM Assets.
+
 
 ## Integración con Adobe Campaign Standard {#acs}
 
