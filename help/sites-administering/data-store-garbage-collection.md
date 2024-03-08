@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: bd3c3c2f833e4d7e763e7726c5c75597523605d7
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ La ventana de mantenimiento semanal integrada, disponible a través de la [Table
 >
 >El motivo por el que no se ejecuta simultáneamente es para que también se realice una copia de seguridad de los archivos del almacén de datos antiguos (y que no se utilicen), de modo que si es necesario revertir a una revisión antigua, los binarios sigan ahí en la copia de seguridad.
 
-Si no desea ejecutar la recolección de elementos no utilizados del almacén de datos con la ventana de mantenimiento semanal del tablero de operaciones, también se puede automatizar mediante los clientes HTTP wget o curl. A continuación se muestra un ejemplo de cómo automatizar la copia de seguridad mediante curl:
+Si no desea ejecutar la recolección de elementos no utilizados del almacén de datos con la ventana de mantenimiento semanal del tablero de operaciones, también se puede automatizar mediante los clientes HTTP wget o curl. A continuación se muestra un ejemplo de cómo automatizar la recolección de elementos no utilizados mediante curl:
 
 >[!CAUTION]
 >
