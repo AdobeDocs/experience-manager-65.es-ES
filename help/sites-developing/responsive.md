@@ -7,9 +7,9 @@ topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '5375'
+source-wordcount: '5293'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ Por ejemplo, para crear un ` [sling:OsgiConfig](/help/sites-deploying/configurin
 
   El - `*alias*` El sufijo es necesario porque el servicio MobileEmulatorProvider es un servicio de fábrica. Utilice cualquier alias que sea único para esta fábrica.
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`: `sling:OsgiConfig`
 
 Agregue la siguiente propiedad de nodo:
 
@@ -465,7 +465,7 @@ El valor completo indica que no hay escala.
 Se admiten los siguientes valores para una calidad JPEG:
 
 * BAJA
-* MEDIO
+* MEDIANA
 * ALTA
 
 Los valores numéricos son 0,4; 0,82 y 1,0, respectivamente.
@@ -571,19 +571,19 @@ El servlet acepta un número finito de dimensiones de imagen y valores de calida
 
 Los siguientes valores son compatibles de forma predeterminada (widthxheight):
 
-* 256x192
-* 370x150
+* 256 x 192
+* 370 x 150
 * 480 x 200
-* 127x127
-* 770x360
-* 620x290
-* 480x225
-* 320x150
-* 375x175
+* 127 x 127
+* 770 x 360
+* 620 x 290
+* 480 x 225
+* 320 x 150
+* 375 x 175
 * 303x142
 * 1170x400
-* 940x340
-* 770x300
+* 940 x 340
+* 770 x 300
 * 480x190
 
 Se admiten los siguientes valores para la calidad de imagen:
@@ -607,7 +607,7 @@ Al crear una página, utilice **Sidekick** para especificar la imagen y añadir 
 
 1. Entrada **Sidekick**, haga clic en **Página** y haga clic en **Propiedades de página**.
 1. Haga clic en **Imagen** y especifique la imagen.
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
 #### Detalles de implementación {#implementation-details-1}
 

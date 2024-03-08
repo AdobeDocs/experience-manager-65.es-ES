@@ -7,10 +7,10 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
 source-wordcount: '6084'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -178,7 +178,7 @@ Lista de metapropiedades de una temática (que se encuentran en la página de pr
      <li>Ruta del repositorio definida por el usuario dentro de “etc” donde se almacenan los clientlibs correspondientes a esta temática.</li>
      <li>Valor predeterminado: “/etc/clientlibs/fd/themes” + ruta relativa del recurso de la temática.</li>
      <li>Si la ubicación no existe, la jerarquía de carpetas se generará automáticamente.</li>
-     <li>Cuando se cambia este valor, la estructura del nodo clientlib se mueve a la nueva ubicación introducida.<br /> <em><strong>Nota:</strong> Si cambia la ubicación clientlib predeterminada, en el repositorio CRXDE asigne <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>a <code>forms-users</code> y <code>crx:replicate</code>, <code>jcr:read </code>a <code>fd-service</code> en la nueva ubicación. Adjunte también otra ACL al agregar <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
+     <li>Cuando se cambia este valor, la estructura del nodo clientlib se mueve a la nueva ubicación introducida.<br /> <em><strong>Nota:</strong> Si cambia la ubicación clientlib predeterminada, en el repositorio CRXDE asigne a <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> hasta <code>forms-users</code> y <code>crx:replicate</code>, <code>jcr:read</code> hasta <code>fd-service</code> en la nueva ubicación. Adjunte también otra ACL al agregar <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -365,7 +365,7 @@ Cuando seleccione un componente en el lienzo, verá la barra de herramientas de 
 * **Widget de cuadro numérico**: permite seleccionar el componente para personalizar su aspecto en la barra lateral.
 * **Widget de campos**: permite seleccionar el componente genérico para el estilo. En este ejemplo, todos los componentes de entrada de texto (cuadro de texto/cuadro numérico/paso numérico/entrada de fecha) están seleccionados para el estilo.
 
-* ![field-level](assets/field-level.png): permite cambiar al componente genérico para aplicar un estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado. Si selecciona el componente de campo y este icono, el panel estará seleccionado. Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
+* ![field-level](assets/field-level.png): permite cambiar al componente genérico para aplicar un estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado.  Si selecciona el componente de campo y seleccione este icono, el panel estará seleccionado.  Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
 
 >[!NOTE]
 >
@@ -592,7 +592,7 @@ Para copiar una temática, realice los siguientes pasos:
 
 1. En la instancia de creación, vaya a **Adobe Experience Manager > Forms > Temáticas**.
 1. Abra la carpeta Biblioteca de temáticas.
-1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y seleccione **Copiar**.
+1. En la carpeta Biblioteca de temáticas, pase el puntero sobre la temática correspondiente y seleccione **Copiar**.
 1. Pegue la temática copiada fuera de la carpeta Biblioteca de temáticas.
 1. Personalice la temática copiada.
 

@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 1%
+source-wordcount: '1160'
+ht-degree: 0%
 
 ---
 
@@ -85,11 +85,11 @@ Para utilizar el Editor por lotes para editar varios elementos a la vez:
    <td>Active esta casilla de verificación para poder leer las propiedades dentro del <code>jcr:content</code> subnodo de los resultados de búsqueda si existe. Se utiliza solo para páginas. Los nombres de propiedad llevan el prefijo <code>"jcr:content/"</code></td>
   </tr>
   <tr>
-   <td>Propiedades / Columnas</td>
+   <td>Propiedades/Columnas</td>
    <td>Seleccione las casillas de verificación de las propiedades que desea que devuelva el Editor por lotes. Las propiedades que seleccione son los encabezados de columna del panel de resultados. De forma predeterminada, la ruta del nodo se muestra en los resultados.</td>
   </tr>
   <tr>
-   <td>Columnas / propiedades personalizadas</td>
+   <td>Columnas y propiedades personalizadas</td>
    <td>Introduzca cualquier otra propiedad que no aparezca en la lista de <strong>Propiedades/Columnas</strong> field. Estas propiedades personalizadas aparecen en el panel de resultados. Puede agregar varias propiedades utilizando una coma para separar las propiedades. <i>Nota:</i> AEM Si agrega una propiedad personalizada que aún no existe, WCM muestra una celda vacía en la pantalla de WCM, en la que se muestra el nombre de la propiedad que aún no existe. Al modificar la celda vacía y guardarla, la propiedad se agrega al nodo. La propiedad recién creada debe respetar las restricciones de tipo de nodo y los espacios de nombres de propiedad.</td>
   </tr>
  </tbody>
@@ -119,7 +119,8 @@ En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqued
 * **ruta:** solo buscar nodos debajo de esta ruta. Si especifica más de un término con un prefijo de ruta, solo se tendrá en cuenta el último.
 * **tipo:** solo devuelven nodos del tipo de nodo dado. Esto incluye los tipos principal y de mezcla. Puede especificar varios tipos de nodos separados por comas. GQL devuelve nodos que son de cualquiera de los tipos especificados.
 * **pedido:** ordene el resultado según las propiedades dadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga un signo menos al nombre de la propiedad. Por ejemplo, order:-name. El uso de un signo más devuelve el resultado en orden ascendente, que también es el valor predeterminado.
-* **límite:** limita el número de resultados mediante un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar un intervalo abierto:limit:10.. o límite:..20 Si se omiten los puntos y solo se especifica un valor, GQL devuelve como máximo este número de resultados. Por ejemplo, limit:10 (devuelve los diez primeros resultados).
+* **límite:** limita el número de resultados mediante un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar una apertura `interval:limit:10..` o `limit:..20`
+Si se omiten los puntos y solo se especifica un valor, GQL devuelve como máximo este número de resultados. Por ejemplo, `limit:10` (devuelve los diez primeros resultados).
 
 ### Exportación de contenido {#exporting-content}
 

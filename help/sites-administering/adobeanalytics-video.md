@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 2%
+source-wordcount: '1754'
+ht-degree: 0%
 
 ---
 
@@ -117,7 +117,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Contiene información sobre el segmento que se ha visto, por ejemplo, 2:O:4-8 </td>
+   <td>Contiene información sobre el segmento que se ha visto, por ejemplo, <code>2:O:4-8</code> </td>
   </tr>
  </tbody>
 </table>
@@ -199,7 +199,7 @@ Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>eVar3</td>
+   <td>EVAR 3</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -207,7 +207,7 @@ Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>eVar2</td>
+   <td>EVAR 2</td>
   </tr>
  </tbody>
 </table>
@@ -317,7 +317,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
    **Llamadas de ejemplo** Las conexiones a Adobe Analytics mediante el ejemplo proporcionado deberían tener este aspecto cuando se visualizan con DigitalPulse Debugger:
 
-   ![lmilestones1](assets/lmilestones1.png)
+   ![hitos1](assets/lmilestones1.png)
 
    *El **pev3**enviada en la llamada de contiene la siguiente información:*
 

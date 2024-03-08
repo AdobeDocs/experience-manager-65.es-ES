@@ -7,10 +7,10 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 80%
+source-wordcount: '1242'
+ht-degree: 78%
 
 ---
 
@@ -143,8 +143,8 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 * **diffTime**: diferencia entre la hora actual y la última acción de guardado del borrador. Alternativamente, la diferencia entre la hora actual y la última acción enviada para la presentación.
 * **iconClass**: la clase CSS utilizada para mostrar la primera letra del borrador/envío. El portal de formularios incluye las siguientes clases, que proporcionan distintos fondos de colores.
 * **propietario**: usuario que ha creado el borrador/envío.
-* **Hoy**: fecha de creación del borrador o de la presentación en formato DD:MM:AAAA.
-* **TimeNow**: momento de creación del borrador o del envío en formato de 24 horas HH:MM:SS
+* **Hoy**: Fecha de creación del borrador o del envío en `DD:MM:YYYY` formato.
+* **TimeNow**: Momento de creación del borrador o del envío en `HH:MM:SS` Formato de 24 horas
 
 *Nota:*
 

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 89%
+source-wordcount: '1542'
+ht-degree: 87%
 
 ---
 
@@ -94,7 +94,7 @@ Una acción de envío es un sling:Folder, que incluye lo siguiente:
 
 * **addfields.jsp**: Este script aporta los campos de acción que se añaden al archivo HTML durante la representación. Utilice este script para agregar los parámetros de entrada ocultos necesarios durante el envío en el script post.POST.jsp.
 * **dialog.xml**: Este script es similar al cuadro de diálogo Componente CQ. Aporta información de configuración que el autor personaliza. Los campos se muestran en la pestaña Acciones de envío, del cuadro de diálogo Editar formulario adaptable, al seleccionar la acción de envío.
-* **post.POST.jsp**: El servlet de envío utiliza este script con los datos que envía y los datos adicionales de las secciones anteriores. Cualquier mención de la ejecución de una acción en esta página implica la ejecución del script post.POST.jsp. Para registrar la acción de envío con los formularios adaptables para que se muestre en el cuadro de diálogo Editar formulario adaptable, agregue estas propiedades al sling:Folder:
+* **post.POST.jsp**: El servlet de envío utiliza este script con los datos que envía y los datos adicionales de las secciones anteriores. Cualquier mención de la ejecución de una acción en esta página implica la ejecución del script post.POST.jsp. Para registrar la acción de envío con los formularios adaptables para que se muestre en el cuadro de diálogo Editar formulario adaptable, agregue estas propiedades a `sling:Folder`:
 
    * **guideComponentType** de tipo cadena y valor **fd/af/components/guidesubmittype**
    * **guideDataModel** de tipo cadena que especifica el tipo de formulario adaptable para el que se aplica la acción de envío. **xfa** es compatible con formularios adaptables basados en XFA, mientras **xsd** es compatible con formularios adaptables basados en XSD. **basic** es compatible con formularios adaptables que no utilizan XDP o XSD. Para mostrar la acción en varios tipos de formularios adaptables, agregue las cadenas correspondientes. Separe cada cadena con una coma. Por ejemplo, para que una acción sea visible en formularios adaptables basados en XFA y XSD, especifique los valores **xfa** y **xsd** respectivamente.

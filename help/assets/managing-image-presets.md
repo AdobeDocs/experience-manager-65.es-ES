@@ -11,9 +11,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3794'
+source-wordcount: '3792'
 ht-degree: 7%
 
 ---
@@ -195,7 +195,7 @@ Puede configurar el tamaño de las miniaturas configurando estos ajustes en la v
 
 Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
-El tamaño de la miniatura se define en el siguiente formato: **[!UICONTROL anchura:height:centro]**, por ejemplo, `80:80:false`. La anchura y la altura determinan el tamaño en píxeles de la miniatura. El valor central es false o true y, si se establece en true, indica que la imagen en miniatura tiene exactamente el tamaño indicado en la configuración. Si la imagen redimensionada es más pequeña, se centra dentro de la miniatura.
+El tamaño de la miniatura se define en el siguiente formato: **`width:height:center`**, por ejemplo, `80:80:false`. La anchura y la altura determinan el tamaño en píxeles de la miniatura. El valor central es false o true y, si se establece en true, indica que la imagen en miniatura tiene exactamente el tamaño indicado en la configuración. Si la imagen redimensionada es más pequeña, se centra dentro de la miniatura.
 
 >[!NOTE]
 >

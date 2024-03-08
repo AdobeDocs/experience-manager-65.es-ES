@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 2%
+source-wordcount: '3034'
+ht-degree: 1%
 
 ---
 
@@ -222,7 +222,7 @@ Consulte el siguiente ejemplo de consulta:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Para definir un índice de propiedades de Lucene para la consulta anterior, puede agregar la siguiente definición creando un nodo en **roble:index:**
+Para definir un índice de propiedades de Lucene para la consulta anterior, puede agregar la siguiente definición creando un nodo en **`oak:index`:**
 
 * **Nombre:** `LucenePropertyIndex`
 * **Tipo:** `oak:QueryIndexDefinition`
@@ -320,7 +320,7 @@ Consideremos esta estructura de nodos como un ejemplo:
 
       * **Nombre:** `tokenizer`
 
-         * **Nombre de la propiedad:** `name`
+         * **Nombre de propiedad:** `name`
 
             * **Tipo:** `String`
             * **Valor:** `Standard`
@@ -331,7 +331,7 @@ Consideremos esta estructura de nodos como un ejemplo:
          * **Nombre:** `LowerCase`
          * **Nombre:** `Stop`
 
-            * **Nombre de la propiedad:** `words`
+            * **Nombre de propiedad:** `words`
 
                * **Tipo:** `String`
                * **Valor:** `stop1.txt, stop2.txt`

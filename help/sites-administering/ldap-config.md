@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ Estas son las opciones de configuración disponibles:
 
 >[!NOTE]
 >
-AEM Si planea tener más de una configuración LDAP con la instancia de la instancia de, se deben crear proveedores de identidad y controladores de sincronización independientes para cada configuración.
+>AEM Si planea tener más de una configuración LDAP con la instancia de la instancia de, se deben crear proveedores de identidad y controladores de sincronización independientes para cada configuración.
 
 ## Configuración de LDAP sobre SSL {#configure-ldap-over-ssl}
 
@@ -277,12 +277,12 @@ Para habilitar el registro de depuración, debe hacer lo siguiente:
 
 * Nivel de registro: depuración
 * Archivo de registro logs/ldap.log
-* Patrón de mensajes: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nivel de registro: depuración
 * Archivo de registro: logs/external.log
-* Patrón de mensajes: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Una palabra sobre afiliación grupal {#a-word-on-group-affiliation}

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ El usuario autorizado se utiliza en el paso 3 para configurar la distribución d
    * **Principal**: *buscar usuario creado para sincronización de usuarios*
    * **Tipo**: `Allow`
    * **Privilegios**: `jcr:all`
-   * **Restricciones** representante:glob: `*/activities/*`
+   * **Restricciones** `rep:glob`: `*/activities/*`
    * select **OK**
 
 * select **Guardar todo**
