@@ -7,9 +7,9 @@ role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
-source-git-commit: c99d6f3c67c97ea382ace2e102b2cacbbd2e5db5
+source-git-commit: a19f07bc42d2918338b07418bed56ac2bb73ba2d
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1872'
 ht-degree: 26%
 
 ---
@@ -275,17 +275,17 @@ Además de la funcionalidad anterior, tenga en cuenta lo siguiente:
 
 | Formato | Cargar (formato de entrada) | Crear ajuste preestablecido de imagen (formato de salida) | Previsualizar representación dinámica | Ofrecer representación dinámica | Descargar representación dinámica | Establecer tipos compatibles con este formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
-| AVIF | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [Imagen](/help/assets/image-sets.md), [Medios mixtos](/help/assets/mixed-media-sets.md), y [Giro](/help/assets/spin-sets.md) |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
-| HEIC | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| HEIC | − | − | − | ✓ | − | − |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/image-sets.md), [Medios mixtos](/help/assets/mixed-media-sets.md), y [Giro](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/image-sets.md), [Medios mixtos](/help/assets/mixed-media-sets.md), y [Giro](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/image-sets.md), [Medios mixtos](/help/assets/mixed-media-sets.md), y [Giro](/help/assets/spin-sets.md) |
-| WEBP | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ La imagen combinada se extrae del archivo del PSD. Es una imagen generada por Adobe Photoshop y que se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
