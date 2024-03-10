@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '322'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Inicio rápido (SOAP) de la API de Java está disponible para el servicio Genera
 
 [Inicio rápido (modo SOAP): Conversión de un documento de PDF a un archivo RTF mediante la API de Java (modo SOAP)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >

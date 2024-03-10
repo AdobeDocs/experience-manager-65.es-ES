@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '7173'
-ht-degree: 20%
+source-wordcount: '7192'
+ht-degree: 19%
 
 ---
 
@@ -149,7 +149,7 @@ Esta configuración es útil para asegurarse de que un archivo o carpeta se copi
 
 Esta configuración es útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que recogerá la carpeta vigilada. Esto evita que la carpeta inspeccionada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada.
 
-Puede usar patrones de archivo para excluir:
+Puede utilizar patrones de archivo para excluir:
 
 * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
 * Archivos con nombres específicos; por ejemplo, data.&amp;ast; excluiría archivos y carpetas llamados *data1*, *data2*, etc.
@@ -239,8 +239,8 @@ La salida de la carpeta inspeccionada puede ser un solo documento, una lista de 
 
 Los administradores pueden especificar el tipo de archivo que puede invocar un servicio. Se pueden establecer varios patrones de archivo para cada carpeta vigilada. Un patrón de archivo puede ser una de las siguientes propiedades de archivo:
 
-* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
-* Archivos con nombres específicos; por ejemplo, data.&amp;ast;
+* Archivos con extensiones de nombre de archivo específicas. Por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Archivos con nombres específicos. Por ejemplo, datos.&amp;ast;
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
@@ -267,7 +267,7 @@ Las asignaciones de parámetros de salida también pueden especificar patrones a
 * %F = Nombre de archivo de origen
 * %E = Extensión de nombre de archivo de origen
 
-Si el patrón de asignación de parámetros de salida termina con &quot;File.separator&quot; (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con “File.separator”, el contenido (archivo o carpeta de resultados) se crea con ese nombre. Para obtener más información sobre las asignaciones de parámetros de salida, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Si el patrón de asignación de parámetros de salida termina con &quot;File.separator&quot; (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con &quot;File.separator&quot;, el contenido (archivo o carpeta de resultados) se crea con ese nombre. Para obtener más información sobre las asignaciones de parámetros de salida, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## Acerca de la restricción {#about-throttling}
 

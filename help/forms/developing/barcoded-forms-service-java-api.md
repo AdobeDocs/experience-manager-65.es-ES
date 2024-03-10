@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio de 
 
 [Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
@@ -217,4 +217,4 @@ El siguiente código Java™ descodifica los datos de formulario que están en u
 
 >[!NOTE]
 >
-Cuando se utilizan ambos `org.w3c.dom.Document` objeto y un `com.adobe.idp.Document` en la misma lógica de aplicación, se recomienda calificar completamente ambos objetos.
+>Cuando se utilizan ambos `org.w3c.dom.Document` objeto y un `com.adobe.idp.Document` en la misma lógica de aplicación, se recomienda calificar completamente ambos objetos.

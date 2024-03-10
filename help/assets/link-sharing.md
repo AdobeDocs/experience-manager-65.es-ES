@@ -6,9 +6,9 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1026'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 
 1. Para permitir que los usuarios descarguen el recurso original, seleccione **[!UICONTROL Permitir la descarga del archivo original]**. Para permitir que los usuarios descarguen solo las representaciones de los recursos compartidos, seleccione **[!UICONTROL Permitir la descarga de representaciones de archivos]**.
 
-1. Clic **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios por correo electrónico.
+1. Clic **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios mediante un correo electrónico.
 
 1. Para ver el recurso compartido, haga clic en el vínculo del correo electrónico que se envía al usuario. Para generar una vista previa del recurso, haga clic en el recurso compartido. Para cerrar la vista previa, haga clic en **[!UICONTROL Atrás]**. Si ha compartido una carpeta, haga clic en **[!UICONTROL Carpeta principal]** para volver a la carpeta principal.
 

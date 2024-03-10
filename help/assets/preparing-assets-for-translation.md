@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Projects
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Realice los siguientes pasos para preparar los recursos para la traducción:
 
 1. Cree la raíz de idioma del idioma principal. Por ejemplo, la raíz de idioma de la copia en inglés en la jerarquía de carpetas de ejemplo es `/content/dam/en`. Asegúrese de que la raíz del idioma esté configurada correctamente según la información de [Crear una raíz de idioma](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. Agregue recursos al idioma principal.
+1. Agregue recursos a su idioma principal.
 1. Cree la raíz de idioma de cada idioma de destino para el que necesite una copia de idioma.
 
 ## Crear una raíz de idioma {#creating-a-language-root}

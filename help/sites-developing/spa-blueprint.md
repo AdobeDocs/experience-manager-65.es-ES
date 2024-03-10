@@ -6,7 +6,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 0%
@@ -232,7 +232,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Los componentes del proyecto deben generar como mínimo los siguientes atributos de datos para permitir que el editor interactúe con ellos.
 
-* `data-cq-data-path`: Ruta relativa del componente proporcionada por el `PageModel` (por ejemplo,, `"root/responsivegrid/image"`). Este atributo no debe añadirse a las páginas.
+* `data-cq-data-path`: Ruta relativa del componente proporcionada por el `PageModel` (por ejemplo, `"root/responsivegrid/image"`). Este atributo no debe añadirse a las páginas.
 
 En resumen, para que el editor de páginas lo interprete como editable, un componente de proyecto debe respetar el siguiente contrato:
 

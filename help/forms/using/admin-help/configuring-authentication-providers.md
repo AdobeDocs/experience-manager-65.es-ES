@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Si está configurando la autenticación para un dominio empresarial o híbrido y
 
 ## Aprovisionamiento puntual de usuarios de {#just-in-time-provisioning-of-users}
 
-El aprovisionamiento Just-In-Time crea un usuario en la base de datos de administración de usuarios automáticamente después de que el usuario se autentique correctamente a través de un proveedor de autenticación. Los roles y grupos relevantes también se asignan dinámicamente al nuevo usuario. Puede habilitar el aprovisionamiento justo a tiempo para dominios empresariales e híbridos.
+El aprovisionamiento Just-In-Time crea un usuario en la base de datos de Administración de usuarios automáticamente después de que el usuario se autentique correctamente mediante un proveedor de autenticación. Los roles y grupos relevantes también se asignan dinámicamente al nuevo usuario. Puede habilitar el aprovisionamiento justo a tiempo para dominios empresariales e híbridos.
 
 AEM Este procedimiento describe el modo en que funciona la autenticación tradicional en los formularios de:
 

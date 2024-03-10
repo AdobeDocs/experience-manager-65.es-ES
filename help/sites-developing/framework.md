@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ AEM En el caso de los usuarios, la ruta base es `/content/cq:tags` y el nodo ra�
 
 ### Área de nombres de etiqueta {#tag-namespace}
 
-Las áreas de nombres permiten agrupar cosas. El caso de uso más habitual es un área de nombres por sitio (por ejemplo, público, interno y portal) o por aplicación más grande (por ejemplo, WCM, Assets, Communities). Sin embargo, las áreas de nombres se pueden utilizar para otras necesidades. Los espacios de nombres se utilizan en la interfaz de usuario de para mostrar únicamente el subconjunto de etiquetas (es decir, las etiquetas de un determinado espacio de nombres) que se aplica al contenido actual.
+Las áreas de nombres permiten agrupar cosas. El caso de uso más habitual es un área de nombres por sitio (por ejemplo, público, interno y portal) o por aplicación más grande (por ejemplo, WCM, Assets, Communities). Sin embargo, las áreas de nombres se pueden utilizar para otras necesidades. Los espacios de nombres se utilizan en la interfaz de usuario para mostrar únicamente el subconjunto de etiquetas (es decir, las etiquetas de un determinado espacio de nombres) que se aplica al contenido actual.
 
 El área de nombres de la etiqueta es el primer nivel del subárbol de taxonomía, que es el nodo situado inmediatamente debajo de [nodo raíz de taxonomía](#taxonomy-root-node). Un área de nombres es un nodo de tipo `cq:Tag` cuyo elemento principal no es un `cq:Tag` tipo de nodo.
 

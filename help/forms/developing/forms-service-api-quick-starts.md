@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Los siguientes tutoriales rápidos están disponibles para el servicio Forms:
 
 [Inicio rápido (modo SOAP): Pasar documentos al servicio de Forms mediante Java](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-La lógica de la aplicación que utiliza la API del servicio Forms se implementa como servlets Java™. Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+La lógica de la aplicación que utiliza la API del servicio Forms se implementa como servlets Java™. Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
@@ -1378,7 +1378,7 @@ En el ejemplo de código siguiente se controla un formulario que se envía como 
 
 >[!NOTE]
 >
-Cuando se utiliza un `com.adobe.idp.Document` objeto y un `org.w3c.dom.Document` en la misma aplicación, califique completamente `org.w3c.dom.Document`.
+>Cuando se utiliza un `com.adobe.idp.Document` objeto y un `org.w3c.dom.Document` en la misma aplicación, califique completamente `org.w3c.dom.Document`.
 
 ## Inicio rápido (modo SOAP): Gestión de PDF forms enviados como PDF mediante la API de Java™ {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 

@@ -4,7 +4,7 @@ description: La prueba de Día difícil simula la carga diaria de unos 1000 auto
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 1%
@@ -130,7 +130,7 @@ Puede encontrar los parámetros relevantes en la siguiente lista:
 | `--port=<Val>` | El puerto del host. | 4502 |  |
 | `--user=<Val>` | El nombre de usuario de la instancia. | administrador |  |
 | `--password=<Val>` | Contraseña del usuario determinado. | administrador |  |
-| `--duration=<Val>` | La duración de las pruebas. Se puede expresar en (**s**)segundos, (**m**)minutos, (**h**)ours y (**d**)días. | 1d |  |
+| `--duration=<Val>` | La duración de las pruebas. Se puede expresar en **s** segundos, **m** minutos, **h** el nuestro, y **d** días. | 1d |  |
 | `--timeout=<Val>` | El tiempo que debe transcurrir para que una prueba se interrumpa y se marque como errónea. Se expresa en segundos. | 180 |  |
 | `--suite=<Val>` | El valor puede ser uno o una lista (separados por comas) de grupos de pruebas predefinidos. | día difícil |  |
 | `--configfile=<Val>` | El archivo de configuración yaml de destino. |  |  |

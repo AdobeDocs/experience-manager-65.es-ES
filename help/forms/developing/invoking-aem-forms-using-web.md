@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9887'
+source-wordcount: '9814'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ El protocolo de transmisión para el devuelto `BLOB` depende de varios factores,
 
    * El protocolo predeterminado del parámetro de extremo SOAP del servicio para los objetos del blob de salida está establecido en Inteligente.
 
-     Para cada servicio con un extremo SOAP, la consola de administración le permite especificar el protocolo de transmisión para cualquier blob devuelto. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
+     Para cada servicio con un extremo SOAP, la consola de administración le permite especificar el protocolo de transmisión para cualquier blob devuelto. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * El servicio AEM Forms toma uno o más documentos como entrada.
 
@@ -1098,7 +1098,7 @@ Puede invocar un servicio de Forms mediante DIME. Considere la `MyApplication/En
 
    * Valor de cadena que especifica un valor GUID. Puede obtener un valor GUID invocando el método `System.Guid.NewGuid.ToString` método.
    * Un valor de cadena que especifica el tipo de contenido. Dado que este proceso requiere un documento de PDF, especifique `application/pdf`.
-   * A `TypeFormat` valor de enumeración. Especifique `TypeFormat.MediaType`.
+   * A `TypeFormat` valor de enumeración. Especificar `TypeFormat.MediaType`.
    * Valor de cadena que especifica la ubicación del documento de PDF que se va a pasar al proceso de AEM Forms.
 
 1. Crear un `BLOB` mediante su constructor.
@@ -1518,7 +1518,7 @@ La siguiente lista especifica los tipos de datos que no se pueden compartir entr
 * `Roles`
 * `BLOB`
 
-Para evitar este problema, se recomienda que cualifique completamente los tipos de datos. Por ejemplo, considere una aplicación .NET que haga referencia al servicio Forms y al servicio Signature mediante una referencia de servicio. Ambas referencias de servicio contendrán un `BLOB` clase. Para utilizar un `BLOB` Por ejemplo, califique completamente la variable `BLOB` objeto cuando lo declara. Este método se muestra en el ejemplo de código siguiente. Para obtener información sobre este ejemplo de código, consulte [Firma digital de Forms interactivo](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
+Para evitar este problema, se recomienda clasificar completamente los tipos de datos. Por ejemplo, considere una aplicación .NET que haga referencia al servicio Forms y al servicio Signature mediante una referencia de servicio. Ambas referencias de servicio contendrán un `BLOB` clase. Para utilizar un `BLOB` Por ejemplo, califique completamente el `BLOB` objeto cuando lo declara. Este método se muestra en el ejemplo de código siguiente. Para obtener información sobre este ejemplo de código, consulte [Firma digital de Forms interactivo](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms).
 
 El siguiente ejemplo de código de C# firma un formulario interactivo que procesa el servicio de Forms. La aplicación cliente tiene dos referencias de servicio. El `BLOB` La instancia asociada al servicio Forms pertenece a la variable `SignInteractiveForm.ServiceReference2` namespace. Del mismo modo, la variable `BLOB` La instancia de asociada al servicio de firma pertenece al `SignInteractiveForm.ServiceReference1` namespace. El formulario interactivo firmado se guardará como archivo de PDF denominado *LoanXFASigned.pdf*.
 
@@ -1553,7 +1553,7 @@ El siguiente ejemplo de código de C# firma un formulario interactivo que proces
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

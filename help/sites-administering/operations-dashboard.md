@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '5868'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
    <td><p>Longitud de la cola de observación se repite en todos los oyentes de eventos y observadores de fondo y compara su <code>queueSize </code>a su <code>maxQueueSize</code> y:</p>
     <ul>
      <li>devuelve el estado crítico si la variable <code>queueSize</code> supera el <code>maxQueueSize</code> valor (es decir, cuando se eliminarían los eventos)</li>
-     <li>devuelve Avisar si la variable <code>queueSize</code> El valor supera el <code>maxQueueSize * WARN_THRESHOLD</code> (el valor predeterminado es 0,75) </li>
+     <li>devuelve una advertencia si la variable <code>queueSize</code> El valor supera el <code>maxQueueSize * WARN_THRESHOLD</code> (el valor predeterminado es 0,75) </li>
     </ul> <p>AEM La longitud máxima de cada cola proviene de configuraciones independientes (Oak y) y no se puede configurar a partir de esta comprobación de estado. El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthCheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -223,11 +223,11 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
    <td>Índices asíncronos</td>
    <td><p>Comprobación de los índices asíncronos:</p>
     <ul>
-     <li>devuelve el estado Crítico si falla al menos una ruta de indexación</li>
+     <li>devuelve un estado crítico si falla al menos una ruta de indexación</li>
      <li>comprueba la <code>lastIndexedTime</code> para todas las rutas de indexación y:
       <ul>
-       <li>devuelve el estado crítico si es hace más de 2 horas </li>
-       <li>devuelve el estado de advertencia si está entre 2 horas y 45 minutos atrás </li>
+       <li>devuelve un estado crítico si es hace más de dos horas </li>
+       <li>devuelve un estado de advertencia si está entre 2 horas y 45 minutos atrás </li>
        <li>devuelve el estado OK si es hace menos de 45 minutos </li>
       </ul> </li>
      <li>si no se cumple ninguna de estas condiciones, devuelve el estado OK</li>
@@ -264,17 +264,17 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
      <code>maxNumQueueJobs</code> umbral, y:
     </div>
     <ul>
-     <li>devuelve Critical si el valor es superior al <code>maxNumQueueJobs</code> están en la cola</li>
-     <li>devuelve Esencial si hay trabajos activos de larga duración con más de una hora</li>
-     <li>devuelve Crítico si hay trabajos en cola y la última hora de trabajo finalizada es anterior a 1 hora</li>
+     <li>devuelve un valor de tipo Critical si el valor es superior a <code>maxNumQueueJobs</code> están en la cola</li>
+     <li>devuelve un valor Critical si hay trabajos activos de larga duración con más de una hora</li>
+     <li>devuelve un valor Critical si hay trabajos en cola y la última hora de trabajo finalizada es anterior a 1 hora</li>
     </ul> <p>Solo se puede configurar el número máximo de trabajos en cola y tiene el valor predeterminado de 1000.</p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Rendimiento de solicitudes</td>
    <td><p>Esta comprobación determina lo siguiente <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Métrica de Sling </a>y:</p>
     <ul>
-     <li>devuelve Critical si el valor del percentil 75 supera el umbral crítico (el valor predeterminado es 500 milisegundos)</li>
-     <li>devuelve Advertir si el valor del percentil 75 supera el umbral de advertencia (el valor predeterminado es 200 milisegundos)</li>
+     <li>devuelve un valor Critical si el valor del percentil 75 supera el umbral crítico (el valor predeterminado es 500 milisegundos)</li>
+     <li>devuelve un valor Warn si el valor del percentil 75 supera el umbral de advertencia (el valor predeterminado es 200 milisegundos)</li>
     </ul> <p>El MBean para esta comprobación de estado es<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -285,8 +285,8 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
    <td>Espacio en disco</td>
    <td><p>La comprobación Espacio en disco busca en <code>FileStoreStats</code> MBean, recupera el tamaño del almacén de nodos y la cantidad de espacio en disco utilizable en la partición del almacén de nodos, y:</p>
     <ul>
-     <li>devuelve Advertir si la relación entre el espacio en disco disponible y el tamaño del repositorio es menor que el umbral de advertencia (el valor predeterminado es 10)</li>
-     <li>devuelve Crítico si la proporción de espacio en disco disponible respecto al tamaño del repositorio es menor que el umbral crítico (el valor predeterminado es 2)</li>
+     <li>devuelve una advertencia si la proporción de espacio en disco disponible respecto al tamaño del repositorio es menor que el umbral de advertencia (el valor predeterminado es 10)</li>
+     <li>devuelve un valor Critical si la relación entre el espacio en disco disponible y el tamaño del repositorio es menor que el umbral crítico (el valor predeterminado es 2)</li>
     </ul> <p>Ambos umbrales se pueden configurar. La marca de verificación solo funciona en instancias con un almacén de segmentos.</p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -309,15 +309,15 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
    <td>Comprobación de caché de código</td>
    <td><p>Una comprobación de estado que comprueba varias condiciones de JVM que pueden almacenar en déclencheur un error de CodeCache presente en Java™ 7:</p>
     <ul>
-     <li>devuelve Advertir si la instancia se está ejecutando en Java™ 7, con el vaciado de caché de código habilitado</li>
-     <li>devuelve Advertir si la instancia se está ejecutando en Java™ 7 y el tamaño de la caché de código reservada es inferior a un umbral mínimo (el valor predeterminado es 90 MB)</li>
+     <li>devuelve un mensaje de advertencia si la instancia se está ejecutando en Java™ 7 y el vaciado de caché de código está habilitado</li>
+     <li>devuelve un valor Warn si la instancia se está ejecutando en Java™ 7 y el tamaño de la caché de código reservada es inferior a un umbral mínimo (el valor predeterminado es 90 MB)</li>
     </ul> <p>El <code>minimum.code.cache.size</code> el umbral se puede configurar. Para obtener más información sobre el error, consulte <a href="https://bugs.java.com/bugdatabase/"> y luego buscar en el 8012547 de ID de error</a>.</p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Errores de ruta de búsqueda de medios</td>
    <td><p>Comprueba si hay recursos en la ruta <code>/apps/foundation/components/primary</code> y:</p>
     <ul>
-     <li>devuelve Avisar si hay nodos secundarios en <code>/apps/foundation/components/primary</code></li>
+     <li>devuelve un valor de tipo Warn si hay nodos secundarios en <code>/apps/foundation/components/primary</code></li>
     </ul> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>
@@ -490,7 +490,7 @@ Para cualquier consulta determinada, Oak intenta averiguar la mejor manera de ej
 
 Explicar consulta es una herramienta que explica cómo Oak ejecuta una consulta. Se puede acceder a ella accediendo a **Herramientas - Operaciones - Diagnóstico** AEM en la pantalla de bienvenida de la. A continuación, haga clic en **Rendimiento de consultas** y cambie a la **Explicar consulta** pestaña.
 
-**Características**
+**Funciones**
 
 * Admite los lenguajes de consulta Xpath, JCR-SQL y JCR-SQL2
 * Notifica el tiempo de ejecución real de la consulta proporcionada
@@ -581,7 +581,7 @@ Aunque la tarea de mantenimiento se desarrolló para reducir la basura de revisi
 
 Puede acceder a la tarea Limpieza de binarios de Lucene desde: **AEM > Herramientas > Operaciones > Mantenimiento > Ventana de mantenimiento diario > Limpieza de binarios de Lucene**.
 
-### Recolección de papelera del almacén de datos {#data-store-garbage-collection}
+### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
 
 Para obtener más información sobre la recolección de basura del almacén de datos, consulte la [página de documentación](/help/sites-administering/data-store-garbage-collection.md).
 

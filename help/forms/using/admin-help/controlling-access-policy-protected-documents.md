@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 0%
@@ -94,7 +94,7 @@ Al revocar o restablecer los privilegios de acceso a documentos, el cambio surte
 
 * Si el documento está en línea y cerrado, el cambio surtirá efecto la próxima vez que el destinatario se sincronice con Document Security abriendo un documento protegido por una directiva.
 * Si el documento está en línea y abierto, el cambio surte efecto cuando el destinatario cierra el documento.
-* Si el documento está sin conexión (en uso sin conexión a Internet, como en un equipo portátil), el cambio surtirá efecto la próxima vez que el destinatario se sincronice con Document Security.
+* Si el documento está sin conexión (es decir, está en uso sin conexión a Internet, como en un equipo portátil), el cambio surtirá efecto la próxima vez que el destinatario se sincronice con Document Security.
 
 **Revocar acceso a un documento protegido por una directiva**
 

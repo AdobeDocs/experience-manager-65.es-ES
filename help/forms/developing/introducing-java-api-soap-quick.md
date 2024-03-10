@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Inicio rápido de la API de Adobe de AEM Forms puede ayudarle a acelerar sus esfuerzos para desarrollar programas que interactúen con los servicios de AEM Forms. *Inicio rápido* s son programas completos que puede copiar y pegar en sus propios proyectos y utilizar como punto de partida. Puede ejecutar un Inicio rápido para ver cómo se comporta y modificarlo para sus propias necesidades.
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 Inicio rápido de la API de Java™ con establecimiento inflexible de tipos proporciona una lista de los archivos JAR necesarios para ejecutar la aplicación Java™. La mayoría de los inicios rápidos de Java™ son aplicaciones de consola que se ejecutan dentro de `main`. Sin embargo, el Inicio rápido de la API de Forms Java™ con establecimiento inflexible de tipos se implementa como un servlet Java™ que se ejecuta dentro de una aplicación web.
 
@@ -85,4 +85,4 @@ Inicios más rápidos en *Programar con AEM Forms en JEE* invocar un servicio es
 
 >[!NOTE]
 >
-La mayoría de los inicios rápidos de servicios web se escriben en C# y utilizan .NET Framework. Sin embargo, puede crear una lógica de aplicación cliente que pueda invocar los servicios de AEM Forms en cualquier entorno de desarrollo compatible con los estándares SOAP. (Consulte [Invocar AEM Forms mediante servicios web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>La mayoría de los inicios rápidos de servicios web se escriben en C# y utilizan .NET Framework. Sin embargo, puede crear una lógica de aplicación cliente que pueda invocar los servicios de AEM Forms en cualquier entorno de desarrollo compatible con los estándares SOAP. (Consulte [Invocar AEM Forms mediante servicios web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)

@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2833'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Para fines de evaluación comparativa, Adobe ha desarrollado algunas pruebas de 
 Calcule el rendimiento máximo de un perfil de carga en el que los usuarios realizan un ejercicio simple de creación de páginas sobre una carga base de 300 páginas existentes de naturaleza similar. Los pasos involucrados fueron iniciar sesión en el sitio, crear una página con un SWF e imagen/texto, añadir una nube de etiquetas y luego activar la página.
 
    * **Resultado**
-El rendimiento máximo para un ejercicio simple de creación de página como el anterior (considerado como una transacción) se encontró en 1730 transacciones/hora.
+El rendimiento máximo para un ejercicio simple de creación de página como el anterior (considerado como una transacción) se encuentra en 1730 transacciones/hora.
 
 * **Prueba de referencia 2**
 Calcule el rendimiento máximo cuando el perfil de carga tenga una combinación de creación de página nueva (10 %), modificación de una página existente (80 %) y creación y luego modificación de una página en sucesión (10 %). La complejidad de las páginas sigue siendo la misma que en el perfil de la prueba de referencia 1. La modificación básica de la página se realiza añadiendo una imagen y modificando el contenido del texto. Una vez más, el ejercicio se realizó sobre una carga base de 300 páginas de la misma complejidad definida en la prueba de referencia 1.
@@ -153,7 +153,7 @@ Para estos escenarios, Adobe ejecutó pruebas de referencia en un clúster de do
 Con un clúster activo-activo de no compartir nada de 2 instancias de autor, calcule el rendimiento máximo con un perfil de carga en el que los usuarios realizan un ejercicio simple de creación de páginas sobre una carga base de 300 páginas existentes, todas de naturaleza similar.
 
    * **Resultado**
-El rendimiento máximo para un ejercicio simple de creación de páginas, como el que se considera como una transacción, se encuentra en 2016 transacciones/hora. Esto supone un aumento de aproximadamente el 16 % en comparación con una instancia de autor independiente para la misma prueba de referencia.
+El rendimiento máximo para un ejercicio simple de creación de páginas, como el anterior (considerado como una transacción) se encuentra en 2016 transacciones/hora. Esto supone un aumento de aproximadamente el 16 % en comparación con una instancia de autor independiente para la misma prueba de referencia.
 
 * **Ensayo de referencia 2b**
 Con un clúster activo-activo de no compartir nada de 2 instancias de autor, calcule el rendimiento máximo cuando el perfil de carga tenga una combinación de creación de páginas nuevas (10 %), modificación de una página existente (80 %) y creación y modificación de una página en sucesión (10 %). La complejidad de la página sigue siendo la misma que en el perfil de la prueba de referencia 1. La modificación básica de la página se realiza añadiendo una imagen y modificando el contenido del texto. Una vez más, el ejercicio se realizó sobre una carga base de 300 páginas de complejidad igual a la definida en la prueba de referencia 1.

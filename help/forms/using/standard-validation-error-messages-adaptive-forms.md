@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms, Foundation Components
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2357'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -78,10 +78,10 @@ Con las mejoras en las funciones y las actualizaciones posteriores en las versio
 
 ```javascript
     {
-        "type": "SERVER_SIDE_VALIDATION/FORM_SUBMISSION/SERVICE_INVOCATION/FAILURE/VALIDATION_ERROR", (required)
-        "title": "Server side validation failed/Third party service invocation failed", (optional)
-        "detail": "", (optional)
-        "instance": "", (optional)
+        "type": "SERVER_SIDE_VALIDATION/FORM_SUBMISSION/SERVICE_INVOCATION/FAILURE/VALIDATION_ERROR" (required)
+        "title": "Server side validation failed/Third party service invocation failed" (optional)
+        "detail": "" (optional)
+        "instance": "" (optional)
         "validationErrors" : [ (required)
             {
                 "fieldName":"<SOM expression of the field whose data sent is invalid>",
@@ -90,7 +90,7 @@ Con las mejoras en las funciones y las actualizaciones posteriores en las versio
     
             }
         ],
-        "originCode": <Origin http status code>, (optional - if there is SERVER_SIDE_VALIDATION)
+        "originCode": <Origin http status code> (optional - if there is SERVER_SIDE_VALIDATION)
         "originMessage" : "<unstructured error message returned by service>" (optional - if there is SERVER_SIDE_VALIDATION)
     }
 ```
@@ -203,9 +203,9 @@ Con el editor de reglas, se puede hacer lo siguiente:
 Se admite un controlador de errores predeterminado para mostrar los mensajes de error en los campos si la respuesta de error está en el esquema estándar o en un error de validación del lado del servidor.
 Para comprender cómo utilizar un controlador de errores predeterminado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usaremos un controlador de errores predeterminado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.  Para añadir un controlador de error predeterminado mediante la acción Invocar servicio del Editor de reglas, ejecute los siguientes pasos:
 
-1. Abra un formulario adaptable en el modo Autor, seleccione un componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
+1. Abra el formulario adaptable en el modo de creación, seleccione cualquier componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Crear]**.
-1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **Cuándo[Nombre del campo ID de mascota]** se ha cambiado. Seleccione se cambia de la **Seleccionar estado** lista desplegable.
+1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, **cuando se cambia[Nombre del campo ID de mascota]**. Seleccione “se ha cambiado” de la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.
 1. Seleccione un **servicio Post** y sus enlaces de datos correspondientes en la sección **Entrada**. Por ejemplo, para validar **ID de mascota**, seleccione un **servicio Post** como **GET /pet/{petId}** y seleccione **ID de mascota** en la sección **Entrada**.
 1. Seleccione los enlaces de datos en la sección **Salida**. Seleccione **Nombre de mascota** en la sección **Salida**.
@@ -307,7 +307,7 @@ En este caso, el nombre de la biblioteca del cliente se proporciona como `custom
 
 Para utilizar un controlador de errores personalizado utilizando la acción **[!UICONTROL Invocar servicio del Editor de reglas]**:
 
-1. Abra un formulario adaptable en el modo Autor, seleccione un componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
+1. Abra el formulario adaptable en el modo de creación, seleccione cualquier componente del formulario y seleccione **[!UICONTROL Editor de reglas]** para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Crear]**.
 1. Crear una condición en la sección **Cuando** de la regla. Por ejemplo, cuando se ha cambiado el **[Nombre del campo ID de mascota]**, seleccione **se ha cambiado** en la lista desplegable **Seleccionar estado**.
 1. En la sección **Entonces**, seleccione **[!UICONTROL Invocar servicio]** de la lista desplegable **Seleccionar acción**.

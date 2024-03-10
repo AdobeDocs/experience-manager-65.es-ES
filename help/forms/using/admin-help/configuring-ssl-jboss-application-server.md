@@ -6,10 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 2%
+source-wordcount: '904'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +76,7 @@ En este procedimiento:
    `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Tipo `changeit` como contraseña. Esta contraseña es la contraseña predeterminada para una instalación de Java y el administrador del sistema puede haberla cambiado.
-1. Cuando se le solicite `Trust this certificate? [no]`:, tipo `yes`. Aparece la confirmación &quot;Se agregó el certificado al almacén de claves&quot;.
+1. Cuando se le solicite `Trust this certificate? [no]`, tipo `yes`. Aparece la confirmación &quot;Se agregó el certificado al almacén de claves&quot;.
 1. Si se está conectando a través de SSL desde Workbench, instale el certificado en el equipo de Workbench.
 1. En un editor de texto, abra los siguientes archivos para editarlos:
 
@@ -132,7 +132,7 @@ En este procedimiento:
    ```
 
 1. Cambie el valor de `keystoreFile` y el atributo `keystorePass` a la contraseña del almacén de claves que especificó al crear el almacén de claves.
-1. Reinicie el servidor de la aplicación:
+1. Reinicie el servidor de aplicaciones:
 
    * Para instalaciones llave en mano:
 

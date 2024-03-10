@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '4433'
-ht-degree: 94%
+source-wordcount: '4434'
+ht-degree: 93%
 
 ---
 
@@ -146,7 +146,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
 
 1. En el nodo de propiedades (aquí geographicallocation), agregue un nuevo nodo con el nombre `items`. Bajo el nodo de elemento, agregue un nodo para cada valor de la lista desplegable. Como práctica recomendada, agregue el primer nodo en blanco para que sirva como valor predeterminado de la lista desplegable y una opción para que el usuario no especifique ningún valor para el campo. Para agregar varias opciones o valores desplegables, repita los siguientes pasos:
 
-   1. Haga clic con el botón derecho del ratón en el nodo de propiedades (aquí geographicallocation) y seleccione **Crear** > **Crear nodo**.
+   1. Haga clic con el botón derecho en el nodo de propiedades (aquí geographicallocation) y seleccione **Crear** > **Crear nodo**.
    1. Escriba el nombre del campo como `item1,` mantenga el tipo como nt:unstructured y haga clic en **Aceptar**.
    1. Agregue las siguientes propiedades al nodo recién creado (aquí item1) y haga clic en **Guardar todo**:
 
@@ -385,7 +385,7 @@ Este escenario muestra cómo se puede agregar una propiedad a un tipo de recurso
 * Diccionario de datos
 * Carta
 
-Por ejemplo, solo para los recursos de texto, desea agregar la propiedad Ubicación de los destinatarios, para identificar para qué área geográfica es relevante un recurso. ![Propiedad personalizada agregada a un recurso](assets/newtabui.png)
+Por ejemplo, solo para los recursos de texto, desea agregar la propiedad Ubicación de los destinatarios, para identificar para qué área geográfica es relevante un recurso.  ![Propiedad personalizada agregada a un recurso](assets/newtabui.png)
 
 Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
 

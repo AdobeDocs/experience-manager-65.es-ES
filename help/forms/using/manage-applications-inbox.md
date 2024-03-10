@@ -6,10 +6,10 @@ topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 77%
+source-wordcount: '1069'
+ht-degree: 89%
 
 ---
 
@@ -30,7 +30,7 @@ En resumen, la bandeja de entrada permite crear una aplicación y administrar la
 ## Crear aplicación {#create-application}
 
 1. Vaya a Bandeja de entrada de AEM, en https://&#39;[server]:[port]&#39;/aem/inbox.
-1. En la IU de la bandeja de entrada, seleccione **[!UICONTROL Crear > Aplicación]**. Aparece la página Seleccionar aplicación.
+1. En la interfaz de usuario de la bandeja de entrada, seleccione **[!UICONTROL Crear > Aplicación]**. Aparece la página Seleccionar aplicación.
 1. Seleccione una aplicación y haga clic en **[!UICONTROL Crear]**. Se abrirá el formulario adaptable asociado a la aplicación. Rellene la información del formulario adaptable y seleccione **[!UICONTROL Enviar]**. Inicia el flujo de trabajo asociado y crea una tarea en la bandeja de entrada del usuario asignado.
 
 ## Administrar tareas {#manage-tasks}
@@ -41,17 +41,17 @@ Cuando se activa un flujo de trabajo de Forms y usted es un usuario asignado o p
 
 Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los miembros del grupo. Cualquier miembro del grupo puede reclamar esa tarea o delegarla a otro miembro del grupo. Para ello:
 
-1. Seleccione la miniatura de la tarea. Las opciones para abrir o delegar la tarea aparecen en la parte superior.
+1. Seleccione para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea aparecen en la parte superior.
 
    ![select-task](assets/select-task.png)
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
-   * Para delegar la tarea, seleccione **[!UICONTROL Delegar]**. Se abre el cuadro de diálogo Delegar elemento. Seleccione un usuario, tiene la opción de añadir un comentario, y seleccione **[!UICONTROL OK]**.
+   * Para delegar la tarea, seleccione **[!UICONTROL Delegar]**. Se abre el cuadro de diálogo Delegar elemento. Seleccione un usuario, tiene la opción de añadir un comentario, y seleccione **[!UICONTROL OK]**.
 
    ![delegate](assets/delegate.png)
 
-   * Para reclamar la tarea, seleccione **[!UICONTROL Abrir]**. Se abrirá el cuadro de diálogo Asignar a sí mismo. Seleccionar **[!UICONTROL Continuar]** para reclamar la tarea. La tarea reclamada aparece con usted como el usuario asignado en su bandeja de entrada.
+   * Para reclamar la tarea, seleccione **[!UICONTROL Abrir]**. Se abrirá el cuadro de diálogo Asignar a sí mismo. Seleccione **[!UICONTROL Continuar]** para reclamar la tarea. La tarea reclamada aparece con usted como el usuario asignado en su bandeja de entrada.
 
    ![claim](assets/claim.png)
 
@@ -59,7 +59,7 @@ Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los m
 
 Al abrir una tarea, puede ver los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en la Etapa de tarea de asignación del flujo de trabajo del formulario asociado.
 
-1. Seleccione la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
+1. Seleccione para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
 1. Seleccionar **Abrir** para ver los detalles de la tarea. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y trabajar en ella.
 
    >[!NOTE]
@@ -87,7 +87,7 @@ La pestaña Formulario del área de contenido principal muestra los archivos adj
 
 La pestaña Detalles del flujo de trabajo de la parte superior muestra el progreso de la tarea mediante varias fases del flujo de trabajo. Muestra las fases completadas, actuales y pendientes de la tarea. Las fases para un flujo de trabajo se definen en la [Etapa de tarea de asignación](/help/sites-developing/workflows-step-ref.md) del flujo de trabajo asociado.
 
-Además, la pestaña muestra el historial de tareas para cada fase completada en el flujo de trabajo. Puede seleccionar **[!UICONTROL Ver detalles]** para una fase completada con el fin de conocer los detalles de dicha fase. Muestra comentarios, archivos adjuntos de formularios y tareas, estado, fechas de inicio y finalización, etc., sobre la tarea.
+Además, la pestaña muestra el historial de tareas para cada fase completada en el flujo de trabajo. Puede seleccione **[!UICONTROL Ver detalles]** en una fase completada para conocer los detalles de dicha fase. Muestra comentarios, archivos adjuntos de formularios y tareas, estado, fechas de inicio y finalización, etc., sobre la tarea.
 
 ![workflow-details](assets/workflow-details.png)
 
@@ -101,12 +101,12 @@ A medida que trabaja en la tarea, esta continúa en el flujo de trabajo.
 
 La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Sin embargo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas en función de varios parámetros, como el tipo de tarea, el estado y las fechas de inicio y finalización. Para ver las tareas completadas:
 
-1. AEM En Bandeja de entrada de, seleccione ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
-1. Seleccionar **[!UICONTROL Estado de tarea]** acordeón y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
+1. En Bandeja de entrada AEM, seleccione ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
+1. Seleccione el acordeón **[!UICONTROL Estado de la tarea]** y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
 
    ![filter](assets/filter.png)
 
-1. Seleccione una tarea y haga clic en **[!UICONTROL Abrir]**.
+1. Seleccione para seleccionar una tarea y haga clic en **[!UICONTROL Abrir]**.
 
 La tarea se abre para mostrar el documento o el formulario adaptable asociado a la tarea. En el caso del formulario adaptable, la tarea muestra el formulario adaptable de solo lectura o su documento de registro PDF, tal y como se ha configurado en la pestaña Formulario/Documento del [paso Asignar flujo de trabajo de tarea](/help/sites-developing/workflows-step-ref.md).
 
@@ -114,7 +114,7 @@ La sección de detalles de la tarea muestra información como la acción realiza
 
 ![completed-task](assets/completed-task.png)
 
-La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del flujo de trabajo. Seleccionar **[!UICONTROL Ver detalles]** para obtener información detallada sobre un paso.
+La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del flujo de trabajo. Seleccione **[!UICONTROL Ver detalles]** en un paso para obtener información detallada.
 
 ![completed-task-workflow](assets/completed-task-workflow.png)
 
@@ -122,7 +122,7 @@ La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del
 
 ### No se pueden ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM {#unable-to-see-aem-worklow-items}
 
-El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM. AEM Para resolver el problema, añada los siguientes índices a su repositorio de y reconstruya el índice.
+El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM. Para resolver el problema, añada los siguientes índices a su repositorio de AEM y reconstruya el índice.
 
 1. Utilice uno de los siguientes métodos para añadir índices:
 
@@ -137,7 +137,7 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
+   * AEM Implemente los índices mediante un paquete de. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 1%
@@ -203,7 +203,7 @@ Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syste
 1. Haga clic en OSGI > Configuración
 1. Buscar &quot;Conector JCR de día para Microsoft Sharepoint&quot;
 1. Haga clic en Editar los valores de configuración.
-1. Establezca el valor de &quot;Sharepoint Connection Factory&quot; como &quot;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&quot;
+1. Establezca el valor de &#39;Sharepoint Connection Factory&#39; como &#39;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&#39;
 1. Haga clic en **Guardar**.
 
 **Configuración de la autenticación básica (Windows)**
@@ -218,7 +218,7 @@ Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syste
 
 AEM Solo un usuario autenticado tanto en el usuario como en el SharePoint puede acceder al contenido de SharePoint a través del conector.
 
-AEM También puede utilizar la extensión del conector para la autenticación con el fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de la a usuarios específicos de SharePoint. AEM Cree los usuarios correspondientes de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia del conector.
+AEM También puede utilizar la extensión del conector para la autenticación con el fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de a usuarios específicos de SharePoint. AEM Cree los usuarios correspondientes de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia del conector.
 
 AEM Para crear un usuario en el entorno de trabajo de:
 
@@ -234,8 +234,8 @@ AEM Para crear un usuario en el entorno de trabajo de:
 Para agregar el usuario al grupo de administradores:
 
 1. Vaya a Administración de grupos.
-1. Haga clic en el nodo &#39;a&#39;.
-1. Haga clic en &#39;administradores&#39;.
+1. Haga clic en el nodo &quot;a&quot;.
+1. Haga clic en &quot;administradores&quot;.
 1. Escriba el ID de usuario creado anteriormente en el cuadro de texto antes de **Examinar** botón.
 1. Haga clic en el símbolo de verificación verde para añadir al usuario al grupo de administradores.
 

@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 4%
+source-wordcount: '857'
+ht-degree: 2%
 
 ---
 
@@ -49,10 +49,10 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
    |---|---|
    | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para incluir todos los recursos que descargue (incluidos los recursos de carpetas secundarias anidadas en la carpeta principal del recurso) en una carpeta del equipo local. Cuando esta opción no está seleccionada, de forma predeterminada, la jerarquía de carpetas se omite y todos los recursos se descargan en una carpeta del equipo local. |
    | **[!UICONTROL Correo electrónico]** | Se envía una notificación por correo electrónico al usuario. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que personaliza durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-   | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su forma original sin ninguna representación.<br>La opción subrecursos está disponible si el recurso original tiene subrecursos. |
-   | **[!UICONTROL Representaciones]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso que seleccione. La opción está disponible si el recurso tiene alguna representación. |
+   | **[!UICONTROL Recurso(s)]** | Seleccione esta opción para descargar el recurso en su forma original sin ninguna representación.<br>La opción subrecursos está disponible si el recurso original tiene subrecursos. |
+   | **[!UICONTROL Representación(es)]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso que seleccione. La opción está disponible si el recurso tiene alguna representación. |
    | **[!UICONTROL Recortes inteligentes]** | AEM Seleccione esta opción para descargar todas las representaciones de recortes inteligentes del recurso seleccionado desde el propio recurso de la. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
-   | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando en el [Ajuste preestablecido de imagen](image-presets.md) lista. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como la inversión de la imagen. La opción solo está disponible si tiene [!DNL Dynamic Media] activado. |
+   | **[!UICONTROL Representación(es) dinámica(es)]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando en el [Ajuste preestablecido de imagen](image-presets.md) lista. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como la inversión de la imagen. La opción solo está disponible si tiene [!DNL Dynamic Media] activado. |
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]**.
 
@@ -62,7 +62,7 @@ Al seleccionar una carpeta para descargar, se descarga la jerarquía de recursos
 
 El servlet predeterminado en [!DNL Experience Manager] permite a los usuarios autenticados emitir solicitudes de descarga simultáneas y arbitrariamente grandes para crear archivos ZIP de recursos visibles para ellos que pueden sobrecargar el servidor y la red. Para mitigar los posibles riesgos DoS causados por esta función, `AssetDownloadServlet` El componente OSGi está deshabilitado de forma predeterminada para las instancias de publicación.
 
-Para permitir la descarga de recursos desde su DAM, por ejemplo, cuando utilice algo como Asset Share Commons u otra implementación similar a un portal, habilite manualmente el servlet a través de una configuración OSGi. El Adobe recomienda configurar el tamaño de descarga permitido lo más bajo posible sin afectar a los requisitos de descarga diarios. Un valor alto puede afectar al rendimiento.
+Para permitir la descarga de recursos desde su DAM, por ejemplo, cuando utilice algo como Asset Share Commons u otra implementación similar a un portal, habilite manualmente el servlet mediante una configuración OSGi. El Adobe recomienda configurar el tamaño de descarga permitido lo más bajo posible sin afectar a los requisitos de descarga diarios. Un valor alto puede afectar al rendimiento.
 
 1. Cree una carpeta con una convención de nombres que se dirija al modo de ejecución de publicación (`config.publish`): `/apps/<your-app-name>/config.publish`. Para definir las propiedades de configuración de un modo de ejecución, consulte [Modos de ejecución](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode).
 1. En la carpeta de configuración, cree un archivo de tipo `nt:file` nombrado `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.

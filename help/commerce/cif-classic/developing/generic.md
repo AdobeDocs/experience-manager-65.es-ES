@@ -3,9 +3,9 @@ title: Desarrollo (genérico)
 description: AEM El marco de trabajo de integración incluye una capa de integración con una API, lo que le permite crear componentes de para las capacidades de comercio electrónico.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---
@@ -471,7 +471,7 @@ El punto de entrada para la API de búsqueda es `CommerceService#search` método
 
    * El ClientContext `SegmentMgr` resuelve los segmentos y el ClientContext `CartMgr` resuelve las promociones. Se activa cada promoción sujeta al menos a un segmento resuelto.
 
-      * AJAX Las promociones activadas se envían de vuelta al servidor a través de una llamada de para volver a calcular el carro de compras.
+      * AJAX Las promociones activadas se envían de vuelta al servidor mediante una llamada de para volver a calcular el carro de compras.
       * Las promociones activadas (y los cupones añadidos) también se muestran en el panel ClientContext.
 
 La adición o eliminación de un cupón de un carro de compras se realiza mediante las `CommerceSession` API:

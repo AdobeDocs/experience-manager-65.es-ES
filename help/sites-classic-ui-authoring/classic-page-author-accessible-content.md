@@ -1,16 +1,16 @@
 ---
 title: Crear contenido accesible (Conformidad con WCAG 2.0)
-description: WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades.
+description: WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a hacer que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9148'
-ht-degree: 60%
+source-wordcount: '9070'
+ht-degree: 59%
 
 ---
 
@@ -26,14 +26,14 @@ ht-degree: 60%
 >* [Guía rápida de WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Crear contenido accesible (Conformidad con WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
 
-WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades.
+WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a hacer que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar.
 
 >[!NOTE]
 >
 >Consulte también:
 >
 >* [Guía rápida de WCAG 2.0](/help/managing/qg-wcag.md)
->* [Configurar el Editor de texto enriquecido para producir contenido accesible](/help/sites-administering/rte-accessible-content.md)
+>* [Configuración del Editor de texto enriquecido para producir contenido accesible](/help/sites-administering/rte-accessible-content.md)
 >
 
 Estas directrices se clasifican según tres niveles de conformidad: Nivel A (el más bajo), Nivel AA y Nivel AAA (el más alto). Brevemente, los niveles se definen de la siguiente manera:
@@ -94,11 +94,11 @@ AEM añade un **Texto alternativo** a las imágenes de forma predeterminada. Par
 
 * Archivo:
 
-Se carga una imagen desde el disco duro del usuario. Si agrega un componente de imagen a una página y, a continuación, elige una imagen del disco duro u otra fuente, el valor predeterminado para **Texto alternativo** es `file`. Este valor debe cambiarse en la variable **Avanzadas** pestaña propiedades de la imagen. De nuevo, este valor no se muestra en **Texto alternativo** , pero cuando se cambia el valor, el nuevo valor se muestra en el campo.
+  Se carga una imagen desde el disco duro del usuario. Si agrega un componente de imagen a una página y, a continuación, elige una imagen del disco duro u otra fuente, el valor predeterminado para **Texto alternativo** es `file`. Este valor debe cambiarse en la variable **Avanzadas** pestaña propiedades de la imagen. De nuevo, este valor no se muestra en **Texto alternativo** , pero cuando se cambia el valor, el nuevo valor se muestra en el campo.
 
 * Recurso:
 
-Se agrega una imagen desde el repositorio de recursos digitales. Si arrastra una imagen desde el repositorio de recursos digitales a una página web, la variable **Título** y **Texto alternativo** los valores de esa imagen se toman de los metadatos de esa imagen.
+  Se agrega una imagen desde el repositorio de recursos digitales. Si arrastra una imagen desde el repositorio de recursos digitales a una página web, la variable **Título** y **Texto alternativo** los valores de esa imagen se toman de los metadatos de esa imagen.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Se agrega una imagen desde el repositorio de recursos digitales. Si arrastra una
 Existen varias formas de contenido no textual, por lo que el valor de la alternativa textual depende de la función del gráfico en la página web. Algunas de las reglas generales incluyen las siguientes:
 
 * Las alternativas textuales deben ser concisas, pero captar claramente la información esencial proporcionada por el contenido no textual.
-* Deben evitarse las descripciones demasiado largas, que superen los 100 caracteres. Si una alternativa textual requiere más detalle, haga lo siguiente:
+* Deben evitarse las descripciones largas (más de 100 caracteres). Si una alternativa textual requiere más detalle, haga lo siguiente:
 
    * proporcione una breve descripción en el texto alternativo
    * y añada una descripción más larga en el texto en cualquier otra parte, en la misma página o en una página web aparte. Cree un vínculo a esta descripción separada poniendo un vínculo en la imagen o situando un vínculo de texto junto a la imagen.
@@ -129,55 +129,55 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 * Fotos ilustrativas:
 
-Son imágenes de personas, objetos o lugares. Considere el papel de la foto en la página; un texto equivalente apropiado probablemente sea *Foto de [objeto]*, pero puede depender del texto que lo rodea.
+  Son imágenes de personas, objetos o lugares. Considere el papel de la foto en la página; un texto equivalente apropiado probablemente sea *Foto de [objeto]*, pero puede depender del texto que lo rodea.
 
 * Iconos:
 
-Pequeños pictogramas (gráficos) que transmiten información específica. Deben utilizarse de forma coherente en toda la página y en todo el sitio. Todas las instancias del icono en una página o sitio deben tener la misma alternativa textual corta y sucinta, a menos que hacerlo resulte en una duplicación innecesaria del texto adyacente.
+  Pequeños pictogramas (gráficos) que transmiten información específica. Deben utilizarse de forma coherente en toda la página y en todo el sitio. Todas las instancias del icono en una página o sitio deben tener la misma alternativa textual corta y sucinta, a menos que hacerlo resulte en una duplicación innecesaria del texto adyacente.
 
 * Gráficos y diagramas:
 
-Normalmente representan datos numéricos. Por lo tanto, una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las principales tendencias que se muestran en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto utilizando la variable **Descripción** en el campo **Avanzadas** pestaña propiedades de la imagen. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
+  Normalmente representan datos numéricos. Por lo tanto, una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las principales tendencias que se muestran en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto utilizando la variable **Descripción** en el campo **Avanzadas** pestaña propiedades de la imagen. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
 
-![Ejemplo de gráfico. A continuación se muestra el mejor enfoque para proporcionar una alternativa.](assets/chlimage_1-2a.jpeg)
+  ![Ejemplo de gráfico. A continuación se muestra el mejor enfoque para proporcionar una alternativa.](assets/chlimage_1-2a.jpeg)
 
-Para proporcionar una alternativa a este gráfico de ejemplo, añada una `alt` texto a la propia imagen y, a continuación, siga la imagen con una alternativa de texto completo.
+  Para proporcionar una alternativa a este gráfico de ejemplo, añada una `alt` texto a la propia imagen y, a continuación, siga la imagen con una alternativa de texto completo.
 
-```xml
-<p><img src="figure1.gif" alt="Figure 1" ></p>
-<p> Figure 1. Distribution of Articles by Journal Category.
-Pie chart: Language=68%, Education=14% and Science=18%.</p>
-```
+  ```xml
+  <p><img src="figure1.gif" alt="Figure 1" ></p>
+  <p> Figure 1. Distribution of Articles by Journal Category.
+  Pie chart: Language=68%, Education=14% and Science=18%.</p>
+  ```
 
->[!NOTE]
->
->El fragmento anterior solo se utiliza para ilustrar el orden. Utilice el **Imagen** en lugar del componente `img src` Referencia utilizada anteriormente.
+  >[!NOTE]
+  >
+  >El fragmento anterior solo se utiliza para ilustrar el orden. Utilice el **Imagen** en lugar del componente `img src` Referencia utilizada anteriormente.
 
-AEM En el caso de los usuarios de, puede utilizar una combinación de las siguientes opciones: **Texto alternativo** y **Descripción** campos en el cuadro de diálogo de configuración de la imagen: como en [Cómo cumplir: Contenido no textual (1.1.1)](#how-to-meet-non-text-content).
+  AEM En el caso de los usuarios de, puede utilizar una combinación de las siguientes opciones: **Texto alternativo** y **Descripción** campos en el cuadro de diálogo de configuración de la imagen: como en [Cómo cumplir: Contenido no textual (1.1.1)](#how-to-meet-non-text-content).
 
 * Mapas, diagramas, diagramas de flujo:
 
-Para gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), compruebe que el mensaje clave se proporciona en formato de texto.  En el caso de los mapas, es probable que no sea práctico suministrar un equivalente textual completo. No obstante, si el mapa se proporciona como una forma de ayudar a las personas a encontrar su camino a una ubicación determinada, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, ofrecer indicaciones para llegar a esa ubicación en texto en cualquier parte de la página o a través del campo **Descripción** en la pestaña **Avanzado** del componente **Imagen**.
+  Para gráficos que proporcionan datos espaciales (por ejemplo, para admitir la descripción de relaciones entre objetos o un proceso), compruebe que el mensaje clave se proporciona en formato de texto.  En el caso de los mapas, es probable que no sea práctico suministrar un equivalente textual completo. No obstante, si el mapa se proporciona como una forma de ayudar a las personas a encontrar su camino a una ubicación determinada, el texto alternativo de la imagen del mapa puede indicar brevemente *Mapa de X* y, a continuación, ofrecer indicaciones para llegar a esa ubicación en texto en cualquier parte de la página o a través del campo **Descripción** en la pestaña **Avanzado** del componente **Imagen**.
 
 * CAPTCHA:
 
-un Captcha es una *prueba de Turing pública completamente automatizada para distinguir entre equipos y humanos*. Se trata de una comprobación de seguridad que se utiliza en las páginas web para distinguir a los seres humanos de software malintencionado, pero que puede instaurar barreras de accesibilidad. Son imágenes que requieren que se describa lo que se ve para pasar una prueba de seguridad. Como no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪
+  Un CAPTCHA es un *Prueba de Turing pública completamente automatizada para diferenciar ordenadores de humanos*. Se trata de una comprobación de seguridad que se utiliza en las páginas web para distinguir a los seres humanos de software malintencionado, pero que puede instaurar barreras de accesibilidad. Son imágenes que requieren que se describa lo que se ve para pasar una prueba de seguridad. No es posible proporcionar una alternativa textual para la imagen, por lo que debe considerar soluciones alternativas que no sean gráficas.
 
-El W3C proporciona varias sugerencias, como las siguientes. Cada uno de estos enfoques tiene sus propios méritos e inconvenientes.
+  El W3C proporciona varias sugerencias, como las siguientes. Cada uno de estos enfoques tiene sus propios méritos e inconvenientes.
 
-    * Rompecabezas de lógica
-    * El uso de salida de sonido en lugar de imágenes
-    * Cuentas de uso limitado y filtros de spam.
+   * Rompecabezas lógicos
+   * El uso de sonido en lugar de imágenes
+   * Cuentas de uso limitado y filtros de spam
 
 * Imágenes de fondo:
 
-Estas imágenes se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de en HTML. No es posible especificar un valor de texto alternativo. Por lo tanto, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, esta información también debe proporcionarse en el texto de la página.
+  Estas imágenes se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de en HTML. No es posible especificar un valor de texto alternativo. Por lo tanto, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, esta información también debe proporcionarse en el texto de la página.
 
-Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen no se pueda mostrar.
+  Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen no se pueda mostrar.
 
->[!NOTE]
->
->Debe haber un nivel adecuado de contraste entre el fondo y el texto en primer plano. Este contraste se analiza con más detalle en [Contraste (mínimo) (1.4.3)](#contrast-minimum).
+  >[!NOTE]
+  >
+  >Debe haber un nivel adecuado de contraste entre el fondo y el texto en primer plano. Este contraste se analiza con más detalle en [Contraste (mínimo) (1.4.3)](#contrast-minimum).
 
 #### Más información: Contenido no textual (1.1.1) {#more-information-non-text-content}
 
@@ -219,7 +219,7 @@ Proporcionar esta información en un formato diferente, como texto (o audio para
 
    * Proporcione un vínculo inmediatamente antes o después del contenido para obtener una transcripción textual del contenido del audio.
 
-  La transcripción debe ser una página de HTML con un texto equivalente a todo el contenido hablado y no hablado importante. También debe indicar quién está hablando, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
+     La transcripción debe ser una página de HTML con un texto equivalente a todo el contenido hablado y no hablado importante. También debe indicar quién está hablando, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
 
 * Si el contenido es una animación o un vídeo pregrabado sin audio:
 
@@ -388,123 +388,123 @@ Asegúrese de que las páginas web tengan la estructura adecuada mediante lo sig
 
 * **Uso de encabezados:**  
 
-Siempre que tenga las funciones de accesibilidad de RTE activadas (consulte [AEM Acceso y accesibilidad de la](/help/sites-administering/rte-accessible-content.md)AEM ), ofrece tres niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
+  Siempre que tenga las funciones de accesibilidad de RTE activadas (consulte [AEM Acceso y accesibilidad de la](/help/sites-administering/rte-accessible-content.md)AEM ), ofrece tres niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
 
-La siguiente imagen muestra un ejemplo de los diferentes tipos de encabezados.
+  La siguiente imagen muestra un ejemplo de los diferentes tipos de encabezados.
 
-![Los encabezados H1 a H3 se muestran en el selector desplegable (IU clásica).](assets/chlimage_1-19a.png)
+  ![Los encabezados H1 a H3 se muestran en el selector desplegable (IU clásica).](assets/chlimage_1-19a.png)
 
 * **Texto enfatizado**:
 
-Utilice el elemento o para indicar énfasis. No utilice encabezados o texto enfatizado en los párrafos.
+  Utilice el elemento o para indicar énfasis. No utilice encabezados o texto enfatizado en los párrafos.
 
-    * Resalte el texto que desee resaltar;
-    * Haga clic en el icono **B** (para &amp;lt;strong&amp;gt;) o en el icono **I** (para &amp;lt;em&amp;gt;) que se muestra en el panel **Propiedades** (asegúrese de que el HTML está seleccionado).
+   * Enfatice el texto que quiera remarcar;
+   * Haga clic en **B** icono (para &lt;strong>) o el **I** icono (para &lt;em>) mostrado en el **Propiedades** panel (asegúrese de que el HTML está seleccionado).
 
->[!NOTE]
->
->RTE en una instalación AEM estándar está configurada para utilizar:
->
->* &lt;b> para &lt;strong>
-* &lt;i> para &lt;em>
->
-Aunque son igual de eficaces, y son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar y  (en lugar de y ) al desarrollar su instancia de proyecto.
+  >[!NOTE]
+  >
+  >RTE en una instalación AEM estándar está configurada para utilizar:
+  >
+  >* &lt;b> para &lt;strong>
+  * &lt;i> para &lt;em>
+  >
+  Aunque son igual de eficaces, y son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar y  (en lugar de y ) al desarrollar su instancia de proyecto.
 
 * **Utilizar listas**:
 Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
-   * El `<ul>` se utiliza para *desordenado* listas (listas con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`. 
+   * El `<ul>` se utiliza para *desordenado* listas (listas con viñetas). Los elementos de listas individuales se identifican mediante la variable `<li>` Elemento.
 
-  en RTE, utilice el **Lista con viñetas** icono.
+     en RTE, utilice el **Lista con viñetas** icono.
 
-   * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`. 
+   * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican mediante la variable `<li>` Elemento.
 
-  En RTE, utilice el icono **Lista numerada**.
+     En RTE, utilice el icono **Lista numerada**.
 
-Si desea cambiar contenido existente por un tipo de lista específico, resalte el texto correspondiente y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, que muestra cómo se introduce el texto del párrafo, los elementos de la lista correspondientes se añaden automáticamente al HTML, pero puede verlo en la vista de edición de código fuente.
+  Si desea cambiar contenido existente por un tipo de lista específico, resalte el texto correspondiente y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, que muestra cómo se introduce el texto del párrafo, los elementos de la lista correspondientes se añaden automáticamente al HTML, pero puede verlo en la vista de edición de código fuente.
 
->[!NOTE]
->
-El `<dl>` no es compatible con RTE.
+  >[!NOTE]
+  >
+  El `<dl>` no es compatible con RTE.
 
 * **Uso de tablas**:
 
-Las tablas de datos deben identificarse utilizando elementos de tablas de HTML:
+  Las tablas de datos deben identificarse utilizando elementos de tablas de HTML:
 
-    * uno `&lt;table>` element
-    * a `&lt;tr>` para cada fila de la tabla
-    * a `&lt;th>` para cada encabezado de fila y columna
-    * a `&lt;td>` para cada celda de datos
+   * un elemento `<table>`
+   * un elemento `<tr>` para cada fila de la tabla
+   * un elemento `<th>` para cada titular de fila y columna
+   * un elemento `<td>` para cada celda de datos
 
->[!NOTE]
->
-Las tablas deben realizarse con la variable **Tabla** componente. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
+  >[!NOTE]
+  >
+  Las tablas deben realizarse con la variable **Tabla** componente. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
 
-Además, las tablas accesibles utilizan los siguientes elementos y atributos:
+  Además, las tablas accesibles utilizan los siguientes elementos y atributos:
 
-    * El `&lt;caption>` se utiliza para proporcionar un pie de ilustración visible para la tabla. Los subtítulos aparecen centrados sobre la tabla de forma predeterminada, pero se pueden colocar correctamente con CSS. El subtítulo está asociado programáticamente con la tabla, por lo que se trata de un método útil para proporcionar una introducción al contenido.
-    * El `&lt;h3 class=&quot;summary&quot;>El elemento ayuda a los usuarios que carecen de visión para que entiendan con mayor facilidad la información que se presenta en la tabla, ya que proporciona una sinopsis de lo que el usuario puede ver. Resulta particularmente útil cuando se utilizan diseños de la tabla complejos o poco convencionales (este atributo no se muestra en el buscador, solo se lee en voz alta para tecnologías de asistencia).
-    * El atributo &quot;scope&quot; de &quot;&lt;th>` se utiliza para indicar si una celda representa el encabezado de una fila en particular o de una columna en particular. Un enfoque similar es el de utilizar el encabezado y los atributos de identificación en tablas complejas, donde las celdas de datos se pueden asociar con uno o más encabezados.
+   * El elemento `<caption>` se utiliza para proporcionar un subtítulo visible para la tabla. Los subtítulos aparecen centrados sobre la tabla de forma predeterminada, pero se pueden colocar correctamente con CSS. El subtítulo está asociado programáticamente con la tabla, por lo que se trata de un método útil para proporcionar una introducción al contenido.
+   * El elemento `<h3 class="summary">` ayuda a los usuarios que carecen de visión para que entiendan con mayor facilidad la información que se presenta en la tabla mediante una sinopsis de lo que el usuario puede ver. Resulta particularmente útil cuando se utilizan diseños de la tabla complejos o poco convencionales (este atributo no se muestra en el buscador, solo se lee en voz alta para tecnologías de asistencia).
+   * El atributo `scope` del elemento `<th>` se utiliza para indicar si una celda representa el encabezado de una fila en concreto o de una columna en concreto. Un enfoque similar es el de utilizar el encabezado y los atributos de identificación en tablas complejas, donde las celdas de datos se pueden asociar con uno o más encabezados.
 
->[!NOTE]
->
-Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte [Agregar ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >[!NOTE]
+  >
+  Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte [Agregar ayuda para elementos y atributos HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-Al añadir un **Tabla**, puede configurar **Propiedades de tabla** uso del cuadro de diálogo.
+  Al añadir un **Tabla**, puede configurar **Propiedades de tabla** uso del cuadro de diálogo.
 
-    * un **Pie de ilustración** adecuado.
-    * Idealmente, elimine los valores predeterminados de **Anchura**, **Altura**, **Borde**, **Margen de celdas**, **Espaciado de celdas**. ya que estas propiedades se pueden definir en una hoja de estilo global.
+   * una adecuada **Rótulo**.
+   * Idealmente, elimine los valores predeterminados de **anchura**, **altura**, **borde**, **relleno de celda** y **espaciado de celda**, ya que estas propiedades se pueden definir en una hoja de estilo global.
 
-![Cuadro de diálogo Propiedades de tabla.](assets/chlimage_1-20a.png)
+  ![Cuadro de diálogo Propiedades de tabla.](assets/chlimage_1-20a.png)
 
-A continuación, puede utilizar la variable **Propiedades de celda** para elegir si la celda es una celda de datos o de encabezado y, si es una celda de encabezado, si está relacionada con una fila o columna o con ambas:
+  A continuación, puede utilizar la variable **Propiedades de celda** para elegir si la celda es una celda de datos o de encabezado y, si es una celda de encabezado, si está relacionada con una fila o columna o con ambas:
 
-![Cuadro de diálogo Propiedades de la llamada; configuración de una fila (normalmente la primera) como fila de encabezado.](assets/chlimage_1-21a.png)
+  ![Cuadro de diálogo Propiedades de la llamada; configuración de una fila (normalmente la primera) como fila de encabezado.](assets/chlimage_1-21a.png)
 
 * **Tablas de datos complejas:**
 
-A veces, cuando hay tablas complejas con dos o más niveles de encabezados, las propiedades de tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas, se deben crear relaciones directas entre los encabezados y sus celdas relacionadas mediante **encabezado** y **id** atributos. Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
+  A veces, cuando hay tablas complejas con dos o más niveles de encabezados, las propiedades de tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas, se deben crear relaciones directas entre los encabezados y sus celdas relacionadas mediante **encabezado** y **id** atributos. Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
 
->[!NOTE]
->
-El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede activar configurando las normas HTML y el serializador en el RTE.
+  >[!NOTE]
+  >
+  El atributo de identificación no se encuentra disponible en las instalaciones predeterminadas. Se puede activar configurando las normas HTML y el serializador en el RTE.
 
->[!NOTE]
->
-Las tablas deben realizarse con la variable **Tabla** componente. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
+  >[!NOTE]
+  >
+  Las tablas deben realizarse con la variable **Tabla** componente. Aunque se pueden crear tablas en el componente Texto, no se recomienda.
 
-```xml
-<table>
-   <tr>
-     <th rowspan="2" id="h">Homework</th>
-     <th colspan="3" id="e">Exams</th>
-     <th colspan="3" id="p">Projects</th>
-   </tr>
-   <tr>
-     <th id="e1" headers="e">1</th>
-     <th id="e2" headers="e">2</th>
-     <th id="ef" headers="e">Final</th>
-     <th id="p1" headers="p">1</th>
-     <th id="p2" headers="p">2</th>
-     <th id="pf" headers="p">Final</th>
-   </tr>
-   <tr>
-    <td headers="h">15%</td>
-    <td headers="e e1">15%</td>
-    <td headers="e e2">15%</td>
-    <td headers="e ef">20%</td>
-    <td headers="p p1">10%</td>
-    <td headers="p p2">10%</td>
-    <td headers="p pf">15%</td>
-   </tr>
-  </table>
-```
+  ```xml
+  <table>
+     <tr>
+       <th rowspan="2" id="h">Homework</th>
+       <th colspan="3" id="e">Exams</th>
+       <th colspan="3" id="p">Projects</th>
+     </tr>
+     <tr>
+       <th id="e1" headers="e">1</th>
+       <th id="e2" headers="e">2</th>
+       <th id="ef" headers="e">Final</th>
+       <th id="p1" headers="p">1</th>
+       <th id="p2" headers="p">2</th>
+       <th id="pf" headers="p">Final</th>
+     </tr>
+     <tr>
+      <td headers="h">15%</td>
+      <td headers="e e1">15%</td>
+      <td headers="e e2">15%</td>
+      <td headers="e ef">20%</td>
+      <td headers="p p1">10%</td>
+      <td headers="p p2">10%</td>
+      <td headers="p pf">15%</td>
+     </tr>
+    </table>
+  ```
 
-AEM Para conseguirlo en la, debe añadir el marcado directamente utilizando el modo de edición de origen.
+  AEM Para conseguirlo en la, debe añadir el marcado directamente utilizando el modo de edición de origen.
 
->[!NOTE]
->
-Esta funcionalidad no se encuentra disponible de inmediato en las instalaciones estándar. Requiere la configuración de RTE, reglas de HTML y serializador.
+  >[!NOTE]
+  >
+  Esta funcionalidad no se encuentra disponible de inmediato en las instalaciones estándar. Requiere la configuración de RTE, reglas de HTML y serializador.
 
 #### Más información: Información y relaciones (1.3.1) {#more-information-info-and-relationships}
 
@@ -569,7 +569,7 @@ Además, las personas que utilizan exploradores de solo texto, dispositivos de p
 
 En todos los casos donde el color se utilice para transmitir información, es importante asegurarse de que la información se encuentra disponible sin necesidad de ver el color.
 
-Por ejemplo, asegúrese de que la información que proporciona el color también esté explícita en el texto. La siguiente ilustración muestra cómo el color y el texto indican la disponibilidad de asientos para una actuación:
+Por ejemplo, asegúrese de que la información proporcionada por el color también se proporcione explícitamente en el texto. La siguiente ilustración muestra cómo el color y el texto indican la disponibilidad de asientos para una actuación:
 
 <table>
  <tbody>
@@ -592,7 +592,7 @@ Por ejemplo, asegúrese de que la información que proporciona el color también
  </tbody>
 </table>
 
-Si se utiliza el color como medio para transmitir información, se debería proporcionar una señal visual adicional, como cambiar el estilo (por ejemplo, usar negrita o cursiva) o la fuente. De esta manera, se ayuda a las personas con poca visión o que tienen una deficiencia de percepción de color a identificar la información. Sin embargo, no se puede confiar totalmente en esta medida, puesto que no ayuda a quienes no pueden ver la página.
+Si se utiliza el color como medio para transmitir información, se debería proporcionar una señal visual adicional, como cambiar el estilo (por ejemplo, usar negrita o cursiva) o la fuente. De esta manera, se ayuda a las personas con poca visión o que tienen una deficiencia de percepción de color a identificar la información. Sin embargo, no se puede confiar en ella por completo, ya que no ayuda a las personas que no pueden ver la página.
 
 #### Más información: Uso del color (1.4.1) {#more-information-use-of-color}
 
@@ -676,8 +676,13 @@ Si es necesario utilizar imágenes de texto, utilice CSS para reemplazar las im�
 * Nivel A
 * Pausar, parar, ocultar: Para mover, cerrar, desplazar o actualizar automáticamente la información, los siguientes criterios son verdaderos:  
 
-   * Movimiento, parpadeo desplazamiento: Para cualquier tipo de información en movimiento, que parpadea o se desplaza que (a) empiece de manera automática, (b) dure más de cinco segundos y (c) se presente en paralelo con otro contenido, existe un mecanismo que el usuario puede utilizar para pausarla, pararla u ocultarla, a menos que el movimiento, el parpadeo o el desplazamiento forme parte de una actividad en la que sea esencial;
-   * Actualización automática: para cualquier información de actualización automática que (a) se inicie automáticamente y (b) se presente en paralelo con otro contenido, existe un mecanismo para que el usuario la ponga en pausa, la detenga u oculte, o para controlar la frecuencia de la actualización a menos que la actualización automática forme parte de una actividad en la que sea esencial.
+   * Movimiento, parpadeo, desplazamiento: para cualquier información de movimiento, parpadeo o desplazamiento que
+      * (a) se inicia automáticamente,
+      * (b) dure más de cinco segundos, y
+      * (c) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario lo ponga en pausa, lo detenga u oculte a menos que el movimiento, el parpadeo o el desplazamiento formen parte de una actividad en la que sea esencial;
+   * Actualización automática: para cualquier información de actualización automática que
+      * (a) se inicie automáticamente, y
+      * (b) se presente en paralelo con otro contenido, exista un mecanismo para que el usuario lo ponga en pausa, lo detenga, lo oculte o controle la frecuencia de la actualización a menos que la actualización automática forme parte de una actividad donde sea esencial.
 
 Puntos que se deben tener en cuenta:
 
@@ -780,7 +785,7 @@ Sobre todo, es importante asegurarse de que el objetivo de un vínculo se descri
    * Texto: Clases nocturnas de otoño de 2010, más información.
    * Motivo: ajustando ligeramente el texto y la posición del vínculo se puede mejorar el texto del vínculo.
 
-Los vínculos se tienen que redactar con coherencia en todas las páginas, especialmente en las barras de navegación. Por ejemplo, si un vínculo a una página en concreto se nombra como **Publicaciones** en una página, utilice ese mismo texto en otras páginas para mantener la coherencia.
+Los vínculos deben redactarse de forma coherente en todas las páginas, especialmente en las barras de navegación. Por ejemplo, si un vínculo a una página específica se denomina **Publicaciones** en una página, utilice ese texto en otras páginas para garantizar la coherencia.
 
 Sin embargo, en el momento de escribir este artículo, hay algunas cuestiones relacionadas con el uso de los títulos:
 
@@ -790,7 +795,7 @@ Sin embargo, en el momento de escribir este artículo, hay algunas cuestiones re
 
 Por lo tanto, aunque el atributo del título se puede utilizar para proporcionar contexto adicional a un vínculo, tenga en cuenta sus limitaciones y no lo utilice como alternativa al vínculo de un texto.
 
-Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describe el destino del vínculo. Por ejemplo, si la imagen de una estantería es el vínculo a las publicaciones de una persona, el texto alternativo debería ser algo como **Publicaciones de John Smith** y no **Estantería**.
+Cuando el vínculo esté formado por una imagen, asegúrese de que el texto alternativo de la imagen describa el destino del vínculo. Por ejemplo, si la imagen de una estantería es un vínculo a las publicaciones de una persona, el texto alternativo debería ser **Publicaciones de John Smith** y no **Estantería**.
 
 Alternativamente, si el anclaje del vínculo contiene texto que describe el objetivo del vínculo, además de la imagen (y por ello aparece junto a la imagen), utilice un atributo alternativo vacío para la imagen:
 
@@ -847,11 +852,11 @@ Para cumplir este criterio de éxito, el idioma por defecto de una página web s
 
 * Si una página está escrita en inglés británico, el elemento `<html>` debería ser:
 
-`<html lang = "en-gb">`
+  `<html lang = "en-gb">`
 
 * Por su parte, una página en inglés estadounidense debería adoptar el estándar siguiente:
 
-`<html lang = "en-us">`
+  `<html lang = "en-us">`
 
 En AEM, el idioma predeterminado de la página se define al crear la página, pero también se puede cambiar al editarla. Puede hacerlo desde la **barra de tareas** - pestaña **Página** - **Propiedades de página…** - pestaña **Avanzadas**.
 
@@ -956,11 +961,11 @@ La colocación de las etiquetas también es importante, ya que les ayuda a local
 
 * Casillas o botones de opción:
 
-Las etiquetas se colocan inmediatamente a la derecha del campo.
+  Las etiquetas se colocan inmediatamente a la derecha del campo.
 
 * Otros componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados):
 
-Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
+  Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
 
 En formularios simples con funcionalidad limitada, etiquetar correctamente una `Submit` El botón puede actuar como una etiqueta para el campo adyacente (por ejemplo, `Search`). Resulta útil cuando puede ser difícil encontrar espacio para el texto de una etiqueta.
 

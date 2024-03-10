@@ -2,10 +2,10 @@
 title: Creación para Headless con Adobe Experience Manager
 description: Introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y a cómo crear contenido para su proyecto.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 88%
+source-wordcount: '649'
+ht-degree: 87%
 
 ---
 
@@ -30,7 +30,7 @@ Sin encabezado es un término utilizado para describir los sistemas que disocian
 
 Tradicionalmente, el contenido se gestionaba en un CMS y el mismo CMS era el encargado de mostrarlo en las páginas web.
 
-Ahora, sin encabezado significa que su conjunto de contenidos puede ser administrado en el CMS y luego accedido por una, o más, aplicaciones (independientes).
+Ahora, sin encabezado significa que el conjunto de contenido se puede administrar en el CMS y luego acceder a él mediante una o más aplicaciones (independientes).
 
 Esto quiere decir que el contenido puede enviarse a cualquier dispositivo, en una gran variedad de formatos. Esto hace que todo el proceso sea mucho más flexible, y también supone que no tiene que preocuparse por el diseño y el formato.
 
@@ -82,8 +82,8 @@ Ahora que ya conoce los conceptos y la terminología, el siguiente paso es [Apre
 
 * [Recorrido de traducción de contenidos sin encabezado de AEM](/help/journey-headless/translation/overview.md)
 
-* [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 
-* [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 
-* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

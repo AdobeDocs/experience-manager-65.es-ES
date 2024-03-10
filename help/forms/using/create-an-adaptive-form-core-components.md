@@ -9,10 +9,10 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 75%
+source-wordcount: '1733'
+ht-degree: 76%
 
 ---
 
@@ -32,7 +32,7 @@ Los formularios adaptables le permiten crear formularios que son atractivos, rec
 
 Antes de empezar, obtenga información sobre el tipo de componentes de Forms disponibles para usted:
 
-* [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es): son componentes estandarizados de captura de datos. Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital. Un desarrollador puede personalizar y aplicar estilo fácilmente a estos componentes. Adobe recomienda utilizar estos componentes modernos y ampliables para desarrollar Forms adaptable.
+* [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es): son componentes estandarizados de captura de datos. Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital. Un desarrollador puede personalizar y aplicar estilo fácilmente a estos componentes. Adobe recomienda aprovechar estos componentes modernos y ampliables para desarrollar formularios adaptables.
 
 * [Componentes de base de formularios adaptables](creating-adaptive-form.md): estos son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios, Adobe recomienda utilizar  [Componentes principales de Forms adaptable](/help/forms/using/create-adaptive-form.md) para crear un Forms adaptable.
 
@@ -63,7 +63,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 1. Inicie sesión en su [AEM instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
-1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
+1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
 1. Seleccionar **[!UICONTROL Crear]**  > **[!UICONTROL Crear Forms adaptable]**.
 

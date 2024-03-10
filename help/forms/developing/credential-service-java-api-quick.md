@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ El Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio 
 
 [Inicio rápido (modo SOAP): Eliminación de credenciales mediante Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
-No puede realizar operaciones de servicio de credenciales mediante servicios web.
+>No puede realizar operaciones de servicio de credenciales mediante servicios web.
 
 ## Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java™ {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 

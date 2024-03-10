@@ -2,10 +2,10 @@
 title: Acceso y entrega de fragmentos de contenido Guía de inicio rápido sin encabezado
 description: AEM Aprenda a utilizar la API de REST de Recursos de la aplicación para administrar fragmentos de contenido y la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 47%
+ht-degree: 40%
 
 ---
 
@@ -30,7 +30,7 @@ Los arquitectos de la información deben diseñar consultas para sus extremos de
 1. AEM Inicie sesión en la aplicación y acceda a la [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Por ejemplo: `http://<host>:<port>/aem/graphiql.html`.
 
-1. El de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para generar consultas, recuperar fragmentos de contenido y entregarlos sin problemas como JSON.
+1. GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para generar consultas, recuperar fragmentos de contenido y entregarlos sin problemas como JSON.
    * El panel izquierdo le permite generar la consulta.
    * El panel derecho muestra los resultados.
    * El editor de consultas incluye la finalización del código y teclas de función para ejecutar fácilmente la consulta.
@@ -60,7 +60,7 @@ Los arquitectos de la información deben diseñar consultas para sus extremos de
 1. Haga clic en **Ejecutar consulta** (flecha derecha) o utilice el icono `Ctrl-Enter` y los resultados se muestran como JSON en el panel derecho.
    ![Resultados de GraphiQL](assets/graphiql-results.png)
 
-1. Hacer clic:
+1. Haga clic:
    * **Documentos** en la parte superior derecha de la página, para mostrar la documentación en contexto que le ayudará a crear sus consultas, que se adaptan a sus propios modelos.
    * **Historial** en la barra de herramientas superior para mostrar las consultas anteriores.
    * **Guardar como** y **Guardar** para guardar las consultas, tras lo cual puede enumerarlas y recuperarlas desde el **Consultas persistentes** panel y **Publish**.

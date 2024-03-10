@@ -7,9 +7,9 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
+source-git-commit: 7c83cdf779fc2b72b73e29064b2feec594e2e4b8
 workflow-type: tm+mt
-source-wordcount: '6084'
+source-wordcount: '6086'
 ht-degree: 99%
 
 ---
@@ -282,7 +282,7 @@ Utilice los puntos de interrupción del editor de temáticas para definir un est
 
 Al seleccionar un componente en el Lienzo, sus propiedades de estilo se muestran en la barra lateral. Seleccione el tipo de objeto y su estado y, a continuación, proporcione su estilo.
 
-### Estilos utilizados recientemente en el Editor de temáticas {#recently-used-styles-in-theme-editor}
+### Estilos utilizados recientemente en el editor de temáticas {#recently-used-styles-in-theme-editor}
 
 El editor de temáticas almacena en caché hasta 10 estilos aplicados a un componente. Puede utilizar los estilos en caché con otros componentes de una temática. Los estilos utilizados recientemente están disponibles justo debajo del componente seleccionado en la barra lateral como cuadro de lista. Inicialmente, la lista de estilos utilizados recientemente está vacía.
 

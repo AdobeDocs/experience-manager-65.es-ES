@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 78%
+source-wordcount: '424'
+ht-degree: 69%
 
 ---
 # Código de conducta de Adobe
@@ -37,7 +37,7 @@ Los responsables de los proyectos tienen el derecho y la responsabilidad de elim
 
 ## Ámbito
 
-Este Código de conducta se aplica tanto en los espacios del proyecto como en los espacios públicos cuando una persona representa al proyecto o su comunidad. Algunos ejemplos de representación de un proyecto o comunidad incluyen el uso de una dirección de correo electrónico oficial del proyecto, la publicación a través de una cuenta oficial de medios sociales o la actuación como representante designado en un evento en línea o sin conexión. Los responsables de los proyectos podrán definir y aclarar la representación de un proyecto.
+Este Código de conducta se aplica tanto en los espacios del proyecto como en los espacios públicos cuando una persona representa al proyecto o su comunidad. Algunos ejemplos de representación de un proyecto o comunidad incluyen el uso de una dirección oficial de correo electrónico, publicaciones a través de una cuenta oficial de medios sociales o actuar como representante designado en un evento en línea o sin conexión. Los responsables de los proyectos podrán definir y aclarar la representación de un proyecto.
 
 ## Aplicación
 

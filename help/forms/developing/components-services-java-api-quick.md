@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ El Inicio rápido (SOAP) de la API de Java™ está disponible para componentes 
 [Inicio rápido (modo SOAP): Eliminación de componentes mediante Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
-Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice la estrategia de invocación en VM. Utilice el método de invocación de DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory con protocolos SOAP o EJB.
+>Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice la estrategia de invocación en VM. Utilice el método de invocación de DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory con protocolos SOAP o EJB.
 
 ## Inicio rápido (modo SOAP): Implementación de un componente mediante la API de Java™ {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

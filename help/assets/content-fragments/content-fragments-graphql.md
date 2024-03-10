@@ -4,10 +4,10 @@ description: AEM Aprenda a utilizar fragmentos de contenido de con GraphQL para 
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 80%
+source-wordcount: '669'
+ht-degree: 74%
 
 ---
 
@@ -32,7 +32,7 @@ Con Adobe Experience Manager AEM AEM (), puede utilizar fragmentos de contenido,
 
 Un sistema de administración de contenido sin encabezado (CMS) es lo siguiente:
 
-* “*Un sistema de administración de contenido sin encabezado, o CMS sin encabezado, es un sistema de administración de contenido (CMS) de back-end creado desde cero como repositorio de contenido que hace que el contenido sea accesible a través de una API para su visualización en cualquier dispositivo“.*
+* &quot;*Un sistema de administración de contenido sin encabezado, o CMS sin encabezado, es un sistema de administración de contenido (CMS) de back-end creado desde cero como repositorio de contenido que hace que el contenido sea accesible a través de una API para su visualización en cualquier dispositivo.*
 
   Consulte [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 

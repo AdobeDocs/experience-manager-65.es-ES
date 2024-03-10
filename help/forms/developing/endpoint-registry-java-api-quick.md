@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Inicio rápido (SOAP) de la API de Java™ está disponible para el Registro de 
 
 [Inicio rápido: Recuperación de información del conector de extremo mediante Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
-No se puede trabajar con extremos mediante un servicio web.
+>No se puede trabajar con extremos mediante un servicio web.
 
 ## Inicio rápido: Agregar un extremo EJB mediante la API de Java™ {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
@@ -251,7 +251,7 @@ El siguiente ejemplo de código Java™ agrega un punto final de carpeta inspecc
 
 >[!NOTE]
 >
-Incluya el archivo WatchedFolderEndpointConfigConstants.java en su proyecto para que pueda compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivo constante de valores de configuración de carpeta inspeccionada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>Incluya el archivo WatchedFolderEndpointConfigConstants.java en su proyecto para que pueda compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivo constante de valores de configuración de carpeta inspeccionada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -386,7 +386,7 @@ El siguiente ejemplo de código Java™ agrega un extremo de correo electrónico
 
 >[!NOTE]
 >
-Incluya el archivo EmailEndpointConfigConstants.java en su proyecto para que pueda compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivo constante de valores de configuración de correo electrónico](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Incluya el archivo EmailEndpointConfigConstants.java en su proyecto para que pueda compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivo constante de valores de configuración de correo electrónico](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*

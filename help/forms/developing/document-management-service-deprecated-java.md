@@ -7,14 +7,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
-# Inicio rápido (SOAP) de la API de Java servicio de Administración de documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Inicio rápido (SOAP) de la API de Java del servicio Administración de documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 Los siguientes tutoriales rápidos están disponibles para el servicio Administración de documentos (obsoleto).
 
@@ -38,7 +38,7 @@ Los siguientes tutoriales rápidos están disponibles para el servicio Administr
 
 [Inicio rápido (modo SOAP): Configuración de permisos de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >

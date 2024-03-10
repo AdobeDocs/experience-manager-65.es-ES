@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '6650'
 ht-degree: 0%
@@ -322,7 +322,7 @@ while (isSupportedPath(path)) {
 
 #### Administración de directivas de CUG por principal {#managing-cug-policies-by-pincipal}
 
-Las extensiones definidas por `JackrabbitAccessControlManager` que permiten editar directivas de control de acceso por principal no se implementan con la administración de control de acceso de CUG, ya que por definición una directiva de CUG siempre afecta a todas las principales: las enumeradas con la variable `PrincipalSetPolicy` se les concede acceso de lectura, mientras que a todos los demás principales se les impedirá leer el contenido en el árbol definido por el nodo de destino.
+Las extensiones definidas por `JackrabbitAccessControlManager` que permiten editar las políticas de control de acceso por entidad de seguridad no se implementan con la administración de control de acceso de CUG, ya que por definición una política de CUG siempre afecta a todas las entidades de seguridad: las que se enumeran con la variable `PrincipalSetPolicy` se les concede acceso de lectura, mientras que a todos los demás principales se les impedirá leer el contenido en el árbol definido por el nodo de destino.
 
 Los métodos correspondientes siempre devuelven una matriz de directivas vacía, pero no producen excepciones.
 

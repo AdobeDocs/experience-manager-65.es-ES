@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2317'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Al crear un trabajo, solo se garantiza que la carga útil se encuentre en la ins
 
 ## Administración de topologías {#administering-topologies}
 
-Las topologías son clústeres de Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
+Las topologías son clústeres Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
 
 Cada instancia de Experience Manager ejecuta los siguientes servicios relacionados con la descarga:
 

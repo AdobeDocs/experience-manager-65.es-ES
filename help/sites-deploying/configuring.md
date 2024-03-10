@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ AEM AEM AEM Con el lanzamiento de los servicios de documentos de la y la segurid
 
 [Descarga](/help/sites-deploying/offloading.md) distribuye las tareas de procesamiento entre las instancias de Experience Manager de una topología. Con la descarga, puede utilizar instancias de Experience Manager específicas para realizar tipos específicos de procesamiento. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
 
-Las topologías son clústeres de Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
+Las topologías son clústeres Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
 
 Para obtener más información sobre cómo ver o modificar la pertenencia a la topología, consulte la [Administración de topologías](/help/sites-deploying/offloading.md#administering-topologies) sección.
 

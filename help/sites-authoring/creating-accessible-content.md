@@ -2,10 +2,10 @@
 title: Crear contenido accesible para Adobe Experience Manager (Conformidad con WCAG 2.1)
 description: AEM Uso para ayudar a las personas con discapacidades a hacer que el contenido web sea accesible para ellas y lo puedan utilizar
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -693,8 +693,13 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 2.2.1](https://ww
 * Criterios de éxito 2.2.2
 * Nivel A
 * Pausar, parar, ocultar: Para mover, cerrar, desplazar o actualizar automáticamente la información, los siguientes criterios son verdaderos:  
-   * Movimiento, parpadeo desplazamiento: Para cualquier tipo de información en movimiento, que parpadea o se desplaza que (a) empiece de manera automática, (b) dure más de cinco segundos y (c) se presente en paralelo con otro contenido, existe un mecanismo que el usuario puede utilizar para pausarla, pararla u ocultarla, a menos que el movimiento, el parpadeo o el desplazamiento forme parte de una actividad en la que sea esencial;
-   * Actualización automática: para cualquier información de actualización automática que (a) se inicie automáticamente y (b) se presente en paralelo con otro contenido, existe un mecanismo para que el usuario la ponga en pausa, la detenga u oculte, o para controlar la frecuencia de la actualización a menos que la actualización automática forme parte de una actividad en la que sea esencial.
+   * Movimiento, parpadeo, desplazamiento: para cualquier información de movimiento, parpadeo o desplazamiento que
+      * (a) se inicia automáticamente,
+      * (b) dure más de cinco segundos, y
+      * (C) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario lo ponga en pausa, lo detenga u oculte a menos que el movimiento, el parpadeo o el desplazamiento formen parte de una actividad donde sea esencial;
+   * Actualización automática: para cualquier información de actualización automática que
+      * (a) se inicie automáticamente, y
+      * (b) se presente en paralelo con otros contenidos, exista un mecanismo para que el usuario lo ponga en pausa, lo detenga, lo oculte o controle la frecuencia de la actualización, a menos que la actualización automática forme parte de una actividad en la que sea esencial.
 
 Puntos que se deben tener en cuenta:
 

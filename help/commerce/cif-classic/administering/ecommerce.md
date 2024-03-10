@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '763'
 ht-degree: 2%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 2%
 * [Conceptos ](/help/commerce/cif-classic/administering/concepts.md)
 * [Administración (genérica)](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe ofrece dos versiones del complemento Commerce Integration Framework:
+Adobe proporciona dos versiones del Commerce integration framework:
 
 <table>
  <tbody>
   <tr>
    <th><p> </p> </th>
-   <th><p>CIF local</p> </th>
-   <th><p>CIF Cloud</p> </th>
+   <th><p>CIF local de la zona de trabajo</p> </th>
+   <th><p>CIF Nube de</p> </th>
   </tr>
   <tr>
    <td><p>Versiones de AEM compatibles</p> </td>
