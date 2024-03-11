@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4889c3c36ec86b1c9527cd2bc5eb77984e278342
+source-git-commit: 31ad82fca920efcb1c5f4b56673928754a2d1763
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3640'
 ht-degree: 2%
 
 ---
@@ -469,10 +469,11 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 * El editor de revisión y corrección (RnC) del servicio de automated forms conversion no se puede cargar. Puede instalar el [AEM Paquete de servicio de formulario 20 más reciente de 6.5 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para resolver el problema. (FORMS-13491)
 * AEM Forms AEM Después de actualizar del paquete de servicio 18 (6.5.18.0) o el paquete de servicio 19 (6.5.19.0) de Forms AEM 6.5 a paquete de servicio 20 (6.5.20.0) de Forms 6.5, los usuarios se toparán con un error de compilación de JSP. AEM No pueden abrir ni crear formularios adaptables y se están topando con errores con otras interfaces de, como el editor de páginas, la interfaz de usuario de AEM Forms AEM y el editor de flujo de trabajo de la. Puede instalar el [AEM Paquete de servicio de formulario 20 más reciente de 6.5 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para resolver el problema. (FORMS-13492)
 
-AEM Los clientes pueden instalar el paquete de servicio de Forms más reciente de 6.5 para resolver los problemas mencionados.  Estos son los vínculos directos para los sistemas operativos admitidos:
-* [AEM Paquete de servicio 20 de Forms para 6.5 para Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
-* [AEM Paquete de servicio 20 de Forms para 6.5 para Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
-* [AEM Paquete de servicio 20 de Forms para Linux de.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
+<!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
+* [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
+* [AEM 6.5 Forms Service Pack 20 for Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
+-->
 
 <!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
