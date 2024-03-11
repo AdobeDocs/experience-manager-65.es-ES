@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: a0ad6c5d61a971c5210f7d6dd7ef85e5effab44a
+source-git-commit: 4889c3c36ec86b1c9527cd2bc5eb77984e278342
 workflow-type: tm+mt
-source-wordcount: '3765'
+source-wordcount: '3694'
 ht-degree: 2%
 
 ---
@@ -462,26 +462,12 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
 ### Problemas conocidos de AEM Forms {#known-issues-aem-forms-6520}
 
-* AEM Forms AEM Después de actualizar del paquete de servicio 18 (6.5.18.0) o el paquete de servicio 19 (6.5.19.0) de Forms AEM 6.5 a paquete de servicio 20 (6.5.20.0) de Forms 6.5, los usuarios se toparán con un error de compilación de JSP. AEM No pueden abrir ni crear formularios adaptables y están experimentando errores con otras interfaces de usuario, como el editor de páginas, la interfaz de usuario de AEM Forms AEM y el editor de flujo de trabajo de la. Se muestra un mensaje de error similar al siguiente:
-
-  `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
-
-  Para solucionar el problema:
-
-   1. Descargue la revisión para su sistema operativo:
-      * [Revisión para Microsoft Windows](/help/release-notes/assets/Hotfix-windows.zip)
-      * [Revisión para Linux](/help/release-notes/assets/Hotfix-Linux.zip)
-      * [Revisión para Apple macOS](/help/release-notes/assets/Hotfix-osx.zip)
-
-   1. Cargue e instale el paquete (.zip) mediante el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
-   1. AEM Reinicie el servidor de y verifique el estado de activación de todos los paquetes una vez finalizado el proceso de reinicio. Puede monitorizar el estado de los paquetes accediendo a: `https://server:host/system/console/bundles`. Asegúrese de que todos los paquetes estén activos antes de continuar con más tareas.
-
 * El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)
 * Las Forms adaptables permiten utilizar funciones personalizadas con ECMAScript versión 5 o anteriores. Cuando una función personalizada utiliza la versión 6 o posterior de ECMAScript, como las funciones &quot;let&quot;, &quot;const&quot; o &quot;arrow&quot;, es posible que el editor de reglas no se abra correctamente.
-* Los usuarios no pueden crear una carta de Administración de correspondencia. Cuando un usuario crea una carta, aparece un error con la descripción &quot;Objeto&quot; y la carta no se crea. Las miniaturas de los diseños tampoco se pueden cargar en la pantalla de creación de cartas. (FORMS-13496)
-* El servicio de comunicaciones interactivas crea el documento del PDF, pero los datos del usuario no se rellenan automáticamente en los campos del formulario. El servicio de relleno previo no funciona como se esperaba. (FORMS-13413, FORMS-13493)
-* El editor de revisión y corrección (RnC) del servicio de automated forms conversion no se puede cargar. (FORMS-13491)
-* AEM Forms AEM Después de actualizar del paquete de servicio 18 (6.5.18.0) o el paquete de servicio 19 (6.5.19.0) de Forms AEM 6.5 a paquete de servicio 20 (6.5.20.0) de Forms 6.5, los usuarios se toparán con un error de compilación de JSP. AEM No pueden abrir ni crear formularios adaptables y se están topando con errores con otras interfaces de, como el editor de páginas, la interfaz de usuario de AEM Forms AEM y el editor de flujo de trabajo de la. (FORMS-13492)
+* Los usuarios no pueden crear una carta de Administración de correspondencia. Cuando un usuario crea una carta, aparece un error con la descripción &quot;Objeto&quot; y la carta no se crea. Las miniaturas de los diseños tampoco se pueden cargar en la pantalla de creación de cartas. Puede instalar el [AEM Paquete de servicio de formulario 20 más reciente de 6.5 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para resolver el problema. (FORMS-13496)
+* El servicio de comunicaciones interactivas crea el documento del PDF, pero los datos del usuario no se rellenan automáticamente en los campos del formulario. El servicio de relleno previo no funciona como se esperaba. Puede instalar el [AEM Paquete de servicio de formulario 20 más reciente de 6.5 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para resolver el problema. (FORMS-13413, FORMS-13493)
+* El editor de revisión y corrección (RnC) del servicio de automated forms conversion no se puede cargar. Puede instalar el [AEM Paquete de servicio de formulario 20 más reciente de 6.5 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para resolver el problema. (FORMS-13491)
+* AEM Forms AEM Después de actualizar del paquete de servicio 18 (6.5.18.0) o el paquete de servicio 19 (6.5.19.0) de Forms AEM 6.5 a paquete de servicio 20 (6.5.20.0) de Forms 6.5, los usuarios se toparán con un error de compilación de JSP. AEM No pueden abrir ni crear formularios adaptables y se están topando con errores con otras interfaces de, como el editor de páginas, la interfaz de usuario de AEM Forms AEM y el editor de flujo de trabajo de la. Puede instalar el [AEM Paquete de servicio de formulario 20 más reciente de 6.5 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para resolver el problema. (FORMS-13492)
 
 AEM Los clientes pueden instalar el paquete de servicio de Forms más reciente de 6.5 para resolver los problemas mencionados.  Estos son los vínculos directos para los sistemas operativos admitidos:
 * [AEM Paquete de servicio 20 de Forms para 6.5 para Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
