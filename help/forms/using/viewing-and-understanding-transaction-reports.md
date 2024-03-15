@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 98%
+source-wordcount: '881'
+ht-degree: 93%
 
 ---
 
-# Ver y comprender los informes de transacciones{#viewing-and-understanding-transaction-reports}
+# Ver y comprender los informes de transacciones de AEM Forms en OSGi{#viewing-and-understanding-transaction-reports}
 
 Los informes de transacciones permiten capturar y realizar un seguimiento de la cantidad de formularios enviados, documentos procesados y documentos representados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Para obtener más información, consulte [Información general sobre los informes de transacciones de AEM Forms](../../forms/using/transaction-reports-overview.md).
 
@@ -88,6 +88,6 @@ Los informes de transacciones colocan toda la información mostrada en el inform
 
 ## Artículos relacionados {#related-articles}
 
-* [Información general sobre los informes de transacciones](../../forms/using/transaction-reports-overview.md)
-* [API facturables de informes de transacciones](../../forms/using/transaction-reports-billable-apis.md)
-* [Registrar una transacción para implementaciones personalizadas](/help/forms/using/record-transaction-custom-implementation.md)
+* [Información general de informes de transacciones para AEM Forms en OSGi](../../forms/using/transaction-reports-overview.md)
+* [API facturables de informes de transacciones para AEM Forms en OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Registrar una transacción para implementaciones personalizadas para AEM Forms en OSGi](/help/forms/using/record-transaction-custom-implementation.md)

@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 93%
+source-wordcount: '476'
+ht-degree: 89%
 
 ---
 
-# Información general sobre los informes de transacciones{#transaction-reports-overview}
+# Informes de transacciones para AEM Forms en OSGi {#transaction-reports-overview}
 
-## Introducción {#introduction}
+<!--## Introduction {#introduction}
 
-Los informes de transacciones de AEM Forms le permiten mantener un recuento de todas las transacciones realizadas desde una fecha especificada en su implementación de AEM Forms. El objetivo es proporcionar información sobre el uso del producto y ayudar a las partes interesadas empresariales a comprender sus volúmenes de procesamiento digital. Algunos ejemplos de transacciones son:
+Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
-* Envío de un formulario adaptable, un formulario HTML5 o un conjunto de formularios
-* Representación de una versión impresa o web de una comunicación interactiva
-* Conversión de un documento de un formato de archivo a otro
+* Submission of an adaptive form, an HTML5 Form, or a form set
+* Rendition of a print or a web version of an interactive communication
+* Conversion of a document from one file format to another
 
-Para obtener más información sobre lo que se considera una transacción, consulte [API facturables](../../forms/using/transaction-reports-billable-apis.md).
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
 El registro de transacciones está desactivado de forma predeterminada. Puede [habilitar el registro de transacciones](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) desde la consola web de AEM. Puede ver informes de transacciones sobre instancias de autor, procesamiento o publicación. Ver informes de transacciones sobre instancias de autor o procesamiento para una suma agregada de todas las transacciones. Ver informes de transacciones en las instancias de publicación para un recuento de todas las transacciones que se realizan solamente en esa instancia de publicación desde la que se ejecuta el informe.
 
@@ -57,6 +57,6 @@ El recuento de transacciones se replica de forma inversa de las instancias de pu
 
 ## Artículos relacionados {#related-articles}
 
-* [Ver y comprender los informes de transacciones](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [API facturables de informes de transacciones](../../forms/using/transaction-reports-billable-apis.md)
-* [Registrar una transacción para implementaciones personalizadas](/help/forms/using/record-transaction-custom-implementation.md)
+* [Ver y comprender un informe de transacciones para AEM Forms en OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [API facturables de informes de transacciones para AEM Forms en OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Registrar una transacción para implementaciones personalizadas para AEM Forms en OSGi](/help/forms/using/record-transaction-custom-implementation.md)

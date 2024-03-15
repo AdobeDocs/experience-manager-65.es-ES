@@ -5,14 +5,15 @@ topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 89%
+source-wordcount: '1739'
+ht-degree: 87%
 
 ---
 
-# API facturables de informes de transacciones{#transaction-reports-billable-apis}
+# API facturables de informes de transacciones para AEM Forms en OSGi {#transaction-reports-billable-apis}
 
 AEM Forms ofrece varias API para enviar formularios, procesar documentos y representar documentos. Algunas API se contabilizan como transacciones y otras se pueden usar libremente. Este documento proporciona una lista de todas las API que se contabilizan como transacciones en un informe de transacciones. Estos son algunos escenarios comunes en los que se utiliza un API facturable:
 
@@ -500,6 +501,6 @@ Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del 
 
 ## Artículos relacionados {#related-articles}
 
-* [Información general sobre los informes de transacciones](../../forms/using/transaction-reports-overview.md)
-* [Ver y comprender los informes de transacciones](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Registrar una transacción para implementaciones personalizadas](/help/forms/using/record-transaction-custom-implementation.md)
+* [Información general de informes de transacciones para AEM Forms en OSGi](../../forms/using/transaction-reports-overview.md)
+* [Ver y comprender los informes de transacciones de AEM Forms en OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Registrar una transacción para implementaciones personalizadas para AEM Forms en OSGi](/help/forms/using/record-transaction-custom-implementation.md)
