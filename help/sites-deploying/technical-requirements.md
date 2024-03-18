@@ -3,9 +3,9 @@ title: Requisitos técnicos
 description: Una lista de las plataformas de cliente y servidor admitidas para Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
+source-git-commit: b9a5b6f8f990a9dd0fcf77ea3972ad0c6f401831
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3652'
 ht-degree: 12%
 
 ---
@@ -185,7 +185,7 @@ La versión mínima de la API de servlet requerida es Servlet 3.1
 1. Recomendado para implementaciones con AEM Forms.
 1. AEM Al iniciar implementaciones de 6.5 en servidores de aplicaciones, se pasa a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir usando aplicación servidores. Para los nuevos clientes, viene con criterios de soporte y un programa de soporte como se indica en la descripción de Level-R anterior.
 1. Solo AEM Forms aplicable:
-   * Se ha eliminado la compatibilidad con JBoss EAP 7.1.4 y se ha añadido compatibilidad con JBoss®® EAP 7.4.10.
+   * Se ha eliminado la compatibilidad con JBoss® EAP 7.1.4 y se ha añadido compatibilidad con JBoss® EAP 7.4.10.
 
 ### Sistemas operativos para servidor {#server-operating-systems}
 
@@ -202,7 +202,7 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 | Oracle Solaris™ 11 | Z: No compatible |
 | IBM® AIX® 7.2 | Z: No compatible |
 
-1. Linux® Kernel 2.6, 3. x, 4. x y 5. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, CentOS, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, CentOS, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
 1. AEM Forms es compatible con Ubuntu 20.04 LTS.
 1. Distribución Linux® compatible con Adobe Managed Services.
 
@@ -244,7 +244,7 @@ AEM Para obtener recomendaciones sobre cómo implementar en Azure o AWS, fuera d
 
 ### Plataformas de Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargue la última versión de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere la versión 4.3.2 o superior de Dispatcher.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargue la última versión de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
@@ -254,7 +254,7 @@ Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatche
 | Microsoft® IIS 10 (Internet Information Server) | A: Compatible |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: No compatible |
 
-1. Los servidores web construidos en base al código fuente httpd de Apache tienen tanto soporte como la versión de httpd en la que se basa. En caso de duda, pida al Adobe que confirme el nivel de asistencia relacionado con el producto del servidor correspondiente. Los casos siguientes:
+1. Los servidores web creados en función del código fuente Apache httpd son tan compatibles como la versión de httpd en la que se basan. En caso de duda, pida al Adobe que confirme el nivel de asistencia relacionado con el producto del servidor correspondiente. Los casos siguientes:
 
    1. El servidor HTTP se creó utilizando solo distribuciones de origen oficiales de Apache, o
    1. El servidor HTTP se entregó como parte del sistema operativo en el que se está ejecutando. Ejemplos: IBM® HTTP Server, Servidor HTTP de Oracle
@@ -343,7 +343,7 @@ Por lo general, la compatibilidad del explorador con los sitios web procesados p
 
 Al conectarse con MicrosoftAEM ® Windows 7+ a una instancia de que no esté protegida con SSL, la autenticación básica a través de una red no segura debe habilitarse en Windows. Requiere un cambio en el Registro de Windows de WebClient:
 
-1. Busque la subclave del Registro:
+1. Busque la subclave del registro:
 
    * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 
@@ -409,11 +409,11 @@ Si utiliza Dynamic Media en Linux®, se deben cumplir los siguientes requisitos 
 
 >[!NOTE]
 >
->**Arquitectura NUMA:** Los sistemas con procesadores con AMD64 e Intel® EM64T se configuran normalmente como plataformas de arquitectura de memoria no uniforme (NUMA). Es decir, el núcleo construye múltiples nodos de memoria en el momento del arranque en lugar de construir un solo nodo de memoria.
+>**Arquitectura NUMA:** Los sistemas con procesadores con AMD64 e Intel® EM64T se configuran normalmente como plataformas de arquitectura de memoria no uniforme (NUMA). Es decir, el núcleo construye varios nodos de memoria durante el arranque en lugar de construir un solo nodo de memoria.
 >
 >La construcción de varios nodos puede causar agotamiento de la memoria en uno o más de los nodos antes de que otros nodos se agoten. Cuando se agota la memoria, el núcleo puede decidir matar procesos (por ejemplo, el servidor de imágenes o el servidor de plataforma) aunque haya memoria disponible.
 >
->Por lo tanto, Adobe recomienda que, si está ejecutando un sistema de este tipo, desactive NUMA usando **numa=off** opción de arranque para evitar que el núcleo destruya estos procesos.
+>Por lo tanto, Adobe Systems recomienda que si está ejecutando un sistema de este tipo desactive NUMA utilizando la **opción numa=off** boot para evitar que el kernel mate estos procesos.
 
 >[!NOTE]
 >
@@ -522,7 +522,7 @@ Para Windows x86:
 
 ### Requisitos de AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft Windows 2016 Server, Microsoft Windows 2019 Server, Microsoft®®® Windows 10 o Windows®®®® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
 * 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
 * 16 GB de espacio en disco para 32 bits o 20 GB de espacio en disco para SO de 64 bits;
@@ -548,8 +548,8 @@ XMP La reescritura de datos es compatible y está habilitada para las siguientes
    * Windows Server
    * macOS X (64 bits)
 
-* **Formatos de archivo**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
+* **Archivo formatos**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
 
 ### Requisitos para que Recursos AEM procese activos de metadatos pesado en Linux® {#assetsonlinux}
 
-El proceso XMPFilesProcessor requiere que biblioteca GLIBC_2.14 funcione. Utilice un núcleo Linux® que contenga GLIBC_2.14, por ejemplo, Linux® kernel versión 3.1.x. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos de PSD. El uso de una versión anterior de GLIBC provoca un error en los registros que comienzan por `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+El proceso XMPFilesProcessor requiere la biblioteca GLIBC_2.14 para funcionar. Utilice un núcleo Linux® que contenga GLIBC_2.14, por ejemplo, Linux® kernel versión 3.1.x. Mejora el rendimiento para procesar recursos que contienen una gran cantidad de metadatos, como archivos de PSD. El uso de una versión anterior de GLIBC provoca un error en los registros que comienzan por `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
