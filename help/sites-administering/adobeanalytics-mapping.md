@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 1%
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
@@ -150,7 +151,7 @@ Tomando la imagen anterior como ejemplo, la variable **AEM vista de** tiene las 
 1. Izquierda: el buscador de contenido (cf#) se rellena con variables de Adobe Analytics basadas en los RSID seleccionados.
 1. Encabezados de pestañas (**AEM vista de** y **Vista de Analytics**): utilícelos para cambiar entre las dos vistas.
 
-1. **Vista AEM**:
+1. **AEM vista de**:
 
    1. Si el marco de trabajo tiene componentes heredados de su elemento principal, se enumerarán aquí, junto con las variables asignadas a los componentes.
 
@@ -197,9 +198,9 @@ Tomando la imagen anterior como ejemplo, la variable **AEM vista de** tiene las 
 >
 >Por ejemplo, junto a `prop3` puede agregar lo siguiente:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-para enviar el *title* de una página concatenada con su *sección del sitio* usando *:* (dos puntos) y con el prefijo *Adobe* as `prop3`
+>para enviar el *title* de una página concatenada con su *sección del sitio* usando *:* (dos puntos) y con el prefijo *Adobe* as `prop3`
 >
 
 >[!CAUTION]
 >
-Solo se puede asignar una variable de CQ a una variable de Adobe Analytics en un momento dado.
+>Solo se puede asignar una variable de CQ a una variable de Adobe Analytics en un momento dado.

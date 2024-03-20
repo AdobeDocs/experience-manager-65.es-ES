@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 2%
@@ -299,7 +300,7 @@ Consulte [MSRP: proveedor de recursos de almacenamiento de MongoDB](/help/commun
 
 Consulte [Activación del CRXDE Lite AEM en la](/help/sites-administering/enabling-crxde-lite.md) para obtener más información.
 
-### Recolección de papelera del almacén de datos {#data-store-garbage-collection}
+### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
 
 Consulte [Recopilación de residuos del almacén de datos](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) para obtener más información.
 

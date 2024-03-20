@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '746'
 ht-degree: 3%
 
 ---
@@ -112,7 +113,7 @@ Para crear el proyecto de ejemplo, complete los siguientes pasos:
 
    ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-1. Haga clic en **Finalizar**. Se crea la estructura del proyecto.
+1. Clic **Finalizar**. Se crea la estructura del proyecto.
 
    >[!NOTE]
    >

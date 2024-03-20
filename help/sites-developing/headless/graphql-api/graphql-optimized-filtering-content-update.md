@@ -1,13 +1,14 @@
 ---
 title: Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL
-description: Obtenga información sobre cómo actualizar los fragmentos de contenido para el filtrado optimizado de GraphQL en Adobe Experience Manager para el envío de contenido sin encabezado.
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+description: Obtenga información sobre cómo actualizar los fragmentos de contenido para el filtrado optimizado de GraphQL en Adobe Experience Manager para la entrega de contenido sin encabezado.
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 42%
+source-wordcount: '255'
+ht-degree: 37%
 
 ---
-
 
 # Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL {#updating-content-fragments-for-optimized-graphql-filtering}
 

@@ -7,7 +7,8 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 3%
@@ -132,12 +133,12 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>precreateElements</code></td>
-     <td><p><code>Boolean</code></p> <p>required</p> </td>
+     <td><p><code>Boolean</code></p> <p>Requerido</p> </td>
      <td><p><code>true</code>, si los subrecursos que representan los elementos (excepto el elemento principal) del fragmento de contenido deben crearse cuando se cree el fragmento de contenido; <em>false</em> si deben crearse "sobre la marcha".</p> <p><strong>Nota</strong>: actualmente este parámetro debe establecerse en <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>required</p> </td>
+     <td><p><code>Long</code></p> <p>Requerido</p> </td>
      <td><p>Versión de la estructura de contenido; compatible actualmente:</p> <p><strong>Nota</strong>: actualmente este parámetro debe establecerse en <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
@@ -154,7 +155,7 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>elements</code><br /> </td>
-     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
+     <td><p><code>nt:unstructured</code></p> <p>Requerido</p> </td>
      <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para <strong>Principal</strong> , pero puede contener [1..n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama del modelo del fragmento.</p> <p>El primer elemento (tal como se ve en el CRXDE Lite) se considera automáticamente como el <i>main</i> elemento; el nombre del nodo es irrelevante y el nodo en sí no tiene una relevancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td>
     </tr>
    </tbody>
@@ -176,7 +177,7 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>Requerido</p> </td>
      <td>El título del elemento (mostrado en el selector de elementos del editor de fragmentos).</td>
     </tr>
     <tr>
@@ -196,7 +197,7 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>Requerido</p> </td>
      <td>El nombre interno del elemento; debe ser único para el tipo de fragmento.</td>
     </tr>
    </tbody>
@@ -236,7 +237,7 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>Requerido</p> </td>
      <td>El título de la variación (mostrado en el del editor de fragmentos) <strong>Variación</strong> pestaña (carril izquierdo).</td>
     </tr>
     <tr>

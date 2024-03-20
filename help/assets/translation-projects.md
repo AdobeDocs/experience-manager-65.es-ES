@@ -5,10 +5,11 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 14%
+source-wordcount: '1889'
+ht-degree: 13%
 
 ---
 
@@ -30,8 +31,8 @@ Para crear una copia de idioma, almacene en déclencheur uno de los siguientes f
 El flujo de trabajo de creación y traducción se utiliza para generar copias de idioma para un idioma concreto por primera vez. El flujo de trabajo ofrece las siguientes opciones:
 
 * Crear solo una estructura.
-* Crear un proyecto de traducción.
-* Añadir a un proyecto de traducción existente.
+* Cree un proyecto de traducción.
+* Añada a un proyecto de traducción existente.
 
 ### Crear solo una estructura {#create-structure-only}
 

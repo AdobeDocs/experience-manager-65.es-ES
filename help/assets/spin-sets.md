@@ -9,7 +9,8 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 8%
@@ -171,7 +172,7 @@ Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicarlo a todos los recursos a la vez.
 
-1. Seleccionar **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparecerá en la carpeta en la que lo creó.
+1. Seleccione **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparecerá en la carpeta en la que lo creó.
 
 ## Ver un conjunto de giros {#viewing-spin-sets}
 

@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
+source-wordcount: '18860'
 ht-degree: 1%
 
 ---
@@ -383,7 +384,7 @@ Cree un documento de PDF mediante la API de salida (servicio web):
 
 Puede utilizar el servicio Output para crear un documento de PDF/A. Como PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento de PDF/A no contiene contenido de audio y vídeo. Al igual que otras tareas del servicio Output, puede proporcionar un diseño de formulario y datos para combinarlos con uno para crear un documento de PDF/A.
 
-La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, a y b. La principal diferencia entre ambos está relacionada con la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad b. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes están incrustadas en el documento PDF/A generado.
+La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, a y b. La principal diferencia entre los dos es la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad b. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes estén incrustadas en el documento PDF/A generado.
 
 Aunque PDF/A es el estándar para archivar documentos de PDF, no es obligatorio que PDF/A se utilice para archivar si un documento de PDF estándar satisface las necesidades de su empresa. El propósito del estándar PDF/A es crear un archivo de PDF que se pueda almacenar durante un largo periodo de tiempo y que cumpla los requisitos de conservación de documentos. Por ejemplo, una dirección URL no se puede incrustar en un PDF/A porque, con el tiempo, la dirección URL puede no ser válida.
 
@@ -1433,15 +1434,15 @@ Para recuperar un documento que imprimir, utilice la variable `generatePrintedOu
    <td><p>Crea un dpl203.xdc de forma predeterminada o una secuencia de salida xdc personalizada.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 300 ppp </p></td>
+   <td><p>DPL300DPI </p></td>
    <td><p>Crea un flujo de salida DPL 300 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 406 ppp </p></td>
+   <td><p>DPL406DPI </p></td>
    <td><p>Crea un flujo de salida DPL 400 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>DPL 600 ppp </p></td>
+   <td><p>DPL600DPI </p></td>
    <td><p>Crea un flujo de salida DPL 600 DPI.</p></td>
   </tr>
   <tr>
@@ -1457,11 +1458,11 @@ Para recuperar un documento que imprimir, utilice la variable `generatePrintedOu
    <td><p>Crea un flujo de salida IPL personalizado.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 300 ppp </p></td>
+   <td><p>IPL300DPI </p></td>
    <td><p>Crea un flujo de salida IPL de 300 ppp.</p></td>
   </tr>
   <tr>
-   <td><p>IPL 400 ppp </p></td>
+   <td><p>IPL400DPI </p></td>
    <td><p>Crea un flujo de salida IPL de 400 ppp.</p></td>
   </tr>
   <tr>
@@ -1477,11 +1478,11 @@ Para recuperar un documento que imprimir, utilice la variable `generatePrintedOu
    <td><p>Crea un flujo de salida TPCL personalizado.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 305 ppp </p></td>
+   <td><p>TPCL305DPI </p></td>
    <td><p>Crea un flujo de salida TPCL de 305 ppp.</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 600 ppp </p></td>
+   <td><p>TPCL600PPP </p></td>
    <td><p>Crea un flujo de salida TPCL de 600 ppp.</p></td>
   </tr>
   <tr>
@@ -1489,7 +1490,7 @@ Para recuperar un documento que imprimir, utilice la variable `generatePrintedOu
    <td><p>Crea un flujo de salida ZPL 203 DPI.</p></td>
   </tr>
   <tr>
-   <td><p>ZPL 300 ppp </p></td>
+   <td><p>ZPL300DPI </p></td>
    <td><p>Crea un flujo de salida ZPL 300 DPI.</p></td>
   </tr>
  </tbody>
@@ -2192,7 +2193,7 @@ Cree reglas de búsqueda mediante la API de salida (servicio web):
 
 ## Acoplar documentos de PDF {#flattening-pdf-documents}
 
-Puede utilizar el servicio Output para transformar un documento de PDF interactivo en un PDF no interactivo. Un documento interactivo del PDF permite a los usuarios introducir o modificar datos que se encuentran en los campos del documento del PDF. Se llama al proceso de transformar un documento de PDF interactivo en un documento de PDF no interactivo *aplanamiento*. Cuando se aplana un documento de PDF, un usuario no puede modificar los datos de los campos del documento. Una razón para acoplar un documento PDF es garantizar que no se puedan modificar los datos.
+Puede utilizar el servicio Output para transformar un documento de PDF interactivo en un PDF no interactivo. Un documento interactivo del PDF permite a los usuarios introducir o modificar datos que se encuentran en los campos del documento del PDF. Se llama al proceso de transformar un documento de PDF interactivo en un documento de PDF no interactivo *aplanamiento*. Cuando se aplana un documento de PDF, un usuario no puede modificar los datos de los campos del documento. Una razón para acoplar un documento de PDF es garantizar que no se puedan modificar los datos.
 
 Puede acoplar los siguientes tipos de documentos de PDF:
 

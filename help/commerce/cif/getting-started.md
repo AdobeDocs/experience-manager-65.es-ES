@@ -1,17 +1,18 @@
 ---
-title: AEM Introducción a Contenido y comercio de
+title: Introducción a AEM Content y Commerce
 description: AEM Obtenga información sobre cómo implementar un proyecto de Contenido y comercio de.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 6%
+source-wordcount: '685'
+ht-degree: 4%
 
 ---
 
-# AEM Introducción a Contenido y comercio de {#start}
+# Introducción a AEM Content y Commerce {#start}
 
 AEM AEM AEM Para empezar a usar Contenido y comercio de, debe instalar el complemento de Contenido y comercio de para 6.5.
 
@@ -53,7 +54,7 @@ CIF El complemento de proporciona un servlet proxy de GraphQL en `/api/graphql` 
 
 ## Configuración de tiendas y catálogos {#catalog}
 
-El complemento y el [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components) AEM se puede utilizar en varias estructuras de sitio de la conectadas a diferentes tiendas comerciales (o vistas de tiendas, etc.). CIF De forma predeterminada, el complemento de se implementa con una configuración predeterminada que se conecta a la tienda y al catálogo predeterminados de Adobe Commerce.
+El complemento y el [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components) AEM se puede utilizar en varias estructuras de sitio de la conectadas a diferentes tiendas comerciales (o vistas de tiendas, etc.). CIF De forma predeterminada, el complemento de se implementa con una configuración predeterminada que se conecta a la tienda y al catálogo predeterminados de Adobe Commerce.
 
 CIF Esta configuración se puede ajustar para el proyecto mediante la configuración del Cloud Service de la siguiendo estos pasos:
 

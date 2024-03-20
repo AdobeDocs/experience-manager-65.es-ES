@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 7%
@@ -197,7 +198,7 @@ Los siguientes predicados están disponibles, según la configuración:
      <li>Etiqueta de campo</li>
      <li>Ruta de JSON</li>
      <li>Nombre de propiedad*</li>
-     <li>Una sola selección</li>
+     <li>Selección única</li>
      <li>Ruta de opción</li>
      <li>Descripción</li>
     </ul> </td>
@@ -210,7 +211,7 @@ Los siguientes predicados están disponibles, según la configuración:
      <li>Etiqueta de campo</li>
      <li>Nombre de propiedad*</li>
      <li>Ruta del nodo de opciones<br /> </li>
-     <li>Una sola selección</li>
+     <li>Selección única</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>

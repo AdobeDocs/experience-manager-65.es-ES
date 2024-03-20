@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2073'
-ht-degree: 70%
+ht-degree: 82%
 
 ---
 
@@ -38,7 +39,7 @@ La integración de datos es compatible con los tipos de autenticación OAuth2.0(
 Puede configurar bases de datos relacionales mediante la configuración de la consola web de AEM. Haga lo siguiente:
 
 1. Vaya a la consola web de AEM en `https://server:host/system/console/configMgr`.
-1. Busque la configuración **[!UICONTROL Fuente de datos obtenida de una conexión Apache Sling]**. Seleccione para abrir la configuración en modo de edición.
+1. Busque la configuración **[!UICONTROL Fuente de datos obtenida de una conexión Apache Sling]**. Seleccione esta opción para abrir la configuración en modo de edición.
 1. En el cuadro de diálogo de configuración, especifique los detalles de la base de datos que desea configurar, como:
 
    * Nombre de la fuente de datos
@@ -62,7 +63,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    * SELECT 1 (MySQL y MS SQL)
    * SELECT 1 desde dual (Oracle)
 
-1. Seleccionar **[!UICONTROL Guardar]** para guardar la configuración.
+1. Seleccione **[!UICONTROL Guardar]** para salvar la configuración.
 
    >[!NOTE]
    >
@@ -87,13 +88,13 @@ Puede configurar el perfil de usuario de AEM mediante la configuración del cone
    >
    >El **&#42;** en el ejemplo anterior indica todos los nodos bajo el nodo `profile/empLocation/` en el perfil de usuario de AEM en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder a la propiedad `city` de tipo `string` presente en cualquier nodo bajo el nodo `profile/empLocation/`. Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
 
-1. Seleccionar **[!UICONTROL Guardar]** para guardar la configuración.
+1. Seleccione **[!UICONTROL Guardar]** para salvar la configuración.
 
 ## Configurar carpetas para configuraciones de servicios en la nube {#cloud-folder}
 
 >[!NOTE]
 >
->La configuración de la carpeta de servicios en la nube es necesaria para configurar los servicios en la nube para los servicios RESTful, SOAP y OData.
+La configuración de la carpeta de servicios en la nube es necesaria para configurar los servicios en la nube para los servicios RESTful, SOAP y OData.
 
 Todas las configuraciones de servicios en la nube de AEM se consolidan en la carpeta `/conf`, en el repositorio de AEM. De forma predeterminada, la carpeta `conf` contiene la carpeta `global`, donde puede crear configuraciones de servicios en la nube. Debe habilitarla manualmente para las configuraciones en la nube. También puede crear carpetas adicionales en `conf` para crear y organizar configuraciones de servicios en la nube.
 
@@ -103,15 +104,15 @@ Para configurar la carpeta para las configuraciones de servicios en la nube:
    * Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
 1. Haga lo siguiente para habilitar la carpeta global para configuraciones de nube u omita este paso para crear y configurar otra carpeta para configuraciones de servicios en la nube.
 
-   1. En el **[!UICONTROL Explorador de configuración]**, seleccione la `global` carpeta y seleccione **[!UICONTROL Propiedades]**.
+   1. En el **[!UICONTROL Explorador de configuración]**, seleccione la carpeta `global` y **[!UICONTROL Propiedades]**.
 
    1. En el cuadro de diálogo **[!UICONTROL Propiedades de configuración]**, habilite **[!UICONTROL Configuraciones de nube]**.
 
-   1. Seleccionar **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
+   1. Seleccione **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 
-1. En el **[!UICONTROL Explorador de configuración]**, seleccione **[!UICONTROL Crear]**.
+1. En el **[!UICONTROL Explorador de configuración]**, seleccione **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un título para la carpeta y habilite **[!UICONTROL Configuraciones de nube]**.
-1. Seleccionar **[!UICONTROL Crear]** para crear la carpeta habilitada para las configuraciones del servicio en la nube.
+1. Seleccione **[!UICONTROL Crear]** para crear la carpeta habilitada para las configuraciones del servicio en la nube.
 
 ## Configurar servicios web de RESTful {#configure-restful-web-services}
 
@@ -119,11 +120,11 @@ El servicio web RESTful se puede describir con las [especificaciones de Swagger]
 
 Haga lo siguiente para configurar los servicios RESTful:
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](../../forms/using/configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio RESTful:
 
    * Seleccione la URL o el archivo en la lista desplegable Fuente Swagger y especifique la URL Swagger al archivo de definición Swagger o cargue el archivo Swagger de su sistema de archivos local.
@@ -140,7 +141,7 @@ Haga lo siguiente para configurar los servicios RESTful:
 
    Si selecciona **[!UICONTROL Autenticación mutua]** como tipo de autenticación, consulte [Autenticación mutua basada en certificados para servicios web RESTful y SOAP](#mutual-authentication).
 
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
 ### Configuración del cliente HTTP del modelo de datos del formulario para optimizar el rendimiento {#fdm-http-client-configuration}
 
@@ -167,11 +168,11 @@ Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos
 
 Los servicios web basados en SOAP se describen utilizando [Especificaciones del lenguaje de descripción de servicios web (WSDL)](https://www.w3.org/TR/wsdl). Para configurar el servicio web basado en SOAP en AEM Cloud Services, asegúrese de que cuenta con la URL de WSDL para el servicio web y haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](../../forms/using/configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio web SOAP]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear las fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio web SOAP]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique lo siguiente para el servicio web SOAP:
 
    * URL de WSDL para el servicio web.
@@ -183,7 +184,7 @@ Especifique el alias de KeyStore para el certificado X509 en el campo **[!UICONT
 
      Si selecciona **[!UICONTROL Autenticación mutua]** como tipo de autenticación, consulte [Autenticación mutua basada en certificados para servicios web RESTful y SOAP](#mutual-authentication).
 
-1. Seleccionar **[!UICONTROL Crear]** para crear la configuración de nube para el servicio web SOAP.
+1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio web SOAP.
 
 ## Configurar servicios OData {#config-odata}
 
@@ -191,14 +192,14 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
 >[!NOTE]
 >
->El modelo de datos de formulario es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
->Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+El modelo de datos de formulario admite [OData versión 4](https://www.odata.org/documentation/).
+Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para seleccionar la carpeta en la que desea crear una configuración de nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](../../forms/using/configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccionar **[!UICONTROL Crear]** para abrir **[!UICONTROL Asistente de configuración de creación de fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** desde el **[!UICONTROL Tipo de servicio]** , si lo desea, busque y seleccione una imagen en miniatura para la configuración y seleccione **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio OData:
 
    * URL raíz del servicio para configurar el servicio OData.
@@ -206,9 +207,9 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
    >[!NOTE]
    >
-   >Seleccione el tipo de autenticación OAuth 2.0 para conectarse a los servicios de Microsoft Dynamics que utilizan el punto final OData como raíz del servicio.
+   Seleccione el tipo de autenticación OAuth 2.0 para conectarse a los servicios de Microsoft Dynamics que utilizan el punto final OData como raíz del servicio.
 
-1. Seleccionar **Crear** para crear la configuración de nube para el servicio OData.
+1. Seleccione **Crear** para crear la configuración de nube para el servicio OData.
 
 ## Autenticación mutua basada en certificados para servicios web RESTful y SOAP {#mutual-authentication}
 

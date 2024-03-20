@@ -4,7 +4,8 @@ description: Obtenga información sobre cómo configurar el marco de trabajo de 
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 87b20e9ed0455b9bf40bc1e000bd87bbb93ea48e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 41%

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 58%
+source-wordcount: '316'
+ht-degree: 57%
 
 ---
 
@@ -31,4 +32,4 @@ Los datos de usuario se recopilan en el acuerdo, pero no se guardan en ninguna d
 
 [!DNL Adobe Sign] ofrece una aplicación web que permite buscar acuerdos por parte de los participantes y, si es necesario, eliminarlos. Para obtener más información, consulte [Adobe Sign - Función: Eliminar información del usuario](https://helpx.adobe.com/es/sign/using/gdpr-compliance.html).
 
-Los datos de acuerdo de los formularios adaptables configurados para utilizar la acción de envío del portal de Forms también se guardan en el almacén de datos del portal de Forms. Para acceder al almacén de datos del portal de Forms y eliminarlo, consulte [Portal de Forms | Gestión de datos de usuario](/help/forms/using/forms-portal-handling-user-data.md).
+Los datos de acuerdo de los formularios adaptables configurados para utilizar la acción de envío del portal de Forms también se guardan en el almacén de datos del portal de Forms. Para acceder al almacén de datos del portal de Forms y eliminarlo, consulte [Portal de Forms | Administrar datos de usuario](/help/forms/using/forms-portal-handling-user-data.md).

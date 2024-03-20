@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 5%
@@ -172,7 +173,7 @@ En determinadas situaciones, el Sidekick puede realizar otras acciones, como las
 
 Otros [las relaciones entre páginas se pueden ver en la consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
-## Registro de auditoría {#audit-log}
+## Registro de auditorías {#audit-log}
 
 El **Registro de auditoría** se puede acceder a desde el **Información** pestaña de la barra de tareas. Enumera las acciones recientes realizadas en la página actual; por ejemplo:
 

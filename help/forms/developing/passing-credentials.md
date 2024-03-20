@@ -2,10 +2,11 @@
 title: Pasar credenciales mediante encabezados WS-security
 description: Obtenga información sobre cómo pasar credenciales mediante encabezados WS-security
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 

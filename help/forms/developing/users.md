@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '6218'
-ht-degree: 1%
+source-wordcount: '6201'
+ht-degree: 0%
 
 ---
 
@@ -904,7 +905,7 @@ Para poder sincronizar usuarios mediante programación, debe crear un `UserManag
 
 **Especificar el dominio de empresa**
 
-Antes de realizar una operación de sincronización mediante la API de administración de usuarios, debe especificar el dominio de empresa al que pertenecen los usuarios. Puede especificar uno o varios dominios de empresa. Para poder realizar mediante programación una operación de sincronización, debe configurar un dominio de empresa mediante la consola de administración. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
+Antes de realizar una operación de sincronización mediante la API de administración de usuarios, debe especificar el dominio de empresa al que pertenecen los usuarios. Puede especificar uno o varios dominios de empresa. Para poder realizar mediante programación una operación de sincronización, debe configurar un dominio de empresa mediante la consola de administración. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Invocar la operación de sincronización**
 

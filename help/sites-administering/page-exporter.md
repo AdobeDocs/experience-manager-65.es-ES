@@ -2,9 +2,10 @@
 title: El exportador de página
 description: Aprenda a utilizar el Exportador de páginas de Adobe Experience Manager AEM ().
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Para exportar una página:
 
 1. Seleccione la página y abra la **Propiedades** diálogo.
 
-1. Seleccione el **Avanzadas** pestaña.
+1. Seleccione la pestaña **Avanzadas**.
 
 1. Expanda el **Exportar** para seleccionar una plantilla de exportación.
 Seleccione la plantilla necesaria para el sitio y confirme con **OK**.

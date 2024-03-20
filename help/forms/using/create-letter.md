@@ -5,7 +5,8 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3982'
 ht-degree: 89%
@@ -345,7 +346,7 @@ Después de crear una correspondencia, si selecciona Abrir, Administración de c
 1. Seleccione **Acceso a la biblioteca** para conceder acceso a la biblioteca. Si el acceso a la biblioteca está habilitado, el Administrador de reclamaciones podrá acceder a la biblioteca de contenido al crear una carta e insertar archivos adjuntos.
 1. Seleccione **Configuración de archivos adjuntos** y especifique el número máximo de archivos adjuntos.
 
-1. Seleccionar **Guardar**. La correspondencia se creará y aparecerá en la página Cartas.
+1. Seleccione **Guardar**. La correspondencia se creará y aparecerá en la página Cartas.
 
 Después de crear una plantilla de carta en Administración de correspondencia, el usuario/agente/administrador de reclamaciones final podrá abrir la carta en la interfaz de usuario de CCR y crear una correspondencia al introducir datos, configurar contenido y administrar archivos adjuntos. Para obtener más información, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
 

@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 5%
@@ -289,7 +290,7 @@ AEM Una vez que haya iniciado sesión, tendrá acceso a la interfaz de usuario d
 
 * [Creación](/help/sites-authoring/first-steps.md)
 * [Administración](/help/sites-administering/home.md)
-* [Desarrollo de](/help/sites-developing/getting-started.md)
+* [El desarrollo de](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
 ## Implementación avanzada {#advanced-deployment}

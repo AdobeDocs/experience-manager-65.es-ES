@@ -3,20 +3,22 @@ title: Autenticación para consultas de Adobe Experience Manager GraphQL remotas
 description: Comprenda la autenticación necesaria para las consultas de Adobe Experience Manager GraphQL remotas a fin de proteger la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 0%
+ht-degree: 42%
 
 ---
 
 # Autenticación para consultas de Adobe Experience Manager GraphQL remotas en fragmentos de contenido {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un caso de uso principal para [API de Adobe Experience Manager AEM () GraphQL para la entrega de fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a API autenticado para asegurar la entrega de contenido sin encabezado.
+Un caso de uso principal para [API de Adobe Experience Manager AEM () GraphQL para la entrega de fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a una API autenticada para asegurar la entrega de contenido sin encabezado.
 
 >[!NOTE]
 >
->AEM Para pruebas y desarrollo, también puede acceder a la API de GraphQL de la directamente mediante el [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
+>Para pruebas y desarrollo, también puede acceder a la API de GraphQL de AEM directamente mediante la [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
 AEM Para realizar la autenticación, el servicio de terceros debe autenticarse con el nombre de usuario y la contraseña de la cuenta de la cuenta de la cuenta de.
 

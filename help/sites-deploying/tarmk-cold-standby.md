@@ -8,9 +8,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---
@@ -400,7 +401,7 @@ La instancia de espera puede tardar más de lo normal en completar la sincroniza
 
 Como alternativa, el repositorio principal se puede copiar manualmente al modo de espera después de ejecutar la compactación en el repositorio principal, lo que básicamente reconstruye el modo de espera cada vez que se ejecuta la compactación.
 
-### Recolección de papelera del almacén de datos {#data-store-garbage-collection}
+### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
 
 Es importante ejecutar la recolección de basura en las instancias del almacén de datos de archivos de vez en cuando, de lo contrario, los binarios eliminados permanecen en el sistema de archivos y finalmente llenan la unidad. Para ejecutar la recolección de elementos no utilizados, siga el siguiente procedimiento:
 

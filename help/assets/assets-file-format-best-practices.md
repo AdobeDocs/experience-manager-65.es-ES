@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 3%
+source-wordcount: '470'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +21,7 @@ Para ver los formatos de archivo admitidos, consulte [Formatos compatibles con A
 
 >[!TIP]
 >
->Si está utilizando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si planea procesar muchos archivos de PSD o PSB grandes. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager]Es posible que el no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles. 
+>Si está utilizando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si planea procesar muchos archivos de PSD o PSB grandes. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] puede que no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles.
 
 ## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
 

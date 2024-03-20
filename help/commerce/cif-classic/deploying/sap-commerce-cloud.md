@@ -5,10 +5,11 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '712'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +46,7 @@ La extensión hybris del marco de integración de comercio electrónico se ha ac
 >
 >* Compatible con las versiones 18.11 y posteriores.
 >* Necesita Java™ 7 para ejecutar el [servidor hybris 5.](https://www.sap.com/products/crm.html)
-* El complemento hybris, el [Acelerador de telecomunicaciones](https://www.sap.com/products/crm.html)AEM , no es compatible con la extensión de.
+>* El complemento hybris, el [Acelerador de telecomunicaciones](https://www.sap.com/products/crm.html)AEM , no es compatible con la extensión de.
 >
 
 ### Paquetes necesarios para el comercio electrónico con hybris {#packages-needed-for-ecommerce-with-hybris}
@@ -91,11 +92,11 @@ Para instalar una configuración completa (con el catálogo de demostración, Ge
 
 >[!CAUTION]
 >
-El uso del servidor hybris requiere una licencia hybris independiente.
+>El uso del servidor hybris requiere una licencia hybris independiente.
 
 >[!NOTE]
 >
-Para desarrolladores, [Documentación de API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) también está disponible para descargar.
+>Para desarrolladores, [Documentación de API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) también está disponible para descargar.
 
 ### Descargue y cree su servidor hybris {#download-and-build-your-hybris-server}
 
@@ -103,17 +104,17 @@ Los pasos de este procedimiento permiten descargar y crear el servidor hybris. T
 
 >[!CAUTION]
 >
-No se admiten las versiones de Hybris anteriores a la 5.5.1.
+>No se admiten las versiones de Hybris anteriores a la 5.5.1.
 
 >[!NOTE]
 >
-Para completar esto, necesita lo siguiente [Fantástico](https://groovy-lang.org/) instalado en el sistema.
+>Para completar esto, necesita lo siguiente [Fantástico](https://groovy-lang.org/) instalado en el sistema.
 
 1. Descargue la **hybris Commerce Suite** distribución desde el sitio de descarga de hybris.
 
    >[!CAUTION]
    >
-   Necesita una cuenta (de hybris) para acceder a esto.
+   >Necesita una cuenta (de hybris) para acceder a esto.
 
 1. Descomprima el archivo de distribución en la ubicación requerida (denominada &lt;hybris-root-directory>).
 1. Desde la línea de comandos, ejecute lo siguiente:
@@ -127,11 +128,11 @@ Para completar esto, necesita lo siguiente [Fantástico](https://groovy-lang.org
 
    >[!NOTE]
    >
-   Al ejecutar:
+   >Al ejecutar:
    >
-   `ant clean all`
+   >`ant clean all`
    >
-   Prensa `Return` cuando sea necesario.
+   >Prensa `Return` cuando sea necesario.
 
 1. Descargue los siguientes archivos en la carpeta raíz de la distribución de hybris extraída,
 
@@ -144,7 +145,7 @@ Para completar esto, necesita lo siguiente [Fantástico](https://groovy-lang.org
 
    >[!NOTE]
    >
-   Para hybris 5.6.0 y versiones posteriores, utilice el siguiente setup.groovy.
+   >Para hybris 5.6.0 y versiones posteriores, utilice el siguiente setup.groovy.
 
    5.6.0 y versiones posteriores
 
@@ -165,7 +166,7 @@ Para completar esto, necesita lo siguiente [Fantástico](https://groovy-lang.org
 
    >[!NOTE]
    >
-   Según el sistema, varios de estos pasos pueden tardar varios minutos en completarse.
+   >Según el sistema, varios de estos pasos pueden tardar varios minutos en completarse.
 
 1. En el explorador, vaya a **consola de administración de hybris** a las:
 
@@ -177,7 +178,7 @@ Para completar esto, necesita lo siguiente [Fantástico](https://groovy-lang.org
 
    >[!NOTE]
    >
-   En función del sistema, esta operación puede tardar varios minutos en completarse.
+   >En función del sistema, esta operación puede tardar varios minutos en completarse.
 
 ### Configuración del almacén de Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 

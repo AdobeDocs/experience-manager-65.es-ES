@@ -7,10 +7,11 @@ topic-tags: site-features
 content-type: reference
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
@@ -46,7 +47,7 @@ En las secciones siguientes, debe utilizar el ejemplo de una página nueva `b`, 
 
   Una página creada manualmente en la rama de Live Copy; con una página secundaria, `lc-level-1`.
 
-   * Se activa durante la publicación como `/b`, junto con la página secundaria.
+   * Activado al publicar como `/b`, junto con la página secundaria.
 
 **Antes del despliegue**
 
@@ -82,7 +83,7 @@ Esto se realiza utilizando [Configuración de OSGi](/help/sites-deploying/config
 
   Se establece en true si el administrador de despliegue debe gestionar los conflictos de una página creada en Live Copy con un nombre que exista en el modelo.
 
-AEM tiene [comportamiento predefinido cuando la administración de conflictos se ha desactivado](#behavior-when-conflict-handling-deactivated).
+AEM ha de [comportamiento predefinido cuando se ha desactivado la administración de conflictos](#behavior-when-conflict-handling-deactivated).
 
 ## Controladores de conflictos {#conflict-handlers}
 

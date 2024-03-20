@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1220'
 ht-degree: 2%
 
 ---
@@ -37,7 +38,7 @@ Para habilitar SSL, WebSphere necesita tener acceso a una cuenta de usuario del 
 
    >[!NOTE]
    >
-   >(Linux y Solaris) Para que funcione el registro de seguridad del sistema operativo local de WebSphere Application Server, debe existir un archivo de contraseña de instantánea. El archivo de contraseña de sombra generalmente se llama /etc/shadow **y se** basa en el archivo /etc/passwd. Si el archivo de contraseña de instantánea no existe, se produce un error después de habilitar la seguridad global y configurar el Registro de usuarios como sistema operativo local.
+   >(Linux y Solaris) Para que funcione el registro de seguridad del sistema operativo local de WebSphere Application Server, debe existir un archivo de contraseña de instantánea. El archivo de contraseña de sombra generalmente se llama **/etc/shadow** y se basa en el archivo /etc/passwd. Si el archivo de contraseña de instantánea no existe, se produce un error después de habilitar la seguridad global y configurar el Registro de usuarios como sistema operativo local.
 
 1. Abra el archivo grupo desde el directorio /etc en un editor de texto.
 1. añadir al grupo el usuario que creó en el `root` paso 2.

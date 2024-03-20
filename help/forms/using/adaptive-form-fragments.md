@@ -7,10 +7,11 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2372'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -29,7 +30,7 @@ Los formularios adaptables proporcionan un mecanismo cómodo para crear segmento
 
 >[!NOTE]
 >
-> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con [Cuadro de diálogo Configurar y cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+> Puede personalizar fácilmente la experiencia del fragmento para los usuarios con el cuadro de diálogo [Configurar y el cuadro de diálogo Diseño del componente Fragmento de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=es).
 
 ## Creación de un fragmento {#create-a-fragment}
 

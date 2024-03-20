@@ -4,10 +4,11 @@ description: Descubra cómo los especialistas en marketing pueden enriquecer los
 sub-product: Commerce
 feature: Commerce Integration Framework
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -33,6 +34,6 @@ Los fragmentos de experiencias son una función de Adobe Experience Manager que 
 
 Los fragmentos de contenido son una función de Adobe Experience Manager que permite a un experto en marketing crear contenido **estructurado** contenido reutilizable. Los fragmentos de contenido se pueden asociar a un SKU de producto o a un ID de catálogo. Una vez asociados, los especialistas en marketing pueden descubrir fácilmente fragmentos relacionados basados en los productos mostrados en una página. Los fragmentos de contenido también se pueden incluir dinámicamente en una página del catálogo de productos mediante el uso de un marcador de posición y una asociación.
 
-## Medios relacionados {#related}
+## Recursos relacionados {#related}
 
 También es posible personalizar una plantilla completa para un conjunto específico de productos o categorías. Descubra cómo por [creación de varias categorías y páginas de producto](/help/commerce/cif/configuring/multi-template-usage.md).

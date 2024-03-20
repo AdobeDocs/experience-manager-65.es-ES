@@ -2,10 +2,11 @@
 title: Administración de puntos de conexión de GraphQL en AEM
 description: Obtenga información sobre cómo administrar los extremos de GraphQL en Adobe Experience Manager para la entrega de contenido sin encabezado.
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -69,7 +70,7 @@ Para habilitar el punto de conexión correspondiente:
    >
    >La siguiente advertencia se muestra en el cuadro de diálogo:
    >
-   >* *Los puntos de conexión de GraphQL pueden introducir problemas de rendimiento y seguridad de datos si no se administran con cuidado. Asegúrese de definir los permisos adecuados después de crear un punto de conexión.*
+   >* *Los puntos finales de GraphQL pueden introducir problemas de rendimiento y seguridad de datos si no se administran con cuidado. Asegúrese de establecer los permisos adecuados después de crear un extremo.*
 
 1. Confirme con **Crear**.
 1. El diálogo **Pasos siguientes** proporciona un vínculo directo a la consola de seguridad para que pueda cerciorarse de que el punto de conexión recién creado tenga los permisos adecuados.

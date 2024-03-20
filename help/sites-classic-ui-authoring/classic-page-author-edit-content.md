@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 16%
@@ -146,7 +147,7 @@ Para eliminar un párrafo:
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
 1. Seleccionar **Eliminar** en el menú. AEM WCM solicita la confirmación de que desea eliminar el párrafo, ya que esta acción no se puede deshacer.
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
 >[!NOTE]
 >

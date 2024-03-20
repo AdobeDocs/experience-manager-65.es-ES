@@ -7,9 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1099'
 ht-degree: 60%
 
 ---
@@ -63,7 +64,7 @@ Siga estos pasos para crear la estructura de carpetas necesaria en la `/apps` ra
 
       **Ruta:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Ubicación de la superposición:** `/apps/`
+      **Ubicación de superposición:** `/apps/`
 
       **Coincidir tipos de nodo:** Comprobado
 

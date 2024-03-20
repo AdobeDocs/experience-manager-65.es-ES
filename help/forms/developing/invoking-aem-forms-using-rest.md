@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2503'
-ht-degree: 1%
+source-wordcount: '2481'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +27,7 @@ Al utilizar solicitudes REST, se recomienda no invocar los servicios de Forms di
 
 AEM Cuando invoca un servicio mediante REST, se le solicita un nombre de usuario y una contraseña de formularios de la aplicación de formularios de la manera más rápida y sencilla. Sin embargo, si no desea especificar un nombre de usuario y una contraseña, puede deshabilitar la seguridad del servicio.
 
-Para invocar un servicio de Forms (un proceso se convierte en servicio cuando se activa el proceso) mediante REST, configure un extremo REST. (Consulte &quot;Administración de puntos finales&quot; en [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
+Para invocar un servicio de Forms (un proceso se convierte en servicio cuando se activa el proceso) mediante REST, configure un extremo REST. (Consulte &quot;Administración de puntos finales&quot; en [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 Una vez configurado un extremo REST, puede invocar un servicio de Forms mediante un método de GET HTTP o un método de POST.
 

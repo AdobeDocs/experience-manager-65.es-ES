@@ -2,10 +2,11 @@
 title: Personalización y segmentación de contenido
 description: Descubra cómo Adobe Experience Manager 6.5 puede crear contenido personalizado.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 40%
+source-wordcount: '526'
+ht-degree: 36%
 
 ---
 
@@ -57,7 +58,7 @@ AEM proporciona un motor de segmentación integrado que procesa las solicitudes 
 
 ### Adobe Target {#adobe-target}
 
-El motor de segmentación de Adobe Target provoca que la información recopilada de las visitas a la página sean rastreadas en Adobe Target.
+El motor de segmentación de Adobe Target hace que la información recopilada de las visitas a la página sean rastreadas en Adobe Target.
 
 * Al utilizar este motor de segmentación, se usan los segmentos importados de Adobe Target para definir los públicos para las experiencias.
 * Las actividades que utilizan el motor de Adobe Target se [sincronizan con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).

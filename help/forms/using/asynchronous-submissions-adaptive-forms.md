@@ -7,10 +7,11 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -40,7 +41,7 @@ Para configurar el envío asincrónico en un formulario adaptable haga lo siguie
    * **[!UICONTROL Redirigir a URL]**: redirige a la URL o página especificada después de enviar el formulario. Puede especificar una URL o examinar y elegir la ruta a una página en el campo **[!UICONTROL URL/ruta de redireccionamiento]**.
    * **[!UICONTROL Mostrar mensaje]**: muestra un mensaje sobre el envío del formulario. Puede escribir un mensaje en el campo de texto debajo de la opción Mostrar mensaje. El campo de texto admite el formato de texto enriquecido.
 
-1. Seleccionar ![check-button1](assets/check-button1.png) para guardar las propiedades.
+1. Seleccione ![check-button1](assets/check-button1.png) para guardar las propiedades.
 
 ## Funcionamiento del envío asincrónico {#how-asynchronous-submission-works}
 
@@ -103,7 +104,7 @@ Los desarrolladores y autores de formularios pueden escribir reglas a nivel de f
 Realice los siguientes pasos para escribir reglas en el editor de código para controlar los eventos de éxito y error.
 
 1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto del formulario y seleccione ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
-1. Seleccionar **[!UICONTROL Form]** en el árbol Objetos de formulario y seleccione **[!UICONTROL Crear]**.
+1. Seleccione **[!UICONTROL Formulario]** en el árbol Objetos de formulario y seleccione **[!UICONTROL Crear]**.
 1. Seleccione **[!UICONTROL Editor de código]** de la lista desplegable de modo de selección.
 1. En el editor de código, seleccione **[!UICONTROL Editar código]**. Seleccionar **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
 1. Elija **[!UICONTROL Envío correcto]** o **[!UICONTROL Error en el envío]** de la lista desplegable **[!UICONTROL Evento]**.

@@ -6,10 +6,11 @@ topic-tags: integration
 docset: aem65
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 78%
+ht-degree: 95%
 
 ---
 
@@ -38,12 +39,12 @@ La integración de datos de AEM Forms ofrece una interfaz de usuario intuitiva p
 Asegúrese de haber configurado las fuentes de datos que desea utilizar en el modelo de datos de formulario como se describe en [Configurar fuentes de datos](../../forms/using/configure-data-sources.md). Para crear un modelo de datos de formulario basado en fuentes de datos configuradas, haga lo siguiente:
 
 1. En la instancia de autor de AEM, navegue hasta **[!UICONTROL Formularios > Integraciones de datos]**.
-1. Seleccionar **[!UICONTROL Crear > Modelo de datos de formulario]**.
+1. Seleccione **[!UICONTROL Crear > Modelo de datos de formulario]**.
 1. En el cuadro de diálogo Crear un modelo de datos de formulario:
 
    * Especifique un nombre para el modelo de datos del formulario.
    * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos del formulario.
-   * (**Opcional y aplicable solo si se han configurado fuentes de datos**) Seleccione el icono de verificación situado junto a **[!UICONTROL Configuración de fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para las fuentes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier base de datos JDBC y fuentes de datos de perfil de usuario de AEM se muestran de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
+   * (**Opcional y aplicable solo si se configuran fuentes de datos**) Seleccione el icono de verificación situado junto al campo **[!UICONTROL Configuración de la fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para las fuentes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier base de datos JDBC y fuentes de datos de perfil de usuario de AEM se muestran de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
 
    Seleccione **[!UICONTROL Siguiente]**.
 
@@ -77,16 +78,16 @@ Haga lo siguiente para agregar o actualizar fuentes de datos a un modelo de dato
 
    En la pestaña Actualizar fuente:
 
-   * Seleccione el icono de examinar en la **[!UICONTROL Configuración según el contexto]** y seleccione un nodo de configuración en el que reside la configuración de nube para la fuente de datos que desea agregar. Si no selecciona ningún nodo, las configuraciones de nube de solo residen en el `global` Los nodos de se muestran al seleccionar **[!UICONTROL Agregar orígenes]**.
+   * Seleccione el icono Examinar en el campo **[!UICONTROL Configuración según el contexto]** y seleccione un nodo de configuración en el que reside la configuración de nube para la fuente de datos que desea agregar. Si no selecciona ningún nodo, solo se enumeran las configuraciones de nube que residen en el nodo `global` al seleccionar **[!UICONTROL Añadir fuentes]**.
 
-   * Para añadir una nueva fuente de datos, seleccione **[!UICONTROL Agregar orígenes]** y seleccione las fuentes de datos que desea añadir al modelo de datos de formulario. Se muestran todas las fuentes de datos configuradas en `global` y el nodo de configuración seleccionado, de haber.
+   * Para agregar una fuente de datos nueva, seleccione **[!UICONTROL Añadir fuentes]** y seleccione las fuentes de datos que desea añadir al modelo de datos de formulario. Se muestran todas las fuentes de datos configuradas en `global` y el nodo de configuración seleccionado, de haber.
 
-   * Para reemplazar una fuente de datos existente por otra fuente de datos del mismo tipo, seleccione la opción **[!UICONTROL Editar]** para la fuente de datos y seleccione en la lista de fuentes de datos disponibles.
-   * Para eliminar una fuente de datos existente, seleccione la **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos del formulario.
+   * Para reemplazar una fuente de datos existente por otra fuente de datos del mismo tipo, seleccione el icono **[!UICONTROL Editar]** para la fuente de datos y seleccione en la lista de fuentes de datos disponibles.
+   * Para eliminar una fuente de datos existente, seleccione el icono **[!UICONTROL Eliminar]** para la fuente de datos. El icono Eliminar está desactivado si se añade un objeto de modelo de datos en la fuente de datos en el modelo de datos del formulario.
 
    ![fdm-properties](assets/fdm-properties.png)
 
-1. Seleccionar **[!UICONTROL Guardar y cerrar]** para guardar las actualizaciones.
+1. Seleccione **[!UICONTROL Guardar y cerrar]** para guardar las propiedades.
 
 >[!NOTE]
 >

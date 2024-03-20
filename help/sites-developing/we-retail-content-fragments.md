@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 14%
+source-wordcount: '400'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 14%
 
 Los fragmentos de contenido permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). **We.Retail** (tal y como está disponible en una instancia predeterminada de Adobe Experience Manager) proporciona el fragmento **Surf ártico en Lofoten** como muestra básica. Esto ilustra lo siguiente:
 
-* Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal).
+* Los fragmentos de contenido de Adobe Experience Manager AEM () son [se crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal).
 
    * Consulte [Dónde encontrar recursos de fragmentos de contenido en We.Retail](#where-to-find-content-fragments-in-we-retail)
 

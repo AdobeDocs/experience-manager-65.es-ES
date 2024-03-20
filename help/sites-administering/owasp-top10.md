@@ -7,9 +7,10 @@ topic-tags: Security
 content-type: reference
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ A continuación se enumeran, junto con una explicación de cómo CRX los trata.
 
 La práctica general de mitigación es codificar todos los resultados del contenido generado por el usuario mediante una biblioteca de protección XSS del lado del servidor basada en [Codificador OWASP](https://owasp.org/www-project-java-encoder/) y [AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
-XSS es una prioridad principal durante las pruebas y el desarrollo, y los problemas encontrados se resuelven (normalmente) inmediatamente.
+XSS es una prioridad principal tanto durante las pruebas como durante el desarrollo, y los problemas encontrados se resuelven (normalmente) inmediatamente.
 
 ## 3. Autenticación rota y administración de sesión {#broken-authentication-and-session-management}
 

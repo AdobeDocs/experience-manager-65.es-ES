@@ -1,5 +1,5 @@
 ---
-title: Configurar AEM Assets con Brand Portal
+title: Configuración de AEM Assets con Brand Portal
 description: Obtenga información sobre cómo configurar AEM Assets con Brand Portal para publicar recursos y colecciones en Brand Portal.
 topic-tags: brand-portal
 content-type: reference
@@ -9,15 +9,16 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 12%
+source-wordcount: '2068'
+ht-degree: 6%
 
 ---
 
 
-# Configurar AEM Assets con Brand Portal {#configure-integration-65}
+# Configuración de AEM Assets con Brand Portal {#configure-integration-65}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -99,11 +100,11 @@ La configuración de AEM Assets con Brand Portal requiere configuraciones tanto 
 
 Realice los siguientes pasos en la secuencia indicada si configura AEM Assets con Brand Portal por primera vez:
 
-1. [Obtención de un certificado público](#public-certificate)
+1. [Obtener un certificado público](#public-certificate)
 1. [Crear una conexión de cuenta de servicio (JWT)](#createnewintegration)
 1. [Configuración de una cuenta de IMS](#create-ims-account-configuration)
-1. [Configurar el servicio en la nube de ](#configure-the-cloud-service)
-1. [Probar la configuración](#test-integration)
+1. [Configurar servicio en la nube](#configure-the-cloud-service)
+1. [Probar configuración](#test-integration)
 
 ### Crear la configuración de IMS {#create-ims-configuration}
 
@@ -111,7 +112,7 @@ La configuración de IMS autentica la instancia de autor de AEM Assets con el in
 
 La configuración de IMS incluye dos pasos:
 
-* [Obtención de un certificado público](#public-certificate)
+* [Obtener un certificado público](#public-certificate)
 * [Configuración de una cuenta de IMS](#create-ims-account-configuration)
 
 ### Obtener un certificado público {#public-certificate}
@@ -247,7 +248,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
 Asegúrese de haber realizado ya los siguientes pasos:
 
-* [Obtención de un certificado público](#public-certificate)
+* [Obtener un certificado público](#public-certificate)
 * [Crear una conexión de cuenta de servicio (JWT)](#createnewintegration)
 
 Para configurar la cuenta de IMS:
@@ -274,7 +275,7 @@ Para configurar la cuenta de IMS:
 
 >[!CAUTION]
 >
->Sólo debe tener una configuración de IMS.
+>Solo debe tener una configuración de IMS.
 >
 >Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Elimínelo y cree otra configuración válida.
 
@@ -294,7 +295,7 @@ Para configurar la cuenta de IMS:
 
    ![Ventana Configuración de Brand Portal](assets/create-cloud-service.png)
 
-1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de la nube.
+1. Clic **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de nube.
 
    La instancia de autor de AEM Assets ahora está configurada con el inquilino de Brand Portal.
 
@@ -341,7 +342,7 @@ Para configurar la cuenta de IMS:
 
 Ahora puede:
 
-* [Publicar recursos desde AEM Assets en Brand Portal](../assets/brand-portal-publish-assets.md)
+* [Publicación de recursos de AEM Assets en Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Publicación de recursos de Brand Portal en AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) - Abastecimiento de recursos en Brand Portal
 * [Publicar carpetas desde AEM Assets en Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publicar colecciones desde AEM Assets en Brand Portal](../assets/brand-portal-publish-collection.md)

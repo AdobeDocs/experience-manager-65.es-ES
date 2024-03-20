@@ -7,7 +7,8 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 3%
@@ -177,7 +178,7 @@ Los descendientes de la página heredan la asociación con el marco. Por ejemplo
 
 1. El selector desplegable de **Adobe Analytics** se anexa a las opciones disponibles. Seleccione la configuración del marco de trabajo necesaria.
 
-1. Seleccionar **Guardar y cerrar**.
+1. Seleccione **Guardar y cerrar**.
 1. Para activar la página y cualquier configuración o archivo conectado, **[Publish](/help/sites-authoring/publishing-pages.md)** la página.
 1. El paso final es visitar la página en la instancia de publicación y buscar una palabra clave (por ejemplo, berenjena) utilizando **Buscar** componente.
 1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics mediante una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).

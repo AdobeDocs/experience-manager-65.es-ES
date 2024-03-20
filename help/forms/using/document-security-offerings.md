@@ -1,6 +1,6 @@
 ---
 title: Ofertas de seguridad de los documentos
-description: Obtenga información sobre las distintas herramientas y características de la seguridad de los documentos de AEM.
+description: AEM Obtenga información acerca de las distintas herramientas y características de Seguridad de documentos de.
 contentOwner: khsingh
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 content-type: reference
@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Document Security
 exl-id: d00ae232-b018-44e5-b04b-376d4cd9c6eb
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 42%
+source-wordcount: '1161'
+ht-degree: 39%
 
 ---
 

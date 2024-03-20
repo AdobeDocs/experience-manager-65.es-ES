@@ -7,9 +7,10 @@ topic-tags: personalization
 content-type: reference
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '4913'
 ht-degree: 2%
 
 ---
@@ -37,7 +38,7 @@ En la tabla siguiente se enumeran los nombres y eventos que se producen en las t
 | ContextHub.Constants.PERSISTENCE_CONTAINER_NAME | Nombre de contenedor de persistencia | ContextHubPersistence |
 | ContextHub.Constants.SERVICE_RAW_RESPONSE_KEY | Almacena el nombre de clave de persistencia específico donde se almacena el resultado JSON sin procesar | /_/raw-response |
 | ContextHub.Constants.SERVICE_RESPONSE_TIME_KEY | Almacena la marca de tiempo específica que indica cuándo se recuperaron los datos de JSON | /_/response-time |
-| ContextHub.Constants.SERVICE_LAST_URL_KEY | Almacena la URL específica del servicio JSON utilizado durante la última llamada | /_/URL |
+| ContextHub.Constants.SERVICE_LAST_URL_KEY | Almacena la URL específica del servicio JSON utilizado durante la última llamada | /_/url |
 | ContextHub.Constants.IS_CONTAINER_EXPANDED | Indica si la IU de ContextHub está expandida | /_/container-expand |
 
 ### Constantes de evento de IU {#ui-event-constants}
@@ -410,7 +411,7 @@ Configura los detalles para conectarse al servicio JSONP que utiliza este objeto
    * port: (número) número de puerto del servicio.
    * secure: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
 
-      * auto: //
+      * automático: //
       * true: https://
       * false: https://
 
@@ -440,7 +441,7 @@ Un objeto con las siguientes propiedades:
 * **puerto:** (Número) El número de puerto del servicio.
 * **seguro:** (Cadena o Booleano) Determina el protocolo que se utilizará para la URL del servicio:
 
-   * auto: //
+   * automático: //
    * true: https://
    * false: https://
 
@@ -477,7 +478,7 @@ inicializa el objeto ContextHub.Store.JSONPStore.
       * port: (número) número de puerto del servicio.
       * secure: (cadena o booleano) determina el protocolo que se utiliza para la dirección URL del servicio:
 
-         * auto: //
+         * automático: //
          * true: https://
          * false: https://
 

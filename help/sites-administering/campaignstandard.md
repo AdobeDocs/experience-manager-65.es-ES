@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 0%
@@ -63,7 +64,7 @@ Adobe Campaign Standard incluye de forma predeterminada un `aemserver` AEM usuar
 
 Su `aemserver` AEM El usuario de ahora tiene los derechos necesarios para que pueda utilizarla para comunicarse con el usuario de Adobe Campaign.
 
-AEM Sin embargo, antes de que pueda usar la variable, puede usar la siguiente `aemserver` usuario, se debe establecer su contraseña. Esto no se puede hacer a través de Adobe Campaign. Debe ser realizado por un ingeniero de soporte de Adobe. [Envío de un ticket con el Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=es#support) para solicitar el restablecimiento de `aemserver` contraseña. Una vez que tenga la contraseña del Servicio de atención al cliente de Adobe, manténgala en una ubicación segura.
+AEM Sin embargo, antes de que pueda usar la variable, puede usar la siguiente `aemserver` usuario, se debe establecer su contraseña. Esto no se puede hacer a través de Adobe Campaign. Debe ser realizado por un ingeniero de soporte de Adobe. [Envío de un ticket con el Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-tab=home#support) para solicitar el restablecimiento de `aemserver` contraseña. Una vez que tenga la contraseña del Servicio de atención al cliente de Adobe, manténgala en una ubicación segura.
 
 ## Verificación de AEMResourceTypeFilter en Campaign {#resource-type-filter}
 

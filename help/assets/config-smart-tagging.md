@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2244'
-ht-degree: 24%
+source-wordcount: '2227'
+ht-degree: 21%
 
 ---
 
@@ -24,12 +25,12 @@ Antes de empezar a etiquetar recursos mediante Smart Content Services, integre [
 
 Antes de usar el servicio de contenido inteligente, asegúrese de lo siguiente:
 
-* [Integración con Adobe Developer Console](#integrate-adobe-io).
+* [Integración con la consola de Adobe Developer](#integrate-adobe-io).
 * [Formación del servicio de contenido inteligente](#training-the-smart-content-service).
 
 * Instale la última versión [[!DNL Experience Manager] Paquete de servicio](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es).
 
-## Integración con Adobe Developer Console {#integrate-adobe-io}
+## Integración con la consola de Adobe Developer {#integrate-adobe-io}
 
 Al integrar con la consola de Adobe Developer, la variable [!DNL Experience Manager] El servidor de autentica las credenciales del servicio con la puerta de enlace de la consola de Adobe Developer antes de reenviar la solicitud al servicio de contenido inteligente. Para integrarse, necesita una cuenta de Adobe ID que tenga privilegios de administrador para la organización y la licencia de Smart Content Service comprada y habilitada para su organización.
 
@@ -57,7 +58,7 @@ Un certificado público permite autenticar el perfil en la consola de Adobe Deve
 
 1. En el **[!UICONTROL AEM Servicio de contenido inteligente]** , utilice los siguientes valores:
 
-   **[!UICONTROL URL del servicio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+   **[!UICONTROL URL de servicio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
    Por ejemplo, `https://smartcontent.adobe.io/apac`. Puede especificar `na`, `emea`, o, `apac` como las regiones en las que está alojada la instancia de autor de Experience Manager.
 
@@ -68,7 +69,7 @@ Un certificado público permite autenticar el perfil en la consola de Adobe Deve
 
    **[!UICONTROL Servidor de autorización]**: `https://ims-na1.adobelogin.com`
 
-   Deje los demás campos en blanco por ahora (se proporcionarán más adelante). Haga clic en **[!UICONTROL Aceptar]**.
+   Deje los demás campos en blanco por ahora (se proporcionarán más adelante). Haz clic en **[!UICONTROL OK]**.
 
    ![Cuadro de diálogo Servicio de contenido inteligente del Experience Manager para proporcionar la URL del servicio de contenido](assets/aem_scs.png)
 
@@ -123,7 +124,7 @@ Para utilizar las API del servicio de contenido inteligente, cree una integraci�
 
 1. Haga clic en **[!UICONTROL Siguiente]**. 
 
-1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]**. Haga clic en **[!UICONTROL Guardar API configurada]**.
+1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]**. Clic **[!UICONTROL Guardar API configurada]**.
 
    La página muestra más información sobre la configuración. Mantenga esta página abierta para copiar y añadir estos valores en [!UICONTROL Configuración del servicio de etiquetado inteligente de recursos] de la configuración de nube en [!DNL Experience Manager] para configurar etiquetas inteligentes.
 
@@ -147,11 +148,11 @@ Para configurar la integración, utilice los valores de [!UICONTROL ID DE CUENTA
    | [!UICONTROL Configuración del servicio de etiquetado inteligente de recursos] | [!DNL Adobe Developer Console] campos de integración |
    |--- |--- |
    | [!UICONTROL Clave de API] | [!UICONTROL ID DE CLIENTE] |
-   | [!UICONTROL Id. de cuenta técnica] | [!UICONTROL ID DE CUENTA TÉCNICA] |
-   | [!UICONTROL Id. de organización] | [!UICONTROL ID. DE ORGANIZACIÓN] |
-   | [!UICONTROL Secreto de cliente] | [!UICONTROL SECRETO DEL CLIENTE] |
+   | [!UICONTROL ID de cuenta técnica] | [!UICONTROL ID DE CUENTA TÉCNICA] |
+   | [!UICONTROL ID de organización] | [!UICONTROL ID DE ORGANIZACIÓN] |
+   | [!UICONTROL Secreto del cliente] | [!UICONTROL SECRETO DEL CLIENTE] |
 
-### Validación de la configuración {#validate-the-configuration}
+### Validar la configuración {#validate-the-configuration}
 
 Una vez completada la configuración, puede utilizar un MBean de JMX para validar la configuración. Para validar, siga estos pasos.
 
@@ -177,7 +178,7 @@ Los resultados de validación se muestran en el mismo cuadro de diálogo.
 
    ![Añada el paso del recurso de etiquetas inteligentes después del paso de miniaturas de proceso en el flujo de trabajo de recursos de actualización de DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Imagen: Añada el paso del recurso de etiquetas inteligentes después del paso de miniaturas de proceso en el flujo de trabajo de recursos de actualización de DAM*
+   *Imagen: adición del paso del recurso de etiquetas inteligentes después del paso de miniaturas de proceso en [!UICONTROL Recurso de actualización DAM] flujo de trabajo.*
 
 1. Abra el paso en modo de edición. En **[!UICONTROL Configuración avanzada]**, compruebe que la opción **[!UICONTROL Avance del controlador]** está seleccionada.
 
@@ -200,7 +201,7 @@ Los resultados de validación se muestran en el mismo cuadro de diálogo.
 
    *Figura: Configure el flujo de trabajo de recursos de actualización de DAM para agregar el paso de etiquetas inteligentes y seleccione Omitir indicador de etiquetas inteligentes.*
 
-1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el paso del proceso y, a continuación, guarde el flujo de trabajo.
+1. Clic **[!UICONTROL OK]** para cerrar el paso del proceso y, a continuación, guarde el flujo de trabajo.
 
 ## Formación del servicio de contenido inteligente {#training-the-smart-content-service}
 

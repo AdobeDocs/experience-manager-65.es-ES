@@ -7,10 +7,11 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 65%
+source-wordcount: '1138'
+ht-degree: 63%
 
 ---
 
@@ -124,7 +125,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **Párrafos**: especifique el intervalo de párrafos que desea incluir:
 
-   * **Todos**
+   * **Todo**
    * **Rango**: por ejemplo, `1`, `3-5` o `9-*`
 
       * **Gestionar encabezados como sus propios párrafos**
@@ -161,7 +162,7 @@ Para el contenido intermedio puede hacer lo siguiente:
 >
 >También puede [insertar recursos visuales (imágenes) en el propio fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo precedente.
+>Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo anterior.
 
 >[!CAUTION]
 >

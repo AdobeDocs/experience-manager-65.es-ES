@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5284'
 ht-degree: 71%
@@ -181,7 +182,7 @@ Con el paso Crear del [proceso de orientación](/help/sites-authoring/content-ta
 Para añadir una experiencia, haga lo siguiente:
 
 1. Para añadir una experiencia, haga clic en **+** **Añadir segmentación de experiencias** que aparece debajo de las experiencias existentes en la **Audiencias** panel.
-1. Seleccione un público. De forma predeterminada, ese nombre es el nombre de la experiencia. Puede escribir otro nombre, si lo desea. Haga clic en **Aceptar**.
+1. Seleccione un público. De forma predeterminada, ese nombre es el nombre de la experiencia. Puede escribir otro nombre, si lo desea. Haz clic en **OK**.
 
 #### Eliminación de experiencias mediante el modo de segmentación {#removing-experiences-using-targeting-mode}
 

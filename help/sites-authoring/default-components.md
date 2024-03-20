@@ -2,10 +2,11 @@
 title: Componentes predeterminados
 description: Adobe Experience Manager incluye varios componentes listos para usar que proporcionan una amplia funcionalidad para creadores de sitios web.
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 37%
+source-wordcount: '420'
+ht-degree: 34%
 
 ---
 
@@ -32,7 +33,7 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 
 * [Editar contenido: modo pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
+Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de página](/help/sites-authoring/editing-content.md).
 Los componentes se ordenan según varias categorías denominadas grupos de componentes. Algunos ejemplos de estos grupos de componentes son:
 
 * **We.Retail**: incluye los componentes principales procesados como proxy para su uso con [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md).

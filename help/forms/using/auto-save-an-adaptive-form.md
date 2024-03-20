@@ -4,10 +4,12 @@ description: Puede configurar un formulario adaptable para que empiece a guardar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -82,6 +84,6 @@ Puede implementar un evento personalizado para habilitar la funcionalidad de gua
 
 1. Abra el formulario adaptable en el modo de autor.
 
-1. En el modo de edición, seleccione un componente y, a continuación, seleccione ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![cmppr](assets/cmppr.png).
+1. En el modo de edición, seleccione un componente y, a continuación, ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y ![cmppr](assets/cmppr.png).
 1. En las propiedades, abra la sección **[!UICONTROL Básico]**. En el cuadro **[!UICONTROL Categoría de la biblioteca del cliente]**, escriba el valor de la propiedad category definida al crear las carpetas de la biblioteca cliente.
 1. Abra la sección Guardar automáticamente. En el cuadro **[!UICONTROL Guardar automáticamente después de este evento]** especifique un evento personalizado ya definido en la biblioteca de cliente. Haga clic en **[!UICONTROL Aceptar]**.

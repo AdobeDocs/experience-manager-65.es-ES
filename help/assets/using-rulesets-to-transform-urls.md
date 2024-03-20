@@ -8,9 +8,10 @@ content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -22,18 +23,18 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 * Agregar un sufijo de tipo MIME. Muchos servicios y sitios web requieren sufijos de imagen, como la adición de `.jpg` a una dirección URL.
 * Creación de una ruta de carpeta a la URL con fines de optimización del motor de búsqueda.
 
-   Consulte [Cómo admite Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf).
+  Consulte [Cómo admite Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf).
 
 * Añadir metadatos a la URL con fines de SEO (optimización del motor de búsqueda).
 
-   Consulte [Cómo admite Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf).
+  Consulte [Cómo admite Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf).
 
 * Configuración de la disposición de contenido para almacenar en déclencheur una descarga.
 * Simplifique las direcciones URL de plantilla del servicio de imágenes para la personalización. Por ejemplo, gire `rgb{XX,YY,ZZ}` en el archivo RTF-ready `\redXX\greenYY\blueZZ`
 
 * Solicite la codificación de ciertos caracteres, como `$`, `{`, y `}`y ciertos caracteres que se van a descodificar en ImageServer. Por ejemplo, Facebook no funciona bien con direcciones URL que contienen caracteres especiales.
 
-   Consulte [Eliminación de caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+  Consulte [Eliminación de caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
 En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado en XML para administrar la información de los recursos pueden cargar archivos XML en Dynamic Media. Puede designar uno de estos archivos como el archivo del conjunto de reglas de preprocesamiento para el servicio de recursos de Dynamic Media. Este archivo reestructura el formato de protocolo de URL estándar para satisfacer la lógica empresarial de los sistemas que se integran con Dynamic Media. Especifique un archivo XML que sirva como ruta de acceso del archivo de definiciones del conjunto de reglas.
 

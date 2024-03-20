@@ -5,10 +5,11 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -136,7 +137,7 @@ Es necesario ser administrador de AEM para eliminar los datos de usuario de las 
 
    1. Vaya a `https://'[server]:[port]'/aem/start.html` e inicie sesión con las credenciales de administrador.
    1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Instancias]**.
-   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y seleccione **[!UICONTROL Finalizar]** para finalizar instancias en ejecución.
+   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y **[!UICONTROL Finalizar]** para finalizar las instancias en ejecución.
 
       Para obtener más información sobre cómo trabajar con instancias de flujo de trabajo, consulte [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md).
 

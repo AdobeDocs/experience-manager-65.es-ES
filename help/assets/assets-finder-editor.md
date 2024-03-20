@@ -5,9 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2088'
 ht-degree: 1%
 
 ---
@@ -254,7 +255,7 @@ Para agregar componentes del Editor de recursos:
 | Componente | Descripción |
 |---|---|
 | **[!UICONTROL Formulario de metadatos] y [!UICONTROL Campo de texto de metadatos]** | Permite agregar metadatos adicionales a un recurso y realizar una acción, como enviar, en ese recurso. |
-| **[!UICONTROL Subrecursos]** | Permite personalizar los subrecursos. |
+| **[!UICONTROL Recursos secundarios]** | Permite personalizar los subrecursos. |
 | **Etiquetas** | Permite que los usuarios seleccionen y agreguen etiquetas a un recurso. |
 | **[!UICONTROL Miniatura]** | Muestra una miniatura del recurso, su nombre de archivo y permite agregar un texto alternativo. Aquí también puede agregar acciones del Editor de recursos. |
 | **[!UICONTROL Título]** | Muestra el título del recurso, que se puede personalizar. |

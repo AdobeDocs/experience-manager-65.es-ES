@@ -7,10 +7,11 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 5%
+source-wordcount: '2118'
+ht-degree: 4%
 
 ---
 
@@ -41,7 +42,7 @@ Para empezar a usar CRXDE Lite, siga estos pasos:
 1. En el explorador, introduzca `https://<host>:<port>/crx/de`. De forma predeterminada, es `https://localhost:4502/crx/de`.
 1. Introduzca su **nombre de usuario** y **contraseña**. De forma predeterminada, es `admin` y `admin`.
 
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
 La interfaz de usuario de CRXDE Lite tiene el siguiente aspecto en el explorador:
 
@@ -85,7 +86,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Pestaña Consola<br /> </td>
-   <td><p><strong>Registros de servidor</strong>:</p> <p>Muestra los mensajes de registro. Puede configurar el nivel de registro, borrar la consola, fijar la posición de desplazamiento seleccionada y activar o desactivar la visualización de mensajes.<br /> </p> <p><strong>Control de versión</strong>:</p> <p>Muestra mensajes de control de versiones.<br /> </p> </td>
+   <td><p><strong>Registros de servidor</strong>:</p> <p>Muestra los mensajes de registro. Puede configurar el nivel de registro, borrar la consola, fijar la posición de desplazamiento seleccionada y activar o desactivar la visualización de mensajes.<br /> </p> <p><strong>Control de versiones</strong>:</p> <p>Muestra mensajes de control de versiones.<br /> </p> </td>
   </tr>
   <tr>
    <td>Pestaña Información de compilación<br /> </td>
@@ -97,10 +98,10 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Guardar todos</td>
-   <td><p><strong>Guardar todos</strong>:<br /> </p> <p>Guarda todos los cambios realizados. Hasta que haga clic en Guardar, los cambios son temporales y se pierden al salir de la consola.</p> <p><strong>Revertir</strong>:</p> <p>Descarta todos los cambios realizados en el nodo seleccionado desde la última acción de guardado y vuelve a cargar el estado del repositorio para el nodo seleccionado.</p> <p><strong>Revertir todos</strong>:</p> <p>Descarta todos los cambios realizados en todo el repositorio desde la última acción de guardado y vuelve a cargar el estado del repositorio.</p> </td>
+   <td><p><strong>Guardar todo</strong>:<br /> </p> <p>Guarda todos los cambios realizados. Hasta que haga clic en Guardar, los cambios son temporales y se pierden al salir de la consola.</p> <p><strong>Revertir</strong>:</p> <p>Descarta todos los cambios realizados en el nodo seleccionado desde la última acción de guardado y vuelve a cargar el estado del repositorio para el nodo seleccionado.</p> <p><strong>Revertir todo</strong>:</p> <p>Descarta todos los cambios realizados en todo el repositorio desde la última acción de guardado y vuelve a cargar el estado del repositorio.</p> </td>
   </tr>
   <tr>
-   <td>Crear ...<br /> </td>
+   <td>Crear...<br /> </td>
    <td><p>Menú desplegable para crear lo siguiente en el nodo seleccionado:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo de nodo arbitrario<br /> </p> <p>- <strong>Archivo</strong>: nodo nt:file y su subnodo nt:resource</p> <p>- <strong>Carpeta</strong>: nt:nodo de carpeta</p> <p>- <strong>Plantilla</strong>AEM : plantilla de</p> <p>- <strong>Componente</strong>AEM : componente</p> <p>- <strong>Diálogo</strong>AEM : cuadro de diálogo</p> </td>
   </tr>
   <tr>
@@ -116,15 +117,15 @@ CRXDE Lite ofrece las siguientes funciones:
    <td>Pega el nodo copiado bajo el nodo seleccionado.<br /> </td>
   </tr>
   <tr>
-   <td>Mover ...<br /> </td>
+   <td>Mover...<br /> </td>
    <td>Mueve el nodo seleccionado al nodo definido a través del cuadro de diálogo.</td>
   </tr>
   <tr>
-   <td>Cambiar nombre ...<br /> </td>
+   <td>Cambiar nombre...<br /> </td>
    <td>Cambia el nombre del nodo seleccionado.<br /> </td>
   </tr>
   <tr>
-   <td>Clases...<br /> </td>
+   <td>Mixins...<br /> </td>
    <td>Permite agregar tipos de mezcla al tipo de nodo. Los tipos de mezcla se utilizan principalmente para agregar funciones avanzadas como versiones, control de acceso, referencias y bloqueo al nodo.</td>
   </tr>
   <tr>
@@ -158,11 +159,11 @@ Para crear una plantilla con un CRXDE Lite:
 
 1. Introduzca el **Etiqueta**, **Título**, **Descripción**, **Tipo de medio**, y **Clasificación** de la plantilla. Haga clic en **Siguiente**.
 
-1. Este paso es opcional: establezca el **Rutas permitidas**. Haga clic en **Siguiente**
+1. Este paso es opcional: establezca el **Rutas permitidas**. Clic **Siguiente**
 
 1. Este paso es opcional: establezca el **Principales permitidos**. Haga clic en **Siguiente**.
 
-1. Este paso es opcional: establezca el **Elementos secundarios permitidos**. Haga clic en **Aceptar**.
+1. Este paso es opcional: establezca el **Elementos secundarios permitidos**. Haz clic en **OK**.
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
@@ -189,7 +190,7 @@ Para crear un componente con un CRXDE Lite:
 
 1. Este paso es opcional: establecer la propiedad del componente **Principales permitidos**. Haga clic en **Siguiente**.
 
-1. Este paso es opcional: establecer la propiedad del componente **Elementos secundarios permitidos**. Haga clic en **Aceptar**.
+1. Este paso es opcional: establecer la propiedad del componente **Elementos secundarios permitidos**. Haz clic en **OK**.
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
@@ -206,7 +207,7 @@ Para crear un cuadro de diálogo con el CRXDE Lite:
 1. Abra el CRXDE Lite en el explorador.
 1. En el panel Navegación, haga clic con el botón derecho en el componente donde desee crear el cuadro de diálogo y seleccione **Crear...**, entonces **Crear diálogo...**.
 
-1. Introduzca el **Etiqueta** y el **Título**. Haga clic en **Aceptar**.
+1. Introduzca el **Etiqueta** y el **Título**. Haz clic en **OK**.
 
 1. Clic **Guardar todo** l para guardar los cambios en el servidor.
 
@@ -224,7 +225,7 @@ Para crear un nodo con un CRXDE Lite:
 
 1. Abra el CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en el nodo en el que desea crear el nodo y seleccione **Crear...**, entonces **Crear nodo...**.
-1. Introduzca el **Nombre** y el **Tipo**. Haga clic en **Aceptar**.
+1. Introduzca el **Nombre** y el **Tipo**. Haz clic en **OK**.
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
 Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando nodos.
@@ -252,7 +253,7 @@ Para crear una secuencia de comandos:
 1. Abra el CRXDE Lite en el explorador.
 1. En el panel Navegación, haga clic con el botón derecho en el componente donde desee crear el script y seleccione **Crear...**, entonces **Crear archivo...**.
 
-1. Introduzca el archivo **Nombre** incluida su extensión. Haga clic en **Aceptar**.
+1. Introduzca el archivo **Nombre** incluida su extensión. Haz clic en **OK**.
 
 1. El nuevo archivo se abrirá como una pestaña en el panel de edición.
 1. Edite el archivo.

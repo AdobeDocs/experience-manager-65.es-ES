@@ -2,7 +2,8 @@
 title: Crear contenido accesible para Adobe Experience Manager (Conformidad con WCAG 2.1)
 description: AEM Uso para ayudar a las personas con discapacidades a hacer que el contenido web sea accesible para ellas y lo puedan utilizar
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '13636'
 ht-degree: 82%

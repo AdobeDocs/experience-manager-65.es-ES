@@ -6,10 +6,11 @@ topic-tags: develop
 noindex: true
 feature: Adaptive Forms, Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +26,7 @@ Este artículo explica el proceso para utilizar el flujo de trabajo de traducci�
 
 El servicio de traducción automática traduce inmediatamente el contenido de los formularios adaptables y los documentos de registro. AEM Forms está preconfigurado para utilizar una versión de prueba de Microsoft Translator para la traducción automática. Realice los siguientes pasos para habilitar la traducción automática en los formularios adaptables y los documentos de registro:
 
-1. En la interfaz de usuario de AEM Forms, seleccione un formulario y haga clic en el botón **Agregar diccionario** opción.
+1. En la interfaz de usuario de AEM Forms, selecciona un formulario y selecciona la opción **Agregar diccionario**.
 1. En la pantalla **Agregar diccionario al proyecto de traducción**, seleccione las opciones **Crear un nuevo proyecto de traducción** o **Agregar a un proyecto de traducción existente**.
 1. En el campo **Título del proyecto**, especifique el título. Por ejemplo, `Government Reference Site - German locale.`
 1. En el campo **Idiomas de destino**, especifique una configuración regional (por ejemplo, `German(de)`) y haga clic en **Listo**. Puede especificar varias configuraciones regionales. El formulario se traduce a todas las configuraciones regionales especificadas en el campo **Idiomas de destino**.

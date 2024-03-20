@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 4%
+source-wordcount: '1555'
+ht-degree: 2%
 
 ---
 
@@ -120,7 +121,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 >[!CAUTION]
 >
->No cambie la biblioteca ExtendScript. Esta biblioteca proporciona la funcionalidad HTTP necesaria para comunicarse con Sling. Esta configuración especifica la biblioteca que se enviará a [!DNL InDesign Server] para su uso allí.
+>No cambie la biblioteca de ExtendScript. Esta biblioteca proporciona la funcionalidad HTTP necesaria para comunicarse con Sling. Esta configuración especifica la biblioteca que se enviará a [!DNL InDesign Server] para su uso allí.
 
 El `ThumbnailExport.jsx` La secuencia de comandos ejecutada por el paso de flujo de trabajo Extracción de medios genera una representación de miniaturas en formato de JPG. El paso del flujo de trabajo Procesar miniaturas utiliza esta representación para generar las representaciones estáticas requeridas por [!DNL Experience Manager].
 
@@ -134,8 +135,7 @@ Para personalizar, puede editar la pestaña **[!UICONTROL Argumentos]** del paso
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Controlador de extracción de página**: En la lista emergente, seleccione el controlador que desee utilizar. Un controlador de extracción funciona en una representación específica, elegida por un elemento relacionado `RenditionPicker` (consulte la API `ExtractionHandler`).
-En un estándar [!DNL Experience Manager] instalación está disponible lo siguiente:
+* **Controlador de extracción de página**: En la lista emergente, seleccione el controlador que desee utilizar. Un controlador de extracción funciona en una representación específica, elegida por un elemento relacionado `RenditionPicker` (consulte la `ExtractionHandler` API). En un estándar [!DNL Experience Manager] instalación está disponible lo siguiente:
    * IDML Export Extraction Handle: Funciona en `IDML` Representación generada en el paso MediaExtract.
 
 * **Nombre de página**: especifique el nombre que desea tener asignado a la página resultante. Si se deja en blanco, el nombre es &quot;página&quot; (o un derivado si &quot;página&quot; ya existe).

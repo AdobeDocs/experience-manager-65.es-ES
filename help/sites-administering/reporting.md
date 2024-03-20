@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2777'
-ht-degree: 4%
+source-wordcount: '2782'
+ht-degree: 3%
 
 ---
 
@@ -160,7 +161,7 @@ El gráfico resultante se muestra en la parte inferior derecha:
 
 Cuando se inicie la recopilación de datos, puede seleccionar lo siguiente:
 
-* **Período**
+* **Periodo**
 
   Puede seleccionar las fechas inicial y final para mostrar los datos del informe.
 
@@ -339,7 +340,7 @@ Para ayudarle a identificar las solicitudes más costosas dentro de un periodo d
 
 Para generar el informe, puede especificar lo siguiente:
 
-* **Periodo (horas)**
+* **Período (horas)**
 
   El número de horas (pasadas) que se van a analizar.
 
@@ -357,7 +358,7 @@ Para generar el informe, puede especificar lo siguiente:
 
   Predeterminado: `-1` (todos)
 
-* **Dirección de correo electrónico**
+* **Correo electrónico**
 
   Envíe los resultados a una dirección de correo electrónico.
 
@@ -542,15 +543,15 @@ Los permisos necesarios dependen de la acción:
 
 AEM En una instalación estándar, los siguientes permisos están preestablecidos para los informes:
 
-* **Informe del usuario**
+* **Informe de usuario**
 
   `user administrators` - leer y escribir
 
-* **Informe de actividad de la página**
+* **Informe de actividad de página**
 
   `contributors` - leer y escribir
 
-* **Informe sobre componentes**
+* **Informe de componente**
 
   `contributors` - leer y escribir
 

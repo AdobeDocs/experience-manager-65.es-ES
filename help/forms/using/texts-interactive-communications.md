@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 83%
@@ -185,7 +186,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
    * También puede crear varias condiciones en una regla.
    * También puede crear reglas superpuestas, en las que se aplica una regla a una parte de un contenido que ya tiene una regla aplicada.
 
-1. Seleccionar **[!UICONTROL Listo]**.
+1. Seleccione **[!UICONTROL Listo]**.
 
    La regla se aplica. El texto o el contenido al que se aplica la regla se resalta en verde. Cuando pasa el ratón sobre el controlador izquierdo del resaltado, aparece la regla aplicada.
 

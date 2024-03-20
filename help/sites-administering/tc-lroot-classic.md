@@ -4,9 +4,10 @@ description: Obtenga información sobre cómo crear una raíz de idioma en Adobe
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -46,7 +47,7 @@ El siguiente procedimiento utiliza la IU clásica para crear una raíz de idioma
    | Tipo de copia de idioma | Descripción |
    |---|---|
    | auto | Utiliza el comportamiento de las páginas principales |
-   | omitir | No crea una copia de esta página y sus elementos secundarios |
+   | pasar por alto | No crea una copia de esta página y sus elementos secundarios |
    | `<language>+` (por ejemplo, francés+) | Copia la página y todos sus elementos secundarios de ese idioma |
    | `<language>` (por ejemplo, francés) | Copia sólo la página de ese idioma |
 

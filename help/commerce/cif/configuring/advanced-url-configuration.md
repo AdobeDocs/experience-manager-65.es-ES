@@ -9,10 +9,11 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 29%
+source-wordcount: '805'
+ht-degree: 24%
 
 ---
 
@@ -93,7 +94,7 @@ Las implementaciones de formato de URL personalizadas deben implementar un par d
 
 Además de las `UrlProvider`, también es posible configurar [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. AEM El proyecto Archetype también proporciona lo siguiente [un ejemplo de configuración](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
 
-## Combinación con AEM Dispatcher {#dispatcher}
+## AEM Combinación con Dispatcher de la {#dispatcher}
 
 AEM Las reescrituras de URL también se pueden lograr utilizando el servidor HTTP de Dispatcher de la aplicación de la red de distribución de datos con `mod_rewrite` módulo. El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona una referencia a la configuración de AEM Dispatcher que ya incluye las [reglas de reescritura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para el tamaño generado.
 

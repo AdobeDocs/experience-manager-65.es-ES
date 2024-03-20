@@ -5,10 +5,11 @@ topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -30,10 +31,10 @@ La bandeja de entrada AEM permite compartir uno o todos los elementos de la band
 
 Siga estos pasos para compartir todos los elementos de una Bandeja de entrada con otro usuario:
 
-1. Inicie sesión en la instancia de AEM. Seleccione el ![Bandeja de entrada](assets/bell.svg) y seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
-1. Seleccione el ![Selector de vista](assets/viewlist.svg) o ![Selector de vista](assets/calendar.svg) junto al icono **[!UICONTROL Crear]** y seleccione **[!UICONTROL Configuración]**. Aparecerá el cuadro de diálogo Configuración.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
+1. Seleccione ![Selector de vista](assets/viewlist.svg) o el icono ![Selector de vista](assets/calendar.svg) junto al botón **[!UICONTROL Crear]** y luego seleccione **[!UICONTROL Configuración]**.  Aparece el cuadro de diálogo Configuración.
 1. Abra la pestaña **[!UICONTROL Compartir]** en el cuadro de diálogo Configuración.
-1. Introduzca el nombre de un usuario en la **[!UICONTROL Conceder acceso a los elementos de la Bandeja de entrada]** cuadro de texto y seleccione **[!UICONTROL Conceder]**. Repita el paso para agregar más usuarios. Todos los usuarios con acceso a sus elementos aparecen en la sección **Nombre de usuario**.
+1. Introduzca el nombre de un usuario en el cuadro de texto **[!UICONTROL Conceder acceso a los elementos de la Bandeja de entrada]** y seleccione **[!UICONTROL Conceder]**. Repita el paso para agregar más usuarios. Todos los usuarios con acceso a sus elementos aparecen en la sección **Nombre de usuario**.
 1. Seleccione **[!UICONTROL Guardar]**.
 
 >[!NOTE]
@@ -44,9 +45,9 @@ Siga estos pasos para compartir todos los elementos de una Bandeja de entrada co
 
 Realice los siguientes pasos para compartir un elemento de la Bandeja de entrada con otro usuario:
 
-1. Inicie sesión en la instancia de AEM. Seleccione el ![Bandeja de entrada](assets/bell.svg) y seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
-1. Seleccione un elemento y seleccione **[!UICONTROL Compartir]**. Aparecerá un cuadro de diálogo.
-1. Escriba el nombre de un usuario en el cuadro de texto Agregar usuarios para compartir este elemento y seleccione **[!UICONTROL Añadir]**. Repita el paso para agregar más usuarios. Todos los usuarios con acceso a sus elementos aparecen en la sección **[!UICONTROL Nombre de usuario]**.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
+1. Seleccione un elemento y seleccione **[!UICONTROL Compartir]**. Aparecerá un cuadro de diálogo.
+1. Escriba el nombre de un usuario en el cuadro de texto Agregar usuarios para compartir este elemento y seleccione **[!UICONTROL Agregar]**. Repita el paso para agregar más usuarios. Todos los usuarios con acceso a sus elementos aparecen en la sección **[!UICONTROL Nombre de usuario]**.
 1. Seleccione **[!UICONTROL Guardar]**.
 
 
@@ -58,20 +59,20 @@ Realice los siguientes pasos para compartir un elemento de la Bandeja de entrada
 
 Puede solicitar acceso a los elementos de la Bandeja de entrada de otro usuario. Una vez concedido el acceso, podrá visualizar, reclamar y realizar las acciones adecuadas con los elementos compartidos. Realice los siguientes pasos para solicitar acceso a los elementos de la Bandeja de entrada de otro usuario:
 
-1. Inicie sesión en la instancia de AEM. Seleccione el ![Selector de vista](assets/bell.svg) y seleccione **[!UICONTROL Ver todo]**.
-1. Seleccione el ![Selector de vista](assets/viewlist.svg) o ![Selector de vista](assets/calendar.svg) junto al icono **[!UICONTROL Crear]** y seleccione **[!UICONTROL Configuración]**. Aparecerá el cuadro de diálogo Configuración.
-1. Introduzca el nombre de un usuario en la **[!UICONTROL Solicitar acceso a los elementos de la bandeja de entrada del usuario]** cuadro de texto y seleccione **[!UICONTROL Solicitud]**. Se enviará una solicitud al usuario, y el estado de la misma se mostrará junto al nombre de dicho usuario. Repita el paso para agregar más usuarios.
-1. Seleccionar **[!UICONTROL Guardar]**. La solicitud se envía a los usuarios como un elemento de la Bandeja de entrada. El usuario puede seleccionar el elemento y seleccionar Aprobar o Rechazar para conceder o rechazar el acceso.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono ![Selector de vista](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**.
+1. Seleccione ![Selector de vista](assets/viewlist.svg) o el icono ![Selector de vista](assets/calendar.svg) junto al botón **[!UICONTROL Crear]** y luego seleccione **[!UICONTROL Configuración]**. Aparece el cuadro de diálogo Configuración.
+1. Introduzca el nombre de un usuario en el cuadro de texto **[!UICONTROL Solicitar acceso a los elementos de la Bandeja de entrada del usuario]** y luego seleccione **[!UICONTROL Solicitar]**. Se enviará una solicitud al usuario, y el estado de la misma se mostrará junto al nombre de dicho usuario. Repita el paso para agregar más usuarios.
+1. Seleccione **[!UICONTROL Guardar]**. La solicitud se envía a los usuarios como un elemento de la Bandeja de entrada. El usuario puede seleccionar el elemento y seleccionar Aprobar o Rechazar para conceder o rechazar el acceso.
 
 
 ## Reclamar elementos compartidos por otros usuarios {#claim-items}
 
 Solo puede empezar a trabajar en un elemento compartido una vez que lo ha reclamado. Esto evita que varios usuarios puedan trabajar en el mismo elemento. Realice los siguientes pasos para reclamar un elemento:
 
-1. Inicie sesión en la instancia de AEM. Seleccione la bandeja de entrada ![Bandeja de entrada](assets/bell.svg) y seleccione **[!UICONTROL Ver todo]**.
-1. Seleccione el ![Solo contenido](assets/railleft.svg) para abrir el selector de filtros.
-1. Seleccione el **[!UICONTROL Seleccionar usuario asignado]** desplegable para ver y seleccionar usuarios que han compartido los elementos de su Bandeja de entrada con usted.
-1. Seleccione un elemento y seleccione **[!UICONTROL Reclamar]**. El elemento se agregará a la Bandeja de entrada.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono Bandeja de entrada ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**.
+1. Seleccione el icono ![Solo contenido](assets/railleft.svg) para abrir el selector de filtros.
+1. ©Seleccione la lista desplegable **[!UICONTROL Seleccionar usuario asignado]** para ver y seleccionar los usuarios que han compartido los elementos de su Bandeja de entrada con usted.
+1. Seleccione un elemento y seleccione **[!UICONTROL Reclamar]**. El elemento se agregará a la Bandeja de entrada.
 
 ## Liberar elementos reclamados {#release-items}
 
@@ -79,8 +80,8 @@ Solo puede trabajar en un elemento compartido una vez que lo ha reclamado. El re
 
 Realice los siguientes pasos para liberar un elemento:
 
-1. Inicie sesión en la instancia de AEM. Seleccione la bandeja de entrada ![Bandeja de entrada](assets/bell.svg) y seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
-1. Seleccione el elemento que desea liberar y seleccione **[!UICONTROL Anular reclamación]**. El elemento volverá a agregarse al grupo. Ahora otros podrán reclamar el elemento.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono Bandeja de entrada ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**.  Aparecerá una lista de los elementos de la Bandeja de entrada.
+1. Seleccione el elemento que desea liberar y seleccione **[!UICONTROL Anular reclamación]**. El elemento volverá a agregarse al grupo. Ahora otros podrán reclamar el elemento.
 
 ## Restricciones {#limitations}
 

@@ -6,10 +6,11 @@ feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 8%
+source-wordcount: '179'
+ht-degree: 7%
 
 ---
 
@@ -17,12 +18,12 @@ ht-degree: 8%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] permite automatizar los flujos de trabajo de traducción de recursos (binarios, metadatos y etiquetas incluidos) para generar recursos en otros idiomas y utilizarlos en proyectos multilingües.
 
-Para automatizar los flujos de trabajo de traducción, se integran los proveedores de servicios de traducción con [!DNL Experience Manager] y cree proyectos para traducir recursos a varios idiomas. [!DNL Experience Manager] admite flujos de trabajo de traducción automática y humana.
+Para automatizar los flujos de trabajo de traducción, se integran los proveedores de servicios de traducción con [!DNL Experience Manager] y cree proyectos para traducir recursos a varios idiomas. [!DNL Experience Manager] admite flujos de trabajo de traducción humana y automática.
 
 Traducción humana: los recursos traducidos se devuelven e importan en [!DNL Experience Manager]. Cuando el proveedor de traducción esté integrado con [!DNL Experience Manager], los recursos se envían automáticamente entre [!DNL Experience Manager] y el proveedor de traducción.
 

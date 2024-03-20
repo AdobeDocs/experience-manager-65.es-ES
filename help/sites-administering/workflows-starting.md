@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 6%
+source-wordcount: '790'
+ht-degree: 2%
 
 ---
 
@@ -102,7 +103,7 @@ Un paquete de flujo de trabajo:
 
      Un título opcional para ayudar a identificar esta instancia.
 
-   * **Comentar**
+   * **Comentario**
 
      Un comentario opcional para indicar los detalles de esta instancia.
 
@@ -123,7 +124,7 @@ Un paquete de flujo de trabajo:
       * Modificado
       * Eliminado
 
-   * **Tipo de nodo**
+   * **Nodetype**
 
      El tipo de nodo al que se aplica el iniciador del flujo de trabajo.
 
@@ -141,7 +142,7 @@ Un paquete de flujo de trabajo:
 
      name==User
 
-   * **Características**
+   * **Funciones**
 
      Lista de funciones que se van a habilitar. Seleccione las funciones necesarias mediante el selector desplegable.
 
@@ -164,7 +165,7 @@ Un paquete de flujo de trabajo:
       * Seleccionar **Activar** para iniciar flujos de trabajo cuando se cumplan las propiedades de configuración.
       * Seleccionar **Deshabilitar** cuando el flujo de trabajo no debe ejecutarse (ni siquiera cuando se cumplan las propiedades de configuración).
 
-   * **Lista de exclusiones**
+   * **Lista de exclusión**
 
      Esto especifica los eventos JCR que se deben excluir (es decir, ignorar) al determinar si se debe activar un flujo de trabajo.
 

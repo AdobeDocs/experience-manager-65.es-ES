@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 17%
+source-wordcount: '1895'
+ht-degree: 16%
 
 ---
 
@@ -278,13 +279,13 @@ Para mover o cambiar el nombre de una página:
 
      La etiqueta de la página actual se muestra de forma predeterminada. Especifique la nueva etiqueta de página, si es necesario.
 
-   * **Ajustar**
+   * **Ajuste**
 
      AEM Actualice los vínculos de la página enumerada que apunten a la página desplazada: por ejemplo, si la página A tiene vínculos a la página B, ajusta los vínculos de la página A en caso de que mueva la página B, por ejemplo, para la página B.
 
      Se puede seleccionar o deseleccionar para cada página de referencia individual.
 
-   * **Volver a publicar el formulario**
+   * **Volver a publicar**
 
      Volver a publicar la página de referencia; de nuevo, esto se puede seleccionar para cada página individual.
 

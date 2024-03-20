@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 70%
+source-wordcount: '758'
+ht-degree: 67%
 
 ---
 
@@ -34,7 +35,7 @@ El escenario de la solicitud de un seguro de coche de We.Finance es una narraci�
 
 ### Gloria envía una comunicación sobre la renovación de la póliza del seguro desde We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria inicia sesión en una instancia de AEM, hace clic en **Renovación del seguro del coche** y luego en **Abrir la interfaz de usuario del agente**. El clic rellena previamente el documento del seguro que contiene los datos de la póliza de Sarah Rose. Gloria hace clic **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y, a continuación, en unos segundos &quot;Enviado correctamente&quot;.
+AEM Gloria inicia sesión en la instancia de, hace clic en **Renovación del seguro del coche,** y luego hace clic en **Abrir la interfaz de usuario del agente**. El clic rellena previamente el documento del seguro con los datos de la póliza de Sarah Rose. Gloria hace clic **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y, a continuación, en unos segundos &quot;Enviado correctamente&quot;.
 
 Sarah recibe un correo electrónico con el asunto &quot;Renovación del seguro del coche&quot;.
 

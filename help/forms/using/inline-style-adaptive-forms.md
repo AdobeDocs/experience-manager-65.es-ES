@@ -6,10 +6,11 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -28,8 +29,8 @@ Puede definir el aspecto y el estilo generales de un formulario adaptable especi
 
 Para añadir estilos en línea a un componente:
 
-1. Abra el formulario en el Editor de formularios y cambie el modo al modo Estilo. Para cambiar el modo al modo Estilo, en la barra de herramientas de la página, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
-1. Seleccione un componente de la página y haga clic en el botón Editar ![edit-button](assets/edit-button.png). Las propiedades del estilo se abren en la barra lateral.
+1. Abra el formulario en el Editor de formularios y cambie el modo al modo Estilo. Para cambiar el modo al modo de estilo, en la barra de herramientas de la página, seleccione ![canvas-drop-down](assets/canvas-drop-down.png) > **Estilo**.
+1. Seleccione un componente de la página y seleccione el botón Editar ![edit-button](assets/edit-button.png). Las propiedades del estilo se abren en la barra lateral.
 
    También puede seleccionar componentes en el árbol de jerarquía del formulario de la barra lateral. El árbol de jerarquía del formulario está disponible como Objetos del formulario en la barra lateral.
 
@@ -47,7 +48,7 @@ Para añadir estilos en línea a un componente:
    * Avanzadas (Permite escribir CSS personalizado para el componente)
 
 1. Del mismo modo, puede aplicar estilos a otras partes de un componente, como Widget, Pie de ilustración y Ayuda.
-1. Seleccionar **Listo** para confirmar los cambios o **Cancelar** para descartar los cambios.
+1. Seleccione **Listo** para confirmar los cambios o **Cancelar** para descartarlos.
 
 ## Ejemplo: estilos en línea de un componente de campo {#example-inline-styles-for-a-field-component}
 

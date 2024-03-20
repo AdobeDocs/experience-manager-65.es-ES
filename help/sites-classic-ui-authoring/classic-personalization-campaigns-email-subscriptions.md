@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ AEM Para configurar una página de:
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
 ## AEM Creación de un formulario de suscripción en una página de la para suscribirse o cancelar la suscripción a listas {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
 
@@ -102,7 +103,7 @@ Para configurar un correo electrónico de respuesta automática para un suscript
 1. **Seleccionar clasificación** (esta clasificación se utiliza para enviar el correo electrónico).
 1. Seleccione el **Gracias.** página (la página a la que se dirige a los usuarios una vez que envían el formulario).
 
-   En el **Form** , seleccione la página de agradecimiento a la que desee que vayan los usuarios después de enviar el formulario. (Si se deja en blanco, el formulario se vuelve a mostrar tras el envío). Haga clic en **Aceptar**.
+   En el **Form** , seleccione la página de agradecimiento a la que desee que vayan los usuarios después de enviar el formulario. (Si se deja en blanco, el formulario se vuelve a mostrar tras el envío). Haz clic en **OK**.
 
 1. Exporte las claves del autor para publicarlas.
 1. Añada el **Enviar** componente de botón del **Form** sección de la barra de tareas.

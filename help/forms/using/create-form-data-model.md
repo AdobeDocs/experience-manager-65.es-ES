@@ -5,10 +5,11 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 4158315c28412bb9498c7d49d21b3f4d72681fc6
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1533'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -63,17 +64,17 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 1. Configurar la base de datos [!DNL MySQL]como fuente de datos:
 
    1. Vaya a la consola web de AEM en [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Localice la configuración **Apache Sling Connection Pooled DataSource**. Seleccione para abrir la configuración en modo de edición.
+   1. Localice la configuración **Apache Sling Connection Pooled DataSource**. Seleccione esta opción para abrir la configuración en modo de edición.
    1. En el cuadro de diálogo de configuración, especifique los siguientes detalles:
 
       * **Nombre del Datasource:** puede especificar cualquier nombre. Por ejemplo, especifique **WeRetailMySQL**.
       * **Nombre de propiedad del servicio DataSource**: especifique el nombre de la propiedad de servicio que contiene el nombre del DataSource. Se especifica al registrar la instancia de fuente de datos como servicio OSGi. Por ejemplo, **datasource.name**.
       * **Clase** de controlador JDBC: especifique el nombre de la clase Java™ del controlador JDBC. Para la base de datos[!DNL MySQL], especifique **com.mysql.jdbc.Driver**.
-      * **URI de conexión JDBC**: especifique la dirección URL de conexión de la base de datos. Para [!DNL MySQL] la base de datos que se ejecuta en puerto 3306 y esquema `weretail`, el URL es: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI de conexión JDBC**: especifique la dirección URL de conexión de la base de datos. Para [!DNL MySQL] base de datos que se ejecuta en el puerto 3306 y esquema `weretail`, la dirección URL es: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Cuando la base de datos está detrás de un firewall, el nombre de host de la base de [!DNL MySQL] datos no es un DNS público. La dirección IP de la base de datos debe añadirse en el *archivo /etc/hosts* del equipo AEM host.
+      > Si la variable [!DNL MySQL] La base de datos está detrás de un cortafuegos, el nombre de host de la base de datos no es un DNS público. La dirección IP de la base de datos debe añadirse en el *archivo /etc/hosts* del equipo AEM host.
 
       * **Nombre de usuario:** nombre de usuario de la base de datos. Debe permitir que el controlador JDBC establezca una conexión con la base de datos.
       * **Contraseña:** contraseña de la base de datos. Debe permitir que el controlador JDBC establezca una conexión con la base de datos.
@@ -177,7 +178,7 @@ Para configurar el modelo de datos de formulario, haga lo siguiente:
       * **Título**: especifique el título del servicio. Por ejemplo: Recuperar dirección de envío.
       * **Descripción**: especifique la descripción que contiene el funcionamiento detallado del servicio. Por ejemplo:
 
-        Este servicio recupera la dirección de envío y otros detalles del cliente de la [!DNL MySQL] base de datos
+        Este servicio recupera la dirección de envío y otros detalles del cliente desde el [!DNL MySQL] database
 
       * **Objeto de modelo de salida**: seleccione el esquema que contiene los datos del cliente. Por ejemplo:
 
@@ -186,7 +187,7 @@ Para configurar el modelo de datos de formulario, haga lo siguiente:
       * **Devolver matriz**: deshabilite la opción **Devolver matriz**.
       * **Argumentos**: seleccione el argumento llamado **Id.**.
 
-      Seleccionar **[!UICONTROL Listo]**. El servicio para recuperar los detalles del cliente de la base de datos MySQL está configurado.
+      Seleccione **[!UICONTROL Listo]**.  El servicio para recuperar los detalles del cliente de la base de datos MySQL está configurado.
 
       ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
 
@@ -207,7 +208,7 @@ Para configurar el modelo de datos de formulario, haga lo siguiente:
 
       * **Argumentos**: seleccione el nombre del argumento **ID** y **customerdetails**.
 
-      Seleccionar **[!UICONTROL Listo]**. El servicio **[!UICONTROL actualizar]** para actualizar los detalles del cliente en la base de datos [!DNL MySQL]está configurado.
+      Seleccione **[!UICONTROL Listo]**.  El servicio **[!UICONTROL actualizar]** para actualizar los detalles del cliente en la base de datos [!DNL MySQL]está configurado.
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
 
@@ -221,7 +222,7 @@ Haga lo siguiente para ejecutar la prueba:
 
 1. Vaya a la **[!UICONTROL Modelo]** , seleccione la pestaña **customerdetails** objeto del modelo de datos y seleccione **[!UICONTROL Probar objeto de modelo]**.
 1. En la ventana [!UICONTROL Modelo/servicio de prueba], seleccione **[!UICONTROL Objeto del modelo de lectura]** de la lista desplegable **[!UICONTROL Seleccionar modelo/servicio]**.
-1. En la sección customerdetails **, especifique un valor para el argumento id****que existe en la** base de datos configurada [!DNL MySQL] y seleccione **[!UICONTROL Test]**.
+1. En la **sección customerdetails**, especifique un valor para el argumento id **** que existe en la base de datos configurada [!DNL MySQL] y seleccione **[!UICONTROL Test]**.
 
    Los detalles del cliente asociados con el ID especificado se recuperan y se muestran en la sección **[!UICONTROL Salida]** como se muestra a continuación.
 

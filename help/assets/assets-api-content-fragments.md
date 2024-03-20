@@ -5,10 +5,11 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 24%
+source-wordcount: '1902'
+ht-degree: 23%
 
 ---
 
@@ -103,7 +104,7 @@ Esto significa que los siguientes (`write`) las solicitudes no se pueden combina
  <thead>
   <tr>
    <td>Aspecto</td>
-   <td>La API de REST de Recursos<br/> </td>
+   <td>API de REST de Assets<br/> </td>
    <td>AEM Componente<br/> (componentes que utilizan modelos Sling)</td>
   </tr>
  </thead>
@@ -116,7 +117,7 @@ Esto significa que los siguientes (`write`) las solicitudes no se pueden combina
   <tr>
    <td>Operaciones compatibles</td>
    <td><p>Crear, leer, actualizar, eliminar.</p> <p>Con operaciones adicionales en función del tipo de entidad.</p> </td>
-   <td>Solo lectura.</td>
+   <td>Sólo lectura.</td>
   </tr>
   <tr>
    <td>Acceso</td>

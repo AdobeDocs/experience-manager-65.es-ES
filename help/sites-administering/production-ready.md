@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '384'
 ht-degree: 3%
 
 ---
@@ -63,7 +64,7 @@ AEM Más específicamente, los siguientes cambios de configuración se realizan 
 
 1. El **Apache Sling GET Servlet** está configurada para admitir configuraciones seguras de forma predeterminada, de la siguiente manera:
 
-| **Configuración** | **Autor** | **Publicación** |
+| **Configuración** | **Autor** | **Publish** |
 |---|---|---|
 | Representación TXT | desactivado | desactivado |
 | representación del HTML | desactivado | desactivado |

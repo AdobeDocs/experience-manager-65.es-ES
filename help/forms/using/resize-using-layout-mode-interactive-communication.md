@@ -3,10 +3,11 @@ title: Utilice el modo Diseño para cambiar el tamaño de los componentes de la 
 description: Defina la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 78%
+ht-degree: 95%
 
 ---
 
@@ -32,7 +33,7 @@ Seleccione **Diseño** de la lista desplegable que aparece en la parte superior 
 
 ## Cambiar el tamaño de los componentes {#resize-components}
 
-1. En el modo Diseño, seleccione el componente cuyo tamaño desea cambiar. Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
+1. En el modo Diseño, seleccione el componente para cambiar su tamaño. Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
 1. Arrastre y suelte los puntos azules para definir la posición del componente en la cuadrícula adaptable.
 
    ![Cambiar el tamaño mediante el modo Diseño](assets/layout_mode_resize_new_updated.png)
@@ -62,13 +63,13 @@ Seleccione **Diseño** de la lista desplegable que aparece en la parte superior 
 
    ![Tabla e imagen en paralelo en el modo Diseño](assets/table_image_parallel_new.png)
 
-   Puede seleccionar el componente Imagen y seleccionar la variable **Flotar a una línea nueva** disponible en la barra de herramientas para cambiar el componente Imagen a la línea siguiente.
+   Puede seleccionar el componente Imagen y la opción **Flotar a una línea nueva**, disponible en la barra de herramientas para cambiar el componente Imagen a la línea siguiente.
 
 ## Cambiar el tamaño de los paneles {#resize-panels-layout-mode}
 
 Ejecute los siguientes pasos si desea cambiar el tamaño de todo el panel en lugar de componentes individuales:
 
-1. Seleccione cualquiera de los componentes del panel cuyo tamaño desee cambiar, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y seleccione la primera opción de la lista desplegable, si el panel es el elemento principal inmediato del componente.
+1. Seleccione cualquiera de los componentes del panel cuyo tamaño desee cambiar, seleccione ![Seleccionar principal](assets/select_parent_icon.svg) y seleccione la primera opción de la lista desplegable, si el panel es el elemento principal inmediato del componente.
 
    Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
 
@@ -78,13 +79,13 @@ Ejecute los siguientes pasos si desea cambiar el tamaño de todo el panel en lug
 
 Ejecute los siguientes pasos para definir el número de columnas para un panel:
 
-1. Entrada **[!UICONTROL Editar]** modo, seleccione el panel, seleccione ![Configurar](assets/configure_icon.png)y seleccione **[!UICONTROL Adaptable: todo en la página sin navegación]** de la opción **[!UICONTROL Diseño de panel]** lista desplegable.
+1. En el modo **[!UICONTROL Editar]**, seleccione el panel, seleccione ![Configurar](assets/configure_icon.png) y luego la opción **[!UICONTROL Adaptable: Todo lo que hay en la página sin navegación]** de la lista desplegable **[!UICONTROL Diseño del panel]**.
 
-1. Seleccionar ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+1. Seleccione ![Guardar](assets/save_icon.svg) para guardar las propiedades.
 
-1. En el **[!UICONTROL Diseño]** modo, seleccione cualquiera de los componentes del panel, seleccione ![Seleccionar principal](assets/select_parent_icon.svg)y seleccione el panel.
+1. En el modo **[!UICONTROL Diseño]**, seleccione cualquiera de los componentes del panel y seleccione ![Seleccionar principal](assets/select_parent_icon.svg) y seleccione el panel.
 
-1. Seleccionar ![de varias columnas](assets/multi-column.svg) y seleccione el número de columnas de la lista desplegable. El número de columnas puede oscilar entre 1 y 12. El panel se divide en un diseño de varias columnas.
+1. Seleccione ![varias columnas](assets/multi-column.svg) y seleccione el número de columnas de la lista desplegable. El número de columnas puede oscilar entre 1 y 12. El panel se divide en un diseño de varias columnas.
 
 ![varias columnas en el modo Diseño](assets/multi-column-layout.png)
 
@@ -99,5 +100,5 @@ Siga estos pasos para desactivar el modo Diseño:
 
    ![Desactivar el modo Diseño](assets/policy_disable_layout_mode.png)
 
-1. Seleccione el **[!UICONTROL Configuración de diseño]** y seleccione **[!UICONTROL Desactivar modo de diseño]**.
-1. Seleccionar ![Guardar cambios](assets/save_icon.png) para guardar las propiedades de la plantilla.
+1. Seleccione la pestaña **[!UICONTROL Configuración de diseño]** y **[!UICONTROL Desactivar el modo Diseño]**.
+1. Seleccione ![Guardar cambios](assets/save_icon.png) para guardar las propiedades de la plantilla.

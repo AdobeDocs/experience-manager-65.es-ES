@@ -7,10 +7,11 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -22,7 +23,7 @@ Puede utilizar los valores introducidos en un elemento del formulario para calcu
 
 Para calcular los campos de metadatos con los valores especificados por el usuario, agregue elementos del formulario en los metadatos. Cuando un usuario introduce un valor en ese elemento, un script utiliza el valor para calcular la información. Esta información se añade a los metadatos. Cuando se agrega un elemento como un campo de metadatos, se proporciona una clave para él. La clave se añade como un campo en los metadatos, y la información calculada se registra en este campo.
 
-Por ejemplo, una empresa de seguros de salud publica un formulario. En este formulario, un campo captura la edad de los usuarios finales. El cliente desea comprobar todos los envíos de un intervalo de edad determinado después de que varios usuarios envíen el formulario. En lugar de revisar todos los datos —lo que resulta más complicado a medida que aumenta el número de formularios—, los metadatos adicionales ayudan al cliente. El autor del formulario puede configurar qué propiedades/datos rellenados por el usuario final se almacenan en el nivel superior para que la búsqueda sea más sencilla. Los metadatos adicionales son la información rellenada por el usuario y almacenada en el nivel superior del nodo de metadatos, según la configuración del autor.
+Por ejemplo, una empresa de seguros de salud publica un formulario. En este formulario, un campo captura la edad de los usuarios finales. El cliente desea comprobar todos los envíos de un intervalo de edad concreto una vez que varios usuarios hayan enviado el formulario. En lugar de revisar todos los datos, lo que resulta más complicado a medida que aumenta el número de formularios, los metadatos adicionales ayudan al cliente. El autor del formulario puede configurar qué propiedades/datos rellenados por el usuario final se almacenan en el nivel superior para que la búsqueda sea más sencilla. Los metadatos adicionales son la información rellenada por el usuario y almacenada en el nivel superior del nodo de metadatos, según la configuración del autor.
 
 Imagine otro ejemplo de un formulario que captura el ID de correo electrónico y el número de teléfono. Cuando un usuario visita este formulario de forma anónima y lo abandona, el autor puede configurar el formulario para guardar automáticamente el ID de correo electrónico y el número de teléfono. Este formulario se guarda automáticamente, y el número de teléfono y el ID de correo electrónico se almacenan en el nodo de metadatos del borrador. Un caso de uso de esta configuración es el panel de administración de posibles clientes.
 
@@ -31,7 +32,7 @@ Imagine otro ejemplo de un formulario que captura el ID de correo electrónico y
 Realice los siguientes pasos para agregar un elemento a los metadatos:
 
 1. Abra el formulario adaptable en el modo Edición.\
-   Para abrir el formulario en el modo Edición, seleccione el formulario en el Administrador de formularios y seleccione **Abrir**.
+   Para abrir el formulario en el modo Edición, seleccione el formulario en Forms Manager y seleccione **Abrir**.
 1. En el modo de edición, seleccione un componente y seleccione ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable**, y luego seleccione ![cmppr](assets/cmppr.png).
 1. En la barra lateral, haga clic en **Metadatos**.
 1. En la sección Metadatos, haga clic en **Agregar**.

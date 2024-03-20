@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '9814'
 ht-degree: 0%
@@ -95,7 +96,7 @@ En la tabla siguiente se enumeran las definiciones de WSDL del servicio (suponie
    <td><p><code>http://localhost:8080/soap/services/EncryptionService?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Forms</p></td>
+   <td><p>Formularios</p></td>
    <td><p><code>http://localhost:8080/soap/services/FormsService?wsdl</code></p></td>
   </tr>
   <tr>

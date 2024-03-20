@@ -7,10 +7,11 @@ topic-tags: forms-manager
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2509'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -37,8 +38,8 @@ Para descargar recursos de formularios y documentos:
 
 1. Inicie sesión en la instancia de AEM Forms.
 1. Seleccionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/compass.png) icon> Forms > Forms y documentos.
-1. Seleccione los recursos de los formularios y seleccione **Descargar** icono.
-1. En Descargar recursos, elija una de las siguientes opciones y seleccione **Descargar**.
+1. Seleccione los recursos de los formularios y seleccione el icono **Descargar**.
+1. En Descargar recursos, elija una de las siguientes opciones y seleccione **Descargar**.
 
    * **Descargar como paquete CRX:** Utilice la opción para descargar y mover todos los recursos seleccionados y las dependencias relacionadas de una instancia de AEM Forms a otra. Descarga todos los recursos y carpetas como un paquete CRX. AEM Todos los recursos de formulario, incluidos los formularios creados en los formularios (formularios adaptables, comunicaciones interactivas y fragmentos de formularios adaptables), los conjuntos de formularios, las plantillas de formulario, los documentos de PDF y los recursos (XSD, XFS e imágenes), se pueden descargar como paquete desde la interfaz de usuario de AEM Forms.
 La ventaja de descargar recursos como un paquete es que también descarga los recursos que el recurso seleccionado para descargar ha utilizado. Por ejemplo, imagine que tiene un formulario adaptable que utiliza una plantilla de formulario, un XSD y una imagen. Al seleccionar este formulario adaptable y descargarlo como paquete, el paquete descargado también contiene la plantilla de formulario, el XSD y la imagen. También se descargan todas las propiedades de metadatos (incluidas las propiedades personalizadas) asociadas al recurso.
@@ -60,10 +61,10 @@ Para cargar recursos de formularios y documentos:
 
 1. Inicie sesión en la instancia de AEM Forms.
 1. Seleccionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/compass.png) icon> Forms> Forms y documentos.
-1. Seleccionar **Crear** >**Carga de archivos**. Aparecerá un cuadro de diálogo para cargar formularios o paquetes.
-1. En el cuadro de diálogo, examine y seleccione el paquete o el archivo que desea importar. También puede seleccionar documentos PDF, XSD, imágenes, hojas de estilo y formularios XDP. Seleccionar **Abrir**. La carpeta o el nombre de archivo que seleccione no deben incluir caracteres especiales.
+1. Seleccione **Crear** > **Cargar archivo**. Aparecerá un cuadro de diálogo para cargar formularios o paquetes.
+1. En el cuadro de diálogo, examine y seleccione el paquete o el archivo que desea importar. También puede seleccionar documentos PDF, XSD, imágenes, hojas de estilo y formularios XDP. Seleccione **Abrir**. La carpeta o el nombre de archivo que seleccione no deben incluir caracteres especiales.
 
-   En el cuadro de diálogo, compruebe los detalles de los recursos que se están cargando y seleccione **Cargar**.
+   En el cuadro de diálogo, compruebe los detalles de los recursos que se están cargando y seleccione **Cargar**.
 
    En caso de que cargue un recurso de formularios existente, este se actualizará.
 
@@ -83,7 +84,7 @@ Para descargar una temática:
 
 1. Inicie sesión en la instancia de AEM Forms.
 1. Seleccionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icono > navegación ![brújula](assets/compass.png) icon> Forms> Temáticas.
-1. Seleccione la temática y seleccione **Descargar**. La temática se descarga como archivo (archivo .zip).
+1. Seleccione la temática y seleccione **Descargar**. La temática se descarga como archivo (archivo .zip).
 
 ### Cargar una temática {#uploading-a-theme}
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -146,7 +147,7 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
 
    ![Creación de un nodo desplegable](assets/dropdown-node.png)
 
-1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/). Implemente el mismo archivo en el servidor.
+1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/).  Implemente el mismo archivo en el servidor.
 1. Cree un formulario adaptable y agregue dos listas desplegables, País y Estado. La lista País puede incluir nombres de países. La lista Estado puede rellenar dinámicamente los nombres de los estados del país seleccionado en la primera lista.
 
    Añada los nombres de los países para mostrarlos en la lista País. En la lista Estado, agregue un script para rellenarla en función del nombre del país de la lista País.

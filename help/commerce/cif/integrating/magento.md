@@ -1,12 +1,13 @@
 ---
-title: AEM Integración de y Adobe Commerce con Commerce Integration Framework
-description: AEM Los SDK y Adobe Commerce se integran perfectamente con Commerce Integration Framework (CIF). CIF AEM La permite a los usuarios acceder a una instancia de Adobe Commerce y comunicarse con Adobe Commerce a través de GraphQL. AEM También permite a los autores de la utilizar los seleccionadores de productos y categorías, así como la consola de productos para examinar los datos de productos y categorías que se obtienen a petición de Adobe Commerce Además, CIF ofrece una tienda predeterminada que puede acelerar los proyectos de comercio.
+title: AEM Integración de Adobe Commerce y de con Commerce integration framework
+description: AEM Las soluciones de Adobe Commerce y de se integran perfectamente con el Commerce integration framework CIF (). CIF AEM La permite a los usuarios acceder a una instancia de Adobe Commerce y comunicarse con Adobe Commerce a través de GraphQL. AEM También permite a los autores de la utilizar los seleccionadores de productos y categorías, así como la consola de productos para examinar los datos de productos y categorías que se obtienen a petición de Adobe Commerce Además, CIF ofrece una tienda predeterminada que puede acelerar los proyectos de comercio.
 thumbnail: aem-magento-architecture.jpg
 exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 29%
+source-wordcount: '343'
+ht-degree: 23%
 
 ---
 
@@ -29,11 +30,11 @@ Las llamadas del lado del servidor de API se implementan mediante el complemento
 
 Para los componentes del lado del cliente, que se generan mediante [React](https://reactjs.org/), se utiliza el cliente [Apollo](https://www.apollographql.com/docs/react/).
 
-## Arquitectura de los componentes principales del CIF de AEM {#cif-core-components}
+## AEM CIF Arquitectura de componentes principales de {#cif-core-components}
 
 ![Arquitectura de los componentes principales del CIF de AEM](../assets/cif-component-architecture.jpg)
 
-[AEM Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components) siga patrones de diseño y prácticas recomendadas muy similares a los de la [AEM Componentes principales de WCM](https://github.com/adobe/aem-core-wcm-components).
+[AEM CIF Componentes principales de](https://github.com/adobe/aem-core-cif-components) siga patrones de diseño y prácticas recomendadas muy similares a los de la [AEM Componentes principales de WCM](https://github.com/adobe/aem-core-wcm-components).
 
 La lógica empresarial y la comunicación back-end con Adobe Commerce AEM CIF para los componentes principales de la se implementan en los modelos Sling. En caso de que sea necesario personalizar esta lógica para cumplir los requisitos específicos del proyecto, se puede utilizar el patrón de delegación para modelos Sling.
 

@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -80,19 +81,20 @@ AEM Para configurar el SSO de una instancia de, configure el [Controlador de aut
 >
 >Si también está utilizando la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) con Microsoft® Internet Information Server (IIS), se requiere una configuración adicional en:
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-Entrada `disp_iis.ini` set: (consulte [instalar Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obtener información detallada)
+>Entrada `disp_iis.ini` set:
+>(consulte [instalar Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obtener información detallada)
 >
-* `servervariables=1` (reenvía variables del servidor IIS como encabezados de solicitud a la instancia remota)
-* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
+>* `servervariables=1` (reenvía variables del servidor IIS como encabezados de solicitud a la instancia remota)
+>* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
 >
-En IIS:
+>En IIS:
 >
-* disable **Acceso anónimo**
+>* disable **Acceso anónimo**
 >
-* habilitar **Autenticación de Windows integrada**
+>* habilitar **Autenticación de Windows integrada**
 >
 
 Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido utilizando **Autenticador** de la Consola Felix; por ejemplo:
@@ -151,7 +153,7 @@ O puede utilizar el siguiente comando curl para enviar la variable `TestHeader` 
 
 >[!NOTE]
 >
-Al utilizar el parámetro de solicitud en un explorador, solo ve parte del HTML, sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud.
+>Al utilizar el parámetro de solicitud en un explorador, solo ve parte del HTML, sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud.
 
 ## AEM Eliminación de vínculos de cierre de sesión {#removing-aem-sign-out-links}
 

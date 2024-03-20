@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 4%
+source-wordcount: '1635'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +31,7 @@ Añadir el [!UICONTROL Dynamic Media] o [!UICONTROL Medios interactivos] a una p
 Para agregar un componente o visualizador de Dynamic Media a una página:
 
 1. En Experience Manager, abra la página donde desee agregar el componente Dynamic Media.
-1. Si no hay ningún componente de Dynamic Media disponible, seleccione la regla en la [!UICONTROL Compañero] para entrar **[!UICONTROL Diseño]** modo.
+1. Si no hay ningún componente de Dynamic Media disponible, seleccione la regla en la [!UICONTROL Sidekick] para entrar **[!UICONTROL Diseño]** modo.
 1. Seleccionar **[!UICONTROL Editar]** parsys.
 1. Seleccionar **[!UICONTROL Dynamic Media]** para que pueda hacer que los componentes de Dynamic Media estén disponibles.
 
@@ -38,7 +39,7 @@ Para agregar un componente o visualizador de Dynamic Media a una página:
    >
    >Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
 
-1. Volver a **[!UICONTROL Editar]** haciendo clic en el icono de lápiz en la [!UICONTROL Compañero].
+1. Volver a **[!UICONTROL Editar]** haciendo clic en el icono de lápiz en la [!UICONTROL Sidekick].
 1. Arrastre el **[!UICONTROL Dynamic Media]** o **[!UICONTROL Medios interactivos]** del componente de **[!UICONTROL Otros]** grupo en la barra de tareas a la página en la ubicación deseada.
 1. Seleccionar **[!UICONTROL Editar]** por lo tanto, el componente se abre.
 1. [Editar el componente](#dynamic-media-component) según sea necesario.
@@ -46,7 +47,7 @@ Para agregar un componente o visualizador de Dynamic Media a una página:
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] y [!UICONTROL Medios interactivos] están disponibles en la [!UICONTROL Compañero] bajo **[!UICONTROL Dynamic Media]**. Utilice el **[!UICONTROL Medios interactivos]** para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para el resto de componentes de Dynamic Media, utilice el **[!UICONTROL Dynamic Media]** componente.
+[!UICONTROL Dynamic Media] y [!UICONTROL Medios interactivos] están disponibles en la [!UICONTROL Sidekick] bajo **[!UICONTROL Dynamic Media]**. Utilice el **[!UICONTROL Medios interactivos]** para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para el resto de componentes de Dynamic Media, utilice el **[!UICONTROL Dynamic Media]** componente.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -65,7 +66,6 @@ El componente Dynamic Media es inteligente: según si agrega una imagen o un ví
 >* Tiene [Dynamic Media habilitado](/help/assets/config-dynamic.md). Dynamic Media está deshabilitado de forma predeterminada.
 >* La imagen tiene un archivo tiff piramidal. Las imágenes importadas antes de que Dynamic Media esté habilitado no tienen un archivo tiff piramidal.
 >
-
 
 #### Al trabajar con imágenes {#when-working-with-images}
 
@@ -141,7 +141,7 @@ Para obtener más información sobre la entrega de vídeo seguro y el uso de `Vi
 
 ### Componente de medios interactivo {#interactive-media-component}
 
-El componente de medios interactivos es para aquellos recursos que tienen interactividad en ellos, como puntos interactivos o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el **[!UICONTROL Medios interactivos]** componente.
+El componente de medios interactivos es para aquellos recursos que tienen interactividad en ellos, como zonas interactivas o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el **[!UICONTROL Medios interactivos]** componente.
 
 El [!UICONTROL Medios interactivos] El componente es inteligente: según si añade una imagen o un vídeo, tiene varias opciones. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visualizadores son visualizadores basados en HTML5.
 

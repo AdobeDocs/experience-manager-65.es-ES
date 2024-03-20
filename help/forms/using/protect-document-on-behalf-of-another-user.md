@@ -4,10 +4,11 @@ description: Descubra cómo AEM Forms Document Security Java&trade; SDK ofrece A
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 58%
+source-wordcount: '391'
+ht-degree: 53%
 
 ---
 
@@ -29,7 +30,7 @@ Haga lo siguiente para poder proteger un documento en nombre de otro usuario y s
 1. Cree un conjunto de políticas. Por ejemplo, el ConjuntodePolíticas1.
 1. Cree una política en el conjunto de políticas que acaba de crear. Por ejemplo, la Política1 en ConjuntodePolíticas1.
 1. Cree un usuario con la función Rights Management End User; por ejemplo, el Usuario1. Proporcione permisos para ver los documentos protegidos con la Política1 al usuario que acaba de crear.
-1. Cree una función. por ejemplo, la Función1. Proporcione el permiso Invocar servicio a la función recién creada. Cree un usuario con la función que acaba de crear; por ejemplo, el Usuario2. Puede utilizar el Usuario2 o un administrador para crear una conexión SDK e invocar el servicio ProtectDocument.
+1. Cree una función. por ejemplo, la Función1. Proporcione el permiso Invocar servicio a la función recién creada. Cree un usuario con la función que acaba de crear; Por ejemplo, Usuario2. Puede utilizar el Usuario2 o un administrador para crear una conexión del SDK e invocar el servicio protectDocument.
 
    Ahora, puede ejecutar el siguiente código de ejemplo para proteger un documento sin proporcionar permisos para editarlo al usuario que lo protege:
 

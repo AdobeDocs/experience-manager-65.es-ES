@@ -7,10 +7,11 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 1%
+source-wordcount: '1767'
+ht-degree: 0%
 
 ---
 
@@ -186,7 +187,7 @@ Para personalizar la configuración de la newsletter:
 
 1. Seleccione una **Lista de destinatarios predeterminada** en la lista desplegable.
 
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
    Al probar o enviar la newsletter, los destinatarios recibirán correos electrónicos con la dirección de correo electrónico y el asunto especificados.
 

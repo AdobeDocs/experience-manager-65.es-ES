@@ -8,9 +8,10 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
-source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -29,10 +30,10 @@ Cuando configure una cuenta de alias de compañía de Dynamic Media, tenga en cu
 * Cualquier URL de Dynamic Media existente o código incrustado de visualizador en su *live* las propiedades digitales se deben actualizar manualmente para reflejar el nuevo nombre de alias. Sin embargo, cualquier URL o código incrustado de visualizador con el nombre original de la empresa de Dynamic Media seguirá funcionando para los recursos existentes o nuevos.
 * La capacidad de la cuenta de alias de empresa de Dynamic Media se limita al modo de creación y envío de Experience Manager Assets. El nombre del alias de la empresa no funciona con Experience Manager Sites. Los componentes WCM (Web Content Management) no se actualizan para este cambio. Estos componentes siguen funcionando con el nombre de empresa original de Dynamic Media para recuperar los recursos de Dynamic Media.
 * Solo se puede configurar una cuenta de alias de compañía en **[!UICONTROL Editar configuración de Dynamic Media]** página. Sin embargo, se pueden crear tantas cuentas de alias de compañía como sea necesario mediante un caso de soporte y reflejar manualmente el nombre de alias necesario en las URL de Dynamic Media o en el código de incrustación de visualizador.
-* El producto listo para usar [Invalidación de caché](/help/assets/invalidate-cdn-cache-dynamic-media.md) Esta funcionalidad de Dynamic Media invalida las direcciones URL con las cuentas de alias de compañía y compañía configuradas en la página Configuración de Dynamic Media en Cloud Services.
+* El producto listo para usar [Invalidación de caché](/help/assets/invalidate-cdn-cache-dynamic-media.md) Esta funcionalidad de Dynamic Media invalida las direcciones URL con las cuentas de alias de compañía y compañía configuradas en la página Configuración de Dynamic Media en Cloud Service.
 * Al configurar una cuenta de alias de compañía en la variable **[!UICONTROL Editar configuración de Dynamic Media]** , para que la invalidación de la caché se realice correctamente, debe invalidar las direcciones URL de *ambos* el **[!UICONTROL Compañía]** y la **[!UICONTROL Alias de empresa]** cuenta, simultáneamente.
 
-Consulte también [Creación de una configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)
+Consulte también [Creación de una configuración de Dynamic Media en Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)
 
 ## Configuración de una cuenta de alias de empresa de Dynamic Media {#configure-dm-alias-account}
 
@@ -46,7 +47,7 @@ Para configurar una cuenta de alias de empresa de Dynamic Media, primero debe en
    * Si hay [conjuntos de reglas](/help/assets/using-rulesets-to-transform-urls.md) se están utilizando anteriormente para lograr el envío de contenido de Dynamic Media a través de un nombre de cuenta de empresa de Dynamic Media alternativo.
 
 1. Una vez que la asistencia técnica haya creado la cuenta de alias de Dynamic Media, en la instancia de autor as a Cloud Service de Experience Manager, seleccione el logotipo as a Cloud Service de Experience Manager para acceder a la consola de navegación global.
-1. A la izquierda de la consola, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
+1. A la izquierda de la consola, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Cloud Service > Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, seleccione **[!UICONTROL global]** (no seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**). A continuación seleccione **[!UICONTROL Editar]**.
 
    ![Campo de texto Alias de compañía de Dynamic Media](/help/assets/assets-dm/dm-company-alias.png)

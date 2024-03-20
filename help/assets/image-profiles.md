@@ -8,10 +8,11 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3033'
-ht-degree: 6%
+source-wordcount: '3048'
+ht-degree: 4%
 
 ---
 
@@ -77,7 +78,7 @@ Entrada **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de f
 | Opción | Descripción |
 | --- | --- |
 | Cantidad | Controla la cantidad de contraste que se aplica a los píxeles del borde. El valor predeterminado es 1,75. Para imágenes de alta resolución, puede aumentarla hasta 5. Considere la cantidad como una medida de la intensidad del filtro. El intervalo es de 0 a 5. |
-| Radio | Determina el número de píxeles adyacentes a los píxeles de borde que afectarán al enfoque. En las imágenes de alta resolución, especifique un valor entre 1 y 2. Un valor bajo solo aplica enfoque a los píxeles de borde; un valor alto enfoca una banda más ancha de píxeles. El valor adecuado depende del tamaño de la imagen. El valor predeterminado es 0,2. El intervalo es de 0 a 250. |
+| Radio | Determina el número de píxeles adyacentes a los píxeles de borde que afectarán al enfoque. Para imágenes de alta resolución, escriba de 1 a 2. Un valor bajo enfoca únicamente los píxeles de borde; un valor alto enfoca una banda más ancha de píxeles. El valor correcto depende del tamaño de la imagen. El valor predeterminado es 0,2. El intervalo es de 0 a 250. |
 | Umbral | Determina el intervalo de contraste que debe omitirse cuando se aplica el filtro de máscara de enfoque. En otras palabras, esta opción determina la diferencia que debe existir entre los píxeles enfocados y el área adyacente para que se consideren píxeles de borde y se enfoquen. Para evitar introducir ruido, experimente con valores entre 0 y 255. |
 
 El enfoque se describe en [Enfoque de imágenes](/help/assets/assets/sharpening_images.pdf).
@@ -102,7 +103,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
    ![recorte](assets/crop.png)
 
-1. Seleccione **[!UICONTROL Guardar]**. El perfil recién creado aparece en la lista de perfiles disponibles.
+1. Seleccione **[!UICONTROL Guardar]**. El perfil recién creado aparece en la lista de perfiles disponibles.
 
 ## Editar o eliminar perfiles de imagen de Dynamic Media {#editing-or-deleting-image-profiles}
 

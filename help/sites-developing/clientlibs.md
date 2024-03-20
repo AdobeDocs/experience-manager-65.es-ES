@@ -7,10 +7,11 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2853'
-ht-degree: 4%
+source-wordcount: '2791'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +64,7 @@ AEM AEM Debido a que HTL es la tecnología preferida para desarrollar sitios de,
 
 ### Uso de HTL {#using-htl}
 
-En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporcionada por AEM, a la que se puede acceder mediante [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Hay tres plantillas disponibles en este archivo a las que se puede llamar mediante [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+AEM En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporcionada por el usuario, a la que se puede acceder mediante el comando [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Hay tres plantillas disponibles en este archivo a las que se puede llamar mediante [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** : carga solo los archivos CSS de las bibliotecas de cliente a las que se hace referencia.
 * **js** : carga solo los archivos JavaScript de las bibliotecas de cliente a las que se hace referencia.
@@ -162,7 +163,7 @@ A continuación, configure el `allowProxy` propiedad en `foo` a true.
 
 1. Abra el CRXDE Lite en un explorador web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Seleccione la carpeta en la que desea ubicar la carpeta de la biblioteca de cliente y haga clic en **Crear > Crear nodo**.
-1. Introduzca un nombre para el archivo de biblioteca y, en la lista Tipo, seleccione `cq:ClientLibraryFolder`. Haga clic en **Aceptar** y luego en **Guardar todo**.
+1. Introduzca un nombre para el archivo de biblioteca y, en la lista Tipo, seleccione `cq:ClientLibraryFolder`. Clic **OK** y luego haga clic en **Guardar todo**.
 1. Para especificar las categorías a las que pertenece la biblioteca, seleccione `cq:ClientLibraryFolder` , agregue la siguiente propiedad y haga clic en **Guardar todo**:
 
    * Nombre: categories
@@ -202,7 +203,7 @@ Cuando el código de la carpeta de la biblioteca de cliente haga referencia a ot
 Las dependencias deben ser otras `cq:ClientLibraryFolder`. Para identificar dependencias, agregue una propiedad a su `cq:ClientLibraryFolder` nodo con los atributos siguientes:
 
 * **Nombre:** dependencias
-* **Tipo:** cadena[]
+* **Tipo:** Cadena[]
 * **Valores:** El valor de la propiedad categories del nodo cq:ClientLibraryFolder del que depende la carpeta de biblioteca actual.
 
 Por ejemplo, el icono / `etc/clientlibs/myclientlibs/publicmain` depende de la variable `cq.jquery` biblioteca. El JSP que hace referencia a la biblioteca de cliente principal genera un HTML que incluye el siguiente código:
@@ -225,7 +226,7 @@ Se recomienda mantener todos los archivos relacionados con la aplicación en la 
 Utilice la propiedad categories para identificar la carpeta de biblioteca de cliente que se va a incrustar. Para incrustar la biblioteca, agregue una propiedad a la incrustación `cq:ClientLibraryFolder` mediante los atributos de propiedad siguientes:
 
 * **Nombre:** incrustar
-* **Tipo:** cadena[]
+* **Tipo:** Cadena[]
 * **Valor:** El valor de la propiedad categories de `cq:ClientLibraryFolder` nodo para incrustar.
 
 #### Uso de la incrustación para minimizar las solicitudes {#using-embedding-to-minimize-requests}
@@ -299,7 +300,7 @@ Utilice el `channels` propiedad de una carpeta de biblioteca de cliente para ide
 Para asociar una carpeta de biblioteca de cliente con un grupo de dispositivos, agregue una propiedad a su `cq:ClientLibraryFolder` nodo con los atributos siguientes:
 
 * **Nombre:** canales
-* **Tipo:** cadena[]
+* **Tipo:** Cadena[]
 * **Valores:** Nombre del grupo móvil. Para excluir la carpeta de la biblioteca de un grupo, añada un prefijo al nombre con un signo de exclamación (&quot;!&quot;).
 
 Por ejemplo, la siguiente tabla enumera el valor de la variable `channels` para cada carpeta de biblioteca de cliente de `cq.widgets` categoría:

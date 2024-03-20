@@ -5,10 +5,11 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3148'
-ht-degree: 1%
+source-wordcount: '3060'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +49,7 @@ Adobe recomienda instalar [adobe-asset-link-config](https://experience.adobe.com
 
 1. Para abrir el Administrador de paquetes, en la interfaz web del Experience Manager, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Package Share]**. Instalar `adobe-asset-link-config` paquete.
 
-1. Acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. Localizar **[!UICONTROL Adobe Granite Proveedor de OAuth IMS]** y haga clic en para editarla.
+1. Acceso **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. Localizar **[!UICONTROL Adobe Granite Proveedor de OAuth IMS]** y haga clic en para editarla.
 
    Establezca las siguientes propiedades y guarde los cambios.
 

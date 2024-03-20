@@ -2,7 +2,8 @@
 title: Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado
 description: Defina la estructura del contenido que crea y sirve con las capacidades sin encabezado de Adobe Experience Manager AEM () mediante modelos de fragmentos de contenido.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%

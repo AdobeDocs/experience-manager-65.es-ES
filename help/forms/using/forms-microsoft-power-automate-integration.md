@@ -3,13 +3,14 @@ title: Conexión y envío de datos de formularios adaptables a Microsoft&reg; Po
 description: Una guía paso a paso para conectar y enviar datos de formulario adaptable a Microsoft&reg; Power Automate.
 keywords: Forms Microsoft Power Automate adaptable, enviar datos de Forms adaptables a Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1179'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
-
 
 # Conexión y envío de datos de formulario adaptable a Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
@@ -80,7 +81,7 @@ Realice las siguientes acciones para conectar la instancia de autor de AEM Forms
 1. En la instancia de autor de AEM Forms, vaya a **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Explorador de configuración]**.
 1. En la página **[!UICONTROL Explorador de configuración]**, seleccione **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un **[!UICONTROL Título]** para la configuración, habilite **[!UICONTROL Configuraciones de nube]** y seleccione **[!UICONTROL Crear]**. Crea un contenedor de configuración para almacenar servicios en la nube. Asegúrese de que el nombre de la carpeta no contenga ningún espacio.
-1. Vaya a **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Dataverse de Microsoft®® Power Automate]** y abra el contenedor de configuración que creó en el paso anterior.
+1. Vaya a **[!UICONTROL Herramientas]** ![martillo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® Power Automate Dataverse]** y abra el contenedor de configuración que creó en el paso anterior.
 
    >[!NOTE]
    >
@@ -192,4 +193,3 @@ Después de usted [Conecte la instancia de autor de AEM Forms con Microsoft® Po
 * [Crear un formulario adaptable](create-an-adaptive-form-core-components.md)
 * [Configurar la acción de envío](configuring-submit-actions.md)
 * [Conector de Adobe Experience Manager para Microsoft® Power Automate](https://learn.microsoft.com/es-es/connectors/adobeexperiencemanag/)
-

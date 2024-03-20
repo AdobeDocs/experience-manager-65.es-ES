@@ -6,10 +6,11 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -100,7 +101,7 @@ module.exports = {
 };
 ```
 
-### Edificio {#building}
+### Generación {#building}
 
 La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para la transpilación, además de aem-clientlib-generator para la creación automática de bibliotecas de cliente. Por lo tanto, el comando build será similar a:
 
@@ -108,7 +109,7 @@ La creación de la aplicación utiliza [Webpack](https://webpack.js.org/) para l
 
 AEM Una vez creado, el paquete se puede cargar en una instancia de.
 
-### Tipo de archivo del proyecto AEM. {#aem-project-archetype}
+### Tipo de archivo del proyecto AEM {#aem-project-archetype}
 
 Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 

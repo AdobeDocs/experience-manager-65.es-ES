@@ -8,10 +8,11 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 9%
+ht-degree: 41%
 
 ---
 
@@ -25,7 +26,7 @@ ht-degree: 9%
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
-En AEM Forms AEM 6.5, una temática es una biblioteca de cliente de que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. Una temática se administra de forma independiente sin hacer referencia a un formulario adaptable y se puede reutilizar en varios formularios adaptables de Forms.
+En AEM Forms AEM 6.5, una temática es una biblioteca de cliente de que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable. Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes. Una temática se administra de forma independiente sin hacer referencia a un formulario adaptable y se puede reutilizar en varios de estos.
 
 ## Temas disponibles {#available-theme}
 
@@ -33,17 +34,17 @@ AEM entorno de 6.5 proporciona los temas siguientes para los componentes princip
 
 * [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
+* [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
 
 ## Comprender la estructura de las temáticas {#understanding-structure-of-theme}
 
-Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript y los recursos (como iconos) que definen el estilo de su Forms adaptable. Una temática de formulario adaptable sigue una organización específica, que consta de los siguientes componentes:
+Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript y los recursos (como iconos) que definen el estilo de los formularios adaptables. Una temática de formulario adaptable sigue una organización específica, que consta de los siguientes componentes:
 
-* `src/theme.scss`: Esta carpeta incluye el archivo CSS que tiene un impacto amplio en toda la temática. Sirve como una ubicación centralizada para definir y administrar el estilo y el comportamiento de la temática. Al realizar ediciones en este archivo, puede realizar cambios que se apliquen universalmente en toda la temática, lo que influye en el aspecto y la funcionalidad tanto de las páginas de AEM Sites como de Forms adaptable.
+* `src/theme.scss`: esta carpeta incluye el archivo CSS que tiene un impacto amplio en toda la temática. Sirve como una ubicación centralizada para definir y administrar el estilo y el comportamiento de la temática. Al realizar ediciones en este archivo, puede realizar cambios que se apliquen universalmente en toda la temática, lo que influye en el aspecto y la funcionalidad tanto de las páginas de AEM Sites como de formularios adaptables.
 
-* `src/site`AEM : esta carpeta contiene archivos CSS que se aplican a toda la página de un sitio de la red de distribución de contenido (CSS) de la página de un sitio de. AEM Estos archivos constan de código y estilos que afectan a la funcionalidad y al diseño generales de la página de su sitio de la red de la red de distribución de contenido (SITE) de su sitio de la red de distribución de contenido (OSGi). Cualquier modificación realizada aquí se reflejará en todas las páginas del sitio.
+* `src/site`: esta carpeta contiene archivos CSS que se aplican a toda la página de un sitio de AEM. Estos archivos constan de código y estilos que afectan a la funcionalidad y al diseño general de la página del sitio de AEM. Cualquier modificación realizada aquí se reflejará en todas las páginas del sitio.
 
-* `src/components`AEM : los archivos CSS de esta carpeta están diseñados para componentes principales individuales de la. Cada carpeta dedicada para un componente incluye una `.scss` que aplica estilo a ese componente en particular dentro de un formulario adaptable. Por ejemplo, la variable `/src/components/button/_button.scss` contiene información de estilo para el componente Botón de Forms adaptable.
+* `src/components`: los archivos CSS de esta carpeta están diseñados para los componentes principales individuales de AEM. Cada carpeta dedicada para un componente incluye un archivo `.scss` que aplica estilo a ese componente en particular dentro de un formulario adaptable. Por ejemplo, la variable `/src/components/button/_button.scss` contiene información de estilo para el componente Botón de Forms adaptable.
 
   ![Estructura de la temática Lienzo](/help/forms/using/assets/component-based-theme-folder-structure.png)
 
@@ -55,7 +56,7 @@ AEM Forms 6.5 proporciona los temas que se enumeran a continuación para los com
 
 * [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
+* [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
 
 Puede [personalice cualquiera de estas temáticas para crear una temática](#customize-a-theme-core-components).
 
@@ -72,7 +73,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * [Habilitar los componentes principales de Forms adaptable](/help/forms/using/enable-adaptive-forms-core-components.md) para su entorno.
 
-* Instale la última versión de [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
+* Instale la última versión de Apache Maven [.Apache Maven ](https://maven.apache.org/download.cgi) es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
 * Obtenga información sobre cómo crear un [biblioteca de cliente en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM proporciona bibliotecas de cliente, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
 
@@ -106,23 +107,23 @@ Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** t
 
 #### 1. Clone el repositorio Git de la temática {#clone-git-repo-of-theme}
 
-Para clonar una temática para componentes principales basados en Forms adaptable, elija una de las siguientes temáticas:
+Para clonar una temática para componentes principales basados en formularios adaptables, elija una de las siguientes temáticas:
 
 * [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
+* [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
 
 Siga estas instrucciones para clonar una temática:
 
 1. Abra el símbolo del sistema o la ventana de terminal en su entorno de desarrollo local.
 
-1. Ejecute el `git clone` para clonar una temática.
+1. Ejecuta el comando `git clone` para clonar una temática.
 
    ```
       git clone [Path of Git Repository of the theme]
    ```
 
-   Reemplace el [Ruta del repositorio Git de la temática] con la URL real del repositorio de Git correspondiente de la temática
+   Reemplace la [Ruta del repositorio Git de la temática] con la URL real del repositorio de Git correspondiente de la temática
 
    Por ejemplo, para clonar la temática Lienzo, ejecute el siguiente comando:
 
@@ -132,35 +133,35 @@ Siga estas instrucciones para clonar una temática:
 
 1. Seleccione **Confiar en los autores de todos los archivos de la carpeta principal** y haga clic en **Sí, confío en los autores**.
 
-Después de ejecutar el comando correctamente, tiene una copia local del tema disponible en el equipo en el  `aem-forms-theme-canvas` carpeta.
+Después de ejecutar el comando correctamente, queda una copia local de la temática disponible en la carpeta `aem-forms-theme-canvas` del equipo.
 
 #### 2. Personalizar la temática {#customize-the-theme}
 
 Tiene la flexibilidad de personalizar componentes individuales o realizar cambios en el nivel de tema mediante las variables globales de un tema. La modificación de variables globales tiene un efecto en cascada en todos los componentes individuales. Por ejemplo, puede utilizar variables globales para cambiar el color del borde de todos los componentes de un formulario adaptable o aplicar un color de relleno vibrante a los botones de llamada a la acción (CTA). Puede hacer lo siguiente:
 
-* [Establecer estilos de nivel de tema](#theme-customization-global-level)
+* [Establecer estilos de nivel de temática](#theme-customization-global-level)
 
 * [Definir estilos de nivel de componente](#component-based-customization)
 
-##### Establecer estilos de nivel de tema {#theme-customization-global-level}
+##### Establecer estilos de nivel de temática {#theme-customization-global-level}
 
 El `variable.scss` contiene las variables globales de la temática. Al actualizar estas variables, puede realizar cambios relacionados con los estilos en el nivel de la temática. Para aplicar estilos de nivel de tema, siga estos pasos:
 
 1. Abra el `<your-theme-sources>/src/site/_variables.scss` archivo para editar.
-1. Cambie el valor de cualquier propiedad. Por ejemplo, el color de error predeterminado es rojo. Para cambiar el color del error de rojo a azul, cambie el código hexadecimal de color del `$error`variable. Por ejemplo, `$error: #196ee5`.
+1. Cambia el valor de cualquier propiedad. Por ejemplo, el color de error predeterminado es rojo. Para cambiar el color del error de rojo a azul, cambie el código hexadecimal de color del `$error`variable. Por ejemplo, `$error: #196ee5`.
 
-   ![Ejemplo: Color de error establecido en azul](/help/forms/using/assets/theme-level-changes.png)
+   ![Ejemplo: color de error establecido en azul](/help/forms/using/assets/theme-level-changes.png)
 
 1. Guarde y cierre el archivo.
 
 
-Del mismo modo, puede utilizar la variable `variable.scss` archivo para establecer la familia y el tipo de fuente, los colores de la temática y la fuente, el tamaño de fuente, el espaciado del tema, el icono de error, los estilos de borde del tema y más variables que afectan a varios componentes del formulario adaptable.
+Del mismo modo, puede utilizar el archivo `variable.scss` para establecer la familia y el tipo de fuente, los colores de la temática y la fuente, el tamaño de fuente, el espaciado del tema, el icono de error, los estilos de borde del tema y más variables que afectan a varios componentes del formulario adaptable.
 
 ##### Definir estilos de nivel de componente {#component-based-customization}
 
 También tiene la opción de personalizar la fuente, el color, el tamaño y otras propiedades CSS de componentes principales específicos del formulario adaptable, como botones, casillas de verificación, contenedores, pies de página, etc. Al editar el archivo CSS asociado al componente específico, puede alinear su estilo con la marca de su organización. Para personalizar el estilo de un componente, siga estos pasos:
 
-1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editar. Por ejemplo, para cambiar el color de fuente del componente Botón, abra el `<your-theme-sources>/src/components/button/button.scss`, archivo .
+1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editarlo. Por ejemplo, para cambiar el color de fuente del componente Botón, abra el archivo `<your-theme-sources>/src/components/button/button.scss`.
 1. Cambie el valor de cualquiera según sus necesidades. Por ejemplo, para cambiar el color del componente Botón al pasar el ratón por encima a Verde, cambie el valor del `color: $white` propiedad en el `cmp-adaptiveform-button__widget:hover` de clase a código hexadecimal #12b453 o cualquier otro tono de verde. El código final tiene el siguiente aspecto:
 
    ```
@@ -284,7 +285,7 @@ Una vez instalado el paquete, la temática está disponible para su selección.
 Los pasos para aplicar una temática a un formulario adaptable son los siguientes:
 
 1. AEM Inicie sesión en la instancia local de autor de la.
-1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Seleccionar **Adobe Experience Manager** > **Forms** > **Forms y documentos**.
+1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Seleccione **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
 1. Clic **Crear** > **Forms adaptable**.
 1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. El **Añadir propiedades** aparece
 1. Especifique el **Nombre** para su formulario adaptable.

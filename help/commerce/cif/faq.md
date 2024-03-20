@@ -2,7 +2,8 @@
 title: Preguntas frecuentes sobre la integración de AEM con Commerce mediante Commerce Integration Framework
 description: Preguntas frecuentes sobre la integración de AEM con Commerce mediante Commerce Integration Framework
 exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 66%

@@ -8,7 +8,8 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5792'
 ht-degree: 0%
@@ -1094,12 +1095,12 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 
 >[!NOTE]
 >
-Consulte también los siguientes artículos para obtener más información:
+>Consulte también los siguientes artículos para obtener más información:
 >
-* [Volcados de hilos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
-* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
-* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
-* [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [Volcados de hilos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU al 100% {#cpu-at}
@@ -1192,6 +1193,6 @@ Puede ver cuánta memoria se está utilizando, qué algoritmos de GC se están u
 
 >[!NOTE]
 >
-Para la VM de Oracle, también hay información en:
+>Para la VM de Oracle, también hay información en:
 >
-[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

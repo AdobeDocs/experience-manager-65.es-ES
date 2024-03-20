@@ -8,7 +8,8 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2354'
 ht-degree: 2%
@@ -35,7 +36,7 @@ Dynamic Media admite los siguientes formatos 3D.
 
 Consulte también [Formatos 3D admitidos](/help/assets/assets-formats.md).
 
-| Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
+| Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |

@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -172,7 +173,7 @@ Un plan de proyecto integral debe incluir:
 * Actualización del entorno de ensayo
 * Integración, rendimiento y pruebas de carga
 * Certificación del entorno
-* Publicar el lanzamiento
+* Lanzamiento
 
 ### Desarrollo y control de calidad {#performing-development-and-qa}
 

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 5%
@@ -21,7 +22,7 @@ Las siguientes áreas tienen documentación disponible sobre las prácticas reco
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Forms](#forms)
+* [Formularios](#forms)
 
 Para conocer las prácticas recomendadas sobre la administración, la implementación, el mantenimiento o el desarrollo, vea una de las siguientes opciones:
 
@@ -69,7 +70,7 @@ La administración y creación del contenido del sitio web tiene algunas prácti
 | Herramientas de creación | [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md) | Proporciona información general sobre las herramientas utilizadas para crear páginas. |
 | Organización de páginas | [Crear y organizar páginas](/help/sites-authoring/managing-pages.md) | Proporciona información general sobre cómo organizar mejor las páginas, incluidas las convenciones de nomenclatura. |
 
-## Forms {#forms}
+## Formularios {#forms}
 
 |  |  |  |
 |---|---|---|

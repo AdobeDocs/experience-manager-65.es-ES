@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 3%
@@ -96,7 +97,7 @@ Configure la base de datos DB2 para que se ejecute en el modo de registro de arc
 
 >[!NOTE]
 >
-AEM AEM Si el entorno de formularios en la que se ha realizado la actualización se ha realizado desde una versión anterior de formularios en la que se utiliza DB2, no se admite la copia de seguridad en línea. AEM En este caso, debe cerrar los formularios de la y realizar una copia de seguridad sin conexión. AEM Las versiones futuras de los formularios de la admitirán el backup en línea para los clientes de actualización.
+>AEM AEM Si el entorno de formularios en la que se ha realizado la actualización se ha realizado desde una versión anterior de formularios en la que se utiliza DB2, no se admite la copia de seguridad en línea. AEM En este caso, debe cerrar los formularios de la y realizar una copia de seguridad sin conexión. AEM Las versiones futuras de los formularios de la admitirán el backup en línea para los clientes de actualización.
 
 IBM tiene un conjunto de herramientas y sistemas de ayuda para ayudar a los administradores de bases de datos a administrar sus tareas de copia de seguridad y recuperación:
 
@@ -132,7 +133,7 @@ Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la ba
 
 >[!NOTE]
 >
-El modo de registro binario predeterminado para MySQL es &quot;Statement&quot;, que es incompatible con tablas utilizadas por Content Services (obsoleto). El uso del registro binario en este modo predeterminado provoca que Content Services (Obsoleto) falle. Si su sistema incluye Content Services (obsoleto), utilice el modo de registro &quot;Mixto&quot;. Para habilitar el registro &quot;Mixto&quot;, agregue el siguiente argumento al archivo my.ini: `binlog_format=mixed log-bin=logname`
+>El modo de registro binario predeterminado para MySQL es &quot;Statement&quot;, que es incompatible con tablas utilizadas por Content Services (obsoleto). El uso del registro binario en este modo predeterminado provoca que Content Services (Obsoleto) falle. Si su sistema incluye Content Services (obsoleto), utilice el modo de registro &quot;Mixto&quot;. Para habilitar el registro &quot;Mixto&quot;, agregue el siguiente argumento al archivo my.ini: `binlog_format=mixed log-bin=logname`
 
 Puede utilizar la utilidad mysqldump para obtener la copia de seguridad completa de la base de datos. Se requieren copias de seguridad completas, pero no siempre son convenientes. Producen archivos de copia de seguridad grandes y tardan tiempo en generarse. Para realizar una copia de seguridad incremental, asegúrese de iniciar el servidor con - `log-bin` como se describe en la sección anterior. Cada vez que el servidor MySQL se reinicia, deja de escribir en el registro binario actual, crea uno nuevo y, a partir de entonces, el nuevo se convierte en el actual. Puede forzar un cambio manualmente con la variable `FLUSH LOGS SQL` comando. Después de la primera copia de seguridad completa, las copias de seguridad incrementales subsiguientes se realizan usando la utilidad mysqladmin con el `flush-logs` , que crea el siguiente archivo de registro.
 
@@ -193,6 +194,6 @@ AEM Si ha instalado fuentes adicionales en el entorno de formularios de la, debe
 
 >[!NOTE]
 >
-De forma predeterminada, las fuentes de Adobe AEM instaladas con los formularios de la aplicación se encuentran en la variable `[aem-forms root]/fonts` directorio.
+>De forma predeterminada, las fuentes de Adobe AEM instaladas con los formularios de la aplicación se encuentran en la variable `[aem-forms root]/fonts` directorio.
 
 Si está reinicializando el sistema operativo en el equipo host y desea utilizar fuentes del sistema operativo anterior, también se debe realizar una copia de seguridad del contenido del directorio de fuentes del sistema. (Para obtener instrucciones específicas, consulte la documentación del sistema operativo).

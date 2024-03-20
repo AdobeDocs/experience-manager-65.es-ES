@@ -1,15 +1,16 @@
 ---
-title: Información acerca de la segmentación al crear una campaña
+title: Explicación de la segmentación al crear una campaña
 description: La segmentación es una consideración clave al crear una campaña.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 56%
+source-wordcount: '546'
+ht-degree: 46%
 
 ---
 
@@ -29,7 +30,7 @@ El contenido puede personalizarse según las necesidades y los intereses del vis
 
 ## Uso de la segmentación {#using-segmentation}
 
-Los segmentos se definen en [Configuración de segmentación](/help/sites-administering/campaign-segmentation.md). Se utilizan para dirigir el contenido real que visualiza un público objetivo concreto.
+Los segmentos se definen en [Configuración de segmentación](/help/sites-administering/campaign-segmentation.md). Se utilizan para dirigir el contenido real que visualiza un público objetivo específico.
 
 ## Terminología de segmentación {#segmentation-terminology}
 
@@ -45,7 +46,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 
 **Características de comportamiento**: Las características de comportamiento son las que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
 
-* Interés en el sitio web, incluyendo las páginas y los productos comprados.
+* Interés en el sitio web, incluidas las páginas visitadas y los productos comprados.
 * Interés en el sitio web de referencia, incluidos los términos de búsqueda utilizados o los anuncios en los que se hizo clic.
 * Interés en otros sitios; se determina con herramientas como Spyjax.
 * Fidelidad del visitante; duración de la visita, frecuencia de las visitas.

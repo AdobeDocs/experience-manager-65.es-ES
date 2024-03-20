@@ -5,10 +5,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 66%
+source-wordcount: '2184'
+ht-degree: 65%
 
 ---
 
@@ -87,7 +88,7 @@ Espacio en disco para la instalación:
 
 * Requisitos de hardware: Procesador Intel® Pentium® 4 o AMD® equivalente de 1 GHz.
 * Java™ Runtime Environment (JRE) 7.0 Actualización 51 o actualizaciones posteriores a la 7.0.
-* Resolución mínima de pantalla de 1024 x 768 píxeles o buena resolución de pantalla de 16 bits a color o superior.
+* Resolución de pantalla mínima de 1024 X 768 píxeles o superior con color de 16 bits o superior.
 * Conexión de red TCP/IPv4 o TCP/IPv6 al servidor de AEM Forms.
 * Instale los paquetes de tiempo de ejecución redistribuibles de Visual C++ 2012 de 32 bits.
 * Instale los paquetes de tiempo de ejecución redistribuibles de Visual C++ 2013 de 32 bits.
@@ -159,13 +160,13 @@ Antes de instalar Workbench, debe asegurarse de que su entorno incluye el softwa
 
    >[!NOTE]
    >
-   Puede seguir utilizando la versión de Designer instalada con Acrobat 10 sin seleccionar esta opción.
+   >Puede seguir utilizando la versión de Designer instalada con Acrobat 10 sin seleccionar esta opción.
 
 1. Acepte el directorio predeterminado como se muestra o haga clic en Elegir y vaya al directorio en el que desea instalar Workbench y, a continuación, haga clic en Siguiente.
 
    >[!NOTE]
    >
-   La ruta del directorio de instalación no debe contener los caracteres # (libras) y $ (dólares).
+   >La ruta del directorio de instalación no debe contener los caracteres # (libras) y $ (dólares).
 
 1. Revise el resumen a la instalación y haga clic en Instalar. El programa de instalación muestra el progreso de la instalación.
 1. Revise el resumen de la instalación. Seleccione Iniciar AEM Forms Workbench para poder iniciar Workbench y, a continuación, haga clic en Siguiente.
@@ -185,7 +186,7 @@ Para utilizar Workbench, debe tener una instancia de AEM Forms en ejecución, n
 
 >[!NOTE]
 >
-Si configuró AEM Forms para utilizar el proveedor de repositorios EMC Documentum® o IBMAEM ® FileNet y desea iniciar sesión en un repositorio que no sea el repositorio configurado como predeterminado en la consola de administración de formularios de forma predeterminada, proporcione el nombre de usuario username@Repository.
+>Si configuró AEM Forms para utilizar el proveedor de repositorios EMC Documentum® o IBMAEM ® FileNet y desea iniciar sesión en un repositorio que no sea el repositorio configurado como predeterminado en la consola de administración de formularios de forma predeterminada, proporcione el nombre de usuario username@Repository.
 
 ### Configuración del tiempo de espera {#configuring-timeout-settings}
 
@@ -197,7 +198,7 @@ Para conectar Workbench a un servidor de AEM Forms a través de HTTPS, debe aseg
 
 >[!NOTE]
 >
-[Workbench_HOME] representa el directorio donde instaló Workbench. La ubicación predeterminada es C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+>[Workbench_HOME] representa el directorio donde instaló Workbench. La ubicación predeterminada es C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certificado. Normalmente, este nombre es el nombre de host completo.
 
@@ -206,7 +207,7 @@ Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certifi
 
    >[!NOTE]
    >
-   Para exportar el certificado, abra un explorador web e inicie sesión en la consola de administración. Instale el certificado en el explorador y, a continuación, exporte el certificado desde el explorador a una ubicación de almacenamiento temporal (o directamente al [Workbench_HOME]directorio /workbench/jre/lib/security).
+   >Para exportar el certificado, abra un explorador web e inicie sesión en la consola de administración. Instale el certificado en el explorador y, a continuación, exporte el certificado desde el explorador a una ubicación de almacenamiento temporal (o directamente al [Workbench_HOME]directorio /workbench/jre/lib/security).
 
 1. Copie el certificado en el directorio [Workbench_HOME]/workbench/jre/lib/security.
 
@@ -215,7 +216,7 @@ Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certifi
 donde:
    * `changeit` es la contraseña predeterminada para el almacén de claves cacerts.
    * certname es el certificado seleccionado en el paso 1.
-   * Por ejemplo, el alias que elija para el certificado. Este valor puede cambiarse.
+   * Por ejemplo, el alias que elija para el certificado. Este valor se puede cambiar.
 
 1. Cuando se le pida que confíe en el certificado, escriba Yes y pulse la tecla Intro. keytool procede a importar el archivo cacerts en [Workbench_HOME]directorio /workbench/jre/lib/security.
 

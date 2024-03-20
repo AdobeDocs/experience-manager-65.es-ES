@@ -6,7 +6,8 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '2907'
 ht-degree: 2%
@@ -297,16 +298,16 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 1. Vaya a la página del producto.
 1. **Editar** el componente de producto.
 1. Escriba el **Categoría de imagen** que ha elegido ( `cat1` por ejemplo).
-1. Seleccionar **Listo**. La página se actualiza y se debe mostrar el recurso correcto.
+1. Seleccione **Listo**.  La página se actualiza y se debe mostrar el recurso correcto.
 
 #### Catálogo  {#catalog}
 
 1. Vaya al catálogo.
 1. Seleccionar **Ver propiedades**.
 1. Seleccione **Editar**.
-1. Seleccione el **Assets** pestaña.
+1. Seleccione la pestaña **Recursos**.
 1. Escriba el requerido **Categoría de recursos del producto**.
-1. Seleccionar **Listo**.
+1. Seleccione **Listo**.
 1. [Despliegue](#rolling-out-a-catalog) sus cambios.
 
 #### Consola Productos {#products-console}
@@ -315,7 +316,7 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 1. Seleccionar **Ver datos del producto**.
 1. Seleccione **Editar**.
 1. Escriba un **Categoría de recursos predeterminada**.
-1. Seleccionar **Listo**.
+1. Seleccione **Listo**.
 1. [Despliegue](#rolling-out-a-catalog) sus cambios.
 
 ### Publicar/Cancelar la publicación de información del producto {#publishing-unpublishing-product-information}

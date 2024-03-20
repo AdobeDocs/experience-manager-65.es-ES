@@ -6,10 +6,11 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 72%
+ht-degree: 78%
 
 ---
 
@@ -47,8 +48,8 @@ Para ver los tipos de datos complejos adicionales disponibles en los flujos de t
 Para crear una variable,
 
 1. AEM En una instancia de, vaya a Herramientas > Flujo de trabajo > Modelos.
-1. Seleccionar **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y seleccione **[!UICONTROL Editar]**.
-1. Seleccione el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y seleccione **[!UICONTROL Agregar variable]**.
+1. Seleccione **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y seleccione **[!UICONTROL Editar]**.
+1. Seleccione el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y seleccione **[!UICONTROL Agregar variable]**.
 
    ![Agregar variable](assets/variables_add_variable_new.png)
 
@@ -89,7 +90,7 @@ También puede actualizar elementos específicos de una variable de tipo JSON o 
 
 Para agregar asignaciones entre variables, haga lo siguiente:
 
-1. En la página de edición del flujo de trabajo, seleccione el icono Pasos de la barra de tareas del modelo de flujo de trabajo.
+1. En la página de edición del flujo de trabajo, seleccione el icono Pasos en la barra de tareas del modelo de flujo de trabajo.
 1. Arrastre y suelte el **Establecer variable** vaya al editor de flujo de trabajo, seleccione el paso y seleccione ![Configure el icono indicado con una llave inglesa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
 1. En el cuadro de diálogo Establecer variable, seleccione **[!UICONTROL Asignación]** > **[!UICONTROL Agregar asignación]**.
 1. En la sección **Variable de mapa**, seleccione la variable para almacenar datos, seleccione el modo de asignación y especifique un valor para almacenar en la variable. Los modos de asignación varían en función del tipo de variable.
@@ -162,7 +163,7 @@ En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [eje
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-Del mismo modo, seleccione una ruta de script externa o especifique el script ECMA para las expresiones de enrutamiento para evaluar la rama activa. Seleccionar **[!UICONTROL Cambiar nombre de rama]** para especificar un nombre alternativo para la rama.
+Del mismo modo, seleccione una ruta de script externa o especifique el script ECMA para las expresiones de enrutamiento para evaluar la rama activa. Seleccione **[!UICONTROL Cambiar nombre de rama]** para especificar un nombre alternativo para la rama.
 
 Para ver más ejemplos, consulte [Crear un modelo del flujo de trabajo](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 

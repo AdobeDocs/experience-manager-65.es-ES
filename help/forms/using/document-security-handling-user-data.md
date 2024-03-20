@@ -5,10 +5,11 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 65%
+source-wordcount: '923'
+ht-degree: 69%
 
 ---
 
@@ -123,7 +124,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
-Para exportar datos desde la tabla `EdcAuditEntity`, utilice la API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para exportar datos de auditoría basados en `principalId`, `policyId`o `licenseId`.
+>Para exportar datos desde la tabla `EdcAuditEntity`, utilice la API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para exportar datos de auditoría basados en `principalId`, `policyId`o `licenseId`.
 
 Para obtener datos completos sobre un usuario del sistema, debe acceder a los datos de la base de datos de administración de usuarios y exportarlos. Para obtener más información, consulte [Administrar usuarios de Forms: Administrar datos de usuario](/help/forms/using/user-management-handling-user-data.md).
 
@@ -148,7 +149,7 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    >[!NOTE]
    >
-   Para eliminar datos de la tabla `EdcAuditEntity`, utilice la API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para eliminar datos de auditoría basados en `principalId`, `policyId` o `licenseId`.
+   >Para eliminar datos de la tabla `EdcAuditEntity`, utilice la API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que toma [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parámetro para eliminar datos de auditoría basados en `principalId`, `policyId` o `licenseId`.
 
 1. Los archivos XML de directivas activas y archivadas se almacenan en las tabla de la base de datos `EdcPolicyXmlEntity` y `EdcPolicyArchiveEntity`, respectivamente. Para eliminar datos de un usuario de estas tablas, haga lo siguiente:
 
@@ -158,7 +159,7 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    >[!NOTE]
    >
-   Elimine el blob completo dentro de la `Principal` para un ID principal o el XML de directiva puede dañarse o inutilizarse.
+   >Elimine el blob completo dentro de la `Principal` para un ID principal o el XML de directiva puede dañarse o inutilizarse.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -205,7 +206,7 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    >[!NOTE]
    >
-   Los administradores pueden buscar, acceder y eliminar datos de usuario de las directivas personales de otros usuarios en **[!UICONTROL Servicios > Seguridad de documentos > Mis directivas]** mediante la consola de administración.
+   >Los administradores pueden buscar, acceder y eliminar datos de usuario de las directivas personales de otros usuarios en **[!UICONTROL Servicios > Seguridad de documentos > Mis directivas]** mediante la consola de administración.
 
 1. Eliminar los datos del ID principal de la base de datos de administración de usuarios. Para ver los pasos detallados, consulte [Administrar usuarios de Forms | Administrar datos de usuario](/help/forms/using/user-management-handling-user-data.md).
 1. Inicie AEM Forms Server.

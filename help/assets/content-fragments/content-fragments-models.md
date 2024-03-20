@@ -4,10 +4,11 @@ description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -76,9 +77,9 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
         >[!CAUTION]
         >
-        >Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, los nombres deben contener solo caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como carácter especial.
+        Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, los nombres deben contener solo caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como carácter especial.
         >
-        >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
+        Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
      Por ejemplo:
 
@@ -121,7 +122,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Referencias a otros fragmentos de contenido; se pueden usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
       * Editar directamente el fragmento al que se hace referencia.
-      * Crear un fragmento de contenido basado en el modelo adecuado
+      * Crear un nuevo fragmento de contenido basado en el modelo apropiado
 * **Objeto JSON**
    * Permite al autor del fragmento de contenido introducir la sintaxis JSON en los elementos correspondientes de un fragmento.
       * AEM Para permitir que los usuarios almacenen el archivo JSON directo que han copiado y pegado desde otro servicio, haga lo siguiente:
@@ -134,7 +135,7 @@ En el editor de fragmentos, cada instancia aparecerá como una pestaña.
 
      >[!NOTE]
      >
-     >Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
+     Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
 
 ## Propiedades {#properties}
 
@@ -147,7 +148,7 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 
   >[!CAUTION]
   >
-  >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
+  Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
 
 * **Representar como**
 Las distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
@@ -177,11 +178,11 @@ El contenido (para el campo específico) debe ser único en todos los fragmentos
 
   >[!NOTE]
   >
-  >La unicidad se garantiza por cada raíz de idioma.
+  La unicidad se garantiza por cada raíz de idioma.
 
   >[!NOTE]
   >
-  >Las variaciones pueden tener el mismo valor *único* como variaciones del mismo fragmento, pero no del mismo valor que se utiliza en cualquier variación de otros fragmentos.
+  Las variaciones pueden tener el mismo valor *único* como variaciones del mismo fragmento, pero no del mismo valor que se utiliza en cualquier variación de otros fragmentos.
 
 * Consulte **[Referencia de contenido](#content-reference)** para obtener más información acerca de ese tipo de datos específico y sus propiedades.
 
@@ -224,18 +225,16 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 
      >[!NOTE]
      >
-     >Este método es de especial interés con [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+     Este método es de especial interés con [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Se puede configurar para una o varias referencias (en el fragmento resultante).
 
 >[!NOTE]
 >
->AEM tiene una protección contra recurrencias para lo siguiente:
+AEM tiene una protección contra recurrencias para lo siguiente:
 >
->* Referencias de contenido
->  Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
+* Referencias de contenido Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
->* Referencias a fragmento en GraphQL
->  Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
+* Referencias a fragmento en GraphQL Si crea una consulta profunda que devuelve varios fragmentos de contenido referenciados entre sí, devolverá un valor nulo en la primera ocurrencia.
 
 ### Referencia de contenido {#content-reference}
 
@@ -277,7 +276,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Esto reviste especial interés en [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+Esto reviste especial interés en [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Además de las propiedades estándar, puede definir las siguientes:
 
@@ -303,9 +302,9 @@ Esto especifica una ruta raíz para los fragmentos a los que se hace referencia.
 
 >[!NOTE]
 >
->Existe un mecanismo de protección contra la recurrencia. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
+Existe un mecanismo de protección contra la recurrencia. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia a fragmento. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia a fragmento.
 >
->También existe una protección contra la recurrencia para las referencias a fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
+También existe una protección contra la recurrencia para las referencias a fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
 
 ## Activación o desactivación de un modelo de fragmento de contenido {#enabling-disabling-a-content-fragment-model}
 
@@ -354,7 +353,7 @@ Para implementar el control de contenido, puede configurar lo siguiente **Polít
 
 >[!NOTE]
 >
->El mecanismo es similar a [permitir plantillas de página](/help/sites-authoring/templates.md#allowing-a-template-author) para una página, y sus elementos secundarios, en propiedades avanzadas de una página.
+El mecanismo es similar a [permitir plantillas de página](/help/sites-authoring/templates.md#allowing-a-template-author) para una página, y sus elementos secundarios, en propiedades avanzadas de una página.
 
 Para configurar las **Directivas** para **Modelos de fragmento de contenido permitidos**:
 
@@ -389,7 +388,7 @@ Los modelos de fragmento de contenido permitidos para una carpeta se resuelven d
 
 >[!CAUTION]
 >
->La eliminación de un modelo de fragmento de contenido puede afectar a los fragmentos dependientes.
+La eliminación de un modelo de fragmento de contenido puede afectar a los fragmentos dependientes.
 
 Para eliminar un modelo de fragmento de contenido, haga lo siguiente:
 
@@ -400,7 +399,7 @@ Para eliminar un modelo de fragmento de contenido, haga lo siguiente:
 
    >[!NOTE]
    >
-   >Si se hace referencia al modelo, se envía una advertencia. Tome las medidas adecuadas.
+   Si se hace referencia al modelo, se envía una advertencia. Tome las medidas adecuadas.
 
 ## Publicación de un modelo de fragmento de contenido {#publishing-a-content-fragment-model}
 
@@ -416,7 +415,7 @@ El estado publicado se indica en la consola.
 
    >[!NOTE]
    >
-   >Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indica y el modelo se publica con el fragmento.
+   Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, la lista de selección lo indica y el modelo se publica con el fragmento.
 
 ## Cancelación de la publicación de un modelo de fragmento de contenido {#unpublishing-a-content-fragment-model}
 

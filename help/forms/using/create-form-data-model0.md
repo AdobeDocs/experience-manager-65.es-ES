@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2684'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -125,7 +126,7 @@ Haga lo siguiente para configurar la base de datos MySQL:
 1. Configurar la base de datos MySQL como fuente de datos:
 
    1. Vaya a la consola web de AEM en [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Localice la configuración **Apache Sling Connection Pooled DataSource**. Seleccione para abrir la configuración en modo de edición.
+   1. Localice la configuración **Apache Sling Connection Pooled DataSource**. Seleccione esta opción para abrir la configuración en modo de edición.
    1. En el cuadro de diálogo de configuración, especifique los siguientes detalles:
 
       * **Nombre del Datasource:** puede especificar cualquier nombre. Por ejemplo, especifique **MySQL**.
@@ -237,7 +238,7 @@ Ejecute los siguientes pasos para crear propiedades informáticas secundarias pa
 
    ![Regla de gastos de uso ](assets/usage_charges_rule_all_new.png)
 
-1. Seleccionar **Listo**. La regla se crea en el Editor de reglas.
+1. Seleccione **Listo**.  La regla se crea en el Editor de reglas.
 1. Seleccionar **Cerrar** para cerrar la ventana Editor de reglas.
 
 ### Agregar asociaciones entre objetos del modelo de datos {#add-associations-between-data-model-objects}
@@ -279,7 +280,7 @@ Para cada número móvil disponible en el objeto del modelo de datos Cliente, ha
 
    * Seleccione **mobilenum** de la lista desplegable **Valor de enlace**.
 
-   * Seleccionar **Añadir**.
+   * Seleccione **Añadir**.
 
    ![Agregar asociación para un argumento](assets/add_association_argument_new.png)
 
@@ -334,13 +335,13 @@ Después de crear asociaciones entre Cliente y otros objetos del modelo de datos
 
    * Seleccione **mobilenum** de la lista desplegable **Valor de enlace**.
 
-1. Seleccionar **Listo** para guardar las propiedades.
+1. Seleccione **Listo** para guardar las propiedades.
 
    ![Configurar servicios](assets/configure_services_customer_new.png)
 
 1. Seleccione la casilla de verificación situada en la parte superior de la **llamadas** objeto del modelo de datos para seleccionarlo y seleccionar **Editar propiedades**. Se abrirá el panel **Editar propiedades**.
 1. Desactive el **Objeto del modelo de nivel superior** para el objeto del modelo de datos **llamadas**.
-1. Seleccionar **Listo**.
+1. Seleccione **Listo**.
 
    Repita los pasos 8 a 10 para configurar las propiedades del objeto del modelo de datos **facturas**.
 
@@ -353,7 +354,7 @@ Después de crear asociaciones entre Cliente y otros objetos del modelo de datos
    * Escriba un título y una descripción opcionales.
    * Seleccione **cliente** de la lista desplegable **Objeto del modelo de salida**.
 
-   * Seleccionar **Listo** para guardar las propiedades.
+   * Seleccione **Listo** para guardar las propiedades.
 
    ![Editar propiedades](assets/edit_properties_get_details_new.png)
 
@@ -363,8 +364,8 @@ Después de crear asociaciones entre Cliente y otros objetos del modelo de datos
    * Escriba un título y una descripción opcionales.
    * Seleccione **cliente** de la lista desplegable **Objeto del modelo de entrada**.
 
-   * Seleccionar **Listo**.
-   * Seleccionar **Guardar** para guardar el modelo de datos de formulario.
+   * Seleccione **Listo**.
+   * Seleccione **Guardar** para guardar el modelo de datos de formulario.
 
    ![Actualizar propiedades del servicio](assets/update_service_properties_new.png)
 

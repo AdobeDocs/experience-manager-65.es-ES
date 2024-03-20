@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '7143'
-ht-degree: 96%
+source-wordcount: '7164'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +23,7 @@ Un administrador puede configurar una carpeta de red, conocida como carpeta insp
 Puede utilizar uno de los siguientes métodos para crear una carpeta inspeccionada en el sistema de archivos:
 
 * Al configurar las propiedades de un nodo de configuración de carpeta inspeccionada, escriba la ruta completa del directorio principal en la propiedad folderPath y agregue el nombre de la carpeta inspeccionada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`
-La carpeta `MyWatchedFolder` no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
+El `MyWatchedFolder`no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta inspeccionada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte [Propiedades de la carpeta inspeccionada](#watchedfolderproperties).
 

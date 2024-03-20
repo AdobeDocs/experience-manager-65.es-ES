@@ -4,10 +4,11 @@ description: Encuentre las prácticas recomendadas recopiladas por los equipos d
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 40%
+source-wordcount: '1599'
+ht-degree: 34%
 
 ---
 
@@ -29,7 +30,7 @@ MSM es un marco de trabajo configurable para automatizar la implementación de c
 >
 >Encontrará más información sobre cómo trabajar con MSM en los artículos de la Base de conocimiento:
 >
->* [Solución de problemas y preguntas más frecuentes sobre MSM](troubleshoot-msm.md)
+>* [Resolución de problemas de MSM y preguntas frecuentes](troubleshoot-msm.md)
 >
 
 >[!NOTE]
@@ -171,7 +172,7 @@ Las configuraciones de despliegue de MSM son altamente personalizables. La autom
 
 Al usar el [activador de despliegue](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` debe tener en cuenta lo siguiente:
 
-* Automatizar despliegues con activadores `onModify` puede tener un impacto negativo en el rendimiento de la creación, ya que activan despliegues después de cada modificación de la página.**
+* Automatización de despliegues con `onModify` Los déclencheur pueden tener un impacto negativo en el rendimiento de la creación, ya que almacenan en déclencheur los lanzamientos posteriores *cada* modificación de página.
 
 * El resultado del despliegue puede diferir del esperado, ya que:
 

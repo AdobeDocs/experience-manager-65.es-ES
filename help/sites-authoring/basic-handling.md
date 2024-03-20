@@ -7,7 +7,8 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2964'
 ht-degree: 41%
@@ -106,7 +107,7 @@ En Navegación, las consolas disponibles son:
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">Fragmento de experiencia</a> es una experiencia independiente que se puede reutilizar en varios canales y que tiene variaciones, de modo que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias.</td>
   </tr>
   <tr>
-   <td>Forms</td>
+   <td>Formularios</td>
    <td>Esta consola le permite crear, administrar y procesar su <a href="/help/forms/using/introduction-aem-forms.md">formularios y documentos</a>.</td>
   </tr>
   <tr>

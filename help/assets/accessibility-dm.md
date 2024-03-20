@@ -7,10 +7,11 @@ content-type: reference
 feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 0%
 
 ---
 

@@ -2,7 +2,8 @@
 title: Guía de inicio rápido Creación de fragmentos de contenido sin encabezado
 description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 73%

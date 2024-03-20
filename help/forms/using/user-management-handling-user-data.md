@@ -5,7 +5,8 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 72%
@@ -111,13 +112,13 @@ Ejecute los siguientes comandos de base de datos para poder exportar los datos d
 >
 >Los siguientes comandos utilizan nombres de tabla de base de datos en bases de datos My SQL y IBM® DB2®. Cuando ejecute estos comandos en bases de datos de Oracle y MS® SQL, reemplace los siguientes nombres de tabla en los comandos:
 >
-* Reemplace `EdcPrincipalLocalAccountEntity` por `EdcPrincipalLocalAccount`
+>* Reemplace `EdcPrincipalLocalAccountEntity` por `EdcPrincipalLocalAccount`
 >
-* Reemplace `EdcPrincipalEmailAliasEntity` por `EdcPrincipalEmailAliasEn`
+>* Reemplace `EdcPrincipalEmailAliasEntity` por `EdcPrincipalEmailAliasEn`
 >
-* Reemplace `EdcPrincipalMappingEntity` por `EdcPrincipalMappingEntit`
+>* Reemplace `EdcPrincipalMappingEntity` por `EdcPrincipalMappingEntit`
 >
-* Reemplace `EdcPrincipalGrpCtmntEntity` por `EdcPrincipalGrpCtmntEnti`
+>* Reemplace `EdcPrincipalGrpCtmntEntity` por `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

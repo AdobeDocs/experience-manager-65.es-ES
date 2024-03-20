@@ -7,9 +7,10 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -102,13 +103,13 @@ Agrupar predicados de metadatos de replicación con un evaluador de predicados p
 
 >[!NOTE]
 >
-La configuración de nuevos proyectos de Adobe Experience Manager AEM () mediante Maven está documentada por [AEM Cómo crear proyectos de con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>La configuración de nuevos proyectos de Adobe Experience Manager AEM () mediante Maven está documentada por [AEM Cómo crear proyectos de con Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 En primer lugar, actualice las dependencias Maven del proyecto. El `PredicateEvaluator` forma parte de `cq-search` por lo que debe añadirse a su archivo pom.xml de Maven.
 
 >[!NOTE]
 >
-El ámbito de la `cq-search` la dependencia se establece en `provided` porque `cq-search` es proporcionada por el `OSGi` contenedor.
+>El ámbito de la `cq-search` la dependencia se establece en `provided` porque `cq-search` es proporcionada por el `OSGi` contenedor.
 
 pom.xml
 
@@ -137,7 +138,7 @@ El `cq-search` El proyecto contiene el `AbstractPredicateEvaluator` clase abstra
 
 >[!NOTE]
 >
-El siguiente procedimiento explica cómo generar un `Xpath` expresión para filtrar datos. Otra opción sería implementar el `includes` que selecciona los datos en base a filas. Consulte la [Documentación de Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) para obtener más información.
+>El siguiente procedimiento explica cómo generar un `Xpath` expresión para filtrar datos. Otra opción sería implementar el `includes` que selecciona los datos en base a filas. Consulte la [Documentación de Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) para obtener más información.
 
 1. Cree una clase Java™ que extienda `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Anote su clase con un `@Component` le gusta lo siguiente
@@ -165,13 +166,13 @@ El siguiente procedimiento explica cómo generar un `Xpath` expresión para filt
 
 >[!NOTE]
 >
-El `factory`debe ser una cadena única que comience por `com.day.cq.search.eval.PredicateEvaluator/`y terminan con el nombre de su personalizado `PredicateEvaluator`.
+>El `factory`debe ser una cadena única que comience por `com.day.cq.search.eval.PredicateEvaluator/`y terminan con el nombre de su personalizado `PredicateEvaluator`.
 
 >[!NOTE]
 >
-El nombre del `PredicateEvaluator` es el nombre del predicado que se utiliza para crear consultas.
+>El nombre del `PredicateEvaluator` es el nombre del predicado que se utiliza para crear consultas.
 
-1. Omitir:
+1. Anular:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)

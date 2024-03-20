@@ -2,10 +2,11 @@
 title: Directrices de accesibilidad web y Adobe Experience Manager AEM ()
 description: Introducción a Adobe Experience Manager AEM () y las directrices de accesibilidad web
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 67%
+source-wordcount: '397'
+ht-degree: 65%
 
 ---
 

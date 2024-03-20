@@ -1,19 +1,20 @@
 ---
-title: Aviso de fin de vida útil para el visualizador Flash
+title: Aviso de fin de vida útil para el visualizador de Flashes
 description: A partir del 31 de enero de 2017, Adobe Dynamic Media Classic dejará de ofrecer asistencia oficial para la plataforma de visor de Flashes.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: bb87898d-252e-4907-af03-11021d0d57fe
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '38'
-ht-degree: 21%
+ht-degree: 0%
 
 ---
 
-# Aviso de fin de vida útil para el visualizador Flash{#flash-viewers-end-of-life-notice}
+# Aviso de fin de vida útil para el visualizador de Flashes{#flash-viewers-end-of-life-notice}
 
 *A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (anteriormente Scene7) dejará de ofrecer oficialmente asistencia para la plataforma de visor de Flash.*
 

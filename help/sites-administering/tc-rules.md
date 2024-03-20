@@ -4,10 +4,11 @@ description: Aprenda a identificar el contenido que necesita traducirse en Adobe
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 66%
+source-wordcount: '1158'
+ht-degree: 60%
 
 ---
 
@@ -31,7 +32,7 @@ El archivo se aplica a todos los proyectos de traducción.
 
 Las reglas incluyen la siguiente información:
 
-* La ruta del nodo al que se aplica la regla. La regla también se aplica a los descendientes del nodo.
+* Ruta del nodo al que se aplica la regla. La regla también se aplica a los descendientes del nodo.
 * Nombres de las propiedades del nodo que contienen el contenido que se va a traducir. La propiedad puede ser específica para un tipo de recurso específico o para todos los tipos de recurso.
 
 AEM Por ejemplo, puede crear una regla que traduzca el contenido que los autores añaden a todos los componentes de texto base de las páginas de sus páginas de trabajo. La regla puede identificar el nodo `/content` y la propiedad `text` para el componente `foundation/components/text`.
@@ -101,8 +102,8 @@ Utilice la siguiente sintaxis de regla para incluir recursos incrustados o refer
 
 Cada elemento `assetNode` tiene las siguientes características:
 
-* Un atributo `resourceType` igual a la ruta que se resuelve en el componente.
-* Un atributo `assetReferenceAttribute` igual al nombre de la propiedad que almacena el binario de recursos (para recursos incrustados) o la ruta al recurso referenciado.
+* Uno `resourceType` atributo igual a la ruta que se resuelve en el componente.
+* Uno `assetReferenceAttribute` atributo igual al nombre de la propiedad que almacena el binario de recursos (para recursos incrustados) o la ruta al recurso al que se hace referencia.
 
 El siguiente ejemplo extrae imágenes del componente de imagen de base:
 

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 1%
@@ -283,7 +284,7 @@ Un ejemplo de esto sería un flujo de trabajo que implementa un proceso empresar
 
 Otro ejemplo sería un flujo de trabajo que procese varios nodos, cree un paquete de flujo de trabajo y active dicho paquete. En lugar de crear el paquete y luego iniciar un flujo de trabajo independiente con el paquete como carga útil, puede cambiar la carga útil del flujo de trabajo en el paso que crea el paquete y luego llamar al paso para activar el paquete dentro del mismo modelo de flujo de trabajo.
 
-### Avance de controlador {#handler-advance}
+### Avance del controlador {#handler-advance}
 
 Al diseñar un modelo del flujo de trabajo, tiene la opción de habilitar el avance del controlador en los pasos del flujo de trabajo. Como alternativa, puede agregar código al paso del flujo de trabajo para determinar qué paso se debe ejecutar a continuación y, a continuación, ejecutarlo.
 

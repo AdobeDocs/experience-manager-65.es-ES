@@ -1,16 +1,17 @@
 ---
 title: Uso de etiquetas
-description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web.
+description: Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 82%
+ht-degree: 76%
 
 ---
 
@@ -41,7 +42,7 @@ A la hora de diseñar la estructura de contenido para un sitio y el esquema de m
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** ventana use el **Etiquetas** y el **Seleccionar etiquetas** ventana. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
+Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** ventana use el **Etiquetas** y el **Seleccionar etiquetas** ventana. El **Etiquetas estándar** tab es el área de nombres predeterminada, lo que significa que no hay `namespace-string:` con el prefijo de taxonomía.
 
 ![Ventana Seleccionar etiquetas; utilice el botón X para anular la selección de las etiquetas seleccionadas actualmente](assets/chlimage_1-41.png)
 

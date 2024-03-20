@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2459'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -77,7 +78,7 @@ El menú desplegable de la fila también proporciona la operación Editar para e
 
 Puede agregar una descripción de la tabla para explicar cómo se organiza la información que los lectores de pantalla pueden interpretar y leer. Para agregar la descripción, haga lo siguiente:
 
-1. Seleccione la tabla y seleccione ![cmppr](assets/cmppr.png) para ver sus propiedades en la barra lateral.
+1. Seleccione la tabla y seleccione ![cmppr](assets/cmppr.png) para ver sus propiedades en la barra lateral.
 1. Especifique un resumen en la pestaña Accesibilidad.
 1. Haga clic en **Listo**.
 
@@ -95,9 +96,9 @@ Para aplicar la ordenación en columnas de la tabla, las celdas de la columna de
 
 Para habilitar la ordenación:
 
-1. Seleccione la tabla y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el explorador **Contenido** en la barra de tareas de comunicación interactiva.
+1. Seleccione la tabla y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el explorador **Contenido** en la barra de tareas de comunicación interactiva.
 1. Seleccione **Habilitar ordenación**.
-1. Seleccionar ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, de los encabezados de las columnas representan que se ha habilitado la ordenación.
+1. Seleccione ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, de los encabezados de las columnas representan que se ha habilitado la ordenación.
 
    ![Habilitar ordenar](assets/enable_sorting_new.png)
 
@@ -116,7 +117,7 @@ Para habilitar la ordenación:
 
 Siga estos pasos para configurar el ancho de columna de una tabla:
 
-1. En el **[!UICONTROL Contenido]** , seleccione la pestaña **[!UICONTROL Tabla]** y seleccione el componente Configurar (![Configurar](assets/configure-icon.svg))icono.
+1. En la pestaña **[!UICONTROL Contenido]**, seleccione el componente **[!UICONTROL Tabla]** y seleccione el icono ![Configurar](assets/configure-icon.svg).
 
 1. Escriba la lista de valores separados por comas en el campo **[!UICONTROL Anchura de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluya 3 columnas, especificando 2, 4, 6 como el valor en el campo **[!UICONTROL Anchura de columna]** configurará el ancho de las columnas como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 establece el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 establece el ancho de la tercera columna como la mitad del ancho de la tabla.
 
@@ -124,9 +125,9 @@ Siga estos pasos para configurar el ancho de columna de una tabla:
 
 Puede definir el estilo de una tabla mediante el uso del modo Estilo de la barra de herramientas de la página. Realice los siguientes pasos para cambiar al modo de estilo y editar el estilo de la tabla
 
-1. En la barra de herramientas Página, antes de Vista previa, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
+1. En la barra de herramientas de la página, antes de Vista previa, seleccione ![canvas-drop-down](assets/canvas-drop-down.png) > **Estilo**.
 
-1. En la barra lateral, seleccione la tabla y seleccione el botón de edición ![edit-button](assets/edit-button.png).
+1. En la barra lateral, seleccione la tabla y el botón de edición ![edit-button](assets/edit-button.png). 
 Puede ver las propiedades de estilo en la barra lateral.
 
 ![Propiedades de estilo de una tabla](assets/style-table.png)
@@ -139,7 +140,7 @@ Puede ver las propiedades de estilo en la barra lateral.
 
 Las tablas proporcionan compatibilidad para agregar o eliminar filas de forma dinámica durante la ejecución.
 
-1. Seleccione una fila de la tabla y seleccione ![cmppr](assets/cmppr.png).
+1. Seleccione una fila de la tabla y seleccione ![cmppr](assets/cmppr.png).
 1. En la pestaña Repetir configuración, especifique los recuentos mínimo y máximo para limitar el número de filas de la tabla.
 1. Haga clic en **Listo**.
 

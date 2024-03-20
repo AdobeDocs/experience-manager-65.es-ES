@@ -10,7 +10,8 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4422'
 ht-degree: 7%
@@ -143,7 +144,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Acercar o alejar</strong></td>
+   <td><strong>Zoom</strong></td>
    <td>Permite a los usuarios ampliar el área seleccionándola. Los usuarios pueden seleccionar controles para acercar, alejar y restablecer el tamaño predeterminado de la imagen.</td>
   </tr>
  </tbody>
@@ -311,7 +312,7 @@ Consulte &quot;Notas de la versión de los visualizadores&quot; en la tabla de c
   </tr>
   <tr>
    <td>Zoom_light<br /> </td>
-   <td>Acercar o alejar</td>
+   <td>Zoom</td>
    <td><code>html5_basiczoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -336,7 +337,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
   <tr>
    <td><strong>Gesto</strong></td>
    <td><strong>Zoom flotante </strong></td>
-   <td><strong>Acercar o alejar</strong></td>
+   <td><strong>Zoom</strong></td>
    <td><strong>Giro</strong></td>
   </tr>
   <tr>

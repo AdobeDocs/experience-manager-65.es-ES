@@ -2,7 +2,8 @@
 title: Product Cockpit
 description: Uso de la cabina de productos, que proporciona una visión general unificada de los catálogos de productos vinculados y el contenido asociado.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
@@ -59,7 +60,7 @@ Al hacer clic en un producto, se cargan variaciones de productos si están dispo
 
 Se proporciona una búsqueda de texto completo sobre el catálogo de productos completo en la pestaña del filtro izquierdo para encontrar productos rápidamente.
 
-![buscar](/help/commerce/cif/assets/search-cockpit.png)
+![búsqueda](/help/commerce/cif/assets/search-cockpit.png)
 
 ## Exploración del catálogo de productos escalonado {#staged-product-catalogs}
 

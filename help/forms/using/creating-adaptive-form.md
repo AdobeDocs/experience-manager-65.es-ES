@@ -5,10 +5,11 @@ role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -29,7 +30,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager.
 
-   Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
+   Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
    >[!NOTE]
    >
@@ -79,7 +80,7 @@ Para utilizar un modelo de datos de formulario para crear un formulario adaptabl
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Seleccionar para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
+1. Seleccione para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
    Seleccione un modelo de datos de formulario.
 
@@ -164,7 +165,7 @@ Los formularios adaptables se crean sin un modelo de formulario (con la opción 
    * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar una plantilla de formulario, un esquema XML o JSON o el modelo de datos de formulario.
    * Si el formulario adaptable se basa en un modelo de formulario, puede elegir otra plantilla de formulario, esquema XML o JSON o modelo de datos de formulario para el mismo modelo de formulario.
 
-1. Seleccionar **[!UICONTROL Guardar]** para guardar las propiedades.
+1. Seleccione **[!UICONTROL Guardar]** para guardar las propiedades.
 
 ## Guardar automáticamente un formulario adaptable {#auto-save-an-adaptive-form}
 

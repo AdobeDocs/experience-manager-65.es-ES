@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 30%
+ht-degree: 26%
 
 ---
 
@@ -155,7 +156,7 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td> </td>
-   <td>Comprobador de vínculos externos<br /> </td>
+   <td>Comprobador de vínculo externo<br /> </td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -303,15 +304,15 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social en Facebook<br /> </td>
+   <td>Configuración de inicio de sesión social en facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social en Twitter<br /> </td>
+   <td>Configuración de inicio de sesión social de twitter<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social en Pinterest<br /> </td>
+   <td>Configuración de inicio de sesión social en pinterest<br /> </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -335,7 +336,7 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td> </td>
-   <td>Plantillas de sitios<br /> </td>
+   <td>Plantillas de sitio<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -373,7 +374,7 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
    <td>Client Context representa una colección ensamblada dinámicamente de datos de usuario. Las configuraciones predeterminadas y de Experience Cloud se mantienen aquí.<br /> </td>
   </tr>
   <tr>
-   <td>Configuración de servicios de nube<br /> </td>
+   <td>Configuraciones de Cloud Service<br /> </td>
    <td>Contiene configuraciones relacionadas con la integración con Adobe Experience Cloud.</td>
   </tr>
   <tr>
@@ -410,10 +411,10 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td>Comprobador de vínculos externos</td>
-   <td>Comprobador de vínculos externos.</td>
+   <td>Comprobador de vínculo externo.</td>
   </tr>
   <tr>
-   <td>Móvil</td>
+   <td>Mobile</td>
    <td>Ayuda a crear sitios web diseñados para dispositivos móviles.</td>
   </tr>
   <tr>

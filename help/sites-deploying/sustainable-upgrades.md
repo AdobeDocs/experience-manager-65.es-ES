@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ Para que sea más seguro y fácil para los clientes comprender qué áreas de **
 
 >[!NOTE]
 >
-Estas políticas solo se aplican a los mecanismos basados en rutas de búsqueda de Sling. Otras áreas de **/libs** como una biblioteca del lado del cliente, puede marcarse como `Internal`, pero se podría seguir utilizando con la inclusión clientlib estándar. Es importante que un cliente siga respetando la clasificación interna en estos casos.
+>Estas políticas solo se aplican a los mecanismos basados en rutas de búsqueda de Sling. Otras áreas de **/libs** como una biblioteca del lado del cliente, puede marcarse como `Internal`, pero se podría seguir utilizando con la inclusión clientlib estándar. Es importante que un cliente siga respetando la clasificación interna en estos casos.
 
 #### Indicadores de tipo de contenido de CRXDE Lite {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ Los mixins aplicados en CRXDE Lite muestran nodos de contenido y árboles marcad
 
 >[!NOTE]
 >
-AEM A partir de la versión 6.5, Adobe recomienda utilizar Pattern Detector para detectar infracciones de acceso al contenido. Los informes de detector de patrones son más detallados, detectan más problemas y reducen la probabilidad de falsos positivos.
+>AEM A partir de la versión 6.5, Adobe recomienda utilizar Pattern Detector para detectar infracciones de acceso al contenido. Los informes de detector de patrones son más detallados, detectan más problemas y reducen la probabilidad de falsos positivos.
 >
-Para obtener más información, consulte [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md).
+>Para obtener más información, consulte [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md).
 
 AEM La versión 6.5 se envía con una comprobación de estado para alertar a los clientes de si el contenido superpuesto o referenciado se utiliza de una manera incoherente con la clasificación de contenido.
 

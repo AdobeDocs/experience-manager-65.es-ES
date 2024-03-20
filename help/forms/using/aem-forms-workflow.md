@@ -5,10 +5,11 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3667'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -65,7 +66,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
 1. Abra la consola Modelos de flujo de trabajo. La URL predeterminada es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleccione **Crear** y, a continuación, **Crear modelo**. Aparecerá el cuadro de diálogo Agregar modelo del flujo de trabajo.
-1. Escriba el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud hipotecaria. Seleccionar **Listo**.
+1. Escriba el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud hipotecaria. Seleccione **Listo**.
 1. Seleccione el modelo del flujo de trabajo recién creado y seleccione **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
 
    * Los pasos: Inicio del flujo y Fin del flujo. Estos pasos representan el principio y el final del flujo de trabajo. Estos pasos son obligatorios y no se pueden editar ni eliminar.
@@ -79,7 +80,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
 1. Crear fases del flujo de trabajo. Un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM y en el progreso del informe del flujo de trabajo.
 
-   Para definir una fase, seleccione la ![info-círculo](assets/info-circle.png) para abrir las propiedades del modelo del flujo de trabajo, abra el icono **Fases** , agregue fases para el modelo de flujo de trabajo y seleccione **Guardar y cerrar**. Para la solicitud de hipoteca de ejemplo, cree fases: solicitud del préstamo, estado de la solicitud del préstamo, documentos a firmar y documento del préstamo firmado.
+   Para definir una fase, seleccione el icono de ![info-circle](assets/info-circle.png) para abrir las propiedades del modelo del flujo de trabajo, abra la pestaña **Fases**, agregue fases para el modelo del flujo de trabajo y seleccione **Guardar y cerrar**. Para la solicitud de hipoteca de ejemplo, cree fases: solicitud del préstamo, estado de la solicitud del préstamo, documentos a firmar y documento del préstamo firmado.
 
 1. Arrastre y suelte el explorador de fases **Asignar tarea** al modelo del flujo de trabajo. Conviértalo en el primer paso del modelo.
 
@@ -91,7 +92,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    Para el ejemplo de la solicitud de la hipoteca, configure el paso Asignar tarea para utilizar un formulario adaptable de solo lectura y mostrar el documento PDF una vez que se haya completado la tarea. Además, seleccione el grupo de usuarios autorizado para aprobar la solicitud del préstamo. En la pestaña **Acciones**, deshabilite la opción **Enviar**. Cree una variable **actionTaken** del tipo de datos String y especifíquela como **Variable de ruta**. Por ejemplo, actionTaken. Además, agregue las rutas Aprobar y Rechazar. Las rutas se muestran como acciones independientes (botones) en la bandeja de entrada AEM. El flujo de trabajo selecciona una rama en función de la acción (botón) que pulse un usuario.
 
-   Puede importar el paquete de ejemplo, disponible para descargar al principio de la sección, para el conjunto completo de valores de todos los campos del paso Asignar tarea configurado, por ejemplo, la solicitud hipotecaria.
+   Puede importar el paquete de ejemplo, que está disponible para descargar al principio de la sección, para el conjunto completo de valores de todos los campos del paso Asignar tarea configurado, para el ejemplo de solicitud de hipoteca.
 
 1. Arrastre y suelte el componente OR Split desde el explorador de pasos al modelo del flujo de trabajo. OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 

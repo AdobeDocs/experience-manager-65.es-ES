@@ -6,10 +6,11 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 5%
+source-wordcount: '1978'
+ht-degree: 4%
 
 ---
 
@@ -185,12 +186,12 @@ El **[!UICONTROL Generar formulario]** La pestaña enumera los elementos de form
 | Nombre del componente | Descripción |
 |---|---|
 | [!UICONTROL Encabezado de sección] | Añada un encabezado de sección para una lista de componentes comunes. |
-| [!UICONTROL Texto de una sola línea] | Añada una propiedad de texto de una sola línea. Se almacena como una cadena. |
-| [!UICONTROL Texto con varios valores] | Añada una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
+| [!UICONTROL Texto de línea única] | Agregue una propiedad de texto de una sola línea. Se almacena como una cadena. |
+| [!UICONTROL Texto con varios valores] | Agregue una propiedad de texto de varios valores. Se almacena como una matriz de cadenas. |
 | [!UICONTROL Número] | Añada un componente de número. |
 | [!UICONTROL Fecha] | Añada un componente de fecha. |
-| [!UICONTROL Lista desplegable] | Añada una lista desplegable. |
-| [!UICONTROL Etiquetas estándar] | Añadir una etiqueta. |
+| [!UICONTROL Desplegable] | Añada una lista desplegable. |
+| [!UICONTROL Etiquetas estándar] | Añada una etiqueta. |
 | [!UICONTROL Campo oculto] | Agregue un campo oculto. Se envía como parámetro de POST cuando se guarda el recurso. |
 
 #### Edición de elementos de formulario {#editing-form-items}

@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 5%
@@ -84,7 +85,7 @@ AEM A continuación se ilustran las opciones de implementación disponibles para
    <td><p>Campaign</p> </td>
   </tr>
   <tr>
-   <td><p>Forms</p> </td>
+   <td><p>Formularios</p> </td>
    <td><p>Autor-Descarga</p> </td>
    <td><p>HP-UX</p> </td>
    <td><p>Tomcat</p> </td>

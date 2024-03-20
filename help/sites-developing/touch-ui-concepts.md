@@ -7,10 +7,11 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 1%
+source-wordcount: '2147'
+ht-degree: 0%
 
 ---
 
@@ -209,7 +210,7 @@ Los componentes de base se encuentran en:
 
 Esta biblioteca contiene un componente de la interfaz de usuario de Granite para cada elemento de Coral. Un componente depende del contenido y su configuración reside en el repositorio. Esto permite crear una aplicación de Granite UI sin tener que escribir manualmente el marcado del HTML.
 
-Función:
+Objetivo:
 
 * Modelo de componente para elementos de HTML
 * Composición de componentes
@@ -260,7 +261,7 @@ El [Componentes de administración de Granite UI](https://developer.adobe.com/ex
 * Carril (esqueleto)
 * Panel Buscar
 
-Función:
+Objetivo:
 
 * Aspecto unificado para las aplicaciones de administración
 * RAD para aplicaciones de administración
@@ -313,7 +314,7 @@ En el nivel más básico, un elemento HTML es una etiqueta HTML con un nombre de
 
 El CSS se utiliza para proporcionar la apariencia real. Para que sea posible personalizar fácilmente el aspecto (por ejemplo, en el caso de la promoción de la marca), los valores de estilo reales se declaran como variables que se expanden mediante la variable [MENOS](https://lesscss.org/) preprocesador durante la ejecución.
 
-Función:
+Objetivo:
 
 * Proporcionar elementos básicos de la interfaz de usuario con un aspecto y una sensación comunes
 * Proporcionar el sistema de cuadrícula predeterminado
@@ -380,7 +381,7 @@ El mismo concepto se utiliza para implementar la validación del formulario. Par
 >
 >Siempre que sea posible, se debe utilizar la validación de formularios nativos de HTML5 o expandirla.
 
-Función:
+Objetivo:
 
 * Proporcionar un comportamiento dinámico para los elementos de HTML
 * Proporcionar diseños personalizados no es posible con CSS puro
@@ -434,7 +435,7 @@ Un widget combina uno o más elementos básicos con un complemento de JavaScript
 
 Un widget puede almacenar en déclencheur y escuchar eventos personalizados para cooperar con otros widgets de la página. Algunos widgets son widgets nativos de jQuery que utilizan los elementos HTML de Coral.
 
-Función:
+Objetivo:
 
 * Implementar elementos de IU de nivel superior que muestren un comportamiento complejo
 * Activación y gestión de eventos
@@ -488,7 +489,7 @@ Estos incluyen la gestión de XSS y el bus de eventos.
 
 Aunque los complementos y widgets del elemento HTML pueden depender de la funcionalidad proporcionada por la biblioteca de utilidades, esta no puede depender en gran medida de los elementos ni de los widgets en sí.
 
-Función:
+Objetivo:
 
 * Proporcionar funcionalidad común
 * Implementación del bus de eventos

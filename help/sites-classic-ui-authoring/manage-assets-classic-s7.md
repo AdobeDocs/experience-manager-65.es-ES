@@ -7,7 +7,8 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3545'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 Puede ver los recursos del Experience Manager publicados en Dynamic Media Classic (Scene7) en varios visores:
 
-* Acercar o alejar
+* Zoom
 * Flotante
 * Vídeo
 * Plantilla de imagen
@@ -129,7 +130,7 @@ El Adobe recomienda publicar los recursos en Dynamic Media Classic (Scene7) úni
 
 Los siguientes componentes de Dynamic Media Classic (Scene7) están disponibles en Experience Manager:
 
-* Acercar o alejar
+* Zoom
 * Flotante (Zoom)
 * Plantilla de imagen
 * Imagen
@@ -198,7 +199,7 @@ Estas opciones de configuración se establecen abriendo (haciendo doble clic) en
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### Acercar o alejar {#zoom}
+### Zoom {#zoom}
 
 El componente Zoom HTML 5 muestra una imagen más grande al pulsar el botón +.
 
@@ -392,7 +393,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >* En la IU clásica, también puede buscar **Flash** y **FXG**. No se admite el filtrado para estos dos términos en la IU táctil optimizada.
 >
 >* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &#42;.mp4) y la representación codificada.
->* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
+* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
 >
 
 **Estado de publicación** : puede filtrar por recursos en función del estado de publicación: No publicado o Publicado. Si no selecciona ningún Estado de publicación, el Experience Manager busca de forma predeterminada en todos los estados de publicación.

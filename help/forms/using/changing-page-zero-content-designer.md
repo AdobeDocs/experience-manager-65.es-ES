@@ -6,10 +6,11 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Forms Designer
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -43,4 +44,4 @@ La versión de Designer de [!DNL AEM Forms] permite cambiar el mensaje que se mu
 
 >[!NOTE]
 >
->Es posible que la propiedad personalizada que ha creado no aparezca correctamente en el cuadro de diálogo Propiedades del formulario cuando vuelva a abrir el formulario. Sin embargo, funciona bien, y el formulario muestra el mensaje de la página cero actualizado.
+>Es posible que la propiedad personalizada que has creado no aparezca correctamente en el cuadro de diálogo Propiedades del formulario cuando vuelvas a abrir el formulario. Sin embargo, funciona bien, y el formulario muestra el mensaje de la página cero actualizado.

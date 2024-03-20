@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo habilitar determinadas funcionalid
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 41%
+ht-degree: 45%
 
 ---
 

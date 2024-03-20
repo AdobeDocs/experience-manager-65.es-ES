@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -196,8 +197,8 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro fases:
    | Etapa 2 | Crear |
    | Etapa 3 | Revisión |
    | Etapa 4 | Aprobar |
-   | Etapa 5 | Completar |
-   | Etapa 6 | Completar |
+   | Etapa 5 | Completado |
+   | Etapa 6 | Completado |
 
 1. Cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso según los nombres de las fases (en lugar de los nombres de las fases). El progreso del flujo de trabajo se muestra en [Pestaña INFORMACIÓN DEL FLUJO DE TRABAJO de la ventana de detalles de tarea del elemento de flujo de trabajo](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) enumerados en la [Bandeja de entrada](/help/sites-authoring/inbox.md).
 

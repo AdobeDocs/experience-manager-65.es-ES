@@ -7,9 +7,10 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ Al integrar Adobe Experience Manager AEM AEM () con Exact Target, puede administ
 
 La integración ofrece las siguientes funciones:
 
-* AEM La capacidad de crear correos electrónicos en los mensajes de correo electrónico y publicarlos en Exact Target para su distribución.
+* AEM La capacidad de crear correos electrónicos en las listas de distribución y publicarlos en Exact Target para su distribución.
 * AEM La capacidad de establecer la acción de un formulario de para crear un suscriptor de Target exacto.
 
 Una vez configurado ExactTarget, puede publicar boletines informativos o correos electrónicos en ExactTarget. Consulte [Publicación de boletines en un servicio de correo electrónico](/help/sites-authoring/personalization.md).
@@ -31,9 +32,9 @@ Las configuraciones de ExactTarget se pueden agregar mediante Cloud Services o H
 
 ### Configuración de ExactTarget mediante Cloud Services {#configuring-exacttarget-via-cloudservices}
 
-Para crear una configuración de ExactTarget en Cloud Services:
+Para crear una configuración de ExactTarget en Cloud Service:
 
-1. En la página de bienvenida, haga clic en **Cloud Services**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. En la página de bienvenida, haga clic en **Cloud Service**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Clic **ExactTarget** y luego **Configurar**. Se abre la ventana de configuración de ExactTarget.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -47,7 +48,7 @@ Para crear una configuración de ExactTarget en Cloud Services:
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. Seleccione una cuenta, si está disponible. La cuenta es para clientes de Enterprise 2.0. Haga clic en **Aceptar**.
+1. Seleccione una cuenta, si está disponible. La cuenta es para clientes de Enterprise 2.0. Haz clic en **OK**.
 
    Se ha configurado ExactTarget. Puede editar la configuración haciendo clic en **Editar**. Puede ir a ExactTarget haciendo clic en **Ir a ExactTarget**.
 
@@ -62,7 +63,7 @@ Para crear una configuración de ExactTarget en Cloud Services:
 Para crear una configuración de ExactTarget en Herramientas:
 
 1. En la página de bienvenida, haga clic en **Herramientas**. O vaya directamente a la página `https://<hostname>:<port>/misadmin#/etc`.
-1. Seleccionar **Herramientas**, entonces **Configuraciones de Cloud Services,** entonces **ExactTarget**.
+1. Seleccionar **Herramientas**, entonces **Configuraciones de Cloud Service,** entonces **ExactTarget**.
 1. Clic **Nuevo** para abrir la ventana **Crear página**.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
@@ -74,5 +75,5 @@ Para crear una configuración de ExactTarget en Herramientas:
 
 Para agregar varias configuraciones:
 
-1. En la página de bienvenida, haga clic en **Cloud Services** y haga clic en **ExactTarget**. Clic **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se muestran todas las configuraciones disponibles.
+1. En la página de bienvenida, haga clic en **Cloud Service** y haga clic en **ExactTarget**. Clic **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se muestran todas las configuraciones disponibles.
 1. Haga clic en **+** junto a Configuraciones disponibles. Esto abre el **Crear configuraciones** ventana. Siga el procedimiento de configuración anterior para crear una configuración.

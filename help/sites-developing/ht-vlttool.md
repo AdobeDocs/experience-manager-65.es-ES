@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 1%
@@ -740,7 +741,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 >
 >`vlt rcp -e ".*\.txt" -r`
 
-### Sincronización {#sync}
+### Sincronizar {#sync}
 
 Permite controlar el servicio de sincronización de Vault. Sin ningún argumento, este comando intenta colocar el directorio de trabajo actual bajo control de sincronización. Si se ejecuta dentro de una desprotección de vlt, utiliza el filtro y el host respectivos para configurar la sincronización. Si se ejecuta fuera de una desprotección de vlt, registra la carpeta actual para la sincronización sólo si el directorio está vacío.
 

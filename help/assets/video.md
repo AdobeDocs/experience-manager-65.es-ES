@@ -10,10 +10,11 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c30630f0cd561256414a2883d29c9ee4be470ce1
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '11187'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -594,7 +595,7 @@ Utilice el [Adobe Guía de referencia de visores de Dynamic Media](https://exper
 
 ## Acerca de la compatibilidad con subtítulos múltiples y pistas de audio múltiple para vídeos en Dynamic Media{#about-msma}
 
-Con la capacidad de pistas de audio y subtítulos múltiples en Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para toda la audiencia global. Puede personalizar un solo vídeo principal publicado a una audiencia global en varios idiomas y adherirse a las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+Con la capacidad de pistas de audio y subtítulos múltiples en Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
 ![Pestaña Subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulo .VTT cargados y los archivos de pista de audio .MP3 cargados para un vídeo.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
@@ -744,7 +745,7 @@ Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como
 >La reproducción del audio predeterminado también puede depender de lo que se establezca en los siguientes exploradores:
 >
 >* Chrome: se reproduce el audio predeterminado definido en el vídeo.
-* Safari: si el idioma por defecto está definido en Safari, el audio se reproduce con el idioma por defecto definido, si está disponible con el manifiesto del vídeo. De lo contrario, se reproduce el audio predeterminado que se establece como parte de las propiedades de un vídeo.
+>* Safari: si el idioma por defecto está definido en Safari, el audio se reproduce con el idioma por defecto definido, si está disponible con el manifiesto del vídeo. De lo contrario, se reproduce el audio predeterminado que se establece como parte de las propiedades de un vídeo.
 
 **Para establecer el audio predeterminado de un vídeo que tiene varias pistas de audio:**
 
@@ -773,7 +774,7 @@ Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-
 
 >[!NOTE]
 >
-La pestaña de previsualización predeterminada del Experience Manager no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas a Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
+>La pestaña de previsualización predeterminada del Experience Manager no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas a Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
 
 **Para obtener una vista previa de un vídeo que tiene varios subtítulos y pistas de audio:**
 
@@ -852,7 +853,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 
 >[!IMPORTANT]
 >
-El Adobe recomienda que [habilitar la capacidad de pistas de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
+>El Adobe recomienda que [habilitar la capacidad de pistas de varios subtítulos y audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
 
 Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte del audio.
 
@@ -860,7 +861,7 @@ Los subtítulos opcionales también permiten una mayor accesibilidad para las pe
 
 >[!NOTE]
 >
-El reproductor de vídeo que utilice debe admitir la visualización de subtítulos.
+>El reproductor de vídeo que utilice debe admitir la visualización de subtítulos.
 
 Consulte también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm.md).
 
@@ -888,7 +889,7 @@ Consulte [Proporcionar contenido estático (que no sea de imagen)](https://exper
 
    >[!NOTE]
    >
-   Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
+   >Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
 
    Por lo general, debe asignar al archivo VTT de rótulo el mismo nombre que al archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 
@@ -919,7 +920,7 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 
 >[!NOTE]
 >
-El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
+>El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
 
 Si lo desea, puede crear y personalizar su propio visor de vídeo personalizado con capítulos en lugar de utilizar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre la creación de su propio visor de HTML5 con navegación por capítulos, en la API del SDK del visor de Adobe HTML 5, consulte el encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la [API de SDK de visor de HTML 5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentación.
 

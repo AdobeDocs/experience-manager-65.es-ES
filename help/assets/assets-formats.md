@@ -7,7 +7,8 @@ role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
-source-git-commit: 7bfe9688e354ad60d8945fd2f95fdda1f05f85e4
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 26%
@@ -186,7 +187,7 @@ Hay una lista de tipos MIME admitidos en CRXDE Lite en `/conf/global/settings/cl
 | AIFF | audio/x-aiff | | |
 | AVI | video/x-msvideo | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | BMP | image/bmp | | |
-| CSS | text/css | | |
+| CSS | texto/css | | |
 | DOC | application/msword | | |
 | EPS | <ul><li>application/postscript</li><li>application/eps</li><li>application/x-eps</li><li>image/eps</li><li>image/x-eps</li></ul> | | |
 | F4V | video/x-f4v | | ExcludeMasterVideoFromAVS |
@@ -333,7 +334,7 @@ Dynamic Media admite los siguientes formatos 3D.
 
 Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/assets-3d.md).
 
-| Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
+| Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |

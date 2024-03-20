@@ -9,7 +9,8 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2851'
 ht-degree: 0%
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 Puede ver los recursos del Experience Manager publicados en Dynamic Media Classic en varios visores:
 
-* Acercar o alejar
+* Zoom
 * Flotante
 * Vídeo
 * Plantilla de imagen
@@ -57,7 +58,7 @@ Puede publicar recursos digitales en Dynamic Media Classic de la siguiente maner
 
 Los siguientes componentes de Dynamic Media Classic están disponibles en Experience Manager:
 
-* Acercar o alejar
+* Zoom
 * Flotante (Zoom)
 * Plantilla de imagen
 * Imagen
@@ -136,7 +137,7 @@ Estas opciones de configuración se establecen abriendo (haciendo doble clic) en
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
-### Acercar o alejar {#zoom}
+### Zoom {#zoom}
 
 El componente Zoom HTML 5 muestra una imagen más grande al pulsar el botón **[!UICONTROL +]** botón.
 
@@ -331,7 +332,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >* En la IU clásica, también puede buscar **Flash** y **FXG**. No se admite el filtrado para estos tipos en la IU táctil optimizada.
 >
 >* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &amp;ast;.mp4) y la codificada.
->* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
+* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
 >
 
 **[!UICONTROL Estado de publicación]** - Puede filtrar los recursos en función del estado de publicación: **[!UICONTROL Sin publicar]** o **[!UICONTROL Publicado]**. Si no selecciona ninguna **[!UICONTROL Estado de publicación]**, el Experience Manager busca de forma predeterminada en todos los estados de publicación.

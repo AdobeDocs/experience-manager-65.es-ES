@@ -2,7 +2,8 @@
 title: Bandeja de entrada para administrar tareas
 description: Administrar las tareas con la bandeja de entrada de Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 39%

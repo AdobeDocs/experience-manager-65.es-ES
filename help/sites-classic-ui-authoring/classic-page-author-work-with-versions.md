@@ -7,9 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1351'
 ht-degree: 19%
 
 ---
@@ -171,7 +172,7 @@ En el ejemplo siguiente, la línea roja indica que la página se editó durante 
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
-1. Hacer clic:
+1. Haga clic:
 
    1. **Ir** para mostrar el contenido de la página publicada en el momento seleccionado.
    1. Al mostrar ese contenido, utilice **Salir de Deformación de tiempo** para salir y volver a la página de autor actual.

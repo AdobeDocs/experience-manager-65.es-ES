@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 2%
+source-wordcount: '1833'
+ht-degree: 1%
 
 ---
 
@@ -62,12 +63,12 @@ A continuación se muestra una lista de los parámetros de consulta del Editor p
   </tr>
   <tr>
    <td> colsValue / cv<br /> </td>
-   <td> Cadena[]</td>
+   <td> String[]</td>
    <td> propiedades buscadas (valores seleccionados de colsSelection mostrados como casillas de verificación)</td>
   </tr>
   <tr>
    <td> extraCols/ec<br /> </td>
-   <td> Cadena[]</td>
+   <td> String[]</td>
    <td> propiedades buscadas adicionales (mostradas en un campo de texto separado por comas)</td>
   </tr>
   <tr>
@@ -77,7 +78,7 @@ A continuación se muestra una lista de los parámetros de consulta del Editor p
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
-   <td> Cadena[]</td>
+   <td> String[]</td>
    <td> selección de propiedades buscadas (mostradas como casillas de verificación)</td>
   </tr>
   <tr>
@@ -506,7 +507,7 @@ El siguiente ejemplo se encuentra en el componente productlist (/apps/geometrixx
             </colsMetadata>
 ```
 
-**Casilla de verificación**
+**Casilla**
 
 Si la propiedad checkbox configuration se establece en true, todas las celdas de la columna se representan como casillas de verificación. Una casilla marcada envía **true** al servidor Guardar servlet, **false** de lo contrario. En el menú del encabezado, también puede hacer lo siguiente **seleccionar todo** o **seleccionar ninguno**. Estas opciones se activan si el encabezado seleccionado es el encabezado de una columna de casilla de verificación.
 

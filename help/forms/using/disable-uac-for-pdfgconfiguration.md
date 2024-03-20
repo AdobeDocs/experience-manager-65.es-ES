@@ -2,9 +2,10 @@
 title: Deshabilitar UAC para la configuración de PDFG aplicable tanto a JEE como a OSGI
 description: Obtenga información sobre cómo deshabilitar UAC para la configuración de PDFG para corregir la conversión de Word a PDF.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 62%
 
 ---

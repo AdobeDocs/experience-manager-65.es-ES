@@ -5,7 +5,8 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 81%
@@ -91,13 +92,13 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
-1. Seleccione el nombre del paquete aplicable a su sistema operativo, seleccione Aceptar términos del EULA y seleccione **[!UICONTROL **[!UICONTROL  Descargar ]**.]**
+1. Seleccione el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos]** del EULA y seleccione **[!UICONTROL Descargar]**.
 1. Abra el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
    También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
 
-1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el directorio] de instalación de AEM/crx-quickstart/logs/error.archivo de registro y el [registro sea estable.
+1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No reinicie el servidor inmediatamente.** Antes de detener el servidor AEM Forms, espere hasta que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el [directorio] de instalación de AEM/crx-quickstart/logs/error.archivo de registro y el registro sea estable.
 
    >[!NOTE]
    >

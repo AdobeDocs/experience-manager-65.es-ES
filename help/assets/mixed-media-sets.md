@@ -9,7 +9,8 @@ docset: aem65
 feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 14%
@@ -122,7 +123,7 @@ Al agregar recursos al conjunto, estos se agregan automáticamente en orden alfa
 
 1. Para eliminar un recurso, seleccione la casilla de verificación correspondiente y seleccione **[!UICONTROL Eliminar recurso]**.
 1. Para aplicar un ajuste preestablecido, seleccione **[!UICONTROL Preestablecido]** en la esquina superior derecha, seleccione un ajuste preestablecido para aplicarlo a los recursos.
-1. Seleccionar **[!UICONTROL Guardar]**. El conjunto de medios mixtos recién creado aparecerá en la carpeta en la que lo creó.
+1. Seleccione **[!UICONTROL Guardar]**. El conjunto de medios mixtos recién creado aparecerá en la carpeta en la que lo creó.
 
 ## Editar un conjunto de medios mixtos {#editing-mixed-media-sets}
 

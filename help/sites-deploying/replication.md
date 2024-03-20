@@ -8,7 +8,8 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3363'
 ht-degree: 1%
@@ -434,7 +435,7 @@ Para configurar la replicación de contenido para una instancia de publicación 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.
       * Puede configurar otros parámetros según sea necesario.
 
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 
 A continuación, puede probar la operación actualizando y publicando una página en el entorno de Author.
 
@@ -483,7 +484,7 @@ Los agentes predeterminados se incluyen en la instalación. Sin embargo, todaví
    >
    >AEM Si ha instalado el en un contexto distinto del predeterminado recomendado, configure el en el que se ha instalado el en [Encabezados HTTP](#extended) en el **Extendido** pestaña.
 
-1. Haga clic en **Aceptar**.
+1. Haz clic en **OK**.
 1. Vuelva a la **Herramientas** pestaña, desde aquí puede **Activar** el **Vaciado de Dispatcher** agente (**Agentes de publicación**).
 
 El **Vaciado de Dispatcher** El agente de replicación no está activo en Author. Puede acceder a la misma página en el entorno de publicación utilizando el URI equivalente; por ejemplo, `https://localhost:4503/etc/replication/agents.publish/flush.html`.

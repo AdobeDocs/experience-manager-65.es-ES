@@ -6,10 +6,11 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -53,7 +54,7 @@ Realice los siguientes pasos para habilitar la carga diferida en un fragmento de
 
 1. Abra el formulario adaptable que contiene el fragmento en el que desea habilitar la carga diferida en el modo Autor.
 1. Seleccione el fragmento de formulario adaptable y seleccione ![cmppr](assets/cmppr.png).
-1. En la barra lateral, habilite **[!UICONTROL Carga diferida de fragmento]** y seleccione **Listo**.
+1. En la barra lateral, habilita la opción **[!UICONTROL Cargar fragmento de forma diferida]** y selecciona **Listo**.
 
    ![Habilitar la carga diferida en el fragmento de formulario adaptable](assets/lazy-loading-fragment.png)
 

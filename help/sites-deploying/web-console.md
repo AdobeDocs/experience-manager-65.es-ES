@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 1%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -121,7 +122,7 @@ Con esta pestaña puede:
 
   Puede **Examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en el cual **Nivel de inicio**.
 
-* **Volver a cargar**
+* **Recargar**
 
   Actualiza la lista mostrada.
 

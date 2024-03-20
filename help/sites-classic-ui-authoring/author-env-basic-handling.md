@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 7%
+source-wordcount: '1161'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 7%
 >* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager AEM (). Utiliza la consola **Sitios** como base. 
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y otras adicionales en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
->* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [al editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular, cuando [uso de consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [edición de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## La pantalla de bienvenida {#the-welcome-screen}

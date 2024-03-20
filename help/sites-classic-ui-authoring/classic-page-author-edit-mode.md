@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5991'
 ht-degree: 3%
@@ -187,7 +188,7 @@ Opcional. Número máximo de elementos que desea utilizar en el carrusel.
 
 >[!NOTE]
 >
->Puede crear un componente de carrusel personalizado para Adobe Experience Manager AEM que muestre los recursos digitales en el DAM de la.
+Puede crear un componente de carrusel personalizado para Adobe Experience Manager AEM que muestre los recursos digitales en el DAM de la.
 
 ### Gráfico {#chart}
 
@@ -222,9 +223,9 @@ A continuación se muestra un ejemplo de datos de gráfico seguido del gráfico 
 
 >[!CAUTION]
 >
->La funcionalidad completa de la administración de fragmentos de contenido solo está disponible con la interfaz de usuario táctil optimizada.
+La funcionalidad completa de la administración de fragmentos de contenido solo está disponible con la interfaz de usuario táctil optimizada.
 >
->El componente Fragmento de contenido se puede ver en la barra de tareas de la IU clásica, pero no hay más funciones disponibles.
+El componente Fragmento de contenido se puede ver en la barra de tareas de la IU clásica, pero no hay más funciones disponibles.
 
 [Fragmentos de contenido](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) se crean y administran como recursos independientes de la página. Después se pueden usar estos fragmentos, y sus variaciones, al crear páginas de contenido.
 
@@ -276,7 +277,7 @@ AEM La aplicación externa está integrada en el sistema de párrafos de la pág
 
 >[!NOTE]
 >
->Según el caso de uso, hay otras opciones disponibles para la integración de aplicaciones externas, como la [Integración de portlets](/help/sites-administering/aem-as-portal.md).
+Según el caso de uso, hay otras opciones disponibles para la integración de aplicaciones externas, como la [Integración de portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -330,11 +331,11 @@ Puede arrastrar y soltar una imagen desde el [Buscador de contenido](/help/sites
 
 >[!NOTE]
 >
->El progreso de la carga no se puede supervisar con Internet Explorer.
+El progreso de la carga no se puede supervisar con Internet Explorer.
 >
->Los usuarios de Internet Explorer deben cargar la imagen y hacer clic en **Ok**, luego vuelva a abrir la imagen para ver el archivo cargado en la vista previa y poder realizar modificaciones (es decir, recortar).
+Los usuarios de Internet Explorer deben cargar la imagen y hacer clic en **Ok**, luego vuelva a abrir la imagen para ver el archivo cargado en la vista previa y poder realizar modificaciones (es decir, recortar).
 >
->Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML AEM 5 utilizadas por los usuarios de la sección de, haga lo siguiente
+Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML AEM 5 utilizadas por los usuarios de la sección de, haga lo siguiente
 
 Cuando se carga una imagen, puede configurar lo siguiente:
 
@@ -386,7 +387,7 @@ La imagen final (con **Título** y **Descripción**) puede mostrarse como:
 
 >[!CAUTION]
 >
->Aunque el componente Contenedor de diseño está disponible en la IU clásica, su funcionalidad completa solo está disponible en la IU táctil. Para obtener más información, consulte [Diseño interactivo](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+Aunque el componente Contenedor de diseño está disponible en la IU clásica, su funcionalidad completa solo está disponible en la IU táctil. Para obtener más información, consulte [Diseño interactivo](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Lista {#list}
 
@@ -605,7 +606,7 @@ El ejemplo siguiente muestra un término de búsqueda que está mal escrito y no
 
 ![dc_search_usenotfound](assets/dc_search_usenotfound.png)
 
-### Sitemap {#sitemap}
+### Mapa del sitio {#sitemap}
 
 Lista automática de mapas del sitio que (con la configuración predeterminada) muestra todas las páginas (como vínculos activos) del sitio web actual. Por ejemplo, un extracto muestra:
 
@@ -649,9 +650,9 @@ A continuación, el componente de presentación con diapositivas muestra repetid
 
 >[!NOTE]
 >
->El **Tabla** El componente se basa en [Editor de texto enriquecido](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), al igual que el **[Texto](#text)** componente.
+El **Tabla** El componente se basa en [Editor de texto enriquecido](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), al igual que el **[Texto](#text)** componente.
 >
->El Adobe recomienda que utilice la variable **Tabla** para tablas, aunque también se pueden construir con el componente **Texto** componente.
+El Adobe recomienda que utilice la variable **Tabla** para tablas, aunque también se pueden construir con el componente **Texto** componente.
 
 El **Tabla** está preconfigurado para permitirle construir, rellenar y dar formato a una tabla. Con el cuadro de diálogo, puede configurar la tabla y crear el contenido desde cero, o copiando y pegando una hoja de cálculo o una tabla desde un editor externo, como Excel, OpenOffice o Bloc de notas.
 
@@ -684,9 +685,9 @@ Para obtener más información sobre la aplicación de etiquetas, visite [Uso de
 
 >[!NOTE]
 >
->El **Texto** El componente se basa en [Editor de texto enriquecido](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), al igual que el **[Tabla](#table)** componente.
+El **Texto** El componente se basa en [Editor de texto enriquecido](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), al igual que el **[Tabla](#table)** componente.
 >
->El Adobe recomienda que utilice la variable **Tabla** para tablas, aunque también se pueden construir con el componente **Texto** componente.
+El Adobe recomienda que utilice la variable **Tabla** para tablas, aunque también se pueden construir con el componente **Texto** componente.
 
 El componente Texto permite introducir un bloque de texto mediante un editor WYSIWYG, con la funcionalidad proporcionada por el [Editor de texto enriquecido](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Una selección de iconos le permite dar formato al texto, incluidas las características de la fuente, la alineación, los vínculos, las listas y la sangría.
 
@@ -796,11 +797,11 @@ Después de colocar una instancia del componente en la página, puede configurar
 
 >[!NOTE]
 >
->Los formatos admitidos son:
+Los formatos admitidos son:
 >
->* `.mp4`
->* `Ogg`
->* `FLV` (vídeo de Flash)
+* `.mp4`
+* `Ogg`
+* `FLV` (vídeo de Flash)
 >
 
 ## Columnas {#columns}
@@ -835,7 +836,7 @@ Los componentes de formulario se utilizan para crear formularios para que los vi
 
 >[!NOTE]
 >
->Consulte [Ayuda de AEM Forms](/help/forms/using/introduction-aem-forms.md) para obtener información sobre AEM Forms.
+Consulte [Ayuda de AEM Forms](/help/forms/using/introduction-aem-forms.md) para obtener información sobre AEM Forms.
 
 Forms se basa en varios componentes diferentes:
 
@@ -857,7 +858,7 @@ A continuación se muestra un formulario de ejemplo. Está compuesto por el **Fo
 
 >[!NOTE]
 >
->La información sobre el desarrollo y la personalización de los formularios está disponible en la [Desarrollo de la página Forms](/help/sites-developing/developing-forms.md). La personalización de este formulario incluye la adición de acciones, restricciones, campos de precarga y el uso de secuencias de comandos para llamar a un servicio, entre otros.
+La información sobre el desarrollo y la personalización de los formularios está disponible en la [Desarrollo de la página Forms](/help/sites-developing/developing-forms.md). La personalización de este formulario incluye la adición de acciones, restricciones, campos de precarga y el uso de secuencias de comandos para llamar a un servicio, entre otros.
 
 ### Configuración común a (varios) componentes del formulario {#settings-common-to-many-form-components}
 
@@ -883,7 +884,7 @@ Al configurar cualquiera de los componentes del formulario, están disponibles l
 
 >[!NOTE]
 >
->Los campos que vea varían significativamente según el componente individual.
+Los campos que vea varían significativamente según el componente individual.
 
 Estas pestañas le proporcionan los parámetros necesarios. Las pestañas dependen del tipo de componente individual, pero pueden incluir lo siguiente:
 
@@ -1191,9 +1192,9 @@ Puede especificar varios parámetros, incluido un título, una descripción y un
 
 >[!NOTE]
 >
->Uso de **Ruta de carga de elementos** puede precargar la lista de grupos de casillas de verificación con valores.
+Uso de **Ruta de carga de elementos** puede precargar la lista de grupos de casillas de verificación con valores.
 >
->Consulte [Precarga de campos de formulario con varios valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Consulte [Precarga de campos de formulario con varios valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Detalles de la tarjeta de crédito {#credit-card-details}
 
@@ -1211,11 +1212,11 @@ Puede especificar un título y elementos para que aparezcan en la lista. Con los
 
 >[!NOTE]
 >
->Uso de **Ruta de carga de elementos** puede cargar previamente la lista desplegable con valores.
+Uso de **Ruta de carga de elementos** puede cargar previamente la lista desplegable con valores.
 >
->Consulte [Precarga de campos de formulario con varios valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Consulte [Precarga de campos de formulario con varios valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Carga de archivo {#file-upload}
+### Carga de archivos {#file-upload}
 
 El componente de carga de archivos proporciona al usuario un mecanismo para seleccionar y cargar un archivo.
 
@@ -1231,9 +1232,9 @@ Este componente permite crear un campo oculto. Estos campos ocultos se pueden ut
 
 >[!NOTE]
 >
->También puede personalizar el formulario para mostrar u ocultar componentes específicos del formulario según el valor de otros campos del formulario. Cambiar la visibilidad de un campo de formulario resulta útil cuando el campo solo es necesario en condiciones específicas.
+También puede personalizar el formulario para mostrar u ocultar componentes específicos del formulario según el valor de otros campos del formulario. Cambiar la visibilidad de un campo de formulario resulta útil cuando el campo solo es necesario en condiciones específicas.
 >
->Consulte [Mostrar y ocultar componentes de formulario](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+Consulte [Mostrar y ocultar componentes de formulario](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Botón de imagen {#image-button}
 
@@ -1282,9 +1283,9 @@ Puede especificar el nombre del elemento junto con un título y una descripción
 
 >[!NOTE]
 >
->Uso de **Ruta de carga de elementos** puede precargar el grupo de opciones con valores.
+Uso de **Ruta de carga de elementos** puede precargar el grupo de opciones con valores.
 >
->Consulte [Precarga de campos de formulario con varios valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+Consulte [Precarga de campos de formulario con varios valores](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Botón Enviar {#submit-button}
 

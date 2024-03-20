@@ -1,7 +1,9 @@
 ---
 title: AEM Notas de la versión de Content and Commerce de 2024
 description: Notas de la versión de Adobe Experience Manager Content and Commerce de 2024.
-source-git-commit: 99e0ed11ece7291ca093080843c5215339871def
+exl-id: 372e6a46-72bb-4db4-ad01-534ca723ae58
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 12%
@@ -18,7 +20,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 |:-------|:-----------------------------------------------------------------------------------------------:|
 | CIF complemento de | AEM Mínimo: 6.5.8, Adobe Commerce 2.3.5 Esquemas de GraphQL |
 | CIF Componentes principales | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
-| Tipo de archivo del proyecto AEM. | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+| Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## Fecha de versión: enero de 2024
 

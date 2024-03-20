@@ -2,7 +2,8 @@
 title: Administración de proyectos de traducción
 description: Obtenga información sobre cómo administrar proyectos de traducción en Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3506'
 ht-degree: 39%
@@ -250,7 +251,7 @@ En la tabla siguiente se describe cada estado que puede tener un trabajo o eleme
 | Traducción en curso | Para un trabajo, la traducción de uno o más archivos del trabajo aún no está completa. Para un elemento del trabajo, el artículo se está traduciendo. |
 | Traducido | Para un trabajo, se ha completado la traducción de todos los archivos del trabajo. Para un artículo del trabajo, el artículo se traduce. |
 | Listo para revisión | El elemento del trabajo se traduce y el archivo se ha importado a AEM. |
-| Completo | El propietario del proyecto ha indicado que el contrato de traducción ha concluido. |
+| Completado | El propietario del proyecto ha indicado que el contrato de traducción ha concluido. |
 | Cancelar | Indica que el proveedor de traducción debe dejar de trabajar en un trabajo de traducción. |
 | Actualización de error | Se ha producido un error al transferir archivos entre AEM y el servicio de traducción. |
 | Estado desconocido | Se ha producido un error desconocido. |

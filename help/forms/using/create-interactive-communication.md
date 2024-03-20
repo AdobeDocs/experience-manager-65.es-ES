@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6130'
 ht-degree: 83%
@@ -86,7 +87,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
    |---|---|
    | Gráfico | Agrega un gráfico que se puede usar en comunicaciones interactivas para la representación visual de datos bidimensionales recuperados de una colección de modelos de datos de formulario. Para obtener más información, consulte [Usar gráficos en comunicaciones interactivas](/help/forms/using/chart-component-interactive-communications.md). |
    | Fragmento de documento | Permite agregar un componente reutilizable, como texto, lista o condición, a una comunicación interactiva. El componente agregado puede estar basado en el modelo de datos de formulario o no. |
-   | Imagen | Permite insertar una imagen. |
+   | Imagen | Insertar una imagen. |
 
    Arrastre y suelte los componentes en la comunicación interactiva y configúrelos según sea necesario.
 
@@ -191,7 +192,7 @@ Seleccione el fragmento del documento, seleccione ![configure_icon](assets/confi
    |---|---|
    | Gráfico | Agrega un gráfico que se puede usar en comunicaciones interactivas para la representación visual de datos bidimensionales recuperados de una colección de modelos de datos de formulario. Para obtener más información, consulte [Usar el componente de gráfico](../../forms/using/chart-component-interactive-communications.md). |
    | Fragmento de documento | Permite agregar un componente, un texto, una lista o una condición reutilizables a una comunicación interactiva. El componente reutilizable que agregue a una comunicación interactiva puede estar basado en el modelo de datos de formulario o carecer de él. |
-   | Imagen | Permite insertar una imagen. |
+   | Imagen | Insertar una imagen. |
    | Panel | Le permite agregar un [Panel](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) a la comunicación interactiva. |
    | Tabla | Agrega una tabla que le permite organizar los datos en filas y columnas. |
    | Área de destino | Inserta un área de destino en un canal web para organizar los componentes específicos de ese canal. El área de destino es un contenedor sin formato que le permite agrupar componentes específicos de canales web. |
@@ -245,7 +246,7 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
 
    ![attachfiles](assets/attachfiles.png)
 
-1. Seleccionar **[!UICONTROL Listo]**.
+1. Seleccione **[!UICONTROL Listo]**.
 
 ### Propiedades del campo XDP/Diseño {#xdplayoutfieldproperties}
 
@@ -422,9 +423,9 @@ El orden se puede aplicar a columnas de la tabla que contengan lo siguiente:
 
 Para habilitar la ordenación:
 
-1. Seleccione la tabla y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el explorador **Contenido** en la barra de tareas de comunicación interactiva.
+1. Seleccione la tabla y seleccione ![configure_icon](assets/configure_icon.png) (Configurar). También puede seleccionar la tabla mediante el explorador **Contenido** en la barra de tareas de comunicación interactiva.
 1. Seleccione **Habilitar ordenación.**
-1. Seleccionar ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, de los encabezados de las columnas representan que se ha habilitado la ordenación.
+1. Seleccione ![done_icon](assets/done_icon.png) para guardar las propiedades de la tabla. Los iconos de clasificación, flechas arriba y abajo, de los encabezados de las columnas representan que se ha habilitado la ordenación.
 
    ![Habilitar ordenar](assets/enable_sorting_new-1.png)
 

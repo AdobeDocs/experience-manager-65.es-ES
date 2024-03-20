@@ -2,7 +2,8 @@
 title: Configuraciones y el explorador de configuración
 description: AEM AEM Comprenda las configuraciones de la y cómo administran la configuración del espacio de trabajo en las instancias de trabajo de.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 4%
@@ -33,7 +34,7 @@ AEM El administrador y los autores de la pueden considerar las configuraciones c
 
 AEM Se pueden crear configuraciones para muchas funciones diferentes dentro de los entornos de trabajo de la aplicación de la.
 
-* [Configuraciones de nube](/help/sites-administering/configurations.md)
+* [Configuraciones en la nube](/help/sites-administering/configurations.md)
 * [Segmentos de Context Hub](/help/sites-administering/segmentation.md)
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Plantillas editables](/help/sites-authoring/templates.md)
@@ -79,7 +80,7 @@ AEM Es sencillo crear una configuración en mediante el Explorador de configurac
       * Se genera automáticamente en función del título y se ajusta según [AEM Convenciones de nomenclatura de.](/help/sites-developing/naming-conventions.md)
       * Se puede modificar si es necesario.
 1. Compruebe el tipo de configuraciones que desea permitir.
-   * [Configuraciones de nube](/help/sites-administering/configurations.md)
+   * [Configuraciones en la nube](/help/sites-administering/configurations.md)
    * [Segmentos de Context Hub](/help/sites-administering/segmentation.md)
    * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
    * [Plantillas editables](/help/sites-authoring/templates.md)

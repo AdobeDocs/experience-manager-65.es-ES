@@ -7,10 +7,11 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2462'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 3%
 >
 >Para utilizar la IU clásica, consulte la [AEM Documentación de.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) como referencia.
 
-Usted crea un [modelo de flujo de trabajo](/help/sites-developing/workflows.md#model) para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos.
+Usted crea un [modelo de flujo de trabajo](/help/sites-developing/workflows.md#model) para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo. También puede definir propiedades del modelo, como, por ejemplo, si el flujo de trabajo es transitorio o utiliza varios recursos. 
 
 Cuando un usuario inicia un flujo de trabajo, se inicia una instancia; este es el modelo de tiempo de ejecución correspondiente, creado al [Sincronización](#sync-your-workflow-generate-a-runtime-model) sus cambios.
 
@@ -250,7 +251,7 @@ Para definir **Fases** para el flujo de trabajo:
    | Etapa 3 | Revisión |
    | Etapa 4 | Aprobar |
    | Etapa 5 | Aprobar |
-   | Etapa 6 | Completar |
+   | Etapa 6 | Completado |
 
 1. Confirme los cambios con **Sincronización** (barra de herramientas del editor) para generar el modelo de tiempo de ejecución.
 
@@ -266,7 +267,7 @@ Para exportar un modelo de flujo de trabajo en un paquete:
 
    1. Clic **Crear paquete**.
    1. Especifique el **Nombre del paquete** y cualquier otra información según sea necesario.
-   1. Haga clic en **Aceptar**.
+   1. Haz clic en **OK**.
 
 1. Clic **Editar** en la barra de herramientas del nuevo paquete.
 

@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 4%
 
 ---
@@ -137,7 +138,7 @@ Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm
 
 ### AEM Integración de {#aem-integration}
 
-Los servicios disponibles se enumeran en la **Cloud Services** de la pestaña **Propiedades de página** (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
+Los servicios disponibles se enumeran en la **Cloud Service** de la pestaña **Propiedades de página** (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
 
 La pestaña también proporciona lo siguiente:
 

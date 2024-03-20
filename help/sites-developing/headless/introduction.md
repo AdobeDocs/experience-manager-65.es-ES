@@ -2,10 +2,11 @@
 title: AEM Desarrollo sin encabezado para sitios de 6.5
 description: AEM Descubra cómo las potentes funciones sin encabezado de la versión 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, trabajan juntas para permitirle administrar sus experiencias de forma centralizada y atenderlas en todos los canales.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 35%
+source-wordcount: '507'
+ht-degree: 32%
 
 ---
 
@@ -41,7 +42,7 @@ AEM La versión 6.5 de es una herramienta flexible para el modelo de implementac
    * Los fragmentos de contenido son instancias de modelos de contenido.
    * AEM Los crean los autores de contenido mediante el editor de fragmentos de contenido de la aplicación de la.
    * Se almacenan en AEM Assets y se administran en la interfaz de usuario de administración de Assets.
-1. API de contenido para entrega
+1. API de contenido para envío
    * La API de GraphQL de AEM es compatible con la entrega de fragmentos de contenido.
    * La API de REST de AEM Assets es compatible con las operaciones de CRUD de fragmento de contenido.
    * La entrega de contenido directa también es posible con el [Exportación JSON del componente principal del fragmento de contenido.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)
@@ -55,4 +56,4 @@ AEM Hay varios recursos disponibles para que sus clientes empiecen a utilizar la
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | **AEM Para usuarios nuevos en el mundo de la comunicación y sin encabezado** AEM tecnologías, empiece aquí para obtener una introducción completa a las características sin encabezado de la aplicación, desde la teoría de tecnologías sin encabezado hasta publicar su primer proyecto sin encabezado. | Guía  | Desarrolladores **nuevos en las tecnologías de AEM y sin encabezado** | 1 hora |
 | [Guía de introducción de Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuarios de AEM con experiencia** que necesiten un breve resumen de las funciones principales de AEM sin encabezado, se recomienda consultar esta descripción general de inicio rápido. | Inicio rápido | Desarrolladores, administradores **con experiencia en AEM** | 20 minutos |
 | [AEM Introducción al tutorial práctico sobre el uso de sin encabezado de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es) | **AEM Si prefiere un enfoque práctico y está familiarizado con la técnica de la** Sin embargo, este tutorial se adentra directamente en la creación de un proyecto simple sin encabezado. | Tutorial | Desarrolladores | 2 horas |
-| [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es) | Esta colección de recursos se proporciona para **nuevo** y **experimentado** desarrolladores. | Colección de recursos | Desarrolladores | |
+| [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es) | Esta colección de recursos se proporciona para **nuevo** y **experimentado** desarrolladores. | Colección de recursos | Desarrolladores | |

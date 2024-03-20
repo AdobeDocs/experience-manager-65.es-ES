@@ -6,10 +6,11 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 2%
+source-wordcount: '3476'
+ht-degree: 1%
 
 ---
 
@@ -191,7 +192,7 @@ Una vez descargado, puede instalar y configurar el conector S3 de la siguiente m
 
 Para actualizar a una nueva versión del conector 1.10.x S3 (por ejemplo, de 1.10.0 a 1.10.4), siga estos pasos:
 
-1. Detenga la instancia de AEM.
+1. AEM Detenga la instancia de la.
 
 1. Vaya a `<aem-install>/crx-quickstart/install/15` AEM en la carpeta de instalación de la y realice una copia de seguridad de su contenido.
 1. Después de la copia de seguridad, elimine la versión antigua del conector S3 y sus dependencias eliminando todos los archivos jar de la `<aem-install>/crx-quickstart/install/15` carpeta, por ejemplo:
@@ -236,7 +237,7 @@ Puede utilizar el archivo de configuración con las opciones detalladas a contin
 | --- | --- | --- | --- |
 | accessKey | ID de clave de acceso para el usuario de IAM con acceso al bloque. | | Sí, cuando no se usan los roles de IAM. |
 | secretKey | Clave de acceso secreta del usuario de IAM con acceso al bloque. | | Sí, cuando no se usan los roles de IAM. |
-| cacheSize | El tamaño (en bytes) de la caché local. | 64GB | No. |
+| cacheSize | El tamaño (en bytes) de la caché local. | 64 GB | No. |
 | connectionTimeout | Establezca la cantidad de tiempo de espera (en milisegundos) antes de que se agote el tiempo de espera al establecer inicialmente una conexión. | 10 000 | No. |
 | maxCachedBinarySize | Los binarios con un tamaño inferior o igual a este valor (en bytes) se almacenan en la memoria caché. | 17408 (17 KB) | No. |
 | maxConnections | Establezca el número máximo de conexiones HTTP abiertas permitidas. | 50 | No. |
@@ -347,9 +348,9 @@ Para configurar la replicación binaria con S3, se requieren los siguientes paso
 
 1. Cree estos dos archivos dentro de la `crx-quickstart` carpeta:
 
-   * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*Configuración*
+   * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*config*
 
-   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*Configuración*
+   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*config*
 
    Una vez creados los archivos, agregue las opciones de configuración según sea necesario.
 

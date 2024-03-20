@@ -2,10 +2,11 @@
 title: No se puede restaurar el repositorio CRX dañado aplicable al servidor de clúster JEE
 description: Conozca los pasos sobre cómo restaurar un repositorio CRX que esté dañado.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -21,7 +22,7 @@ Realice la copia de seguridad del repositorio CRX antes de realizar los pasos me
 
 ## Solución {#solution}
 
-1. Vaya a  `https://[AEM Forms Server]:[port]/system/console/bundles`.
+1. Ir a  `https://[AEM Forms Server]:[port]/system/console/bundles`.
 
 1. Busque el `oak-core` paquete y compruebe si se está ejecutando.
 

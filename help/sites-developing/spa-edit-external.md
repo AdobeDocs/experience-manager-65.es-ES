@@ -2,7 +2,8 @@
 title: SPA Edición de un recurso externo en Adobe Experience Manager
 description: SPA En este documento se describen los pasos recomendados para cargar una instancia independiente en una instancia de Adobe Experience Manager, agregar secciones de contenido editables y habilitar la creación de instancias.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 0%

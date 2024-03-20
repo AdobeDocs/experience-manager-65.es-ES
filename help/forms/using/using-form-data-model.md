@@ -6,10 +6,11 @@ topic-tags: integration
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1268'
-ht-degree: 86%
+ht-degree: 90%
 
 ---
 
@@ -47,7 +48,7 @@ Puede crear [formularios adaptables](../../forms/using/creating-adaptive-form.md
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
-1. Seleccionar para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
+1. Seleccione para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
    Seleccione un modelo de datos de formulario.
 
@@ -131,10 +132,10 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
 1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
 1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el Explorador de componente al formulario adaptable.
-1. Seleccione para seleccionar el componente añadido y seleccione ![settings_icon](assets/settings_icon.png) para abrir el Explorador de propiedades del componente.
-1. En el campo Referencia de enlace, seleccione ![foldersearch_18](assets/foldersearch_18.png) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
+1. Seleccione para seleccionar el componente agregado y seleccione ![settings_icon](assets/settings_icon.png) para abrir el Explorador de propiedades del componente.
+1. En el campo Referencia de enlace, seleccione ![foldersearch_18](assets/foldersearch_18.png) y desplácese hasta seleccionar la propiedad binaria añadida en el modelo de datos de formulario. Configure otras propiedades según corresponda.
 
-   Seleccionar ![botón de verificación](assets/check-button.png) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
+   Seleccione ![check-button](assets/check-button.png) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
 1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 

@@ -9,9 +9,10 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '4722'
+source-wordcount: '4680'
 ht-degree: 2%
 
 ---
@@ -257,11 +258,11 @@ Consulte [(Opcional) Previsualizar titulares de carrusel](#optional-previewing-c
 >
 >Cuando se añaden puntos interactivos a una imagen en una [Imagen interactiva](/help/assets/interactive-images.md) Para un banner de carrusel, la información del punto interactivo se almacena en la misma ubicación de metadatos. Esa ubicación es relativa a la ubicación de la imagen, independientemente de si es una imagen interactiva o un titular de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen, junto con sus datos de punto interactivo definidos, en cualquier visor.
 >
-Sin embargo, tenga en cuenta que los titulares de carrusel admiten mapas de imagen en imágenes que también pueden contener puntos interactivos; una imagen interactiva no. Tenga en cuenta esta regla si desea crear una imagen interactiva o un titular de carrusel que utilice la misma imagen. Considere la posibilidad de crear imágenes interactivas y titulares de carrusel con copias independientes de la misma imagen en su lugar.
+>Sin embargo, tenga en cuenta que los titulares de carrusel admiten mapas de imagen en imágenes que también pueden contener puntos interactivos; una imagen interactiva no. Tenga en cuenta esta regla si desea crear una imagen interactiva o un titular de carrusel que utilice la misma imagen. Considere la posibilidad de crear imágenes interactivas y titulares de carrusel con copias independientes de la misma imagen en su lugar.
 
 >[!NOTE]
 >
-Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminan las zonas interactivas.
+>Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminan las zonas interactivas.
 
 Consulte también [Añadir mapas de imagen](/help/assets/image-maps.md).
 
@@ -299,7 +300,7 @@ Consulte también [Añadir mapas de imagen](/help/assets/image-maps.md).
       * Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta) para ir a una dirección URL.
         >[!NOTE]
         >
-        El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+        >El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 
       * Si es cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
 
@@ -316,9 +317,9 @@ Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments
 
         >[!NOTE]
         >
-        Las herramientas de uso compartido de medios sociales del titular del carrusel no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia.
+        >Las herramientas de uso compartido de medios sociales del titular del carrusel no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia.
         >
-        Para solucionar este problema, cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
+        >Para solucionar este problema, cree ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -335,7 +336,7 @@ Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments
 
 >[!NOTE]
 >
-Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
+>Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
 
 Puede realizar varias tareas de edición en los conjuntos de carrusel, como las siguientes:
 
@@ -368,7 +369,7 @@ Puede realizar varias tareas de edición en los conjuntos de carrusel, como las 
 
    >[!NOTE]
    >
-   Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminan las zonas interactivas.
+   >Si está editando imágenes interactivas con zonas interactivas y recorta la imagen, se eliminan las zonas interactivas.
    >
    >
 
@@ -391,7 +392,7 @@ Puede previsualizar los titulares del carrusel desde el Editor de carrusel (mét
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Seleccione **[!UICONTROL Vista previa]**.
+1. Seleccionar **[!UICONTROL Previsualizar]**.
 1. Seleccione las zonas interactivas o los mapas de imagen de la imagen para poder probar sus acciones asociadas.
 
 **Para previsualizar titulares de carrusel desde la lista Visualizadores:**
@@ -407,9 +408,9 @@ Publique el carrusel para poder utilizarlo. La publicación de un conjunto de ca
 
 >[!NOTE]
 >
-Si utiliza una imagen interactiva existente con puntos interactivos para el titular del carrusel, debe publicar la imagen interactiva por separado después de publicar el titular del carrusel.
+>Si utiliza una imagen interactiva existente con puntos interactivos para el titular del carrusel, debe publicar la imagen interactiva por separado después de publicar el titular del carrusel.
 >
-Además, si modifica una imagen interactiva publicada preexistente que esté utilizando en un titular de carrusel, debe publicar la imagen interactiva antes de que esos cambios se reflejen en el titular del carrusel.
+>Además, si modifica una imagen interactiva publicada preexistente que esté utilizando en un titular de carrusel, debe publicar la imagen interactiva antes de que esos cambios se reflejen en el titular del carrusel.
 
 Consulte [Publicar recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obtener información sobre cómo publicar titulares de carrusel.
 
@@ -419,7 +420,7 @@ Después de cargar imágenes de titular para crear un carrusel, añadir zonas in
 
 >[!NOTE]
 >
-Si es cliente de Experience Manager Sites, puede agregar el titular del carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+>Si es cliente de Experience Manager Sites, puede agregar el titular del carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Sin embargo, si es cliente independiente de Experience Manager Assets, puede añadir manualmente el banner de carrusel a la página de aterrizaje del sitio web como se describe en esta sección.
 
@@ -433,7 +434,7 @@ El código incrustado copiado es adaptable, por lo que debe ajustarse automátic
 
 >[!NOTE]
 >
-Este paso solo se aplica si es cliente independiente de Experience Manager Assets.
+>Este paso solo se aplica si es cliente independiente de Experience Manager Assets.
 
 El último paso de este proceso es integrar el banner de carrusel con una implementación de Quickview existente en su sitio web. Cada implementación de Quickview es única y se necesita un enfoque específico que implique la asistencia de un profesional de TI front-end.
 

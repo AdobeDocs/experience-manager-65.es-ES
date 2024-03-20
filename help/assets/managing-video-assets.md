@@ -6,7 +6,8 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 0d30d42e606f1abcf20869c40ca87a78d496e2e7
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5466'
 ht-degree: 7%
@@ -239,7 +240,7 @@ Después de habilitar el agente de replicación de publicación de YouTube, si d
 1. En la página Agentes de autor, haga clic en **[!UICONTROL Publicación de YouTube]**.
 1. En la barra de herramientas, a la derecha de Configuración, haga clic en **[!UICONTROL Editar]**.
 1. Seleccione el **[!UICONTROL Habilitado]** casilla de verificación para activar el agente de replicación.
-1. Haga clic en **[!UICONTROL Aceptar]**.
+1. Haz clic en **[!UICONTROL OK]**.
 
    Ahora configure YouTube en Experience Manager.
 
@@ -276,7 +277,7 @@ Deje abierta la página Crear configuración de YouTube; en un momento, volverá
 
    Si lo desea, puede añadir una descripción.
 
-1. Seleccionar **[!UICONTROL Añadir]**.
+1. Seleccione **[!UICONTROL Añadir]**.
 1. Se muestra la autenticación de YouTube/Google. Si aún no ha iniciado sesión en la cuenta de Google Cloud, omita este paso.
 
    * Introduzca el nombre de usuario y la contraseña de Google asociados con el ID del proyecto de Google y el texto JSON anteriores.

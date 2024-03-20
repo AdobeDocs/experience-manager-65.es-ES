@@ -6,10 +6,11 @@ role: User
 feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 4%
+source-wordcount: '433'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] le permite extraer recursos para editarlos y volver a registrarlos después de completar los cambios. Después de desproteger un recurso, solo puede editarlo, anotarlo, publicarlo, moverlo o eliminarlo. La extracción de un recurso bloquea el recurso. Otros usuarios no podrán realizar ninguna de estas operaciones en el recurso hasta que vuelva a registrarlo en [!DNL Assets]. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
@@ -71,4 +72,3 @@ Los administradores pueden proteger los recursos que han desprotegido otros usua
 >
 >* [Comprender el registro y la salida [!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Tutorial de vídeo para comprender el registro y el cierre de compra en [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
-

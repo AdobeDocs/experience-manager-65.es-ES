@@ -4,10 +4,11 @@ description: Aprenda a traducir contenido para sitios multilingües.
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
-source-git-commit: 3f5173c0c2b17e8cf560753088451f78c6529f5c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 83%
+ht-degree: 74%
 
 ---
 

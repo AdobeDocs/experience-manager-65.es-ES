@@ -1,20 +1,21 @@
 ---
-title: Configuración de Seguimiento de vínculos para Adobe Analytics
+title: Configuración del seguimiento de vínculos para Adobe Analytics
 description: Obtenga información acerca de la configuración del seguimiento de vínculos para el SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# Configuración de Seguimiento de vínculos para Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+# Configuración del seguimiento de vínculos para Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 Cuando los usuarios hacen clic en vínculos en páginas del sitio web, puede capturar información relacionada en Adobe Analytics. Por ejemplo, utilice el seguimiento de vínculos para conocer cómo interactúan los usuarios con el sitio, realizar un seguimiento de las descargas de archivos y realizar un seguimiento de los vínculos de salida.
 
@@ -35,9 +36,9 @@ De forma predeterminada, se realiza un seguimiento de las descargas de los sigui
 
 * exe
 * zip
-* wav
+* ondular
 * mp3
-* mov
+* mover
 * mpg
 * avi
 * wmv
@@ -165,7 +166,7 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
   <tr>
    <td>pagedata.title</td>
    <td>EVar personalizado 1 (eVar 1)</td>
-   <td>eVar1</td>
+   <td>EVAR 1</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
@@ -187,12 +188,12 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
   <tr>
    <td>eventdata.keyword</td>
    <td>EVar personalizado 2 (eVar 2)</td>
-   <td>eVar2</td>
+   <td>EVAR 2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
    <td>EVar personalizado 3 (eVar 3)</td>
-   <td>eVar3</td>
+   <td>EVAR 3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

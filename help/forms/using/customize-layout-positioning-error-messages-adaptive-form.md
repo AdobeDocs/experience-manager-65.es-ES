@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 52%
+ht-degree: 56%
 
 ---
 
@@ -44,7 +45,7 @@ Cree una temática con el Editor de temáticas para personalizar la presentació
 
 1. Abra el formulario en modo de edición. 
 
-1. En el modo de edición, seleccione un componente y, a continuación, seleccione ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable**, y luego seleccione ![cmppr](assets/cmppr.png).
+1. En el modo de edición, seleccione un componente y, a continuación, ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable** y ![cmppr](assets/cmppr.png).
 1. En la barra lateral, en Temática de formulario adaptable, seleccione la temática que ha creado con el Editor de temáticas.
 
 ## Crear un diseño de campo personalizado {#create-a-custom-field-layout}

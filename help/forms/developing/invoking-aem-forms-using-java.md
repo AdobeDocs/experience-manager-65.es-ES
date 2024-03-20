@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5393'
-ht-degree: 1%
+source-wordcount: '5333'
+ht-degree: 0%
 
 ---
 
@@ -650,7 +651,7 @@ En el ejemplo siguiente se muestra el contenido de un archivo jndi.properties qu
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**WebLogic**
+**Weblogic**
 
 El ejemplo siguiente muestra el contenido de un archivo jndi.properties que se utiliza para conectarse a AEM Forms que se implementa en WebLogic.
 
@@ -659,7 +660,7 @@ El ejemplo siguiente muestra el contenido de un archivo jndi.properties que se u
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**JBoss**
+**Jboss**
 
 El ejemplo siguiente muestra el contenido de un archivo jndi.properties que se utiliza para conectarse a AEM Forms que se despliega en JBoss.
 
@@ -972,8 +973,8 @@ Puede invocar el servicio de repositorio utilizando un biblioteca de cliente Jav
 
 1. Incluya los archivos JAR del cliente, como adobe-repositorio-client.jar, en la ruta de clase del proyecto Java. Para obtener información sobre la ubicación de estos archivos, consulte [Incluidos AEM Forms archivos](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) de biblioteca Java.
 1. Establezca las propiedades de conexión necesarias para invocar un servicio.
-1. Crear un `ServiceClientFactory` objeto invocando el método estático `createInstance` del objeto y pasando el `ServiceClientFactory` objeto que contiene las propiedades de `java.util.Properties` conexión.
-1. Crear un `ResourceRepositoryClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto. Utilice el objeto para invocar operaciones de servicio de `ResourceRepositoryClient` repositorio.
+1. Crear un `ServiceClientFactory` invocando el objeto de `ServiceClientFactory` objeto estático `createInstance` y pasando el `java.util.Properties` que contiene las propiedades de conexión.
+1. Crear un `ResourceRepositoryClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto. Utilice el objeto para invocar operaciones de `ResourceRepositoryClient` servicio de repositorio.
 1. Crear un `RepositoryInfomodelFactoryBean` objeto utilizando su constructor y pase `null`. Este objeto permite crear un `Resource` objeto que represente el contenido que se añade al repositorio.
 1. Crear un `Resource` objeto invocando el `RepositoryInfomodelFactoryBean` método del `newImage` objeto y pasando los siguientes valores:
 

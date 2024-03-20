@@ -1,7 +1,9 @@
 ---
 title: AEM Notas de la versión de Content and Commerce de 2023
 description: Notas de la versión de Adobe Experience Manager Content and Commerce de 2023.
-source-git-commit: 2c940c9245cebfa091ea9117a027a1d539f27283
+exl-id: 00349400-6860-4e3c-ba56-fa12afc5db1d
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 15%
@@ -18,7 +20,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 |:-------|:-----------------------------------------------------------------------------------------------:|
 | CIF complemento de | AEM Mínimo: 6.5.8, Adobe Commerce 2.3.5 Esquemas de GraphQL |
 | CIF Componentes principales | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
-| Tipo de archivo del proyecto AEM. | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+| Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## Fecha de versión: diciembre de 2023
 

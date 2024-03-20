@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 4%
@@ -221,7 +222,7 @@ Los siguientes ajustes están disponibles para el servicio Encryption.
 
 >[!NOTE]
 >
-Utilice la autenticación simple (nombre de usuario y contraseña) solo cuando la conexión esté protegida mediante SSL (mediante LDAPS).
+>Utilice la autenticación simple (nombre de usuario y contraseña) solo cuando la conexión esté protegida mediante SSL (mediante LDAPS).
 
 **Modo de compatibilidad:**
 
@@ -429,7 +430,7 @@ Los siguientes ajustes están disponibles para el servicio de configuración de 
 
 >[!NOTE]
 >
-Si se ha habilitado la compatibilidad sin conexión y, a continuación, la deshabilita, los perfiles de aprovisionamiento de los usuarios se actualizan inmediatamente o en cuanto están en línea. Si un usuario ha estado trabajando sin conexión, todas las tareas pendientes se devuelven a su lista Tareas y todos los elementos de su Cola, incluidos los formularios pendientes, las tareas y los formularios que contienen errores de validación, se eliminan de la Cola.
+>Si se ha habilitado la compatibilidad sin conexión y, a continuación, la deshabilita, los perfiles de aprovisionamiento de los usuarios se actualizan inmediatamente o en cuanto están en línea. Si un usuario ha estado trabajando sin conexión, todas las tareas pendientes se devuelven a su lista Tareas y todos los elementos de su Cola, incluidos los formularios pendientes, las tareas y los formularios que contienen errores de validación, se eliminan de la Cola.
 
 **Android:** Permite que los dispositivos Android se conecten al servidor.
 
@@ -731,7 +732,7 @@ Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carp
 
 >[!NOTE]
 >
-Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta inspeccionada. Por ejemplo, si la carga estimada para la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
+>Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta inspeccionada. Por ejemplo, si la carga estimada para la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
 
 **Carpeta de fase:** El nombre predeterminado para la carpeta de fase dentro de la carpeta vigilada.
 
@@ -813,7 +814,7 @@ Se instalan los perfiles de seguridad predeterminados, que se pueden configurar 
 
    >[!NOTE]
    >
-   Los servicios de procesamiento y envío que se utilizan con las variables xfaForm, Document Form y Form se ejecutan siempre con la cuenta de usuario del sistema.
+   >Los servicios de procesamiento y envío que se utilizan con las variables xfaForm, Document Form y Form se ejecutan siempre con la cuenta de usuario del sistema.
 
 1. Haga clic en Agregar entidad principal para especificar los permisos que tienen los usuarios y grupos para este servicio.
 1. La pantalla Seleccionar principal muestra los usuarios y grupos configurados en Administración de usuarios. Si el usuario o grupo que desea no aparece, utilice la función de búsqueda para encontrarlo. Haga clic en el nombre de un usuario o grupo.

@@ -7,10 +7,11 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 80%
+ht-degree: 83%
 
 ---
 
@@ -65,7 +66,7 @@ Incluye los componentes que puede utilizar para crear los canales impreso y web 
 |---|---|---|---|
 | Gráfico | ✓ | ✓ | Agrega un gráfico que puede usar en una comunicación interactiva para la representación visual de datos bidimensionales recuperados de un elemento de colección del modelo de datos de formulario. |
 | Fragmento de documento | ✓ | ✓ | Permite agregar un componente, un texto, una lista o una condición reutilizables a una comunicación interactiva. El componente reutilizable que agregue a una comunicación interactiva puede estar basado en el modelo de datos de formulario o carecer de él. |
-| Imagen | ✓ | ✓ | Permite insertar una imagen. |
+| Imagen | ✓ | ✓ | Insertar una imagen. |
 | Panel | - | ✓ | El componente Panel es un marcador de posición para agrupar otros componentes, y controla cómo se coloca un grupo de componentes en una comunicación interactiva. Un componente de panel también le permite hacer que un grupo de componentes se repita para el usuario final, por ejemplo, en varias entradas obligatorias para rellenar credenciales educativas. También se recomienda utilizar un panel para cada una de las pestañas de una comunicación interactiva con varias pestañas. |
 | Tabla | &#42; | ✓ | Agrega una tabla que le permite organizar los datos en filas y columnas. |
 | Área de destino | &#42;&#42; | ✓ | Inserta un área de destino en un canal web para organizar los componentes específicos de ese canal. |
@@ -89,7 +90,7 @@ Los puntos clave para trabajar con los componentes de las comunicaciones interac
    1. Seleccione para seleccionar un componente que tenga la propiedad Título y cuya propiedad Ocultar título esté deshabilitada.
    1. Seleccionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el título se pueda editar.
 
-   1. Modifique el título y seleccione la tecla Retroceso o seleccione cualquier lugar fuera del componente para guardar los cambios. Seleccione la tecla Esc para descartar los cambios.
+   1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios.  Seleccione la tecla Esc para descartar los cambios.
 
 ## Barra de herramientas de los componentes {#component-toolbar}
 

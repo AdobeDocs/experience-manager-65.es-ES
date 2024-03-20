@@ -7,10 +7,11 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3288'
-ht-degree: 10%
+source-wordcount: '3284'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Funcionalidad de Administrador de varios sitios (MSM) en [!DNL Adobe Experience Manager] permite a los usuarios reutilizar contenido que se crea una vez y se reutiliza en varias ubicaciones web. Lo mismo está disponible para recursos digitales que MSM para [!DNL Assets] funcionalidad. Uso de MSM para [!DNL Assets], puede:
@@ -66,7 +67,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus Live Copies p
 
 ## Crear una Live Copy de un recurso {#createlc}
 
-Para crear una Live Copy a partir de uno o varios recursos o carpetas de origen, siga uno de estos procedimientos:
+Para crear Live Copy a partir de uno o varios recursos o carpetas de origen, siga uno de estos procedimientos:
 
 * Método 1: seleccionar los recursos de origen y hacer clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** en la barra de herramientas de la parte superior.
 * Método 2: en [!DNL Experience Manager] interfaz de usuario, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** desde la esquina superior derecha de la interfaz.
@@ -161,7 +162,7 @@ Para un recurso o carpeta de origen, puede ver la siguiente información y reali
 * Suspender la relación o cambiar la configuración de despliegue de una Live Copy específica.
 * Acceda a la consola de información general de live copy.
 
-Seleccione el recurso o la carpeta de origen, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
+Seleccione el recurso o la carpeta de origen, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar el método abreviado de teclado `Alt + 4`.
 
 ![Acciones e información disponible en el carril Referencias para la fuente seleccionada](assets/referencerail_source.png)
 
@@ -181,7 +182,7 @@ Para un recurso o una carpeta de Live Copy, puede ver la siguiente información 
 * Abra o muestre una Live Copy específica en [!DNL Experience Manager] interfaz de usuario.
 * Despliegue las actualizaciones.
 
-Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
+Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar el método abreviado de teclado `Alt + 4`.
 
 ![Acciones disponibles en el carril Referencias para la Live Copy seleccionada](assets/referencerail_livecopy.png)
 
@@ -218,7 +219,7 @@ También puede iniciar una acción de despliegue desde el carril Referencias des
 
 Una acción de sincronización extrae las modificaciones de un origen solo para la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas después de cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
 
-| Dónde en [!DNL Experience Manager] interfaz | Cuándo y por qué utilizar | Utilización |
+| Dónde en [!DNL Experience Manager] interfaz | Cuándo y por qué utilizar | Cómo usar |
 |---|---|---|
 | [!UICONTROL Referencias] carril | Sincronice rápidamente cuando ya tenga seleccionado el origen. | Consulte [Acciones rápidas del carril Referencias para el origen](#refrailsource) |
 | Barra de herramientas en [!UICONTROL Propiedades] página | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Consulte [Sincronización de una Live Copy](#sync-lc) |
@@ -282,7 +283,7 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
 
 1. Seleccione una carpeta de origen. Clic **[!UICONTROL Propiedades]** en la barra de herramientas. También puede utilizar el método abreviado de teclado `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**.
-1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desconectar]**. Puede iniciar rápidamente estas acciones en cualquier recurso de cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
+1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]**, y **[!UICONTROL Desasociar]**. Puede iniciar rápidamente estas acciones en cualquier recurso de cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
 
    ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
 

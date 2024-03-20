@@ -6,7 +6,8 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 71%
@@ -46,10 +47,10 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 
 >[!NOTE]
 >
->Selección múltiple en un dispositivo de escritorio:
+Selección múltiple en un dispositivo de escritorio:
 >
->* Windows: Ctrl + clic en los componentes necesarios.
->* macOS: Comando + clic en los componentes necesarios.
+* Windows: Ctrl + clic en los componentes necesarios.
+* macOS: Comando + clic en los componentes necesarios.
 >
 
 ## Editor de temas  {#themeeditor}
@@ -64,7 +65,7 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 
 >[!NOTE]
 >
->Los métodos abreviados marcados con &quot;*&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
+Los métodos abreviados marcados con &quot;*&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
 
 ## Explorador de contenido  {#contentbrowser}
 

@@ -7,9 +7,10 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1601'
 ht-degree: 1%
 
 ---
@@ -45,17 +46,17 @@ Una plantilla es un nodo de tipo cq:Template y tiene las siguientes propiedades 
   </tr>
   <tr>
    <td> allowedChildren </td>
-   <td> Cadena[]</td>
+   <td> String[]</td>
    <td>Ruta de una plantilla que puede ser una plantilla secundaria de esta plantilla.<br /> </td>
   </tr>
   <tr>
    <td> allowedParents</td>
-   <td> Cadena[]</td>
+   <td> String[]</td>
    <td>Ruta de una plantilla que puede ser una plantilla principal de esta plantilla.<br /> </td>
   </tr>
   <tr>
    <td> allowedPaths</td>
-   <td> Cadena[]</td>
+   <td> String[]</td>
    <td>Ruta de una página que puede basarse en esta plantilla.<br /> </td>
   </tr>
   <tr>
@@ -138,11 +139,11 @@ Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencio
 
 ### Plantillas predeterminadas {#default-templates}
 
-AEM La variable viene con varias plantillas predeterminadas disponibles de forma predeterminada. A veces, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla esté disponible para el sitio web.
+AEM El paquete incluye varias plantillas predeterminadas disponibles de forma predeterminada. A veces, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla esté disponible para el sitio web.
 
 AEM Por ejemplo, la viene con varias plantillas, incluidas una página de contenido y una página de inicio.
 
-| **Título** | **Componente** | **Ubicación** | **Función** |
+| **Título** | **Componente** | **Ubicación** | **Finalidad** |
 |---|---|---|---|
 | Página principal | homepage | geometrixx | Plantilla de la página de inicio de la Geometrixx. |
 | Página de contenido | contentpage | geometrixx | Plantilla de la página de contenido Geometrixx. |

@@ -2,7 +2,8 @@
 title: ¿Cómo se generan y trabajan con hashes en PDF forms dinámicos?
 description: Generación y trabajo con hash en PDF forms dinámicos.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%

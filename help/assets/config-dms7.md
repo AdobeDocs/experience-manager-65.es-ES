@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6508'
 ht-degree: 3%
@@ -121,7 +122,7 @@ Consulte [Instalación del paquete de funciones 18912 para la migración masiva 
    * **[!UICONTROL Compañía]** : nombre de la cuenta de Dynamic Media.
      >[!IMPORTANT]
      >
-     Solo se admite una configuración de Dynamic Media en Cloud Service en una instancia de Experience Manager; no agregue más de una configuración. Hay varias configuraciones de Dynamic Media en una instancia de Experience Manager _no_ compatible o recomendado por el Adobe.
+     >Solo se admite una configuración de Dynamic Media en Cloud Service en una instancia de Experience Manager; no agregue más de una configuración. Hay varias configuraciones de Dynamic Media en una instancia de Experience Manager _no_ compatible o recomendado por el Adobe.
 
      <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -152,9 +153,9 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
 
    >[!NOTE]
    >
-   No se admite el control de versiones en el modo Dynamic Media - Scene7. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]** y, a continuación, solo hasta la primera vez que se activa el recurso.
+   >No se admite el control de versiones en el modo Dynamic Media - Scene7. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]** y, a continuación, solo hasta la primera vez que se activa el recurso.
    >
-   Una vez activado un recurso, las actualizaciones se publican inmediatamente en la entrega de S7.
+   >Una vez activado un recurso, las actualizaciones se publican inmediatamente en la entrega de S7.
 
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Para previsualizar de forma segura el contenido de Dynamic Media antes de que se publique, Experience Manager Author utiliza la validación basada en tokens y, por lo tanto, Experience Manager Author previsualiza el contenido de Dynamic Media de forma predeterminada. Sin embargo, puede &quot;lista de permitidos&quot; más direcciones IP para proporcionar a los usuarios acceso a la vista previa del contenido de forma segura. Para configurar esta acción en Experience Manager, consulte [Configuración del programa de instalación de publicación de Dynamic Media para el servidor de imágenes: pestaña Seguridad](/help/assets/dm-publish-settings.md#security-tab).
@@ -255,7 +256,7 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 
   >[!NOTE]
   >
-  Configure el almacenamiento del blob de Azure con una clave de acceso y una clave secreta, ya que esta función de carga de gran tamaño no es compatible con AzureSas en la configuración del almacenamiento del blob.
+  >Configure el almacenamiento del blob de Azure con una clave de acceso y una clave secreta, ya que esta función de carga de gran tamaño no es compatible con AzureSas en la configuración del almacenamiento del blob.
 
 * Oak&#39;s [Descarga de acceso binario directo](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) está habilitado (Oak) *Carga de acceso binario directo* no es obligatorio).
 
@@ -361,7 +362,7 @@ Consulte [Configurar ajustes preestablecidos de imagen](/help/assets/managing-im
 
 >[!NOTE]
 >
-De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visor al seleccionar **[!UICONTROL Espectadores]** en la Vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumente el número de ajustes preestablecidos de imagen que se muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumente el número de ajustes preestablecidos de visor que se muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visor al seleccionar **[!UICONTROL Espectadores]** en la Vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumente el número de ajustes preestablecidos de imagen que se muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumente el número de ajustes preestablecidos de visor que se muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Editar tipos MIME para formatos compatibles {#editing-mime-types-for-supported-formats}
 
@@ -480,7 +481,7 @@ Hay dos elementos disponibles para la definición, Coincidencia y Nombre base. E
 
    >[!NOTE]
    >
-   Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares sean correctas. Verá los resultados de la expresión regular que está creando para cada elemento después de la línea Result. La expresión regular completa se puede ver en la parte inferior de la página.
+   >Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares sean correctas. Verá los resultados de la expresión regular que está creando para cada elemento después de la línea Result. La expresión regular completa se puede ver en la parte inferior de la página.
 
 1. Expanda cada elemento según sea necesario e introduzca las convenciones de nomenclatura que desee utilizar.
 1. Si es necesario, realice una de las acciones siguientes:
@@ -602,7 +603,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
    >[!NOTE]
    >
-   Si la combinación de expresiones regulares de fila y columna no puede determinar la posición del recurso dentro de la matriz de conjuntos de giros multidimensionales, el recurso no se agregará al conjunto. También se registra un error.
+   >Si la combinación de expresiones regulares de fila y columna no puede determinar la posición del recurso dentro de la matriz de conjuntos de giros multidimensionales, el recurso no se agregará al conjunto. También se registra un error.
 
 1. Para la convención de creación y nomenclatura de conjuntos, especifique el sufijo o prefijo del nombre base definido en la convención de nomenclatura de activos.
 
@@ -658,7 +659,7 @@ La cola de flujo de trabajo de Granite Transit se utiliza para **[!UICONTROL Rec
 
    >[!NOTE]
    >
-   Es necesario realizar una búsqueda de texto en lugar de una dirección URL directa porque el PID de OSGi se genera dinámicamente.
+   >Es necesario realizar una búsqueda de texto en lugar de una dirección URL directa porque el PID de OSGi se genera dinámicamente.
 
 1. En el **[!UICONTROL Máximo de trabajos paralelos]** , cambie el número al valor deseado.
 
@@ -682,7 +683,7 @@ La cola de flujo de trabajo de Granite se utiliza para flujos de trabajo no tran
 
    >[!NOTE]
    >
-   Es necesario realizar una búsqueda de texto en lugar de una dirección URL directa porque el PID de OSGi se genera dinámicamente.
+   >Es necesario realizar una búsqueda de texto en lugar de una dirección URL directa porque el PID de OSGi se genera dinámicamente.
 
 1. En el **[!UICONTROL Máximo de trabajos paralelos]** , cambie el número al valor deseado.
 
@@ -698,7 +699,7 @@ La configuración de Conexión de carga de Scene7 sincroniza los recursos del Ex
 
 **Para actualizar la conexión de carga de Dynamic Media Classic:**
 
-1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navegue hasta `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el **[!UICONTROL Número de conexiones]** y/o el **[!UICONTROL Tiempo de espera del trabajo activo]** , cambie el número como desee.
 
    El **[!UICONTROL Número de conexiones]** Esta opción controla el número máximo de conexiones HTTP permitidas para la carga de Experience Manager a Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.
@@ -730,7 +731,7 @@ Si utiliza Dynamic Media para la creación de imágenes, vídeo o ambos, puede u
 
 >[!NOTE]
 >
-Los filtros se aplican a los tipos MIME y no pueden ser específicos de la ruta.
+>Los filtros se aplican a los tipos MIME y no pueden ser específicos de la ruta.
 
 #### Personalizar filtros de recursos para la replicación {#customizing-asset-filters-for-replication}
 

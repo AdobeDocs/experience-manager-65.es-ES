@@ -4,7 +4,8 @@ description: Aprenda a utilizar los servicios de Microsoft&reg; Dynamics 365 a t
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 72%
@@ -47,7 +48,7 @@ Antes de comenzar a configurar Dynamics 365, asegúrese de que dispone de lo si
 
    ![selección_ruta_del_recurso](assets/selectassetpath.png)
 
-1. Seleccionar **Listo**.
+1. Seleccione **Listo**.
 1. Publique la página editada.
 
    >[!NOTE]

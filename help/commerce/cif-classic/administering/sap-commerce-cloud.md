@@ -5,9 +5,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1574'
 ht-degree: 1%
 
 ---
@@ -38,7 +39,7 @@ Después de la instalación puede configurar la instancia:
 1. **Abrir editor** para el **Ejemplo de configuración de Solr para el catálogo de ropa**.
 
 1. En **Versiones de catálogo** use **Añadir versión del catálogo** para agregar `outdoors-Staged` y `outdoors-Online` a la lista.
-1. **Guarde la configuración.**
+1. **Guardar** la configuración.
 1. Abrir **Tipos de artículos de SOLR** para agregar **Clasificaciones de SOLR** hasta `ClothesVariantProduct`:
 
    * relevancia (&quot;Relevancia&quot;, puntuación)
@@ -83,7 +84,7 @@ Después de la instalación puede configurar la instancia:
 
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
-1. **Guarde los cambios.**
+1. **Guardar** los cambios.
 1. Otra vez desde **Tipos de artículos de SOLR**, ajuste el `price` faceta de acuerdo con las siguientes capturas de pantalla. Al igual que con `category`, haga doble clic en `price` para abrir **Propiedad indizada** pestaña:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
@@ -92,7 +93,7 @@ Después de la instalación puede configurar la instancia:
 
    ![chlimage_1-41](/help/sites-administering/assets/chlimage_1-41a.png)
 
-1. **Guarde los cambios.**
+1. **Guardar** los cambios.
 1. Abrir **Sistema**, **Búsqueda de facetas**, entonces **Asistente de operaciones del indizador**. Iniciar un cronjob:
 
    * **Operación de indizador**: `full`
@@ -374,7 +375,7 @@ Para eliminar uno o más productos del catálogo:
 
    * Abra la página. [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit)
    * Selección del catálogo `Outdoors Staged`
-   * Buscar `Cajamara`
+   * Buscar por `Cajamara`
    * Seleccione este producto y cambie el estado de aprobación a `unapproved`
 
 1. Realice otra actualización incremental (consulte [Importación de catálogo](#catalog-import)). El registro enumera el producto eliminado.

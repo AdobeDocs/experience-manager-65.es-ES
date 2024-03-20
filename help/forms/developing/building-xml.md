@@ -2,7 +2,8 @@
 title: ¿Cómo se utiliza el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML?
 description: Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 3%

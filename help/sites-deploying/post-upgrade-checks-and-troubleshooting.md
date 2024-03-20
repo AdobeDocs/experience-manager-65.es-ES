@@ -8,9 +8,10 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1793'
 ht-degree: 0%
 
 ---

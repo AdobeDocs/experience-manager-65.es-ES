@@ -4,9 +4,10 @@ description: La configuración de Administración de usuarios en la consola de a
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---

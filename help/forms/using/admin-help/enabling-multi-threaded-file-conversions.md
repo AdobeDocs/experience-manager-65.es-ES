@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 3%
+source-wordcount: '884'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +29,7 @@ De forma predeterminada, PDF Generator solo puede convertir un documento de Open
 
 >[!NOTE]
 >
-Las conversiones de archivos con varios subprocesos no son compatibles con Microsoft® Excel, Microsoft® Visio, Microsoft® Project o Microsoft® Publisher.
+>Las conversiones de archivos con varios subprocesos no son compatibles con Microsoft® Excel, Microsoft® Visio, Microsoft® Project o Microsoft® Publisher.
 
 Cada instancia de OpenOffice o PDFMaker se inicia con una cuenta de usuario independiente. Cada cuenta de usuario que agregue debe ser un usuario válido con privilegios administrativos en el equipo Forms Server. En un entorno agrupado, el mismo conjunto de usuarios debe ser válido para todos los nodos del clúster.
 
@@ -67,7 +68,7 @@ Si está ejecutando OpenOffice, Microsoft® Word o Microsoft® PowerPoint en Win
 
    >[!NOTE]
    >
-   Asegúrese de haber asignado los roles de usuario del sistema y usuario de PDFG &quot;user1&quot; y &quot;user2&quot; Para asignar una función de PDF Generator a un usuario, consulte [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Asegúrese de haber asignado los roles de usuario del sistema y usuario de PDFG &quot;user1&quot; y &quot;user2&quot; Para asignar una función de PDF Generator a un usuario, consulte [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. También en el archivo /etc/sudoers, localice y comente esta línea agregando un signo de número (#) al principio de la línea:
 
@@ -84,11 +85,11 @@ Si está ejecutando OpenOffice, Microsoft® Word o Microsoft® PowerPoint en Win
 
    Para obtener más información, consulte la documentación del comando xhost.
 
-1. Reiniciar el servidor.
+1. Reinicie el servidor.
 
 >[!NOTE]
 >
-OpenOffice debe estar instalado en una ubicación de directorio a la que todos los usuarios de PDFG puedan acceder. Puede comprobarlo iniciando sesión como usuario de PDFG y comprobando si puede iniciar OpenOffice sin problemas.
+>OpenOffice debe estar instalado en una ubicación de directorio a la que todos los usuarios de PDFG puedan acceder. Puede comprobarlo iniciando sesión como usuario de PDFG y comprobando si puede iniciar OpenOffice sin problemas.
 
 ### Agregar una cuenta de usuario {#add-a-user-account}
 
@@ -97,16 +98,16 @@ OpenOffice debe estar instalado en una ubicación de directorio a la que todos l
 
    >[!NOTE]
    >
-   Si está configurando usuarios para OpenOffice, el número de instancias de OpenOffice no puede ser mayor que el número de cuentas de usuario especificadas en este paso.
+   >Si está configurando usuarios para OpenOffice, el número de instancias de OpenOffice no puede ser mayor que el número de cuentas de usuario especificadas en este paso.
 
-1. Reinicie el servidor de  Forms.
+1. Reinicie Forms Server.
 
 ### Quitar un usuario de la lista utilizada para las conversiones de archivos multiproceso {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
 
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Cuentas de usuario.
 1. Haga clic en la casilla de verificación situada junto al usuario que desee quitar y, a continuación, haga clic en Eliminar.
 1. En la página de confirmación, haga clic en Eliminar.
-1. Reinicie el servidor de  Forms.
+1. Reinicie Forms Server.
 
 ### Cambiar la contraseña de una cuenta {#change-the-password-for-an-account}
 

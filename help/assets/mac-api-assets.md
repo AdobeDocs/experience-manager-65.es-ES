@@ -1,19 +1,20 @@
 ---
-title: "[!DNL Assets] API del HTTP."
+title: "[!DNL Assets] API HTTP."
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1743'
-ht-degree: 2%
+source-wordcount: '1775'
+ht-degree: 1%
 
 ---
 
-# [!DNL Assets] API del HTTP {#assets-http-api}
+# [!DNL Assets] API HTTP {#assets-http-api}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -132,7 +133,7 @@ Una llamada de API falla con un `500` código de respuesta si el nodo principal 
 
 **Parámetros**: `name` es el nombre de la carpeta.
 
-**Solicitar**
+**Solicitud**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"jcr:title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"jcr:title=My Folder"`
@@ -150,7 +151,7 @@ Coloque el archivo proporcionado en la ruta proporcionada para crear un recurso 
 
 **Parámetros**: los parámetros son `name` para el nombre del recurso y `file` para la referencia de archivo.
 
-**Solicitar**
+**Solicitud**
 
 * `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
 * `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
@@ -215,7 +216,7 @@ Crear una representación de recursos para un recurso. Si no se proporciona el n
 
 **Parámetros**: los parámetros son `name` para el nombre de la representación y `file` como referencia de archivo.
 
-**Solicitar**
+**Solicitud**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
@@ -303,7 +304,7 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 
 Elimina un recurso (-tree) en la ruta proporcionada.
 
-**Solicitar**
+**Solicitud**
 
 * `DELETE /api/assets/myFolder`
 * `DELETE /api/assets/myFolder/myAsset.png`

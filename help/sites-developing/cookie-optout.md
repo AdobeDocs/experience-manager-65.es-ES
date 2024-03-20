@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 7%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +27,7 @@ Utilice esta función para asegurarse de que las páginas cumplen con el consent
 
 Configure el Servicio de exclusión de Granite de Adobe para especificar cómo se utilizan las cookies en sus páginas web. En la tabla siguiente se describen las propiedades que se pueden configurar.
 
-Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). En la tabla siguiente, se describen las propiedades que necesita para cualquiera de los métodos. Para una configuración OSGi, el PID de servicio es `com.adobe.granite.optout`.
+Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). En la tabla siguiente se describen las propiedades que necesita para cualquiera de los métodos. Para una configuración OSGi, el PID de servicio es `com.adobe.granite.optout`.
 
 | Nombre de propiedad (consola web) | Nombre de propiedad OSGi | Descripción |
 |---|---|---|

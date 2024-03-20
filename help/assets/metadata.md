@@ -7,10 +7,11 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 11%
+source-wordcount: '2332'
+ht-degree: 10%
 
 ---
 
@@ -116,8 +117,8 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    | [!UICONTROL Tamaño del lote] | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
    | [!UICONTROL Separador de campos] | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
    | [!UICONTROL Delimitador de varios valores] | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | [!UICONTROL Lanzar flujos de trabajo] | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada están vigentes para [!UICONTROL Reescritura de metadatos DAM] XMP flujo de trabajo (que escribe metadatos en los datos de la binaria). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
-   | [!UICONTROL Nombre de columna de ruta de activos] | Define el nombre de columna del archivo CSV con recursos. |
+   | [!UICONTROL Iniciar flujos de trabajo] | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada están vigentes para [!UICONTROL Reescritura de metadatos DAM] XMP flujo de trabajo (que escribe metadatos en los datos de la binaria). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
+   | [!UICONTROL Nombre de columna de ruta de recursos] | Define el nombre de columna del archivo CSV con recursos. |
 
 1. Clic **[!UICONTROL Importar]** en la barra de herramientas. Una vez importados los metadatos, se muestra una notificación en [!UICONTROL Notificación] bandeja de entrada.
 

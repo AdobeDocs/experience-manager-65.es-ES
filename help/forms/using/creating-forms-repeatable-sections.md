@@ -6,10 +6,11 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms, Foundation Components
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +26,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
 ## Utilizar Instance Manager mediante scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. En el modo de edición, seleccione un panel y, a continuación, seleccione ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, habilite **Hacer que el panel sea repetible**. Especifique los valores para los campos **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]**.
+1. En el modo de edición, seleccione un panel y seleccione ![cmppr](assets/cmppr.png). En la barra lateral, en Propiedades, habilite **Hacer que el panel sea repetible**. Especifique los valores para los campos **[!UICONTROL Máximo]** y **[!UICONTROL Mínimo]**.
 
    El campo Máximo especifica el número máximo de veces que puede aparecer un panel en la página. Puede especificar -1 en el campo Máximo para permitir que el panel aparezca durante un número infinito de veces.
 
@@ -37,7 +38,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
 1. El elemento principal del panel, que se va a repetir, debe contener botones de añadir y eliminar para administrar las instancias de los paneles repetibles. Realice los siguientes pasos para insertar botones en el elemento principal y habilitar scripts en los botones:
 
-   1. Desde la barra lateral, arrastre y suelte un componente de botón en el elemento principal del panel. Seleccione el componente y seleccione ![edit-rules](assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
+   1. Desde la barra lateral, arrastre y suelte un componente de botón en el elemento principal del panel. Seleccione el componente y seleccione ![edit-rules](assets/edit-rules.png). Las reglas del botón se abren en el editor de reglas.
    1. En la ventana Editor de reglas, haga clic en **Crear**.
 
       Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
@@ -97,8 +98,8 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
 Un panel tiene varias opciones de diseño. La opción Diseño para el diseño de acordeón es compatible de forma predeterminada con los paneles repetibles. Realice los siguientes pasos en el panel repetible con la opción Diseño para el diseño de acordeón:
 
-1. En el panel principal que se va a repetir, seleccione ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En la lista desplegable **Diseño**, seleccione **Acordeón**.
-1. En un panel que se va a repetir, seleccione ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Habilite la pestaña **Hacer que el panel sea repetible** y especifique los valores para los campos **Máximo** y **Mínimo**.
+1. En el panel principal que se va a repetir, seleccione ![cmppr](assets/cmppr.png). Puede ver las propiedades en la barra lateral. En la lista desplegable **Diseño**, seleccione **Acordeón**.
+1. En un panel que se va a repetir, seleccione ![cmppr](assets/cmppr.png). Puede ver las propiedades del panel en la barra lateral. Habilite la pestaña **Hacer que el panel sea repetible** y especifique los valores para los campos **Máximo** y **Mínimo**.
 
    Ahora puede utilizar los botones más (+) y eliminar (![eliminar panel](assets/delete-panel.png)) para añadir y quitar los paneles.
 

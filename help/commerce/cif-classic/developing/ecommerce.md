@@ -2,9 +2,10 @@
 title: Capa de integración de comercio electrónico con una API
 description: AEM AEM El marco de trabajo de integración le permite extraer datos de productos en las funciones de comercio y crear componentes de para las mismas.
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '144'
 ht-degree: 3%
 
 ---

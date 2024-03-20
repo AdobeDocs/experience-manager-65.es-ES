@@ -2,10 +2,11 @@
 title: '[!DNL Experience Manager Assets] integración con [!DNL Adobe Workfront]'
 description: Introducción a la integración entre [!DNL Assets] y [!DNL Workfront]
 role: Admin,Leader,Architect
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+solution: Experience Manager, Workfront
+source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 9%
@@ -79,6 +80,6 @@ A continuación se describen las funcionalidades disponibles a través de varios
 | AEM Actualizaciones de metadatos con nuevas versiones de | AEM Se puede realizar una configuración en la para determinar si un recurso con una nueva versión en Workfront también se inserta junto con los cambios realizados en sus metadatos. | No | ✓ | No |
 | AEM Actualizar automáticamente los metadatos de los cambios de los datos de la a Forms personalizada en Workfront | AEM le permite suscribirse a las actualizaciones de los formularios de documentos en Workfront. Como resultado, cualquier actualización de los metadatos del formulario personalizado del documento de Workfront AEM edita los valores de los campos de metadatos de la asignados. | No | ✓ | No |
 | **Flujos de trabajo (predeterminados)** |
-| Crear nueva versión de prueba en recursos vinculados | Al vincular un recurso en Workfront, se puede generar una prueba automáticamente. | No | Personalizado | No |
+| Crear nueva versión de prueba en recursos vinculados | Al vincular un recurso en Workfront, se puede generar una prueba automáticamente. | No | Personalizada | No |
 | Definir estado en objetos de Workfront | Definición de estados de objetos de Workfront AEM basados en condiciones configurables mediante flujos de trabajo de | No | ✓ | Próximamente |
 | AEM Publicar recursos en el entorno de publicación de la o Brand Portal | Dé a los usuarios de Workfront AEM la opción de publicar automáticamente los recursos vinculados en un entorno de publicación de o Brand Portal. | No | ✓ | Próximamente |

@@ -9,9 +9,10 @@ docset: aem65
 role: User, Admin
 feature: Scene7 Mode,Hybrid Mode
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -43,7 +44,7 @@ Considere simplemente empezar de cero con una nueva instancia aprovisionada de D
 |---|---|---|
 | 1 | Clonar instancia de autor híbrido de Dynamic Media. | Mantenga la instancia existente de Dynamic Media-Hybrid Author como alternativa hasta que los pasos restantes de este proceso de migración se completen correctamente. |
 | 2 | Inicie la instancia de autor clonada en el modo Dynamic Media-Scene7. |  |
-| 3 | En Cloud Services de Adobe Experience Manager, configure Dynamic Media con las credenciales de Dynamic Media-Scene7. | El Adobe debe aprobar el aprovisionamiento Dynamic Media-Scene7. Como tal, tiene entornos simultáneos Dynamic MediaM-Hybrid y Dynamic Media-Scene7 compatibles con el Adobe, pero solo por un tiempo limitado. |
+| 3 | En Cloud Service de Adobe Experience Manager, configure Dynamic Media con las credenciales de Dynamic Media-Scene7. | El Adobe debe aprobar el aprovisionamiento Dynamic Media-Scene7. Como tal, tiene entornos simultáneos Dynamic MediaM-Hybrid y Dynamic Media-Scene7 compatibles con el Adobe, pero solo por un tiempo limitado. |
 | 4 | Cree un paquete de migración para poder ingerir recursos según sea necesario.<br>Elimine los PTIFF locales creados durante la ingesta inicial en Dynamic Media-Hybrid. | Si todos los recursos están disponibles actualmente en la instancia híbrida de Dynamic Media, un clon de que ya los incluye a todos. Por lo tanto, no se necesita ningún paquete. |
 | 5 | Ejecute el flujo de trabajo de actualización de recursos para poder sincronizar recursos con el Cloud Service de Dynamic Media. | El Adobe recomienda realizar el flujo de trabajo de actualización por lotes para permitir la compactación. |
 | 6 | Migre ajustes preestablecidos de visualizador, imagen y vídeo. |  |

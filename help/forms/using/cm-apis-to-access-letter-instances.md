@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 61%
+source-wordcount: '591'
+ht-degree: 62%
 
 ---
 
@@ -33,7 +34,8 @@ Administración de correspondencia expone las API para recuperar instancias de c
 
 >[!NOTE]
 >
->LetterInstanceService es un servicio OSGI y su instancia se puede recuperar mediante @Reference en Java™ Class o sling.getService(LetterInstanceService. Class ) en JSP.
+>LetterInstanceService es un servicio OSGI y su instancia se puede recuperar mediante @Reference en Java™
+>Class o sling.getService(LetterInstanceService. Class ) en JSP.
 
 ### Usar getAllLetterInstances {#using-nbsp-getallletterinstances}
 
@@ -145,7 +147,7 @@ La interfaz de usuario de CCR admite el parámetro cmLetterInstanceId, que se pu
 
 >[!NOTE]
 >
-No es necesario especificar cmLetterId o cmLetterName/State/Version al volver a cargar una correspondencia, ya que los datos enviados ya contienen todos los detalles sobre la correspondencia que se recarga. RandomNo se usa para evitar problemas con la caché del explorador, puede usar una marca de tiempo como un número aleatorio.
+>No es necesario especificar cmLetterId o cmLetterName/State/Version al volver a cargar una correspondencia, ya que los datos enviados ya contienen todos los detalles sobre la correspondencia que se recarga. RandomNo se usa para evitar problemas con la caché del explorador, puede usar una marca de tiempo como un número aleatorio.
 
 ### Abrir la instancia de la carta enviada {#opening-submitted-letter-instance}
 

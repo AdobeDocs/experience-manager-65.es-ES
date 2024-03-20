@@ -7,10 +7,11 @@ content-type: reference
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3101'
-ht-degree: 1%
+source-wordcount: '3073'
+ht-degree: 0%
 
 ---
 
@@ -194,7 +195,7 @@ En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomenda
    <td><p>Invertir algo de tiempo y reflexión en la configuración de una nueva instalación está bien remunerado.</p> <p>La aplicación de una estructura clara simplifica el mantenimiento y la administración continuos, lo que garantiza que tanto sus compañeros actuales como los sucesores futuros puedan comprender fácilmente qué se está implementando.</p> </td>
   </tr>
   <tr>
-   <td><i>Probar</i></td>
+   <td><i>Prueba</i></td>
    <td>Utilice una instalación de prueba para practicar y asegurarse de que comprende las relaciones entre los distintos usuarios y grupos.</td>
   </tr>
   <tr>
@@ -235,7 +236,7 @@ Debe haber iniciado sesión en el espacio de trabajo adecuado. A continuación, 
 
 * Puede agregar nuevas propiedades definiendo un nombre, tipo y valor. Haga clic en Guardar (símbolo de verificación verde) para cada nueva propiedad.
 
-**Miembros del grupo**
+**Pertenencia a grupo**
 
 Muestra todos los grupos a los que pertenece la cuenta. La columna Heredado indica la pertenencia que se ha heredado como resultado de la pertenencia a otro grupo.
 
@@ -355,7 +356,7 @@ Debe haber iniciado sesión en el espacio de trabajo adecuado. A continuación, 
 
   Puede agregar usuarios u otros grupos como miembros de este grupo.
 
-**Miembros del grupo**
+**Pertenencia a grupo**
 
 Muestra todos los grupos a los que pertenece la cuenta de grupo actual. La columna Heredado indica la pertenencia que se ha heredado como resultado de la pertenencia a otro grupo.
 

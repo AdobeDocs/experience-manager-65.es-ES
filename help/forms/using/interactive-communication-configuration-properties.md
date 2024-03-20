@@ -8,7 +8,8 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 82%
