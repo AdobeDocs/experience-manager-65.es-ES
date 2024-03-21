@@ -3,13 +3,13 @@ title: Prácticas recomendadas para usar formularios adaptables
 description: Explica las prácticas recomendadas para configurar un proyecto de AEM Forms, desarrollar formularios adaptables y optimizar el rendimiento del sistema AEM Forms.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 474a14a247afecdd8415f75997279d1ecd394cda
 workflow-type: tm+mt
-source-wordcount: '4668'
-ht-degree: 92%
+source-wordcount: '5504'
+ht-degree: 78%
 
 ---
 
@@ -355,5 +355,66 @@ Uno de los desafíos clave para las organizaciones es cómo manejar los datos de
 
 * Utilizar un almacenamiento externo seguro como la base de datos para almacenar datos de formularios enviados y en modo de borrador. Consulte [Configurar el almacenamiento externo para datos de formularios enviados y en modo de borrador](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Utilice el componente de formulario Términos y condiciones para obtener el consentimiento explícito del usuario antes de activar el guardado automático. En este caso, habilite el guardado automático solo cuando el usuario acepte las condiciones del componente Términos y condiciones.
+
+## Elija el Editor de reglas, el Editor de código o las Bibliotecas de cliente personalizadas para su formulario adaptable {#RuleEditor-CodeEditor-ClientLibs}
+
+### Editor de reglas {#rule-editor}
+
+<!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
+
+El Editor de reglas de AEM Forms proporciona una interfaz visual para crear y administrar reglas, lo que reduce la necesidad de utilizar una programación extensa. Puede resultar especialmente útil para usuarios empresariales o diseñadores de formularios que pueden no tener habilidades de programación avanzadas, pero necesitan definir y mantener reglas empresariales dentro de los formularios. Aquí analizamos algunos casos de uso en los que el editor de reglas le permite:
+
+* <!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
+* <!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
+* <!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
+* <!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
+* <!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
+
+El editor de reglas está disponible tanto para componentes de AEM Forms Foundation como para componentes principales.
+
+### Editor de código {#code-editor}
+
+El Editor de código es una herramienta dentro de Adobe Experience Manager AEM () Forms que le permite escribir scripts y código personalizados para una funcionalidad más compleja y avanzada en los formularios. Aquí analizamos algunos casos de uso:
+
+* Cuando necesite implementar una lógica personalizada del lado del cliente o un comportamiento que vaya más allá de las capacidades del Editor de reglas de AEM Forms. El Editor de código le permite escribir código JavaScript para gestionar interacciones, cálculos o validaciones complejos.
+* Si el formulario requiere procesamiento en el servidor o integración con sistemas externos, puede utilizar el Editor de código para escribir scripts personalizados en el servidor. Puede acceder a la API de guideBridge en el editor de código para implementar cualquier lógica compleja en eventos y objetos de formulario.
+* Cuando se requieren interfaces de usuario altamente personalizadas que vayan más allá de las capacidades estándar de los componentes de AEM Forms, el Editor de código permite implementar estilos y comportamientos personalizados, o incluso crear componentes de formulario personalizados.
+* Si el formulario implica operaciones asincrónicas como la carga asincrónica de datos, puede utilizar el Editor de código para administrar estas operaciones mediante código JavaScript asincrónico personalizado.
+
+Es importante tener en cuenta que el uso del Editor de código requiere una buena comprensión de la arquitectura de JavaScript y AEM Forms. Además, al implementar el código personalizado, asegúrese de seguir las prácticas recomendadas, cumplir las directrices de seguridad y probar el código a fondo para evitar posibles problemas en entornos de producción. Puede implementar una llamada de retorno para FDM mediante el editor de código.
+
+El editor de código solo está disponible para el componente AEM Forms Foundation. Para los componentes principales de un formulario adaptable, puede utilizar funciones personalizadas para crear sus propias reglas de formulario, que se describen en la siguiente sección.
+
+### Funciones personalizadas {#custom-client-libs}
+
+El uso de bibliotecas de cliente personalizadas en AEM Forms (Adobe Experience Manager Forms) puede resultar beneficioso en varios casos para mejorar la funcionalidad, el estilo o el comportamiento de los formularios. Estas son algunas situaciones en las que el uso de bibliotecas de cliente personalizadas podría ser adecuado:
+
+* Si necesita implementar un diseño o una personalización de marca únicos para los formularios que vayan más allá de las capacidades de las opciones de estilo predeterminadas que proporciona AEM Forms, puede optar por crear bibliotecas de cliente personalizadas para controlar la apariencia.
+* Si necesita lógica personalizada del lado del cliente, reutilización de métodos en varios formularios o comportamientos que no se pueden lograr con las funciones estándar de AEM Forms. Esto puede incluir interacciones de formularios dinámicos, validación personalizada o integración con bibliotecas de terceros.
+* Para mejorar el rendimiento de los formularios optimizando y minimizando los recursos del lado del cliente. Las bibliotecas de cliente personalizadas se pueden utilizar para empaquetar y comprimir archivos JavaScript y CSS, lo que reduce el tiempo total de carga de la página.
+* Cuando necesite integrar bibliotecas o marcos de JavaScript adicionales que no estén incluidos en la configuración predeterminada de AEM Forms. Esto puede ser necesario para funciones como selectores de fechas mejorados, gráficos u otros componentes interactivos.
+
+Antes de decidir utilizar bibliotecas de cliente personalizadas, es importante tener en cuenta la sobrecarga de mantenimiento, los posibles conflictos con futuras actualizaciones y el cumplimiento de las prácticas recomendadas. Asegúrese de que las personalizaciones estén bien documentadas y probadas para evitar problemas durante las actualizaciones o al colaborar con otros desarrolladores.
+
+>[!NOTE]
+> La función personalizada está disponible tanto para componentes principales como para componentes de base de AEM Forms.
+
+**Ventajas de las funciones personalizadas:**
+
+**Funciones personalizadas** proporcionan una notable ventaja sobre **Editor de código** porque proporciona una clara separación entre contenido y código, lo que mejora la colaboración y optimiza los flujos de trabajo. Se recomienda utilizar funciones personalizadas para las siguientes ventajas:
+
+* **Utilice sin problemas el control de versiones como Git:**
+   * El aislamiento del código del contenido reduce significativamente los conflictos de Git durante la administración de contenido y promueve un repositorio bien organizado.
+   * Funciones personalizadas es útil para proyectos con varios colaboradores que trabajan simultáneamente.
+
+* **Ventajas técnicas:**
+   * Las funciones personalizadas ofrecen modularidad y encapsulación.
+   * Los módulos se pueden desarrollar, probar y mantener de forma independiente.
+   * Mejora la reutilización y el mantenimiento del código.
+
+* **Proceso de desarrollo eficiente:**
+   * La modularidad permite a los desarrolladores centrarse en funcionalidades específicas.
+   * Reduce la carga de los desarrolladores al reducir las complejidades de todo el código base para un proceso de desarrollo más eficiente.
+
 
 
