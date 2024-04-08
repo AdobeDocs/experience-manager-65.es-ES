@@ -8,9 +8,9 @@ content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -199,4 +199,4 @@ El nuevo idioma (finés) ya está disponible en el cuadro de diálogo de etiquet
 
 >[!CAUTION]
 >
->La instalación de un Service Pack restablece la propiedad de idiomas del nodo /content/cq:tags de forma predeterminada. Por lo tanto, es necesario agregarlo desde las propiedades antes de la instalación.
+>La instalación del etiquetado relacionado con el contenido listo para usar a través de un paquete de actualización oficial (incluidos los paquetes de servicio, los paquetes de servicio de seguridad, los paquetes de funciones ampliadas, los paquetes de funciones acumulativas, los parches y similares), restablece la propiedad de idiomas del `/content/cq:tags` de forma predeterminada. Por lo tanto, es necesario agregarlo desde las propiedades antes de la instalación.
