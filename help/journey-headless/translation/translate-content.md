@@ -2,10 +2,13 @@
 title: Traducir contenido
 description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2115'
-ht-degree: 66%
+ht-degree: 71%
 
 ---
 
@@ -52,7 +55,7 @@ Ambos enfoques se analizan en las secciones siguientes.
 
 Para los propietarios de contenido que también son responsables de la traducción, a menudo es más fácil dejar que AEM cree automáticamente el proyecto de traducción. Para que AEM cree automáticamente un proyecto de traducción basado en la ruta de contenido:
 
-1. Vaya a **Navegación** > **Assets** > **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
+1. Vaya a **Navegación** > **Recursos** > **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
 1. Seleccione la raíz de idioma del proyecto. En este caso, `/content/dam/wknd/en` está seleccionado.
 1. Haga clic en el selector de carril y muestre las **Referencias** panel.
 1. Clic **Copias de idioma**.
@@ -105,11 +108,11 @@ El proyecto se ha creado, pero no contiene contenido para traducir. La siguiente
 
 ## Uso de un proyecto de traducción {#using-translation-project}
 
-Los proyectos de traducción están diseñados para recopilar todo el contenido y las tareas relacionadas con un esfuerzo de traducción en un solo lugar para que su traducción sea sencilla y fácil de administrar.
+Los proyectos de traducción están diseñados para recopilar todo el contenido y las tareas relacionadas con un esfuerzo de traducción en un solo lugar para que la traducción sea sencilla y fácil de administrar.
 
-Para ver el proyecto de traducción:
+Para ver el proyecto de traducción, haga lo siguiente:
 
-1. Vaya a **Navegación** > **Proyectos**.
+1. Vaya a **Navegación** > **Proyectos**.
 1. Haga clic en el proyecto creado en la sección anterior.
 
 ![Proyecto de traducción](assets/translation-project.png)
@@ -199,7 +202,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 
 ## Revisión del contenido traducido {#reviewing}
 
-[Como se ha visto anteriormente,](#using-translation-project) AEM el contenido traducido por el equipo vuelve a los flujos de trabajo en el formato de la página con el estado de **Aprobado** dado que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, aún es posible revisar el contenido traducido.
+[Como se ha visto anteriormente,](#using-translation-project) AEM el contenido traducido por el equipo vuelve a los flujos de trabajo en el formato de la página con el estado de **Aprobado** dado que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, todavía es posible revisar el contenido traducido.
 
 Simplemente, vaya al trabajo de traducción completado y seleccione un elemento de línea tocando o haciendo clic en la casilla de verificación. El icono **Revelar en Fragmento de contenido** se muestra en la barra de herramientas.
 
@@ -239,7 +242,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Crear proyectos de traducción.
 * Utilice los proyectos de traducción para traducir el contenido sin encabezado.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Publicar contenido traducido](publish-content.md) donde aprenderá a publicar el contenido traducido y a actualizar esas traducciones a medida que cambie el contenido raíz del idioma.
+Amplíe este conocimiento y continúe con su recorrido de traducción sin encabezado de AEM revisando el documento [Publicar contenido traducido](publish-content.md). Aquí aprenderá a publicar su contenido traducido y a actualizar esas traducciones a medida que cambie el contenido raíz del idioma.
 
 ## Recursos adicionales {#additional-resources}
 

@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1449'
 ht-degree: 0%
@@ -78,7 +80,7 @@ AEM utiliza una convención de nombres de variables y eventos relacionados con p
 | `product.events.<eventName>` | Los eventos de éxito que se asociarán con el producto en el informe. | `product.events` es el prefijo de los eventos llamados *eventName.* |
 | `product.evars.<eVarName>` | Las variables de conversión ( `eVar`) para asociarlo al producto. | `product.evars` es el prefijo de las variables de eVar denominadas *eVarName.* |
 
-AEM Varios componentes de comercio de utilizan estos nombres de variable.
+AEM Varios componentes de Commerce utilizan estos nombres de variables.
 
 >[!NOTE]
 >

@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: personalization
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization,Integration
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 0%
@@ -23,7 +25,7 @@ Puede administrar nuevas suscripciones de contacto, bajas de suscripción y dato
 Para utilizar formularios Adobe Campaign AEM Forms en la, debe seguir estos pasos, que se describen en este documento:
 
 1. Hacer que una plantilla esté disponible.
-1. Cree un formulario.
+1. Creación de un formulario.
 1. Editar contenido del formulario.
 
 Hay tres tipos de formularios disponibles de forma predeterminada, específicos de Adobe Campaign:

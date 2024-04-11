@@ -2,10 +2,13 @@
 title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 68%
+ht-degree: 81%
 
 ---
 
@@ -15,7 +18,7 @@ Aprenda a definir reglas de traducción para identificar el contenido que se va 
 
 ## La historia hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido de trabajo de traducción sin encabezado de la, [Configuración de la integración de traducción](configure-connector.md) ha aprendido a instalar y configurar su integración de traducción y ahora debería hacer lo siguiente:
+En el documento anterior del recorrido de traducción sin encabezado de AEM, [Configuración de la integración de traducción](configure-connector.md), ha aprendido a instalar y configurar la integración de traducción y ahora, deberá hacer lo siguiente:
 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
@@ -31,7 +34,7 @@ Este documento le ayuda a comprender cómo utilizar las reglas de traducción de
 
 ## Reglas de traducción {#translation-rules}
 
-Los fragmentos de contenido, que representan el contenido sin encabezado, pueden contener mucha información organizada en campos estructurados. Según las necesidades del proyecto, es probable que no todos los campos de un fragmento de contenido deban traducirse.
+Los fragmentos de contenido, que representan el contenido sin encabezado, pueden contener mucha información organizada en campos estructurados. Según las necesidades del proyecto, es probable que no todos los campos de un Fragmento de contenido deban traducirse.
 
 Las reglas de traducción identifican el contenido que se incluye en los proyectos de traducción o que se excluye de ellos. Cuando se traduce contenido, AEM lo extrae o saca en función de estas reglas. De este modo, solo el contenido que debe traducirse se envía al servicio de traducción.
 
@@ -54,12 +57,12 @@ Se pueden crear varias reglas para admitir requisitos de traducción complejos. 
 
 Las reglas de traducción están diseñadas para manejar estos escenarios. Sin embargo, en este ejemplo ilustramos cómo crear reglas centrándose en una configuración simple y única.
 
-Hay una consola de **Configuración de traducción** disponible para configurar las reglas de traducción. Para acceder a ella:
+Hay una consola de **Configuración de traducción** disponible para configurar las reglas de traducción. Para acceder a ella, haga lo siguiente:
 
-1. Vaya a **Herramientas** > **General**.
+1. Vaya a **Herramientas** > **General**.
 1. Clic **Configuración de traducción**.
 
-En el **Configuración de traducción** IU, hay varias opciones disponibles para las reglas de traducción. Aquí destacamos los pasos más necesarios y típicos para una configuración de localización sin encabezado básica.
+En la IU **Configuración de traducción**, hay un número de opciones disponibles para las reglas de traducción. Aquí destacamos los pasos más necesarios y típicos para una configuración de localización sin encabezado básica.
 
 1. Clic **Agregar contexto**, que le permite añadir una ruta. Esta es la ruta del contenido que se ve afectado por la regla.
    ![Agregar contexto](assets/add-translation-context.png)

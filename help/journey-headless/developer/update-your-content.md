@@ -2,7 +2,10 @@
 title: Actualización del contenido mediante las API de AEM Assets
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, descubra cómo utilizar la API de REST para acceder y actualizar el contenido de sus fragmentos de contenido.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 87%

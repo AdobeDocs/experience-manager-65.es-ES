@@ -3,7 +3,9 @@ title: Integración con Adobe Target mediante IMS
 description: AEM Obtenga información acerca de la integración de los con Adobe Target mediante IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 39%

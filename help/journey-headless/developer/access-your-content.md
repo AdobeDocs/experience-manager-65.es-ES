@@ -2,7 +2,10 @@
 title: Cómo acceder al contenido a través de las API de entrega de AEM
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenderá a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 93%
@@ -133,7 +136,7 @@ La **Referencia de fragmento**:
 
 * Es un tipo de datos específico disponible cuando se define un modelo de fragmento de contenido.
 * Hace referencia a otro fragmento, según un modelo de fragmento de contenido específico.
-* Permite crear y recuperar datos estructurados.
+* Permite crear datos estructurados y luego recuperarlos.
 
    * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
 

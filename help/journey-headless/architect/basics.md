@@ -2,10 +2,13 @@
 title: Información sobre los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su de contenido sin encabezado de CMS utilizando fragmentos de contenido.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -67,7 +70,7 @@ Dentro de un modelo:
 1. **Tipos de datos** permite definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
 1. Los tipos de datos **Referencia de contenido** y **Referencia a fragmento** AEM permite crear relaciones con otro contenido dentro de los recursos de la aplicación de contenido de la.
-1. El **Referencia a fragmento** El tipo de datos permite realizar varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
+1. El tipo de datos **referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
 
@@ -105,7 +108,7 @@ Proporciona referencias a otros fragmentos de contenido.
 Este tipo de referencia se utiliza para crear contenido anidado e introduce las relaciones necesarias para modelar el contenido.
 El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
    * Editar directamente el fragmento al que se hace referencia.
-   * Crear un fragmento de contenido basado en el modelo adecuado
+   * Crear un nuevo fragmento de contenido basado en el modelo apropiado
 
 >[!NOTE]
 >
@@ -113,7 +116,7 @@ El tipo de datos se puede configurar para que los autores de fragmentos puedan h
 
 ## Niveles de estructura (fragmentos anidados) {#levels-of-structure-nested-fragments}
 
-Para el modelado de contenido de **Referencia a fragmento** El tipo de datos permite crear varios niveles de estructura y relaciones.
+Para modelar contenido, el tipo de datos **Referencia a fragmentos** le permite crear varios niveles de estructura y relaciones.
 
 Con esta referencia, puede *conectar* varios modelos de fragmento de contenido para representar las interrelaciones. Esto permite que la aplicación sin encabezado siga las conexiones y acceda al contenido según sea necesario.
 
@@ -130,7 +133,7 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una Compañía tiene un director ejecutivo (CEO) y empleados…y todas ellas se definen como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 

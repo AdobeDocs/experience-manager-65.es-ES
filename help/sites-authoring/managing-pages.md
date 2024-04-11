@@ -3,7 +3,9 @@ title: AEM Creación y organización de páginas con la función de
 description: Obtenga información sobre cómo crear y administrar páginas con Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2417'
 ht-degree: 64%

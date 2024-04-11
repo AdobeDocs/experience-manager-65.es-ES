@@ -2,10 +2,13 @@
 title: Publicar contenido traducido
 description: Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
@@ -63,7 +66,7 @@ La forma más sencilla de publicar las traducciones es ir hasta la carpeta Recur
 
 Esta ruta tiene subcarpetas para cada idioma de traducción y puede elegir cuál publicar.
 
-1. Ir a **Navegación** > **Assets** > **Archivos** y abra la carpeta del proyecto.
+1. Vaya a **Navegación** > **Recursos** > **Archivos** y abra la carpeta del proyecto. 
 1. Aquí puede ver la carpeta raíz y todas las demás carpetas del idioma. Seleccione el o los idiomas localizados que desee publicar.
    ![Selección de la carpeta de idioma](assets/select-language-folder.png)
 1. Clic **Administrar publicación**.
@@ -92,7 +95,7 @@ Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el 
 
 ### Actualización de un proyecto de traducción creado automáticamente {#updating-automatic-project}
 
-1. Vaya a **Navegación** > **Assets** > **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
+1. Vaya a **Navegación** > **Recursos** > **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como Fragmentos de contenido.
 1. Seleccione la raíz de idioma del proyecto. En este caso, `/content/dam/wknd/en` está seleccionado.
 1. Haga clic en el selector de carril y muestre las **Referencias** panel.
 1. Clic **Copias de idioma**.
@@ -104,9 +107,9 @@ Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el 
 
 ![Agregar elementos a un proyecto de traducción existente](assets/add-to-existing-project.png)
 
-El contenido se agrega al proyecto de traducción existente. Para ver el proyecto de traducción:
+El contenido se agrega al proyecto de traducción existente. Para ver el proyecto de traducción, haga lo siguiente:
 
-1. Vaya a **Navegación** > **Proyectos**.
+1. Vaya a **Navegación** > **Proyectos**.
 1. Haga clic en el proyecto que acaba de actualizar
 1. Haga clic en el idioma o en uno de los idiomas que ha actualizado.
 
@@ -118,7 +121,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-Puede observar que las estadísticas que aparecen en la nueva tarjeta (número de recursos y fragmentos de contenido) son diferentes. AEM Esto se debe a que reconoce lo que ha cambiado desde la última traducción y solo incluye el contenido que debe traducirse. Esto incluye una nueva traducción del contenido actualizado y la primera traducción del contenido nuevo.
+Puede observar que las estadísticas que aparecen en la nueva tarjeta (número de recursos y fragmentos de contenido) son diferentes. Esto se debe a que AEM reconoce qué ha cambiado desde la última traducción y solo incluye el contenido que debe traducirse. Esto incluye una nueva traducción del contenido actualizado y la primera traducción del contenido nuevo.
 
 A partir de este punto, [inicie y administre su trabajo de traducción al igual que lo hizo con el original.](translate-content.md#using-translation-project)
 
@@ -126,7 +129,7 @@ A partir de este punto, [inicie y administre su trabajo de traducción al igual 
 
 Para actualizar una traducción, puede agregar un nuevo trabajo al proyecto existente que sea responsable de traducir el contenido actualizado.
 
-1. Vaya a **Navegación** > **Proyectos**.
+1. Vaya a **Navegación** > **Proyectos**.
 1. Haga clic en el proyecto que debe actualizar.
 1. Haga clic en **Añadir** en la parte superior de la ventana.
 1. En el **Añadir mosaico** , haga clic en **Trabajo de traducción** y luego **Enviar**.
@@ -154,7 +157,7 @@ A partir de este punto, [inicie y administre su trabajo de traducción igual que
 
 ## ¿Fin del recorrido? {#end-of-journey}
 
-¡Enhorabuena! Ha completado el recorrido de traducción sin encabezado. Ahora debería hacer lo siguiente:
+Felicitaciones. Ha completado el recorrido de traducción sin encabezado. Ahora debería hacer lo siguiente:
 
 * Obtener información general sobre qué es la entrega de contenido sin encabezado.
 * Tener un conocimiento básico de las funciones de AEM sin encabezado.

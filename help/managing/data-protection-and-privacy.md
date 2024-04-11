@@ -8,7 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 solution: Experience Manager, Experience Manager 6.5
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Compliance
+role: Developer,Leader,Architect,Data Architect,User
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 38%
@@ -101,7 +103,7 @@ Consulte [AEM Sites: Protección de datos y preparación para la privacidad.](/h
 
 ## AEM Commerce {#aem-commerce}
 
-Consulte [AEM Comercio de datos: protección de datos y preparación para la privacidad](/help/sites-administering/gdpr-compliance-commerce.md).
+Consulte [AEM Commerce: Protección de datos y preparación para la privacidad](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 

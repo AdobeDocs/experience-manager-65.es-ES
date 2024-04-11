@@ -2,10 +2,13 @@
 title: Configuración de la integración de traducción
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -25,7 +28,7 @@ Este artículo se basa en estos aspectos básicos para que pueda realizar el pri
 
 ## Objetivo {#objective}
 
-AEM Este documento le ayuda a comprender cómo configurar una integración de en el servicio de traducción elegido. Después de leer, debería haber logrado lo siguiente:
+Este documento le ayuda a comprender cómo configurar una integración de AEM en el servicio de traducción seleccionado. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
@@ -68,7 +71,7 @@ Una vez instalado el paquete de conector para el servicio de traducción preferi
 * Si se va a realizar una traducción humana o automática
 * Si se debe traducir otro contenido asociado al fragmento de contenido, como, por ejemplo, las etiquetas.
 
-Para crear una configuración de traducción:
+Para crear una nueva configuración de traducción haga lo siguiente:
 
 1. En el menú de navegación global, haga clic en **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. Esto suele basarse en un proyecto en particular o puede ser global.
@@ -114,7 +117,7 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 /content/dam/<your-project>/en
 ```
 
-1. Vaya a la navegación global y luego a **Navegación** > **Assets** > **Archivos**.
+1. Vaya a la navegación global y luego a **Navegación** > **Recursos** > **Archivos**.
 1. En la consola de recursos, seleccione la raíz de idioma que desea configurar y haga clic en **Propiedades**.
 1. Haga clic en **Cloud Service** pestaña.
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en el menú desplegable cuando haya instalado su paquete como [descritos anteriormente.](#connect-translation-provider)

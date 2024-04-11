@@ -2,10 +2,13 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para los contenidos, otros fragmentos y archivos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -43,7 +46,7 @@ Las referencias de contenido hacen precisamente eso: le permiten hacer referenci
 
 ## Referencias de recursos/medios {#assets-media-references}
 
-Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentro de un bloque de texto utilizando la opción **Insertar recurso**. Se abrirá un explorador que le permitirá seleccionar el recurso.
+Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentro de un bloque de texto utilizando la opción **Insertar recurso**. Se abre un explorador que permite seleccionar el recurso.
 
 ![Fragmentos de contenido: insertar recurso](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +61,7 @@ Por ejemplo, puede que tenga definidos los siguientes modelos de fragmento de co
 * Persona
 * Premios
 
-Parece bastante sencillo, pero una compañía tiene un CEO y empleados....y todas ellas se definen como una persona.
+Parece bastante sencillo, pero una Compañía tiene un director ejecutivo (CEO) y empleados…y todas ellas se definen como una persona.
 
 Una persona puede obtener un premio (o tal vez dos).
 
@@ -75,7 +78,7 @@ Como autor, no es responsable de definir estas relaciones (lo hace el arquitecto
 
 ### Creación de fragmentos anidados {#author-nested-fragment}
 
-La creación de referencias a fragmentos es bastante sencilla (aunque normalmente el campo no se etiqueta como **Referencia a fragmento**). Puede escribir la referencia directamente o (lo más probable) seleccionar el icono de carpeta para abrir un explorador que le permita desplazarse y seleccionar el fragmento que necesite.
+La creación de referencias a fragmentos es bastante sencilla (aunque normalmente el campo no se etiqueta como **Referencia a fragmento**). Puede escribir la referencia directamente o seleccionar el icono de carpeta para abrir el explorador (lo más probable) que le permita desplazarse y seleccionar el fragmento que necesita.
 
 ![Fragmentos de contenido: referencias](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

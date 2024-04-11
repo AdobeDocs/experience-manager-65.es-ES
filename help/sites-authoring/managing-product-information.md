@@ -7,7 +7,9 @@ topic-tags: projects
 content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
@@ -59,12 +61,12 @@ Para iniciar una solicitud de sesión fotográfica, haga clic en un proyecto y l
 
 A **Proyecto de sesión fotográfica del producto** incluye los siguientes flujos de trabajo predeterminados:
 
-* **Flujo de trabajo de la sesión fotográfica del producto (integración comercial)**: Este flujo de trabajo utiliza la integración comercial con el sistema de gestión de la información del producto (PIM) para generar automáticamente una lista de tomas para los productos seleccionados (jerarquía). Una vez completado el flujo de trabajo, puede ver los datos del producto como parte de los metadatos del recurso.
+* **Flujo de trabajo de la sesión fotográfica del producto (integración de Commerce)**: Este flujo de trabajo utiliza la integración comercial con el sistema de gestión de la información del producto (PIM) para generar automáticamente una lista de tomas para los productos seleccionados (jerarquía). Una vez completado el flujo de trabajo, puede ver los datos del producto como parte de los metadatos del recurso.
 * **Flujo de trabajo de sesión fotográfica del producto**: Este flujo de trabajo permite proporcionar una lista de tomas en lugar de depender de la integración comercial. Asigna las imágenes cargadas a un archivo CSV en la carpeta de recursos del proyecto.
 
-Utilice el **Sesión fotográfica del producto (integración comercial)** AEM flujo de trabajo para asignar recursos de imagen con los productos en la. Este flujo de trabajo utiliza la integración comercial para vincular las imágenes aprobadas a los datos de producto existentes en la ubicación `/etc/commerce`.
+Utilice el **Sesión fotográfica del producto (integración con Commerce)** AEM flujo de trabajo para asignar recursos de imagen con los productos en la. Este flujo de trabajo utiliza la integración comercial para vincular las imágenes aprobadas a los datos de producto existentes en la ubicación `/etc/commerce`.
 
-El **Sesión fotográfica del producto (integración comercial)** El flujo de trabajo de incluye las siguientes tareas:
+El **Sesión fotográfica del producto (integración con Commerce)** El flujo de trabajo de incluye las siguientes tareas:
 
 * Crear lista de tomas
 * Cargar sesión fotográfica
@@ -139,14 +141,14 @@ Para configurar la variable **Sesión fotográfica del producto** flujo de traba
 
 Puede configurar las tareas adicionales para el **Sesión fotográfica del producto** flujo de trabajo de forma similar.
 
-Siga los mismos pasos para configurar las tareas de la **Flujo de trabajo de la sesión fotográfica del producto (integración comercial)**.
+Siga los mismos pasos para configurar las tareas de la **Flujo de trabajo de la sesión fotográfica del producto (integración de Commerce)**.
 
 ## Iniciar un flujo de trabajo de proyecto {#starting-a-project-workflow}
 
 En esta sección se describe cómo integrar la administración de la información del producto con el proyecto creativo.
 
 1. Vaya al proyecto de sesión fotográfica de un producto y haga clic en **Añadir trabajo** en el menú **Flujos de trabajo** Tarjeta de.
-1. Seleccione el **Sesión fotográfica del producto (integración comercial)** tarjeta de flujo de trabajo para iniciar **Sesión fotográfica del producto (integración comercial)** flujo de trabajo. Si la información del producto no está disponible en `/etc/commerce`, seleccione la **Sesión fotográfica del producto** flujo de trabajo e inicio del **Sesión fotográfica del producto** flujo de trabajo.
+1. Seleccione el **Sesión fotográfica del producto (integración con Commerce)** tarjeta de flujo de trabajo para iniciar **Sesión fotográfica del producto (integración con Commerce)** flujo de trabajo. Si la información del producto no está disponible en `/etc/commerce`, seleccione la **Sesión fotográfica del producto** flujo de trabajo e inicio del **Sesión fotográfica del producto** flujo de trabajo.
 
    ![Asistente de flujo de trabajo](assets/chlimage_1-140a.png)
 
@@ -333,7 +335,7 @@ Haga clic en el vínculo que aparece para desplazarse a la página de detalles d
 Puede personalizar la variable **Sesión fotográfica del proyecto** flujos de trabajo basados en sus necesidades. Es una tarea opcional basada en funciones que se realiza para establecer el valor de una variable dentro del proyecto. Posteriormente, puede utilizar el valor configurado para llegar a una decisión.
 
 1. AEM Haga clic en el logotipo de la y, a continuación, vaya a **Herramientas** > **Flujo de trabajo** > **Modelos** para abrir **Modelos de flujo de trabajo** página.
-1. Seleccione el **Sesión fotográfica del producto (integración comercial)** flujo de trabajo para **Sesión fotográfica del producto** flujo de trabajo y clic **Editar** en la barra de herramientas para abrir el flujo de trabajo en modo de edición.
+1. Seleccione el **Sesión fotográfica del producto (integración con Commerce)** flujo de trabajo para **Sesión fotográfica del producto** flujo de trabajo y clic **Editar** en la barra de herramientas para abrir el flujo de trabajo en modo de edición.
 1. Abra el panel lateral y busque **Crear tarea de proyecto basada en roles** y arrástrelo al flujo de trabajo.
 
    ![Crear tarea de proyecto basada en roles](assets/project-model-role-based.png)

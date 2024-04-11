@@ -2,10 +2,13 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1472'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -32,7 +35,7 @@ Este documento le ayuda a comprender cómo empezar a traducir contenido sin enca
 
 ## Requisitos y requisitos previos {#requirements-prerequisites}
 
-AEM Antes de empezar a traducir el contenido sin encabezado, existen varios requisitos que se deben cumplir
+Antes de empezar a traducir el contenido AEM sin encabezado, existen varios requisitos.
 
 ### Conocimiento {#knowledge}
 
@@ -76,7 +79,7 @@ El arquitecto de contenido trabaja al principio del proyecto para definir esta e
 >
 >Es responsabilidad del arquitecto de contenido definir los modelos de contenido. El especialista en traducción solo debe familiarizarse con su estructura como se describe en los pasos siguientes.
 
-Dado que los modelos de contenido definen la estructura de su contenido, debe saber qué campos de los modelos se deben traducir. Normalmente, se trabaja con el arquitecto de contenido para definir esto. Para examinar los campos de los modelos de contenido, siga los pasos a continuación.
+Dado que los modelos de contenido definen la estructura de tu contenido, debes saber qué campos de los modelos se deben traducir. Normalmente, se trabaja con el arquitecto de contenido para definir esto. Para examinar los campos de los modelos de contenido, siga los pasos a continuación.
 
 1. Vaya a **Herramientas** > **Assets** > **Modelos de fragmento de contenido**.
 1. Los modelos de fragmento de contenido generalmente se almacenan en una estructura de carpetas. Haga clic en la carpeta del proyecto.
@@ -174,7 +177,7 @@ Generalmente, solo se configura un conector una vez para la instancia y las regl
 
 ## Siguientes pasos {#what-is-next}
 
-Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debería lograr lo siguiente:
+Ahora que ha completado esta parte del recorrido de traducción sin encabezado, deberías lograr lo siguiente:
 
 * Comprender la importancia de la estructura de contenido para la traducción.
 * Comprender cómo AEM almacena contenido sin encabezado.
@@ -190,6 +193,6 @@ Si bien se recomienda pasar a la siguiente parte del recorrido de traducción si
 * [Identificación del contenido para traducir](/help/sites-administering/tc-rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.
 * [Configuración del marco de integración de traducciones](/help/sites-administering/tc-tic.md): aprenda a configurar el marco de integración de traducciones para integrarlo con servicios de traducción de terceros.
 * [Administración de proyectos de traducción](/help/sites-administering/tc-manage.md): aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
-* Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
-* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-* [Tutorials AEM para Headless en la](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

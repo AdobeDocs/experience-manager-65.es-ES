@@ -3,7 +3,9 @@ title: AEM Desarrollo sin encabezado para sitios de 6.5
 description: AEM Descubra cómo las potentes funciones sin encabezado de la versión 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, trabajan juntas para permitirle administrar sus experiencias de forma centralizada y atenderlas en todos los canales.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 32%

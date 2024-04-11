@@ -2,10 +2,13 @@
 title: Obtenga más información acerca del desarrollo de CMS sin encabezado
 description: En esta parte del recorrido para desarrolladores de contenido sin encabezado de AEM, aprenda acerca de la tecnología sin encabezado y por qué la utilizaría.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1601'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -56,19 +59,19 @@ Los usuarios esperan que haya participación independientemente de la plataforma
 
 El HEAD de cualquier sistema es generalmente el procesador de salida de dicho sistema, normalmente en forma de GUI u otra salida gráfica.
 
-Un servidor sin encabezado, por ejemplo, se encuentra probablemente en un rack en una sala de servidores en algún lugar y no tiene un monitor conectado. Para acceder a él, debe conectarse de forma remota. En este caso, el monitor es la cabeza, ya que se encarga de procesar el output del servidor. Usted, como consumidor del servicio, proporcione su propio monitor cuando se conecte de forma remota a él.
+Por ejemplo, puede que un servidor sin encabezado esté sentado en una estantería, en una sala de servidores en algún lugar y no tenga conectado un monitor. Para acceder a él, debe conectarse de forma remota. En este caso, el monitor es la cabeza, ya que se encarga de procesar el output del servidor. Usted, como consumidor del servicio, proporcione su propio monitor cuando se conecte de forma remota a él.
 
 Cuando hablamos de un CMS sin encabezado, el CMS administra el contenido y continúa entregándolo a los consumidores. Sin embargo, al entregar únicamente **contenido** de forma estandarizada, un CMS sin encabezado omite el procesamiento de salida final, dejando la **presentación** del contenido al servicio que lo consume.
 
 ![CMS sin encabezado](assets/headless-cms.png)
 
-Los servicios de consumo, ya sean experiencias de RA, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., incorporan contenido del CMS sin encabezado y proporcionan su propio procesamiento. Se ocupan de proporcionar sus propios HEADS para su contenido.
+Los servicios que consumen, ya sean experiencias AR, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., reciben contenido del CMS sin encabezado y proporcionan su propia representación. Se ocupan de proporcionar sus propios HEADS para su contenido.
 
 Omitir el HEAD simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicho procesamiento.
 
 ## Desacoplamiento {#decoupling}
 
-La entrega sin encabezado es posible al exponer un conjunto de interfaces de programación de aplicaciones (API) sólidas y flexibles en las que todas las experiencias pueden seleccionar. La API sirve como idioma común entre los servicios, y los une en el ámbito del contenido mediante una entrega de contenido estandarizada, pero permitiéndoles la flexibilidad para implementar sus propias soluciones.
+La entrega sin encabezado es posible mediante la exposición de un conjunto de interfaces de programación de aplicaciones (API) sólidas y flexibles que todas sus experiencias pueden seleccionar. La API sirve como idioma común entre los servicios, y los une en el ámbito del contenido mediante una entrega de contenido estandarizada, pero permitiéndoles la flexibilidad para implementar sus propias soluciones.
 
 El contenido sin encabezado es un ejemplo de desvinculación del contenido de su presentación. O en un sentido más genérico, desacoplando el front-end del back-end de su pila de servicios. En una configuración sin encabezado, el sistema de presentación (la cabeza) está desacoplada de la administración de contenido (la cola). Los dos únicamente interactúan mediante llamadas de API.
 
@@ -76,7 +79,7 @@ Este desacoplamiento significa que cada servicio consumidor (el front-end) puede
 
 ## Fundamentos tecnológicos {#technology}
 
-Un enfoque sin encabezado le permite crear un conjunto de tecnologías que se pueden adaptar fácil y rápidamente a las futuras demandas de experiencias digitales.
+Un enfoque sin encabezado le permite generar una pila de tecnologías que se adapte rápida y fácilmente a las futuras exigencias de experiencias digitales.
 
 Las API para CMS en el pasado generalmente se basaban en REST. La transferencia de estado representativo (REST) proporciona recursos como texto en modo sin estado. Esto permite leer y modificar los recursos con un conjunto predefinido de operaciones. REST permite una buena interoperabilidad entre los servicios de la web al garantizar la representación sin estado del contenido.
 
@@ -96,7 +99,7 @@ El contenido sin encabezado abre un mundo de flexibilidad para ofrecer sus exper
 
 Tener muchos canales diferentes puede significar que cada uno tiene sus propios sistemas de presentación. Aunque todas consumen el mismo contenido a través de las mismas API, la experiencia puede ser diferente debido a las diferentes presentaciones. Se debe prestar atención y atención a garantizar la coherencia de la experiencia del cliente.
 
-Mediante la implementación de sistemas de diseño cuidadosos, el uso compartido de bibliotecas de patrones y el uso de componentes de diseño reutilizables y marcos de trabajo del lado del cliente establecidos y abiertos, se pueden garantizar experiencias coherentes, pero esto debe planificarse.
+Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y utilizar componentes de diseño reutilizables, y marcos abiertos y establecidos del lado del cliente, se pueden asegurar experiencias coherentes, pero esto debe planificarse.
 
 ## El futuro es el contenido sin encabezado y es ahora {#future}
 
@@ -126,6 +129,6 @@ AEM Aproveche este conocimiento y continúe con su recorrido sin encabezado de l
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [AEM Introducción a la tecnología sin encabezado de](getting-started.md)Sin embargo, los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar con el recorrido sin encabezado.
 
-* Un [AEM Introducción a la como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
-* El [AEM Portal para desarrolladores de](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
+* El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.

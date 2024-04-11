@@ -2,10 +2,10 @@
 title: Árbol de estructura de fragmento de contenido
 description: Utilice la funcionalidad Árbol de estructura del Editor de fragmentos de contenido en AEM para comprender mejor el contenido sin encabezado.
 feature: Content Fragments
-role: User
+role: User,Developer
 exl-id: 1cf8d3a3-1d9a-42fc-9da0-a20c65f021e4
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 88%
