@@ -3,7 +3,9 @@ title: El exportador de página
 description: Aprenda a utilizar el Exportador de páginas de Adobe Experience Manager AEM ().
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -190,6 +192,6 @@ Para exportar una página mediante programación, puede utilizar el complemento 
 
 El servlet enlazado a la variable `export` y el `zip` utiliza el servicio PageExporter.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Si tiene algún problema con la descarga del archivo zip, puede eliminar el `/var/contentsync` en el repositorio y vuelva a enviar la solicitud de exportación.

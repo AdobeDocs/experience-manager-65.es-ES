@@ -7,7 +7,9 @@ topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1635'
 ht-degree: 2%
@@ -159,6 +161,6 @@ Puede editar las siguientes opciones **[!UICONTROL Añadir al carro]** haciendo 
 
 **[!UICONTROL Mostrar recurso del producto]** : De forma predeterminada, este valor está seleccionado. El recurso de producto muestra una imagen del producto tal como se define en el módulo de Commerce. Desactive la marca de verificación para no mostrar el recurso del producto.
 
-**[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo tal como se define en el módulo Comercio. Desactive la marca de verificación para no mostrar el precio del producto.
+**[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo tal como se define en el módulo Commerce. Desactive la marca de verificación para no mostrar el precio del producto.
 
 **[!UICONTROL Mostrar formulario del producto]** - De forma predeterminada, este valor no está seleccionado. El formulario de producto incluye cualquier variante de producto, como tamaño y color. Desactive la marca de verificación para no mostrar las variantes del producto.

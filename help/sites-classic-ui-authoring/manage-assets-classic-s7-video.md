@@ -7,7 +7,9 @@ topic-tags: authoring
 content-type: reference
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 1%
@@ -62,7 +64,7 @@ Si necesita un flujo de trabajo o control de versiones para sus recursos, primer
 
 Si no necesita un flujo de trabajo o control de versiones para sus recursos, debe cargarlos en Dynamic Media Classic. El flujo de trabajo recomendado es el siguiente:
 
-1. En la aplicación de escritorio de Dynamic Media Classic, [configurar una carga y codificación FTP programadas en Dynamic Media Classic (sistema automatizado)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+1. En la aplicación de escritorio de Dynamic Media Classic, [configurar una carga y codificación FTP programadas en Dynamic Media Classic (sistema automatizado)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=es#upload-options).
 1. En Experience Manager, acceda a los recursos de vídeo en WCM en la **[!UICONTROL Dynamic Media Classic]** del Buscador de contenido.
 1. Cree con el componente de vídeo de Dynamic Media Classic.
 

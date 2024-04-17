@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3442'
 ht-degree: 0%
@@ -535,7 +537,7 @@ En la tabla siguiente se describen brevemente las propiedades:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Al importar el paquete de diseño, pueden producirse varios errores, que se describen en esta sección.
 

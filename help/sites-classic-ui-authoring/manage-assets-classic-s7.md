@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3545'
 ht-degree: 0%
@@ -17,7 +19,7 @@ ht-degree: 0%
 
 # Añadir funciones de Dynamic Media Classic (Scene7) a la página{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
+[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=es) es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
 
 Puede ver los recursos del Experience Manager publicados en Dynamic Media Classic (Scene7) en varios visores:
 

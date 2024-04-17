@@ -7,7 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -118,7 +120,7 @@ Ahora puede enviar el formulario y validar en Adobe Campaign si los valores se h
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 **&quot;Tipo no válido para el valor &#39;02/02/2015&#39; del elemento &#39;@eventdate&#39; (documento de tipo &#39;Event ([adb:evento])&#39;)&quot;**
 

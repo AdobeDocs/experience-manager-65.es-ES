@@ -6,13 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 docset: aem65
-feature: Context Hub
+feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2969'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -261,7 +262,7 @@ El `propertyName` attribute es el nombre de la propiedad store que se va a mostr
 <personalization:storePropertyTag propertyName="authorizableId" store="profile"/>
 ```
 
-#### Estructura del HTML {#html-structure}
+#### Estructura HTML {#html-structure}
 
 La carpeta de la biblioteca de cliente personalization.ui (/etc/clientlibs/foundation/personalization/ui/themes/default) proporciona los estilos CSS que Client Context utiliza para dar formato al código de HTML. El siguiente código ilustra la estructura sugerida para utilizar para mostrar los datos del almacén:
 

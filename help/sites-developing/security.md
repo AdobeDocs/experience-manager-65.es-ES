@@ -3,7 +3,9 @@ title: Seguridad
 description: La seguridad de la aplicación se inicia durante la fase de desarrollo
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Security
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
