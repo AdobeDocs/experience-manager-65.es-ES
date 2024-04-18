@@ -9,10 +9,10 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9e1c93a0d55d88c08b67392a9f16bfce2ac62445
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 100%
+source-wordcount: '658'
+ht-degree: 96%
 
 ---
 
@@ -90,6 +90,10 @@ Expresión admitida para la cláusula de imagen de fecha:
   </tr>
  </tbody>
 </table>
+
+>[!NOTE]
+>
+> Según el diseño, el campo Fecha en HTML5 Forms no admite la variable `MM-YYYY` en formato de edición. Sin embargo, este formato se admite en el formato de visualización.
 
 ## Cláusula de imagen numérica {#numeric-picture-clause}
 
