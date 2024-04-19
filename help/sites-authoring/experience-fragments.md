@@ -5,10 +5,10 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 71%
+source-wordcount: '1504'
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Un fragmento de experiencia es un grupo de uno o más componentes, incluido el c
 Un fragmento de experiencia:
 
 * Forma parte de una experiencia (página).
-* Se puede usar en varias páginas.
+* Se puede usar en varias páginas (que se basan en plantillas editables).
 * Se basa en una plantilla (solo editable) para definir la estructura y los componentes.
 * Esta plantilla se utiliza para crear la *página raíz* del Fragmento de experiencia.
 * Está formado por uno o más componentes, con diseño, en un sistema de párrafos.
@@ -251,6 +251,10 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 Ahora puede utilizar el fragmento de experiencia para crear páginas:
 
 1. Abra la página para editarla.
+
+   >[!NOTE]
+   >
+   >La página debe basarse en una plantilla editable.
 
    Por ejemplo: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
