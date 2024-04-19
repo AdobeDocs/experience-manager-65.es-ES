@@ -9,7 +9,7 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 7%
@@ -35,10 +35,10 @@ AEM AEM Como implementación de referencia estándar de, We.Retail muestra algun
 | [Estructura del sitio globalizada](/help/sites-administering/tc-bp.md) | We.Retail incluye formatos de idioma que se copian en tiempo real en sitios específicos de cada país. | [¡Pruébalo!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Diseño interactivo](/help/sites-authoring/responsive-layout.md) | Todas las páginas tienen un diseño interactivo para adaptarse dinámicamente a la pantalla y al tamaño del dispositivo. | [¡Pruébalo!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Plantillas editables](/help/sites-developing/page-templates-editable.md) | Todas las páginas se basan en plantillas editables, lo que permite a los usuarios que no son desarrolladores adaptar y personalizar las plantillas. | [¡Pruébalo!](/help/sites-developing/we-retail-editable-templates.md) |
-| [Lenguaje de plantilla HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) | Todos los componentes se basan en HTL |  |
+| [Lenguaje de plantilla HTML ](https://experienceleague.adobe.com/es/docs/experience-manager-htl/content/overview) | Todos los componentes se basan en HTL |  |
 | [Funcionalidades de eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) | Incluye un catálogo de productos |  |
 | [Sitios de comunidades](/help/communities/overview.md) | Permite a los visitantes unirse a las discusiones de la comunidad, leer blogs y mucho más |  |
-| [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) | Todos los componentes se basan en los nuevos componentes principales y son más utilizables y configurables por el usuario de forma predeterminada | [¡Pruébalo!](/help/sites-developing/we-retail-core-components.md) |
+| [Componentes principales](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/introduction) | Todos los componentes se basan en los nuevos componentes principales y son más utilizables y configurables por el usuario de forma predeterminada | [¡Pruébalo!](/help/sites-developing/we-retail-core-components.md) |
 | [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) | La sección Experiencias de We.Retail muestra la capacidad de reutilizar contenido mediante fragmentos de contenido. | [¡Pruébelos!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) | Un fragmento de experiencia es un grupo de uno o más componentes, incluido el contenido y el diseño, a los que se puede hacer referencia dentro de las páginas. | [¡Pruébelos!](/help/sites-developing/we-retail-experience-fragments.md) |
 

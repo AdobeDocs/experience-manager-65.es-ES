@@ -1,15 +1,16 @@
 ---
 title: Información general de informes de transacciones para AEM Forms en JEE
-description: Mantenga un recuento de todos los formularios enviados, representados, documentos convertidos en un formato a otro, y más
+description: Mantenga un recuento de todos los formularios enviados, representados, documentos convertidos en un formato a otro, y más.
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Activación y visualización del informe de transacciones para AEM Forms en JEE {#transaction-reports-overview}
+# Activación y visualización de informes de transacciones para AEM Forms en JEE {#transaction-reports-overview}
 
 <!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -31,7 +32,7 @@ De forma predeterminada, el registro de transacciones está desactivado. Para ha
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. Reinicie el servidor.
-1. Aparte de los cambios en el servidor, en el lado del cliente deberá actualizar el `adobe-livecycle-client.jar` en el proyecto, si está utilizando el mismo.
+1. Aparte de los cambios en el servidor, en el lado del cliente debe actualizar el `adobe-livecycle-client.jar` en el proyecto, si está utilizando el mismo.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -74,7 +75,7 @@ For Jboss Cluster:
 ```
 
 Ejemplo de registro de transacción de ejemplo:
-`[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
+`[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### Registro de transacciones {#transaction-record-structure-jee}
 
@@ -96,8 +97,8 @@ TransactionRecord
 
 * **servicio**: Nombre del servicio.
 * **operación**: Nombre de la operación.
-* **internalService**: Nombre del destinatario de la llamada en caso de una llamada interna; de lo contrario, es el mismo que el nombre del servicio.
-* **internalOperation**: Nombre del destinatario de la llamada en el caso de una llamada interna, que de lo contrario es el mismo que el nombre de la operación.
+* **internalService**: Nombre del destinatario de la llamada si hay una llamada interna; de lo contrario, es el mismo que el nombre del servicio.
+* **internalOperation**: Nombre del destinatario en el que hay una llamada interna; de lo contrario, es el mismo que el nombre de la operación.
 * **transactionOperationType**: tipo de transacción (envío, procesamiento, conversión).
 * **transactionCount**: Recuento total de la transacción.
 * **elapsedTime**: Tiempo entre el inicio de la llamada y la respuesta recibida.
@@ -125,7 +126,7 @@ TransactionRecord
 
 La frecuencia de registro de transacciones está determinada por las operaciones de actualización en el servidor para cada formulario que se envía, procesa o convierte correctamente.
 
-* Entrada **tablero** el recuento de transacciones se actualiza periódicamente, el valor predeterminado es 1 minuto. Puede actualizar la frecuencia estableciendo la propiedad del sistema en `"com.adobe.idp.dsc.transaction.recordFrequency"`. Por ejemplo, en AEM Forms para JEE en JBoss®, agregue `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` para establecer la frecuencia de actualización en 5 minutos.
+* Entrada **tablero** Sin embargo, el recuento de transacciones se actualiza periódicamente. El valor predeterminado es de 1 minuto. Puede actualizar la frecuencia estableciendo la propiedad del sistema en `"com.adobe.idp.dsc.transaction.recordFrequency"`. Por ejemplo, en AEM Forms para JEE en JBoss®, agregue `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` para establecer la frecuencia de actualización en 5 minutos.
 
 * Entrada **registros de transacciones** Sin embargo, la actualización de cada transacción se produce instantáneamente cuando un formulario se envía, procesa o convierte correctamente.
 

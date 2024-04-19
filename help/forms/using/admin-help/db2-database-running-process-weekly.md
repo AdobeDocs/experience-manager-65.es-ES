@@ -1,32 +1,32 @@
 ---
-title: "Base de datos DB2: Ejecutar un proceso semanalmente"
-description: AEM Vea cómo puede mejorar el rendimiento de la base de datos de formularios DB2 de la plataforma de datos de la plataforma de formularios de la.
+title: "DB2&reg; database: Ejecución de un proceso semanal"
+description: Descubra cómo puede mejorar el rendimiento de su base de datos AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 4%
+source-wordcount: '148'
+ht-degree: 0%
 
 ---
 
-# Base de datos DB2: Ejecutar un proceso semanalmente{#db-database-running-a-process-weekly}
+# Base de datos DB2®: Ejecución semanal de un proceso{#db-database-running-a-process-weekly}
 
-AEM Si la base de datos de DB2 de formularios de la forma de la forma de la empieza a ejecutarse lentamente, la ejecución semanal del siguiente proceso puede mejorar el rendimiento:
+Si la base de datos AEM Forms DB2® empieza a ejecutarse lentamente, la ejecución semanal del siguiente proceso puede mejorar su rendimiento:
 
-1. Iniciar el Centro de control de DB2:
+1. Iniciar el Centro de control de DB2®:
 
-   (Windows) Seleccione Inicio > Programas > IBM DB2 > Herramientas generales de administración > Centro de control.
+   (Windows) Seleccione Inicio > Programas > IBM® DB2® > Herramientas generales de administración > Centro de control.
 
-   (Linux y UNIX) Desde un símbolo del sistema, escriba el `db2jcc` comando.
+   (Linux® y UNIX®) Desde un símbolo del sistema, escriba el `db2jcc` comando.
 
-1. En el árbol de objetos del Centro de control de DB2, haga clic en Todas las bases de datos.
-1. AEM Haga clic en la base de datos que ha creado para los formularios de y haga clic en la carpeta Tablas.
-1. Seleccione todas las tablas de base de datos en el panel de contenido, haga clic con el botón derecho en ellas y seleccione Ejecutar estadísticas.
+1. En el árbol de objetos del Centro de control de DB2®, haga clic en Todas las bases de datos.
+1. Haga clic en la base de datos que ha creado para AEM Forms y haga clic en la carpeta Tablas.
+1. Seleccione todas las tablas de base de datos en el panel de contenido, haga clic con el botón secundario en ellas y seleccione Ejecutar estadísticas.
 1. Vaya a Estadísticas > Estadísticas de índice.
 1. Seleccione Recopilar estadísticas para todos los índices, seleccione Recopilar estadísticas para índices con estadísticas detalladas extendidas y, a continuación, haga clic en Aceptar.
 

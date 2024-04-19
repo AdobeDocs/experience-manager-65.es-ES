@@ -7,16 +7,16 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 603edbd2-c012-4d25-99bf-c4f3dc147308
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '110'
 ht-degree: 14%
 
 ---
 
 # Revisar los derechos de uso de un archivo PDF {#review-the-usage-rights-of-a-pdf-file}
 
-Al cargar un archivo de PDF en la aplicación web de extensiones de Acrobat Reader DC, puede ver esta información: para ver si se ha ampliado con Reader, si se han aplicado derechos de uso y sus fechas de caducidad.
+Al cargar un archivo de PDF en la aplicación web de extensiones de Acrobat Reader DC, puede ver esta información para ver si está extendida por Reader, si se han aplicado derechos de uso y sus fechas de caducidad.
 
 1. Inicie sesión en la aplicación web de extensiones de Acrobat Reader DC en `http://[localhost]:[port]/ReaderExtensions` (donde *[puerto]* es el número de puerto del servidor de aplicaciones).
 1. Haga clic en Examinar para cargar el archivo del PDF y, a continuación, haga clic en Información. La información aparece debajo del nombre de archivo.
