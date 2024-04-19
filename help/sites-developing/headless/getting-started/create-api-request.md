@@ -5,16 +5,16 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 40%
+source-wordcount: '548'
+ht-degree: 41%
 
 ---
 
 # Acceso y entrega de fragmentos de contenido Guía de inicio rápido sin encabezado {#accessing-delivering-content-fragments}
 
-AEM Aprenda a utilizar la API de REST de Recursos de la aplicación para administrar fragmentos de contenido y la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido.
+Aprenda a utilizar la API de REST de AEM Assets para administrar fragmentos de contenido y la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido.
 
 ## ¿Qué son las API de REST de GraphQL y Assets? {#what-are-the-apis}
 
@@ -28,7 +28,7 @@ El resto de esta guía se centra en el acceso a GraphQL y la entrega de fragment
 
 ## Cómo entregar un fragmento de contenido mediante GraphQL {#how-to-deliver-a-content-fragment}
 
-Los arquitectos de la información deben diseñar consultas para sus extremos de canal para entregar contenido. Estas consultas solo deben considerarse una vez por punto de conexión por modelo. Para los fines de esta guía de introducción, solo debe crear uno.
+Los arquitectos de la información deben diseñar consultas para sus extremos de canal para entregar contenido. Considere estas consultas solo una vez por extremo, por modelo. Para esta guía de introducción, cree solo una.
 
 1. AEM Inicie sesión en la aplicación y acceda a la [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Por ejemplo: `http://<host>:<port>/aem/graphiql.html`.

@@ -9,9 +9,9 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -236,20 +236,20 @@ Antes de una implementación, lea la [Descripción general](#general-description
 
 * **AEM Implementación de aplicación web**
 
-   * AEM Descarga de archivo de guerra de
-   * Realice las configuraciones en web.xml si es necesario (consulte la descripción general anterior)
+   * AEM Descargue el archivo de guerra de.
+   * Realice las configuraciones en web.xml si es necesario (consulte la descripción general anterior).
 
-      * Desempaquetar archivo WEB-INF/web.xml
-      * cambie el parámetro sling.run.modes a publish
-      * elimine los comentarios del parámetro inicial sling.home y establezca esta ruta como necesite
-      * Reempaquetar archivo web.xml
+      * Desempaquete el archivo WEB-INF/web.xml.
+      * Cambie el parámetro sling.run.modes a publish.
+      * Elimine los comentarios del parámetro inicial sling.home y establezca esta ruta según sea necesario.
+      * Vuelva a empaquetar el archivo web.xml.
 
-   * AEM Cambie el nombre del archivo de guerra a RAÍZ.war si desea implementarlo como aplicación web raíz, cambie el nombre a por ejemplo, aemauthor.war si desea tener aemauthor como raíz de contexto
-   * cópielo en la carpeta de aplicaciones web de tomcat
-   * AEM esperar hasta que se instale el
+   * AEM Cambie el nombre del archivo de guerra de la carpeta a ROOT.war si desea implementarlo como aplicación web raíz. Cambie el nombre a aemauthor.war si desea que aemauthor sea la raíz del contexto.
+   * Cópielo en la carpeta de aplicaciones web de tomcat.
+   * AEM Espere hasta que se haya instalado la.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Para obtener información acerca de cómo solucionar los problemas que pueden producirse durante la instalación, consulte:
 
-* [Solución de problemas](/help/sites-deploying/troubleshooting.md)
+* [Resolución de problemas](/help/sites-deploying/troubleshooting.md)

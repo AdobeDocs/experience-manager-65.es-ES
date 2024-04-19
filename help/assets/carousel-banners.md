@@ -10,9 +10,9 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4677'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Los titulares de carrusel permiten a los especialistas en marketing impulsar la conversión creando fácilmente contenido promocional giratorio interactivo y entregándolo en cualquier pantalla.
 
-Crear y modificar contenido destacado en titulares promocionales puede llevar mucho tiempo, lo que limita la capacidad de publicar rápidamente contenido nuevo o de segmentarlo. Los titulares de carrusel permiten crear o modificar rápidamente titulares giratorios. Puede añadir interactividad, como puntos interactivos que se vinculan a detalles del producto o recursos relacionados, y enviarlos a cualquier pantalla, lo que le permite comercializar nuevo contenido promocional más rápido.
+Crear y modificar contenido destacado en titulares promocionales puede llevar mucho tiempo, lo que limita la capacidad de publicar rápidamente contenido nuevo o de segmentarlo. Los titulares de carrusel permiten crear o modificar rápidamente titulares giratorios. Puede añadir interactividad, como puntos interactivos que se vinculan a detalles del producto o recursos relacionados, y enviarlos a cualquier pantalla, lo que le permite introducir nuevo contenido promocional en el mercado más rápido.
 
 Los titulares de carrusel se designan mediante un titular con la palabra **[!UICONTROL CONJUNTO DE CARRUSEL]**
 
@@ -39,11 +39,11 @@ En este ejemplo, un usuario ha pulsado o hecho clic en un mapa de imagen y ha ac
 
 ## Vea cómo se crean los titulares de carrusel {#watch-how-carousel-banners-are-created}
 
-Reproducir un tutorial en [cómo se crean los titulares del carrusel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutos y 33 segundos). También aprenderá a obtener una vista previa, editar y distribuir titulares de carrusel.
+Reproducir un tutorial en [cómo se crean los titulares del carrusel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutos y 33 segundos) También aprenderá a obtener una vista previa, editar y distribuir titulares de carrusel.
 
 >[!NOTE]
 >
->Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
+>Los usuarios no administrativos deben agregarse al **[!UICONTROL `dam-users`]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL `dam-users`]** grupo.
 
 ## Inicio rápido: Banners de carrusel {#quick-start-carousel-banners}
 
@@ -72,7 +72,7 @@ Para ayudarle a ponerse en marcha rápidamente con titulares de carrusel:
 
    En los conjuntos de carruseles, los usuarios navegan por las imágenes del titular y seleccionan zonas interactivas o mapas de imagen para acceder al contenido relevante.
 
-   Para crear un conjunto de carrusel en Assets, seleccione **[!UICONTROL Crear]**, luego seleccione **[!UICONTROL Conjuntos de carrusel]**. Añada recursos a las diapositivas y seleccione **[!UICONTROL Guardar]**. También puede editar el aspecto y el comportamiento del carrusel directamente en el editor.
+   Para crear un conjunto de carrusel en Assets, seleccione **[!UICONTROL Crear]**, luego seleccione **[!UICONTROL Conjuntos de carrusel]**. Agregue recursos a cada diapositiva y seleccione **[!UICONTROL Guardar]**. También puede editar el aspecto y el comportamiento del carrusel directamente en el editor.
 
 1. [Añadir puntos interactivos o mapas de imagen a un titular de imagen](#adding-hotspots-or-image-maps-to-an-image-banner).
 
@@ -98,7 +98,7 @@ Para editar los conjuntos de carrusel, consulte [edición de conjuntos de carrus
 
 Comience identificando las variables dinámicas utilizadas por la implementación de vista rápida existente para que pueda introducir correctamente los puntos interactivos o los datos del mapa de imagen durante el proceso de creación del conjunto de carrusel en Experience Manager Assets.
 
-Cuando añada zonas interactivas o mapas de imagen a una imagen de titular en Experience Manager Assets, asigne un SKU y variables adicionales opcionales a cada zona interactiva o mapa de imagen. Estas variables se utilizan más adelante para hacer coincidir puntos interactivos o mapas de imagen con contenido de vista rápida.
+Cuando añada puntos interactivos o mapas de imagen a una imagen de titular en Experience Manager Assets, asigne un SKU y variables adicionales opcionales a cada punto interactivo o mapa de imagen. Estas variables se utilizan más adelante para hacer coincidir puntos interactivos o mapas de imagen con contenido de vista rápida.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Durante este proceso, es importante visitar diferentes áreas del sitio web, con
 
 En el caso más simple, la única parte de la variable en la URL de vista rápida es el SKU del producto. En este caso, el valor SKU es el único fragmento de datos que necesita para añadir puntos interactivos o mapas de imagen a la imagen del titular.
 
-Sin embargo, en casos complejos, la dirección URL de vista rápida tiene diferentes elementos variables además del SKU, como ID de categoría, código de color y código de tamaño, por ejemplo. En estos casos, cada elemento es una variable independiente en la definición de datos de punto interactivo o mapa de imagen en la función de titular del carrusel.
+Sin embargo, en casos complejos, la dirección URL de vista rápida tiene diferentes elementos que difieren además del SKU, como ID de categoría, código de color y código de tamaño. En estos casos, cada elemento es una variable independiente en la definición de datos de punto interactivo o mapa de imagen en la función de titular del carrusel.
 
 Considere los siguientes ejemplos de direcciones URL de vista rápida y las variables de puntos interactivos o mapas de imagen resultantes:
 
@@ -186,7 +186,7 @@ Para cargar titulares de imágenes, consulte [Cargar recursos](/help/assets/mana
 
 >[!NOTE]
 >
->Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
+>Los usuarios no administrativos deben agregarse al **[!UICONTROL `dam-users`]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL `dam-users`]** grupo.
 
 **Para crear conjuntos de carrusel:**
 
@@ -277,7 +277,7 @@ Consulte también [Añadir mapas de imagen](/help/assets/image-maps.md).
    * Para zonas interactivas: en la imagen, seleccione una ubicación en la que desee que aparezca la zona interactiva.
    * Para mapas de imagen: en la imagen, seleccione y, a continuación, arrastre de la parte superior izquierda a la inferior derecha para crear el área del mapa de imagen. Puede ajustar el tamaño del mapa de imagen arrastrando las esquinas.
 
-   Si es necesario, arrastre el punto interactivo o el mapa de imagen a una nueva ubicación. Añada puntos interactivos o mapas de imagen adicionales según sea necesario.
+   Si es necesario, arrastre el punto interactivo o el mapa de imagen a una nueva ubicación. Añada más puntos interactivos o mapas de imagen según sea necesario.
 
    Para eliminar un punto interactivo o un mapa de imagen, seleccione la **[!UICONTROL Acciones]** pestaña. En el encabezado **[!UICONTROL Mapas y zonas interactivas]**, del menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione el nombre del punto interactivo o del mapa de imagen que desea eliminar. Seleccione el **[!UICONTROL Papelera]** junto al menú y, a continuación, seleccione **[!UICONTROL Eliminar]**.
 
@@ -336,7 +336,7 @@ Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments
 
 >[!NOTE]
 >
->Los usuarios no administrativos deben agregarse al **[!UICONTROL dam-users]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
+>Los usuarios no administrativos deben agregarse al **[!UICONTROL `dam-users`]** para poder crear o editar titulares de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarle al **[!UICONTROL dam-users]** grupo.
 
 Puede realizar varias tareas de edición en los conjuntos de carrusel, como las siguientes:
 

@@ -1,6 +1,6 @@
 ---
 title: Procesar formularios como HTML
-description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP de un explorador web. Puede utilizar la API de Java y la API de servicio web para procesar formularios como HTML.
+description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP de un explorador web. Puede utilizar la API Java&trade; y la API del servicio web para procesar formularios como HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,9 +9,9 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4104'
+source-wordcount: '4099'
 ht-degree: 0%
 
 ---
@@ -64,17 +64,17 @@ Debe moverse explícitamente de un panel a otro con la variable `xfa.host.pageUp
 >
 >Si desea personalizar el aspecto del botón Firma digital de HTML en un formulario de HTML, debe cambiar las siguientes propiedades en el archivo fscdigsig.css (dentro del archivo adobe-forms-ds.ear > adobe-forms-ds.war ):
 
-**.fsc-ds-ssb**: esta hoja de estilo es aplicable si hay un campo de signo en blanco.
+**`.fsc-ds-ssb`**: esta hoja de estilo es aplicable si hay un campo de signo en blanco.
 
-**.fsc-ds-ssv**: esta hoja de estilo es aplicable si hay un campo de signo válido.
+**`.fsc-ds-ssv`**: esta hoja de estilo es aplicable si hay un campo de signo válido.
 
-**.fsc-ds-ssc**: Esta hoja de estilo es aplicable si hay un campo de signo Válido pero los datos han cambiado.
+**`.fsc-ds-ssc`**: Esta hoja de estilo es aplicable si hay un campo de signo Válido pero los datos han cambiado.
 
-**.fsc-ds-ssi**: esta hoja de estilo es aplicable si hay un campo de signo no válido.
+**`.fsc-ds-ssi`**: esta hoja de estilo es aplicable si hay un campo de signo no válido.
 
-**.fsc-ds-popup-bg**: esta propiedad de hoja de estilos no se está utilizando.
+**`.fsc-ds-popup-bg`**: esta propiedad de hoja de estilos no se está utilizando.
 
-**.fsc-ds-popup-btn**: esta propiedad de hoja de estilos no se está utilizando.
+**.`fsc-ds-popup-btn`**: esta propiedad de hoja de estilos no se está utilizando.
 
 ## Ejecución de scripts {#running-scripts}
 

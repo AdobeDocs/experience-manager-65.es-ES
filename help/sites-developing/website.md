@@ -1,5 +1,5 @@
 ---
-title: Creación de un sitio web con todas las funciones (JSP)
+title: Crear un sitio web con todas las funciones (JSP)
 description: Este tutorial le enseña a crear un sitio web con todas las funciones con Adobe Experience Manager AEM ().
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4920'
+source-wordcount: '4919'
 ht-degree: 2%
 
 ---
 
-# Creación de un sitio web con todas las funciones (JSP){#create-a-fully-featured-website-jsp}
+# Crear un sitio web con todas las funciones (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >

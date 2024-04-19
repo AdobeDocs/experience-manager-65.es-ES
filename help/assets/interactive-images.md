@@ -10,9 +10,9 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4132'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Durante este proceso, es importante visitar diferentes áreas del sitio web, con
 
 En el caso más simple, la única parte de la variable en la URL de vista rápida es el SKU del producto. En este caso, el valor SKU es el único fragmento de datos que necesita para añadir puntos interactivos a la imagen del titular.
 
-Sin embargo, en casos complejos, la dirección URL de vista rápida tiene diferentes elementos variables además del SKU, como ID de categoría, código de color y código de tamaño. En estos casos, cada elemento es una variable independiente en la definición de datos de punto interactivo en la función de imagen interactiva de ventas en Experience Manager Assets.
+Sin embargo, en casos complejos, la dirección URL de vista rápida tiene diferentes elementos que difieren además del SKU, como ID de categoría, código de color y código de tamaño. En estos casos, cada elemento es una variable independiente en la definición de datos de punto interactivo en la función de imagen interactiva de ventas en Experience Manager Assets.
 
 Considere los siguientes ejemplos de direcciones URL de vista rápida y las variables de puntos interactivos resultantes:
 
@@ -375,9 +375,9 @@ La integración es tan sencilla como eliminar el `IMG` y reemplazándolo por el 
 
 Para aplicar un &quot;recorte&quot; a una imagen interactiva de ventas para un entorno interactivo, puede incluir el atributo de configuración Imagen interactiva `ZoomView.iscommand` a la ruta. El componente `ZoomView` se llama y `iscommand` es el comando de servicio de imágenes &quot;recortar&quot; que se aplica.
 
-Consulte [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) atributo de configuración.
+Consulte [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) atributo de configuración.
 
-Consulte [recorte](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) comando de servicio de imágenes.
+Consulte [recorte](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) comando de servicio de imágenes.
 
 Ya está listo para integrar la imagen interactiva con una vista rápida existente en su sitio web.
 

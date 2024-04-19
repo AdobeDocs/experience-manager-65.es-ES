@@ -9,7 +9,7 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 39%
@@ -40,7 +40,7 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
 * **Retroceder un paso**
 
-  Si descubre que un paso o una serie de pasos debe repetirse, puede retroceder. Esto permite seleccionar una etapa, que se produjo anteriormente en el flujo de trabajo, para volver a procesarla. El flujo de trabajo vuelve al paso especificado y continúa desde ahí.
+  Si descubre que un paso o una serie de pasos debe repetirse, puede retroceder. Esto permite seleccionar un paso que se produjo anteriormente en el flujo de trabajo para volver a procesarlo. El flujo de trabajo vuelve al paso especificado y continúa desde ahí.
 
 ## Participar en un flujo de trabajo {#participating-in-a-workflow}
 

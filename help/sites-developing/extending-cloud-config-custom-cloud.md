@@ -9,16 +9,16 @@ exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Creación de un Cloud Service personalizado{#creating-a-custom-cloud-service}
 
-El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto permite insertar marcado personalizado en la página de forma estructurada. Esto es principalmente útil para proveedores de análisis de terceros, por ejemplo, Google Analytics, Chartbeat, etc. Los Cloud Service se heredan de las páginas principales a las secundarias, con la capacidad de interrumpir la herencia en cualquier nivel.
+El conjunto predeterminado de Cloud Services se puede ampliar con tipos de Cloud Service personalizados. Esto permite insertar marcado personalizado en la página de forma estructurada. Esto es principalmente útil para proveedores de análisis de terceros como, por ejemplo, Google Analytics, Chartbeat, etc. Los Cloud Service se heredan de las páginas principales a las secundarias, con la capacidad de interrumpir la herencia en cualquier nivel.
 
 >[!NOTE]
 >

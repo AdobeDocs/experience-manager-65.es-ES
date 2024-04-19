@@ -7,10 +7,10 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 90%
+source-wordcount: '1226'
+ht-degree: 86%
 
 ---
 
@@ -46,13 +46,13 @@ El artículo utiliza un ejemplo para demostrar cómo sincronizar el formulario a
 
 Después de cargar el paquete, puede ver estos recursos en la interfaz de usuario de AEM Forms.
 
-Instale el paquete utilizando el administrador de paquetes: `https://<server>:<port>/crx/packmgr/index.jsp`
+Instale el paquete mediante el Administrador de paquetes: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 El paquete contiene los siguientes recursos:
 
 1. `sample-form.xdp`: La plantilla de formulario XFA utilizada como ejemplo
 
-1. `sample-xfa-af`: El formulario adaptable basado en el archivo sample-form.xdp. Este formulario adaptable no incluye ningún campo. En el siguiente paso, agregaremos contenido a este formulario adaptable.
+1. `sample-xfa-af`: El formulario adaptable basado en el archivo sample-form.xdp. Este formulario adaptable no incluye ningún campo. En el siguiente paso, agregará contenido a este formulario adaptable.
 
 ### Agregar contenido al formulario adaptable {#add-content-to-adaptive-form-br}
 
@@ -63,7 +63,7 @@ El paquete contiene los siguientes recursos:
 
 >[!NOTE]
 >
->En los pasos anteriores, sobrescribimos una propiedad de un campo en el archivo XDP. Por lo tanto, esta propiedad no se sincroniza si la propiedad correspondiente del archivo XDP se modifica más adelante.
+>En los pasos anteriores, sobrescribió una propiedad de un campo en el archivo XDP. Por lo tanto, esta propiedad no se sincroniza si la propiedad correspondiente del archivo XDP se edita más adelante.
 
 ## Detectar cambios en el archivo XDP {#detecting-changes-in-xdp-file}
 
@@ -133,7 +133,7 @@ El campo que se ha eliminado también se marca con un icono para indicar un erro
 
 >[!NOTE]
 >
->Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se trata como un campo de formulario adaptable normal sin vincular y se incluye en la sección sin vincular del archivo XML de salida.
+>Los campos del formulario adaptable que tienen un enlace incorrecto (un valor `bindRef` no válido en el cuadro de diálogo de edición) también se consideran campos eliminados. Si el autor no corrige estos errores y publica el formulario adaptable, el campo se trata como un campo de formulario adaptable independiente normal y se incluye en la sección independiente del archivo XML de salida.
 
 ## Descargas {#downloads}
 

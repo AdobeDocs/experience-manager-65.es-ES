@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2113'
 ht-degree: 3%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] viene con un conjunto de flujos de trabajo predeterminados y controladores de medios para procesar recursos. Un flujo de trabajo define las tareas que se ejecutan en los recursos y, a continuación, delega las tareas específicas en los controladores de medios como, por ejemplo, la generación de miniaturas o la extracción de metadatos.
 
-Se puede configurar un flujo de trabajo para que se ejecute automáticamente cuando se cargue un recurso de un tipo MIME concreto. Los pasos de procesamiento se definen en términos de una serie de [!DNL Assets] controladores de medios. [!DNL Experience Manager] proporciona algunos [controladores integrados,](#default-media-handlers) y los adicionales pueden ser [desarrollado a medida](#creating-a-new-media-handler) o se define delegando el proceso a un [herramienta de línea de comandos](#command-line-based-media-handler).
+Se puede configurar un flujo de trabajo para que se ejecute automáticamente cuando se cargue un recurso de un tipo MIME concreto. Los pasos de procesamiento se definen en términos de una serie de [!DNL Assets] controladores de medios. [!DNL Experience Manager] proporciona algunos [controladores integrados](#default-media-handlers), y las adicionales pueden ser [desarrollado a medida](#creating-a-new-media-handler) o se define delegando el proceso a un [herramienta de línea de comandos](#command-line-based-media-handler).
 
-Los controladores de medios son servicios de [!DNL Assets] que realizan acciones específicas en los recursos. Por ejemplo, cuando se carga un archivo de audio MP3 en [!DNL Experience Manager], un flujo de trabajo déclencheur un controlador MP3 que extrae los metadatos y genera una miniatura. Los controladores de medios se utilizan generalmente en combinación con flujos de trabajo. Los tipos MIME más comunes son compatibles con [!DNL Experience Manager]. Se pueden realizar tareas específicas en los recursos ampliando/creando flujos de trabajo, ampliando/creando controladores de medios o deshabilitando/habilitando controladores de medios.
+Los controladores de medios son servicios de [!DNL Assets] que realizan acciones específicas en los recursos. Por ejemplo, cuando se carga un archivo de audio MP3 en [!DNL Experience Manager], un flujo de trabajo déclencheur un controlador MP3 que extrae los metadatos y genera una miniatura. Los controladores de medios se utilizan con flujos de trabajo. Los tipos MIME más comunes son compatibles con [!DNL Experience Manager]. Se pueden realizar tareas específicas en los recursos ampliando o creando flujos de trabajo, ampliando o creando controladores de medios, o deshabilitando y habilitando controladores de medios.
 
 >[!NOTE]
 >
->Consulte la [Formatos compatibles con Assets](assets-formats.md) para obtener una descripción de todos los formatos admitidos por [!DNL Assets] y funciones compatibles con cada formato.
+>Consulte la [Formatos de recurso admitidos](assets-formats.md) para obtener una descripción de todos los formatos admitidos por [!DNL Assets] y funciones compatibles con cada formato.
 
 ## Controladores de medios predeterminados {#default-media-handlers}
 
@@ -38,7 +38,7 @@ Los siguientes controladores de medios están disponibles en [!DNL Assets] y ges
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Cuando se carga un archivo MP3, es [procesado mediante una biblioteca de terceros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La biblioteca calcula una longitud aproximada no precisa si el MP3 tiene una velocidad de bits variable (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b> - Un archivo MP3 cargado es [procesado mediante una biblioteca de terceros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La biblioteca calcula una longitud aproximada no precisa si el MP3 tiene una velocidad de bits variable (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -65,9 +65,9 @@ Para ver los controladores de medios activos:
 
 ## Uso de controladores de medios en flujos de trabajo para realizar tareas en recursos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-Los controladores de medios son servicios que generalmente se utilizan en combinación con flujos de trabajo.
+Los controladores de medios son servicios que se utilizan con flujos de trabajo.
 
-[!DNL Experience Manager] tiene algunos flujos de trabajo predeterminados para procesar recursos. Para verlos, abra la consola Flujo de trabajo y haga clic en **[!UICONTROL Modelos]** pestaña: los títulos del flujo de trabajo que comienzan con [!DNL Assets] son los recursos específicos.
+[!DNL Experience Manager] tiene algunos flujos de trabajo predeterminados para procesar recursos. Para verlos, abra la consola Flujo de trabajo y haga clic en **[!UICONTROL Modelos]** pestaña: los títulos del flujo de trabajo que comienzan con [!DNL Assets] son los específicos de los recursos.
 
 Los flujos de trabajo existentes se pueden ampliar y se pueden crear otros nuevos para procesar recursos según requisitos específicos.
 
@@ -92,7 +92,7 @@ Para admitir un nuevo tipo de medios o ejecutar tareas específicas en un recurs
 
 La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupe de la mayoría de las cosas y proporcione un comportamiento predeterminado razonable: `com.day.cq.dam.core.AbstractAssetHandler` clase.
 
-Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador de herencia en `true`.
+Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si ha heredado de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador de herencia en `true`.
 
 Implemente los siguientes métodos:
 
@@ -108,14 +108,14 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que añade compatibilidad con tipos MIME específicos. Añadir un nuevo tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que añade compatibilidad con tipos MIME específicos. Añadir un tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` clase: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente.
 * Clase `com.day.cq.dam.core.AbstractSubAssetHandler`:
-   * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente, además de otra funcionalidad utilizada comúnmente para la extracción de subrecursos.
+   * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona la funcionalidad utilizada comúnmente, además de la funcionalidad utilizada comúnmente para la extracción de subrecursos.
    * La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupe de la mayoría de las cosas y proporcione un comportamiento predeterminado razonable: la clase com.day.cq.dam.core.AbstractAssetHandler.
-   * Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador de herencia en true.
+   * Esta clase ya proporciona un descriptor de servicio abstracto. Por lo tanto, si ha heredado de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador de herencia en true.
 
-Es necesario implementar los siguientes métodos:
+Se deben implementar los siguientes métodos:
 
 * `extractMetadata()`: este método extrae todos los metadatos disponibles.
 * `getThumbnailImage()`: este método crea una imagen en miniatura a partir del recurso transmitido.
@@ -127,13 +127,13 @@ package my.own.stuff; /&amp;ast; &amp;ast; &amp;ast; @scr.component inherit=&quo
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que añade compatibilidad con tipos MIME específicos. Añadir un nuevo tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que añade compatibilidad con tipos MIME específicos. Añadir un tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` clase: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` clase: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente, además de otra funcionalidad utilizada comúnmente para la extracción de subrecursos.
 
 #### Ejemplo: Creación de un controlador de texto específico {#example-create-a-specific-text-handler}
 
-En esta sección, creará un controlador de texto específico que genera miniaturas con una marca de agua.
+En esta sección, se crea un controlador de texto específico que genera miniaturas con una marca de agua.
 
 Proceda como se indica a continuación:
 
@@ -144,8 +144,8 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
 1. En Eclipse, cree `myBundle` [!DNL Maven] proyecto:
 
    1. En la barra de menús, haga clic en **[!UICONTROL Archivo]** > **[!UICONTROL Nuevo]** > **[!UICONTROL Otros]**.
-   1. En el cuadro de diálogo, expanda [!DNL Maven] carpeta, seleccione [!DNL Maven] proyecto y haga clic en **[!UICONTROL Siguiente]**.
-   1. Marque la casilla Crear un proyecto simple y la casilla Usar ubicaciones predeterminadas de Workspace y, a continuación, haga clic en **[!UICONTROL Siguiente]**.
+   1. En el cuadro de diálogo, expanda [!DNL Maven] carpeta, seleccione la [!DNL Maven] proyecto y haga clic en **[!UICONTROL Siguiente]**.
+   1. Marque la casilla Crear un proyecto simple y el cuadro Usar ubicación predeterminada de Workspace y luego haga clic en **[!UICONTROL Siguiente]**.
    1. Defina un [!DNL Maven] proyecto:
 
       * Id de grupo: `com.day.cq5.myhandler`.
@@ -155,10 +155,10 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
 
    1. Haga clic en **[!UICONTROL Finalizar]**.
 
-1. Configure las variables [!DNL Java] compilador a la versión 1.5:
+1. Configure las variables [!DNL Java™] compilador a la versión 1.5:
 
    1. Haga clic con el botón derecho en `myBundle` proyecto, seleccione [!UICONTROL Propiedades].
-   1. Seleccionar [!UICONTROL Compilador Java] y establezca las siguientes propiedades en 1.5:
+   1. Seleccionar [!UICONTROL Compilador Java™] y establezca las siguientes propiedades en 1.5:
 
       * Nivel de cumplimiento del compilador
       * Compatibilidad de archivos .class generada
@@ -283,16 +283,16 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
     </dependencies>
    ```
 
-1. Creación del paquete `com.day.cq5.myhandler` que contiene el [!DNL Java] clases en `myBundle/src/main/java`:
+1. Creación del paquete `com.day.cq5.myhandler` que contiene el [!DNL Java™] clases en `myBundle/src/main/java`:
 
    1. En myBundle, haga clic con el botón derecho `src/main/java`, seleccione Nuevo y luego Empaquetar.
    1. Asígnele un nombre `com.day.cq5.myhandler` y haga clic en Finish.
 
-1. Cree el [!DNL Java] clase `MyHandler`:
+1. Cree el [!DNL Java™] clase `MyHandler`:
 
    1. Entrada [!DNL Eclipse], en `myBundle/src/main/java`, haga clic con el botón derecho en `com.day.cq5.myhandler` paquete. Seleccionar [!UICONTROL Nuevo], entonces [!UICONTROL Clase].
-   1. En la ventana de diálogo, asigne un nombre al [!DNL Java] clase `MyHandler` y haga clic en [!UICONTROL Finalizar]. [!DNL Eclipse] crea y abre el archivo `MyHandler.java`.
-   1. Entrada `MyHandler.java` reemplace el código existente por el siguiente y, a continuación, guarde los cambios:
+   1. En la ventana de diálogo, asigne un nombre al [!DNL Java™] clase `MyHandler` y haga clic en [!UICONTROL Finalizar]. [!DNL Eclipse] crea y abre el archivo `MyHandler.java`.
+   1. Entrada `MyHandler.java`, reemplace el código existente por el siguiente y, a continuación, guarde los cambios:
 
    ```java
    package com.day.cq5.myhandler;
@@ -434,7 +434,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
    }
    ```
 
-1. Compile el [!DNL Java] y cree el paquete:
+1. Compile el [!DNL Java™] y cree el paquete:
 
    1. Haga clic con el botón derecho en `myBundle` proyecto, seleccione **[!UICONTROL Ejecutar como]**, entonces **[!UICONTROL Instalación de Maven]**.
    1. El paquete `myBundle-0.0.1-SNAPSHOT.jar` (que contiene la clase compilada) se crea en `myBundle/target`.
@@ -443,22 +443,22 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
 1. Copiar el paquete `myBundle-0.0.1-SNAPSHOT.jar` y guárdelo en `/apps/myApp/install` (por ejemplo, con WebDAV) El nuevo controlador de texto ahora está activo en [!DNL Experience Manager].
 1. En el explorador, abra el [!UICONTROL Consola de administración web Apache Felix]. Seleccione el [!UICONTROL Componentes] y deshabilite el controlador de texto predeterminado `com.day.cq.dam.core.impl.handler.TextHandler`.
 
-## Controlador de medios basado en línea de comandos {#command-line-based-media-handler}
+## Controlador de medios basado en la línea de comandos {#command-line-based-media-handler}
 
-[!DNL Experience Manager] permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como [!DNL ImageMagick]) y para agregar la nueva representación al recurso. Solo es necesario instalar la herramienta de línea de comandos en el disco que aloja el [!DNL Experience Manager] y para añadir y configurar un paso de proceso en el flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, también permite filtrar según tipos MIME específicos y crear varias miniaturas en función de la nueva representación.
+[!DNL Experience Manager] permite ejecutar cualquier herramienta de línea de comandos dentro de un flujo de trabajo para convertir recursos (como [!DNL ImageMagick]) y para agregar la nueva representación al recurso. Instale únicamente la herramienta de línea de comandos en el disco que aloja el [!DNL Experience Manager] y para añadir y configurar un paso de proceso en el flujo de trabajo. El proceso invocado, llamado `CommandLineProcess`, también filtra según tipos MIME específicos y para crear varias miniaturas basadas en la nueva representación.
 
 Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en [!DNL Assets]:
 
 * Transformación de EPS e IA mediante [ImageMagick](https://www.imagemagick.org/script/index.php) y [Ghostscript](https://www.ghostscript.com/).
 * Transcodificación de vídeo FLV mediante [FFmpeg](https://ffmpeg.org/).
 * Codificación MP3 con [COJO](https://lame.sourceforge.io/).
-* Procesamiento de audio mediante [SOX](https://sox.sourceforge.io/).
+* Procesamiento de audio mediante [SOX](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
 >En sistemas que no son Windows, la herramienta FFmpeg devuelve un error al generar representaciones para un recurso de vídeo que tiene una comilla simple (&#39;) en su nombre de archivo. Si el nombre del archivo de vídeo incluye una comilla simple, elimínelo antes de cargarlo en [!DNL Experience Manager].
 
-El `CommandLineProcess` El proceso realiza las siguientes operaciones en el orden en que aparecen en la lista:
+El `CommandLineProcess` process realiza las siguientes operaciones en el orden indicado:
 
 * Filtra el archivo según tipos MIME específicos, si se especifican.
 * Crea un directorio temporal en el disco que aloja el [!DNL Experience Manager] servidor.
@@ -470,14 +470,14 @@ El `CommandLineProcess` El proceso realiza las siguientes operaciones en el orde
 
 ### Un ejemplo con [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-El siguiente ejemplo muestra cómo configurar el paso de proceso de la línea de comandos para que cada vez que se añada un recurso con el GIF o TIFF de tipo electrónico miMIME a `/content/dam` en el [!DNL Experience Manager] servidor, se crea una imagen volteada del original junto con tres miniaturas adicionales (140 x 100, 48 x 48 y 10 x 250).
+El siguiente ejemplo muestra cómo configurar el paso de proceso de la línea de comandos para que cada vez que se añada un recurso con el GIF o TIFF de tipo electrónico miMIME a `/content/dam` en el [!DNL Experience Manager] servidor, se crea una imagen volteada del original. También se crean tres miniaturas más de 140 x 100, 48 x 48 y 10 x 250.
 
 Para ello, utilice [!DNL ImageMagick]. [!DNL ImageMagick] es un software gratuito de línea de comandos que se utiliza para crear, editar y componer imágenes de mapa de bits.
 
 Instalar [!DNL ImageMagick] en el disco que aloja el [!DNL Experience Manager] servidor:
 
 1. Instalar [!DNL ImageMagick]: consulte [Documentación de ImageMagick](https://www.imagemagick.org/script/download.php).
-1. Configure la herramienta para que pueda ejecutar convert en la línea de comandos.
+1. Configure la herramienta para que una vez en la línea de comandos, pueda ejecutar `convert`.
 1. Para ver si la herramienta está instalada correctamente, ejecute el siguiente comando `convert -h` en la línea de comandos.
 
    Muestra una pantalla de ayuda con todas las opciones posibles de la herramienta de conversión.
@@ -514,7 +514,7 @@ Por ejemplo, si [!DNL ImageMagick] está instalado en el disco que aloja el [!DN
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-a continuación, cuando se ejecute el flujo de trabajo, el paso solo se aplicará a los recursos que tengan `image/gif` o `mime:image/tiff` as `mime-types`, crea una imagen volteada del original, lo convierte en JPG y crea tres miniaturas que tienen las dimensiones: 140x100, 48x48 y 10x250.
+A continuación, cuando se ejecute el flujo de trabajo, el paso solo se aplicará a los recursos que tengan `image/gif` o `mime:image/tiff` as `mime-types`. Crea una imagen volteada del original, la convierte en JPG y crea tres miniaturas con las dimensiones 140x100, 48x48 y 10x250.
 
 Utilice lo siguiente [!UICONTROL Argumentos del proceso] para crear las tres miniaturas estándar con [!DNL ImageMagick]:
 

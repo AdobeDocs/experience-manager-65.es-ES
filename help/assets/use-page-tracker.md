@@ -6,7 +6,7 @@ role: Architect, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 El rastreador de páginas es un fragmento de código JavaScript que se incluye en el código de sitios web de terceros para permitir que Adobe Analytics capture los datos de uso en [!DNL Adobe Experience Manager Assets] en estos sitios web.
 
-Para capturar eventos, como clics, específicos de los recursos, también se incluye el código de incrustación en el código de los sitios web de terceros.
+Para capturar eventos, como clics específicos de los recursos, también se incluye el código de incrustación en el código de los sitios web de terceros.
 
 El siguiente código de ejemplo muestra la apariencia de una página web que contiene el código de seguimiento de página y el código de incrustación:
 

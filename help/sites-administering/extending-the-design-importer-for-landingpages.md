@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -368,11 +368,11 @@ HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí,
 
 ### Parsys {#parsys}
 
-AEM AEM El componente parsys es un componente de contenedor que puede contener otros componentes de la. Es posible añadir un componente parsys en el HTML importado. AEM Esto permite al usuario añadir o eliminar componentes editables de la a la página de aterrizaje incluso después de importarlos.
+AEM AEM El componente de sistema de datos de Parsys es un componente de contenedor que puede contener otros componentes de la. Es posible añadir un componente Parsys en el HTML importado. AEM Esto permite al usuario añadir o eliminar componentes editables de la a la página de aterrizaje incluso después de importarlos.
 
 El sistema de párrafos permite a los usuarios añadir componentes mediante la barra de tareas.
 
-Marcado del HTML para insertar un componente parsys ( `foundation/components/parsys`) en el HTML dentro del paquete de diseño:
+Marcado del HTML para insertar un componente Parsys ( `foundation/components/parsys`) en el HTML dentro del paquete de diseño:
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ Marcado del HTML para insertar un componente parsys ( `foundation/components/par
 
 Incluir el marcado anterior en el HTML hace lo siguiente:
 
-* AEM Inserta un componente parsys de la (foundation/components/parsys) en la página de aterrizaje creada después de importar el paquete de diseño.
-* Inicializa la barra de tareas con componentes predeterminados. Se pueden añadir nuevos componentes a la página de aterrizaje arrastrando componentes de la barra de tareas al componente parsys.
-* Dos componentes de título también forman parte de parsys.
+* AEM Inserta un componente Parsys de la (foundation/components/parsys) en la página de aterrizaje creada después de importar el paquete de diseño.
+* Inicializa la barra de tareas con componentes predeterminados. Se pueden añadir nuevos componentes a la página de aterrizaje arrastrando componentes de la barra de tareas al componente Parsys.
+* Dos componentes de título también forman parte de Parsys.
 
 ### Público destinatario {#target}
 
@@ -543,7 +543,7 @@ Al importar el paquete de diseño, pueden producirse varios errores, que se desc
 
 ### Inicialización de la barra de tareas con componentes relevantes de la página de aterrizaje {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-Si el paquete de diseño contiene un marcado de componente parsys, después de la importación, la barra de tareas comienza a mostrar los componentes relevantes de la página de aterrizaje. Puede arrastrar y soltar nuevos componentes en el componente parsys de la página de aterrizaje. También puede ir al modo de diseño y agregar nuevos componentes a la barra de tareas.
+Si el paquete de diseño contiene un marcado de componente Parsys, después de la importación, la barra de tareas comienza a mostrar los componentes relevantes de la página de aterrizaje. Puede arrastrar y soltar nuevos componentes en el componente Parsys de la página de aterrizaje. También puede ir al modo de diseño y agregar nuevos componentes a la barra de tareas.
 
 ### Mensajes de error mostrados durante la importación {#error-messages-displayed-during-import}
 

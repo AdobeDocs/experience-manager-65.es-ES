@@ -10,7 +10,7 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 73%
@@ -173,7 +173,7 @@ También puede utilizar la cronología para delegar o asignar un paso:
 
 ### Realización de un paso hacia atrás durante el paso de participante {#performing-step-back-on-a-participant-step}
 
-Si descubre que un paso o una serie de pasos debe repetirse, puede retroceder. Esto permite seleccionar una etapa, que se produjo anteriormente en el flujo de trabajo, para volver a procesarla. El flujo de trabajo vuelve al paso especificado y continúa desde ahí.
+Si descubre que un paso o una serie de pasos debe repetirse, puede retroceder. Esto permite seleccionar un paso que se produjo anteriormente en el flujo de trabajo para volver a procesarlo. El flujo de trabajo vuelve al paso especificado y continúa desde ahí.
 
 En esta acción puede indicar lo siguiente:
 

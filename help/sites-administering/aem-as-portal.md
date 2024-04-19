@@ -10,9 +10,9 @@ exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6074'
+source-wordcount: '6073'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ El portlet se puede configurar con las siguientes preferencias:
 
 #### Consola web OSGi {#osgi-web-console}
 
-AEM Suponiendo que el servidor del portal se ejecuta en el host localhost, el puerto 8080 y la aplicación web del portlet de la aplicación se montan en el contexto de la aplicación web *cqportlet*, la url a para la consola web es `https://localhost:8080/cqportlet/cqbridge/system/console`. El usuario y la contraseña predeterminados son **administrador**.
+AEM Suponiendo que el servidor del portal se ejecuta en el host localhost, el puerto 8080 y la aplicación web del portlet de la aplicación se montan en el contexto de la aplicación web *cqportlet*, la URL de la consola web es `https://localhost:8080/cqportlet/cqbridge/system/console`. El usuario y la contraseña predeterminados son **administrador**.
 
 Abra el **Configuraciones** y seleccione **Configuración del servidor CQ de directorio de portal**. Aquí se especifica la dirección URL base del autor y la instancia de publicación. Este procedimiento se describe en [Configuración del portlet](#configuring-the-portlet).
 

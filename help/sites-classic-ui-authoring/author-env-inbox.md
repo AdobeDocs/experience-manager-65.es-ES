@@ -10,7 +10,7 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -106,7 +106,7 @@ Para recibir notificaciones solo para acciones en la página definida por la rut
 
 AEM Si ha elegido recibir notificaciones en la bandeja de entrada de la bandeja de entrada de la, esta se rellenará con notificaciones. Puede [ver las notificaciones](#viewing-your-notifications), luego seleccione las notificaciones necesarias para:
 
-* Apruébelo haciendo clic en **Aprobar**: el valor en la variable **Leer** se establece en **true**.
+* Acéptelo haciendo clic en **Aprobar**: el valor en la variable **Leer** se establece en **true**.
 
 * Elimínelo haciendo clic en **Eliminar**.
 

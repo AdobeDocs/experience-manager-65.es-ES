@@ -9,9 +9,9 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2838'
 ht-degree: 82%
 
 ---
@@ -210,7 +210,7 @@ Para crear un área como una Live Copy, haga lo siguiente:
 
 ## Vincular sitios a un área {#linking-sites-to-an-area}
 
-Puede vincular áreas a cualquiera de las páginas o a un sitio. Todas las subpáginas heredan las áreas, a menos que dichas páginas se superpongan debido a una asignación en una subpágina. Sin embargo, normalmente se establece el vínculo en el nivel del sitio.
+Puede vincular áreas a cualquiera de las páginas o a un sitio. Todas las subpáginas heredan las áreas, a menos que dichas páginas se reproduzcan en exceso mediante una asignación en una subpágina. Sin embargo, normalmente se establece el vínculo en el nivel del sitio.
 
 Al vincular, solo están disponibles las actividades, experiencias y ofertas del área seleccionada. Esto evita mezclar accidentalmente el contenido administrado de forma independiente. Si no se ha configurado otra área, se usa la principal de cada marca.
 

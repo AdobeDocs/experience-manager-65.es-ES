@@ -9,9 +9,9 @@ exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ La lucha por el cumplimiento de estos cinco principios debería dar como resulta
 
 ### Siga el principio de solidez {#follow-the-robustness-principle}
 
-El Principio de Solidez establece que debes ser conservador en lo que envías, pero ser liberal en lo que aceptas. En otras palabras, cuando envíe mensajes a un tercero, debe cumplir completamente con las especificaciones. Sin embargo, cuando reciba mensajes de terceros, debe aceptar mensajes no conformes siempre que el significado del mensaje sea claro.
+El Principio de Solidez establece que debes ser conservador en lo que envías, pero ser liberal en lo que aceptas. En otras palabras, al enviar mensajes a un tercero, debe cumplir completamente con las especificaciones. Sin embargo, cuando reciba mensajes de terceros, debe aceptar mensajes no conformes siempre que el significado del mensaje sea claro.
 
 ### Implementar picos en sus propios módulos {#implement-spikes-in-their-own-modules}
 

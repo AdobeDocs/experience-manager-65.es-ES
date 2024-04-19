@@ -7,16 +7,16 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 97%
+source-wordcount: '2099'
+ht-degree: 87%
 
 ---
 
 # Crear formularios adaptables accesibles{#creating-accessible-adaptive-forms}
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un método antiguo para crear Forms adaptable mediante componentes de base. </span>
 
 ## Introducción {#introduction}
 
@@ -43,7 +43,7 @@ La herramienta Inspector de nombres y descripciones accesibles (ANDI) ayuda a id
 * Detecta problemas de accesibilidad del teclado y del contraste de color
 * Identifica claramente el contenido del lector de pantalla de acuerdo con los estándares
 
-ANDI trabaja con los principales exploradores de Internet. Consulte la [documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
+ANDI trabaja con los principales exploradores de Internet. Consulte [Documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
 
 ### Descargue e instale la temática Ultramarine-Accessible
 
@@ -62,7 +62,7 @@ Debe centrarse en cuatro aspectos clave: navegación mediante el teclado, contra
 Aplique la temática Ultramarine-Accessible al formulario adaptable existente. Para aplicar la temática, haga lo siguiente:
 
 1. Abra el formulario adaptable para editarlo.
-1. Seleccione un componente y el icono principal. En el menú contextual, seleccione **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione el icono configurar.
+1. Seleccione un componente y el icono principal. En el menú contextual, seleccione **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione el icono Configurar.
 1. Seleccione la temática Ultramarine-Accessible en el explorador de propiedades y seleccione el icono **[!UICONTROL Guardar]**.
 1. Actualice la ventana del explorador. La temática se aplicará al formulario adaptable.
 
@@ -74,7 +74,7 @@ Después de aplicar una temática accesible, realice las siguientes correcciones
 
 1. Agregue un componente de encabezado que contenga el nombre del formulario al formulario adaptable. Si el diseño de formulario especifica un nombre de empresa, agregue también un componente de encabezado independiente para el nombre de empresa.
 
-   La mayoría de las herramientas de accesibilidad informan a los usuarios sobre la jerarquía del contenido para ayudarles a comprender la estructura de la página web. Defina niveles de encabezado distintos para el nombre de organización y el texto del nombre del formulario en el formulario adaptable para proporcionar una estructura jerárquica a este texto. Además, utilice un componente Texto antes de cada panel y sección con un nivel de encabezado adecuado para crear una jerarquía.
+   La mayoría de las herramientas de accesibilidad informan a los usuarios sobre la jerarquía del contenido para ayudarles a comprender la estructura de la página web. Defina niveles de encabezado diferentes para el nombre de organización y el texto del nombre del formulario en el formulario adaptable para proporcionar una estructura jerárquica a estos textos. Además, utilice un componente Texto antes de cada panel y sección con un nivel de encabezado adecuado para crear una jerarquía.
 
    ![Aplicar un estilo de encabezado](assets/apply-style.gif)
 
@@ -90,7 +90,7 @@ Después de aplicar una temática accesible, realice las siguientes correcciones
 
 1. Establezca el texto de accesibilidad personalizado para el componente selector de fechas. Por ejemplo, introduzca la fecha de nacimiento. Los lectores de pantalla leen estos textos de accesibilidad personalizados.
 
-1. Utilice una descripción breve en lugar de una descripción larga para los componentes del formulario adaptable. Una descripción larga agrega el botón de ayuda. Asegúrese de que el área adaptable no tenga ningún botón de ayuda.
+1. Utilice una descripción breve en lugar de una descripción larga para los componentes del formulario adaptable. Una descripción larga agrega el botón de ayuda. Asegúrese de que el formulario adaptable no tenga ningún botón de Ayuda.
 
 1. Agregue texto de accesibilidad personalizado a todas las celdas de solo lectura de las tablas. Además, deshabilite todas las celdas de solo lectura de las tablas.
 
