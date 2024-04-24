@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 27%
+ht-degree: 16%
 
 ---
 
@@ -39,7 +42,7 @@ Consulte también la sección interactiva [Guía de componentes de la comunidad]
 >
 >Leer [Conceptos básicos de componentes de comunidades](/help/communities/basics.md) ya que contiene la información necesaria para la creación con componentes de Communities.
 
-| **Título del componente** | **Funcionalidad** |
+| **Título del componente** | **Función** |
 |---|---|
 | Flujos de actividad | [Flujos de actividad](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
@@ -47,7 +50,7 @@ Consulte también la sección interactiva [Guía de componentes de la comunidad]
 | Calendario | [Calendario](/help/communities/calendar.md) |
 | Comentarios | [Comentarios](/help/communities/comments.md) |
 | Lista de actividades de la comunidad | [Tendencias de actividades](/help/communities/trends.md) |
-| Lista de miembros del grupo de la comunidad | [Grupos de la comunidad](/help/communities/creating-groups.md) |
+| Lista de miembros del grupo de la comunidad | [Grupos de comunidad](/help/communities/creating-groups.md) |
 | Escribir mensaje | [Mensajes](/help/communities/configure-messaging.md) |
 | Contenido destacado | [Contenido destacado](/help/communities/featured.md) |
 | Biblioteca de archivos | [Biblioteca de archivos](/help/communities/file-library.md) |
@@ -56,15 +59,15 @@ Consulte también la sección interactiva [Guía de componentes de la comunidad]
 | Foro | [Foro](/help/communities/forum.md) |
 | Ideación | [Ideación](/help/communities/ideation-feature.md) |
 | Tabla de clasificación | [Puntuación y distintivos](/help/communities/enabling-leaderboard.md) |
-| Me está gustando | [Me está gustando](/help/communities/liking.md) |
+| Me está gustando | [Gusto](/help/communities/liking.md) |
 | Mensaje | [Mensajes](/help/communities/configure-messaging.md) |
 | Lista de mensajes | [Mensajes](/help/communities/configure-messaging.md) |
 | P y R | [Preguntas y respuestas](/help/communities/working-with-qna.md) |
 | Búsqueda rápida | [Buscar](/help/communities/search.md) |
 | Clasificación | [Clasificación](/help/communities/rating.md) |
 | Preguntas relacionadas | [Preguntas y respuestas](/help/communities/working-with-qna.md) |
-| Repasos | [Repasos](/help/communities/reviews.md) |
-| Resumen de críticas (visualización) | [Repasos](/help/communities/reviews.md) |
+| Repasos | [Críticas](/help/communities/reviews.md) |
+| Resumen de críticas (visualización) | [Críticas](/help/communities/reviews.md) |
 | Búsqueda | [Buscar](/help/communities/search.md) |
 | Resultados de la búsqueda | [Buscar](/help/communities/search.md) |
 | Nube de etiquetas social | [Nube de etiquetas social](/help/communities/tagcloud.md) |

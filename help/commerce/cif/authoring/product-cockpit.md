@@ -3,7 +3,9 @@ title: Product Cockpit
 description: Uso de la cabina de productos, que proporciona una visión general unificada de los catálogos de productos vinculados y el contenido asociado.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
@@ -34,7 +36,7 @@ La activación de las funciones de catálogo organizadas requiere autenticación
 
 ## Apertura de la cabina de productos {#opening-product-cockpit}
 
-AEM La forma más fácil de acceder a la cabina del producto es a través del menú &quot;Comercio&quot; en el menú principal de la barra de herramientas de la tienda de productos, el menú principal de la barra de herramientas. También es posible utilizar Omnisearch (búsqueda de Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
+AEM La forma más fácil de acceder a la cabina del producto es a través del menú &quot;Comercio&quot; en el menú principal de la barra de herramientas de la tienda de productos, el menú principal de la barra de herramientas. También es posible utilizar Omnisearch (buscar Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM menú de](/help/commerce/cif/assets/aem-menu.png)
 
@@ -72,7 +74,7 @@ De forma predeterminada, la cabina de productos muestra los datos del catálogo 
 
 Al hacer clic en el icono de propiedades de un producto o categoría, se abre la vista de propiedades del objeto seleccionado. Las propiedades abiertas de una variante de producto son iguales para abrir las propiedades de producto principales.
 
-### Fichas de comercio {#tabs}
+### Fichas de Commerce {#tabs}
 
 Las pestañas general y de variante muestran propiedades de comercio predefinidas que provienen del backend del comercio. Estos datos (incl. AEM variantes) son datos de solo lectura en el caso de los datos, ya que el sistema de registro es el back-end de comercio. La pestaña variante solo aparece para productos con variantes y muestra una lista de todas las variantes.
 

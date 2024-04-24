@@ -1,9 +1,11 @@
 ---
-title: AEM Notas de la versión de Content and Commerce de 2022
-description: Notas de la versión de Adobe Experience Manager Content and Commerce de 2022.
+title: Notas de la versión 2022 de AEM Commerce y contenido de
+description: Contenido de Adobe Experience Manager y notas de la versión de Commerce 2022.
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 38%

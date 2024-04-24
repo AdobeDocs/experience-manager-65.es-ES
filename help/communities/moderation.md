@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 4%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -154,17 +156,17 @@ El sitio limita el UGC al que se hace referencia mostrado a las publicaciones de
 
 Tipo de contenido limita el CGU al que se hace referencia que se muestra a las publicaciones del tipo de recurso seleccionado. Se pueden seleccionar uno o más de los siguientes tipos. Se muestran todos los tipos si no se selecciona ninguno.
 
-* **Comentar**
+* **Comentario**
 * **Tema de foro**
-* **Respuesta del foro**
-* **Pregunta de P y R**
-* **Respuesta de P y R**
+* **Respuesta de foro**
+* **Pregunta de control de calidad**
+* **Respuesta de QnA**
 * **Artículo de blog**
 * **Comentario de blog**
 * **Evento de calendario**
 * **Comentario del calendario**
-* **Carpeta de la biblioteca de archivos**
-* **Documento de la biblioteca de archivos**
+* **Carpeta de biblioteca de archivos**
+* **Documento de biblioteca de archivos**
 * **Idea**
 * **Comentario de ideación**
 
@@ -292,7 +294,7 @@ En el modo de selección única, es posible:
 
 * Vea los detalles del usuario seleccionando el nombre del usuario.
 * Vea la publicación en contexto seleccionando el vínculo a la publicación.
-* [respuesta](#reply)
+* [Responder](#reply)
 * [Permitir](#allow)
 * [Denegar](#deny)
 * [Eliminar](#delete)
@@ -309,7 +311,7 @@ En la vista de la tarjeta, encima de los iconos de acción de moderación, está
 
 ![monomando](assets/singleselectmode.png)
 
-#### respuesta {#reply}
+#### Responder {#reply}
 
 ![responder](assets/reply.png)
 
@@ -341,7 +343,7 @@ En la selección única o en el modo por lotes, puede seleccionar elementos y el
 
 #### Cerrar {#close}
 
-![cerrar](assets/close.png)
+![close](assets/close.png)
 
 Al trabajar con una sola publicación, aparece el icono Cerrar si el tipo UGC admite la posibilidad de evitar nuevas publicaciones para ese recurso.
 

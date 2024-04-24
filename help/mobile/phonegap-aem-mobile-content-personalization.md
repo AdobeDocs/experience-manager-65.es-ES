@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 1%
+source-wordcount: '2571'
+ht-degree: 0%
 
 ---
 
@@ -275,7 +278,7 @@ Para ayudar a procesar contenido específicamente para aplicaciones móviles, AE
 
 Para cada mbox, un atributo de **cq-targeting** se agrega permitiendo a los desarrolladores de aplicaciones escribir código personalizado para consumirlo y utilizarlo como deseen. El [Aplicación de referencia híbrida de AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) tiene un ejemplo de una directiva de Angular que utiliza el atributo cq-targeting. El concepto de reemplazo de contenido, cuándo y cómo se realiza, depende del desarrollador de aplicaciones móviles. AEM Hay un SDK móvil que se entrega a través de /etc/clientlibs/mobileapps/js/mobileapps.js que proporciona una API para llamar al servicio de segmentación de Adobe. Depende del desarrollador de la aplicación especificar cuándo se debe realizar esa llamada según el diseño de la aplicación.
 
-## Siguientes pasos? {#what-s-next}
+## ¿Qué sigue? {#what-s-next}
 
 1. [Iniciar la experiencia de mi aplicación de AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Administrar el contenido de mi aplicación](/help/mobile/phonegap-manage-app-content.md)

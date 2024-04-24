@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 1%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Por último, los administradores publican de forma estratégica el contenido act
 
 >[!NOTE]
 >
->**Requisitos previos**:
+>**Requisito previo**:
 >
 >Entrada [Implementación y mantenimiento](/help/sites-deploying/deploy.md), los desarrolladores se familiarizaron con los componentes y las plantillas del sistema en Adobe Experience Manager AEM ().
 
@@ -57,9 +60,9 @@ Aquí, *AEM Administradores de* puede actualizar sus aplicaciones de forma rápi
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Una *Autores AEM* haber añadido o modificado contenido a través del mosaico Administrar contenido, *AEM Administradores de* Los clientes pueden insertar dichos cambios en los clientes con una actualización de los paquetes de contenido.
+Una *AEM Autores de* haber añadido o modificado contenido a través del mosaico Administrar contenido, *AEM Administradores de* Los clientes pueden insertar dichos cambios en los clientes con una actualización de los paquetes de contenido.
 
-La acción Paquete de contenido permite al *AEM Author* para crear y editar contenido de página mientras el equipo de desarrollo realiza cambios en el diseño y la implementación de una aplicación host, incluidos navegación, estilo, lógica del lado del servidor, plantillas y componentes, y luego envía esos cambios a los clientes sin necesidad de volver a enviarlos a las distintas tiendas para su distribución.
+La acción Paquete de contenido permite al *AEM Autor de* para crear y editar contenido de página mientras el equipo de desarrollo realiza cambios en el diseño y la implementación de una aplicación host, incluidos navegación, estilo, lógica del lado del servidor, plantillas y componentes, y luego envía esos cambios a los clientes sin necesidad de volver a enviarlos a las distintas tiendas para su distribución.
 
 **Para publicar contenido nuevo o actualizado**
 

@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -71,15 +73,15 @@ En autor, para acceder a la consola Configuración de almacenamiento
   ![dsrp-config](assets/dsrp-config.png)
 
 * Seleccionar **[!UICONTROL Proveedor de recursos de almacenamiento de bases de datos (DSRP)]**
-* **Configuración de la base de datos**
+* **Configuración de base de datos**
 
-   * **[!UICONTROL Nombre de la fuente de datos JDBC]**
+   * **[!UICONTROL Nombre de fuente de datos JDBC]**
 
      El nombre dado a la conexión MySQL debe ser el mismo que se introdujo en [Configuración OSGi de JDBC](dsrp-mysql.md#configurejdbcconnections)
 
      *predeterminado*: comunidades
 
-   * **[!UICONTROL Nombre de la base de datos]**
+   * **[!UICONTROL Nombre de base]**
 
      Nombre dado al esquema en [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
@@ -87,7 +89,7 @@ En autor, para acceder a la consola Configuración de almacenamiento
 
 * **SolrConfiguration**
 
-   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Host de Zookeeper**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
      Deje este valor en blanco si ejecuta Solr con el ZooKeeper interno. De lo contrario, al correr [Modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en el URI del ZooKeeper, como *my.server.com:80*
 

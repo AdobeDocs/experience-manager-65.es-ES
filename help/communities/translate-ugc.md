@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 1%
+source-wordcount: '1111'
+ht-degree: 0%
 
 ---
 
@@ -102,7 +104,7 @@ Para crear una integración de traducción, que integre un conector de servicio 
 
   (Opcional) Introduzca un nombre para la configuración. De forma predeterminada, es un nombre de nodo basado en el Título.
 
-* Seleccione **[!UICONTROL Crear]**
+* Seleccionar **[!UICONTROL Crear]**
 
 #### Cuadro de diálogo Configuración de traducción {#translation-config-dialog}
 

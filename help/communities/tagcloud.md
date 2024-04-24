@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -59,7 +62,7 @@ Identifique las etiquetas UGC que desea mostrar. Las opciones desplegables son:
 
   (Obligatorio si no `All tags)` La ruta al UGC para una página. Si se deja en blanco, la página actual es la predeterminada.
 
-* **[!UICONTROL Sin vínculos ni etiquetas]**
+* **[!UICONTROL Sin vínculos en las etiquetas]**
 
   Si se selecciona, las etiquetas se muestran en la nube de etiquetas como texto sin formato. Si no se selecciona, las etiquetas se muestran como vínculos activos que buscan todo el contenido al que se aplica esa etiqueta. El valor predeterminado está desmarcado y requiere **[!UICONTROL Ruta de resultados de búsqueda]** que se va a establecer.
 

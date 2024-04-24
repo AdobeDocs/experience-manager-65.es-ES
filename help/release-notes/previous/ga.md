@@ -2,7 +2,10 @@
 title: Notas de la versión generales de [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] Notas de la versión 6.5 que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 3%
@@ -250,9 +253,9 @@ Para obtener más información sobre los cambios en AEM Screens, consulte las No
 * `s_code.js` Se incluye H.27.5. El Adobe recomienda cambiar la implementación a `AppMeasurement.js`
 * `AppMeasurement.js` Se incluye la versión 1.8.0. El Adobe recomienda que utilice [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para aprovisionar AppMeasurement.js en el sitio.
 
-#### AEM Comercio de {#aem-commerce}
+#### AEM y COMMERCE {#aem-commerce}
 
-Las mejoras realizadas en el Commerce integration framework AEM se encuentran en un ciclo de liberación más rápido desde la versión 6.4 de la. [Obtenga más información aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+Las mejoras realizadas en el Commerce integration framework AEM se encuentran en un ciclo de liberación más rápido desde la versión 6.4 de la. [Obtenga más información aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=es).
 
 #### Complemento de Communities {#communities-add-on}
 
@@ -558,7 +561,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * **Esquema de metadatos de carpeta**: Después de agregar un botón de opción, el campo ID y Value no se representan según lo esperado y la funcionalidad de eliminación no funciona. (CQ-4261144)
 * Al cambiar el nombre de un recurso, no es posible utilizar un espacio en blanco en el nombre del recurso. (CQ-4266403)
 
-### Forms {#forms}
+### Formularios {#forms}
 
 * Cuando AEM Forms está instalado en el sistema operativo Linux®, la firma digital con el módulo de seguridad de hardware no funciona. (CQ-4266721)
 * (Solo AEM Forms en WebSphere®) La variable **Forms Workflow** > **Búsqueda de tareas** La opción no devuelve ningún resultado si busca un **Administrador** con **Nombre de usuario** como criterio de búsqueda. (CQ-4266457)

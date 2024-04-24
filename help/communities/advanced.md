@@ -8,9 +8,11 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -126,11 +128,11 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
   <tr>
    <th>Propiedad</th>
    <th>Tipo</th>
-   <th>Valor  Descripción</th>
+   <th>Descripción del valor</th>
   </tr>
   <tr>
    <td>badgingPath</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td><em>(Obligatorio)</em> Una cadena de varios valores de imágenes de distintivo hasta el número de badgingLevels. Las rutas de imagen del distintivo deben ordenarse para que la primera se asigne al experto más alto. Si hay menos distintivos de los indicados por badgingLevels, el último distintivo de la matriz rellena el resto de la matriz. Ejemplo de entrada:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
@@ -145,7 +147,7 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>Cadena[]</td>
+   <td>String[]</td>
    <td><em>(Opcional)</em> Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por una o más reglas de puntuación enumeradas.<br /> Ejemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> El valor predeterminado es sin restricciones.</td>
   </tr>
  </tbody>

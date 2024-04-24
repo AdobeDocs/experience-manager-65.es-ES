@@ -9,9 +9,11 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2856'
 ht-degree: 2%
 
 ---
@@ -208,7 +210,7 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`que
   <tr>
    <th>Propiedad</th>
    <th>Tipo</th>
-   <th> Valor  Descripción</th>
+   <th> Descripción del valor</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -331,7 +333,7 @@ El `scoringRules` La propiedad de en una regla de distintivo simplemente restrin
   <tr>
    <th>Propiedad</th>
    <th>Tipo</th>
-   <th>Valor  Descripción</th>
+   <th>Descripción del valor</th>
   </tr>
   <tr>
    <td>umbrales</td>
@@ -339,7 +341,7 @@ El `scoringRules` La propiedad de en una regla de distintivo simplemente restrin
    <td><em>(obligatorio)</em> Una cadena de varios valores con el formato 'número|ruta'
     <ul>
      <li>number = score</li>
-     <li>| = gráfico de línea vertical (U+007C)</li>
+     <li>| = el gráfico de líneas verticales (U+007C)</li>
      <li>ruta = ruta completa al recurso de imagen de distintivo</li>
     </ul> Las cadenas deben ordenarse de modo que los números aumenten de valor y no aparezca ningún espacio en blanco entre el número y la ruta.<br /> Ejemplo de entrada :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
@@ -541,7 +543,7 @@ Para un componente personalizado, se crea una instancia de un SocialEvent para r
 
 Para admitir la puntuación, SocialEvent debe anular el método `getVerb()` para que un adecuado `verb` se devuelve para cada `action`. El `verb` devuelto por una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Hay un *n-1* relación entre `actions` y `verbs`.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### Las insignias no aparecen {#badges-are-not-appearing}
 
@@ -577,7 +579,7 @@ Es posible probar rápidamente la puntuación y el distintivo con la variable [T
    * Seleccionar **Múltiple**
    * Seleccionar **Añadir**
    * Entrar `/libs/settings/community/badging/rules/forums-badging`
-   * Seleccione lo siguiente **+**
+   * Seleccionar **+**
    * Entrar `/libs/settings/community/badging/rules/comments-badging`
    * Seleccionar **OK**
 
@@ -588,7 +590,7 @@ Es posible probar rápidamente la puntuación y el distintivo con la variable [T
    * Seleccionar **Múltiple**
    * Seleccionar **Añadir**
    * Entrar `/libs/settings/community/scoring/rules/forums-scoring`
-   * Seleccione lo siguiente **+**
+   * Seleccionar **+**
    * Entrar `/libs/settings/community/scoring/rules/comments-scoring`
    * Seleccionar **OK**
 

@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -27,7 +30,7 @@ Una vez que esté familiarizado con las acciones de administración de contenido
 
 ## Publicación/cancelación de la publicación del contenido {#publishing-unpublishing-the-content}
 
-Esto difiere de una &quot;Publicación AEM&quot;. No está insertando contenido en una instancia de servidor de publicación de AEM para que se pueda ver públicamente. En este caso, está informando a Mobile On-Demand de que el contenido seleccionado debe hacerse público dentro de la aplicación Mobile On-Demand activa.
+AEM Esto difiere de una &quot;Publicación de la&quot;. AEM No está insertando contenido en una instancia de servidor de publicación de para que sea visible públicamente. En este caso, está informando a Mobile On-Demand de que el contenido seleccionado debe hacerse público dentro de la aplicación Mobile On-Demand activa.
 
 >[!NOTE]
 >

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 7%
+source-wordcount: '1696'
+ht-degree: 0%
 
 ---
 
@@ -71,11 +74,11 @@ Seleccione el colocado `Blog` para que pueda acceder y seleccionar el componente
 
 En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
-* **Permitir la miniatura del archivo adjunto**
+* **Permitir miniatura de datos adjuntos**
 
   Si se selecciona, se crea una miniatura de la imagen adjunta.
 
-* **Tamaño máximo de la miniatura del archivo adjunto**
+* **Tamaño máximo de miniatura de adjunto**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
 
@@ -83,7 +86,7 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
   Tamaño mínimo (en bytes) de la imagen para generar miniaturas para imágenes alineadas. El valor predeterminado es 100000 bytes (100 kb).
 
-* **Tamaño máximo de la miniatura**
+* **Tamaño máximo de miniatura**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen alineada. El valor predeterminado es 800 x 800.
 
@@ -153,7 +156,7 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
   Si está activada, permitir respuestas a comentarios publicados en la entrada de blog. El valor predeterminado está desmarcado.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona, se debe incluir la función de votación con una entrada de blog. El valor predeterminado está desmarcado.
 
@@ -169,7 +172,7 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
   Si se selecciona esta opción, se notificará a los miembros de las nuevas publicaciones por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se van a comprobar y [correo electrónico configurado](/help/communities/email.md). El valor predeterminado está desmarcado.
 
-* **Mostrar insignias**
+* **Mostrar distintivos**
 
   Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la entrada de blog de un miembro. El valor predeterminado está desmarcado.
 
@@ -187,7 +190,7 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
 
-* **Patrón de menciones en la interfaz de usuario**
+* **Patrón de mención de IU**
 
   Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
@@ -199,7 +202,7 @@ En el **Moderación de usuario** pestaña, especifique la configuración de mode
 
   Si se selecciona, los moderadores de confianza pueden denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
 
-* **Cerrar/abrir de nuevo los temas**
+* **Cerrar/volver a abrir temas**
 
   Si se selecciona esta opción, los moderadores de miembros de confianza pueden cerrar un tema para editarlo y enviarlo a otros comentarios, y también pueden volver a abrir un tema. El valor predeterminado está desmarcado.
 
@@ -207,7 +210,7 @@ En el **Moderación de usuario** pestaña, especifique la configuración de mode
 
   Si se selecciona esta opción, se permite a los miembros marcar los temas o comentarios de otros como inadecuados. El valor predeterminado está desmarcado.
 
-* **Lista de motivos de indicación**
+* **Lista de motivos de marca**
 
   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado está desmarcado.
 
@@ -227,7 +230,7 @@ En el **Moderación de usuario** pestaña, especifique la configuración de mode
 
 En el **Campo de etiqueta** pestaña, especifique qué etiquetas se pueden aplicar si **Permitir etiquetado** está marcada en la **Configuración** pestaña :
 
-* **Espacios de nombres permitidos**
+* **Áreas de nombres permitidas**
 
   Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas etiquetas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 

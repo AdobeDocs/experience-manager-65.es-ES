@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 4%
+source-wordcount: '2658'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +64,7 @@ En esta sección de la documentación se describe cómo conectar un grupo de inf
 
 Para configurar las funciones de Analytics para Communities, es necesario trabajar con el representante de cuentas para configurar una cuenta de Adobe Analytics y [grupo de informes](#adobe-analytics-report-suite-for-video-reporting). Una vez establecida, debe estar disponible la siguiente información:
 
-* **Nombre de la compañía**
+* **Nombre de empresa**
 
   La compañía asociada a la cuenta de Adobe Analytics.
 
@@ -108,12 +110,12 @@ Iniciando sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com
 
    * Consola de informes de vídeo
 
-      * Habilitar `Video Core`
+      * Activar `Video Core`
       * Seleccione Guardar
 
    * Consola de medición de Video Core
 
-      * Seleccione lo siguiente `Use Solution Variables`
+      * Seleccionar `Use Solution Variables`
       * Seleccione Guardar
 
 Si se usa un **nuevo grupo de informes** Sin embargo, un nuevo grupo de informes solo puede tener 4 evars y 6 variables de evento, mientras que para las comunidades se requieren 11 evars y 7 variables de evento.
@@ -184,9 +186,9 @@ Por ejemplo, introduzca *comunidades*
 
 * **Plantilla**
 
-  Seleccione lo siguiente `Adobe Analytics Configuration`
+  Seleccionar `Adobe Analytics Configuration`
 
-* Seleccione **Crear**
+* Seleccionar **Crear**
 
    * Inicia la página de configuración y abre `Analytics Settings` diálogo
 
@@ -216,7 +218,7 @@ La creación inicial de una nueva configuración de Analytics da como resultado 
 
   Dejar como predeterminado (sin seleccionar).
 
-* **Utilizar AppMeasurement**
+* **Usar AppMeasurement**
 
   Dejar como predeterminado (sin seleccionar).
 
@@ -260,7 +262,7 @@ Por ejemplo, introduzca *comunidades*.
 
 * *Plantilla*
 
-  Seleccione lo siguiente `Adobe Analytics Framework`.
+  Seleccionar `Adobe Analytics Framework`.
 
 * Seleccione **Crear**.
 
@@ -302,7 +304,7 @@ El Sidekick no es necesario y puede minimizarse para que no obstruya el acceso a
 
 1. Elija una `Run Mode`.
 
-1. Seleccionar **Publish**.
+1. Seleccione **Publicar**.
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -407,16 +409,16 @@ A continuación se muestra un ejemplo de asignaciones predeterminadas:
   </tr>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>eVar1</strong></td>
-   <td><strong>eVar2</strong></td>
-   <td><strong>eVar3</strong></td>
-   <td><strong>eVar4</strong></td>
-   <td><strong>eVar5</strong></td>
-   <td><strong>eVar6</strong></td>
-   <td><strong>eVar7</strong></td>
-   <td><strong>eVar8</strong></td>
-   <td><strong>eVar9</strong></td>
-   <td><strong>eVar10</strong></td>
+   <td><strong>EVAR 1</strong></td>
+   <td><strong>EVAR 2</strong></td>
+   <td><strong>EVAR 3</strong></td>
+   <td><strong>EVAR 4</strong></td>
+   <td><strong>EVAR 5</strong></td>
+   <td><strong>EVAR 6</strong></td>
+   <td><strong>EVAR 7</strong></td>
+   <td><strong>EVAR 8</strong></td>
+   <td><strong>EVAR 9</strong></td>
+   <td><strong>eVar 10</strong></td>
   </tr>
   <tr>
    <td><strong>event1<br /> Reproducción de medios</strong></td>

@@ -2,9 +2,12 @@
 title: Estado de la función de IU táctil
 description: Notas de versión específicas de [!DNL Adobe Experience Manager] IU táctil.
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1076'
 ht-degree: 15%
 
 ---
@@ -43,37 +46,37 @@ Esta es una lista de funcionalidades que ofrece el clásico Administrador del si
 
 | Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
-| Navegar por jerarquía del sitio | Completar | AEM.4 introdujo un [vista de árbol de contenido](/help/sites-authoring/basic-handling.md#content-tree). |
-| Iniciar flujo de trabajo | Completar |  |
-| Crear nueva página | Completar |  |
-| Crear nuevo sitio | Completar |  |
-| Crear nuevo lanzamiento | Completar |  |
-| Crear nueva Live Copy | Completar |  |
-| Crear carpeta | Completar |  |
-| Mostrar estado de publicación | Completar | AEM A partir de la versión 6.5, el estado del flujo de trabajo se muestra en la vista de lista. |
-| Búsqueda | Completar |  |
-| Copiar y pegar página (duplicado) | Completar |  |
-| Mover páginas | Completar |  |
-| Publicar páginas | Completar |  |
-| Publicar páginas sin derechos de replicación | Completar |  |
-| Publicar posteriormente | Completar |  |
-| Publicar árbol | Completar |  |
-| Cancelar publicación de páginas | Completar |  |
-| Cancelar la publicación de páginas sin derechos de replicación | Completar |  |
-| Cancelar la publicación posteriormente | Completar |  |
-| Eliminar | Completar |  |
-| Bloquear/Desbloquear | Completar |  |
-| Ver/Editar propiedades | Completar |  |
-| Definición de permisos en páginas | Completar |  |
-| Historial de versiones | Completar |  |
-| Restaurar versión | Completar |  |
+| Navegar por jerarquía del sitio | Completado | AEM.4 introdujo un [vista de árbol de contenido](/help/sites-authoring/basic-handling.md#content-tree). |
+| Iniciar flujo de trabajo | Completado |  |
+| Crear nueva página | Completado |  |
+| Crear nuevo sitio | Completado |  |
+| Crear nuevo lanzamiento | Completado |  |
+| Crear nueva Live Copy | Completado |  |
+| Crear carpeta | Completado |  |
+| Mostrar estado de publicación | Completado | AEM A partir de la versión 6.5, el estado del flujo de trabajo se muestra en la vista de lista. |
+| Búsqueda | Completado |  |
+| Copiar y pegar página (duplicado) | Completado |  |
+| Mover páginas | Completado |  |
+| Publicar páginas | Completado |  |
+| Publicar páginas sin derechos de replicación | Completado |  |
+| Publicar posteriormente | Completado |  |
+| Publicar árbol | Completado |  |
+| Cancelar publicación de páginas | Completado |  |
+| Cancelar la publicación de páginas sin derechos de replicación | Completado |  |
+| Cancelar la publicación posteriormente | Completado |  |
+| Eliminar | Completado |  |
+| Bloquear/Desbloquear | Completado |  |
+| Ver/Editar propiedades | Completado |  |
+| Definición de permisos en páginas | Completado |  |
+| Historial de versiones | Completado |  |
+| Restaurar versión | Completado |  |
 | Restaurar árbol y restaurar páginas eliminadas | Falta | Utilice la IU clásica. |
-| Mostrar diferencia entre la versión antigua y la actual | Completar |  |
-| Acciones de Live Copy (Despliegue) | Completar |  |
-| Consulte Copias de idioma | Completar |  |
+| Mostrar diferencia entre la versión antigua y la actual | Completado |  |
+| Acciones de Live Copy (Despliegue) | Completado |  |
+| Consulte Copias de idioma | Completado |  |
 | Buscar y reemplazar | Falta | Utilice la IU clásica. |
 | Bandeja de entrada de notificaciones (eventos JCR) | Falta | Utilice la IU clásica. Se reemplazará con una implementación diferente en el futuro. |
-| Referencias | Completar | AEM Visualización de los vínculos de página entrante añadidos a la versión 6.5 de la. |
+| Referencias | Completado | AEM Visualización de los vínculos de página entrante añadidos a la versión 6.5 de la. |
 
 ## Estado de la función: Editor de páginas {#feature-status-page-editor}
 
@@ -81,27 +84,27 @@ Esta es una lista de funcionalidades del editor de páginas de IU clásico (`/cf
 
 | Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
-| Editar páginas web | Completar |  |
-| Editar páginas web móviles | Completar |  |
-| Editar contenido importado mediante el importador de diseños | Completar |  |
-| Editar correos electrónicos | Completar |  |
-| Editar aplicaciones móviles híbridas | Completar |  |
-| Editar Forms | Completar |  |
-| Editar ofertas | Completar |  |
-| Editar modelos de flujos de trabajo | Completar |  |
-| Modo: editar y previsualizar | Completar |  |
-| Previsualización interactiva | Completar |  |
-| Modo: Editar diseño | Completar |  |
-| Modo: Andamiaje | Completar |  |
-| Modo: Estado de Live Copy | Completar |  |
-| Añadir anotaciones | Completar |  |
-| Editar propiedades | Completar |  |
-| Desplegar página | Completar |  |
-| Iniciar y mostrar flujo de trabajo | Completar |  |
+| Editar páginas web | Completado |  |
+| Editar páginas web móviles | Completado |  |
+| Editar contenido importado mediante el importador de diseños | Completado |  |
+| Editar correos electrónicos | Completado |  |
+| Editar aplicaciones móviles híbridas | Completado |  |
+| Editar Forms | Completado |  |
+| Editar ofertas | Completado |  |
+| Editar modelos de flujos de trabajo | Completado |  |
+| Modo: editar y previsualizar | Completado |  |
+| Previsualización interactiva | Completado |  |
+| Modo: Editar diseño | Completado |  |
+| Modo: Andamiaje | Completado |  |
+| Modo: Estado de Live Copy | Completado |  |
+| Añadir anotaciones | Completado |  |
+| Editar propiedades | Completado |  |
+| Desplegar página | Completado |  |
+| Iniciar y mostrar flujo de trabajo | Completado |  |
 | Administración de paquetes de flujo de trabajo | Principalmente | Accesible en la interfaz de usuario táctil. Varias cargas útiles de flujo de trabajo siguen presentándose en la IU clásica. |
-| Bloquear/desbloquear página | Completar |  |
-| Publicar página | Completar |  |
-| Cancelar la publicación de la página | Completar |  |
+| Bloquear/desbloquear página | Completado |  |
+| Publicar página | Completado |  |
+| Cancelar la publicación de la página | Completado |  |
 | Copiar página | Eliminado | Use Administrador del sitio para [copiar páginas](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Mover página | Eliminado | Use Administrador del sitio para [mover páginas](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | Eliminar página | Eliminado | Use Administrador del sitio para [eliminar páginas](/help/sites-authoring/managing-pages.md#deleting-a-page). |
@@ -111,16 +114,16 @@ Esta es una lista de funcionalidades del editor de páginas de IU clásico (`/cf
 | Restaurar versión | Eliminado | Use Administrador del sitio para [restaurar versiones](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
 | Cambiar inicios | Eliminado | Use Administrador del sitio para [cambiar entre lanzamientos](/help/sites-authoring/launches-promoting.md). |
 | Traducir página | Eliminado | Use Administrador del sitio para [añadir página a proyectos de traducción](/help/sites-administering/tc-manage.md). |
-| Deformación de tiempo (elija la fecha y la hora y explore el sitio tal y como estaba) | Completar |  |
-| Definir permisos | Completar |  |
+| Deformación de tiempo (elija la fecha y la hora y explore el sitio tal y como estaba) | Completado |  |
+| Definir permisos | Completado |  |
 | IU de Client Context | Reemplazado | Utilice el [ContextHub](/help/sites-authoring/ch-previewing.md) Interfaz de usuario en adelante. |
-| Buscador de contenido para los distintos tipos de medios | Completar |  |
-| Lista de componentes | Completar |  |
-| Copiar y pegar componentes | Completar |  |
+| Buscador de contenido para los distintos tipos de medios | Completado |  |
+| Lista de componentes | Completado |  |
+| Copiar y pegar componentes | Completado |  |
 | Lista de componentes del portapapeles | Falta |  |
-| Deshacer, Rehacer | Completar |  |
-| Arrastre el contenido al marcador de posición de componente | Completar |  |
-| Arrastre el contenido directamente al marcador de posición parsys con la creación automática de componentes | Completar |  |
+| Deshacer, Rehacer | Completado |  |
+| Arrastre el contenido al marcador de posición de componente | Completado |  |
+| Arrastre el contenido directamente al marcador de posición parsys con la creación automática de componentes | Completado |  |
 
 ## Estado de las funciones: editores de texto, tablas e imágenes {#feature-status-text-table-and-image-editors}
 
@@ -128,35 +131,35 @@ Esta es una lista de funcionalidades que tienen la IU clásica del Editor de tex
 
 | Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
-| Editor de texto enriquecido | Completar | Se puede utilizar in situ, en cuadros de diálogo y en pantalla completa. |
-| Habilitar/deshabilitar complementos RTE | Completar | Se puede realizar utilizando la variable [Editor de plantillas](/help/sites-authoring/templates.md). |
-| Utilizar RTE para texto sin formato | Completar |  |
-| Complemento RTE: Vínculos y anclajes | Completar |  |
-| Complemento RTE: mapa de caracteres | Completar |  |
-| Complemento RTE: copiar/pegar | Completar |  |
-| Complemento RTE: pegar desde Microsoft® Word | Completar |  |
-| Complemento RTE: buscar y reemplazar | Completar |  |
-| Complemento RTE: Formatos de texto (negrita, ...) | Completar |  |
-| Complemento RTE: subíndice y superíndice | Completar |  |
-| Complemento RTE: Justificar | Completar |  |
-| Complemento RTE: Listas (viñetas/números) | Completar |  |
-| Complemento RTE: Formato de párrafo | Completar |  |
-| Complemento RTE: estilos de texto | Completar |  |
-| Complemento RTE: Editor de origen (HTML de edición) | Completar | Solo disponible en diálogo y pantalla completa. |
-| Complemento RTE: corrector ortográfico | Completar |  |
-| Complemento RTE: Tabla (editor de tablas incrustado) | Completar |  |
-| Complemento RTE: Deshacer/Rehacer | Completar |  |
-| Complemento RTE: Permitir imágenes en línea | Completar |  |
-| Editor de tabla | Completar | Se puede utilizar in situ, en cuadros de diálogo y en pantalla completa. |
-| Arrastre la imagen a la celda de tabla | Completar | Utilizable en línea |
-| Editor de imágenes | Completar | Se puede utilizar in situ, en cuadros de diálogo y en pantalla completa. |
-| Habilitar/deshabilitar complementos IPE | Completar | AEM.3 ha introducido una interfaz de usuario de en [Editor de plantillas](/help/sites-authoring/templates.md). |
-| Complemento IPE: Recortar | Completar |  |
-| Complemento IPE: voltear | Completar |  |
-| Complemento IPE: Deshacer/Rehacer | Completar |  |
-| Complemento IPE: mapa de imagen | Completar |  |
-| Complemento IPE: girar | Completar |  |
-| Complemento IPE: zoom | Completar |  |
+| Editor de texto enriquecido | Completado | Se puede utilizar in situ, en cuadros de diálogo y en pantalla completa. |
+| Habilitar/deshabilitar complementos RTE | Completado | Se puede realizar utilizando la variable [Editor de plantillas](/help/sites-authoring/templates.md). |
+| Utilizar RTE para texto sin formato | Completado |  |
+| Complemento RTE: Vínculos y anclajes | Completado |  |
+| Complemento RTE: mapa de caracteres | Completado |  |
+| Complemento RTE: copiar/pegar | Completado |  |
+| Complemento RTE: pegar desde Microsoft® Word | Completado |  |
+| Complemento RTE: buscar y reemplazar | Completado |  |
+| Complemento RTE: Formatos de texto (negrita, ...) | Completado |  |
+| Complemento RTE: subíndice y superíndice | Completado |  |
+| Complemento RTE: Justificar | Completado |  |
+| Complemento RTE: Listas (viñetas/números) | Completado |  |
+| Complemento RTE: Formato de párrafo | Completado |  |
+| Complemento RTE: estilos de texto | Completado |  |
+| Complemento RTE: Editor de origen (HTML de edición) | Completado | Solo disponible en diálogo y pantalla completa. |
+| Complemento RTE: corrector ortográfico | Completado |  |
+| Complemento RTE: Tabla (editor de tablas incrustado) | Completado |  |
+| Complemento RTE: Deshacer/Rehacer | Completado |  |
+| Complemento RTE: Permitir imágenes en línea | Completado |  |
+| Editor de tabla | Completado | Se puede utilizar in situ, en cuadros de diálogo y en pantalla completa. |
+| Arrastre la imagen a la celda de tabla | Completado | Utilizable en línea |
+| Editor de imágenes | Completado | Se puede utilizar in situ, en cuadros de diálogo y en pantalla completa. |
+| Habilitar/deshabilitar complementos IPE | Completado | AEM.3 ha introducido una interfaz de usuario de en [Editor de plantillas](/help/sites-authoring/templates.md). |
+| Complemento IPE: Recortar | Completado |  |
+| Complemento IPE: voltear | Completado |  |
+| Complemento IPE: Deshacer/Rehacer | Completado |  |
+| Complemento IPE: mapa de imagen | Completado |  |
+| Complemento IPE: girar | Completado |  |
+| Complemento IPE: zoom | Completado |  |
 
 ## Estado de la función: Herramientas {#feature-status-tools}
 
@@ -165,14 +168,14 @@ Esta es una lista de varias herramientas que tiene la IU clásica y el estado de
 | Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
 | Administración de tareas | Reemplazado | 6.0 presentó Proyectos y tareas. |
-| Bandeja de entrada de flujo | Completar |  |
+| Bandeja de entrada de flujo | Completado |  |
 | Configuración del flujo de trabajo a la plantilla de página (`/etc/workflow/wcm/templates.html`) | Falta | Utilice la IU clásica. |
-| Etiquetado de IU de administración | Completar |  |
-| Centro de control de MSM/modelo | Completar |  |
-| IU del Administrador de modelos | Completar |  |
+| Etiquetado de IU de administración | Completado |  |
+| Centro de control de MSM/modelo | Completado |  |
+| IU del Administrador de modelos | Completado |  |
 | Interfaz de usuario de configuración de despliegue | Falta | Utilice la IU clásica. |
 | IU de usuario, grupos y permisos | Mayormente completo | Para la edición avanzada de permisos, utilice la IU clásica. |
 | Purgar versiones (`/etc/versioning/purge.html`) | Falta | Utilice la IU clásica. |
-| Comprobador de vínculos externos (`/etc/linkchecker.html`) | Falta | Utilice la IU clásica. |
+| Comprobador de vínculo externo (`/etc/linkchecker.html`) | Falta | Utilice la IU clásica. |
 | Editor por lotes (`/etc/importers/bulkeditor.html`) | Falta | Utilice la IU clásica. |
 | Cargar miniaturas para añadirlas o sobrescribirlas | Falta | Utilice la IU clásica. |

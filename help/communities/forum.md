@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 9%
+source-wordcount: '1233'
+ht-degree: 1%
 
 ---
 
@@ -58,16 +61,16 @@ Seleccione el colocado `Forum` para que pueda acceder y seleccionar el component
 
 En el **Configuración** pestaña, especifique la configuración de los temas y las respuestas:
 
-* **Permitir la miniatura del archivo adjunto**
+* **Permitir miniatura de datos adjuntos**
 
   Si se selecciona, se crea una miniatura de la imagen adjunta.
 
-* **Tamaño máximo de la miniatura del archivo adjunto**
+* **Tamaño máximo de miniatura de adjunto**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
 
 * **Tamaño mínimo de la imagen de la miniatura**
-* **Tamaño máximo de la miniatura**
+* **Tamaño máximo de miniatura**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen alineada. El valor predeterminado es 800 x 800.
 
@@ -99,7 +102,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas y 
 
   Si se selecciona esta opción, se incluye la siguiente función para las publicaciones del foro, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. El valor predeterminado está desmarcado.
 
-* **Permitir fijación**
+* **Permitir anclaje**
 
   Si se selecciona, los temas del foro pueden estar anclados en la parte superior de la lista de temas. El valor predeterminado está desmarcado.
 
@@ -126,7 +129,7 @@ Solo es relevante si está marcada la opción Permitir cargas de archivos. Núme
 
   Si se selecciona esta opción, se permiten las respuestas a los comentarios publicados en el tema. El valor predeterminado está desmarcado.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona esta opción, se debe incluir la función de votación con un tema. El valor predeterminado está desmarcado.
 
@@ -138,7 +141,7 @@ Solo es relevante si está marcada la opción Permitir cargas de archivos. Núme
 
   Si se selecciona, se muestran las rutas de exploración de navegación en las páginas de temas. La opción predeterminada está activada.
 
-* **Mostrar insignias**
+* **Mostrar distintivos**
 
   Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la entrada de blog de un miembro. El valor predeterminado está desmarcado.
 
@@ -162,7 +165,7 @@ Solo es relevante si está marcada la opción Permitir cargas de archivos. Núme
 
   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
 
-* **Patrón de menciones en la interfaz de usuario**
+* **Patrón de mención de IU**
 
   Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
@@ -178,7 +181,7 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
   Si se selecciona, los moderadores de confianza pueden denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
 
-* **Cerrar/abrir de nuevo los temas**
+* **Cerrar/volver a abrir temas**
 
   Si se selecciona esta opción, los moderadores de miembros de confianza pueden cerrar un tema para editarlo y enviarlo a otros comentarios, y también pueden volver a abrir un tema. El valor predeterminado está desmarcado.
 
@@ -190,7 +193,7 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
   Si se selecciona esta opción, se permite a los miembros marcar los temas o comentarios de otros como inadecuados. El valor predeterminado está desmarcado.
 
-* **Lista de motivos de indicación**
+* **Lista de motivos de marca**
 
   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado está desmarcado.
 
@@ -210,7 +213,7 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
 En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **Configuración** están limitadas según las áreas de nombres seleccionadas.
 
-* **Espacios de nombres permitidos**
+* **Áreas de nombres permitidas**
 
   Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
@@ -222,7 +225,7 @@ En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se
 
 En el **Traducción** pestaña, si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir todo el tema o las publicaciones seleccionadas.
 
-* **Traducir todos**
+* **Traducir todo**
 
   Si se selecciona, el hilo del foro se traduce al idioma preferido del usuario. El valor predeterminado está desmarcado.
 

@@ -5,10 +5,13 @@ content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
 hidefromtoc: true
-source-git-commit: 947f45e043c2ce1b683212f70157d1e9a08e1941
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 18%
+ht-degree: 24%
 
 ---
 
@@ -86,7 +89,7 @@ Si tiene configurada la autenticación SAML y tiene problemas con metadatos de I
 
 >[!NOTE]
 >
-> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 ## Módulos afectados {#impacted-modules}
 

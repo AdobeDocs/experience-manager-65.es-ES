@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 9%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +61,7 @@ En el **[!UICONTROL Configuración]** , especifique qué información relacionad
   Un nombre descriptivo para mostrar para el tablero, que refleje las reglas seleccionadas para mostrar insignias y puntuaciones.
 El valor predeterminado es `Leaderboard` si no se introduce nada.
 
-* **Distintivo**
+* **Insignia**
 
   Si se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
 El valor predeterminado está desmarcado.
@@ -77,7 +80,7 @@ El valor predeterminado está desmarcado.
 
 En el **Reglas** , el sitio de la comunidad y sus reglas de puntuación y distintivos
 
-* **Ubicación de la regla**
+* **Ubicación de regla**
 
   (Obligatorio) Ubicación donde se configura la regla de puntuación/distintivos.
 
@@ -85,7 +88,7 @@ En el **Reglas** , el sitio de la comunidad y sus reglas de puntuación y distin
 
   (Obligatorio) Regla específica que genera las puntuaciones que se van a mostrar.
 
-* **Regla de creación de distintivos**
+* **Regla de distintivos**
 
   (Obligatorio) Regla específica que genera el distintivo que se va a mostrar.
 
@@ -110,9 +113,9 @@ Configuración de componentes de clasificación:
 
 * Pestaña Reglas:
 
-   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
+   * Ubicación de regla = `/content/sites/<site name>/jcr:content`
    * Regla de puntuación = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Regla de creación de distintivos = `/libs/settings/community/badging/rules//reference-badging`
+   * Regla de distintivos = `/libs/settings/community/badging/rules//reference-badging`
    * Límite de visualización = `10`
 
 ![participantes-tabla de clasificación](assets/participants-leaderboard.png)
@@ -133,9 +136,9 @@ Configuración de componentes de clasificación:
 
 * Pestaña Reglas:
 
-   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
+   * Ubicación de regla = `/content/sites/<site name>/jcr:content`
    * Regla de puntuación = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Regla de creación de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
+   * Regla de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Límite de visualización = `10`
 
 ![tabla de clasificación de expertos](assets/experts-leaderboard.png)

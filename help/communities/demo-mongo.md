@@ -7,7 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -144,7 +146,7 @@ AEM AEM Si se estaba ejecutando antes de que se iniciara MongoDB, entonces se de
 
 Siga las instrucciones de la página de documentación principal: [MSRP: almacén común de MongoDB](msrp.md)
 
-## Probar {#test}
+## Prueba {#test}
 
 Para probar y verificar el almacén común de MongoDB, publique un comentario en la instancia de publicación y visualícelo en la instancia de autor, y vea el UGC en MongoDB y Solr:
 
@@ -173,7 +175,7 @@ Para probar y verificar el almacén común de MongoDB, publique un comentario en
 
    ![ugc-solr](assets/ugc-solr.png)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### No aparece UGC {#no-ugc-appears}
 

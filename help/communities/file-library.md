@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 9%
+source-wordcount: '741'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +86,7 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
   Si se selecciona, se habilita la capacidad de agregar una etiqueta al archivo. El valor predeterminado está desmarcado.
 
-* **Espacios de nombres permitidos**
+* **Áreas de nombres permitidas**
 
   Si la opción Permitir etiquetado está activada, las etiquetas disponibles se limitan a las áreas de nombres seleccionadas. Si no se comprueban áreas de nombres, se permiten todas. El valor predeterminado es todas las áreas de nombres.
 
@@ -91,7 +94,7 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
   Si la opción Permitir etiquetado está activada, esta configuración limita el número de etiquetas sugeridas que se deben mostrar. Si se establece en -1, no hay límite. El valor predeterminado es -1.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona, se habilita la capacidad de votar por un archivo. El valor predeterminado está desmarcado.
 
@@ -107,7 +110,7 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
 
-* **Patrón de menciones en la interfaz de usuario**
+* **Patrón de mención de IU**
 
   Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
@@ -119,7 +122,7 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
 En el **Moderación de usuario** pestaña, configurar la moderación de los comentarios, si se permiten los comentarios:
 
-* **Moderación previa**
+* **Premoderación**
 
   Si se selecciona, los comentarios deben aprobarse antes de aparecer en un sitio de publicación. El valor predeterminado está desmarcado.
 
@@ -131,7 +134,7 @@ En el **Moderación de usuario** pestaña, configurar la moderación de los come
 
   Si se selecciona esta opción, se permite que los moderadores de confianza denieguen comentarios. El valor predeterminado está desmarcado.
 
-* **Cerrar/abrir de nuevo los comentarios**
+* **Cerrar / volver a abrir comentarios**
 
   Si se selecciona esta opción, permite que los moderadores de miembros de confianza cierren y abran de nuevo los comentarios. El valor predeterminado está desmarcado.
 
@@ -139,7 +142,7 @@ En el **Moderación de usuario** pestaña, configurar la moderación de los come
 
   Si se selecciona, permite que los visitantes marquen los comentarios como inadecuados. El valor predeterminado está desmarcado.
 
-* **Lista de motivos de indicación**
+* **Lista de motivos de marca**
 
   Si se selecciona esta opción, se permite a los visitantes elegir, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado está desmarcado.
 

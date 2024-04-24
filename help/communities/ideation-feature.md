@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 10%
+source-wordcount: '1132'
+ht-degree: 0%
 
 ---
 
@@ -56,13 +59,13 @@ Seleccione el colocado `Ideation` para que pueda acceder y seleccionar el compon
 
 En el **[!UICONTROL Configuración]** pestaña, especifique la configuración de las ideas y los comentarios:
 
-* **Permitir la miniatura del archivo adjunto**
-* **Tamaño máximo de la miniatura del archivo adjunto**
+* **Permitir miniatura de datos adjuntos**
+* **Tamaño máximo de miniatura de adjunto**
 * **Tamaño mínimo de la imagen de la miniatura**
-* **Tamaño máximo de la miniatura**
+* **Tamaño máximo de miniatura**
 * **Permitir miembros privilegiados**
 * **Miembros privilegiados permitidos**
-* **Bloquee el contenido que haya creado el usuario en el modo de edición de autor**
+* **Bloquear contenido generado por el usuario en el modo de edición de autor**
 * **Título de ideación**
 
 * El título para mostrar de la idea. El valor predeterminado es `Ideation`.
@@ -110,7 +113,7 @@ En el **[!UICONTROL Configuración]** pestaña, especifique la configuración de
 
   Si se selecciona esta opción, se permiten las respuestas a los comentarios publicados en la idea. El valor predeterminado está desmarcado.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona esta opción, se permite la votación sobre los comentarios de una idea. El valor predeterminado está desmarcado.
 
@@ -126,11 +129,11 @@ En el **[!UICONTROL Configuración]** pestaña, especifique la configuración de
 
   Si se selecciona esta opción, se notificará a los miembros de las nuevas publicaciones por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se van a comprobar y [correo electrónico configurado](/help/communities/email.md). El valor predeterminado está desmarcado.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona esta opción, se permite la votación sobre los comentarios de una idea. El valor predeterminado está desmarcado.
 
-* **Mostrar insignias**
+* **Mostrar distintivos**
 
   Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la idea de un miembro. El valor predeterminado está desmarcado.
 
@@ -142,7 +145,7 @@ En el **[!UICONTROL Configuración]** pestaña, especifique la configuración de
 
 * **Habilitar la mención**
 * **Menciones máximas**
-* **Patrón de menciones en la interfaz de usuario**
+* **Patrón de mención de IU**
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
@@ -152,7 +155,7 @@ En el **[!UICONTROL Moderación de usuario]** , especifique cómo se administran
 
   Si se selecciona, los moderadores de confianza pueden denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
 
-* **Cerrar/abrir de nuevo los temas**
+* **Cerrar/volver a abrir temas**
 
   Si se selecciona esta opción, los moderadores de miembros de confianza pueden cerrar un tema para editarlo y enviarlo a otros comentarios, y también pueden volver a abrir un tema. El valor predeterminado está desmarcado.
 
@@ -160,7 +163,7 @@ En el **[!UICONTROL Moderación de usuario]** , especifique cómo se administran
 
   Si se selecciona esta opción, se permite a los miembros marcar los temas o comentarios de otros como inadecuados. El valor predeterminado está desmarcado.
 
-* **Lista de motivos de indicación**
+* **Lista de motivos de marca**
 
   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado está desmarcado.
 
@@ -180,7 +183,7 @@ En el **[!UICONTROL Moderación de usuario]** , especifique cómo se administran
 
 En el **[!UICONTROL Campo de etiqueta]** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **[!UICONTROL Configuración]** están limitadas según las áreas de nombres seleccionadas.
 
-* **Espacios de nombres permitidos**
+* **Áreas de nombres permitidas**
 
   Relevante si `Allow Tagging` está marcada en la **[!UICONTROL Configuración]** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 

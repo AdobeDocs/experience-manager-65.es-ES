@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 2%
+source-wordcount: '1556'
+ht-degree: 0%
 
 ---
 
@@ -37,8 +40,8 @@ Para empezar a crear un sitio de la comunidad:
 
 En el [Paso Plantilla del sitio](/help/communities/sites-console.md#step2013asitetemplate), introduzca un título, una descripción, el nombre de la URL y seleccione una plantilla de sitio de comunidad, por ejemplo:
 
-* **Título del sitio de la comunidad**: `Getting Started Tutorial`
-* **Descripción del sitio de la comunidad**: `A site for engaging with the community.`
+* **Título del sitio de comunidad**: `Getting Started Tutorial`
+* **Descripción del sitio de comunidad**: `A site for engaging with the community.`
 * **Raíz del sitio de comunidad**: (dejar en blanco para la raíz predeterminada) `/content/sites`)
 * **Configuraciones de nube**: (déjelo en blanco si no se especifica ninguna configuración de nube) proporcione la ruta a las configuraciones de nube especificadas.
 * **Idioma base del sitio de la comunidad**: (no tocar para un solo idioma: inglés) utilice la lista desplegable para elegir uno *o más* idiomas base de los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado). Se crea un sitio de comunidad para cada idioma agregado y existe en la misma carpeta de sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
@@ -99,7 +102,7 @@ AEM Las etiquetas aplicadas al contenido de la comunidad se controlan selecciona
 Encontrar áreas de nombres es fácil mediante la búsqueda de escritura anticipada. Por ejemplo,
 
 * Tipo `tut`
-* Seleccione lo siguiente `Tutorial`
+* Seleccionar `Tutorial`
 
 ![etiquetado](assets/tagging.png)
 
@@ -149,7 +152,7 @@ El [Configuración de traducción](/help/communities/sites-console.md#translatio
 
 ### Paso 4: Crear sitio de comunidades {#step-create-communities-site}
 
-Seleccione **Crear.**
+Seleccionar **Crear.**
 
 ![create-site](assets/create-site2.png)
 
@@ -272,13 +275,13 @@ Para empezar:
 
 1. Con recién creado `localhost.4503` nodo seleccionado:
 
-   * Añadir propiedades:
+   * Agregar propiedad:
 
    * **Nombre** sling:coincidencia
       * **Tipo** Cadena
       * **Valor** localhost.4503/$ (debe finalizar con &#39;$&#39; char)
 
-   * Añadir propiedades:
+   * Agregar propiedad:
 
       * **Nombre** sling:internalRedirect
       * **Tipo** Cadena

@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '951'
 ht-degree: 1%
 
 ---
@@ -35,7 +38,7 @@ AEM Las aplicaciones de AppMeasurement administran gran parte de la configuraci�
 
 Parte de la inicialización de la aplicación implica especificar de qué módulos AngularJS depende la aplicación. La lista de módulos que utiliza la aplicación está especificada por un script ubicado en /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp y la puede superponer el componente de página de la aplicación para extraer los módulos AngularJS adicionales que requiera la aplicación. Por ejemplo, compare la secuencia de comandos anterior con la implementación de Geometrixx (ubicada en /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
 
-Para admitir la navegación entre los distintos estados de la aplicación, el script angular-app-module se repite en todas las páginas descendientes de la página de la aplicación de nivel superior para generar un conjunto de &quot;rutas&quot; y configura cada ruta en el servicio $routeProvider de Angular. Para ver un ejemplo del aspecto que tendrá en la práctica, consulte el script angular-app-module generado por el ejemplo de la aplicación para Geometrixx Outdoors: (el vínculo requiere una instancia local). [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Para admitir la navegación entre los distintos estados de la aplicación, el script angular-app-module se repite en todas las páginas descendientes de la página de la aplicación de nivel superior para generar un conjunto de &quot;rutas&quot; y configura cada ruta en el servicio $routeProvider de Angular. Para ver un ejemplo del aspecto que tiene en la práctica, consulte el script angular-app-module generado por el ejemplo de la aplicación para Geometrixx Outdoors: (el vínculo requiere una instancia local). [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Al iniciar sesión en la AEMngularApp generada, encontrará una serie de rutas especificadas de la siguiente manera:
 

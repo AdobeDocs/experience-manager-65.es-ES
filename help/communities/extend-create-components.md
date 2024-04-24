@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 5%
+source-wordcount: '591'
+ht-degree: 0%
 
 ---
 
@@ -56,15 +59,15 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Grupo**: *Personalizado*
 
-   * Seleccione **[!UICONTROL Siguiente]**
-   * Seleccione **[!UICONTROL Siguiente]**
-   * Seleccione **[!UICONTROL Siguiente]**
+   * Seleccionar **[!UICONTROL Siguiente]**
+   * Seleccionar **[!UICONTROL Siguiente]**
+   * Seleccionar **[!UICONTROL Siguiente]**
    * Seleccionar **[!UICONTROL OK]**
 
 1. Expanda el nodo que ha creado: `/apps/custom/components/comments`
 1. Seleccionar **[!UICONTROL Guardar todo]**
 1. Clic con el botón derecho `comments.jsp`
-1. Seleccione **[!UICONTROL Eliminar]**
+1. Seleccionar **[!UICONTROL Eliminar]**
 1. Seleccionar **[!UICONTROL Guardar todo]**
 
 ![create-component](assets/create-component.png)
@@ -86,15 +89,15 @@ La eliminación del archivo JSP creado automáticamente se debe a que se utiliza
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Grupo**: `*.hidden*`
 
-   * Seleccione **[!UICONTROL Siguiente]**
-   * Seleccione **[!UICONTROL Siguiente]**
-   * Seleccione **[!UICONTROL Siguiente]**
+   * Seleccionar **[!UICONTROL Siguiente]**
+   * Seleccionar **[!UICONTROL Siguiente]**
+   * Seleccionar **[!UICONTROL Siguiente]**
    * Seleccionar **[!UICONTROL OK]**
 
 1. Expanda el nodo que ha creado: `/apps/custom/components/comments/comment`
 1. Seleccionar **[!UICONTROL Guardar todo]**
 1. Clic con el botón derecho `comment.jsp`
-1. Seleccione **[!UICONTROL Eliminar]**
+1. Seleccionar **[!UICONTROL Eliminar]**
 1. Seleccionar **[!UICONTROL Guardar todo]**
 
 ![create-child-component](assets/create-child-component.png)
@@ -114,12 +117,12 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
    * Cambie el valor del `data-scf-component` atributo (~línea 20):
 
-      * De `social/commons/components/hbs/comments`
-      * A `/apps/custom/components/comments`
+      * Desde `social/commons/components/hbs/comments`
+      * Hasta `/apps/custom/components/comments`
 
    * Modifique para incluir el componente de comentario personalizado (línea 75):
 
-      * Replace `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
+      * Reemplazar `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
       * Con `{{include this resourceType='/apps/custom/components/comments/comment'}}`
 
 * Copie `comment.hbs`
@@ -131,8 +134,8 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
    * Cambie el valor del atributo data-scf-component (~ línea 19)
 
-      * De `social/commons/components/hbs/comments/comment`
-      * A `/apps/custom/components/comments/comment`
+      * Desde `social/commons/components/hbs/comments/comment`
+      * Hasta `/apps/custom/components/comments/comment`
 
 * Seleccionar `/apps/custom` nodo
 * Seleccionar **[!UICONTROL Guardar todo]**

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 3%
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
@@ -263,7 +265,7 @@ El **sentimentprocess.name** también se puede modificar para hacer referencia a
 
 Para configurar opiniones y palabras observadas:
 
-* Inicie sesión en la instancia de autor de como administrador.
+* Inicie sesión en la instancia de autor como administrador.
 * Abrir [Consola web](https://localhost:4502/system/console/configMgr).
 * Localizar `sentimentprocess.name`.
 * Seleccione la configuración para poder abrirla en modo de edición.

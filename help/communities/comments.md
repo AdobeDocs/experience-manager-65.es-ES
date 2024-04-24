@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 6%
+source-wordcount: '983'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +90,7 @@ En el **Comentarios** , especifique cómo los visitantes introducen los comentar
 
   Si se selecciona, los comentarios se introducen con marcado. La opción predeterminada no está seleccionada.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona, la opción para votar hacia arriba o hacia abajo se presenta con el cuadro de entrada de texto. La opción predeterminada no está seleccionada.
 
@@ -95,7 +98,7 @@ En el **Comentarios** , especifique cómo los visitantes introducen los comentar
 
   Si se selecciona esta opción, se permite que los miembros sigan los comentarios. La opción predeterminada no está seleccionada.
 
-* **Mostrar insignias**
+* **Mostrar distintivos**
 
   Si se selecciona esta opción, se muestran las insignias obtenidas y concedidas. La opción predeterminada no está seleccionada.
 
@@ -103,7 +106,7 @@ En el **Comentarios** , especifique cómo los visitantes introducen los comentar
 
 En el **Moderación de usuario** , especifique cómo se administran los comentarios publicados. Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-* **Moderación previa**
+* **Premoderación**
 
   Si se selecciona, los comentarios deben aprobarse antes de aparecer en un sitio de publicación. La opción predeterminada no está seleccionada.
 
@@ -115,7 +118,7 @@ En el **Moderación de usuario** , especifique cómo se administran los comentar
 
   Si se selecciona, permite que los moderadores denieguen comentarios. La opción predeterminada no está seleccionada.
 
-* **Cerrar/abrir de nuevo los comentarios**
+* **Cerrar / volver a abrir comentarios**
 
   Si se selecciona esta opción, los moderadores pueden cerrar y volver a abrir los comentarios. La opción predeterminada no está seleccionada.
 
@@ -123,7 +126,7 @@ En el **Moderación de usuario** , especifique cómo se administran los comentar
 
   Si se selecciona esta opción, se permite a los miembros marcar comentarios como inadecuados. La opción predeterminada no está seleccionada.
 
-* **Lista de motivos de indicación**
+* **Lista de motivos de marca**
 
   Si se selecciona esta opción, permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. La opción predeterminada no está seleccionada.
 

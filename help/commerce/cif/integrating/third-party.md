@@ -4,14 +4,16 @@ description: Los negocios empresariales pueden requerir soluciones de comercio d
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 1%
 
 ---
 
-# AEM Integración comercial de terceros y de con Commerce integration framework {#aem-third-party}
+# AEM Integración de Commerce de terceros y de mediante Commerce integration framework {#aem-third-party}
 
 La integración de soluciones diferentes de Adobe Commerce CIF es un escenario común para los clientes de los servicios de. Las soluciones de terceros con diferentes API y esquemas se conectan mediante una capa de integración.
 
@@ -57,7 +59,7 @@ Esta capa de integración no es necesaria si hay una capa de terceros disponible
 
 Los conectores son un buen punto de partida para los proyectos. Vienen con una conexión específica de la solución de comercio y una asignación de API predeterminada. Estos conectores son construidos por terceros y no mantenidos por Adobe. Póngase en contacto con el socio correspondiente para obtener información.
 
-* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), creado por Diconium
+* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), creado por Diconium
 * [Herramientas comerciales](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), creado por Diconium
 
 >[!TIP]

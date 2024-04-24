@@ -1,9 +1,11 @@
 ---
 title: Encabezados HTTP personalizados
-description: Aprenda a configurar encabezados HTTP personalizados en Adobe Experience Manager Commerce.
+description: Obtenga información sobre cómo configurar encabezados HTTP personalizados en Adobe Experience Manager Commerce.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 3%

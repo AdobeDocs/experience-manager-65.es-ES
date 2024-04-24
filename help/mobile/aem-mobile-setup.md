@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 2%
+source-wordcount: '910'
+ht-degree: 1%
 
 ---
 
@@ -80,8 +83,8 @@ Complete los pasos de configuración para que las integraciones de AEM Mobile fu
 
    1. **(Obligatorio)** Introduzca los campos obligatorios:
 
-      1. ID del cliente.
-      1. Secreto de cliente.
+      1. ID de cliente.
+      1. Secreto del cliente.
 
    1. **(Opcional)** Edite los valores existentes.
 

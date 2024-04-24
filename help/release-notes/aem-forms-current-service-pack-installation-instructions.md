@@ -2,10 +2,13 @@
 title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación del Service Pack de AEM Forms para el entorno OSGi y JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -130,7 +133,7 @@ Vaya al directorio adecuado, y desde un shell y escriba `./aem65_cfp_install.bin
 >[!NOTE]
 >
 >* Después de instalar AEM Forms en el Service Pack de JEE, debe quitar el paquete de complementos de Forms de `crx-repository\install` antes de reiniciar appserver. Descargue el último paquete de complementos de Forms desde [Portal de distribución de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
->* Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+>* Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 +++
 
@@ -270,7 +273,7 @@ Existen dos métodos diferentes que puede utilizar para instalar automáticament
 
 +++
 
-## Solución de problemas
+## Resolución de problemas
 
 * If **Cuadro de diálogo en la IU del Administrador de paquetes** sale durante la instalación del service pack y espere a que los registros de errores se estabilicen antes de acceder a la implementación. Espere los registros específicos relacionados con la desinstalación del paquete actualizador antes de asegurarse de que las instalaciones se hayan realizado correctamente. Normalmente, este problema se produce en el explorador Safari, pero puede producirse de forma intermitente en cualquier explorador.
 

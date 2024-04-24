@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 4%
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -101,7 +104,7 @@ En el **[!UICONTROL Críticas]** , especifique cómo se gestionan las revisiones
 
   Si se selecciona, las publicaciones pueden introducirse con marcado. El valor predeterminado está desmarcado.
 
-* **[!UICONTROL Habilitar la votación]**
+* **[!UICONTROL Permitir votación]**
 
   Si se selecciona esta opción, se debe incluir la función de votación para un tema. El valor predeterminado está desmarcado.
 
@@ -109,7 +112,7 @@ En el **[!UICONTROL Moderación de usuario]** pestaña, especifique cómo se adm
 
 ![user-moderation](assets/configure-review4.png)
 
-* **[!UICONTROL Moderación previa]**
+* **[!UICONTROL Premoderación]**
 
   Si se selecciona, las revisiones deben aprobarse antes de aparecer en un sitio de publicación. El valor predeterminado está desmarcado.
 
@@ -121,7 +124,7 @@ En el **[!UICONTROL Moderación de usuario]** pestaña, especifique cómo se adm
 
   Si se selecciona, permite que los moderadores denieguen críticas. El valor predeterminado está desmarcado.
 
-* **[!UICONTROL Cerrar/abrir de nuevo las críticas]**
+* **[!UICONTROL Cerrar / volver a abrir críticas]**
 
   Si se selecciona, permite que los moderadores cierren y abran de nuevo las críticas. El valor predeterminado está desmarcado.
 
@@ -129,7 +132,7 @@ En el **[!UICONTROL Moderación de usuario]** pestaña, especifique cómo se adm
 
   Si se selecciona esta opción, se permite que los miembros marquen las revisiones como inadecuadas. El valor predeterminado está desmarcado.
 
-* **[!UICONTROL Lista de motivos de indicación]**
+* **[!UICONTROL Lista de motivos de marca]**
 
   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan una revisión como inadecuada. El valor predeterminado está desmarcado.
 

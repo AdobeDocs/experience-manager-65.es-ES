@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 17%
+source-wordcount: '208'
+ht-degree: 15%
 
 ---
 
@@ -78,4 +81,4 @@ Para cada [paquete de funciones](deploy-communities.md#latestfeaturepack), hay d
 
 * [Directrices de codificación](code-guide.md)
 * [Tutoriales](tutorials.md)
-* [Solución de problemas](troubleshooting.md)
+* [Resolución de problemas](troubleshooting.md)

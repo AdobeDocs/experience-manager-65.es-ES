@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 1%

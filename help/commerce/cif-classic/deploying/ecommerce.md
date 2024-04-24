@@ -4,7 +4,8 @@ description: AEM El comercio electrónico genérico está disponible como parte 
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 2%
@@ -20,7 +21,7 @@ Adobe proporciona dos versiones del Commerce integration framework:
 |                         | CIF local de la zona de trabajo | CIF Nube de |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versiones de AEM compatibles | AEM local o AMS 6.x | AEM AMS 6.4 y 6.5 |
-| Back-end | AEM - ¿De qué se trata™ <br> : Integración monolítica, asignación previa a la compilación (plantilla)<br> - Repositorio JCR | - ADOBE COMMERCE <br>- Java y JavaScript <br>- No hay datos de comercio almacenados en el repositorio JCR |
+| Back-end | AEM - ¿De qué se trata™ <br> : Integración monolítica, asignación previa a la compilación (plantilla)<br> - Repositorio JCR | - ADOBE COMMERCE <br>- Java y JavaScript <br>- No hay datos de Commerce almacenados en el repositorio JCR |
 | Front-end | AEM Páginas procesadas del lado del servidor de | Aplicación de página mixta (procesamiento híbrido) |
 | Catálogo de productos | AEM - Importador de productos, editor, almacenamiento en caché en la <br>AEM - Catálogos normales con páginas de proxy o de la red de distribución de contenido | - No hay importación de productos <br>- Plantillas genéricas <br>- Datos a petición mediante conector |
 | Escalabilidad | - Puede admitir hasta unos pocos millones de productos (depende del caso de uso) <br> - Almacenamiento en caché en Dispatcher | - Sin limitación de volumen <br>- Almacenamiento en caché en Dispatcher o CDN |

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
 1. En el panel del explorador del CRXDE Lite:
 
-   * Seleccione lo siguiente `/apps/an-scf-sandbox/templates`
+   * Seleccionar `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear plantilla]**
 
 1. En el cuadro de diálogo Crear plantilla, escriba los siguientes valores y haga clic en **[!UICONTROL Siguiente]**:
@@ -71,7 +74,7 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
    Clic **[!UICONTROL Siguiente]** en el **[!UICONTROL Elementos secundarios permitidos]** panel.
 
-   Haga clic en **[!UICONTROL Aceptar]**.
+   Haz clic en **[!UICONTROL OK]**.
 
 1. Después de hacer clic en Aceptar y terminar de crear la plantilla, observe los triángulos rojos que se muestran en las esquinas de los valores de la ficha Propiedades para la nueva plantilla `playpage` plantilla. Estos triángulos rojos indican ediciones que no se han guardado.
 

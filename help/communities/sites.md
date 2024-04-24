@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -44,11 +46,11 @@ Se abrirá el panel Editor del sitio, que contiene tres subpaneles:
 
 En el panel Información básica, se configura un nombre, una descripción y si la plantilla está habilitada o deshabilitada:
 
-* **[!UICONTROL Nombre de la plantilla del sitio de la comunidad]**
+* **[!UICONTROL Nombre de plantilla del sitio de comunidad]**
 
   ID del nombre de la plantilla.
 
-* **[!UICONTROL Descripción de la plantilla del sitio de la comunidad]**
+* **[!UICONTROL Descripción de plantilla del sitio de comunidad]**
 
   La descripción de la plantilla.
 

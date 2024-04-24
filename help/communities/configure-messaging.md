@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 5%
+source-wordcount: '952'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 ![configure-message-list](assets/configure-message-list.png)
 
-#### Pestaña Básicos {#basic-tab}
+#### Pestaña Básico {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
@@ -119,7 +122,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
   El número especificado es el número máximo de mensajes mostrados por página en un esquema de paginación. Si no se especifica ningún número (se deja en blanco), se muestran todos los mensajes y no hay paginación.
 
-* **Patrones de marca de hora**
+* **Patrones de marca de tiempo**
 
   Proporcione patrones de marca de tiempo para uno o más idiomas. El valor predeterminado es en, de, fr, it, es, ja, zh_CN, ko_KR.
 
@@ -141,7 +144,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 ![config-compose-message](assets/config-compose-message.png)
 
-#### Pestaña Básicos {#basic-tab-1}
+#### Pestaña Básico {#basic-tab-1}
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
@@ -197,6 +200,6 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
   Si se selecciona esta opción, se indica el uso de un cuadro de texto de contenido personalizado con su propio editor de texto enriquecido. El valor predeterminado no está marcado.
 
-* **Patrones de marca de hora**
+* **Patrones de marca de tiempo**
 
   Proporcione patrones de marca de tiempo para uno o más idiomas. El valor predeterminado es en, de, fr, it, es, ja, zh_CN, ko_KR.

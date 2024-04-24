@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 7%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -103,7 +106,7 @@ En el **Configuración** , especifique si desea permitir que se apliquen etiquet
 
   Si se selecciona esta opción, permite que los miembros eliminen los comentarios y los eventos de calendario que hayan publicado. La opción predeterminada está activada.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona, se debe incluir la función de votación con un evento de calendario. La opción predeterminada está activada.
 
@@ -127,7 +130,7 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
   Si se selecciona, se permite a los moderadores miembros de confianza denegar publicaciones e impedir que aparezcan en el foro público. La opción predeterminada está activada.
 
-* **Cerrar/abrir de nuevo los eventos**
+* **Cerrar/volver a abrir eventos**
 
   Si se selecciona, los moderadores de miembros de confianza pueden cerrar un evento para realizar más ediciones y comentarios, y también pueden volver a abrir un evento. La opción predeterminada está activada.
 
@@ -135,7 +138,7 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
   Si se selecciona esta opción, se permite a los miembros marcar los eventos o comentarios de otros como inadecuados. La opción predeterminada está activada.
 
-* **Lista de motivos de indicación**
+* **Lista de motivos de marca**
 
   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un evento o comentario como inapropiado. El valor predeterminado está desmarcado.
 
@@ -155,7 +158,7 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
 En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **Configuración** están limitadas según las áreas de nombres seleccionadas.
 
-* **Espacios de nombres permitidos**
+* **Áreas de nombres permitidas**
 
   Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
@@ -171,7 +174,7 @@ En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se
 
 En el **Traducción** , si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir todo el hilo (evento y comentarios) en lugar de publicaciones específicas.
 
-* **Traducir todos**
+* **Traducir todo**
 
   Si se selecciona, el evento y los comentarios se traducen al idioma preferido del usuario. La opción predeterminada está activada.
 

@@ -7,9 +7,11 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -38,7 +40,7 @@ En el entorno de creación, para llegar a la consola Configuración de almacenam
 
 * Seleccionar **[!UICONTROL Proveedor de recursos de almacenamiento de JCR (JSRP)]**
 
-* Seleccione **[!UICONTROL Enviar]**
+* Seleccionar **[!UICONTROL Enviar]**
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
@@ -60,7 +62,7 @@ Para obtener información sobre *usuarios*, *perfiles de usuario* y *grupos de u
 * [Sincronización de usuarios](sync.md)
 * [Administración de usuarios y grupos de usuarios](users.md)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### UGC no visible en JCR {#ugc-not-visible-in-jcr}
 

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 5%
+source-wordcount: '1158'
+ht-degree: 3%
 
 ---
 
@@ -210,7 +213,7 @@ Por ejemplo, para eliminar todos los UGC en ASRP:
 curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/usergenerated/asi/cloud -uadmin:admin
 ```
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### Consulta de Solr {#solr-query}
 
@@ -224,7 +227,7 @@ La consulta a solr es: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Bti
 
 El valor del `q` parámetro es la consulta. Una vez descodificada la codificación de la URL, la consulta se puede pasar a la herramienta Solr Admin Query para una depuración posterior.
 
-## Medios relacionados {#related-resources}
+## Recursos relacionados {#related-resources}
 
 * [Almacenamiento de contenido de comunidad](working-with-srp.md) - Analiza las opciones de SRP disponibles para un almacén común de UGC.
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.

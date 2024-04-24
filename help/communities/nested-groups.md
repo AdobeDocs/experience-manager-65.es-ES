@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +46,7 @@ Estas consolas son similares a la consola Sitios de Communities.
 
 * Seleccionar **[!UICONTROL Crear grupo]**
 
-* **Plantilla del grupo de la comunidad**:
+* **Plantilla de grupo de comunidad**:
 
    * **[!UICONTROL Título del grupo de comunidad]**: artes
    * **[!UICONTROL Descripción del grupo de comunidad]**: un grupo principal para varios grupos artísticos
@@ -51,7 +54,7 @@ Estas consolas son similares a la consola Sitios de Communities.
    * **[!UICONTROL Idiomas de grupo de la comunidad adicionales disponibles]**: utilice el menú desplegable para seleccionar los idiomas de grupo de la comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de la comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los sitios de la comunidad correspondientes.
    * **[!UICONTROL Nombre del grupo de comunidad]**: artes
    * **[!UICONTROL Plantilla]**: menú desplegable para seleccionar `Reference Group`
-   * Seleccione **[!UICONTROL Siguiente]**
+   * Seleccionar **[!UICONTROL Siguiente]**
 
 ![Grupos de comunidad anidados](assets/parent-to-nestedgroup.png)
 
@@ -75,7 +78,7 @@ Continúe con los otros paneles con esta configuración:
       * **[!UICONTROL Miniatura]**
          * `optional.*`
 
-      * **[!UICONTROL Seleccione Siguiente]**.
+      * **[!UICONTROL Seleccionar siguiente]**.
 
 * Seleccione **[!UICONTROL Crear]**.
 
@@ -85,7 +88,7 @@ El `groups` La carpeta ahora contiene dos grupos (actualice la página).
 
 ![Anidado de grupos](assets/create-community-group.png)
 
-#### Publicar grupo  {#publish-group}
+#### Publicar grupo {#publish-group}
 
 Antes de crear grupos anidados en `arts` grupo, pase el ratón sobre `arts` y seleccione el icono publicar para publicarlo.
 
@@ -111,7 +114,7 @@ El `arts` el grupo también debe contener un `groups` carpeta, pero una que est�
    * Plantilla: `Reference Group`
    * Suscripción: seleccione `Required Membership`, un grupo abierto, disponible para que los miembros se unan.
 
-1. **[!UICONTROL Historia]**
+1. **[!UICONTROL Historial]**
 
    * Título: `Art History`
    * Nombre: `history`

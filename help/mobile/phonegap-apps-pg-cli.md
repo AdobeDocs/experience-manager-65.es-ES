@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 1%
+source-wordcount: '658'
+ht-degree: 0%
 
 ---
 
@@ -85,12 +88,12 @@ phonegap run ios
 >
 >1. Crear una carpeta (prueba mkdir)
 >1. Vaya a esta nueva carpeta (prueba de CD)
->1. Ejecución `phonegap create helloWorld`
+>1. Ejecutar `phonegap create helloWorld`
 >1. Navegar a helloWorld (cd helloWorld)
 >1. Ejecutar `phonegap run android` (o reemplace Android™ por iOS, como se ha indicado anteriormente).
-1. El emulador se abre ejecutando la aplicación PhoneGap recién creada y dice &quot;Dispositivo listo&quot; si el puente JavaScript a nativo está operativo.
+>1. El emulador se abre ejecutando la aplicación PhoneGap recién creada y dice &quot;Dispositivo listo&quot; si el puente JavaScript a nativo está operativo.
 >
-Esta solución de problemas verifica que el entorno de desarrollo de la CLI de PhoneGap se esté ejecutando correctamente.
+>Esta solución de problemas verifica que el entorno de desarrollo de la CLI de PhoneGap se esté ejecutando correctamente.
 
 ## Depurar JavaScript con Safari y IOS {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -151,7 +154,7 @@ Puede establecer puntos de interrupción en cualquier lugar del origen. Al inter
 
 >[!NOTE]
 >
-Para ver los valores de las variables en el método actual, pase el ratón por encima.
+>Para ver los valores de las variables en el método actual, pase el ratón por encima.
 
 ## Pasos siguientes {#the-next-steps}
 

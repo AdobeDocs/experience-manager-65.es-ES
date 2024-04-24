@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 9%
+source-wordcount: '1389'
+ht-degree: 0%
 
 ---
 
@@ -55,11 +58,11 @@ Seleccione el colocado `QnA` para que pueda acceder y seleccionar el componente 
 
 En el **Configuración** pestaña, especifique la configuración de los temas (preguntas) y respuestas (respuestas):
 
-* **Permitir la miniatura del archivo adjunto**
+* **Permitir miniatura de datos adjuntos**
 
   Si se selecciona, se crea una miniatura de la imagen adjunta.
 
-* **Tamaño máximo de la miniatura del archivo adjunto**
+* **Tamaño máximo de miniatura de adjunto**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
 
@@ -67,7 +70,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
   Tamaño mínimo (en bytes) de la imagen para generar miniaturas para imágenes alineadas. El valor predeterminado es 100000 bytes (100 kb).
 
-* **Tamaño máximo de la miniatura**
+* **Tamaño máximo de miniatura**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen alineada. El valor predeterminado es 800 x 800.
 
@@ -99,7 +102,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
   Si se selecciona esta opción, se incluye la siguiente función para las publicaciones del foro, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. La opción predeterminada no está seleccionada.
 
-* **Permitir fijación**
+* **Permitir anclaje**
 
   Si se selecciona, los temas del foro se pueden anclar al principio de la lista de temas. La opción predeterminada no está seleccionada.
 
@@ -123,7 +126,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
   Si se selecciona esta opción, se permiten las respuestas a los comentarios publicados en la pregunta. La opción predeterminada no está seleccionada.
 
-* **Habilitar la votación**
+* **Permitir votación**
 
   Si se selecciona esta opción, se debe incluir la función de votación con una pregunta. La opción predeterminada no está seleccionada.
 
@@ -135,14 +138,14 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
   Si se selecciona, solo se permite a los miembros privilegiados crear contenido.
 
-* **Bloquee el contenido que haya creado el usuario en el modo de edición de autor**
+* **Bloquear contenido generado por el usuario en el modo de edición de autor**
 
   Si está habilitado, bloquea el contenido generado por el usuario mientras lo edita en el modo Autor.
 
 * **Mover la respuesta seleccionada a la parte superior**
 
   Si se selecciona, la primera respuesta que se muestra es una respuesta seleccionada. La opción predeterminada no está seleccionada.
-* **Mostrar insignias**
+* **Mostrar distintivos**
 
   Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la entrada de blog de un miembro. La opción predeterminada no está seleccionada.
 
@@ -158,7 +161,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
 
-* **Patrón de menciones en la interfaz de usuario**
+* **Patrón de mención de IU**
 
   Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
@@ -170,7 +173,7 @@ En el **Moderación de usuario** , especifique cómo se administran los temas pu
 
   Si se selecciona, los moderadores de confianza pueden denegar las respuestas publicadas e impedir que aparezcan en el foro público de preguntas y respuestas. La opción predeterminada no está seleccionada.
 
-* **Cerrar/abrir de nuevo los temas**
+* **Cerrar/volver a abrir temas**
 
   Si se selecciona, los moderadores de miembros de confianza pueden cerrar una pregunta (tema) para realizar más ediciones y obtener respuestas, así como volver a abrir una pregunta. La opción predeterminada no está seleccionada.
 
@@ -181,7 +184,7 @@ Si se selecciona, permite que los moderadores de publicación muevan preguntas. 
 
   Si se selecciona esta opción, se permite a los miembros marcar las preguntas o respuestas de otros como inadecuadas. La opción predeterminada no está seleccionada.
 
-* **Lista de motivos de indicación**
+* **Lista de motivos de marca**
 
   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan una pregunta o respuesta como inadecuada. La opción predeterminada no está seleccionada.
 
@@ -201,7 +204,7 @@ Si se selecciona, permite que los moderadores de publicación muevan preguntas. 
 
 En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **Configuración** están limitadas según las áreas de nombres seleccionadas.
 
-* **Espacios de nombres permitidos**
+* **Áreas de nombres permitidas**
 
   Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar están limitadas a las categorías de área de nombres marcadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 

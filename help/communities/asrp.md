@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -116,7 +118,7 @@ Para obtener información sobre *usuarios*, *perfiles de usuario* y *grupos de u
 * [Sincronización de usuarios](/help/communities/sync.md)
 * [Administración de usuarios y grupos de usuarios](/help/communities/users.md)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
 

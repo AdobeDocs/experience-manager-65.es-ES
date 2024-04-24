@@ -9,10 +9,12 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 2%
+source-wordcount: '1698'
+ht-degree: 1%
 
 ---
 
@@ -72,16 +74,16 @@ Para acceder a la consola de grupos:
 
 ![Grupos de la comunidad multilingües](assets/multi-lingual-group.png)
 
-* **Título del grupo de la comunidad**
+* **Título del grupo de comunidad**
 
   Título para mostrar del grupo.
 El título aparece en el sitio publicado para el grupo.
 
-* **Descripción del grupo de la comunidad**
+* **Descripción del grupo de comunidad**
 
   Una descripción del grupo.
 
-* **Raíz de grupo de la comunidad**
+* **Raíz de grupo de comunidad**
 
   Ruta de acceso raíz del grupo.
 La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cualquier ubicación del sitio web. No se recomienda cambiarlo.
@@ -90,7 +92,7 @@ La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cu
 
   Utilice la lista desplegable para seleccionar los idiomas de grupo de la comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de la comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los sitios de la comunidad correspondientes.
 
-* **Nombre del grupo de la comunidad**
+* **Nombre del grupo de comunidad**
 
   Nombre de la página raíz del grupo que aparece en la dirección URL. Evite utilizar caracteres de subrayado (_) y palabras clave como recursos y configuración en el nombre del grupo.
 
@@ -140,7 +142,7 @@ Al crear o seleccionar una imagen, tenga en cuenta lo siguiente:
 
 ![seleccionar roles de miembros del grupo de comunidad](assets/group-admin.png)
 
-**Moderadores del grupo de la comunidad**
+**Moderadores del grupo de comunidad**
 
 De forma predeterminada, se hereda la lista de moderadores del sitio de la comunidad principal.
 

@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 1%
@@ -39,8 +42,8 @@ El código de este tutorial depende de que el nombre de la carpeta principal sea
 >* Los nombres de nodo pueden contener espacios, pero cuando se utilizan en un URI, el espacio debe codificarse como &#39;%20&#39; o &#39;+&#39;.
 >* Los nombres de nodo pueden contener guiones y guiones bajos, pero deben codificarse cuando se haga referencia a ellos como un nombre de paquete dentro de un archivo Java™. Tanto los guiones como los guiones bajos se codifican con guiones bajos seguidos de su valor Unicode:
 >
-* el guión se convierte en &#39;_002d&#39;
-* el guion bajo se convierte en &#39;_005f&#39;
+>   * el guión se convierte en &#39;_002d&#39;
+>   * el guion bajo se convierte en &#39;_005f&#39;
 
 ## Configurar el directorio de aplicaciones (/apps) {#setup-the-application-directory-apps}
 
@@ -56,21 +59,21 @@ El directorio /apps está protegido y no es accesible públicamente, como los di
    1. Clic con el botón derecho **[!UICONTROL Crear]**... o tire hacia abajo del **[!UICONTROL Crear...]** menú.
    1. Seleccionar **[!UICONTROL Crear carpeta...]**.
    1. En el **[!UICONTROL Crear carpeta]** diálogo, introduzca `an-scf-sandbox`.
-   1. Haga clic en **[!UICONTROL Aceptar]**.
+   1. Haz clic en **[!UICONTROL OK]**.
 
 1. Crear **[!UICONTROL componentes]** subcarpeta.
 
    1. Seleccione el `/apps/an-scf-sandbox` carpeta.
    1. Clic **[!UICONTROL Crear > Crear carpeta]**.
    1. En el **[!UICONTROL Crear carpeta]** diálogo, introduzca **[!UICONTROL componentes]**.
-   1. Haga clic en **[!UICONTROL Aceptar]**.
+   1. Haz clic en **[!UICONTROL OK]**.
 
 1. Crear **[!UICONTROL templates]** subcarpeta.
 
    1. Seleccione el `/apps/an-scf-sandbox` carpeta.
    1. Clic **[!UICONTROL Crear > Crear carpeta]**.
    1. En el **[!UICONTROL Crear carpeta]** diálogo, introduzca **[!UICONTROL templates]**.
-   1. Haga clic en **[!UICONTROL Aceptar]**.
+   1. Haz clic en **[!UICONTROL OK]**.
    1. Volver a seleccionar `/apps/an-scf-sandbox`.
    1. Seleccionar **[!UICONTROL Guardar todo]**.
 

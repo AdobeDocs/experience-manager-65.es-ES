@@ -1,16 +1,18 @@
 ---
-title: Creación de experiencias comerciales
+title: Creación de experiencias de Commerce
 description: CIF El complemento amplía la creación de Adobe Experience Manager con capacidades específicas del comercio.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
-# Creación de experiencias comerciales {#authoring-commerce-experiences}
+# Creación de experiencias de Commerce {#authoring-commerce-experiences}
 
 ## Información general {#overview}
 
@@ -66,7 +68,7 @@ Analógicamente, los productos se pueden enviar en una página (que crea un comp
 
 ### Adición de vínculos en campos de texto mediante RTE {#rte}
 
-CIF Las páginas de catálogo de productos de son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF Añade una nueva acción &quot;Vínculos de comercio&quot; a RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
+CIF Las páginas de catálogo de productos de son páginas virtuales que se procesan sobre la marcha. AEM Por lo tanto, no es posible incrustar hipervínculos como para las páginas de normales. CIF Añade una nueva acción &quot;Vínculos de Commerce&quot; al RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción normal &quot;Hipervínculo&quot;, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
@@ -78,7 +80,7 @@ Esto crea un vínculo de marcador de posición que se sustituye por un vínculo 
 
 ### Acceso al contenido del producto asociado {#associated-content}
 
-Si el editor universal reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de comercio asociado&quot;. AEM Esta pestaña permite a los autores acceder rápidamente al contenido de la documentación que se ha etiquetado con el producto (consulte ). [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de contenido de la pestaña Recursos.
+Si el editor universal reconoce productos 1:n en una página, el panel lateral mostrará automáticamente la pestaña &quot;Contenido de Commerce asociado&quot;. AEM Esta pestaña permite a los autores acceder rápidamente al contenido de la documentación que se ha etiquetado con el producto (consulte ). [AEM enriquecer datos de productos con contenido asociado de la](./enrich-product-associated-content.md) para obtener más información). Esta pestaña ofrece desplegables para filtrar por tipo de contenido y productos específicos si hay varios productos en la página. El uso del contenido funciona exactamente igual que el uso de contenido de la pestaña Recursos.
 
 ![Panel lateral de datos del producto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

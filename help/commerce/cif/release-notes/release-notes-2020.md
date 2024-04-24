@@ -1,9 +1,11 @@
 ---
-title: AEM Notas de la versión de Content and Commerce de 2020
-description: Notas de la versión de Adobe Experience Manager Content and Commerce 2020.
+title: AEM Notas de la versión 2020 de Commerce y contenido de
+description: Contenido de Adobe Experience Manager y notas de la versión de Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 8%
@@ -50,7 +52,7 @@ ht-degree: 8%
 
 * Las páginas de detalles de producto y listas de productos se han ampliado para rellenar automáticamente los metadatos de SEO (como título, metadescripción o palabras clave meta) configurados desde la interfaz de usuario de administración de Adobe Commerce
 
-* Error del componente teaser de Commerce corregido.
+* Se ha corregido un error del componente teaser de Commerce.
 
 ## Fecha de versión: septiembre de 2020
 
@@ -90,7 +92,7 @@ ht-degree: 8%
 
 * Se ha agregado un componente Ruta de exploración para admitir páginas de contenido y comercio.
 
-* CIF Se ha añadido la pestaña Comercio en Propiedades de página para exponer las propiedades de la página de aterrizaje y los fragmentos de experiencias.
+* Se ha añadido la pestaña Commerce CIF en Propiedades de página para exponer las propiedades de la página de aterrizaje y los fragmentos de experiencias.
 
 * El componente Barra de búsqueda se ha mejorado para que admita la opción de mostrar el texto del marcador de posición
 

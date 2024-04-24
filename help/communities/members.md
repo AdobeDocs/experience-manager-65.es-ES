@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 4%
+source-wordcount: '959'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +89,7 @@ La mayoría de los campos son campos opcionales que el miembro puede rellenar po
 De forma predeterminada, el ID se establece en el valor de la dirección de correo electrónico requerida.
 *Una vez creada, no se puede modificar la ID*.
 
-* **[!UICONTROL Dirección de correo electrónico]**
+* **[!UICONTROL Correo electrónico]**
 
 (*Requerido*) La dirección de correo electrónico del miembro.
 El miembro puede cambiar su dirección de correo electrónico al actualizar su perfil.I Si el ID tiene de forma predeterminada la dirección de correo electrónico, el ID *no* cambiar cuando se cambia la dirección de correo electrónico.
@@ -108,7 +110,7 @@ El miembro puede cambiar su dirección de correo electrónico al actualizar su p
 
   (*Opcional*) Seleccione entre los grupos de miembros existentes para agregar el miembro a ese grupo.
 
-* Seleccione **[!UICONTROL Guardar]**
+* Seleccionar **[!UICONTROL Guardar]**
 
 ### GENERAL: Configuración de la cuenta {#general-account-settings}
 
@@ -196,7 +198,7 @@ Los campos obligatorios para crear un grupo de miembros del lado de publicación
 
   (*Opcional*) Seleccione los miembros de publicación que se incluirán como miembros iniciales del grupo.
 
-* Seleccione **[!UICONTROL Guardar]**
+* Seleccionar **[!UICONTROL Guardar]**
 
 ## Administradores autorizados {#authorized-administrators}
 

@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1195'
+ht-degree: 0%
 
 ---
 
@@ -128,9 +131,9 @@ Crear un grupo de referencia:
 1. Seleccionar **Nuevo grupo**
 1. **Pestaña Configuración**
 
-   * Nombre del grupo : `Sports`
+   * Nombre de grupo: `Sports`
    * Descripción : `A parent group for various sporting groups`.
-   * Nombre de URL del grupo : `sports`
+   * Nombre de URL del grupo: `sports`
    * Seleccionar `Open Group` (permitir que cualquier miembro de la comunidad participe uniéndose)
 
 1. **Pestaña Plantilla**
@@ -208,8 +211,8 @@ Utilice el botón Atrás del explorador para volver al sitio publicado. La mayor
 
 Después de cerrar la sesión, es posible crear un registro de usuario.
 
-* Seleccione lo siguiente `Log In`
-* Seleccione lo siguiente `Sign up for a new account`
+* Seleccionar `Log In`
+* Seleccionar `Sign up for a new account`
 
 ![registro](assets/registration.png)
 

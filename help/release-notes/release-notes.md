@@ -3,7 +3,10 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '3735'
 ht-degree: 2%
@@ -159,7 +162,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * Cuando un usuario hace clic en una imagen con el botón &quot;Tomar una foto&quot; en el componente Archivo adjunto de un dispositivo iOS, todas las imágenes se añaden a la carpeta con el mismo nombre. (FORMS-12224)
 * Cuando un usuario actualiza una opción existente en un grupo de botones de opción, se publican valores de traducción incorrectos. (FORMS-12575)
 * Cuando un usuario agrega caracteres a un formulario adaptable en un dispositivo Android™, puede escribir más del número máximo de caracteres definido en el campo Texto al enfocar hacia fuera, en dispositivos Android™. Sin embargo, funciona cuando un usuario selecciona el tipo de entrada HTML 5. (FORMS-12748)
-* Debido a las etiquetas coincidentes Arial® etiquetadas por y Arial®, los lectores de pantalla no pueden distinguir entre estas dos. Para resolver el problema, la etiqueta &quot;aria-labelledby&quot; se sustituye por &quot;aria-describedby&quot; en los campos del formulario. (FORMS-12436)
+* Debido a las etiquetas coincidentes Arial® etiquetadas por y Arial®, los lectores de pantalla no pueden distinguir entre estas dos. Para resolver el problema, la etiqueta “aria-labelledby” se sustituye por “aria-describedby” en los campos del formulario. (FORMS-12436)
 * Cuando un autor utiliza el componente &quot;Adaptive Forms - Embed (v2)&quot; para incrustar un formulario adaptable en la página de Sites y el formulario incrustado contiene un componente CAPTCHA en él (Servicio CAPTCHA -> reCAPTCHA, Configuración -> reCAPTCHA-v2), la página de Sites no se procesa cuando el usuario intenta ver la página de Sites con &quot;Ver como publicado&quot; en la instancia de autor. El siguiente error se muestra como (FORMS-11859):
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 

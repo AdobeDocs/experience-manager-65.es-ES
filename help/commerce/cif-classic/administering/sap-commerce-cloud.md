@@ -6,7 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1574'
 ht-degree: 1%
@@ -313,7 +315,7 @@ AEM El catálogo de hybris se puede importar a la lista de productos, utilizando
 
 Los parámetros utilizados por el importador se pueden configurar para:
 
-**Importador de catálogos de Day CQ Commerce Hybris**
+**Importador de catálogos Hybris de Commerce de CQ por día**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
 AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada. Consulte también la consola para obtener una lista completa de los parámetros configurables y sus valores predeterminados.
@@ -343,7 +345,7 @@ Ruta de acceso en la que se debe importar el catálogo.
 
 Para eliminar uno o más productos del catálogo:
 
-1. [Configure para el servicio OSGi](/help/sites-deploying/configuring-osgi.md) **Importador de catálogos de Day CQ Commerce Hybris**; consulte también [Configuración del importador de catálogos](#configure-the-catalog-importer).
+1. [Configure para el servicio OSGi](/help/sites-deploying/configuring-osgi.md) **Importador de catálogos Hybris de Commerce de CQ por día**; consulte también [Configuración del importador de catálogos](#configure-the-catalog-importer).
 
    Active las siguientes propiedades:
 

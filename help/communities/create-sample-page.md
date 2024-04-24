@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 2%
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
@@ -35,12 +38,12 @@ En la navegación global en una instancia de autor, seleccione **[!UICONTROL Her
 
 ![create-site-template](assets/create-site-template1.png)
 
-* Seleccione lo siguiente `Create button`
+* Seleccionar `Create button`
 * INFORMACIÓN BÁSICA
 
    * `Name`: Plantilla de una sola página
    * `Description`: una plantilla que consta de una sola función Página.
-   * Seleccione lo siguiente `Enabled`
+   * Seleccionar `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
@@ -81,17 +84,17 @@ Después de crear la plantilla del sitio, en navegación global, seleccione **[!
 
      ![create-community-site-template](assets/create-community-site-template.png)
 
-* Seleccione lo siguiente `Next`
+* Seleccionar `Next`
 * Paso `2 - Design`
 
    * Seleccione cualquier diseño
 
-* Seleccione lo siguiente `Next`
-* Seleccione lo siguiente `Next`
+* Seleccionar `Next`
+* Seleccionar `Next`
 
   (Aceptar todos los ajustes predeterminados)
 
-* Seleccione lo siguiente `Create`
+* Seleccionar `Create`
 
   ![create-community-site](assets/create-community-site.png)
 

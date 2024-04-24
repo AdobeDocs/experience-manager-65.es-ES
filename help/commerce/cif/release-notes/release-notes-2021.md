@@ -1,9 +1,11 @@
 ---
-title: Notas de la versión de Adobe Experience Manager Content and Commerce de 2021
-description: Notas de la versión de Adobe Experience Manager Content and Commerce de 2021.
+title: Notas de la versión 2021 de Adobe Experience Manager Content and Commerce
+description: Contenido de Adobe Experience Manager y notas de la versión de Commerce 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 12%
@@ -144,7 +146,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 * CIF Nuevos tipos de datos de referencia de productos y categorías para fragmentos de contenido (incl. soporte de la interfaz de usuario del selector de productos/categorías)
 * Nuevo componente principal de fragmento de contenido de Commerce
 * AEM Búsqueda de comercio de texto completo admitida en el back-end de la
-* Los componentes principales de Commerce admiten la recopilación de datos de Adobe Commerce Sensei Recs
+* Los componentes principales de Commerce admiten la recopilación de datos Adobe Commerce Sensei Recs
 * Se han mejorado las URL compatibles con SEO para las páginas de categorías
 * Compatibilidad con encabezados HTTP personalizados por sitio/configuración
 
@@ -236,7 +238,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 ### Novedades {#what-is-new-january}
 
-* Product Experience Management: nueva pestaña de propiedades Comercio, para Recursos y Fragmentos de experiencias. Esta pestaña le permite vincular recursos y fragmentos de experiencias a productos y categorías. La pestaña también muestra datos en tiempo real de objetos de comercio vinculados y un vínculo para mostrar detalles en la consola de producto.
+* Administración de experiencias de producto: nueva pestaña de propiedades &quot;Commerce&quot; para Recursos y Fragmentos de experiencias. Esta pestaña le permite vincular recursos y fragmentos de experiencias a productos y categorías. La pestaña también muestra datos en tiempo real de objetos de comercio vinculados y un vínculo para mostrar detalles en la consola de producto.
 
 ### Qué se ha mejorado  {#what-is-improved-january}
 

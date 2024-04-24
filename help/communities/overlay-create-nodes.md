@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 10%
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -33,22 +36,22 @@ Algunos nodos de la ruta son carpetas y otros son componentes.
 1. Crear `/apps/social` (si aún no existe)
    * Seleccionar `/apps` nodo
    * **[!UICONTROL Crear > Carpeta]**
-      * Introduzca el nombre: `social`
+      * Escriba el nombre: `social`
 1. Seleccionar `social` nodo
    * **[!UICONTROL Crear]** > **[!UICONTROL Carpeta]**
-      * Introduzca el nombre: `commons`
+      * Escriba el nombre: `commons`
 1. Seleccionar `commons` nodo
    * **[!UICONTROL Crear > Carpeta]**
-      * Introduzca el nombre: `components`
+      * Escriba el nombre: `components`
 1. Seleccionar `components` nodo
    * **[!UICONTROL Crear > Carpeta]**.
-      * Introduzca el nombre: `hbs`
+      * Escriba el nombre: `hbs`
 1. Seleccionar `hbs` nodo
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente]**
       * Introducir etiqueta: `comments`
       * Escriba el título: `Comments`
       * Escriba la descripción: `List of comments without showing avatars`
-      * Super Type: `social/commons/components/comments`
+      * Supertipo: `social/commons/components/comments`
       * Introducir grupo: `Communities`
       * Clic **[!UICONTROL Siguiente]** hasta **[!UICONTROL OK]**
 1. Seleccionar `comments` nodo
@@ -58,16 +61,16 @@ Algunos nodos de la ruta son carpetas y otros son componentes.
       * Introducir etiqueta: `comment`
       * Escriba el título: `Comment`
       * Escriba la descripción: `A comment instance without avatars`
-      * Super Type: `social/commons/components/comments/comment`
+      * Supertipo: `social/commons/components/comments/comment`
       * Introducir grupo: `.hidden`
       * Clic **[!UICONTROL Siguiente]** hasta **[!UICONTROL OK]**
    * Seleccionar **[!UICONTROL Guardar todo]**
 1. Eliminar el valor predeterminado `comments.jsp`
    * Seleccionar nodo `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Seleccione **[!UICONTROL Eliminar]**
+   * Seleccionar **[!UICONTROL Eliminar]**
 1. Elimine el archivo comment.jsp predeterminado
    * seleccionar nodo `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Seleccione **[!UICONTROL Eliminar]**
+   * Seleccionar **[!UICONTROL Eliminar]**
    * Seleccionar **[!UICONTROL Guardar todo]**
 
 >[!NOTE]

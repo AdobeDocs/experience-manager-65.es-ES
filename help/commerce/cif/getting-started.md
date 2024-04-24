@@ -1,11 +1,12 @@
 ---
 title: Introducción a AEM Content y Commerce
-description: AEM Obtenga información sobre cómo implementar un proyecto de Contenido y comercio de.
+description: AEM Obtenga información sobre cómo implementar un proyecto de Contenido y Commerce de.
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 4%
@@ -14,7 +15,7 @@ ht-degree: 4%
 
 # Introducción a AEM Content y Commerce {#start}
 
-AEM AEM AEM Para empezar a usar Contenido y comercio de, debe instalar el complemento de Contenido y comercio de para 6.5.
+AEM Para empezar a usar Contenido de la y Commerce AEM, debe instalar el complemento Contenido de la y Commerce AEM para la versión 6.5 de la misma.
 
 ## Requisito mínimo de software
 
@@ -22,15 +23,15 @@ AEM AEM AEM Para empezar a usar Contenido y comercio de, debe instalar el comple
 
 ## Incorporación {#onboarding}
 
-AEM La incorporación para Contenido y comercio de es un proceso de dos pasos:
+AEM La incorporación de Contenido de la y Commerce es un proceso de dos pasos:
 
-1. AEM AEM Instale el complemento de contenido y comercio de la para 6.5
+1. AEM Instalación del complemento Contenido de la y Commerce AEM para la versión 6.5 de la versión
 
 2. AEM Conéctese con su solución de comercio de
 
-### AEM AEM Instale el complemento de contenido y comercio de la para 6.5 {#install-add-on}
+### AEM Instalación del complemento Contenido de la y Commerce AEM para la versión 6.5 de la versión {#install-add-on}
 
-AEM AEM Descargue e instale el complemento de comercio de la para 6.5 desde el [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) portal.
+AEM Descargue e instale el complemento de Commerce AEM para la versión 6.5 de desde el [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) portal.
 
 AEM Inicie e instale el paquete de servicio necesario de 6.5 de. Se recomienda instalar el último Service Pack disponible.
 
@@ -38,7 +39,7 @@ AEM Inicie e instale el paquete de servicio necesario de 6.5 de. Se recomienda i
 >
 >AEM Esto lo hará el CSE para los clientes de Managed Service de la.
 
-### AEM Conexión a su sistema de comercio de {#connect}
+### AEM Conéctese a su sistema de Commerce {#connect}
 
 AEM Se puede conectar a cualquier sistema de comercio que tenga un punto final de GraphQL AEM accesible para su. Estos extremos suelen estar disponibles públicamente o pueden conectarse a través de conexiones privadas VPN o locales, según la configuración individual del proyecto.
 
@@ -48,7 +49,7 @@ Proyectos generados por el [AEM Tipo de archivo del proyecto](https://github.com
 
 Reemplace el valor del `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con el extremo GraphQL de su sistema de comercio. Esta configuración se puede realizar a través de la consola OSGI o implementando la configuración OSGI a través del proyecto. AEM Se admiten diferentes configuraciones para sistemas de ensayo y producción utilizando diferentes modos de ejecución de la.
 
-AEM CIF AEM Los componentes principales y del complemento de contenido y comercio de la utilizan conexiones del lado del servidor y del lado del cliente de la aplicación de la forma más sencilla posible. CIF CIF Las herramientas de creación de complementos de componentes principales y de componentes de cliente se conectan de forma predeterminada a `/api/graphql`. CIF Esto se puede ajustar a través de la configuración del Cloud Service de si es necesario (consulte a continuación).
+AEM Los componentes principales y del complemento de Commerce CIF AEM y de contenido de la utilizan conexiones tanto del lado del servidor como del lado del cliente. CIF CIF Las herramientas de creación de complementos de componentes principales y de componentes de cliente se conectan de forma predeterminada a `/api/graphql`. CIF Esto se puede ajustar a través de la configuración del Cloud Service de si es necesario (consulte a continuación).
 
 CIF El complemento de proporciona un servlet proxy de GraphQL en `/api/graphql` que se puede utilizar de forma opcional para [desarrollo local](develop.md). Para implementaciones de producción, se recomienda encarecidamente configurar un proxy inverso al extremo de GraphQL AEM de comercio a través de la instancia de Dispatcher de o en otras capas de red (como CDN).
 

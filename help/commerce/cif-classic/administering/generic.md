@@ -7,7 +7,9 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2907'
 ht-degree: 2%
@@ -114,7 +116,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 
      `/etc/commerce/products/<*store name*>/`
 
-   * **Proveedor comercial**
+   * **Proveedor de Commerce**
 
      El importador de su [proveedor comercial](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); de forma predeterminada Geometrixx.
 
@@ -633,7 +635,7 @@ Para cambiar las propiedades de un cupón o promoción, puede hacer doble clic e
 
 ### Adición de cupones a un carro de compras {#adding-vouchers-to-a-cart}
 
-Para permitir que los usuarios agreguen cupones a sus carros de compras, puede utilizar el **Cupones** componente (categoría de comercio). Añádalo a la misma página donde se muestra el carro de compras (pero esto no es obligatorio). El componente de cupones es simplemente una forma en la que el usuario puede introducir un código de cupón, es el componente del carro de compras el que realmente muestra la lista de cupones aplicados y su descuento.
+Para permitir que los usuarios agreguen cupones a sus carros de compras, puede utilizar el **Cupones** componente (categoría Commerce). Añádalo a la misma página donde se muestra el carro de compras (pero esto no es obligatorio). El componente de cupones es simplemente una forma en la que el usuario puede introducir un código de cupón, es el componente del carro de compras el que realmente muestra la lista de cupones aplicados y su descuento.
 
 En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formulario de cupón en la página del carro de compras, debajo del carro de compras real.
 

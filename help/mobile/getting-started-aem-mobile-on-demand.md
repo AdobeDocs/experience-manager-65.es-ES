@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
@@ -37,7 +40,7 @@ AEM La aplicación de comprobación preliminar se puede considerar un entorno de
 
 >[!NOTE]
 >
->En el diagrama anterior, la instancia de publicación de AEM no es necesaria para un escenario de implementación típico en AEM Mobile On-demand Services.
+>AEM En el diagrama anterior, la instancia de publicación de la no es necesaria para un escenario de implementación típico en AEM Mobile On-demand Services.
 
 ## Inicio de una nueva aplicación móvil {#starting-a-new-mobile-app}
 
@@ -72,7 +75,7 @@ Para empezar con las funciones y responsabilidades de un administrador, consulte
 
 ## AEM Desarrollador de {#aem-developer}
 
-Un **AEM desarrollador de** amplía y crea plantillas web y componentes personalizados para permitir que *AEM Author *cree experiencias móviles hermosas y atractivas. AEM Estas plantillas y componentes no solo están optimizadas para el mundo de las aplicaciones móviles, sino que se comunican tanto con el dispositivo como con el servidor de (cualquier servidor remoto) a los puntos finales de servicios omnicanal. AEM El editor de contenido integrado de la lo utiliza *Autores AEM* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
+Un **AEM desarrollador de** AEM amplía y crea plantillas y componentes web personalizados para permitir que el autor de **cree experiencias móviles hermosas y atractivas. AEM Estas plantillas y componentes no solo están optimizadas para el mundo de las aplicaciones móviles, sino que se comunican tanto con el dispositivo como con el servidor de (cualquier servidor remoto) a los puntos finales de servicios omnicanal. AEM El editor de contenido integrado de la lo utiliza *AEM Autores de* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
 
 AEM Un desarrollador de aplicaciones es responsable de las siguientes tareas al crear una aplicación mediante AEM Mobile On-demand Services:
 
@@ -89,7 +92,7 @@ Para empezar a usar las funciones y responsabilidades de desarrollador, consulte
 
 ## AEM Author {#aem-author}
 
-Un ***AEM Author* (o *Especialista en marketing*)**utiliza las plantillas y los componentes desarrollados o predeterminados para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todos los tipos desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM A continuación, utiliza el editor de contenido integrado de la *Autores AEM* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
+Un ***AEM Autor de* (o *Especialista en marketing*)**utiliza las plantillas y los componentes desarrollados o predeterminados para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todos los tipos desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM A continuación, utiliza el editor de contenido integrado de la *AEM Autores de* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
 
 AEM Un autor de la debe comprender los siguientes temas al crear una aplicación con AEM Mobile On-demand Services:
 
@@ -103,4 +106,4 @@ Para empezar con las funciones y responsabilidades de un autor, consulte [AEM Cr
 
 >[!NOTE]
 >
->Un autor de AEM también es responsable de configurar el derecho, crear tarjetas y diseños y enviar notificaciones push. Además, para obtener más información sobre los métodos para crear contenido, administrar artículos y colecciones, crear titulares, tarjetas y diseños en AEM Mobile, consulte [Portal de AEM Mobile On-Demand](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>AEM También es responsable de configurar la asignación de derechos, crear tarjetas y diseños y enviar notificaciones push. Además, para obtener más información sobre los métodos para crear contenido, administrar artículos y colecciones, crear titulares, tarjetas y diseños en AEM Mobile, consulte [Portal de AEM Mobile On-Demand](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).

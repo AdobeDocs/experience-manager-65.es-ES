@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '270'
 ht-degree: 4%
 
 ---
@@ -25,13 +28,13 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->**Requisitos previos:**
+>**Requisito previo:**
 >
 >Antes de trabajar con AEM Mobile On-demand Services y seguir los pasos de esta guía de introducción, los usuarios deben estar familiarizados con [AEM](/help/sites-deploying/deploy.md).
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-Un ***AEM Author* (o *Especialista en marketing*)**utiliza plantillas y componentes personalizados o listos para usar para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM A continuación, utiliza el editor de contenido integrado de la *Autores AEM* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
+Un ***AEM Autor de* (o *Especialista en marketing*)**utiliza plantillas y componentes personalizados o listos para usar para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM A continuación, utiliza el editor de contenido integrado de la *AEM Autores de* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
 
 AEM Un autor de la es responsable de las siguientes tareas al crear una aplicación mediante AEM Mobile On-demand Services.
 

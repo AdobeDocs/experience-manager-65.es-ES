@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 2%
+source-wordcount: '1153'
+ht-degree: 0%
 
 ---
 
@@ -120,7 +123,7 @@ Al utilizar la guía en una instancia de publicación, es posible experimentar l
 >
 >Tenga en cuenta que si se deja el SRP de forma predeterminada en [JSRP](jsrp.md), UGC introducidos en la instancia de publicación solo serán visibles en la publicación, y *no* ser visible desde el [moderación](moderate-ugc.md) en la instancia de autor.
 
-## Bibliotecas de cliente {#client-side-libraries}
+## Bibliotecas del cliente {#client-side-libraries}
 
 Las bibliotecas de cliente (clientlibs) enumeradas para cada componente son las siguientes *obligatorio* se debe hacer referencia a él cuando el componente se coloca en una página. Los clientlibs proporcionan un medio para administrar y optimizar la descarga de JavaScript y CSS utilizados para procesar el componente en el explorador.
 

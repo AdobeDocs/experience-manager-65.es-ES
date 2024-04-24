@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '291'
 ht-degree: 2%
 
 ---
@@ -21,13 +24,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->AEM Si no utiliza Adobe Experience Manager () como fuente de administración de contenido, consulte [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Si no utiliza Adobe AEM Experience Manager () como fuente de administración de contenido, consulte [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Administrador de AEM {#aem-administrator}
 
 >[!NOTE]
 >
->**Requisitos previos:**
+>**Requisito previo:**
 >
 >Antes de empezar a configurar su entorno para AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard o el Centro de control](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 

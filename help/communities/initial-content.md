@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 4%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
@@ -97,7 +100,7 @@ El repositorio debe aparecer de la siguiente manera:
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
-* Haga clic en **[!UICONTROL Guardar todo]**
+* Clic **[!UICONTROL Guardar todo]**
 
 Si hay algún problema al guardar la configuración, vuelva a iniciar sesión y configure de nuevo.
 
