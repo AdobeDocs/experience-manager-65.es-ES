@@ -5,9 +5,9 @@ contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
-source-wordcount: '4535'
+source-wordcount: '4534'
 ht-degree: 63%
 
 ---
@@ -317,7 +317,7 @@ Una vez completada la configuración en la nube, es posible que desee probar el 
 
    >[!NOTE]
    >
-   Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+   Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 #### Prueba del modelo de datos de Forms (Derby) {#test-fdm-derby}
 
@@ -503,7 +503,7 @@ El certificado creado en esta sección se utilizará para crear el servicio de i
 
 Asegúrese de que puede crear una integración dentro del dominio de Adobe si no se pone en contacto con el administrador del sistema para hacerlo.
 
-1. Vaya a la [consola de Adobe I/O](https://developer.adobe.com/console/).
+1. Vaya a [Consola de Adobe Developer](https://developer.adobe.com/console/).
 
 1. Haga clic en Crear integración.
 
