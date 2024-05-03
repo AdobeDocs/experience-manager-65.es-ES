@@ -7,7 +7,8 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 4%
@@ -58,7 +59,7 @@ En la tabla siguiente se enumeran los perfiles de certificado que pueden encontr
   <tr>
    <td><p>P1</p></td>
    <td><p>Producción de SAP</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción</p></td>
   </tr>
   <tr>
@@ -70,7 +71,7 @@ En la tabla siguiente se enumeran los perfiles de certificado que pueden encontr
   <tr>
    <td><p>P3</p></td>
    <td><p>Extensiones de Acrobat Reader DC, producción</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción</p></td>
   </tr>
   <tr>
@@ -94,49 +95,49 @@ En la tabla siguiente se enumeran los perfiles de certificado que pueden encontr
   <tr>
    <td><p>P8</p></td>
    <td><p>Forms, Producción</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción</p></td>
   </tr>
   <tr>
    <td><p>P9</p></td>
    <td><p>Adobe Acrobat 7.x, producción</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
    <td><p>Forms; puede ser utilizado por los OEM</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms; puede ser utilizado por los OEM</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
    <td><p>Solo firma; los OEM pueden utilizarla</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
    <td><p>Solo comentarios sin conexión; los OEM pueden utilizarlos</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
    <td><p>Sólo comentarios; los OEM pueden utilizarlos</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
    <td><p>Permisos completos; pueden utilizarlos los OEM</p></td>
-   <td><p>Max</p></td>
+   <td><p>Máx.</p></td>
    <td><p>Producción y evaluación</p></td>
   </tr>
  </tbody>

@@ -5,10 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 docset: aem65
-role: Admin
+role: Admin,User
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 61%
@@ -127,7 +127,7 @@ Para habilitar y configurar el almacenamiento en caché de los formularios adapt
 
 El entorno de AEM está configurado para almacenar en la memoria caché los formularios adaptables. Almacena en la memoria caché todo tipo de formularios adaptables. Si necesita comprobar los permisos de acceso de los usuarios de una página antes de enviar la página almacenada en caché, consulte [almacenamiento en caché de contenido protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es).
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 ### Algunos formularios adaptables que contienen imágenes o vídeos no se invalidan automáticamente en la caché de Dispatcher {#videos-or-images-not-auto-invalidated}
 

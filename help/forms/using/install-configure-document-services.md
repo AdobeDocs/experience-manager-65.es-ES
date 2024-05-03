@@ -2,13 +2,13 @@
 title: Instalación y configuración de Document Services
 description: Instale AEM Forms Document Services para crear, ensamblar, distribuir y archivar documentos PDF, agregar firmas digitales para limitar el acceso a los documentos y descodificar formularios con código de barras.
 topic-tags: installing
-role: Admin
+role: Admin, User, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '5633'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -309,7 +309,7 @@ Puede habilitar a un usuario que no sea administrador para que utilice el servic
 
 >[!NOTE]
 >
-> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 ### (Solo Windows) Deshabilitar el Control de cuentas de usuario (UAC) {#disable-user-account-control-uac}
 
@@ -594,7 +594,7 @@ Después de instalar el complemento de AEM Forms y el proyecto Microsoft® en el
 
 El [Herramienta Preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones del PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
 
-1. Abra el símbolo del sistema. Navegue hasta la carpeta `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`. 
+1. Abra el símbolo del sistema. Navegue hasta la carpeta `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
 1. Ejecute el siguiente comando desde el Símbolo del sistema:
 

@@ -5,13 +5,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-role: Admin
+role: Admin,User
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ Haga lo siguiente para actualizar de AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 For
 
    >[!NOTE]
    >
-   Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+   Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 1. Realice actividades posteriores a la instalación.
 

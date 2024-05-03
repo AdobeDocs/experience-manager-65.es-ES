@@ -4,10 +4,10 @@ description: Conozca diferentes configuraciones de seguridad para mejorar la seg
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-role: Admin
+role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '7608'
 ht-degree: 90%
@@ -468,7 +468,7 @@ Puede permitir a un usuario que no sea administrador que utilice PDF Generator.
 
 >[!NOTE]
 >
-> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 ## Configuración de AEM Forms en JEE para acceder a la aplicación desde fuera de la empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

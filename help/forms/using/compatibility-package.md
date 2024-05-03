@@ -6,13 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
-role: Admin
+role: Admin,User
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 76%
+ht-degree: 85%
 
 ---
 
@@ -46,7 +46,7 @@ Asegúrese de que tiene preinstalado el [paquete de compatibilidad de AEM](https
 
    >[!NOTE]
    >
-   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
    Para obtener más información, consulte [utilidad de migración](../../forms/using/migration-utility.md).
 

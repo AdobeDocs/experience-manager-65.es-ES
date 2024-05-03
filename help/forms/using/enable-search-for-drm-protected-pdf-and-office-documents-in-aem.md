@@ -8,10 +8,11 @@ noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +65,7 @@ Una conexión segura permite un flujo de información fluido entre AEM Forms en 
 
    >[!NOTE]
    >
-   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de la.
+   > Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 ## Indexar un PDF de ejemplo o un documento de Microsoft Office protegidos mediante directivas {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

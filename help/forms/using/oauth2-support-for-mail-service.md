@@ -3,7 +3,8 @@ title: Configuración de la autenticación basada en OAuth2 para Microsoft® (Fo
 description: Configuración de la autenticación basada en OAuth2 para Microsoft® (Forms JEE OAuth); protocolos de servidor de correo de Office 365
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%
@@ -165,7 +166,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
    >
    > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 * Si el servicio de correo electrónico no funciona correctamente, intente volver a generar el `Refresh Token` como se ha descrito anteriormente. El nuevo valor tarda unos minutos en implementarse.
 

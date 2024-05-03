@@ -3,7 +3,9 @@ title: API facturables de informes de transacciones para AEM Forms en JEE.
 description: Lista de todas las API que se contabilizan como transacciones para AEM Forms en JEE.
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 46%
@@ -385,7 +387,7 @@ El uso de la API de invocación se cuenta como una transacción, cuando realiza 
 
 -->
 
-### Forms {#form-set}
+### Formularios {#form-set}
 
 <table>
  <tbody>
