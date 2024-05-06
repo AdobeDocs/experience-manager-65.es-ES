@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
+source-git-commit: d5554718d663515d84878ff94555ac6cadcab891
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7408'
 ht-degree: 67%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 67%
 + Notas de la versión {#release-notes}
    + [Notas de la versión](/help/release-notes/release-notes.md)
    + Notas de la versión anterior {#service-pack}
+      + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -73,7 +74,7 @@ ht-degree: 67%
    + [Filtro de disposición de contenido](/help/sites-administering/content-disposition-filter.md)
    + [AEM Asignación de grupos de usuarios personalizados en 6.5](/help/sites-administering/cug-mapping.md)
    + [Compatibilidad con cookies de SameSite](/help/sites-administering/same-site-cookie-support.md)
-   + [Credenciales JWT de Adobe Developer Console en desuso](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Credenciales de JWT de Adobe Developer Console en desuso](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Sites {#sites}
    + Creación {#authoring}
       + AEM Tareas, herramientas y conceptos esenciales para la creación de {#essentials}
@@ -262,7 +263,7 @@ ht-degree: 67%
          + [Prácticas recomendadas de MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites: Preparación para el RGPD](/help/sites-administering/gdpr-compliance-sites.md)
          + [AEM Gestión de solicitudes de RGPD para la Fundación de la](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
-         + [AEM Comercio de - Preparación para el RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
+         + [AEM Commerce - Preparación para el RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
       + Gestión de contenido {#contentmanagement}
          + [El administrador de paquetes](/help/sites-administering/package-manager.md)
          + [Administración de etiquetas](/help/sites-administering/tags.md)
@@ -1203,7 +1204,7 @@ ht-degree: 67%
       + [Pasar credenciales mediante encabezados WS-Security](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
    + [Introducción e información general](/help/commerce/cif/introduction.md)
-   + [AEM Cambios importantes en el contenido y el comercio de la](/help/commerce/cif/changes.md)
+   + [AEM Cambios importantes en el contenido de la y Commerce](/help/commerce/cif/changes.md)
    + Integraciones {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Solución de comercio de terceros](/help/commerce/cif/integrating/third-party.md)
@@ -1559,7 +1560,7 @@ ht-degree: 67%
          + [Casos de uso de indexación Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Inclusión En La Recopilación De Estadísticas De Uso Agregadas](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
-         + [Solución de problemas](/help/sites-deploying/troubleshooting.md)
+         + [Resolución de problemas](/help/sites-deploying/troubleshooting.md)
       + AEM Configuración de la {#configuring}
          + [Conceptos básicos de configuración](/help/sites-deploying/configuring.md)
          + [Registro](/help/sites-deploying/configure-logging.md)
