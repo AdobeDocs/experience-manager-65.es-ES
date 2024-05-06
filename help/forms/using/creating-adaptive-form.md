@@ -4,12 +4,11 @@ description: Obtenga información sobre cómo crear un formulario adaptable medi
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
-exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 94%
+source-wordcount: '1984'
+ht-degree: 91%
 
 ---
 
@@ -210,3 +209,18 @@ De forma predeterminada, la opción de guardado automático no está activada. P
    >Para que la opción de guardado automático funcione para usuarios anónimos, asegúrese de configurar el servicio de configuración común de Forms para permitir que todos los usuarios puedan obtener una vista previa, comprobar y firmar formularios.
    >
    >Para configurar el servicio, vaya a la configuración de la consola web de Adobe Experience Manager en `https://'[server]:[port]'system/console/configMgr` y edite el **[!UICONTROL Servicio de configuración común de Forms]** para elegir la opción **[!UICONTROL Todos los usuarios]** en el campo **[!UICONTROL Permitir]** y guarde la configuración.
+
+
+## AEM ¿Cómo se cambia el nombre de un formulario adaptable de? {#rename-an-AEM-Adaptive-Form}
+
+Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
+
+1. Seleccione un formulario adaptable en la interfaz de usuario de AEM Forms.
+1. Haga clic en **Propiedades** situado en el carril superior.
+
+   ![Propiedades](/help/forms/using/assets/rename-form-properties.png)
+
+1. Cambie el nombre del formulario en la **Título** , como se muestra en la siguiente imagen.
+1. Clic **Guardar y cerrar**.
+
+   ![AEM Cambiar el nombre de un formulario adaptable](/help/forms/using/assets/rename-form-title.png)
