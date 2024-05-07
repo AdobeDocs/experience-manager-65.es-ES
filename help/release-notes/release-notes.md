@@ -5,9 +5,9 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 8672eabadd50dfb5f243a162c205931704d8a6c7
+source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
 workflow-type: tm+mt
-source-wordcount: '3769'
+source-wordcount: '3770'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* AEM AEM Ya no se admitían carpetas de configuración anidadas y las carpetas del modelo de fragmento de contenido dejaron de ser visibles después de actualizar a la versión 6.5.18 o a la versión 6.5.19 de la versión 6.18 o la versión 6.5.19 de la versión. (SITES-18110)
+* AEM AEM Las carpetas de configuración anidadas ya no eran compatibles y las carpetas del modelo de fragmento de contenido ya no eran visibles después de actualizar a la versión 6.5.18 o a la versión 6.5.19 de la versión 6.18 de la versión o a la versión 6.5.19 de la versión de la versión de. (SITES-18110)
 * Algunas subcarpetas no pueden elegir entre los modelos de fragmento de contenido heredados. Debe admitir carpetas sin tener un `jcr:content` , incluso si las carpetas DAM creadas mediante la interfaz de usuario tienen un nodo de este tipo. (SITES-17943)
 
 #### [!DNL Content Fragments] - API de GraphQL {#sites-graphql-api-6520}
