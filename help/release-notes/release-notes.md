@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
+source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 3%
+source-wordcount: '4046'
+ht-degree: 2%
 
 ---
 
@@ -530,6 +530,11 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 1. Stop the application server.
 
 -->
+* En un formulario adaptable basado en un XDP con scripts incrustados en casillas de verificación, los scripts no se ejecutan para elementos después de esas casillas de verificación. (FORMS-14244)
+* Las filas del widget selector de fechas se truncan al recorrer meses en el widget emergente de los campos con el patrón Editar/Mostrar. (FORMS-13620)
+* Los envíos de formularios fallan al intentar utilizar el servicio DOR (documento de registro) en el backend. El mensaje de error encontrado es: &quot;No se pudo completar la acción de envío porque el recurso de formulario no se ha asignado correctamente&quot;. (FORMS-13798)
+* Cuando se envía un formulario adaptable desde una instancia de publicación de Adobe Experience Manager a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no puede guardar los archivos adjuntos. (FORMS-14209)
+* AEM Al instalar el paquete de servicio 20 de Forms 6.5 de la interfaz de usuario (IU) de AEM Sites (paquete de complemento de AEM Forms para SP20), se produce una degradación significativa del rendimiento. (FORMS-13791)
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
