@@ -3,12 +3,11 @@ title: Instalación y configuración de Document Services
 description: Instale AEM Forms Document Services para crear, ensamblar, distribuir y archivar documentos PDF, agregar firmas digitales para limitar el acceso a los documentos y descodificar formularios con código de barras.
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '5633'
-ht-degree: 88%
+source-wordcount: '5703'
+ht-degree: 87%
 
 ---
 
@@ -298,6 +297,10 @@ La cuenta de usuario utilizada para iniciar el servidor de aplicaciones requiere
 1. Abra el Editor de directivas de grupo de Microsoft® Windows. Para abrir el Editor de directivas de grupo, haga clic en **[!UICONTROL Inicio]**, escriba **gpedit.msc** en el cuadro Iniciar búsqueda y haga clic en **[!UICONTROL Editor de directivas de grupo]**.
 1. Vaya a **[!UICONTROL Directiva de equipo local]** > **[!UICONTROL Configuración del equipo]** > **[!UICONTROL Configuración de Windows]** > **[!UICONTROL Configuración de seguridad]** > **[!UICONTROL Directivas locales]** > **[!UICONTROL Asignación de derechos de usuario]** y edite la directiva **[!UICONTROL Reemplazar un símbolo (token) de nivel de proceso]** e incluya el grupo Administradores.
 1. Agregue el usuario a la entrada Reemplazar un símbolo (token) de nivel de proceso.
+
+>[!NOTE]
+>
+> AEM Si el servidor de la se ejecuta como un servicio bajo LSA, no es necesario asignar explícitamente este privilegio a un usuario, significa que si no hay otra aplicación/componentes instalados aparte del requerido para PDFG en la VM, entonces no necesita otorgar ninguna otra cuenta al **Reemplazar un derecho de token de nivel de proceso** y solo las cuentas de servicio local y de servicio de red deben tener el derecho.
 
 ### (Solo Windows) Habilite el servicio PDF Generator para usuarios que no sean administradores {#enable-the-pdf-generator-service-for-non-administrators}
 
