@@ -4,13 +4,13 @@ description: Instale AEM Forms Document Services para crear, ensamblar, distr
 topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
 workflow-type: tm+mt
-source-wordcount: '5703'
-ht-degree: 87%
+source-wordcount: '5660'
+ht-degree: 88%
 
 ---
-
 
 # Instalación y configuración de Document Services {#installing-and-configuring-document-services}
 
@@ -300,7 +300,7 @@ La cuenta de usuario utilizada para iniciar el servidor de aplicaciones requiere
 
 >[!NOTE]
 >
-> AEM Si el servidor de la se ejecuta como un servicio bajo LSA, no es necesario asignar explícitamente este privilegio a un usuario, significa que si no hay otra aplicación/componentes instalados aparte del requerido para PDFG en la VM, entonces no necesita otorgar ninguna otra cuenta al **Reemplazar un derecho de token de nivel de proceso** y solo las cuentas de servicio local y de servicio de red deben tener el derecho.
+> AEM Como se ha insinuado anteriormente, si el servidor de se ejecuta como un servicio en la cuenta LocalSystem (LSA), no es necesario asignar explícitamente este privilegio a un usuario.
 
 ### (Solo Windows) Habilite el servicio PDF Generator para usuarios que no sean administradores {#enable-the-pdf-generator-service-for-non-administrators}
 
