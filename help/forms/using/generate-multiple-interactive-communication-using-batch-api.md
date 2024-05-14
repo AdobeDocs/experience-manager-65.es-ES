@@ -9,10 +9,10 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
 workflow-type: tm+mt
 source-wordcount: '2134'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -119,9 +119,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
    1. Seleccione el servicio de recuperación o Get-service en el campo Servicio de lectura del panel Editar propiedades.
    1. Seleccione el icono de lápiz del argumento del servicio de lectura para enlazar el argumento a un atributo de solicitud y especificar el valor del enlace. Vincula el argumento del servicio al atributo del enlace o el valor literal especificado, el cual se pasa al servicio como argumento para recuperar datos asociados con el valor especificado de la fuente de datos.
 
-      <br>
-        En este ejemplo, el argumento del ID toma el valor del atributo del ID del perfil del usuario y lo pasa como argumento al servicio de lectura. Lee y devuelve valores de propiedades asociadas del objeto del modelo de datos de empleado para el ID especificado. Por lo tanto, si especifica 00250 en el campo ID del formulario, el servicio de lectura lee los detalles del empleado con 00250 ID de empleado.
-        <br>
+      En este ejemplo, el argumento id toma el valor del atributo id del perfil de usuario y lo pasa como argumento al servicio de lectura. Lee y devuelve valores de propiedades asociadas del objeto del modelo de datos de empleado para el ID especificado. Por lo tanto, si especifica 00250 en el campo ID del formulario, el servicio de lectura lee los detalles del empleado con 00250 ID de empleado.
 
       ![Configurar el atributo de solicitud](assets/request-attribute.png)
 
