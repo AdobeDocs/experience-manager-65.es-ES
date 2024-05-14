@@ -9,7 +9,7 @@ feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 24523ac85b1ac455f4bdf32a0a725cb99e0de497
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 95%
@@ -39,7 +39,7 @@ AEM Forms proporciona herramientas de administración de formularios que no sol
 >
 >La funcionalidad Formularios adaptables, disponible en [AEM 6.5 Inicio rápido](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es), está diseñada únicamente para la exploración y la evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad Formularios adaptables requiere una licencia adecuada.
 
-![AEM Funcionalidades de formularios](do-not-localize/4th-draft.gif)
+![AEM Funcionalidades de formularios](do-not-localize/4th-draft-updated.gif)
 
 ### Capacidades clave {#key-capabilities}
 
