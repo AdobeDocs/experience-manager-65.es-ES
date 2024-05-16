@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '518'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,26 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
     <td><strong>Fecha</strong></td>
     <td><strong>AEM Vínculo de descarga de revisión (vínculo de distribución de software de)</strong></td>
     <td><strong>Problemas solucionados</strong></td>
+  </tr>
+  <tr>
+    <td>viernes, 16 de mayo de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1192-010.zip">AEM Revisión para el paquete de servicio 6.5.20.0 de para Microsoft Windows</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1192-010.zip">AEM Revisión para el paquete de servicio 6.5.20.0 de para Linux </a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1192-010.zip">AEM Revisión para el paquete de servicio 6.5.20.0 de para Apple macOS</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>En un formulario adaptable basado en un XDP con scripts incrustados en casillas de verificación, los scripts no se ejecutan para elementos después de esas casillas de verificación. Hay una revisión disponible para este problema. (FORMS-14244) </li>
+     <li> Las filas del widget selector de fechas se truncan al recorrer meses en el widget emergente de los campos con el patrón Editar/Mostrar. Hay una revisión disponible para este problema. (FORMS-13620) </li>
+     <li>Los envíos de formularios fallan al intentar utilizar el servicio DOR (documento de registro) en el backend. El mensaje de error encontrado es: "No se pudo completar la acción de envío porque el recurso de formulario no se ha asignado correctamente". (FORMS-13798) </li>
+     <li>Cuando se envía un formulario adaptable desde una instancia de publicación de Adobe Experience Manager a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no puede guardar los archivos adjuntos.  (FORMS-14209) </li>
+     <li> AEM Al instalar el paquete de servicio 20 de Forms 6.5 de la interfaz de usuario (IU) de AEM Sites (paquete de complemento de AEM Forms para SP20), se produce una degradación significativa del rendimiento.  (FORMS-13791) </li>
+     <li>El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>martes, 29 de enero de 2024</td>
