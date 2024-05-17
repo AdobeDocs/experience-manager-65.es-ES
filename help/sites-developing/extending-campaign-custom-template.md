@@ -9,20 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # AEM Creación de plantillas de página de personalizadas con componentes de formulario de Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-En esta página se explica cómo crear una plantilla de página personalizada que utilice [Formulario de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) componentes de examinando cómo funciona la plantilla de Geometrixx-outdoors ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) está implementado y le dirige a la información importante que puede necesitar al crear su propia plantilla personalizada.
+En esta página se explica cómo crear una plantilla de página personalizada que utilice [Formulario de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) componentes de examinando cómo funciona la plantilla de Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) está implementado y le dirige a la información importante que puede necesitar al crear su propia plantilla personalizada.
 
 >[!NOTE]
 >
 >[Los ejemplos de correo electrónico y formularios solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargar contenido de Geometrixx de muestra desde Package Share.
+
+>[!CAUTION]
+>
+>AEM Los componentes de correo electrónico de la se han desaprobado. AEM Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada se convierten en de reutilización limitada para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
+>
+>AEM Los componentes de correo electrónico se pueden implementar en el nivel de proyecto, y los componentes de correo electrónico de la obsoleta ilustran cómo se puede lograr. Sin embargo, no utilice estos componentes obsoletos en proyectos.
+
 
 AEM Para crear una plantilla de página de personalizada con componentes de formulario de Adobe Campaign, asegúrese de que dispone de lo siguiente:
 
