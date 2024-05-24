@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2335'
 ht-degree: 19%
 
 ---
@@ -46,7 +46,7 @@ Consulte también [Últimas notas de la versión de Adobe Experience Manager 6.5
 
 ## AEM.5, paquete de servicio 18: 24 de agosto de 2023
 
-* Recursos, Dynamic Media - [Compatibilidad con subtítulos múltiples y pistas de audio múltiple para vídeos en Dynamic Media](/help/assets/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+* Recursos, Dynamic Media - [Compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media](/help/assets/video.md#about-msma): ahora se pueden añadir fácilmente varios subtítulos y varias pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 * Recursos: desde los resultados de búsqueda, ahora puede navegar a la ubicación de la carpeta que contiene un recurso para permitirle realizar varias tareas de administración de recursos.
 * El Selector de estrella de Sites en Fragmentos de contenido ha mejorado el rendimiento.
 * Se habilitó al usuario del Editor de páginas de sitios/Componente de imagen para hacer referencia a los recursos desde el Cloud Service de recursos remoto.
