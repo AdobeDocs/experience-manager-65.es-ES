@@ -1,19 +1,11 @@
 ---
 title: Personalice los componentes principales de CIF
 description: Obtenga información sobre cómo personalizar los componentes principales de Adobe Experience Manager CIF. CIF El tutorial explica cómo ampliar de forma segura un componente principal de la para satisfacer los requisitos específicos de la empresa. Obtenga información sobre cómo ampliar una consulta de GraphQL CIF para devolver un atributo personalizado y mostrar el nuevo atributo en un componente principal de la.
-sub-product: Commerce
-topics: Development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
-feature: Commerce Integration Framework
-kt: 4279
-thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 11%
@@ -58,7 +50,7 @@ Usted clona el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. AEM Añada las configuraciones de OSGi necesarias para poder conectar la instancia de a una instancia de Adobe Commerce o agregar las configuraciones al proyecto recién creado.
@@ -400,7 +392,7 @@ En este caso, desea renderizar un titular sobre el teaser para indicar que el pr
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. AEM Abra una nueva ventana del explorador y vaya a la página de y a la página de inicio de la barra de herramientas de **Consola OSGi** > **Estado** > **Modelos Sling**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -479,7 +471,7 @@ En este punto, la lógica de cuándo mostrar la variable **Respetuoso con el med
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
    ```
 
 1. Actualice a la **Página principal de Venia** en [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) donde se ha agregado el teaser de productos.
