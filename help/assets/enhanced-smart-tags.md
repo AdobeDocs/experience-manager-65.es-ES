@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1575'
 ht-degree: 1%
 
 ---
@@ -194,3 +194,9 @@ También puede asignar una clasificación más alta a una etiqueta para aumentar
 * El uso de los servicios de contenido inteligente está limitado a un máximo de 2 millones de imágenes etiquetadas al año. Todas las imágenes duplicadas que se procesan y etiquetan se cuentan como imágenes etiquetadas.
 * Si ejecuta el flujo de trabajo de etiquetado desde la cronología, puede aplicar etiquetas en un máximo de 15 recursos a la vez.
 * Las etiquetas inteligentes solo funcionan para formatos de imagen PNG y JPG. Por lo tanto, los recursos compatibles que tengan representaciones creadas en estos dos formatos se etiquetan con etiquetas inteligentes.
+
+>[!MORELIKETHIS]
+>
+>* [Información general y formación sobre etiquetas inteligentes](enhanced-smart-tags.md)
+>* [Configuración del etiquetado inteligente](config-smart-tagging.md)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

@@ -6,10 +6,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 21%
+source-wordcount: '2415'
+ht-degree: 20%
 
 ---
 
@@ -135,6 +135,13 @@ Para utilizar las API del servicio de contenido inteligente, cree una integraci�
 
 ### Configurar el servicio de contenido inteligente {#configure-smart-content-service}
 
+>[!CAUTION]
+>
+>Antes, las configuraciones que se realizaban con las credenciales de JWT ahora están sujetas a desaprobación en la consola de Adobe Developer. No puede crear nuevas credenciales de JWT después del 3 de junio de 2024. Estas configuraciones ya no se pueden crear ni actualizar, pero sí migrar a las configuraciones de OAuth.
+> Consulte [AEM Configuración de integraciones de IMS para la](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+>Consulte [Pasos para configurar OAuth para usuarios locales](#config-oauth-onprem)
+> Consulte [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](#config-smart-tagging.md)
+
 Para configurar la integración, utilice los valores de [!UICONTROL ID DE CUENTA TÉCNICA], [!UICONTROL ID DE ORGANIZACIÓN], [!UICONTROL SECRETO DEL CLIENTE], y [!UICONTROL ID DE CLIENTE] desde la integración de la consola de Adobe Developer. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde el [!DNL Experience Manager] implementación.
 
 1. Entrada [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service heredados]** para abrir [!UICONTROL Cloud Service] consola.
@@ -151,6 +158,37 @@ Para configurar la integración, utilice los valores de [!UICONTROL ID DE CUENTA
    | [!UICONTROL ID de cuenta técnica] | [!UICONTROL ID DE CUENTA TÉCNICA] |
    | [!UICONTROL ID de organización] | [!UICONTROL ID DE ORGANIZACIÓN] |
    | [!UICONTROL Secreto del cliente] | [!UICONTROL SECRETO DEL CLIENTE] |
+
+### Configuración de OAuth para usuarios locales {#config-oauth-onprem}
+
+#### Requisitos previos {#prereqs-config-oauth-onprem}
+
+Un ámbito de autorización es una cadena OAuth que contiene los siguientes requisitos previos:
+
+* Cree una nueva integración de OAuth en [Developer Console](https://developer.adobe.com/console/user/servicesandapis) usando `ClientID`, `ClientSecretID`, y `OrgID`.
+* Añada los siguientes archivos en esta ruta `/apps/system/config in crx/de`:
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+
+#### Configuración de OAuth para usuarios locales {#steps-config-oauth-onprem}
+
+1. Agregue o actualice las siguientes propiedades en `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
+
+   * `auth.token.provider.authorization.grants="client_credentials"`
+   * `auth.token.provider.orgId="<OrgID>"`
+   * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
+   * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+     `auth.token.validator.type="adobe-ims-similaritysearch"`
+   * Actualice el `auth.token.provider.client.id` con el ID de cliente de la nueva configuración de OAuth.
+   * Actualizar `auth.access.token.request` hasta `"https://ims-na1.adobelogin.com/ims/token/v3"`
+2. Cambie el nombre del archivo a `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+3. Siga estos pasos en `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+   * Actualice la propiedad auth.ims.client.secret con el Secreto del cliente desde la nueva integración de OAuth.
+   * Cambie el nombre del archivo a `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
+4. Guarde todos los cambios en la consola de desarrollo del repositorio de contenido, por ejemplo, CRXDE.
+5. Vaya a `/system/console/configMgr` y reemplace la configuración OSGi de `.<randomnumber>` hasta `-<randomnumber>`.
+6. Eliminar la configuración antigua de `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
+7. Reinicie la consola.
 
 ### Validar la configuración {#validate-the-configuration}
 
@@ -299,5 +337,6 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 
 >[!MORELIKETHIS]
 >
->* [Información general sobre y cómo formar etiquetas inteligentes](enhanced-smart-tags.md)
+>* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](#config-smart-tagging.md)
+>* [Información general y formación sobre etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
