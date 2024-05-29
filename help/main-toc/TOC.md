@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7400'
 ht-degree: 67%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 67%
    + [AEM Asignación de grupos de usuarios personalizados en 6.5](/help/sites-administering/cug-mapping.md)
    + [Compatibilidad con cookies de SameSite](/help/sites-administering/same-site-cookie-support.md)
    + [Credenciales de JWT de Adobe Developer Console en desuso](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [AEM Configuración de integraciones de IMS para la](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Creación {#authoring}
       + AEM Tareas, herramientas y conceptos esenciales para la creación de {#essentials}
@@ -226,7 +227,6 @@ ht-degree: 67%
          + [Configuración del seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
          + [Asignación de datos de componente con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
          + [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-         + [Integración con Adobe Analytics mediante IMS](/help/sites-administering/integration-analytics-ims.md)
          + [Preguntas frecuentes sobre la entrega de contenido HTTP2](/help/sites-administering/scene7-http2faq.md)
          + [Solución de problemas de integración de Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [Licencias, avisos de copyright y exenciones de responsabilidad del conector de SharePoint](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 67%
          + [Integración con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
          + [Configuración manual de la integración con Adobe Target](/help/sites-administering/target-configuring.md)
          + [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md)
-         + [Integración con Adobe Target mediante IMS](/help/sites-administering/integration-target-ims.md)
          + [Clasificaciones de Adobe](/help/sites-administering/adobeanalytics-classifications.md)
          + [Integración de soluciones](/help/sites-administering/integration.md)
          + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-administering/experience-fragments-target.md)
@@ -1292,7 +1291,7 @@ ht-degree: 67%
          + [AEM Conceptos principales de](/help/sites-developing/the-basics.md)
          + [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md)
          + [AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la](/help/sites-developing/touch-ui-concepts.md)
-         + [AEM Desarrollo: directrices y prácticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
+         + [Desarrollo de AEM: directrices y prácticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
          + [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md)
          + [Desarrollo y diferencia de página](/help/sites-developing/pagediff.md)
          + [Limitaciones del editor](/help/sites-developing/editor-limitations.md)
