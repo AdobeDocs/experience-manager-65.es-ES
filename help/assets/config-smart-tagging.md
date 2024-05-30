@@ -6,7 +6,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 17a8dc53d77dfbc3dc3a4dc2f2176eaba3e1cb7c
+source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 20%
@@ -338,5 +338,5 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 >[!MORELIKETHIS]
 >
 >* [Información general y formación sobre etiquetas inteligentes](enhanced-smart-tags.md)
->* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-smart-tagging.md)
+>* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md)
 >* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
