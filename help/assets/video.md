@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+source-git-commit: aeb243421ed2212625e85c3d5b76322e4c33f1d2
 workflow-type: tm+mt
-source-wordcount: '11213'
+source-wordcount: '11201'
 ht-degree: 2%
 
 ---
@@ -452,7 +452,7 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 >
 >Cualquier vídeo que haya cargado *antes* habilitar la compatibilidad con varios subtítulos y pistas de audio en su cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponibles múltiples subtítulos y pistas de audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
 
-**Para habilitar la compatibilidad con GUIONES, subtítulos múltiples y pistas de audio múltiples en su cuenta de Dynamic Media:**
+**Para habilitar la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiples en su cuenta de Dynamic Media:**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -471,7 +471,7 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 
    * Nombre del contacto principal, correo electrónico, teléfono.
    * Nombre de su cuenta de Dynamic Media.
-   * Especifique que desea habilitar la compatibilidad con GUIONES, subtítulos múltiples y pistas de audio múltiples en su cuenta de Dynamic Media, en Experience Manager 6.5.
+   * Especifique que desea que DASH, la compatibilidad con varios subtítulos y pistas de audio múltiples estén habilitados en su cuenta de Dynamic Media, en Experience Manager 6.5.
 
 1. La Asistencia al cliente de Adobe le agrega a la Lista de espera de clientes en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para administrar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo para la activación.
@@ -597,7 +597,7 @@ Utilice el [Adobe Guía de referencia de visores de Dynamic Media](https://exper
 
 Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
-![Pestaña Subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulo .VTT cargados y los archivos de pista de audio .MP3 cargados para un vídeo.](assets-dm/msma-subtitle-audiotracks-tab.png)
+![Pestaña Pistas de subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulos .VTT cargados y los archivos de pistas de audio .MP3 cargados para un vídeo.](assets-dm/msma-subtitle-audiotracks-tab.png)
 
 Algunos de los casos de uso que se deben tener en cuenta para agregar varios subtítulos y pistas de audio al vídeo principal son los siguientes:
 
@@ -644,19 +644,19 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
    >
    >Cuando haya completado cualquiera de las tareas anteriores, vuelva a estos pasos.
 
-   ![Pestaña Subtítulos y pistas de audio de la página Propiedades.](assets-dm/msma-audiotracks.png)*Pestaña Subtítulos y pistas de audio de la página Propiedades del vídeo.*
+   ![Ficha Subtítulos y pistas de audio de la página Propiedades.](assets-dm/msma-audiotracks.png)*Pestaña Subtítulos y pistas de audio de la página Propiedades del vídeo.*
 
-1. (Opcional) Para agregar uno o más archivos de subtítulos (o subtítulos) a un vídeo, haga lo siguiente:
+1. (Opcional) Para agregar uno o más archivos de subtítulos a un vídeo, haga lo siguiente:
    * Seleccionar **[!UICONTROL Cargar subtítulos]**.
    * Desplácese hasta uno o varios archivos .vtt (pistas de texto de vídeo) y selecciónelos y ábralos.
-   * Para que los subtítulos sean visibles en el reproductor de contenidos, debe *debe* añadir detalles necesarios (metadatos) acerca de *cada* archivo de subtítulos que ha cargado. Seleccione el icono de lápiz a la derecha del nombre de un archivo de subtítulo. En el **Editar subtítulo** , introduzca los siguientes detalles necesarios sobre el archivo y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de subtítulos que haya cargado:
+   * Para que los subtítulos sean visibles en el reproductor de contenidos, debe hacer lo siguiente *debe* añadir detalles necesarios (metadatos) acerca de *cada* subtítulo que ha cargado. Seleccione el icono de lápiz a la derecha del nombre de un archivo de rótulo. En el **Editar pie de ilustración** , introduzca los siguientes detalles necesarios sobre el archivo y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de rótulo que haya cargado:
 
-     | Metadatos de subtítulos | Descripción |
+     | Metadatos de rótulo | Descripción |
      |--- |--- |
-     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede utilizar el mismo nombre de archivo para archivos de subtítulos y de pistas de audio adicionales. |
-     | Idioma | Seleccione el idioma del subtítulo. |
-     | Tipo | Seleccione el tipo de subtítulo que está utilizando.<br>**Subtítulo** - El texto del subtítulo que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Rótulo** - El texto del pie de ilustración también incluye ruidos de fondo, diferenciación del orador y otra información relevante, junto con la traducción o transcripción del diálogo, lo que hace que el contenido sea más accesible para las personas sordas o con dificultades auditivas. |
-     | Etiqueta | El texto que se muestra para el nombre del subtítulo en la **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a un subtítulo o pista de rótulo. Por ejemplo, `English (CC)`. |
+     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede utilizar el mismo nombre de archivo para archivos de rótulo y de pista de audio adicionales. |
+     | Idioma | Seleccione el idioma del pie de ilustración. |
+     | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Rótulo** : Texto del pie de ilustración que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Rótulo** - El texto del pie de ilustración también incluye ruidos de fondo, diferenciación del orador y otra información relevante, junto con la traducción o transcripción del diálogo, lo que hace que el contenido sea más accesible para las personas sordas o con dificultades auditivas. |
+     | Etiqueta | El texto que se muestra para el nombre del pie de ilustración en la **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a un seguimiento de rótulo. Por ejemplo, `English (CC)`. |
 
      Si es necesario, puede cambiar o editar los metadatos de los subtítulos más adelante. Cuando se publica el vídeo, estos detalles se reflejan en las direcciones URL públicas de los vídeos publicados.
 
@@ -667,10 +667,10 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 
      | Metadatos de pista de audio | Descripción |
      |--- |--- |
-     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede utilizar el mismo nombre de archivo para archivos de pista de audio o archivos de subtítulos adicionales. |
+     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede utilizar el mismo nombre de archivo para archivos de pista de audio o de rótulo adicionales. |
      | Idioma | Seleccione el idioma de la pista de audio. |
      | Tipo | Seleccione el tipo de pista de audio que está utilizando.<br>**Original** - Pista de audio originalmente conectada al vídeo y representada como `[Original]` en la etiqueta con `English` idioma seleccionado de forma predeterminada. While **[!UICONTROL Etiqueta]** y **[!UICONTROL Idioma]** se puede cambiar en la **[!UICONTROL Editar pista de audio]** , toma como valor predeterminado los valores originales si se vuelve a procesar el vídeo principal.<br>**Standard** - Pista de audio adicional para un idioma distinto del original.<br>**Descripción del audio** - Una pista de audio que también incluye una narración descriptiva de las acciones y gestos no verbales en el vídeo, haciendo que el contenido sea más accesible para las personas con discapacidad visual. |
-     | Etiqueta | Texto que se muestra como nombre de la pista de audio en el **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a una pista de audio. Por ejemplo, `English [Original]`. La etiqueta de audio adjunto a un vídeo se establece en `[Original|` de forma predeterminada. |
+     | Etiqueta | Texto que se muestra como nombre de la pista de audio en el **[!UICONTROL Seleccionar audio o pie de ilustración]** lista emergente en el reproductor de contenido. La etiqueta es lo que ve un cliente y que corresponde a una pista de audio. Por ejemplo, `English [Original]`. La etiqueta de audio adjunto a un vídeo se establece en `[Original]` de forma predeterminada. |
 
      Si es necesario, puede cambiar o editar los metadatos de la pista de audio más adelante. Cuando se publica el vídeo, estos detalles se reflejan en las direcciones URL públicas de los vídeos publicados.
 
@@ -681,24 +681,24 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
    >En función de la configuración de almacenamiento en caché de la instancia, el procesamiento de metadatos puede tardar varios minutos en reflejarse en la vista previa y en las direcciones URL publicadas.
 
 1. (Opcional) Si ha seleccionado **[!UICONTROL Guardar y cerrar]** en el paso anterior, en lugar de seleccionar **[!UICONTROL Guardar]** Sin embargo, aún puede ver el estado de procesamiento de los archivos cargados. Consulte [Ver el estado del ciclo de vida de los archivos de subtítulos y pistas de audio cargados](#lifecycle-status-video).
-1. (Opcional) Previsualice el vídeo antes de publicarlo para asegurarse de que los subtítulos y el audio funcionan según lo esperado. Consulte [Previsualización de un vídeo con varios subtítulos y pistas de audio](#preview-video-audio-subtitle)
+1. (Opcional) Previsualice el vídeo antes de publicarlo para garantizar que los subtítulos y el audio funcionan según lo esperado. Consulte [Vista previa de un vídeo con varios subtítulos y pistas de audio](#preview-video-audio-subtitle)
 1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 
-#### Agregar archivos de subtítulos y pistas de audio a un vídeo ya publicado
+#### Agregar archivos de rótulo y de pista de audio a un vídeo ya publicado
 
 Cuando se cargan archivos de subtítulos adicionales o archivos de pista de audio a un vídeo que ya está publicado, significa que esos archivos tendrán un `Processed` estado después de prepararse, después de la carga. En ese punto, puede obtener una vista previa del vídeo en Dynamic Media para ver o escuchar los archivos recién cargados.
 
-Sin embargo, tras la vista previa, debe *publicar* Vuelva a publicar el vídeo para los archivos de subtítulo o pista de audio recién añadidos. Después de la publicación, los subtítulos o el audio están disponibles con la URL pública de Dynamic Media.
+Sin embargo, tras la vista previa, debe *publicar* Vuelva a mostrar el vídeo para que se publiquen también los archivos de subtítulos o pistas de audio que acaba de agregar. Después de la publicación, los subtítulos o el audio estarán disponibles con la URL pública de Dynamic Media.
 
 >[!NOTE]
 >
 >En función de la configuración de almacenamiento en caché de la instancia, las actualizaciones de metadatos pueden tardar varios minutos en reflejarse en la vista previa y en las direcciones URL publicadas.
 
-En el caso de que haya configurado Dynamic Media para la publicación inmediata, la carga de subtítulos o archivos de audio adicionales déclencheur inmediatamente la publicación del vídeo tras la carga de subtítulos o archivos de audio.
+En el caso de que haya configurado Dynamic Media para la publicación inmediata, la carga de archivos de audio o subtítulos adicionales déclencheur inmediatamente la publicación del vídeo tras la carga de archivos de audio o subtítulos.
 
 >[!CAUTION]
 >
->Al cargar archivos de subtítulos o archivos de audio en un vídeo que se ha publicado o cancelado la publicación, los archivos se eliminan si [*reprocesar*](/help/assets/processing-profiles.md#reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de subtítulos y los archivos de pista de audio en el vídeo.
+>Al cargar archivos de subtítulos o archivos de audio en un vídeo que se ha publicado o cancelado la publicación, los archivos se eliminan si [*reprocesar*](/help/assets/processing-profiles.md#reprocessing-assets) el vídeo. Solo el audio original del vídeo permanece intacto. En estos casos, debe volver a cargar los archivos de rótulo y de pista de audio en el vídeo.
 
 #### Añada varios subtítulos a un vídeo que tenga una URL existente con el modificador caption
 
@@ -709,30 +709,30 @@ Los cambios de varios subtítulos tienen prioridad sobre los subtítulos añadid
 **Para agregar varios subtítulos a un vídeo que tenga una URL existente con el modificador caption:**
 
 1. Cargue el archivo de rótulo que ya se haya añadido como modificador al vídeo para que pueda administrar el archivo explícitamente.
-1. Cargue los archivos de subtítulo y rótulo adicionales que sean necesarios.
+1. Cargue los archivos de subtítulos adicionales que sean necesarios.
 1. Publique el vídeo como de costumbre.
 La URL existente con el modificador caption ahora puede cargar varios subtítulos.
 
 ### Ver el estado del ciclo de vida de los archivos de subtítulos y pistas de audio cargados{#lifecycle-status-video}
 
-Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pista de audio cargado en el vídeo principal desde **Subtítulos y pistas de audio** pestaña de **Propiedades**.
+Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pista de audio cargado en el vídeo principal desde el **Subtítulos y pistas de audio** pestaña de **Propiedades**.
 
 **Para ver el estado del ciclo vital de un vídeo:**
 
 1. Vaya al recurso de vídeo cuyo estado de ciclo vital desee ver.
 1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, seleccione el recurso de vídeo.
 1. En la barra de herramientas, seleccione el icono Propiedades (un círculo con una &quot;i&quot;).
-1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña. En la columna Estado, anote el estado de cada subtítulo o archivo de audio.
+1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña. En la columna Estado, observe el estado de cada título o archivo de audio.
 
-| Estado de subtítulo o pista de audio | Descripción |
+| Pie de ilustración o estado de pista de audio | Descripción |
 | --- | --- |
-| Procesamiento | Cuando se agrega y guarda un nuevo subtítulo o archivo de pista de audio, pasa al estado &quot;Procesando&quot;. Dynamic Media procesa el archivo adjuntando el manifiesto de flujo continuo al vídeo principal. |
-| Procesado | Una vez completado el procesamiento, el subtítulo o el archivo de pista de audio, o la pista de audio original asociada con el vídeo principal, aparece en estado &quot;Procesado&quot;. Puede previsualizar los archivos de subtítulos y pistas de audio que aparecen como &quot;Procesados&quot; *antes* el vídeo se publica en directo. |
+| Procesamiento | Cuando se añade y se guarda un nuevo pie de ilustración o archivo de pista de audio, pasa al estado &quot;Procesando&quot;. Dynamic Media procesa el archivo adjuntando el manifiesto de flujo continuo al vídeo principal. |
+| Procesado | Una vez completado el procesamiento, el título o el archivo de pista de audio, o la pista de audio original asociada con el vídeo principal, aparece en estado &quot;Procesado&quot;. Puede obtener una vista previa de los archivos de rótulo y pista de audio que aparecen como &quot;Procesado&quot; *antes* el vídeo se publica en directo. |
 | Publicado | El estado &quot;Publicado&quot; representa un estado similar al estado &quot;Publicado&quot; de un vídeo principal. Los recursos se publican cuando se publica el vídeo principal y están disponibles en la URL pública de Dynamic Media. |
-| Error | El estado &quot;failed&quot; significa que no se ha completado el procesamiento de un subtítulo o archivo de pista de audio. Elimine el subtítulo o el archivo de pista de audio y vuelva a cargarlo. |
+| Error | El estado &quot;failed&quot; significa que no se ha completado el procesamiento de un subtítulo o archivo de pista de audio. Elimine el pie de ilustración o el archivo de pista de audio y vuelva a cargarlo. |
 | Una página sin publicar   | Cuando se cancela la publicación explícita de un vídeo principal publicado, también se cancela la publicación de cualquier subtítulo o archivo de pista de audio que haya agregado al vídeo. |
 
-![Columna de estado resaltada para los campos Subtítulos y Pistas de audio.](assets-dm/msma-lifecycle-status.png)*Estado del ciclo vital de cada subtítulo y archivo de pista de audio cargados.*
+![Columna de estado resaltada para los campos Subtítulos y Pistas de audio.](assets-dm/msma-lifecycle-status.png)*Estado del ciclo vital de cada subtítulo cargado y archivo de seguimiento de audio.*
 
 ### Establecer el audio predeterminado para un vídeo que tiene varias pistas de audio
 
@@ -762,9 +762,9 @@ En el **Establecer como predeterminado** , seleccione **[!UICONTROL Reemplazar]*
 1. En la esquina superior derecha, seleccione **[!UICONTROL Guardar y cerrar]**.
 1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 
-### Previsualización de un vídeo con varios subtítulos y pistas de audio{#preview-video-audio-subtitle}
+### Vista previa de un vídeo con varios subtítulos y pistas de audio{#preview-video-audio-subtitle}
 
-Después de cargar los archivos de subtítulos y de pistas de audio en un vídeo y procesarlos, puede utilizar el visor de vídeo de Dynamic Media (u otros tipos de visor, si lo desea) para previsualizar todas las pistas. La vista previa permite ver el aspecto y el sonido que tiene el vídeo para los clientes y garantiza que se comporte según lo esperado.
+Después de cargar los archivos de subtítulos y de pistas de audio en un vídeo y procesarlos, puede utilizar el visualizador de vídeo de Dynamic Media (u otros tipos de visualizador, si lo desea) para previsualizar todas las pistas. La vista previa permite ver el aspecto y el sonido que tiene el vídeo para los clientes y garantiza que se comporte según lo esperado.
 
 Cuando esté satisfecho con el vídeo, puede [publicarlo](publishing-dynamicmedia-assets.md) mediante cualquiera de los métodos siguientes.
 
@@ -788,9 +788,9 @@ Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-
 
    ![Selección del visualizador de vídeo en la lista desplegable Visualizadores.](assets-dm/msma-dmviewerselected.png)
 
-1. Cerca de la esquina inferior derecha, a la izquierda del icono de volumen, seleccione el icono de burbuja de voz y, a continuación, seleccione el audio o subtítulo que desee oír, o ver o ambos. Si lo desea, en Subtítulos, puede seleccionar **[!UICONTROL Desactivado]** para no mostrar subtítulos ni subtítulos.
+1. Cerca de la esquina inferior derecha, a la izquierda del icono de volumen, seleccione el icono de burbuja de voz y, a continuación, seleccione el audio o el pie de ilustración que desee oír, o ver o ambos. Si lo desea, en Subtítulos, puede seleccionar **[!UICONTROL Desactivado]** para no mostrar ningún pie de ilustración.
 
-   ![La lista emergente Audio y subtítulos en el visor de vídeo.](assets-dm/msma-selectaudiosubtitle.png)*Simulación de un usuario que selecciona el audio y el subtítulo para la reproducción de vídeo.*
+   ![La lista emergente Audio y subtítulos en el visor de vídeo.](assets-dm/msma-selectaudiosubtitle.png)*Simulación de un usuario que selecciona el audio y el pie de ilustración para la reproducción de vídeo.*
 
 1. Para comenzar la reproducción, seleccione el **[!UICONTROL Reproducir]** botón.
 Tenga en cuenta **[!UICONTROL URL]** y **[!UICONTROL Incrustar]** botones en la esquina inferior izquierda. Utilice estos botones para [vincular la URL del vídeo a la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md) o a [incrustar el vídeo en una página web](/help/assets/embed-code.md), respectivamente.
@@ -810,7 +810,7 @@ La pista de audio original extraída de un vídeo principal no se puede eliminar
 1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
 1. Realice una de las siguientes acciones:
 
-   * Subtítulos: debajo de **Subtítulos** encabezado, seleccione uno o varios archivos de subtítulo que desee eliminar del vídeo y, a continuación, seleccione **[!UICONTROL Eliminar]**.
+   * Rótulos: debajo de **Subtítulos** encabezado, seleccione uno o varios archivos de rótulo que desee eliminar del vídeo y, a continuación, seleccione **[!UICONTROL Eliminar]**.
    * Pistas de audio: debajo de **Pistas de audio** encabezado, seleccione uno o varios archivos de pista de audio que desee eliminar del vídeo y, a continuación, seleccione **[!UICONTROL Eliminar]**.
 
 1. En el cuadro de diálogo Eliminar, seleccione **[!UICONTROL OK]**.
@@ -818,7 +818,7 @@ La pista de audio original extraída de un vídeo principal no se puede eliminar
 
 ### Descargar archivos de subtítulos o pistas de audio cargados en un vídeo
 
-Puede descargar uno o varios archivos de subtítulos o pistas de audio que haya cargado para utilizarlos con un vídeo. Tiene la opción de descargar todos los archivos seleccionados como un archivo .zip o crear una carpeta de descarga independiente para cada archivo.
+Puede descargar uno o varios archivos de subtítulos o de pistas de audio que haya cargado para utilizarlos con un vídeo. Tiene la opción de descargar todos los archivos seleccionados como un archivo .zip o crear una carpeta de descarga independiente para cada archivo.
 
 No se puede descargar la pista de audio original extraída de un archivo principal.
 
@@ -830,7 +830,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 1. En la página Propiedades, seleccione **[!UICONTROL Subtítulos y pistas de audio]** pestaña.
 1. Realice una de las siguientes acciones:
 
-   * Subtítulos: debajo de **Subtítulos** encabezado, seleccione uno o varios archivos de subtítulo que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
+   * Rótulos: debajo de **Subtítulos** encabezado, seleccione uno o varios archivos de rótulo que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
    * Pistas de audio: debajo de **Pistas de audio** encabezado, seleccione uno o más archivos de pista de audio que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
 
 1. En el cuadro de diálogo Descargar, defina las siguientes opciones:
@@ -838,7 +838,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
    | Opción | Descripción |
    |--- |--- |
    | Guardar como | Utilice el nombre de archivo predeterminado especificado en el campo de texto Guardar como o especifique su propio nombre. |
-   | Cree una carpeta independiente para cada recurso | Cree una carpeta para cada archivo de subtítulos o de pistas de audio que haya seleccionado para descargar. |
+   | Cree una carpeta independiente para cada recurso | Cree una carpeta para cada archivo de rótulo o de pista de audio que haya seleccionado para la descarga. |
    | Correo electrónico | Utilice su programa de correo electrónico predeterminado para enviar el archivo .zip a una dirección de correo electrónico especificada. |
    | Recursos | Especifica el número de archivos que está descargando y el tamaño total combinado de todos los archivos seleccionados. Al anular la selección de esta opción, se atenúa (desactiva) el **[!UICONTROL Descargar]** , impidiendo que descargue cualquier archivo. |
 1. Seleccionar **[!UICONTROL Descargar]**.
@@ -849,13 +849,13 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 
 
 
-## Adición de subtítulos o subtítulos a un vídeo {#adding-captions-to-video}
+## Adición de subtítulos a un vídeo {#adding-captions-to-video}
 
 >[!IMPORTANT]
 >
 >El Adobe recomienda que [habilitar la capacidad de múltiples subtítulos y pistas de audio](#enable-dash) en su cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
 
-Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte del audio.
+Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte de audio.
 
 Los subtítulos opcionales también permiten una mayor accesibilidad para las personas sordas o con dificultades auditivas.
 
@@ -869,9 +869,9 @@ Dynamic Media convierte los archivos de rótulo al formato JSON (JavaScript Obje
 
 Consulte [Proporcionar contenido estático (que no sea de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) en el *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre el uso de la función JSON en una dirección URL.
 
-**Para agregar subtítulos o subtítulos a un vídeo:**
+**Para agregar subtítulos a un vídeo:**
 
-1. Utilice una aplicación o un servicio de terceros para crear el archivo de subtítulos y rótulos de vídeo.
+1. Utilice una aplicación o un servicio de terceros para crear el archivo de rótulo de vídeo.
 
    Asegúrese de que el archivo que crea sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del archivo de subtítulos es .vtt. Puede obtener más información sobre el estándar de subtítulos WebVTT.
 
@@ -889,7 +889,7 @@ Consulte [Proporcionar contenido estático (que no sea de imagen)](https://exper
 
    >[!NOTE]
    >
-   >Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
+   >Para conseguir la compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
 
    Por lo general, debe asignar al archivo VTT de rótulo el mismo nombre que al archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 

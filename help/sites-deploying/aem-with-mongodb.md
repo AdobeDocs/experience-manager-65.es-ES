@@ -10,16 +10,16 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6192'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager con MongoDB{#aem-with-mongodb}
 
-AEM Este artículo tiene como objetivo mejorar el conocimiento sobre las tareas y las consideraciones necesarias para implementar correctamente la implementación de (Adobe Experience Manager) con MongoDB.
+AEM Este artículo tiene como objetivo mejorar el conocimiento sobre las tareas y consideraciones necesarias para implementar correctamente la implementación de (Adobe Experience Manager) con MongoDB.
 
 Para obtener más información relacionada con la implementación, consulte [Implementación y mantenimiento](/help/sites-deploying/deploy.md) de la documentación.
 
@@ -46,7 +46,7 @@ AEM A continuación se muestra una implementación mínima para la implementaci�
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Una implementación mínima requiere tres `mongod` instancias configuradas como un conjunto de réplicas. Una instancia se selecciona principal y las demás instancias son secundarias, y la elección se administra mediante `mongod`. Cada instancia tiene un disco local adjunto. Para que el clúster pueda admitir la carga, se recomienda un rendimiento mínimo de 12 MB por segundo con más de 3000 operaciones de E/S por segundo (IOPS).
+Una implementación mínima requiere tres `mongod` instancias configuradas como un conjunto de réplicas. Una instancia se selecciona principal y las demás instancias son secundarias, y la elección se administra mediante `mongod`. Cada instancia tiene un disco local adjunto. Por lo tanto, el clúster puede admitir la carga; se recomienda un rendimiento mínimo de 12 MB por segundo con más de 3000 operaciones de E/S por segundo (IOPS).
 
 AEM Los autores de la están conectados al `mongod` AEM instancias, con cada autor de la conectándose a las tres `mongod` instancias. Las escrituras se envían a la instancia principal y las lecturas se pueden leer desde cualquiera de las instancias. AEM El tráfico se distribuye en función de la carga que realiza Dispatcher en cualquiera de las instancias de autor de la activa. El almacén de datos de Oak es un `FileDataStore`y la monitorización MongoDB la proporciona MMS o el administrador de operaciones de MongoDB según la ubicación de la implementación. Las soluciones de terceros como Splunk o Ganglia proporcionan monitorización del nivel del sistema operativo y del registro.
 
@@ -62,7 +62,7 @@ Se admiten entornos virtualizados siempre que haya una buena comunicación entre
 
 Existen requisitos específicos que cubren la capacidad de E/S de las instancias de MongoDB que debe administrar el equipo que administra el entorno virtualizado. Si el proyecto utiliza una implementación en la nube, como Amazon Web Service, las instancias deben aprovisionarse con suficiente capacidad de E/S y coherencia para admitir las instancias de MongoDB. De lo contrario, los procesos de MongoDB y el repositorio de Oak funcionan de forma poco fiable y errática.
 
-En los entornos virtualizados, MongoDB requiere configuraciones específicas de E/S y VM para garantizar que el motor de almacenamiento de MongoDB no se vea afectado por las políticas de asignación de recursos de VMWare. Una implementación correcta garantiza que no haya barreras entre los distintos equipos y que todos estén registrados para ofrecer el rendimiento requerido.
+En entornos virtualizados, MongoDB requiere configuraciones específicas de E/S y VM para garantizar que el motor de almacenamiento de MongoDB no se vea afectado por las políticas de asignación de recursos de VMWare. Una implementación correcta garantiza que no haya barreras entre los distintos equipos y que todos estén registrados para ofrecer el rendimiento requerido.
 
 ## Consideraciones de hardware {#hardware-considerations}
 
@@ -113,7 +113,7 @@ Requiere un agente instalado en la instancia de MongoDB que se conecta al servid
 * Un agente de monitorización que puede monitorizar el `mongod` ejemplo,
 * Un agente de copia de seguridad que puede realizar copias de seguridad programadas de los datos.
 
-Aunque el uso de Cloud Manager para la automatización del mantenimiento de un clúster de MongoDB facilita muchas de las tareas rutinarias, no es necesario y tampoco lo utiliza para la copia de seguridad. Sin embargo, al elegir Cloud Manager para monitorizar, se requiere monitorización.
+Aunque el uso de Cloud Manager para la automatización del mantenimiento de un clúster de MongoDB facilita muchas de las tareas rutinarias, no es necesario y tampoco lo utiliza para la copia de seguridad. Sin embargo, al elegir un Cloud Manager para monitorizar, se requiere monitorización.
 
 Para obtener más información sobre MongoDB Cloud Manager, consulte la [Documentación de MongoDB](https://docs.cloud.mongodb.com/).
 
@@ -125,7 +125,7 @@ MongoDB Ops Manager es el mismo software que MongoDB Cloud Manager. Una vez regi
 
 AEM Es necesaria la monitorización a nivel de sistema operativo para ejecutar un clúster de MongoDB en el que se ejecute un clúster de MongoDB en el sistema operativo.
 
-Ganglia es un buen ejemplo de un sistema de este tipo y proporciona una imagen sobre la gama y el detalle de la información requerida que va más allá de las métricas básicas de salud como CPU, promedio de carga y espacio libre en disco. Para diagnosticar problemas, se requiere información de nivel inferior, como niveles de grupo de entropía, espera de E/S de CPU, sockets en estado FIN_WAIT2.
+Ganglia es un buen ejemplo de un sistema de este tipo y proporciona una imagen de la gama y el detalle de la información requerida que va más allá de las métricas básicas de salud como CPU, promedio de carga y espacio libre en disco. Para diagnosticar problemas, se requiere información de nivel inferior, como niveles de grupo de entropía, espera de E/S de CPU, sockets en estado FIN_WAIT2.
 
 ### Agregación de registros {#log-aggregation}
 
@@ -233,7 +233,7 @@ Se recomienda habilitar una configuración de caché persistente para implementa
 
 ### Compatibilidad con sistemas operativos {#operating-system-support}
 
-MongoDB 2.6 utiliza un motor de almacenamiento asignado a la memoria que es sensible a algunos aspectos de la gestión de nivel del sistema operativo entre la RAM y el disco. El rendimiento de consulta y lectura de la instancia de MongoDB depende de evitar o eliminar las operaciones de E/S lentas, a menudo denominadas errores de página. Estos problemas son errores de página que se aplican al `mongod` proceso en particular. No confunda con errores de página del sistema operativo.
+MongoDB 2.6 utiliza un motor de almacenamiento asignado a la memoria que es sensible a algunos aspectos de la gestión de nivel del sistema operativo entre la RAM y el disco. El rendimiento de consulta y lectura de la instancia de MongoDB depende de evitar o eliminar las operaciones de E/S lentas, a menudo denominadas errores de página. Estos problemas son errores de página que se aplican al `mongod` proceso en particular. No confunda esto con errores de página del sistema operativo.
 
 Para un funcionamiento rápido, la base de datos MongoDB solo debe acceder a los datos que ya están en la RAM. Los datos a los que debe acceder están formados por índices y datos. Esta colección de índices y datos se denomina conjunto de trabajo. Cuando el conjunto de trabajo es mayor que la RAM disponible, MongoDB tiene que paginar esos datos desde el disco incurriendo en un coste de E/S, desalojando otros datos que ya están en la memoria. Si la expulsión hace que los datos se vuelvan a cargar desde el disco, los errores de página predominan y el rendimiento se degrada. Cuando el conjunto de trabajo es dinámico y variable, se incurre en más errores de página para admitir operaciones.
 
@@ -392,7 +392,7 @@ Ejecute solo en los nodos. Mongod solo se ejecuta en los nodos especificados y s
 Ejecute solo en las CPU (núcleos) enumeradas. Mongod sólo se ejecuta en las CPU enumeradas y sólo utiliza la memoria disponible en esas CPU.
 
 * `--localalloc`
-Asigne siempre memoria en el nodo actual, pero utilice todos los nodos en los que se ejecuta el subproceso. Si un subproceso realiza la asignación, sólo se utiliza la memoria disponible para esa CPU.
+Asigne siempre memoria en el nodo actual, pero utilice todos los nodos en los que se ejecuta el subproceso. Si un subproceso realiza una asignación, sólo se utiliza la memoria disponible para esa CPU.
 
 * `--preferred=<node>`
 Prefiere la asignación a un nodo, pero regresa a otros si el nodo preferido está lleno. Se puede utilizar la notación relativa para definir un nodo. Además, los subprocesos se ejecutan en todos los nodos.
@@ -405,11 +405,11 @@ Debido a la naturaleza intensiva de memoria de las bases de datos, el intercambi
 
 #### Sistemas de archivos remotos {#remote-filesystems}
 
-Los sistemas de archivos remotos como NFS no se recomiendan para los archivos de datos internos de MongoDB (los archivos de base de datos de proceso de MongoDB) , porque introducen demasiada latencia. No confunda con el sistema de archivos compartido requerido para el almacenamiento de Oak Blob (FileDataStore), donde se recomienda NFS.
+Los sistemas de archivos remotos como NFS no se recomiendan para los archivos de datos internos de MongoDB (los archivos de base de datos de proceso mongood), porque introducen demasiada latencia. No confunda con el sistema de archivos compartido requerido para el almacenamiento de Oak Blob (FileDataStore), donde se recomienda NFS.
 
 #### Leer más {#read-ahead}
 
-Ajuste la lectura con anticipación para que, cuando se registre una página mediante una lectura aleatoria, no se lean bloques innecesarios desde el disco. Estos resultados implican un consumo innecesario de ancho de banda de E/S.
+Ajuste la lectura con anticipación para que cuando se registre una página usando una lectura aleatoria, no se lean bloques innecesarios desde el disco. Estos resultados implican un consumo innecesario de ancho de banda de E/S.
 
 ### Requisitos ® Linux {#linux-requirements}
 
@@ -569,11 +569,11 @@ Si utiliza WMWare ESX para gestionar e implementar sus entornos virtualizados, a
 1. Utilice el control de E/S de almacenamiento para asignar suficiente E/S a la `mongod` proceso.
 1. Garantizar los recursos de CPU de los equipos que alojan MongoDB mediante la configuración de [Reserva de CPU](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. Considere utilizar controladores de E/S ParaVirtual. Consulte [artículo de la base de conocimiento](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
+1. Considere utilizar controladores de E/S ParaVirtual. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Service {#amazon-web-services}
 
-Para obtener documentación sobre cómo configurar MongoDB con Amazon Web Service, consulte la [Configuración de la integración con AWS](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) artículo en el sitio web de MongoDB.
+Para obtener documentación sobre cómo configurar MongoDB con Amazon Web Service, consulte la [Configuración de la integración con AWS](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) artículo en el sitio web de MongoDB.
 
 ## Protección de MongoDB antes de la implementación {#securing-mongodb-before-deployment}
 
@@ -585,7 +585,7 @@ Ver esta publicación en [implementación segura de MongoDB](https://blogs.adobe
 
 Para servir correctamente la implementación de MongoDB, el sistema operativo que aloja Dispatcher debe estar en ejecución **Apache httpd** **versión 2.4 o superior.**
 
-Además, asegúrese de que todas las bibliotecas utilizadas en la compilación estén actualizadas para minimizar las implicaciones de seguridad.
+Además, asegúrese de que todas las bibliotecas utilizadas en su compilación estén actualizadas para minimizar las implicaciones de seguridad.
 
 ### Configuración de Dispatcher {#dispatcher-configuration}
 
@@ -595,7 +595,7 @@ Como Dispatcher no tiene estado, puede escalarse horizontalmente con facilidad. 
 
 AEM La ejecución de la ejecución sin un Dispatcher requiere la terminación SSL y el equilibrio de carga que debe realizar otra aplicación. AEM Esto es necesario porque las sesiones deben tener afinidad con la instancia de en la que se crean, un concepto conocido como conexiones fijas. El motivo es garantizar que las actualizaciones del contenido muestren una latencia mínima.
 
-Compruebe la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener más información sobre cómo configurarlo.
+Compruebe la [Documentación de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher) para obtener más información sobre cómo configurarlo.
 
 ### Configuración adicional {#additional-configuration}
 

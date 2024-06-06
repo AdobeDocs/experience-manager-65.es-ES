@@ -10,9 +10,9 @@ role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3232'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Para añadir la funcionalidad Dynamic Media a los recursos que utiliza en sus sitios web, puede añadir la variable **Dynamic Media**, **Medios interactivos**, **Medios panorámicas**, o **Vídeo 360 multimedia** directamente en la página. Para agregar componentes, acceda al modo Diseño y active los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
 
-Los recursos de Dynamic Media se agregan directamente a la página si utiliza Adobe Experience Manager como WCM. Si utiliza un tercero para su WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/responsive-site.md).
+Puede agregar recursos de Dynamic Media directamente a la página si utiliza Adobe Experience Manager como WCM. Si utiliza un tercero para su WCM, [vincule](/help/assets/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Edite la siguiente configuración de Dynamic Media seleccionando la **[!UICONTRO
 
   Esta opción es la única disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos de visualizador que se muestran son inteligentes: solo aparecen los ajustes preestablecidos de visualizador relevantes.
 
-* **[!UICONTROL Modificadores de visor]** - Los modificadores de visualizador toman la forma de par nombre=valor con un delimitador &amp; y le permiten cambiar visualizadores como se describe en la Guía de referencia de visualizadores. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1` que establece una imagen diferente para la miniatura de vídeo y asocia un archivo de subtítulo o rótulo cerrado con el vídeo.
+* **[!UICONTROL Modificadores de visor]** - Los modificadores de visualizador toman la forma de par nombre=valor con un delimitador &amp; y le permiten cambiar visualizadores como se describe en la Guía de referencia de visualizadores. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1` que establece una imagen diferente para la miniatura de vídeo y asocia un archivo de subtítulos con el vídeo.
 
 * **[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
@@ -187,13 +187,13 @@ Edite la siguiente configuración de Dynamic Media seleccionando la **[!UICONTRO
 
   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL URL, Abrir en]** : puede configurar un recurso para abrir un vínculo. Configure la dirección URL y, en Abrir en, indique si desea que se abra en la misma ventana o en una nueva.
+* **[!UICONTROL URL, Abrir en]** : puede configurar un recurso para abrir un vínculo. Establezca la dirección URL y en **Abrir en** indique si desea que se abra en la misma ventana o en una nueva.
 
   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL Ancho]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Ancho]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
-* **[!UICONTROL Altura]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
 #### Al trabajar con vídeo {#when-working-with-video}
 
@@ -220,9 +220,9 @@ Edite la siguiente configuración de Dynamic Media seleccionando **[!UICONTROL E
 
 * **[!UICONTROL Título]** - Cambiar el título del vídeo.
 
-* **[!UICONTROL Ancho]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Ancho]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
-* **[!UICONTROL Altura]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
 #### Al trabajar con Recorte inteligente {#when-working-with-smart-crop}
 
@@ -250,7 +250,7 @@ Edite la siguiente configuración de Dynamic Media seleccionando **[!UICONTROL E
 
   El **[!UICONTROL Optimización para dispositivos de mayor resolución]** solo se muestra cuando se cumple lo siguiente:
 
-   * En Tipo de ajuste preestablecido, **[!UICONTROL Recorte inteligente]** La opción está seleccionada.
+   * En Tipo de ajuste preestablecido, la variable **[!UICONTROL Recorte inteligente]** La opción está seleccionada.
 
   ![configuración de proporción de píxeles del dispositivo para recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
@@ -266,13 +266,13 @@ Edite la siguiente configuración de Dynamic Media seleccionando **[!UICONTROL E
 
   Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL Ancho]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Ancho]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
-* **[!UICONTROL Altura]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
 ### Componente de medios interactivo {#interactive-media-component}
 
-El componente de medios interactivos es para aquellos recursos que tienen interactividad en ellos, como zonas interactivas o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el **[!UICONTROL Medios interactivos]** componente.
+El componente de medios interactivos es para los recursos que tienen interactividad, como zonas interactivas o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el **[!UICONTROL Medios interactivos]** componente.
 
 El componente multimedia interactivo es inteligente. Tanto si añade una imagen como si añade un vídeo, tiene varias opciones. Además, el visor es adaptable: el tamaño de la pantalla cambia automáticamente en función del tamaño de la pantalla. Todos los visualizadores son visualizadores de HTML5.
 
@@ -295,17 +295,17 @@ Puede editar las siguientes opciones **[!UICONTROL General]** configuración sel
 
 * **[!UICONTROL Título]** - Cambiar el título del vídeo.
 
-* **[!UICONTROL Ancho]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Ancho]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
-* **[!UICONTROL Altura]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Si se deja este valor en blanco, el recurso se adaptará.
 
   Puede editar las siguientes opciones **[!UICONTROL Añadir al carro]** configuración seleccionando **[!UICONTROL Editar]** en el componente.
 
-* **[!UICONTROL Mostrar recurso del producto]** : De forma predeterminada, este valor está seleccionado. El recurso de producto muestra una imagen del producto tal como se define en el módulo de Commerce. Desactive la marca de verificación para no mostrar el recurso del producto.
+* **[!UICONTROL Mostrar recurso del producto]** : De forma predeterminada, este valor está seleccionado. El recurso de producto muestra una imagen del producto tal como se define en el módulo de Commerce. Desactive la marca de verificación para que no se muestre el recurso del producto.
 
-* **[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo tal como se define en el módulo Commerce. Desactive la marca de verificación para no mostrar el precio del producto.
+* **[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo tal como se define en el módulo Commerce. Desactive la marca de verificación para que no se muestre el precio del producto.
 
-* **[!UICONTROL Mostrar formulario del producto]** - De forma predeterminada, este valor no está seleccionado. El formulario de producto incluye cualquier variante de producto, como tamaño y color. Desactive la marca de verificación para no mostrar las variantes del producto.
+* **[!UICONTROL Mostrar formulario del producto]** - De forma predeterminada, este valor no está seleccionado. El formulario de producto incluye cualquier variante de producto, como tamaño y color. Desactive la marca de verificación para que no se muestren las variantes del producto.
 
 ### Componente de medios panorámicas {#panoramic-media-component}
 
@@ -333,7 +333,7 @@ Puede editar la siguiente configuración seleccionando **[!UICONTROL Configurar]
 
 * **[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un visor existente en el menú desplegable de ajustes preestablecidos de Visualizador.
 
-Si el ajuste preestablecido de visualizador que busca no está visible, compruebe que se ha publicado. Publique los ajustes preestablecidos del visor antes de utilizarlos. Consulte [Administrar ajustes preestablecidos del visor](/help/assets/managing-viewer-presets.md).
+Si el ajuste preestablecido de visualizador que estaba buscando no está visible, compruebe que se ha publicado. Publique los ajustes preestablecidos del visor antes de utilizarlos. Consulte [Administrar ajustes preestablecidos del visor](/help/assets/managing-viewer-presets.md).
 
 ### Componente multimedia del vídeo 360 {#video-media-component}
 
@@ -347,11 +347,11 @@ El visor incluye compatibilidad nativa para la entrega de 360 recursos de vídeo
 
 Puede editar la siguiente configuración seleccionando **[!UICONTROL Configurar]** en el componente.
 
-* **[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un visor existente en el menú desplegable de ajustes preestablecidos de Visualizador. Utilice Video360VR para usuarios finales que utilizan gafas de realidad virtual. Incluye controles básicos de reproducción de vídeo y funciones de medios sociales. Utilice Video360_social, que incluye controles básicos de reproducción de vídeo. El procesamiento de vídeo se realiza en modo estéreo. El control manual del punto de vista está desactivado, pero el control giroscópico está activado. No hay funciones de medios sociales.
+* **[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un visor existente en el menú desplegable de ajustes preestablecidos de Visualizador. Uso `Video360VR` para usuarios finales que utilizan gafas de realidad virtual. Incluye controles básicos de reproducción de vídeo y funciones de medios sociales. Uso `Video360_social` que incluye controles básicos de reproducción de vídeo. El procesamiento de vídeo se realiza en modo estéreo. El control manual del punto de vista está desactivado, pero el control giroscópico está activado. No hay funciones de medios sociales.
 
-Si el ajuste preestablecido de visualizador que busca no está visible, compruebe que se ha publicado. Asegúrese de publicar los ajustes preestablecidos del visor antes de utilizarlos. Consulte [Administrar ajustes preestablecidos del visor](/help/assets/managing-viewer-presets.md).
+Si el ajuste preestablecido de visualizador que estaba buscando no está visible, compruebe que se ha publicado. Asegúrese de publicar los ajustes preestablecidos del visor antes de utilizarlos. Consulte [Administrar ajustes preestablecidos del visor](/help/assets/managing-viewer-presets.md).
 
-### Uso de HTTP/2 para enviar recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Uso de HTTP/2 para entregar recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que los exploradores y servidores se comunican. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora se puede realizar a través de HTTP/2, que proporciona mejores tiempos de respuesta y carga.
 
@@ -362,6 +362,6 @@ Consulte [Entrega HTTP2 de contenido](/help/assets/http2.md) para obtener inform
 >* [Uso del reproductor de vídeo en Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html)
 >* [Uso de vídeos interactivos con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html)
 >* [Explicación del visualizador de recursos con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html)
->* [Uso de miniaturas de vídeo personalizadas con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Uso de una miniatura de vídeo personalizada con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html)
 >* [Comprensión de la administración de color con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html)
 >* [Uso del enfoque de imagen con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html)
