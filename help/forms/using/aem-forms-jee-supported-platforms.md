@@ -8,7 +8,7 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: c49bff425ccbd00480e5b17fa50ca8f25df80d2f
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 51%
@@ -545,6 +545,26 @@ Para conocer los requisitos adicionales, consulte:
 - [Requisitos del sistema para AEM Forms de un solo servidor en una implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_es)
 - [Requisitos del sistema para una implementación de AEM Forms en clúster en JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_es)
 
+### Adobe Acrobat y Adobe Reader {#adobe-acrobat-and-adobe-reader}
+
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Acrobat y Adobe Reader (Base)</strong></p> </th>
+   <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Acrobat 2020 (Classic track)</td>
+   <td>Versión 20.004.30006 o posterior<br /> </td>
+  </tr>
+
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>La familia de productos de Acrobat DC presenta dos tracks tanto para Acrobat como para Reader, que son productos diferentes: &quot;Classic&quot; y &quot;Continuous&quot;. Para obtener más información y una comparación de ambas, consulte [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+
 ## Clientes compaitbles para AEM Forms en JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
@@ -591,26 +611,6 @@ Para conocer los requisitos adicionales, consulte:
 - Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 - Privilegios administrativos para instalar Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 o superior) con tiempo de ejecución de 32 bits
-
-### Adobe Acrobat y Adobe Reader {#adobe-acrobat-and-adobe-reader}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Acrobat y Adobe Reader (Base)</strong></p> </th>
-   <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Acrobat 2020 (Classic track)</td>
-   <td>Versión 20.004.30006 o posterior<br /> </td>
-  </tr>
-
-</tbody>
-</table>
-
->[!NOTE]
->
->La familia de productos de Acrobat DC presenta dos tracks tanto para Acrobat como para Reader, que son productos diferentes: &quot;Classic&quot; y &quot;Continuous&quot;. Para obtener más información y una comparación de ambas, consulte [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### Exploradores {#browsers}
 
