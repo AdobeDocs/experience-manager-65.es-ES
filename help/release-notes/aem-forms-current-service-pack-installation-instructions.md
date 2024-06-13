@@ -1,13 +1,12 @@
 ---
 title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación del Service Pack de AEM Forms para el entorno OSGi y JEE
-exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+role: User, Admin, Architect, Developer
+source-git-commit: c3fd2b1198c7c856d6d68e9b9cfc711c941e657c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1734'
 ht-degree: 9%
 
 ---
@@ -18,9 +17,9 @@ ht-degree: 9%
 
 | Producto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versión | 6.5.20.0 |
+| Versión | 6.5.21.0 |
 | Tipo | Versión del paquete de servicio |
-| Fecha | 29 de febrero de 2024 |
+| Fecha | 29 de mayo de 2024 |
 | Descargar URL | [Últimas versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) |
 
 >[!NOTE]
@@ -69,9 +68,12 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. Descargue el software necesario
 
 * [AEM Forms en el paquete de servicio JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es)
+
+* [Servlet de fragmento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
 * [AEM Paquete de servicio de](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=es)
 * [Paquete de complemento de Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es)
-* [Servlet de fragmento](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+
 
 +++
 
@@ -137,12 +139,11 @@ Vaya al directorio adecuado, y desde un shell y escriba `./aem65_cfp_install.bin
 
 +++
 
-+++5. AEM Instale el fragmento del servlet (paquete de servicio 6.5.14.0 o anterior de)
++++5. AEM Instale el fragmento del servlet (paquete de servicio 6.5.14.0 de la versión de o anterior) (**Instalación obligatoria**)
 
 >[!NOTE]
 >
-> * Si está realizando la actualización desde **AEM Paquete de servicio de 6.5.15.0**, la instalación del **fragmento de servlet** no es obligatorio. Para las versiones **AEM Paquete de servicio de 6.5.14.0** Para versiones anteriores, es obligatorio instalar el fragmento de servlet.
-> * Es obligatorio instalar el **fragmento de servlet** para todos los servidores de aplicaciones excepto los que se ejecutan en **JBoss® EAP 7.4.0**.
+> * Si está realizando la actualización desde **AEM Paquete de servicio de 6.5.15.0**, la instalación del **fragmento de servlet** no es obligatorio. Para las versiones **AEM Paquete de servicio de 6.5.14.0** o antes, lo es **obligatorio para instalar** el fragmento de servlet.
 
 
 Para descargar e instalar el fragmento de servlet:

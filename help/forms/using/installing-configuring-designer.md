@@ -10,10 +10,10 @@ role: Admin, User, Developer
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 09eae6e3550e9e8505c042e23d6569971841d441
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 30%
+source-wordcount: '767'
+ht-degree: 24%
 
 ---
 
@@ -37,9 +37,10 @@ ht-degree: 30%
 
 >[!NOTE]
 >
-> AEM La versión de 64 bits del diseñador se introdujo con el paquete de servicio 19 de Forms de 6.5 (6.5.19.0) de.
+>* AEM La versión de 64 bits del diseñador se introdujo con el paquete de servicio 19 de Forms de 6.5 (6.5.19.0) de.
+>* La versión de 32 bits del diseñador está en desuso desde el lanzamiento de [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-
+Para obtener más información sobre la instalación de Forms Designer, visite [Preguntas más frecuentes](#fandq).
 
 ## Instalar AEM Forms Designer {#install-designer}
 
@@ -104,3 +105,18 @@ Si utiliza un programa de instalación independiente para AEM Forms Designer, re
 1. Instale la última versión de AEM Forms Designer haciendo doble clic en el archivo de instalación descargado.
 
 +++
+
+## Preguntas frecuentes {#fandq}
+
+* **¿Puede un usuario actualizar directamente a 64 bits?**
+   * Sí, los usuarios pueden actualizar directamente a Designer de 64 bits. Para actualizar, instale [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer full installer y aplique la versión posterior de designer patch sobre eso.
+
+* **¿Pueden los usuarios mantener instalados en el sistema tanto los de 32 como los de 64 bits?**
+   * No, la instalación de 32 y 64 bits no funcionará en el mismo equipo. El usuario puede tener un diseñador de 32 bits o uno de 64 bits.
+
+* **¿Cómo se comprueba si un usuario tiene un diseñador de 64 bits o de 32 bits?**
+   * Existen dos formas de comprobar la versión de Forms Designer:
+
+      1. Abra Designer, vaya a la Ayuda, haga clic en Acerca de Designer y verá información sobre la versión del diseñador junto con la información de bits. Por ejemplo, verá que 64 bits se escribe al final como se muestra aquí:
+         `6.5.21.20240522.1.161 | 64 bit`
+      1. Abra Designer y, en la parte superior izquierda, verá que un icono de marca contiene información de 64 bits sobre el nombre del producto.

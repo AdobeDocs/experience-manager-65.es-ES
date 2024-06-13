@@ -1,18 +1,17 @@
 ---
 title: Generar documento de registro para formularios adaptables
-description: Explica cómo puede generar una plantilla para el documento de registro (DoR) de los formularios adaptables.
+description: Explica cómo se puede generar el documento de registro (DoR) para formularios adaptables.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
 workflow-type: tm+mt
-source-wordcount: '4256'
-ht-degree: 90%
+source-wordcount: '4308'
+ht-degree: 86%
 
 ---
 
@@ -316,47 +315,52 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 1. Seleccione ![dortab](/help/forms/using/assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
 
-   ![plantilla_personalización_de_marca](/help/forms/using/assets/brandingtemplate.png)
+   ![plantilla_personalización_de_marca](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Si elige una plantilla personalizada, busque y seleccione un XDP en el servidor de AEM Forms. Si desea utilizar una plantilla que no esté ya en el servidor de AEM Forms, primero debe cargar el XDP en el servidor.
 
-1. En función de si selecciona una plantilla predeterminada o personalizada, la pestaña Documento de registro muestra algunas o todas las propiedades que aparecen a continuación. Especifíquelas correctamente:
+### Propiedades de la página maestra (#master-page-properties)
 
-   * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
-   * **Título del formulario**
-   * **Texto de encabezado**
-   * **Etiqueta de la exención de responsabilidad**
-   * **Exención de responsabilidad**
-   * **Texto de la exención de responsabilidad**
-   * **Color de énfasis**: el color en el que se representa el texto del encabezado y las líneas de separación en el documento o registro PDF.
-   * **Familia de fuentes**: la familia de fuentes del texto del documento de registro PDF.
-   * **Para componentes de casilla de verificación y botones de radio, mostrar solo los valores seleccionados**
-   * **Separador para varios valores seleccionados**
-   * **Incluir objetos de formulario que no están enlazados al modelo de datos**
-   * **Excluir los campos ocultos del documento de registro**
-   * **Ocultar descripción de paneles**
+En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las siguientes propiedades de página maestra aparecen en la pestaña Documento de registro, como se muestra en la imagen anterior. Especifíquelas correctamente:
 
-   Si la plantilla XDP personalizada que selecciona incluye varias páginas maestras, las propiedades de esas páginas aparecerán en la sección **[!UICONTROL Contenido]** de la pestaña **[!UICONTROL Documento de registro]**.
+* **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
+* **Título del formulario**
+* **Texto de encabezado**
+* **Etiqueta de la exención de responsabilidad**
+* **Exención de responsabilidad**
+* **Texto de la exención de responsabilidad**
 
-   ![Propiedades de página maestra](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   Las propiedades de la página maestra incluyen Imagen de logotipo, Texto de encabezado, Título del formulario, Etiqueta de exención de responsabilidad legal y Texto de exención de responsabilidad legal. Puede aplicar propiedades de formulario adaptable o de plantilla XDP al documento de registro. AEM Forms aplica las propiedades de la plantilla al documento de registro de forma predeterminada. También puede definir valores personalizados para las propiedades de la página maestra. Para obtener información sobre cómo aplicar varias páginas maestras en un documento de registro, consulte [Aplicar varias páginas maestras a un documento de registro](#apply-multiple-master-pages-dor).
+  Si la plantilla XDP personalizada que selecciona incluye varias páginas maestras, las propiedades de esas páginas aparecerán en la sección **[!UICONTROL Contenido]** de la pestaña **[!UICONTROL Documento de registro]**.
 
-   >[!NOTE]
-   >
-   >Si está utilizando una plantilla de formulario adaptable creada con una versión de Designer anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que los siguientes elementos están presentes en el subformulario raíz de la plantilla de formulario adaptable:
+  ![Propiedades de página maestra](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  Las propiedades de la página maestra incluyen Imagen de logotipo, Texto de encabezado, Título del formulario, Etiqueta de exención de responsabilidad legal y Texto de exención de responsabilidad legal. Puede aplicar propiedades de formulario adaptable o de plantilla XDP al documento de registro. AEM Forms aplica las propiedades de la plantilla al documento de registro de forma predeterminada. También puede definir valores personalizados para las propiedades de la página maestra. Para obtener información sobre cómo aplicar varias páginas maestras en un documento de registro, consulte [Aplicar varias páginas maestras a un documento de registro](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >Si está utilizando una plantilla de formulario adaptable creada con una versión de Designer anterior a la 6.3, para que las propiedades Color de énfasis y Familia de fuentes funcionen, asegúrese de que los siguientes elementos están presentes en el subformulario raíz de la plantilla de formulario adaptable:
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. Para guardar los cambios de personalización de marca, seleccione Listo.
 
@@ -414,8 +418,23 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 
 **Configuración del nivel de formulario**
 
-* **Incluir campos no enlazados en el documento de registro:** al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en el documento de registro. De forma predeterminada, es True.
-* **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos de [!UICONTROL Documento de registro] al enviar el formulario. Al activar [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del [!UICONTROL Documento de registro].
+* **[!UICONTROL BÁSICO]**
+   * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
+     ![texto alternativo](image.png)
+   * **Realzar color:** Puede predefinir el color de plantilla del [!UICONTROL Documento de registro].
+   * **Familia de fuentes:** Seleccione Tipo de fuente para la [!UICONTROL Documento de registro] textos.
+   * **Incluir campos no enlazados en documento de registro:** Al establecer la propiedad, se incluyen campos no enlazados del formulario adaptable basado en esquemas en [!UICONTROL Documento de registro]. De forma predeterminada, es True.
+   * **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos de [!UICONTROL Documento de registro] al enviar el formulario. Al activar [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del [!UICONTROL Documento de registro]
+* **[!UICONTROL PROPIEDADES DEL CAMPO DE FORMULARIO]**
+   * Si marca la opción **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**, generará una salida de DoR con solo los valores seleccionados.
+   * Puede seleccionar Separador para varios valores seleccionados o puede elegir cualquier otro tipo de separador.
+   * Alineación de opciones
+      * Vertical
+      * Horizontal
+      * Igual que el formulario adaptable
+     >[!NOTE]
+     > La alineación vertical u horizontal sólo es aplicable a los botones de opción y a las casillas de verificación
+* **[!UICONTROL PROPIEDADES DE LA PÁGINA MAESTRA]** Haga clic para obtener más información sobre [Propiedades de la página maestra](#master-page-properties-master-page-properties)
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
 

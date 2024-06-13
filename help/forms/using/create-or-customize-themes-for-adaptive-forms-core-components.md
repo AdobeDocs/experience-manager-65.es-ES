@@ -9,9 +9,9 @@ role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: aa8f8ea6ec3787cd1de76a72fe05f0993c2d6b22
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1939'
 ht-degree: 41%
 
 ---
@@ -35,6 +35,10 @@ AEM entorno de 6.5 proporciona los temas siguientes para los componentes princip
 * [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema FSI](https://github.com/adobe/aem-forms-theme-fsi)
+* [Tema de atención sanitaria](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Tema público](https://github.com/adobe/aem-forms-theme-public)
+* [Tema de fabricación](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Comprender la estructura de las temáticas {#understanding-structure-of-theme}
 
@@ -57,6 +61,8 @@ AEM Forms 6.5 proporciona los temas que se enumeran a continuación para los com
 * [Temática Lienzo](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema público](https://github.com/adobe/aem-forms-theme-public)
+* [Tema de fabricación](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 Puede [personalice cualquiera de estas temáticas para crear una temática](#customize-a-theme-core-components).
 
@@ -331,7 +337,7 @@ Para eliminar temas no utilizados o no deseados:
 
 1. Guarde el archivo y vuelva a implementar la temática.
 
-## Consulte también
+## Ver también
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Utilice el editor de reglas para agregar un comportamiento dinámico al formulario](rule-editor.md)
