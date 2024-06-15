@@ -4,22 +4,21 @@ description: AEM Forms admite funciones personalizadas que permiten a los usuari
 keywords: Agregar una función personalizada, utilizar una función personalizada, crear una función personalizada, utilizar una función personalizada en el editor de reglas.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: e7ad5c0149e428265598c806421131fe74fad350
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '3394'
+source-wordcount: '3385'
 ht-degree: 3%
 
 ---
 
 # Funciones personalizadas en los componentes principales de Forms adaptable
 
-<span class="preview"> Este artículo incluye contenido para funciones del programa de usuarios pioneros. Solo se puede acceder a estas funciones previas al lanzamiento a través de nuestra [canal previo al lanzamiento](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Las funciones del programa previo al lanzamiento son las siguientes:
-<!-- * Optional parameter support in Custom Functions-->
+Este artículo describe la creación de funciones personalizadas con el componente principal del formulario adaptable más reciente, que tienen las funciones más recientes, como las siguientes:
 * Función de almacenamiento en caché para funciones personalizadas
 * Compatibilidad de objetos de campo y objeto de ámbito global con funciones personalizadas
 * Compatibilidad con funciones modernas de JavaScript como las funciones izquierda y flecha (compatibilidad con ES10)
 
-Asegúrese de establecer la variable [última versión del formulario](https://github.com/adobe/aem-core-forms-components/tree/release/650) en el entorno del componente principal de AEM Forms para utilizar las funciones previas al lanzamiento en Funciones personalizadas. </span>
+Asegúrese de establecer la variable [última versión del formulario](https://github.com/adobe/aem-core-forms-components/tree/release/650) en el entorno del componente principal de AEM Forms para utilizar las últimas funciones en Funciones personalizadas. </span>
 
 
 | Versión | Vínculo del artículo |
