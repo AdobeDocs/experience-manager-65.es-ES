@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3823'
 ht-degree: 3%
 
 ---
@@ -527,16 +527,15 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 ### Problemas conocidos de AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Después de instalar AEM Forms JEE Service Pack 21 (6.5.21.0), si encuentra entradas duplicadas de jars Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` en el `<AEM_Forms_Installation>/lib/caching/lib` carpeta (FORMS-14926).
+* Después de instalar AEM Forms JEE Service Pack 21 (6.5.21.0), si encuentra entradas duplicadas de jars Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` en el `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), realice los siguientes pasos para resolver el problema:
 
-  Siga estos pasos para resolver el problema:
+   1. Detenga los localizadores, si están en funcionamiento.
+   1. AEM Detenga el servidor de la.
+   1. Vaya a la `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Elimine todos los archivos de parche de Geode excepto `geode-*-1.15.1.2.jar`. Confirme que solo los tarros de Geode con `version 1.15.1.2` están presentes.
+   1. Abra el símbolo del sistema en modo de administrador.
+   1. Instale el parche de Geode mediante la variable `geode-*-1.15.1.2.jar` archivo.
 
-   1. Detenga los localizadores y el servidor en el orden especificado, si se están ejecutando.
-   1. Vuelva a instalar el parche ejecutando el programa de instalación del parche en modo de administrador (Importante).
-   1. Confirme que solo los tarros de Geode con `version 1.15.1.2` están presentes.
-
-  >[!NOTE]
-  > No se requiere ninguna acción si solo los jars Geode tienen `version 1.15.1.2` están presentes.
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
