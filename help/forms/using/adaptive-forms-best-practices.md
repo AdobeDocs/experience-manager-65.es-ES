@@ -7,10 +7,10 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '5504'
-ht-degree: 78%
+source-wordcount: '5538'
+ht-degree: 77%
 
 ---
 
@@ -63,6 +63,7 @@ Para obtener más información, consulte [Cómo crear proyectos de AEM con Apach
 Una vez configurado el proyecto de AEM, defina una estrategia para crear y personalizar plantillas y componentes de formularios adaptables.
 
 * Una plantilla de formulario adaptable es una página de AEM especializada que define la estructura y la información del encabezado y pie de página de un formulario adaptable. Una plantilla tiene diseños, estilos y estructuras básicos preconfigurados para un formulario adaptable. AEM Forms proporciona plantillas y componentes integrados que puede utilizar para crear formularios adaptables. Sin embargo, puede crear plantillas y componentes personalizados según sus necesidades. Se recomienda recopilar los requisitos para plantillas y componentes adicionales que necesite en los formularios adaptables. Para obtener más información, consulte [Personalizar formularios y componentes adaptables](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* Se recomienda cargar los paquetes de formulario mediante la interfaz de usuario de Form Manager en lugar de la interfaz de usuario de CRX Package Manager, ya que la carga de paquetes mediante CRX Package Manager a veces puede provocar anomalías.
 * AEM Forms permite crear formularios adaptables basados en los siguientes modelos de formulario. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema de AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Además, los modelos de formulario imponen reglas y restricciones en los formularios adaptables en forma de restricciones de esquema y XFA.
 
    * **Ninguno**: Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
