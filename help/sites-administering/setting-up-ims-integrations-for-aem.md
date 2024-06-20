@@ -1,26 +1,28 @@
 ---
 title: AEM Configuración de integraciones de IMS para la
 description: AEM Obtenga información sobre cómo configurar integraciones de IMS para la
-source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
+feature: Security
+role: Admin
+exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
+source-git-commit: c2d996586d2ec7299e856a97ae1b744245c730bb
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 79%
+source-wordcount: '433'
+ht-degree: 63%
 
 ---
-
 
 # AEM Configuración de integraciones de IMS para la {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
 >
->Los clientes de Adobe utilizan [Adobe Developer Console](https://developer.adobe.com/console) para generar credenciales que permitan el acceso a varias API. Los clientes seleccionan entre varios tipos de credenciales, que van de servidor a servidor OAuth a aplicaciones de una sola página. Uno de estos tipos de credenciales, las credenciales de cuenta de servicio (JWT), han quedado obsoletas en favor de las credenciales de servidor a servidor de OAuth con Service Pack 20. Este cambio se puede volver a portar a paquetes de servicio anteriores, empezando por Service Pack 11 hasta Service Pack 20, con el uso de una revisión que puede descargar [aquí](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Los clientes de Adobe utilizan el [Consola de Adobe Developer](https://developer.adobe.com/console) para generar credenciales que permitan el acceso a varias API. Los clientes seleccionan entre varios tipos de credenciales, que van de servidor a servidor OAuth a aplicaciones de una sola página. El tipo de credencial Cuenta de servicio (JWT) ya no se utiliza en favor de las credenciales de servidor a servidor OAuth con Service Pack 20. Este cambio se puede volver a portar a paquetes de servicio anteriores, empezando por Service Pack 11 hasta Service Pack 20, con el uso de una revisión que puede descargar [aquí](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager AEM () se puede integrar con muchas otras soluciones de Adobe. Por ejemplo, Adobe Target y Adobe Analytics, entre otras.
 
 Las integraciones utilizan una integración de IMS configurada con S2S OAuth.
 
-* Una vez que haya creado lo siguiente:
+* Después de crear:
 
    * [las credenciales en Developer Console](#credentials-in-the-developer-console)
 
@@ -38,9 +40,9 @@ Las integraciones utilizan una integración de IMS configurada con S2S OAuth.
 
 ## Credenciales en Developer Console {#credentials-in-the-developer-console}
 
-Como primer paso, debe configurar las credenciales de OAuth en Adobe Developer Console.
+Como primer paso, debe configurar las credenciales de OAuth en la consola de Adobe Developer.
 
-Para obtener detalles sobre cómo hacer esto, consulte la documentación de Developer Console, según lo que necesite:
+Para obtener más información sobre cómo realizar esta configuración, consulte la documentación de Developer Console, según sus necesidades:
 
 * Información general:
 
@@ -96,9 +98,9 @@ Para migrar una integración de IMS de Adobe existente basada en las credenciale
 
    ![Seleccione Tipo de autenticación](assets/ims-migrate-jwt-authentication-type.png)
 
-1. Se actualizarán las propiedades disponibles. Utilice los detalles de Developer Console para completarlos:
+1. Se actualizan las propiedades disponibles. Utilice los detalles de Developer Console para completarlos:
 
    ![Complete los detalles de OAuth](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. Use **Guardar y cerrar** para conservar las actualizaciones.
-Cuando vuelva a la consola, la advertencia **Credenciales de JWT (en desuso)** habrá desaparecido.
+Cuando vuelva a la consola, la variable **Credenciales de JWT (obsoletas)** la advertencia ha desaparecido.
