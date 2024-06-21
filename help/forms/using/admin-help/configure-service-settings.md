@@ -7,10 +7,11 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
 workflow-type: tm+mt
-source-wordcount: '10702'
+source-wordcount: '10828'
 ht-degree: 4%
 
 ---
@@ -225,7 +226,7 @@ Los siguientes ajustes están disponibles para el servicio Encryption.
 >
 >Utilice la autenticación simple (nombre de usuario y contraseña) solo cuando la conexión esté protegida mediante SSL (mediante LDAPS).
 
-**Modo de compatibilidad:**
+<!-- **Compatibility Mode:**-->
 
 ## Configuración del servicio FTP {#ftp-service-settings}
 
@@ -253,7 +254,11 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 **Configuración de tipo de archivo:** Nombre de la configuración de tipo de archivo preconfigurada que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración del tipo de archivo se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración del tipo de archivo.
 
-**Utilizar Acrobat WebCapture (sólo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat X Pro para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos del PDF producidos a partir de HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
+**Utilizar WebCapture (sólo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos del PDF producidos a partir de HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
+
+**Conversor principal para conversiones de HTML a PDF:** El servicio Generate PDF proporciona varias rutas para convertir archivos de HTML en documentos de PDF: Webkit, WebCapture (solo Windows) y WebToPDF. Esta configuración permite al usuario seleccionar el convertidor principal para convertir el HTML en PDF. De forma predeterminada, la opción WebToPDF está seleccionada.
+
+**Conversión de reserva de HTML a PDF:** Especifique el convertidor para las conversiones de HTML a PDF si falla el convertidor principal. De forma predeterminada, la opción WebCapture (sólo Windows) está seleccionada.
 
 **Utilizar la conversión de imágenes de Acrobat (solo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat X Pro para todas las conversiones de imagen a PDF. Esta configuración solo es útil si el mecanismo de conversión predeterminado de Java puro no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
 
@@ -267,21 +272,23 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 **Tamaño del grupo de OCR:** Tamaño del grupo de PaperCaptureService que utiliza el PDF Generator para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
 
+**Páginas máximas de ImageToPDF en la memoria para conversiones de TIFF:** Esta configuración determina el número máximo de páginas de una imagen de TIFF que pueden permanecer en la memoria antes de vaciarse en el disco durante la conversión a PDF. El valor predeterminado de esta configuración es 500, que se puede aumentar si se asigna memoria adicional al proceso de conversión de ImageToPDF.
+
 **Familia De Fuentes De Reserva Para Conversiones De HTML A PDF:** Nombre de la familia de fuentes que se utilizará en los documentos del PDF cuando la fuente utilizada en el HTML original no esté disponible para AEM Forms Server. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
 
 **Lógica de reintento para conversiones nativas** Rige los reintentos de generación de PDF si el primer intento de conversión ha fallado:
 
-**Sin reintento**
+* **Sin reintento**
 
-No reintente la conversión del PDF si el primer intento de conversión ha fallado
+  No reintente la conversión del PDF si el primer intento de conversión ha fallado
 
-**Reintentar**
+* **Reintentar**
 
-Reintentar la conversión del PDF independientemente de si se ha alcanzado el umbral de tiempo de espera. La duración de tiempo de espera predeterminada para el primer intento es 270 s.
+  Reintentar la conversión del PDF independientemente de si se ha alcanzado el umbral de tiempo de espera. La duración de tiempo de espera predeterminada para el primer intento es 270 s.
 
-**Reintentar si el tiempo lo permite**
+* **Reintentar si el tiempo lo permite**
 
-Reintente la conversión del PDF si el tiempo empleado para el primer intento de conversión fue menor que el tiempo de espera especificado. Por ejemplo, si la duración del tiempo de espera es de 270 segundos y el primer intento consumió 200 segundos, PDF Generator volverá a intentar la conversión. Si el primer intento consumió 270 segundos, no se volverá a intentar la conversión.
+  Reintente la conversión del PDF si el tiempo empleado para el primer intento de conversión fue menor que el tiempo de espera especificado. Por ejemplo, si la duración del tiempo de espera es de 270 segundos y el primer intento consumió 200 segundos, PDF Generator volverá a intentar la conversión. Si el primer intento consumió 270 segundos, no se volverá a intentar la conversión.
 
 ## Guías ES4 Utilidades configuración del servicio {#guides-es4-utilities-service-settings}
 
@@ -451,7 +458,7 @@ Los siguientes ajustes están disponibles para el servicio de configuración de 
 
 ## Configuración del servicio de salida {#output-service-settings}
 
-El servicio Output `(OutputService)`AEM permite combinar datos de formulario XML con un diseño de formulario creado en el diseñador de formularios de la aplicación para crear una secuencia de salida de documento en uno de los siguientes formatos:
+El servicio Output `(OutputService)`AEM permite combinar datos de formulario XML con un diseño de formulario creado en Designer de formularios en la forma de un documento para crear una secuencia de salida en uno de los formatos siguientes:
 
 * Flujo de salida de documento de PDF o PDF/A.
 * Un flujo de salida de Adobe PostScript.
@@ -749,7 +756,7 @@ El servicio Web ( `WebService`) permite a los procesos invocar operaciones de se
 
 El servicio Web permite a los procesos invocar operaciones del servicio Web. Por ejemplo, una organización puede querer integrar un proceso para almacenar y recuperar información, como los detalles de contacto y cuenta, invocando los servicios web expuestos de un proveedor de servicios. El servicio Web Service invoca un servicio Web especificado y pasa los valores de cada uno de sus parámetros. A continuación, guarda los valores devueltos de la operación en una variable designada dentro de un proceso.
 
-El servicio Web interactúa con los servicios Web mediante el envío y la recepción de mensajes SOAP. El servicio también admite el envío de archivos adjuntos MIME, MTOM y SwaRef con mensajes SOAP mediante el protocolo WS-Attachment. Las interacciones del servicio Web son compatibles con los sistemas SAP y con los servicios Web .NET.
+SOAP El servicio Web Service interactúa con los servicios Web mediante el envío y la recepción de mensajes de. SOAP El servicio también es compatible con el envío de archivos adjuntos MIME, MTOM y SwaRef con mensajes de tipo mediante el protocolo WS-Attachment. Las interacciones del servicio Web son compatibles con los sistemas SAP y con los servicios Web .NET.
 
 Las siguientes opciones de configuración están disponibles para el servicio Web.
 
