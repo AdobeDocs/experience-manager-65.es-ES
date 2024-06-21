@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+source-git-commit: f1a18575e8b8f925f8adbe18e189f3916b5e353d
 workflow-type: tm+mt
-source-wordcount: '10828'
+source-wordcount: '10824'
 ht-degree: 4%
 
 ---
@@ -260,9 +260,9 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 **Conversión de reserva de HTML a PDF:** Especifique el convertidor para las conversiones de HTML a PDF si falla el convertidor principal. De forma predeterminada, la opción WebCapture (sólo Windows) está seleccionada.
 
-**Utilizar la conversión de imágenes de Acrobat (solo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat X Pro para todas las conversiones de imagen a PDF. Esta configuración solo es útil si el mecanismo de conversión predeterminado de Java puro no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
+**Utilizar la conversión de imágenes de Acrobat (solo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de imagen a PDF. Esta configuración solo es útil si el mecanismo de conversión predeterminado de Java puro no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
 
-**Activar conversiones de AutoCAD basadas en Acrobat (sólo para Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat X Pro para todas las conversiones de DWG a PDF. Esta configuración sólo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
+**Activar conversiones de AutoCAD basadas en Acrobat (sólo para Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de DWG a PDF. Esta configuración sólo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
 
 **Expresiones Regulares Para Encontrar Caracteres Especiales Prohibidos En El Nombre De Usuario (Solo Windows):** Especifica caracteres que interfieren con las operaciones del Export PDF y del Optimize PDF cuando los caracteres aparecen en el nombre de un usuario.
 
