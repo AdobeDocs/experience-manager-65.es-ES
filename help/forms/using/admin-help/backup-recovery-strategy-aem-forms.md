@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 3%
@@ -86,7 +87,7 @@ Antes de reiniciar el servidor de Forms después de una recuperación, haga lo s
    1. Clic **Inicio** para sincronizar recursos del repositorio.
 
 1. AEM En un entorno agrupado, el nodo principal (con respecto a los nodos de datos) debe estar activo antes que los nodos secundarios.
-1. Asegúrese de que no se inician procesos desde orígenes internos o externos como iniciadores de procesos web, SOAP o EJB hasta que se valide el funcionamiento normal del sistema.
+1. SOAP Asegúrese de que no se inician procesos desde orígenes internos o externos como los iniciadores de procesos Web, o EJB hasta que se valide el funcionamiento normal del sistema.
 
 AEM AEM Si se mueve o cambia la base de datos de formularios principal de la, consulte las guías de instalación correspondientes a su servidor de aplicaciones para obtener información sobre cómo actualizar la información de conexión de la base de datos para las fuentes de datos de los formularios IDP_DS y EDC_DS de la forma de datos de la forma de la.
 

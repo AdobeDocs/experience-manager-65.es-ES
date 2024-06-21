@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 29cc7281e34487881ff9334f4cf00f3d013de11b
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 3%
@@ -162,9 +162,10 @@ Cifrar un documento de PDF con una contraseña mediante la API de cifrado (Java)
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): cifrado de un documento de PDF mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): cifrado de un documento de PDF mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -377,7 +378,7 @@ Cifrar un documento de PDF con un certificado mediante la API de cifrado (Java):
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): cifrado de un documento de PDF con un certificado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[SOAP Inicio rápido (modo de): cifrado de un documento de PDF con un certificado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -558,7 +559,7 @@ Quite el cifrado basado en certificados de un documento de PDF mediante la API d
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Quitar el cifrado basado en certificados mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[SOAP Inicio rápido (modo de): Quitar el cifrado basado en certificados mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -711,7 +712,7 @@ Elimine el cifrado basado en contraseña de un documento de PDF mediante la API 
 
 **Consulte también**
 
-[Inicio rápido (modo SOAP): Eliminación del cifrado basado en contraseña mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[SOAP Inicio rápido (modo de): Eliminación del cifrado basado en contraseña mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
 ### Quitar el cifrado basado en contraseña mediante la API de servicio web {#remove-password-based-encryption-using-the-web-service-api}
 
@@ -870,7 +871,7 @@ Desbloquee un documento de PDF cifrado mediante la API de cifrado (Java):
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Desbloquear un documento de PDF cifrado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (modo SOAP)
+[SOAP Inicio rápido (modo de): Desbloquear un documento de PDF cifrado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) SOAP (modo de)
 
 [Aplicar derechos de uso a documentos de PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
@@ -1028,7 +1029,7 @@ Determine el tipo de cifrado que protege un documento del PDF mediante la API de
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Determinación del tipo de cifrado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[SOAP Inicio rápido (modo de): Determinación del tipo de cifrado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

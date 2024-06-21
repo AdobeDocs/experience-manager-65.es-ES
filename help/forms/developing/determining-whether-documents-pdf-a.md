@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 2%
@@ -170,7 +170,7 @@ Determine si un documento de PDF es compatible con el PDF/A mediante la API del 
 
 **Consulte también**
 
-[Inicio rápido (modo SOAP): Determinación de si un documento es compatible con el PDF/A mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (modo SOAP)
+[SOAP Inicio rápido (modo de): Determinación de si un documento es compatible con el PDF/A mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) SOAP (modo de)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

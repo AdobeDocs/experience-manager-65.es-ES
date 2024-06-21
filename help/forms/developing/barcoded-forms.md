@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1911'
 ht-degree: 0%
@@ -163,7 +163,7 @@ Descodificar datos de formulario mediante la API de formularios con códigos de 
 
 **Consulte también**
 
-[Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[SOAP Inicio rápido (modo de): Descodificación de datos de formulario con códigos de barras mediante la API de Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

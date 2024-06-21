@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1690'
 ht-degree: 1%
@@ -34,8 +34,8 @@ Los cambios realizados en un formulario como resultado de la ejecución de scrip
 
 Para procesar un formulario en el cliente, realice las siguientes tareas:
 
-1. Incluir archivos de proyecto.
-1. Cree un objeto de API de cliente de Forms.
+1. Incluya los archivos de proyecto.
+1. Crear un objeto API de cliente Forms.
 1. Establecer las opciones de tiempo de ejecución de procesamiento de cliente.
 1. Procesar un formulario en el cliente.
 1. Escriba el formulario en el explorador web del cliente.
@@ -54,7 +54,7 @@ Establezca la opción de tiempo de ejecución de representación de cliente para
 
 Una opción de tiempo de ejecución opcional que puede establecer es la `SeedPDF` opción. El `SeedPDF` combina el contenedor de PDF (documento de PDF semilla) con el diseño de formulario y los datos XML. Tanto el diseño de formulario como los datos XML se envían a Acrobat o Adobe Reader, donde se procesa el formulario. El `SeedPDF` se puede utilizar cuando el equipo cliente no tiene fuentes que se utilicen en el formulario, como cuando un usuario final no tiene licencia para utilizar una fuente para la que el propietario del formulario tiene licencia.
 
-Puede utilizar Designer para crear un archivo PDF dinámico simple para utilizarlo como archivo PDF semilla. Se requieren los siguientes pasos para realizar esta tarea:
+Puede utilizar Designer para crear un archivo de PDF dinámico simple para utilizarlo como archivo de PDF semilla. Se requieren los siguientes pasos para realizar esta tarea:
 
 1. Determine si necesita incrustar alguna fuente dentro del archivo del PDF semilla. El archivo del PDF semilla debe contener las fuentes adicionales que requiere el formulario que se está procesando. Al incrustar fuentes en el archivo del PDF semilla, asegúrese de que no infringe ningún acuerdo de licencia de fuentes. En Designer, puede determinar si puede incrustar fuentes legalmente. Al guardar, si hay fuentes que no se pueden incrustar en el formulario, Designer muestra un mensaje con las fuentes que no se pueden incrustar. Este mensaje no se muestra en Designer para documentos de PDF estáticos.
 1. Si está creando el archivo del PDF semilla en Designer, se recomienda que, como mínimo, añada un campo de texto que contenga un mensaje. El mensaje debe dirigirse a los usuarios de versiones anteriores de Adobe Reader para informarles de que necesitan Acrobat 7.0 o posterior, o Adobe Reader 7.0 o posterior, para ver el documento.
@@ -118,11 +118,11 @@ Procesar un formulario en el cliente mediante la API de Forms (Java):
 
    El `renderPDFForm` El método devuelve un valor `FormsResult` que contiene un flujo de datos de formulario que debe escribirse en el explorador web cliente.
 
-1. Escribir el flujo de datos del formulario en el explorador web del cliente
+1. Escriba el flujo de datos de formulario en la explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
-   * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
+   * Crear un `com.adobe.idp.Document` objeto invocando el `FormsResult` método del `getOutputContent` objeto.
+   * Obtenga el tipo de contenido del `com.adobe.idp.Document` objeto invocando su `getContentType` método.
+   * Defina el `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` método y pasando los tipo de contenido del `com.adobe.idp.Document` objeto.
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
    * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
    * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
@@ -130,7 +130,7 @@ Procesar un formulario en el cliente mediante la API de Forms (Java):
 
 **Consulte también**
 
-[Inicio rápido (modo SOAP): Procesamiento de un formulario en el cliente mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[SOAP Inicio rápido (modo de): Procesar un formulario en el cliente mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

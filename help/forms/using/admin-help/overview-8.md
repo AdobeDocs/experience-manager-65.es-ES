@@ -1,14 +1,15 @@
 ---
 title: Descripción general del servicio de salida
-description: La salida permite combinar los datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos.
+description: La salida permite combinar los datos del formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 # Descripción general del servicio de salida {#overview-of-output-service}
 
-La salida permite combinar los datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos. La secuencia de salida se puede enviar a una impresora de red, a una impresora local o a un archivo de disco
+La salida permite combinar los datos del formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos. La secuencia de salida se puede enviar a una impresora de red, a una impresora local o a un archivo de disco
 
 Puede utilizar la página Salida en la consola de administración para administrar el servicio Salida. AEM La configuración que configure se utiliza en tiempo de ejecución cuando la configuración equivalente no se especificó a través de la API de formularios en la que se utiliza el formulario de la. AEM La configuración realizada a través del SDK de formularios en la aplicación de la anula la configuración establecida mediante la consola de administración.
 

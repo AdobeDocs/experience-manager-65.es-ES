@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7608'
 ht-degree: 90%
@@ -836,7 +837,7 @@ Al configurar una arquitectura de red segura como se describe en la sección ant
     <ul> 
      <li><p>Aplicaciones cliente de los servicios web; p. ej., aplicaciones .NET</p> </li> 
      <li><p>Adobe Reader® utiliza SOAP para los servicios web del servidor de AEM Forms en JEE</p> </li> 
-     <li><p>Flash de Adobe ® las aplicaciones utilizan SOAP para los servicios web de Forms Server</p> </li> 
+     <li><p>Flash SOAP de Adobe ® las aplicaciones utilizan la aplicación para los servicios web de Forms Server</p> </li> 
      <li><p>Llamadas del SDK de AEM Forms en JEE cuando se utiliza en el modo SOAP</p> </li> 
      <li><p>Entorno de diseño de Workbench</p> </li> 
     </ul> </td> 

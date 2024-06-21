@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 2%
@@ -128,7 +128,7 @@ Conversión de un archivo PostScript en un documento de PDF mediante la API de s
 
 [Resumen de los pasos](converting-postscript-pdf-documents.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

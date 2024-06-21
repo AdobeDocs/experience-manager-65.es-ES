@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 1%
@@ -33,9 +34,9 @@ Se pueden agregar los siguientes tipos de extremos a los servicios. No todos los
 
 **Remoting:** Habilita una aplicación creada con Flex AEM AEM para invocar el servicio mediante (obsoleto para formularios de la versión de la aplicación en tiempo de ejecución) la comunicación remota de formularios de la aplicación de formularios. Se crea automáticamente un extremo remoto para cada servicio activado. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio correspondiente.
 
-**SOAP:** AEM Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación para invocar el servicio mediante el modo SOAP. Se crea automáticamente un punto final SOAP para cada servicio activado.
+**SOAP:** AEM SOAP Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación de la aplicación de cliente de la aplicación para invocar el servicio mediante el modo de. SOAP Se crea automáticamente un punto final de para cada servicio activado.
 
-**nota**: *La seguridad se puede quitar de los documentos de seguridad del documento cuando se utiliza el extremo SOAP mientras se visualizan los documentos en Adobe Acrobat o Adobe Reader. Para obtener más información sobre cómo deshabilitar los extremos SOAP en los documentos de CRM, consulte [Deshabilitar extremos SOAP para documentos de Document Security](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**nota**: *SOAP La seguridad se puede eliminar de los documentos de seguridad del documento cuando se utiliza el punto de conexión de la al ver los documentos en Adobe Acrobat o Adobe Reader. SOAP Para obtener más información sobre cómo deshabilitar los puntos de conexión en los documentos de LCRM, consulte [SOAP Deshabilitar puntos finales de para documentos de seguridad de documentos](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
 **EJB:** AEM Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación para invocar el servicio mediante Enterprise JavaBeans (EJB). Se crea automáticamente un extremo de EJB para cada servicio activado.
 

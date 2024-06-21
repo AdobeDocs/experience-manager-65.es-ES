@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '3674'
 ht-degree: 0%
@@ -422,7 +422,7 @@ La siguiente ilustración muestra el contenido del proyecto Eclipse, que se empa
 
 >[!NOTE]
 >
->En la ilustración anterior, el archivo JPG se puede reemplazar por cualquier archivo de imagen JPG.
+>En la ilustración anterior, el archivo de imagen del JPG se puede reemplazar por cualquier archivo de imagen del JPG de la.
 
 **Empaquetar una aplicación web en un archivo WAR:**
 

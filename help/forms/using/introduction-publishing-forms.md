@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 63%
@@ -80,7 +81,7 @@ El portal de Forms permite mostrar una lista de los formularios del repositorio 
 1. **Configurar el almacenamiento de los datos de los borradores y los formularios enviados:** los datos de los borradores y los envíos se almacenan en el repositorio de AEM de forma predeterminada. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. [Configure el componente Forms Portal para guardar datos en una ubicación segura](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Opcional) Personalización de los componentes del portal de Forms:** [Personalizar las plantillas de página del portal de Forms](../../forms/using/customizing-templates-forms-portal-components.md) para proporcionar un aspecto distintivo a los componentes.
 1. **(Opcional) Añadir metadatos personalizados a los formularios:** [agregue metadatos personalizados a los formularios](../../forms/using/customizing-templates-forms-portal-components.md) para mejorar la experiencia de búsqueda y listado.
-1. **Publicar la página de Forms Portal:** La página del portal de Forms ya está lista. Publique la página.
+1. **Publish en la página del portal de Forms:** La página del portal de Forms ya está lista. Publique la página.
 
 ## Artículos relacionados {#related-articles}
 

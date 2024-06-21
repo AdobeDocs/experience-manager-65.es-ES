@@ -10,7 +10,8 @@ docset: aem65
 role: Admin,User
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1736'
 ht-degree: 53%
@@ -176,6 +177,6 @@ Después de ejecutar la utilidad de migración, debe encargarse de las siguiente
    1. Abra el archivo XFA en la última versión de Designer y guárdelo. El XFA se actualiza a la versión más reciente.
    1. Cargue el XFA en la interfaz de usuario de Forms.
 
-1. Publique todos los recursos publicados en el sistema anterior antes de la migración. La utilidad de migración actualiza los recursos solo en la instancia de autor. Para actualizar los recursos en las instancias de publicación, debe publicarlos.
+1. Publique todos los recursos publicados en el sistema anterior antes de la migración. La utilidad de migración actualiza los recursos solo en la instancia de autor. Para actualizar los recursos en las instancias de Publish, debe publicarlos.
 
 1. En AEM Forms 6.4 y 6.5, se cambian algunos derechos de los grupos forms users. Si desea que cualquiera de los usuarios pueda cargar XDP y Forms adaptable que contengan scripts o utilizar un editor de código, debe agregarlos al grupo forms-power-users. Del mismo modo, los autores de plantillas ya no pueden utilizar el editor de código del Editor de reglas. Para que los usuarios puedan utilizar un editor de código, agréguelos al grupo af-template-script-writers. Para obtener instrucciones sobre cómo agregar usuarios a grupos, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).

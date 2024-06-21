@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 59%
@@ -19,7 +20,7 @@ ht-degree: 59%
 
 En una configuración de implementación del portal centrado en formularios, el desarrollo de los formularios y del portal son dos actividades distintas. Mientras los diseñadores de formularios diseñan y almacenan formularios en un repositorio, los desarrolladores web crean una aplicación web para enumerar formularios y controlar los envíos. Los formularios se copian en el nivel web, ya que no hay ninguna comunicación entre el repositorio de formularios y la aplicación web.
 
-Esto suele provocar problemas con la administración de los retrasos de configuración y producción. Por ejemplo, si hay una versión más reciente de un formulario disponible en el repositorio, el diseñador de formularios reemplaza el formulario en el nivel web, modifica la aplicación web y vuelve a implementar el formulario en el sitio público. Volver a implementar la aplicación web puede causar cierto tiempo de inactividad en el servidor. Dado que el tiempo de inactividad del servidor es una actividad planificada, los cambios no pueden ser enviados al sitio público inmediatamente.
+Esto suele provocar problemas con la administración de los retrasos de configuración y producción. Por ejemplo, si hay una versión más reciente de un formulario disponible en el repositorio, el formulario Designer reemplazará el formulario en el nivel web, modificará la aplicación web y volverá a implementar el formulario en el sitio público. Volver a implementar la aplicación web puede causar cierto tiempo de inactividad en el servidor. Dado que el tiempo de inactividad del servidor es una actividad planificada, los cambios no pueden ser enviados al sitio público inmediatamente.
 
 El portal de formularios reduce los gastos generales de administración y los retrasos en la producción. Proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager AEM ().
 
@@ -29,7 +30,7 @@ Para obtener más información sobre el portal de Forms y sus funciones, consult
 
 Navegue hasta la página publicada del portal de Forms. Para obtener más información sobre la creación de una página de portal de Forms, consulte [Creación de una página de portal de Forms](../../forms/using/creating-form-portal-page.md).
 
-El componente Buscar y listar del portal de Forms AEM muestra los formularios disponibles en la instancia de publicación del servidor de la. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
+El componente Buscar y listar del portal de Forms muestra los formularios disponibles en la instancia de Publish AEM del servidor de. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
 
 ![Página de ejemplo del portal de formularios ](assets/forms-portal-page.png)
 

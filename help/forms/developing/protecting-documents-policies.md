@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '15394'
 ht-degree: 0%
@@ -261,7 +261,7 @@ Cree una directiva mediante la API de seguridad de los documentos (Java):
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte lo siguiente:
 
-* &quot;Inicio rápido (modo SOAP): Creación de una directiva con la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Creación de una directiva mediante la API de Java&quot;
 
 ### Creación de una directiva mediante la API de servicio web {#create-a-policy-using-the-web-service-api}
 
@@ -401,7 +401,7 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
 
 **Ejemplos de código**
 
-Para obtener ejemplos de código utilizando el servicio Document Security, consulte Inicio rápido (modo SOAP): Modificación de una directiva mediante la sección API de Java.
+SOAP Para obtener ejemplos de código utilizando el servicio Document Security, consulte la sección Inicio rápido (modo de): Modificación de una directiva mediante la API de Java.
 
 ### Modificar directivas existentes mediante la API de servicio web {#modify-existing-policies-using-the-web-service-api}
 
@@ -504,7 +504,7 @@ Eliminar una directiva mediante la API de Document Security (Java):
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* &quot;Inicio rápido (modo SOAP): Eliminación de una directiva mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Eliminación de una directiva mediante la API de Java&quot;
 
 ### Eliminar directivas mediante la API de servicio web {#delete-policies-using-the-web-service-api}
 
@@ -640,7 +640,7 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
 * &quot;Inicio rápido (modo EJB): Aplicar una directiva a un documento de PDF mediante la API de Java&quot;
-* &quot;Inicio rápido (modo SOAP): Aplicar una directiva a un documento de PDF mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Aplicar una directiva a un documento de PDF mediante la API de Java&quot;
 
 **Consulte también**
 
@@ -791,7 +791,7 @@ Elimine una directiva de un documento de PDF protegido por una directiva mediant
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* &quot;Inicio rápido (modo SOAP): Eliminación de una directiva de un documento de PDF mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Eliminación de una directiva de un documento de PDF mediante la API de Java&quot;
 
 ### Eliminación de una directiva mediante la API de servicio web {#remove-a-policy-using-the-web-service-api}
 
@@ -934,7 +934,7 @@ Revocar acceso a un documento de PDF protegido por una directiva mediante la API
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* &quot;Inicio rápido (modo SOAP): Revocar un documento mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Revocar un documento mediante la API de Java&quot;
 
 ### Revocar acceso a documentos mediante la API de servicio web {#revoke-access-to-documents-using-the-web-service-api}
 
@@ -1066,7 +1066,7 @@ Restablezca el acceso a un documento revocado mediante la API de seguridad de lo
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* &quot;Inicio rápido (modo SOAP): Restablecer el acceso a un documento revocado mediante la API de servicio web&quot;
+* SOAP &quot;Inicio rápido (modo de): Restablecimiento del acceso a un documento revocado mediante la API del servicio web&quot;
 
 ### Restablecer el acceso a los documentos revocados mediante la API del servicio web {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1200,7 +1200,7 @@ Inspect crea un documento de PDF protegido por políticas mediante la API del se
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* &quot;Inicio rápido (modo SOAP): Inspección de documentos de PDF protegidos por directivas mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Inspección de documentos de PDF protegidos por directivas mediante la API de Java&quot;
 
 ### Documentos de PDF protegidos por directivas de Inspect que utilizan la API de servicio web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1420,7 +1420,7 @@ Crear una marca de agua mediante la API de seguridad de los documentos (Java):
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* &quot;Inicio rápido (modo SOAP): Creación de una marca de agua mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Creación de una marca de agua mediante la API de Java&quot;
 
 ### Creación de marcas de agua mediante la API de servicio web {#create-watermarks-using-the-web-service-api}
 
@@ -1567,7 +1567,7 @@ Modifique una marca de agua mediante la API de seguridad de los documentos (Java
 
 **Ejemplos de código**
 
-Para obtener ejemplos de código utilizando el servicio Document Security, consulte Inicio rápido (modo SOAP): Modificación de una marca de agua mediante la sección API de Java.
+SOAP Para obtener ejemplos de código utilizando el servicio Document Security, consulte la sección Inicio rápido (modo de): Modificación de una marca de agua mediante la API de Java.
 
 ### Modificación de marcas de agua mediante la API de servicio web {#modify-watermarks-using-the-web-service-api}
 
@@ -1695,7 +1695,7 @@ Busque eventos mediante la API de Rights Management (Java):
 
 Para obtener ejemplos de código utilizando el servicio Rights Management, consulte los siguientes tutoriales rápidos:
 
-* &quot;Inicio rápido (SOAP): Búsqueda de eventos mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (): Búsqueda de eventos mediante la API de Java&quot;
 
 ### Búsqueda de eventos mediante la API de servicio web {#search-for-events-using-the-web-service-api}
 
@@ -2039,7 +2039,7 @@ Aplicar una directiva a un documento de Word mediante la API de Document Securit
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte el siguiente Inicio rápido:
 
-* &quot;Inicio rápido (modo SOAP): Aplicar una directiva a un documento de Word mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Aplicar una directiva a un documento de Word mediante la API de Java&quot;
 
 ### Aplicar una directiva a un documento de Word mediante la API de servicio web {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2183,7 +2183,7 @@ Quitar una directiva de un documento de Word protegido por una directiva mediant
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte el siguiente Inicio rápido:
 
-* &quot;Inicio rápido (modo SOAP): Quitar una directiva de un documento de Word mediante la API de Java&quot;
+* SOAP &quot;Inicio rápido (modo de): Quitar una directiva de un documento de Word mediante la API de Java&quot;
 
 ### Quitar una directiva de un documento de Word mediante la API de servicio web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 

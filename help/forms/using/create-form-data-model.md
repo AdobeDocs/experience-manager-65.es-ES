@@ -6,8 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 solution: Experience Manager, Experience Manager Forms
+feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 70%
@@ -22,7 +23,7 @@ Este tutorial es un paso en la serie [Crear su primer formulario adaptable](../.
 
 ## Información sobre el tutorial {#about-the-tutorial}
 
-AEM [!DNL Forms] AEM El módulo de integración de datos de le permite crear un modelo de datos de formulario a partir de fuentes de datos backend dispares, como un perfil de usuario, servicios web RESTful, servicios web basados en SOAP, servicios OData y bases de datos relacionales, entre otros. Puede configurar objetos y servicios del modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto del modelo de datos.
+AEM [!DNL Forms] AEM SOAP El módulo de integración de datos de le permite crear un modelo de datos de formulario a partir de fuentes de datos backend dispares, como un perfil de usuario, servicios web RESTful, servicios web basados en el uso de, servicios OData y bases de datos relacionales. Puede configurar objetos y servicios del modelo de datos en un modelo de datos de formulario y asociarlo a un formulario adaptable. Los campos de formularios adaptables están enlazados a las propiedades del objeto del modelo de datos. Los servicios permiten rellenar previamente el formulario adaptable y escribir los datos de formulario enviados en el objeto del modelo de datos.
 
 Para obtener más información sobre la integración y el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](../../forms/using/data-integration.md).
 

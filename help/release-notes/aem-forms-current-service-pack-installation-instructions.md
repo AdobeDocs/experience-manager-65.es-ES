@@ -3,8 +3,9 @@ title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación del Service Pack de AEM Forms para el entorno OSGi y JEE
 solution: Experience Manager
 feature: Release Information
-role: User, Admin, Architect, Developer
-source-git-commit: c3fd2b1198c7c856d6d68e9b9cfc711c941e657c
+role: User,Admin,Architect,Developer
+exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
+source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 9%

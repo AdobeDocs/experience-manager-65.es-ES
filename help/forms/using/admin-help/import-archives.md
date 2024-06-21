@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 0%
@@ -42,7 +43,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
    * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información sobre la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información sobre la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para agregar un extremo de EJB, haga clic en Agregar EJB y especifique un nombre y una descripción para el extremo.
-   * Para agregar un extremo SOAP, haga clic en Agregar SOAP y especifique un nombre y una descripción para el extremo.
+   * SOAP SOAP Para agregar un punto final de, haga clic en Agregar y especifique un nombre y una descripción para el punto final.
    * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración del extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para agregar un extremo REST, haga clic en Agregar REST y especifique un nombre y una descripción para el extremo. Tenga en cuenta la URL de invocación de REST que se muestra en la página Agregar extremo de REST.
    * Para quitar un extremo, seleccione la casilla que hay junto a él y haga clic en Quitar.
@@ -109,7 +110,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
    * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información sobre la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información sobre la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para agregar un extremo de EJB, haga clic en Agregar EJB y especifique un nombre y una descripción para el extremo.
-   * Para agregar un extremo SOAP, haga clic en Agregar SOAP y especifique un nombre y una descripción para el extremo.
+   * SOAP SOAP Para agregar un punto final de, haga clic en Agregar y especifique un nombre y una descripción para el punto final.
    * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración del extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para agregar un extremo REST, haga clic en Agregar REST y especifique un nombre y una descripción para el extremo. Tenga en cuenta la URL de invocación de REST que se muestra en la página Agregar extremo de REST.
    * Para quitar un extremo, seleccione la casilla que hay junto a él y haga clic en Quitar.

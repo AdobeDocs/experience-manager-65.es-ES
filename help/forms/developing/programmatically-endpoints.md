@@ -1,6 +1,6 @@
 ---
 title: Administración programática de puntos de conexión
-description: Utilice el servicio Registro de extremos para agregar extremos de EJB, agregar extremos de SOAP, agregar extremos de carpetas inspeccionadas, agregar extremos de correo electrónico, agregar extremos de Remoting, agregar extremos de Task Manager, modificar extremos, quitar extremos y recuperar información del conector de extremo.
+description: SOAP Utilice el servicio Registro de extremos para agregar extremos de EJB, agregar extremos de carpetas inspeccionadas, agregar extremos de correo electrónico, agregar extremos remotos, agregar extremos de Task Manager, modificar extremos, quitar extremos y recuperar información del conector de extremos.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '10800'
 ht-degree: 1%
@@ -32,7 +32,7 @@ El servicio Registro de extremos proporciona la capacidad de administrar los ext
 
 >[!NOTE]
 >
->AEM Los puntos de conexión remotos SOAP, EJB y (obsoletos para formularios de en JEE) se crean automáticamente para cada servicio activado. Los extremos SOAP y EJB habilitan SOAP y EJB para todas las operaciones de servicio.
+>SOAP AEM Los puntos de conexión remotos de EJB, EJB y (obsoleto para formularios de en JEE) se crean automáticamente para cada servicio activado. SOAP SOAP Los extremos de EJB y de la habilitan y EJB para todas las operaciones de servicio.
 
 Un extremo remoto permite a los clientes de Flex invocar operaciones en el servicio AEM Forms al que se agrega el extremo. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio correspondiente.
 
@@ -43,7 +43,7 @@ Puede organizar los extremos de TaskManager en grupos llamados *categorías*. Es
 Puede realizar estas tareas mediante el servicio Registro de extremos:
 
 * Agregar extremos de EJB. (Consulte [Agregar extremos de EJB](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Agregar extremos SOAP. (Consulte [Adición de extremos SOAP](programmatically-endpoints.md#adding-soap-endpoints).)
+* SOAP Agregar puntos finales de la. (Consulte [SOAP Adición de extremos de](programmatically-endpoints.md#adding-soap-endpoints).)
 * Agregar extremos de carpeta inspeccionada (consulte ) [Adición de extremos de carpeta inspeccionada](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 * Agregar extremos de correo electrónico. (Consulte [Añadir extremos de correo electrónico](programmatically-endpoints.md#adding-email-endpoints).)
 * Agregar extremos remotos. (Consulte [Agregar extremos remotos](programmatically-endpoints.md#adding-remoting-endpoints).)
@@ -135,7 +135,7 @@ Agregar un extremo de EJB mediante la API de Java:
    * Especifique la descripción del extremo invocando el `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
    * Especifique el nombre del extremo invocando el `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifica el nombre.
    * Especifique el servicio al que pertenece el extremo invocando el `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que se invoca invocando el `CreateEndpointInfo` del objeto `setOperationName` y pasar un valor de cadena que especifique el nombre de la operación. Para los extremos SOAP y EJB, especifique un carácter comodín ( `*`), que implica todas las operaciones.
+   * Especifique la operación que se invoca invocando el `CreateEndpointInfo` del objeto `setOperationName` y pasar un valor de cadena que especifique el nombre de la operación. SOAP Para los extremos de EJB y de los campos de datos, especifique un carácter comodín ( `*`), que implica todas las operaciones.
 
 1. Cree un extremo de EJB.
 
@@ -155,26 +155,26 @@ Agregar un extremo de EJB mediante la API de Java:
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adición de extremos SOAP {#adding-soap-endpoints}
+## SOAP Adición de extremos de {#adding-soap-endpoints}
 
-Puede agregar mediante programación un extremo SOAP a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo SOAP, habilita una aplicación cliente para invocar el servicio mediante el modo SOAP. Es decir, al establecer las propiedades de conexión necesarias para invocar AEM Forms, puede seleccionar el modo SOAP.
-
->[!NOTE]
->
->No puede agregar un extremo SOAP mediante servicios web.
+SOAP Mediante programación, puede agregar un extremo de a un servicio mediante la API de Java de AEM Forms. SOAP SOAP Al agregar un punto final de, habilita una aplicación cliente para invocar el servicio mediante el modo de. Es decir, al establecer las propiedades de conexión necesarias para invocar AEM Forms SOAP, puede seleccionar el modo de.
 
 >[!NOTE]
 >
->Normalmente, se agrega un extremo SOAP a un servicio de forma predeterminada. Sin embargo, se puede agregar un extremo SOAP a un proceso que se implementa mediante programación o cuando se quita un extremo SOAP y debe agregarse de nuevo.
+>SOAP No se puede agregar un extremo de mediante los servicios web.
+
+>[!NOTE]
+>
+>SOAP SOAP SOAP Normalmente, se agrega un punto de conexión de la a un servicio de forma predeterminada. Sin embargo, se puede agregar un punto de conexión de la distribución a un proceso que se implementa mediante programación o cuando se quita un punto de conexión de la distribución de la distribución y debe agregarse de nuevo.
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
-Para agregar un extremo SOAP a un servicio, realice las siguientes tareas:
+SOAP Para agregar un punto final de a un servicio, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Crear un `EndpointRegistryClient` objeto.
-1. Establezca atributos de extremo SOAP.
-1. Cree un extremo SOAP.
+1. SOAP Establezca atributos de extremo de la.
+1. SOAP Cree un punto final de.
 1. Habilite el extremo.
 
 **Incluir archivos de proyecto**
@@ -188,25 +188,25 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
 
-Estos archivos JAR son necesarios para crear un extremo SOAP. Sin embargo, necesita archivos JAR adicionales si utiliza el extremo SOAP para invocar el servicio. Para obtener información sobre los archivos JAR de AEM Forms, consulte [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+SOAP Estos archivos JAR son necesarios para crear un punto final de. SOAP Sin embargo, necesita archivos JAR adicionales si utiliza el extremo de la para invocar el servicio. Para obtener información sobre los archivos JAR de AEM Forms, consulte [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Crear un objeto EndpointRegistry Client**
 
-Para agregar mediante programación un extremo SOAP a un servicio, debe crear un `EndpointRegistryClient` objeto.
+SOAP Para agregar mediante programación un punto final de la a un servicio, debe crear un `EndpointRegistryClient` objeto.
 
-**Establecer atributos de extremo SOAP**
+**SOAP Definir atributos de extremo**
 
-Para agregar un extremo SOAP a un servicio, especifique los siguientes valores:
+SOAP Para agregar un extremo de la a un servicio, especifique los siguientes valores:
 
-* **Valor del identificador del conector**: especifica el tipo de extremo que se va a crear. Para crear un extremo SOAP, especifique `SOAP`.
+* **Valor del identificador del conector**: especifica el tipo de extremo que se va a crear. SOAP Para crear un punto final de, especifique `SOAP`.
 * **Descripción**: especifica la descripción del extremo.
 * **Nombre**: especifica el nombre del extremo.
 * **Valor del identificador del servicio**: especifica el servicio al que pertenece el extremo.
-* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. Al crear un extremo SOAP, especifique un carácter comodín ( `*`). Sin embargo, si desea especificar una operación específica en lugar de invocar todas las operaciones de servicio, especifique el nombre de la operación en lugar de utilizar el carácter comodín ( `*`).
+* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. SOAP Al crear un punto final de, especifique un carácter comodín ( `*`). Sin embargo, si desea especificar una operación específica en lugar de invocar todas las operaciones de servicio, especifique el nombre de la operación en lugar de utilizar el carácter comodín ( `*`).
 
-**Crear un extremo SOAP**
+**SOAP Crear un punto final de**
 
-Después de establecer los atributos de extremo SOAP, puede crear un extremo SOAP.
+SOAP SOAP Después de establecer los atributos del extremo de la, puede crear un extremo de la misma.
 
 **Habilitar el extremo**
 
@@ -214,15 +214,15 @@ Después de crear un extremo, debe habilitarlo. Cuando el punto de conexión est
 
 **Consulte también**
 
-[Añadir un extremo SOAP mediante la API de Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[SOAP Añadir un extremo de la mediante la API de Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Añadir un extremo SOAP mediante la API de Java {#add-a-soap-endpoint-using-the-java-api}
+### SOAP Añadir un extremo de la mediante la API de Java {#add-a-soap-endpoint-using-the-java-api}
 
-Agregar un extremo SOAP a un servicio mediante la API de Java:
+SOAP Añadir un extremo de la a un servicio mediante la API de Java:
 
 1. Incluir archivos de proyecto.
 
@@ -233,18 +233,18 @@ Agregar un extremo SOAP a un servicio mediante la API de Java:
    * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
    * Crear un `EndpointRegistryClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
 
-1. Establezca atributos de extremo SOAP.
+1. SOAP Establezca atributos de extremo de la.
 
    * Crear un `CreateEndpointInfo` mediante su constructor.
    * Especifique el valor del identificador del conector invocando el `CreateEndpointInfo` del objeto `setConnectorId` método y pasar el valor de cadena `SOAP`.
    * Especifique la descripción del extremo invocando el `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
    * Especifique el nombre del extremo invocando el `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifica el nombre.
    * Especifique el servicio al que pertenece el extremo invocando el `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que se invoca invocando el `CreateEndpointInfo` del objeto `setOperationName` y pasando un valor de cadena que especifica el nombre de la operación. Para los extremos SOAP y EJB, especifique un carácter comodín ( `*`), que implica todas las operaciones.
+   * Especifique la operación que se invoca invocando el `CreateEndpointInfo` del objeto `setOperationName` y pasando un valor de cadena que especifica el nombre de la operación. SOAP Para los extremos de EJB y de los campos de datos, especifique un carácter comodín ( `*`), que implica todas las operaciones.
 
-1. Cree un extremo SOAP.
+1. SOAP Cree un punto final de.
 
-   Cree el extremo invocando el `EndpointRegistryClient` del objeto `createEndpoint` y pasando el `CreateEndpointInfo` objeto. Este método devuelve un `Endpoint` que representa el nuevo extremo SOAP.
+   Cree el extremo invocando el `EndpointRegistryClient` del objeto `createEndpoint` y pasando el `CreateEndpointInfo` objeto. Este método devuelve un `Endpoint` SOAP que representa el nuevo extremo de la.
 
 1. Habilite el extremo.
 
@@ -254,7 +254,7 @@ Agregar un extremo SOAP a un servicio mediante la API de Java:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[Inicio rápido: Añadir un punto final SOAP mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[SOAP Inicio rápido: Añadir un extremo de la mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1083,7 +1083,7 @@ Modifique un extremo mediante la API de Java:
 
 ## Eliminación de extremos {#removing-endpoints}
 
-Puede quitar un extremo de un servicio mediante programación utilizando la API de Java de AEM Forms. Después de quitar un extremo, el servicio no se puede invocar mediante el método de invocación que habilita el extremo. Por ejemplo, si quita un extremo SOAP de un servicio, no puede invocar el servicio mediante el modo SOAP.
+Puede quitar un extremo de un servicio mediante programación utilizando la API de Java de AEM Forms. Después de quitar un extremo, el servicio no se puede invocar mediante el método de invocación que habilita el extremo. SOAP SOAP Por ejemplo, si quita un extremo de la de un servicio, no puede invocarlo mediante el modo de.
 
 Para mostrar cómo quitar un extremo de un servicio, esta sección quita un extremo EJB de un servicio denominado *EncryptDocument*.
 
@@ -1214,7 +1214,7 @@ Para recuperar mediante programación la información del conector de extremo, c
 Especifique el tipo de conector desde el que desea recuperar la información. Existen los siguientes tipos de conectores:
 
 * **EJB**: permite que una aplicación cliente invoque un servicio mediante el modo EJB.
-* **JABÓN**: permite que una aplicación cliente invoque un servicio mediante el modo SOAP.
+* **JABÓN** SOAP : permite que una aplicación cliente invoque un servicio mediante el modo de.
 * **Carpeta inspeccionada**: permite que las carpetas inspeccionadas invoquen un servicio.
 * **Correo electrónico**: permite que los mensajes de correo electrónico invoquen un servicio.
 * **Remoting**: permite que una aplicación cliente de Flex invoque un servicio.

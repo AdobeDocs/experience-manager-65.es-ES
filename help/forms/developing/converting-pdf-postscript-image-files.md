@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2774'
 ht-degree: 2%
@@ -138,7 +138,7 @@ Conversión de un documento de PDF a PostScript mediante la API del servicio Con
 
 [Resumen de los pasos](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Conversión de un documento de PDF a PostScript mediante la API de Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión de un documento de PDF a PostScript mediante la API de Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -251,7 +251,7 @@ Después de crear el cliente de servicios y establecer las opciones en tiempo de
 
 Puede recuperar archivos de imagen de un objeto de colección devuelto por el servicio Convert PDF. Cada elemento de la colección es un `com.adobe.idp.Document` instancia de (o un `BLOB` ejemplo, si utiliza servicios web) que puede guardar como archivo de imagen, como un archivo de JPG.
 
-El formato del archivo de imagen depende de la variable `ImageConvertFormat` en tiempo de ejecución. Es decir, si establece la variable `ImageConvertFormat` opción de tiempo de ejecución para `ImageConvertFormat.JPEG`, puede guardar archivos de imagen como archivos de JPG.
+El formato del archivo de imagen depende de la variable `ImageConvertFormat` en tiempo de ejecución. Es decir, si establece la variable `ImageConvertFormat` opción de tiempo de ejecución para `ImageConvertFormat.JPEG`JPG , puede guardar archivos de imagen como archivos de.
 
 **Consulte también**
 
@@ -303,7 +303,7 @@ Conversión de un documento de PDF a un formato de imagen mediante la API del se
 
 **Consulte también**
 
-[Inicio rápido (modo SOAP): Conversión de un documento de PDF a archivos de JPEG mediante la API de Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión de un documento de PDF a archivos de JPEG mediante la API de Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### Conversión de un documento de PDF en archivos de imagen mediante la API de servicio web {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 

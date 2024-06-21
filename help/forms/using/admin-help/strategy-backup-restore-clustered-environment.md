@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 98c96349-f253-475f-b646-352269814a38
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1396'
 ht-degree: 1%
@@ -180,10 +181,10 @@ El nodo del editor no tiene ninguna relación principal-secundaria en un entorno
 ### Recuperación de un solo nodo de editor {#recover-a-single-publisher-node}
 
 1. Cierre el nodo que debe recuperarse y no realice ninguna actividad de publicación hasta que el nodo vuelva a estar activo.
-1. Restaure el nodo Publicar mediante [Restauración de la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure el nodo de Publish mediante [Restauración de la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperar un clúster {#recover-a-cluster}
 
 1. Cierre el clúster.
-1. Restaure el nodo Publicar mediante [Restauración de la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure el nodo de Publish mediante [Restauración de la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Inicie el nodo principal seguido del nodo secundario del clúster de creación.

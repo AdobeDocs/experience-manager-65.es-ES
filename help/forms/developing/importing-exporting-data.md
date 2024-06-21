@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 El servicio de integración de datos de formulario puede importar datos en un formulario de PDF y exportarlos desde un formulario de PDF. Las operaciones de importación y exportación admiten dos tipos de PDF forms:
 
 * Un formulario de Acrobat (creado en Acrobat) es un documento de PDF que contiene campos de formulario.
-* Un formulario XML de Adobe (creado en Designer) es un documento de PDF que se ajusta a la arquitectura XML Forms de Adobe XML (XFA).
+* Un formulario XML de Adobe (creado en Designer) es un documento de PDF que se ajusta a la arquitectura de Forms XML de Adobe XML (XFA).
 
 Los datos de formulario pueden existir en uno de los siguientes formatos según el tipo de formulario del PDF:
 
 * Un archivo XFDF, que es una versión XML del formato de datos del formulario de Acrobat.
-* Un archivo XDP, que es un archivo XML que contiene definiciones de campos de formulario. También puede contener datos de campos de formulario y un archivo de PDF incrustado. Un archivo XDP generado por Designer solo se puede utilizar si lleva un documento PDF incrustado con codificación base 64.
+* Un archivo XDP, que es un archivo XML que contiene definiciones de campos de formulario. También puede contener datos de campos de formulario y un archivo de PDF incrustado. Un archivo XDP generado por Designer solo se puede utilizar si lleva un documento de PDF incrustado con codificación base 64.
 
 Puede realizar estas tareas mediante el servicio de integración de datos de formulario:
 
@@ -44,7 +44,7 @@ Puede realizar estas tareas mediante el servicio de integración de datos de for
 
 Puede importar datos de formulario en PDF forms interactivos mediante el servicio de integración de datos de formulario. Un formulario PDF interactivo es un documento de PDF que contiene uno o más campos para recopilar información de un usuario o para mostrar información personalizada. El servicio de integración de datos de formulario no admite cálculos de formulario, validación ni scripts.
 
-Para importar datos en un formulario creado en Designer, debe hacer referencia a un origen de datos XML XDP válido. Veamos el siguiente ejemplo de formulario de solicitud de hipoteca.
+Para importar datos en un formulario creado en Designer, debe hacer referencia a una fuente de datos XML XDP válida. Veamos el siguiente ejemplo de formulario de solicitud de hipoteca.
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
@@ -185,7 +185,7 @@ Importar datos de formulario mediante la API de integración de datos de formula
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Importación de datos de formulario mediante la API de Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[SOAP Inicio rápido (modo de): Importación de datos de formulario mediante la API de Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -290,7 +290,7 @@ Para poder importar datos mediante programación en una API de cliente de formul
 
 **Referencia a un formulario de PDF**
 
-Para exportar datos desde un formulario de PDF, debe hacer referencia al formulario de PDF que se creó en Designer o Acrobat y que contiene datos de formulario. Si intenta exportar datos desde un formulario PDF vacío, obtendrá un esquema XML vacío.
+Para exportar datos desde un formulario de PDF, debe hacer referencia al formulario de PDF creado en Designer o Acrobat y que contiene datos de formulario. Si intenta exportar datos desde un formulario PDF vacío, obtendrá un esquema XML vacío.
 
 **Exportación de datos desde el formulario de PDF**
 
@@ -345,7 +345,7 @@ Exportar datos de formulario mediante la API de integración de datos de formula
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Exportación de datos de formulario mediante la API de Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[SOAP Inicio rápido (modo de): Exportación de datos de formulario mediante la API de Java](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

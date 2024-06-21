@@ -8,7 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7848'
 ht-degree: 0%
@@ -187,7 +188,7 @@ Convierta un documento de Microsoft Word en un documento de PDF mediante la API 
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Conversión de un documento de Microsoft Word en un documento de PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión de un documento de Microsoft Word en un documento de PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -342,9 +343,9 @@ Conversión de un documento de HTML en un documento de PDF mediante la API de ge
 
 [Conversión de Documentos de HTML en Documentos de PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[Inicio rápido (modo SOAP): Conversión del contenido del HTML a un documento del PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión del contenido del HTML a un documento del PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Conversión del contenido del HTML a un documento del PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión del contenido del HTML a un documento del PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -495,7 +496,7 @@ Conversión de un documento de PDF en un archivo RTF mediante la API Generate PD
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
-[Inicio rápido (modo SOAP): Conversión del contenido del HTML a un documento del PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión del contenido del HTML a un documento del PDF mediante la API de Java](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

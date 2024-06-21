@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '16917'
 ht-degree: 3%
@@ -294,7 +294,7 @@ Recupere los nombres de los campos de firma mediante la API de firma (Java):
 
 [Recuperando nombres de campos de firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[Inicio rápido (modo SOAP): Recuperación de nombres de campos de firma mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[SOAP Inicio rápido (modo de): Recuperación de nombres de campos de firma mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -743,7 +743,7 @@ Firmar digitalmente un documento de PDF mediante la API de firma (Java):
 
 [Firma digital de documentos de PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Inicio rápido (modo SOAP): Firma digital de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Firma digital de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -963,7 +963,7 @@ Firme digitalmente un formulario interactivo con Forms y la API de firma (Java):
 
 [Firma digital de Forms interactivo](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
-[Inicio rápido (modo SOAP): Firma digital de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Firma digital de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1207,7 +1207,7 @@ Certificar un documento de PDF mediante la API de firma (Java):
 
 [Certificar documentos de PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[Inicio rápido (modo SOAP): Certificación de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Certificación de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1444,7 +1444,7 @@ Verificar una firma digital mediante la API del servicio de firma (Java):
 
 [Verificar firmas digitales](#verify-digital-signatures-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Verificación de una firma digital mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
+[SOAP Inicio rápido (modo de): Verificación de una firma digital mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1657,7 +1657,7 @@ Compruebe varias firmas digitales mediante la API del servicio de firma (Java):
 
 [Verificar varias firmas digitales](#verifying-multiple-digital-signatures)
 
-[Inicio rápido (modo SOAP): Verificación de varias firmas digitales mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
+[SOAP Inicio rápido (modo de): Verificación de varias firmas digitales mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1823,7 +1823,7 @@ Quitar una firma digital mediante la API de firma (Java):
 
 [Quitar firmas digitales](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
-[Inicio rápido (modo SOAP): Quitar una firma digital mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
+[SOAP Inicio rápido (modo de): Quitar una firma digital mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

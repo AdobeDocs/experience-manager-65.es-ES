@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1611'
 ht-degree: 1%
@@ -93,7 +94,7 @@ La configuración de la **Configuración de caché global** afecta a todos los t
 
 **Tamaño máximo de documento en caché (KB):** Tamaño máximo, en kilobytes, de un diseño de formulario u otro recurso que se puede almacenar en cualquier caché en memoria. Se trata de una configuración global que se aplica a todas las cachés en memoria. Si un recurso es mayor que este valor, no se almacena en caché. El valor predeterminado es 1024 kilobytes. Esta configuración no afecta a la caché del disco.
 
-**Caché de procesamiento de formularios habilitada:** De forma predeterminada, esta opción está seleccionada, lo que significa que los formularios procesados se almacenan en caché para su recuperación posterior. Esta configuración mejora el rendimiento porque el servicio Forms solo debe procesar un formulario concreto una vez y, a continuación, utiliza la versión en caché. Esta opción funciona con la propiedad de almacenamiento en caché del diseño de formulario. Para obtener información sobre la configuración de este valor en el diseño de formulario, consulte Ayuda de Designer.
+**Caché de procesamiento de formularios habilitada:** De forma predeterminada, esta opción está seleccionada, lo que significa que los formularios procesados se almacenan en caché para su recuperación posterior. Esta configuración mejora el rendimiento porque el servicio Forms solo debe procesar un formulario concreto una vez y, a continuación, utiliza la versión en caché. Esta opción funciona con la propiedad de almacenamiento en caché del diseño de formulario. Para obtener información sobre la configuración de este valor en el diseño de formulario, consulte la Ayuda de Designer.
 
 ### Almacenar en caché diseños de formulario {#caching-form-designs}
 

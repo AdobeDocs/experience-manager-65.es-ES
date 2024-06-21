@@ -7,8 +7,9 @@ topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 54%
@@ -61,7 +62,7 @@ Si está configurando un destinatario por primera vez, haga clic en **Configurar
 1. Haga clic en **Configuración de AEM Forms Target**.
 1. Seleccione un **Marco de trabajo de Target**.
 1. En el **URL de destino** , especifique todas las direcciones URL donde se ejecutan las pruebas A/B. Por ejemplo, https://&lt;*hostname*>:&lt;*puerto*>/ para AEM Forms Server en OSGi o https://&lt;*hostname*>:&lt;*puerto*>/lc/ para AEM Forms Server en JEE.
-Tenga en cuenta que desea configurar una URL de destino para una instancia de publicación y que los clientes pueden acceder a ella mediante el nombre del host o la dirección IP. En este caso, debe configurar como direcciones URL de destino mediante el nombre de host y la dirección IP. Si configura solo una de las direcciones URL, la prueba A/B no se ejecuta para los clientes que provienen de la otra dirección URL. Haga clic en **+** para especificar varias direcciones URL.
+Tenga en cuenta que desea configurar una URL de destino para una instancia de Publish y que los clientes pueden acceder a ella mediante el nombre del host o la dirección IP. En este caso, debe configurar como direcciones URL de destino mediante el nombre de host y la dirección IP. Si configura solo una de las direcciones URL, la prueba A/B no se ejecuta para los clientes que provienen de la otra dirección URL. Haga clic en **+** para especificar varias direcciones URL.
 
 1. Haga clic en **Guardar**.
 

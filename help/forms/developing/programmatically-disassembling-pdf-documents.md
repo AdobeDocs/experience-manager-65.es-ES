@@ -8,7 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 2%
@@ -167,7 +168,7 @@ Desmontar un documento de PDF mediante la API del servicio del ensamblador (Java
 
 [Desmontaje programático de documentos PDF](#programmatically-disassembling-pdf-documents)
 
-[Inicio rápido (modo SOAP): Desmontaje de un documento de PDF mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Desmontaje de un documento de PDF mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

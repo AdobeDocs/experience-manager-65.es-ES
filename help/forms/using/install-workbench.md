@@ -6,7 +6,8 @@ topic-tags: author
 role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Workbench, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 65%
@@ -103,8 +104,8 @@ Consulte la lista completa de plataformas compatibles con Workbench en [Platafor
 
 ## Consideraciones sobre la instalación de Designer {#designer-installation-considerations}
 
-De forma predeterminada, la instalación de Workbench incluye únicamente la versión correspondiente de Designer en inglés. Si la aplicación de instalación de Workbench detecta una versión existente de Designer en el equipo, es posible que la instalación termine y se le pida que elimine la versión actual de Designer antes de poder continuar.
-La siguiente tabla contiene una lista completa de los posibles escenarios de instalación de Designer que puede encontrar y de las acciones que debe realizar al instalar Workbench.
+De forma predeterminada, la instalación de Workbench incluye únicamente la versión correspondiente de Designer en inglés. Si la aplicación de instalación de Workbench detecta una versión existente de Designer en el equipo, es posible que la instalación termine y se le pida que elimine la versión actual de Designer para poder continuar.
+La siguiente tabla contiene una lista completa de los posibles escenarios de instalación de Designer que puede encontrar y las acciones que debe realizar al instalar Workbench.
 
 <table>
  <tbody>
@@ -116,7 +117,7 @@ La siguiente tabla contiene una lista completa de los posibles escenarios de ins
    <td><p>Acrobat Pro o Acrobat Pro Extended (incluye Designer)</p> </td>
    <td><p>Ninguna.<br /> 
 La instalación de Workbench detecta una instancia de Designer instalada en el equipo con Acrobat Pro o Acrobat Pro Extended.<br />
-En el mismo sistema pueden coexistir distintas versiones de Designer; por ejemplo, Designer 6.4.x para Workbench 6.4 y Designer 6.5.0.x para Workbench 6.5. No es necesario desinstalar la versión de Designer instalada con Acrobat 10 Pro, Acrobat 10 Pro Extended o superior.
+En el mismo sistema pueden coexistir distintas versiones de Designer, por ejemplo, Designer 6.4.x para Workbench 6.4 y Designer 6.5.0.x para Workbench 6.5. No es necesario desinstalar la versión de Designer instalada con Acrobat 10 Pro, Acrobat 10 Pro Extended o superior.
 <br /></p> </td>
   </tr>
   <tr>

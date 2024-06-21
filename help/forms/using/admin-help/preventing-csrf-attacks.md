@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 2%
@@ -31,11 +32,11 @@ Por ejemplo, imagine un escenario en el que ha iniciado sesión en la consola de
 
 **Referente nulo:** Al abrir una nueva ventana o pestaña del explorador, escribir una dirección y pulsar Intro, el referente es nulo. La solicitud es completamente nueva y no se origina desde una página web principal; por lo tanto, no hay ningún referente para la solicitud. El servidor de Forms puede recibir un referente nulo de:
 
-* solicitudes realizadas en puntos finales SOAP o REST desde Acrobat
-* AEM cualquier cliente de escritorio que realice una solicitud HTTP en un extremo SOAP o REST de formularios de la aplicación de datos de la plataforma de datos de
+* SOAP solicitudes realizadas en puntos finales de REST o de desde Acrobat
+* AEM SOAP cualquier cliente de escritorio que realice una solicitud HTTP en un punto final de formularios de o REST
 * AEM cuando se abre una nueva ventana del explorador y se introduce la dirección URL de cualquier página de inicio de sesión de la aplicación web de formularios en la que se haya creado la aplicación de la aplicación
 
-Permitir un referente nulo en los extremos SOAP y REST. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus recursos asignados correspondientes. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debería ser una excepción de referente nulo. Esta excepción solo es necesaria si habilita el filtrado de GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [AEM Protección y seguridad para formularios de](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+SOAP Permitir un referente nulo en los puntos finales de REST y de. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus recursos asignados correspondientes. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debería ser una excepción de referente nulo. Esta excepción solo es necesaria si habilita el filtrado de GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [AEM Protección y seguridad para formularios de](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
 **Excepción de referente permitido:** Excepción de referente permitido es una sublista de la lista de referentes permitidos, desde los cuales se bloquean las solicitudes. Las excepciones de referencia permitidas son específicas de una aplicación web. Si no se debe permitir que un subconjunto de los referentes permitidos invoque una aplicación web determinada, se pueden realizar listas de bloqueados de los referentes mediante Excepciones de referentes permitidos. Las excepciones de referentes permitidos se especifican en el archivo web.xml de la aplicación. AEM (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en Protección y seguridad para formularios en forma de en la página Ayuda y Tutorials ).
 

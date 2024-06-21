@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Los siguientes valores muestran algunos ejemplos de valores de URI:
 
 Cuando procesa un formulario interactivo, puede definir valores de URI como la dirección URL de destino donde se publican los datos del formulario. La dirección URL de destino se puede definir de una de las siguientes maneras:
 
-* Haga clic en el botón Enviar mientras diseña el diseño de formulario en Designer
+* Haga clic en el botón Enviar mientras diseña el diseño de formulario en Designer.
 * Mediante la API de cliente del servicio de Forms
 
 Si la dirección URL de destino se define dentro del diseño de formulario, no la anule con la API de cliente del servicio de Forms. Es decir, al establecer la dirección URL de destino mediante la API de Forms, se restablece la dirección URL especificada en el diseño de formulario a la especificada mediante la API. Si desea enviar el formulario de PDF a la URL de destino especificada en el diseño de formulario, establezca mediante programación la URL de destino en una cadena vacía.
@@ -159,7 +159,7 @@ Si tiene un formulario que contiene un botón de envío y un botón de cálculo 
 
 **Adjuntar archivos al formulario**
 
-Puede adjuntar archivos a un formulario. Cuando procesa un formulario de PDF con archivos adjuntos, los usuarios pueden recuperar los archivos adjuntos en Acrobat mediante el panel de archivos adjuntos. Puede adjuntar distintos tipos de archivo a un formulario, como un archivo de texto, o a un archivo binario, como un archivo JPG.
+Puede adjuntar archivos a un formulario. Cuando procesa un formulario de PDF con archivos adjuntos, los usuarios pueden recuperar los archivos adjuntos en Acrobat mediante el panel de archivos adjuntos. JPG Puede adjuntar distintos tipos de archivo a un formulario, como un archivo de texto, o a un archivo binario, como un archivo de.
 
 >[!NOTE]
 >

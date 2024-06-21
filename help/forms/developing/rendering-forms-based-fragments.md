@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2189'
 ht-degree: 3%
@@ -148,7 +148,7 @@ Procesar un formulario basado en fragmentos mediante la API de Forms (Java):
 
 [Procesar formularios basados en fragmentos](#rendering-forms-based-on-fragments)
 
-[Inicio rápido (modo SOAP): Procesamiento de un formulario basado en fragmentos mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[SOAP Inicio rápido (modo de): Procesamiento de un formulario basado en fragmentos mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido (SOAP) de API de Java&trade; Registro de extremos
-description: Aprenda a añadir puntos finales como EJB, SOAP, carpeta inspeccionada, punto final de correo electrónico y punto final de Remoting y a editar, eliminar y recuperar puntos finales mediante la API de Java&trade;.
+title: SOAP Registro de extremos Java&trade; API QuickStart()
+description: SOAP Obtenga información sobre cómo añadir puntos finales como EJB,, carpeta inspeccionada, punto final de correo electrónico y punto final de Remoting y editar, eliminar y recuperar puntos finales mediante la API de Java&trade;.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,20 +8,20 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
-# Inicio rápido (SOAP) de la API de Java™ Registro de extremos {#endpoint-registry-java-api-quickstart-soap}
+# SOAP Inicio rápido (inicio) de la API de Java™ Registro de extremos () {#endpoint-registry-java-api-quickstart-soap}
 
-Inicio rápido (SOAP) de la API de Java™ está disponible para el Registro de extremos.
+SOAP Inicio rápido (o inicio rápido) de la API de Java™ está disponible para el Registro de extremos.
 
 [Inicio rápido: Agregar un extremo EJB mediante Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[Inicio rápido: Añadir un punto final SOAP mediante Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[SOAP Inicio rápido: Agregar un extremo de la mediante Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [Inicio rápido: Agregar un punto final de carpeta inspeccionada mediante Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
@@ -37,7 +37,7 @@ Inicio rápido (SOAP) de la API de Java™ está disponible para el Registro de 
 
 [Inicio rápido: Recuperación de información del conector de extremo mediante Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOAP con establecimiento inflexible de tipos y el modo de conexión debe establecerse en.
 
 >[!NOTE]
 >
@@ -146,9 +146,9 @@ El siguiente ejemplo de código Java™ agrega un extremo EJB a un servicio deno
  
 ```
 
-## Inicio rápido: Añadir un punto final SOAP mediante la API de Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## SOAP Inicio rápido: Añadir un extremo de la mediante la API de Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java™ agrega un extremo SOAP a un servicio denominado *MyApplication/EncryptDocument*. (Consulte [Adición de extremos SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+SOAP En el siguiente ejemplo de código Java™ se agrega un extremo de a un servicio denominado *MyApplication/EncryptDocument*. (Consulte [SOAP Adición de extremos de](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*

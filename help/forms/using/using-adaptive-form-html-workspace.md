@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 78%
@@ -19,7 +20,7 @@ ht-degree: 78%
 
 AEM Forms en JEE permite utilizar un formulario adaptable en HTML Workspace.
 
-Como se puede seleccionar un XDP durante el diseño del proceso, se ha agregado la capacidad de examinar desde un formulario adaptable de repositorio de AEM existente. La capacidad permite al Diseñador de procesos configurar un formulario adaptable en el punto de inicio y en la tarea.
+Como se puede seleccionar un XDP durante el diseño del proceso, se ha agregado la capacidad de examinar desde un formulario adaptable de repositorio de AEM existente. La capacidad permite a Process Designer configurar un formulario adaptable en el punto de inicio y en la tarea.
 
 ## Experiencia en diseño de procesos {#process-design-experience}
 
@@ -43,7 +44,7 @@ HTML Workspace proporciona algunos controles adaptables específicos de formular
 
 1. Para enviar un formulario adaptable, utilice el botón **Enviar** o las acciones de ruta disponibles, como en Mobile Forms. Cualquier botón de tipo Enviar del formulario adaptable está oculto.
 
-1. **Visibilidad global de la barra de herramientas del formulario adaptable**: Si el Diseñador de procesos oculta la barra de herramientas global/de nivel superior, la barra de herramientas y los botones no aparecen en los formularios adaptables.
+1. **Visibilidad global de la barra de herramientas del formulario adaptable**: Si Process Designer oculta la barra de herramientas global/de nivel superior, la barra de herramientas y los botones no aparecen en los formularios adaptables.
 
 1. **Controles de navegación de Workspace para formularios adaptables**: Los botones Siguiente/Anterior están disponibles junto con los botones Guardar, Enviar y Acción de ruta para un formulario adaptable en HTML Workspace. Haga clic en los botones Siguiente/Anterior para poder navegar por los paneles de los formularios adaptables en HTML Workspace. Los botones Siguiente/Anterior proporcionan una navegación profunda, similar a los controles de navegación de la vista Móvil de los formularios adaptables.
 

@@ -8,7 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services, Reader Extensions
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '3897'
 ht-degree: 2%
@@ -145,7 +146,7 @@ Aplique derechos de uso a un documento de PDF mediante la API de extensiones de 
 
 [Aplicar derechos de uso a documentos de PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Inicio rápido (modo SOAP):Aplicar derechos de uso mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[SOAP Inicio rápido (modo de):Aplicar derechos de uso mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -301,7 +302,7 @@ Elimine los derechos de uso de un documento de PDF con derechos activados median
 
 [Quitar derechos de uso de documentos de PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
 
-[Inicio rápido (modo SOAP): Eliminación de derechos de uso de un documento de PDF mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Eliminación de derechos de uso de un documento de PDF mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -436,7 +437,7 @@ Recuperar información de credenciales mediante la API de extensiones de Acrobat
 
 [Recuperando información de credenciales](assigning-usage-rights.md#retrieving-credential-information)
 
-[Inicio rápido (modo SOAP): Recuperación de información de credenciales mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[SOAP Inicio rápido (modo de): Recuperación de información de credenciales mediante la API de Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

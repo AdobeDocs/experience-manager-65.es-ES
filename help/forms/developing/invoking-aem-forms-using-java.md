@@ -1,6 +1,6 @@
 ---
 title: Invocar AEM Forms mediante la API de Java
-description: Utilice la API de Java de AEM Forms para el protocolo de transporte RMI para la invocación remota, el transporte de VM para la invocación local, SOAP para la invocación remota, autenticación diferente, como nombre de usuario y contraseña, y solicitudes de invocación sincrónicas y asincrónicas.
+description: Utilice la API de Java de AEM Forms SOAP para el protocolo de transporte RMI para la invocación remota, el transporte de VM para la invocación local, el transporte para la invocación remota, la autenticación diferente, como el nombre de usuario y la contraseña, y las solicitudes de invocación sincrónicas y asincrónicas.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '5333'
 ht-degree: 0%
@@ -29,7 +29,7 @@ La API de Java admite las siguientes funciones:
 
 * Protocolo de transporte RMI para invocación remota
 * Transporte de VM para invocación local
-* SOAP para invocación remota
+* SOAP para invocación remota de
 * Autenticación diferente, como nombre de usuario y contraseña
 * Solicitudes de invocación sincrónicas y asincrónicas
 
@@ -54,7 +54,7 @@ La API de Java admite las siguientes funciones:
 Para invocar mediante programación un servicio de AEM Forms mediante la API de Java, incluya los archivos de biblioteca necesarios (archivos JAR) en la ruta de clase del proyecto Java. Los archivos JAR que se incluyen en la ruta de clase de la aplicación cliente dependen de varios factores:
 
 * El servicio AEM Forms que se va a invocar. Una aplicación cliente puede invocar uno o varios servicios.
-* El modo en el que desea invocar un servicio de AEM Forms. Puede utilizar el modo EJB o SOAP. (Consulte [Estableciendo propiedades de conexión](invoking-aem-forms-using-java.md#setting-connection-properties).)
+* El modo en el que desea invocar un servicio de AEM Forms. SOAP Puede utilizar el modo EJB o de. (Consulte [Estableciendo propiedades de conexión](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ En la tabla siguiente se enumeran los archivos JAR que dependen del modo de cone
      <li>xercesImpl.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
-   <td><p>si se invoca AEM Forms mediante el modo SOAP, incluya estos archivos JAR.</p> </td>
+   <td><p>si se invoca AEM Forms SOAP mediante el modo de, incluya estos archivos JAR.</p> </td>
    <td><p>&lt;<em>directorio de instalación</em>&gt;/sdk/client-libs/third-party</p> </td>
   </tr>
   <tr>
@@ -415,7 +415,7 @@ Suponiendo que está actualizando a AEM Forms. Para utilizar una aplicación Jav
 
 Las propiedades de conexión se establecen para invocar AEM Forms al utilizar la API de Java. Al establecer las propiedades de conexión, especifique si desea invocar los servicios de forma remota o local, así como el modo de conexión y los valores de autenticación. Se requieren valores de autenticación si la seguridad del servicio está habilitada. Sin embargo, si la seguridad del servicio está deshabilitada, no es necesario especificar los valores de autenticación.
 
-El modo de conexión puede ser SOAP o EJB. El modo EJB utiliza el protocolo RMI/IIOP, y el rendimiento del modo EJB es mejor que el rendimiento del modo SOAP. El modo SOAP se utiliza para eliminar una dependencia del servidor de aplicaciones J2EE o cuando se encuentra un cortafuegos entre AEM Forms y la aplicación cliente. El modo SOAP utiliza el protocolo https como transporte subyacente y puede comunicarse entre los límites del cortafuegos. Si no existe ninguna dependencia del servidor de aplicaciones J2EE o un cortafuegos, se recomienda utilizar el modo EJB.
+SOAP El modo de conexión puede ser modo de conexión o modo de EJB de tipo. SOAP El modo EJB utiliza el protocolo RMI/IIOP, y el rendimiento del modo EJB es mejor que el rendimiento del modo de. SOAP El modo de la aplicación se utiliza para eliminar una dependencia del servidor de aplicaciones J2EE o cuando se encuentra un cortafuegos entre AEM Forms y la aplicación cliente. SOAP El modo de utiliza el protocolo https como transporte subyacente y puede comunicarse entre los límites del cortafuegos. Si no existe ninguna dependencia del servidor de aplicaciones J2EE o un cortafuegos, se recomienda utilizar el modo EJB.
 
 Para invocar correctamente un servicio de AEM Forms, establezca las siguientes propiedades de conexión:
 
@@ -425,11 +425,11 @@ Para invocar correctamente un servicio de AEM Forms, establezca las siguientes p
    * WebSphere: `iiop://<ServerName>:2809 (default port)`
    * WebLogic: `t3://<ServerName>:7001 (default port)`
 
-* **DSC_DEFAULT_SOAP_ENDPOINT**: si utiliza el modo de conexión SOAP, este valor representa el extremo al que se envía una solicitud de invocación. Para invocar AEM Forms de forma remota, especifique el nombre del servidor de aplicaciones J2EE en el que está implementado AEM Forms. Si la aplicación cliente se encuentra en el mismo servidor de aplicaciones J2EE, puede especificar `localhost` (por ejemplo, `http://localhost:8080`.)
+* **SOAP DSC_DEFAULT__ENDPOINT** SOAP : Si utiliza el modo de conexión de la, este valor representa el extremo al que se envía una solicitud de invocación. Para invocar AEM Forms de forma remota, especifique el nombre del servidor de aplicaciones J2EE en el que está implementado AEM Forms. Si la aplicación cliente se encuentra en el mismo servidor de aplicaciones J2EE, puede especificar `localhost` (por ejemplo, `http://localhost:8080`.)
 
    * El valor de puerto `8080` es aplicable si la aplicación J2EE es JBoss. Si el servidor de aplicaciones J2EE es IBM® WebSphere®, utilice el puerto `9080`. Igualmente, si el servidor de aplicaciones J2EE es WebLogic, utilice el puerto `7001`. (Estos valores son valores de puerto predeterminados. Si cambia el valor del puerto, utilice el número de puerto aplicable).
 
-* **DSC_TRANSPORT_PROTOCOL**: Si utiliza el modo de conexión EJB, especifique `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` para este valor. Si está utilizando el modo de conexión SOAP, especifique `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
+* **DSC_TRANSPORT_PROTOCOL**: Si utiliza el modo de conexión EJB, especifique `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` para este valor. SOAP Si está utilizando el modo de conexión de, especifique `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE**: Especifica el servidor de aplicaciones J2EE en el que se implementa AEM Forms. Los valores válidos son `JBoss`, `WebSphere`, `WebLogic`.
 
    * Si establece esta propiedad de conexión en `WebSphere`, el `java.naming.factory.initial` el valor se establece en `com.ibm.ws.naming.util.WsnInitCtxFactory`.
@@ -443,9 +443,9 @@ Para invocar correctamente un servicio de AEM Forms, establezca las siguientes p
 
 * **DSC_CREDENTIAL_USERNAME:** AEM Especifica el nombre de usuario de los formularios. Para que un usuario invoque correctamente un servicio de AEM Forms, necesita la función Usuario de servicios. Un usuario también puede tener otra función que incluya el permiso Invocar servicio. De lo contrario, se produce una excepción cuando intentan invocar un servicio. Si la seguridad del servicio está deshabilitada, no es necesario especificar esta propiedad de conexión.
 * **DSC_CREDENTIAL_PASSWORD:** Especifica el valor de contraseña correspondiente. Si la seguridad del servicio está deshabilitada, no es necesario especificar esta propiedad de conexión.
-* **DSC_REQUEST_TIMEOUT:** El límite de tiempo de espera de solicitud predeterminado para la solicitud SOAP es de 1200000 milisegundos (20 minutos). En ocasiones, una solicitud puede requerir más tiempo para completar la operación. Por ejemplo, una solicitud SOAP que recupera un gran conjunto de registros puede requerir un límite de tiempo de espera más largo. Puede usar el complemento `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` para aumentar el límite de tiempo de espera de llamada de solicitud para las solicitudes SOAP.
+* **DSC_REQUEST_TIMEOUT:** SOAP El límite de tiempo de espera de solicitud predeterminado para la solicitud de es de 1200000 milisegundos (20 minutos). En ocasiones, una solicitud puede requerir más tiempo para completar la operación. SOAP Por ejemplo, una solicitud de que recupera un gran conjunto de registros puede requerir un límite de tiempo de espera más largo. Puede usar el complemento `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` SOAP para aumentar el límite de tiempo de espera de la llamada de solicitud para las solicitudes de.
 
-  **nota**: solo las invocaciones basadas en SOAP admiten la propiedad DSC_REQUEST_TIMEOUT.
+  **nota** SOAP : Solo las invocaciones basadas en la admiten la propiedad DSC_REQUEST_TIMEOUT.
 
 Para establecer las propiedades de conexión, realice las siguientes tareas:
 
@@ -457,7 +457,7 @@ Para establecer las propiedades de conexión, realice las siguientes tareas:
 
    >[!NOTE]
    >
-   >Si está utilizando el modo de conexión SOAP, especifique el `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` valor de enumeración en lugar de `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` valor de enumeración.
+   >SOAP Si está utilizando el modo de conexión de, especifique el `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` valor de enumeración en lugar de `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` valor de enumeración.
 
 1. Para establecer la variable `DSC_TRANSPORT_PROTOCOL` propiedad de conexión, invocar el `java.util.Properties` del objeto `setProperty` y pasar los siguientes valores:
 
@@ -466,7 +466,7 @@ Para establecer las propiedades de conexión, realice las siguientes tareas:
 
    >[!NOTE]
    >
-   >Si está utilizando el modo de conexión SOAP, especifique el `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`valor de enumeración en lugar de `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` valor de enumeración.
+   >SOAP Si está utilizando el modo de conexión de, especifique el `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`valor de enumeración en lugar de `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` valor de enumeración.
 
 1. Para establecer la variable `DSC_SERVER_TYPE` propiedad de conexión, invocar el `java.util.Properties` del objeto `setProperty` y pasar los siguientes valores:
 
@@ -523,9 +523,9 @@ El siguiente ejemplo de código Java establece las propiedades de conexión para
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
-**Configuración del modo de conexión SOAP**
+**SOAP Configuración del modo de conexión de la**
 
-El siguiente ejemplo de código Java establece las propiedades de conexión en modo SOAP para invocar AEM Forms implementado en JBoss.
+SOAP En el siguiente ejemplo de código Java se establecen las propiedades de conexión en modo de para invocar el AEM Forms implementado en JBoss.
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -538,7 +538,7 @@ El siguiente ejemplo de código Java establece las propiedades de conexión en m
 
 >[!NOTE]
 >
->Si selecciona el modo de conexión SOAP, asegúrese de incluir archivos JAR adicionales en la ruta de clase de la aplicación cliente.
+>SOAP Si selecciona el modo de conexión de, asegúrese de incluir archivos JAR adicionales en la ruta de clase de la aplicación cliente.
 
 **Establecer propiedades de conexión cuando la seguridad del servicio está deshabilitada**
 
@@ -553,9 +553,9 @@ El siguiente ejemplo de código Java establece las propiedades de conexión nece
 
 >[!NOTE]
 >
->Todos los tutoriales rápidos de Java asociados con la programación con AEM Forms muestran la configuración de conexión de EJB y SOAP.
+>Todos los tutoriales rápidos de Java asociados con la programación con AEM Forms SOAP muestran la configuración de conexión de EJB y de la conexión de la.
 
-**Configuración del modo de conexión SOAP con límite de tiempo de espera de solicitud personalizado**
+**SOAP Configuración del modo de conexión de la con el límite de tiempo de espera de solicitud personalizado**
 
 ```java
  Properties ConnectionProps = new Properties();
@@ -639,7 +639,7 @@ Este escenario es similar a una aplicación cliente que invoca una instancia de 
 
 No se recomienda hacer referencia a un servidor de aplicaciones J2EE específico porque la conexión entre la aplicación cliente y AEM Forms finaliza si el servidor de aplicaciones se detiene. Se recomienda que la dirección URL del proveedor haga referencia a un administrador JNDI de nivel de celda, en lugar de a un servidor de aplicaciones J2EE específico.
 
-Las aplicaciones cliente que utilizan el modo de conexión SOAP pueden utilizar el puerto del equilibrador de carga HTTP para el clúster. Las aplicaciones cliente que utilizan el modo de conexión EJB pueden conectarse al puerto EJB de un servidor de aplicaciones J2EE específico. Esta acción administra el equilibrio de carga entre los nodos del clúster.
+SOAP Las aplicaciones cliente que utilizan el modo de conexión de la red de distribución pueden utilizar el puerto del equilibrador de carga HTTP para el clúster. Las aplicaciones cliente que utilizan el modo de conexión EJB pueden conectarse al puerto EJB de un servidor de aplicaciones J2EE específico. Esta acción administra el equilibrio de carga entre los nodos del clúster.
 
 **WebSphere**
 
@@ -651,7 +651,7 @@ En el ejemplo siguiente se muestra el contenido de un archivo jndi.properties qu
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**Weblogic**
+**Lógica web**
 
 El ejemplo siguiente muestra el contenido de un archivo jndi.properties que se utiliza para conectarse a AEM Forms que se implementa en WebLogic.
 
@@ -660,7 +660,7 @@ El ejemplo siguiente muestra el contenido de un archivo jndi.properties que se u
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**Jboss**
+**JBoss**
 
 El ejemplo siguiente muestra el contenido de un archivo jndi.properties que se utiliza para conectarse a AEM Forms que se despliega en JBoss.
 

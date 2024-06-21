@@ -4,8 +4,9 @@ description: Acciones y capacidades de los flujos de trabajo de AEM centrados en
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, OSGI, Workflow
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 96%

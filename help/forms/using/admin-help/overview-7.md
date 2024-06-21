@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 169f3d94-ac00-41c7-853e-ecf0dbee559f
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 4%
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 # Aspectos básicos de la configuración de formularios {#basics-of-configuring-forms}
 
-El servicio Forms permite crear aplicaciones cliente de captura de datos interactivas que validan, procesan, transforman y envían formularios normalmente creados en Designer. Los autores de formularios desarrollan un único diseño de formulario que el servicio Forms procesa en varios formatos:
+El servicio Forms permite crear aplicaciones cliente de captura de datos interactivas que validan, procesan, transforman y envían formularios creados normalmente en Designer. Los autores de formularios desarrollan un único diseño de formulario que el servicio Forms procesa en varios formatos:
 
 * como PDF en Adobe Reader o en un explorador
 * como HTML en varios entornos de explorador, incluido un procesamiento XHTML 1.0 compatible

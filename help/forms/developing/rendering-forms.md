@@ -1,6 +1,6 @@
 ---
 title: Representar formularios
-description: Utilice el servicio Forms para crear aplicaciones cliente de captura de datos interactivas que validen, procesan, transforman y envían formularios normalmente creados en Designer. Los autores de formularios pueden desarrollar un único diseño de formulario que el servicio Forms procesa en PDF, SWF o HTML en varios entornos de explorador.
+description: Utilice el servicio Forms para crear aplicaciones cliente de captura de datos interactivas que validen, procesan, transforman y envían formularios creados normalmente en Designer. Los autores de formularios pueden desarrollar un único diseño de formulario que el servicio Forms procesa en PDF, SWF o HTML en varios entornos de explorador.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -28,7 +29,7 @@ Cuando un usuario final solicita un formulario, una aplicación cliente envía l
 
 Según el tipo de aplicación cliente, puede escribir el formulario en un explorador web cliente o guardarlo como archivo de PDF. Una aplicación basada en web puede escribir el formulario en un explorador web. Una aplicación de escritorio puede guardar el formulario como un archivo de PDF. Para mostrar cómo escribir en un explorador web y en un archivo de PDF, los inicios rápidos de la *Renderización de Forms* Las secciones de se organizan de la siguiente manera:
 
-* Los ejemplos de API de Java con establecimiento inflexible de tipos (modo SOAP) son un servlet Java.
+* SOAP Los ejemplos de API de Java con establecimiento inflexible de tipos (modo de) son un servlet Java.
 * Los ejemplos del servicio web (Java Base64) son un servlet Java.
 * Los ejemplos del servicio web (MTOM) son una aplicación de consola (no todos los inicios rápidos tienen un ejemplo de MTOM).
 
