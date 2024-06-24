@@ -4,7 +4,9 @@ description: AEM Forms admite funciones personalizadas que permiten a los usuari
 keywords: Agregar una función personalizada, utilizar una función personalizada, crear una función personalizada, utilizar una función personalizada en el editor de reglas.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+roles: Admin, Developer
+exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
+source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 3%
@@ -14,6 +16,7 @@ ht-degree: 3%
 # Funciones personalizadas en los componentes principales de Forms adaptable
 
 Este artículo describe la creación de funciones personalizadas con el componente principal del formulario adaptable más reciente, que tienen las funciones más recientes, como las siguientes:
+
 * Función de almacenamiento en caché para funciones personalizadas
 * Compatibilidad de objetos de campo y objeto de ámbito global con funciones personalizadas
 * Compatibilidad con funciones modernas de JavaScript como las funciones izquierda y flecha (compatibilidad con ES10)
@@ -1003,5 +1006,3 @@ En caso de que se modifiquen las funciones personalizadas, el almacenamiento en 
    * Métodos de clase
    * Parámetros predeterminados
    * Parámetros REST
-
-
