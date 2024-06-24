@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
+feature: Adaptive Forms,Document Services,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1690'
 ht-degree: 1%
@@ -34,8 +35,8 @@ Los cambios realizados en un formulario como resultado de la ejecución de scrip
 
 Para procesar un formulario en el cliente, realice las siguientes tareas:
 
-1. Incluya los archivos de proyecto.
-1. Crear un objeto API de cliente Forms.
+1. Incluir archivos de proyecto.
+1. Cree un objeto de API de cliente de Forms.
 1. Establecer las opciones de tiempo de ejecución de procesamiento de cliente.
 1. Procesar un formulario en el cliente.
 1. Escriba el formulario en el explorador web del cliente.
@@ -118,11 +119,11 @@ Procesar un formulario en el cliente mediante la API de Forms (Java):
 
    El `renderPDFForm` El método devuelve un valor `FormsResult` que contiene un flujo de datos de formulario que debe escribirse en el explorador web cliente.
 
-1. Escriba el flujo de datos de formulario en la explorador web del cliente
+1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` objeto invocando el `FormsResult` método del `getOutputContent` objeto.
-   * Obtenga el tipo de contenido del `com.adobe.idp.Document` objeto invocando su `getContentType` método.
-   * Defina el `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` método y pasando los tipo de contenido del `com.adobe.idp.Document` objeto.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
+   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
    * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
    * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
    * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.

@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido (SOAP) de la API de Distiller Service Java&trade
+title: Inicio rápido (inicio rápido) de la API de Distiller SOAP Service Java&trade
 description: Descubra cómo el servicio Distiller transforma los archivos PostScript, EPS y PRN en PDF, empleados comúnmente para conversiones de documentos de impresión a electrónicos de gran volumen.
 contentOwner: admin
 content-type: reference
@@ -8,26 +8,27 @@ topic-tags: develop
 role: Developer
 exl-id: c5bf9184-a837-4033-9962-7b3052498e75
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Inicio rápido (SOAP) de la API de Java™ del servicio Distiller {#distiller-service-java-api-quickstart-soap}
+# Inicio rápido (inicio) de la API de Java™ del servicio de Distiller SOAP () {#distiller-service-java-api-quickstart-soap}
 
-El Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio Distiller®:
+SOAP El Inicio rápido () de la API de Java™ está disponible para el servicio Distiller®:
 
-[Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento de PDF mediante Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[SOAP Inicio rápido (modo de): Conversión de un archivo PostScript a un documento de PDF mediante Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOAP con establecimiento inflexible de tipos y el modo de conexión debe establecerse en.
 
 >[!NOTE]
 >
 >AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java™ {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
+## SOAP Inicio rápido (modo de): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java™ {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
 En el ejemplo de código siguiente se convierte un archivo PostScript llamado *Loan.ps* a un archivo de PDF llamado *Loan.pdf*. (Consulte [Conversión de documentos PostScript a PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 

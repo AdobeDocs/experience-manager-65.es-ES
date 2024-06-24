@@ -3,9 +3,9 @@ title: No se puede restaurar el repositorio CRX dañado aplicable al servidor de
 description: Conozca los pasos sobre cómo restaurar un repositorio CRX que esté dañado.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 2%

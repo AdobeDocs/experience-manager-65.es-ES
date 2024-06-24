@@ -4,11 +4,11 @@ description: AEM Forms proporciona controladores de éxitos y de errores predete
 keywords: Añadir un controlador de errores personalizado, añadir un controlador de errores predeterminado, añadir un controlador de errores en el formulario, utilizar el servicio de invocación del editor de reglas para añadir un controlador de errores personalizado, configurar el editor de reglas para añadir un controlador de errores personalizado y añadir un controlador de errores personalizado mediante el editor de reglas
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 93%
@@ -316,7 +316,7 @@ Abra la consola del explorador y compruebe la respuesta y el encabezado, recibid
 
 La función del controlador de errores personalizado es responsable de ejecutar acciones adicionales, como mostrar un cuadro de diálogo modal o enviar un evento de análisis, en función de la respuesta de error. Una función del controlador de errores personalizado proporciona la flexibilidad para adaptar la gestión de errores a los requisitos específicos del usuario.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 * [Crear un formulario adaptable independiente basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [Creación de estilos o temáticas para los formularios](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)

@@ -2,11 +2,11 @@
 title: Crear o agregar un formulario adaptable mediante la página de AEM Sites
 description: Descubra cómo crear o agregar fácilmente un formulario adaptable a su página de AEM Sites. Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios dinámicos y personalizables en su sitio web, optimizando las experiencias digitales para lograr el máximo impacto.
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2884'
 ht-degree: 92%
@@ -116,7 +116,7 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
        </sly> 
    ```
 
-1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
+1. Repita los pasos anteriores para todas las instancias de autor y Publish de su entorno.
 
 +++
 
@@ -133,7 +133,7 @@ Para habilitar el [!UICONTROL Contenedor de formularios adaptables] en la polít
 
 +++
 
-## Crear un formulario adaptable {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
+## Creación de un formulario adaptable {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
 Puede crear un formulario completamente nuevo desde cero y adaptarlo específicamente a sus necesidades y preferencias de diseño, directamente en una página de AEM Sites o en un Fragmento de experiencia. Para formularios de un solo uso, se recomienda la creación directa en una página de AEM Sites, mientras que los Fragmentos de experiencias son ideales para formularios que deben reutilizarse en varias páginas del sitio web.
 
@@ -253,7 +253,7 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
 
    * Para configurar un mensaje personalizado o de agradecimiento, por ejemplo, al enviar, seleccione la opción Mostrar mensaje y proporcione un mensaje en el cuadro Contenido del mensaje. Es un cuadro de texto enriquecido, puede utilizar la opción de pantalla completa para ver todos los elementos de texto enriquecido disponibles.
 
-## Consulte también {#see-also}
+## Ver también {#see-also}
 
 * [Crear un formulario adaptable independiente basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [Creación de estilos o temáticas para los formularios](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)

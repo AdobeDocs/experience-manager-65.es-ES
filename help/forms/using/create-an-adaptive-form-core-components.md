@@ -7,12 +7,13 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
+exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1794'
-ht-degree: 73%
+ht-degree: 77%
 
 ---
 
@@ -59,7 +60,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 > In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
-## Crear un formulario adaptable {#create-an-adaptive-form}
+## Creación de un formulario adaptable {#create-an-adaptive-form}
 
 1. Inicie sesión en su [AEM instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
@@ -166,7 +167,7 @@ Puede utilizar el servicio de rellenado previo del modelo de datos de formulario
 1. Seleccionar modelo de datos de formulario. Abra la pestaña **[!UICONTROL Básico]**. En el servicio de rellenado previo, seleccione **[!UICONTROL Servicio de rellenado previo del modelo de datos de formulario]**.
 1. Haga clic en **[!UICONTROL Listo]**. El formulario adaptable ahora está configurado para utilizar el rellenado previo del modelo de datos de formulario. Ahora puede usar el [editor de reglas](rule-editor.md) para crear reglas para rellenar previamente los campos del formulario.
 
-## AEM ¿Cómo se cambia el nombre de un formulario adaptable de?{#rename-an-AEM-Adaptive-Form}
+## ¿Cómo se cambia el nombre a un formulario adaptable de AEM?{#rename-an-AEM-Adaptive-Form}
 
 Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 
@@ -175,10 +176,10 @@ Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 
    ![Propiedades](/help/forms/using/assets/rename-form-properties.png)
 
-1. Cambie el nombre del formulario en la **Título** , como se muestra en la siguiente imagen.
-1. Clic **Guardar y cerrar**.
+1. Cambie el nombre del formulario en la pestaña **Título**, como se muestra en la siguiente imagen.
+1. Haga clic en **Guardar y cerrar**.
 
-   ![AEM Cambiar el nombre de un formulario adaptable](/help/forms/using/assets/rename-form-title.png)
+   ![Cambiar el nombre de un formulario adaptable de AEM](/help/forms/using/assets/rename-form-title.png)
 
 
 <!--
@@ -197,7 +198,7 @@ Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 * [Crear o personalizar temáticas para componentes principales basados en Forms adaptable](create-or-customize-themes-for-adaptive-forms-core-components.md)
 
 
-## Consulte también
+## Ver también
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)

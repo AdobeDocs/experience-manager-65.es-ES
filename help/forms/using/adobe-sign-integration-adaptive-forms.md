@@ -5,11 +5,11 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms, Foundation Components, Acrobat Sign
+feature: Adaptive Forms,Foundation Components,Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 80%
@@ -34,7 +34,7 @@ Cuando se trabaja con [!DNL Adobe Acrobat Sign] y los formularios adaptables, no
 
 ## Conectar AEM Forms con Adobe Acrobat Sign {#adobe-sign}
 
-Para conectar **[!DNL AEM Forms]** con **[!DNL Adobe Acrobat Sign]**, configure el software y las cuentas enumerados en la sección Requisitos previos y conecte Adobe Sign a todas las instancias de autor y publicación de AEM Forms:
+Para conectar **[!DNL AEM Forms]** con **[!DNL Adobe Acrobat Sign]**, configure el software y las cuentas enumerados en la sección requisitos previos y conecte Adobe Sign a todas las instancias de autor de AEM Forms y Publish:
 
 ## Requisitos previos {#prerequisites}
 

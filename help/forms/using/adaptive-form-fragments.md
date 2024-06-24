@@ -3,13 +3,13 @@ title: Fragmentos de formularios adaptables
 description: Los formularios adaptables proporcionan un mecanismo para crear un segmento de formulario, como un panel o un grupo de campos, para utilizarlo en cualquier formulario adaptable. También puede guardar un panel existente como fragmento.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 75%
@@ -176,7 +176,7 @@ Puede reemplazar o cambiar un fragmento de formulario adaptable por otro mediant
 
 El documento de registro (DOR) le ayuda a mantener la información de los formularios en formato impreso o de documento. De este modo, le ayuda a realizar un seguimiento de la información sobre sus clientes en cualquier momento posterior y también puede utilizar el documento de registro para archivar formularios y contenido en formato PDF. [Obtenga información sobre cómo generar el documento de registro para los fragmentos de formulario adaptable](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
-### Usar un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
+### Uso de un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
 
 Puede utilizar un fragmento de formulario basado en esquemas varias veces en un formulario adaptable para guardar datos de forma única para cada campo de fragmento de formulario. Por ejemplo, puede utilizar un fragmento de formulario de dirección para recopilar detalles de dirección para direcciones permanentes, de comunicación y actuales en un formulario de solicitud de préstamo.
 
