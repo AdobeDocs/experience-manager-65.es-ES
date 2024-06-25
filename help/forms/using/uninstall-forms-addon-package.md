@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 975f1f580404ea1f2940aec5981f5668dced4b95
+source-git-commit: 2755e414ea23ebc1472e9c08d832eca93f28311b
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # Desinstalar el paquete de complementos de AEM Forms AEM de la instancia de
 
-Este artículo describe los pasos necesarios para desinstalar correctamente el paquete de complementos de AEM Forms de una instancia del SDK de AEM Forms. Siga estos pasos para asegurarse de la eliminación del paquete de complementos de Forms AEM y evitar posibles problemas con su entorno de.
+Este artículo describe los pasos necesarios para desinstalar correctamente el paquete de complementos de AEM Forms de una instancia del SDK de AEM Forms. Siga estos pasos para asegurarse de eliminar el paquete de complementos de Forms AEM y evitar posibles problemas con su entorno de.
 
-## Requisitos previos
+## Requisito previo
 
-Asegúrese de realizar una copia de seguridad de los formularios y los datos para evitar la pérdida de datos.
+Asegúrese de realizar una copia de seguridad para evitar la pérdida de datos.
 
 ## Para desinstalar el paquete de complementos de AEM Forms
 
