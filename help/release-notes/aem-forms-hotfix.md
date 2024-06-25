@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
+source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 1%
+source-wordcount: '671'
+ht-degree: 2%
 
 ---
 
@@ -28,6 +28,35 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
     <td><strong>Fecha</strong></td>
     <td><strong>AEM Vínculo de descarga de revisión (vínculo de distribución de software de)</strong></td>
     <td><strong>Problemas solucionados</strong></td>
+  </tr>
+  <tr>
+    <td>sábado, 21 de junio de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">AEM Revisión para el paquete de servicio 6.5.21.0 de en el servidor JEE de JBoss </a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">AEM Revisión para el paquete de servicio 6.5.21.0 de en el servidor JEE de Weblogic </a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">AEM Revisión para el paquete de servicio 6.5.21.0 de en el servidor JEE de Webshpere </a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">AEM Revisión para el paquete de servicio 6.5.21.0 de OSGi de en el servidor </a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> Después de actualizar a AEM Forms Service Pack 6.5.21.0, el servicio PaperCapture no realiza operaciones de reconocimiento óptico de caracteres (OCR) en los PDF. Para resolver el problema, consulte la <a href="/help/forms/using/papercapture-service-resolution.md"> solución de problemas</a> artículo.(CQDOC-21680) </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>sábado, 21 de junio de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip">AEM Revisión para el paquete de servicio 6.5.21.0 de </a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Los borradores de cartas con datos XML se quedan atascados en el estado de carga durante la vista previa. Para descargar e instalar la revisión, consulte<a href="#install-hotfix"> Descargar e instalar la revisión para un problema de carta borrador</a> sección.(FORMS-14521)</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>viernes, 16 de mayo de 2024</td>
@@ -105,3 +134,11 @@ Siga estos pasos para descargar e instalar la revisión:
 1. Extraiga el archivo de revisión para poder obtener un paquete de Experience Manager (.zip) y archivos de paquete (.jar).
 1. Cargue e instale el paquete (.zip) mediante el [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. Abra los paquetes del administrador de configuración `https://server:host/system/console/bundles`, cargue e instale el paquete (.jar). La revisión está instalada.
+
+
+## Descargar e instalar la revisión para un problema de carta borrador {#install-hotfix}
+
+Para resolver el problema, realice los siguientes pasos:
+
+1. Descargue la [revisión](#hotfix-for-adaptive-forms) desde el portal de distribución de software.
+2. Cargue e instale el paquete (.zip) utilizando [Administrador de paquetes CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
