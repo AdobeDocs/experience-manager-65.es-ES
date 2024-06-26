@@ -9,9 +9,9 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3565'
+source-wordcount: '3568'
 ht-degree: 1%
 
 ---
@@ -168,18 +168,22 @@ Puede definir una o más definiciones de filtro para un paquete. Utilice más de
 
 ![Pestaña Filtros](assets/edit-filter.png)
 
-Al crear filtros, puede definir una ruta o utilizar una expresión regular para especificar todos los nodos que desee incluir o excluir.
+Al crear reglas, defina una expresión regular (también conocida como regex, regexp o expresión racional) para especificar todos los nodos que desee incluir o excluir.
 
 | Tipo de regla | Descripción |
 |---|---|
-| include | Si se incluye un directorio, se incluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol), pero **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
-| excluir | Excluir un directorio excluirá ese directorio y todos los archivos y carpetas de ese directorio (es decir, todo el subárbol). |
+| include | Include incluirá todos los archivos y carpetas del directorio especificado que coincidan con la expresión regular. Incluir **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
+| excluir | Excluir excluirá todos los archivos y carpetas que coincidan con la expresión regular. |
 
 Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.
 
 >[!TIP]
 >
 >Un paquete puede contener varias definiciones de filtros para que los nodos de diferentes ubicaciones se puedan combinar fácilmente en un paquete.
+
+>[!TIP]
+>
+>Para obtener información general, consulte [Apache Jackrabbit: filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html) documentación.
 
 ### Dependencias {#dependencies}
 
