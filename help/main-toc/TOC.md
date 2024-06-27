@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 17e10214732b25c89e0bb3f7b435fe05cd2f3595
+source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
 workflow-type: tm+mt
-source-wordcount: '7434'
+source-wordcount: '7456'
 ht-degree: 67%
 
 ---
@@ -331,10 +331,10 @@ ht-degree: 67%
          + [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
          + [Segmentación de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
          + [Creación de Adobe Campaign Forms AEM en](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-      + Creación de recursos en la IU clásica {#assets}
+      + Creación de Assets en la IU clásica {#assets}
          + [Uso de recursos](/help/sites-classic-ui-authoring/classicui-assets.md)
-         + [Entrega de recursos de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
-         + [Añadir recursos de Dynamic Media a las páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+         + [Entrega de Dynamic Media Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
+         + [Añadir Dynamic Media Assets a las páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Añadir funciones de Scene7 a la página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
          + [Uso de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
@@ -357,14 +357,14 @@ ht-degree: 67%
       + [Procesar recursos](/help/assets/assets-workflow.md)
       + [Añadir mapas de imagen](/help/assets/image-maps.md)
       + [Reutilización de recursos mediante MSM](/help/assets/reuse-assets-using-msm.md)
-      + [Recursos conectados con [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [Assets conectado con [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
    + Dynamic Media{#dynamic}
       + [Archivo de newsletter por Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/administering-dynamic-media.md)
       + [Trabajo con Dynamic Media](/help/assets/dynamic-media.md)
       + [Configuración de Dynamic Media: modo Scene7](/help/assets/config-dms7.md)
       + [Opcional: configuración de Dynamic Media, modo Scene7, configuración general](/help/assets/dm-general-settings.md)
-      + [Opcional: configuración de Dynamic Media, modo Scene7, configuración de publicación](/help/assets/dm-publish-settings.md)
+      + [Opcional: configuración de Dynamic Media, modo Scene7, configuración de Publish](/help/assets/dm-publish-settings.md)
       + [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md)
       + [Configuración de una cuenta de alias de empresa de Dynamic Media](/help/assets/dm-alias-account.md)
       + [Configuración de Dynamic Media: modo híbrido](/help/assets/config-dynamic.md)
@@ -410,7 +410,7 @@ ht-degree: 67%
       + [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [Instalación del paquete de funciones 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md)
       + [Trabajo con selectores](/help/assets/working-with-selectors.md)
-   + Ampliar recursos {#extending}
+   + Ampliar Assets {#extending}
       + [Personalizar y ampliar [!DNL Assets]](/help/assets/extending-assets.md)
       + [Procesar recursos mediante controladores de medios y flujos de trabajo](/help/assets/media-handlers.md)
       + [Ampliación de la funcionalidad de búsqueda](/help/assets/searchx.md)
@@ -425,7 +425,7 @@ ht-degree: 67%
       + [Autenticación para consultas de Remote GraphQL en fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [API de GraphQL con fragmentos de contenido: contenido de muestra y consultas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
       + [[!DNL Assets] desarrollo de proxy](/help/assets/proxy.md)
-   + Administración de recursos {#administer}
+   + Administración de Assets {#administer}
       + [Formatos de archivo compatibles](/help/assets/assets-formats.md)
       + [Facetas de búsqueda](/help/assets/search-facets.md)
       + [Comprender los conceptos de metadatos](/help/assets/metadata-concepts.md)
@@ -451,9 +451,9 @@ ht-degree: 67%
       + [Uso del paquete de demostración para perspectivas de recursos](/help/assets/use-demo-package-for-asset-insights.md)
       + [Configuración de Adobe Asset Link](/help/assets/configure-asset-link.md)
       + [Generar representaciones de FPO para Adobe InDesign](/help/assets/configure-fpo-renditions.md)
-      + [Prácticas recomendadas de formato de archivo de Assets](/help/assets/assets-file-format-best-practices.md)
+      + [Prácticas recomendadas de formato de archivo Assets](/help/assets/assets-file-format-best-practices.md)
       + [Prácticas recomendadas para monitorizar recursos](/help/assets/assets-monitoring-best-practices.md)
-      + [soporte Camera Raw](/help/assets/camera-raw.md)
+      + [apoyo Camera Raw](/help/assets/camera-raw.md)
       + [Detección del tipo MIME de los recursos mediante Apache Tika](/help/assets/detect-asset-mime-type-with-tika.md)
       + [Biblioteca de transcodificación de imágenes](/help/assets/imaging-transcoding-library.md)
       + [Inquilinos múltiples para colecciones, fragmentos de código y plantillas de fragmentos de código](/help/assets/multi-tenancy.md)
@@ -462,8 +462,8 @@ ht-degree: 67%
    + Brand Portal {#brandportal}
       + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicación de recursos en  [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
-      + [Publicar carpetas en [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
-      + [Publicación de colecciones en [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
+      + [Carpetas de Publish a [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
+      + [Colecciones Publish a [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
    + Fragmentos de contenido {#content-fragments}
       + [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -478,7 +478,7 @@ ht-degree: 67%
       + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Creación de proyectos de traducción para fragmentos de contenido](/help/assets/creating-translation-projects-for-content-fragments.md)
-   + Administrar recursos {#managing}
+   + Administrar Assets {#managing}
       + [Administrar recursos digitales](/help/assets/manage-assets.md)
       + [Administrar colecciones](/help/assets/manage-collections.md)
       + [Selector de recursos](/help/assets/asset-selector.md)
@@ -489,7 +489,7 @@ ht-degree: 67%
       + [Preparación de recursos para su traducción](/help/assets/preparing-assets-for-translation.md)
       + [Descargar recursos del Experience Manager](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [Perspectivas de recursos](/help/assets/asset-insights.md)
+      + [Datos de Assets](/help/assets/asset-insights.md)
       + [Habilitar perspectivas de recursos mediante DTM](/help/assets/use-dtm-for-asset-insights.md)
       + [Configurar perspectivas de recursos](/help/assets/configure-asset-insights.md)
       + [Proteger y desproteger recursos](/help/assets/check-out-and-submit-assets.md)
@@ -878,6 +878,12 @@ ht-degree: 67%
       + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
       + [Usar la firma manuscrita en formularios HTML5](/help/forms/using/scribble-signature.md)
       + [Cambiar el contenido de la página cero en Designer](/help/forms/using/changing-page-zero-content-designer.md)
+      + [Prácticas recomendadas de accesibilidad]{#accessibility-best-practices}
+         + [Introducción](/help/forms/using/introduction-accessibility-forms-designer.md)
+         + [Prácticas recomendadas para crear formularios](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+         + [Técnicas para probar la accesibilidad de los formularios](/help/forms/using/techniques-for-testing-form-accessibility.md)
+         + [Asignación entre directrices y prácticas recomendadas](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+         + [Vínculos útiles](/help/forms/using/useful-links-accessibility-forms-designer.md)
    + Personalizar AEM Forms {#customize-aem-forms}
       + [Marco de aspecto para formularios adaptables y HTML5](/help/forms/using/introduction-widgets.md)
       + [Crear una plantilla de formulario adaptable personalizada](/help/forms/using/custom-adaptive-forms-templates.md)
@@ -1189,7 +1195,7 @@ ht-degree: 67%
       + [Pasos adicionales para obtener el correo electrónico con los archivos adjuntos para la versión de formularios adaptables en JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
       + [No se pueden convertir archivos de Word o Excel a PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [No se pueden abrir PDF forms basados en XFA en Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
-      + [No se puede restaurar el repositorio CRX](/help/forms/using/restore-crx-repository.md)
+      + [No se puede restaurar el repositorio de CRX](/help/forms/using/restore-crx-repository.md)
       + [AEM Errores de servicio no disponible después de instalar el paquete de servicio 6.5.15.0 de](/help/forms/using/aem-service-pack-installation-solution.md)
       + [Problema de instalación del Service Pack de AEM Forms JEE 6.5.15.0 en el entorno JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Procesamiento de documentos incluso si el servidor de AEM Forms no está completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
@@ -1307,7 +1313,7 @@ ht-degree: 67%
          + [Seguridad](/help/sites-developing/security.md)
          + [Materiales de referencia](/help/sites-developing/reference-materials.md)
          + [Crear un sitio web con todas las funciones (IU clásica)](/help/sites-developing/website.md)
-         + [Diseños y el diseñador (IU clásica)](/help/sites-developing/designer.md)
+         + [Diseños y Designer (IU clásica)](/help/sites-developing/designer.md)
          + [Migración a la IU táctil](/help/sites-developing/touch-ui-migration.md)
       + Plataforma {#platform}
          + [Hoja de referencia de Sling](/help/sites-developing/sling-cheatsheet.md)
@@ -1560,7 +1566,7 @@ ht-degree: 67%
          + [Consultas e indexación de Oak](/help/sites-deploying/queries-and-indexing.md)
          + [AEM Cómo ejecutar el con TarMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
          + [AEM Compatibilidad con RDBMS en 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
-         + [Indexación mediante el Jar de Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
+         + [Indexación mediante el Jar ejecutado por Oak](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Casos de uso de indexación Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Inclusión En La Recopilación De Estadísticas De Uso Agregadas](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
@@ -1595,9 +1601,9 @@ ht-degree: 67%
          + [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md)
          + [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md)
-         + [Uso de la herramienta de migración CRX2Oak](/help/sites-deploying/using-crx2oak.md)
+         + [Uso de la herramienta de migración de CRX2Oak](/help/sites-deploying/using-crx2oak.md)
          + [Tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Comprobaciones posteriores a la actualización y solución de problemas](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Comprobación y solución de problemas de actualización de Post](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Actualización de Forms de búsqueda personalizada](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Actualizaciones sostenibles](/help/sites-deploying/sustainable-upgrades.md)
          + [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md)
@@ -1607,10 +1613,10 @@ ht-degree: 67%
          + [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md)
          + [AEM Reestructuración común de repositorios en 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
          + [AEM Reestructuración de repositorios de Sites en 6.5](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
-         + [AEM Reestructuración del repositorio de activos en la versión 6.5 de](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración de repositorios de Assets AEM en 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [Reestructuración de repositorios de Dynamic Media AEM en 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [Reestructuración de repositorios de Forms AEM en 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-         + [AEM Reestructuración del repositorio de comercio electrónico en la versión 6.5 de](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración de repositorios de E-Commerce AEM en la versión 6.5 de la](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [Reestructuración de repositorios para AEM Communities en 6.5](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
       + Prácticas recomendadas {#practices}
          + [Implementación de prácticas recomendadas](/help/sites-deploying/best-practices.md)
