@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5409'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ Las siguientes tablas enumeran cada elemento junto con:
   <tr>
    <td>colaborador</td>
    <td>Grupo</td>
-   <td><p>Privilegios básicos que permiten al usuario escribir contenido (como en, solo funcionalidad).</p> <p>No asigna ningún privilegio al árbol /content. Se debe asignar a los grupos o usuarios individuales.</p> </td>
+   <td><p>Privilegios básicos que permiten al usuario escribir contenido (como en, solo los privilegios necesarios para la funcionalidad básica).</p> <p>No asigna ningún privilegio para acceder al propio árbol /content. Deben asignarse específicamente a los grupos o usuarios individuales.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -196,7 +196,7 @@ Las acciones se pueden realizar en una página (recurso). Para cada página de l
   </tr>
   <tr>
    <td>Replicar</td>
-   <td>El usuario puede replicar contenido en otro entorno (por ejemplo, el entorno de publicación). El privilegio también se aplica a cualquier página secundaria.</td>
+   <td>El usuario puede replicar contenido en otro entorno (por ejemplo, el entorno de Publish). El privilegio también se aplica a cualquier página secundaria.</td>
   </tr>
  </tbody>
 </table>
@@ -242,7 +242,7 @@ Las listas de control de acceso están formadas por los permisos individuales y 
 
 Los permisos también se aplican a cualquier página secundaria.
 
-Si un permiso no se hereda del nodo principal pero tiene al menos una entrada local para él, los siguientes símbolos se anexan a la casilla de verificación. Una entrada local es la que se crea en la interfaz CRX 2.2 (actualmente, solo se pueden crear ACL comodín en CRX).
+Si un permiso no se hereda del nodo principal pero tiene al menos una entrada local para él, los siguientes símbolos se anexan a la casilla de verificación. Una entrada local es la que se crea en la interfaz de CRX 2.2 (actualmente, las ACL comodín solo se pueden crear en CRX).
 
 Para una acción en una ruta determinada:
 
@@ -293,7 +293,7 @@ A continuación se ofrecen recomendaciones acerca de la administración de lista
 
   El Adobe recomienda trabajar con Permitir en lugar de Denegar para ver [Prácticas recomendadas](#best-practices).
 
-Antes de modificar cualquiera de los permisos, asegúrese de comprender cómo funcionan y cómo se relacionan entre sí. AEM Consulte la documentación de CRX que ilustra cómo se usa WCM para la administración de la [evalúa los derechos de acceso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)y ejemplos sobre la configuración de listas de control de acceso.
+Antes de modificar cualquiera de los permisos, asegúrese de comprender cómo funcionan y cómo se relacionan entre sí. Consulte la documentación de CRX AEM que ilustra el modo en que se usa WCM para la administración de la [evalúa los derechos de acceso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)y ejemplos sobre la configuración de listas de control de acceso.
 
 ### Permisos {#permissions}
 
