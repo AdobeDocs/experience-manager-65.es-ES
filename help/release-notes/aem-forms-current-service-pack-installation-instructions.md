@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
+source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1697'
 ht-degree: 9%
 
 ---
@@ -57,7 +57,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++1. Realice una copia de seguridad del entorno existente
 
-1. Haga una copia de seguridad de su [Repositorio CRX, Esquema de base de datos y GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Haga una copia de seguridad de su [Repositorio de CRX, Esquema de base de datos y GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 1. Haga una copia de seguridad de &lt;*AEM raíz_de_formularios_de_*>/implementar carpeta.
 
 >[!NOTE]
@@ -140,12 +140,9 @@ Vaya al directorio adecuado, y desde un shell y escriba `./aem65_cfp_install.bin
 
 +++
 
-+++5. AEM Instale el fragmento del servlet (paquete de servicio 6.5.14.0 de la versión de o anterior) (**Instalación obligatoria**)
++++5. Instale el fragmento del servlet si no está instalado (**Paso obligatorio**)
 
->[!NOTE]
->
-> * Si está realizando la actualización desde **AEM Paquete de servicio de 6.5.15.0**, la instalación del **fragmento de servlet** no es obligatorio. Para las versiones **AEM Paquete de servicio de 6.5.14.0** o antes, lo es **obligatorio para instalar** el fragmento de servlet.
-
+<!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 Para descargar e instalar el fragmento de servlet:
 
@@ -209,7 +206,7 @@ El paquete se instala automáticamente.
 
 +++1. Realice una copia de seguridad del entorno existente
 
-1. Haga una copia de seguridad de su [Repositorio CRX y esquema de base de datos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. Haga una copia de seguridad de su [Repositorio de CRX y esquema de base de datos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
 >[!NOTE]
 >

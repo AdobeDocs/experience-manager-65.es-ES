@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4070'
 ht-degree: 3%
 
 ---
@@ -152,7 +152,7 @@ A continuación se muestra la lista de correcciones de accesibilidad incluidas e
 ### [!DNL Assets]{#assets-6521}
 
 * Si se publica un recurso en Brand Portal, el estado de publicación sigue siendo incoherente. (ASSETS-36807)
-* Los recursos no se eliminan al eliminarlos de una instancia mediante una llamada de API. (ASSETS-35131)
+* Los Assets no se eliminan al eliminarlos de una instancia mediante una llamada de API. (ASSETS-35131)
 * Cuando intente importar metadatos, `question mark (?)` reemplaza la inserción de caracteres en cualquier idioma que no sea inglés.  (ASSETS-35091)
 * Cuándo `dc:title` se utiliza con la cadena de tipo de datos, el árbol de contenido de recursos no funciona correctamente después de la instalación del Service Pack 6.5.19. (ASSETS-34684)
 * Se muestra un error si hay algún carácter especial en el nombre de un recurso. (ASSETS-33248)
@@ -161,7 +161,7 @@ A continuación se muestra la lista de correcciones de accesibilidad incluidas e
 
 * AEM En la versión 6.5.18, no muestra todas las zonas interactivas agregadas a un recurso al editar las zonas interactivas. Sin embargo, todos los puntos interactivos funcionan en un recurso publicado, pero no puede editarlos más adelante si es necesario. (ASSETS-33609)
 * Los archivos EPS más recientes que se cargan no generan miniaturas después del reprocesamiento. (ASSETS-32617)
-* En la pestaña Herramientas > Assets > Configuración de publicación de Dynamic Media > Atributos de solicitud, las entradas `Width(px)` y `Height(px)` tienen un aspecto diferente en español, italiano y portugués. No están alineadas entre sí en estas ubicaciones. (ASSETS-31896)
+* En la pestaña Herramientas > Assets > Configuración de Dynamic Media Publish > Atributos de solicitud, las entradas `Width(px)` y `Height(px)` tienen un aspecto diferente en español, italiano y portugués. No están alineadas entre sí en estas ubicaciones. (ASSETS-31896)
 * A partir del 1 de mayo de 2024, Adobe Dynamic Media dejará de ofrecer asistencia para lo siguiente:
    * SSL (Secure Socket Layer) 2.0
    * SSL 3.0
@@ -186,7 +186,7 @@ A continuación se muestra la lista de correcciones de accesibilidad incluidas e
 
 #### [!DNL Adaptive Forms] {#forms-6520}
 
-* Cuando se envía un formulario adaptable desde una instancia de publicación de Adobe Experience Manager a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no puede guardar los archivos adjuntos. (FORMS-14209)
+* Cuando se envía un formulario adaptable desde una instancia de Adobe Experience Manager Publish a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no puede guardar los archivos adjuntos. (FORMS-14209)
 * Cuando un usuario hace clic en **Imprimir en el PDF** en AEM Forms Service Pack 15 (6.5.15.0) en OSGi, la validación del lado del cliente falla y se evidencia por los mensajes de error que se muestran en la ventana Developer Tools Console. (FORMS-14029)
 * Cuando un usuario envía un formulario en el paquete de servicio 17 (6.5.17.0) de Forms 6.5 o en el paquete de servicio 18 (6.5.18.0) y 19 (6.5.19.0) de AEM 6.5, la traducción de los mensajes de &quot;agradecimiento&quot; no funciona correctamente. Sin embargo, los mensajes se traducen correctamente en el diccionario. (FORMS-13846)
 * Cuando un usuario obtiene una vista previa de un formulario con un componente Selector de fecha, el campo del selector de fecha no se alinea correctamente con los demás campos del formulario. (FORMS-13763)
@@ -204,7 +204,7 @@ A continuación se muestra la lista de correcciones de accesibilidad incluidas e
 * Cuando un usuario intenta ver un formulario al cargar la página, no se puede procesar. (FORMS-13594)
 * El componente de campo de entrada de fecha no funciona correctamente en Microsoft Edge en el modo de compatibilidad con Internet Explorer. (FORMS-13170)
 * La notificación por correo electrónico bloqueada con datos adjuntos no se pudo enviar cuando se corrigió el error de [pasos adicionales para utilizar el correo electrónico con archivos adjuntos](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) se realiza en el servidor. (FORMS-14227)
-* En AEM Forms Workspace en el Service Pack 18 (6.5.18.0), cuando un usuario comenta cualquier documento cargado, el archivo del documento se daña. (FORMS-13735)
+* En AEM Forms Workspace en Service Pack 18 (6.5.18.0), cuando un usuario comenta cualquier documento cargado, hace que el archivo del documento se dañe. (FORMS-13735)
 * En AEM Forms Service Pack 18 (6.5.18.0), Service Pack 19 (6.5.19.0) o Service Pack 20 (6.5.20.0), cuando un usuario intenta buscar un formulario adaptable desde el panel lateral, la búsqueda falla. (FORMS-14117)
 * Cuando un usuario edita un formulario creado en alemán y traducido al inglés, se muestra un idioma incoherente entre los modos &quot;Vista previa&quot; y &quot;Editar&quot;. Esto hace que los componentes RadioButton y Checkbox se muestren en inglés durante el modo &quot;Editar&quot; mientras aparecen correctamente en alemán durante el modo &quot;Previsualizar&quot;. (FORMS-13910)
 * La herramienta de proceso de depuración de procesos falla con el error `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
@@ -543,6 +543,10 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 * Si un usuario intenta previsualizar un borrador de carta con datos XML guardados, se queda atascado en `Loading` para algunas letras específicas. Para descargar e instalar la revisión, consulte la [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artículo. (FORMS-14521)
 
 * Después de actualizar al paquete de servicio 6.5.21.0 de AEM Forms, el `PaperCapture` El servicio no puede realizar operaciones de reconocimiento óptico de caracteres (OCR) en los PDF. El servicio no genera resultados en forma de PDF o archivo de registro. Para descargar e instalar la revisión, consulte la [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) artículo. (CQDOC-21680)
+
+* Cuando los usuarios actualizan de los paquetes de servicio 18 (6.5.18.0) o 19 (6.5.19.0) de Forms AEM 6.5 a los paquetes de servicio 20 (6.5.20.0) o 21 (6.5.21.0) de Forms AEM Forms AEM AEM Forms AEM 6.5 o el paquete de servicio 21 (6.5.21.0) de AEM 6.5, se encuentran con un error de compilación de JSP, que les impide abrir o crear formularios adaptables y también causa errores con otras interfaces como el editor de página, Forms AEM UI y el editor de flujo de flujo de trabajo de flujo de trabajo de usuario de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de (FORMS-15256)
+
+
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
