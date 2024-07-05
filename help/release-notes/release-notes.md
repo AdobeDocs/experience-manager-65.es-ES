@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
+source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
 workflow-type: tm+mt
-source-wordcount: '4070'
+source-wordcount: '4099'
 ht-degree: 3%
 
 ---
@@ -546,7 +546,10 @@ Para garantizar un funcionamiento correcto, debe agregar las siguientes propieda
 
 * Cuando los usuarios actualizan de los paquetes de servicio 18 (6.5.18.0) o 19 (6.5.19.0) de Forms AEM 6.5 a los paquetes de servicio 20 (6.5.20.0) o 21 (6.5.21.0) de Forms AEM Forms AEM AEM Forms AEM 6.5 o el paquete de servicio 21 (6.5.21.0) de AEM 6.5, se encuentran con un error de compilación de JSP, que les impide abrir o crear formularios adaptables y también causa errores con otras interfaces como el editor de página, Forms AEM UI y el editor de flujo de flujo de trabajo de flujo de trabajo de usuario de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de (FORMS-15256)
 
-
+  Si tiene un problema de este tipo, realice los siguientes pasos para resolverlo:
+   1. Vaya al directorio `/libs/fd/aemforms/install/` en CRXDE.
+   1. Elimine el paquete con el nombre `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. AEM Reinicie el servidor de.
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
