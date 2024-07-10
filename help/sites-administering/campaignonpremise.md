@@ -9,9 +9,9 @@ exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1564'
 ht-degree: 2%
 
 ---
@@ -89,6 +89,10 @@ El paquete de integración crea automáticamente el `aemserver` AEM operador que
 
 1. Seleccione la zona de seguridad adecuada y defina la máscara IP de confianza según sea necesario.
 
+   >[!CAUTION]
+   >
+   >La zona de seguridad que se va a configurar es **Red privada de la empresa (VPN+LAN)**.
+
 1. Haga clic en **Guardar**.
 
 1. Cierre la sesión del cliente de Adobe Campaign.
@@ -155,7 +159,7 @@ AEM Ahora se puede comunicar con Adobe Campaign.
 >
 >Asegúrese de que el servidor de Adobe Campaign esté accesible a través de Internet. AEM No se puede acceder a redes privadas.
 
-## AEM Configuración de replicación para publicar instancias de forma {#replication}
+## AEM Configuración de la replicación en la instancia de Publish {#replication}
 
 AEM El contenido de la campaña lo crean los autores de contenido en la instancia de creación de la. Esta instancia solo suele estar disponible internamente en su organización. Para que el contenido, como las imágenes y los recursos, sea accesible a los destinatarios de la campaña, debe publicarlo.
 
@@ -249,7 +253,7 @@ Cuándo [instalación del **AEM Integración de** paquete en Campaign,](#install
 
 Adobe Campaign AEM ahora puede comunicarse con los usuarios de la red de.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 La integración ya se ha completado tanto con Adobe Campaign Classic AEM como con la configuración de la.
 
