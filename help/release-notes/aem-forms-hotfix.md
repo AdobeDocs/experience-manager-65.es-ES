@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 2%
+source-wordcount: '903'
+ht-degree: 1%
 
 ---
 
@@ -28,6 +28,23 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
     <td><strong>Fecha</strong></td>
     <td><strong>AEM Vínculo de descarga de revisión (vínculo de distribución de software de)</strong></td>
     <td><strong>Problemas solucionados</strong></td>
+  </tr>
+  <tr>
+    <td>jueves, 10 de julio de 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">AEM Revisión para el paquete de servicio 6.5.21.0 de en Windows para el servidor JEE de JBoss </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">AEM Revisión para el paquete de servicio 6.5.21.0 de en Linux para el servidor JEE de JBoss </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">AEM Revisión para el paquete de servicio 6.5.21.0 de en el servidor JEE de Windows para Webshop </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz">AEM Revisión para el paquete de servicio 6.5.21.0 de en Linux para el servidor JEE de Webshop</a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">AEM Revisión para el paquete de servicio 6.5.21.0 de en el servidor JEE de Windows para Weblogic </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz">AEM Revisión para el paquete de servicio 6.5.21.0 de en Linux para el servidor JEE de Weblogic</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul><li>Cuando un usuario actualiza al paquete de servicio 20 de AEM Forms (6.5.20.0) en el servidor JEE y genera PDF mediante servicios de salida, los PDF se representan con problemas de accesibilidad. (LC-3922112)</li><li>Los PDF etiquetados generados mediante el servicio de salida en AEM Forms JEE muestran "Advertencia de estructura inadecuada". (LC-3922038)</li><li>Cuando se envía un formulario en AEM Forms JEE, las instancias de un elemento XML repetitivo se eliminan de los datos. (LC-3922017)</li><li>Cuando un usuario en un entorno Linux procesa un formulario adaptable (en JEE) en HTML, no se procesa correctamente. (LC-3921957)</li><li>Cuando un usuario convierte un archivo XTG al formato PostScript mediante el servicio de salida en AEM Forms AEM JEE, se produce el siguiente error:_OUT_001_003: Excepción inesperada: Error de PAExecute: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Después de actualizar al paquete de servicio 18 de AEM Forms (6.5.18.0) en el servidor JEE, cuando un usuario envía un formulario, no puede procesar PDF forms HTML5 o y se bloquea XMLFM. (LC-3921718)
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>sábado, 21 de junio de 2024</td>
@@ -72,7 +89,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
     <li>En un formulario adaptable basado en un XDP con scripts incrustados en casillas de verificación, los scripts no se ejecutan para elementos después de esas casillas de verificación. Hay una revisión disponible para este problema. (FORMS-14244) </li>
      <li> Las filas del widget selector de fechas se truncan al recorrer meses en el widget emergente de los campos con el patrón Editar/Mostrar. Hay una revisión disponible para este problema. (FORMS-13620) </li>
      <li>Los envíos de formularios fallan al intentar utilizar el servicio DOR (documento de registro) en el backend. El mensaje de error encontrado es: "No se pudo completar la acción de envío porque el recurso de formulario no se ha asignado correctamente". (FORMS-13798) </li>
-     <li>Cuando se envía un formulario adaptable desde una instancia de publicación de Adobe Experience Manager a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no puede guardar los archivos adjuntos.  (FORMS-14209) </li>
+     <li>Cuando se envía un formulario adaptable desde una instancia de Adobe Experience Manager Publish a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no puede guardar los archivos adjuntos.  (FORMS-14209) </li>
      <li> AEM Al instalar el paquete de servicio 20 de Forms 6.5 de la interfaz de usuario (IU) de AEM Sites (paquete de complemento de AEM Forms para SP20), se produce una degradación significativa del rendimiento.  (FORMS-13791) </li>
      <li>El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)</li>
     </ul>
