@@ -8,7 +8,7 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a144f7cc75b1a5cdb45d2aaf90e87013ac68a431
 workflow-type: tm+mt
 source-wordcount: '3173'
 ht-degree: 11%
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] es una solución de administración de activos digitales (DAM) que se puede integrar con [!DNL Adobe Creative Cloud] para ayudar a los usuarios de DAM a trabajar junto con los equipos creativos, optimizando la colaboración en el proceso de creación de contenido.
@@ -32,7 +32,7 @@ Continúe leyendo para saber qué integraciones elegir entre el escritorio y el 
 >
 >[!DNL Experience Manager] hasta [!DNL Creative Cloud] el uso compartido de carpetas está obsoleto y ya no se trata en esta guía. El Adobe recomienda utilizar funciones más nuevas, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [aplicación de escritorio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) para proporcionar al usuario creativo acceso a los recursos administrados en [!DNL Experience Manager].
 
-## Necesidades de colaboración de creativos, especialistas en marketing y usuarios de DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
+## Necesidades de Collaboration de creativos, especialistas en marketing y usuarios de DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | Requisitos  | Caso de uso | Superficies afectadas |
 |---|---|---|
@@ -71,7 +71,7 @@ Este artículo se centra principalmente en los dos primeros aspectos de las nece
 | Cargar: varios archivos/estructuras de carpetas jerárquicas | No | Sí | [Carga mediante interfaz web](manage-assets.md#uploading-assets) o mediante scripts personalizados o herramientas. |
 | Varios: usuario e inicio de sesión | Se reconoce el inicio de sesión único (SSO) del usuario de Creative Cloud que ha iniciado sesión en la aplicación de escritorio de Creative Cloud | [!DNL Experience Manager] usuario y credenciales | Los usuarios de ambas soluciones cuentan para el [!DNL Experience Manager] cuota de usuario. |
 | Varios: red y acceso | Requiere acceso desde el escritorio del usuario a [!DNL Experience Manager] implementación en red | Requiere acceso desde el escritorio del usuario a [!DNL Experience Manager] implementación en red | [!DNL Adobe Asset Link] no comparte el entorno proxy de red. |
-| Varios: migrar un gran número de recursos | No | No | [Guía de migración de recursos](assets-migration-guide.md) |
+| Varios: migrar un gran número de recursos | No | No | [Guía de migración de Assets](assets-migration-guide.md) |
 
 Para admitir casos de uso de distribución de recursos, se deben considerar otras soluciones:
 
@@ -144,14 +144,14 @@ A menudo, no es deseable almacenar todos los recursos y las actualizaciones. Por
 
 Los equipos creativos (y las organizaciones) generalmente no están interesados en almacenar recursos en cada fase del ciclo de vida del recurso. Por ejemplo, evitan almacenar recursos en los siguientes casos:
 
-* Recursos que aún no se han finalizado o que están sujetos a experimentación.
-* Recursos que no pasan el ciclo de revisión del equipo creativo/interno.
+* Assets que aún no se han finalizado o que están sujetos a experimentación.
+* Assets que no superan el ciclo de revisión del equipo creativo/interno.
 * En comparación con el recurso en cuestión, el equipo tiene mejores candidatos para representar su trabajo ante equipos externos.
 
 Normalmente, los siguientes recursos de clases se almacenan en DAM:
 
-* Activos que han alcanzado un cierto vencimiento y que se consideran listos para ser compartidos.
-* Recursos preseleccionados por el equipo creativo.
+* Assets que ha alcanzado un cierto grado de madurez y que se considera que está listo para compartirse.
+* Assets que fueron preseleccionados por el equipo creativo.
 * Formatos de recurso específicos que el marketing puede utilizar o solicitar, según un contrato o acuerdo específico (por ejemplo, archivos de JPG convertidos de archivos RAW, TIFF/imágenes de originales de PSD).
 
 #### Cuando se almacenan actualizaciones de recursos en DAM {#when-updates-to-assets-are-stored-in-dam}
